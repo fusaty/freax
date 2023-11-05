@@ -2,13 +2,13 @@
 /*
  *  GT641xx clockevent routines.
  *
- *  Copyright (C) 2007	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007	Yoichi Yuasa <yuasa@freax-mips.org>
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
+#include <freax/clockchips.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/irq.h>
 
 #include <asm/gt64120.h>
 #include <asm/time.h>

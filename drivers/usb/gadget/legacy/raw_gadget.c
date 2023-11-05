@@ -7,27 +7,27 @@
  * Author: Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <freax/compiler.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/idr.h>
+#include <freax/kref.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/semaphore.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/ch11.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/composite.h>
 
-#include <uapi/linux/usb/raw_gadget.h>
+#include <uapi/freax/usb/raw_gadget.h>
 
 #define	DRIVER_DESC "USB Raw Gadget"
 #define DRIVER_NAME "raw-gadget"

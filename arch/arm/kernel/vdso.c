@@ -6,16 +6,16 @@
  * Copyright (C) 2015 Mentor Graphics Corporation.
  */
 
-#include <linux/cache.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/vmalloc.h>
+#include <freax/cache.h>
+#include <freax/elf.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/timekeeper_internal.h>
+#include <freax/vmalloc.h>
 #include <asm/arch_timer.h>
 #include <asm/barrier.h>
 #include <asm/cacheflush.h>

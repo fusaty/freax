@@ -5,9 +5,9 @@
  * Derived from drivers/video/backlight/pwm_bl.c
  */
 
-#include <linux/export.h>
-#include <linux/math.h>
-#include <linux/types.h>
+#include <freax/export.h>
+#include <freax/math.h>
+#include <freax/types.h>
 
 /**
  * int_pow - computes the exponentiation of the given base and exponent

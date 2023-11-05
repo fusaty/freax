@@ -3,19 +3,19 @@
  * Copyright (C) 2014 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/tegra-icc.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/tegra-icc.h>
 
 #include <soc/tegra/fuse.h>
 

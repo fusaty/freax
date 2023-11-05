@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cpufreq.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/cpufreq.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 
 extern const struct seq_operations cpuinfo_op;
 

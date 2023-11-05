@@ -2,14 +2,14 @@
 /*
  * Functions related to io context handling
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/sched/task.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/security.h>
+#include <freax/sched/task.h>
 
 #include "blk.h"
 #include "blk-mq-sched.h"

@@ -2,8 +2,8 @@
 /*
  *  PARISC TLB and cache flushing support
  *  Copyright (C) 2000-2001 Hewlett-Packard (John Marvin)
- *  Copyright (C) 2001 Matthew Wilcox (willy at parisc-linux.org)
- *  Copyright (C) 2002 Richard Hirst (rhirst with parisc-linux.org)
+ *  Copyright (C) 2001 Matthew Wilcox (willy at parisc-freax.org)
+ *  Copyright (C) 2002 Richard Hirst (rhirst with parisc-freax.org)
  */
 
 /*
@@ -24,9 +24,9 @@
 #include <asm/cache.h>
 #include <asm/ldcw.h>
 #include <asm/alternative.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/pgtable.h>
 
 	.section .text.hot
 	.align	16

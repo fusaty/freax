@@ -10,17 +10,17 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/serial.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/uaccess.h>
 
 /* default urb timeout for usb operations */
 #define QT2_USB_TIMEOUT USB_CTRL_SET_TIMEOUT

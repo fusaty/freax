@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/sysctl.h>
+#include <freax/proc_fs.h>
 
 #include "ib.h"
 

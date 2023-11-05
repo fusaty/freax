@@ -5,11 +5,11 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/bio.h>
 
 #define DM_MSG_PREFIX "zero"
 

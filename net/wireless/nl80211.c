@@ -8,19 +8,19 @@
  * Copyright (C) 2018-2023 Intel Corporation
  */
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/netlink.h>
-#include <linux/nospec.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
+#include <freax/if.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/if_ether.h>
+#include <freax/ieee80211.h>
+#include <freax/nl80211.h>
+#include <freax/rtnetlink.h>
+#include <freax/netlink.h>
+#include <freax/nospec.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
 #include <net/net_namespace.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>

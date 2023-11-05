@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SPI_MAX7301_H
-#define LINUX_SPI_MAX7301_H
+#ifndef freax_SPI_MAX7301_H
+#define freax_SPI_MAX7301_H
 
-#include <linux/gpio/driver.h>
+#include <freax/gpio/driver.h>
 
 /*
  * Some registers must be read back to modify.

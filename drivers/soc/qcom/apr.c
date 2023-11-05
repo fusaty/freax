@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The freax Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/of_device.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/rpmsg.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/of_device.h>
+#include <freax/soc/qcom/apr.h>
+#include <freax/soc/qcom/pdr.h>
+#include <freax/rpmsg.h>
+#include <freax/of.h>
 
 enum {
 	PR_TYPE_APR = 0,

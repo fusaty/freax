@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_KD_H
-#define _UAPI_LINUX_KD_H
-#include <linux/types.h>
-#include <linux/compiler.h>
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_KD_H
+#define _UAPI_freax_KD_H
+#include <freax/types.h>
+#include <freax/compiler.h>
 
 /* 0x4B is 'K', to avoid collision with termios and vt */
 
@@ -187,4 +187,4 @@ struct console_font {
    don't reuse for the time being */
 /* note: 0x4B60-0x4B6D, 0x4B70-0x4B72 used above */
 
-#endif /* _UAPI_LINUX_KD_H */
+#endif /* _UAPI_freax_KD_H */

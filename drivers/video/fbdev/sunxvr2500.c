@@ -5,12 +5,12 @@
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/aperture.h>
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of.h>
+#include <freax/aperture.h>
+#include <freax/kernel.h>
+#include <freax/fb.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/of.h>
 
 #include <asm/io.h>
 

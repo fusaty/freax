@@ -5,14 +5,14 @@
  *	(c) Copyright Matthew Wilcox <willy@debian.org> 2001-2002
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/signal.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/serial_core.h>
+#include <freax/signal.h>
+#include <freax/types.h>
 
 #include <asm/hardware.h>
 #include <asm/parisc-device.h>

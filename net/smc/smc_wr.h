@@ -6,13 +6,13 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Steffen Maier <maier@linux.vnet.ibm.com>
+ * Author(s):  Steffen Maier <maier@freax.vnet.ibm.com>
  */
 
 #ifndef SMC_WR_H
 #define SMC_WR_H
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <rdma/ib_verbs.h>
 #include <asm/div64.h>
 

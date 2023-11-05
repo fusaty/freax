@@ -8,22 +8,22 @@
  * Baikal-T1 AXI-bus driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/atomic.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/nmi.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/atomic.h>
+#include <freax/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/nmi.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/sysfs.h>
 
 #define BT1_AXI_WERRL			0x110
 #define BT1_AXI_WERRH			0x114

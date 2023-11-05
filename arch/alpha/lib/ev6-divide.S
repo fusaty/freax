@@ -56,7 +56,7 @@
  * Try not to change the actual algorithm if possible for consistency.
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #define halt .long 0
 
 /*

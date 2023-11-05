@@ -39,22 +39,22 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/gw.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/rculist.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/can.h>
+#include <freax/can/core.h>
+#include <freax/can/skb.h>
+#include <freax/can/gw.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

@@ -12,7 +12,7 @@
 #include <crypto/hash.h>
 #include <crypto/kpp.h>
 #include <crypto/skcipher.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct crypto_engine;
 struct device;

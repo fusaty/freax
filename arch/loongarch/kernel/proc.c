@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>
 #include <asm/cpu-features.h>

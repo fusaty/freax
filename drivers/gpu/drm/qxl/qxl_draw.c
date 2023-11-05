@@ -20,7 +20,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/iosys-map.h>
+#include <freax/iosys-map.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_framebuffer.h>

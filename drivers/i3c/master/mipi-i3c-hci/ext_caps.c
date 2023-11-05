@@ -5,12 +5,12 @@
  * Author: Nicolas Pitre <npitre@baylibre.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/i3c/master.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
 
 #include "hci.h"
 #include "ext_caps.h"

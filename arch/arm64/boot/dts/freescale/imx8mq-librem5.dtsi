@@ -43,7 +43,7 @@
 		key-vol-down {
 			label = "VOL_DOWN";
 			gpios = <&gpio1 17 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <50>;
 			wakeup-source;
 		};
@@ -51,7 +51,7 @@
 		key-vol-up {
 			label = "VOL_UP";
 			gpios = <&gpio1 16 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <50>;
 			wakeup-source;
 		};
@@ -1104,7 +1104,7 @@
 		led_backlight: led@0 {
 			reg = <0>;
 			label = ":backlight";
-			linux,default-trigger = "backlight";
+			freax,default-trigger = "backlight";
 			led-max-microamp = <20000>;
 		};
 	};

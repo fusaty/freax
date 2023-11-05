@@ -8,12 +8,12 @@
  *		Quan Nguyen <qnguyen@apm.com>.
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/acpi.h>
 
 #include "gpiolib-acpi.h"
 

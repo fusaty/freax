@@ -30,13 +30,13 @@
 		debug-led0 {
 			label = "DEBUG_LED0";
 			gpios = <&gpio3 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		debug-led1 {
 			label = "DEBUG_LED1";
 			gpios = <&gpio3 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu";
+			freax,default-trigger = "cpu";
 		};
 	};
 

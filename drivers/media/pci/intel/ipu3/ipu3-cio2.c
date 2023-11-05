@@ -3,7 +3,7 @@
  * Copyright (C) 2017,2020 Intel Corporation
  *
  * Based partially on Intel IPU4 driver written by
- *  Sakari Ailus <sakari.ailus@linux.intel.com>
+ *  Sakari Ailus <sakari.ailus@freax.intel.com>
  *  Samu Onkalo <samu.onkalo@intel.com>
  *  Jouni Högander <jouni.hogander@intel.com>
  *  Jouni Ukkonen <jouni.ukkonen@intel.com>
@@ -11,17 +11,17 @@
  * et al.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/vmalloc.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pfn.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/vmalloc.h>
 
 #include <media/ipu-bridge.h>
 #include <media/v4l2-ctrls.h>

@@ -8,12 +8,12 @@
  *    statistics, and service functions...
  *    Add vports, etc
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/bsg-lib.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/bsg-lib.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

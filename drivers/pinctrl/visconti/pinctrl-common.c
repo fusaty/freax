@@ -5,14 +5,14 @@
  * Copyright (c) 2020 Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
 #include "pinctrl-common.h"
 #include "../core.h"
 #include "../pinconf.h"

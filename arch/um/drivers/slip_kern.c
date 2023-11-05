@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
 #include <net_kern.h>
 #include "slip.h"
 

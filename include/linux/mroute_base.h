@@ -1,9 +1,9 @@
-#ifndef __LINUX_MROUTE_BASE_H
-#define __LINUX_MROUTE_BASE_H
+#ifndef __freax_MROUTE_BASE_H
+#define __freax_MROUTE_BASE_H
 
-#include <linux/netdevice.h>
-#include <linux/rhashtable-types.h>
-#include <linux/spinlock.h>
+#include <freax/netdevice.h>
+#include <freax/rhashtable-types.h>
+#include <freax/spinlock.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/fib_notifier.h>

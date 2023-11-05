@@ -10,17 +10,17 @@
 #include <drm/drm_probe_helper.h>
 #include <video/mipi_display.h>
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
-#include <linux/phy/phy-mipi-dphy.h>
+#include <freax/phy/phy-mipi-dphy.h>
 
 #include "cdns-dsi-core.h"
 #ifdef CONFIG_DRM_CDNS_DSI_J721E

@@ -16,9 +16,9 @@
  * Copyright 1999-2001 Jeff Garzik <jgarzik@pobox.com>
  */
 
-#include <linux/iosys-map.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/iosys-map.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include <video/cirrus.h>
 #include <video/vga.h>

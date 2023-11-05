@@ -13,13 +13,13 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/gpio.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
 static const struct acpi_gpio_params shps_base_presence_int   = { 0, 0, false };
 static const struct acpi_gpio_params shps_base_presence       = { 1, 0, false };

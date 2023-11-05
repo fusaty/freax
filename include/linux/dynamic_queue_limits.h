@@ -33,8 +33,8 @@
  * be executed concurrently (i.e. they can be protected by different locks).
  */
 
-#ifndef _LINUX_DQL_H
-#define _LINUX_DQL_H
+#ifndef _freax_DQL_H
+#define _freax_DQL_H
 
 #ifdef __KERNEL__
 
@@ -105,4 +105,4 @@ void dql_init(struct dql *dql, unsigned int hold_time);
 
 #endif /* _KERNEL_ */
 
-#endif /* _LINUX_DQL_H */
+#endif /* _freax_DQL_H */

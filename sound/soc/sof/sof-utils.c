@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2018-2022 Intel Corporation. All rights reserved.
 //
-// Author: Keyon Jie <yang.jie@linux.intel.com>
+// Author: Keyon Jie <yang.jie@freax.intel.com>
 //
 
 #include <asm/unaligned.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/device.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/device.h>
 #include <sound/memalloc.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include "sof-utils.h"
 
 /*

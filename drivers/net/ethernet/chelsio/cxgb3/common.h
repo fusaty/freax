@@ -32,13 +32,13 @@
 #ifndef __CHELSIO_COMMON_H
 #define __CHELSIO_COMMON_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mdio.h>
 #include "version.h"
 
 #define CH_ERR(adap, fmt, ...)   dev_err(&adap->pdev->dev, fmt, ##__VA_ARGS__)

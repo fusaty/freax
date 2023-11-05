@@ -8,14 +8,14 @@
 #ifndef MT76X0U_H
 #define MT76X0U_H
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/completion.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/usb.h>
+#include <freax/completion.h>
 #include <net/mac80211.h>
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "../mt76x02.h"
 #include "eeprom.h"

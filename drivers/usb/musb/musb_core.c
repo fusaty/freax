@@ -8,11 +8,11 @@
  */
 
 /*
- * Inventra (Multipoint) Dual-Role Controller Driver for Linux.
+ * Inventra (Multipoint) Dual-Role Controller Driver for freax.
  *
  * This consists of a Host Controller Driver (HCD) and a peripheral
  * controller driver implementing the "Gadget" API; OTG support is
- * in the works.  These are normal Linux-USB controller drivers which
+ * in the works.  These are normal freax-USB controller drivers which
  * use IRQs and have no dedicated thread.
  *
  * This version of the driver has only been used with products from
@@ -23,7 +23,7 @@
  *
  * NOTE:  the original Mentor code here was pretty much a collection
  * of mechanisms that don't seem to have been fully integrated/working
- * for *any* Linux kernel version.  This version aims at Linux 2.6.now,
+ * for *any* freax kernel version.  This version aims at freax 2.6.now,
  * Key open issues include:
  *
  *  - Lack of host-side transaction scheduling, for all transfer types.
@@ -64,19 +64,19 @@
  * Most of the conditional compilation will (someday) vanish.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/prefetch.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb.h>
-#include <linux/usb/of.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/kobject.h>
+#include <freax/prefetch.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/dma-mapping.h>
+#include <freax/usb.h>
+#include <freax/usb/of.h>
 
 #include "musb_core.h"
 #include "musb_trace.h"

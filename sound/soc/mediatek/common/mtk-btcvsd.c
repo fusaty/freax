@@ -5,10 +5,10 @@
 // Copyright (c) 2019 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/sched/clock.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/sched/clock.h>
 
 #include <sound/soc.h>
 

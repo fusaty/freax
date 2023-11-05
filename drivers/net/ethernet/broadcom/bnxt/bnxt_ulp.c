@@ -7,19 +7,19 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/bitops.h>
+#include <freax/irq.h>
 #include <asm/byteorder.h>
-#include <linux/bitmap.h>
-#include <linux/auxiliary_bus.h>
+#include <freax/bitmap.h>
+#include <freax/auxiliary_bus.h>
 
 #include "bnxt_hsi.h"
 #include "bnxt.h"

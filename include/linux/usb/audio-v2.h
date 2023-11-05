@@ -8,10 +8,10 @@
  * in http://www.usb.org/developers/devclass_docs/Audio2.0_final.zip
  */
 
-#ifndef __LINUX_USB_AUDIO_V2_H
-#define __LINUX_USB_AUDIO_V2_H
+#ifndef __freax_USB_AUDIO_V2_H
+#define __freax_USB_AUDIO_V2_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* v1.0 and v2.0 of this standard have many things in common. For the rest
  * of the definitions, please refer to audio.h */
@@ -488,5 +488,5 @@ struct uac2_interrupt_data_msg {
 #define UAC2_EP_CS_DATA_OVERRUN		0x02
 #define UAC2_EP_CS_DATA_UNDERRUN	0x03
 
-#endif /* __LINUX_USB_AUDIO_V2_H */
+#endif /* __freax_USB_AUDIO_V2_H */
 

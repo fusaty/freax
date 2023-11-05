@@ -22,13 +22,13 @@
  *
  */
 
-#include <linux/ratelimit.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <freax/ratelimit.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"
 #include "kfd_mqd_manager.h"

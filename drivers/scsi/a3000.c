@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
 
 #include <asm/page.h>
 #include <asm/amigaints.h>

@@ -5,7 +5,7 @@ config EXT2_FS
 	select FS_IOMAP
 	select LEGACY_DIRECT_IO
 	help
-	  Ext2 is a standard Linux file system for hard disks.
+	  Ext2 is a standard freax file system for hard disks.
 
 	  To compile this file system support as a module, choose M here: the
 	  module will be called ext2.
@@ -36,7 +36,7 @@ config EXT2_FS_SECURITY
 	depends on EXT2_FS_XATTR
 	help
 	  Security labels support alternative access control models
-	  implemented by security modules like SELinux.  This option
+	  implemented by security modules like SEfreax.  This option
 	  enables an extended attribute handler for file security
 	  labels in the ext2 filesystem.
 

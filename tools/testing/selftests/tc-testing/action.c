@@ -6,8 +6,8 @@
  * License as published by the Free Software Foundation.
  */
 
-#include <linux/bpf.h>
-#include <linux/pkt_cls.h>
+#include <freax/bpf.h>
+#include <freax/pkt_cls.h>
 
 __attribute__((section("action-ok"),used)) int action_ok(struct __sk_buff *s)
 {

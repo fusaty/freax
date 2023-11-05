@@ -10,7 +10,7 @@
 #ifndef _DVB_USB_IDS_H_
 #define _DVB_USB_IDS_H_
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
 #define DVB_USB_DEV(pid, vid) \
     [vid] = { USB_DEVICE(USB_VID_ ## pid, USB_PID_ ## vid) }

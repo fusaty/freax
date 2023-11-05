@@ -15,13 +15,13 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-event.h>
 #include <media/v4l2-mediabus.h>

@@ -10,7 +10,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* 8 byte segment descriptor */
 struct desc_struct {

@@ -4,13 +4,13 @@
  * George McCollister <george.mccollister@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/of.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/phy.h>
+#include <freax/if_vlan.h>
+#include <freax/of.h>
 #include "xrs700x.h"
 #include "xrs700x_reg.h"
 

@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /***************************************************************************
- * Linux PPP over X - Generic PPP transport layer sockets
- * Linux PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
+ * freax PPP over X - Generic PPP transport layer sockets
+ * freax PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
  *
  * This file supplies definitions required by the PPP over Ethernet driver
  * (pppox.c).  All version information wrt this file is located in pppox.c
@@ -14,19 +14,19 @@
  *
  */
 
-#ifndef _UAPI__LINUX_IF_PPPOX_H
-#define _UAPI__LINUX_IF_PPPOX_H
+#ifndef _UAPI__freax_IF_PPPOX_H
+#define _UAPI__freax_IF_PPPOX_H
 
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
-#include <linux/socket.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_pppol2tp.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/socket.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_pppol2tp.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 /* For user-space programs to pick up these definitions
  * which they wouldn't get otherwise without defining __KERNEL__
@@ -157,4 +157,4 @@ struct pppoe_hdr {
 #define PPPOE_SES_HLEN	8
 
 
-#endif /* _UAPI__LINUX_IF_PPPOX_H */
+#endif /* _UAPI__freax_IF_PPPOX_H */

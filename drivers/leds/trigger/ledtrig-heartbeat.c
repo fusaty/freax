@@ -8,16 +8,16 @@
  * CONFIG_HEARTBEAT code.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/panic_notifier.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/panic_notifier.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/leds.h>
+#include <freax/reboot.h>
 #include "../leds.h"
 
 static int panic_heartbeats;

@@ -2,7 +2,7 @@
 /*
  * bsru6.h - ALPS BSRU6 tuner support (moved from budget-ci.c)
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://freaxtv.org
  */
 
 #ifndef BSRU6_H

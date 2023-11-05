@@ -2,7 +2,7 @@
 /*
  *
  * device driver for Conexant 2388x based TV cards
- * video4linux video interface
+ * video4freax video interface
  *
  * (c) 2003-04 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
  *
@@ -14,16 +14,16 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
 #include <asm/div64.h>
 
 #include <media/v4l2-common.h>

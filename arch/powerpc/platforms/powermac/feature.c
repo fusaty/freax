@@ -11,19 +11,19 @@
  *   - Refcount some clocks (see darwin)
  *   - Split split split...
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/spinlock.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/ioport.h>
+#include <freax/export.h>
+#include <freax/pci.h>
 #include <asm/sections.h>
 #include <asm/errno.h>
 #include <asm/ohare.h>

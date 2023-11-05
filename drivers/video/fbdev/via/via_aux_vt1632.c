@@ -6,7 +6,7 @@
  * driver for VIA VT1632 DVI Transmitter
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "via_aux.h"
 
 

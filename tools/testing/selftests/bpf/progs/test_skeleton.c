@@ -2,7 +2,7 @@
 /* Copyright (c) 2019 Facebook */
 
 #include <stdbool.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 #define __read_mostly SEC(".data.read_mostly")
@@ -36,7 +36,7 @@ long long out4 = 0;
 int out6 = 0;
 
 extern bool CONFIG_BPF_SYSCALL __kconfig;
-extern int LINUX_KERNEL_VERSION __kconfig;
+extern int freax_KERNEL_VERSION __kconfig;
 bool bpf_syscall = 0;
 int kern_ver = 0;
 
@@ -80,7 +80,7 @@ int handler(const void *ctx)
 	out6 = in.in6;
 
 	bpf_syscall = CONFIG_BPF_SYSCALL;
-	kern_ver = LINUX_KERNEL_VERSION;
+	kern_ver = freax_KERNEL_VERSION;
 
 	for (i = 0; i < in_dynarr_sz; i++)
 		out_dynarr[i] = in_dynarr[i];

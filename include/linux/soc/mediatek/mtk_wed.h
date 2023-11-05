@@ -1,12 +1,12 @@
 #ifndef __MTK_WED_H
 #define __MTK_WED_H
 
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/regmap.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/rcupdate.h>
+#include <freax/regmap.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 
 #define MTK_WED_TX_QUEUES		2
 #define MTK_WED_RX_QUEUES		2

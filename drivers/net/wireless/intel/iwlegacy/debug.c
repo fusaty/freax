@@ -4,11 +4,11 @@
  * Copyright(c) 2008 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel freax Wireless <ilw@freax.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *****************************************************************************/
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <freax/ieee80211.h>
+#include <freax/export.h>
 #include <net/mac80211.h>
 
 #include "common.h"

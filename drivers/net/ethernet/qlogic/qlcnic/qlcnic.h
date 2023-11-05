@@ -7,40 +7,40 @@
 #ifndef _QLCNIC_H_
 #define _QLCNIC_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
+#include <freax/firmware.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/timer.h>
+#include <freax/irq.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <freax/bitops.h>
+#include <freax/if_vlan.h>
 
 #include "qlcnic_hdr.h"
 #include "qlcnic_hw.h"
 #include "qlcnic_83xx_hw.h"
 #include "qlcnic_dcb.h"
 
-#define _QLCNIC_LINUX_MAJOR 5
-#define _QLCNIC_LINUX_MINOR 3
-#define _QLCNIC_LINUX_SUBVERSION 66
-#define QLCNIC_LINUX_VERSIONID  "5.3.66"
+#define _QLCNIC_freax_MAJOR 5
+#define _QLCNIC_freax_MINOR 3
+#define _QLCNIC_freax_SUBVERSION 66
+#define QLCNIC_freax_VERSIONID  "5.3.66"
 #define QLCNIC_DRV_IDC_VER  0x01
-#define QLCNIC_DRIVER_VERSION  ((_QLCNIC_LINUX_MAJOR << 16) |\
-		 (_QLCNIC_LINUX_MINOR << 8) | (_QLCNIC_LINUX_SUBVERSION))
+#define QLCNIC_DRIVER_VERSION  ((_QLCNIC_freax_MAJOR << 16) |\
+		 (_QLCNIC_freax_MINOR << 8) | (_QLCNIC_freax_SUBVERSION))
 
 #define QLCNIC_VERSION_CODE(a, b, c)	(((a) << 24) + ((b) << 16) + (c))
 #define _major(v)	(((v) >> 24) & 0xff)

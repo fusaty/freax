@@ -13,22 +13,22 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
-#include <linux/msi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/irqdomain.h>
+#include <freax/slab.h>
+#include <freax/syscore_ops.h>
+#include <freax/msi.h>
 #include <asm/mach/arch.h>
 #include <asm/exception.h>
 #include <asm/smp_plat.h>

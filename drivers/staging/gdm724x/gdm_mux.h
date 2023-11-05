@@ -4,9 +4,9 @@
 #ifndef _GDM_MUX_H_
 #define _GDM_MUX_H_
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/usb.h>
+#include <freax/list.h>
 
 #include "gdm_tty.h"
 

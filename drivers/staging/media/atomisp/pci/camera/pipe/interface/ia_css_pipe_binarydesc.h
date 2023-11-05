@@ -16,7 +16,7 @@
 #ifndef __IA_CSS_PIPE_BINARYDESC_H__
 #define __IA_CSS_PIPE_BINARYDESC_H__
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 #include <ia_css_types.h>		/* ia_css_pipe */
 #include <ia_css_frame_public.h>	/* ia_css_frame_info */

@@ -2,19 +2,19 @@
 /*
  * Copyright (c) 2020 Collabora Ltd.
  */
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/soc/mediatek/infracfg.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/soc/mediatek/infracfg.h>
 
 #include "mt6795-pm-domains.h"
 #include "mt8167-pm-domains.h"

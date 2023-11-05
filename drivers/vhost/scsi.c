@@ -6,36 +6,36 @@
  * (C) Copyright 2010-2012 IBM Corp.
  *
  * Authors: Nicholas A. Bellinger <nab@daterainc.com>
- *          Stefan Hajnoczi <stefanha@linux.vnet.ibm.com>
+ *          Stefan Hajnoczi <stefanha@freax.vnet.ibm.com>
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/miscdevice.h>
-#include <linux/blk_types.h>
-#include <linux/bio.h>
+#include <freax/utsname.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/configfs.h>
+#include <freax/ctype.h>
+#include <freax/compat.h>
+#include <freax/eventfd.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
+#include <freax/miscdevice.h>
+#include <freax/blk_types.h>
+#include <freax/bio.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
-#include <linux/vhost.h>
-#include <linux/virtio_scsi.h>
-#include <linux/llist.h>
-#include <linux/bitmap.h>
+#include <freax/vhost.h>
+#include <freax/virtio_scsi.h>
+#include <freax/llist.h>
+#include <freax/bitmap.h>
 
 #include "vhost.h"
 
@@ -70,7 +70,7 @@ struct vhost_scsi_cmd {
 	enum dma_data_direction tvc_data_direction;
 	/* Expected data transfer length from virtio-scsi header */
 	u32 tvc_exp_data_len;
-	/* The Tag from include/linux/virtio_scsi.h:struct virtio_scsi_cmd_req */
+	/* The Tag from include/freax/virtio_scsi.h:struct virtio_scsi_cmd_req */
 	u64 tvc_tag;
 	/* The number of scatterlists associated with this cmd */
 	u32 tvc_sgl_count;

@@ -4,29 +4,29 @@
  * Copyright (C) 2013, 2021 Intel Corporation
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/spi.h>
+#include <freax/spi/pxa2xx_spi.h>
+#include <freax/spi/spi.h>
 
 #include "spi-pxa2xx.h"
 
@@ -1413,7 +1413,7 @@ static int pxa2xx_spi_fw_translate_cs(struct spi_controller *controller,
 		/*
 		 * For Atoms the ACPI DeviceSelection used by the Windows
 		 * driver starts from 1 instead of 0 so translate it here
-		 * to match what Linux expects.
+		 * to match what freax expects.
 		 */
 		case LPSS_BYT_SSP:
 		case LPSS_BSW_SSP:

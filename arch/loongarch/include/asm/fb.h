@@ -5,8 +5,8 @@
 #ifndef _ASM_FB_H_
 #define _ASM_FB_H_
 
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <freax/compiler.h>
+#include <freax/string.h>
 
 static inline void fb_memcpy_fromio(void *to, const volatile void __iomem *from, size_t n)
 {

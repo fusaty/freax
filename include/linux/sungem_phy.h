@@ -2,7 +2,7 @@
 #ifndef __SUNGEM_PHY_H__
 #define __SUNGEM_PHY_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct mii_phy;
 

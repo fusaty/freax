@@ -6,15 +6,15 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define UNIPHIER_AIDET_NR_IRQS		256
 

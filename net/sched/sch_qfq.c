@@ -6,12 +6,12 @@
  * Copyright (c) 2012 Paolo Valente.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_sched.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/pkt_sched.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
@@ -32,7 +32,7 @@
     Packet Scheduling with Tight Bandwidth Distribution Guarantees."
 
     See also:
-    http://retis.sssup.it/~fabio/linux/qfq/
+    http://retis.sssup.it/~fabio/freax/qfq/
  */
 
 /*

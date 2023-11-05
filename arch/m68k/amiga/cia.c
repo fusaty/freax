@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/amiga/cia.c - CIA support
+ *  freax/arch/m68k/amiga/cia.c - CIA support
  *
  *  Copyright (C) 1996 Roman Zippel
  *
@@ -10,15 +10,15 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/kernel_stat.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
 #include <asm/irq.h>
 #include <asm/amigahw.h>

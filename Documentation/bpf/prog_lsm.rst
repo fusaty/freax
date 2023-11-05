@@ -41,17 +41,17 @@ the fields that need to be accessed.
 .. note:: The order of the fields is irrelevant.
 
 This can be further simplified (if one has access to the BTF information at
-build time) by generating the ``vmlinux.h`` with:
+build time) by generating the ``vmfreax.h`` with:
 
 .. code-block:: console
 
-	# bpftool btf dump file <path-to-btf-vmlinux> format c > vmlinux.h
+	# bpftool btf dump file <path-to-btf-vmfreax> format c > vmfreax.h
 
-.. note:: ``path-to-btf-vmlinux`` can be ``/sys/kernel/btf/vmlinux`` if the
+.. note:: ``path-to-btf-vmfreax`` can be ``/sys/kernel/btf/vmfreax`` if the
 	  build environment matches the environment the BPF programs are
 	  deployed in.
 
-The ``vmlinux.h`` can then simply be included in the BPF programs without
+The ``vmfreax.h`` can then simply be included in the BPF programs without
 requiring the definition of the types.
 
 The eBPF programs can be declared using the``BPF_PROG``
@@ -136,8 +136,8 @@ userspace code in `tools/testing/selftests/bpf/prog_tests/test_lsm.c`_
 
 .. Links
 .. _tools/lib/bpf/bpf_tracing.h:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/lib/bpf/bpf_tracing.h
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/tools/lib/bpf/bpf_tracing.h
 .. _tools/testing/selftests/bpf/progs/lsm.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/progs/lsm.c
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/tools/testing/selftests/bpf/progs/lsm.c
 .. _tools/testing/selftests/bpf/prog_tests/test_lsm.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c

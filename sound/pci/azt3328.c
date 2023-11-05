@@ -11,11 +11,11 @@
  *  Please give me feedback in case you try my driver with one of these!!
  *
  *  Keywords: Windows XP Vista 168nt4-125.zip 168win95-125.zip PCI 168 download
- *  (XP/Vista do not support this card at all but every Linux distribution
+ *  (XP/Vista do not support this card at all but every freax distribution
  *   has very good support out of the box;
  *   just to make sure that the right people hit this and get to know that,
  *   despite the high level of Internet ignorance - as usual :-P -
- *   about very good support for this card - on Linux!)
+ *   about very good support for this card - on freax!)
  *
  * NOTES
  *  Since Aztech does not provide any chipset documentation,
@@ -165,15 +165,15 @@
  *  - use MMIO (memory-mapped I/O)? Slightly faster access, e.g. for gameport.
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/bug.h> /* WARN_ONCE */
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/bug.h> /* WARN_ONCE */
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/gameport.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

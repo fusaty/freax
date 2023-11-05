@@ -5,14 +5,14 @@
  * Copyright (C) 2017 Renesas Electronics Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #define USB30_CLKSET0		0x034
 #define USB30_CLKSET1		0x036

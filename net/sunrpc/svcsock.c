@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svcsock.c
+ * freax/net/sunrpc/svcsock.c
  *
  * These are the RPC server socket internals.
  *
@@ -20,23 +20,23 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/bvec.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/udp.h>
+#include <freax/tcp.h>
+#include <freax/unistd.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/file.h>
+#include <freax/freezer.h>
+#include <freax/bvec.h>
 
 #include <net/sock.h>
 #include <net/checksum.h>
@@ -47,18 +47,18 @@
 #include <net/tcp_states.h>
 #include <net/tls_prot.h>
 #include <net/handshake.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
+#include <freax/uaccess.h>
+#include <freax/highmem.h>
 #include <asm/ioctls.h>
-#include <linux/key.h>
+#include <freax/key.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/xprt.h>
+#include <freax/sunrpc/types.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/sunrpc/xprt.h>
 
 #include <trace/events/sock.h>
 #include <trace/events/sunrpc.h>

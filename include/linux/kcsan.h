@@ -7,11 +7,11 @@
  * Copyright (C) 2019, Google LLC.
  */
 
-#ifndef _LINUX_KCSAN_H
-#define _LINUX_KCSAN_H
+#ifndef _freax_KCSAN_H
+#define _freax_KCSAN_H
 
-#include <linux/kcsan-checks.h>
-#include <linux/types.h>
+#include <freax/kcsan-checks.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_KCSAN
 
@@ -72,4 +72,4 @@ static inline void kcsan_init(void)			{ }
 
 #endif /* CONFIG_KCSAN */
 
-#endif /* _LINUX_KCSAN_H */
+#endif /* _freax_KCSAN_H */

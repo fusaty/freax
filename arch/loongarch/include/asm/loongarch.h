@@ -5,9 +5,9 @@
 #ifndef _ASM_LOONGARCH_H
 #define _ASM_LOONGARCH_H
 
-#include <linux/bits.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/linkage.h>
+#include <freax/types.h>
 
 #ifndef __ASSEMBLY__
 #include <larchintrin.h>

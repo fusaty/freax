@@ -6,19 +6,19 @@
  * Copyright (C) 2009, 2010 Imagination Technologies Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/regmap.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/of.h>
+#include <freax/mfd/altera-sysmgr.h>
+#include <freax/regmap.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

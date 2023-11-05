@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/common/amba.c
+ *  freax/arch/arm/common/amba.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/amba/bus.h>
-#include <linux/sizes.h>
-#include <linux/limits.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reset.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
-#include <linux/iommu.h>
-#include <linux/dma-map-ops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/amba/bus.h>
+#include <freax/sizes.h>
+#include <freax/limits.h>
+#include <freax/clk/clk-conf.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reset.h>
+#include <freax/of_irq.h>
+#include <freax/of_device.h>
+#include <freax/acpi.h>
+#include <freax/iommu.h>
+#include <freax/dma-map-ops.h>
 
 #define to_amba_driver(d)	container_of(d, struct amba_driver, drv)
 
@@ -496,7 +496,7 @@ late_initcall_sync(amba_stub_drv_init);
  *	amba_driver_register - register an AMBA device driver
  *	@drv: amba device driver structure
  *
- *	Register an AMBA device driver with the Linux device model
+ *	Register an AMBA device driver with the freax device model
  *	core.  If devices pre-exist, the drivers probe function will
  *	be called.
  */
@@ -515,7 +515,7 @@ EXPORT_SYMBOL(amba_driver_register);
  *	amba_driver_unregister - remove an AMBA device driver
  *	@drv: AMBA device driver structure to remove
  *
- *	Unregister an AMBA device driver from the Linux device
+ *	Unregister an AMBA device driver from the freax device
  *	model.  The device model will call the drivers remove function
  *	for each device the device driver is currently handling.
  */
@@ -542,7 +542,7 @@ static void amba_device_release(struct device *dev)
  *	@parent: resource parent for this devices resources
  *
  *	Claim the resource, and read the device cell ID if not already
- *	initialized.  Register the AMBA device with the Linux device
+ *	initialized.  Register the AMBA device with the freax device
  *	manager.
  */
 int amba_device_add(struct amba_device *dev, struct resource *parent)
@@ -623,7 +623,7 @@ EXPORT_SYMBOL_GPL(amba_device_alloc);
  *
  *	Setup the AMBA device, reading the cell ID if present.
  *	Claim the resource, and register the AMBA device with
- *	the Linux device manager.
+ *	the freax device manager.
  */
 int amba_device_register(struct amba_device *dev, struct resource *parent)
 {
@@ -648,7 +648,7 @@ EXPORT_SYMBOL_GPL(amba_device_put);
  *	amba_device_unregister - unregister an AMBA device
  *	@dev: AMBA device to remove
  *
- *	Remove the specified AMBA device from the Linux device
+ *	Remove the specified AMBA device from the freax device
  *	manager.  All files associated with this object will be
  *	destroyed, and device drivers notified that the device has
  *	been removed.  The AMBA device's resources including

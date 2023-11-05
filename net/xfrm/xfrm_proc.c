@@ -4,53 +4,53 @@
  *
  * Copyright (C)2006-2007 USAGI/WIDE Project
  *
- * Authors:	Masahide NAKAMURA <nakam@linux-ipv6.org>
+ * Authors:	Masahide NAKAMURA <nakam@freax-ipv6.org>
  */
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/export.h>
 #include <net/snmp.h>
 #include <net/xfrm.h>
 
 static const struct snmp_mib xfrm_mib_list[] = {
-	SNMP_MIB_ITEM("XfrmInError", LINUX_MIB_XFRMINERROR),
-	SNMP_MIB_ITEM("XfrmInBufferError", LINUX_MIB_XFRMINBUFFERERROR),
-	SNMP_MIB_ITEM("XfrmInHdrError", LINUX_MIB_XFRMINHDRERROR),
-	SNMP_MIB_ITEM("XfrmInNoStates", LINUX_MIB_XFRMINNOSTATES),
-	SNMP_MIB_ITEM("XfrmInStateProtoError", LINUX_MIB_XFRMINSTATEPROTOERROR),
-	SNMP_MIB_ITEM("XfrmInStateModeError", LINUX_MIB_XFRMINSTATEMODEERROR),
-	SNMP_MIB_ITEM("XfrmInStateSeqError", LINUX_MIB_XFRMINSTATESEQERROR),
-	SNMP_MIB_ITEM("XfrmInStateExpired", LINUX_MIB_XFRMINSTATEEXPIRED),
-	SNMP_MIB_ITEM("XfrmInStateMismatch", LINUX_MIB_XFRMINSTATEMISMATCH),
-	SNMP_MIB_ITEM("XfrmInStateInvalid", LINUX_MIB_XFRMINSTATEINVALID),
-	SNMP_MIB_ITEM("XfrmInTmplMismatch", LINUX_MIB_XFRMINTMPLMISMATCH),
-	SNMP_MIB_ITEM("XfrmInNoPols", LINUX_MIB_XFRMINNOPOLS),
-	SNMP_MIB_ITEM("XfrmInPolBlock", LINUX_MIB_XFRMINPOLBLOCK),
-	SNMP_MIB_ITEM("XfrmInPolError", LINUX_MIB_XFRMINPOLERROR),
-	SNMP_MIB_ITEM("XfrmOutError", LINUX_MIB_XFRMOUTERROR),
-	SNMP_MIB_ITEM("XfrmOutBundleGenError", LINUX_MIB_XFRMOUTBUNDLEGENERROR),
-	SNMP_MIB_ITEM("XfrmOutBundleCheckError", LINUX_MIB_XFRMOUTBUNDLECHECKERROR),
-	SNMP_MIB_ITEM("XfrmOutNoStates", LINUX_MIB_XFRMOUTNOSTATES),
-	SNMP_MIB_ITEM("XfrmOutStateProtoError", LINUX_MIB_XFRMOUTSTATEPROTOERROR),
-	SNMP_MIB_ITEM("XfrmOutStateModeError", LINUX_MIB_XFRMOUTSTATEMODEERROR),
-	SNMP_MIB_ITEM("XfrmOutStateSeqError", LINUX_MIB_XFRMOUTSTATESEQERROR),
-	SNMP_MIB_ITEM("XfrmOutStateExpired", LINUX_MIB_XFRMOUTSTATEEXPIRED),
-	SNMP_MIB_ITEM("XfrmOutPolBlock", LINUX_MIB_XFRMOUTPOLBLOCK),
-	SNMP_MIB_ITEM("XfrmOutPolDead", LINUX_MIB_XFRMOUTPOLDEAD),
-	SNMP_MIB_ITEM("XfrmOutPolError", LINUX_MIB_XFRMOUTPOLERROR),
-	SNMP_MIB_ITEM("XfrmFwdHdrError", LINUX_MIB_XFRMFWDHDRERROR),
-	SNMP_MIB_ITEM("XfrmOutStateInvalid", LINUX_MIB_XFRMOUTSTATEINVALID),
-	SNMP_MIB_ITEM("XfrmAcquireError", LINUX_MIB_XFRMACQUIREERROR),
+	SNMP_MIB_ITEM("XfrmInError", freax_MIB_XFRMINERROR),
+	SNMP_MIB_ITEM("XfrmInBufferError", freax_MIB_XFRMINBUFFERERROR),
+	SNMP_MIB_ITEM("XfrmInHdrError", freax_MIB_XFRMINHDRERROR),
+	SNMP_MIB_ITEM("XfrmInNoStates", freax_MIB_XFRMINNOSTATES),
+	SNMP_MIB_ITEM("XfrmInStateProtoError", freax_MIB_XFRMINSTATEPROTOERROR),
+	SNMP_MIB_ITEM("XfrmInStateModeError", freax_MIB_XFRMINSTATEMODEERROR),
+	SNMP_MIB_ITEM("XfrmInStateSeqError", freax_MIB_XFRMINSTATESEQERROR),
+	SNMP_MIB_ITEM("XfrmInStateExpired", freax_MIB_XFRMINSTATEEXPIRED),
+	SNMP_MIB_ITEM("XfrmInStateMismatch", freax_MIB_XFRMINSTATEMISMATCH),
+	SNMP_MIB_ITEM("XfrmInStateInvalid", freax_MIB_XFRMINSTATEINVALID),
+	SNMP_MIB_ITEM("XfrmInTmplMismatch", freax_MIB_XFRMINTMPLMISMATCH),
+	SNMP_MIB_ITEM("XfrmInNoPols", freax_MIB_XFRMINNOPOLS),
+	SNMP_MIB_ITEM("XfrmInPolBlock", freax_MIB_XFRMINPOLBLOCK),
+	SNMP_MIB_ITEM("XfrmInPolError", freax_MIB_XFRMINPOLERROR),
+	SNMP_MIB_ITEM("XfrmOutError", freax_MIB_XFRMOUTERROR),
+	SNMP_MIB_ITEM("XfrmOutBundleGenError", freax_MIB_XFRMOUTBUNDLEGENERROR),
+	SNMP_MIB_ITEM("XfrmOutBundleCheckError", freax_MIB_XFRMOUTBUNDLECHECKERROR),
+	SNMP_MIB_ITEM("XfrmOutNoStates", freax_MIB_XFRMOUTNOSTATES),
+	SNMP_MIB_ITEM("XfrmOutStateProtoError", freax_MIB_XFRMOUTSTATEPROTOERROR),
+	SNMP_MIB_ITEM("XfrmOutStateModeError", freax_MIB_XFRMOUTSTATEMODEERROR),
+	SNMP_MIB_ITEM("XfrmOutStateSeqError", freax_MIB_XFRMOUTSTATESEQERROR),
+	SNMP_MIB_ITEM("XfrmOutStateExpired", freax_MIB_XFRMOUTSTATEEXPIRED),
+	SNMP_MIB_ITEM("XfrmOutPolBlock", freax_MIB_XFRMOUTPOLBLOCK),
+	SNMP_MIB_ITEM("XfrmOutPolDead", freax_MIB_XFRMOUTPOLDEAD),
+	SNMP_MIB_ITEM("XfrmOutPolError", freax_MIB_XFRMOUTPOLERROR),
+	SNMP_MIB_ITEM("XfrmFwdHdrError", freax_MIB_XFRMFWDHDRERROR),
+	SNMP_MIB_ITEM("XfrmOutStateInvalid", freax_MIB_XFRMOUTSTATEINVALID),
+	SNMP_MIB_ITEM("XfrmAcquireError", freax_MIB_XFRMACQUIREERROR),
 	SNMP_MIB_SENTINEL
 };
 
 static int xfrm_statistics_seq_show(struct seq_file *seq, void *v)
 {
-	unsigned long buff[LINUX_MIB_XFRMMAX];
+	unsigned long buff[freax_MIB_XFRMMAX];
 	struct net *net = seq->private;
 	int i;
 
-	memset(buff, 0, sizeof(unsigned long) * LINUX_MIB_XFRMMAX);
+	memset(buff, 0, sizeof(unsigned long) * freax_MIB_XFRMMAX);
 
 	snmp_get_cpu_field_batch(buff, xfrm_mib_list,
 				 net->mib.xfrm_statistics);

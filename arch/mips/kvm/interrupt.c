@@ -9,15 +9,15 @@
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/memblock.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/memblock.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 #include "interrupt.h"
 

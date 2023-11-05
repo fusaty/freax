@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GPIO_DRIVER_H
-#define __LINUX_GPIO_DRIVER_H
+#ifndef __freax_GPIO_DRIVER_H
+#define __freax_GPIO_DRIVER_H
 
-#include <linux/bits.h>
-#include <linux/cleanup.h>
-#include <linux/err.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqhandler.h>
-#include <linux/lockdep.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/property.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/cleanup.h>
+#include <freax/err.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/irqhandler.h>
+#include <freax/lockdep.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/property.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_GENERIC_MSI_IRQ
 #include <asm/msi.h>
@@ -59,7 +59,7 @@ struct gpio_irq_chip {
 	 * @domain:
 	 *
 	 * Interrupt translation domain; responsible for mapping between GPIO
-	 * hwirq number and Linux IRQ number.
+	 * hwirq number and freax IRQ number.
 	 */
 	struct irq_domain *domain;
 
@@ -792,7 +792,7 @@ int gpio_device_get_base(struct gpio_device *gdev);
 
 #else /* CONFIG_GPIOLIB */
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include <asm/bug.h>
 
@@ -842,4 +842,4 @@ static inline struct fwnode_handle *gpiochip_node_get_first(struct device *dev)
 	return NULL;
 }
 
-#endif /* __LINUX_GPIO_DRIVER_H */
+#endif /* __freax_GPIO_DRIVER_H */

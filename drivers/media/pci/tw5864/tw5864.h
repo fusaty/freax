@@ -5,13 +5,13 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/pci.h>
-#include <linux/videodev2.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <freax/pci.h>
+#include <freax/videodev2.h>
+#include <freax/notifier.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

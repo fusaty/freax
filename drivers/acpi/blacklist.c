@@ -12,10 +12,10 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
 
 #include "internal.h"
 

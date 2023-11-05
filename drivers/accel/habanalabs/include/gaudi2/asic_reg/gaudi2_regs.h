@@ -8,7 +8,7 @@
 #ifndef ASIC_REG_GAUDI2_REGS_H_
 #define ASIC_REG_GAUDI2_REGS_H_
 
-#include "gaudi2_blocks_linux_driver.h"
+#include "gaudi2_blocks_freax_driver.h"
 #include "psoc_reset_conf_regs.h"
 #include "psoc_global_conf_regs.h"
 #include "cpu_if_regs.h"

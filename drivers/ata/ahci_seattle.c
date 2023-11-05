@@ -8,15 +8,15 @@
  * based on the AHCI SATA platform driver by Jeff Garzik and Anton Vorontsov
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/ahci_platform.h>
-#include <linux/acpi.h>
-#include <linux/pci_ids.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/libata.h>
+#include <freax/ahci_platform.h>
+#include <freax/acpi.h>
+#include <freax/pci_ids.h>
 #include "ahci.h"
 
 /* SGPIO Control Register definition

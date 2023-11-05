@@ -5,12 +5,12 @@
 // Copyright (C) 2012, Maarten ter Huurne <maarten@treewalker.org>
 // Copyright (C) 2019, Paul Cercueil <paul@crapouillou.net>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/time64.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/time64.h>
 
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

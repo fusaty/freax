@@ -2,7 +2,7 @@
 #ifndef ___ASM_SPARC_MC146818RTC_H
 #define ___ASM_SPARC_MC146818RTC_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 extern spinlock_t rtc_lock;
 

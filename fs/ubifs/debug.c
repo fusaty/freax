@@ -15,12 +15,12 @@
  * various local functions of those subsystems.
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/ctype.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/math64.h>
+#include <freax/uaccess.h>
+#include <freax/random.h>
+#include <freax/ctype.h>
 #include "ubifs.h"
 
 static DEFINE_SPINLOCK(dbg_lock);

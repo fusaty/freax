@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#include <linux/interval_tree.h>
-#include <linux/iommufd.h>
-#include <linux/iommu.h>
-#include <uapi/linux/iommufd.h>
+#include <freax/interval_tree.h>
+#include <freax/iommufd.h>
+#include <freax/iommu.h>
+#include <uapi/freax/iommufd.h>
 
 #include "io_pagetable.h"
 

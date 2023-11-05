@@ -8,14 +8,14 @@
  * Author: Leo Yan <leo.yan@linaro.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mailbox_client.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mailbox_client.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* Stub clocks id */
 #define HI6220_STUB_ACPU0		0

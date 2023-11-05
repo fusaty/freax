@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-1.0+
 
-/* 8390.c: A general NS8390 ethernet driver core for linux. */
+/* 8390.c: A general NS8390 ethernet driver core for freax. */
 /*
 	Written 1992-94 by Donald Becker.
 
@@ -49,27 +49,27 @@
 
   */
 
-#include <linux/build_bug.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/build_bug.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 #include <asm/irq.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/crc32.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 
 #define NS8390_CORE
 #include "8390.h"
@@ -116,7 +116,7 @@ static int msg_enable;
 static const int default_msg_level = (NETIF_MSG_DRV | NETIF_MSG_PROBE | NETIF_MSG_RX_ERR |
 				     NETIF_MSG_TX_ERR);
 module_param(msg_enable, int, 0444);
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see freax/netdevice.h for bitmap)");
 
 /*
  *	SMP and the 8390 setup.

@@ -10,8 +10,8 @@
 #include "dm-btree-internal.h"
 #include "dm-persistent-data-internal.h"
 
-#include <linux/bitops.h>
-#include <linux/device-mapper.h>
+#include <freax/bitops.h>
+#include <freax/device-mapper.h>
 
 #define DM_MSG_PREFIX "space map common"
 

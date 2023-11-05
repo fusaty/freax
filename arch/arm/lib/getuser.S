@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/getuser.S
+ *  freax/arch/arm/lib/getuser.S
  *
  *  Copyright (C) 2001 Russell King
  *
@@ -24,7 +24,7 @@
  * Note that ADDR_LIMIT is either 0 or 0xc0000000.
  * Note also that it is intended that __get_user_bad is not global.
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/domain.h>
@@ -39,7 +39,7 @@ _ASM_NOKPROBE(__get_user_1)
 
 ENTRY(__get_user_2)
 	check_uaccess r0, 2, r1, r2, __get_user_bad
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 
 2: TUSER(ldrh)	r2, [r0]
 
@@ -60,7 +60,7 @@ rb	.req	r0
 	orr	r2, rb, r2, lsl #8
 #endif
 
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
 	mov	r0, #0
 	ret	lr
@@ -151,7 +151,7 @@ _ASM_NOKPROBE(__get_user_bad8)
 .pushsection __ex_table, "a"
 	.long	1b, __get_user_bad
 	.long	2b, __get_user_bad
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	.long	3b, __get_user_bad
 #endif
 	.long	4b, __get_user_bad

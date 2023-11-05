@@ -16,23 +16,23 @@
  *    Dec 2004: Added support for PXA27x and slave device probing [Liam Girdwood]
  *    Feb 2005: Rework slave mode handling [RMK]
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/i2c-pxa.h>
+#include <freax/slab.h>
 
 /* I2C register field definitions */
 #define IBMR_SDAS	(1 << 0)

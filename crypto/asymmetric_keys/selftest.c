@@ -5,10 +5,10 @@
  */
 
 #include <crypto/pkcs7.h>
-#include <linux/cred.h>
-#include <linux/kernel.h>
-#include <linux/key.h>
-#include <linux/module.h>
+#include <freax/cred.h>
+#include <freax/kernel.h>
+#include <freax/key.h>
+#include <freax/module.h>
 #include "x509_parser.h"
 
 struct certs_test {

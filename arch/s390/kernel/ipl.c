@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *    ipl/reipl/dump support for Linux on s390.
+ *    ipl/reipl/dump support for freax on s390.
  *
  *    Copyright IBM Corp. 2005, 2012
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
  *		 Volker Sameske <sameske@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/kstrtox.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/crash_dump.h>
-#include <linux/debug_locks.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/kstrtox.h>
+#include <freax/panic_notifier.h>
+#include <freax/reboot.h>
+#include <freax/ctype.h>
+#include <freax/fs.h>
+#include <freax/gfp.h>
+#include <freax/crash_dump.h>
+#include <freax/debug_locks.h>
 #include <asm/asm-extable.h>
 #include <asm/diag.h>
 #include <asm/ipl.h>
@@ -693,7 +693,7 @@ static struct shutdown_action __refdata ipl_action = {
 };
 
 /*
- * reipl shutdown action: Reboot Linux on shutdown.
+ * reipl shutdown action: Reboot freax on shutdown.
  */
 
 /* VM IPL PARM attributes */
@@ -1631,7 +1631,7 @@ static struct shutdown_action __refdata reipl_action = {
 };
 
 /*
- * dump shutdown action: Dump Linux on shutdown.
+ * dump shutdown action: Dump freax on shutdown.
  */
 
 /* FCP dump device attributes */
@@ -2021,7 +2021,7 @@ static struct shutdown_action vmcmd_action = {SHUTDOWN_ACTION_VMCMD_STR,
 					      vmcmd_run, vmcmd_init};
 
 /*
- * stop shutdown action: Stop Linux on shutdown.
+ * stop shutdown action: Stop freax on shutdown.
  */
 
 static void stop_run(struct shutdown_trigger *trigger)

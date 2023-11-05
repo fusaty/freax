@@ -10,15 +10,15 @@
  */
 
 #include <ufs/ufshcd.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/debugfs.h>
-#include <linux/uuid.h>
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_qos.h>
+#include <freax/debugfs.h>
+#include <freax/uuid.h>
+#include <freax/acpi.h>
+#include <freax/gpio/consumer.h>
 
 struct ufs_host {
 	void (*late_init)(struct ufs_hba *hba);

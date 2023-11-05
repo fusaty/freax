@@ -3,10 +3,10 @@
  * Copyright 2008 Cisco Systems, Inc.  All rights reserved.
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
 #include <scsi/libfc.h>
 #include <scsi/fc_frame.h>
 #include "vnic_dev.h"

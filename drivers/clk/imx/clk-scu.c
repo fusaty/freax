@@ -5,16 +5,16 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/bsearch.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/firmware/imx/svc/rm.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/arm-smccc.h>
+#include <freax/bsearch.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/firmware/imx/svc/rm.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 #include <xen/xen.h>
 
 #include "clk-scu.h"
@@ -676,7 +676,7 @@ static bool imx_clk_is_resource_owned(u32 rsrc)
 {
 	/*
 	 * A-core resources are special. SCFW reports they are not "owned" by
-	 * current partition but linux can still adjust them for cpufreq.
+	 * current partition but freax can still adjust them for cpufreq.
 	 */
 	if (rsrc == IMX_SC_R_A53 || rsrc == IMX_SC_R_A72 || rsrc == IMX_SC_R_A35)
 		return true;

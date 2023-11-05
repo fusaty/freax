@@ -13,15 +13,15 @@
  * once after POR. Once enabled, you cannot disable, and vice versa.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/watchdog.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <sysdev/fsl_soc.h>
 
 #define WATCHDOG_TIMEOUT 10

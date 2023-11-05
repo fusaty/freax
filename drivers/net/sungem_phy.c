@@ -20,17 +20,17 @@
  */
 
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/sungem_phy.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/sungem_phy.h>
 
 /* Link modes of the BCM5400 PHY */
 static const int phy_BCM5400_link_table[8][3] = {

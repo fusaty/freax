@@ -7,10 +7,10 @@
  * Copyright (c) 2003 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include "mixart.h"

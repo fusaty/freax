@@ -5,9 +5,9 @@
 //
 // Exynos5420 - CPU PMU (Power Management Unit) support
 
-#include <linux/pm.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/soc/samsung/exynos-pmu.h>
+#include <freax/pm.h>
+#include <freax/soc/samsung/exynos-regs-pmu.h>
+#include <freax/soc/samsung/exynos-pmu.h>
 
 #include <asm/cputype.h>
 

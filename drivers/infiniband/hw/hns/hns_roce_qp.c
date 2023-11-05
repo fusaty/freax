@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_umem.h>
 #include <rdma/uverbs_ioctl.h>

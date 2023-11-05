@@ -18,7 +18,7 @@
 #	riscv port by Wadim Mueller <wafgo01@gmail.com>
 #
 #	Usage:
-#	objdump -d vmlinux | scripts/checkstack.pl [arch]
+#	objdump -d vmfreax | scripts/checkstack.pl [arch]
 #
 #	TODO :	Port to all architectures (one regex per arch)
 

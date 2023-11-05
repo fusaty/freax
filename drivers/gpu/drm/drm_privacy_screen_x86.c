@@ -6,7 +6,7 @@
  * Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include <drm/drm_privacy_screen_machine.h>
 
 #ifdef CONFIG_X86

@@ -21,17 +21,17 @@
  * "cb" means control block
  */
 
-#include <linux/acpi.h>
-#include <linux/dcbnl.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pkt_sched.h>
-#include <linux/types.h>
-#include <linux/bitmap.h>
+#include <freax/acpi.h>
+#include <freax/dcbnl.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/pkt_sched.h>
+#include <freax/types.h>
+#include <freax/bitmap.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
 

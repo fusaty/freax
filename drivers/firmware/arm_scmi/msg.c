@@ -8,7 +8,7 @@
  * Copyright (C) 2020-2021 OpenSynergy GmbH
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "common.h"
 

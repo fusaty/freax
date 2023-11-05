@@ -24,15 +24,15 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter_netdev.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/moduleparam.h>
+#include <freax/netfilter_netdev.h>
 #include <net/pkt_sched.h>
 #include <net/net_namespace.h>
 

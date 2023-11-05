@@ -6,34 +6,34 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/prefetch.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/dmapool.h>
+#include <freax/mempool.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_vlan.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/prefetch.h>
 
 #include "qla3xxx.h"
 

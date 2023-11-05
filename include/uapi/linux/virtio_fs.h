@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 
-#ifndef _UAPI_LINUX_VIRTIO_FS_H
-#define _UAPI_LINUX_VIRTIO_FS_H
+#ifndef _UAPI_freax_VIRTIO_FS_H
+#define _UAPI_freax_VIRTIO_FS_H
 
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_types.h>
+#include <freax/types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_types.h>
 
 struct virtio_fs_config {
 	/* Filesystem name (UTF-8, not NUL-terminated, padded with NULs) */
@@ -19,4 +19,4 @@ struct virtio_fs_config {
 /* For the id field in virtio_pci_shm_cap */
 #define VIRTIO_FS_SHMCAP_ID_CACHE 0
 
-#endif /* _UAPI_LINUX_VIRTIO_FS_H */
+#endif /* _UAPI_freax_VIRTIO_FS_H */

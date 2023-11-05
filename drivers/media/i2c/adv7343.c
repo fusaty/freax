@@ -15,18 +15,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/videodev2.h>
+#include <freax/uaccess.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
 
 #include <media/i2c/adv7343.h>
 #include <media/v4l2-async.h>

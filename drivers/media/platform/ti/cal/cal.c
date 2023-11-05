@@ -9,16 +9,16 @@
  *	Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

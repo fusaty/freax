@@ -5,10 +5,10 @@
 #if !defined(_TRACE_LIBATA_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_LIBATA_H
 
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <freax/ata.h>
+#include <freax/libata.h>
+#include <freax/tracepoint.h>
+#include <freax/trace_seq.h>
 
 #define ata_opcode_name(opcode)	{ opcode, #opcode }
 #define show_opcode_name(val)					\

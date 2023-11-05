@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Advanced Micro Devices, Inc */
 
-#include <linux/pci.h>
-#include <linux/vdpa.h>
-#include <uapi/linux/vdpa.h>
-#include <linux/virtio_pci_modern.h>
+#include <freax/pci.h>
+#include <freax/vdpa.h>
+#include <uapi/freax/vdpa.h>
+#include <freax/virtio_pci_modern.h>
 
-#include <linux/pds/pds_common.h>
-#include <linux/pds/pds_core_if.h>
-#include <linux/pds/pds_adminq.h>
-#include <linux/pds/pds_auxbus.h>
+#include <freax/pds/pds_common.h>
+#include <freax/pds/pds_core_if.h>
+#include <freax/pds/pds_adminq.h>
+#include <freax/pds/pds_auxbus.h>
 
 #include "vdpa_dev.h"
 #include "aux_drv.h"

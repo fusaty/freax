@@ -5,17 +5,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/of.h>
-#include <linux/if_vlan.h>
-#include <linux/iommu.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
+#include <freax/of.h>
+#include <freax/if_vlan.h>
+#include <freax/iommu.h>
 #include <net/ip.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
+#include <freax/bitfield.h>
 #include <net/page_pool/types.h>
 
 #include "otx2_reg.h"

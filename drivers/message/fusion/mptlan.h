@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptlan.h
+ *  freax/drivers/message/fusion/mptlan.h
  *      IP Over Fibre Channel device driver.
  *      For use with LSI Fibre Channel PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 2000-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionfreax@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -47,30 +47,30 @@
 
 /* mptlan.h */
 
-#ifndef LINUX_MPTLAN_H_INCLUDED
-#define LINUX_MPTLAN_H_INCLUDED
+#ifndef freax_MPTLAN_H_INCLUDED
+#define freax_MPTLAN_H_INCLUDED
 /*****************************************************************************/
 
 #if !defined(__GENKSYMS__)
-#include <linux/module.h>
+#include <freax/module.h>
 #endif
 
-#include <linux/netdevice.h>
-#include <linux/errno.h>
-// #include <linux/etherdevice.h>
-#include <linux/fcdevice.h>
-// #include <linux/fddidevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <freax/netdevice.h>
+#include <freax/errno.h>
+// #include <freax/etherdevice.h>
+#include <freax/fcdevice.h>
+// #include <freax/fddidevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 
     /* Override mptbase.h by pre-defining these! */
@@ -80,7 +80,7 @@
 
 /*****************************************************************************/
 #define LANAME		"Fusion MPT LAN driver"
-#define LANVER		MPT_LINUX_VERSION_COMMON
+#define LANVER		MPT_freax_VERSION_COMMON
 
 #ifdef MODULE
 MODULE_AUTHOR(MODULEAUTHOR);

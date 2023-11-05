@@ -8,17 +8,17 @@
  *
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/regulator/consumer.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
 
-#include <linux/mfd/si476x-core.h>
+#include <freax/mfd/si476x-core.h>
 
 #define SI476X_MAX_IO_ERRORS		10
 #define SI476X_DRIVER_RDS_FIFO_DEPTH	128

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
- * include/uapi/linux/tipc_config.h: Header for TIPC configuration interface
+ * include/uapi/freax/tipc_config.h: Header for TIPC configuration interface
  *
  * Copyright (c) 2003-2006, Ericsson AB
  * Copyright (c) 2005-2007, 2010-2011, Wind River Systems
@@ -35,12 +35,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_TIPC_CONFIG_H_
-#define _LINUX_TIPC_CONFIG_H_
+#ifndef _freax_TIPC_CONFIG_H_
+#define _freax_TIPC_CONFIG_H_
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/tipc.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/tipc.h>
 #include <asm/byteorder.h>
 
 /*

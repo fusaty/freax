@@ -12,11 +12,11 @@
 #define pr_fmt(fmt) "CacheFiles: " fmt
 
 
-#include <linux/fscache-cache.h>
-#include <linux/cred.h>
-#include <linux/security.h>
-#include <linux/xarray.h>
-#include <linux/cachefiles.h>
+#include <freax/fscache-cache.h>
+#include <freax/cred.h>
+#include <freax/security.h>
+#include <freax/xarray.h>
+#include <freax/cachefiles.h>
 
 #define CACHEFILES_DIO_BLOCK_SIZE 4096
 

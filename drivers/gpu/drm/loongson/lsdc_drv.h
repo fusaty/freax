@@ -6,7 +6,7 @@
 #ifndef __LSDC_DRV_H__
 #define __LSDC_DRV_H__
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/sh7722.h>
 
 #include "sh_pfc.h"

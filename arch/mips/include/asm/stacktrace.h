@@ -4,7 +4,7 @@
 
 #include <asm/ptrace.h>
 #include <asm/asm.h>
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #ifdef CONFIG_KALLSYMS
 extern int raw_show_trace;

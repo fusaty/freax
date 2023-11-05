@@ -10,23 +10,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/user-return-notifier.h>
-#include <linux/uprobes.h>
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/syscalls.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/kstrtox.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/personality.h>
+#include <freax/uaccess.h>
+#include <freax/user-return-notifier.h>
+#include <freax/uprobes.h>
+#include <freax/context_tracking.h>
+#include <freax/entry-common.h>
+#include <freax/syscalls.h>
 
 #include <asm/processor.h>
 #include <asm/ucontext.h>

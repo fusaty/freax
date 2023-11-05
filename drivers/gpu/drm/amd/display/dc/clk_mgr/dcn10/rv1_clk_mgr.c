@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "reg_helper.h"
 #include "core_types.h"

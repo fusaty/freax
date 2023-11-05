@@ -4,7 +4,7 @@
 #ifndef __PLATFORM_DATA_X86_PWM_LPSS_H
 #define __PLATFORM_DATA_X86_PWM_LPSS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 

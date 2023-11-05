@@ -6,13 +6,13 @@
  * Copyright (C) 2008 Henrik Kurelid <henrik@kurelid.se>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 #include <media/dmxdev.h>
 #include <media/dvb_demux.h>

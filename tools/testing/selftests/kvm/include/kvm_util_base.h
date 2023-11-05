@@ -9,13 +9,13 @@
 
 #include "test_util.h"
 
-#include <linux/compiler.h>
-#include "linux/hashtable.h"
-#include "linux/list.h"
-#include <linux/kernel.h>
-#include <linux/kvm.h>
-#include "linux/rbtree.h"
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include "freax/hashtable.h"
+#include "freax/list.h"
+#include <freax/kernel.h>
+#include <freax/kvm.h>
+#include "freax/rbtree.h"
+#include <freax/types.h>
 
 #include <asm/atomic.h>
 

@@ -6,13 +6,13 @@
  *	Roopa Prabhu		<roopa@cumulusnetworks.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/etherdevice.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <uapi/linux/if_bridge.h>
+#include <uapi/freax/if_bridge.h>
 #include <net/dst_metadata.h>
 
 #include "br_private.h"

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_KCMP_H
-#define _UAPI_LINUX_KCMP_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_KCMP_H
+#define _UAPI_freax_KCMP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Comparison type */
 enum kcmp_type {
@@ -25,4 +25,4 @@ struct kcmp_epoll_slot {
 	__u32 toff;		/* target offset within same numbered sequence */
 };
 
-#endif /* _UAPI_LINUX_KCMP_H */
+#endif /* _UAPI_freax_KCMP_H */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*****************************************************************************
- * Linux PPP over L2TP (PPPoX/PPPoL2TP) Sockets
+ * freax PPP over L2TP (PPPoX/PPPoL2TP) Sockets
  *
  * PPPoX    --- Generic PPP encapsulation socket family
  * PPPoL2TP --- PPP over L2TP (RFC 2661)
@@ -55,38 +55,38 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/if_pppox.h>
-#include <linux/if_pppol2tp.h>
+#include <freax/netdevice.h>
+#include <freax/net.h>
+#include <freax/inetdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
+#include <freax/if_pppox.h>
+#include <freax/if_pppol2tp.h>
 #include <net/sock.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/file.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/proc_fs.h>
-#include <linux/l2tp.h>
-#include <linux/nsproxy.h>
+#include <freax/ppp_channel.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/file.h>
+#include <freax/hash.h>
+#include <freax/sort.h>
+#include <freax/proc_fs.h>
+#include <freax/l2tp.h>
+#include <freax/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/ip.h>
@@ -94,7 +94,7 @@
 #include <net/inet_common.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "l2tp_core.h"
 

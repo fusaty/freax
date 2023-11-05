@@ -7,28 +7,28 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-freax.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/list.h>
+#include <freax/mfd/core.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 #include "nvec.h"
 

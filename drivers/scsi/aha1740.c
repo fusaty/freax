@@ -1,6 +1,6 @@
 /*  $Id$
  *  1993/03/31
- *  linux/kernel/aha1740.c
+ *  freax/kernel/aha1740.c
  *
  *  Based loosely on aha1542.c which is
  *  Copyright (C) 1992  Tommy Thorn and
@@ -37,20 +37,20 @@
  * are deemed to be part of the source code.
  */
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/eisa.h>
+#include <freax/dma-mapping.h>
+#include <freax/gfp.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

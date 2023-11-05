@@ -6,15 +6,15 @@
 //
 //
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 #include "rt715-sdca.h"
 #include "rt715-sdca-sdw.h"

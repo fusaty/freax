@@ -3,13 +3,13 @@
  * Copyright (c) Vaisala Oyj. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/platform_device.h>
-#include <linux/reboot-mode.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/platform_device.h>
+#include <freax/reboot-mode.h>
 
 struct nvmem_reboot_mode {
 	struct reboot_mode_driver reboot;

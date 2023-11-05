@@ -19,45 +19,45 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>  /* for dev_info() */
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/device.h>  /* for dev_info() */
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/dma-mapping.h>
+#include <freax/bitops.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
 #include <asm/byteorder.h>
-#include <linux/time.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crash_dump.h>
+#include <freax/time.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/if_vlan.h>
+#include <freax/crash_dump.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
 #include <net/vxlan.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/prefetch.h>
-#include <linux/zlib.h>
-#include <linux/io.h>
-#include <linux/semaphore.h>
-#include <linux/stringify.h>
-#include <linux/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/crc32.h>
+#include <freax/crc32c.h>
+#include <freax/prefetch.h>
+#include <freax/zlib.h>
+#include <freax/io.h>
+#include <freax/semaphore.h>
+#include <freax/stringify.h>
+#include <freax/vmalloc.h>
 #include "bnx2x.h"
 #include "bnx2x_init.h"
 #include "bnx2x_init_ops.h"
@@ -65,7 +65,7 @@
 #include "bnx2x_vfpf.h"
 #include "bnx2x_dcb.h"
 #include "bnx2x_sp.h"
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include "bnx2x_fw_file_hdr.h"
 /* FW files */
 #define FW_FILE_VERSION					\

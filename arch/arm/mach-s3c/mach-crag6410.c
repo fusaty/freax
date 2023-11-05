@@ -6,38 +6,38 @@
 // Copyright 2011 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/input-event-codes.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
-#include <linux/mmc/host.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/dm9000.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/driver.h>
-#include <linux/spi/spi.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/serial_core.h>
+#include <freax/serial_s3c.h>
+#include <freax/platform_device.h>
+#include <freax/fb.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/input-event-codes.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/leds.h>
+#include <freax/delay.h>
+#include <freax/mmc/host.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/fixed.h>
+#include <freax/pwm.h>
+#include <freax/pwm_backlight.h>
+#include <freax/dm9000.h>
+#include <freax/gpio_keys.h>
+#include <freax/gpio/driver.h>
+#include <freax/spi/spi.h>
 
-#include <linux/platform_data/pca953x.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <freax/platform_data/pca953x.h>
+#include <freax/platform_data/s3c-hsotg.h>
 
 #include <video/platform_lcd.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/gpio.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/irq.h>
+#include <freax/mfd/wm831x/gpio.h>
 
 #include <sound/wm1250-ev1.h>
 
@@ -53,12 +53,12 @@
 #include "fb.h"
 #include "sdhci.h"
 #include "gpio-cfg.h"
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <freax/platform_data/spi-s3c64xx.h>
 
 #include "keypad.h"
 #include "devs.h"
 #include "cpu.h"
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <freax/platform_data/i2c-s3c2410.h>
 #include "pm.h"
 
 #include "s3c64xx.h"

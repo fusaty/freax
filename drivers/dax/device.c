@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2016-2018 Intel Corporation. All rights reserved. */
-#include <linux/memremap.h>
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pfn_t.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
+#include <freax/memremap.h>
+#include <freax/pagemap.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/pfn_t.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/dax.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
 #include "dax-private.h"
 #include "bus.h"
 

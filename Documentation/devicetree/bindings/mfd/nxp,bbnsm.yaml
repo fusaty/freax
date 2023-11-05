@@ -63,7 +63,7 @@ properties:
       interrupts:
         maxItems: 1
 
-      linux,code: true
+      freax,code: true
 
     required:
       - compatible
@@ -81,7 +81,7 @@ additionalProperties: false
 
 examples:
   - |
-    #include <dt-bindings/input/linux-event-codes.h>
+    #include <dt-bindings/input/freax-event-codes.h>
     #include <dt-bindings/interrupt-controller/arm-gic.h>
 
     bbnsm: bbnsm@44440000 {
@@ -96,6 +96,6 @@ examples:
         bbnsm_pwrkey: pwrkey {
             compatible = "nxp,imx93-bbnsm-pwrkey";
             interrupts = <GIC_SPI 73 IRQ_TYPE_LEVEL_HIGH>;
-            linux,code = <KEY_POWER>;
+            freax,code = <KEY_POWER>;
         };
     };

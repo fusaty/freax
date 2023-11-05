@@ -4,11 +4,11 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/firmware/xlnx-zynqmp.h>
 
 #define ZYNQMP_NR_RESETS (ZYNQMP_PM_RESET_END - ZYNQMP_PM_RESET_START)
 #define ZYNQMP_RESET_ID ZYNQMP_PM_RESET_START

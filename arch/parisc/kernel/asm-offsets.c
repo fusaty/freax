@@ -4,23 +4,23 @@
  * This code generates raw asm output which is post-processed to extract
  * and format the required data.
  *
- *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000-2001 John Marvin <jsm at parisc-freax.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
  *    Copyright (C) 2000 Sam Creasey <sammy@sammy.net>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
- *    Copyright (C) 2003 James Bottomley <jejb at parisc-linux.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-freax.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-freax.org>
+ *    Copyright (C) 2001 Richard Hirst <rhirst at parisc-freax.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-freax.org>
+ *    Copyright (C) 2003 James Bottomley <jejb at parisc-freax.org>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/kbuild.h>
-#include <linux/pgtable.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/thread_info.h>
+#include <freax/ptrace.h>
+#include <freax/hardirq.h>
+#include <freax/kbuild.h>
+#include <freax/pgtable.h>
 
 #include <asm/assembly.h>
 #include <asm/ptrace.h>
@@ -29,7 +29,7 @@
 #include <uapi/asm/sigcontext.h>
 #include <asm/ucontext.h>
 #include <asm/rt_sigframe.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "signal32.h"
 
 /* Add FRAME_SIZE to the size x and align it to y. All definitions
@@ -271,7 +271,7 @@ int main(void)
 	DEFINE(ASM_PFN_PTE_SHIFT, PFN_PTE_SHIFT);
 	DEFINE(ASM_PT_INITIAL, PT_INITIAL);
 	BLANK();
-	/* HUGEPAGE_SIZE is only used in vmlinux.lds.S to align kernel text
+	/* HUGEPAGE_SIZE is only used in vmfreax.lds.S to align kernel text
 	 * and kernel data on physical huge pages */
 #ifdef CONFIG_HUGETLB_PAGE
 	DEFINE(HUGEPAGE_SIZE, 1UL << REAL_HPAGE_SHIFT);

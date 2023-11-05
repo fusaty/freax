@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "mt76x2.h"
 #include "mcu.h"
 #include "eeprom.h"

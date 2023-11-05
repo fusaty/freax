@@ -4,14 +4,14 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqchip/irq-partition-percpu.h>
-#include <linux/irqdomain.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqchip/irq-partition-percpu.h>
+#include <freax/irqdomain.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 struct partition_desc {
 	int				nr_parts;

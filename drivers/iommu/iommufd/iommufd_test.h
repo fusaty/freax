@@ -4,8 +4,8 @@
 #ifndef _UAPI_IOMMUFD_TEST_H
 #define _UAPI_IOMMUFD_TEST_H
 
-#include <linux/types.h>
-#include <linux/iommufd.h>
+#include <freax/types.h>
+#include <freax/iommufd.h>
 
 enum {
 	IOMMU_TEST_OP_ADD_RESERVED = 1,

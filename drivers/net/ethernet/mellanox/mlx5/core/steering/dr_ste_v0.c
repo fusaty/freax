@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 NVIDIA CORPORATION. All rights reserved. */
 
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <freax/types.h>
+#include <freax/crc32.h>
 #include "dr_ste.h"
 
 #define SVLAN_ETHERTYPE		0x88a8

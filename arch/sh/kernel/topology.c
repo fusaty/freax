@@ -4,14 +4,14 @@
  *
  *  Copyright (C) 2007  Paul Mundt
  */
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/topology.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/export.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/percpu.h>
+#include <freax/topology.h>
+#include <freax/node.h>
+#include <freax/nodemask.h>
+#include <freax/export.h>
 
 static DEFINE_PER_CPU(struct cpu, cpu_devices);
 

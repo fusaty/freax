@@ -6,19 +6,19 @@
  * (c) 2010 Arnaud Patard <arnaud.patard@rtp-net.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/mbus.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/platform_data/asoc-kirkwood.h>
-#include <linux/of.h>
+#include <freax/platform_data/asoc-kirkwood.h>
+#include <freax/of.h>
 
 #include "kirkwood.h"
 

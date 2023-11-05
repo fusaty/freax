@@ -6,7 +6,7 @@
 #include <asm/cpucap-defs.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 /*
  * Check whether a cpucap is possible at compiletime.
  */

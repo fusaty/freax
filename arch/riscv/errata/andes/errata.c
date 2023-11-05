@@ -7,8 +7,8 @@
  * Author: Lad Prabhakar <prabhakar.mahadev-lad.rj@bp.renesas.com>
  */
 
-#include <linux/memory.h>
-#include <linux/module.h>
+#include <freax/memory.h>
+#include <freax/module.h>
 
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>

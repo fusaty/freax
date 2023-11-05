@@ -4,17 +4,17 @@
  *
  *  Copyright (C) 2002 - 2009  Paul Mundt
  */
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/preempt.h>
-#include <linux/thread_info.h>
-#include <linux/irqflags.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/pm.h>
+#include <freax/tick.h>
+#include <freax/preempt.h>
+#include <freax/thread_info.h>
+#include <freax/irqflags.h>
+#include <freax/smp.h>
+#include <freax/atomic.h>
 #include <asm/processor.h>
 #include <asm/smp.h>
 #include <asm/bl_bit.h>

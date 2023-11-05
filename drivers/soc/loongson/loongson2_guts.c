@@ -4,13 +4,13 @@
  * Copyright (C) 2022-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_fdt.h>
-#include <linux/sys_soc.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/of_fdt.h>
+#include <freax/sys_soc.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 static struct soc_device_attribute soc_dev_attr;
 static struct soc_device *soc_dev;

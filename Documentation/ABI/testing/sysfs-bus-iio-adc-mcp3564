@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/iio:deviceX/boost_current_gain
 KernelVersion:	6.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		This attribute is used to set the gain of the biasing current
 		circuit of the Delta-Sigma modulator. The different BOOST
@@ -9,14 +9,14 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/boost_current_gain_available
 KernelVersion:	6.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Reading returns a list with the possible gain values for
 		the current biasing circuit of the Delta-Sigma modulator.
 
 What:		/sys/bus/iio/devices/iio:deviceX/auto_zeroing_mux_enable
 KernelVersion:	6.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		This attribute is used to enable the analog input multiplexer
 		auto-zeroing algorithm (the input multiplexer and the ADC
@@ -36,7 +36,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/auto_zeroing_ref_enable
 KernelVersion:	6.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		This attribute is used to enable the chopping algorithm for the
 		internal voltage reference buffer. This setting has no effect

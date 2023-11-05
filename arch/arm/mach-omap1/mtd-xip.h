@@ -2,7 +2,7 @@
 /*
  * MTD primitives for XIP support. Architecture specific functions.
  *
- * Do not include this file directly. It's included from linux/mtd/xip.h
+ * Do not include this file directly. It's included from freax/mtd/xip.h
  *
  * Author: Vladimir Barinov <vbarinov@embeddedalley.com>
  *
@@ -13,7 +13,7 @@
 #define __ARCH_OMAP_MTD_XIP_H__
 
 #include "hardware.h"
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-io.h>
 #define OMAP_MPU_TIMER_BASE	(0xfffec500)
 #define OMAP_MPU_TIMER_OFFSET	0x100
 
@@ -39,7 +39,7 @@ static inline unsigned long xip_omap_mpu_timer_read(int nr)
 
 /*
  * It's permitted to do approximation for xip_elapsed_since macro
- * (see linux/mtd/xip.h)
+ * (see freax/mtd/xip.h)
  */
 
 #define xip_elapsed_since(x)	(signed)((~xip_omap_mpu_timer_read(0) - (x)) / 6)

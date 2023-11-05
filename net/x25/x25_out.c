@@ -17,11 +17,11 @@
  *					needed cleaned seq-number fields.
  */
 
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
 #include <net/x25.h>
 

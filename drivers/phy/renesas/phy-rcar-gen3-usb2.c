@@ -9,19 +9,19 @@
  * Copyright (C) 2014 Cogent Embedded, Inc.
  */
 
-#include <linux/extcon-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/string.h>
-#include <linux/usb/of.h>
-#include <linux/workqueue.h>
+#include <freax/extcon-provider.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/string.h>
+#include <freax/usb/of.h>
+#include <freax/workqueue.h>
 
 /******* USB2.0 Host registers (original offset is +0x200) *******/
 #define USB2_INT_ENABLE		0x000

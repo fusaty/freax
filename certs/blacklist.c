@@ -6,15 +6,15 @@
  */
 
 #define pr_fmt(fmt) "blacklist: "fmt
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/uidgid.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/key.h>
+#include <freax/key-type.h>
+#include <freax/sched.h>
+#include <freax/ctype.h>
+#include <freax/err.h>
+#include <freax/seq_file.h>
+#include <freax/uidgid.h>
 #include <keys/asymmetric-type.h>
 #include <keys/system_keyring.h>
 #include "blacklist.h"

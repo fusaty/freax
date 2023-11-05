@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
 
 static const struct regulator_ops max8893_ops = {
 	.is_enabled		= regulator_is_enabled_regmap,

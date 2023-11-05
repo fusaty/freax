@@ -2,7 +2,7 @@
 #ifndef BOOT_COMPRESSED_TDX_H
 #define BOOT_COMPRESSED_TDX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_INTEL_TDX_GUEST
 void early_tdx_detect(void);

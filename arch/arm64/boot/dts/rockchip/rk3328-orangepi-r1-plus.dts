@@ -45,7 +45,7 @@
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&gpio3 RK_PC5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-2 {

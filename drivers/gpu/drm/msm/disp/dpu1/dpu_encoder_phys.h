@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
- * Copyright (c) 2015-2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2018 The freax Foundation. All rights reserved.
  */
 
 #ifndef __DPU_ENCODER_PHYS_H__
 #define __DPU_ENCODER_PHYS_H__
 
 #include <drm/drm_writeback.h>
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 #include "dpu_kms.h"
 #include "dpu_hw_intf.h"

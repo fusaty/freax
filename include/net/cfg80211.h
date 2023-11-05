@@ -10,28 +10,28 @@
  * Copyright (C) 2018-2021, 2023 Intel Corporation
  */
 
-#include <linux/ethtool.h>
-#include <uapi/linux/rfkill.h>
-#include <linux/netdevice.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/nl80211.h>
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
-#include <linux/net.h>
-#include <linux/rfkill.h>
+#include <freax/ethtool.h>
+#include <uapi/freax/rfkill.h>
+#include <freax/netdevice.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
+#include <freax/bug.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/nl80211.h>
+#include <freax/if_ether.h>
+#include <freax/ieee80211.h>
+#include <freax/net.h>
+#include <freax/rfkill.h>
 #include <net/regulatory.h>
 
 /**
  * DOC: Introduction
  *
- * cfg80211 is the configuration API for 802.11 devices in Linux. It bridges
+ * cfg80211 is the configuration API for 802.11 devices in freax. It bridges
  * userspace and drivers, and offers some utility functionality associated
  * with 802.11. cfg80211 must, directly or indirectly via mac80211, be used
- * by all modern wireless drivers in Linux, so that they offer a consistent
+ * by all modern wireless drivers in freax, so that they offer a consistent
  * API through nl80211. For backward compatibility, cfg80211 also offers
  * wireless extensions to userspace, but hides them from drivers completely.
  *

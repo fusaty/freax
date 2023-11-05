@@ -5,15 +5,15 @@
  * Copyright (C) 2019-2021 Intel Corporation
  *
  * Author: Felipe Balbi (Intel)
- * Author: Jarkko Nikula <jarkko.nikula@linux.intel.com>
+ * Author: Jarkko Nikula <jarkko.nikula@freax.intel.com>
  * Author: Raymond Tan <raymond.tan@intel.com>
  */
-#include <linux/counter.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <freax/counter.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
 
 #define INTEL_QEPCON			0x00
 #define INTEL_QEPFLT			0x04
@@ -519,7 +519,7 @@ static struct pci_driver intel_qep_driver = {
 module_pci_driver(intel_qep_driver);
 
 MODULE_AUTHOR("Felipe Balbi (Intel)");
-MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@linux.intel.com>");
+MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@freax.intel.com>");
 MODULE_AUTHOR("Raymond Tan <raymond.tan@intel.com>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Intel Quadrature Encoder Peripheral driver");

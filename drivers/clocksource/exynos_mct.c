@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/arch/arm/mach-exynos4/mct.c
+/* freax/arch/arm/mach-exynos4/mct.c
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -7,19 +7,19 @@
  * Exynos4 MCT(Multi-Core Timer) support
 */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/percpu.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/percpu.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/clocksource.h>
+#include <freax/sched_clock.h>
 
 #define EXYNOS4_MCTREG(x)		(x)
 #define EXYNOS4_MCT_G_CNT_L		EXYNOS4_MCTREG(0x100)

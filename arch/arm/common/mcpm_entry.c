@@ -6,11 +6,11 @@
  * Copyright:   (C) 2012-2013  Linaro Limited
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/cpu_pm.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irqflags.h>
+#include <freax/cpu_pm.h>
 
 #include <asm/mcpm.h>
 #include <asm/cacheflush.h>

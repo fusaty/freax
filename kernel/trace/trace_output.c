@@ -5,13 +5,13 @@
  * Copyright (C) 2008 Red Hat Inc, Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/mm.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/ftrace.h>
+#include <freax/kprobes.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/mm.h>
+#include <freax/idr.h>
 
 #include "trace_output.h"
 

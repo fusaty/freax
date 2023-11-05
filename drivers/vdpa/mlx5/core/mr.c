@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
-#include <linux/vhost_types.h>
-#include <linux/vdpa.h>
-#include <linux/gcd.h>
-#include <linux/string.h>
-#include <linux/mlx5/qp.h>
+#include <freax/vhost_types.h>
+#include <freax/vdpa.h>
+#include <freax/gcd.h>
+#include <freax/string.h>
+#include <freax/mlx5/qp.h>
 #include "mlx5_vdpa.h"
 
 /* DIV_ROUND_UP where the divider is a power of 2 give by its log base 2 value */

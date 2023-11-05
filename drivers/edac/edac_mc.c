@@ -1,34 +1,34 @@
 /*
  * edac_mc kernel module
- * (C) 2005, 2006 Linux Networx (http://lnxi.com)
+ * (C) 2005, 2006 freax Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/freax-ecc/
  *
  * Modified by Dave Peterson and Doug Thompson
  *
  */
 
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
+#include <freax/highmem.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/ctype.h>
+#include <freax/edac.h>
+#include <freax/bitops.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include "edac_mc.h"
 #include "edac_module.h"

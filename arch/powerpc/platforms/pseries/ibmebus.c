@@ -36,18 +36,18 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/console.h>
-#include <linux/kobject.h>
-#include <linux/dma-map-ops.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/console.h>
+#include <freax/kobject.h>
+#include <freax/dma-map-ops.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 #include <asm/ibmebus.h>
 #include <asm/machdep.h>
 

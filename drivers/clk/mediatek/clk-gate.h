@@ -7,7 +7,7 @@
 #ifndef __DRV_CLK_GATE_H
 #define __DRV_CLK_GATE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct clk;
 struct clk_hw_onecell_data;

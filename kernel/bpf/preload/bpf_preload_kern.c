@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/module.h>
 #include "bpf_preload.h"
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
 #include "iterators/iterators.lskel-little-endian.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 #include <sched.h>
 #include <perf/mmap.h>

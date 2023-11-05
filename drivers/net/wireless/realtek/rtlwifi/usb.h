@@ -4,7 +4,7 @@
 #ifndef __RTL_USB_H__
 #define __RTL_USB_H__
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 #define RTL_RX_DESC_SIZE		24
 

@@ -5,13 +5,13 @@
  *
  * Generic LRU infrastructure
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/list_lru.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/memcontrol.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/list_lru.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/memcontrol.h>
 #include "slab.h"
 #include "internal.h"
 

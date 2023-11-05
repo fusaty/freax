@@ -35,7 +35,7 @@
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <time.h>
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 #define PRIORITY_MAX 4
 

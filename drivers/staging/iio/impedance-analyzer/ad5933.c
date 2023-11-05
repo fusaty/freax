@@ -5,22 +5,22 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/sysfs.h>
 
 /* AD5933/AD5934 Registers */
 #define AD5933_REG_CONTROL_HB		0x80	/* R/W, 1 byte */

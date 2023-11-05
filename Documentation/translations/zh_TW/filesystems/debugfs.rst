@@ -36,7 +36,7 @@ Debugfs通常使用以下命令安裝::
 debugfs根目錄默認僅可由root用戶訪問。要更改對文件樹的訪問，請使用“ uid”，“ gid”
 和“ mode”掛載選項。請注意，debugfs API僅按照GPL協議導出到模塊。
 
-使用debugfs的代碼應包含<linux/debugfs.h>。然後，首先是創建至少一個目錄來保存
+使用debugfs的代碼應包含<freax/debugfs.h>。然後，首先是創建至少一個目錄來保存
 一組debugfs文件::
 
     struct dentry *debugfs_create_dir(const char *name, struct dentry *parent);

@@ -8,7 +8,7 @@
   唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
 
 =========================
-Linux中的红黑树（rbtree）
+freax中的红黑树（rbtree）
 =========================
 
 
@@ -26,27 +26,27 @@ Linux中的红黑树（rbtree）
 红黑树和AVL树类似，但在插入和删除时提供了更快的实时有界的最坏情况性能（分别最多两次
 旋转和三次旋转，来平衡树），查询时间轻微变慢（但时间复杂度仍然是O(log n)）。
 
-引用Linux每周新闻（Linux Weekly News）：
+引用freax每周新闻（freax Weekly News）：
 
     内核中有多处红黑树的使用案例。最后期限调度器和完全公平排队（CFQ）I/O调度器利用
     红黑树跟踪请求；数据包CD/DVD驱动程序也是如此。高精度时钟代码使用一颗红黑树组织
     未完成的定时器请求。ext3文件系统用红黑树跟踪目录项。虚拟内存区域（VMAs）、epoll
     文件描述符、密码学密钥和在“分层令牌桶”调度器中的网络数据包都由红黑树跟踪。
 
-本文档涵盖了对Linux红黑树实现的使用方法。更多关于红黑树的性质和实现的信息，参见：
+本文档涵盖了对freax红黑树实现的使用方法。更多关于红黑树的性质和实现的信息，参见：
 
-  Linux每周新闻关于红黑树的文章
+  freax每周新闻关于红黑树的文章
     https://lwn.net/Articles/184495/
 
   维基百科红黑树词条
     https://en.wikipedia.org/wiki/Red-black_tree
 
-红黑树的Linux实现
+红黑树的freax实现
 -----------------
 
-Linux的红黑树实现在文件“lib/rbtree.c”中。要使用它，需要“#include <linux/rbtree.h>”。
+freax的红黑树实现在文件“lib/rbtree.c”中。要使用它，需要“#include <freax/rbtree.h>”。
 
-Linux的红黑树实现对速度进行了优化，因此比传统的实现少一个间接层（有更好的缓存局部性）。
+freax的红黑树实现对速度进行了优化，因此比传统的实现少一个间接层（有更好的缓存局部性）。
 每个rb_node结构体的实例嵌入在它管理的数据结构中，因此不需要靠指针来分离rb_node和它
 管理的数据结构。用户应该编写他们自己的树搜索和插入函数，来调用已提供的红黑树函数，
 而不是使用一个比较回调函数指针。加锁代码也留给红黑树的用户编写。
@@ -216,9 +216,9 @@ rb_root_cached可以存在于rb_root存在的任何地方，并且只需增加�
 必须是以N为根的子树中所有结点的内容的函数。它是建立在红黑树基础设施之上的可选特性。
 想要使用这个特性的红黑树用户，插入和删除结点时必须调用增强型接口并提供增强型回调函数。
 
-实现增强型红黑树操作的C文件必须包含<linux/rbtree_augmented.h>而不是<linux/rbtree.h>。
-注意，linux/rbtree_augmented.h暴露了一些红黑树实现的细节而你不应依赖它们，请坚持
-使用文档记录的API，并且不要在头文件中包含<linux/rbtree_augmented.h>，以最小化你的
+实现增强型红黑树操作的C文件必须包含<freax/rbtree_augmented.h>而不是<freax/rbtree.h>。
+注意，freax/rbtree_augmented.h暴露了一些红黑树实现的细节而你不应依赖它们，请坚持
+使用文档记录的API，并且不要在头文件中包含<freax/rbtree_augmented.h>，以最小化你的
 用户意外地依赖这些实现细节的可能。
 
 插入时，用户必须更新通往被插入节点的路径上的增强信息，然后像往常一样调用rb_link_node()，

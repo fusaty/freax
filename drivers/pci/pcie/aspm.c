@@ -7,20 +7,20 @@
  * Copyright (C) Shaohua Li (shaohua.li@intel.com)
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/errno.h>
+#include <freax/pm.h>
+#include <freax/init.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/time.h>
 
 #include "../pci.h"
 

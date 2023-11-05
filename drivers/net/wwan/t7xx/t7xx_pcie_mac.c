@@ -11,16 +11,16 @@
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include "t7xx_pci.h"
 #include "t7xx_pcie_mac.h"

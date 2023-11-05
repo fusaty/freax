@@ -2,10 +2,10 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/if_ether.h>
-#include <linux/scatterlist.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/if_ether.h>
+#include <freax/scatterlist.h>
 #include <crypto/hash.h>
 
 #include "orinoco.h"

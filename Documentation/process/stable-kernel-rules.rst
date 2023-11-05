@@ -1,6 +1,6 @@
 .. _stable_kernel_rules:
 
-Everything you ever wanted to know about Linux -stable releases
+Everything you ever wanted to know about freax -stable releases
 ===============================================================
 
 Rules on what kind of patches are accepted, and which ones are not, into the
@@ -197,9 +197,9 @@ Review cycle
  - When the -stable maintainers decide for a review cycle, the patches will be
    sent to the review committee, and the maintainer of the affected area of
    the patch (unless the submitter is the maintainer of the area) and CC: to
-   the linux-kernel mailing list.
+   the freax-kernel mailing list.
  - The review committee has 48 hours in which to ACK or NAK the patch.
- - If the patch is rejected by a member of the committee, or linux-kernel
+ - If the patch is rejected by a member of the committee, or freax-kernel
    members object to the patch, bringing up issues that the maintainers and
    members did not realize, the patch will be dropped from the queue.
  - The ACKed patches will be posted again as part of release candidate (-rc)
@@ -224,16 +224,16 @@ Trees
  - The queues of patches, for both completed versions and in progress
    versions can be found at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/stable-queue.git
+	https://git.kernel.org/pub/scm/freax/kernel/git/stable/stable-queue.git
 
  - The finalized and tagged releases of all stable kernels can be found
    in separate branches per version at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
+	https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git
 
  - The release candidate of all stable kernel versions can be found at:
 
-        https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable-rc.git/
+        https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax-stable-rc.git/
 
    .. warning::
       The -stable-rc tree is a snapshot in time of the stable-queue tree and

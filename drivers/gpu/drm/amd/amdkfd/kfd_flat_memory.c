@@ -22,20 +22,20 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <uapi/linux/kfd_ioctl.h>
-#include <linux/time.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/compat.h>
+#include <uapi/freax/kfd_ioctl.h>
+#include <freax/time.h>
 #include "kfd_priv.h"
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/processor.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/processor.h>
 
 /*
  * The primary memory I/O features being added for revisions of gfxip

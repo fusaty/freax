@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux NET3: IP/IP protocol decoder modified to support
+ *	freax NET3: IP/IP protocol decoder modified to support
  *		    virtual tunnel interface
  *
  *	Authors:
@@ -14,21 +14,21 @@
  */
 
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/if_ether.h>
-#include <linux/icmpv6.h>
+#include <freax/capability.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/uaccess.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/in.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/if_ether.h>
+#include <freax/icmpv6.h>
 
 #include <net/sock.h>
 #include <net/ip.h>
@@ -121,7 +121,7 @@ static int vti_rcv_cb(struct sk_buff *skb, int err)
 		inner_mode = xfrm_ip2inner_mode(x, XFRM_MODE_SKB_CB(skb)->protocol);
 		if (inner_mode == NULL) {
 			XFRM_INC_STATS(dev_net(skb->dev),
-				       LINUX_MIB_XFRMINSTATEMODEERROR);
+				       freax_MIB_XFRMINSTATEMODEERROR);
 			return -EINVAL;
 		}
 	}

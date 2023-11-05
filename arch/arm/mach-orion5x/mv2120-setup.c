@@ -7,18 +7,18 @@
  * published by the Free Software Foundation; either version 2 of the
  * License, or (at your option) any later version.
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/leds.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/ata_platform.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/mtd/physmap.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/leds.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
+#include <freax/i2c.h>
+#include <freax/ata_platform.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include "common.h"

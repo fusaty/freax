@@ -5,13 +5,13 @@
  * Copyright (C) 2021 Texas Instruments Incorporated - https://www.ti.com
  *
  */
-#include <linux/of.h>
-#include<linux/phy/phy.h>
-#include<linux/platform_device.h>
-#include<linux/module.h>
-#include<linux/gpio.h>
-#include<linux/gpio/consumer.h>
-#include <linux/mux/consumer.h>
+#include <freax/of.h>
+#include<freax/phy/phy.h>
+#include<freax/platform_device.h>
+#include<freax/module.h>
+#include<freax/gpio.h>
+#include<freax/gpio/consumer.h>
+#include <freax/mux/consumer.h>
 
 struct can_transceiver_data {
 	u32 flags;

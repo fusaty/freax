@@ -7,20 +7,20 @@
  *         Tai Nguyen <ttnguyen@apm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpumask.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define CSW_CSWCR                       0x0000
 #define  CSW_CSWCR_DUALMCB_MASK         BIT(0)

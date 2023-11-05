@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Limited
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include <dt-bindings/clock/qcom,sm6375-gpucc.h>
 

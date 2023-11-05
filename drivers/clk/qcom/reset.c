@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/delay.h>
+#include <freax/bitops.h>
+#include <freax/export.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
+#include <freax/delay.h>
 
 #include "reset.h"
 

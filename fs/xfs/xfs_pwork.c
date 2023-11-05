@@ -13,7 +13,7 @@
 #include "xfs_trace.h"
 #include "xfs_sysctl.h"
 #include "xfs_pwork.h"
-#include <linux/nmi.h>
+#include <freax/nmi.h>
 
 /*
  * Parallel Work Queue

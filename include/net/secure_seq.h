@@ -2,7 +2,7 @@
 #ifndef _NET_SECURE_SEQ
 #define _NET_SECURE_SEQ
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct net;
 

@@ -1,5 +1,5 @@
- /*-*- linux-c -*-
- *  linux/drivers/video/i810_main.c -- Intel 810 frame buffer device
+ /*-*- freax-c -*-
+ *  freax/drivers/video/i810_main.c -- Intel 810 frame buffer device
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved
@@ -10,7 +10,7 @@
  *                                        external VGA connectors for
  *                                        secondary displays
  *
- *         Fredrik Andersson <krueger@shell.linux.se> - alpha testing of
+ *         Fredrik Andersson <krueger@shell.freax.se> - alpha testing of
  *                                        the VESA GTF
  *
  *         Brad Corrion <bcorrion@web-co.com> - alpha testing of customized
@@ -28,21 +28,21 @@
  *  more details.
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/resource.h>
-#include <linux/unistd.h>
-#include <linux/console.h>
-#include <linux/io.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/resource.h>
+#include <freax/unistd.h>
+#include <freax/console.h>
+#include <freax/io.h>
 
 #include <asm/io.h>
 #include <asm/div64.h>

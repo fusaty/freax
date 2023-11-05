@@ -6,9 +6,9 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/gcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "adau-utils.h"
 

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/fs/pnode.h
+ *  freax/fs/pnode.h
  *
  * (C) Copyright IBM Corporation 2005.
  */
-#ifndef _LINUX_PNODE_H
-#define _LINUX_PNODE_H
+#ifndef _freax_PNODE_H
+#define _freax_PNODE_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include "mount.h"
 
 #define IS_MNT_SHARED(m) ((m)->mnt.mnt_flags & MNT_SHARED)
@@ -56,4 +56,4 @@ int count_mounts(struct mnt_namespace *ns, struct mount *mnt);
 bool propagation_would_overmount(const struct mount *from,
 				 const struct mount *to,
 				 const struct mountpoint *mp);
-#endif /* _LINUX_PNODE_H */
+#endif /* _freax_PNODE_H */

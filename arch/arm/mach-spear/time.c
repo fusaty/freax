@@ -3,22 +3,22 @@
  * arch/arm/plat-spear/time.c
  *
  * Copyright (C) 2010 ST Microelectronics
- * Shiraz Hashim<shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim<shiraz.freax.kernel@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/time.h>
-#include <linux/irq.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/time.h>
+#include <freax/irq.h>
 #include <asm/mach/time.h>
 #include "generic.h"
 

@@ -1,4 +1,4 @@
-/* 8139cp.c: A Linux PCI Ethernet driver for the RealTek 8139C+ chips. */
+/* 8139cp.c: A freax PCI Ethernet driver for the RealTek 8139C+ chips. */
 /*
 	Copyright 2001-2004 Jeff Garzik <jgarzik@pobox.com>
 
@@ -53,30 +53,30 @@
 #define DRV_RELDATE		"Mar 22, 2004"
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/gfp.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/cache.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/gfp.h>
+#include <freax/mii.h>
+#include <freax/if_vlan.h>
+#include <freax/crc32.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/cache.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* These identify the driver base version and may not be removed. */
 static char version[] =

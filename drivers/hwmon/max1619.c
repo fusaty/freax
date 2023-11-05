@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * max1619.c - Part of lm_sensors, Linux kernel modules for hardware
+ * max1619.c - Part of lm_sensors, freax kernel modules for hardware
  *             monitoring
  * Copyright (C) 2003-2004 Oleksij Rempel <bug-track@fisher-privat.net>
  *                         Jean Delvare <jdelvare@suse.de>
@@ -12,16 +12,16 @@
  *   http://pdfserv.maxim-ic.com/en/ds/MAX1619.pdf
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
 
 static const unsigned short normal_i2c[] = {
 	0x18, 0x19, 0x1a, 0x29, 0x2a, 0x2b, 0x4c, 0x4d, 0x4e, I2C_CLIENT_END };

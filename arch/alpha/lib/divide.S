@@ -46,7 +46,7 @@
  *	$28 - compare status
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #define halt .long 0
 
 /*

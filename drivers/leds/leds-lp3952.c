@@ -6,19 +6,19 @@
  *	Author: Tony Makkiel <tony.makkiel@daqri.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/leds-lp3952.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/leds-lp3952.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
 
 static int lp3952_register_write(struct i2c_client *client, u8 reg, u8 val)
 {

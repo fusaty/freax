@@ -14,9 +14,9 @@
 #ifndef HIBMC_DRM_DRV_H
 #define HIBMC_DRM_DRV_H
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/i2c.h>
 
 #include <drm/drm_edid.h>
 #include <drm/drm_framebuffer.h>

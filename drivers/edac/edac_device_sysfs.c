@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
+#include <freax/ctype.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/edac.h>
 
 #include "edac_device.h"
 #include "edac_module.h"

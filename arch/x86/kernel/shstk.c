@@ -6,18 +6,18 @@
  * Yu-cheng Yu <yu-cheng.yu@intel.com>
  */
 
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
-#include <linux/compat.h>
-#include <linux/sizes.h>
-#include <linux/user.h>
-#include <linux/syscalls.h>
+#include <freax/sched.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/sched/signal.h>
+#include <freax/compat.h>
+#include <freax/sizes.h>
+#include <freax/user.h>
+#include <freax/syscalls.h>
 #include <asm/msr.h>
 #include <asm/fpu/xstate.h>
 #include <asm/fpu/types.h>

@@ -5,7 +5,7 @@
 #
 # Copyright (C) IBM Corporation, 2013
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@freax.ibm.com>
 
 # bootparam_hotplug_cpu bootparam-string
 #
@@ -144,7 +144,7 @@ get_starttime_duration () {
 # identify_boot_image qemu-cmd
 #
 # Returns the relative path to the kernel build image.  This will be
-# arch/<arch>/boot/bzImage or vmlinux if bzImage is not a target for the
+# arch/<arch>/boot/bzImage or vmfreax if bzImage is not a target for the
 # architecture, unless overridden with the TORTURE_BOOT_IMAGE environment
 # variable.
 identify_boot_image () {
@@ -163,7 +163,7 @@ identify_boot_image () {
 			echo arch/s390/boot/bzImage
 			;;
 		*)
-			echo vmlinux
+			echo vmfreax
 			;;
 		esac
 	fi
@@ -213,7 +213,7 @@ identify_qemu_append () {
 	local console=ttyS0
 	case "$1" in
 	qemu-system-x86_64|qemu-system-i386)
-		echo selinux=0 initcall_debug debug
+		echo sefreax=0 initcall_debug debug
 		;;
 	qemu-system-aarch64)
 		console=ttyAMA0

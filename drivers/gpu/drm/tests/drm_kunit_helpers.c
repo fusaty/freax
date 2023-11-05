@@ -7,8 +7,8 @@
 
 #include <kunit/resource.h>
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
 
 #define KUNIT_DEVICE_NAME	"drm-kunit-mock-device"
 

@@ -5,17 +5,17 @@
  * Copyright 2020 Google LLC
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_ec_sensorhub.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_data/cros_ec_sensorhub.h>
+#include <freax/platform_device.h>
+#include <freax/sort.h>
+#include <freax/slab.h>
 
 #define CREATE_TRACE_POINTS
 #include "cros_ec_sensorhub_trace.h"

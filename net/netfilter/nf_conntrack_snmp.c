@@ -4,15 +4,15 @@
  *
  *      (c) 2011 Jiri Olsa <jolsa@redhat.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/in.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/in.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <linux/netfilter/nf_conntrack_snmp.h>
+#include <freax/netfilter/nf_conntrack_snmp.h>
 
 #define SNMP_PORT	161
 

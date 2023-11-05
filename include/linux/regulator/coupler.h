@@ -5,11 +5,11 @@
  * Regulator Coupler Interface.
  */
 
-#ifndef __LINUX_REGULATOR_COUPLER_H_
-#define __LINUX_REGULATOR_COUPLER_H_
+#ifndef __freax_REGULATOR_COUPLER_H_
+#define __freax_REGULATOR_COUPLER_H_
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
+#include <freax/kernel.h>
+#include <freax/suspend.h>
 
 struct regulator_coupler;
 struct regulator_dev;

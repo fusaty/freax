@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_CLOCK_H
-#define _LINUX_SCHED_CLOCK_H
+#ifndef _freax_SCHED_CLOCK_H
+#define _freax_SCHED_CLOCK_H
 
-#include <linux/smp.h>
+#include <freax/smp.h>
 
 /*
  * Do not use outside of architecture code which knows its limitations.
@@ -111,4 +111,4 @@ static inline void enable_sched_clock_irqtime(void) {}
 static inline void disable_sched_clock_irqtime(void) {}
 #endif
 
-#endif /* _LINUX_SCHED_CLOCK_H */
+#endif /* _freax_SCHED_CLOCK_H */

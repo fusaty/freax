@@ -1,33 +1,33 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux Socket Filter Data Structures
+ * freax Socket Filter Data Structures
  */
-#ifndef __LINUX_FILTER_H__
-#define __LINUX_FILTER_H__
+#ifndef __freax_FILTER_H__
+#define __freax_FILTER_H__
 
-#include <linux/atomic.h>
-#include <linux/bpf.h>
-#include <linux/refcount.h>
-#include <linux/compat.h>
-#include <linux/skbuff.h>
-#include <linux/linkage.h>
-#include <linux/printk.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/capability.h>
-#include <linux/set_memory.h>
-#include <linux/kallsyms.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
-#include <linux/sockptr.h>
+#include <freax/atomic.h>
+#include <freax/bpf.h>
+#include <freax/refcount.h>
+#include <freax/compat.h>
+#include <freax/skbuff.h>
+#include <freax/linkage.h>
+#include <freax/printk.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/capability.h>
+#include <freax/set_memory.h>
+#include <freax/kallsyms.h>
+#include <freax/if_vlan.h>
+#include <freax/vmalloc.h>
+#include <freax/sockptr.h>
 #include <crypto/sha1.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/u64_stats_sync.h>
 
 #include <net/sch_generic.h>
 
 #include <asm/byteorder.h>
-#include <uapi/linux/filter.h>
+#include <uapi/freax/filter.h>
 
 struct sk_buff;
 struct sock;
@@ -1623,4 +1623,4 @@ static inline void bpf_xdp_copy_buf(struct xdp_buff *xdp, unsigned long off, voi
 }
 #endif /* CONFIG_NET */
 
-#endif /* __LINUX_FILTER_H__ */
+#endif /* __freax_FILTER_H__ */

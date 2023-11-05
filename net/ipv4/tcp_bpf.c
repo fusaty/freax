@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2017 - 2018 Covalent IO, Inc. http://covalent.io */
 
-#include <linux/skmsg.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/util_macros.h>
+#include <freax/skmsg.h>
+#include <freax/filter.h>
+#include <freax/bpf.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/util_macros.h>
 
 #include <net/inet_common.h>
 #include <net/tls.h>

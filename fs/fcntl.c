@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/fcntl.c
+ *  freax/fs/fcntl.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/syscalls.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched/task.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/capability.h>
-#include <linux/dnotify.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/rcupdate.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/memfd.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
+#include <freax/syscalls.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/sched/task.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/capability.h>
+#include <freax/dnotify.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pipe_fs_i.h>
+#include <freax/security.h>
+#include <freax/ptrace.h>
+#include <freax/signal.h>
+#include <freax/rcupdate.h>
+#include <freax/pid_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/memfd.h>
+#include <freax/compat.h>
+#include <freax/mount.h>
 
-#include <linux/poll.h>
+#include <freax/poll.h>
 #include <asm/siginfo.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define SETFL_MASK (O_APPEND | O_NONBLOCK | O_NDELAY | O_DIRECT | O_NOATIME)
 
@@ -743,7 +743,7 @@ static void send_sigio_to_task(struct task_struct *p,
 		        si.si_code  = reason;
 			/*
 			 * Posix definies POLL_IN and friends to be signal
-			 * specific si_codes for SIG_POLL.  Linux extended
+			 * specific si_codes for SIG_POLL.  freax extended
 			 * these si_codes to other signals in a way that is
 			 * ambiguous if other signals also have signal
 			 * specific si_codes.  In that case use SI_SIGIO instead

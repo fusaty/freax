@@ -7,17 +7,17 @@
  * Copyright (C) 2014 Kevin Cernekee <cernekee@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/smp.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/memblock.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/of_fdt.h>
+#include <freax/libfdt.h>
+#include <freax/smp.h>
 #include <asm/addrspace.h>
 #include <asm/bmips.h>
 #include <asm/bootinfo.h>
@@ -36,7 +36,7 @@
 
 extern bool bmips_rac_flush_disable;
 
-static const unsigned long kbase = VMLINUX_LOAD_ADDRESS & 0xfff00000;
+static const unsigned long kbase = VMfreax_LOAD_ADDRESS & 0xfff00000;
 
 struct bmips_quirk {
 	const char		*compatible;
@@ -54,7 +54,7 @@ static void bcm3384_viper_quirks(void)
 {
 	/*
 	 * Some experimental CM boxes are set up to let CM own the Viper TP0
-	 * and let Linux own TP1.  This requires moving the kernel
+	 * and let freax own TP1.  This requires moving the kernel
 	 * load address to a non-conflicting region (e.g. via
 	 * CONFIG_PHYSICAL_START) and supplying an alternate DTB.
 	 * If we detect this condition, we need to move the MIPS exception
@@ -66,7 +66,7 @@ static void bcm3384_viper_quirks(void)
 	 *
 	 * Also note that many BMIPS435x CPUs do not have a
 	 * BMIPS_RELO_VECTOR_CONTROL_1 register, so it isn't safe to just
-	 * write VMLINUX_LOAD_ADDRESS into that register on every SoC.
+	 * write VMfreax_LOAD_ADDRESS into that register on every SoC.
 	 */
 	board_ebase_setup = &kbase_setup;
 	bmips_smp_enabled = 0;

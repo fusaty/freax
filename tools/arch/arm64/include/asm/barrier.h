@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_ASM_AARCH64_BARRIER_H
-#define _TOOLS_LINUX_ASM_AARCH64_BARRIER_H
+#ifndef _TOOLS_freax_ASM_AARCH64_BARRIER_H
+#define _TOOLS_freax_ASM_AARCH64_BARRIER_H
 
 /*
  * From tools/perf/perf-sys.h, last modified in:
@@ -95,4 +95,4 @@ do {									\
 	__u.__val;							\
 })
 
-#endif /* _TOOLS_LINUX_ASM_AARCH64_BARRIER_H */
+#endif /* _TOOLS_freax_ASM_AARCH64_BARRIER_H */

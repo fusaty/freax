@@ -6,8 +6,8 @@
 #ifndef _PCC_H
 #define _PCC_H
 
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox_client.h>
 
 struct pcc_mbox_chan {
 	struct mbox_chan *mchan;

@@ -5,21 +5,21 @@
  * (C) SGI 2006, Christoph Lameter
  * 	Cleaned up and restructured to ease the addition of alternative
  * 	implementations of SLAB allocators.
- * (C) Linux Foundation 2008-2013
+ * (C) freax Foundation 2008-2013
  *      Unified interface for all slab allocators
  */
 
-#ifndef _LINUX_SLAB_H
-#define	_LINUX_SLAB_H
+#ifndef _freax_SLAB_H
+#define	_freax_SLAB_H
 
-#include <linux/cache.h>
-#include <linux/gfp.h>
-#include <linux/overflow.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/percpu-refcount.h>
-#include <linux/cleanup.h>
-#include <linux/hash.h>
+#include <freax/cache.h>
+#include <freax/gfp.h>
+#include <freax/overflow.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/percpu-refcount.h>
+#include <freax/cleanup.h>
+#include <freax/hash.h>
 
 
 /*
@@ -177,7 +177,7 @@
 #define ZERO_OR_NULL_PTR(x) ((unsigned long)(x) <= \
 				(unsigned long)ZERO_SIZE_PTR)
 
-#include <linux/kasan.h>
+#include <freax/kasan.h>
 
 struct list_lru;
 struct mem_cgroup;
@@ -547,7 +547,7 @@ void *kmalloc_large_node(size_t size, gfp_t flags, int node) __assume_page_align
  * to be at least to the size.
  *
  * The @flags argument may be one of the GFP flags defined at
- * include/linux/gfp_types.h and described at
+ * include/freax/gfp_types.h and described at
  * :ref:`Documentation/core-api/mm-api.rst <mm-api-gfp-flags>`
  *
  * The recommended usage of the @flags is described at
@@ -794,4 +794,4 @@ int slab_dead_cpu(unsigned int cpu);
 #define slab_dead_cpu		NULL
 #endif
 
-#endif	/* _LINUX_SLAB_H */
+#endif	/* _freax_SLAB_H */

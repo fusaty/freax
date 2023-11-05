@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2022 HiSilicon Limited. */
-#include <linux/hisi_acc_qm.h>
+#include <freax/hisi_acc_qm.h>
 #include "qm_common.h"
 
 #define QM_DFX_BASE			0x0100000

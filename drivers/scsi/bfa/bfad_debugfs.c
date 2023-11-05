@@ -5,11 +5,11 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * freax driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <freax/debugfs.h>
+#include <freax/export.h>
 
 #include "bfad_drv.h"
 #include "bfad_im.h"

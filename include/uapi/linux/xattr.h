@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
-  File: linux/xattr.h
+  File: freax/xattr.h
 
   Extended attributes handling.
 
@@ -10,10 +10,10 @@
   Copyright (c) 2020 Jan (janneke) Nieuwenhuizen <janneke@gnu.org>
 */
 
-#include <linux/libc-compat.h>
+#include <freax/libc-compat.h>
 
-#ifndef _UAPI_LINUX_XATTR_H
-#define _UAPI_LINUX_XATTR_H
+#ifndef _UAPI_freax_XATTR_H
+#define _UAPI_freax_XATTR_H
 
 #if __UAPI_DEF_XATTR
 #define __USE_KERNEL_XATTR_DEFS
@@ -54,8 +54,8 @@
 #define XATTR_IMA_SUFFIX "ima"
 #define XATTR_NAME_IMA XATTR_SECURITY_PREFIX XATTR_IMA_SUFFIX
 
-#define XATTR_SELINUX_SUFFIX "selinux"
-#define XATTR_NAME_SELINUX XATTR_SECURITY_PREFIX XATTR_SELINUX_SUFFIX
+#define XATTR_SEfreax_SUFFIX "sefreax"
+#define XATTR_NAME_SEfreax XATTR_SECURITY_PREFIX XATTR_SEfreax_SUFFIX
 
 #define XATTR_SMACK_SUFFIX "SMACK64"
 #define XATTR_SMACK_IPIN "SMACK64IPIN"
@@ -82,4 +82,4 @@
 #define XATTR_NAME_POSIX_ACL_DEFAULT XATTR_SYSTEM_PREFIX XATTR_POSIX_ACL_DEFAULT
 
 
-#endif /* _UAPI_LINUX_XATTR_H */
+#endif /* _UAPI_freax_XATTR_H */

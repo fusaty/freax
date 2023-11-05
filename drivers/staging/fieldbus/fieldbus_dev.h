@@ -7,8 +7,8 @@
 #ifndef __FIELDBUS_DEV_H
 #define __FIELDBUS_DEV_H
 
-#include <linux/cdev.h>
-#include <linux/wait.h>
+#include <freax/cdev.h>
+#include <freax/wait.h>
 
 enum fieldbus_dev_type {
 	FIELDBUS_DEV_TYPE_UNKNOWN = 0,

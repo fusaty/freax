@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_CPUFREQ_H
-#define _LINUX_SCHED_CPUFREQ_H
+#ifndef _freax_SCHED_CPUFREQ_H
+#define _freax_SCHED_CPUFREQ_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Interface between cpufreq drivers and the scheduler:
@@ -35,4 +35,4 @@ static inline unsigned long map_util_perf(unsigned long util)
 }
 #endif /* CONFIG_CPU_FREQ */
 
-#endif /* _LINUX_SCHED_CPUFREQ_H */
+#endif /* _freax_SCHED_CPUFREQ_H */

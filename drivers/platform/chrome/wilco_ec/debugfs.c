@@ -7,12 +7,12 @@
  * See Documentation/ABI/testing/debugfs-wilco-ec for usage.
  */
 
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/platform_device.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/platform_data/wilco-ec.h>
+#include <freax/platform_device.h>
 
 #define DRV_NAME "wilco-ec-debugfs"
 

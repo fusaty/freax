@@ -20,7 +20,7 @@
  *
  * Code from fib_hash has been reused which includes the following header:
  *
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -35,31 +35,31 @@
  *		Paul E. McKenney <paulmck@us.ibm.com>
  *		Patrick McHardy <kaber@trash.net>
  */
-#include <linux/cache.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/notifier.h>
+#include <freax/cache.h>
+#include <freax/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/proc_fs.h>
+#include <freax/rcupdate.h>
+#include <freax/skbuff.h>
+#include <freax/netlink.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/vmalloc.h>
+#include <freax/notifier.h>
 #include <net/net_namespace.h>
 #include <net/inet_dscp.h>
 #include <net/ip.h>

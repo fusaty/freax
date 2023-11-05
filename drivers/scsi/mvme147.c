@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include <asm/page.h>
 #include <asm/mvme147hw.h>

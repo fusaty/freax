@@ -8,18 +8,18 @@
  *         Chun-Chia Chiu <chun-chia.chiu@mediatek.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/pm_runtime.h>
-#include <linux/soc/mediatek/infracfg.h>
-#include <linux/reset.h>
+#include <freax/arm-smccc.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/pm_runtime.h>
+#include <freax/soc/mediatek/infracfg.h>
+#include <freax/reset.h>
 #include <sound/pcm_params.h>
 #include "mt8188-afe-common.h"
 #include "mt8188-afe-clk.h"

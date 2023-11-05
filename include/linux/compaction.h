@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_COMPACTION_H
-#define _LINUX_COMPACTION_H
+#ifndef _freax_COMPACTION_H
+#define _freax_COMPACTION_H
 
 /*
  * Determines how hard direct compaction should try to succeed.
@@ -144,4 +144,4 @@ static inline void compaction_unregister_node(struct node *node)
 }
 #endif /* CONFIG_COMPACTION && CONFIG_SYSFS && CONFIG_NUMA */
 
-#endif /* _LINUX_COMPACTION_H */
+#endif /* _freax_COMPACTION_H */

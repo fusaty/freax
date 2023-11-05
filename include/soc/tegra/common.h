@@ -6,8 +6,8 @@
 #ifndef __SOC_TEGRA_COMMON_H__
 #define __SOC_TEGRA_COMMON_H__
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 struct device;
 

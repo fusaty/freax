@@ -11,20 +11,20 @@
  * pointer as suggested by Josh Triplett
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/rhashtable.h>
-#include <linux/err.h>
-#include <linux/export.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/log2.h>
+#include <freax/sched.h>
+#include <freax/rculist.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/jhash.h>
+#include <freax/random.h>
+#include <freax/rhashtable.h>
+#include <freax/err.h>
+#include <freax/export.h>
 
 #define HASH_DEFAULT_SIZE	64UL
 #define HASH_MIN_SIZE		4U

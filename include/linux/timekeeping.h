@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIMEKEEPING_H
-#define _LINUX_TIMEKEEPING_H
+#ifndef _freax_TIMEKEEPING_H
+#define _freax_TIMEKEEPING_H
 
-#include <linux/errno.h>
-#include <linux/clocksource_ids.h>
+#include <freax/errno.h>
+#include <freax/clocksource_ids.h>
 
-/* Included from linux/ktime.h */
+/* Included from freax/ktime.h */
 
 void timekeeping_init(void);
 extern int timekeeping_suspended;

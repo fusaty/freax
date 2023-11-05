@@ -5,13 +5,13 @@
  * Copyright (C) 2011  Renesas Solutions Corp.
  * Copyright (C) 2011  Magnus Damm
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/soc/renesas/rcar-sysc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/soc/renesas/rcar-sysc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

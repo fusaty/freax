@@ -15,8 +15,8 @@
  * in the SOFTWARE may be the trademarks of their respective owners.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "dwc-xlgmac.h"
 #include "dwc-xlgmac-reg.h"

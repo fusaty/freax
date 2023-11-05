@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_USB_TYPEC_H
-#define __LINUX_USB_TYPEC_H
+#ifndef __freax_USB_TYPEC_H
+#define __freax_USB_TYPEC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* USB Type-C Specification releases */
 #define USB_TYPEC_REV_1_0	0x100 /* 1.0 */
@@ -372,4 +372,4 @@ static inline void typec_deattach(struct typec_connector *con, struct device *de
 		con->deattach(con, dev);
 }
 
-#endif /* __LINUX_USB_TYPEC_H */
+#endif /* __freax_USB_TYPEC_H */

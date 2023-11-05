@@ -3,8 +3,8 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/export.h>
-#include <linux/threads.h>
+#include <freax/export.h>
+#include <freax/threads.h>
 #include <asm/epapr_hcalls.h>
 #include <asm/reg.h>
 #include <asm/page.h>

@@ -5,15 +5,15 @@
  * Copyright (c) 2022 StarFive Technology Co., Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mmc/host.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

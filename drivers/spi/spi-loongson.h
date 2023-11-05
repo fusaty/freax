@@ -2,12 +2,12 @@
 /* Header File for Loongson SPI Driver. */
 /* Copyright (C) 2023 Loongson Technology Corporation Limited */
 
-#ifndef __LINUX_SPI_LOONGSON_H
-#define __LINUX_SPI_LOONGSON_H
+#ifndef __freax_SPI_LOONGSON_H
+#define __freax_SPI_LOONGSON_H
 
-#include <linux/bits.h>
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/pm.h>
+#include <freax/types.h>
 
 #define	LOONGSON_SPI_SPCR_REG	0x00
 #define	LOONGSON_SPI_SPSR_REG	0x01
@@ -46,4 +46,4 @@ struct loongson_spi {
 
 int loongson_spi_init_controller(struct device *dev, void __iomem *reg);
 extern const struct dev_pm_ops loongson_spi_dev_pm_ops;
-#endif /* __LINUX_SPI_LOONGSON_H */
+#endif /* __freax_SPI_LOONGSON_H */

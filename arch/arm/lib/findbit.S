@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/findbit.S
+ *  freax/arch/arm/lib/findbit.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -10,7 +10,7 @@
  *   also call with zero size.
  * Reworked by rmk.
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
                 .text
@@ -105,11 +105,11 @@ ENDPROC(_find_next_\name\()bit_\endian)
 	UNWIND(	.fnstart)
 		rev_l	r3, ip
 .L_found:
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 		rbit	r3, r3			@ reverse bits
 		clz	r3, r3			@ count high zero bits
 		add	r0, r2, r3		@ add offset of first set bit
-#elif __LINUX_ARM_ARCH__ >= 5
+#elif __freax_ARM_ARCH__ >= 5
 		rsb	r0, r3, #0
 		and	r3, r3, r0		@ mask out lowest bit set
 		clz	r3, r3			@ count high zero bits

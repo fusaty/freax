@@ -15,17 +15,17 @@
  * Check qlogicfas408.c for more credits and info.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>		/* to get disk capacity */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>		/* to get disk capacity */
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/proc_fs.h>
+#include <freax/unistd.h>
+#include <freax/spinlock.h>
+#include <freax/stat.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

@@ -3,15 +3,15 @@
  * Copyright (C) 2020 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/device.h>
-#include <linux/host1x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/clk/tegra.h>
+#include <freax/device.h>
+#include <freax/host1x.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include <media/v4l2-fwnode.h>
 

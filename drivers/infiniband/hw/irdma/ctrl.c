@@ -1,6 +1,6 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2015 - 2021 Intel Corporation */
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 #include "osdep.h"
 #include "hmc.h"

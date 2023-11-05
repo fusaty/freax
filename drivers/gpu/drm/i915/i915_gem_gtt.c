@@ -4,13 +4,13 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/slab.h> /* fault-inject.h is not standalone! */
+#include <freax/slab.h> /* fault-inject.h is not standalone! */
 
-#include <linux/fault-inject.h>
-#include <linux/log2.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/stop_machine.h>
+#include <freax/fault-inject.h>
+#include <freax/log2.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
+#include <freax/stop_machine.h>
 
 #include <asm/set_memory.h>
 #include <asm/smp.h>

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm8993.h -- Platform data for WM8993
+ * freax/sound/wm8993.h -- Platform data for WM8993
  *
  * Copyright 2009 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM8993_H
-#define __LINUX_SND_WM8993_H
+#ifndef __freax_SND_WM8993_H
+#define __freax_SND_WM8993_H
 
 /* Note that EQ1 only contains the enable/disable bit so will be
    ignored but is included for simplicity.

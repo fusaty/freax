@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Danila Tikhonov <danila@jiaxyga.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-msm.h"
 

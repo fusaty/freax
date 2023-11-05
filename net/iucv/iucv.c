@@ -23,22 +23,22 @@
 #define KMSG_COMPONENT "iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/reboot.h>
+#include <freax/kernel_stat.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
+#include <freax/reboot.h>
 #include <net/iucv/iucv.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/ebcdic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -1904,5 +1904,5 @@ subsys_initcall(iucv_init);
 module_exit(iucv_exit);
 
 MODULE_AUTHOR("(C) 2001 IBM Corp. by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION("Linux for S/390 IUCV lowlevel driver");
+MODULE_DESCRIPTION("freax for S/390 IUCV lowlevel driver");
 MODULE_LICENSE("GPL");

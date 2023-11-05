@@ -6,8 +6,8 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#ifndef LINUX_RIO_REGS_H
-#define LINUX_RIO_REGS_H
+#ifndef freax_RIO_REGS_H
+#define freax_RIO_REGS_H
 
 /*
  * In RapidIO, each device has a 16MB configuration space that is
@@ -388,4 +388,4 @@
 #define RIO_RT_Ln_ENTRY_RTE_VAL		0x000003ff
 #define RIO_RT_ENTRY_DROP_PKT		0x300
 
-#endif				/* LINUX_RIO_REGS_H */
+#endif				/* freax_RIO_REGS_H */

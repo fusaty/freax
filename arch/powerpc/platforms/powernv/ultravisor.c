@@ -5,10 +5,10 @@
  * Copyright 2019, IBM Corporation.
  *
  */
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/printk.h>
+#include <freax/of_fdt.h>
+#include <freax/of.h>
 
 #include <asm/ultravisor.h>
 #include <asm/firmware.h>

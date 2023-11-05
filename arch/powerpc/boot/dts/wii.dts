@@ -3,7 +3,7 @@
  * arch/powerpc/boot/dts/wii.dts
  *
  * Nintendo Wii platform device tree source
- * Copyright (C) 2008-2009 The GameCube Linux Team
+ * Copyright (C) 2008-2009 The GameCube freax Team
  * Copyright (C) 2008,2009 Albert Herranz
  */
 
@@ -259,13 +259,13 @@
 		power {
 			label = "Power Button";
 			gpios = <&GPIO 0 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 		};
 
 		eject {
 			label = "Eject Button";
 			gpios = <&GPIO 6 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_EJECTCD>;
+			freax,code = <KEY_EJECTCD>;
 		};
 	};
 };

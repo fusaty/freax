@@ -7,8 +7,8 @@
 
 #include "bcma_private.h"
 
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <freax/platform_device.h>
+#include <freax/bcma/bcma.h>
 
 static struct resource bcma_sflash_resource = {
 	.name	= "bcma_sflash",

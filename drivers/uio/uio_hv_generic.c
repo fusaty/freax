@@ -19,16 +19,16 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uio_driver.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/hyperv.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/uio_driver.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/skbuff.h>
+#include <freax/hyperv.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
 
 #include "../hv/hyperv_vmbus.h"
 

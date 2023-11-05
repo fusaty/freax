@@ -31,10 +31,10 @@
 
 #define pr_fmt(fmt) "[TTM] " fmt
 
-#include <linux/sched.h>
-#include <linux/shmem_fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
+#include <freax/sched.h>
+#include <freax/shmem_fs.h>
+#include <freax/file.h>
+#include <freax/module.h>
 #include <drm/drm_cache.h>
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_tt.h>

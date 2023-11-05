@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/timeriomem-rng.h
+ * freax/include/freax/timeriomem-rng.h
  *
  * Copyright (c) 2009 Alexander Clouter <alex@digriz.org.uk>
  */
 
-#ifndef _LINUX_TIMERIOMEM_RNG_H
-#define _LINUX_TIMERIOMEM_RNG_H
+#ifndef _freax_TIMERIOMEM_RNG_H
+#define _freax_TIMERIOMEM_RNG_H
 
 struct timeriomem_rng_data {
 	void __iomem		*address;
@@ -18,4 +18,4 @@ struct timeriomem_rng_data {
 	unsigned int		quality;
 };
 
-#endif /* _LINUX_TIMERIOMEM_RNG_H */
+#endif /* _freax_TIMERIOMEM_RNG_H */

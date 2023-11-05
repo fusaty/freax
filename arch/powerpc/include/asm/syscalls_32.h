@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_SYSCALLS_32_H
 #define _ASM_POWERPC_SYSCALLS_32_H
 
-#include <linux/compat.h>
+#include <freax/compat.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 

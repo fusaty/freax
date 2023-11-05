@@ -88,15 +88,15 @@
  *			fix return value of pcc_acpi_get_key()
  *			fix checking return value of acpi_bus_register_driver()
  *
- *      Aug.22, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.22, 2004    David Bronaugh <dbronaugh@freaxboxen.org>
  *              -v0.6.2 Add check on ACPI data (num_sifr)
  *                      Coding style cleanups, better error messages/handling
  *			Fixed an off-by-one error in memory allocation
  *
- *      Aug.21, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.21, 2004    David Bronaugh <dbronaugh@freaxboxen.org>
  *              -v0.6.1 Fix a silly error with status checking
  *
- *      Aug.20, 2004    David Bronaugh <dbronaugh@linuxboxen.org>
+ *      Aug.20, 2004    David Bronaugh <dbronaugh@freaxboxen.org>
  *              - v0.6  Correct brightness controls to reflect reality
  *                      based on information gleaned by Hiroshi Miura
  *                      and discussions with Hiroshi Miura
@@ -119,25 +119,25 @@
  *		- v0.1  start from toshiba_acpi driver written by John Belmonte
  */
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/ctype.h>
-#include <linux/i8042.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/ctype.h>
+#include <freax/i8042.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 #include <acpi/video.h>
 
 MODULE_AUTHOR("Hiroshi Miura <miura@da-cha.org>");
-MODULE_AUTHOR("David Bronaugh <dbronaugh@linuxboxen.org>");
+MODULE_AUTHOR("David Bronaugh <dbronaugh@freaxboxen.org>");
 MODULE_AUTHOR("Harald Welte <laforge@gnumonks.org>");
 MODULE_AUTHOR("Martin Lucina <mato@kotelna.sk>");
 MODULE_AUTHOR("Kenneth Chan <kenneth.t.chan@gmail.com>");

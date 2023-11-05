@@ -12,7 +12,7 @@
 #ifndef _ASM_BOOTINFO_H
 #define _ASM_BOOTINFO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/setup.h>
 
 /*
@@ -115,8 +115,8 @@ extern char arcs_cmdline[COMMAND_LINE_SIZE];
 extern unsigned long fw_arg0, fw_arg1, fw_arg2, fw_arg3;
 
 #ifdef CONFIG_USE_OF
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
+#include <freax/libfdt.h>
+#include <freax/of_fdt.h>
 
 extern char __appended_dtb[];
 

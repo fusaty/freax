@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/ipc/msgutil.c
+ * freax/ipc/msgutil.c
  * Copyright (C) 1999, 2004 Manfred Spraul
  */
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/utsname.h>
-#include <linux/proc_ns.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/security.h>
+#include <freax/slab.h>
+#include <freax/ipc.h>
+#include <freax/msg.h>
+#include <freax/ipc_namespace.h>
+#include <freax/utsname.h>
+#include <freax/proc_ns.h>
+#include <freax/uaccess.h>
+#include <freax/sched.h>
 
 #include "util.h"
 

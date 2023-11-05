@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 #include <crypto/scatterwalk.h>
 
 #include "dma.h"

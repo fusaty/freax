@@ -7,8 +7,8 @@
 #ifndef SCSI_TRANSPORT_SPI_H
 #define SCSI_TRANSPORT_SPI_H
 
-#include <linux/transport_class.h>
-#include <linux/mutex.h>
+#include <freax/transport_class.h>
+#include <freax/mutex.h>
 
 struct scsi_transport_template;
 struct scsi_target;

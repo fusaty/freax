@@ -3,10 +3,10 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/overflow.h>
-#include <linux/vmalloc.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/overflow.h>
+#include <freax/vmalloc.h>
 #include <net/xdp_sock_drv.h>
 
 #include "xsk_queue.h"

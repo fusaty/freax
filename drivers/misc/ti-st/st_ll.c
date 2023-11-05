@@ -7,10 +7,10 @@
  */
 
 #define pr_fmt(fmt) "(stll) :" fmt
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ti_wilink_st.h>
+#include <freax/skbuff.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/ti_wilink_st.h>
 
 /**********************************************************************/
 /* internal functions */

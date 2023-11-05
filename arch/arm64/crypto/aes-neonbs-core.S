@@ -14,8 +14,8 @@
  * for 32-bit ARM written by Andy Polyakov <appro@openssl.org>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/assembler.h>
 
 	.text

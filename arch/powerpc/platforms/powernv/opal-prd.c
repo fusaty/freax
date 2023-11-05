@@ -8,20 +8,20 @@
 
 #define pr_fmt(fmt) "opal-prd: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/poll.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/miscdevice.h>
+#include <freax/fs.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/poll.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 #include <asm/opal-prd.h>
 #include <asm/opal.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 
 struct opal_prd_msg {

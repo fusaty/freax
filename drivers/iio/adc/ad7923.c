@@ -6,23 +6,23 @@
  * Copyright 2012 CS Systemes d'Information
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define AD7923_WRITE_CR		BIT(11)		/* write control register */
 #define AD7923_RANGE		BIT(1)		/* range to REFin */

@@ -10,7 +10,7 @@
 #ifndef _MFD_MAX5970_H
 #define _MFD_MAX5970_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 #define MAX5970_NUM_SWITCHES 2
 #define MAX5978_NUM_SWITCHES 1

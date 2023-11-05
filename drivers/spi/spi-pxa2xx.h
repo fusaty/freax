@@ -7,12 +7,12 @@
 #ifndef SPI_PXA2XX_H
 #define SPI_PXA2XX_H
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/types.h>
+#include <freax/sizes.h>
 
-#include <linux/pxa2xx_ssp.h>
+#include <freax/pxa2xx_ssp.h>
 
 struct gpio_desc;
 struct pxa2xx_spi_controller;

@@ -5,31 +5,31 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/phylink.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/rtnetlink.h>
-#include <linux/mfd/syscon.h>
-#include <linux/sys_soc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <freax/clk.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/kmemleak.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
+#include <freax/phylink.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/rtnetlink.h>
+#include <freax/mfd/syscon.h>
+#include <freax/sys_soc.h>
+#include <freax/dma/ti-cppi5.h>
+#include <freax/dma/k3-udma-glue.h>
 #include <net/switchdev.h>
 
 #include "cpsw_ale.h"

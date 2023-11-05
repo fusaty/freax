@@ -14,8 +14,8 @@
 
 #ifdef CONFIG_VIRT_CPU_ACCOUNTING_NATIVE
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <freax/types.h>
+#include <freax/time.h>
 #include <asm/div64.h>
 #include <asm/time.h>
 #include <asm/param.h>

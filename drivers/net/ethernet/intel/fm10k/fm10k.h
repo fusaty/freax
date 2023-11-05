@@ -4,12 +4,12 @@
 #ifndef _FM10K_H_
 #define _FM10K_H_
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/cpumask.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/etherdevice.h>
+#include <freax/cpumask.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_vlan.h>
+#include <freax/pci.h>
 
 #include "fm10k_pf.h"
 #include "fm10k_vf.h"

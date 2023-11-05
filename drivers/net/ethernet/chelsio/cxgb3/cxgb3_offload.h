@@ -32,8 +32,8 @@
 #ifndef _CXGB3_OFFLOAD_H
 #define _CXGB3_OFFLOAD_H
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
 
 #include "l2t.h"
 

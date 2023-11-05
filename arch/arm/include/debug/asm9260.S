@@ -2,8 +2,8 @@
 /* Debugging macro include header
  *
  *  Copyright (C) 1994-1999 Russell King
- *  Moved from linux/arch/arm/kernel/debug.S by Ben Dooks
- *  Modified for ASM9260 by Oleksij Remepl <linux@rempel-privat.de>
+ *  Moved from freax/arch/arm/kernel/debug.S by Ben Dooks
+ *  Modified for ASM9260 by Oleksij Remepl <freax@rempel-privat.de>
  */
 
 		.macro	addruart, rp, rv, tmp

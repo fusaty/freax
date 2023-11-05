@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * w83792d.c - Part of lm_sensors, Linux kernel modules for hardware
+ * w83792d.c - Part of lm_sensors, freax kernel modules for hardware
  *	       monitoring
  * Copyright (C) 2004, 2005 Winbond Electronics Corp.
  *			    Shane Huang,
@@ -22,16 +22,16 @@
  * w83792d	9	7	7	3	0x7a	0x5ca3	yes	no
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/jiffies.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, 0x2e, 0x2f,
@@ -1640,5 +1640,5 @@ static void w83792d_print_debug(struct w83792d_data *data, struct device *dev)
 module_i2c_driver(w83792d_driver);
 
 MODULE_AUTHOR("Shane Huang (Winbond)");
-MODULE_DESCRIPTION("W83792AD/D driver for linux-2.6");
+MODULE_DESCRIPTION("W83792AD/D driver for freax-2.6");
 MODULE_LICENSE("GPL");

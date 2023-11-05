@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/fs_context.c
+ * freax/fs/nfs/fs_context.c
  *
  * Copyright (C) 1992 Rick Sladkey
  * Conversion to new mount api Copyright (C) David Howells
@@ -10,14 +10,14 @@
  * Split from fs/nfs/super.c by David Howells <dhowells@redhat.com>
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
+#include <freax/compat.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/nfs4_mount.h>
 
 #include <net/handshake.h>
 
@@ -1142,14 +1142,14 @@ static int nfs23_parse_monolithic(struct fs_context *fc,
 
 		/*
 		 * The legacy version 6 binary mount data from userspace has a
-		 * field used only to transport selinux information into the
+		 * field used only to transport sefreax information into the
 		 * kernel.  To continue to support that functionality we
-		 * have a touch of selinux knowledge here in the NFS code. The
+		 * have a touch of sefreax knowledge here in the NFS code. The
 		 * userspace code converted context=blah to just blah so we are
-		 * converting back to the full string selinux understands.
+		 * converting back to the full string sefreax understands.
 		 */
 		if (data->context[0]){
-#ifdef CONFIG_SECURITY_SELINUX
+#ifdef CONFIG_SECURITY_SEfreax
 			int ret;
 
 			data->context[NFS_MAX_CONTEXT_LEN] = '\0';

@@ -14,7 +14,7 @@
 # more details.
 #
 # Authors:
-#	 Todd Brandt <todd.e.brandt@linux.intel.com>
+#	 Todd Brandt <todd.e.brandt@freax.intel.com>
 #
 # Links:
 #	 Home Page
@@ -24,7 +24,7 @@
 #
 # Description:
 #	 This tool is designed to assist kernel and OS developers in optimizing
-#	 their linux stack's suspend/resume time. Using a kernel image built
+#	 their freax stack's suspend/resume time. Using a kernel image built
 #	 with a few extra options enabled, the tool will execute a suspend and
 #	 will capture dmesg and ftrace data until resume is complete. This data
 #	 is transformed into a device timeline and a callgraph to give a quick
@@ -45,7 +45,7 @@
 #	 For kernel versions older than 3.15:
 #	 The following additional kernel parameters are required:
 #		 (e.g. in file /etc/default/grub)
-#		 GRUB_CMDLINE_LINUX_DEFAULT="... initcall_debug log_buf_len=16M ..."
+#		 GRUB_CMDLINE_freax_DEFAULT="... initcall_debug log_buf_len=16M ..."
 #
 
 # ----------------- LIBRARIES --------------------
@@ -6682,7 +6682,7 @@ def printHelp():
 	'\n'\
 	'Description:\n'\
 	'  This tool is designed to assist kernel and OS developers in optimizing\n'\
-	'  their linux stack\'s suspend/resume time. Using a kernel image built\n'\
+	'  their freax stack\'s suspend/resume time. Using a kernel image built\n'\
 	'  with a few extra options enabled, the tool will execute a suspend and\n'\
 	'  capture dmesg and ftrace data until resume is complete. This data is\n'\
 	'  transformed into a device timeline and an optional callgraph to give\n'\

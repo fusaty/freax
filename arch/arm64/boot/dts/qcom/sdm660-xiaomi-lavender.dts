@@ -54,7 +54,7 @@
 		key-volup {
 			label = "Volume Up";
 			gpios = <&pm660l_gpios 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
 		};
 	};
@@ -84,7 +84,7 @@
 	 * have to stick with this. But it works.
 	 */
 	extcon_usb: extcon-usb {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		id-gpios = <&tlmm 58 GPIO_ACTIVE_HIGH>;
 	};
 };
@@ -100,7 +100,7 @@
 &pon_resin {
 	status = "okay";
 
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 };
 
 &qusb2phy0 {

@@ -13,18 +13,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/kmemleak.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
+#include <freax/slab.h>
+#include <freax/kmemleak.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/socket.h>
+#include <freax/netdevice.h>
+#include <freax/proc_fs.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
-#include <linux/times.h>
+#include <freax/times.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
 #include <net/arp.h>
@@ -32,11 +32,11 @@
 #include <net/sock.h>
 #include <net/netevent.h>
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/inetdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/random.h>
+#include <freax/string.h>
+#include <freax/log2.h>
+#include <freax/inetdevice.h>
 #include <net/addrconf.h>
 
 #include <trace/events/neigh.h>

@@ -20,7 +20,7 @@
 		/* This button is unpopulated out of the factory. */
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -28,7 +28,7 @@
 	ir-receiver {
 		compatible = "gpio-ir-receiver";
 		gpios = <&gpio2 RK_PA2 GPIO_ACTIVE_LOW>;
-		linux,rc-map-name = "rc-khadas";
+		freax,rc-map-name = "rc-khadas";
 		pinctrl-names = "default";
 		pinctrl-0 = <&ir_int>;
 	};

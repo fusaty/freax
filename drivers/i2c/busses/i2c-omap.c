@@ -15,21 +15,21 @@
  *	Nishant Menon <nm@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/platform_data/i2c-omap.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/completion.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/slab.h>
+#include <freax/platform_data/i2c-omap.h>
+#include <freax/pm_runtime.h>
+#include <freax/pinctrl/consumer.h>
 
 /* I2C controller revisions */
 #define OMAP_I2C_OMAP1_REV_2		0x20

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2015, 2017, 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, 2017, 2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/iio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
 
 #include "../thermal_hwmon.h"
 

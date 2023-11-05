@@ -64,7 +64,7 @@
 			function = LED_FUNCTION_POWER;
 			color = <LED_COLOR_ID_RED>;
 			default-state = "keep";
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 			pinctrl-names = "default";
 			pinctrl-0 = <&led_power_pin>;
 		};
@@ -72,7 +72,7 @@
 			gpios = <&gpio0 RK_PB7 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_BLUE>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			pinctrl-names = "default";
 			pinctrl-0 = <&led_work_pin>;
 		};

@@ -13,14 +13,14 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/ptp_mock.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/ptp_mock.h>
+#include <freax/u64_stats_sync.h>
 #include <net/devlink.h>
 #include <net/udp_tunnel.h>
 #include <net/xdp.h>

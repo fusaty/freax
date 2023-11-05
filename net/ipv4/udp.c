@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -10,7 +10,7 @@
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
  *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@vafreax.co.jp>
  *
  * Fixes:
  *		Alan Cox	:	verify_area() calls
@@ -74,29 +74,29 @@
 
 #define pr_fmt(fmt) "UDP: " fmt
 
-#include <linux/bpf-cgroup.h>
-#include <linux/uaccess.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <freax/memblock.h>
+#include <freax/highmem.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/module.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/igmp.h>
+#include <freax/inetdevice.h>
+#include <freax/in.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/mm.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
 #include <net/tcp_states.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/icmp.h>
 #include <net/inet_hashtables.h>
@@ -106,8 +106,8 @@
 #include <net/gso.h>
 #include <net/xfrm.h>
 #include <trace/events/udp.h>
-#include <linux/static_key.h>
-#include <linux/btf_ids.h>
+#include <freax/static_key.h>
+#include <freax/btf_ids.h>
 #include <trace/events/skb.h>
 #include <net/busy_poll.h>
 #include "udp_impl.h"

@@ -1,5 +1,5 @@
 /*
- * Linux Security plug
+ * freax Security plug
  *
  * Copyright (C) 2001 WireX Communications, Inc <chris@wirex.com>
  * Copyright (C) 2001 Greg Kroah-Hartman <greg@kroah.com>
@@ -20,20 +20,20 @@
  *
  */
 
-#ifndef __LINUX_SECURITY_H
-#define __LINUX_SECURITY_H
+#ifndef __freax_SECURITY_H
+#define __freax_SECURITY_H
 
-#include <linux/kernel_read_file.h>
-#include <linux/key.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/sockptr.h>
+#include <freax/kernel_read_file.h>
+#include <freax/key.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/sockptr.h>
 
-struct linux_binprm;
+struct freax_binprm;
 struct cred;
 struct rlimit;
 struct kernel_siginfo;
@@ -151,7 +151,7 @@ extern int cap_capset(struct cred *new, const struct cred *old,
 		      const kernel_cap_t *effective,
 		      const kernel_cap_t *inheritable,
 		      const kernel_cap_t *permitted);
-extern int cap_bprm_creds_from_file(struct linux_binprm *bprm, const struct file *file);
+extern int cap_bprm_creds_from_file(struct freax_binprm *bprm, const struct file *file);
 int cap_inode_setxattr(struct dentry *dentry, const char *name,
 		       const void *value, size_t size, int flags);
 int cap_inode_removexattr(struct mnt_idmap *idmap,
@@ -289,11 +289,11 @@ int security_quota_on(struct dentry *dentry);
 int security_syslog(int type);
 int security_settime64(const struct timespec64 *ts, const struct timezone *tz);
 int security_vm_enough_memory_mm(struct mm_struct *mm, long pages);
-int security_bprm_creds_for_exec(struct linux_binprm *bprm);
-int security_bprm_creds_from_file(struct linux_binprm *bprm, const struct file *file);
-int security_bprm_check(struct linux_binprm *bprm);
-void security_bprm_committing_creds(const struct linux_binprm *bprm);
-void security_bprm_committed_creds(const struct linux_binprm *bprm);
+int security_bprm_creds_for_exec(struct freax_binprm *bprm);
+int security_bprm_creds_from_file(struct freax_binprm *bprm, const struct file *file);
+int security_bprm_check(struct freax_binprm *bprm);
+void security_bprm_committing_creds(const struct freax_binprm *bprm);
+void security_bprm_committed_creds(const struct freax_binprm *bprm);
 int security_fs_context_submount(struct fs_context *fc, struct super_block *reference);
 int security_fs_context_dup(struct fs_context *fc, struct fs_context *src_fc);
 int security_fs_context_parse_param(struct fs_context *fc, struct fs_parameter *param);
@@ -607,27 +607,27 @@ static inline int security_vm_enough_memory_mm(struct mm_struct *mm, long pages)
 	return __vm_enough_memory(mm, pages, cap_vm_enough_memory(mm, pages));
 }
 
-static inline int security_bprm_creds_for_exec(struct linux_binprm *bprm)
+static inline int security_bprm_creds_for_exec(struct freax_binprm *bprm)
 {
 	return 0;
 }
 
-static inline int security_bprm_creds_from_file(struct linux_binprm *bprm,
+static inline int security_bprm_creds_from_file(struct freax_binprm *bprm,
 						const struct file *file)
 {
 	return cap_bprm_creds_from_file(bprm, file);
 }
 
-static inline int security_bprm_check(struct linux_binprm *bprm)
+static inline int security_bprm_check(struct freax_binprm *bprm)
 {
 	return 0;
 }
 
-static inline void security_bprm_committing_creds(const struct linux_binprm *bprm)
+static inline void security_bprm_committing_creds(const struct freax_binprm *bprm)
 {
 }
 
-static inline void security_bprm_committed_creds(const struct linux_binprm *bprm)
+static inline void security_bprm_committed_creds(const struct freax_binprm *bprm)
 {
 }
 
@@ -2123,4 +2123,4 @@ static inline int security_uring_cmd(struct io_uring_cmd *ioucmd)
 #endif /* CONFIG_SECURITY */
 #endif /* CONFIG_IO_URING */
 
-#endif /* ! __LINUX_SECURITY_H */
+#endif /* ! __freax_SECURITY_H */

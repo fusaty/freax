@@ -9,27 +9,27 @@
  * Baikal-T1 Process, Voltage, Temperature sensor driver
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/polynomial.h>
-#include <linux/seqlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/polynomial.h>
+#include <freax/seqlock.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #include "bt1-pvt.h"
 

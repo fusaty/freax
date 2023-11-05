@@ -11,24 +11,24 @@
  * Need to re-open the interface manually after changing some parameters.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/stddef.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/types.h>
 
 #include "ucc_geth.h"

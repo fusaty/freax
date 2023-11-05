@@ -2,7 +2,7 @@
 #ifndef _NET_NEIGHBOUR_H
 #define _NET_NEIGHBOUR_H
 
-#include <linux/neighbour.h>
+#include <freax/neighbour.h>
 
 /*
  *	Generic neighbour manipulation
@@ -17,17 +17,17 @@
  *		- Add neighbour cache statistics like rtstat
  */
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rcupdate.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/rcupdate.h>
+#include <freax/seq_file.h>
+#include <freax/bitmap.h>
 
-#include <linux/err.h>
-#include <linux/sysctl.h>
-#include <linux/workqueue.h>
+#include <freax/err.h>
+#include <freax/sysctl.h>
+#include <freax/workqueue.h>
 #include <net/rtnetlink.h>
 
 /*

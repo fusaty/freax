@@ -40,7 +40,7 @@ DESCRIPTION
 		  otherwise list all BTF objects currently loaded on the
 		  system.
 
-		  Since Linux 5.8 bpftool is able to discover information about
+		  Since freax 5.8 bpftool is able to discover information about
 		  processes that hold open file descriptors (FDs) against BTF
 		  objects. On such kernels bpftool will automatically emit this
 		  information as well.
@@ -82,7 +82,7 @@ OPTIONS
 		  with BTF objects for kernel modules. To avoid duplicating
 		  all kernel symbols required by modules, BTF objects for
 		  modules are "split", they are built incrementally on top of
-		  the kernel (vmlinux) BTF object. So the base BTF reference
+		  the kernel (vmfreax) BTF object. So the base BTF reference
 		  should usually point to the kernel BTF.
 
 		  When the main BTF object to process (for example, the
@@ -240,7 +240,7 @@ All the standard ways to specify map or program are supported:
 | **# bpftool btf dump file /sys/kernel/btf/i2c_smbus**
 | (or)
 | **# I2C_SMBUS_ID=$(bpftool btf show -p | jq '.[] | select(.name=="i2c_smbus").id')**
-| **# bpftool btf dump id ${I2C_SMBUS_ID} -B /sys/kernel/btf/vmlinux**
+| **# bpftool btf dump id ${I2C_SMBUS_ID} -B /sys/kernel/btf/vmfreax**
 
 ::
 

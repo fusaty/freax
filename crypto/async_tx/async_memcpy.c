@@ -10,12 +10,12 @@
  *      Neil Brown <neilb@suse.de>
  *      Jeff Garzik <jeff@garzik.org>
  */
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/async_tx.h>
+#include <freax/kernel.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/async_tx.h>
 
 /**
  * async_memcpy - attempt to copy memory with a dma engine.

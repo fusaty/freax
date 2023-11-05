@@ -7,15 +7,15 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/device.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/device.h>
+#include <freax/mfd/lp8788.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 /* register address */
 #define LP8788_INT_1			0x00

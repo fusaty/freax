@@ -8,22 +8,22 @@
  * Copyright (c) 2002-2005, Jouni Malinen <j@w1.fi>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/proc_fs.h>
+#include <freax/if_arp.h>
+#include <freax/delay.h>
+#include <freax/random.h>
+#include <freax/workqueue.h>
+#include <freax/kmod.h>
+#include <freax/rtnetlink.h>
+#include <freax/wireless.h>
+#include <freax/etherdevice.h>
 #include <net/net_namespace.h>
 #include <net/iw_handler.h>
 #include <net/lib80211.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "hostap_wlan.h"
 #include "hostap_80211.h"

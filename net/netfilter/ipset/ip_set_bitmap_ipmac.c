@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@freax.nu>
  *                         Patrick Schaaf <bof@bof.de>
  *			   Martin Josefsson <gandalf@wlug.westbo.se>
  */
 
 /* Kernel module implementing an IP set type: the bitmap:ip,mac type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/if_ether.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
+#include <freax/module.h>
+#include <freax/ip.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/if_ether.h>
+#include <freax/netlink.h>
+#include <freax/jiffies.h>
+#include <freax/timer.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_bitmap.h>
+#include <freax/netfilter/ipset/pfxlen.h>
+#include <freax/netfilter/ipset/ip_set.h>
+#include <freax/netfilter/ipset/ip_set_bitmap.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1	   Counter support added */

@@ -3,20 +3,20 @@
  * Copyright (C) 2020 Invensense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 #include "inv_icm42600.h"
 #include "inv_icm42600_buffer.h"

@@ -37,10 +37,10 @@
 #ifndef _TTM_OBJECT_H_
 #define _TTM_OBJECT_H_
 
-#include <linux/dma-buf.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
+#include <freax/dma-buf.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
 
 #include <drm/ttm/ttm_bo.h>
 

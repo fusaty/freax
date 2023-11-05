@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __TARGET_CORE_USER_H
 #define __TARGET_CORE_USER_H
 
 /* This header will be used by application too */
 
-#include <linux/types.h>
-#include <linux/uio.h>
+#include <freax/types.h>
+#include <freax/uio.h>
 
 #define TCMU_VERSION "2.0"
 

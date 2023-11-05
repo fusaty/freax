@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0 */
 /******************************************************************************
  *
- * Name: aclinuxex.h - Extra OS specific defines, etc. for Linux
+ * Name: acfreaxex.h - Extra OS specific defines, etc. for freax
  *
  * Copyright (C) 2000 - 2023, Intel Corp.
  *
  *****************************************************************************/
 
-#ifndef __ACLINUXEX_H__
-#define __ACLINUXEX_H__
+#ifndef __ACfreaxEX_H__
+#define __ACfreaxEX_H__
 
 #ifdef __KERNEL__
 
@@ -136,9 +136,9 @@ static inline void acpi_os_terminate_debugger(void)
 }
 
 /*
- * OSL interfaces added by Linux
+ * OSL interfaces added by freax
  */
 
 #endif				/* __KERNEL__ */
 
-#endif				/* __ACLINUXEX_H__ */
+#endif				/* __ACfreaxEX_H__ */

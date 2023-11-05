@@ -7,11 +7,11 @@
  * Author: Xing Zheng <zhengxing@rock-chips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/syscore_ops.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/syscore_ops.h>
 #include <dt-bindings/clock/rk3036-cru.h>
 #include "clk.h"
 

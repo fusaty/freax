@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef LINUX_MMC_IOCTL_H
-#define LINUX_MMC_IOCTL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef freax_MMC_IOCTL_H
+#define freax_MMC_IOCTL_H
 
-#include <linux/types.h>
-#include <linux/major.h>
+#include <freax/types.h>
+#include <freax/major.h>
 
 struct mmc_ioc_cmd {
 	/*
@@ -76,4 +76,4 @@ struct mmc_ioc_multi_cmd {
  */
 #define MMC_IOC_MAX_BYTES  (512L * 1024)
 #define MMC_IOC_MAX_CMDS    255
-#endif /* LINUX_MMC_IOCTL_H */
+#endif /* freax_MMC_IOCTL_H */

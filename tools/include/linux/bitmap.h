@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_BITMAP_H
-#define _TOOLS_LINUX_BITMAP_H
+#ifndef _TOOLS_freax_BITMAP_H
+#define _TOOLS_freax_BITMAP_H
 
 #include <string.h>
-#include <linux/bitops.h>
-#include <linux/find.h>
+#include <freax/bitops.h>
+#include <freax/find.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #define DECLARE_BITMAP(name,bits) \
 	unsigned long name[BITS_TO_LONGS(bits)]
@@ -149,4 +149,4 @@ static inline bool bitmap_intersects(const unsigned long *src1,
 		return __bitmap_intersects(src1, src2, nbits);
 }
 
-#endif /* _TOOLS_LINUX_BITMAP_H */
+#endif /* _TOOLS_freax_BITMAP_H */

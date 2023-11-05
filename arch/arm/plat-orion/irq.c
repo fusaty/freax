@@ -8,13 +8,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 #include <asm/exception.h>
 #include <plat/irq.h>
 #include <plat/orion-gpio.h>

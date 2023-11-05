@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 /*
@@ -15,18 +15,18 @@
  * operating-points-v2 table when it is parsed by the OPP framework.
  */
 
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/smem.h>
 
 #include <dt-bindings/arm/qcom,ids.h>
 

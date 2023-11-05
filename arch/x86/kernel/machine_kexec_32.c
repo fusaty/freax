@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of freax booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/suspend.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
+#include <freax/mm.h>
+#include <freax/kexec.h>
+#include <freax/delay.h>
+#include <freax/numa.h>
+#include <freax/ftrace.h>
+#include <freax/suspend.h>
+#include <freax/gfp.h>
+#include <freax/io.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>

@@ -4,8 +4,8 @@
  *
  * This file is released under the GPL.
  */
-#ifndef _LINUX_DM_ARRAY_H
-#define _LINUX_DM_ARRAY_H
+#ifndef _freax_DM_ARRAY_H
+#define _freax_DM_ARRAY_H
 
 #include "dm-btree.h"
 
@@ -217,4 +217,4 @@ void dm_array_cursor_get_value(struct dm_array_cursor *c, void **value_le);
 
 /*----------------------------------------------------------------*/
 
-#endif	/* _LINUX_DM_ARRAY_H */
+#endif	/* _freax_DM_ARRAY_H */

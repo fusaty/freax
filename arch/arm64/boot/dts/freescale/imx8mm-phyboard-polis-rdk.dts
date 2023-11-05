@@ -53,21 +53,21 @@
 			color = <LED_COLOR_ID_RED>;
 			function = LED_FUNCTION_DISK;
 			gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc2";
+			freax,default-trigger = "mmc2";
 		};
 
 		led-1 {
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_DISK;
 			gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			freax,default-trigger = "mmc1";
 		};
 
 		led-2 {
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_CPU;
 			gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

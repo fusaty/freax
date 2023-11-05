@@ -5,11 +5,11 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/rculist.h>
-#include <linux/completion.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/rculist.h>
+#include <freax/completion.h>
 
 #include "vmci_resource.h"
 #include "vmci_driver.h"

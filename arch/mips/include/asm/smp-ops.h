@@ -11,13 +11,13 @@
 #ifndef __ASM_SMP_OPS_H
 #define __ASM_SMP_OPS_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 #include <asm/mips-cps.h>
 
 #ifdef CONFIG_SMP
 
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 
 struct task_struct;
 

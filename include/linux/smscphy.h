@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SMSCPHY_H__
-#define __LINUX_SMSCPHY_H__
+#ifndef __freax_SMSCPHY_H__
+#define __freax_SMSCPHY_H__
 
 #define MII_LAN83C185_ISF 29 /* Interrupt Source Flags */
 #define MII_LAN83C185_IM  30 /* Interrupt Mask */
@@ -72,4 +72,4 @@ int smsc_phy_probe(struct phy_device *phydev);
 
 #define MII_LAN874X_PHY_PME_SELF_CLEAR_DELAY	0x1000 /* 81 milliseconds */
 
-#endif /* __LINUX_SMSCPHY_H__ */
+#endif /* __freax_SMSCPHY_H__ */

@@ -20,11 +20,11 @@
  * physical memory mapping is the available physical memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/random.h>
+#include <freax/memblock.h>
+#include <freax/pgtable.h>
 
 #include <asm/setup.h>
 #include <asm/kaslr.h>

@@ -5,16 +5,16 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  *
  * Author: Liam Girdwood
- *         linux@wolfsonmicro.com
+ *         freax@wolfsonmicro.com
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/wm8350/core.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 static int wm8350_i2c_probe(struct i2c_client *i2c)
 {

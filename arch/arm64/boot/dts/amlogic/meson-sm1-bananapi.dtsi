@@ -6,7 +6,7 @@
 
 #include "meson-sm1.dtsi"
 #include <dt-bindings/leds/common.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/gpio/meson-g12a-gpio.h>
 
 / {
@@ -18,7 +18,7 @@
 
 		button-sw3 {
 			label = "SW3";
-			linux,code = <BTN_3>;
+			freax,code = <BTN_3>;
 			press-threshold-microvolt = <1700000>;
 		};
 	};
@@ -42,7 +42,7 @@
 
 		key {
 			label = "SW1";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&gpio_ao GPIOAO_3 GPIO_ACTIVE_LOW>;
 			interrupt-parent = <&gpio_intc>;
 			interrupts = <IRQID_GPIOAO_3 IRQ_TYPE_EDGE_BOTH>;
@@ -73,7 +73,7 @@
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio_ao GPIOAO_11 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

@@ -9,23 +9,23 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/u64_stats_sync.h>
 
 #include <net/rtnetlink.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/xdp.h>
-#include <linux/veth.h>
-#include <linux/module.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/ptr_ring.h>
-#include <linux/bpf_trace.h>
-#include <linux/net_tstamp.h>
+#include <freax/veth.h>
+#include <freax/module.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/ptr_ring.h>
+#include <freax/bpf_trace.h>
+#include <freax/net_tstamp.h>
 #include <net/page_pool/helpers.h>
 
 #define DRV_NAME	"veth"

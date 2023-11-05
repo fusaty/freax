@@ -3,11 +3,11 @@
  *  Copyright (C) 2010, Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#ifndef __LINUX_POWER_GPIO_CHARGER_H__
-#define __LINUX_POWER_GPIO_CHARGER_H__
+#ifndef __freax_POWER_GPIO_CHARGER_H__
+#define __freax_POWER_GPIO_CHARGER_H__
 
-#include <linux/power_supply.h>
-#include <linux/types.h>
+#include <freax/power_supply.h>
+#include <freax/types.h>
 
 /**
  * struct gpio_charger_platform_data - platform_data for gpio_charger devices

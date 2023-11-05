@@ -2,18 +2,18 @@
 /* Copyright (C) 2012-2019 ARM Limited (or its affiliates). */
 
 /* \file cc_driver.h
- * ARM CryptoCell Linux Crypto Driver
+ * ARM CryptoCell freax Crypto Driver
  */
 
 #ifndef __CC_DRIVER_H__
 #define __CC_DRIVER_H__
 
 #ifdef COMP_IN_WQ
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 #else
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 #endif
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/aes.h>
@@ -23,8 +23,8 @@
 #include <crypto/authenc.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
 
 #include "cc_host_regs.h"
 #include "cc_crypto_ctx.h"

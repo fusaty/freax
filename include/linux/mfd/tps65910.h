@@ -9,11 +9,11 @@
  * Author: Arnaud Deconinck <a-deconinck@ti.com>
  */
 
-#ifndef __LINUX_MFD_TPS65910_H
-#define __LINUX_MFD_TPS65910_H
+#ifndef __freax_MFD_TPS65910_H
+#define __freax_MFD_TPS65910_H
 
-#include <linux/gpio.h>
-#include <linux/regmap.h>
+#include <freax/gpio.h>
+#include <freax/regmap.h>
 
 /* TPS chip id list */
 #define TPS65910			0
@@ -908,4 +908,4 @@ static inline int tps65910_chip_id(struct tps65910 *tps65910)
 	return tps65910->id;
 }
 
-#endif /*  __LINUX_MFD_TPS65910_H */
+#endif /*  __freax_MFD_TPS65910_H */

@@ -7,12 +7,12 @@
 // on Intel Integrated Sensor Hub (ISH) using the ISH Transport protocol
 // (ISH-TP).
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/intel-ish-client-if.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/intel-ish-client-if.h>
 
 #include "cros_ec.h"
 

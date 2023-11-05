@@ -5,21 +5,21 @@
  */
 
 /* kernel includes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/mutex.h>
+#include <freax/i2c.h>
 /* V4l includes */
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
-#include <linux/platform_data/media/si4713.h>
+#include <freax/platform_data/media/si4713.h>
 
 #include "si4713.h"
 

@@ -2,7 +2,7 @@
 #ifndef __SOUND_PCM_IEC958_H
 #define __SOUND_PCM_IEC958_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 int snd_pcm_create_iec958_consumer_default(u8 *cs, size_t len);
 

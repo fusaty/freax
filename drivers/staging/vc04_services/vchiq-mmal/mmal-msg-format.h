@@ -14,7 +14,7 @@
 #ifndef MMAL_MSG_FORMAT_H
 #define MMAL_MSG_FORMAT_H
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 #include "mmal-msg-common.h"
 

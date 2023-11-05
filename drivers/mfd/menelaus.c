@@ -18,18 +18,18 @@
  * Copyright (C) 2005, 2006 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/mfd/menelaus.h>
-#include <linux/gpio.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
+#include <freax/mfd/menelaus.h>
+#include <freax/gpio.h>
 
 #include <asm/mach/irq.h>
 

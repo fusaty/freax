@@ -8,7 +8,7 @@
 #include <byteswap.h>
 #include <stdint.h>
 #include <inttypes.h>
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/syscall.h>

@@ -6,9 +6,9 @@
  *  Written by Milosz Tanski (milosz@adfin.com)
  */
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/fs_context.h>
+#include <freax/fs_context.h>
 #include "super.h"
 #include "cache.h"
 

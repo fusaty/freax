@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/core/sdio_bus.c
+ *  freax/drivers/mmc/core/sdio_bus.c
  *
  *  Copyright 2007 Pierre Ossman
  *
  * SDIO function driver model
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/acpi.h>
+#include <freax/sysfs.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/of.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/of.h>
 
 #include "core.h"
 #include "card.h"

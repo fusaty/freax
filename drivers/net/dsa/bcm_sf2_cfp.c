@@ -5,16 +5,16 @@
  * Copyright (C) 2016, Broadcom
  */
 
-#include <linux/list.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
+#include <freax/list.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
+#include <freax/in.h>
+#include <freax/netdevice.h>
 #include <net/dsa.h>
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 #include <net/flow_offload.h>
 #include <net/switchdev.h>
-#include <uapi/linux/if_bridge.h>
+#include <uapi/freax/if_bridge.h>
 
 #include "bcm_sf2.h"
 #include "bcm_sf2_regs.h"

@@ -8,16 +8,16 @@
  *	Olof Johansson <olof@lixom.net>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 static bool matrix_keypad_map_key(struct input_dev *input_dev,
 				  unsigned int rows, unsigned int cols,
@@ -79,7 +79,7 @@ static int matrix_keypad_parse_keymap(const char *propname,
 	int retval;
 
 	if (!propname)
-		propname = "linux,keymap";
+		propname = "freax,keymap";
 
 	size = device_property_count_u32(dev, propname);
 	if (size <= 0) {
@@ -137,7 +137,7 @@ out:
  *
  * If @keymap_data is not supplied and device tree support is enabled
  * it will attempt load the keymap from property specified by @keymap_name
- * argument (or "linux,keymap" if @keymap_name is %NULL).
+ * argument (or "freax,keymap" if @keymap_name is %NULL).
  *
  * If @keymap is %NULL the function will automatically allocate managed
  * block of memory to store the keymap. This memory will be associated with

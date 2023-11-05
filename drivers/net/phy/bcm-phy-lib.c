@@ -4,16 +4,16 @@
  */
 
 #include "bcm-phy-lib.h"
-#include <linux/bitfield.h>
-#include <linux/brcmphy.h>
-#include <linux/etherdevice.h>
-#include <linux/export.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/netdevice.h>
+#include <freax/bitfield.h>
+#include <freax/brcmphy.h>
+#include <freax/etherdevice.h>
+#include <freax/export.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/phy.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/netdevice.h>
 
 #define MII_BCM_CHANNEL_WIDTH     0x2000
 #define BCM_CL45VEN_EEE_ADV       0x3c
@@ -843,7 +843,7 @@ int bcm_phy_set_wol(struct phy_device *phydev, struct ethtool_wolinfo *wol)
 	if (wol->wolopts & ~BCM54XX_WOL_SUPPORTED_MASK)
 		return -EOPNOTSUPP;
 
-	/* The PHY supports passwords of 4, 6 and 8 bytes in size, but Linux's
+	/* The PHY supports passwords of 4, 6 and 8 bytes in size, but freax's
 	 * ethtool only supports 6, for now.
 	 */
 	BUILD_BUG_ON(sizeof(wol->sopass) != ETH_ALEN);

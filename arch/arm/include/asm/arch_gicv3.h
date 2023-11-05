@@ -9,8 +9,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #include <asm/barrier.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

@@ -6,11 +6,11 @@
  * Copyright (C) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#ifndef __LINUX_MFD_ATC260X_CORE_H
-#define __LINUX_MFD_ATC260X_CORE_H
+#ifndef __freax_MFD_ATC260X_CORE_H
+#define __freax_MFD_ATC260X_CORE_H
 
-#include <linux/mfd/atc260x/atc2603c.h>
-#include <linux/mfd/atc260x/atc2609a.h>
+#include <freax/mfd/atc260x/atc2603c.h>
+#include <freax/mfd/atc260x/atc2609a.h>
 
 enum atc260x_type {
 	ATC2603A = 0,
@@ -55,4 +55,4 @@ struct regmap_config;
 int atc260x_match_device(struct atc260x *atc260x, struct regmap_config *regmap_cfg);
 int atc260x_device_probe(struct atc260x *atc260x);
 
-#endif /* __LINUX_MFD_ATC260X_CORE_H */
+#endif /* __freax_MFD_ATC260X_CORE_H */

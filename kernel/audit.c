@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /* audit.c -- Auditing support
- * Gateway between the kernel (e.g., selinux) and the user-space audit daemon.
+ * Gateway between the kernel (e.g., sefreax) and the user-space audit daemon.
  * System-call specific features have moved to auditsc.c
  *
  * Copyright 2003-2007 Red Hat Inc., Durham, North Carolina.
@@ -26,36 +26,36 @@
  *	     information that must be passed to user-space.
  *
  * Audit userspace, documentation, tests, and bug/issue trackers:
- * 	https://github.com/linux-audit
+ * 	https://github.com/freax-audit
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/file.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/pid.h>
+#include <freax/file.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/kthread.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/mutex.h>
+#include <freax/gfp.h>
+#include <freax/pid.h>
 
-#include <linux/audit.h>
+#include <freax/audit.h>
 
 #include <net/sock.h>
 #include <net/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/security.h>
-#include <linux/freezer.h>
-#include <linux/pid_namespace.h>
+#include <freax/skbuff.h>
+#include <freax/security.h>
+#include <freax/freezer.h>
+#include <freax/pid_namespace.h>
 #include <net/netns/generic.h>
 
 #include "audit.h"

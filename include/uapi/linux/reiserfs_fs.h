@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright 1996, 1997, 1998 Hans Reiser, see reiserfs/README for licensing and copyright details
  */
-#ifndef _LINUX_REISER_FS_H
-#define _LINUX_REISER_FS_H
+#ifndef _freax_REISER_FS_H
+#define _freax_REISER_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 /*
- *  include/linux/reiser_fs.h
+ *  include/freax/reiser_fs.h
  *
  *  Reiser File System constants and structures
  *
@@ -24,4 +24,4 @@
 #define REISERFS_IOC_GETVERSION		FS_IOC_GETVERSION
 #define REISERFS_IOC_SETVERSION		FS_IOC_SETVERSION
 
-#endif				/* _LINUX_REISER_FS_H */
+#endif				/* _freax_REISER_FS_H */

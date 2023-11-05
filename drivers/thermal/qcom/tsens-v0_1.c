@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/platform_device.h>
 #include "tsens.h"
 
 /* ----- SROT ------ */

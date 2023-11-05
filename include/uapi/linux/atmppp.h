@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atmppp.h - RFC2364 PPPoATM */
 
 /* Written 2000 by Mitchell Blank Jr */
 
-#ifndef _LINUX_ATMPPP_H
-#define _LINUX_ATMPPP_H
+#ifndef _freax_ATMPPP_H
+#define _freax_ATMPPP_H
 
-#include <linux/atm.h>
+#include <freax/atm.h>
 
 #define PPPOATM_ENCAPS_AUTODETECT	(0)
 #define PPPOATM_ENCAPS_VC		(1)
@@ -22,4 +22,4 @@ struct atm_backend_ppp {
 	int		encaps;		/* PPPOATM_ENCAPS_* */
 };
 
-#endif	/* _LINUX_ATMPPP_H */
+#endif	/* _freax_ATMPPP_H */

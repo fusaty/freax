@@ -7,12 +7,12 @@
  * Author: Bintian Wang <bintian.wang@huawei.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/spinlock.h>
 
 #include "clk.h"
 

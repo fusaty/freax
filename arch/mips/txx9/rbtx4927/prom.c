@@ -30,8 +30,8 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/rbtx4927.h>
 

@@ -11,16 +11,16 @@
  * Author: Mian Yousaf Kaukab <mian.yousaf.kaukab@stericsson.com>
  * Copyright 2010 (c) ST-Ericsson AB
  */
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/amba/bus.h>
+#include <freax/io.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/slab.h>
 
 /*
  * Register definitions

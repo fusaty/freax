@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * VLAN		An implementation of 802.1Q VLAN tagging.
  *
@@ -11,8 +11,8 @@
  *
  */
 
-#ifndef _UAPI_LINUX_IF_VLAN_H_
-#define _UAPI_LINUX_IF_VLAN_H_
+#ifndef _UAPI_freax_IF_VLAN_H_
+#define _UAPI_freax_IF_VLAN_H_
 
 
 /* VLAN IOCTLs are found in sockios.h */
@@ -63,4 +63,4 @@ struct vlan_ioctl_args {
 	short vlan_qos;   
 };
 
-#endif /* _UAPI_LINUX_IF_VLAN_H_ */
+#endif /* _UAPI_freax_IF_VLAN_H_ */

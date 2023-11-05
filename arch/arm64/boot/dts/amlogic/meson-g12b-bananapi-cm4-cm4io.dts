@@ -28,7 +28,7 @@
 
 		button-function {
 			label = "Function";
-			linux,code = <KEY_FN>;
+			freax,code = <KEY_FN>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -51,7 +51,7 @@
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio_ao GPIOAO_7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-green {

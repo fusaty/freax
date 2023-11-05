@@ -1,35 +1,35 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MM_H
-#define _LINUX_MM_H
+#ifndef _freax_MM_H
+#define _freax_MM_H
 
-#include <linux/errno.h>
-#include <linux/mmdebug.h>
-#include <linux/gfp.h>
-#include <linux/bug.h>
-#include <linux/list.h>
-#include <linux/mmzone.h>
-#include <linux/rbtree.h>
-#include <linux/atomic.h>
-#include <linux/debug_locks.h>
-#include <linux/mm_types.h>
-#include <linux/mmap_lock.h>
-#include <linux/range.h>
-#include <linux/pfn.h>
-#include <linux/percpu-refcount.h>
-#include <linux/bit_spinlock.h>
-#include <linux/shrinker.h>
-#include <linux/resource.h>
-#include <linux/page_ext.h>
-#include <linux/err.h>
-#include <linux/page-flags.h>
-#include <linux/page_ref.h>
-#include <linux/overflow.h>
-#include <linux/sizes.h>
-#include <linux/sched.h>
-#include <linux/pgtable.h>
-#include <linux/kasan.h>
-#include <linux/memremap.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/mmdebug.h>
+#include <freax/gfp.h>
+#include <freax/bug.h>
+#include <freax/list.h>
+#include <freax/mmzone.h>
+#include <freax/rbtree.h>
+#include <freax/atomic.h>
+#include <freax/debug_locks.h>
+#include <freax/mm_types.h>
+#include <freax/mmap_lock.h>
+#include <freax/range.h>
+#include <freax/pfn.h>
+#include <freax/percpu-refcount.h>
+#include <freax/bit_spinlock.h>
+#include <freax/shrinker.h>
+#include <freax/resource.h>
+#include <freax/page_ext.h>
+#include <freax/err.h>
+#include <freax/page-flags.h>
+#include <freax/page_ref.h>
+#include <freax/overflow.h>
+#include <freax/sizes.h>
+#include <freax/sched.h>
+#include <freax/pgtable.h>
+#include <freax/kasan.h>
+#include <freax/memremap.h>
+#include <freax/slab.h>
 
 struct mempolicy;
 struct anon_vma;
@@ -236,7 +236,7 @@ void setup_initial_init_mm(void *start_code, void *end_code,
 			   void *end_data, void *brk);
 
 /*
- * Linux kernel virtual memory manager primitives.
+ * freax kernel virtual memory manager primitives.
  * The idea being to have a "virtual" mm in the same way
  * we have a virtual fs - giving a cleaner interface to the
  * mm details, and allowing different kinds of memory mappings
@@ -1081,7 +1081,7 @@ static inline unsigned int folio_order(struct folio *folio)
 	return folio->_flags_1 & 0xff;
 }
 
-#include <linux/huge_mm.h>
+#include <freax/huge_mm.h>
 
 /*
  * Methods to modify the page usage count.
@@ -1374,7 +1374,7 @@ vm_fault_t finish_fault(struct vm_fault *vmf);
  * subsequently been given references to it.
  *
  * The other pages (we may call them "pagecache pages") are completely
- * managed by the Linux memory manager: I/O, buffers, swapping etc.
+ * managed by the freax memory manager: I/O, buffers, swapping etc.
  * The following discussion applies only to them.
  *
  * A pagecache page contains an opaque `private' member, which belongs to the
@@ -2174,7 +2174,7 @@ static inline int arch_make_folio_accessible(struct folio *folio)
 /*
  * Some inline functions in vmstat.h depend on page_zone()
  */
-#include <linux/vmstat.h>
+#include <freax/vmstat.h>
 
 static __always_inline void *lowmem_page_address(const struct page *page)
 {
@@ -4143,4 +4143,4 @@ static inline bool pfn_is_unaccepted_memory(unsigned long pfn)
 	return range_contains_unaccepted_memory(paddr, paddr + PAGE_SIZE);
 }
 
-#endif /* _LINUX_MM_H */
+#endif /* _freax_MM_H */

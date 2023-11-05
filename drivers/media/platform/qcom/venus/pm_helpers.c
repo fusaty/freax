@@ -4,15 +4,15 @@
  *
  * Author: Stanimir Varbanov <stanimir.varbanov@linaro.org>
  */
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/interconnect.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/types.h>
 #include <media/v4l2-mem2mem.h>
 
 #include "core.h"

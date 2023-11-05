@@ -5,17 +5,17 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/hrtimer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/perf_event.h>
+#include <freax/slab.h>
 
 #include "common.h"
 

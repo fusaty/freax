@@ -7,9 +7,9 @@
 #ifndef __I915_PMU_H__
 #define __I915_PMU_H__
 
-#include <linux/hrtimer.h>
-#include <linux/perf_event.h>
-#include <linux/spinlock_types.h>
+#include <freax/hrtimer.h>
+#include <freax/perf_event.h>
+#include <freax/spinlock_types.h>
 #include <uapi/drm/i915_drm.h>
 
 struct drm_i915_private;

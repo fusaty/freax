@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "i915_drv.h"
 #include "i915_irq.h"

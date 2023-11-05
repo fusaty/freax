@@ -5,7 +5,7 @@
 # as published by the Free Software Foundation; either version
 # 2 of the License, or (at your option) any later version.
 
-# This script checks the head of a vmlinux for linker stubs that
+# This script checks the head of a vmfreax for linker stubs that
 # break our placement of fixed-location code for 64-bit.
 
 # based on relocs_check.pl
@@ -17,7 +17,7 @@
 # nearby, is branching to labels it can't reach directly, which results in the
 # linker inserting branch stubs. This can move code around in ways that break
 # the fixed section calculations (head-64.h). To debug this, disassemble the
-# vmlinux and look for branch stubs (long_branch, plt_branch, etc.) in the
+# vmfreax and look for branch stubs (long_branch, plt_branch, etc.) in the
 # fixed section region (0 - 0x8000ish). Check what code is calling those stubs,
 # and perhaps change so a direct branch can reach.
 #
@@ -37,16 +37,16 @@ if [ "$V" = "1" ]; then
 fi
 
 if [ $# -lt 2 ]; then
-	echo "$0 [path to nm] [path to vmlinux]" 1>&2
+	echo "$0 [path to nm] [path to vmfreax]" 1>&2
 	exit 1
 fi
 
 # Have Kbuild supply the path to nm so we handle cross compilation.
 nm="$1"
-vmlinux="$2"
+vmfreax="$2"
 
 # gcc-4.6-era toolchain make _stext an A (absolute) symbol rather than T
-$nm "$vmlinux" | grep -e " [TA] _stext$" -e " t start_first_256B$" -e " a text_start$" -e " t start_text$" > .tmp_symbols.txt
+$nm "$vmfreax" | grep -e " [TA] _stext$" -e " t start_first_256B$" -e " a text_start$" -e " t start_text$" > .tmp_symbols.txt
 
 
 vma=$(grep -e " [TA] _stext$" .tmp_symbols.txt | cut -d' ' -f1)

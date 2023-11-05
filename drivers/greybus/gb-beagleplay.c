@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Beagleplay Linux Driver for Greybus
+ * Beagleplay freax Driver for Greybus
  *
  * Copyright (c) 2023 Ayush Singh <ayushdevel1325@gmail.com>
  * Copyright (c) 2023 BeagleBoard.org Foundation
  */
 
-#include <linux/gfp.h>
-#include <linux/greybus.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/printk.h>
-#include <linux/serdev.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/greybus/hd.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/crc-ccitt.h>
-#include <linux/circ_buf.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/gfp.h>
+#include <freax/greybus.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/printk.h>
+#include <freax/serdev.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/greybus/hd.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/crc-ccitt.h>
+#include <freax/circ_buf.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #define RX_HDLC_PAYLOAD 256
 #define CRC_LEN 2

@@ -6,12 +6,12 @@
  * Ramalingam C <ramalingam.c@intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
 
 #include <drm/display/drm_hdcp_helper.h>
 #include <drm/drm_sysfs.h>

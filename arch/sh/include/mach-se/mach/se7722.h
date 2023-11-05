@@ -3,13 +3,13 @@
 #define __ASM_SH_SE7722_H
 
 /*
- * linux/include/asm-sh/se7722.h
+ * freax/include/asm-sh/se7722.h
  *
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7722 Support.
  */
-#include <linux/sh_intc.h>
+#include <freax/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* Box specific addresses.  */

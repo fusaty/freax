@@ -8,18 +8,18 @@
  * hardware.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 /* All information about the connected logic modules are in here */
 #define INTEGRATOR_SC_DEC_OFFSET	0x10

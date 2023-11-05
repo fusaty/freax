@@ -90,7 +90,7 @@ PHDRS
 
 VERSION
 {
-	LINUX_2.6 {
+	freax_2.6 {
 #ifndef CONFIG_MIPS_DISABLE_VDSO
 	global:
 		__vdso_clock_gettime;

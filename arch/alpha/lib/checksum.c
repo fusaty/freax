@@ -10,8 +10,8 @@
  *	Rick Gorton	<rick.gorton@alpha-processor.com>
  */
  
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/string.h>
 
 #include <asm/byteorder.h>
 

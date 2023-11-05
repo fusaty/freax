@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_MMC_SPI_H
-#define __LINUX_SPI_MMC_SPI_H
+#ifndef __freax_SPI_MMC_SPI_H
+#define __freax_SPI_MMC_SPI_H
 
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
+#include <freax/spi/spi.h>
+#include <freax/interrupt.h>
 
 struct device;
 struct mmc_host;
@@ -38,4 +38,4 @@ struct mmc_spi_platform_data {
 extern struct mmc_spi_platform_data *mmc_spi_get_pdata(struct spi_device *spi);
 extern void mmc_spi_put_pdata(struct spi_device *spi);
 
-#endif /* __LINUX_SPI_MMC_SPI_H */
+#endif /* __freax_SPI_MMC_SPI_H */

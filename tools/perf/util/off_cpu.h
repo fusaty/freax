@@ -1,7 +1,7 @@
 #ifndef PERF_UTIL_OFF_CPU_H
 #define PERF_UTIL_OFF_CPU_H
 
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 
 struct evlist;
 struct target;

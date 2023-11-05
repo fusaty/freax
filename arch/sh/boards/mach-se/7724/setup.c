@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7724/setup.c
+ * freax/arch/sh/boards/se/7724/setup.c
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
@@ -13,26 +13,26 @@
 
 #include <cpu/sh7724.h>
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/smc91x.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sh_keysc.h>
+#include <freax/interrupt.h>
+#include <freax/memblock.h>
+#include <freax/mfd/tmio.h>
+#include <freax/mmc/host.h>
+#include <freax/mtd/physmap.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/sh_eth.h>
+#include <freax/sh_intc.h>
+#include <freax/smc91x.h>
+#include <freax/usb/r8a66597.h>
+#include <freax/videodev2.h>
+#include <freax/dma-map-ops.h>
 
 #include <mach-se/mach/se7724.h>
 #include <media/drv-intf/renesas-ceu.h>

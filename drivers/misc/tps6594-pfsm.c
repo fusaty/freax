@@ -5,18 +5,18 @@
  * Copyright (C) 2023 BayLibre Incorporated - https://www.baylibre.com/
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/tps6594.h>
+#include <freax/mfd/tps6594.h>
 
-#include <linux/tps6594_pfsm.h>
+#include <freax/tps6594_pfsm.h>
 
 #define TPS6594_STARTUP_DEST_MCU_ONLY_VAL 2
 #define TPS6594_STARTUP_DEST_ACTIVE_VAL   3

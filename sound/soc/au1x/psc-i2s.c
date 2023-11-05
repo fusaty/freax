@@ -10,10 +10,10 @@
  * NOTE: so far only PSC slave mode (bit- and frameclock) is supported.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

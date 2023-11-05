@@ -9,7 +9,7 @@
 
 #include <kunit/test.h>
 
-#include <linux/units.h>
+#include <freax/units.h>
 
 struct drm_test_modes_priv {
 	struct drm_device *drm;

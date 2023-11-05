@@ -13,15 +13,15 @@
 #ifndef _BTTVP_H_
 #define _BTTVP_H_
 
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/pci.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/pci.h>
+#include <freax/input.h>
+#include <freax/mutex.h>
+#include <freax/scatterlist.h>
+#include <freax/device.h>
 #include <asm/io.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
@@ -98,7 +98,7 @@ struct bttv_tvnorm {
 extern const struct bttv_tvnorm bttv_tvnorms[];
 
 struct bttv_format {
-	int  fourcc;          /* video4linux 2      */
+	int  fourcc;          /* video4freax 2      */
 	int  btformat;        /* BT848_COLOR_FMT_*  */
 	int  btswap;          /* BT848_COLOR_CTL_*  */
 	int  depth;           /* bit/pixel          */
@@ -348,7 +348,7 @@ struct bttv {
 	struct v4l2_subdev	  *sd_tvaudio;
 	struct v4l2_subdev	  *sd_tda7432;
 
-	/* video4linux (1) */
+	/* video4freax (1) */
 	struct video_device video_dev;
 	struct video_device radio_dev;
 	struct video_device vbi_dev;

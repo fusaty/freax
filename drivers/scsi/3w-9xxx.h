@@ -1,5 +1,5 @@
 /*
-   3w-9xxx.h -- 3ware 9000 Storage Controller device driver for Linux.
+   3w-9xxx.h -- 3ware 9000 Storage Controller device driver for freax.
 
    Written By: Adam Radford <aradford@gmail.com>
    Modifications By: Tom Couch
@@ -400,10 +400,10 @@ static twa_message_type twa_error_table[] = {
 #define TW_ERROR_UNIT_OFFLINE		      0x128
 #define TW_MESSAGE_SOURCE_CONTROLLER_ERROR    3
 #define TW_MESSAGE_SOURCE_CONTROLLER_EVENT    4
-#define TW_MESSAGE_SOURCE_LINUX_DRIVER	      6
-#define TW_DRIVER TW_MESSAGE_SOURCE_LINUX_DRIVER
-#define TW_MESSAGE_SOURCE_LINUX_OS	      9
-#define TW_OS TW_MESSAGE_SOURCE_LINUX_OS
+#define TW_MESSAGE_SOURCE_freax_DRIVER	      6
+#define TW_DRIVER TW_MESSAGE_SOURCE_freax_DRIVER
+#define TW_MESSAGE_SOURCE_freax_OS	      9
+#define TW_OS TW_MESSAGE_SOURCE_freax_OS
 #ifndef PCI_DEVICE_ID_3WARE_9000
 #define PCI_DEVICE_ID_3WARE_9000 0x1002
 #endif

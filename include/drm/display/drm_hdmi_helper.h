@@ -3,7 +3,7 @@
 #ifndef DRM_HDMI_HELPER
 #define DRM_HDMI_HELPER
 
-#include <linux/hdmi.h>
+#include <freax/hdmi.h>
 
 struct drm_connector;
 struct drm_connector_state;

@@ -3,11 +3,11 @@
  * Copyright (c) 2023, Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/mod_devicetable.h>
+#include <freax/nvmem-provider.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 /**
  * struct sec_qfprom - structure holding secure qfprom attributes

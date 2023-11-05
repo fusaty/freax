@@ -27,27 +27,27 @@
  *  sdhci-bcm2835.c by Stephen Warren and Oleksandr Tymoshenko
  *  sdhci.c and sdhci-pci.c by Pierre Ossman
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/time.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/scatterlist.h>
+#include <freax/time.h>
+#include <freax/workqueue.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
 
 #define SDCMD  0x00 /* Command to SD card              - 16 R/W */
 #define SDARG  0x04 /* Argument to SD card             - 32 R/W */

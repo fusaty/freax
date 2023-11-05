@@ -2,11 +2,11 @@
 
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/efi.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/efi.h>
+#include <freax/libfdt.h>
+#include <freax/of_fdt.h>
 
 #include <asm/unaligned.h>
 
@@ -48,11 +48,11 @@ static __initconst const struct {
 #endif
 		.path = "/chosen",
 		.params = {	//  <-----------26----------->
-			[SYSTAB] = "linux,uefi-system-table",
-			[MMBASE] = "linux,uefi-mmap-start",
-			[MMSIZE] = "linux,uefi-mmap-size",
-			[DCSIZE] = "linux,uefi-mmap-desc-size",
-			[DCVERS] = "linux,uefi-mmap-desc-ver",
+			[SYSTAB] = "freax,uefi-system-table",
+			[MMBASE] = "freax,uefi-mmap-start",
+			[MMSIZE] = "freax,uefi-mmap-size",
+			[DCSIZE] = "freax,uefi-mmap-desc-size",
+			[DCVERS] = "freax,uefi-mmap-desc-ver",
 		}
 	}
 };

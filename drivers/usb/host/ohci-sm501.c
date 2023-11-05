@@ -12,12 +12,12 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/sm501.h>
+#include <freax/sm501-regs.h>
 
 static int ohci_sm501_init(struct usb_hcd *hcd)
 {

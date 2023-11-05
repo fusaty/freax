@@ -7,17 +7,17 @@
  * Copyright © 2000-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/kmod.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/kmod.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 #include "mtdcore.h"
 

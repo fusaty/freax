@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VHOST_IOTLB_H
-#define _LINUX_VHOST_IOTLB_H
+#ifndef _freax_VHOST_IOTLB_H
+#define _freax_VHOST_IOTLB_H
 
-#include <linux/interval_tree_generic.h>
+#include <freax/interval_tree_generic.h>
 
 struct vhost_iotlb_map {
 	struct rb_node rb;

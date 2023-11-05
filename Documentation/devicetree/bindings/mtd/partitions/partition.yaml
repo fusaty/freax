@@ -52,7 +52,7 @@ properties:
       immune to paired-pages corruptions
     type: boolean
 
-  linux,rootfs:
+  freax,rootfs:
     description: Marks partition that contains root filesystem to mount and boot
       user space from
     type: boolean

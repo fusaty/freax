@@ -4,24 +4,24 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/irq.h>
-#include <linux/lcm.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/imu/adis.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/irq.h>
+#include <freax/lcm.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
 
 #define ADIS16475_REG_DIAG_STAT		0x02
 #define ADIS16475_REG_X_GYRO_L		0x04

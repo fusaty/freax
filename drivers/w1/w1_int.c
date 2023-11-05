@@ -3,14 +3,14 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/export.h>
+#include <freax/moduleparam.h>
 
 #include "w1_internal.h"
 #include "w1_netlink.h"

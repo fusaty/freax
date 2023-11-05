@@ -9,14 +9,14 @@
  * battery charging and regulator control, firmware update.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 
 #include "cros_ec.h"
 

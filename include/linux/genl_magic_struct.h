@@ -14,9 +14,9 @@
 # error "you need to define GENL_MAGIC_INCLUDE_FILE before inclusion"
 #endif
 
-#include <linux/args.h>
-#include <linux/genetlink.h>
-#include <linux/types.h>
+#include <freax/args.h>
+#include <freax/genetlink.h>
+#include <freax/types.h>
 
 extern int CONCATENATE(GENL_MAGIC_FAMILY, _genl_register)(void);
 extern void CONCATENATE(GENL_MAGIC_FAMILY, _genl_unregister)(void);

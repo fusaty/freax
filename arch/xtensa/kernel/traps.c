@@ -23,24 +23,24 @@
  * for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/kallsyms.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/ratelimit.h>
-#include <linux/pgtable.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/stringify.h>
+#include <freax/kallsyms.h>
+#include <freax/delay.h>
+#include <freax/hardirq.h>
+#include <freax/ratelimit.h>
+#include <freax/pgtable.h>
 
 #include <asm/stacktrace.h>
 #include <asm/ptrace.h>
 #include <asm/timex.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
 #include <asm/traps.h>
 #include <asm/hw_breakpoint.h>

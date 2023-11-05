@@ -6,17 +6,17 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define AD5764_REG_SF_NOP			0x0
 #define AD5764_REG_SF_CONFIG			0x1

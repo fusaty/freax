@@ -5,17 +5,17 @@
  * Copyright (C) 2019 Marek Behún <kabel@kernel.org>
  */
 
-#include <linux/armada-37xx-rwtm-mailbox.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/hw_random.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/armada-37xx-rwtm-mailbox.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/dma-mapping.h>
+#include <freax/hw_random.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define DRIVER_NAME		"turris-mox-rwtm"
 

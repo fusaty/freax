@@ -3,10 +3,10 @@
  * Copyright 2009-2010 Pengutronix
  * Uwe Kleine-Koenig <u.kleine-koenig@pengutronix.de>
  */
-#ifndef __LINUX_MFD_MC13XXX_H
-#define __LINUX_MFD_MC13XXX_H
+#ifndef __freax_MFD_MC13XXX_H
+#define __freax_MFD_MC13XXX_H
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 struct mc13xxx;
 
@@ -259,4 +259,4 @@ struct mc13xxx_platform_data {
 					MC13XXX_ADC0_CHRGICON | \
 					MC13XXX_ADC0_BATICON)
 
-#endif /* ifndef __LINUX_MFD_MC13XXX_H */
+#endif /* ifndef __freax_MFD_MC13XXX_H */

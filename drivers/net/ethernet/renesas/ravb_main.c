@@ -8,27 +8,27 @@
  * Based on the SuperH Ethernet driver
  */
 
-#include <linux/cache.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/reset.h>
-#include <linux/math64.h>
+#include <freax/cache.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/net_tstamp.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/reset.h>
+#include <freax/math64.h>
 
 #include "ravb.h"
 

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_TC_DEF_H
-#define __LINUX_TC_DEF_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_TC_DEF_H
+#define __freax_TC_DEF_H
 
-#include <linux/pkt_cls.h>
+#include <freax/pkt_cls.h>
 
 struct tc_defact {
 	tc_gen;

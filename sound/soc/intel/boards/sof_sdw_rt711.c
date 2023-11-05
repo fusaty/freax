@@ -5,11 +5,11 @@
  *  sof_sdw_rt711 - Helpers to handle RT711 from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
 #include <sound/control.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

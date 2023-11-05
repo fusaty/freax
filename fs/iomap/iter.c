@@ -3,8 +3,8 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (c) 2016-2021 Christoph Hellwig.
  */
-#include <linux/fs.h>
-#include <linux/iomap.h>
+#include <freax/fs.h>
+#include <freax/iomap.h>
 #include "trace.h"
 
 /*

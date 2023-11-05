@@ -6,11 +6,11 @@
  * pSeries specific routines for PCI.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/string.h>
 
 #include <asm/eeh.h>
 #include <asm/pci-bridge.h>

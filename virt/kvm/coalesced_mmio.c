@@ -11,9 +11,9 @@
 
 #include <kvm/iodev.h>
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/slab.h>
+#include <freax/kvm.h>
 
 #include "coalesced_mmio.h"
 

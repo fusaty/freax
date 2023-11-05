@@ -3,9 +3,9 @@
  * Copyright 2019 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/usb.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_atomic_state_helper.h>

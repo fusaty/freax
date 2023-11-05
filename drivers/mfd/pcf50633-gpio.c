@@ -9,12 +9,12 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/gpio.h>
-#include <linux/mfd/pcf50633/pmic.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/gpio.h>
+#include <freax/mfd/pcf50633/pmic.h>
 
 static const u8 pcf50633_regulator_registers[PCF50633_NUM_REGULATORS] = {
 	[PCF50633_REGULATOR_AUTO]	= PCF50633_REG_AUTOOUT,

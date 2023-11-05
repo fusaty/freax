@@ -8,7 +8,7 @@ The FS-Cache system provides an API by which actual caches can be supplied to
 FS-Cache for it to then serve out to network filesystems and other interested
 parties.  This API is used by::
 
-	#include <linux/fscache-cache.h>.
+	#include <freax/fscache-cache.h>.
 
 
 Overview
@@ -476,4 +476,4 @@ FS-Cache provides some utilities that a cache backend may make use of:
 API Function Reference
 ======================
 
-.. kernel-doc:: include/linux/fscache-cache.h
+.. kernel-doc:: include/freax/fscache-cache.h

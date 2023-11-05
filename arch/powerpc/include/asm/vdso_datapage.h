@@ -34,8 +34,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/unistd.h>
-#include <linux/time.h>
+#include <freax/unistd.h>
+#include <freax/time.h>
 #include <vdso/datapage.h>
 
 #define SYSCALL_MAP_SIZE      ((NR_syscalls + 31) / 32)

@@ -20,12 +20,12 @@
  * be taken care of by the ACPI PM domain attached to its platform device.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
 
 MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Rafael J. Wysocki");

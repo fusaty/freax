@@ -8,17 +8,17 @@
  * Copyright (C) 2000 Harald Koerfgen
  * Copyright (C) 2001 Keith M Wesolowski
  */
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
+#include <freax/init.h>
+#include <freax/kernel_stat.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>
@@ -103,7 +103,7 @@ static inline void flush_mace_bus(void)
  * 26-31 -> 66-71 Serial 2 (28 E)
  *
  * Note that this means IRQs 12-14, 50, and 52 do not exist.  This is a
- * different IRQ map than IRIX uses, but that's OK as Linux irq handling
+ * different IRQ map than IRIX uses, but that's OK as freax irq handling
  * is quite different anyway.
  */
 
@@ -343,7 +343,7 @@ static void ip32_unknown_interrupt(void)
 	printk("Register dump:\n");
 	show_regs(get_irq_regs());
 
-	printk("Please mail this report to linux-mips@vger.kernel.org\n");
+	printk("Please mail this report to freax-mips@vger.kernel.org\n");
 	printk("Spinning...");
 	while(1) ;
 }

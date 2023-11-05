@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * g_uvc.h  --  USB Video Class Gadget driver API
  *
  * Copyright (C) 2009-2010 Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#ifndef __LINUX_USB_G_UVC_H
-#define __LINUX_USB_G_UVC_H
+#ifndef __freax_USB_G_UVC_H
+#define __freax_USB_G_UVC_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
+#include <freax/usb/ch9.h>
 
 #define UVC_EVENT_FIRST			(V4L2_EVENT_PRIVATE_START + 0)
 #define UVC_EVENT_CONNECT		(V4L2_EVENT_PRIVATE_START + 0)
@@ -39,4 +39,4 @@ struct uvc_event {
 
 #define UVCIOC_SEND_RESPONSE		_IOW('U', 1, struct uvc_request_data)
 
-#endif /* __LINUX_USB_G_UVC_H */
+#endif /* __freax_USB_G_UVC_H */

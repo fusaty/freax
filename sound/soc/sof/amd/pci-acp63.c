@@ -11,9 +11,9 @@
  * PCI interface for ACP6.3 device
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 #include <sound/sof.h>
 #include <sound/soc-acpi.h>
 

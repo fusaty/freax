@@ -5,15 +5,15 @@
  * Parts of this file were based on sources as follows:
  *
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@freax.ie>
  * Copyright (C) 2011 Texas Instruments
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/media-bus-format.h>
-#include <linux/of_graph.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-buf.h>
+#include <freax/media-bus-format.h>
+#include <freax/of_graph.h>
 
 #include <drm/drm_fb_dma_helper.h>
 #include <drm/drm_fourcc.h>

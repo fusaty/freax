@@ -21,28 +21,28 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/spinlock.h>
+#include <freax/moduleparam.h>
 
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/bitops.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/bitops.h>
 #include <asm/io.h>
 
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

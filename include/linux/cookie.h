@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_COOKIE_H
-#define __LINUX_COOKIE_H
+#ifndef __freax_COOKIE_H
+#define __freax_COOKIE_H
 
-#include <linux/atomic.h>
-#include <linux/percpu.h>
+#include <freax/atomic.h>
+#include <freax/percpu.h>
 #include <asm/local.h>
 
 struct pcpu_gen_cookie {
@@ -48,4 +48,4 @@ static __always_inline u64 gen_cookie_next(struct gen_cookie *gc)
 	return val;
 }
 
-#endif /* __LINUX_COOKIE_H */
+#endif /* __freax_COOKIE_H */

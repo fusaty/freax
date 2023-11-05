@@ -6,11 +6,11 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include <asm/cpufeature.h>
 #include <asm/mmu_context.h>

@@ -10,11 +10,11 @@
  * accessed as the contents of the appropriate read only files in the
  * sysfs directory tree.
  */
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
 
 #define ACPI_ATTR_NAME_LEN 4
 

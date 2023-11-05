@@ -52,45 +52,45 @@
  *	Based upon Swansea University Computer Society NET3.039
  */
 
-#include <linux/bpf-cgroup.h>
-#include <linux/ethtool.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/splice.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/thread_info.h>
-#include <linux/rcupdate.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/ptp_classify.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/kmod.h>
-#include <linux/audit.h>
-#include <linux/wireless.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/nospec.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/io_uring.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/ethtool.h>
+#include <freax/mm.h>
+#include <freax/socket.h>
+#include <freax/file.h>
+#include <freax/splice.h>
+#include <freax/net.h>
+#include <freax/interrupt.h>
+#include <freax/thread_info.h>
+#include <freax/rcupdate.h>
+#include <freax/netdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/mutex.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/ptp_classify.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/cache.h>
+#include <freax/module.h>
+#include <freax/highmem.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/compat.h>
+#include <freax/kmod.h>
+#include <freax/audit.h>
+#include <freax/wireless.h>
+#include <freax/nsproxy.h>
+#include <freax/magic.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
+#include <freax/nospec.h>
+#include <freax/indirect_call_wrapper.h>
+#include <freax/io_uring.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 
 #include <net/compat.h>
@@ -98,16 +98,16 @@
 #include <net/cls_cgroup.h>
 
 #include <net/sock.h>
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
-#include <linux/if_tun.h>
-#include <linux/ipv6_route.h>
-#include <linux/route.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
+#include <freax/if_tun.h>
+#include <freax/ipv6_route.h>
+#include <freax/route.h>
+#include <freax/termios.h>
+#include <freax/sockios.h>
 #include <net/busy_poll.h>
-#include <linux/errqueue.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/errqueue.h>
+#include <freax/ptp_clock_kernel.h>
 #include <trace/events/sock.h>
 
 #ifdef CONFIG_NET_RX_BUSY_POLL
@@ -2681,7 +2681,7 @@ SYSCALL_DEFINE3(sendmsg, int, fd, struct user_msghdr __user *, msg, unsigned int
 }
 
 /*
- *	Linux sendmmsg interface
+ *	freax sendmmsg interface
  */
 
 int __sys_sendmmsg(int fd, struct mmsghdr __user *mmsg, unsigned int vlen,
@@ -2890,7 +2890,7 @@ SYSCALL_DEFINE3(recvmsg, int, fd, struct user_msghdr __user *, msg,
 }
 
 /*
- *     Linux recvmmsg interface
+ *     freax recvmmsg interface
  */
 
 static int do_recvmmsg(int fd, struct mmsghdr __user *mmsg,

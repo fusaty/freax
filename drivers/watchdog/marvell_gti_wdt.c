@@ -4,13 +4,13 @@
  * Copyright (C) 2023 Marvell.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 /*
  * Hardware supports following mode of operation:

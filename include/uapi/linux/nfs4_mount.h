@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_NFS4_MOUNT_H
-#define _LINUX_NFS4_MOUNT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_NFS4_MOUNT_H
+#define _freax_NFS4_MOUNT_H
 
 /*
- *  linux/include/linux/nfs4_mount.h
+ *  freax/include/freax/nfs4_mount.h
  *
  *  Copyright (C) 2002  Trond Myklebust
  *
@@ -58,7 +58,7 @@ struct nfs4_mount_data {
 
 /* bits in the flags field */
 /* Note: the fields that correspond to existing NFSv2/v3 mount options
- * 	 should mirror the values from include/linux/nfs_mount.h
+ * 	 should mirror the values from include/freax/nfs_mount.h
  */
 
 #define NFS4_MOUNT_SOFT		0x0001	/* 1 */

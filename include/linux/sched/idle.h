@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_IDLE_H
-#define _LINUX_SCHED_IDLE_H
+#ifndef _freax_SCHED_IDLE_H
+#define _freax_SCHED_IDLE_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 enum cpu_idle_type {
 	CPU_IDLE,
@@ -108,4 +108,4 @@ static __always_inline void current_clr_polling(void)
 	preempt_fold_need_resched();
 }
 
-#endif /* _LINUX_SCHED_IDLE_H */
+#endif /* _freax_SCHED_IDLE_H */

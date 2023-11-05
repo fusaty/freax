@@ -6,13 +6,13 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/types.h>
 #include <sound/cs42l43.h>
 #include <sound/pcm.h>
 #include <sound/soc-jack.h>

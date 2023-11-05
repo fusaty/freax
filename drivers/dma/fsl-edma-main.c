@@ -9,15 +9,15 @@
  * Vybrid and Layerscape SoCs.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/property.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/property.h>
 
 #include "fsl-edma-common.h"
 

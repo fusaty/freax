@@ -6,11 +6,11 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
 
 #include <asm/cell-regs.h>
 #include <asm/firmware.h>
@@ -89,7 +89,7 @@ struct mem_region {
  *
  * ps3 addresses
  * virt_addr: a cpu 'translated' effective address
- * phys_addr: an address in what Linux thinks is the physical address space
+ * phys_addr: an address in what freax thinks is the physical address space
  * lpar_addr: an address in the HV virtual address space
  * bus_addr: an io controller 'translated' address on a device bus
  */
@@ -118,8 +118,8 @@ static void __maybe_unused _debug_dump_map(const struct map *m,
 static struct map map;
 
 /**
- * ps3_mm_phys_to_lpar - translate a linux physical address to lpar address
- * @phys_addr: linux physical address
+ * ps3_mm_phys_to_lpar - translate a freax physical address to lpar address
+ * @phys_addr: freax physical address
  */
 
 unsigned long ps3_mm_phys_to_lpar(unsigned long phys_addr)

@@ -46,19 +46,19 @@
  * 32-bit lspn and page eor.
  */
 
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/buffer_head.h>		/* for sync_blockdev() */
-#include <linux/bio.h>
-#include <linux/freezer.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/completion.h>
+#include <freax/kthread.h>
+#include <freax/buffer_head.h>		/* for sync_blockdev() */
+#include <freax/bio.h>
+#include <freax/freezer.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 #include "jfs_incore.h"
 #include "jfs_filsys.h"
 #include "jfs_metapage.h"

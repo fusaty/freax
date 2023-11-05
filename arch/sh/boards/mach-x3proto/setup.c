@@ -6,18 +6,18 @@
  *
  * Copyright (C) 2007 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/smc91x.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/m66592.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio_keys.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/smc91x.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/usb/r8a66597.h>
+#include <freax/usb/m66592.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio_keys.h>
 #include <mach/ilsel.h>
 #include <mach/hardware.h>
 #include <asm/smp-ops.h>

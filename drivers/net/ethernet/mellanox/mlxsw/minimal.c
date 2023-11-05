@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2016-2019 Mellanox Technologies. All rights reserved */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/types.h>
 
 #include "core.h"
 #include "core_env.h"

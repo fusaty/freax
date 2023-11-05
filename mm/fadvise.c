@@ -8,16 +8,16 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/fadvise.h>
-#include <linux/writeback.h>
-#include <linux/syscalls.h>
-#include <linux/swap.h>
+#include <freax/kernel.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/backing-dev.h>
+#include <freax/fadvise.h>
+#include <freax/writeback.h>
+#include <freax/syscalls.h>
+#include <freax/swap.h>
 
 #include <asm/unistd.h>
 

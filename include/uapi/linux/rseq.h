@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_RSEQ_H
-#define _UAPI_LINUX_RSEQ_H
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
+#ifndef _UAPI_freax_RSEQ_H
+#define _UAPI_freax_RSEQ_H
 
 /*
- * linux/rseq.h
+ * freax/rseq.h
  *
  * Restartable sequences system call API
  *
  * Copyright (c) 2015-2018 Mathieu Desnoyers <mathieu.desnoyers@efficios.com>
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 enum rseq_cpu_id_state {
@@ -154,4 +154,4 @@ struct rseq {
 	char end[];
 } __attribute__((aligned(4 * sizeof(__u64))));
 
-#endif /* _UAPI_LINUX_RSEQ_H */
+#endif /* _UAPI_freax_RSEQ_H */

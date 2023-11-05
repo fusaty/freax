@@ -3,16 +3,16 @@
  * arch/powerpc/platforms/embedded6xx/gamecube.c
  *
  * Nintendo GameCube board-specific support
- * Copyright (C) 2004-2009 The GameCube Linux Team
+ * Copyright (C) 2004-2009 The GameCube freax Team
  * Copyright (C) 2007,2008,2009 Albert Herranz
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/kexec.h>
+#include <freax/seq_file.h>
+#include <freax/of_platform.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

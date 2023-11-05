@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt)     "opal-psr: " fmt
 
-#include <linux/of.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <freax/of.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
 
 #include <asm/opal.h>
 

@@ -5,8 +5,8 @@
  * Copyright: 2011 Raumfeld GmbH
  * Author: Johannes Stezenbach <js@sig21.net>
  */
-#ifndef __LINUX_SND__STA32X_H
-#define __LINUX_SND__STA32X_H
+#ifndef __freax_SND__STA32X_H
+#define __freax_SND__STA32X_H
 
 #define STA32X_OCFG_2CH		0
 #define STA32X_OCFG_2_1CH	1
@@ -36,4 +36,4 @@ struct sta32x_platform_data {
 	unsigned int invalid_input_detect_mute:1;
 };
 
-#endif /* __LINUX_SND__STA32X_H */
+#endif /* __freax_SND__STA32X_H */

@@ -5,10 +5,10 @@
  *	   Lorenzo Bianconi <lorenzo@kernel.org>
  *	   Sean Wang <sean.wang@mediatek.com>
  */
-#include <linux/kernel.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/module.h>
+#include <freax/iopoll.h>
 
 #include "../sdio.h"
 #include "mt7615.h"

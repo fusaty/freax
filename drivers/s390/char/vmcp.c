@@ -12,17 +12,17 @@
  * The idea of this driver is based on cpint from Neale Ferguson and #CP in CMS
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/cma.h>
-#include <linux/mm.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/compat.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/cma.h>
+#include <freax/mm.h>
 #include <asm/cpcmd.h>
 #include <asm/debug.h>
 #include <asm/vmcp.h>
@@ -187,7 +187,7 @@ vmcp_write(struct file *file, const char __user *buff, size_t count,
 
 /*
  * These ioctls are available, as the semantics of the diagnose 8 call
- * does not fit very well into a Linux call. Diagnose X'08' is described in
+ * does not fit very well into a freax call. Diagnose X'08' is described in
  * CP Programming Services SC24-6084-00
  *
  * VMCP_GETCODE: gives the CP return code back to user space

@@ -3,8 +3,8 @@
  * Copyright © 2017-2018 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/string_helpers.h>
+#include <freax/prime_numbers.h>
+#include <freax/string_helpers.h>
 
 #include "intel_context.h"
 #include "intel_engine_heartbeat.h"

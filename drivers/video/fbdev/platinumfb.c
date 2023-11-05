@@ -19,20 +19,20 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/nvram.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 #include "macmodes.h"
 #include "platinumfb.h"

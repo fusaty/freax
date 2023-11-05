@@ -6,11 +6,11 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "mb86a16.h"

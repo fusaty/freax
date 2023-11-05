@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2014 Christoph Hellwig.
  */
-#include <linux/blkdev.h>
-#include <linux/kmod.h>
-#include <linux/file.h>
-#include <linux/jhash.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/addr.h>
+#include <freax/blkdev.h>
+#include <freax/kmod.h>
+#include <freax/file.h>
+#include <freax/jhash.h>
+#include <freax/sched.h>
+#include <freax/sunrpc/addr.h>
 
 #include "pnfs.h"
 #include "netns.h"
@@ -612,7 +612,7 @@ nfsd4_cb_layout_fail(struct nfs4_layout_stateid *ls)
 	static char const nfsd_recall_failed[] = "/sbin/nfsd-recall-failed";
 	static char *envp[] = {
 		"HOME=/",
-		"TERM=linux",
+		"TERM=freax",
 		"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 		NULL
 	};

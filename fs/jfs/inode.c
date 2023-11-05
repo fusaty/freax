@@ -4,13 +4,13 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
-#include <linux/mpage.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/uio.h>
-#include <linux/writeback.h>
+#include <freax/fs.h>
+#include <freax/mpage.h>
+#include <freax/buffer_head.h>
+#include <freax/pagemap.h>
+#include <freax/quotaops.h>
+#include <freax/uio.h>
+#include <freax/writeback.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_filsys.h"

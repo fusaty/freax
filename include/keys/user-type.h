@@ -8,8 +8,8 @@
 #ifndef _KEYS_USER_TYPE_H
 #define _KEYS_USER_TYPE_H
 
-#include <linux/key.h>
-#include <linux/rcupdate.h>
+#include <freax/key.h>
+#include <freax/rcupdate.h>
 
 #ifdef CONFIG_KEYS
 

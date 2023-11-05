@@ -3,18 +3,18 @@
  * Copyright (c) 2021 MediaTek Inc.
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/linear_range.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <freax/devm-helpers.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/linear_range.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
 
 #define MT6360_PMU_CHG_CTRL1	0x311
 #define MT6360_PMU_CHG_CTRL2	0x312

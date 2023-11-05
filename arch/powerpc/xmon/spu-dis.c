@@ -7,7 +7,7 @@
 
  */
 
-#include <linux/string.h>
+#include <freax/string.h>
 #include "nonstdio.h"
 #include "ansidecl.h"
 #include "spu.h"

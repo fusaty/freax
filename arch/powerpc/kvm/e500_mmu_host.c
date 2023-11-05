@@ -13,19 +13,19 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
-#include <linux/rwsem.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/highmem.h>
+#include <freax/log2.h>
+#include <freax/uaccess.h>
+#include <freax/sched/mm.h>
+#include <freax/rwsem.h>
+#include <freax/vmalloc.h>
+#include <freax/hugetlb.h>
 #include <asm/kvm_ppc.h>
 #include <asm/pte-walk.h>
 
@@ -362,7 +362,7 @@ static inline int kvmppc_e500_shadow_map(struct kvmppc_vcpu_e500 *vcpu_e500,
 		    (vma->vm_flags & VM_PFNMAP)) {
 			/*
 			 * This VMA is a physically contiguous region (e.g.
-			 * /dev/mem) that bypasses normal Linux page
+			 * /dev/mem) that bypasses normal freax page
 			 * management.  Find the overlap between the
 			 * vma and the memslot.
 			 */
@@ -474,7 +474,7 @@ static inline int kvmppc_e500_shadow_map(struct kvmppc_vcpu_e500 *vcpu_e500,
 	 * can't run hence pfn won't change.
 	 */
 	local_irq_save(flags);
-	ptep = find_linux_pte(pgdir, hva, NULL, NULL);
+	ptep = find_freax_pte(pgdir, hva, NULL, NULL);
 	if (ptep) {
 		pte_t pte = READ_ONCE(*ptep);
 

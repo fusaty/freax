@@ -7,12 +7,12 @@
  * You can do whatever you want with this file.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/crc32.h>
-#include <linux/xz.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/crc32.h>
+#include <freax/xz.h>
 
 /* Maximum supported dictionary size */
 #define DICT_MAX (1 << 20)
@@ -214,7 +214,7 @@ MODULE_VERSION("1.0");
 MODULE_AUTHOR("Lasse Collin <lasse.collin@tukaani.org>");
 
 /*
- * This code is in the public domain, but in Linux it's simplest to just
+ * This code is in the public domain, but in freax it's simplest to just
  * say it's GPL and consider the authors as the copyright holders.
  */
 MODULE_LICENSE("GPL");

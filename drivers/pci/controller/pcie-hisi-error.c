@@ -6,14 +6,14 @@
  * Copyright (c) 2020 HiSilicon Limited.
  */
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include <acpi/ghes.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/kfifo.h>
+#include <freax/spinlock.h>
 
 /* HISI PCIe controller error definitions */
 #define HISI_PCIE_ERR_MISC_REGS	33

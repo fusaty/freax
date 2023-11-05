@@ -5,12 +5,12 @@
  * Copyright © 2001-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
-#include <linux/major.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/module.h>
+#include <freax/major.h>
 
 static int mtdblock_readsect(struct mtd_blktrans_dev *dev,
 			      unsigned long block, char *buf)

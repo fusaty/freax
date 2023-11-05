@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-sa1100/ssp.c
+ *  freax/arch/arm/mach-sa1100/ssp.c
  *
  *  Copyright (C) 2003 Russell King.
  *
  *  Generic SSP driver.  This provides the generic core for simple
  *  IO-based SSP applications.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 #include <mach/hardware.h>
 #include <mach/irqs.h>

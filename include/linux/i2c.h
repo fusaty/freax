@@ -1,27 +1,27 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * i2c.h - definitions for the Linux i2c bus interface
+ * i2c.h - definitions for the freax i2c bus interface
  * Copyright (C) 1995-2000 Simon G. Vogl
  * Copyright (C) 2013-2019 Wolfram Sang <wsa@kernel.org>
  *
  * With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi> and
  * Frodo Looijaard <frodol@dds.nl>
  */
-#ifndef _LINUX_I2C_H
-#define _LINUX_I2C_H
+#ifndef _freax_I2C_H
+#define _freax_I2C_H
 
-#include <linux/acpi.h>		/* for acpi_handle */
-#include <linux/bits.h>
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>	/* for struct device */
-#include <linux/sched.h>	/* for completion */
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/rtmutex.h>
-#include <linux/irqdomain.h>		/* for Host Notify IRQ */
-#include <linux/of.h>		/* for struct device_node */
-#include <linux/swab.h>		/* for swab16 */
-#include <uapi/linux/i2c.h>
+#include <freax/acpi.h>		/* for acpi_handle */
+#include <freax/bits.h>
+#include <freax/mod_devicetable.h>
+#include <freax/device.h>	/* for struct device */
+#include <freax/sched.h>	/* for completion */
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
+#include <freax/rtmutex.h>
+#include <freax/irqdomain.h>		/* for Host Notify IRQ */
+#include <freax/of.h>		/* for struct device_node */
+#include <freax/swab.h>		/* for swab16 */
+#include <uapi/freax/i2c.h>
 
 extern struct bus_type i2c_bus_type;
 extern struct device_type i2c_adapter_type;
@@ -324,7 +324,7 @@ struct i2c_driver {
  *	acquired when probing this device.
  *
  * An i2c_client identifies a single device (i.e. chip) connected to an
- * i2c bus. The behaviour exposed to Linux is defined by the driver
+ * i2c bus. The behaviour exposed to freax is defined by the driver
  * managing the device.
  */
 struct i2c_client {
@@ -1080,4 +1080,4 @@ static inline struct i2c_client *i2c_acpi_new_device(struct device *dev,
 	return i2c_acpi_new_device_by_fwnode(dev_fwnode(dev), index, info);
 }
 
-#endif /* _LINUX_I2C_H */
+#endif /* _freax_I2C_H */

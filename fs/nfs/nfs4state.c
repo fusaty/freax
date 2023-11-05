@@ -38,20 +38,20 @@
  * subsequent patch.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/sched/mm.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/nfs_fs.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/ratelimit.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
+#include <freax/sched/mm.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <freax/sunrpc/clnt.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 85xx linux kernel.
+# Makefile for the PowerPC 85xx freax kernel.
 #
 obj-$(CONFIG_SMP) += smp.o
 ifneq ($(CONFIG_FSL_CORENET_RCPM),y)

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) */
+/* SPDX-License-Identifier: (GPL-2.0 WITH freax-syscall-note) */
 /* Copyright (C) B.A.T.M.A.N. contributors:
  *
  * Marek Lindner, Simon Wunderlich
  */
 
-#ifndef _UAPI_LINUX_BATADV_PACKET_H_
-#define _UAPI_LINUX_BATADV_PACKET_H_
+#ifndef _UAPI_freax_BATADV_PACKET_H_
+#define _UAPI_freax_BATADV_PACKET_H_
 
 #include <asm/byteorder.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
+#include <freax/if_ether.h>
+#include <freax/types.h>
 
 /**
  * batadv_tp_is_error() - Check throughput meter return code for error
@@ -630,4 +630,4 @@ struct batadv_tvlv_mcast_data {
 
 #pragma pack()
 
-#endif /* _UAPI_LINUX_BATADV_PACKET_H_ */
+#endif /* _UAPI_freax_BATADV_PACKET_H_ */

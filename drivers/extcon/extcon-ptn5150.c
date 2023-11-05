@@ -7,17 +7,17 @@
 // Author: Vijai Kumar K <vijaikumar.kanagarajan@gmail.com>
 // Copyright (c) 2020 Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/bitfield.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/usb/role.h>
+#include <freax/bitfield.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/extcon-provider.h>
+#include <freax/gpio/consumer.h>
+#include <freax/usb/role.h>
 
 /* PTN5150 registers */
 #define PTN5150_REG_DEVICE_ID			0x01

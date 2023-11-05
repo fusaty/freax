@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STACKPROTECTOR_H
-#define _LINUX_STACKPROTECTOR_H 1
+#ifndef _freax_STACKPROTECTOR_H
+#define _freax_STACKPROTECTOR_H 1
 
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/random.h>
+#include <freax/compiler.h>
+#include <freax/sched.h>
+#include <freax/random.h>
 
 /*
  * On 64-bit architectures, protect against non-terminated C string overflows

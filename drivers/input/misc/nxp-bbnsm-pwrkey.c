@@ -2,21 +2,21 @@
 //
 // Copyright 2022 NXP.
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regmap.h>
 
 #define BBNSM_CTRL		0x8
 #define BBNSM_INT_EN		0x10
@@ -111,7 +111,7 @@ static int bbnsm_pwrkey_probe(struct platform_device *pdev)
 		return PTR_ERR(bbnsm->regmap);
 	}
 
-	if (device_property_read_u32(&pdev->dev, "linux,code",
+	if (device_property_read_u32(&pdev->dev, "freax,code",
 				     &bbnsm->keycode)) {
 		bbnsm->keycode = KEY_POWER;
 		dev_warn(&pdev->dev, "key code is not specified, using default KEY_POWER\n");

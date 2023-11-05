@@ -6,14 +6,14 @@
 #ifndef __ASM_RISCV_VECTOR_H
 #define __ASM_RISCV_VECTOR_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <uapi/asm-generic/errno.h>
 
 #ifdef CONFIG_RISCV_ISA_V
 
-#include <linux/stringify.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/stringify.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 #include <asm/ptrace.h>
 #include <asm/hwcap.h>
 #include <asm/csr.h>

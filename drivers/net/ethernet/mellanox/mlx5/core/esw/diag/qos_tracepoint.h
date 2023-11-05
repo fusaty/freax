@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #undef TRACE_SYSTEM
@@ -7,7 +7,7 @@
 #if !defined(_MLX5_ESW_TP_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_ESW_TP_
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "eswitch.h"
 
 TRACE_EVENT(mlx5_esw_vport_qos_destroy,

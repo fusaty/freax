@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,18 +6,18 @@
 #ifndef ENA_COM
 #define ENA_COM
 
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/netdevice.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/gfp.h>
+#include <freax/io.h>
+#include <freax/prefetch.h>
+#include <freax/sched.h>
+#include <freax/sizes.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/netdevice.h>
 
 #include "ena_common_defs.h"
 #include "ena_admin_defs.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UML_INIT_H
-#define _LINUX_UML_INIT_H
+#ifndef _freax_UML_INIT_H
+#define _freax_UML_INIT_H
 
 /* These macros are used to mark some functions or
  * initialized data (doesn't apply to uninitialized data)
@@ -28,7 +28,7 @@
  * sign followed by value, e.g.:
  *
  * static int init_variable __initdata = 0;
- * static const char linux_logo[] __initconst = { 0x32, 0x36, ... };
+ * static const char freax_logo[] __initconst = { 0x32, 0x36, ... };
  *
  * Don't forget to initialize data not at file scope, i.e. within a function,
  * as gcc otherwise puts the data into the bss section and not into the init
@@ -37,11 +37,11 @@
  * Also note, that this data cannot be "const".
  */
 
-#ifndef _LINUX_INIT_H
+#ifndef _freax_INIT_H
 typedef int (*initcall_t)(void);
 typedef void (*exitcall_t)(void);
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 /* These are for everybody (although not all archs will actually
    discard it in modules) */
@@ -124,4 +124,4 @@ extern struct uml_param __uml_setup_start, __uml_setup_end;
 
 #endif
 
-#endif /* _LINUX_UML_INIT_H */
+#endif /* _freax_UML_INIT_H */

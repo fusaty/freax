@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2018 Cavium, Inc.
  */
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 /* register offsets */
 #define ISL12026_REG_PWR	0x14

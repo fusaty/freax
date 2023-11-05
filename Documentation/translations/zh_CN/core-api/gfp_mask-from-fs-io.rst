@@ -44,7 +44,7 @@
 
 该API在以下内核代码中:
 
-include/linux/sched/mm.h
+include/freax/sched/mm.h
 
 然后，FS/IO代码在任何与回收有关的关键部分开始之前简单地调用适当的保存函数
 ——例如，与回收上下文共享的锁或当事务上下文嵌套可能通过回收进行时。恢复函数

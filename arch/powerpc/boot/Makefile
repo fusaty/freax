@@ -68,7 +68,7 @@ else
 BOOTTARGETFLAGS	+= -mlittle-endian
 endif
 
-BOOTCPPFLAGS	:= -nostdinc $(LINUXINCLUDE)
+BOOTCPPFLAGS	:= -nostdinc $(freaxINCLUDE)
 BOOTCPPFLAGS	+= -isystem $(shell $(BOOTCC) -print-file-name=include)
 
 BOOTCFLAGS	:= $(BOOTTARGETFLAGS) \
@@ -98,7 +98,7 @@ ifeq ($(call cc-option-yn, -fstack-protector),y)
 BOOTCFLAGS	+= -fno-stack-protector
 endif
 
-BOOTCFLAGS	+= -include $(srctree)/include/linux/compiler_attributes.h
+BOOTCFLAGS	+= -include $(srctree)/include/freax/compiler_attributes.h
 BOOTCFLAGS	+= -I$(objtree)/$(obj) -I$(srctree)/$(obj)
 
 DTC_FLAGS	?= -p 1024
@@ -114,18 +114,18 @@ DTC_FLAGS	?= -p 1024
 zlib-decomp-$(CONFIG_KERNEL_GZIP) := decompress_inflate.c
 zlib-$(CONFIG_KERNEL_GZIP) := inffast.c inflate.c inftrees.c
 zlibheader-$(CONFIG_KERNEL_GZIP) := inffast.h inffixed.h inflate.h inftrees.h infutil.h
-zliblinuxheader-$(CONFIG_KERNEL_GZIP) := zlib.h zconf.h zutil.h
+zlibfreaxheader-$(CONFIG_KERNEL_GZIP) := zlib.h zconf.h zutil.h
 
 $(addprefix $(obj)/, decompress.o): \
 	$(addprefix $(obj)/,$(zlib-decomp-y))
 
 $(addprefix $(obj)/, $(zlib-decomp-y)): \
-	$(addprefix $(obj)/,$(zliblinuxheader-y)) \
+	$(addprefix $(obj)/,$(zlibfreaxheader-y)) \
 	$(addprefix $(obj)/,$(zlibheader-y)) \
 	$(addprefix $(obj)/,$(zlib-y))
 
 $(addprefix $(obj)/,$(zlib-y)): \
-	$(addprefix $(obj)/,$(zliblinuxheader-y)) \
+	$(addprefix $(obj)/,$(zlibfreaxheader-y)) \
 	$(addprefix $(obj)/,$(zlibheader-y))
 
 libfdt       := fdt.c fdt_ro.c fdt_wip.c fdt_sw.c fdt_rw.c fdt_strerror.c
@@ -203,7 +203,7 @@ $(addprefix $(obj)/,$(zlib-y)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 $(addprefix $(obj)/,$(zlibheader-y)): $(obj)/%: $(srctree)/lib/zlib_inflate/%
 	$(call cmd,copy_kern_src)
 
-$(addprefix $(obj)/,$(zliblinuxheader-y)): $(obj)/%: $(srctree)/include/linux/%
+$(addprefix $(obj)/,$(zlibfreaxheader-y)): $(obj)/%: $(srctree)/include/freax/%
 	$(call cmd,copy_kern_src)
 
 $(addprefix $(obj)/,$(zlib-decomp-y)): $(obj)/%: $(srctree)/lib/%
@@ -221,7 +221,7 @@ $(obj)/empty.c:
 $(obj)/zImage.coff.lds $(obj)/zImage.ps3.lds : $(obj)/%: $(srctree)/$(src)/%.S
 	$(Q)cp $< $@
 
-clean-files := $(zlib-) $(zlibheader-) $(zliblinuxheader-) \
+clean-files := $(zlib-) $(zlibheader-) $(zlibfreaxheader-) \
 		$(zlib-decomp-) $(libfdt) $(libfdtheader) \
 		empty.c zImage.coff.lds zImage.ps3.lds zImage.lds
 
@@ -278,7 +278,7 @@ compressor-$(CONFIG_KERNEL_LZO) := lzo
 quiet_cmd_wrap	= WRAP    $@
       cmd_wrap	=$(CONFIG_SHELL) $(wrapper) -Z $(compressor-y) -c -o $@ -p $2 \
 		$(CROSSWRAP) $(if $3, -s $3)$(if $4, -d $4)$(if $5, -i $5) \
-		vmlinux
+		vmfreax
 
 image-$(CONFIG_PPC_PSERIES)		+= zImage.pseries
 image-$(CONFIG_PPC_POWERNV)		+= zImage.pseries
@@ -392,58 +392,58 @@ $(addprefix $(obj)/, $(initrd-y)): $(obj)/ramdisk.image.gz
 # Don't put the ramdisk on the pattern rule; when its missing make will try
 # the pattern rule with less dependencies that also matches (even with the
 # hard dependency listed).
-$(obj)/zImage.initrd.%: vmlinux $(wrapperbits) FORCE
+$(obj)/zImage.initrd.%: vmfreax $(wrapperbits) FORCE
 	$(call if_changed,wrap,$*,,,$(obj)/ramdisk.image.gz)
 
-$(addprefix $(obj)/, $(sort $(filter zImage.%, $(image-y)))): vmlinux $(wrapperbits) FORCE
+$(addprefix $(obj)/, $(sort $(filter zImage.%, $(image-y)))): vmfreax $(wrapperbits) FORCE
 	$(call if_changed,wrap,$(subst $(obj)/zImage.,,$@))
 
 # dtbImage% - a dtbImage is a zImage with an embedded device tree blob
-$(obj)/dtbImage.initrd.%: vmlinux $(wrapperbits) $(obj)/dts/%.dtb FORCE
+$(obj)/dtbImage.initrd.%: vmfreax $(wrapperbits) $(obj)/dts/%.dtb FORCE
 	$(call if_changed,wrap,$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/dtbImage.%: vmlinux $(wrapperbits) $(obj)/dts/%.dtb FORCE
+$(obj)/dtbImage.%: vmfreax $(wrapperbits) $(obj)/dts/%.dtb FORCE
 	$(call if_changed,wrap,$*,,$(obj)/dts/$*.dtb)
 
 # This cannot be in the root of $(src) as the zImage rule always adds a $(obj)
 # prefix
-$(obj)/vmlinux.strip: vmlinux
+$(obj)/vmfreax.strip: vmfreax
 	$(STRIP) -s -R .comment $< -o $@
 
-$(obj)/uImage: vmlinux $(wrapperbits) FORCE
+$(obj)/uImage: vmfreax $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot)
 
-$(obj)/uImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/uImage.initrd.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/uImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/uImage.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,uboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/cuImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/cuImage.initrd.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/cuImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/cuImage.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,cuboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/simpleImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/simpleImage.initrd.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/simpleImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/simpleImage.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,simpleboot-$*,,$(obj)/dts/$*.dtb)
 
-$(obj)/treeImage.initrd.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/treeImage.initrd.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/dts/$*.dtb,$(obj)/ramdisk.image.gz)
 
-$(obj)/treeImage.%: vmlinux $(obj)/dts/%.dtb $(wrapperbits) FORCE
+$(obj)/treeImage.%: vmfreax $(obj)/dts/%.dtb $(wrapperbits) FORCE
 	$(call if_changed,wrap,treeboot-$*,,$(obj)/dts/$*.dtb)
 
 # Needed for the above targets to work with dts/fsl/ files
 $(obj)/dts/%.dtb: $(obj)/dts/fsl/%.dtb
 	@cp $< $@
 
-# If there isn't a platform selected then just strip the vmlinux.
+# If there isn't a platform selected then just strip the vmfreax.
 ifeq (,$(image-y))
-image-y := vmlinux.strip
+image-y := vmfreax.strip
 endif
 
 $(obj)/zImage:		$(addprefix $(obj)/, $(image-y))
@@ -458,7 +458,7 @@ clean-files += $(image-) $(initrd-) cuImage.* dtbImage.* treeImage.* \
 	zImage.maple simpleImage.* otheros.bld
 
 # clean up files cached by wrapper
-clean-kernel-base := vmlinux.strip vmlinux.bin
+clean-kernel-base := vmfreax.strip vmfreax.bin
 clean-kernel := $(addsuffix .gz,$(clean-kernel-base))
 clean-kernel += $(addsuffix .xz,$(clean-kernel-base))
 # clean-files are relative to $(obj).

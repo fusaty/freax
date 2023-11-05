@@ -5,8 +5,8 @@
  *  Some commonly needed functions for uvc drivers
  */
 
-#ifndef __LINUX_V4L2_UVC_H
-#define __LINUX_V4L2_UVC_H
+#ifndef __freax_V4L2_UVC_H
+#define __freax_V4L2_UVC_H
 
 /* ------------------------------------------------------------------------
  * GUIDs
@@ -155,4 +155,4 @@ struct uvc_format_desc {
 
 const struct uvc_format_desc *uvc_format_by_guid(const u8 guid[16]);
 
-#endif /* __LINUX_V4L2_UVC_H */
+#endif /* __freax_V4L2_UVC_H */

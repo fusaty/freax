@@ -9,10 +9,10 @@
  *
  */
 
-#ifndef __JFFS2_OS_LINUX_H__
-#define __JFFS2_OS_LINUX_H__
+#ifndef __JFFS2_OS_freax_H__
+#define __JFFS2_OS_freax_H__
 
-/* JFFS2 uses Linux mode bits natively -- no need for conversion */
+/* JFFS2 uses freax mode bits natively -- no need for conversion */
 #define os_to_jffs2_mode(x) (x)
 #define jffs2_to_os_mode(x) (x)
 
@@ -192,6 +192,6 @@ int jffs2_flash_direct_writev(struct jffs2_sb_info *c, const struct kvec *vecs,
 int jffs2_flash_direct_write(struct jffs2_sb_info *c, loff_t ofs, size_t len,
 			size_t *retlen, const u_char *buf);
 
-#endif /* __JFFS2_OS_LINUX_H__ */
+#endif /* __JFFS2_OS_freax_H__ */
 
 

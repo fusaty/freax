@@ -27,8 +27,8 @@
 #include <poll.h>
 #include <limits.h>
 #include <err.h>
-#include <linux/list.h>
-#include <linux/time64.h>
+#include <freax/list.h>
+#include <freax/time64.h>
 
 #define DATASIZE 100
 

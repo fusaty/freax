@@ -6,13 +6,13 @@
  */
 
 /* File aq_ptp.c:
- * Definition of functions for Linux PTP support.
+ * Definition of functions for freax PTP support.
  */
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/ptp_classify.h>
+#include <freax/interrupt.h>
+#include <freax/clocksource.h>
 
 #include "aq_nic.h"
 #include "aq_ptp.h"

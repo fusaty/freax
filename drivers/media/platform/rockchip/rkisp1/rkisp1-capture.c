@@ -8,8 +8,8 @@
  * Copyright (C) 2017 Rockchip Electronics Co., Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-fh.h>

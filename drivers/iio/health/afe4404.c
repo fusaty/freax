@@ -6,22 +6,22 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/sysfs.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #include "afe440x.h"
 

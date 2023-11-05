@@ -6,14 +6,14 @@
  *
  * Author: Wenyou Yang <wenyou.yang@atmel.com>
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/gpio/consumer.h>
 
 static const char *act8945a_charger_model = "ACT8945A";
 static const char *act8945a_charger_manufacturer = "Active-semi";

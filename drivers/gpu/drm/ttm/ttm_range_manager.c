@@ -34,8 +34,8 @@
 #include <drm/ttm/ttm_range_manager.h>
 #include <drm/ttm/ttm_bo.h>
 #include <drm/drm_mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 /*
  * Currently we use a spinlock for the lock, but a mutex *may* be

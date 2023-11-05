@@ -9,29 +9,29 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pagemap.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/termios.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
 #define TEGRA_UART_TYPE				"TEGRA_UART"
 #define TX_EMPTY_STATUS				(UART_LSR_TEMT | UART_LSR_THRE)
@@ -177,9 +177,9 @@ static unsigned int tegra_uart_get_mctrl(struct uart_port *u)
 	/*
 	 * RI - Ring detector is active
 	 * CD/DCD/CAR - Carrier detect is always active. For some reason
-	 *	linux has different names for carrier detect.
+	 *	freax has different names for carrier detect.
 	 * DSR - Data Set ready is active as the hardware doesn't support it.
-	 *	Don't know if the linux support this yet?
+	 *	Don't know if the freax support this yet?
 	 * CTS - Clear to send. Always set to active, as the hardware handles
 	 *	CTS automatically.
 	 */

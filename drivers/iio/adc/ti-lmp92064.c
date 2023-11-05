@@ -4,22 +4,22 @@
  *
  * Copyright (c) 2022 Leonard Göhrs <kernel@pengutronix.de>, Pengutronix
  *
- * Based on linux/drivers/iio/adc/ti-tsc2046.c
+ * Based on freax/drivers/iio/adc/ti-tsc2046.c
  * Copyright (c) 2021 Oleksij Rempel <kernel@pengutronix.de>, Pengutronix
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #define TI_LMP92064_REG_CONFIG_A 0x0000
 #define TI_LMP92064_REG_CONFIG_B 0x0001

@@ -7,12 +7,12 @@
  * Author: Vidya Sagar <vidyas@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 #define P2U_CONTROL_CMN			0x74
 #define P2U_CONTROL_CMN_ENABLE_L2_EXIT_RATE_CHANGE		BIT(13)

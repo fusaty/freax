@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2017-2022 Linaro Ltd
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Qualcomm Innovation Center, Inc. All rights reserved.
  */
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define LPG_SUBTYPE_REG		0x05
 #define  LPG_SUBTYPE_LPG	0x2
@@ -1209,7 +1209,7 @@ static int lpg_add_led(struct lpg *lpg, struct device_node *np)
 		}
 	}
 
-	cdev->default_trigger = of_get_property(np, "linux,default-trigger", NULL);
+	cdev->default_trigger = of_get_property(np, "freax,default-trigger", NULL);
 	cdev->max_brightness = LPG_RESOLUTION_9BIT - 1;
 
 	if (!of_property_read_string(np, "default-state", &state) &&

@@ -10,17 +10,17 @@
  * through the interaction with the NSP IOMUX controller.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "../pinctrl-utils.h"
 

@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * USB Raw Gadget driver.
  *
  * See Documentation/usb/raw-gadget.rst for more details.
  */
 
-#ifndef _UAPI__LINUX_USB_RAW_GADGET_H
-#define _UAPI__LINUX_USB_RAW_GADGET_H
+#ifndef _UAPI__freax_USB_RAW_GADGET_H
+#define _UAPI__freax_USB_RAW_GADGET_H
 
 #include <asm/ioctl.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
+#include <freax/types.h>
+#include <freax/usb/ch9.h>
 
 /* Maximum length of driver_name/device_name in the usb_raw_init struct. */
 #define UDC_NAME_LENGTH_MAX 128
@@ -91,7 +91,7 @@ static inline int usb_raw_io_flags_zero(__u16 flags)
  * @ep: Endpoint handle as returned by USB_RAW_IOCTL_EP_ENABLE for
  *     USB_RAW_IOCTL_EP_WRITE/READ. Ignored for USB_RAW_IOCTL_EP0_WRITE/READ.
  * @flags: When USB_RAW_IO_FLAGS_ZERO is specified, the zero flag is set on
- *     the submitted USB request, see include/linux/usb/gadget.h for details.
+ *     the submitted USB request, see include/freax/usb/gadget.h for details.
  * @length: Length of data.
  * @data: Data to send for USB_RAW_IOCTL_EP0/EP_WRITE. Buffer to store received
  *     data for USB_RAW_IOCTL_EP0/EP_READ.
@@ -256,4 +256,4 @@ struct usb_raw_eps_info {
 #define USB_RAW_IOCTL_EP_CLEAR_HALT	_IOW('U', 14, __u32)
 #define USB_RAW_IOCTL_EP_SET_WEDGE	_IOW('U', 15, __u32)
 
-#endif /* _UAPI__LINUX_USB_RAW_GADGET_H */
+#endif /* _UAPI__freax_USB_RAW_GADGET_H */

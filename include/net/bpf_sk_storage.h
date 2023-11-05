@@ -3,16 +3,16 @@
 #ifndef _BPF_SK_STORAGE_H
 #define _BPF_SK_STORAGE_H
 
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bpf.h>
+#include <freax/rculist.h>
+#include <freax/list.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/bpf.h>
 #include <net/sock.h>
-#include <uapi/linux/sock_diag.h>
-#include <uapi/linux/btf.h>
-#include <linux/bpf_local_storage.h>
+#include <uapi/freax/sock_diag.h>
+#include <uapi/freax/btf.h>
+#include <freax/bpf_local_storage.h>
 
 struct sock;
 

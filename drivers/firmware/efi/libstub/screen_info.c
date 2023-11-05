@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/efi.h>
-#include <linux/screen_info.h>
+#include <freax/efi.h>
+#include <freax/screen_info.h>
 
 #include <asm/efi.h>
 
@@ -19,7 +19,7 @@
  * approach.
  */
 
-static efi_guid_t screen_info_guid = LINUX_EFI_SCREEN_INFO_TABLE_GUID;
+static efi_guid_t screen_info_guid = freax_EFI_SCREEN_INFO_TABLE_GUID;
 
 struct screen_info *__alloc_screen_info(void)
 {

@@ -4,17 +4,17 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/mempool.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/bio.h>
-#include <linux/fs.h>
-#include <linux/list_sort.h>
-#include <linux/blkdev.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/mempool.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/bio.h>
+#include <freax/fs.h>
+#include <freax/list_sort.h>
+#include <freax/blkdev.h>
 
 #include "bmap.h"
 #include "dir.h"

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only OR BSD-3-Clause
 /* Copyright (C) 2022 NVIDIA CORPORATION & AFFILIATES */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #define MLXBF3_NGPIOS_GPIO0    32
 #define MLXBF3_MAX_GPIO_PINS   56

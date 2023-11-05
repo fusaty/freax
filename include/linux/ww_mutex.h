@@ -14,11 +14,11 @@
  * This file contains the main data structure and API definitions.
  */
 
-#ifndef __LINUX_WW_MUTEX_H
-#define __LINUX_WW_MUTEX_H
+#ifndef __freax_WW_MUTEX_H
+#define __freax_WW_MUTEX_H
 
-#include <linux/mutex.h>
-#include <linux/rtmutex.h>
+#include <freax/mutex.h>
+#include <freax/rtmutex.h>
 
 #if defined(CONFIG_DEBUG_MUTEXES) || \
    (defined(CONFIG_PREEMPT_RT) && defined(CONFIG_DEBUG_RT_MUTEXES))

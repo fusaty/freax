@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_PRCTL_H
-#define _LINUX_PRCTL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_PRCTL_H
+#define _freax_PRCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Values to pass as first argument to prctl() */
 
@@ -167,7 +167,7 @@ struct prctl_mm_map {
  * capset, etc.) will still work.  Drop those privileges if you want them gone.
  *
  * Changing LSM security domain is considered a new privilege.  So, for example,
- * asking selinux for a specific new context (e.g. with runcon) will result
+ * asking sefreax for a specific new context (e.g. with runcon) will result
  * in execve returning -EPERM.
  *
  * See Documentation/userspace-api/no_new_privs.rst for more details.
@@ -306,4 +306,4 @@ struct prctl_mm_map {
 # define PR_RISCV_V_VSTATE_CTRL_NEXT_MASK	0xc
 # define PR_RISCV_V_VSTATE_CTRL_MASK		0x1f
 
-#endif /* _LINUX_PRCTL_H */
+#endif /* _freax_PRCTL_H */

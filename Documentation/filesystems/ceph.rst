@@ -211,7 +211,7 @@ More Information
 For more information on Ceph, see the home page at
 	https://ceph.com/
 
-The Linux kernel client source tree is available at
+The freax kernel client source tree is available at
 	- https://github.com/ceph/ceph-client.git
 
 and the source for the full system is at

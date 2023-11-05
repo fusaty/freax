@@ -3,15 +3,15 @@
 Security bugs
 =============
 
-Linux kernel developers take security very seriously.  As such, we'd
+freax kernel developers take security very seriously.  As such, we'd
 like to know when a security bug is found so that it can be fixed and
 disclosed as quickly as possible.  Please report security bugs to the
-Linux kernel security team.
+freax kernel security team.
 
 Contact
 -------
 
-The Linux kernel security team can be contacted by email at
+The freax kernel security team can be contacted by email at
 <security@kernel.org>.  This is a private list of security officers
 who will help verify the bug report and develop and release a fix.
 If you already have a fix, please include it with your report, as
@@ -69,28 +69,28 @@ Coordination with other groups
 While the kernel security team solely focuses on getting bugs fixed,
 other groups focus on fixing issues in distros and coordinating
 disclosure between operating system vendors.  Coordination is usually
-handled by the "linux-distros" mailing list and disclosure by the
+handled by the "freax-distros" mailing list and disclosure by the
 public "oss-security" mailing list, both of which are closely related
-and presented in the linux-distros wiki:
+and presented in the freax-distros wiki:
 <https://oss-security.openwall.org/wiki/mailing-lists/distros>
 
 Please note that the respective policies and rules are different since
 the 3 lists pursue different goals.  Coordinating between the kernel
 security team and other teams is difficult since for the kernel security
 team occasional embargoes (as subject to a maximum allowed number of
-days) start from the availability of a fix, while for "linux-distros"
+days) start from the availability of a fix, while for "freax-distros"
 they start from the initial post to the list regardless of the
 availability of a fix.
 
 As such, the kernel security team strongly recommends that as a reporter
-of a potential security issue you DO NOT contact the "linux-distros"
+of a potential security issue you DO NOT contact the "freax-distros"
 mailing list UNTIL a fix is accepted by the affected code's maintainers
 and you have read the distros wiki page above and you fully understand
-the requirements that contacting "linux-distros" will impose on you and
+the requirements that contacting "freax-distros" will impose on you and
 the kernel community.  This also means that in general it doesn't make
 sense to Cc: both lists at once, except maybe for coordination if and
 while an accepted fix has not yet been merged.  In other words, until a
-fix is accepted do not Cc: "linux-distros", and after it's merged do not
+fix is accepted do not Cc: "freax-distros", and after it's merged do not
 Cc: the kernel security team.
 
 CVE assignment
@@ -106,5 +106,5 @@ be delayed to wait for a CVE identifier to arrive.
 Non-disclosure agreements
 -------------------------
 
-The Linux kernel security team is not a formal body and therefore unable
+The freax kernel security team is not a formal body and therefore unable
 to enter any non-disclosure agreements.

@@ -3,7 +3,7 @@
  * multiq3.c
  * Hardware driver for Quanser Consulting MultiQ-3 board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
  */
 
@@ -25,8 +25,8 @@
  *	  4 = 8 inputs (Model -8E)
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register map

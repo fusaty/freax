@@ -6,8 +6,8 @@
 #ifndef _ASM_RISCV_SWITCH_TO_H
 #define _ASM_RISCV_SWITCH_TO_H
 
-#include <linux/jump_label.h>
-#include <linux/sched/task_stack.h>
+#include <freax/jump_label.h>
+#include <freax/sched/task_stack.h>
 #include <asm/vector.h>
 #include <asm/hwcap.h>
 #include <asm/processor.h>

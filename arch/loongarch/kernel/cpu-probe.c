@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/printk.h>
-#include <linux/uaccess.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/export.h>
+#include <freax/printk.h>
+#include <freax/uaccess.h>
 
 #include <asm/cpu-features.h>
 #include <asm/elf.h>

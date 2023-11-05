@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/kref.h>
-#include <linux/list.h>
+#include <freax/kref.h>
+#include <freax/list.h>
 
 struct sock;
 

@@ -1,4 +1,4 @@
-#include <asm/vmlinux.lds.h>
+#include <asm/vmfreax.lds.h>
 #include <asm/page.h>
 
 OUTPUT_FORMAT(ELF_FORMAT)

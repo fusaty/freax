@@ -11,12 +11,12 @@
 #ifndef STACKGLUE_H
 #define STACKGLUE_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/dlmconstants.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/dlmconstants.h>
 
 #include "dlm/dlmapi.h"
-#include <linux/dlm.h>
+#include <freax/dlm.h>
 
 /* Needed for plock-related prototypes */
 struct file;

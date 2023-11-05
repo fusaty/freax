@@ -7,17 +7,17 @@
  */
 
 #include <dt-bindings/phy/phy.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mux/consumer.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mux/consumer.h>
+#include <freax/of_address.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #define CMU_R004		0x4
 #define CMU_R060		0x60

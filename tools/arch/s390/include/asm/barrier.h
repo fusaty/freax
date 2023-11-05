@@ -7,8 +7,8 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#ifndef __TOOLS_LINUX_ASM_BARRIER_H
-#define __TOOLS_LINUX_ASM_BARRIER_H
+#ifndef __TOOLS_freax_ASM_BARRIER_H
+#define __TOOLS_freax_ASM_BARRIER_H
 
 /*
  * Force strict CPU ordering.

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_KVM_H
-#define __LINUX_KVM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_KVM_H
+#define __freax_KVM_H
 
 /*
  * Userspace interface for /dev/kvm - kernel based virtual machine
@@ -8,10 +8,10 @@
  * Note: you must update KVM_API_VERSION if you change this interface.
  */
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/ioctl.h>
 #include <asm/kvm.h>
 
 #define KVM_API_VERSION 12
@@ -98,7 +98,7 @@ struct kvm_userspace_memory_region {
 /*
  * The bit 0 ~ bit 15 of kvm_userspace_memory_region::flags are visible for
  * userspace, other bits are reserved for kvm internal use which are defined
- * in include/linux/kvm_host.h.
+ * in include/freax/kvm_host.h.
  */
 #define KVM_MEM_LOG_DIRTY_PAGES	(1UL << 0)
 #define KVM_MEM_READONLY	(1UL << 1)
@@ -2267,4 +2267,4 @@ struct kvm_s390_zpci_op {
 /* flags for kvm_s390_zpci_op->u.reg_aen.flags */
 #define KVM_S390_ZPCIOP_REGAEN_HOST    (1 << 0)
 
-#endif /* __LINUX_KVM_H */
+#endif /* __freax_KVM_H */

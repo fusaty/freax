@@ -13,15 +13,15 @@
  */
 
 /* #define DEBUG 1 */
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/stacktrace.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/io.h>
 #include <asm/sections.h>
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

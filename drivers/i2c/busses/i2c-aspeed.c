@@ -7,23 +7,23 @@
  *  Copyright 2017 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 /* I2C Register */
 #define ASPEED_I2C_FUN_CTRL_REG				0x00

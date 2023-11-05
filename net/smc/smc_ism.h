@@ -9,9 +9,9 @@
 #ifndef SMCD_ISM_H
 #define SMCD_ISM_H
 
-#include <linux/uio.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <freax/uio.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
 
 #include "smc.h"
 

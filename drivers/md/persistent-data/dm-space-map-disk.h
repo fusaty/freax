@@ -5,8 +5,8 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_SPACE_MAP_DISK_H
-#define _LINUX_DM_SPACE_MAP_DISK_H
+#ifndef _freax_DM_SPACE_MAP_DISK_H
+#define _freax_DM_SPACE_MAP_DISK_H
 
 #include "dm-block-manager.h"
 
@@ -23,4 +23,4 @@ struct dm_space_map *dm_sm_disk_create(struct dm_transaction_manager *tm,
 struct dm_space_map *dm_sm_disk_open(struct dm_transaction_manager *tm,
 				     void *root, size_t len);
 
-#endif /* _LINUX_DM_SPACE_MAP_DISK_H */
+#endif /* _freax_DM_SPACE_MAP_DISK_H */

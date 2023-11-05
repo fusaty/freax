@@ -4,9 +4,9 @@
  *  Copyright (c) 2021 by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/leds.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/leds.h>
 #include <sound/core.h>
 #include <sound/control.h>
 

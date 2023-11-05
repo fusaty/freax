@@ -7,11 +7,11 @@
  * Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/kobject.h>
+#include <freax/sysfs.h>
+#include <freax/fs.h>
 
 #include "ocfs2_nodemanager.h"
 #include "masklog.h"

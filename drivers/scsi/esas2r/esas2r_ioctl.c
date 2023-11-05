@@ -1,9 +1,9 @@
 /*
- *  linux/drivers/scsi/esas2r/esas2r_ioctl.c
+ *  freax/drivers/scsi/esas2r/esas2r_ioctl.c
  *      For use with ATTO ExpressSAS R6xx SAS/SATA RAID controllers
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)
+ *  (mailto:freaxdrivers@attotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -41,7 +41,7 @@
  * USA.
  */
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #include "esas2r.h"
 

@@ -3,15 +3,15 @@
 // Copyright (C) 2020-2021 Samuel Holland <samuel@sholland.org>
 //
 
-#include <linux/clk.h>
-#include <linux/devfreq.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/clk.h>
+#include <freax/devfreq.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #define MBUS_CR				0x0000
 #define MBUS_CR_GET_DRAM_TYPE(x)	(((x) >> 16) & 0x7)

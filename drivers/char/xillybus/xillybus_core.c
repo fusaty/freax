@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/misc/xillybus_core.c
+ * freax/drivers/misc/xillybus_core.c
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
@@ -13,21 +13,21 @@
  * creates the device files accordingly.
  */
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/crc32.h>
-#include <linux/poll.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/crc32.h>
+#include <freax/poll.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include "xillybus.h"
 #include "xillybus_class.h"
 

@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 // Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/vport.h>
+#include <freax/mlx5/device.h>
+#include <freax/mlx5/vport.h>
 #include "mlx5_core.h"
 #include "eswitch.h"
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_TEXTSEARCH_FSM_H
-#define __LINUX_TEXTSEARCH_FSM_H
+#ifndef __freax_TEXTSEARCH_FSM_H
+#define __freax_TEXTSEARCH_FSM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	TS_FSM_SPECIFIC,	/* specific character */

@@ -5,7 +5,7 @@
  * Copyright (C) 2018 Intel Corporation
  *****************************************************************************/
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 /* sparse doesn't like tracepoint macros */
 #ifndef __CHECKER__

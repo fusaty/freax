@@ -45,24 +45,24 @@
  *      Erez Zilber
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/hardirq.h>
-#include <linux/kfifo.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/hardirq.h>
+#include <freax/kfifo.h>
+#include <freax/blkdev.h>
+#include <freax/init.h>
+#include <freax/ioctl.h>
+#include <freax/cdev.h>
+#include <freax/in.h>
+#include <freax/net.h>
+#include <freax/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

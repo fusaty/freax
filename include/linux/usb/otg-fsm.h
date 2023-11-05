@@ -3,11 +3,11 @@
  * Copyright (C) 2007,2008 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_USB_OTG_FSM_H
-#define __LINUX_USB_OTG_FSM_H
+#ifndef __freax_USB_OTG_FSM_H
+#define __freax_USB_OTG_FSM_H
 
-#include <linux/mutex.h>
-#include <linux/errno.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
 
 #define PROTO_UNDEF	(0)
 #define PROTO_HOST	(1)
@@ -309,4 +309,4 @@ static inline int otg_start_gadget(struct otg_fsm *fsm, int on)
 
 int otg_statemachine(struct otg_fsm *fsm);
 
-#endif /* __LINUX_USB_OTG_FSM_H */
+#endif /* __freax_USB_OTG_FSM_H */

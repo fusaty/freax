@@ -4,8 +4,8 @@
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
+#include <freax/module.h>
+#include <freax/device.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

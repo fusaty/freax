@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UNICODE_H
-#define _LINUX_UNICODE_H
+#ifndef _freax_UNICODE_H
+#define _freax_UNICODE_H
 
-#include <linux/init.h>
-#include <linux/dcache.h>
+#include <freax/init.h>
+#include <freax/dcache.h>
 
 struct utf8data;
 struct utf8data_table;
@@ -76,4 +76,4 @@ int utf8_casefold_hash(const struct unicode_map *um, const void *salt,
 struct unicode_map *utf8_load(unsigned int version);
 void utf8_unload(struct unicode_map *um);
 
-#endif /* _LINUX_UNICODE_H */
+#endif /* _freax_UNICODE_H */

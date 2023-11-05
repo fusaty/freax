@@ -4,23 +4,23 @@
  *
  * Hardware support for the Sega Dreamcast.
  *
- * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@linuxdc.org>
- * Copyright (c) 2002, 2003, 2004 Paul Mundt <lethal@linux-sh.org>
+ * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@freaxdc.org>
+ * Copyright (c) 2002, 2003, 2004 Paul Mundt <lethal@freax-sh.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the freaxDC project (www.freaxdc.org)
  *
  * This file originally bore the message (with enclosed-$):
  *	Id: setup_dc.c,v 1.5 2001/05/24 05:09:16 mrbrown Exp
  *	SEGA Dreamcast support
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/device.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/device.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/rtc.h>

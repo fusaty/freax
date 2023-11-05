@@ -22,14 +22,14 @@
  * devices.
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/math64.h>
+#include <freax/module.h>
+#include <freax/stat.h>
+#include <freax/slab.h>
+#include <freax/ioctl.h>
+#include <freax/capability.h>
+#include <freax/uaccess.h>
+#include <freax/compat.h>
+#include <freax/math64.h>
 #include <mtd/ubi-user.h>
 #include "ubi.h"
 

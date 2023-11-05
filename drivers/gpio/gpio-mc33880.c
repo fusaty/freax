@@ -8,13 +8,13 @@
  * Freescale MC33880 high-side/low-side switch
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mc33880.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/mc33880.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #define DRIVER_NAME "mc33880"
 

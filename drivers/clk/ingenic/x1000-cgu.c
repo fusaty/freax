@@ -4,11 +4,11 @@
  * Copyright (c) 2019 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/rational.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/rational.h>
 
 #include <dt-bindings/clock/ingenic,x1000-cgu.h>
 

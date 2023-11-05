@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,8 +9,8 @@
  * Based on ipv4/ping.c code.
  *
  * Authors:	Lorenzo Colitti (IPv6 support)
- *		Vasiliy Kulikov / Openwall (IPv4 implementation, for Linux 2.6),
- *		Pavel Kankovsky (IPv4 implementation, for Linux 2.4.32)
+ *		Vasiliy Kulikov / Openwall (IPv4 implementation, for freax 2.6),
+ *		Pavel Kankovsky (IPv4 implementation, for freax 2.4.32)
  */
 
 #include <net/addrconf.h>
@@ -19,8 +19,8 @@
 #include <net/protocol.h>
 #include <net/udp.h>
 #include <net/transp_v6.h>
-#include <linux/proc_fs.h>
-#include <linux/bpf-cgroup.h>
+#include <freax/proc_fs.h>
+#include <freax/bpf-cgroup.h>
 #include <net/ping.h>
 
 /* Compatibility glue so we can support IPv6 when it's compiled as a module */

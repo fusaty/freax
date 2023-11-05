@@ -4,15 +4,15 @@
  * for more details.
  *
  * Copyright (C) 2005 MIPS Technologies, Inc.  All rights reserved.
- * Copyright (C) 2005, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 06 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/syscalls.h>
-#include <linux/moduleloader.h>
-#include <linux/atomic.h>
-#include <linux/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/syscalls.h>
+#include <freax/moduleloader.h>
+#include <freax/atomic.h>
+#include <freax/sched/signal.h>
 
 #include <asm/mipsmtregs.h>
 #include <asm/mips_mt.h>

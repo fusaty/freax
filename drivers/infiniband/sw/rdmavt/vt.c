@@ -3,9 +3,9 @@
  * Copyright(c) 2016 - 2018 Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/dma-mapping.h>
 #include "vt.h"
 #include "cq.h"
 #include "trace.h"

@@ -3,15 +3,15 @@
  * Copyright (C) 2015 Shaohua Li <shli@fb.com>
  * Copyright (C) 2016 Song Liu <songliubraving@fb.com>
  */
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/raid/md_p.h>
-#include <linux/crc32c.h>
-#include <linux/random.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/raid/md_p.h>
+#include <freax/crc32c.h>
+#include <freax/random.h>
+#include <freax/kthread.h>
+#include <freax/types.h>
 #include "md.h"
 #include "raid5.h"
 #include "md-bitmap.h"

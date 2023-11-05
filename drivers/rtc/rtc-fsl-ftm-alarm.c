@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/fsl/ftm.h>
-#include <linux/rtc.h>
-#include <linux/time.h>
-#include <linux/acpi.h>
-#include <linux/pm_wakeirq.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/fsl/ftm.h>
+#include <freax/rtc.h>
+#include <freax/time.h>
+#include <freax/acpi.h>
+#include <freax/pm_wakeirq.h>
 
 #define FTM_SC_CLK(c)		((c) << FTM_SC_CLK_MASK_SHIFT)
 

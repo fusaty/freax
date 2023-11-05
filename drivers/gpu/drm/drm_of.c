@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/component.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/media-bus-format.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <freax/component.h>
+#include <freax/export.h>
+#include <freax/list.h>
+#include <freax/media-bus-format.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_crtc.h>

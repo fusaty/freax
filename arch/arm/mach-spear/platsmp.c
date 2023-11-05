@@ -2,16 +2,16 @@
 /*
  * arch/arm/mach-spear13xx/platsmp.c
  *
- * based upon linux/arch/arm/mach-realview/platsmp.c
+ * based upon freax/arch/arm/mach-realview/platsmp.c
  *
  * Copyright (C) 2012 ST Microelectronics Ltd.
- * Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim <shiraz.freax.kernel@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/smp.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/io.h>
+#include <freax/smp.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_scu.h>
 #include "spear.h"
@@ -69,7 +69,7 @@ static int spear13xx_boot_secondary(unsigned int cpu, struct task_struct *idle)
 	 * that it has been released by resetting spear_pen_release.
 	 *
 	 * Note that "spear_pen_release" is the hardware CPU ID, whereas
-	 * "cpu" is Linux's internal ID.
+	 * "cpu" is freax's internal ID.
 	 */
 	spear_write_pen_release(cpu);
 

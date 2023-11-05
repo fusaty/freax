@@ -7,19 +7,19 @@
  * Author: Graeme Gregory <gg@slimlogic.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/regmap.h>
+#include <freax/err.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/palmas.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 static const struct regmap_config palmas_regmap_config[PALMAS_NUM_CLIENTS] = {
 	{

@@ -5,10 +5,10 @@
  * Renesas Solutions SH7780 SDK Support
  * Copyright (C) 2008 Nicholas Beck <nbeck@mpc-data.co.uk>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
 #include <asm/machvec.h>
 #include <mach/sdk7780.h>
 #include <asm/heartbeat.h>

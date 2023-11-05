@@ -5,10 +5,10 @@
  * Copyright (C) 2017 Alexandre Belloni
  */
 
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/rtc.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/rtc.h>
 
 int devm_rtc_nvmem_register(struct rtc_device *rtc,
 		       struct nvmem_config *nvmem_config)

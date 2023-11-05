@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/generic.c
+ *  freax/arch/arm/mach-pxa/generic.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -13,13 +13,13 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
-#include <linux/clk/pxa.h>
+#include <freax/gpio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/soc/pxa/smemc.h>
+#include <freax/clk/pxa.h>
 
 #include <asm/mach/map.h>
 #include <asm/mach-types.h>

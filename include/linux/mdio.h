@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/mdio.h: definitions for MDIO (clause 45) transceivers
+ * freax/mdio.h: definitions for MDIO (clause 45) transceivers
  * Copyright 2006-2009 Solarflare Communications Inc.
  */
-#ifndef __LINUX_MDIO_H__
-#define __LINUX_MDIO_H__
+#ifndef __freax_MDIO_H__
+#define __freax_MDIO_H__
 
-#include <uapi/linux/mdio.h>
-#include <linux/bitfield.h>
-#include <linux/mod_devicetable.h>
+#include <uapi/freax/mdio.h>
+#include <freax/bitfield.h>
+#include <freax/mod_devicetable.h>
 
 struct gpio_desc;
 struct mii_bus;
@@ -667,4 +667,4 @@ static void __exit mdio_module_exit(void)				\
 }									\
 module_exit(mdio_module_exit)
 
-#endif /* __LINUX_MDIO_H__ */
+#endif /* __freax_MDIO_H__ */

@@ -1,12 +1,12 @@
-#ifndef __LINUX_SPINLOCK_API_SMP_H
-#define __LINUX_SPINLOCK_API_SMP_H
+#ifndef __freax_SPINLOCK_API_SMP_H
+#define __freax_SPINLOCK_API_SMP_H
 
-#ifndef __LINUX_INSIDE_SPINLOCK_H
+#ifndef __freax_INSIDE_SPINLOCK_H
 # error "please don't include this file directly"
 #endif
 
 /*
- * include/linux/spinlock_api_smp.h
+ * include/freax/spinlock_api_smp.h
  *
  * spinlock API declarations on SMP (and debug)
  * (implemented in kernel/spinlock.c)
@@ -180,7 +180,7 @@ static inline int __raw_spin_trylock_bh(raw_spinlock_t *lock)
 
 /* PREEMPT_RT has its own rwlock implementation */
 #ifndef CONFIG_PREEMPT_RT
-#include <linux/rwlock_api_smp.h>
+#include <freax/rwlock_api_smp.h>
 #endif
 
-#endif /* __LINUX_SPINLOCK_API_SMP_H */
+#endif /* __freax_SPINLOCK_API_SMP_H */

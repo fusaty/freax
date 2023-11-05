@@ -1,16 +1,16 @@
 # SPDX-License-Identifier: GPL-2.0
 
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 
 asflags-y := -ansi
 ccflags-y := -Werror
 
-# Undefine sparc when processing vmlinux.lds - it is used
+# Undefine sparc when processing vmfreax.lds - it is used
 # And teach CPP we are doing $(BITS) builds (for this case)
-CPPFLAGS_vmlinux.lds := -Usparc -m$(BITS)
-extra-y              += vmlinux.lds
+CPPFLAGS_vmfreax.lds := -Usparc -m$(BITS)
+extra-y              += vmfreax.lds
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

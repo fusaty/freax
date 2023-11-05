@@ -10,34 +10,34 @@
  * Development of this code was funded by Astaro AG, http://www.astaro.com/
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/random.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
+#include <freax/in.h>
+#include <freax/ip.h>
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
-#include <linux/ipv6.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
 #endif
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/refcount.h>
-#include <uapi/linux/netfilter/xt_hashlimit.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
+#include <freax/mutex.h>
+#include <freax/kernel.h>
+#include <freax/refcount.h>
+#include <uapi/freax/netfilter/xt_hashlimit.h>
 
 #define XT_HASHLIMIT_ALL (XT_HASHLIMIT_HASH_DIP | XT_HASHLIMIT_HASH_DPT | \
 			  XT_HASHLIMIT_HASH_SIP | XT_HASHLIMIT_HASH_SPT | \
@@ -434,7 +434,7 @@ static void htable_put(struct xt_hashlimit_htable *hinfo)
 }
 
 /* The algorithm used is the Simple Token Bucket Filter (TBF)
- * see net/sched/sch_tbf.c in the linux source tree
+ * see net/sched/sch_tbf.c in the freax source tree
  */
 
 /* Rusty: This is my (non-mathematically-inclined) understanding of

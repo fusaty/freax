@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Management Component Transport Protocol (MCTP)
  *
@@ -9,9 +9,9 @@
 #ifndef __UAPI_MCTP_H
 #define __UAPI_MCTP_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/netdevice.h>
 
 typedef __u8			mctp_eid_t;
 

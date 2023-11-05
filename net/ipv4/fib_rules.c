@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -14,15 +14,15 @@
  *		Marc Boucher	:	routing by fwmark
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
+#include <freax/export.h>
 #include <net/inet_dscp.h>
 #include <net/ip.h>
 #include <net/route.h>
@@ -30,7 +30,7 @@
 #include <net/ip_fib.h>
 #include <net/nexthop.h>
 #include <net/fib_rules.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/indirect_call_wrapper.h>
 
 struct fib4_rule {
 	struct fib_rule		common;

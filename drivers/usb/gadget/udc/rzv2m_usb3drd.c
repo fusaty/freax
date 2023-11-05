@@ -5,12 +5,12 @@
  * Copyright (C) 2022 Renesas Electronics Corporation
  */
 
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/usb/rzv2m_usb3drd.h>
+#include <freax/io.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/usb/rzv2m_usb3drd.h>
 
 #define USB_PERI_DRD_CON	0x000
 

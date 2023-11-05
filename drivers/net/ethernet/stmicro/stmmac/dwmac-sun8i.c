@@ -5,22 +5,22 @@
  * Copyright (C) 2017 Corentin Labbe <clabbe.montjoie@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mdio-mux.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
-#include <linux/stmmac.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/mdio-mux.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regmap.h>
+#include <freax/stmmac.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

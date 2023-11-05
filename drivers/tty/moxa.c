@@ -6,44 +6,44 @@
  *      Copyright (C) 1999-2000  Moxa Technologies (support@moxa.com).
  *      Copyright (c) 2007 Jiri Slaby <jirislaby@gmail.com>
  *
- *      This code is loosely based on the Linux serial driver, written by
+ *      This code is loosely based on the freax serial driver, written by
  *      Linus Torvalds, Theodore T'so and others.
  */
 
 /*
  *    MOXA Intellio Series Driver
- *      for             : LINUX
+ *      for             : freax
  *      date            : 1999/1/7
  *      version         : 5.1
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/ptrace.h>
+#include <freax/serial.h>
+#include <freax/tty_driver.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define	MOXA			0x400
 #define MOXA_GET_IQUEUE		(MOXA + 1)	/* get input buffered count */
@@ -1056,7 +1056,7 @@ static int moxa_load_fw(struct moxa_board_conf *brd, const struct firmware *fw)
 		goto err;
 	}
 	if (hdr->type != 3) {
-		sprintf(rsn, "not for linux, type is %u", hdr->type);
+		sprintf(rsn, "not for freax, type is %u", hdr->type);
 		goto err;
 	}
 	if (moxa_check_fw_model(brd, hdr->model)) {

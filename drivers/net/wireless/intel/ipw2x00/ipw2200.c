@@ -11,13 +11,13 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel freax Wireless <ilw@freax.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include <net/cfg80211-wext.h>
 #include "ipw2200.h"
 #include "ipw.h"
@@ -3638,7 +3638,7 @@ static int ipw_load(struct ipw_priv *priv)
  * and four transmit queues for data.
  *
  * The four transmit queues allow for performing quality of service (qos)
- * transmissions as per the 802.11 protocol.  Currently Linux does not
+ * transmissions as per the 802.11 protocol.  Currently freax does not
  * provide a mechanism to the user for utilizing prioritized queues, so
  * we only utilize the first data transmit queue (queue1).
  */

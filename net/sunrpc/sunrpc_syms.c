@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/sunrpc_syms.c
+ * freax/net/sunrpc/sunrpc_syms.c
  *
  * Symbols exported by the sunrpc module.
  *
  * Copyright (C) 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/uio.h>
+#include <freax/unistd.h>
+#include <freax/init.h>
 
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/workqueue.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
+#include <freax/sunrpc/xprtsock.h>
 
 #include "sunrpc.h"
 #include "sysfs.h"

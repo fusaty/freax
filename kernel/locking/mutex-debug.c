@@ -10,15 +10,15 @@
  *  Copyright (C) 2004, LynuxWorks, Inc., Igor Manyilov, Bill Huey
  *  Released under the General Public License (GPL).
  */
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/poison.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/kallsyms.h>
+#include <freax/interrupt.h>
+#include <freax/debug_locks.h>
 
 #include "mutex.h"
 

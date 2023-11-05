@@ -107,7 +107,7 @@
 		label = "PWR";
 		gpios = <&gpio 35 GPIO_ACTIVE_HIGH>;
 		default-state = "keep";
-		linux,default-trigger = "default-on";
+		freax,default-trigger = "default-on";
 	};
 };
 

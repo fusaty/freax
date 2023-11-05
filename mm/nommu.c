@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/nommu.c
+ *  freax/mm/nommu.c
  *
  *  Replacement code for mm functions to support CPU's that don't
  *  have any form of memory management unit (thus no virtual memory).
@@ -9,34 +9,34 @@
  *
  *  Copyright (c) 2004-2008 David Howells <dhowells@redhat.com>
  *  Copyright (c) 2000-2003 David McCullough <davidm@snapgear.com>
- *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uClinux.org>
+ *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uCfreax.org>
  *  Copyright (c) 2002      Greg Ungerer <gerg@snapgear.com>
- *  Copyright (c) 2007-2010 Paul Mundt <lethal@linux-sh.org>
+ *  Copyright (c) 2007-2010 Paul Mundt <lethal@freax-sh.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/backing-dev.h>
-#include <linux/compiler.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/printk.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/mman.h>
+#include <freax/swap.h>
+#include <freax/file.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/backing-dev.h>
+#include <freax/compiler.h>
+#include <freax/mount.h>
+#include <freax/personality.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/audit.h>
+#include <freax/printk.h>
 
-#include <linux/uaccess.h>
-#include <linux/uio.h>
+#include <freax/uaccess.h>
+#include <freax/uio.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>
@@ -1009,7 +1009,7 @@ enomem:
 }
 
 /*
- * handle mapping creation for uClinux
+ * handle mapping creation for uCfreax
  */
 unsigned long do_mmap(struct file *file,
 			unsigned long addr,

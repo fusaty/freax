@@ -15,24 +15,24 @@
  * Copyright (c) 2012 Aeroflex Gaisler AB.
  * Author: Andreas Larsson <andreas@gaisler.com>
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fsl_devices.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/fsl_devices.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_FSL_SOC
 #include <sysdev/fsl_soc.h>

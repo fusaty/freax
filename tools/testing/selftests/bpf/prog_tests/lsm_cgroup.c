@@ -32,8 +32,8 @@ static __u32 query_prog_cnt(int cgroup_fd, const char *attach_func)
 	 */
 
 	if (!btf)
-		btf = btf__load_vmlinux_btf();
-	if (!ASSERT_OK(libbpf_get_error(btf), "btf_vmlinux"))
+		btf = btf__load_vmfreax_btf();
+	if (!ASSERT_OK(libbpf_get_error(btf), "btf_vmfreax"))
 		return -1;
 
 	p.prog_ids = malloc(sizeof(u32) * p.prog_cnt);
@@ -176,7 +176,7 @@ static void test_lsm_cgroup_functional(void)
 
 	fd = socket(AF_UNIX, SOCK_STREAM, 0);
 	if (!(skel->kconfig->CONFIG_SECURITY_APPARMOR
-	    || skel->kconfig->CONFIG_SECURITY_SELINUX
+	    || skel->kconfig->CONFIG_SECURITY_SEfreax
 	    || skel->kconfig->CONFIG_SECURITY_SMACK))
 		/* AF_UNIX is prohibited. */
 		ASSERT_LT(fd, 0, "socket(AF_UNIX)");
@@ -242,7 +242,7 @@ static void test_lsm_cgroup_functional(void)
 	 * accepted_fd
 	 */
 	if (skel->kconfig->CONFIG_SECURITY_APPARMOR
-	    || skel->kconfig->CONFIG_SECURITY_SELINUX
+	    || skel->kconfig->CONFIG_SECURITY_SEfreax
 	    || skel->kconfig->CONFIG_SECURITY_SMACK)
 		/* AF_UNIX+SOCK_RAW if already have non-bpf lsms installed */
 		ASSERT_EQ(skel->bss->called_socket_post_create2, 6, "called_create2");

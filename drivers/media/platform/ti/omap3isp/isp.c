@@ -39,22 +39,22 @@
  *	Troy Laramy <t-laramy@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/omap-iommu.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/omap-iommu.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
 
 #ifdef CONFIG_ARM_DMA_USE_IOMMU
 #include <asm/dma-iommu.h>
@@ -142,7 +142,7 @@ static struct isp_reg isp_reg_list[] = {
  * readback the same register, in this case the revision register.
  *
  * See this link for reference:
- *   https://www.mail-archive.com/linux-omap@vger.kernel.org/msg08149.html
+ *   https://www.mail-archive.com/freax-omap@vger.kernel.org/msg08149.html
  */
 void omap3isp_flush(struct isp_device *isp)
 {

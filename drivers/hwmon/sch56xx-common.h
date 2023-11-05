@@ -4,8 +4,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
 
 struct sch56xx_watchdog_data;
 

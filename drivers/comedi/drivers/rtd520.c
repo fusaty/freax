@@ -3,7 +3,7 @@
  * comedi/drivers/rtd520.c
  * Comedi driver for Real Time Devices (RTD) PCI4520/DM7520
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -82,11 +82,11 @@
  * Digital-IO and Analog-Out only support instruction mode.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8254.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedi_pci.h>
+#include <freax/comedi/comedi_8254.h>
 
 #include "plx9080.h"
 

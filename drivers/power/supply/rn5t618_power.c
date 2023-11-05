@@ -5,19 +5,19 @@
  * Copyright (C) 2020 Andreas Kemnade
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/iio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mfd/rn5t618.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/iio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mfd/rn5t618.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define CHG_STATE_ADP_INPUT 0x40
 #define CHG_STATE_USB_INPUT 0x80

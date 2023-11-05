@@ -1,23 +1,23 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/*  linux/include/linux/clocksource.h
+/*  freax/include/freax/clocksource.h
  *
  *  This file contains the structure definitions for clocksources.
  *
  *  If you are not a clocksource, or timekeeping code, you should
  *  not be including this file!
  */
-#ifndef _LINUX_CLOCKSOURCE_H
-#define _LINUX_CLOCKSOURCE_H
+#ifndef _freax_CLOCKSOURCE_H
+#define _freax_CLOCKSOURCE_H
 
-#include <linux/types.h>
-#include <linux/timex.h>
-#include <linux/time.h>
-#include <linux/list.h>
-#include <linux/cache.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/clocksource_ids.h>
+#include <freax/types.h>
+#include <freax/timex.h>
+#include <freax/time.h>
+#include <freax/list.h>
+#include <freax/cache.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/clocksource_ids.h>
 #include <asm/div64.h>
 #include <asm/io.h>
 
@@ -294,4 +294,4 @@ static inline void timer_probe(void) {}
 extern ulong max_cswd_read_retries;
 void clocksource_verify_percpu(struct clocksource *cs);
 
-#endif /* _LINUX_CLOCKSOURCE_H */
+#endif /* _freax_CLOCKSOURCE_H */

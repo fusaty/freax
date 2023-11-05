@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2019-2020 ARM Limited or its affiliates. */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/workqueue.h>
-#include <linux/circ_buf.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
-#include <linux/fips.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/interrupt.h>
+#include <freax/irqreturn.h>
+#include <freax/workqueue.h>
+#include <freax/circ_buf.h>
+#include <freax/completion.h>
+#include <freax/of.h>
+#include <freax/bitfield.h>
+#include <freax/fips.h>
 
 #include "cctrng.h"
 

@@ -6,11 +6,11 @@
  * Copyright (C) 2021 Niklas Söderlund
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fwnode.h>

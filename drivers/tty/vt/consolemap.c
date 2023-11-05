@@ -7,7 +7,7 @@
  *
  * aeb, 950210
  *
- * Support for multiple unimaps by Jakub Jelinek <jj@ultra.linux.cz>, July 1998
+ * Support for multiple unimaps by Jakub Jelinek <jj@ultra.freax.cz>, July 1998
  *
  * Fix bug in inverse translation. Stanislav Voronyi <stas@cnti.uanet.kharkov.ua>, Dec 1998
  *
@@ -23,20 +23,20 @@
  * stack overflow.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/kd.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <linux/console.h>
-#include <linux/consolemap.h>
-#include <linux/vt_kern.h>
-#include <linux/string.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/module.h>
+#include <freax/kd.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/tty.h>
+#include <freax/uaccess.h>
+#include <freax/console.h>
+#include <freax/consolemap.h>
+#include <freax/vt_kern.h>
+#include <freax/string.h>
 
 static unsigned short translations[][E_TABSZ] = {
   /* 8-bit Latin-1 mapped to Unicode -- trivial mapping */

@@ -9,10 +9,10 @@
 
 #include <crypto/arc4.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
 
 static int crypto_arc4_setkey(struct crypto_lskcipher *tfm, const u8 *in_key,
 			      unsigned int key_len)

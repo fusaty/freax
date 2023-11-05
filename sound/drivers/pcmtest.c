@@ -30,16 +30,16 @@
  * You can find the corresponding selftest in the 'alsa' selftests folder.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/init.h>
 #include <sound/pcm.h>
 #include <sound/core.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/random.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
+#include <freax/random.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
 
 #define TIMER_PER_SEC 5
 #define TIMER_INTERVAL (HZ / TIMER_PER_SEC)

@@ -6,23 +6,23 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/irq_work.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/irq_work.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/pm_runtime.h>
 
 #define ATLAS_REGMAP_NAME	"atlas_regmap"
 #define ATLAS_DRV_NAME		"atlas"

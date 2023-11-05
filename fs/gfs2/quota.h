@@ -7,7 +7,7 @@
 #ifndef __QUOTA_DOT_H__
 #define __QUOTA_DOT_H__
 
-#include <linux/list_lru.h>
+#include <freax/list_lru.h>
 
 struct gfs2_inode;
 struct gfs2_sbd;

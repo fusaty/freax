@@ -25,11 +25,11 @@
 		#size-cells = <2>;
 		ranges;
 
-		linux,cma {
+		freax,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0 0x28000000>;
-			linux,cma-default;
+			freax,cma-default;
 		};
 
 		m33_reserved: noncacheable-section@a8600000 {

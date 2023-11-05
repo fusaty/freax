@@ -3,13 +3,13 @@
  * Copyright (C) 2015 Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 /* System Bus Controller registers */
 #define UNIPHIER_SBC_BASE	0x100	/* base address of bank0 space */

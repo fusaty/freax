@@ -4,7 +4,7 @@
  */
 
 #include <drm/ttm/ttm_placement.h>
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 
 #include "gem/i915_gem_region.h"
 #include "intel_memory_region.h"

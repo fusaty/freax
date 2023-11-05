@@ -4,13 +4,13 @@
  * Author: Yunfei Dong <yunfei.dong@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 
 #include "mtk_vcodec_dec.h"
 #include "mtk_vcodec_dec_hw.h"

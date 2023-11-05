@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/types.h>
-#include <linux/percpu_counter.h>
-#include <linux/math64.h>
+#include <freax/types.h>
+#include <freax/percpu_counter.h>
+#include <freax/math64.h>
 
 #include "metric.h"
 #include "mds_client.h"

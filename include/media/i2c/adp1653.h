@@ -14,9 +14,9 @@
 #ifndef ADP1653_H
 #define ADP1653_H
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-subdev.h>
 

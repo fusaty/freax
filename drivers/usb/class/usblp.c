@@ -2,7 +2,7 @@
 /*
  * usblp.c
  *
- * Copyright (c) 1999 Michael Gee	<michael@linuxspecific.com>
+ * Copyright (c) 1999 Michael Gee	<michael@freaxspecific.com>
  * Copyright (c) 1999 Pavel Machek	<pavel@ucw.cz>
  * Copyright (c) 2000 Randy Dunlap	<rdunlap@xenotime.net>
  * Copyright (c) 2000 Vojtech Pavlik	<vojtech@suse.cz>
@@ -29,21 +29,21 @@
  *	v0.12 - add hpoj.sourceforge.net ioctls (David Paschal)
  *	v0.13 - alloc space for statusbuf (<status> not on stack);
  *		use usb_alloc_coherent() for read buf & write buf;
- *      none  - Maintained in Linux kernel after v0.13
+ *      none  - Maintained in freax kernel after v0.13
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/lp.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/signal.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/lp.h>
+#include <freax/mutex.h>
 #undef DEBUG
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/ratelimit.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/ratelimit.h>
 
 /*
  * Version Information

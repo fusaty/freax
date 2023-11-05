@@ -16,7 +16,7 @@
  * This controls what userland symbols we export from the vDSO.
  */
 VERSION {
-	LINUX_2.6 {
+	freax_2.6 {
 	global:
 		clock_gettime;
 		__vdso_clock_gettime;

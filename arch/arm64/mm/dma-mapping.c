@@ -4,10 +4,10 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/cache.h>
-#include <linux/dma-map-ops.h>
-#include <linux/iommu.h>
+#include <freax/gfp.h>
+#include <freax/cache.h>
+#include <freax/dma-map-ops.h>
+#include <freax/iommu.h>
 #include <xen/xen.h>
 
 #include <asm/cacheflush.h>

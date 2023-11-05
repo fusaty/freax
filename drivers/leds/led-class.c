@@ -6,20 +6,20 @@
  * Copyright (C) 2005-2007 Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <uapi/linux/uleds.h>
-#include <linux/of.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <uapi/freax/uleds.h>
+#include <freax/of.h>
 #include "leds.h"
 
 static DEFINE_MUTEX(leds_lookup_lock);
@@ -495,7 +495,7 @@ int led_classdev_register_ext(struct device *parent,
 
 		if (init_data->fwnode) {
 			fwnode_property_read_string(init_data->fwnode,
-				"linux,default-trigger",
+				"freax,default-trigger",
 				&led_cdev->default_trigger);
 
 			if (fwnode_property_present(init_data->fwnode,

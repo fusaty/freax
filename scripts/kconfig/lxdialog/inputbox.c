@@ -3,7 +3,7 @@
  *  inputbox.c -- implements the input box
  *
  *  ORIGINAL AUTHOR: Savio Lam (lam836@cs.cuhk.hk)
- *  MODIFIED FOR LINUX KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
+ *  MODIFIED FOR freax KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
  */
 
 #include "dialog.h"

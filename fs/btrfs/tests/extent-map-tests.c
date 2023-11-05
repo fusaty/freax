@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../btrfs_inode.h"

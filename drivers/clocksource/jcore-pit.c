@@ -5,16 +5,16 @@
  * Copyright (C) 2015-2016 Smart Energy Instruments, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/cpu.h>
-#include <linux/cpuhotplug.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/sched_clock.h>
+#include <freax/cpu.h>
+#include <freax/cpuhotplug.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #define PIT_IRQ_SHIFT		12
 #define PIT_PRIO_SHIFT		20

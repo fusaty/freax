@@ -17,7 +17,7 @@
 #include <stdint.h>
 #include <poll.h>
 #include <sys/socket.h>
-#include <linux/vm_sockets.h>
+#include <freax/vm_sockets.h>
 #include <sys/mman.h>
 
 #include "msg_zerocopy_common.h"

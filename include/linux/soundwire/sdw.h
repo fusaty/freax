@@ -4,12 +4,12 @@
 #ifndef __SOUNDWIRE_H
 #define __SOUNDWIRE_H
 
-#include <linux/bug.h>
-#include <linux/lockdep_types.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mod_devicetable.h>
-#include <linux/bitfield.h>
+#include <freax/bug.h>
+#include <freax/lockdep_types.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mod_devicetable.h>
+#include <freax/bitfield.h>
 
 struct sdw_bus;
 struct sdw_slave;
@@ -649,7 +649,7 @@ struct sdw_slave_ops {
 /**
  * struct sdw_slave - SoundWire Slave
  * @id: MIPI device ID
- * @dev: Linux device
+ * @dev: freax device
  * @irq: IRQ number
  * @status: Status reported by the Slave
  * @bus: Bus handle
@@ -705,7 +705,7 @@ struct sdw_slave {
 
 /**
  * struct sdw_master_device - SoundWire 'Master Device' representation
- * @dev: Linux device for this Master
+ * @dev: freax device for this Master
  * @bus: Bus handle shortcut
  */
 struct sdw_master_device {

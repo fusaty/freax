@@ -2,7 +2,7 @@
 /*
  * Copyright 2022 Google LLC.
  */
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>

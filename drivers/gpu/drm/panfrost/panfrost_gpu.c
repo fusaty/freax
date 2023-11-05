@@ -2,15 +2,15 @@
 /* Copyright 2018 Marty E. Plummer <hanetzer@startmail.com> */
 /* Copyright 2019 Linaro, Ltd., Rob Herring <robh@kernel.org> */
 /* Copyright 2019 Collabora ltd. */
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include "panfrost_device.h"
 #include "panfrost_features.h"

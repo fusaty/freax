@@ -6,16 +6,16 @@
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  *
- *  Ported to the Linux PnP Layer - (C) Adam Belay.
+ *  Ported to the freax PnP Layer - (C) Adam Belay.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/serial_core.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pnp.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/property.h>
+#include <freax/serial_core.h>
+#include <freax/bitops.h>
 
 #include <asm/byteorder.h>
 

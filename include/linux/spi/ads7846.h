@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/spi/ads7846.h */
+/* freax/spi/ads7846.h */
 
 struct ads7846_platform_data {
 	u16	model;			/* 7843, 7845, 7846, 7873. */

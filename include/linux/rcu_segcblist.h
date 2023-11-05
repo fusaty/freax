@@ -8,14 +8,14 @@
  *
  * Copyright IBM Corporation, 2017
  *
- * Authors: Paul E. McKenney <paulmck@linux.net.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@freax.net.ibm.com>
  */
 
-#ifndef __INCLUDE_LINUX_RCU_SEGCBLIST_H
-#define __INCLUDE_LINUX_RCU_SEGCBLIST_H
+#ifndef __INCLUDE_freax_RCU_SEGCBLIST_H
+#define __INCLUDE_freax_RCU_SEGCBLIST_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
 
 /* Simple unsegmented callback lists. */
 struct rcu_cblist {
@@ -225,4 +225,4 @@ struct rcu_segcblist {
 	.tails[RCU_NEXT_TAIL] = &n.head, \
 }
 
-#endif /* __INCLUDE_LINUX_RCU_SEGCBLIST_H */
+#endif /* __INCLUDE_freax_RCU_SEGCBLIST_H */

@@ -9,17 +9,17 @@
  */
 #define pr_fmt(fmt) "pinconfig core: " fmt
 
-#include <linux/array_size.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/array_size.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "core.h"
 #include "pinconf.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * PPP async serial channel driver for Linux.
+ * PPP async serial channel driver for freax.
  *
  * Copyright 1999 Paul Mackerras.
  *
@@ -14,23 +14,23 @@
  * subsequently hacked by Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/crc-ccitt.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/tty.h>
+#include <freax/netdevice.h>
+#include <freax/poll.h>
+#include <freax/crc-ccitt.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/ppp_channel.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/string.h>
 
 #define PPP_VERSION	"2.4.2"

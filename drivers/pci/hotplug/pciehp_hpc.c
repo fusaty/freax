@@ -14,16 +14,16 @@
 
 #define dev_fmt(fmt) "pciehp: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/dmi.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/jiffies.h>
+#include <freax/kthread.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
 
 #include "../pci.h"
 #include "pciehp.h"

@@ -8,14 +8,14 @@
  * (raw and hardware decode) are handled separately.
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include "img-ir.h"
 
 static irqreturn_t img_ir_isr(int irq, void *dev_id)

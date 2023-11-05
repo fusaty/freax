@@ -6,19 +6,19 @@
 //	Jaswinder Singh <jassisinghbrar@gmail.com>
 
 #include <dt-bindings/sound/samsung-i2s.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <freax/platform_data/asoc-s3c.h>
 
 #include "dma.h"
 #include "idma.h"

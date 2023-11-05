@@ -10,7 +10,7 @@
 #ifndef _ORINOCO_PCI_H
 #define _ORINOCO_PCI_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 /* Driver specific data */
 struct orinoco_pci_card {

@@ -9,16 +9,16 @@
  * Copyright (C) Nokia Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/ihex.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/ihex.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
 
 #include <asm/unaligned.h>
 

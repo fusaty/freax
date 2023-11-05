@@ -2,8 +2,8 @@
 #ifndef _NET_IPCOMP_H
 #define _NET_IPCOMP_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 
 #define IPCOMP_SCRATCH_SIZE     65400
 

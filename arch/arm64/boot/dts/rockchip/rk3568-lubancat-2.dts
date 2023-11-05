@@ -32,7 +32,7 @@
 
 		user_led: user-led {
 			label = "user_led";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "on";
 			gpios = <&gpio0 RK_PC7 GPIO_ACTIVE_LOW>;
 			pinctrl-names = "default";

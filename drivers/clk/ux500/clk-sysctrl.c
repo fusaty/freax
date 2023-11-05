@@ -6,13 +6,13 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/abx500/ab8500-sysctrl.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/err.h>
 #include "clk.h"
 
 #define SYSCTRL_MAX_NUM_PARENTS 4

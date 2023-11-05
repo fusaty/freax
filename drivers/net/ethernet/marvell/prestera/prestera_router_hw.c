@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2019-2021 Marvell International Ltd. All rights reserved */
 
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 
 #include "prestera.h"
 #include "prestera_hw.h"

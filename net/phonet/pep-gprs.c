@@ -9,13 +9,13 @@
  * Author: Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
 #include <net/sock.h>
 
-#include <linux/if_phonet.h>
+#include <freax/if_phonet.h>
 #include <net/tcp_states.h>
 #include <net/phonet/gprs.h>
 

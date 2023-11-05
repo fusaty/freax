@@ -10,12 +10,12 @@
  * Author: Jian Hu <jian.hu@amlogic.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/module.h>
 
 #include "clk-mpll.h"
 #include "clk-pll.h"
@@ -228,7 +228,7 @@ static struct clk_regmap g12a_sys_pll_div16_en = {
 		.num_parents = 1,
 		/*
 		 * This clock is used to debug the sys_pll range
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -247,7 +247,7 @@ static struct clk_regmap g12b_sys1_pll_div16_en = {
 		.num_parents = 1,
 		/*
 		 * This clock is used to debug the sys_pll range
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1144,7 +1144,7 @@ static struct clk_regmap g12a_cpu_clk_div16_en = {
 		.num_parents = 1,
 		/*
 		 * This clock is used to debug the cpu_clk range
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1163,7 +1163,7 @@ static struct clk_regmap g12b_cpub_clk_div16_en = {
 		.num_parents = 1,
 		/*
 		 * This clock is used to debug the cpu_clk range
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1223,7 +1223,7 @@ static struct clk_regmap g12a_cpu_clk_apb = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1257,7 +1257,7 @@ static struct clk_regmap g12a_cpu_clk_atb = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1291,7 +1291,7 @@ static struct clk_regmap g12a_cpu_clk_axi = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1335,7 +1335,7 @@ static struct clk_regmap g12a_cpu_clk_trace = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1470,7 +1470,7 @@ static struct clk_regmap g12b_cpub_clk_apb = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1513,7 +1513,7 @@ static struct clk_regmap g12b_cpub_clk_atb = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1556,7 +1556,7 @@ static struct clk_regmap g12b_cpub_clk_axi = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };
@@ -1599,7 +1599,7 @@ static struct clk_regmap g12b_cpub_clk_trace = {
 		.num_parents = 1,
 		/*
 		 * This clock is set by the ROM monitor code,
-		 * Linux should not change it at runtime
+		 * freax should not change it at runtime
 		 */
 	},
 };

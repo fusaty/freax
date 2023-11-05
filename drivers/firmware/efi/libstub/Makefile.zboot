@@ -9,7 +9,7 @@ quiet_cmd_copy_and_pad = PAD     $@
 			 truncate -s $(shell hexdump -s16 -n4 -e '"%u"' $<) $@
 
 # Pad the file to the size of the uncompressed image in memory, including BSS
-$(obj)/vmlinux.bin: $(obj)/$(EFI_ZBOOT_PAYLOAD) FORCE
+$(obj)/vmfreax.bin: $(obj)/$(EFI_ZBOOT_PAYLOAD) FORCE
 	$(call if_changed,copy_and_pad)
 
 comp-type-$(CONFIG_KERNEL_GZIP)		:= gzip
@@ -29,7 +29,7 @@ zboot-size-len-y                       := 4
 zboot-method-$(CONFIG_KERNEL_GZIP)     := gzip
 zboot-size-len-$(CONFIG_KERNEL_GZIP)   := 0
 
-$(obj)/vmlinuz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinuz: $(obj)/vmfreax.bin FORCE
 	$(call if_changed,$(zboot-method-y))
 
 # avoid eager evaluation to prevent references to non-existent build artifacts
@@ -60,4 +60,4 @@ OBJCOPYFLAGS_vmlinuz.efi := -O binary
 $(obj)/vmlinuz.efi: $(obj)/vmlinuz.efi.elf FORCE
 	$(call if_changed,objcopy)
 
-targets += zboot-header.o vmlinux.bin vmlinuz vmlinuz.o vmlinuz.efi.elf vmlinuz.efi
+targets += zboot-header.o vmfreax.bin vmlinuz vmlinuz.o vmlinuz.efi.elf vmlinuz.efi

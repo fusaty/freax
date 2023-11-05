@@ -5,15 +5,15 @@
  * Copyright 2011 IBM Corporation
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/hw_random.h>
+#include <freax/delay.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/io.h>
 
 #include "crypto4xx_core.h"
 #include "crypto4xx_trng.h"

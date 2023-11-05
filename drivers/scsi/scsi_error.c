@@ -4,29 +4,29 @@
  *
  *  SCSI error/timeout handling
  *      Initial versions: Eric Youngdale.  Based upon conversations with
- *                        Leonard Zubkoff and David Miller at Linux Expo,
+ *                        Leonard Zubkoff and David Miller at freax Expo,
  *                        ideas originating from all over the place.
  *
  *	Restructured scsi_unjam_host and associated functions.
  *	September 04, 2002 Mike Anderson (andmike@us.ibm.com)
  *
- *	Forward port of Russell King's (rmk@arm.linux.org.uk) changes and
+ *	Forward port of Russell King's (rmk@arm.freax.org.uk) changes and
  *	minor cleanups.
  *	September 30, 2002 Mike Anderson (andmike@us.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/gfp.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -468,12 +468,12 @@ static void scsi_report_sense(struct scsi_device *sdev,
 			scsi_report_lun_change(sdev);
 			sdev_printk(KERN_WARNING, sdev,
 				    "LUN assignments on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The freax SCSI layer does not "
 				    "automatically remap LUN assignments.\n");
 		} else if (sshdr->asc == 0x3f)
 			sdev_printk(KERN_WARNING, sdev,
 				    "Operating parameters on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The freax SCSI layer does not "
 				    "automatically adjust these parameters.\n");
 
 		if (sshdr->asc == 0x38 && sshdr->ascq == 0x07) {

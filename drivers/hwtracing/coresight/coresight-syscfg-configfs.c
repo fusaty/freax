@@ -4,7 +4,7 @@
  * Author: Mike Leach <mike.leach@linaro.org>
  */
 
-#include <linux/configfs.h>
+#include <freax/configfs.h>
 
 #include "coresight-config.h"
 #include "coresight-syscfg-configfs.h"

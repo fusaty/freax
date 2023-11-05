@@ -3,20 +3,20 @@
  * Internal GPIO functions.
  *
  * Copyright (C) 2013, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #ifndef GPIOLIB_H
 #define GPIOLIB_H
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h> /* for enum gpiod_flags */
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/rwsem.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h> /* for enum gpiod_flags */
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/rwsem.h>
 
 #define GPIOCHIP_NAME	"gpiochip"
 
@@ -33,7 +33,7 @@
  * @descs: array of ngpio descriptors.
  * @ngpio: the number of GPIO lines on this GPIO device, equal to the size
  * of the @descs array.
- * @base: GPIO base in the DEPRECATED global Linux GPIO numberspace, assigned
+ * @base: GPIO base in the DEPRECATED global freax GPIO numberspace, assigned
  * at device creation time.
  * @label: a descriptive name for the GPIO device, such as the part number
  * or name of the IP component in a System on Chip.

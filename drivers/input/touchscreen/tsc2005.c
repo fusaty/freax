@@ -9,11 +9,11 @@
  * Based on original tsc2005.c by Lauri Leukkunen <lauri.leukkunen@nokia.com>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
+#include <freax/regmap.h>
 #include "tsc200x-core.h"
 
 static const struct input_id tsc2005_input_id = {

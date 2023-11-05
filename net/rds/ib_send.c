@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/ratelimit.h>
+#include <freax/kernel.h>
+#include <freax/in.h>
+#include <freax/device.h>
+#include <freax/dmapool.h>
+#include <freax/ratelimit.h>
 
 #include "rds_single_path.h"
 #include "rds.h"

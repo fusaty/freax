@@ -21,16 +21,16 @@
  */
 
 #include <kunit/test-bug.h>
-#include <linux/bug.h>
-#include <linux/build_bug.h>
-#include <linux/err.h>
-#include <linux/errname.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/sched/signal.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/build_bug.h>
+#include <freax/err.h>
+#include <freax/errname.h>
+#include <freax/mutex.h>
+#include <freax/refcount.h>
+#include <freax/sched/signal.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 __noreturn void rust_helper_BUG(void)
 {

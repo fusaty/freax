@@ -9,20 +9,20 @@
 
 #include "dm-bio-record.h"
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
-#include <linux/rbtree.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
+#include <freax/compiler.h>
+#include <freax/module.h>
+#include <freax/device-mapper.h>
+#include <freax/dm-io.h>
+#include <freax/vmalloc.h>
+#include <freax/sort.h>
+#include <freax/rbtree.h>
+#include <freax/delay.h>
+#include <freax/random.h>
+#include <freax/reboot.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/async_tx.h>
-#include <linux/dm-bufio.h>
+#include <freax/async_tx.h>
+#include <freax/dm-bufio.h>
 
 #include "dm-audit.h"
 

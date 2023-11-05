@@ -4,15 +4,15 @@
  * for more details.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@freax-mips.org>
  */
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/prefetch.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/init.h>
+#include <freax/irqflags.h>
+#include <freax/notifier.h>
+#include <freax/prefetch.h>
+#include <freax/ptrace.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/cop2.h>
 #include <asm/current.h>

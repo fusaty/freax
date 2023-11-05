@@ -19,33 +19,33 @@
  * 	Johnnie Peters <jpeters@mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/crc32.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/bitops.h>
+#include <freax/workqueue.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>
 

@@ -6,7 +6,7 @@
  * Copyright 2008, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/of.h>
+#include <freax/of.h>
 #include <asm/irq.h>
 
 struct msi_bitmap {

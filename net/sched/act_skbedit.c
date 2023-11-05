@@ -5,11 +5,11 @@
  * Author: Alexander Duyck <alexander.h.duyck@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/ip.h>
@@ -18,7 +18,7 @@
 #include <net/pkt_cls.h>
 #include <net/tc_wrapper.h>
 
-#include <linux/tc_act/tc_skbedit.h>
+#include <freax/tc_act/tc_skbedit.h>
 #include <net/tc_act/tc_skbedit.h>
 
 static struct tc_action_ops act_skbedit_ops;

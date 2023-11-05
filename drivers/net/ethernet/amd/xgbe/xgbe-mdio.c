@@ -114,14 +114,14 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
+#include <freax/of.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

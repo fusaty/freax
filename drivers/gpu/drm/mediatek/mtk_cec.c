@@ -3,13 +3,13 @@
  * Copyright (c) 2014 MediaTek Inc.
  * Author: Jie Qiu <jie.qiu@mediatek.com>
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "mtk_cec.h"
 #include "mtk_hdmi.h"

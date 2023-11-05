@@ -5,15 +5,15 @@
  * Based on ipt_random and ipt_nth by Fabrice MARIE <fabrice@netfilter.org>.
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/net.h>
+#include <freax/slab.h>
 
-#include <linux/netfilter/xt_statistic.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/module.h>
+#include <freax/netfilter/xt_statistic.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/module.h>
 
 struct xt_statistic_priv {
 	atomic_t count;

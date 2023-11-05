@@ -5,7 +5,7 @@
  * register-compatible with Ocelot and that perform I/O to their host CPU
  * through an NPI (Node Processor Interface) Ethernet port.
  */
-#include <uapi/linux/if_bridge.h>
+#include <uapi/freax/if_bridge.h>
 #include <soc/mscc/ocelot_vcap.h>
 #include <soc/mscc/ocelot_qsys.h>
 #include <soc/mscc/ocelot_sys.h>
@@ -13,14 +13,14 @@
 #include <soc/mscc/ocelot_ana.h>
 #include <soc/mscc/ocelot_ptp.h>
 #include <soc/mscc/ocelot.h>
-#include <linux/dsa/8021q.h>
-#include <linux/dsa/ocelot.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/pci.h>
-#include <linux/of.h>
+#include <freax/dsa/8021q.h>
+#include <freax/dsa/ocelot.h>
+#include <freax/platform_device.h>
+#include <freax/ptp_classify.h>
+#include <freax/module.h>
+#include <freax/of_net.h>
+#include <freax/pci.h>
+#include <freax/of.h>
 #include <net/pkt_sched.h>
 #include <net/dsa.h>
 #include "felix.h"
@@ -365,7 +365,7 @@ static int felix_update_trapping_destinations(struct dsa_switch *ds,
 /* The CPU port module is connected to the Node Processor Interface (NPI). This
  * is the mode through which frames can be injected from and extracted to an
  * external CPU, over Ethernet. In NXP SoCs, the "external CPU" is the ARM CPU
- * running Linux, and this forms a DSA setup together with the enetc or fman
+ * running freax, and this forms a DSA setup together with the enetc or fman
  * DSA conduit.
  */
 static void felix_npi_port_init(struct ocelot *ocelot, int port)

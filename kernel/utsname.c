@@ -5,15 +5,15 @@
  *  Author: Serge Hallyn <serue@us.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_ns.h>
-#include <linux/sched/task.h>
+#include <freax/export.h>
+#include <freax/uts.h>
+#include <freax/utsname.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/user_namespace.h>
+#include <freax/proc_ns.h>
+#include <freax/sched/task.h>
 
 static struct kmem_cache *uts_ns_cache __ro_after_init;
 

@@ -7,13 +7,13 @@
  *
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <keys/user-type.h>
-#include <linux/key-type.h>
-#include <linux/keyctl.h>
-#include <linux/inet.h>
+#include <freax/key-type.h>
+#include <freax/keyctl.h>
+#include <freax/inet.h>
 #include "cifsglob.h"
 #include "cifs_spnego.h"
 #include "cifs_debug.h"
@@ -142,7 +142,7 @@ cifs_get_spnego_key(struct cifs_ses *sesInfo,
 
 	dp = description + strlen(description);
 	sprintf(dp, ";uid=0x%x",
-		from_kuid_munged(&init_user_ns, sesInfo->linux_uid));
+		from_kuid_munged(&init_user_ns, sesInfo->freax_uid));
 
 	dp = description + strlen(description);
 	sprintf(dp, ";creduid=0x%x",

@@ -7,12 +7,12 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/pm_qos.h>
+#include <freax/slab.h>
 
 #include <asm/processor.h>
 #include <asm/pmi.h>

@@ -7,7 +7,7 @@
  * Author: Liam Girdwood <lrg@slimlogic.co.uk>
  * Parts Copyright : Ian Molton <spyro@f2s.com>
  *                   Andrew Zabolotny <zap@homelink.ru>
- *                   Russell King <rmk@arm.linux.org.uk>
+ *                   Russell King <rmk@arm.freax.org.uk>
  *
  * Notes:
  *
@@ -29,22 +29,22 @@
  *       - Support for async sampling control for noisy LCDs.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mfd/wm97xx.h>
-#include <linux/workqueue.h>
-#include <linux/wm97xx.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/proc_fs.h>
+#include <freax/pm.h>
+#include <freax/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/mfd/wm97xx.h>
+#include <freax/workqueue.h>
+#include <freax/wm97xx.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #define TS_NAME			"wm97xx"
 #define WM_CORE_VERSION		"1.00"

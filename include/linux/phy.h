@@ -11,25 +11,25 @@
 #ifndef __PHY_H
 #define __PHY_H
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/leds.h>
-#include <linux/linkmode.h>
-#include <linux/netlink.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/mii_timestamper.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/mod_devicetable.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/irqreturn.h>
-#include <linux/iopoll.h>
-#include <linux/refcount.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/leds.h>
+#include <freax/linkmode.h>
+#include <freax/netlink.h>
+#include <freax/mdio.h>
+#include <freax/mii.h>
+#include <freax/mii_timestamper.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/mod_devicetable.h>
+#include <freax/u64_stats_sync.h>
+#include <freax/irqreturn.h>
+#include <freax/iopoll.h>
+#include <freax/refcount.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #define PHY_DEFAULT_FEATURES	(SUPPORTED_Autoneg | \
 				 SUPPORTED_TP | \

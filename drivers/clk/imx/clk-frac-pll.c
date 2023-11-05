@@ -8,13 +8,13 @@
  *   https://www.nxp.com/docs/en/reference-manual/IMX8MDQLQRM.pdf#page=834
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
-#include <linux/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/slab.h>
+#include <freax/bitfield.h>
 
 #include "clk.h"
 

@@ -17,14 +17,14 @@
  * Copyright (C) 2008, Guennadi Liakhovetski <kernel@pengutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>
@@ -32,7 +32,7 @@
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>
 
-#include <linux/gpio/consumer.h>
+#include <freax/gpio/consumer.h>
 
 #include "ov9640.h"
 

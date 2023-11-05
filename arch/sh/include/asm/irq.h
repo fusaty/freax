@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_IRQ_H
 #define __ASM_SH_IRQ_H
 
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 #include <asm/machvec.h>
 
 /*

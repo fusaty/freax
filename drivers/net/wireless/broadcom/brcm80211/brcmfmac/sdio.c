@@ -3,26 +3,26 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/printk.h>
-#include <linux/pci_ids.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/semaphore.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcma/bcma.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/printk.h>
+#include <freax/pci_ids.h>
+#include <freax/netdevice.h>
+#include <freax/interrupt.h>
+#include <freax/sched/signal.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/core.h>
+#include <freax/semaphore.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/bcma/bcma.h>
+#include <freax/debugfs.h>
+#include <freax/vmalloc.h>
 #include <asm/unaligned.h>
 #include <defs.h>
 #include <brcmu_wifi.h>

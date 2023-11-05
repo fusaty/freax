@@ -25,37 +25,37 @@
  * Do not depend on ABI/API stability.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/glob.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/time.h>
+#include <freax/interrupt.h>
+#include <freax/completion.h>
+#include <freax/suspend.h>
+#include <freax/workqueue.h>
+#include <freax/scatterlist.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/glob.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/cdrom.h>
-#include <linux/ratelimit.h>
-#include <linux/leds.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
+#include <freax/cdrom.h>
+#include <freax/ratelimit.h>
+#include <freax/leds.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
 #include <asm/setup.h>
 
 #define CREATE_TRACE_POINTS
@@ -4033,7 +4033,7 @@ struct ata_blacklist_entry {
 };
 
 static const struct ata_blacklist_entry ata_device_blacklist [] = {
-	/* Devices with DMA related problems under Linux */
+	/* Devices with DMA related problems under freax */
 	{ "WDC AC11000H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC22100H",	NULL,		ATA_HORKAGE_NODMA },
 	{ "WDC AC32500H",	NULL,		ATA_HORKAGE_NODMA },
@@ -4094,7 +4094,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 	/* NCQ is slow */
 	{ "WDC WD740ADFD-00",	NULL,		ATA_HORKAGE_NONCQ },
 	{ "WDC WD740ADFD-00NLR1", NULL,		ATA_HORKAGE_NONCQ },
-	/* http://thread.gmane.org/gmane.linux.ide/14907 */
+	/* http://thread.gmane.org/gmane.freax.ide/14907 */
 	{ "FUJITSU MHT2060BH",	NULL,		ATA_HORKAGE_NONCQ },
 	/* NCQ is broken */
 	{ "Maxtor *",		"BANC*",	ATA_HORKAGE_NONCQ },
@@ -4123,7 +4123,7 @@ static const struct ata_blacklist_entry ata_device_blacklist [] = {
 	{ "VB0250EAVER",	"HPG7",		ATA_HORKAGE_BROKEN_FPDMA_AA },
 
 	/* Blacklist entries taken from Silicon Image 3124/3132
-	   Windows driver .inf file - also several Linux problem reports */
+	   Windows driver .inf file - also several freax problem reports */
 	{ "HTS541060G9SA00",    "MB3OC60D",     ATA_HORKAGE_NONCQ },
 	{ "HTS541080G9SA00",    "MB4OC60D",     ATA_HORKAGE_NONCQ },
 	{ "HTS541010G9SA00",    "MBZOC60D",     ATA_HORKAGE_NONCQ },
@@ -5217,7 +5217,7 @@ static void ata_port_suspend(struct ata_port *ap, pm_message_t mesg,
 	 * do not need to touch the device. Ask EH to skip the usual stuff
 	 * and proceed directly to suspend.
 	 *
-	 * http://thread.gmane.org/gmane.linux.ide/46764
+	 * http://thread.gmane.org/gmane.freax.ide/46764
 	 */
 	ata_port_request_pm(ap, mesg, 0,
 			    ATA_EHI_QUIET | ATA_EHI_NO_AUTOPSY |

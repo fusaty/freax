@@ -9,21 +9,21 @@
  *        Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/ftrace.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stackdepot.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kasan.h>
-#include <linux/module.h>
+#include <freax/bitops.h>
+#include <freax/ftrace.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
+#include <freax/stackdepot.h>
+#include <freax/stacktrace.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/kasan.h>
+#include <freax/module.h>
 
 #include <asm/sections.h>
 

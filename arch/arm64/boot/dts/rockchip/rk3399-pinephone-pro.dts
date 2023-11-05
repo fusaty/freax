@@ -11,7 +11,7 @@
 
 /dts-v1/;
 #include <dt-bindings/input/gpio-keys.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include "rk3399.dtsi"
 #include "rk3399-opp.dtsi"
 
@@ -39,13 +39,13 @@
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <100000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <600000>;
 		};
 	};
@@ -64,7 +64,7 @@
 			debounce-interval = <20>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "Power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};

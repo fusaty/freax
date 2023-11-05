@@ -24,7 +24,7 @@
 #ifndef DRM_PLANE_HELPER_H
 #define DRM_PLANE_HELPER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_atomic_state;
 struct drm_crtc;

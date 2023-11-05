@@ -2,20 +2,20 @@
 /*
  * trace_events_hist - trace event hist triggers
  *
- * Copyright (C) 2015 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2015 Tom Zanussi <tom.zanussi@freax.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/rculist.h>
-#include <linux/tracefs.h>
+#include <freax/module.h>
+#include <freax/kallsyms.h>
+#include <freax/security.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/stacktrace.h>
+#include <freax/rculist.h>
+#include <freax/tracefs.h>
 
 /* for gfp flag names */
-#include <linux/trace_events.h>
+#include <freax/trace_events.h>
 #include <trace/events/mmflags.h>
 
 #include "tracing_map.h"

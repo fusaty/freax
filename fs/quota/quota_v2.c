@@ -3,15 +3,15 @@
  *	vfsv0 quota IO operations on file
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/dqblk_v2.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/quotaops.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/dqblk_v2.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/quotaops.h>
 
 #include <asm/byteorder.h>
 

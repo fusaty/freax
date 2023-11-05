@@ -4,9 +4,9 @@
  * Author: Fuxin Zhang, zhangfx@lemote.com
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/i8259.h>

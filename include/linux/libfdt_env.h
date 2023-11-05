@@ -2,8 +2,8 @@
 #ifndef LIBFDT_ENV_H
 #define LIBFDT_ENV_H
 
-#include <linux/limits.h>	/* For INT_MAX */
-#include <linux/string.h>
+#include <freax/limits.h>	/* For INT_MAX */
+#include <freax/string.h>
 
 #include <asm/byteorder.h>
 

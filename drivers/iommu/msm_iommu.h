@@ -5,9 +5,9 @@
 #ifndef MSM_IOMMU_H
 #define MSM_IOMMU_H
 
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/clk.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/clk.h>
 
 /* Sharability attributes of MSM IOMMU mappings */
 #define MSM_IOMMU_ATTR_NON_SH		0x0

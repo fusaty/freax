@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx HSS (synchronous serial port) driver for Linux
+ * Intel IXP4xx HSS (synchronous serial port) driver for freax
  *
  * Copyright (C) 2007-2008 Krzysztof Hałasa <khc@pm.waw.pl>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/fs.h>
-#include <linux/hdlc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
-#include <linux/soc/ixp4xx/cpu.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/cdev.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/fs.h>
+#include <freax/hdlc.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/soc/ixp4xx/npe.h>
+#include <freax/soc/ixp4xx/qmgr.h>
+#include <freax/soc/ixp4xx/cpu.h>
 
 /* This is what all IXP4xx platforms we know uses, if more frequencies
  * are needed, we need to migrate to the clock framework.

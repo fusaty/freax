@@ -2,8 +2,8 @@
 #ifndef _FS_CEPH_AUTH_NONE_H
 #define _FS_CEPH_AUTH_NONE_H
 
-#include <linux/slab.h>
-#include <linux/ceph/auth.h>
+#include <freax/slab.h>
+#include <freax/ceph/auth.h>
 
 /*
  * null security mode.

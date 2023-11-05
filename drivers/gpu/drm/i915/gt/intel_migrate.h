@@ -6,7 +6,7 @@
 #ifndef __INTEL_MIGRATE__
 #define __INTEL_MIGRATE__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_migrate_types.h"
 

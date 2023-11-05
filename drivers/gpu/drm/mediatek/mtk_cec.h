@@ -6,7 +6,7 @@
 #ifndef _MTK_CEC_H
 #define _MTK_CEC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 

@@ -9,11 +9,11 @@
  *  Routines for control of EMU10K1 chips / PCM routines
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/init.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

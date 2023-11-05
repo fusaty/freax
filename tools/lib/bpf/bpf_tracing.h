@@ -82,7 +82,7 @@
  * https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI
  */
 
-#if defined(__KERNEL__) || defined(__VMLINUX_H__)
+#if defined(__KERNEL__) || defined(__VMfreax_H__)
 
 #define __PT_PARM1_REG di
 #define __PT_PARM2_REG si
@@ -92,7 +92,7 @@
 #define __PT_PARM6_REG r9
 /*
  * Syscall uses r10 for PARM4. See arch/x86/entry/entry_64.S:entry_SYSCALL_64
- * comments in Linux sources. And refer to syscall(2) manpage.
+ * comments in freax sources. And refer to syscall(2) manpage.
  */
 #define __PT_PARM1_SYSCALL_REG __PT_PARM1_REG
 #define __PT_PARM2_SYSCALL_REG __PT_PARM2_REG
@@ -153,7 +153,7 @@
 
 #endif /* __i386__ */
 
-#endif /* __KERNEL__ || __VMLINUX_H__ */
+#endif /* __KERNEL__ || __VMfreax_H__ */
 
 #elif defined(bpf_target_s390)
 
@@ -283,7 +283,7 @@ struct pt_regs___arm64 {
 #elif defined(bpf_target_powerpc)
 
 /*
- * http://refspecs.linux-foundation.org/elf/elfspec_ppc.pdf (page 3-14,
+ * http://refspecs.freax-foundation.org/elf/elfspec_ppc.pdf (page 3-14,
  * section "Function Calling Sequence")
  */
 
@@ -891,17 +891,17 @@ static __always_inline typeof(name(0)) ____##name(struct pt_regs *ctx, ##args)
  */
 #define BPF_KSYSCALL(name, args...)					    \
 name(struct pt_regs *ctx);						    \
-extern _Bool LINUX_HAS_SYSCALL_WRAPPER __kconfig;			    \
+extern _Bool freax_HAS_SYSCALL_WRAPPER __kconfig;			    \
 static __always_inline typeof(name(0))					    \
 ____##name(struct pt_regs *ctx, ##args);				    \
 typeof(name(0)) name(struct pt_regs *ctx)				    \
 {									    \
-	struct pt_regs *regs = LINUX_HAS_SYSCALL_WRAPPER		    \
+	struct pt_regs *regs = freax_HAS_SYSCALL_WRAPPER		    \
 			       ? (struct pt_regs *)PT_REGS_PARM1(ctx)	    \
 			       : ctx;					    \
 	_Pragma("GCC diagnostic push")					    \
 	_Pragma("GCC diagnostic ignored \"-Wint-conversion\"")		    \
-	if (LINUX_HAS_SYSCALL_WRAPPER)					    \
+	if (freax_HAS_SYSCALL_WRAPPER)					    \
 		return ____##name(___bpf_syswrap_args(args));		    \
 	else								    \
 		return ____##name(___bpf_syscall_args(args));		    \

@@ -14,7 +14,7 @@
 .. _cn_virt_index:
 
 ===============
-Linux虚拟化支持
+freax虚拟化支持
 ===============
 
 .. toctree::
@@ -28,7 +28,7 @@ Linux虚拟化支持
 TODOLIST:
 
    kvm/index
-   uml/user_mode_linux_howto_v2
+   uml/user_mode_freax_howto_v2
 
 .. only:: html and subproject
 

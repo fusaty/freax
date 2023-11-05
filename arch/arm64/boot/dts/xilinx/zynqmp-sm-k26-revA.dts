@@ -67,7 +67,7 @@
 		key-fwuen {
 			label = "fwuen";
 			gpios = <&gpio 12 GPIO_ACTIVE_LOW>;
-			linux,code = <BTN_MISC>;
+			freax,code = <BTN_MISC>;
 			wakeup-source;
 			autorepeat;
 		};
@@ -78,7 +78,7 @@
 		ds35-led {
 			label = "heartbeat";
 			gpios = <&gpio 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		ds36-led {

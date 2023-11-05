@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2012-2016 Mentor Graphics Inc.
  */
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Definitions for talking to the PMU.  The PMU is a microcontroller
  * which controls battery charging and system power on PowerBook 3400
@@ -7,8 +7,8 @@
  * Copyright (C) 1998 Paul Mackerras.
  */
 
-#ifndef _UAPI_LINUX_PMU_H
-#define _UAPI_LINUX_PMU_H
+#ifndef _UAPI_freax_PMU_H
+#define _UAPI_freax_PMU_H
 
 #define PMU_DRIVER_VERSION	2
 
@@ -121,7 +121,7 @@ enum {
 /*
  * Ioctl commands for the /dev/pmu device
  */
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /* no param */
 #define PMU_IOC_SLEEP		_IO('B', 0)
@@ -139,4 +139,4 @@ enum {
 #define PMU_IOC_GRAB_BACKLIGHT	_IOR('B', 6, size_t) 
 
 
-#endif /* _UAPI_LINUX_PMU_H */
+#endif /* _UAPI_freax_PMU_H */

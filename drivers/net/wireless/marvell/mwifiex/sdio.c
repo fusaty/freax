@@ -5,7 +5,7 @@
  * Copyright 2011-2020 NXP
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "decl.h"
 #include "ioctl.h"

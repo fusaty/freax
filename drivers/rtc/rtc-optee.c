@@ -3,11 +3,11 @@
  * Copyright (C) 2022 Microchip.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/tee_drv.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/tee_drv.h>
 
 #define RTC_INFO_VERSION	0x1
 

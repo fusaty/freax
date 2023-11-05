@@ -4,23 +4,23 @@
  *
  * Copyright (C) 2018 Xue Liu <liuxuenetmail@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/skbuff.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/ieee802154.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/skbuff.h>
+#include <freax/of_gpio.h>
+#include <freax/regmap.h>
+#include <freax/ieee802154.h>
+#include <freax/debugfs.h>
 
 #include <net/mac802154.h>
 #include <net/cfg802154.h>
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #include "mcr20a.h"
 

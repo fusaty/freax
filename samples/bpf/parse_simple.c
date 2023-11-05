@@ -5,12 +5,12 @@
  * License as published by the Free Software Foundation.
  */
 #define KBUILD_MODNAME "foo"
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <uapi/linux/bpf.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/in.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <uapi/freax/bpf.h>
 #include <net/ip.h>
 #include <bpf/bpf_helpers.h>
 

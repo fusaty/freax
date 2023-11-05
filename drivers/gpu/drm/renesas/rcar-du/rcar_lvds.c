@@ -7,19 +7,19 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

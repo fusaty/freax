@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-or-later WITH freax-syscall-note */
 /*
  * Driver for Broadcom MPI3 Storage Controllers
  *
  * Copyright (C) 2017-2022 Broadcom Inc.
- *  (mailto: mpi3mr-linuxdrv.pdl@broadcom.com)
+ *  (mailto: mpi3mr-freaxdrv.pdl@broadcom.com)
  *
  */
 
 #ifndef SCSI_BSG_MPI3MR_H_INCLUDED
 #define SCSI_BSG_MPI3MR_H_INCLUDED
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Definitions for BSG commands */
 #define MPI3MR_IOCTL_VERSION			0x06

@@ -5,13 +5,13 @@
  * This file contains the CPU initialization code.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include "hardware.h"
 #include "common.h"

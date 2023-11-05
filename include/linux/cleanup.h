@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GUARDS_H
-#define __LINUX_GUARDS_H
+#ifndef __freax_GUARDS_H
+#define __freax_GUARDS_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * DEFINE_FREE(name, type, free):
@@ -201,4 +201,4 @@ __DEFINE_LOCK_GUARD_1(_name, _type, _lock)
 __DEFINE_UNLOCK_GUARD(_name, void, _unlock, __VA_ARGS__)		\
 __DEFINE_LOCK_GUARD_0(_name, _lock)
 
-#endif /* __LINUX_GUARDS_H */
+#endif /* __freax_GUARDS_H */

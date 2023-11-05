@@ -6,7 +6,7 @@
 #ifndef _INTEL_GSC_UC_HECI_CMD_SUBMIT_H_
 #define _INTEL_GSC_UC_HECI_CMD_SUBMIT_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct i915_vma;
 struct intel_context;

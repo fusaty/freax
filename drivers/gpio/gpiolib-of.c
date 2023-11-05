@@ -7,28 +7,28 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_gpio.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
 
 #include "gpiolib.h"
 #include "gpiolib-of.h"
 
 /*
- * This is Linux-specific flags. By default controllers' and Linux' mapping
+ * This is freax-specific flags. By default controllers' and freax' mapping
  * match, but GPIO controllers are free to translate their own flags to
- * Linux-specific in their .xlate callback. Though, 1:1 mapping is recommended.
+ * freax-specific in their .xlate callback. Though, 1:1 mapping is recommended.
  */
 enum of_gpio_flags {
 	OF_GPIO_ACTIVE_LOW = 0x1,
@@ -364,7 +364,7 @@ static void of_gpio_flags_quirks(const struct device_node *np,
  * @index:	index of the GPIO
  * @flags:	a flags pointer to fill in
  *
- * Returns GPIO descriptor to use with Linux GPIO API, or one of the errno
+ * Returns GPIO descriptor to use with freax GPIO API, or one of the errno
  * value on the error condition. If @flags is not NULL the function also fills
  * in flags for the GPIO.
  */
@@ -414,7 +414,7 @@ out:
  * @propname:	Name of property containing gpio specifier(s)
  * @index:	index of the GPIO
  *
- * Returns GPIO number to use with Linux generic GPIO API, or one of the errno
+ * Returns GPIO number to use with freax generic GPIO API, or one of the errno
  * value on the error condition.
  */
 int of_get_named_gpio(const struct device_node *np, const char *propname,
@@ -709,7 +709,7 @@ struct gpio_desc *of_find_gpio(struct device_node *np, const char *con_id,
  *		of_find_gpio() or of_parse_own_gpio()
  * @dflags:	gpiod_flags - optional GPIO initialization flags
  *
- * Returns GPIO descriptor to use with Linux GPIO API, or one of the errno
+ * Returns GPIO descriptor to use with freax GPIO API, or one of the errno
  * value on the error condition.
  */
 static struct gpio_desc *of_parse_own_gpio(struct device_node *np,
@@ -953,7 +953,7 @@ static int of_gpio_simple_xlate(struct gpio_chip *gc,
 }
 
 #if IS_ENABLED(CONFIG_OF_GPIO_MM_GPIOCHIP)
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
+#include <freax/gpio/legacy-of-mm-gpiochip.h>
 /**
  * of_mm_gpiochip_add_data - Add memory mapped GPIO chip (bank)
  * @np:		device node of the GPIO chip

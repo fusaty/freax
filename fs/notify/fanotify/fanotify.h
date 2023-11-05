@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/fsnotify_backend.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/exportfs.h>
-#include <linux/hashtable.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/path.h>
+#include <freax/slab.h>
+#include <freax/exportfs.h>
+#include <freax/hashtable.h>
 
 extern struct kmem_cache *fanotify_mark_cache;
 extern struct kmem_cache *fanotify_fid_event_cachep;

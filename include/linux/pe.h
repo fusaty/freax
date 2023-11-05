@@ -5,22 +5,22 @@
  *
  * Author(s): Peter Jones <pjones@redhat.com>
  */
-#ifndef __LINUX_PE_H
-#define __LINUX_PE_H
+#ifndef __freax_PE_H
+#define __freax_PE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Starting from version v3.0, the major version field should be interpreted as
  * a bit mask of features supported by the kernel's EFI stub:
- * - 0x1: initrd loading from the LINUX_EFI_INITRD_MEDIA_GUID device path,
+ * - 0x1: initrd loading from the freax_EFI_INITRD_MEDIA_GUID device path,
  * - 0x2: initrd loading using the initrd= command line option, where the file
  *        may be specified using device path notation, and is not required to
  *        reside on the same volume as the loaded kernel image.
  *
  * The recommended way of loading and starting v1.0 or later kernels is to use
  * the LoadImage() and StartImage() EFI boot services, and expose the initrd
- * via the LINUX_EFI_INITRD_MEDIA_GUID device path.
+ * via the freax_EFI_INITRD_MEDIA_GUID device path.
  *
  * Versions older than v1.0 may support initrd loading via the image load
  * options (using initrd=, limited to the volume from which the kernel itself
@@ -29,15 +29,15 @@
  * The minor version field must remain 0x0.
  * (https://lore.kernel.org/all/efd6f2d4-547c-1378-1faa-53c044dbd297@gmail.com/)
  */
-#define LINUX_EFISTUB_MAJOR_VERSION		0x3
-#define LINUX_EFISTUB_MINOR_VERSION		0x0
+#define freax_EFISTUB_MAJOR_VERSION		0x3
+#define freax_EFISTUB_MINOR_VERSION		0x0
 
 /*
- * LINUX_PE_MAGIC appears at offset 0x38 into the MS-DOS header of EFI bootable
- * Linux kernel images that target the architecture as specified by the PE/COFF
+ * freax_PE_MAGIC appears at offset 0x38 into the MS-DOS header of EFI bootable
+ * freax kernel images that target the architecture as specified by the PE/COFF
  * header machine type field.
  */
-#define LINUX_PE_MAGIC	0x818223cd
+#define freax_PE_MAGIC	0x818223cd
 
 #define MZ_MAGIC	0x5a4d	/* "MZ" */
 
@@ -479,4 +479,4 @@ struct win_certificate {
 
 #endif /* !__ASSEMBLY__ */
 
-#endif /* __LINUX_PE_H */
+#endif /* __freax_PE_H */

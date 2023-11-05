@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/uaccess.h>
+#include <freax/sched.h>
 #include <asm/hw_breakpoint.h>
 #include <asm/sstep.h>
 #include <asm/cache.h>

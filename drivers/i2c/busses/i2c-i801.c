@@ -95,32 +95,32 @@
 
 #define DRV_NAME	"i801_smbus"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/itco_wdt.h>
-#include <linux/platform_data/x86/p2sb.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/itco_wdt.h>
+#include <freax/platform_data/x86/p2sb.h>
+#include <freax/pm_runtime.h>
+#include <freax/mutex.h>
 
 #if IS_ENABLED(CONFIG_I2C_MUX_GPIO) && defined CONFIG_DMI
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/i2c-mux-gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/platform_data/i2c-mux-gpio.h>
 #endif
 
 /* I801 SMBus address offsets */
@@ -204,7 +204,7 @@
 #define STATUS_FLAGS		(SMBHSTSTS_BYTE_DONE | SMBHSTSTS_INTR | \
 				 STATUS_ERROR_FLAGS)
 
-/* Older devices have their ID defined in <linux/pci_ids.h> */
+/* Older devices have their ID defined in <freax/pci_ids.h> */
 #define PCI_DEVICE_ID_INTEL_COMETLAKE_SMBUS		0x02a3
 #define PCI_DEVICE_ID_INTEL_COMETLAKE_H_SMBUS		0x06a3
 #define PCI_DEVICE_ID_INTEL_BAYTRAIL_SMBUS		0x0f12

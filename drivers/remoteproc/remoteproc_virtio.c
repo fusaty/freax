@@ -9,20 +9,20 @@
  * Brian Swetland <swetland@google.com>
  */
 
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
-#include <linux/err.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc.h>
+#include <freax/virtio.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_ring.h>
+#include <freax/err.h>
+#include <freax/kref.h>
+#include <freax/slab.h>
 
 #include "remoteproc_internal.h"
 

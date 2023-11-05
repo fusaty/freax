@@ -11,7 +11,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <elf.h>
-#include "../../include/linux/module_symbol.h"
+#include "../../include/freax/module_symbol.h"
 
 #include "list.h"
 #include "elfconfig.h"
@@ -96,7 +96,7 @@ struct module {
 	struct list_head unresolved_symbols;
 	bool is_gpl_compatible;
 	bool from_dump;		/* true if module was loaded from *.symvers */
-	bool is_vmlinux;
+	bool is_vmfreax;
 	bool seen;
 	bool has_init;
 	bool has_cleanup;
@@ -202,10 +202,10 @@ void modpost_log(enum loglevel loglevel, const char *fmt, ...);
 /*
  * warn - show the given message, then let modpost continue running, still
  *        allowing modpost to exit successfully. This should be used when
- *        we still allow to generate vmlinux and modules.
+ *        we still allow to generate vmfreax and modules.
  *
  * error - show the given message, then let modpost continue running, but fail
- *         in the end. This should be used when we should stop building vmlinux
+ *         in the end. This should be used when we should stop building vmfreax
  *         or modules, but we can continue running modpost to catch as many
  *         issues as possible.
  *

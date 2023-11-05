@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_SMT_H
-#define _LINUX_SCHED_SMT_H
+#ifndef _freax_SCHED_SMT_H
+#define _freax_SCHED_SMT_H
 
-#include <linux/static_key.h>
+#include <freax/static_key.h>
 
 #ifdef CONFIG_SCHED_SMT
 extern struct static_key_false sched_smt_present;
@@ -17,4 +17,4 @@ static inline bool sched_smt_active(void) { return false; }
 
 void arch_smt_update(void);
 
-#endif /* _LINUX_SCHED_SMT_H */
+#endif /* _freax_SCHED_SMT_H */

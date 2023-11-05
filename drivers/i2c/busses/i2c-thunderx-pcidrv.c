@@ -10,16 +10,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/pci.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/pci.h>
 
 #include "i2c-octeon-core.h"
 

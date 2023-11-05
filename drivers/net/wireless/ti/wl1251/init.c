@@ -5,9 +5,9 @@
  * Copyright (C) 2009 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "init.h"
 #include "wl12xx_80211.h"

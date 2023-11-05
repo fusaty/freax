@@ -260,7 +260,7 @@ At the beginning of every instrumented function KMSAN inserts a call to
 
   kmsan_context_state *__msan_get_context_state(void)
 
-``kmsan_context_state`` is declared in ``include/linux/kmsan.h``::
+``kmsan_context_state`` is declared in ``include/freax/kmsan.h``::
 
   struct kmsan_context_state {
     char param_tls[KMSAN_PARAM_SIZE];

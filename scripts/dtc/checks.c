@@ -534,25 +534,25 @@ static void check_explicit_phandles(struct check *c, struct dt_info *dti,
 {
 	struct node *root = dti->dt;
 	struct node *other;
-	cell_t phandle, linux_phandle;
+	cell_t phandle, freax_phandle;
 
 	/* Nothing should have assigned phandles yet */
 	assert(!node->phandle);
 
 	phandle = check_phandle_prop(c, dti, node, "phandle");
 
-	linux_phandle = check_phandle_prop(c, dti, node, "linux,phandle");
+	freax_phandle = check_phandle_prop(c, dti, node, "freax,phandle");
 
-	if (!phandle && !linux_phandle)
+	if (!phandle && !freax_phandle)
 		/* No valid phandles; nothing further to check */
 		return;
 
-	if (linux_phandle && phandle && (phandle != linux_phandle))
-		FAIL(c, dti, node, "mismatching 'phandle' and 'linux,phandle'"
+	if (freax_phandle && phandle && (phandle != freax_phandle))
+		FAIL(c, dti, node, "mismatching 'phandle' and 'freax,phandle'"
 		     " properties");
 
-	if (linux_phandle && !phandle)
-		phandle = linux_phandle;
+	if (freax_phandle && !phandle)
+		phandle = freax_phandle;
 
 	other = get_node_by_phandle(root, phandle);
 	if (other && (other != node)) {
@@ -713,7 +713,7 @@ static void check_alias_paths(struct check *c, struct dt_info *dti,
 
 	for_each_property(node, prop) {
 		if (streq(prop->name, "phandle")
-		    || streq(prop->name, "linux,phandle")) {
+		    || streq(prop->name, "freax,phandle")) {
 			continue;
 		}
 
@@ -1364,7 +1364,7 @@ static void check_chosen_node_stdout_path(struct check *c, struct dt_info *dti,
 
 	prop = get_property(node, "stdout-path");
 	if (!prop) {
-		prop = get_property(node, "linux,stdout-path");
+		prop = get_property(node, "freax,stdout-path");
 		if (!prop)
 			return;
 		FAIL_PROP(c, dti, node, prop, "Use 'stdout-path' instead");

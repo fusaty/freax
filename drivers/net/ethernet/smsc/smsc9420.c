@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/pci.h>
+#include <freax/if_vlan.h>
+#include <freax/dma-mapping.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 #include "smsc9420.h"
 

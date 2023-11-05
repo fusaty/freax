@@ -10,11 +10,11 @@
 #ifndef	__CXGBIT_LRO_H__
 #define	__CXGBIT_LRO_H__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
 
 #define LRO_FLUSH_LEN_MAX	65535
 

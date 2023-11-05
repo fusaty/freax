@@ -9,32 +9,32 @@
  *  Copyright (C) 2003  David Borowski.
  */
 
-#include <linux/kernel.h>
-#include <linux/vt.h>
-#include <linux/tty.h>
-#include <linux/mm.h>		/* __get_free_page() and friends */
-#include <linux/vt_kern.h>
-#include <linux/ctype.h>
-#include <linux/selection.h>
-#include <linux/unistd.h>
-#include <linux/jiffies.h>
-#include <linux/kthread.h>
-#include <linux/keyboard.h>	/* for KT_SHIFT */
-#include <linux/kbd_kern.h>	/* for vc_kbd_* and friends */
-#include <linux/input.h>
-#include <linux/kmod.h>
+#include <freax/kernel.h>
+#include <freax/vt.h>
+#include <freax/tty.h>
+#include <freax/mm.h>		/* __get_free_page() and friends */
+#include <freax/vt_kern.h>
+#include <freax/ctype.h>
+#include <freax/selection.h>
+#include <freax/unistd.h>
+#include <freax/jiffies.h>
+#include <freax/kthread.h>
+#include <freax/keyboard.h>	/* for KT_SHIFT */
+#include <freax/kbd_kern.h>	/* for vc_kbd_* and friends */
+#include <freax/input.h>
+#include <freax/kmod.h>
 
 /* speakup_*_selection */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/consolemap.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/consolemap.h>
 
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <freax/spinlock.h>
+#include <freax/notifier.h>
 
-#include <linux/uaccess.h>	/* copy_from|to|user() and others */
+#include <freax/uaccess.h>	/* copy_from|to|user() and others */
 
 #include "spk_priv.h"
 #include "speakup.h"

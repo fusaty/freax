@@ -11,9 +11,9 @@
 #ifndef _SPARX5_MAIN_REGS_H_
 #define _SPARX5_MAIN_REGS_H_
 
-#include <linux/bitfield.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <freax/bitfield.h>
+#include <freax/types.h>
+#include <freax/bug.h>
 
 enum sparx5_target {
 	TARGET_ANA_AC = 1,

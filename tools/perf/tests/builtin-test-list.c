@@ -2,10 +2,10 @@
 #include <dirent.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <string.h>
 #include <stdlib.h>
 #include <sys/types.h>

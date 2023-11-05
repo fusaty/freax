@@ -4,11 +4,11 @@
  * Copyright (c) 2021, Google LLC.
  * Pasha Tatashin <pasha.tatashin@soleen.com>
  */
-#ifndef __LINUX_PAGE_TABLE_CHECK_H
-#define __LINUX_PAGE_TABLE_CHECK_H
+#ifndef __freax_PAGE_TABLE_CHECK_H
+#define __freax_PAGE_TABLE_CHECK_H
 
 #ifdef CONFIG_PAGE_TABLE_CHECK
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 
 extern struct static_key_true page_table_check_disabled;
 extern struct page_ext_operations page_table_check_ops;
@@ -146,4 +146,4 @@ static inline void page_table_check_pte_clear_range(struct mm_struct *mm,
 }
 
 #endif /* CONFIG_PAGE_TABLE_CHECK */
-#endif /* __LINUX_PAGE_TABLE_CHECK_H */
+#endif /* __freax_PAGE_TABLE_CHECK_H */

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPILINUX_KEXEC_H
-#define _UAPILINUX_KEXEC_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPIfreax_KEXEC_H
+#define _UAPIfreax_KEXEC_H
 
 /* kexec system call -  It loads the new kernel to boot into.
  * kexec does not sync, or unmount filesystems so if you need
  * that to happen you need to do that yourself.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* kexec flags for different usage scenarios */
 #define KEXEC_ON_CRASH		0x00000001
@@ -63,4 +63,4 @@ struct kexec_segment {
 
 #endif /* __KERNEL__ */
 
-#endif /* _UAPILINUX_KEXEC_H */
+#endif /* _UAPIfreax_KEXEC_H */

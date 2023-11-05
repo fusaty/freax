@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #ifndef __PCI_IRQ_H__
 #define __PCI_IRQ_H__
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 
 #define MLX5_MAX_IRQ_NAME (32)
 /* max irq_index is 2047, so four chars */

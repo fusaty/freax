@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2021 Intel Corporation. All rights reserved. */
 
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/acpi.h>
 #include <cxl.h>
 #include "test/mock.h"
 

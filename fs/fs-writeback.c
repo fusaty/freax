@@ -14,21 +14,21 @@
  *		Additions for address_space-based writeback
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/tracepoint.h>
-#include <linux/device.h>
-#include <linux/memcontrol.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/kthread.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/tracepoint.h>
+#include <freax/device.h>
+#include <freax/memcontrol.h>
 #include "internal.h"
 
 /*

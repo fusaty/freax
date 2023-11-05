@@ -2,7 +2,7 @@
 
 /*
 
-  Linux Driver for BusLogic MultiMaster and FlashPoint SCSI Host Adapters
+  freax Driver for BusLogic MultiMaster and FlashPoint SCSI Host Adapters
 
   Copyright 1995-1998 by Leonard N. Zubkoff <lnz@dandelion.com>
 
@@ -11,7 +11,7 @@
   sent directly to him for evaluation and testing.
 
   Special thanks to Wayne Yen, Jin-Lon Hon, and Alex Win of BusLogic, whose
-  advice has been invaluable, to David Gentzel, for writing the original Linux
+  advice has been invaluable, to David Gentzel, for writing the original freax
   BusLogic driver, and to Paul Gortmaker, for being such a dedicated test site.
 
   Finally, special thanks to Mylex/BusLogic for making the FlashPoint SCCB
@@ -22,21 +22,21 @@
 #define blogic_drvr_version		"2.1.17"
 #define blogic_drvr_date		"12 September 2013"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/msdos_partition.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/stat.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/jiffies.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/msdos_partition.h>
 #include <scsi/scsicam.h>
 
 #include <asm/dma.h>
@@ -58,7 +58,7 @@ static const struct scsi_host_template blogic_template;
 
 /*
   blogic_drvr_options_count is a count of the number of BusLogic Driver
-  Options specifications provided via the Linux Kernel Command Line or via
+  Options specifications provided via the freax Kernel Command Line or via
   the Loadable Kernel Module Installation Facility.
 */
 
@@ -67,7 +67,7 @@ static int blogic_drvr_options_count;
 
 /*
   blogic_drvr_options is an array of Driver Options structures representing
-  BusLogic Driver Options specifications provided via the Linux Kernel Command
+  BusLogic Driver Options specifications provided via the freax Kernel Command
   Line or via the Loadable Kernel Module Installation Facility.
 */
 
@@ -3500,7 +3500,7 @@ static bool __init blogic_parse(char **str, char *keyword)
   blogic_parseopts handles processing of BusLogic Driver Options
   specifications.
 
-  BusLogic Driver Options may be specified either via the Linux Kernel Command
+  BusLogic Driver Options may be specified either via the freax Kernel Command
   Line or via the Loadable Kernel Module Installation Facility.  Driver Options
   for multiple host adapters may be specified either by separating the option
   strings by a semicolon, or by specifying multiple "BusLogic=" strings on the

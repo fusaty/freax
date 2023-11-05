@@ -4,15 +4,15 @@
  * (C) 2012  Sasha Levin <levinsasha928@gmail.com>
  */
 
-#ifndef _LINUX_HASHTABLE_H
-#define _LINUX_HASHTABLE_H
+#ifndef _freax_HASHTABLE_H
+#define _freax_HASHTABLE_H
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/hash.h>
+#include <freax/log2.h>
 
 #define DEFINE_HASHTABLE(name, bits)						\
 	struct hlist_head name[1 << (bits)] =					\

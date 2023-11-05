@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_COMPILER_H
-#define LINUX_COMPILER_H
+#ifndef freax_COMPILER_H
+#define freax_COMPILER_H
 
-#include "../../../include/linux/compiler_types.h"
+#include "../../../include/freax/compiler_types.h"
 
 #define WRITE_ONCE(var, val) \
 	(*((volatile typeof(val) *)(&(var))) = (val))

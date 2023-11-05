@@ -6,21 +6,21 @@
  *	Peter Wang <peter.wang@mediatek.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/soc/mediatek/mtk_sip_svc.h>
+#include <freax/arm-smccc.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_qos.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/soc/mediatek/mtk_sip_svc.h>
 
 #include <ufs/ufshcd.h>
 #include "ufshcd-pltfrm.h"

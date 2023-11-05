@@ -9,12 +9,12 @@
  * <vvlasov@dev.rtsoft.ru>
  */
 
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/watchdog.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
+#include <freax/watchdog.h>
 
 /* default timeout (secs) */
 #define WDT_TIMEOUT 32

@@ -6,11 +6,11 @@
  *  Copyright (C) 2001-2003 Pavel Machek <pavel@ucw.cz>
  */
 
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/dmi.h>
-#include <linux/cpumask.h>
-#include <linux/pgtable.h>
+#include <freax/acpi.h>
+#include <freax/memblock.h>
+#include <freax/dmi.h>
+#include <freax/cpumask.h>
+#include <freax/pgtable.h>
 #include <asm/segment.h>
 #include <asm/desc.h>
 #include <asm/cacheflush.h>
@@ -18,7 +18,7 @@
 #include <asm/hypervisor.h>
 #include <asm/smp.h>
 
-#include <linux/ftrace.h>
+#include <freax/ftrace.h>
 #include "../../realmode/rm/wakeup.h"
 #include "sleep.h"
 

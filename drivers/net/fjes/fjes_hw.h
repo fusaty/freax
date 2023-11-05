@@ -7,9 +7,9 @@
 #ifndef FJES_HW_H_
 #define FJES_HW_H_
 
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
+#include <freax/netdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/vmalloc.h>
 
 #include "fjes_regs.h"
 

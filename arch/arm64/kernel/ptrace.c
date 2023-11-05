@@ -8,26 +8,26 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/audit.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/seccomp.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <freax/audit.h>
+#include <freax/compat.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/nospec.h>
+#include <freax/smp.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/seccomp.h>
+#include <freax/security.h>
+#include <freax/init.h>
+#include <freax/signal.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/regset.h>
+#include <freax/elf.h>
 
 #include <asm/compat.h>
 #include <asm/cpufeature.h>

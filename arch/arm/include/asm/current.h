@@ -29,7 +29,7 @@ static __always_inline __attribute_const__ struct task_struct *get_current(void)
 	 * load the TLS register only once in every function.
 	 *
 	 * Clang < 13.0.1 gets this wrong for Thumb2 builds:
-	 * https://github.com/ClangBuiltLinux/linux/issues/1485
+	 * https://github.com/ClangBuiltfreax/freax/issues/1485
 	 */
 	cur = __builtin_thread_pointer();
 #elif defined(CONFIG_CURRENT_POINTER_IN_TPIDRURO) || defined(CONFIG_SMP)
@@ -54,7 +54,7 @@ static __always_inline __attribute_const__ struct task_struct *get_current(void)
 	    "	.popsection					\n\t"
 #endif
 	    : "=r"(cur));
-#elif __LINUX_ARM_ARCH__>= 7 || \
+#elif __freax_ARM_ARCH__>= 7 || \
       !defined(CONFIG_ARM_HAS_GROUP_RELOCS) || \
       (defined(MODULE) && defined(CONFIG_ARM_MODULE_PLTS))
 	cur = __current;

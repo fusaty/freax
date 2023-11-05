@@ -5,8 +5,8 @@
  */
 
 #include "opl4_local.h"
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
 #include <sound/info.h>
 
 static int snd_opl4_mem_proc_open(struct snd_info_entry *entry,

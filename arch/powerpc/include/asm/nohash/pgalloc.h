@@ -2,8 +2,8 @@
 #ifndef _ASM_POWERPC_NOHASH_PGALLOC_H
 #define _ASM_POWERPC_NOHASH_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 
 extern void tlb_remove_table(struct mmu_gather *tlb, void *table);
 #ifdef CONFIG_PPC64

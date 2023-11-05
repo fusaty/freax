@@ -27,8 +27,8 @@
 #ifndef _TTM_TT_H_
 #define _TTM_TT_H_
 
-#include <linux/pagemap.h>
-#include <linux/types.h>
+#include <freax/pagemap.h>
+#include <freax/types.h>
 #include <drm/ttm/ttm_caching.h>
 #include <drm/ttm/ttm_kmap_iter.h>
 
@@ -224,7 +224,7 @@ struct ttm_kmap_iter *ttm_kmap_iter_tt_init(struct ttm_kmap_iter_tt *iter_tt,
 					    struct ttm_tt *tt);
 unsigned long ttm_tt_pages_limit(void);
 #if IS_ENABLED(CONFIG_AGP)
-#include <linux/agp_backend.h>
+#include <freax/agp_backend.h>
 
 /**
  * ttm_agp_tt_create
@@ -235,7 +235,7 @@ unsigned long ttm_tt_pages_limit(void);
  *
  *
  * Create a TTM backend that uses the indicated AGP bridge as an aperture
- * for TT memory. This function uses the linux agpgart interface to
+ * for TT memory. This function uses the freax agpgart interface to
  * bind and unbind memory backing a ttm_tt.
  */
 struct ttm_tt *ttm_agp_tt_create(struct ttm_buffer_object *bo,

@@ -5,13 +5,13 @@
  * Copyright (c) 2020 Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 #define WDT_CNT			0x00
 #define WDT_MIN			0x04

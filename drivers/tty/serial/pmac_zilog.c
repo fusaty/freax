@@ -26,27 +26,27 @@
 #undef DEBUG
 #undef USE_CTRL_O_SYSRQ
 
-#include <linux/module.h>
-#include <linux/tty.h>
+#include <freax/module.h>
+#include <freax/tty.h>
 
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/bitops.h>
-#include <linux/sysrq.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/tty_flip.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/bitops.h>
+#include <freax/sysrq.h>
+#include <freax/mutex.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 #include <asm/sections.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 
 #ifdef CONFIG_PPC_PMAC
@@ -54,12 +54,12 @@
 #include <asm/pmac_feature.h>
 #include <asm/macio.h>
 #else
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #define of_machine_is_compatible(x) (0)
 #endif
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
 
 #include "pmac_zilog.h"
 

@@ -5,7 +5,7 @@
  * Copyright (c) 2021, Oracle and/or its affiliates.
  */
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 #include "../integrity.h"
 
 static __init int machine_keyring_init(void)

@@ -4,8 +4,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/threads.h>
-#include <linux/percpu.h>
+#include <freax/threads.h>
+#include <freax/percpu.h>
 
 extern const struct seq_operations cpuinfo_op;
 

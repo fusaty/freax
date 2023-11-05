@@ -9,9 +9,9 @@
 #include "ps.h"
 #include "regd.h"
 #include "pci.h"
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/udp.h>
+#include <freax/ip.h>
+#include <freax/module.h>
+#include <freax/udp.h>
 
 /*
  *NOTICE!!!: This file will be very big, we should

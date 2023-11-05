@@ -2,25 +2,25 @@
 /*
  * Wistron laptop button driver
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkfreax.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <freax/io.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/mc146818rtc.h>
+#include <freax/module.h>
+#include <freax/preempt.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
 
 /* How often we poll keys - msecs */
 #define POLL_INTERVAL_DEFAULT	500 /* when idle */

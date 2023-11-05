@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_SUSPEND_IOCTLS_H
-#define _LINUX_SUSPEND_IOCTLS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_SUSPEND_IOCTLS_H
+#define _freax_SUSPEND_IOCTLS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 /*
  * This structure is used to pass the values needed for the identification
  * of the resume swap area from a user space to the kernel via the
@@ -31,4 +31,4 @@ struct resume_swap_area {
 #define SNAPSHOT_ALLOC_SWAP_PAGE	_IOR(SNAPSHOT_IOC_MAGIC, 20, __kernel_loff_t)
 #define SNAPSHOT_IOC_MAXNR	20
 
-#endif /* _LINUX_SUSPEND_IOCTLS_H */
+#endif /* _freax_SUSPEND_IOCTLS_H */

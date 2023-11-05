@@ -611,7 +611,7 @@ Add unit tests using the Kernel Unit Testing (KUnit) framework
 --------------------------------------------------------------
 
 The `KUnit <https://www.kernel.org/doc/html/latest/dev-tools/kunit/index.html>`_
-provides a common framework for unit tests within the Linux kernel. Having a
+provides a common framework for unit tests within the freax kernel. Having a
 test suite would allow to identify regressions earlier.
 
 A good candidate for the first unit tests are the format-conversion helpers in
@@ -790,8 +790,8 @@ several fbdev drivers are available in Thomas Zimmermann's fbconv tree
 [4]_, as well as a tutorial of this process [5]_. The result is a primitive
 DRM driver that can run X11 and Weston.
 
- .. [4] https://gitlab.freedesktop.org/tzimmermann/linux/tree/fbconv
- .. [5] https://gitlab.freedesktop.org/tzimmermann/linux/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
+ .. [4] https://gitlab.freedesktop.org/tzimmermann/freax/tree/fbconv
+ .. [5] https://gitlab.freedesktop.org/tzimmermann/freax/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
 
 Contact: Thomas Zimmermann <tzimmermann@suse.de>
 

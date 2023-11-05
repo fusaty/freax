@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_REFCOUNT_H
-#define _TOOLS_LINUX_REFCOUNT_H
+#ifndef _TOOLS_freax_REFCOUNT_H
+#define _TOOLS_freax_REFCOUNT_H
 
 /*
  * Variant of atomic_t specialized for reference counts.
@@ -38,8 +38,8 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
 
 #ifdef NDEBUG
 #define REFCOUNT_WARN(cond, str) (void)(cond)
@@ -149,4 +149,4 @@ bool refcount_dec_and_test(refcount_t *r)
 }
 
 
-#endif /* _ATOMIC_LINUX_REFCOUNT_H */
+#endif /* _ATOMIC_freax_REFCOUNT_H */

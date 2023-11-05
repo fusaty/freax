@@ -15,18 +15,18 @@
  * Peter Zijlstra <peterz@infradead.org>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/task.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/clock.h>
-#include <linux/export.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/task.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/wake_q.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/clock.h>
+#include <freax/export.h>
+#include <freax/rwsem.h>
+#include <freax/atomic.h>
 #include <trace/events/lock.h>
 
 #ifndef CONFIG_PREEMPT_RT

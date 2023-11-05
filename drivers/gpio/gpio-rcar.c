@@ -6,20 +6,20 @@
  *  Copyright (C) 2013 Magnus Damm
  */
 
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 
 struct gpio_rcar_bank_info {
 	u32 iointsel;

@@ -7,14 +7,14 @@
  * See RFC2474 for a description of the DSCP field within the IP Header.
 */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/dsfield.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_DSCP.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_DSCP.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: DSCP/TOS field modification");

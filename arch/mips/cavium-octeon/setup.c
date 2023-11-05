@@ -5,30 +5,30 @@
  *
  * Copyright (C) 2004-2007 Cavium Networks
  * Copyright (C) 2008, 2009 Wind River Systems
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@freax-mips.org>
  */
-#include <linux/compiler.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/serial.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/string.h>	/* for memset */
-#include <linux/tty.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/kexec.h>
+#include <freax/compiler.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/serial.h>
+#include <freax/smp.h>
+#include <freax/types.h>
+#include <freax/string.h>	/* for memset */
+#include <freax/tty.h>
+#include <freax/time.h>
+#include <freax/platform_device.h>
+#include <freax/serial_core.h>
+#include <freax/serial_8250.h>
+#include <freax/of_fdt.h>
+#include <freax/libfdt.h>
+#include <freax/kexec.h>
 
 #include <asm/processor.h>
 #include <asm/reboot.h>
@@ -311,7 +311,7 @@ EXPORT_SYMBOL(octeon_is_simulation);
 
 /**
  * octeon_is_pci_host - Return true if Octeon is in PCI Host mode. This means
- * Linux can control the PCI bus.
+ * freax can control the PCI bus.
  *
  * Return: Non-zero if Octeon is in host mode.
  */
@@ -382,7 +382,7 @@ static int octeon_get_boot_uart(void)
 }
 
 /**
- * octeon_get_boot_coremask - Get the coremask Linux was booted on.
+ * octeon_get_boot_coremask - Get the coremask freax was booted on.
  *
  * Return: Core mask
  */
@@ -832,9 +832,9 @@ void __init prom_init(void)
 	octeon_uart = octeon_get_boot_uart();
 
 #ifdef CONFIG_SMP
-	octeon_write_lcd("LinuxSMP");
+	octeon_write_lcd("freaxSMP");
 #else
-	octeon_write_lcd("Linux");
+	octeon_write_lcd("freax");
 #endif
 
 	octeon_setup_delays();

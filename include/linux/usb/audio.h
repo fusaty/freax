@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * <linux/usb/audio.h> -- USB Audio definitions.
+ * <freax/usb/audio.h> -- USB Audio definitions.
  *
  * Copyright (C) 2006 Thumtronics Pty Ltd.
  * Developed for Thumtronics by Grey Innovation
@@ -15,10 +15,10 @@
  * Types and defines in this file are either specific to version 1.0 of
  * this standard or common for newer versions.
  */
-#ifndef __LINUX_USB_AUDIO_H
-#define __LINUX_USB_AUDIO_H
+#ifndef __freax_USB_AUDIO_H
+#define __freax_USB_AUDIO_H
 
-#include <uapi/linux/usb/audio.h>
+#include <uapi/freax/usb/audio.h>
 
 
 struct usb_audio_control {
@@ -39,4 +39,4 @@ struct usb_audio_control_selector {
 	struct usb_descriptor_header *desc;
 };
 
-#endif /* __LINUX_USB_AUDIO_H */
+#endif /* __freax_USB_AUDIO_H */

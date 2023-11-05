@@ -6,9 +6,9 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/rio.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/rio.h>
 
 #define RIO_MAX_CHK_RETRY	3
 #define RIO_MPORT_ANY		(-1)

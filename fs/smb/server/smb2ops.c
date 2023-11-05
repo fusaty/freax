@@ -4,7 +4,7 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "glob.h"
 
 #include "auth.h"

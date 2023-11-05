@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
 
 #include "kxsd9.h"
 

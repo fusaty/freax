@@ -8,13 +8,13 @@
  * which are in turn based on sparc64 and x86 code.
  */
 
-#include <linux/cpumask.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/perf/riscv_pmu.h>
-#include <linux/printk.h>
-#include <linux/smp.h>
-#include <linux/sched_clock.h>
+#include <freax/cpumask.h>
+#include <freax/irq.h>
+#include <freax/irqdesc.h>
+#include <freax/perf/riscv_pmu.h>
+#include <freax/printk.h>
+#include <freax/smp.h>
+#include <freax/sched_clock.h>
 
 #include <asm/sbi.h>
 

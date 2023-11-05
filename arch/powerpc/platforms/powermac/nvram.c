@@ -4,20 +4,20 @@
  *
  *  Todo: - add support for the OF persistent properties
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/memblock.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/nvram.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/memblock.h>
+#include <freax/completion.h>
+#include <freax/spinlock.h>
+#include <freax/of_address.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

@@ -6,17 +6,17 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/netfs.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/pagemap.h>
+#include <freax/sched.h>
+#include <freax/swap.h>
+#include <freax/uio.h>
+#include <freax/netfs.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

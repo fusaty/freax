@@ -6,11 +6,11 @@
  * Copyright (C) 2019, Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/ktime.h>
-#include <linux/string_helpers.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/ktime.h>
+#include <freax/string_helpers.h>
 
 #include "tunnel.h"
 #include "tb.h"

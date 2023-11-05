@@ -4,12 +4,12 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
 
 #include "qlcnic.h"
 
@@ -280,7 +280,7 @@ qlcnic_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *drvinfo)
 	strscpy(drvinfo->bus_info, pci_name(adapter->pdev),
 		sizeof(drvinfo->bus_info));
 	strscpy(drvinfo->driver, qlcnic_driver_name, sizeof(drvinfo->driver));
-	strscpy(drvinfo->version, QLCNIC_LINUX_VERSIONID,
+	strscpy(drvinfo->version, QLCNIC_freax_VERSIONID,
 		sizeof(drvinfo->version));
 }
 

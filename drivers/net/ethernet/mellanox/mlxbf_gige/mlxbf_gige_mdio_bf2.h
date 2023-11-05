@@ -16,7 +16,7 @@
 #ifndef __MLXBF_GIGE_MDIO_BF2_H__
 #define __MLXBF_GIGE_MDIO_BF2_H__
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define MLXBF2_GIGE_MDIO_GW_OFFSET	0x0
 #define MLXBF2_GIGE_MDIO_CFG_OFFSET	0x4

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * SDL Inc. RISCom/N2 synchronous serial card driver for Linux
+ * SDL Inc. RISCom/N2 synchronous serial card driver for freax
  *
  * Copyright (C) 1998-2003 Krzysztof Halasa <khc@pm.waw.pl>
  *
- * For information see <https://www.kernel.org/pub/linux/utils/net/hdlc/>
+ * For information see <https://www.kernel.org/pub/freax/utils/net/hdlc/>
  *
  * Note: integrated CSU/DSU/DDS are not supported by this driver
  *
@@ -15,20 +15,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/capability.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/moduleparam.h>
+#include <freax/netdevice.h>
+#include <freax/hdlc.h>
 #include <asm/io.h>
 #include "hd64570.h"
 

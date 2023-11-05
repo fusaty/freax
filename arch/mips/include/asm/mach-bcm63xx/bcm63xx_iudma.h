@@ -2,7 +2,7 @@
 #ifndef BCM63XX_IUDMA_H_
 #define BCM63XX_IUDMA_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * rx/tx dma descriptor

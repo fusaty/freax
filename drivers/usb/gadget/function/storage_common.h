@@ -2,8 +2,8 @@
 #ifndef USB_STORAGE_COMMON_H
 #define USB_STORAGE_COMMON_H
 
-#include <linux/device.h>
-#include <linux/usb/storage.h>
+#include <freax/device.h>
+#include <freax/usb/storage.h>
 #include <scsi/scsi.h>
 #include <asm/unaligned.h>
 

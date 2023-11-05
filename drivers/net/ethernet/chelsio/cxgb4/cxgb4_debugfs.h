@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for freax.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,7 +35,7 @@
 #ifndef __CXGB4_DEBUGFS_H
 #define __CXGB4_DEBUGFS_H
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 struct t4_debugfs_entry {
 	const char *name;

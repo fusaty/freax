@@ -6,11 +6,11 @@
 // Copyright (c) 2022 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
 //
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pse-pd/pse.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pse-pd/pse.h>
+#include <freax/regulator/consumer.h>
 
 struct pse_reg_priv {
 	struct pse_controller_dev pcdev;

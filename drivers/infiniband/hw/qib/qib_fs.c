@@ -32,12 +32,12 @@
  * SOFTWARE.
  */
 
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/mount.h>
+#include <freax/pagemap.h>
+#include <freax/init.h>
+#include <freax/namei.h>
 
 #include "qib.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx Ethernet driver for Linux
+ * Intel IXP4xx Ethernet driver for freax
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  *
@@ -20,26 +20,26 @@
  * bits 5 -> 31	- physical descriptor address
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
-#include <linux/soc/ixp4xx/cpu.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/net_tstamp.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/ptp_classify.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/soc/ixp4xx/npe.h>
+#include <freax/soc/ixp4xx/qmgr.h>
+#include <freax/soc/ixp4xx/cpu.h>
+#include <freax/types.h>
 
 #define IXP4XX_ETH_NPEA		0x00
 #define IXP4XX_ETH_NPEB		0x10

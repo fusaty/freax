@@ -6,7 +6,7 @@
 #ifndef __INTEL_SDVO_H__
 #define __INTEL_SDVO_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "i915_reg_defs.h"
 

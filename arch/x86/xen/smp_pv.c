@@ -13,17 +13,17 @@
  * result, all CPUs are treated as if they're single-core and
  * single-threaded.
  */
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/irq_work.h>
-#include <linux/tick.h>
-#include <linux/nmi.h>
-#include <linux/cpuhotplug.h>
-#include <linux/stackprotector.h>
-#include <linux/pgtable.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/irq_work.h>
+#include <freax/tick.h>
+#include <freax/nmi.h>
+#include <freax/cpuhotplug.h>
+#include <freax/stackprotector.h>
+#include <freax/pgtable.h>
 
 #include <asm/paravirt.h>
 #include <asm/idtentry.h>
@@ -171,7 +171,7 @@ static void __init _get_smp_config(unsigned int early)
 		}
 	}
 #ifdef CONFIG_HOTPLUG_CPU
-	/* This is akin to using 'nr_cpus' on the Linux command line.
+	/* This is akin to using 'nr_cpus' on the freax command line.
 	 * Which is OK as when we use 'dom0_max_vcpus=X' we can only
 	 * have up to X, while nr_cpu_ids is greater than X. This
 	 * normally is not a problem, except when CPU hotplugging

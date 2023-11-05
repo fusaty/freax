@@ -6,7 +6,7 @@
 #ifndef __DRIVERS_INTERCONNECT_QCOM_ICC_COMMON_H__
 #define __DRIVERS_INTERCONNECT_QCOM_ICC_COMMON_H__
 
-#include <linux/interconnect-provider.h>
+#include <freax/interconnect-provider.h>
 
 struct icc_node_data *qcom_icc_xlate_extended(struct of_phandle_args *spec, void *data);
 

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-2-Clause
 /* Copyright (C) 2018 KVASER AB, Sweden. All rights reserved.
  * Parts of this driver are based on the following:
- *  - Kvaser linux pciefd driver (version 5.42)
- *  - PEAK linux canfd driver
+ *  - Kvaser freax pciefd driver (version 5.42)
+ *  - PEAK freax canfd driver
  */
 
-#include <linux/bitfield.h>
-#include <linux/can/dev.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
+#include <freax/bitfield.h>
+#include <freax/can/dev.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/timer.h>
 
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("Kvaser AB <support@kvaser.com>");

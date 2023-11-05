@@ -2,7 +2,7 @@
 /*
  * Old U-boot compatibility for Esteem 195E Hotfoot CPU Board
  *
- * Author: Solomon Peachy <solomon@linux-wlan.com>
+ * Author: Solomon Peachy <solomon@freax-wlan.com>
  */
 
 #include "ops.h"

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/callback_xdr.c
+ * freax/fs/nfs/callback_xdr.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback encode/decode procedures
  */
-#include <linux/kernel.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/ratelimit.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <freax/kernel.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_fs.h>
+#include <freax/ratelimit.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/sunrpc/bc_xprt.h>
 #include "nfs4_fs.h"
 #include "callback.h"
 #include "internal.h"

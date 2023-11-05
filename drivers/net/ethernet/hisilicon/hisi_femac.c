@@ -5,15 +5,15 @@
  * Copyright (c) 2016 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/circ_buf.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/circ_buf.h>
+#include <freax/clk.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 /* MAC control register list */
 #define MAC_PORTSEL			0x0200

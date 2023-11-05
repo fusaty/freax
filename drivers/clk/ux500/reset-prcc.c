@@ -3,15 +3,15 @@
  * Reset controller portions for the U8500 PRCC
  * Copyright (C) 2021 Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/reset-controller.h>
-#include <linux/bits.h>
-#include <linux/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/reset-controller.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
 
 #include "prcc.h"
 #include "reset-prcc.h"

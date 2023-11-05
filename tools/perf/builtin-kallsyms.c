@@ -8,7 +8,7 @@
  */
 #include <inttypes.h>
 #include "builtin.h"
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <subcmd/parse-options.h>
 #include "debug.h"
 #include "dso.h"
@@ -62,7 +62,7 @@ int cmd_kallsyms(int argc, const char **argv)
 	if (argc < 1)
 		usage_with_options(kallsyms_usage, options);
 
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmfreax_path = (symbol_conf.vmfreax_name == NULL);
 	if (symbol__init(NULL) < 0)
 		return -1;
 

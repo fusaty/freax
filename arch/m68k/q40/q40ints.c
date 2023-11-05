@@ -11,11 +11,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
 #include <asm/machdep.h>
 #include <asm/ptrace.h>

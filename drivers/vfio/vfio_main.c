@@ -10,33 +10,33 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
+#include <freax/cdev.h>
+#include <freax/compat.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/idr.h>
+#include <freax/iommu.h>
 #ifdef CONFIG_HAVE_KVM
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #endif
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/pm_runtime.h>
-#include <linux/interval_tree.h>
-#include <linux/iova_bitmap.h>
-#include <linux/iommufd.h>
+#include <freax/list.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/rwsem.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/vfio.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
+#include <freax/pm_runtime.h>
+#include <freax/interval_tree.h>
+#include <freax/iova_bitmap.h>
+#include <freax/iommufd.h>
 #include "vfio.h"
 
 #define DRIVER_VERSION	"0.3"

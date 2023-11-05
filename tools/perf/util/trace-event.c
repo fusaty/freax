@@ -6,8 +6,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
 #include <traceevent/event-parse.h>
 #include <api/fs/tracing_path.h>
 #include <api/fs/fs.h>
@@ -68,7 +68,7 @@ void trace_event__cleanup(struct trace_event *t)
 }
 
 /*
- * Returns pointer with encoded error via <linux/err.h> interface.
+ * Returns pointer with encoded error via <freax/err.h> interface.
  */
 static struct tep_event*
 tp_format(const char *sys, const char *name)
@@ -98,7 +98,7 @@ tp_format(const char *sys, const char *name)
 }
 
 /*
- * Returns pointer with encoded error via <linux/err.h> interface.
+ * Returns pointer with encoded error via <freax/err.h> interface.
  */
 struct tep_event*
 trace_event__tp_format(const char *sys, const char *name)

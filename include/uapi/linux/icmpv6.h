@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_ICMPV6_H
-#define _UAPI_LINUX_ICMPV6_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_ICMPV6_H
+#define _UAPI_freax_ICMPV6_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 struct icmp6hdr {
@@ -175,4 +175,4 @@ struct icmp6_filter {
 #define MLD2_ALL_MCR_INIT { { { 0xff,0x02,0,0,0,0,0,0,0,0,0,0,0,0,0,0x16 } } }
 
 
-#endif /* _UAPI_LINUX_ICMPV6_H */
+#endif /* _UAPI_freax_ICMPV6_H */

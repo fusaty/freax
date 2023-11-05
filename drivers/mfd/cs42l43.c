@@ -6,18 +6,18 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/build_bug.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
+#include <freax/bitops.h>
+#include <freax/build_bug.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/jiffies.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/soundwire/sdw.h>
 
 #include "cs42l43.h"
 

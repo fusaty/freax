@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Yama Linux Security Module
+ * Yama freax Security Module
  *
  * Author: Kees Cook <keescook@chromium.org>
  *
@@ -8,16 +8,16 @@
  * Copyright (C) 2011 The Chromium OS Authors.
  */
 
-#include <linux/lsm_hooks.h>
-#include <linux/sysctl.h>
-#include <linux/ptrace.h>
-#include <linux/prctl.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
-#include <linux/string_helpers.h>
-#include <linux/task_work.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <freax/lsm_hooks.h>
+#include <freax/sysctl.h>
+#include <freax/ptrace.h>
+#include <freax/prctl.h>
+#include <freax/ratelimit.h>
+#include <freax/workqueue.h>
+#include <freax/string_helpers.h>
+#include <freax/task_work.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
 
 #define YAMA_SCOPE_DISABLED	0
 #define YAMA_SCOPE_RELATIONAL	1

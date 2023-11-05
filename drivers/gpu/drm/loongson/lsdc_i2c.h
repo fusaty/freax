@@ -6,8 +6,8 @@
 #ifndef __LSDC_I2C_H__
 #define __LSDC_I2C_H__
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 struct lsdc_i2c {
 	struct i2c_adapter adapter;

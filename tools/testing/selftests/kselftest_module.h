@@ -2,8 +2,8 @@
 #ifndef __KSELFTEST_MODULE_H
 #define __KSELFTEST_MODULE_H
 
-#include <linux/module.h>
-#include <linux/panic.h>
+#include <freax/module.h>
+#include <freax/panic.h>
 
 /*
  * Test framework for writing test modules to be loaded by kselftest.

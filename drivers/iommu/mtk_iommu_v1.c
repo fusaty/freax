@@ -7,24 +7,24 @@
  *
  * Based on driver/iommu/mtk_iommu.c
  */
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/bug.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <asm/barrier.h>
 #include <asm/dma-iommu.h>
 #include <dt-bindings/memory/mtk-memory-port.h>

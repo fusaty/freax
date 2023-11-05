@@ -10,8 +10,8 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#ifndef __LINUX_REGULATOR_MAX8973_H
-#define __LINUX_REGULATOR_MAX8973_H
+#ifndef __freax_REGULATOR_MAX8973_H
+#define __freax_REGULATOR_MAX8973_H
 
 /*
  * Control flags for configuration of the device.
@@ -64,4 +64,4 @@ struct max8973_regulator_platform_data {
 	unsigned dvs_def_state:1;
 };
 
-#endif /* __LINUX_REGULATOR_MAX8973_H */
+#endif /* __freax_REGULATOR_MAX8973_H */

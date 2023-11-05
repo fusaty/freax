@@ -3,8 +3,8 @@
 #ifndef ADF_TRANSPORT_INTRN_H
 #define ADF_TRANSPORT_INTRN_H
 
-#include <linux/interrupt.h>
-#include <linux/spinlock_types.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock_types.h>
 #include "adf_transport.h"
 
 struct adf_etr_ring_debug_entry {
@@ -49,7 +49,7 @@ struct adf_etr_data {
 
 void adf_response_handler(uintptr_t bank_addr);
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 int adf_bank_debugfs_add(struct adf_etr_bank_data *bank);
 void adf_bank_debugfs_rm(struct adf_etr_bank_data *bank);
 int adf_ring_debugfs_add(struct adf_etr_ring_data *ring, const char *name);

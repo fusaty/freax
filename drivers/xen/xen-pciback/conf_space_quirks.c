@@ -8,8 +8,8 @@
 
 #define dev_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
 #include "pciback.h"
 #include "conf_space.h"
 #include "conf_space_quirks.h"

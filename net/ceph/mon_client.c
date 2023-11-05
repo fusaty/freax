@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/sched.h>
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/debugfs.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/debugfs.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/auth.h>
 
 /*
  * Interact with Ceph monitor cluster.  Handle requests for new map

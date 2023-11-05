@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mach-footbridge/dc21285-timer.c
+ *  freax/arch/arm/mach-footbridge/dc21285-timer.c
  *
  *  Copyright (C) 1998 Russell King.
  *  Copyright (C) 1998 Phil Blundell
  */
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched_clock.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/sched_clock.h>
 
 #include <asm/irq.h>
 

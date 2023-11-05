@@ -7,8 +7,8 @@
 #ifndef __FSL_DPAA2_FD_H
 #define __FSL_DPAA2_FD_H
 
-#include <linux/byteorder/generic.h>
-#include <linux/types.h>
+#include <freax/byteorder/generic.h>
+#include <freax/types.h>
 
 /**
  * DOC: DPAA2 FD - Frame Descriptor APIs for DPAA2

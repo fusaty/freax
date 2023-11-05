@@ -8,18 +8,18 @@
  * Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
 
-#include <linux/platform_data/wkup_m3.h>
+#include <freax/platform_data/wkup_m3.h>
 
 #include "remoteproc_internal.h"
 

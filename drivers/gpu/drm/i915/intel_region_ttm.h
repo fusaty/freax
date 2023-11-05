@@ -5,7 +5,7 @@
 #ifndef _INTEL_REGION_TTM_H_
 #define _INTEL_REGION_TTM_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "i915_selftest.h"
 

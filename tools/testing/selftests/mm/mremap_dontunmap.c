@@ -7,7 +7,7 @@
  */
 #define _GNU_SOURCE
 #include <sys/mman.h>
-#include <linux/mman.h>
+#include <freax/mman.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

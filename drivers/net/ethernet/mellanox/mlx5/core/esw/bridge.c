@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2021 Mellanox Technologies. */
 
-#include <linux/build_bug.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
+#include <freax/build_bug.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
 #include <net/netevent.h>
 #include <net/switchdev.h>
 #include "lib/devcom.h"

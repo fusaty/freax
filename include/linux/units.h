@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UNITS_H
-#define _LINUX_UNITS_H
+#ifndef _freax_UNITS_H
+#define _freax_UNITS_H
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 /* Metric prefixes in accordance with Système international (d'unités) */
 #define PETA	1000000000000000ULL
@@ -112,4 +112,4 @@ static inline long celsius_to_kelvin(long t)
 				     MILLIDEGREE_PER_DEGREE);
 }
 
-#endif /* _LINUX_UNITS_H */
+#endif /* _freax_UNITS_H */

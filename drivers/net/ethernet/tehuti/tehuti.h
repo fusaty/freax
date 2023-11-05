@@ -7,28 +7,28 @@
 #ifndef _TEHUTI_H
 #define _TEHUTI_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/crc32.h>
+#include <freax/uaccess.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/sched.h>
+#include <freax/tty.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/firmware.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 /* Compile Time Switches */
 /* start */

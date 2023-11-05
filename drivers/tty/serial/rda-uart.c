@@ -7,17 +7,17 @@
  * Copyright (c) 2018 Manivannan Sadhasivam
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
 #define RDA_UART_PORT_NUM 3
 #define RDA_UART_DEV_NAME "ttyRDA"

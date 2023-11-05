@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dsi.c
+ * freax/drivers/video/omap2/dss/dsi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -8,28 +8,28 @@
 
 #define DSS_SUBSYS_NAME "DSI"
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/semaphore.h>
+#include <freax/seq_file.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/component.h>
 
 #include <video/omapfb_dss.h>
 #include <video/mipi_display.h>

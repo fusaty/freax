@@ -5,11 +5,11 @@
  * description of display timings
  */
 
-#ifndef __LINUX_DISPLAY_TIMING_H
-#define __LINUX_DISPLAY_TIMING_H
+#ifndef __freax_DISPLAY_TIMING_H
+#define __freax_DISPLAY_TIMING_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 enum display_flags {
 	DISPLAY_FLAGS_HSYNC_LOW		= BIT(0),

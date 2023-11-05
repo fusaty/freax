@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_ELF_H
-#define _UAPI_LINUX_ELF_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_ELF_H
+#define _UAPI_freax_ELF_H
 
-#include <linux/types.h>
-#include <linux/elf-em.h>
+#include <freax/types.h>
+#include <freax/elf-em.h>
 
 /* 32-bit ELF base types. */
 typedef __u32	Elf32_Addr;
@@ -362,7 +362,7 @@ typedef struct elf64_shdr {
 #define EV_NUM		2
 
 #define ELFOSABI_NONE	0
-#define ELFOSABI_LINUX	3
+#define ELFOSABI_freax	3
 
 #ifndef ELF_OSABI
 #define ELF_OSABI ELFOSABI_NONE
@@ -372,7 +372,7 @@ typedef struct elf64_shdr {
  * Notes used in ET_CORE. Architectures export some of the arch register sets
  * using the corresponding note types via the PTRACE_GETREGSET and
  * PTRACE_SETREGSET requests.
- * The note name for these types is "LINUX", except NT_PRFPREG that is named
+ * The note name for these types is "freax", except NT_PRFPREG that is named
  * "CORE".
  */
 #define NT_PRSTATUS	1
@@ -478,4 +478,4 @@ typedef struct elf64_note {
 /* Bits for GNU_PROPERTY_AARCH64_FEATURE_1_BTI */
 #define GNU_PROPERTY_AARCH64_FEATURE_1_BTI	(1U << 0)
 
-#endif /* _UAPI_LINUX_ELF_H */
+#endif /* _UAPI_freax_ELF_H */

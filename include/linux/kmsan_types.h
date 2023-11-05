@@ -6,8 +6,8 @@
  * Author: Alexander Potapenko <glider@google.com>
  *
  */
-#ifndef _LINUX_KMSAN_TYPES_H
-#define _LINUX_KMSAN_TYPES_H
+#ifndef _freax_KMSAN_TYPES_H
+#define _freax_KMSAN_TYPES_H
 
 /* These constants are defined in the MSan LLVM instrumentation pass. */
 #define KMSAN_RETVAL_SIZE 800
@@ -32,4 +32,4 @@ struct kmsan_ctx {
 	bool allow_reporting;
 };
 
-#endif /* _LINUX_KMSAN_TYPES_H */
+#endif /* _freax_KMSAN_TYPES_H */

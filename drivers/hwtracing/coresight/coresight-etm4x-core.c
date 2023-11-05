@@ -1,37 +1,37 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/pm_wakeup.h>
-#include <linux/amba/bus.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/clk/clk-conf.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/smp.h>
+#include <freax/sysfs.h>
+#include <freax/stat.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/coresight.h>
+#include <freax/coresight-pmu.h>
+#include <freax/pm_wakeup.h>
+#include <freax/amba/bus.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/clk/clk-conf.h>
 
 #include <asm/barrier.h>
 #include <asm/sections.h>

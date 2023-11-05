@@ -7,27 +7,27 @@
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_opp.h>
-#include <linux/devfreq.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
-#include <linux/of.h>
-#include <linux/pm_qos.h>
-#include <linux/units.h>
+#include <freax/kernel.h>
+#include <freax/kmod.h>
+#include <freax/sched.h>
+#include <freax/debugfs.h>
+#include <freax/devfreq_cooling.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/pm_opp.h>
+#include <freax/devfreq.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
+#include <freax/list.h>
+#include <freax/printk.h>
+#include <freax/hrtimer.h>
+#include <freax/of.h>
+#include <freax/pm_qos.h>
+#include <freax/units.h>
 #include "governor.h"
 
 #define CREATE_TRACE_POINTS

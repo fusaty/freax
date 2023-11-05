@@ -6,7 +6,7 @@
  */
 
 #include "common.h"
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 /* Structure for holding inet domain socket's address. */
 struct tomoyo_inet_addr_info {

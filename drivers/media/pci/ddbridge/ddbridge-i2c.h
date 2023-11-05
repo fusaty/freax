@@ -10,7 +10,7 @@
 #ifndef __DDBRIDGE_I2C_H__
 #define __DDBRIDGE_I2C_H__
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 #include "ddbridge.h"
 

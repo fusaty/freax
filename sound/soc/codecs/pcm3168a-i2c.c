@@ -7,9 +7,9 @@
  * Author: Damien Horsley <Damien.Horsley@imgtec.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
 #include <sound/soc.h>
 

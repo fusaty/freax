@@ -19,21 +19,21 @@
 			label = "devkit8000::led1";
 			gpios = <&gpio6 26 GPIO_ACTIVE_HIGH>;	/* 186 -> LED1 */
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-mmc {
 			label = "devkit8000::led2";
 			gpios = <&gpio6 3 GPIO_ACTIVE_HIGH>;	/* 163 -> LED2 */
 			default-state = "on";
-			linux,default-trigger = "none";
+			freax,default-trigger = "none";
 		};
 
 		led-usr {
 			label = "devkit8000::led3";
 			gpios = <&gpio6 4 GPIO_ACTIVE_HIGH>;	/* 164 -> LED3 */
 			default-state = "on";
-			linux,default-trigger = "usr";
+			freax,default-trigger = "usr";
 		};
 
 		led-pmu-stat {
@@ -60,7 +60,7 @@
 		user {
 			label = "user";
 			gpios = <&gpio1 26 GPIO_ACTIVE_HIGH>;
-			linux,code = <BTN_EXTRA>;
+			freax,code = <BTN_EXTRA>;
 			wakeup-source;
 		};
 	};
@@ -187,7 +187,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = <MATRIX_KEY(0, 0, KEY_1)
+	freax,keymap = <MATRIX_KEY(0, 0, KEY_1)
 			MATRIX_KEY(1, 0, KEY_2)
 			MATRIX_KEY(2, 0, KEY_3)
 			MATRIX_KEY(0, 1, KEY_4)

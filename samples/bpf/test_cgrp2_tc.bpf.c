@@ -5,7 +5,7 @@
  * License as published by the Free Software Foundation.
  */
 #define KBUILD_MODNAME "foo"
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "net_shared.h"
 #include <bpf/bpf_helpers.h>
 

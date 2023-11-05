@@ -8,7 +8,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "core.h"
 
 /*

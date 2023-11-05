@@ -8,8 +8,8 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
 
 #include <asm/esr.h>
 #include <asm/exception.h>
@@ -425,7 +425,7 @@ void __noreturn __cold nvhe_hyp_panic_handler(u64 esr, u64 spsr,
 	 * Hyp has panicked and we're going to handle that by panicking the
 	 * kernel. The kernel offset will be revealed in the panic so we're
 	 * also safe to reveal the hyp offset as a debugging aid for translating
-	 * hyp VAs to vmlinux addresses.
+	 * hyp VAs to vmfreax addresses.
 	 */
 	kvm_err("Hyp Offset: 0x%llx\n", hyp_offset);
 

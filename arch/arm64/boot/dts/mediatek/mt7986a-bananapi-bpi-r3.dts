@@ -52,13 +52,13 @@
 
 		reset-key {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&pio 9 GPIO_ACTIVE_LOW>;
 		};
 
 		wps-key {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&pio 10 GPIO_ACTIVE_LOW>;
 		};
 	};

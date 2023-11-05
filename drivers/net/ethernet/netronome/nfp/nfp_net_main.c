@@ -10,14 +10,14 @@
  *          Rolf Neugebauer <rolf.neugebauer@netronome.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/random.h>
-#include <linux/rtnetlink.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/lockdep.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/random.h>
+#include <freax/rtnetlink.h>
 
 #include "nfpcore/nfp.h"
 #include "nfpcore/nfp_cpp.h"

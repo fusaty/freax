@@ -112,7 +112,7 @@ Register value tracking
 
 In order to determine the safety of an eBPF program, the verifier must track
 the range of possible values in each register and also in each stack slot.
-This is done with ``struct bpf_reg_state``, defined in include/linux/
+This is done with ``struct bpf_reg_state``, defined in include/freax/
 bpf_verifier.h, which unifies tracking of scalar and pointer values.  Each
 register state has a type, which is either NOT_INIT (the register has not been
 written to), SCALAR_VALUE (some value which is not usable as a pointer), or a

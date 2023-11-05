@@ -5,18 +5,18 @@
  * Copyright (C) 2018 Xilinx, Inc.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox/zynqmp-ipi-message.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/arm-smccc.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox/zynqmp-ipi-message.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 /* IPI agent ID any */
 #define IPI_ID_ANY 0xFFUL

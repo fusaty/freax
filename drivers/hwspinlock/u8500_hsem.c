@@ -13,13 +13,13 @@
  *   Ohad Ben-Cohen <ohad@wizery.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/hwspinlock.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/hwspinlock.h>
+#include <freax/platform_device.h>
 
 #include "hwspinlock_internal.h"
 

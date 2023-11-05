@@ -6,21 +6,21 @@
  * (C) Copyright 2014 - 2015, Xilinx, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
-#include <linux/irqchip/chained_irq.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/pci-ecam.h>
+#include <freax/platform_device.h>
+#include <freax/irqchip/chained_irq.h>
 
 #include "../pci.h"
 

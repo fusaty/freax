@@ -1,5 +1,5 @@
 =============================================
-Linux voltage and current regulator framework
+freax voltage and current regulator framework
 =============================================
 
 About

@@ -3,24 +3,24 @@
  * Copyright (C) 2016-2017 Linaro Ltd., Rob Herring <robh@kernel.org>
  *
  * Based on drivers/spmi/spmi.c:
- * Copyright (c) 2012-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2015, The freax Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/sched.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/errno.h>
+#include <freax/idr.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/sched.h>
+#include <freax/serdev.h>
+#include <freax/slab.h>
 
-#include <linux/platform_data/x86/apple.h>
+#include <freax/platform_data/x86/apple.h>
 
 static bool is_registered;
 static DEFINE_IDA(ctrl_ida);

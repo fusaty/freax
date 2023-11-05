@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * adm9240.c	Part of lm_sensors, Linux kernel modules for hardware
+ * adm9240.c	Part of lm_sensors, freax kernel modules for hardware
  *		monitoring
  *
  * Copyright (C) 1999	Frodo Looijaard <frodol@dds.nl>
@@ -28,17 +28,17 @@
  * LM81 extended temp reading not implemented
  */
 
-#include <linux/bits.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, 0x2e, 0x2f,

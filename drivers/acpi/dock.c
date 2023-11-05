@@ -7,16 +7,16 @@
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/stddef.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/jiffies.h>
+#include <freax/stddef.h>
+#include <freax/acpi.h>
 
 #include "internal.h"
 

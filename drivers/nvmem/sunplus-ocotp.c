@@ -6,16 +6,16 @@
  * Copyright (C) 2019 Sunplus Technology Inc., All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/nvmem-provider.h>
+#include <freax/platform_device.h>
 
 /*
  * OTP memory

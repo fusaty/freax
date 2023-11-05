@@ -2,7 +2,7 @@
 #ifndef PAGE_FLAGS_LAYOUT_H
 #define PAGE_FLAGS_LAYOUT_H
 
-#include <linux/numa.h>
+#include <freax/numa.h>
 #include <generated/bounds.h>
 
 /*
@@ -10,7 +10,7 @@
  * as being suitable for DMA) the caller will pass in hints to the
  * allocator in the gfp_mask, in the zone modifier bits.  These bits
  * are used to select a priority ordered list of memory zones which
- * match the requested limits. See gfp_zone() in include/linux/gfp.h
+ * match the requested limits. See gfp_zone() in include/freax/gfp.h
  */
 #if MAX_NR_ZONES < 2
 #define ZONES_SHIFT 0
@@ -112,4 +112,4 @@
 			    NODES_WIDTH - KASAN_TAG_WIDTH - LAST_CPUPID_WIDTH)
 
 #endif
-#endif /* _LINUX_PAGE_FLAGS_LAYOUT */
+#endif /* _freax_PAGE_FLAGS_LAYOUT */

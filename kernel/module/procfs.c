@@ -5,11 +5,11 @@
  * Copyright (C) 2008 Alexey Dobriyan
  */
 
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <freax/module.h>
+#include <freax/kallsyms.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
 #include "internal.h"
 
 #ifdef CONFIG_MODULE_UNLOAD

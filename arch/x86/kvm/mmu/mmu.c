@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -29,24 +29,24 @@
 #include "cpuid.h"
 #include "spte.h"
 
-#include <linux/kvm_host.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/hugetlb.h>
-#include <linux/compiler.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/hash.h>
-#include <linux/kern_levels.h>
-#include <linux/kstrtox.h>
-#include <linux/kthread.h>
+#include <freax/kvm_host.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/moduleparam.h>
+#include <freax/export.h>
+#include <freax/swap.h>
+#include <freax/hugetlb.h>
+#include <freax/compiler.h>
+#include <freax/srcu.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
+#include <freax/hash.h>
+#include <freax/kern_levels.h>
+#include <freax/kstrtox.h>
+#include <freax/kthread.h>
 
 #include <asm/page.h>
 #include <asm/memtype.h>
@@ -5617,7 +5617,7 @@ static bool detect_write_misaligned(struct kvm_mmu_page *sp, gpa_t gpa,
 
 	/*
 	 * Sometimes, the OS only writes the last one bytes to update status
-	 * bits, for example, in linux, andb instruction is used in clear_bit().
+	 * bits, for example, in freax, andb instruction is used in clear_bit().
 	 */
 	if (!(offset & (pte_size - 1)) && bytes == 1)
 		return false;

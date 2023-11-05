@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RCULIST_H
-#define _LINUX_RCULIST_H
+#ifndef _freax_RCULIST_H
+#define _freax_RCULIST_H
 
 #ifdef __KERNEL__
 
 /*
  * RCU-protected list version
  */
-#include <linux/list.h>
-#include <linux/rcupdate.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
 
 /*
  * INIT_LIST_HEAD_RCU - Initialize a list_head visible to RCU readers

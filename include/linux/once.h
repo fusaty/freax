@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ONCE_H
-#define _LINUX_ONCE_H
+#ifndef _freax_ONCE_H
+#define _freax_ONCE_H
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
 
 /* Helpers used from arbitrary contexts.
  * Hard irqs are blocked, be cautious.
@@ -83,4 +83,4 @@ void __do_once_sleepable_done(bool *done, struct static_key_true *once_key,
 #define get_random_sleepable_once(buf, nbytes)				     \
 	DO_ONCE_SLEEPABLE(get_random_bytes, (buf), (nbytes))
 
-#endif /* _LINUX_ONCE_H */
+#endif /* _freax_ONCE_H */

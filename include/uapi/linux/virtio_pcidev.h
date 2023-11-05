@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright (C) 2021 Intel Corporation
  * Author: Johannes Berg <johannes@sipsolutions.net>
  */
-#ifndef _UAPI_LINUX_VIRTIO_PCIDEV_H
-#define _UAPI_LINUX_VIRTIO_PCIDEV_H
-#include <linux/types.h>
+#ifndef _UAPI_freax_VIRTIO_PCIDEV_H
+#define _UAPI_freax_VIRTIO_PCIDEV_H
+#include <freax/types.h>
 
 /**
  * enum virtio_pcidev_ops - virtual PCI device operations
@@ -62,4 +62,4 @@ struct virtio_pcidev_msg {
 	__u8 data[];
 };
 
-#endif /* _UAPI_LINUX_VIRTIO_PCIDEV_H */
+#endif /* _UAPI_freax_VIRTIO_PCIDEV_H */

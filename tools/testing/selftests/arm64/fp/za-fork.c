@@ -6,8 +6,8 @@
 
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
 
 #include "kselftest.h"
 

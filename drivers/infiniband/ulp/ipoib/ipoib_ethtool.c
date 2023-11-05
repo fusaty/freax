@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
 
 #include "ipoib.h"
 

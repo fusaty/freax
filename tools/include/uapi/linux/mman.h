@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_MMAN_H
-#define _UAPI_LINUX_MMAN_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_MMAN_H
+#define _UAPI_freax_MMAN_H
 
 #include <asm/mman.h>
 #include <asm-generic/hugetlb_encode.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MREMAP_MAYMOVE		1
 #define MREMAP_FIXED		2
@@ -55,4 +55,4 @@ struct cachestat {
 	__u64 nr_recently_evicted;
 };
 
-#endif /* _UAPI_LINUX_MMAN_H */
+#endif /* _UAPI_freax_MMAN_H */

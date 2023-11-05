@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_DRIVER_H
-#define _LINUX_TTY_DRIVER_H
+#ifndef _freax_TTY_DRIVER_H
+#define _freax_TTY_DRIVER_H
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/seq_file.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/cdev.h>
+#include <freax/uaccess.h>
+#include <freax/termios.h>
+#include <freax/seq_file.h>
 
 struct tty_struct;
 struct tty_driver;
@@ -582,4 +582,4 @@ static inline void proc_tty_register_driver(struct tty_driver *d) {}
 static inline void proc_tty_unregister_driver(struct tty_driver *d) {}
 #endif
 
-#endif /* #ifdef _LINUX_TTY_DRIVER_H */
+#endif /* #ifdef _freax_TTY_DRIVER_H */

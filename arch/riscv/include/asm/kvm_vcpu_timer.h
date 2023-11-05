@@ -9,7 +9,7 @@
 #ifndef __KVM_VCPU_RISCV_TIMER_H
 #define __KVM_VCPU_RISCV_TIMER_H
 
-#include <linux/hrtimer.h>
+#include <freax/hrtimer.h>
 
 struct kvm_guest_timer {
 	/* Mult & Shift values to get nanoseconds from cycles */

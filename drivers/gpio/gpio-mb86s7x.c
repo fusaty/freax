@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/gpio/gpio-mb86s7x.c
+ *  freax/drivers/gpio/gpio-mb86s7x.c
  *
  *  Copyright (C) 2015 Fujitsu Semiconductor Limited
  *  Copyright (C) 2015 Linaro Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/clk.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 
 #include "gpiolib-acpi.h"
 

@@ -933,7 +933,7 @@ struct efa_admin_mmio_req_read_less_resp {
 };
 
 enum efa_admin_os_type {
-	EFA_ADMIN_OS_LINUX                          = 0,
+	EFA_ADMIN_OS_freax                          = 0,
 };
 
 struct efa_admin_host_info {

@@ -63,7 +63,7 @@ static void die(const char *str)
 static void usage(void)
 {
 	/* fs_img.gz is an image of initial ramdisk. */
-	fprintf(stderr, "Usage: piggyback bits vmlinux.aout System.map fs_img.gz\n");
+	fprintf(stderr, "Usage: piggyback bits vmfreax.aout System.map fs_img.gz\n");
 	fprintf(stderr, "\tKernel image will be modified in place.\n");
 	exit(1);
 }
@@ -212,7 +212,7 @@ int main(int argc,char **argv)
 	 */
 
 	offset = get_hdrs_offset(image, argv[2]);
-	/* skip HdrS + LINUX_VERSION_CODE + HdrS version */
+	/* skip HdrS + freax_VERSION_CODE + HdrS version */
 	offset += 10;
 
 	if (lseek(image, offset, 0) < 0)

@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. */
 
 #include "macsec.h"
-#include <linux/mlx5/macsec.h>
+#include <freax/mlx5/macsec.h>
 
 struct mlx5_reserved_gids {
 	int macsec_index;

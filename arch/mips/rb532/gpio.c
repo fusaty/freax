@@ -26,13 +26,13 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/driver.h>
 
 #include <asm/mach-rc32434/rb.h>
 #include <asm/mach-rc32434/gpio.h>

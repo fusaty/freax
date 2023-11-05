@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 NVIDIA Corporation */
 
-#include <linux/dma-fence-array.h>
-#include <linux/dma-mapping.h>
-#include <linux/file.h>
-#include <linux/host1x.h>
-#include <linux/iommu.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/nospec.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/sync_file.h>
+#include <freax/dma-fence-array.h>
+#include <freax/dma-mapping.h>
+#include <freax/file.h>
+#include <freax/host1x.h>
+#include <freax/iommu.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/nospec.h>
+#include <freax/pm_runtime.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/sync_file.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

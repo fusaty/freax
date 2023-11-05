@@ -7,9 +7,9 @@
 
 */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_drv.h>

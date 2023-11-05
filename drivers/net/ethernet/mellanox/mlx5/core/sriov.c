@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
+#include <freax/pci.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/vport.h>
 #include "mlx5_core.h"
 #include "mlx5_irq.h"
 #include "eswitch.h"

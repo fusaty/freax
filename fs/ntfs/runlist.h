@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * runlist.h - Defines for runlist handling in NTFS Linux kernel driver.
- *	       Part of the Linux-NTFS project.
+ * runlist.h - Defines for runlist handling in NTFS freax kernel driver.
+ *	       Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_RUNLIST_H
-#define _LINUX_NTFS_RUNLIST_H
+#ifndef _freax_NTFS_RUNLIST_H
+#define _freax_NTFS_RUNLIST_H
 
 #include "types.h"
 #include "layout.h"
@@ -85,4 +85,4 @@ int ntfs_rl_punch_nolock(const ntfs_volume *vol, runlist *const runlist,
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_RUNLIST_H */
+#endif /* _freax_NTFS_RUNLIST_H */

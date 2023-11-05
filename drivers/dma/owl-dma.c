@@ -8,22 +8,22 @@
 // Copyright (c) 2018 Linaro Ltd.
 // Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include "virt-dma.h"
 
 #define OWL_DMA_FRAME_MAX_LENGTH		0xfffff

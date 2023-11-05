@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/shx3.h>
 
 #include "sh_pfc.h"

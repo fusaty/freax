@@ -3,9 +3,9 @@
 #ifndef __HID_BPF_H
 #define __HID_BPF_H
 
-#include <linux/bpf.h>
-#include <linux/spinlock.h>
-#include <uapi/linux/hid.h>
+#include <freax/bpf.h>
+#include <freax/spinlock.h>
+#include <uapi/freax/hid.h>
 
 struct hid_device;
 

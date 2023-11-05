@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * max6697.h
- *     Copyright (c) 2012 Guenter Roeck <linux@roeck-us.net>
+ *     Copyright (c) 2012 Guenter Roeck <freax@roeck-us.net>
  */
 
 #ifndef MAX6697_H
 #define MAX6697_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * For all bit masks:

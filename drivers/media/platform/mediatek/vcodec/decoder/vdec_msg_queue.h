@@ -7,9 +7,9 @@
 #ifndef _VDEC_MSG_QUEUE_H_
 #define _VDEC_MSG_QUEUE_H_
 
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
+#include <freax/sched.h>
+#include <freax/semaphore.h>
+#include <freax/slab.h>
 #include <media/videobuf2-v4l2.h>
 
 #define NUM_BUFFER_COUNT 3

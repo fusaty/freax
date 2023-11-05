@@ -3,17 +3,17 @@
  *  Driver for Xceive XC5000 "QAM/8VSB single chip tuner"
  *
  *  Copyright (c) 2007 Xceive Corporation
- *  Copyright (c) 2007 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2007 Steven Toth <stoth@freaxtv.org>
  *  Copyright (c) 2009 Devin Heitmueller <dheitmueller@kernellabs.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/videodev2.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/dvb/frontend.h>
+#include <freax/i2c.h>
 
 #include <media/dvb_frontend.h>
 

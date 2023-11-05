@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Intel Multimedia Timer device interface
  *
@@ -18,8 +18,8 @@
  * 9/17/04 - jbarnes - remove test program, move some #defines to the driver
  */
 
-#ifndef _LINUX_MMTIMER_H
-#define _LINUX_MMTIMER_H
+#ifndef _freax_MMTIMER_H
+#define _freax_MMTIMER_H
 
 /*
  * Breakdown of the ioctl's available.  An 'optional' next to the command
@@ -54,4 +54,4 @@
 #define MMTIMER_MMAPAVAIL _IO(MMTIMER_IOCTL_BASE, 6)
 #define MMTIMER_GETCOUNTER _IOR(MMTIMER_IOCTL_BASE, 9, unsigned long)
 
-#endif /* _LINUX_MMTIMER_H */
+#endif /* _freax_MMTIMER_H */

@@ -139,23 +139,23 @@
  *	manuals-design-guides/hms-hmsi-27-275.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/random.h>
-#include <linux/kref.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/atomic.h>
+#include <freax/kthread.h>
+#include <freax/kfifo.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/random.h>
+#include <freax/kref.h>
+#include <freax/of_address.h>
 
-/* move to <linux/anybuss-*.h> when taking this out of staging */
+/* move to <freax/anybuss-*.h> when taking this out of staging */
 #include "anybuss-client.h"
 #include "anybuss-controller.h"
 

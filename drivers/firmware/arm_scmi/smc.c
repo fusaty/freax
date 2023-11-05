@@ -6,18 +6,18 @@
  * Copyright 2020 NXP
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/limits.h>
-#include <linux/processor.h>
-#include <linux/slab.h>
+#include <freax/arm-smccc.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/limits.h>
+#include <freax/processor.h>
+#include <freax/slab.h>
 
 #include "common.h"
 

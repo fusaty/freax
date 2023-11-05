@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_CRASH_DUMP_H
-#define LINUX_CRASH_DUMP_H
+#ifndef freax_CRASH_DUMP_H
+#define freax_CRASH_DUMP_H
 
-#include <linux/kexec.h>
-#include <linux/proc_fs.h>
-#include <linux/elf.h>
-#include <linux/pgtable.h>
-#include <uapi/linux/vmcore.h>
+#include <freax/kexec.h>
+#include <freax/proc_fs.h>
+#include <freax/elf.h>
+#include <freax/pgtable.h>
+#include <uapi/freax/vmcore.h>
 
 /* For IS_ENABLED(CONFIG_CRASH_DUMP) */
 #define ELFCORE_ADDR_MAX	(-1ULL)
@@ -146,4 +146,4 @@ static inline ssize_t read_from_oldmem(struct iov_iter *iter, size_t count,
 }
 #endif /* CONFIG_PROC_VMCORE */
 
-#endif /* LINUX_CRASHDUMP_H */
+#endif /* freax_CRASHDUMP_H */

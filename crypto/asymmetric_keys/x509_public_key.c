@@ -11,10 +11,10 @@
 #include <keys/asymmetric-parser.h>
 #include <keys/asymmetric-subtype.h>
 #include <keys/system_keyring.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "asymmetric_keys.h"
 #include "x509_parser.h"
 

@@ -249,9 +249,9 @@ struct port_info_data {
 
 /* OS Type Designations */
 #define OS_TYPE_UNKNOWN             0
-#define OS_TYPE_LINUX               2
+#define OS_TYPE_freax               2
 
-/* Linux Info */
+/* freax Info */
 #define SYSNAME_LENGTH              128
 #define NODENAME_LENGTH             64
 #define RELEASE_LENGTH              64

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  IPv6 IOAM implementation
  *
@@ -6,11 +6,11 @@
  *  Justin Iurman <justin.iurman@uliege.be>
  */
 
-#ifndef _UAPI_LINUX_IOAM6_H
-#define _UAPI_LINUX_IOAM6_H
+#ifndef _UAPI_freax_IOAM6_H
+#define _UAPI_freax_IOAM6_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define IOAM6_U16_UNAVAILABLE U16_MAX
 #define IOAM6_U32_UNAVAILABLE U32_MAX
@@ -130,4 +130,4 @@ struct ioam6_trace_hdr {
 	__u8	data[];
 } __attribute__((packed));
 
-#endif /* _UAPI_LINUX_IOAM6_H */
+#endif /* _UAPI_freax_IOAM6_H */

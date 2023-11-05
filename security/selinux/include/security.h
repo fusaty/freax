@@ -6,18 +6,18 @@
  *
  */
 
-#ifndef _SELINUX_SECURITY_H_
-#define _SELINUX_SECURITY_H_
+#ifndef _SEfreax_SECURITY_H_
+#define _SEfreax_SECURITY_H_
 
-#include <linux/compiler.h>
-#include <linux/dcache.h>
-#include <linux/magic.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/printk.h>
+#include <freax/compiler.h>
+#include <freax/dcache.h>
+#include <freax/magic.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/refcount.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/printk.h>
 #include "flask.h"
 #include "policycap.h"
 
@@ -54,7 +54,7 @@
 /* Mask for just the mount related flags */
 #define SE_MNTMASK	0x0f
 /* Super block security struct flags for mount options */
-/* BE CAREFUL, these need to be the low order bits for selinux_get_mnt_opts */
+/* BE CAREFUL, these need to be the low order bits for sefreax_get_mnt_opts */
 #define CONTEXT_MNT	0x01
 #define FSCONTEXT_MNT	0x02
 #define ROOTCONTEXT_MNT	0x04
@@ -75,7 +75,7 @@
 
 struct netlbl_lsm_secattr;
 
-extern int selinux_enabled_boot;
+extern int sefreax_enabled_boot;
 
 /*
  * type_datum properties
@@ -87,10 +87,10 @@ extern int selinux_enabled_boot;
 /* limitation of boundary depth  */
 #define POLICYDB_BOUNDS_MAXDEPTH	4
 
-struct selinux_policy;
+struct sefreax_policy;
 
-struct selinux_state {
-#ifdef CONFIG_SECURITY_SELINUX_DEVELOP
+struct sefreax_state {
+#ifdef CONFIG_SECURITY_SEfreax_DEVELOP
 	bool enforcing;
 #endif
 	bool initialized;
@@ -99,35 +99,35 @@ struct selinux_state {
 	struct page *status_page;
 	struct mutex status_lock;
 
-	struct selinux_policy __rcu *policy;
+	struct sefreax_policy __rcu *policy;
 	struct mutex policy_mutex;
 } __randomize_layout;
 
-void selinux_avc_init(void);
+void sefreax_avc_init(void);
 
-extern struct selinux_state selinux_state;
+extern struct sefreax_state sefreax_state;
 
-static inline bool selinux_initialized(void)
+static inline bool sefreax_initialized(void)
 {
 	/* do a synchronized load to avoid race conditions */
-	return smp_load_acquire(&selinux_state.initialized);
+	return smp_load_acquire(&sefreax_state.initialized);
 }
 
-static inline void selinux_mark_initialized(void)
+static inline void sefreax_mark_initialized(void)
 {
 	/* do a synchronized write to avoid race conditions */
-	smp_store_release(&selinux_state.initialized, true);
+	smp_store_release(&sefreax_state.initialized, true);
 }
 
-#ifdef CONFIG_SECURITY_SELINUX_DEVELOP
+#ifdef CONFIG_SECURITY_SEfreax_DEVELOP
 static inline bool enforcing_enabled(void)
 {
-	return READ_ONCE(selinux_state.enforcing);
+	return READ_ONCE(sefreax_state.enforcing);
 }
 
 static inline void enforcing_set(bool value)
 {
-	WRITE_ONCE(selinux_state.enforcing, value);
+	WRITE_ONCE(sefreax_state.enforcing, value);
 }
 #else
 static inline bool enforcing_enabled(void)
@@ -146,61 +146,61 @@ static inline bool checkreqprot_get(void)
 	return 0;
 }
 
-static inline bool selinux_policycap_netpeer(void)
+static inline bool sefreax_policycap_netpeer(void)
 {
-	return READ_ONCE(selinux_state.policycap[POLICYDB_CAP_NETPEER]);
+	return READ_ONCE(sefreax_state.policycap[POLICYDB_CAP_NETPEER]);
 }
 
-static inline bool selinux_policycap_openperm(void)
+static inline bool sefreax_policycap_openperm(void)
 {
-	return READ_ONCE(selinux_state.policycap[POLICYDB_CAP_OPENPERM]);
+	return READ_ONCE(sefreax_state.policycap[POLICYDB_CAP_OPENPERM]);
 }
 
-static inline bool selinux_policycap_extsockclass(void)
+static inline bool sefreax_policycap_extsockclass(void)
 {
-	return READ_ONCE(selinux_state.policycap[POLICYDB_CAP_EXTSOCKCLASS]);
+	return READ_ONCE(sefreax_state.policycap[POLICYDB_CAP_EXTSOCKCLASS]);
 }
 
-static inline bool selinux_policycap_alwaysnetwork(void)
+static inline bool sefreax_policycap_alwaysnetwork(void)
 {
-	return READ_ONCE(selinux_state.policycap[POLICYDB_CAP_ALWAYSNETWORK]);
+	return READ_ONCE(sefreax_state.policycap[POLICYDB_CAP_ALWAYSNETWORK]);
 }
 
-static inline bool selinux_policycap_cgroupseclabel(void)
+static inline bool sefreax_policycap_cgroupseclabel(void)
 {
-	return READ_ONCE(selinux_state.policycap[POLICYDB_CAP_CGROUPSECLABEL]);
+	return READ_ONCE(sefreax_state.policycap[POLICYDB_CAP_CGROUPSECLABEL]);
 }
 
-static inline bool selinux_policycap_nnp_nosuid_transition(void)
-{
-	return READ_ONCE(
-		selinux_state.policycap[POLICYDB_CAP_NNP_NOSUID_TRANSITION]);
-}
-
-static inline bool selinux_policycap_genfs_seclabel_symlinks(void)
+static inline bool sefreax_policycap_nnp_nosuid_transition(void)
 {
 	return READ_ONCE(
-		selinux_state.policycap[POLICYDB_CAP_GENFS_SECLABEL_SYMLINKS]);
+		sefreax_state.policycap[POLICYDB_CAP_NNP_NOSUID_TRANSITION]);
 }
 
-static inline bool selinux_policycap_ioctl_skip_cloexec(void)
+static inline bool sefreax_policycap_genfs_seclabel_symlinks(void)
 {
 	return READ_ONCE(
-		selinux_state.policycap[POLICYDB_CAP_IOCTL_SKIP_CLOEXEC]);
+		sefreax_state.policycap[POLICYDB_CAP_GENFS_SECLABEL_SYMLINKS]);
 }
 
-struct selinux_policy_convert_data;
+static inline bool sefreax_policycap_ioctl_skip_cloexec(void)
+{
+	return READ_ONCE(
+		sefreax_state.policycap[POLICYDB_CAP_IOCTL_SKIP_CLOEXEC]);
+}
 
-struct selinux_load_state {
-	struct selinux_policy *policy;
-	struct selinux_policy_convert_data *convert_data;
+struct sefreax_policy_convert_data;
+
+struct sefreax_load_state {
+	struct sefreax_policy *policy;
+	struct sefreax_policy_convert_data *convert_data;
 };
 
 int security_mls_enabled(void);
 int security_load_policy(void *data, size_t len,
-			 struct selinux_load_state *load_state);
-void selinux_policy_commit(struct selinux_load_state *load_state);
-void selinux_policy_cancel(struct selinux_load_state *load_state);
+			 struct sefreax_load_state *load_state);
+void sefreax_policy_commit(struct sefreax_load_state *load_state);
+void sefreax_policy_cancel(struct sefreax_load_state *load_state);
 int security_read_policy(void **data, size_t *len);
 int security_read_state_kernel(void **data, size_t *len);
 int security_policycap_supported(unsigned int req_cap);
@@ -305,9 +305,9 @@ int security_net_peersid_resolve(u32 nlbl_sid, u32 nlbl_type,
 				 u32 xfrm_sid,
 				 u32 *peer_sid);
 
-int security_get_classes(struct selinux_policy *policy,
+int security_get_classes(struct sefreax_policy *policy,
 			 char ***classes, u32 *nclasses);
-int security_get_permissions(struct selinux_policy *policy,
+int security_get_permissions(struct sefreax_policy *policy,
 			     const char *class, char ***perms, u32 *nperms);
 int security_get_reject_unknown(void);
 int security_get_allow_unknown(void);
@@ -326,7 +326,7 @@ int security_fs_use(struct super_block *sb);
 int security_genfs_sid(const char *fstype, const char *path, u16 sclass,
 		       u32 *sid);
 
-int selinux_policy_genfs_sid(struct selinux_policy *policy,
+int sefreax_policy_genfs_sid(struct sefreax_policy *policy,
 		       const char *fstype, const char *path, u16 sclass,
 		       u32 *sid);
 
@@ -355,10 +355,10 @@ const char *security_get_initial_sid_context(u32 sid);
 /*
  * status notifier using mmap interface
  */
-extern struct page *selinux_kernel_status_page(void);
+extern struct page *sefreax_kernel_status_page(void);
 
-#define SELINUX_KERNEL_STATUS_VERSION	1
-struct selinux_kernel_status {
+#define SEfreax_KERNEL_STATUS_VERSION	1
+struct sefreax_kernel_status {
 	u32	version;	/* version number of the structure */
 	u32	sequence;	/* sequence number of seqlock logic */
 	u32	enforcing;	/* current setting of enforcing mode */
@@ -369,17 +369,17 @@ struct selinux_kernel_status {
 	 */
 } __packed;
 
-extern void selinux_status_update_setenforce(bool enforcing);
-extern void selinux_status_update_policyload(u32 seqno);
-extern void selinux_complete_init(void);
-extern struct path selinux_null;
+extern void sefreax_status_update_setenforce(bool enforcing);
+extern void sefreax_status_update_policyload(u32 seqno);
+extern void sefreax_complete_init(void);
+extern struct path sefreax_null;
 extern void selnl_notify_setenforce(int val);
 extern void selnl_notify_policyload(u32 seqno);
-extern int selinux_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm);
+extern int sefreax_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm);
 
 extern void avtab_cache_init(void);
 extern void ebitmap_cache_init(void);
 extern void hashtab_cache_init(void);
 extern int security_sidtab_hash_stats(char *page);
 
-#endif /* _SELINUX_SECURITY_H_ */
+#endif /* _SEfreax_SECURITY_H_ */

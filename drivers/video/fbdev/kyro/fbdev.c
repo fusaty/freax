@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/fbdev.c
+ *  freax/drivers/video/kyro/fbdev.c
  *
  *  Copyright (C) 2002 STMicroelectronics
  *  Copyright (C) 2003, 2004 Paul Mundt
@@ -9,20 +9,20 @@
  * for more details.
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/ioctl.h>
+#include <freax/init.h>
+#include <freax/pci.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <video/kyro.h>
 
@@ -810,5 +810,5 @@ module_init(kyrofb_init);
 module_exit(kyrofb_exit);
 #endif
 
-MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("STMicroelectronics; Paul Mundt <lethal@freax-sh.org>");
 MODULE_LICENSE("GPL");

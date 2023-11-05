@@ -4,13 +4,13 @@
  * Copyright (c) 2014 H Hartley Sweeten <hsweeten@visionengravers.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/isa-dma.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/isa-dma.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_isadma.h>
 
 /**
  * comedi_isadma_program - program and enable an ISA DMA transfer

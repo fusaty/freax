@@ -12,8 +12,8 @@ inftrees.c
 inftrees.h
 infutil.c
 infutil.h
-kernel-vmlinux.strip.c
-kernel-vmlinux.strip.gz
+kernel-vmfreax.strip.c
+kernel-vmfreax.strip.gz
 mktree
 otheros.bld
 otheros-too-big.bld
@@ -21,7 +21,7 @@ uImage
 cuImage.*
 dtbImage.*
 treeImage.*
-vmlinux.strip
+vmfreax.strip
 zImage
 zImage.initrd
 zImage.bin.*

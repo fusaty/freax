@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2008 Intel Corporation
- * Author: Matthew Wilcox <willy@linux.intel.com>
+ * Author: Matthew Wilcox <willy@freax.intel.com>
  *
  * This file implements counting semaphores.
  * A counting semaphore may be acquired 'n' times before sleeping.
@@ -24,14 +24,14 @@
  * semaphore.  If it's zero, there may be tasks waiting on the wait_list.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/ftrace.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/semaphore.h>
+#include <freax/spinlock.h>
+#include <freax/ftrace.h>
 #include <trace/events/lock.h>
 
 static noinline void __down(struct semaphore *sem);

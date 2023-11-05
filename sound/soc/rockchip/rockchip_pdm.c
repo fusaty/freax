@@ -5,13 +5,13 @@
  * Copyright (C) 2017 Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/rational.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/rational.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

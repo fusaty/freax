@@ -5,17 +5,17 @@
  * Derived from asm-i386/semaphore.h
  */
 
-#ifndef _LINUX_RWSEM_H
-#define _LINUX_RWSEM_H
+#ifndef _freax_RWSEM_H
+#define _freax_RWSEM_H
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/cleanup.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/err.h>
+#include <freax/cleanup.h>
 
 #ifdef CONFIG_DEBUG_LOCK_ALLOC
 # define __RWSEM_DEP_MAP_INIT(lockname)			\
@@ -30,7 +30,7 @@
 #ifndef CONFIG_PREEMPT_RT
 
 #ifdef CONFIG_RWSEM_SPIN_ON_OWNER
-#include <linux/osq_lock.h>
+#include <freax/osq_lock.h>
 #endif
 
 /*
@@ -124,7 +124,7 @@ static inline int rwsem_is_contended(struct rw_semaphore *sem)
 
 #else /* !CONFIG_PREEMPT_RT */
 
-#include <linux/rwbase_rt.h>
+#include <freax/rwbase_rt.h>
 
 struct rw_semaphore {
 	struct rwbase_rt	rwbase;
@@ -258,4 +258,4 @@ extern void up_read_non_owner(struct rw_semaphore *sem);
 # define up_read_non_owner(sem)			up_read(sem)
 #endif
 
-#endif /* _LINUX_RWSEM_H */
+#endif /* _freax_RWSEM_H */

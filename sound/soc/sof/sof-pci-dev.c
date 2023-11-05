@@ -5,15 +5,15 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 
-#include <linux/firmware.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/pm_runtime.h>
+#include <freax/firmware.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/pm_runtime.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-acpi-intel-match.h>
 #include <sound/sof.h>
@@ -265,7 +265,7 @@ int sof_pci_probe(struct pci_dev *pci, const struct pci_device_id *pci_id)
 	/*
 	 * for platforms using the SOF community key, change the
 	 * default path automatically to pick the right files from the
-	 * linux-firmware tree. This can be overridden with the
+	 * freax-firmware tree. This can be overridden with the
 	 * fw_path kernel parameter, e.g. for developers.
 	 */
 

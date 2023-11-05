@@ -8,25 +8,25 @@
  * for more details.
  */
 
-#include <linux/atomic.h>
-#include <linux/backlight.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/fbcon.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
+#include <freax/atomic.h>
+#include <freax/backlight.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/ctype.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/fbcon.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
+#include <freax/vmalloc.h>
 
 #include <video/sh_mobile_lcdc.h>
 

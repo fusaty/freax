@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * net.h
  *
@@ -10,7 +10,7 @@
 #ifndef _DVBNET_H_
 #define _DVBNET_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct dvb_net_if - describes a DVB network interface

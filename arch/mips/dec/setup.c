@@ -8,20 +8,20 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2000, 2001, 2002, 2003, 2005, 2020  Maciej W. Rozycki
  */
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/irqnr.h>
-#include <linux/memblock.h>
-#include <linux/param.h>
-#include <linux/percpu-defs.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <freax/console.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/irqnr.h>
+#include <freax/memblock.h>
+#include <freax/param.h>
+#include <freax/percpu-defs.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/pm.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

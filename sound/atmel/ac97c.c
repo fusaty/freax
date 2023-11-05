@@ -4,20 +4,20 @@
  *
  * Copyright (C) 2005-2009 Atmel Corporation
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
-#include <linux/device.h>
-#include <linux/atmel_pdc.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/bitmap.h>
+#include <freax/device.h>
+#include <freax/atmel_pdc.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

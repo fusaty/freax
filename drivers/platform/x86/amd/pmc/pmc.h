@@ -11,8 +11,8 @@
 #ifndef PMC_H
 #define PMC_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
 
 struct amd_pmc_dev {
 	void __iomem *regbase;

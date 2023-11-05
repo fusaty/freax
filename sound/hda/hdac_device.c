@@ -3,13 +3,13 @@
  * HD-audio codec core device
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/export.h>
+#include <freax/pm_runtime.h>
 #include <sound/hdaudio.h>
 #include <sound/hda_regmap.h>
 #include <sound/pcm.h>

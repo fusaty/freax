@@ -5,19 +5,19 @@
  *  Copyright (C) 2018	      Ayman Bagabas <ayman.bagabas@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/sysfs.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/sysfs.h>
+#include <freax/wmi.h>
 #include <acpi/battery.h>
 
 /*

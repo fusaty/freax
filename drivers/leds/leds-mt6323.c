@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/mfd/mt6323/registers.h>
+#include <freax/mfd/mt6397/core.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /*
  * Register field for TOP_CKPDN0 to enable

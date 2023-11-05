@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2003-2022, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  */
 
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
+#include <freax/sched/signal.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-mapping.h>
 
-#include <linux/mei.h>
+#include <freax/mei.h>
 
 #include "mei_dev.h"
 #include "hbm.h"

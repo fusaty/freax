@@ -6,11 +6,11 @@
 
 #include "opl4_local.h"
 #include <sound/initval.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/io.h>
 
 MODULE_AUTHOR("Clemens Ladisch <clemens@ladisch.de>");
 MODULE_DESCRIPTION("OPL4 driver");

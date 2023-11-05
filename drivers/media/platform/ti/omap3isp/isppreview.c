@@ -11,11 +11,11 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
 
 #include "isp.h"
 #include "ispreg.h"

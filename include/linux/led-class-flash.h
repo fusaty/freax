@@ -5,10 +5,10 @@
  * Copyright (C) 2015 Samsung Electronics Co., Ltd.
  * Author: Jacek Anaszewski <j.anaszewski@samsung.com>
  */
-#ifndef __LINUX_FLASH_LEDS_H_INCLUDED
-#define __LINUX_FLASH_LEDS_H_INCLUDED
+#ifndef __freax_FLASH_LEDS_H_INCLUDED
+#define __freax_FLASH_LEDS_H_INCLUDED
 
-#include <linux/leds.h>
+#include <freax/leds.h>
 
 struct device_node;
 struct led_classdev_flash;
@@ -233,4 +233,4 @@ int led_set_flash_timeout(struct led_classdev_flash *fled_cdev, u32 timeout);
  */
 int led_get_flash_fault(struct led_classdev_flash *fled_cdev, u32 *fault);
 
-#endif	/* __LINUX_FLASH_LEDS_H_INCLUDED */
+#endif	/* __freax_FLASH_LEDS_H_INCLUDED */

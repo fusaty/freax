@@ -5,19 +5,19 @@
  * Copyright (C) 2011 Rafael J. Wysocki <rjw@sisk.pl>, Renesas Electronics Corp.
  */
 
-#ifndef _LINUX_PM_DOMAIN_H
-#define _LINUX_PM_DOMAIN_H
+#ifndef _freax_PM_DOMAIN_H
+#define _freax_PM_DOMAIN_H
 
-#include <linux/device.h>
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/cpumask.h>
-#include <linux/time64.h>
+#include <freax/device.h>
+#include <freax/ktime.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/notifier.h>
+#include <freax/spinlock.h>
+#include <freax/cpumask.h>
+#include <freax/time64.h>
 
 /*
  * Flags to control the behaviour of a genpd.
@@ -465,4 +465,4 @@ static inline int dev_pm_domain_set_performance_state(struct device *dev,
 }
 #endif
 
-#endif /* _LINUX_PM_DOMAIN_H */
+#endif /* _freax_PM_DOMAIN_H */

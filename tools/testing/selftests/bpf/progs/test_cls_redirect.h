@@ -6,11 +6,11 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <freax/if_ether.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/udp.h>
 
 /* offsetof() is used in static asserts, and the libbpf-redefined CO-RE
  * friendly version breaks compilation for older clang versions <= 15

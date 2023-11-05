@@ -9,16 +9,16 @@
  * ------------------------------------------------------------
  * Emulation of a SCSI host adapter for Virtual I/O devices
  *
- * This driver allows the Linux SCSI peripheral drivers to directly
+ * This driver allows the freax SCSI peripheral drivers to directly
  * access devices in the hosting partition, either on an iSeries
  * hypervisor system or a converged hypervisor system.
  */
 #ifndef IBMVSCSI_H
 #define IBMVSCSI_H
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
 #include <scsi/viosrp.h>
 
 struct scsi_cmnd;

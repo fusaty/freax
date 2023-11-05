@@ -8,7 +8,7 @@
  * and the adl_pci7432 driver written by:
  *	Michel Lachaine <mike@mikelachaine.ca>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -45,8 +45,8 @@
  * Configuration Options: not applicable, uses comedi PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pci.h>
 
 #include "plx9052.h"
 

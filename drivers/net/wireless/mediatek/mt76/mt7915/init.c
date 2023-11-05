@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2020 MediaTek Inc. */
 
-#include <linux/etherdevice.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/of.h>
-#include <linux/thermal.h>
+#include <freax/etherdevice.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/of.h>
+#include <freax/thermal.h>
 #include "mt7915.h"
 #include "mac.h"
 #include "mcu.h"

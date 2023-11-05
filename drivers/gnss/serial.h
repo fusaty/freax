@@ -5,11 +5,11 @@
  * Copyright (C) 2018 Johan Hovold <johan@kernel.org>
  */
 
-#ifndef _LINUX_GNSS_SERIAL_H
-#define _LINUX_GNSS_SERIAL_H
+#ifndef _freax_GNSS_SERIAL_H
+#define _freax_GNSS_SERIAL_H
 
 #include <asm/termbits.h>
-#include <linux/pm.h>
+#include <freax/pm.h>
 
 struct gnss_serial {
 	struct serdev_device *serdev;
@@ -44,4 +44,4 @@ static inline void *gnss_serial_get_drvdata(struct gnss_serial *gserial)
 	return gserial->drvdata;
 }
 
-#endif /* _LINUX_GNSS_SERIAL_H */
+#endif /* _freax_GNSS_SERIAL_H */

@@ -3,7 +3,7 @@
  * Secure pages management: Migration of pages between normal and secure
  * memory of KVM guests.
  *
- * Copyright 2018 Bharata B Rao, IBM Corp. <bharata@linux.ibm.com>
+ * Copyright 2018 Bharata B Rao, IBM Corp. <bharata@freax.ibm.com>
  */
 
 /*
@@ -86,12 +86,12 @@
  * page-sizes, we need to break this assumption.
  */
 
-#include <linux/pagemap.h>
-#include <linux/migrate.h>
-#include <linux/kvm_host.h>
-#include <linux/ksm.h>
-#include <linux/of.h>
-#include <linux/memremap.h>
+#include <freax/pagemap.h>
+#include <freax/migrate.h>
+#include <freax/kvm_host.h>
+#include <freax/ksm.h>
+#include <freax/of.h>
+#include <freax/memremap.h>
 #include <asm/ultravisor.h>
 #include <asm/mman.h>
 #include <asm/kvm_ppc.h>

@@ -25,35 +25,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/percpu.h>
-#include <linux/ptrace.h>
-#include <linux/workqueue.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/completion.h>
-#include <linux/uuid.h>
-#include <linux/uaccess.h>
-#include <linux/suspend.h>
-#include <linux/siphash.h>
-#include <linux/sched/isolation.h>
+#include <freax/utsname.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/nodemask.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/percpu.h>
+#include <freax/ptrace.h>
+#include <freax/workqueue.h>
+#include <freax/irq.h>
+#include <freax/ratelimit.h>
+#include <freax/syscalls.h>
+#include <freax/completion.h>
+#include <freax/uuid.h>
+#include <freax/uaccess.h>
+#include <freax/suspend.h>
+#include <freax/siphash.h>
+#include <freax/sched/isolation.h>
 #include <crypto/chacha.h>
 #include <crypto/blake2s.h>
 #include <asm/archrandom.h>
@@ -1594,7 +1594,7 @@ const struct file_operations urandom_fops = {
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 
 static int sysctl_random_min_urandom_seed = CRNG_RESEED_INTERVAL / HZ;
 static int sysctl_random_write_wakeup_bits = POOL_READY_BITS;

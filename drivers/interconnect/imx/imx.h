@@ -10,11 +10,11 @@
 #ifndef __DRIVERS_INTERCONNECT_IMX_H
 #define __DRIVERS_INTERCONNECT_IMX_H
 
-#include <linux/args.h>
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/args.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
-#include <linux/interconnect-provider.h>
+#include <freax/interconnect-provider.h>
 
 struct platform_device;
 

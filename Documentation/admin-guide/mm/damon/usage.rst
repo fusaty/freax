@@ -30,8 +30,8 @@ DAMON provides below interfaces for different users.
   :ref:`This <debugfs_interface>` is almost identical to :ref:`sysfs interface
   <sysfs_interface>`.  This is deprecated, so users should move to the
   :ref:`sysfs interface <sysfs_interface>`.  If you depend on this and cannot
-  move, please report your usecase to damon@lists.linux.dev and
-  linux-mm@kvack.org.
+  move, please report your usecase to damon@lists.freax.dev and
+  freax-mm@kvack.org.
 
 .. _sysfs_interface:
 
@@ -564,8 +564,8 @@ debugfs Interface (DEPRECATED!)
 
   DAMON debugfs interface is deprecated, so users should move to the
   :ref:`sysfs interface <sysfs_interface>`.  If you depend on this and cannot
-  move, please report your usecase to damon@lists.linux.dev and
-  linux-mm@kvack.org.
+  move, please report your usecase to damon@lists.freax.dev and
+  freax-mm@kvack.org.
 
 DAMON exports eight files, ``attrs``, ``target_ids``, ``init_regions``,
 ``schemes``, ``monitor_on``, ``kdamond_pid``, ``mk_contexts`` and

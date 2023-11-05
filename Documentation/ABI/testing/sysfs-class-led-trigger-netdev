@@ -1,14 +1,14 @@
 What:		/sys/class/leds/<led>/device_name
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Specifies the network device name to monitor.
 
 What:		/sys/class/leds/<led>/interval
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Specifies the duration of the LED blink in milliseconds.
 		Defaults to 50 ms.
@@ -21,7 +21,7 @@ Description:
 What:		/sys/class/leds/<led>/link
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link state of the named network device.
 
@@ -35,7 +35,7 @@ Description:
 What:		/sys/class/leds/<led>/tx
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal transmission of data on the named network device.
 
@@ -50,7 +50,7 @@ Description:
 What:		/sys/class/leds/<led>/rx
 Date:		Dec 2017
 KernelVersion:	4.16
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal reception of data on the named network device.
 
@@ -65,7 +65,7 @@ Description:
 What:		/sys/class/leds/<led>/offloaded
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Communicate whether the LED trigger modes are offloaded to
 		hardware or whether software fallback is used.
@@ -78,7 +78,7 @@ Description:
 What:		/sys/class/leds/<led>/link_10
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link speed state of 10Mbps of the named network device.
 
@@ -91,7 +91,7 @@ Description:
 What:		/sys/class/leds/<led>/link_100
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link speed state of 100Mbps of the named network device.
 
@@ -104,7 +104,7 @@ Description:
 What:		/sys/class/leds/<led>/link_1000
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link speed state of 1000Mbps of the named network device.
 
@@ -117,7 +117,7 @@ Description:
 What:		/sys/class/leds/<led>/half_duplex
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link half duplex state of the named network device.
 
@@ -130,7 +130,7 @@ Description:
 What:		/sys/class/leds/<led>/full_duplex
 Date:		Jun 2023
 KernelVersion:	6.5
-Contact:	linux-leds@vger.kernel.org
+Contact:	freax-leds@vger.kernel.org
 Description:
 		Signal the link full duplex state of the named network device.
 

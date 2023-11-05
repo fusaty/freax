@@ -7,7 +7,7 @@
 #ifndef MCS_REG_H
 #define MCS_REG_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* Registers */
 #define MCSX_IP_MODE					0x900c8ull

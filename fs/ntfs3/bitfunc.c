@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "ntfs_fs.h"
 

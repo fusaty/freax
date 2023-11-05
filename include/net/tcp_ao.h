@@ -152,7 +152,7 @@ do {									\
 
 #ifdef CONFIG_TCP_AO
 /* TCP-AO structures and functions */
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 extern struct static_key_false_deferred tcp_ao_needed;
 
 struct tcp4_ao_context {

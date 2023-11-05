@@ -6,15 +6,15 @@
  * Author(s): Olivier Moysan <olivier.moysan@st.com> for STMicroelectronics.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

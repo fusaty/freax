@@ -4,9 +4,9 @@
  * Copyright © 2014-2016 Intel Corporation
  */
 
-#include <linux/highmem.h>
-#include <linux/shmem_fs.h>
-#include <linux/swap.h>
+#include <freax/highmem.h>
+#include <freax/shmem_fs.h>
+#include <freax/swap.h>
 
 #include <drm/drm_cache.h>
 

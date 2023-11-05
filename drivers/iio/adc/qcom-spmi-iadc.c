@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/iio/iio.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 /* IADC register and bit definition */
 #define IADC_REVISION2				0x1

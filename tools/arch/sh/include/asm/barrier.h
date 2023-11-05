@@ -5,8 +5,8 @@
  * Copyright (C) 1999, 2000  Niibe Yutaka  &  Kaz Kojima
  * Copyright (C) 2002 Paul Mundt
  */
-#ifndef __TOOLS_LINUX_ASM_SH_BARRIER_H
-#define __TOOLS_LINUX_ASM_SH_BARRIER_H
+#ifndef __TOOLS_freax_ASM_SH_BARRIER_H
+#define __TOOLS_freax_ASM_SH_BARRIER_H
 
 /*
  * A brief note on ctrl_barrier(), the control register write barrier.
@@ -30,4 +30,4 @@
 
 #include <asm-generic/barrier.h>
 
-#endif /* __TOOLS_LINUX_ASM_SH_BARRIER_H */
+#endif /* __TOOLS_freax_ASM_SH_BARRIER_H */

@@ -55,40 +55,40 @@
  *					from multislip BSDI driver which was
  *					written by Igor Chechik, RELCOM Corp.
  *					Only algorithms have been ported to
- *					Linux SLIP driver.
+ *					freax SLIP driver.
  *	Vitaly E. Lavrov	:	Sane behaviour on tty hangup.
  *	Alexey Kuznetsov	:	Cleanup interfaces to tty & netdevice
  *					modules.
  */
 
 #define SL_CHECK_TRANSMIT
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <freax/compat.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_slip.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/sched/signal.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/in.h>
+#include <freax/tty.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_arp.h>
+#include <freax/if_slip.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include "slip.h"
 #ifdef CONFIG_INET
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
 #include <net/slhc_vj.h>
 #endif
 

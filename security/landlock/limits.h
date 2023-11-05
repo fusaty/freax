@@ -9,9 +9,9 @@
 #ifndef _SECURITY_LANDLOCK_LIMITS_H
 #define _SECURITY_LANDLOCK_LIMITS_H
 
-#include <linux/bitops.h>
-#include <linux/limits.h>
-#include <uapi/linux/landlock.h>
+#include <freax/bitops.h>
+#include <freax/limits.h>
+#include <uapi/freax/landlock.h>
 
 /* clang-format off */
 

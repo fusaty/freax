@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/osf_sys.c
+ *  freax/arch/alpha/kernel/osf_sys.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -11,47 +11,47 @@
  * special parameter blocks..
  */
 
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/utsname.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/major.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/types.h>
-#include <linux/ipc.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/uio.h>
-#include <linux/vfs.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sched/cputime.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/syscalls.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/utsname.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/major.h>
+#include <freax/stat.h>
+#include <freax/mman.h>
+#include <freax/shm.h>
+#include <freax/poll.h>
+#include <freax/file.h>
+#include <freax/types.h>
+#include <freax/ipc.h>
+#include <freax/namei.h>
+#include <freax/mount.h>
+#include <freax/uio.h>
+#include <freax/vfs.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
 
 #include <asm/fpu.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/sysinfo.h>
 #include <asm/thread_info.h>
 #include <asm/hwrpb.h>
 #include <asm/processor.h>
 
 /*
- * Brk needs to return an error.  Still support Linux's brk(0) query idiom,
+ * Brk needs to return an error.  Still support freax's brk(0) query idiom,
  * which OSF programs just shouldn't be doing.  We're still not quite
  * identical to OSF as we don't return 0 on success, but doing otherwise
  * would require changes to libc.  Hopefully this is good enough.
@@ -275,7 +275,7 @@ struct osf_statfs64 {
 };
 
 static int
-linux_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
+freax_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
 {
 	struct osf_stat tmp = { 0 };
 
@@ -301,41 +301,41 @@ linux_to_osf_stat(struct kstat *lstat, struct osf_stat __user *osf_stat)
 }
 
 static int
-linux_to_osf_statfs(struct kstatfs *linux_stat, struct osf_statfs __user *osf_stat,
+freax_to_osf_statfs(struct kstatfs *freax_stat, struct osf_statfs __user *osf_stat,
 		    unsigned long bufsiz)
 {
 	struct osf_statfs tmp_stat;
 
-	tmp_stat.f_type = linux_stat->f_type;
+	tmp_stat.f_type = freax_stat->f_type;
 	tmp_stat.f_flags = 0;	/* mount flags */
-	tmp_stat.f_fsize = linux_stat->f_frsize;
-	tmp_stat.f_bsize = linux_stat->f_bsize;
-	tmp_stat.f_blocks = linux_stat->f_blocks;
-	tmp_stat.f_bfree = linux_stat->f_bfree;
-	tmp_stat.f_bavail = linux_stat->f_bavail;
-	tmp_stat.f_files = linux_stat->f_files;
-	tmp_stat.f_ffree = linux_stat->f_ffree;
-	tmp_stat.f_fsid = linux_stat->f_fsid;
+	tmp_stat.f_fsize = freax_stat->f_frsize;
+	tmp_stat.f_bsize = freax_stat->f_bsize;
+	tmp_stat.f_blocks = freax_stat->f_blocks;
+	tmp_stat.f_bfree = freax_stat->f_bfree;
+	tmp_stat.f_bavail = freax_stat->f_bavail;
+	tmp_stat.f_files = freax_stat->f_files;
+	tmp_stat.f_ffree = freax_stat->f_ffree;
+	tmp_stat.f_fsid = freax_stat->f_fsid;
 	if (bufsiz > sizeof(tmp_stat))
 		bufsiz = sizeof(tmp_stat);
 	return copy_to_user(osf_stat, &tmp_stat, bufsiz) ? -EFAULT : 0;
 }
 
 static int
-linux_to_osf_statfs64(struct kstatfs *linux_stat, struct osf_statfs64 __user *osf_stat,
+freax_to_osf_statfs64(struct kstatfs *freax_stat, struct osf_statfs64 __user *osf_stat,
 		      unsigned long bufsiz)
 {
 	struct osf_statfs64 tmp_stat = { 0 };
 
-	tmp_stat.f_type = linux_stat->f_type;
-	tmp_stat.f_fsize = linux_stat->f_frsize;
-	tmp_stat.f_bsize = linux_stat->f_bsize;
-	tmp_stat.f_blocks = linux_stat->f_blocks;
-	tmp_stat.f_bfree = linux_stat->f_bfree;
-	tmp_stat.f_bavail = linux_stat->f_bavail;
-	tmp_stat.f_files = linux_stat->f_files;
-	tmp_stat.f_ffree = linux_stat->f_ffree;
-	tmp_stat.f_fsid = linux_stat->f_fsid;
+	tmp_stat.f_type = freax_stat->f_type;
+	tmp_stat.f_fsize = freax_stat->f_frsize;
+	tmp_stat.f_bsize = freax_stat->f_bsize;
+	tmp_stat.f_blocks = freax_stat->f_blocks;
+	tmp_stat.f_bfree = freax_stat->f_bfree;
+	tmp_stat.f_bavail = freax_stat->f_bavail;
+	tmp_stat.f_files = freax_stat->f_files;
+	tmp_stat.f_ffree = freax_stat->f_ffree;
+	tmp_stat.f_fsid = freax_stat->f_fsid;
 	if (bufsiz > sizeof(tmp_stat))
 		bufsiz = sizeof(tmp_stat);
 	return copy_to_user(osf_stat, &tmp_stat, bufsiz) ? -EFAULT : 0;
@@ -344,10 +344,10 @@ linux_to_osf_statfs64(struct kstatfs *linux_stat, struct osf_statfs64 __user *os
 SYSCALL_DEFINE3(osf_statfs, const char __user *, pathname,
 		struct osf_statfs __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = user_statfs(pathname, &linux_stat);
+	struct kstatfs freax_stat;
+	int error = user_statfs(pathname, &freax_stat);
 	if (!error)
-		error = linux_to_osf_statfs(&linux_stat, buffer, bufsiz);
+		error = freax_to_osf_statfs(&freax_stat, buffer, bufsiz);
 	return error;	
 }
 
@@ -360,7 +360,7 @@ SYSCALL_DEFINE2(osf_stat, char __user *, name, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return freax_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE2(osf_lstat, char __user *, name, struct osf_stat __user *, buf)
@@ -372,7 +372,7 @@ SYSCALL_DEFINE2(osf_lstat, char __user *, name, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return freax_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE2(osf_fstat, int, fd, struct osf_stat __user *, buf)
@@ -384,43 +384,43 @@ SYSCALL_DEFINE2(osf_fstat, int, fd, struct osf_stat __user *, buf)
 	if (error)
 		return error;
 
-	return linux_to_osf_stat(&stat, buf);
+	return freax_to_osf_stat(&stat, buf);
 }
 
 SYSCALL_DEFINE3(osf_fstatfs, unsigned long, fd,
 		struct osf_statfs __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = fd_statfs(fd, &linux_stat);
+	struct kstatfs freax_stat;
+	int error = fd_statfs(fd, &freax_stat);
 	if (!error)
-		error = linux_to_osf_statfs(&linux_stat, buffer, bufsiz);
+		error = freax_to_osf_statfs(&freax_stat, buffer, bufsiz);
 	return error;
 }
 
 SYSCALL_DEFINE3(osf_statfs64, char __user *, pathname,
 		struct osf_statfs64 __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = user_statfs(pathname, &linux_stat);
+	struct kstatfs freax_stat;
+	int error = user_statfs(pathname, &freax_stat);
 	if (!error)
-		error = linux_to_osf_statfs64(&linux_stat, buffer, bufsiz);
+		error = freax_to_osf_statfs64(&freax_stat, buffer, bufsiz);
 	return error;
 }
 
 SYSCALL_DEFINE3(osf_fstatfs64, unsigned long, fd,
 		struct osf_statfs64 __user *, buffer, unsigned long, bufsiz)
 {
-	struct kstatfs linux_stat;
-	int error = fd_statfs(fd, &linux_stat);
+	struct kstatfs freax_stat;
+	int error = fd_statfs(fd, &freax_stat);
 	if (!error)
-		error = linux_to_osf_statfs64(&linux_stat, buffer, bufsiz);
+		error = freax_to_osf_statfs64(&freax_stat, buffer, bufsiz);
 	return error;
 }
 
 /*
  * Uhh.. OSF/1 mount parameters aren't exactly obvious..
  *
- * Although to be frank, neither are the native Linux/i386 ones..
+ * Although to be frank, neither are the native freax/i386 ones..
  */
 struct ufs_args {
 	char __user *devname;
@@ -433,7 +433,7 @@ struct cdfs_args {
 	int flags;
 	uid_t exroot;
 
-	/* This has lots more here, which Linux handles with the option block
+	/* This has lots more here, which freax handles with the option block
 	   but I'm too lazy to do the translation into ASCII.  */
 };
 

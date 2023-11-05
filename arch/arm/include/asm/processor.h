@@ -104,7 +104,7 @@ unsigned long __get_wchan(struct task_struct *p);
 /*
  * Prefetching support - only ARMv5.
  */
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 #define ARCH_HAS_PREFETCH
 static inline void prefetch(const void *ptr)
@@ -114,7 +114,7 @@ static inline void prefetch(const void *ptr)
 		:: "p" (ptr));
 }
 
-#if __LINUX_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
+#if __freax_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
 #define ARCH_HAS_PREFETCHW
 static inline void prefetchw(const void *ptr)
 {

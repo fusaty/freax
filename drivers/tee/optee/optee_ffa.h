@@ -11,7 +11,7 @@
 #ifndef __OPTEE_FFA_H
 #define __OPTEE_FFA_H
 
-#include <linux/arm_ffa.h>
+#include <freax/arm_ffa.h>
 
 /*
  * Normal world sends requests with FFA_MSG_SEND_DIRECT_REQ and

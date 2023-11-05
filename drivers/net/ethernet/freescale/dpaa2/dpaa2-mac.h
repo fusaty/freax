@@ -3,10 +3,10 @@
 #ifndef DPAA2_MAC_H
 #define DPAA2_MAC_H
 
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phylink.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phylink.h>
 
 #include "dpmac.h"
 #include "dpmac-cmd.h"

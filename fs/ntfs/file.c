@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * file.c - NTFS kernel file operations.  Part of the Linux-NTFS project.
+ * file.c - NTFS kernel file operations.  Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2015 Anton Altaparmakov and Tuxera Inc.
  */
 
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/sched/signal.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/buffer_head.h>
+#include <freax/gfp.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/sched/signal.h>
+#include <freax/swap.h>
+#include <freax/uio.h>
+#include <freax/writeback.h>
 
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "attrib.h"
 #include "bitmap.h"

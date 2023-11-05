@@ -5,25 +5,25 @@
  * Copyright (c) 2012-2013, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #include "dmaengine.h"
 

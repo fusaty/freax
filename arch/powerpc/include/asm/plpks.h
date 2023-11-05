@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (C) 2022 IBM Corporation
- * Author: Nayna Jain <nayna@linux.ibm.com>
+ * Author: Nayna Jain <nayna@freax.ibm.com>
  *
  * Platform keystore for pseries LPAR(PLPKS).
  */
@@ -11,8 +11,8 @@
 
 #ifdef CONFIG_PSERIES_PLPKS
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 // Object policy flags from supported_policies
 #define PLPKS_OSSECBOOTAUDIT	PPC_BIT32(1) // OS secure boot must be audit/enforce
@@ -29,7 +29,7 @@
 #define PLPKS_ALG_RSA4096	PPC_BIT(1)
 
 // Object label OS metadata flags
-#define PLPKS_VAR_LINUX		0x02
+#define PLPKS_VAR_freax		0x02
 #define PLPKS_VAR_COMMON	0x04
 
 // Flags for which consumer owns an object is owned by

@@ -22,17 +22,17 @@
  * the "wakeup" GPIO is not given, power management will be disabled.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/jiffies.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define MLX90614_OP_RAM		0x00
 #define MLX90614_OP_EEPROM	0x20

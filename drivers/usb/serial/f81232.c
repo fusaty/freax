@@ -3,24 +3,24 @@
  * Fintek F81232 USB to serial adaptor driver
  * Fintek F81532A/534A/535/536 USB to 2/4/8/12 serial adaptor driver
  *
- * Copyright (C) 2012 Greg Kroah-Hartman (gregkh@linuxfoundation.org)
- * Copyright (C) 2012 Linux Foundation
+ * Copyright (C) 2012 Greg Kroah-Hartman (gregkh@freaxfoundation.org)
+ * Copyright (C) 2012 freax Foundation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial_reg.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/serial_reg.h>
 
 #define F81232_ID		\
 	{ USB_DEVICE(0x1934, 0x0706) }	/* 1 port UART device */
@@ -1060,6 +1060,6 @@ module_init(f81232_init);
 module_exit(f81232_exit);
 
 MODULE_DESCRIPTION("Fintek F81232/532A/534A/535/536 USB to serial driver");
-MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linuxfoundation.org>");
+MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@freaxfoundation.org>");
 MODULE_AUTHOR("Peter Hong <peter_hong@fintek.com.tw>");
 MODULE_LICENSE("GPL v2");

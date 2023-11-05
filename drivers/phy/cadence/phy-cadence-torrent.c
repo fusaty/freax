@@ -8,19 +8,19 @@
 
 #include <dt-bindings/phy/phy.h>
 #include <dt-bindings/phy/phy-cadence.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/regmap.h>
 
 #define REF_CLK_19_2MHZ		19200000
 #define REF_CLK_25MHZ		25000000

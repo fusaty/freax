@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * fscrypt user API
  *
  * These ioctls can be used on filesystems that support fscrypt.  See the
  * "User API" section of Documentation/filesystems/fscrypt.rst.
  */
-#ifndef _UAPI_LINUX_FSCRYPT_H
-#define _UAPI_LINUX_FSCRYPT_H
+#ifndef _UAPI_freax_FSCRYPT_H
+#define _UAPI_freax_FSCRYPT_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /* Encryption policy flags */
 #define FSCRYPT_POLICY_FLAGS_PAD_4		0x00
@@ -113,7 +113,7 @@ struct fscrypt_key_specifier {
 };
 
 /*
- * Payload of Linux keyring key of type "fscrypt-provisioning", referenced by
+ * Payload of freax keyring key of type "fscrypt-provisioning", referenced by
  * fscrypt_add_key_arg::key_id as an alternative to fscrypt_add_key_arg::raw.
  */
 struct fscrypt_provisioning_key_payload {
@@ -193,4 +193,4 @@ struct fscrypt_get_key_status_arg {
 #define FS_MAX_KEY_SIZE			FSCRYPT_MAX_KEY_SIZE
 #endif /* !__KERNEL__ */
 
-#endif /* _UAPI_LINUX_FSCRYPT_H */
+#endif /* _UAPI_freax_FSCRYPT_H */

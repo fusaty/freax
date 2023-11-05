@@ -6,27 +6,27 @@
  * Copyright(c) 2022, Analogix Semiconductor. All rights reserved.
  *
  */
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/workqueue.h>
-#include <linux/power_supply.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_graph.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/role.h>
+#include <freax/usb/tcpci.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/workqueue.h>
+#include <freax/power_supply.h>
 
 #define TCPC_ADDRESS1		0x58
 #define TCPC_ADDRESS2		0x56

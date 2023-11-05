@@ -8,20 +8,20 @@
  * Copyright:	MontaVista Software Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/soc/pxa/cpu.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/of_gpio.h>
+#include <freax/soc/pxa/cpu.h>
 
 #include <sound/pxa2xx-lib.h>
 
-#include <linux/platform_data/asoc-pxa.h>
+#include <freax/platform_data/asoc-pxa.h>
 
 #include "pxa2xx-ac97-regs.h"
 

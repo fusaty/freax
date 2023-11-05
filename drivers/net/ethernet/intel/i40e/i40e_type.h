@@ -4,7 +4,7 @@
 #ifndef _I40E_TYPE_H_
 #define _I40E_TYPE_H_
 
-#include <uapi/linux/if_ether.h>
+#include <uapi/freax/if_ether.h>
 #include "i40e_adminq.h"
 #include "i40e_hmc.h"
 

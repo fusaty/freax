@@ -3,8 +3,8 @@
 #ifndef __NET_TCX_H
 #define __NET_TCX_H
 
-#include <linux/bpf.h>
-#include <linux/bpf_mprog.h>
+#include <freax/bpf.h>
+#include <freax/bpf_mprog.h>
 
 #include <net/sch_generic.h>
 

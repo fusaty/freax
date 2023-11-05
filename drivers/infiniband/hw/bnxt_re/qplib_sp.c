@@ -38,10 +38,10 @@
 
 #define dev_fmt(fmt) "QPLIB: " fmt
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
 
 #include "roce_hsi.h"
 

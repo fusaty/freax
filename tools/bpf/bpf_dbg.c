@@ -38,8 +38,8 @@
 #include <stdbool.h>
 #include <stdarg.h>
 #include <setjmp.h>
-#include <linux/filter.h>
-#include <linux/if_packet.h>
+#include <freax/filter.h>
+#include <freax/if_packet.h>
 #include <readline/readline.h>
 #include <readline/history.h>
 #include <sys/types.h>

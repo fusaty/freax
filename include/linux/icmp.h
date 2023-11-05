@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -10,12 +10,12 @@
  *
  * Author:	Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  */
-#ifndef _LINUX_ICMP_H
-#define	_LINUX_ICMP_H
+#ifndef _freax_ICMP_H
+#define	_freax_ICMP_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/icmp.h>
-#include <uapi/linux/errqueue.h>
+#include <freax/skbuff.h>
+#include <uapi/freax/icmp.h>
+#include <uapi/freax/errqueue.h>
 
 static inline struct icmphdr *icmp_hdr(const struct sk_buff *skb)
 {
@@ -40,4 +40,4 @@ void ip_icmp_error_rfc4884(const struct sk_buff *skb,
 			   struct sock_ee_data_rfc4884 *out,
 			   int thlen, int off);
 
-#endif	/* _LINUX_ICMP_H */
+#endif	/* _freax_ICMP_H */

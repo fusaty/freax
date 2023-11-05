@@ -9,11 +9,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 
 MODULE_DESCRIPTION("i2c device driver for cs3308 8-channel volume control");

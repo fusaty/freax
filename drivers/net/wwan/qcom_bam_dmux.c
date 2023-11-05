@@ -4,22 +4,22 @@
  * Copyright (c) 2020, Stephan Gerhold <stephan@gerhold.net>
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/if_arp.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/soc/qcom/smem_state.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/if_arp.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/soc/qcom/smem_state.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 #include <net/pkt_sched.h>
 
 #define BAM_DMUX_BUFFER_SIZE		SZ_2K

@@ -35,18 +35,18 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <freax/ip.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/jiffies.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/hash.h>
 
 /* for sysctl */
-#include <linux/fs.h>
-#include <linux/sysctl.h>
+#include <freax/fs.h>
+#include <freax/sysctl.h>
 #include <net/net_namespace.h>
 
 #include <net/ip_vs.h>

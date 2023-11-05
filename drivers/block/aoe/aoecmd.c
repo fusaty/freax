@@ -4,18 +4,18 @@
  * Filesystem request handling methods
  */
 
-#include <linux/ata.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/blk-mq.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
+#include <freax/ata.h>
+#include <freax/slab.h>
+#include <freax/hdreg.h>
+#include <freax/blk-mq.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/moduleparam.h>
+#include <freax/workqueue.h>
+#include <freax/kthread.h>
 #include <net/net_namespace.h>
 #include <asm/unaligned.h>
-#include <linux/uio.h>
+#include <freax/uio.h>
 #include "aoe.h"
 
 #define MAXIOC (8192)	/* default meant to avoid most soft lockups */

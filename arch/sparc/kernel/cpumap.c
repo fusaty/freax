@@ -4,11 +4,11 @@
  * Copyright (C) 2009 Hong H. Pham <hong.pham@windriver.com>
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/cpumask.h>
+#include <freax/spinlock.h>
 #include <asm/cpudata.h>
 #include "cpumap.h"
 

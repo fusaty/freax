@@ -1,5 +1,5 @@
 /*
-** atariints.h -- Atari Linux interrupt handling structs and prototypes
+** atariints.h -- Atari freax interrupt handling structs and prototypes
 **
 ** Copyright 1994 by Björn Brauel
 **
@@ -15,8 +15,8 @@
 **
 */
 
-#ifndef _LINUX_ATARIINTS_H_
-#define _LINUX_ATARIINTS_H_
+#ifndef _freax_ATARIINTS_H_
+#define _freax_ATARIINTS_H_
 
 #include <asm/irq.h>
 #include <asm/atarihw.h>
@@ -205,4 +205,4 @@ static inline int atari_irq_pending( unsigned irq )
 unsigned int atari_register_vme_int(void);
 void atari_unregister_vme_int(unsigned int);
 
-#endif /* linux/atariints.h */
+#endif /* freax/atariints.h */

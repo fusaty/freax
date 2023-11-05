@@ -6,8 +6,8 @@
  * Copyright (C) 1999 by Silicon Graphics, Inc.
  * Copyright (C) 1999 by Harald Koerfgen
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
 
 #include <asm/mipsregs.h>
 #include <asm/mmu_context.h>

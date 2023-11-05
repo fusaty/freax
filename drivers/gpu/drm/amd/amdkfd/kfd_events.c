@@ -21,17 +21,17 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mm_types.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/mman.h>
-#include <linux/memory.h>
+#include <freax/mm_types.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/uaccess.h>
+#include <freax/mman.h>
+#include <freax/memory.h>
 #include "kfd_priv.h"
 #include "kfd_events.h"
-#include <linux/device.h>
+#include <freax/device.h>
 
 /*
  * Wrapper around wait_queue_entry_t

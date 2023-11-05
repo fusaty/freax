@@ -7,20 +7,20 @@
  * Author: Ramakrishna Pallala <ramakrishna.pallala@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/notifier.h>
-#include <linux/extcon-provider.h>
-#include <linux/regmap.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/usb/role.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/notifier.h>
+#include <freax/extcon-provider.h>
+#include <freax/regmap.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/usb/role.h>
+#include <freax/workqueue.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

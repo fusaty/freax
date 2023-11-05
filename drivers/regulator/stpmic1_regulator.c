@@ -2,15 +2,15 @@
 // Copyright (C) STMicroelectronics 2018
 // Author: Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
 
-#include <linux/interrupt.h>
-#include <linux/mfd/stpmic1.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/stpmic1.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
 
 #include <dt-bindings/mfd/st,stpmic1.h>
 

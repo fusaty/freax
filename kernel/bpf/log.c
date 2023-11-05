@@ -3,12 +3,12 @@
  * Copyright (c) 2016 Facebook
  * Copyright (c) 2018 Covalent IO, Inc. http://covalent.io
  */
-#include <uapi/linux/btf.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/math64.h>
+#include <uapi/freax/btf.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/bpf.h>
+#include <freax/bpf_verifier.h>
+#include <freax/math64.h>
 
 static bool bpf_verifier_log_attr_valid(const struct bpf_verifier_log *log)
 {

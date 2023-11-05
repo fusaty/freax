@@ -6,11 +6,11 @@
  * Inspired by Benjamin Gaignard's stm32-timers driver
  */
 
-#ifndef _LINUX_STM32_LPTIMER_H_
-#define _LINUX_STM32_LPTIMER_H_
+#ifndef _freax_STM32_LPTIMER_H_
+#define _freax_STM32_LPTIMER_H_
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
 
 #define STM32_LPTIM_ISR		0x00	/* Interrupt and Status Reg  */
 #define STM32_LPTIM_ICR		0x04	/* Interrupt Clear Reg       */

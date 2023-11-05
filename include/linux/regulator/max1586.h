@@ -8,7 +8,7 @@
 #ifndef REGULATOR_MAX1586
 #define REGULATOR_MAX1586
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #define MAX1586_V3 0
 #define MAX1586_V6 1

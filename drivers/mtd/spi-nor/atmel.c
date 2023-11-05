@@ -4,7 +4,7 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#include <linux/mtd/spi-nor.h>
+#include <freax/mtd/spi-nor.h>
 
 #include "core.h"
 
@@ -12,7 +12,7 @@
 
 /*
  * The Atmel AT25FS010/AT25FS040 parts have some weird configuration for the
- * block protection bits. We don't support them. But legacy behavior in linux
+ * block protection bits. We don't support them. But legacy behavior in freax
  * is to unlock the whole flash array on startup. Therefore, we have to support
  * exactly this operation.
  */

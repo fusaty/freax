@@ -10,12 +10,12 @@
 #ifndef FIMC_ISP_H_
 #define FIMC_ISP_H_
 
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/videobuf2-v4l2.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/befs/debug.c
+ *  freax/fs/befs/debug.c
  *
  * Copyright (C) 2001 Will Dyson (will_dyson at pobox.com)
  *
@@ -14,12 +14,12 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 #ifdef __KERNEL__
 
-#include <linux/stdarg.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <freax/stdarg.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
 
 #endif				/* __KERNEL__ */
 

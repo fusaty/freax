@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019 Nuvoton Technology corporation.
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/io.h>
+#include <freax/iio/iio.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/reset.h>
 
 struct npcm_adc_info {
 	u32 data_mask;

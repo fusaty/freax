@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause) */
 /* Copyright 2021 NXP */
 
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 
 #if IS_ENABLED(CONFIG_FSL_ENETC_IERB)
 

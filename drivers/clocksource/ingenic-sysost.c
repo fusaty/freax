@@ -4,19 +4,19 @@
  * Copyright (c) 2020 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
+#include <freax/slab.h>
+#include <freax/syscore_ops.h>
 
 #include <dt-bindings/clock/ingenic,sysost.h>
 

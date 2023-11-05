@@ -1,7 +1,7 @@
 What:		/sys/bus/mhi/devices/.../serialnumber
 Date:		Sept 2020
 KernelVersion:	5.10
-Contact:	mhi@lists.linux.dev
+Contact:	mhi@lists.freax.dev
 Description:	The file holds the serial number of the client device obtained
 		using a BHI (Boot Host Interface) register read after at least
 		one attempt to power up the device has been done. If read
@@ -12,7 +12,7 @@ Users:		Any userspace application or clients interested in device info.
 What:		/sys/bus/mhi/devices/.../oem_pk_hash
 Date:		Sept 2020
 KernelVersion:	5.10
-Contact:	mhi@lists.linux.dev
+Contact:	mhi@lists.freax.dev
 Description:	The file holds the OEM PK Hash value of the endpoint device
 		obtained using a BHI (Boot Host Interface) register read after
 		at least one attempt to power up the device has been done. If
@@ -23,7 +23,7 @@ Users:		Any userspace application or clients interested in device info.
 What:           /sys/bus/mhi/devices/.../soc_reset
 Date:           April 2022
 KernelVersion:  5.19
-Contact:        mhi@lists.linux.dev
+Contact:        mhi@lists.freax.dev
 Description:	Initiates a SoC reset on the MHI controller.  A SoC reset is
                 a reset of last resort, and will require a complete re-init.
                 This can be useful as a method of recovery if the device is

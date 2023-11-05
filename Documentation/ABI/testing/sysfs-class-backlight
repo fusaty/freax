@@ -50,7 +50,7 @@ What:		/sys/class/backlight/<backlight>/ambient_light_zone
 Date:		Apr, 2010
 KernelVersion:	v2.6.35
 Contact:	Michael Hennerich <michael.hennerich@analog.com>,
-		device-drivers-devel@blackfin.uclinux.org
+		device-drivers-devel@blackfin.ucfreax.org
 
 Description:
 		(RW) Read or write the specific brightness level at which the
@@ -88,7 +88,7 @@ Description:
 What:		/sys/class/backlight/<backlight>/<ambient light zone>_max
 Date:		Sep, 2009
 KernelVersion:	v2.6.32
-Contact:	device-drivers-devel@blackfin.uclinux.org
+Contact:	device-drivers-devel@blackfin.ucfreax.org
 Description:
 		Control the maximum brightness for <ambient light zone>
 		on this <backlight>. Values are between 0 and 127. This file
@@ -137,7 +137,7 @@ Description:
 What:		/sys/class/backlight/<backlight>/<ambient light zone>_dim
 Date:		Sep, 2009
 KernelVersion:	v2.6.32
-Contact:	device-drivers-devel@blackfin.uclinux.org
+Contact:	device-drivers-devel@blackfin.ucfreax.org
 Description:
 		Control the dim brightness for <ambient light zone>
 		on this <backlight>. Values are between 0 and 127, typically

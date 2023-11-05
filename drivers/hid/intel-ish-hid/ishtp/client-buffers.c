@@ -5,7 +5,7 @@
  * Copyright (c) 2003-2016, Intel Corporation.
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "client.h"
 
 /**

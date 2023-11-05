@@ -6,17 +6,17 @@
  * Copyright (C) 2013 Jean-Jacques Hiblot <jjhiblot@traphandler.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
-#include <linux/mfd/syscon/atmel-smc.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/atmel-matrix.h>
+#include <freax/mfd/syscon/atmel-smc.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 #include <soc/at91/atmel-sfr.h>
 
 #define AT91_EBI_NUM_CS		8

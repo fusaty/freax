@@ -10,22 +10,22 @@
 */
 #define pr_fmt(fmt) "%s:%d " fmt, __func__, __LINE__
 
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/bug.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-ctrls.h>

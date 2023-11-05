@@ -224,7 +224,7 @@ ndo_do_ioctl:
 
         This is only called by network subsystems internally,
         not by user space calling ioctl as it was in before
-        linux-5.14.
+        freax-5.14.
 
 ndo_siocbond:
         Synchronization: rtnl_lock() semaphore.

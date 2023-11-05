@@ -5,10 +5,10 @@
  *            Akira Fujita <a-fujita@rs.jp.nec.com>
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <freax/fs.h>
+#include <freax/quotaops.h>
+#include <freax/slab.h>
+#include <freax/sched/mm.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
 #include "ext4_extents.h"

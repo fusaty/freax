@@ -8,10 +8,10 @@
 #ifndef __SH_PFC_H
 #define __SH_PFC_H
 
-#include <linux/bug.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/spinlock.h>
-#include <linux/stringify.h>
+#include <freax/bug.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/spinlock.h>
+#include <freax/stringify.h>
 
 enum {
 	PINMUX_TYPE_NONE,

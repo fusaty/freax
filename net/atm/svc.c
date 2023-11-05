@@ -5,23 +5,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/errno.h>	/* error codes */
-#include <linux/kernel.h>	/* printk */
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/fcntl.h>	/* O_NONBLOCK */
-#include <linux/init.h>
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmsap.h>
-#include <linux/atmsvc.h>
-#include <linux/atmdev.h>
-#include <linux/bitops.h>
+#include <freax/string.h>
+#include <freax/net.h>		/* struct socket, struct proto_ops */
+#include <freax/errno.h>	/* error codes */
+#include <freax/kernel.h>	/* printk */
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
+#include <freax/fcntl.h>	/* O_NONBLOCK */
+#include <freax/init.h>
+#include <freax/atm.h>		/* ATM stuff */
+#include <freax/atmsap.h>
+#include <freax/atmsvc.h>
+#include <freax/atmdev.h>
+#include <freax/bitops.h>
 #include <net/sock.h>		/* for sock_no_* */
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
 
 #include "resources.h"
 #include "common.h"		/* common for PVCs and SVCs */

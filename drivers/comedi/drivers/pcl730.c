@@ -24,8 +24,8 @@
  * The ACL-7130 card has an 8254 timer/counter not supported by this driver.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register map

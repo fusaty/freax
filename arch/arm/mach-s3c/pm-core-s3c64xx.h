@@ -3,7 +3,7 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armfreax.simtec.co.uk/
  *
  * S3C64XX - PM core support for arch/arm/plat-s3c/pm.c
  */
@@ -11,8 +11,8 @@
 #ifndef __MACH_S3C64XX_PM_CORE_H
 #define __MACH_S3C64XX_PM_CORE_H __FILE__
 
-#include <linux/serial_s3c.h>
-#include <linux/delay.h>
+#include <freax/serial_s3c.h>
+#include <freax/delay.h>
 
 #include "regs-gpio.h"
 #include "regs-clock.h"

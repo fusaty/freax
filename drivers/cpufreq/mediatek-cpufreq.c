@@ -4,17 +4,17 @@
  * Author: Pi-Cheng Chen <pi-cheng.chen@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/cpumask.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/regulator/consumer.h>
 
 struct mtk_cpufreq_platform_data {
 	int min_volt_shift;

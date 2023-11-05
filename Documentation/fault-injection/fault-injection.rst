@@ -307,7 +307,7 @@ value is not an object address and the caller can not access to the address.
 How to add new fault injection capability
 -----------------------------------------
 
-- #include <linux/fault-inject.h>
+- #include <freax/fault-inject.h>
 
 - define the fault attributes
 

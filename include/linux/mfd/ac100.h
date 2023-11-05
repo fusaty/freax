@@ -7,10 +7,10 @@
  * Chen-Yu Tsai <wens@csie.org>
  */
 
-#ifndef __LINUX_MFD_AC100_H
-#define __LINUX_MFD_AC100_H
+#ifndef __freax_MFD_AC100_H
+#define __freax_MFD_AC100_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 struct ac100_dev {
 	struct device			*dev;
@@ -172,4 +172,4 @@ struct ac100_dev {
 /* RTC general purpose register 0 ~ 15 */
 #define AC100_RTC_GP(x)			(0xe0 + (x))
 
-#endif /* __LINUX_MFD_AC100_H */
+#endif /* __freax_MFD_AC100_H */

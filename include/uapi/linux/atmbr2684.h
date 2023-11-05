@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_ATMBR2684_H
-#define _LINUX_ATMBR2684_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_ATMBR2684_H
+#define _freax_ATMBR2684_H
 
-#include <linux/types.h>
-#include <linux/atm.h>
-#include <linux/if.h>		/* For IFNAMSIZ */
+#include <freax/types.h>
+#include <freax/atm.h>
+#include <freax/if.h>		/* For IFNAMSIZ */
 
 /*
  * Type of media we're bridging (ethernet, token ring, etc)  Currently only
@@ -115,4 +115,4 @@ enum br2684_payload {
 #define BR2684_SETFILT	_IOW( 'a', ATMIOC_BACKEND + 0, \
 				struct br2684_filter_set)
 
-#endif /* _LINUX_ATMBR2684_H */
+#endif /* _freax_ATMBR2684_H */

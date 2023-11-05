@@ -8,11 +8,11 @@
  *  Henning Schild <henning.schild@siemens.com>
  */
 
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include "simatic-ipc-batt.h"
 

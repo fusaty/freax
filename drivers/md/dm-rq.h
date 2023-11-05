@@ -10,8 +10,8 @@
 #ifndef DM_RQ_INTERNAL_H
 #define DM_RQ_INTERNAL_H
 
-#include <linux/bio.h>
-#include <linux/kthread.h>
+#include <freax/bio.h>
+#include <freax/kthread.h>
 
 #include "dm-stats.h"
 

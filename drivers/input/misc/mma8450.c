@@ -5,13 +5,13 @@
  *  Copyright (C) 2011 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/mod_devicetable.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/mod_devicetable.h>
 
 #define MMA8450_DRV_NAME	"mma8450"
 

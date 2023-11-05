@@ -8,15 +8,15 @@
 #ifndef RSND_H
 #define RSND_H
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/sh_dma.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/sh_dma.h>
+#include <freax/workqueue.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 

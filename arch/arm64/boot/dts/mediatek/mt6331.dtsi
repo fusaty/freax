@@ -273,11 +273,11 @@
 		mt6331keys: mt6331keys {
 			compatible = "mediatek,mt6331-keys";
 			power {
-				linux,keycodes = <KEY_POWER>;
+				freax,keycodes = <KEY_POWER>;
 				wakeup-source;
 			};
 			home {
-				linux,keycodes = <KEY_HOME>;
+				freax,keycodes = <KEY_HOME>;
 			};
 		};
 	};

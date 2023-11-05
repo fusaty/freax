@@ -68,7 +68,7 @@ Miscellaneous:
 Utilities
 =========
 
-Utilities are available here: https://git.linuxtv.org/v4l-utils.git
+Utilities are available here: https://git.freaxtv.org/v4l-utils.git
 
 ``utils/cec-ctl``: control a CEC device
 
@@ -80,7 +80,7 @@ Note that ``cec-ctl`` has support for the CEC Hospitality Profile as is
 used in some hotel displays. See http://www.htng.org.
 
 Note that the libcec library (https://github.com/Pulse-Eight/libcec) supports
-the linux CEC framework.
+the freax CEC framework.
 
 If you want to get the CEC specification, then look at the References of
 the HDMI wikipedia page: https://en.wikipedia.org/wiki/HDMI. CEC is part
@@ -270,7 +270,7 @@ ways to do this:
    on your device: now there is a HPD, so you should see the command
    arriving at the Pulse-Eight.
 
-2) If you have another linux device supporting CEC without HPD, then
+2) If you have another freax device supporting CEC without HPD, then
    you can just connect your device to that device. Yes, you can connect
    two HDMI outputs together. You won't have a HPD (which is what we
    want for this test), but the second device can monitor the CEC pin.

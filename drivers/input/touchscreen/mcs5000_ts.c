@@ -8,13 +8,13 @@
  * Based on wm97xx-core.c
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/platform_data/mcs.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/irq.h>
+#include <freax/platform_data/mcs.h>
+#include <freax/slab.h>
 
 /* Registers */
 #define MCS5000_TS_STATUS		0x00

@@ -3,7 +3,7 @@
 #ifndef UDL_PROTO_H
 #define UDL_PROTO_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define UDL_MSG_BULK		0xaf
 

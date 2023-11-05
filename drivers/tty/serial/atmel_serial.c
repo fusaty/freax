@@ -8,30 +8,30 @@
  *
  *  DMA support added by Chip Coldwell.
  */
-#include <linux/circ_buf.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/atmel_pdc.h>
-#include <linux/uaccess.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/suspend.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <freax/circ_buf.h>
+#include <freax/tty.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/tty_flip.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/atmel_pdc.h>
+#include <freax/uaccess.h>
+#include <freax/platform_data/atmel.h>
+#include <freax/timer.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/suspend.h>
+#include <freax/mm.h>
+#include <freax/io.h>
 
 #include <asm/div64.h>
 #include <asm/ioctls.h>
@@ -49,7 +49,7 @@
 #define ATMEL_RTS_HIGH_OFFSET	16
 #define ATMEL_RTS_LOW_OFFSET	20
 
-#include <linux/serial_core.h>
+#include <freax/serial_core.h>
 
 #include "serial_mctrl_gpio.h"
 #include "atmel_serial.h"

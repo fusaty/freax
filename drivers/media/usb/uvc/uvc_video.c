@@ -6,18 +6,18 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/videodev2.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
+#include <freax/atomic.h>
 #include <asm/unaligned.h>
 
 #include <media/v4l2-common.h>

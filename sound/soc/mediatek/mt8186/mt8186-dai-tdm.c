@@ -5,7 +5,7 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/pcm_params.h>
 
 #include "mt8186-afe-clk.h"

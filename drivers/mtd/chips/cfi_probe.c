@@ -4,20 +4,20 @@
    (C) 2000 Red Hat.
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
 
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/gen_probe.h>
+#include <freax/mtd/xip.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/cfi.h>
+#include <freax/mtd/gen_probe.h>
 
 //#define DEBUG_CFI
 

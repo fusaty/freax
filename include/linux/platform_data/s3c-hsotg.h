@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* include/linux/platform_data/s3c-hsotg.h
+/* include/freax/platform_data/s3c-hsotg.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armfreax.simtec.co.uk/
  *
  * S3C USB2.0 High-speed / OtG platform information
 */
 
-#ifndef __LINUX_USB_S3C_HSOTG_H
-#define __LINUX_USB_S3C_HSOTG_H
+#ifndef __freax_USB_S3C_HSOTG_H
+#define __freax_USB_S3C_HSOTG_H
 
 struct platform_device;
 
@@ -36,4 +36,4 @@ struct dwc2_hsotg_plat {
 
 extern void dwc2_hsotg_set_platdata(struct dwc2_hsotg_plat *pd);
 
-#endif /* __LINUX_USB_S3C_HSOTG_H */
+#endif /* __freax_USB_S3C_HSOTG_H */

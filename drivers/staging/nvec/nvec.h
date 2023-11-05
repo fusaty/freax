@@ -7,21 +7,21 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-freax.org>
  */
 
-#ifndef __LINUX_MFD_NVEC
-#define __LINUX_MFD_NVEC
+#ifndef __freax_MFD_NVEC
+#define __freax_MFD_NVEC
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 /* NVEC_POOL_SIZE - Size of the pool in &struct nvec_msg */
 #define NVEC_POOL_SIZE	64

@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
 #include "iw_cxgb4.h"
 
 #define RANDOM_SKIP 16

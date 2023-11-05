@@ -4,8 +4,8 @@
  * for more details.
  */
 
-#include <linux/dma-map-ops.h>
-#include <linux/kernel.h>
+#include <freax/dma-map-ops.h>
+#include <freax/kernel.h>
 #include <asm/cacheflush.h>
 
 #ifndef CONFIG_COLDFIRE

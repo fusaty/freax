@@ -3,7 +3,7 @@
 #ifndef __CRCC37D_H__
 #define __CRCC37D_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "crc.h"
 

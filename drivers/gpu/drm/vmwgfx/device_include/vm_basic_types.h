@@ -26,8 +26,8 @@
 #ifndef VM_BASIC_TYPES_H
 #define VM_BASIC_TYPES_H
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
 #include <asm/page.h>
 
 typedef u32 uint32;

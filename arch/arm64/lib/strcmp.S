@@ -6,7 +6,7 @@
  * https://github.com/ARM-software/optimized-routines/blob/189dfefe37d54c5b/string/aarch64/strcmp.S
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 /* Assumptions:

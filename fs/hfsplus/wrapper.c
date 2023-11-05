@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/wrapper.c
+ *  freax/fs/hfsplus/wrapper.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,9 +9,9 @@
  * Handling of HFS wrappers around HFS+ volumes
  */
 
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/cdrom.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/cdrom.h>
 #include <asm/unaligned.h>
 
 #include "hfsplus_fs.h"

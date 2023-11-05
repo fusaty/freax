@@ -4,7 +4,7 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #include <asm/alternative.h>
 #include <asm/assembler.h>

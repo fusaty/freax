@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/pxa.c - PXA MMCI driver
+ *  freax/drivers/mmc/host/pxa.c - PXA MMCI driver
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *
@@ -13,28 +13,28 @@
  *	1 and 3 byte data transfers not supported
  *	max block length up to 1023
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
-#include <linux/soc/pxa/cpu.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/io.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gfp.h>
+#include <freax/of.h>
+#include <freax/soc/pxa/cpu.h>
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
-#include <linux/platform_data/mmc-pxamci.h>
+#include <freax/platform_data/mmc-pxamci.h>
 
 #include "pxamci.h"
 

@@ -9,17 +9,17 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/inetdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/random.h>
+#include <freax/workqueue.h>
+#include <freax/scatterlist.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
+#include <freax/inetdevice.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>
 

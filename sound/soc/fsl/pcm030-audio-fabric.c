@@ -6,10 +6,10 @@
 // Copyright 2008 Jon Smirl, Digispeaker
 // Author: Jon Smirl <jonsmirl@gmail.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/of.h>
 
 #include <sound/soc.h>
 

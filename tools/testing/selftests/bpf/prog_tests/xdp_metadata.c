@@ -7,10 +7,10 @@
 #include "xsk.h"
 
 #include <bpf/btf.h>
-#include <linux/errqueue.h>
-#include <linux/if_link.h>
-#include <linux/net_tstamp.h>
-#include <linux/udp.h>
+#include <freax/errqueue.h>
+#include <freax/if_link.h>
+#include <freax/net_tstamp.h>
+#include <freax/udp.h>
 #include <sys/mman.h>
 #include <net/if.h>
 #include <poll.h>

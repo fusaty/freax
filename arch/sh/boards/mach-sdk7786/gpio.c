@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/driver.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
 #include <mach/fpga.h>
 
 #define NR_FPGA_GPIOS	8

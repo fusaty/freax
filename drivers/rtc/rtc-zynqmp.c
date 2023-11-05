@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
 
 /* RTC Registers */
 #define RTC_SET_TM_WR		0x00

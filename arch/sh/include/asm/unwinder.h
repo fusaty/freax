@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UNWINDER_H
-#define _LINUX_UNWINDER_H
+#ifndef _freax_UNWINDER_H
+#define _freax_UNWINDER_H
 
 #include <asm/stacktrace.h>
 
@@ -29,4 +29,4 @@ extern void stack_reader_dump(struct task_struct *, struct pt_regs *,
  */
 extern int unwinder_faulted;
 
-#endif /* _LINUX_UNWINDER_H */
+#endif /* _freax_UNWINDER_H */

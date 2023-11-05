@@ -7,9 +7,9 @@
 #ifndef __sta_h__
 #define __sta_h__
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <net/mac80211.h>
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 #include "iwl-trans.h" /* for IWL_MAX_TID_COUNT */
 #include "fw-api.h" /* IWL_MVM_STATION_COUNT_MAX */

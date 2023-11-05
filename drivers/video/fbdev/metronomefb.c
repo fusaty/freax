@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/metronomefb.c -- FB driver for Metronome controller
+ * freax/drivers/video/metronomefb.c -- FB driver for Metronome controller
  *
  * Copyright (C) 2008, Jaya Kumar
  *
@@ -18,22 +18,22 @@
  * is provided as am200epd.c
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/firmware.h>
-#include <linux/dma-mapping.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/list.h>
+#include <freax/firmware.h>
+#include <freax/dma-mapping.h>
+#include <freax/uaccess.h>
+#include <freax/irq.h>
 
 #include <video/metronomefb.h>
 

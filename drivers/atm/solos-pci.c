@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Driver for the Solos PCI ADSL2+ card, designed to support Linux by
+ * Driver for the Solos PCI ADSL2+ card, designed to support freax by
  *  Traverse Technologies -- https://www.traverse.com.au/
  *  Xrio Limited          -- http://www.xrio.com/
  *
@@ -15,23 +15,23 @@
 #define DEBUG
 #define VERBOSE_DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/skbuff.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/swab.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/skbuff.h>
+#include <freax/sysfs.h>
+#include <freax/device.h>
+#include <freax/kobject.h>
+#include <freax/firmware.h>
+#include <freax/ctype.h>
+#include <freax/swab.h>
+#include <freax/slab.h>
 
 #define VERSION "1.04"
 #define DRIVER_VERSION 0x01

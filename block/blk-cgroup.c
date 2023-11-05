@@ -15,20 +15,20 @@
  * Copyright (C) 2015 Paolo Valente <paolo.valente@unimore.it>
  *                    Arianna Avanzini <avanzini.arianna@gmail.com>
  */
-#include <linux/ioprio.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/resume_user_mode.h>
-#include <linux/psi.h>
-#include <linux/part_stat.h>
+#include <freax/ioprio.h>
+#include <freax/kdev_t.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/err.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/atomic.h>
+#include <freax/ctype.h>
+#include <freax/resume_user_mode.h>
+#include <freax/psi.h>
+#include <freax/part_stat.h>
 #include "blk.h"
 #include "blk-cgroup.h"
 #include "blk-ioprio.h"

@@ -30,25 +30,25 @@
  *   interrupts.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 /*
  * GPIO unit register offsets.
@@ -879,7 +879,7 @@ static int mvebu_pwm_probe(struct platform_device *pdev,
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 
 static void mvebu_gpio_dbg_show(struct seq_file *s, struct gpio_chip *chip)
 {

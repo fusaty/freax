@@ -42,9 +42,9 @@ properties:
 
   autorepeat:
     description: |
-      Enables the Linux input system's autorepeat feature on the input device.
+      Enables the freax input system's autorepeat feature on the input device.
 
-  linux,keycodes:
+  freax,keycodes:
     minItems: 6
     maxItems: 6
     description: |
@@ -82,7 +82,7 @@ patternProperties:
 
       label: true
 
-      linux,default-trigger: true
+      freax,default-trigger: true
 
       default-state: true
 
@@ -123,7 +123,7 @@ examples:
         autorepeat;
         microchip,sensor-gain = <2>;
 
-        linux,keycodes = <103>,	/* KEY_UP */
+        freax,keycodes = <103>,	/* KEY_UP */
                          <106>,	/* KEY_RIGHT */
                          <108>,	/* KEY_DOWN */
                          <105>,	/* KEY_LEFT */
@@ -146,7 +146,7 @@ examples:
         led@2 {
                 label = "cap11xx:green:alive";
                 reg = <2>;
-                linux,default-trigger = "heartbeat";
+                freax,default-trigger = "heartbeat";
         };
       };
     };

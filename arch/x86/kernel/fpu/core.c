@@ -4,7 +4,7 @@
  *
  *  Pentium III FXSR, SSE support
  *  General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vafreax.com>, May 2000
  */
 #include <asm/fpu/api.h>
 #include <asm/fpu/regset.h>
@@ -16,9 +16,9 @@
 
 #include <uapi/asm/kvm.h>
 
-#include <linux/hardirq.h>
-#include <linux/pkeys.h>
-#include <linux/vmalloc.h>
+#include <freax/hardirq.h>
+#include <freax/pkeys.h>
+#include <freax/vmalloc.h>
 
 #include "context.h"
 #include "internal.h"

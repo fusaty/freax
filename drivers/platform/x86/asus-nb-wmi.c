@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/fb.h>
-#include <linux/dmi.h>
-#include <linux/i8042.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/fb.h>
+#include <freax/dmi.h>
+#include <freax/i8042.h>
 
 #include <acpi/video.h>
 

@@ -4,11 +4,11 @@
  * Authors:     Jamal Hadi Salim 1999
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
 
 #include <net/netlink.h>
 #include <net/pkt_sched.h>

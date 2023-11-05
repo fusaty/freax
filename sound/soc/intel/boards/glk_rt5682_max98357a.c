@@ -8,9 +8,9 @@
  *   Intel Apollolake I2S Machine driver
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

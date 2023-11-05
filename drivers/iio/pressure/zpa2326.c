@@ -51,19 +51,19 @@
  *   hardware samples averaging.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 #include <asm/unaligned.h>
 #include "zpa2326.h"
 

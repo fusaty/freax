@@ -5,23 +5,23 @@
  * Author: Boris BREZILLON <b.brezillon@overkiz.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <soc/at91/atmel_tcb.h>
 
 #define NPWM	2

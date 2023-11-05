@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/mod_devicetable.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/mod_devicetable.h>
 
 #include <asm/unaligned.h>
 

@@ -4,19 +4,19 @@
  * Author: Mimi Zohar <zohar@us.ibm.com>
  */
 
-#ifndef _LINUX_IMA_H
-#define _LINUX_IMA_H
+#ifndef _freax_IMA_H
+#define _freax_IMA_H
 
-#include <linux/kernel_read_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/kexec.h>
+#include <freax/kernel_read_file.h>
+#include <freax/fs.h>
+#include <freax/security.h>
+#include <freax/kexec.h>
 #include <crypto/hash_info.h>
-struct linux_binprm;
+struct freax_binprm;
 
 #ifdef CONFIG_IMA
 extern enum hash_algo ima_get_current_hash_algo(void);
-extern int ima_bprm_check(struct linux_binprm *bprm);
+extern int ima_bprm_check(struct freax_binprm *bprm);
 extern int ima_file_check(struct file *file, int mask);
 extern void ima_post_create_tmpfile(struct mnt_idmap *idmap,
 				    struct inode *inode);
@@ -57,7 +57,7 @@ static inline enum hash_algo ima_get_current_hash_algo(void)
 	return HASH_ALGO__LAST;
 }
 
-static inline int ima_bprm_check(struct linux_binprm *bprm)
+static inline int ima_bprm_check(struct freax_binprm *bprm)
 {
 	return 0;
 }
@@ -249,4 +249,4 @@ static inline bool ima_appraise_signature(enum kernel_read_file_id func)
 	return false;
 }
 #endif /* CONFIG_IMA_APPRAISE && CONFIG_INTEGRITY_TRUSTED_KEYRING */
-#endif /* _LINUX_IMA_H */
+#endif /* _freax_IMA_H */

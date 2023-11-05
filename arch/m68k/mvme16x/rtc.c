@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	Real Time Clock interface for Linux on the MVME16x
+ *	Real Time Clock interface for freax on the MVME16x
  *
  * Based on the PC driver by Paul Gortmaker.
  */
 
 #define RTC_VERSION		"1.00"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/rtc.h>	/* For struct rtc_time and ioctls, etc */
-#include <linux/bcd.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/miscdevice.h>
+#include <freax/ioport.h>
+#include <freax/capability.h>
+#include <freax/fcntl.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/rtc.h>	/* For struct rtc_time and ioctls, etc */
+#include <freax/bcd.h>
 #include <asm/mvme16xhw.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/setup.h>
 
 /*

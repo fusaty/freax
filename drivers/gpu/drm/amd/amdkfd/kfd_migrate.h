@@ -27,11 +27,11 @@
 
 #if IS_ENABLED(CONFIG_HSA_AMD_SVM)
 
-#include <linux/rwsem.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/sched/mm.h>
-#include <linux/hmm.h>
+#include <freax/rwsem.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/sched/mm.h>
+#include <freax/hmm.h>
 #include "kfd_priv.h"
 #include "kfd_svm.h"
 

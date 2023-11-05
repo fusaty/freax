@@ -3,13 +3,13 @@
  * Copyright(c) 2007 Yuri Tikhonov <yur@emcraft.com>
  * Copyright(c) 2009 Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/raid/pq.h>
+#include <freax/async_tx.h>
+#include <freax/gfp.h>
 
 /*
  * struct pq_scribble_page - space to hold throwaway P or Q buffer for

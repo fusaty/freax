@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 
 #include "tlv320aic3x.h"

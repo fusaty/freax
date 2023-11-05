@@ -6,18 +6,18 @@
  * Author: Alex Smith <alex@alex-smith.me.uk>
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/math64.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
-#include <linux/jz4780-nemc.h>
+#include <freax/jz4780-nemc.h>
 
 #define NEMC_SMCRn(n)		(0x14 + (((n) - 1) * 4))
 #define NEMC_NFCSR		0x50

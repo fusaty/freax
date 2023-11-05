@@ -6,13 +6,13 @@
  * Copyright (C) 2023 Luis Chamberlain <mcgrof@kernel.org>
  */
 
-#include <linux/elf.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/mm.h>
+#include <freax/elf.h>
+#include <freax/compiler.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
+#include <freax/mm.h>
 
 #ifndef ARCH_SHF_SMALL
 #define ARCH_SHF_SMALL 0

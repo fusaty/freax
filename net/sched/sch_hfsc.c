@@ -49,20 +49,20 @@
  * a class whose fit-time exceeds the current time.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/init.h>
+#include <freax/rtnetlink.h>
+#include <freax/pkt_sched.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

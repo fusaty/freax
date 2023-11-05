@@ -11,17 +11,17 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/dmi.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
 #include <asm/unaligned.h>
 #include "goodix.h"
 

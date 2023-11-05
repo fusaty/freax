@@ -28,10 +28,10 @@
  *	Au1300 is totally different: 1 block with up to 128 GPIOs
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/gpio/driver.h>
 #include <asm/mach-au1x00/gpio-au1000.h>
 #include <asm/mach-au1x00/gpio-au1300.h>
 

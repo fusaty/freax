@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* Copyright (C) 2018 ROHM Semiconductors */
 
-#ifndef __LINUX_MFD_ROHM_H__
-#define __LINUX_MFD_ROHM_H__
+#ifndef __freax_MFD_ROHM_H__
+#define __freax_MFD_ROHM_H__
 
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
 
 enum rohm_chip_type {
 	ROHM_CHIP_TYPE_BD9571,

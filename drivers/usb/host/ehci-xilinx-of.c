@@ -11,13 +11,13 @@
  * and "ohci-ppc-of.c" by Sylvain Munaut <tnt@246tNt.com>
  */
 
-#include <linux/err.h>
-#include <linux/signal.h>
+#include <freax/err.h>
+#include <freax/signal.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 /**
  * ehci_xilinx_port_handed_over - hand the port out if failed to enable it

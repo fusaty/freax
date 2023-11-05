@@ -49,7 +49,7 @@ AER capability.
 User Guide
 ==========
 
-Include the PCIe AER Root Driver into the Linux Kernel
+Include the PCIe AER Root Driver into the freax Kernel
 ------------------------------------------------------
 
 The PCIe AER driver is a Root Port service driver attached
@@ -60,9 +60,9 @@ depends on CONFIG_PCIEPORTBUS.
 Load PCIe AER Root Driver
 -------------------------
 
-Some systems have AER support in firmware. Enabling Linux AER support at
+Some systems have AER support in firmware. Enabling freax AER support at
 the same time the firmware handles AER would result in unpredictable
-behavior. Therefore, Linux does not handle AER events unless the firmware
+behavior. Therefore, freax does not handle AER events unless the firmware
 grants AER control to the OS via the ACPI _OSC method. See the PCI Firmware
 Specification for details regarding _OSC usage.
 
@@ -241,7 +241,7 @@ After reboot with new kernel or insert the module, a device file named
 Then, you need a user space tool named aer-inject, which can be gotten
 from:
 
-    https://git.kernel.org/cgit/linux/kernel/git/gong.chen/aer-inject.git/
+    https://git.kernel.org/cgit/freax/kernel/git/gong.chen/aer-inject.git/
 
 More information about aer-inject can be found in the document in
 its source code.

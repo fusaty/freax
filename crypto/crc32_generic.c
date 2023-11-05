@@ -8,12 +8,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
 
 #define CHKSUM_BLOCK_SIZE	1
 #define CHKSUM_DIGEST_SIZE	4

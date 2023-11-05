@@ -6,7 +6,7 @@
  * https://github.com/ARM-software/optimized-routines/blob/afd6244a1f8d9229/string/aarch64/memcpy.S
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 /* Assumptions:

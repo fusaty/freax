@@ -4,8 +4,8 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/fsl/mc.h>
+#include <freax/io.h>
+#include <freax/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

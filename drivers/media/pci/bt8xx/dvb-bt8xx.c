@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

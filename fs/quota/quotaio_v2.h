@@ -3,11 +3,11 @@
  *	Definitions of structures for vfsv0 quota format
  */
 
-#ifndef _LINUX_QUOTAIO_V2_H
-#define _LINUX_QUOTAIO_V2_H
+#ifndef _freax_QUOTAIO_V2_H
+#define _freax_QUOTAIO_V2_H
 
-#include <linux/types.h>
-#include <linux/quota.h>
+#include <freax/types.h>
+#include <freax/quota.h>
 
 /*
  * Definitions of magics and versions of current quota files
@@ -73,4 +73,4 @@ struct v2_disk_dqinfo {
 #define V2_DQINFOOFF	sizeof(struct v2_disk_dqheader)	/* Offset of info header in file */
 #define V2_DQBLKSIZE_BITS 10				/* Size of leaf block in tree */
 
-#endif /* _LINUX_QUOTAIO_V2_H */
+#endif /* _freax_QUOTAIO_V2_H */

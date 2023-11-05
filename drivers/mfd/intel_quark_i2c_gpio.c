@@ -9,15 +9,15 @@
  * respective drivers.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/mfd/core.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/dmi.h>
+#include <freax/i2c.h>
+#include <freax/property.h>
 
 /* PCI BAR for register base address */
 #define MFD_I2C_BAR		0

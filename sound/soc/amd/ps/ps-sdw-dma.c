@@ -5,15 +5,15 @@
  * Copyright 2023 Advanced Micro Devices, Inc.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw_amd.h>
+#include <freax/pm_runtime.h>
+#include <freax/soundwire/sdw_amd.h>
 #include "acp63.h"
 
 #define DRV_NAME "amd_ps_sdw_dma"

@@ -6,7 +6,7 @@
 #ifndef __VLV_DSI_PLL_H__
 #define __VLV_DSI_PLL_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum port;
 struct drm_i915_private;

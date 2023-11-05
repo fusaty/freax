@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "virtgpu_drv.h"
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 static void virtio_gpu_vram_free(struct drm_gem_object *obj)
 {

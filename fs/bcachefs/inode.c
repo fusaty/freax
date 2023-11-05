@@ -15,7 +15,7 @@
 #include "subvolume.h"
 #include "varint.h"
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 #include <asm/unaligned.h>
 

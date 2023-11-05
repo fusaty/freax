@@ -4,7 +4,7 @@
 #define __ASM_CSKY_CMPXCHG_H
 
 #ifdef CONFIG_SMP
-#include <linux/bug.h>
+#include <freax/bug.h>
 #include <asm/barrier.h>
 
 #define __xchg_relaxed(new, ptr, size)				\

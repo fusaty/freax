@@ -6,17 +6,17 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8925.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/machine.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max8925.h>
+#include <freax/of.h>
 
 static const struct resource bk_resources[] = {
 	{ 0x84, 0x84, "mode control", IORESOURCE_REG, },

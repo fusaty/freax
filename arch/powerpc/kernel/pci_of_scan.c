@@ -11,9 +11,9 @@
  * Copyright (c) 2009 Secret Lab Technologies Ltd.
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/of.h>
+#include <freax/pci.h>
+#include <freax/export.h>
+#include <freax/of.h>
 #include <asm/pci-bridge.h>
 
 /**

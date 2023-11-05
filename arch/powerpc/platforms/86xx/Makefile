@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 86xx linux kernel.
+# Makefile for the PowerPC 86xx freax kernel.
 #
 
 obj-y				:= pic.o common.o

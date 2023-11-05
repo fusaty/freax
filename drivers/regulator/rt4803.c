@@ -5,14 +5,14 @@
  * Author: ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 #define RT4803_AUTO_MODE	1
 #define RT4803_FPWM_MODE	2

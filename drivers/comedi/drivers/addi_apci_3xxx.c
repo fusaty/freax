@@ -13,9 +13,9 @@
  *	info@addi-data.com
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedi_pci.h>
 
 #define CONV_UNIT_NS		BIT(0)
 #define CONV_UNIT_US		BIT(1)

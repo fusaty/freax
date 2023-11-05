@@ -3,8 +3,8 @@
  * Copyright 2016-2022 NXP
  */
 
-#include <linux/net_tstamp.h>
-#include <linux/nospec.h>
+#include <freax/net_tstamp.h>
+#include <freax/nospec.h>
 
 #include "dpni.h"	/* DPNI_LINK_OPT_* */
 #include "dpaa2-eth.h"

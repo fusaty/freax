@@ -8,21 +8,21 @@
  *  or alternatively, you might use OpenHaptics provided by Sensable.
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/phantom.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <freax/compat.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/interrupt.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/phantom.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/io.h>
 
 #define PHANTOM_VERSION		"n0.9.8"
@@ -530,7 +530,7 @@ static int __init phantom_init(void)
 		goto err_unchr;
 	}
 
-	printk(KERN_INFO "Phantom Linux Driver, version " PHANTOM_VERSION ", "
+	printk(KERN_INFO "Phantom freax Driver, version " PHANTOM_VERSION ", "
 			"init OK\n");
 
 	return 0;

@@ -10,11 +10,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/efi.h>
+#include <freax/efi-bgrt.h>
 
 struct acpi_table_bgrt bgrt_tab;
 size_t bgrt_image_size;

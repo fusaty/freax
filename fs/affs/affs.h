@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
 #include "amigaffs.h"
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 
 /* Ugly macros make the code more pretty. */
 

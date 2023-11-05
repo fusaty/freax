@@ -7,16 +7,16 @@
  * Lots of inspiration and code was copied from drivers/mfd/sm501.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/mfd/core.h>
 
-#include <linux/mfd/janz.h>
+#include <freax/mfd/janz.h>
 
 #define DRV_NAME "janz-cmodio"
 

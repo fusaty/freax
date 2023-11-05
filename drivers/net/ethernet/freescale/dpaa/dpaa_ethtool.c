@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/net_tstamp.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <freax/string.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/net_tstamp.h>
+#include <freax/fsl/ptp_qoriq.h>
 
 #include "dpaa_eth.h"
 #include "mac.h"

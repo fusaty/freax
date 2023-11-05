@@ -7,14 +7,14 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/badblocks.h>
-#include <linux/seqlock.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/badblocks.h>
+#include <freax/seqlock.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 
 /*
  * The purpose of badblocks set/clear is to manage bad blocks ranges which are

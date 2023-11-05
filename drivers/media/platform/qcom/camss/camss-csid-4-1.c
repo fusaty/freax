@@ -7,11 +7,11 @@
  * Copyright (C) 2020 Linaro Ltd.
  */
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
 
 #include "camss-csid.h"
 #include "camss-csid-gen1.h"

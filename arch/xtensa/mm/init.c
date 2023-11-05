@@ -16,17 +16,17 @@
  * Kevin Chea
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/of_fdt.h>
-#include <linux/dma-map-ops.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/memblock.h>
+#include <freax/gfp.h>
+#include <freax/highmem.h>
+#include <freax/swap.h>
+#include <freax/mman.h>
+#include <freax/nodemask.h>
+#include <freax/mm.h>
+#include <freax/of_fdt.h>
+#include <freax/dma-map-ops.h>
 
 #include <asm/bootparam.h>
 #include <asm/page.h>

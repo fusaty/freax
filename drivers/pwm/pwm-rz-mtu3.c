@@ -23,15 +23,15 @@
  *   between HW channels.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/limits.h>
-#include <linux/mfd/rz-mtu3.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/time.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/limits.h>
+#include <freax/mfd/rz-mtu3.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pwm.h>
+#include <freax/time.h>
 
 #define RZ_MTU3_MAX_PWM_CHANNELS	12
 #define RZ_MTU3_MAX_HW_CHANNELS		7

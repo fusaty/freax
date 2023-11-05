@@ -21,14 +21,14 @@
  * Driver supports read only as the writes are done in the Factory.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/timer.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/timer.h>
 
 #define JZ_EFUCTRL		(0x0)	/* Control Register */
 #define JZ_EFUCFG		(0x4)	/* Configure Register*/

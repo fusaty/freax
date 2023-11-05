@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/err_titan.c
+ *	freax/arch/alpha/kernel/err_titan.c
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *
  *	Error handling code supporting TITAN systems
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
 
 #include <asm/io.h>
 #include <asm/core_titan.h>

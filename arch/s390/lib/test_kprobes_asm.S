@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/ftrace.h>
 
 #define KPROBES_TARGET_START(name)	\

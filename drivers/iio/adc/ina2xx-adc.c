@@ -7,10 +7,10 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  *
- * Based on linux/drivers/iio/adc/ad7291.c
+ * Based on freax/drivers/iio/adc/ad7291.c
  * Copyright 2010-2011 Analog Devices Inc.
  *
- * Based on linux/drivers/hwmon/ina2xx.c
+ * Based on freax/drivers/hwmon/ina2xx.c
  * Copyright 2012 Lothar Felten <l-felten@ti.com>
  *
  * Licensed under the GPL-2 or later.
@@ -20,20 +20,20 @@
  * Configurable 7-bit I2C slave address from 0x40 to 0x4F
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/sched/task.h>
-#include <linux/util_macros.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/sysfs.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/sched/task.h>
+#include <freax/util_macros.h>
 
-#include <linux/platform_data/ina2xx.h>
+#include <freax/platform_data/ina2xx.h>
 
 /* INA2XX registers definition */
 #define INA2XX_CONFIG                   0x00

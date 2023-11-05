@@ -603,24 +603,24 @@ properties:
           - const: oceanic,5205-5inmfd
           - const: allwinner,sun50i-a64
 
-      - description: Olimex A10-OlinuXino LIME
+      - description: Olimex A10-Ofreaxino LIME
         items:
-          - const: olimex,a10-olinuxino-lime
+          - const: olimex,a10-ofreaxino-lime
           - const: allwinner,sun4i-a10
 
-      - description: Olimex A10s-OlinuXino Micro
+      - description: Olimex A10s-Ofreaxino Micro
         items:
-          - const: olimex,a10s-olinuxino-micro
+          - const: olimex,a10s-ofreaxino-micro
           - const: allwinner,sun5i-a10s
 
-      - description: Olimex A13-OlinuXino
+      - description: Olimex A13-Ofreaxino
         items:
-          - const: olimex,a13-olinuxino
+          - const: olimex,a13-ofreaxino
           - const: allwinner,sun5i-a13
 
-      - description: Olimex A13-OlinuXino Micro
+      - description: Olimex A13-Ofreaxino Micro
         items:
-          - const: olimex,a13-olinuxino-micro
+          - const: olimex,a13-ofreaxino-micro
           - const: allwinner,sun5i-a13
 
       - description: Olimex A20-Olimex SOM Evaluation Board
@@ -633,34 +633,34 @@ properties:
           - const: olimex,a20-olimex-som-evb-emmc
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino LIME
+      - description: Olimex A20-Ofreaxino LIME
         items:
-          - const: olimex,a20-olinuxino-lime
+          - const: olimex,a20-ofreaxino-lime
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino LIME (with eMMC)
+      - description: Olimex A20-Ofreaxino LIME (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-lime-emmc
+          - const: olimex,a20-ofreaxino-lime-emmc
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino LIME2
+      - description: Olimex A20-Ofreaxino LIME2
         items:
-          - const: olimex,a20-olinuxino-lime2
+          - const: olimex,a20-ofreaxino-lime2
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino LIME2 (with eMMC)
+      - description: Olimex A20-Ofreaxino LIME2 (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-lime2-emmc
+          - const: olimex,a20-ofreaxino-lime2-emmc
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino Micro
+      - description: Olimex A20-Ofreaxino Micro
         items:
-          - const: olimex,a20-olinuxino-micro
+          - const: olimex,a20-ofreaxino-micro
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A20-OlinuXino Micro (with eMMC)
+      - description: Olimex A20-Ofreaxino Micro (with eMMC)
         items:
-          - const: olimex,a20-olinuxino-micro-emmc
+          - const: olimex,a20-ofreaxino-micro-emmc
           - const: allwinner,sun7i-a20
 
       - description: Olimex A20-SOM204 Evaluation Board
@@ -673,19 +673,19 @@ properties:
           - const: olimex,a20-olimex-som204-evb-emmc
           - const: allwinner,sun7i-a20
 
-      - description: Olimex A33-OlinuXino
+      - description: Olimex A33-Ofreaxino
         items:
-          - const: olimex,a33-olinuxino
+          - const: olimex,a33-ofreaxino
           - const: allwinner,sun8i-a33
 
-      - description: Olimex A64-OlinuXino
+      - description: Olimex A64-Ofreaxino
         items:
-          - const: olimex,a64-olinuxino
+          - const: olimex,a64-ofreaxino
           - const: allwinner,sun50i-a64
 
-      - description: Olimex A64-OlinuXino (with eMMC)
+      - description: Olimex A64-Ofreaxino (with eMMC)
         items:
-          - const: olimex,a64-olinuxino-emmc
+          - const: olimex,a64-ofreaxino-emmc
           - const: allwinner,sun50i-a64
 
       - description: Olimex A64 Teres-I

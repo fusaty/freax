@@ -5,11 +5,11 @@
  * Chen-Yu Tsai <wens@csie.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/log2.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/log2.h>
 
 #include "clk-factors.h"
 

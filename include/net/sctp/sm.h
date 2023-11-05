@@ -11,7 +11,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email addresses:
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -25,10 +25,10 @@
  *    Kevin Gao <kevin.gao@intel.com>
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/in.h>
 #include <net/sctp/command.h>
 #include <net/sctp/sctp.h>
 

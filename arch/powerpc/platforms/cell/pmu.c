@@ -9,10 +9,10 @@
  *    Kevin Corry (kevcorry@us.ibm.com)
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/types.h>
-#include <linux/export.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/types.h>
+#include <freax/export.h>
 #include <asm/io.h>
 #include <asm/irq_regs.h>
 #include <asm/machdep.h>

@@ -4,7 +4,7 @@
  * All Rights Reserved.
  *
  * Authors: Thomas Hellstrom <thomas-at-tungstengraphics.com>
- *	    Alan Cox <alan@linux.intel.com>
+ *	    Alan Cox <alan@freax.intel.com>
  */
 
 #include "gem.h" /* TODO: for struct psb_gem_object, see psb_gtt_restore() */

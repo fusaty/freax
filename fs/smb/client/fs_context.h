@@ -10,8 +10,8 @@
 #define _FS_CONTEXT_H
 
 #include "cifsglob.h"
-#include <linux/parser.h>
-#include <linux/fs_parser.h>
+#include <freax/parser.h>
+#include <freax/fs_parser.h>
 
 /* Log errors in fs_context (new mount api) but also in dmesg (old style) */
 #define cifs_errorf(fc, fmt, ...)			\
@@ -178,8 +178,8 @@ struct smb3_fs_context {
 	char source_rfc1001_name[RFC1001_NAME_LEN_WITH_NULL]; /* clnt nb name */
 	char target_rfc1001_name[RFC1001_NAME_LEN_WITH_NULL]; /* srvr nb name */
 	kuid_t cred_uid;
-	kuid_t linux_uid;
-	kgid_t linux_gid;
+	kuid_t freax_uid;
+	kgid_t freax_gid;
 	kuid_t backupuid;
 	kgid_t backupgid;
 	umode_t file_mode;
@@ -210,8 +210,8 @@ struct smb3_fs_context {
 	bool remap:1;      /* set to remap seven reserved chars in filenames */
 	bool sfu_remap:1;  /* remap seven reserved chars ala SFU */
 	bool posix_paths:1; /* unset to not ask for posix pathnames. */
-	bool no_linux_ext:1;
-	bool linux_ext:1;
+	bool no_freax_ext:1;
+	bool freax_ext:1;
 	bool sfu_emul:1;
 	bool nullauth:1;   /* attempt to authenticate with null user */
 	bool nocase:1;     /* request case insensitive filenames */

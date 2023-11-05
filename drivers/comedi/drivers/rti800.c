@@ -3,7 +3,7 @@
  * comedi/drivers/rti800.c
  * Hardware driver for Analog Devices RTI-800/815 board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -39,10 +39,10 @@
  *   [8] - DAC 1 encoding (same as DAC 0)
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register map

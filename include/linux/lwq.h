@@ -12,9 +12,9 @@
  * BH or IRQ context, and where work items are handled one at a time
  * by dedicated threads.
  */
-#include <linux/container_of.h>
-#include <linux/spinlock.h>
-#include <linux/llist.h>
+#include <freax/container_of.h>
+#include <freax/spinlock.h>
+#include <freax/llist.h>
 
 struct lwq_node {
 	struct llist_node node;

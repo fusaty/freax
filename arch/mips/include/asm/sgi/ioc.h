@@ -13,7 +13,7 @@
 #ifndef _SGI_IOC_H
 #define _SGI_IOC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/sgi/pi1.h>
 
 /*

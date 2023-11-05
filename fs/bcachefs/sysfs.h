@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_SYSFS_H_
 #define _BCACHEFS_SYSFS_H_
 
-#include <linux/sysfs.h>
+#include <freax/sysfs.h>
 
 #ifndef NO_BCACHEFS_SYSFS
 

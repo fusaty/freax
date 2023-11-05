@@ -17,9 +17,9 @@
 #include "aq_ring.h"
 #include "aq_hw.h"
 
-#include <linux/irqreturn.h>
-#include <linux/filter.h>
-#include <linux/netdevice.h>
+#include <freax/irqreturn.h>
+#include <freax/filter.h>
+#include <freax/netdevice.h>
 
 struct aq_hw_s;
 struct aq_hw_ops;

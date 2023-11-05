@@ -5,7 +5,7 @@
  * as published by the Free Software Foundation.
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "xdp_sample.bpf.h"
 #include "xdp_sample_shared.h"
 

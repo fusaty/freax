@@ -5,17 +5,17 @@
  * Copyright 2006-2012 Solarflare Communications Inc.
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/kernel_stat.h>
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <freax/netdevice.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/kernel_stat.h>
+#include <freax/pci.h>
+#include <freax/ethtool.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/udp.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"

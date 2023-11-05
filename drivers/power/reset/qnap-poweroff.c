@@ -10,13 +10,13 @@
  * Copyright (C) 2008  Byron Bradley <byron.bbradley@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serial_reg.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/serial_reg.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/clk.h>
 
 #define UART1_REG(x)	(base + ((UART_##x) << 2))
 

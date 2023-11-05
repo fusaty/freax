@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/preempt.h>
+#include <freax/kdebug.h>
+#include <freax/kprobes.h>
+#include <freax/preempt.h>
 #include <asm/break.h>
 
 #define KPROBE_BP_INSN		larch_insn_gen_break(BRK_KPROBE_BP)

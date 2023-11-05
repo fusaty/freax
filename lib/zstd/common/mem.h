@@ -16,9 +16,9 @@
 *  Dependencies
 ******************************************/
 #include <asm/unaligned.h>  /* get_unaligned, put_unaligned* */
-#include <linux/compiler.h>  /* inline */
-#include <linux/swab.h>  /* swab32, swab64 */
-#include <linux/types.h>  /* size_t, ptrdiff_t */
+#include <freax/compiler.h>  /* inline */
+#include <freax/swab.h>  /* swab32, swab64 */
+#include <freax/types.h>  /* size_t, ptrdiff_t */
 #include "debug.h"  /* DEBUG_STATIC_ASSERT */
 
 /*-****************************************

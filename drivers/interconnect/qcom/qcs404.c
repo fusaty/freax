@@ -4,12 +4,12 @@
  */
 
 #include <dt-bindings/interconnect/qcom,qcs404.h>
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/interconnect-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 
 #include "icc-rpm.h"

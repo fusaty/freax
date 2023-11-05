@@ -12,18 +12,18 @@
  * Base Functions
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/idr.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/cdev.h>
-#include <linux/uio_driver.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/idr.h>
+#include <freax/sched/signal.h>
+#include <freax/string.h>
+#include <freax/kobject.h>
+#include <freax/cdev.h>
+#include <freax/uio_driver.h>
 
 #define UIO_MAX_DEVICES		(1U << MINORBITS)
 

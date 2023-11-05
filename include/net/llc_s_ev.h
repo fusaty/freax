@@ -12,7 +12,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/llc.h>
 
 /* Defines SAP component events */

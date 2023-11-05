@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_MEM_DETECT_H
 #define _ASM_S390_MEM_DETECT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/page.h>
 
 enum physmem_info_source {
@@ -21,7 +21,7 @@ struct physmem_range {
 enum reserved_range_type {
 	RR_DECOMPRESSOR,
 	RR_INITRD,
-	RR_VMLINUX,
+	RR_VMfreax,
 	RR_AMODE31,
 	RR_IPLREPORT,
 	RR_CERT_COMP_LIST,
@@ -121,7 +121,7 @@ static inline const char *get_rr_type_name(enum reserved_range_type t)
 	switch (t) {
 	RR_TYPE_NAME(DECOMPRESSOR);
 	RR_TYPE_NAME(INITRD);
-	RR_TYPE_NAME(VMLINUX);
+	RR_TYPE_NAME(VMfreax);
 	RR_TYPE_NAME(AMODE31);
 	RR_TYPE_NAME(IPLREPORT);
 	RR_TYPE_NAME(CERT_COMP_LIST);

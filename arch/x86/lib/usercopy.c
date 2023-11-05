@@ -4,9 +4,9 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/instrumented.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/instrumented.h>
 
 #include <asm/tlbflush.h>
 

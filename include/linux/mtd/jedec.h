@@ -7,8 +7,8 @@
  * Contains all JEDEC related definitions
  */
 
-#ifndef __LINUX_MTD_JEDEC_H
-#define __LINUX_MTD_JEDEC_H
+#ifndef __freax_MTD_JEDEC_H
+#define __freax_MTD_JEDEC_H
 
 struct jedec_ecc_info {
 	u8 ecc_bits;
@@ -91,4 +91,4 @@ struct nand_jedec_params {
 	__le16 crc;
 } __packed;
 
-#endif /* __LINUX_MTD_JEDEC_H */
+#endif /* __freax_MTD_JEDEC_H */

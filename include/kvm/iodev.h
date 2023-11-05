@@ -3,8 +3,8 @@
 #ifndef __KVM_IODEV_H__
 #define __KVM_IODEV_H__
 
-#include <linux/kvm_types.h>
-#include <linux/errno.h>
+#include <freax/kvm_types.h>
+#include <freax/errno.h>
 
 struct kvm_io_device;
 struct kvm_vcpu;

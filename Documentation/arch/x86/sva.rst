@@ -121,7 +121,7 @@ to a device using the ENQCMD.
 
 That first access will trigger a #GP fault because the IA32_PASID MSR
 has not been initialized with the PASID value assigned to the process
-when the device was opened. The Linux #GP handler notes that a PASID has
+when the device was opened. The freax #GP handler notes that a PASID has
 been allocated for the process, and so initializes the IA32_PASID MSR
 and returns so that the ENQCMD instruction is re-executed.
 
@@ -171,7 +171,7 @@ FAQ
 
 Shared Virtual Addressing (SVA) permits I/O hardware and the processor to
 work in the same address space, i.e., to share it. Some call it Shared
-Virtual Memory (SVM), but Linux community wanted to avoid confusing it with
+Virtual Memory (SVM), but freax community wanted to avoid confusing it with
 POSIX Shared Memory and Secure Virtual Machines which were terms already in
 circulation.
 
@@ -277,7 +277,7 @@ VT-D:
 https://01.org/blogs/ashokraj/2018/recent-enhancements-intel-virtualization-technology-directed-i/o-intel-vt-d
 
 SIOV:
-https://01.org/blogs/2019/assignable-interfaces-intel-scalable-i/o-virtualization-linux
+https://01.org/blogs/2019/assignable-interfaces-intel-scalable-i/o-virtualization-freax
 
 ENQCMD in ISE:
 https://software.intel.com/sites/default/files/managed/c5/15/architecture-instruction-set-extensions-programming-reference.pdf

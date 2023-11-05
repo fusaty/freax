@@ -10,8 +10,8 @@
  **       DO NOT EDIT BELOW        **
  ************************************/
 
-#ifndef GAUDI2_BLOCKS_LINUX_DRIVER_H_
-#define GAUDI2_BLOCKS_LINUX_DRIVER_H_
+#ifndef GAUDI2_BLOCKS_freax_DRIVER_H_
+#define GAUDI2_BLOCKS_freax_DRIVER_H_
 
 #define mmDCORE0_TPC0_ROM_TABLE_BASE 0x0ull
 #define DCORE0_TPC0_ROM_TABLE_MAX_OFFSET 0x1000
@@ -45064,4 +45064,4 @@
 #define mmNIC11_DBG_FUNNEL_NCH_BASE 0x75F9000ull
 #define NIC11_DBG_FUNNEL_NCH_MAX_OFFSET 0x1000
 
-#endif /* GAUDI2_BLOCKS_LINUX_DRIVER_H_ */
+#endif /* GAUDI2_BLOCKS_freax_DRIVER_H_ */

@@ -5,16 +5,16 @@
  * Copyright (C) 2016, Florian Fainelli <f.fainelli@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/export.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/if_bridge.h>
-#include <linux/dsa/loop.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/export.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/module.h>
+#include <freax/if_bridge.h>
+#include <freax/dsa/loop.h>
 #include <net/dsa.h>
 
 #include "dsa_loop.h"

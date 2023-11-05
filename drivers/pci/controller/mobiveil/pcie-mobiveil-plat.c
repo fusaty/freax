@@ -9,13 +9,13 @@
  *	   Hou Zhiqiang <Zhiqiang.Hou@nxp.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_pci.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "pcie-mobiveil.h"
 

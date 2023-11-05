@@ -6,18 +6,18 @@
  * Author : K. Y. Srinivasan <ksrinivasan@novell.com>
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/i8253.h>
-#include <linux/random.h>
+#include <freax/types.h>
+#include <freax/time.h>
+#include <freax/clocksource.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/hardirq.h>
+#include <freax/efi.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kexec.h>
+#include <freax/i8253.h>
+#include <freax/random.h>
 #include <asm/processor.h>
 #include <asm/hypervisor.h>
 #include <asm/hyperv-tlfs.h>
@@ -34,9 +34,9 @@
 #include <asm/numa.h>
 #include <asm/svm.h>
 
-/* Is Linux running as the root partition? */
+/* Is freax running as the root partition? */
 bool hv_root_partition;
-/* Is Linux running on nested Microsoft Hypervisor */
+/* Is freax running on nested Microsoft Hypervisor */
 bool hv_nested;
 struct ms_hyperv_info ms_hyperv;
 
@@ -383,7 +383,7 @@ static void __init ms_hyperv_init_platform(void)
 	 * Check CPU management privilege.
 	 *
 	 * To mirror what Windows does we should extract CPU management
-	 * features and use the ReservedIdentityBit to detect if Linux is the
+	 * features and use the ReservedIdentityBit to detect if freax is the
 	 * root partition. But that requires negotiating CPU management
 	 * interface (a process to be finalized). For now, use the privilege
 	 * flag as the indicator for running as root.

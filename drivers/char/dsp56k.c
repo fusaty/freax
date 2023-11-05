@@ -9,7 +9,7 @@
  *
  * History:
  *  97-01-29   Tomas Berndtsson,
- *               Integrated with Linux 2.1.21 kernel sources.
+ *               Integrated with freax 2.1.21 kernel sources.
  *  97-02-15   Tomas Berndtsson,
  *               Fixed for kernel 2.1.26
  *
@@ -23,19 +23,19 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>	/* guess what */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>	/* For put_user and get_user */
+#include <freax/module.h>
+#include <freax/major.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/delay.h>	/* guess what */
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/firmware.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>	/* For put_user and get_user */
 
 #include <asm/atarihw.h>
 #include <asm/traps.h>

@@ -12,12 +12,12 @@
  *  Author: Denis Turischev <denis@compulab.co.il>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/acpi.h>
+#include <freax/pci.h>
+#include <freax/mfd/core.h>
 
 #define SMBASE		0x40
 #define SMBUS_IO_SIZE	64

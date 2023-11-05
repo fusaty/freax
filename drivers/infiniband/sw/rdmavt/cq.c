@@ -3,8 +3,8 @@
  * Copyright(c) 2016 - 2018 Intel Corporation.
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include "cq.h"
 #include "vt.h"
 #include "trace.h"

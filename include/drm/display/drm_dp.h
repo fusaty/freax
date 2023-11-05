@@ -23,7 +23,7 @@
 #ifndef _DRM_DP_H_
 #define _DRM_DP_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Unless otherwise noted, all values are from the DP 1.1a spec.  Note that

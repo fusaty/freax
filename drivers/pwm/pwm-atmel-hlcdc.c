@@ -6,14 +6,14 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/mfd/atmel-hlcdc.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
 
 #define ATMEL_HLCDC_PWMCVAL_MASK	GENMASK(15, 8)
 #define ATMEL_HLCDC_PWMCVAL(x)		(((x) << 8) & ATMEL_HLCDC_PWMCVAL_MASK)

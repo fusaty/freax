@@ -5,7 +5,7 @@
 #ifndef _ASM_STACKFRAME_H
 #define _ASM_STACKFRAME_H
 
-#include <linux/threads.h>
+#include <freax/threads.h>
 
 #include <asm/addrspace.h>
 #include <asm/asm.h>

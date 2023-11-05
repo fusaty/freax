@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux Socket Filter Data Structures
+ * freax Socket Filter Data Structures
  */
-#ifndef __TOOLS_LINUX_FILTER_H
-#define __TOOLS_LINUX_FILTER_H
+#ifndef __TOOLS_freax_FILTER_H
+#define __TOOLS_freax_FILTER_H
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 /* ArgX, context and stack frame pointer register positions. Note,
  * Arg1, Arg2, Arg3, etc are used as argument mappings of function
@@ -338,4 +338,4 @@
 		.off   = 0,					\
 		.imm   = 0 })
 
-#endif /* __TOOLS_LINUX_FILTER_H */
+#endif /* __TOOLS_freax_FILTER_H */

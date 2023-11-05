@@ -5,11 +5,11 @@
  */
 
 #include <net/dsa.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/of.h>
-#include <linux/netdev_features.h>
-#include <linux/if_hsr.h>
+#include <freax/etherdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/of.h>
+#include <freax/netdev_features.h>
+#include <freax/if_hsr.h>
 #include "xrs700x.h"
 #include "xrs700x_reg.h"
 

@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/file.c
+ *  freax/fs/file.c
  *
  *  Copyright (C) 1998-1999, Stephen Tweedie and Bill Hawes
  *
  *  Manage the dynamic fd arrays in the process files_struct.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/close_range.h>
+#include <freax/syscalls.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/bitops.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/close_range.h>
 #include <net/sock.h>
 
 #include "internal.h"
@@ -90,7 +90,7 @@ static void copy_fdtable(struct fdtable *nfdt, struct fdtable *ofdt)
 /*
  * Note how the fdtable bitmap allocations very much have to be a multiple of
  * BITS_PER_LONG. This is not only because we walk those things in chunks of
- * 'unsigned long' in some places, but simply because that is how the Linux
+ * 'unsigned long' in some places, but simply because that is how the freax
  * kernel bitmaps are defined to work: they are not "bits in an array of bytes",
  * they are very much "bits in an array of unsigned long".
  *

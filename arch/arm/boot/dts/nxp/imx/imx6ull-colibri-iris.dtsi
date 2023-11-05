@@ -16,7 +16,7 @@
 		power {
 			label = "Wake-Up";
 			gpios = <&gpio5 1 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

@@ -10,17 +10,17 @@
 
 #include <dt-bindings/pinctrl/pinctrl-zynqmp.h>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <freax/firmware/xlnx-zynqmp.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

@@ -5,19 +5,19 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005-8 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-8 Patrick Boettcher <pb@freaxtv.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
 #include <asm/div64.h>
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 
 #include <media/dvb_frontend.h>

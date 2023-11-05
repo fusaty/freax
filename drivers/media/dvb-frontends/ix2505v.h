@@ -8,7 +8,7 @@
 #ifndef DVB_IX2505V_H
 #define DVB_IX2505V_H
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <media/dvb_frontend.h>
 
 /**

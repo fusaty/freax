@@ -11,7 +11,7 @@
 
 #ifdef CONFIG_PPC_KUAP
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 #define KUAP_NONE	(~0UL)
 

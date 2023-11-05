@@ -7,12 +7,12 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/mfd/palmas.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 struct palmas_gpio {
 	struct gpio_chip gpio_chip;

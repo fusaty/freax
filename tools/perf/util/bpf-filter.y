@@ -9,8 +9,8 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
+#include <freax/compiler.h>
+#include <freax/list.h>
 #include "bpf-filter.h"
 
 int perf_bpf_filter_lex(void);

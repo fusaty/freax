@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MROUTE6_H
-#define __LINUX_MROUTE6_H
+#ifndef __freax_MROUTE6_H
+#define __freax_MROUTE6_H
 
 
-#include <linux/pim.h>
-#include <linux/skbuff.h>	/* for struct sk_buff_head */
+#include <freax/pim.h>
+#include <freax/skbuff.h>	/* for struct sk_buff_head */
 #include <net/net_namespace.h>
-#include <uapi/linux/mroute6.h>
-#include <linux/mroute_base.h>
-#include <linux/sockptr.h>
+#include <uapi/freax/mroute6.h>
+#include <freax/mroute_base.h>
+#include <freax/sockptr.h>
 #include <net/fib_rules.h>
 
 #ifdef CONFIG_IPV6_MROUTE

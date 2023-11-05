@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  include/linux/clkdev.h
+ *  include/freax/clkdev.h
  *
  *  Copyright (C) 2008 Russell King.
  *
@@ -9,7 +9,7 @@
 #ifndef __CLKDEV_H
 #define __CLKDEV_H
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 struct clk;
 struct clk_hw;

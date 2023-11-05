@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/rhashtable.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bridge.h>
+#include <freax/netdevice.h>
+#include <freax/rhashtable.h>
+#include <freax/rtnetlink.h>
+#include <freax/refcount.h>
 
 #include "spectrum.h"
 #include "reg.h"

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fanotify.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h> /* UINT_MAX */
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/audit.h>
-#include <linux/sched/mm.h>
-#include <linux/statfs.h>
-#include <linux/stringhash.h>
+#include <freax/fanotify.h>
+#include <freax/fdtable.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h> /* UINT_MAX */
+#include <freax/mount.h>
+#include <freax/sched.h>
+#include <freax/sched/user.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/audit.h>
+#include <freax/sched/mm.h>
+#include <freax/statfs.h>
+#include <freax/stringhash.h>
 
 #include "fanotify.h"
 

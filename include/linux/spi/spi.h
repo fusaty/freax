@@ -3,22 +3,22 @@
  * Copyright (C) 2005 David Brownell
  */
 
-#ifndef __LINUX_SPI_H
-#define __LINUX_SPI_H
+#ifndef __freax_SPI_H
+#define __freax_SPI_H
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kthread.h>
-#include <linux/mod_devicetable.h>
-#include <linux/overflow.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/acpi.h>
+#include <freax/bits.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kthread.h>
+#include <freax/mod_devicetable.h>
+#include <freax/overflow.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/u64_stats_sync.h>
 
-#include <uapi/linux/spi/spi.h>
+#include <uapi/freax/spi/spi.h>
 
 struct dma_chan;
 struct software_node;
@@ -200,7 +200,7 @@ struct spi_device {
 	/*
 	 * All bits defined above should be covered by SPI_MODE_KERNEL_MASK.
 	 * The SPI_MODE_KERNEL_MASK has the SPI_MODE_USER_MASK counterpart,
-	 * which is defined in 'include/uapi/linux/spi/spi.h'.
+	 * which is defined in 'include/uapi/freax/spi/spi.h'.
 	 * The bits defined here are from bit 31 downwards, while in
 	 * SPI_MODE_USER_MASK are from 0 upwards.
 	 * These bits must not overlap. A static assert check should make sure of that.
@@ -492,7 +492,7 @@ extern struct spi_device *spi_new_ancillary_device(struct spi_device *spi, u8 ch
  * @dummy_rx: dummy receive buffer for full-duplex devices
  * @dummy_tx: dummy transmit buffer for full-duplex devices
  * @fw_translate_cs: If the boot firmware uses different numbering scheme
- *	what Linux expects, this optional hook can be used to translate
+ *	what freax expects, this optional hook can be used to translate
  *	between the two.
  * @ptp_sts_supported: If the driver sets this to true, it must provide a
  *	time snapshot in @spi_transfer->ptp_sts as close as possible to the
@@ -1652,4 +1652,4 @@ spi_transfer_is_last(struct spi_controller *ctlr, struct spi_transfer *xfer)
 	devm_spi_register_controller(_dev, _ctlr)
 #define spi_unregister_master(_ctlr)	spi_unregister_controller(_ctlr)
 
-#endif /* __LINUX_SPI_H */
+#endif /* __freax_SPI_H */

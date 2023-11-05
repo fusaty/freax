@@ -1,5 +1,5 @@
 /*
- * POSIX message queues filesystem for Linux.
+ * POSIX message queues filesystem for freax.
  *
  * Copyright (C) 2003,2004  Krzysztof Benedyczak    (golbi@mat.uni.torun.pl)
  *                          Michal Wronski          (michal.wronski@gmail.com)
@@ -13,32 +13,32 @@
  * This file is released under the GPL.
  */
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/namei.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/mqueue.h>
-#include <linux/msg.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/netlink.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/nsproxy.h>
-#include <linux/pid.h>
-#include <linux/ipc_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/slab.h>
-#include <linux/sched/wake_q.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/user.h>
+#include <freax/capability.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
+#include <freax/namei.h>
+#include <freax/sysctl.h>
+#include <freax/poll.h>
+#include <freax/mqueue.h>
+#include <freax/msg.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/netlink.h>
+#include <freax/syscalls.h>
+#include <freax/audit.h>
+#include <freax/signal.h>
+#include <freax/mutex.h>
+#include <freax/nsproxy.h>
+#include <freax/pid.h>
+#include <freax/ipc_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/slab.h>
+#include <freax/sched/wake_q.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/user.h>
 
 #include <net/sock.h>
 #include "util.h"

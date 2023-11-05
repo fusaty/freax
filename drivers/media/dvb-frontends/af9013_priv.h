@@ -12,12 +12,12 @@
 #define AF9013_PRIV_H
 
 #include <media/dvb_frontend.h>
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include "af9013.h"
-#include <linux/firmware.h>
-#include <linux/i2c-mux.h>
-#include <linux/math64.h>
-#include <linux/regmap.h>
+#include <freax/firmware.h>
+#include <freax/i2c-mux.h>
+#include <freax/math64.h>
+#include <freax/regmap.h>
 
 #define AF9013_FIRMWARE "dvb-fe-af9013.fw"
 

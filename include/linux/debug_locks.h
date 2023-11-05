@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_DEBUG_LOCKING_H
-#define __LINUX_DEBUG_LOCKING_H
+#ifndef __freax_DEBUG_LOCKING_H
+#define __freax_DEBUG_LOCKING_H
 
-#include <linux/atomic.h>
-#include <linux/cache.h>
+#include <freax/atomic.h>
+#include <freax/cache.h>
 
 struct task_struct;
 

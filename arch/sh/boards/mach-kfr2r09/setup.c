@@ -12,27 +12,27 @@
 
 #include <cpu/sh7724.h>
 
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_data/lv5207lp.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_intc.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sh_keysc.h>
+#include <freax/interrupt.h>
+#include <freax/memblock.h>
+#include <freax/mfd/tmio.h>
+#include <freax/mmc/host.h>
+#include <freax/mtd/physmap.h>
+#include <freax/platform_data/lv5207lp.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/sh_intc.h>
+#include <freax/usb/r8a66597.h>
+#include <freax/videodev2.h>
+#include <freax/dma-map-ops.h>
 
 #include <mach/kfr2r09.h>
 

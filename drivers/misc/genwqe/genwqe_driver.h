@@ -7,26 +7,26 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@freax.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/cdev.h>
+#include <freax/list.h>
+#include <freax/kthread.h>
+#include <freax/scatterlist.h>
+#include <freax/iommu.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
 
 #include <asm/byteorder.h>
-#include <linux/genwqe/genwqe_card.h>
+#include <freax/genwqe/genwqe_card.h>
 
 #define DRV_VERSION		"2.0.25"
 

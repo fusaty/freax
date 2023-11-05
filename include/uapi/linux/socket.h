@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SOCKET_H
-#define _UAPI_LINUX_SOCKET_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SOCKET_H
+#define _UAPI_freax_SOCKET_H
 
 /*
  * Desired design of maximum size and alignment (see RFC2553)
@@ -35,4 +35,4 @@ struct __kernel_sockaddr_storage {
 #define SOCK_TXREHASH_DISABLED	0
 #define SOCK_TXREHASH_ENABLED	1
 
-#endif /* _UAPI_LINUX_SOCKET_H */
+#endif /* _UAPI_freax_SOCKET_H */

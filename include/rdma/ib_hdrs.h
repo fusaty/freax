@@ -6,7 +6,7 @@
 #ifndef IB_HDRS_H
 #define IB_HDRS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/unaligned.h>
 #include <rdma/ib_verbs.h>
 

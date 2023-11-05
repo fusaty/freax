@@ -3,7 +3,7 @@
 #include "kvm_util.h"
 #include "test_util.h"
 
-#include <linux/kvm.h>
+#include <freax/kvm.h>
 
 #define __LC_SVC_NEW_PSW 0x1c0
 #define __LC_PGM_NEW_PSW 0x1d0

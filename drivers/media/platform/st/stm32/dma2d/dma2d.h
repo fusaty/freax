@@ -14,7 +14,7 @@
 #ifndef __DMA2D_H__
 #define __DMA2D_H__
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 

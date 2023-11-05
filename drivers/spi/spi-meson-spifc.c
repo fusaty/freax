@@ -5,18 +5,18 @@
 // Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
 //
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 /* register map */
 #define REG_CMD			0x00

@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
-#include <linux/iova.h>
-#include <linux/mlx5/driver.h>
+#include <freax/iova.h>
+#include <freax/mlx5/driver.h>
 #include "mlx5_vdpa.h"
 
 static int alloc_pd(struct mlx5_vdpa_dev *dev, u32 *pdn, u16 uid)

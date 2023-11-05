@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* sb1000.c: A General Instruments SB1000 driver for linux. */
+/* sb1000.c: A General Instruments SB1000 driver for freax. */
 /*
 	Written 1998 by Franco Venturi.
 
@@ -23,35 +23,35 @@
 	980608 Steven Hirsch <shirsch@adelphia.net>
 
 	Small changes to make it work with 2.1.x kernels. Hopefully,
-	nothing major will change before official release of Linux 2.2.
+	nothing major will change before official release of freax 2.2.
 
 	Merged with 2.2 - Alan Cox
 */
 
 static char version[] = "sb1000.c:v1.1.2 6/01/98 (fventuri@mediaone.net)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>	/* for udelay() */
-#include <linux/etherdevice.h>
-#include <linux/pnp.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/if_cablemodem.h> /* for SIOGCM/SIOSCM stuff */
+#include <freax/in.h>
+#include <freax/ioport.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>	/* for udelay() */
+#include <freax/etherdevice.h>
+#include <freax/pnp.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/gfp.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #ifdef SB1000_DEBUG
 static int sb1000_debug = SB1000_DEBUG;
@@ -75,7 +75,7 @@ struct sb1000_private {
 	unsigned char rx_pkt_type[NPIDS];
 };
 
-/* prototypes for Linux interface */
+/* prototypes for freax interface */
 extern int sb1000_probe(struct net_device *dev);
 static int sb1000_open(struct net_device *dev);
 static int sb1000_siocdevprivate(struct net_device *dev, struct ifreq *ifr,
@@ -926,7 +926,7 @@ sb1000_error_dpc(struct net_device *dev)
 
 
 /*
- * Linux interface functions
+ * freax interface functions
  */
 static int
 sb1000_open(struct net_device *dev)

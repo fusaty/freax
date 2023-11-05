@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2011 Rafael J. Wysocki <rjw@sisk.pl>, Renesas Electronics Corp.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pm_clock.h>
-#include <linux/acpi.h>
-#include <linux/pm_domain.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/pm_clock.h>
+#include <freax/acpi.h>
+#include <freax/pm_domain.h>
 
 #include "power.h"
 

@@ -5,8 +5,8 @@
  */
 
 #include <dt-bindings/clock/mediatek,mt6795-clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include "clk-gate.h"
 #include "clk-mtk.h"
 #include "clk-mux.h"

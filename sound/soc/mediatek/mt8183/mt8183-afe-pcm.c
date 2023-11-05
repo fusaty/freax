@@ -5,13 +5,13 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #include "mt8183-afe-common.h"
 #include "mt8183-afe-clk.h"

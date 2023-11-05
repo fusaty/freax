@@ -2,7 +2,7 @@
 #ifndef __NET_TC_NAT_H
 #define __NET_TC_NAT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/act_api.h>
 
 struct tcf_nat_parms {

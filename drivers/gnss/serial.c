@@ -5,17 +5,17 @@
  * Copyright (C) 2018 Johan Hovold <johan@kernel.org>
  */
 
-#include <linux/errno.h>
-#include <linux/gnss.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/gnss.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/sched.h>
+#include <freax/serdev.h>
+#include <freax/slab.h>
 
 #include "serial.h"
 

@@ -6,7 +6,7 @@
 #ifndef BTRFS_TREE_CHECKER_H
 #define BTRFS_TREE_CHECKER_H
 
-#include <uapi/linux/btrfs_tree.h>
+#include <uapi/freax/btrfs_tree.h>
 
 struct extent_buffer;
 struct btrfs_chunk;

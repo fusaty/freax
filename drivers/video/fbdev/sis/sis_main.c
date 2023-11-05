@@ -3,7 +3,7 @@
  * SiS 300/540/630[S]/730[S],
  * SiS 315[E|PRO]/550/[M]65x/[M]66x[F|M|G]X/[M]74x[GX]/330/[M]76x[GX],
  * XGI V3XT/V5/V8, Z7
- * frame buffer driver for Linux kernels >= 2.4.14 and >=2.6.3
+ * frame buffer driver for freax kernels >= 2.4.14 and >=2.6.3
  *
  * Copyright (C) 2001-2005 Thomas Winischhofer, Vienna, Austria.
  *
@@ -19,26 +19,26 @@
  * which is (c) 1998 Gerd Knorr <kraxel@goldbach.in-berlin.de>
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/screen_info.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/selection.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/screen_info.h>
+#include <freax/slab.h>
+#include <freax/fb.h>
+#include <freax/selection.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 
 #include "sis.h"

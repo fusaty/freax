@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,10 +16,10 @@
  *			Alan Cox, <gw4pts@gw4pts.ampr.org>
  *			Lawrence V. Stefani, <stefani@lkg.dec.com>
  */
-#ifndef _LINUX_HIPPIDEVICE_H
-#define _LINUX_HIPPIDEVICE_H
+#ifndef _freax_HIPPIDEVICE_H
+#define _freax_HIPPIDEVICE_H
 
-#include <linux/if_hippi.h>
+#include <freax/if_hippi.h>
 
 #ifdef __KERNEL__
 
@@ -37,4 +37,4 @@ int hippi_neigh_setup_dev(struct net_device *dev, struct neigh_parms *p);
 struct net_device *alloc_hippi_dev(int sizeof_priv);
 #endif
 
-#endif	/* _LINUX_HIPPIDEVICE_H */
+#endif	/* _freax_HIPPIDEVICE_H */

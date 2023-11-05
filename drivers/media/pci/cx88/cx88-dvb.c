@@ -10,13 +10,13 @@
 #include "cx88.h"
 #include "dvb-pll.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/suspend.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/kthread.h>
+#include <freax/file.h>
+#include <freax/suspend.h>
 
 #include <media/v4l2-common.h>
 

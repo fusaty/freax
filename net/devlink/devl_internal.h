@@ -3,13 +3,13 @@
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/xarray.h>
+#include <freax/etherdevice.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/xarray.h>
 #include <net/devlink.h>
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>

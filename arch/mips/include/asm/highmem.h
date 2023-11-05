@@ -20,9 +20,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <freax/bug.h>
+#include <freax/interrupt.h>
+#include <freax/uaccess.h>
 #include <asm/cpu-features.h>
 #include <asm/kmap_size.h>
 

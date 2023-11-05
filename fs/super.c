@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/super.c
+ *  freax/fs/super.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -21,22 +21,22 @@
  *  Heavily rewritten for 'one fs - one tree' dcache architecture. AV, Mar 2000
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/writeback.h>		/* for the emergency remount stuff */
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/rculist_bl.h>
-#include <linux/fscrypt.h>
-#include <linux/fsnotify.h>
-#include <linux/lockdep.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_context.h>
-#include <uapi/linux/mount.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/mount.h>
+#include <freax/security.h>
+#include <freax/writeback.h>		/* for the emergency remount stuff */
+#include <freax/idr.h>
+#include <freax/mutex.h>
+#include <freax/backing-dev.h>
+#include <freax/rculist_bl.h>
+#include <freax/fscrypt.h>
+#include <freax/fsnotify.h>
+#include <freax/lockdep.h>
+#include <freax/user_namespace.h>
+#include <freax/fs_context.h>
+#include <uapi/freax/mount.h>
 #include "internal.h"
 
 static int thaw_super_locked(struct super_block *sb, enum freeze_holder who);

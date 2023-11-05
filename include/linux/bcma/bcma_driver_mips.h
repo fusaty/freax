@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_MIPS_H_
-#define LINUX_BCMA_DRIVER_MIPS_H_
+#ifndef freax_BCMA_DRIVER_MIPS_H_
+#define freax_BCMA_DRIVER_MIPS_H_
 
 #define BCMA_MIPS_IPSFLAG		0x0F08
 /* which sbflags get routed to mips interrupt 1 */
@@ -42,4 +42,4 @@ struct bcma_drv_mips {
 
 extern u32 bcma_cpu_clock(struct bcma_drv_mips *mcore);
 
-#endif /* LINUX_BCMA_DRIVER_MIPS_H_ */
+#endif /* freax_BCMA_DRIVER_MIPS_H_ */

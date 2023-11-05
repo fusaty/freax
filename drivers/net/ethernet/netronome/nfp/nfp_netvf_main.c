@@ -8,10 +8,10 @@
  *         Rolf Neugebauer <rolf.neugebauer@netronome.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/etherdevice.h>
 
 #include "nfpcore/nfp_dev.h"
 #include "nfp_net_ctrl.h"

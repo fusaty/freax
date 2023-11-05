@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/prandom.h>
-#include <linux/string_helpers.h>
-#include <linux/utsname.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/kmod.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/prandom.h>
+#include <freax/string_helpers.h>
+#include <freax/utsname.h>
+#include <freax/uuid.h>
+#include <freax/workqueue.h>
 
 #include "tb.h"
 

@@ -1,10 +1,10 @@
 /* IPv4-specific defines for netfilter. 
  * (C)1998 Rusty Russell -- This code is GPL.
  */
-#ifndef __LINUX_IP_NETFILTER_H
-#define __LINUX_IP_NETFILTER_H
+#ifndef __freax_IP_NETFILTER_H
+#define __freax_IP_NETFILTER_H
 
-#include <uapi/linux/netfilter_ipv4.h>
+#include <uapi/freax/netfilter_ipv4.h>
 
 /* Extra routing may needed on local out, as the QUEUE target never returns
  * control to the table.
@@ -38,4 +38,4 @@ static inline int nf_ip_route(struct net *net, struct dst_entry **dst,
 }
 #endif /* CONFIG_INET */
 
-#endif /*__LINUX_IP_NETFILTER_H*/
+#endif /*__freax_IP_NETFILTER_H*/

@@ -2,10 +2,10 @@
 /*
  * NUMA emulation
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/topology.h>
-#include <linux/memblock.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/topology.h>
+#include <freax/memblock.h>
 #include <asm/dma.h>
 
 #include "numa_internal.h"

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2014 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/mempool.h>
 #include <scsi/scsi_tcq.h>
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 #include "snic_io.h"
 #include "snic.h"
@@ -112,7 +112,7 @@ snic_queue_exch_ver_req(struct snic *snic)
 			snic->config.hid, 0, (ulong)rqi);
 	ver = snic_ver_enc(SNIC_DRV_VERSION);
 	req->u.exch_ver.drvr_ver = cpu_to_le32(ver);
-	req->u.exch_ver.os_type = cpu_to_le32(SNIC_OS_LINUX);
+	req->u.exch_ver.os_type = cpu_to_le32(SNIC_OS_freax);
 
 	snic_handle_untagged_req(snic, rqi);
 

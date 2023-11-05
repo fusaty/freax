@@ -8,12 +8,12 @@
  * https://github.com/facebookincubator/katran/blob/main/katran/lib/bpf/pckt_parsing.h
  */
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 #include <stdbool.h>
-#include <linux/ipv6.h>
-#include <linux/if_ether.h>
+#include <freax/ipv6.h>
+#include <freax/if_ether.h>
 #include "test_tcp_hdr_options.h"
 
 char _license[] SEC("license") = "GPL";

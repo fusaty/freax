@@ -18,16 +18,16 @@
  * The other files are human-readable.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/pnp.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/proc_fs.h>
+#include <freax/pnp.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "pnpbios.h"
 

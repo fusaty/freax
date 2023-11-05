@@ -9,14 +9,14 @@
  * Gpio controlled clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 /**
  * DOC: basic gpio gated clock which can be enabled and disabled

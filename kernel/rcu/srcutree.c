@@ -5,7 +5,7 @@
  * Copyright (C) IBM Corporation, 2006
  * Copyright (C) Fujitsu, 2012
  *
- * Authors: Paul McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul McKenney <paulmck@freax.ibm.com>
  *	   Lai Jiangshan <laijs@cn.fujitsu.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
@@ -15,17 +15,17 @@
 
 #define pr_fmt(fmt) "rcu: " fmt
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/srcu.h>
 
 #include "rcu.h"
 #include "rcu_segcblist.h"

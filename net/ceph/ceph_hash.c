@@ -1,6 +1,6 @@
 
-#include <linux/ceph/types.h>
-#include <linux/module.h>
+#include <freax/ceph/types.h>
+#include <freax/module.h>
 
 /*
  * Robert Jenkin's hash function.
@@ -89,9 +89,9 @@ unsigned int ceph_str_hash_rjenkins(const char *str, unsigned int length)
 }
 
 /*
- * linux dcache hash
+ * freax dcache hash
  */
-unsigned int ceph_str_hash_linux(const char *str, unsigned int length)
+unsigned int ceph_str_hash_freax(const char *str, unsigned int length)
 {
 	unsigned long hash = 0;
 	unsigned char c;
@@ -107,8 +107,8 @@ unsigned int ceph_str_hash_linux(const char *str, unsigned int length)
 unsigned int ceph_str_hash(int type, const char *s, unsigned int len)
 {
 	switch (type) {
-	case CEPH_STR_HASH_LINUX:
-		return ceph_str_hash_linux(s, len);
+	case CEPH_STR_HASH_freax:
+		return ceph_str_hash_freax(s, len);
 	case CEPH_STR_HASH_RJENKINS:
 		return ceph_str_hash_rjenkins(s, len);
 	default:
@@ -120,8 +120,8 @@ EXPORT_SYMBOL(ceph_str_hash);
 const char *ceph_str_hash_name(int type)
 {
 	switch (type) {
-	case CEPH_STR_HASH_LINUX:
-		return "linux";
+	case CEPH_STR_HASH_freax:
+		return "freax";
 	case CEPH_STR_HASH_RJENKINS:
 		return "rjenkins";
 	default:

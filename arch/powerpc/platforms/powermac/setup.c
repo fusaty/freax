@@ -3,7 +3,7 @@
  *  Powermac setup and early boot code plus other random bits.
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Adapted for Power Macintosh by Paul Mackerras
  *    Copyright (C) 1996 Paul Mackerras (paulus@samba.org)
@@ -18,35 +18,35 @@
  * bootup setup stuff..
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/export.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/initrd.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/bitops.h>
-#include <linux/suspend.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/export.h>
+#include <freax/user.h>
+#include <freax/tty.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/major.h>
+#include <freax/initrd.h>
+#include <freax/vt_kern.h>
+#include <freax/console.h>
+#include <freax/pci.h>
+#include <freax/adb.h>
+#include <freax/cuda.h>
+#include <freax/pmu.h>
+#include <freax/irq.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/bitops.h>
+#include <freax/suspend.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 #include <asm/reg.h>
 #include <asm/sections.h>
@@ -517,9 +517,9 @@ static int __init check_pmac_serial_console(void)
 
 	/* We are getting a weird phandle from OF ... */
 	/* ... So use the full path instead */
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "freax,stdout-path", NULL);
 	if (name == NULL) {
-		pr_debug(" no linux,stdout-path !\n");
+		pr_debug(" no freax,stdout-path !\n");
 		return -ENODEV;
 	}
 	prom_stdout = of_find_node_by_path(name);

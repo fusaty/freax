@@ -4,7 +4,7 @@
 # Too unstable, machine ends up hanging after lots of Oopses
 kms_cursor_legacy.*
 
-# Started hanging the machine on Linux 5.19-rc2:
+# Started hanging the machine on freax 5.19-rc2:
 #
 # [IGT] kms_plane_lowres: executing
 # [IGT] kms_plane_lowres: starting subtest pipe-F-tiling-y

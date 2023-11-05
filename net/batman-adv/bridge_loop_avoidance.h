@@ -9,12 +9,12 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
 
 /**
  * batadv_bla_is_loopdetect_mac() - check if the mac address is from a loop

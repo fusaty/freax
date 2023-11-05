@@ -2,7 +2,7 @@
 /*
  * SDM845 MTP board device tree source
  *
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -642,7 +642,7 @@
 };
 
 &pm8998_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

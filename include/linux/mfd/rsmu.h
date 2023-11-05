@@ -5,8 +5,8 @@
  * Copyright (C) 2021 Integrated Device Technology, Inc., a Renesas Company.
  */
 
-#ifndef __LINUX_MFD_RSMU_H
-#define __LINUX_MFD_RSMU_H
+#ifndef __freax_MFD_RSMU_H
+#define __freax_MFD_RSMU_H
 
 #define RSMU_MAX_WRITE_COUNT	(255)
 #define RSMU_MAX_READ_COUNT	(255)
@@ -36,4 +36,4 @@ struct rsmu_ddata {
 	enum rsmu_type type;
 	u32 page;
 };
-#endif /*  __LINUX_MFD_RSMU_H */
+#endif /*  __freax_MFD_RSMU_H */

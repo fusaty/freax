@@ -3,13 +3,13 @@
  * store hypervisor information instruction emulation functions.
  *
  * Copyright IBM Corp. 2016
- * Author(s): Janosch Frank <frankja@linux.vnet.ibm.com>
+ * Author(s): Janosch Frank <frankja@freax.vnet.ibm.com>
  */
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/syscalls.h>
-#include <linux/mutex.h>
+#include <freax/errno.h>
+#include <freax/pagemap.h>
+#include <freax/vmalloc.h>
+#include <freax/syscalls.h>
+#include <freax/mutex.h>
 #include <asm/asm-offsets.h>
 #include <asm/sclp.h>
 #include <asm/diag.h>

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2012 Broadcom Corporation
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/clockchips.h>
-#include <linux/types.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/clockchips.h>
+#include <freax/types.h>
+#include <freax/clk.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 
 #define KONA_GPTIMER_STCS_OFFSET			0x00000000

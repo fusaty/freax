@@ -5,14 +5,14 @@
  * Copyright (C) 2022 StarFive Technology Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/watchdog.h>
 
 /* JH7100 Watchdog register define */
 #define STARFIVE_WDT_JH7100_INTSTAUS	0x000

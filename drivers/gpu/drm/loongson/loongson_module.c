@@ -3,7 +3,7 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <video/nomodeset.h>
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/utsname.h>
+#include <freax/utsname.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "rdev-ops.h"

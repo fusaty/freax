@@ -12,7 +12,7 @@
 
 #include <asm/unaligned.h>
 #include <crypto/curve25519.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 static __always_inline u64 u64_eq_mask(u64 a, u64 b)
 {

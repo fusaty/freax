@@ -8,9 +8,9 @@
 #ifndef __ASM_CMPXCHG_H
 #define __ASM_CMPXCHG_H
 
-#include <linux/mmdebug.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <freax/mmdebug.h>
+#include <freax/types.h>
+#include <freax/bug.h>
 
 void __xchg_called_with_bad_pointer(void);
 

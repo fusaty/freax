@@ -6,12 +6,12 @@
  *
  *  Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/suspend.h>
 #include <asm/suspend.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/bl_bit.h>
 

@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/platnand.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/gpio/machine.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/mtd/platnand.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/flash.h>
+#include <freax/spi/mmc_spi.h>
+#include <freax/mmc/host.h>
+#include <freax/platform_data/spi-ep93xx.h>
+#include <freax/gpio/machine.h>
 
 #include "gpio-ep93xx.h"
 #include "hardware.h"
@@ -110,7 +110,7 @@ static struct mtd_partition ts72xx_nand_parts[] = {
 		.size		= TS72XX_BOOTROM_PART_SIZE,
 		.mask_flags	= MTD_WRITEABLE,	/* force read-only */
 	}, {
-		.name		= "Linux",
+		.name		= "freax",
 		.offset		= MTDPART_OFS_RETAIN,
 		.size		= TS72XX_REDBOOT_PART_SIZE,
 				/* leave so much for last partition */

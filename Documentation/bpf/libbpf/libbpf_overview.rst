@@ -5,7 +5,7 @@ libbpf Overview
 ===============
 
 libbpf is a C-based library containing a BPF loader that takes compiled BPF
-object files and prepares and loads them into the Linux kernel. libbpf takes the
+object files and prepares and loads them into the freax kernel. libbpf takes the
 heavy lifting of loading, verifying, and attaching BPF programs to various
 kernel hooks, allowing BPF application developers to focus only on BPF program
 correctness and performance.
@@ -125,7 +125,7 @@ maps, manipulate network packets, etc.
 
 For a complete description of what the helpers do, the arguments they take, and
 the return value, see the `bpf-helpers
-<https://man7.org/linux/man-pages/man7/bpf-helpers.7.html>`_ man page.
+<https://man7.org/freax/man-pages/man7/bpf-helpers.7.html>`_ man page.
 
 BPF CO-RE (Compile Once – Run Everywhere)
 =========================================
@@ -144,23 +144,23 @@ and configurations.
 
 To make BPF programs portable libbpf relies on the BTF type information of the
 running kernel. Kernel also exposes this self-describing authoritative BTF
-information through ``sysfs`` at ``/sys/kernel/btf/vmlinux``.
+information through ``sysfs`` at ``/sys/kernel/btf/vmfreax``.
 
 You can generate the BTF information for the running kernel with the following
 command:
 
 ::
 
-  $ bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
+  $ bpftool btf dump file /sys/kernel/btf/vmfreax format c > vmfreax.h
 
-The command generates a ``vmlinux.h`` header file with all kernel types
+The command generates a ``vmfreax.h`` header file with all kernel types
 (:doc:`BTF types <../btf>`) that the running kernel uses. Including
-``vmlinux.h`` in your BPF program eliminates dependency on system-wide kernel
+``vmfreax.h`` in your BPF program eliminates dependency on system-wide kernel
 headers.
 
 libbpf enables portability of BPF programs by looking at the BPF program’s
 recorded BTF type and relocation information and matching them to BTF
-information (vmlinux) provided by the running kernel. libbpf then resolves and
+information (vmfreax) provided by the running kernel. libbpf then resolves and
 matches all the types and fields, and updates necessary offsets and other
 relocatable data to ensure that BPF program’s logic functions correctly for a
 specific kernel on the host. BPF CO-RE concept thus eliminates overhead

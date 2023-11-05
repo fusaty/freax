@@ -8,15 +8,15 @@
  *  http://www.meas-spec.com/downloads/TSYS01_Digital_Temperature_Sensor.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/stat.h>
 #include "../common/ms_sensors/ms_sensors_i2c.h"
 
 /* TSYS01 Commands */

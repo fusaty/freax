@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright(c) 2007 Intel Corporation. All rights reserved.
  *
@@ -8,7 +8,7 @@
 #ifndef _FC_ELS_H_
 #define	_FC_ELS_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 /*

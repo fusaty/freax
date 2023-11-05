@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  Security-Enhanced Linux (SELinux) security module
+ *  Security-Enhanced freax (SEfreax) security module
  *
- *  This file contains the SELinux security data structures for kernel objects.
+ *  This file contains the SEfreax security data structures for kernel objects.
  *
  *  Author(s):  Stephen Smalley, <stephen.smalley.work@gmail.com>
  *		Chris Vance, <cvance@nai.com>
@@ -13,17 +13,17 @@
  *  Copyright (C) 2003 Red Hat, Inc., James Morris <jmorris@redhat.com>
  *  Copyright (C) 2016 Mellanox Technologies
  */
-#ifndef _SELINUX_OBJSEC_H_
-#define _SELINUX_OBJSEC_H_
+#ifndef _SEfreax_OBJSEC_H_
+#define _SEfreax_OBJSEC_H_
 
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/binfmts.h>
-#include <linux/in.h>
-#include <linux/spinlock.h>
-#include <linux/lsm_hooks.h>
-#include <linux/msg.h>
+#include <freax/list.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/binfmts.h>
+#include <freax/in.h>
+#include <freax/spinlock.h>
+#include <freax/lsm_hooks.h>
+#include <freax/msg.h>
 #include <net/net_namespace.h>
 #include "flask.h"
 #include "avc.h"
@@ -147,35 +147,35 @@ struct perf_event_security_struct {
 	u32 sid;  /* SID of perf_event obj creator */
 };
 
-extern struct lsm_blob_sizes selinux_blob_sizes;
-static inline struct task_security_struct *selinux_cred(const struct cred *cred)
+extern struct lsm_blob_sizes sefreax_blob_sizes;
+static inline struct task_security_struct *sefreax_cred(const struct cred *cred)
 {
-	return cred->security + selinux_blob_sizes.lbs_cred;
+	return cred->security + sefreax_blob_sizes.lbs_cred;
 }
 
-static inline struct file_security_struct *selinux_file(const struct file *file)
+static inline struct file_security_struct *sefreax_file(const struct file *file)
 {
-	return file->f_security + selinux_blob_sizes.lbs_file;
+	return file->f_security + sefreax_blob_sizes.lbs_file;
 }
 
-static inline struct inode_security_struct *selinux_inode(
+static inline struct inode_security_struct *sefreax_inode(
 						const struct inode *inode)
 {
 	if (unlikely(!inode->i_security))
 		return NULL;
-	return inode->i_security + selinux_blob_sizes.lbs_inode;
+	return inode->i_security + sefreax_blob_sizes.lbs_inode;
 }
 
-static inline struct msg_security_struct *selinux_msg_msg(
+static inline struct msg_security_struct *sefreax_msg_msg(
 						const struct msg_msg *msg_msg)
 {
-	return msg_msg->security + selinux_blob_sizes.lbs_msg_msg;
+	return msg_msg->security + sefreax_blob_sizes.lbs_msg_msg;
 }
 
-static inline struct ipc_security_struct *selinux_ipc(
+static inline struct ipc_security_struct *sefreax_ipc(
 						const struct kern_ipc_perm *ipc)
 {
-	return ipc->security + selinux_blob_sizes.lbs_ipc;
+	return ipc->security + sefreax_blob_sizes.lbs_ipc;
 }
 
 /*
@@ -183,15 +183,15 @@ static inline struct ipc_security_struct *selinux_ipc(
  */
 static inline u32 current_sid(void)
 {
-	const struct task_security_struct *tsec = selinux_cred(current_cred());
+	const struct task_security_struct *tsec = sefreax_cred(current_cred());
 
 	return tsec->sid;
 }
 
-static inline struct superblock_security_struct *selinux_superblock(
+static inline struct superblock_security_struct *sefreax_superblock(
 					const struct super_block *superblock)
 {
-	return superblock->s_security + selinux_blob_sizes.lbs_superblock;
+	return superblock->s_security + sefreax_blob_sizes.lbs_superblock;
 }
 
-#endif /* _SELINUX_OBJSEC_H_ */
+#endif /* _SEfreax_OBJSEC_H_ */

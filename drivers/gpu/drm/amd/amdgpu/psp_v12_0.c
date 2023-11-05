@@ -20,8 +20,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 #include "amdgpu.h"
 #include "amdgpu_psp.h"
 #include "amdgpu_ucode.h"

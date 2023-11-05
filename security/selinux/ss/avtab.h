@@ -92,7 +92,7 @@ int avtab_alloc(struct avtab *, u32);
 int avtab_alloc_dup(struct avtab *new, const struct avtab *orig);
 void avtab_destroy(struct avtab *h);
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 void avtab_hash_eval(struct avtab *h, const char *tag);
 #else
 static inline void avtab_hash_eval(struct avtab *h, const char *tag)

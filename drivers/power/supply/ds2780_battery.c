@@ -9,15 +9,15 @@
  * Based on ds2760_battery and ds2782_battery drivers
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/param.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/param.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/idr.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 #include "../../w1/slaves/w1_ds2780.h"
 
 /* Current unit measurement in uA for a 1 milli-ohm sense resistor */

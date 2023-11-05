@@ -7,11 +7,11 @@
  * Based on a driver by: Steve Sakoman <steve@sakoman.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/mutex.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/spi/spi.h>
+#include <freax/mutex.h>
+#include <freax/gpio/consumer.h>
 
 #include <video/omapfb_dss.h>
 

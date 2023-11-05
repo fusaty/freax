@@ -2,8 +2,8 @@
 #ifndef __ASM_SH_ETH_H__
 #define __ASM_SH_ETH_H__
 
-#include <linux/phy.h>
-#include <linux/if_ether.h>
+#include <freax/phy.h>
+#include <freax/if_ether.h>
 
 struct sh_eth_plat_data {
 	int phy;

@@ -3,22 +3,22 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/of_address.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_platform.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define MDIO_DRV_NAME "Hi-HNS_MDIO"
 #define MDIO_BUS_NAME "Hisilicon MII Bus"

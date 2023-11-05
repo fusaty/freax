@@ -14,15 +14,15 @@
  * Platform devices for Atheros AR5312 SoCs
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/reboot.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/irqdomain.h>
+#include <freax/interrupt.h>
+#include <freax/memblock.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/physmap.h>
+#include <freax/reboot.h>
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>
 #include <asm/time.h>

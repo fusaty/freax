@@ -36,7 +36,7 @@
 #ifndef _GVT_FB_DECODER_H_
 #define _GVT_FB_DECODER_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "display/intel_display_limits.h"
 

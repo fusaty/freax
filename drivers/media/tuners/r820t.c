@@ -22,10 +22,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/bitrev.h>
+#include <freax/videodev2.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/bitrev.h>
 
 #include "tuner-i2c.h"
 #include "r820t.h"

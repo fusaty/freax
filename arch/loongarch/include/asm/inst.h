@@ -5,8 +5,8 @@
 #ifndef _ASM_INST_H
 #define _ASM_INST_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 #include <asm/asm.h>
 #include <asm/ptrace.h>
 

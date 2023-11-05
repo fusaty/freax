@@ -3,21 +3,21 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/falloc.h>
-#include <linux/writeback.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/btrfs.h>
-#include <linux/uio.h>
-#include <linux/iversion.h>
-#include <linux/fsverity.h>
-#include <linux/iomap.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/backing-dev.h>
+#include <freax/falloc.h>
+#include <freax/writeback.h>
+#include <freax/compat.h>
+#include <freax/slab.h>
+#include <freax/btrfs.h>
+#include <freax/uio.h>
+#include <freax/iversion.h>
+#include <freax/fsverity.h>
+#include <freax/iomap.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

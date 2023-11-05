@@ -4,14 +4,14 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/usb.h>
 #include <asm/unaligned.h>
 #include <net/bluetooth/bluetooth.h>
 

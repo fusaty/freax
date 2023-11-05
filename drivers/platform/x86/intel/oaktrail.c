@@ -10,7 +10,7 @@
  * Copyright (C) 2006 Lennart Poettering <mzxreary (at) 0pointer (dot) de>
  *
  * This driver does below things:
- * 1. registers itself in the Linux backlight control in
+ * 1. registers itself in the freax backlight control in
  *    /sys/class/backlight/intel_oaktrail/
  *
  * 2. registers in the rfkill subsystem here: /sys/class/rfkill/rfkillX/
@@ -24,17 +24,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/dmi.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/rfkill.h>
 
 #include <acpi/video.h>
 

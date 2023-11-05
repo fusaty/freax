@@ -39,7 +39,7 @@
  * reaches a value of 1 before /any/ of the threads reset it to the saturated
  * value, then a concurrent refcount_dec_and_test() may erroneously free the
  * underlying object.
- * Linux limits the maximum number of tasks to PID_MAX_LIMIT, which is currently
+ * freax limits the maximum number of tasks to PID_MAX_LIMIT, which is currently
  * 0x400000 (and can't easily be raised in the future beyond FUTEX_TID_MASK).
  * With the current PID limit, if no batched refcounting operations are used and
  * the attacker can't repeatedly trigger kernel oopses in the middle of refcount
@@ -89,14 +89,14 @@
  *
  */
 
-#ifndef _LINUX_REFCOUNT_H
-#define _LINUX_REFCOUNT_H
+#ifndef _freax_REFCOUNT_H
+#define _freax_REFCOUNT_H
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/limits.h>
-#include <linux/spinlock_types.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/limits.h>
+#include <freax/spinlock_types.h>
 
 struct mutex;
 
@@ -366,4 +366,4 @@ extern __must_check bool refcount_dec_and_lock(refcount_t *r, spinlock_t *lock) 
 extern __must_check bool refcount_dec_and_lock_irqsave(refcount_t *r,
 						       spinlock_t *lock,
 						       unsigned long *flags) __cond_acquires(lock);
-#endif /* _LINUX_REFCOUNT_H */
+#endif /* _freax_REFCOUNT_H */

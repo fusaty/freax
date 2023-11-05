@@ -4,7 +4,7 @@
 #ifndef _PDSC_AUXBUS_H_
 #define _PDSC_AUXBUS_H_
 
-#include <linux/auxiliary_bus.h>
+#include <freax/auxiliary_bus.h>
 
 struct pds_auxiliary_dev {
 	struct auxiliary_device aux_dev;

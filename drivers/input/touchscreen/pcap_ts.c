@@ -6,16 +6,16 @@
  *  Copyright (C) 2009 Daniel Ribeiro <drwyrm@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/ezx-pcap.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/pm.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/mfd/ezx-pcap.h>
 
 struct pcap_ts {
 	struct pcap_chip *pcap;

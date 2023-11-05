@@ -8,8 +8,8 @@
 #ifndef _SC_IPC_H
 #define _SC_IPC_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
 #define IMX_SC_RPC_VERSION	1
 #define IMX_SC_RPC_MAX_MSG	8

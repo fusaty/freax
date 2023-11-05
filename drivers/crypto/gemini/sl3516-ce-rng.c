@@ -7,8 +7,8 @@
  * This file handle the RNG found in the SL3516 crypto engine
  */
 #include "sl3516-ce.h"
-#include <linux/pm_runtime.h>
-#include <linux/hw_random.h>
+#include <freax/pm_runtime.h>
+#include <freax/hw_random.h>
 
 static int sl3516_ce_rng_read(struct hwrng *rng, void *buf, size_t max, bool wait)
 {

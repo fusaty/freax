@@ -9,10 +9,10 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#ifndef __LINUX_MFD_AS3722_H__
-#define __LINUX_MFD_AS3722_H__
+#ifndef __freax_MFD_AS3722_H__
+#define __freax_MFD_AS3722_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 /* AS3722 registers */
 #define AS3722_SD0_VOLTAGE_REG				0x00
@@ -415,4 +415,4 @@ static inline int as3722_irq_get_virq(struct as3722 *as3722, int irq)
 {
 	return regmap_irq_get_virq(as3722->irq_data, irq);
 }
-#endif /* __LINUX_MFD_AS3722_H__ */
+#endif /* __freax_MFD_AS3722_H__ */

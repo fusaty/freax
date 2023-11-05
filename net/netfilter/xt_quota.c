@@ -4,13 +4,13 @@
  *
  * Sam Johnston <samj@samj.net>
  */
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_quota.h>
-#include <linux/module.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_quota.h>
+#include <freax/module.h>
 
 struct xt_quota_priv {
 	spinlock_t	lock;

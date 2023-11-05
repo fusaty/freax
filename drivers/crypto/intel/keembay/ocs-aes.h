@@ -8,7 +8,7 @@
 #ifndef _CRYPTO_OCS_AES_H
 #define _CRYPTO_OCS_AES_H
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 enum ocs_cipher {
 	OCS_AES = 0,

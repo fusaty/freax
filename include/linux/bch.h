@@ -14,7 +14,7 @@
 #ifndef _BCH_H
 #define _BCH_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct bch_control - BCH control structure

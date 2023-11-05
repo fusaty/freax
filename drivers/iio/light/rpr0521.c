@@ -9,20 +9,20 @@
  * TODO: illuminance channel
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
+#include <freax/acpi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/sysfs.h>
+#include <freax/pm_runtime.h>
 
 #define RPR0521_REG_SYSTEM_CTRL		0x40
 #define RPR0521_REG_MODE_CTRL		0x41

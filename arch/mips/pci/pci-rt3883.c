@@ -7,17 +7,17 @@
  *  Parts of this file are based on Ralink's 2.6.21 BSP
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/platform_device.h>
 
 #include <asm/mach-ralink/rt3883.h>
 #include <asm/mach-ralink/ralink_regs.h>

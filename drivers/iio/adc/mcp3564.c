@@ -16,15 +16,15 @@
  * https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP3461-2-4R-Family-Data-Sheet-DS20006404C.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/iopoll.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/units.h>
-#include <linux/util_macros.h>
+#include <freax/bitfield.h>
+#include <freax/iopoll.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/units.h>
+#include <freax/util_macros.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define MCP3564_ADCDATA_REG		0x00
 

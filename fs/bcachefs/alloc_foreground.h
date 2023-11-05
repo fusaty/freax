@@ -7,7 +7,7 @@
 #include "extents.h"
 #include "sb-members.h"
 
-#include <linux/hash.h>
+#include <freax/hash.h>
 
 struct bkey;
 struct bch_dev;

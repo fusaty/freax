@@ -37,8 +37,8 @@
 #include <errno.h>
 #include <error.h>
 #include <limits.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
+#include <freax/bpf.h>
+#include <freax/if_ether.h>
 #include <net/if.h>
 #include <signal.h>
 #include <stdbool.h>

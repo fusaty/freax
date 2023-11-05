@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
-#ifndef _LINUX_VIRTIO_GPIO_H
-#define _LINUX_VIRTIO_GPIO_H
+#ifndef _freax_VIRTIO_GPIO_H
+#define _freax_VIRTIO_GPIO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Virtio GPIO Feature bits */
 #define VIRTIO_GPIO_F_IRQ			0
@@ -69,4 +69,4 @@ struct virtio_gpio_irq_response {
 #define VIRTIO_GPIO_IRQ_STATUS_INVALID		0x0
 #define VIRTIO_GPIO_IRQ_STATUS_VALID		0x1
 
-#endif /* _LINUX_VIRTIO_GPIO_H */
+#endif /* _freax_VIRTIO_GPIO_H */

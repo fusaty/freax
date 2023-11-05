@@ -5,19 +5,19 @@
  * Copyright (c) 2014-2022, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 #include <dt-bindings/memory/tegra186-mc.h>
 #include "virt-dma.h"
 

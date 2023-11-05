@@ -5,10 +5,10 @@
  * Copyright 2020 Google LLC
  */
 
-#ifndef LINUX_MMC_CQHCI_CRYPTO_H
-#define LINUX_MMC_CQHCI_CRYPTO_H
+#ifndef freax_MMC_CQHCI_CRYPTO_H
+#define freax_MMC_CQHCI_CRYPTO_H
 
-#include <linux/mmc/host.h>
+#include <freax/mmc/host.h>
 
 #include "cqhci.h"
 
@@ -47,4 +47,4 @@ static inline u64 cqhci_crypto_prep_task_desc(struct mmc_request *mrq)
 
 #endif /* !CONFIG_MMC_CRYPTO */
 
-#endif /* LINUX_MMC_CQHCI_CRYPTO_H */
+#endif /* freax_MMC_CQHCI_CRYPTO_H */

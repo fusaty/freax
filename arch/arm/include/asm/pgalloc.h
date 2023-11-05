@@ -7,7 +7,7 @@
 #ifndef _ASMARM_PGALLOC_H
 #define _ASMARM_PGALLOC_H
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 
 #include <asm/domain.h>
 #include <asm/pgtable-hwdef.h>
@@ -59,9 +59,9 @@ static inline void clean_pte_table(pte_t *pte)
  * into one table thus:
  *
  *  +------------+
- *  | Linux pt 0 |
+ *  | freax pt 0 |
  *  +------------+
- *  | Linux pt 1 |
+ *  | freax pt 1 |
  *  +------------+
  *  |  h/w pt 0  |
  *  +------------+
@@ -136,7 +136,7 @@ pmd_populate(struct mm_struct *mm, pmd_t *pmdp, pgtable_t ptep)
 	extern pmdval_t user_pmd_table;
 	pmdval_t prot;
 
-	if (__LINUX_ARM_ARCH__ >= 6 && !IS_ENABLED(CONFIG_ARM_LPAE))
+	if (__freax_ARM_ARCH__ >= 6 && !IS_ENABLED(CONFIG_ARM_LPAE))
 		prot = user_pmd_table;
 	else
 		prot = _PAGE_USER_TABLE;

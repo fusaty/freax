@@ -3,11 +3,11 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/inetdevice.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/inetdevice.h>
+#include <freax/property.h>
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>
 #include <net/addrconf.h>

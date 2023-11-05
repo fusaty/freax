@@ -3,14 +3,14 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/route.h>
 #include <net/dst.h>
 #include <net/netfilter/ipv4/nf_reject.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_bridge.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_bridge.h>
 
 static int nf_reject_iphdr_validate(struct sk_buff *skb)
 {

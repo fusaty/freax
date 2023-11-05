@@ -3,11 +3,11 @@
  * BIOS32 and PCI BIOS handling.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
 
 #include <asm/pci_x86.h>
 #include <asm/e820/types.h>

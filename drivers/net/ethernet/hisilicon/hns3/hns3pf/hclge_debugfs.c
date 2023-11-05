@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2018-2019 Hisilicon Limited. */
 
-#include <linux/device.h>
-#include <linux/sched/clock.h>
+#include <freax/device.h>
+#include <freax/sched/clock.h>
 
 #include "hclge_debugfs.h"
 #include "hclge_err.h"

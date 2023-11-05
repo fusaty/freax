@@ -5,7 +5,7 @@
 #define _GNU_SOURCE
 
 #include <inttypes.h>
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 #include "kvm_util.h"
 #include "memstress.h"

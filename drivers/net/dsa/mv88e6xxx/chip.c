@@ -6,30 +6,30 @@
  *
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire freax Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairefreax.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dsa/mv88e6xxx.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_data/mv88e6xxx.h>
-#include <linux/netdevice.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phylink.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dsa/mv88e6xxx.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_bridge.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/jiffies.h>
+#include <freax/list.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/platform_data/mv88e6xxx.h>
+#include <freax/netdevice.h>
+#include <freax/gpio/consumer.h>
+#include <freax/phylink.h>
 #include <net/dsa.h>
 
 #include "chip.h"

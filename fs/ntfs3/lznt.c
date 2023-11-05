@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include "debug.h"
 #include "ntfs_fs.h"

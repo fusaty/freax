@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/ch11.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/ch11.h>
 
 #define TEST_SE0_NAK_PID			0x0101
 #define TEST_J_PID				0x0102

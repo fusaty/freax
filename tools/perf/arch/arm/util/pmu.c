@@ -5,9 +5,9 @@
  */
 
 #include <string.h>
-#include <linux/coresight-pmu.h>
-#include <linux/perf_event.h>
-#include <linux/string.h>
+#include <freax/coresight-pmu.h>
+#include <freax/perf_event.h>
+#include <freax/string.h>
 
 #include "arm-spe.h"
 #include "hisi-ptt.h"

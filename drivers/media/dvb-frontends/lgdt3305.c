@@ -2,15 +2,15 @@
 /*
  *    Support for LG Electronics LGDT3304 and LGDT3305 - VSB/QAM
  *
- *    Copyright (C) 2008, 2009, 2010 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2008, 2009, 2010 Michael Krufky <mkrufky@freaxtv.org>
  *
  *    LGDT3304 support by Jarod Wilson <jarod@redhat.com>
  */
 
 #include <asm/div64.h>
-#include <linux/dvb/frontend.h>
-#include <linux/slab.h>
-#include <linux/int_log.h>
+#include <freax/dvb/frontend.h>
+#include <freax/slab.h>
+#include <freax/int_log.h>
 #include "lgdt3305.h"
 
 static int debug;
@@ -1197,6 +1197,6 @@ static const struct dvb_frontend_ops lgdt3305_ops = {
 };
 
 MODULE_DESCRIPTION("LG Electronics LGDT3304/5 ATSC/QAM-B Demodulator Driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@freaxtv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.2");

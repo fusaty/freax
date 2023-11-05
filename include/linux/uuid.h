@@ -5,10 +5,10 @@
  * Copyright (C) 2010, 2016 Intel Corp.
  *	Huang Ying <ying.huang@intel.com>
  */
-#ifndef _LINUX_UUID_H_
-#define _LINUX_UUID_H_
+#ifndef _freax_UUID_H_
+#define _freax_UUID_H_
 
-#include <linux/string.h>
+#include <freax/string.h>
 
 #define UUID_SIZE 16
 

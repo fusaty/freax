@@ -10,11 +10,11 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv4.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/protocol.h>

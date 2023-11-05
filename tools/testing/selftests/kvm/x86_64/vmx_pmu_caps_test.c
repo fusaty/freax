@@ -13,7 +13,7 @@
 #define _GNU_SOURCE /* for program_invocation_short_name */
 #include <sys/ioctl.h>
 
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 #include "kvm_util.h"
 #include "vmx.h"

@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/auth.c
+ * freax/net/sunrpc/auth.c
  *
  * Generic RPC client authentication API.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hash.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/hash.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/spinlock.h>
 
 #include <trace/events/sunrpc.h>
 

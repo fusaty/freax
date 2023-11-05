@@ -7,11 +7,11 @@
 #ifndef __CLK_BT1_CCU_PLL_H__
 #define __CLK_BT1_CCU_PLL_H__
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/bits.h>
-#include <linux/of.h>
+#include <freax/clk-provider.h>
+#include <freax/spinlock.h>
+#include <freax/regmap.h>
+#include <freax/bits.h>
+#include <freax/of.h>
 
 /*
  * CCU PLL private flags

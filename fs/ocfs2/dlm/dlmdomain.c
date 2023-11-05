@@ -7,16 +7,16 @@
  * Copyright (C) 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/debugfs.h>
+#include <freax/sched/signal.h>
 
 #include "../cluster/heartbeat.h"
 #include "../cluster/nodemanager.h"

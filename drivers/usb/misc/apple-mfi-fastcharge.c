@@ -6,10 +6,10 @@
  */
 
 /* Standard include files */
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 MODULE_AUTHOR("Bastien Nocera <hadess@hadess.net>");
 MODULE_DESCRIPTION("Fast-charge control for Apple \"MFi\" devices");

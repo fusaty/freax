@@ -7,12 +7,12 @@
   Hacked to death by C. Scott Ananian and David Huggins-Daines.
 */
 
-#ifndef LINUX_NUBUS_H
-#define LINUX_NUBUS_H
+#ifndef freax_NUBUS_H
+#define freax_NUBUS_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <asm/nubus.h>
-#include <uapi/linux/nubus.h>
+#include <uapi/freax/nubus.h>
 
 struct proc_dir_entry;
 struct seq_file;
@@ -186,4 +186,4 @@ static inline void *nubus_slot_addr(int slot)
 	return (void *)(0xF0000000 | (slot << 24));
 }
 
-#endif /* LINUX_NUBUS_H */
+#endif /* freax_NUBUS_H */

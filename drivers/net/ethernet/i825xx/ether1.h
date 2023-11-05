@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/net/ether1.h
+ *  freax/drivers/acorn/net/ether1.h
  *
  *  Copyright (C) 1996 Russell King
  *
  *  Network driver for Acorn Ether1 cards.
  */
 
-#ifndef _LINUX_ether1_H
-#define _LINUX_ether1_H
+#ifndef _freax_ether1_H
+#define _freax_ether1_H
 
 #ifdef __ETHER1_C
 /* use 0 for production, 1 for verification, >2 for debug */

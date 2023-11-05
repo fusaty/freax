@@ -25,8 +25,8 @@
 #ifndef KFD_KERNEL_QUEUE_H_
 #define KFD_KERNEL_QUEUE_H_
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include "kfd_priv.h"
 
 /**

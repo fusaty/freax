@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
 
 #define SHM_ALIGN_MASK	(SHMLBA - 1)
 

@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex freax Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -20,8 +20,8 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/irq_poll.h>
-#include <linux/cpufreq.h>
+#include <freax/irq_poll.h>
+#include <freax/cpufreq.h>
 
 #if defined(CONFIG_DEBUG_FS) && !defined(CONFIG_SCSI_LPFC_DEBUG_FS)
 #define CONFIG_SCSI_LPFC_DEBUG_FS
@@ -358,7 +358,7 @@ struct lpfc_fcf {
 #define LPFC_REGION23_VERSION	1
 #define LPFC_REGION23_LAST_REC  0xff
 #define DRIVER_SPECIFIC_TYPE	0xA2
-#define LINUX_DRIVER_ID		0x20
+#define freax_DRIVER_ID		0x20
 #define PORT_STE_TYPE		0x1
 
 struct lpfc_fip_param_hdr {

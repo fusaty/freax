@@ -5,15 +5,15 @@
  * Copyright (c) 2016 BayLibre, SAS.
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #define BITS_PER_REG	32
 

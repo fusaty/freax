@@ -22,13 +22,13 @@
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio2 14 0>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio2 15 0>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 };

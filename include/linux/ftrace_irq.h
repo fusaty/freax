@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FTRACE_IRQ_H
-#define _LINUX_FTRACE_IRQ_H
+#ifndef _freax_FTRACE_IRQ_H
+#define _freax_FTRACE_IRQ_H
 
 #ifdef CONFIG_HWLAT_TRACER
 extern bool trace_hwlat_callback_enabled;
@@ -36,4 +36,4 @@ static inline void ftrace_nmi_exit(void)
 #endif
 }
 
-#endif /* _LINUX_FTRACE_IRQ_H */
+#endif /* _freax_FTRACE_IRQ_H */

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/timer.c
+ * freax/arch/arm/mach-omap2/timer.c
  *
  * OMAP2 GP timer support.
  *
@@ -26,8 +26,8 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/clk.h>
-#include <linux/clocksource.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
 
 #include "soc.h"
 #include "common.h"

@@ -4,10 +4,10 @@
  * same license as the driver
  */
 
-#ifndef _LINUX_DS1307_H
-#define _LINUX_DS1307_H
+#ifndef _freax_DS1307_H
+#define _freax_DS1307_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define DS1307_TRICKLE_CHARGER_250_OHM	0x01
 #define DS1307_TRICKLE_CHARGER_2K_OHM	0x02
@@ -19,4 +19,4 @@ struct ds1307_platform_data {
 	u8 trickle_charger_setup;
 };
 
-#endif /* _LINUX_DS1307_H */
+#endif /* _freax_DS1307_H */

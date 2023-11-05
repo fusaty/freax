@@ -4,16 +4,16 @@
  * Copyright (C) 2011 - 2014 Cisco Systems Inc
  */
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/virtio_net.h>
-#include <linux/virtio_net.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/netdev_features.h>
+#include <uapi/freax/ip.h>
+#include <uapi/freax/virtio_net.h>
+#include <freax/virtio_net.h>
+#include <freax/virtio_byteorder.h>
+#include <freax/netdev_features.h>
 #include "vector_user.h"
 #include "vector_kern.h"
 

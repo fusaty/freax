@@ -1,5 +1,5 @@
 /************************************************************************
- * s2io.c: A Linux PCI-X Ethernet driver for Neterion 10GbE Server NIC
+ * s2io.c: A freax PCI-X Ethernet driver for Neterion 10GbE Server NIC
  * Copyright(c) 2002-2010 Exar Corp.
  *
  * This software may be used and distributed according to the terms of
@@ -52,32 +52,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mdio.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioctl.h>
-#include <linux/timex.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/mdio.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/stddef.h>
+#include <freax/ioctl.h>
+#include <freax/timex.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
 #include <net/tcp.h>
 #include <net/checksum.h>
 

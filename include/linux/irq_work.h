@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IRQ_WORK_H
-#define _LINUX_IRQ_WORK_H
+#ifndef _freax_IRQ_WORK_H
+#define _freax_IRQ_WORK_H
 
-#include <linux/smp_types.h>
-#include <linux/rcuwait.h>
+#include <freax/smp_types.h>
+#include <freax/rcuwait.h>
 
 /*
  * An entry can be in one of four states:
@@ -72,4 +72,4 @@ static inline void irq_work_run(void) { }
 static inline void irq_work_single(void *arg) { }
 #endif
 
-#endif /* _LINUX_IRQ_WORK_H */
+#endif /* _freax_IRQ_WORK_H */

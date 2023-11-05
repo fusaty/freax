@@ -5,10 +5,10 @@
  * Copyright 2008 Wolfson Microelectronics plc
  */
 
-#ifndef __LINUX_MFD_WM8400_AUDIO_H
-#define __LINUX_MFD_WM8400_AUDIO_H
+#ifndef __freax_MFD_WM8400_AUDIO_H
+#define __freax_MFD_WM8400_AUDIO_H
 
-#include <linux/mfd/wm8400-audio.h>
+#include <freax/mfd/wm8400-audio.h>
 
 /*
  * R2 (0x02) - Power Management (1)

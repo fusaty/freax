@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef __LINUX_KMOD_H__
-#define __LINUX_KMOD_H__
+#ifndef __freax_KMOD_H__
+#define __freax_KMOD_H__
 
 /*
- *	include/linux/kmod.h
+ *	include/freax/kmod.h
  */
 
-#include <linux/umh.h>
-#include <linux/gfp.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/workqueue.h>
-#include <linux/sysctl.h>
+#include <freax/umh.h>
+#include <freax/gfp.h>
+#include <freax/stddef.h>
+#include <freax/errno.h>
+#include <freax/compiler.h>
+#include <freax/workqueue.h>
+#include <freax/sysctl.h>
 
 #define KMOD_PATH_LEN 256
 
@@ -32,4 +32,4 @@ static inline int request_module_nowait(const char *name, ...) { return -ENOSYS;
 #define try_then_request_module(x, mod...) (x)
 #endif
 
-#endif /* __LINUX_KMOD_H__ */
+#endif /* __freax_KMOD_H__ */

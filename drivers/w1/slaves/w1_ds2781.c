@@ -7,14 +7,14 @@
  * Based on w1-ds2780 driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 #include "w1_ds2781.h"
 

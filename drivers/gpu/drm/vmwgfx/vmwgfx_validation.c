@@ -30,7 +30,7 @@
 #include "vmwgfx_resource_priv.h"
 #include "vmwgfx_validation.h"
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 
 #define VMWGFX_VALIDATION_MEM_GRAN (16*PAGE_SIZE)

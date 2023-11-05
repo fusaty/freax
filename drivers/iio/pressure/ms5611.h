@@ -9,9 +9,9 @@
 #ifndef _MS5611_H
 #define _MS5611_H
 
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/mutex.h>
 
 #define MS5611_RESET			0x1e
 #define MS5611_READ_ADC			0x00

@@ -2,7 +2,7 @@
 /*
  * IPVS:        Weighted Least-Connection Scheduling module
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@freaxvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *
  * Changes:
@@ -17,8 +17,8 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 
 #include <net/ip_vs.h>
 

@@ -6,32 +6,32 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/cache.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
-#include <linux/panic_notifier.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/efi.h>
-#include <linux/psci.h>
-#include <linux/sched/task.h>
-#include <linux/scs.h>
-#include <linux/mm.h>
+#include <freax/acpi.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/initrd.h>
+#include <freax/console.h>
+#include <freax/cache.h>
+#include <freax/screen_info.h>
+#include <freax/init.h>
+#include <freax/kexec.h>
+#include <freax/root_dev.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/fs.h>
+#include <freax/panic_notifier.h>
+#include <freax/proc_fs.h>
+#include <freax/memblock.h>
+#include <freax/of_fdt.h>
+#include <freax/efi.h>
+#include <freax/psci.h>
+#include <freax/sched/task.h>
+#include <freax/scs.h>
+#include <freax/mm.h>
 
 #include <asm/acpi.h>
 #include <asm/fixmap.h>
@@ -91,7 +91,7 @@ void __init smp_setup_processor_id(void)
 	u64 mpidr = read_cpuid_mpidr() & MPIDR_HWID_BITMASK;
 	set_cpu_logical_map(0, mpidr);
 
-	pr_info("Booting Linux on physical CPU 0x%010lx [0x%08x]\n",
+	pr_info("Booting freax on physical CPU 0x%010lx [0x%08x]\n",
 		(unsigned long)mpidr, read_cpuid_id());
 }
 

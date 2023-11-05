@@ -11,14 +11,14 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
 
-#include <linux/usb/cdc.h>
+#include <freax/usb/cdc.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"
@@ -86,7 +86,7 @@ static inline struct f_ncm *func_to_ncm(struct usb_function *f)
  * We cannot group frames so use just the minimal size which ok to put
  * one max-size ethernet frame.
  * If the host can group frames, allow it to do that, 16K is selected,
- * because it's used by default by the current linux host driver
+ * because it's used by default by the current freax host driver
  */
 #define NTB_DEFAULT_IN_SIZE	16384
 #define NTB_OUT_SIZE		16384
@@ -593,7 +593,7 @@ static void ncm_do_notify(struct f_ncm *ncm)
 static void ncm_notify(struct f_ncm *ncm)
 {
 	/*
-	 * NOTE on most versions of Linux, host side cdc-ethernet
+	 * NOTE on most versions of freax, host side cdc-ethernet
 	 * won't listen for notifications until its netdevice opens.
 	 * The first notification then sits in the FIFO for a long
 	 * time, and the second one is queued.

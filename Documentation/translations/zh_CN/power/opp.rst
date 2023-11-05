@@ -51,7 +51,7 @@
 ----------------
 
 OPP库提供了一组辅助函数来组织和查询OPP信息。该库位于drivers/opp/目录下，其头文件
-位于include/linux/pm_opp.h中。OPP库可以通过开启CONFIG_PM_OPP来启用。某些SoC，
+位于include/freax/pm_opp.h中。OPP库可以通过开启CONFIG_PM_OPP来启用。某些SoC，
 如德州仪器的OMAP框架允许在不需要cpufreq的情况下可选地在某一OPP下启动。
 
 OPP库的典型用法如下::

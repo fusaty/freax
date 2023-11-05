@@ -10,12 +10,12 @@
 #ifndef _WM_ARIZONA_CORE_H
 #define _WM_ARIZONA_CORE_H
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/arizona/pdata.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/mfd/arizona/pdata.h>
 
 #define ARIZONA_MAX_CORE_SUPPLIES 2
 

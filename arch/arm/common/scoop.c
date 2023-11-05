@@ -7,13 +7,13 @@
  *	Based on code written by Sharp/Lineo for 2.4 kernels
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <freax/device.h>
+#include <freax/gpio/driver.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/export.h>
+#include <freax/io.h>
 #include <asm/hardware/scoop.h>
 
 /* PCMCIA to Scoop linkage

@@ -7,12 +7,12 @@
  *          Ernest Zhang <ernest.zhang@bayhubtech.com>
  */
 
-#include <linux/pci.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/bitfield.h>
+#include <freax/pci.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/bitfield.h>
 
 #include "sdhci.h"
 #include "sdhci-pci.h"

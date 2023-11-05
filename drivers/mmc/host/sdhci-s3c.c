@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/mmc/host/sdhci-s3c.c
+/* freax/drivers/mmc/host/sdhci-s3c.c
  *
  * Copyright 2008 Openmoko Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armfreax.simtec.co.uk/
  *
  * SDHCI (HSMMC) support for Samsung SoC
  */
 
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mmc-sdhci-s3c.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/mmc-sdhci-s3c.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/mmc/host.h>
+#include <freax/mmc/host.h>
 
 #include "sdhci.h"
 

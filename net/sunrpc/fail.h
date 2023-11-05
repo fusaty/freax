@@ -6,7 +6,7 @@
 #ifndef _NET_SUNRPC_FAIL_H_
 #define _NET_SUNRPC_FAIL_H_
 
-#include <linux/fault-inject.h>
+#include <freax/fault-inject.h>
 
 #if IS_ENABLED(CONFIG_FAULT_INJECTION)
 

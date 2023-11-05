@@ -7,10 +7,10 @@
  *  Marek Szyprowski <m.szyprowski@samsung.com>
  */
 
-#ifndef __LINUX_MFD_MAX8998_H
-#define __LINUX_MFD_MAX8998_H
+#ifndef __freax_MFD_MAX8998_H
+#define __freax_MFD_MAX8998_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 /* MAX 8998 regulator ids */
 enum {
@@ -103,4 +103,4 @@ struct max8998_platform_data {
 	int				timeout;
 };
 
-#endif /*  __LINUX_MFD_MAX8998_H */
+#endif /*  __freax_MFD_MAX8998_H */

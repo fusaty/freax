@@ -2,7 +2,7 @@
 #ifndef __ALPHA_POLARIS__H__
 #define __ALPHA_POLARIS__H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/compiler.h>
 
 /*

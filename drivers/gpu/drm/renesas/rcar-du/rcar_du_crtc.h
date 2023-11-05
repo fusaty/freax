@@ -10,9 +10,9 @@
 #ifndef __RCAR_DU_CRTC_H__
 #define __RCAR_DU_CRTC_H__
 
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_writeback.h>

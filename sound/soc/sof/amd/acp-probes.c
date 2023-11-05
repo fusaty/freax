@@ -11,7 +11,7 @@
  * Probe interface for generic AMD audio ACP DSP block
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include "../sof-priv.h"
 #include "../sof-client-probes.h"

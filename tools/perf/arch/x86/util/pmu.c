@@ -4,9 +4,9 @@
 #include <sys/types.h>
 #include <dirent.h>
 #include <fcntl.h>
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
-#include <linux/zalloc.h>
+#include <freax/stddef.h>
+#include <freax/perf_event.h>
+#include <freax/zalloc.h>
 #include <api/fs/fs.h>
 #include <errno.h>
 

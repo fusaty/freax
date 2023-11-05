@@ -5,12 +5,12 @@
  * Copyright (C) 1998 Harald Koerfgen and Paul M. Antoine
  * Copyright (C) 2002, 2003, 2004, 2005  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mc146818rtc.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <asm/bootinfo.h>
 

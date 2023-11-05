@@ -7,8 +7,8 @@
 #define _ASM_POWERPC_UDBG_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/init.h>
+#include <freax/compiler.h>
+#include <freax/init.h>
 
 extern void (*udbg_putc)(char c);
 extern void (*udbg_flush)(void);

@@ -19,7 +19,7 @@ When Should the Auxiliary Bus Be Used
 Auxiliary Device Creation
 =========================
 
-.. kernel-doc:: include/linux/auxiliary_bus.h
+.. kernel-doc:: include/freax/auxiliary_bus.h
    :identifiers: auxiliary_device
 
 .. kernel-doc:: drivers/base/auxiliary.c
@@ -29,14 +29,14 @@ Auxiliary Device Creation
 Auxiliary Device Memory Model and Lifespan
 ------------------------------------------
 
-.. kernel-doc:: include/linux/auxiliary_bus.h
+.. kernel-doc:: include/freax/auxiliary_bus.h
    :doc: DEVICE_LIFESPAN
 
 
 Auxiliary Drivers
 =================
 
-.. kernel-doc:: include/linux/auxiliary_bus.h
+.. kernel-doc:: include/freax/auxiliary_bus.h
    :identifiers: auxiliary_driver module_auxiliary_driver
 
 .. kernel-doc:: drivers/base/auxiliary.c

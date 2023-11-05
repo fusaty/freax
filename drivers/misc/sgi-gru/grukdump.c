@@ -7,15 +7,15 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
 #include <asm/uv/uv_hub.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "gru.h"
 #include "grutables.h"

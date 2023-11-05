@@ -2,10 +2,10 @@
 // Copyright (C) 2022 Linutronix GmbH, John Ogness
 // Copyright (C) 2022 Intel, Thomas Gleixner
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include "internal.h"
 /*
  * Printk console printing implementation for consoles which does not depend

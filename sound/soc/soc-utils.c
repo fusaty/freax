@@ -7,9 +7,9 @@
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 //         Liam Girdwood <lrg@slimlogic.co.uk>
 
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/math.h>
+#include <freax/platform_device.h>
+#include <freax/export.h>
+#include <freax/math.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

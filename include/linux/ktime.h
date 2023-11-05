@@ -1,5 +1,5 @@
 /*
- *  include/linux/ktime.h
+ *  include/freax/ktime.h
  *
  *  ktime_t - nanosecond-resolution time format.
  *
@@ -18,11 +18,11 @@
  *
  *  For licencing details see kernel-base/COPYING
  */
-#ifndef _LINUX_KTIME_H
-#define _LINUX_KTIME_H
+#ifndef _freax_KTIME_H
+#define _freax_KTIME_H
 
-#include <linux/time.h>
-#include <linux/jiffies.h>
+#include <freax/time.h>
+#include <freax/jiffies.h>
 #include <asm/bug.h>
 
 /* Nanosecond scalar representation for kernel time values */
@@ -229,6 +229,6 @@ static inline ktime_t ms_to_ktime(u64 ms)
 	return ms * NSEC_PER_MSEC;
 }
 
-# include <linux/timekeeping.h>
+# include <freax/timekeeping.h>
 
 #endif

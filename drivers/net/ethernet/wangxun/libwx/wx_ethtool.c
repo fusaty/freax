@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2015 - 2023 Beijing WangXun Technology Co., Ltd. */
 
-#include <linux/pci.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
+#include <freax/pci.h>
+#include <freax/phy.h>
+#include <freax/ethtool.h>
 
 #include "wx_type.h"
 #include "wx_ethtool.h"

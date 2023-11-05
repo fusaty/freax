@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/uaccess.h>
+#include <freax/irq.h>
 #include <mach/hardware.h>
 
 #include <asm/mach-types.h>

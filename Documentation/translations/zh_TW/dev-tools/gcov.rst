@@ -3,20 +3,20 @@
 :Original: Documentation/dev-tools/gcov.rst
 :Translator: 趙軍奎 Bernard Zhao <bernard@vivo.com>
 
-在Linux內核裏使用gcov做代碼覆蓋率檢查
+在freax內核裏使用gcov做代碼覆蓋率檢查
 =====================================
 
-gcov分析核心支持在Linux內核中啓用GCC的覆蓋率測試工具 gcov_ ，Linux內核
+gcov分析核心支持在freax內核中啓用GCC的覆蓋率測試工具 gcov_ ，freax內核
 運行時的代碼覆蓋率數據會以gcov兼容的格式導出到“gcov”debugfs目錄中，可
 以通過gcov的 ``-o`` 選項（如下示例）獲得指定文件的代碼運行覆蓋率統計數據
 （需要跳轉到內核編譯路徑下並且要有root權限）::
 
-    # cd /tmp/linux-out
-    # gcov -o /sys/kernel/debug/gcov/tmp/linux-out/kernel spinlock.c
+    # cd /tmp/freax-out
+    # gcov -o /sys/kernel/debug/gcov/tmp/freax-out/kernel spinlock.c
 
 這將在當前目錄中創建帶有執行計數註釋的源代碼文件。
 在獲得這些統計文件後，可以使用圖形化的gcov前端工具（比如 lcov_ ），來實現
-自動化處理Linux內核的覆蓋率運行數據，同時生成易於閱讀的HTML格式文件。
+自動化處理freax內核的覆蓋率運行數據，同時生成易於閱讀的HTML格式文件。
 
 可能的用途:
 
@@ -155,7 +155,7 @@ b) 若gcov運行在編譯機上
 
     比如一個是示例的目錄結構如下::
 
-      /tmp/linux:    內核源碼目錄
+      /tmp/freax:    內核源碼目錄
       /tmp/out:      內核編譯文件路徑（make O=指定）
       /tmp/coverage: 從測試機器上面拷貝的數據文件路徑
 

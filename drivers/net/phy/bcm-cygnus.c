@@ -5,10 +5,10 @@
 
 /* Broadcom Cygnus SoC internal transceivers support. */
 #include "bcm-phy-lib.h"
-#include <linux/brcmphy.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <freax/brcmphy.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
 
 struct bcm_omega_phy_priv {
 	u64	*stats;

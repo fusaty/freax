@@ -14,18 +14,18 @@
  */
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/types.h>
-#include <linux/cpufreq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/clk.h>
-#include <linux/percpu.h>
-#include <linux/sh_clk.h>
+#include <freax/types.h>
+#include <freax/cpufreq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/cpumask.h>
+#include <freax/cpu.h>
+#include <freax/smp.h>
+#include <freax/clk.h>
+#include <freax/percpu.h>
+#include <freax/sh_clk.h>
 
 static DEFINE_PER_CPU(struct clk, sh_cpuclk);
 
@@ -170,6 +170,6 @@ static void __exit sh_cpufreq_module_exit(void)
 module_init(sh_cpufreq_module_init);
 module_exit(sh_cpufreq_module_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@freax-sh.org>");
 MODULE_DESCRIPTION("cpufreq driver for SuperH");
 MODULE_LICENSE("GPL");

@@ -3,13 +3,13 @@
  *  FPU support code, moved here from head.S so that it can be used
  *  by chips which use other head-whatever.S files.
  *
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *    Copyright (C) 1996 Paul Mackerras.
  *    Copyright (C) 1997 Dan Malek (dmalek@jlc.net).
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

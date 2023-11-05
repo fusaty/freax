@@ -8,18 +8,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
-#include <linux/platform_data/mtd-orion_nand.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/sizes.h>
+#include <freax/platform_data/mtd-orion_nand.h>
 
 struct orion_nand_info {
 	struct nand_controller controller;
@@ -52,7 +52,7 @@ static void orion_nand_cmd_ctrl(struct nand_chip *nc, int cmd,
 static void orion_nand_read_buf(struct nand_chip *chip, uint8_t *buf, int len)
 {
 	void __iomem *io_base = chip->legacy.IO_ADDR_R;
-#if defined(__LINUX_ARM_ARCH__) && __LINUX_ARM_ARCH__ >= 5
+#if defined(__freax_ARM_ARCH__) && __freax_ARM_ARCH__ >= 5
 	uint64_t *buf64;
 #endif
 	int i = 0;
@@ -61,7 +61,7 @@ static void orion_nand_read_buf(struct nand_chip *chip, uint8_t *buf, int len)
 		*buf++ = readb(io_base);
 		len--;
 	}
-#if defined(__LINUX_ARM_ARCH__) && __LINUX_ARM_ARCH__ >= 5
+#if defined(__freax_ARM_ARCH__) && __freax_ARM_ARCH__ >= 5
 	buf64 = (uint64_t *)buf;
 	while (i < len/8) {
 		/*

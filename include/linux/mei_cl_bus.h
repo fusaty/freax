@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2013-2016, Intel Corporation. All rights reserved.
  */
-#ifndef _LINUX_MEI_CL_BUS_H
-#define _LINUX_MEI_CL_BUS_H
+#ifndef _freax_MEI_CL_BUS_H
+#define _freax_MEI_CL_BUS_H
 
-#include <linux/device.h>
-#include <linux/uuid.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/uuid.h>
+#include <freax/mod_devicetable.h>
 
 struct mei_cl_device;
 struct mei_device;
@@ -24,7 +24,7 @@ typedef void (*mei_cldev_cb_t)(struct mei_cl_device *cldev);
  *
  * @bus_list: device on the bus list
  * @bus: parent mei device
- * @dev: linux driver model device pointer
+ * @dev: freax driver model device pointer
  * @me_cl: me client
  * @cl: mei client
  * @name: device name
@@ -134,4 +134,4 @@ ssize_t mei_cldev_send_gsc_command(struct mei_cl_device *cldev,
 void *mei_cldev_dma_map(struct mei_cl_device *cldev, u8 buffer_id, size_t size);
 int mei_cldev_dma_unmap(struct mei_cl_device *cldev);
 
-#endif /* _LINUX_MEI_CL_BUS_H */
+#endif /* _freax_MEI_CL_BUS_H */

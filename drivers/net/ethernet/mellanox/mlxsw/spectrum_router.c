@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2016-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/rhashtable.h>
-#include <linux/bitops.h>
-#include <linux/in6.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/gcd.h>
-#include <linux/if_macvlan.h>
-#include <linux/refcount.h>
-#include <linux/jhash.h>
-#include <linux/net_namespace.h>
-#include <linux/mutex.h>
-#include <linux/genalloc.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/rhashtable.h>
+#include <freax/bitops.h>
+#include <freax/in6.h>
+#include <freax/notifier.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/socket.h>
+#include <freax/route.h>
+#include <freax/gcd.h>
+#include <freax/if_macvlan.h>
+#include <freax/refcount.h>
+#include <freax/jhash.h>
+#include <freax/net_namespace.h>
+#include <freax/mutex.h>
+#include <freax/genalloc.h>
 #include <net/netevent.h>
 #include <net/neighbour.h>
 #include <net/arp.h>

@@ -10,7 +10,7 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
+#include <freax/module.h>
 #include "efx_common.h"
 #include "efx_channels.h"
 #include "io.h"

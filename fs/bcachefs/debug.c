@@ -21,11 +21,11 @@
 #include "inode.h"
 #include "super.h"
 
-#include <linux/console.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <freax/console.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
 
 static struct dentry *bch_debug;
 

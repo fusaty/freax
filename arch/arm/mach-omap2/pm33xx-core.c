@@ -6,19 +6,19 @@
  *	Dave Gerlach
  */
 
-#include <linux/cpuidle.h>
-#include <linux/platform_data/pm33xx.h>
-#include <linux/suspend.h>
+#include <freax/cpuidle.h>
+#include <freax/platform_data/pm33xx.h>
+#include <freax/suspend.h>
 #include <asm/cpuidle.h>
 #include <asm/smp_scu.h>
 #include <asm/suspend.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/wkup_m3_ipc.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
+#include <freax/errno.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/platform_data/gpio-omap.h>
+#include <freax/wkup_m3_ipc.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
 
 #include "cm33xx.h"
 #include "common.h"

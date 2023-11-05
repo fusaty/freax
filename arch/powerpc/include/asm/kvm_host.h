@@ -9,16 +9,16 @@
 #ifndef __POWERPC_KVM_HOST_H__
 #define __POWERPC_KVM_HOST_H__
 
-#include <linux/mutex.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/kvm_types.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/kvm_para.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
+#include <freax/mutex.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/kvm_types.h>
+#include <freax/threads.h>
+#include <freax/spinlock.h>
+#include <freax/kvm_para.h>
+#include <freax/list.h>
+#include <freax/atomic.h>
 #include <asm/kvm_asm.h>
 #include <asm/processor.h>
 #include <asm/page.h>
@@ -61,7 +61,7 @@
 #define KVM_REQ_EPR_EXIT	KVM_ARCH_REQ(1)
 #define KVM_REQ_PENDING_TIMER	KVM_ARCH_REQ(2)
 
-#include <linux/mmu_notifier.h>
+#include <freax/mmu_notifier.h>
 
 #define KVM_ARCH_WANT_MMU_NOTIFIER
 

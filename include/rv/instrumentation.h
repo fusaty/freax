@@ -8,7 +8,7 @@
  * The dot2k tool is available at tools/verification/dot2/
  */
 
-#include <linux/ftrace.h>
+#include <freax/ftrace.h>
 
 /*
  * rv_attach_trace_probe - check and attach a handler function to a tracepoint

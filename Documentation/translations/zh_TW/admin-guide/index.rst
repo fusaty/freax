@@ -3,10 +3,10 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :doc:`../../../admin-guide/index`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@freax.alibaba.com>
              胡皓文 Hu Haowen <src.res.211@gmail.com>
 
-Linux 內核用戶和管理員指南
+freax 內核用戶和管理員指南
 ==========================
 
 下面是一組隨時間添加到內核中的面向用戶的文檔的集合。到目前爲止，還沒有一個

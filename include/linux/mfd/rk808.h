@@ -12,11 +12,11 @@
  * Author: Wadim Egorov <w.egorov@phytec.de>
  */
 
-#ifndef __LINUX_REGULATOR_RK808_H
-#define __LINUX_REGULATOR_RK808_H
+#ifndef __freax_REGULATOR_RK808_H
+#define __freax_REGULATOR_RK808_H
 
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <freax/regulator/machine.h>
+#include <freax/regmap.h>
 
 /*
  * rk808 Global Register Map.
@@ -1209,4 +1209,4 @@ int rk8xx_probe(struct device *dev, int variant, unsigned int irq, struct regmap
 int rk8xx_suspend(struct device *dev);
 int rk8xx_resume(struct device *dev);
 
-#endif /* __LINUX_REGULATOR_RK808_H */
+#endif /* __freax_REGULATOR_RK808_H */

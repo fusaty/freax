@@ -32,18 +32,18 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/mdio.h>
-#include <linux/bitops.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/if_vlan.h>
+#include <freax/mdio.h>
+#include <freax/bitops.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <net/ip6_checksum.h>
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 #include "alx.h"
 #include "hw.h"
 #include "reg.h"

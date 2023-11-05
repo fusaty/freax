@@ -2,12 +2,12 @@
 /*
 * Copyright (C) 2015 Intel Corporation Inc.
 */
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
 #include "inv_mpu_iio.h"
 
 static const struct regmap_config inv_mpu_regmap_config = {

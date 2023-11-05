@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
-#ifndef _LINUX_MAPLE_TREE_H
-#define _LINUX_MAPLE_TREE_H
+#ifndef _freax_MAPLE_TREE_H
+#define _freax_MAPLE_TREE_H
 /*
  * Maple Tree - An RCU-safe adaptive tree for storing ranges
  * Copyright (c) 2018-2022 Oracle
@@ -8,9 +8,9 @@
  *              Matthew Wilcox <willy@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
 /* #define CONFIG_MAPLE_RCU_DISABLED */
 
 /*
@@ -831,4 +831,4 @@ void mt_cache_shrink(void);
 #define MAS_WR_WARN_ON(__mas, __x)	WARN_ON(__x)
 #endif /* CONFIG_DEBUG_MAPLE_TREE */
 
-#endif /*_LINUX_MAPLE_TREE_H */
+#endif /*_freax_MAPLE_TREE_H */

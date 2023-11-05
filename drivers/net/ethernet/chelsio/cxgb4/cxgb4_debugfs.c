@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for freax.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,11 +32,11 @@
  * SOFTWARE.
  */
 
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/string_helpers.h>
-#include <linux/sort.h>
-#include <linux/ctype.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/string_helpers.h>
+#include <freax/sort.h>
+#include <freax/ctype.h>
 
 #include "cxgb4.h"
 #include "t4_regs.h"

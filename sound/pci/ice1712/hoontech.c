@@ -7,11 +7,11 @@
  *	Copyright (c) 2000 Jaroslav Kysela <perex@perex.cz>
  */      
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
 
 #include <sound/core.h>
 

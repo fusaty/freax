@@ -7,17 +7,17 @@
  *	   Li Yang <leoli@freescale.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/syscore_ops.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/syscore_ops.h>
 #include <sysdev/fsl_soc.h>
 #include <asm/io.h>
 

@@ -3,18 +3,18 @@
  * Copyright (c) 2017 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/kernel.h>
+#include <freax/cdev.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 #define QCOM_RMTFS_MEM_DEV_MAX	(MINORMASK + 1)
 #define NUM_MAX_VMIDS		2

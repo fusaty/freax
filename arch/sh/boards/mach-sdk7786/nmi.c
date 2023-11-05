@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include <mach/fpga.h>
 
 enum {

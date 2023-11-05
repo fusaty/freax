@@ -13,7 +13,7 @@
 支持虚拟映射的内核栈
 ====================
 
-:作者: Shuah Khan <skhan@linuxfoundation.org>
+:作者: Shuah Khan <skhan@freaxfoundation.org>
 
 .. contents:: :local:
 
@@ -72,7 +72,7 @@ HAVE_ARCH_VMAP_STACK。
 
 内核配置选项和依赖性不断变化。请参考最新的代码库:
 
-`Kconfig <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/Kconfig>`
+`Kconfig <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/arch/Kconfig>`
 
 分配方法
 --------
@@ -95,7 +95,7 @@ alloc_thread_stack_node()调用__vmalloc_node_range()来分配带有PAGE_KERNEL
 启动的。留点提示在这，以便搜索代码库，了解线程栈何时以及如何分配。
 
 大量的代码是在:
-`kernel/fork.c <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/kernel/fork.c>`.
+`kernel/fork.c <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/kernel/fork.c>`.
 
 task_struct中的stack_vm_area指针可以跟踪虚拟分配的堆栈，一个非空的stack_vm_area
 指针可以表明虚拟映射的内核堆栈已经启用。

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0+
 
 #include <kunit/test.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "test_modules.h"
 
 /*
  * Test that modules with many relocations are loaded properly.
  */
-static void test_modules_many_vmlinux_relocs(struct kunit *test)
+static void test_modules_many_vmfreax_relocs(struct kunit *test)
 {
 	int result = 0;
 
@@ -18,7 +18,7 @@ static void test_modules_many_vmlinux_relocs(struct kunit *test)
 }
 
 static struct kunit_case modules_testcases[] = {
-	KUNIT_CASE(test_modules_many_vmlinux_relocs),
+	KUNIT_CASE(test_modules_many_vmfreax_relocs),
 	{}
 };
 

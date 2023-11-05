@@ -8,12 +8,12 @@
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
 
-#include <linux/kvm.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
-#include <linux/io.h>
+#include <freax/kvm.h>
+#include <freax/gfp.h>
+#include <freax/errno.h>
+#include <freax/mm_types.h>
+#include <freax/pgtable.h>
+#include <freax/io.h>
 #include <asm/asm-offsets.h>
 #include <asm/facility.h>
 #include <asm/current.h>
@@ -841,7 +841,7 @@ static void handle_stsi_3_2_2(struct kvm_vcpu *vcpu, struct sysinfo_3_2_2 *mem)
 	mem->vm[0].caf = 1000;
 	memcpy(mem->vm[0].name, "KVMguest", 8);
 	ASCEBC(mem->vm[0].name, 8);
-	memcpy(mem->vm[0].cpi, "KVM/Linux       ", 16);
+	memcpy(mem->vm[0].cpi, "KVM/freax       ", 16);
 	ASCEBC(mem->vm[0].cpi, 16);
 }
 

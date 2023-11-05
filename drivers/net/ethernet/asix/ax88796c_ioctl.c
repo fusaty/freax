@@ -3,15 +3,15 @@
  * Copyright (c) 2010 ASIX Electronics Corporation
  * Copyright (c) 2020 Samsung Electronics Co., Ltd.
  *
- * ASIX AX88796C SPI Fast Ethernet Linux driver
+ * ASIX AX88796C SPI Fast Ethernet freax driver
  */
 
 #define pr_fmt(fmt)	"ax88796c: " fmt
 
-#include <linux/bitmap.h>
-#include <linux/iopoll.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
+#include <freax/bitmap.h>
+#include <freax/iopoll.h>
+#include <freax/phy.h>
+#include <freax/netdevice.h>
 
 #include "ax88796c_main.h"
 #include "ax88796c_ioctl.h"

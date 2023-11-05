@@ -6,8 +6,8 @@
  * Author: Hemanth V <hemanthv@ti.com>
  */
 
-#ifndef _LINUX_CMA3000_H
-#define _LINUX_CMA3000_H
+#ifndef _freax_CMA3000_H
+#define _freax_CMA3000_H
 
 #define CMAMODE_DEFAULT    0
 #define CMAMODE_MEAS100    1

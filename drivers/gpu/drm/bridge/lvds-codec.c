@@ -4,13 +4,13 @@
  * Copyright (C) 2016 Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

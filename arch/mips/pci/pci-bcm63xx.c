@@ -6,12 +6,12 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
 #include <asm/bootinfo.h>
 
 #include <bcm63xx_reset.h>

@@ -2,7 +2,7 @@
 /*
  * zfcp device driver
  *
- * Interface to Linux SCSI midlayer.
+ * Interface to freax SCSI midlayer.
  *
  * Copyright IBM Corp. 2002, 2020
  */
@@ -10,12 +10,12 @@
 #define KMSG_COMPONENT "zfcp"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 #include <scsi/fc/fc_fcp.h>
 #include <scsi/scsi_eh.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include "zfcp_ext.h"
 #include "zfcp_dbf.h"
 #include "zfcp_fc.h"

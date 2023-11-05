@@ -2,8 +2,8 @@
 #ifndef __LIBSRP_H__
 #define __LIBSRP_H__
 
-#include <linux/list.h>
-#include <linux/kfifo.h>
+#include <freax/list.h>
+#include <freax/kfifo.h>
 #include <scsi/srp.h>
 
 enum srp_valid {
@@ -18,7 +18,7 @@ enum srp_format {
 	MAD_FORMAT = 2,
 	OS400_FORMAT = 3,
 	AIX_FORMAT = 4,
-	LINUX_FORMAT = 5,
+	freax_FORMAT = 5,
 	MESSAGE_IN_CRQ = 6
 };
 
@@ -49,7 +49,7 @@ enum srp_mad_version {
 
 enum srp_os_type {
 	OS400 = 1,
-	LINUX = 2,
+	freax = 2,
 	AIX = 3,
 	OFW = 4
 };

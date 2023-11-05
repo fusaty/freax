@@ -18,8 +18,8 @@
 
 #include <xen/interface/xen.h>
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <../entry/calling.h>
 
 .pushsection .noinstr.text, "ax"

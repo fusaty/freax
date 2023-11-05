@@ -7,14 +7,14 @@
  * Author: Xiaowei Bao <xiaowei.bao@nxp.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/resource.h>
 
 #include "pcie-designware.h"
 

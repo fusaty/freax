@@ -6,16 +6,16 @@
  * Author: Ryan Lee <ryans.lee@maximintegrated.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
+#include <freax/acpi.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/cdev.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/gpio/consumer.h>
+#include <freax/gpio/consumer.h>
 #include <sound/tlv.h>
 #include "max98927.h"
 

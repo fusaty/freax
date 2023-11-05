@@ -10,7 +10,7 @@
 #ifndef _ASM_ADDRSPACE_H
 #define _ASM_ADDRSPACE_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #include <asm/loongarch.h>
 
@@ -125,6 +125,6 @@ extern unsigned long vm_map_base;
 #define ISA_IOSIZE	SZ_16K
 #define IO_SPACE_LIMIT	(PCI_IOSIZE - 1)
 
-#define PHYS_LINK_KADDR	PHYSADDR(VMLINUX_LOAD_ADDRESS)
+#define PHYS_LINK_KADDR	PHYSADDR(VMfreax_LOAD_ADDRESS)
 
 #endif /* _ASM_ADDRSPACE_H */

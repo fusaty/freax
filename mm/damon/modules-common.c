@@ -5,7 +5,7 @@
  * Author: SeongJae Park <sjpark@amazon.de>
  */
 
-#include <linux/damon.h>
+#include <freax/damon.h>
 
 #include "modules-common.h"
 

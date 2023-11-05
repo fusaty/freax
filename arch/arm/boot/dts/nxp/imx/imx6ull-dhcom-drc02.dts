@@ -94,6 +94,6 @@
 /* Use UART as RS485 */
 &uart2 {
 	/delete-property/ uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	rts-gpios = <&gpio4 26 GPIO_ACTIVE_HIGH>; /* GPIO P */
 };

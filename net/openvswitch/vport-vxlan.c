@@ -4,10 +4,10 @@
  * Copyright (c) 2013 Cisco Systems, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/openvswitch.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/openvswitch.h>
+#include <freax/module.h>
 #include <net/udp.h>
 #include <net/ip_tunnels.h>
 #include <net/rtnetlink.h>

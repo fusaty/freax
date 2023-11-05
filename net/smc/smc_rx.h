@@ -6,14 +6,14 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 
 #ifndef SMC_RX_H
 #define SMC_RX_H
 
-#include <linux/socket.h>
-#include <linux/types.h>
+#include <freax/socket.h>
+#include <freax/types.h>
 
 #include "smc.h"
 

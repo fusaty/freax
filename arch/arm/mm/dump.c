@@ -6,12 +6,12 @@
  * Derived from x86 implementation:
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@freax.intel.com>
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/seq_file.h>
 
 #include <asm/domain.h>
 #include <asm/fixmap.h>
@@ -147,7 +147,7 @@ static const struct prot_bits section_bits[] = {
 		.set	= "ro",
 		.clear	= "RW",
 		.ro_bit	= true,
-#elif __LINUX_ARM_ARCH__ >= 6
+#elif __freax_ARM_ARCH__ >= 6
 	{
 		.mask	= PMD_SECT_APX | PMD_SECT_AP_READ | PMD_SECT_AP_WRITE,
 		.val	= PMD_SECT_APX | PMD_SECT_AP_WRITE,

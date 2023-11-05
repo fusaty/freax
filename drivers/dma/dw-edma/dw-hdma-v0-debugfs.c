@@ -3,11 +3,11 @@
  * Copyright (c) 2023 Cai Huoqing
  * Synopsys DesignWare HDMA v0 debugfs
  *
- * Author: Cai Huoqing <cai.huoqing@linux.dev>
+ * Author: Cai Huoqing <cai.huoqing@freax.dev>
  */
 
-#include <linux/debugfs.h>
-#include <linux/bitfield.h>
+#include <freax/debugfs.h>
+#include <freax/bitfield.h>
 
 #include "dw-hdma-v0-debugfs.h"
 #include "dw-hdma-v0-regs.h"

@@ -5,18 +5,18 @@
  * Copyright (C) 2022 Renesas Electronics Corp.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sys_soc.h>
-#include <linux/units.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/sys_soc.h>
+#include <freax/units.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

@@ -4,16 +4,16 @@
  * Generic 8254 timer/counter support
  * Copyright (C) 2014 H Hartley Sweeten <hsweeten@visionengravers.com>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDI_8254_H
 #define _COMEDI_8254_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
 
 struct comedi_device;
 struct comedi_insn;

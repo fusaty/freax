@@ -9,7 +9,7 @@
 #ifndef __OMAPDRM_CRTC_H__
 #define __OMAPDRM_CRTC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum omap_channel;
 

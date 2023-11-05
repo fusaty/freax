@@ -7,11 +7,11 @@
  *	Aapo Vienamo	<avienamo@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
-#include <linux/workqueue.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/thermal.h>
+#include <freax/workqueue.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

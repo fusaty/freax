@@ -6,9 +6,9 @@
  *
  * Send comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
+#include <freax/of.h>
+#include <freax/pci.h>
+#include <freax/stat.h>
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>
 

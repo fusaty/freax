@@ -10,9 +10,9 @@
 #ifndef __HSR_NETLINK_H
 #define __HSR_NETLINK_H
 
-#include <linux/if_ether.h>
-#include <linux/module.h>
-#include <uapi/linux/hsr_netlink.h>
+#include <freax/if_ether.h>
+#include <freax/module.h>
+#include <uapi/freax/hsr_netlink.h>
 
 struct hsr_priv;
 struct hsr_port;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CRC32_POLY_H
-#define _LINUX_CRC32_POLY_H
+#ifndef _freax_CRC32_POLY_H
+#define _freax_CRC32_POLY_H
 
 /*
  * There are multiple 16-bit CRC polynomials in common use, but this is
@@ -17,4 +17,4 @@
  */
 #define CRC32C_POLY_LE 0x82F63B78
 
-#endif /* _LINUX_CRC32_POLY_H */
+#endif /* _freax_CRC32_POLY_H */

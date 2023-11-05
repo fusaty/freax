@@ -7,7 +7,7 @@
 #ifndef __MTK_MDP3_TYPE_H__
 #define __MTK_MDP3_TYPE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define IMG_MAX_HW_INPUTS	3
 #define IMG_MAX_HW_OUTPUTS	4

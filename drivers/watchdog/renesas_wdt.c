@@ -5,19 +5,19 @@
  * Copyright (C) 2015-17 Wolfram Sang, Sang Engineering <wsa@sang-engineering.com>
  * Copyright (C) 2015-17 Renesas Electronics Corporation
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/smp.h>
-#include <linux/sys_soc.h>
-#include <linux/watchdog.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/smp.h>
+#include <freax/sys_soc.h>
+#include <freax/watchdog.h>
 
 #define RWTCNT		0
 #define RWTCSRA		4

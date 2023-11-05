@@ -120,7 +120,7 @@ examples:
         interrupt-map-mask = <0 0 0 0>;
         interrupt-map = <0 0 0 0 &gic GIC_SPI 100 IRQ_TYPE_NONE>;
 
-        linux,pci-domain = <0>;
+        freax,pci-domain = <0>;
 
         bus-range = <0x00 0xff>;
 
@@ -158,7 +158,7 @@ examples:
         interrupt-map-mask = <0 0 0 0>;
         interrupt-map = <0 0 0 0 &gic GIC_SPI 106 IRQ_TYPE_NONE>;
 
-        linux,pci-domain = <1>;
+        freax,pci-domain = <1>;
 
         bus-range = <0x00 0xff>;
 

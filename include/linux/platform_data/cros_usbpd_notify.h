@@ -5,13 +5,13 @@
  * Copyright 2020 Google LLC
  */
 
-#ifndef __LINUX_PLATFORM_DATA_CROS_USBPD_NOTIFY_H
-#define __LINUX_PLATFORM_DATA_CROS_USBPD_NOTIFY_H
+#ifndef __freax_PLATFORM_DATA_CROS_USBPD_NOTIFY_H
+#define __freax_PLATFORM_DATA_CROS_USBPD_NOTIFY_H
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 int cros_usbpd_register_notify(struct notifier_block *nb);
 
 void cros_usbpd_unregister_notify(struct notifier_block *nb);
 
-#endif  /* __LINUX_PLATFORM_DATA_CROS_USBPD_NOTIFY_H */
+#endif  /* __freax_PLATFORM_DATA_CROS_USBPD_NOTIFY_H */

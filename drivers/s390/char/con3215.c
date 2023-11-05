@@ -10,24 +10,24 @@
  *	      Dan Morrison, IBM Corporation <dmorriso@cse.buffalo.edu>
  */
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/vt_kern.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/serial.h> /* ASYNC_* flags */
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kdev_t.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/vt_kern.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/panic_notifier.h>
+#include <freax/reboot.h>
+#include <freax/serial.h> /* ASYNC_* flags */
+#include <freax/slab.h>
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/ebcdic.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/delay.h>
 #include <asm/cpcmd.h>
 #include <asm/setup.h>

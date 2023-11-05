@@ -5,7 +5,7 @@
  * Copyright (C) 2020-2021 NVIDIA CORPORATION & AFFILIATES
  */
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 #include "mlxbf_gige.h"
 #include "mlxbf_gige_regs.h"

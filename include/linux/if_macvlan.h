@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IF_MACVLAN_H
-#define _LINUX_IF_MACVLAN_H
+#ifndef _freax_IF_MACVLAN_H
+#define _freax_IF_MACVLAN_H
 
-#include <linux/if_link.h>
-#include <linux/if_vlan.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
+#include <freax/if_link.h>
+#include <freax/if_vlan.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
 #include <net/netlink.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/u64_stats_sync.h>
 
 struct macvlan_port;
 
@@ -107,4 +107,4 @@ static inline int macvlan_release_l2fw_offload(struct net_device *dev)
 	macvlan->accel_priv = NULL;
 	return dev_uc_add(macvlan->lowerdev, dev->dev_addr);
 }
-#endif /* _LINUX_IF_MACVLAN_H */
+#endif /* _freax_IF_MACVLAN_H */

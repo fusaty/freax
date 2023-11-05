@@ -4,15 +4,15 @@
 #ifndef __NFP_BPF_H__
 #define __NFP_BPF_H__ 1
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rhashtable.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/bpf_verifier.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/rhashtable.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include "../ccm.h"
 #include "../nfp_asm.h"

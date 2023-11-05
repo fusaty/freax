@@ -29,9 +29,9 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/iommu.h>
+#include <freax/dma-mapping.h>
+#include <freax/crc32.h>
+#include <freax/iommu.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/udp.h>
@@ -43,8 +43,8 @@
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>
 
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_rdma_if.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/qed_rdma_if.h>
 #include "qedr.h"
 #include "verbs.h"
 #include <rdma/qedr-abi.h>

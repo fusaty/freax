@@ -9,7 +9,7 @@
 
 #include "rockchip_drm_vop.h"
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <drm/drm_modes.h>
 
 #define VOP_FEATURE_OUTPUT_10BIT        BIT(0)

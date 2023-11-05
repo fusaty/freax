@@ -32,10 +32,10 @@
 
 		key-volume-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&tlmm 96 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -48,7 +48,7 @@
 			function = LED_FUNCTION_BLUETOOTH;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&tlmm 45 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			freax,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 
@@ -57,7 +57,7 @@
 			function = LED_FUNCTION_INDICATOR;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&tlmm 52 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			freax,default-trigger = "none";
 			default-state = "off";
 			panic-indicator;
 		};
@@ -67,7 +67,7 @@
 			function = LED_FUNCTION_WLAN;
 			color = <LED_COLOR_ID_YELLOW>;
 			gpios = <&tlmm 47 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			freax,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 	};
@@ -159,7 +159,7 @@
 };
 
 &pm2250_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

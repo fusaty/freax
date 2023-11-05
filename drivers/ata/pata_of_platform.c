@@ -6,12 +6,12 @@
  *                     Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/libata.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
+#include <freax/libata.h>
 
 #define DRV_NAME "pata_of_platform"
 

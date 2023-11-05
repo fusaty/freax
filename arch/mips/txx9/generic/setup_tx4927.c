@@ -1,6 +1,6 @@
 /*
  * TX4927 setup routines
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on freax/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -10,12 +10,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/param.h>
-#include <linux/ptrace.h>
-#include <linux/mtd/physmap.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/param.h>
+#include <freax/ptrace.h>
+#include <freax/mtd/physmap.h>
 #include <asm/reboot.h>
 #include <asm/traps.h>
 #include <asm/txx9irq.h>

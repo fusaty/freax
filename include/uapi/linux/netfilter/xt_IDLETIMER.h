@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  * Header file for Xtables timer target module.
  *
@@ -14,7 +14,7 @@
 #ifndef _XT_IDLETIMER_H
 #define _XT_IDLETIMER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MAX_IDLETIMER_LABEL_SIZE 28
 #define XT_IDLETIMER_ALARM 0x01

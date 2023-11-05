@@ -3,8 +3,8 @@
 #ifndef __IPU_BRIDGE_H
 #define __IPU_BRIDGE_H
 
-#include <linux/property.h>
-#include <linux/types.h>
+#include <freax/property.h>
+#include <freax/types.h>
 #include <media/v4l2-fwnode.h>
 
 #define IPU_HID				"INT343E"

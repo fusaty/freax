@@ -6,13 +6,13 @@
  * by the DRM_PANEL_SIMPLE driver because its power sequencing is non-standard.
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/display/drm_dp_aux_bus.h>
 #include <drm/display/drm_dp_helper.h>

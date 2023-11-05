@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PAGEWALK_H
-#define _LINUX_PAGEWALK_H
+#ifndef _freax_PAGEWALK_H
+#define _freax_PAGEWALK_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 struct mm_walk;
 
@@ -130,4 +130,4 @@ int walk_page_mapping(struct address_space *mapping, pgoff_t first_index,
 		      pgoff_t nr, const struct mm_walk_ops *ops,
 		      void *private);
 
-#endif /* _LINUX_PAGEWALK_H */
+#endif /* _freax_PAGEWALK_H */

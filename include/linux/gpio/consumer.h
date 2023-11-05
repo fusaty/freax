@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GPIO_CONSUMER_H
-#define __LINUX_GPIO_CONSUMER_H
+#ifndef __freax_GPIO_CONSUMER_H
+#define __freax_GPIO_CONSUMER_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 struct acpi_device;
 struct device;
@@ -183,8 +183,8 @@ struct gpio_desc *devm_fwnode_gpiod_get_index(struct device *dev,
 
 #else /* CONFIG_GPIOLIB */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
 
 #include <asm/bug.h>
 
@@ -608,7 +608,7 @@ int devm_acpi_dev_add_driver_gpios(struct device *dev,
 
 #else  /* CONFIG_GPIOLIB && CONFIG_ACPI */
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 static inline int acpi_dev_add_driver_gpios(struct acpi_device *adev,
 			      const struct acpi_gpio_mapping *gpios)

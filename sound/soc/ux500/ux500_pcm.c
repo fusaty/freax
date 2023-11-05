@@ -9,10 +9,10 @@
 
 #include <asm/page.h>
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/slab.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

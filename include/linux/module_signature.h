@@ -6,10 +6,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_MODULE_SIGNATURE_H
-#define _LINUX_MODULE_SIGNATURE_H
+#ifndef _freax_MODULE_SIGNATURE_H
+#define _freax_MODULE_SIGNATURE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* In stripped ARM and x86-64 modules, ~ is surprisingly rare. */
 #define MODULE_SIG_STRING "~Module signature appended~\n"
@@ -43,4 +43,4 @@ struct module_signature {
 int mod_check_sig(const struct module_signature *ms, size_t file_len,
 		  const char *name);
 
-#endif /* _LINUX_MODULE_SIGNATURE_H */
+#endif /* _freax_MODULE_SIGNATURE_H */

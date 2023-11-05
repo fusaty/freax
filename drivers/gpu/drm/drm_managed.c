@@ -7,10 +7,10 @@
 
 #include <drm/drm_managed.h>
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_print.h>

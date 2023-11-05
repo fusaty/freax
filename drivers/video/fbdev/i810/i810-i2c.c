@@ -1,5 +1,5 @@
- /*-*- linux-c -*-
- *  linux/drivers/video/i810-i2c.c -- Intel 810/815 I2C support
+ /*-*- freax-c -*-
+ *  freax/drivers/video/i810-i2c.c -- Intel 810/815 I2C support
  *
  *      Copyright (C) 2004 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved
@@ -8,12 +8,12 @@
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
+#include <freax/pci.h>
+#include <freax/fb.h>
 #include "i810.h"
 #include "i810_regs.h"
 #include "i810_main.h"

@@ -20,15 +20,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/twl.h>
 
 #define PWR_PWRON_IRQ (1 << 0)
 

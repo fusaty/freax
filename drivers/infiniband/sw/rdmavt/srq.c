@@ -3,9 +3,9 @@
  * Copyright(c) 2016 Intel Corporation.
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include <rdma/uverbs_ioctl.h>
 
 #include "srq.h"

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2021 Facebook */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 
-extern int LINUX_KERNEL_VERSION __kconfig;
+extern int freax_KERNEL_VERSION __kconfig;
 /* this weak extern will be strict due to the other file's strong extern */
 extern bool CONFIG_BPF_SYSCALL __kconfig __weak;
 extern const void bpf_link_fops __ksym __weak;
@@ -45,7 +45,7 @@ int BPF_PROG(handler1)
 	/* make sure we actually use above special externs, otherwise compiler
 	 * will optimize them out
 	 */
-	output_sink1 = LINUX_KERNEL_VERSION
+	output_sink1 = freax_KERNEL_VERSION
 		       + CONFIG_BPF_SYSCALL
 		       + (long)&bpf_link_fops;
 	return 0;

@@ -2,8 +2,8 @@
 /* Copyright (C) 2017 Intel Corporation */
 /* Functions to access TPS68470 power management chip. */
 
-#ifndef __LINUX_MFD_TPS68470_H
-#define __LINUX_MFD_TPS68470_H
+#ifndef __freax_MFD_TPS68470_H
+#define __freax_MFD_TPS68470_H
 
 /* Register addresses */
 #define TPS68470_REG_POSTDIV2		0x06
@@ -94,4 +94,4 @@
 #define TPS68470_GPIO_MODE_OUT_CMOS	2
 #define TPS68470_GPIO_MODE_OUT_ODRAIN	3
 
-#endif /* __LINUX_MFD_TPS68470_H */
+#endif /* __freax_MFD_TPS68470_H */

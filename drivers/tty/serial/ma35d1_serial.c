@@ -4,16 +4,16 @@
  *  Copyright (C) 2023 Nuvoton Technology Corp.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/iopoll.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/iopoll.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/tty_flip.h>
+#include <freax/units.h>
 
 #define MA35_UART_NR		17
 

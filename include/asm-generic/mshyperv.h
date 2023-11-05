@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 /*
- * Linux-specific definitions for managing interactions with Microsoft's
+ * freax-specific definitions for managing interactions with Microsoft's
  * Hyper-V hypervisor. The definitions in this file are architecture
  * independent. See arch/<arch>/include/asm/mshyperv.h for definitions
  * that are specific to architecture <arch>.
@@ -18,11 +18,11 @@
 #ifndef _ASM_GENERIC_MSHYPERV_H
 #define _ASM_GENERIC_MSHYPERV_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/nmi.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/cpumask.h>
+#include <freax/nmi.h>
 #include <asm/ptrace.h>
 #include <asm/hyperv-tlfs.h>
 
@@ -120,7 +120,7 @@ static inline u64 hv_generate_guest_id(u64 kernel_version)
 {
 	u64 guest_id;
 
-	guest_id = (((u64)HV_LINUX_VENDOR_ID) << 48);
+	guest_id = (((u64)HV_freax_VENDOR_ID) << 48);
 	guest_id |= (kernel_version << 16);
 
 	return guest_id;
@@ -179,7 +179,7 @@ extern bool hv_root_partition;
 #if IS_ENABLED(CONFIG_HYPERV)
 /*
  * Hypervisor's notion of virtual processor ID is different from
- * Linux' notion of CPU ID. This information can only be retrieved
+ * freax' notion of CPU ID. This information can only be retrieved
  * in the context of the calling CPU. Setup a map for easy access
  * to this information.
  */
@@ -202,9 +202,9 @@ void hv_free_hyperv_page(void *addr);
 
 /**
  * hv_cpu_number_to_vp_number() - Map CPU to VP.
- * @cpu_number: CPU number in Linux terms
+ * @cpu_number: CPU number in freax terms
  *
- * This function returns the mapping between the Linux processor
+ * This function returns the mapping between the freax processor
  * number and the hypervisor's virtual processor number, useful
  * in making hypercalls and such that talk about specific
  * processors.
@@ -256,7 +256,7 @@ static inline int __cpumask_to_vpset(struct hv_vpset *vpset,
 }
 
 /*
- * Convert a Linux cpumask into a Hyper-V VPset. In the _skip variant,
+ * Convert a freax cpumask into a Hyper-V VPset. In the _skip variant,
  * 'func' is called for each CPU present in cpumask.  If 'func' returns
  * true, that CPU is skipped -- i.e., that CPU from cpumask is *not*
  * added to the Hyper-V VPset. If 'func' is NULL, no CPUs are

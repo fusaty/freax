@@ -14,8 +14,8 @@
 #ifndef __CARD_H__
 #define __CARD_H__
 
-#include <linux/types.h>
-#include <linux/nl80211.h>
+#include <freax/types.h>
+#include <freax/nl80211.h>
 
 /*
  * Loopback mode

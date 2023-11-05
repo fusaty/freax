@@ -4,9 +4,9 @@
  */
 #ifndef IOP_ADMA_H
 #define IOP_ADMA_H
-#include <linux/types.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <freax/types.h>
+#include <freax/dmaengine.h>
+#include <freax/interrupt.h>
 
 #define IOP_ADMA_SLOT_SIZE 32
 #define IOP_ADMA_THRESHOLD 4

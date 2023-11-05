@@ -2,9 +2,9 @@
 #ifndef _SCSI_PRIV_H
 #define _SCSI_PRIV_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <scsi/scsi_device.h>
-#include <linux/sbitmap.h>
+#include <freax/sbitmap.h>
 
 struct bsg_device;
 struct request_queue;

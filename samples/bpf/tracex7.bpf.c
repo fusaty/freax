@@ -1,5 +1,5 @@
-#include "vmlinux.h"
-#include <linux/version.h>
+#include "vmfreax.h"
+#include <freax/version.h>
 #include <bpf/bpf_helpers.h>
 
 SEC("kprobe/open_ctree")
@@ -12,4 +12,4 @@ int bpf_prog1(struct pt_regs *ctx)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = freax_VERSION_CODE;

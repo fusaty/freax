@@ -8,22 +8,22 @@
  * Based on previous work from: Felipe Balbi <balbi@ti.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define OPT3001_RESULT		0x00
 #define OPT3001_CONFIGURATION	0x01

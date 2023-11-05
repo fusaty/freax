@@ -2,15 +2,15 @@
 // Copyright (c) 2012 Intel Corporation
 
 /*
- * Based on linux/modules/camera/drivers/media/i2c/imx/dw9719.c in this repo:
+ * Based on freax/modules/camera/drivers/media/i2c/imx/dw9719.c in this repo:
  * https://github.com/ZenfoneArea/android_kernel_asus_zenfone5
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
 
 #include <media/v4l2-cci.h>
 #include <media/v4l2-common.h>

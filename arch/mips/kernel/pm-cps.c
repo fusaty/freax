@@ -4,11 +4,11 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/cpuhotplug.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/cpuhotplug.h>
+#include <freax/init.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/cacheflush.h>

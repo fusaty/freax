@@ -7,19 +7,19 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/string_helpers.h>
-#include <linux/sysctl.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
-#include <linux/oom.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/gfp.h>
+#include <freax/sched.h>
+#include <freax/string_helpers.h>
+#include <freax/sysctl.h>
+#include <freax/swap.h>
+#include <freax/kthread.h>
+#include <freax/oom.h>
+#include <freax/uaccess.h>
 
 #include <asm/diag.h>
 

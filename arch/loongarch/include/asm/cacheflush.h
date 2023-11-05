@@ -5,7 +5,7 @@
 #ifndef _ASM_CACHEFLUSH_H
 #define _ASM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <asm/cpu-info.h>
 #include <asm/cacheops.h>
 

@@ -18,13 +18,13 @@
  * (c) 2004-2005, Eugene Surovegin <ebs@ebshome.net>
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/delay.h>
 
 #include "emac.h"
 #include "phy.h"

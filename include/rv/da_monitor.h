@@ -12,8 +12,8 @@
  */
 
 #include <rv/automata.h>
-#include <linux/rv.h>
-#include <linux/bug.h>
+#include <freax/rv.h>
+#include <freax/bug.h>
 
 #ifdef CONFIG_RV_REACTORS
 

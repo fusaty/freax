@@ -2,8 +2,8 @@
 #ifndef _BCACHEFS_JOURNAL_TYPES_H
 #define _BCACHEFS_JOURNAL_TYPES_H
 
-#include <linux/cache.h>
-#include <linux/workqueue.h>
+#include <freax/cache.h>
+#include <freax/workqueue.h>
 
 #include "alloc_types.h"
 #include "super_types.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/iosys-map.h>
-#include <linux/module.h>
+#include <freax/iosys-map.h>
+#include <freax/module.h>
 
 #include <drm/drm_debugfs.h>
 #include <drm/drm_device.h>

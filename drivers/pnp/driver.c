@@ -5,12 +5,12 @@
  * Copyright 2002 Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/pnp.h>
 #include "base.h"
 
 static int compare_func(const char *ida, const char *idb)

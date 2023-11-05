@@ -8,11 +8,11 @@
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pfkeyv2.h>
+#include <freax/crypto.h>
+#include <freax/scatterlist.h>
 #include <net/xfrm.h>
 #if IS_ENABLED(CONFIG_INET_ESP) || IS_ENABLED(CONFIG_INET6_ESP)
 #include <net/esp.h>

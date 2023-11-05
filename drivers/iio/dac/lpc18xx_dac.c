@@ -9,17 +9,17 @@
  *  - DMA
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
 
 /* LPC18XX DAC registers and bits */
 #define LPC18XX_DAC_CR			0x000

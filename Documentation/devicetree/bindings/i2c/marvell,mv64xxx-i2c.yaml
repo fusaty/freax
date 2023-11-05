@@ -41,7 +41,7 @@ properties:
 
     description:
       Only use "marvell,mv78230-a0-i2c" for a very rare, initial
-      version of the SoC which had broken offload support. Linux
+      version of the SoC which had broken offload support. freax
       auto-detects this and sets it appropriately.
 
   reg:

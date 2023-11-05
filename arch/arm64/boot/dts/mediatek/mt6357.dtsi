@@ -268,12 +268,12 @@
 			compatible = "mediatek,mt6357-keys";
 
 			key-power {
-				linux,keycodes = <KEY_POWER>;
+				freax,keycodes = <KEY_POWER>;
 				wakeup-source;
 			};
 
 			key-home {
-				linux,keycodes = <KEY_HOME>;
+				freax,keycodes = <KEY_HOME>;
 				wakeup-source;
 			};
 

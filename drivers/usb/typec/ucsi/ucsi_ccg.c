@@ -7,16 +7,16 @@
  *
  * Some code borrowed from drivers/usb/typec/ucsi/ucsi_acpi.c
  */
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/typec_dp.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/usb/typec_dp.h>
 
 #include <asm/unaligned.h>
 #include "ucsi.h"

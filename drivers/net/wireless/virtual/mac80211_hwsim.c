@@ -14,28 +14,28 @@
  * - RX filtering based on filter configuration (data->rx_filter)
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/ktime.h>
+#include <freax/if_arp.h>
+#include <freax/rtnetlink.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/ktime.h>
 #include <net/genetlink.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/rhashtable.h>
-#include <linux/nospec.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <freax/rhashtable.h>
+#include <freax/nospec.h>
+#include <freax/virtio.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
 #include "mac80211_hwsim.h"
 
 #define WARN_QUEUE 100

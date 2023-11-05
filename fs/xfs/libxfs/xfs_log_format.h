@@ -149,15 +149,15 @@ typedef struct xlog_op_header {
 
 /* valid values for h_fmt */
 #define XLOG_FMT_UNKNOWN  0
-#define XLOG_FMT_LINUX_LE 1
-#define XLOG_FMT_LINUX_BE 2
+#define XLOG_FMT_freax_LE 1
+#define XLOG_FMT_freax_BE 2
 #define XLOG_FMT_IRIX_BE  3
 
 /* our fmt */
 #ifdef XFS_NATIVE_HOST
-#define XLOG_FMT XLOG_FMT_LINUX_BE
+#define XLOG_FMT XLOG_FMT_freax_BE
 #else
-#define XLOG_FMT XLOG_FMT_LINUX_LE
+#define XLOG_FMT XLOG_FMT_freax_LE
 #endif
 
 typedef struct xlog_rec_header {

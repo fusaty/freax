@@ -7,13 +7,13 @@
  *
  * Author: Anshuman Khandual <anshuman.khandual@arm.com>
  */
-#include <linux/coresight.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
+#include <freax/coresight.h>
+#include <freax/device.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/smp.h>
 
 #include "coresight-etm-perf.h"
 

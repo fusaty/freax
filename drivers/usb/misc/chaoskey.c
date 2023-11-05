@@ -14,13 +14,13 @@
  * Copyright © 2015 Keith Packard <keithp@keithp.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/hw_random.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/wait.h>
+#include <freax/hw_random.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
 
 static struct usb_driver chaoskey_driver;
 static struct usb_class_driver chaoskey_class;

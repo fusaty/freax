@@ -6,10 +6,10 @@
  *      Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/list.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/list.h>
 
 #include "clockdomain.h"
 #include "powerdomain.h"

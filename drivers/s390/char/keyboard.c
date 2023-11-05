@@ -7,15 +7,15 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/sysrq.h>
 
-#include <linux/consolemap.h>
-#include <linux/kbd_kern.h>
-#include <linux/kbd_diacr.h>
-#include <linux/uaccess.h>
+#include <freax/consolemap.h>
+#include <freax/kbd_kern.h>
+#include <freax/kbd_diacr.h>
+#include <freax/uaccess.h>
 
 #include "keyboard.h"
 

@@ -5,11 +5,11 @@
 // Copyright (C) 2013,2014 Samsung Electronics
 // Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/max14577-private.h>
-#include <linux/mfd/max14577.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/mfd/max14577-private.h>
+#include <freax/mfd/max14577.h>
 
 struct max14577_charger {
 	struct device		*dev;

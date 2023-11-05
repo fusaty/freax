@@ -5,10 +5,10 @@
 //
 // Copyright(c) 2019 Intel Corporation. All rights reserved.
 //
-// Author: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
+// Author: Ranjani Sridharan <ranjani.sridharan@freax.intel.com>
 //
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 #include <trace/events/sof.h>
 #include "sof-audio.h"
 #include "sof-of-dev.h"

@@ -5,26 +5,26 @@
 //
 // Base Samsung platform device definitions
 
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/gfp.h>
-#include <linux/mmc/host.h>
-#include <linux/ioport.h>
-#include <linux/sizes.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/serial_core.h>
+#include <freax/serial_s3c.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/fb.h>
+#include <freax/gfp.h>
+#include <freax/mmc/host.h>
+#include <freax/ioport.h>
+#include <freax/sizes.h>
+#include <freax/platform_data/s3c-hsotg.h>
 
 #include <asm/irq.h>
 #include <asm/mach/arch.h>
@@ -39,13 +39,13 @@
 #include "cpu.h"
 #include "devs.h"
 #include "fb.h"
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <freax/platform_data/i2c-s3c2410.h>
 #include "keypad.h"
 #include "pwm-core.h"
 #include "sdhci.h"
 #include "usb-phy.h"
-#include <linux/platform_data/asoc-s3c.h>
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <freax/platform_data/asoc-s3c.h>
+#include <freax/platform_data/spi-s3c64xx.h>
 
 #define samsung_device_dma_mask (*((u64[]) { DMA_BIT_MASK(32) }))
 

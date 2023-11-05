@@ -139,7 +139,7 @@ config DRM_FBDEV_EMULATION
 	default FB
 	help
 	  Choose this option if you have a need for the legacy fbdev
-	  support. Note that this support also provides the linux console
+	  support. Note that this support also provides the freax console
 	  support on top of your modesetting driver.
 
 	  If in doubt, say "Y".

@@ -5,9 +5,9 @@
 // Copyright (C) 2017 Spreadtrum, Inc.
 // Author: Chunyan Zhang <chunyan.zhang@spreadtrum.com>
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
 
 #include "mux.h"
 

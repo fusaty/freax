@@ -36,10 +36,10 @@
 #include "arch/common.h"
 #include "namespaces.h"
 #include <regex.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <subcmd/parse-options.h>
 #include <subcmd/run-command.h>
 
@@ -55,7 +55,7 @@
 #define DARROW_CHAR	((unsigned char)'.')
 #define UARROW_CHAR	((unsigned char)'-')
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 static regex_t	 file_lineno;
 
@@ -1691,7 +1691,7 @@ int symbol__strerror_disassemble(struct map_symbol *ms, int errnum, char *buf, s
 	}
 
 	switch (errnum) {
-	case SYMBOL_ANNOTATE_ERRNO__NO_VMLINUX: {
+	case SYMBOL_ANNOTATE_ERRNO__NO_VMfreax: {
 		char bf[SBUILD_ID_SIZE + 15] = " with build id ";
 		char *build_id_msg = NULL;
 
@@ -1700,12 +1700,12 @@ int symbol__strerror_disassemble(struct map_symbol *ms, int errnum, char *buf, s
 			build_id_msg = bf;
 		}
 		scnprintf(buf, buflen,
-			  "No vmlinux file%s\nwas found in the path.\n\n"
+			  "No vmfreax file%s\nwas found in the path.\n\n"
 			  "Note that annotation using /proc/kcore requires CAP_SYS_RAWIO capability.\n\n"
 			  "Please use:\n\n"
-			  "  perf buildid-cache -vu vmlinux\n\n"
+			  "  perf buildid-cache -vu vmfreax\n\n"
 			  "or:\n\n"
-			  "  --vmlinux vmlinux\n", build_id_msg ?: "");
+			  "  --vmfreax vmfreax\n", build_id_msg ?: "");
 	}
 		break;
 	case SYMBOL_ANNOTATE_ERRNO__NO_LIBOPCODES_FOR_BPF:
@@ -1742,7 +1742,7 @@ static int dso__disassemble_filename(struct dso *dso, char *filename, size_t fil
 
 	if (dso->symtab_type == DSO_BINARY_TYPE__KALLSYMS &&
 	    !dso__is_kcore(dso))
-		return SYMBOL_ANNOTATE_ERRNO__NO_VMLINUX;
+		return SYMBOL_ANNOTATE_ERRNO__NO_VMfreax;
 
 	build_id_filename = dso__build_id_filename(dso, NULL, 0, false);
 	if (build_id_filename) {
@@ -1810,7 +1810,7 @@ fallback:
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
-#include <linux/btf.h>
+#include <freax/btf.h>
 #include <tools/dis-asm-compat.h>
 
 static int symbol__disassemble_bpf(struct symbol *sym,

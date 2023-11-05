@@ -40,15 +40,15 @@
  * is half of that in the single stage mode.
  */
 
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
+#include <freax/watchdog.h>
 #include <asm/arch_timer.h>
 
 #define DRV_NAME		"sbsa-gwdt"

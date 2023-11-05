@@ -3,10 +3,10 @@
  * Copyright © 2015 Broadcom Corporation
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "brcmnand.h"
 

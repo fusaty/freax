@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -60,28 +60,28 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/socket.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/pkt_sched.h>
-#include <linux/mroute.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/jhash.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/socket.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/inetdevice.h>
+#include <freax/igmp.h>
+#include <freax/pkt_sched.h>
+#include <freax/mroute.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/random.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/jhash.h>
 #include <net/dst.h>
 #include <net/dst_metadata.h>
 #include <net/inet_dscp.h>
@@ -99,7 +99,7 @@
 #include <net/netevent.h>
 #include <net/rtnetlink.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
 #include <net/secure_seq.h>
 #include <net/ip_tunnels.h>

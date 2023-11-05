@@ -3,12 +3,12 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 
 #include "clk.h"
 

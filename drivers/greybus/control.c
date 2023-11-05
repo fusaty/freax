@@ -6,10 +6,10 @@
  * Copyright 2015 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/greybus.h>
 
 /* Highest control-protocol version supported */
 #define GB_CONTROL_VERSION_MAJOR	0

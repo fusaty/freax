@@ -9,7 +9,7 @@
 #ifndef NFSCACHE_H
 #define NFSCACHE_H
 
-#include <linux/sunrpc/svc.h>
+#include <freax/sunrpc/svc.h>
 #include "netns.h"
 
 /*

@@ -18,10 +18,10 @@
  */
 
 #include <net/ipv6.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
 

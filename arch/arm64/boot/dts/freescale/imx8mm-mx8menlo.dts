@@ -24,13 +24,13 @@
 		led-1 {
 			label = "TestLed601";
 			gpios = <&gpio4 18 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 
 		led-2 {
 			label = "TestLed602";
 			gpios = <&gpio4 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -315,7 +315,7 @@
 
 &uart4 {
 	pinctrl-0 = <&pinctrl_uart4 &pinctrl_uart4_rts>;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	rts-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
 	status = "okay";
 };

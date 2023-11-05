@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_NETFILTER_XT_RECENT_H
-#define _LINUX_NETFILTER_XT_RECENT_H 1
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_NETFILTER_XT_RECENT_H
+#define _freax_NETFILTER_XT_RECENT_H 1
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
 
 enum {
 	XT_RECENT_CHECK    = 1 << 0,
@@ -44,4 +44,4 @@ struct xt_recent_mtinfo_v1 {
 	union nf_inet_addr mask;
 };
 
-#endif /* _LINUX_NETFILTER_XT_RECENT_H */
+#endif /* _freax_NETFILTER_XT_RECENT_H */

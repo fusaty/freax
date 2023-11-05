@@ -9,17 +9,17 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/as3722.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/as3722.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define AS3722_DEVICE_ID	0x0C
 

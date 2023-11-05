@@ -12,7 +12,7 @@
 #ifndef __ASM_S390_PROCESSOR_H
 #define __ASM_S390_PROCESSOR_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define CIF_NOHZ_DELAY		2	/* delay HZ disable for a tick */
 #define CIF_FPU			3	/* restore FPU registers */
@@ -30,9 +30,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cpumask.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
+#include <freax/cpumask.h>
+#include <freax/linkage.h>
+#include <freax/irqflags.h>
 #include <asm/cpu.h>
 #include <asm/page.h>
 #include <asm/ptrace.h>

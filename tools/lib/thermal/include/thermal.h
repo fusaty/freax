@@ -3,7 +3,7 @@
 #ifndef __LIBTHERMAL_H
 #define __LIBTHERMAL_H
 
-#include <linux/thermal.h>
+#include <freax/thermal.h>
 
 #ifndef LIBTHERMAL_API
 #define LIBTHERMAL_API __attribute__((visibility("default")))

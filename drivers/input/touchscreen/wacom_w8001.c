@@ -12,14 +12,14 @@
  * Layout based on Elo serial touchscreen driver by Vojtech Pavlik
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input/mt.h>
+#include <freax/serio.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
 
 #define DRIVER_DESC	"Wacom W8001 serial touchscreen driver"
 

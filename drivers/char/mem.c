@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/drivers/char/mem.c
+ *  freax/drivers/char/mem.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,27 +9,27 @@
  *  Shared /dev/zero mmapping support, Feb 2000, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/capability.h>
-#include <linux/ptrace.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/backing-dev.h>
-#include <linux/shmem_fs.h>
-#include <linux/splice.h>
-#include <linux/pfn.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mman.h>
+#include <freax/random.h>
+#include <freax/init.h>
+#include <freax/tty.h>
+#include <freax/capability.h>
+#include <freax/ptrace.h>
+#include <freax/device.h>
+#include <freax/highmem.h>
+#include <freax/backing-dev.h>
+#include <freax/shmem_fs.h>
+#include <freax/splice.h>
+#include <freax/pfn.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
+#include <freax/security.h>
 
 #define DEVMEM_MINOR	1
 #define DEVPORT_MINOR	4

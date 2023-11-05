@@ -9,7 +9,7 @@
  *  Copyright (c) 2012 Bernhard Seibold
  *  Copyright (c) 2014 Jamie Lentin <jm@lentin.co.uk>
  *
- * Linux IBM/Lenovo Scrollpoint mouse driver:
+ * freax IBM/Lenovo Scrollpoint mouse driver:
  * - IBM Scrollpoint III
  * - IBM Scrollpoint Pro
  * - IBM Scrollpoint Optical
@@ -24,13 +24,13 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/sysfs.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/input.h>
+#include <freax/leds.h>
+#include <freax/workqueue.h>
 
 #include "hid-ids.h"
 

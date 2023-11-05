@@ -8,7 +8,7 @@
 #define _CRYPTO_KDF_SELFTEST_H
 
 #include <crypto/hash.h>
-#include <linux/uio.h>
+#include <freax/uio.h>
 
 struct kdf_testvec {
 	unsigned char *key;

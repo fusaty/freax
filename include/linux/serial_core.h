@@ -1,23 +1,23 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/char/serial_core.h
+ *  freax/drivers/char/serial_core.h
  *
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  */
-#ifndef LINUX_SERIAL_CORE_H
-#define LINUX_SERIAL_CORE_H
+#ifndef freax_SERIAL_CORE_H
+#define freax_SERIAL_CORE_H
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/circ_buf.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/mutex.h>
-#include <linux/sysrq.h>
-#include <uapi/linux/serial_core.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
+#include <freax/circ_buf.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
+#include <freax/tty.h>
+#include <freax/mutex.h>
+#include <freax/sysrq.h>
+#include <uapi/freax/serial_core.h>
 
 #ifdef CONFIG_SERIAL_CORE_CONSOLE
 #define uart_console(port) \
@@ -493,7 +493,7 @@ struct uart_port {
 
 	/*
 	 * These flags must be equivalent to the flags defined in
-	 * include/uapi/linux/tty_flags.h which are the userspace definitions
+	 * include/uapi/freax/tty_flags.h which are the userspace definitions
 	 * assigned from the serial_struct flags in uart_set_info()
 	 * [for bit definitions in the UPF_CHANGE_MASK]
 	 *
@@ -1118,4 +1118,4 @@ static inline int uart_handle_break(struct uart_port *port)
 					 !((cflag) & CLOCAL))
 
 int uart_get_rs485_mode(struct uart_port *port);
-#endif /* LINUX_SERIAL_CORE_H */
+#endif /* freax_SERIAL_CORE_H */

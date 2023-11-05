@@ -5,15 +5,15 @@
  * Author: Dipen Patel <dipenp@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hte.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/hte.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 
 /*
  * This sample HTE test driver demonstrates HTE API usage by enabling

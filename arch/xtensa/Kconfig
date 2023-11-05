@@ -57,10 +57,10 @@ config XTENSA
 	help
 	  Xtensa processors are 32-bit RISC machines designed by Tensilica
 	  primarily for embedded systems.  These processors are both
-	  configurable and extensible.  The Linux port to the Xtensa
+	  configurable and extensible.  The freax port to the Xtensa
 	  architecture supports all processor configurations and extensions,
-	  with reasonable minimum requirements.  The Xtensa Linux project has
-	  a home page at <http://www.linux-xtensa.org/>.
+	  with reasonable minimum requirements.  The Xtensa freax project has
+	  a home page at <http://www.freax-xtensa.org/>.
 
 config GENERIC_HWEIGHT
 	def_bool y
@@ -408,7 +408,7 @@ config XTENSA_PLATFORM_XT2000
 	bool "XT2000"
 	help
 	  XT2000 is the name of Tensilica's feature-rich emulation platform.
-	  This hardware is capable of running a full Linux distribution.
+	  This hardware is capable of running a full freax distribution.
 
 config XTENSA_PLATFORM_XTFPGA
 	bool "XTFPGA"
@@ -419,7 +419,7 @@ config XTENSA_PLATFORM_XTFPGA
 	select PLATFORM_HAVE_XIP
 	help
 	  XTFPGA is the name of Tensilica board family (LX60, LX110, LX200, ML605).
-	  This hardware is capable of running a full Linux distribution.
+	  This hardware is capable of running a full freax distribution.
 
 endchoice
 
@@ -562,8 +562,8 @@ config XTFPGA_LCD_8BIT_ACCESS
 
 comment "Kernel memory layout"
 
-config INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
-	bool "Initialize Xtensa MMU inside the Linux kernel code"
+config INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
+	bool "Initialize Xtensa MMU inside the freax kernel code"
 	depends on !XTENSA_VARIANT_FSF && !XTENSA_VARIANT_DC232B
 	default y if XTENSA_VARIANT_DC233C || XTENSA_VARIANT_CUSTOM
 	help
@@ -583,7 +583,7 @@ config INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
 	  to mapping the MMU and after mapping even if the area of low memory
 	  was mapped gdb wouldn't remove the breakpoint on hitting it as the
 	  PC wouldn't match. Since Hardware Breakpoints are recommended for
-	  Linux configurations it seems reasonable to just assume they exist
+	  freax configurations it seems reasonable to just assume they exist
 	  and leave this older mechanism for unfortunate souls that choose
 	  not to follow Tensilica's recommendation.
 
@@ -646,14 +646,14 @@ config MEMMAP_CACHEATTR
 
 config KSEG_PADDR
 	hex "Physical address of the KSEG mapping"
-	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX && MMU
+	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMfreax && MMU
 	default 0x00000000
 	help
 	  This is the physical address where KSEG is mapped. Please refer to
 	  the chosen KSEG layout help for the required address alignment.
 	  Unpacked kernel image (including vectors) must be located completely
 	  within KSEG.
-	  Physical memory below this address is not available to linux.
+	  Physical memory below this address is not available to freax.
 
 	  If unsure, leave the default value here.
 
@@ -670,8 +670,8 @@ config KERNEL_VIRTUAL_ADDRESS
 config KERNEL_LOAD_ADDRESS
 	hex "Kernel load address"
 	default 0x60003000 if !MMU
-	default 0x00003000 if MMU && INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
-	default 0xd0003000 if MMU && !INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+	default 0x00003000 if MMU && INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
+	default 0xd0003000 if MMU && !INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	help
 	  This is the address where the kernel is loaded.
 	  It is virtual address for MMUv2 configurations and physical address
@@ -752,7 +752,7 @@ config XTENSA_KSEG_MMU_V2
 
 config XTENSA_KSEG_256M
 	bool "256MB cached + 256MB uncached"
-	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	help
 	  TLB way 6 maps 256MB starting at KSEG_PADDR to 0xb0000000
 	  with cache and to 0xc0000000 without cache.
@@ -760,7 +760,7 @@ config XTENSA_KSEG_256M
 
 config XTENSA_KSEG_512M
 	bool "512MB cached + 512MB uncached"
-	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+	depends on INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	help
 	  TLB way 6 maps 512MB starting at KSEG_PADDR to 0xa0000000
 	  with cache and to 0xc0000000 without cache.
@@ -773,7 +773,7 @@ config HIGHMEM
 	depends on MMU
 	select KMAP_LOCAL
 	help
-	  Linux can use the full amount of RAM in the system by
+	  freax can use the full amount of RAM in the system by
 	  default. However, the default MMUv2 setup only maps the
 	  lowermost 128 MB of memory linearly to the areas starting
 	  at 0xd0000000 (cached) and 0xd8000000 (uncached).

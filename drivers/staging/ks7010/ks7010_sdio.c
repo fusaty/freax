@@ -7,13 +7,13 @@
  *   Copyright (C) 2016 Sang Engineering, Wolfram Sang
  */
 
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/firmware.h>
+#include <freax/jiffies.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/module.h>
+#include <freax/workqueue.h>
 #include "ks_wlan.h"
 #include "ks_hostif.h"
 

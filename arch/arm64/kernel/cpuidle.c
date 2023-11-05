@@ -6,10 +6,10 @@
  * Author: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/psci.h>
+#include <freax/acpi.h>
+#include <freax/cpuidle.h>
+#include <freax/cpu_pm.h>
+#include <freax/psci.h>
 
 #ifdef CONFIG_ACPI_PROCESSOR_IDLE
 

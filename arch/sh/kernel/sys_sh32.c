@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ipc.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/syscalls.h>
+#include <freax/mman.h>
+#include <freax/file.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/ipc.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/syscalls.h>
 

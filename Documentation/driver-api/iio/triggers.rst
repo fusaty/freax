@@ -73,6 +73,6 @@ Notice that a trigger has a set of operations attached:
 
 More details
 ============
-.. kernel-doc:: include/linux/iio/trigger.h
+.. kernel-doc:: include/freax/iio/trigger.h
 .. kernel-doc:: drivers/iio/industrialio-trigger.c
    :export:

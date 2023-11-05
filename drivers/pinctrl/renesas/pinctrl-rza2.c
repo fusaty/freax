@@ -10,14 +10,14 @@
  * family.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/platform_device.h>
 
 #include "../core.h"
 #include "../pinmux.h"

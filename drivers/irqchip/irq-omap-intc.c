@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap2/irq.c
+ * freax/arch/arm/mach-omap2/irq.c
  *
  * Interrupt handler for OMAP2 boards.
  *
@@ -10,20 +10,20 @@
  * License. See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
 #include <asm/exception.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
-#include <linux/irqchip/irq-omap-intc.h>
+#include <freax/irqchip/irq-omap-intc.h>
 
 /* selected INTC register offsets */
 

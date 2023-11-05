@@ -19,7 +19,7 @@
  */
 #ifdef CONFIG_MMIOWB
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <asm-generic/mmiowb_types.h>
 
 #ifndef arch_mmiowb_state

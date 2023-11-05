@@ -5,15 +5,15 @@
  * Copyright (c) 2003 Patrick Mochel
  * Copyright (c) 2003 Open Source Development Lab
  * Copyright (c) 2013 Greg Kroah-Hartman
- * Copyright (c) 2013 The Linux Foundation
+ * Copyright (c) 2013 The freax Foundation
  */
 
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/err.h>
-#include <linux/fs.h>
+#include <freax/kobject.h>
+#include <freax/module.h>
+#include <freax/dcache.h>
+#include <freax/namei.h>
+#include <freax/err.h>
+#include <freax/fs.h>
 #include "sysfs.h"
 
 

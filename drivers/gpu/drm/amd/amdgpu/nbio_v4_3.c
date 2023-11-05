@@ -27,7 +27,7 @@
 #include "nbio/nbio_4_3_0_offset.h"
 #include "nbio/nbio_4_3_0_sh_mask.h"
 #include "ivsrcid/nbio/irqsrcs_nbif_7_4.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 static void nbio_v4_3_remap_hdp_registers(struct amdgpu_device *adev)
 {

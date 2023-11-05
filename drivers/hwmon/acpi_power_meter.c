@@ -6,18 +6,18 @@
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/err.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/kdev_t.h>
+#include <freax/sched.h>
+#include <freax/time.h>
+#include <freax/err.h>
+#include <freax/acpi.h>
 
 #define ACPI_POWER_METER_NAME		"power_meter"
 #define ACPI_POWER_METER_DEVICE_NAME	"Power Meter"

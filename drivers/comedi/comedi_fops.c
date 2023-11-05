@@ -3,7 +3,7 @@
  * comedi/comedi_fops.c
  * comedi kernel module
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2007 David A. Schleef <ds@schleef.org>
  * compat ioctls:
  * Author: Ian Abbott, MEV Ltd. <abbotti@mev.co.uk>
@@ -12,23 +12,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/cdev.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/fcntl.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/cdev.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/compat.h>
 
 #include "comedi_internal.h"
 

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/namespace.c
+ * freax/ipc/namespace.c
  * Copyright (C) 2006 Pavel Emelyanov <xemul@openvz.org> OpenVZ, SWsoft Inc.
  */
 
-#include <linux/ipc.h>
-#include <linux/msg.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rcupdate.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/user_namespace.h>
-#include <linux/proc_ns.h>
-#include <linux/sched/task.h>
+#include <freax/ipc.h>
+#include <freax/msg.h>
+#include <freax/ipc_namespace.h>
+#include <freax/rcupdate.h>
+#include <freax/nsproxy.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/user_namespace.h>
+#include <freax/proc_ns.h>
+#include <freax/sched/task.h>
 
 #include "util.h"
 

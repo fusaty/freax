@@ -4,11 +4,11 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/i2c.h>
-#include <linux/rmi.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <freax/i2c.h>
+#include <freax/rmi.h>
+#include <freax/of.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
 #include "rmi_driver.h"
 
 #define BUFFER_SIZE_INCREMENT 32

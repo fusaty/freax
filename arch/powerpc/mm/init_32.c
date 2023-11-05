@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -12,22 +12,22 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
+#include <freax/highmem.h>
+#include <freax/initrd.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/hugetlb.h>
 
 #include <asm/io.h>
 #include <asm/mmu.h>

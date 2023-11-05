@@ -3,11 +3,11 @@
  * idr-test.c: Test the IDR API
  * Copyright (c) 2016 Matthew Wilcox <willy@infradead.org>
  */
-#include <linux/bitmap.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <freax/bitmap.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
 
 #include "test.h"
 

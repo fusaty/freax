@@ -9,13 +9,13 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/configfs.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/dlmconstants.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/configfs.h>
+#include <freax/slab.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/dlmconstants.h>
 #include <net/ipv6.h>
 #include <net/sock.h>
 

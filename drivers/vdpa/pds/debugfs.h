@@ -4,7 +4,7 @@
 #ifndef _PDS_VDPA_DEBUGFS_H_
 #define _PDS_VDPA_DEBUGFS_H_
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 void pds_vdpa_debugfs_create(void);
 void pds_vdpa_debugfs_destroy(void);

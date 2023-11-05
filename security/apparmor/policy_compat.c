@@ -13,8 +13,8 @@
  * formats.
  */
 
-#include <linux/ctype.h>
-#include <linux/errno.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
 
 #include "include/lib.h"
 #include "include/policy_unpack.h"

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FD_H
-#define _LINUX_FD_H
+#ifndef _freax_FD_H
+#define _freax_FD_H
 
-#include <uapi/linux/fd.h>
+#include <uapi/freax/fd.h>
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 
 struct compat_floppy_struct {
 	compat_uint_t	size;

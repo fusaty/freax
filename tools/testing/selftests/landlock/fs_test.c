@@ -9,8 +9,8 @@
 
 #define _GNU_SOURCE
 #include <fcntl.h>
-#include <linux/landlock.h>
-#include <linux/magic.h>
+#include <freax/landlock.h>
+#include <freax/magic.h>
 #include <sched.h>
 #include <stdio.h>
 #include <string.h>

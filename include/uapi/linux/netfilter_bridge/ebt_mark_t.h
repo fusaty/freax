@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_BRIDGE_EBT_MARK_T_H
-#define __LINUX_BRIDGE_EBT_MARK_T_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_BRIDGE_EBT_MARK_T_H
+#define __freax_BRIDGE_EBT_MARK_T_H
 
 /* The target member is reused for adding new actions, the
  * value of the real target is -1 to -NUM_STANDARD_TARGETS.

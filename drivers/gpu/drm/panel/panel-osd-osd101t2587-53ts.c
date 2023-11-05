@@ -4,9 +4,9 @@
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_device.h>

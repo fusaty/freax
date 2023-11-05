@@ -60,24 +60,24 @@
  *    after the final transfer signalled by LBREQ or LSREQ.  The DMAC
  *    will then move to the next LLI entry. Unsupported by PL080S.
  */
-#include <linux/amba/bus.h>
-#include <linux/amba/pl08x.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/amba/pl080.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/pl08x.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/dmapool.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/pm_runtime.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/amba/pl080.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

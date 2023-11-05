@@ -26,7 +26,7 @@ Name
 Reference counting
 ==================
 
-.. kernel-doc:: include/linux/tty.h
+.. kernel-doc:: include/freax/tty.h
    :identifiers: tty_kref_get
 
 .. kernel-doc:: drivers/tty/tty_io.c
@@ -71,11 +71,11 @@ Misc
 TTY Struct Flags
 ================
 
-.. kernel-doc:: include/linux/tty.h
+.. kernel-doc:: include/freax/tty.h
    :doc: TTY Struct Flags
 
 TTY Struct Reference
 ====================
 
-.. kernel-doc:: include/linux/tty.h
+.. kernel-doc:: include/freax/tty.h
    :identifiers: tty_struct

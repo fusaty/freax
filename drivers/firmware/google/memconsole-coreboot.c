@@ -7,10 +7,10 @@
  * Copyright 2017 Google Inc.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "memconsole.h"
 #include "coreboot_table.h"

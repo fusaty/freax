@@ -9,14 +9,14 @@
  * Copyright (C) 2019-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _LINUX_SURFACE_AGGREGATOR_SERIAL_HUB_H
-#define _LINUX_SURFACE_AGGREGATOR_SERIAL_HUB_H
+#ifndef _freax_SURFACE_AGGREGATOR_SERIAL_HUB_H
+#define _freax_SURFACE_AGGREGATOR_SERIAL_HUB_H
 
-#include <linux/crc-ccitt.h>
-#include <linux/kref.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/crc-ccitt.h>
+#include <freax/kref.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 
 /* -- Data structures for SAM-over-SSH communication. ----------------------- */
@@ -688,4 +688,4 @@ static inline void ssh_request_set_data(struct ssh_request *r, u8 *ptr, size_t l
 	ssh_packet_set_data(&r->packet, ptr, len);
 }
 
-#endif /* _LINUX_SURFACE_AGGREGATOR_SERIAL_HUB_H */
+#endif /* _freax_SURFACE_AGGREGATOR_SERIAL_HUB_H */

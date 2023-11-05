@@ -8,14 +8,14 @@
  * Author: yanglsh@embest-tech.com
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 /* For the BD71815 register definitions */
-#include <linux/mfd/rohm-bd71815.h>
+#include <freax/mfd/rohm-bd71815.h>
 
 struct bd71815_gpio {
 	/* chip.parent points the MFD which provides DT node and regmap */

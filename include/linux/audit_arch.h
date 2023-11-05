@@ -6,8 +6,8 @@
  *
  * Author: Richard Guy Briggs <rgb@redhat.com>
  */
-#ifndef _LINUX_AUDIT_ARCH_H_
-#define _LINUX_AUDIT_ARCH_H_
+#ifndef _freax_AUDIT_ARCH_H_
+#define _freax_AUDIT_ARCH_H_
 
 enum auditsc_class_t {
 	AUDITSC_NATIVE = 0,

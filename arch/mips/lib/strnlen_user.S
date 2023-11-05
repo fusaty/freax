@@ -6,7 +6,7 @@
  * Copyright (c) 1996, 1998, 1999, 2004 by Ralf Baechle
  * Copyright (c) 1999 Silicon Graphics, Inc.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/regdef.h>

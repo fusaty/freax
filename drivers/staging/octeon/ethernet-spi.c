@@ -5,9 +5,9 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/interrupt.h>
 #include <net/dst.h>
 
 #include "octeon-ethernet.h"

@@ -15,10 +15,10 @@
  *
  */
 
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 #include <media/media-device.h>
 #include <media/media-dev-allocator.h>

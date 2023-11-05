@@ -8,15 +8,15 @@
  * Wim Van Sebroeck.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/mc146818rtc.h>
+#include <freax/module.h>
+#include <freax/nvram.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 #include <asm/atarihw.h>
 #include <asm/atariints.h>
 
@@ -144,7 +144,7 @@ static struct {
 	{ 0x80, "TOS" },
 	{ 0x40, "ASV" },
 	{ 0x20, "NetBSD (?)" },
-	{ 0x10, "Linux" },
+	{ 0x10, "freax" },
 	{ 0x00, "unspecified" },
 };
 

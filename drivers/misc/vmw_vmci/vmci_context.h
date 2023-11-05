@@ -8,11 +8,11 @@
 #ifndef _VMCI_CONTEXT_H_
 #define _VMCI_CONTEXT_H_
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/atomic.h>
-#include <linux/kref.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/atomic.h>
+#include <freax/kref.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include "vmci_handle_array.h"
 #include "vmci_datagram.h"

@@ -4,8 +4,8 @@
  *
  * Based on arch/arm64/kernel/jump_label.c
  */
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
 #include <asm/inst.h>
 
 void arch_jump_label_transform(struct jump_entry *entry, enum jump_label_type type)

@@ -11,16 +11,16 @@
  *     Created 12 Jul 1997 by Geert Uytterhoeven
  */
 
-#include <linux/ata.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/zorro.h>
+#include <freax/ata.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/libata.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/zorro.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
 

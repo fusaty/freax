@@ -4,14 +4,14 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/smp.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/smp.h>
 #include <asm/smp_plat.h>
 #include "common.h"
 #include "hardware.h"

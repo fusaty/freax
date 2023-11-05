@@ -7,16 +7,16 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/panic_notifier.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/termios.h>
-#include <linux/err.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
+#include <freax/kmod.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/panic_notifier.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
+#include <freax/termios.h>
+#include <freax/err.h>
+#include <freax/reboot.h>
+#include <freax/gfp.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

@@ -8,10 +8,10 @@
  * on Book3S processors (specifically POWER9 and later).
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/llist.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/kvm_host.h>
+#include <freax/llist.h>
+#include <freax/pgtable.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>
@@ -900,7 +900,7 @@ pte_t *find_kvm_nested_guest_pte(struct kvm *kvm, unsigned long lpid,
 
 	VM_WARN(!spin_is_locked(&kvm->mmu_lock),
 		"%s called with kvm mmu_lock not held \n", __func__);
-	pte = __find_linux_pte(gp->shadow_pgtable, ea, NULL, hshift);
+	pte = __find_freax_pte(gp->shadow_pgtable, ea, NULL, hshift);
 
 	return pte;
 }

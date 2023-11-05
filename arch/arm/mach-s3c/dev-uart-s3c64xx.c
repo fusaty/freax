@@ -3,15 +3,15 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // Base S3C64XX UART resource and device definitions
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/platform_device.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/irq.h>

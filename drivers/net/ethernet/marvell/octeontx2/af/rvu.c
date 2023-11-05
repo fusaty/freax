@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/sysfs.h>
 
 #include "cgx.h"
 #include "rvu.h"

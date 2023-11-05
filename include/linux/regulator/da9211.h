@@ -5,10 +5,10 @@
  * Copyright (C) 2015  Dialog Semiconductor Ltd.
  */
 
-#ifndef __LINUX_REGULATOR_DA9211_H
-#define __LINUX_REGULATOR_DA9211_H
+#ifndef __freax_REGULATOR_DA9211_H
+#define __freax_REGULATOR_DA9211_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #define DA9211_MAX_REGULATORS	2
 

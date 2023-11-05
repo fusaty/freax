@@ -6,10 +6,10 @@
  * https://www.ti.com/lit/ds/symlink/dac7311.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 enum {
 	ID_DAC5311 = 0,

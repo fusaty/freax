@@ -16,16 +16,16 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kfifo.h>
-#include <linux/scatterlist.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/inet.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/kfifo.h>
+#include <freax/scatterlist.h>
+#include <freax/module.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

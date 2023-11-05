@@ -5,13 +5,13 @@
 #ifndef _QED_DBG_HSI_H
 #define _QED_DBG_HSI_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 /****************************************/
 /* Debug Tools HSI constants and macros */

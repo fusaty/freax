@@ -4,7 +4,7 @@
  */
 
 #include <asm/tsc.h>
-#include <linux/cpufreq.h>
+#include <freax/cpufreq.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

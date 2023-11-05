@@ -3,14 +3,14 @@
  * Copyright (C) 2006 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  */
-#include <linux/module.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
+#include <freax/module.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/sunrpc/xprt.h>
+#include <freax/sunrpc/bc_xprt.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
 #include "internal.h"
 #include "callback.h"
 #include "delegation.h"

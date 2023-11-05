@@ -4,8 +4,8 @@
  * Copyright © 2014-2016 Intel Corporation
  */
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
 
 #include "i915_drv.h"
 #include "i915_gem.h"

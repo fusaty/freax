@@ -7,14 +7,14 @@
  * Author: Kavyasree Kotagiri <kavyasree.kotagiri@microchip.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/microchip,lan966x.h>
 

@@ -6,16 +6,16 @@
  * Copyright (C) 2019 Sunplus Technology Inc., All rights reseerved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/rtc.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/rtc.h>
 
 #define RTC_REG_NAME			"rtc"
 

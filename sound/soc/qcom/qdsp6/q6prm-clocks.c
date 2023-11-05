@@ -2,12 +2,12 @@
 // Copyright (c) 2021, Linaro Limited
 
 #include <dt-bindings/sound/qcom,q6dsp-lpass-ports.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
 #include "q6dsp-lpass-clocks.h"
 #include "q6prm.h"
 

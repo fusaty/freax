@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/bad_inode.c
+ *  freax/fs/bad_inode.c
  *
  *  Copyright (C) 1997, Stephen Tweedie
  *
@@ -9,13 +9,13 @@
  *  Fabian Frederick : August 2003 - All file operations assigned to EIO
  */
 
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/stat.h>
-#include <linux/time.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/fiemap.h>
+#include <freax/fs.h>
+#include <freax/export.h>
+#include <freax/stat.h>
+#include <freax/time.h>
+#include <freax/namei.h>
+#include <freax/poll.h>
+#include <freax/fiemap.h>
 
 static int bad_file_open(struct inode *inode, struct file *filp)
 {

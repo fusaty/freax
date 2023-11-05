@@ -8,7 +8,7 @@
 #include "../habanalabs.h"
 #include "../../include/hw_ip/mmu/mmu_general.h"
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 static struct pgt_info *hl_mmu_v2_hr_get_pgt_info(struct hl_ctx *ctx, u64 phys_hop_addr)
 {

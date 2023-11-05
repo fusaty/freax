@@ -8,25 +8,25 @@
  * This file is released under the GPL.
  */
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/key.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/crypto.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/backing-dev.h>
-#include <linux/atomic.h>
-#include <linux/scatterlist.h>
-#include <linux/rbtree.h>
-#include <linux/ctype.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/key.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/mempool.h>
+#include <freax/slab.h>
+#include <freax/crypto.h>
+#include <freax/workqueue.h>
+#include <freax/kthread.h>
+#include <freax/backing-dev.h>
+#include <freax/atomic.h>
+#include <freax/scatterlist.h>
+#include <freax/rbtree.h>
+#include <freax/ctype.h>
 #include <asm/page.h>
 #include <asm/unaligned.h>
 #include <crypto/hash.h>
@@ -35,13 +35,13 @@
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
 #include <crypto/utils.h>
-#include <linux/rtnetlink.h> /* for struct rtattr and RTA macros only */
-#include <linux/key-type.h>
+#include <freax/rtnetlink.h> /* for struct rtattr and RTA macros only */
+#include <freax/key-type.h>
 #include <keys/user-type.h>
 #include <keys/encrypted-type.h>
 #include <keys/trusted-type.h>
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
 #include "dm-audit.h"
 

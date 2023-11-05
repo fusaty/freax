@@ -42,7 +42,7 @@
 	};
 
 	pwmdac_codec: pwmdac-codec {
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

@@ -5,9 +5,9 @@
  *
  **************************************************************************/
 
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
 
 #include <drm/drm.h>
 

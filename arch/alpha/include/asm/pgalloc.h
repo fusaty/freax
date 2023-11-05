@@ -2,8 +2,8 @@
 #ifndef _ALPHA_PGALLOC_H
 #define _ALPHA_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/mmzone.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
 
 #include <asm-generic/pgalloc.h>
 

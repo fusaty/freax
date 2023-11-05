@@ -3,21 +3,21 @@
  * Copyright (c) 2020 Rockchip Electronics Co., Ltd.
  * Author: Andy Yan <andy.yan@rock-chips.com>
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/swab.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/media-bus-format.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/swab.h>
 
 #include <drm/drm.h>
 #include <drm/drm_atomic.h>
@@ -30,7 +30,7 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_vblank.h>
 
-#include <uapi/linux/videodev2.h>
+#include <uapi/freax/videodev2.h>
 #include <dt-bindings/soc/rockchip,vop2.h>
 
 #include "rockchip_drm_drv.h"

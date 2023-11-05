@@ -6,16 +6,16 @@
  * Copyright (C) 2018-2019 Rockwell Collins
  */
 
-#include <linux/ctype.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/util_macros.h>
+#include <freax/ctype.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/util_macros.h>
 #include <asm/unaligned.h>
 #include <dt-bindings/iio/temperature/thermocouple.h>
 /*

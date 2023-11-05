@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2021 Facebook */
-#include "vmlinux.h"
+#include "vmfreax.h"
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -63,7 +63,7 @@ int BPF_PROG(fexit_eth_type_trans, struct sk_buff *skb,
 
 volatile const int never;
 
-struct __sk_bUfF /* it will not exist in vmlinux */ {
+struct __sk_bUfF /* it will not exist in vmfreax */ {
 	int len;
 } __attribute__((preserve_access_index));
 

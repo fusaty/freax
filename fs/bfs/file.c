@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
 #include "bfs.h"
 
 #undef DEBUG

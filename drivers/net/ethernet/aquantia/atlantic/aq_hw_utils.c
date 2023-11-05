@@ -11,7 +11,7 @@
 
 #include "aq_hw_utils.h"
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 #include "aq_hw.h"
 #include "aq_nic.h"

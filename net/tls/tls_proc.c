@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <net/snmp.h>
 #include <net/tls.h>
 
@@ -10,24 +10,24 @@
 
 #ifdef CONFIG_PROC_FS
 static const struct snmp_mib tls_mib_list[] = {
-	SNMP_MIB_ITEM("TlsCurrTxSw", LINUX_MIB_TLSCURRTXSW),
-	SNMP_MIB_ITEM("TlsCurrRxSw", LINUX_MIB_TLSCURRRXSW),
-	SNMP_MIB_ITEM("TlsCurrTxDevice", LINUX_MIB_TLSCURRTXDEVICE),
-	SNMP_MIB_ITEM("TlsCurrRxDevice", LINUX_MIB_TLSCURRRXDEVICE),
-	SNMP_MIB_ITEM("TlsTxSw", LINUX_MIB_TLSTXSW),
-	SNMP_MIB_ITEM("TlsRxSw", LINUX_MIB_TLSRXSW),
-	SNMP_MIB_ITEM("TlsTxDevice", LINUX_MIB_TLSTXDEVICE),
-	SNMP_MIB_ITEM("TlsRxDevice", LINUX_MIB_TLSRXDEVICE),
-	SNMP_MIB_ITEM("TlsDecryptError", LINUX_MIB_TLSDECRYPTERROR),
-	SNMP_MIB_ITEM("TlsRxDeviceResync", LINUX_MIB_TLSRXDEVICERESYNC),
-	SNMP_MIB_ITEM("TlsDecryptRetry", LINUX_MIB_TLSDECRYPTRETRY),
-	SNMP_MIB_ITEM("TlsRxNoPadViolation", LINUX_MIB_TLSRXNOPADVIOL),
+	SNMP_MIB_ITEM("TlsCurrTxSw", freax_MIB_TLSCURRTXSW),
+	SNMP_MIB_ITEM("TlsCurrRxSw", freax_MIB_TLSCURRRXSW),
+	SNMP_MIB_ITEM("TlsCurrTxDevice", freax_MIB_TLSCURRTXDEVICE),
+	SNMP_MIB_ITEM("TlsCurrRxDevice", freax_MIB_TLSCURRRXDEVICE),
+	SNMP_MIB_ITEM("TlsTxSw", freax_MIB_TLSTXSW),
+	SNMP_MIB_ITEM("TlsRxSw", freax_MIB_TLSRXSW),
+	SNMP_MIB_ITEM("TlsTxDevice", freax_MIB_TLSTXDEVICE),
+	SNMP_MIB_ITEM("TlsRxDevice", freax_MIB_TLSRXDEVICE),
+	SNMP_MIB_ITEM("TlsDecryptError", freax_MIB_TLSDECRYPTERROR),
+	SNMP_MIB_ITEM("TlsRxDeviceResync", freax_MIB_TLSRXDEVICERESYNC),
+	SNMP_MIB_ITEM("TlsDecryptRetry", freax_MIB_TLSDECRYPTRETRY),
+	SNMP_MIB_ITEM("TlsRxNoPadViolation", freax_MIB_TLSRXNOPADVIOL),
 	SNMP_MIB_SENTINEL
 };
 
 static int tls_statistics_seq_show(struct seq_file *seq, void *v)
 {
-	unsigned long buf[LINUX_MIB_TLSMAX] = {};
+	unsigned long buf[freax_MIB_TLSMAX] = {};
 	struct net *net = seq->private;
 	int i;
 

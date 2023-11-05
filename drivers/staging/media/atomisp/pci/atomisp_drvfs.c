@@ -16,9 +16,9 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
 
 #include "atomisp_compat.h"
 #include "atomisp_internal.h"

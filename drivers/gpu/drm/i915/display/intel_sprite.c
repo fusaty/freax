@@ -30,7 +30,7 @@
  * support.
  */
 
-#include <linux/string_helpers.h>
+#include <freax/string_helpers.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_blend.h>

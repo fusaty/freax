@@ -6,16 +6,16 @@
  * Copyright (C) 2020, Google LLC.
  */
 
-#ifndef _LINUX_KFENCE_H
-#define _LINUX_KFENCE_H
+#ifndef _freax_KFENCE_H
+#define _freax_KFENCE_H
 
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_KFENCE
 
-#include <linux/atomic.h>
-#include <linux/static_key.h>
+#include <freax/atomic.h>
+#include <freax/static_key.h>
 
 extern unsigned long kfence_sample_interval;
 
@@ -248,4 +248,4 @@ static inline bool __kfence_obj_info(struct kmem_obj_info *kpp, void *object, st
 
 #endif
 
-#endif /* _LINUX_KFENCE_H */
+#endif /* _freax_KFENCE_H */

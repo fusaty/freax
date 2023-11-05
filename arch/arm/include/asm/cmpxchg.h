@@ -2,8 +2,8 @@
 #ifndef __ASM_ARM_CMPXCHG_H
 #define __ASM_ARM_CMPXCHG_H
 
-#include <linux/irqflags.h>
-#include <linux/prefetch.h>
+#include <freax/irqflags.h>
+#include <freax/prefetch.h>
 #include <asm/barrier.h>
 
 #if defined(CONFIG_CPU_SA1100) || defined(CONFIG_CPU_SA110)
@@ -33,14 +33,14 @@ __arch_xchg(unsigned long x, volatile void *ptr, int size)
 #ifdef swp_is_buggy
 	unsigned long flags;
 #endif
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	unsigned int tmp;
 #endif
 
 	prefetchw((const void *)ptr);
 
 	switch (size) {
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 #ifndef CONFIG_CPU_V6 /* MIN ARCH >= V6K */
 	case 1:
 		asm volatile("@	__xchg1\n"
@@ -122,7 +122,7 @@ __arch_xchg(unsigned long x, volatile void *ptr, int size)
 
 #include <asm-generic/cmpxchg-local.h>
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 /* min ARCH < ARMv6 */
 
 #ifdef CONFIG_SMP
@@ -275,6 +275,6 @@ static inline unsigned long long __cmpxchg64(unsigned long long *ptr,
 
 #define arch_cmpxchg64_local(ptr, o, n) arch_cmpxchg64_relaxed((ptr), (o), (n))
 
-#endif	/* __LINUX_ARM_ARCH__ >= 6 */
+#endif	/* __freax_ARM_ARCH__ >= 6 */
 
 #endif /* __ASM_ARM_CMPXCHG_H */

@@ -6,12 +6,12 @@
  */
 
 #define pr_fmt(fmt) "PKCS8: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/oid_registry.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/oid_registry.h>
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #include <crypto/public_key.h>

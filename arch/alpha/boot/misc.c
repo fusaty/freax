@@ -3,11 +3,11 @@
  * misc.c
  * 
  * This is a collection of several routines from gzip-1.0.3 
- * adapted for Linux.
+ * adapted for freax.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
- * Modified for ARM Linux by Russell King
+ * Modified for ARM freax by Russell King
  *
  * Nicolas Pitre <nico@visuaide.com>  1999/04/14 :
  *  For this code to run directly from Flash, all constant variables must
@@ -19,10 +19,10 @@
  * Modified for Alpha, from the ARM version, by Jay Estabrook 2003.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define memzero(s,n)	memset ((s),0,(n))
 #define puts		srm_printk
@@ -165,7 +165,7 @@ decompress_kernel(void *output_start,
 	window = malloc(WSIZE);
 
 	makecrc();
-/*	puts("Uncompressing Linux..."); */
+/*	puts("Uncompressing freax..."); */
 	gunzip();
 /*	puts(" done, booting the kernel.\n"); */
 	return output_ptr;

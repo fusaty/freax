@@ -6,16 +6,16 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 
 #include <asm/natfeat.h>
 

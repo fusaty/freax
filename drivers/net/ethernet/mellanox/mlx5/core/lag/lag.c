@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <net/bonding.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/mlx5/vport.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/eswitch.h>
+#include <freax/mlx5/vport.h>
 #include "lib/devcom.h"
 #include "mlx5_core.h"
 #include "eswitch.h"

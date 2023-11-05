@@ -7,17 +7,17 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-async.h>

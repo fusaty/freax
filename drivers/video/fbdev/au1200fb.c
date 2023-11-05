@@ -6,7 +6,7 @@
  * Author: AMD
  *
  * Based on:
- * linux/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
+ * freax/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
  *  Created 28 Dec 1997 by Geert Uytterhoeven
  *
  *  This program is free software; you can redistribute	 it and/or modify it
@@ -30,20 +30,20 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ctype.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1200fb.h>	/* platform_data */

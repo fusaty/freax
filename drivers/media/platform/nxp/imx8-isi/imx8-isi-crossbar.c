@@ -5,14 +5,14 @@
  * Copyright (c) 2022 Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/minmax.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>

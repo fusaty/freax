@@ -15,14 +15,14 @@
  *    McLean VA 22101
  *    Phone: 1-703-847-0040 ext 103
  */
-#ifndef _LINUX_IF_EQL_H
-#define _LINUX_IF_EQL_H
+#ifndef _freax_IF_EQL_H
+#define _freax_IF_EQL_H
 
 
-#include <linux/timer.h>
-#include <linux/spinlock.h>
+#include <freax/timer.h>
+#include <freax/spinlock.h>
 #include <net/net_trackers.h>
-#include <uapi/linux/if_eql.h>
+#include <uapi/freax/if_eql.h>
 
 typedef struct slave {
 	struct list_head	list;
@@ -48,4 +48,4 @@ typedef struct equalizer {
 	struct timer_list	timer;
 } equalizer_t;  
 
-#endif /* _LINUX_EQL_H */
+#endif /* _freax_EQL_H */

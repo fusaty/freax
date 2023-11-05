@@ -9,23 +9,23 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

@@ -4,8 +4,8 @@
 #ifndef __PECI_INTERNAL_H
 #define __PECI_INTERNAL_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
 struct peci_controller;
 struct attribute_group;

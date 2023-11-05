@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/zpool.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/zpool.h>
 
 struct zpool {
 	struct zpool_driver *driver;

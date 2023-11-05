@@ -3,21 +3,21 @@
  * Copyright (C) 2005, 2012 IBM Corporation
  *
  * Authors:
- *	Kent Yoder <key@linux.vnet.ibm.com>
+ *	Kent Yoder <key@freax.vnet.ibm.com>
  *	Seiji Munetoh <munetoh@jp.ibm.com>
  *	Stefan Berger <stefanb@us.ibm.com>
  *	Reiner Sailer <sailer@watson.ibm.com>
  *	Kylene Hall <kjhall@us.ibm.com>
- *	Nayna Jain <nayna@linux.vnet.ibm.com>
+ *	Nayna Jain <nayna@freax.vnet.ibm.com>
  *
  * Access to the event log created by a system's firmware / BIOS
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/tpm_eventlog.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/security.h>
+#include <freax/module.h>
+#include <freax/tpm_eventlog.h>
 
 #include "../tpm.h"
 #include "common.h"

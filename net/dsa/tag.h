@@ -3,9 +3,9 @@
 #ifndef __DSA_TAG_H
 #define __DSA_TAG_H
 
-#include <linux/if_vlan.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/if_vlan.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include <net/dsa.h>
 
 #include "port.h"

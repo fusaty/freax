@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * OpenRISC Linux
+ * OpenRISC freax
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -12,10 +12,10 @@
  * Precise Delay Loops
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/timex.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/timex.h>
 #include <asm/param.h>
 #include <asm/delay.h>
 #include <asm/timex.h>

@@ -5,24 +5,24 @@
  * Copyright 2008-2013 Solarflare Communications Inc.
  * Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
  */
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/rwsem.h>
-#include <linux/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/device.h>
+#include <freax/rwsem.h>
+#include <freax/vmalloc.h>
 #include <net/netevent.h>
-#include <linux/log2.h>
-#include <linux/net_tstamp.h>
-#include <linux/wait.h>
+#include <freax/log2.h>
+#include <freax/net_tstamp.h>
+#include <freax/wait.h>
 
 #include "bitfield.h"
 #include "mcdi.h"

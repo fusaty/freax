@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-2-Clause) */
 /*
  * This software is available to you under a choice of one of two
  * licenses.  You may choose to be licensed under the terms of the GNU
@@ -22,9 +22,9 @@
  * $Id$
  */
 
-#ifndef _LINUX_IF_INFINIBAND_H
-#define _LINUX_IF_INFINIBAND_H
+#ifndef _freax_IF_INFINIBAND_H
+#define _freax_IF_INFINIBAND_H
 
 #define INFINIBAND_ALEN		20	/* Octets in IPoIB HW addr	*/
 
-#endif /* _LINUX_IF_INFINIBAND_H */
+#endif /* _freax_IF_INFINIBAND_H */

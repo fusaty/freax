@@ -6,13 +6,13 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/resume_user_mode.h>
-#include <linux/linkage.h>
-#include <linux/entry-common.h>
+#include <freax/compat.h>
+#include <freax/signal.h>
+#include <freax/uaccess.h>
+#include <freax/syscalls.h>
+#include <freax/resume_user_mode.h>
+#include <freax/linkage.h>
+#include <freax/entry-common.h>
 
 #include <asm/ucontext.h>
 #include <asm/vdso.h>

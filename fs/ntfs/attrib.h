@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * attrib.h - Defines for attribute handling in NTFS Linux kernel driver.
- *	      Part of the Linux-NTFS project.
+ * attrib.h - Defines for attribute handling in NTFS freax kernel driver.
+ *	      Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_ATTRIB_H
-#define _LINUX_NTFS_ATTRIB_H
+#ifndef _freax_NTFS_ATTRIB_H
+#define _freax_NTFS_ATTRIB_H
 
 #include "endian.h"
 #include "types.h"
@@ -99,4 +99,4 @@ extern int ntfs_attr_set(ntfs_inode *ni, const s64 ofs, const s64 cnt,
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_ATTRIB_H */
+#endif /* _freax_NTFS_ATTRIB_H */

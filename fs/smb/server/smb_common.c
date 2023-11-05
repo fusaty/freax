@@ -4,7 +4,7 @@
  *   Copyright (C) 2018 Namjae Jeon <linkinjeon@kernel.org>
  */
 
-#include <linux/user_namespace.h>
+#include <freax/user_namespace.h>
 
 #include "smb_common.h"
 #include "server.h"

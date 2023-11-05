@@ -6,7 +6,7 @@
  */
 
 #include "tda18250_priv.h"
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 static const struct dvb_tuner_ops tda18250_ops;
 

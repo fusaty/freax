@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,19 +33,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/unistd.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/kthread.h>
-#include <linux/reboot.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
+#include <freax/unistd.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/uio.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/fcntl.h>
+#include <freax/kthread.h>
+#include <freax/reboot.h>
+#include <freax/rwsem.h>
+#include <freax/mutex.h>
 #include <asm/xen/hypervisor.h>
 #include <xen/xenbus.h>
 #include <xen/xen.h>

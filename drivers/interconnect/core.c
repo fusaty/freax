@@ -6,17 +6,17 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/overflow.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/interconnect.h>
+#include <freax/interconnect-provider.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/overflow.h>
 
 #include "internal.h"
 

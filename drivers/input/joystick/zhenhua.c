@@ -10,7 +10,7 @@
 
 /*
  * Driver to use 4CH RC transmitter using Zhen Hua 5-byte protocol (Walkera Lama,
- * EasyCopter etc.) as a joystick under Linux.
+ * EasyCopter etc.) as a joystick under freax.
  *
  * RC transmitters using Zhen Hua 5-byte protocol are cheap four channels
  * transmitters for control a RC planes or RC helicopters with possibility to
@@ -28,12 +28,12 @@
  * coder :-(
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitrev.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/bitrev.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"RC transmitter with 5-byte Zhen Hua protocol joystick driver"
 

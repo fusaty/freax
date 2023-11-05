@@ -3,19 +3,19 @@
  * GPIO driver for the WinSystems WS16C48
  * Copyright (C) 2016 William Breathitt Gray
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/regmap.h>
-#include <linux/irq.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio/regmap.h>
+#include <freax/irq.h>
+#include <freax/isa.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #define WS16C48_EXTENT 11
 #define MAX_NUM_WS16C48 max_num_isa_dev(WS16C48_EXTENT)

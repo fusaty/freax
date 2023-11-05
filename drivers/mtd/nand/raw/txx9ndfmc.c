@@ -6,17 +6,17 @@
  * (C) Copyright TOSHIBA CORPORATION 2004-2007
  * All Rights Reserved.
  */
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/platform_data/txx9/ndfmc.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/io.h>
+#include <freax/platform_data/txx9/ndfmc.h>
 
 /* TXX9 NDFMC Registers */
 #define TXX9_NDFDTR	0x00

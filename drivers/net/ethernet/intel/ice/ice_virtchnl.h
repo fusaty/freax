@@ -4,10 +4,10 @@
 #ifndef _ICE_VIRTCHNL_H_
 #define _ICE_VIRTCHNL_H_
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/if_ether.h>
-#include <linux/avf/virtchnl.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/if_ether.h>
+#include <freax/avf/virtchnl.h>
 #include "ice_vf_lib.h"
 
 /* Restrict number of MAC Addr and VLAN that non-trusted VF can programmed */

@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include "internal.h"
 
 static unsigned __read_mostly afs_volume_record_life = 60 * 60;

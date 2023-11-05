@@ -47,14 +47,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/watchdog.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <freax/interrupt.h>
+#include <freax/watchdog.h>
+#include <freax/cpumask.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/cpu.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
 
 #include <asm/mipsregs.h>
 #include <asm/uasm.h>

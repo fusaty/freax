@@ -11,18 +11,18 @@
  * Copyright (C) 2007-2008 Wind River Systems, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/signal.h>
-#include <linux/ptrace.h>
-#include <linux/kdebug.h>
+#include <freax/kernel.h>
+#include <freax/kgdb.h>
+#include <freax/smp.h>
+#include <freax/signal.h>
+#include <freax/ptrace.h>
+#include <freax/kdebug.h>
 #include <asm/current.h>
 #include <asm/processor.h>
 #include <asm/machdep.h>
 #include <asm/debug.h>
 #include <asm/code-patching.h>
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <asm/inst.h>
 
 /*
@@ -377,7 +377,7 @@ void kgdb_arch_set_pc(struct pt_regs *regs, unsigned long pc)
  */
 int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 			       char *remcom_in_buffer, char *remcom_out_buffer,
-			       struct pt_regs *linux_regs)
+			       struct pt_regs *freax_regs)
 {
 	char *ptr = &remcom_in_buffer[1];
 	unsigned long addr;
@@ -391,7 +391,7 @@ int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 	case 'c':
 		/* handle the optional parameter */
 		if (kgdb_hex2long(&ptr, &addr))
-			regs_set_return_ip(linux_regs, addr);
+			regs_set_return_ip(freax_regs, addr);
 
 		atomic_set(&kgdb_cpu_doing_single_step, -1);
 		/* set the trace bit if we're stepping */
@@ -399,9 +399,9 @@ int kgdb_arch_handle_exception(int vector, int signo, int err_code,
 #ifdef CONFIG_PPC_ADV_DEBUG_REGS
 			mtspr(SPRN_DBCR0,
 			      mfspr(SPRN_DBCR0) | DBCR0_IC | DBCR0_IDM);
-			regs_set_return_msr(linux_regs, linux_regs->msr | MSR_DE);
+			regs_set_return_msr(freax_regs, freax_regs->msr | MSR_DE);
 #else
-			regs_set_return_msr(linux_regs, linux_regs->msr | MSR_SE);
+			regs_set_return_msr(freax_regs, freax_regs->msr | MSR_SE);
 #endif
 			atomic_set(&kgdb_cpu_doing_single_step,
 				   raw_smp_processor_id());

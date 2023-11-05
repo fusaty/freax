@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VMSTAT_H
-#define _LINUX_VMSTAT_H
+#ifndef _freax_VMSTAT_H
+#define _freax_VMSTAT_H
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/mmzone.h>
-#include <linux/vm_event_item.h>
-#include <linux/atomic.h>
-#include <linux/static_key.h>
-#include <linux/mmdebug.h>
+#include <freax/types.h>
+#include <freax/percpu.h>
+#include <freax/mmzone.h>
+#include <freax/vm_event_item.h>
+#include <freax/atomic.h>
+#include <freax/static_key.h>
+#include <freax/mmdebug.h>
 
 extern int sysctl_stat_interval;
 
@@ -656,4 +656,4 @@ static inline void lruvec_stat_sub_folio(struct folio *folio,
 {
 	lruvec_stat_mod_folio(folio, idx, -folio_nr_pages(folio));
 }
-#endif /* _LINUX_VMSTAT_H */
+#endif /* _freax_VMSTAT_H */

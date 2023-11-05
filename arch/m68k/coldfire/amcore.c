@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dm9000.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/dm9000.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/i2c.h>
 
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

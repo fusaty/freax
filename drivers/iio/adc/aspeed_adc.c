@@ -12,25 +12,25 @@
  * clock period = period of PCLK * 2 * (ADC0C[15:0] + 1)
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iopoll.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/iopoll.h>
 
 #define ASPEED_RESOLUTION_BITS		10
 #define ASPEED_CLOCKS_PER_SAMPLE	12

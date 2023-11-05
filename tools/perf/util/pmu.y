@@ -9,9 +9,9 @@
 #define YYDEBUG 1
 #endif
 
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
+#include <freax/compiler.h>
+#include <freax/list.h>
+#include <freax/bitmap.h>
 #include <string.h>
 #include "pmu.h"
 #include "pmu-bison.h"

@@ -7,8 +7,8 @@
 #ifndef _MESON_AXG_TDM_H
 #define _MESON_AXG_TDM_H
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

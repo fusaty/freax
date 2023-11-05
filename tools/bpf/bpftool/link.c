@@ -2,10 +2,10 @@
 /* Copyright (C) 2020 Facebook */
 
 #include <errno.h>
-#include <linux/err.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_arp.h>
-#include <linux/perf_event.h>
+#include <freax/err.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_arp.h>
+#include <freax/perf_event.h>
 #include <net/if.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -280,7 +280,7 @@ show_kprobe_multi_json(struct bpf_link_info *info, json_writer_t *wtr)
 		jsonw_start_object(json_wtr);
 		jsonw_uint_field(json_wtr, "addr", dd.sym_mapping[i].address);
 		jsonw_string_field(json_wtr, "func", dd.sym_mapping[i].name);
-		/* Print null if it is vmlinux */
+		/* Print null if it is vmfreax */
 		if (dd.sym_mapping[i].module[0] == '\0') {
 			jsonw_name(json_wtr, "module");
 			jsonw_null(json_wtr);

@@ -15,14 +15,14 @@
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/cpufeature.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/xts.h>
 #include <asm/cpacf.h>

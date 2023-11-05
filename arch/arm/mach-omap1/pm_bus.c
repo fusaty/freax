@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2010 Texas Instruments, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_clock.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/clk.h>
+#include <freax/err.h>
 
 #include "soc.h"
 

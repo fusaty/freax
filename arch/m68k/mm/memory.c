@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/memory.c
+ *  freax/arch/m68k/mm/memory.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/gfp.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/efi.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/time.h>
+#include <freax/types.h>
+#include <freax/efi.h>
+#include <freax/slab.h>
+#include <freax/memblock.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
 
 #include <asm/e820/api.h>
 #include <asm/efi.h>
@@ -447,9 +447,9 @@ void __init efi_free_boot_services(void)
 		 * try to manually allocate the trampoline if needed.
 		 *
 		 * I've seen this on a Dell XPS 13 9350 with firmware
-		 * 1.4.4 with SGX enabled booting Linux via Fedora 24's
+		 * 1.4.4 with SGX enabled booting freax via Fedora 24's
 		 * grub2-efi on a hard disk.  (And no, I don't know why
-		 * this happened, but Linux should still try to boot rather
+		 * this happened, but freax should still try to boot rather
 		 * panicking early.)
 		 */
 		rm_size = real_mode_size_needed();

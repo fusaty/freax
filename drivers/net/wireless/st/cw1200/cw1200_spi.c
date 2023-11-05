@@ -10,19 +10,19 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/gpio.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
 #include <net/mac80211.h>
 
-#include <linux/spi/spi.h>
-#include <linux/device.h>
+#include <freax/spi/spi.h>
+#include <freax/device.h>
 
 #include "cw1200.h"
 #include "hwbus.h"
-#include <linux/platform_data/net-cw1200.h>
+#include <freax/platform_data/net-cw1200.h>
 #include "hwio.h"
 
 MODULE_AUTHOR("Solomon Peachy <speachy@sagrad.com>");

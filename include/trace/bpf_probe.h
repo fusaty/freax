@@ -12,7 +12,7 @@
 #undef __perf_task
 #define __perf_task(t)	(t)
 
-#include <linux/args.h>
+#include <freax/args.h>
 
 /* cast any integer, pointer, or small struct to u64 */
 #define UINTTYPE(size) \

@@ -3,7 +3,7 @@
 #ifndef __LIBBPF_ZIP_H
 #define __LIBBPF_ZIP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Represents an open zip archive.
  * Only basic ZIP files are supported, in particular the following are not

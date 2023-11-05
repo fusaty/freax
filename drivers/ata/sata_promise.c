@@ -4,7 +4,7 @@
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
  *		    Mikael Pettersson
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy freax-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.
@@ -15,18 +15,18 @@
  *  Hardware information only available under NDA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include "sata_promise.h"
 
 #define DRV_NAME	"sata_promise"

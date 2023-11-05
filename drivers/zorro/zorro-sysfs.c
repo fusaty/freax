@@ -11,10 +11,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/zorro.h>
-#include <linux/stat.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/zorro.h>
+#include <freax/stat.h>
+#include <freax/string.h>
 
 #include <asm/byteorder.h>
 

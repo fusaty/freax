@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * attrib.c - NTFS attribute operations.  Part of the Linux-NTFS project.
+ * attrib.c - NTFS attribute operations.  Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2002 Richard Russon
  */
 
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
+#include <freax/buffer_head.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
+#include <freax/writeback.h>
 
 #include "attrib.h"
 #include "debug.h"

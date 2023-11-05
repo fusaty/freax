@@ -12,16 +12,16 @@
  * Specification version 2.4.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/cper.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/printk.h>
-#include <linux/bcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/cper.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
+#include <freax/pci.h>
+#include <freax/aer.h>
+#include <freax/printk.h>
+#include <freax/bcd.h>
 #include <acpi/ghes.h>
 #include <ras/ras_event.h>
 #include "cper_cxl.h"

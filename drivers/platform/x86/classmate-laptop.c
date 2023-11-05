@@ -4,14 +4,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/rfkill.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/input.h>
+#include <freax/rfkill.h>
 
 MODULE_LICENSE("GPL");
 

@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "rvu.h"
 #include "cgx.h"

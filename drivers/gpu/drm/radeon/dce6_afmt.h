@@ -1,4 +1,4 @@
-/* dce6_afmt.h -- Private header for radeon driver -*- linux-c -*-
+/* dce6_afmt.h -- Private header for radeon driver -*- freax-c -*-
  *
  * Copyright 2013 Advanced Micro Devices, Inc.
  *

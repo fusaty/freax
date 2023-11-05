@@ -6,7 +6,7 @@
 #ifndef FIMC_LITE_REG_H_
 #define FIMC_LITE_REG_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "fimc-lite.h"
 

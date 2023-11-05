@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* FIXME
- * move this to include/linux/mod_devicetable.h when merging
+ * move this to include/freax/mod_devicetable.h when merging
  */
 
-#ifndef __LINUX_GREYBUS_ID_H
-#define __LINUX_GREYBUS_ID_H
+#ifndef __freax_GREYBUS_ID_H
+#define __freax_GREYBUS_ID_H
 
-#include <linux/types.h>
-#include <linux/mod_devicetable.h>
+#include <freax/types.h>
+#include <freax/mod_devicetable.h>
 
 
 struct greybus_bundle_id {
@@ -24,4 +24,4 @@ struct greybus_bundle_id {
 #define GREYBUS_ID_MATCH_PRODUCT	BIT(1)
 #define GREYBUS_ID_MATCH_CLASS		BIT(2)
 
-#endif /* __LINUX_GREYBUS_ID_H */
+#endif /* __freax_GREYBUS_ID_H */

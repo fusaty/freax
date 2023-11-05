@@ -12,25 +12,25 @@
 #ifndef _DEVICE_H_
 #define _DEVICE_H_
 
-#include <linux/dev_printk.h>
-#include <linux/energy_model.h>
-#include <linux/ioport.h>
-#include <linux/kobject.h>
-#include <linux/klist.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/atomic.h>
-#include <linux/uidgid.h>
-#include <linux/gfp.h>
-#include <linux/overflow.h>
-#include <linux/device/bus.h>
-#include <linux/device/class.h>
-#include <linux/device/driver.h>
-#include <linux/cleanup.h>
+#include <freax/dev_printk.h>
+#include <freax/energy_model.h>
+#include <freax/ioport.h>
+#include <freax/kobject.h>
+#include <freax/klist.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/atomic.h>
+#include <freax/uidgid.h>
+#include <freax/gfp.h>
+#include <freax/overflow.h>
+#include <freax/device/bus.h>
+#include <freax/device/class.h>
+#include <freax/device/driver.h>
+#include <freax/cleanup.h>
 #include <asm/device.h>
 
 struct device;
@@ -620,7 +620,7 @@ struct device_physical_location {
  * @driver:	Which driver has allocated this
  * @platform_data: Platform data specific to the device.
  * 		Example: For devices on custom boards, as typical of embedded
- * 		and SOC based hardware, Linux often uses platform_data to point
+ * 		and SOC based hardware, freax often uses platform_data to point
  * 		to board-specific structures describing devices and how they
  * 		are wired.  That can include what ports are available, chip
  * 		variants, which GPIO pins act in what additional roles, and so
@@ -694,7 +694,7 @@ struct device_physical_location {
  *		for dma allocations.  This flag is managed by the dma ops
  *		instance from ->dma_supported.
  *
- * At the lowest level, every device in a Linux system is represented by an
+ * At the lowest level, every device in a freax system is represented by an
  * instance of struct device. The device structure contains the information
  * that the device model core needs to model the system. Most subsystems,
  * however, track additional information about the devices they host. As a
@@ -848,7 +848,7 @@ static inline bool device_iommu_mapped(struct device *dev)
 }
 
 /* Get the wakeup routines, which depend on struct device */
-#include <linux/pm_wakeup.h>
+#include <freax/pm_wakeup.h>
 
 /**
  * dev_name - Return a device's name.

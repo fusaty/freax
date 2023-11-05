@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Stowaway keyboard driver for Linux
+ * Stowaway keyboard driver for freax
  */
 
 /*
  *  Copyright (c) 2006 Marek Vasut
  *
- *  Based on Newton keyboard driver for Linux
+ *  Based on Newton keyboard driver for freax
  *  by Justin Cormack
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"Stowaway keyboard driver"
 

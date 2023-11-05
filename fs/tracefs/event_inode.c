@@ -14,14 +14,14 @@
  *  inodes/dentries in a just-in-time (JIT) manner. The eventfs will clean up
  *  and delete the inodes/dentries when they are no longer referenced.
  */
-#include <linux/fsnotify.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/tracefs.h>
-#include <linux/kref.h>
-#include <linux/delay.h>
+#include <freax/fsnotify.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/workqueue.h>
+#include <freax/security.h>
+#include <freax/tracefs.h>
+#include <freax/kref.h>
+#include <freax/delay.h>
 #include "internal.h"
 
 /*

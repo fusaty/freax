@@ -9,13 +9,13 @@
  * Portions derived from Cryptoapi, by Alexander Kjeldaas <astor@fast.no>
  * and Nettle, by Niels Möller.
  */
-#ifndef _LINUX_CRYPTO_H
-#define _LINUX_CRYPTO_H
+#ifndef _freax_CRYPTO_H
+#define _freax_CRYPTO_H
 
-#include <linux/completion.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/refcount.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 /*
  * Algorithm masks and types.
@@ -262,7 +262,7 @@ struct compress_alg {
 
 /**
  * struct crypto_alg - definition of a cryptograpic cipher algorithm
- * @cra_flags: Flags describing this transformation. See include/linux/crypto.h
+ * @cra_flags: Flags describing this transformation. See include/freax/crypto.h
  *	       CRYPTO_ALG_* flags for the flags which go in here. Those are
  *	       used for fine-tuning the description of the transformation
  *	       algorithm.
@@ -540,5 +540,5 @@ int crypto_comp_decompress(struct crypto_comp *tfm,
 			   const u8 *src, unsigned int slen,
 			   u8 *dst, unsigned int *dlen);
 
-#endif	/* _LINUX_CRYPTO_H */
+#endif	/* _freax_CRYPTO_H */
 

@@ -5,16 +5,16 @@
  * Copyright (c) 2016 Alexandre Belloni
  */
 
-#include <linux/err.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/iio/consumer.h>
+#include <freax/iio/types.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 struct adc_keys_button {
 	u32 voltage;
@@ -89,9 +89,9 @@ static int adc_keys_load_keymap(struct device *dev, struct adc_keys_state *st)
 		}
 		map[i].voltage /= 1000;
 
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "freax,code",
 					     &map[i].keycode)) {
-			dev_err(dev, "Key with invalid or missing linux,code\n");
+			dev_err(dev, "Key with invalid or missing freax,code\n");
 			fwnode_handle_put(child);
 			return -EINVAL;
 		}

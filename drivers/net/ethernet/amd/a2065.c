@@ -1,7 +1,7 @@
 /*
- * Amiga Linux/68k A2065 Ethernet Driver
+ * Amiga freax/68k A2065 Ethernet Driver
  *
- * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@linux-m68k.org>
+ * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@freax-m68k.org>
  *
  * Fixes and tips by:
  *	- Janos Farkas (CHEXUM@sparta.banki.hu)
@@ -12,11 +12,11 @@
  *
  * This program is based on
  *
- *	ariadne.?:	Amiga Linux/68k Ariadne Ethernet Driver
+ *	ariadne.?:	Amiga freax/68k Ariadne Ethernet Driver
  *			(C) Copyright 1995 by Geert Uytterhoeven,
  *                                            Peter De Schrijver
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for freax.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -26,7 +26,7 @@
  * ----------------------------------------------------------------------------
  *
  * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of the Linux
+ * License.  See the file COPYING in the main directory of the freax
  * distribution for more details.
  *
  * ----------------------------------------------------------------------------
@@ -42,20 +42,20 @@
 /*#define DEBUG*/
 /*#define TEST_HITS*/
 
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/crc32.h>
+#include <freax/zorro.h>
+#include <freax/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>

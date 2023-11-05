@@ -9,9 +9,9 @@
  *    Copyright (C) 1991, 1997, 2003 Free Software Foundation, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/uaccess.h>
 
 #define get_user_space()	mfsp(SR_USER)
 #define get_kernel_space()	SR_KERNEL

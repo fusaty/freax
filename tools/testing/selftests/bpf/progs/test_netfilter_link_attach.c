@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_helpers.h>
 
 #define NF_ACCEPT 1

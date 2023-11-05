@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #define _GNU_SOURCE
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <asm/barrier.h>
 #include <test_progs.h>
 #include <sys/mman.h>
@@ -10,8 +10,8 @@
 #include <signal.h>
 #include <pthread.h>
 #include <sys/sysinfo.h>
-#include <linux/perf_event.h>
-#include <linux/ring_buffer.h>
+#include <freax/perf_event.h>
+#include <freax/ring_buffer.h>
 #include "test_ringbuf.lskel.h"
 #include "test_ringbuf_map_key.lskel.h"
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/serial_8250.h>
+#include <freax/platform_device.h>
 #include <asm/bootinfo.h>
 
 #include <ath25_platform.h>

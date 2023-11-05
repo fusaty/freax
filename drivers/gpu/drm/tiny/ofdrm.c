@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/of_address.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic.h>

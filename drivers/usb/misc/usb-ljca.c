@@ -5,18 +5,18 @@
  * Copyright (c) 2023, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/dev_printk.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/ljca.h>
+#include <freax/acpi.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/dev_printk.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/usb.h>
+#include <freax/usb/ljca.h>
 
 #include <asm/unaligned.h>
 

@@ -6,11 +6,11 @@
  *  Copyright (C) 2009-2011 Gabor Juhos <juhosg@openwrt.org>
  */
 
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
 #include <asm/mach-ath79/ath79.h>
 #include <asm/mach-ath79/ar71xx_regs.h>
 

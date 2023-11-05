@@ -6,18 +6,18 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_data/x86/apple.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "ctl.h"
 #include "nhi_regs.h"

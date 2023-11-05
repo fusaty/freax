@@ -6,10 +6,10 @@
 //
 // Author: James Schulman <james.schulman@cirrus.com>
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #include "cs35l45.h"
 

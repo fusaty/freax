@@ -2,23 +2,23 @@
 /*
  * Driver for the OV7251 camera sensor.
  *
- * Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2017-2018, Linaro Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-subdev.h>

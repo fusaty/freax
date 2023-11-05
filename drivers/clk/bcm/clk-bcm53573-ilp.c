@@ -3,14 +3,14 @@
  * Copyright (C) 2016 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define PMU_XTAL_FREQ_RATIO			0x66c
 #define  XTAL_ALP_PER_4ILP			0x00001fff

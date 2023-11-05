@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <net/genetlink.h>
 #include <net/netns/generic.h>
-#include <uapi/linux/genetlink.h>
+#include <uapi/freax/genetlink.h>
 #include "ila.h"
 
 static const struct nla_policy ila_nl_policy[ILA_ATTR_MAX + 1] = {

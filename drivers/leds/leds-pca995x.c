@@ -8,12 +8,12 @@
  * Copyright 2023 Marek Vasut
  */
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 /* Register definition */
 #define PCA995X_MODE1			0x00

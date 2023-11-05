@@ -9,19 +9,19 @@
  * Authors: Tobias Schramm <t.schramm@manjaro.org>
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/gfp.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/time.h>
-#include <linux/workqueue.h>
-#include <linux/devm-helpers.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/gfp.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/time.h>
+#include <freax/workqueue.h>
+#include <freax/devm-helpers.h>
 
 #define CW2015_SIZE_BATINFO		64
 

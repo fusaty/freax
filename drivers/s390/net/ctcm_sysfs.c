@@ -12,9 +12,9 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
 #include "ctcm_main.h"
 
 /*
@@ -156,7 +156,7 @@ static ssize_t ctcm_proto_store(struct device *dev,
 	rc = kstrtoint(buf, 0, &value);
 	if (rc ||
 	    !((value == CTCM_PROTO_S390)  ||
-	      (value == CTCM_PROTO_LINUX) ||
+	      (value == CTCM_PROTO_freax) ||
 	      (value == CTCM_PROTO_MPC) ||
 	      (value == CTCM_PROTO_OS390)))
 		return -EINVAL;

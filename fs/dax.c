@@ -3,28 +3,28 @@
  * fs/dax.c - Direct Access filesystem code
  * Copyright (c) 2013-2014 Intel Corporation
  * Author: Matthew Wilcox <matthew.r.wilcox@intel.com>
- * Author: Ross Zwisler <ross.zwisler@linux.intel.com>
+ * Author: Ross Zwisler <ross.zwisler@freax.intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/memcontrol.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/pagevec.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/vmstat.h>
-#include <linux/pfn_t.h>
-#include <linux/sizes.h>
-#include <linux/mmu_notifier.h>
-#include <linux/iomap.h>
-#include <linux/rmap.h>
+#include <freax/atomic.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/dax.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/memcontrol.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/pagevec.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/uio.h>
+#include <freax/vmstat.h>
+#include <freax/pfn_t.h>
+#include <freax/sizes.h>
+#include <freax/mmu_notifier.h>
+#include <freax/iomap.h>
+#include <freax/rmap.h>
 #include <asm/pgalloc.h>
 
 #define CREATE_TRACE_POINTS

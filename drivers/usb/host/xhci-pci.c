@@ -5,15 +5,15 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the freax EHCI driver.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/reset.h>
-#include <linux/suspend.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/reset.h>
+#include <freax/suspend.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

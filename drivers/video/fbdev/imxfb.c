@@ -11,31 +11,31 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	freax-arm-kernel@lists.arm.freax.org.uk
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/lcd.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/cpufreq.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/lcd.h>
+#include <freax/math64.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
 
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

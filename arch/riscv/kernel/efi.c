@@ -4,8 +4,8 @@
  * Adapted from arch/arm64/kernel/efi.c
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
+#include <freax/efi.h>
+#include <freax/init.h>
 
 #include <asm/efi.h>
 #include <asm/pgtable.h>

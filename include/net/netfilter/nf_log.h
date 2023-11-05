@@ -2,8 +2,8 @@
 #ifndef _NF_LOG_H
 #define _NF_LOG_H
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_log.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_log.h>
 
 /* Log tcp sequence, tcp options, ip options and uid owning local socket */
 #define NF_LOG_DEFAULT_MASK	0x0f

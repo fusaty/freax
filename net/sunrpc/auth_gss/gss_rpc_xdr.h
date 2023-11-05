@@ -5,21 +5,21 @@
  *  Copyright (C) 2012 Simo Sorce <simo@redhat.com>
  */
 
-#ifndef _LINUX_GSS_RPC_XDR_H
-#define _LINUX_GSS_RPC_XDR_H
+#ifndef _freax_GSS_RPC_XDR_H
+#define _freax_GSS_RPC_XDR_H
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/xprtsock.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 # define RPCDBG_FACILITY	RPCDBG_AUTH
 #endif
 
 #define LUCID_OPTION "exported_context_type"
-#define LUCID_VALUE  "linux_lucid_v1"
+#define LUCID_VALUE  "freax_lucid_v1"
 #define CREDS_OPTION "exported_creds_type"
-#define CREDS_VALUE  "linux_creds_v1"
+#define CREDS_VALUE  "freax_creds_v1"
 
 typedef struct xdr_netobj gssx_buffer;
 typedef struct xdr_netobj utf8string;
@@ -249,4 +249,4 @@ int gssx_dec_accept_sec_context(struct rpc_rqst *rqstp,
 #define GSSX_ARG_wrap_size_limit_sz 0
 #define GSSX_RES_wrap_size_limit_sz 0
 
-#endif /* _LINUX_GSS_RPC_XDR_H */
+#endif /* _freax_GSS_RPC_XDR_H */

@@ -12,7 +12,7 @@
 #ifndef HW_ATL_LLH_H
 #define HW_ATL_LLH_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct aq_hw_s;
 

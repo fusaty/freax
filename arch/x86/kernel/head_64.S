@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/x86/kernel/head_64.S -- start in 32bit and switch to 64bit
+ *  freax/arch/x86/kernel/head_64.S -- start in 32bit and switch to 64bit
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  *  Copyright (C) 2000 Pavel Machek <pavel@suse.cz>
@@ -9,11 +9,11 @@
  *  Copyright (C) 2005 Eric Biederman <ebiederm@xmission.com>
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
+#include <freax/threads.h>
+#include <freax/init.h>
+#include <freax/pgtable.h>
 #include <asm/segment.h>
 #include <asm/page.h>
 #include <asm/msr.h>

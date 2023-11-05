@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 // Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 
-#include <linux/tc_act/tc_csum.h>
+#include <freax/tc_act/tc_csum.h>
 #include "act.h"
 #include "en/tc_priv.h"
 

@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for freax kernel debugging
 #
 #  load kernel and module symbols
 #
@@ -15,7 +15,7 @@ import gdb
 import os
 import re
 
-from linux import modules, utils, constants
+from freax import modules, utils, constants
 
 
 if hasattr(gdb, 'Breakpoint'):
@@ -54,9 +54,9 @@ if hasattr(gdb, 'Breakpoint'):
 
 
 class LxSymbols(gdb.Command):
-    """(Re-)load symbols of Linux kernel and currently loaded modules.
+    """(Re-)load symbols of freax kernel and currently loaded modules.
 
-The kernel (vmlinux) is taken from the current working directly. Modules (.ko)
+The kernel (vmfreax) is taken from the current working directly. Modules (.ko)
 are scanned recursively, starting in the same directory. Optionally, the module
 search path can be extended by a space separated list of paths passed to the
 lx-symbols command."""
@@ -139,7 +139,7 @@ lx-symbols command."""
             gdb.write("no module object found for '{0}'\n".format(module_name))
 
     def load_all_symbols(self):
-        gdb.write("loading vmlinux\n")
+        gdb.write("loading vmfreax\n")
 
         # Dropping symbols will disable all breakpoints. So save their states
         # and restore them afterward.
@@ -148,14 +148,14 @@ lx-symbols command."""
             for bp in gdb.breakpoints():
                 saved_states.append({'breakpoint': bp, 'enabled': bp.enabled})
 
-        # drop all current symbols and reload vmlinux
-        orig_vmlinux = 'vmlinux'
+        # drop all current symbols and reload vmfreax
+        orig_vmfreax = 'vmfreax'
         for obj in gdb.objfiles():
-            if (obj.filename.endswith('vmlinux') or
-                obj.filename.endswith('vmlinux.debug')):
-                orig_vmlinux = obj.filename
+            if (obj.filename.endswith('vmfreax') or
+                obj.filename.endswith('vmfreax.debug')):
+                orig_vmfreax = obj.filename
         gdb.execute("symbol-file", to_string=True)
-        gdb.execute("symbol-file {0}".format(orig_vmlinux))
+        gdb.execute("symbol-file {0}".format(orig_vmfreax))
 
         self.loaded_modules = []
         module_list = modules.module_list()

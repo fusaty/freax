@@ -3,10 +3,10 @@
  * Copyright(c) 2015 - 2017 Intel Corporation.
  */
 
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
+#include <freax/firmware.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
 
 #include "hfi.h"
 #include "trace.h"
@@ -104,7 +104,7 @@ struct augmented_firmware_file {
 						sizeof(struct firmware_file))
 
 struct firmware_details {
-	/* Linux core piece */
+	/* freax core piece */
 	const struct firmware *fw;
 
 	struct css_header *css_header;

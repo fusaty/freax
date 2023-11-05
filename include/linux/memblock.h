@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_MEMBLOCK_H
-#define _LINUX_MEMBLOCK_H
+#ifndef _freax_MEMBLOCK_H
+#define _freax_MEMBLOCK_H
 
 /*
  * Logical memory blocks.
@@ -8,8 +8,8 @@
  * Copyright (C) 2001 Peter Bergner, IBM Corp.
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/mm.h>
 #include <asm/dma.h>
 
 extern unsigned long max_low_pfn;
@@ -611,4 +611,4 @@ static inline void memtest_report_meminfo(struct seq_file *m) { }
 #endif
 
 
-#endif /* _LINUX_MEMBLOCK_H */
+#endif /* _freax_MEMBLOCK_H */

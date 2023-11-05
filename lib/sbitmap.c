@@ -4,10 +4,10 @@
  * Copyright (C) 2013-2014 Jens Axboe
  */
 
-#include <linux/sched.h>
-#include <linux/random.h>
-#include <linux/sbitmap.h>
-#include <linux/seq_file.h>
+#include <freax/sched.h>
+#include <freax/random.h>
+#include <freax/sbitmap.h>
+#include <freax/seq_file.h>
 
 static int init_alloc_hint(struct sbitmap *sb, gfp_t flags)
 {

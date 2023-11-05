@@ -4,11 +4,11 @@
  * because MTRRs can span up to 40 bits (36bits on most modern x86)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/cc_platform.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/cc_platform.h>
 #include <asm/processor-flags.h>
 #include <asm/cacheinfo.h>
 #include <asm/cpufeature.h>

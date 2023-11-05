@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/led-class-flash.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/led-class-flash.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 #include <media/v4l2-flash-led-class.h>
 
 enum {
@@ -682,7 +682,7 @@ static int mt6360_init_isnk_properties(struct mt6360_led *led,
 
 	lcdev->max_brightness = val / step_uA;
 
-	fwnode_property_read_string(init_data->fwnode, "linux,default-trigger",
+	fwnode_property_read_string(init_data->fwnode, "freax,default-trigger",
 				    &lcdev->default_trigger);
 
 	return 0;

@@ -4,20 +4,20 @@
  * Driver to talk to a remote management controller on IPMB.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/semaphore.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/ipmi_msgdefs.h>
-#include <linux/ipmi_smi.h>
+#include <freax/acpi.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/semaphore.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/ipmi_msgdefs.h>
+#include <freax/ipmi_smi.h>
 
 #define DEVICE_NAME "ipmi-ipmb"
 

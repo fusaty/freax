@@ -8,17 +8,17 @@
  *	    Ankur Srivastava <sankurece@gmail.com> : DS1343 Nvram Support
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/spi/spi.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
+#include <freax/pm.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/slab.h>
 
 #define DALLAS_MAXIM_DS1343	0
 #define DALLAS_MAXIM_DS1344	1

@@ -6,12 +6,12 @@
  * Author(s): Gerald Schaefer <gerald.schaefer@de.ibm.com>
  */
 
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/iommu-helper.h>
-#include <linux/sizes.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
+#include <freax/pci.h>
+#include <freax/iommu.h>
+#include <freax/iommu-helper.h>
+#include <freax/sizes.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
 #include <asm/pci_dma.h>
 
 static const struct iommu_ops s390_iommu_ops;

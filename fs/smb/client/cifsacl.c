@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/keyctl.h>
-#include <linux/key-type.h>
-#include <uapi/linux/posix_acl.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/keyctl.h>
+#include <freax/key-type.h>
+#include <uapi/freax/posix_acl.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
 #include <keys/user-type.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -343,8 +343,8 @@ sid_to_id(struct cifs_sb_info *cifs_sb, struct cifs_sid *psid,
 	struct key *sidkey;
 	char *sidstr;
 	const struct cred *saved_cred;
-	kuid_t fuid = cifs_sb->ctx->linux_uid;
-	kgid_t fgid = cifs_sb->ctx->linux_gid;
+	kuid_t fuid = cifs_sb->ctx->freax_uid;
+	kgid_t fgid = cifs_sb->ctx->freax_gid;
 
 	/*
 	 * If we have too many subauthorities, then something is really wrong.
@@ -443,7 +443,7 @@ out_revert_creds:
 
 	/*
 	 * Note that we return 0 here unconditionally. If the mapping
-	 * fails then we just fall back to using the ctx->linux_uid/linux_gid.
+	 * fails then we just fall back to using the ctx->freax_uid/freax_gid.
 	 */
 got_valid_id:
 	rc = 0;

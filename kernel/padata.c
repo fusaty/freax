@@ -11,17 +11,17 @@
  * Author: Daniel Jordan <daniel.m.jordan@oracle.com>
  */
 
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/padata.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/rcupdate.h>
+#include <freax/completion.h>
+#include <freax/export.h>
+#include <freax/cpumask.h>
+#include <freax/err.h>
+#include <freax/cpu.h>
+#include <freax/padata.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/rcupdate.h>
 
 #define	PADATA_WORK_ONSTACK	1	/* Work's memory is on stack */
 

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/handshake.yaml */
 /* YNL-GEN user header */
 
-#ifndef _LINUX_HANDSHAKE_GEN_H
-#define _LINUX_HANDSHAKE_GEN_H
+#ifndef _freax_HANDSHAKE_GEN_H
+#define _freax_HANDSHAKE_GEN_H
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/types.h>
-#include <linux/handshake.h>
+#include <freax/types.h>
+#include <freax/handshake.h>
 
 struct ynl_sock;
 
@@ -142,4 +142,4 @@ __handshake_done_req_set_remote_auth(struct handshake_done_req *req,
  */
 int handshake_done(struct ynl_sock *ys, struct handshake_done_req *req);
 
-#endif /* _LINUX_HANDSHAKE_GEN_H */
+#endif /* _freax_HANDSHAKE_GEN_H */

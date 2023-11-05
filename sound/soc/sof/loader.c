@@ -5,12 +5,12 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 // Generic firmware loader.
 //
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include "sof-priv.h"
 #include "ops.h"
 

@@ -21,9 +21,9 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 #include "atom.h"
 #include "ppatomctrl.h"
 #include "atombios.h"

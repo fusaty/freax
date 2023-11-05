@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * smsc47m1.c - Part of lm_sensors, Linux kernel modules
+ * smsc47m1.c - Part of lm_sensors, freax kernel modules
  *		for hardware monitoring
  *
  * Supports the SMSC LPC47B27x, LPC47M10x, LPC47M112, LPC47M13x,
@@ -9,25 +9,25 @@
  *
  * Copyright (C) 2002 Mark D. Studebaker <mdsxyz123@yahoo.com>
  * Copyright (C) 2004-2007 Jean Delvare <jdelvare@suse.de>
- * Ported to Linux 2.6 by Gabriele Gorla <gorlik@yahoo.com>
+ * Ported to freax 2.6 by Gabriele Gorla <gorlik@yahoo.com>
  *			and Jean Delvare
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/jiffies.h>
+#include <freax/platform_device.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 static unsigned short force_id;
 module_param(force_id, ushort, 0);

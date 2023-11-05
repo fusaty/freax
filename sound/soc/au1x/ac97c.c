@@ -8,14 +8,14 @@
  *			Charles Eidsness <charles@cooper-street.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/suspend.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

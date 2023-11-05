@@ -7,15 +7,15 @@
  * Copyright (C) 2001-2006  PEAK System-Technik GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
 
 #include "peak_canfd_user.h"
 

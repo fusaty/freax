@@ -2,7 +2,7 @@
 /*
  * Driver for the Apple SoC PWM controller
  *
- * Copyright The Asahi Linux Contributors
+ * Copyright The Asahi freax Contributors
  *
  * Limitations:
  * - The writes to cycle registers are shadowed until a write to
@@ -12,13 +12,13 @@
  * - When APPLE_PWM_CTRL is set to 0, the output is constant low
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/math64.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/math64.h>
 
 #define APPLE_PWM_CTRL        0x00
 #define APPLE_PWM_ON_CYCLES   0x1c

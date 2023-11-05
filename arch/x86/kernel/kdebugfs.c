@@ -5,14 +5,14 @@
  * Copyright (C) 2007, Intel Corp.
  *	Huang Ying <ying.huang@intel.com>
  */
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/stat.h>
+#include <freax/io.h>
+#include <freax/mm.h>
 
 #include <asm/setup.h>
 

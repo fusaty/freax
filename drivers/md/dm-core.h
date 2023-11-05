@@ -10,11 +10,11 @@
 #ifndef DM_CORE_INTERNAL_H
 #define DM_CORE_INTERNAL_H
 
-#include <linux/kthread.h>
-#include <linux/ktime.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-crypto-profile.h>
-#include <linux/jump_label.h>
+#include <freax/kthread.h>
+#include <freax/ktime.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-crypto-profile.h>
+#include <freax/jump_label.h>
 
 #include <trace/events/block.h>
 

@@ -3,16 +3,16 @@
  * OPAL hypervisor Maintenance interrupt handling support in PowerNV.
  *
  * Copyright 2014 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@freax.vnet.ibm.com>
  */
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 
 #include <asm/opal.h>
 #include <asm/cputable.h>

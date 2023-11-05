@@ -21,9 +21,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/bsearch.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/bsearch.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"
 #include "kfd_pm4_headers_vi.h"

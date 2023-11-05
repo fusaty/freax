@@ -9,11 +9,11 @@
  * Dan Scally <djrscally@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/property.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dmi.h>
+#include <freax/property.h>
 
 #include <media/ipu-bridge.h>
 #include <media/v4l2-fwnode.h>

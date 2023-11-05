@@ -4,7 +4,7 @@
 #ifndef __NFP_NIC_H__
 #define __NFP_NIC_H__ 1
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #ifdef CONFIG_DCB
 /* DCB feature definitions */

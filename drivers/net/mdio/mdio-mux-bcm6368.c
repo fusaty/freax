@@ -5,17 +5,17 @@
  * Copyright (C) 2021 Álvaro Fernández Rojas <noltari@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mdio-mux.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
 
 #define MDIOC_REG		0x0
 #define MDIOC_EXT_MASK		BIT(16)

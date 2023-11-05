@@ -6,11 +6,11 @@
 #ifndef PINCTRL_ASPEED
 #define PINCTRL_ASPEED
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/regmap.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/regmap.h>
 
 #include "pinmux-aspeed.h"
 

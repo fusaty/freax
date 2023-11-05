@@ -8,28 +8,28 @@
  * Copyright (C) 2007-2012 Florian Fainelli <f.fainelli@gmail.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/crc32.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/uaccess.h>
+#include <freax/phy.h>
 
 #include <asm/processor.h>
 

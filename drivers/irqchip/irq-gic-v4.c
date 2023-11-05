@@ -4,13 +4,13 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/sched.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/msi.h>
+#include <freax/sched.h>
 
-#include <linux/irqchip/arm-gic-v4.h>
+#include <freax/irqchip/arm-gic-v4.h>
 
 /*
  * WARNING: The blurb below assumes that you understand the
@@ -27,7 +27,7 @@
  * In order to achieve a modicum of isolation, we try to hide most of
  * the GICv4 "stuff" behind normal irqchip operations:
  *
- * - Any guest-visible VLPI is backed by a Linux interrupt (and a
+ * - Any guest-visible VLPI is backed by a freax interrupt (and a
  *   physical LPI which gets unmapped when the guest maps the
  *   VLPI). This allows the same DevID/EventID pair to be either
  *   mapped to the LPI (host) or the VLPI (guest). Note that this is

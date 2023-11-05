@@ -6,9 +6,9 @@
 #ifndef __MTD_TRANS_H__
 #define __MTD_TRANS_H__
 
-#include <linux/mutex.h>
-#include <linux/kref.h>
-#include <linux/sysfs.h>
+#include <freax/mutex.h>
+#include <freax/kref.h>
+#include <freax/sysfs.h>
 
 struct hd_geometry;
 struct mtd_info;

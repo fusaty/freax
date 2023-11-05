@@ -8,15 +8,15 @@
  *	   Peter Griffin <peter.griffin@linaro.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/interrupt.h>
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/interrupt.h>
+#include <freax/remoteproc.h>
+#include <freax/slab.h>
 
 #include "st_fdma.h"
 

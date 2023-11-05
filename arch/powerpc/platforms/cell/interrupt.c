@@ -10,22 +10,22 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  *
  * TODO:
- * - Fix various assumptions related to HW CPU numbers vs. linux CPU numbers
+ * - Fix various assumptions related to HW CPU numbers vs. freax CPU numbers
  *   vs node numbers in the setup code
  * - Implement proper handling of maxcpus=1/2 (that is, routing of irqs from
  *   a non-active node to the active node)
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
-#include <linux/pgtable.h>
-#include <linux/of_address.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/export.h>
+#include <freax/percpu.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/kernel_stat.h>
+#include <freax/pgtable.h>
+#include <freax/of_address.h>
 
 #include <asm/io.h>
 #include <asm/ptrace.h>
@@ -274,7 +274,7 @@ static const struct irq_domain_ops iic_host_ops = {
 static void __init init_one_iic(unsigned int hw_cpu, unsigned long addr,
 				struct device_node *node)
 {
-	/* XXX FIXME: should locate the linux CPU number from the HW cpu
+	/* XXX FIXME: should locate the freax CPU number from the HW cpu
 	 * number properly. We are lucky for now
 	 */
 	struct iic *iic = &per_cpu(cpu_iic, hw_cpu);

@@ -6,21 +6,21 @@
  * Copyright (c) 2016, Microchip Technology Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_gpio.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
 
 /* SPI controller registers */
 struct pic32_spi_regs {

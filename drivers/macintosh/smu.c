@@ -18,28 +18,28 @@
  *    the userland interface
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/completion.h>
-#include <linux/miscdevice.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/dmapool.h>
+#include <freax/memblock.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/jiffies.h>
+#include <freax/interrupt.h>
+#include <freax/rtc.h>
+#include <freax/completion.h>
+#include <freax/miscdevice.h>
+#include <freax/delay.h>
+#include <freax/poll.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -47,7 +47,7 @@
 #include <asm/pmac_feature.h>
 #include <asm/smu.h>
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define VERSION "0.7"
 #define AUTHOR  "(c) 2005 Benjamin Herrenschmidt, IBM Corp."

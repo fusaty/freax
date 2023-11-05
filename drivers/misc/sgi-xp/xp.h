@@ -14,7 +14,7 @@
 #ifndef _DRIVERS_MISC_SGIXP_XP_H
 #define _DRIVERS_MISC_SGIXP_XP_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #if defined CONFIG_X86_UV
 #include <asm/uv/uv.h>

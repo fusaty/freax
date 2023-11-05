@@ -6,12 +6,12 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/pm.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/memblock.h>
+#include <freax/ioport.h>
+#include <freax/pm.h>
 #include <asm/bootinfo.h>
 #include <asm/time.h>
 #include <asm/reboot.h>

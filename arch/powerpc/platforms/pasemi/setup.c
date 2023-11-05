@@ -10,17 +10,17 @@
  * Based on arch/powerpc/platforms/maple/setup.c
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/irqdomain.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/console.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/gfp.h>
+#include <freax/irqdomain.h>
 
 #include <asm/iommu.h>
 #include <asm/machdep.h>

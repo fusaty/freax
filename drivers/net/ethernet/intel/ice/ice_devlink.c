@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020, Intel Corporation. */
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include "ice.h"
 #include "ice_lib.h"

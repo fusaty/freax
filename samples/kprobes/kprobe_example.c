@@ -12,9 +12,9 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/kprobes.h>
 
 static char symbol[KSYM_NAME_LEN] = "kernel_clone";
 module_param_string(symbol, symbol, KSYM_NAME_LEN, 0644);

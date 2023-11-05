@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2014 - 2020 Intel Corporation */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
 #include "adf_accel_devices.h"
 #include "adf_common_drv.h"
 

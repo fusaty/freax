@@ -5,20 +5,20 @@
  *	 JZ4740 SoC RTC driver
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/property.h>
-#include <linux/reboot.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/property.h>
+#include <freax/reboot.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #define JZ_REG_RTC_CTRL		0x00
 #define JZ_REG_RTC_SEC		0x04

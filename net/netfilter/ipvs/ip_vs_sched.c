@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              freax operating system.  IPVS is now implemented as a module
  *              over the Netfilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@freaxvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *
  * Changes:
@@ -15,12 +15,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
 #include <asm/string.h>
-#include <linux/kmod.h>
-#include <linux/sysctl.h>
+#include <freax/kmod.h>
+#include <freax/sysctl.h>
 
 #include <net/ip_vs.h>
 

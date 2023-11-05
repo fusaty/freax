@@ -50,17 +50,17 @@
 
 		key-power {
 			gpios = <&gpio6 RK_PA2 GPIO_ACTIVE_LOW>; /* GPIO6_A2 */
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};
 		key-volume-down {
 			gpios = <&gpio4 RK_PC5 GPIO_ACTIVE_LOW>; /* GPIO4_C5 */
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			label = "GPIO Key Vol-";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			debounce-interval = <100>;
 		};
 		/* VOL+ comes somehow thru the ADC */

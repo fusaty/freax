@@ -3,7 +3,7 @@
  *  Copyright 2007 Red Hat, Inc.
  *  by Peter Jones <pjones@redhat.com>
  *  Copyright 2007 IBM, Inc.
- *  by Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  by Konrad Rzeszutek <konradr@freax.vnet.ibm.com>
  *  Copyright 2008
  *  by Konrad Rzeszutek <ketuzsezr@darnok.org>
  *
@@ -13,7 +13,7 @@
 #ifndef ISCSI_IBFT_H
 #define ISCSI_IBFT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Physical location of iSCSI Boot Format Table.

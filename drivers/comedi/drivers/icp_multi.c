@@ -3,7 +3,7 @@
  * icp_multi.c
  * Comedi driver for Inova ICP_MULTI board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -34,9 +34,9 @@
  * 4 x 16-bit counters - not implemented
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/comedi/comedi_pci.h>
 
 #define ICP_MULTI_ADC_CSR	0x00	/* R/W: ADC command/status register */
 #define ICP_MULTI_ADC_CSR_ST	BIT(0)	/* Start ADC */

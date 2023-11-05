@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * This file contains miscellaneous low-level functions.
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  * Largely rewritten by Cort Dougan (cort@cs.nmt.edu)
  * and Paul Mackerras.
@@ -9,9 +9,9 @@
  * PPC64 updates by Dave Engebretsen (engebret@us.ibm.com)
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
-#include <linux/sys.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
+#include <freax/sys.h>
 #include <asm/unistd.h>
 #include <asm/errno.h>
 #include <asm/processor.h>

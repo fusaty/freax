@@ -3,7 +3,7 @@
  * Copyright (C) 2023 Linaro Ltd
  */
 
-#include <linux/soc/qcom/smd-rpm.h>
+#include <freax/soc/qcom/smd-rpm.h>
 
 #include "icc-rpm.h"
 

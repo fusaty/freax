@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/kbuild.h>
+#include <freax/kbuild.h>
 #include <nvhe/memory.h>
 #include <nvhe/pkvm.h>
 

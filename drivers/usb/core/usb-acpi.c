@@ -4,14 +4,14 @@
  *
  * Copyright 2012 Red Hat <mjg@redhat.com>
  */
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/usb/hcd.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/pci.h>
+#include <freax/usb/hcd.h>
 
 #include "hub.h"
 

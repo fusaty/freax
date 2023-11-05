@@ -7,13 +7,13 @@
  * Driver for the PWRficient onchip rng
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/hw_random.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 
 #define SDCRNG_CTL_REG			0x00
 #define   SDCRNG_CTL_FVLD_M		0x0000f000

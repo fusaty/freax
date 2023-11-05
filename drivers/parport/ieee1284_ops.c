@@ -15,11 +15,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/parport.h>
+#include <freax/delay.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
 
 #undef DEBUG /* undef me for production */
 

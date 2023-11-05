@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2018, Linaro Limited.
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
 #include <dt-bindings/sound/qcom,q6afe.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include "sdw.h"
 

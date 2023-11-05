@@ -5,17 +5,17 @@
  *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
  *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
  *  Copyright (C) 2002 - 2009  Paul Mundt
- *  Copyright (C) 2002  M. R. Brown  <mrbrown@linux-sh.org>
+ *  Copyright (C) 2002  M. R. Brown  <mrbrown@freax-sh.org>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/clockchips.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/rtc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/profile.h>
+#include <freax/timex.h>
+#include <freax/sched.h>
+#include <freax/clockchips.h>
+#include <freax/platform_device.h>
+#include <freax/smp.h>
+#include <freax/rtc.h>
 #include <asm/clock.h>
 #include <asm/rtc.h>
 #include <asm/platform_early.h>

@@ -8,10 +8,10 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_PINCONF_H
-#define __LINUX_PINCTRL_PINCONF_H
+#ifndef __freax_PINCTRL_PINCONF_H
+#define __freax_PINCTRL_PINCONF_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pinctrl_dev;
 struct seq_file;
@@ -64,4 +64,4 @@ struct pinconf_ops {
 					    unsigned long config);
 };
 
-#endif /* __LINUX_PINCTRL_PINCONF_H */
+#endif /* __freax_PINCTRL_PINCONF_H */

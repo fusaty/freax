@@ -3,17 +3,17 @@
  * polling/bitbanging SPI master controller driver utilities
  */
 
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
 
 #define SPI_BITBANG_CS_DELAY	100
 

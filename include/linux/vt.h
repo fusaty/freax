@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VT_H
-#define _LINUX_VT_H
+#ifndef _freax_VT_H
+#define _freax_VT_H
 
-#include <uapi/linux/vt.h>
+#include <uapi/freax/vt.h>
 
 
 /* Virtual Terminal events. */
@@ -25,4 +25,4 @@ static inline int vt_kmsg_redirect(int new)
 
 #endif
 
-#endif /* _LINUX_VT_H */
+#endif /* _freax_VT_H */

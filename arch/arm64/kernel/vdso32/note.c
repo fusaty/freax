@@ -6,10 +6,10 @@
  * Here we can supply some information useful to userland.
  */
 
-#include <linux/uts.h>
-#include <linux/version.h>
-#include <linux/elfnote.h>
-#include <linux/build-salt.h>
+#include <freax/uts.h>
+#include <freax/version.h>
+#include <freax/elfnote.h>
+#include <freax/build-salt.h>
 
-ELFNOTE32("Linux", 0, LINUX_VERSION_CODE);
+ELFNOTE32("freax", 0, freax_VERSION_CODE);
 BUILD_SALT;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  MachZ ZF-Logic Watchdog Timer driver for Linux
+ *  MachZ ZF-Logic Watchdog Timer driver for freax
  *
  *  The author does NOT admit liability nor provide warranty for
  *  any of this software. This material is provided "AS-IS" in
@@ -24,20 +24,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/fs.h>
+#include <freax/ioport.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 
 /* ports */

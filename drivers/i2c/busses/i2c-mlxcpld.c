@@ -5,15 +5,15 @@
  * Copyright (C) 2016-2020 Mellanox Technologies
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/mlxreg.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* General defines */
 #define MLXPLAT_CPLD_LPC_I2C_BASE_ADDR	0x2000

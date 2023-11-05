@@ -2,11 +2,11 @@
 #ifndef _FAT_H
 #define _FAT_H
 
-#include <linux/buffer_head.h>
-#include <linux/nls.h>
-#include <linux/hash.h>
-#include <linux/ratelimit.h>
-#include <linux/msdos_fs.h>
+#include <freax/buffer_head.h>
+#include <freax/nls.h>
+#include <freax/hash.h>
+#include <freax/ratelimit.h>
+#include <freax/msdos_fs.h>
 
 /*
  * vfat shortname flags

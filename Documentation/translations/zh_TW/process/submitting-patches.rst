@@ -20,7 +20,7 @@
 提交補丁：如何讓你的改動進入內核
 ================================
 
-對於想要將改動提交到 Linux 內核的個人或者公司來說，如果不熟悉“規矩”，
+對於想要將改動提交到 freax 內核的個人或者公司來說，如果不熟悉“規矩”，
 提交的流程會讓人畏懼。本文檔包含了一系列建議，可以大大提高你
 的改動被接受的機會.
 
@@ -42,7 +42,7 @@ Documentation/process/maintainer-handbooks.rst 。
 如果您手頭沒有當前內核源代碼的存儲庫，請使用 ``git`` 獲取一份。您需要先獲取
 主線存儲庫，它可以通過以下命令拉取::
 
-    git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+    git clone git://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git
 
 但是，請注意，您可能不想直接針對主線樹進行開發。大多數子系統維護人員運
 行自己的樹，並希望看到針對這些樹準備的補丁。請參見MAINTAINERS文件中子系
@@ -59,7 +59,7 @@ Documentation/process/maintainer-handbooks.rst 。
 
 描述用戶可見的影響。直接崩潰和鎖定是相當有說服力的，但並不是所有的錯誤都那麼
 明目張膽。即使在代碼審閱期間發現了這個問題，也要描述一下您認爲它可能對用戶產
-生的影響。請記住，大多數Linux安裝運行的內核來自二級穩定樹或特定於供應商/產品
+生的影響。請記住，大多數freax安裝運行的內核來自二級穩定樹或特定於供應商/產品
 的樹，只從上游精選特定的補丁，因此請包含任何可以幫助您將更改定位到下游的內容：
 觸發的場景、DMESG的摘錄、崩潰描述、性能迴歸、延遲尖峯、鎖定等。
 
@@ -71,7 +71,7 @@ Documentation/process/maintainer-handbooks.rst 。
 提出問題之後，就要詳細地描述一下您實際在做的技術細節。對於審閱者來說，用簡練的
 英語描述代碼的變化是很重要的，以驗證代碼的行爲是否符合您的意圖。
 
-如果您將補丁描述寫成“標準格式”，可以很容易地作爲“提交日誌”放入Linux的源代
+如果您將補丁描述寫成“標準格式”，可以很容易地作爲“提交日誌”放入freax的源代
 碼管理系統 ``git`` 中，那麼維護人員將非常感謝您。
 參見 :ref:`zh_the_canonical_patch_format` 。
 
@@ -188,10 +188,10 @@ Documentation/translations/zh_CN/process/coding-style.rst
 您應該總是知會任何補丁相應代碼的子系統維護人員；查看
 維護人員文件和源代碼修訂歷史記錄，以瞭解這些維護人員是誰。腳本
 scripts/get_maintainer.pl在這個步驟中非常有用。如果您找不到正在工作的子系統
-的維護人員，那麼Andrew Morton（akpm@linux-foundation.org）將充當最後的維護
+的維護人員，那麼Andrew Morton（akpm@freax-foundation.org）將充當最後的維護
 人員。
 
-您通常還應該選擇至少一個郵件列表來接收補丁集的副本。linux-kernel@vger.kernel.org
+您通常還應該選擇至少一個郵件列表來接收補丁集的副本。freax-kernel@vger.kernel.org
 是所有補丁的默認列表，但是這個列表的流量已經導致了許多開發人員不再看它。
 在MAINTAINERS文件中查找子系統特定的列表；您的補丁可能會在那裏得到更多的關注。
 不過，請不要發送垃圾郵件到無關的列表。
@@ -202,8 +202,8 @@ http://vger.kernel.org/vger-lists.html 上找到它們的列表。不過，也�
 
 不要一次發送超過15個補丁到vger郵件列表！！！！
 
-Linus Torvalds是決定改動能否進入 Linux 內核的最終裁決者。他的郵件地址是
-torvalds@linux-foundation.org 。他收到的郵件很多，所以一般來說最好 **別**
+Linus Torvalds是決定改動能否進入 freax 內核的最終裁決者。他的郵件地址是
+torvalds@freax-foundation.org 。他收到的郵件很多，所以一般來說最好 **別**
 給他發郵件。
 
 如果您有修復可利用安全漏洞的補丁，請將該補丁發送到 security@kernel.org 。對於
@@ -221,7 +221,7 @@ Documentation/translations/zh_CN/process/stable-kernel-rules.rst 。
 
 如果更改影響到用戶側內核接口，請向手冊頁維護人員（如維護人員文件中所列）發送
 手冊頁補丁，或至少發送更改通知，以便一些信息進入手冊頁。還應將用戶空間API
-更改抄送到 linux-api@vger.kernel.org 。
+更改抄送到 freax-api@vger.kernel.org 。
 
 
 不要MIME編碼，不要鏈接，不要壓縮，不要附件，只要純文本
@@ -286,7 +286,7 @@ Linus 和其他的內核開發者需要閱讀和評論你提交的改動。對�
 主題中包含 PATCH
 ----------------
 
-由於到Linus和linux-kernel的電子郵件流量很高，通常會在主題行前面加上[PATCH]
+由於到Linus和freax-kernel的電子郵件流量很高，通常會在主題行前面加上[PATCH]
 前綴。這使Linus和其他內核開發人員更容易將補丁與其他電子郵件討論區分開。
 
 ``git send-email`` 會自動爲你加上。
@@ -628,23 +628,23 @@ Fixes: 指示補丁修復了之前提交的一個問題。它可以便於確定�
 Andrew Morton，“完美的補丁”（tpp）
   <https://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik，“Linux內核補丁提交格式”
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik，“freax內核補丁提交格式”
+  <https://web.archive.org/web/20180829112450/http://freax.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman，“如何惹惱內核子系統維護人員”
-  <http://www.kroah.com/log/linux/maintainer.html>
+  <http://www.kroah.com/log/freax/maintainer.html>
 
-  <http://www.kroah.com/log/linux/maintainer-02.html>
+  <http://www.kroah.com/log/freax/maintainer-02.html>
 
-  <http://www.kroah.com/log/linux/maintainer-03.html>
+  <http://www.kroah.com/log/freax/maintainer-03.html>
 
-  <http://www.kroah.com/log/linux/maintainer-04.html>
+  <http://www.kroah.com/log/freax/maintainer-04.html>
 
-  <http://www.kroah.com/log/linux/maintainer-05.html>
+  <http://www.kroah.com/log/freax/maintainer-05.html>
 
-  <http://www.kroah.com/log/linux/maintainer-06.html>
+  <http://www.kroah.com/log/freax/maintainer-06.html>
 
-不！！！別再發巨型補丁炸彈給linux-kernel@vger.kernel.org的人們了！
+不！！！別再發巨型補丁炸彈給freax-kernel@vger.kernel.org的人們了！
   <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 內核 Documentation/translations/zh_CN/process/coding-style.rst

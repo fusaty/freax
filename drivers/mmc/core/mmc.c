@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/mmc.c
+ *  freax/drivers/mmc/core/mmc.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
  *  MMCv4 support Copyright (C) 2006 Philip Langdale, All Rights Reserved.
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
-#include <linux/sysfs.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/pm_runtime.h>
+#include <freax/random.h>
+#include <freax/sysfs.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/mmc.h>
 
 #include "core.h"
 #include "card.h"

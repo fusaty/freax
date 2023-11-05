@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2022 NXP
  */
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <net/rtnetlink.h>
 
 #include "netlink.h"

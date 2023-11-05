@@ -29,25 +29,25 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
+#include <freax/module.h>
+#include <freax/io.h>
 
 #include <asm/mach-types.h>
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/soc/ti/omap1-mux.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-soc.h>
+#include <freax/soc/ti/omap1-mux.h>
 
 /* FIXME address is now a platform device resource,
  * and irqs should show there too...

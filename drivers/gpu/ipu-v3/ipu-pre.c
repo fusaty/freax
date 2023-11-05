@@ -4,12 +4,12 @@
  */
 
 #include <drm/drm_fourcc.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/genalloc.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <video/imx-ipu-v3.h>
 
 #include "ipu-prv.h"

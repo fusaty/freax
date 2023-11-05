@@ -1,8 +1,8 @@
-#ifndef __LINUX_USERMODE_DRIVER_H__
-#define __LINUX_USERMODE_DRIVER_H__
+#ifndef __freax_USERMODE_DRIVER_H__
+#define __freax_USERMODE_DRIVER_H__
 
-#include <linux/umh.h>
-#include <linux/path.h>
+#include <freax/umh.h>
+#include <freax/path.h>
 
 struct umd_info {
 	const char *driver_name;
@@ -16,4 +16,4 @@ int umd_unload_blob(struct umd_info *info);
 int fork_usermode_driver(struct umd_info *info);
 void umd_cleanup_helper(struct umd_info *info);
 
-#endif /* __LINUX_USERMODE_DRIVER_H__ */
+#endif /* __freax_USERMODE_DRIVER_H__ */

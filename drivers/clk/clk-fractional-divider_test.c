@@ -2,7 +2,7 @@
 /*
  * Kunit test for clock fractional divider
  */
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 #include <kunit/test.h>
 
 #include "clk-fractional-divider.h"

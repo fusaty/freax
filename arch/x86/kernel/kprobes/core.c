@@ -26,31 +26,31 @@
  *		<arjan@infradead.org> and Jim Keniston <jkenisto@us.ibm.com>
  *		unified x86 kprobes code.
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/preempt.h>
-#include <linux/sched/debug.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/kallsyms.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/objtool.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
-#include <linux/set_memory.h>
-#include <linux/cfi.h>
+#include <freax/kprobes.h>
+#include <freax/ptrace.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/hardirq.h>
+#include <freax/preempt.h>
+#include <freax/sched/debug.h>
+#include <freax/perf_event.h>
+#include <freax/extable.h>
+#include <freax/kdebug.h>
+#include <freax/kallsyms.h>
+#include <freax/kgdb.h>
+#include <freax/ftrace.h>
+#include <freax/kasan.h>
+#include <freax/moduleloader.h>
+#include <freax/objtool.h>
+#include <freax/vmalloc.h>
+#include <freax/pgtable.h>
+#include <freax/set_memory.h>
+#include <freax/cfi.h>
 
 #include <asm/text-patching.h>
 #include <asm/cacheflush.h>
 #include <asm/desc.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/insn.h>
 #include <asm/debugreg.h>

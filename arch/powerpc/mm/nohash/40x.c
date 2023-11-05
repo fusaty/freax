@@ -5,7 +5,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -15,27 +15,27 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/stddef.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/highmem.h>
+#include <freax/memblock.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/smp.h>
 #include <asm/bootx.h>
 #include <asm/machdep.h>

@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2021 Eric Dumazet <edumazet@google.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ref_tracker.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/ref_tracker.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 
 static struct ref_tracker_dir ref_dir;
 static struct ref_tracker *tracker[20];

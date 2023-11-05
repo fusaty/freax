@@ -6,17 +6,17 @@
  * Copyright (C) 2010-2012, NVIDIA CORPORATION. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8907.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max8907.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 static const struct mfd_cell max8907_cells[] = {
 	{ .name = "max8907-regulator", },

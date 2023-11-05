@@ -6,17 +6,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/atomic.h>
-#include <linux/mempool.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/rcupdate.h>
+#include <freax/rculist_bl.h>
+#include <freax/atomic.h>
+#include <freax/mempool.h>
 
 #include "gfs2.h"
 #include "incore.h"

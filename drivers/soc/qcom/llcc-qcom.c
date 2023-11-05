@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2019, The freax Foundation. All rights reserved.
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/llcc-qcom.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/llcc-qcom.h>
 
 #define ACTIVATE                      BIT(0)
 #define DEACTIVATE                    BIT(1)

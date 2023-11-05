@@ -7,20 +7,20 @@
 #ifndef _QED_H
 #define _QED_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/zlib.h>
-#include <linux/hashtable.h>
-#include <linux/qed/qed_if.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
+#include <freax/zlib.h>
+#include <freax/hashtable.h>
+#include <freax/qed/qed_if.h>
 #include "qed_debug.h"
 #include "qed_hsi.h"
 #include "qed_dbg_hsi.h"
@@ -798,7 +798,7 @@ struct qed_dev {
 	u8 ppfid_bitmap;
 	struct qed_llh_info *p_llh_info;
 
-	/* Linux specific here */
+	/* freax specific here */
 	struct qed_dev_info		common_dev_info;
 	struct  qede_dev		*edev;
 	struct  pci_dev			*pdev;
@@ -951,7 +951,7 @@ bool qed_edpm_enabled(struct qed_hwfn *p_hwfn);
 #define GET_GTT_BDQ_REG_ADDR(__base, __offset, __idx, __bdq_idx) \
 	((__base) + __offset ## _GTT_OFFSET((__idx), (__bdq_idx)))
 
-/* Other Linux specific common definitions */
+/* Other freax specific common definitions */
 #define DP_NAME(cdev) ((cdev)->name)
 
 #define REG_ADDR(cdev, offset)          ((void __iomem *)((u8 __iomem *)\

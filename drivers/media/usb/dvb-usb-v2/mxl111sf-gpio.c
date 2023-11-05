@@ -2,7 +2,7 @@
 /*
  *  mxl111sf-gpio.c - driver for the MaxLinear MXL111SF
  *
- *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@freaxtv.org>
  */
 
 #include "mxl111sf-gpio.h"

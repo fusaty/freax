@@ -3,16 +3,16 @@
  * Copyright (C) 2021 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include "bcm4908_enet.h"
 #include "unimac.h"

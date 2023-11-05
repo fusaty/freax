@@ -5,14 +5,14 @@
  * Copyright (C) 2009 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#ifndef _LINUX_PM_RUNTIME_H
-#define _LINUX_PM_RUNTIME_H
+#ifndef _freax_PM_RUNTIME_H
+#define _freax_PM_RUNTIME_H
 
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/pm.h>
+#include <freax/device.h>
+#include <freax/notifier.h>
+#include <freax/pm.h>
 
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 /* Runtime PM flag argument bits */
 #define RPM_ASYNC		0x01	/* Request is asynchronous */

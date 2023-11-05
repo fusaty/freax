@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PAGEISOLATION_H
-#define __LINUX_PAGEISOLATION_H
+#ifndef __freax_PAGEISOLATION_H
+#define __freax_PAGEISOLATION_H
 
 #ifdef CONFIG_MEMORY_ISOLATION
 static inline bool has_isolate_pageblock(struct zone *zone)

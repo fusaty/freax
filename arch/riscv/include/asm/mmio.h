@@ -11,7 +11,7 @@
 #ifndef _ASM_RISCV_MMIO_H
 #define _ASM_RISCV_MMIO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/mmiowb.h>
 
 /* Generic IO read/write.  These perform native-endian accesses. */

@@ -5,7 +5,7 @@
  * Copyright (c) 2020 NovaTech LLC
  */
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "tag.h"
 

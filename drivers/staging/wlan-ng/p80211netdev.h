@@ -6,16 +6,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -30,12 +30,12 @@
  * --------------------------------------------------------------------
  */
 
-#ifndef _LINUX_P80211NETDEV_H
-#define _LINUX_P80211NETDEV_H
+#ifndef _freax_P80211NETDEV_H
+#define _freax_P80211NETDEV_H
 
-#include <linux/interrupt.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
+#include <freax/interrupt.h>
+#include <freax/wireless.h>
+#include <freax/netdevice.h>
 
 #define WLAN_RELEASE	"0.3.0-staging"
 
@@ -177,8 +177,8 @@ struct wlandevice {
 
 	/* netlink socket */
 	/* queue for indications waiting for cmd completion */
-	/* Linux netdevice and support */
-	struct net_device *netdev;	/* ptr to linux netdevice */
+	/* freax netdevice and support */
+	struct net_device *netdev;	/* ptr to freax netdevice */
 
 	/* Rx bottom half */
 	struct tasklet_struct rx_bh;

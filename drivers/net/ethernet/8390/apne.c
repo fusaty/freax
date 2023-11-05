@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Amiga Linux/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
+ * Amiga freax/68k 8390 based PCMCIA Ethernet Driver for the Amiga 1200
  *
  * (C) Copyright 1997 Alain Malek
  *                    (Alain.Malek@cryogen.com)
@@ -9,10 +9,10 @@
  *
  * This program is based on
  *
- * ne.c:       A general non-shared-memory NS8390 ethernet driver for linux
+ * ne.c:       A general non-shared-memory NS8390 ethernet driver for freax
  *             Written 1992-94 by Donald Becker.
  *
- * 8390.c:     A general NS8390 ethernet driver core for linux.
+ * 8390.c:     A general NS8390 ethernet driver core for freax.
  *             Written 1992-94 by Donald Becker.
  *
  * cnetdevice: A Sana-II ethernet driver for AmigaOS
@@ -23,16 +23,16 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
 
 #include <asm/io.h>
 #include <asm/setup.h>
@@ -112,7 +112,7 @@ static int apne_owned;	/* signal if card already owned */
 
 static u32 apne_msg_enable;
 module_param_named(msg_enable, apne_msg_enable, uint, 0444);
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see freax/netdevice.h for bitmap)");
 
 static struct net_device * __init apne_probe(void)
 {

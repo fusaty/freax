@@ -10,15 +10,15 @@
  * Copyright (C) 2022 Marek Vasut <marex@denx.de>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

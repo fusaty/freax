@@ -6,17 +6,17 @@
  * Author(s): Olivier Moysan <olivier.moysan@st.com> for STMicroelectronics.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
 
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

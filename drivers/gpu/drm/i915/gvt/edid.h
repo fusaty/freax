@@ -35,12 +35,12 @@
 #ifndef _GVT_EDID_H_
 #define _GVT_EDID_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_vgpu;
 
 #define EDID_SIZE		128
-#define EDID_ADDR		0x50 /* Linux hvm EDID addr */
+#define EDID_ADDR		0x50 /* freax hvm EDID addr */
 
 #define GVT_AUX_NATIVE_WRITE			0x8
 #define GVT_AUX_NATIVE_READ			0x9

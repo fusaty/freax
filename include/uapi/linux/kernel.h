@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_KERNEL_H
-#define _UAPI_LINUX_KERNEL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_KERNEL_H
+#define _UAPI_freax_KERNEL_H
 
-#include <linux/sysinfo.h>
-#include <linux/const.h>
+#include <freax/sysinfo.h>
+#include <freax/const.h>
 
-#endif /* _UAPI_LINUX_KERNEL_H */
+#endif /* _UAPI_freax_KERNEL_H */

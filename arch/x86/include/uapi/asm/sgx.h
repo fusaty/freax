@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright(c) 2016-20 Intel Corporation.
  */
 #ifndef _UAPI_ASM_X86_SGX_H
 #define _UAPI_ASM_X86_SGX_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /**
  * enum sgx_page_flags - page control flags

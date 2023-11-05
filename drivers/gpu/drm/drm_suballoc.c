@@ -42,10 +42,10 @@
 
 #include <drm/drm_suballoc.h>
 #include <drm/drm_print.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/dma-fence.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/dma-fence.h>
 
 static void drm_suballoc_remove_locked(struct drm_suballoc *sa);
 static void drm_suballoc_try_free(struct drm_suballoc_manager *sa_manager);

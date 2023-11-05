@@ -6,9 +6,9 @@
 #ifndef __SPRD_DSI_H__
 #define __SPRD_DSI_H__
 
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/of.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 #include <video/videomode.h>
 
 #include <drm/drm_bridge.h>

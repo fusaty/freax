@@ -9,10 +9,10 @@
  * This module contains USB PHY initialization for power up and S3 resume
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 
-#include <linux/soc/brcmstb/brcmstb.h>
+#include <freax/soc/brcmstb/brcmstb.h>
 #include "phy-brcm-usb-init.h"
 
 #define PHY_PORTS 2
@@ -600,12 +600,12 @@ static void brcmusb_usb3_pll_54mhz(struct brcm_usb_init_params *params)
 	 * On newer B53 based SoC's, the reference clock for the
 	 * 3.0 PLL has been changed from 50MHz to 54MHz so the
 	 * PLL needs to be reprogrammed.
-	 * See SWLINUX-4006.
+	 * See SWfreax-4006.
 	 *
 	 * On the 7364C0, the reference clock for the
 	 * 3.0 PLL has been changed from 50MHz to 54MHz to
 	 * work around a MOCA issue.
-	 * See SWLINUX-4169.
+	 * See SWfreax-4169.
 	 */
 	switch (params->selected_family) {
 	case BRCM_FAMILY_3390A0:

@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/intel_tcc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/intel_tcc.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
 #include <asm/iosf_mbi.h>
 #include "intel_soc_dts_iosf.h"
 

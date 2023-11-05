@@ -5,23 +5,23 @@
  * Copyright 2016 Broadcom
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 #include "spi-bcm-qspi.h"
 
 #define DRIVER_NAME "bcm_qspi"

@@ -3,13 +3,13 @@
  * Copyright (C) 2016 National Instruments Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 #define LOCK			0xA5
 #define UNLOCK			0x5A

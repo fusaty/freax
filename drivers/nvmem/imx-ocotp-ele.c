@@ -5,13 +5,13 @@
  * Copyright 2023 NXP
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 enum fuse_type {
 	FUSE_FSB = 1,

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_CSD_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_CSD_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(csd_queue_cpu,
 

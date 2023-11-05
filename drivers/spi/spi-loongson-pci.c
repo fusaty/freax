@@ -2,8 +2,8 @@
 // PCI interface driver for Loongson SPI Support
 // Copyright (C) 2023 Loongson Technology Corporation Limited
 
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pci.h>
 
 #include "spi-loongson.h"
 

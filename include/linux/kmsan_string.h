@@ -6,8 +6,8 @@
  * Author: Alexander Potapenko <glider@google.com>
  *
  */
-#ifndef _LINUX_KMSAN_STRING_H
-#define _LINUX_KMSAN_STRING_H
+#ifndef _freax_KMSAN_STRING_H
+#define _freax_KMSAN_STRING_H
 
 /*
  * KMSAN overrides the default memcpy/memset/memmove implementations in the
@@ -18,4 +18,4 @@ void *__msan_memcpy(void *dst, const void *src, size_t size);
 void *__msan_memset(void *s, int c, size_t n);
 void *__msan_memmove(void *dest, const void *src, size_t len);
 
-#endif /* _LINUX_KMSAN_STRING_H */
+#endif /* _freax_KMSAN_STRING_H */

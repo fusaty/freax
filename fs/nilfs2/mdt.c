@@ -7,13 +7,13 @@
  * Written by Ryusuke Konishi.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/mm.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <freax/buffer_head.h>
+#include <freax/mpage.h>
+#include <freax/mm.h>
+#include <freax/writeback.h>
+#include <freax/backing-dev.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

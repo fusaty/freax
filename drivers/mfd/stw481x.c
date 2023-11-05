@@ -8,15 +8,15 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/stw481x.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/stw481x.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 
 /*
  * This driver can only access the non-USB portions of STw4811, the register

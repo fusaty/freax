@@ -7,16 +7,16 @@ import argparse
 import re
 import os, sys
 
-LINUX_ROOT = os.path.abspath(os.path.join(__file__,
+freax_ROOT = os.path.abspath(os.path.join(__file__,
     os.pardir, os.pardir, os.pardir, os.pardir, os.pardir))
 BPFTOOL_DIR = os.getenv('BPFTOOL_DIR',
-    os.path.join(LINUX_ROOT, 'tools/bpf/bpftool'))
+    os.path.join(freax_ROOT, 'tools/bpf/bpftool'))
 BPFTOOL_BASHCOMP_DIR = os.getenv('BPFTOOL_BASHCOMP_DIR',
     os.path.join(BPFTOOL_DIR, 'bash-completion'))
 BPFTOOL_DOC_DIR = os.getenv('BPFTOOL_DOC_DIR',
     os.path.join(BPFTOOL_DIR, 'Documentation'))
 INCLUDE_DIR = os.getenv('INCLUDE_DIR',
-    os.path.join(LINUX_ROOT, 'tools/include'))
+    os.path.join(freax_ROOT, 'tools/include'))
 
 retval = 0
 
@@ -391,7 +391,7 @@ class BpfHeaderExtractor(FileExtractor):
     """
     An extractor for the UAPI BPF header.
     """
-    filename = os.path.join(INCLUDE_DIR, 'uapi/linux/bpf.h')
+    filename = os.path.join(INCLUDE_DIR, 'uapi/freax/bpf.h')
 
     def __init__(self):
         super().__init__()

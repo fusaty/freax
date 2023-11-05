@@ -2,8 +2,8 @@
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
 
 #define _GNU_SOURCE
-#include <linux/compiler.h>
-#include <linux/ring_buffer.h>
+#include <freax/compiler.h>
+#include <freax/ring_buffer.h>
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,7 @@
 #include <sys/syscall.h>
 #include <sys/sysinfo.h>
 #include <test_progs.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/freax/bpf.h>
 #include <unistd.h>
 
 #include "user_ringbuf_fail.skel.h"

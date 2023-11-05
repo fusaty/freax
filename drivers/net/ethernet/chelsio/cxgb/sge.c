@@ -29,21 +29,21 @@
 
 #include "common.h"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/ktime.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
+#include <freax/tcp.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/if_arp.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
 
 #include "cpl5_cmd.h"
 #include "sge.h"

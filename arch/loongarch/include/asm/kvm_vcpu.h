@@ -6,7 +6,7 @@
 #ifndef __ASM_LOONGARCH_KVM_VCPU_H__
 #define __ASM_LOONGARCH_KVM_VCPU_H__
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/loongarch.h>
 
 /* Controlled by 0x5 guest estat */

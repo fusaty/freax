@@ -2,10 +2,10 @@
 #ifndef __CLK_STARFIVE_JH71X0_H
 #define __CLK_STARFIVE_JH71X0_H
 
-#include <linux/bits.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <freax/bits.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
 
 /* register fields */
 #define JH71X0_CLK_ENABLE	BIT(31)

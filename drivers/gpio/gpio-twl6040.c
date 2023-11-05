@@ -9,16 +9,16 @@
  *	Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kthread.h>
+#include <freax/irq.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/of.h>
 
-#include <linux/mfd/twl6040.h>
+#include <freax/mfd/twl6040.h>
 
 static int twl6040gpo_get(struct gpio_chip *chip, unsigned offset)
 {

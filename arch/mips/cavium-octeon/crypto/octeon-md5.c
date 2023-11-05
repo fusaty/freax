@@ -20,10 +20,10 @@
  */
 
 #include <crypto/md5.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/string.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

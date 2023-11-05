@@ -10,34 +10,34 @@
  * Copyright (C) 2014 Texas Instruments Incorporated
  *    Aurelien Jacquiot <a-jacquiot@ti.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/kfifo.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/cdev.h>
+#include <freax/ioctl.h>
+#include <freax/uaccess.h>
+#include <freax/list.h>
+#include <freax/fs.h>
+#include <freax/err.h>
+#include <freax/net.h>
+#include <freax/poll.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
+#include <freax/kfifo.h>
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mman.h>
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #ifdef CONFIG_RAPIDIO_DMA_ENGINE
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 #endif
 
-#include <linux/rio.h>
-#include <linux/rio_ids.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_mport_cdev.h>
+#include <freax/rio.h>
+#include <freax/rio_ids.h>
+#include <freax/rio_drv.h>
+#include <freax/rio_mport_cdev.h>
 
 #include "../rio.h"
 
@@ -2537,7 +2537,7 @@ static void mport_cdev_remove(struct mport_dev *md)
 
 /*
  * mport_add_mport() - Add rio_mport from LDM device struct
- * @dev:		Linux device model struct
+ * @dev:		freax device model struct
  */
 static int mport_add_mport(struct device *dev)
 {
@@ -2591,7 +2591,7 @@ static struct class_interface rio_mport_interface __refdata = {
 };
 
 /*
- * Linux kernel module
+ * freax kernel module
  */
 
 /*

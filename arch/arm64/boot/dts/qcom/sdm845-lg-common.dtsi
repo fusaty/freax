@@ -2,7 +2,7 @@
 /*
  * SDM845 LG G7 / V35 (judyln / judyp) common device tree
  *
- * Copyright (c) 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/gpio/gpio.h>
@@ -131,7 +131,7 @@
 
 		key-vol-up {
 			label = "Volume up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -483,7 +483,7 @@
 };
 
 &pm8998_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

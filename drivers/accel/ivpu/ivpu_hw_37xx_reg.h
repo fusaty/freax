@@ -6,7 +6,7 @@
 #ifndef __IVPU_HW_37XX_REG_H__
 #define __IVPU_HW_37XX_REG_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define VPU_37XX_BUTTRESS_INTERRUPT_TYPE				0x00000000u
 

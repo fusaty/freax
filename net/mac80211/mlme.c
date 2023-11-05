@@ -11,17 +11,17 @@
  * Copyright (C) 2018 - 2023 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/fips.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/rtnetlink.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/delay.h>
+#include <freax/fips.h>
+#include <freax/if_ether.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/moduleparam.h>
+#include <freax/rtnetlink.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 

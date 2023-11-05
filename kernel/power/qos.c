@@ -5,7 +5,7 @@
  * Copyright (C) 2020 Intel Corporation
  *
  * Authors:
- *	Mark Gross <mgross@linux.intel.com>
+ *	Mark Gross <mgross@freax.intel.com>
  *	Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  *
  * Provided here is an interface for specifying PM QoS dependencies.  It allows
@@ -20,23 +20,23 @@
 
 /*#define DEBUG*/
 
-#include <linux/pm_qos.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/pm_qos.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/string.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
 #include <trace/events/power.h>
 
 /*

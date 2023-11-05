@@ -8,8 +8,8 @@
 #ifndef VFSMOD_H
 #define VFSMOD_H
 
-#include <linux/backing-dev.h>
-#include <linux/idr.h>
+#include <freax/backing-dev.h>
+#include <freax/idr.h>
 #include "shfl_hostintf.h"
 
 #define DIR_BUFFER_SIZE SZ_16K

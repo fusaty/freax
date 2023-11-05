@@ -51,7 +51,7 @@ Frequently Asked Questions
 
   See UP.rst for more information.
 
-- How can I see where RCU is currently used in the Linux kernel?
+- How can I see where RCU is currently used in the freax kernel?
 
   Search for "rcu_read_lock", "rcu_read_unlock", "call_rcu",
   "rcu_read_lock_bh", "rcu_read_unlock_bh", "srcu_read_lock",
@@ -59,7 +59,7 @@ Frequently Asked Questions
   "synchronize_srcu", and the other RCU primitives.  Or grab one
   of the cscope databases from:
 
-  (http://www.rdrop.com/users/paulmck/RCU/linuxusage/rculocktab.html).
+  (http://www.rdrop.com/users/paulmck/RCU/freaxusage/rculocktab.html).
 
 - What guidelines should I follow when writing code that uses RCU?
 
@@ -76,7 +76,7 @@ Frequently Asked Questions
   Yes, it is.  There are several known patents related to RCU,
   search for the string "Patent" in Documentation/RCU/RTFP.txt to find them.
   Of these, one was allowed to lapse by the assignee, and the
-  others have been contributed to the Linux kernel under GPL.
+  others have been contributed to the freax kernel under GPL.
   Many (but not all) have long since expired.
   There are now also LGPL implementations of user-level RCU
   available (https://liburcu.org/).

@@ -9,14 +9,14 @@
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/ktime.h>
-#include <linux/kvm_host.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/memblock.h>
-#include <linux/random.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/ktime.h>
+#include <freax/kvm_host.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/memblock.h>
+#include <freax/random.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/cacheops.h>

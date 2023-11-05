@@ -11,9 +11,9 @@
  * Kalle Jokiniemi
  * Paul Walmsley
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/init.h>
 
 #include "soc.h"
 #include "common.h"

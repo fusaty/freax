@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Hypervisor filesystem for Linux on s390 - debugfs interface
+ * Hypervisor filesystem for freax on s390 - debugfs interface
  *
  * Copyright IBM Corp. 2010
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "hypfs.h"
 
 static struct dentry *dbfs_dir;

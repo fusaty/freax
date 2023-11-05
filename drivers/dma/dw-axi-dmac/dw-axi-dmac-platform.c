@@ -7,27 +7,27 @@
  * Author: Eugeniy Paltsev <Eugeniy.Paltsev@synopsys.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/dmapool.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include "dw-axi-dmac.h"
 #include "../dmaengine.h"

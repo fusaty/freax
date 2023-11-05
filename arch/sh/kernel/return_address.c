@@ -5,8 +5,8 @@
  * Copyright (C) 2009  Matt Fleming
  * Copyright (C) 2009  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/dwarf.h>
 
 #ifdef CONFIG_DWARF_UNWINDER

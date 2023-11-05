@@ -3,15 +3,15 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/semaphore.h>
-#include <linux/uuid.h>
-#include <linux/list_sort.h>
-#include <linux/namei.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
+#include <freax/kthread.h>
+#include <freax/semaphore.h>
+#include <freax/uuid.h>
+#include <freax/list_sort.h>
+#include <freax/namei.h>
 #include "misc.h"
 #include "ctree.h"
 #include "extent_map.h"

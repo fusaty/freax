@@ -5,9 +5,9 @@
  * Copyright (c) 2020 Red Hat
  * Author: Lenny Szubowicz <lszubowi@redhat.com>
  *
- * This module contains the kernel support for the Linux EFI Machine
+ * This module contains the kernel support for the freax EFI Machine
  * Owner Key (MOK) variable configuration table, which is identified by
- * the LINUX_EFI_MOK_VARIABLE_TABLE_GUID.
+ * the freax_EFI_MOK_VARIABLE_TABLE_GUID.
  *
  * This EFI configuration table provides a more robust alternative to
  * EFI volatile variables by which an EFI boot loader can pass the
@@ -31,19 +31,19 @@
  */
 #define pr_fmt(fmt) "mokvar: " fmt
 
-#include <linux/capability.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/capability.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/kobject.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include <asm/early_ioremap.h>
 
 /*
- * The LINUX_EFI_MOK_VARIABLE_TABLE_GUID config table is a packed
+ * The freax_EFI_MOK_VARIABLE_TABLE_GUID config table is a packed
  * sequence of struct efi_mokvar_table_entry, one for each named
  * MOK variable. The sequence is terminated by an entry with a
  * completely NULL name and 0 data size.

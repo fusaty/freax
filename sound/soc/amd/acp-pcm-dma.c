@@ -5,12 +5,12 @@
  * Copyright 2014-2015 Advanced Micro Devices, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/sizes.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/sizes.h>
+#include <freax/pm_runtime.h>
 
 #include <sound/soc.h>
 #include <drm/amd_asic_type.h>

@@ -5,17 +5,17 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
 
 /* USB Wrapper register offsets */
 #define USBSS_PID		0x0

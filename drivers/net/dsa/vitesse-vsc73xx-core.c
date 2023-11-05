@@ -14,17 +14,17 @@
  * Includes portions of code from the firmware uploader by:
  * Copyright (C) 2009 Gabor Juhos <juhosg@openwrt.org>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/bitops.h>
+#include <freax/if_bridge.h>
+#include <freax/etherdevice.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/random.h>
 #include <net/dsa.h>
 
 #include "vitesse-vsc73xx.h"

@@ -9,18 +9,18 @@
 #ifndef _SECURITY_SMACK_H
 #define _SECURITY_SMACK_H
 
-#include <linux/capability.h>
-#include <linux/spinlock.h>
-#include <linux/lsm_hooks.h>
-#include <linux/in.h>
+#include <freax/capability.h>
+#include <freax/spinlock.h>
+#include <freax/lsm_hooks.h>
+#include <freax/in.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
+#include <freax/in6.h>
 #endif /* CONFIG_IPV6 */
 #include <net/netlabel.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/lsm_audit.h>
-#include <linux/msg.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/lsm_audit.h>
+#include <freax/msg.h>
 
 /*
  * Use IPv6 port labeling if IPv6 is enabled and secmarks

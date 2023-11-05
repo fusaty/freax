@@ -5,15 +5,15 @@
  * Copyright (c) 2015, Applied Micro Circuits Corporation
  * Author: Feng Kan fkan@apm.com
  */
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_controller.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define MBOX_CON_NAME			"slimpro-mbox"
 #define MBOX_REG_SET_OFFSET		0x1000

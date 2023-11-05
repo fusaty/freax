@@ -1,10 +1,10 @@
 /*
- *  linux/sound/oss/dmasound/dmasound_core.c
+ *  freax/sound/oss/dmasound/dmasound_core.c
  *
  *
  *  OSS/Free compatible Atari TT/Falcon and Amiga DMA sound driver for
- *  Linux/m68k
- *  Extended to support Power Macintosh for Linux/ppc by Paul Mackerras
+ *  freax/m68k
+ *  Extended to support Power Macintosh for freax/ppc by Paul Mackerras
  *
  *  (c) 1995 by Michael Schlueter & Michael Marte
  *
@@ -175,16 +175,16 @@
  * see the fault until after the damage is done.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sound.h>
-#include <linux/init.h>
-#include <linux/soundcard.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sound.h>
+#include <freax/init.h>
+#include <freax/soundcard.h>
+#include <freax/poll.h>
+#include <freax/mutex.h>
+#include <freax/sched/signal.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "dmasound.h"
 

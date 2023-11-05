@@ -19,8 +19,8 @@
 #ifndef _ATOM_ISP_H
 #define _ATOM_ISP_H
 
-#include <linux/types.h>
-#include <linux/version.h>
+#include <freax/types.h>
+#include <freax/version.h>
 
 /* struct media_device_info.hw_revision */
 #define ATOMISP_HW_REVISION_MASK	0x0000ff00
@@ -908,7 +908,7 @@ struct atomisp_s_runmode {
 #define V4L2_CID_CAMERA_LASTP1             (V4L2_CID_CAMERA_CLASS_BASE + 1024)
 
 /* Flash related CIDs, see also:
- * http://linuxtv.org/downloads/v4l-dvb-apis/extended-controls.html\
+ * http://freaxtv.org/downloads/v4l-dvb-apis/extended-controls.html\
  * #flash-controls */
 
 /* Request a number of flash-exposed frames. The frame status can be

@@ -11,9 +11,9 @@
 #ifndef _I2C_STM32_H
 #define _I2C_STM32_H
 
-#include <linux/dma-direction.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <freax/dma-direction.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
 
 enum stm32_i2c_speed {
 	STM32_I2C_SPEED_STANDARD, /* 100 kHz */

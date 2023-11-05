@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *	Types and definitions for AF_INET6 
- *	Linux INET6 implementation 
+ *	freax INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -19,11 +19,11 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_IN6_H
-#define _UAPI_LINUX_IN6_H
+#ifndef _UAPI_freax_IN6_H
+#define _UAPI_freax_IN6_H
 
-#include <linux/types.h>
-#include <linux/libc-compat.h>
+#include <freax/types.h>
+#include <freax/libc-compat.h>
 
 /*
  *	IPv6 address structure
@@ -246,7 +246,7 @@ struct in6_flowlabel_req {
  * Netfilter (1)
  *
  * Following socket options are used in ip6_tables;
- * see include/linux/netfilter_ipv6/ip6_tables.h.
+ * see include/freax/netfilter_ipv6/ip6_tables.h.
  *
  * IP6T_SO_SET_REPLACE / IP6T_SO_GET_INFO		64
  * IP6T_SO_SET_ADD_COUNTERS / IP6T_SO_GET_ENTRIES	65
@@ -262,7 +262,7 @@ struct in6_flowlabel_req {
  * Netfilter (2)
  *
  * Following socket options are used in ip6_tables;
- * see include/linux/netfilter_ipv6/ip6_tables.h.
+ * see include/freax/netfilter_ipv6/ip6_tables.h.
  *
  * IP6T_SO_GET_REVISION_MATCH	68
  * IP6T_SO_GET_REVISION_TARGET	69
@@ -293,10 +293,10 @@ struct in6_flowlabel_req {
 
 /*
  * Multicast Routing:
- * see include/uapi/linux/mroute6.h.
+ * see include/uapi/freax/mroute6.h.
  *
  * MRT6_BASE			200
  * ...
  * MRT6_MAX
  */
-#endif /* _UAPI_LINUX_IN6_H */
+#endif /* _UAPI_freax_IN6_H */

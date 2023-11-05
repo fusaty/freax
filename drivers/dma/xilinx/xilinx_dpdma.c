@@ -7,23 +7,23 @@
  * Author: Hyun Woo Kwon <hyun.kwon@xilinx.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma/xilinx_dpdma.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/dma/xilinx_dpdma.h>
+#include <freax/dmaengine.h>
+#include <freax/dmapool.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
 
 #include <dt-bindings/dma/xlnx-zynqmp-dpdma.h>
 

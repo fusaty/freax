@@ -1,25 +1,25 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/cpufreq.h
+ * freax/include/freax/cpufreq.h
  *
  * Copyright (C) 2001 Russell King
- *           (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *           (C) 2002 - 2003 Dominik Brodowski <freax@brodo.de>
  */
-#ifndef _LINUX_CPUFREQ_H
-#define _LINUX_CPUFREQ_H
+#ifndef _freax_CPUFREQ_H
+#define _freax_CPUFREQ_H
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_qos.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/minmax.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/completion.h>
+#include <freax/kobject.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_qos.h>
+#include <freax/spinlock.h>
+#include <freax/sysfs.h>
+#include <freax/minmax.h>
 
 /*********************************************************************
  *                        CPUFREQ INTERFACE                          *
@@ -1219,4 +1219,4 @@ static inline void cpufreq_register_em_with_opp(struct cpufreq_policy *policy)
 	dev_pm_opp_of_register_em(get_cpu_device(policy->cpu),
 				  policy->related_cpus);
 }
-#endif /* _LINUX_CPUFREQ_H */
+#endif /* _freax_CPUFREQ_H */

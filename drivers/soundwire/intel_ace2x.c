@@ -5,11 +5,11 @@
  * Soundwire Intel ops for LunarLake
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_intel.h>
 #include <sound/pcm_params.h>
 #include <sound/hda-mlink.h>
 #include "cadence_master.h"

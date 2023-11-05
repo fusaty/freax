@@ -3,15 +3,15 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 /*
  * Clock and Power control register offsets

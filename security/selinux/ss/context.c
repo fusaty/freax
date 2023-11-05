@@ -6,7 +6,7 @@
  * Copyright (C) 2020 Red Hat, Inc.
  */
 
-#include <linux/jhash.h>
+#include <freax/jhash.h>
 
 #include "context.h"
 #include "mls.h"

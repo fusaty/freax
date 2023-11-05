@@ -3,10 +3,10 @@
  * See copyright notice in main.c
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ieee80211.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ieee80211.h>
 #include <net/cfg80211.h>
 
 #include "hermes.h"

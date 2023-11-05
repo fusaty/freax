@@ -6,8 +6,8 @@
 /*
  * Veritas filesystem driver - support for 'immed' inodes.
  */
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
 
 #include "vxfs.h"
 #include "vxfs_extern.h"

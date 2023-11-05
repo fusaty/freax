@@ -13,11 +13,11 @@
 #ifndef __JSM_DRIVER_H
 #define __JSM_DRIVER_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>	/* To pick up the varions Linux types */
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/types.h>	/* To pick up the varions freax types */
+#include <freax/tty.h>
+#include <freax/serial_core.h>
+#include <freax/device.h>
 
 /*
  * Debugging levels can be set using debug insmod variable

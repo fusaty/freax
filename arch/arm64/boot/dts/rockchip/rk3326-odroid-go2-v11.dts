@@ -29,7 +29,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <172 772>;
-			linux,code = <ABS_X>;
+			freax,code = <ABS_X>;
 			};
 
 		axis@1 {
@@ -37,7 +37,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <278 815>;
-			linux,code = <ABS_Y>;
+			freax,code = <ABS_Y>;
 		};
 	};
 
@@ -72,12 +72,12 @@
 	button-sw20 {
 		gpios = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
 		label = "TOP-LEFT 2";
-		linux,code = <BTN_TL2>;
+		freax,code = <BTN_TL2>;
 	};
 	button-sw21 {
 		gpios = <&gpio3 RK_PB2 GPIO_ACTIVE_LOW>;
 		label = "TOP-RIGHT 2";
-		linux,code = <BTN_TR2>;
+		freax,code = <BTN_TR2>;
 	};
 };
 

@@ -15,7 +15,7 @@
 #ifndef _ASM_CACHEFLUSH_H
 #define _ASM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <asm/shmparam.h>
 
 void flush_cache_all(void);

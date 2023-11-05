@@ -5,10 +5,10 @@
  * Copyright (C) 2013 IBM
  */
 
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 #include <asm/opal.h>
 #include <asm/machdep.h>
 

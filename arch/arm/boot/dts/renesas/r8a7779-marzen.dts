@@ -62,14 +62,14 @@
 
 		key-1 {
 			interrupts = <17 IRQ_TYPE_EDGE_FALLING>;
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			label = "SW1-1";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-2 {
 			interrupts = <18 IRQ_TYPE_EDGE_FALLING>;
-			linux,code = <KEY_2>;
+			freax,code = <KEY_2>;
 			label = "SW1-2";
 			wakeup-source;
 			debounce-interval = <20>;
@@ -85,13 +85,13 @@
 
 		key-3 {
 			gpios = <&gpio0 19 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_3>;
+			freax,code = <KEY_3>;
 			label = "SW1-3";
 			debounce-interval = <20>;
 		};
 		key-4 {
 			gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_4>;
+			freax,code = <KEY_4>;
 			label = "SW1-4";
 			debounce-interval = <20>;
 		};

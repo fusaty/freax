@@ -8,10 +8,10 @@
  * NAND controller drivers should not include this file.
  */
 
-#ifndef __LINUX_RAWNAND_INTERNALS
-#define __LINUX_RAWNAND_INTERNALS
+#ifndef __freax_RAWNAND_INTERNALS
+#define __freax_RAWNAND_INTERNALS
 
-#include <linux/mtd/rawnand.h>
+#include <freax/mtd/rawnand.h>
 
 /*
  * NAND Flash Manufacturer ID Codes
@@ -172,4 +172,4 @@ int nand_onfi_detect(struct nand_chip *chip);
 /* JEDEC functions */
 int nand_jedec_detect(struct nand_chip *chip);
 
-#endif /* __LINUX_RAWNAND_INTERNALS */
+#endif /* __freax_RAWNAND_INTERNALS */

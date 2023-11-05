@@ -8,11 +8,11 @@
  * Copyright (C) 2013 Intel Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/debugfs.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define CRYSTALCOVE_SPWRSRC_REG		0x1E
 #define CRYSTALCOVE_RESETSRC0_REG	0x20

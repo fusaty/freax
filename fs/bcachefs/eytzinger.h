@@ -2,8 +2,8 @@
 #ifndef _EYTZINGER_H
 #define _EYTZINGER_H
 
-#include <linux/bitops.h>
-#include <linux/log2.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
 
 #include "util.h"
 

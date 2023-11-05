@@ -6,27 +6,27 @@
 #ifndef _NVMET_H
 #define _NVMET_H
 
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/percpu-refcount.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/uuid.h>
-#include <linux/nvme.h>
-#include <linux/configfs.h>
-#include <linux/rcupdate.h>
-#include <linux/blkdev.h>
-#include <linux/radix-tree.h>
-#include <linux/t10-pi.h>
+#include <freax/dma-mapping.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/kref.h>
+#include <freax/percpu-refcount.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/uuid.h>
+#include <freax/nvme.h>
+#include <freax/configfs.h>
+#include <freax/rcupdate.h>
+#include <freax/blkdev.h>
+#include <freax/radix-tree.h>
+#include <freax/t10-pi.h>
 
 #define NVMET_DEFAULT_VS		NVME_VS(1, 3, 0)
 
 #define NVMET_ASYNC_EVENTS		4
 #define NVMET_ERROR_LOG_SLOTS		128
 #define NVMET_NO_ERROR_LOC		((u16)-1)
-#define NVMET_DEFAULT_CTRL_MODEL	"Linux"
+#define NVMET_DEFAULT_CTRL_MODEL	"freax"
 #define NVMET_MN_MAX_SIZE		40
 #define NVMET_SN_MAX_SIZE		20
 #define NVMET_FR_MAX_SIZE		8

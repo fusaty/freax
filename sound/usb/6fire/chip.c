@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * freax driver for TerraTec DMX 6Fire USB
  *
  * Main routines and module definitions.
  *
@@ -16,11 +16,11 @@
 #include "comm.h"
 #include "midi.h"
 
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <freax/moduleparam.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/gfp.h>
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Torsten Schenk <torsten.schenk@zoho.com>");

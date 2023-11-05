@@ -2,7 +2,7 @@
 /*
  * Xiaomi Mi 6 (sagit) device tree source based on msm8998-mtp.dtsi
  *
- * Copyright (c) 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Degdag Mohamed <degdagmohamed@gmail.com>
  * Copyright (c) 2022, Dzmitry Sankouski <dsankouski@gmail.com>
  */
@@ -134,7 +134,7 @@
 		key-vol-up {
 			label = "Volume up";
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
 			wakeup-source;
 		};
@@ -150,9 +150,9 @@
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 124 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -659,7 +659,7 @@
 };
 
 &pm8998_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

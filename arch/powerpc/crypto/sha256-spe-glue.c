@@ -9,15 +9,15 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
 #include <asm/byteorder.h>
 #include <asm/switch_to.h>
-#include <linux/hardirq.h>
+#include <freax/hardirq.h>
 
 /*
  * MAX_BYTES defines the number of bytes that are allowed to be processed

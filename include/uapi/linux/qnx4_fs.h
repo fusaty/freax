@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *  Name                         : qnx4_fs.h
  *  Author                       : Richard Frowijn
  *  Function                     : qnx4 global filesystem definitions
  *  History                      : 23-03-1998 created
  */
-#ifndef _LINUX_QNX4_FS_H
-#define _LINUX_QNX4_FS_H
+#ifndef _freax_QNX4_FS_H
+#define _freax_QNX4_FS_H
 
-#include <linux/types.h>
-#include <linux/qnxtypes.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/qnxtypes.h>
+#include <freax/magic.h>
 
 #define QNX4_ROOT_INO 1
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <signal.h>
 
 #include "../kselftest.h"

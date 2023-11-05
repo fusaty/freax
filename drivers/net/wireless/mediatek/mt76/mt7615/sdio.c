@@ -6,13 +6,13 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
 
 #include "../sdio.h"
 #include "mt7615.h"

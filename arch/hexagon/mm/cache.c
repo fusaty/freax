@@ -2,10 +2,10 @@
 /*
  * Cache management functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/hexagon_vm.h>
 

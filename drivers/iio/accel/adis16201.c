@@ -5,13 +5,13 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/imu/adis.h>
 
 #define ADIS16201_STARTUP_DELAY_MS			220
 #define ADIS16201_FLASH_CNT				0x00

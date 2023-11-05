@@ -2428,7 +2428,7 @@
 
 		dma-coherent;
 
-		linux,pci-domain = <0>;
+		freax,pci-domain = <0>;
 		num-lanes = <2>;
 
 		interrupts = <GIC_SPI 307 IRQ_TYPE_LEVEL_HIGH>,
@@ -2528,7 +2528,7 @@
 
 		dma-coherent;
 
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		num-lanes = <4>;
 
 		interrupts = <GIC_SPI 519 IRQ_TYPE_LEVEL_HIGH>,

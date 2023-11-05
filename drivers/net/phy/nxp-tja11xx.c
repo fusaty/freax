@@ -3,19 +3,19 @@
  *
  * Copyright (C) 2018 Marek Vasut <marex@denx.de>
  */
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/kernel.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/hwmon.h>
-#include <linux/bitfield.h>
-#include <linux/of_mdio.h>
-#include <linux/of_irq.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/kernel.h>
+#include <freax/mdio.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/hwmon.h>
+#include <freax/bitfield.h>
+#include <freax/of_mdio.h>
+#include <freax/of_irq.h>
 
 #define PHY_ID_MASK			0xfffffff0
 #define PHY_ID_TJA1100			0x0180dc40

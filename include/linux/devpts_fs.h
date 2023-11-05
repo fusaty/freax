@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- --------------------------------------------------------- *
+/* -*- freax-c -*- --------------------------------------------------------- *
  *
- * linux/include/linux/devpts_fs.h
+ * freax/include/freax/devpts_fs.h
  *
  *  Copyright 1998-2004 H. Peter Anvin -- All Rights Reserved
  *
  * ------------------------------------------------------------------------- */
 
-#ifndef _LINUX_DEVPTS_FS_H
-#define _LINUX_DEVPTS_FS_H
+#ifndef _freax_DEVPTS_FS_H
+#define _freax_DEVPTS_FS_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 #ifdef CONFIG_UNIX98_PTYS
 
@@ -42,4 +42,4 @@ ptm_open_peer(struct file *master, struct tty_struct *tty, int flags)
 #endif
 
 
-#endif /* _LINUX_DEVPTS_FS_H */
+#endif /* _freax_DEVPTS_FS_H */

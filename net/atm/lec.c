@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/capability.h>
 
 /* We are ethernet device */
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <net/sock.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <net/arp.h>
 #include <net/dst.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/spinlock.h>
+#include <freax/seq_file.h>
 
 /* And atm device */
-#include <linux/atmdev.h>
-#include <linux/atmlec.h>
+#include <freax/atmdev.h>
+#include <freax/atmlec.h>
 
 /* Proxy LEC knows about bridging */
 #if IS_ENABLED(CONFIG_BRIDGE)
@@ -39,11 +39,11 @@ static unsigned char bridge_ula_lec[] = { 0x01, 0x80, 0xc2, 0x00, 0x00 };
 #endif
 
 /* Modular too */
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 /* Hardening for Spectre-v1 */
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "lec.h"
 #include "lec_arpc.h"
@@ -1201,11 +1201,11 @@ static void lane2_associate_ind(struct net_device *dev, const u8 *mac_addr,
  * lane client modular. October 1997
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/param.h>
-#include <linux/atomic.h>
-#include <linux/inetdevice.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/param.h>
+#include <freax/atomic.h>
+#include <freax/inetdevice.h>
 #include <net/route.h>
 
 #if 0

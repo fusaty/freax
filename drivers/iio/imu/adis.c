@@ -6,17 +6,17 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/imu/adis.h>
 
 #define ADIS_MSC_CTRL_DATA_RDY_EN	BIT(2)
 #define ADIS_MSC_CTRL_DATA_RDY_POL_HIGH	BIT(1)

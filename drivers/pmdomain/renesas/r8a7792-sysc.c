@@ -5,8 +5,8 @@
  * Copyright (C) 2016 Cogent Embedded Inc.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
 
 #include <dt-bindings/power/r8a7792-sysc.h>
 

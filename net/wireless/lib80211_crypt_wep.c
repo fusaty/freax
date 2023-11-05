@@ -6,21 +6,21 @@
  * Copyright (c) 2008, John W. Linville <linville@tuxdriver.com>
  */
 
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
+#include <freax/err.h>
+#include <freax/fips.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/scatterlist.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
 #include <asm/string.h>
 
 #include <net/lib80211.h>
 
 #include <crypto/arc4.h>
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 
 MODULE_AUTHOR("Jouni Malinen");
 MODULE_DESCRIPTION("lib80211 crypt: WEP");

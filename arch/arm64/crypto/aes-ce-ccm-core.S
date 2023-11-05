@@ -5,7 +5,7 @@
  * Copyright (C) 2013 - 2017 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 	.text

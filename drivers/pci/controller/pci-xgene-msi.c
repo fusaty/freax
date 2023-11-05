@@ -6,15 +6,15 @@
  * Author: Tanmay Inamdar <tinamdar@apm.com>
  *	   Duc Dang <dhdang@apm.com>
  */
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/of_pci.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/of_pci.h>
 
 #define MSI_IR0			0x000000
 #define MSI_INT0		0x800000

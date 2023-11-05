@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext4/ioctl.c
+ * freax/fs/ext4/ioctl.c
  *
  * Copyright (C) 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,22 +8,22 @@
  * Universite Pierre et Marie Curie (Paris VI)
  */
 
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/time.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/quotaops.h>
-#include <linux/random.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/iversion.h>
-#include <linux/fileattr.h>
-#include <linux/uuid.h>
+#include <freax/fs.h>
+#include <freax/capability.h>
+#include <freax/time.h>
+#include <freax/compat.h>
+#include <freax/mount.h>
+#include <freax/file.h>
+#include <freax/quotaops.h>
+#include <freax/random.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/iversion.h>
+#include <freax/fileattr.h>
+#include <freax/uuid.h>
 #include "ext4_jbd2.h"
 #include "ext4.h"
-#include <linux/fsmap.h>
+#include <freax/fsmap.h>
 #include "fsmap.h"
 #include <trace/events/ext4.h>
 

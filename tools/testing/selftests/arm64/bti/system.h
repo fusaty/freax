@@ -7,14 +7,14 @@
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 
 typedef __kernel_size_t size_t;
 typedef __kernel_ssize_t ssize_t;
 
-#include <linux/errno.h>
-#include <linux/compiler.h>
+#include <freax/errno.h>
+#include <freax/compiler.h>
 
 #include <asm/hwcap.h>
 #include <asm/ptrace.h>

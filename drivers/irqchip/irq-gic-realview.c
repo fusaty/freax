@@ -3,12 +3,12 @@
  * Special GIC quirks for the ARM RealView
  * Copyright (C) 2015 Linus Walleij
  */
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/bitops.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/bitops.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/arm-gic.h>
 
 #define REALVIEW_SYS_LOCK_OFFSET	0x20
 #define REALVIEW_SYS_PLD_CTRL1		0x74

@@ -7,10 +7,10 @@
  * Contact: Simon Horman <horms@verge.net.au>
  */
 
-#ifndef __LINUX_CLK_RENESAS_H_
-#define __LINUX_CLK_RENESAS_H_
+#ifndef __freax_CLK_RENESAS_H_
+#define __freax_CLK_RENESAS_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct device_node;

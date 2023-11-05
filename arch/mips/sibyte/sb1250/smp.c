@@ -3,12 +3,12 @@
  * Copyright (C) 2001, 2002, 2003 Broadcom Corporation
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched/task_stack.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/kernel_stat.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/mmu_context.h>
 #include <asm/io.h>

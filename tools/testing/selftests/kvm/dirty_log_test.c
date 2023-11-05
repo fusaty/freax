@@ -14,9 +14,9 @@
 #include <sys/types.h>
 #include <signal.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/atomic.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/atomic.h>
 #include <asm/barrier.h>
 
 #include "kvm_util.h"

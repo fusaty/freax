@@ -13,8 +13,8 @@
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include <net/if.h>
-#include <linux/if_link.h>
-#include <linux/limits.h>
+#include <freax/if_link.h>
+#include <freax/limits.h>
 
 static unsigned int ifindex;
 static __u32 attached_prog_id;

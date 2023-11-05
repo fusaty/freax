@@ -3,9 +3,9 @@
  *      crc7.c
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc7.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/crc7.h>
 
 
 /*

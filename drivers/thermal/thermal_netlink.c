@@ -6,10 +6,10 @@
  *
  * Generic netlink for thermal management framework
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 #include <net/genetlink.h>
-#include <uapi/linux/thermal.h>
+#include <uapi/freax/thermal.h>
 
 #include "thermal_core.h"
 

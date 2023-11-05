@@ -3,15 +3,15 @@
  * Copyright (C) 2020 Linaro Ltd
  */
 
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/interconnect-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "icc-common.h"
 #include "icc-rpm.h"

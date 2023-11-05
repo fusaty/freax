@@ -3,12 +3,12 @@
  * lib/hexdump.c
  */
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/minmax.h>
+#include <freax/export.h>
 #include <asm/unaligned.h>
 
 const char hex_asc[] = "0123456789abcdef";

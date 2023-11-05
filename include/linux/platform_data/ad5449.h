@@ -7,8 +7,8 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_AD5449_H__
-#define __LINUX_PLATFORM_DATA_AD5449_H__
+#ifndef __freax_PLATFORM_DATA_AD5449_H__
+#define __freax_PLATFORM_DATA_AD5449_H__
 
 /**
  * enum ad5449_sdo_mode - AD5449 SDO pin configuration

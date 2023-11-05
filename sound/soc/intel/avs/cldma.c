@@ -5,7 +5,7 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <sound/hda_register.h>
 #include <sound/hdaudio_ext.h>
 #include "cldma.h"

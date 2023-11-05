@@ -8,8 +8,8 @@
  * Copyright (C) 2006, 2007 Motorola Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
+#include <freax/kernel.h>
+#include <freax/kprobes.h>
 #include <asm/opcodes.h>
 
 #include "core.h"
@@ -87,7 +87,7 @@ emulate_generic_r0_12_noflags(probes_opcode_t insn,
 ARM(		"stmdb	sp!, {%[regs], r11}	\n\t"	)
 THUMB(		"stmdb	sp!, {%[regs], r7}	\n\t"	)
 		"ldmia	%[regs], {r0-r12}	\n\t"
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 		"blx	%[fn]			\n\t"
 #else
 		"str	%[fn], [sp, #-4]!	\n\t"

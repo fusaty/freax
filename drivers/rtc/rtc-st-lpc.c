@@ -10,17 +10,17 @@
  * Based on the original driver written by Stuart Menefy.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
 
 #include <dt-bindings/mfd/st-lpc.h>
 

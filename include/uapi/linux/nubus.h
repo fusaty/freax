@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
   nubus.h: various definitions and prototypes for NuBus drivers to use.
 
@@ -10,10 +10,10 @@
   NetBSD/OpenBSD header file, by Allen Briggs.  We figured out the
   rest of them on our own. */
 
-#ifndef _UAPILINUX_NUBUS_H
-#define _UAPILINUX_NUBUS_H
+#ifndef _UAPIfreax_NUBUS_H
+#define _UAPIfreax_NUBUS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum nubus_category {
 	NUBUS_CAT_BOARD          = 0x0001,
@@ -221,4 +221,4 @@ enum nubus_display_res_id {
 	NUBUS_RESID_SIXTHMODE   = 0x0085
 };
 
-#endif /* _UAPILINUX_NUBUS_H */
+#endif /* _UAPIfreax_NUBUS_H */

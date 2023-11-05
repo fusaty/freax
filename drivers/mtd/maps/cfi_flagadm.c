@@ -22,14 +22,14 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
 
 
 /* We split the flash chip up into four parts.

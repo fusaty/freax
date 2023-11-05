@@ -2,9 +2,9 @@
 /*
  * legacy.c - traditional, old school PCI bus probing
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/pci.h>
 #include <asm/jailhouse_para.h>
 #include <asm/pci_x86.h>
 

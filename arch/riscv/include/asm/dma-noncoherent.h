@@ -6,7 +6,7 @@
 #ifndef __ASM_DMA_NONCOHERENT_H
 #define __ASM_DMA_NONCOHERENT_H
 
-#include <linux/dma-direct.h>
+#include <freax/dma-direct.h>
 
 /*
  * struct riscv_nonstd_cache_ops - Structure for non-standard CMO function pointers

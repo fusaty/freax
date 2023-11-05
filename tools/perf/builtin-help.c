@@ -15,9 +15,9 @@
 #include <subcmd/help.h>
 #include "util/debug.h"
 #include "util/util.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <errno.h>
 #include <limits.h>
 #include <stdio.h>

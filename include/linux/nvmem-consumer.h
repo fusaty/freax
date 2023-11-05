@@ -6,12 +6,12 @@
  * Copyright (C) 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#ifndef _LINUX_NVMEM_CONSUMER_H
-#define _LINUX_NVMEM_CONSUMER_H
+#ifndef _freax_NVMEM_CONSUMER_H
+#define _freax_NVMEM_CONSUMER_H
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/notifier.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/notifier.h>
 
 struct device;
 struct device_node;
@@ -268,4 +268,4 @@ of_nvmem_layout_get_container(struct nvmem_device *nvmem)
 }
 #endif /* CONFIG_NVMEM && CONFIG_OF */
 
-#endif  /* ifndef _LINUX_NVMEM_CONSUMER_H */
+#endif  /* ifndef _freax_NVMEM_CONSUMER_H */

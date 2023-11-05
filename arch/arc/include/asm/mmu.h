@@ -8,7 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/threads.h>	/* NR_CPUS */
+#include <freax/threads.h>	/* NR_CPUS */
 
 typedef struct {
 	unsigned long asid[NR_CPUS];	/* 8 bit MMU PID + Generation cycle */

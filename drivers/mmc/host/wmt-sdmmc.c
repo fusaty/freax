@@ -6,25 +6,25 @@
  *  Copyright (C) 2008 WonderMedia Technologies, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
 
 #include <asm/byteorder.h>
 

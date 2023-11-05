@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
+#include <freax/kernel.h>
+#include <freax/kvm_host.h>
 #include <asm/asm-prototypes.h>
 #include <asm/dbell.h>
 #include <asm/ppc-opcode.h>

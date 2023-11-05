@@ -8,11 +8,11 @@
  * Copyright (C) 2001 - 2012 Tensilica Inc.
  */
 
-#ifndef _TOOLS_LINUX_XTENSA_SYSTEM_H
-#define _TOOLS_LINUX_XTENSA_SYSTEM_H
+#ifndef _TOOLS_freax_XTENSA_SYSTEM_H
+#define _TOOLS_freax_XTENSA_SYSTEM_H
 
 #define mb()  ({ __asm__ __volatile__("memw" : : : "memory"); })
 #define rmb() barrier()
 #define wmb() mb()
 
-#endif /* _TOOLS_LINUX_XTENSA_SYSTEM_H */
+#endif /* _TOOLS_freax_XTENSA_SYSTEM_H */

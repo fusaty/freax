@@ -7,7 +7,7 @@
 #ifndef CFFRML_H_
 #define CFFRML_H_
 #include <net/caif/caif_layer.h>
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 struct cffrml;
 struct cflayer *cffrml_create(u16 phyid, bool use_fcs);

@@ -7,17 +7,17 @@
  *
  *  from
  *
- *  linux/include/linux/minix_fs.h
+ *  freax/include/freax/minix_fs.h
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
-#include <linux/fs.h>
-#include <linux/ext2_fs.h>
-#include <linux/blockgroup_lock.h>
-#include <linux/percpu_counter.h>
-#include <linux/rbtree.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
+#include <freax/fs.h>
+#include <freax/ext2_fs.h>
+#include <freax/blockgroup_lock.h>
+#include <freax/percpu_counter.h>
+#include <freax/rbtree.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
 
 /* XXX Here for now... not interested in restructing headers JUST now */
 
@@ -302,7 +302,7 @@ struct ext2_inode {
 	union {
 		struct {
 			__le32  l_i_reserved1;
-		} linux1;
+		} freax1;
 		struct {
 			__le32  h_i_translator;
 		} hurd1;
@@ -323,7 +323,7 @@ struct ext2_inode {
 			__le16	l_i_uid_high;	/* these 2 fields    */
 			__le16	l_i_gid_high;	/* were reserved2[0] */
 			__u32	l_i_reserved2;
-		} linux2;
+		} freax2;
 		struct {
 			__u8	h_i_frag;	/* Fragment number */
 			__u8	h_i_fsize;	/* Fragment size */
@@ -343,14 +343,14 @@ struct ext2_inode {
 
 #define i_size_high	i_dir_acl
 
-#define i_reserved1	osd1.linux1.l_i_reserved1
-#define i_frag		osd2.linux2.l_i_frag
-#define i_fsize		osd2.linux2.l_i_fsize
+#define i_reserved1	osd1.freax1.l_i_reserved1
+#define i_frag		osd2.freax2.l_i_frag
+#define i_fsize		osd2.freax2.l_i_fsize
 #define i_uid_low	i_uid
 #define i_gid_low	i_gid
-#define i_uid_high	osd2.linux2.l_i_uid_high
-#define i_gid_high	osd2.linux2.l_i_gid_high
-#define i_reserved2	osd2.linux2.l_i_reserved2
+#define i_uid_high	osd2.freax2.l_i_uid_high
+#define i_gid_high	osd2.freax2.l_i_gid_high
+#define i_reserved2	osd2.freax2.l_i_reserved2
 
 /*
  * File system states
@@ -482,7 +482,7 @@ struct ext2_super_block {
 /*
  * Codes for operating systems
  */
-#define EXT2_OS_LINUX		0
+#define EXT2_OS_freax		0
 #define EXT2_OS_HURD		1
 #define EXT2_OS_MASIX		2
 #define EXT2_OS_FREEBSD		3
@@ -689,7 +689,7 @@ struct ext2_inode_info {
  */
 
 /*
- * Ok, these declarations are also in <linux/kernel.h> but none of the
+ * Ok, these declarations are also in <freax/kernel.h> but none of the
  * ext2 source programs needs to include it so they are duplicated here.
  */
 

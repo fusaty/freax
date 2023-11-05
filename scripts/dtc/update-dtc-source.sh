@@ -1,14 +1,14 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-2.0
-# Simple script to update the version of DTC carried by the Linux kernel
+# Simple script to update the version of DTC carried by the freax kernel
 #
-# This script assumes that the dtc and the linux git trees are in the
+# This script assumes that the dtc and the freax git trees are in the
 # same directory. After building dtc in the dtc directory, it copies the
 # source files and generated source file(s) into the scripts/dtc directory
 # in the kernel and creates a git commit updating them to the new
 # version.
 #
-# Usage: from the top level Linux source tree, run:
+# Usage: from the top level freax source tree, run:
 # $ ./scripts/dtc/update-dtc-source.sh
 #
 # The script will change into the dtc tree, build and test dtc, copy the
@@ -29,7 +29,7 @@
 set -ev
 
 DTC_UPSTREAM_PATH=`pwd`/../dtc
-DTC_LINUX_PATH=`pwd`/scripts/dtc
+DTC_freax_PATH=`pwd`/scripts/dtc
 
 DTC_SOURCE="checks.c data.c dtc.c dtc.h flattree.c fstree.c livetree.c srcpos.c \
 		srcpos.h treesource.c util.c util.h version_gen.h \
@@ -53,8 +53,8 @@ dtc_version=$(git describe HEAD)
 dtc_log=$(git log --oneline ${last_dtc_ver}..)
 
 
-# Copy the files into the Linux tree
-cd $DTC_LINUX_PATH
+# Copy the files into the freax tree
+cd $DTC_freax_PATH
 for f in $DTC_SOURCE $FDTOVERLAY_SOURCE; do
 	cp ${DTC_UPSTREAM_PATH}/${f} ${f}
 	git add ${f}

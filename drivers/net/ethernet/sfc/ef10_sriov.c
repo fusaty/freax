@@ -3,9 +3,9 @@
  * Driver for Solarflare network controllers and boards
  * Copyright 2015 Solarflare Communications Inc.
  */
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/module.h>
 #include "net_driver.h"
 #include "ef10_sriov.h"
 #include "efx.h"

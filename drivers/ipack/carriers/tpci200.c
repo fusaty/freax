@@ -7,8 +7,8 @@
  * Author: Samuel Iglesias Gonsalvez <siglesias@igalia.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include "tpci200.h"
 
 static const u16 tpci200_status_timeout[] = {

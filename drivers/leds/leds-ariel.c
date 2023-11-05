@@ -5,10 +5,10 @@
  * Copyright (C) 2020 Lubomir Rintel
  */
 
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 enum ec_index {
 	EC_BLUE_LED	= 0x01,

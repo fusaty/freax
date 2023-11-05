@@ -34,25 +34,25 @@
  * are not supported.
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/acpi_iort.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpumask.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/smp.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #define SMMU_PMCG_EVCNTR0               0x0
 #define SMMU_PMCG_EVCNTR(n, stride)     (SMMU_PMCG_EVCNTR0 + (n) * (stride))

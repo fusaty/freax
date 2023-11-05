@@ -3,17 +3,17 @@
 
 /* Kernel module implementing an IP set type: the hash:mac type */
 
-#include <linux/jhash.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/if_ether.h>
+#include <freax/jhash.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/if_ether.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_hash.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/ipset/ip_set.h>
+#include <freax/netfilter/ipset/ip_set_hash.h>
 
 #define IPSET_TYPE_REV_MIN	0
 #define IPSET_TYPE_REV_MAX	1	/* bucketsize, initval support */

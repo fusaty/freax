@@ -47,20 +47,20 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/netdevice.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 #define DRV_NAME "sun4i_can"
 

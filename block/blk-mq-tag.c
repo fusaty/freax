@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2013-2014 Jens Axboe
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "blk.h"
 #include "blk-mq.h"
 #include "blk-mq-sched.h"

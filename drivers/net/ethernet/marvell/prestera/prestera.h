@@ -4,12 +4,12 @@
 #ifndef _PRESTERA_H_
 #define _PRESTERA_H_
 
-#include <linux/notifier.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/phylink.h>
+#include <freax/notifier.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
+#include <freax/phylink.h>
 #include <net/devlink.h>
-#include <uapi/linux/if_ether.h>
+#include <uapi/freax/if_ether.h>
 
 #define PRESTERA_DRV_NAME	"prestera"
 

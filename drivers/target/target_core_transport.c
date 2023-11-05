@@ -10,18 +10,18 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/cdrom.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <freax/net.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/in.h>
+#include <freax/cdrom.h>
+#include <freax/module.h>
+#include <freax/ratelimit.h>
+#include <freax/vmalloc.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -790,7 +790,7 @@ static void target_complete_failure_work(struct work_struct *work)
 
 /*
  * Used when asking transport to copy Sense Data from the underlying
- * Linux/SCSI struct scsi_cmnd
+ * freax/SCSI struct scsi_cmnd
  */
 static unsigned char *transport_get_sense_buffer(struct se_cmd *cmd)
 {
@@ -2089,7 +2089,7 @@ void transport_generic_request_failure(struct se_cmd *cmd,
 		 * No SENSE Data payload for this case, set SCSI Status
 		 * and queue the response to $FABRIC_MOD.
 		 *
-		 * Uses linux/include/scsi/scsi.h SAM status codes defs
+		 * Uses freax/include/scsi/scsi.h SAM status codes defs
 		 */
 		cmd->scsi_status = SAM_STAT_RESERVATION_CONFLICT;
 		/*

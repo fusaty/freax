@@ -4,7 +4,7 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <poll.h>
 #include <signal.h>
 #include <stdio.h>

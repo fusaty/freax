@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
     On Screen Display cx23415 Framebuffer driver
 
@@ -19,11 +19,11 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#ifndef __LINUX_IVTVFB_H__
-#define __LINUX_IVTVFB_H__
+#ifndef __freax_IVTVFB_H__
+#define __freax_IVTVFB_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /* Framebuffer external API */
 

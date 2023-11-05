@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/blkdev.h>
-#include <linux/iversion.h>
+#include <freax/blkdev.h>
+#include <freax/iversion.h>
 #include "ctree.h"
 #include "fs.h"
 #include "messages.h"

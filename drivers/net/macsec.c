@@ -5,25 +5,25 @@
  * Copyright (c) 2015 Sabrina Dubroca <sd@queasysnail.net>
  */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/module.h>
 #include <crypto/aead.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/refcount.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 #include <net/gro_cells.h>
 #include <net/macsec.h>
 #include <net/dst_metadata.h>
-#include <linux/phy.h>
-#include <linux/byteorder/generic.h>
-#include <linux/if_arp.h>
+#include <freax/phy.h>
+#include <freax/byteorder/generic.h>
+#include <freax/if_arp.h>
 
-#include <uapi/linux/if_macsec.h>
+#include <uapi/freax/if_macsec.h>
 
 /* SecTAG length = macsec_eth_header without the optional SCI */
 #define MACSEC_TAG_LEN 6

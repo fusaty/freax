@@ -4,15 +4,15 @@
  * Marc Reilly marc@cpdesign.com.au
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mc13xxx.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/mc13xxx.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
 
 #include "mc13xxx.h"
 

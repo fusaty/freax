@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_NETFILTER_XT_IPRANGE_H
-#define _LINUX_NETFILTER_XT_IPRANGE_H 1
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_NETFILTER_XT_IPRANGE_H
+#define _freax_NETFILTER_XT_IPRANGE_H 1
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
 
 enum {
 	IPRANGE_SRC     = 1 << 0,	/* match source IP address */
@@ -18,4 +18,4 @@ struct xt_iprange_mtinfo {
 	__u8 flags;
 };
 
-#endif /* _LINUX_NETFILTER_XT_IPRANGE_H */
+#endif /* _freax_NETFILTER_XT_IPRANGE_H */

@@ -17,22 +17,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/dmi.h>
-#include <linux/mutex.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/hwmon.h>
-#include <linux/workqueue.h>
-#include <linux/err.h>
-#include <linux/bits.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/dmi.h>
+#include <freax/mutex.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/io.h>
+#include <freax/leds.h>
+#include <freax/hwmon.h>
+#include <freax/workqueue.h>
+#include <freax/err.h>
+#include <freax/bits.h>
 
 /* data port used by Apple SMC */
 #define APPLESMC_DATA_PORT	0x300

@@ -7,12 +7,12 @@
  *
  * Copyright (c) 2016, Intel Corporation.
  */
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/regmap.h>
 
 #include "bmc150_magn.h"
 

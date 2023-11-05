@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "otx2_common.h"
 #include "otx2_ptp.h"

@@ -3,15 +3,15 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/watchdog.h>
 
 #define WDOG_CS			0x0
 #define WDOG_CS_FLG		BIT(14)

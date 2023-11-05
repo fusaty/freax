@@ -2,13 +2,13 @@
 /*
  * Copyright (C) 2019 Microsoft Corporation.
  *
- * Author:  Jaskaran Singh Khurana <jaskarankhurana@linux.microsoft.com>
+ * Author:  Jaskaran Singh Khurana <jaskarankhurana@freax.microsoft.com>
  *
  */
-#include <linux/device-mapper.h>
-#include <linux/verification.h>
+#include <freax/device-mapper.h>
+#include <freax/verification.h>
 #include <keys/user-type.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include "dm-verity.h"
 #include "dm-verity-verify-sig.h"
 

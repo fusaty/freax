@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/venc.c
+ * freax/drivers/video/omap2/dss/venc.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -10,21 +10,21 @@
 
 #define DSS_SUBSYS_NAME "VENC"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/component.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/seq_file.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/component.h>
 
 #include <video/omapfb_dss.h>
 

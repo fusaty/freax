@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2022 - 2023 Intel Corporation
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/mac80211.h>
 #include "mvm.h"
 #include "fw/api/context.h"

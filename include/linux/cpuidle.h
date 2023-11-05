@@ -8,13 +8,13 @@
  * This code is licenced under the GPL.
  */
 
-#ifndef _LINUX_CPUIDLE_H
-#define _LINUX_CPUIDLE_H
+#ifndef _freax_CPUIDLE_H
+#define _freax_CPUIDLE_H
 
-#include <linux/percpu.h>
-#include <linux/list.h>
-#include <linux/hrtimer.h>
-#include <linux/context_tracking.h>
+#include <freax/percpu.h>
+#include <freax/list.h>
+#include <freax/hrtimer.h>
+#include <freax/context_tracking.h>
 
 #define CPUIDLE_STATE_MAX	10
 #define CPUIDLE_NAME_LEN	16
@@ -349,4 +349,4 @@ extern s64 cpuidle_governor_latency_req(unsigned int cpu);
 #define CPU_PM_CPU_IDLE_ENTER_RETENTION_PARAM_RCU(low_level_idle_enter, idx, state)	\
 	__CPU_PM_CPU_IDLE_ENTER(low_level_idle_enter, idx, state, 1, 1)
 
-#endif /* _LINUX_CPUIDLE_H */
+#endif /* _freax_CPUIDLE_H */

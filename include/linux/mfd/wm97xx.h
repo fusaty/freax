@@ -5,8 +5,8 @@
  * Copyright (C) 2017 Robert Jarzmik
  */
 
-#ifndef __LINUX_MFD_WM97XX_H
-#define __LINUX_MFD_WM97XX_H
+#ifndef __freax_MFD_WM97XX_H
+#define __freax_MFD_WM97XX_H
 
 struct regmap;
 struct wm97xx_batt_pdata;

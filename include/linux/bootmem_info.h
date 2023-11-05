@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BOOTMEM_INFO_H
-#define __LINUX_BOOTMEM_INFO_H
+#ifndef __freax_BOOTMEM_INFO_H
+#define __freax_BOOTMEM_INFO_H
 
-#include <linux/mm.h>
-#include <linux/kmemleak.h>
+#include <freax/mm.h>
+#include <freax/kmemleak.h>
 
 /*
  * Types for free bootmem stored in page->lru.next. These have to be in
@@ -65,4 +65,4 @@ static inline void free_bootmem_page(struct page *page)
 }
 #endif
 
-#endif /* __LINUX_BOOTMEM_INFO_H */
+#endif /* __freax_BOOTMEM_INFO_H */

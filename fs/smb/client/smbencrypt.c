@@ -11,13 +11,13 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fips.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/fips.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
 #include "cifs_fs_sb.h"
 #include "cifs_unicode.h"
 #include "cifspdu.h"

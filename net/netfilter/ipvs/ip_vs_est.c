@@ -2,7 +2,7 @@
 /*
  * ip_vs_est.c: simple rate estimator for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@freaxvirtualserver.org>
  *
  * Changes:     Hans Schillstrom <hans.schillstrom@ericsson.com>
  *              Network name space (netns) aware.
@@ -15,12 +15,12 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/sysctl.h>
+#include <freax/list.h>
 
 #include <net/ip_vs.h>
 

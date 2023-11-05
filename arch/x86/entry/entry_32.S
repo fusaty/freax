@@ -29,8 +29,8 @@
  *	40(%esp) - %oldss
  */
 
-#include <linux/linkage.h>
-#include <linux/err.h>
+#include <freax/linkage.h>
+#include <freax/err.h>
 #include <asm/thread_info.h>
 #include <asm/irqflags.h>
 #include <asm/errno.h>
@@ -907,7 +907,7 @@ SYM_FUNC_END(entry_SYSENTER_32)
 /*
  * 32-bit legacy system call entry.
  *
- * 32-bit x86 Linux system calls traditionally used the INT $0x80
+ * 32-bit x86 freax system calls traditionally used the INT $0x80
  * instruction.  INT $0x80 lands here.
  *
  * This entry point can be used by any 32-bit perform system calls.

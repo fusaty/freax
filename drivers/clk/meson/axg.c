@@ -9,11 +9,11 @@
  * Author: Qiufang Dai <qiufang.dai@amlogic.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 
 #include "clk-regmap.h"
 #include "clk-pll.h"

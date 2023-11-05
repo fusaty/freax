@@ -4,15 +4,15 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/string.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
-#include <linux/utsname.h>
-#include <linux/mutex.h>
+#include <freax/utsname.h>
+#include <freax/mutex.h>
 
 /*
  *  OSS compatible part

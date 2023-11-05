@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/namei.h>
+#include <freax/export.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/slab.h>
+#include <freax/security.h>
+#include <freax/namei.h>
 #include "internal.h"
 
 static const struct constant_table bool_names[] = {

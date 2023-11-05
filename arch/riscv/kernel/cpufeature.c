@@ -6,13 +6,13 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/bitmap.h>
+#include <freax/ctype.h>
+#include <freax/log2.h>
+#include <freax/memory.h>
+#include <freax/module.h>
+#include <freax/of.h>
 #include <asm/acpi.h>
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>

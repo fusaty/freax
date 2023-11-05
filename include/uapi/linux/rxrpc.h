@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-or-later WITH freax-syscall-note */
 /* Types and definitions for AF_RXRPC.
  *
  * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _UAPI_LINUX_RXRPC_H
-#define _UAPI_LINUX_RXRPC_H
+#ifndef _UAPI_freax_RXRPC_H
+#define _UAPI_freax_RXRPC_H
 
-#include <linux/types.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 /*
  * RxRPC socket address
@@ -118,4 +118,4 @@ enum rxrpc_cmsg_type {
 #define RXKADDATALEN		19270411	/* user data too long */
 #define RXKADILLEGALLEVEL	19270412	/* caller not authorised to use encrypted conns */
 
-#endif /* _UAPI_LINUX_RXRPC_H */
+#endif /* _UAPI_freax_RXRPC_H */

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CONTAINER_OF_H
-#define _LINUX_CONTAINER_OF_H
+#ifndef _freax_CONTAINER_OF_H
+#define _freax_CONTAINER_OF_H
 
-#include <linux/build_bug.h>
-#include <linux/stddef.h>
+#include <freax/build_bug.h>
+#include <freax/stddef.h>
 
 #define typeof_member(T, m)	typeof(((T*)0)->m)
 
@@ -35,4 +35,4 @@
 		default: ((type *)container_of(ptr, type, member))	\
 	)
 
-#endif	/* _LINUX_CONTAINER_OF_H */
+#endif	/* _freax_CONTAINER_OF_H */

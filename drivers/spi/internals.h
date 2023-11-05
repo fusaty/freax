@@ -9,13 +9,13 @@
  * spi-mem.c and spi.c.
  */
 
-#ifndef __LINUX_SPI_INTERNALS_H
-#define __LINUX_SPI_INTERNALS_H
+#ifndef __freax_SPI_INTERNALS_H
+#define __freax_SPI_INTERNALS_H
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/spi/spi.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/scatterlist.h>
+#include <freax/spi/spi.h>
 
 void spi_flush_queue(struct spi_controller *ctrl);
 
@@ -40,4 +40,4 @@ static inline void spi_unmap_buf(struct spi_controller *ctlr,
 }
 #endif /* CONFIG_HAS_DMA */
 
-#endif /* __LINUX_SPI_INTERNALS_H */
+#endif /* __freax_SPI_INTERNALS_H */

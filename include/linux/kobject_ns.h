@@ -13,8 +13,8 @@
  * destructors.
  */
 
-#ifndef _LINUX_KOBJECT_NS_H
-#define _LINUX_KOBJECT_NS_H
+#ifndef _freax_KOBJECT_NS_H
+#define _freax_KOBJECT_NS_H
 
 struct sock;
 struct kobject;
@@ -56,4 +56,4 @@ const void *kobj_ns_netlink(enum kobj_ns_type type, struct sock *sk);
 const void *kobj_ns_initial(enum kobj_ns_type type);
 void kobj_ns_drop(enum kobj_ns_type type, void *ns);
 
-#endif /* _LINUX_KOBJECT_NS_H */
+#endif /* _freax_KOBJECT_NS_H */

@@ -12,15 +12,15 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/slab.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/usb/usbnet.h>
 
 #define INT51X1_VENDOR_ID	0x09e1
 #define INT51X1_PRODUCT_ID	0x5121

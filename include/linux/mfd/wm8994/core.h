@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/mfd/wm8994/core.h -- Core interface for WM8994
+ * include/freax/mfd/wm8994/core.h -- Core interface for WM8994
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *
@@ -10,11 +10,11 @@
 #ifndef __MFD_WM8994_CORE_H__
 #define __MFD_WM8994_CORE_H__
 
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
+#include <freax/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/wm8994/pdata.h>
+#include <freax/mfd/wm8994/pdata.h>
 
 enum wm8994_type {
 	WM8994 = 0,

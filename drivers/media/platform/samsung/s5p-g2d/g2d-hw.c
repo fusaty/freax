@@ -6,7 +6,7 @@
  * Kamil Debski, <k.debski@samsung.com>
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "g2d.h"
 #include "g2d-regs.h"

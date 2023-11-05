@@ -6,15 +6,15 @@
  *    Extracted from signal_32.c and signal_64.c
  */
 
-#include <linux/resume_user_mode.h>
-#include <linux/signal.h>
-#include <linux/uprobes.h>
-#include <linux/key.h>
-#include <linux/context_tracking.h>
-#include <linux/livepatch.h>
-#include <linux/syscalls.h>
+#include <freax/resume_user_mode.h>
+#include <freax/signal.h>
+#include <freax/uprobes.h>
+#include <freax/key.h>
+#include <freax/context_tracking.h>
+#include <freax/livepatch.h>
+#include <freax/syscalls.h>
 #include <asm/hw_breakpoint.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/switch_to.h>
 #include <asm/unistd.h>
 #include <asm/debug.h>

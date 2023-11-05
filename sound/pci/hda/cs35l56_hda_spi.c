@@ -5,9 +5,9 @@
 // Copyright (C) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #include "cs35l56_hda.h"
 

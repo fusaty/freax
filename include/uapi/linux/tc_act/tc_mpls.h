@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#ifndef __LINUX_TC_MPLS_H
-#define __LINUX_TC_MPLS_H
+#ifndef __freax_TC_MPLS_H
+#define __freax_TC_MPLS_H
 
-#include <linux/pkt_cls.h>
+#include <freax/pkt_cls.h>
 
 #define TCA_MPLS_ACT_POP	1
 #define TCA_MPLS_ACT_PUSH	2

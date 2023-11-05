@@ -6,25 +6,25 @@
  */
 #define pr_fmt(fmt) "numa: " fmt
 
-#include <linux/threads.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pfn.h>
-#include <linux/cpuset.h>
-#include <linux/node.h>
-#include <linux/stop_machine.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/threads.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/export.h>
+#include <freax/nodemask.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pfn.h>
+#include <freax/cpuset.h>
+#include <freax/node.h>
+#include <freax/stop_machine.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 #include <asm/cputhreads.h>
 #include <asm/sparsemem.h>
 #include <asm/smp.h>
@@ -830,15 +830,15 @@ static unsigned long __init numa_enforce_memory_limit(unsigned long start,
 
 /*
  * Reads the counter for a given entry in
- * linux,drconf-usable-memory property
+ * freax,drconf-usable-memory property
  */
 static inline int __init read_usm_ranges(const __be32 **usm)
 {
 	/*
 	 * For each lmb in ibm,dynamic-memory a corresponding
-	 * entry in linux,drconf-usable-memory property contains
+	 * entry in freax,drconf-usable-memory property contains
 	 * a counter followed by that many (base, size) duple.
-	 * read the counter from linux,drconf-usable-memory
+	 * read the counter from freax,drconf-usable-memory
 	 */
 	return read_n_cells(n_mem_size_cells, usm);
 }
@@ -974,7 +974,7 @@ static int __init parse_numa_properties(void)
 		unsigned int len;
 
 		memcell_buf = of_get_property(memory,
-			"linux,usable-memory", &len);
+			"freax,usable-memory", &len);
 		if (!memcell_buf || len <= 0)
 			memcell_buf = of_get_property(memory, "reg", &len);
 		if (!memcell_buf || len <= 0)
@@ -1167,7 +1167,7 @@ void __init mem_topology_setup(void)
 	min_low_pfn = MEMORY_START >> PAGE_SHIFT;
 
 	/*
-	 * Linux/mm assumes node 0 to be online at boot. However this is not
+	 * freax/mm assumes node 0 to be online at boot. However this is not
 	 * true on PowerPC, where node 0 is similar to any other node, it
 	 * could be cpuless, memoryless node. So force node 0 to be offline
 	 * for now. This will prevent cpuless, memoryless node 0 showing up

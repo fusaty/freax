@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2006  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/serial_sci.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/sh_timer.h>
+#include <freax/sh_intc.h>
+#include <freax/serial_sci.h>
+#include <freax/io.h>
 #include <asm/platform_early.h>
 
 enum {

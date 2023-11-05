@@ -7,22 +7,22 @@
  * Copyright (c) 2020 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/mfd/ocelot.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/mfd/ocelot.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
 
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinconf.h"

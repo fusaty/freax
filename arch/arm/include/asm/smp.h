@@ -7,9 +7,9 @@
 #ifndef __ASM_ARM_SMP_H
 #define __ASM_ARM_SMP_H
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/thread_info.h>
+#include <freax/threads.h>
+#include <freax/cpumask.h>
+#include <freax/thread_info.h>
 
 #ifndef CONFIG_SMP
 # error "<asm/smp.h> included in non-SMP build"

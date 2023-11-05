@@ -10,15 +10,15 @@
 //   Author: Shadi Ammouri <shadi@marvell.com>
 //   Copyright (C) 2007-2008 Marvell Ltd.
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/spi/spi.h>
 
 #define DRIVER_NAME		"spi-mt7621"
 

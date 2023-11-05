@@ -4,8 +4,8 @@
 #ifndef __HNS3_ETHTOOL_H
 #define __HNS3_ETHTOOL_H
 
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
 
 struct hns3_stats {
 	char stats_string[ETH_GSTRING_LEN];

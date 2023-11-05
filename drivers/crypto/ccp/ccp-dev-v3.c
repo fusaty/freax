@@ -8,11 +8,11 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/ccp.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/interrupt.h>
+#include <freax/ccp.h>
 
 #include "ccp-dev.h"
 

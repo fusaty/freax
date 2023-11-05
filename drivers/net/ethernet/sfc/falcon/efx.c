@@ -5,19 +5,19 @@
  * Copyright 2005-2013 Solarflare Communications Inc.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/topology.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/notifier.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/in.h>
+#include <freax/ethtool.h>
+#include <freax/topology.h>
+#include <freax/gfp.h>
+#include <freax/interrupt.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "nic.h"

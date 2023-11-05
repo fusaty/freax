@@ -2,11 +2,11 @@
 /*
  *    Support for LG2160 - ATSC/MH
  *
- *    Copyright (C) 2010 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2010 Michael Krufky <mkrufky@freaxtv.org>
  */
 
-#include <linux/jiffies.h>
-#include <linux/dvb/frontend.h>
+#include <freax/jiffies.h>
+#include <freax/dvb/frontend.h>
 #include "lg2160.h"
 
 static int debug;
@@ -1429,6 +1429,6 @@ struct dvb_frontend *lg2160_attach(const struct lg2160_config *config,
 EXPORT_SYMBOL_GPL(lg2160_attach);
 
 MODULE_DESCRIPTION("LG Electronics LG216x ATSC/MH Demodulator Driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@freaxtv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.3");

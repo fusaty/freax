@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LIMITS_H
-#define _LINUX_LIMITS_H
+#ifndef _freax_LIMITS_H
+#define _freax_LIMITS_H
 
-#include <uapi/linux/limits.h>
-#include <linux/types.h>
+#include <uapi/freax/limits.h>
+#include <freax/types.h>
 #include <vdso/limits.h>
 
 #define SIZE_MAX	(~(size_t)0)
@@ -26,4 +26,4 @@
 #define S64_MAX		((s64)(U64_MAX >> 1))
 #define S64_MIN		((s64)(-S64_MAX - 1))
 
-#endif /* _LINUX_LIMITS_H */
+#endif /* _freax_LIMITS_H */

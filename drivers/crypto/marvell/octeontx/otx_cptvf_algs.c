@@ -17,9 +17,9 @@
 #include <crypto/sha2.h>
 #include <crypto/xts.h>
 #include <crypto/scatterwalk.h>
-#include <linux/rtnetlink.h>
-#include <linux/sort.h>
-#include <linux/module.h>
+#include <freax/rtnetlink.h>
+#include <freax/sort.h>
+#include <freax/module.h>
 #include "otx_cptvf.h"
 #include "otx_cptvf_algs.h"
 #include "otx_cptvf_reqmgr.h"

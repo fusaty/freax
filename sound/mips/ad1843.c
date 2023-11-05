@@ -2,16 +2,16 @@
 /*
  *   AD1843 low level driver
  *
- *   Copyright 2003 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ *   Copyright 2003 Vivien Chappelier <vivien.chappelier@freax-mips.org>
  *   Copyright 2008 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  *
  *   inspired from vwsnd.c (SGI VW audio driver)
  *     Copyright 1999 Silicon Graphics, Inc.  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/ad1843.h>

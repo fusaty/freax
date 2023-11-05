@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * External Connector (extcon) framework
- * - linux/include/linux/extcon-provider.h for extcon provider device driver.
+ * - freax/include/freax/extcon-provider.h for extcon provider device driver.
  *
  * Copyright (C) 2017 Samsung Electronics
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
  */
 
-#ifndef __LINUX_EXTCON_PROVIDER_H__
-#define __LINUX_EXTCON_PROVIDER_H__
+#ifndef __freax_EXTCON_PROVIDER_H__
+#define __freax_EXTCON_PROVIDER_H__
 
-#include <linux/extcon.h>
+#include <freax/extcon.h>
 
 struct extcon_dev;
 
@@ -131,4 +131,4 @@ static inline int extcon_set_property_capability(struct extcon_dev *edev,
 	return 0;
 }
 #endif /* CONFIG_EXTCON */
-#endif /* __LINUX_EXTCON_PROVIDER_H__ */
+#endif /* __freax_EXTCON_PROVIDER_H__ */

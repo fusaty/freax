@@ -9,13 +9,13 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/hash.h>
+#include <freax/sunrpc/svc_xprt.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/highmem.h>
+#include <freax/log2.h>
+#include <freax/hash.h>
 #include <net/checksum.h>
 
 #include "nfsd.h"

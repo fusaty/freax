@@ -5,10 +5,10 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#ifndef LINUX_CEC_PIN_H
-#define LINUX_CEC_PIN_H
+#ifndef freax_CEC_PIN_H
+#define freax_CEC_PIN_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <media/cec.h>
 
 /**

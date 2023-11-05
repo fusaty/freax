@@ -2,16 +2,16 @@
 /*
  * Tick related global functions
  */
-#ifndef _LINUX_TICK_H
-#define _LINUX_TICK_H
+#ifndef _freax_TICK_H
+#define _freax_TICK_H
 
-#include <linux/clockchips.h>
-#include <linux/irqflags.h>
-#include <linux/percpu.h>
-#include <linux/context_tracking_state.h>
-#include <linux/cpumask.h>
-#include <linux/sched.h>
-#include <linux/rcupdate.h>
+#include <freax/clockchips.h>
+#include <freax/irqflags.h>
+#include <freax/percpu.h>
+#include <freax/context_tracking_state.h>
+#include <freax/cpumask.h>
+#include <freax/sched.h>
+#include <freax/rcupdate.h>
 
 #ifdef CONFIG_GENERIC_CLOCKEVENTS
 extern void __init tick_init(void);

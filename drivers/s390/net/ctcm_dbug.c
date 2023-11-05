@@ -5,16 +5,16 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/ctype.h>
+#include <freax/sysctl.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/debugfs.h>
 #include "ctcm_dbug.h"
 
 /*

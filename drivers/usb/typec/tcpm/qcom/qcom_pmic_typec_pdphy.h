@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Ltd. All rights reserved.
  */
 #ifndef __QCOM_PMIC_PDPHY_H__
 #define __QCOM_PMIC_PDPHY_H__
 
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/usb/tcpm.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/usb/tcpm.h>
 
 #define USB_PDPHY_MAX_DATA_OBJ_LEN	28
 #define USB_PDPHY_MSG_HDR_LEN		2

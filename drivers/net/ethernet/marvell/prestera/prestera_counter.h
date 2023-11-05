@@ -4,7 +4,7 @@
 #ifndef _PRESTERA_COUNTER_H_
 #define _PRESTERA_COUNTER_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct prestera_counter_stats {
 	u64 packets;

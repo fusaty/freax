@@ -2,7 +2,7 @@
 /*
  * mm/percpu.c - percpu memory allocator
  *
- * Copyright (C) 2009		SUSE Linux Products GmbH
+ * Copyright (C) 2009		SUSE freax Products GmbH
  * Copyright (C) 2009		Tejun Heo <tj@kernel.org>
  *
  * Copyright (C) 2017		Facebook Inc.
@@ -68,25 +68,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/kmemleak.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/memcontrol.h>
+#include <freax/bitmap.h>
+#include <freax/cpumask.h>
+#include <freax/memblock.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/pfn.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/kmemleak.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/memcontrol.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sections.h>

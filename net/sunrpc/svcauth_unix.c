@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/sunrpc/types.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/svcauth.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/err.h>
+#include <freax/seq_file.h>
+#include <freax/hash.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/ipv6.h>
-#include <linux/kernel.h>
-#include <linux/user_namespace.h>
+#include <freax/kernel.h>
+#include <freax/user_namespace.h>
 #include <trace/events/sunrpc.h>
 
 #define RPCDBG_FACILITY	RPCDBG_AUTH

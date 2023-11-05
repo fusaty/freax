@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Mellanox Technologies. All rights reserved */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
 #include "netdevsim.h"
 

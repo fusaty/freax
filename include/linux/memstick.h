@@ -8,9 +8,9 @@
 #ifndef _MEMSTICK_H
 #define _MEMSTICK_H
 
-#include <linux/workqueue.h>
-#include <linux/scatterlist.h>
-#include <linux/device.h>
+#include <freax/workqueue.h>
+#include <freax/scatterlist.h>
+#include <freax/device.h>
 
 /*** Hardware based structures ***/
 

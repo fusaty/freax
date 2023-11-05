@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #ifdef CONFIG_HAVE_EFFICIENT_UNALIGNED_STRING_OPS
 EXPORT_SYMBOL(memcpy);

@@ -10,16 +10,16 @@
  * Specifications at www.trustedcomputinggroup.org
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/slab.h>
 #include <asm/vio.h>
 #include <asm/irq.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
 #include <asm/prom.h>
 
 #include "tpm.h"

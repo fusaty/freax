@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/dma-mapping.c
+ *  freax/arch/arm/mm/dma-mapping.c
  *
  *  Copyright (C) 2000-2004 Russell King
  *
  *  DMA uncached mapping support.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/genalloc.h>
-#include <linux/gfp.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
-#include <linux/cma.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/genalloc.h>
+#include <freax/gfp.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
+#include <freax/highmem.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
+#include <freax/iommu.h>
+#include <freax/io.h>
+#include <freax/vmalloc.h>
+#include <freax/sizes.h>
+#include <freax/cma.h>
 
 #include <asm/page.h>
 #include <asm/highmem.h>

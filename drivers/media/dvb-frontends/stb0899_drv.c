@@ -7,14 +7,14 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 #include "stb0899_drv.h"

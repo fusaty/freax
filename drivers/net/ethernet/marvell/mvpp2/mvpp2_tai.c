@@ -32,9 +32,9 @@
  *
  * Consequently, we support none of these.
  */
-#include <linux/io.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/slab.h>
 
 #include "mvpp2.h"
 

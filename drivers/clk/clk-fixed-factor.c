@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2011 Sascha Hauer, Pengutronix <s.hauer@pengutronix.de>
  */
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 /*
  * DOC: basic fixed multiplier and divider clock that cannot gate

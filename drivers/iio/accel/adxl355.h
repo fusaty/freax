@@ -8,7 +8,7 @@
 #ifndef _ADXL355_H_
 #define _ADXL355_H_
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 enum adxl355_device_type {
 	ADXL355,

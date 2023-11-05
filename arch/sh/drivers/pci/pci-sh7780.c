@@ -4,19 +4,19 @@
  *
  *  Copyright (C) 2005 - 2010  Paul Mundt
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/irq.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/log2.h>
 #include "pci-sh4.h"
 #include <asm/mmu.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #if defined(CONFIG_CPU_BIG_ENDIAN)
 # define PCICR_ENDIANNESS SH4_PCICR_BSWP

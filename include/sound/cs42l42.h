@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/cs42l42.h -- Platform data for CS42L42 ALSA SoC audio driver header
+ * freax/sound/cs42l42.h -- Platform data for CS42L42 ALSA SoC audio driver header
  *
  * Copyright 2016-2022 Cirrus Logic, Inc.
  *

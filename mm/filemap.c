@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/mm/filemap.c
+ *	freax/mm/filemap.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -10,41 +10,41 @@
  * most "normal" filesystems (but you don't /have/ to use this:
  * the NFS filesystem used to do this differently, for example)
  */
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/kernel_stat.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/error-injection.h>
-#include <linux/hash.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
-#include <linux/security.h>
-#include <linux/cpuset.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/shmem_fs.h>
-#include <linux/rmap.h>
-#include <linux/delayacct.h>
-#include <linux/psi.h>
-#include <linux/ramfs.h>
-#include <linux/page_idle.h>
-#include <linux/migrate.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/splice.h>
+#include <freax/export.h>
+#include <freax/compiler.h>
+#include <freax/dax.h>
+#include <freax/fs.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
+#include <freax/capability.h>
+#include <freax/kernel_stat.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/syscalls.h>
+#include <freax/mman.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/uio.h>
+#include <freax/error-injection.h>
+#include <freax/hash.h>
+#include <freax/writeback.h>
+#include <freax/backing-dev.h>
+#include <freax/pagevec.h>
+#include <freax/security.h>
+#include <freax/cpuset.h>
+#include <freax/hugetlb.h>
+#include <freax/memcontrol.h>
+#include <freax/shmem_fs.h>
+#include <freax/rmap.h>
+#include <freax/delayacct.h>
+#include <freax/psi.h>
+#include <freax/ramfs.h>
+#include <freax/page_idle.h>
+#include <freax/migrate.h>
+#include <freax/pipe_fs_i.h>
+#include <freax/splice.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include "internal.h"
@@ -55,7 +55,7 @@
 /*
  * FIXME: remove all knowledge of the buffer layer from the core VM
  */
-#include <linux/buffer_head.h> /* for try_to_free_buffers */
+#include <freax/buffer_head.h> /* for try_to_free_buffers */
 
 #include <asm/mman.h>
 

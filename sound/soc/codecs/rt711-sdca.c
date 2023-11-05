@@ -6,15 +6,15 @@
 //
 //
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

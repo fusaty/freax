@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/random.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/memblock.h>
+#include <freax/random.h>
 #include <asm/dmi.h>
 #include <asm/unaligned.h>
 

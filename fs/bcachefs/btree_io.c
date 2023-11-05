@@ -21,7 +21,7 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/sched/mm.h>
+#include <freax/sched/mm.h>
 
 void bch2_btree_node_io_unlock(struct btree *b)
 {

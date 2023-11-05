@@ -35,12 +35,12 @@
  * otherwise both handlers will fire at the same time!
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
 
 #include <asm/exception.h>
 

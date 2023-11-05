@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) "fsl-mc: " fmt
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/limits.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/acpi.h>
-#include <linux/iommu.h>
-#include <linux/dma-map-ops.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/of_address.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/limits.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/acpi.h>
+#include <freax/iommu.h>
+#include <freax/dma-map-ops.h>
 
 #include "fsl-mc-private.h"
 
@@ -776,7 +776,7 @@ static void fsl_mc_device_release(struct device *dev)
 }
 
 /*
- * Add a newly discovered fsl-mc device to be visible in Linux
+ * Add a newly discovered fsl-mc device to be visible in freax
  */
 int fsl_mc_device_add(struct fsl_mc_obj_desc *obj_desc,
 		      struct fsl_mc_io *mc_io,
@@ -916,7 +916,7 @@ static struct notifier_block fsl_mc_nb;
 
 /**
  * fsl_mc_device_remove - Remove an fsl-mc device from being visible to
- * Linux
+ * freax
  *
  * @mc_dev: Pointer to an fsl-mc device
  */

@@ -2,7 +2,7 @@
 //
 // Copyright(c) 2023 Intel Corporation. All rights reserved.
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <sound/soc-acpi.h>
 #include "sof_ssp_common.h"
 

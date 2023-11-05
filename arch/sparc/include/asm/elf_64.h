@@ -206,8 +206,8 @@ do {	if ((ex).e_ident[EI_CLASS] == ELFCLASS32)	\
 	else						\
 		clear_thread_flag(TIF_32BIT);		\
 	/* flush_thread will update pgd cache */	\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |		\
+	if (personality(current->personality) != PER_freax32)	\
+		set_personality(PER_freax |		\
 			(current->personality & (~PER_MASK)));	\
 } while (0)
 
@@ -224,9 +224,9 @@ do {									\
 	NEW_AUX_ENT(AT_ADI_UEONADI, adi_state.caps.ue_on_adi);		\
 } while (0)
 
-struct linux_binprm;
+struct freax_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES	1
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int arch_setup_additional_pages(struct freax_binprm *bprm,
 					int uses_interp);
 #endif /* !(__ASM_SPARC64_ELF_H) */

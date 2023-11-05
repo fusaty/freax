@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ENTRYCOMMON_H
-#define __LINUX_ENTRYCOMMON_H
+#ifndef __freax_ENTRYCOMMON_H
+#define __freax_ENTRYCOMMON_H
 
-#include <linux/static_call_types.h>
-#include <linux/ptrace.h>
-#include <linux/syscalls.h>
-#include <linux/seccomp.h>
-#include <linux/sched.h>
+#include <freax/static_call_types.h>
+#include <freax/ptrace.h>
+#include <freax/syscalls.h>
+#include <freax/seccomp.h>
+#include <freax/sched.h>
 
 #include <asm/entry-common.h>
 

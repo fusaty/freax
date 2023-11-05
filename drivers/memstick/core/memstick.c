@@ -8,13 +8,13 @@
  * that made this driver possible.
  */
 
-#include <linux/memstick.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/memstick.h>
+#include <freax/idr.h>
+#include <freax/fs.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 
 #define DRIVER_NAME "memstick"
 

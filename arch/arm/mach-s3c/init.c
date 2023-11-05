@@ -2,7 +2,7 @@
 //
 // Copyright (c) 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // S3C series CPU initialisation
 
@@ -11,14 +11,14 @@
  * Device Tree support.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/serial_core.h>
+#include <freax/serial_s3c.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -60,7 +60,7 @@ void __init s3c_init_cpu(unsigned long idcode,
 	if (cpu->map_io)
 		cpu->map_io();
 
-	pr_err("The platform is deprecated and scheduled for removal. Please reach to the maintainers of the platform and linux-samsung-soc@vger.kernel.org if you still use it.  Without such feedback, the platform will be removed after 2022.\n");
+	pr_err("The platform is deprecated and scheduled for removal. Please reach to the maintainers of the platform and freax-samsung-soc@vger.kernel.org if you still use it.  Without such feedback, the platform will be removed after 2022.\n");
 }
 
 /* uart management */

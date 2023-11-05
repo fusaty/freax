@@ -11,21 +11,21 @@
  * Link to PC-based configuration tool and datasheet: https://www.azoteq.com/
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 #define IQS5XX_FW_FILE_LEN	64

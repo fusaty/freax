@@ -23,20 +23,20 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/sched.h>
+#include <freax/cpufreq.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
 
 #include <acpi/processor.h>
 

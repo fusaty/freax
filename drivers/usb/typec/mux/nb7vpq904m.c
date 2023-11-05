@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2023 Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
  */
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
-#include <linux/of_graph.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/of_graph.h>
 #include <drm/drm_bridge.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_retimer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_retimer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #define NB7_CHNA		0
 #define NB7_CHNB		1

@@ -5,9 +5,9 @@
  * Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 

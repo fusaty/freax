@@ -6,13 +6,13 @@
  * Author: Xiaolong Zhang <xiaolong.zhang@unisoc.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/sprd,ums512-clk.h>
 

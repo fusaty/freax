@@ -25,24 +25,24 @@ override c_flags = $(UAPI_CFLAGS) -Wp,-MMD,$(depfile) -I $(obj) -I $(srctree)/us
 # Sorted alphabetically.
 no-header-test += asm/ucontext.h
 no-header-test += drm/vmwgfx_drm.h
-no-header-test += linux/am437x-vpfe.h
-no-header-test += linux/coda.h
-no-header-test += linux/cyclades.h
-no-header-test += linux/errqueue.h
-no-header-test += linux/hdlc/ioctl.h
-no-header-test += linux/ivtv.h
-no-header-test += linux/matroxfb.h
-no-header-test += linux/omap3isp.h
-no-header-test += linux/omapfb.h
-no-header-test += linux/patchkey.h
-no-header-test += linux/phonet.h
-no-header-test += linux/sctp.h
-no-header-test += linux/sysctl.h
-no-header-test += linux/usb/audio.h
-no-header-test += linux/v4l2-mediabus.h
-no-header-test += linux/v4l2-subdev.h
-no-header-test += linux/videodev2.h
-no-header-test += linux/vm_sockets.h
+no-header-test += freax/am437x-vpfe.h
+no-header-test += freax/coda.h
+no-header-test += freax/cyclades.h
+no-header-test += freax/errqueue.h
+no-header-test += freax/hdlc/ioctl.h
+no-header-test += freax/ivtv.h
+no-header-test += freax/matroxfb.h
+no-header-test += freax/omap3isp.h
+no-header-test += freax/omapfb.h
+no-header-test += freax/patchkey.h
+no-header-test += freax/phonet.h
+no-header-test += freax/sctp.h
+no-header-test += freax/sysctl.h
+no-header-test += freax/usb/audio.h
+no-header-test += freax/v4l2-mediabus.h
+no-header-test += freax/v4l2-subdev.h
+no-header-test += freax/videodev2.h
+no-header-test += freax/vm_sockets.h
 no-header-test += sound/asequencer.h
 no-header-test += sound/asoc.h
 no-header-test += sound/asound.h
@@ -56,11 +56,11 @@ no-header-test += xen/privcmd.h
 # More headers are broken in some architectures
 
 ifeq ($(SRCARCH),arc)
-no-header-test += linux/bpf_perf_event.h
+no-header-test += freax/bpf_perf_event.h
 endif
 
 ifeq ($(SRCARCH),powerpc)
-no-header-test += linux/bpf_perf_event.h
+no-header-test += freax/bpf_perf_event.h
 endif
 
 ifeq ($(SRCARCH),sparc)

@@ -13,10 +13,10 @@
  * Authors: Adam Ward, Dialog Semiconductor
  */
 
-#ifndef __LINUX_REGULATOR_DA9121_H
-#define __LINUX_REGULATOR_DA9121_H
+#ifndef __freax_REGULATOR_DA9121_H
+#define __freax_REGULATOR_DA9121_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 struct gpio_desc;
 

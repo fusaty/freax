@@ -42,25 +42,25 @@
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <100000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		button-back {
 			label = "Back";
-			linux,code = <KEY_BACK>;
+			freax,code = <KEY_BACK>;
 			press-threshold-microvolt = <985000>;
 		};
 
 		button-menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <1314000>;
 		};
 	};
@@ -82,8 +82,8 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Power";
-			linux,code = <KEY_POWER>;
-			linux,input-type = <1>;
+			freax,code = <KEY_POWER>;
+			freax,input-type = <1>;
 			pinctrl-names = "default";
 			pinctrl-0 = <&pwr_btn>;
 			wakeup-source;

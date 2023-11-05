@@ -5,8 +5,8 @@
  * Copyright (C) 2014 Marvell Semiconductor
  */
 
-#ifndef __LINUX_MVEBU_SOC_ID_H
-#define __LINUX_MVEBU_SOC_ID_H
+#ifndef __freax_MVEBU_SOC_ID_H
+#define __freax_MVEBU_SOC_ID_H
 
 /* Armada XP ID */
 #define MV78230_DEV_ID	    0x7823
@@ -48,4 +48,4 @@ static inline int mvebu_get_soc_id(u32 *dev, u32 *rev)
 }
 #endif
 
-#endif /* __LINUX_MVEBU_SOC_ID_H */
+#endif /* __freax_MVEBU_SOC_ID_H */

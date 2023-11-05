@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/setup.c
+ *  freax/arch/alpha/kernel/setup.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -11,41 +11,41 @@
  * Bootup setup stuff.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/screen_info.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/panic_notifier.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/eisa.h>
-#include <linux/pfn.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/user.h>
+#include <freax/screen_info.h>
+#include <freax/delay.h>
+#include <freax/mc146818rtc.h>
+#include <freax/console.h>
+#include <freax/cpu.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/panic_notifier.h>
+#include <freax/platform_device.h>
+#include <freax/memblock.h>
+#include <freax/pci.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/initrd.h>
+#include <freax/eisa.h>
+#include <freax/pfn.h>
 #ifdef CONFIG_MAGIC_SYSRQ
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
+#include <freax/sysrq.h>
+#include <freax/reboot.h>
 #endif
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 #include <asm/setup.h>
 #include <asm/io.h>
-#include <linux/log2.h>
-#include <linux/export.h>
+#include <freax/log2.h>
+#include <freax/export.h>
 
 static int alpha_panic_event(struct notifier_block *, unsigned long, void *);
 static struct notifier_block alpha_panic_block = {
@@ -54,7 +54,7 @@ static struct notifier_block alpha_panic_block = {
         INT_MAX /* try to do it first */
 };
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/hwrpb.h>
 #include <asm/dma.h>
 #include <asm/mmu_context.h>

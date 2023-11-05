@@ -7,7 +7,7 @@
  * Copyright (C) 2008 Yoshinori Sato
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 !
 ! convert Exception Vector to Exception Number

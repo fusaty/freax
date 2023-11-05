@@ -6,7 +6,7 @@
 
 #ifndef __KVM_NVHE_MEM_PROTECT__
 #define __KVM_NVHE_MEM_PROTECT__
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/kvm_hyp.h>
 #include <asm/kvm_mmu.h>
 #include <asm/kvm_pgtable.h>

@@ -9,7 +9,7 @@
  * In order to keep track of what pids to trace, a tree is created much
  * like page tables are used. This creates a sparse bit map, where
  * the tree is filled in when needed. A PID is at most 30 bits (see
- * linux/thread.h), and is broken up into 3 sections based on the bit map
+ * freax/thread.h), and is broken up into 3 sections based on the bit map
  * of the bits. The 8 MSB is the "upper1" section. The next 8 MSB is the
  * "upper2" section and the 14 LSB is the "lower" section.
  *
@@ -56,7 +56,7 @@
 
 #define UPPER_MASK	(UPPER_MAX - 1)
 
-/* According to linux/thread.h pids can not be bigger than or equal to 1 << 30 */
+/* According to freax/thread.h pids can not be bigger than or equal to 1 << 30 */
 #define MAX_PID		(1 << 30)
 
 /* Just keep 6 chunks of both upper and lower in the cache on alloc */

@@ -3,9 +3,9 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/const.h>
 #include <asm/page.h>
 
 	.globl vdso32_start, vdso32_end

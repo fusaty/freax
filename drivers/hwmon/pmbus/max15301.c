@@ -11,15 +11,15 @@
  * to 100us to include some safety margin.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/pmbus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/ktime.h>
+#include <freax/delay.h>
+#include <freax/pmbus.h>
 #include "pmbus.h"
 
 static const struct i2c_device_id max15301_id[] = {

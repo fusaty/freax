@@ -30,7 +30,7 @@
 #ifndef _AGP_BACKEND_H
 #define _AGP_BACKEND_H 1
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 enum chipset_type {
 	NOT_SUPPORTED,

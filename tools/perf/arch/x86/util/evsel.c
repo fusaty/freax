@@ -5,7 +5,7 @@
 #include "util/env.h"
 #include "util/pmu.h"
 #include "util/pmus.h"
-#include "linux/string.h"
+#include "freax/string.h"
 #include "evsel.h"
 #include "util/debug.h"
 #include "env.h"

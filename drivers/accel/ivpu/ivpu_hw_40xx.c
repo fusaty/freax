@@ -12,7 +12,7 @@
 #include "ivpu_mmu.h"
 #include "ivpu_pm.h"
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #define TILE_MAX_NUM                 6
 #define TILE_MAX_MASK                0x3f

@@ -5,16 +5,16 @@
  * Clock driver for LS1028A Display output interfaces(LCD, DPHY).
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/bitfield.h>
 
 /* PLLDIG register offsets and bit masks */
 #define PLLDIG_REG_PLLSR            0x24

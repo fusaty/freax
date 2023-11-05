@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2009-2018, Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2018, freax Foundation. All rights reserved.
  * Copyright (c) 2018-2020, Linaro Limited
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 /* PHY register and bit definitions */
 #define PHY_CTRL_COMMON0		0x078

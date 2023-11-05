@@ -6,7 +6,7 @@
 #ifndef __KVM_RISCV_AIA_IMSIC_H
 #define __KVM_RISCV_AIA_IMSIC_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define APLIC_MAX_IDC			BIT(14)
 #define APLIC_MAX_SOURCE		1024

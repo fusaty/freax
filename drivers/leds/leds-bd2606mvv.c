@@ -10,13 +10,13 @@
  * is possible for the affected LED pair.
  */
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define BD2606_MAX_LEDS 6
 #define BD2606_MAX_BRIGHTNESS 63

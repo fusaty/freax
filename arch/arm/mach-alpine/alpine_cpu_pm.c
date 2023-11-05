@@ -5,11 +5,11 @@
  * Copyright (C) 2015 Annapurna Labs Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
 #include "alpine_cpu_pm.h"
 #include "alpine_cpu_resume.h"

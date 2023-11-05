@@ -3,11 +3,11 @@
  * (C) Copyright David Brownell 2000-2002
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

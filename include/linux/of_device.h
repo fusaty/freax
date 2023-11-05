@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_OF_DEVICE_H
-#define _LINUX_OF_DEVICE_H
+#ifndef _freax_OF_DEVICE_H
+#define _freax_OF_DEVICE_H
 
-#include <linux/platform_device.h>
-#include <linux/of_platform.h> /* temporary until merge */
+#include <freax/platform_device.h>
+#include <freax/of_platform.h> /* temporary until merge */
 
-#include <linux/of.h>
+#include <freax/of.h>
 
 struct device;
 struct of_device_id;
@@ -84,4 +84,4 @@ static inline int of_dma_configure(struct device *dev,
 }
 #endif /* CONFIG_OF */
 
-#endif /* _LINUX_OF_DEVICE_H */
+#endif /* _freax_OF_DEVICE_H */

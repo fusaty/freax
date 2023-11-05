@@ -19,17 +19,17 @@
  *	    September 2004
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/suspend.h>
-#include <linux/w1.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/param.h>
+#include <freax/jiffies.h>
+#include <freax/workqueue.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/suspend.h>
+#include <freax/w1.h>
+#include <freax/of.h>
 
 static unsigned int cache_time = 1000;
 module_param(cache_time, uint, 0644);

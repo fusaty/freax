@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NETLINK_H
-#define __LINUX_NETLINK_H
+#ifndef __freax_NETLINK_H
+#define __freax_NETLINK_H
 
 
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <freax/capability.h>
+#include <freax/skbuff.h>
+#include <freax/export.h>
 #include <net/scm.h>
-#include <uapi/linux/netlink.h>
+#include <uapi/freax/netlink.h>
 
 struct net;
 
@@ -352,4 +352,4 @@ bool netlink_ns_capable(const struct sk_buff *skb,
 bool netlink_capable(const struct sk_buff *skb, int cap);
 bool netlink_net_capable(const struct sk_buff *skb, int cap);
 
-#endif	/* __LINUX_NETLINK_H */
+#endif	/* __freax_NETLINK_H */

@@ -8,13 +8,13 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/types.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/radix-tree.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/machine.h>
+#include <freax/pinctrl/machine.h>
 
 struct dentry;
 struct device;

@@ -7,25 +7,25 @@
  * Copyright (c) 2015, Boaz Harrosh <boaz@plexistor.com>.
  */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/hdreg.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/set_memory.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/badblocks.h>
-#include <linux/memremap.h>
-#include <linux/kstrtox.h>
-#include <linux/vmalloc.h>
-#include <linux/blk-mq.h>
-#include <linux/pfn_t.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
-#include <linux/nd.h>
-#include <linux/mm.h>
+#include <freax/blkdev.h>
+#include <freax/pagemap.h>
+#include <freax/hdreg.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/set_memory.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/badblocks.h>
+#include <freax/memremap.h>
+#include <freax/kstrtox.h>
+#include <freax/vmalloc.h>
+#include <freax/blk-mq.h>
+#include <freax/pfn_t.h>
+#include <freax/slab.h>
+#include <freax/uio.h>
+#include <freax/dax.h>
+#include <freax/nd.h>
+#include <freax/mm.h>
 #include <asm/cacheflush.h>
 #include "pmem.h"
 #include "btt.h"
@@ -764,5 +764,5 @@ static struct nd_device_driver nd_pmem_driver = {
 
 module_nd_driver(nd_pmem_driver);
 
-MODULE_AUTHOR("Ross Zwisler <ross.zwisler@linux.intel.com>");
+MODULE_AUTHOR("Ross Zwisler <ross.zwisler@freax.intel.com>");
 MODULE_LICENSE("GPL v2");

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_COMPILER_H
-#define __LINUX_COMPILER_H
+#ifndef __freax_COMPILER_H
+#define __freax_COMPILER_H
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 #ifndef __ASSEMBLY__
 
@@ -250,4 +250,4 @@ static inline void *offset_to_ptr(const int *off)
 
 #include <asm/rwonce.h>
 
-#endif /* __LINUX_COMPILER_H */
+#endif /* __freax_COMPILER_H */

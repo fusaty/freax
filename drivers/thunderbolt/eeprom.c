@@ -6,10 +6,10 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 #include "tb.h"
 
 /*

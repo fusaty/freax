@@ -2,15 +2,15 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@freax.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@freax.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/syscalls.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/syscalls.h>
 #include <asm/unaligned.h>
 #include <asm/bitsperlong.h>
 

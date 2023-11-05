@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
-#include <linux/atomic.h>
-#include <linux/export.h>
+#include <freax/atomic.h>
+#include <freax/export.h>
 #include "cxlmem.h"
 
 static atomic_t mem_active;

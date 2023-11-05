@@ -2,10 +2,10 @@
 .. sectnum::
 
 ==========================
-Linux implementation notes
+freax implementation notes
 ==========================
 
-This document provides more details specific to the Linux kernel implementation of the eBPF instruction set.
+This document provides more details specific to the freax kernel implementation of the eBPF instruction set.
 
 Byte swap instructions
 ======================
@@ -23,9 +23,9 @@ until such support is added.
 Maps
 ====
 
-Linux only supports the 'map_val(map)' operation on array maps with a single element.
+freax only supports the 'map_val(map)' operation on array maps with a single element.
 
-Linux uses an fd_array to store maps associated with a BPF program. Thus,
+freax uses an fd_array to store maps associated with a BPF program. Thus,
 map_by_idx(imm) uses the fd at that index in the array.
 
 Variables
@@ -40,14 +40,14 @@ opcode construction        opcode  src  pseudocode                              
 BPF_IMM | BPF_DW | BPF_LD  0x18    0x3  dst = var_addr(imm)                        variable id  data pointer
 =========================  ======  ===  =========================================  ===========  ==============
 
-On Linux, this integer is a BTF ID.
+On freax, this integer is a BTF ID.
 
 Legacy BPF Packet access instructions
 =====================================
 
 As mentioned in the `ISA standard documentation
 <instruction-set.html#legacy-bpf-packet-access-instructions>`_,
-Linux has special eBPF instructions for access to packet data that have been
+freax has special eBPF instructions for access to packet data that have been
 carried over from classic BPF to retain the performance of legacy socket
 filters running in the eBPF interpreter.
 

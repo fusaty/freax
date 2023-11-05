@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt)	"opal: " fmt
 
-#include <linux/printk.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kobject.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/sched/debug.h>
+#include <freax/printk.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/kobject.h>
+#include <freax/delay.h>
+#include <freax/memblock.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/kmsg_dump.h>
+#include <freax/console.h>
+#include <freax/sched/debug.h>
 
 #include <asm/machdep.h>
 #include <asm/opal.h>
@@ -222,12 +222,12 @@ static int __init opal_register_exception_handlers(void)
 	 *
 	 * Check if we are running on newer (post Oct 2014) firmware that
 	 * exports the OPAL_HANDLE_HMI token. If yes, then don't ask OPAL to
-	 * patch the HMI interrupt and we catch it directly in Linux.
+	 * patch the HMI interrupt and we catch it directly in freax.
 	 *
 	 * For older firmware (i.e < FW810.20), we fallback to old behavior and
 	 * let OPAL patch the HMI vector and handle it inside OPAL firmware.
 	 *
-	 * For newer firmware we catch/handle the HMI directly in Linux.
+	 * For newer firmware we catch/handle the HMI directly in freax.
 	 */
 	if (!opal_check_token(OPAL_HANDLE_HMI)) {
 		pr_info("Old firmware detected, OPAL handles HMIs.\n");
@@ -700,7 +700,7 @@ int opal_hmi_exception_early(struct pt_regs *regs)
 	/*
 	 * call opal hmi handler. Pass paca address as token.
 	 * The return value OPAL_SUCCESS is an indication that there is
-	 * an HMI event generated waiting to pull by Linux.
+	 * an HMI event generated waiting to pull by freax.
 	 */
 	rc = opal_handle_hmi();
 	if (rc == OPAL_SUCCESS) {

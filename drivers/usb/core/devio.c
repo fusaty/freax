@@ -21,27 +21,27 @@
 
 /*****************************************************************************/
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/signal.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>	/* for usbcore internals */
-#include <linux/usb/quirks.h>
-#include <linux/cdev.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
-#include <linux/dma-mapping.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/signal.h>
+#include <freax/poll.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/usb.h>
+#include <freax/usbdevice_fs.h>
+#include <freax/usb/hcd.h>	/* for usbcore internals */
+#include <freax/usb/quirks.h>
+#include <freax/cdev.h>
+#include <freax/notifier.h>
+#include <freax/security.h>
+#include <freax/user_namespace.h>
+#include <freax/scatterlist.h>
+#include <freax/uaccess.h>
+#include <freax/dma-mapping.h>
 #include <asm/byteorder.h>
-#include <linux/moduleparam.h>
+#include <freax/moduleparam.h>
 
 #include "usb.h"
 

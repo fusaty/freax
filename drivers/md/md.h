@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
-   md.h : kernel internal structure of the Linux MD driver
+   md.h : kernel internal structure of the freax MD driver
           Copyright (C) 1996-98 Ingo Molnar, Gadi Oxman
 
 */
@@ -8,16 +8,16 @@
 #ifndef _MD_MD_H
 #define _MD_MD_H
 
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/badblocks.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/badblocks.h>
+#include <freax/kobject.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/timer.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 #include "md-cluster.h"
 
 #define MaxSector (~(sector_t)0)

@@ -132,13 +132,13 @@
  * be selected instead, as long as is not a polling state.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/topology.h>
-#include <linux/tick.h>
+#include <freax/cpuidle.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/topology.h>
+#include <freax/tick.h>
 
 #include "gov.h"
 

@@ -8,17 +8,17 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/genalloc.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/genalloc.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 
 /*

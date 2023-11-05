@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "drm_dp_helper_internal.h"
 

@@ -3,22 +3,22 @@
  * Copyright(c) 2020, Analogix Semiconductor. All rights reserved.
  *
  */
-#include <linux/gcd.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/gcd.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
+#include <freax/of_graph.h>
+#include <freax/of_platform.h>
 
 #include <drm/display/drm_dp_aux_bus.h>
 #include <drm/display/drm_dp_helper.h>

@@ -6,12 +6,12 @@
  *
  * Copyright (c) 2001, 2002 M. R. Brown <mrbrown@0xd6.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the freaxDC project (www.freaxdc.org)
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/export.h>
+#include <freax/err.h>
 #include <mach/sysasic.h>
 
 /*

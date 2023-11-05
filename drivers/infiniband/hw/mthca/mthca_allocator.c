@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/bitmap.h>
 
 #include "mthca_dev.h"
 

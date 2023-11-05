@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/time.h>
-#include <linux/types.h>
+#include <freax/time.h>
+#include <freax/types.h>
 
 extern
 int __vdso_clock_gettime(clockid_t clock,

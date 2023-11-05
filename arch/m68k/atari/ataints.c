@@ -1,5 +1,5 @@
 /*
- * arch/m68k/atari/ataints.c -- Atari Linux interrupt handling code
+ * arch/m68k/atari/ataints.c -- Atari freax interrupt handling code
  *
  * 5/2/94 Roman Hodek:
  *  Added support for TT interrupts; setup for TT SCU (may someone has
@@ -35,13 +35,13 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/kernel_stat.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/module.h>
+#include <freax/irq.h>
 
 #include <asm/traps.h>
 

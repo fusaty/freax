@@ -5,15 +5,15 @@
  * Copyright (C) 2016 Cogent Embedded Inc.
  */
 
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/bug.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #include "renesas-cpg-mssr.h"
 #include "rcar-gen2-cpg.h"

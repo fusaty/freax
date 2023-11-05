@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_NETFILTER_XT_L2TP_H
-#define _LINUX_NETFILTER_XT_L2TP_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_NETFILTER_XT_L2TP_H
+#define _freax_NETFILTER_XT_L2TP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum xt_l2tp_type {
 	XT_L2TP_TYPE_CONTROL,
@@ -25,4 +25,4 @@ enum {
 	XT_L2TP_TYPE	= (1 << 3),	/* match L2TP packet type */
 };
 
-#endif /* _LINUX_NETFILTER_XT_L2TP_H */
+#endif /* _freax_NETFILTER_XT_L2TP_H */

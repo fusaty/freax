@@ -4,15 +4,15 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 #include "ltc2947.h"
 

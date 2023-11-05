@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_modeset_helper.h>

@@ -7,15 +7,15 @@
  * Copyright (c) 2005 Dag Arne Osvik <da@osvik.no>
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/crypto.h>
+#include <freax/errno.h>
+#include <freax/fips.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 

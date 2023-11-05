@@ -6,15 +6,15 @@
  * Copyright (C) 2016 Microchip Technology Inc.  All rights reserved.
  *
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
 
 #include <asm/mach-pic32/pic32.h>
 

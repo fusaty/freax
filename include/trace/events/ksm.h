@@ -5,7 +5,7 @@
 #if !defined(_TRACE_KSM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KSM_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 /**
  * ksm_scan_template - called for start / stop scan

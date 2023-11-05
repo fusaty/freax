@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 #include "gt/intel_gt_pm.h"
 #include "gt/uc/intel_gsc_fw.h"

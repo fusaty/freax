@@ -10,15 +10,15 @@
  * Contact: Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/led-class-flash.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/led-class-flash.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-flash-led-class.h>
 

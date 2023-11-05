@@ -26,14 +26,14 @@
 
 		button-0 {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&gpio 3 GPIO_ACTIVE_LOW>;
 			debounce-interval = <60>;
 		};
 
 		button-1 {
 			label = "qss";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&gpio 7 GPIO_ACTIVE_LOW>;
 			debounce-interval = <60>;
 		};
@@ -49,7 +49,7 @@
 		led-1 {
 			label = "tp-link:green:system";
 			gpios = <&gpio 2 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-2 {

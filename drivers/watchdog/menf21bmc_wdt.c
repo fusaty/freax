@@ -5,12 +5,12 @@
  *  Copyright (C) 2014 MEN Mikro Elektronik Nuernberg GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
 
 #define DEVNAME "menf21bmc_wdt"
 

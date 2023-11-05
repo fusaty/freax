@@ -4,13 +4,13 @@
  *  Copyright (C) 2017 Zihao Yu
  */
 
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/moduleloader.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
-#include <linux/pgtable.h>
+#include <freax/elf.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/moduleloader.h>
+#include <freax/vmalloc.h>
+#include <freax/sizes.h>
+#include <freax/pgtable.h>
 #include <asm/alternative.h>
 #include <asm/sections.h>
 

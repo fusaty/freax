@@ -6,10 +6,10 @@
  * Copyright (C) 2017 Christoph Hellwig.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/pci.h>
 
 /**
  * pci_request_irq - allocate an interrupt line for a PCI device

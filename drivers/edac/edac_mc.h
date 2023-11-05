@@ -1,13 +1,13 @@
 /*
  * Defines, structures, APIs for edac_mc module
  *
- * (C) 2007 Linux Networx (http://lnxi.com)
+ * (C) 2007 freax Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/freax-ecc/
  *
  * NMI handling support added by
  *     Dave Peterson <dsp@llnl.gov> <dave_peterson@pobox.com>
@@ -22,20 +22,20 @@
 #ifndef _EDAC_MC_H_
 #define _EDAC_MC_H_
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/nmi.h>
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/edac.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/nmi.h>
+#include <freax/rcupdate.h>
+#include <freax/completion.h>
+#include <freax/kobject.h>
+#include <freax/platform_device.h>
+#include <freax/workqueue.h>
+#include <freax/edac.h>
 
 #if PAGE_SHIFT < 20
 #define PAGES_TO_MiB(pages)	((pages) >> (20 - PAGE_SHIFT))

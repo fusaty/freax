@@ -4,21 +4,21 @@
  *
  * Copyright (C) 1997 Jay Estabrook
  *
- * This file is used for creating a bootp file for the Linux/AXP kernel
+ * This file is used for creating a bootp file for the freax/AXP kernel
  *
  * based significantly on the arch/alpha/boot/main.c of Linus Torvalds
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <generated/utsrelease.h>
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 #include <asm/console.h>
 #include <asm/hwrpb.h>
 #include <asm/io.h>
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
 #include "ksize.h"
 
@@ -149,7 +149,7 @@ start_kernel(void)
 	static char envval[256] __attribute__((aligned(8)));
 	static unsigned long initrd_start;
 
-	srm_printk("Linux/AXP bootp loader for Linux " UTS_RELEASE "\n");
+	srm_printk("freax/AXP bootp loader for freax " UTS_RELEASE "\n");
 	if (INIT_HWRPB->pagesize != 8192) {
 		srm_printk("Expected 8kB pages, got %ldkB\n",
 		           INIT_HWRPB->pagesize >> 10);

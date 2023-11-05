@@ -3,12 +3,12 @@
  * HID Sensor Time Driver
  * Copyright (c) 2012, Alexander Holler.
  */
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/hid-sensor-hub.h>
-#include <linux/iio/iio.h>
-#include <linux/rtc.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/hid-sensor-hub.h>
+#include <freax/iio/iio.h>
+#include <freax/rtc.h>
 
 enum hid_time_channel {
 	CHANNEL_SCAN_INDEX_YEAR,

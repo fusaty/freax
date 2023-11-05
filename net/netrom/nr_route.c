@@ -5,34 +5,34 @@
  * Copyright Alan Cox GW4PTS (alan@lxorguk.ukuu.org.uk)
  * Copyright Tomi Manninen OH2BNS (oh2bns@sral.fi)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
 #include <net/arp.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/fcntl.h>
+#include <freax/termios.h>	/* For TIOCINQ/OUTQ */
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
 #include <net/netrom.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <freax/seq_file.h>
+#include <freax/export.h>
 
 static unsigned int nr_neigh_no = 1;
 

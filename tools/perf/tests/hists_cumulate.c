@@ -12,7 +12,7 @@
 #include "util/thread.h"
 #include "tests/tests.h"
 #include "tests/hists_common.h"
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 struct sample {
 	u32 pid;

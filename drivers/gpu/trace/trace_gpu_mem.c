@@ -5,7 +5,7 @@
  * Copyright (C) 2020 Google, Inc.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/gpu_mem.h>

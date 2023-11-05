@@ -5,16 +5,16 @@
  * whether to proceed with probing the host or the peripheral
  * driver.
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/usb.h>
+#include <freax/usb/otg.h>
 
 #include "fotg210.h"
 

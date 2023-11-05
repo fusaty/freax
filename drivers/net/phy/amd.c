@@ -6,12 +6,12 @@
  *
  * Copyright (c) 2011 DENX Software Engineering GmbH
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
 
 #define PHY_ID_AC101L		0x00225520
 #define PHY_ID_AM79C874		0x0022561b

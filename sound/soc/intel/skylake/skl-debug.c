@@ -5,8 +5,8 @@
  *  Copyright (C) 2016-17 Intel Corp
  */
 
-#include <linux/pci.h>
-#include <linux/debugfs.h>
+#include <freax/pci.h>
+#include <freax/debugfs.h>
 #include <uapi/sound/skl-tplg-interface.h>
 #include "skl.h"
 #include "skl-sst-dsp.h"

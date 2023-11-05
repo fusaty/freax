@@ -2,18 +2,18 @@
 /*
  * Copyright(c) 2019-2022, Intel Corporation. All rights reserved.
  *
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  */
 
-#include <linux/module.h>
-#include <linux/mei_aux.h>
-#include <linux/device.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/mei_aux.h>
+#include <freax/device.h>
+#include <freax/irqreturn.h>
+#include <freax/jiffies.h>
+#include <freax/ktime.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/kthread.h>
 
 #include "mei_dev.h"
 #include "hw-me.h"

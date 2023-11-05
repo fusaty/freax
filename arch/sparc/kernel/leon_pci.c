@@ -7,16 +7,16 @@
  * Code is partially derived from pcic.c
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/export.h>
 #include <asm/leon.h>
 #include <asm/leon_pci.h>
 
 /* The LEON architecture does not rely on a BIOS or bootloader to setup
- * PCI for us. The Linux generic routines are used to setup resources,
+ * PCI for us. The freax generic routines are used to setup resources,
  * reset values of configuration-space register settings are preserved.
  *
  * PCI Memory and Prefetchable Memory is direct-mapped. However I/O Space is

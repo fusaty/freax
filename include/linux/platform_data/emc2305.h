@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_PLATFORM_DATA_EMC2305__
-#define __LINUX_PLATFORM_DATA_EMC2305__
+#ifndef __freax_PLATFORM_DATA_EMC2305__
+#define __freax_PLATFORM_DATA_EMC2305__
 
 #define EMC2305_PWM_MAX	5
 

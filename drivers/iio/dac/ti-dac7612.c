@@ -7,11 +7,11 @@
  *
  * Licensed under the GPL-2.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iio/iio.h>
 
 #define DAC7612_RESOLUTION 12
 #define DAC7612_ADDRESS 4

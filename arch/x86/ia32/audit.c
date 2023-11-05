@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/audit_arch.h>
+#include <freax/audit_arch.h>
 #include <asm/unistd_32.h>
 #include <asm/audit.h>
 

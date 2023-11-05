@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/cache.h>
+#include <freax/module.h>
+#include <freax/moduleloader.h>
+#include <freax/elf.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/cache.h>
 
 static int
 decode_calln_opcode (unsigned char *location)

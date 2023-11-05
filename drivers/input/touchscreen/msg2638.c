@@ -11,19 +11,19 @@
  * Driver structure based on zinitix.c by Michael Srba <Michael.Srba@seznam.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 #define MODE_DATA_RAW			0x5A
 
@@ -399,25 +399,25 @@ static int msg2638_ts_probe(struct i2c_client *client)
 	}
 
 	msg2638->num_keycodes = device_property_count_u32(dev,
-							  "linux,keycodes");
+							  "freax,keycodes");
 	if (msg2638->num_keycodes == -EINVAL) {
 		msg2638->num_keycodes = 0;
 	} else if (msg2638->num_keycodes < 0) {
-		dev_err(dev, "Unable to parse linux,keycodes property: %d\n",
+		dev_err(dev, "Unable to parse freax,keycodes property: %d\n",
 			msg2638->num_keycodes);
 		return msg2638->num_keycodes;
 	} else if (msg2638->num_keycodes > ARRAY_SIZE(msg2638->keycodes)) {
-		dev_warn(dev, "Found %d linux,keycodes but max is %zd, ignoring the rest\n",
+		dev_warn(dev, "Found %d freax,keycodes but max is %zd, ignoring the rest\n",
 			 msg2638->num_keycodes, ARRAY_SIZE(msg2638->keycodes));
 		msg2638->num_keycodes = ARRAY_SIZE(msg2638->keycodes);
 	}
 
 	if (msg2638->num_keycodes > 0) {
-		error = device_property_read_u32_array(dev, "linux,keycodes",
+		error = device_property_read_u32_array(dev, "freax,keycodes",
 						       msg2638->keycodes,
 						       msg2638->num_keycodes);
 		if (error) {
-			dev_err(dev, "Unable to read linux,keycodes values: %d\n",
+			dev_err(dev, "Unable to read freax,keycodes values: %d\n",
 				error);
 			return error;
 		}

@@ -8,9 +8,9 @@
 #ifndef MFD_TPS65219_H
 #define MFD_TPS65219_H
 
-#include <linux/bitops.h>
-#include <linux/notifier.h>
-#include <linux/regulator/driver.h>
+#include <freax/bitops.h>
+#include <freax/notifier.h>
+#include <freax/regulator/driver.h>
 
 struct regmap;
 struct regmap_irq_chip_data;

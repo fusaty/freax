@@ -27,8 +27,8 @@
 #include "dispnv04/hw.h"
 #include "nouveau_encoder.h"
 
-#include <linux/io-mapping.h>
-#include <linux/firmware.h>
+#include <freax/io-mapping.h>
+#include <freax/firmware.h>
 
 /* these defines are made up */
 #define NV_CIO_CRE_44_HEADA 0x0

@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * NUMA memory policies for Linux.
+ * NUMA memory policies for freax.
  * Copyright 2003,2004 Andi Kleen SuSE Labs
  */
-#ifndef _UAPI_LINUX_MEMPOLICY_H
-#define _UAPI_LINUX_MEMPOLICY_H
+#ifndef _UAPI_freax_MEMPOLICY_H
+#define _UAPI_freax_MEMPOLICY_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 
 /*
@@ -72,4 +72,4 @@ enum {
 #define RECLAIM_WRITE	(1<<1)	/* Writeout pages during reclaim */
 #define RECLAIM_UNMAP	(1<<2)	/* Unmap pages during reclaim */
 
-#endif /* _UAPI_LINUX_MEMPOLICY_H */
+#endif /* _UAPI_freax_MEMPOLICY_H */

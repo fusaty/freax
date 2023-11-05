@@ -21,7 +21,7 @@
  * Try not to change the actual algorithm if possible for consistency.
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 	.text
 
 	.align 4

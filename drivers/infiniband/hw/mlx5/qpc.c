@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2013-2020, Mellanox Technologies inc. All rights reserved.
  */
 
-#include <linux/gfp.h>
-#include <linux/mlx5/qp.h>
-#include <linux/mlx5/driver.h>
+#include <freax/gfp.h>
+#include <freax/mlx5/qp.h>
+#include <freax/mlx5/driver.h>
 #include "mlx5_ib.h"
 #include "qp.h"
 

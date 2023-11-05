@@ -9,7 +9,7 @@
 import gdb
 import re
 import traceback
-from linux import lists, utils, stackdepot, constants, mm
+from freax import lists, utils, stackdepot, constants, mm
 
 SLAB_RED_ZONE       = constants.LX_SLAB_RED_ZONE
 SLAB_POISON         = constants.LX_SLAB_POISON

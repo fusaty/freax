@@ -9,12 +9,12 @@
  * Copyright (C) 2014 Michael Hope (adapted for the TLS8204)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/gpio/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/delay.h>
 
 #include "fbtft.h"
 

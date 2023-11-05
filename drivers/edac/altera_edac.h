@@ -7,9 +7,9 @@
 #ifndef _ALTERA_EDAC_H
 #define _ALTERA_EDAC_H
 
-#include <linux/arm-smccc.h>
-#include <linux/edac.h>
-#include <linux/types.h>
+#include <freax/arm-smccc.h>
+#include <freax/edac.h>
+#include <freax/types.h>
 
 /* SDRAM Controller CtrlCfg Register */
 #define CV_CTLCFG_OFST             0x00

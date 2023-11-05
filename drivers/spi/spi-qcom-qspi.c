@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The freax foundation. All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_opp.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/clk.h>
+#include <freax/dmapool.h>
+#include <freax/dma-mapping.h>
+#include <freax/interconnect.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_opp.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 
 #define QSPI_NUM_CS		2

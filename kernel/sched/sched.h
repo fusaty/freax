@@ -5,69 +5,69 @@
 #ifndef _KERNEL_SCHED_SCHED_H
 #define _KERNEL_SCHED_SCHED_H
 
-#include <linux/sched/affinity.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/rseq_api.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/smt.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/task_flags.h>
-#include <linux/sched/task.h>
-#include <linux/sched/topology.h>
+#include <freax/sched/affinity.h>
+#include <freax/sched/autogroup.h>
+#include <freax/sched/cpufreq.h>
+#include <freax/sched/deadline.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/rseq_api.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/smt.h>
+#include <freax/sched/stat.h>
+#include <freax/sched/sysctl.h>
+#include <freax/sched/task_flags.h>
+#include <freax/sched/task.h>
+#include <freax/sched/topology.h>
 
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/capability.h>
-#include <linux/cgroup_api.h>
-#include <linux/cgroup.h>
-#include <linux/context_tracking.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask_api.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/fs_api.h>
-#include <linux/hrtimer_api.h>
-#include <linux/interrupt.h>
-#include <linux/irq_work.h>
-#include <linux/jiffies.h>
-#include <linux/kref_api.h>
-#include <linux/kthread.h>
-#include <linux/ktime_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/lockdep.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex_api.h>
-#include <linux/plist.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/rcupdate.h>
-#include <linux/seq_file.h>
-#include <linux/seqlock.h>
-#include <linux/softirq.h>
-#include <linux/spinlock_api.h>
-#include <linux/static_key.h>
-#include <linux/stop_machine.h>
-#include <linux/syscalls_api.h>
-#include <linux/syscalls.h>
-#include <linux/tick.h>
-#include <linux/topology.h>
-#include <linux/types.h>
-#include <linux/u64_stats_sync_api.h>
-#include <linux/uaccess.h>
-#include <linux/wait_api.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue_api.h>
+#include <freax/atomic.h>
+#include <freax/bitmap.h>
+#include <freax/bug.h>
+#include <freax/capability.h>
+#include <freax/cgroup_api.h>
+#include <freax/cgroup.h>
+#include <freax/context_tracking.h>
+#include <freax/cpufreq.h>
+#include <freax/cpumask_api.h>
+#include <freax/ctype.h>
+#include <freax/file.h>
+#include <freax/fs_api.h>
+#include <freax/hrtimer_api.h>
+#include <freax/interrupt.h>
+#include <freax/irq_work.h>
+#include <freax/jiffies.h>
+#include <freax/kref_api.h>
+#include <freax/kthread.h>
+#include <freax/ktime_api.h>
+#include <freax/lockdep_api.h>
+#include <freax/lockdep.h>
+#include <freax/minmax.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex_api.h>
+#include <freax/plist.h>
+#include <freax/poll.h>
+#include <freax/proc_fs.h>
+#include <freax/profile.h>
+#include <freax/psi.h>
+#include <freax/rcupdate.h>
+#include <freax/seq_file.h>
+#include <freax/seqlock.h>
+#include <freax/softirq.h>
+#include <freax/spinlock_api.h>
+#include <freax/static_key.h>
+#include <freax/stop_machine.h>
+#include <freax/syscalls_api.h>
+#include <freax/syscalls.h>
+#include <freax/tick.h>
+#include <freax/topology.h>
+#include <freax/types.h>
+#include <freax/u64_stats_sync_api.h>
+#include <freax/uaccess.h>
+#include <freax/wait_api.h>
+#include <freax/wait_bit.h>
+#include <freax/workqueue_api.h>
 
 #include <trace/events/power.h>
 #include <trace/events/sched.h>
@@ -1800,7 +1800,7 @@ queue_balance_callback(struct rq *rq,
 /* A mask of all the SD flags that have the SDF_SHARED_CHILD metaflag */
 #define SD_FLAG(name, mflags) (name * !!((mflags) & SDF_SHARED_CHILD)) |
 static const unsigned int SD_SHARED_CHILD_MASK =
-#include <linux/sched/sd_flags.h>
+#include <freax/sched/sd_flags.h>
 0;
 #undef SD_FLAG
 
@@ -2292,7 +2292,7 @@ static inline void set_next_task(struct rq *rq, struct task_struct *next)
  * Helper to define a sched_class instance; each one is placed in a separate
  * section which is ordered by the linker script:
  *
- *   include/asm-generic/vmlinux.lds.h
+ *   include/asm-generic/vmfreax.lds.h
  *
  * *CAREFUL* they are laid out in *REVERSE* order!!!
  *
@@ -2303,7 +2303,7 @@ const struct sched_class name##_sched_class \
 	__aligned(__alignof__(struct sched_class)) \
 	__section("__" #name "_sched_class")
 
-/* Defined in include/asm-generic/vmlinux.lds.h */
+/* Defined in include/asm-generic/vmfreax.lds.h */
 extern struct sched_class __sched_class_highest[];
 extern struct sched_class __sched_class_lowest[];
 

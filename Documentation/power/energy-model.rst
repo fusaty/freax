@@ -174,13 +174,13 @@ em_cpu_energy() API. The estimation is performed assuming that the schedutil
 CPUfreq governor is in use in case of CPU device. Currently this calculation is
 not provided for other type of devices.
 
-More details about the above APIs can be found in ``<linux/energy_model.h>``
+More details about the above APIs can be found in ``<freax/energy_model.h>``
 or in Section 2.4
 
 
 2.4 Description details of this API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. kernel-doc:: include/linux/energy_model.h
+.. kernel-doc:: include/freax/energy_model.h
    :internal:
 
 .. kernel-doc:: kernel/power/energy_model.c

@@ -6,11 +6,11 @@
 #ifndef OPTEE_PRIVATE_H
 #define OPTEE_PRIVATE_H
 
-#include <linux/arm-smccc.h>
-#include <linux/rhashtable.h>
-#include <linux/semaphore.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
+#include <freax/arm-smccc.h>
+#include <freax/rhashtable.h>
+#include <freax/semaphore.h>
+#include <freax/tee_drv.h>
+#include <freax/types.h>
 #include "optee_msg.h"
 
 #define DRIVER_NAME "optee"

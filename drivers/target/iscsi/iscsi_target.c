@@ -4,21 +4,21 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ******************************************************************************/
 
 #include <crypto/hash.h>
-#include <linux/string.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/idr.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
+#include <freax/string.h>
+#include <freax/kthread.h>
+#include <freax/completion.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
+#include <freax/idr.h>
+#include <freax/delay.h>
+#include <freax/sched/signal.h>
 #include <asm/unaligned.h>
-#include <linux/inet.h>
+#include <freax/inet.h>
 #include <net/ipv6.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/iscsi_proto.h>
@@ -449,7 +449,7 @@ int iscsit_del_np(struct iscsi_np *np)
 
 	if (np->np_thread) {
 		/*
-		 * We need to send the signal to wakeup Linux/Net
+		 * We need to send the signal to wakeup freax/Net
 		 * which may be sleeping in sock_accept()..
 		 */
 		send_sig(SIGINT, np->np_thread, 1);
@@ -4840,7 +4840,7 @@ int iscsit_release_sessions_for_tpg(struct iscsi_portal_group *tpg, int force)
 
 MODULE_DESCRIPTION("iSCSI-Target Driver for mainline target infrastructure");
 MODULE_VERSION("4.1.x");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@freax-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(iscsi_target_init_module);

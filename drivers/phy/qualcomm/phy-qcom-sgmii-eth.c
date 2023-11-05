@@ -3,13 +3,13 @@
  * Copyright (c) 2023, Linaro Limited
  */
 
-#include <linux/clk.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define QSERDES_QMP_PLL					0x0
 #define QSERDES_COM_BIN_VCOCAL_CMP_CODE1_MODE0		(QSERDES_QMP_PLL + 0x1ac)

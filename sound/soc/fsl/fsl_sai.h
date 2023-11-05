@@ -6,7 +6,7 @@
 #ifndef __FSL_SAI_H
 #define __FSL_SAI_H
 
-#include <linux/dma/imx-dma.h>
+#include <freax/dma/imx-dma.h>
 #include <sound/dmaengine_pcm.h>
 
 #define FSL_SAI_FORMATS (SNDRV_PCM_FMTBIT_S16_LE |\

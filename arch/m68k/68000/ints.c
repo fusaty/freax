@@ -9,12 +9,12 @@
  * Copyright 1999 D. Jeff Dionne <jeff@rt-control.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/cpu.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/cpu.h>
 #include <asm/traps.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

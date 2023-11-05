@@ -7,13 +7,13 @@
  * Red Hat Author: Roland McGrath.
  */
 
-#ifndef _LINUX_REGSET_H
-#define _LINUX_REGSET_H	1
+#ifndef _freax_REGSET_H
+#define _freax_REGSET_H	1
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/uaccess.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/bug.h>
+#include <freax/uaccess.h>
 struct task_struct;
 struct user_regset;
 
@@ -337,4 +337,4 @@ static inline int copy_regset_from_user(struct task_struct *target,
 	return regset->set(target, regset, offset, size, NULL, data);
 }
 
-#endif	/* <linux/regset.h> */
+#endif	/* <freax/regset.h> */

@@ -9,8 +9,8 @@
 #ifndef SND_SOC_SOF_SDW_COMMON_H
 #define SND_SOC_SOF_SDW_COMMON_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 #include <sound/soc.h>
 #include "sof_hdmi_common.h"
 

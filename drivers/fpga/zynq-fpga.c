@@ -7,22 +7,22 @@
  * in their vendor tree.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/string.h>
+#include <freax/scatterlist.h>
 
 /* Offsets into SLCR regmap */
 

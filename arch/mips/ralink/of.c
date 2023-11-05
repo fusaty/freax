@@ -6,16 +6,16 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sizes.h>
-#include <linux/of_fdt.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/sizes.h>
+#include <freax/of_fdt.h>
+#include <freax/kernel.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/reboot.h>
 #include <asm/bootinfo.h>

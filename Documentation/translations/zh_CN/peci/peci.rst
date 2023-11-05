@@ -38,7 +38,7 @@ PECI子系统代码内嵌文档
 
 该API在以下内核代码中:
 
-include/linux/peci.h
+include/freax/peci.h
 
 drivers/peci/internal.h
 

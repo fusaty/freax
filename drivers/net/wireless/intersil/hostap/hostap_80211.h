@@ -2,9 +2,9 @@
 #ifndef HOSTAP_80211_H
 #define HOSTAP_80211_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 
 struct hostap_ieee80211_mgmt {
 	__le16 frame_control;

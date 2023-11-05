@@ -8,11 +8,11 @@
 #ifndef _PTP_CLOCK_KERNEL_H_
 #define _PTP_CLOCK_KERNEL_H_
 
-#include <linux/device.h>
-#include <linux/pps_kernel.h>
-#include <linux/ptp_clock.h>
-#include <linux/timecounter.h>
-#include <linux/skbuff.h>
+#include <freax/device.h>
+#include <freax/pps_kernel.h>
+#include <freax/ptp_clock.h>
+#include <freax/timecounter.h>
+#include <freax/skbuff.h>
 
 #define PTP_CLOCK_NAME_LEN	32
 /**

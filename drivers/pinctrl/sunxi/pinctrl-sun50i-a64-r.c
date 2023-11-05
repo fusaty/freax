@@ -20,9 +20,9 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
 
 #include "pinctrl-sunxi.h"
 

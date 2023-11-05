@@ -2,7 +2,7 @@
 #ifndef _PVCLOCK_GTOD_H
 #define _PVCLOCK_GTOD_H
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 /*
  * The pvclock gtod notifier is called when the system time is updated

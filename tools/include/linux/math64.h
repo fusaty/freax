@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MATH64_H
-#define _LINUX_MATH64_H
+#ifndef _freax_MATH64_H
+#define _freax_MATH64_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef __x86_64__
 static inline u64 mul_u64_u64_div64(u64 a, u64 b, u64 c)
@@ -72,4 +72,4 @@ static inline u64 mul_u64_u64_div64(u64 a, u64 b, u64 c)
 }
 #endif
 
-#endif /* _LINUX_MATH64_H */
+#endif /* _freax_MATH64_H */

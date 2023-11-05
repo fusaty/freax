@@ -17,9 +17,9 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <error.h>
-#include <linux/filter.h>
-#include <linux/in.h>
-#include <linux/unistd.h>
+#include <freax/filter.h>
+#include <freax/in.h>
+#include <freax/unistd.h>
 #include <sched.h>
 #include <stdio.h>
 #include <stdlib.h>

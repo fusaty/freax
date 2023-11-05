@@ -6,11 +6,11 @@
  * Copyright (C) 2005-2007 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_DMA_IPU_DMA_H
-#define __LINUX_DMA_IPU_DMA_H
+#ifndef __freax_DMA_IPU_DMA_H
+#define __freax_DMA_IPU_DMA_H
 
-#include <linux/types.h>
-#include <linux/dmaengine.h>
+#include <freax/types.h>
+#include <freax/dmaengine.h>
 
 /* IPU DMA Controller channel definitions. */
 enum ipu_channel {
@@ -171,4 +171,4 @@ struct idmac_channel {
 #define to_tx_desc(tx) container_of(tx, struct idmac_tx_desc, txd)
 #define to_idmac_chan(c) container_of(c, struct idmac_channel, dma_chan)
 
-#endif /* __LINUX_DMA_IPU_DMA_H */
+#endif /* __freax_DMA_IPU_DMA_H */

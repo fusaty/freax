@@ -2,7 +2,7 @@
 /*
  * OpenRISC fault.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,13 +11,13 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/extable.h>
-#include <linux/sched/signal.h>
-#include <linux/perf_event.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/extable.h>
+#include <freax/sched/signal.h>
+#include <freax/perf_event.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/bug.h>
 #include <asm/mmu_context.h>
 #include <asm/siginfo.h>

@@ -16,12 +16,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
 
 #include <asm/processor.h>
 #include <asm/mmu_context.h>

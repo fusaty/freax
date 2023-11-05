@@ -75,10 +75,10 @@ following APIs to handle building or tearing down that list.
   list, given a device node
 * fpga_bridges_put() - Given a list of bridges, put them
 
-.. kernel-doc:: include/linux/fpga/fpga-region.h
+.. kernel-doc:: include/freax/fpga/fpga-region.h
    :functions: fpga_region
 
-.. kernel-doc:: include/linux/fpga/fpga-region.h
+.. kernel-doc:: include/freax/fpga/fpga-region.h
    :functions: fpga_region_info
 
 .. kernel-doc:: drivers/fpga/fpga-region.c

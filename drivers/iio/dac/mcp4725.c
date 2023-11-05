@@ -11,18 +11,18 @@
  * hardware)
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
-#include <linux/iio/dac/mcp4725.h>
+#include <freax/iio/dac/mcp4725.h>
 
 #define MCP4725_DRV_NAME "mcp4725"
 

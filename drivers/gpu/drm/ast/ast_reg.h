@@ -3,7 +3,7 @@
 #ifndef __AST_REG_H__
 #define __AST_REG_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /*
  * Modesetting

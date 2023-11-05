@@ -6,9 +6,9 @@
 #ifndef BTRFS_INODE_H
 #define BTRFS_INODE_H
 
-#include <linux/hash.h>
-#include <linux/refcount.h>
-#include <linux/fscrypt.h>
+#include <freax/hash.h>
+#include <freax/refcount.h>
+#include <freax/fscrypt.h>
 #include <trace/events/btrfs.h>
 #include "extent_map.h"
 #include "extent_io.h"

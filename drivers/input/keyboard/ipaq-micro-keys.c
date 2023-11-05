@@ -6,19 +6,19 @@
  * Author : Alessandro Gardich <gremlin@gremlin.it>
  * Author : Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ipaq-micro.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/pm.h>
+#include <freax/sysctl.h>
+#include <freax/proc_fs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/ipaq-micro.h>
 
 struct ipaq_micro_keys {
 	struct ipaq_micro *micro;

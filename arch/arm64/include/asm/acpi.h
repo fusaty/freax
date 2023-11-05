@@ -9,11 +9,11 @@
 #ifndef _ASM_ACPI_H
 #define _ASM_ACPI_H
 
-#include <linux/cpuidle.h>
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/psci.h>
-#include <linux/stddef.h>
+#include <freax/cpuidle.h>
+#include <freax/efi.h>
+#include <freax/memblock.h>
+#include <freax/psci.h>
+#include <freax/stddef.h>
 
 #include <asm/cputype.h>
 #include <asm/io.h>

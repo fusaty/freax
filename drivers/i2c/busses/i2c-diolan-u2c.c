@@ -9,13 +9,13 @@
  *  Copyright (C) 2006-2007 Till Harbaum (Till@Harbaum.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/i2c.h>
 
 #define DRIVER_NAME		"i2c-diolan-u2c"
 
@@ -513,6 +513,6 @@ static struct usb_driver diolan_u2c_driver = {
 
 module_usb_driver(diolan_u2c_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <freax@roeck-us.net>");
 MODULE_DESCRIPTION(DRIVER_NAME " driver");
 MODULE_LICENSE("GPL");

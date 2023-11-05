@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bits.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/build_bug.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/bits.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
+#include <freax/build_bug.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
 
 #include "ipa.h"
 #include "ipa_version.h"

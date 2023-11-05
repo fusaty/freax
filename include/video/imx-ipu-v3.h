@@ -12,11 +12,11 @@
 #ifndef __DRM_IPU_H__
 #define __DRM_IPU_H__
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/bitmap.h>
-#include <linux/fb.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
+#include <freax/bitmap.h>
+#include <freax/fb.h>
+#include <freax/of.h>
 #include <drm/drm_color_mgmt.h>
 #include <media/v4l2-mediabus.h>
 #include <video/videomode.h>

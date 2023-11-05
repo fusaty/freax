@@ -5,7 +5,7 @@
  * Copyright (C) 2022 Renesas Electronics Corporation
  */
 
-#include <linux/usb/rzv2m_usb3drd.h>
+#include <freax/usb/rzv2m_usb3drd.h>
 #include "xhci-plat.h"
 #include "xhci-rzv2m.h"
 

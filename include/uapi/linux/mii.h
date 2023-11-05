@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * linux/mii.h: definitions for MII-compatible transceivers
+ * freax/mii.h: definitions for MII-compatible transceivers
  * Originally drivers/net/sunhme.h.
  *
  * Copyright (C) 1996, 1999, 2001 David S. Miller (davem@redhat.com)
  */
 
-#ifndef _UAPI__LINUX_MII_H__
-#define _UAPI__LINUX_MII_H__
+#ifndef _UAPI__freax_MII_H__
+#define _UAPI__freax_MII_H__
 
-#include <linux/types.h>
-#include <linux/ethtool.h>
+#include <freax/types.h>
+#include <freax/ethtool.h>
 
 /* Generic MII registers. */
 #define MII_BMCR		0x00	/* Basic mode control register */
@@ -182,4 +182,4 @@ struct mii_ioctl_data {
 	__u16		val_out;
 };
 
-#endif /* _UAPI__LINUX_MII_H__ */
+#endif /* _UAPI__freax_MII_H__ */

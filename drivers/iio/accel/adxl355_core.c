@@ -7,20 +7,20 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/adxl354_adxl355.pdf
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/limits.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/units.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/limits.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/units.h>
 
 #include <asm/unaligned.h>
 

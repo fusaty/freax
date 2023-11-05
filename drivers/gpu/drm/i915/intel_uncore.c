@@ -22,7 +22,7 @@
  */
 
 #include <drm/drm_managed.h>
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
 #include "gt/intel_engine_regs.h"
 #include "gt/intel_gt_regs.h"

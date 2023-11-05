@@ -7,11 +7,11 @@
 
 #include <kunit/test.h>
 
-#include <linux/prime_numbers.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/ktime.h>
+#include <freax/prime_numbers.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/vmalloc.h>
+#include <freax/ktime.h>
 
 #include <drm/drm_mm.h>
 

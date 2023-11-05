@@ -24,8 +24,8 @@
  *          Alex Deucher
  */
 
-#include <linux/backlight.h>
-#include <linux/pci.h>
+#include <freax/backlight.h>
+#include <freax/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

@@ -3,11 +3,11 @@
 #define __ASM_SH_TLB_H
 
 #ifndef __ASSEMBLY__
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 #include <asm-generic/tlb.h>
 
 #ifdef CONFIG_MMU
-#include <linux/swap.h>
+#include <freax/swap.h>
 
 #if defined(CONFIG_CPU_SH4)
 extern void tlb_wire_entry(struct vm_area_struct *, unsigned long, pte_t);

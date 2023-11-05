@@ -4,7 +4,7 @@
 #ifndef _I40E_XSK_H_
 #define _I40E_XSK_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* This value should match the pragma in the loop_unrolled_for
  * macro. Why 4? It is strictly empirical. It seems to be a good

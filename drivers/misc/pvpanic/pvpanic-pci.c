@@ -5,11 +5,11 @@
  *  Copyright (C) 2021 Oracle.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 
 #include <uapi/misc/pvpanic.h>
 

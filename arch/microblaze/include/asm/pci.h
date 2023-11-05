@@ -8,12 +8,12 @@
 #define __ASM_MICROBLAZE_PCI_H
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/scatterlist.h>
 
 #include <asm/io.h>
 #include <asm/pci-bridge.h>

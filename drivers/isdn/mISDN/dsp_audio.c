@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/export.h>
-#include <linux/bitrev.h>
+#include <freax/delay.h>
+#include <freax/mISDNif.h>
+#include <freax/mISDNdsp.h>
+#include <freax/export.h>
+#include <freax/bitrev.h>
 #include "core.h"
 #include "dsp.h"
 

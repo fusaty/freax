@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#ifndef LINUX_WAITID_H
-#define LINUX_WAITID_H
+#ifndef freax_WAITID_H
+#define freax_WAITID_H
 
 struct waitid_info {
 	pid_t pid;

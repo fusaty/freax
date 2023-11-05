@@ -8,19 +8,19 @@
  * Lad, Prabhakar <prabhakar.csengg@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/videodev2.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

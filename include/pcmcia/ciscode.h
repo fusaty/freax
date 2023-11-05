@@ -9,8 +9,8 @@
  * (C) 1999		David A. Hinds
  */
 
-#ifndef _LINUX_CISCODE_H
-#define _LINUX_CISCODE_H
+#ifndef _freax_CISCODE_H
+#define _freax_CISCODE_H
 
 /* Manufacturer and Product ID codes */
 
@@ -125,4 +125,4 @@
 
 #define MANFID_NEC			0x0010
 
-#endif /* _LINUX_CISCODE_H */
+#endif /* _freax_CISCODE_H */

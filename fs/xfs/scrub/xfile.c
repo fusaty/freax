@@ -14,7 +14,7 @@
 #include "scrub/xfarray.h"
 #include "scrub/scrub.h"
 #include "scrub/trace.h"
-#include <linux/shmem_fs.h>
+#include <freax/shmem_fs.h>
 
 /*
  * Swappable Temporary Memory

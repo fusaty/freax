@@ -6,19 +6,19 @@
  *	Quentin Schulz <quentin.schulz@free-electrons.com>
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/iio/consumer.h>
 
 #define AXP20X_PWR_STATUS_ACIN_PRESENT	BIT(7)
 #define AXP20X_PWR_STATUS_ACIN_AVAIL	BIT(6)

@@ -7,10 +7,10 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
-#include <linux/cfi_types.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/pgtable.h>
+#include <freax/cfi_types.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/asm_pointer_auth.h>

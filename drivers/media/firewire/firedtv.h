@@ -9,16 +9,16 @@
 #ifndef _FIREDTV_H
 #define _FIREDTV_H
 
-#include <linux/time.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/time.h>
+#include <freax/dvb/dmx.h>
+#include <freax/dvb/frontend.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include <media/demux.h>
 #include <media/dmxdev.h>

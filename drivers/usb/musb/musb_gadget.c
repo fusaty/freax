@@ -8,15 +8,15 @@
  * Copyright (C) 2009 MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/timer.h>
+#include <freax/module.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 #include "musb_core.h"
 #include "musb_trace.h"

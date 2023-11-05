@@ -1,5 +1,5 @@
 /*
- * linux/include/video/neo_reg.h -- NeoMagic Framebuffer Driver
+ * freax/include/video/neo_reg.h -- NeoMagic Framebuffer Driver
  *
  * Copyright (c) 2001  Denis Oliver Kropp <dok@convergence.de>
  *

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * FPGA Region - Support for FPGA programming under Linux
+ * FPGA Region - Support for FPGA programming under freax
  *
  *  Copyright (C) 2013-2016 Altera Corporation
  *  Copyright (C) 2017 Intel Corporation
  */
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/fpga/fpga-region.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/fpga/fpga-bridge.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/fpga/fpga-region.h>
+#include <freax/idr.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 static DEFINE_IDA(fpga_region_ida);
 static const struct class fpga_region_class;

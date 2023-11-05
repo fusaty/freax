@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/skbuff.h>
-#include <linux/sctp.h>
+#include <freax/skbuff.h>
+#include <freax/sctp.h>
 #include <net/gso.h>
 #include <net/gro.h>
 

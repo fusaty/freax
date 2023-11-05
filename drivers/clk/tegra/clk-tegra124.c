@@ -3,14 +3,14 @@
  * Copyright (c) 2012-2014 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/clk/tegra.h>
+#include <freax/io.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/clk/tegra.h>
 #include <dt-bindings/clock/tegra124-car.h>
 #include <dt-bindings/reset/tegra124-car.h>
 

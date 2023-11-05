@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/if.h>
-#include <linux/inet_diag.h>
-#include <linux/xfrm.h>
-#include <linux/audit.h>
-#include <linux/sock_diag.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/netlink.h>
+#include <freax/rtnetlink.h>
+#include <freax/if.h>
+#include <freax/inet_diag.h>
+#include <freax/xfrm.h>
+#include <freax/audit.h>
+#include <freax/sock_diag.h>
 
 #include "flask.h"
 #include "av_permissions.h"
@@ -166,7 +166,7 @@ static int nlmsg_perm(u16 nlmsg_type, u32 *perm, const struct nlmsg_perm *tab, s
 	return err;
 }
 
-int selinux_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm)
+int sefreax_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm)
 {
 	int err = 0;
 

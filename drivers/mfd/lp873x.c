@@ -5,13 +5,13 @@
  * Author: Keerthy <j-keerthy@ti.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/core.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/lp873x.h>
+#include <freax/mfd/lp873x.h>
 
 static const struct regmap_config lp873x_regmap_config = {
 	.reg_bits = 8,

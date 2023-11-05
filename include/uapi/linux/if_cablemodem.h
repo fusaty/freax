@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
-#ifndef _LINUX_CABLEMODEM_H_
-#define _LINUX_CABLEMODEM_H_
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
+#ifndef _freax_CABLEMODEM_H_
+#define _freax_CABLEMODEM_H_
 /*
  *		Author: Franco Venturi <fventuri@mediaone.net>
  *		Copyright 1998 Franco Venturi

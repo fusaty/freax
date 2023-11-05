@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Multicast support for IPv6
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/igmp.c and linux/ipv4/ip_sockglue.c
+ *	Based on freax/ipv4/igmp.c and freax/ipv4/ip_sockglue.c
  */
 
 /* Changes:
@@ -22,29 +22,29 @@
  *		- MLDv2 support
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/pkt_sched.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/jiffies.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/route.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/pkt_sched.h>
 #include <net/mld.h>
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv6.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>

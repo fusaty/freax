@@ -15,12 +15,12 @@
  * frame contact the architecture maintainers.
  */
 
-#include <linux/linkage.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/export.h>
+#include <freax/linkage.h>
+#include <freax/preempt.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/debug_locks.h>
+#include <freax/export.h>
 
 #ifdef CONFIG_MMIOWB
 #ifndef arch_mmiowb_state
@@ -37,8 +37,8 @@ EXPORT_PER_CPU_SYMBOL(__mmiowb_state);
 #if !defined(CONFIG_GENERIC_LOCKBREAK) || defined(CONFIG_DEBUG_LOCK_ALLOC)
 /*
  * The __lock_function inlines are taken from
- * spinlock : include/linux/spinlock_api_smp.h
- * rwlock   : include/linux/rwlock_api_smp.h
+ * spinlock : include/freax/spinlock_api_smp.h
+ * rwlock   : include/freax/rwlock_api_smp.h
  */
 #else
 

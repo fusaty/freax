@@ -5,16 +5,16 @@
  * Copyright (C) 2010 Gabor Juhos <juhosg@openwrt.org>
  * Copyright (C) 2015 Bert Vermeulen <bert@biot.com>
  *
- * This file was based on the patches for Linux 2.6.27.39 published by
+ * This file was based on the patches for freax 2.6.27.39 published by
  * MikroTik for their RouterBoard 4xx series devices.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/spi/spi.h>
+#include <freax/of.h>
 
 #include <asm/mach-ath79/ar71xx_regs.h>
 

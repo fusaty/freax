@@ -7,10 +7,10 @@
  * Written by Koji Sato.
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/buffer_head.h>
+#include <freax/string.h>
+#include <freax/errno.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "alloc.h"

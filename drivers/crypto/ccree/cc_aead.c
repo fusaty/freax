@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2012-2019 ARM Limited (or its affiliates). */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/aead.h>
 #include <crypto/authenc.h>
 #include <crypto/gcm.h>
-#include <linux/rtnetlink.h>
+#include <freax/rtnetlink.h>
 #include <crypto/internal/des.h>
 #include "cc_driver.h"
 #include "cc_buffer_mgr.h"
@@ -2629,7 +2629,7 @@ int cc_aead_alloc(struct cc_drvdata *drvdata)
 		goto fail1;
 	}
 
-	/* Linux crypto */
+	/* freax crypto */
 	for (alg = 0; alg < ARRAY_SIZE(aead_algs); alg++) {
 		if ((aead_algs[alg].min_hw_rev > drvdata->hw_rev) ||
 		    !(drvdata->std_bodies & aead_algs[alg].std_body))

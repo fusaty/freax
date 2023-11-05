@@ -31,31 +31,31 @@
  *     Frieder Schrempf <frieder.schrempf@kontron.de>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/sys_soc.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_qos.h>
+#include <freax/regmap.h>
+#include <freax/sizes.h>
+#include <freax/sys_soc.h>
 
-#include <linux/mfd/syscon.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/mfd/syscon.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 /*
  * The driver only uses one single LUT entry, that is updated on

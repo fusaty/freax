@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The freax Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/math64.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/math64.h>
+#include <freax/mm.h>
+#include <freax/moduleparam.h>
+#include <freax/scatterlist.h>
+#include <freax/spinlock.h>
+#include <freax/srcu.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
 #include <drm/drm_file.h>
 #include <drm/drm_gem.h>
 #include <drm/drm_prime.h>

@@ -4,7 +4,7 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/stddef.h>
+#include <freax/stddef.h>
 
 #include "clk-uniphier.h"
 

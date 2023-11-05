@@ -2,7 +2,7 @@
 /* 
  *    Interfaces to retrieve and set PDC Stable options (firmware)
  *
- *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-linux.org>
+ *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-freax.org>
  *
  *    DEV NOTE: the PDC Procedures reference states that:
  *    "A minimum of 96 bytes of Stable Storage is required. Providing more than
@@ -41,21 +41,21 @@
 #define DPRINTK(fmt, args...)
 #endif
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/capability.h>
+#include <freax/ctype.h>
+#include <freax/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
 
 #include <asm/pdc.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/hardware.h>
 
 #define PDCS_VERSION	"0.30"
@@ -71,7 +71,7 @@
 #define PDCS_ADDR_PKBD	0xA0
 #define PDCS_ADDR_OSD2	0xE0
 
-MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-linux.org>");
+MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-freax.org>");
 MODULE_DESCRIPTION("sysfs interface to HP PDC Stable Storage data");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(PDCS_VERSION);
@@ -880,7 +880,7 @@ static ssize_t pdcs_osdep1_write(struct kobject *kobj,
 	if (!buf || !count)
 		return -EINVAL;
 
-	if (unlikely(pdcs_osid != OS_ID_LINUX))
+	if (unlikely(pdcs_osid != OS_ID_freax))
 		return -EPERM;
 
 	if (count > 16)
@@ -924,7 +924,7 @@ static ssize_t pdcs_osdep2_write(struct kobject *kobj,
 	if (unlikely(pdcs_size <= 224))
 		return -ENOSYS;
 
-	if (unlikely(pdcs_osid != OS_ID_LINUX))
+	if (unlikely(pdcs_osid != OS_ID_freax))
 		return -EPERM;
 
 	size = pdcs_size - 224;

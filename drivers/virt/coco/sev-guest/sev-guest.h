@@ -10,7 +10,7 @@
 #ifndef __VIRT_SEVGUEST_H__
 #define __VIRT_SEVGUEST_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MAX_AUTHTAG_LEN		32
 

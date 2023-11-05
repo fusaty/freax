@@ -8,16 +8,16 @@
  * Copyright (c) 2021 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_i2c.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/virtio.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_i2c.h>
 
 /**
  * struct virtio_i2c - virtio I2C data

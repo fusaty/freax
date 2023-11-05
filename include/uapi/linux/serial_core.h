@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  */
-#ifndef _UAPILINUX_SERIAL_CORE_H
-#define _UAPILINUX_SERIAL_CORE_H
+#ifndef _UAPIfreax_SERIAL_CORE_H
+#define _UAPIfreax_SERIAL_CORE_H
 
-#include <linux/serial.h>
+#include <freax/serial.h>
 
 /*
  * The type definitions.  These are from Ted Ts'o's serial.h
  * By historical reasons the values from 0 to 13 are defined
- * in the include/uapi/linux/serial.h, do not define them here.
+ * in the include/uapi/freax/serial.h, do not define them here.
  * Values 0 to 19 are used by setserial from busybox and must never
  * be modified.
  */
@@ -234,4 +234,4 @@
 /* Generic type identifier for ports which type is not important to userspace. */
 #define PORT_GENERIC	(-1)
 
-#endif /* _UAPILINUX_SERIAL_CORE_H */
+#endif /* _UAPIfreax_SERIAL_CORE_H */

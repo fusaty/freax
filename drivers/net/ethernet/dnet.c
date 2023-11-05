@@ -5,19 +5,19 @@
  * Copyright (C) 2008 Dave S.r.l. <www.dave.eu>
  * Copyright (C) 2009 Ilya Yanok, Emcraft Systems Ltd, <yanok@emcraft.com>
  */
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
 
 #include "dnet.h"
 

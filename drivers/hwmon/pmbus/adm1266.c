@@ -6,20 +6,20 @@
  * Copyright 2020 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/crc8.h>
-#include <linux/debugfs.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
+#include <freax/bitfield.h>
+#include <freax/crc8.h>
+#include <freax/debugfs.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
 #include "pmbus.h"
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <freax/slab.h>
+#include <freax/timekeeping.h>
 
 #define ADM1266_BLACKBOX_CONFIG	0xD3
 #define ADM1266_PDIO_CONFIG	0xD4

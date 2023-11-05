@@ -8,12 +8,12 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_EXCEPTION_STORE
-#define _LINUX_DM_EXCEPTION_STORE
+#ifndef _freax_DM_EXCEPTION_STORE
+#define _freax_DM_EXCEPTION_STORE
 
-#include <linux/blkdev.h>
-#include <linux/list_bl.h>
-#include <linux/device-mapper.h>
+#include <freax/blkdev.h>
+#include <freax/list_bl.h>
+#include <freax/device-mapper.h>
 
 /*
  * The snapshot code deals with largish chunks of the disk at a
@@ -203,4 +203,4 @@ void dm_persistent_snapshot_exit(void);
 int dm_transient_snapshot_init(void);
 void dm_transient_snapshot_exit(void);
 
-#endif /* _LINUX_DM_EXCEPTION_STORE */
+#endif /* _freax_DM_EXCEPTION_STORE */

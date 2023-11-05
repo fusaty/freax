@@ -16,18 +16,18 @@
  * http://rainshadowtech.com/doc/HDMICECtoUSBandRS232v2.0.pdf
  */
 
-#include <linux/completion.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
+#include <freax/workqueue.h>
 
 #include <media/cec.h>
 

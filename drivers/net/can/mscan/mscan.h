@@ -9,8 +9,8 @@
 #ifndef __MSCAN_H__
 #define __MSCAN_H__
 
-#include <linux/clk.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/types.h>
 
 /* MSCAN control register 0 (CANCTL0) bits */
 #define MSCAN_RXFRM		0x80

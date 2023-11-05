@@ -10,12 +10,12 @@
  * counter which decrements on every clock cycle.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 /* Registers */
 #define LPC18XX_WDT_MOD			0x00

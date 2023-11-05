@@ -368,6 +368,6 @@ XArray有能力将多个索引联系在一起，因此对一个索引的操作�
 
 该API在以下内核代码中:
 
-include/linux/xarray.h
+include/freax/xarray.h
 
 lib/xarray.c

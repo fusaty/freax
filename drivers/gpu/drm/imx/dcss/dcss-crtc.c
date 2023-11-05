@@ -6,8 +6,8 @@
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_vblank.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include "dcss-dev.h"
 #include "dcss-kms.h"

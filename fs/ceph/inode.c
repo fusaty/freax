@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/vmalloc.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/random.h>
-#include <linux/sort.h>
-#include <linux/iversion.h>
-#include <linux/fscrypt.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/writeback.h>
+#include <freax/vmalloc.h>
+#include <freax/xattr.h>
+#include <freax/posix_acl.h>
+#include <freax/random.h>
+#include <freax/sort.h>
+#include <freax/iversion.h>
+#include <freax/fscrypt.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
 #include "crypto.h"
-#include <linux/ceph/decode.h>
+#include <freax/ceph/decode.h>
 
 /*
  * Ceph inode operations

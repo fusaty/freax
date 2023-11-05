@@ -125,7 +125,7 @@
 		user_led: user {
 			label = "Heartbeat";
 			gpios = <&gpio4 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -165,7 +165,7 @@
 			&gpio5 7 GPIO_ACTIVE_HIGH
 		>;
 		/* sample keymap */
-		linux,keymap = <
+		freax,keymap = <
 			0x00000074 /* row 0, col 0, KEY_POWER */
 			0x00010052 /* row 0, col 1, KEY_KP0 */
 			0x0002004f /* row 0, col 2, KEY_KP1 */
@@ -182,7 +182,7 @@
 		wakeup-source;
 		debounce-delay-ms = <100>;
 		col-scan-delay-us = <5000>;
-		linux,no-autorepeat;
+		freax,no-autorepeat;
 	};
 
 	spi_gpio: spi {

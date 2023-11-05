@@ -3,19 +3,19 @@
 // Copyright (c) 2009 Samsung Electronics Co., Ltd.
 //      Jaswinder Singh <jassi.brar@samsung.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
+#include <freax/of.h>
 
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <freax/platform_data/spi-s3c64xx.h>
 
 #define MAX_SPI_PORTS		12
 #define S3C64XX_SPI_QUIRK_CS_AUTO	(1 << 1)

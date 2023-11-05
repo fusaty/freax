@@ -38,7 +38,7 @@
 #include "amdgpu_i2c.h"
 #include "amdgpu_display.h"
 
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
 void amdgpu_connector_hotplug(struct drm_connector *connector)
 {

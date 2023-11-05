@@ -15,18 +15,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/workqueue.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/workqueue.h>
 
-#include <linux/rtc/ds1685.h>
+#include <freax/rtc/ds1685.h>
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
+#include <freax/proc_fs.h>
 #endif
 
 
@@ -406,7 +406,7 @@ ds1685_rtc_read_alarm(struct device *dev, struct rtc_wkalrm *alrm)
 	/*
 	 * Check the three alarm bytes.
 	 *
-	 * The Linux RTC system doesn't support the "don't care" capability
+	 * The freax RTC system doesn't support the "don't care" capability
 	 * of this RTC chip.  We check for it anyways in case support is
 	 * added in the future and only assign when we care.
 	 */
@@ -468,7 +468,7 @@ ds1685_rtc_set_alarm(struct device *dev, struct rtc_wkalrm *alrm)
 	/*
 	 * Check the three alarm bytes.
 	 *
-	 * The Linux RTC system doesn't support the "don't care" capability
+	 * The freax RTC system doesn't support the "don't care" capability
 	 * of this RTC chip because rtc_valid_tm tries to validate every
 	 * field, and we only support four fields.  We put the support
 	 * here anyways for the future.

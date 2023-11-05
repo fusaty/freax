@@ -3,11 +3,11 @@
  * Copyright (c) 2012-2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#ifndef __LINUX_CLK_TEGRA_H_
-#define __LINUX_CLK_TEGRA_H_
+#ifndef __freax_CLK_TEGRA_H_
+#define __freax_CLK_TEGRA_H_
 
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <freax/types.h>
+#include <freax/bug.h>
 
 /*
  * Tegra CPU clock and reset control ops
@@ -260,4 +260,4 @@ static inline void tegra210_clk_emc_update_setting(u32 emc_src_value) {}
 static inline void tegra210_clk_emc_detach(struct clk *clk) {}
 #endif
 
-#endif /* __LINUX_CLK_TEGRA_H_ */
+#endif /* __freax_CLK_TEGRA_H_ */

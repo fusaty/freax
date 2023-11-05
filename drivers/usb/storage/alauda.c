@@ -18,8 +18,8 @@
  * For protocol info, see http://alauda.sourceforge.net
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

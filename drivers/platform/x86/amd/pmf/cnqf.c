@@ -8,8 +8,8 @@
  * Author: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  */
 
-#include <linux/string_choices.h>
-#include <linux/workqueue.h>
+#include <freax/string_choices.h>
+#include <freax/workqueue.h>
 #include "pmf.h"
 
 static struct cnqf_config config_store;

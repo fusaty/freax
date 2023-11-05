@@ -6,16 +6,16 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/input.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
 
 MODULE_AUTHOR("Benjamin Tissoires <benjamin.tissoires@redhat.com>");
 MODULE_DESCRIPTION("Surface 3 platform driver");

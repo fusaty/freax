@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_TFRC_H_
-#define _LINUX_TFRC_H_
+#ifndef _freax_TFRC_H_
+#define _freax_TFRC_H_
 /*
  *  TFRC - Data Structures for the TCP-Friendly Rate Control congestion
  *         control mechanism as specified in RFC 3448.
@@ -10,7 +10,7 @@
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  */
-#include <linux/types.h>
+#include <freax/types.h>
 
 /** 	tfrc_rx_info    -    TFRC Receiver Data Structure
  *
@@ -48,4 +48,4 @@ struct tfrc_tx_info {
 	__u32 tfrctx_ipi;
 };
 
-#endif /* _LINUX_TFRC_H_ */
+#endif /* _freax_TFRC_H_ */

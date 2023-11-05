@@ -5,31 +5,31 @@
  * Fairchild FUSB302 Type-C Chip Driver
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/extcon.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/proc_fs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/pd.h>
-#include <linux/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/extcon.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/proc_fs.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sched/clock.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/usb.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/pd.h>
+#include <freax/workqueue.h>
 
 #include "fusb302_reg.h"
 
@@ -1705,7 +1705,7 @@ static int fusb302_probe(struct i2c_client *client)
 	 * to be set by the platform code which also registers the i2c client
 	 * for the fusb302.
 	 */
-	if (device_property_read_string(dev, "linux,extcon-name", &name) == 0) {
+	if (device_property_read_string(dev, "freax,extcon-name", &name) == 0) {
 		chip->extcon = extcon_get_extcon_dev(name);
 		if (IS_ERR(chip->extcon))
 			return PTR_ERR(chip->extcon);

@@ -1,6 +1,6 @@
 /*
  * Copyright © 2006-2010 Intel Corporation
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@freax.ie>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,13 +23,13 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@freax.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include <linux/kernel.h>
-#include <linux/pwm.h>
+#include <freax/kernel.h>
+#include <freax/pwm.h>
 
 #include <drm/drm_edid.h>
 

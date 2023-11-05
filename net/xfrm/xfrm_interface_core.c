@@ -8,30 +8,30 @@
  *	Steffen Klassert <steffen.klassert@secunet.com>
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_link.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <freax/module.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/sockios.h>
+#include <freax/icmp.h>
+#include <freax/if.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_link.h>
+#include <freax/if_arp.h>
+#include <freax/icmpv6.h>
+#include <freax/init.h>
+#include <freax/route.h>
+#include <freax/rtnetlink.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/slab.h>
+#include <freax/hash.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
 
 #include <net/gso.h>
 #include <net/icmp.h>
@@ -44,7 +44,7 @@
 #include <net/net_namespace.h>
 #include <net/dst_metadata.h>
 #include <net/netns/generic.h>
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 static int xfrmi_dev_init(struct net_device *dev);
 static void xfrmi_dev_setup(struct net_device *dev);
@@ -395,7 +395,7 @@ static int xfrmi_rcv_cb(struct sk_buff *skb, int err)
 			inner_mode = xfrm_ip2inner_mode(x, XFRM_MODE_SKB_CB(skb)->protocol);
 			if (inner_mode == NULL) {
 				XFRM_INC_STATS(dev_net(skb->dev),
-					       LINUX_MIB_XFRMINSTATEMODEERROR);
+					       freax_MIB_XFRMINSTATEMODEERROR);
 				return -EINVAL;
 			}
 		}

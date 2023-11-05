@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/callback.c
+ * freax/fs/nfs/callback.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFSv4 callback handling
  */
 
-#include <linux/completion.h>
-#include <linux/ip.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/nfs_fs.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <freax/completion.h>
+#include <freax/ip.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/nfs_fs.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/freezer.h>
+#include <freax/sunrpc/svcauth_gss.h>
+#include <freax/sunrpc/bc_xprt.h>
 
 #include <net/inet_sock.h>
 

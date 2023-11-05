@@ -36,14 +36,14 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-#ifndef _LINUX_RESERVATION_H
-#define _LINUX_RESERVATION_H
+#ifndef _freax_RESERVATION_H
+#define _freax_RESERVATION_H
 
-#include <linux/ww_mutex.h>
-#include <linux/dma-fence.h>
-#include <linux/slab.h>
-#include <linux/seqlock.h>
-#include <linux/rcupdate.h>
+#include <freax/ww_mutex.h>
+#include <freax/dma-fence.h>
+#include <freax/slab.h>
+#include <freax/seqlock.h>
+#include <freax/rcupdate.h>
 
 extern struct ww_class reservation_ww_class;
 
@@ -484,4 +484,4 @@ void dma_resv_set_deadline(struct dma_resv *obj, enum dma_resv_usage usage,
 bool dma_resv_test_signaled(struct dma_resv *obj, enum dma_resv_usage usage);
 void dma_resv_describe(struct dma_resv *obj, struct seq_file *seq);
 
-#endif /* _LINUX_RESERVATION_H */
+#endif /* _freax_RESERVATION_H */

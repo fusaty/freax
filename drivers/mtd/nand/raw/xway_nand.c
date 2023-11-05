@@ -5,10 +5,10 @@
  *  Copyright © 2016 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/mtd/rawnand.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/of_gpio.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <lantiq_soc.h>
 

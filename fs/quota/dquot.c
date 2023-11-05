@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Implementation of the diskquota system for the LINUX operating system. QUOTA
+ * Implementation of the diskquota system for the freax operating system. QUOTA
  * is implemented using the BSD system call interface as the means of
  * communication with the user level. This file contains the generic routines
  * called by the different filesystems on allocation of an inode or block.
  * These routines take care of the administration needed to have a consistent
  * diskquota tracking system. The ideas of both user and group quotas are based
  * on the Melbourne quota system as used on BSD derived systems. The internal
- * implementation is based on one of the several variants of the LINUX
+ * implementation is based on one of the several variants of the freax
  * inode-subsystem with added complexity of the diskquota system.
  *
  * Author:	Marco van Wieringen <mvw@planets.elm.net>
@@ -54,35 +54,35 @@
  * (C) Copyright 1994 - 1997 Marco van Wieringen
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/kmod.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/sched/mm.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/mm.h>
+#include <freax/time.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/stat.h>
+#include <freax/tty.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/security.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/kmod.h>
+#include <freax/namei.h>
+#include <freax/capability.h>
+#include <freax/quotaops.h>
+#include <freax/blkdev.h>
+#include <freax/sched/mm.h>
 #include "../internal.h" /* ugh */
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*
  * There are five quota SMP locks:

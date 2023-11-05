@@ -10,10 +10,10 @@
  * Copyright (C) 1998 Gleb Raiko & Vladimir Roganov
  * Copyright (C) 2001, 2004, 2007  Maciej W. Rozycki
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>

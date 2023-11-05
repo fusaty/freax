@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================
-BeOS filesystem for Linux
+BeOS filesystem for freax
 =========================
 
 Document last updated: Dec 6, 2001
@@ -38,25 +38,25 @@ This filesystem doesn't have a maintainer.
 What is this Driver?
 ====================
 This module implements the native filesystem of BeOS http://www.beincorporated.com/
-for the linux 2.4.1 and later kernels. Currently it is a read-only
+for the freax 2.4.1 and later kernels. Currently it is a read-only
 implementation.
 
 Which is it, BFS or BEFS?
 =========================
 Be, Inc said, "BeOS Filesystem is officially called BFS, not BeFS".
 But Unixware Boot Filesystem is called bfs, too. And they are already in
-the kernel. Because of this naming conflict, on Linux the BeOS
+the kernel. Because of this naming conflict, on freax the BeOS
 filesystem is called befs.
 
 How to Install
 ==============
-step 1.  Install the BeFS  patch into the source code tree of linux.
+step 1.  Install the BeFS  patch into the source code tree of freax.
 
 Apply the patchfile to your kernel source tree.
-Assuming that your kernel source is in /foo/bar/linux and the patchfile
+Assuming that your kernel source is in /foo/bar/freax and the patchfile
 is called patch-befs-xxx, you would do the following:
 
-	cd /foo/bar/linux
+	cd /foo/bar/freax
 	patch -p1 < /path/to/patch-befs-xxx
 
 if the patching step fails (i.e. there are rejected hunks), you can try to
@@ -65,16 +65,16 @@ figure it out yourself (it shouldn't be hard), or mail the maintainer
 
 step 2.  Configuration & make kernel
 
-The linux kernel has many compile-time options. Most of them are beyond the
+The freax kernel has many compile-time options. Most of them are beyond the
 scope of this document. I suggest the Kernel-HOWTO document as a good general
-reference on this topic. http://www.linuxdocs.org/HOWTOs/Kernel-HOWTO-4.html
+reference on this topic. http://www.freaxdocs.org/HOWTOs/Kernel-HOWTO-4.html
 
 However, to use the BeFS module, you must enable it at configure time::
 
-	cd /foo/bar/linux
+	cd /foo/bar/freax
 	make menuconfig (or xconfig)
 
-The BeFS module is not a standard part of the linux kernel, so you must first
+The BeFS module is not a standard part of the freax kernel, so you must first
 enable support for experimental code under the "Code maturity level" menu.
 
 Then, under the "Filesystems" menu will be an option called "BeFS
@@ -85,7 +85,7 @@ Save your kernel configuration and then build your kernel.
 
 step 3.  Install
 
-See the kernel howto <http://www.linux.com/howto/Kernel-HOWTO.html> for
+See the kernel howto <http://www.freax.com/howto/Kernel-HOWTO.html> for
 instructions on this critical step.
 
 Using BFS
@@ -122,7 +122,7 @@ Special Thanks
 ==============
 Dominic Giampalo ... Writing "Practical file system design with Be filesystem"
 
-Hiroyuki Yamada  ... Testing LinuxPPC.
+Hiroyuki Yamada  ... Testing freaxPPC.
 
 
 

@@ -57,7 +57,7 @@
 		compatible = "gpio-keys";
 
 		key-1 {
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			label = "SW3";
 			wakeup-source;
 			debounce-interval = <20>;

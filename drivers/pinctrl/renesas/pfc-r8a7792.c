@@ -6,7 +6,7 @@
  * Copyright (C) 2016 Cogent Embedded, Inc., <source@cogentembedded.com>
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "sh_pfc.h"
 

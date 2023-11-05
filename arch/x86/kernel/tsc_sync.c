@@ -15,12 +15,12 @@
  * ( The serial nature of the boot logic and the CPU hotplug lock
  *   protects against more than 2 CPUs entering this code. )
  */
-#include <linux/workqueue.h>
-#include <linux/topology.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
+#include <freax/workqueue.h>
+#include <freax/topology.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/nmi.h>
 #include <asm/tsc.h>
 
 struct tsc_adjust {

@@ -5,24 +5,24 @@
  * Copyright (C) 2017-2019 Microchip Technology Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/dsa/ksz_common.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/microchip-ksz.h>
-#include <linux/phy.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/if_hsr.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/micrel_phy.h>
+#include <freax/delay.h>
+#include <freax/dsa/ksz_common.h>
+#include <freax/export.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/microchip-ksz.h>
+#include <freax/phy.h>
+#include <freax/etherdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/if_hsr.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/micrel_phy.h>
 #include <net/dsa.h>
 #include <net/pkt_cls.h>
 #include <net/switchdev.h>

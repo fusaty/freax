@@ -4,8 +4,8 @@
  * Author: AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
  */
 
-#ifndef __LINUX_REGULATOR_MT6332_H
-#define __LINUX_REGULATOR_MT6332_H
+#ifndef __freax_REGULATOR_MT6332_H
+#define __freax_REGULATOR_MT6332_H
 
 enum {
 	/* BUCK */
@@ -24,4 +24,4 @@ enum {
 	MT6332_ID_VREG_MAX
 };
 
-#endif /* __LINUX_REGULATOR_MT6332_H */
+#endif /* __freax_REGULATOR_MT6332_H */

@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2019, Mellanox Technologies inc.  All rights reserved.
  */
 
-#include <linux/dim.h>
+#include <freax/dim.h>
 
 bool dim_on_top(struct dim *dim)
 {

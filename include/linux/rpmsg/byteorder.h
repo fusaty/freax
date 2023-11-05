@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Follows implementation found in linux/virtio_byteorder.h
+ * Follows implementation found in freax/virtio_byteorder.h
  */
-#ifndef _LINUX_RPMSG_BYTEORDER_H
-#define _LINUX_RPMSG_BYTEORDER_H
-#include <linux/types.h>
-#include <uapi/linux/rpmsg_types.h>
+#ifndef _freax_RPMSG_BYTEORDER_H
+#define _freax_RPMSG_BYTEORDER_H
+#include <freax/types.h>
+#include <uapi/freax/rpmsg_types.h>
 
 static inline bool rpmsg_is_little_endian(void)
 {
@@ -64,4 +64,4 @@ static inline __rpmsg64 __cpu_to_rpmsg64(bool little_endian, u64 val)
 		return (__force __rpmsg64)cpu_to_be64(val);
 }
 
-#endif /* _LINUX_RPMSG_BYTEORDER_H */
+#endif /* _freax_RPMSG_BYTEORDER_H */

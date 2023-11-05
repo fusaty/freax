@@ -5,7 +5,7 @@
  * only deals with initialization and frequency setting, the
  * audio data has to be handled by a sound driver.
  *
- * Copyright (c) 2008 Alexey Klimov <klimov.linux@gmail.com>
+ * Copyright (c) 2008 Alexey Klimov <klimov.freax@gmail.com>
  */
 
 /*
@@ -19,7 +19,7 @@
  * achievements (specifications given).
  * Also, Faidon Liambotis <paravoid@debian.org> wrote nice driver for this radio
  * in 2007. He allowed to use his driver to improve current mr800 radio driver.
- * http://www.spinics.net/lists/linux-usb-devel/msg10109.html
+ * http://www.spinics.net/lists/freax-usb-devel/msg10109.html
  *
  * Version 0.01:	First working version.
  *			It's required to blacklist AverMedia USB Radio
@@ -41,21 +41,21 @@
  */
 
 /* kernel includes */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
 
 /* driver and module definitions */
-#define DRIVER_AUTHOR "Alexey Klimov <klimov.linux@gmail.com>"
+#define DRIVER_AUTHOR "Alexey Klimov <klimov.freax@gmail.com>"
 #define DRIVER_DESC "AverMedia MR 800 USB FM radio driver"
 #define DRIVER_VERSION "0.1.2"
 

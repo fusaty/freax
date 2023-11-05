@@ -3,9 +3,9 @@
  * Copyright (C) 2015, 2016 ARM Ltd.
  */
 
-#include <linux/irqchip/arm-gic.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
 #include <kvm/arm_vgic.h>
 #include <asm/kvm_mmu.h>
 

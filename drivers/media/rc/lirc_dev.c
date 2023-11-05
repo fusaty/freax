@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/idr.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/idr.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
 
 #include "rc-core-priv.h"
-#include <uapi/linux/lirc.h>
+#include <uapi/freax/lirc.h>
 
 #define LIRCBUF_SIZE	1024
 

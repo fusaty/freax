@@ -3,19 +3,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (c) 1994 - 1997, 99, 2000, 06, 07  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (c) 1994 - 1997, 99, 2000, 06, 07  Ralf Baechle (ralf@freax-mips.org)
  * Copyright (c) 1999, 2000  Silicon Graphics, Inc.
  */
 #ifndef _ASM_BITOPS_H
 #define _ASM_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
-#include <linux/bits.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include <asm/asm.h>
 #include <asm/barrier.h>
 #include <asm/byteorder.h>		/* sigh ... */

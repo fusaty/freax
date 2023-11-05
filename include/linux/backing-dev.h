@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/backing-dev.h
+ * include/freax/backing-dev.h
  *
  * low-level device information and state which is propagated up through
  * to high-level code.
  */
 
-#ifndef _LINUX_BACKING_DEV_H
-#define _LINUX_BACKING_DEV_H
+#ifndef _freax_BACKING_DEV_H
+#define _freax_BACKING_DEV_H
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev-defs.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/device.h>
+#include <freax/writeback.h>
+#include <freax/backing-dev-defs.h>
+#include <freax/slab.h>
 
 static inline struct backing_dev_info *bdi_get(struct backing_dev_info *bdi)
 {
@@ -372,4 +372,4 @@ static inline void wb_blkcg_offline(struct cgroup_subsys_state *css)
 
 const char *bdi_dev_name(struct backing_dev_info *bdi);
 
-#endif	/* _LINUX_BACKING_DEV_H */
+#endif	/* _freax_BACKING_DEV_H */

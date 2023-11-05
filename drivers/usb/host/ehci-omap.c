@@ -17,22 +17,22 @@
  * Based on "ehci-fsl.c" and "ehci-au1xxx.c" ehci glue layers
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb/ulpi.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/usb/ulpi.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/of.h>
+#include <freax/dma-mapping.h>
 
 #include "ehci.h"
 
-#include <linux/platform_data/usb-omap.h>
+#include <freax/platform_data/usb-omap.h>
 
 /* EHCI Register Set */
 #define EHCI_INSNREG04					(0xA0)

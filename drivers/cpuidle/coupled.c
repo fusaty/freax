@@ -7,13 +7,13 @@
  * Author: Colin Cross <ccross@android.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "cpuidle.h"
 

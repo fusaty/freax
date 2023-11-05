@@ -5,7 +5,7 @@
  * Copyright (C) 2020-2021 NVIDIA CORPORATION & AFFILIATES
  */
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #include "mlxbf_gige.h"
 #include "mlxbf_gige_regs.h"

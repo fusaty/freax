@@ -6,12 +6,12 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
+#include <freax/dccp.h>
+#include <freax/icmp.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/random.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -163,7 +163,7 @@ static inline void dccp_do_pmtu_discovery(struct sock *sk,
 	const struct dccp_sock *dp = dccp_sk(sk);
 
 	/* We are not interested in DCCP_LISTEN and request_socks (RESPONSEs
-	 * send out by Linux are always < 576bytes so they should go through
+	 * send out by freax are always < 576bytes so they should go through
 	 * unfragmented).
 	 */
 	if (sk->sk_state == DCCP_LISTEN)
@@ -215,7 +215,7 @@ void dccp_req_err(struct sock *sk, u64 seq)
 	 * socket here.
 	 */
 	if (!between48(seq, dccp_rsk(req)->dreq_iss, dccp_rsk(req)->dreq_gss)) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, freax_MIB_OUTOFWINDOWICMPS);
 	} else {
 		/*
 		 * Still in RESPOND, just remove it silently.
@@ -286,7 +286,7 @@ static int dccp_v4_err(struct sk_buff *skb, u32 info)
 	 * servers this needs to be solved differently.
 	 */
 	if (sock_owned_by_user(sk))
-		__NET_INC_STATS(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		__NET_INC_STATS(net, freax_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == DCCP_CLOSED)
 		goto out;
@@ -294,7 +294,7 @@ static int dccp_v4_err(struct sk_buff *skb, u32 info)
 	dp = dccp_sk(sk);
 	if ((1 << sk->sk_state) & ~(DCCPF_REQUESTING | DCCPF_LISTEN) &&
 	    !between48(seq, dp->dccps_awl, dp->dccps_awh)) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, freax_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -354,7 +354,7 @@ static int dccp_v4_err(struct sk_buff *skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even freax sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)
@@ -449,11 +449,11 @@ struct sock *dccp_v4_request_recv_sock(const struct sock *sk,
 	return newsk;
 
 exit_overflow:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_LISTENOVERFLOWS);
 exit_nonewsk:
 	dst_release(dst);
 exit:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_LISTENDROPS);
 	return NULL;
 put_and_exit:
 	newinet->inet_opt = NULL;

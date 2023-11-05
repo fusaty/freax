@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/page_isolation.c
+ * freax/mm/page_isolation.c
  */
 
-#include <linux/mm.h>
-#include <linux/page-isolation.h>
-#include <linux/pageblock-flags.h>
-#include <linux/memory.h>
-#include <linux/hugetlb.h>
-#include <linux/page_owner.h>
-#include <linux/migrate.h>
+#include <freax/mm.h>
+#include <freax/page-isolation.h>
+#include <freax/pageblock-flags.h>
+#include <freax/memory.h>
+#include <freax/hugetlb.h>
+#include <freax/page_owner.h>
+#include <freax/migrate.h>
 #include "internal.h"
 
 #define CREATE_TRACE_POINTS

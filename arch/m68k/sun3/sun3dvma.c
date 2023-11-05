@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/sun3/sun3dvma.c
+ * freax/arch/m68k/sun3/sun3dvma.c
  *
  * Copyright (C) 2000 Sam Creasey
  *
  * Contains common routines for sun3/sun3x DVMA management.
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/list.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/list.h>
 
 #include <asm/page.h>
 #include <asm/dvma.h>

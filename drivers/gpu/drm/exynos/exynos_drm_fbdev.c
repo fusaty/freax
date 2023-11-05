@@ -8,7 +8,7 @@
  *	Seung-Woo Kim <sw0312.kim@samsung.com>
  */
 
-#include <linux/fb.h>
+#include <freax/fb.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

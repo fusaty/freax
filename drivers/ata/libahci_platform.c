@@ -8,21 +8,21 @@
  *   Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/libata.h>
-#include <linux/ahci_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/libata.h>
+#include <freax/ahci_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/reset.h>
 #include "ahci.h"
 
 static void ahci_host_stop(struct ata_host *host);

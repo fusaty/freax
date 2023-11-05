@@ -6,17 +6,17 @@
  * Author: Chunyan Zhang <chunyan.zhang@unisoc.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/iommu.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/iommu.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define SPRD_IOMMU_PAGE_SHIFT	12
 #define SPRD_IOMMU_PAGE_SIZE	SZ_4K

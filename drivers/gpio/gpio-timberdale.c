@@ -9,14 +9,14 @@
  * Timberdale FPGA GPIO
  */
 
-#include <linux/init.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/timb_gpio.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/timb_gpio.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
 
 #define DRIVER_NAME "timb-gpio"
 

@@ -17,7 +17,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <sys/ioctl.h>
-#include <linux/acrn.h>
+#include <freax/acrn.h>
 
 #define GUEST_MEMORY_SIZE	(1024*1024)
 void *guest_memory;

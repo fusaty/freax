@@ -10,8 +10,8 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/rtc.h>
+#include <freax/kernel.h>
+#include <freax/rtc.h>
 
 #include <asm/errno.h>
 #include <asm/intersil.h>

@@ -7,10 +7,10 @@ Summary of `HDIO_` ioctl calls
 November, 2004
 
 This document attempts to describe the ioctl(2) calls supported by
-the HD/IDE layer.  These are by-and-large implemented (as of Linux 5.11)
+the HD/IDE layer.  These are by-and-large implemented (as of freax 5.11)
 drivers/ata/libata-scsi.c.
 
-ioctl values are listed in <linux/hdreg.h>.  As of this writing, they
+ioctl values are listed in <freax/hdreg.h>.  As of this writing, they
 are as follows:
 
     ioctls that pass argument pointers to user space:
@@ -46,7 +46,7 @@ General:
 	address space.
 
 	Unless otherwise specified, all data structures and constants
-	are defined in <linux/hdreg.h>
+	are defined in <freax/hdreg.h>
 
 ------------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ HDIO_GETGEO
 		drive geometry is an abstraction which is actually subject
 		to change.  Currently (as of Nov 2004), the geometry values
 		are the "bios" values -- presumably the values the drive had
-		when Linux first booted.
+		when freax first booted.
 
 		In addition, the cylinders field of the hd_geometry is an
 		unsigned short, meaning that on most architectures, this

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (c) 2022, Google LLC
  */
 
-#ifndef _UAPI_LINUX_LOOP_LOADPIN_H
-#define _UAPI_LINUX_LOOP_LOADPIN_H
+#ifndef _UAPI_freax_LOOP_LOADPIN_H
+#define _UAPI_freax_LOOP_LOADPIN_H
 
 #define LOADPIN_IOC_MAGIC	'L'
 
@@ -19,4 +19,4 @@
  */
 #define LOADPIN_IOC_SET_TRUSTED_VERITY_DIGESTS _IOW(LOADPIN_IOC_MAGIC, 0x00, unsigned int)
 
-#endif /* _UAPI_LINUX_LOOP_LOADPIN_H */
+#endif /* _UAPI_freax_LOOP_LOADPIN_H */

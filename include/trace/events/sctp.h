@@ -6,7 +6,7 @@
 #define _TRACE_SCTP_H
 
 #include <net/sctp/structs.h>
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(sctp_probe_path,
 

@@ -8,20 +8,20 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/bcd.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
 
 #define RV3032_SEC			0x01
 #define RV3032_MIN			0x02

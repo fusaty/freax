@@ -8,11 +8,11 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regulator/consumer.h>
 
 #define FEIYANG_INIT_CMD_LEN	2
 

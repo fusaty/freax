@@ -17,18 +17,18 @@
  * TODO: add support for reading sizes other than 32bits and masking
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/hrtimer.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/timeriomem-rng.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/hrtimer.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/timeriomem-rng.h>
 
 struct timeriomem_rng_private {
 	void __iomem		*io_base;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SEQLOCK_H
-#define __LINUX_SEQLOCK_H
+#ifndef __freax_SEQLOCK_H
+#define __freax_SEQLOCK_H
 
 /*
  * seqcount_t / seqlock_t - a reader-writer consistency mechanism with
@@ -13,12 +13,12 @@
  * - Sequence counters with associated locks, (C) 2020 Linutronix GmbH
  */
 
-#include <linux/compiler.h>
-#include <linux/kcsan-checks.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
+#include <freax/compiler.h>
+#include <freax/kcsan-checks.h>
+#include <freax/lockdep.h>
+#include <freax/mutex.h>
+#include <freax/preempt.h>
+#include <freax/spinlock.h>
 
 #include <asm/processor.h>
 
@@ -1230,4 +1230,4 @@ done_seqretry_irqrestore(seqlock_t *lock, int seq, unsigned long flags)
 	if (seq & 1)
 		read_sequnlock_excl_irqrestore(lock, flags);
 }
-#endif /* __LINUX_SEQLOCK_H */
+#endif /* __freax_SEQLOCK_H */

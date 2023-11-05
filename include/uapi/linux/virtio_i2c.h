@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0-or-later WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-or-later WITH freax-syscall-note */
 /*
  * Definitions for virtio I2C Adpter
  *
  * Copyright (c) 2021 Intel Corporation. All rights reserved.
  */
 
-#ifndef _UAPI_LINUX_VIRTIO_I2C_H
-#define _UAPI_LINUX_VIRTIO_I2C_H
+#ifndef _UAPI_freax_VIRTIO_I2C_H
+#define _UAPI_freax_VIRTIO_I2C_H
 
-#include <linux/const.h>
-#include <linux/types.h>
+#include <freax/const.h>
+#include <freax/types.h>
 
 /* Virtio I2C Feature bits */
 #define VIRTIO_I2C_F_ZERO_LENGTH_REQUEST	0
@@ -44,4 +44,4 @@ struct virtio_i2c_in_hdr {
 #define VIRTIO_I2C_MSG_OK	0
 #define VIRTIO_I2C_MSG_ERR	1
 
-#endif /* _UAPI_LINUX_VIRTIO_I2C_H */
+#endif /* _UAPI_freax_VIRTIO_I2C_H */

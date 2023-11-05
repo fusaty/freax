@@ -2,7 +2,7 @@
 /*
  * Comedi driver for National Instruments PCI-DIO-32HS
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1999,2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -38,11 +38,11 @@
 
 #define USE_DMA
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/comedi/comedi_pci.h>
 
 #include "mite.h"
 

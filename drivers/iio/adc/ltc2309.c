@@ -7,13 +7,13 @@
  *
  * Copyright (c) 2023, Liam Beguin <liambeguin@gmail.com>
  */
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bitfield.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
 
 #define LTC2309_ADC_RESOLUTION	12
 

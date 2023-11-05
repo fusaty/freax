@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2020, Intel Corporation
  *
- * Authors: Alexander Antonov <alexander.antonov@linux.intel.com>
+ * Authors: Alexander Antonov <alexander.antonov@freax.intel.com>
  */
 
 #include <api/fs/fs.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/zalloc.h>
 #include <limits.h>
 #include <stdio.h>
 #include <string.h>

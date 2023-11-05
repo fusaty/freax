@@ -3,13 +3,13 @@
  *	Copyright (c) 2001 Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
@@ -25,7 +25,7 @@
 static char version[] __initdata =
 	"ms02-nv.c: v.1.0.0  13 Aug 2001  Maciej W. Rozycki.\n";
 
-MODULE_AUTHOR("Maciej W. Rozycki <macro@linux-mips.org>");
+MODULE_AUTHOR("Maciej W. Rozycki <macro@freax-mips.org>");
 MODULE_DESCRIPTION("DEC MS02-NV NVRAM module driver");
 MODULE_LICENSE("GPL");
 

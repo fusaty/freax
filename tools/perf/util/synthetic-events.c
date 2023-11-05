@@ -18,11 +18,11 @@
 #include "util/synthetic-events.h"
 #include "util/target.h"
 #include "util/time-utils.h"
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <linux/perf_event.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
+#include <freax/perf_event.h>
 #include <asm/bug.h>
 #include <perf/evsel.h>
 #include <perf/cpumap.h>
@@ -35,7 +35,7 @@
 #include <inttypes.h>
 #include <stdio.h>
 #include <string.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <uapi/freax/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 #include <api/fs/fs.h>
 #include <api/io.h>
 #include <sys/types.h>

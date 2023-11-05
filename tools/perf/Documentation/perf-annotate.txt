@@ -52,11 +52,11 @@ OPTIONS
         Dump raw trace in ASCII.
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname.
+--vmfreax=<file>::
+        vmfreax pathname.
 
---ignore-vmlinux::
-	Ignore vmlinux files.
+--ignore-vmfreax::
+	Ignore vmfreax files.
 
 --itrace::
 	Options for decoding instruction tracing data. The options are:

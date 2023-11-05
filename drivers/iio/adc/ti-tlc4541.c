@@ -13,22 +13,22 @@
  * Data is returned MSB first.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/sysfs.h>
 
 struct tlc4541_state {
 	struct spi_device               *spi;

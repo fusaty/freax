@@ -114,20 +114,20 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/property.h>
-#include <linux/acpi.h>
-#include <linux/mdio.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/clk.h>
+#include <freax/property.h>
+#include <freax/acpi.h>
+#include <freax/mdio.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

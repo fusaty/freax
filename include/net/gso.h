@@ -3,7 +3,7 @@
 #ifndef _NET_GSO_H
 #define _NET_GSO_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 /* Keeps track of mac header offset relative to skb->head.
  * It is useful for TSO of Tunneling protocol. e.g. GRE.

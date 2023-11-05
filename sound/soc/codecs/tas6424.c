@@ -7,15 +7,15 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

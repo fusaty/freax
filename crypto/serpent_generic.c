@@ -8,11 +8,11 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
 #include <asm/unaligned.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <crypto/serpent.h>
 
 /* Key is padded to the maximum of 256 bits before round key generation.

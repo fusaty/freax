@@ -3,7 +3,7 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/alternative-asm.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>

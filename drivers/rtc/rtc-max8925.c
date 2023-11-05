@@ -6,12 +6,12 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max8925.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/max8925.h>
 
 enum {
 	RTC_SEC = 0,

@@ -4,22 +4,22 @@
  * Copyright 2008 Sascha Hauer, kernel@pengutronix.de
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/completion.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/completion.h>
+#include <freax/of.h>
 
 #define DRIVER_NAME "mxc_nand"
 

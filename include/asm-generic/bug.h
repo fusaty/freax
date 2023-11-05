@@ -2,9 +2,9 @@
 #ifndef _ASM_GENERIC_BUG_H
 #define _ASM_GENERIC_BUG_H
 
-#include <linux/compiler.h>
-#include <linux/instrumentation.h>
-#include <linux/once_lite.h>
+#include <freax/compiler.h>
+#include <freax/instrumentation.h>
+#include <freax/once_lite.h>
 
 #define CUT_HERE		"------------[ cut here ]------------\n"
 
@@ -18,8 +18,8 @@
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/panic.h>
-#include <linux/printk.h>
+#include <freax/panic.h>
+#include <freax/printk.h>
 
 struct warn_args;
 struct pt_regs;

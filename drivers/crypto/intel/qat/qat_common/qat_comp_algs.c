@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation */
-#include <linux/crypto.h>
+#include <freax/crypto.h>
 #include <crypto/acompress.h>
 #include <crypto/internal/acompress.h>
 #include <crypto/scatterwalk.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
+#include <freax/dma-mapping.h>
+#include <freax/workqueue.h>
 #include "adf_accel_devices.h"
 #include "adf_common_drv.h"
 #include "qat_bl.h"

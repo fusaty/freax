@@ -10,18 +10,18 @@
  * Copyright (C) 2005 Stephen Street / StreetFire Sound Labs
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/sh_hspi.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/io.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/sh_hspi.h>
 
 #define SPCR	0x00
 #define SPSR	0x04

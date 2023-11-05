@@ -5,35 +5,35 @@
  *
  * Authors:
  *  Haijun Liu <haijun.liu@mediatek.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeup.h>
-#include <linux/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/bits.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/gfp.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/jiffies.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeup.h>
+#include <freax/spinlock.h>
 
 #include "t7xx_mhccif.h"
 #include "t7xx_modem_ops.h"

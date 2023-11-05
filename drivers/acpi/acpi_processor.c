@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  * Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- * Copyright (C) 2004       Dominik Brodowski <linux@brodo.de>
+ * Copyright (C) 2004       Dominik Brodowski <freax@brodo.de>
  * Copyright (C) 2004  Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  * Copyright (C) 2013, Intel Corporation
  *                     Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/device.h>
+#include <freax/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 
 #include <acpi/processor.h>
 
@@ -548,7 +548,7 @@ bool __init processor_physically_present(acpi_handle handle)
 
 	if (xen_initial_domain())
 		/*
-		 * When running as a Xen dom0 the number of processors Linux
+		 * When running as a Xen dom0 the number of processors freax
 		 * sees can be different from the real number of processors on
 		 * the system, and we still need to execute _PDC or _OSC for
 		 * all of them.

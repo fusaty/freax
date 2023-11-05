@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *      Davicom DM9000 Fast Ethernet driver for Linux.
+ *      Davicom DM9000 Fast Ethernet driver for freax.
  * 	Copyright (C) 1997  Sten Wang
  *
  * (C) Copyright 1997-1998 DAVICOM Semiconductor,Inc. All Rights Reserved.
@@ -10,25 +10,25 @@
  *	Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/ethtool.h>
-#include <linux/dm9000.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/crc32.h>
+#include <freax/mii.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/ethtool.h>
+#include <freax/dm9000.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
 
 #include <asm/delay.h>
 #include <asm/irq.h>

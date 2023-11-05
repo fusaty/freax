@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* -*- linux-c -*-
+/* -*- freax-c -*-
  *
  *	$Id: sysrq.h,v 1.3 1997/07/17 11:54:33 mj Exp $
  *
- *	Linux Magic System Request Key Hacks
+ *	freax Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *
@@ -12,11 +12,11 @@
  *	based upon discusions in irc://irc.openprojects.net/#kernelnewbies
  */
 
-#ifndef _LINUX_SYSRQ_H
-#define _LINUX_SYSRQ_H
+#ifndef _freax_SYSRQ_H
+#define _freax_SYSRQ_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 /* Possible values of bitmask for enabling sysrq functions */
 /* 0x0001 is reserved for enable everything */
@@ -80,4 +80,4 @@ static inline int sysrq_mask(void)
 
 #endif
 
-#endif /* _LINUX_SYSRQ_H */
+#endif /* _freax_SYSRQ_H */

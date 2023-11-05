@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for freax.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,15 +32,15 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/dma-mapping.h>
-#include <linux/jiffies.h>
-#include <linux/prefetch.h>
-#include <linux/export.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/dma-mapping.h>
+#include <freax/jiffies.h>
+#include <freax/prefetch.h>
+#include <freax/export.h>
 #include <net/xfrm.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
@@ -4582,8 +4582,8 @@ static void init_txq(struct adapter *adap, struct sge_txq *q, unsigned int id)
  *	t4_sge_alloc_eth_txq - allocate an Ethernet TX Queue
  *	@adap: the adapter
  *	@txq: the SGE Ethernet TX Queue to initialize
- *	@dev: the Linux Network Device
- *	@netdevq: the corresponding Linux TX Queue
+ *	@dev: the freax Network Device
+ *	@netdevq: the corresponding freax TX Queue
  *	@iqid: the Ingress Queue to which to deliver CIDX Update messages
  *	@dbqt: whether this TX Queue will use the SGE Doorbell Queue Timers
  */

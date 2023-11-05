@@ -10,13 +10,13 @@
  *  http://www.hoperf.com/upload/sensor/HP206C_DataSheet_EN_V2.0.pdf
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/delay.h>
-#include <linux/util_macros.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/delay.h>
+#include <freax/util_macros.h>
+#include <freax/acpi.h>
 
 #include <asm/unaligned.h>
 

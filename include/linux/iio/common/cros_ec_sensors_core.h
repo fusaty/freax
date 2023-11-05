@@ -8,11 +8,11 @@
 #ifndef __CROS_EC_SENSORS_CORE_H
 #define __CROS_EC_SENSORS_CORE_H
 
-#include <linux/iio/iio.h>
-#include <linux/irqreturn.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_ec_sensorhub.h>
+#include <freax/iio/iio.h>
+#include <freax/irqreturn.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_data/cros_ec_sensorhub.h>
 
 enum {
 	CROS_EC_SENSOR_X,

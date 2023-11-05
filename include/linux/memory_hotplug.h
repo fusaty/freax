@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MEMORY_HOTPLUG_H
-#define __LINUX_MEMORY_HOTPLUG_H
+#ifndef __freax_MEMORY_HOTPLUG_H
+#define __freax_MEMORY_HOTPLUG_H
 
-#include <linux/mmzone.h>
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
-#include <linux/bug.h>
+#include <freax/mmzone.h>
+#include <freax/spinlock.h>
+#include <freax/notifier.h>
+#include <freax/bug.h>
 
 struct page;
 struct zone;
@@ -358,4 +358,4 @@ extern int arch_create_linear_mapping(int nid, u64 start, u64 size,
 void arch_remove_linear_mapping(u64 start, u64 size);
 #endif /* CONFIG_MEMORY_HOTPLUG */
 
-#endif /* __LINUX_MEMORY_HOTPLUG_H */
+#endif /* __freax_MEMORY_HOTPLUG_H */

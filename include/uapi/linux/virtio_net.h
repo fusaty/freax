@@ -1,5 +1,5 @@
-#ifndef _UAPI_LINUX_VIRTIO_NET_H
-#define _UAPI_LINUX_VIRTIO_NET_H
+#ifndef _UAPI_freax_VIRTIO_NET_H
+#define _UAPI_freax_VIRTIO_NET_H
 /* This header is BSD licensed so anyone can use the definitions to implement
  * compatible drivers/servers.
  *
@@ -25,11 +25,11 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE. */
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_types.h>
+#include <freax/if_ether.h>
 
 /* The feature bitmap for virtio net */
 #define VIRTIO_NET_F_CSUM	0	/* Host handles pkts w/ partial csum */
@@ -406,4 +406,4 @@ struct  virtio_net_ctrl_coal_vq {
 	struct virtio_net_ctrl_coal coal;
 };
 
-#endif /* _UAPI_LINUX_VIRTIO_NET_H */
+#endif /* _UAPI_freax_VIRTIO_NET_H */

@@ -9,16 +9,16 @@
  * Copyright (c) 2008 STMicroelectronics Limited
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
 
 #define MII_XCIIS	0x11	/* Configuration Info IRQ & Status Reg */
 #define MII_XIE		0x12	/* Interrupt Enable Register */

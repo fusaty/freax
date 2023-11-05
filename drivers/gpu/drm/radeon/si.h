@@ -1,4 +1,4 @@
-/* si.h -- Private header for radeon driver -*- linux-c -*-
+/* si.h -- Private header for radeon driver -*- freax-c -*-
  *
  * Copyright 2011 Advanced Micro Devices, Inc.
  *

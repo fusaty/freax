@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
-#ifndef _LINUX_XARRAY_H
-#define _LINUX_XARRAY_H
+#ifndef _freax_XARRAY_H
+#define _freax_XARRAY_H
 /*
  * eXtensible Arrays
  * Copyright (c) 2017 Microsoft Corporation
@@ -9,16 +9,16 @@
  * See Documentation/core-api/xarray.rst for how to use the XArray.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/mm.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitmap.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/gfp.h>
+#include <freax/kconfig.h>
+#include <freax/kernel.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/mm.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 /*
  * The bottom two bits of the entry determine how the XArray interprets
@@ -1883,4 +1883,4 @@ static inline void *xas_next(struct xa_state *xas)
 	return xa_entry(xas->xa, node, xas->xa_offset);
 }
 
-#endif /* _LINUX_XARRAY_H */
+#endif /* _freax_XARRAY_H */

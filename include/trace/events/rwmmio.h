@@ -8,7 +8,7 @@
 #if !defined(_TRACE_RWMMIO_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RWMMIO_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(rwmmio_rw_template,
 

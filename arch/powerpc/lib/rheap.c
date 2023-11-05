@@ -12,13 +12,13 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 
 #include <asm/rheap.h>
 

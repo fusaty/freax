@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include "xp.h"
 
 /*

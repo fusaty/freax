@@ -13,12 +13,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/usb/input.h>
+#include <freax/completion.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/usb/input.h>
 
 #include <media/rc-core.h>
 

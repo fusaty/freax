@@ -8,28 +8,28 @@
  * Copyright (C) 2004 Pengutronix
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/rational.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/platform_device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/ktime.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/rational.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/irq.h>
-#include <linux/dma/imx-dma.h>
+#include <freax/dma/imx-dma.h>
 
 #include "serial_mctrl_gpio.h"
 

@@ -5,7 +5,7 @@
  *
  *    (c) 2004 Jelle Foks <jelle@foks.us>
  *    (c) 2004 Gerd Knorr <kraxel@bytesex.org>
- *    (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *    (c) 2008 Steven Toth <stoth@freaxtv.org>
  *      - CX23885/7/8 support
  *
  *  Includes parts from the ivtv driver( http://ivtv.sourceforge.net/),
@@ -13,15 +13,15 @@
 
 #include "cx231xx.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

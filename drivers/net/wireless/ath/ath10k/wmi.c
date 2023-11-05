@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The freax Foundation. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <freax/skbuff.h>
+#include <freax/ctype.h>
 
 #include "core.h"
 #include "htc.h"

@@ -4,15 +4,15 @@
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
  */
 
-#include <linux/cpufeature.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/isst_if.h>
+#include <freax/cpufeature.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
+#include <uapi/freax/isst_if.h>
 
 #include "isst_if_common.h"
 

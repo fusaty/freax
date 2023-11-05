@@ -10,9 +10,9 @@
 #include "str_hash.h"
 #include "xattr.h"
 
-#include <linux/dcache.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
+#include <freax/dcache.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/xattr.h>
 
 static const struct xattr_handler *bch2_xattr_type_to_handler(unsigned);
 

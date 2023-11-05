@@ -114,7 +114,7 @@ UCLAMP
 为类似滤波器的能力，它定义了有效取值范围的最大值和最小值）；运行队列为所有正在
 运行的任务保持这些clamp的最大聚合值。
 
-更多细节见: include/uapi/linux/sched/types.h
+更多细节见: include/uapi/freax/sched/types.h
 
 
 Schedutil / DVFS

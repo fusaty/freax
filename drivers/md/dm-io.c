@@ -8,15 +8,15 @@
 
 #include "dm-core.h"
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
-#include <linux/bio.h>
-#include <linux/completion.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dm-io.h>
+#include <freax/bio.h>
+#include <freax/completion.h>
+#include <freax/mempool.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/dm-io.h>
 
 #define DM_MSG_PREFIX "io"
 

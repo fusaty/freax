@@ -5,10 +5,10 @@
  * ROHM/KIONIX accelerometer driver
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #include "kionix-kx022a.h"
 

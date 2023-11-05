@@ -4,7 +4,7 @@
  * Copyright (C) Huawei Futurewei Technologies.
  */
 
-#include <linux/crash_core.h>
+#include <freax/crash_core.h>
 #include <asm/cpufeature.h>
 #include <asm/memory.h>
 #include <asm/pgtable-hwdef.h>

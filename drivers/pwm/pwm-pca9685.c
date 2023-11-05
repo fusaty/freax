@@ -8,19 +8,19 @@
  * based on the pwm-twl-led.c driver
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitmap.h>
+#include <freax/acpi.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/bitmap.h>
 
 /*
  * Because the PCA9685 has only one prescaler per chip, only the first channel

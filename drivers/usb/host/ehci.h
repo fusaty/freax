@@ -3,8 +3,8 @@
  * Copyright (c) 2001-2002 by David Brownell
  */
 
-#ifndef __LINUX_EHCI_HCD_H
-#define __LINUX_EHCI_HCD_H
+#ifndef __freax_EHCI_HCD_H
+#define __freax_EHCI_HCD_H
 
 /* definitions used for the EHCI driver */
 
@@ -274,7 +274,7 @@ static inline struct usb_hcd *ehci_to_hcd(struct ehci_hcd *ehci)
 
 /*-------------------------------------------------------------------------*/
 
-#include <linux/usb/ehci_def.h>
+#include <freax/usb/ehci_def.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -904,4 +904,4 @@ extern void	ehci_adjust_port_wakeup_flags(struct ehci_hcd *ehci,
 extern int	ehci_hub_control(struct usb_hcd	*hcd, u16 typeReq, u16 wValue,
 				 u16 wIndex, char *buf, u16 wLength);
 
-#endif /* __LINUX_EHCI_HCD_H */
+#endif /* __freax_EHCI_HCD_H */

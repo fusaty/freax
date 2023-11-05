@@ -2,7 +2,7 @@
 #define VERSION "0.23"
 /* ns83820.c by Benjamin LaHaise with contributions.
  *
- * Questions/comments/discussion to linux-ns83820@kvack.org.
+ * Questions/comments/discussion to freax-ns83820@kvack.org.
  *
  * $Revision: 1.34.2.23 $
  *
@@ -81,31 +81,31 @@
 //#define dprintk		printk
 #define dprintk(x...)		do { } while (0)
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>	/* for iph */
-#include <linux/in.h>	/* for IPPROTO_... */
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/ethtool.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>	/* for iph */
+#include <freax/in.h>	/* for IPPROTO_... */
+#include <freax/compiler.h>
+#include <freax/prefetch.h>
+#include <freax/ethtool.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/if_vlan.h>
+#include <freax/rtnetlink.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define DRV_NAME "ns83820"
 

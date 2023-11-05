@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KASAN_H
-#define _LINUX_KASAN_H
+#ifndef _freax_KASAN_H
+#define _freax_KASAN_H
 
-#include <linux/bug.h>
-#include <linux/kasan-enabled.h>
-#include <linux/kernel.h>
-#include <linux/static_key.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/kasan-enabled.h>
+#include <freax/kernel.h>
+#include <freax/static_key.h>
+#include <freax/types.h>
 
 struct kmem_cache;
 struct page;
@@ -16,7 +16,7 @@ struct task_struct;
 
 #ifdef CONFIG_KASAN
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/kasan.h>
 
 #endif
@@ -30,7 +30,7 @@ typedef unsigned int __bitwise kasan_vmalloc_flags_t;
 
 #if defined(CONFIG_KASAN_GENERIC) || defined(CONFIG_KASAN_SW_TAGS)
 
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 
 /* Software KASAN implementations use shadow memory. */
 
@@ -474,4 +474,4 @@ void kasan_non_canonical_hook(unsigned long addr);
 static inline void kasan_non_canonical_hook(unsigned long addr) { }
 #endif /* CONFIG_KASAN_GENERIC || CONFIG_KASAN_SW_TAGS */
 
-#endif /* LINUX_KASAN_H */
+#endif /* freax_KASAN_H */

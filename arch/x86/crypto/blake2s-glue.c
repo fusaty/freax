@@ -5,10 +5,10 @@
 
 #include <crypto/internal/blake2s.h>
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
 
 #include <asm/cpufeature.h>
 #include <asm/fpu/api.h>

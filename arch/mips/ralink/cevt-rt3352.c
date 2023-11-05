@@ -6,15 +6,15 @@
  * Copyright (C) 2013 by John Crispin <john@phrozen.org>
  */
 
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/interrupt.h>
+#include <freax/reset.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

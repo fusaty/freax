@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for freax.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -37,23 +37,23 @@
 
 #include "t4_hw.h"
 
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/rhashtable.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/crash_dump.h>
-#include <linux/thermal.h>
+#include <freax/bitops.h>
+#include <freax/cache.h>
+#include <freax/ethtool.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/vmalloc.h>
+#include <freax/rhashtable.h>
+#include <freax/etherdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/ptp_classify.h>
+#include <freax/crash_dump.h>
+#include <freax/thermal.h>
 #include <asm/io.h>
 #include "t4_chip_type.h"
 #include "cxgb4_uld.h"

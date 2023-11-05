@@ -16,7 +16,7 @@
 #include "replicas.h"
 #include "snapshot.h"
 
-#include <linux/prefetch.h>
+#include <freax/prefetch.h>
 
 static void verify_update_old_key(struct btree_trans *trans, struct btree_insert_entry *i)
 {

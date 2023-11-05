@@ -7,8 +7,8 @@
  * resource counting etc..
  */
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 #if defined(CONFIG_GUSA_RB)
 #include <asm/cmpxchg-grb.h>

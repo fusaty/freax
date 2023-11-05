@@ -14,13 +14,13 @@
  * any Au1550 board that has a similar PSC configuration.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_psc.h>

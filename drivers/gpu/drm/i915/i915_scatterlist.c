@@ -10,7 +10,7 @@
 #include <drm/drm_buddy.h>
 #include <drm/drm_mm.h>
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 bool i915_sg_trim(struct sg_table *orig_st)
 {

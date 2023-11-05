@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include "drm_random.h"
 

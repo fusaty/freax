@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LAPB_H
 #define _LAPB_H 
-#include <linux/lapb.h>
-#include <linux/refcount.h>
+#include <freax/lapb.h>
+#include <freax/refcount.h>
 
 #define	LAPB_HEADER_LEN	20		/* LAPB over Ethernet + a bit more */
 

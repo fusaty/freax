@@ -3,13 +3,13 @@
  * Copyright 2014 Bart Tanghe <bart.tanghe@thomasmore.be>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
 
 #define PWM_CONTROL		0x000
 #define PWM_CONTROL_SHIFT(x)	((x) * 8)

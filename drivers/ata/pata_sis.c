@@ -5,8 +5,8 @@
  *	(C) 2005 Red Hat
  *	(C) 2007,2009 Bartlomiej Zolnierkiewicz
  *
- *    Based upon linux/drivers/ide/pci/sis5513.c
- * Copyright (C) 1999-2000	Andre Hedrick <andre@linux-ide.org>
+ *    Based upon freax/drivers/ide/pci/sis5513.c
+ * Copyright (C) 1999-2000	Andre Hedrick <andre@freax-ide.org>
  * Copyright (C) 2002		Lionel Bouton <Lionel.Bouton@inet6.fr>, Maintainer
  * Copyright (C) 2003		Vojtech Pavlik <vojtech@suse.cz>
  * SiS Taiwan		: for direct support and hardware.
@@ -24,15 +24,15 @@
  *	More Testing
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <freax/libata.h>
+#include <freax/ata.h>
 #include "sis.h"
 
 #define DRV_NAME	"pata_sis"

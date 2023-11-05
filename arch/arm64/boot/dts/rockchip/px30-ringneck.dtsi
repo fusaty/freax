@@ -31,7 +31,7 @@
 		module_led: led-0 {
 			gpios = <&gpio1 RK_PB0 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_HEARTBEAT;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			color = <LED_COLOR_ID_AMBER>;
 		};
 	};

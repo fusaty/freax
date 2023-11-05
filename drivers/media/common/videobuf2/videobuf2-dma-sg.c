@@ -10,13 +10,13 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/refcount.h>
+#include <freax/scatterlist.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-memops.h>

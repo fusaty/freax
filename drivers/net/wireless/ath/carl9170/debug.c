@@ -37,10 +37,10 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/vmalloc.h>
 #include "carl9170.h"
 #include "cmd.h"
 

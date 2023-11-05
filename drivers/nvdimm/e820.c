@@ -3,11 +3,11 @@
  * Copyright (c) 2015, Christoph Hellwig.
  * Copyright (c) 2015, Intel Corporation.
  */
-#include <linux/platform_device.h>
-#include <linux/memory_hotplug.h>
-#include <linux/libnvdimm.h>
-#include <linux/module.h>
-#include <linux/numa.h>
+#include <freax/platform_device.h>
+#include <freax/memory_hotplug.h>
+#include <freax/libnvdimm.h>
+#include <freax/module.h>
+#include <freax/numa.h>
 
 static int e820_pmem_remove(struct platform_device *pdev)
 {

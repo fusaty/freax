@@ -34,14 +34,14 @@
 
 //#define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb/input.h>
+#include <freax/hid.h>
+#include <freax/mutex.h>
 
 static bool swap_xy;
 module_param(swap_xy, bool, 0644);

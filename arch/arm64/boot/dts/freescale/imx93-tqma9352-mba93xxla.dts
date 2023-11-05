@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: (GPL-2.0-or-later OR MIT)
 /*
- * Copyright (c) 2022-2023 TQ-Systems GmbH <linux@ew.tq-group.com>,
+ * Copyright (c) 2022-2023 TQ-Systems GmbH <freax@ew.tq-group.com>,
  * D-82229 Seefeld, Germany.
  * Author: Markus Niebel
  * Author: Alexander Stein
@@ -51,14 +51,14 @@
 
 		switch-a {
 			label = "switcha";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&expander0 6 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		switch-b {
 			label = "switchb";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&expander0 7 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -71,14 +71,14 @@
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&expander2 6 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-2 {
 			color = <LED_COLOR_ID_AMBER>;
 			function = LED_FUNCTION_HEARTBEAT;
 			gpios = <&expander2 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -396,7 +396,7 @@
 &lpuart2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	status = "okay";
 };
 

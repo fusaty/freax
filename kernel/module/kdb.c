@@ -5,8 +5,8 @@
  * Copyright (C) 2010 Jason Wessel
  */
 
-#include <linux/module.h>
-#include <linux/kdb.h>
+#include <freax/module.h>
+#include <freax/kdb.h>
 #include "internal.h"
 
 /*

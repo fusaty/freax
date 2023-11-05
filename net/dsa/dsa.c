@@ -7,16 +7,16 @@
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/rtnetlink.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
 #include <net/dsa_stubs.h>
 #include <net/sch_generic.h>
 

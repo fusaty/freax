@@ -47,7 +47,7 @@ additionalProperties: false
 examples:
   - |
     #include <dt-bindings/interrupt-controller/irq.h>
-    #include <dt-bindings/input/linux-event-codes.h>
+    #include <dt-bindings/input/freax-event-codes.h>
     i2c {
         #address-cells = <1>;
         #size-cells = <0>;

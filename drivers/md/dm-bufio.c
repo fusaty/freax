@@ -7,19 +7,19 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-bufio.h>
+#include <freax/dm-bufio.h>
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/jiffies.h>
-#include <linux/vmalloc.h>
-#include <linux/shrinker.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/stacktrace.h>
-#include <linux/jump_label.h>
+#include <freax/device-mapper.h>
+#include <freax/dm-io.h>
+#include <freax/slab.h>
+#include <freax/sched/mm.h>
+#include <freax/jiffies.h>
+#include <freax/vmalloc.h>
+#include <freax/shrinker.h>
+#include <freax/module.h>
+#include <freax/rbtree.h>
+#include <freax/stacktrace.h>
+#include <freax/jump_label.h>
 
 #include "dm.h"
 

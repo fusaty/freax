@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_ISA_DMA_H
-#define __LINUX_ISA_DMA_H
+#ifndef __freax_ISA_DMA_H
+#define __freax_ISA_DMA_H
 
 #include <asm/dma.h>
 
@@ -11,4 +11,4 @@ extern int isa_dma_bridge_buggy;
 #define isa_dma_bridge_buggy	(0)
 #endif
 
-#endif /* __LINUX_ISA_DMA_H */
+#endif /* __freax_ISA_DMA_H */

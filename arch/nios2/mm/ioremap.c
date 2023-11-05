@@ -9,12 +9,12 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

@@ -3,8 +3,8 @@
  * Copyright 2015-2017 Google, Inc
  */
 
-#ifndef __LINUX_USB_PD_BDO_H
-#define __LINUX_USB_PD_BDO_H
+#ifndef __freax_USB_PD_BDO_H
+#define __freax_USB_PD_BDO_H
 
 /* BDO : BIST Data Object */
 #define BDO_MODE_RECV		(0 << 28)

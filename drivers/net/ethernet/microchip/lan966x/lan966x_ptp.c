@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/ptp_classify.h>
+#include <freax/ptp_classify.h>
 
 #include "lan966x_main.h"
 #include "vcap_api.h"

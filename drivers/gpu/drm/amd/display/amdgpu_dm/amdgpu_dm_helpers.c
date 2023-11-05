@@ -23,9 +23,9 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/acpi.h>
-#include <linux/i2c.h>
+#include <freax/string.h>
+#include <freax/acpi.h>
+#include <freax/i2c.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_probe_helper.h>

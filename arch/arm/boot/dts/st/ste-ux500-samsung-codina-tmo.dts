@@ -151,19 +151,19 @@
 		pinctrl-0 = <&gpio_keys_default_mode>;
 
 		button-home {
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			label = "HOME";
 			/* GPIO91 */
 			gpios = <&gpio2 27 GPIO_ACTIVE_LOW>;
 		};
 		button-volup {
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			label = "VOL+";
 			/* GPIO67 */
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
 		};
 		button-voldown {
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			label = "VOL-";
 			/* GPIO92 */
 			gpios = <&gpio2 28 GPIO_ACTIVE_LOW>;

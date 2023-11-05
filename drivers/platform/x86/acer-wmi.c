@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/i8042.h>
-#include <linux/rfkill.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/dmi.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/i8042.h>
+#include <freax/rfkill.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
 #include <acpi/video.h>
 
 MODULE_AUTHOR("Carlos Corbacho");

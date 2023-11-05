@@ -5,15 +5,15 @@
  * Copyright (c) 2012-2013 Dongjin Kim (tobetter@gmail.com)
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb3503.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/i2c.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/usb3503.h>
+#include <freax/regmap.h>
 
 #define USB3503_VIDL		0x00
 #define USB3503_VIDM		0x01

@@ -6,11 +6,11 @@
  * STM console will send kernel messages over STM devices to a trace host.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/slab.h>
-#include <linux/stm.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/console.h>
+#include <freax/slab.h>
+#include <freax/stm.h>
 
 static int stm_console_link(struct stm_source_data *data);
 static void stm_console_unlink(struct stm_source_data *data);
@@ -69,4 +69,4 @@ module_exit(stm_console_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("stm_console driver");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@freax.intel.com>");

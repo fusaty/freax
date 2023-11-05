@@ -10,27 +10,27 @@
  *	Safe accesses to vmalloc/direct-mapped discontiguous areas, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/crash_core.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kcore.h>
-#include <linux/user.h>
-#include <linux/capability.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
+#include <freax/crash_core.h>
+#include <freax/mm.h>
+#include <freax/proc_fs.h>
+#include <freax/kcore.h>
+#include <freax/user.h>
+#include <freax/capability.h>
+#include <freax/elf.h>
+#include <freax/elfcore.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/printk.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/uio.h>
 #include <asm/io.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/memory.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
+#include <freax/list.h>
+#include <freax/ioport.h>
+#include <freax/memory.h>
+#include <freax/sched/task.h>
+#include <freax/security.h>
 #include <asm/sections.h>
 #include "internal.h"
 
@@ -416,7 +416,7 @@ static ssize_t read_kcore_iter(struct kiocb *iocb, struct iov_iter *iter)
 		struct elf_prstatus prstatus = {};
 		struct elf_prpsinfo prpsinfo = {
 			.pr_sname = 'R',
-			.pr_fname = "vmlinux",
+			.pr_fname = "vmfreax",
 		};
 		char *notes;
 		size_t i = 0;

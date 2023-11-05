@@ -6,13 +6,13 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi_host.h>
 

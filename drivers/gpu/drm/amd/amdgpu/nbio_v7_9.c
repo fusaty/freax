@@ -28,7 +28,7 @@
 #include "nbio/nbio_7_9_0_offset.h"
 #include "nbio/nbio_7_9_0_sh_mask.h"
 #include "ivsrcid/nbio/irqsrcs_nbif_7_4.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 #define NPS_MODE_MASK 0x000000FFL
 

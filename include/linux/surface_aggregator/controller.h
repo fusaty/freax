@@ -9,14 +9,14 @@
  * Copyright (C) 2019-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _LINUX_SURFACE_AGGREGATOR_CONTROLLER_H
-#define _LINUX_SURFACE_AGGREGATOR_CONTROLLER_H
+#ifndef _freax_SURFACE_AGGREGATOR_CONTROLLER_H
+#define _freax_SURFACE_AGGREGATOR_CONTROLLER_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/serial_hub.h>
 
 
 /* -- Main data types and definitions --------------------------------------- */
@@ -991,4 +991,4 @@ int ssam_controller_event_disable(struct ssam_controller *ctrl,
 				  struct ssam_event_registry reg,
 				  struct ssam_event_id id, u8 flags);
 
-#endif /* _LINUX_SURFACE_AGGREGATOR_CONTROLLER_H */
+#endif /* _freax_SURFACE_AGGREGATOR_CONTROLLER_H */

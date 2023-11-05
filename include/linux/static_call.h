@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STATIC_CALL_H
-#define _LINUX_STATIC_CALL_H
+#ifndef _freax_STATIC_CALL_H
+#define _freax_STATIC_CALL_H
 
 /*
  * Static call support
@@ -131,9 +131,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/static_call_types.h>
+#include <freax/types.h>
+#include <freax/cpu.h>
+#include <freax/static_call_types.h>
 
 #ifdef CONFIG_HAVE_STATIC_CALL
 #include <asm/static_call.h>
@@ -166,7 +166,7 @@ extern void static_call_force_reinit(void);
 
 struct static_call_mod {
 	struct static_call_mod *next;
-	struct module *mod; /* for vmlinux, mod == NULL */
+	struct module *mod; /* for vmfreax, mod == NULL */
 	struct static_call_site *sites;
 };
 
@@ -343,4 +343,4 @@ static inline int static_call_text_reserved(void *start, void *end)
 
 #endif /* CONFIG_HAVE_STATIC_CALL */
 
-#endif /* _LINUX_STATIC_CALL_H */
+#endif /* _freax_STATIC_CALL_H */

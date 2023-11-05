@@ -4,10 +4,10 @@
 #ifndef XSK_BUFF_POOL_H_
 #define XSK_BUFF_POOL_H_
 
-#include <linux/if_xdp.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/bpf.h>
+#include <freax/if_xdp.h>
+#include <freax/types.h>
+#include <freax/dma-mapping.h>
+#include <freax/bpf.h>
 #include <net/xdp.h>
 
 struct xsk_buff_pool;

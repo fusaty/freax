@@ -9,14 +9,14 @@
 
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/compiler.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/rculist.h>
+#include <freax/spinlock.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
 
 /* callback to a compare function.  should compare 2 element data for their
  * keys

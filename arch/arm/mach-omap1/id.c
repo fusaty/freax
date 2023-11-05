@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/id.c
+ * freax/arch/arm/mach-omap1/id.c
  *
  * OMAP1 CPU identification code
  *
@@ -8,11 +8,11 @@
  * Written by Tony Lindgren <tony@atomide.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/soc/ti/omap1-io.h>
 #include <asm/system_info.h>
 
 #include "soc.h"

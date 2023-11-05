@@ -4,29 +4,29 @@
  * Copyright (C) 1997, 1998, 1999, 2003, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/pgtable.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/errno.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/gfp.h>
 
 #include <asm/auxio.h>
 #include <asm/byteorder.h>

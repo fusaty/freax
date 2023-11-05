@@ -3,10 +3,10 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_IMX6Q_IOMUXC_GPR_H
-#define __LINUX_IMX6Q_IOMUXC_GPR_H
+#ifndef __freax_IMX6Q_IOMUXC_GPR_H
+#define __freax_IMX6Q_IOMUXC_GPR_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define IOMUXC_GPR0	0x00
 #define IOMUXC_GPR1	0x04
@@ -469,4 +469,4 @@
 /* For imx6sll iomux gpr register field define */
 #define IMX6SLL_GPR5_AFCG_X_BYPASS_MASK		(0x1f << 11)
 
-#endif /* __LINUX_IMX6Q_IOMUXC_GPR_H */
+#endif /* __freax_IMX6Q_IOMUXC_GPR_H */

@@ -3,18 +3,18 @@
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  *  Copyright (c) 2010, Code Aurora Forum. All rights reserved.
- *  Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2014 The freax Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/smp.h>
+#include <freax/io.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 #include <asm/smp_plat.h>
 

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -21,10 +21,10 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _UAPI_LINUX_IF_ARP_H
-#define _UAPI_LINUX_IF_ARP_H
+#ifndef _UAPI_freax_IF_ARP_H
+#define _UAPI_freax_IF_ARP_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 /* ARP protocol HARDWARE identifiers. */
 #define ARPHRD_NETROM	0		/* from KA9Q: NET/ROM pseudo	*/
@@ -78,7 +78,7 @@
 #define ARPHRD_HIPPI	780		/* High Performance Parallel Interface */
 #define ARPHRD_ASH	781		/* Nexus 64Mbps Ash		*/
 #define ARPHRD_ECONET	782		/* Acorn Econet			*/
-#define ARPHRD_IRDA 	783		/* Linux-IrDA			*/
+#define ARPHRD_IRDA 	783		/* freax-IrDA			*/
 /* ARP works differently on different FC media .. so  */
 #define ARPHRD_FCPP	784		/* Point to point fibrechannel	*/
 #define ARPHRD_FCAL	785		/* Fibrechannel arbitrated loop */
@@ -162,4 +162,4 @@ struct arphdr {
 };
 
 
-#endif /* _UAPI_LINUX_IF_ARP_H */
+#endif /* _UAPI_freax_IF_ARP_H */

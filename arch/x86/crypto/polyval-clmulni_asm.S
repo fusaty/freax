@@ -22,7 +22,7 @@
  * multiplications and polynomial reductions.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/frame.h>
 
 #define STRIDE_BLOCKS 8

@@ -7,21 +7,21 @@
  * Copyright (c) 2010 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <crypto/if_alg.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/security.h>
-#include <linux/string.h>
+#include <freax/crypto.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/key.h>
+#include <freax/key-type.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/rwsem.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/security.h>
+#include <freax/string.h>
 #include <keys/user-type.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>

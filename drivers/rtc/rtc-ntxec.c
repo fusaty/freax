@@ -10,12 +10,12 @@
  * Copyright 2020 Jonathan Neuschäfer <j.neuschaefer@gmx.net>
  */
 
-#include <linux/mfd/ntxec.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
+#include <freax/mfd/ntxec.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/types.h>
 
 struct ntxec_rtc {
 	struct device *dev;

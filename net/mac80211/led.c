@@ -4,9 +4,9 @@
  */
 
 /* just for IFNAMSIZ */
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/if.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #include "led.h"
 
 void ieee80211_led_assoc(struct ieee80211_local *local, bool associated)

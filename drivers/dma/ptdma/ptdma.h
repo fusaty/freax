@@ -13,14 +13,14 @@
 #ifndef __PT_DEV_H__
 #define __PT_DEV_H__
 
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/dmapool.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/dmapool.h>
 
 #include "../virt-dma.h"
 

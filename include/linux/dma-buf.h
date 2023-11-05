@@ -13,15 +13,15 @@
 #ifndef __DMA_BUF_H__
 #define __DMA_BUF_H__
 
-#include <linux/iosys-map.h>
-#include <linux/file.h>
-#include <linux/err.h>
-#include <linux/scatterlist.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/fs.h>
-#include <linux/dma-fence.h>
-#include <linux/wait.h>
+#include <freax/iosys-map.h>
+#include <freax/file.h>
+#include <freax/err.h>
+#include <freax/scatterlist.h>
+#include <freax/list.h>
+#include <freax/dma-mapping.h>
+#include <freax/fs.h>
+#include <freax/dma-fence.h>
+#include <freax/wait.h>
 
 struct device;
 struct dma_buf;
@@ -261,7 +261,7 @@ struct dma_buf_ops {
 	 *
 	 * If an exporter needs to manually flush caches and hence needs to fake
 	 * coherency for mmap support, it needs to be able to zap all the ptes
-	 * pointing at the backing storage. Now linux mm needs a struct
+	 * pointing at the backing storage. Now freax mm needs a struct
 	 * address_space associated with the struct file stored in vma->vm_file
 	 * to do that with the function unmap_mapping_range. But the dma_buf
 	 * framework only backs every dma_buf fd with the anon_file struct file,

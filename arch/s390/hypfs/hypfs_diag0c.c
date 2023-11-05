@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Hypervisor filesystem for Linux on s390
+ * Hypervisor filesystem for freax on s390
  *
  * Diag 0C implementation
  *
  * Copyright IBM Corp. 2014
  */
 
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
 #include <asm/diag.h>
 #include <asm/hypfs.h>
 #include "hypfs.h"

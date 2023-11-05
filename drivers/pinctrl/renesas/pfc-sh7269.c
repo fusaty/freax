@@ -6,7 +6,7 @@
  * Copyright (C) 2012  Phil Edworthy
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/sh7269.h>
 
 #include "sh_pfc.h"

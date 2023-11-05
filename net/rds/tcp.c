@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/in.h>
+#include <freax/module.h>
 #include <net/tcp.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>

@@ -6,10 +6,10 @@
  * Based on pwm_bl.c
  */
 
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 struct led_bl_data {
 	struct device		*dev;

@@ -8,19 +8,19 @@
 //
 // This driver is based on max77686.c
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/mfd/max77843-private.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/export.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/mfd/max77693.h>
+#include <freax/mfd/max77693-common.h>
+#include <freax/mfd/max77693-private.h>
+#include <freax/mfd/max77843-private.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regmap.h>
 
 /*
  * ID for MAX77843 regulators.

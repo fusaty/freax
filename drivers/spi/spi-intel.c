@@ -3,18 +3,18 @@
  * Intel PCH/PCU SPI flash driver.
  *
  * Copyright (C) 2016 - 2022, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/iopoll.h>
-#include <linux/module.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
 
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spi-nor.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/spi-nor.h>
 
-#include <linux/spi/flash.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/spi/flash.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 #include "spi-intel.h"
 
@@ -1429,5 +1429,5 @@ int intel_spi_probe(struct device *dev, struct resource *mem,
 EXPORT_SYMBOL_GPL(intel_spi_probe);
 
 MODULE_DESCRIPTION("Intel PCH/PCU SPI flash core driver");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_LICENSE("GPL v2");

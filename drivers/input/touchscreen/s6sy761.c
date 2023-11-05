@@ -5,15 +5,15 @@
 // Copyright (c) 2017 Andi Shyti <andi@etezian.org>
 
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
 
 /* commands */
 #define S6SY761_SENSE_ON		0x10

@@ -2,13 +2,13 @@
 #ifndef _SCSI_SCSI_CMND_H
 #define _SCSI_SCSI_CMND_H
 
-#include <linux/dma-mapping.h>
-#include <linux/blkdev.h>
-#include <linux/t10-pi.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/blkdev.h>
+#include <freax/t10-pi.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/scatterlist.h>
 #include <scsi/scsi_device.h>
 
 struct Scsi_Host;

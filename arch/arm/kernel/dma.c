@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/dma.c
+ *  freax/arch/arm/kernel/dma.c
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -8,13 +8,13 @@
  *  of DMA channels, and provides a unified interface to the machines
  *  DMA facilities.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/scatterlist.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
 
 #include <asm/dma.h>
 

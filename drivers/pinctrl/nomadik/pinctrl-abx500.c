@@ -6,31 +6,31 @@
  *
  * Driver allows to use AxB5xx unused pins to be used as GPIO
  */
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <freax/mfd/abx500.h>
+#include <freax/mfd/abx500/ab8500.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "../pinconf.h"

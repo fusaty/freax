@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
@@ -6,7 +6,7 @@
 #ifndef __UAPI_ASM_LOONGARCH_KVM_H
 #define __UAPI_ASM_LOONGARCH_KVM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * KVM LoongArch specific structures and definitions.
@@ -43,7 +43,7 @@ struct kvm_fpu {
  * For LoongArch, we use KVM_SET_ONE_REG and KVM_GET_ONE_REG to access various
  * registers.  The id field is broken down as follows:
  *
- *  bits[63..52] - As per linux/kvm.h
+ *  bits[63..52] - As per freax/kvm.h
  *  bits[51..32] - Must be zero.
  *  bits[31..16] - Register set.
  *

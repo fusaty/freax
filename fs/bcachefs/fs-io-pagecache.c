@@ -8,8 +8,8 @@
 #include "fs-io-pagecache.h"
 #include "subvolume.h"
 
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
+#include <freax/pagevec.h>
+#include <freax/writeback.h>
 
 int bch2_filemap_get_contig_folios_d(struct address_space *mapping,
 				     loff_t start, u64 end,

@@ -5,12 +5,12 @@
  * actually parsing ihex-as-text within the kernel seems silly. Thus,...
  */
 
-#ifndef __LINUX_IHEX_H__
-#define __LINUX_IHEX_H__
+#ifndef __freax_IHEX_H__
+#define __freax_IHEX_H__
 
-#include <linux/types.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/firmware.h>
+#include <freax/device.h>
 
 /* Intel HEX files actually limit the length to 256 bytes, but we have
    drivers which would benefit from using separate records which are
@@ -81,4 +81,4 @@ static inline int request_ihex_firmware(const struct firmware **fw,
 	*fw = lfw;
 	return 0;
 }
-#endif /* __LINUX_IHEX_H__ */
+#endif /* __freax_IHEX_H__ */

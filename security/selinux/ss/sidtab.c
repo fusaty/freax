@@ -7,13 +7,13 @@
  *
  * Copyright (C) 2018 Red Hat, Inc.
  */
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
 #include <asm/barrier.h>
 #include "flask.h"
 #include "security.h"
@@ -47,8 +47,8 @@ int sidtab_init(struct sidtab *s)
 
 	spin_lock_init(&s->lock);
 
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
-	s->cache_free_slots = CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE;
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
+	s->cache_free_slots = CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE;
 	INIT_LIST_HEAD(&s->cache_lru_list);
 	spin_lock_init(&s->cache_lock);
 #endif
@@ -89,7 +89,7 @@ int sidtab_set_initial(struct sidtab *s, u32 sid, struct context *context)
 	if (rc)
 		return rc;
 
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 	isid->entry.cache = NULL;
 #endif
 	isid->set = 1;
@@ -343,7 +343,7 @@ int sidtab_context_to_sid(struct sidtab *s, struct context *context,
 	}
 
 	if (context->len)
-		pr_info("SELinux:  Context %s is not valid (left unmapped).\n",
+		pr_info("SEfreax:  Context %s is not valid (left unmapped).\n",
 			context->str);
 
 	*sid = index_to_sid(count);
@@ -455,7 +455,7 @@ int sidtab_convert(struct sidtab *s, struct sidtab_convert_params *params)
 	/* we can safely convert the tree outside the lock */
 	spin_unlock_irqrestore(&s->lock, flags);
 
-	pr_info("SELinux:  Converting %u SID table entries...\n", count);
+	pr_info("SEfreax:  Converting %u SID table entries...\n", count);
 
 	/* convert all entries not covered by live convert */
 	pos = 0;
@@ -503,7 +503,7 @@ void sidtab_freeze_end(struct sidtab *s, unsigned long *flags) __releases(&s->lo
 static void sidtab_destroy_entry(struct sidtab_entry *entry)
 {
 	context_destroy(&entry->context);
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 	kfree(rcu_dereference_raw(entry->cache));
 #endif
 }
@@ -553,7 +553,7 @@ void sidtab_destroy(struct sidtab *s)
 	 */
 }
 
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 
 void sidtab_sid2str_put(struct sidtab *s, struct sidtab_entry *entry,
 			const char *str, u32 str_len)
@@ -630,4 +630,4 @@ int sidtab_sid2str_get(struct sidtab *s, struct sidtab_entry *entry,
 	return rc;
 }
 
-#endif /* CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0 */
+#endif /* CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0 */

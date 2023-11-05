@@ -9,11 +9,11 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/nettel.h>

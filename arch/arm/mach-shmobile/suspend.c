@@ -5,11 +5,11 @@
  *  Copyright (C) 2011 Magnus Damm
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
+#include <freax/pm.h>
+#include <freax/suspend.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/cpu.h>
 
 #include <asm/io.h>
 #include <asm/system_misc.h>

@@ -6,10 +6,10 @@
 #include <drm/drm_util.h>
 #include <drm/drm_cache.h>
 
-#include <linux/hashtable.h>
-#include <linux/irq_work.h>
-#include <linux/random.h>
-#include <linux/seqlock.h>
+#include <freax/hashtable.h>
+#include <freax/irq_work.h>
+#include <freax/random.h>
+#include <freax/seqlock.h>
 
 #include "i915_pmu.h"
 #include "i915_request.h"

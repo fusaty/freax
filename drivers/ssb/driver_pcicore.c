@@ -10,11 +10,11 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/ssb/ssb_embedded.h>
+#include <freax/ssb/ssb.h>
+#include <freax/pci.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/ssb/ssb_embedded.h>
 
 static u32 ssb_pcie_read(struct ssb_pcicore *pc, u32 address);
 static void ssb_pcie_write(struct ssb_pcicore *pc, u32 address, u32 data);

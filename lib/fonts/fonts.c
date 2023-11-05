@@ -12,13 +12,13 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
 #if defined(__mc68000__)
 #include <asm/setup.h>
 #endif
-#include <linux/font.h>
+#include <freax/font.h>
 
 static const struct font_desc *fonts[] = {
 #ifdef CONFIG_FONT_8x8

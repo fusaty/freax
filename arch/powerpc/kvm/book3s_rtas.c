@@ -3,12 +3,12 @@
  * Copyright 2012 Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/err.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/kvm_book3s.h>
 #include <asm/kvm_ppc.h>
 #include <asm/hvcall.h>

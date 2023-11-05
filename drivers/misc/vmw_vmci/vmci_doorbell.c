@@ -5,15 +5,15 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/completion.h>
-#include <linux/hash.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/vmw_vmci_api.h>
+#include <freax/completion.h>
+#include <freax/hash.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include "vmci_datagram.h"
 #include "vmci_doorbell.h"

@@ -35,11 +35,11 @@
  *   along with this library; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/dns_resolver.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/dns_resolver.h>
+#include <freax/err.h>
 #include <net/net_namespace.h>
 
 #include <keys/dns_resolver-type.h>

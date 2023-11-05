@@ -11,7 +11,7 @@
  * Kamil Debski, <k.debski@samsung.com>
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "dma2d.h"
 #include "dma2d-regs.h"

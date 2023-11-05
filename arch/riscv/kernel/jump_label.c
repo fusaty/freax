@@ -4,10 +4,10 @@
  *
  * Based on arch/arm64/kernel/jump_label.c
  */
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mutex.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/memory.h>
+#include <freax/mutex.h>
 #include <asm/bug.h>
 #include <asm/patch.h>
 

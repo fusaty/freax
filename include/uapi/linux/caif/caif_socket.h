@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* linux/caif_socket.h
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+/* freax/caif_socket.h
  * CAIF Definitions for CAIF socket and network layer
  * Copyright (C) ST-Ericsson AB 2010
  * Author:	 Sjur Brendeland
  * License terms: GNU General Public License (GPL) version 2
  */
 
-#ifndef _LINUX_CAIF_SOCKET_H
-#define _LINUX_CAIF_SOCKET_H
+#ifndef _freax_CAIF_SOCKET_H
+#define _freax_CAIF_SOCKET_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <freax/types.h>
+#include <freax/socket.h>
 
 /**
  * enum caif_link_selector -    Physical Link Selection.
@@ -192,4 +192,4 @@ enum caif_socket_opts {
 	CAIFSO_RSP_PARAM	= 129,
 };
 
-#endif /* _LINUX_CAIF_SOCKET_H */
+#endif /* _freax_CAIF_SOCKET_H */

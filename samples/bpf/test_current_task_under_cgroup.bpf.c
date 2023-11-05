@@ -5,8 +5,8 @@
  * License as published by the Free Software Foundation.
  */
 
-#include "vmlinux.h"
-#include <linux/version.h>
+#include "vmfreax.h"
+#include <freax/version.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>
@@ -40,4 +40,4 @@ int BPF_KSYSCALL(bpf_prog1)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = freax_VERSION_CODE;

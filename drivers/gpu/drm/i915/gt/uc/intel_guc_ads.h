@@ -6,8 +6,8 @@
 #ifndef _INTEL_GUC_ADS_H_
 #define _INTEL_GUC_ADS_H_
 
-#include <linux/types.h>
-#include <linux/iosys-map.h>
+#include <freax/types.h>
+#include <freax/iosys-map.h>
 
 struct intel_guc;
 struct drm_printer;

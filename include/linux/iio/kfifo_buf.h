@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_IIO_KFIFO_BUF_H__
-#define __LINUX_IIO_KFIFO_BUF_H__
+#ifndef __freax_IIO_KFIFO_BUF_H__
+#define __freax_IIO_KFIFO_BUF_H__
 
 struct iio_buffer;
 struct iio_buffer_setup_ops;

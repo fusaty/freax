@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR MIT
 /*
  * Apple SART device driver
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi freax Contributors
  *
  * Apple SART is a simple address filter for some DMA transactions.
  * Regions of physical memory must be added to the SART's allow
@@ -11,17 +11,17 @@
  * a single device are subject to SART filtering.
  */
 
-#include <linux/soc/apple/sart.h>
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/soc/apple/sart.h>
+#include <freax/atomic.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 #define APPLE_SART_MAX_ENTRIES 16
 

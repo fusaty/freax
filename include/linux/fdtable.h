@@ -3,19 +3,19 @@
  * descriptor table internals; you almost certainly want file.h instead.
  */
 
-#ifndef __LINUX_FDTABLE_H
-#define __LINUX_FDTABLE_H
+#ifndef __freax_FDTABLE_H
+#define __freax_FDTABLE_H
 
-#include <linux/posix_types.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/nospec.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <freax/posix_types.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/nospec.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/fs.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 /*
  * The default fd array needs to be at least BITS_PER_LONG,
@@ -120,4 +120,4 @@ extern int unshare_fd(unsigned long unshare_flags, unsigned int max_fds,
 
 extern struct kmem_cache *files_cachep;
 
-#endif /* __LINUX_FDTABLE_H */
+#endif /* __freax_FDTABLE_H */

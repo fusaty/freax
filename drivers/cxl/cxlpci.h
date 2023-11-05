@@ -2,7 +2,7 @@
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
 #ifndef __CXL_PCI_H__
 #define __CXL_PCI_H__
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "cxl.h"
 
 #define CXL_MEMORY_PROGIF	0x10

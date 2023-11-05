@@ -8,15 +8,15 @@
  *		Jerry Huang <Chang-Ming.Huang@freescale.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/otg-fsm.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/usb.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/otg-fsm.h>
 
 #ifdef VERBOSE
 #define VDBG(fmt, args...) pr_debug("[%s]  " fmt, \

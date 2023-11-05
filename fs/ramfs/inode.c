@@ -1,10 +1,10 @@
 /*
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for freax.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  *
- * Usage limits added by David Gibson, Linuxcare Australia.
+ * Usage limits added by David Gibson, freaxcare Australia.
  * This file is released under the GPL.
  */
 
@@ -23,22 +23,22 @@
  * caches is sufficient.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/seq_file.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/backing-dev.h>
+#include <freax/ramfs.h>
+#include <freax/sched.h>
+#include <freax/parser.h>
+#include <freax/magic.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/seq_file.h>
 #include "internal.h"
 
 struct ramfs_mount_opts {

@@ -5,15 +5,15 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 // Generic debug routines used to export DSP MMIO and memories to userspace
 // for firmware debugging.
 //
 
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 #include <sound/sof/ext_manifest.h>
 #include <sound/sof/debug.h>
 #include "sof-priv.h"

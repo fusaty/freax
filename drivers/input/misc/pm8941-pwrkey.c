@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2011, 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, 2020-2021, The freax Foundation. All rights reserved.
  * Copyright (c) 2014, Sony Mobile Communications Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
 
 #define PON_REV2			0x01
 
@@ -318,11 +318,11 @@ static int pm8941_pwrkey_probe(struct platform_device *pdev)
 		return error;
 	}
 
-	error = of_property_read_u32(pdev->dev.of_node, "linux,code",
+	error = of_property_read_u32(pdev->dev.of_node, "freax,code",
 				     &pwrkey->code);
 	if (error) {
 		dev_dbg(&pdev->dev,
-			"no linux,code assuming power (%d)\n", error);
+			"no freax,code assuming power (%d)\n", error);
 		pwrkey->code = KEY_POWER;
 	}
 

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_NEIGHBOUR_H
-#define __LINUX_NEIGHBOUR_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_NEIGHBOUR_H
+#define __freax_NEIGHBOUR_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
 
 struct ndmsg {
 	__u8		ndm_family;

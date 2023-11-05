@@ -12,27 +12,27 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-sun4i-usb.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/usb/of.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/extcon-provider.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/phy/phy.h>
+#include <freax/phy/phy-sun4i-usb.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
+#include <freax/usb/of.h>
+#include <freax/workqueue.h>
 
 #define REG_ISCR			0x00
 #define REG_PHYCTL_A10			0x04

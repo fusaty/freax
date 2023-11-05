@@ -7,15 +7,15 @@
  * Copyright (C) 2018 Nuvoton Technologies tali.perry@nuvoton.com
  */
 
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/bitfield.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/bitfield.h>
 
 #include <dt-bindings/clock/nuvoton,npcm7xx-clock.h>
 

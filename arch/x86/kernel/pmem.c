@@ -3,9 +3,9 @@
  * Copyright (c) 2015, Christoph Hellwig.
  * Copyright (c) 2015, Intel Corporation.
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
 
 static int found(struct resource *res, void *data)
 {

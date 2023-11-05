@@ -9,7 +9,7 @@
 
 #include <asm/proc-fns.h>
 
-#include <linux/mfd/syscon/atmel-mc.h>
+#include <freax/mfd/syscon/atmel-mc.h>
 #include <soc/at91/at91sam9_ddrsdr.h>
 #include <soc/at91/at91sam9_sdramc.h>
 #include <soc/at91/sama7-ddr.h>

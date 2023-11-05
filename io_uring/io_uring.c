@@ -39,45 +39,45 @@
  * Copyright (C) 2018-2019 Jens Axboe
  * Copyright (c) 2018-2019 Christoph Hellwig
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/syscalls.h>
 #include <net/compat.h>
-#include <linux/refcount.h>
-#include <linux/uio.h>
-#include <linux/bits.h>
+#include <freax/refcount.h>
+#include <freax/uio.h>
+#include <freax/bits.h>
 
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/bvec.h>
-#include <linux/net.h>
+#include <freax/sched/signal.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/bvec.h>
+#include <freax/net.h>
 #include <net/sock.h>
 #include <net/af_unix.h>
 #include <net/scm.h>
-#include <linux/anon_inodes.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
-#include <linux/highmem.h>
-#include <linux/fsnotify.h>
-#include <linux/fadvise.h>
-#include <linux/task_work.h>
-#include <linux/io_uring.h>
-#include <linux/audit.h>
-#include <linux/security.h>
+#include <freax/anon_inodes.h>
+#include <freax/sched/mm.h>
+#include <freax/uaccess.h>
+#include <freax/nospec.h>
+#include <freax/highmem.h>
+#include <freax/fsnotify.h>
+#include <freax/fadvise.h>
+#include <freax/task_work.h>
+#include <freax/io_uring.h>
+#include <freax/audit.h>
+#include <freax/security.h>
 #include <asm/shmparam.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 
 #include "io-wq.h"
 

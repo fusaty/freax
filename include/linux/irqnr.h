@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IRQNR_H
-#define _LINUX_IRQNR_H
+#ifndef _freax_IRQNR_H
+#define _freax_IRQNR_H
 
-#include <uapi/linux/irqnr.h>
+#include <uapi/freax/irqnr.h>
 
 
 extern int nr_irqs;

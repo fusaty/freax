@@ -2,14 +2,14 @@
 /* Copyright (c) 2018 Jernej Skrabec <jernej.skrabec@siol.net> */
 
 
-#include <linux/bitfield.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/component.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/clock/sun8i-tcon-top.h>
 

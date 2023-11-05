@@ -8,12 +8,12 @@
  * helper functions when coping with rational numbers
  */
 
-#include <linux/rational.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/minmax.h>
-#include <linux/limits.h>
-#include <linux/module.h>
+#include <freax/rational.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/minmax.h>
+#include <freax/limits.h>
+#include <freax/module.h>
 
 /*
  * calculate best rational approximation for a given fraction

@@ -1,12 +1,12 @@
-#include <linux/gfp.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/swapfile.h>
-#include <linux/swapops.h>
-#include <linux/kmemleak.h>
-#include <linux/sched/task.h>
+#include <freax/gfp.h>
+#include <freax/initrd.h>
+#include <freax/ioport.h>
+#include <freax/swap.h>
+#include <freax/memblock.h>
+#include <freax/swapfile.h>
+#include <freax/swapops.h>
+#include <freax/kmemleak.h>
+#include <freax/sched/task.h>
 
 #include <asm/set_memory.h>
 #include <asm/cpu_device_id.h>

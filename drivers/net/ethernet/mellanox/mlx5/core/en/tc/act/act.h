@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #ifndef __MLX5_EN_TC_ACT_H__
@@ -6,7 +6,7 @@
 
 #include <net/tc_act/tc_pedit.h>
 #include <net/flow_offload.h>
-#include <linux/netlink.h>
+#include <freax/netlink.h>
 #include "eswitch.h"
 #include "pedit.h"
 

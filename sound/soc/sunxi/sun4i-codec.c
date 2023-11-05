@@ -9,16 +9,16 @@
  * Based on the Allwinner SDK driver, released under the GPL.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/gpio/consumer.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

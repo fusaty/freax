@@ -5,8 +5,8 @@
 import gdb
 import sys
 
-from linux.utils import CachedType, gdb_eval_or_none
-from linux.lists import list_for_each_entry
+from freax.utils import CachedType, gdb_eval_or_none
+from freax.lists import list_for_each_entry
 
 generic_pm_domain_type = CachedType('struct generic_pm_domain')
 pm_domain_data_type = CachedType('struct pm_domain_data')

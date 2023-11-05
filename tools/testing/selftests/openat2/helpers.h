@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include "../kselftest.h"
 
 #define ARRAY_LEN(X) (sizeof (X) / sizeof (*(X)))

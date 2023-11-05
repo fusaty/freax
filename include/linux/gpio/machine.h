@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GPIO_MACHINE_H
-#define __LINUX_GPIO_MACHINE_H
+#ifndef __freax_GPIO_MACHINE_H
+#define __freax_GPIO_MACHINE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum gpio_lookup_flags {
 	GPIO_ACTIVE_HIGH		= (0 << 0),
@@ -124,4 +124,4 @@ static inline void gpiod_add_hogs(struct gpiod_hog *hogs) {}
 static inline void gpiod_remove_hogs(struct gpiod_hog *hogs) {}
 #endif /* CONFIG_GPIOLIB */
 
-#endif /* __LINUX_GPIO_MACHINE_H */
+#endif /* __freax_GPIO_MACHINE_H */

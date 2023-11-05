@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/media/platform/samsung/s5p-mfc/s5p_mfc_pm.c
+ * freax/drivers/media/platform/samsung/s5p-mfc/s5p_mfc_pm.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"
 #include "s5p_mfc_pm.h"

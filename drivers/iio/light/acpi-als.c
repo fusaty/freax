@@ -13,17 +13,17 @@
  * Copyright (C) 2015 Gabriele Mazzotta <gabriele.mzt@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/mutex.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #define ACPI_ALS_CLASS			"als"
 #define ACPI_ALS_DEVICE_NAME		"acpi-als"

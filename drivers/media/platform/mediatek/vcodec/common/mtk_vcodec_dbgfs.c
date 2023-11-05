@@ -4,7 +4,7 @@
  * Author: Yunfei Dong <yunfei.dong@mediatek.com>
  */
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "mtk_vcodec_dbgfs.h"
 #include "../decoder/mtk_vcodec_dec_drv.h"

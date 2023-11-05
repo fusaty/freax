@@ -6,17 +6,17 @@
  * Author: Guennadi Liakhovetski, <g.liakhovetski@gmx.de>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/mfd/as3711.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/kernel.h>
+#include <freax/mfd/as3711.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 enum as3711_bl_type {
 	AS3711_BL_SU1,

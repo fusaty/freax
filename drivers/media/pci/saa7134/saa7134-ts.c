@@ -2,7 +2,7 @@
 /*
  *
  * device driver for philips saa7134 based TV cards
- * video4linux video interface
+ * video4freax video interface
  *
  * (c) 2001,02 Gerd Knorr <kraxel@bytesex.org> [SuSE Labs]
  */
@@ -10,11 +10,11 @@
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
 
 /* ------------------------------------------------------------------ */
 

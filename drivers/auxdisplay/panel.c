@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Front panel driver for Linux
+ * Front panel driver for freax
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  *
@@ -33,27 +33,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/parport.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/fcntl.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/ctype.h>
+#include <freax/parport.h>
+#include <freax/list.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #include "charlcd.h"
 #include "hd44780_common.h"

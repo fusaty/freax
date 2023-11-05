@@ -5,22 +5,22 @@
  * Copyright (C) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/syscon.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/mfd/syscon.h>
 
 #define MESON_SAR_ADC_REG0					0x00
 	#define MESON_SAR_ADC_REG0_PANEL_DETECT			BIT(31)
@@ -149,7 +149,7 @@
 	#define MESON_SAR_ADC_DELTA_10_CHAN0_DELTA_VALUE_MASK	GENMASK(9, 0)
 
 /*
- * NOTE: registers from here are undocumented (the vendor Linux kernel driver
+ * NOTE: registers from here are undocumented (the vendor freax kernel driver
  * and u-boot source served as reference). These only seem to be relevant on
  * GXBB and newer.
  */

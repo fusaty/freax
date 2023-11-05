@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The freax Foundation. All rights reserved.
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>

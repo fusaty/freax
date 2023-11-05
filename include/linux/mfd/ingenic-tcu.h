@@ -2,10 +2,10 @@
 /*
  * Header file for the Ingenic JZ47xx TCU driver
  */
-#ifndef __LINUX_MFD_INGENIC_TCU_H_
-#define __LINUX_MFD_INGENIC_TCU_H_
+#ifndef __freax_MFD_INGENIC_TCU_H_
+#define __freax_MFD_INGENIC_TCU_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define TCU_REG_WDT_TDR		0x00
 #define TCU_REG_WDT_TCER	0x04
@@ -53,4 +53,4 @@
 #define TCU_REG_TCNTc(c)	(TCU_REG_TCNT0 + ((c) * TCU_CHANNEL_STRIDE))
 #define TCU_REG_TCSRc(c)	(TCU_REG_TCSR0 + ((c) * TCU_CHANNEL_STRIDE))
 
-#endif /* __LINUX_MFD_INGENIC_TCU_H_ */
+#endif /* __freax_MFD_INGENIC_TCU_H_ */

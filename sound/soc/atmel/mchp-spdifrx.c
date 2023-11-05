@@ -6,12 +6,12 @@
 //
 // Author: Codrin Ciubotariu <codrin.ciubotariu@microchip.com>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/spinlock.h>
 
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

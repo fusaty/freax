@@ -2,7 +2,7 @@
 /* Copyright(c) 2018-2019  Realtek Corporation
  */
 
-#include <linux/iopoll.h>
+#include <freax/iopoll.h>
 
 #include "main.h"
 #include "coex.h"

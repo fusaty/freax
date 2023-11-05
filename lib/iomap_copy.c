@@ -3,8 +3,8 @@
  * Copyright 2006 PathScale, Inc.  All Rights Reserved.
  */
 
-#include <linux/export.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/io.h>
 
 /**
  * __iowrite32_copy - copy data to MMIO space, in 32-bit units

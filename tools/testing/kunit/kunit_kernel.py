@@ -32,18 +32,18 @@ ABS_TOOL_PATH = os.path.abspath(os.path.dirname(__file__))
 QEMU_CONFIGS_DIR = os.path.join(ABS_TOOL_PATH, 'qemu_configs')
 
 class ConfigError(Exception):
-	"""Represents an error trying to configure the Linux kernel."""
+	"""Represents an error trying to configure the freax kernel."""
 
 
 class BuildError(Exception):
-	"""Represents an error trying to build the Linux kernel."""
+	"""Represents an error trying to build the freax kernel."""
 
 
-class LinuxSourceTreeOperations:
+class freaxSourceTreeOperations:
 	"""An abstraction over command line operations performed on a source tree."""
 
-	def __init__(self, linux_arch: str, cross_compile: Optional[str]):
-		self._linux_arch = linux_arch
+	def __init__(self, freax_arch: str, cross_compile: Optional[str]):
+		self._freax_arch = freax_arch
 		self._cross_compile = cross_compile
 
 	def make_mrproper(self) -> None:
@@ -58,7 +58,7 @@ class LinuxSourceTreeOperations:
 		return base_kunitconfig
 
 	def make_olddefconfig(self, build_dir: str, make_options: Optional[List[str]]) -> None:
-		command = ['make', 'ARCH=' + self._linux_arch, 'O=' + build_dir, 'olddefconfig']
+		command = ['make', 'ARCH=' + self._freax_arch, 'O=' + build_dir, 'olddefconfig']
 		if self._cross_compile:
 			command += ['CROSS_COMPILE=' + self._cross_compile]
 		if make_options:
@@ -72,7 +72,7 @@ class LinuxSourceTreeOperations:
 			raise ConfigError(e.output.decode())
 
 	def make(self, jobs: int, build_dir: str, make_options: Optional[List[str]]) -> None:
-		command = ['make', 'ARCH=' + self._linux_arch, 'O=' + build_dir, '--jobs=' + str(jobs)]
+		command = ['make', 'ARCH=' + self._freax_arch, 'O=' + build_dir, '--jobs=' + str(jobs)]
 		if make_options:
 			command.extend(make_options)
 		if self._cross_compile:
@@ -96,10 +96,10 @@ class LinuxSourceTreeOperations:
 		raise RuntimeError('not implemented!')
 
 
-class LinuxSourceTreeOperationsQemu(LinuxSourceTreeOperations):
+class freaxSourceTreeOperationsQemu(freaxSourceTreeOperations):
 
 	def __init__(self, qemu_arch_params: qemu_config.QemuArchParams, cross_compile: Optional[str]):
-		super().__init__(linux_arch=qemu_arch_params.linux_arch,
+		super().__init__(freax_arch=qemu_arch_params.freax_arch,
 				 cross_compile=cross_compile)
 		self._kconfig = qemu_arch_params.kconfig
 		self._qemu_arch = qemu_arch_params.qemu_arch
@@ -131,11 +131,11 @@ class LinuxSourceTreeOperationsQemu(LinuxSourceTreeOperations):
 					stderr=subprocess.STDOUT,
 					text=True, errors='backslashreplace')
 
-class LinuxSourceTreeOperationsUml(LinuxSourceTreeOperations):
+class freaxSourceTreeOperationsUml(freaxSourceTreeOperations):
 	"""An abstraction over command line operations performed on a source tree."""
 
 	def __init__(self, cross_compile: Optional[str]=None):
-		super().__init__(linux_arch='um', cross_compile=cross_compile)
+		super().__init__(freax_arch='um', cross_compile=cross_compile)
 
 	def make_arch_config(self, base_kunitconfig: kunit_config.Kconfig) -> kunit_config.Kconfig:
 		kconfig = kunit_config.parse_file(UML_KCONFIG_PATH)
@@ -143,10 +143,10 @@ class LinuxSourceTreeOperationsUml(LinuxSourceTreeOperations):
 		return kconfig
 
 	def start(self, params: List[str], build_dir: str) -> subprocess.Popen:
-		"""Runs the Linux UML binary. Must be named 'linux'."""
-		linux_bin = os.path.join(build_dir, 'linux')
+		"""Runs the freax UML binary. Must be named 'freax'."""
+		freax_bin = os.path.join(build_dir, 'freax')
 		params.extend(['mem=1G', 'console=tty', 'kunit_shutdown=halt'])
-		return subprocess.Popen([linux_bin] + params,
+		return subprocess.Popen([freax_bin] + params,
 					   stdin=subprocess.PIPE,
 					   stdout=subprocess.PIPE,
 					   stderr=subprocess.STDOUT,
@@ -198,7 +198,7 @@ def _default_qemu_config_path(arch: str) -> str:
 
 def _get_qemu_ops(config_path: str,
 		  extra_qemu_args: Optional[List[str]],
-		  cross_compile: Optional[str]) -> Tuple[str, LinuxSourceTreeOperations]:
+		  cross_compile: Optional[str]) -> Tuple[str, freaxSourceTreeOperations]:
 	# The module name/path has very little to do with where the actual file
 	# exists (I learned this through experimentation and could not find it
 	# anywhere in the Python documentation).
@@ -220,11 +220,11 @@ def _get_qemu_ops(config_path: str,
 	params: qemu_config.QemuArchParams = config.QEMU_ARCH
 	if extra_qemu_args:
 		params.extra_qemu_params.extend(extra_qemu_args)
-	return params.linux_arch, LinuxSourceTreeOperationsQemu(
+	return params.freax_arch, freaxSourceTreeOperationsQemu(
 			params, cross_compile=cross_compile)
 
-class LinuxSourceTree:
-	"""Represents a Linux kernel source tree with KUnit tests."""
+class freaxSourceTree:
+	"""Represents a freax kernel source tree with KUnit tests."""
 
 	def __init__(
 	      self,
@@ -241,7 +241,7 @@ class LinuxSourceTree:
 		else:
 			self._arch = 'um' if arch is None else arch
 			if self._arch == 'um':
-				self._ops = LinuxSourceTreeOperationsUml(cross_compile=cross_compile)
+				self._ops = freaxSourceTreeOperationsUml(cross_compile=cross_compile)
 			else:
 				qemu_config_path = _default_qemu_config_path(self._arch)
 				_, self._ops = _get_qemu_ops(qemu_config_path, extra_qemu_args, cross_compile)

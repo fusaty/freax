@@ -5,23 +5,23 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
 
 /* Registers */
 

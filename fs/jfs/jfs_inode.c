@@ -3,8 +3,8 @@
  *   Copyright (C) International Business Machines Corp., 2000-2004
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
+#include <freax/fs.h>
+#include <freax/quotaops.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_filsys.h"

@@ -8,11 +8,11 @@
  * Copyright (C) 2018 MIPS Tech, LLC
  */
 
-#include <linux/cpufeature.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/cpufeature.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
 #include <asm/mipsregs.h>
 #include <asm/unaligned.h>
 

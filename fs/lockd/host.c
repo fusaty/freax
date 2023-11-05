@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/host.c
+ * freax/fs/lockd/host.c
  *
  * Management for NLM peer hosts. The nlm_host struct is shared
  * between client and server implementation. The only reason to
@@ -9,17 +9,17 @@
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
-#include <linux/mutex.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/lockd/lockd.h>
+#include <freax/mutex.h>
 
-#include <linux/sunrpc/svc_xprt.h>
+#include <freax/sunrpc/svc_xprt.h>
 
 #include <net/ipv6.h>
 

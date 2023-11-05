@@ -3,13 +3,13 @@
  * Copyright (C) 2013-15, Intel Corporation. All rights reserved.
  */
 
-#ifndef __LINUX_SND_SOC_ACPI_H
-#define __LINUX_SND_SOC_ACPI_H
+#ifndef __freax_SND_SOC_ACPI_H
+#define __freax_SND_SOC_ACPI_H
 
-#include <linux/stddef.h>
-#include <linux/acpi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw.h>
+#include <freax/stddef.h>
+#include <freax/acpi.h>
+#include <freax/mod_devicetable.h>
+#include <freax/soundwire/sdw.h>
 
 struct snd_soc_acpi_package_context {
 	char *name;           /* package name */

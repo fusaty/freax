@@ -6,8 +6,8 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#ifndef LINUX_IIO_HW_CONSUMER_H
-#define LINUX_IIO_HW_CONSUMER_H
+#ifndef freax_IIO_HW_CONSUMER_H
+#define freax_IIO_HW_CONSUMER_H
 
 struct iio_hw_consumer;
 

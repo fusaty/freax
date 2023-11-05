@@ -4,10 +4,10 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#ifndef LINUX_CB710_MMC_H
-#define LINUX_CB710_MMC_H
+#ifndef freax_CB710_MMC_H
+#define freax_CB710_MMC_H
 
-#include <linux/cb710.h>
+#include <freax/cb710.h>
 
 /* per-MMC-reader structure */
 struct cb710_mmc_reader {
@@ -97,4 +97,4 @@ static inline struct cb710_slot *cb710_mmc_to_slot(struct mmc_host *mmc)
 #define CB710_MMC_RESPONSE2_PORT	0x28
 #define CB710_MMC_RESPONSE3_PORT	0x2C
 
-#endif /* LINUX_CB710_MMC_H */
+#endif /* freax_CB710_MMC_H */

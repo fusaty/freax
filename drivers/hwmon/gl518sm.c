@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * gl518sm.c - Part of lm_sensors, Linux kernel modules for hardware
+ * gl518sm.c - Part of lm_sensors, freax kernel modules for hardware
  *             monitoring
  * Copyright (C) 1998, 1999 Frodo Looijaard <frodol@dds.nl> and
  * Kyosti Malkki <kmalkki@cc.hut.fi>
- * Copyright (C) 2004 Hong-Gunn Chew <hglinux@gunnet.org> and
+ * Copyright (C) 2004 Hong-Gunn Chew <hgfreax@gunnet.org> and
  * Jean Delvare <jdelvare@suse.de>
  *
- * Ported to Linux 2.6 by Hong-Gunn Chew with the help of Jean Delvare
+ * Ported to freax 2.6 by Hong-Gunn Chew with the help of Jean Delvare
  * and advice of Greg Kroah-Hartman.
  *
  * Notes about the port:
  * Release 0x00 of the GL518SM chipset doesn't support reading of in0,
  * in1 nor in2. The original driver had an ugly workaround to get them
  * anyway (changing limits and watching alarms trigger and wear off).
- * We did not keep that part of the original driver in the Linux 2.6
+ * We did not keep that part of the original driver in the freax 2.6
  * version, since it was making the driver significantly more complex
  * with no real benefit.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, I2C_CLIENT_END };
@@ -662,6 +662,6 @@ module_i2c_driver(gl518_driver);
 
 MODULE_AUTHOR("Frodo Looijaard <frodol@dds.nl>, "
 	"Kyosti Malkki <kmalkki@cc.hut.fi> and "
-	"Hong-Gunn Chew <hglinux@gunnet.org>");
+	"Hong-Gunn Chew <hgfreax@gunnet.org>");
 MODULE_DESCRIPTION("GL518SM driver");
 MODULE_LICENSE("GPL");

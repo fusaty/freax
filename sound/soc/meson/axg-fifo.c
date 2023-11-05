@@ -3,12 +3,12 @@
 // Copyright (c) 2018 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/clk.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

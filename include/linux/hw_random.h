@@ -9,13 +9,13 @@
 
  */
 
-#ifndef LINUX_HWRANDOM_H_
-#define LINUX_HWRANDOM_H_
+#ifndef freax_HWRANDOM_H_
+#define freax_HWRANDOM_H_
 
-#include <linux/completion.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kref.h>
+#include <freax/completion.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/kref.h>
 
 /**
  * struct hwrng - Hardware Random Number Generator driver
@@ -65,4 +65,4 @@ extern void devm_hwrng_unregister(struct device *dve, struct hwrng *rng);
 extern long hwrng_msleep(struct hwrng *rng, unsigned int msecs);
 extern long hwrng_yield(struct hwrng *rng);
 
-#endif /* LINUX_HWRANDOM_H_ */
+#endif /* freax_HWRANDOM_H_ */

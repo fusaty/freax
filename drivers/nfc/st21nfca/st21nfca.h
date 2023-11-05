@@ -7,8 +7,8 @@
 #define __LOCAL_ST21NFCA_H_
 
 #include <net/nfc/hci.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
 
 #define HCI_MODE 0
 

@@ -9,10 +9,10 @@
 #include <crypto/authenc.h>
 #include <crypto/internal/des.h>
 #include <crypto/xts.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <freax/crypto.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/scatterlist.h>
 
 #include "cptvf.h"
 #include "cptvf_algs.h"

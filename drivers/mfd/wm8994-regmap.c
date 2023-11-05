@@ -7,10 +7,10 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/regmap.h>
-#include <linux/device.h>
+#include <freax/mfd/wm8994/core.h>
+#include <freax/mfd/wm8994/registers.h>
+#include <freax/regmap.h>
+#include <freax/device.h>
 
 #include "wm8994.h"
 

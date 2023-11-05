@@ -90,7 +90,7 @@ firmware_upload_unregister
 
 Firmware Upload Ops
 -------------------
-.. kernel-doc:: include/linux/firmware.h
+.. kernel-doc:: include/freax/firmware.h
    :identifiers: fw_upload_ops
 
 Firmware Upload Progress Codes
@@ -107,7 +107,7 @@ Firmware Upload Error Codes
 The following error codes may be returned by the driver ops in case of
 failure:
 
-.. kernel-doc:: include/linux/firmware.h
+.. kernel-doc:: include/freax/firmware.h
    :identifiers: fw_upload_err
 
 Sysfs Attributes

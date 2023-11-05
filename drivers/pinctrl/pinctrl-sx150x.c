@@ -11,19 +11,19 @@
  * Author: Gregory Bean <gbean@codeaurora.org>
  */
 
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gpio/driver.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <freax/regmap.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/gpio/driver.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf-generic.h>
 
 #include "core.h"
 #include "pinconf.h"

@@ -8,13 +8,13 @@
  * Copyright (C) 2009-2010 Marvell International Ltd.
  */
 
-#include <linux/bcd.h>
-#include <linux/mfd/max8907.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/bcd.h>
+#include <freax/mfd/max8907.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 enum {
 	RTC_SEC = 0,

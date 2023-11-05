@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pm3fb.c -- 3DLabs Permedia3 frame buffer device
+ *  freax/drivers/video/pm3fb.c -- 3DLabs Permedia3 frame buffer device
  *
  *  Copyright (C) 2001 Romain Dolbeau <romain@dolbeau.org>.
  *
@@ -9,10 +9,10 @@
  *  Based on code written by:
  *	   Sven Luther, <luther@dpt-info.u-strasbg.fr>
  *	   Alan Hourihane, <alanh@fairlite.demon.co.uk>
- *	   Russell King, <rmk@arm.linux.org.uk>
- *  Based on linux/drivers/video/skeletonfb.c:
+ *	   Russell King, <rmk@arm.freax.org.uk>
+ *  Based on freax/drivers/video/skeletonfb.c:
  *	Copyright (C) 1997 Geert Uytterhoeven
- *  Based on linux/driver/video/pm2fb.c:
+ *  Based on freax/driver/video/pm2fb.c:
  *	Copyright (C) 1998-1999 Ilario Nardinocchi (nardinoc@CS.UniBO.IT)
  *	Copyright (C) 1999 Jakub Jelinek (jakub@redhat.com)
  *
@@ -22,17 +22,17 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
 
 #include <video/pm3fb.h>
 
@@ -60,7 +60,7 @@ static bool nomtrr;
 
 /*
  * This structure defines the hardware state of the graphics card. Normally
- * you place this in a header file in linux/include/video. This file usually
+ * you place this in a header file in freax/include/video. This file usually
  * also includes register information. That allows other driver subsystems
  * and userland applications the ability to use the same header file to
  * avoid duplicate work and easy porting of software.

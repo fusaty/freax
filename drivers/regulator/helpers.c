@@ -5,14 +5,14 @@
 // Copyright 2007, 2008 Wolfson Microelectronics PLC.
 // Copyright 2008 SlimLogic Ltd.
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/driver.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regulator/driver.h>
 
 #include "internal.h"
 

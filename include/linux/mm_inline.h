@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_MM_INLINE_H
-#define LINUX_MM_INLINE_H
+#ifndef freax_MM_INLINE_H
+#define freax_MM_INLINE_H
 
-#include <linux/atomic.h>
-#include <linux/huge_mm.h>
-#include <linux/mm_types.h>
-#include <linux/swap.h>
-#include <linux/string.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/swapops.h>
+#include <freax/atomic.h>
+#include <freax/huge_mm.h>
+#include <freax/mm_types.h>
+#include <freax/swap.h>
+#include <freax/string.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/swapops.h>
 
 /**
  * folio_is_file_lru - Should the folio be on a file LRU or anon LRU?

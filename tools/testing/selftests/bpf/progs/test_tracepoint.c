@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2017 Facebook
 
-#include <vmlinux.h>
+#include <vmfreax.h>
 #include <bpf/bpf_helpers.h>
 
 /* taken from /sys/kernel/tracing/events/sched/sched_switch/format */

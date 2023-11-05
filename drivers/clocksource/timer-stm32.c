@@ -6,19 +6,19 @@
  * Inspired by time-efm32.c from Uwe Kleine-Koenig
  */
 
-#include <linux/kernel.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/sched_clock.h>
+#include <freax/slab.h>
 
 #include "timer-of.h"
 

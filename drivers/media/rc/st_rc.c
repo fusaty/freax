@@ -3,16 +3,16 @@
  * Copyright (C) 2013 STMicroelectronics Limited
  * Author: Srinivas Kandagatla <srinivas.kandagatla@st.com>
  */
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 #include <media/rc-core.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_wakeirq.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_wakeirq.h>
 
 struct st_rc_device {
 	struct device			*dev;

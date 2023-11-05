@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_KCOV_IOCTLS_H
-#define _LINUX_KCOV_IOCTLS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_KCOV_IOCTLS_H
+#define _freax_KCOV_IOCTLS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Argument for KCOV_REMOTE_ENABLE ioctl, see Documentation/dev-tools/kcov.rst
@@ -60,4 +60,4 @@ static inline __u64 kcov_remote_handle(__u64 subsys, __u64 inst)
 	return subsys | inst;
 }
 
-#endif /* _LINUX_KCOV_IOCTLS_H */
+#endif /* _freax_KCOV_IOCTLS_H */

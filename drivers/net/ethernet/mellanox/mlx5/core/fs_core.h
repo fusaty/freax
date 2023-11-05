@@ -33,10 +33,10 @@
 #ifndef _MLX5_FS_CORE_
 #define _MLX5_FS_CORE_
 
-#include <linux/refcount.h>
-#include <linux/mlx5/fs.h>
-#include <linux/rhashtable.h>
-#include <linux/llist.h>
+#include <freax/refcount.h>
+#include <freax/mlx5/fs.h>
+#include <freax/rhashtable.h>
+#include <freax/llist.h>
 #include <steering/fs_dr.h>
 
 #define FDB_TC_MAX_CHAIN 3

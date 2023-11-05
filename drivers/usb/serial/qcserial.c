@@ -7,12 +7,12 @@
  *	Copyright (c) 2009 Novell Inc.
  */
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/slab.h>
 #include "usb-wwan.h"
 
 #define DRIVER_AUTHOR "Qualcomm Inc"

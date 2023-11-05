@@ -6,18 +6,18 @@
  * Copyright (C) 2017 Martin Kaiser <martin@kaiser.cx>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/bitfield.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/hw_random.h>
+#include <freax/completion.h>
+#include <freax/io.h>
+#include <freax/bitfield.h>
 
 #define RNGC_VER_ID			0x0000
 #define RNGC_COMMAND			0x0004

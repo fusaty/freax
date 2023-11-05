@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
 
 #include "ddk750_reg.h"
 #include "ddk750_chip.h"

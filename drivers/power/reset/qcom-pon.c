@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2017-18 Linaro Limited
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/reboot-mode.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/reboot-mode.h>
+#include <freax/regmap.h>
 
 #define PON_SOFT_RB_SPARE		0x8f
 

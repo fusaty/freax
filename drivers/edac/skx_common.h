@@ -9,7 +9,7 @@
 #ifndef _SKX_COMM_EDAC_H
 #define _SKX_COMM_EDAC_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <asm/mce.h>
 
 #define MSG_SIZE		1024

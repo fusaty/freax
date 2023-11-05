@@ -7,10 +7,10 @@
  * Author(s): Amelie Delaunay <amelie.delaunay@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/usb/role.h>
+#include <freax/clk.h>
+#include <freax/iopoll.h>
+#include <freax/platform_device.h>
+#include <freax/usb/role.h>
 #include "core.h"
 
 #define dwc2_ovr_gotgctl(gotgctl) \

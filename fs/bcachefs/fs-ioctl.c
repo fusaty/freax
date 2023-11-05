@@ -9,12 +9,12 @@
 #include "fs-ioctl.h"
 #include "quota.h"
 
-#include <linux/compat.h>
-#include <linux/fsnotify.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/writeback.h>
+#include <freax/compat.h>
+#include <freax/fsnotify.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/security.h>
+#include <freax/writeback.h>
 
 #define FS_IOC_GOINGDOWN	     _IOR('X', 125, __u32)
 #define FSOP_GOING_FLAGS_DEFAULT	0x0	/* going down */
@@ -46,7 +46,7 @@ static int bch2_inode_flags_set(struct btree_trans *trans,
 	unsigned oldflags = bi->bi_flags & s->mask;
 
 	if (((newflags ^ oldflags) & (BCH_INODE_APPEND|BCH_INODE_IMMUTABLE)) &&
-	    !capable(CAP_LINUX_IMMUTABLE))
+	    !capable(CAP_freax_IMMUTABLE))
 		return -EPERM;
 
 	if (!S_ISREG(bi->bi_mode) &&

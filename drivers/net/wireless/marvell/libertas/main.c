@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/hardirq.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/kthread.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/hardirq.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/kthread.h>
+#include <freax/kfifo.h>
+#include <freax/slab.h>
 #include <net/cfg80211.h>
 
 #include "host.h"

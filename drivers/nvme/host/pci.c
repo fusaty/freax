@@ -4,30 +4,30 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/async.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/blk-integrity.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kstrtox.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/once.h>
-#include <linux/pci.h>
-#include <linux/suspend.h>
-#include <linux/t10-pi.h>
-#include <linux/types.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/sed-opal.h>
-#include <linux/pci-p2pdma.h>
+#include <freax/acpi.h>
+#include <freax/async.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/blk-integrity.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kstrtox.h>
+#include <freax/memremap.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/once.h>
+#include <freax/pci.h>
+#include <freax/suspend.h>
+#include <freax/t10-pi.h>
+#include <freax/types.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-hi-lo.h>
+#include <freax/sed-opal.h>
+#include <freax/pci-p2pdma.h>
 
 #include "trace.h"
 #include "nvme.h"
@@ -3521,7 +3521,7 @@ static void __exit nvme_exit(void)
 	flush_workqueue(nvme_wq);
 }
 
-MODULE_AUTHOR("Matthew Wilcox <willy@linux.intel.com>");
+MODULE_AUTHOR("Matthew Wilcox <willy@freax.intel.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("1.0");
 module_init(nvme_init);

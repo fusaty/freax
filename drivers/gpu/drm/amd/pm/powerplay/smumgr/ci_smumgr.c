@@ -20,11 +20,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include "linux/delay.h"
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include "freax/delay.h"
+#include <freax/types.h>
+#include <freax/pci.h>
 
 #include "smumgr.h"
 #include "pp_debug.h"

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/backlight/aat2870_bl.c
+ * freax/drivers/video/backlight/aat2870_bl.c
  *
  * Copyright (c) 2011, NVIDIA Corporation.
  * Author: Jin Park <jinyoungp@nvidia.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/aat2870.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/mfd/aat2870.h>
 
 struct aat2870_bl_driver_data {
 	struct platform_device *pdev;

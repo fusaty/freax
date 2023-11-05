@@ -6,10 +6,10 @@
 
 /* ethtool support for fjes */
 
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
+#include <freax/vmalloc.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/platform_device.h>
 
 #include "fjes.h"
 

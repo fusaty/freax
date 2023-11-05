@@ -4,9 +4,9 @@
 #ifndef _MLXFW_H
 #define _MLXFW_H
 
-#include <linux/firmware.h>
-#include <linux/netlink.h>
-#include <linux/device.h>
+#include <freax/firmware.h>
+#include <freax/netlink.h>
+#include <freax/device.h>
 #include <net/devlink.h>
 
 struct mlxfw_dev {

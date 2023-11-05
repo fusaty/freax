@@ -5,17 +5,17 @@
 //  Copyright (C) 2006-2007 Pavel Pisa (ppisa@pikron.com)
 //  Copyright (C) 2008 Juergen Beisert (kernel@pengutronix.de)
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/clockchips.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/sched_clock.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 /*
  * There are 4 versions of the timer hardware on Freescale MXC hardware.

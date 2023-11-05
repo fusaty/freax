@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/irq.h>
+#include <freax/irq.h>
 #include <net/xdp_sock_drv.h>
 #include "en.h"
 #include "en/txrx.h"

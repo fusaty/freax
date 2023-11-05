@@ -5,14 +5,14 @@
 //
 // Driver for IPQ4019 SD/MMC controller's I/O LDO voltage regulator
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
 
 static const unsigned int ipq4019_vmmc_voltages[] = {
 	1500000, 1800000, 2500000, 3000000,

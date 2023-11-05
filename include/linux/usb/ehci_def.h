@@ -3,10 +3,10 @@
  * Copyright (c) 2001-2002 by David Brownell
  */
 
-#ifndef __LINUX_USB_EHCI_DEF_H
-#define __LINUX_USB_EHCI_DEF_H
+#ifndef __freax_USB_EHCI_DEF_H
+#define __freax_USB_EHCI_DEF_H
 
-#include <linux/usb/ehci-dbgp.h>
+#include <freax/usb/ehci-dbgp.h>
 
 /* EHCI register interface, corresponds to EHCI Revision 0.95 specification */
 
@@ -188,4 +188,4 @@ struct ehci_regs {
 #define USBMODE_EX_HC	(3<<0)		/* host controller mode */
 };
 
-#endif /* __LINUX_USB_EHCI_DEF_H */
+#endif /* __freax_USB_EHCI_DEF_H */

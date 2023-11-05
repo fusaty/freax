@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <linux/ctype.h>
+#include <freax/list.h>
+#include <freax/compiler.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
+#include <freax/ctype.h>
 #include <sys/types.h>
 #include <fcntl.h>
 #include <sys/stat.h>

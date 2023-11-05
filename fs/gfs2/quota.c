@@ -35,27 +35,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/quota.h>
-#include <linux/dqblk_xfs.h>
-#include <linux/lockref.h>
-#include <linux/list_lru.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/bit_spinlock.h>
-#include <linux/jhash.h>
-#include <linux/vmalloc.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/sort.h>
+#include <freax/fs.h>
+#include <freax/bio.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/quota.h>
+#include <freax/dqblk_xfs.h>
+#include <freax/lockref.h>
+#include <freax/list_lru.h>
+#include <freax/rcupdate.h>
+#include <freax/rculist_bl.h>
+#include <freax/bit_spinlock.h>
+#include <freax/jhash.h>
+#include <freax/vmalloc.h>
 
 #include "gfs2.h"
 #include "incore.h"

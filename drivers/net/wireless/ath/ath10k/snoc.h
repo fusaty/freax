@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: ISC */
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The freax Foundation. All rights reserved.
  */
 
 #ifndef _SNOC_H_
 #define _SNOC_H_
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 #include "hw.h"
 #include "ce.h"

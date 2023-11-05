@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018, The freax Foundation. All rights reserved.
  *
  * Inspired by dwc3-of-simple.c
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/of_clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/extcon.h>
-#include <linux/interconnect.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/usb/of.h>
-#include <linux/reset.h>
-#include <linux/iopoll.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/irq.h>
+#include <freax/of_clk.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/extcon.h>
+#include <freax/interconnect.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/usb/of.h>
+#include <freax/reset.h>
+#include <freax/iopoll.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb.h>
 #include "core.h"
 
 /* USB QSCRATCH Hardware registers */

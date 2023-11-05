@@ -6,18 +6,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/cache.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/cache.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
-#include <linux/spi/spi.h>
-#include <linux/of_net.h>
+#include <freax/spi/spi.h>
+#include <freax/of_net.h>
 
 #define MSG_DEFAULT	(NETIF_MSG_DRV | NETIF_MSG_PROBE | NETIF_MSG_LINK | \
 			 NETIF_MSG_TIMER)

@@ -2,7 +2,7 @@
 #ifndef ASM_X86_SM4_AVX_H
 #define ASM_X86_SM4_AVX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <crypto/sm4.h>
 
 typedef void (*sm4_crypt_func)(const u32 *rk, u8 *dst, const u8 *src, u8 *iv);

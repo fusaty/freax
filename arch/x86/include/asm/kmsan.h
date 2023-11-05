@@ -13,7 +13,7 @@
 
 #include <asm/cpu_entry_area.h>
 #include <asm/processor.h>
-#include <linux/mmzone.h>
+#include <freax/mmzone.h>
 
 DECLARE_PER_CPU(char[CPU_ENTRY_AREA_SIZE], cpu_entry_area_shadow);
 DECLARE_PER_CPU(char[CPU_ENTRY_AREA_SIZE], cpu_entry_area_origin);

@@ -13,10 +13,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/list.h>
 #include "ibmphp.h"
 
 

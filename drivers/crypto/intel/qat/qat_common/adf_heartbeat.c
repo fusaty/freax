@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/dev_printk.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/overflow.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/dev_printk.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/kstrtox.h>
+#include <freax/overflow.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 #include <asm/errno.h>
 #include "adf_accel_devices.h"
 #include "adf_admin.h"

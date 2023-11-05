@@ -5,9 +5,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/uaccess.h>
 #include <asm/kmap_size.h>
 #include <asm/cache.h>
 

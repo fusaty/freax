@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2021 Intel Corporation. */
 
-#include <linux/avf/virtchnl.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
+#include <freax/avf/virtchnl.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
 #include "i40e_adminq_cmd.h"
 #include "i40e_devids.h"
 #include "i40e_prototype.h"

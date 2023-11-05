@@ -22,8 +22,8 @@
 #include <asm/initialize_mmu.h>
 #include <asm/mxregs.h>
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 
 /*
  * This module contains the entry code for kernel images. It performs the
@@ -83,7 +83,7 @@ _SetupOCD:
 _SetupMMU:
 	Offset = _SetupMMU - _start
 
-#ifdef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+#ifdef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	initialize_mmu
 #if defined(CONFIG_MMU) && XCHAL_HAVE_PTP_MMU && XCHAL_HAVE_SPANNING_WAY
 	rsr	a2, excsave1
@@ -214,7 +214,7 @@ ENTRY(_startup)
 
 	/* Unpack data sections
 	 *
-	 * The linker script used to build the Linux kernel image
+	 * The linker script used to build the freax kernel image
 	 * creates a table located at __boot_reloc_table_start
 	 * that contains the information what data needs to be unpacked.
 	 *
@@ -274,7 +274,7 @@ ENTRY(_startup)
 	movi	abi_arg0, 0
 	xsr	abi_arg0, excsave1
 
-	/* init_arch kick-starts the linux kernel */
+	/* init_arch kick-starts the freax kernel */
 
 	abi_call	init_arch
 	abi_call	start_kernel

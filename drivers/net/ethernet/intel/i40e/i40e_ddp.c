@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2018 Intel Corporation. */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include "i40e.h"
 
 #define I40_DDP_FLASH_REGION		100

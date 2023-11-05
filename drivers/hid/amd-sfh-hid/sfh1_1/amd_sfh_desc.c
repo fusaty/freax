@@ -8,7 +8,7 @@
  * Author: Basavaraj Natikar <Basavaraj.Natikar@amd.com>
  */
 
-#include <linux/hid-sensor-ids.h>
+#include <freax/hid-sensor-ids.h>
 
 #include "amd_sfh_interface.h"
 #include "../hid_descriptor/amd_sfh_hid_desc.h"

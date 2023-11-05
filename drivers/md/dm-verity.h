@@ -11,9 +11,9 @@
 #ifndef DM_VERITY_H
 #define DM_VERITY_H
 
-#include <linux/dm-bufio.h>
-#include <linux/device-mapper.h>
-#include <linux/interrupt.h>
+#include <freax/dm-bufio.h>
+#include <freax/device-mapper.h>
+#include <freax/interrupt.h>
 #include <crypto/hash.h>
 
 #define DM_VERITY_MAX_LEVELS		63

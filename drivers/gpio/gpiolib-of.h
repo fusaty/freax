@@ -3,10 +3,10 @@
 #ifndef GPIOLIB_OF_H
 #define GPIOLIB_OF_H
 
-#include <linux/err.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/types.h>
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 struct device;
 

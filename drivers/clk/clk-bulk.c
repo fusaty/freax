@@ -5,12 +5,12 @@
  * Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
 static int __must_check of_clk_bulk_get(struct device_node *np, int num_clks,
 					struct clk_bulk_data *clks)

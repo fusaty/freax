@@ -6,9 +6,9 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <freax/regmap.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
 
 #include "internal.h"
 

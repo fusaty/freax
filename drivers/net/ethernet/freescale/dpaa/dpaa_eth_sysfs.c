@@ -3,10 +3,10 @@
  * Copyright 2008 - 2016 Freescale Semiconductor Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of_net.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of_net.h>
 #include "dpaa_eth.h"
 #include "mac.h"
 

@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MM_TYPES_H
-#define _LINUX_MM_TYPES_H
+#ifndef _freax_MM_TYPES_H
+#define _freax_MM_TYPES_H
 
-#include <linux/mm_types_task.h>
+#include <freax/mm_types_task.h>
 
-#include <linux/auxvec.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rbtree.h>
-#include <linux/maple_tree.h>
-#include <linux/rwsem.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/uprobes.h>
-#include <linux/rcupdate.h>
-#include <linux/page-flags-layout.h>
-#include <linux/workqueue.h>
-#include <linux/seqlock.h>
-#include <linux/percpu_counter.h>
+#include <freax/auxvec.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/rbtree.h>
+#include <freax/maple_tree.h>
+#include <freax/rwsem.h>
+#include <freax/completion.h>
+#include <freax/cpumask.h>
+#include <freax/uprobes.h>
+#include <freax/rcupdate.h>
+#include <freax/page-flags-layout.h>
+#include <freax/workqueue.h>
+#include <freax/seqlock.h>
+#include <freax/percpu_counter.h>
 
 #include <asm/mmu.h>
 
@@ -871,7 +871,7 @@ struct mm_struct {
 
 		struct percpu_counter rss_stat[NR_MM_COUNTERS];
 
-		struct linux_binfmt *binfmt;
+		struct freax_binfmt *binfmt;
 
 		/* Architecture-specific MM context */
 		mm_context_t context;
@@ -1429,4 +1429,4 @@ enum {
 	/* See also internal only FOLL flags in mm/internal.h */
 };
 
-#endif /* _LINUX_MM_TYPES_H */
+#endif /* _freax_MM_TYPES_H */

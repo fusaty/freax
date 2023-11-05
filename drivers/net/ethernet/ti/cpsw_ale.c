@@ -5,18 +5,18 @@
  * Copyright (C) 2012 Texas Instruments
  *
  */
-#include <linux/bitmap.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
-#include <linux/etherdevice.h>
+#include <freax/bitmap.h>
+#include <freax/if_vlan.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/stat.h>
+#include <freax/sysfs.h>
+#include <freax/etherdevice.h>
 
 #include "cpsw_ale.h"
 

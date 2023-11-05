@@ -4,11 +4,11 @@
  * Copyright 2012 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/kernel.h>
 #include <asm/lppaca.h>
 #include <asm/opal.h>
 #include <asm/mce.h>

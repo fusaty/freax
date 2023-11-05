@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/io_uring.h>
-#include <linux/security.h>
-#include <linux/nospec.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/io_uring.h>
+#include <freax/security.h>
+#include <freax/nospec.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 #include <uapi/asm-generic/ioctls.h>
 
 #include "io_uring.h"

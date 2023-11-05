@@ -7,9 +7,9 @@
  *  Copyright (C) 2009 Magnus Damm
  */
 
-#include <linux/sys.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
+#include <freax/sys.h>
+#include <freax/errno.h>
+#include <freax/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/suspend.h>
 

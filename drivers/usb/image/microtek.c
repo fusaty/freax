@@ -120,18 +120,18 @@
  *	20011003 Fix multiple requests
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/proc_fs.h>
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/random.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/usb.h>
+#include <freax/proc_fs.h>
+#include <freax/atomic.h>
+#include <freax/blkdev.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

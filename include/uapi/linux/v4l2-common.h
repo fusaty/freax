@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0+ WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0+ WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
- * include/linux/v4l2-common.h
+ * include/freax/v4l2-common.h
  *
  * Common V4L2 and V4L2 subdev definitions.
  *
@@ -15,7 +15,7 @@
 #ifndef __V4L2_COMMON__
 #define __V4L2_COMMON__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  *

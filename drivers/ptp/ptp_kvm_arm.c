@@ -5,8 +5,8 @@
  *  All Rights Reserved
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/ptp_kvm.h>
+#include <freax/arm-smccc.h>
+#include <freax/ptp_kvm.h>
 
 #include <asm/arch_timer.h>
 #include <asm/hypervisor.h>

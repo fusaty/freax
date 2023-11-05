@@ -18,26 +18,26 @@ tl;dr
 netdev
 ------
 
-netdev is a mailing list for all network-related Linux stuff.  This
+netdev is a mailing list for all network-related freax stuff.  This
 includes anything found under net/ (i.e. core code like IPv6) and
-drivers/net (i.e. hardware specific drivers) in the Linux source tree.
+drivers/net (i.e. hardware specific drivers) in the freax source tree.
 
 Note that some subsystems (e.g. wireless drivers) which have a high
 volume of traffic have their own specific mailing lists and trees.
 
-The netdev list is managed (like many other Linux mailing lists) through
+The netdev list is managed (like many other freax mailing lists) through
 VGER (http://vger.kernel.org/) with archives available at
 https://lore.kernel.org/netdev/
 
 Aside from subsystems like those mentioned above, all network-related
-Linux development (i.e. RFC, review, comments, etc.) takes place on
+freax development (i.e. RFC, review, comments, etc.) takes place on
 netdev.
 
 Development cycle
 -----------------
 
 Here is a bit of background information on
-the cadence of Linux development.  Each new release starts off with a
+the cadence of freax development.  Each new release starts off with a
 two week "merge window" where the main maintainers feed their new stuff
 to Linus for merging into the mainline tree.  After the two weeks, the
 merge window is closed, and it is called/tagged ``-rc1``.  No new
@@ -51,7 +51,7 @@ official vX.Y is released.
 To find out where we are now in the cycle - load the mainline (Linus)
 page here:
 
-  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git
 
 and note the top of the "tags" section.  If it is rc1, it is early in
 the dev cycle.  If it was tagged rc7 a week ago, then a release is
@@ -69,8 +69,8 @@ the names, the ``net`` tree is for fixes to existing code already in the
 mainline tree from Linus, and ``net-next`` is where the new code goes
 for the future release.  You can find the trees here:
 
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git
+- https://git.kernel.org/pub/scm/freax/kernel/git/netdev/net.git
+- https://git.kernel.org/pub/scm/freax/kernel/git/netdev/net-next.git
 
 Relating that to kernel development: At the beginning of the 2-week
 merge window, the ``net-next`` tree will be closed - no new changes/features.
@@ -98,7 +98,7 @@ If you aren't subscribed to netdev and/or are simply unsure if
 repository link above for any new networking-related commits.  You may
 also check the following website for the current status:
 
-  https://netdev.bots.linux.dev/net-next.html
+  https://netdev.bots.freax.dev/net-next.html
 
 The ``net`` tree continues to collect fixes for the vX.Y content, and is
 fed back to Linus at regular (~weekly) intervals.  Meaning that the
@@ -185,7 +185,7 @@ must match the MAINTAINERS entry) and a handful of senior reviewers.
 
 Bot records its activity here:
 
-  https://netdev.bots.linux.dev/pw-bot.html
+  https://netdev.bots.freax.dev/pw-bot.html
 
 Review timelines
 ~~~~~~~~~~~~~~~~
@@ -409,7 +409,7 @@ and the patch series contains a set of kernel selftest for
 ``tools/testing/selftests/net`` or using the KUnit framework.
 
 You are expected to test your changes on top of the relevant networking
-tree (``net`` or ``net-next``) and not e.g. a stable tree or ``linux-next``.
+tree (``net`` or ``net-next``) and not e.g. a stable tree or ``freax-next``.
 
 patchwork checks
 ~~~~~~~~~~~~~~~~

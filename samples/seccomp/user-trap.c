@@ -17,9 +17,9 @@
 #include <sys/ioctl.h>
 #include <sys/ptrace.h>
 #include <sys/mount.h>
-#include <linux/limits.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>
+#include <freax/limits.h>
+#include <freax/filter.h>
+#include <freax/seccomp.h>
 
 #define ARRAY_SIZE(x) (sizeof(x) / sizeof(*(x)))
 

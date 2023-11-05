@@ -25,11 +25,11 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/counter.h: ../../include/uapi/linux/counter.h
-	mkdir -p $(OUTPUT)include/linux 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/counter.h $@
+$(OUTPUT)include/freax/counter.h: ../../include/uapi/freax/counter.h
+	mkdir -p $(OUTPUT)include/freax 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/freax/counter.h $@
 
-prepare: $(OUTPUT)include/linux/counter.h
+prepare: $(OUTPUT)include/freax/counter.h
 
 COUNTER_EXAMPLE := $(OUTPUT)counter_example.o
 $(COUNTER_EXAMPLE): prepare FORCE
@@ -39,8 +39,8 @@ $(OUTPUT)counter_example: $(COUNTER_EXAMPLE)
 
 clean:
 	rm -f $(ALL_PROGRAMS)
-	rm -rf $(OUTPUT)include/linux/counter.h
-	rm -df $(OUTPUT)include/linux
+	rm -rf $(OUTPUT)include/freax/counter.h
+	rm -df $(OUTPUT)include/freax
 	rm -df $(OUTPUT)include
 	find $(or $(OUTPUT),.) -name '*.o' -delete -o -name '\.*.d' -delete
 

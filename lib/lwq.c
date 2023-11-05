@@ -13,8 +13,8 @@
  * IRQ context, and where work items are handled one at a time by
  * dedicated threads.
  */
-#include <linux/rcupdate.h>
-#include <linux/lwq.h>
+#include <freax/rcupdate.h>
+#include <freax/lwq.h>
 
 struct llist_node *__lwq_dequeue(struct lwq *q)
 {
@@ -68,11 +68,11 @@ EXPORT_SYMBOL_GPL(lwq_dequeue_all);
 
 #if IS_ENABLED(CONFIG_LWQ_TEST)
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/wait_bit.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/wait_bit.h>
+#include <freax/kthread.h>
+#include <freax/delay.h>
 struct tnode {
 	struct lwq_node n;
 	int i;

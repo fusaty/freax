@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_REGS_H_
-#define LINUX_BCMA_REGS_H_
+#ifndef freax_BCMA_REGS_H_
+#define freax_BCMA_REGS_H_
 
 /* Some single registers are shared between many cores */
 /* BCMA_CLKCTLST: ChipCommon (rev >= 20), PCIe, 80211 */
@@ -101,4 +101,4 @@
 #define BCMA_SOC_FLASH2			0x1c000000	/* Flash Region 2 (region 1 shadowed here) */
 #define BCMA_SOC_FLASH2_SZ		0x02000000	/* Size of Flash Region 2 */
 
-#endif /* LINUX_BCMA_REGS_H_ */
+#endif /* freax_BCMA_REGS_H_ */

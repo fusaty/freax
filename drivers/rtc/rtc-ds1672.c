@@ -6,9 +6,9 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/rtc.h>
+#include <freax/module.h>
 
 /* Registers */
 

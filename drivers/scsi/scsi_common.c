@@ -3,12 +3,12 @@
  * SCSI functions used by both the initiator and the target code.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <uapi/linux/pr.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <uapi/freax/pr.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_common.h>
 

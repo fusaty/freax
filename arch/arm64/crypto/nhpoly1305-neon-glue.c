@@ -11,7 +11,7 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
 #include <crypto/nhpoly1305.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 asmlinkage void nh_neon(const u32 *key, const u8 *message, size_t message_len,
 			__le64 hash[NH_NUM_PASSES]);

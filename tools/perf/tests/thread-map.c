@@ -9,7 +9,7 @@
 #include "debug.h"
 #include "event.h"
 #include "util/synthetic-events.h"
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 #include <perf/event.h>
 #include <internal/threadmap.h>
 

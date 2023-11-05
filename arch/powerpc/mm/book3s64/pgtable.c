@@ -3,13 +3,13 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/memblock.h>
-#include <linux/memremap.h>
-#include <linux/pkeys.h>
-#include <linux/debugfs.h>
-#include <linux/proc_fs.h>
+#include <freax/sched.h>
+#include <freax/mm_types.h>
+#include <freax/memblock.h>
+#include <freax/memremap.h>
+#include <freax/pkeys.h>
+#include <freax/debugfs.h>
+#include <freax/proc_fs.h>
 #include <misc/cxl-base.h>
 
 #include <asm/pgalloc.h>
@@ -146,14 +146,14 @@ static void do_serialize(void *arg)
 }
 
 /*
- * Serialize against __find_linux_pte() which does lock-less
+ * Serialize against __find_freax_pte() which does lock-less
  * lookup in page tables with local interrupts disabled. For huge pages
  * it casts pmd_t to pte_t. Since format of pte_t is different from
  * pmd_t we want to prevent transit from pmd pointing to page table
  * to pmd pointing to huge page (and back) while interrupts are disabled.
  * We clear pmd to possibly replace it with page table pointer in
  * different code paths. So make sure we wait for the parallel
- * __find_linux_pte() to finish.
+ * __find_freax_pte() to finish.
  */
 void serialize_against_pte_lookup(struct mm_struct *mm)
 {

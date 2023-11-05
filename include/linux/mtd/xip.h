@@ -10,8 +10,8 @@
  * by an earlier patch authored by David Woodhouse.
  */
 
-#ifndef __LINUX_MTD_XIP_H__
-#define __LINUX_MTD_XIP_H__
+#ifndef __freax_MTD_XIP_H__
+#define __freax_MTD_XIP_H__
 
 
 #ifdef CONFIG_MTD_XIP
@@ -20,7 +20,7 @@
  * We really don't want gcc to guess anything.
  * We absolutely _need_ proper inlining.
  */
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * Function that are modifying the flash state away from array mode must
@@ -95,4 +95,4 @@
 #define __xipram
 #endif
 
-#endif /* __LINUX_MTD_XIP_H__ */
+#endif /* __freax_MTD_XIP_H__ */

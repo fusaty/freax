@@ -4,9 +4,9 @@
  * Copyright (C) STMicroelectronics 2017
  * Author:  Maxime Coquelin <mcoquelin.stm32@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "pinctrl-stm32.h"
 

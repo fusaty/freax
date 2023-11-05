@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #include "fs_core.h"
@@ -6,7 +6,7 @@
 #include "en.h"
 #include "lib/ipsec_fs_roce.h"
 #include "mlx5_core.h"
-#include <linux/random.h>
+#include <freax/random.h>
 
 struct mlx5_ipsec_miss {
 	struct mlx5_flow_group *group;

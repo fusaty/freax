@@ -3,10 +3,10 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/clocksource.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/clocksource.h>
 
 extern struct of_device_id __timer_of_table[];
 

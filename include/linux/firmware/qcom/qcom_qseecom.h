@@ -9,10 +9,10 @@
 #ifndef __QCOM_QSEECOM_H
 #define __QCOM_QSEECOM_H
 
-#include <linux/auxiliary_bus.h>
-#include <linux/types.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/types.h>
 
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 /**
  * struct qseecom_client - QSEECOM client device.

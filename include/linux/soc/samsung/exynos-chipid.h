@@ -5,8 +5,8 @@
  *
  * Exynos - CHIPID support
  */
-#ifndef __LINUX_SOC_EXYNOS_CHIPID_H
-#define __LINUX_SOC_EXYNOS_CHIPID_H
+#ifndef __freax_SOC_EXYNOS_CHIPID_H
+#define __freax_SOC_EXYNOS_CHIPID_H
 
 #define EXYNOS_CHIPID_REG_PRO_ID	0x00
 #define EXYNOS_REV_PART_MASK		0xf
@@ -47,4 +47,4 @@
 #define EXYNOS5422_KFC_DN_OFFSET	14
 #define EXYNOS5422_KFC_DN_MASK		0x03
 
-#endif /*__LINUX_SOC_EXYNOS_CHIPID_H */
+#endif /*__freax_SOC_EXYNOS_CHIPID_H */

@@ -9,19 +9,19 @@
  * Luca Ceresoli <luca@lucaceresoli.net>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

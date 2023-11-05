@@ -3,7 +3,7 @@
 #include "adf_common_drv.h"
 #include "adf_gen2_hw_data.h"
 #include "icp_qat_hw.h"
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 u32 adf_gen2_get_num_accels(struct adf_hw_device_data *self)
 {

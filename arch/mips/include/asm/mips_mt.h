@@ -6,10 +6,10 @@
 #ifndef __ASM_MIPS_MT_H
 #define __ASM_MIPS_MT_H
 
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 
 /*
- * How many VPEs and TCs is Linux allowed to use?  0 means no limit.
+ * How many VPEs and TCs is freax allowed to use?  0 means no limit.
  */
 extern int tclimit;
 extern int vpelimit;

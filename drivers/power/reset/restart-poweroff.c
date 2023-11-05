@@ -7,12 +7,12 @@
  *
  * Copyright (C) 2012 Andrew Lunn
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/of_platform.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
 
 static void restart_poweroff_do_poweroff(void)
 {

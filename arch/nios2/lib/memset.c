@@ -7,8 +7,8 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/string.h>
 
 void *memset(void *s, int c, size_t count)
 {

@@ -10,22 +10,22 @@
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
 #include <asm/unaligned.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
@@ -3136,8 +3136,8 @@ static void mxt_input_close(struct input_dev *dev)
 
 static int mxt_parse_device_properties(struct mxt_data *data)
 {
-	static const char keymap_property[] = "linux,gpio-keymap";
-	static const char buttons_property[] = "linux,keycodes";
+	static const char keymap_property[] = "freax,gpio-keymap";
+	static const char buttons_property[] = "freax,keycodes";
 	struct device *dev = &data->client->dev;
 	u32 *keymap;
 	u32 *buttonmap;

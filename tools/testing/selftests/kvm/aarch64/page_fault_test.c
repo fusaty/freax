@@ -8,13 +8,13 @@
  * called (e.g., uffd faults with the right address and write/read flag).
  */
 #define _GNU_SOURCE
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 #include <fcntl.h>
 #include <test_util.h>
 #include <kvm_util.h>
 #include <processor.h>
 #include <asm/sysreg.h>
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 #include "guest_modes.h"
 #include "userfaultfd_util.h"
 

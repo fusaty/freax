@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General freax system control interface
  */
 
-#include <linux/sysctl.h>
-#include <linux/printk.h>
-#include <linux/capability.h>
-#include <linux/ratelimit.h>
+#include <freax/sysctl.h>
+#include <freax/printk.h>
+#include <freax/capability.h>
+#include <freax/ratelimit.h>
 #include "internal.h"
 
 static const int ten_thousand = 10000;

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _ALPHA_SWAB_H
 #define _ALPHA_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 #include <asm/compiler.h>
 
 #ifdef __GNUC__

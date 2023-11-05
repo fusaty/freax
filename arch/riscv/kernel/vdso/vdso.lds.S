@@ -72,7 +72,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_4.15 {
+	freax_4.15 {
 	global:
 		__vdso_rt_sigreturn;
 #ifdef HAS_VGETTIMEOFDAY

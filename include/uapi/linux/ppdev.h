@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * linux/include/linux/ppdev.h
+ * freax/include/freax/ppdev.h
  *
  * User-space parallel port device driver (header file).
  *
@@ -15,8 +15,8 @@
  * Added PPGETMODES/PPGETMODE/PPGETPHASE, Fred Barnes <frmb2@ukc.ac.uk>, 03/01/2001
  */
 
-#ifndef _UAPI_LINUX_PPDEV_H
-#define _UAPI_LINUX_PPDEV_H
+#ifndef _UAPI_freax_PPDEV_H
+#define _UAPI_freax_PPDEV_H
 
 #define PP_IOCTL	'p'
 
@@ -100,4 +100,4 @@ struct ppdev_frob_struct {
 /* only masks user-visible flags */
 #define PP_FLAGMASK	(PP_FASTWRITE | PP_FASTREAD | PP_W91284PIC)
 
-#endif /* _UAPI_LINUX_PPDEV_H */
+#endif /* _UAPI_freax_PPDEV_H */

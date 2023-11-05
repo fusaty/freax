@@ -5,7 +5,7 @@
  *
  * Authors:
  *  Haijun Liu <haijun.liu@mediatek.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  *
  * Contributors:
@@ -17,12 +17,12 @@
 #ifndef __T7XX_PCI_H__
 #define __T7XX_PCI_H__
 
-#include <linux/completion.h>
-#include <linux/irqreturn.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/irqreturn.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include "t7xx_reg.h"
 

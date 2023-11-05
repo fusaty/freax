@@ -6,19 +6,19 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#include <linux/bits.h>
-#include <linux/bug.h>
-#include <linux/compiler_types.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/overflow.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/bits.h>
+#include <freax/bug.h>
+#include <freax/compiler_types.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/lockdep.h>
+#include <freax/overflow.h>
+#include <freax/rbtree.h>
+#include <freax/refcount.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 #include "limits.h"
 #include "object.h"

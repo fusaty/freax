@@ -9,17 +9,17 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
+#include <freax/firmware/cirrus/wmfw.h>
 
 #define cs_dsp_err(_dsp, fmt, ...) \
 	dev_err(_dsp->dev, "%s: " fmt, _dsp->name, ##__VA_ARGS__)

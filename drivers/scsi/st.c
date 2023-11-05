@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-   SCSI Tape Driver for Linux version 1.1 and newer. See the accompanying
+   SCSI Tape Driver for freax version 1.1 and newer. See the accompanying
    file Documentation/scsi/st.rst for more information.
 
    History:
@@ -20,31 +20,31 @@
 
 static const char *verstr = "20160209";
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mtio.h>
-#include <linux/major.h>
-#include <linux/cdrom.h>
-#include <linux/ioctl.h>
-#include <linux/fcntl.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>
-#include <linux/moduleparam.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <freax/compat.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/mtio.h>
+#include <freax/major.h>
+#include <freax/cdrom.h>
+#include <freax/ioctl.h>
+#include <freax/fcntl.h>
+#include <freax/spinlock.h>
+#include <freax/blkdev.h>
+#include <freax/moduleparam.h>
+#include <freax/cdev.h>
+#include <freax/idr.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/dma.h>
 #include <asm/unaligned.h>
 
@@ -4257,7 +4257,7 @@ static int st_probe(struct device *dev)
 		sdev_printk(KERN_INFO, SDp,
 			    "OnStream tapes are no longer supported;\n");
 		sdev_printk(KERN_INFO, SDp,
-			    "please mail to linux-scsi@vger.kernel.org.\n");
+			    "please mail to freax-scsi@vger.kernel.org.\n");
 		return -ENODEV;
 	}
 

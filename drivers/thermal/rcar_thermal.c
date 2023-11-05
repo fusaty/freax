@@ -5,19 +5,19 @@
  * Copyright (C) 2012 Renesas Solutions Corp.
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/thermal.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/thermal.h>
 
 #include "thermal_hwmon.h"
 

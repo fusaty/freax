@@ -4,14 +4,14 @@
 
 #include <string.h>
 
-#include <linux/bpf.h>
-#include <linux/pkt_cls.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/bpf.h>
+#include <freax/pkt_cls.h>
+#include <freax/if_ether.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <sys/socket.h>
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

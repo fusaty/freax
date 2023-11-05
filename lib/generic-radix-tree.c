@@ -1,9 +1,9 @@
 
-#include <linux/atomic.h>
-#include <linux/export.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/gfp.h>
-#include <linux/kmemleak.h>
+#include <freax/atomic.h>
+#include <freax/export.h>
+#include <freax/generic-radix-tree.h>
+#include <freax/gfp.h>
+#include <freax/kmemleak.h>
 
 #define GENRADIX_ARY		(PAGE_SIZE / sizeof(struct genradix_node *))
 #define GENRADIX_ARY_SHIFT	ilog2(GENRADIX_ARY)

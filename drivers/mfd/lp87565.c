@@ -5,15 +5,15 @@
  * Author: Keerthy <j-keerthy@ti.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/core.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <freax/mfd/lp87565.h>
 
 static const struct regmap_config lp87565_regmap_config = {
 	.reg_bits = 8,

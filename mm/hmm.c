@@ -5,26 +5,26 @@
  * Authors: Jérôme Glisse <jglisse@redhat.com>
  */
 /*
- * Refer to include/linux/hmm.h for information about heterogeneous memory
+ * Refer to include/freax/hmm.h for information about heterogeneous memory
  * management or HMM for short.
  */
-#include <linux/pagewalk.h>
-#include <linux/hmm.h>
-#include <linux/init.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memremap.h>
-#include <linux/sched/mm.h>
-#include <linux/jump_label.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmu_notifier.h>
-#include <linux/memory_hotplug.h>
+#include <freax/pagewalk.h>
+#include <freax/hmm.h>
+#include <freax/init.h>
+#include <freax/rmap.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/mmzone.h>
+#include <freax/pagemap.h>
+#include <freax/swapops.h>
+#include <freax/hugetlb.h>
+#include <freax/memremap.h>
+#include <freax/sched/mm.h>
+#include <freax/jump_label.h>
+#include <freax/dma-mapping.h>
+#include <freax/mmu_notifier.h>
+#include <freax/memory_hotplug.h>
 
 #include "internal.h"
 

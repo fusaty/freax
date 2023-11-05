@@ -5,11 +5,11 @@
  * Copyright (C) 2020 Intel Corporation, Inc.
  */
 
-#ifndef __LINUX_DFL_H
-#define __LINUX_DFL_H
+#ifndef __freax_DFL_H
+#define __freax_DFL_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
 /**
  * enum dfl_id_type - define the DFL FIU types
@@ -29,7 +29,7 @@ enum dfl_id_type {
  * @feature_id: feature identifier local to its DFL FIU type.
  * @revision: revision of this dfl device feature.
  * @mmio_res: mmio resource of this dfl device.
- * @irqs: list of Linux IRQ numbers of this dfl device.
+ * @irqs: list of freax IRQ numbers of this dfl device.
  * @num_irqs: number of IRQs supported by this dfl device.
  * @cdev: pointer to DFL FPGA container device this dfl device belongs to.
  * @id_entry: matched id entry in dfl driver's id table.
@@ -92,4 +92,4 @@ void dfl_driver_unregister(struct dfl_driver *dfl_drv);
 		      dfl_driver_unregister)
 
 void *dfh_find_param(struct dfl_device *dfl_dev, int param_id, size_t *pcount);
-#endif /* __LINUX_DFL_H */
+#endif /* __freax_DFL_H */

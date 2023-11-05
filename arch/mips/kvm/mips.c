@@ -9,17 +9,17 @@
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/kdebug.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/signal.h>
+#include <freax/fs.h>
+#include <freax/memblock.h>
+#include <freax/pgtable.h>
 
 #include <asm/fpu.h>
 #include <asm/page.h>
@@ -27,7 +27,7 @@
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 #include "interrupt.h"
 

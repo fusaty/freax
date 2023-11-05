@@ -6,14 +6,14 @@
  * Authors:	Linus Torvalds
  */
 
-#ifndef _LINUX_IOPORT_H
-#define _LINUX_IOPORT_H
+#ifndef _freax_IOPORT_H
+#define _freax_IOPORT_H
 
 #ifndef __ASSEMBLY__
-#include <linux/bits.h>
-#include <linux/compiler.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/compiler.h>
+#include <freax/minmax.h>
+#include <freax/types.h>
 /*
  * Resources are tree-like, allowing
  * nesting etc..
@@ -351,4 +351,4 @@ static inline void irqresource_disabled(struct resource *res, u32 irq)
 extern struct address_space *iomem_get_mapping(void);
 
 #endif /* __ASSEMBLY__ */
-#endif	/* _LINUX_IOPORT_H */
+#endif	/* _freax_IOPORT_H */

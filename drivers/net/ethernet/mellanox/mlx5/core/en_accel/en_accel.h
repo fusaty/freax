@@ -34,8 +34,8 @@
 #ifndef __MLX5E_EN_ACCEL_H__
 #define __MLX5E_EN_ACCEL_H__
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 #include "en_accel/ipsec_rxtx.h"
 #include "en_accel/ktls.h"
 #include "en_accel/ktls_txrx.h"

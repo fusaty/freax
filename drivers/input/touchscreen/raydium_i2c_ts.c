@@ -11,19 +11,19 @@
  * Contact Raydium Semiconductor Corporation at www.rad-ic.com
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 /* Slave I2C mode */

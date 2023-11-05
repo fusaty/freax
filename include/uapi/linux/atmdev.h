@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atmdev.h - ATM device driver declarations and various related items */
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#ifndef _UAPILINUX_ATMDEV_H
-#define _UAPILINUX_ATMDEV_H
+#ifndef _UAPIfreax_ATMDEV_H
+#define _UAPIfreax_ATMDEV_H
 
 
-#include <linux/atmapi.h>
-#include <linux/atm.h>
-#include <linux/atmioc.h>
+#include <freax/atmapi.h>
+#include <freax/atm.h>
+#include <freax/atmioc.h>
 
 
 #define ESI_LEN		6
@@ -209,4 +209,4 @@ struct atm_cirange {
 
 
 
-#endif /* _UAPILINUX_ATMDEV_H */
+#endif /* _UAPIfreax_ATMDEV_H */

@@ -9,7 +9,7 @@
 #include "subvolume.h"
 #include "xattr.h"
 
-#include <linux/posix_acl.h>
+#include <freax/posix_acl.h>
 
 static inline int is_subdir_for_nlink(struct bch_inode_unpacked *inode)
 {

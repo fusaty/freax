@@ -5,7 +5,7 @@
  *  Copyright (c) 2022, Ronnie Sahlberg <lsahlber@redhat.com>
  */
 
-#include <linux/namei.h>
+#include <freax/namei.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 #include "cifs_debug.h"

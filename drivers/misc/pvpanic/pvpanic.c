@@ -7,17 +7,17 @@
  *  Copyright (C) 2021 Oracle.
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/panic_notifier.h>
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/kexec.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/panic_notifier.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
+#include <freax/list.h>
 
 #include <uapi/misc/pvpanic.h>
 

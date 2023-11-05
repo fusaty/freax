@@ -20,8 +20,8 @@
 #ifndef __MFD_SIMPLE_MFD_I2C_H
 #define __MFD_SIMPLE_MFD_I2C_H
 
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
+#include <freax/mfd/core.h>
+#include <freax/regmap.h>
 
 struct simple_mfd_data {
 	const struct regmap_config *regmap_config;

@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 MODULE_AUTHOR("Rodney Girod <rgirod@confocus.com>, Dave Hansen <dave@sr71.net>");
 MODULE_DESCRIPTION("Intel NAS/Home Server ICH7 GPIO Driver");

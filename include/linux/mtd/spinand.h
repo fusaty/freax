@@ -5,16 +5,16 @@
  *  Authors:
  *	Peter Pan <peterpandong@micron.com>
  */
-#ifndef __LINUX_MTD_SPINAND_H
-#define __LINUX_MTD_SPINAND_H
+#ifndef __freax_MTD_SPINAND_H
+#define __freax_MTD_SPINAND_H
 
-#include <linux/mutex.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/mutex.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 /**
  * Standard SPI NAND flash operations
@@ -518,4 +518,4 @@ int spinand_match_and_init(struct spinand_device *spinand,
 int spinand_upd_cfg(struct spinand_device *spinand, u8 mask, u8 val);
 int spinand_select_target(struct spinand_device *spinand, unsigned int target);
 
-#endif /* __LINUX_MTD_SPINAND_H */
+#endif /* __freax_MTD_SPINAND_H */

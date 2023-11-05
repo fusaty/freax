@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_PARAVIRT_H
 #define _ASM_POWERPC_PARAVIRT_H
 
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 #include <asm/smp.h>
 #ifdef CONFIG_PPC64
 #include <asm/paca.h>
@@ -11,7 +11,7 @@
 #endif
 
 #ifdef CONFIG_PPC_SPLPAR
-#include <linux/smp.h>
+#include <freax/smp.h>
 #include <asm/kvm_guest.h>
 #include <asm/cputhreads.h>
 
@@ -151,10 +151,10 @@ static inline bool vcpu_is_preempted(int cpu)
 		/*
 		 * The result of vcpu_is_preempted() is used in a
 		 * speculative way, and is always subject to invalidation
-		 * by events internal and external to Linux. While we can
-		 * be called in preemptable context (in the Linux sense),
+		 * by events internal and external to freax. While we can
+		 * be called in preemptable context (in the freax sense),
 		 * we're not accessing per-cpu resources in a way that can
-		 * race destructively with Linux scheduler preemption and
+		 * race destructively with freax scheduler preemption and
 		 * migration, and callers can tolerate the potential for
 		 * error introduced by sampling the CPU index without
 		 * pinning the task to it. So it is permissible to use

@@ -4,13 +4,13 @@
  * Author: Jianjun Wang <jianjun.wang@mediatek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "phy-mtk-io.h"
 

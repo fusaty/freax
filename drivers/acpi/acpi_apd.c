@@ -7,13 +7,13 @@
  *	Wu, Jeff <Jeff.Wu@amd.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_data/clk-fch.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_data/clk-fch.h>
+#include <freax/platform_device.h>
 
 #include "internal.h"
 

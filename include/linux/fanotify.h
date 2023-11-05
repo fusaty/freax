@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FANOTIFY_H
-#define _LINUX_FANOTIFY_H
+#ifndef _freax_FANOTIFY_H
+#define _freax_FANOTIFY_H
 
-#include <linux/sysctl.h>
-#include <uapi/linux/fanotify.h>
+#include <freax/sysctl.h>
+#include <uapi/freax/fanotify.h>
 
 #define FAN_GROUP_FLAG(group, flag) \
 	((group)->fanotify_data.flags & (flag))
@@ -135,4 +135,4 @@
 #undef FAN_ALL_PERM_EVENTS
 #undef FAN_ALL_OUTGOING_EVENTS
 
-#endif /* _LINUX_FANOTIFY_H */
+#endif /* _freax_FANOTIFY_H */

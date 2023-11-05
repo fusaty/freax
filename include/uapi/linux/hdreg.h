@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_HDREG_H
-#define _LINUX_HDREG_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_HDREG_H
+#define _freax_HDREG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Command Header sizes for IOCTL commands
@@ -656,4 +656,4 @@ struct hd_driveid {
 #define IDE_NICE_2		(4)	/* when we know it's on our expense */
 #endif
 
-#endif	/* _LINUX_HDREG_H */
+#endif	/* _freax_HDREG_H */

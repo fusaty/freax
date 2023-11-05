@@ -51,7 +51,7 @@ for kfuncs, the API and semantics for these data structures can be evolved in
 a way that breaks backwards compatibility if necessary.
 
 Root and node types for the new data structures are opaquely defined in the
-``uapi/linux/bpf.h`` header.
+``uapi/freax/bpf.h`` header.
 
 Locking
 -------

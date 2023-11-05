@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/nospec-insn.h>
 
 	.section .noinstr.text, "ax"

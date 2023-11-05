@@ -9,7 +9,7 @@
  * Also based on pwm-samsung.c
  *
  * Description:
- *   This file is the core OMAP support for the generic, Linux
+ *   This file is the core OMAP support for the generic, freax
  *   PWM driver / controller, using the OMAP's dual-mode timers
  *   with a timer counter that goes up. When it overflows it gets
  *   reloaded with the load value and the pwm output goes up.
@@ -33,20 +33,20 @@
  *	- A fresh cycle is started.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 #include <clocksource/timer-ti-dm.h>
-#include <linux/platform_data/dmtimer-omap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <freax/platform_data/dmtimer-omap.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
+#include <freax/time.h>
 
 #define DM_TIMER_LOAD_MIN 0xfffffffe
 #define DM_TIMER_MAX      0xffffffff

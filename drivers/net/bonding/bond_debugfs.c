@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/netdevice.h>
 
 #include <net/bonding.h>
 #include <net/bond_alb.h>
 
 #if defined(CONFIG_DEBUG_FS) && !defined(CONFIG_NET_NS)
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 static struct dentry *bonding_debug_root;
 

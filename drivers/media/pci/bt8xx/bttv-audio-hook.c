@@ -7,7 +7,7 @@
 
 #include "bttv-audio-hook.h"
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 /* ----------------------------------------------------------------------- */
 /* winview                                                                 */

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/sched_clock.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/sched_clock.h>
 
 #include "timer-of.h"
 

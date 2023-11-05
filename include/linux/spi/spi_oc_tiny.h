@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SPI_SPI_OC_TINY_H
-#define _LINUX_SPI_SPI_OC_TINY_H
+#ifndef _freax_SPI_SPI_OC_TINY_H
+#define _freax_SPI_SPI_OC_TINY_H
 
 /**
  * struct tiny_spi_platform_data - platform data of the OpenCores tiny SPI
@@ -14,4 +14,4 @@ struct tiny_spi_platform_data {
 	unsigned int baudwidth;
 };
 
-#endif /* _LINUX_SPI_SPI_OC_TINY_H */
+#endif /* _freax_SPI_SPI_OC_TINY_H */

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/xxhash.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/xxhash.h>
 #include <asm/unaligned.h>
 
 #define XXHASH64_BLOCK_SIZE	32

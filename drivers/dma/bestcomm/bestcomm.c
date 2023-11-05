@@ -9,20 +9,20 @@
  *                         ( by Dale Farnsworth <dfarnsworth@mvista.com> )
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/mpc52xx.h>
 
-#include <linux/fsl/bestcomm/sram.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include "linux/fsl/bestcomm/bestcomm.h"
+#include <freax/fsl/bestcomm/sram.h>
+#include <freax/fsl/bestcomm/bestcomm_priv.h>
+#include "freax/fsl/bestcomm/bestcomm.h"
 
 #define DRIVER_NAME "bestcomm-core"
 

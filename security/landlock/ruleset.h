@@ -9,13 +9,13 @@
 #ifndef _SECURITY_LANDLOCK_RULESET_H
 #define _SECURITY_LANDLOCK_RULESET_H
 
-#include <linux/bitops.h>
-#include <linux/build_bug.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/landlock.h>
+#include <freax/bitops.h>
+#include <freax/build_bug.h>
+#include <freax/mutex.h>
+#include <freax/rbtree.h>
+#include <freax/refcount.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/landlock.h>
 
 #include "limits.h"
 #include "object.h"

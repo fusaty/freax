@@ -5,9 +5,9 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/firewire.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/firewire.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 #include "packets-buffer.h"
 
 /**

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/nfsd.yaml */
 /* YNL-GEN kernel source */
@@ -8,7 +8,7 @@
 
 #include "netlink.h"
 
-#include <uapi/linux/nfsd_netlink.h>
+#include <uapi/freax/nfsd_netlink.h>
 
 /* Ops table for nfsd */
 static const struct genl_split_ops nfsd_nl_ops[] = {

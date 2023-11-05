@@ -2,7 +2,7 @@
 #ifndef __GENELF_H__
 #define __GENELF_H__
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 /* genelf.c */
 int jit_write_elf(int fd, uint64_t code_addr, const char *sym,

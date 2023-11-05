@@ -6,15 +6,15 @@
  *		Aaron.maoye <leafy.myeh@newbietech.com>
  */
 
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/serio.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #define DRIVER_NAME		"sun4i-ps2"
 

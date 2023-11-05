@@ -34,27 +34,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/iov_iter.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/uaccess.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/poll.h>
+#include <freax/highmem.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/iov_iter.h>
+#include <freax/indirect_call_wrapper.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 #include <net/checksum.h>
 #include <net/sock.h>

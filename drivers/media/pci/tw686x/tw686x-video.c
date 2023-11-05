@@ -7,12 +7,12 @@
  * and Measurements PIAP
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/videobuf2-dma-contig.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * Intel MIC Platform Software Stack (MPSS)
  *
@@ -59,7 +59,7 @@
 #ifndef SCIF_IOCTL_H
 #define SCIF_IOCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct scif_port_id - SCIF port information

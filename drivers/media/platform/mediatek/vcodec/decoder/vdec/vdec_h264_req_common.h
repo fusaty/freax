@@ -7,8 +7,8 @@
 #ifndef _VDEC_H264_REQ_COMMON_H_
 #define _VDEC_H264_REQ_COMMON_H_
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <media/v4l2-h264.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/videobuf2-dma-contig.h>

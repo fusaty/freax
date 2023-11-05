@@ -12,20 +12,20 @@
  * (the DT binding refers to this as "GPIO assisted NAND flash")
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/nand-gpio.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
 
 struct gpiomtd {
 	struct nand_controller	base;
@@ -60,7 +60,7 @@ static void gpio_nand_dosync(struct gpiomtd *gpiomtd)
 
 	if (gpiomtd->io_sync) {
 		/*
-		 * Linux memory barriers don't cater for what's required here.
+		 * freax memory barriers don't cater for what's required here.
 		 * What's required is what's here - a read from a separate
 		 * region with a dependency on that read.
 		 */

@@ -33,7 +33,7 @@
 #ifndef __MLX5E_EN_PORT_H
 #define __MLX5E_EN_PORT_H
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 #include "en.h"
 
 void mlx5_port_query_eth_autoneg(struct mlx5_core_dev *dev, u8 *an_status,

@@ -42,22 +42,22 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * AMD PCIe NTB Linux driver
+ * AMD PCIe NTB freax driver
  *
  * Contact Information:
  * Xiangliang Yu <Xiangliang.Yu@amd.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/ntb.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/pci.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/ntb.h>
 
 #include "ntb_hw_amd.h"
 

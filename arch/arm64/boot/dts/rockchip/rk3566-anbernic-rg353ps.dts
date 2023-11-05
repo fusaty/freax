@@ -3,7 +3,7 @@
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/pinctrl/rockchip.h>
 #include "rk3566-anbernic-rg353x.dtsi"
 
@@ -80,13 +80,13 @@
 	button-r1 {
 		gpios = <&gpio3 RK_PB4 GPIO_ACTIVE_LOW>;
 		label = "TR";
-		linux,code = <BTN_TR>;
+		freax,code = <BTN_TR>;
 	};
 
 	button-r2 {
 		gpios = <&gpio3 RK_PB3 GPIO_ACTIVE_LOW>;
 		label = "TR2";
-		linux,code = <BTN_TR2>;
+		freax,code = <BTN_TR2>;
 	};
 };
 

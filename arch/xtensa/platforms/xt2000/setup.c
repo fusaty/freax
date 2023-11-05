@@ -9,21 +9,21 @@
  *
  * Copyright 2001 - 2004 Tensilica Inc.
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/stringify.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/timer.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/reboot.h>
+#include <freax/kdev_t.h>
+#include <freax/types.h>
+#include <freax/major.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/stringify.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/timer.h>
 
 #include <asm/processor.h>
 #include <asm/platform.h>
@@ -66,7 +66,7 @@ static struct notifier_block xt2000_restart_block = {
 
 void __init platform_setup(char** cmdline)
 {
-	led_print (0, "LINUX   ");
+	led_print (0, "freax   ");
 }
 
 /* Heartbeat. Let the LED blink. */

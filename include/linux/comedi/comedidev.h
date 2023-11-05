@@ -3,19 +3,19 @@
  * comedidev.h
  * header file for kernel-only structures, variables, and constants
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDIDEV_H
 #define _COMEDIDEV_H
 
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/rwsem.h>
-#include <linux/kref.h>
-#include <linux/comedi.h>
+#include <freax/dma-mapping.h>
+#include <freax/mutex.h>
+#include <freax/spinlock_types.h>
+#include <freax/rwsem.h>
+#include <freax/kref.h>
+#include <freax/comedi.h>
 
 #define COMEDI_VERSION(a, b, c) (((a) << 16) + ((b) << 8) + (c))
 #define COMEDI_VERSION_CODE COMEDI_VERSION(COMEDI_MAJORVERSION, \

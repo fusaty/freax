@@ -21,19 +21,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/mii.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
+#include <freax/mii.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 #include <asm/irq.h>
 
 #define PHY_MAX_ADDR		32
@@ -233,7 +233,7 @@ enum _DescStatusBit {
 	RxSizeMask	= 0x0000ffff
 	/*
 	 * The asic could apparently do vlan, TSO, jumbo (sis191 only) and
-	 * provide two (unused with Linux) Tx queues. No publicly
+	 * provide two (unused with freax) Tx queues. No publicly
 	 * available documentation alas.
 	 */
 };

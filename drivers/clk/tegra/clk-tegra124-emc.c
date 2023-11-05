@@ -8,19 +8,19 @@
  *	Mikko Perttunen <mperttunen@nvidia.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk/tegra.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
-#include <linux/string.h>
+#include <freax/clk-provider.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk/tegra.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/sort.h>
+#include <freax/string.h>
 
 #include <soc/tegra/fuse.h>
 

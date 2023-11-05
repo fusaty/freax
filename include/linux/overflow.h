@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 OR MIT */
-#ifndef __LINUX_OVERFLOW_H
-#define __LINUX_OVERFLOW_H
+#ifndef __freax_OVERFLOW_H
+#define __freax_OVERFLOW_H
 
-#include <linux/compiler.h>
-#include <linux/limits.h>
-#include <linux/const.h>
+#include <freax/compiler.h>
+#include <freax/limits.h>
+#include <freax/const.h>
 
 /*
  * We need to compute the minimum and maximum values representable in a given
@@ -344,4 +344,4 @@ static inline size_t __must_check size_sub(size_t minuend, size_t subtrahend)
 #define DEFINE_FLEX(type, name, member, count)			\
 	_DEFINE_FLEX(type, name, member, count, = {})
 
-#endif /* __LINUX_OVERFLOW_H */
+#endif /* __freax_OVERFLOW_H */

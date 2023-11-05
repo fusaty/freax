@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  freax MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2009-2013  LSI Corporation
  *  Copyright (c) 2013-2016  Avago Technologies
@@ -15,25 +15,25 @@
  *           Kashyap Desai <kashyap.desai@broadcom.com>
  *           Sumit Saxena <sumit.saxena@broadcom.com>
  *
- *  Send feedback to: megaraidlinux.pdl@broadcom.com
+ *  Send feedback to: megaraidfreax.pdl@broadcom.com
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/poll.h>
-#include <linux/irq_poll.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/list.h>
+#include <freax/moduleparam.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
+#include <freax/fs.h>
+#include <freax/compat.h>
+#include <freax/blkdev.h>
+#include <freax/poll.h>
+#include <freax/irq_poll.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

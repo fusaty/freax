@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Huawei HiNIC PCI Express Linux driver
+ * Huawei HiNIC PCI Express freax driver
  * Copyright(c) 2017 Huawei Technologies Co., Ltd
  */
 
 #ifndef HINIC_HW_QP_H
 #define HINIC_HW_QP_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/sizes.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
 
 #include "hinic_common.h"
 #include "hinic_hw_if.h"

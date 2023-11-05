@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <asm/mach/arch.h>
 
 #include "vexpress.h"

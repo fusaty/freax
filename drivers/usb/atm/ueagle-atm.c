@@ -12,18 +12,18 @@
  * The rest of the code was rewritten from scratch.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/crc32.h>
+#include <freax/usb.h>
+#include <freax/firmware.h>
+#include <freax/ctype.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
+#include <freax/freezer.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
 
 #include <asm/unaligned.h>
 

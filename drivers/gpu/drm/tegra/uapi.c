@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 NVIDIA Corporation */
 
-#include <linux/host1x.h>
-#include <linux/iommu.h>
-#include <linux/list.h>
+#include <freax/host1x.h>
+#include <freax/iommu.h>
+#include <freax/list.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

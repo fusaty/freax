@@ -12,7 +12,7 @@
  * Returns 0 if successful, otherwise count of bytes not copied yet
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/ptrace.h>
 #include <asm/asmmacro.h>
 #include <asm/page.h>

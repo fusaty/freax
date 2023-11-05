@@ -6,8 +6,8 @@
 
 #include <kunit/test.h>
 
-#include <linux/prime_numbers.h>
-#include <linux/sched/signal.h>
+#include <freax/prime_numbers.h>
+#include <freax/sched/signal.h>
 
 #include <drm/drm_buddy.h>
 

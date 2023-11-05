@@ -4,13 +4,13 @@
  * Copyright (C) 2009 Konrad Eisele (konrad@gaisler.com) Aeroflex Gaisler AB
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/interrupt.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
 
 #include <asm/oplib.h>
 #include <asm/timer.h>
@@ -406,7 +406,7 @@ retry:
 	 * we assume that all CPUs (in SMP system) is routed to the
 	 * same IRQ Controller, and for non-SMP only one IRQCTRL is
 	 * accessed anyway.
-	 * In AMP systems, Linux must run on CPU0 for the time being.
+	 * In AMP systems, freax must run on CPU0 for the time being.
 	 */
 	icsel = LEON3_BYPASS_LOAD_PA(&leon3_irqctrl_regs->icsel[boot_cpu_id/8]);
 	icsel = (icsel >> ((7 - (boot_cpu_id&0x7)) * 4)) & 0xf;

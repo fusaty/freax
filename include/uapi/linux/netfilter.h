@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_NETFILTER_H
-#define _UAPI__LINUX_NETFILTER_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_NETFILTER_H
+#define _UAPI__freax_NETFILTER_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 /* Responses from hook functions. */
 #define NF_DROP 0
@@ -77,4 +77,4 @@ union nf_inet_addr {
 	struct in6_addr	in6;
 };
 
-#endif /* _UAPI__LINUX_NETFILTER_H */
+#endif /* _UAPI__freax_NETFILTER_H */

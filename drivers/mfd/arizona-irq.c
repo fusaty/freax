@@ -7,19 +7,19 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
+#include <freax/mfd/arizona/core.h>
+#include <freax/mfd/arizona/registers.h>
 
 #include "arizona.h"
 

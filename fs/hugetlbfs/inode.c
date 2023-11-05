@@ -9,35 +9,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/thread_info.h>
+#include <freax/thread_info.h>
 #include <asm/current.h>
-#include <linux/falloc.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/backing-dev.h>
-#include <linux/hugetlb.h>
-#include <linux/pagevec.h>
-#include <linux/fs_parser.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/dnotify.h>
-#include <linux/statfs.h>
-#include <linux/security.h>
-#include <linux/magic.h>
-#include <linux/migrate.h>
-#include <linux/uio.h>
+#include <freax/falloc.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/file.h>
+#include <freax/kernel.h>
+#include <freax/writeback.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/capability.h>
+#include <freax/ctype.h>
+#include <freax/backing-dev.h>
+#include <freax/hugetlb.h>
+#include <freax/pagevec.h>
+#include <freax/fs_parser.h>
+#include <freax/mman.h>
+#include <freax/slab.h>
+#include <freax/dnotify.h>
+#include <freax/statfs.h>
+#include <freax/security.h>
+#include <freax/magic.h>
+#include <freax/migrate.h>
+#include <freax/uio.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <freax/uaccess.h>
+#include <freax/sched/mm.h>
 
 static const struct address_space_operations hugetlbfs_aops;
 const struct file_operations hugetlbfs_file_operations;

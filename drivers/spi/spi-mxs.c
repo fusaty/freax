@@ -18,26 +18,26 @@
 // Based on spi-stmp.c, which is:
 // Author: Dmitry Pervushin <dimka@embeddedalley.com>
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mxs-spi.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/highmem.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/completion.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/stmp_device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/mxs-spi.h>
 #include <trace/events/spi.h>
 
 #define DRIVER_NAME		"mxs-spi"

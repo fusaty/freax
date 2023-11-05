@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/netfs.h>
-#include <linux/fscache.h>
+#include <freax/netfs.h>
+#include <freax/fscache.h>
 #include <trace/events/netfs.h>
 
 #ifdef pr_fmt

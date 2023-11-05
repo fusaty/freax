@@ -34,13 +34,13 @@
  * DO NOT change the weight after calling update.
  */
 
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/limits.h>
-#include <linux/math.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/limits.h>
+#include <freax/math.h>
+#include <freax/math64.h>
+#include <freax/module.h>
 
 #include "mean_and_variance.h"
 

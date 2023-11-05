@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Written for linux by Johan Myreen as a translation from
+ * Written for freax by Johan Myreen as a translation from
  * the assembly version by Linus (with diacriticals added)
  *
  * Some additional features added by Christoph Niemann (ChN), March 1993
@@ -25,27 +25,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/consolemap.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/kbd_diacr.h>
-#include <linux/kbd_kern.h>
-#include <linux/leds.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tty_flip.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <linux/vt_kern.h>
+#include <freax/consolemap.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/jiffies.h>
+#include <freax/kbd_diacr.h>
+#include <freax/kbd_kern.h>
+#include <freax/leds.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/nospec.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tty_flip.h>
+#include <freax/tty.h>
+#include <freax/uaccess.h>
+#include <freax/vt_kern.h>
 
 #include <asm/irq_regs.h>
 

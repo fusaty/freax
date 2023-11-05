@@ -11,7 +11,7 @@
 #include "net_driver.h"
 #include "ef100_nic.h"
 #include "efx_devlink.h"
-#include <linux/rtc.h>
+#include <freax/rtc.h>
 #include "mcdi.h"
 #include "mcdi_functions.h"
 #include "mcdi_pcol.h"

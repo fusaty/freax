@@ -37,18 +37,18 @@
  * the PCI back-end driver in Hyper-V.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/delay.h>
-#include <linux/semaphore.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/hyperv.h>
-#include <linux/refcount.h>
-#include <linux/irqdomain.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pci-ecam.h>
+#include <freax/delay.h>
+#include <freax/semaphore.h>
+#include <freax/irq.h>
+#include <freax/msi.h>
+#include <freax/hyperv.h>
+#include <freax/refcount.h>
+#include <freax/irqdomain.h>
+#include <freax/acpi.h>
 #include <asm/mshyperv.h>
 
 /*
@@ -998,8 +998,8 @@ static int wait_for_response(struct hv_device *hdev,
 }
 
 /**
- * devfn_to_wslot() - Convert from Linux PCI slot to Windows
- * @devfn:	The Linux representation of PCI slot
+ * devfn_to_wslot() - Convert from freax PCI slot to Windows
+ * @devfn:	The freax representation of PCI slot
  *
  * Windows uses a slightly different representation of PCI slot.
  *
@@ -1017,12 +1017,12 @@ static u32 devfn_to_wslot(int devfn)
 }
 
 /**
- * wslot_to_devfn() - Convert from Windows PCI slot to Linux
+ * wslot_to_devfn() - Convert from Windows PCI slot to freax
  * @wslot:	The Windows representation of PCI slot
  *
  * Windows uses a slightly different representation of PCI slot.
  *
- * Return: The Linux representation
+ * Return: The freax representation
  */
 static int wslot_to_devfn(u32 wslot)
 {
@@ -2555,7 +2555,7 @@ static struct hv_pci_dev *get_pcichild_wslot(struct hv_pcibus_device *hbus,
  *
  * "Bus Relations" is the Windows term for "children of this
  * bus."  The terminology is preserved here for people trying to
- * debug the interaction between Hyper-V and Linux.  This
+ * debug the interaction between Hyper-V and freax.  This
  * function is called when the parent partition reports a list
  * of functions that should be observed under this PCI Express
  * port (bus).
@@ -3091,7 +3091,7 @@ static void hv_pci_onchannelcallback(void *context)
  * This driver is intended to support running on Windows 10
  * (server) and later versions. It will not run on earlier
  * versions, as they assume that many of the operations which
- * Linux needs accomplished with a spinlock held were done via
+ * freax needs accomplished with a spinlock held were done via
  * asynchronous messaging via VMBus.  Windows 10 increases the
  * surface area of PCI emulation so that these actions can take
  * place by suspending a virtual processor for their duration.
@@ -3464,7 +3464,7 @@ static int hv_pci_query_relations(struct hv_device *hdev)
  * which is to say, the values which should be used by the
  * hardware, when it delivers an interrupt.  (MMIO resources are
  * used in local terms.)  This is nice for Windows, and lines up
- * with the FDO/PDO split, which doesn't exist in Linux.  Linux
+ * with the FDO/PDO split, which doesn't exist in freax.  freax
  * is deeply expecting to scan an emulated PCI configuration
  * space.  So this message is sent here only to drive the state
  * machine on the host forward.

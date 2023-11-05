@@ -56,7 +56,7 @@ PHDRS
 
 VERSION
 {
-	LINUX_5.10 {
+	freax_5.10 {
 	global:
 		__vdso_getcpu;
 		__vdso_clock_getres;

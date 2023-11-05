@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
+#include <freax/etherdevice.h>
+#include <freax/mlx5/driver.h>
 
 #include "mlx5_core.h"
 #include "lib/mlx5.h"

@@ -32,16 +32,16 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/serial_core.h>
-#include <linux/delay.h>
-#include <linux/major.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/serial_core.h>
+#include <freax/delay.h>
+#include <freax/major.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>

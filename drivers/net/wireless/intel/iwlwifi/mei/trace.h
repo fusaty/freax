@@ -13,7 +13,7 @@
 #if !defined(__IWLWIFI_DEVICE_TRACE_IWLWIFI_SAP_CMD) || defined(TRACE_HEADER_MULTI_READ)
 #define __IWLWIFI_DEVICE_TRACE_IWLWIFI_SAP_CMD
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM iwlmei_sap_cmd

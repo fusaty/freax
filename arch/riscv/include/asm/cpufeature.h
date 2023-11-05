@@ -6,7 +6,7 @@
 #ifndef _ASM_CPUFEATURE_H
 #define _ASM_CPUFEATURE_H
 
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 #include <asm/hwcap.h>
 
 /*

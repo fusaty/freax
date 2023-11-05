@@ -6,11 +6,11 @@
 #ifndef __MAC_H
 #define __MAC_H
 
-#include <linux/device.h>
-#include <linux/if_ether.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
-#include <linux/list.h>
+#include <freax/device.h>
+#include <freax/if_ether.h>
+#include <freax/phy.h>
+#include <freax/phylink.h>
+#include <freax/list.h>
 
 #include "fman_port.h"
 #include "fman.h"

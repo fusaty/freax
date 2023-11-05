@@ -5,30 +5,30 @@
  * Userspace programs can register with the driver to mirror their own address
  * space and can use the device to read/write any valid virtual address.
  */
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/memremap.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/pagemap.h>
-#include <linux/hmm.h>
-#include <linux/vmalloc.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/sched/mm.h>
-#include <linux/platform_device.h>
-#include <linux/rmap.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/memremap.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/delay.h>
+#include <freax/pagemap.h>
+#include <freax/hmm.h>
+#include <freax/vmalloc.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/sched/mm.h>
+#include <freax/platform_device.h>
+#include <freax/rmap.h>
+#include <freax/mmu_notifier.h>
+#include <freax/migrate.h>
 
 #include "test_hmm_uapi.h"
 

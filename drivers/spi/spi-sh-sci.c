@@ -9,14 +9,14 @@
  *   Copyright (c) 2006 Simtec Electronics
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/module.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
+#include <freax/module.h>
 
 #include <asm/spi.h>
 #include <asm/io.h>

@@ -8,16 +8,16 @@
  * Copyright (c) 2019 NXP Semiconductor
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/minmax.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>

@@ -9,7 +9,7 @@
  * Documentation/arch/arm/vlocks.rst.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include "vlock.h"
 
 .arch armv7-a

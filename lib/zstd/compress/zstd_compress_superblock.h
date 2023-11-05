@@ -15,7 +15,7 @@
 *  Dependencies
 ***************************************/
 
-#include <linux/zstd.h> /* ZSTD_CCtx */
+#include <freax/zstd.h> /* ZSTD_CCtx */
 
 /*-*************************************
 *  Target Compressed Block Size

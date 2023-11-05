@@ -3,17 +3,17 @@
  * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/amba/bus.h>
-#include <linux/bitmap.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/amba/bus.h>
+#include <freax/bitmap.h>
+#include <freax/coresight.h>
+#include <freax/coresight-pmu.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include "coresight-priv.h"
 #include "coresight-tpdm.h"

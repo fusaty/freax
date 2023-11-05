@@ -5,22 +5,22 @@
  * Copyright (c) 2010, NVIDIA Corporation.
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/devm-helpers.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/power/sbs-battery.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/devm-helpers.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/of.h>
+#include <freax/power/sbs-battery.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
 
 enum {
 	REG_MANUFACTURER_DATA,

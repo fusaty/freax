@@ -3,24 +3,24 @@
  * Copyright (C) 2004, 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/file.h>
-#include <linux/kthread.h>
-#include <linux/configfs.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
-#include <linux/time.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/ktime.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/file.h>
+#include <freax/kthread.h>
+#include <freax/configfs.h>
+#include <freax/random.h>
+#include <freax/crc32.h>
+#include <freax/time.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
+#include <freax/bitmap.h>
+#include <freax/ktime.h>
 #include "heartbeat.h"
 #include "tcp.h"
 #include "nodemanager.h"

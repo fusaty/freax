@@ -3,7 +3,7 @@
 #ifndef BTRFS_SUBPAGE_H
 #define BTRFS_SUBPAGE_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 /*
  * Extra info for subpapge bitmap.

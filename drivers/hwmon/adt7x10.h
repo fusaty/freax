@@ -2,8 +2,8 @@
 #ifndef __HWMON_ADT7X10_H__
 #define __HWMON_ADT7X10_H__
 
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <freax/types.h>
+#include <freax/pm.h>
 
 /* ADT7410 registers definition */
 #define ADT7X10_TEMPERATURE		0

@@ -10,7 +10,7 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "rtrs-srv.h"
 #include "rtrs-log.h"

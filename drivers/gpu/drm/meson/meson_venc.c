@@ -5,9 +5,9 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/export.h>
-#include <linux/iopoll.h>
+#include <freax/bitfield.h>
+#include <freax/export.h>
+#include <freax/iopoll.h>
 
 #include <drm/drm_modes.h>
 

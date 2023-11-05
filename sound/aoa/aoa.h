@@ -7,7 +7,7 @@
 
 #ifndef __AOA_H
 #define __AOA_H
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/asound.h>
 #include <sound/control.h>

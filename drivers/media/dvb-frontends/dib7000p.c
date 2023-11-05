@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux-DVB Driver for DiBcom's second generation DiB7000P (PC).
+ * freax-DVB Driver for DiBcom's second generation DiB7000P (PC).
  *
  * Copyright (C) 2005-7 DiBcom (http://www.dibcom.fr/)
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 #include <asm/div64.h>
 
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include <media/dvb_frontend.h>
 
 #include "dib7000p.h"

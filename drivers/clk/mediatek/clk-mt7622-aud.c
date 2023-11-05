@@ -5,11 +5,11 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

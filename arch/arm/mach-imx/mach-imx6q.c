@@ -4,15 +4,15 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/irqchip.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
-#include <linux/micrel_phy.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/clk.h>
+#include <freax/irqchip.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/phy.h>
+#include <freax/regmap.h>
+#include <freax/micrel_phy.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 

@@ -3,19 +3,19 @@
  * Copyright (C) 2021-2023 Intel Corporation
  */
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/rcupdate.h>
-#include <linux/debugfs.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/ieee80211.h>
+#include <freax/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mei_cl_bus.h>
+#include <freax/rcupdate.h>
+#include <freax/debugfs.h>
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include <net/cfg80211.h>
 

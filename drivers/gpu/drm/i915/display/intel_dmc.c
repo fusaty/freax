@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

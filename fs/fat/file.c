@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/fat/file.c
+ *  freax/fs/fat/file.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
  *  regular file handling primitives for fat-based filesystems
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/falloc.h>
+#include <freax/capability.h>
+#include <freax/module.h>
+#include <freax/compat.h>
+#include <freax/mount.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/fsnotify.h>
+#include <freax/security.h>
+#include <freax/falloc.h>
 #include "fat.h"
 
 static long fat_fallocate(struct file *file, int mode,
@@ -80,7 +80,7 @@ static int fat_ioctl_set_attributes(struct file *file, u32 __user *user_attr)
 
 	if (sbi->options.sys_immutable &&
 	    ((attr | oldattr) & ATTR_SYS) &&
-	    !capable(CAP_LINUX_IMMUTABLE)) {
+	    !capable(CAP_freax_IMMUTABLE)) {
 		err = -EPERM;
 		goto out_unlock_inode;
 	}

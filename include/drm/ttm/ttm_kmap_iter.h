@@ -5,7 +5,7 @@
 #ifndef __TTM_KMAP_ITER_H__
 #define __TTM_KMAP_ITER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct ttm_kmap_iter;
 struct iosys_map;

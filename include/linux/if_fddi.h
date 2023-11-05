@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -17,11 +17,11 @@
  *			Steve Whitehouse, <gw7rrm@eeshack3.swan.ac.uk>
  *			Peter De Schrijver, <stud11@cc4.kuleuven.ac.be>
  */
-#ifndef _LINUX_IF_FDDI_H
-#define _LINUX_IF_FDDI_H
+#ifndef _freax_IF_FDDI_H
+#define _freax_IF_FDDI_H
 
-#include <linux/netdevice.h>
-#include <uapi/linux/if_fddi.h>
+#include <freax/netdevice.h>
+#include <uapi/freax/if_fddi.h>
 
 /* Define FDDI statistics structure */
 struct fddi_statistics {
@@ -114,4 +114,4 @@ struct fddi_statistics {
 	__u32	port_ler_flag[2];
 	__u32	port_hardware_present[2];
 };
-#endif	/* _LINUX_IF_FDDI_H */
+#endif	/* _freax_IF_FDDI_H */

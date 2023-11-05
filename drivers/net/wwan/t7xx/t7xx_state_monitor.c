@@ -7,30 +7,30 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/iopoll.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include "t7xx_hif_cldma.h"
 #include "t7xx_mhccif.h"
@@ -333,7 +333,7 @@ static void fsm_routine_start(struct t7xx_fsm_ctl *ctl, struct t7xx_fsm_command 
 	t7xx_md_event_notify(md, FSM_PRE_START);
 
 	ret = read_poll_timeout(ioread32, dev_status,
-				(dev_status & MISC_STAGE_MASK) == LINUX_STAGE, 20000, 2000000,
+				(dev_status & MISC_STAGE_MASK) == freax_STAGE, 20000, 2000000,
 				false, IREG_BASE(md->t7xx_dev) + T7XX_PCIE_MISC_DEV_STATUS);
 	if (ret) {
 		struct device *dev = &md->t7xx_dev->pdev->dev;

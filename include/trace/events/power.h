@@ -5,11 +5,11 @@
 #if !defined(_TRACE_POWER_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_POWER_H
 
-#include <linux/cpufreq.h>
-#include <linux/ktime.h>
-#include <linux/pm_qos.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_events.h>
+#include <freax/cpufreq.h>
+#include <freax/ktime.h>
+#include <freax/pm_qos.h>
+#include <freax/tracepoint.h>
+#include <freax/trace_events.h>
 
 #define TPS(x)  tracepoint_string(x)
 

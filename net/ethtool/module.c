@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 #include "netlink.h"
 #include "common.h"

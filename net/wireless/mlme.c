@@ -7,13 +7,13 @@
  * Copyright (C) 2019-2020, 2022-2023 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/nl80211.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/nl80211.h>
+#include <freax/slab.h>
+#include <freax/wireless.h>
 #include <net/cfg80211.h>
 #include <net/iw_handler.h>
 #include "core.h"

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The freax Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
 
 #include "core.h"
 #include "hfi.h"

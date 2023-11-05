@@ -8,33 +8,33 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/minmax.h>
-#include <linux/netdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/list.h>
+#include <freax/minmax.h>
+#include <freax/netdevice.h>
+#include <freax/pm_runtime.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include "t7xx_dpmaif.h"
 #include "t7xx_hif_dpmaif.h"

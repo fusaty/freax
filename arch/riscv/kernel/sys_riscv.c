@@ -5,7 +5,7 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/syscalls.h>
+#include <freax/syscalls.h>
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>
 #include <asm/hwprobe.h>
@@ -54,7 +54,7 @@ SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
 /*
  * Allows the instruction cache to be flushed from userspace.  Despite RISC-V
  * having a direct 'fence.i' instruction available to userspace (which we
- * can't trap!), that's not actually viable when running on Linux because the
+ * can't trap!), that's not actually viable when running on freax because the
  * kernel might schedule a process on another hart.  There is no way for
  * userspace to handle this without invoking the kernel (as it doesn't know the
  * thread->hart mappings), so we've defined a RISC-V specific system call to

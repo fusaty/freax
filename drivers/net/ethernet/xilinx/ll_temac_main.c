@@ -27,32 +27,32 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>      /* needed for sizeof(tcphdr) */
-#include <linux/udp.h>      /* needed for sizeof(udphdr) */
-#include <linux/phy.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/dma-mapping.h>
-#include <linux/processor.h>
-#include <linux/platform_data/xilinx-ll-temac.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/tcp.h>      /* needed for sizeof(tcphdr) */
+#include <freax/udp.h>      /* needed for sizeof(udphdr) */
+#include <freax/phy.h>
+#include <freax/in.h>
+#include <freax/io.h>
+#include <freax/ip.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/dma-mapping.h>
+#include <freax/processor.h>
+#include <freax/platform_data/xilinx-ll-temac.h>
 
 #include "ll_temac.h"
 

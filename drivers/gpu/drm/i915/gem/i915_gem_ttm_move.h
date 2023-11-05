@@ -5,7 +5,7 @@
 #ifndef _I915_GEM_TTM_MOVE_H_
 #define _I915_GEM_TTM_MOVE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "i915_selftest.h"
 

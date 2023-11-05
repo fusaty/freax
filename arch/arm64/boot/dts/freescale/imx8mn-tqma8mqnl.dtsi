@@ -36,14 +36,14 @@
 		ranges;
 
 		/* global autoconfigured region for contiguous allocations */
-		linux,cma {
+		freax,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			/* 640 MiB */
 			size = <0 0x28000000>;
 			/*  1024 - 128 MiB, our minimum RAM config will be 1024 MiB */
 			alloc-ranges = <0 0x40000000 0 0x78000000>;
-			linux,cma-default;
+			freax,cma-default;
 		};
 	};
 };

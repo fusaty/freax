@@ -183,25 +183,25 @@
 #define pr_fmt(fmt) "%s() " fmt "\n", __func__
 #endif
 
-#include <linux/backing-dev-defs.h>
-#include <linux/bug.h>
-#include <linux/bio.h>
-#include <linux/closure.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/math64.h>
-#include <linux/mutex.h>
-#include <linux/percpu-refcount.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/rhashtable.h>
-#include <linux/rwsem.h>
-#include <linux/semaphore.h>
-#include <linux/seqlock.h>
-#include <linux/shrinker.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/zstd.h>
+#include <freax/backing-dev-defs.h>
+#include <freax/bug.h>
+#include <freax/bio.h>
+#include <freax/closure.h>
+#include <freax/kobject.h>
+#include <freax/list.h>
+#include <freax/math64.h>
+#include <freax/mutex.h>
+#include <freax/percpu-refcount.h>
+#include <freax/percpu-rwsem.h>
+#include <freax/rhashtable.h>
+#include <freax/rwsem.h>
+#include <freax/semaphore.h>
+#include <freax/seqlock.h>
+#include <freax/shrinker.h>
+#include <freax/srcu.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/zstd.h>
 
 #include "bcachefs_format.h"
 #include "errcode.h"

@@ -21,7 +21,7 @@
 /* Prevent recursion */
 #undef CREATE_CUSTOM_TRACE_EVENTS
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #undef TRACE_CUSTOM_EVENT
 #define TRACE_CUSTOM_EVENT(name, proto, args, tstruct, assign, print)

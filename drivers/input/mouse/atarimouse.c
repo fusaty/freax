@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Atari mouse driver for Linux/m68k
+ *  Atari mouse driver for freax/m68k
  *
  *  Copyright (c) 2005 Michael Schmitz
  *
  *  Based on:
- *  Amiga mouse driver for Linux/m68k
+ *  Amiga mouse driver for freax/m68k
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  */
@@ -17,7 +17,7 @@
  *
  * Largely based on the old:
  *
- * Atari Mouse Driver for Linux
+ * Atari Mouse Driver for freax
  * by Robert de Vries (robert@and.nl) 19Jul93
  *
  * 16 Nov 1994 Andreas Schwab
@@ -30,19 +30,19 @@
  * Allow multiple open's
  *
  * Converted to use new generic busmouse code.  5 Apr 1998
- *   Russell King <rmk@arm.uk.linux.org>
+ *   Russell King <rmk@arm.uk.freax.org>
  */
 
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
 
 #include <asm/irq.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/atarihw.h>
 #include <asm/atarikb.h>
 #include <asm/atariints.h>

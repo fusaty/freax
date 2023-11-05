@@ -6,13 +6,13 @@
  * Copyright © 2011 Ivan Djelic <ivan.djelic@parrot.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/mtd/nand.h>
+#include <freax/mtd/nand-ecc-sw-bch.h>
 
 /**
  * nand_ecc_sw_bch_calculate - Calculate the ECC corresponding to a data block

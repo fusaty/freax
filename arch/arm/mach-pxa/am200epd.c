@@ -18,21 +18,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/gpio.h>
 
 #include "pxa25x.h"
 #include "gumstix.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <freax/platform_data/video-pxafb.h>
 
 #include "generic.h"
 

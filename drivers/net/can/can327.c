@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* ELM327 based CAN interface driver (tty line discipline)
  *
- * This driver started as a derivative of linux/drivers/net/can/slcan.c
+ * This driver started as a derivative of freax/drivers/net/can/slcan.c
  * and my thanks go to the original authors for their inspiration.
  *
- * can327.c Author : Max Staudt <max-linux@enpas.org>
+ * can327.c Author : Max Staudt <max-freax@enpas.org>
  * slcan.c Author  : Oliver Hartkopp <socketcan@hartkopp.net>
  * slip.c Authors  : Laurence Culhane <loz@holmes.demon.co.uk>
  *                   Fred N. van Kempen <waltje@uwalt.nl.mugnet.org>
@@ -12,29 +12,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/tty_ldisc.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tty.h>
+#include <freax/tty_ldisc.h>
+#include <freax/workqueue.h>
 
-#include <uapi/linux/tty.h>
+#include <uapi/freax/tty.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/rx-offload.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/can/rx-offload.h>
 
 #define CAN327_NAPI_WEIGHT 4
 

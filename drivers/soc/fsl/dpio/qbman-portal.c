@@ -6,9 +6,9 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <soc/fsl/dpaa2-global.h>
 
 #include "qbman-portal.h"

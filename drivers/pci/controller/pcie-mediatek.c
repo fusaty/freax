@@ -7,25 +7,25 @@
  *	   Honghui Zhang <honghui.zhang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/msi.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/msi.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 
 #include "../pci.h"
 

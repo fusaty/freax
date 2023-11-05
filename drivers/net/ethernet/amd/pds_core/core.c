@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2023 Advanced Micro Devices, Inc */
 
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
 
 #include "core.h"
 

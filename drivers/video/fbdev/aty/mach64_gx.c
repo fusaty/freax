@@ -4,8 +4,8 @@
  *  ATI Mach64 GX Support
  */
 
-#include <linux/delay.h>
-#include <linux/fb.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
 
 #include <asm/io.h>
 

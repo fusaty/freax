@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) Meta Platforms, Inc. and affiliates. */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "bpf_tracing_net.h"
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_helpers.h>

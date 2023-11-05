@@ -10,7 +10,7 @@
 #ifndef __KVM_VCPU_RISCV_VECTOR_H
 #define __KVM_VCPU_RISCV_VECTOR_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_RISCV_ISA_V
 #include <asm/vector.h>

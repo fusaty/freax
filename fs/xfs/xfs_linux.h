@@ -3,11 +3,11 @@
  * Copyright (c) 2000-2005 Silicon Graphics, Inc.
  * All Rights Reserved.
  */
-#ifndef __XFS_LINUX__
-#define __XFS_LINUX__
+#ifndef __XFS_freax__
+#define __XFS_freax__
 
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
 
 /*
  * Kernel specific type declarations for XFS
@@ -24,51 +24,51 @@ typedef __u32			xfs_nlink_t;
 #include "kmem.h"
 #include "mrlock.h"
 
-#include <linux/semaphore.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/crc32c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/file.h>
-#include <linux/filelock.h>
-#include <linux/swap.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/bitops.h>
-#include <linux/major.h>
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/sort.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/ctype.h>
-#include <linux/writeback.h>
-#include <linux/capability.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/list_sort.h>
-#include <linux/ratelimit.h>
-#include <linux/rhashtable.h>
-#include <linux/xattr.h>
-#include <linux/mnt_idmapping.h>
-#include <linux/debugfs.h>
+#include <freax/semaphore.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/crc32c.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/file.h>
+#include <freax/filelock.h>
+#include <freax/swap.h>
+#include <freax/errno.h>
+#include <freax/sched/signal.h>
+#include <freax/bitops.h>
+#include <freax/major.h>
+#include <freax/pagemap.h>
+#include <freax/vfs.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/proc_fs.h>
+#include <freax/sort.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/delay.h>
+#include <freax/log2.h>
+#include <freax/spinlock.h>
+#include <freax/random.h>
+#include <freax/ctype.h>
+#include <freax/writeback.h>
+#include <freax/capability.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/list_sort.h>
+#include <freax/ratelimit.h>
+#include <freax/rhashtable.h>
+#include <freax/xattr.h>
+#include <freax/mnt_idmapping.h>
+#include <freax/debugfs.h>
 
 #include <asm/page.h>
 #include <asm/div64.h>
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 
@@ -162,12 +162,12 @@ struct xstats {
 
 extern struct xstats xfsstats;
 
-static inline dev_t xfs_to_linux_dev_t(xfs_dev_t dev)
+static inline dev_t xfs_to_freax_dev_t(xfs_dev_t dev)
 {
 	return MKDEV(sysv_major(dev) & 0x1ff, sysv_minor(dev));
 }
 
-static inline xfs_dev_t linux_to_xfs_dev_t(dev_t dev)
+static inline xfs_dev_t freax_to_xfs_dev_t(dev_t dev)
 {
 	return sysv_encode_dev(dev);
 }
@@ -246,7 +246,7 @@ int xfs_rw_bdev(struct block_device *bdev, sector_t sector, unsigned int count,
 #endif
 
 /*
- * Starting in Linux 4.15, the %p (raw pointer value) printk modifier
+ * Starting in freax 4.15, the %p (raw pointer value) printk modifier
  * prints a hashed version of the pointer to avoid leaking kernel
  * pointers into dmesg.  If we're trying to debug the kernel we want the
  * raw values, so override this behavior as best we can.
@@ -257,4 +257,4 @@ int xfs_rw_bdev(struct block_device *bdev, sector_t sector, unsigned int count,
 # define PTR_FMT "%p"
 #endif
 
-#endif /* __XFS_LINUX__ */
+#endif /* __XFS_freax__ */

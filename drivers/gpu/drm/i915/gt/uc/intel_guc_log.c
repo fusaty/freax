@@ -3,8 +3,8 @@
  * Copyright © 2014-2019 Intel Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/string_helpers.h>
+#include <freax/debugfs.h>
+#include <freax/string_helpers.h>
 
 #include "gt/intel_gt.h"
 #include "i915_drv.h"

@@ -31,20 +31,20 @@
     System Programming Guide; Section 9.11. (1997 edition - PPro).
 */
 
-#include <linux/types.h> /* FIXME: kvm_para.h needs this */
+#include <freax/types.h> /* FIXME: kvm_para.h needs this */
 
-#include <linux/stop_machine.h>
-#include <linux/kvm_para.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/sort.h>
-#include <linux/cpu.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/syscore_ops.h>
-#include <linux/rcupdate.h>
+#include <freax/stop_machine.h>
+#include <freax/kvm_para.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/sort.h>
+#include <freax/cpu.h>
+#include <freax/pci.h>
+#include <freax/smp.h>
+#include <freax/syscore_ops.h>
+#include <freax/rcupdate.h>
 
 #include <asm/cacheinfo.h>
 #include <asm/cpufeature.h>

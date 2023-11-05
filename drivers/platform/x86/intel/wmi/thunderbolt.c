@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/wmi.h>
 
 #define INTEL_WMI_THUNDERBOLT_GUID "86CCFD48-205E-4A77-9C48-2021CBEDE341"
 

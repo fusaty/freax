@@ -13,9 +13,9 @@
 
 #include <asm/unaligned.h>
 #include <crypto/sha256_base.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
 
 static const u32 SHA256_K[] = {
 	0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5,

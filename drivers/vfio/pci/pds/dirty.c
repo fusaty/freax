@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2023 Advanced Micro Devices, Inc. */
 
-#include <linux/interval_tree.h>
-#include <linux/vfio.h>
+#include <freax/interval_tree.h>
+#include <freax/vfio.h>
 
-#include <linux/pds/pds_common.h>
-#include <linux/pds/pds_core_if.h>
-#include <linux/pds/pds_adminq.h>
+#include <freax/pds/pds_common.h>
+#include <freax/pds/pds_core_if.h>
+#include <freax/pds/pds_adminq.h>
 
 #include "vfio_dev.h"
 #include "cmds.h"

@@ -11,20 +11,20 @@
 
 #define pr_fmt(fmt) "bt1-ccu-pll: " fmt
 
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/limits.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/iopoll.h>
-#include <linux/time64.h>
-#include <linux/rational.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/limits.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/spinlock.h>
+#include <freax/regmap.h>
+#include <freax/iopoll.h>
+#include <freax/time64.h>
+#include <freax/rational.h>
+#include <freax/debugfs.h>
 
 #include "ccu-pll.h"
 

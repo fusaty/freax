@@ -6,11 +6,11 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/pnp.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/ad1816a.h>

@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
 
 #include "octep_config.h"
 #include "octep_main.h"

@@ -25,7 +25,7 @@
  *    Benjamin Defnet <benjamin.r.defnet@intel.com>
  *    Rajesh Poornachandran <rajesh.poornachandran@intel.com>
  * Massively reworked
- *    Alan Cox <alan@linux.intel.com>
+ *    Alan Cox <alan@freax.intel.com>
  */
 
 #include "gem.h"
@@ -34,8 +34,8 @@
 #include "psb_reg.h"
 #include "psb_intel_reg.h"
 #include "psb_irq.h"
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
+#include <freax/mutex.h>
+#include <freax/pm_runtime.h>
 
 /**
  *	gma_power_init		-	initialise power manager

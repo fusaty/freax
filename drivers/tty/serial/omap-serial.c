@@ -16,26 +16,26 @@
  * this driver as required for the omap-platform.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/serial-omap.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/serial_core.h>
+#include <freax/irq.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_data/serial-omap.h>
 
 #define OMAP_MAX_HSUART_PORTS	10
 

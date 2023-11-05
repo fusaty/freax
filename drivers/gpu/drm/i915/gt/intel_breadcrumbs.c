@@ -3,10 +3,10 @@
  * Copyright © 2015-2021 Intel Corporation
  */
 
-#include <linux/kthread.h>
-#include <linux/string_helpers.h>
+#include <freax/kthread.h>
+#include <freax/string_helpers.h>
 #include <trace/events/dma_fence.h>
-#include <uapi/linux/sched/types.h>
+#include <uapi/freax/sched/types.h>
 
 #include "i915_drv.h"
 #include "i915_trace.h"

@@ -5,16 +5,16 @@
  * Copyright (C) 2016 David Lechner <david@lechnology.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/mfd/da8xx-cfgchip.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_data/phy-da8xx-usb.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/mfd/da8xx-cfgchip.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_data/phy-da8xx-usb.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define PHY_INIT_BITS	(CFGCHIP2_SESENDEN | CFGCHIP2_VBDTCTEN)
 

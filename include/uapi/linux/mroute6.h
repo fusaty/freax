@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_MROUTE6_H
-#define _UAPI__LINUX_MROUTE6_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_MROUTE6_H
+#define _UAPI__freax_MROUTE6_H
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/in6.h>		/* For struct sockaddr_in6. */
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/sockios.h>
+#include <freax/in6.h>		/* For struct sockaddr_in6. */
 
 /*
  *	Based on the MROUTING 3.5 defines primarily to keep
@@ -154,4 +154,4 @@ enum {
 };
 #define IP6MRA_CREPORT_MAX (__IP6MRA_CREPORT_MAX - 1)
 
-#endif /* _UAPI__LINUX_MROUTE6_H */
+#endif /* _UAPI__freax_MROUTE6_H */

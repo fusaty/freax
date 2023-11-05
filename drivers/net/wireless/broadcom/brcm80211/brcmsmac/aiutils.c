@@ -18,7 +18,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include <defs.h>
 #include <chipcommon.h>

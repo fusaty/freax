@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
+#include <freax/err.h>
+#include <freax/highmem.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/sched.h>
 #include <asm/current.h>
 #include <asm/page.h>
 #include <kern_util.h>

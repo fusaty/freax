@@ -165,14 +165,14 @@
 
 		key-voldown {
 			label = "volume-down";
-			linux,code = <114>;
+			freax,code = <114>;
 			gpios = <&gpio2 7 0>;
 			debounce-interval = <20>;
 		};
 
 		key-volup {
 			label = "volume-up";
-			linux,code = <115>;
+			freax,code = <115>;
 			gpios = <&gpio2 8 0>;
 			debounce-interval = <20>;
 		};

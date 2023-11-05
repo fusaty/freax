@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
 #include <net/page_pool/helpers.h>
 #include <net/tso.h>
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #include "otx2_reg.h"
 #include "otx2_common.h"

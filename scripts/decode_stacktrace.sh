@@ -5,7 +5,7 @@
 
 usage() {
 	echo "Usage:"
-	echo "	$0 -r <release> | <vmlinux> [<base path>|auto] [<modules path>]"
+	echo "	$0 -r <release> | <vmfreax> [<base path>|auto] [<modules path>]"
 }
 
 # Try to find a Rust demangler
@@ -17,25 +17,25 @@ elif type c++filt >/dev/null 2>&1 ; then
 fi
 
 if [[ $1 == "-r" ]] ; then
-	vmlinux=""
+	vmfreax=""
 	basepath="auto"
 	modpath=""
 	release=$2
 
-	for fn in {,/usr/lib/debug}/boot/vmlinux-$release{,.debug} /lib/modules/$release{,/build}/vmlinux ; do
+	for fn in {,/usr/lib/debug}/boot/vmfreax-$release{,.debug} /lib/modules/$release{,/build}/vmfreax ; do
 		if [ -e "$fn" ] ; then
-			vmlinux=$fn
+			vmfreax=$fn
 			break
 		fi
 	done
 
-	if [[ $vmlinux == "" ]] ; then
-		echo "ERROR! vmlinux image for release $release is not found" >&2
+	if [[ $vmfreax == "" ]] ; then
+		echo "ERROR! vmfreax image for release $release is not found" >&2
 		usage
 		exit 2
 	fi
 else
-	vmlinux=$1
+	vmfreax=$1
 	basepath=${2-auto}
 	modpath=$3
 	release=""
@@ -46,8 +46,8 @@ else
 		debuginfod=${1-only}
 	fi
 
-	if [[ $vmlinux == "" && -z $debuginfod ]] ; then
-		echo "ERROR! vmlinux image must be specified" >&2
+	if [[ $vmfreax == "" && -z $debuginfod ]] ; then
+		echo "ERROR! vmfreax image must be specified" >&2
 		usage
 		exit 1
 	fi
@@ -67,7 +67,7 @@ find_module() {
 			debuginfod-find debuginfo $modbuildid && return
 		fi
 
-		# Only using debuginfod so don't try to find vmlinux module path
+		# Only using debuginfod so don't try to find vmfreax module path
 		if [[ $debuginfod == "only" ]] ; then
 			return
 		fi
@@ -83,11 +83,11 @@ find_module() {
 		return 1
 	fi
 
-	modpath=$(dirname "$vmlinux")
+	modpath=$(dirname "$vmfreax")
 	find_module && return
 
 	if [[ $release == "" ]] ; then
-		release=$(gdb -ex 'print init_uts_ns.name.release' -ex 'quit' -quiet -batch "$vmlinux" 2>/dev/null | sed -n 's/\$1 = "\(.*\)".*/\1/p')
+		release=$(gdb -ex 'print init_uts_ns.name.release' -ex 'quit' -quiet -batch "$vmfreax" 2>/dev/null | sed -n 's/\$1 = "\(.*\)".*/\1/p')
 	fi
 
 	for dn in {/usr/lib/debug,}/lib/modules/$release ; do
@@ -109,7 +109,7 @@ parse_symbol() {
 	#   do_basic_setup+0x9c/0xbf
 
 	if [[ $module == "" ]] ; then
-		local objfile=$vmlinux
+		local objfile=$vmfreax
 	elif [[ $aarray_support == true && "${modcache[$module]+isset}" == "isset" ]]; then
 		local objfile=${modcache[$module]}
 	else
@@ -137,7 +137,7 @@ parse_symbol() {
 	# Strip the symbol name so that we could look it up
 	local name=${symbol%+*}
 
-	# Use 'nm vmlinux' to figure out the base address of said symbol.
+	# Use 'nm vmfreax' to figure out the base address of said symbol.
 	# It's actually faster to call it every time than to load it
 	# all into bash.
 	if [[ $aarray_support == true && "${cache[$module,$name]+isset}" == "isset" ]]; then
@@ -198,23 +198,23 @@ parse_symbol() {
 	symbol="$segment$name ($code)"
 }
 
-debuginfod_get_vmlinux() {
-	local vmlinux_buildid=${1##* }
+debuginfod_get_vmfreax() {
+	local vmfreax_buildid=${1##* }
 
-	if [[ $vmlinux != "" ]]; then
+	if [[ $vmfreax != "" ]]; then
 		return
 	fi
 
-	if [[ $vmlinux_buildid =~ ^[0-9a-f]+ ]]; then
-		vmlinux=$(debuginfod-find debuginfo $vmlinux_buildid)
+	if [[ $vmfreax_buildid =~ ^[0-9a-f]+ ]]; then
+		vmfreax=$(debuginfod-find debuginfo $vmfreax_buildid)
 		if [[ $? -ne 0 ]] ; then
-			echo "ERROR! vmlinux image not found via debuginfod-find" >&2
+			echo "ERROR! vmfreax image not found via debuginfod-find" >&2
 			usage
 			exit 2
 		fi
 		return
 	fi
-	echo "ERROR! Build ID for vmlinux not found. Try passing -r or specifying vmlinux" >&2
+	echo "ERROR! Build ID for vmfreax not found. Try passing -r or specifying vmfreax" >&2
 	usage
 	exit 2
 }
@@ -226,7 +226,7 @@ decode_code() {
 }
 
 handle_line() {
-	if [[ $basepath == "auto" && $vmlinux != "" ]] ; then
+	if [[ $basepath == "auto" && $vmfreax != "" ]] ; then
 		module=""
 		symbol="kernel_init+0x0/0x0"
 		parse_symbol
@@ -301,7 +301,7 @@ while read line; do
 		decode_code "$line"
 	# Is it a version line?
 	elif [[ -n $debuginfod && $line =~ PID:\ [0-9]+\ Comm: ]]; then
-		debuginfod_get_vmlinux "$line"
+		debuginfod_get_vmfreax "$line"
 	else
 		# Nothing special in this line, show it as is
 		echo "$line"

@@ -2,8 +2,8 @@
 /*
  * rtmutex API
  */
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
 
 #define RT_MUTEX_BUILD_MUTEX
 #define WW_RT

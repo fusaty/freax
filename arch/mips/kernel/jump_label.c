@@ -6,12 +6,12 @@
  * Copyright (c) 2010 Cavium Networks, Inc.
  */
 
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/cpu.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/memory.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/inst.h>

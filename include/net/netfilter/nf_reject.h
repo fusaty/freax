@@ -2,8 +2,8 @@
 #ifndef _NF_REJECT_H
 #define _NF_REJECT_H
 
-#include <linux/types.h>
-#include <uapi/linux/in.h>
+#include <freax/types.h>
+#include <uapi/freax/in.h>
 
 static inline bool nf_reject_verify_csum(struct sk_buff *skb, int dataoff,
 					  __u8 proto)

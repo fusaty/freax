@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for freax.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -40,13 +40,13 @@
 #ifndef __CXGB4VF_ADAPTER_H__
 #define __CXGB4VF_ADAPTER_H__
 
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
 
 #include "../cxgb4/t4_hw.h"
 
@@ -383,7 +383,7 @@ struct adapter {
 	} msix_info[MSIX_ENTRIES];
 	struct sge sge;
 
-	/* Linux network device resources */
+	/* freax network device resources */
 	struct net_device *port[MAX_NPORTS];
 	const char *name;
 	unsigned int msg_enable;

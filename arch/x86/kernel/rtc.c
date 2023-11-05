@@ -2,10 +2,10 @@
 /*
  * RTC related functions
  */
-#include <linux/platform_device.h>
-#include <linux/mc146818rtc.h>
-#include <linux/export.h>
-#include <linux/pnp.h>
+#include <freax/platform_device.h>
+#include <freax/mc146818rtc.h>
+#include <freax/export.h>
+#include <freax/pnp.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

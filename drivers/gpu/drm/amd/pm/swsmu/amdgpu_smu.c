@@ -22,9 +22,9 @@
 
 #define SWSMU_CODE_LAYER_L1
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/reboot.h>
 
 #include "amdgpu.h"
 #include "amdgpu_smu.h"

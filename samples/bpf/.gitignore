@@ -46,6 +46,6 @@ hbm_out.log
 iperf.*
 *.out
 *.skel.h
-/vmlinux.h
+/vmfreax.h
 /bpftool/
 /libbpf/

@@ -3,17 +3,17 @@
  * Copyright (c) 2020 MediaTek Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/cpufreq.h>
-#include <linux/energy_model.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/cpufreq.h>
+#include <freax/energy_model.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define LUT_MAX_ENTRIES			32U
 #define LUT_FREQ			GENMASK(11, 0)

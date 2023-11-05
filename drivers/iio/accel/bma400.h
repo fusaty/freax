@@ -9,8 +9,8 @@
 #ifndef _BMA400_H_
 #define _BMA400_H_
 
-#include <linux/bits.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/regmap.h>
 
 /*
  * Read-Only Registers

@@ -6,15 +6,15 @@
  * Copyright (C) 2014 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
+#include <freax/pci-acpi.h>
+#include <freax/pci-ecam.h>
+#include <freax/slab.h>
 
 #ifdef CONFIG_ACPI
 /*

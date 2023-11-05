@@ -10,8 +10,8 @@
 #define _ASM_PAGE_H
 
 #include <spaces.h>
-#include <linux/const.h>
-#include <linux/kernel.h>
+#include <freax/const.h>
+#include <freax/kernel.h>
 #include <asm/mipsregs.h>
 
 /*
@@ -70,7 +70,7 @@ static inline unsigned int page_size_ftlb(unsigned int mmuextdef)
 #define HUGETLB_PAGE_ORDER	({BUILD_BUG(); 0; })
 #endif /* CONFIG_MIPS_HUGE_TLB_SUPPORT */
 
-#include <linux/pfn.h>
+#include <freax/pfn.h>
 
 extern void build_clear_page(void);
 extern void build_copy_page(void);
@@ -208,7 +208,7 @@ static inline unsigned long ___pa(unsigned long x)
  * It is unclear if the misscompilations mentioned in
  * https://lore.kernel.org/lkml/1281303490-390-1-git-send-email-namhyung@gmail.com
  * also affect MIPS so we keep this one until GCC 3.x has been retired
- * before we can apply https://patchwork.linux-mips.org/patch/1541/
+ * before we can apply https://patchwork.freax-mips.org/patch/1541/
  */
 #define __pa_symbol_nodebug(x)	__pa(RELOC_HIDE((unsigned long)(x), 0))
 

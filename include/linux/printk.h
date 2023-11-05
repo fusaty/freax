@@ -2,15 +2,15 @@
 #ifndef __KERNEL_PRINTK__
 #define __KERNEL_PRINTK__
 
-#include <linux/stdarg.h>
-#include <linux/init.h>
-#include <linux/kern_levels.h>
-#include <linux/linkage.h>
-#include <linux/ratelimit_types.h>
-#include <linux/once_lite.h>
+#include <freax/stdarg.h>
+#include <freax/init.h>
+#include <freax/kern_levels.h>
+#include <freax/linkage.h>
+#include <freax/ratelimit_types.h>
+#include <freax/once_lite.h>
 
-extern const char linux_banner[];
-extern const char linux_proc_banner[];
+extern const char freax_banner[];
+extern const char freax_proc_banner[];
 
 extern int oops_in_progress;	/* If set, an oops, panic(), BUG() or die() is in progress */
 
@@ -561,7 +561,7 @@ struct pi_entry {
 /* If you are writing a driver, please use dev_dbg instead */
 #if defined(CONFIG_DYNAMIC_DEBUG) || \
 	(defined(CONFIG_DYNAMIC_DEBUG_CORE) && defined(DYNAMIC_DEBUG_MODULE))
-#include <linux/dynamic_debug.h>
+#include <freax/dynamic_debug.h>
 
 /**
  * pr_debug - Print a debug-level message conditionally

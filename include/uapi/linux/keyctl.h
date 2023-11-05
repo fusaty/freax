@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /* keyctl.h: keyctl command IDs
  *
  * Copyright (C) 2004, 2008 Red Hat, Inc. All Rights Reserved.
@@ -10,10 +10,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#ifndef _LINUX_KEYCTL_H
-#define _LINUX_KEYCTL_H
+#ifndef _freax_KEYCTL_H
+#define _freax_KEYCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* special process keyring shortcut IDs */
 #define KEY_SPEC_THREAD_KEYRING		-1	/* - key ID for thread-specific keyring */
@@ -133,4 +133,4 @@ struct keyctl_pkey_params {
 #define KEYCTL_CAPS1_NS_KEY_TAG		0x02 /* Key indexing can include a namespace tag */
 #define KEYCTL_CAPS1_NOTIFICATIONS	0x04 /* Keys generate watchable notifications */
 
-#endif /*  _LINUX_KEYCTL_H */
+#endif /*  _freax_KEYCTL_H */

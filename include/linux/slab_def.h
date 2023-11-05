@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SLAB_DEF_H
-#define	_LINUX_SLAB_DEF_H
+#ifndef _freax_SLAB_DEF_H
+#define	_freax_SLAB_DEF_H
 
-#include <linux/kfence.h>
-#include <linux/reciprocal_div.h>
+#include <freax/kfence.h>
+#include <freax/reciprocal_div.h>
 
 /*
- * Definitions unique to the original Linux SLAB allocator.
+ * Definitions unique to the original freax SLAB allocator.
  */
 
 struct kmem_cache {
@@ -121,4 +121,4 @@ static inline int objs_per_slab(const struct kmem_cache *cache,
 	return cache->num;
 }
 
-#endif	/* _LINUX_SLAB_DEF_H */
+#endif	/* _freax_SLAB_DEF_H */

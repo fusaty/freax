@@ -3,11 +3,11 @@
 // Copyright (C) 2011 Samsung Electronics Co.Ltd
 // Author: Joonyoung Shim <jy0922.shim@samsung.com>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 #include "map.h"
 #include "cpu.h"
 #include "usb-phy.h"

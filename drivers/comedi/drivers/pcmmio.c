@@ -3,7 +3,7 @@
  * pcmmio.c
  * Driver for Winsystems PC-104 based multifunction IO board.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2007 Calin A. Culianu <calin@ajvar.org>
  */
 
@@ -63,10 +63,10 @@
  *		leave out if you don't need this feature)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

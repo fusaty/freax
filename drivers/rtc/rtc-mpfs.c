@@ -7,17 +7,17 @@
  * Author: Daire McNamara <daire.mcnamara@microchip.com>
  *         & Conor Dooley <conor.dooley@microchip.com>
  */
-#include "linux/bits.h"
-#include "linux/iopoll.h"
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
+#include "freax/bits.h"
+#include "freax/iopoll.h"
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/slab.h>
+#include <freax/rtc.h>
 
 #define CONTROL_REG		0x00
 #define MODE_REG		0x04

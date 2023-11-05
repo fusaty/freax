@@ -8,15 +8,15 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/mailbox_controller.h>
 #include <soc/microchip/mpfs.h>
 
 #define SERVICES_CR_OFFSET		0x50u

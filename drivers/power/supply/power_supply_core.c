@@ -9,19 +9,19 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/thermal.h>
-#include <linux/fixp-arith.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/notifier.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/thermal.h>
+#include <freax/fixp-arith.h>
 #include "power_supply.h"
 #include "samsung-sdi-battery.h"
 

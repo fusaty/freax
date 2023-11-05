@@ -101,12 +101,12 @@
 			label = "sw-led";
 			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
 	extcon_usb0: extcon-usb0 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_usb0_extcon>;
 		id-gpios = <&gpio1 3 GPIO_ACTIVE_HIGH>;

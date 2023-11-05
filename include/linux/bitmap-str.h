@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BITMAP_STR_H
-#define __LINUX_BITMAP_STR_H
+#ifndef __freax_BITMAP_STR_H
+#define __freax_BITMAP_STR_H
 
 int bitmap_parse_user(const char __user *ubuf, unsigned int ulen, unsigned long *dst, int nbits);
 int bitmap_print_to_pagebuf(bool list, char *buf, const unsigned long *maskp, int nmaskbits);
@@ -13,4 +13,4 @@ int bitmap_parselist(const char *buf, unsigned long *maskp, int nmaskbits);
 int bitmap_parselist_user(const char __user *ubuf, unsigned int ulen,
 					unsigned long *dst, int nbits);
 
-#endif /* __LINUX_BITMAP_STR_H */
+#endif /* __freax_BITMAP_STR_H */

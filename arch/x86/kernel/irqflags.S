@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 #include <asm/asm.h>
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 
 /*
  * unsigned long native_save_fl(void)

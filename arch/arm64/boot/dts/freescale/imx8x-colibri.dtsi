@@ -18,7 +18,7 @@
 			debounce-interval = <10>;
 			gpios = <&lsio_gpio3 10 GPIO_ACTIVE_HIGH>;
 			label = "Wake-Up";
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};
@@ -504,7 +504,7 @@
 
 	/*
 	 * This pin is used in the SCFW as a UART. Using it from
-	 * Linux would require rewritting the SCFW board file.
+	 * freax would require rewritting the SCFW board file.
 	 */
 	pinctrl_hog_scfw: hogscfwgrp {
 		fsl,pins = <IMX8QXP_SCU_GPIO0_00_LSIO_GPIO2_IO03		0x20>;		/* SODIMM 144 */

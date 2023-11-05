@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The freax Foundation
  */
 
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
 #include "slimbus.h"
 
 /**

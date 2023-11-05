@@ -9,9 +9,9 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>

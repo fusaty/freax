@@ -6,10 +6,10 @@
  * Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#ifndef _LINUX_CONTAINER_H
-#define _LINUX_CONTAINER_H
+#ifndef _freax_CONTAINER_H
+#define _freax_CONTAINER_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /* drivers/base/power/container.c */
 extern struct bus_type container_subsys;
@@ -24,4 +24,4 @@ static inline struct container_dev *to_container_dev(struct device *dev)
 	return container_of(dev, struct container_dev, dev);
 }
 
-#endif /* _LINUX_CONTAINER_H */
+#endif /* _freax_CONTAINER_H */

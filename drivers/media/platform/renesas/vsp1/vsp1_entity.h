@@ -9,8 +9,8 @@
 #ifndef __VSP1_ENTITY_H__
 #define __VSP1_ENTITY_H__
 
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
 
 #include <media/v4l2-subdev.h>
 

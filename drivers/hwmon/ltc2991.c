@@ -4,15 +4,15 @@
  * Author: Antoniu Miclaus <antoniu.miclaus@analog.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #define LTC2991_STATUS_LOW		0x00
 #define LTC2991_CH_EN_TRIGGER		0x01

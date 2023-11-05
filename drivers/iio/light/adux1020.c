@@ -8,20 +8,20 @@
  * TODO: Triggered buffer support
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/events.h>
 
 #define ADUX1020_REGMAP_NAME		"adux1020_regmap"
 #define ADUX1020_DRV_NAME		"adux1020"

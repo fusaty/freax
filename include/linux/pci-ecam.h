@@ -5,9 +5,9 @@
 #ifndef DRIVERS_PCI_ECAM_H
 #define DRIVERS_PCI_ECAM_H
 
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
 
 /*
  * Memory address shift values for the byte-level address that

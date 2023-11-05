@@ -10,12 +10,12 @@
  * Copyright (C) 2006 Rafael J. Wysocki <rjw@sisk.pl>
  */
 #define pr_fmt(x) "hibernate: " x
-#include <linux/cpu.h>
-#include <linux/kvm_host.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/utsname.h>
+#include <freax/cpu.h>
+#include <freax/kvm_host.h>
+#include <freax/pm.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
+#include <freax/utsname.h>
 
 #include <asm/barrier.h>
 #include <asm/cacheflush.h>

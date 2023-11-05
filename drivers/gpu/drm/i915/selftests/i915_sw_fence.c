@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/prime_numbers.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/prime_numbers.h>
 
 #include "../i915_selftest.h"
 

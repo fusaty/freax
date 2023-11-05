@@ -5,7 +5,7 @@
 #ifndef _ASM_LOONGARCH_EFI_H
 #define _ASM_LOONGARCH_EFI_H
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 
 void __init efi_init(void);
 void __init efi_runtime_init(void);
@@ -30,7 +30,7 @@ static inline unsigned long efi_get_kimg_min_align(void)
 	return SZ_2M;
 }
 
-#define EFI_KIMG_PREFERRED_ADDRESS	PHYSADDR(VMLINUX_LOAD_ADDRESS)
+#define EFI_KIMG_PREFERRED_ADDRESS	PHYSADDR(VMfreax_LOAD_ADDRESS)
 
 unsigned long kernel_entry_address(void);
 

@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2018 Markku-Juhani O. Saarinen <mjos@iki.fi>
  * Copyright (C) 2020 Jussi Kivilinna <jussi.kivilinna@iki.fi>
- * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 /* Based on SM4 AES-NI work by libgcrypt and Markku-Juhani O. Saarinen at:
  *  https://github.com/mjosaarinen/sm4ni
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/frame.h>
 
 #define rRIP         (%rip)

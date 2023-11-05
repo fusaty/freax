@@ -3,12 +3,12 @@
  * Copyright 2006-2008, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/bitmap.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/kmemleak.h>
+#include <freax/bitmap.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
 #include <asm/msi_bitmap.h>
 #include <asm/setup.h>
 

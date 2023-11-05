@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/iommu.h>

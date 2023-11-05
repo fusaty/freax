@@ -7,14 +7,14 @@
  * vDSO randomization
  * Copyright(C) 2005-2006, Red Hat, Inc., Ingo Molnar
  */
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/elf.h>
+#include <freax/sched.h>
+#include <freax/err.h>
 
 /*
  * Should the kernel map a VDSO page into processes and pass its
@@ -55,7 +55,7 @@ int __init vsyscall_init(void)
 }
 
 /* Setup a VMA at program startup for the vsyscall page */
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	unsigned long addr;

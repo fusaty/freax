@@ -4,8 +4,8 @@
  *
  * Copyright (C) 1999 Cort Dougan <cort@cs.nmt.edu>
  */
-#ifndef _TOOLS_LINUX_ASM_POWERPC_BARRIER_H
-#define _TOOLS_LINUX_ASM_POWERPC_BARRIER_H
+#ifndef _TOOLS_freax_ASM_POWERPC_BARRIER_H
+#define _TOOLS_freax_ASM_POWERPC_BARRIER_H
 
 /*
  * Memory barrier.
@@ -43,4 +43,4 @@ do {						\
 	___p1;					\
 })
 #endif /* defined(__powerpc64__) */
-#endif /* _TOOLS_LINUX_ASM_POWERPC_BARRIER_H */
+#endif /* _TOOLS_freax_ASM_POWERPC_BARRIER_H */

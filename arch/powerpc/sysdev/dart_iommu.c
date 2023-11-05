@@ -13,19 +13,19 @@
  * Dynamic DMA mapping support, Apple U3, U4 & IBM CPC925 "DART" iommu.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/kmemleak.h>
-#include <linux/of_address.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/vmalloc.h>
+#include <freax/suspend.h>
+#include <freax/memblock.h>
+#include <freax/gfp.h>
+#include <freax/kmemleak.h>
+#include <freax/of_address.h>
 #include <asm/io.h>
 #include <asm/iommu.h>
 #include <asm/pci-bridge.h>

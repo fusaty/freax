@@ -23,7 +23,7 @@
 #include "subvolume.h"
 #include "trace.h"
 
-#include <linux/preempt.h>
+#include <freax/preempt.h>
 
 static inline void fs_usage_data_type_to_base(struct bch_fs_usage *fs_usage,
 					      enum bch_data_type data_type,

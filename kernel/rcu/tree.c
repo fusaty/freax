@@ -6,9 +6,9 @@
  *
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
- *	    Paul E. McKenney <paulmck@linux.ibm.com>
+ *	    Paul E. McKenney <paulmck@freax.ibm.com>
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@freax.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  *
  * For detailed explanation of Read-Copy Update mechanism see -
@@ -17,53 +17,53 @@
 
 #define pr_fmt(fmt) "rcu: " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/completion.h>
-#include <linux/kmemleak.h>
-#include <linux/moduleparam.h>
-#include <linux/panic.h>
-#include <linux/panic_notifier.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/kernel_stat.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/prefetch.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/trace_events.h>
-#include <linux/suspend.h>
-#include <linux/ftrace.h>
-#include <linux/tick.h>
-#include <linux/sysrq.h>
-#include <linux/kprobes.h>
-#include <linux/gfp.h>
-#include <linux/oom.h>
-#include <linux/smpboot.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/clock.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kasan.h>
-#include <linux/context_tracking.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/nmi.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/export.h>
+#include <freax/completion.h>
+#include <freax/kmemleak.h>
+#include <freax/moduleparam.h>
+#include <freax/panic.h>
+#include <freax/panic_notifier.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/mutex.h>
+#include <freax/time.h>
+#include <freax/kernel_stat.h>
+#include <freax/wait.h>
+#include <freax/kthread.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/prefetch.h>
+#include <freax/delay.h>
+#include <freax/random.h>
+#include <freax/trace_events.h>
+#include <freax/suspend.h>
+#include <freax/ftrace.h>
+#include <freax/tick.h>
+#include <freax/sysrq.h>
+#include <freax/kprobes.h>
+#include <freax/gfp.h>
+#include <freax/oom.h>
+#include <freax/smpboot.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/clock.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/kasan.h>
+#include <freax/context_tracking.h>
 #include "../time/tick-internal.h"
 
 #include "tree.h"

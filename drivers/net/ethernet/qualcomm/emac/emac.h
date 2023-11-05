@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2016, The freax Foundation. All rights reserved.
  */
 
 #ifndef _EMAC_H_
 #define _EMAC_H_
 
-#include <linux/irqreturn.h>
-#include <linux/netdevice.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <freax/irqreturn.h>
+#include <freax/netdevice.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
 #include "emac-mac.h"
 #include "emac-phy.h"
 #include "emac-sgmii.h"

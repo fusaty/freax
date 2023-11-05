@@ -5,17 +5,17 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@freaxbe.org>
  * Copyright (c) Mathias Krause <minipli@googlemail.com>
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
 

@@ -71,25 +71,25 @@
  * currently programmed in the FPGA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/sysctl.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/fcntl.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/proc_fs.h>
+#include <freax/mutex.h>
+#include <freax/sysctl.h>
+#include <freax/fs.h>
+#include <freax/cdev.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #include "xilinx_hwicap.h"
 #include "buffer_icap.h"

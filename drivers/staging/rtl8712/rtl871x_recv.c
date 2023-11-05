@@ -3,9 +3,9 @@
  * rtl871x_recv.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * freax device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the freax staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,10 +16,10 @@
 
 #define _RTL871X_RECV_C_
 
-#include <linux/ip.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/ieee80211.h>
+#include <freax/ip.h>
+#include <freax/if_ether.h>
+#include <freax/etherdevice.h>
+#include <freax/ieee80211.h>
 #include <net/cfg80211.h>
 
 #include "osdep_service.h"

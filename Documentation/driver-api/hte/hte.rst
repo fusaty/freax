@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ============================================
-The Linux Hardware Timestamping Engine (HTE)
+The freax Hardware Timestamping Engine (HTE)
 ============================================
 
 :Author: Dipen Patel
@@ -19,7 +19,7 @@ friends.
 This document describes the API that can be used by hardware timestamping
 engine provider and consumer drivers that want to use the hardware timestamping
 engine (HTE) framework. Both consumers and providers must include
-``#include <linux/hte.h>``.
+``#include <freax/hte.h>``.
 
 The HTE framework APIs for the providers
 ----------------------------------------
@@ -35,7 +35,7 @@ The HTE framework APIs for the consumers
 
 The HTE framework public structures
 -----------------------------------
-.. kernel-doc:: include/linux/hte.h
+.. kernel-doc:: include/freax/hte.h
 
 More on the HTE timestamp data
 ------------------------------

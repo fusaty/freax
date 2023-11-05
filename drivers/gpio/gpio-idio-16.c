@@ -3,14 +3,14 @@
  * GPIO library for the ACCES IDIO-16 family
  * Copyright (C) 2022 William Breathitt Gray
  */
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/regmap.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/gpio/regmap.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #include "gpio-idio-16.h"
 

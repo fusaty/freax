@@ -4,12 +4,12 @@
  *
  * Author: Tom Hromatka <tom.hromatka@oracle.com>
  */
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #include <asm/asi.h>
 
 #define MAX_BUF_SZ	PAGE_SIZE

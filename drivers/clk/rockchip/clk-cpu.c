@@ -29,11 +29,11 @@
  * down in order to keep the output clock rate within the previous OPP limits.
  */
 
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
 #include "clk.h"
 
 /**

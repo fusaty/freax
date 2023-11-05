@@ -4,11 +4,11 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#ifndef _LINUX_VEXPRESS_H
-#define _LINUX_VEXPRESS_H
+#ifndef _freax_VEXPRESS_H
+#define _freax_VEXPRESS_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /* Config regmap API */
 

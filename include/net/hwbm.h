@@ -2,7 +2,7 @@
 #ifndef _HWBM_H
 #define _HWBM_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 struct hwbm_pool {
 	/* Capacity of the pool */

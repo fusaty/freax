@@ -10,13 +10,13 @@
  * i8259 parts ripped out of arch/mips/kernel/i8259.c
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/serial_8250.h>
+#include <freax/io.h>
 
 #include <asm/sni.h>
 #include <asm/time.h>
@@ -273,7 +273,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in freax this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

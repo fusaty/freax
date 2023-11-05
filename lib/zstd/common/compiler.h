@@ -162,7 +162,7 @@
 *****************************************************************/
 
 /* this test was initially positioned in mem.h,
- * but this file is removed (or replaced) for linux kernel
+ * but this file is removed (or replaced) for freax kernel
  * so it's now hosted in compiler.h,
  * which remains valid for both user & kernel spaces.
  */

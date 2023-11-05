@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include "lru_cache.h"
 #include "messages.h"
 

@@ -4,7 +4,7 @@
  *    Copyright (C) 2003 Benjamin Herrenschmidt (benh@kernel.crashing.org)
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #include <asm/processor.h>
 #include <asm/page.h>

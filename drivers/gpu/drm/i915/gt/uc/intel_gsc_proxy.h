@@ -6,7 +6,7 @@
 #ifndef _INTEL_GSC_PROXY_H_
 #define _INTEL_GSC_PROXY_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_gsc_uc;
 

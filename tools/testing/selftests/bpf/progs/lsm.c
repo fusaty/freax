@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <errno.h>
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_helpers.h>
@@ -107,7 +107,7 @@ int BPF_PROG(test_int_hook, struct vm_area_struct *vma,
 }
 
 SEC("lsm.s/bprm_committed_creds")
-int BPF_PROG(test_void_hook, struct linux_binprm *bprm)
+int BPF_PROG(test_void_hook, struct freax_binprm *bprm)
 {
 	__u32 pid = bpf_get_current_pid_tgid() >> 32;
 	struct inner_map *inner_map;

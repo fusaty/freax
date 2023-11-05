@@ -8,9 +8,9 @@
 #ifndef _PARISC_HARDIRQ_H
 #define _PARISC_HARDIRQ_H
 
-#include <linux/cache.h>
-#include <linux/threads.h>
-#include <linux/irq.h>
+#include <freax/cache.h>
+#include <freax/threads.h>
+#include <freax/irq.h>
 
 typedef struct {
 	unsigned int __softirq_pending;

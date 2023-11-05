@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Platform Firmware Runtime Update header
  *
@@ -7,8 +7,8 @@
 #ifndef __PFRUT_H__
 #define __PFRUT_H__
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define PFRUT_IOCTL_MAGIC 0xEE
 

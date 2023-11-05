@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/phy.h>
+#include <freax/phylink.h>
 #include <net/dsa.h>
 
 #include "b53_priv.h"

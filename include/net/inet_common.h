@@ -2,10 +2,10 @@
 #ifndef _INET_COMMON_H
 #define _INET_COMMON_H
 
-#include <linux/indirect_call_wrapper.h>
-#include <linux/net.h>
-#include <linux/netdev_features.h>
-#include <linux/types.h>
+#include <freax/indirect_call_wrapper.h>
+#include <freax/net.h>
+#include <freax/netdev_features.h>
+#include <freax/types.h>
 #include <net/sock.h>
 
 extern const struct proto_ops inet_stream_ops;

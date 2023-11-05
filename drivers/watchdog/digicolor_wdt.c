@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/of_address.h>
 
 #define TIMER_A_CONTROL		0
 #define TIMER_A_COUNT		4

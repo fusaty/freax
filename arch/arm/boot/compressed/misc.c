@@ -3,11 +3,11 @@
  * misc.c
  * 
  * This is a collection of several routines from gzip-1.0.3 
- * adapted for Linux.
+ * adapted for freax.
  *
  * malloc by Hannu Savolainen 1993 and Matthias Urlichs 1994
  *
- * Modified for ARM Linux by Russell King
+ * Modified for ARM freax by Russell King
  *
  * Nicolas Pitre <nico@visuaide.com>  1999/04/14 :
  *  For this code to run directly from Flash, all constant variables must
@@ -19,9 +19,9 @@
 
 unsigned int __machine_arch_type;
 
-#include <linux/compiler.h>	/* for inline */
-#include <linux/types.h>
-#include <linux/linkage.h>
+#include <freax/compiler.h>	/* for inline */
+#include <freax/types.h>
+#include <freax/linkage.h>
 #include "misc.h"
 #ifdef CONFIG_ARCH_EP93XX
 #include "misc-ep93xx.h"
@@ -145,7 +145,7 @@ decompress_kernel(unsigned long output_start, unsigned long free_mem_ptr_p,
 #endif
 	arch_decomp_setup();
 
-	putstr("Uncompressing Linux...");
+	putstr("Uncompressing freax...");
 	ret = do_decompress(input_data, input_data_end - input_data,
 			    output_data, error);
 	if (ret)

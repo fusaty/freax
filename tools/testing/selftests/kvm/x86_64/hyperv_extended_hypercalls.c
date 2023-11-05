@@ -20,7 +20,7 @@ static void guest_code(vm_paddr_t in_pg_gpa, vm_paddr_t out_pg_gpa,
 {
 	uint64_t *output_gva;
 
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, in_pg_gpa);
 
 	output_gva = (uint64_t *)out_pg_gva;

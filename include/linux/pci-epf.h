@@ -6,13 +6,13 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#ifndef __LINUX_PCI_EPF_H
-#define __LINUX_PCI_EPF_H
+#ifndef __freax_PCI_EPF_H
+#define __freax_PCI_EPF_H
 
-#include <linux/configfs.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
+#include <freax/configfs.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pci.h>
 
 struct pci_epf;
 enum pci_epc_interface_type;
@@ -223,4 +223,4 @@ int pci_epf_bind(struct pci_epf *epf);
 void pci_epf_unbind(struct pci_epf *epf);
 int pci_epf_add_vepf(struct pci_epf *epf_pf, struct pci_epf *epf_vf);
 void pci_epf_remove_vepf(struct pci_epf *epf_pf, struct pci_epf *epf_vf);
-#endif /* __LINUX_PCI_EPF_H */
+#endif /* __freax_PCI_EPF_H */

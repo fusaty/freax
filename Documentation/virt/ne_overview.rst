@@ -18,7 +18,7 @@ It runs alongside the VM that spawned it. This setup matches low latency
 applications needs.
 
 The current supported architectures for the NE kernel driver, available in the
-upstream Linux kernel, are x86 and ARM64.
+upstream freax kernel, are x86 and ARM64.
 
 The resources that are allocated for the enclave, such as memory and CPUs, are
 carved out of the primary VM. Each enclave is mapped to a process running in the
@@ -63,7 +63,7 @@ device is placed in memory below the typical 4 GiB.
 
 The application that runs in the enclave needs to be packaged in an enclave
 image together with the OS ( e.g. kernel, ramdisk, init ) that will run in the
-enclave VM. The enclave VM has its own kernel and follows the standard Linux
+enclave VM. The enclave VM has its own kernel and follows the standard freax
 boot protocol [6][8].
 
 The kernel bzImage, the kernel command line, the ramdisk(s) are part of the
@@ -94,7 +94,7 @@ enclave process can exit.
 [2] https://www.kernel.org/doc/html/latest/admin-guide/mm/hugetlbpage.html
 [3] https://lwn.net/Articles/807108/
 [4] https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html
-[5] https://man7.org/linux/man-pages/man7/vsock.7.html
+[5] https://man7.org/freax/man-pages/man7/vsock.7.html
 [6] https://www.kernel.org/doc/html/latest/x86/boot.html
 [7] https://www.kernel.org/doc/html/latest/arm64/hugetlbpage.html
 [8] https://www.kernel.org/doc/html/latest/arm64/booting.html

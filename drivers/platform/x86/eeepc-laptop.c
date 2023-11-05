@@ -4,30 +4,30 @@
  *
  *  Based on asus_acpi.c as patched for the Eee PC by Asus:
  *  ftp://ftp.asus.com/pub/ASUS/EeePC/701/ASUS_ACPI_071126.rar
- *  Based on eee.c from eeepc-linux
+ *  Based on eee.c from eeepc-freax
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/rfkill.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/leds.h>
-#include <linux/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/fb.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/uaccess.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/rfkill.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/leds.h>
+#include <freax/dmi.h>
 #include <acpi/video.h>
 
 #define EEEPC_LAPTOP_VERSION	"0.1"

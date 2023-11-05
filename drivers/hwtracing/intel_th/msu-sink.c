@@ -5,11 +5,11 @@
  * Copyright (C) 2019 Intel Corporation.
  */
 
-#include <linux/intel_th.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
+#include <freax/intel_th.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
 
 #define MAX_SGTS 16
 

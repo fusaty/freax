@@ -6,15 +6,15 @@
  */
 
 #include "dm.h"
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/dax.h>
+#include <freax/slab.h>
+#include <freax/log2.h>
 
 static struct workqueue_struct *dm_stripe_wq;
 

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __INCLUDE_LINUX_OOM_H
-#define __INCLUDE_LINUX_OOM_H
+#ifndef __INCLUDE_freax_OOM_H
+#define __INCLUDE_freax_OOM_H
 
 
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/nodemask.h>
-#include <uapi/linux/oom.h>
-#include <linux/sched/coredump.h> /* MMF_* */
-#include <linux/mm.h> /* VM_FAULT* */
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/nodemask.h>
+#include <uapi/freax/oom.h>
+#include <freax/sched/coredump.h> /* MMF_* */
+#include <freax/mm.h> /* VM_FAULT* */
 
 struct zonelist;
 struct notifier_block;
@@ -112,4 +112,4 @@ extern void oom_killer_enable(void);
 
 extern struct task_struct *find_lock_task_mm(struct task_struct *p);
 
-#endif /* _INCLUDE_LINUX_OOM_H */
+#endif /* _INCLUDE_freax_OOM_H */

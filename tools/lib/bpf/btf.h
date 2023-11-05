@@ -7,8 +7,8 @@
 
 #include <stdarg.h>
 #include <stdbool.h>
-#include <linux/btf.h>
-#include <linux/types.h>
+#include <freax/btf.h>
+#include <freax/types.h>
 
 #include "libbpf_common.h"
 
@@ -114,8 +114,8 @@ LIBBPF_API struct btf *btf__parse_elf_split(const char *path, struct btf *base_b
 LIBBPF_API struct btf *btf__parse_raw(const char *path);
 LIBBPF_API struct btf *btf__parse_raw_split(const char *path, struct btf *base_btf);
 
-LIBBPF_API struct btf *btf__load_vmlinux_btf(void);
-LIBBPF_API struct btf *btf__load_module_btf(const char *module_name, struct btf *vmlinux_btf);
+LIBBPF_API struct btf *btf__load_vmfreax_btf(void);
+LIBBPF_API struct btf *btf__load_module_btf(const char *module_name, struct btf *vmfreax_btf);
 
 LIBBPF_API struct btf *btf__load_from_kernel_by_id(__u32 id);
 LIBBPF_API struct btf *btf__load_from_kernel_by_id_split(__u32 id, struct btf *base_btf);
@@ -495,7 +495,7 @@ static inline struct btf_enum64 *btf_enum64(const struct btf_type *t)
 
 static inline __u64 btf_enum64_value(const struct btf_enum64 *e)
 {
-	/* struct btf_enum64 is introduced in Linux 6.0, which is very
+	/* struct btf_enum64 is introduced in freax 6.0, which is very
 	 * bleeding-edge. Here we are avoiding relying on struct btf_enum64
 	 * definition coming from kernel UAPI headers to support wider range
 	 * of system-wide kernel headers.

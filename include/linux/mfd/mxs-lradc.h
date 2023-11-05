@@ -11,9 +11,9 @@
 #ifndef __MFD_MXS_LRADC_H
 #define __MFD_MXS_LRADC_H
 
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/stmp_device.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/stmp_device.h>
 
 #define LRADC_MAX_DELAY_CHANS	4
 #define LRADC_MAX_MAPPED_CHANS	8

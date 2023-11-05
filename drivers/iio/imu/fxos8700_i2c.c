@@ -10,11 +10,11 @@
  *      1    |  0    |  0x1C
  *      1    |  1    |  0x1F
  */
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regmap.h>
 
 #include "fxos8700.h"
 

@@ -7,16 +7,16 @@
  */
 
 /*
- * TurboGraFX parallel port interface driver for Linux.
+ * TurboGraFX parallel port interface driver for freax.
  */
 
-#include <linux/kernel.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/parport.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("TurboGraFX parallel port interface driver");

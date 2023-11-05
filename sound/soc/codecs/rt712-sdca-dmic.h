@@ -8,8 +8,8 @@
 #ifndef __RT712_SDW_DMIC_H__
 #define __RT712_SDW_DMIC_H__
 
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/regmap.h>
+#include <freax/soundwire/sdw_registers.h>
 
 struct  rt712_sdca_dmic_priv {
 	struct regmap *regmap;

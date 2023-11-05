@@ -5,9 +5,9 @@
  * Copyright (C) 2009 Magnus Damm
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
 #include <asm/suspend.h>
 #include <asm/sections.h>
 #include <asm/tlbflush.h>

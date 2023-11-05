@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PID_H
-#define _LINUX_PID_H
+#ifndef _freax_PID_H
+#define _freax_PID_H
 
-#include <linux/rculist.h>
-#include <linux/wait.h>
-#include <linux/refcount.h>
+#include <freax/rculist.h>
+#include <freax/wait.h>
+#include <freax/refcount.h>
 
 enum pid_type
 {
@@ -123,7 +123,7 @@ extern int pid_max_min, pid_max_max;
  * find_pid_ns() finds the pid in the namespace specified
  * find_vpid() finds the pid by its virtual id, i.e. in the current namespace
  *
- * see also find_task_by_vpid() set in include/linux/sched.h
+ * see also find_task_by_vpid() set in include/freax/sched.h
  */
 extern struct pid *find_pid_ns(int nr, struct pid_namespace *ns);
 extern struct pid *find_vpid(int nr);
@@ -176,7 +176,7 @@ static inline bool is_child_reaper(struct pid *pid)
  *               current.
  * pid_nr_ns() : id seen from the ns specified.
  *
- * see also task_xid_nr() etc in include/linux/sched.h
+ * see also task_xid_nr() etc in include/freax/sched.h
  */
 
 static inline pid_t pid_nr(struct pid *pid)
@@ -215,4 +215,4 @@ pid_t pid_vnr(struct pid *pid);
 		}							\
 		task = tg___;						\
 	} while_each_pid_task(pid, type, task)
-#endif /* _LINUX_PID_H */
+#endif /* _freax_PID_H */

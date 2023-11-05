@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2020 Nuvoton Technology corporation.
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 /* GCR registers */
 #define NPCM8XX_GCR_SRCNT	0x068

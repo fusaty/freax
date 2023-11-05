@@ -6,11 +6,11 @@
  *          Yannick Fertre <yannick.fertre@st.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

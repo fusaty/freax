@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_REBOOT_H
-#define _UAPI_LINUX_REBOOT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_REBOOT_H
+#define _UAPI_freax_REBOOT_H
 
 /*
  * Magic values required to use _reboot() system call.
  */
 
-#define	LINUX_REBOOT_MAGIC1	0xfee1dead
-#define	LINUX_REBOOT_MAGIC2	672274793
-#define	LINUX_REBOOT_MAGIC2A	85072278
-#define	LINUX_REBOOT_MAGIC2B	369367448
-#define	LINUX_REBOOT_MAGIC2C	537993216
+#define	freax_REBOOT_MAGIC1	0xfee1dead
+#define	freax_REBOOT_MAGIC2	672274793
+#define	freax_REBOOT_MAGIC2A	85072278
+#define	freax_REBOOT_MAGIC2B	369367448
+#define	freax_REBOOT_MAGIC2C	537993216
 
 
 /*
@@ -23,18 +23,18 @@
  * POWER_OFF   Stop OS and remove all power from system, if possible.
  * RESTART2    Restart system using given command string.
  * SW_SUSPEND  Suspend system using software suspend if compiled in.
- * KEXEC       Restart system using a previously loaded Linux kernel
+ * KEXEC       Restart system using a previously loaded freax kernel
  */
 
-#define	LINUX_REBOOT_CMD_RESTART	0x01234567
-#define	LINUX_REBOOT_CMD_HALT		0xCDEF0123
-#define	LINUX_REBOOT_CMD_CAD_ON		0x89ABCDEF
-#define	LINUX_REBOOT_CMD_CAD_OFF	0x00000000
-#define	LINUX_REBOOT_CMD_POWER_OFF	0x4321FEDC
-#define	LINUX_REBOOT_CMD_RESTART2	0xA1B2C3D4
-#define	LINUX_REBOOT_CMD_SW_SUSPEND	0xD000FCE2
-#define	LINUX_REBOOT_CMD_KEXEC		0x45584543
+#define	freax_REBOOT_CMD_RESTART	0x01234567
+#define	freax_REBOOT_CMD_HALT		0xCDEF0123
+#define	freax_REBOOT_CMD_CAD_ON		0x89ABCDEF
+#define	freax_REBOOT_CMD_CAD_OFF	0x00000000
+#define	freax_REBOOT_CMD_POWER_OFF	0x4321FEDC
+#define	freax_REBOOT_CMD_RESTART2	0xA1B2C3D4
+#define	freax_REBOOT_CMD_SW_SUSPEND	0xD000FCE2
+#define	freax_REBOOT_CMD_KEXEC		0x45584543
 
 
 
-#endif /* _UAPI_LINUX_REBOOT_H */
+#endif /* _UAPI_freax_REBOOT_H */

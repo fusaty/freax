@@ -4,17 +4,17 @@
  * (C) 2012 by Vyatta Inc. <http://www.vyatta.com>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/stddef.h>
+#include <freax/err.h>
+#include <freax/percpu.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

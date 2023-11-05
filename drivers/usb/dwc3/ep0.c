@@ -8,19 +8,19 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/dma-mapping.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/composite.h>
 
 #include "core.h"
 #include "debug.h"

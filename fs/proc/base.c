@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/base.c
+ *  freax/fs/proc/base.c
  *
  *  Copyright (C) 1991, 1992 Linus Torvalds
  *
@@ -22,7 +22,7 @@
  *  Ilias Biris <ilias.biris@indt.org.br>
  *  Mauricio Lin <mauricio.lin@indt.org.br>
  *
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded freax Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *
  *  A new process specific entry (smaps) included in /proc. It shows the
  *  size of rss for each memory area. The maps entry lacks information
@@ -33,7 +33,7 @@
  *
  *  Changelog:
  *  21-Feb-2005
- *  Embedded Linux Lab - 10LE Instituto Nokia de Tecnologia - INdT
+ *  Embedded freax Lab - 10LE Instituto Nokia de Tecnologia - INdT
  *  Pud inclusion in the page table walking.
  *
  *  ChangeLog:
@@ -48,55 +48,55 @@
  *  Overall revision about smaps.
  */
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/namei.h>
-#include <linux/mnt_namespace.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/rcupdate.h>
-#include <linux/kallsyms.h>
-#include <linux/stacktrace.h>
-#include <linux/resource.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/printk.h>
-#include <linux/cache.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/audit.h>
-#include <linux/poll.h>
-#include <linux/nsproxy.h>
-#include <linux/oom.h>
-#include <linux/elf.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/stat.h>
-#include <linux/posix-timers.h>
-#include <linux/time_namespace.h>
-#include <linux/resctrl.h>
-#include <linux/cn_proc.h>
-#include <linux/ksm.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/init.h>
+#include <freax/capability.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/generic-radix-tree.h>
+#include <freax/string.h>
+#include <freax/seq_file.h>
+#include <freax/namei.h>
+#include <freax/mnt_namespace.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/rcupdate.h>
+#include <freax/kallsyms.h>
+#include <freax/stacktrace.h>
+#include <freax/resource.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/security.h>
+#include <freax/ptrace.h>
+#include <freax/printk.h>
+#include <freax/cache.h>
+#include <freax/cgroup.h>
+#include <freax/cpuset.h>
+#include <freax/audit.h>
+#include <freax/poll.h>
+#include <freax/nsproxy.h>
+#include <freax/oom.h>
+#include <freax/elf.h>
+#include <freax/pid_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/fs_struct.h>
+#include <freax/slab.h>
+#include <freax/sched/autogroup.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/stat.h>
+#include <freax/posix-timers.h>
+#include <freax/time_namespace.h>
+#include <freax/resctrl.h>
+#include <freax/cn_proc.h>
+#include <freax/ksm.h>
 #include <trace/events/oom.h>
 #include "internal.h"
 #include "fd.h"

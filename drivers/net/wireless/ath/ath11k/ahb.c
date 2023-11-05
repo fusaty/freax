@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_address.h>
-#include <linux/iommu.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/of_device.h>
+#include <freax/of.h>
+#include <freax/dma-mapping.h>
+#include <freax/of_address.h>
+#include <freax/iommu.h>
 #include "ahb.h"
 #include "debug.h"
 #include "hif.h"
 #include "qmi.h"
-#include <linux/remoteproc.h>
+#include <freax/remoteproc.h>
 #include "pcic.h"
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/soc/qcom/smem_state.h>
 
 static const struct of_device_id ath11k_ahb_of_match[] = {
 	/* TODO: Should we change the compatible string to something similar

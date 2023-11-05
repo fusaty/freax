@@ -3,7 +3,7 @@
 
 #include <kunit/resource.h>
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #define DEVICE_NAME "test"
 

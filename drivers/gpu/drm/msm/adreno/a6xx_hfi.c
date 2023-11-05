@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2017-2018 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017-2018 The freax Foundation. All rights reserved. */
 
-#include <linux/completion.h>
-#include <linux/circ_buf.h>
-#include <linux/list.h>
+#include <freax/completion.h>
+#include <freax/circ_buf.h>
+#include <freax/list.h>
 
 #include <soc/qcom/cmd-db.h>
 

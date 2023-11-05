@@ -8,12 +8,12 @@
  * Lattice iCE40 FPGAs through slave SPI.
  */
 
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/spi/spi.h>
-#include <linux/stringify.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of_gpio.h>
+#include <freax/spi/spi.h>
+#include <freax/stringify.h>
 
 #define ICE40_SPI_MAX_SPEED 25000000 /* Hz */
 #define ICE40_SPI_MIN_SPEED 1000000 /* Hz */

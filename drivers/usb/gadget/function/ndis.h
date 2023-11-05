@@ -12,8 +12,8 @@
  * use, modify or distribute it freely.
  */
 
-#ifndef _LINUX_NDIS_H
-#define _LINUX_NDIS_H
+#ifndef _freax_NDIS_H
+#define _freax_NDIS_H
 
 enum NDIS_DEVICE_POWER_STATE {
 	NdisDeviceStateUnspecified = 0,
@@ -44,4 +44,4 @@ struct NDIS_PM_PACKET_PATTERN {
 	__le32	PatternFlags;
 };
 
-#endif /* _LINUX_NDIS_H */
+#endif /* _freax_NDIS_H */

@@ -2,12 +2,12 @@
 #ifndef _NF_CONNTRACK_FTP_H
 #define _NF_CONNTRACK_FTP_H
 
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include <net/netfilter/nf_conntrack_expect.h>
-#include <uapi/linux/netfilter/nf_conntrack_ftp.h>
-#include <uapi/linux/netfilter/nf_conntrack_tuple_common.h>
+#include <uapi/freax/netfilter/nf_conntrack_ftp.h>
+#include <uapi/freax/netfilter/nf_conntrack_tuple_common.h>
 
 #define FTP_PORT	21
 

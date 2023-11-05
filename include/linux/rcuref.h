@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef _LINUX_RCUREF_H
-#define _LINUX_RCUREF_H
+#ifndef _freax_RCUREF_H
+#define _freax_RCUREF_H
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/limits.h>
-#include <linux/lockdep.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/limits.h>
+#include <freax/lockdep.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate.h>
 
 #define RCUREF_ONEREF		0x00000000U
 #define RCUREF_MAXREF		0x7FFFFFFFU

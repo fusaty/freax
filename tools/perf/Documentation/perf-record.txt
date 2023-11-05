@@ -537,8 +537,8 @@ PERF_RECORD_SWITCH_CPU_WIDE. In some cases (e.g. Intel PT, CoreSight or Arm SPE)
 switch events will be enabled automatically, which can be suppressed by
 by the option --no-switch-events.
 
---vmlinux=PATH::
-Specify vmlinux path which has debuginfo.
+--vmfreax=PATH::
+Specify vmfreax path which has debuginfo.
 (enabled when BPF prologue is on)
 
 --buildid-all::

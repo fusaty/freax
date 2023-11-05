@@ -6,7 +6,7 @@
 #ifndef _INTEL_SELFTEST_SCHEDULER_HELPERS_H_
 #define _INTEL_SELFTEST_SCHEDULER_HELPERS_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct i915_request;
 struct intel_engine_cs;

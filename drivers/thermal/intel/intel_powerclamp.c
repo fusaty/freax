@@ -5,8 +5,8 @@
  * Copyright (c) 2012-2023, Intel Corporation.
  *
  * Authors:
- *     Arjan van de Ven <arjan@linux.intel.com>
- *     Jacob Pan <jacob.jun.pan@linux.intel.com>
+ *     Arjan van de Ven <arjan@freax.intel.com>
+ *     Jacob Pan <jacob.jun.pan@freax.intel.com>
  *
  *	TODO:
  *           1. better handle wakeup from external interrupts, currently a fixed
@@ -24,14 +24,14 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/thermal.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/idle_inject.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/cpu.h>
+#include <freax/thermal.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/idle_inject.h>
 
 #include <asm/msr.h>
 #include <asm/mwait.h>
@@ -844,6 +844,6 @@ module_exit(powerclamp_exit);
 MODULE_IMPORT_NS(IDLE_INJECT);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
-MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@freax.intel.com>");
+MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@freax.intel.com>");
 MODULE_DESCRIPTION("Package Level C-state Idle Injection for Intel CPUs");

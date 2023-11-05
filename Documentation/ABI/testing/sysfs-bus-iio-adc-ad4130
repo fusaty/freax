@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltage-voltage_filter_mode_available
 KernelVersion:  6.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Reading returns a list with the possible filter modes.
 
@@ -35,7 +35,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY-voltageZ_filter_mode
 KernelVersion:  6.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Set the filter mode of the differential channel. When the filter
 		mode changes, the in_voltageY-voltageZ_sampling_frequency and

@@ -9,23 +9,23 @@
  *		  Anton Vorontsov <anton.vorontsov@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/atomic.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/interrupt.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/kfifo.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/atomic.h>
+#include <freax/console.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/interrupt.h>
+#include <freax/hrtimer.h>
+#include <freax/tick.h>
+#include <freax/kfifo.h>
+#include <freax/kgdb.h>
+#include <freax/kdb.h>
 
 static int kgdb_nmi_knock = 1;
 module_param_named(knock, kgdb_nmi_knock, int, 0600);

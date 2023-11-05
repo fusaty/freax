@@ -17,7 +17,7 @@
 
 	spdif_dit: audio-codec-0 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -37,31 +37,31 @@
 
 		button-home {
 			label = "Home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			press-threshold-microvolt = <900000>; /* 50% */
 		};
 
 		button-esc {
 			label = "Esc";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			press-threshold-microvolt = <684000>; /* 38% */
 		};
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <468000>; /* 26% */
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <252000>; /* 14% */
 		};
 
 		button-menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <0>; /* 0% */
 		};
 	};

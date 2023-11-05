@@ -21,22 +21,22 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006, 2008
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/jhash.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/jhash.h>
+#include <freax/audit.h>
+#include <freax/slab.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/tcp.h>
 #include <net/netlabel.h>
 #include <net/cipso_ipv4.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
 #include <asm/unaligned.h>
 
 /* List of available DOI definitions */

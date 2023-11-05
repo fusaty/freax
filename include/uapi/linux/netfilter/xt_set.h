@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _XT_SET_H
 #define _XT_SET_H
 
-#include <linux/types.h>
-#include <linux/netfilter/ipset/ip_set.h>
+#include <freax/types.h>
+#include <freax/netfilter/ipset/ip_set.h>
 
 /* Revision 0 interface: backward compatible with netfilter/iptables */
 

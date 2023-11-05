@@ -5,10 +5,10 @@
  *
  * Author:  Marco van Wieringen <mvw@planets.elm.net>
  */
-#ifndef _LINUX_QUOTAOPS_
-#define _LINUX_QUOTAOPS_
+#ifndef _freax_QUOTAOPS_
+#define _freax_QUOTAOPS_
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #define DQUOT_SPACE_WARN	0x1
 #define DQUOT_SPACE_RESERVE	0x2
@@ -403,4 +403,4 @@ static inline void dquot_release_reservation_block(struct inode *inode,
 
 unsigned int qtype_enforce_flag(int type);
 
-#endif /* _LINUX_QUOTAOPS_ */
+#endif /* _freax_QUOTAOPS_ */

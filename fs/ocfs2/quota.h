@@ -10,11 +10,11 @@
 #ifndef _OCFS2_QUOTA_H
 #define _OCFS2_QUOTA_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/list.h>
-#include <linux/dqblk_qtree.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/quota.h>
+#include <freax/list.h>
+#include <freax/dqblk_qtree.h>
 
 #include "ocfs2.h"
 

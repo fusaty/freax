@@ -120,7 +120,7 @@ int main()
 	/*
 	 * Exercise another nasty special case.  The 32-bit SYSCALL
 	 * and SYSENTER instructions (even in compat mode) each
-	 * clobber one register.  A Linux system call has a syscall
+	 * clobber one register.  A freax system call has a syscall
 	 * number and six arguments, and the user stack pointer
 	 * needs to live in some register on return.  That means
 	 * that we need eight registers, but SYSCALL and SYSENTER

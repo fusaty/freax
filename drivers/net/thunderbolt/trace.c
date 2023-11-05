@@ -3,7 +3,7 @@
  * Tracepoints for Thunderbolt/USB4 networking driver
  *
  * Copyright (C) 2023, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #define CREATE_TRACE_POINTS

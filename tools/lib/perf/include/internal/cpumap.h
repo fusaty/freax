@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_INTERNAL_CPUMAP_H
 #define __LIBPERF_INTERNAL_CPUMAP_H
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <perf/cpumap.h>
 #include <internal/rc_check.h>
 

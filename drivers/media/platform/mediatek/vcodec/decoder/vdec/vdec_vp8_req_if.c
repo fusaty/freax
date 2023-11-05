@@ -4,10 +4,10 @@
  * Author: Yunfei Dong <yunfei.dong@mediatek.com>
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/videobuf2-dma-contig.h>
-#include <uapi/linux/v4l2-controls.h>
+#include <uapi/freax/v4l2-controls.h>
 
 #include "../mtk_vcodec_dec.h"
 #include "../../common/mtk_vcodec_intr.h"

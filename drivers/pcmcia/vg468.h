@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_VG468_H
-#define _LINUX_VG468_H
+#ifndef _freax_VG468_H
+#define _freax_VG468_H
 
 /* Special bit in I365_IDENT used for Vadem chip detection */
 #define I365_IDENT_VADEM	0x08
@@ -103,4 +103,4 @@
 /* Flags for VG469_EXT_MODE_B */
 #define VG469_MODE_B_3V		0x01	/* 3.3v for socket B */
 
-#endif /* _LINUX_VG468_H */
+#endif /* _freax_VG468_H */

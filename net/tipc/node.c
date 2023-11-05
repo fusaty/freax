@@ -1716,7 +1716,7 @@ int tipc_node_xmit(struct net *net, struct sk_buff_head *list,
 	peer_net = n->peer_net;
 	tipc_node_read_unlock(n);
 	if (node_up && peer_net && check_net(peer_net)) {
-		/* xmit inner linux container */
+		/* xmit inner freax container */
 		tipc_lxc_xmit(peer_net, list);
 		if (likely(skb_queue_empty(list))) {
 			rcu_read_unlock();

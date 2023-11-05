@@ -9,8 +9,8 @@
 #ifndef _BPF_JIT_H
 #define _BPF_JIT_H
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
 #include <asm/cacheflush.h>
 
 #define HPPA_JIT_DEBUG	0

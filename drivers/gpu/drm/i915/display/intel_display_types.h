@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@freax.ie>
  * Copyright (c) 2007-2008 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -26,10 +26,10 @@
 #ifndef __INTEL_DISPLAY_TYPES_H__
 #define __INTEL_DISPLAY_TYPES_H__
 
-#include <linux/i2c.h>
-#include <linux/pm_qos.h>
-#include <linux/pwm.h>
-#include <linux/sched/clock.h>
+#include <freax/i2c.h>
+#include <freax/pm_qos.h>
+#include <freax/pwm.h>
+#include <freax/sched/clock.h>
 
 #include <drm/display/drm_dp_dual_mode_helper.h>
 #include <drm/display/drm_dp_mst_helper.h>

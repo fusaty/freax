@@ -6,32 +6,32 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/cache.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/gfp.h>
-#include <linux/math.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/efi.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/hugetlb.h>
-#include <linux/acpi_iort.h>
-#include <linux/kmemleak.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/swap.h>
+#include <freax/init.h>
+#include <freax/cache.h>
+#include <freax/mman.h>
+#include <freax/nodemask.h>
+#include <freax/initrd.h>
+#include <freax/gfp.h>
+#include <freax/math.h>
+#include <freax/memblock.h>
+#include <freax/sort.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
+#include <freax/efi.h>
+#include <freax/swiotlb.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/kexec.h>
+#include <freax/crash_dump.h>
+#include <freax/hugetlb.h>
+#include <freax/acpi_iort.h>
+#include <freax/kmemleak.h>
 
 #include <asm/boot.h>
 #include <asm/fixmap.h>
@@ -42,7 +42,7 @@
 #include <asm/numa.h>
 #include <asm/sections.h>
 #include <asm/setup.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/tlb.h>
 #include <asm/alternative.h>
 #include <asm/xen/swiotlb-xen.h>

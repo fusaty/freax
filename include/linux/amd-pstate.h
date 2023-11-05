@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/amd-pstate.h
+ * freax/include/freax/amd-pstate.h
  *
  * Copyright (C) 2022 Advanced Micro Devices, Inc.
  *
  * Author: Meng Li <li.meng@amd.com>
  */
 
-#ifndef _LINUX_AMD_PSTATE_H
-#define _LINUX_AMD_PSTATE_H
+#ifndef _freax_AMD_PSTATE_H
+#define _freax_AMD_PSTATE_H
 
-#include <linux/pm_qos.h>
+#include <freax/pm_qos.h>
 
 #define AMD_CPPC_EPP_PERFORMANCE		0x00
 #define AMD_CPPC_EPP_BALANCE_PERFORMANCE	0x80
@@ -110,4 +110,4 @@ static const char * const amd_pstate_mode_string[] = {
 	[AMD_PSTATE_GUIDED]      = "guided",
 	NULL,
 };
-#endif /* _LINUX_AMD_PSTATE_H */
+#endif /* _freax_AMD_PSTATE_H */

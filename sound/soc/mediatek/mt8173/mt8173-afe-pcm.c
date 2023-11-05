@@ -9,12 +9,12 @@
  *             Ir Lian <ir.lian@mediatek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
 #include <sound/soc.h>
 #include "mt8173-afe-common.h"
 #include "../common/mtk-base-afe.h"

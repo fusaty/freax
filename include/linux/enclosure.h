@@ -9,11 +9,11 @@
 **
 **-----------------------------------------------------------------------------
 */
-#ifndef _LINUX_ENCLOSURE_H_
-#define _LINUX_ENCLOSURE_H_
+#ifndef _freax_ENCLOSURE_H_
+#define _freax_ENCLOSURE_H_
 
-#include <linux/device.h>
-#include <linux/list.h>
+#include <freax/device.h>
+#include <freax/list.h>
 
 /* A few generic types ... taken from ses-2 */
 enum enclosure_component_type {
@@ -132,4 +132,4 @@ struct enclosure_device *enclosure_find(struct device *dev,
 int enclosure_for_each_device(int (*fn)(struct enclosure_device *, void *),
 			      void *data);
 
-#endif /* _LINUX_ENCLOSURE_H_ */
+#endif /* _freax_ENCLOSURE_H_ */

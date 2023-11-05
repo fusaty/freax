@@ -15,21 +15,21 @@
 
 #define pr_fmt(fmt) "ACPI: thermal: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/thermal.h>
-#include <linux/acpi.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
-#include <linux/units.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/jiffies.h>
+#include <freax/kmod.h>
+#include <freax/reboot.h>
+#include <freax/device.h>
+#include <freax/thermal.h>
+#include <freax/acpi.h>
+#include <freax/workqueue.h>
+#include <freax/uaccess.h>
+#include <freax/units.h>
 
 #define ACPI_THERMAL_CLASS		"thermal_zone"
 #define ACPI_THERMAL_DEVICE_NAME	"Thermal Zone"
@@ -56,7 +56,7 @@
 do { \
 	acpi_handle_info(tz->device->handle, \
 			 "ACPI thermal trip point %s changed\n" \
-			 "Please report to linux-acpi@vger.kernel.org\n", str); \
+			 "Please report to freax-acpi@vger.kernel.org\n", str); \
 } while (0)
 
 static int act;

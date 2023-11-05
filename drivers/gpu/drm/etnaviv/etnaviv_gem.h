@@ -6,7 +6,7 @@
 #ifndef __ETNAVIV_GEM_H__
 #define __ETNAVIV_GEM_H__
 
-#include <linux/dma-resv.h>
+#include <freax/dma-resv.h>
 #include "etnaviv_cmdbuf.h"
 #include "etnaviv_drv.h"
 

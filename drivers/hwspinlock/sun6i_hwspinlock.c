@@ -4,18 +4,18 @@
  * Copyright (C) 2020 Wilken Gottwalt <wilken.gottwalt@posteo.net>
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/hwspinlock.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include "hwspinlock_internal.h"
 

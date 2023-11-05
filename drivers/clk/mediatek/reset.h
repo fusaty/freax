@@ -6,8 +6,8 @@
 #ifndef __DRV_CLK_MTK_RESET_H
 #define __DRV_CLK_MTK_RESET_H
 
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <freax/reset-controller.h>
+#include <freax/types.h>
 
 #define RST_NR_PER_BANK 32
 

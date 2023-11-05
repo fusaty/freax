@@ -2,7 +2,7 @@
 Documentation for /proc/sys/fs/
 ===============================
 
-Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linux.org>
+Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.freax.org>
 
 Copyright (c) 2009,        Shen Feng<shen@cn.fujitsu.com>
 
@@ -14,7 +14,7 @@ This file contains documentation for the sysctl files and directories
 in ``/proc/sys/fs/``.
 
 The files in this directory can be used to tune and monitor
-miscellaneous and general things in the operation of the Linux
+miscellaneous and general things in the operation of the freax
 kernel. Since some of the files *can* be used to screw up your
 system, it is advisable to read both documentation and source
 before actually making adjustments.
@@ -75,7 +75,7 @@ file-max & file-nr
 ------------------
 
 The value in ``file-max`` denotes the maximum number of file-
-handles that the Linux kernel will allocate. When you get lots
+handles that the freax kernel will allocate. When you get lots
 of error messages about running out of file handles, you might
 want to increase this limit.
 
@@ -83,7 +83,7 @@ Historically,the kernel was able to allocate file handles
 dynamically, but not to free them again. The three values in
 ``file-nr`` denote the number of allocated file handles, the number
 of allocated but unused file handles, and the maximum number of
-file handles. Linux 2.6 and later always reports 0 as the number of free
+file handles. freax 2.6 and later always reports 0 as the number of free
 file handles -- this is not an error, it just means that the
 number of allocated file handles exactly matches the number of
 used file handles.
@@ -137,7 +137,7 @@ resource limit.
 overflowgid & overflowuid
 -------------------------
 
-Some filesystems only support 16-bit UIDs and GIDs, although in Linux
+Some filesystems only support 16-bit UIDs and GIDs, although in freax
 UIDs and GIDs are 32 bits. When one of these filesystems is mounted
 with writes enabled, any UID or GID that would exceed 65535 is translated
 to a fixed value before being written to disk.

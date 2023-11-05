@@ -9,13 +9,13 @@
 
 #define pr_fmt(fmt) "secvar: "fmt
 
-#include <linux/printk.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/nls.h>
+#include <freax/printk.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/kobject.h>
+#include <freax/nls.h>
 #include <asm/machdep.h>
 #include <asm/secvar.h>
 #include <asm/plpks.h>
@@ -89,7 +89,7 @@ static int plpks_get_variable(const char *key, u64 key_len, u8 *data,
 		goto err;
 	var.namelen = rc * 2;
 
-	var.os = PLPKS_VAR_LINUX;
+	var.os = PLPKS_VAR_freax;
 	if (data) {
 		var.data = data;
 		var.datalen = *data_size;
@@ -140,7 +140,7 @@ static int plpks_set_variable(const char *key, u64 key_len, u8 *data,
 
 	var.datalen = data_size - sizeof(flags);
 	var.data = data + sizeof(flags);
-	var.os = PLPKS_VAR_LINUX;
+	var.os = PLPKS_VAR_freax;
 	var.policy = get_policy(key);
 
 	// Unlike in the read case, the plpks error code can be useful to

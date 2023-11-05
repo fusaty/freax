@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_OMAP_DMA_H
-#define __LINUX_OMAP_DMA_H
+#ifndef __freax_OMAP_DMA_H
+#define __freax_OMAP_DMA_H
 /*
  *  Legacy OMAP DMA handling defines and functions
  *
  *  NOTE: Do not use these any longer.
  *
  *  Use the generic dmaengine functions as defined in
- *  include/linux/dmaengine.h.
+ *  include/freax/dmaengine.h.
  *
  *  Copyright (C) 2003 Nokia Corporation
  *  Author: Juha Yrjölä <juha.yrjola@nokia.com>
  *
  */
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 #define INT_DMA_LCD			(NR_IRQS_LEGACY + 25)
 
@@ -346,4 +346,4 @@ static inline int omap_lcd_dma_running(void)
 }
 #endif
 
-#endif /* __LINUX_OMAP_DMA_H */
+#endif /* __freax_OMAP_DMA_H */

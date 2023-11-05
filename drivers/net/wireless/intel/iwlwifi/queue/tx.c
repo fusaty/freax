@@ -3,7 +3,7 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 #include <net/tso.h>
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 
 #include "iwl-debug.h"
 #include "iwl-io.h"
@@ -14,7 +14,7 @@
 #include "queue/tx.h"
 #include "iwl-fh.h"
 #include "iwl-scd.h"
-#include <linux/dmapool.h>
+#include <freax/dmapool.h>
 
 /*
  * iwl_txq_update_byte_tbl - Set up entry in Tx byte-count array

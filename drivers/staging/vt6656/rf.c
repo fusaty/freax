@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include "mac.h"
 #include "rf.h"
 #include "baseband.h"

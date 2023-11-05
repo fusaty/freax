@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * usnjrnl.h - NTFS kernel transaction log ($UsnJrnl) handling.  Part of the
- *	       Linux-NTFS project.
+ *	       freax-NTFS project.
  *
  * Copyright (c) 2005 Anton Altaparmakov
  */
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/mm.h>
 
 #include "aops.h"
 #include "debug.h"

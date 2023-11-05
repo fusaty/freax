@@ -2,8 +2,8 @@
 /* Copyright (C) 2021 MediaTek Inc.
  *
  */
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

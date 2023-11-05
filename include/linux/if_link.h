@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IF_LINK_H
-#define _LINUX_IF_LINK_H
+#ifndef _freax_IF_LINK_H
+#define _freax_IF_LINK_H
 
-#include <uapi/linux/if_link.h>
+#include <uapi/freax/if_link.h>
 
 
 /* We don't want this structure exposed to user space */
@@ -30,4 +30,4 @@ struct ifla_vf_info {
 	__u32 trusted;
 	__be16 vlan_proto;
 };
-#endif /* _LINUX_IF_LINK_H */
+#endif /* _freax_IF_LINK_H */

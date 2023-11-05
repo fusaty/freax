@@ -43,7 +43,7 @@ Other Functions
 Line Discipline Operations Reference
 ====================================
 
-.. kernel-doc:: include/linux/tty_ldisc.h
+.. kernel-doc:: include/freax/tty_ldisc.h
    :identifiers: tty_ldisc_ops
 
 Driver Access

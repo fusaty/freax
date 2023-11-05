@@ -4,13 +4,13 @@
  * Copyright (C) 2018 Cadence Design Systems Inc.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/time64.h>
 
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <freax/phy/phy.h>
+#include <freax/phy/phy-mipi-dphy.h>
 
 /*
  * Minimum D-PHY timings based on MIPI D-PHY specification. Derived

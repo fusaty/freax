@@ -4,16 +4,16 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/export.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/of.h>
+#include <freax/export.h>
 
 #include <asm/oplib.h>
 #include <asm/io.h>
 #include <asm/auxio.h>
-#include <asm/string.h>		/* memset(), Linux has no bzero() */
+#include <asm/string.h>		/* memset(), freax has no bzero() */
 #include <asm/cpu_type.h>
 
 #include "kernel.h"
@@ -29,7 +29,7 @@ static DEFINE_SPINLOCK(auxio_lock);
 void __init auxio_probe(void)
 {
 	phandle node, auxio_nd;
-	struct linux_prom_registers auxregs[1];
+	struct freax_prom_registers auxregs[1];
 	struct resource r;
 
 	switch (sparc_cpu_model) {
@@ -110,7 +110,7 @@ volatile u8 __iomem *auxio_power_register = NULL;
 
 void __init auxio_power_probe(void)
 {
-	struct linux_prom_registers regs;
+	struct freax_prom_registers regs;
 	phandle node;
 	struct resource r;
 

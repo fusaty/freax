@@ -6,17 +6,17 @@
  * Author: Bard Liao <bardliao@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/spi/spi.h>
-#include <linux/dmi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/spi/spi.h>
+#include <freax/dmi.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -83,7 +83,7 @@
 	};
 
 	watchdog { /* TPS3813 */
-		compatible = "linux,wdt-gpio";
+		compatible = "freax,wdt-gpio";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_watchdog_gpio>;
 		always-running;

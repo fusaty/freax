@@ -10,7 +10,7 @@
  * Heavily based on the vDSO linker scripts for other archs.
  */
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
 
@@ -67,7 +67,7 @@ PHDRS
 
 VERSION
 {
-	LINUX_2.6 {
+	freax_2.6 {
 	global:
 		__vdso_clock_gettime;
 		__vdso_gettimeofday;

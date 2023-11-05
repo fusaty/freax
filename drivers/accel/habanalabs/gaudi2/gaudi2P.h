@@ -10,13 +10,13 @@
 
 #include <uapi/drm/habanalabs_accel.h>
 #include "../common/habanalabs.h"
-#include <linux/habanalabs/hl_boot_if.h>
+#include <freax/habanalabs/hl_boot_if.h>
 #include "../include/gaudi2/gaudi2.h"
 #include "../include/gaudi2/gaudi2_packets.h"
 #include "../include/gaudi2/gaudi2_fw_if.h"
 #include "../include/gaudi2/gaudi2_async_events.h"
 
-#define GAUDI2_LINUX_FW_FILE	"habanalabs/gaudi2/gaudi2-fit.itb"
+#define GAUDI2_freax_FW_FILE	"habanalabs/gaudi2/gaudi2-fit.itb"
 #define GAUDI2_BOOT_FIT_FILE	"habanalabs/gaudi2/gaudi2-boot-fit.itb"
 
 #define MMU_PAGE_TABLES_INITIAL_SIZE	0x10000000	/* 256MB */

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2012 Sven Schnelle <svens@stackframe.org>
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/rtc.h>
+#include <freax/types.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #define DS2404_STATUS_REG 0x200
 #define DS2404_CONTROL_REG 0x201

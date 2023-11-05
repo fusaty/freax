@@ -6,7 +6,7 @@
 #ifndef _INTEL_PCH_REFCLK_H_
 #define _INTEL_PCH_REFCLK_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 struct intel_crtc_state;

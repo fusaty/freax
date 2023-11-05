@@ -3,14 +3,14 @@
  * Copyright (C) 2012 Stefan Roese <sr@denx.de>
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
 #include <asm/unaligned.h>
 
 #define FIRMWARE_NAME	"lattice-ecp3.bit"

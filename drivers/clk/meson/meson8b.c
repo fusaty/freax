@@ -7,14 +7,14 @@
  * Michael Turquette <mturquette@baylibre.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_address.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
 
 #include "meson8b.h"
 #include "clk-regmap.h"

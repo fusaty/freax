@@ -2,7 +2,7 @@
 #ifndef ASM_KVM_SMM_H
 #define ASM_KVM_SMM_H
 
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 
 #ifdef CONFIG_KVM_SMM
 

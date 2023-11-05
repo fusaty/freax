@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  PC Speaker beeper driver for Linux
+ *  PC Speaker beeper driver for freax
  *
  *  Copyright (c) 2002 Vojtech Pavlik
  *  Copyright (c) 1992 Orest Zborowski
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i8253.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i8253.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/timex.h>
+#include <freax/io.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("PC Speaker beeper driver");

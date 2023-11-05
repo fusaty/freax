@@ -5,10 +5,10 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/ktime.h>
-#include <linux/io.h>
-#include <linux/processor.h>
-#include <linux/types.h>
+#include <freax/ktime.h>
+#include <freax/io.h>
+#include <freax/processor.h>
+#include <freax/types.h>
 
 #include <asm-generic/bug.h>
 

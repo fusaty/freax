@@ -8,9 +8,9 @@
 	.text
 #define _pa(x)          ((x) - __START_KERNEL_map)
 
-#include <linux/elfnote.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/elfnote.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/segment.h>
 #include <asm/asm.h>
 #include <asm/boot.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * Netlink routines for CIFS
  *
@@ -6,8 +6,8 @@
  */
 
 
-#ifndef _UAPILINUX_CIFS_NETLINK_H
-#define _UAPILINUX_CIFS_NETLINK_H
+#ifndef _UAPIfreax_CIFS_NETLINK_H
+#define _UAPIfreax_CIFS_NETLINK_H
 
 #define CIFS_GENL_NAME			"cifs"
 #define CIFS_GENL_VERSION		0x1
@@ -60,4 +60,4 @@ enum cifs_swn_resource_state {
 	CIFS_SWN_RESOURCE_STATE_UNAVAILABLE = 0xFF
 };
 
-#endif /* _UAPILINUX_CIFS_NETLINK_H */
+#endif /* _UAPIfreax_CIFS_NETLINK_H */

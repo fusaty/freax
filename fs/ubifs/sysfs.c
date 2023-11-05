@@ -8,7 +8,7 @@
  */
 
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 #include "ubifs.h"
 
 enum attr_id_t {

@@ -8,8 +8,8 @@
 #ifndef __CGX_FW_INTF_H__
 #define __CGX_FW_INTF_H__
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
 
 #define CGX_FIRMWARE_MAJOR_VER		1
 #define CGX_FIRMWARE_MINOR_VER		0

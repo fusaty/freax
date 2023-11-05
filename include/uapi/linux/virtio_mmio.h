@@ -32,8 +32,8 @@
  * SUCH DAMAGE.
  */
 
-#ifndef _LINUX_VIRTIO_MMIO_H
-#define _LINUX_VIRTIO_MMIO_H
+#ifndef _freax_VIRTIO_MMIO_H
+#define _freax_VIRTIO_MMIO_H
 
 /*
  * Control registers

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/kernel.h>
-#include <linux/key.h>
+#include <freax/kernel.h>
+#include <freax/key.h>
 #include <keys/asymmetric-type.h>
 
 int x509_load_certificate_list(const u8 cert_list[],

@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/jffs2.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/jffs2.h>
 #include "compr.h"
 
 /* _compress returns the compressed size, -1 if bigger */

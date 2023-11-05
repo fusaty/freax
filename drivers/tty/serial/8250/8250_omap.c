@@ -8,27 +8,27 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/console.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
-#include <linux/pm_domain.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/serial_8250.h>
+#include <freax/serial_reg.h>
+#include <freax/tty_flip.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/of_irq.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/console.h>
+#include <freax/pm_qos.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/dma-mapping.h>
+#include <freax/sys_soc.h>
+#include <freax/pm_domain.h>
 
 #include "8250.h"
 

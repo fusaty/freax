@@ -10,10 +10,10 @@
 #include <crypto/internal/chacha.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/sizes.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/cpufeature.h>
+#include <freax/sizes.h>
 #include <asm/simd.h>
 #include <asm/switch_to.h>
 
@@ -211,7 +211,7 @@ module_cpu_feature_match(PPC_MODULE_FEATURE_P10, chacha_p10_init);
 module_exit(chacha_p10_exit);
 
 MODULE_DESCRIPTION("ChaCha and XChaCha stream ciphers (P10 accelerated)");
-MODULE_AUTHOR("Danny Tsen <dtsen@linux.ibm.com>");
+MODULE_AUTHOR("Danny Tsen <dtsen@freax.ibm.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS_CRYPTO("chacha20");
 MODULE_ALIAS_CRYPTO("chacha20-p10");

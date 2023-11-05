@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2017-2018 Netronome Systems, Inc. */
 
-#include <linux/bug.h>
-#include <linux/lockdep.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/bug.h>
+#include <freax/lockdep.h>
+#include <freax/rcupdate.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 
 #include "nfpcore/nfp_cpp.h"
 #include "nfpcore/nfp_nffw.h"

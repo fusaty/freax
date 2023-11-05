@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2015-2018 Netronome Systems, Inc. */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/jiffies.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #include "nfp_cpp.h"
 #include "nfp6000/nfp6000.h"

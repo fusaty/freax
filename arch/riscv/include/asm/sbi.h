@@ -7,8 +7,8 @@
 #ifndef _ASM_RISCV_SBI_H
 #define _ASM_RISCV_SBI_H
 
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <freax/types.h>
+#include <freax/cpumask.h>
 
 #ifdef CONFIG_RISCV_SBI
 enum sbi_ext_id {
@@ -160,7 +160,7 @@ enum sbi_pmu_hw_generic_events_t {
 /**
  * Special "firmware" events provided by the firmware, even if the hardware
  * does not support performance events. These events are encoded as a raw
- * event type in Linux kernel perf framework.
+ * event type in freax kernel perf framework.
  */
 enum sbi_pmu_fw_generic_events_t {
 	SBI_PMU_FW_MISALIGNED_LOAD	= 0,
@@ -331,7 +331,7 @@ static inline unsigned long sbi_mk_version(unsigned long major,
 		SBI_SPEC_VERSION_MAJOR_SHIFT) | minor;
 }
 
-int sbi_err_map_linux_errno(int err);
+int sbi_err_map_freax_errno(int err);
 #else /* CONFIG_RISCV_SBI */
 static inline int sbi_remote_fence_i(const struct cpumask *cpu_mask) { return -1; }
 static inline void sbi_init(void) {}

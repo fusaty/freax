@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_TPM_EVENTLOG_H__
-#define __LINUX_TPM_EVENTLOG_H__
+#ifndef __freax_TPM_EVENTLOG_H__
+#define __freax_TPM_EVENTLOG_H__
 
-#include <linux/tpm.h>
+#include <freax/tpm.h>
 
 #define TCG_EVENT_NAME_LEN_MAX	255
 #define MAX_TEXT_EVENT		1000	/* Max event string length */

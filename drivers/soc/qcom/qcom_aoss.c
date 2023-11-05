@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2019, Linaro Ltd
  */
-#include <linux/clk-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/qcom_aoss.h>
+#include <freax/clk-provider.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/thermal.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/qcom_aoss.h>
 
 #define QMP_DESC_MAGIC			0x0
 #define QMP_DESC_VERSION		0x4
@@ -25,7 +25,7 @@
 #define QMP_DESC_UCORE_MBOX_SIZE	0x1c
 #define QMP_DESC_UCORE_MBOX_OFFSET	0x20
 
-/* Linux-side offsets */
+/* freax-side offsets */
 #define QMP_DESC_MCORE_LINK_STATE	0x24
 #define QMP_DESC_MCORE_LINK_STATE_ACK	0x28
 #define QMP_DESC_MCORE_CH_STATE		0x2c

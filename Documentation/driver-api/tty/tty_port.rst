@@ -58,7 +58,7 @@ Modem Signals
 TTY Port Reference
 ==================
 
-.. kernel-doc:: include/linux/tty_port.h
+.. kernel-doc:: include/freax/tty_port.h
    :identifiers: tty_port
 
 ----
@@ -66,5 +66,5 @@ TTY Port Reference
 TTY Port Operations Reference
 =============================
 
-.. kernel-doc:: include/linux/tty_port.h
+.. kernel-doc:: include/freax/tty_port.h
    :identifiers: tty_port_operations

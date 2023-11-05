@@ -6,20 +6,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/regmap.h>
-#include <linux/sys_soc.h>
-#include <linux/mfd/syscon.h>
-#include <linux/phy/phy.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/phy.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/regmap.h>
+#include <freax/sys_soc.h>
+#include <freax/mfd/syscon.h>
+#include <freax/phy/phy.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/phy.h>
 
 #define USB_MDIO_CTRL_PHY_BUSY BIT(7)
 #define USB_MDIO_CTRL_PHY_WRITE BIT(0)

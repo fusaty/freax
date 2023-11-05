@@ -11,19 +11,19 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/skbuff.h>
+#include <freax/atomic.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/skbuff.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

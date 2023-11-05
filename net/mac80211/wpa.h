@@ -7,8 +7,8 @@
 #ifndef WPA_H
 #define WPA_H
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include "ieee80211_i.h"
 
 ieee80211_tx_result

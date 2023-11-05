@@ -9,7 +9,7 @@
 #ifndef __CLK_CGU_H
 #define __CLK_CGU_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 struct lgm_clk_mux {
 	struct clk_hw hw;

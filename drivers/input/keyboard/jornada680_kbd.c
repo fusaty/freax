@@ -13,14 +13,14 @@
  *  Copyright (C) 2000 Niibe Yutaka (HP620 Keyb translation table)
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/delay.h>
 #include <asm/io.h>

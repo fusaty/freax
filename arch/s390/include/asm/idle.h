@@ -8,8 +8,8 @@
 #ifndef _S390_IDLE_H
 #define _S390_IDLE_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/device.h>
 
 struct s390_idle_data {
 	unsigned long idle_count;

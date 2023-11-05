@@ -6,17 +6,17 @@
  *
  * TODO: Currently CRC is not supported in this driver
  */
-#include <linux/bsearch.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
+#include <freax/bsearch.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
+#include <freax/gpio/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 /* AD5758 registers definition */
 #define AD5758_NOP				0x00

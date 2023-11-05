@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KCOV_H
-#define _LINUX_KCOV_H
+#ifndef _freax_KCOV_H
+#define _freax_KCOV_H
 
-#include <linux/sched.h>
-#include <uapi/linux/kcov.h>
+#include <freax/sched.h>
+#include <uapi/freax/kcov.h>
 
 struct task_struct;
 
@@ -107,4 +107,4 @@ static inline void kcov_remote_start_usb_softirq(u64 id) {}
 static inline void kcov_remote_stop_softirq(void) {}
 
 #endif /* CONFIG_KCOV */
-#endif /* _LINUX_KCOV_H */
+#endif /* _freax_KCOV_H */

@@ -4,13 +4,13 @@
 //
 //Copyright 2016 Advanced Micro Devices, Inc.
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/pm_runtime.h>
+#include <freax/delay.h>
 
 #include "acp3x.h"
 

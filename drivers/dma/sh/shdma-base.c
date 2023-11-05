@@ -10,15 +10,15 @@
  * Copyright (C) 2007 Freescale Semiconductor, Inc. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/shdma-base.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/delay.h>
+#include <freax/shdma-base.h>
+#include <freax/dmaengine.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "../dmaengine.h"
 

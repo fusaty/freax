@@ -4,7 +4,7 @@
 #include "iavf_type.h"
 #include "iavf_adminq.h"
 #include "iavf_prototype.h"
-#include <linux/avf/virtchnl.h>
+#include <freax/avf/virtchnl.h>
 
 /**
  * iavf_aq_str - convert AQ err code to a string

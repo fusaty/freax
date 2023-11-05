@@ -1,6 +1,6 @@
 What:		/sys/bus/platform/devices/occ-hwmon.X/ffdc
 KernelVersion:	5.15
-Contact:	eajames@linux.ibm.com
+Contact:	eajames@freax.ibm.com
 Description:
 		Contains the First Failure Data Capture from the SBEFIFO
 		hardware, if there is any from a previous transfer. Otherwise,

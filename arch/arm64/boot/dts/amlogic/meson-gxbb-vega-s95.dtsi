@@ -20,7 +20,7 @@
 
 	spdif_dit: audio-codec-0 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -212,7 +212,7 @@
 	status = "okay";
 	pinctrl-0 = <&remote_input_ao_pins>;
 	pinctrl-names = "default";
-	linux,rc-map-name = "rc-vega-s9x";
+	freax,rc-map-name = "rc-vega-s9x";
 };
 
 &pwm_ef {

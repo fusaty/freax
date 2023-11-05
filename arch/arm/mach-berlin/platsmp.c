@@ -5,10 +5,10 @@
  * Antoine Ténart <antoine.tenart@free-electrons.com>
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

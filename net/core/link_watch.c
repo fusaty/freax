@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux network device link state notification
+ * freax network device link state notification
  *
  * Author:
  *     Stefan Rompf <sux@loplof.de>
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/if.h>
 #include <net/sock.h>
 #include <net/pkt_sched.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/rtnetlink.h>
+#include <freax/jiffies.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 #include "dev.h"
 

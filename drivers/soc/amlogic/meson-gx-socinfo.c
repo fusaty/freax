@@ -5,16 +5,16 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
+#include <freax/bitfield.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
 #define AO_SEC_SD_CFG8		0xe0
 #define AO_SEC_SOCINFO_OFFSET	AO_SEC_SD_CFG8

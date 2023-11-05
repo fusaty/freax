@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/kmsg.c
+ *  freax/fs/proc/kmsg.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/fs.h>
-#include <linux/syslog.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/poll.h>
+#include <freax/proc_fs.h>
+#include <freax/fs.h>
+#include <freax/syslog.h>
 
 #include <asm/io.h>
 

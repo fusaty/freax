@@ -46,15 +46,15 @@
 *	First release to the public
 */
 
-#include <linux/kernel.h>
-#include <linux/unistd.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>	/* cond_resched() */
+#include <freax/kernel.h>
+#include <freax/unistd.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>	/* cond_resched() */
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 #include "smapi.h"
 #include "mwavedd.h"

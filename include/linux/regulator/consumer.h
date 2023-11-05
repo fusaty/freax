@@ -28,11 +28,11 @@
  *   in normal mode for loads > 10mA and in IDLE mode for load <= 10mA.
  */
 
-#ifndef __LINUX_REGULATOR_CONSUMER_H_
-#define __LINUX_REGULATOR_CONSUMER_H_
+#ifndef __freax_REGULATOR_CONSUMER_H_
+#define __freax_REGULATOR_CONSUMER_H_
 
-#include <linux/err.h>
-#include <linux/suspend.h>
+#include <freax/err.h>
+#include <freax/suspend.h>
 
 struct device;
 struct notifier_block;

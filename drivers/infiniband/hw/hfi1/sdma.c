@@ -3,14 +3,14 @@
  * Copyright(c) 2015 - 2018 Intel Corporation.
  */
 
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <freax/spinlock.h>
+#include <freax/seqlock.h>
+#include <freax/netdevice.h>
+#include <freax/moduleparam.h>
+#include <freax/bitops.h>
+#include <freax/timer.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
 
 #include "hfi.h"
 #include "common.h"

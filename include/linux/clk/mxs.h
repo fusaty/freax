@@ -3,8 +3,8 @@
  * Copyright (C) 2013 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_CLK_MXS_H
-#define __LINUX_CLK_MXS_H
+#ifndef __freax_CLK_MXS_H
+#define __freax_CLK_MXS_H
 
 int mxs_saif_clkmux_select(unsigned int clkmux);
 

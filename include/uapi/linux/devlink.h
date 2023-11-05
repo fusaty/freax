@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * include/uapi/linux/devlink.h - Network physical device Netlink interface
+ * include/uapi/freax/devlink.h - Network physical device Netlink interface
  * Copyright (c) 2016 Mellanox Technologies. All rights reserved.
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  *
@@ -10,10 +10,10 @@
  * (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_DEVLINK_H_
-#define _UAPI_LINUX_DEVLINK_H_
+#ifndef _UAPI_freax_DEVLINK_H_
+#define _UAPI_freax_DEVLINK_H_
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #define DEVLINK_GENL_NAME "devlink"
 #define DEVLINK_GENL_VERSION 0x1
@@ -704,4 +704,4 @@ enum devlink_port_fn_opstate {
 	DEVLINK_PORT_FN_OPSTATE_ATTACHED,
 };
 
-#endif /* _UAPI_LINUX_DEVLINK_H_ */
+#endif /* _UAPI_freax_DEVLINK_H_ */

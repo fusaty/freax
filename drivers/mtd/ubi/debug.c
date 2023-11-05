@@ -6,10 +6,10 @@
  */
 
 #include "ubi.h"
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
 
 
 /**

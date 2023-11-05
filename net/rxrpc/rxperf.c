@@ -6,8 +6,8 @@
  */
 
 #define pr_fmt(fmt) "rxperf: " fmt
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #define RXRPC_TRACE_ONLY_DEFINE_ENUMS

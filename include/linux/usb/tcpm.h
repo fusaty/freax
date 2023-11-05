@@ -3,11 +3,11 @@
  * Copyright 2015-2017 Google, Inc
  */
 
-#ifndef __LINUX_USB_TCPM_H
-#define __LINUX_USB_TCPM_H
+#ifndef __freax_USB_TCPM_H
+#define __freax_USB_TCPM_H
 
-#include <linux/bitops.h>
-#include <linux/usb/typec.h>
+#include <freax/bitops.h>
+#include <freax/usb/typec.h>
 #include "pd.h"
 
 enum typec_cc_status {
@@ -174,4 +174,4 @@ void tcpm_tcpc_reset(struct tcpm_port *port);
 void tcpm_port_clean(struct tcpm_port *port);
 bool tcpm_port_is_toggling(struct tcpm_port *port);
 
-#endif /* __LINUX_USB_TCPM_H */
+#endif /* __freax_USB_TCPM_H */

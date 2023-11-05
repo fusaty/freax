@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CEPH_CLS_LOCK_CLIENT_H
-#define _LINUX_CEPH_CLS_LOCK_CLIENT_H
+#ifndef _freax_CEPH_CLS_LOCK_CLIENT_H
+#define _freax_CEPH_CLS_LOCK_CLIENT_H
 
-#include <linux/ceph/osd_client.h>
+#include <freax/ceph/osd_client.h>
 
 enum ceph_cls_lock_type {
 	CEPH_CLS_LOCK_NONE = 0,

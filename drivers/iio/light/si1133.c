@@ -6,16 +6,16 @@
  * Copyright 2018 Maxime Roussin-Belanger <maxime.roussinbelanger@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
-#include <linux/util_macros.h>
+#include <freax/util_macros.h>
 
 #include <asm/unaligned.h>
 

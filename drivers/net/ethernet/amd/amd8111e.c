@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-/* Advanced  Micro Devices Inc. AMD8111E Linux Network Driver
+/* Advanced  Micro Devices Inc. AMD8111E freax Network Driver
  * Copyright (C) 2004 Advanced Micro Devices
  *
  * Copyright 2001,2002 Jeff Garzik <jgarzik@mandrakesoft.com> [ 8139cp.c,tg3.c ]
@@ -54,27 +54,27 @@ Revision History:
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/ctype.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/if_vlan.h>
+#include <freax/ctype.h>
+#include <freax/crc32.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #if IS_ENABLED(CONFIG_VLAN_8021Q)
 #define AMD8111E_VLAN_TAG_USED 1

@@ -15,7 +15,7 @@
 
 	configurations {
 		pcb091 {
-			description = "Luton Linux kernel";
+			description = "Luton freax kernel";
 			kernel = "kernel";
 			fdt = "fdt-luton_pcb091";
 		};

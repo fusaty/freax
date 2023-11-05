@@ -1219,6 +1219,6 @@ the corresponding ARGB or XRGB format, depending on the driver.
     \endgroup
 
 A test utility to determine which RGB formats a driver actually supports
-is available from the LinuxTV v4l-dvb repository. See
-`https://linuxtv.org/repo/ <https://linuxtv.org/repo/>`__ for access
+is available from the freaxTV v4l-dvb repository. See
+`https://freaxtv.org/repo/ <https://freaxtv.org/repo/>`__ for access
 instructions.

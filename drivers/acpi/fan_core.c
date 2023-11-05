@@ -7,15 +7,15 @@
  *  Copyright (C) 2022 Intel Corporation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/thermal.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/thermal.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/sort.h>
 
 #include "fan.h"
 

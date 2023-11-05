@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/audit.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
+#include <freax/audit.h>
+#include <freax/elf.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/ptrace.h>
+#include <freax/regset.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/signal.h>
+#include <freax/smp.h>
+#include <freax/uaccess.h>
+#include <freax/user.h>
 
 #include <asm/thread_info.h>
 #include <asm/page.h>

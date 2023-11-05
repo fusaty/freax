@@ -3,13 +3,13 @@
  * custom_method.c - debugfs interface for customizing ACPI control method
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/acpi.h>
-#include <linux/security.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/acpi.h>
+#include <freax/security.h>
 
 #include "internal.h"
 

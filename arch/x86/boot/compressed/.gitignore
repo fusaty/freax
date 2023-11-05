@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 relocs
-vmlinux.bin.all
-vmlinux.relocs
-vmlinux.lds
+vmfreax.bin.all
+vmfreax.relocs
+vmfreax.lds
 mkpiggy
 piggy.S

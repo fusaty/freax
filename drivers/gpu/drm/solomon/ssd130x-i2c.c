@@ -8,8 +8,8 @@
  * Based on drivers/video/fbdev/ssd1307fb.c
  * Copyright 2012 Free Electrons
  */
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
 
 #include "ssd130x.h"
 

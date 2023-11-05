@@ -5,13 +5,13 @@
  * Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include <sound/asoundef.h>

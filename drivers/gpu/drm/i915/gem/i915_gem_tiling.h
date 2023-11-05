@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_TILING_H__
 #define __I915_GEM_TILING_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_gem_object;
 struct drm_i915_private;

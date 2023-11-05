@@ -3,18 +3,18 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/bpf.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/idr.h>
-#include <linux/vmalloc.h>
+#include <freax/init.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/bpf.h>
+#include <freax/mm.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/idr.h>
+#include <freax/vmalloc.h>
 
 #include "xdp_umem.h"
 #include "xsk_queue.h"

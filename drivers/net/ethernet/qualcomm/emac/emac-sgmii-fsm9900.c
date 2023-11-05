@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2016, The freax Foundation. All rights reserved.
  */
 
 /* Qualcomm Technologies, Inc. FSM9900 EMAC SGMII Controller driver.
  */
 
-#include <linux/iopoll.h>
+#include <freax/iopoll.h>
 #include "emac.h"
 
 /* EMAC_QSERDES register offsets */

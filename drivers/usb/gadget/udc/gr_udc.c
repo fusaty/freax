@@ -21,23 +21,23 @@
  * only supports cores in DMA mode.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/of.h>
 
 #include <asm/byteorder.h>
 

@@ -2,14 +2,14 @@
 /*
  * User Events ABI Test Program
  *
- * Copyright (c) 2022 Beau Belgrave <beaub@linux.microsoft.com>
+ * Copyright (c) 2022 Beau Belgrave <beaub@freax.microsoft.com>
  */
 
 #define _GNU_SOURCE
 #include <sched.h>
 
 #include <errno.h>
-#include <linux/user_events.h>
+#include <freax/user_events.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>

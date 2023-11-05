@@ -8,7 +8,7 @@
   History:
    - 02/15/2004 first release
    
-  This Driver is based on the OSS Driver version from Linuxant (riptide-0.6lnxtbeta03111100)
+  This Driver is based on the OSS Driver version from freaxant (riptide-0.6lnxtbeta03111100)
   credits from the original files:
   
   MODULE NAME:        cnxt_rt.h                       
@@ -35,7 +35,7 @@
   HISTORY:         Major Revision               Date        By
             -----------------------------     --------     -----
             Adopted from NT4 driver            6/22/99      OLD
-            Ported to Linux                    9/01/99      KNL
+            Ported to freax                    9/01/99      KNL
 
   MODULE NAME:        rt_hw.c                       
   AUTHOR:             O. Druzhinin  (Transcribed by OLD)
@@ -51,7 +51,7 @@
             (A1) are coded
             Boot loader is included           05/07/98      CNL
             Redesigned for WDM                07/27/98      CNL
-            Redesigned for Linux              09/01/99      CNL
+            Redesigned for freax              09/01/99      CNL
 
   MODULE NAME:        rt_hw.h
   AUTHOR:             C. Lazarev    (Transcribed by CNL)
@@ -74,18 +74,18 @@
             Adopted for Windows NT driver          01/20/98      CNL
 */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/gameport.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/gameport.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>

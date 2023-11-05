@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/asm-offsets.h>
 #include <asm/cache.h>
 #include <asm/code-patching-asm.h>
@@ -349,7 +349,7 @@ kvmppc_p9_exit_interrupt:
 /*
  * Took an interrupt somewhere right before HRFID to guest, so registers are
  * in a bad way. Return things hopefully enough to run host virtual code and
- * run the Linux interrupt handler (SRESET or MCE) to print something useful.
+ * run the freax interrupt handler (SRESET or MCE) to print something useful.
  *
  * We could be really clever and save all host registers in known locations
  * before setting HSTATE_IN_GUEST, then restoring them all here, and setting

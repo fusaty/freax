@@ -32,7 +32,7 @@
 
 #ifndef _HNS_ROCE_COMMON_H
 #define _HNS_ROCE_COMMON_H
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define roce_write(dev, reg, val)	writel((val), (dev)->reg_base + (reg))
 #define roce_read(dev, reg)		readl((dev)->reg_base + (reg))

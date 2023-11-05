@@ -5,18 +5,18 @@
  * Copyright (C) 2016 Rafał Miłecki <zajec5@gmail.com>
  */
 
-#include <linux/bcma/bcma.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bcma/bcma.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 struct bcm_ns_usb2 {
 	struct device *dev;

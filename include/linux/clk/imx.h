@@ -5,10 +5,10 @@
  * Author: Lee Jones <lee.jones@linaro.org>
  */
 
-#ifndef __LINUX_CLK_IMX_H
-#define __LINUX_CLK_IMX_H
+#ifndef __freax_CLK_IMX_H
+#define __freax_CLK_IMX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 void imx6sl_set_wait_clk(bool enter);
 

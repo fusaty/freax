@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Crypto user configuration API.
  *
@@ -19,10 +19,10 @@
  * 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef _UAPI_LINUX_CRYPTOUSER_H
-#define _UAPI_LINUX_CRYPTOUSER_H
+#ifndef _UAPI_freax_CRYPTOUSER_H
+#define _UAPI_freax_CRYPTOUSER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Netlink configuration messages.  */
 enum {
@@ -202,4 +202,4 @@ struct crypto_report_acomp {
 #define CRYPTO_REPORT_MAXSIZE (sizeof(struct crypto_user_alg) + \
 			       sizeof(struct crypto_report_blkcipher))
 
-#endif /* _UAPI_LINUX_CRYPTOUSER_H */
+#endif /* _UAPI_freax_CRYPTOUSER_H */

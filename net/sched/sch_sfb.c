@@ -12,13 +12,13 @@
  * http://www.thefengs.com/wuchang/blue/CSE-TR-387-99.pdf
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/siphash.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/random.h>
+#include <freax/siphash.h>
 #include <net/ip.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2018-2021 Intel Corporation */
 
-#ifndef __LINUX_PECI_H
-#define __LINUX_PECI_H
+#ifndef __freax_PECI_H
+#define __freax_PECI_H
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 /*
  * Currently we don't support any PECI command over 32 bytes.
@@ -109,4 +109,4 @@ struct peci_request {
 	} rx, tx;
 };
 
-#endif /* __LINUX_PECI_H */
+#endif /* __freax_PECI_H */

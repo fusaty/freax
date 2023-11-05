@@ -5,8 +5,8 @@
 #if !defined(_TRACE_WORKQUEUE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_WORKQUEUE_H
 
-#include <linux/tracepoint.h>
-#include <linux/workqueue.h>
+#include <freax/tracepoint.h>
+#include <freax/workqueue.h>
 
 struct pool_workqueue;
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/ftrace.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/ftrace.h>
 #ifndef CONFIG_ARM64
 #include <asm/asm-offsets.h>
 #endif

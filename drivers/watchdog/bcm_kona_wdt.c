@@ -4,14 +4,14 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 #define SECWDOG_CTRL_REG		0x00000000
 #define SECWDOG_COUNT_REG		0x00000004

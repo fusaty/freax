@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 
 /* BMP580 specific registers */

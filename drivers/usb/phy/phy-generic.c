@@ -11,18 +11,18 @@
  *	autonomous such as isp1504, isp1707, etc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/usb_phy_generic.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/regulator/consumer.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
 
 #include "phy-generic.h"
 

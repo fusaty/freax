@@ -52,7 +52,7 @@
 
 		button-hook {
 			label = "HOOK";
-			linux,code = <KEY_O>;
+			freax,code = <KEY_O>;
 			gpios = <&gpio_asiu 48 0>;
 		};
 	};

@@ -7,12 +7,12 @@
  * Gregory Clement <gregory.clement@free-electrons.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
 
 #define RTC_STATUS	    0x0
 #define RTC_STATUS_ALARM1	    BIT(0)

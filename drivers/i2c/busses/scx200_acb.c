@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
-#include <linux/scx200.h>
+#include <freax/scx200.h>
 
 MODULE_AUTHOR("Christer Weinigel <wingel@nano-system.com>");
 MODULE_DESCRIPTION("NatSemi SCx200 ACCESS.bus Driver");

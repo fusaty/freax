@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <freax/export.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
 
 #include <asm/cacheflush.h>
 #include <asm/traps.h>

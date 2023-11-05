@@ -4,15 +4,15 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#ifndef LINUX_CB710_DRIVER_H
-#define LINUX_CB710_DRIVER_H
+#ifndef freax_CB710_DRIVER_H
+#define freax_CB710_DRIVER_H
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/mmc/host.h>
 
 struct cb710_slot;
 
@@ -121,17 +121,17 @@ void cb710_dump_regs(struct cb710_chip *chip, unsigned dump);
 #define CB710_DUMP_ACCESS_ALL	0x700
 #define CB710_DUMP_ACCESS_MASK	0x700
 
-#endif /* LINUX_CB710_DRIVER_H */
+#endif /* freax_CB710_DRIVER_H */
 /*
  *  cb710/sgbuf2.h
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#ifndef LINUX_CB710_SG_H
-#define LINUX_CB710_SG_H
+#ifndef freax_CB710_SG_H
+#define freax_CB710_SG_H
 
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
+#include <freax/highmem.h>
+#include <freax/scatterlist.h>
 
 /*
  * 32-bit PIO mapping sg iterator
@@ -198,4 +198,4 @@ static inline void cb710_sg_dwiter_read_to_io(struct sg_mapping_iter *miter,
 		iowrite32(cb710_sg_dwiter_read_next_block(miter), port);
 }
 
-#endif /* LINUX_CB710_SG_H */
+#endif /* freax_CB710_SG_H */

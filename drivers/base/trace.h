@@ -3,7 +3,7 @@
  * Device core Trace Support
  * Copyright (C) 2021, Intel Corporation
  *
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  */
 
 #undef TRACE_SYSTEM
@@ -12,9 +12,9 @@
 #if !defined(__DEV_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __DEV_TRACE_H
 
-#include <linux/device.h>
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/tracepoint.h>
+#include <freax/types.h>
 
 DECLARE_EVENT_CLASS(devres,
 	TP_PROTO(struct device *dev, const char *op, void *node, const char *name, size_t size),

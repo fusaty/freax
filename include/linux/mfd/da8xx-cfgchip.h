@@ -5,10 +5,10 @@
  * Copyright (C) 2016 David Lechner <david@lechnology.com>
  */
 
-#ifndef __LINUX_MFD_DA8XX_CFGCHIP_H
-#define __LINUX_MFD_DA8XX_CFGCHIP_H
+#ifndef __freax_MFD_DA8XX_CFGCHIP_H
+#define __freax_MFD_DA8XX_CFGCHIP_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /* register offset (32-bit registers) */
 #define CFGCHIP(n)				((n) * 4)
@@ -141,4 +141,4 @@
 /* CFGCHIP4 (McASP0 AMUNTEIN) register bits */
 #define CFGCHIP4_AMUTECLR0			BIT(0)
 
-#endif /* __LINUX_MFD_DA8XX_CFGCHIP_H */
+#endif /* __freax_MFD_DA8XX_CFGCHIP_H */

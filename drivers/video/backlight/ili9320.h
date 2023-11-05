@@ -6,7 +6,7 @@
  * Copyright 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/
+ * http://armfreax.simtec.co.uk/
 */
 
 /* Holder for register and value pairs. */

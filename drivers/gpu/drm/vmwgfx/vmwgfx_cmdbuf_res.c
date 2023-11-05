@@ -28,7 +28,7 @@
 #include "vmwgfx_drv.h"
 #include "vmwgfx_resource_priv.h"
 
-#include <linux/hashtable.h>
+#include <freax/hashtable.h>
 
 #define VMW_CMDBUF_RES_MAN_HT_ORDER 12
 

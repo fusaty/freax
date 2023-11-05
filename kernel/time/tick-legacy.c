@@ -4,9 +4,9 @@
  * consolidated here from m68k/ia64/parisc/arm.
  */
 
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/timekeeper_internal.h>
+#include <freax/irq.h>
+#include <freax/profile.h>
+#include <freax/timekeeper_internal.h>
 
 #include "tick-internal.h"
 

@@ -6,23 +6,23 @@
  * Copyright (c) 2007, MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/property.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
+#include <freax/gpio/driver.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/gpio-davinci.h>
+#include <freax/property.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/spinlock.h>
+#include <freax/pm_runtime.h>
 
 #define MAX_REGS_BANKS 5
 #define MAX_INT_PER_BANK 32

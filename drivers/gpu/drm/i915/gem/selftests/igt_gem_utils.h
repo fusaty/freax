@@ -7,7 +7,7 @@
 #ifndef __IGT_GEM_UTILS_H__
 #define __IGT_GEM_UTILS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "i915_vma.h"
 

@@ -7,11 +7,11 @@ boot	:= arch/loongarch/boot
 
 KBUILD_DEFCONFIG := loongson3_defconfig
 
-image-name-y			:= vmlinux
+image-name-y			:= vmfreax
 image-name-$(CONFIG_EFI_ZBOOT)	:= vmlinuz
 
 ifndef CONFIG_EFI_STUB
-KBUILD_IMAGE	:= $(boot)/vmlinux.elf
+KBUILD_IMAGE	:= $(boot)/vmfreax.elf
 else
 KBUILD_IMAGE	:= $(boot)/$(image-name-y).efi
 endif
@@ -37,7 +37,7 @@ endif
 
 ifneq ($(SUBARCH),$(ARCH))
   ifeq ($(CROSS_COMPILE),)
-    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-linux-  $(tool-archpref)-linux-gnu-  $(tool-archpref)-unknown-linux-gnu-)
+    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-freax-  $(tool-archpref)-freax-gnu-  $(tool-archpref)-unknown-freax-gnu-)
   endif
 endif
 
@@ -47,7 +47,7 @@ cflags-y		+= -mabi=lp64s
 endif
 
 cflags-y			+= -pipe -msoft-float
-LDFLAGS_vmlinux			+= -static -n -nostdlib
+LDFLAGS_vmfreax			+= -static -n -nostdlib
 
 # When the assembler supports explicit relocation hint, we must use it.
 # GCC may have -mexplicit-relocs off by default if it was built with an old
@@ -80,7 +80,7 @@ endif
 
 ifeq ($(CONFIG_RELOCATABLE),y)
 KBUILD_CFLAGS_KERNEL		+= -fPIE
-LDFLAGS_vmlinux			+= -static -pie --no-dynamic-linker -z notext
+LDFLAGS_vmfreax			+= -static -pie --no-dynamic-linker -z notext
 endif
 
 cflags-y += $(call cc-option, -mno-check-zero-division)
@@ -90,13 +90,13 @@ cflags-y += -fno-builtin-memcpy -fno-builtin-memmove -fno-builtin-memset
 endif
 
 load-y		= 0x9000000000200000
-bootvars-y	= VMLINUX_LOAD_ADDRESS=$(load-y)
+bootvars-y	= VMfreax_LOAD_ADDRESS=$(load-y)
 
 drivers-$(CONFIG_PCI)		+= arch/loongarch/pci/
 
 KBUILD_AFLAGS	+= $(cflags-y)
 KBUILD_CFLAGS	+= $(cflags-y)
-KBUILD_CPPFLAGS += -DVMLINUX_LOAD_ADDRESS=$(load-y)
+KBUILD_CPPFLAGS += -DVMfreax_LOAD_ADDRESS=$(load-y)
 
 # This is required to get dwarf unwinding tables into .debug_frame
 # instead of .eh_frame so we don't discard them.
@@ -140,7 +140,7 @@ vdso-install-y += arch/loongarch/vdso/vdso.so.dbg
 
 all:	$(notdir $(KBUILD_IMAGE))
 
-vmlinux.elf vmlinux.efi vmlinuz.efi: vmlinux
+vmfreax.elf vmfreax.efi vmlinuz.efi: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(bootvars-y) $(boot)/$@
 
 install:

@@ -6,18 +6,18 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/imu/adis.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/imu/adis.h>
 
 static int adis_update_scan_mode_burst(struct iio_dev *indio_dev,
 				       const unsigned long *scan_mask)

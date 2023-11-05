@@ -1,12 +1,12 @@
-#ifndef __LINUX_UMH_H__
-#define __LINUX_UMH_H__
+#ifndef __freax_UMH_H__
+#define __freax_UMH_H__
 
-#include <linux/gfp.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/workqueue.h>
-#include <linux/sysctl.h>
+#include <freax/gfp.h>
+#include <freax/stddef.h>
+#include <freax/errno.h>
+#include <freax/compiler.h>
+#include <freax/workqueue.h>
+#include <freax/sysctl.h>
 
 struct cred;
 struct file;
@@ -65,4 +65,4 @@ extern int usermodehelper_read_trylock(void);
 extern long usermodehelper_read_lock_wait(long timeout);
 extern void usermodehelper_read_unlock(void);
 
-#endif /* __LINUX_UMH_H__ */
+#endif /* __freax_UMH_H__ */

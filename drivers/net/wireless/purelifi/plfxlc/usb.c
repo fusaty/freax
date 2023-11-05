@@ -3,21 +3,21 @@
  * Copyright (c) 2021 pureLiFi
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/usb.h>
+#include <freax/workqueue.h>
+#include <freax/proc_fs.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/module.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
-#include <linux/sysfs.h>
+#include <freax/sysfs.h>
 
 #include "mac.h"
 #include "usb.h"

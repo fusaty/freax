@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/irq.c
+ *  freax/arch/arm/mach-mmp/irq.c
  *
  *  Generic IRQ handling, GPIO IRQ demultiplexing, etc.
  *  Copyright (C) 2008 - 2012 Marvell Technology Group Ltd.
@@ -9,16 +9,16 @@
  *              Haojian Zhuang <haojian.zhuang@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #include <asm/exception.h>
 #include <asm/hardirq.h>

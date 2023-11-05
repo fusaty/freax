@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_EXPORTFS_H
-#define LINUX_EXPORTFS_H 1
+#ifndef freax_EXPORTFS_H
+#define freax_EXPORTFS_H 1
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dentry;
 struct iattr;
@@ -279,4 +279,4 @@ extern struct dentry *generic_fh_to_parent(struct super_block *sb,
 	struct fid *fid, int fh_len, int fh_type,
 	struct inode *(*get_inode) (struct super_block *sb, u64 ino, u32 gen));
 
-#endif /* LINUX_EXPORTFS_H */
+#endif /* freax_EXPORTFS_H */

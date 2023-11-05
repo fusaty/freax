@@ -20,19 +20,19 @@
  * Geert Uytterhoeven.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #ifdef CONFIG_PPC_DCR
 #include <asm/dcr.h>

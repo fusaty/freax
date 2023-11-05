@@ -4,11 +4,11 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
 
 #include "iwl-drv.h"
 #include "iwl-csr.h"
@@ -29,7 +29,7 @@
  *
  ******************************************************************************/
 
-#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi driver for Linux"
+#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi driver for freax"
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_LICENSE("GPL");
 
@@ -262,7 +262,7 @@ static int iwl_request_firmware(struct iwl_drv *drv, bool first)
 		}
 
 		IWL_ERR(drv,
-			"check git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git\n");
+			"check git://git.kernel.org/pub/scm/freax/kernel/git/firmware/freax-firmware.git\n");
 		return -ENOENT;
 	}
 

@@ -7,10 +7,10 @@
 #ifndef __ASM_SH_DMA_H
 #define __ASM_SH_DMA_H
 
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/device.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/device.h>
 #include <asm-generic/dma.h>
 
 /*

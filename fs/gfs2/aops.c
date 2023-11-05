@@ -4,22 +4,22 @@
  * Copyright (C) 2004-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/mpage.h>
+#include <freax/fs.h>
+#include <freax/writeback.h>
+#include <freax/swap.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/backing-dev.h>
+#include <freax/uio.h>
 #include <trace/events/writeback.h>
-#include <linux/sched/signal.h>
+#include <freax/sched/signal.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -403,7 +403,7 @@ static int gfs2_jdata_writepages(struct address_space *mapping,
 }
 
 /**
- * stuffed_readpage - Fill in a Linux page with stuffed file data
+ * stuffed_readpage - Fill in a freax page with stuffed file data
  * @ip: the inode
  * @page: the page
  *
@@ -671,7 +671,7 @@ out:
 /**
  * gfs2_release_folio - free the metadata associated with a folio
  * @folio: the folio that's being released
- * @gfp_mask: passed from Linux VFS, ignored by us
+ * @gfp_mask: passed from freax VFS, ignored by us
  *
  * Calls try_to_free_buffers() to free the buffers and put the folio if the
  * buffers can be released.

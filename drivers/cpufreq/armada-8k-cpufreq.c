@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
 
 static const struct of_device_id __maybe_unused armada_8k_cpufreq_of_match[] = {
 	{ .compatible = "marvell,ap806-cpu-clock" },

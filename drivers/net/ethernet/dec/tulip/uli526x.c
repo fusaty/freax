@@ -8,29 +8,29 @@
 
 #define DRV_NAME	"uli526x"
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/dma-mapping.h>
+#include <freax/bitops.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define uw32(reg, val)	iowrite32(val, ioaddr + (reg))
 #define ur32(reg)	ioread32(ioaddr + (reg))

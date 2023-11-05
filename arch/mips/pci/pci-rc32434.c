@@ -25,10 +25,10 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 
 #include <asm/mach-rc32434/rc32434.h>
 #include <asm/mach-rc32434/pci.h>

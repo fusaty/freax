@@ -5,24 +5,24 @@
  * ROHM/KIONIX accelerometer driver
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/string_choices.h>
-#include <linux/units.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/string_choices.h>
+#include <freax/units.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #include "kionix-kx022a.h"
 
@@ -359,7 +359,7 @@ static const struct iio_chan_spec kx132_channels[] = {
 
 /*
  * The sensor HW can support ODR up to 1600 Hz, which is beyond what most of the
- * Linux CPUs can handle without dropping samples. Also, the low power mode is
+ * freax CPUs can handle without dropping samples. Also, the low power mode is
  * not available for higher sample rates. Thus, the driver only supports 200 Hz
  * and slower ODRs. The slowest is 0.78 Hz.
  */

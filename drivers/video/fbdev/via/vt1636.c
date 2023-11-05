@@ -5,8 +5,8 @@
 
  */
 
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <freax/via-core.h>
+#include <freax/via_i2c.h>
 #include "global.h"
 
 static const struct IODATA common_init_data[] = {

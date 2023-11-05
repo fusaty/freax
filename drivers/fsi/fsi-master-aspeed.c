@@ -2,19 +2,19 @@
 // Copyright (C) IBM Corporation 2018
 // FSI master driver for AST2600
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/fsi.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/iopoll.h>
-#include <linux/gpio/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/fsi.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/iopoll.h>
+#include <freax/gpio/consumer.h>
 
 #include "fsi-master.h"
 

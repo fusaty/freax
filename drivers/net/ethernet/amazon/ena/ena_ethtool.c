@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/ethtool.h>
-#include <linux/pci.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
 
 #include "ena_netdev.h"
 

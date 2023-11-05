@@ -8,19 +8,19 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/reset.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
 

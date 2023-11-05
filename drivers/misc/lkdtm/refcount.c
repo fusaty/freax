@@ -4,7 +4,7 @@
  * underflow, reaching zero untested, etc).
  */
 #include "lkdtm.h"
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
 static void overflow_check(refcount_t *ref)
 {

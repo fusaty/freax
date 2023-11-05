@@ -6,7 +6,7 @@
 #ifndef __INTEL_DMC_H__
 #define __INTEL_DMC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_error_state_buf;
 struct drm_i915_private;

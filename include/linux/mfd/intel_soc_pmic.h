@@ -5,13 +5,13 @@
  * Copyright (C) 2012-2014 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@freax.intel.com>
  */
 
 #ifndef __INTEL_SOC_PMIC_H__
 #define __INTEL_SOC_PMIC_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 enum intel_cht_wc_models {
 	INTEL_CHT_WC_UNKNOWN,

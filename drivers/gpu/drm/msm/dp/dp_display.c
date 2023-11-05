@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/component.h>
-#include <linux/of_irq.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/component.h>
+#include <freax/of_irq.h>
+#include <freax/delay.h>
 #include <drm/display/drm_dp_aux_bus.h>
 
 #include "msm_drv.h"

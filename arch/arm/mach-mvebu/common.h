@@ -12,7 +12,7 @@
 #ifndef __ARCH_MVEBU_COMMON_H
 #define __ARCH_MVEBU_COMMON_H
 
-#include <linux/reboot.h>
+#include <freax/reboot.h>
 
 void mvebu_restart(enum reboot_mode mode, const char *cmd);
 int mvebu_cpu_reset_deassert(int cpu);

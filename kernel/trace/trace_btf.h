@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/btf.h>
+#include <freax/btf.h>
 
 const struct btf_type *btf_find_func_proto(const char *func_name,
 					   struct btf **btf_p);

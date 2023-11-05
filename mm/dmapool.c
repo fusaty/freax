@@ -4,7 +4,7 @@
  *
  * Copyright 2001 David Brownell
  * Copyright 2007 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@freax.intel.com>
  *
  * This allocator returns small blocks of a given size which are DMA-able by
  * the given device.  It uses the dma_alloc_coherent page allocator to get
@@ -19,22 +19,22 @@
  * keep a count of how many are currently allocated from each page.
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/poison.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #if defined(CONFIG_DEBUG_SLAB) || defined(CONFIG_SLUB_DEBUG_ON)
 #define DMAPOOL_DEBUG 1

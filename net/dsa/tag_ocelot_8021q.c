@@ -8,8 +8,8 @@
  * - redirecting towards the correct front port based on TX VLAN and popping
  *   that on egress
  */
-#include <linux/dsa/8021q.h>
-#include <linux/dsa/ocelot.h>
+#include <freax/dsa/8021q.h>
+#include <freax/dsa/ocelot.h>
 
 #include "tag.h"
 #include "tag_8021q.h"

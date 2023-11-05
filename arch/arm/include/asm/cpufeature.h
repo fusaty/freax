@@ -6,7 +6,7 @@
 #ifndef __ASM_CPUFEATURE_H
 #define __ASM_CPUFEATURE_H
 
-#include <linux/log2.h>
+#include <freax/log2.h>
 #include <asm/hwcap.h>
 
 /*

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MAPLE_H
-#define __LINUX_MAPLE_H
+#ifndef __freax_MAPLE_H
+#define __freax_MAPLE_H
 
 #include <mach/maple.h>
 
@@ -103,4 +103,4 @@ void maple_clear_dev(struct maple_device *mdev);
 #define maple_get_drvdata(d)		dev_get_drvdata(&(d)->dev)
 #define maple_set_drvdata(d,p)		dev_set_drvdata(&(d)->dev, (p))
 
-#endif				/* __LINUX_MAPLE_H */
+#endif				/* __freax_MAPLE_H */

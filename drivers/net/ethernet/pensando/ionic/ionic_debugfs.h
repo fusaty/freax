@@ -4,7 +4,7 @@
 #ifndef _IONIC_DEBUGFS_H_
 #define _IONIC_DEBUGFS_H_
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #ifdef CONFIG_DEBUG_FS
 

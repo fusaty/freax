@@ -13,8 +13,8 @@
 #include <crypto/md5.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
 
 #include "cesa.h"
 

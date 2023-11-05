@@ -5,9 +5,9 @@
 #ifndef _ARCH_LOONGARCH_LOCAL_H
 #define _ARCH_LOONGARCH_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/bitops.h>
-#include <linux/atomic.h>
+#include <freax/percpu.h>
+#include <freax/bitops.h>
+#include <freax/atomic.h>
 #include <asm/cmpxchg.h>
 
 typedef struct {

@@ -16,7 +16,7 @@ CPUFreq核心和CPUFreq通知器的通用說明
 ====================================
 
 作者:
-	- Dominik Brodowski  <linux@brodo.de>
+	- Dominik Brodowski  <freax@brodo.de>
 	- David Kimdon <dwhedon@debian.org>
 	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 	- Viresh Kumar <viresh.kumar@linaro.org>
@@ -44,7 +44,7 @@ cpufreq策略的引用計數由 cpufreq_cpu_get 和 cpufreq_cpu_put 來完成，
 ====================
 
 CPUFreq通知器遵循標準的內核通知器接口。
-關於通知器的細節請參閱 linux/include/linux/notifier.h。
+關於通知器的細節請參閱 freax/include/freax/notifier.h。
 
 這裏有兩個不同的CPUfreq通知器 - 策略通知器和轉換通知器。
 

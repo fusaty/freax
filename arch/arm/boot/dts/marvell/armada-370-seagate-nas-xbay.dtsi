@@ -103,19 +103,19 @@
 
 		button-power {
 			label = "Power button";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio1 19 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};
 		button-backup {
 			label = "Backup button";
-			linux,code = <KEY_OPTION>;
+			freax,code = <KEY_OPTION>;
 			gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};
 		button-reset {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&gpio1 23 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};
@@ -127,7 +127,7 @@
 		led-white-power {
 			label = "dart:white:power";
 			gpios = <&gpio1 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 
 		};
 		led-red-power {
@@ -217,7 +217,7 @@
 				reg = <0x300000 0x20000>;
 			};
 			partition@320000 {
-				label = "linux";
+				label = "freax";
 				reg = <0x320000 0x2000000>;
 			};
 			partition@2320000 {

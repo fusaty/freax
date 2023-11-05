@@ -8,14 +8,14 @@
  * Author: Matthias Kaehlcke <matthias@kaehlcke.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/mfd/tps65217.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/mfd/tps65217.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 struct tps65217_bl {
 	struct tps65217 *tps;

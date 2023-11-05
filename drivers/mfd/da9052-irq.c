@@ -10,17 +10,17 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <freax/mfd/da9052/da9052.h>
+#include <freax/mfd/da9052/reg.h>
 
 #define DA9052_NUM_IRQ_REGS		4
 #define DA9052_IRQ_MASK_POS_1		0x01

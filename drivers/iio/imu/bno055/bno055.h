@@ -2,8 +2,8 @@
 #ifndef __BNO055_H__
 #define __BNO055_H__
 
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 struct device;
 int bno055_probe(struct device *dev, struct regmap *regmap,

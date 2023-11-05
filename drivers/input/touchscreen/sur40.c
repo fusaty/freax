@@ -17,20 +17,20 @@
  * Copyright (c) Copyright 2014 Cisco Systems, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/printk.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/usb/input.h>
-#include <linux/videodev2.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/completion.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/printk.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/usb/input.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

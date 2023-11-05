@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/gfp.h>
+#include <freax/types.h>
+#include <freax/buffer_head.h>
+#include <freax/mm.h>
+#include <freax/backing-dev.h>
+#include <freax/gfp.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "dat.h"

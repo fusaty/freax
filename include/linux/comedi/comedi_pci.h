@@ -3,18 +3,18 @@
  * comedi_pci.h
  * header file for Comedi PCI drivers
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDI_PCI_H
 #define _COMEDI_PCI_H
 
-#include <linux/pci.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/pci.h>
+#include <freax/comedi/comedidev.h>
 
 /*
- * PCI Vendor IDs not in <linux/pci_ids.h>
+ * PCI Vendor IDs not in <freax/pci_ids.h>
  */
 #define PCI_VENDOR_ID_KOLTER		0x1001
 #define PCI_VENDOR_ID_ICP		0x104c

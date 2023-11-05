@@ -9,11 +9,11 @@
  * based on previously existing rtc class drivers
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/rtc.h>
+#include <freax/delay.h>
 
 /*
  * register indices

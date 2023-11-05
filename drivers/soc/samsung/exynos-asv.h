@@ -6,8 +6,8 @@
  *
  * Samsung Exynos SoC Adaptive Supply Voltage support
  */
-#ifndef __LINUX_SOC_EXYNOS_ASV_H
-#define __LINUX_SOC_EXYNOS_ASV_H
+#ifndef __freax_SOC_EXYNOS_ASV_H
+#define __freax_SOC_EXYNOS_ASV_H
 
 struct regmap;
 
@@ -70,4 +70,4 @@ static inline u32 exynos_asv_opp_get_frequency(const struct exynos_asv_subsys *s
 
 int exynos_asv_init(struct device *dev, struct regmap *regmap);
 
-#endif /* __LINUX_SOC_EXYNOS_ASV_H */
+#endif /* __freax_SOC_EXYNOS_ASV_H */

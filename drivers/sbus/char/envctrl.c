@@ -19,18 +19,18 @@
  *              Daniele Bellucci <bellucda@tiscali.it>
  */
 
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/kmod.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/miscdevice.h>
+#include <freax/kmod.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/envctrl.h>
 #include <asm/io.h>
 

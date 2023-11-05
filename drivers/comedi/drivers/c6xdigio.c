@@ -4,7 +4,7 @@
  * Hardware driver for Mechatronic Systems Inc. C6x_DIGIO DSP daughter card.
  * http://web.archive.org/web/%2A/http://robot0.ge.uiuc.edu/~spong/mecha/
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1999 Dan Block
  */
 
@@ -20,17 +20,17 @@
  *	[0] - base address
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/pnp.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/timex.h>
+#include <freax/timer.h>
+#include <freax/io.h>
+#include <freax/pnp.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2022 MediaTek Inc. */
 
-#include <linux/devcoredump.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/utsname.h>
+#include <freax/devcoredump.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/utsname.h>
 #include "coredump.h"
 
 static bool coredump_memdump;

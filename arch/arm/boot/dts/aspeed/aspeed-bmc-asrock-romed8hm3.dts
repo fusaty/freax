@@ -27,7 +27,7 @@
 
 		heartbeat {
 			gpios = <&gpio ASPEED_GPIO(H, 6) GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 		};
 
 		system-fault {

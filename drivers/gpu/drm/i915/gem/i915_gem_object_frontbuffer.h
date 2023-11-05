@@ -6,8 +6,8 @@
 #ifndef __I915_GEM_OBJECT_FRONTBUFFER_H__
 #define __I915_GEM_OBJECT_FRONTBUFFER_H__
 
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
+#include <freax/kref.h>
+#include <freax/rcupdate.h>
 
 #include "display/intel_frontbuffer.h"
 #include "i915_gem_object_types.h"

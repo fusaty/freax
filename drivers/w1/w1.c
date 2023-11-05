@@ -3,23 +3,23 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/hwmon.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/hwmon.h>
+#include <freax/of.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "w1_internal.h"
 #include "w1_netlink.h"

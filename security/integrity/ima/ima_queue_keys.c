@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2019 Microsoft Corporation
  *
- * Author: Lakshmi Ramasubramanian (nramas@linux.microsoft.com)
+ * Author: Lakshmi Ramasubramanian (nramas@freax.microsoft.com)
  *
  * File: ima_queue_keys.c
  *       Enables deferred processing of keys
  */
 
-#include <linux/user_namespace.h>
-#include <linux/workqueue.h>
+#include <freax/user_namespace.h>
+#include <freax/workqueue.h>
 #include <keys/asymmetric-type.h>
 #include "ima.h"
 

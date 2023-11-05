@@ -4,7 +4,7 @@
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
  */
 
 #ifndef __ISST_IF_COMMON_H

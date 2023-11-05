@@ -6,7 +6,7 @@
 #ifndef __IVPU_HW_40XX_REG_H__
 #define __IVPU_HW_40XX_REG_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define VPU_40XX_BUTTRESS_INTERRUPT_STAT				0x00000000u
 #define VPU_40XX_BUTTRESS_INTERRUPT_STAT_FREQ_CHANGE_MASK		BIT_MASK(0)

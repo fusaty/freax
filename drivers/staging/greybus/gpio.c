@@ -6,14 +6,14 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/gpio/driver.h>
-#include <linux/mutex.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/gpio/driver.h>
+#include <freax/mutex.h>
+#include <freax/greybus.h>
 
 #include "gbphy.h"
 

@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/spi/spi.h>
+#include <freax/iio/iio.h>
 
-#include <linux/iio/common/st_sensors.h>
-#include <linux/iio/common/st_sensors_spi.h>
+#include <freax/iio/common/st_sensors.h>
+#include <freax/iio/common/st_sensors_spi.h>
 #include "st_gyro.h"
 
 /*

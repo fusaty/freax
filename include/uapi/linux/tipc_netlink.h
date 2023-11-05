@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright (c) 2014, Ericsson AB
  * All rights reserved.
@@ -32,8 +32,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_TIPC_NETLINK_H_
-#define _LINUX_TIPC_NETLINK_H_
+#ifndef _freax_TIPC_NETLINK_H_
+#define _freax_TIPC_NETLINK_H_
 
 #define TIPC_GENL_V2_NAME      "TIPCv2"
 #define TIPC_GENL_V2_VERSION   0x1

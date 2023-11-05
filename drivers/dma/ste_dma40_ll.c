@@ -5,8 +5,8 @@
  * Author: Jonas Aaberg <jonas.aberg@stericsson.com> for ST-Ericsson
  */
 
-#include <linux/kernel.h>
-#include <linux/dmaengine.h>
+#include <freax/kernel.h>
+#include <freax/dmaengine.h>
 
 #include "ste_dma40.h"
 #include "ste_dma40_ll.h"

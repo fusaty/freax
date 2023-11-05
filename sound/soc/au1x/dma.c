@@ -8,11 +8,11 @@
  *			Charles Eidsness <charles@cooper-street.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -6,15 +6,15 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/hugetlb.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/kvm_host.h>
-#include <linux/sched/signal.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/hugetlb.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/kvm_host.h>
+#include <freax/sched/signal.h>
 #include <asm/csr.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>

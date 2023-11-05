@@ -12,28 +12,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
+#include <freax/crc32.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/slab.h>
 #include <net/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/mii.h>
-#include <linux/of_net.h>
-#include <linux/dmi.h>
+#include <freax/tcp.h>
+#include <freax/in.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/if_vlan.h>
+#include <freax/prefetch.h>
+#include <freax/debugfs.h>
+#include <freax/mii.h>
+#include <freax/of_net.h>
+#include <freax/dmi.h>
 
 #include <asm/irq.h>
 
@@ -5159,6 +5159,6 @@ module_init(sky2_init_module);
 module_exit(sky2_cleanup_module);
 
 MODULE_DESCRIPTION("Marvell Yukon 2 Gigabit Ethernet driver");
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@freax-foundation.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

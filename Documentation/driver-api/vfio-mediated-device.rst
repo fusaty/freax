@@ -268,6 +268,6 @@ References
 ==========
 
 1. See Documentation/driver-api/vfio.rst for more information on VFIO.
-2. struct mdev_driver in include/linux/mdev.h
-3. struct mdev_parent_ops in include/linux/mdev.h
-4. struct vfio_iommu_driver_ops in include/linux/vfio.h
+2. struct mdev_driver in include/freax/mdev.h
+3. struct mdev_parent_ops in include/freax/mdev.h
+4. struct vfio_iommu_driver_ops in include/freax/vfio.h

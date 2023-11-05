@@ -6,25 +6,25 @@
  * 	Casey Schaufler <casey@schaufler-ca.com>
  * 	Ahmed S. Darwish <darwish.07@gmail.com>
  *
- * Special thanks to the authors of selinuxfs.
+ * Special thanks to the authors of sefreaxfs.
  *
  *	Karl MacMillan <kmacmillan@tresys.com>
  *	James Morris <jmorris@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
+#include <freax/security.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 #include <net/net_namespace.h>
 #include <net/cipso_ipv4.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/audit.h>
-#include <linux/magic.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
+#include <freax/seq_file.h>
+#include <freax/ctype.h>
+#include <freax/audit.h>
+#include <freax/magic.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
 #include "smack.h"
 
 #define BEBITS	(sizeof(__be32) * 8)

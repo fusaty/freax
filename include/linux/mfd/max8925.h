@@ -6,11 +6,11 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#ifndef __LINUX_MFD_MAX8925_H
-#define __LINUX_MFD_MAX8925_H
+#ifndef __freax_MFD_MAX8925_H
+#define __freax_MFD_MAX8925_H
 
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/interrupt.h>
 
 /* Unified sub device IDs for MAX8925 */
 enum {
@@ -270,5 +270,5 @@ extern int max8925_set_bits(struct i2c_client *, int, unsigned char,
 extern int max8925_device_init(struct max8925_chip *,
 				struct max8925_platform_data *);
 extern void max8925_device_exit(struct max8925_chip *);
-#endif /* __LINUX_MFD_MAX8925_H */
+#endif /* __freax_MFD_MAX8925_H */
 

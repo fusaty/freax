@@ -8,18 +8,18 @@
  *	Daniel Borkmann <daniel@iogearbox.net>
  */
 
-#include <linux/init.h>
-#include <linux/magic.h>
-#include <linux/major.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/kdev_t.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <freax/init.h>
+#include <freax/magic.h>
+#include <freax/major.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/kdev_t.h>
+#include <freax/filter.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
 #include "preload/bpf_preload.h"
 
 enum bpf_type {
@@ -676,7 +676,7 @@ EXPORT_SYMBOL_GPL(bpf_preload_ops);
 static bool bpf_preload_mod_get(void)
 {
 	/* If bpf_preload.ko wasn't loaded earlier then load it now.
-	 * When bpf_preload is built into vmlinux the module's __init
+	 * When bpf_preload is built into vmfreax the module's __init
 	 * function will populate it.
 	 */
 	if (!bpf_preload_ops) {
@@ -713,7 +713,7 @@ static int populate_bpffs(struct dentry *parent)
 	 */
 	mutex_lock(&bpf_preload_lock);
 
-	/* if bpf_preload.ko wasn't built into vmlinux then load it */
+	/* if bpf_preload.ko wasn't built into vmfreax then load it */
 	if (!bpf_preload_mod_get())
 		goto out;
 

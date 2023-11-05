@@ -3,8 +3,8 @@
  * Copyright 2018 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/mod_devicetable.h>
+#include <freax/dmi.h>
+#include <freax/mod_devicetable.h>
 #include "core.h"
 #include "common.h"
 #include "brcm_hw_ids.h"
@@ -25,7 +25,7 @@ static const struct brcmf_dmi_data acepc_t8_data = {
 };
 
 /* The Chuwi Hi8 Pro uses the same Ampak AP6212 module as the Chuwi Vi8 Plus
- * and the nvram for the Vi8 Plus is already in linux-firmware, so use that.
+ * and the nvram for the Vi8 Plus is already in freax-firmware, so use that.
  */
 static const struct brcmf_dmi_data chuwi_hi8_pro_data = {
 	BRCM_CC_43430_CHIP_ID, 0, "ilife-S806"
@@ -53,7 +53,7 @@ static const struct brcmf_dmi_data predia_basic_data = {
 
 /* Note the Voyo winpad A15 tablet uses the same Ampak AP6330 module, with the
  * exact same nvram file as the Prowise-PT301 tablet. Since the nvram for the
- * Prowise-PT301 is already in linux-firmware we just point to that here.
+ * Prowise-PT301 is already in freax-firmware we just point to that here.
  */
 static const struct brcmf_dmi_data voyo_winpad_a15_data = {
 	BRCM_CC_4330_CHIP_ID, 4, "Prowise-PT301"

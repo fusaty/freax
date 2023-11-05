@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_CACHEFILES_H
-#define _LINUX_CACHEFILES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_CACHEFILES_H
+#define _freax_CACHEFILES_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /*
  * Fscache ensures that the maximum length of cookie key is 255. The volume key

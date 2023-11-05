@@ -17,7 +17,7 @@
  * (Fb = F bit; Pb = P bit; Xb = X bit)
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sk_buff;
 struct sock;

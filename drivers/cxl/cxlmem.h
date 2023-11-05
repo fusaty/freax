@@ -2,10 +2,10 @@
 /* Copyright(c) 2020-2021 Intel Corporation. */
 #ifndef __CXL_MEM_H__
 #define __CXL_MEM_H__
-#include <uapi/linux/cxl_mem.h>
-#include <linux/cdev.h>
-#include <linux/uuid.h>
-#include <linux/rcuwait.h>
+#include <uapi/freax/cxl_mem.h>
+#include <freax/cdev.h>
+#include <freax/uuid.h>
+#include <freax/rcuwait.h>
 #include "cxl.h"
 
 /* CXL 2.0 8.2.8.5.1.1 Memory Device Status Register */

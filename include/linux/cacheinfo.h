@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CACHEINFO_H
-#define _LINUX_CACHEINFO_H
+#ifndef _freax_CACHEINFO_H
+#define _freax_CACHEINFO_H
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
+#include <freax/bitops.h>
+#include <freax/cpumask.h>
+#include <freax/smp.h>
 
 struct device_node;
 struct attribute;
@@ -138,4 +138,4 @@ static inline int get_cpu_cacheinfo_id(int cpu, int level)
 #define use_arch_cache_info()	(false)
 #endif
 
-#endif /* _LINUX_CACHEINFO_H */
+#endif /* _freax_CACHEINFO_H */

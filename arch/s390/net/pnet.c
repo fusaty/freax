@@ -5,10 +5,10 @@
  *    Copyright IBM Corp. 2018
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/types.h>
 #include <asm/ccwgroup.h>
 #include <asm/ccwdev.h>
 #include <asm/pnet.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -20,23 +20,23 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/icmp.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/icmp.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/netfilter_ipv4.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/netfilter_ipv4.h>
 #include <net/checksum.h>
-#include <linux/route.h>
+#include <freax/route.h>
 #include <net/route.h>
 #include <net/xfrm.h>
 

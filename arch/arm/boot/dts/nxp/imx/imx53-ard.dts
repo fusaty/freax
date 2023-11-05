@@ -57,34 +57,34 @@
 		key-home {
 			label = "Home";
 			gpios = <&gpio5 10 0>;
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			wakeup-source;
 		};
 
 		key-back {
 			label = "Back";
 			gpios = <&gpio5 11 0>;
-			linux,code = <KEY_BACK>;
+			freax,code = <KEY_BACK>;
 			wakeup-source;
 		};
 
 		key-program {
 			label = "Program";
 			gpios = <&gpio5 12 0>;
-			linux,code = <KEY_PROGRAM >;
+			freax,code = <KEY_PROGRAM >;
 			wakeup-source;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio5 13 0>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio4 0 0>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 };

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright(c) 2007 - 2018 Intel Corporation. */
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* freax PRO/1000 Ethernet Driver main header file */
 
 #ifndef _IGB_H_
 #define _IGB_H_
@@ -9,15 +9,15 @@
 #include "e1000_mac.h"
 #include "e1000_82575.h"
 
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/pci.h>
-#include <linux/mdio.h>
+#include <freax/timecounter.h>
+#include <freax/net_tstamp.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/bitops.h>
+#include <freax/if_vlan.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/pci.h>
+#include <freax/mdio.h>
 
 #include <net/xdp.h>
 

@@ -6,8 +6,8 @@
 #ifndef _ASM_RISCV_PGTABLE_64_H
 #define _ASM_RISCV_PGTABLE_64_H
 
-#include <linux/bits.h>
-#include <linux/const.h>
+#include <freax/bits.h>
+#include <freax/const.h>
 #include <asm/errata_list.h>
 
 extern bool pgtable_l4_enabled;

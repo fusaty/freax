@@ -5,17 +5,17 @@
  * Copyright (c) 2008 Applied Micro Circuits Corporation.
  * All rights reserved. James Hsiao <jhsiao@amcc.com>
  *
- * This is the header file for AMCC Crypto offload Linux device driver for
- * use with Linux CryptoAPI.
+ * This is the header file for AMCC Crypto offload freax device driver for
+ * use with freax CryptoAPI.
 
  */
 
 #ifndef __CRYPTO4XX_CORE_H__
 #define __CRYPTO4XX_CORE_H__
 
-#include <linux/ratelimit.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <freax/ratelimit.h>
+#include <freax/mutex.h>
+#include <freax/scatterlist.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/aead.h>
 #include <crypto/internal/rng.h>

@@ -21,7 +21,7 @@
 #
 # This script requires:
 #   bash
-#   syslinux
+#   sysfreax
 #   mtools (for fdimage* and hdimage)
 #   edk2/OVMF (for hdimage)
 #
@@ -69,13 +69,13 @@ verify "$FBZIMAGE"
 
 declare -a FDINITRDS
 irdpfx=' initrd='
-initrdopts_syslinux=''
+initrdopts_sysfreax=''
 initrdopts_efi=''
 for f in "$@"; do
 	if [ -f "$f" -a -r "$f" ]; then
 	    FDINITRDS=("${FDINITRDS[@]}" "$f")
 	    fname="$(basename "$f")"
-	    initrdopts_syslinux="${initrdopts_syslinux}${irdpfx}${fname}"
+	    initrdopts_sysfreax="${initrdopts_sysfreax}${irdpfx}${fname}"
 	    irdpfx=,
 	    initrdopts_efi="${initrdopts_efi} initrd=${fname}"
 	fi
@@ -152,11 +152,11 @@ efidirs() {
 	done
 }
 
-findsyslinux() {
-	local f="$(find -L $(sharedirs syslinux isolinux) \
+findsysfreax() {
+	local f="$(find -L $(sharedirs sysfreax isofreax) \
 		    -name "$1" -readable -type f -print -quit 2>/dev/null)"
 	if [ ! -f "$f" ]; then
-		die "Need a $1 file, please install syslinux/isolinux."
+		die "Need a $1 file, please install sysfreax/isofreax."
 	fi
 	echo "$f"
 	return 0
@@ -190,40 +190,40 @@ do_mcopy() {
 		mcopy "$efishell" "$1"EFI/Boot/boot${kefiarch}.efi
 	fi
 	if [ -n "$kefiarch" ]; then
-		echo linux "$KCMDLINE$initrdopts_efi" | \
+		echo freax "$KCMDLINE$initrdopts_efi" | \
 			mcopy - "$1"startup.nsh
 	fi
-	echo default linux "$KCMDLINE$initrdopts_syslinux" | \
-		mcopy - "$1"syslinux.cfg
-	mcopy "$FBZIMAGE" "$1"linux
+	echo default freax "$KCMDLINE$initrdopts_sysfreax" | \
+		mcopy - "$1"sysfreax.cfg
+	mcopy "$FBZIMAGE" "$1"freax
 }
 
 genbzdisk() {
 	verify "$MTOOLSRC"
-	mformat -v 'LINUX_BOOT' a:
-	syslinux "$FIMAGE"
+	mformat -v 'freax_BOOT' a:
+	sysfreax "$FIMAGE"
 	do_mcopy a:
 }
 
 genfdimage144() {
 	verify "$MTOOLSRC"
 	$dd if=/dev/zero of="$FIMAGE" bs=1024 count=1440 2>/dev/null
-	mformat -v 'LINUX_BOOT' v:
-	syslinux "$FIMAGE"
+	mformat -v 'freax_BOOT' v:
+	sysfreax "$FIMAGE"
 	do_mcopy v:
 }
 
 genfdimage288() {
 	verify "$MTOOLSRC"
 	$dd if=/dev/zero of="$FIMAGE" bs=1024 count=2880 2>/dev/null
-	mformat -v 'LINUX_BOOT' w:
-	syslinux "$FIMAGE"
+	mformat -v 'freax_BOOT' w:
+	sysfreax "$FIMAGE"
 	do_mcopy w:
 }
 
 genhdimage() {
 	verify "$MTOOLSRC"
-	mbr="$(findsyslinux mbr.bin)"
+	mbr="$(findsysfreax mbr.bin)"
 	kefiarch="$(efiarch "$FBZIMAGE")"
 	if [ -n "$kefiarch" ]; then
 		# The efishell provides command line handling
@@ -232,13 +232,13 @@ genhdimage() {
 	fi
 	sizes=$(filesizes "$FBZIMAGE" "${FDINITRDS[@]}" "$efishell")
 	# Allow 1% + 2 MiB for filesystem and partition table overhead,
-	# syslinux, and config files; this is probably excessive...
+	# sysfreax, and config files; this is probably excessive...
 	megs=$(((sizes + sizes/100 + 2*1024*1024 - 1)/(1024*1024)))
 	$dd if=/dev/zero of="$FIMAGE" bs=$((1024*1024)) count=$megs 2>/dev/null
 	mpartition -I -c -s 32 -h 64 $ptype -b 64 -a p:
 	$dd if="$mbr" of="$FIMAGE" bs=440 count=1 conv=notrunc 2>/dev/null
-	mformat -v 'LINUX_BOOT' -s 32 -h 64 -c $((cluster/512)) -t $megs h:
-	syslinux --offset $((64*512)) "$FIMAGE"
+	mformat -v 'freax_BOOT' -s 32 -h 64 -c $((cluster/512)) -t $megs h:
+	sysfreax --offset $((64*512)) "$FIMAGE"
 	do_mcopy h:
 }
 
@@ -246,14 +246,14 @@ geniso() {
 	tmp_dir="$(dirname "$FIMAGE")/isoimage"
 	rm -rf "$tmp_dir"
 	mkdir "$tmp_dir"
-	isolinux=$(findsyslinux isolinux.bin)
-	ldlinux=$(findsyslinux  ldlinux.c32)
-	cp "$isolinux" "$ldlinux" "$tmp_dir"
-	cp "$FBZIMAGE" "$tmp_dir"/linux
-	echo default linux "$KCMDLINE" > "$tmp_dir"/isolinux.cfg
+	isofreax=$(findsysfreax isofreax.bin)
+	ldfreax=$(findsysfreax  ldfreax.c32)
+	cp "$isofreax" "$ldfreax" "$tmp_dir"
+	cp "$FBZIMAGE" "$tmp_dir"/freax
+	echo default freax "$KCMDLINE" > "$tmp_dir"/isofreax.cfg
 	cp "${FDINITRDS[@]}" "$tmp_dir"/
-	genisoimage -J -r -appid 'LINUX_BOOT' -input-charset=utf-8 \
-		    -quiet -o "$FIMAGE" -b isolinux.bin \
+	genisoimage -J -r -appid 'freax_BOOT' -input-charset=utf-8 \
+		    -quiet -o "$FIMAGE" -b isofreax.bin \
 		    -c boot.cat -no-emul-boot -boot-load-size 4 \
 		    -boot-info-table "$tmp_dir"
 	isohybrid "$FIMAGE" 2>/dev/null || true

@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/mm.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>

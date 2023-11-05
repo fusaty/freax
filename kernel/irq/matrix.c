@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2017 Thomas Gleixner <tglx@linutronix.de>
 
-#include <linux/spinlock.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
+#include <freax/spinlock.h>
+#include <freax/seq_file.h>
+#include <freax/bitmap.h>
+#include <freax/percpu.h>
+#include <freax/cpu.h>
+#include <freax/irq.h>
 
 #define IRQ_MATRIX_SIZE	(BITS_TO_LONGS(IRQ_MATRIX_BITS))
 

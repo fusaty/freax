@@ -4,10 +4,10 @@
  *
  * Written and tested against the Designware HDMI Tx found in iMX6.
  */
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_edid.h>
 
@@ -632,7 +632,7 @@ static struct platform_driver snd_dw_hdmi_driver = {
 
 module_platform_driver(snd_dw_hdmi_driver);
 
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armfreax.org.uk>");
 MODULE_DESCRIPTION("Synopsis Designware HDMI AHB ALSA interface");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:" DRIVER_NAME);

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /******************************************************************************
- * usb_ops_linux.c
+ * usb_ops_freax.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * freax device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the freax staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,7 +16,7 @@
 
 #define _HCI_OPS_OS_C_
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

@@ -7,10 +7,10 @@
  * Copyright (C) 2020 Krzysztof Kozlowski <krzk@kernel.org>
  */
 
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
 
 #include "jedec_ddr.h"
 #include "of_memory.h"

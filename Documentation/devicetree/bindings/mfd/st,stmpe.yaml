@@ -112,7 +112,7 @@ properties:
 
     required:
       - compatible
-      - linux,keymap
+      - freax,keymap
 
   pwm:
     type: object
@@ -235,7 +235,7 @@ examples:
           st,no-autorepeat;
           keypad,num-rows = <8>;
           keypad,num-columns = <8>;
-          linux,keymap = <
+          freax,keymap = <
               MATRIX_KEY(0x00, 0x00, KEY_1)
               MATRIX_KEY(0x00, 0x01, KEY_2)
               MATRIX_KEY(0x00, 0x02, KEY_3)

@@ -8,9 +8,9 @@
 #define FWEH_H_
 
 #include <asm/unaligned.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/if.h>
+#include <freax/skbuff.h>
+#include <freax/if_ether.h>
+#include <freax/if.h>
 
 /* formward declarations */
 struct brcmf_pub;

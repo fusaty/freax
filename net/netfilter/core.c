@@ -6,22 +6,22 @@
  *
  * This code is GPL.
  */
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
+#include <freax/kernel.h>
+#include <freax/netfilter.h>
 #include <net/protocol.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/inetdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/mutex.h>
+#include <freax/mm.h>
+#include <freax/rcupdate.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/sock.h>

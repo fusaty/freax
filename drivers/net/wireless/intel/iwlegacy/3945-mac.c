@@ -7,26 +7,26 @@
  * as portions of the ieee80211 subsystem header files.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel freax Wireless <ilw@freax.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
 
 #include <net/ieee80211_radiotap.h>
 #include <net/mac80211.h>
@@ -45,7 +45,7 @@
  */
 
 #define DRV_DESCRIPTION	\
-"Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for Linux"
+"Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for freax"
 
 #ifdef CONFIG_IWLEGACY_DEBUG
 #define VD "d"
@@ -60,7 +60,7 @@
  */
 #define DRV_VERSION  IWLWIFI_VERSION VD "s"
 #define DRV_COPYRIGHT	"Copyright(c) 2003-2011 Intel Corporation"
-#define DRV_AUTHOR     "<ilw@linux.intel.com>"
+#define DRV_AUTHOR     "<ilw@freax.intel.com>"
 
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_VERSION(DRV_VERSION);
@@ -1883,7 +1883,7 @@ il3945_read_ucode(struct il_priv *il)
 	if (api_ver != api_max)
 		IL_ERR("Firmware has old API version. Expected %u, "
 		       "got %u. New firmware can be obtained "
-		       "from http://www.intellinuxwireless.org.\n", api_max,
+		       "from http://www.intelfreaxwireless.org.\n", api_max,
 		       api_ver);
 
 	IL_INFO("loaded firmware version %u.%u.%u.%u\n",

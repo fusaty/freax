@@ -10,22 +10,22 @@
 #include "policydb.h"
 
 /* Mapping for a single class */
-struct selinux_mapping {
+struct sefreax_mapping {
 	u16 value; /* policy value for class */
 	u16 num_perms; /* number of permissions in class */
 	u32 perms[sizeof(u32) * 8]; /* policy values for permissions */
 };
 
 /* Map for all of the classes, with array size */
-struct selinux_map {
-	struct selinux_mapping *mapping; /* indexed by class */
+struct sefreax_map {
+	struct sefreax_mapping *mapping; /* indexed by class */
 	u16 size; /* array size of mapping */
 };
 
-struct selinux_policy {
+struct sefreax_policy {
 	struct sidtab *sidtab;
 	struct policydb policydb;
-	struct selinux_map map;
+	struct sefreax_map map;
 	u32 latest_granting;
 } __randomize_layout;
 

@@ -24,13 +24,13 @@
  * counts the number of samples since. Time since last clock event is added.
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
-#include <linux/mISDNif.h>
-#include <linux/export.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/spinlock.h>
+#include <freax/ktime.h>
+#include <freax/mISDNif.h>
+#include <freax/export.h>
 #include "core.h"
 
 static u_int *debug;

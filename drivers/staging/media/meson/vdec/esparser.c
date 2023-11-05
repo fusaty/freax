@@ -7,12 +7,12 @@
  * It reads bitstream buffers and feeds them to the VIFIFO
  */
 
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
+#include <freax/init.h>
+#include <freax/ioctl.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/reset.h>
+#include <freax/interrupt.h>
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-mem2mem.h>
 

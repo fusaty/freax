@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Forwarding decision
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/netfilter_bridge.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/netpoll.h>
+#include <freax/skbuff.h>
+#include <freax/if_vlan.h>
+#include <freax/netfilter_bridge.h>
 #include "br_private.h"
 
 /* Don't forward packets to originating port or forwarding disabled */

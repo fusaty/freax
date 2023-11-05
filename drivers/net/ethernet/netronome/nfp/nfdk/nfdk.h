@@ -4,8 +4,8 @@
 #ifndef _NFP_DP_NFDK_H_
 #define _NFP_DP_NFDK_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 #define NFDK_TX_DESC_PER_SIMPLE_PKT	2
 

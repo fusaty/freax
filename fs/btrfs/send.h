@@ -7,7 +7,7 @@
 #ifndef BTRFS_SEND_H
 #define BTRFS_SEND_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define BTRFS_SEND_STREAM_MAGIC "btrfs-stream"
 /* Conditional support for the upcoming protocol version. */

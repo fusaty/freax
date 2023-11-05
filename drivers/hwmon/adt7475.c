@@ -9,17 +9,17 @@
  * Derived from the lm83 driver by Jean Delvare
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/util_macros.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/jiffies.h>
+#include <freax/of.h>
+#include <freax/util_macros.h>
 
 /* Indexes for the sysfs hooks */
 

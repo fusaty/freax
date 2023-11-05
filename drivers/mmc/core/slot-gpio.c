@@ -5,14 +5,14 @@
  * Copyright (C) 2011, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "slot-gpio.h"
 

@@ -4,24 +4,24 @@
  *
  * (C) 2000 Nicolas Pitre <nico@fluxnic.net>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/concat.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/concat.h>
 
 #include <mach/hardware.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/mach/flash.h>
 
 struct sa_subdev_info {

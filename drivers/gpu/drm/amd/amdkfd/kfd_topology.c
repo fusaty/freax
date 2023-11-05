@@ -21,16 +21,16 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/hash.h>
-#include <linux/cpufreq.h>
-#include <linux/log2.h>
-#include <linux/dmi.h>
-#include <linux/atomic.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/acpi.h>
+#include <freax/hash.h>
+#include <freax/cpufreq.h>
+#include <freax/log2.h>
+#include <freax/dmi.h>
+#include <freax/atomic.h>
 
 #include "kfd_priv.h"
 #include "kfd_crat.h"

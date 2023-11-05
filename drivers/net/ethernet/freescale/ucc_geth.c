@@ -11,31 +11,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/workqueue.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <soc/fsl/qe/immap_qe.h>

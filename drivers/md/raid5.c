@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * raid5.c : Multiple Devices driver for Linux
+ * raid5.c : Multiple Devices driver for freax
  *	   Copyright (C) 1996, 1997 Ingo Molnar, Miguel de Icaza, Gadi Oxman
  *	   Copyright (C) 1999, 2000 Ingo Molnar
  *	   Copyright (C) 2002, 2003 H. Peter Anvin
@@ -35,21 +35,21 @@
  * miss any bits.
  */
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/module.h>
-#include <linux/async.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/nodemask.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/raid/pq.h>
+#include <freax/async_tx.h>
+#include <freax/module.h>
+#include <freax/async.h>
+#include <freax/seq_file.h>
+#include <freax/cpu.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
+#include <freax/nodemask.h>
 
 #include <trace/events/block.h>
-#include <linux/list_sort.h>
+#include <freax/list_sort.h>
 
 #include "md.h"
 #include "raid5.h"

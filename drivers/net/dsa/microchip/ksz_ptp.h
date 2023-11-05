@@ -10,7 +10,7 @@
 
 #if IS_ENABLED(CONFIG_NET_DSA_MICROCHIP_KSZ_PTP)
 
-#include <linux/ptp_clock_kernel.h>
+#include <freax/ptp_clock_kernel.h>
 
 #define KSZ_PTP_N_GPIO		2
 

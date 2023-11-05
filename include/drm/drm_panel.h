@@ -24,10 +24,10 @@
 #ifndef __DRM_PANEL_H__
 #define __DRM_PANEL_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
 
 struct backlight_device;
 struct dentry;

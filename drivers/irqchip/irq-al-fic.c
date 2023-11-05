@@ -3,15 +3,15 @@
  * Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/bitfield.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 /* FIC Registers */
 #define AL_FIC_CAUSE		0x00

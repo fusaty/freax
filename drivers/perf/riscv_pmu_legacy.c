@@ -8,9 +8,9 @@
  * which are in turn based on sparc64 and x86 code.
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/perf/riscv_pmu.h>
-#include <linux/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/perf/riscv_pmu.h>
+#include <freax/platform_device.h>
 
 #define RISCV_PMU_LEGACY_CYCLE		0
 #define RISCV_PMU_LEGACY_INSTRET	2

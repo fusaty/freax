@@ -6,13 +6,13 @@
  *	    Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#ifndef __LINUX_USB_SERIAL_H
-#define __LINUX_USB_SERIAL_H
+#ifndef __freax_USB_SERIAL_H
+#define __freax_USB_SERIAL_H
 
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/serial.h>
+#include <freax/kfifo.h>
 
 /* The maximum number of ports one device can grab at once */
 #define MAX_NUM_PORTS		16
@@ -431,5 +431,5 @@ module_exit(usb_serial_module_exit);
 #define module_usb_serial_driver(__serial_drivers, __ids)		\
 	usb_serial_module_driver(KBUILD_MODNAME, __serial_drivers, __ids)
 
-#endif /* __LINUX_USB_SERIAL_H */
+#endif /* __freax_USB_SERIAL_H */
 

@@ -5,7 +5,7 @@
 #define _SEC_DRV_H_
 
 #include <crypto/algapi.h>
-#include <linux/kfifo.h>
+#include <freax/kfifo.h>
 
 #define SEC_MAX_SGE_NUM			64
 #define SEC_HW_RING_NUM			3

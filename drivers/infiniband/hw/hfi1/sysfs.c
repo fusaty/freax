@@ -3,7 +3,7 @@
  * Copyright(c) 2015-2017 Intel Corporation.
  */
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include <rdma/ib_sysfs.h>
 
 #include "hfi.h"

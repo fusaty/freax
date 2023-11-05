@@ -6,20 +6,20 @@
  * Copyright (C) 2021 Google LLC
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/scmi_protocol.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/scmi_protocol.h>
+#include <freax/time.h>
+#include <freax/types.h>
+#include <freax/units.h>
 
 #define SCMI_IIO_NUM_OF_AXIS 3
 

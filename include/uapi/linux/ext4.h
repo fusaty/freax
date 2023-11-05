@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
-#ifndef _UAPI_LINUX_EXT4_H
-#define _UAPI_LINUX_EXT4_H
-#include <linux/fiemap.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#ifndef _UAPI_freax_EXT4_H
+#define _UAPI_freax_EXT4_H
+#include <freax/fiemap.h>
+#include <freax/fs.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /*
  * ext4-specific ioctl commands
@@ -114,4 +114,4 @@ struct ext4_new_group_input {
  */
 #define EXT4_FIEMAP_EXTENT_HOLE		0x08000000
 
-#endif /* _UAPI_LINUX_EXT4_H */
+#endif /* _UAPI_freax_EXT4_H */

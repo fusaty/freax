@@ -3,8 +3,8 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/highmem.h>
+#include <freax/bitfield.h>
+#include <freax/highmem.h>
 
 #include "ivpu_drv.h"
 #include "ivpu_hw.h"

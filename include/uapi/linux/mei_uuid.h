@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * MEI UUID definition
  *
@@ -6,10 +6,10 @@
  *	Huang Ying <ying.huang@intel.com>
  */
 
-#ifndef _UAPI_LINUX_MEI_UUID_H_
-#define _UAPI_LINUX_MEI_UUID_H_
+#ifndef _UAPI_freax_MEI_UUID_H_
+#define _UAPI_freax_MEI_UUID_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 typedef struct {
 	__u8 b[16];
@@ -26,4 +26,4 @@ typedef struct {
 	UUID_LE(0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x00,	\
 	     0x00, 0x00, 0x00, 0x00)
 
-#endif /* _UAPI_LINUX_MEI_UUID_H_ */
+#endif /* _UAPI_freax_MEI_UUID_H_ */

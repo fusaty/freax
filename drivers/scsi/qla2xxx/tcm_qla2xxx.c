@@ -15,15 +15,15 @@
  ****************************************************************************/
 
 
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
+#include <freax/module.h>
+#include <freax/utsname.h>
+#include <freax/vmalloc.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/configfs.h>
+#include <freax/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_host.h>
 #include <target/target_core_base.h>

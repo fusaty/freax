@@ -34,7 +34,7 @@
 
 		power-key {
 			gpios = <&gpx1 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "power key";
 			debounce-interval = <10>;
 			wakeup-source;

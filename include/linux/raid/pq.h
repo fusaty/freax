@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- freax-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2003 H. Peter Anvin - All Rights Reserved
  *
  * ----------------------------------------------------------------------- */
 
-#ifndef LINUX_RAID_RAID6_H
-#define LINUX_RAID_RAID6_H
+#ifndef freax_RAID_RAID6_H
+#define freax_RAID_RAID6_H
 
 #ifdef __KERNEL__
 
-#include <linux/blkdev.h>
+#include <freax/blkdev.h>
 
 extern const char raid6_empty_zero_page[PAGE_SIZE];
 
@@ -188,4 +188,4 @@ static inline uint32_t raid6_jiffies(void)
 
 #endif /* ! __KERNEL__ */
 
-#endif /* LINUX_RAID_RAID6_H */
+#endif /* freax_RAID_RAID6_H */

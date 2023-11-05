@@ -5,13 +5,13 @@
  * Author: Vitor Soares <vitor.soares@synopsys.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/i3c/device.h>
-#include <linux/i3c/master.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/i3c/device.h>
+#include <freax/i3c/master.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
 
 #include "st_lsm6dsx.h"
 

@@ -4,13 +4,13 @@
  * to work in 2.5 by Dave Jones.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/agp_backend.h>
+#include <freax/page-flags.h>
+#include <freax/mm.h>
+#include <freax/jiffies.h>
 #include "agp.h"
 
 /* NVIDIA registers */

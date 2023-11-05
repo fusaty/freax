@@ -5,12 +5,12 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
+#include <freax/err.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 #include "ad7606.h"
 
 #define MAX_SPI_FREQ_HZ		23500000	/* VDRIVE above 4.75 V */

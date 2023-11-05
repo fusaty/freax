@@ -4,17 +4,17 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 #include <asm/dcr.h>
 #include <asm/machdep.h>

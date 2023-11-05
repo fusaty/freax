@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*  linux/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
+/*  freax/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -8,28 +8,28 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/bitfield.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/debugfs.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <freax/bitfield.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/scatterlist.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/gpio.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_qos.h>
+#include <freax/debugfs.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/slot-gpio.h>
 
 #ifdef CONFIG_X86
 #include <asm/iosf_mbi.h>

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/screen_info.h>
-#include <linux/usb/ch9.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/errno.h>
-#include <linux/pgtable.h>
+#include <freax/console.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/screen_info.h>
+#include <freax/usb/ch9.h>
+#include <freax/pci_regs.h>
+#include <freax/pci_ids.h>
+#include <freax/errno.h>
+#include <freax/pgtable.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/fcntl.h>
@@ -16,8 +16,8 @@
 #include <xen/hvc-console.h>
 #include <asm/pci-direct.h>
 #include <asm/fixmap.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/xhci-dbgp.h>
+#include <freax/usb/ehci_def.h>
+#include <freax/usb/xhci-dbgp.h>
 #include <asm/pci_x86.h>
 
 /* Simple VGA output */

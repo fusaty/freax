@@ -6,7 +6,7 @@
 #ifndef _I915_GEM_TTM_PM_H_
 #define _I915_GEM_TTM_PM_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_memory_region;
 struct drm_i915_gem_object;

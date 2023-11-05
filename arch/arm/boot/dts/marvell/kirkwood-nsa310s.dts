@@ -3,7 +3,7 @@
  * ZyXEL NSA310S Board Description
  * Copyright 2020-2022 Pawel Dembicki <paweldembicki@gmail.com>
  * Copyright (c) 2015-2021, Tony Dinh <mibodhi@gmail.com>
- * Copyright (c) 2014, Adam Baker <linux@baker-net.org.uk>
+ * Copyright (c) 2014, Adam Baker <freax@baker-net.org.uk>
  * Based upon the board setup file created by Peter Schildmann
  */
 /dts-v1/;
@@ -42,19 +42,19 @@
 
 		power {
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>;
 		};
 
 		copy {
 			label = "Copy Button";
-			linux,code = <KEY_COPY>;
+			freax,code = <KEY_COPY>;
 			gpios = <&gpio0 25 GPIO_ACTIVE_LOW>;
 		};
 
 		reset {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -74,14 +74,14 @@
 			function = LED_FUNCTION_USB;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "usb-host";
+			freax,default-trigger = "usb-host";
 		};
 
 		led-3 {
 			function = LED_FUNCTION_DISK;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "ata1";
+			freax,default-trigger = "ata1";
 		};
 
 		led-4 {
@@ -100,7 +100,7 @@
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-7 {

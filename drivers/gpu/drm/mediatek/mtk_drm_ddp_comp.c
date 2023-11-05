@@ -6,12 +6,12 @@
  *	CK Hu <ck.hu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/soc/mediatek/mtk-cmdq.h>
 #include <drm/drm_print.h>
 
 #include "mtk_disp_drv.h"

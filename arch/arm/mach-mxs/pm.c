@@ -3,9 +3,9 @@
  * Copyright (C) 2010 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/suspend.h>
+#include <freax/io.h>
 #include "pm.h"
 
 static int mxs_suspend_enter(suspend_state_t state)

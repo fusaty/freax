@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ceph/ceph_debug.h>
-#include <linux/backing-dev.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/key.h>
+#include <freax/ceph/ceph_debug.h>
+#include <freax/backing-dev.h>
+#include <freax/ctype.h>
+#include <freax/fs.h>
+#include <freax/inet.h>
+#include <freax/in6.h>
+#include <freax/key.h>
 #include <keys/ceph-type.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/nsproxy.h>
-#include <linux/fs_parser.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/nsproxy.h>
+#include <freax/fs_parser.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/statfs.h>
+#include <freax/string.h>
+#include <freax/vmalloc.h>
 
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/debugfs.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/debugfs.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/auth.h>
 #include "crypto.h"
 
 

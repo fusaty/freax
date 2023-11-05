@@ -9,22 +9,22 @@
  * Copyright (C) 2021 GRATE-DRIVER project
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
+#include <freax/types.h>
 
 #include <soc/tegra/fuse.h>
 

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * logfile.c - NTFS kernel journal handling. Part of the Linux-NTFS project.
+ * logfile.c - NTFS kernel journal handling. Part of the freax-NTFS project.
  *
  * Copyright (c) 2002-2007 Anton Altaparmakov
  */
 
 #ifdef NTFS_RW
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/bio.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/buffer_head.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
+#include <freax/bio.h>
 
 #include "attrib.h"
 #include "aops.h"

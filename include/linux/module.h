@@ -6,30 +6,30 @@
  * Rewritten again by Rusty Russell, 2002
  */
 
-#ifndef _LINUX_MODULE_H
-#define _LINUX_MODULE_H
+#ifndef _freax_MODULE_H
+#define _freax_MODULE_H
 
-#include <linux/list.h>
-#include <linux/stat.h>
-#include <linux/buildid.h>
-#include <linux/compiler.h>
-#include <linux/cache.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/elf.h>
-#include <linux/stringify.h>
-#include <linux/kobject.h>
-#include <linux/moduleparam.h>
-#include <linux/jump_label.h>
-#include <linux/export.h>
-#include <linux/rbtree_latch.h>
-#include <linux/error-injection.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/srcu.h>
-#include <linux/static_call_types.h>
-#include <linux/dynamic_debug.h>
+#include <freax/list.h>
+#include <freax/stat.h>
+#include <freax/buildid.h>
+#include <freax/compiler.h>
+#include <freax/cache.h>
+#include <freax/kmod.h>
+#include <freax/init.h>
+#include <freax/elf.h>
+#include <freax/stringify.h>
+#include <freax/kobject.h>
+#include <freax/moduleparam.h>
+#include <freax/jump_label.h>
+#include <freax/export.h>
+#include <freax/rbtree_latch.h>
+#include <freax/error-injection.h>
+#include <freax/tracepoint-defs.h>
+#include <freax/srcu.h>
+#include <freax/static_call_types.h>
+#include <freax/dynamic_debug.h>
 
-#include <linux/percpu.h>
+#include <freax/percpu.h>
 #include <asm/module.h>
 
 #define MODULE_NAME_LEN MAX_PARAM_PREFIX_LEN
@@ -217,7 +217,7 @@ extern void cleanup_module(void);
  * license variants. The detailed and correct license information is again
  * to be found in the corresponding source files.
  *
- * There are dual licensed components, but when running with Linux it is the
+ * There are dual licensed components, but when running with freax it is the
  * GPL that is relevant so this is a non issue. Similarly LGPL linked with GPL
  * is a GPL combined work.
  *
@@ -988,4 +988,4 @@ static inline unsigned long find_kallsyms_symbol_value(struct module *mod,
 
 #endif  /* CONFIG_MODULES && CONFIG_KALLSYMS */
 
-#endif /* _LINUX_MODULE_H */
+#endif /* _freax_MODULE_H */

@@ -3,7 +3,7 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/unistd.h>
 
 	.text

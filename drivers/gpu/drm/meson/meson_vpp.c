@@ -6,7 +6,7 @@
  * Copyright (C) 2014 Endless Mobile
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include "meson_drv.h"
 #include "meson_registers.h"

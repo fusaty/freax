@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * This file holds Hub protocol constants and data structures that are
  * defined in chapter 11 (Hub Specification) of the USB 2.0 specification.
@@ -7,10 +7,10 @@
  * drivers.
  */
 
-#ifndef __LINUX_CH11_H
-#define __LINUX_CH11_H
+#ifndef __freax_CH11_H
+#define __freax_CH11_H
 
-#include <linux/types.h>	/* __u8 etc */
+#include <freax/types.h>	/* __u8 etc */
 
 /* This is arbitrary.
  * From USB 2.0 spec Table 11-13, offset 7, a hub can
@@ -302,4 +302,4 @@ enum hub_led_mode {
 #define HUB_TTTT_24_BITS	0x40
 #define HUB_TTTT_32_BITS	0x60
 
-#endif /* __LINUX_CH11_H */
+#endif /* __freax_CH11_H */

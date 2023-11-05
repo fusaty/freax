@@ -7,97 +7,97 @@
 #include "common.h"
 #include "../util/env.h"
 #include "../util/debug.h"
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 const char *const arc_triplets[] = {
-	"arc-linux-",
-	"arc-snps-linux-uclibc-",
-	"arc-snps-linux-gnu-",
+	"arc-freax-",
+	"arc-snps-freax-uclibc-",
+	"arc-snps-freax-gnu-",
 	NULL
 };
 
 const char *const arm_triplets[] = {
 	"arm-eabi-",
-	"arm-linux-androideabi-",
-	"arm-unknown-linux-",
-	"arm-unknown-linux-gnu-",
-	"arm-unknown-linux-gnueabi-",
-	"arm-linux-gnu-",
-	"arm-linux-gnueabihf-",
+	"arm-freax-androideabi-",
+	"arm-unknown-freax-",
+	"arm-unknown-freax-gnu-",
+	"arm-unknown-freax-gnueabi-",
+	"arm-freax-gnu-",
+	"arm-freax-gnueabihf-",
 	"arm-none-eabi-",
 	NULL
 };
 
 const char *const arm64_triplets[] = {
-	"aarch64-linux-android-",
-	"aarch64-linux-gnu-",
+	"aarch64-freax-android-",
+	"aarch64-freax-gnu-",
 	NULL
 };
 
 const char *const powerpc_triplets[] = {
-	"powerpc-unknown-linux-gnu-",
-	"powerpc-linux-gnu-",
-	"powerpc64-unknown-linux-gnu-",
-	"powerpc64-linux-gnu-",
-	"powerpc64le-linux-gnu-",
+	"powerpc-unknown-freax-gnu-",
+	"powerpc-freax-gnu-",
+	"powerpc64-unknown-freax-gnu-",
+	"powerpc64-freax-gnu-",
+	"powerpc64le-freax-gnu-",
 	NULL
 };
 
 const char *const riscv32_triplets[] = {
-	"riscv32-unknown-linux-gnu-",
-	"riscv32-linux-android-",
-	"riscv32-linux-gnu-",
+	"riscv32-unknown-freax-gnu-",
+	"riscv32-freax-android-",
+	"riscv32-freax-gnu-",
 	NULL
 };
 
 const char *const riscv64_triplets[] = {
-	"riscv64-unknown-linux-gnu-",
-	"riscv64-linux-android-",
-	"riscv64-linux-gnu-",
+	"riscv64-unknown-freax-gnu-",
+	"riscv64-freax-android-",
+	"riscv64-freax-gnu-",
 	NULL
 };
 
 const char *const s390_triplets[] = {
-	"s390-ibm-linux-",
-	"s390x-linux-gnu-",
+	"s390-ibm-freax-",
+	"s390x-freax-gnu-",
 	NULL
 };
 
 const char *const sh_triplets[] = {
-	"sh-unknown-linux-gnu-",
-	"sh-linux-gnu-",
+	"sh-unknown-freax-gnu-",
+	"sh-freax-gnu-",
 	NULL
 };
 
 const char *const sparc_triplets[] = {
-	"sparc-unknown-linux-gnu-",
-	"sparc64-unknown-linux-gnu-",
-	"sparc64-linux-gnu-",
+	"sparc-unknown-freax-gnu-",
+	"sparc64-unknown-freax-gnu-",
+	"sparc64-freax-gnu-",
 	NULL
 };
 
 const char *const x86_triplets[] = {
-	"x86_64-pc-linux-gnu-",
-	"x86_64-unknown-linux-gnu-",
-	"i686-pc-linux-gnu-",
-	"i586-pc-linux-gnu-",
-	"i486-pc-linux-gnu-",
-	"i386-pc-linux-gnu-",
-	"i686-linux-android-",
-	"i686-android-linux-",
-	"x86_64-linux-gnu-",
-	"i586-linux-gnu-",
+	"x86_64-pc-freax-gnu-",
+	"x86_64-unknown-freax-gnu-",
+	"i686-pc-freax-gnu-",
+	"i586-pc-freax-gnu-",
+	"i486-pc-freax-gnu-",
+	"i386-pc-freax-gnu-",
+	"i686-freax-android-",
+	"i686-android-freax-",
+	"x86_64-freax-gnu-",
+	"i586-freax-gnu-",
 	NULL
 };
 
 const char *const mips_triplets[] = {
-	"mips-unknown-linux-gnu-",
-	"mipsel-linux-android-",
-	"mips-linux-gnu-",
-	"mips64-linux-gnu-",
-	"mips64el-linux-gnuabi64-",
-	"mips64-linux-gnuabi64-",
-	"mipsel-linux-gnu-",
+	"mips-unknown-freax-gnu-",
+	"mipsel-freax-android-",
+	"mips-freax-gnu-",
+	"mips64-freax-gnu-",
+	"mips64el-freax-gnuabi64-",
+	"mips64-freax-gnuabi64-",
+	"mipsel-freax-gnu-",
 	NULL
 };
 

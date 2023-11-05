@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/watchdog.h>
+#include <freax/io.h>
 
 #define TS72XX_WDT_DEFAULT_TIMEOUT	30
 

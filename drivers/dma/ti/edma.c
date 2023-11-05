@@ -5,24 +5,24 @@
  * Copyright 2012 Texas Instruments
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/bitmap.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/platform_data/edma.h>
+#include <freax/platform_data/edma.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"
@@ -247,14 +247,14 @@ struct edma_cc {
 
 	/*
 	 * The slot_inuse bit for each PaRAM slot is clear unless the slot is
-	 * in use by Linux or if it is allocated to be used by DSP.
+	 * in use by freax or if it is allocated to be used by DSP.
 	 */
 	unsigned long *slot_inuse;
 
 	/*
 	 * For tracking reserved channels used by DSP.
 	 * If the bit is cleared, the channel is allocated to be used by DSP
-	 * and Linux must not touch it.
+	 * and freax must not touch it.
 	 */
 	unsigned long *channels_mask;
 
@@ -2382,7 +2382,7 @@ static int edma_probe(struct platform_device *pdev)
 					   reserved[i][1]);
 		}
 
-		/* Clear channels not usable for Linux */
+		/* Clear channels not usable for freax */
 		reserved = info->rsv->rsv_chans;
 		if (reserved) {
 			for (i = 0; reserved[i][0] != -1; i++)

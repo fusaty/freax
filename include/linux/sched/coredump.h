@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_COREDUMP_H
-#define _LINUX_SCHED_COREDUMP_H
+#ifndef _freax_SCHED_COREDUMP_H
+#define _freax_SCHED_COREDUMP_H
 
-#include <linux/mm_types.h>
+#include <freax/mm_types.h>
 
 #define SUID_DUMP_DISABLE	0	/* No setuid dumping */
 #define SUID_DUMP_USER		1	/* Dump as user of process */
@@ -104,4 +104,4 @@ static inline unsigned long mmf_init_flags(unsigned long flags)
 	return flags & MMF_INIT_MASK;
 }
 
-#endif /* _LINUX_SCHED_COREDUMP_H */
+#endif /* _freax_SCHED_COREDUMP_H */

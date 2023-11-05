@@ -5,11 +5,11 @@
  * Copyright (C) 2005-2008 ARM
  *
  ***************************************************************************/
-#ifndef __LINUX_SMSC911X_H__
-#define __LINUX_SMSC911X_H__
+#ifndef __freax_SMSC911X_H__
+#define __freax_SMSC911X_H__
 
-#include <linux/phy.h>
-#include <linux/if_ether.h>
+#include <freax/phy.h>
+#include <freax/if_ether.h>
 
 /* platform_device configuration data, should be assigned to
  * the platform_device's dev.platform_data */
@@ -47,4 +47,4 @@ struct smsc911x_platform_config {
  */
 #define SMSC911X_SWAP_FIFO			(BIT(5))
 
-#endif /* __LINUX_SMSC911X_H__ */
+#endif /* __freax_SMSC911X_H__ */

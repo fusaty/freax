@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, The freax Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/interconnect.h>
+#include <freax/interconnect-provider.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/interconnect/qcom,sdm670-rpmh.h>
 
 #include "bcm-voter.h"

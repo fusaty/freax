@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * i2c-dev.h - I2C bus char device interface
  *
@@ -6,11 +6,11 @@
  * Copyright (C) 1998-99 Frodo Looijaard <frodol@dds.nl>
  */
 
-#ifndef _UAPI_LINUX_I2C_DEV_H
-#define _UAPI_LINUX_I2C_DEV_H
+#ifndef _UAPI_freax_I2C_DEV_H
+#define _UAPI_freax_I2C_DEV_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 
 /* /dev/i2c-X ioctl commands.  The ioctl's parameter is always an
  * unsigned long, except for:
@@ -57,4 +57,4 @@ struct i2c_rdwr_ioctl_data {
 #define  I2C_RDRW_IOCTL_MAX_MSGS	I2C_RDWR_IOCTL_MAX_MSGS
 
 
-#endif /* _UAPI_LINUX_I2C_DEV_H */
+#endif /* _UAPI_freax_I2C_DEV_H */

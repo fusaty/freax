@@ -4,13 +4,13 @@
 // Copyright (c) 2016 Samsung Electronics Co., Ltd.
 // Copyright (c) Andi Shyti <andi@etezian.org>
 
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_gpio.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 #include <media/rc-core.h>
 
 #define IR_SPI_DRIVER_NAME		"ir-spi"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -9,11 +9,11 @@
 #ifndef _NET_IPV6_H
 #define _NET_IPV6_H
 
-#include <linux/ipv6.h>
-#include <linux/hardirq.h>
-#include <linux/jhash.h>
-#include <linux/refcount.h>
-#include <linux/jump_label_ratelimit.h>
+#include <freax/ipv6.h>
+#include <freax/hardirq.h>
+#include <freax/jhash.h>
+#include <freax/refcount.h>
+#include <freax/jump_label_ratelimit.h>
 #include <net/if_inet6.h>
 #include <net/flow.h>
 #include <net/flow_dissector.h>

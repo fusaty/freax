@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PAGE_EXT_H
-#define __LINUX_PAGE_EXT_H
+#ifndef __freax_PAGE_EXT_H
+#define __freax_PAGE_EXT_H
 
-#include <linux/types.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
+#include <freax/types.h>
+#include <freax/stacktrace.h>
+#include <freax/stackdepot.h>
 
 struct pglist_data;
 
@@ -127,4 +127,4 @@ static inline void page_ext_put(struct page_ext *page_ext)
 {
 }
 #endif /* CONFIG_PAGE_EXTENSION */
-#endif /* __LINUX_PAGE_EXT_H */
+#endif /* __freax_PAGE_EXT_H */

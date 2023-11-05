@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Real Time Clock interface for Linux on Atmel AT91RM9200
+ *	Real Time Clock interface for freax on Atmel AT91RM9200
  *
  *	Copyright (C) 2002 Rick Bronson
  *
  *	Converted to RTC class model by Andrew Victor
  *
- *	Ported to Linux 2.6 by Steven Scholz
+ *	Ported to freax 2.6 by Steven Scholz
  *	Based on s3c2410-rtc.c Simtec Electronics
  *
  *	Based on sa1100-rtc.c by Nils Faerber
  *	Based on rtc.c by Paul Gortmaker
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
+#include <freax/bcd.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/spinlock.h>
+#include <freax/suspend.h>
+#include <freax/time.h>
+#include <freax/uaccess.h>
 
 #define	AT91_RTC_CR		0x00			/* Control Register */
 #define		AT91_RTC_UPDTIM		BIT(0)		/* Update Request Time Register */

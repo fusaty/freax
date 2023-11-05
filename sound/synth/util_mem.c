@@ -5,10 +5,10 @@
  *  Generic memory management routines for soundcard memory allocation
  */
 
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/util_mem.h>
 

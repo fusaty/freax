@@ -12,12 +12,12 @@
  * Based on sam9g20_wm8731.c by:
  * Sedji Gaouaou <sedji.gaouaou@atmel.com>
  */
-#include <linux/of.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
+#include <freax/of.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

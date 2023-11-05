@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Spanning tree protocol; interface code
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <freax/kernel.h>
+#include <freax/kmod.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
 #include <net/switchdev.h>
 
 #include "br_private.h"

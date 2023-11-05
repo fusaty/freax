@@ -21,9 +21,9 @@
 #ifndef	__ATOMISP_CMD_H__
 #define	__ATOMISP_CMD_H__
 
-#include "../../include/linux/atomisp.h"
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
+#include "../../include/freax/atomisp.h"
+#include <freax/interrupt.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-subdev.h>
 

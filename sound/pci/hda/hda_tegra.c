@@ -4,25 +4,25 @@
  * Implementation of primary ALSA driver code base for NVIDIA Tegra HDA.
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/string.h>
+#include <freax/pm_runtime.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

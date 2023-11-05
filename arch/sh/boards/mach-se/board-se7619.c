@@ -7,8 +7,8 @@
  * Hitachi SH7619 SolutionEngine Support.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 #include <asm/machvec.h>
 

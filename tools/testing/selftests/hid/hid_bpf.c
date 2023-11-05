@@ -11,8 +11,8 @@
 #include <poll.h>
 #include <pthread.h>
 #include <stdbool.h>
-#include <linux/hidraw.h>
-#include <linux/uhid.h>
+#include <freax/hidraw.h>
+#include <freax/uhid.h>
 
 #define SHOW_UHID_DEBUG 0
 

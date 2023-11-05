@@ -4,10 +4,10 @@
  * Copyright (C) 2005 by David Brownell
  */
 
-#ifndef	__LINUX_USB_RNDIS_HOST_H
-#define	__LINUX_USB_RNDIS_HOST_H
+#ifndef	__freax_USB_RNDIS_HOST_H
+#define	__freax_USB_RNDIS_HOST_H
 
-#include <linux/rndis.h>
+#include <freax/rndis.h>
 
 /*
  * CONTROL uses CDC "encapsulated commands" with funky notifications.
@@ -195,4 +195,4 @@ extern int rndis_rx_fixup(struct usbnet *dev, struct sk_buff *skb);
 extern struct sk_buff *
 rndis_tx_fixup(struct usbnet *dev, struct sk_buff *skb, gfp_t flags);
 
-#endif	/* __LINUX_USB_RNDIS_HOST_H */
+#endif	/* __freax_USB_RNDIS_HOST_H */

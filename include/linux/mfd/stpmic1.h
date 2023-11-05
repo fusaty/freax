@@ -5,8 +5,8 @@
  * Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
  */
 
-#ifndef __LINUX_MFD_STPMIC1_H
-#define __LINUX_MFD_STPMIC1_H
+#ifndef __freax_MFD_STPMIC1_H
+#define __freax_MFD_STPMIC1_H
 
 #define TURN_ON_SR		0x1
 #define TURN_OFF_SR		0x2
@@ -209,4 +209,4 @@ struct stpmic1 {
 	struct regmap_irq_chip_data *irq_data;
 };
 
-#endif /*  __LINUX_MFD_STPMIC1_H */
+#endif /*  __freax_MFD_STPMIC1_H */

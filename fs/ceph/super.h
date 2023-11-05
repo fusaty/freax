@@ -2,26 +2,26 @@
 #ifndef _FS_CEPH_SUPER_H
 #define _FS_CEPH_SUPER_H
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
 #include <asm/unaligned.h>
-#include <linux/backing-dev.h>
-#include <linux/completion.h>
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/posix_acl.h>
-#include <linux/refcount.h>
-#include <linux/security.h>
-#include <linux/netfs.h>
-#include <linux/fscache.h>
-#include <linux/hashtable.h>
+#include <freax/backing-dev.h>
+#include <freax/completion.h>
+#include <freax/exportfs.h>
+#include <freax/fs.h>
+#include <freax/mempool.h>
+#include <freax/pagemap.h>
+#include <freax/wait.h>
+#include <freax/writeback.h>
+#include <freax/slab.h>
+#include <freax/posix_acl.h>
+#include <freax/refcount.h>
+#include <freax/security.h>
+#include <freax/netfs.h>
+#include <freax/fscache.h>
+#include <freax/hashtable.h>
 
-#include <linux/ceph/libceph.h>
+#include <freax/ceph/libceph.h>
 #include "crypto.h"
 
 /* large granularity for statfs utilization stats to facilitate

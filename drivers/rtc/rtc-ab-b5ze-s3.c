@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/interrupt.h>
 
 #define DRV_NAME "rtc-ab-b5ze-s3"
 

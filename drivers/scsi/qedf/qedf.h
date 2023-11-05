@@ -15,9 +15,9 @@
 /* qedf_hsi.h needs to before included any qed includes */
 #include "qedf_hsi.h"
 
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_fcoe_if.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/qed_fcoe_if.h>
+#include <freax/qed/qed_ll2_if.h>
 #include "qedf_version.h"
 #include "qedf_dbg.h"
 #include "drv_fcoe_fw_funcs.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/arch/alpha/lib/memset.S
+ * freax/arch/alpha/lib/memset.S
  *
  * This is an efficient (and small) implementation of the C library "memset()"
  * function for the alpha.
@@ -14,7 +14,7 @@
  * The scheduling comments are according to the EV5 documentation (and done by 
  * hand, so they might well be incorrect, please do tell me about it..)
  */
-#include <linux/export.h>
+#include <freax/export.h>
 	.set noat
 	.set noreorder
 .text

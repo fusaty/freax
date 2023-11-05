@@ -1,1 +1,1 @@
-#include "../../../../include/linux/kconfig.h"
+#include "../../../../include/freax/kconfig.h"

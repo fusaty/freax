@@ -6,8 +6,8 @@
 #ifndef __IVPU_JOB_H__
 #define __IVPU_JOB_H__
 
-#include <linux/kref.h>
-#include <linux/idr.h>
+#include <freax/kref.h>
+#include <freax/idr.h>
 
 #include "ivpu_gem.h"
 

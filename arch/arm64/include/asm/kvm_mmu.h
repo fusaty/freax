@@ -112,7 +112,7 @@ alternative_cb_end
 
 #else
 
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>

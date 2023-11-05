@@ -5,12 +5,12 @@
  * Copyright (c) 2012-2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include "bus.h"
 #include "ishtp-dev.h"
 #include "client.h"

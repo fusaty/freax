@@ -7,15 +7,15 @@
  * IIO driver for STK3310/STK3311. 7-bit I2C address: 0x48.
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define STK3310_REG_STATE			0x00
 #define STK3310_REG_PSCTRL			0x01

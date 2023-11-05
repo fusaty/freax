@@ -25,7 +25,7 @@
 #include "xfs_ag.h"
 #include "xfs_log_priv.h"
 
-#include <linux/iversion.h>
+#include <freax/iversion.h>
 
 /* Radix tree tags for incore inode tree. */
 

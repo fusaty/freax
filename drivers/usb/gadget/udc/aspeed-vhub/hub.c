@@ -7,26 +7,26 @@
  * Copyright 2017 IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/bcd.h>
-#include <linux/version.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/prefetch.h>
+#include <freax/clk.h>
+#include <freax/usb/gadget.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/dma-mapping.h>
+#include <freax/bcd.h>
+#include <freax/version.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #include "vhub.h"
 
@@ -40,8 +40,8 @@
  *    - Make vid/did overridable
  *    - make it look like usb1 if usb1 mode forced
  */
-#define KERNEL_REL	bin2bcd(LINUX_VERSION_MAJOR)
-#define KERNEL_VER	bin2bcd(LINUX_VERSION_PATCHLEVEL)
+#define KERNEL_REL	bin2bcd(freax_VERSION_MAJOR)
+#define KERNEL_VER	bin2bcd(freax_VERSION_PATCHLEVEL)
 
 enum {
 	AST_VHUB_STR_INDEX_MAX = 4,
@@ -85,7 +85,7 @@ static const struct usb_qualifier_descriptor ast_vhub_qual_desc = {
  */
 
 /*
- * We don't use sizeof() as Linux definition of
+ * We don't use sizeof() as freax definition of
  * struct usb_endpoint_descriptor contains 2
  * extra bytes
  */

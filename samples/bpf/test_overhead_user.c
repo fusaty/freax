@@ -15,7 +15,7 @@
 #include <arpa/inet.h>
 #include <stdlib.h>
 #include <signal.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <string.h>
 #include <time.h>
 #include <bpf/bpf.h>

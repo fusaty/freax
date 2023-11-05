@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <freax/fs.h>
+#include <freax/types.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "btrfs_inode.h"

@@ -5,7 +5,7 @@
 
 #ifndef OPENVSWITCH_DROP_H
 #define OPENVSWITCH_DROP_H
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/dropreason.h>
 
 #define OVS_DROP_REASONS(R)			\

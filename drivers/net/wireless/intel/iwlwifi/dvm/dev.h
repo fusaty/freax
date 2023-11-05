@@ -11,12 +11,12 @@
 #ifndef __iwl_dev_h__
 #define __iwl_dev_h__
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
 
 #include "fw/img.h"
 #include "iwl-eeprom-parse.h"

@@ -6,19 +6,19 @@
  * Built from gxfb (which is Copyright (C) 2006 Arcom Control Systems Ltd.)
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/console.h>
+#include <freax/mm.h>
+#include <freax/suspend.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/uaccess.h>
 
 #include <asm/olpc.h>
 

@@ -3,8 +3,8 @@
  * Standard pin control state definitions
  */
 
-#ifndef __LINUX_PINCTRL_PINCTRL_STATE_H
-#define __LINUX_PINCTRL_PINCTRL_STATE_H
+#ifndef __freax_PINCTRL_PINCTRL_STATE_H
+#define __freax_PINCTRL_PINCTRL_STATE_H
 
 /**
  * @PINCTRL_STATE_DEFAULT: the state the pinctrl handle shall be put
@@ -35,4 +35,4 @@
 #define PINCTRL_STATE_IDLE "idle"
 #define PINCTRL_STATE_SLEEP "sleep"
 
-#endif /* __LINUX_PINCTRL_PINCTRL_STATE_H */
+#endif /* __freax_PINCTRL_PINCTRL_STATE_H */

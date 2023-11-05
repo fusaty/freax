@@ -16,9 +16,9 @@
 #include "caamalg_desc.h"
 #include "caamhash_desc.h"
 #include "dpseci-debugfs.h"
-#include <linux/dma-mapping.h>
-#include <linux/fsl/mc.h>
-#include <linux/kernel.h>
+#include <freax/dma-mapping.h>
+#include <freax/fsl/mc.h>
+#include <freax/kernel.h>
 #include <soc/fsl/dpaa2-io.h>
 #include <soc/fsl/dpaa2-fd.h>
 #include <crypto/xts.h>

@@ -10,7 +10,7 @@
 #ifndef __KVM_VCPU_RISCV_FP_H
 #define __KVM_VCPU_RISCV_FP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct kvm_cpu_context;
 

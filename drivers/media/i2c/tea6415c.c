@@ -16,10 +16,10 @@
   */
 
 
-#include <linux/module.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <freax/module.h>
+#include <freax/ioctl.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
 #include <media/v4l2-device.h>
 #include "tea6415c.h"
 

@@ -4,9 +4,9 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <asm/mach/arch.h>
 
 #include "common.h"

@@ -3,15 +3,15 @@
  *    Copyright IBM Corp. 2006
  */
 
-#include <linux/memory_hotplug.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <freax/memory_hotplug.h>
+#include <freax/memblock.h>
+#include <freax/pfn.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/hugetlb.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
 #include <asm/page-states.h>
 #include <asm/cacheflush.h>
 #include <asm/nospec-branch.h>

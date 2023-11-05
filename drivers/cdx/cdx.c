@@ -22,7 +22,7 @@
  *          |    Application CPUs (APU)            |
  *          |                                      |
  *          |                    CDX device drivers|
- *          |     Linux OS                |        |
+ *          |     freax OS                |        |
  *          |                        CDX bus       |
  *          |                             |        |
  *          |                     CDX controller   |
@@ -55,15 +55,15 @@
  * done using memory mapped interface provided by the RPU to APU.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/idr.h>
-#include <linux/cdx/cdx_bus.h>
-#include <linux/iommu.h>
-#include <linux/dma-map-ops.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/of_device.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/idr.h>
+#include <freax/cdx/cdx_bus.h>
+#include <freax/iommu.h>
+#include <freax/dma-map-ops.h>
 #include "cdx.h"
 
 /* Default DMA mask for devices on a CDX bus */

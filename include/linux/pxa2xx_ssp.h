@@ -11,15 +11,15 @@
  *       PXA3xx     SSP1, SSP2, SSP3, SSP4
  */
 
-#ifndef __LINUX_PXA2XX_SSP_H
-#define __LINUX_PXA2XX_SSP_H
+#ifndef __freax_PXA2XX_SSP_H
+#define __freax_PXA2XX_SSP_H
 
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/io.h>
-#include <linux/kconfig.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/compiler_types.h>
+#include <freax/io.h>
+#include <freax/kconfig.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 struct clk;
 struct device;
@@ -306,4 +306,4 @@ static inline struct ssp_device *pxa_ssp_request_of(const struct device_node *n,
 static inline void pxa_ssp_free(struct ssp_device *ssp) {}
 #endif
 
-#endif	/* __LINUX_PXA2XX_SSP_H */
+#endif	/* __freax_PXA2XX_SSP_H */

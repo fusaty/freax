@@ -11,19 +11,19 @@
 
 #define STMMAC_RESOURCE_NAME   "stmmaceth"
 
-#include <linux/clk.h>
-#include <linux/hrtimer.h>
-#include <linux/if_vlan.h>
-#include <linux/stmmac.h>
-#include <linux/phylink.h>
-#include <linux/pci.h>
+#include <freax/clk.h>
+#include <freax/hrtimer.h>
+#include <freax/if_vlan.h>
+#include <freax/stmmac.h>
+#include <freax/phylink.h>
+#include <freax/pci.h>
 #include "common.h"
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/reset.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/net_tstamp.h>
+#include <freax/reset.h>
 #include <net/page_pool/types.h>
 #include <net/xdp.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/freax/bpf.h>
 
 struct stmmac_resources {
 	void __iomem *addr;

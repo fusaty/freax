@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * sis5595.c - Part of lm_sensors, Linux kernel modules
+ * sis5595.c - Part of lm_sensors, freax kernel modules
  *	       for hardware monitoring
  *
  * Copyright (C) 1998 - 2001 Frodo Looijaard <frodol@dds.nl>,
  *			     Kyösti Mälkki <kmalkki@cc.hut.fi>, and
  *			     Mark D. Studebaker <mdsxyz123@yahoo.com>
- * Ported to Linux 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
+ * Ported to freax 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
  * the help of Jean Delvare <jdelvare@suse.de>
  */
 
@@ -40,20 +40,20 @@
 #define DRIVER_NAME "sis5595"
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 /*
  * If force_addr is set to anything different from 0, we forcibly enable

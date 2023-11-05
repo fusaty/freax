@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) "pll14xx: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
 
 #include "clk.h"
 

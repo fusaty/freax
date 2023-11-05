@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
 #ifndef _UAPI_ASM_X86_AMD_HSMP_H_
 #define _UAPI_ASM_X86_AMD_HSMP_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #pragma pack(4)
 

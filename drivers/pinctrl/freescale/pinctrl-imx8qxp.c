@@ -6,15 +6,15 @@
  */
 
 #include <dt-bindings/pinctrl/pads-imx8qxp.h>
-#include <linux/err.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
 
 #include "pinctrl-imx.h"
 

@@ -5,11 +5,11 @@
  * https://datatracker.ietf.org/doc/html/rfc8998
  *
  * Copyright (C) 2016 Jussi Kivilinna <jussi.kivilinna@iki.fi>
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/assembler.h>
 #include "sm4-ce-asm.h"
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #undef TRACE_SYSTEM
@@ -7,8 +7,8 @@
 #if !defined(_MLX5_CMD_TP_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_CMD_TP_H_
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <freax/tracepoint.h>
+#include <freax/trace_seq.h>
 
 TRACE_EVENT(mlx5_cmd,
 	    TP_PROTO(const char *command_str, u16 opcode, u16 op_mod,

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -35,40 +35,40 @@
 #ifndef _SOCK_H
 #define _SOCK_H
 
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/timer.h>
-#include <linux/cache.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>	/* struct sk_buff */
-#include <linux/mm.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/static_key.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/cgroup-defs.h>
-#include <linux/rbtree.h>
-#include <linux/rculist_nulls.h>
-#include <linux/poll.h>
-#include <linux/sockptr.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/llist.h>
+#include <freax/hardirq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/list_nulls.h>
+#include <freax/timer.h>
+#include <freax/cache.h>
+#include <freax/bitops.h>
+#include <freax/lockdep.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>	/* struct sk_buff */
+#include <freax/mm.h>
+#include <freax/security.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/page_counter.h>
+#include <freax/memcontrol.h>
+#include <freax/static_key.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/cgroup-defs.h>
+#include <freax/rbtree.h>
+#include <freax/rculist_nulls.h>
+#include <freax/poll.h>
+#include <freax/sockptr.h>
+#include <freax/indirect_call_wrapper.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
+#include <freax/llist.h>
 #include <net/dst.h>
 #include <net/checksum.h>
 #include <net/tcp_states.h>
-#include <linux/net_tstamp.h>
+#include <freax/net_tstamp.h>
 #include <net/l3mdev.h>
-#include <uapi/linux/socket.h>
+#include <uapi/freax/socket.h>
 
 /*
  * This structure really needs to be cleaned up.

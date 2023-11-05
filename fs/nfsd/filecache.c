@@ -29,16 +29,16 @@
  *    during which it may be re-used.
  */
 
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/list_lru.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/fsnotify.h>
-#include <linux/seq_file.h>
-#include <linux/rhashtable.h>
+#include <freax/hash.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/sched.h>
+#include <freax/list_lru.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/fsnotify.h>
+#include <freax/seq_file.h>
+#include <freax/rhashtable.h>
 
 #include "vfs.h"
 #include "nfsd.h"

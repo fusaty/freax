@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * lm75.c - Part of lm_sensors, Linux kernel modules for hardware
+ * lm75.c - Part of lm_sensors, freax kernel modules for hardware
  *	 monitoring
  * Copyright (c) 1998, 1999  Frodo Looijaard <frodol@dds.nl>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/util_macros.h>
+#include <freax/regulator/consumer.h>
 #include "lm75.h"
 
 /*

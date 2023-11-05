@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0+
 //
-// Linux performance counter support for ARC CPUs.
+// freax performance counter support for ARC CPUs.
 // This code is inspired by the perf support of various other architectures.
 //
 // Copyright (C) 2013-2018 Synopsys, Inc. (www.synopsys.com)
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
 #include <asm/arcregs.h>
 #include <asm/stacktrace.h>
 

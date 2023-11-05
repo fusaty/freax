@@ -4,16 +4,16 @@
 #ifndef _PERFMON_H_
 #define _PERFMON_H_
 
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/sbitmap.h>
-#include <linux/dmaengine.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/uuid.h>
-#include <linux/idxd.h>
-#include <linux/perf_event.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/sbitmap.h>
+#include <freax/dmaengine.h>
+#include <freax/percpu-rwsem.h>
+#include <freax/wait.h>
+#include <freax/cdev.h>
+#include <freax/uuid.h>
+#include <freax/idxd.h>
+#include <freax/perf_event.h>
 #include "registers.h"
 
 static inline struct idxd_pmu *event_to_pmu(struct perf_event *event)

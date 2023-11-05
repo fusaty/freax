@@ -9,19 +9,19 @@
  *   Wu Hao <hao.wu@intel.com>
  *   Xu Yilun <yilun.xu@intel.com>
  */
-#include <linux/bitfield.h>
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/stddef.h>
-#include <linux/spi/altera.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/dfl.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/stddef.h>
+#include <freax/spi/altera.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 /*
  * N3000 Nios private feature registers, named as NIOS_SPI_XX on spec.

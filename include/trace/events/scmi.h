@@ -5,7 +5,7 @@
 #if !defined(_TRACE_SCMI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SCMI_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(scmi_fc_call,
 	TP_PROTO(u8 protocol_id, u8 msg_id, u32 res_id, u32 val1, u32 val2),

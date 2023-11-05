@@ -9,11 +9,11 @@
 #include <crypto/ctr.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 struct crypto_rfc3686_ctx {
 	struct crypto_skcipher *child;

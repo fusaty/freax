@@ -6,9 +6,9 @@
  *
  * Copyright (C) 2013 Texas Instruments Incorporated - https://www.ti.com
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/init.h>
 
 #include "common.h"
 

@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/init.h>
+#include <freax/device.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Input driver event debug module");

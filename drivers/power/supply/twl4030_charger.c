@@ -8,18 +8,18 @@
  * Copyright (C) 2008 Texas Instruments, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/twl.h>
-#include <linux/power_supply.h>
-#include <linux/notifier.h>
-#include <linux/usb/otg.h>
-#include <linux/iio/consumer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/twl.h>
+#include <freax/power_supply.h>
+#include <freax/notifier.h>
+#include <freax/usb/otg.h>
+#include <freax/iio/consumer.h>
 
 #define TWL4030_BCIMDEN		0x00
 #define TWL4030_BCIMDKEY	0x01

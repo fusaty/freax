@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
-#include <linux/bpf.h>
-#include <linux/fs.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/btf_ids.h>
+#include <freax/bpf.h>
+#include <freax/fs.h>
+#include <freax/filter.h>
+#include <freax/kernel.h>
+#include <freax/btf_ids.h>
 
 struct bpf_iter_seq_map_info {
 	u32 map_id;
@@ -195,7 +195,7 @@ late_initcall(bpf_map_iter_init);
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc s64 bpf_map_sum_elem_count(const struct bpf_map *map)
 {

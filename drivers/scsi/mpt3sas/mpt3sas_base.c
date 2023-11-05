@@ -5,7 +5,7 @@
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_base.c
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2014 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-Fusionfreax.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -43,22 +43,22 @@
  * USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/kthread.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/kdev_t.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/time.h>
+#include <freax/ktime.h>
+#include <freax/kthread.h>
 #include <asm/page.h>        /* To get host page size per arch */
 
 

@@ -6,10 +6,10 @@
  * Copyright (C) 2019-2020 Antmicro <www.antmicro.com>
  */
 
-#ifndef _LINUX_LITEX_H
-#define _LINUX_LITEX_H
+#ifndef _freax_LITEX_H
+#define _freax_LITEX_H
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 static inline void _write_litex_subregister(u32 val, void __iomem *addr)
 {
@@ -30,7 +30,7 @@ static inline u32 _read_litex_subregister(void __iomem *addr)
  * 32-bit wide logical CSR will be laid out as four 32-bit physical
  * subregisters, each one containing one byte of meaningful data.
  *
- * For Linux support, upstream LiteX enforces a 32-bit wide CSR bus, which
+ * For freax support, upstream LiteX enforces a 32-bit wide CSR bus, which
  * means that only larger-than-32-bit CSRs will be split across multiple
  * subregisters (e.g., a 64-bit CSR will be spread across two consecutive
  * 32-bit subregisters).
@@ -80,4 +80,4 @@ static inline u64 litex_read64(void __iomem *reg)
 		_read_litex_subregister(reg + 4);
 }
 
-#endif /* _LINUX_LITEX_H */
+#endif /* _freax_LITEX_H */

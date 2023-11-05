@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
+#include <freax/efi.h>
+#include <freax/module.h>
+#include <freax/pstore.h>
+#include <freax/slab.h>
+#include <freax/ucs2_string.h>
 
 MODULE_IMPORT_NS(EFIVAR);
 
@@ -105,7 +105,7 @@ static int efi_pstore_read_func(struct pstore_record *record,
 	if (!record->buf)
 		return -ENOMEM;
 
-	status = efivar_get_variable(varname, &LINUX_EFI_CRASH_GUID, NULL,
+	status = efivar_get_variable(varname, &freax_EFI_CRASH_GUID, NULL,
 				     &size, record->buf);
 	if (status != EFI_SUCCESS) {
 		kfree(record->buf);
@@ -130,7 +130,7 @@ static int efi_pstore_read_func(struct pstore_record *record,
 static ssize_t efi_pstore_read(struct pstore_record *record)
 {
 	efi_char16_t *varname = record->psi->data;
-	efi_guid_t guid = LINUX_EFI_CRASH_GUID;
+	efi_guid_t guid = freax_EFI_CRASH_GUID;
 	unsigned long varname_size;
 	efi_status_t status;
 
@@ -157,7 +157,7 @@ static ssize_t efi_pstore_read(struct pstore_record *record)
 			return -EIO;
 
 		/* skip variables that don't concern us */
-		if (efi_guidcmp(guid, LINUX_EFI_CRASH_GUID))
+		if (efi_guidcmp(guid, freax_EFI_CRASH_GUID))
 			continue;
 
 		return efi_pstore_read_func(record, varname);
@@ -187,7 +187,7 @@ static int efi_pstore_write(struct pstore_record *record)
 
 	if (efivar_trylock())
 		return -EBUSY;
-	status = efivar_set_variable_locked(efi_name, &LINUX_EFI_CRASH_GUID,
+	status = efivar_set_variable_locked(efi_name, &freax_EFI_CRASH_GUID,
 					    PSTORE_EFI_ATTRIBUTES,
 					    record->size, record->psi->buf,
 					    true);
@@ -199,7 +199,7 @@ static int efi_pstore_erase(struct pstore_record *record)
 {
 	efi_status_t status;
 
-	status = efivar_set_variable(record->priv, &LINUX_EFI_CRASH_GUID,
+	status = efivar_set_variable(record->priv, &freax_EFI_CRASH_GUID,
 				     PSTORE_EFI_ATTRIBUTES, 0, NULL);
 
 	if (status != EFI_SUCCESS && status != EFI_NOT_FOUND)

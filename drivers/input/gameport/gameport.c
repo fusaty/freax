@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>	/* HZ */
-#include <linux/mutex.h>
-#include <linux/timekeeping.h>
+#include <freax/stddef.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/gameport.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>	/* HZ */
+#include <freax/mutex.h>
+#include <freax/timekeeping.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Generic gameport layer");
@@ -47,7 +47,7 @@ static void gameport_disconnect_port(struct gameport *gameport);
 
 #if defined(__i386__)
 
-#include <linux/i8253.h>
+#include <freax/i8253.h>
 
 #define DELTA(x,y)      ((y)-(x)+((y)<(x)?1193182/HZ:0))
 #define GET_TIME(x)     do { x = get_time_pit(); } while (0)

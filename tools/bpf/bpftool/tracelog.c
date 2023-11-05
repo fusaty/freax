@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/magic.h>
+#include <freax/magic.h>
 #include <fcntl.h>
 #include <sys/vfs.h>
 

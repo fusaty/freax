@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Hash Info: Hash algorithms information
  *
@@ -11,8 +11,8 @@
  *
  */
 
-#ifndef _UAPI_LINUX_HASH_INFO_H
-#define _UAPI_LINUX_HASH_INFO_H
+#ifndef _UAPI_freax_HASH_INFO_H
+#define _UAPI_freax_HASH_INFO_H
 
 enum hash_algo {
 	HASH_ALGO_MD4,
@@ -41,4 +41,4 @@ enum hash_algo {
 	HASH_ALGO__LAST
 };
 
-#endif /* _UAPI_LINUX_HASH_INFO_H */
+#endif /* _UAPI_freax_HASH_INFO_H */

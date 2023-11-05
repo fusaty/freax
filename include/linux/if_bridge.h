@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
-#ifndef _LINUX_IF_BRIDGE_H
-#define _LINUX_IF_BRIDGE_H
+#ifndef _freax_IF_BRIDGE_H
+#define _freax_IF_BRIDGE_H
 
 
-#include <linux/netdevice.h>
-#include <uapi/linux/if_bridge.h>
-#include <linux/bitops.h>
+#include <freax/netdevice.h>
+#include <uapi/freax/if_bridge.h>
+#include <freax/bitops.h>
 
 struct br_ip {
 	union {

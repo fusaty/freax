@@ -6,15 +6,15 @@
  * Copyright (c) 2019-2020 NXP
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 #define USB3_PHY_OFFSET			0x0
 #define USB2_PHY_OFFSET			0x38000

@@ -3,12 +3,12 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
-#include <linux/ptrace.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/thread_info.h>
+#include <freax/kbuild.h>
+#include <freax/ptrace.h>
 #include <asm/hardirq.h>
 #include <asm/page.h>
 

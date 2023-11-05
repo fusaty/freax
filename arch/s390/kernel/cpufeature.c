@@ -3,8 +3,8 @@
  * Copyright IBM Corp. 2022
  */
 
-#include <linux/cpufeature.h>
-#include <linux/bug.h>
+#include <freax/cpufeature.h>
+#include <freax/bug.h>
 #include <asm/elf.h>
 
 enum {

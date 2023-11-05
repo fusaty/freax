@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2017 Broadcom
 
-#include <linux/delay.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/extcon-provider.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #define ICFG_DRD_AFE		0x0
 #define ICFG_MISC_STAT		0x18

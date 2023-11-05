@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux hypfs filesystem routines.
+# Makefile for the freax hypfs filesystem routines.
 #
 
 obj-$(CONFIG_S390_HYPFS)	+= hypfs_dbfs.o

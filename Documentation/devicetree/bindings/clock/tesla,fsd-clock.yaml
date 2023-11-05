@@ -8,7 +8,7 @@ title: Tesla FSD (Full Self-Driving) SoC clock controller
 
 maintainers:
   - Alim Akhtar <alim.akhtar@samsung.com>
-  - linux-fsd@tesla.com
+  - freax-fsd@tesla.com
 
 description: |
   FSD clock controller consist of several clock management unit

@@ -4,7 +4,7 @@
   (C) 1999  Andrea Arcangeli <andrea@suse.de>
 
 
-  linux/include/linux/rbtree.h
+  freax/include/freax/rbtree.h
 
   To use rbtrees you'll have to implement your own insert and search cores.
   This will avoid us to use callbacks and to drop drammatically performances.
@@ -14,11 +14,11 @@
   See Documentation/core-api/rbtree.rst for documentation and samples.
 */
 
-#ifndef __TOOLS_LINUX_PERF_RBTREE_H
-#define __TOOLS_LINUX_PERF_RBTREE_H
+#ifndef __TOOLS_freax_PERF_RBTREE_H
+#define __TOOLS_freax_PERF_RBTREE_H
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
 
 struct rb_node {
 	unsigned long  __rb_parent_color;
@@ -342,4 +342,4 @@ rb_next_match(const void *key, struct rb_node *node,
 	for ((node) = rb_find_first((key), (tree), (cmp)); \
 	     (node); (node) = rb_next_match((key), (node), (cmp)))
 
-#endif	/* __TOOLS_LINUX_PERF_RBTREE_H */
+#endif	/* __TOOLS_freax_PERF_RBTREE_H */

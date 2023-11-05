@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: (GPL-2.0 OR BSD-3-Clause) */
 /*
- * linux/can/skb.h
+ * freax/can/skb.h
  *
  * Definitions for the CAN network socket buffer
  *
@@ -11,9 +11,9 @@
 #ifndef _CAN_SKB_H
 #define _CAN_SKB_H
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/can.h>
 #include <net/sock.h>
 
 void can_flush_echo_skb(struct net_device *dev);

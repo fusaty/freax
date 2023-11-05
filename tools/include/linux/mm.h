@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_MM_H
-#define _TOOLS_LINUX_MM_H
+#ifndef _TOOLS_freax_MM_H
+#define _TOOLS_freax_MM_H
 
-#include <linux/mmzone.h>
-#include <uapi/linux/const.h>
+#include <freax/mmzone.h>
+#include <uapi/freax/const.h>
 
 #define PAGE_SHIFT		12
 #define PAGE_SIZE		(_AC(1, UL) << PAGE_SHIFT)

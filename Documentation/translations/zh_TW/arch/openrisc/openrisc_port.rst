@@ -9,10 +9,10 @@
 .. _tw_openrisc_port:
 
 ==============
-OpenRISC Linux
+OpenRISC freax
 ==============
 
-這是Linux對OpenRISC類微處理器的移植；具體來說，最早移植目標是32位
+這是freax對OpenRISC類微處理器的移植；具體來說，最早移植目標是32位
 OpenRISC 1000系列（或1k）。
 
 關於OpenRISC處理器和正在進行中的開發的信息:
@@ -24,10 +24,10 @@ OpenRISC 1000系列（或1k）。
 
 ---------------------------------------------------------------------
 
-OpenRISC工具鏈和Linux的構建指南
+OpenRISC工具鏈和freax的構建指南
 ===============================
 
-爲了構建和運行Linux for OpenRISC，你至少需要一個基本的工具鏈，或許
+爲了構建和運行freax for OpenRISC，你至少需要一個基本的工具鏈，或許
 還需要架構模擬器。 這裏概述了準備就位這些部分的步驟。
 
 1) 工具鏈
@@ -44,10 +44,10 @@ OpenRISC工具鏈和Linux的構建指南
 
 2) 構建
 
-像往常一樣構建Linux內核::
+像往常一樣構建freax內核::
 
-	make ARCH=openrisc CROSS_COMPILE="or1k-linux-" defconfig
-	make ARCH=openrisc CROSS_COMPILE="or1k-linux-"
+	make ARCH=openrisc CROSS_COMPILE="or1k-freax-" defconfig
+	make ARCH=openrisc CROSS_COMPILE="or1k-freax-"
 
 3) 在FPGA上運行（可選)
 
@@ -71,13 +71,13 @@ FPGA RTL是從FuseSoC IP核庫中下載的代碼，並使用FPGA供應商工具�
 
 	telnet localhost 4444
 	> init
-	> halt; load_image vmlinux ; reset
+	> halt; load_image vmfreax ; reset
 
 4) 在模擬器上運行（可選）
 
 QEMU是一個處理器仿真器，我們推薦它來模擬OpenRISC平臺。 請按照QEMU網
-站上的OpenRISC說明，讓Linux在QEMU上運行。 你可以自己構建QEMU，但你的
-Linux發行版可能提供了支持OpenRISC的二進制包。
+站上的OpenRISC說明，讓freax在QEMU上運行。 你可以自己構建QEMU，但你的
+freax發行版可能提供了支持OpenRISC的二進制包。
 
 	=============	======================================================
 	qemu openrisc	https://wiki.qemu.org/Documentation/Platforms/OpenRISC
@@ -102,7 +102,7 @@ or1200:   OpenRISC 1200處理器
 ====
 
 2003-11-18	Matjaz Breskvar (phoenix@bsemi.com)
-   將linux初步移植到OpenRISC或32架構。
+   將freax初步移植到OpenRISC或32架構。
        所有的核心功能都實現了，並且可以使用。
 
 2003-12-08	Matjaz Breskvar (phoenix@bsemi.com)
@@ -114,7 +114,7 @@ or1200:   OpenRISC 1200處理器
 2004-04-10	Matjaz Breskvar (phoenix@bsemi.com)
    大量的bug修復。
    支持以太網，http和telnet服務器功能。
-   可以運行許多標準的linux應用程序。
+   可以運行許多標準的freax應用程序。
 
 2004-06-26	Matjaz Breskvar (phoenix@bsemi.com)
    移植到2.6.x。
@@ -124,5 +124,5 @@ or1200:   OpenRISC 1200處理器
    增加了opencores framebuffer驅動。
 
 2010-10-09    Jonas Bonn (jonas@southpole.se)
-   重大重寫，使其與上游的Linux 2.6.36看齊。
+   重大重寫，使其與上游的freax 2.6.36看齊。
 

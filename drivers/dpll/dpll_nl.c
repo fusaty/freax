@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/dpll.yaml */
 /* YNL-GEN kernel source */
@@ -8,7 +8,7 @@
 
 #include "dpll_nl.h"
 
-#include <uapi/linux/dpll.h>
+#include <uapi/freax/dpll.h>
 
 /* Common nested types */
 const struct nla_policy dpll_pin_parent_device_nl_policy[DPLL_A_PIN_PHASE_OFFSET + 1] = {

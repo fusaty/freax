@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc-dai.h -- ALSA SoC Layer
+ * freax/sound/soc-dai.h -- ALSA SoC Layer
  *
  * Copyright:	2005-2008 Wolfson Microelectronics. PLC.
  *
  * Digital Audio Interface (DAI) API.
  */
 
-#ifndef __LINUX_SND_SOC_DAI_H
-#define __LINUX_SND_SOC_DAI_H
+#ifndef __freax_SND_SOC_DAI_H
+#define __freax_SND_SOC_DAI_H
 
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include <sound/asoc.h>
 
 struct snd_pcm_substream;

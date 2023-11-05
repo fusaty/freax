@@ -3288,8 +3288,8 @@ static void write_file(void)
 
 	fprintf(file, "/* This file is generated code, do not edit. */\n");
 	fprintf(file, "\n");
-	fprintf(file, "#include <linux/module.h>\n");
-	fprintf(file, "#include <linux/kernel.h>\n");
+	fprintf(file, "#include <freax/module.h>\n");
+	fprintf(file, "#include <freax/kernel.h>\n");
 	fprintf(file, "#include \"utf8n.h\"\n");
 	fprintf(file, "\n");
 	fprintf(file, "static const unsigned int utf8agetab[] = {\n");

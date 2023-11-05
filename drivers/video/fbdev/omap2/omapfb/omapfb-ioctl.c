@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/omapfb-ioctl.c
+ * freax/drivers/video/omap2/omapfb-ioctl.c
  *
  * Copyright (C) 2008 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -9,15 +9,15 @@
  * by Imre Deak.
  */
 
-#include <linux/fb.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/omapfb.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/sizes.h>
+#include <freax/fb.h>
+#include <freax/device.h>
+#include <freax/uaccess.h>
+#include <freax/platform_device.h>
+#include <freax/mm.h>
+#include <freax/omapfb.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/sizes.h>
 
 #include <video/omapfb_dss.h>
 #include <video/omapvrfb.h>

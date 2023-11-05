@@ -1,5 +1,5 @@
 /*
- * include/linux/sync_file.h
+ * include/freax/sync_file.h
  *
  * Copyright (C) 2012 Google, Inc.
  *
@@ -10,15 +10,15 @@
  *
  */
 
-#ifndef _LINUX_SYNC_FILE_H
-#define _LINUX_SYNC_FILE_H
+#ifndef _freax_SYNC_FILE_H
+#define _freax_SYNC_FILE_H
 
-#include <linux/types.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/dma-fence.h>
-#include <linux/dma-fence-array.h>
+#include <freax/types.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/dma-fence.h>
+#include <freax/dma-fence-array.h>
 
 /**
  * struct sync_file - sync file to export to the userspace
@@ -59,4 +59,4 @@ struct sync_file *sync_file_create(struct dma_fence *fence);
 struct dma_fence *sync_file_get_fence(int fd);
 char *sync_file_get_name(struct sync_file *sync_file, char *buf, int len);
 
-#endif /* _LINUX_SYNC_H */
+#endif /* _freax_SYNC_H */

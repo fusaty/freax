@@ -1,16 +1,16 @@
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/err.h>
-#include <linux/irq_work.h>
-#include <linux/slab.h>
-#include <linux/filter.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/kmemleak.h>
-#include <uapi/linux/btf.h>
-#include <linux/btf_ids.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/err.h>
+#include <freax/irq_work.h>
+#include <freax/slab.h>
+#include <freax/filter.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
+#include <freax/poll.h>
+#include <freax/kmemleak.h>
+#include <uapi/freax/btf.h>
+#include <freax/btf_ids.h>
 
 #define RINGBUF_CREATE_FLAG_MASK (BPF_F_NUMA_NODE)
 

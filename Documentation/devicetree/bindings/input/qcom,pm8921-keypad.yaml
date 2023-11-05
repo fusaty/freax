@@ -31,7 +31,7 @@ properties:
     type: boolean
     description: use any event on keypad as wakeup event
 
-  linux,keypad-wakeup:
+  freax,keypad-wakeup:
     type: boolean
     deprecated: true
     description: legacy version of the wakeup-source property
@@ -56,7 +56,7 @@ required:
   - compatible
   - reg
   - interrupts
-  - linux,keymap
+  - freax,keymap
 
 unevaluatedProperties: false
 
@@ -73,7 +73,7 @@ examples:
            reg = <0x148>;
            interrupt-parent = <&pmicintc>;
            interrupts = <74 IRQ_TYPE_EDGE_RISING>, <75 IRQ_TYPE_EDGE_RISING>;
-           linux,keymap = <
+           freax,keymap = <
                MATRIX_KEY(0, 0, KEY_VOLUMEUP)
                MATRIX_KEY(0, 1, KEY_VOLUMEDOWN)
                MATRIX_KEY(0, 2, KEY_CAMERA_FOCUS)

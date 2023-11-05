@@ -5,16 +5,16 @@
  * Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/regmap.h>
 
 #include <media/rc-core.h>
 
@@ -120,7 +120,7 @@ static int meson_ir_probe(struct platform_device *pdev)
 	ir->rc->device_name = DRIVER_NAME;
 	ir->rc->input_phys = DRIVER_NAME "/input0";
 	ir->rc->input_id.bustype = BUS_HOST;
-	map_name = of_get_property(node, "linux,rc-map-name", NULL);
+	map_name = of_get_property(node, "freax,rc-map-name", NULL);
 	ir->rc->map_name = map_name ? map_name : RC_MAP_EMPTY;
 	ir->rc->allowed_protocols = RC_PROTO_BIT_ALL_IR_DECODER;
 	ir->rc->rx_resolution = MESON_RAW_TRATE;

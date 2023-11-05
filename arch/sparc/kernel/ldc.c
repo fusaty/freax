@@ -4,18 +4,18 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/bitmap.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/scatterlist.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/bitmap.h>
 #include <asm/iommu-common.h>
 
 #include <asm/hypervisor.h>

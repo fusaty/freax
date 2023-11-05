@@ -5,7 +5,7 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/nvme-auth.h>
+#include <freax/nvme-auth.h>
 
 #include "nvme.h"
 #include "fabrics.h"

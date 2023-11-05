@@ -189,4 +189,4 @@ THP_MIGRATION_FAIL and PGMIGRATE_FAIL to increase.
 Christoph Lameter, May 8, 2006.
 Minchan Kim, Mar 28, 2016.
 
-.. kernel-doc:: include/linux/migrate.h
+.. kernel-doc:: include/freax/migrate.h

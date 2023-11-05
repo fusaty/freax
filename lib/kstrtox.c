@@ -12,13 +12,13 @@
  *
  * If -E is returned, result is not touched.
  */
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/kstrtox.h>
-#include <linux/math64.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/kstrtox.h>
+#include <freax/math64.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include "kstrtox.h"
 

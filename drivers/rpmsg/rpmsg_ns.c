@@ -2,12 +2,12 @@
 /*
  * Copyright (C) STMicroelectronics 2020 - All Rights Reserved
  */
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/ns.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/rpmsg.h>
+#include <freax/rpmsg/ns.h>
+#include <freax/slab.h>
 
 #include "rpmsg_internal.h"
 

@@ -8,15 +8,15 @@
  *  Routines for effect processor FX8010
  */
 
-#include <linux/pci.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/moduleparam.h>
-#include <linux/nospec.h>
+#include <freax/pci.h>
+#include <freax/capability.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/moduleparam.h>
+#include <freax/nospec.h>
 
 #include <sound/core.h>
 #include <sound/tlv.h>

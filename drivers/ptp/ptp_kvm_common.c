@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2017 Red Hat Inc.
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ptp_kvm.h>
-#include <uapi/linux/kvm_para.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/ptp_kvm.h>
+#include <uapi/freax/kvm_para.h>
 #include <asm/kvm_para.h>
 #include <uapi/asm/kvm_para.h>
 
-#include <linux/ptp_clock_kernel.h>
+#include <freax/ptp_clock_kernel.h>
 
 struct kvm_ptp_clock {
 	struct ptp_clock *ptp_clock;

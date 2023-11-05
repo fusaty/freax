@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SLUB_DEF_H
-#define _LINUX_SLUB_DEF_H
+#ifndef _freax_SLUB_DEF_H
+#define _freax_SLUB_DEF_H
 
 /*
  * SLUB : A Slab allocator without object queues.
  *
  * (C) 2007 SGI, Christoph Lameter
  */
-#include <linux/kfence.h>
-#include <linux/kobject.h>
-#include <linux/reciprocal_div.h>
-#include <linux/local_lock.h>
+#include <freax/kfence.h>
+#include <freax/kobject.h>
+#include <freax/reciprocal_div.h>
+#include <freax/local_lock.h>
 
 enum stat_item {
 	ALLOC_FASTPATH,		/* Allocation from cpu slab */
@@ -201,4 +201,4 @@ static inline int objs_per_slab(const struct kmem_cache *cache,
 {
 	return slab->objects;
 }
-#endif /* _LINUX_SLUB_DEF_H */
+#endif /* _freax_SLUB_DEF_H */

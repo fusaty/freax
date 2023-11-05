@@ -2,7 +2,7 @@
 #ifndef __MACH_PXA27x_H
 #define __MACH_PXA27x_H
 
-#include <linux/suspend.h>
+#include <freax/suspend.h>
 #include "addr-map.h"
 #include "pxa2xx-regs.h"
 #include "mfp-pxa27x.h"

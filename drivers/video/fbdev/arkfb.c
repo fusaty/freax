@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
+ *  freax/drivers/video/arkfb.c -- Frame buffer device driver for ARK 2000PV
  *  with ICS 5342 dac (it is easy to add support for different dacs).
  *
  *  Copyright (c) 2007 Ondrej Zajicek <santiago@crfreenet.org>
@@ -11,20 +11,20 @@
  *  Code is based on s3fb
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/tty.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/svga.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
 struct arkfb_info {

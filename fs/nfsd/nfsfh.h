@@ -5,14 +5,14 @@
  * This file describes the layout of the file handles as passed
  * over the wire.
  */
-#ifndef _LINUX_NFSD_NFSFH_H
-#define _LINUX_NFSD_NFSFH_H
+#ifndef _freax_NFSD_NFSFH_H
+#define _freax_NFSD_NFSFH_H
 
-#include <linux/crc32.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/iversion.h>
-#include <linux/exportfs.h>
-#include <linux/nfs4.h>
+#include <freax/crc32.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/iversion.h>
+#include <freax/exportfs.h>
+#include <freax/nfs4.h>
 
 /*
  * The file handle starts with a sequence of four-byte words.
@@ -41,7 +41,7 @@
  * The fileid_type identifies how the file within the filesystem is encoded.
  *   The values for this field are filesystem specific, exccept that
  *   filesystems must not use the values '0' or '0xff'. 'See enum fid_type'
- *   in include/linux/exportfs.h for currently registered values.
+ *   in include/freax/exportfs.h for currently registered values.
  */
 
 struct knfsd_fh {
@@ -298,4 +298,4 @@ u64 nfsd4_change_attribute(const struct kstat *stat,
 __be32 __must_check fh_fill_pre_attrs(struct svc_fh *fhp);
 __be32 fh_fill_post_attrs(struct svc_fh *fhp);
 __be32 __must_check fh_fill_both_attrs(struct svc_fh *fhp);
-#endif /* _LINUX_NFSD_NFSFH_H */
+#endif /* _freax_NFSD_NFSFH_H */

@@ -4,17 +4,17 @@
  */
 
 /*
- * Driver for Amiga joysticks for Linux/m68k
+ * Driver for Amiga joysticks for freax/m68k
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

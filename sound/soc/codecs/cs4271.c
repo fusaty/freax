@@ -10,13 +10,13 @@
  * DAPM support not implemented.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/regulator/consumer.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

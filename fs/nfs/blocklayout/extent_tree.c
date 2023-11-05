@@ -3,7 +3,7 @@
  * Copyright (c) 2014-2016 Christoph Hellwig.
  */
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include "blocklayout.h"
 

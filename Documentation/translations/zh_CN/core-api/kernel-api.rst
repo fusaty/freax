@@ -10,7 +10,7 @@
 .. _cn_kernel-api.rst:
 
 ============
-Linux内核API
+freax内核API
 ============
 
 
@@ -19,7 +19,7 @@ Linux内核API
 
 该API在以下内核代码中:
 
-include/linux/list.h
+include/freax/list.h
 
 基本的C库函数
 =============
@@ -35,9 +35,9 @@ include/linux/list.h
 
 lib/vsprintf.c
 
-include/linux/kernel.h
+include/freax/kernel.h
 
-include/linux/kernel.h
+include/freax/kernel.h
 
 lib/kstrtox.c
 
@@ -48,18 +48,18 @@ lib/string_helpers.c
 
 该API在以下内核代码中:
 
-include/linux/fortify-string.h
+include/freax/fortify-string.h
 
 lib/string.c
 
-include/linux/string.h
+include/freax/string.h
 
 mm/util.c
 
 基本的内核库函数
 ================
 
-Linux内核提供了很多实用的基本函数。
+freax内核提供了很多实用的基本函数。
 
 位运算
 ------
@@ -79,17 +79,17 @@ include/asm-generic/bitops/instrumented-lock.h
 
 lib/bitmap.c
 
-include/linux/bitmap.h
+include/freax/bitmap.h
 
-include/linux/bitmap.h
+include/freax/bitmap.h
 
-include/linux/bitmap.h
-
-lib/bitmap.c
+include/freax/bitmap.h
 
 lib/bitmap.c
 
-include/linux/bitmap.h
+lib/bitmap.c
+
+include/freax/bitmap.h
 
 命令行解析
 ----------
@@ -116,9 +116,9 @@ lib/textsearch.c
 
 lib/textsearch.c
 
-include/linux/textsearch.h
+include/freax/textsearch.h
 
-Linux中的CRC和数学函数
+freax中的CRC和数学函数
 ======================
 
 算术溢出检查
@@ -126,7 +126,7 @@ Linux中的CRC和数学函数
 
 该API在以下内核代码中:
 
-include/linux/overflow.h
+include/freax/overflow.h
 
 CRC函数
 -------
@@ -154,7 +154,7 @@ lib/crc-itu-t.c
 
 该API在以下内核代码中:
 
-include/linux/log2.h
+include/freax/log2.h
 
 整数幂函数
 ----------
@@ -172,7 +172,7 @@ lib/math/int_sqrt.c
 
 include/asm-generic/div64.h
 
-include/linux/math64.h
+include/freax/math64.h
 
 lib/math/gcd.c
 
@@ -201,7 +201,7 @@ kfifo接口
 
 该API在以下内核代码中:
 
-include/linux/kfifo.h
+include/freax/kfifo.h
 
 转发接口支持
 ============
@@ -289,7 +289,7 @@ kernel/acct.c
 
 该API在以下内核代码中:
 
-include/linux/bio.h
+include/freax/bio.h
 
 block/blk-core.c
 
@@ -345,7 +345,7 @@ fs/char_dev.c
 
 该API在以下内核代码中:
 
-include/linux/clk.h
+include/freax/clk.h
 
 同步原语
 ========
@@ -355,7 +355,7 @@ include/linux/clk.h
 
 该API在以下内核代码中:
 
-include/linux/rcupdate.h
+include/freax/rcupdate.h
 
 kernel/rcu/tree.c
 
@@ -363,16 +363,16 @@ kernel/rcu/tree_exp.h
 
 kernel/rcu/update.c
 
-include/linux/srcu.h
+include/freax/srcu.h
 
 kernel/rcu/srcutree.c
 
-include/linux/rculist_bl.h
+include/freax/rculist_bl.h
 
-include/linux/rculist.h
+include/freax/rculist.h
 
-include/linux/rculist_nulls.h
+include/freax/rculist_nulls.h
 
-include/linux/rcu_sync.h
+include/freax/rcu_sync.h
 
 kernel/rcu/sync.c

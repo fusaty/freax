@@ -9,8 +9,8 @@
 #ifndef __KVM_BOOKE_H__
 #define __KVM_BOOKE_H__
 
-#include <linux/types.h>
-#include <linux/kvm_host.h>
+#include <freax/types.h>
+#include <freax/kvm_host.h>
 #include <asm/kvm_ppc.h>
 #include <asm/switch_to.h>
 #include "timing.h"

@@ -6,7 +6,7 @@
 #ifndef __SDW_AMD_H
 #define __SDW_AMD_H
 
-#include <linux/soundwire/sdw.h>
+#include <freax/soundwire/sdw.h>
 
 /* AMD pm_runtime quirk definitions */
 
@@ -56,7 +56,7 @@ struct sdw_amd_dai_runtime {
 /**
  * struct amd_sdw_manager - amd manager driver context
  * @bus: bus handle
- * @dev: linux device
+ * @dev: freax device
  * @mmio: SoundWire registers mmio base
  * @acp_mmio: acp registers mmio base
  * @reg_mask: register mask structure per manager instance

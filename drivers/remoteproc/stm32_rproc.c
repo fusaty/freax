@@ -5,22 +5,22 @@
  *          Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/arm-smccc.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_client.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "remoteproc_internal.h"
 
@@ -417,7 +417,7 @@ static int stm32_rproc_set_hold_boot(struct rproc *rproc, bool hold)
 	/*
 	 * Three ways to manage the hold boot
 	 * - using SCMI: the hold boot is managed as a reset,
-	 * - using Linux(no SCMI): the hold boot is managed as a syscon register
+	 * - using freax(no SCMI): the hold boot is managed as a syscon register
 	 * - using SMC call (deprecated): use SMC reset interface
 	 */
 

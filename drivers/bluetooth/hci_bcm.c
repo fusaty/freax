@@ -6,26 +6,26 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/tty.h>
-#include <linux/interrupt.h>
-#include <linux/dmi.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/property.h>
+#include <freax/platform_data/x86/apple.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/tty.h>
+#include <freax/interrupt.h>
+#include <freax/dmi.h>
+#include <freax/pm_runtime.h>
+#include <freax/serdev.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

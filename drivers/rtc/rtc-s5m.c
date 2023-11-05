@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/irq.h>
-#include <linux/mfd/samsung/rtc.h>
-#include <linux/mfd/samsung/s2mps14.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/samsung/core.h>
+#include <freax/mfd/samsung/irq.h>
+#include <freax/mfd/samsung/rtc.h>
+#include <freax/mfd/samsung/s2mps14.h>
 
 /*
  * Maximum number of retries for checking changes in UDR field

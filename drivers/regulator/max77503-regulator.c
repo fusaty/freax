@@ -4,13 +4,13 @@
  * ADI regulator driver for MAX77503.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/util_macros.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/util_macros.h>
 
 #define MAX77503_REG_CFG			0x00
 #define MAX77503_REG_VOUT			0x01

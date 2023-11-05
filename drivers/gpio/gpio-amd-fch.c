@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_data/gpio/gpio-amd-fch.h>
-#include <linux/spinlock.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_data/gpio/gpio-amd-fch.h>
+#include <freax/spinlock.h>
 
 #define AMD_FCH_MMIO_BASE		0xFED80000
 #define AMD_FCH_GPIO_BANK0_BASE		0x1500

@@ -2,8 +2,8 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <api/fs/tracing_path.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <freax/err.h>
+#include <freax/string.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

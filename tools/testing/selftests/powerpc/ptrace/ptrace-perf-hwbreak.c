@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 
 #include <asm/unistd.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/ptrace.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/ptrace.h>
 #include <memory.h>
 #include <stdlib.h>
 #include <sys/wait.h>

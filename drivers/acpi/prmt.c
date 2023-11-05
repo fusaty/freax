@@ -14,10 +14,10 @@
  * handler for the PlatformRtMechanism subtype.
  *
  */
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/acpi.h>
-#include <linux/prmt.h>
+#include <freax/kernel.h>
+#include <freax/efi.h>
+#include <freax/acpi.h>
+#include <freax/prmt.h>
 #include <asm/efi.h>
 
 #pragma pack(1)

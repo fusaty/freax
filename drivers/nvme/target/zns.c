@@ -4,8 +4,8 @@
  * Copyright (C) 2021 Western Digital Corporation or its affiliates.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/nvme.h>
-#include <linux/blkdev.h>
+#include <freax/nvme.h>
+#include <freax/blkdev.h>
 #include "nvmet.h"
 
 /*

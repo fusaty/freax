@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2011 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
 #include <net/ip.h>
 
 #include "vnic_vic.h"
@@ -57,7 +57,7 @@ static int enic_set_port_profile(struct enic *enic, int vf)
 	struct enic_port_profile *pp;
 	struct vic_provinfo *vp;
 	const u8 oui[3] = VIC_PROVINFO_CISCO_OUI;
-	const __be16 os_type = htons(VIC_GENERIC_PROV_OS_TYPE_LINUX);
+	const __be16 os_type = htons(VIC_GENERIC_PROV_OS_TYPE_freax);
 	const u8 *client_mac;
 	char uuid_str[38];
 	char client_mac_str[18];

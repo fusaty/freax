@@ -7,7 +7,7 @@
  * Author: Yong Zhi <yong.zhi@intel.com>
  */
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include "ipu3.h"
 #include "ipu3-css-pool.h"

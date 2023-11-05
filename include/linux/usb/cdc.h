@@ -4,10 +4,10 @@
  *
  * Copyright (c) 2015 Oliver Neukum <oneukum@suse.com>
  */
-#ifndef __LINUX_USB_CDC_H
-#define __LINUX_USB_CDC_H
+#ifndef __freax_USB_CDC_H
+#define __freax_USB_CDC_H
 
-#include <uapi/linux/usb/cdc.h>
+#include <uapi/freax/usb/cdc.h>
 
 /*
  * inofficial magic numbers
@@ -45,4 +45,4 @@ int cdc_parse_cdc_header(struct usb_cdc_parsed_header *hdr,
 				u8 *buffer,
 				int buflen);
 
-#endif /* __LINUX_USB_CDC_H */
+#endif /* __freax_USB_CDC_H */

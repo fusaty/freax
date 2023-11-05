@@ -2,7 +2,7 @@
 #ifndef __SCH_MQPRIO_LIB_H
 #define __SCH_MQPRIO_LIB_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct net_device;
 struct netlink_ext_ack;

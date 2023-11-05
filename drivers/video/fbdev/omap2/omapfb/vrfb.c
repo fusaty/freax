@@ -8,14 +8,14 @@
 
 /*#define DEBUG*/
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
 #include <video/omapvrfb.h>
 

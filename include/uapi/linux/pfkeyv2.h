@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* PF_KEY user interface, this is defined by rfc2367 so
  * do not make arbitrary modifications or else this header
  * file will not be compliant.
  */
 
-#ifndef _LINUX_PFKEY2_H
-#define _LINUX_PFKEY2_H
+#ifndef _freax_PFKEY2_H
+#define _freax_PFKEY2_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define PF_KEY_V2		2
 #define PFKEYV2_REVISION	199806L
@@ -221,7 +221,7 @@ struct sadb_x_nat_t_port {
 struct sadb_x_sec_ctx {
 	__u16	sadb_x_sec_len;
 	__u16	sadb_x_sec_exttype;
-	__u8		sadb_x_ctx_alg;  /* LSMs: e.g., selinux == 1 */
+	__u8		sadb_x_ctx_alg;  /* LSMs: e.g., sefreax == 1 */
 	__u8		sadb_x_ctx_doi;
 	__u16	sadb_x_ctx_len;
 } __attribute__((packed));
@@ -383,4 +383,4 @@ struct sadb_x_filter {
 #define SADB_IDENTTYPE_USERFQDN	3
 #define SADB_IDENTTYPE_MAX	3
 
-#endif /* !(_LINUX_PFKEY2_H) */
+#endif /* !(_freax_PFKEY2_H) */

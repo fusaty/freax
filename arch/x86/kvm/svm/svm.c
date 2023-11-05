@@ -1,6 +1,6 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 #include "irq.h"
 #include "mmu.h"
@@ -10,24 +10,24 @@
 #include "cpuid.h"
 #include "pmu.h"
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/amd-iommu.h>
-#include <linux/sched.h>
-#include <linux/trace_events.h>
-#include <linux/slab.h>
-#include <linux/hashtable.h>
-#include <linux/objtool.h>
-#include <linux/psp-sev.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/rwsem.h>
-#include <linux/cc_platform.h>
-#include <linux/smp.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/amd-iommu.h>
+#include <freax/sched.h>
+#include <freax/trace_events.h>
+#include <freax/slab.h>
+#include <freax/hashtable.h>
+#include <freax/objtool.h>
+#include <freax/psp-sev.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/swap.h>
+#include <freax/rwsem.h>
+#include <freax/cc_platform.h>
+#include <freax/smp.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>
@@ -668,7 +668,7 @@ static int svm_hardware_enable(void)
 	/*
 	 * If TSC_AUX virtualization is supported, TSC_AUX becomes a swap type
 	 * "B" field (see sev_es_prepare_switch_to_guest()) for SEV-ES guests.
-	 * Since Linux does not change the value of TSC_AUX once set, prime the
+	 * Since freax does not change the value of TSC_AUX once set, prime the
 	 * TSC_AUX field now to avoid a RDMSR on every vCPU run.
 	 */
 	if (boot_cpu_has(X86_FEATURE_V_TSC_AUX)) {

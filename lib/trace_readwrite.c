@@ -5,8 +5,8 @@
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/ftrace.h>
-#include <linux/module.h>
+#include <freax/ftrace.h>
+#include <freax/module.h>
 #include <asm-generic/io.h>
 
 #define CREATE_TRACE_POINTS

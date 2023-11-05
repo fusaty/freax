@@ -15,8 +15,8 @@
  *
  * Split off from arch/x86/platform/efi/efi.c
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA freax Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@vafreax.com>
  * Copyright (C) 1999-2002 Hewlett-Packard Co.
  * Copyright (C) 2005-2008 Intel Co.
  * Copyright (C) 2013 SuSE Labs
@@ -24,14 +24,14 @@
 
 #define pr_fmt(fmt)	"efi: " fmt
 
-#include <linux/bug.h>
-#include <linux/efi.h>
-#include <linux/irqflags.h>
-#include <linux/mutex.h>
-#include <linux/semaphore.h>
-#include <linux/stringify.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
+#include <freax/bug.h>
+#include <freax/efi.h>
+#include <freax/irqflags.h>
+#include <freax/mutex.h>
+#include <freax/semaphore.h>
+#include <freax/stringify.h>
+#include <freax/workqueue.h>
+#include <freax/completion.h>
 
 #include <asm/efi.h>
 

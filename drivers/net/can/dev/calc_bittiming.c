@@ -4,8 +4,8 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/units.h>
-#include <linux/can/dev.h>
+#include <freax/units.h>
+#include <freax/can/dev.h>
 
 #define CAN_CALC_MAX_ERROR 50 /* in one-tenth of a percent */
 
@@ -19,7 +19,7 @@
  * Calculates proper bit-timing parameters for a specified bit-rate
  * and sample-point, which can then be used to set the bit-timing
  * registers of the CAN controller. You can find more information
- * in the header file linux/can/netlink.h.
+ * in the header file freax/can/netlink.h.
  */
 static int
 can_update_sample_point(const struct can_bittiming_const *btc,

@@ -15,34 +15,34 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/align.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/crc-t10dif.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/hrtimer.h>
-#include <linux/uuid.h>
-#include <linux/t10-pi.h>
-#include <linux/msdos_partition.h>
-#include <linux/random.h>
-#include <linux/xarray.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/async.h>
+#include <freax/module.h>
+#include <freax/align.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/vmalloc.h>
+#include <freax/moduleparam.h>
+#include <freax/scatterlist.h>
+#include <freax/blkdev.h>
+#include <freax/crc-t10dif.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/atomic.h>
+#include <freax/hrtimer.h>
+#include <freax/uuid.h>
+#include <freax/t10-pi.h>
+#include <freax/msdos_partition.h>
+#include <freax/random.h>
+#include <freax/xarray.h>
+#include <freax/prefetch.h>
+#include <freax/debugfs.h>
+#include <freax/async.h>
 
 #include <net/checksum.h>
 
@@ -1523,7 +1523,7 @@ static int fetch_to_dev_buffer(struct scsi_cmnd *scp, unsigned char *arr,
 }
 
 
-static char sdebug_inq_vendor_id[9] = "Linux   ";
+static char sdebug_inq_vendor_id[9] = "freax   ";
 static char sdebug_inq_product_id[17] = "scsi_debug      ";
 static char sdebug_inq_product_rev[5] = SDEBUG_VERSION;
 /* Use some locally assigned NAAs for SAS addresses. */
@@ -4593,7 +4593,7 @@ fini:
 #define RL_BUCKET_ELEMS 8
 
 /* Even though each pseudo target has a REPORT LUNS "well known logical unit"
- * (W-LUN), the normal Linux scanning logic does not associate it with a
+ * (W-LUN), the normal freax scanning logic does not associate it with a
  * device (e.g. /dev/sg7). The following magic will make that association:
  *   "cd /sys/class/scsi_host/host<n> ; echo '- - 49409' > scan"
  * where <n> is a host number. If there are multiple targets in a host then
@@ -5879,7 +5879,7 @@ static void sdebug_build_parts(unsigned char *ramp, unsigned long store_size)
 
 		pp->start_sect = cpu_to_le32(start_sec);
 		pp->nr_sects = cpu_to_le32(end_sec - start_sec + 1);
-		pp->sys_ind = 0x83;	/* plain Linux partition */
+		pp->sys_ind = 0x83;	/* plain freax partition */
 	}
 }
 
@@ -6231,7 +6231,7 @@ MODULE_PARM_DESC(host_max_queue,
 MODULE_PARM_DESC(inq_product, "SCSI INQUIRY product string (def=\"scsi_debug\")");
 MODULE_PARM_DESC(inq_rev, "SCSI INQUIRY revision string (def=\""
 		 SDEBUG_VERSION "\")");
-MODULE_PARM_DESC(inq_vendor, "SCSI INQUIRY vendor string (def=\"Linux\")");
+MODULE_PARM_DESC(inq_vendor, "SCSI INQUIRY vendor string (def=\"freax\")");
 MODULE_PARM_DESC(lbprz,
 		 "on read unmapped LBs return 0 when 1 (def), return 0xff when 2");
 MODULE_PARM_DESC(lbpu, "enable LBP, support UNMAP command (def=0)");

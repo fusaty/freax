@@ -8,11 +8,11 @@
  */
 
 #include <kunit/test.h>
-#include <linux/device.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/types.h>
 
 #define HEADER_FILL		'H'
 #define IMAGE_FILL		'P'

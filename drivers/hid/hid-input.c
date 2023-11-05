@@ -3,7 +3,7 @@
  *  Copyright (c) 2000-2001 Vojtech Pavlik
  *  Copyright (c) 2006-2010 Jiri Kosina
  *
- *  HID to Linux Input mapping
+ *  HID to freax Input mapping
  */
 
 /*
@@ -13,12 +13,12 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
+#include <freax/hid.h>
+#include <freax/hid-debug.h>
 
 #include "hid-ids.h"
 

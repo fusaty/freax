@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * This file contains miscellaneous low-level functions.
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  * Largely rewritten by Cort Dougan (cort@cs.nmt.edu)
  * and Paul Mackerras.
@@ -10,7 +10,7 @@
  *
  * setjmp/longjmp code by Paul Mackerras.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/ppc_asm.h>
 #include <asm/unistd.h>
 #include <asm/asm-compat.h>

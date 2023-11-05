@@ -11,7 +11,7 @@
  *		accelerated operations on a GEM object)
  */
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 
 #include <asm/set_memory.h>
 

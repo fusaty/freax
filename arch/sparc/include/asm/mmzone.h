@@ -4,7 +4,7 @@
 
 #ifdef CONFIG_NUMA
 
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 
 extern struct pglist_data *node_data[];
 

@@ -33,12 +33,12 @@
 
 #define pr_fmt(fmt)	"ACPI CPPC: " fmt
 
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/ktime.h>
-#include <linux/rwsem.h>
-#include <linux/wait.h>
-#include <linux/topology.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/ktime.h>
+#include <freax/rwsem.h>
+#include <freax/wait.h>
+#include <freax/topology.h>
 
 #include <acpi/cppc_acpi.h>
 

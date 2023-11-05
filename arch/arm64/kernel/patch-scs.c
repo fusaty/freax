@@ -4,12 +4,12 @@
  * Author: Ard Biesheuvel <ardb@google.com>
  */
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/printk.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/printk.h>
+#include <freax/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/scs.h>
@@ -17,7 +17,7 @@
 //
 // This minimal DWARF CFI parser is partially based on the code in
 // arch/arc/kernel/unwind.c, and on the document below:
-// https://refspecs.linuxbase.org/LSB_4.0.0/LSB-Core-generic/LSB-Core-generic/ehframechpt.html
+// https://refspecs.freaxbase.org/LSB_4.0.0/LSB-Core-generic/LSB-Core-generic/ehframechpt.html
 //
 
 #define DW_CFA_nop                          0x00
@@ -251,7 +251,7 @@ int noinstr scs_patch(const u8 eh_frame[], int size)
 	return 0;
 }
 
-asmlinkage void __init scs_patch_vmlinux(void)
+asmlinkage void __init scs_patch_vmfreax(void)
 {
 	if (!should_patch_pac_into_scs())
 		return;

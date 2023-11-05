@@ -12,9 +12,9 @@
  * Copyright (C) 2000-2004 Netfilter Core Team <coreteam <at> netfilter.org>
  * Copyright (C) 2008 Red Hat, Inc., James Morris <jmorris <at> redhat.com>
  */
-#include <linux/module.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
+#include <freax/slab.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("James Morris <jmorris <at> redhat.com>");

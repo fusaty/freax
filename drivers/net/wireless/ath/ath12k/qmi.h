@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef ATH12K_QMI_H
 #define ATH12K_QMI_H
 
-#include <linux/mutex.h>
-#include <linux/soc/qcom/qmi.h>
+#include <freax/mutex.h>
+#include <freax/soc/qcom/qmi.h>
 
 #define ATH12K_HOST_VERSION_STRING		"WIN"
 #define ATH12K_QMI_WLANFW_TIMEOUT_MS		10000

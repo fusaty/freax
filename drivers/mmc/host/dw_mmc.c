@@ -7,36 +7,36 @@
  * Copyright (C) 2009, 2010 Imagination Technologies Ltd.
  */
 
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/prandom.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/blkdev.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/prandom.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
+#include <freax/mmc/sdio.h>
+#include <freax/bitops.h>
+#include <freax/regulator/consumer.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/mmc/slot-gpio.h>
 
 #include "dw_mmc.h"
 

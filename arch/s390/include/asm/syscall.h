@@ -9,9 +9,9 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H	1
 
-#include <uapi/linux/audit.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <uapi/freax/audit.h>
+#include <freax/sched.h>
+#include <freax/err.h>
 #include <asm/ptrace.h>
 
 extern const sys_call_ptr_t sys_call_table[];

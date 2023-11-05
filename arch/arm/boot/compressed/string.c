@@ -6,7 +6,7 @@
  */
 
 #define __NO_FORTIFY
-#include <linux/string.h>
+#include <freax/string.h>
 
 /*
  * The decompressor is built without KASan but uses the same redirects as the

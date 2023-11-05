@@ -6,17 +6,17 @@
  *   Vadim V.Vlasov <vvlasov@dev.rtsoft.ru>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #define TQMX86_NGPIO	8
 #define TQMX86_NGPO	4	/* 0-3 - output */

@@ -6,8 +6,8 @@
  * Copyright (C) 2010  Andres Salomon <dilinger@queued.net>
  */
 
-#ifndef _LINUX_OF_PDT_H
-#define _LINUX_OF_PDT_H
+#ifndef _freax_OF_PDT_H
+#define _freax_OF_PDT_H
 
 /* overridable operations for calling into the PROM */
 struct of_pdt_ops {
@@ -35,4 +35,4 @@ extern void *prom_early_alloc(unsigned long size);
 /* for building the device tree */
 extern void of_pdt_build_devicetree(phandle root_node, struct of_pdt_ops *ops);
 
-#endif /* _LINUX_OF_PDT_H */
+#endif /* _freax_OF_PDT_H */

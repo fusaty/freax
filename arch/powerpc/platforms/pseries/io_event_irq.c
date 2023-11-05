@@ -3,14 +3,14 @@
  * Copyright 2010 2011 Mark Nelson and Tseng-Hui (Frank) Lin, IBM Corporation
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
 
 #include <asm/machdep.h>
 #include <asm/rtas.h>

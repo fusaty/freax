@@ -20,7 +20,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /*
  * MMIO debugfs IOCTL structure

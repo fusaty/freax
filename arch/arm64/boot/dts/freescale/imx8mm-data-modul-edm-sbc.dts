@@ -87,7 +87,7 @@
 		/* TPS3813 */
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_watchdog_gpio>;
-		compatible = "linux,wdt-gpio";
+		compatible = "freax,wdt-gpio";
 		always-running;
 		gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
 		hw_algo = "level";

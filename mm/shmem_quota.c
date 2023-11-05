@@ -21,18 +21,18 @@
  *
  * Copyright (C) 2023 Red Hat, Inc.
  */
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/shmem_fs.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/rbtree.h>
+#include <freax/shmem_fs.h>
 
-#include <linux/quotaops.h>
-#include <linux/quota.h>
+#include <freax/quotaops.h>
+#include <freax/quota.h>
 
 #ifdef CONFIG_TMPFS_QUOTA
 

@@ -4,7 +4,7 @@
 #ifndef __HCLGE_TM_H
 #define __HCLGE_TM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "hnae3.h"
 

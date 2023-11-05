@@ -42,15 +42,15 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
 #include <crypto/scatterwalk.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
+#include <freax/slab.h>
+#include <freax/compiler.h>
 
 struct crypto_cts_ctx {
 	struct crypto_skcipher *child;

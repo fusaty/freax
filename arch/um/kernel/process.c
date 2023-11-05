@@ -2,38 +2,38 @@
 /*
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  * Copyright 2003 PathScale, Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seq_file.h>
-#include <linux/tick.h>
-#include <linux/threads.h>
-#include <linux/resume_user_mode.h>
+#include <freax/stddef.h>
+#include <freax/err.h>
+#include <freax/hardirq.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/personality.h>
+#include <freax/proc_fs.h>
+#include <freax/ptrace.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/seq_file.h>
+#include <freax/tick.h>
+#include <freax/threads.h>
+#include <freax/resume_user_mode.h>
 #include <asm/current.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>
 #include <skas.h>
 #include <registers.h>
-#include <linux/time-internal.h>
-#include <linux/elfcore.h>
+#include <freax/time-internal.h>
+#include <freax/elfcore.h>
 
 /*
  * This is a per-cpu array.  A processor only modifies its entry and it only

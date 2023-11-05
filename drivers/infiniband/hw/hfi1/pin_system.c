@@ -3,7 +3,7 @@
  * Copyright(c) 2023 - Cornelis Networks, Inc.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "hfi.h"
 #include "common.h"

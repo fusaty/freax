@@ -5,4 +5,4 @@
 #include "boot.h"
 
 const char kernel_version[] = UTS_RELEASE
-	" (" LINUX_COMPILE_BY "@" LINUX_COMPILE_HOST ") " UTS_VERSION;
+	" (" freax_COMPILE_BY "@" freax_COMPILE_HOST ") " UTS_VERSION;

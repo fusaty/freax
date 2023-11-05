@@ -48,13 +48,13 @@
 #ifdef CONFIG_X86
 #include <asm/hypervisor.h>
 #endif
-#include <linux/cc_platform.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/version.h>
+#include <freax/cc_platform.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/version.h>
 
-#define VMWGFX_DRIVER_DESC "Linux drm driver for VMware graphics devices"
+#define VMWGFX_DRIVER_DESC "freax drm driver for VMware graphics devices"
 
 /*
  * Fully encoded drm commands. Might move to vmw_drm.h
@@ -816,12 +816,12 @@ static void vmw_write_driver_id(struct vmw_private *dev)
 {
 	if ((dev->capabilities2 & SVGA_CAP2_DX2) != 0) {
 		vmw_write(dev,  SVGA_REG_GUEST_DRIVER_ID,
-			  SVGA_REG_GUEST_DRIVER_ID_LINUX);
+			  SVGA_REG_GUEST_DRIVER_ID_freax);
 
 		vmw_write(dev, SVGA_REG_GUEST_DRIVER_VERSION1,
-			  LINUX_VERSION_MAJOR << 24 |
-			  LINUX_VERSION_PATCHLEVEL << 16 |
-			  LINUX_VERSION_SUBLEVEL);
+			  freax_VERSION_MAJOR << 24 |
+			  freax_VERSION_PATCHLEVEL << 16 |
+			  freax_VERSION_SUBLEVEL);
 		vmw_write(dev, SVGA_REG_GUEST_DRIVER_VERSION2,
 			  VMWGFX_DRIVER_MAJOR << 24 |
 			  VMWGFX_DRIVER_MINOR << 16 |

@@ -9,7 +9,7 @@
 #ifndef __DW_MIPI_DSI__
 #define __DW_MIPI_DSI__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_bridge.h>

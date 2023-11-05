@@ -321,11 +321,11 @@ OPTIONS
 --gtk:: Use the GTK2 interface.
 
 -k::
---vmlinux=<file>::
-        vmlinux pathname
+--vmfreax=<file>::
+        vmfreax pathname
 
---ignore-vmlinux::
-	Ignore vmlinux files.
+--ignore-vmfreax::
+	Ignore vmfreax files.
 
 --kallsyms=<file>::
         kallsyms pathname

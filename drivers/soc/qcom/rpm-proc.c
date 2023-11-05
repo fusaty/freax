@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021-2023, Stephan Gerhold <stephan@gerhold.net> */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/rpmsg/qcom_smd.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/rpmsg/qcom_smd.h>
 
 static int rpm_proc_probe(struct platform_device *pdev)
 {

@@ -2,7 +2,7 @@
 /*
  * Copyright(c) 2020 Intel Corporation.
  */
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 #include "gem/i915_gem_context.h"
 

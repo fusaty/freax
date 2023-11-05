@@ -6,7 +6,7 @@
 #define _TRACE_MM_H
 
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 struct ma_state;
 

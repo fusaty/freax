@@ -12,10 +12,10 @@
 #include <crypto/engine.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include "rk3288_crypto.h"
 
 #define RK_CRYPTO_DEC			BIT(0)

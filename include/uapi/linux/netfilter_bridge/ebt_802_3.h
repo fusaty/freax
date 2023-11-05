@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_BRIDGE_EBT_802_3_H
-#define _UAPI__LINUX_BRIDGE_EBT_802_3_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_BRIDGE_EBT_802_3_H
+#define _UAPI__freax_BRIDGE_EBT_802_3_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #define EBT_802_3_SAP 0x01
 #define EBT_802_3_TYPE 0x02
@@ -61,4 +61,4 @@ struct ebt_802_3_info {
 	__u8  invflags;
 };
 
-#endif /* _UAPI__LINUX_BRIDGE_EBT_802_3_H */
+#endif /* _UAPI__freax_BRIDGE_EBT_802_3_H */

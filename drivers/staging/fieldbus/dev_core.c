@@ -4,15 +4,15 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <freax/fieldbus_dev.h> when taking this out of staging */
 #include "fieldbus_dev.h"
 
 /* Maximum number of fieldbus devices */

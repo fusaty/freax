@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#ifndef __LINUX_MBUS_H
-#define __LINUX_MBUS_H
+#ifndef __freax_MBUS_H
+#define __freax_MBUS_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 struct resource;
 
@@ -106,4 +106,4 @@ static inline int mvebu_mbus_get_dram_win_info(phys_addr_t phyaddr, u8 *target,
 }
 #endif /* CONFIG_MVEBU_MBUS */
 
-#endif /* __LINUX_MBUS_H */
+#endif /* __freax_MBUS_H */

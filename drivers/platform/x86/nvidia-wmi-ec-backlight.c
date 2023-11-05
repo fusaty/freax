@@ -3,13 +3,13 @@
  * Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/nvidia-wmi-ec-backlight.h>
-#include <linux/types.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_data/x86/nvidia-wmi-ec-backlight.h>
+#include <freax/types.h>
+#include <freax/wmi.h>
 #include <acpi/video.h>
 
 static bool force;

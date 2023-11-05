@@ -1,12 +1,12 @@
-#ifndef _LINUX_MMAP_LOCK_H
-#define _LINUX_MMAP_LOCK_H
+#ifndef _freax_MMAP_LOCK_H
+#define _freax_MMAP_LOCK_H
 
-#include <linux/lockdep.h>
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/rwsem.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/types.h>
+#include <freax/lockdep.h>
+#include <freax/mm_types.h>
+#include <freax/mmdebug.h>
+#include <freax/rwsem.h>
+#include <freax/tracepoint-defs.h>
+#include <freax/types.h>
 
 #define MMAP_LOCK_INITIALIZER(name) \
 	.mmap_lock = __RWSEM_INITIALIZER((name).mmap_lock),
@@ -184,4 +184,4 @@ static inline int mmap_lock_is_contended(struct mm_struct *mm)
 	return rwsem_is_contended(&mm->mmap_lock);
 }
 
-#endif /* _LINUX_MMAP_LOCK_H */
+#endif /* _freax_MMAP_LOCK_H */

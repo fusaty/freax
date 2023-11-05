@@ -6,10 +6,10 @@
 //
 // Author: Mark Brown <broonie@kernel.org>
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/maple_tree.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/maple_tree.h>
+#include <freax/slab.h>
 
 #include "internal.h"
 

@@ -7,11 +7,11 @@
  *	Copyright (c) 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include <asm/inst.h>
 #include <asm/irq_regs.h>
@@ -19,7 +19,7 @@
 #include <asm/page.h>
 #include <asm/ptrace.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <asm/dec/kn01.h>
 

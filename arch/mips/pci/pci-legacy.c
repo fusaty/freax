@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle (ralf@linux-mips.org)
+ *   written by Ralf Baechle (ralf@freax-mips.org)
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/of_address.h>
 
 #include <asm/cpu-info.h>
 

@@ -11,16 +11,16 @@
  *  Copyright (C) 2010, Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/pwm.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 struct pwm_vibrator {
 	struct input_dev *input;

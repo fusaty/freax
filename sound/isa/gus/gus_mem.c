@@ -4,8 +4,8 @@
  *  GUS's memory allocation routines / bottom layer
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <sound/core.h>
 #include <sound/gus.h>
 #include <sound/info.h>

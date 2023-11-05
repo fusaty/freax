@@ -5,14 +5,14 @@
  * Copyright (C) 2023 BayLibre Incorporated - https://www.baylibre.com/
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6594.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/tps6594.h>
 
 #define TPS6594_CRC_SYNC_TIMEOUT_MS 150
 

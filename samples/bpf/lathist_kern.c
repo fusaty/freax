@@ -5,9 +5,9 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/version.h>
-#include <linux/ptrace.h>
-#include <uapi/linux/bpf.h>
+#include <freax/version.h>
+#include <freax/ptrace.h>
+#include <uapi/freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 #define MAX_ENTRIES	20
@@ -96,4 +96,4 @@ int bpf_prog2(struct pt_regs *ctx)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = freax_VERSION_CODE;

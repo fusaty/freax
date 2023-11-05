@@ -16,36 +16,36 @@
  *   David S. Miller (davem@davemloft.net), 2002-Jul-29
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/circ_buf.h>
+#include <freax/serial.h>
+#include <freax/sysrq.h>
+#include <freax/console.h>
+#include <freax/slab.h>
 #ifdef CONFIG_SERIO
-#include <linux/serio.h>
+#include <freax/serio.h>
 #endif
-#include <linux/serial_reg.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/serial_reg.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 #include <asm/setup.h>
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <freax/serial_core.h>
+#include <freax/sunserialcore.h>
 
 /* We are on a NS PC87303 clocked with 24.0 MHz, which results
  * in a UART clock of 1.8462 MHz.

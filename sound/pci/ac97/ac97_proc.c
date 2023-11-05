@@ -7,7 +7,7 @@
  *  by Intel Corporation (http://developer.intel.com).
  */
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #include <sound/core.h>
 #include <sound/ac97_codec.h>

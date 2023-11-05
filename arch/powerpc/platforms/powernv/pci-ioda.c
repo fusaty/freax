@@ -7,22 +7,22 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
-#include <linux/iommu.h>
-#include <linux/rculist.h>
-#include <linux/sizes.h>
-#include <linux/debugfs.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/crash_dump.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/msi.h>
+#include <freax/iommu.h>
+#include <freax/rculist.h>
+#include <freax/sizes.h>
+#include <freax/debugfs.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -1597,7 +1597,7 @@ void pnv_pci_ioda2_setup_dma_pe(struct pnv_phb *phb,
 	pe_info(pe, "Setting up 32-bit TCE table at 0..%08x\n",
 		phb->ioda.m32_pci_base);
 
-	/* Setup linux iommu table */
+	/* Setup freax iommu table */
 	pe->table_group.tce32_start = 0;
 	pe->table_group.tce32_size = phb->ioda.m32_pci_base;
 	pe->table_group.max_dynamic_windows_supported =

@@ -3,19 +3,19 @@
  * Block Translation Table
  * Copyright (c) 2014-2015, Intel Corporation.
  */
-#include <linux/highmem.h>
-#include <linux/debugfs.h>
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/hdreg.h>
-#include <linux/sizes.h>
-#include <linux/ndctl.h>
-#include <linux/fs.h>
-#include <linux/nd.h>
-#include <linux/backing-dev.h>
+#include <freax/highmem.h>
+#include <freax/debugfs.h>
+#include <freax/blkdev.h>
+#include <freax/pagemap.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/hdreg.h>
+#include <freax/sizes.h>
+#include <freax/ndctl.h>
+#include <freax/fs.h>
+#include <freax/nd.h>
+#include <freax/backing-dev.h>
 #include "btt.h"
 #include "nd.h"
 
@@ -1719,7 +1719,7 @@ static void __exit nd_btt_exit(void)
 }
 
 MODULE_ALIAS_ND_DEVICE(ND_DEVICE_BTT);
-MODULE_AUTHOR("Vishal Verma <vishal.l.verma@linux.intel.com>");
+MODULE_AUTHOR("Vishal Verma <vishal.l.verma@freax.intel.com>");
 MODULE_LICENSE("GPL v2");
 module_init(nd_btt_init);
 module_exit(nd_btt_exit);

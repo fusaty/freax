@@ -2,8 +2,8 @@
 #ifndef _LBS_IF_USB_H
 #define _LBS_IF_USB_H
 
-#include <linux/wait.h>
-#include <linux/timer.h>
+#include <freax/wait.h>
+#include <freax/timer.h>
 
 struct lbs_private;
 

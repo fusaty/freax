@@ -4,8 +4,8 @@
  * Author: Ping-Hsun Wu <ping-hsun.wu@mediatek.com>
  */
 
-#include <linux/mailbox_controller.h>
-#include <linux/platform_device.h>
+#include <freax/mailbox_controller.h>
+#include <freax/platform_device.h>
 #include "mtk-mdp3-cmdq.h"
 #include "mtk-mdp3-comp.h"
 #include "mtk-mdp3-core.h"

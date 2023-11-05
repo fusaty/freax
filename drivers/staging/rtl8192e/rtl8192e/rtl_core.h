@@ -10,24 +10,24 @@
 #ifndef _RTL_CORE_H
 #define _RTL_CORE_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/random.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/rtnetlink.h>
+#include <freax/wireless.h>
+#include <freax/timer.h>
+#include <freax/proc_fs.h>
+#include <freax/if_arp.h>
+#include <freax/random.h>
+#include <freax/io.h>
 
 /* Need this defined before including local include files */
 #define DRV_NAME "rtl819xE"

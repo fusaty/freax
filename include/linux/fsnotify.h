@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FS_NOTIFY_H
-#define _LINUX_FS_NOTIFY_H
+#ifndef _freax_FS_NOTIFY_H
+#define _freax_FS_NOTIFY_H
 
 /*
- * include/linux/fsnotify.h - generic hooks for filesystem notification, to
+ * include/freax/fsnotify.h - generic hooks for filesystem notification, to
  * reduce in-source duplication from both dnotify and inotify.
  *
  * We don't compile any of this away in some complicated menagerie of ifdefs.
@@ -12,10 +12,10 @@
  * (C) Copyright 2005 Robert Love
  */
 
-#include <linux/fsnotify_backend.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/audit.h>
+#include <freax/slab.h>
+#include <freax/bug.h>
 
 /*
  * Notify this @dir inode about a change in a child directory entry.
@@ -393,4 +393,4 @@ static inline int fsnotify_sb_error(struct super_block *sb, struct inode *inode,
 			NULL, NULL, NULL, 0);
 }
 
-#endif	/* _LINUX_FS_NOTIFY_H */
+#endif	/* _freax_FS_NOTIFY_H */

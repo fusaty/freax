@@ -11,9 +11,9 @@
  * Author: Ajitpal Singh <ajitpal.singh@stericsson.com>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
+#include <freax/vmalloc.h>
+#include <freax/sched.h>
+#include <freax/firmware.h>
 
 #include "cw1200.h"
 #include "fwio.h"

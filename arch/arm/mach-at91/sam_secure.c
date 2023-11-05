@@ -3,8 +3,8 @@
  * Copyright (C) 2022, Microchip
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/of.h>
+#include <freax/arm-smccc.h>
+#include <freax/of.h>
 
 #include "sam_secure.h"
 
@@ -27,7 +27,7 @@ struct arm_smccc_res sam_smccc_call(u32 fn, u32 arg0, u32 arg1)
 	return res;
 }
 
-bool sam_linux_is_optee_available(void)
+bool sam_freax_is_optee_available(void)
 {
 	/* If optee has been detected, then we are running in normal world */
 	return optee_available;

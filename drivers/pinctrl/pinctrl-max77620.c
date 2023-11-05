@@ -9,17 +9,17 @@
  *	Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/mfd/max77620.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/mfd/max77620.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinconf.h"

@@ -92,7 +92,7 @@ properties:
       "no-unaligned-direct-access", the flash will not be exposed directly to
       the MTD users (e.g. JFFS2) any more.
 
-  linux,mtd-name:
+  freax,mtd-name:
     description:
       Allows specifying the mtd name for retro capability with physmap-flash
       drivers as boot loader pass the mtd partition via the old device name

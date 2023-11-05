@@ -3,8 +3,8 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
+#include <freax/err.h>
+#include <freax/errno.h>
 #include <asm/kvm_csr.h>
 #include <asm/kvm_vcpu.h>
 

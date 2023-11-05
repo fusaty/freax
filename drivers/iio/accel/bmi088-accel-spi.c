@@ -6,10 +6,10 @@
  * Copyright (c) 2018-2020, Topic Embedded Products
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 
 #include "bmi088-accel.h"
 

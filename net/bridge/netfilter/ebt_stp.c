@@ -8,11 +8,11 @@
  *
  *  July, 2003
  */
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_stp.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_stp.h>
 
 #define BPDU_TYPE_CONFIG 0
 

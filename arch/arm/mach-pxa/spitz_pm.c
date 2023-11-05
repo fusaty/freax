@@ -5,17 +5,17 @@
  * Copyright (c) 2005 Richard Purdie
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/apm-emulation.h>
-#include <linux/spi/corgi_lcd.h>
+#include <freax/module.h>
+#include <freax/stat.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/gpio-pxa.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/apm-emulation.h>
+#include <freax/spi/corgi_lcd.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>

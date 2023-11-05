@@ -8,24 +8,24 @@
  *
  * Copyright (c) 2008 Texas Instruments
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/phy.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 
 #define ET1011C_STATUS_REG	(0x1A)

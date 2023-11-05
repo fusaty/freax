@@ -5,18 +5,18 @@
  * Copyright (c) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
 
 #define MESON_MX_EFUSE_CNTL1					0x04
 #define MESON_MX_EFUSE_CNTL1_PD_ENABLE				BIT(27)

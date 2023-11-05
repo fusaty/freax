@@ -3,16 +3,16 @@
  * Copyright (C) 2019-2021 Linaro Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
-#include <uapi/linux/tee.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/tee_drv.h>
+#include <freax/uuid.h>
+#include <uapi/freax/tee.h>
 
 #include "common.h"
 

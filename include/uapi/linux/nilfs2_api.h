@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * nilfs2_api.h - NILFS2 user space API
  *
@@ -10,11 +10,11 @@
  * (at your option) any later version.
  */
 
-#ifndef _LINUX_NILFS2_API_H
-#define _LINUX_NILFS2_API_H
+#ifndef _freax_NILFS2_API_H
+#define _freax_NILFS2_API_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /**
  * struct nilfs_cpinfo - checkpoint information
@@ -290,4 +290,4 @@ struct nilfs_bdesc {
 #define NILFS_IOCTL_SET_SUINFO						\
 	_IOW(NILFS_IOCTL_IDENT, 0x8D, struct nilfs_argv)
 
-#endif /* _LINUX_NILFS2_API_H */
+#endif /* _freax_NILFS2_API_H */

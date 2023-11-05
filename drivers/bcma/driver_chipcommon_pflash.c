@@ -7,9 +7,9 @@
 
 #include "bcma_private.h"
 
-#include <linux/bcma/bcma.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
+#include <freax/bcma/bcma.h>
+#include <freax/mtd/physmap.h>
+#include <freax/platform_device.h>
 
 static const char * const part_probes[] = { "bcm47xxpart", NULL };
 

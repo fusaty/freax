@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt)	"tegra-timer: " fmt
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/sched_clock.h>
-#include <linux/time.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/percpu.h>
+#include <freax/sched_clock.h>
+#include <freax/time.h>
 
 #include "timer-of.h"
 

@@ -14,11 +14,11 @@
  * 	              Nauman Rafique <nauman@google.com>
  */
 
-#include <linux/blk-cgroup.h>
-#include <linux/cgroup.h>
-#include <linux/kthread.h>
-#include <linux/blk-mq.h>
-#include <linux/llist.h>
+#include <freax/blk-cgroup.h>
+#include <freax/cgroup.h>
+#include <freax/kthread.h>
+#include <freax/blk-mq.h>
+#include <freax/llist.h>
 
 struct blkcg_gq;
 struct blkg_policy_data;

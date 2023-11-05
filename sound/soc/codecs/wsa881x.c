@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2015-2017, The Linux Foundation.
+// Copyright (c) 2015-2017, The freax Foundation.
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/bitops.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/soundwire/sdw_type.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 

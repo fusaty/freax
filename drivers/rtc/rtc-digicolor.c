@@ -7,13 +7,13 @@
  * Author: Baruch Siach <baruch@tkos.co.il>
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/of.h>
 
 #define DC_RTC_CONTROL		0x0
 #define DC_RTC_TIME		0x8

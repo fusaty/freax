@@ -11,8 +11,8 @@
 /* With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi> and even
    Frodo Looijaard <frodol@dds.nl> */
 
-#ifndef _LINUX_I2C_ALGO_PCF_H
-#define _LINUX_I2C_ALGO_PCF_H
+#ifndef _freax_I2C_ALGO_PCF_H
+#define _freax_I2C_ALGO_PCF_H
 
 struct i2c_algo_pcf_data {
 	void *data;		/* private data for lolevel routines	*/
@@ -34,4 +34,4 @@ struct i2c_algo_pcf_data {
 
 int i2c_pcf_add_bus(struct i2c_adapter *);
 
-#endif /* _LINUX_I2C_ALGO_PCF_H */
+#endif /* _freax_I2C_ALGO_PCF_H */

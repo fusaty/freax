@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_DLN2_H
-#define __LINUX_USB_DLN2_H
+#ifndef __freax_USB_DLN2_H
+#define __freax_USB_DLN2_H
 
 #define DLN2_CMD(cmd, id)		((cmd) | ((id) << 8))
 

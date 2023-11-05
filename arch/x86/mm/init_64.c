@@ -1,43 +1,43 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/x86_64/mm/init.c
+ *  freax/arch/x86_64/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Copyright (C) 2000  Pavel Machek <pavel@ucw.cz>
  *  Copyright (C) 2002,2003 Andi Kleen <ak@suse.de>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/dma-mapping.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/memremap.h>
-#include <linux/nmi.h>
-#include <linux/gfp.h>
-#include <linux/kcore.h>
-#include <linux/bootmem_info.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/proc_fs.h>
+#include <freax/pci.h>
+#include <freax/pfn.h>
+#include <freax/poison.h>
+#include <freax/dma-mapping.h>
+#include <freax/memory.h>
+#include <freax/memory_hotplug.h>
+#include <freax/memremap.h>
+#include <freax/nmi.h>
+#include <freax/gfp.h>
+#include <freax/kcore.h>
+#include <freax/bootmem_info.h>
 
 #include <asm/processor.h>
 #include <asm/bios_ebda.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/dma.h>
 #include <asm/fixmap.h>

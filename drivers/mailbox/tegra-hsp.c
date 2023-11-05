@@ -3,14 +3,14 @@
  * Copyright (c) 2016-2023, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_controller.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_controller.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 
 #include <soc/tegra/fuse.h>
 

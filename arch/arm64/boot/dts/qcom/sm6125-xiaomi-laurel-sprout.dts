@@ -62,7 +62,7 @@
 	};
 
 	extcon_usb: usb-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		id-gpios = <&tlmm 102 GPIO_ACTIVE_HIGH>;
 	};
 
@@ -75,9 +75,9 @@
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&pm6125_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -222,7 +222,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

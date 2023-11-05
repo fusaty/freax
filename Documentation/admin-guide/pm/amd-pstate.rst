@@ -15,15 +15,15 @@ Introduction
 
 ``amd-pstate`` is the AMD CPU performance scaling driver that introduces a
 new CPU frequency control mechanism on modern AMD APU and CPU series in
-Linux kernel. The new mechanism is based on Collaborative Processor
+freax kernel. The new mechanism is based on Collaborative Processor
 Performance Control (CPPC) which provides finer grain frequency management
 than legacy ACPI hardware P-States. Current AMD CPU/APU platforms are using
 the ACPI P-states driver to manage CPU frequency and clocks with switching
 only in 3 P-states. CPPC replaces the ACPI P-states controls and allows a
-flexible, low-latency interface for the Linux kernel to directly
+flexible, low-latency interface for the freax kernel to directly
 communicate the performance hints to hardware.
 
-``amd-pstate`` leverages the Linux kernel governors such as ``schedutil``,
+``amd-pstate`` leverages the freax kernel governors such as ``schedutil``,
 ``ondemand``, etc. to manage the performance hints which are provided by
 CPPC hardware functionality that internally follows the hardware
 specification (for details refer to AMD64 Architecture Programmer's Manual
@@ -462,7 +462,7 @@ generate performance plots. This utility can be used to debug and tune the
 performance of ``amd-pstate`` driver. The tracer tool needs to import intel
 pstate tracer.
 
-Tracer tool located in ``linux/tools/power/x86/amd_pstate_tracer``. It can be
+Tracer tool located in ``freax/tools/power/x86/amd_pstate_tracer``. It can be
 used in two ways. If trace file is available, then directly parse the file
 with command ::
 
@@ -538,7 +538,7 @@ Unit Tests for amd-pstate
 
    We use test module in the kselftest frameworks to implement it.
    We create ``amd-pstate-ut`` module and tie it into kselftest.(for
-   details refer to Linux Kernel Selftests [4]_).
+   details refer to freax Kernel Selftests [4]_).
 
     1). Build
 
@@ -547,7 +547,7 @@ Unit Tests for amd-pstate
         + make project
         + make selftest ::
 
-            $ cd linux
+            $ cd freax
             $ make -C tools/testing/selftests
 
         + make perf ::
@@ -716,5 +716,5 @@ Reference
 .. [3] Processor Programming Reference (PPR) for AMD Family 19h Model 51h, Revision A1 Processors
        https://www.amd.com/system/files/TechDocs/56569-A1-PUB.zip
 
-.. [4] Linux Kernel Selftests,
+.. [4] freax Kernel Selftests,
        https://www.kernel.org/doc/html/latest/dev-tools/kselftest.html

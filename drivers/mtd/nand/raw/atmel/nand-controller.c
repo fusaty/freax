@@ -45,23 +45,23 @@
  * - <soc>_nand_: all SoC specific structures/functions
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/genalloc.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
-#include <linux/mfd/syscon/atmel-smc.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/genalloc.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/atmel-matrix.h>
+#include <freax/mfd/syscon/atmel-smc.h>
+#include <freax/module.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/iopoll.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 #include <soc/at91/atmel-sfr.h>
 
 #include "pmecc.h"

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/termios_internal.h>
+#include <freax/termios_internal.h>
 
 int user_termio_to_kernel_termios(struct ktermios *termios,
 						struct termio __user *termio)

@@ -3,8 +3,8 @@
 #ifndef _ASM_X86_TDX_H
 #define _ASM_X86_TDX_H
 
-#include <linux/init.h>
-#include <linux/bits.h>
+#include <freax/init.h>
+#include <freax/bits.h>
 
 #include <asm/errno.h>
 #include <asm/ptrace.h>

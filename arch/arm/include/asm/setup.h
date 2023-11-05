@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/asm/setup.h
+ *  freax/include/asm/setup.h
  *
  *  Copyright (C) 1997-1999 Russell King
  *
@@ -11,7 +11,7 @@
 #ifndef __ASMARM_SETUP_H
 #define __ASMARM_SETUP_H
 
-#include <linux/screen_info.h>
+#include <freax/screen_info.h>
 #include <uapi/asm/setup.h>
 
 

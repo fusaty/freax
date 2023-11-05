@@ -14,7 +14,7 @@
  * yet.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/msr.h>
 #include <asm/page_types.h>
 #include <asm/processor-flags.h>

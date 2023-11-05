@@ -10,21 +10,21 @@
  *   Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/bch.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bch.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define PKT_REG				0x00
 #define   PKT_SIZE(x)			FIELD_PREP(GENMASK(10, 0), (x))

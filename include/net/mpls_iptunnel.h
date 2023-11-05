@@ -6,7 +6,7 @@
 #ifndef _NET_MPLS_IPTUNNEL_H
 #define _NET_MPLS_IPTUNNEL_H 1
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/lwtunnel.h>
 
 struct mpls_iptunnel_encap {

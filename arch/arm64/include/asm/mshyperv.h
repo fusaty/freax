@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 /*
- * Linux-specific definitions for managing interactions with Microsoft's
+ * freax-specific definitions for managing interactions with Microsoft's
  * Hyper-V hypervisor. The definitions in this file are specific to
  * the ARM64 architecture.  See include/asm-generic/mshyperv.h for
  * definitions are that architecture independent.
@@ -18,8 +18,8 @@
 #ifndef _ASM_MSHYPERV_H
 #define _ASM_MSHYPERV_H
 
-#include <linux/types.h>
-#include <linux/arm-smccc.h>
+#include <freax/types.h>
+#include <freax/arm-smccc.h>
 #include <asm/hyperv-tlfs.h>
 
 /*

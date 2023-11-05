@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/board-osk.c
+ * freax/arch/arm/mach-omap1/board-osk.c
  *
  * Board specific init for OMAP5912 OSK
  *
@@ -25,25 +25,25 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/omap1_bl.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/smc91x.h>
+#include <freax/omapfb.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/mfd/tps65010.h>
+#include <freax/platform_data/gpio-omap.h>
+#include <freax/platform_data/omap1_bl.h>
+#include <freax/soc/ti/omap1-io.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

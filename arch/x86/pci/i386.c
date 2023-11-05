@@ -4,7 +4,7 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and freax consulting and custom programming)
  *      Drew@Colorado.EDU
  *      +1 (303) 786-7975
  *
@@ -25,14 +25,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/memblock.h>
 
 #include <asm/memtype.h>
 #include <asm/e820/api.h>

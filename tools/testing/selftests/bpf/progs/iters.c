@@ -2,7 +2,7 @@
 /* Copyright (c) 2023 Meta Platforms, Inc. and affiliates. */
 
 #include <stdbool.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include "bpf_misc.h"
 

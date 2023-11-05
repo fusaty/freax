@@ -4,14 +4,14 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/xattr.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/xattr.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/uaccess.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -608,7 +608,7 @@ static int gfs2_xattr_get(const struct xattr_handler *handler,
 	struct gfs2_holder gh;
 	int ret;
 
-	/* During lookup, SELinux calls this function with the glock locked. */
+	/* During lookup, SEfreax calls this function with the glock locked. */
 
 	if (!gfs2_glock_is_locked_by_me(ip->i_gl)) {
 		ret = gfs2_glock_nq_init(ip->i_gl, LM_ST_SHARED, LM_FLAG_ANY, &gh);

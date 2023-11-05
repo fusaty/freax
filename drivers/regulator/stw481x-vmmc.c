@@ -8,13 +8,13 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mfd/stw481x.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/mfd/stw481x.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 static const unsigned int stw481x_vmmc_voltages[] = {
 	1800000,

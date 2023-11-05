@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * sysctl.h: General linux system control interface
+ * sysctl.h: General freax system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  *
@@ -19,15 +19,15 @@
  ****************************************************************
  ****************************************************************
  */
-#ifndef _LINUX_SYSCTL_H
-#define _LINUX_SYSCTL_H
+#ifndef _freax_SYSCTL_H
+#define _freax_SYSCTL_H
 
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/wait.h>
-#include <linux/rbtree.h>
-#include <linux/uidgid.h>
-#include <uapi/linux/sysctl.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
+#include <freax/wait.h>
+#include <freax/rbtree.h>
+#include <freax/uidgid.h>
+#include <uapi/freax/sysctl.h>
 
 /* For the /proc/sys support */
 struct completion;
@@ -298,4 +298,4 @@ static inline bool sysctl_is_alias(char *param)
 int sysctl_max_threads(struct ctl_table *table, int write, void *buffer,
 		size_t *lenp, loff_t *ppos);
 
-#endif /* _LINUX_SYSCTL_H */
+#endif /* _freax_SYSCTL_H */

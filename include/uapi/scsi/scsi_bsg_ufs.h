@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * UFS Transport SGIO v4 BSG Message Support
  *
@@ -9,7 +9,7 @@
 #define SCSI_BSG_UFS_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <freax/types.h>
 /*
  * This file intended to be included by both kernel and user space
  */

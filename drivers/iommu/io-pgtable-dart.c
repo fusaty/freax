@@ -2,7 +2,7 @@
 /*
  * Apple DART page table allocator.
  *
- * Copyright (C) 2022 The Asahi Linux Contributors
+ * Copyright (C) 2022 The Asahi freax Contributors
  *
  * Based on io-pgtable-arm.
  *
@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt)	"dart io-pgtable: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/io-pgtable.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/io-pgtable.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include <asm/barrier.h>
 

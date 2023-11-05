@@ -9,12 +9,12 @@
 #define PREBOOT
 #include "lz4/lz4_decompress.c"
 #else
-#include <linux/decompress/unlz4.h>
+#include <freax/decompress/unlz4.h>
 #endif
-#include <linux/types.h>
-#include <linux/lz4.h>
-#include <linux/decompress/mm.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/lz4.h>
+#include <freax/decompress/mm.h>
+#include <freax/compiler.h>
 
 #include <asm/unaligned.h>
 

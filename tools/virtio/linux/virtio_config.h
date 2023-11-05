@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/virtio_byteorder.h>
-#include <linux/virtio.h>
-#include <uapi/linux/virtio_config.h>
+#include <freax/virtio_byteorder.h>
+#include <freax/virtio.h>
+#include <uapi/freax/virtio_config.h>
 
 struct virtio_config_ops {
 	int (*disable_vq_and_reset)(struct virtqueue *vq);

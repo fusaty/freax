@@ -6,15 +6,15 @@
  * Copyright (C) 2016 Nextfour Group
  */
 
-#include <linux/crc-itu-t.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/crc-itu-t.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 #define SIS_I2C_NAME		"sis_i2c_ts"

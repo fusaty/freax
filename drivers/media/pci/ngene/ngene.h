@@ -8,14 +8,14 @@
 #ifndef _NGENE_H_
 #define _NGENE_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
 #include <asm/dma.h>
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

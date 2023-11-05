@@ -30,12 +30,12 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/in.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/in.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/ipv6.h>
+#include <freax/ipv6.h>
 
 #include "rds_single_path.h"
 #include "rds.h"

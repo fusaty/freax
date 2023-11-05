@@ -5,12 +5,12 @@
  * Copyright (C) 2009 Texas Instruments, Inc. https://www.ti.com/
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/spinlock.h>
+#include <freax/pm.h>
+#include <freax/suspend.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/spinlock.h>
 
 #include <asm/cacheflush.h>
 #include <asm/delay.h>

@@ -8,23 +8,23 @@
  *
  * Data sheet: ARM DDI 0190B, September 2000
  */
-#include <linux/amba/bus.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/amba/bus.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #define GPIODIR 0x400
 #define GPIOIS  0x404

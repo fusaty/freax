@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) "pstore: " fmt
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmsg_dump.h>
-#include <linux/console.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pstore.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/zlib.h>
+#include <freax/atomic.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kmsg_dump.h>
+#include <freax/console.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/pstore.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/jiffies.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/zlib.h>
 
 #include "internal.h"
 

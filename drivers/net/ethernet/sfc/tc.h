@@ -12,7 +12,7 @@
 #ifndef EFX_TC_H
 #define EFX_TC_H
 #include <net/flow_offload.h>
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 #include "net_driver.h"
 #include "tc_counters.h"
 

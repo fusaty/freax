@@ -9,7 +9,7 @@
 struct intel_huc;
 struct intel_uc_fw;
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 int intel_huc_fw_load_and_auth_via_gsc(struct intel_huc *huc);
 int intel_huc_fw_auth_via_gsccs(struct intel_huc *huc);

@@ -5,26 +5,26 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel freax Wireless <ilw@freax.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/if_arp.h>
+#include <freax/in6.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/skbuff.h>
+#include <freax/tcp.h>
+#include <freax/types.h>
+#include <freax/wireless.h>
+#include <freax/etherdevice.h>
+#include <freax/uaccess.h>
 
 #include "libipw.h"
 

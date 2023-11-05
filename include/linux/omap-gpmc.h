@@ -3,7 +3,7 @@
  *  OMAP GPMC (General Purpose Memory Controller) defines
  */
 
-#include <linux/platform_data/gpmc-omap.h>
+#include <freax/platform_data/gpmc-omap.h>
 
 #define GPMC_CONFIG_WP		0x00000005
 

@@ -5,13 +5,13 @@
  * Partly derived from CP110 comphy driver by Antoine Tenart
  * <antoine.tenart@bootlin.com>
  */
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
 
 #define MAX_A38X_COMPHY	6
 #define MAX_A38X_PORTS	3
@@ -266,6 +266,6 @@ static struct platform_driver a38x_comphy_driver = {
 };
 module_platform_driver(a38x_comphy_driver);
 
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armfreax.org.uk>");
 MODULE_DESCRIPTION("Common PHY driver for Armada 38x SoCs");
 MODULE_LICENSE("GPL v2");

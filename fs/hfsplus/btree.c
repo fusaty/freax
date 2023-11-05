@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/btree.c
+ *  freax/fs/hfsplus/btree.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,9 +9,9 @@
  * Handle opening/closing btree
  */
 
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/log2.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/log2.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

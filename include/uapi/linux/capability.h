@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * This is <linux/capability.h>
+ * This is <freax/capability.h>
  *
  * Andrew G. Morgan <morgan@kernel.org>
  * Alexander Kjeldaas <astor@guardian.no>
@@ -8,13 +8,13 @@
  *
  * See here for the libcap library ("POSIX draft" compliance):
  *
- * ftp://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.6/
+ * ftp://www.kernel.org/pub/freax/libs/security/freax-privs/kernel-2.6/
  */
 
-#ifndef _UAPI_LINUX_CAPABILITY_H
-#define _UAPI_LINUX_CAPABILITY_H
+#ifndef _UAPI_freax_CAPABILITY_H
+#define _UAPI_freax_CAPABILITY_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* User-level do most of the mapping between kernel and user
    capabilities based on the version tag given by the kernel. The
@@ -27,14 +27,14 @@
    library since the draft standard requires the use of malloc/free
    etc.. */
 
-#define _LINUX_CAPABILITY_VERSION_1  0x19980330
-#define _LINUX_CAPABILITY_U32S_1     1
+#define _freax_CAPABILITY_VERSION_1  0x19980330
+#define _freax_CAPABILITY_U32S_1     1
 
-#define _LINUX_CAPABILITY_VERSION_2  0x20071026  /* deprecated - use v3 */
-#define _LINUX_CAPABILITY_U32S_2     2
+#define _freax_CAPABILITY_VERSION_2  0x20071026  /* deprecated - use v3 */
+#define _freax_CAPABILITY_U32S_2     2
 
-#define _LINUX_CAPABILITY_VERSION_3  0x20080522
-#define _LINUX_CAPABILITY_U32S_3     2
+#define _freax_CAPABILITY_VERSION_3  0x20080522
+#define _freax_CAPABILITY_U32S_3     2
 
 typedef struct __user_cap_header_struct {
 	__u32 version;
@@ -97,8 +97,8 @@ struct vfs_ns_cap_data {
  * 32-bit world. If you find you need this, please consider using
  * libcap to untrap yourself...
  */
-#define _LINUX_CAPABILITY_VERSION  _LINUX_CAPABILITY_VERSION_1
-#define _LINUX_CAPABILITY_U32S     _LINUX_CAPABILITY_U32S_1
+#define _freax_CAPABILITY_VERSION  _freax_CAPABILITY_VERSION_1
+#define _freax_CAPABILITY_U32S     _freax_CAPABILITY_U32S_1
 
 #endif
 
@@ -115,13 +115,13 @@ struct vfs_ns_cap_data {
 
 /* Override all DAC access, including ACL execute access if
    [_POSIX_ACL] is defined. Excluding DAC access covered by
-   CAP_LINUX_IMMUTABLE. */
+   CAP_freax_IMMUTABLE. */
 
 #define CAP_DAC_OVERRIDE     1
 
 /* Overrides all DAC restrictions regarding read and search on files
    and directories, including ACL restrictions if [_POSIX_ACL] is
-   defined. Excluding DAC access covered by CAP_LINUX_IMMUTABLE. */
+   defined. Excluding DAC access covered by CAP_freax_IMMUTABLE. */
 
 #define CAP_DAC_READ_SEARCH  2
 
@@ -159,7 +159,7 @@ struct vfs_ns_cap_data {
 
 
 /**
- ** Linux-specific capabilities
+ ** freax-specific capabilities
  **/
 
 /* Without VFS support for capabilities:
@@ -176,7 +176,7 @@ struct vfs_ns_cap_data {
 
 /* Allow modification of S_IMMUTABLE and S_APPEND file attributes */
 
-#define CAP_LINUX_IMMUTABLE  9
+#define CAP_freax_IMMUTABLE  9
 
 /* Allows binding to TCP/UDP sockets below 1024 */
 /* Allows binding to ATM VCIs below 32 */
@@ -430,4 +430,4 @@ struct vfs_ns_cap_data {
 #define CAP_TO_MASK(x)      (1U << ((x) & 31)) /* mask for indexed __u32 */
 
 
-#endif /* _UAPI_LINUX_CAPABILITY_H */
+#endif /* _UAPI_freax_CAPABILITY_H */

@@ -6,16 +6,16 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/cec.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/dmi.h>
+#include <freax/pci.h>
+#include <freax/cec.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
 

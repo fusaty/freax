@@ -11,7 +11,7 @@
 #ifndef DM_REGION_HASH_H
 #define DM_REGION_HASH_H
 
-#include <linux/dm-dirty-log.h>
+#include <freax/dm-dirty-log.h>
 
 /*
  *----------------------------------------------------------------

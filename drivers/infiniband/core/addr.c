@@ -33,10 +33,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/inetdevice.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/inetdevice.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include <net/arp.h>
 #include <net/neighbour.h>
 #include <net/route.h>

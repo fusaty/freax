@@ -40,7 +40,7 @@ patternProperties:
     properties:
       label: true
 
-      linux,code: true
+      freax,code: true
 
       press-threshold-microvolt:
         description:
@@ -50,7 +50,7 @@ patternProperties:
           keyup-threshold-microvolt.
 
     required:
-      - linux,code
+      - freax,code
       - press-threshold-microvolt
 
 required:
@@ -84,19 +84,19 @@ examples:
 
         button-up {
             label = "Volume Up";
-            linux,code = <KEY_VOLUMEUP>;
+            freax,code = <KEY_VOLUMEUP>;
             press-threshold-microvolt = <1500000>;
         };
 
         button-down {
             label = "Volume Down";
-            linux,code = <KEY_VOLUMEDOWN>;
+            freax,code = <KEY_VOLUMEDOWN>;
             press-threshold-microvolt = <1000000>;
         };
 
         button-enter {
             label = "Enter";
-            linux,code = <KEY_ENTER>;
+            freax,code = <KEY_ENTER>;
             press-threshold-microvolt = <500000>;
         };
     };

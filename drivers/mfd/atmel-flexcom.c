@@ -7,15 +7,15 @@
  * Author: Cyrille Pitchen <cyrille.pitchen@atmel.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/clk.h>
 #include <dt-bindings/mfd/atmel-flexcom.h>
 
 /* I/O register offsets */

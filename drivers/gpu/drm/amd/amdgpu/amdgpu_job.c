@@ -21,9 +21,9 @@
  *
  *
  */
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
 
 #include <drm/drm_drv.h>
 

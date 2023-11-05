@@ -32,7 +32,7 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 #include "mthca_dev.h"
 

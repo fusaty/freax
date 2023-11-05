@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * pcitest.h - PCI test uapi defines
  *
@@ -7,8 +7,8 @@
  *
  */
 
-#ifndef __UAPI_LINUX_PCITEST_H
-#define __UAPI_LINUX_PCITEST_H
+#ifndef __UAPI_freax_PCITEST_H
+#define __UAPI_freax_PCITEST_H
 
 #define PCITEST_BAR		_IO('P', 0x1)
 #define PCITEST_LEGACY_IRQ	_IO('P', 0x2)
@@ -28,4 +28,4 @@ struct pci_endpoint_test_xfer_param {
 	unsigned char flags;
 };
 
-#endif /* __UAPI_LINUX_PCITEST_H */
+#endif /* __UAPI_freax_PCITEST_H */

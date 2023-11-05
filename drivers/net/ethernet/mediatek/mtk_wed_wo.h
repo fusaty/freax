@@ -4,8 +4,8 @@
 #ifndef __MTK_WED_WO_H
 #define __MTK_WED_WO_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 
 struct mtk_wed_hw;
 

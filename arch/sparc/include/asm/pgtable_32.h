@@ -9,7 +9,7 @@
  *  Copyright (C) 1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #define PMD_SHIFT		18
 #define PMD_SIZE        	(1UL << PMD_SHIFT)
@@ -24,8 +24,8 @@
 #ifndef __ASSEMBLY__
 #include <asm-generic/pgtable-nopud.h>
 
-#include <linux/spinlock.h>
-#include <linux/mm_types.h>
+#include <freax/spinlock.h>
+#include <freax/mm_types.h>
 #include <asm/types.h>
 #include <asm/pgtsrmmu.h>
 #include <asm/vaddrs.h>

@@ -4,9 +4,9 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/gfp.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/gfp.h>
 
 #include "iwl-prph.h"
 #include "iwl-io.h"

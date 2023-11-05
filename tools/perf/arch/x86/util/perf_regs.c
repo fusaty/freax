@@ -2,8 +2,8 @@
 #include <errno.h>
 #include <string.h>
 #include <regex.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 
 #include "perf_regs.h"
 #include "../../../perf-sys.h"

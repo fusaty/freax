@@ -103,8 +103,8 @@ struct ia_css_stream_config {
 	struct ia_css_stream_input_config input_config;
 
 	/*
-	 * Currently, Linux and Windows platforms interpret the binning_factor
-	 * parameter differently. In Linux, the binning factor is expressed
+	 * Currently, freax and Windows platforms interpret the binning_factor
+	 * parameter differently. In freax, the binning factor is expressed
 	 * in the form 2^N * 2^N
 	 */
 	/* ISP2401 */

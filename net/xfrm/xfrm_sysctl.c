@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sysctl.h>
-#include <linux/slab.h>
+#include <freax/sysctl.h>
+#include <freax/slab.h>
 #include <net/net_namespace.h>
 #include <net/xfrm.h>
 

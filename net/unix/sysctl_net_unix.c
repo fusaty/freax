@@ -5,9 +5,9 @@
  * Authors:	Mike Shaver.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
 
 #include <net/af_unix.h>
 

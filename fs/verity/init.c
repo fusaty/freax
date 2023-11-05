@@ -7,7 +7,7 @@
 
 #include "fsverity_private.h"
 
-#include <linux/ratelimit.h>
+#include <freax/ratelimit.h>
 
 #ifdef CONFIG_SYSCTL
 static struct ctl_table_header *fsverity_sysctl_header;

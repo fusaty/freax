@@ -10,21 +10,21 @@
  * Dynamic DMA mapping support, pSeries-specific parts, both SMP and LPAR.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/crash_dump.h>
-#include <linux/memory.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/iommu.h>
-#include <linux/rculist.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/crash_dump.h>
+#include <freax/memory.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/iommu.h>
+#include <freax/rculist.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
@@ -554,8 +554,8 @@ static void iommu_table_setparms(struct pci_controller *phb,
 	}
 
 	node = phb->dn;
-	basep = of_get_property(node, "linux,tce-base", NULL);
-	sizep = of_get_property(node, "linux,tce-size", NULL);
+	basep = of_get_property(node, "freax,tce-base", NULL);
+	sizep = of_get_property(node, "freax,tce-size", NULL);
 	if (basep == NULL || sizep == NULL) {
 		printk(KERN_ERR "PCI_DMA: iommu_table_setparms: %pOF has "
 				"missing tce entries !\n", dn);
@@ -1681,7 +1681,7 @@ static struct notifier_block iommu_reconfig_nb = {
 /* These are called very early. */
 void __init iommu_init_early_pSeries(void)
 {
-	if (of_chosen && of_get_property(of_chosen, "linux,iommu-off", NULL))
+	if (of_chosen && of_get_property(of_chosen, "freax,iommu-off", NULL))
 		return;
 
 	if (firmware_has_feature(FW_FEATURE_LPAR)) {

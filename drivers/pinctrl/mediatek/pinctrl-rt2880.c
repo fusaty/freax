@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 #include "pinctrl-mtmips.h"
 
 #define RT2880_GPIO_MODE_I2C		BIT(0)

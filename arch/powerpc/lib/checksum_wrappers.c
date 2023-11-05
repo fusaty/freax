@@ -5,11 +5,11 @@
  *
  * Author: Anton Blanchard <anton@au.ibm.com>
  */
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/export.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include <asm/checksum.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 __wsum csum_and_copy_from_user(const void __user *src, void *dst,
 			       int len)

@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 /*
  * Copy data from IO memory space to "real" memory space.

@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Apple FPWM controller
 
 maintainers:
-  - asahi@lists.linux.dev
+  - asahi@lists.freax.dev
   - Sasha Finkelstein <fnkl.kernel@gmail.com>
 
 description: PWM controller used for keyboard backlight on ARM Macs

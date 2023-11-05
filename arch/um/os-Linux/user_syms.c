@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #define __NO_FORTIFY
-#include <linux/types.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/module.h>
 
 /*
  * This file exports some critical string functions and compiler

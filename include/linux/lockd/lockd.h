@@ -1,31 +1,31 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/lockd.h
+ * freax/include/freax/lockd/lockd.h
  *
  * General-purpose lockd include file.
  *
  * Copyright (C) 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_LOCKD_LOCKD_H
-#define LINUX_LOCKD_LOCKD_H
+#ifndef freax_LOCKD_LOCKD_H
+#define freax_LOCKD_LOCKD_H
 
 /* XXX: a lot of this should really be under fs/lockd. */
 
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 #include <net/ipv6.h>
-#include <linux/fs.h>
-#include <linux/kref.h>
-#include <linux/refcount.h>
-#include <linux/utsname.h>
-#include <linux/lockd/bind.h>
-#include <linux/lockd/xdr.h>
+#include <freax/fs.h>
+#include <freax/kref.h>
+#include <freax/refcount.h>
+#include <freax/utsname.h>
+#include <freax/lockd/bind.h>
+#include <freax/lockd/xdr.h>
 #ifdef CONFIG_LOCKD_V4
-#include <linux/lockd/xdr4.h>
+#include <freax/lockd/xdr4.h>
 #endif
-#include <linux/lockd/debug.h>
-#include <linux/sunrpc/svc.h>
+#include <freax/lockd/debug.h>
+#include <freax/sunrpc/svc.h>
 
 /*
  * Version string
@@ -385,4 +385,4 @@ static inline int nlm_compare_locks(const struct file_lock *fl1,
 
 extern const struct lock_manager_operations nlmsvc_lock_operations;
 
-#endif /* LINUX_LOCKD_LOCKD_H */
+#endif /* freax_LOCKD_LOCKD_H */

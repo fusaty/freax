@@ -93,4 +93,4 @@ Usage:
 I2C ATR functions and data structures
 -------------------------------------
 
-.. kernel-doc:: include/linux/i2c-atr.h
+.. kernel-doc:: include/freax/i2c-atr.h

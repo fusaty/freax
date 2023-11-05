@@ -5,13 +5,13 @@
  * Copyright (C) 2009/2010 Stefani Seibold <stefani@seibold.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/kfifo.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/log2.h>
+#include <freax/uaccess.h>
+#include <freax/kfifo.h>
 
 /*
  * internal helper to calculate the unused elements in a fifo

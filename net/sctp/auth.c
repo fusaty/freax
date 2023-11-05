@@ -6,16 +6,16 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *   Vlad Yasevich     <vladislav.yasevich@hp.com>
  */
 
 #include <crypto/hash.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/auth.h>
 

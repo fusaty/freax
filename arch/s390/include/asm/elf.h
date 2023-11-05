@@ -157,7 +157,7 @@ enum {
  * ELF register definitions..
  */
 
-#include <linux/compat.h>
+#include <freax/compat.h>
 
 #include <asm/ptrace.h>
 #include <asm/syscall.h>
@@ -169,7 +169,7 @@ typedef s390_regs elf_gregset_t;
 typedef s390_fp_regs compat_elf_fpregset_t;
 typedef s390_compat_regs compat_elf_gregset_t;
 
-#include <linux/sched/mm.h>	/* for task_struct */
+#include <freax/sched/mm.h>	/* for task_struct */
 #include <asm/mmu_context.h>
 
 /*
@@ -251,15 +251,15 @@ extern char elf_platform[];
 #ifndef CONFIG_COMPAT
 #define SET_PERSONALITY(ex) \
 do {								\
-	set_personality(PER_LINUX |				\
+	set_personality(PER_freax |				\
 		(current->personality & (~PER_MASK)));		\
 	current->thread.sys_call_table = sys_call_table;	\
 } while (0)
 #else /* CONFIG_COMPAT */
 #define SET_PERSONALITY(ex)					\
 do {								\
-	if (personality(current->personality) != PER_LINUX32)	\
-		set_personality(PER_LINUX |			\
+	if (personality(current->personality) != PER_freax32)	\
+		set_personality(PER_freax |			\
 			(current->personality & ~PER_MASK));	\
 	if ((ex).e_ident[EI_CLASS] == ELFCLASS32) {		\
 		set_thread_flag(TIF_31BIT);			\
@@ -294,9 +294,9 @@ do {									\
 		    (unsigned long)current->mm->context.vdso_base);	\
 } while (0)
 
-struct linux_binprm;
+struct freax_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-int arch_setup_additional_pages(struct linux_binprm *, int);
+int arch_setup_additional_pages(struct freax_binprm *, int);
 
 #endif

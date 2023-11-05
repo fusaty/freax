@@ -7,7 +7,7 @@
  *  Amir Hanania <amir.hanania@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
@@ -15,14 +15,14 @@
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include "t7xx_dpmaif.h"
 #include "t7xx_hif_dpmaif.h"

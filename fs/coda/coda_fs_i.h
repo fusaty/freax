@@ -6,13 +6,13 @@
  *
  */
 
-#ifndef _LINUX_CODA_FS_I
-#define _LINUX_CODA_FS_I
+#ifndef _freax_CODA_FS_I
+#define _freax_CODA_FS_I
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/coda.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/coda.h>
 
 /*
  * coda fs inode data

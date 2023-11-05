@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fs.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/moduleparam.h>
+#include <freax/time.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/fs.h>
 #include <sound/core.h>
 
 #ifdef CONFIG_SND_DEBUG
@@ -94,7 +94,7 @@ EXPORT_SYMBOL_GPL(__snd_printk);
 #endif
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <freax/pci.h>
 /**
  * snd_pci_quirk_lookup_id - look up a PCI SSID quirk list
  * @vendor: PCI SSV id

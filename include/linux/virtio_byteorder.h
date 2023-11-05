@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VIRTIO_BYTEORDER_H
-#define _LINUX_VIRTIO_BYTEORDER_H
-#include <linux/types.h>
-#include <uapi/linux/virtio_types.h>
+#ifndef _freax_VIRTIO_BYTEORDER_H
+#define _freax_VIRTIO_BYTEORDER_H
+#include <freax/types.h>
+#include <uapi/freax/virtio_types.h>
 
 static inline bool virtio_legacy_is_little_endian(void)
 {
@@ -61,4 +61,4 @@ static inline __virtio64 __cpu_to_virtio64(bool little_endian, u64 val)
 		return (__force __virtio64)cpu_to_be64(val);
 }
 
-#endif /* _LINUX_VIRTIO_BYTEORDER */
+#endif /* _freax_VIRTIO_BYTEORDER */

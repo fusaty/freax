@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/elf.h>
+#include <freax/string.h>
+#include <freax/elf.h>
 #include <asm/boot_data.h>
 #include <asm/sections.h>
 #include <asm/maccess.h>
@@ -68,7 +68,7 @@ static void setup_lpp(void)
 #ifdef CONFIG_KERNEL_UNCOMPRESSED
 unsigned long mem_safe_offset(void)
 {
-	return vmlinux.default_lma + vmlinux.image_size + vmlinux.bss_size;
+	return vmfreax.default_lma + vmfreax.image_size + vmfreax.bss_size;
 }
 #endif
 
@@ -90,12 +90,12 @@ static void rescue_initrd(unsigned long min, unsigned long max)
 
 static void copy_bootdata(void)
 {
-	if (__boot_data_end - __boot_data_start != vmlinux.bootdata_size)
+	if (__boot_data_end - __boot_data_start != vmfreax.bootdata_size)
 		error(".boot.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_off, __boot_data_start, vmlinux.bootdata_size);
-	if (__boot_data_preserved_end - __boot_data_preserved_start != vmlinux.bootdata_preserved_size)
+	memcpy((void *)vmfreax.bootdata_off, __boot_data_start, vmfreax.bootdata_size);
+	if (__boot_data_preserved_end - __boot_data_preserved_start != vmfreax.bootdata_preserved_size)
 		error(".boot.preserved.data section size mismatch");
-	memcpy((void *)vmlinux.bootdata_preserved_off, __boot_data_preserved_start, vmlinux.bootdata_preserved_size);
+	memcpy((void *)vmfreax.bootdata_preserved_off, __boot_data_preserved_start, vmfreax.bootdata_preserved_size);
 }
 
 static void handle_relocs(unsigned long offset)
@@ -105,9 +105,9 @@ static void handle_relocs(unsigned long offset)
 	Elf64_Addr loc, val;
 	Elf64_Sym *dynsym;
 
-	rela_start = (Elf64_Rela *) vmlinux.rela_dyn_start;
-	rela_end = (Elf64_Rela *) vmlinux.rela_dyn_end;
-	dynsym = (Elf64_Sym *) vmlinux.dynsym_start;
+	rela_start = (Elf64_Rela *) vmfreax.rela_dyn_start;
+	rela_end = (Elf64_Rela *) vmfreax.rela_dyn_end;
+	dynsym = (Elf64_Sym *) vmfreax.dynsym_start;
 	for (rela = rela_start; rela < rela_end; rela++) {
 		loc = rela->r_offset + offset;
 		val = rela->r_addend;
@@ -234,11 +234,11 @@ static unsigned long setup_kernel_memory_layout(void)
 }
 
 /*
- * This function clears the BSS section of the decompressed Linux kernel and NOT the decompressor's.
+ * This function clears the BSS section of the decompressed freax kernel and NOT the decompressor's.
  */
-static void clear_bss_section(unsigned long vmlinux_lma)
+static void clear_bss_section(unsigned long vmfreax_lma)
 {
-	memset((void *)vmlinux_lma + vmlinux.image_size, 0, vmlinux.bss_size);
+	memset((void *)vmfreax_lma + vmfreax.image_size, 0, vmfreax.bss_size);
 }
 
 /*
@@ -255,30 +255,30 @@ static void setup_vmalloc_size(void)
 	vmalloc_size = max(size, vmalloc_size);
 }
 
-static void offset_vmlinux_info(unsigned long offset)
+static void offset_vmfreax_info(unsigned long offset)
 {
-	*(unsigned long *)(&vmlinux.entry) += offset;
-	vmlinux.bootdata_off += offset;
-	vmlinux.bootdata_preserved_off += offset;
-	vmlinux.rela_dyn_start += offset;
-	vmlinux.rela_dyn_end += offset;
-	vmlinux.dynsym_start += offset;
-	vmlinux.init_mm_off += offset;
-	vmlinux.swapper_pg_dir_off += offset;
-	vmlinux.invalid_pg_dir_off += offset;
+	*(unsigned long *)(&vmfreax.entry) += offset;
+	vmfreax.bootdata_off += offset;
+	vmfreax.bootdata_preserved_off += offset;
+	vmfreax.rela_dyn_start += offset;
+	vmfreax.rela_dyn_end += offset;
+	vmfreax.dynsym_start += offset;
+	vmfreax.init_mm_off += offset;
+	vmfreax.swapper_pg_dir_off += offset;
+	vmfreax.invalid_pg_dir_off += offset;
 #ifdef CONFIG_KASAN
-	vmlinux.kasan_early_shadow_page_off += offset;
-	vmlinux.kasan_early_shadow_pte_off += offset;
-	vmlinux.kasan_early_shadow_pmd_off += offset;
-	vmlinux.kasan_early_shadow_pud_off += offset;
-	vmlinux.kasan_early_shadow_p4d_off += offset;
+	vmfreax.kasan_early_shadow_page_off += offset;
+	vmfreax.kasan_early_shadow_pte_off += offset;
+	vmfreax.kasan_early_shadow_pmd_off += offset;
+	vmfreax.kasan_early_shadow_pud_off += offset;
+	vmfreax.kasan_early_shadow_p4d_off += offset;
 #endif
 }
 
 void startup_kernel(void)
 {
 	unsigned long max_physmem_end;
-	unsigned long vmlinux_lma = 0;
+	unsigned long vmfreax_lma = 0;
 	unsigned long amode31_lma = 0;
 	unsigned long asce_limit;
 	unsigned long safe_addr;
@@ -318,32 +318,32 @@ void startup_kernel(void)
 	rescue_initrd(safe_addr, ident_map_size);
 
 	if (kaslr_enabled()) {
-		vmlinux_lma = randomize_within_range(vmlinux.image_size + vmlinux.bss_size,
-						     THREAD_SIZE, vmlinux.default_lma,
+		vmfreax_lma = randomize_within_range(vmfreax.image_size + vmfreax.bss_size,
+						     THREAD_SIZE, vmfreax.default_lma,
 						     ident_map_size);
-		if (vmlinux_lma) {
-			__kaslr_offset = vmlinux_lma - vmlinux.default_lma;
-			offset_vmlinux_info(__kaslr_offset);
+		if (vmfreax_lma) {
+			__kaslr_offset = vmfreax_lma - vmfreax.default_lma;
+			offset_vmfreax_info(__kaslr_offset);
 		}
 	}
-	vmlinux_lma = vmlinux_lma ?: vmlinux.default_lma;
-	physmem_reserve(RR_VMLINUX, vmlinux_lma, vmlinux.image_size + vmlinux.bss_size);
+	vmfreax_lma = vmfreax_lma ?: vmfreax.default_lma;
+	physmem_reserve(RR_VMfreax, vmfreax_lma, vmfreax.image_size + vmfreax.bss_size);
 
 	if (!IS_ENABLED(CONFIG_KERNEL_UNCOMPRESSED)) {
 		img = decompress_kernel();
-		memmove((void *)vmlinux_lma, img, vmlinux.image_size);
+		memmove((void *)vmfreax_lma, img, vmfreax.image_size);
 	} else if (__kaslr_offset) {
-		img = (void *)vmlinux.default_lma;
-		memmove((void *)vmlinux_lma, img, vmlinux.image_size);
-		memset(img, 0, vmlinux.image_size);
+		img = (void *)vmfreax.default_lma;
+		memmove((void *)vmfreax_lma, img, vmfreax.image_size);
+		memset(img, 0, vmfreax.image_size);
 	}
 
-	/* vmlinux decompression is done, shrink reserved low memory */
+	/* vmfreax decompression is done, shrink reserved low memory */
 	physmem_reserve(RR_DECOMPRESSOR, 0, (unsigned long)_decompressor_end);
 	if (kaslr_enabled())
-		amode31_lma = randomize_within_range(vmlinux.amode31_size, PAGE_SIZE, 0, SZ_2G);
-	amode31_lma = amode31_lma ?: vmlinux.default_lma - vmlinux.amode31_size;
-	physmem_reserve(RR_AMODE31, amode31_lma, vmlinux.amode31_size);
+		amode31_lma = randomize_within_range(vmfreax.amode31_size, PAGE_SIZE, 0, SZ_2G);
+	amode31_lma = amode31_lma ?: vmfreax.default_lma - vmfreax.amode31_size;
+	physmem_reserve(RR_AMODE31, amode31_lma, vmfreax.amode31_size);
 
 	/*
 	 * The order of the following operations is important:
@@ -358,7 +358,7 @@ void startup_kernel(void)
 	 * - copy_bootdata() must follow setup_vmem() to propagate changes to
 	 *   bootdata made by setup_vmem()
 	 */
-	clear_bss_section(vmlinux_lma);
+	clear_bss_section(vmfreax_lma);
 	handle_relocs(__kaslr_offset);
 	setup_vmem(asce_limit);
 	copy_bootdata();
@@ -372,7 +372,7 @@ void startup_kernel(void)
 	/*
 	 * Jump to the decompressed kernel entry point and switch DAT mode on.
 	 */
-	psw.addr = vmlinux.entry;
+	psw.addr = vmfreax.entry;
 	psw.mask = PSW_KERNEL_BITS;
 	__load_psw(psw);
 }

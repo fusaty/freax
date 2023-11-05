@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (c) 1999-2002 Vojtech Pavlik
  *
@@ -14,7 +14,7 @@
 #include <sys/time.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #endif
 
 #include "input-event-codes.h"

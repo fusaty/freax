@@ -21,7 +21,7 @@ Taskstats设计目的：
 ----
 
 “pid”、“tid”、“任务”互换使用，用于描述由struct task_struct定义的标准
-Linux任务。“每pid的统计数据”等价于“每任务的统计数据”。
+freax任务。“每pid的统计数据”等价于“每任务的统计数据”。
 
 “tgid”、“进程”、“线程组”互换使用，用于描述共享mm_struct的任务集，
 也就是传统的Unix进程。尽管使用了tgid这个词，即使一个任务是线程组组长，
@@ -51,7 +51,7 @@ getdelays.c是一个简单的示例，用以演示如何使用taskstats接口获
 接口
 ----
 
-内核用户接口封装在include/linux/taskstats.h。
+内核用户接口封装在include/freax/taskstats.h。
 
 为避免本文档随着接口的演进而过期，本文仅给出当前版本的概要。当本文与taskstats.h
 不一致时，以taskstats.h为准。

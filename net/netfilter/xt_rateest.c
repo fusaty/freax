@@ -2,12 +2,12 @@
 /*
  * (C) 2007 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/gen_stats.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/gen_stats.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_rateest.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_rateest.h>
 #include <net/netfilter/xt_rateest.h>
 
 

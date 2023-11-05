@@ -48,8 +48,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/zutil.h>
+#include <freax/module.h>
+#include <freax/zutil.h>
 #include "defutil.h"
 
 /* architecture-specific bits */

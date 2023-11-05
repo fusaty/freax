@@ -2,7 +2,7 @@
 #ifndef __PERF_ARM_FRAME_POINTER_UNWIND_SUPPORT_H
 #define __PERF_ARM_FRAME_POINTER_UNWIND_SUPPORT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct perf_sample;
 struct thread;

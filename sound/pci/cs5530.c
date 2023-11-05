@@ -27,10 +27,10 @@
  *	same manner.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/initval.h>

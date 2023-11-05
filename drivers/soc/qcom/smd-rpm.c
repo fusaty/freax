@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of_platform.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
 
-#include <linux/rpmsg.h>
-#include <linux/soc/qcom/smd-rpm.h>
+#include <freax/rpmsg.h>
+#include <freax/soc/qcom/smd-rpm.h>
 
 #define RPM_REQUEST_TIMEOUT     (5 * HZ)
 

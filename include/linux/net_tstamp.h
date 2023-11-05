@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_NET_TIMESTAMPING_H_
-#define _LINUX_NET_TIMESTAMPING_H_
+#ifndef _freax_NET_TIMESTAMPING_H_
+#define _freax_NET_TIMESTAMPING_H_
 
-#include <uapi/linux/net_tstamp.h>
+#include <uapi/freax/net_tstamp.h>
 
 enum hwtstamp_source {
 	HWTSTAMP_SOURCE_NETDEV,
@@ -60,4 +60,4 @@ static inline bool kernel_hwtstamp_config_changed(const struct kernel_hwtstamp_c
 	       a->rx_filter != b->rx_filter;
 }
 
-#endif /* _LINUX_NET_TIMESTAMPING_H_ */
+#endif /* _freax_NET_TIMESTAMPING_H_ */

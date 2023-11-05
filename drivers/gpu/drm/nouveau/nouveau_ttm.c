@@ -23,7 +23,7 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/limits.h>
+#include <freax/limits.h>
 
 #include <drm/ttm/ttm_range_manager.h>
 #include <drm/drm_cache.h>

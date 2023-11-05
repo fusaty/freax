@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,20 +6,20 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <freax/cpu_rmap.h>
 #endif /* CONFIG_RFS_ACCEL */
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/numa.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/numa.h>
+#include <freax/pci.h>
+#include <freax/utsname.h>
+#include <freax/version.h>
+#include <freax/vmalloc.h>
 #include <net/ip.h>
 
 #include "ena_netdev.h"
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 #include "ena_pci_id_tbl.h"
 
 MODULE_AUTHOR("Amazon.com, Inc. or its affiliates");
@@ -3271,8 +3271,8 @@ static void ena_config_host_info(struct ena_com_dev *ena_dev, struct pci_dev *pd
 	host_info = ena_dev->host_attr.host_info;
 
 	host_info->bdf = pci_dev_id(pdev);
-	host_info->os_type = ENA_ADMIN_OS_LINUX;
-	host_info->kernel_ver = LINUX_VERSION_CODE;
+	host_info->os_type = ENA_ADMIN_OS_freax;
+	host_info->kernel_ver = freax_VERSION_CODE;
 	strscpy(host_info->kernel_ver_str, utsname()->version,
 		sizeof(host_info->kernel_ver_str) - 1);
 	host_info->os_dist = 0;

@@ -5,11 +5,11 @@
  * Copyright (C) 2013 Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/spi/spi.h>
+#include <freax/delay.h>
 
 #include "fbtft.h"
 

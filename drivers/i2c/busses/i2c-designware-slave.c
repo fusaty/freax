@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2016 Synopsys Inc.
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include "i2c-designware-core.h"
 

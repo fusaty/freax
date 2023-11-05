@@ -16,27 +16,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/property.h>
-#include <linux/pm_opp.h>
-#include <linux/scpi_protocol.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/spinlock.h>
+#include <freax/bitmap.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/property.h>
+#include <freax/pm_opp.h>
+#include <freax/scpi_protocol.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/spinlock.h>
 
 #define CMD_ID_MASK		GENMASK(6, 0)
 #define CMD_TOKEN_ID_MASK	GENMASK(15, 8)
@@ -329,7 +329,7 @@ struct dev_pstate_set {
 
 static struct scpi_drvinfo *scpi_info;
 
-static int scpi_linux_errmap[SCPI_ERR_MAX] = {
+static int scpi_freax_errmap[SCPI_ERR_MAX] = {
 	/* better than switch case as long as return value is continuous */
 	0, /* SCPI_SUCCESS */
 	-EINVAL, /* SCPI_ERR_PARAM */
@@ -346,10 +346,10 @@ static int scpi_linux_errmap[SCPI_ERR_MAX] = {
 	-EBUSY, /* SCPI_ERR_BUSY */
 };
 
-static inline int scpi_to_linux_errno(int errno)
+static inline int scpi_to_freax_errno(int errno)
 {
 	if (errno >= SCPI_SUCCESS && errno < SCPI_ERR_MAX)
-		return scpi_linux_errmap[errno];
+		return scpi_freax_errmap[errno];
 	return -EIO;
 }
 
@@ -522,8 +522,8 @@ out:
 		scpi_process_cmd(scpi_chan, msg->cmd);
 
 	put_scpi_xfer(msg, scpi_chan);
-	/* SCPI error codes > 0, translate them to Linux scale*/
-	return ret > 0 ? scpi_to_linux_errno(ret) : ret;
+	/* SCPI error codes > 0, translate them to freax scale*/
+	return ret > 0 ? scpi_to_freax_errno(ret) : ret;
 }
 
 static u32 scpi_get_version(void)

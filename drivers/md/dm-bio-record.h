@@ -8,8 +8,8 @@
 #ifndef DM_BIO_RECORD_H
 #define DM_BIO_RECORD_H
 
-#include <linux/bio.h>
-#include <linux/blk-integrity.h>
+#include <freax/bio.h>
+#include <freax/blk-integrity.h>
 
 /*
  * There are lots of mutable fields in the bio struct that get

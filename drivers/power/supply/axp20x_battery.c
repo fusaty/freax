@@ -5,7 +5,7 @@
  *	Quentin Schulz <quentin.schulz@free-electrons.com>
  *
  * This driver is based on a previous upstreaming attempt by:
- *	Bruno Prémont <bonbons@linux-vserver.org>
+ *	Bruno Prémont <bonbons@freax-vserver.org>
  *
  * This file is subject to the terms and conditions of the GNU General
  * Public License. See the file "COPYING" in the main directory of this
@@ -17,19 +17,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/consumer.h>
-#include <linux/mfd/axp20x.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/consumer.h>
+#include <freax/mfd/axp20x.h>
 
 #define AXP20X_PWR_STATUS_BAT_CHARGING	BIT(2)
 

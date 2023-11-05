@@ -1,6 +1,6 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd */
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 #include "vhca_event.h"
 #include "priv.h"
 #include "sf.h"

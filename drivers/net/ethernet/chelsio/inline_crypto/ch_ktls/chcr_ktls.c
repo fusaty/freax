@@ -3,12 +3,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/ip.h>
+#include <freax/skbuff.h>
+#include <freax/module.h>
+#include <freax/highmem.h>
+#include <freax/ip.h>
 #include <net/ipv6.h>
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <crypto/aes.h>
 #include "chcr_ktls.h"
 

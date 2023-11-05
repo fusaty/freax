@@ -21,9 +21,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/module.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_panel.h>

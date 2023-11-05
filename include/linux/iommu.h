@@ -4,17 +4,17 @@
  * Author: Joerg Roedel <joerg.roedel@amd.com>
  */
 
-#ifndef __LINUX_IOMMU_H
-#define __LINUX_IOMMU_H
+#ifndef __freax_IOMMU_H
+#define __freax_IOMMU_H
 
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/iova_bitmap.h>
-#include <uapi/linux/iommu.h>
+#include <freax/scatterlist.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/iova_bitmap.h>
+#include <uapi/freax/iommu.h>
 
 #define IOMMU_READ	(1 << 0)
 #define IOMMU_WRITE	(1 << 1)
@@ -271,7 +271,7 @@ struct iommu_dirty_ops {
  * @uptr: Pointer to the user buffer for copy_from_user()
  * @len: The length of the user buffer in bytes
  *
- * A user space data is an uAPI that is defined in include/uapi/linux/iommufd.h
+ * A user space data is an uAPI that is defined in include/uapi/freax/iommufd.h
  * @type, @uptr and @len should be just copied from an iommufd core uAPI struct.
  */
 struct iommu_user_data {
@@ -283,13 +283,13 @@ struct iommu_user_data {
 /**
  * __iommu_copy_struct_from_user - Copy iommu driver specific user space data
  * @dst_data: Pointer to an iommu driver specific user data that is defined in
- *            include/uapi/linux/iommufd.h
+ *            include/uapi/freax/iommufd.h
  * @src_data: Pointer to a struct iommu_user_data for user space data info
  * @data_type: The data type of the @dst_data. Must match with @src_data.type
  * @data_len: Length of current user data structure, i.e. sizeof(struct _dst)
  * @min_len: Initial length of user data structure for backward compatibility.
  *           This should be offsetofend using the last member in the user data
- *           struct that was initially added to include/uapi/linux/iommufd.h
+ *           struct that was initially added to include/uapi/freax/iommufd.h
  */
 static inline int __iommu_copy_struct_from_user(
 	void *dst_data, const struct iommu_user_data *src_data,
@@ -308,7 +308,7 @@ static inline int __iommu_copy_struct_from_user(
 /**
  * iommu_copy_struct_from_user - Copy iommu driver specific user space data
  * @kdst: Pointer to an iommu driver specific user data that is defined in
- *        include/uapi/linux/iommufd.h
+ *        include/uapi/freax/iommufd.h
  * @user_data: Pointer to a struct iommu_user_data for user space data info
  * @data_type: The data type of the @kdst. Must match with @user_data->type
  * @min_last: The last memember of the data structure @kdst points in the
@@ -326,12 +326,12 @@ static inline int __iommu_copy_struct_from_user(
  * @hw_info: report iommu hardware information. The data buffer returned by this
  *           op is allocated in the iommu driver and freed by the caller after
  *           use. The information type is one of enum iommu_hw_info_type defined
- *           in include/uapi/linux/iommufd.h.
+ *           in include/uapi/freax/iommufd.h.
  * @domain_alloc: allocate and return an iommu domain if success. Otherwise
  *                NULL is returned. The domain is not fully initialized until
  *                the caller iommu_domain_alloc() returns.
  * @domain_alloc_user: Allocate an iommu domain corresponding to the input
- *                     parameters as defined in include/uapi/linux/iommufd.h.
+ *                     parameters as defined in include/uapi/freax/iommufd.h.
  *                     Unlike @domain_alloc, it is called only by IOMMUFD and
  *                     must fully initialize the new domain before return.
  *                     Upon success, if the @user_data is valid and the @parent
@@ -1268,7 +1268,7 @@ static inline void iommu_debugfs_setup(void) {}
 #endif
 
 #ifdef CONFIG_IOMMU_DMA
-#include <linux/msi.h>
+#include <freax/msi.h>
 
 /* Setup call for arch DMA mapping code */
 void iommu_setup_dma_ops(struct device *dev, u64 dma_base, u64 dma_limit);
@@ -1358,4 +1358,4 @@ static inline bool mm_valid_pasid(struct mm_struct *mm) { return false; }
 static inline void mm_pasid_drop(struct mm_struct *mm) {}
 #endif /* CONFIG_IOMMU_SVA */
 
-#endif /* __LINUX_IOMMU_H */
+#endif /* __freax_IOMMU_H */

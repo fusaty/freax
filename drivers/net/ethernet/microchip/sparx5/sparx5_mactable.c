@@ -5,8 +5,8 @@
  */
 
 #include <net/switchdev.h>
-#include <linux/if_bridge.h>
-#include <linux/iopoll.h>
+#include <freax/if_bridge.h>
+#include <freax/iopoll.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

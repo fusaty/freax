@@ -4,14 +4,14 @@
  *
  * VFIO container (/dev/vfio/vfio)
  */
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/iommu.h>
-#include <linux/miscdevice.h>
-#include <linux/vfio.h>
-#include <uapi/linux/vfio.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/capability.h>
+#include <freax/iommu.h>
+#include <freax/miscdevice.h>
+#include <freax/vfio.h>
+#include <uapi/freax/vfio.h>
 
 #include "vfio.h"
 

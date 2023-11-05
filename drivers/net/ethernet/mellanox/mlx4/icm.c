@@ -31,12 +31,12 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
 
-#include <linux/mlx4/cmd.h>
+#include <freax/mlx4/cmd.h>
 
 #include "mlx4.h"
 #include "icm.h"

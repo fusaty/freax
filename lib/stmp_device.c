@@ -8,12 +8,12 @@
  * Copyright (C) 2011 Wolfram Sang, Pengutronix e.K.
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/stmp_device.h>
+#include <freax/io.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/stmp_device.h>
 
 #define STMP_MODULE_CLKGATE	(1 << 30)
 #define STMP_MODULE_SFTRST	(1 << 31)

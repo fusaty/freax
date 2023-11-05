@@ -3,7 +3,7 @@
  *      sd.c Copyright (C) 1992 Drew Eckhardt
  *           Copyright (C) 1993, 1994, 1995, 1999 Eric Youngdale
  *
- *      Linux scsi disk driver
+ *      freax scsi disk driver
  *              Initial versions: Drew Eckhardt
  *              Subsequent revisions: Eric Youngdale
  *	Modification history:
@@ -33,29 +33,29 @@
  *	than the level indicated above to trigger output.	
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/blk-pm.h>
-#include <linux/delay.h>
-#include <linux/major.h>
-#include <linux/mutex.h>
-#include <linux/string_helpers.h>
-#include <linux/slab.h>
-#include <linux/sed-opal.h>
-#include <linux/pm_runtime.h>
-#include <linux/pr.h>
-#include <linux/t10-pi.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/bio.h>
+#include <freax/hdreg.h>
+#include <freax/errno.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/blkpg.h>
+#include <freax/blk-pm.h>
+#include <freax/delay.h>
+#include <freax/major.h>
+#include <freax/mutex.h>
+#include <freax/string_helpers.h>
+#include <freax/slab.h>
+#include <freax/sed-opal.h>
+#include <freax/pm_runtime.h>
+#include <freax/pr.h>
+#include <freax/t10-pi.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

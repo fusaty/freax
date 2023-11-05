@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SEQ_BUF_H
-#define _LINUX_SEQ_BUF_H
+#ifndef _freax_SEQ_BUF_H
+#define _freax_SEQ_BUF_H
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 /*
  * Trace sequences are used to allow a function to call several other functions
@@ -171,4 +171,4 @@ seq_buf_bprintf(struct seq_buf *s, const char *fmt, const u32 *binary);
 
 void seq_buf_do_printk(struct seq_buf *s, const char *lvl);
 
-#endif /* _LINUX_SEQ_BUF_H */
+#endif /* _freax_SEQ_BUF_H */

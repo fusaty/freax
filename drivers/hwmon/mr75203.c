@@ -7,20 +7,20 @@
  * analog IP to enable multiple embedded temperature sensor(TS),
  * voltage monitor(VM) & process detector(PD) modules.
  */
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/hwmon.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/hwmon.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/units.h>
 
 /* PVT Common register */
 #define PVT_IP_CONFIG	0x04

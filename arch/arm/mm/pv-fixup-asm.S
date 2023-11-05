@@ -5,8 +5,8 @@
  * This assembly is required to safely remap the physical address space
  * for Keystone 2
  */
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/pgtable.h>
 #include <asm/asm-offsets.h>
 #include <asm/cp15.h>
 #include <asm/page.h>

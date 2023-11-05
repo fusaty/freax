@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/stringify.h>
+#include <freax/compiler.h>
+#include <freax/stringify.h>
 #include <asm/compiler.h>
 #include <asm/hazards.h>
 

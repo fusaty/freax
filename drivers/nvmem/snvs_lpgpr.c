@@ -4,12 +4,12 @@
  * Copyright (c) 2017 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define IMX6Q_SNVS_HPLR		0x00
 #define IMX6Q_SNVS_LPLR		0x34

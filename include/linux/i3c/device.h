@@ -8,12 +8,12 @@
 #ifndef I3C_DEV_H
 #define I3C_DEV_H
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/kconfig.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/kconfig.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
 
 /**
  * enum i3c_error_code - I3C error codes

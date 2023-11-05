@@ -29,7 +29,7 @@
 		button-power {
 			label = "Power Button";
 			gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};

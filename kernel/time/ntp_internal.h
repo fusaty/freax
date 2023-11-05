@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NTP_INTERNAL_H
-#define _LINUX_NTP_INTERNAL_H
+#ifndef _freax_NTP_INTERNAL_H
+#define _freax_NTP_INTERNAL_H
 
 extern void ntp_init(void);
 extern void ntp_clear(void);
@@ -19,4 +19,4 @@ extern void ntp_notify_cmos_timer(void);
 static inline void ntp_notify_cmos_timer(void) { }
 #endif
 
-#endif /* _LINUX_NTP_INTERNAL_H */
+#endif /* _freax_NTP_INTERNAL_H */

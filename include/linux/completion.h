@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_COMPLETION_H
-#define __LINUX_COMPLETION_H
+#ifndef __freax_COMPLETION_H
+#define __freax_COMPLETION_H
 
 /*
  * (C) Copyright 2001 Linus Torvalds
@@ -9,7 +9,7 @@
  * See kernel/sched/completion.c for details.
  */
 
-#include <linux/swait.h>
+#include <freax/swait.h>
 
 /*
  * struct completion - structure used to maintain state for a "completion"

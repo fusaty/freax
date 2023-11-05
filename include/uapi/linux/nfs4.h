@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *  include/linux/nfs4.h
+ *  include/freax/nfs4.h
  *
  *  NFSv4 protocol definitions.
  *
@@ -11,10 +11,10 @@
  *  Andy Adamson   <andros@umich.edu>
  */
 
-#ifndef _UAPI_LINUX_NFS4_H
-#define _UAPI_LINUX_NFS4_H
+#ifndef _UAPI_freax_NFS4_H
+#define _UAPI_freax_NFS4_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define NFS4_BITMAP_SIZE	3
 #define NFS4_VERIFIER_SIZE	8
@@ -178,4 +178,4 @@
  */
 #define NFS4_MAX_BACK_CHANNEL_OPS 2
 
-#endif /* _UAPI_LINUX_NFS4_H */
+#endif /* _UAPI_freax_NFS4_H */

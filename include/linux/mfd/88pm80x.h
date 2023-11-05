@@ -6,13 +6,13 @@
  * Qiao Zhou <zhouqiao@marvell.com>
  */
 
-#ifndef __LINUX_MFD_88PM80X_H
-#define __LINUX_MFD_88PM80X_H
+#ifndef __freax_MFD_88PM80X_H
+#define __freax_MFD_88PM80X_H
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/atomic.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/atomic.h>
 
 enum {
 	CHIP_INVALID = 0,
@@ -367,4 +367,4 @@ static inline int pm80x_dev_resume(struct device *dev)
 
 extern int pm80x_init(struct i2c_client *client);
 extern int pm80x_deinit(void);
-#endif /* __LINUX_MFD_88PM80X_H */
+#endif /* __freax_MFD_88PM80X_H */

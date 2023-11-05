@@ -7,8 +7,8 @@
  * Implemented by fredrik.markstrom@gmail.com and ivarholmqvist@gmail.com
  */
 
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
 
 asm(".global	raw_copy_from_user\n"
 	"   .type raw_copy_from_user, @function\n"

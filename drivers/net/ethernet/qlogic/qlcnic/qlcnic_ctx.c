@@ -180,8 +180,8 @@ int qlcnic_fw_cmd_set_drv_version(struct qlcnic_adapter *adapter, u32 fw_cmd)
 
 	memset(drv_string, 0, sizeof(drv_string));
 	snprintf(drv_string, sizeof(drv_string), "%d"".""%d"".""%d",
-		 _QLCNIC_LINUX_MAJOR, _QLCNIC_LINUX_MINOR,
-		 _QLCNIC_LINUX_SUBVERSION);
+		 _QLCNIC_freax_MAJOR, _QLCNIC_freax_MINOR,
+		 _QLCNIC_freax_SUBVERSION);
 
 	err = qlcnic_alloc_mbx_args(&cmd, adapter, fw_cmd);
 	if (err)

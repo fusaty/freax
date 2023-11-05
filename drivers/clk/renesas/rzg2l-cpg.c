@@ -11,23 +11,23 @@
  * Copyright (C) 2015 Renesas Electronics Corp.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/renesas.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_clock.h>
+#include <freax/pm_domain.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
+#include <freax/units.h>
 
 #include <dt-bindings/clock/renesas-cpg-mssr.h>
 

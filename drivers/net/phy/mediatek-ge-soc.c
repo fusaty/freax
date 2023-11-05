@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/phy.h>
+#include <freax/regmap.h>
 
 #define MTK_GPHY_ID_MT7981			0x03a29461
 #define MTK_GPHY_ID_MT7988			0x03a29481

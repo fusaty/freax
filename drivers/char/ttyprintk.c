@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/char/ttyprintk.c
+ *  freax/drivers/char/ttyprintk.c
  *
  *  Copyright (C) 2010  Samo Pogacnik
  */
@@ -11,12 +11,12 @@
  * of the boot process, for example.
  */
 
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <freax/console.h>
+#include <freax/device.h>
+#include <freax/serial.h>
+#include <freax/tty.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
 
 struct ttyprintk_port {
 	struct tty_port port;

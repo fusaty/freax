@@ -3,8 +3,8 @@
  * Generic return hook for riscv.
  */
 
-#include <linux/kprobes.h>
-#include <linux/rethook.h>
+#include <freax/kprobes.h>
+#include <freax/rethook.h>
 #include "rethook.h"
 
 /* This is called from arch_rethook_trampoline() */

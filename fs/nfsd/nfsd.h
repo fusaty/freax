@@ -6,22 +6,22 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_NFSD_H
-#define LINUX_NFSD_NFSD_H
+#ifndef freax_NFSD_NFSD_H
+#define freax_NFSD_NFSD_H
 
-#include <linux/types.h>
-#include <linux/mount.h>
+#include <freax/types.h>
+#include <freax/mount.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/addr.h>
+#include <freax/nfs.h>
+#include <freax/nfs2.h>
+#include <freax/nfs3.h>
+#include <freax/nfs4.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/svc_xprt.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/sunrpc/addr.h>
 
-#include <uapi/linux/nfsd/debug.h>
+#include <uapi/freax/nfsd/debug.h>
 
 #include "netns.h"
 #include "export.h"
@@ -541,4 +541,4 @@ static inline void nfsd4_init_leases_net(struct nfsd_net *nn) { };
 
 #endif /* CONFIG_NFSD_V4 */
 
-#endif /* LINUX_NFSD_NFSD_H */
+#endif /* freax_NFSD_NFSD_H */

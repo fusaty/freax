@@ -4,10 +4,10 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/if_vlan.h>
-#include <linux/ipv6.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
+#include <freax/if_vlan.h>
+#include <freax/ipv6.h>
+#include <freax/ethtool.h>
+#include <freax/interrupt.h>
 
 #include "qlcnic.h"
 #include "qlcnic_sriov.h"
@@ -275,7 +275,7 @@ int qlcnic_83xx_get_fw_version(struct qlcnic_adapter *adapter)
 	adapter->fw_version = QLCNIC_VERSION_CODE(fw_major, fw_minor, fw_build);
 
 	dev_info(&pdev->dev, "Driver v%s, firmware version %d.%d.%d\n",
-		 QLCNIC_LINUX_VERSIONID, fw_major, fw_minor, fw_build);
+		 QLCNIC_freax_VERSIONID, fw_major, fw_minor, fw_build);
 
 	return adapter->fw_version;
 }

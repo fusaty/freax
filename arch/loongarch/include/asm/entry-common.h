@@ -2,8 +2,8 @@
 #ifndef ARCH_LOONGARCH_ENTRY_COMMON_H
 #define ARCH_LOONGARCH_ENTRY_COMMON_H
 
-#include <linux/sched.h>
-#include <linux/processor.h>
+#include <freax/sched.h>
+#include <freax/processor.h>
 
 static inline bool on_thread_stack(void)
 {

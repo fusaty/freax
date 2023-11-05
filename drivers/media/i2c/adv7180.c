@@ -5,22 +5,22 @@
  * Copyright (C) 2013 Cogent Embedded, Inc.
  * Copyright (C) 2013 Renesas Solutions Corp.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/videodev2.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
 
 #define ADV7180_STD_AD_PAL_BG_NTSC_J_SECAM		0x0
 #define ADV7180_STD_AD_PAL_BG_NTSC_J_SECAM_PED		0x1

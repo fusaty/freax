@@ -6,27 +6,27 @@
  *	Vaibhav Bedia, Dave Gerlach
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_data/pm33xx.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtc.h>
-#include <linux/rtc/rtc-omap.h>
-#include <linux/sizes.h>
-#include <linux/sram.h>
-#include <linux/suspend.h>
-#include <linux/ti-emif-sram.h>
-#include <linux/wkup_m3_ipc.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/genalloc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_data/pm33xx.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/rtc.h>
+#include <freax/rtc/rtc-omap.h>
+#include <freax/sizes.h>
+#include <freax/sram.h>
+#include <freax/suspend.h>
+#include <freax/ti-emif-sram.h>
+#include <freax/wkup_m3_ipc.h>
 
 #include <asm/proc-fns.h>
 #include <asm/suspend.h>

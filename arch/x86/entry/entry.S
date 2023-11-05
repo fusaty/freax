@@ -3,8 +3,8 @@
  * Common place for both 32- and 64-bit entry routines.
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/msr-index.h>
 
 .pushsection .noinstr.text, "ax"

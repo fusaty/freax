@@ -3,9 +3,9 @@
 // Copyright (c) 2018 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

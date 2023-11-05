@@ -5,16 +5,16 @@
  * Copyright (C) 2018 NVIDIA Corporation. All rights reserved.
  * Author: Ajay Gupta <ajayg@nvidia.com>
  */
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/power_supply.h>
 
 #include <asm/unaligned.h>
 

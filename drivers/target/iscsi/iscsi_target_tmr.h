@@ -2,7 +2,7 @@
 #ifndef ISCSI_TARGET_TMR_H
 #define ISCSI_TARGET_TMR_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct iscsit_cmd;
 struct iscsit_conn;

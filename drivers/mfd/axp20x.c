@@ -13,20 +13,20 @@
  * Author: Carlo Caione <carlo@caione.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #define AXP20X_OFF	BIT(7)
 

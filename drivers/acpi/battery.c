@@ -10,22 +10,22 @@
 
 #define pr_fmt(fmt) "ACPI: battery: " fmt
 
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/types.h>
+#include <freax/async.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/acpi.h>
-#include <linux/power_supply.h>
+#include <freax/acpi.h>
+#include <freax/power_supply.h>
 
 #include <acpi/battery.h>
 

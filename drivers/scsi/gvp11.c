@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/zorro.h>
+#include <freax/module.h>
 
 #include <asm/page.h>
 #include <asm/amigaints.h>

@@ -28,8 +28,8 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/crc32.h>
+#include <freax/firmware.h>
+#include <freax/crc32.h>
 
 #include "i915_drv.h"
 #include "gvt.h"

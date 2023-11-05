@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/workqueue.h>
 #include <sound/tlv.h>
 #include <uapi/sound/sof/tokens.h>
 #include "sof-priv.h"

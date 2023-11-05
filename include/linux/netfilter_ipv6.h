@@ -4,10 +4,10 @@
  *   this header was blatantly ripped from netfilter_ipv4.h
  *   it's amazing what adding a bunch of 6s can do =8^)
  */
-#ifndef __LINUX_IP6_NETFILTER_H
-#define __LINUX_IP6_NETFILTER_H
+#ifndef __freax_IP6_NETFILTER_H
+#define __freax_IP6_NETFILTER_H
 
-#include <uapi/linux/netfilter_ipv6.h>
+#include <uapi/freax/netfilter_ipv6.h>
 #include <net/tcp.h>
 
 /* Check for an extension */
@@ -208,4 +208,4 @@ static inline void ipv6_netfilter_fini(void) { return; }
 static inline const struct nf_ipv6_ops *nf_get_ipv6_ops(void) { return NULL; }
 #endif /* CONFIG_NETFILTER */
 
-#endif /*__LINUX_IP6_NETFILTER_H*/
+#endif /*__freax_IP6_NETFILTER_H*/

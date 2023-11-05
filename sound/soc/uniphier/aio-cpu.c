@@ -4,15 +4,15 @@
 //
 // Copyright (c) 2016-2018 Socionext Inc.
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

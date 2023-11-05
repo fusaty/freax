@@ -5,13 +5,13 @@
  *  Copyright (c) 2011 Frederick van der Wyck <fvanderwyck@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
 
 #define SAMSUNGQ10_BL_MAX_INTENSITY 7
 

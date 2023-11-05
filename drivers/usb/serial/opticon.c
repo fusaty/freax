@@ -8,16 +8,16 @@
  * Copyright (C) 2008 - 2009 Novell Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/slab.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/uaccess.h>
 
 #define CONTROL_RTS			0x02
 #define RESEND_CTS_STATE	0x03

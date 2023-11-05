@@ -24,7 +24,7 @@
 #ifndef DRM_SCDC_HELPER_H
 #define DRM_SCDC_HELPER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <drm/display/drm_scdc.h>
 

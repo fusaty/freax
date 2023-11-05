@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2012-2015,2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
 #include "wmi.h"
 #include "wil6210.h"
 #include "txrx.h"

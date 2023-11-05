@@ -10,8 +10,8 @@
  * It avoids expensive cache bounces that common test-and-set spin-lock
  * implementations incur.
  */
-#ifndef __LINUX_MCS_SPINLOCK_H
-#define __LINUX_MCS_SPINLOCK_H
+#ifndef __freax_MCS_SPINLOCK_H
+#define __freax_MCS_SPINLOCK_H
 
 #include <asm/mcs_spinlock.h>
 
@@ -118,4 +118,4 @@ void mcs_spin_unlock(struct mcs_spinlock **lock, struct mcs_spinlock *node)
 	arch_mcs_spin_unlock_contended(&next->locked);
 }
 
-#endif /* __LINUX_MCS_SPINLOCK_H */
+#endif /* __freax_MCS_SPINLOCK_H */

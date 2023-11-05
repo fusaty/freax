@@ -1,5 +1,5 @@
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA freax Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -16,7 +16,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA freax SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
@@ -31,13 +31,13 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/cc_platform.h>
-#include <linux/dynamic_debug.h>
-#include <linux/module.h>
-#include <linux/mmu_notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/vga_switcheroo.h>
+#include <freax/cc_platform.h>
+#include <freax/dynamic_debug.h>
+#include <freax/module.h>
+#include <freax/mmu_notifier.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
+#include <freax/vga_switcheroo.h>
 
 #include "amdgpu.h"
 #include "amdgpu_amdkfd.h"

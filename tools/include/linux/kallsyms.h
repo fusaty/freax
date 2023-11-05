@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LIBLOCKDEP_LINUX_KALLSYMS_H_
-#define _LIBLOCKDEP_LINUX_KALLSYMS_H_
+#ifndef _LIBLOCKDEP_freax_KALLSYMS_H_
+#define _LIBLOCKDEP_freax_KALLSYMS_H_
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <stdio.h>
 #include <unistd.h>
 

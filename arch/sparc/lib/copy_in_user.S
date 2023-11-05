@@ -4,8 +4,8 @@
  * Copyright (C) 1999, 2000, 2004 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/asi.h>
 
 #define XCC xcc

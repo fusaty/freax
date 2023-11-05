@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2012 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/debugfs.h>
+#include <freax/vmalloc.h>
 #include "fnic.h"
 
 static struct dentry *fnic_trace_debugfs_root;

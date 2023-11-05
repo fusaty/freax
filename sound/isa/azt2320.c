@@ -17,13 +17,13 @@
     activation method (full-duplex audio!).
 */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/pnp.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/wss.h>

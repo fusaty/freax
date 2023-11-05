@@ -11,10 +11,10 @@
  *  move struct usb_hub to this file.
  */
 
-#include <linux/usb.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/typec.h>
+#include <freax/usb.h>
+#include <freax/usb/ch11.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/typec.h>
 #include "usb.h"
 
 struct usb_hub {

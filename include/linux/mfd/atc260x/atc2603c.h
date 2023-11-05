@@ -5,8 +5,8 @@
  * Copyright (C) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#ifndef __LINUX_MFD_ATC260X_ATC2603C_H
-#define __LINUX_MFD_ATC260X_ATC2603C_H
+#ifndef __freax_MFD_ATC260X_ATC2603C_H
+#define __freax_MFD_ATC260X_ATC2603C_H
 
 enum atc2603c_irq_def {
 	ATC2603C_IRQ_AUDIO = 0,
@@ -278,4 +278,4 @@ enum atc2603c_irq_def {
 /* PAD_EN Register Mask Bits */
 #define ATC2603C_PAD_EN_EXTIRQ				BIT(0)
 
-#endif /* __LINUX_MFD_ATC260X_ATC2603C_H */
+#endif /* __freax_MFD_ATC260X_ATC2603C_H */

@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <sched.h>
 #include <net/if.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <bpf/libbpf.h>
 
 #include "network_helpers.h"

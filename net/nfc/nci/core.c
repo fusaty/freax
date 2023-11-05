@@ -15,21 +15,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/kcov.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/completion.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/bitops.h>
+#include <freax/skbuff.h>
+#include <freax/kcov.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <freax/nfc.h>
 
 struct core_conn_create_data {
 	int length;

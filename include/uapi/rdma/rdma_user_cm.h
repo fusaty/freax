@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB) */
 /*
  * Copyright (c) 2005-2006 Intel Corporation.  All rights reserved.
  *
@@ -34,9 +34,9 @@
 #ifndef RDMA_USER_CM_H
 #define RDMA_USER_CM_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/in6.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_user_sa.h>
 

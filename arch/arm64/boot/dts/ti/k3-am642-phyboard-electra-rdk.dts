@@ -63,13 +63,13 @@
 
 		key-home {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&main_gpio0 17 GPIO_ACTIVE_HIGH>;
 		};
 
 		key-menu {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			gpios = <&main_gpio0 21 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -82,14 +82,14 @@
 		led-1 {
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&main_gpio0 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 			function = LED_FUNCTION_DISK;
 		};
 
 		led-2 {
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&main_gpio0 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			freax,default-trigger = "mmc1";
 			function = LED_FUNCTION_DISK;
 		};
 	};

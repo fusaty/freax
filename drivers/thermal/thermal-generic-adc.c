@@ -6,12 +6,12 @@
  *
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
-#include <linux/iio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/iio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 
 #include "thermal_hwmon.h"
 

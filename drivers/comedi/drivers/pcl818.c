@@ -92,14 +92,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8254.h>
+#include <freax/comedi/comedi_isadma.h>
 
 /*
  * Register I/O map

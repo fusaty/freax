@@ -5,12 +5,12 @@
  *
  * Copyright (C) 2012 Benjamin Herrenschmidt, IBM Corp.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
 
 #include <asm/smu.h>
 

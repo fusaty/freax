@@ -8,9 +8,9 @@
  * Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/toshiba,tmpv770x.h>
 

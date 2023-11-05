@@ -6,11 +6,11 @@
 
 #ifndef _QED_L2_H
 #define _QED_L2_H
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/qed/qed_eth_if.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/qed/qed_eth_if.h>
 #include "qed.h"
 #include "qed_hw.h"
 #include "qed_sp.h"
@@ -237,7 +237,7 @@ int qed_sp_eth_filter_ucast(struct qed_hwfn *p_hwfn,
  *
  * Return: Int.
  *
- * Note At the moment - only used by non-linux VFs.
+ * Note At the moment - only used by non-freax VFs.
  */
 
 int

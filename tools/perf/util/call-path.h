@@ -9,8 +9,8 @@
 
 #include <sys/types.h>
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <freax/types.h>
+#include <freax/rbtree.h>
 
 /**
  * struct call_path - node in list of calls leading to a function call.

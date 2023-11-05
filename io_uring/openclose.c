@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify.h>
-#include <linux/namei.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/fsnotify.h>
+#include <freax/namei.h>
+#include <freax/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 
 #include "../fs/internal.h"
 

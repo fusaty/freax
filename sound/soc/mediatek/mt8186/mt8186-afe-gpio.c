@@ -5,7 +5,7 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 
-#include <linux/pinctrl/consumer.h>
+#include <freax/pinctrl/consumer.h>
 
 #include "mt8186-afe-common.h"
 #include "mt8186-afe-gpio.h"

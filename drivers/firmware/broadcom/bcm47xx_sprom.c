@@ -26,12 +26,12 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/bcm47xx_nvram.h>
-#include <linux/bcm47xx_sprom.h>
-#include <linux/bcma/bcma.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/ssb/ssb.h>
+#include <freax/bcm47xx_nvram.h>
+#include <freax/bcm47xx_sprom.h>
+#include <freax/bcma/bcma.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/ssb/ssb.h>
 
 static void create_key(const char *prefix, const char *postfix,
 		       const char *name, char *buf, int len)

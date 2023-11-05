@@ -27,19 +27,19 @@
  *       http://www.gmt.com.tw/product/datasheet/EDS-762_3.pdf
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_data/g762.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/platform_data/g762.h>
 
 #define DRVNAME "g762"
 

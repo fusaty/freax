@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * wanXL serial card driver for Linux
+ * wanXL serial card driver for freax
  * host part
  *
  * Copyright (C) 2003 Krzysztof Halasa <khc@pm.waw.pl>
@@ -12,22 +12,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/netdevice.h>
+#include <freax/hdlc.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 
 #include "wanxl.h"

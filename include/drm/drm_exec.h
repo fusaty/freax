@@ -3,8 +3,8 @@
 #ifndef __DRM_EXEC_H__
 #define __DRM_EXEC_H__
 
-#include <linux/compiler.h>
-#include <linux/ww_mutex.h>
+#include <freax/compiler.h>
+#include <freax/ww_mutex.h>
 
 #define DRM_EXEC_INTERRUPTIBLE_WAIT	BIT(0)
 #define DRM_EXEC_IGNORE_DUPLICATES	BIT(1)

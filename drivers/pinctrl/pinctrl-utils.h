@@ -9,7 +9,7 @@
 #ifndef __PINCTRL_UTILS_H__
 #define __PINCTRL_UTILS_H__
 
-#include <linux/pinctrl/machine.h>
+#include <freax/pinctrl/machine.h>
 
 struct pinctrl_dev;
 struct pinctrl_map;

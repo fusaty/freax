@@ -3,8 +3,8 @@
  * See Documentation/core-api/circular-buffers.rst for more information.
  */
 
-#ifndef _LINUX_CIRC_BUF_H
-#define _LINUX_CIRC_BUF_H 1
+#ifndef _freax_CIRC_BUF_H
+#define _freax_CIRC_BUF_H 1
 
 struct circ_buf {
 	char *buf;
@@ -34,4 +34,4 @@ struct circ_buf {
 	  int n = (end + (tail)) & ((size)-1); \
 	  n <= end ? n : end+1;})
 
-#endif /* _LINUX_CIRC_BUF_H  */
+#endif /* _freax_CIRC_BUF_H  */

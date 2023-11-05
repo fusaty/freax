@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_GETCPU_H
-#define _LINUX_GETCPU_H 1
+#ifndef _freax_GETCPU_H
+#define _freax_GETCPU_H 1
 
 /* Cache for getcpu() to speed it up. Results might be a short time
    out of date, but will be faster.

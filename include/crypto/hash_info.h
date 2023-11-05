@@ -14,7 +14,7 @@
 #include <crypto/md5.h>
 #include <crypto/streebog.h>
 
-#include <uapi/linux/hash_info.h>
+#include <uapi/freax/hash_info.h>
 
 /* not defined in include/crypto/ */
 #define RMD128_DIGEST_SIZE      16

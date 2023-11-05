@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
-#include <linux/memblock.h>
+#include <freax/memblock.h>
 #include <os.h>
 
 #include "um_arch.h"

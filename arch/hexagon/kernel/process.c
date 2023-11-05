@@ -2,19 +2,19 @@
 /*
  * Process creation support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The freax Foundation. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/tick.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/resume_user_mode.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/tick.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/resume_user_mode.h>
 
 /*
  * Program thread launch.  Often defined as a macro in processor.h,

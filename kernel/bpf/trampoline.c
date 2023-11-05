@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2019 Facebook */
-#include <linux/hash.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/ftrace.h>
-#include <linux/rbtree_latch.h>
-#include <linux/perf_event.h>
-#include <linux/btf.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/static_call.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bpf_lsm.h>
-#include <linux/delay.h>
+#include <freax/hash.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/ftrace.h>
+#include <freax/rbtree_latch.h>
+#include <freax/perf_event.h>
+#include <freax/btf.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/static_call.h>
+#include <freax/bpf_verifier.h>
+#include <freax/bpf_lsm.h>
+#include <freax/delay.h>
 
 /* dummy _ops. The verifier will operate on target program's ops. */
 const struct bpf_verifier_ops bpf_extension_verifier_ops = {
@@ -20,7 +20,7 @@ const struct bpf_verifier_ops bpf_extension_verifier_ops = {
 const struct bpf_prog_ops bpf_extension_prog_ops = {
 };
 
-/* btf_vmlinux has ~22k attachable functions. 1k htab is enough. */
+/* btf_vmfreax has ~22k attachable functions. 1k htab is enough. */
 #define TRAMPOLINE_HASH_BITS 10
 #define TRAMPOLINE_TABLE_SIZE (1 << TRAMPOLINE_HASH_BITS)
 

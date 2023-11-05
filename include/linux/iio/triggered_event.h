@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IIO_TRIGGERED_EVENT_H_
-#define _LINUX_IIO_TRIGGERED_EVENT_H_
+#ifndef _freax_IIO_TRIGGERED_EVENT_H_
+#define _freax_IIO_TRIGGERED_EVENT_H_
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 int iio_triggered_event_setup(struct iio_dev *indio_dev,
 	irqreturn_t (*h)(int irq, void *p),

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #include <video/nomodeset.h>
 

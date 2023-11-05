@@ -17,31 +17,31 @@
  *
 =============================================================================*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/proc_fs.h>
+#include <freax/ptrace.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
+#include <freax/ioport.h>
+#include <freax/skbuff.h>
+#include <freax/ieee80211.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/wireless.h>
+#include <freax/wireless.h>
 #include <net/iw_handler.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* Warning : these stuff will slow down the driver... */
 #define WIRELESS_SPY		/* Enable spying addresses */
@@ -801,7 +801,7 @@ static int ray_dev_init(struct net_device *dev)
 	      local->card_status);
 #endif /* RAY_IMMEDIATE_INIT */
 
-	/* copy mac and broadcast addresses to linux device */
+	/* copy mac and broadcast addresses to freax device */
 	eth_hw_addr_set(dev, local->sparm.b4.a_mac_addr);
 	eth_broadcast_addr(dev->broadcast);
 

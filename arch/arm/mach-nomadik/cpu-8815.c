@@ -3,9 +3,9 @@
  * Copyright STMicroelectronics, 2007.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

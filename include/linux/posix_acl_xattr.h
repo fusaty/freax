@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/posix_acl_xattr.h
+  File: freax/posix_acl_xattr.h
 
   Extended attribute system call representation of Access Control Lists.
 
   Copyright (C) 2000 by Andreas Gruenbacher <a.gruenbacher@computer.org>
-  Copyright (C) 2002 SGI - Silicon Graphics, Inc <linux-xfs@oss.sgi.com>
+  Copyright (C) 2002 SGI - Silicon Graphics, Inc <freax-xfs@oss.sgi.com>
  */
 #ifndef _POSIX_ACL_XATTR_H
 #define _POSIX_ACL_XATTR_H
 
-#include <uapi/linux/xattr.h>
-#include <uapi/linux/posix_acl_xattr.h>
-#include <linux/posix_acl.h>
+#include <uapi/freax/xattr.h>
+#include <uapi/freax/posix_acl_xattr.h>
+#include <freax/posix_acl.h>
 
 static inline size_t
 posix_acl_xattr_size(int count)

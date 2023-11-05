@@ -4,15 +4,15 @@
  * Copyright (C) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/smp.h>
-#include <linux/mfd/syscon.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/smp.h>
+#include <freax/mfd/syscon.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-sa1100/neponset.c
+ * freax/arch/arm/mach-sa1100/neponset.c
  */
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/smc91x.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/gpio-reg.h>
+#include <freax/gpio/machine.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/smc91x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>
 #include <asm/hardware/sa1111.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #include <mach/hardware.h>
 #include <mach/assabet.h>

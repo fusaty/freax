@@ -8,8 +8,8 @@
 #ifndef WFX_HIF_API_GENERAL_H
 #define WFX_HIF_API_GENERAL_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #define HIF_ID_IS_INDICATION      0x80
 #define HIF_COUNTER_MAX           7

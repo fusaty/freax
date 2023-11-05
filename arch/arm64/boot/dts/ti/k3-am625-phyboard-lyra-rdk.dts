@@ -43,13 +43,13 @@
 
 		key-home {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&main_gpio1 23 GPIO_ACTIVE_HIGH>;
 		};
 
 		key-menu {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			gpios = <&gpio_exp 4 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -61,12 +61,12 @@
 
 		led-1 {
 			gpios = <&main_gpio0 32 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 
 		led-2 {
 			gpios = <&gpio_exp 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			freax,default-trigger = "mmc1";
 		};
 	};
 

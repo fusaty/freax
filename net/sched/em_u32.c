@@ -8,10 +8,10 @@
  * Based on net/sched/cls_u32.c
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
 #include <net/pkt_cls.h>
 
 static int em_u32_match(struct sk_buff *skb, struct tcf_ematch *em,

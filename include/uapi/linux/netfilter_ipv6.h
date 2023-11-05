@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* IPv6-specific defines for netfilter. 
  * (C)1998 Rusty Russell -- This code is GPL.
  * (C)1999 David Jeffery
  *   this header was blatantly ripped from netfilter_ipv4.h 
  *   it's amazing what adding a bunch of 6s can do =8^)
  */
-#ifndef _UAPI__LINUX_IP6_NETFILTER_H
-#define _UAPI__LINUX_IP6_NETFILTER_H
+#ifndef _UAPI__freax_IP6_NETFILTER_H
+#define _UAPI__freax_IP6_NETFILTER_H
 
 
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
 /* only for userspace compatibility */
 #ifndef __KERNEL__
@@ -36,17 +36,17 @@ enum nf_ip6_hook_priorities {
 	NF_IP6_PRI_RAW_BEFORE_DEFRAG = -450,
 	NF_IP6_PRI_CONNTRACK_DEFRAG = -400,
 	NF_IP6_PRI_RAW = -300,
-	NF_IP6_PRI_SELINUX_FIRST = -225,
+	NF_IP6_PRI_SEfreax_FIRST = -225,
 	NF_IP6_PRI_CONNTRACK = -200,
 	NF_IP6_PRI_MANGLE = -150,
 	NF_IP6_PRI_NAT_DST = -100,
 	NF_IP6_PRI_FILTER = 0,
 	NF_IP6_PRI_SECURITY = 50,
 	NF_IP6_PRI_NAT_SRC = 100,
-	NF_IP6_PRI_SELINUX_LAST = 225,
+	NF_IP6_PRI_SEfreax_LAST = 225,
 	NF_IP6_PRI_CONNTRACK_HELPER = 300,
 	NF_IP6_PRI_LAST = INT_MAX,
 };
 
 
-#endif /* _UAPI__LINUX_IP6_NETFILTER_H */
+#endif /* _UAPI__freax_IP6_NETFILTER_H */

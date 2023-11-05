@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/posix_acl.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/posix_acl.h>
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/errno.h>
+#include <freax/pagemap.h>
+#include <freax/xattr.h>
+#include <freax/slab.h>
+#include <freax/posix_acl_xattr.h>
 #include "xattr.h"
 #include "acl.h"
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static int __reiserfs_set_acl(struct reiserfs_transaction_handle *th,
 			    struct inode *inode, int type,

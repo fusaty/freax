@@ -3,7 +3,7 @@
 
 #ifndef _ICE_PTP_HW_H_
 #define _ICE_PTP_HW_H_
-#include <linux/dpll.h>
+#include <freax/dpll.h>
 
 enum ice_ptp_tmr_cmd {
 	ICE_PTP_INIT_TIME,

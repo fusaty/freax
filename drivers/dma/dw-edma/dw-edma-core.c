@@ -6,15 +6,15 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/dma/edma.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/dmaengine.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/dma/edma.h>
+#include <freax/dma-mapping.h>
 
 #include "dw-edma-core.h"
 #include "dw-edma-v0-core.h"

@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#ifndef __LINUX_ARM_SMCCC_H
-#define __LINUX_ARM_SMCCC_H
+#ifndef __freax_ARM_SMCCC_H
+#define __freax_ARM_SMCCC_H
 
-#include <linux/args.h>
-#include <linux/init.h>
-#include <uapi/linux/const.h>
+#include <freax/args.h>
+#include <freax/init.h>
+#include <uapi/freax/const.h>
 
 /*
  * This file provides common defines for ARM SMC Calling Convention as
@@ -196,8 +196,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <freax/linkage.h>
+#include <freax/types.h>
 
 enum arm_smccc_conduit {
 	SMCCC_CONDUIT_NONE,
@@ -578,4 +578,4 @@ asmlinkage void __arm_smccc_hvc(unsigned long a0, unsigned long a1,
 	})
 
 #endif /*__ASSEMBLY__*/
-#endif /*__LINUX_ARM_SMCCC_H*/
+#endif /*__freax_ARM_SMCCC_H*/

@@ -11,16 +11,16 @@
  * Atheros chip stored on UBI Volume on NAND. Hence, this module can be used to
  * initialize the chip when the user-space is ready to extract the init code.
  */
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/ath9k_platform.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/completion.h>
+#include <freax/etherdevice.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/ath9k_platform.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/workqueue.h>
 
 struct owl_ctx {
 	struct pci_dev *pdev;

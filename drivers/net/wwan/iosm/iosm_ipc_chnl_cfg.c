@@ -3,7 +3,7 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/wwan.h>
+#include <freax/wwan.h>
 
 #include "iosm_ipc_chnl_cfg.h"
 

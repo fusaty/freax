@@ -9,9 +9,9 @@ int capset(cap_user_header_t header, const cap_user_data_t data);
 
 int cap_enable_effective(__u64 caps, __u64 *old_caps)
 {
-	struct __user_cap_data_struct data[_LINUX_CAPABILITY_U32S_3];
+	struct __user_cap_data_struct data[_freax_CAPABILITY_U32S_3];
 	struct __user_cap_header_struct hdr = {
-		.version = _LINUX_CAPABILITY_VERSION_3,
+		.version = _freax_CAPABILITY_VERSION_3,
 	};
 	__u32 cap0 = caps;
 	__u32 cap1 = caps >> 32;
@@ -39,9 +39,9 @@ int cap_enable_effective(__u64 caps, __u64 *old_caps)
 
 int cap_disable_effective(__u64 caps, __u64 *old_caps)
 {
-	struct __user_cap_data_struct data[_LINUX_CAPABILITY_U32S_3];
+	struct __user_cap_data_struct data[_freax_CAPABILITY_U32S_3];
 	struct __user_cap_header_struct hdr = {
-		.version = _LINUX_CAPABILITY_VERSION_3,
+		.version = _freax_CAPABILITY_VERSION_3,
 	};
 	__u32 cap0 = caps;
 	__u32 cap1 = caps >> 32;

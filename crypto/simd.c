@@ -31,9 +31,9 @@
 #include <crypto/internal/aead.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/preempt.h>
 #include <asm/simd.h>
 
 /* skcipher support */

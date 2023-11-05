@@ -9,10 +9,10 @@
  *         Pawel Jez <pjez@cadence.com>
  *         Peter Chen <peter.chen@nxp.com>
  */
-#ifndef __LINUX_CDNS3_GADGET
-#define __LINUX_CDNS3_GADGET
-#include <linux/usb/gadget.h>
-#include <linux/dma-direction.h>
+#ifndef __freax_CDNS3_GADGET
+#define __freax_CDNS3_GADGET
+#include <freax/usb/gadget.h>
+#include <freax/dma-direction.h>
 
 /*
  * USBSS-DEV register interface.
@@ -1371,4 +1371,4 @@ int cdns3_ep_config(struct cdns3_endpoint *priv_ep, bool enable);
 void cdns3_check_ep0_interrupt_proceed(struct cdns3_device *priv_dev, int dir);
 int __cdns3_gadget_wakeup(struct cdns3_device *priv_dev);
 
-#endif /* __LINUX_CDNS3_GADGET */
+#endif /* __freax_CDNS3_GADGET */

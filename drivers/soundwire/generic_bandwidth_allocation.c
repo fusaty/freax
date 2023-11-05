@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/slab.h>
+#include <freax/soundwire/sdw.h>
 #include "bus.h"
 
 #define SDW_STRM_RATE_GROUPING		1

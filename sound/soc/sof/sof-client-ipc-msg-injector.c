@@ -2,18 +2,18 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Author: Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+// Author: Peter Ujfalusi <peter.ujfalusi@freax.intel.com>
 //
 
-#include <linux/auxiliary_bus.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/ktime.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/ktime.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #include <sound/sof/header.h>
 #include <sound/sof/ipc4/header.h>
 

@@ -10,17 +10,17 @@
  *          Rémi Denis-Courmont
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/net.h>
+#include <freax/poll.h>
+#include <freax/sched/signal.h>
 
 #include <net/sock.h>
 #include <net/tcp_states.h>
 
-#include <linux/phonet.h>
-#include <linux/export.h>
+#include <freax/phonet.h>
+#include <freax/export.h>
 #include <net/phonet/phonet.h>
 #include <net/phonet/pep.h>
 #include <net/phonet/pn_dev.h>

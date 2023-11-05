@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/kexec.h>
-#include <linux/memblock.h>
-#include <linux/virtio_anchor.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/kexec.h>
+#include <freax/memblock.h>
+#include <freax/virtio_anchor.h>
 
 #include <xen/features.h>
 #include <xen/events.h>

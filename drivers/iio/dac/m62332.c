@@ -8,15 +8,15 @@
  *  Copyright (C) 2010, 2011 Roland Stigge <stigge@antcom.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
 
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #define M62332_CHANNELS 2
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Parts of this driver are based on the following:
- *  - Kvaser linux mhydra driver (version 5.24)
+ *  - Kvaser freax mhydra driver (version 5.24)
  *  - CAN driver for esd CAN-USB/2
  *
  * Copyright (C) 2018 KVASER AB, Sweden. All rights reserved.
@@ -13,22 +13,22 @@
  *  - Hardware timestamps are not set for CAN Tx frames.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/units.h>
-#include <linux/usb.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/units.h>
+#include <freax/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/netlink.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/can/netlink.h>
 
 #include "kvaser_usb.h"
 

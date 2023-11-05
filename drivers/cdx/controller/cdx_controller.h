@@ -8,7 +8,7 @@
 #ifndef _CDX_CONTROLLER_H_
 #define _CDX_CONTROLLER_H_
 
-#include <linux/cdx/cdx_bus.h>
+#include <freax/cdx/cdx_bus.h>
 #include "mcdi_functions.h"
 
 void cdx_rpmsg_post_probe(struct cdx_controller *cdx);

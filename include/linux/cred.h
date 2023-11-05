@@ -5,17 +5,17 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_CRED_H
-#define _LINUX_CRED_H
+#ifndef _freax_CRED_H
+#define _freax_CRED_H
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/key.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/uidgid.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
+#include <freax/capability.h>
+#include <freax/init.h>
+#include <freax/key.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
+#include <freax/uidgid.h>
+#include <freax/sched.h>
+#include <freax/sched/user.h>
 
 struct cred;
 struct inode;
@@ -466,4 +466,4 @@ do {						\
 	*(_fsgid) = __cred->fsgid;		\
 } while(0)
 
-#endif /* _LINUX_CRED_H */
+#endif /* _freax_CRED_H */

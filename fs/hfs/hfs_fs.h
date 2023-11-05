@@ -1,13 +1,13 @@
 /*
- *  linux/fs/hfs/hfs_fs.h
+ *  freax/fs/hfs/hfs_fs.h
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
  * This file may be distributed under the terms of the GNU General Public License.
  */
 
-#ifndef _LINUX_HFS_FS_H
-#define _LINUX_HFS_FS_H
+#ifndef _freax_HFS_FS_H
+#define _freax_HFS_FS_H
 
 #ifdef pr_fmt
 #undef pr_fmt
@@ -15,15 +15,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/buffer_head.h>
+#include <freax/fs.h>
+#include <freax/workqueue.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "hfs.h"
 
@@ -56,7 +56,7 @@ do {								\
 /*
  * struct hfs_inode_info
  *
- * The HFS-specific part of a Linux (struct inode)
+ * The HFS-specific part of a freax (struct inode)
  */
 struct hfs_inode_info {
 	atomic_t opencnt;
@@ -95,7 +95,7 @@ struct hfs_inode_info {
 /*
  * struct hfs_sb_info
  *
- * The HFS-specific part of a Linux (struct super_block)
+ * The HFS-specific part of a freax (struct super_block)
  */
 struct hfs_sb_info {
 	struct buffer_head *mdb_bh;		/* The hfs_buffer
@@ -249,7 +249,7 @@ extern void hfs_mark_mdb_dirty(struct super_block *sb);
  *	mac:	unsigned big-endian since 00:00 GMT, Jan. 1, 1904
  *
  * HFS implementations are highly inconsistent, this one matches the
- * traditional behavior of 64-bit Linux, giving the most useful
+ * traditional behavior of 64-bit freax, giving the most useful
  * time range between 1970 and 2106, by treating any on-disk timestamp
  * under HFS_UTC_OFFSET (Jan 1 1970) as a time between 2040 and 2106.
  */

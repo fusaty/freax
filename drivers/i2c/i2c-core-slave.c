@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core slave support code
+ * freax I2C core slave support code
  *
  * Copyright (C) 2014 by Wolfram Sang <wsa@sang-engineering.com>
  */
 
 #include <dt-bindings/i2c/i2c.h>
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
 
 #include "i2c-core.h"
 

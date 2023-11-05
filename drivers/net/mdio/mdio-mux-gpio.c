@@ -3,13 +3,13 @@
  * Copyright (C) 2011, 2012 Cavium, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mdio-mux.h>
+#include <freax/module.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
 
 #define DRV_VERSION "1.1"
 #define DRV_DESCRIPTION "GPIO controlled MDIO bus multiplexer driver"

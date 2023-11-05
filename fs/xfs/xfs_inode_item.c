@@ -20,7 +20,7 @@
 #include "xfs_log_priv.h"
 #include "xfs_error.h"
 
-#include <linux/iversion.h>
+#include <freax/iversion.h>
 
 struct kmem_cache	*xfs_ili_cache;		/* inode log item */
 

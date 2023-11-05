@@ -5,10 +5,10 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/hid.h>
-#include <linux/intel-ish-client-if.h>
-#include <linux/sched.h>
+#include <freax/module.h>
+#include <freax/hid.h>
+#include <freax/intel-ish-client-if.h>
+#include <freax/sched.h>
 #include "ishtp-hid.h"
 
 /* ISH Transport protocol (ISHTP in short) GUID */
@@ -981,6 +981,6 @@ MODULE_AUTHOR("Daniel Drubin <daniel.drubin@intel.com>");
  * Several modification for multi instance support
  * suspend/resume and clean up
  */
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>");
 
 MODULE_LICENSE("GPL");

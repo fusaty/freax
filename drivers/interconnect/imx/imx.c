@@ -8,14 +8,14 @@
  * Author: Leonard Crestez <leonard.crestez@nxp.com>
  */
 
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
+#include <freax/device.h>
+#include <freax/interconnect-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_qos.h>
 
 #include "imx.h"
 

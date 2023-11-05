@@ -5,10 +5,10 @@
  * Parse symbolic events/counts passed in as options:
  */
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include <stdbool.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <freax/types.h>
+#include <freax/perf_event.h>
 #include <stdio.h>
 #include <string.h>
 

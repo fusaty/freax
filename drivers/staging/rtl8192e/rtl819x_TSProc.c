@@ -5,7 +5,7 @@
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
 #include "rtllib.h"
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include "rtl819x_TS.h"
 
 static void RxPktPendingTimeout(struct timer_list *t)

@@ -59,19 +59,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/fcntl.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
+#include <freax/string.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/slab.h>
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/route.h>
@@ -81,12 +81,12 @@
 #include <net/udp.h>
 #include <net/raw.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/uaccess.h>
 #include <net/checksum.h>
 #include <net/xfrm.h>
 #include <net/inet_common.h>

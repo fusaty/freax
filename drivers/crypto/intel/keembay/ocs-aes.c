@@ -5,11 +5,11 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/swab.h>
 
 #include <asm/byteorder.h>
 #include <asm/errno.h>
@@ -878,7 +878,7 @@ static void ocs_aes_gcm_write_j0(const struct ocs_aes_dev *aes_dev,
 	const u32 *j0 = (u32 *)iv;
 
 	/*
-	 * IV must be 12 bytes; Other sizes not supported as Linux crypto API
+	 * IV must be 12 bytes; Other sizes not supported as freax crypto API
 	 * does only expects/allows 12 byte IV for GCM
 	 */
 	iowrite32(0x00000001, aes_dev->base_reg + AES_IV_0_OFFSET);

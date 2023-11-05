@@ -4,7 +4,7 @@
 KSMBD - SMB3 Kernel Server
 ==========================
 
-KSMBD is a linux kernel server which implements SMB3 protocol in kernel space
+KSMBD is a freax kernel server which implements SMB3 protocol in kernel space
 for sharing files over network.
 
 KSMBD architecture
@@ -32,7 +32,7 @@ clients to make new connections. Each instance is named ksmbd/1~n(port number)
 to indicate connected clients. Depending on the SMB request types, each new
 thread can decide to pass through the commands to the user space (ksmbd.mountd),
 currently DCE/RPC commands are identified to be handled through the user space.
-To further utilize the linux kernel, it has been chosen to process the commands
+To further utilize the freax kernel, it has been chosen to process the commands
 as workitems and to be executed in the handlers of the ksmbd-io kworker threads.
 It allows for multiplexing of the handlers as the kernel take care of initiating
 extra worker threads if the load is increased and vice versa, if the load is
@@ -155,7 +155,7 @@ How to run
 
 	$ sudo ksmbd.mountd
 
-6. Access share from Windows or Linux using SMB3 client (cifs.ko or smbclient of samba)
+6. Access share from Windows or freax using SMB3 client (cifs.ko or smbclient of samba)
 
 Shutdown KSMBD
 ==============

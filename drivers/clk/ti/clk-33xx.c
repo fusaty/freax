@@ -6,11 +6,11 @@
  *     Tero Kristo (t-kristo@ti.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/ti.h>
 #include <dt-bindings/clock/am3.h>
 
 #include "clock.h"

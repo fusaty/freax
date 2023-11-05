@@ -7,7 +7,7 @@
 #
 
 import gdb
-from linux import utils, constants
+from freax import utils, constants
 
 if constants.LX_CONFIG_STACKDEPOT:
     stack_record_type = utils.CachedType('struct stack_record')

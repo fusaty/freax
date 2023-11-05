@@ -6,16 +6,16 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sock_diag.h>
-#include <linux/inet_diag.h>
-#include <linux/smc_diag.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/sock_diag.h>
+#include <freax/inet_diag.h>
+#include <freax/smc_diag.h>
 #include <net/netlink.h>
 #include <net/smc.h>
 

@@ -3,11 +3,11 @@
  * Copyright © 2016-2019 Intel Corporation
  */
 
-#include <linux/circ_buf.h>
-#include <linux/ktime.h>
-#include <linux/time64.h>
-#include <linux/string_helpers.h>
-#include <linux/timekeeping.h>
+#include <freax/circ_buf.h>
+#include <freax/ktime.h>
+#include <freax/time64.h>
+#include <freax/string_helpers.h>
+#include <freax/timekeeping.h>
 
 #include "i915_drv.h"
 #include "intel_guc_ct.h"

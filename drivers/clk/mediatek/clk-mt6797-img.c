@@ -3,8 +3,8 @@
  * Author: Kevin Chen <kevin-cw.chen@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/mt6797-clk.h>
 
 #include "clk-mtk.h"

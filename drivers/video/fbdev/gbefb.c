@@ -2,25 +2,25 @@
  *  SGI GBE frame buffer driver
  *
  *  Copyright (C) 1999 Silicon Graphics, Inc. - Jeffrey Newquist
- *  Copyright (C) 2002 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ *  Copyright (C) 2002 Vivien Chappelier <vivien.chappelier@freax-mips.org>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/io.h>
 
 #ifdef CONFIG_MIPS
 #include <asm/addrspace.h>

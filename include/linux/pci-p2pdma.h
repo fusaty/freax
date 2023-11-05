@@ -8,10 +8,10 @@
  * Copyright (c) 2018, Eideticom Inc.
  */
 
-#ifndef _LINUX_PCI_P2PDMA_H
-#define _LINUX_PCI_P2PDMA_H
+#ifndef _freax_PCI_P2PDMA_H
+#define _freax_PCI_P2PDMA_H
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 struct block_device;
 struct scatterlist;
@@ -104,4 +104,4 @@ static inline struct pci_dev *pci_p2pmem_find(struct device *client)
 	return pci_p2pmem_find_many(&client, 1);
 }
 
-#endif /* _LINUX_PCI_P2P_H */
+#endif /* _freax_PCI_P2P_H */

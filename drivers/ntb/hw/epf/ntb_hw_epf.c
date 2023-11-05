@@ -6,11 +6,11 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/ntb.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/ntb.h>
 
 #define NTB_EPF_COMMAND		0x0
 #define CMD_CONFIGURE_DOORBELL	1

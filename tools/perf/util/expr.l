@@ -3,7 +3,7 @@
 %option bison-bridge
 
 %{
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include "expr.h"
 #include "expr-bison.h"
 #include <math.h>

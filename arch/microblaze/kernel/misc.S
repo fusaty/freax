@@ -12,10 +12,10 @@
  * archive for more details.
  */
 
-#include <linux/linkage.h>
-#include <linux/sys.h>
+#include <freax/linkage.h>
+#include <freax/sys.h>
 #include <asm/unistd.h>
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include <asm/mmu.h>
 #include <asm/page.h>
 

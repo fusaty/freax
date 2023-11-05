@@ -20,28 +20,28 @@
  *	PCI Express Specification
  *	PCI System Design Guide
  */
-#ifndef LINUX_PCI_H
-#define LINUX_PCI_H
+#ifndef freax_PCI_H
+#define freax_PCI_H
 
-#include <linux/args.h>
-#include <linux/mod_devicetable.h>
+#include <freax/args.h>
+#include <freax/mod_devicetable.h>
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/resource_ext.h>
-#include <linux/msi_api.h>
-#include <uapi/linux/pci.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/kobject.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/resource_ext.h>
+#include <freax/msi_api.h>
+#include <uapi/freax/pci.h>
 
-#include <linux/pci_ids.h>
+#include <freax/pci_ids.h>
 
 #define PCI_STATUS_ERROR_BITS (PCI_STATUS_DETECTED_PARITY  | \
 			       PCI_STATUS_SIG_SYSTEM_ERROR | \
@@ -64,7 +64,7 @@
  *	7:3 = slot
  *	2:0 = function
  *
- * PCI_DEVFN(), PCI_SLOT(), and PCI_FUNC() are defined in uapi/linux/pci.h.
+ * PCI_DEVFN(), PCI_SLOT(), and PCI_FUNC() are defined in uapi/freax/pci.h.
  * In the interest of not exposing interfaces to user-space unnecessarily,
  * the following kernel-only defines are being added here.
  */
@@ -1643,7 +1643,7 @@ int pci_set_vga_state(struct pci_dev *pdev, bool decode,
 #define PCI_IRQ_ALL_TYPES \
 	(PCI_IRQ_LEGACY | PCI_IRQ_MSI | PCI_IRQ_MSIX)
 
-#include <linux/dmapool.h>
+#include <freax/dmapool.h>
 
 struct msix_entry {
 	u32	vector;	/* Kernel uses to write allocated vector */
@@ -2671,7 +2671,7 @@ static inline bool pci_is_thunderbolt_attached(struct pci_dev *pdev)
 void pci_uevent_ers(struct pci_dev *pdev, enum  pci_ers_result err_type);
 #endif
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #define pci_printk(level, pdev, fmt, arg...) \
 	dev_printk(level, &(pdev)->dev, fmt, ##arg)
@@ -2700,4 +2700,4 @@ void pci_uevent_ers(struct pci_dev *pdev, enum  pci_ers_result err_type);
 	WARN_ONCE(condition, "%s %s: " fmt, \
 		  dev_driver_string(&(pdev)->dev), pci_name(pdev), ##arg)
 
-#endif /* LINUX_PCI_H */
+#endif /* freax_PCI_H */

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <bpf/btf.h>
 #include <test_btf.h>
-#include <linux/btf.h>
+#include <freax/btf.h>
 #include <test_progs.h>
 #include <network_helpers.h>
 

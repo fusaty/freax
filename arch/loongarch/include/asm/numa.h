@@ -9,7 +9,7 @@
 #ifndef _ASM_LOONGARCH_NUMA_H
 #define _ASM_LOONGARCH_NUMA_H
 
-#include <linux/nodemask.h>
+#include <freax/nodemask.h>
 
 #define NODE_ADDRSPACE_SHIFT 44
 

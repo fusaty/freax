@@ -21,10 +21,10 @@
 #include <sys/stat.h>
 #include <sys/vfs.h>
 
-#include <linux/filter.h>
-#include <linux/limits.h>
-#include <linux/magic.h>
-#include <linux/unistd.h>
+#include <freax/filter.h>
+#include <freax/limits.h>
+#include <freax/magic.h>
+#include <freax/unistd.h>
 
 #include <bpf/bpf.h>
 #include <bpf/hashmap.h>
@@ -81,7 +81,7 @@ static bool is_bpffs(const char *path)
 /* Probe whether kernel switched from memlock-based (RLIMIT_MEMLOCK) to
  * memcg-based memory accounting for BPF maps and programs. This was done in
  * commit 97306be45fbe ("Merge branch 'switch to memcg-based memory
- * accounting'"), in Linux 5.11.
+ * accounting'"), in freax 5.11.
  *
  * Libbpf also offers to probe for memcg-based accounting vs rlimit, but does
  * so by checking for the availability of a given BPF helper and this has

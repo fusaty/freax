@@ -6,7 +6,7 @@
 #ifndef __INTEL_CONNECTOR_H__
 #define __INTEL_CONNECTOR_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_connector;
 struct drm_edid;

@@ -1,5 +1,5 @@
-#ifndef __LINUX_ERSPAN_H
-#define __LINUX_ERSPAN_H
+#ifndef __freax_ERSPAN_H
+#define __freax_ERSPAN_H
 
 /*
  * GRE header for ERSPAN type I encapsulation (4 octets [34:37])
@@ -58,10 +58,10 @@
  * GRE proto ERSPAN type I/II = 0x88BE, type III = 0x22EB
  */
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/skbuff.h>
-#include <uapi/linux/erspan.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/skbuff.h>
+#include <uapi/freax/erspan.h>
 
 #define ERSPAN_VERSION	0x1	/* ERSPAN type II */
 #define VER_MASK	0xf000

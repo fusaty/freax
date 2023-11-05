@@ -1,12 +1,12 @@
-#ifndef __LINUX_SPINLOCK_API_UP_H
-#define __LINUX_SPINLOCK_API_UP_H
+#ifndef __freax_SPINLOCK_API_UP_H
+#define __freax_SPINLOCK_API_UP_H
 
-#ifndef __LINUX_INSIDE_SPINLOCK_H
+#ifndef __freax_INSIDE_SPINLOCK_H
 # error "please don't include this file directly"
 #endif
 
 /*
- * include/linux/spinlock_api_up.h
+ * include/freax/spinlock_api_up.h
  *
  * spinlock API implementation on UP-nondebug (inlined implementation)
  *
@@ -89,4 +89,4 @@
 #define _raw_write_unlock_irqrestore(lock, flags) \
 					__UNLOCK_IRQRESTORE(lock, flags)
 
-#endif /* __LINUX_SPINLOCK_API_UP_H */
+#endif /* __freax_SPINLOCK_API_UP_H */

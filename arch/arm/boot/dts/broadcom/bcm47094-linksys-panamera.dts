@@ -32,19 +32,19 @@
 
 		button-wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
 		};
 
 		button-rfkill {
 				label = "WiFi";
-				linux,code = <KEY_RFKILL>;
+				freax,code = <KEY_RFKILL>;
 				gpios = <&chipcommon 16 GPIO_ACTIVE_LOW>;
 		};
 
 		button-reset {
 				label = "Reset";
-				linux,code = <KEY_RESTART>;
+				freax,code = <KEY_RESTART>;
 				gpios = <&chipcommon 17 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -61,7 +61,7 @@
 			label = "bcm53xx:green:usb2";
 			gpios = <&chipcommon 1 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ohci_port2>, <&ehci_port2>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 		led-usb3 {
@@ -69,13 +69,13 @@
 			gpios = <&chipcommon 2 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>,
 					  <&xhci_port1>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 		led-power {
 			label = "bcm53xx:white:power";
 			gpios = <&chipcommon 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-wifi-disabled {

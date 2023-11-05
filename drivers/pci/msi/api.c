@@ -8,8 +8,8 @@
  * Copyright (C) 2022 Linutronix GmbH
  */
 
-#include <linux/export.h>
-#include <linux/irq.h>
+#include <freax/export.h>
+#include <freax/irq.h>
 
 #include "msi.h"
 
@@ -19,7 +19,7 @@
  *
  * Legacy device driver API to enable MSI interrupts mode on device and
  * allocate a single interrupt vector. On success, the allocated vector
- * Linux IRQ will be saved at @dev->irq. The driver must invoke
+ * freax IRQ will be saved at @dev->irq. The driver must invoke
  * pci_disable_msi() on cleanup.
  *
  * NOTE: The newer pci_alloc_irq_vectors() / pci_free_irq_vectors() API
@@ -42,7 +42,7 @@ EXPORT_SYMBOL(pci_enable_msi);
  *
  * Legacy device driver API to disable MSI interrupt mode on device,
  * free earlier allocated interrupt vectors, and restore INTx emulation.
- * The PCI device Linux IRQ (@dev->irq) is restored to its default
+ * The PCI device freax IRQ (@dev->irq) is restored to its default
  * pin-assertion IRQ. This is the cleanup pair of pci_enable_msi().
  *
  * NOTE: The newer pci_alloc_irq_vectors() / pci_free_irq_vectors() API
@@ -98,7 +98,7 @@ EXPORT_SYMBOL(pci_msix_vec_count);
  * pair should, in general, be used instead.
  *
  * Return: number of MSI-X vectors allocated (which might be smaller
- * than @maxvecs), where Linux IRQ numbers for such allocated vectors
+ * than @maxvecs), where freax IRQ numbers for such allocated vectors
  * are saved back in the @entries array elements' "vector" field. Return
  * -ENOSPC if less than @minvecs interrupt vectors are available.
  * Return -EINVAL if one of the passed @entries members "entry" field
@@ -141,7 +141,7 @@ EXPORT_SYMBOL_GPL(pci_msix_can_alloc_dyn);
  * Return: A struct msi_map
  *
  *	On success msi_map::index contains the allocated index (>= 0) and
- *	msi_map::virq contains the allocated Linux interrupt number (> 0).
+ *	msi_map::virq contains the allocated freax interrupt number (> 0).
  *
  *	On fail msi_map::index contains the error code and msi_map::virq
  *	is set to 0.
@@ -185,7 +185,7 @@ EXPORT_SYMBOL_GPL(pci_msix_free_irq);
  *
  * Legacy device driver API to disable MSI-X interrupt mode on device,
  * free earlier-allocated interrupt vectors, and restore INTx.
- * The PCI device Linux IRQ (@dev->irq) is restored to its default pin
+ * The PCI device freax IRQ (@dev->irq) is restored to its default pin
  * assertion IRQ. This is the cleanup pair of pci_enable_msix_range().
  *
  * NOTE: The newer pci_alloc_irq_vectors() / pci_free_irq_vectors() API
@@ -224,7 +224,7 @@ EXPORT_SYMBOL(pci_disable_msix);
  * higher precedence over legacy INTx emulation.
  *
  * Upon a successful allocation, the caller should use pci_irq_vector()
- * to get the Linux IRQ number to be passed to request_threaded_irq().
+ * to get the freax IRQ number to be passed to request_threaded_irq().
  * The driver must call pci_free_irq_vectors() on cleanup.
  *
  * Return: number of allocated vectors (which might be smaller than
@@ -299,7 +299,7 @@ int pci_alloc_irq_vectors_affinity(struct pci_dev *dev, unsigned int min_vecs,
 EXPORT_SYMBOL(pci_alloc_irq_vectors_affinity);
 
 /**
- * pci_irq_vector() - Get Linux IRQ number of a device interrupt vector
+ * pci_irq_vector() - Get freax IRQ number of a device interrupt vector
  * @dev: the PCI device to operate on
  * @nr:  device-relative interrupt vector index (0-based); has different
  *       meanings, depending on interrupt mode:
@@ -308,7 +308,7 @@ EXPORT_SYMBOL(pci_alloc_irq_vectors_affinity);
  *         * MSI       the index of the enabled MSI vectors
  *         * INTx      must be 0
  *
- * Return: the Linux IRQ number, or -EINVAL if @nr is out of range
+ * Return: the freax IRQ number, or -EINVAL if @nr is out of range
  */
 int pci_irq_vector(struct pci_dev *dev, unsigned int nr)
 {
@@ -387,7 +387,7 @@ EXPORT_SYMBOL(pci_irq_get_affinity);
  * Return: A struct msi_map
  *
  *	On success msi_map::index contains the allocated index (>= 0) and
- *	msi_map::virq the allocated Linux interrupt number (> 0).
+ *	msi_map::virq the allocated freax interrupt number (> 0).
  *
  *	On fail msi_map::index contains the error code and msi_map::virq
  *	is set to 0.
@@ -434,7 +434,7 @@ EXPORT_SYMBOL(pci_free_irq_vectors);
  * pci_restore_msi_state() - Restore cached MSI(-X) state on device
  * @dev: the PCI device to operate on
  *
- * Write the Linux-cached MSI(-X) state back on device. This is
+ * Write the freax-cached MSI(-X) state back on device. This is
  * typically useful upon system resume, or after an error-recovery PCI
  * adapter reset.
  */

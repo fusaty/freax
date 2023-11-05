@@ -6,19 +6,19 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/math64.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
 
 #include "cgu.h"
 

@@ -6,35 +6,35 @@
  *  Support of BIGMEM added by Gerhard Wichert, Siemens AG, July 1999
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/memory_hotplug.h>
-#include <linux/initrd.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/pci.h>
+#include <freax/pfn.h>
+#include <freax/poison.h>
+#include <freax/memblock.h>
+#include <freax/proc_fs.h>
+#include <freax/memory_hotplug.h>
+#include <freax/initrd.h>
+#include <freax/cpumask.h>
+#include <freax/gfp.h>
 
 #include <asm/asm.h>
 #include <asm/bios_ebda.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/dma.h>
 #include <asm/fixmap.h>
 #include <asm/e820/api.h>
@@ -711,7 +711,7 @@ static void __init test_wp_bit(void)
 	}
 
 	printk(KERN_CONT "No.\n");
-	panic("Linux doesn't support CPUs with broken WP.");
+	panic("freax doesn't support CPUs with broken WP.");
 }
 
 void __init mem_init(void)

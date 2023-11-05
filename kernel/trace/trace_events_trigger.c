@@ -2,15 +2,15 @@
 /*
  * trace_events_trigger - trace event triggers
  *
- * Copyright (C) 2013 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2013 Tom Zanussi <tom.zanussi@freax.intel.com>
  */
 
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <freax/security.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/rculist.h>
 
 #include "trace.h"
 

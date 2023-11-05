@@ -4,15 +4,15 @@
 // Copyright (c) 2012 Samsung Electronics Co., Ltd.
 // Author: Joonyoung Shim <jy0922.shim@samsung.com>
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/i2c.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 /* Write only registers */
 #define MMS114_MODE_CONTROL		0x01
@@ -507,29 +507,29 @@ static int mms114_probe(struct i2c_client *client)
 	data->type = (enum mms_type)match_data;
 
 	data->num_keycodes = device_property_count_u32(&client->dev,
-						       "linux,keycodes");
+						       "freax,keycodes");
 	if (data->num_keycodes == -EINVAL) {
 		data->num_keycodes = 0;
 	} else if (data->num_keycodes < 0) {
 		dev_err(&client->dev,
-			"Unable to parse linux,keycodes property: %d\n",
+			"Unable to parse freax,keycodes property: %d\n",
 			data->num_keycodes);
 		return data->num_keycodes;
 	} else if (data->num_keycodes > MMS114_MAX_TOUCHKEYS) {
 		dev_warn(&client->dev,
-			"Found %d linux,keycodes but max is %d, ignoring the rest\n",
+			"Found %d freax,keycodes but max is %d, ignoring the rest\n",
 			 data->num_keycodes, MMS114_MAX_TOUCHKEYS);
 		data->num_keycodes = MMS114_MAX_TOUCHKEYS;
 	}
 
 	if (data->num_keycodes > 0) {
 		error = device_property_read_u32_array(&client->dev,
-						       "linux,keycodes",
+						       "freax,keycodes",
 						       data->keycodes,
 						       data->num_keycodes);
 		if (error) {
 			dev_err(&client->dev,
-				"Unable to read linux,keycodes values: %d\n",
+				"Unable to read freax,keycodes values: %d\n",
 				error);
 			return error;
 		}

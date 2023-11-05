@@ -2,7 +2,7 @@
 #ifndef VFIO_PCI_PRIV_H
 #define VFIO_PCI_PRIV_H
 
-#include <linux/vfio_pci_core.h>
+#include <freax/vfio_pci_core.h>
 
 /* Special capability IDs predefined access */
 #define PCI_CAP_ID_INVALID		0xFF	/* default raw access */

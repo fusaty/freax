@@ -5,21 +5,21 @@
  * Author:  Maxime Coquelin <mcoquelin.stm32@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/hwspinlock.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/hwspinlock.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/syscore_ops.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

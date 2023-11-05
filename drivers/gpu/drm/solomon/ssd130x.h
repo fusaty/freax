@@ -19,7 +19,7 @@
 #include <drm/drm_encoder.h>
 #include <drm/drm_plane_helper.h>
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 #define SSD13XX_DATA				0x40
 #define SSD13XX_COMMAND				0x80

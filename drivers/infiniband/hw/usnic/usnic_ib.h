@@ -34,8 +34,8 @@
 #ifndef USNIC_IB_H_
 #define USNIC_IB_H_
 
-#include <linux/iommu.h>
-#include <linux/netdevice.h>
+#include <freax/iommu.h>
+#include <freax/netdevice.h>
 
 #include <rdma/ib_verbs.h>
 

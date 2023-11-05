@@ -6,7 +6,7 @@
 #ifndef _H_JFS_UNICODE
 #define _H_JFS_UNICODE
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 #include "../nls/nls_ucs2_data.h"
 #include "jfs_types.h"

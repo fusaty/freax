@@ -7,20 +7,20 @@
  *   Wei WANG <wei_wang@realsil.com.cn>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/card.h>
-#include <linux/rtsx_pci.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/workqueue.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/card.h>
+#include <freax/rtsx_pci.h>
 #include <asm/unaligned.h>
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
 struct realtek_pci_sdmmc {
 	struct platform_device	*pdev;

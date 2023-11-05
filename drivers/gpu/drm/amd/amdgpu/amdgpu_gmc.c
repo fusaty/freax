@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #ifdef CONFIG_X86
 #include <asm/hypervisor.h>
 #endif

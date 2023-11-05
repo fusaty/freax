@@ -8,10 +8,10 @@
  * This file contains all of the code that is specific to the HFI chip
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
 
 #include "hfi.h"
 #include "trace.h"
@@ -8706,7 +8706,7 @@ int write_lcb_csr(struct hfi1_devdata *dd, u32 addr, u64 data)
 
 /*
  * Returns:
- *	< 0 = Linux error, not able to get access
+ *	< 0 = freax error, not able to get access
  *	> 0 = 8051 command RETURN_CODE
  */
 static int do_8051_command(struct hfi1_devdata *dd, u32 type, u64 in_data,
@@ -14665,7 +14665,7 @@ static int init_rxe(struct hfi1_devdata *dd)
 
 	/*
 	 * make sure RcvCtrl.RcvWcb <= PCIe Device Control
-	 * Register Max_Payload_Size (PCI_EXP_DEVCTL in Linux PCIe config
+	 * Register Max_Payload_Size (PCI_EXP_DEVCTL in freax PCIe config
 	 * space, PciCfgCap2.MaxPayloadSize in HFI).  There is only one
 	 * invalid configuration: RcvCtrl.RcvWcb set to its max of 256 and
 	 * Max_PayLoad_Size set to its minimum of 128.

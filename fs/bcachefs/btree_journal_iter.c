@@ -5,7 +5,7 @@
 #include "btree_journal_iter.h"
 #include "journal_io.h"
 
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 /*
  * For managing keys we read from the journal: until journal replay works normal

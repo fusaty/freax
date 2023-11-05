@@ -4,21 +4,21 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/uaccess.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/xattr.h>
-#include <linux/falloc.h>
-#include <linux/fsnotify.h>
-#include <linux/dcache.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/xacct.h>
-#include <linux/crc32c.h>
-#include <linux/namei.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/uaccess.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
+#include <freax/xattr.h>
+#include <freax/falloc.h>
+#include <freax/fsnotify.h>
+#include <freax/dcache.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/xacct.h>
+#include <freax/crc32c.h>
+#include <freax/namei.h>
 
 #include "glob.h"
 #include "oplock.h"
@@ -633,7 +633,7 @@ int ksmbd_vfs_link(struct ksmbd_work *work, const char *oldname,
 
 	err = kern_path(oldname, LOOKUP_NO_SYMLINKS, &oldpath);
 	if (err) {
-		pr_err("cannot get linux path for %s, err = %d\n",
+		pr_err("cannot get freax path for %s, err = %d\n",
 		       oldname, err);
 		goto out1;
 	}
@@ -933,7 +933,7 @@ int ksmbd_vfs_setxattr(struct mnt_idmap *idmap,
 }
 
 /**
- * ksmbd_vfs_set_fadvise() - convert smb IO caching options to linux options
+ * ksmbd_vfs_set_fadvise() - convert smb IO caching options to freax options
  * @filp:	file pointer for IO
  * @options:	smb IO options
  */

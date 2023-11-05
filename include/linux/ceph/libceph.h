@@ -2,28 +2,28 @@
 #ifndef _FS_CEPH_LIBCEPH_H
 #define _FS_CEPH_LIBCEPH_H
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
 #include <asm/unaligned.h>
-#include <linux/backing-dev.h>
-#include <linux/completion.h>
-#include <linux/exportfs.h>
-#include <linux/bug.h>
-#include <linux/fs.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <freax/backing-dev.h>
+#include <freax/completion.h>
+#include <freax/exportfs.h>
+#include <freax/bug.h>
+#include <freax/fs.h>
+#include <freax/mempool.h>
+#include <freax/pagemap.h>
+#include <freax/wait.h>
+#include <freax/writeback.h>
+#include <freax/slab.h>
+#include <freax/refcount.h>
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/msgpool.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/ceph_fs.h>
-#include <linux/ceph/string_table.h>
+#include <freax/ceph/types.h>
+#include <freax/ceph/messenger.h>
+#include <freax/ceph/msgpool.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/osd_client.h>
+#include <freax/ceph/ceph_fs.h>
+#include <freax/ceph/string_table.h>
 
 /*
  * mount options

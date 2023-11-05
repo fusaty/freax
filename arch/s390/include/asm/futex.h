@@ -2,8 +2,8 @@
 #ifndef _ASM_S390_FUTEX_H
 #define _ASM_S390_FUTEX_H
 
-#include <linux/uaccess.h>
-#include <linux/futex.h>
+#include <freax/uaccess.h>
+#include <freax/futex.h>
 #include <asm/asm-extable.h>
 #include <asm/mmu_context.h>
 #include <asm/errno.h>

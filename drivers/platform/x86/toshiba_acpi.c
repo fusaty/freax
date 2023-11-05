@@ -13,7 +13,7 @@
  *  Credits:
  *	Jonathan A. Buzzard - Toshiba HCI info, and critical tips on reverse
  *		engineering the Windows drivers
- *	Yasushi Nagato - changes for linux kernel 2.4 -> 2.5
+ *	Yasushi Nagato - changes for freax kernel 2.4 -> 2.5
  *	Rob Miller - TV out and hotkeys help
  */
 
@@ -22,29 +22,29 @@
 #define TOSHIBA_ACPI_VERSION	"0.24"
 #define PROC_INTERFACE_VERSION	1
 
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/i8042.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/rfkill.h>
-#include <linux/hwmon.h>
-#include <linux/iio/iio.h>
-#include <linux/toshiba.h>
+#include <freax/compiler.h>
+#include <freax/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/backlight.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/i8042.h>
+#include <freax/acpi.h>
+#include <freax/uaccess.h>
+#include <freax/miscdevice.h>
+#include <freax/rfkill.h>
+#include <freax/hwmon.h>
+#include <freax/iio/iio.h>
+#include <freax/toshiba.h>
 #include <acpi/battery.h>
 #include <acpi/video.h>
 

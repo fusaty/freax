@@ -8,10 +8,10 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_PINMUX_H
-#define __LINUX_PINCTRL_PINMUX_H
+#ifndef __freax_PINCTRL_PINMUX_H
+#define __freax_PINCTRL_PINMUX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pinctrl_dev;
 struct pinctrl_gpio_range;
@@ -81,4 +81,4 @@ struct pinmux_ops {
 	bool strict;
 };
 
-#endif /* __LINUX_PINCTRL_PINMUX_H */
+#endif /* __freax_PINCTRL_PINMUX_H */

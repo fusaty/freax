@@ -3,12 +3,12 @@
  * USB Type-C Connector Class Port Mapping Utility
  *
  * Copyright (C) 2021, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/component.h>
-#include <linux/usb.h>
+#include <freax/acpi.h>
+#include <freax/component.h>
+#include <freax/usb.h>
 
 #include "class.h"
 

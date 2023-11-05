@@ -3,8 +3,8 @@
 #include "../codecs/wm8994.h"
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
  /*
   * Default CFG switch settings to use this driver:

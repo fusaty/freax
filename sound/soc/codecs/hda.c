@@ -5,8 +5,8 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 #include <sound/soc.h>
 #include <sound/hdaudio_ext.h>
 #include <sound/hda_i915.h>

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2015-2016 Quantenna Communications. All rights reserved. */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 
 #include "core.h"
 #include "commands.h"

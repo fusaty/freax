@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* $Id: capi.h,v 1.4.6.1 2001/09/23 22:25:05 kai Exp $
  * 
- * CAPI 2.0 Interface for Linux
+ * CAPI 2.0 Interface for freax
  * 
  * Copyright 1997 by Carsten Paeth (calle@calle.in-berlin.de)
  * 
@@ -10,13 +10,13 @@
  *
  */
 
-#ifndef __LINUX_CAPI_H__
-#define __LINUX_CAPI_H__
+#ifndef __freax_CAPI_H__
+#define __freax_CAPI_H__
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 #ifndef __KERNEL__
-#include <linux/kernelcapi.h>
+#include <freax/kernelcapi.h>
 #endif
 
 /*
@@ -131,4 +131,4 @@ typedef union capi_ioctl_struct {
 
 #define CAPI_NCCI_GETUNIT	_IOR('C',0x27, unsigned)
 
-#endif				/* __LINUX_CAPI_H__ */
+#endif				/* __freax_CAPI_H__ */

@@ -3,8 +3,8 @@
 #ifndef _ASM_RISCV_KFENCE_H
 #define _ASM_RISCV_KFENCE_H
 
-#include <linux/kfence.h>
-#include <linux/pfn.h>
+#include <freax/kfence.h>
+#include <freax/pfn.h>
 #include <asm-generic/pgalloc.h>
 #include <asm/pgtable.h>
 

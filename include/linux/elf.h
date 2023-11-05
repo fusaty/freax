@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ELF_H
-#define _LINUX_ELF_H
+#ifndef _freax_ELF_H
+#define _freax_ELF_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/elf.h>
-#include <uapi/linux/elf.h>
+#include <uapi/freax/elf.h>
 
 #ifndef elf_read_implies_exec
   /* Executables for which elf_read_implies_exec() returns TRUE will
@@ -14,7 +14,7 @@
 #endif
 #ifndef SET_PERSONALITY
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX | (current->personality & (~PER_MASK)))
+	set_personality(PER_freax | (current->personality & (~PER_MASK)))
 #endif
 
 #ifndef SET_PERSONALITY2
@@ -109,4 +109,4 @@ static inline int arch_elf_adjust_prot(int prot,
 }
 #endif
 
-#endif /* _LINUX_ELF_H */
+#endif /* _freax_ELF_H */

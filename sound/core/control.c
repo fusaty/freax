@@ -4,16 +4,16 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/threads.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/math64.h>
-#include <linux/sched/signal.h>
+#include <freax/threads.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/math64.h>
+#include <freax/sched/signal.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>

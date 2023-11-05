@@ -2,7 +2,7 @@
 /*
  * Apple DART (Device Address Resolution Table) IOMMU driver
  *
- * Copyright (C) 2021 The Asahi Linux Contributors
+ * Copyright (C) 2021 The Asahi freax Contributors
  *
  * Based on arm/arm-smmu/arm-ssmu.c and arm/arm-smmu-v3/arm-smmu-v3.c
  *  Copyright (C) 2013 ARM Limited
@@ -11,26 +11,26 @@
  *  Copyright (c) 2011,2016 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dev_printk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/dev_printk.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io-pgtable.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_iommu.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/swab.h>
+#include <freax/types.h>
 
 #include "dma-iommu.h"
 

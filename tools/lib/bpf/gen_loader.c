@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/filter.h>
+#include <freax/filter.h>
 #include <sys/param.h>
 #include "btf.h"
 #include "bpf.h"
@@ -706,13 +706,13 @@ static void emit_relo_kfunc_btf(struct bpf_gen *gen, struct ksym_relo_desc *relo
 	/* load fd_array slot pointer */
 	emit2(gen, BPF_LD_IMM64_RAW_FULL(BPF_REG_0, BPF_PSEUDO_MAP_IDX_VALUE,
 					 0, 0, 0, blob_fd_array_off(gen, btf_fd_idx)));
-	/* store BTF fd in slot, 0 for vmlinux */
+	/* store BTF fd in slot, 0 for vmfreax */
 	emit(gen, BPF_STX_MEM(BPF_W, BPF_REG_0, BPF_REG_9, 0));
 	/* jump to insn[insn_idx].off store if fd denotes module BTF */
 	emit(gen, BPF_JMP_IMM(BPF_JNE, BPF_REG_9, 0, 2));
 	/* set the default value for off */
 	emit(gen, BPF_ST_MEM(BPF_H, BPF_REG_8, offsetof(struct bpf_insn, off), 0));
-	/* skip BTF fd store for vmlinux BTF */
+	/* skip BTF fd store for vmfreax BTF */
 	emit(gen, BPF_JMP_IMM(BPF_JA, 0, 0, 1));
 	/* store index into insn[insn_idx].off */
 	emit(gen, BPF_ST_MEM(BPF_H, BPF_REG_8, offsetof(struct bpf_insn, off), btf_fd_idx));

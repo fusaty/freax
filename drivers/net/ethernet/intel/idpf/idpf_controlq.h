@@ -4,7 +4,7 @@
 #ifndef _IDPF_CONTROLQ_H_
 #define _IDPF_CONTROLQ_H_
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "idpf_controlq_api.h"
 

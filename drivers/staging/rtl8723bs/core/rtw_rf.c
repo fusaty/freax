@@ -6,7 +6,7 @@
  ******************************************************************************/
 
 #include <drv_types.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 static const u32 ch_freq_map[] = {
 	2412,

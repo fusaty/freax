@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BRIDGE_NETFILTER_H
-#define __LINUX_BRIDGE_NETFILTER_H
+#ifndef __freax_BRIDGE_NETFILTER_H
+#define __freax_BRIDGE_NETFILTER_H
 
-#include <uapi/linux/netfilter_bridge.h>
-#include <linux/skbuff.h>
+#include <uapi/freax/netfilter_bridge.h>
+#include <freax/skbuff.h>
 
 struct nf_bridge_frag_data {
 	char    mac[ETH_HLEN];

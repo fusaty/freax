@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2009 Atsushi Nemoto
  */
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
 
 #include "dmaengine.h"
 #include "txx9dmac.h"

@@ -4,10 +4,10 @@
  * Author: Mimi Zohar <zohar@us.ibm.com>
  */
 
-#ifndef _LINUX_INTEGRITY_H
-#define _LINUX_INTEGRITY_H
+#ifndef _freax_INTEGRITY_H
+#define _freax_INTEGRITY_H
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 enum integrity_status {
 	INTEGRITY_PASS = 0,
@@ -55,4 +55,4 @@ static inline int integrity_kernel_module_request(char *kmod_name)
 
 #endif /* CONFIG_INTEGRITY_ASYMMETRIC_KEYS */
 
-#endif /* _LINUX_INTEGRITY_H */
+#endif /* _freax_INTEGRITY_H */

@@ -5,13 +5,13 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 
 /* Mixer Controls */
 
-#include <linux/pm_runtime.h>
-#include <linux/leds.h>
+#include <freax/pm_runtime.h>
+#include <freax/leds.h>
 #include "sof-priv.h"
 #include "sof-audio.h"
 

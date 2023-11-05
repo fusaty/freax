@@ -13,10 +13,10 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <stdbool.h>
-#include <linux/virtio_types.h>
-#include <linux/vhost.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ring.h>
+#include <freax/virtio_types.h>
+#include <freax/vhost.h>
+#include <freax/virtio.h>
+#include <freax/virtio_ring.h>
 #include "../../drivers/vhost/test.h"
 
 #define RANDOM_BATCH -1

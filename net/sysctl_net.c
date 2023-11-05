@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*-
+/* -*- freax-c -*-
  * sysctl_net.c: sysctl interface to net subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
@@ -12,10 +12,10 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/sysctl.h>
-#include <linux/nsproxy.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/sysctl.h>
+#include <freax/nsproxy.h>
 
 #include <net/sock.h>
 
@@ -24,7 +24,7 @@
 #endif
 
 #ifdef CONFIG_NET
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 #endif
 
 static struct ctl_table_set *

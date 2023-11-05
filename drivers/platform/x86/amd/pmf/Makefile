@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for linux/drivers/platform/x86/amd/pmf
+# Makefile for freax/drivers/platform/x86/amd/pmf
 # AMD Platform Management Framework
 #
 

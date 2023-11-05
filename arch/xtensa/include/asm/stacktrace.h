@@ -10,7 +10,7 @@
 #ifndef _XTENSA_STACKTRACE_H
 #define _XTENSA_STACKTRACE_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 struct stackframe {
 	unsigned long pc;

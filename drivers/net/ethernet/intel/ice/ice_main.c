@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2018-2023, Intel Corporation. */
 
-/* Intel(R) Ethernet Connection E800 Series Linux Driver */
+/* Intel(R) Ethernet Connection E800 Series freax Driver */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <generated/utsrelease.h>
-#include <linux/crash_dump.h>
+#include <freax/crash_dump.h>
 #include "ice.h"
 #include "ice_base.h"
 #include "ice_lib.h"
@@ -25,7 +25,7 @@
 #include "ice_vsi_vlan_ops.h"
 #include <net/xdp_sock_drv.h>
 
-#define DRV_SUMMARY	"Intel(R) Ethernet Connection E800 Series Linux Driver"
+#define DRV_SUMMARY	"Intel(R) Ethernet Connection E800 Series freax Driver"
 static const char ice_driver_string[] = DRV_SUMMARY;
 static const char ice_copyright[] = "Copyright (c) 2018, Intel Corporation.";
 
@@ -33,7 +33,7 @@ static const char ice_copyright[] = "Copyright (c) 2018, Intel Corporation.";
 #define ICE_DDP_PKG_PATH	"intel/ice/ddp/"
 #define ICE_DDP_PKG_FILE	ICE_DDP_PKG_PATH "ice.pkg"
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <freax.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 MODULE_FIRMWARE(ICE_DDP_PKG_FILE);

@@ -12,19 +12,19 @@
 
 #define pr_fmt(fmt) "GICv2m: " fmt
 
-#include <linux/acpi.h>
-#include <linux/iommu.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/irqchip/arm-gic-common.h>
+#include <freax/acpi.h>
+#include <freax/iommu.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/irqchip/arm-gic-common.h>
 
 /*
 * MSI_TYPER:

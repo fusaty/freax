@@ -6,12 +6,12 @@
 // Copyright (C) 2019 Chris Brandt.
 //
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 #include <sound/soc.h>
 
 /* REGISTER OFFSET */

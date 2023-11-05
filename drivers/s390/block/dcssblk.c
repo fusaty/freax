@@ -8,19 +8,19 @@
 #define KMSG_COMPONENT "dcssblk"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/pfn_t.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/pfn_t.h>
+#include <freax/uio.h>
+#include <freax/dax.h>
+#include <freax/io.h>
 #include <asm/extmem.h>
 
 #define DCSSBLK_NAME "dcssblk"

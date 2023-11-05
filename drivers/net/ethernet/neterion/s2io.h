@@ -1,5 +1,5 @@
 /************************************************************************
- * s2io.h: A Linux PCI-X Ethernet driver for Neterion 10GbE Server NIC
+ * s2io.h: A freax PCI-X Ethernet driver for Neterion 10GbE Server NIC
  * Copyright(c) 2002-2010 Exar Corp.
 
  * This software may be used and distributed according to the terms of
@@ -10,7 +10,7 @@
  * system is licensed under the GPL.
  * See the file COPYING in this distribution for more information.
  ************************************************************************/
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #ifndef _S2IO_H
 #define _S2IO_H
 

@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_unseal.c
+ *  freax/net/sunrpc/gss_krb5_unseal.c
  *
  *  Adapted from MIT Kerberos 5-1.2.1 lib/gssapi/krb5/k5unseal.c
  *
@@ -57,9 +57,9 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
+#include <freax/types.h>
+#include <freax/jiffies.h>
+#include <freax/sunrpc/gss_krb5.h>
 
 #include "gss_krb5_internal.h"
 

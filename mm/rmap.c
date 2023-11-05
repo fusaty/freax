@@ -53,28 +53,28 @@
  *         page->flags PG_locked (lock_page)
  */
 
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/hugetlb.h>
-#include <linux/huge_mm.h>
-#include <linux/backing-dev.h>
-#include <linux/page_idle.h>
-#include <linux/memremap.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/mm_inline.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/pagemap.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/ksm.h>
+#include <freax/rmap.h>
+#include <freax/rcupdate.h>
+#include <freax/export.h>
+#include <freax/memcontrol.h>
+#include <freax/mmu_notifier.h>
+#include <freax/migrate.h>
+#include <freax/hugetlb.h>
+#include <freax/huge_mm.h>
+#include <freax/backing-dev.h>
+#include <freax/page_idle.h>
+#include <freax/memremap.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/mm_inline.h>
 
 #include <asm/tlbflush.h>
 

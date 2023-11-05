@@ -7,8 +7,8 @@
 #include "clk-pll.h"
 
 #include <dt-bindings/clock/mt8195-clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 
 #define MT8195_PLL_FMAX		(3800UL * MHZ)
 #define MT8195_PLL_FMIN		(1500UL * MHZ)

@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Nvidia Technologies Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxcpld.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_data/mlxcpld.h>
+#include <freax/platform_data/mlxreg.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* I2C bus IO offsets */
 #define MLXREG_LC_REG_CPLD1_VER_OFFSET		0x2500

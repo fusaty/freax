@@ -5,12 +5,12 @@
  * Copyright (C) 2023 Hans de Goede <hansg@kernel.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dev_printk.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dev_printk.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 

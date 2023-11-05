@@ -5,8 +5,8 @@
  * Copyright (C) 2011 Jon Medhurst <tixy@yxit.co.uk>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/opcodes.h>
 #include <asm/probes.h>
 

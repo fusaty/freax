@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/device.h>
-#include <linux/semaphore.h>
+#include <freax/mlx4/cmd.h>
+#include <freax/mlx4/device.h>
+#include <freax/semaphore.h>
 #include <rdma/ib_smi.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
 
 #include <asm/io.h>
 

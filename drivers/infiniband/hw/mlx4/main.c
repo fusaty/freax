@@ -31,16 +31,16 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_vlan.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
 
 #include <net/ipv6.h>
 #include <net/addrconf.h>
@@ -53,9 +53,9 @@
 
 #include <net/bonding.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
+#include <freax/mlx4/driver.h>
+#include <freax/mlx4/cmd.h>
+#include <freax/mlx4/qp.h>
 
 #include "mlx4_ib.h"
 #include <rdma/mlx4-abi.h>

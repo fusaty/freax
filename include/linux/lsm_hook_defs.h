@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 /*
- * Linux Security Module Hook declarations.
+ * freax Security Module Hook declarations.
  *
  * Copyright (C) 2001 WireX Communications, Inc <chris@wirex.com>
  * Copyright (C) 2001 Greg Kroah-Hartman <greg@kroah.com>
@@ -22,7 +22,7 @@
  *
  * struct security_hook_heads {
  *   #define LSM_HOOK(RET, DEFAULT, NAME, ...) struct hlist_head NAME;
- *   #include <linux/lsm_hook_defs.h>
+ *   #include <freax/lsm_hook_defs.h>
  *   #undef LSM_HOOK
  * };
  */
@@ -49,11 +49,11 @@ LSM_HOOK(int, 0, syslog, int type)
 LSM_HOOK(int, 0, settime, const struct timespec64 *ts,
 	 const struct timezone *tz)
 LSM_HOOK(int, 0, vm_enough_memory, struct mm_struct *mm, long pages)
-LSM_HOOK(int, 0, bprm_creds_for_exec, struct linux_binprm *bprm)
-LSM_HOOK(int, 0, bprm_creds_from_file, struct linux_binprm *bprm, const struct file *file)
-LSM_HOOK(int, 0, bprm_check_security, struct linux_binprm *bprm)
-LSM_HOOK(void, LSM_RET_VOID, bprm_committing_creds, const struct linux_binprm *bprm)
-LSM_HOOK(void, LSM_RET_VOID, bprm_committed_creds, const struct linux_binprm *bprm)
+LSM_HOOK(int, 0, bprm_creds_for_exec, struct freax_binprm *bprm)
+LSM_HOOK(int, 0, bprm_creds_from_file, struct freax_binprm *bprm, const struct file *file)
+LSM_HOOK(int, 0, bprm_check_security, struct freax_binprm *bprm)
+LSM_HOOK(void, LSM_RET_VOID, bprm_committing_creds, const struct freax_binprm *bprm)
+LSM_HOOK(void, LSM_RET_VOID, bprm_committed_creds, const struct freax_binprm *bprm)
 LSM_HOOK(int, 0, fs_context_submount, struct fs_context *fc, struct super_block *reference)
 LSM_HOOK(int, 0, fs_context_dup, struct fs_context *fc,
 	 struct fs_context *src_sc)

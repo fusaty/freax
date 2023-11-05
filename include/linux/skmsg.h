@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (c) 2017 - 2018 Covalent IO, Inc. http://covalent.io */
 
-#ifndef _LINUX_SKMSG_H
-#define _LINUX_SKMSG_H
+#ifndef _freax_SKMSG_H
+#define _freax_SKMSG_H
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/scatterlist.h>
+#include <freax/skbuff.h>
 
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -556,4 +556,4 @@ static inline void skb_bpf_redirect_clear(struct sk_buff *skb)
 	skb->_sk_redir = 0;
 }
 #endif /* CONFIG_NET_SOCK_MSG */
-#endif /* _LINUX_SKMSG_H */
+#endif /* _freax_SKMSG_H */

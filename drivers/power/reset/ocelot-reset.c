@@ -5,15 +5,15 @@
  * License: Dual MIT/GPL
  * Copyright (c) 2017 Microsemi Corporation
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/notifier.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
 
 struct reset_props {
 	const char *syscon;

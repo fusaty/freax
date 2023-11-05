@@ -5,30 +5,30 @@
  * virtio-net server in host kernel.
  */
 
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/virtio_net.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/signal.h>
-#include <linux/vmalloc.h>
+#include <freax/compat.h>
+#include <freax/eventfd.h>
+#include <freax/vhost.h>
+#include <freax/virtio_net.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/signal.h>
+#include <freax/vmalloc.h>
 
-#include <linux/net.h>
-#include <linux/if_packet.h>
-#include <linux/if_arp.h>
-#include <linux/if_tun.h>
-#include <linux/if_macvlan.h>
-#include <linux/if_tap.h>
-#include <linux/if_vlan.h>
-#include <linux/skb_array.h>
-#include <linux/skbuff.h>
+#include <freax/net.h>
+#include <freax/if_packet.h>
+#include <freax/if_arp.h>
+#include <freax/if_tun.h>
+#include <freax/if_macvlan.h>
+#include <freax/if_tap.h>
+#include <freax/if_vlan.h>
+#include <freax/skb_array.h>
+#include <freax/skbuff.h>
 
 #include <net/sock.h>
 #include <net/xdp.h>

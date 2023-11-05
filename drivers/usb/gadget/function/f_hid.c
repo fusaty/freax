@@ -5,17 +5,17 @@
  * Copyright (C) 2010 Fabien Chouteau <fabien.chouteau@barco.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hid.h>
-#include <linux/idr.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/usb/g_hid.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/hid.h>
+#include <freax/idr.h>
+#include <freax/cdev.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/usb/g_hid.h>
 
 #include "u_f.h"
 #include "u_hid.h"

@@ -5,17 +5,17 @@
  * USB Type-C Port Controller Interface.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/tcpci.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/typec.h>
 
 #define	PD_RETRY_COUNT_DEFAULT			3
 #define	PD_RETRY_COUNT_3_0_OR_HIGHER		2

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET         An implementation of the TCP/IP protocol suite for the LINUX
+ * INET         An implementation of the TCP/IP protocol suite for the freax
  *              operating system.  INET is implemented using the  BSD Socket
  *              interface as the means of communication with the user level.
  *
@@ -14,11 +14,11 @@
  *              2 of the License, or (at your option) any later version.
  */
 
-#ifndef _LINUX_IF_ARCNET_H
-#define _LINUX_IF_ARCNET_H
+#ifndef _freax_IF_ARCNET_H
+#define _freax_IF_ARCNET_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 /*
  *    These are the defined ARCnet Protocol ID's.
@@ -127,4 +127,4 @@ struct archdr {
 	} soft;
 };
 
-#endif				/* _LINUX_IF_ARCNET_H */
+#endif				/* _freax_IF_ARCNET_H */

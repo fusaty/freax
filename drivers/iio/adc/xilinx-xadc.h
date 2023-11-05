@@ -9,9 +9,9 @@
 #ifndef __IIO_XILINX_XADC__
 #define __IIO_XILINX_XADC__
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
 
 struct iio_dev;
 struct clk;

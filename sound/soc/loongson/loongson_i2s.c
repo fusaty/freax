@@ -6,13 +6,13 @@
 // Author: Yingkun Meng <mengyingkun@loongson.cn>
 //
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-mapping.h>
 #include <sound/soc.h>
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/pcm_params.h>
 #include "loongson_i2s.h"
 

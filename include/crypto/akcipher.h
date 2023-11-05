@@ -8,8 +8,8 @@
 #ifndef _CRYPTO_AKCIPHER_H
 #define _CRYPTO_AKCIPHER_H
 
-#include <linux/atomic.h>
-#include <linux/crypto.h>
+#include <freax/atomic.h>
+#include <freax/crypto.h>
 
 /**
  * struct akcipher_request - public key request

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_TEXTSEARCH_H
-#define __LINUX_TEXTSEARCH_H
+#ifndef __freax_TEXTSEARCH_H
+#define __freax_TEXTSEARCH_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 
 struct module;
 

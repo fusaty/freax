@@ -6,7 +6,7 @@
  * Copyright (C) 2013 ARM Ltd.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 /*

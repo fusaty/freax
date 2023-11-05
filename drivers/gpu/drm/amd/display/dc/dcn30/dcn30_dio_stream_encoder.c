@@ -30,7 +30,7 @@
 #include "hw_shared.h"
 #include "dc.h"
 #include "core_types.h"
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 
 #define DC_LOGGER \

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/elf.h>
+#include <freax/elf.h>
 
 #include "qmi.h"
 #include "core.h"
 #include "debug.h"
-#include <linux/of.h>
-#include <linux/firmware.h>
+#include <freax/of.h>
+#include <freax/firmware.h>
 
 #define SLEEP_CLOCK_SELECT_INTERNAL_BIT	0x02
 #define HOST_CSTATE_BIT			0x04

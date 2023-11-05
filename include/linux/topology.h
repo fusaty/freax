@@ -1,5 +1,5 @@
 /*
- * include/linux/topology.h
+ * include/freax/topology.h
  *
  * Written by: Matthew Dobson, IBM Corporation
  *
@@ -24,15 +24,15 @@
  *
  * Send feedback to <colpatch@us.ibm.com>
  */
-#ifndef _LINUX_TOPOLOGY_H
-#define _LINUX_TOPOLOGY_H
+#ifndef _freax_TOPOLOGY_H
+#define _freax_TOPOLOGY_H
 
-#include <linux/arch_topology.h>
-#include <linux/cpumask.h>
-#include <linux/bitops.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <freax/arch_topology.h>
+#include <freax/cpumask.h>
+#include <freax/bitops.h>
+#include <freax/mmzone.h>
+#include <freax/smp.h>
+#include <freax/percpu.h>
 #include <asm/topology.h>
 
 #ifndef nr_cpus_node
@@ -279,4 +279,4 @@ sched_numa_hop_mask(unsigned int node, unsigned int hops)
 	     !IS_ERR_OR_NULL(mask);					       \
 	     __hops++)
 
-#endif /* _LINUX_TOPOLOGY_H */
+#endif /* _freax_TOPOLOGY_H */

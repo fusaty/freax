@@ -10,9 +10,9 @@
  *  for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dio.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/dio.h>
 
 
 /**

@@ -8,16 +8,16 @@
  *    for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/zorro.h>
+#include <freax/bitops.h>
+#include <freax/string.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/setup.h>

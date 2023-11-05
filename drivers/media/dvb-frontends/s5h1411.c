@@ -2,17 +2,17 @@
 /*
     Samsung S5H1411 VSB/QAM demodulator driver
 
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@freaxtv.org>
 
 
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 #include <media/dvb_frontend.h>
 #include "s5h1411.h"
 

@@ -3,22 +3,22 @@
  * kcomedilib/kcomedilib.c
  * a comedlib interface for kernel modules
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/fcntl.h>
+#include <freax/mm.h>
+#include <freax/io.h>
 
-#include <linux/comedi.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedilib.h>
+#include <freax/comedi.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedilib.h>
 
 MODULE_AUTHOR("David Schleef <ds@schleef.org>");
 MODULE_DESCRIPTION("Comedi kernel library");

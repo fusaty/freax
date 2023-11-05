@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #ifdef CONFIG_X86
 #include <asm/hypervisor.h>

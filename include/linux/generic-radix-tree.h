@@ -1,5 +1,5 @@
-#ifndef _LINUX_GENERIC_RADIX_TREE_H
-#define _LINUX_GENERIC_RADIX_TREE_H
+#ifndef _freax_GENERIC_RADIX_TREE_H
+#define _freax_GENERIC_RADIX_TREE_H
 
 /**
  * DOC: Generic radix trees/sparse arrays
@@ -37,11 +37,11 @@
  */
 
 #include <asm/page.h>
-#include <linux/bug.h>
-#include <linux/limits.h>
-#include <linux/log2.h>
-#include <linux/math.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/limits.h>
+#include <freax/log2.h>
+#include <freax/math.h>
+#include <freax/types.h>
 
 struct genradix_root;
 
@@ -295,4 +295,4 @@ int __genradix_prealloc(struct __genradix *, size_t, gfp_t);
 			_gfp)
 
 
-#endif /* _LINUX_GENERIC_RADIX_TREE_H */
+#endif /* _freax_GENERIC_RADIX_TREE_H */

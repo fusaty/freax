@@ -8,8 +8,8 @@ my $output = shift;
 open STDOUT,">$output" || die "can't open $output: $!";
 
 my %GLOBALS;
-my $dotinlocallabels=($flavour=~/linux/)?1:0;
-my $elfv2abi=(($flavour =~ /linux-ppc64le/) or ($flavour =~ /linux-ppc64-elfv2/))?1:0;
+my $dotinlocallabels=($flavour=~/freax/)?1:0;
+my $elfv2abi=(($flavour =~ /freax-ppc64le/) or ($flavour =~ /freax-ppc64-elfv2/))?1:0;
 my $dotfunctions=($elfv2abi=~1)?0:1;
 
 ################################################################
@@ -30,7 +30,7 @@ my $globl = sub {
 	/osx/		&& do { $name = "_$name";
 				last;
 			      };
-	/linux/
+	/freax/
 			&& do {	$ret = "_GLOBAL($name)";
 				last;
 			      };
@@ -55,7 +55,7 @@ my $machine = sub {
     ".machine	$arch";
 };
 my $size = sub {
-    if ($flavour =~ /linux/)
+    if ($flavour =~ /freax/)
     {	shift;
 	my $name = shift; $name =~ s|^[\.\_]||;
 	my $ret  = ".size	$name,.-".($dotfunctions?".":"").$name;
@@ -100,7 +100,7 @@ my $cmplw = sub {
     my $f = shift;
     my $cr = 0; $cr = shift if ($#_>1);
     # Some out-of-date 32-bit GNU assembler just can't handle cmplw...
-    ($flavour =~ /linux.*32/) ?
+    ($flavour =~ /freax.*32/) ?
 	"	.long	".sprintf "0x%x",31<<26|$cr<<23|$_[0]<<16|$_[1]<<11|64 :
 	"	cmplw	".join(',',$cr,@_);
 };
@@ -108,25 +108,25 @@ my $bdnz = sub {
     my $f = shift;
     my $bo = $f=~/[\+\-]/ ? 16+9 : 16;	# optional "to be taken" hint
     "	bc	$bo,0,".shift;
-} if ($flavour!~/linux/);
+} if ($flavour!~/freax/);
 my $bltlr = sub {
     my $f = shift;
     my $bo = $f=~/\-/ ? 12+2 : 12;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /freax/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%x",19<<26|$bo<<21|16<<1 :
 	"	bclr	$bo,0";
 };
 my $bnelr = sub {
     my $f = shift;
     my $bo = $f=~/\-/ ? 4+2 : 4;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /freax/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%x",19<<26|$bo<<21|2<<16|16<<1 :
 	"	bclr	$bo,2";
 };
 my $beqlr = sub {
     my $f = shift;
     my $bo = $f=~/-/ ? 12+2 : 12;	# optional "not to be taken" hint
-    ($flavour =~ /linux/) ?		# GNU as doesn't allow most recent hints
+    ($flavour =~ /freax/) ?		# GNU as doesn't allow most recent hints
 	"	.long	".sprintf "0x%X",19<<26|$bo<<21|2<<16|16<<1 :
 	"	bclr	$bo,2";
 };
@@ -199,7 +199,7 @@ my $mtsle	= sub {
     "	.long	".sprintf "0x%X",(31<<26)|($arg<<21)|(147*2);
 };
 
-print "#include <asm/ppc_asm.h>\n" if $flavour =~ /linux/;
+print "#include <asm/ppc_asm.h>\n" if $flavour =~ /freax/;
 
 while($line=<>) {
 

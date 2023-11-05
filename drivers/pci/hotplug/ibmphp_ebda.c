@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/list.h>
+#include <freax/init.h>
 #include "ibmphp.h"
 
 /*

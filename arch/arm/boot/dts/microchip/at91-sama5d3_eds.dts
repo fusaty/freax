@@ -28,7 +28,7 @@
 		button-3 {
 			label = "PB_USER";
 			gpios = <&pioE 29 GPIO_ACTIVE_LOW>;
-			linux,code = <0x104>;
+			freax,code = <0x104>;
 			wakeup-source;
 		};
 	};

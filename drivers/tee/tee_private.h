@@ -5,12 +5,12 @@
 #ifndef TEE_PRIVATE_H
 #define TEE_PRIVATE_H
 
-#include <linux/cdev.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/cdev.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 #define TEE_DEVICE_FLAG_REGISTERED	0x1
 #define TEE_MAX_DEV_NAME_LEN		32

@@ -3,11 +3,11 @@
  * Copyright (C) 2015-2016 Mentor Graphics
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/watchdog.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/watchdog.h>
 
 #include "watchdog_core.h"
 #include "watchdog_pretimeout.h"

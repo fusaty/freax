@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/intel_tpmi.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/intel_tpmi.h>
 
 #include "isst_tpmi_core.h"
 

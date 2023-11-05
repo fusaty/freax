@@ -4,11 +4,11 @@
  * Copyright (C) 2007,2010  Rene Herman
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/isa.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 #include <asm/processor.h>
 #include <sound/core.h>
 #include <sound/initval.h>

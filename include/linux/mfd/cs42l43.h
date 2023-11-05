@@ -6,14 +6,14 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/workqueue.h>
 
 #ifndef CS42L43_CORE_EXT_H
 #define CS42L43_CORE_EXT_H

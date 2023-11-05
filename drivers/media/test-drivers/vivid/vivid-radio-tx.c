@@ -5,12 +5,12 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/delay.h>
+#include <freax/videodev2.h>
+#include <freax/v4l2-dv-timings.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-dv-timings.h>

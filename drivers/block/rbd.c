@@ -1,6 +1,6 @@
 
 /*
-   rbd.c -- Export ceph rados objects as a Linux block device
+   rbd.c -- Export ceph rados objects as a freax block device
 
 
    based on drivers/block/osdblk.c:
@@ -28,24 +28,24 @@
 
  */
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/cls_lock_client.h>
-#include <linux/ceph/striper.h>
-#include <linux/ceph/decode.h>
-#include <linux/fs_parser.h>
-#include <linux/bsearch.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/osd_client.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/cls_lock_client.h>
+#include <freax/ceph/striper.h>
+#include <freax/ceph/decode.h>
+#include <freax/fs_parser.h>
+#include <freax/bsearch.h>
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/blk-mq.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/blk-mq.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
+#include <freax/workqueue.h>
 
 #include "rbd_types.h"
 

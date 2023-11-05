@@ -9,12 +9,12 @@
  *
  * NOTE: PM support is not currently available.
  */
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ahci_platform.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/ahci_platform.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
 #include "ahci.h"
 
 #define DRV_NAME "xgene-ahci"

@@ -233,7 +233,7 @@ enum vpu_ipc_msg_type {
 	VPU_JSM_MSG_BLOB_DEINIT = VPU_JSM_MSG_GENERAL_CMD,
 	/**
 	 * Control dyndbg behavior by executing a dyndbg command; equivalent to
-	 * Linux command: `echo '<dyndbg_cmd>' > <debugfs>/dynamic_debug/control`.
+	 * freax command: `echo '<dyndbg_cmd>' > <debugfs>/dynamic_debug/control`.
 	 */
 	VPU_JSM_MSG_DYNDBG_CONTROL = 0x1201,
 	/* IPC Device -> Host, Job completion */
@@ -916,10 +916,10 @@ struct vpu_jsm_metric_counter_descriptor {
  * VPU_JSM_MSG_DYNDBG_CONTROL are used to control the VPU FW Dynamic Debug
  * feature, which allows developers to selectively enable / disable MVLOG_DEBUG
  * messages. This is equivalent to the Dynamic Debug functionality provided by
- * Linux
+ * freax
  * (https://www.kernel.org/doc/html/latest/admin-guide/dynamic-debug-howto.html)
  * The host can control Dynamic Debug behavior by sending dyndbg commands, which
- * have the same syntax as Linux
+ * have the same syntax as freax
  * dyndbg commands.
  *
  * NOTE: in order for MVLOG_DEBUG messages to be actually printed, the host
@@ -932,7 +932,7 @@ struct vpu_jsm_metric_counter_descriptor {
  */
 struct vpu_ipc_msg_payload_dyndbg_control {
 	/**
-	 * Dyndbg command (same format as Linux dyndbg); must be a NULL-terminated
+	 * Dyndbg command (same format as freax dyndbg); must be a NULL-terminated
 	 * string.
 	 */
 	char dyndbg_cmd[VPU_DYNDBG_CMD_MAX_LEN];

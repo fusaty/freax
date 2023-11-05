@@ -8,18 +8,18 @@
  * out of the OpenFirmware device tree and using it to populate an mii_bus.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fwnode_mdio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fwnode_mdio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
 
 #define DEFAULT_GPIO_RESET_DELAY	10	/* in microseconds */
 

@@ -11,11 +11,11 @@
  *
  * For licencing details see kernel-base/COPYING
  */
-#ifndef _LINUX_PERF_EVENT_H
-#define _LINUX_PERF_EVENT_H
+#ifndef _freax_PERF_EVENT_H
+#define _freax_PERF_EVENT_H
 
-#include <uapi/linux/perf_event.h>
-#include <uapi/linux/bpf_perf_event.h>
+#include <uapi/freax/perf_event.h>
+#include <uapi/freax/bpf_perf_event.h>
 
 /*
  * Kernel-internal data types and definitions:
@@ -36,32 +36,32 @@ struct perf_guest_info_callbacks {
 };
 
 #ifdef CONFIG_HAVE_HW_BREAKPOINT
-#include <linux/rhashtable-types.h>
+#include <freax/rhashtable-types.h>
 #include <asm/hw_breakpoint.h>
 #endif
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/hrtimer.h>
-#include <linux/fs.h>
-#include <linux/pid_namespace.h>
-#include <linux/workqueue.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
-#include <linux/irq_work.h>
-#include <linux/static_key.h>
-#include <linux/jump_label_ratelimit.h>
-#include <linux/atomic.h>
-#include <linux/sysfs.h>
-#include <linux/perf_regs.h>
-#include <linux/cgroup.h>
-#include <linux/refcount.h>
-#include <linux/security.h>
-#include <linux/static_call.h>
-#include <linux/lockdep.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
+#include <freax/hrtimer.h>
+#include <freax/fs.h>
+#include <freax/pid_namespace.h>
+#include <freax/workqueue.h>
+#include <freax/ftrace.h>
+#include <freax/cpu.h>
+#include <freax/irq_work.h>
+#include <freax/static_key.h>
+#include <freax/jump_label_ratelimit.h>
+#include <freax/atomic.h>
+#include <freax/sysfs.h>
+#include <freax/perf_regs.h>
+#include <freax/cgroup.h>
+#include <freax/refcount.h>
+#include <freax/security.h>
+#include <freax/static_call.h>
+#include <freax/lockdep.h>
 #include <asm/local.h>
 
 struct perf_callchain_entry {
@@ -1907,4 +1907,4 @@ static inline void perf_lopwr_cb(bool mode)
 }
 #endif
 
-#endif /* _LINUX_PERF_EVENT_H */
+#endif /* _freax_PERF_EVENT_H */

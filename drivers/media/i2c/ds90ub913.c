@@ -8,17 +8,17 @@
  * Copyright (c) 2023 Tomi Valkeinen <tomi.valkeinen@ideasonboard.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/fwnode.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c-atr.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/fwnode.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c-atr.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 #include <media/i2c/ds90ub9xx.h>
 #include <media/v4l2-fwnode.h>

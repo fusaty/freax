@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (C) 2017 Andes Technology Corporation */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/asm.h>
 #include <asm/csr.h>
 #include <asm/unistd.h>

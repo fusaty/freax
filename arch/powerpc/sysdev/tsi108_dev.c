@@ -5,23 +5,23 @@
  * Maintained by Roy Zang < tie-fei.zang@freescale.com >
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/major.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/export.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_net.h>
 #include <asm/tsi108.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <mm/mmu_decl.h>

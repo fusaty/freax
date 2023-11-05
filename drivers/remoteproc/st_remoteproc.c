@@ -7,22 +7,22 @@
  * Author: Ludovic Barre <ludovic.barre@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
 
 #include "remoteproc_internal.h"
 

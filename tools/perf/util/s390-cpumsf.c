@@ -3,7 +3,7 @@
  * Copyright IBM Corp. 2018
  * Auxtrace support for s390 CPU-Measurement Sampling Facility
  *
- * Author(s):  Thomas Richter <tmricht@linux.ibm.com>
+ * Author(s):  Thomas Richter <tmricht@freax.ibm.com>
  *
  * Auxiliary traces are collected during 'perf record' using rbd000 event.
  * Several PERF_RECORD_XXX are generated during recording:
@@ -142,11 +142,11 @@
 #include <errno.h>
 #include <byteswap.h>
 #include <inttypes.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
+#include <freax/zalloc.h>
 
 #include <sys/stat.h>
 #include <sys/types.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/panic.c
+ *  freax/kernel/panic.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -9,32 +9,32 @@
  * This function is used through-out the kernel (including mm and fs)
  * to indicate a major problem.
  */
-#include <linux/debug_locks.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/kgdb.h>
-#include <linux/kmsg_dump.h>
-#include <linux/kallsyms.h>
-#include <linux/notifier.h>
-#include <linux/vt_kern.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ftrace.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kexec.h>
-#include <linux/panic_notifier.h>
-#include <linux/sched.h>
-#include <linux/string_helpers.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/bug.h>
-#include <linux/ratelimit.h>
-#include <linux/debugfs.h>
-#include <linux/sysfs.h>
-#include <linux/context_tracking.h>
+#include <freax/debug_locks.h>
+#include <freax/sched/debug.h>
+#include <freax/interrupt.h>
+#include <freax/kgdb.h>
+#include <freax/kmsg_dump.h>
+#include <freax/kallsyms.h>
+#include <freax/notifier.h>
+#include <freax/vt_kern.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/ftrace.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/kexec.h>
+#include <freax/panic_notifier.h>
+#include <freax/sched.h>
+#include <freax/string_helpers.h>
+#include <freax/sysrq.h>
+#include <freax/init.h>
+#include <freax/nmi.h>
+#include <freax/console.h>
+#include <freax/bug.h>
+#include <freax/ratelimit.h>
+#include <freax/debugfs.h>
+#include <freax/sysfs.h>
+#include <freax/context_tracking.h>
 #include <trace/events/error_report.h>
 #include <asm/sections.h>
 

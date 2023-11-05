@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <sched.h>
 #include <signal.h>
 #include <stdio.h>

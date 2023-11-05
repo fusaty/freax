@@ -6,18 +6,18 @@
 #ifndef FLOW_H
 #define FLOW_H 1
 
-#include <linux/cache.h>
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/if_ether.h>
-#include <linux/in6.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/cpumask.h>
+#include <freax/cache.h>
+#include <freax/kernel.h>
+#include <freax/netlink.h>
+#include <freax/openvswitch.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/if_ether.h>
+#include <freax/in6.h>
+#include <freax/jiffies.h>
+#include <freax/time.h>
+#include <freax/cpumask.h>
 #include <net/inet_ecn.h>
 #include <net/ip_tunnels.h>
 #include <net/dst_metadata.h>

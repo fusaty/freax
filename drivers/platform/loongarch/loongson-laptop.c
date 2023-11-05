@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <acpi/video.h>
 
 /* 1. Driver-wide structs and misc. variables */

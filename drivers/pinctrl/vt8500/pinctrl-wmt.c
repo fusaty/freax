@@ -2,24 +2,24 @@
 /*
  * Pinctrl driver for the Wondermedia SoC's
  *
- * Copyright (c) 2013 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (c) 2013 Tony Prisk <freax@prisktech.co.nz>
  */
 
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "pinctrl-wmt.h"
 

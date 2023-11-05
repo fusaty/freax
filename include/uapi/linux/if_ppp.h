@@ -1,1 +1,1 @@
-#include <linux/ppp-ioctl.h>
+#include <freax/ppp-ioctl.h>

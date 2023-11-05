@@ -2,13 +2,13 @@
 /*
  *	Berkeley style UIO structures	-	Alan Cox 1994.
  */
-#ifndef __LINUX_UIO_H
-#define __LINUX_UIO_H
+#ifndef __freax_UIO_H
+#define __freax_UIO_H
 
-#include <linux/kernel.h>
-#include <linux/thread_info.h>
-#include <linux/mm_types.h>
-#include <uapi/linux/uio.h>
+#include <freax/kernel.h>
+#include <freax/thread_info.h>
+#include <freax/mm_types.h>
+#include <uapi/freax/uio.h>
 
 struct page;
 

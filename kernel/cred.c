@@ -7,18 +7,18 @@
 
 #define pr_fmt(fmt) "CRED: " fmt
 
-#include <linux/export.h>
-#include <linux/cred.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/init_task.h>
-#include <linux/security.h>
-#include <linux/binfmts.h>
-#include <linux/cn_proc.h>
-#include <linux/uidgid.h>
+#include <freax/export.h>
+#include <freax/cred.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/coredump.h>
+#include <freax/key.h>
+#include <freax/keyctl.h>
+#include <freax/init_task.h>
+#include <freax/security.h>
+#include <freax/binfmts.h>
+#include <freax/cn_proc.h>
+#include <freax/uidgid.h>
 
 #if 0
 #define kdebug(FMT, ...)						\

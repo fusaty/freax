@@ -11,27 +11,27 @@
  *
  */
 
-#include <linux/compat.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/init.h>
-#include <linux/security.h>
+#include <freax/compat.h>
+#include <freax/crypto.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/string.h>
+#include <freax/net.h>
+#include <freax/skbuff.h>
+#include <freax/pfkeyv2.h>
+#include <freax/ipsec.h>
+#include <freax/init.h>
+#include <freax/security.h>
 #include <net/sock.h>
 #include <net/xfrm.h>
 #include <net/netlink.h>
 #include <net/ah.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
+#include <freax/in6.h>
 #endif
 #include <asm/unaligned.h>
 

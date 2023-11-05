@@ -11,16 +11,16 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/export.h>
-#include <linux/t10-pi.h>
+#include <freax/net.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/in.h>
+#include <freax/export.h>
+#include <freax/t10-pi.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -674,7 +674,7 @@ static void scsi_dump_inquiry(struct se_device *dev)
 	int device_type = dev->transport->get_device_type(dev);
 
 	/*
-	 * Print Linux/SCSI style INQUIRY formatting to the kernel ring buffer
+	 * Print freax/SCSI style INQUIRY formatting to the kernel ring buffer
 	 */
 	pr_debug("  Vendor: %-" __stringify(INQUIRY_VENDOR_LEN) "s\n",
 		wwn->vendor);
@@ -814,7 +814,7 @@ bool target_configure_unmap_from_queue(struct se_dev_attrib *attrib,
 	attrib->max_unmap_lba_count =
 		bdev_max_discard_sectors(bdev) >> (ilog2(block_size) - 9);
 	/*
-	 * Currently hardcoded to 1 in Linux/SCSI code..
+	 * Currently hardcoded to 1 in freax/SCSI code..
 	 */
 	attrib->max_unmap_block_desc_count = 1;
 	attrib->unmap_granularity = bdev_discard_granularity(bdev) / block_size;
@@ -826,9 +826,9 @@ EXPORT_SYMBOL(target_configure_unmap_from_queue);
 
 /*
  * Convert from blocksize advertised to the initiator to the 512 byte
- * units unconditionally used by the Linux block layer.
+ * units unconditionally used by the freax block layer.
  */
-sector_t target_to_linux_sector(struct se_device *dev, sector_t lb)
+sector_t target_to_freax_sector(struct se_device *dev, sector_t lb)
 {
 	switch (dev->dev_attrib.block_size) {
 	case 4096:
@@ -841,7 +841,7 @@ sector_t target_to_linux_sector(struct se_device *dev, sector_t lb)
 		return lb;
 	}
 }
-EXPORT_SYMBOL(target_to_linux_sector);
+EXPORT_SYMBOL(target_to_freax_sector);
 
 struct devices_idr_iter {
 	int (*fn)(struct se_device *dev, void *data);

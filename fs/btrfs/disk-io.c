@@ -3,20 +3,20 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/radix-tree.h>
-#include <linux/writeback.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/migrate.h>
-#include <linux/ratelimit.h>
-#include <linux/uuid.h>
-#include <linux/semaphore.h>
-#include <linux/error-injection.h>
-#include <linux/crc32c.h>
-#include <linux/sched/mm.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/radix-tree.h>
+#include <freax/writeback.h>
+#include <freax/workqueue.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/migrate.h>
+#include <freax/ratelimit.h>
+#include <freax/uuid.h>
+#include <freax/semaphore.h>
+#include <freax/error-injection.h>
+#include <freax/crc32c.h>
+#include <freax/sched/mm.h>
 #include <asm/unaligned.h>
 #include <crypto/hash.h>
 #include "ctree.h"

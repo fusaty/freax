@@ -5,8 +5,8 @@
  * Copyright (C) 2019 Jeff LaBundy <jeff@labundy.com>
  */
 
-#ifndef __LINUX_MFD_IQS62X_H
-#define __LINUX_MFD_IQS62X_H
+#ifndef __freax_MFD_IQS62X_H
+#define __freax_MFD_IQS62X_H
 
 #define IQS620_PROD_NUM				0x41
 #define IQS621_PROD_NUM				0x46
@@ -140,4 +140,4 @@ struct iqs62x_core {
 
 extern const struct iqs62x_event_desc iqs62x_events[IQS62X_NUM_EVENTS];
 
-#endif /* __LINUX_MFD_IQS62X_H */
+#endif /* __freax_MFD_IQS62X_H */

@@ -5,19 +5,19 @@
 #ifndef __KVM_ARM_VGIC_H
 #define __KVM_ARM_VGIC_H
 
-#include <linux/bits.h>
-#include <linux/kvm.h>
-#include <linux/irqreturn.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/static_key.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/kvm.h>
+#include <freax/irqreturn.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/static_key.h>
+#include <freax/types.h>
 #include <kvm/iodev.h>
-#include <linux/list.h>
-#include <linux/jump_label.h>
+#include <freax/list.h>
+#include <freax/jump_label.h>
 
-#include <linux/irqchip/arm-gic-v4.h>
+#include <freax/irqchip/arm-gic-v4.h>
 
 #define VGIC_V3_MAX_CPUS	512
 #define VGIC_V2_MAX_CPUS	8
@@ -140,7 +140,7 @@ struct vgic_irq {
 	bool hw;			/* Tied to HW IRQ */
 	struct kref refcount;		/* Used for LPIs */
 	u32 hwintid;			/* HW INTID number */
-	unsigned int host_irq;		/* linux irq corresponding to hwintid */
+	unsigned int host_irq;		/* freax irq corresponding to hwintid */
 	union {
 		u8 targets;			/* GICv2 target VCPUs mask */
 		u32 mpidr;			/* GICv3 target VCPU */
@@ -287,7 +287,7 @@ struct vgic_dist {
 	/*
 	 * GICv4 ITS per-VM data, containing the IRQ domain, the VPE
 	 * array, the property table pointer as well as allocation
-	 * data. This essentially ties the Linux IRQ core and ITS
+	 * data. This essentially ties the freax IRQ core and ITS
 	 * together, and avoids leaking KVM's data structures anywhere
 	 * else.
 	 */
@@ -315,7 +315,7 @@ struct vgic_v3_cpu_if {
 	 * GICv4 ITS per-VPE data, containing the doorbell IRQ, the
 	 * pending table pointer, the its_vm pointer and a few other
 	 * HW specific things. As for the its_vm structure, this is
-	 * linking the Linux IRQ subsystem and the ITS together.
+	 * linking the freax IRQ subsystem and the ITS together.
 	 */
 	struct its_vpe	its_vpe;
 

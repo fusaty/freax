@@ -10,18 +10,18 @@
 
 /****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/reboot.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/root_dev.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/cfi.h>
+#include <freax/reboot.h>
+#include <freax/err.h>
+#include <freax/kdev_t.h>
+#include <freax/root_dev.h>
 #include <asm/io.h>
 
 /****************************************************************************/

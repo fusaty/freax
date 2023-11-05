@@ -46,7 +46,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&pio 7 20 GPIO_ACTIVE_HIGH>; /* PH20 */
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

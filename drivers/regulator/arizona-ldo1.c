@@ -6,28 +6,28 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/slab.h>
 
-#include <linux/regulator/arizona-ldo1.h>
+#include <freax/regulator/arizona-ldo1.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <freax/mfd/arizona/core.h>
+#include <freax/mfd/arizona/pdata.h>
+#include <freax/mfd/arizona/registers.h>
 
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/pdata.h>
-#include <linux/mfd/madera/registers.h>
+#include <freax/mfd/madera/core.h>
+#include <freax/mfd/madera/pdata.h>
+#include <freax/mfd/madera/registers.h>
 
 struct arizona_ldo1 {
 	struct regulator_dev *regulator;

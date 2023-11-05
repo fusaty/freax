@@ -6,13 +6,13 @@
  * Jisheng Zhang <jszhang@marvell.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reset.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reset.h>
 
 #define USB_PHY_PLL		0x04
 #define USB_PHY_PLL_CONTROL	0x08

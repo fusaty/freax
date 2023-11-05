@@ -6,16 +6,16 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/suspend.h>
-#include <linux/connector.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/suspend.h>
+#include <freax/connector.h>
+#include <freax/delay.h>
 
 static struct cn_callback_entry *
 cn_queue_alloc_callback_entry(struct cn_queue_dev *dev, const char *name,

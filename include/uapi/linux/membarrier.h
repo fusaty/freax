@@ -1,8 +1,8 @@
-#ifndef _UAPI_LINUX_MEMBARRIER_H
-#define _UAPI_LINUX_MEMBARRIER_H
+#ifndef _UAPI_freax_MEMBARRIER_H
+#define _UAPI_freax_MEMBARRIER_H
 
 /*
- * linux/membarrier.h
+ * freax/membarrier.h
  *
  * membarrier system call API
  *
@@ -166,4 +166,4 @@ enum membarrier_cmd_flag {
 	MEMBARRIER_CMD_FLAG_CPU		= (1 << 0),
 };
 
-#endif /* _UAPI_LINUX_MEMBARRIER_H */
+#endif /* _UAPI_freax_MEMBARRIER_H */

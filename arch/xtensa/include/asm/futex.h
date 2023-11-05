@@ -12,9 +12,9 @@
 #ifndef _ASM_XTENSA_FUTEX_H
 #define _ASM_XTENSA_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <freax/futex.h>
+#include <freax/uaccess.h>
+#include <freax/errno.h>
 
 #define arch_futex_atomic_op_inuser arch_futex_atomic_op_inuser
 #define futex_atomic_cmpxchg_inatomic futex_atomic_cmpxchg_inatomic

@@ -3,17 +3,17 @@
  * USB Type-C Connector Class
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_retimer.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/usb/pd_vdo.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_retimer.h>
+#include <freax/usb.h>
 
 #include "bus.h"
 #include "class.h"
@@ -2472,6 +2472,6 @@ static void __exit typec_exit(void)
 }
 module_exit(typec_exit);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@freax.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("USB Type-C Connector Class");

@@ -2,7 +2,7 @@
 #ifndef __PERF_SVGHELPER_H
 #define __PERF_SVGHELPER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct perf_env;
 

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
  * Copyright 1993 by Theodore Ts'o.
  */
-#ifndef _UAPI_LINUX_LOOP_H
-#define _UAPI_LINUX_LOOP_H
+#ifndef _UAPI_freax_LOOP_H
+#define _UAPI_freax_LOOP_H
 
 
 #define LO_NAME_SIZE	64
@@ -31,7 +31,7 @@ enum {
 				       | LO_FLAGS_PARTSCAN | LO_FLAGS_DIRECT_IO)
 
 #include <asm/posix_types.h>	/* for __kernel_old_dev_t */
-#include <linux/types.h>	/* for __u64 */
+#include <freax/types.h>	/* for __u64 */
 
 /* Backwards compatibility version */
 struct loop_info {
@@ -117,4 +117,4 @@ struct loop_config {
 #define LOOP_CTL_ADD		0x4C80
 #define LOOP_CTL_REMOVE		0x4C81
 #define LOOP_CTL_GET_FREE	0x4C82
-#endif /* _UAPI_LINUX_LOOP_H */
+#endif /* _UAPI_freax_LOOP_H */

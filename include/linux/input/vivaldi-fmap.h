@@ -2,7 +2,7 @@
 #ifndef _VIVALDI_FMAP_H
 #define _VIVALDI_FMAP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define VIVALDI_MAX_FUNCTION_ROW_KEYS	24
 

@@ -5,8 +5,8 @@
  * Copyright 2007 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_COMPARATOR_H_
-#define __LINUX_MFD_WM8350_COMPARATOR_H_
+#ifndef __freax_MFD_WM8350_COMPARATOR_H_
+#define __freax_MFD_WM8350_COMPARATOR_H_
 
 /*
  * Registers

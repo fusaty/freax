@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <subcmd/exec-cmd.h>
 #include <subcmd/pager.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <objtool/builtin.h>
 #include <objtool/objtool.h>

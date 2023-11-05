@@ -12,17 +12,17 @@
 
 /*************************** INCLUDES *****************************************/
 
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/syscalls.h>
-#include <linux/scatterlist.h>
-#include <linux/ioctl.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/major.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/mempool.h>
+#include <freax/syscalls.h>
+#include <freax/scatterlist.h>
+#include <freax/ioctl.h>
 #include <scsi/fc/fc_fs.h>
 #include <scsi/fc/fc_gs.h>
 #include <scsi/scsi.h>

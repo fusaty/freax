@@ -21,14 +21,14 @@
 		key-power {
 			label = "Power Button";
 			gpios = <&gpio2 23 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		key-enter {
 			label = "Rotary Key";
 			gpios = <&gpio2 05 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_ENTER>;
+			freax,code = <KEY_ENTER>;
 			wakeup-source;
 		};
 	};
@@ -62,7 +62,7 @@
 		pinctrl-0 = <&pinctrl_rotary_ch>;
 		gpios = <&gpio2 3 GPIO_ACTIVE_HIGH>,
 			<&gpio2 4 GPIO_ACTIVE_HIGH>;
-		linux,axis = <REL_WHEEL>;
+		freax,axis = <REL_WHEEL>;
 		rotary-encoder,steps-per-period = <4>;
 		rotary-encoder,relative-axis;
 		rotary-encoder,rollover;
@@ -284,7 +284,7 @@
 		interrupts-extended = <&gpio4 5 (IRQ_TYPE_LEVEL_HIGH | IRQ_TYPE_EDGE_RISING)>;
 		keypad,num-rows = <12>;
 		keypad,num-columns = <3>;
-		linux,keymap = <
+		freax,keymap = <
 			MATRIX_KEY(2, 0, KEY_F6)
 			MATRIX_KEY(3, 0, KEY_F8)
 			MATRIX_KEY(4, 0, KEY_F10)

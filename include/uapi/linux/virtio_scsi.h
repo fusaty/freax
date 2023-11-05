@@ -24,10 +24,10 @@
  * SUCH DAMAGE.
  */
 
-#ifndef _LINUX_VIRTIO_SCSI_H
-#define _LINUX_VIRTIO_SCSI_H
+#ifndef _freax_VIRTIO_SCSI_H
+#define _freax_VIRTIO_SCSI_H
 
-#include <linux/virtio_types.h>
+#include <freax/virtio_types.h>
 
 /* Default values of the CDB and sense data size configuration fields */
 #define VIRTIO_SCSI_CDB_DEFAULT_SIZE   32
@@ -169,4 +169,4 @@ struct virtio_scsi_config {
 #define VIRTIO_SCSI_S_ACA                      3
 
 
-#endif /* _LINUX_VIRTIO_SCSI_H */
+#endif /* _freax_VIRTIO_SCSI_H */

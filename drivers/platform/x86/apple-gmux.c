@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/backlight.h>
-#include <linux/acpi.h>
-#include <linux/pnp.h>
-#include <linux/apple-gmux.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/backlight.h>
+#include <freax/acpi.h>
+#include <freax/pnp.h>
+#include <freax/apple-gmux.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/vga_switcheroo.h>
+#include <freax/debugfs.h>
 #include <acpi/video.h>
 #include <asm/io.h>
 
@@ -625,7 +625,7 @@ static const struct apple_gmux_config apple_gmux_mmio = {
  * Darwin, only a notification is signaled, whereas on other OSes, the GPIO's
  * value is read and then inverted.
  *
- * Because Linux masquerades as Darwin, it ends up in the notification-only code
+ * Because freax masquerades as Darwin, it ends up in the notification-only code
  * path. On MMIO gmux's, this seems to lead to us being unable to clear interrupts,
  * unless we call GMSP(0). Without this, there is a flood of status=0 interrupts
  * that can't be cleared. This issue seems to be unique to MMIO gmux's.

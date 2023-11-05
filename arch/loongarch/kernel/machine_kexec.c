@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  */
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/libfdt.h>
-#include <linux/mm.h>
-#include <linux/of_fdt.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/compiler.h>
+#include <freax/cpu.h>
+#include <freax/kexec.h>
+#include <freax/crash_dump.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/libfdt.h>
+#include <freax/mm.h>
+#include <freax/of_fdt.h>
+#include <freax/reboot.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cacheflush.h>

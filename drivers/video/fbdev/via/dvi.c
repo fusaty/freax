@@ -4,8 +4,8 @@
  * Copyright 2001-2008 S3 Graphics, Inc. All Rights Reserved.
 
  */
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <freax/via-core.h>
+#include <freax/via_i2c.h>
 #include "global.h"
 
 static void tmds_register_write(int index, u8 data);

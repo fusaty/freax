@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/init.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/mtd.h>
 
 #define info(format, arg...) printk(KERN_INFO "pcmciamtd: " format "\n" , ## arg)
 

@@ -12,9 +12,9 @@
  */
 
 
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
+#include <freax/input.h>
+#include <freax/usb.h>
+#include <freax/hid.h>
 
 #include "usbhid/usbhid.h"
 #include "hid-lg.h"

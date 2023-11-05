@@ -7,25 +7,25 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/statfs.h>
-#include <linux/moduleparam.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/parser.h>
-#include <linux/crc32.h>
-#include <linux/debugfs.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/quotaops.h>
-#include <linux/signal.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/random.h>
+#include <freax/statfs.h>
+#include <freax/moduleparam.h>
+#include <freax/blkdev.h>
+#include <freax/socket.h>
+#include <freax/inet.h>
+#include <freax/parser.h>
+#include <freax/crc32.h>
+#include <freax/debugfs.h>
+#include <freax/mount.h>
+#include <freax/seq_file.h>
+#include <freax/quotaops.h>
+#include <freax/signal.h>
 
 #define CREATE_TRACE_POINTS
 #include "ocfs2_trace.h"

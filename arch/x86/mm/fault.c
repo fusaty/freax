@@ -4,22 +4,22 @@
  *  Copyright (C) 2001, 2002 Andi Kleen, SuSE Labs.
  *  Copyright (C) 2008-2009, Red Hat Inc., Ingo Molnar
  */
-#include <linux/sched.h>		/* test_thread_flag(), ...	*/
-#include <linux/sched/task_stack.h>	/* task_stack_*(), ...		*/
-#include <linux/kdebug.h>		/* oops_begin/end, ...		*/
-#include <linux/extable.h>		/* search_exception_tables	*/
-#include <linux/memblock.h>		/* max_low_pfn			*/
-#include <linux/kfence.h>		/* kfence_handle_page_fault	*/
-#include <linux/kprobes.h>		/* NOKPROBE_SYMBOL, ...		*/
-#include <linux/mmiotrace.h>		/* kmmio_handler, ...		*/
-#include <linux/perf_event.h>		/* perf_sw_event		*/
-#include <linux/hugetlb.h>		/* hstate_index_to_shift	*/
-#include <linux/prefetch.h>		/* prefetchw			*/
-#include <linux/context_tracking.h>	/* exception_enter(), ...	*/
-#include <linux/uaccess.h>		/* faulthandler_disabled()	*/
-#include <linux/efi.h>			/* efi_crash_gracefully_on_page_fault()*/
-#include <linux/mm_types.h>
-#include <linux/mm.h>			/* find_and_lock_vma() */
+#include <freax/sched.h>		/* test_thread_flag(), ...	*/
+#include <freax/sched/task_stack.h>	/* task_stack_*(), ...		*/
+#include <freax/kdebug.h>		/* oops_begin/end, ...		*/
+#include <freax/extable.h>		/* search_exception_tables	*/
+#include <freax/memblock.h>		/* max_low_pfn			*/
+#include <freax/kfence.h>		/* kfence_handle_page_fault	*/
+#include <freax/kprobes.h>		/* NOKPROBE_SYMBOL, ...		*/
+#include <freax/mmiotrace.h>		/* kmmio_handler, ...		*/
+#include <freax/perf_event.h>		/* perf_sw_event		*/
+#include <freax/hugetlb.h>		/* hstate_index_to_shift	*/
+#include <freax/prefetch.h>		/* prefetchw			*/
+#include <freax/context_tracking.h>	/* exception_enter(), ...	*/
+#include <freax/uaccess.h>		/* faulthandler_disabled()	*/
+#include <freax/efi.h>			/* efi_crash_gracefully_on_page_fault()*/
+#include <freax/mm_types.h>
+#include <freax/mm.h>			/* find_and_lock_vma() */
 
 #include <asm/cpufeature.h>		/* boot_cpu_has, ...		*/
 #include <asm/traps.h>			/* dotraplinkage, ...		*/

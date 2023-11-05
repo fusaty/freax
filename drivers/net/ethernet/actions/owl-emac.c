@@ -6,15 +6,15 @@
  * Copyright (c) 2021 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/circ_buf.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reset.h>
+#include <freax/circ_buf.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/reset.h>
 
 #include "owl-emac.h"
 

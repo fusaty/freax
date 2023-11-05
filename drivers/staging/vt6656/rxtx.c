@@ -18,7 +18,7 @@
  *
  */
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include "device.h"
 #include "rxtx.h"
 #include "card.h"

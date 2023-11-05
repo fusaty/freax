@@ -5,19 +5,19 @@
  * Copyright 2009-2010 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
-#include <linux/platform_data/adp8860.h>
+#include <freax/platform_data/adp8860.h>
 #define ADP8860_EXT_FEATURES
 #define ADP8860_USE_LEDS
 

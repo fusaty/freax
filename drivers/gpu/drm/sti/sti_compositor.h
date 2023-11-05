@@ -9,8 +9,8 @@
 #ifndef _STI_COMPOSITOR_H_
 #define _STI_COMPOSITOR_H_
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
 
 #include "sti_mixer.h"
 #include "sti_plane.h"

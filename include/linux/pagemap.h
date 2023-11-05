@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PAGEMAP_H
-#define _LINUX_PAGEMAP_H
+#ifndef _freax_PAGEMAP_H
+#define _freax_PAGEMAP_H
 
 /*
  * Copyright 1995 Linus Torvalds
  */
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/bitops.h>
-#include <linux/hardirq.h> /* for in_interrupt() */
-#include <linux/hugetlb_inline.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/highmem.h>
+#include <freax/compiler.h>
+#include <freax/uaccess.h>
+#include <freax/gfp.h>
+#include <freax/bitops.h>
+#include <freax/hardirq.h> /* for in_interrupt() */
+#include <freax/hugetlb_inline.h>
 
 struct folio_batch;
 
@@ -1514,4 +1514,4 @@ unsigned int i_blocks_per_page(struct inode *inode, struct page *page)
 {
 	return i_blocks_per_folio(inode, page_folio(page));
 }
-#endif /* _LINUX_PAGEMAP_H */
+#endif /* _freax_PAGEMAP_H */

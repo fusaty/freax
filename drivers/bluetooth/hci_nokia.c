@@ -6,20 +6,20 @@
  *  Copyright (C) 2015-2017 Sebastian Reichel <sre@kernel.org>
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/serdev.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <asm/unaligned.h>
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

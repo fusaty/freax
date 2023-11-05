@@ -5,17 +5,17 @@
  * Copyright (C) 2013 Red Hat, Inc., Johannes Weiner
  */
 
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/writeback.h>
-#include <linux/shmem_fs.h>
-#include <linux/pagemap.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/swap.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <freax/memcontrol.h>
+#include <freax/mm_inline.h>
+#include <freax/writeback.h>
+#include <freax/shmem_fs.h>
+#include <freax/pagemap.h>
+#include <freax/atomic.h>
+#include <freax/module.h>
+#include <freax/swap.h>
+#include <freax/dax.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
 
 /*
  *		Double CLOCK lists

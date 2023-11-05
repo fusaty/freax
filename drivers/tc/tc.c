@@ -9,18 +9,18 @@
  *	General Public License.  See the file "COPYING" in the main
  *	directory of this archive for more details.
  */
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tc.h>
+#include <freax/types.h>
 
 #include <asm/io.h>
 

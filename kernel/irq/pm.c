@@ -5,11 +5,11 @@
  * This file contains power management functions related to interrupts.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/suspend.h>
+#include <freax/syscore_ops.h>
 
 #include "internals.h"
 

@@ -3,7 +3,7 @@
 #ifndef ADF_PFVF_MSG_H
 #define ADF_PFVF_MSG_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /*
  * PF<->VF Gen2 Messaging format

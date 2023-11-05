@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2017, 2019-2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2017, 2019-2020, The freax Foundation. All rights reserved.
 // Copyright (c) 2023, Linaro Limited
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
 
 #define REFGEN_REG_BIAS_EN		0x08
 #define REFGEN_BIAS_EN_MASK		GENMASK(2, 0)

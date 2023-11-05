@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * ipmi.h
  *
@@ -12,11 +12,11 @@
  *
  */
 
-#ifndef _UAPI__LINUX_IPMI_H
-#define _UAPI__LINUX_IPMI_H
+#ifndef _UAPI__freax_IPMI_H
+#define _UAPI__freax_IPMI_H
 
-#include <linux/ipmi_msgdefs.h>
-#include <linux/compiler.h>
+#include <freax/ipmi_msgdefs.h>
+#include <freax/compiler.h>
 
 /*
  * This file describes an interface to an IPMI driver.  You have to
@@ -440,4 +440,4 @@ struct ipmi_timing_parms {
 #define IPMICTL_GET_MAINTENANCE_MODE_CMD	_IOR(IPMI_IOC_MAGIC, 30, int)
 #define IPMICTL_SET_MAINTENANCE_MODE_CMD	_IOW(IPMI_IOC_MAGIC, 31, int)
 
-#endif /* _UAPI__LINUX_IPMI_H */
+#endif /* _UAPI__freax_IPMI_H */

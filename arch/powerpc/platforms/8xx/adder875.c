@@ -6,8 +6,8 @@
  * Copyright (c) 2007 Freescale Semiconductor, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

@@ -20,12 +20,12 @@
 
 #ifdef __KERNEL__
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
+#include <freax/compiler.h>
+#include <freax/irqflags.h>
 #include <asm/barrier.h>
 
 /*
@@ -215,7 +215,7 @@ unsigned long _find_next_bit_be(const unsigned long *p, unsigned long size, unsi
 
 #endif
 
-#if __LINUX_ARM_ARCH__ < 5
+#if __freax_ARM_ARCH__ < 5
 
 #include <asm-generic/bitops/__fls.h>
 #include <asm-generic/bitops/__ffs.h>

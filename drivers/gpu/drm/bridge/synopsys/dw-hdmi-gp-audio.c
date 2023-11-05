@@ -4,12 +4,12 @@
  *
  * Copyright 2020-2022 NXP
  */
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_edid.h>
 #include <drm/drm_connector.h>

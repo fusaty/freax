@@ -6,20 +6,20 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/errno.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
 #include <net/rtnetlink.h>
 
 #include <scsi/fc/fc_els.h>

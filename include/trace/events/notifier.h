@@ -5,7 +5,7 @@
 #if !defined(_TRACE_NOTIFIERS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NOTIFIERS_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(notifier_info,
 

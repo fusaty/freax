@@ -4,8 +4,8 @@
  * Copyright (C) 1999, 2007 2012 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/asi.h>
 #include <asm/backoff.h>
 

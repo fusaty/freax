@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon_ud.c -- Software Rotation - 90 degrees
+ *  freax/drivers/video/console/fbcon_ud.c -- Software Rotation - 90 degrees
  *
  *      Copyright (C) 2005 Antonino Daplas <adaplas @pol.net>
  *
@@ -8,12 +8,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/fb.h>
+#include <freax/vt_kern.h>
+#include <freax/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 #include "fbcon_rotate.h"

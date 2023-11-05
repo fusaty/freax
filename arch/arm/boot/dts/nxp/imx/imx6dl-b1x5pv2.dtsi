@@ -181,7 +181,7 @@
 		power-button {
 			label = "power button";
 			gpios = <&gpio4 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 		};
 	};
 
@@ -191,8 +191,8 @@
 		rotary-encoder-event {
 			label = "rotary-encoder press";
 			gpios = <&tca6424a 0 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_ENTER>;
-			linux,can-disable;
+			freax,code = <KEY_ENTER>;
+			freax,can-disable;
 		};
 	};
 

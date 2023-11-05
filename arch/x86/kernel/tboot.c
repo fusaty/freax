@@ -6,18 +6,18 @@
  * Copyright (c) 2006-2009, Intel Corporation
  */
 
-#include <linux/init_task.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/dmar.h>
-#include <linux/cpu.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/tboot.h>
-#include <linux/debugfs.h>
+#include <freax/init_task.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/dmar.h>
+#include <freax/cpu.h>
+#include <freax/pfn.h>
+#include <freax/mm.h>
+#include <freax/tboot.h>
+#include <freax/debugfs.h>
 
 #include <asm/realmode.h>
 #include <asm/processor.h>

@@ -8,9 +8,9 @@
 #ifndef __LP872X_REGULATOR_H__
 #define __LP872X_REGULATOR_H__
 
-#include <linux/regulator/machine.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
+#include <freax/regulator/machine.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
 
 #define LP872X_MAX_REGULATORS		9
 

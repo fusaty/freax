@@ -7,12 +7,12 @@
  *
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
-#include <linux/binfmts.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/syscalls.h>
+#include <freax/rcupdate.h>
+#include <freax/binfmts.h>
 
 #include <asm/spu.h>
 

@@ -3,18 +3,18 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  *
  * Derived from MIPS:
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/cacheinfo.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
+#include <freax/cacheinfo.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/kernel.h>
+#include <freax/linkage.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/syscalls.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cacheflush.h>

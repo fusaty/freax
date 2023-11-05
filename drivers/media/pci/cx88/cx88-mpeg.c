@@ -11,13 +11,13 @@
 
 #include "cx88.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
 
 /* ------------------------------------------------------------------ */
 

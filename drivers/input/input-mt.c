@@ -5,9 +5,9 @@
  * Copyright (c) 2008-2010 Henrik Rydberg
  */
 
-#include <linux/input/mt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/input/mt.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 #include "input-core-private.h"
 
 #define TRKID_SGN	((TRKID_MAX + 1) >> 1)

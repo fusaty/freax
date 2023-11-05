@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/net/sunrpc/xprt.c
+ *  freax/net/sunrpc/xprt.c
  *
  *  This is a generic RPC call interface supporting congestion avoidance,
  *  and asynchronous calls.
@@ -38,19 +38,19 @@
  *  Transport switch API copyright (C) 2005, Chuck Lever <cel@netapp.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/net.h>
-#include <linux/ktime.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/net.h>
+#include <freax/ktime.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/mm.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/metrics.h>
+#include <freax/sunrpc/bc_xprt.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/mm.h>
 
 #include <trace/events/sunrpc.h>
 

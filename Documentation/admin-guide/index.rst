@@ -1,4 +1,4 @@
-The Linux kernel user's and administrator's guide
+The freax kernel user's and administrator's guide
 =================================================
 
 The following is a collection of user-oriented documents that have been
@@ -36,7 +36,7 @@ problems and bugs in particular.
 
    reporting-issues
    reporting-regressions
-   quickly-build-trimmed-linux
+   quickly-build-trimmed-freax
    bug-hunting
    bug-bisect
    tainted-kernels
@@ -58,7 +58,7 @@ ABI will be found here.
 
 This is the beginning of a section with information of interest to
 application developers and system integrators doing analysis of the
-Linux kernel for safety critical applications. Documents supporting
+freax kernel for safety critical applications. Documents supporting
 analysis of kernel interactions with applications, and key kernel
 subsystems expectations will be found here.
 

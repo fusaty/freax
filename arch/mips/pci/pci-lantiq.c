@@ -4,18 +4,18 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_pci.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_pci.h>
+#include <freax/platform_device.h>
 
 #include <asm/addrspace.h>
 

@@ -7,9 +7,9 @@
 #ifndef __ARM64_KVM_PGTABLE_H__
 #define __ARM64_KVM_PGTABLE_H__
 
-#include <linux/bits.h>
-#include <linux/kvm_host.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/kvm_host.h>
+#include <freax/types.h>
 
 #define KVM_PGTABLE_MAX_LEVELS		4U
 

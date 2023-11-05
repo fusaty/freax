@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_RICOH_H
-#define _LINUX_RICOH_H
+#ifndef _freax_RICOH_H
+#define _freax_RICOH_H
 
 
 #define RF5C_MODE_CTL		0x1f	/* Mode control */
@@ -238,4 +238,4 @@ static int ricoh_override(struct yenta_socket *socket)
 
 #endif /* CONFIG_CARDBUS */
 
-#endif /* _LINUX_RICOH_H */
+#endif /* _freax_RICOH_H */

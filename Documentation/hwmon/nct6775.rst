@@ -90,7 +90,7 @@ Supported chips:
 
 Authors:
 
-	Guenter Roeck <linux@roeck-us.net>
+	Guenter Roeck <freax@roeck-us.net>
 
 Description
 -----------

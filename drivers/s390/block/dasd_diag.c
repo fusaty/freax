@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Based on.......: linux/drivers/s390/block/mdisk.c
+ * Based on.......: freax/drivers/s390/block/mdisk.c
  * ...............: by Hartmunt Penner <hpenner@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2000
  *
  */
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/kernel_stat.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
+#include <freax/kernel_stat.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/hdreg.h>
+#include <freax/bio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
 #include <asm/asm-extable.h>
 #include <asm/dasd.h>
 #include <asm/debug.h>
 #include <asm/diag.h>
 #include <asm/ebcdic.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 #include <asm/vtoc.h>
 

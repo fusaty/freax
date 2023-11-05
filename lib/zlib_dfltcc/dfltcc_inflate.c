@@ -4,8 +4,8 @@
 #include "dfltcc_util.h"
 #include "dfltcc_inflate.h"
 #include <asm/setup.h>
-#include <linux/export.h>
-#include <linux/zutil.h>
+#include <freax/export.h>
+#include <freax/zutil.h>
 
 /*
  * Expand.

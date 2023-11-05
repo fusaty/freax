@@ -12,16 +12,16 @@
 #ifndef __SP_DEV_H__
 #define __SP_DEV_H__
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/dmapool.h>
-#include <linux/hw_random.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/dmapool.h>
+#include <freax/hw_random.h>
+#include <freax/bitops.h>
+#include <freax/interrupt.h>
+#include <freax/irqreturn.h>
 
 #define SP_MAX_NAME_LEN		32
 

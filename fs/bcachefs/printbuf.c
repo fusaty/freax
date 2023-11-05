@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: LGPL-2.1+
 /* Copyright (C) 2022 Kent Overstreet */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
 
 #include "printbuf.h"
 

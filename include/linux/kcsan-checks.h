@@ -6,12 +6,12 @@
  * Copyright (C) 2019, Google LLC.
  */
 
-#ifndef _LINUX_KCSAN_CHECKS_H
-#define _LINUX_KCSAN_CHECKS_H
+#ifndef _freax_KCSAN_CHECKS_H
+#define _freax_KCSAN_CHECKS_H
 
 /* Note: Only include what is already included by compiler.h. */
-#include <linux/compiler_attributes.h>
-#include <linux/types.h>
+#include <freax/compiler_attributes.h>
+#include <freax/types.h>
 
 /* Access types -- if KCSAN_ACCESS_WRITE is not set, the access is a read. */
 #define KCSAN_ACCESS_WRITE	(1 << 0) /* Access is a write. */
@@ -530,4 +530,4 @@ static inline void __kcsan_disable_current(void) { }
 		kcsan_atomic_next(1);                                          \
 	} while (0)
 
-#endif /* _LINUX_KCSAN_CHECKS_H */
+#endif /* _freax_KCSAN_CHECKS_H */

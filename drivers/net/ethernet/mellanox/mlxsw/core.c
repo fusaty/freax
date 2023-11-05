@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/if_link.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/random.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/if_link.h>
+#include <freax/netdevice.h>
+#include <freax/completion.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/gfp.h>
+#include <freax/random.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/firmware.h>
 #include <asm/byteorder.h>
 #include <net/devlink.h>
 #include <trace/events/devlink.h>

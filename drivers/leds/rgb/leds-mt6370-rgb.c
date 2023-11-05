@@ -7,19 +7,19 @@
  *   Alice Chen <alice_chen@richtek.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/linear_range.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/linear_range.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/util_macros.h>
 
 #include <asm/unaligned.h>
 

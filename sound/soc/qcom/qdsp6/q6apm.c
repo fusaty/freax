@@ -2,16 +2,16 @@
 // Copyright (c) 2020, Linaro Limited
 
 #include <dt-bindings/soc/qcom,gpr.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/apr.h>
+#include <freax/wait.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/pcm.h>

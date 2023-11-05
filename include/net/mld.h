@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_MLD_H
-#define LINUX_MLD_H
+#ifndef freax_MLD_H
+#define freax_MLD_H
 
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
+#include <freax/in6.h>
+#include <freax/icmpv6.h>
 
 /* MLDv1 Query/Report/Done */
 struct mld_msg {

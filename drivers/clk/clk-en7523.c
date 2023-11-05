@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/delay.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/en7523-clk.h>
 
 #define REG_PCI_CONTROL			0x88

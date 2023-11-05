@@ -2,7 +2,7 @@
 #ifndef BOOT_BOOT_H
 #define BOOT_BOOT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define IPL_START	0x200
 
@@ -16,7 +16,7 @@ struct machine_info {
 	unsigned char has_nx : 1;
 };
 
-struct vmlinux_info {
+struct vmfreax_info {
 	unsigned long default_lma;
 	unsigned long entry;
 	unsigned long image_size;	/* does not include .bss */
@@ -88,8 +88,8 @@ extern char _stack_start[], _stack_end[];
 extern char _end[], _decompressor_end[];
 extern unsigned char _compressed_start[];
 extern unsigned char _compressed_end[];
-extern struct vmlinux_info _vmlinux_info;
-#define vmlinux _vmlinux_info
+extern struct vmfreax_info _vmfreax_info;
+#define vmfreax _vmfreax_info
 
 #define __abs_lowcore_pa(x)	(((unsigned long)(x) - __abs_lowcore) % sizeof(struct lowcore))
 

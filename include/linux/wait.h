@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_WAIT_H
-#define _LINUX_WAIT_H
+#ifndef _freax_WAIT_H
+#define _freax_WAIT_H
 /*
- * Linux wait queue related types and methods
+ * freax wait queue related types and methods
  */
-#include <linux/list.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/stddef.h>
+#include <freax/spinlock.h>
 
 #include <asm/current.h>
-#include <uapi/linux/wait.h>
+#include <uapi/freax/wait.h>
 
 typedef struct wait_queue_entry wait_queue_entry_t;
 
@@ -1218,4 +1218,4 @@ int autoremove_wake_function(struct wait_queue_entry *wq_entry, unsigned mode, i
 typedef int (*task_call_f)(struct task_struct *p, void *arg);
 extern int task_call_func(struct task_struct *p, task_call_f func, void *arg);
 
-#endif /* _LINUX_WAIT_H */
+#endif /* _freax_WAIT_H */

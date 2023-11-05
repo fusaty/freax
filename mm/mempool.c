@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/mm/mempool.c
+ *  freax/mm/mempool.c
  *
  *  memory buffer pool support. Such pools are mostly used
  *  for guaranteed, deadlock-free memory allocations during
@@ -10,14 +10,14 @@
  *  debugging by David Rientjes, Copyright (C) 2015
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/kasan.h>
-#include <linux/kmemleak.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/writeback.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/kasan.h>
+#include <freax/kmemleak.h>
+#include <freax/export.h>
+#include <freax/mempool.h>
+#include <freax/writeback.h>
 #include "slab.h"
 
 #if defined(CONFIG_DEBUG_SLAB) || defined(CONFIG_SLUB_DEBUG_ON)

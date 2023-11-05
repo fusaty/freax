@@ -17,7 +17,7 @@
  *
  * For details regarding pin numbers and names see the schematics (under
  * "IO EXPAND"):
- * http://dl.linux-sunxi.org/D1/D1_Nezha_development_board_schematic_diagram_20210224.pdf
+ * http://dl.freax-sunxi.org/D1/D1_Nezha_development_board_schematic_diagram_20210224.pdf
  */
 
 #include <dt-bindings/gpio/gpio.h>

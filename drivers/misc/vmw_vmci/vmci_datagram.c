@@ -5,12 +5,12 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/vmw_vmci_api.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/bug.h>
 
 #include "vmci_datagram.h"
 #include "vmci_resource.h"

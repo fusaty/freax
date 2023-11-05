@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SUNRPC_RPC_PIPE_FS_H
-#define _LINUX_SUNRPC_RPC_PIPE_FS_H
+#ifndef _freax_SUNRPC_RPC_PIPE_FS_H
+#define _freax_SUNRPC_RPC_PIPE_FS_H
 
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 struct rpc_pipe_dir_head {
 	struct list_head pdh_entries;

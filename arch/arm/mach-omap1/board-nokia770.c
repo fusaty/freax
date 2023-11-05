@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-nokia770.c
+ * freax/arch/arm/mach-omap1/board-nokia770.c
  *
  * Modified from board-generic.c
  */
-#include <linux/clkdev.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/property.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/input.h>
-#include <linux/omapfb.h>
+#include <freax/clkdev.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/property.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/input.h>
+#include <freax/omapfb.h>
 
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <freax/spi/spi.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
 
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/platform_data/lcd-mipid.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <freax/platform_data/keypad-omap.h>
+#include <freax/platform_data/lcd-mipid.h>
+#include <freax/platform_data/gpio-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

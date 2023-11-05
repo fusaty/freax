@@ -12,7 +12,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/llc_s_ac.h>
 #include <net/llc_s_ev.h>
 

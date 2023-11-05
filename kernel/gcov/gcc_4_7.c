@@ -12,10 +12,10 @@
  *  Uses gcc-internal data definitions.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/mm.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/mm.h>
 #include "gcov.h"
 
 #if (__GNUC__ >= 10)

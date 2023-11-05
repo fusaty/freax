@@ -7,13 +7,13 @@
  * Version: v0.9.0 (2019-08-08)
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/pci.h>
-#include <linux/mmc/mmc.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/iopoll.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/pci.h>
+#include <freax/mmc/mmc.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/iopoll.h>
 #include "sdhci.h"
 #include "sdhci-cqhci.h"
 #include "sdhci-pci.h"

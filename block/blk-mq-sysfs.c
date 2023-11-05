@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/smp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/backing-dev.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/smp.h>
 
 #include "blk.h"
 #include "blk-mq.h"

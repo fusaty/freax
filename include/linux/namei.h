@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NAMEI_H
-#define _LINUX_NAMEI_H
+#ifndef _freax_NAMEI_H
+#define _freax_NAMEI_H
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/path.h>
-#include <linux/fcntl.h>
-#include <linux/errno.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/path.h>
+#include <freax/fcntl.h>
+#include <freax/errno.h>
 
 enum { MAX_NESTED_LINKS = 8 };
 
@@ -139,4 +139,4 @@ retry_estale(const long error, const unsigned int flags)
 	return unlikely(error == -ESTALE && !(flags & LOOKUP_REVAL));
 }
 
-#endif /* _LINUX_NAMEI_H */
+#endif /* _freax_NAMEI_H */

@@ -10,14 +10,14 @@
  *	Calculates md5/sha1 file hash, template hash, boot-aggreate hash
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/ratelimit.h>
-#include <linux/file.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/ratelimit.h>
+#include <freax/file.h>
+#include <freax/crypto.h>
+#include <freax/scatterlist.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 #include <crypto/hash.h>
 
 #include "ima.h"

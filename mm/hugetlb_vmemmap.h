@@ -6,9 +6,9 @@
  *
  *     Author: Muchun Song <songmuchun@bytedance.com>
  */
-#ifndef _LINUX_HUGETLB_VMEMMAP_H
-#define _LINUX_HUGETLB_VMEMMAP_H
-#include <linux/hugetlb.h>
+#ifndef _freax_HUGETLB_VMEMMAP_H
+#define _freax_HUGETLB_VMEMMAP_H
+#include <freax/hugetlb.h>
 
 /*
  * Reserve one vmemmap page, all vmemmap addresses are mapped to it. See
@@ -74,4 +74,4 @@ static inline bool hugetlb_vmemmap_optimizable(const struct hstate *h)
 {
 	return hugetlb_vmemmap_optimizable_size(h) != 0;
 }
-#endif /* _LINUX_HUGETLB_VMEMMAP_H */
+#endif /* _freax_HUGETLB_VMEMMAP_H */

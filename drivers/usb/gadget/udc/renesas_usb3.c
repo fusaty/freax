@@ -5,29 +5,29 @@
  * Copyright (C) 2015-2017  Renesas Electronics Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/extcon-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/of.h>
-#include <linux/usb/role.h>
-#include <linux/usb/rzv2m_usb3drd.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/extcon-provider.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/of.h>
+#include <freax/usb/role.h>
+#include <freax/usb/rzv2m_usb3drd.h>
 
 /* register definitions */
 #define USB3_AXI_INT_STA	0x008

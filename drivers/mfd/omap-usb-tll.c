@@ -6,18 +6,18 @@
  * Author: Keshava Munegowda <keshava_mgowda@ti.com>
  * Author: Roger Quadros <rogerq@ti.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_data/usb-omap.h>
+#include <freax/of.h>
 
 #include "omap-usb.h"
 

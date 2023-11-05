@@ -4,9 +4,9 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/mhi_ep.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
+#include <freax/mhi_ep.h>
 
 #include "internal.h"
 

@@ -8,7 +8,7 @@
 #ifndef __SOUND_HDA_GENERIC_H
 #define __SOUND_HDA_GENERIC_H
 
-#include <linux/leds.h>
+#include <freax/leds.h>
 #include "hda_auto_parser.h"
 
 struct hda_jack_callback;

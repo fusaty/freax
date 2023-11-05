@@ -8,9 +8,9 @@
  */
 
 #include <kunit/test.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
+#include <freax/completion.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
 
 #include "try-catch-impl.h"
 

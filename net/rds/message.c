@@ -30,12 +30,12 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/errqueue.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/skbuff.h>
+#include <freax/list.h>
+#include <freax/errqueue.h>
 
 #include "rds.h"
 

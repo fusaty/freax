@@ -6,7 +6,7 @@
 #ifndef _ABI_GUC_KLVS_ABI_H
 #define _ABI_GUC_KLVS_ABI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * DOC: GuC KLV

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 - 2022 Beijing WangXun Technology Co., Ltd. */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/etherdevice.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/string.h>
+#include <freax/etherdevice.h>
 #include <net/ip.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
+#include <freax/phy.h>
+#include <freax/if_vlan.h>
 
 #include "../libwx/wx_type.h"
 #include "../libwx/wx_hw.h"

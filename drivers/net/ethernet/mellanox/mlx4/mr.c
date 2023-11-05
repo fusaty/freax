@@ -32,13 +32,13 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
 
-#include <linux/mlx4/cmd.h>
+#include <freax/mlx4/cmd.h>
 
 #include "mlx4.h"
 #include "icm.h"

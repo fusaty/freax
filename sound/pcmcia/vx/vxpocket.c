@@ -7,9 +7,9 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include "vxpocket.h"
 #include <pcmcia/ciscode.h>

@@ -5,11 +5,11 @@
  * Copyright IBM Corp. 2017
  * Copyright Red Hat, Inc. 2019
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@freax.vnet.ibm.com>
  *            Cornelia Huck <cohuck@redhat.com>
  */
 
-#include <linux/vfio.h>
+#include <freax/vfio.h>
 
 #include <asm/isc.h>
 

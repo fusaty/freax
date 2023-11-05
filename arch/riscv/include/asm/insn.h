@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_INSN_H
 #define _ASM_RISCV_INSN_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define RV_INSN_FUNCT3_MASK	GENMASK(14, 12)
 #define RV_INSN_FUNCT3_OPOFF	12

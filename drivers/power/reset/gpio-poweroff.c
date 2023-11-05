@@ -7,15 +7,15 @@
  *
  * Copyright (C) 2012 Jamie Lentin
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
 
 #define DEFAULT_TIMEOUT_MS 3000
 

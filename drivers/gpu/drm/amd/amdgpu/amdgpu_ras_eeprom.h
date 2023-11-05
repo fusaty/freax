@@ -24,7 +24,7 @@
 #ifndef _AMDGPU_RAS_EEPROM_H
 #define _AMDGPU_RAS_EEPROM_H
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 #define RAS_TABLE_VER_V1           0x00010000
 #define RAS_TABLE_VER_V2_1         0x00021000

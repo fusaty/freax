@@ -5,19 +5,19 @@
  * Copyright (c) 2007, 2008 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/pkt_cls.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/jhash.h>
+#include <freax/random.h>
+#include <freax/pkt_cls.h>
+#include <freax/skbuff.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/if_vlan.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <net/inet_sock.h>
 
 #include <net/pkt_cls.h>

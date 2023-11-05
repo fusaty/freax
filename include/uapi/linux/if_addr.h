@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_IF_ADDR_H
-#define __LINUX_IF_ADDR_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_IF_ADDR_H
+#define __freax_IF_ADDR_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
 
 struct ifaddrmsg {
 	__u8		ifa_family;

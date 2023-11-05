@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   md.c : Multiple Devices driver for Linux
+   md.c : Multiple Devices driver for freax
      Copyright (C) 1998, 1999, 2000 Ingo Molnar
 
      completely rewritten, based on the MD driver code from Marc Zyngier
@@ -37,33 +37,33 @@
 
 */
 
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/badblocks.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/hdreg.h>
-#include <linux/proc_fs.h>
-#include <linux/random.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/file.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/raid/md_p.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/detect.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
-#include <linux/part_stat.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/kthread.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/badblocks.h>
+#include <freax/sysctl.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/hdreg.h>
+#include <freax/proc_fs.h>
+#include <freax/random.h>
+#include <freax/major.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/file.h>
+#include <freax/compat.h>
+#include <freax/delay.h>
+#include <freax/raid/md_p.h>
+#include <freax/raid/md_u.h>
+#include <freax/raid/detect.h>
+#include <freax/slab.h>
+#include <freax/percpu-refcount.h>
+#include <freax/part_stat.h>
 
 #include <trace/events/block.h>
 #include "md.h"

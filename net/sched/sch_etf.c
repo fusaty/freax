@@ -6,15 +6,15 @@
  *		Vinicius Costa Gomes <vinicius.gomes@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/rbtree.h>
-#include <linux/skbuff.h>
-#include <linux/posix-timers.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/errqueue.h>
+#include <freax/rbtree.h>
+#include <freax/skbuff.h>
+#include <freax/posix-timers.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>

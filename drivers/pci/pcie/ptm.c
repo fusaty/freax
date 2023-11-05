@@ -4,10 +4,10 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
 #include "../pci.h"
 
 /*

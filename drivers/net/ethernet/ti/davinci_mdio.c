@@ -9,24 +9,24 @@
  * Copyright (C) 2009 Texas Instruments.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/phy.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/sys_soc.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/phy.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/pm_runtime.h>
+#include <freax/davinci_emac.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/mdio-bitbang.h>
+#include <freax/sys_soc.h>
 
 /*
  * This timeout definition is a worst-case ultra defensive measure against

@@ -2,18 +2,18 @@
 /*
  * Input driver for Microchip CAP11xx based capacitive touch sensors
  *
- * (c) 2014 Daniel Mack <linux@zonque.org>
+ * (c) 2014 Daniel Mack <freax@zonque.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/leds.h>
+#include <freax/of_irq.h>
+#include <freax/regmap.h>
+#include <freax/i2c.h>
+#include <freax/gpio/consumer.h>
 
 #define CAP11XX_REG_MAIN_CONTROL	0x00
 #define CAP11XX_REG_MAIN_CONTROL_GAIN_SHIFT	(6)
@@ -292,7 +292,7 @@ static int cap11xx_init_leds(struct device *dev,
 		led->cdev.name =
 			of_get_property(child, "label", NULL) ? : child->name;
 		led->cdev.default_trigger =
-			of_get_property(child, "linux,default-trigger", NULL);
+			of_get_property(child, "freax,default-trigger", NULL);
 		led->cdev.flags = 0;
 		led->cdev.brightness_set_blocking = cap11xx_led_set;
 		led->cdev.max_brightness = 1;
@@ -414,7 +414,7 @@ static int cap11xx_i2c_probe(struct i2c_client *i2c_client)
 	for (i = 0; i < cap->num_channels; i++)
 		priv->keycodes[i] = KEY_A + i;
 
-	of_property_read_u32_array(node, "linux,keycodes",
+	of_property_read_u32_array(node, "freax,keycodes",
 				   priv->keycodes, cap->num_channels);
 
 	if (!cap->no_gain) {
@@ -426,7 +426,7 @@ static int cap11xx_i2c_probe(struct i2c_client *i2c_client)
 			return error;
 	}
 
-	/* Disable autorepeat. The Linux input system has its own handling. */
+	/* Disable autorepeat. The freax input system has its own handling. */
 	error = regmap_write(priv->regmap, CAP11XX_REG_REPEAT_RATE, 0);
 	if (error)
 		return error;
@@ -524,5 +524,5 @@ static struct i2c_driver cap11xx_i2c_driver = {
 module_i2c_driver(cap11xx_i2c_driver);
 
 MODULE_DESCRIPTION("Microchip CAP11XX driver");
-MODULE_AUTHOR("Daniel Mack <linux@zonque.org>");
+MODULE_AUTHOR("Daniel Mack <freax@zonque.org>");
 MODULE_LICENSE("GPL v2");

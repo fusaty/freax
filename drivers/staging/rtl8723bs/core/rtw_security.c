@@ -4,7 +4,7 @@
  * Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved.
  *
  ******************************************************************************/
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <crypto/aes.h>

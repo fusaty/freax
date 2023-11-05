@@ -15,22 +15,22 @@
  *		Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/memblock.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/gpio/consumer.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/device.h>
+#include <freax/memblock.h>
+#include <freax/dma-mapping.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/gpio/consumer.h>
+#include <freax/clk.h>
 
 #include <sysdev/fsl_soc.h>
 
@@ -39,8 +39,8 @@
 #include <asm/delay.h>
 #include <asm/udbg.h>
 
-#include <linux/serial_core.h>
-#include <linux/kernel.h>
+#include <freax/serial_core.h>
+#include <freax/kernel.h>
 
 #include "cpm_uart.h"
 

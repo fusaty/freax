@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2013-2014 Broadcom Corporation
 
-#include <linux/init.h>
-#include <linux/irqchip.h>
+#include <freax/init.h>
+#include <freax/irqchip.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

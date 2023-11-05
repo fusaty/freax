@@ -7,11 +7,11 @@
 #ifndef __MM_INTERNAL_H
 #define __MM_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/tracepoint-defs.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/tracepoint-defs.h>
 
 struct folio_batch;
 

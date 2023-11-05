@@ -59,7 +59,7 @@
 公用API
 =======
 
-公用API可以在 ``<linux/assoc_array.h>`` 中找到。关联数组的根是以下结构::
+公用API可以在 ``<freax/assoc_array.h>`` 中找到。关联数组的根是以下结构::
 
     struct assoc_array {
             ...

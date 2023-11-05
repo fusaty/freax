@@ -5,7 +5,7 @@
  * Copyright IBM Corp. 2019
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asm-extable.h>
 #include <asm/errno.h>
 #include <asm/sigp.h>

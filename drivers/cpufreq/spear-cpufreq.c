@@ -13,15 +13,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 /* SPEAr CPUFreq driver data structure */
 static struct {

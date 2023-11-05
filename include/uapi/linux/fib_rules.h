@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_FIB_RULES_H
-#define __LINUX_FIB_RULES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_FIB_RULES_H
+#define __freax_FIB_RULES_H
 
-#include <linux/types.h>
-#include <linux/rtnetlink.h>
+#include <freax/types.h>
+#include <freax/rtnetlink.h>
 
 /* rule is permanent, and cannot be deleted */
 #define FIB_RULE_PERMANENT	0x00000001

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/dns_resolve.c
+ * freax/fs/nfs/dns_resolve.c
  *
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
  * Resolves DNS hostnames into valid ip addresses
  */
 
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
+#include <freax/module.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/addr.h>
 
 #include "dns_resolve.h"
 
 #ifdef CONFIG_NFS_USE_KERNEL_DNS
 
-#include <linux/dns_resolver.h>
+#include <freax/dns_resolver.h>
 
 ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
 		struct sockaddr_storage *ss, size_t salen)
@@ -37,17 +37,17 @@ ssize_t nfs_dns_resolve_name(struct net *net, char *name, size_t namelen,
 
 #else
 
-#include <linux/hash.h>
-#include <linux/string.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/seq_file.h>
-#include <linux/inet.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/nfs_fs.h>
+#include <freax/hash.h>
+#include <freax/string.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/seq_file.h>
+#include <freax/inet.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/sunrpc/svcauth.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
+#include <freax/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "cache_lib.h"

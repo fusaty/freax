@@ -2,7 +2,7 @@
 #ifndef __ASM_ALTERNATIVE_MACROS_H
 #define __ASM_ALTERNATIVE_MACROS_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <vdso/bits.h>
 
 #include <asm/cpucaps.h>
@@ -21,7 +21,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #define ALTINSTR_ENTRY(cpucap)					              \
 	" .word 661b - .\n"				/* label           */ \
@@ -221,7 +221,7 @@ alternative_endif
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 static __always_inline bool
 alternative_has_cap_likely(const unsigned long cpucap)

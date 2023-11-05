@@ -3,7 +3,7 @@
 #ifndef __CROS_TYPEC_VDM__
 #define __CROS_TYPEC_VDM__
 
-#include <linux/usb/typec_altmode.h>
+#include <freax/usb/typec_altmode.h>
 
 extern const struct typec_altmode_ops port_amode_ops;
 

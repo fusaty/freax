@@ -7,17 +7,17 @@
 #define DRV_NAME "r852"
 #define pr_fmt(fmt)  DRV_NAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
-#include <linux/sched.h>
+#include <freax/sched.h>
 #include "sm_common.h"
 #include "r852.h"
 

@@ -9,10 +9,10 @@
 
 #include "debugfs.h"
 
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 
 #include "wlcore.h"
 #include "debug.h"

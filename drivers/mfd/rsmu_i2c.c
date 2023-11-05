@@ -5,15 +5,15 @@
  * Copyright (C) 2021 Integrated Device Technology, Inc., a Renesas Company.
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rsmu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/rsmu.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "rsmu.h"
 

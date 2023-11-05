@@ -4,11 +4,11 @@
  *
  * Copyright (c) 2013 Chanho Min <chanho.min@lge.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/vmalloc.h>
-#include <linux/lz4.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/vmalloc.h>
+#include <freax/lz4.h>
 #include <crypto/internal/scompress.h>
 
 struct lz4hc_ctx {

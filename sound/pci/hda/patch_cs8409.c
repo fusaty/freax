@@ -6,12 +6,12 @@
  *                    Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
-#include <linux/mutex.h>
-#include <linux/iopoll.h>
+#include <freax/mutex.h>
+#include <freax/iopoll.h>
 
 #include "patch_cs8409.h"
 

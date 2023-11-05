@@ -4,24 +4,24 @@
  * Copyright IBM Corp. 2007
  *
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
- *          Christian Ehrhardt <ehrhardt@linux.vnet.ibm.com>
+ *          Christian Ehrhardt <ehrhardt@freax.vnet.ibm.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
-#include <linux/vmalloc.h>
-#include <linux/hrtimer.h>
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/irqbypass.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/of.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/kvm_host.h>
+#include <freax/vmalloc.h>
+#include <freax/hrtimer.h>
+#include <freax/sched/signal.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/module.h>
+#include <freax/irqbypass.h>
+#include <freax/kvm_irqfd.h>
+#include <freax/of.h>
 #include <asm/cputable.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/kvm_ppc.h>
 #include <asm/cputhreads.h>
 #include <asm/irqflags.h>
@@ -192,7 +192,7 @@ int kvmppc_kvm_pv(struct kvm_vcpu *vcpu)
 
 		if (!(param2 & MAGIC_PAGE_FLAG_NOT_MAPPED_NX)) {
 			/*
-			 * Older versions of the Linux magic page code had
+			 * Older versions of the freax magic page code had
 			 * a bug where they would map their trampoline code
 			 * NX. If that's the case, remove !PR NX capability.
 			 */
@@ -836,7 +836,7 @@ void kvm_arch_vcpu_load(struct kvm_vcpu *vcpu, int cpu)
 {
 #ifdef CONFIG_BOOKE
 	/*
-	 * vrsave (formerly usprg0) isn't used by Linux, but may
+	 * vrsave (formerly usprg0) isn't used by freax, but may
 	 * be used by the guest.
 	 *
 	 * On non-booke this is associated with Altivec and

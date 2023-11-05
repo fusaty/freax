@@ -6,29 +6,29 @@
  * Copyright (C) 2017 Red Hat
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/kconfig.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-hi-lo.h>
+#include <freax/io-pgtable.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/kconfig.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "arm-smmu.h"
 

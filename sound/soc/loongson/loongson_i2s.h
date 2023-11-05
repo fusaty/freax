@@ -9,7 +9,7 @@
 #ifndef _LOONGSON_I2S_H
 #define _LOONGSON_I2S_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/dmaengine_pcm.h>
 
 /* I2S Common Registers */

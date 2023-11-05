@@ -46,7 +46,7 @@
 #ifndef __ZIP_CRYPTO_H__
 #define __ZIP_CRYPTO_H__
 
-#include <linux/crypto.h>
+#include <freax/crypto.h>
 #include <crypto/internal/scompress.h>
 #include "common.h"
 #include "zip_deflate.h"

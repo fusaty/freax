@@ -5,18 +5,18 @@
  * Copyright (C) 2012 Google, Inc.
  */
 
-#include <linux/dma-fence-unwrap.h>
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/anon_inodes.h>
-#include <linux/sync_file.h>
-#include <uapi/linux/sync_file.h>
+#include <freax/dma-fence-unwrap.h>
+#include <freax/export.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/anon_inodes.h>
+#include <freax/sync_file.h>
+#include <uapi/freax/sync_file.h>
 
 static const struct file_operations sync_file_fops;
 

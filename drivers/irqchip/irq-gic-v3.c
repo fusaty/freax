@@ -6,27 +6,27 @@
 
 #define pr_fmt(fmt)	"GICv3: " fmt
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kstrtox.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/kstrtox.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/percpu.h>
+#include <freax/refcount.h>
+#include <freax/slab.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-common.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/irq-partition-percpu.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/arm-smccc.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/arm-gic-common.h>
+#include <freax/irqchip/arm-gic-v3.h>
+#include <freax/irqchip/irq-partition-percpu.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/arm-smccc.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>
@@ -79,7 +79,7 @@ static DEFINE_STATIC_KEY_TRUE(supports_deactivate_key);
 #define GIC_ESPI_NR	GICD_TYPER_ESPIS(gic_data.rdists.gicd_typer)
 
 /*
- * There are 16 SGIs, though we only actually use 8 in Linux. The other 8 SGIs
+ * There are 16 SGIs, though we only actually use 8 in freax. The other 8 SGIs
  * are potentially stolen by the secure side. Some code, especially code dealing
  * with hwirq IDs, is simplified by accounting for all 16.
  */
@@ -143,7 +143,7 @@ static DEFINE_PER_CPU(bool, has_rss);
 #define gic_data_rdist_rd_base()	(gic_data_rdist()->rd_base)
 #define gic_data_rdist_sgi_base()	(gic_data_rdist_rd_base() + SZ_64K)
 
-/* Our default, arbitrary priority value. Linux only uses one anyway. */
+/* Our default, arbitrary priority value. freax only uses one anyway. */
 #define DEFAULT_PMR_VALUE	0xf0
 
 enum gic_intid_range {
@@ -1978,7 +1978,7 @@ static void gic_enable_nmi_support(void)
 	/*
 	 * How priority values are used by the GIC depends on two things:
 	 * the security state of the GIC (controlled by the GICD_CTRL.DS bit)
-	 * and if Group 0 interrupts can be delivered to Linux in the non-secure
+	 * and if Group 0 interrupts can be delivered to freax in the non-secure
 	 * world as FIQs (controlled by the SCR_EL3.FIQ bit). These affect the
 	 * ICC_PMR_EL1 register and the priority that software assigns to
 	 * interrupts:

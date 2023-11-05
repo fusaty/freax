@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/nommu.c
+ *  freax/arch/arm/mm/nommu.c
  *
- * ARM uCLinux supporting functions.
+ * ARM uCfreax supporting functions.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/kernel.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

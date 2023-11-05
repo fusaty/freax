@@ -4,7 +4,7 @@
 #ifndef _NFP_DEV_H_
 #define _NFP_DEV_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define PCI_VENDOR_ID_CORIGINE	0x1da8
 #define PCI_DEVICE_ID_NFP3800	0x3800

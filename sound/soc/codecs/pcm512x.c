@@ -7,14 +7,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gcd.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gcd.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/pcm_params.h>

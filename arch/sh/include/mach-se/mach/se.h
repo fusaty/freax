@@ -3,13 +3,13 @@
 #define __ASM_SH_HITACHI_SE_H
 
 /*
- * linux/include/asm-sh/hitachi_se.h
+ * freax/include/asm-sh/hitachi_se.h
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
  * Hitachi SolutionEngine support
  */
-#include <linux/sh_intc.h>
+#include <freax/sh_intc.h>
 
 /* Box specific addresses.  */
 

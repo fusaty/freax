@@ -49,13 +49,13 @@
 
 		button-wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 6 GPIO_ACTIVE_LOW>;
 		};
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
 		};
 	};

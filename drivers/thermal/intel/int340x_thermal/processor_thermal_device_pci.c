@@ -4,11 +4,11 @@
  * Copyright (c) 2020, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/thermal.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/thermal.h>
 
 #include "int340x_thermal_zone.h"
 #include "processor_thermal_device.h"
@@ -431,6 +431,6 @@ module_pci_driver(proc_thermal_pci_driver);
 
 MODULE_IMPORT_NS(INT340X_THERMAL);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>");
 MODULE_DESCRIPTION("Processor Thermal Reporting Device Driver");
 MODULE_LICENSE("GPL v2");

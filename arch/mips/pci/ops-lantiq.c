@@ -4,13 +4,13 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
 #include <asm/addrspace.h>
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include <lantiq_soc.h>
 

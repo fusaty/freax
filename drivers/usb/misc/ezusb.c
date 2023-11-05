@@ -5,13 +5,13 @@
  * Copyright (C) 1999 - 2002 Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/usb/ezusb.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/firmware.h>
+#include <freax/ihex.h>
+#include <freax/usb/ezusb.h>
 
 struct ezusb_fx_type {
 	/* EZ-USB Control and Status Register.  Bit 0 controls 8051 reset */

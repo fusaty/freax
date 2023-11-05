@@ -3,7 +3,7 @@
  * Copyright (C) 2014 Intel Corporation
  *
  * Authors:
- * Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+ * Jarkko Sakkinen <jarkko.sakkinen@freax.intel.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *
@@ -11,13 +11,13 @@
  * the TCG CRB 2.0 TPM specification.
  */
 
-#include <linux/acpi.h>
-#include <linux/highmem.h>
-#include <linux/rculist.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/highmem.h>
+#include <freax/rculist.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 #ifdef CONFIG_ARM64
-#include <linux/arm-smccc.h>
+#include <freax/arm-smccc.h>
 #endif
 #include "tpm.h"
 
@@ -852,7 +852,7 @@ static struct acpi_driver crb_acpi_driver = {
 };
 
 module_acpi_driver(crb_acpi_driver);
-MODULE_AUTHOR("Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>");
+MODULE_AUTHOR("Jarkko Sakkinen <jarkko.sakkinen@freax.intel.com>");
 MODULE_DESCRIPTION("TPM2 Driver");
 MODULE_VERSION("0.1");
 MODULE_LICENSE("GPL");

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <unistd.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include "../tests.h"
 
 static volatile sig_atomic_t done;

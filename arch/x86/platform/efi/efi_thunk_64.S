@@ -19,8 +19,8 @@
  * and kernel text (see efi_setup_page_tables()).
  */
 
-#include <linux/linkage.h>
-#include <linux/objtool.h>
+#include <freax/linkage.h>
+#include <freax/objtool.h>
 #include <asm/page_types.h>
 #include <asm/segment.h>
 

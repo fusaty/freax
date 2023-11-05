@@ -4,11 +4,11 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#ifndef __LINUX_INTERCONNECT_H
-#define __LINUX_INTERCONNECT_H
+#ifndef __freax_INTERCONNECT_H
+#define __freax_INTERCONNECT_H
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 /* macros for converting to icc units */
 #define Bps_to_icc(x)	((x) / 1000)
@@ -135,4 +135,4 @@ static inline void icc_bulk_disable(int num_paths, const struct icc_bulk_data *p
 
 #endif /* CONFIG_INTERCONNECT */
 
-#endif /* __LINUX_INTERCONNECT_H */
+#endif /* __freax_INTERCONNECT_H */

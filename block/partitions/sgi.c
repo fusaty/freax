@@ -10,7 +10,7 @@
 #define SGI_LABEL_MAGIC 0x0be5a941
 
 enum {
-	LINUX_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
+	freax_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
 };
 
 struct sgi_disklabel {
@@ -66,7 +66,7 @@ int sgi_partition(struct parsed_partitions *state)
 		put_dev_sector(sect);
 		return 0;
 	}
-	/* All SGI disk labels have 16 partitions, disks under Linux only
+	/* All SGI disk labels have 16 partitions, disks under freax only
 	 * have 15 minor's.  Luckily there are always a few zero length
 	 * partitions which we don't care about so we never overflow the
 	 * current_minor.
@@ -76,7 +76,7 @@ int sgi_partition(struct parsed_partitions *state)
 		start  = be32_to_cpu(p->first_block);
 		if (blocks) {
 			put_partition(state, slot, start, blocks);
-			if (be32_to_cpu(p->type) == LINUX_RAID_PARTITION)
+			if (be32_to_cpu(p->type) == freax_RAID_PARTITION)
 				state->parts[slot].flags = ADDPART_FLAG_RAID;
 		}
 		slot++;

@@ -6,8 +6,8 @@
  * Header for Exynos PMU Driver support
  */
 
-#ifndef __LINUX_SOC_EXYNOS_PMU_H
-#define __LINUX_SOC_EXYNOS_PMU_H
+#ifndef __freax_SOC_EXYNOS_PMU_H
+#define __freax_SOC_EXYNOS_PMU_H
 
 struct regmap;
 
@@ -28,4 +28,4 @@ static inline struct regmap *exynos_get_pmu_regmap(void)
 }
 #endif
 
-#endif /* __LINUX_SOC_EXYNOS_PMU_H */
+#endif /* __freax_SOC_EXYNOS_PMU_H */

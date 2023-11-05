@@ -9,13 +9,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/hid.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/hid.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/device.h>
 
 #include "surface_hid_core.h"
 

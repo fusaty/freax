@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/efi.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/efi.h>
+#include <freax/security.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include "efi_test.h"
 

@@ -7,7 +7,7 @@
  *  Routines for control of EMU10K1 chips
  */
 
-#include <linux/time.h>
+#include <freax/time.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

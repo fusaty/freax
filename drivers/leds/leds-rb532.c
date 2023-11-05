@@ -9,9 +9,9 @@
  * button of Routerboard532).
  */
 
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <asm/mach-rc32434/gpio.h>
 #include <asm/mach-rc32434/rb.h>

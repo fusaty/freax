@@ -2,9 +2,9 @@
 #ifndef _RESCTRL_H
 #define _RESCTRL_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pid.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/pid.h>
 
 #ifdef CONFIG_PROC_CPU_RESCTRL
 

@@ -6,22 +6,22 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/rtc.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/console.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/memblock.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/root_dev.h>
+#include <freax/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>
@@ -32,7 +32,7 @@
 /*
  * parse_uboot_commandline
  *
- * Copies u-boot commandline arguments and store them in the proper linux
+ * Copies u-boot commandline arguments and store them in the proper freax
  * variables.
  *
  * Assumes:
@@ -55,7 +55,7 @@
  *	unmodified. U-boot places them near the end of external SDRAM.
  *
  * Argument(s):
- *	commandp = the linux commandline arg container to fill.
+ *	commandp = the freax commandline arg container to fill.
  *	size     = the sizeof commandp.
  *
  * Returns:

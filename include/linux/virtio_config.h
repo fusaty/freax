@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VIRTIO_CONFIG_H
-#define _LINUX_VIRTIO_CONFIG_H
+#ifndef _freax_VIRTIO_CONFIG_H
+#define _freax_VIRTIO_CONFIG_H
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/virtio.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/compiler_types.h>
-#include <uapi/linux/virtio_config.h>
+#include <freax/err.h>
+#include <freax/bug.h>
+#include <freax/virtio.h>
+#include <freax/virtio_byteorder.h>
+#include <freax/compiler_types.h>
+#include <uapi/freax/virtio_config.h>
 
 struct irq_affinity;
 
@@ -622,4 +622,4 @@ static inline void virtio_cwrite64(struct virtio_device *vdev,
 		_r;							\
 	})
 
-#endif /* _LINUX_VIRTIO_CONFIG_H */
+#endif /* _freax_VIRTIO_CONFIG_H */

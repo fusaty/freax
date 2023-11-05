@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DMA_MAPPING_H
-#define _LINUX_DMA_MAPPING_H
+#ifndef _freax_DMA_MAPPING_H
+#define _freax_DMA_MAPPING_H
 
 #ifdef CONFIG_HAS_DMA
 # error Virtio userspace code does not support CONFIG_HAS_DMA

@@ -3,29 +3,29 @@
  * Intel pinctrl/GPIO core driver.
  *
  * Copyright (C) 2015, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@freax.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/cleanup.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/string_helpers.h>
-#include <linux/time.h>
+#include <freax/acpi.h>
+#include <freax/cleanup.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/string_helpers.h>
+#include <freax/time.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
-#include <linux/platform_data/x86/pwm-lpss.h>
+#include <freax/platform_data/x86/pwm-lpss.h>
 
 #include "../core.h"
 #include "pinctrl-intel.h"
@@ -1885,7 +1885,7 @@ int intel_pinctrl_resume_noirq(struct device *dev)
 EXPORT_SYMBOL_GPL(intel_pinctrl_resume_noirq);
 #endif
 
-MODULE_AUTHOR("Mathias Nyman <mathias.nyman@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mathias Nyman <mathias.nyman@freax.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_DESCRIPTION("Intel pinctrl/GPIO core driver");
 MODULE_LICENSE("GPL v2");

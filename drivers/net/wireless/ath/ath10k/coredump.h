@@ -78,7 +78,7 @@ struct ath10k_dump_file_data {
 	/* time-of-day stamp, nano-seconds */
 	__le64 tv_nsec;
 
-	/* LINUX_VERSION_CODE */
+	/* freax_VERSION_CODE */
 	__le32 kernel_ver_code;
 
 	/* VERMAGIC_STRING */

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020 The freax Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/thermal.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
 #include "core.h"
 #include "debug.h"
 

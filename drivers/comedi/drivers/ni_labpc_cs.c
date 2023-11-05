@@ -37,8 +37,8 @@
  *   340988a (daqcard-1200)
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pcmcia.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pcmcia.h>
 
 #include "ni_labpc.h"
 

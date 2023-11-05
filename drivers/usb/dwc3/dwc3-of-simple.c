@@ -11,16 +11,16 @@
  * by Subbaraya Sundeep Bhatta <subbaraya.sundeep.bhatta@xilinx.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 struct dwc3_of_simple {
 	struct device		*dev;

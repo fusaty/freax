@@ -6,8 +6,8 @@
 #ifndef _CRYPTO_INTERNAL_SIMD_H
 #define _CRYPTO_INTERNAL_SIMD_H
 
-#include <linux/percpu.h>
-#include <linux/types.h>
+#include <freax/percpu.h>
+#include <freax/types.h>
 
 /* skcipher support */
 

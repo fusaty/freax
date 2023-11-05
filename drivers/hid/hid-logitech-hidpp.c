@@ -10,19 +10,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/kfifo.h>
-#include <linux/input/mt.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
-#include <linux/fixp-arith.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/usb.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/kfifo.h>
+#include <freax/input/mt.h>
+#include <freax/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/fixp-arith.h>
 #include <asm/unaligned.h>
 #include "usbhid/usbhid.h"
 #include "hid-ids.h"
@@ -38,7 +38,7 @@ MODULE_PARM_DESC(disable_tap_to_click,
 	"Disable Tap-To-Click mode reporting for touchpads (only on the K400 currently).");
 
 /* Define a non-zero software ID to identify our own requests */
-#define LINUX_KERNEL_SW_ID			0x01
+#define freax_KERNEL_SW_ID			0x01
 
 #define REPORT_ID_HIDPP_SHORT			0x10
 #define REPORT_ID_HIDPP_LONG			0x11
@@ -389,7 +389,7 @@ static int hidpp_send_fap_command_sync(struct hidpp_device *hidpp,
 	else
 		message->report_id = REPORT_ID_HIDPP_LONG;
 	message->fap.feature_index = feat_index;
-	message->fap.funcindex_clientid = funcindex_clientid | LINUX_KERNEL_SW_ID;
+	message->fap.funcindex_clientid = funcindex_clientid | freax_KERNEL_SW_ID;
 	memcpy(&message->fap.params, params, param_count);
 
 	ret = hidpp_send_message_sync(hidpp, message, response);
@@ -957,7 +957,7 @@ static int hidpp_root_get_protocol_version(struct hidpp_device *hidpp)
 	ret = hidpp_send_rap_command_sync(hidpp,
 			REPORT_ID_HIDPP_SHORT,
 			HIDPP_PAGE_ROOT_IDX,
-			CMD_ROOT_GET_PROTOCOL_VERSION | LINUX_KERNEL_SW_ID,
+			CMD_ROOT_GET_PROTOCOL_VERSION | freax_KERNEL_SW_ID,
 			ping_data, sizeof(ping_data), &response);
 
 	if (ret == HIDPP_ERROR_INVALID_SUBID) {

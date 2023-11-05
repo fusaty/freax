@@ -2,13 +2,13 @@
 // Copyright (c) 2020 Intel Corporation.
 
 #include <asm/unaligned.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/nvmem-provider.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/nvmem-provider.h>
+#include <freax/regmap.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>

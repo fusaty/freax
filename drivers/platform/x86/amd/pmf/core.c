@@ -9,12 +9,12 @@
  */
 
 #include <asm/amd_nb.h>
-#include <linux/debugfs.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <freax/debugfs.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
 #include "pmf.h"
 
 /* PMF-SMU communication registers */

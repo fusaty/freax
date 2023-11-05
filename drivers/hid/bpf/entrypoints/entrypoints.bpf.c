@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2022 Benjamin Tissoires */
 
-#include ".output/vmlinux.h"
+#include ".output/vmfreax.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

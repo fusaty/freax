@@ -7,8 +7,8 @@
  */
 
 
-#ifndef __LINUX_MFD_ADP5520_H
-#define __LINUX_MFD_ADP5520_H
+#ifndef __freax_MFD_ADP5520_H
+#define __freax_MFD_ADP5520_H
 
 #define ID_ADP5520		5520
 #define ID_ADP5501		5501
@@ -295,4 +295,4 @@ extern int adp5520_register_notifier(struct device *dev,
 extern int adp5520_unregister_notifier(struct device *dev,
 		struct notifier_block *nb, unsigned int events);
 
-#endif /* __LINUX_MFD_ADP5520_H */
+#endif /* __freax_MFD_ADP5520_H */

@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	common UDP/RAW code
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/route.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/icmp.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/in6.h>
+#include <freax/ipv6.h>
+#include <freax/route.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/icmp.h>
 
 #include <net/ipv6.h>
 #include <net/ndisc.h>
@@ -30,8 +30,8 @@
 #include <net/dsfield.h>
 #include <net/sock_reuseport.h>
 
-#include <linux/errqueue.h>
-#include <linux/uaccess.h>
+#include <freax/errqueue.h>
+#include <freax/uaccess.h>
 
 static bool ipv6_mapped_addr_any(const struct in6_addr *a)
 {

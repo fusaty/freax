@@ -4,14 +4,14 @@
 # Copyright © 2015 IBM Corporation
 
 
-# This script checks the relocations of a vmlinux for "suspicious"
+# This script checks the relocations of a vmfreax for "suspicious"
 # relocations.
 
 # based on relocs_check.pl
 # Copyright © 2009 IBM Corporation
 
 if [ $# -lt 3 ]; then
-	echo "$0 [path to objdump] [path to nm] [path to vmlinux]" 1>&2
+	echo "$0 [path to objdump] [path to nm] [path to vmfreax]" 1>&2
 	exit 1
 fi
 

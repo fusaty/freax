@@ -3,12 +3,12 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
 #include <net/xdp_sock.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/btf_ids.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/btf_ids.h>
 
 #include "xsk.h"
 

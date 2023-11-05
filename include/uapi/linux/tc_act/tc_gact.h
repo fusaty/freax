@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_TC_GACT_H
-#define __LINUX_TC_GACT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_TC_GACT_H
+#define __freax_TC_GACT_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <freax/types.h>
+#include <freax/pkt_cls.h>
 
 struct tc_gact {
 	tc_gen;

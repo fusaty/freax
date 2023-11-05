@@ -14,21 +14,21 @@
  * - Dynamic OTG switching with ID change interrupt
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/reset.h>
+#include <freax/phy/phy.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/role.h>
+#include <freax/regulator/consumer.h>
 
 /* USB2 Ports Control Registers, offsets are per-port */
 

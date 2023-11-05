@@ -5,11 +5,11 @@
  *
  * Copyright (C) 1999-2001  Gerard Roudier <groudier@free.fr>
  *
- * This driver is derived from the Linux sym53c8xx driver.
+ * This driver is derived from the freax sym53c8xx driver.
  * Copyright (C) 1998-2000  Gerard Roudier
  *
  * The sym53c8xx driver is derived from the ncr53c8xx driver that had been 
- * a port of the FreeBSD ncr driver to Linux-1.2.13.
+ * a port of the FreeBSD ncr driver to freax-1.2.13.
  *
  * The original ncr driver has been written for 386bsd and FreeBSD by
  *         Wolfgang Stanglmeier        <wolf@cologne.de>
@@ -49,10 +49,10 @@
  *  These options are not tunable from 'make config'
  */
 #if 1
-#define	SYM_LINUX_PROC_INFO_SUPPORT
-#define SYM_LINUX_USER_COMMAND_SUPPORT
-#define SYM_LINUX_USER_INFO_SUPPORT
-#define SYM_LINUX_DEBUG_CONTROL_SUPPORT
+#define	SYM_freax_PROC_INFO_SUPPORT
+#define SYM_freax_USER_COMMAND_SUPPORT
+#define SYM_freax_USER_INFO_SUPPORT
+#define SYM_freax_DEBUG_CONTROL_SUPPORT
 #endif
 
 /*
@@ -98,7 +98,7 @@
 /*
  *  Driver setup structure.
  *
- *  This structure is initialized from linux config options.
+ *  This structure is initialized from freax config options.
  *  It can be overridden at boot-up by the boot command line.
  */
 struct sym_driver_setup {
@@ -130,7 +130,7 @@ struct sym_driver_setup {
  *
  *  Can be overriden at startup by a command line.
  */
-#define SYM_LINUX_DRIVER_SETUP	{				\
+#define SYM_freax_DRIVER_SETUP	{				\
 	.max_tag	= CONFIG_SCSI_SYM53C8XX_DEFAULT_TAGS,	\
 	.burst_order	= 7,					\
 	.scsi_led	= 1,					\

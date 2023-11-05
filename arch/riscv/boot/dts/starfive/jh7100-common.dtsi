@@ -35,7 +35,7 @@
 			gpios = <&gpio 43 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_HEARTBEAT;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			label = "ack";
 		};
 	};

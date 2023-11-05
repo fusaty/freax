@@ -4,7 +4,7 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define compat_mode_t	compat_mode_t
 typedef u16		compat_mode_t;
@@ -151,7 +151,7 @@ static inline int is_compat_task(void)
 
 static inline bool in_compat_syscall(void)
 {
-	/* Vector 0x110 is LINUX_32BIT_SYSCALL_TRAP */
+	/* Vector 0x110 is freax_32BIT_SYSCALL_TRAP */
 	return pt_regs_trap_type(current_pt_regs()) == 0x110;
 }
 #define in_compat_syscall in_compat_syscall

@@ -34,42 +34,42 @@
  *			    thanks to Chris Wright <chrisw@osdl.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/freezer.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvram.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/platform_profile.h>
-#include <linux/power_supply.h>
-#include <linux/proc_fs.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/fb.h>
+#include <freax/freezer.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/leds.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nvram.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/platform_profile.h>
+#include <freax/power_supply.h>
+#include <freax/proc_fs.h>
+#include <freax/rfkill.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/string_helpers.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/workqueue.h>
 
 #include <acpi/battery.h>
 #include <acpi/video.h>
@@ -1478,7 +1478,7 @@ static DRIVER_ATTR_RW(uwb_emulstate);
  *    1. Stable BIOS, listed because the unknown amount of
  *       bugs and bad ACPI behaviour on older versions
  *
- *    2. BIOS or EC fw with known bugs that trigger on Linux
+ *    2. BIOS or EC fw with known bugs that trigger on freax
  *
  *    3. BIOS with known reduced functionality in older versions
  *
@@ -3149,7 +3149,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    ware may react very differently if you change them to
 	 *    something else;
 	 *
-	 * 2. You must be subscribed to the linux-thinkpad and
+	 * 2. You must be subscribed to the freax-thinkpad and
 	 *    ibm-acpi-devel mailing lists, and you should read the
 	 *    list archives since 2007 if you want to change the
 	 *    keymaps.  This requirement exists so that you will
@@ -3158,7 +3158,7 @@ static int __init hotkey_init(struct ibm_init_struct *iibm)
 	 *    listening to any bug reports;
 	 *
 	 * 3. Do not send thinkpad-acpi specific patches directly to
-	 *    for merging, *ever*.  Send them to the linux-acpi
+	 *    for merging, *ever*.  Send them to the freax-acpi
 	 *    mailinglist for comments.  Merging is to be done only
 	 *    through acpi-test and the ACPI maintainer.
 	 *

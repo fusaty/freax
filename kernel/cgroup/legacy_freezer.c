@@ -14,15 +14,15 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/cgroup.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/freezer.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/cgroup.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/freezer.h>
+#include <freax/seq_file.h>
+#include <freax/mutex.h>
+#include <freax/cpu.h>
 
 /*
  * A cgroup is freezing if any FREEZING flags are set.  FREEZING_SELF is

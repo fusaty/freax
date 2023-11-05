@@ -30,7 +30,7 @@
 
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <1800>;
 		};
 	};
@@ -43,7 +43,7 @@
 		led-1 {
 			gpios = <&gpio1 RK_PA2 GPIO_ACTIVE_HIGH>;
 			label = "status_led";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

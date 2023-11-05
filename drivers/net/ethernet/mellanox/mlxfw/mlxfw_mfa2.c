@@ -3,11 +3,11 @@
 
 #define pr_fmt(fmt) "mlxfw_mfa2: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/vmalloc.h>
-#include <linux/xz.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netlink.h>
+#include <freax/vmalloc.h>
+#include <freax/xz.h>
 #include "mlxfw_mfa2.h"
 #include "mlxfw_mfa2_file.h"
 #include "mlxfw_mfa2_tlv.h"

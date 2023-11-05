@@ -7,12 +7,12 @@
 
 #include <crypto/akcipher.h>
 #include <crypto/internal/sig.h>
-#include <linux/cryptouser.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <freax/cryptouser.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

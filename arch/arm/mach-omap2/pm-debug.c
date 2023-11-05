@@ -16,14 +16,14 @@
  * Based on pm.c for omap2
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "clock.h"
 #include "powerdomain.h"
@@ -35,8 +35,8 @@
 #include "pm.h"
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 static int pm_dbg_init_done;
 

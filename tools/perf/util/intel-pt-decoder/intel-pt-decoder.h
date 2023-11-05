@@ -11,7 +11,7 @@
 #include <stddef.h>
 #include <stdbool.h>
 
-#include <linux/rbtree.h>
+#include <freax/rbtree.h>
 
 #include "intel-pt-insn-decoder.h"
 

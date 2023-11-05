@@ -25,12 +25,12 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/property.h>
-#include <linux/dmapool.h>
-#include <linux/iopoll.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
+#include <freax/interrupt.h>
+#include <freax/property.h>
+#include <freax/dmapool.h>
+#include <freax/iopoll.h>
 
 #include "cdns2-gadget.h"
 #include "cdns2-trace.h"

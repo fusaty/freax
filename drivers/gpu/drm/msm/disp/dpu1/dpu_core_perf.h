@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The freax Foundation. All rights reserved.
  */
 
 #ifndef _DPU_CORE_PERF_H_
 #define _DPU_CORE_PERF_H_
 
-#include <linux/types.h>
-#include <linux/dcache.h>
-#include <linux/mutex.h>
+#include <freax/types.h>
+#include <freax/dcache.h>
+#include <freax/mutex.h>
 #include <drm/drm_crtc.h>
 
 #include "dpu_hw_catalog.h"

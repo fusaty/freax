@@ -5,8 +5,8 @@
  */
 #ifndef __LOGIC_IOMEM_H
 #define __LOGIC_IOMEM_H
-#include <linux/types.h>
-#include <linux/ioport.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
 
 /**
  * struct logic_iomem_ops - emulated IO memory ops

@@ -4,9 +4,9 @@
 //
 // Copyright (c) 2018 Socionext Inc.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "lnbh29.h"

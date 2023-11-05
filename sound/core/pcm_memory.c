@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/io.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <freax/io.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/moduleparam.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/info.h>

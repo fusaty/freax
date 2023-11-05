@@ -7,9 +7,9 @@
  * Copyright (C) 2017 Hans P. Moller <hmoller@uc.cl>
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -6,7 +6,7 @@
 #ifndef _ASM_PCI_H
 #define _ASM_PCI_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 #ifdef __KERNEL__
 
@@ -16,9 +16,9 @@
  * into include/asm/pci.h file.
  */
 
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/of.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/of.h>
 
 #ifdef CONFIG_PCI_DRIVERS_LEGACY
 
@@ -113,10 +113,10 @@ extern unsigned long PCIBIOS_MIN_MEM;
  * MIPS has everything mapped statically.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PCI_DOMAINS_GENERIC

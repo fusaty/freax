@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TYPES_H
-#define _LINUX_TYPES_H
+#ifndef _freax_TYPES_H
+#define _freax_TYPES_H
 
 #define __EXPORTED_HEADERS__
-#include <uapi/linux/types.h>
+#include <uapi/freax/types.h>
 
 #ifndef __ASSEMBLY__
 
@@ -123,7 +123,7 @@ typedef s64			int64_t;
 /**
  * The type used for indexing onto a disc or disc partition.
  *
- * Linux always considers sectors to be 512 bytes long independently
+ * freax always considers sectors to be 512 bytes long independently
  * of the devices real block size.
  *
  * blkcnt_t is the type of the inode's block count.
@@ -245,4 +245,4 @@ typedef int (*cmp_r_func_t)(const void *a, const void *b, const void *priv);
 typedef int (*cmp_func_t)(const void *a, const void *b);
 
 #endif /*  __ASSEMBLY__ */
-#endif /* _LINUX_TYPES_H */
+#endif /* _freax_TYPES_H */

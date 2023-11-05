@@ -6,14 +6,14 @@
  * Dave Gerlach <d-gerlach@ti.com>
  */
 
-#ifndef _LINUX_WKUP_M3_IPC_H
-#define _LINUX_WKUP_M3_IPC_H
+#ifndef _freax_WKUP_M3_IPC_H
+#define _freax_WKUP_M3_IPC_H
 
 #define WKUP_M3_DEEPSLEEP	1
 #define WKUP_M3_STANDBY		2
 #define WKUP_M3_IDLE		3
 
-#include <linux/mailbox_client.h>
+#include <freax/mailbox_client.h>
 
 struct wkup_m3_ipc_ops;
 
@@ -66,4 +66,4 @@ struct wkup_m3_ipc_ops {
 struct wkup_m3_ipc *wkup_m3_ipc_get(void);
 void wkup_m3_ipc_put(struct wkup_m3_ipc *m3_ipc);
 void wkup_m3_set_rtc_only_mode(void);
-#endif /* _LINUX_WKUP_M3_IPC_H */
+#endif /* _freax_WKUP_M3_IPC_H */

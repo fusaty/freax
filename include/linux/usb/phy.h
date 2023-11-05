@@ -7,13 +7,13 @@
  * continue to use just usb_device and usb_gadget.
  */
 
-#ifndef __LINUX_USB_PHY_H
-#define __LINUX_USB_PHY_H
+#ifndef __freax_USB_PHY_H
+#define __freax_USB_PHY_H
 
-#include <linux/extcon.h>
-#include <linux/notifier.h>
-#include <linux/usb.h>
-#include <uapi/linux/usb/charger.h>
+#include <freax/extcon.h>
+#include <freax/notifier.h>
+#include <freax/usb.h>
+#include <uapi/freax/usb/charger.h>
 
 enum usb_phy_interface {
 	USBPHY_INTERFACE_MODE_UNKNOWN,
@@ -371,4 +371,4 @@ static inline const char *usb_phy_type_string(enum usb_phy_type type)
 		return "UNKNOWN PHY TYPE";
 	}
 }
-#endif /* __LINUX_USB_PHY_H */
+#endif /* __freax_USB_PHY_H */

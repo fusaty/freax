@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * srm_env.c - Access to SRM environment
- *             variables through linux' procfs
+ *             variables through freax' procfs
  *
  * (C) 2001,2002,2006 by Jan-Benedict Glaw <jbglaw@lug-owl.de>
  *
@@ -12,14 +12,14 @@
  * included a patch like this as well. Thanks for idea!
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <asm/console.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/machvec.h>
 
 #define BASE_DIR	"srm_environment"	/* Subdir in /proc/		*/
@@ -139,7 +139,7 @@ srm_env_init(void)
 	if (!alpha_using_srm) {
 		printk(KERN_INFO "%s: This Alpha system doesn't "
 				"know about SRM (or you've booted "
-				"SRM->MILO->Linux, which gets "
+				"SRM->MILO->freax, which gets "
 				"misdetected)...\n", __func__);
 		return -ENODEV;
 	}

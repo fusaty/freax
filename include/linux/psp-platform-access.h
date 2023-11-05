@@ -3,7 +3,7 @@
 #ifndef __PSP_PLATFORM_ACCESS_H
 #define __PSP_PLATFORM_ACCESS_H
 
-#include <linux/psp.h>
+#include <freax/psp.h>
 
 enum psp_platform_access_msg {
 	PSP_CMD_NONE = 0x0,

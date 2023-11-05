@@ -6,20 +6,20 @@
 #ifndef INV_MPU_IIO_H_
 #define INV_MPU_IIO_H_
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/invensense_mpu6050.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/i2c-mux.h>
+#include <freax/mutex.h>
+#include <freax/platform_data/invensense_mpu6050.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/common/inv_sensors_timestamp.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/common/inv_sensors_timestamp.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/sysfs.h>
 
 /**
  *  struct inv_mpu6050_reg_map - Notable registers.

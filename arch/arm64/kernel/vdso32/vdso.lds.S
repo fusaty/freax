@@ -8,10 +8,10 @@
  * Copyright (C) 2012-2018 ARM Limited
  */
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 OUTPUT_FORMAT("elf32-littlearm", "elf32-bigarm", "elf32-littlearm")
 OUTPUT_ARCH(arm)
@@ -81,7 +81,7 @@ PHDRS
 
 VERSION
 {
-	LINUX_2.6 {
+	freax_2.6 {
 	global:
 		__vdso_clock_gettime;
 		__vdso_gettimeofday;

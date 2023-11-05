@@ -7,19 +7,19 @@
  * Author: David Lopo
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg-fsm.h>
-#include <linux/usb/chipidea.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dmapool.h>
+#include <freax/err.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg-fsm.h>
+#include <freax/usb/chipidea.h>
 
 #include "ci.h"
 #include "udc.h"

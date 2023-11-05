@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Netlink event notifications for SELinux.
+ * Netlink event notifications for SEfreax.
  *
  * Author: James Morris <jmorris@redhat.com>
  *
  * Copyright (C) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/skbuff.h>
-#include <linux/selinux_netlink.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/skbuff.h>
+#include <freax/sefreax_netlink.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 
@@ -91,7 +91,7 @@ out:
 out_kfree_skb:
 	kfree_skb(skb);
 oom:
-	pr_err("SELinux:  OOM in %s\n", __func__);
+	pr_err("SEfreax:  OOM in %s\n", __func__);
 	goto out;
 }
 
@@ -112,9 +112,9 @@ static int __init selnl_init(void)
 		.flags	= NL_CFG_F_NONROOT_RECV,
 	};
 
-	selnl = netlink_kernel_create(&init_net, NETLINK_SELINUX, &cfg);
+	selnl = netlink_kernel_create(&init_net, NETLINK_SEfreax, &cfg);
 	if (selnl == NULL)
-		panic("SELinux:  Cannot create netlink socket.");
+		panic("SEfreax:  Cannot create netlink socket.");
 	return 0;
 }
 

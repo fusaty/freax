@@ -385,7 +385,7 @@ class LineStreamTest(unittest.TestCase):
 		self.assertEqual(stream.pop(), '2')
 		self.assertEqual(called_times, 2)
 
-class LinuxSourceTreeTest(unittest.TestCase):
+class freaxSourceTreeTest(unittest.TestCase):
 
 	def setUp(self):
 		mock.patch.object(signal, 'signal').start()
@@ -393,17 +393,17 @@ class LinuxSourceTreeTest(unittest.TestCase):
 
 	def test_invalid_kunitconfig(self):
 		with self.assertRaisesRegex(kunit_kernel.ConfigError, 'nonexistent.* does not exist'):
-			kunit_kernel.LinuxSourceTree('', kunitconfig_paths=['/nonexistent_file'])
+			kunit_kernel.freaxSourceTree('', kunitconfig_paths=['/nonexistent_file'])
 
 	def test_valid_kunitconfig(self):
 		with tempfile.NamedTemporaryFile('wt') as kunitconfig:
-			kunit_kernel.LinuxSourceTree('', kunitconfig_paths=[kunitconfig.name])
+			kunit_kernel.freaxSourceTree('', kunitconfig_paths=[kunitconfig.name])
 
 	def test_dir_kunitconfig(self):
 		with tempfile.TemporaryDirectory('') as dir:
 			with open(os.path.join(dir, '.kunitconfig'), 'w'):
 				pass
-			kunit_kernel.LinuxSourceTree('', kunitconfig_paths=[dir])
+			kunit_kernel.freaxSourceTree('', kunitconfig_paths=[dir])
 
 	def test_multiple_kunitconfig(self):
 		want_kconfig = kunit_config.Kconfig()
@@ -418,7 +418,7 @@ class LinuxSourceTreeTest(unittest.TestCase):
 				f.write('CONFIG_KUNIT_TEST=m')
 				pass
 
-			tree = kunit_kernel.LinuxSourceTree('', kunitconfig_paths=[dir, other])
+			tree = kunit_kernel.freaxSourceTree('', kunitconfig_paths=[dir, other])
 			self.assertTrue(want_kconfig.is_subset_of(tree._kconfig), msg=tree._kconfig)
 
 
@@ -431,26 +431,26 @@ class LinuxSourceTreeTest(unittest.TestCase):
 				f.write('CONFIG_KUNIT=m')
 
 			with self.assertRaisesRegex(kunit_kernel.ConfigError, '(?s)Multiple values.*CONFIG_KUNIT'):
-				kunit_kernel.LinuxSourceTree('', kunitconfig_paths=[dir, other])
+				kunit_kernel.freaxSourceTree('', kunitconfig_paths=[dir, other])
 
 
 	def test_kconfig_add(self):
 		want_kconfig = kunit_config.Kconfig()
 		want_kconfig.add_entry('NOT_REAL', 'y')
 
-		tree = kunit_kernel.LinuxSourceTree('', kconfig_add=['CONFIG_NOT_REAL=y'])
+		tree = kunit_kernel.freaxSourceTree('', kconfig_add=['CONFIG_NOT_REAL=y'])
 		self.assertTrue(want_kconfig.is_subset_of(tree._kconfig), msg=tree._kconfig)
 
 	def test_invalid_arch(self):
 		with self.assertRaisesRegex(kunit_kernel.ConfigError, 'not a valid arch, options are.*x86_64'):
-			kunit_kernel.LinuxSourceTree('', arch='invalid')
+			kunit_kernel.freaxSourceTree('', arch='invalid')
 
 	def test_run_kernel_hits_exception(self):
 		def fake_start(unused_args, unused_build_dir):
 			return subprocess.Popen(['echo "hi\nbye"'], shell=True, text=True, stdout=subprocess.PIPE)
 
 		with tempfile.TemporaryDirectory('') as build_dir:
-			tree = kunit_kernel.LinuxSourceTree(build_dir)
+			tree = kunit_kernel.freaxSourceTree(build_dir)
 			mock.patch.object(tree._ops, 'start', side_effect=fake_start).start()
 
 			with self.assertRaises(ValueError):
@@ -466,11 +466,11 @@ class LinuxSourceTreeTest(unittest.TestCase):
 			with open(kunit_kernel.get_kunitconfig_path(build_dir), 'w') as f:
 				f.write('CONFIG_KUNIT=y')
 
-			tree = kunit_kernel.LinuxSourceTree(build_dir)
+			tree = kunit_kernel.freaxSourceTree(build_dir)
 			# Stub out the source tree operations, so we don't have
 			# the defaults for any given architecture get in the
 			# way.
-			tree._ops = kunit_kernel.LinuxSourceTreeOperations('none', None)
+			tree._ops = kunit_kernel.freaxSourceTreeOperations('none', None)
 			mock_build_config = mock.patch.object(tree, 'build_config').start()
 
 			# Should generate the .config
@@ -487,11 +487,11 @@ class LinuxSourceTreeTest(unittest.TestCase):
 			with open(kunit_kernel.get_kconfig_path(build_dir), 'w') as f:
 				f.write('CONFIG_KUNIT=y\nCONFIG_KUNIT_TEST=y')
 
-			tree = kunit_kernel.LinuxSourceTree(build_dir)
+			tree = kunit_kernel.freaxSourceTree(build_dir)
 			# Stub out the source tree operations, so we don't have
 			# the defaults for any given architecture get in the
 			# way.
-			tree._ops = kunit_kernel.LinuxSourceTreeOperations('none', None)
+			tree._ops = kunit_kernel.freaxSourceTreeOperations('none', None)
 			mock_build_config = mock.patch.object(tree, 'build_config').start()
 
 			self.assertTrue(tree.build_reconfig(build_dir, make_options=[]))
@@ -507,11 +507,11 @@ class LinuxSourceTreeTest(unittest.TestCase):
 			with open(kunit_kernel.get_kconfig_path(build_dir), 'w') as f:
 				f.write('CONFIG_KUNIT=y\nCONFIG_KUNIT_TEST=y')
 
-			tree = kunit_kernel.LinuxSourceTree(build_dir)
+			tree = kunit_kernel.freaxSourceTree(build_dir)
 			# Stub out the source tree operations, so we don't have
 			# the defaults for any given architecture get in the
 			# way.
-			tree._ops = kunit_kernel.LinuxSourceTreeOperations('none', None)
+			tree._ops = kunit_kernel.freaxSourceTreeOperations('none', None)
 			mock_build_config = mock.patch.object(tree, 'build_config').start()
 
 			# ... so we should trigger a call to build_config()
@@ -575,91 +575,91 @@ class KUnitMainTest(unittest.TestCase):
 		self.print_mock = mock.patch('kunit_printer.Printer.print').start()
 		self.addCleanup(mock.patch.stopall)
 
-		self.mock_linux_init = mock.patch.object(kunit_kernel, 'LinuxSourceTree').start()
-		self.linux_source_mock = self.mock_linux_init.return_value
-		self.linux_source_mock.build_reconfig.return_value = True
-		self.linux_source_mock.build_kernel.return_value = True
-		self.linux_source_mock.run_kernel.return_value = all_passed_log
+		self.mock_freax_init = mock.patch.object(kunit_kernel, 'freaxSourceTree').start()
+		self.freax_source_mock = self.mock_freax_init.return_value
+		self.freax_source_mock.build_reconfig.return_value = True
+		self.freax_source_mock.build_kernel.return_value = True
+		self.freax_source_mock.run_kernel.return_value = all_passed_log
 
 	def test_config_passes_args_pass(self):
 		kunit.main(['config', '--build_dir=.kunit'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 0)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 0)
 
 	def test_build_passes_args_pass(self):
 		kunit.main(['build'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.linux_source_mock.build_kernel.assert_called_once_with(kunit.get_default_jobs(), '.kunit', None)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 0)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.freax_source_mock.build_kernel.assert_called_once_with(kunit.get_default_jobs(), '.kunit', None)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 0)
 
 	def test_exec_passes_args_pass(self):
 		kunit.main(['exec'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 0)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 0)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_run_passes_args_pass(self):
 		kunit.main(['run'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_exec_passes_args_fail(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		with self.assertRaises(SystemExit) as e:
 			kunit.main(['exec'])
 		self.assertEqual(e.exception.code, 1)
 
 	def test_run_passes_args_fail(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		with self.assertRaises(SystemExit) as e:
 			kunit.main(['run'])
 		self.assertEqual(e.exception.code, 1)
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
 		self.print_mock.assert_any_call(StrContains('Could not find any KTAP output.'))
 
 	def test_exec_no_tests(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=['TAP version 14', '1..0'])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=['TAP version 14', '1..0'])
 		with self.assertRaises(SystemExit) as e:
 			kunit.main(['run'])
 		self.assertEqual(e.exception.code, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains(' 0 tests run!'))
 
 	def test_exec_raw_output(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		kunit.main(['exec', '--raw_output'])
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
 		for call in self.print_mock.call_args_list:
 			self.assertNotEqual(call, mock.call(StrContains('Testing complete.')))
 			self.assertNotEqual(call, mock.call(StrContains(' 0 tests run!')))
 
 	def test_run_raw_output(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		kunit.main(['run', '--raw_output'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
 		for call in self.print_mock.call_args_list:
 			self.assertNotEqual(call, mock.call(StrContains('Testing complete.')))
 			self.assertNotEqual(call, mock.call(StrContains(' 0 tests run!')))
 
 	def test_run_raw_output_kunit(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		kunit.main(['run', '--raw_output=kunit'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.assertEqual(self.linux_source_mock.run_kernel.call_count, 1)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.run_kernel.call_count, 1)
 		for call in self.print_mock.call_args_list:
 			self.assertNotEqual(call, mock.call(StrContains('Testing complete.')))
 			self.assertNotEqual(call, mock.call(StrContains(' 0 tests run')))
 
 	def test_run_raw_output_invalid(self):
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		with self.assertRaises(SystemExit) as e:
 			kunit.main(['run', '--raw_output=invalid'])
 		self.assertNotEqual(e.exception.code, 0)
@@ -667,56 +667,56 @@ class KUnitMainTest(unittest.TestCase):
 	def test_run_raw_output_does_not_take_positional_args(self):
 		# --raw_output is a string flag, but we don't want it to consume
 		# any positional arguments, only ones after an '='
-		self.linux_source_mock.run_kernel = mock.Mock(return_value=[])
+		self.freax_source_mock.run_kernel = mock.Mock(return_value=[])
 		kunit.main(['run', '--raw_output', 'filter_glob'])
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='filter_glob', filter='', filter_action=None, timeout=300)
 
 	def test_exec_timeout(self):
 		timeout = 3453
 		kunit.main(['exec', '--timeout', str(timeout)])
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=timeout)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_run_timeout(self):
 		timeout = 3453
 		kunit.main(['run', '--timeout', str(timeout)])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=timeout)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_run_builddir(self):
 		build_dir = '.kunit'
 		kunit.main(['run', '--build_dir=.kunit'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir=build_dir, filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_config_builddir(self):
 		build_dir = '.kunit'
 		kunit.main(['config', '--build_dir', build_dir])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
 
 	def test_build_builddir(self):
 		build_dir = '.kunit'
 		jobs = kunit.get_default_jobs()
 		kunit.main(['build', '--build_dir', build_dir])
-		self.linux_source_mock.build_kernel.assert_called_once_with(jobs, build_dir, None)
+		self.freax_source_mock.build_kernel.assert_called_once_with(jobs, build_dir, None)
 
 	def test_exec_builddir(self):
 		build_dir = '.kunit'
 		kunit.main(['exec', '--build_dir', build_dir])
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=None, build_dir=build_dir, filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_run_kunitconfig(self):
 		kunit.main(['run', '--kunitconfig=mykunitconfig'])
 		# Just verify that we parsed and initialized it correctly here.
-		self.mock_linux_init.assert_called_once_with('.kunit',
+		self.mock_freax_init.assert_called_once_with('.kunit',
 						kunitconfig_paths=['mykunitconfig'],
 						kconfig_add=None,
 						arch='um',
@@ -727,7 +727,7 @@ class KUnitMainTest(unittest.TestCase):
 	def test_config_kunitconfig(self):
 		kunit.main(['config', '--kunitconfig=mykunitconfig'])
 		# Just verify that we parsed and initialized it correctly here.
-		self.mock_linux_init.assert_called_once_with('.kunit',
+		self.mock_freax_init.assert_called_once_with('.kunit',
 						kunitconfig_paths=['mykunitconfig'],
 						kconfig_add=None,
 						arch='um',
@@ -738,7 +738,7 @@ class KUnitMainTest(unittest.TestCase):
 	def test_config_alltests(self):
 		kunit.main(['config', '--kunitconfig=mykunitconfig', '--alltests'])
 		# Just verify that we parsed and initialized it correctly here.
-		self.mock_linux_init.assert_called_once_with('.kunit',
+		self.mock_freax_init.assert_called_once_with('.kunit',
 						kunitconfig_paths=[kunit_kernel.ALL_TESTS_CONFIG_PATH, 'mykunitconfig'],
 						kconfig_add=None,
 						arch='um',
@@ -747,12 +747,12 @@ class KUnitMainTest(unittest.TestCase):
 						extra_qemu_args=[])
 
 
-	@mock.patch.object(kunit_kernel, 'LinuxSourceTree')
-	def test_run_multiple_kunitconfig(self, mock_linux_init):
-		mock_linux_init.return_value = self.linux_source_mock
+	@mock.patch.object(kunit_kernel, 'freaxSourceTree')
+	def test_run_multiple_kunitconfig(self, mock_freax_init):
+		mock_freax_init.return_value = self.freax_source_mock
 		kunit.main(['run', '--kunitconfig=mykunitconfig', '--kunitconfig=other'])
 		# Just verify that we parsed and initialized it correctly here.
-		mock_linux_init.assert_called_once_with('.kunit',
+		mock_freax_init.assert_called_once_with('.kunit',
 							kunitconfig_paths=['mykunitconfig', 'other'],
 							kconfig_add=None,
 							arch='um',
@@ -763,7 +763,7 @@ class KUnitMainTest(unittest.TestCase):
 	def test_run_kconfig_add(self):
 		kunit.main(['run', '--kconfig_add=CONFIG_KASAN=y', '--kconfig_add=CONFIG_KCSAN=y'])
 		# Just verify that we parsed and initialized it correctly here.
-		self.mock_linux_init.assert_called_once_with('.kunit',
+		self.mock_freax_init.assert_called_once_with('.kunit',
 						kunitconfig_paths=[],
 						kconfig_add=['CONFIG_KASAN=y', 'CONFIG_KCSAN=y'],
 						arch='um',
@@ -774,7 +774,7 @@ class KUnitMainTest(unittest.TestCase):
 	def test_run_qemu_args(self):
 		kunit.main(['run', '--arch=x86_64', '--qemu_args', '-m 2048'])
 		# Just verify that we parsed and initialized it correctly here.
-		self.mock_linux_init.assert_called_once_with('.kunit',
+		self.mock_freax_init.assert_called_once_with('.kunit',
 						kunitconfig_paths=[],
 						kconfig_add=None,
 						arch='x86_64',
@@ -784,20 +784,20 @@ class KUnitMainTest(unittest.TestCase):
 
 	def test_run_kernel_args(self):
 		kunit.main(['run', '--kernel_args=a=1', '--kernel_args=b=2'])
-		self.assertEqual(self.linux_source_mock.build_reconfig.call_count, 1)
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.assertEqual(self.freax_source_mock.build_reconfig.call_count, 1)
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 		      args=['a=1','b=2'], build_dir='.kunit', filter_glob='', filter='', filter_action=None, timeout=300)
 		self.print_mock.assert_any_call(StrContains('Testing complete.'))
 
 	def test_list_tests(self):
 		want = ['suite.test1', 'suite.test2', 'suite2.test1']
-		self.linux_source_mock.run_kernel.return_value = ['TAP version 14', 'init: random output'] + want
+		self.freax_source_mock.run_kernel.return_value = ['TAP version 14', 'init: random output'] + want
 
-		got = kunit._list_tests(self.linux_source_mock,
+		got = kunit._list_tests(self.freax_source_mock,
 				     kunit.KunitExecRequest(None, None, '.kunit', 300, 'suite*', '', None, None, 'suite', False, False))
 		self.assertEqual(got, want)
 		# Should respect the user's filter glob when listing tests.
-		self.linux_source_mock.run_kernel.assert_called_once_with(
+		self.freax_source_mock.run_kernel.assert_called_once_with(
 			args=['kunit.action=list'], build_dir='.kunit', filter_glob='suite*', filter='', filter_action=None, timeout=300)
 
 	@mock.patch.object(kunit, '_list_tests')
@@ -808,7 +808,7 @@ class KUnitMainTest(unittest.TestCase):
 		# Should respect the user's filter glob when listing tests.
 		mock_tests.assert_called_once_with(mock.ANY,
 				     kunit.KunitExecRequest(None, None, '.kunit', 300, 'suite*.test*', '', None, None, 'suite', False, False))
-		self.linux_source_mock.run_kernel.assert_has_calls([
+		self.freax_source_mock.run_kernel.assert_has_calls([
 			mock.call(args=None, build_dir='.kunit', filter_glob='suite.test*', filter='', filter_action=None, timeout=300),
 			mock.call(args=None, build_dir='.kunit', filter_glob='suite2.test*', filter='', filter_action=None, timeout=300),
 		])
@@ -821,7 +821,7 @@ class KUnitMainTest(unittest.TestCase):
 		# Should respect the user's filter glob when listing tests.
 		mock_tests.assert_called_once_with(mock.ANY,
 				     kunit.KunitExecRequest(None, None, '.kunit', 300, 'suite*', '', None, None, 'test', False, False))
-		self.linux_source_mock.run_kernel.assert_has_calls([
+		self.freax_source_mock.run_kernel.assert_has_calls([
 			mock.call(args=None, build_dir='.kunit', filter_glob='suite.test1', filter='', filter_action=None, timeout=300),
 			mock.call(args=None, build_dir='.kunit', filter_glob='suite.test2', filter='', filter_action=None, timeout=300),
 			mock.call(args=None, build_dir='.kunit', filter_glob='suite2.test1', filter='', filter_action=None, timeout=300),

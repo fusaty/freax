@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_IOCTL_H
 #define _BCACHEFS_IOCTL_H
 
-#include <linux/uuid.h>
+#include <freax/uuid.h>
 #include <asm/ioctl.h>
 #include "bcachefs_format.h"
 

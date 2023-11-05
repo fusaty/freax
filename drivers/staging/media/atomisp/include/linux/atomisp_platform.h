@@ -21,7 +21,7 @@
 #include <asm/intel-family.h>
 #include <asm/processor.h>
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <media/v4l2-subdev.h>
 #include "atomisp.h"
 

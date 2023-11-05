@@ -12,8 +12,8 @@
 #include <crypto/algapi.h>
 #include <crypto/gcm.h>
 #include <crypto/scatterwalk.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/module.h>
+#include <freax/types.h>
 #include <asm/vio.h>
 
 #include "nx_csbcpb.h"

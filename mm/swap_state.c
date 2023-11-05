@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/mm/swap_state.c
+ *  freax/mm/swap_state.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  *
  *  Rewritten to use page cache, (C) 1998 Stephen Tweedie
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/kernel_stat.h>
-#include <linux/mempolicy.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/migrate.h>
-#include <linux/vmalloc.h>
-#include <linux/swap_slots.h>
-#include <linux/huge_mm.h>
-#include <linux/shmem_fs.h>
+#include <freax/mm.h>
+#include <freax/gfp.h>
+#include <freax/kernel_stat.h>
+#include <freax/mempolicy.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/backing-dev.h>
+#include <freax/blkdev.h>
+#include <freax/migrate.h>
+#include <freax/vmalloc.h>
+#include <freax/swap_slots.h>
+#include <freax/huge_mm.h>
+#include <freax/shmem_fs.h>
 #include "internal.h"
 #include "swap.h"
 

@@ -5,28 +5,28 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/namei.h>
-#include <linux/security.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/lockd/bind.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/vfs.h>
+#include <freax/namei.h>
+#include <freax/security.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

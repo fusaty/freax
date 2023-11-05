@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/of_clk.h>
-#include <linux/platform_device.h>
-#include <linux/reset/sunxi.h>
+#include <freax/clocksource.h>
+#include <freax/init.h>
+#include <freax/of_clk.h>
+#include <freax/platform_device.h>
+#include <freax/reset/sunxi.h>
 
 #include <asm/mach/arch.h>
 #include <asm/secure_cntvoff.h>

@@ -12,8 +12,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <sys/signal.h>
-#include <linux/auxvec.h>
-#include <linux/perf_event.h>
+#include <freax/auxvec.h>
+#include <freax/perf_event.h>
 #include <asm/cputable.h>
 #include "reg.h"
 #include <unistd.h>

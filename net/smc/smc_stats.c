@@ -8,11 +8,11 @@
  *
  * Author(s):  Guvenc Gulce
  */
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/ctype.h>
-#include <linux/smc.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/ctype.h>
+#include <freax/smc.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 #include "smc_netlink.h"

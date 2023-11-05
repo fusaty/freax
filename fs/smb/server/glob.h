@@ -7,7 +7,7 @@
 #ifndef __KSMBD_GLOB_H
 #define __KSMBD_GLOB_H
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 #include "unicode.h"
 #include "vfs_cache.h"

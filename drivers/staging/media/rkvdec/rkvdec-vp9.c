@@ -16,8 +16,8 @@
  * code from rkvdec_vp9_run() followed by rkvdec_vp9_done().
  */
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-vp9.h>
 

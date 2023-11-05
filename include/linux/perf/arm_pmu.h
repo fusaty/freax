@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/include/asm/pmu.h
+ *  freax/arch/arm/include/asm/pmu.h
  *
  *  Copyright (C) 2009 picoChip Designs Ltd, Jamie Iles
  */
@@ -8,10 +8,10 @@
 #ifndef __ARM_PMU_H__
 #define __ARM_PMU_H__
 
-#include <linux/interrupt.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/sysfs.h>
+#include <freax/interrupt.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/sysfs.h>
 #include <asm/cputype.h>
 
 #ifdef CONFIG_ARM_PMU

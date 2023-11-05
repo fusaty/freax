@@ -12,17 +12,17 @@
 #ifndef SI476X_CORE_H
 #define SI476X_CORE_H
 
-#include <linux/kfifo.h>
-#include <linux/atomic.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/videodev2.h>
-#include <linux/regulator/consumer.h>
+#include <freax/kfifo.h>
+#include <freax/atomic.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/mutex.h>
+#include <freax/mfd/core.h>
+#include <freax/videodev2.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/mfd/si476x-platform.h>
-#include <linux/mfd/si476x-reports.h>
+#include <freax/mfd/si476x-platform.h>
+#include <freax/mfd/si476x-reports.h>
 
 /* Command Timeouts */
 #define SI476X_DEFAULT_TIMEOUT	100000

@@ -1,6 +1,6 @@
-#include <linux/kernel.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <perf/cpumap.h>

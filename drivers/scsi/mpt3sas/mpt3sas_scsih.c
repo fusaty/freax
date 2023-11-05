@@ -4,7 +4,7 @@
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_scsih.c
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2014 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-Fusionfreax.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -42,18 +42,18 @@
  * USA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/raid_class.h>
-#include <linux/blk-mq-pci.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/blkdev.h>
+#include <freax/sched.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/raid_class.h>
+#include <freax/blk-mq-pci.h>
 #include <asm/unaligned.h>
 
 #include "mpt3sas_base.h"

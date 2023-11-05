@@ -8,7 +8,7 @@
 #ifndef EC100_H
 #define EC100_H
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 struct ec100_config {
 	/* demodulator's I2C address */

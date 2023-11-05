@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/journal.c
+ * freax/fs/jbd2/journal.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
@@ -19,33 +19,33 @@
  * journaling (ext2 can use a reserved inode for storing the log).
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/math64.h>
-#include <linux/hash.h>
-#include <linux/log2.h>
-#include <linux/vmalloc.h>
-#include <linux/backing-dev.h>
-#include <linux/bitops.h>
-#include <linux/ratelimit.h>
-#include <linux/sched/mm.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/jbd2.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/freezer.h>
+#include <freax/pagemap.h>
+#include <freax/kthread.h>
+#include <freax/poison.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/math64.h>
+#include <freax/hash.h>
+#include <freax/log2.h>
+#include <freax/vmalloc.h>
+#include <freax/backing-dev.h>
+#include <freax/bitops.h>
+#include <freax/ratelimit.h>
+#include <freax/sched/mm.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/jbd2.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 
 #ifdef CONFIG_JBD2_DEBUG

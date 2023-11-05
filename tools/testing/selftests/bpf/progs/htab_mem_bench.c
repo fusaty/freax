@@ -2,8 +2,8 @@
 /* Copyright (C) 2023. Huawei Technologies Co., Ltd */
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/types.h>
-#include <linux/bpf.h>
+#include <freax/types.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

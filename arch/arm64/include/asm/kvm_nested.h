@@ -3,7 +3,7 @@
 #define __ARM64_KVM_NESTED_H
 
 #include <asm/kvm_emulate.h>
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 static inline bool vcpu_has_nv(const struct kvm_vcpu *vcpu)
 {

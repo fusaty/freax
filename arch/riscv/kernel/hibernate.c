@@ -18,12 +18,12 @@
 #include <asm/smp.h>
 #include <asm/suspend.h>
 
-#include <linux/cpu.h>
-#include <linux/memblock.h>
-#include <linux/pm.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/utsname.h>
+#include <freax/cpu.h>
+#include <freax/memblock.h>
+#include <freax/pm.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
+#include <freax/utsname.h>
 
 /* The logical cpu number we should resume on, initialised to a non-cpu number. */
 static int sleep_cpu = -EINVAL;

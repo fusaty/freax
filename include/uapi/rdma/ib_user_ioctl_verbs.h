@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB) */
 /*
  * Copyright (c) 2017-2018, Mellanox Technologies inc.  All rights reserved.
  *
@@ -34,7 +34,7 @@
 #ifndef IB_USER_IOCTL_VERBS_H
 #define IB_USER_IOCTL_VERBS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <rdma/ib_user_verbs.h>
 
 #ifndef RDMA_UAPI_PTR

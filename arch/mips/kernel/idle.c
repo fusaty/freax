@@ -7,12 +7,12 @@
  * Copyright (C) 2003, 2004  Maciej W. Rozycki
  * Copyright (C) 2001, 2004, 2011, 2012	 MIPS Technologies, Inc.
  */
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
+#include <freax/cpu.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/irqflags.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
 #include <asm/cpu.h>
 #include <asm/cpu-info.h>
 #include <asm/cpu-type.h>

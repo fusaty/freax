@@ -11,16 +11,16 @@
  *	by Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/fb.h>
+#include <freax/lcd.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/corgi_lcd.h>
+#include <freax/slab.h>
 #include <asm/mach/sharpsl_param.h>
 
 #define POWER_IS_ON(pwr)	((pwr) <= FB_BLANK_NORMAL)

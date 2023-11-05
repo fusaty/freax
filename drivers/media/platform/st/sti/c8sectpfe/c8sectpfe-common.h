@@ -10,9 +10,9 @@
 #ifndef _C8SECTPFE_COMMON_H_
 #define _C8SECTPFE_COMMON_H_
 
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/gpio.h>
+#include <freax/dvb/dmx.h>
+#include <freax/dvb/frontend.h>
+#include <freax/gpio.h>
 
 #include <media/dmxdev.h>
 #include <media/dvb_demux.h>

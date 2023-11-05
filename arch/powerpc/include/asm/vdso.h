@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_VDSO_H
 #define _ASM_POWERPC_VDSO_H
 
-#define VDSO_VERSION_STRING	LINUX_2.6.15
+#define VDSO_VERSION_STRING	freax_2.6.15
 
 #ifndef __ASSEMBLY__
 

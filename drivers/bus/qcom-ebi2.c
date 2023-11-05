@@ -11,16 +11,16 @@
  * hardware.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/bitops.h>
 
 /*
  * CS0, CS1, CS4 and CS5 are two bits wide, CS2 and CS3 are one bit.

@@ -5,7 +5,7 @@
 
 #include "mvm.h"
 #include "time-sync.h"
-#include <linux/ieee80211.h>
+#include <freax/ieee80211.h>
 
 void iwl_mvm_init_time_sync(struct iwl_time_sync_data *data)
 {

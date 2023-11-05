@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_POSIX_TYPES_H
-#define _LINUX_POSIX_TYPES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_POSIX_TYPES_H
+#define _freax_POSIX_TYPES_H
 
-#include <linux/stddef.h>
+#include <freax/stddef.h>
 
 /*
  * This allows for 1024 file descriptors: if NR_OPEN is ever grown
@@ -11,7 +11,7 @@
  * one limit that doesn't have to be changed [again].
  *
  * Note that POSIX wants the FD_CLEAR(fd,fdsetp) defines to be in
- * <sys/time.h> (and thus <linux/time.h>) - but this is a more logical
+ * <sys/time.h> (and thus <freax/time.h>) - but this is a more logical
  * place for them. Solved by having dummy defines in <sys/time.h>.
  */
 
@@ -35,4 +35,4 @@ typedef int __kernel_mqd_t;
 
 #include <asm/posix_types.h>
 
-#endif /* _LINUX_POSIX_TYPES_H */
+#endif /* _freax_POSIX_TYPES_H */

@@ -13,8 +13,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/kernel.h>
-#include <linux/hw_breakpoint.h>
+#include <freax/kernel.h>
+#include <freax/hw_breakpoint.h>
 #include <api/fs/tracing_path.h>
 
 #define PERF_TP_SAMPLE_TYPE (PERF_SAMPLE_RAW | PERF_SAMPLE_TIME | \

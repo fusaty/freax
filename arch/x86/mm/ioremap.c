@@ -7,17 +7,17 @@
  * (C) Copyright 1995 1996 Linus Torvalds
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mmiotrace.h>
-#include <linux/cc_platform.h>
-#include <linux/efi.h>
-#include <linux/pgtable.h>
-#include <linux/kmsan.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mmiotrace.h>
+#include <freax/cc_platform.h>
+#include <freax/efi.h>
+#include <freax/pgtable.h>
+#include <freax/kmsan.h>
 
 #include <asm/set_memory.h>
 #include <asm/e820/api.h>

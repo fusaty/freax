@@ -5,8 +5,8 @@
 
 #include <time.h>
 #include <net/if.h>
-#include <linux/if_tun.h>
-#include <linux/icmp.h>
+#include <freax/if_tun.h>
+#include <freax/icmp.h>
 
 #include "test_progs.h"
 
@@ -106,7 +106,7 @@ static int wait_for_packet(int fd, filter_t filter, struct timeval *timeout)
 
 	FD_ZERO(&fds);
 	while (max_retry--) {
-		/* Linux modifies timeout arg... So make a copy */
+		/* freax modifies timeout arg... So make a copy */
 		struct timeval copied_timeout = *timeout;
 		ssize_t ret = -1;
 

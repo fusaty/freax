@@ -20,15 +20,15 @@
  *
  * Based on Virtio MMIO driver by Pawel Moll, copyright 2011-2014, ARM Ltd.
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/time-internal.h>
-#include <linux/virtio-uml.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/virtio.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_ring.h>
+#include <freax/time-internal.h>
+#include <freax/virtio-uml.h>
 #include <shared/as-layout.h>
 #include <irq_kern.h>
 #include <init.h>

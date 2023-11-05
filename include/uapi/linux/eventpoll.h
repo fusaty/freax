@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- *  include/linux/eventpoll.h ( Efficient event polling implementation )
+ *  include/freax/eventpoll.h ( Efficient event polling implementation )
  *  Copyright (C) 2001,...,2006	 Davide Libenzi
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -12,12 +12,12 @@
  *
  */
 
-#ifndef _UAPI_LINUX_EVENTPOLL_H
-#define _UAPI_LINUX_EVENTPOLL_H
+#ifndef _UAPI_freax_EVENTPOLL_H
+#define _UAPI_freax_EVENTPOLL_H
 
 /* For O_CLOEXEC */
-#include <linux/fcntl.h>
-#include <linux/types.h>
+#include <freax/fcntl.h>
+#include <freax/types.h>
 
 /* Flags for epoll_create1.  */
 #define EPOLL_CLOEXEC O_CLOEXEC
@@ -85,4 +85,4 @@ struct epoll_event {
 	__u64 data;
 } EPOLL_PACKED;
 
-#endif /* _UAPI_LINUX_EVENTPOLL_H */
+#endif /* _UAPI_freax_EVENTPOLL_H */

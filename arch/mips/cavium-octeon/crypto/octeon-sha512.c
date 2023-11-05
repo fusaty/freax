@@ -13,12 +13,12 @@
  * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
  */
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <crypto/sha2.h>
 #include <crypto/sha512_base.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/module.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

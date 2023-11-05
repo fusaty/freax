@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB) */
 /*
  * Copyright (c) 2016-2017, Mellanox Technologies. All rights reserved.
  *
@@ -31,10 +31,10 @@
  * SOFTWARE.
  */
 
-#ifndef _UAPI_LINUX_TLS_H
-#define _UAPI_LINUX_TLS_H
+#ifndef _UAPI_freax_TLS_H
+#define _UAPI_freax_TLS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* TLS socket options */
 #define TLS_TX			1	/* Set transmit parameters */
@@ -203,4 +203,4 @@ enum {
 #define TLS_CONF_HW 3
 #define TLS_CONF_HW_RECORD 4
 
-#endif /* _UAPI_LINUX_TLS_H */
+#endif /* _UAPI_freax_TLS_H */

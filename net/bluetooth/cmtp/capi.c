@@ -1,5 +1,5 @@
 /*
-   CMTP implementation for Linux Bluetooth stack (BlueZ).
+   CMTP implementation for freax Bluetooth stack (BlueZ).
    Copyright (C) 2002-2003 Marcel Holtmann <marcel@holtmann.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -20,27 +20,27 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/fcntl.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/ioctl.h>
-#include <linux/file.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
+#include <freax/export.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/fcntl.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/ioctl.h>
+#include <freax/file.h>
+#include <freax/wait.h>
+#include <freax/kthread.h>
 #include <net/sock.h>
 
-#include <linux/isdn/capilli.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
+#include <freax/isdn/capilli.h>
+#include <freax/isdn/capicmd.h>
+#include <freax/isdn/capiutil.h>
 
 #include "cmtp.h"
 

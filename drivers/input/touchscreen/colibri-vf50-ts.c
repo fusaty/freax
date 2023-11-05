@@ -7,20 +7,20 @@
  * Originally authored by Stefan Agner for 3.0 kernel
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iio/consumer.h>
+#include <freax/iio/types.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #define DRIVER_NAME			"colibri-vf50-ts"
 

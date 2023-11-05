@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/hrtimer.h>
+#include <freax/ktime.h>
 
 #include "mbox.h"
 #include "ptp.h"

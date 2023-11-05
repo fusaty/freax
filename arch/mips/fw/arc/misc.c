@@ -9,10 +9,10 @@
  * Copyright (C) 1999 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999 Silicon Graphics, Inc.
  */
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
+#include <freax/compiler.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/irqflags.h>
 
 #include <asm/bcache.h>
 

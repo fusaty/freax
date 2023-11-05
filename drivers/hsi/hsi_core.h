@@ -7,10 +7,10 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#ifndef __LINUX_HSI_CORE_H__
-#define __LINUX_HSI_CORE_H__
+#ifndef __freax_HSI_CORE_H__
+#define __freax_HSI_CORE_H__
 
-#include <linux/hsi/hsi.h>
+#include <freax/hsi/hsi.h>
 
 struct hsi_cl_info {
 	struct list_head	list;
@@ -19,4 +19,4 @@ struct hsi_cl_info {
 
 extern struct list_head hsi_board_list;
 
-#endif /* __LINUX_HSI_CORE_H__ */
+#endif /* __freax_HSI_CORE_H__ */

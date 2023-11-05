@@ -4,11 +4,11 @@
  * Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved.
  *
  ******************************************************************************/
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 int	rtw_init_mlme_priv(struct adapter *padapter)
 {

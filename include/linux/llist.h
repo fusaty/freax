@@ -48,10 +48,10 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/container_of.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/container_of.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
 
 struct llist_head {
 	struct llist_node *first;

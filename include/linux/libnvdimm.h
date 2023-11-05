@@ -6,12 +6,12 @@
  */
 #ifndef __LIBNVDIMM_H__
 #define __LIBNVDIMM_H__
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
-#include <linux/spinlock.h>
-#include <linux/bio.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
+#include <freax/spinlock.h>
+#include <freax/bio.h>
 
 struct badrange_entry {
 	u64 start;
@@ -108,7 +108,7 @@ struct nd_interleave_set {
 	u64 cookie1;
 	/* v1.2 definition of the interleave-set-cookie algorithm */
 	u64 cookie2;
-	/* compatibility with initial buggy Linux implementation */
+	/* compatibility with initial buggy freax implementation */
 	u64 altcookie;
 
 	guid_t type_guid;

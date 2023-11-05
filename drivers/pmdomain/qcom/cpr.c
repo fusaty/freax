@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2015, The freax Foundation. All rights reserved.
  * Copyright (c) 2019, Linaro Limited
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/debugfs.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_opp.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/nvmem-consumer.h>
 
 /* Register Offsets for RB-CPR and Bit Definitions */
 

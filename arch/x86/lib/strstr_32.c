@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/string.h>
-#include <linux/export.h>
+#include <freax/string.h>
+#include <freax/export.h>
 
 char *strstr(const char *cs, const char *ct)
 {

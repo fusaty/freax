@@ -3,22 +3,22 @@
  *
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/log2.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/refcount.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/log2.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/memblock.h>
+#include <freax/export.h>
+#include <freax/refcount.h>
 
 #include <asm/cpudata.h>
 #include <asm/hypervisor.h>
 #include <asm/mdesc.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/oplib.h>
 #include <asm/smp.h>
 #include <asm/adi.h>

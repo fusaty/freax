@@ -7,7 +7,7 @@
 #ifndef __MTK_MDP3_CFG_H__
 #define __MTK_MDP3_CFG_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 extern const struct mtk_mdp_driver_data mt8183_mdp_driver_data;
 

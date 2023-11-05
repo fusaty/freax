@@ -7,14 +7,14 @@
  * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 #include "common.h"
 
 #define ARMADA_PIC_NR_GPIOS 3

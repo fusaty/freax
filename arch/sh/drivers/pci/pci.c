@@ -6,17 +6,17 @@
  * Copyright (c) 2002  M. R. Brown
  *
  * Modelled after arch/mips/pci/pci.c:
- *  Copyright (C) 2003, 04 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 04 Ralf Baechle (ralf@freax-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
 
 unsigned long PCIBIOS_MIN_IO = 0x0000;
 unsigned long PCIBIOS_MIN_MEM = 0;

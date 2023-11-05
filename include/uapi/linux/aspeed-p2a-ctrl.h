@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright 2019 Google Inc
  *
@@ -11,11 +11,11 @@
  * the host to read and write to various regions of the BMC's memory.
  */
 
-#ifndef _UAPI_LINUX_ASPEED_P2A_CTRL_H
-#define _UAPI_LINUX_ASPEED_P2A_CTRL_H
+#ifndef _UAPI_freax_ASPEED_P2A_CTRL_H
+#define _UAPI_freax_ASPEED_P2A_CTRL_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define ASPEED_P2A_CTRL_READ_ONLY 0
 #define ASPEED_P2A_CTRL_READWRITE 1
@@ -59,4 +59,4 @@ struct aspeed_p2a_ctrl_mapping {
 	_IOWR(__ASPEED_P2A_CTRL_IOCTL_MAGIC, \
 		0x01, struct aspeed_p2a_ctrl_mapping)
 
-#endif /* _UAPI_LINUX_ASPEED_P2A_CTRL_H */
+#endif /* _UAPI_freax_ASPEED_P2A_CTRL_H */

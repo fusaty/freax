@@ -5,20 +5,20 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/frequency/ad9523.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/frequency/ad9523.h>
 
 #define AD9523_READ	(1 << 15)
 #define AD9523_WRITE	(0 << 15)

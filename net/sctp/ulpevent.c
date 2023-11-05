@@ -12,7 +12,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Jon Grimm             <jgrimm@us.ibm.com>
@@ -21,9 +21,9 @@
  *    Sridhar Samudrala     <sri@us.ibm.com>
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
 #include <net/sctp/structs.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

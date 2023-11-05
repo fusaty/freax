@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmagb-b-fb.c
+ *	freax/drivers/video/pmagb-b-fb.c
  *
  *	PMAGB-B TURBOchannel Smart Frame Buffer (SFB) card support,
  *	derived from:
@@ -9,7 +9,7 @@
  *
  *	DECstation related code Copyright (C) 1999, 2000, 2001 by
  *	Michael Engel <engel@unix-ag.org>,
- *	Karsten Merker <merker@linuxtag.org> and
+ *	Karsten Merker <merker@freaxtag.org> and
  *	Harald Koerfgen.
  *	Copyright (c) 2005, 2006  Maciej W. Rozycki
  *
@@ -18,15 +18,15 @@
  *	archive for more details.
  */
 
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/tc.h>
+#include <freax/types.h>
 
 #include <asm/io.h>
 

@@ -5,11 +5,11 @@
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/screen_info.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/efi.h>
+#include <freax/screen_info.h>
+#include <freax/string.h>
 #include <asm/efi.h>
 #include <asm/setup.h>
 

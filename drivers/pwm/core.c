@@ -6,17 +6,17 @@
  * Copyright (C) 2011-2012 Avionic Design GmbH
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pwm.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pwm.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 #include <dt-bindings/pwm/pwm.h>
 
@@ -570,7 +570,7 @@ EXPORT_SYMBOL_GPL(pwm_capture);
  *
  * This function will adjust the PWM config to the PWM arguments provided
  * by the DT or PWM lookup table. This is particularly useful to adapt
- * the bootloader config to the Linux one.
+ * the bootloader config to the freax one.
  */
 int pwm_adjust_config(struct pwm_device *pwm)
 {

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_STAT_H
-#define _UAPI_LINUX_STAT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_STAT_H
+#define _UAPI_freax_STAT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #if defined(__KERNEL__) || !defined(__GLIBC__) || (__GLIBC__ < 2)
 
@@ -191,4 +191,4 @@ struct statx {
 #define STATX_ATTR_DAX			0x00200000 /* File is currently in DAX state */
 
 
-#endif /* _UAPI_LINUX_STAT_H */
+#endif /* _UAPI_freax_STAT_H */

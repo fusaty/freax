@@ -15,13 +15,13 @@
  * driver. (email: mjander@embedded.cl).
  */
 
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <freax/time.h>
+#include <freax/delay.h>
+#include <freax/init.h>
 #include <sound/core.h>
 #include "au88x0.h"
-#include <linux/gameport.h>
-#include <linux/export.h>
+#include <freax/gameport.h>
+#include <freax/export.h>
 
 #if IS_REACHABLE(CONFIG_GAMEPORT)
 

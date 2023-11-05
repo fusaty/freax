@@ -5,19 +5,19 @@
  * Copyright (C) 2006-2007 Adam Belay <abelay@novell.com>
  * Copyright (C) 2009 Intel Corporation
  * Author:
- *        Arjan van de Ven <arjan@linux.intel.com>
+ *        Arjan van de Ven <arjan@freax.intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/stat.h>
-#include <linux/math64.h>
+#include <freax/kernel.h>
+#include <freax/cpuidle.h>
+#include <freax/time.h>
+#include <freax/ktime.h>
+#include <freax/hrtimer.h>
+#include <freax/tick.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/stat.h>
+#include <freax/math64.h>
 
 #include "gov.h"
 

@@ -55,7 +55,7 @@
 			/* Verdin CTRL_WAKE1_MICO# (SODIMM 252) */
 			gpios = <&gpio4 0 GPIO_ACTIVE_LOW>;
 			label = "Wake-Up";
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};
@@ -143,7 +143,7 @@
 		ranges;
 
 		/* Use the kernel configuration settings instead */
-		/delete-node/ linux,cma;
+		/delete-node/ freax,cma;
 	};
 };
 
@@ -805,7 +805,7 @@
 	uart-has-rtscts;
 };
 
-/* Verdin UART_3, used as the Linux Console */
+/* Verdin UART_3, used as the freax Console */
 &uart3 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart3>;

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /* Copyright (c) 2021, Microsoft Corporation. */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/mm.h>
 
 #include <net/mana/shm_channel.h>
 

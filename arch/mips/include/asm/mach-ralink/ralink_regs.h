@@ -10,7 +10,7 @@
 #ifndef _RALINK_REGS_H_
 #define _RALINK_REGS_H_
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 enum ralink_soc_type {
 	RALINK_UNKNOWN = 0,

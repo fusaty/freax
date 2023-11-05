@@ -7,7 +7,7 @@
 #ifndef _ASMARM_PGTABLE_H
 #define _ASMARM_PGTABLE_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/proc-fns.h>
 
 #ifndef __ASSEMBLY__
@@ -140,7 +140,7 @@ extern pgprot_t phys_mem_access_prot(struct file *file, unsigned long pfn,
 
 /*
  * The table below defines the page protection levels that we insert into our
- * Linux page table version.  These get translated into the best that the
+ * freax page table version.  These get translated into the best that the
  * architecture can perform.  Note that on most ARM hardware:
  *  1) We cannot do execute protection
  *  2) If we could do execute protection, then read is implied
@@ -199,7 +199,7 @@ static inline bool pte_access_permitted(pte_t pte, bool write)
 }
 #define pte_access_permitted pte_access_permitted
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 static inline void __sync_icache_dcache(pte_t pteval)
 {
 }

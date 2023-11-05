@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <freax/types.h>
+#include <freax/crc32.h>
 #include "dr_ste.h"
 
 struct dr_hw_ste_format {

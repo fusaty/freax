@@ -4,18 +4,18 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/module.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "pegasus.h"
 
 /*

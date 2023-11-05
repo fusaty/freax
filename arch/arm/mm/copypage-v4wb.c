@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/copypage-v4wb.c
+ *  freax/arch/arm/mm/copypage-v4wb.c
  *
  *  Copyright (C) 1995-1999 Russell King
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <freax/init.h>
+#include <freax/highmem.h>
 
 /*
  * ARMv4 optimised copy_user_highpage

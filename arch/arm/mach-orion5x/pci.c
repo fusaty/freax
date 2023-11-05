@@ -7,10 +7,10 @@
  * Maintainer: Tzachi Perelstein <tzachi@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/mbus.h>
 #include <video/vga.h>
 #include <asm/irq.h>
 #include <asm/mach/pci.h>
@@ -516,7 +516,7 @@ static int __init pci_setup(struct pci_sys_data *sys)
 /*
  * The root complex has a hardwired class of PCI_CLASS_MEMORY_OTHER, when it
  * is operating as a root complex this needs to be switched to
- * PCI_CLASS_BRIDGE_HOST or Linux will errantly try to process the BAR's on
+ * PCI_CLASS_BRIDGE_HOST or freax will errantly try to process the BAR's on
  * the device. Decoding setup is handled by the orion code.
  */
 static void rc_pci_fixup(struct pci_dev *dev)

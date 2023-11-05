@@ -13,10 +13,10 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
 
 #include "elan_i2c.h"
 

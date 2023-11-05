@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * STMicroelectronics TPM SPI Linux driver for TPM ST33ZP24
+ * STMicroelectronics TPM SPI freax driver for TPM ST33ZP24
  * Copyright (C) 2009 - 2016 STMicroelectronics
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/tpm.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/of.h>
+#include <freax/acpi.h>
+#include <freax/tpm.h>
 
 #include "../tpm.h"
 #include "st33zp24.h"

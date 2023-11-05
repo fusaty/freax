@@ -5,24 +5,24 @@
  * ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/util_macros.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/util_macros.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define RTQ6056_REG_CONFIG	0x00
 #define RTQ6056_REG_SHUNTVOLT	0x01

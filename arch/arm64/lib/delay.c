@@ -7,11 +7,11 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/timex.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/timex.h>
 
 #include <clocksource/arm_arch_timer.h>
 

@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atm_idt77105.h - Driver-specific declarations of the IDT77105 driver (for
  * use by driver-specific utilities) */
 
-/* Written 1999 by Greg Banks <gnb@linuxfan.com>. Copied from atm_suni.h. */
+/* Written 1999 by Greg Banks <gnb@freaxfan.com>. Copied from atm_suni.h. */
 
 
-#ifndef LINUX_ATM_IDT77105_H
-#define LINUX_ATM_IDT77105_H
+#ifndef freax_ATM_IDT77105_H
+#define freax_ATM_IDT77105_H
 
-#include <linux/types.h>
-#include <linux/atmioc.h>
-#include <linux/atmdev.h>
+#include <freax/types.h>
+#include <freax/atmioc.h>
+#include <freax/atmdev.h>
 
 /*
  * Structure for IDT77105_GETSTAT and IDT77105_GETSTATZ ioctls.

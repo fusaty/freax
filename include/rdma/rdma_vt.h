@@ -11,9 +11,9 @@
  * rdmavt layer.
  */
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/hash.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/hash.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_mad.h>
 #include <rdma/rdmavt_mr.h>

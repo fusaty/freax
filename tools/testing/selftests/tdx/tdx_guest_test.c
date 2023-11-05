@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2022 Intel Corporation.
  *
- * Author: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
+ * Author: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@freax.intel.com>
  */
 
 #include <sys/ioctl.h>
@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <fcntl.h>
 
-#include <linux/tdx-guest.h>
+#include <freax/tdx-guest.h>
 #include "../kselftest_harness.h"
 
 #define TDX_GUEST_DEVNAME "/dev/tdx_guest"

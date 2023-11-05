@@ -5,11 +5,11 @@
  * Copyright 2016 Madhavan Srinivasan, IBM Corporation.
  */
 
-#ifndef _LINUX_POWERPC_PERF_ISA207_COMMON_H_
-#define _LINUX_POWERPC_PERF_ISA207_COMMON_H_
+#ifndef _freax_POWERPC_PERF_ISA207_COMMON_H_
+#define _freax_POWERPC_PERF_ISA207_COMMON_H_
 
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
+#include <freax/kernel.h>
+#include <freax/perf_event.h>
 #include <asm/firmware.h>
 #include <asm/cputable.h>
 
@@ -47,8 +47,8 @@
 #define EVENT_IS_MARKED		(EVENT_MARKED_MASK << EVENT_MARKED_SHIFT)
 #define EVENT_PSEL_MASK		0xff	/* PMCxSEL value */
 
-/* Bits defined by Linux */
-#define EVENT_LINUX_MASK	\
+/* Bits defined by freax */
+#define EVENT_freax_MASK	\
 	((EVENT_EBB_MASK  << EVENT_EBB_SHIFT)			|	\
 	 (EVENT_BHRB_MASK << EVENT_BHRB_SHIFT)			|	\
 	 (EVENT_IFM_MASK  << EVENT_IFM_SHIFT))
@@ -61,7 +61,7 @@
 	 (EVENT_UNIT_MASK      << EVENT_UNIT_SHIFT)		|	\
 	 (EVENT_COMBINE_MASK   << EVENT_COMBINE_SHIFT)		|	\
 	 (EVENT_MARKED_MASK    << EVENT_MARKED_SHIFT)		|	\
-	  EVENT_LINUX_MASK					|	\
+	  EVENT_freax_MASK					|	\
 	  EVENT_PSEL_MASK)
 
 #define ONLY_PLM \
@@ -86,7 +86,7 @@
 	(EVENT_UNIT_MASK      << EVENT_UNIT_SHIFT)		|	\
 	(p9_EVENT_COMBINE_MASK << p9_EVENT_COMBINE_SHIFT)	|	\
 	(EVENT_MARKED_MASK    << EVENT_MARKED_SHIFT)		|	\
-	 EVENT_LINUX_MASK					|	\
+	 EVENT_freax_MASK					|	\
 	 EVENT_PSEL_MASK))
 
 /* Contants to support power10 raw encoding format */
@@ -120,7 +120,7 @@
 	(p10_EVENT_MMCR3_MASK  << p10_EVENT_MMCR3_SHIFT)	|	\
 	(EVENT_MARKED_MASK     << EVENT_MARKED_SHIFT)		|	\
 	(p10_EVENT_RADIX_SCOPE_QUAL_MASK << p10_EVENT_RADIX_SCOPE_QUAL_SHIFT)	|	\
-	 EVENT_LINUX_MASK					|	\
+	 EVENT_freax_MASK					|	\
 	EVENT_PSEL_MASK))
 /*
  * Layout of constraint bits:

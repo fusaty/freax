@@ -6,21 +6,21 @@
  *
  * Author: Dipen Dudhat <Dipen.Dudhat@freescale.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_ifc.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/fsl_ifc.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 struct fsl_ifc_ctrl *fsl_ifc_ctrl_dev;
 EXPORT_SYMBOL(fsl_ifc_ctrl_dev);

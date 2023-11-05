@@ -10,8 +10,8 @@
  *	Ira Weiny <ira.weiny@intel.com>
  */
 
-#ifndef LINUX_PCI_DOE_H
-#define LINUX_PCI_DOE_H
+#ifndef freax_PCI_DOE_H
+#define freax_PCI_DOE_H
 
 struct pci_doe_mb;
 

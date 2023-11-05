@@ -8,14 +8,14 @@
 #ifndef __ARM_CSPMU_H__
 #define __ARM_CSPMU_H__
 
-#include <linux/bitfield.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/cpumask.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 #define to_arm_cspmu(p) (container_of(p, struct arm_cspmu, pmu))
 

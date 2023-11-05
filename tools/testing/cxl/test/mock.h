@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/list.h>
-#include <linux/acpi.h>
+#include <freax/list.h>
+#include <freax/acpi.h>
 #include <cxl.h>
 
 struct cxl_mock_ops {

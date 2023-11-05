@@ -6,10 +6,10 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/regmap.h>
+#include <freax/acpi.h>
 #include <acpi/acpi_bus.h>
 #include <asm/unaligned.h>
 

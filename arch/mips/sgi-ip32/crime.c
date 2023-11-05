@@ -6,11 +6,11 @@
  * Copyright (C) 2001, 2003 Keith M Wesolowski
  * Copyright (C) 2005 Ilya A. Volynets <ilya@total-knowledge.com>
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
 #include <asm/bootinfo.h>
 #include <asm/io.h>
 #include <asm/mipsregs.h>

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/signal.c
+ *  freax/arch/m68k/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,7 +9,7 @@
  */
 
 /*
- * Linux/m68k support by Hamish Macdonald
+ * freax/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  *
@@ -28,25 +28,25 @@
  * signal handlers!
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/extable.h>
-#include <linux/resume_user_mode.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/syscalls.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/highuid.h>
+#include <freax/personality.h>
+#include <freax/tty.h>
+#include <freax/binfmts.h>
+#include <freax/extable.h>
+#include <freax/resume_user_mode.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/traps.h>
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>

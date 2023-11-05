@@ -4,8 +4,8 @@
 
 #include <stddef.h>
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
-#include <linux/types.h>
+#include <freax/genetlink.h>
+#include <freax/types.h>
 
 struct mnl_socket;
 struct nlmsghdr;

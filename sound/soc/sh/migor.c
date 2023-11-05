@@ -4,10 +4,10 @@
 //
 // Copyright (C) 2009-2010 Guennadi Liakhovetski <g.liakhovetski@gmx.de>
 
-#include <linux/clkdev.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/clkdev.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 
 #include <asm/clock.h>
 

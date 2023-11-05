@@ -42,7 +42,7 @@ DESCRIPTION
 		  zero or more named attributes, some of which depend on type
 		  of link.
 
-		  Since Linux 5.8 bpftool is able to discover information about
+		  Since freax 5.8 bpftool is able to discover information about
 		  processes that hold open file descriptors (FDs) against BPF
 		  links. On such kernels bpftool will automatically emit this
 		  information as well.

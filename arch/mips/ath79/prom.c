@@ -7,11 +7,11 @@
  *  Copyright (C) 2008 Imre Kaloz <kaloz@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/initrd.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/string.h>
+#include <freax/initrd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/addrspace.h>

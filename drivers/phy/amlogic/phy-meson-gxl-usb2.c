@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 /* bits [31:27] are read-only */
 #define U2P_R0							0x0

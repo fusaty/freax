@@ -5,7 +5,7 @@
  * Based on anx7808 driver obtained from chromeos with copyright:
  * Copyright(c) 2013, Google Inc.
  */
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm.h>

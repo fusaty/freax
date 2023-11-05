@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LINKAGE_H
-#define _LINUX_LINKAGE_H
+#ifndef _freax_LINKAGE_H
+#define _freax_LINKAGE_H
 
-#include <linux/compiler_types.h>
-#include <linux/stringify.h>
-#include <linux/export.h>
+#include <freax/compiler_types.h>
+#include <freax/stringify.h>
+#include <freax/export.h>
 #include <asm/linkage.h>
 
 /* Some toolchains use other characters (e.g. '`') to mark new line in macro */
@@ -357,4 +357,4 @@
 
 #endif /* __ASSEMBLY__ */
 
-#endif /* _LINUX_LINKAGE_H */
+#endif /* _freax_LINKAGE_H */

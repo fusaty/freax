@@ -3,7 +3,7 @@
  * Driver for Broadcom MPI3 Storage Controllers
  *
  * Copyright (C) 2017-2023 Broadcom Inc.
- *  (mailto: mpi3mr-linuxdrv.pdl@broadcom.com)
+ *  (mailto: mpi3mr-freaxdrv.pdl@broadcom.com)
  *
  */
 

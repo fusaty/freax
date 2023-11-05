@@ -6,8 +6,8 @@
  * Author: Trevor Wu <trevor.wu@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/of.h>
 #include <sound/soc.h>
 
 #include "mtk-soundcard-driver.h"

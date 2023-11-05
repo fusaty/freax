@@ -12,13 +12,13 @@
  *
  */
 
-#ifndef __LINUX_IPMI_SMI_H
-#define __LINUX_IPMI_SMI_H
+#ifndef __freax_IPMI_SMI_H
+#define __freax_IPMI_SMI_H
 
-#include <linux/ipmi_msgdefs.h>
-#include <linux/proc_fs.h>
-#include <linux/platform_device.h>
-#include <linux/ipmi.h>
+#include <freax/ipmi_msgdefs.h>
+#include <freax/proc_fs.h>
+#include <freax/platform_device.h>
+#include <freax/ipmi.h>
 
 struct device;
 
@@ -322,4 +322,4 @@ static inline void ipmi_free_smi_msg(struct ipmi_smi_msg *msg)
 	msg->done(msg);
 }
 
-#endif /* __LINUX_IPMI_SMI_H */
+#endif /* __freax_IPMI_SMI_H */

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_defio.c
+ *  freax/drivers/video/fb_defio.c
  *
  *  Copyright (C) 2006 Jaya Kumar
  *
@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/list.h>
 
 /* to support deferred IO */
-#include <linux/rmap.h>
-#include <linux/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/pagemap.h>
 
 static struct page *fb_deferred_io_page(struct fb_info *info, unsigned long offs)
 {

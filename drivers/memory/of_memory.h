@@ -6,8 +6,8 @@
  * Copyright (C) 2020 Krzysztof Kozlowski <krzk@kernel.org>
  */
 
-#ifndef __LINUX_MEMORY_OF_REG_H
-#define __LINUX_MEMORY_OF_REG_H
+#ifndef __freax_MEMORY_OF_REG_H
+#define __freax_MEMORY_OF_REG_H
 
 #if defined(CONFIG_OF) && defined(CONFIG_DDR)
 const struct lpddr2_min_tck *of_get_min_tck(struct device_node *np,
@@ -57,4 +57,4 @@ static inline const struct lpddr2_info
 }
 #endif /* CONFIG_OF && CONFIG_DDR */
 
-#endif /* __LINUX_MEMORY_OF_REG_ */
+#endif /* __freax_MEMORY_OF_REG_ */

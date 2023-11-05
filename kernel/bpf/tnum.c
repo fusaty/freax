@@ -6,8 +6,8 @@
  * propagate the unknown bits such that the tnum result represents all the
  * possible results for possible values of the operands.
  */
-#include <linux/kernel.h>
-#include <linux/tnum.h>
+#include <freax/kernel.h>
+#include <freax/tnum.h>
 
 #define TNUM(_v, _m)	(struct tnum){.value = _v, .mask = _m}
 /* A completely unknown value */

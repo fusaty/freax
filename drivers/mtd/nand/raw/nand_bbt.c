@@ -53,15 +53,15 @@
  * - the space necessary for a bbt in FLASH does not exceed a block boundary
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/bbm.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/string.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/bbm.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/string.h>
 
 #include "internals.h"
 

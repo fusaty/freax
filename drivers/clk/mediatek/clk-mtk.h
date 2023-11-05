@@ -7,11 +7,11 @@
 #ifndef __DRV_CLK_MTK_H
 #define __DRV_CLK_MTK_H
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include "reset.h"
 

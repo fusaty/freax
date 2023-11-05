@@ -10,13 +10,13 @@
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i8253.h>
-#include <linux/time.h>
-#include <linux/export.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/i8253.h>
+#include <freax/time.h>
+#include <freax/export.h>
 
 #include <asm/vsyscall.h>
 #include <asm/x86_init.h>

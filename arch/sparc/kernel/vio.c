@@ -10,11 +10,11 @@
  * Adapted to sparc64 by David S. Miller davem@davemloft.net
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/export.h>
+#include <freax/init.h>
 
 #include <asm/mdesc.h>
 #include <asm/vio.h>

@@ -25,11 +25,11 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/irq.h>
+#include <freax/init.h>
+#include <freax/tty.h>
+#include <freax/serial_core.h>
+#include <freax/serial_8250.h>
+#include <freax/irq.h>
 
 #include <asm/serial.h>
 #include <asm/mach-rc32434/rb.h>

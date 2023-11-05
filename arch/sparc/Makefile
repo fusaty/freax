@@ -6,7 +6,7 @@
 # Sparc and sparc64.
 #
 # Copyright (C) 1994,1996,1998 David S. Miller (davem@caip.rutgers.edu)
-# Copyright (C) 1998 Jakub Jelinek (jj@ultra.linux.cz)
+# Copyright (C) 1998 Jakub Jelinek (jj@ultra.freax.cz)
 
 # We are not yet configured - so test on arch
 ifeq ($(ARCH),sparc64)
@@ -67,7 +67,7 @@ boot := arch/sparc/boot
 # Default target
 all: zImage
 
-image zImage uImage tftpboot.img vmlinux.aout: vmlinux
+image zImage uImage tftpboot.img vmfreax.aout: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 install:
@@ -84,10 +84,10 @@ KBUILD_IMAGE := $(boot)/zImage
 
 # Don't use tabs in echo arguments.
 define archhelp
-  echo  '* vmlinux      - standard SPARC kernel'
+  echo  '* vmfreax      - standard SPARC kernel'
   echo  '  image        - kernel image ($(boot)/image)'
   echo  '* zImage       - stripped/compressed kernel image ($(boot)/zImage)'
   echo  '  uImage       - U-Boot SPARC32 Image (only for LEON)'
-  echo  '  vmlinux.aout - a.out kernel for SPARC64'
+  echo  '  vmfreax.aout - a.out kernel for SPARC64'
   echo  '  tftpboot.img - image prepared for tftp'
 endef

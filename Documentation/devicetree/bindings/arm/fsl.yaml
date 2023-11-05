@@ -28,7 +28,7 @@ properties:
               - creative,x-fi3
               - fsl,imx23-evk
               - fsl,stmp378x-devb
-              - olimex,imx23-olinuxino
+              - olimex,imx23-ofreaxino
               - sandisk,sansa_fuze_plus
           - const: fsl,imx23
 

@@ -12,13 +12,13 @@
  *    Innominate Security Technologies AG <mhopf@innominate.com>
  *    September, 2002
  */
-#include <linux/ip.h>
+#include <freax/ip.h>
 #include <net/ip.h>
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_ip.h>
+#include <freax/in.h>
+#include <freax/module.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_ip.h>
 
 union pkthdr {
 	struct {

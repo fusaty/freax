@@ -5,7 +5,7 @@ CFLAGS += -I. -I../../include -I../../../lib -g -Og -Wall \
 LDFLAGS += -fsanitize=address -fsanitize=undefined
 LDLIBS+= -lpthread -lurcu
 TARGETS = main idr-test multiorder xarray maple
-CORE_OFILES := xarray.o radix-tree.o idr.o linux.o test.o find_bit.o bitmap.o \
+CORE_OFILES := xarray.o radix-tree.o idr.o freax.o test.o find_bit.o bitmap.o \
 			 slab.o maple.o
 OFILES = main.o $(CORE_OFILES) regression1.o regression2.o regression3.o \
 	 regression4.o tag_check.o multiorder.o idr-test.o iteration_check.o \
@@ -44,13 +44,13 @@ clean:
 vpath %.c ../../lib
 
 $(OFILES): Makefile *.h */*.h generated/map-shift.h generated/bit-length.h \
-	../../include/linux/*.h \
+	../../include/freax/*.h \
 	../../include/asm/*.h \
-	../../../include/linux/xarray.h \
-	../../../include/linux/maple_tree.h \
-	../../../include/linux/radix-tree.h \
+	../../../include/freax/xarray.h \
+	../../../include/freax/maple_tree.h \
+	../../../include/freax/radix-tree.h \
 	../../../lib/radix-tree.h \
-	../../../include/linux/idr.h
+	../../../include/freax/idr.h
 
 radix-tree.c: ../../../lib/radix-tree.c
 	sed -e 's/^static //' -e 's/__always_inline //' -e 's/inline //' < $< > $@

@@ -21,18 +21,18 @@
  * unavailable bits are 0 :)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/mutex.h>
+#include <freax/mod_devicetable.h>
+#include <freax/spi/spi.h>
 
 #define DRVNAME		"adcxx"
 
@@ -228,5 +228,5 @@ static struct spi_driver adcxx_driver = {
 module_spi_driver(adcxx_driver);
 
 MODULE_AUTHOR("Marc Pignat");
-MODULE_DESCRIPTION("National Semiconductor adcxx8sxxx Linux driver");
+MODULE_DESCRIPTION("National Semiconductor adcxx8sxxx freax driver");
 MODULE_LICENSE("GPL");

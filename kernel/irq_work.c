@@ -6,21 +6,21 @@
  * context. The enqueueing is NMI-safe.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/irq_work.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/tick.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/smpboot.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/irq_work.h>
+#include <freax/percpu.h>
+#include <freax/hardirq.h>
+#include <freax/irqflags.h>
+#include <freax/sched.h>
+#include <freax/tick.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/smp.h>
+#include <freax/smpboot.h>
 #include <asm/processor.h>
-#include <linux/kasan.h>
+#include <freax/kasan.h>
 
 #include <trace/events/ipi.h>
 

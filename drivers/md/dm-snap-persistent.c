@@ -8,14 +8,14 @@
 
 #include "dm-exception-store.h"
 
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/dm-io.h>
-#include <linux/dm-bufio.h>
+#include <freax/ctype.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/dm-io.h>
+#include <freax/dm-bufio.h>
 
 #define DM_MSG_PREFIX "persistent snapshot"
 #define DM_CHUNK_SIZE_DEFAULT_SECTORS 32U	/* 16KB */

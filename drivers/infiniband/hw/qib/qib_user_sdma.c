@@ -29,18 +29,18 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/dmapool.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/uio.h>
+#include <freax/rbtree.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
 
 #include "qib.h"
 #include "qib_user_sdma.h"

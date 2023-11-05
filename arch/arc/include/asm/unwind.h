@@ -8,7 +8,7 @@
 
 #ifdef CONFIG_ARC_DW2_UNWIND
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 struct arc700_regs {
 	unsigned long r0;

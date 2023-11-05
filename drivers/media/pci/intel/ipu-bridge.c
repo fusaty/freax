@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Dan Scally <djrscally@gmail.com> */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/mei_cl_bus.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
 
 #include <media/ipu-bridge.h>
 #include <media/v4l2-fwnode.h>

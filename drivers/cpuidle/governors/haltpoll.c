@@ -10,15 +10,15 @@
  * Authors: Marcelo Tosatti <mtosatti@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/kvm_para.h>
+#include <freax/kernel.h>
+#include <freax/cpuidle.h>
+#include <freax/time.h>
+#include <freax/ktime.h>
+#include <freax/hrtimer.h>
+#include <freax/tick.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/kvm_para.h>
 #include <trace/events/power.h>
 
 static unsigned int guest_halt_poll_ns __read_mostly = 200000;

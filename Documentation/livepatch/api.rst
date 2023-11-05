@@ -26,5 +26,5 @@ System State Changes
 Object Types
 ============
 
-.. kernel-doc:: include/linux/livepatch.h
+.. kernel-doc:: include/freax/livepatch.h
    :identifiers: klp_patch klp_object klp_func klp_callbacks klp_state

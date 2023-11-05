@@ -4,14 +4,14 @@
  *
  * Author: Kamel Bouhara <kamel.bouhara@bootlin.com>
  */
-#include <linux/clk.h>
-#include <linux/counter.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/counter.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 #include <soc/at91/atmel_tcb.h>
 
 #define ATMEL_TC_CMR_MASK	(ATMEL_TC_LDRA_RISING | ATMEL_TC_LDRB_FALLING | \

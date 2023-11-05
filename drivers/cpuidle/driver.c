@@ -8,14 +8,14 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/tick.h>
-#include <linux/cpu.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/idle.h>
+#include <freax/cpuidle.h>
+#include <freax/cpumask.h>
+#include <freax/tick.h>
+#include <freax/cpu.h>
 
 #include "cpuidle.h"
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_PCIE2_H_
-#define LINUX_BCMA_DRIVER_PCIE2_H_
+#ifndef freax_BCMA_DRIVER_PCIE2_H_
+#define freax_BCMA_DRIVER_PCIE2_H_
 
 #define BCMA_CORE_PCIE2_CLK_CONTROL		0x0000
 #define  PCIE2_CLKC_RST_OE			0x0001 /* When set, drives PCI_RESET out to pin */
@@ -156,4 +156,4 @@ struct bcma_drv_pcie2 {
 #define pcie2_set32(pcie2, offset, set)		bcma_set32((pcie2)->core, offset, set)
 #define pcie2_mask32(pcie2, offset, mask)	bcma_mask32((pcie2)->core, offset, mask)
 
-#endif /* LINUX_BCMA_DRIVER_PCIE2_H_ */
+#endif /* freax_BCMA_DRIVER_PCIE2_H_ */

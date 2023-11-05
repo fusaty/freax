@@ -6,15 +6,15 @@
 //
 // Author: David Rhodes <david.rhodes@cirrus.com>
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

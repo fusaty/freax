@@ -10,11 +10,11 @@
 
 #include "em28xx.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/usb.h>
+#include <freax/i2c.h>
+#include <freax/jiffies.h>
 
 #include "xc2028.h"
 #include <media/v4l2-common.h>
@@ -598,7 +598,7 @@ error:
 }
 
 /*
- * based on linux/sunrpc/svcauth.h and linux/hash.h
+ * based on freax/sunrpc/svcauth.h and freax/hash.h
  * The original hash function returns a different value, if arch is x86_64
  * or i386.
  */

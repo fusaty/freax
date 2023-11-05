@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2019-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef ATH12K_REG_H
 #define ATH12K_REG_H
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/regulatory.h>
 
 struct ath12k_base;

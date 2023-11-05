@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_POWERPC_PERF_HV_GPCI_H_
-#define LINUX_POWERPC_PERF_HV_GPCI_H_
+#ifndef freax_POWERPC_PERF_HV_GPCI_H_
+#define freax_POWERPC_PERF_HV_GPCI_H_
 
 /*
  * counter info version => fw version/reference (spec version)

@@ -10,11 +10,11 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/scatterlist.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/hdreg.h>
+#include <freax/scatterlist.h>
+#include <freax/idr.h>
 
 #include "rnbd-clt.h"
 

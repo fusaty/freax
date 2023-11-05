@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2012  Magnus Damm
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/mm.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

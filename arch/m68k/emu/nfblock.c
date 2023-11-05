@@ -6,16 +6,16 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/blkdev.h>
+#include <freax/hdreg.h>
+#include <freax/slab.h>
 
 #include <asm/natfeat.h>
 

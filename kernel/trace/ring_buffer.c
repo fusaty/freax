@@ -4,28 +4,28 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/trace_recursion.h>
-#include <linux/trace_events.h>
-#include <linux/ring_buffer.h>
-#include <linux/trace_clock.h>
-#include <linux/sched/clock.h>
-#include <linux/trace_seq.h>
-#include <linux/spinlock.h>
-#include <linux/irq_work.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kthread.h>	/* for self test */
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
+#include <freax/trace_recursion.h>
+#include <freax/trace_events.h>
+#include <freax/ring_buffer.h>
+#include <freax/trace_clock.h>
+#include <freax/sched/clock.h>
+#include <freax/trace_seq.h>
+#include <freax/spinlock.h>
+#include <freax/irq_work.h>
+#include <freax/security.h>
+#include <freax/uaccess.h>
+#include <freax/hardirq.h>
+#include <freax/kthread.h>	/* for self test */
+#include <freax/module.h>
+#include <freax/percpu.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/hash.h>
+#include <freax/list.h>
+#include <freax/cpu.h>
+#include <freax/oom.h>
 
 #include <asm/local.h>
 

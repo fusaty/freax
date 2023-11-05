@@ -5,10 +5,10 @@
 #ifndef __PINCTRL_MSM_H__
 #define __PINCTRL_MSM_H__
 
-#include <linux/pm.h>
-#include <linux/types.h>
+#include <freax/pm.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinctrl.h>
 
 struct platform_device;
 

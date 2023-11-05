@@ -5,9 +5,9 @@
  * Copyright (C) 2014 Noralf Tronnes
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <video/mipi_display.h>
 
 #include "fbtft.h"

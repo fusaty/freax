@@ -2,8 +2,8 @@
 #include "tests/common.h"
 #include <string.h>
 #include <getopt.h>
-#include <linux/memory_hotplug.h>
-#include <linux/build_bug.h>
+#include <freax/memory_hotplug.h>
+#include <freax/build_bug.h>
 
 #define PREFIXES_MAX				15
 #define DELIM					": "

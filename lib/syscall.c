@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/export.h>
+#include <freax/ptrace.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/export.h>
 #include <asm/syscall.h>
 
 static int collect_syscall(struct task_struct *target, struct syscall_info *info)

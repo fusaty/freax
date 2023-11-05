@@ -6,20 +6,20 @@
 #ifndef __CXGBIT_H__
 #define __CXGBIT_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/completion.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/inet.h>
-#include <linux/wait.h>
-#include <linux/kref.h>
-#include <linux/timer.h>
-#include <linux/io.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
+#include <freax/completion.h>
+#include <freax/netdevice.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/inet.h>
+#include <freax/wait.h>
+#include <freax/kref.h>
+#include <freax/timer.h>
+#include <freax/io.h>
 
 #include <asm/byteorder.h>
 

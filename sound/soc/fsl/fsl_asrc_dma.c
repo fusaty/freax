@@ -6,9 +6,9 @@
 //
 // Author: Nicolin Chen <nicoleotsuka@gmail.com>
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/dma/imx-dma.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/dma/imx-dma.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

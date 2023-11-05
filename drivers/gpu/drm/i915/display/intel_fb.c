@@ -7,8 +7,8 @@
 #include <drm/drm_framebuffer.h>
 #include <drm/drm_modeset_helper.h>
 
-#include <linux/dma-fence.h>
-#include <linux/dma-resv.h>
+#include <freax/dma-fence.h>
+#include <freax/dma-resv.h>
 
 #include "i915_drv.h"
 #include "intel_display.h"

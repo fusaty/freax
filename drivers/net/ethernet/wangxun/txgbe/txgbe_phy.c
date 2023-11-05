@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2015 - 2023 Beijing WangXun Technology Co., Ltd. */
 
-#include <linux/gpio/machine.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/property.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/phylink.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/property.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/i2c.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/pcs/pcs-xpcs.h>
+#include <freax/phylink.h>
 
 #include "../libwx/wx_type.h"
 #include "../libwx/wx_lib.h"

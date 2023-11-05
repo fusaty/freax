@@ -8,7 +8,7 @@
 #define _CRYPTO_INTERNAL_BLAKE2S_H
 
 #include <crypto/blake2s.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 void blake2s_compress_generic(struct blake2s_state *state, const u8 *block,
 			      size_t nblocks, const u32 inc);

@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 #include "amdgpu.h"
 #include "soc15_common.h"
 #include "soc21.h"

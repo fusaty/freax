@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CONTEXT_TRACKING_H
-#define _LINUX_CONTEXT_TRACKING_H
+#ifndef _freax_CONTEXT_TRACKING_H
+#define _freax_CONTEXT_TRACKING_H
 
-#include <linux/sched.h>
-#include <linux/vtime.h>
-#include <linux/context_tracking_state.h>
-#include <linux/instrumentation.h>
+#include <freax/sched.h>
+#include <freax/vtime.h>
+#include <freax/context_tracking_state.h>
+#include <freax/instrumentation.h>
 
 #include <asm/ptrace.h>
 

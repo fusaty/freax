@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -20,10 +20,10 @@
  *		2 of the License, or (at your option) any later version.
  */
  
-#ifndef _LINUX_IF_HIPPI_H
-#define _LINUX_IF_HIPPI_H
+#ifndef _freax_IF_HIPPI_H
+#define _freax_IF_HIPPI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 /*
@@ -57,8 +57,8 @@ struct hipnet_statistics {
 	int	tx_packets;		/* total packets transmitted	*/
 	int	rx_errors;		/* bad packets received		*/
 	int	tx_errors;		/* packet transmit problems	*/
-	int	rx_dropped;		/* no space in linux buffers	*/
-	int	tx_dropped;		/* no space available in linux	*/
+	int	rx_dropped;		/* no space in freax buffers	*/
+	int	tx_dropped;		/* no space available in freax	*/
 
 	/* detailed rx_errors: */
 	int	rx_length_errors;
@@ -151,4 +151,4 @@ struct hippi_hdr {
 	struct hippi_snap_hdr	snap;
 } __attribute__((packed));
 
-#endif	/* _LINUX_IF_HIPPI_H */
+#endif	/* _freax_IF_HIPPI_H */

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB */
+/* SPDX-License-Identifier: (GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB */
 /*
  * Copyright (c) 2006 - 2021 Intel Corporation.  All rights reserved.
  * Copyright (c) 2005 Topspin Communications.  All rights reserved.
@@ -9,7 +9,7 @@
 #ifndef IRDMA_ABI_H
 #define IRDMA_ABI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* irdma must support legacy GEN_1 i40iw kernel
  * and user-space whose last ABI ver is 5

@@ -4,8 +4,8 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
 
 #include "clk-regmap.h"
 #include "clk-phase.h"

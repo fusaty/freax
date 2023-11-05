@@ -3,7 +3,7 @@
 #define ARCH_PERF_REGS_H
 
 #include <stdlib.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #define perf_event_arm_regs perf_event_arm64_regs
 #include <asm/perf_regs.h>
 #undef perf_event_arm_regs

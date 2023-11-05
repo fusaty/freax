@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 // Copyright (C) IBM Corporation 2020
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/fsi.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/fsi.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
 
 #define FSI_ENGID_SPI			0x23
 #define FSI_MBOX_ROOT_CTRL_8		0x2860
@@ -588,6 +588,6 @@ static struct fsi_driver fsi_spi_driver = {
 };
 module_fsi_driver(fsi_spi_driver);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@freax.ibm.com>");
 MODULE_DESCRIPTION("FSI attached SPI controller");
 MODULE_LICENSE("GPL");

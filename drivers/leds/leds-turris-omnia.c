@@ -5,11 +5,11 @@
  * 2020, 2023 by Marek Behún <kabel@kernel.org>
  */
 
-#include <linux/i2c.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <freax/i2c.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
 #include "leds.h"
 
 #define OMNIA_BOARD_LEDS	12
@@ -297,7 +297,7 @@ static int omnia_led_register(struct i2c_client *client, struct omnia_led *led,
 	cdev->trigger_type = &omnia_hw_trigger_type;
 	/*
 	 * Use the omnia-mcu trigger as the default trigger. It may be rewritten
-	 * by LED class from the linux,default-trigger property.
+	 * by LED class from the freax,default-trigger property.
 	 */
 	cdev->default_trigger = omnia_hw_trigger.name;
 

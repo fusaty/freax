@@ -13,13 +13,13 @@
  * Contributors: Daniel Hellstrom <daniel@gaisler.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
 
 #include <asm/leon_pci.h>
 #include <asm/sections.h>
@@ -427,7 +427,7 @@ static void grpci1_hw_init(struct grpci1_priv *priv)
 	/* set 1:1 mapping between AHB -> PCI memory space */
 	REGSTORE(regs->cfg_stat, priv->pci_area & 0xf0000000);
 
-	/* map PCI accesses to target BAR1 to Linux kernel memory 1:1 */
+	/* map PCI accesses to target BAR1 to freax kernel memory 1:1 */
 	ahbadr = 0xf0000000 & (u32)__pa(PAGE_ALIGN((unsigned long) &_end));
 	REGSTORE(regs->page1, ahbadr);
 

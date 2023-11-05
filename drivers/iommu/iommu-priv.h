@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES.
  */
-#ifndef __LINUX_IOMMU_PRIV_H
-#define __LINUX_IOMMU_PRIV_H
+#ifndef __freax_IOMMU_PRIV_H
+#define __freax_IOMMU_PRIV_H
 
-#include <linux/iommu.h>
+#include <freax/iommu.h>
 
 static inline const struct iommu_ops *dev_iommu_ops(struct device *dev)
 {
@@ -27,4 +27,4 @@ void iommu_device_unregister_bus(struct iommu_device *iommu,
 				 struct bus_type *bus,
 				 struct notifier_block *nb);
 
-#endif /* __LINUX_IOMMU_PRIV_H */
+#endif /* __freax_IOMMU_PRIV_H */

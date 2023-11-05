@@ -7,11 +7,11 @@
 // Author: Weidong Wang <wangweidong.a@awinic.com>
 //
 
-#include <linux/crc32.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
+#include <freax/crc32.h>
+#include <freax/i2c.h>
+#include <freax/firmware.h>
+#include <freax/of_gpio.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 #include "aw88399.h"
 #include "aw88395/aw88395_device.h"

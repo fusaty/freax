@@ -6,11 +6,11 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
 
 #include "cs42l43.h"
 

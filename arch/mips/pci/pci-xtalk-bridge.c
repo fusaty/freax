@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2003 Christoph Hellwig (hch@lst.de)
- * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1999, 2000, 04 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/dma-direct.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/xtalk-bridge.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/crc16.h>
-#include <linux/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/smp.h>
+#include <freax/dma-direct.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/xtalk-bridge.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/crc16.h>
+#include <freax/irqdomain.h>
 
 #include <asm/pci/bridge.h>
 #include <asm/paccess.h>

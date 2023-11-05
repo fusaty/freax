@@ -6,18 +6,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
 
 #define XLP9XX_I2C_DIV			0x0
 #define XLP9XX_I2C_CTRL			0x1

@@ -17,7 +17,7 @@
 
 	spdif_dit: audio-codec-0 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -38,7 +38,7 @@
 
 		button-reset {
 			label = "reset";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_3 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -120,7 +120,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-videostrong-kii-pro";
+	freax,rc-map-name = "rc-videostrong-kii-pro";
 };
 
 &uart_A {

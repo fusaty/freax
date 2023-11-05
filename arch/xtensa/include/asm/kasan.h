@@ -6,8 +6,8 @@
 
 #ifdef CONFIG_KASAN
 
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
 #include <asm/kmem_layout.h>
 
 #define KASAN_SHADOW_SCALE_SHIFT 3

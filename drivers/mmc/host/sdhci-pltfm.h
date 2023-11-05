@@ -8,8 +8,8 @@
 #ifndef _DRIVERS_MMC_SDHCI_PLTFM_H
 #define _DRIVERS_MMC_SDHCI_PLTFM_H
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
 #include "sdhci.h"
 
 struct sdhci_pltfm_data {

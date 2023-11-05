@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ENTRYKVM_H
-#define __LINUX_ENTRYKVM_H
+#ifndef __freax_ENTRYKVM_H
+#define __freax_ENTRYKVM_H
 
-#include <linux/static_call_types.h>
-#include <linux/resume_user_mode.h>
-#include <linux/syscalls.h>
-#include <linux/seccomp.h>
-#include <linux/sched.h>
-#include <linux/tick.h>
+#include <freax/static_call_types.h>
+#include <freax/resume_user_mode.h>
+#include <freax/syscalls.h>
+#include <freax/seccomp.h>
+#include <freax/sched.h>
+#include <freax/tick.h>
 
 /* Transfer to guest mode work */
 #ifdef CONFIG_KVM_XFER_TO_GUEST_WORK

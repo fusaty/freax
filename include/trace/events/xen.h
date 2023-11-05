@@ -5,7 +5,7 @@
 #if !defined(_TRACE_XEN_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_XEN_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/trace_types.h>
 

@@ -4,29 +4,29 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/falloc.h>
-#include <linux/swap.h>
-#include <linux/crc32.h>
-#include <linux/writeback.h>
-#include <linux/uaccess.h>
-#include <linux/dlm.h>
-#include <linux/dlm_plock.h>
-#include <linux/delay.h>
-#include <linux/backing-dev.h>
-#include <linux/fileattr.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/compat.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
+#include <freax/blkdev.h>
+#include <freax/mm.h>
+#include <freax/mount.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/falloc.h>
+#include <freax/swap.h>
+#include <freax/crc32.h>
+#include <freax/writeback.h>
+#include <freax/uaccess.h>
+#include <freax/dlm.h>
+#include <freax/dlm_plock.h>
+#include <freax/delay.h>
+#include <freax/backing-dev.h>
+#include <freax/fileattr.h>
 
 #include "gfs2.h"
 #include "incore.h"

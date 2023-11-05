@@ -5,7 +5,7 @@
  * Copyright IBM Corp. 2023
  *
  * Authors:
- *  Nico Boehr <nrb@linux.ibm.com>
+ *  Nico Boehr <nrb@freax.ibm.com>
  */
 
 #define _GNU_SOURCE /* for program_invocation_short_name */

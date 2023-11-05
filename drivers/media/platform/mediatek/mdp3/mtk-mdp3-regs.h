@@ -7,7 +7,7 @@
 #ifndef __MTK_MDP3_REGS_H__
 #define __MTK_MDP3_REGS_H__
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 #include <media/videobuf2-core.h>
 #include "mtk-img-ipi.h"
 

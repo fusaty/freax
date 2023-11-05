@@ -19,7 +19,7 @@ virtual report
 @i@
 @@
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 //----------------------------------------------------------
 //  For context mode

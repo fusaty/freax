@@ -5,14 +5,14 @@
  * Copyright (c) 2023 Nuvoton Technology corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include "sdhci-pltfm.h"
 

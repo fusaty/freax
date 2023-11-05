@@ -6,7 +6,7 @@
  * Copyright (C) 2006-2019 CRYPTOGAMS by <appro@openssl.org>. All Rights Reserved.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/nospec-insn.h>
 #include <asm/vx-insn.h>
 

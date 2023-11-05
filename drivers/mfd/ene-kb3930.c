@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Lubomir Rintel
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
 
 /* I2C registers that are multiplexing access to the EC RAM. */
 enum {

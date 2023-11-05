@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2008 Marvell Semiconductor
  * Copyright (c) 2015 CMC Electronics, Inc.
- * Copyright (c) 2017 Savoir-faire Linux, Inc.
+ * Copyright (c) 2017 Savoir-faire freax, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
 
 #include "chip.h"
 #include "global1.h"

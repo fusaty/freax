@@ -4,8 +4,8 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/of.h>
-#include <linux/types.h>
+#include <freax/of.h>
+#include <freax/types.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -42,7 +42,7 @@
  * 17 Sep 93    David L. Mills
  *      Created file $NTP/include/sys/timex.h
  * 07 Oct 93    Torsten Duwe
- *      Derived linux/timex.h
+ *      Derived freax/timex.h
  * 1995-08-13    Torsten Duwe
  *      kernel PLL updated to 1994-12-13 specs (rfc-1589)
  * 1997-08-30    Ulrich Windl
@@ -50,17 +50,17 @@
  * 2004-08-12    Christoph Lameter
  *      Reworked time interpolation logic
  */
-#ifndef _LINUX_TIMEX_H
-#define _LINUX_TIMEX_H
+#ifndef _freax_TIMEX_H
+#define _freax_TIMEX_H
 
-#include <uapi/linux/timex.h>
+#include <uapi/freax/timex.h>
 
 #define ADJ_ADJTIME		0x8000	/* switch between adjtime/adjtimex modes */
 #define ADJ_OFFSET_SINGLESHOT	0x0001	/* old-fashioned adjtime */
 #define ADJ_OFFSET_READONLY	0x2000	/* read-only adjtime */
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/param.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/param.h>
 
 unsigned long random_get_entropy_fallback(void);
 
@@ -103,7 +103,7 @@ unsigned long random_get_entropy_fallback(void);
  *
  * In the above mailing list discussion, it seems the value of 4
  * was appropriate for other Unix systems with HZ=100, and that
- * SHIFT_PLL should be decreased as HZ increases. However, Linux's
+ * SHIFT_PLL should be decreased as HZ increases. However, freax's
  * clock steering implementation is HZ independent.
  *
  * Through experimentation, a SHIFT_PLL value of 2 was found to allow
@@ -169,4 +169,4 @@ int read_current_timer(unsigned long *timer_val);
 /* The clock frequency of the i8253/i8254 PIT */
 #define PIT_TICK_RATE 1193182ul
 
-#endif /* LINUX_TIMEX_H */
+#endif /* freax_TIMEX_H */

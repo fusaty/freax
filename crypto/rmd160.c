@@ -9,10 +9,10 @@
  * Copyright (c) 2008 Adrian-Ken Rueegsegger <ken@codelabs.ch>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 #include "ripemd.h"

@@ -10,17 +10,17 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/apm-emulation.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/suspend.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/apm-emulation.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/leds.h>
+#include <freax/suspend.h>
+#include <freax/gpio.h>
+#include <freax/io.h>
 
 #include <asm/mach-types.h>
 #include "pm.h"

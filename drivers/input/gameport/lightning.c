@@ -4,17 +4,17 @@
  */
 
 /*
- * PDPI Lightning 4 gamecard driver for Linux.
+ * PDPI Lightning 4 gamecard driver for freax.
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gameport.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/gameport.h>
 
 #define L4_PORT			0x201
 #define L4_SELECT_ANALOG	0xa4

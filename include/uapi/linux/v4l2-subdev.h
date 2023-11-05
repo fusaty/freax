@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * V4L2 subdev userspace API
  *
@@ -8,14 +8,14 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#ifndef __LINUX_V4L2_SUBDEV_H
-#define __LINUX_V4L2_SUBDEV_H
+#ifndef __freax_V4L2_SUBDEV_H
+#define __freax_V4L2_SUBDEV_H
 
-#include <linux/const.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/v4l2-common.h>
-#include <linux/v4l2-mediabus.h>
+#include <freax/const.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
+#include <freax/v4l2-common.h>
+#include <freax/v4l2-mediabus.h>
 
 /**
  * enum v4l2_subdev_format_whence - Media bus format type

@@ -24,12 +24,12 @@
    a write to the UIO device.
 */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/uio_driver.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/uio_driver.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 /* ID's for SERCOS III PCI card (PLX 9030) */
 #define SERCOS_SUB_VENDOR_ID  0x1971

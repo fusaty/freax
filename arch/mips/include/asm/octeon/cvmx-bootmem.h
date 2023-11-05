@@ -95,7 +95,7 @@ struct cvmx_bootmem_named_block_desc {
  * positions for backwards compatibility.
  */
 struct cvmx_bootmem_desc {
-#if defined(__BIG_ENDIAN_BITFIELD) || defined(CVMX_BUILD_FOR_LINUX_HOST)
+#if defined(__BIG_ENDIAN_BITFIELD) || defined(CVMX_BUILD_FOR_freax_HOST)
 	/* spinlock to control access to list */
 	uint32_t lock;
 	/* flags for indicating various conditions */

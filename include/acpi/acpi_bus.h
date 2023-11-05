@@ -9,8 +9,8 @@
 #ifndef __ACPI_BUS_H__
 #define __ACPI_BUS_H__
 
-#include <linux/device.h>
-#include <linux/property.h>
+#include <freax/device.h>
+#include <freax/property.h>
 
 struct acpi_handle_list {
 	u32 count;

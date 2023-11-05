@@ -5,15 +5,15 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/regmap.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/regmap.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* GPIO flavor */
 #define GPIO_REG_DIR	0x00

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <freax/mm.h>
+#include <freax/module.h>
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>
 #include <asm/inst.h>

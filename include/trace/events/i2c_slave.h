@@ -10,8 +10,8 @@
 #if !defined(_TRACE_I2C_SLAVE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_I2C_SLAVE_H
 
-#include <linux/i2c.h>
-#include <linux/tracepoint.h>
+#include <freax/i2c.h>
+#include <freax/tracepoint.h>
 
 TRACE_DEFINE_ENUM(I2C_SLAVE_READ_REQUESTED);
 TRACE_DEFINE_ENUM(I2C_SLAVE_WRITE_REQUESTED);

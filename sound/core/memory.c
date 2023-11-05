@@ -5,9 +5,9 @@
  *  Misc memory accessors
  */
 
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 

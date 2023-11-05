@@ -7,12 +7,12 @@
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
  */
 
-#include <linux/jiffies.h>
-#include <linux/hrtimer.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm_host.h>
-#include <linux/clockchips.h>
+#include <freax/jiffies.h>
+#include <freax/hrtimer.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/kvm_host.h>
+#include <freax/clockchips.h>
 
 #include <asm/reg.h>
 #include <asm/time.h>

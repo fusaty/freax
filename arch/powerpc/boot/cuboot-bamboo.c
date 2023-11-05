@@ -2,7 +2,7 @@
 /*
  * Old U-boot compatibility for Bamboo
  *
- * Author: Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Author: Josh Boyer <jwboyer@freax.vnet.ibm.com>
  *
  * Copyright 2007 IBM Corporation
  *

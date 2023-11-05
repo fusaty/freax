@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_TIOCL_H
-#define _LINUX_TIOCL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_TIOCL_H
+#define _freax_TIOCL_H
 
 #define TIOCL_SETSEL	2	/* set a selection */
 #define 	TIOCL_SELCHAR	0	/* select characters */
@@ -37,4 +37,4 @@ struct tiocl_selection {
 #define TIOCL_BLANKEDSCREEN	15	/* return which vt was blanked */
 #define TIOCL_GETKMSGREDIRECT	17	/* get the vt the kernel messages are restricted to */
 
-#endif /* _LINUX_TIOCL_H */
+#endif /* _freax_TIOCL_H */

@@ -5,9 +5,9 @@
  *	Copyright (c) 2008  Maciej W. Rozycki
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
 
 
 static struct i2c_board_info swarm_i2c_info1[] __initdata = {

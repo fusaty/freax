@@ -29,7 +29,7 @@
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -37,7 +37,7 @@
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&pm8941_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -45,9 +45,9 @@
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 68 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 			debounce-interval = <150>;
 		};
 	};

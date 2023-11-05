@@ -15,18 +15,18 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef _LINUX_RHASHTABLE_H
-#define _LINUX_RHASHTABLE_H
+#ifndef _freax_RHASHTABLE_H
+#define _freax_RHASHTABLE_H
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/jhash.h>
-#include <linux/list_nulls.h>
-#include <linux/workqueue.h>
-#include <linux/rculist.h>
-#include <linux/bit_spinlock.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/jhash.h>
+#include <freax/list_nulls.h>
+#include <freax/workqueue.h>
+#include <freax/rculist.h>
+#include <freax/bit_spinlock.h>
 
-#include <linux/rhashtable-types.h>
+#include <freax/rhashtable-types.h>
 /*
  * Objects in an rhashtable have an embedded struct rhash_head
  * which is linked into as hash chain from the hash table - or one
@@ -1283,4 +1283,4 @@ static inline void rhltable_destroy(struct rhltable *hlt)
 	return rhltable_free_and_destroy(hlt, NULL, NULL);
 }
 
-#endif /* _LINUX_RHASHTABLE_H */
+#endif /* _freax_RHASHTABLE_H */

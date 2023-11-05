@@ -11,9 +11,9 @@
 #ifndef _SS_HASHTAB_H_
 #define _SS_HASHTAB_H_
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
 
 #define HASHTAB_MAX_NODES	U32_MAX
 
@@ -143,7 +143,7 @@ int hashtab_duplicate(struct hashtab *new, struct hashtab *orig,
 		int (*destroy)(void *k, void *d, void *args),
 		void *args);
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 /* Fill info with some hash table statistics */
 void hashtab_stat(struct hashtab *h, struct hashtab_info *info);
 #else

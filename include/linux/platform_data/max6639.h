@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MAX6639_H
-#define _LINUX_MAX6639_H
+#ifndef _freax_MAX6639_H
+#define _freax_MAX6639_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* platform data for the MAX6639 temperature sensor and fan control */
 
@@ -12,4 +12,4 @@ struct max6639_platform_data {
 	int rpm_range;		/* 2000, 4000 (default), 8000 or 16000 */
 };
 
-#endif /* _LINUX_MAX6639_H */
+#endif /* _freax_MAX6639_H */

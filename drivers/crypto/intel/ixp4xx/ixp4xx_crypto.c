@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Christian Hohnstaedt <chohnstaedt@innominate.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/crypto.h>
+#include <freax/kernel.h>
+#include <freax/rtnetlink.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include <crypto/ctr.h>
 #include <crypto/internal/des.h>
@@ -28,11 +28,11 @@
 #include <crypto/authenc.h>
 #include <crypto/scatterwalk.h>
 
-#include <linux/soc/ixp4xx/npe.h>
-#include <linux/soc/ixp4xx/qmgr.h>
+#include <freax/soc/ixp4xx/npe.h>
+#include <freax/soc/ixp4xx/qmgr.h>
 
 /* Intermittent includes, delete this after v5.14-rc1 */
-#include <linux/soc/ixp4xx/cpu.h>
+#include <freax/soc/ixp4xx/cpu.h>
 
 #define MAX_KEYLEN 32
 

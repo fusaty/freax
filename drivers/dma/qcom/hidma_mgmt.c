@@ -2,24 +2,24 @@
 /*
  * Qualcomm Technologies HIDMA DMA engine Management interface
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The freax Foundation. All rights reserved.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
 
 #include "hidma_mgmt.h"
 

@@ -17,14 +17,14 @@
 #ifndef HTC_H
 #define HTC_H
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/firmware.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
 #include <net/mac80211.h>
 
 #include "common.h"

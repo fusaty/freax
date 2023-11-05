@@ -6,17 +6,17 @@
  * Copyright (C) 2019 Michael Shych <mshych@mellanox.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/platform_data/mlxreg.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
 
 #define MLXREG_WDT_CLOCK_SCALE		1000
 #define MLXREG_WDT_MAX_TIMEOUT_TYPE1	32

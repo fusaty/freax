@@ -7,8 +7,8 @@
  * Author : Yoshihiro Shimoda <yoshihiro.shimoda.uh@renesas.com>
  */
 
-#ifndef __LINUX_USB_R8A66597_H
-#define __LINUX_USB_R8A66597_H
+#ifndef __freax_USB_R8A66597_H
+#define __freax_USB_R8A66597_H
 
 #define R8A66597_PLATDATA_XTAL_12MHZ	0x01
 #define R8A66597_PLATDATA_XTAL_24MHZ	0x02
@@ -464,5 +464,5 @@ struct r8a66597_platdata {
 #define CH1ENDC		0x0002 /* b2: Ch1 DMA Transfer End Int Stat Clear */
 #define CH0ENDC		0x0001 /* b1: Ch0 DMA Transfer End Int Stat Clear */
 
-#endif /* __LINUX_USB_R8A66597_H */
+#endif /* __freax_USB_R8A66597_H */
 

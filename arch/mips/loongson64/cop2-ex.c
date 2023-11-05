@@ -8,14 +8,14 @@
  *
  * based on arch/mips/cavium-octeon/cpu.c
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@freax-mips.org>
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/sched/signal.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/notifier.h>
+#include <freax/ptrace.h>
+#include <freax/uaccess.h>
+#include <freax/sched/signal.h>
 
 #include <asm/fpu.h>
 #include <asm/cop2.h>

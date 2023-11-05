@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/stat.c
+ *  freax/fs/stat.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/highuid.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
-#include <linux/compat.h>
-#include <linux/iversion.h>
+#include <freax/blkdev.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/highuid.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/security.h>
+#include <freax/cred.h>
+#include <freax/syscalls.h>
+#include <freax/pagemap.h>
+#include <freax/compat.h>
+#include <freax/iversion.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 
 #include "internal.h"

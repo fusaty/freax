@@ -5,8 +5,8 @@
  *  Copyright (c) 2010-2015 Steven Toth <stoth@kernellabs.com>
  */
 
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
 
 #include "saa7164.h"
 

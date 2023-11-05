@@ -6,23 +6,23 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //      Ben Dooks <ben@simtec.co.uk>
-//      http://armlinux.simtec.co.uk/
+//      http://armfreax.simtec.co.uk/
 //
 // Samsung - GPIOlib support
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/ioport.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
 
 #include <asm/irq.h>
 

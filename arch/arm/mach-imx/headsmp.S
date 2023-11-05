@@ -4,8 +4,8 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 
 .arch armv7-a

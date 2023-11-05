@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
+ * freax/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
  *
  *  Copyright (c) 2005, Advanced Micro Devices, Inc.
  *
@@ -30,18 +30,18 @@
  * (the low to high transition will not occur).
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/highmem.h>
+#include <freax/leds.h>
+#include <freax/mmc/host.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 #include <asm/mach-au1x00/au1000.h>

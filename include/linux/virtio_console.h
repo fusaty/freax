@@ -29,10 +29,10 @@
  * Copyright (C) Red Hat, Inc., 2009, 2010, 2011
  * Copyright (C) Amit Shah <amit.shah@redhat.com>, 2009, 2010, 2011
  */
-#ifndef _LINUX_VIRTIO_CONSOLE_H
-#define _LINUX_VIRTIO_CONSOLE_H
+#ifndef _freax_VIRTIO_CONSOLE_H
+#define _freax_VIRTIO_CONSOLE_H
 
-#include <uapi/linux/virtio_console.h>
+#include <uapi/freax/virtio_console.h>
 
 int __init virtio_cons_early_init(int (*put_chars)(u32, const char *, int));
-#endif /* _LINUX_VIRTIO_CONSOLE_H */
+#endif /* _freax_VIRTIO_CONSOLE_H */

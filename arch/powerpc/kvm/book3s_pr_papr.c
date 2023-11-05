@@ -12,9 +12,9 @@
  * processors.
  */
 
-#include <linux/anon_inodes.h>
+#include <freax/anon_inodes.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>
 

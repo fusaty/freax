@@ -7,13 +7,13 @@
 
 #include <asm/types.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 #define W1_FAMILY_SMEM_01	0x01
 #define W1_FAMILY_SMEM_81	0x81

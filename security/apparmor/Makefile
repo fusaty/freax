@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-# Makefile for AppArmor Linux Security Module
+# Makefile for AppArmor freax Security Module
 #
 obj-$(CONFIG_SECURITY_APPARMOR) += apparmor.o
 
@@ -101,14 +101,14 @@ cmd_make-rlim = echo "static const char *const rlim_names[RLIM_NLIMITS] = {" \
 $(obj)/capability.o : $(obj)/capability_names.h
 $(obj)/net.o : $(obj)/net_names.h
 $(obj)/resource.o : $(obj)/rlim_names.h
-$(obj)/capability_names.h : $(srctree)/include/uapi/linux/capability.h \
+$(obj)/capability_names.h : $(srctree)/include/uapi/freax/capability.h \
 			    $(src)/Makefile
 	$(call cmd,make-caps)
 $(obj)/rlim_names.h : $(srctree)/include/uapi/asm-generic/resource.h \
 		      $(src)/Makefile
 	$(call cmd,make-rlim)
-$(obj)/net_names.h : $(srctree)/include/linux/socket.h \
-		     $(srctree)/include/linux/net.h \
+$(obj)/net_names.h : $(srctree)/include/freax/socket.h \
+		     $(srctree)/include/freax/net.h \
 		     $(src)/Makefile
 	$(call cmd,make-af)
 	$(call cmd,make-sock)

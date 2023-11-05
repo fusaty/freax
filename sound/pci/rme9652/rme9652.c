@@ -6,13 +6,13 @@
  *      Copyright (c) 1999-2001  Paul Davis
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/nospec.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -3,7 +3,7 @@ XFS Maintainer Entry Profile
 
 Overview
 --------
-XFS is a well known high-performance filesystem in the Linux kernel.
+XFS is a well known high-performance filesystem in the freax kernel.
 The aim of this project is to provide and maintain a robust and
 performant filesystem.
 
@@ -12,13 +12,13 @@ git repository.
 After a testing period, the for-next branch is merged to the master
 branch.
 
-Kernel code are merged to the xfs-linux tree[0].
+Kernel code are merged to the xfs-freax tree[0].
 Userspace code are merged to the xfsprogs tree[1].
 Test cases are merged to the xfstests tree[2].
 Ondisk format documentation are merged to the xfs-documentation tree[3].
 
 All patchsets involving XFS *must* be cc'd in their entirety to the mailing
-list linux-xfs@vger.kernel.org.
+list freax-xfs@vger.kernel.org.
 
 Roles
 -----
@@ -113,7 +113,7 @@ Please follow these additional rules when submitting to XFS:
   the maintainers of XFS and the relevant subsystems to decide how to
   proceed with a merge.
 
-- Any patchset changing XFS should be cc'd in its entirety to linux-xfs.
+- Any patchset changing XFS should be cc'd in its entirety to freax-xfs.
   Do not send partial patchsets; that makes analysis of the broader
   context of the changes unnecessarily difficult.
 
@@ -188,7 +188,7 @@ offer their opinion.
 
 References
 ----------
-| [0] https://git.kernel.org/pub/scm/fs/xfs/xfs-linux.git/
+| [0] https://git.kernel.org/pub/scm/fs/xfs/xfs-freax.git/
 | [1] https://git.kernel.org/pub/scm/fs/xfs/xfsprogs-dev.git/
 | [2] https://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git/
 | [3] https://git.kernel.org/pub/scm/fs/xfs/xfs-documentation.git/

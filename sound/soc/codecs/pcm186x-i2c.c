@@ -7,9 +7,9 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
 
 #include "pcm186x.h"
 

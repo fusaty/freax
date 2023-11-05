@@ -7,13 +7,13 @@
  *
  **************************************************************************/
 
-#include <linux/aperture.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <freax/aperture.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
 
 #include <asm/set_memory.h>
 

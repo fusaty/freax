@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/hil/hilkbd.c
+ *  freax/drivers/hil/hilkbd.c
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *  Copyright (C) 1999 Matthew Wilcox <willy@infradead.org>
@@ -11,17 +11,17 @@
  *  HP700 (parisc) series machines.
  */
 
-#include <linux/pci_ids.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hil.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <freax/pci_ids.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/hil.h>
+#include <freax/io.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
 #include <asm/irq.h>
 #ifdef CONFIG_HP300
 #include <asm/hwtest.h>

@@ -5,14 +5,14 @@
  * Copyright 2022 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #include <asm/unaligned.h>
 

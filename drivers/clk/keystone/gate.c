@@ -6,13 +6,13 @@
  *	Murali Karicheri <m-karicheri2@ti.com>
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/module.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/of.h>
+#include <freax/module.h>
 
 /* PSC register offsets */
 #define PTCMD			0x120

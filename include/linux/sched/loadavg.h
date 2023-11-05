@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_LOADAVG_H
-#define _LINUX_SCHED_LOADAVG_H
+#ifndef _freax_SCHED_LOADAVG_H
+#define _freax_SCHED_LOADAVG_H
 
 /*
  * These are the constant used to fake the fixed-point load-average
@@ -45,4 +45,4 @@ extern unsigned long calc_load_n(unsigned long load, unsigned long exp,
 
 extern void calc_global_load(void);
 
-#endif /* _LINUX_SCHED_LOADAVG_H */
+#endif /* _freax_SCHED_LOADAVG_H */

@@ -33,29 +33,29 @@
 #ifndef MLX5_DRIVER_H
 #define MLX5_DRIVER_H
 
-#include <linux/kernel.h>
-#include <linux/completion.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/spinlock_types.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/xarray.h>
-#include <linux/workqueue.h>
-#include <linux/mempool.h>
-#include <linux/interrupt.h>
-#include <linux/idr.h>
-#include <linux/notifier.h>
-#include <linux/refcount.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/completion.h>
+#include <freax/pci.h>
+#include <freax/irq.h>
+#include <freax/spinlock_types.h>
+#include <freax/semaphore.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/xarray.h>
+#include <freax/workqueue.h>
+#include <freax/mempool.h>
+#include <freax/interrupt.h>
+#include <freax/idr.h>
+#include <freax/notifier.h>
+#include <freax/refcount.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/mutex.h>
 
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/doorbell.h>
-#include <linux/mlx5/eq.h>
-#include <linux/timecounter.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/mlx5/device.h>
+#include <freax/mlx5/doorbell.h>
+#include <freax/mlx5/eq.h>
+#include <freax/timecounter.h>
+#include <freax/ptp_clock_kernel.h>
 #include <net/devlink.h>
 
 #define MLX5_ADEV_NAME "mlx5_core"

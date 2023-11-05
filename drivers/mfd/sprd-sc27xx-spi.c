@@ -3,16 +3,16 @@
  * Copyright (C) 2017 Spreadtrum Communications Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/sc27xx-pmic.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <uapi/linux/usb/charger.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/sc27xx-pmic.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <uapi/freax/usb/charger.h>
 
 #define SPRD_PMIC_INT_MASK_STATUS	0x0
 #define SPRD_PMIC_INT_RAW_STATUS	0x4

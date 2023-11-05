@@ -5,18 +5,18 @@
  * Copyright (C) 2015 Robert Jarzmik
  */
 
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/module.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "../pinctrl-utils.h"
 #include "pinctrl-pxa2xx.h"

@@ -18,17 +18,17 @@
  * element kfifo buffer.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/irq_work.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/irq_work.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/sw_trigger.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/sw_trigger.h>
 
 struct iio_loop_info {
 	struct iio_sw_trigger swt;

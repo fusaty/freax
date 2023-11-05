@@ -8,13 +8,13 @@
  * devices.
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <freax/acpi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
 
 /* Broxton communities */
 #define BXT_NW "INT3452:01"

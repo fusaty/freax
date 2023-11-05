@@ -2,14 +2,14 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Authors: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
+// Authors: Ranjani Sridharan <ranjani.sridharan@freax.intel.com>
 //
 
 /*
  * Hardware interface for audio DSP on Meteorlake.
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <sound/sof/ipc4/header.h>
 #include <trace/events/sof_intel.h>
 #include "../ipc4-priv.h"

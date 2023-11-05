@@ -9,12 +9,12 @@
  *  April, 2002
  *
  */
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_arp.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/module.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_arp.h>
 
 static bool
 ebt_arp_mt(const struct sk_buff *skb, struct xt_action_param *par)

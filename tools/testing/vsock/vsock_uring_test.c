@@ -13,7 +13,7 @@
 #include <liburing.h>
 #include <unistd.h>
 #include <sys/mman.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <error.h>
 
 #include "util.h"

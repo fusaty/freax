@@ -11,10 +11,10 @@
  * - implement arch_prepare_bpf_trampoline(), poke(), ...
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/libgcc.h>
+#include <freax/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/libgcc.h>
 #include "bpf_jit.h"
 
 static const int regmap[] = {

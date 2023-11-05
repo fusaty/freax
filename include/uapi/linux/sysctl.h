@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * sysctl.h: General linux system control interface
+ * sysctl.h: General freax system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  *
@@ -20,12 +20,12 @@
  ****************************************************************
  */
 
-#ifndef _UAPI_LINUX_SYSCTL_H
-#define _UAPI_LINUX_SYSCTL_H
+#ifndef _UAPI_freax_SYSCTL_H
+#define _UAPI_freax_SYSCTL_H
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 
 #define CTL_MAXNAME 10		/* how many path components do we allow in a
 				   call to sysctl?   In other words, what is
@@ -888,7 +888,7 @@ enum {
 
 /* /proc/sys/dev/mac_hid */
 enum {
-	DEV_MAC_HID_KEYBOARD_SENDS_LINUX_KEYCODES=1,
+	DEV_MAC_HID_KEYBOARD_SENDS_freax_KEYCODES=1,
 	DEV_MAC_HID_KEYBOARD_LOCK_KEYCODES=2,
 	DEV_MAC_HID_MOUSE_BUTTON_EMULATION=3,
 	DEV_MAC_HID_MOUSE_BUTTON2_KEYCODE=4,
@@ -918,4 +918,4 @@ enum
 };
 
 
-#endif /* _UAPI_LINUX_SYSCTL_H */
+#endif /* _UAPI_freax_SYSCTL_H */

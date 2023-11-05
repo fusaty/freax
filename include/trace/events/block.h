@@ -5,10 +5,10 @@
 #if !defined(_TRACE_BLOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BLOCK_H
 
-#include <linux/blktrace_api.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/tracepoint.h>
+#include <freax/blktrace_api.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/tracepoint.h>
 
 #define RWBS_LEN	8
 

@@ -46,7 +46,7 @@
 			label = "user-led";
 			default-state = "on";
 			gpios = <&gpio0 RK_PD3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			pinctrl-names = "default";
 			pinctrl-0 = <&user_led_enable_h>;
 			retain-state-suspended;

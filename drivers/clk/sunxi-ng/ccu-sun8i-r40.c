@@ -3,11 +3,11 @@
  * Copyright (c) 2017 Icenowy Zheng <icenowy@aosc.io>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #include "ccu_common.h"
 #include "ccu_reset.h"

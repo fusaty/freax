@@ -2,19 +2,19 @@
 /*
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/syscore_ops.h>
+#include <freax/amba/bus.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/uaccess.h>
+#include <freax/termios.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

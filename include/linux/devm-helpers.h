@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef __LINUX_DEVM_HELPERS_H
-#define __LINUX_DEVM_HELPERS_H
+#ifndef __freax_DEVM_HELPERS_H
+#define __freax_DEVM_HELPERS_H
 
 /*
  * Functions which do automatically cancel operations or release resources upon
@@ -23,8 +23,8 @@
  * already ran.
  */
 
-#include <linux/device.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
 
 static inline void devm_delayed_work_drop(void *res)
 {

@@ -3,7 +3,7 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "hfi.h"
 #include "common.h"
 #include "eprom.h"

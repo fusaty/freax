@@ -9,18 +9,18 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/hyperv.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/set_memory.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/hyperv.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/set_memory.h>
 #include <asm/mshyperv.h>
 
 #include "hyperv_vmbus.h"
@@ -48,7 +48,7 @@ EXPORT_SYMBOL_GPL(vmbus_proto_version);
 /*
  * Table of VMBus versions listed from newest to oldest.
  * VERSION_WIN7 and VERSION_WS2008 are no longer supported in
- * Linux guests and are not listed.
+ * freax guests and are not listed.
  */
 static __u32 vmbus_versions[] = {
 	VERSION_WIN10_V5_3,

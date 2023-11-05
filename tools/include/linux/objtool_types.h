@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_OBJTOOL_TYPES_H
-#define _LINUX_OBJTOOL_TYPES_H
+#ifndef _freax_OBJTOOL_TYPES_H
+#define _freax_OBJTOOL_TYPES_H
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * This struct is used by asm and inline asm code to manually annotate the
@@ -54,4 +54,4 @@ struct unwind_hint {
 #define UNWIND_HINT_TYPE_SAVE		6
 #define UNWIND_HINT_TYPE_RESTORE	7
 
-#endif /* _LINUX_OBJTOOL_TYPES_H */
+#endif /* _freax_OBJTOOL_TYPES_H */

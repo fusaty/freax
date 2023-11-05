@@ -18,16 +18,16 @@
  *		 2001-2004 Juergen Stuber <starblue@users.sourceforge.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
-#include <linux/uaccess.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
+#include <freax/uaccess.h>
+#include <freax/input.h>
+#include <freax/usb.h>
+#include <freax/poll.h>
 
 /* Define these values to match your devices */
 #define USB_VENDOR_ID_LD		0x0f11	/* USB Vendor ID of LD Didactic GmbH */

@@ -4,8 +4,8 @@
 * Copyright (C) 2012 Texas Instruments
 */
 
-#ifndef __LINUX_LM3639_H
-#define __LINUX_LM3639_H
+#ifndef __freax_LM3639_H
+#define __freax_LM3639_H
 
 #define LM3639_NAME "lm3639_bl"
 
@@ -62,4 +62,4 @@ struct lm3639_platform_data {
 	void (*pwm_set_intensity) (int brightness, int max_brightness);
 	int (*pwm_get_intensity) (void);
 };
-#endif /* __LINUX_LM3639_H */
+#endif /* __freax_LM3639_H */

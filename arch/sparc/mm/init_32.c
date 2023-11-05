@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/mm/init.c
+ *  freax/arch/sparc/mm/init.c
  *
  *  Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1995 Eddie C. Dost (ecd@skynet.be)
@@ -8,24 +8,24 @@
  *  Copyright (C) 2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/poison.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/initrd.h>
+#include <freax/init.h>
+#include <freax/highmem.h>
+#include <freax/memblock.h>
+#include <freax/pagemap.h>
+#include <freax/poison.h>
+#include <freax/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/page.h>
@@ -254,7 +254,7 @@ void __init mem_init(void)
 		       PKMAP_BASE,
 		       (unsigned long)PKMAP_BASE+LAST_PKMAP*PAGE_SIZE,
 		       FIXADDR_START);
-		prom_printf("Please mail sparclinux@vger.kernel.org.\n");
+		prom_printf("Please mail sparcfreax@vger.kernel.org.\n");
 		prom_halt();
 	}
 

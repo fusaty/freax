@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/signalfd.h
+ *  include/freax/signalfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
  */
-#ifndef _LINUX_SIGNALFD_H
-#define _LINUX_SIGNALFD_H
+#ifndef _freax_SIGNALFD_H
+#define _freax_SIGNALFD_H
 
-#include <uapi/linux/signalfd.h>
-#include <linux/sched/signal.h>
+#include <uapi/freax/signalfd.h>
+#include <freax/sched/signal.h>
 
 #ifdef CONFIG_SIGNALFD
 
@@ -32,4 +32,4 @@ static inline void signalfd_cleanup(struct sighand_struct *sighand) { }
 
 #endif /* CONFIG_SIGNALFD */
 
-#endif /* _LINUX_SIGNALFD_H */
+#endif /* _freax_SIGNALFD_H */

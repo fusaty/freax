@@ -6,15 +6,15 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/max8925.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/mfd/max8925.h>
 
 /* registers in GPM */
 #define MAX8925_OUT5VEN			0x54

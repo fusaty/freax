@@ -123,4 +123,4 @@ struct emif_platform_data {
 };
 #endif /* __ASSEMBLY__ */
 
-#endif /* __LINUX_EMIF_H */
+#endif /* __freax_EMIF_H */

@@ -5,18 +5,18 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/sched/mm.h>
-#include <linux/prefetch.h>
-#include <linux/kthread.h>
-#include <linux/swap.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
-#include <linux/sched/signal.h>
-#include <linux/random.h>
+#include <freax/fs.h>
+#include <freax/f2fs_fs.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/sched/mm.h>
+#include <freax/prefetch.h>
+#include <freax/kthread.h>
+#include <freax/swap.h>
+#include <freax/timer.h>
+#include <freax/freezer.h>
+#include <freax/sched/signal.h>
+#include <freax/random.h>
 
 #include "f2fs.h"
 #include "segment.h"

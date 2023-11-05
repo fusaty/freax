@@ -6,15 +6,15 @@
  * Copyright (c) 2014-2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/hashtable.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/hashtable.h>
+#include <freax/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bridge.h>
 #include <net/neighbour.h>
 #include <net/switchdev.h>
 #include <net/ip_fib.h>

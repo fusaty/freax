@@ -3,7 +3,7 @@
  * Copyright (C) 2016 IBM Corporation
  *
  * Authors:
- *      Nayna Jain <nayna@linux.vnet.ibm.com>
+ *      Nayna Jain <nayna@freax.vnet.ibm.com>
  *
  * Access to TPM 2.0 event log as written by Firmware.
  * It assumes that writer of event log has followed TCG Specification
@@ -12,12 +12,12 @@
  * content.
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tpm_eventlog.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/security.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/tpm_eventlog.h>
 
 #include "../tpm.h"
 #include "common.h"

@@ -2,7 +2,7 @@
  *
  * include/asm-sh/flat.h
  *
- * uClinux flat-format executables
+ * uCfreax flat-format executables
  *
  * Copyright (C) 2003  Paul Mundt
  */

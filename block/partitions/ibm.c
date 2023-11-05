@@ -2,19 +2,19 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *                  Volker Sameske <sameske@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2012
  */
 
-#include <linux/buffer_head.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <freax/buffer_head.h>
+#include <freax/hdreg.h>
+#include <freax/slab.h>
 #include <asm/dasd.h>
 #include <asm/ebcdic.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/vtoc.h>
-#include <linux/module.h>
-#include <linux/dasd_mod.h>
+#include <freax/module.h>
+#include <freax/dasd_mod.h>
 
 #include "check.h"
 

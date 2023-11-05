@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mmc/card.h
+ *  freax/include/freax/mmc/card.h
  *
  *  Card driver specific definitions.
  */
-#ifndef LINUX_MMC_CARD_H
-#define LINUX_MMC_CARD_H
+#ifndef freax_MMC_CARD_H
+#define freax_MMC_CARD_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
 struct mmc_cid {
 	unsigned int		manfid;
@@ -358,4 +358,4 @@ bool mmc_card_is_blockaddr(struct mmc_card *card);
 #define mmc_card_sdio(c)	((c)->type == MMC_TYPE_SDIO)
 #define mmc_card_sd_combo(c)	((c)->type == MMC_TYPE_SD_COMBO)
 
-#endif /* LINUX_MMC_CARD_H */
+#endif /* freax_MMC_CARD_H */

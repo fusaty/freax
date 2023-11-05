@@ -2,7 +2,7 @@
 /*
  * OpenRISC asm-offsets.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -19,18 +19,18 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/thread_info.h>
+#include <freax/kbuild.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

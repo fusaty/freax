@@ -3,24 +3,24 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
 
-#include <linux/iio/common/inv_sensors_timestamp.h>
-#include <linux/iio/iio.h>
+#include <freax/iio/common/inv_sensors_timestamp.h>
+#include <freax/iio/iio.h>
 
 #include "inv_mpu_iio.h"
 #include "inv_mpu_magn.h"

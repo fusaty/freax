@@ -13,35 +13,35 @@
  * Copyright (C) 2002, 2006, 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/circ_buf.h>
+#include <freax/serial.h>
+#include <freax/sysrq.h>
+#include <freax/console.h>
+#include <freax/spinlock.h>
 #ifdef CONFIG_SERIO
-#include <linux/serio.h>
+#include <freax/serio.h>
 #endif
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 #include <asm/setup.h>
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <freax/serial_core.h>
+#include <freax/sunserialcore.h>
 
 #include "sunzilog.h"
 
@@ -809,7 +809,7 @@ static int sunzilog_startup(struct uart_port *port)
 /*
  * The test for ZS_IS_CONS is explained by the following e-mail:
  *****
- * From: Russell King <rmk@arm.linux.org.uk>
+ * From: Russell King <rmk@arm.freax.org.uk>
  * Date: Sun, 8 Dec 2002 10:18:38 +0000
  *
  * On Sun, Dec 08, 2002 at 02:43:36AM -0500, Pete Zaitcev wrote:

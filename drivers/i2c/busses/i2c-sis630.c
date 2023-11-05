@@ -28,14 +28,14 @@
    Note: we assume there can only be one device, with one SMBus interface.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 /* SIS964 id is defined here as we are the only file using it */
 #define PCI_DEVICE_ID_SI_964	0x0964

@@ -3,19 +3,19 @@
  * SCSI RDMA Protocol lib functions
  *
  * Copyright (C) 2006 FUJITA Tomonori <tomof@acm.org>
- * Copyright (C) 2016 Bryant G. Ly <bryantly@linux.vnet.ibm.com> IBM Corp.
+ * Copyright (C) 2016 Bryant G. Ly <bryantly@freax.vnet.ibm.com> IBM Corp.
  *
  ***********************************************************************/
 
 #define pr_fmt(fmt)	"libsrp: " fmt
 
-#include <linux/printk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <freax/printk.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/kfifo.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
 #include <scsi/srp.h>
 #include <target/target_core_base.h>
 #include "libsrp.h"

@@ -9,7 +9,7 @@
 /*
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	KONEPLUS_SIZE_ACTUAL_PROFILE = 0x03,

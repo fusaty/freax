@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux multi-function-device driver (MFD) for the integrated peripherals
+ * freax multi-function-device driver (MFD) for the integrated peripherals
  * of the VIA VX855 chipset
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
@@ -9,12 +9,12 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/mfd/core.h>
 
 /* offset into pci config space indicating the 16bit register containing
  * the power management IO space base */

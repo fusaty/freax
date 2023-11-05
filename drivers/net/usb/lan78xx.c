@@ -2,32 +2,32 @@
 /*
  * Copyright (C) 2015 Microchip Technology
  */
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
-#include <linux/uaccess.h>
-#include <linux/linkmode.h>
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/usb.h>
+#include <freax/crc32.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/if_vlan.h>
+#include <freax/uaccess.h>
+#include <freax/linkmode.h>
+#include <freax/list.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
 #include <net/ip6_checksum.h>
 #include <net/vxlan.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/microchipphy.h>
-#include <linux/phy_fixed.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/microchipphy.h>
+#include <freax/phy_fixed.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
 #include "lan78xx.h"
 
 #define DRIVER_AUTHOR	"WOOJUNG HUH <woojung.huh@microchip.com>"

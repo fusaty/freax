@@ -8,22 +8,22 @@
  * the Free Software Foundation.
  */
 
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/stringify.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/linkmode.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/utsname.h>
-#include <linux/time.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/timecounter.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/stringify.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/linkmode.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/firmware.h>
+#include <freax/utsname.h>
+#include <freax/time.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/net_tstamp.h>
+#include <freax/timecounter.h>
 #include <net/netlink.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"
@@ -1723,7 +1723,7 @@ bnxt_get_link_mode(struct bnxt_link_info *link_info)
 	if (sig_mode >= BNXT_SIG_MODE_MAX)
 		return BNXT_LINK_MODE_UNKNOWN;
 
-	/* Note ETHTOOL_LINK_MODE_10baseT_Half_BIT == 0 is a legal Linux
+	/* Note ETHTOOL_LINK_MODE_10baseT_Half_BIT == 0 is a legal freax
 	 * link mode, but since no such devices exist, the zeroes in the
 	 * map can be conveniently used to represent unknown link modes.
 	 */

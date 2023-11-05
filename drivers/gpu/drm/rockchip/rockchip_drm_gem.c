@@ -4,9 +4,9 @@
  * Author:Mark Yao <mark.yao@rock-chips.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/iommu.h>
-#include <linux/vmalloc.h>
+#include <freax/dma-buf.h>
+#include <freax/iommu.h>
+#include <freax/vmalloc.h>
 
 #include <drm/drm.h>
 #include <drm/drm_fb_helper.h>

@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s, %d: " fmt, __func__, __LINE__
 
-#include <linux/bcd.h>
-#include <linux/crc32.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/printk.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/types.h>
+#include <freax/bcd.h>
+#include <freax/crc32.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/printk.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/time.h>
+#include <freax/types.h>
 
 #include "vidtv_common.h"
 #include "vidtv_psi.h"

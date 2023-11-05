@@ -6,15 +6,15 @@
 #ifndef _COUNTER_H_
 #define _COUNTER_H_
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <uapi/linux/counter.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/kfifo.h>
+#include <freax/mutex.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <uapi/freax/counter.h>
 
 struct counter_device;
 struct counter_count;

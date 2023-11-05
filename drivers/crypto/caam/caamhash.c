@@ -67,11 +67,11 @@
 #include "caamhash_desc.h"
 #include <crypto/internal/engine.h>
 #include <crypto/internal/hash.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #define CAAM_CRA_PRIORITY		3000
 

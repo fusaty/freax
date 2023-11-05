@@ -7,25 +7,25 @@
  * Author: Brijesh Singh <brijesh.singh@amd.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/ccp.h>
-#include <linux/firmware.h>
-#include <linux/gfp.h>
-#include <linux/cpufeature.h>
-#include <linux/fs.h>
-#include <linux/fs_struct.h>
-#include <linux/psp.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/hw_random.h>
+#include <freax/ccp.h>
+#include <freax/firmware.h>
+#include <freax/gfp.h>
+#include <freax/cpufeature.h>
+#include <freax/fs.h>
+#include <freax/fs_struct.h>
+#include <freax/psp.h>
 
 #include <asm/smp.h>
 #include <asm/cacheflush.h>

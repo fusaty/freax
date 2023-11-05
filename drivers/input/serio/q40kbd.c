@@ -7,19 +7,19 @@
  */
 
 /*
- * Q40 PS/2 keyboard controller driver for Linux/m68k
+ * Q40 PS/2 keyboard controller driver for freax/m68k
  */
 
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/serio.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/q40_master.h>
 #include <asm/irq.h>
 #include <asm/q40ints.h>

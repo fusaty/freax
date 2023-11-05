@@ -8,10 +8,10 @@
  * Copyright (C) 2017 Cadence Design Systems Inc.
  */
 
-#include <linux/memblock.h>
-#include <linux/init_task.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
+#include <freax/memblock.h>
+#include <freax/init_task.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
 #include <asm/initialize_mmu.h>
 #include <asm/tlbflush.h>
 

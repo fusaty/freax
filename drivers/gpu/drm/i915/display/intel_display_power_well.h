@@ -5,7 +5,7 @@
 #ifndef __INTEL_DISPLAY_POWER_WELL_H__
 #define __INTEL_DISPLAY_POWER_WELL_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_display_power.h"
 #include "intel_dpio_phy.h"

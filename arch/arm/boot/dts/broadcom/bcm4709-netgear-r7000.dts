@@ -31,7 +31,7 @@
 		led-power-white {
 			label = "bcm53xx:white:power";
 			gpios = <&chipcommon 2 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-power-amber {
@@ -75,19 +75,19 @@
 
 		button-wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 4 GPIO_ACTIVE_LOW>;
 		};
 
 		button-rfkill {
 			label = "WiFi";
-			linux,code = <KEY_RFKILL>;
+			freax,code = <KEY_RFKILL>;
 			gpios = <&chipcommon 5 GPIO_ACTIVE_LOW>;
 		};
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 6 GPIO_ACTIVE_LOW>;
 		};
 	};

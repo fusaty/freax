@@ -11,7 +11,7 @@
 #ifndef _NILFS_SYSFS_H
 #define _NILFS_SYSFS_H
 
-#include <linux/sysfs.h>
+#include <freax/sysfs.h>
 
 #define NILFS_ROOT_GROUP_NAME	"nilfs2"
 

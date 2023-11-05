@@ -5,19 +5,19 @@
  * Copyright 2022 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/notifier.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/notifier.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/units.h>
 
 #include <asm/unaligned.h>
 

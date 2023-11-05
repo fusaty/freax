@@ -13,12 +13,12 @@
  *                     Alan Cox <alan@lxorguk.ukuu.org.uk> (Borrowed comments 8-))
  */
 
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/net.h>
-#include <linux/signal.h>
-#include <linux/tcp.h>
-#include <linux/wait.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/net.h>
+#include <freax/signal.h>
+#include <freax/tcp.h>
+#include <freax/wait.h>
 #include <net/sock.h>
 
 /**

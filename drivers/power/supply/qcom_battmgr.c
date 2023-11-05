@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/power_supply.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/soc/qcom/pmic_glink.h>
-#include <linux/math.h>
-#include <linux/units.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_device.h>
+#include <freax/power_supply.h>
+#include <freax/soc/qcom/pdr.h>
+#include <freax/soc/qcom/pmic_glink.h>
+#include <freax/math.h>
+#include <freax/units.h>
 
 #define BATTMGR_CHEMISTRY_LEN	4
 #define BATTMGR_STRING_LEN	128

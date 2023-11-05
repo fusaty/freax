@@ -2,8 +2,8 @@
 /*
  * Resolve DNS hostnames into valid ip addresses
  */
-#ifndef __LINUX_FS_NFS_DNS_RESOLVE_H
-#define __LINUX_FS_NFS_DNS_RESOLVE_H
+#ifndef __freax_FS_NFS_DNS_RESOLVE_H
+#define __freax_FS_NFS_DNS_RESOLVE_H
 
 #define NFS_DNS_HOSTNAME_MAXLEN	(128)
 

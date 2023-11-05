@@ -2,13 +2,13 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
+#include <freax/pci-acpi.h>
+#include <freax/pci-ecam.h>
 
 #include <asm/pci.h>
 #include <asm/numa.h>

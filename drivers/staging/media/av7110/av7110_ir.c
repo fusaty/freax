@@ -7,7 +7,7 @@
  * Copyright (C) 2019 Sean Young <sean@mess.org>
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <media/rc-core.h>
 
 #include "av7110.h"

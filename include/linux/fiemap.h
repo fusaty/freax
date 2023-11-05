@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FIEMAP_H
-#define _LINUX_FIEMAP_H 1
+#ifndef _freax_FIEMAP_H
+#define _freax_FIEMAP_H 1
 
-#include <uapi/linux/fiemap.h>
-#include <linux/fs.h>
+#include <uapi/freax/fiemap.h>
+#include <freax/fs.h>
 
 struct fiemap_extent_info {
 	unsigned int fi_flags;		/* Flags as passed from user */
@@ -18,4 +18,4 @@ int fiemap_prep(struct inode *inode, struct fiemap_extent_info *fieinfo,
 int fiemap_fill_next_extent(struct fiemap_extent_info *info, u64 logical,
 			    u64 phys, u64 len, u32 flags);
 
-#endif /* _LINUX_FIEMAP_H 1 */
+#endif /* _freax_FIEMAP_H 1 */

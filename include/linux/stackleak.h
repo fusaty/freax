@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STACKLEAK_H
-#define _LINUX_STACKLEAK_H
+#ifndef _freax_STACKLEAK_H
+#define _freax_STACKLEAK_H
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 
 /*
  * Check that the poison value points to the unused hole in the

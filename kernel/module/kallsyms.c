@@ -5,11 +5,11 @@
  * Copyright (C) 2010 Rusty Russell
  */
 
-#include <linux/module.h>
-#include <linux/module_symbol.h>
-#include <linux/kallsyms.h>
-#include <linux/buildid.h>
-#include <linux/bsearch.h>
+#include <freax/module.h>
+#include <freax/module_symbol.h>
+#include <freax/kallsyms.h>
+#include <freax/buildid.h>
+#include <freax/bsearch.h>
 #include "internal.h"
 
 /* Lookup exported symbol in given range of kernel_symbols */
@@ -107,7 +107,7 @@ static bool is_core_symbol(const Elf_Sym *src, const Elf_Shdr *sechdrs,
  * We only allocate and copy the strings needed by the parts of symtab
  * we keep.  This is simple, but has the effect of making multiple
  * copies of duplicates.  We could be more sophisticated, see
- * linux-kernel thread starting with
+ * freax-kernel thread starting with
  * <73defb5e4bca04a6431392cc341112b1@localhost>.
  */
 void layout_symtab(struct module *mod, struct load_info *info)

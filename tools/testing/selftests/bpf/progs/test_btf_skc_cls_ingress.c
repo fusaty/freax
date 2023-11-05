@@ -4,12 +4,12 @@
 #include <string.h>
 #include <errno.h>
 #include <netinet/in.h>
-#include <linux/stddef.h>
-#include <linux/bpf.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/if_ether.h>
-#include <linux/pkt_cls.h>
+#include <freax/stddef.h>
+#include <freax/bpf.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/if_ether.h>
+#include <freax/pkt_cls.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

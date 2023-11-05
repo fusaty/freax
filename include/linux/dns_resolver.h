@@ -21,14 +21,14 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#ifndef _LINUX_DNS_RESOLVER_H
-#define _LINUX_DNS_RESOLVER_H
+#ifndef _freax_DNS_RESOLVER_H
+#define _freax_DNS_RESOLVER_H
 
-#include <uapi/linux/dns_resolver.h>
+#include <uapi/freax/dns_resolver.h>
 
 struct net;
 extern int dns_query(struct net *net, const char *type, const char *name, size_t namelen,
 		     const char *options, char **_result, time64_t *_expiry,
 		     bool invalidate);
 
-#endif /* _LINUX_DNS_RESOLVER_H */
+#endif /* _freax_DNS_RESOLVER_H */

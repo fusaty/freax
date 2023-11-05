@@ -9,16 +9,16 @@
  *  Copyright (c) 2010-2011 Ericsson AB
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dln2.h>
-#include <linux/rculist.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/dln2.h>
+#include <freax/rculist.h>
 
 struct dln2_header {
 	__le16 size;

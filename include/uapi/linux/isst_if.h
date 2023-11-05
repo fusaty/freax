@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Intel Speed Select Interface: OS to hardware Interface
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
  */
 
 #ifndef __ISST_IF_H
 #define __ISST_IF_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct isst_if_platform_info - Define platform information
@@ -38,10 +38,10 @@ struct isst_if_platform_info {
 
 /**
  * struct isst_if_cpu_map - CPU mapping between logical and physical CPU
- * @logical_cpu:	Linux logical CPU number
+ * @logical_cpu:	freax logical CPU number
  * @physical_cpu:	PUNIT CPU number
  *
- * Used to convert from Linux logical CPU to PUNIT CPU numbering scheme.
+ * Used to convert from freax logical CPU to PUNIT CPU numbering scheme.
  * The PUNIT CPU number is different than APIC ID based CPU numbering.
  */
 struct isst_if_cpu_map {
@@ -227,7 +227,7 @@ struct isst_if_clos_assoc {
  * @cmd_count:	Number of cmds (cpus) in this request
  * @get_set:	Request is for get or set
  * @punit_cpu_map: Set to 1 if the CPU number is punit numbering not
- *		   Linux CPU number
+ *		   freax CPU number
  *
  * Structure used to get/set associate CPUs to clos using IOCTL
  * ISST_IF_CLOS_ASSOC.
@@ -381,7 +381,7 @@ struct isst_perf_level_data_info {
  * @power_domain:	Power Domain id
  * @level:	SST-PP level for which caller wants to get information
  * @punit_cpu_map: Set to 1 if the CPU number is punit numbering not
- *		   Linux CPU number. If 0 CPU buffer is copied to user space
+ *		   freax CPU number. If 0 CPU buffer is copied to user space
  *		   supplied cpu_buffer of size cpu_buffer_size. Punit
  *		   cpu mask is copied to "mask" field.
  * @mask:	cpu mask for this PP level (punit CPU numbering)

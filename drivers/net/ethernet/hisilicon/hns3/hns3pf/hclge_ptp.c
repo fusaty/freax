@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2021 Hisilicon Limited.
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include "hclge_main.h"
 #include "hnae3.h"
 

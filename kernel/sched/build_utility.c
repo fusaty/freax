@@ -9,43 +9,43 @@
  *   coalescing source files to amortize header inclusion
  *   cost. )
  */
-#include <linux/sched/clock.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/rseq_api.h>
-#include <linux/sched/task_stack.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/cputime.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/nohz.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/rseq_api.h>
+#include <freax/sched/task_stack.h>
 
-#include <linux/cpufreq.h>
-#include <linux/cpumask_api.h>
-#include <linux/cpuset.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/energy_model.h>
-#include <linux/hashtable_api.h>
-#include <linux/irq.h>
-#include <linux/kobject_api.h>
-#include <linux/membarrier.h>
-#include <linux/mempolicy.h>
-#include <linux/nmi.h>
-#include <linux/nospec.h>
-#include <linux/proc_fs.h>
-#include <linux/psi.h>
-#include <linux/ptrace_api.h>
-#include <linux/sched_clock.h>
-#include <linux/security.h>
-#include <linux/spinlock_api.h>
-#include <linux/swait_api.h>
-#include <linux/timex.h>
-#include <linux/utsname.h>
-#include <linux/wait_api.h>
-#include <linux/workqueue_api.h>
+#include <freax/cpufreq.h>
+#include <freax/cpumask_api.h>
+#include <freax/cpuset.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/energy_model.h>
+#include <freax/hashtable_api.h>
+#include <freax/irq.h>
+#include <freax/kobject_api.h>
+#include <freax/membarrier.h>
+#include <freax/mempolicy.h>
+#include <freax/nmi.h>
+#include <freax/nospec.h>
+#include <freax/proc_fs.h>
+#include <freax/psi.h>
+#include <freax/ptrace_api.h>
+#include <freax/sched_clock.h>
+#include <freax/security.h>
+#include <freax/spinlock_api.h>
+#include <freax/swait_api.h>
+#include <freax/timex.h>
+#include <freax/utsname.h>
+#include <freax/wait_api.h>
+#include <freax/workqueue_api.h>
 
-#include <uapi/linux/prctl.h>
-#include <uapi/linux/sched/types.h>
+#include <uapi/freax/prctl.h>
+#include <uapi/freax/sched/types.h>
 
 #include <asm/switch_to.h>
 

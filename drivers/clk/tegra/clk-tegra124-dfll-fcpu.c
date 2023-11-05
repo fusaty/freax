@@ -8,13 +8,13 @@
  * Paul Walmsley <pwalmsley@nvidia.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
 #include <soc/tegra/fuse.h>
 
 #include "clk.h"

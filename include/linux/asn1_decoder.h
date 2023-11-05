@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ASN1_DECODER_H
-#define _LINUX_ASN1_DECODER_H
+#ifndef _freax_ASN1_DECODER_H
+#define _freax_ASN1_DECODER_H
 
-#include <linux/asn1.h>
+#include <freax/asn1.h>
 
 struct asn1_decoder;
 
@@ -17,4 +17,4 @@ extern int asn1_ber_decoder(const struct asn1_decoder *decoder,
 			    const unsigned char *data,
 			    size_t datalen);
 
-#endif /* _LINUX_ASN1_DECODER_H */
+#endif /* _freax_ASN1_DECODER_H */

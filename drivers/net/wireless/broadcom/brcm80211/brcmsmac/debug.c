@@ -14,13 +14,13 @@
  * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/debugfs.h>
-#include <linux/if_ether.h>
-#include <linux/if.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/module.h>
+#include <freax/debugfs.h>
+#include <freax/if_ether.h>
+#include <freax/if.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/ieee80211.h>
+#include <freax/module.h>
 #include <net/mac80211.h>
 
 #include <defs.h>

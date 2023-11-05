@@ -3,25 +3,25 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2008 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2008 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
 
 #define pr_fmt(fmt) "irq-mips-gic: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/clocksource.h>
-#include <linux/cpuhotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/clocksource.h>
+#include <freax/cpuhotplug.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
+#include <freax/percpu.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
 
 #include <asm/mips-cps.h>
 #include <asm/setup.h>

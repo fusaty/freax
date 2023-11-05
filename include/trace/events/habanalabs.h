@@ -11,7 +11,7 @@
 #if !defined(_TRACE_HABANALABS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HABANALABS_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(habanalabs_mmu_template,
 	TP_PROTO(struct device *dev, u64 virt_addr, u64 phys_addr, u32 page_size, bool flush_pte),

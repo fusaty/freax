@@ -5,10 +5,10 @@
  * Paul Walmsley
  */
 
-#ifndef __LINUX_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
-#define __LINUX_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
+#ifndef __freax_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
+#define __freax_CLK_ANALOGBITS_WRPLL_CLN28HPC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* DIVQ_VALUES: number of valid DIVQ values */
 #define DIVQ_VALUES				6
@@ -76,4 +76,4 @@ unsigned int wrpll_calc_max_lock_us(const struct wrpll_cfg *c);
 unsigned long wrpll_calc_output_rate(const struct wrpll_cfg *c,
 				     unsigned long parent_rate);
 
-#endif /* __LINUX_CLK_ANALOGBITS_WRPLL_CLN28HPC_H */
+#endif /* __freax_CLK_ANALOGBITS_WRPLL_CLN28HPC_H */

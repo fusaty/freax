@@ -6,8 +6,8 @@
  * Copyright (C) 2021 Matteo Croce
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/module.h>
 
 /* Minimum size for a word copy to be convenient */
 #define BYTES_LONG	sizeof(long)

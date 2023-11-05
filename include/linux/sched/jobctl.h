@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_JOBCTL_H
-#define _LINUX_SCHED_JOBCTL_H
+#ifndef _freax_SCHED_JOBCTL_H
+#define _freax_SCHED_JOBCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct task_struct;
 
@@ -44,4 +44,4 @@ extern bool task_set_jobctl_pending(struct task_struct *task, unsigned long mask
 extern void task_clear_jobctl_trapping(struct task_struct *task);
 extern void task_clear_jobctl_pending(struct task_struct *task, unsigned long mask);
 
-#endif /* _LINUX_SCHED_JOBCTL_H */
+#endif /* _freax_SCHED_JOBCTL_H */

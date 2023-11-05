@@ -3,15 +3,15 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (c) 2016-2021 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/fscrypt.h>
-#include <linux/pagemap.h>
-#include <linux/iomap.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
-#include <linux/task_io_accounting_ops.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/fs.h>
+#include <freax/fscrypt.h>
+#include <freax/pagemap.h>
+#include <freax/iomap.h>
+#include <freax/backing-dev.h>
+#include <freax/uio.h>
+#include <freax/task_io_accounting_ops.h>
 #include "trace.h"
 
 #include "../internal.h"

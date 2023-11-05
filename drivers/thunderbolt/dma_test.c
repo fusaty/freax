@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2020, Intel Corporation
  * Authors: Isaac Hazan <isaac.hazan@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/thunderbolt.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
+#include <freax/thunderbolt.h>
 
 #define DMA_TEST_TX_RING_SIZE		64
 #define DMA_TEST_RX_RING_SIZE		256
@@ -755,6 +755,6 @@ static void __exit dma_test_exit(void)
 module_exit(dma_test_exit);
 
 MODULE_AUTHOR("Isaac Hazan <isaac.hazan@intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_DESCRIPTION("Thunderbolt/USB4 DMA traffic test driver");
 MODULE_LICENSE("GPL v2");

@@ -24,11 +24,11 @@ main: $(OFILES)
 
 $(OFILES): include
 
-include: ../../../include/linux/memblock.h ../../include/linux/*.h \
+include: ../../../include/freax/memblock.h ../../include/freax/*.h \
 	../../include/asm/*.h
 
-	@mkdir -p linux
-	test -L linux/memblock.h || ln -s ../../../../include/linux/memblock.h linux/memblock.h
+	@mkdir -p freax
+	test -L freax/memblock.h || ln -s ../../../../include/freax/memblock.h freax/memblock.h
 	test -L asm/asm.h || ln -s ../../../arch/x86/include/asm/asm.h asm/asm.h
 	test -L asm/cmpxchg.h || ln -s ../../../arch/x86/include/asm/cmpxchg.h asm/cmpxchg.h
 
@@ -36,7 +36,7 @@ memblock.c: $(EXTR_SRC)
 	test -L memblock.c || ln -s $(EXTR_SRC) memblock.c
 
 clean:
-	$(RM) $(TARGETS) $(OFILES) linux/memblock.h memblock.c asm/asm.h asm/cmpxchg.h
+	$(RM) $(TARGETS) $(OFILES) freax/memblock.h memblock.c asm/asm.h asm/cmpxchg.h
 
 help:
 	@echo  'Memblock simulator'

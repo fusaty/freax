@@ -6,11 +6,11 @@
  * Author: Mimi Zohar <zohar@us.ibm.com>
  */
 
-#ifndef _LINUX_EVM_H
-#define _LINUX_EVM_H
+#ifndef _freax_EVM_H
+#define _freax_EVM_H
 
-#include <linux/integrity.h>
-#include <linux/xattr.h>
+#include <freax/integrity.h>
+#include <freax/xattr.h>
 
 struct integrity_iint_cache;
 
@@ -184,4 +184,4 @@ static inline int evm_read_protected_xattrs(struct dentry *dentry, u8 *buffer,
 }
 
 #endif /* CONFIG_EVM */
-#endif /* LINUX_EVM_H */
+#endif /* freax_EVM_H */

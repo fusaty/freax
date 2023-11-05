@@ -6,21 +6,21 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/regulator.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/regulator.h>
+#include <freax/mfd/wm831x/pdata.h>
 
 #define WM831X_BUCKV_MAX_SELECTOR 0x68
 #define WM831X_BUCKP_MAX_SELECTOR 0x66

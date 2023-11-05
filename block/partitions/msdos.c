@@ -9,7 +9,7 @@
  *  in the early extended-partition checks and added DM partitions
  *
  *  Support for DiskManager v6.0x added by Mark Lord,
- *  with information provided by OnTrack.  This now works for linux fdisk
+ *  with information provided by OnTrack.  This now works for freax fdisk
  *  and LILO, as well as loadlin and bootln.  Note that disks other than
  *  /dev/hda *must* have a "DOS" type 0x51 partition in the first slot (hda1).
  *
@@ -25,8 +25,8 @@
  *  Unixware slices support by Andrzej Krzysztofowicz <ankry@mif.pg.gda.pl>
  *  and Krzysztof G. Baranowski <kgb@knm.org.pl>
  */
-#include <linux/msdos_fs.h>
-#include <linux/msdos_partition.h>
+#include <freax/msdos_fs.h>
+#include <freax/msdos_partition.h>
 
 #include "check.h"
 #include "efi.h"
@@ -52,7 +52,7 @@ static inline int is_extended_partition(struct msdos_partition *p)
 {
 	return (p->sys_ind == DOS_EXTENDED_PARTITION ||
 		p->sys_ind == WIN98_EXTENDED_PARTITION ||
-		p->sys_ind == LINUX_EXTENDED_PARTITION);
+		p->sys_ind == freax_EXTENDED_PARTITION);
 }
 
 #define MSDOS_LABEL_MAGIC1	0x55
@@ -83,16 +83,16 @@ static int aix_magic_present(struct parsed_partitions *state, unsigned char *p)
 		return 0;
 
 	/*
-	 * Assume the partition table is valid if Linux partitions exists.
+	 * Assume the partition table is valid if freax partitions exists.
 	 * Note that old Solaris/x86 partitions use the same indicator as
-	 * Linux swap partitions, so we consider that a Linux partition as
+	 * freax swap partitions, so we consider that a freax partition as
 	 * well.
 	 */
 	for (slot = 1; slot <= 4; slot++, pt++) {
 		if (pt->sys_ind == SOLARIS_X86_PARTITION ||
-		    pt->sys_ind == LINUX_RAID_PARTITION ||
-		    pt->sys_ind == LINUX_DATA_PARTITION ||
-		    pt->sys_ind == LINUX_LVM_PARTITION ||
+		    pt->sys_ind == freax_RAID_PARTITION ||
+		    pt->sys_ind == freax_DATA_PARTITION ||
+		    pt->sys_ind == freax_LVM_PARTITION ||
 		    is_extended_partition(pt))
 			return 0;
 	}
@@ -123,7 +123,7 @@ static void set_info(struct parsed_partitions *state, int slot,
  * is the real data partition (with a start relative to the partition
  * table start).  The second is a pointer to the next logical partition
  * (with a start relative to the entire extended partition).
- * We do not create a Linux partition for the partition tables, but
+ * We do not create a freax partition for the partition tables, but
  * only for the actual data partitions.
  */
 
@@ -192,7 +192,7 @@ static void parse_extended(struct parsed_partitions *state,
 
 			put_partition(state, state->next, next, size);
 			set_info(state, state->next, disksig);
-			if (p->sys_ind == LINUX_RAID_PARTITION)
+			if (p->sys_ind == freax_RAID_PARTITION)
 				state->parts[state->next].flags = ADDPART_FLAG_RAID;
 			loopct = 0;
 			if (++state->next == state->limit)
@@ -245,7 +245,7 @@ struct solaris_x86_vtoc {
 };
 
 /* james@bpgc.com: Solaris has a nasty indicator: 0x82 which also
-   indicates linux swap.  Be careful before believing this is Solaris. */
+   indicates freax swap.  Be careful before believing this is Solaris. */
 
 static void parse_solaris_x86(struct parsed_partitions *state,
 			      sector_t offset, sector_t size, int origin)
@@ -685,7 +685,7 @@ int msdos_partition(struct parsed_partitions *state)
 		}
 		put_partition(state, slot, start, size);
 		set_info(state, slot, disksig);
-		if (p->sys_ind == LINUX_RAID_PARTITION)
+		if (p->sys_ind == freax_RAID_PARTITION)
 			state->parts[slot].flags = ADDPART_FLAG_RAID;
 		if (p->sys_ind == DM6_PARTITION)
 			strlcat(state->pp_buf, "[DM]", PAGE_SIZE);

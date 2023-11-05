@@ -6,7 +6,7 @@
 #ifndef __AMD_MANAGER_H
 #define __AMD_MANAGER_H
 
-#include <linux/soundwire/sdw_amd.h>
+#include <freax/soundwire/sdw_amd.h>
 
 #define SDW_MANAGER_REG_OFFSET				0xc00
 #define AMD_SDW_DEFAULT_ROWS				50

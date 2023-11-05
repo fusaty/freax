@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/capability.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/init.h>
+#include <freax/capability.h>
 
 #include <xen/xen.h>
 #include <xen/page.h>

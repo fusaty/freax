@@ -34,20 +34,20 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/file.h>
+#include <freax/cdev.h>
+#include <freax/anon_inodes.h>
+#include <freax/slab.h>
+#include <freax/sched/mm.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <rdma/ib.h>
 #include <rdma/uverbs_std_types.h>

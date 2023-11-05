@@ -1,34 +1,34 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#ifndef _LINUX_BPF_H
-#define _LINUX_BPF_H 1
+#ifndef _freax_BPF_H
+#define _freax_BPF_H 1
 
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/filter.h>
+#include <uapi/freax/bpf.h>
+#include <uapi/freax/filter.h>
 
-#include <linux/workqueue.h>
-#include <linux/file.h>
-#include <linux/percpu.h>
-#include <linux/err.h>
-#include <linux/rbtree_latch.h>
-#include <linux/numa.h>
-#include <linux/mm_types.h>
-#include <linux/wait.h>
-#include <linux/refcount.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/capability.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
-#include <linux/stddef.h>
-#include <linux/bpfptr.h>
-#include <linux/btf.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/static_call.h>
-#include <linux/memcontrol.h>
+#include <freax/workqueue.h>
+#include <freax/file.h>
+#include <freax/percpu.h>
+#include <freax/err.h>
+#include <freax/rbtree_latch.h>
+#include <freax/numa.h>
+#include <freax/mm_types.h>
+#include <freax/wait.h>
+#include <freax/refcount.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/kallsyms.h>
+#include <freax/capability.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/percpu-refcount.h>
+#include <freax/stddef.h>
+#include <freax/bpfptr.h>
+#include <freax/btf.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/static_call.h>
+#include <freax/memcontrol.h>
 
 struct bpf_verifier_env;
 struct bpf_verifier_log;
@@ -229,13 +229,13 @@ struct btf_record {
 	struct btf_field fields[];
 };
 
-/* Non-opaque version of bpf_rb_node in uapi/linux/bpf.h */
+/* Non-opaque version of bpf_rb_node in uapi/freax/bpf.h */
 struct bpf_rb_node_kern {
 	struct rb_node rb_node;
 	void *owner;
 } __attribute__((aligned(8)));
 
-/* Non-opaque version of bpf_list_node in uapi/linux/bpf.h */
+/* Non-opaque version of bpf_list_node in uapi/freax/bpf.h */
 struct bpf_list_node_kern {
 	struct list_head list_head;
 	void *owner;
@@ -261,7 +261,7 @@ struct bpf_map {
 	int numa_node;
 	u32 btf_key_type_id;
 	u32 btf_value_type_id;
-	u32 btf_vmlinux_value_type_id;
+	u32 btf_vmfreax_value_type_id;
 	struct btf *btf;
 #ifdef CONFIG_MEMCG_KMEM
 	struct obj_cgroup *objcg;
@@ -552,7 +552,7 @@ static inline bool bpf_map_offload_neutral(const struct bpf_map *map)
 
 static inline bool bpf_map_support_seq_show(const struct bpf_map *map)
 {
-	return (map->btf_value_type_id || map->btf_vmlinux_value_type_id) &&
+	return (map->btf_value_type_id || map->btf_vmfreax_value_type_id) &&
 		map->ops->map_seq_show_elem;
 }
 
@@ -2029,7 +2029,7 @@ extern const struct file_operations bpf_iter_fops;
 #define BPF_MAP_TYPE(_id, _ops) \
 	extern const struct bpf_map_ops _ops;
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <freax/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -2320,7 +2320,7 @@ int bpf_check(struct bpf_prog **fp, union bpf_attr *attr, bpfptr_t uattr, u32 ua
 void bpf_patch_call_args(struct bpf_insn *insn, u32 stack_depth);
 #endif
 
-struct btf *bpf_get_btf_vmlinux(void);
+struct btf *bpf_get_btf_vmfreax(void);
 
 /* Map specifics */
 struct xdp_frame;
@@ -3225,4 +3225,4 @@ static inline bool bpf_is_subprog(const struct bpf_prog *prog)
 	return prog->aux->func_idx != 0;
 }
 
-#endif /* _LINUX_BPF_H */
+#endif /* _freax_BPF_H */

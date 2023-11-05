@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mm/mmap.c
+ *  freax/arch/arm/mm/mmap.c
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/io.h>
-#include <linux/personality.h>
-#include <linux/random.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/shm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/io.h>
+#include <freax/personality.h>
+#include <freax/random.h>
 #include <asm/cachetype.h>
 
 #define COLOUR_ALIGN(addr,pgoff)		\

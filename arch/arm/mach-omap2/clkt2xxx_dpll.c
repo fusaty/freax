@@ -6,10 +6,10 @@
  * Paul Walmsley
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/clk.h>
+#include <freax/io.h>
 
 #include "clock.h"
 #include "cm2xxx.h"

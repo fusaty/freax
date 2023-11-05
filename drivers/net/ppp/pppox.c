@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/** -*- linux-c -*- ***********************************************************
- * Linux PPP over X/Ethernet (PPPoX/PPPoE) Sockets
+/** -*- freax-c -*- ***********************************************************
+ * freax PPP over X/Ethernet (PPPoX/PPPoE) Sockets
  *
  * PPPoX --- Generic PPP encapsulation socket family
  * PPPoE --- PPP over Ethernet (RFC 2516)
@@ -14,23 +14,23 @@
  * License:
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/init.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/kmod.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/compat.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/net.h>
+#include <freax/init.h>
+#include <freax/if_pppox.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/ppp_channel.h>
+#include <freax/kmod.h>
 
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static const struct pppox_proto *pppox_protos[PX_MAX_PROTO + 1];
 

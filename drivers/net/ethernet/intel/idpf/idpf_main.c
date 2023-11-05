@@ -4,7 +4,7 @@
 #include "idpf.h"
 #include "idpf_devids.h"
 
-#define DRV_SUMMARY	"Intel(R) Infrastructure Data Path Function Linux Driver"
+#define DRV_SUMMARY	"Intel(R) Infrastructure Data Path Function freax Driver"
 
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL");

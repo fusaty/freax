@@ -6,16 +6,16 @@
  * Copyright 2017 Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/clockchips.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 #include "timer-of.h"
 
 /* Timers registers */

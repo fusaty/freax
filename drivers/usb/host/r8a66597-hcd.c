@@ -10,21 +10,21 @@
  * Author : Yoshihiro Shimoda <yoshihiro.shimoda.uh@renesas.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
 #include <asm/cacheflush.h>
 
 #include "r8a66597.h"

@@ -11,14 +11,14 @@
  * Copyright 2007 Jiri Kosina, SUSE Labs.
  */
 
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/limits.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/compat.h>
-#include <linux/elf-randomize.h>
+#include <freax/personality.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/limits.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/compat.h>
+#include <freax/elf-randomize.h>
 #include <asm/elf.h>
 #include <asm/io.h>
 

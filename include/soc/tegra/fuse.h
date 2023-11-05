@@ -6,7 +6,7 @@
 #ifndef __SOC_TEGRA_FUSE_H__
 #define __SOC_TEGRA_FUSE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define TEGRA20		0x20
 #define TEGRA30		0x30

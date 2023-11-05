@@ -10,8 +10,8 @@
 
 #define pr_fmt(fmt) "SPEAr1310: " fmt
 
-#include <linux/amba/pl022.h>
-#include <linux/pata_arasan_cf_data.h>
+#include <freax/amba/pl022.h>
+#include <freax/pata_arasan_cf_data.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include "generic.h"

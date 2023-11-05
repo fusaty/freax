@@ -2,10 +2,10 @@
 #ifndef __ASM_SH_PUSH_SWITCH_H
 #define __ASM_SH_PUSH_SWITCH_H
 
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
 
 struct push_switch {
 	/* switch state */

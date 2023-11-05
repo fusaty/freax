@@ -5,7 +5,7 @@
  */
 
 #include <errno.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 __u32 invocations = 0;

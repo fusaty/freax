@@ -3,14 +3,14 @@
  *  Copyright IBM Corp. 2012
  *
  *  Author(s):
- *    Jan Glauber <jang@linux.vnet.ibm.com>
+ *    Jan Glauber <jang@freax.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
 #include <asm/pci_debug.h>
 #include <asm/pci_dma.h>
 #include <asm/sclp.h>

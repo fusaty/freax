@@ -14,9 +14,9 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_POWERDOMAIN_H
 #define __ARCH_ARM_MACH_OMAP2_POWERDOMAIN_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
 
 /* Powerdomain basic power states */
 #define PWRDM_POWER_OFF		0x0

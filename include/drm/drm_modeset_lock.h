@@ -24,9 +24,9 @@
 #ifndef DRM_MODESET_LOCK_H_
 #define DRM_MODESET_LOCK_H_
 
-#include <linux/types.h> /* stackdepot.h is not self-contained */
-#include <linux/stackdepot.h>
-#include <linux/ww_mutex.h>
+#include <freax/types.h> /* stackdepot.h is not self-contained */
+#include <freax/stackdepot.h>
+#include <freax/ww_mutex.h>
 
 struct drm_modeset_lock;
 

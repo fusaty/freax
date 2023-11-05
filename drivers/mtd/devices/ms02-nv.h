@@ -7,8 +7,8 @@
  *	systems.
  */
 
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
+#include <freax/ioport.h>
+#include <freax/mtd/mtd.h>
 
 /*
  * Addresses are decoded as follows:

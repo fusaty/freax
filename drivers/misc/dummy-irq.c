@@ -11,9 +11,9 @@
  * Copyright (C) 2013 Jiri Kosina
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
 
 static int irq = -1;
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/module.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 
 #define INTC_IRQS		64

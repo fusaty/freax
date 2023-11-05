@@ -20,8 +20,8 @@
 #include <signal.h>
 #include <getopt.h>
 #include <sys/ioctl.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
 
 #define DEFAULT_PING_RATE	1
 

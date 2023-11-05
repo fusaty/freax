@@ -13,13 +13,13 @@
  * https://github.com/repaper/gratis
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/sched/clock.h>
-#include <linux/spi/spi.h>
-#include <linux/thermal.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/sched/clock.h>
+#include <freax/spi/spi.h>
+#include <freax/thermal.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_connector.h>

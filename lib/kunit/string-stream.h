@@ -9,9 +9,9 @@
 #ifndef _KUNIT_STRING_STREAM_H
 #define _KUNIT_STRING_STREAM_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/stdarg.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/stdarg.h>
 
 struct string_stream_fragment {
 	struct list_head node;

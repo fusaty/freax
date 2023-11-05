@@ -5,10 +5,10 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
-#define __LINUX_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
+#ifndef __freax_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
+#define __freax_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 /**
  * da8xx_cfgchip_clk_platform_data
@@ -18,4 +18,4 @@ struct da8xx_cfgchip_clk_platform_data {
 	struct regmap *cfgchip;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__ */
+#endif /* __freax_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__ */

@@ -2,20 +2,20 @@
 /*
  * Time related functions for Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/module.h>
 
 #include <asm/hexagon_vm.h>
 

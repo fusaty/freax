@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/smp.h>
-#include <linux/export.h>
+#include <freax/smp.h>
+#include <freax/export.h>
 
 static void __wbinvd(void *dummy)
 {

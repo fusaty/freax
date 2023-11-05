@@ -7,8 +7,8 @@
  * for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
 
 #include <asm/cpuinfo.h>
 

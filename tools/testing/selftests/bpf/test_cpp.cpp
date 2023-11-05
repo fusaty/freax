@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: (LGPL-2.1 OR BSD-2-Clause) */
 #include <iostream>
 #include <unistd.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
 #include <bpf/libbpf.h>
 #include <bpf/bpf.h>
 #include <bpf/btf.h>

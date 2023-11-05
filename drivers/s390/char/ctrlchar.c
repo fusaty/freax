@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/stddef.h>
+#include <freax/stddef.h>
 #include <asm/errno.h>
-#include <linux/sysrq.h>
-#include <linux/ctype.h>
+#include <freax/sysrq.h>
+#include <freax/ctype.h>
 
 #include "ctrlchar.h"
 

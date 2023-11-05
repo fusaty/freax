@@ -3,8 +3,8 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/kvm_host.h>
-#include <linux/entry-kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/entry-kvm.h>
 #include <asm/fpu.h>
 #include <asm/loongarch.h>
 #include <asm/setup.h>

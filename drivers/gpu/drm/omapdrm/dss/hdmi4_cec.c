@@ -8,16 +8,16 @@
  * Authors: Yong Zhi
  *	Mythri pk <mythripk@ti.com>
  *
- * Heavily modified to use the linux CEC framework:
+ * Heavily modified to use the freax CEC framework:
  *
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "dss.h"
 #include "hdmi.h"

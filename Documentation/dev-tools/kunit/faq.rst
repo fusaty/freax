@@ -43,7 +43,7 @@ For more information, see :ref:`kunit-on-non-uml`.
 
 What is the difference between a unit test and other kinds of tests?
 ====================================================================
-Most existing tests for the Linux kernel would be categorized as an integration
+Most existing tests for the freax kernel would be categorized as an integration
 test, or an end-to-end test.
 
 - A unit test is supposed to test a single unit of code in isolation. A unit
@@ -78,12 +78,12 @@ things to try.
    down where an issue is occurring. (If you think the parser is at fault, you
    can run it manually against ``stdin`` or a file with ``kunit.py parse``.)
 3. Running the UML kernel directly can often reveal issues or error messages,
-   ``kunit_tool`` ignores. This should be as simple as running ``./vmlinux``
+   ``kunit_tool`` ignores. This should be as simple as running ``./vmfreax``
    after building the UML kernel (for example, by using ``kunit.py build``).
    Note that UML has some unusual requirements (such as the host having a tmpfs
    filesystem mounted), and has had issues in the past when built statically and
    the host has KASLR enabled. (On older host kernels, you may need to run
-   ``setarch `uname -m` -R ./vmlinux`` to disable KASLR.)
+   ``setarch `uname -m` -R ./vmfreax`` to disable KASLR.)
 4. Make sure the kernel .config has ``CONFIG_KUNIT=y`` and at least one test
    (e.g. ``CONFIG_KUNIT_EXAMPLE_TEST=y``). kunit_tool will keep its .config
    around, so you can see what config was used after running ``kunit.py run``.

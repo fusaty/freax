@@ -10,11 +10,11 @@
 #ifndef _SC_SCI_H
 #define _SC_SCI_H
 
-#include <linux/firmware/imx/ipc.h>
+#include <freax/firmware/imx/ipc.h>
 
-#include <linux/firmware/imx/svc/misc.h>
-#include <linux/firmware/imx/svc/pm.h>
-#include <linux/firmware/imx/svc/rm.h>
+#include <freax/firmware/imx/svc/misc.h>
+#include <freax/firmware/imx/svc/pm.h>
+#include <freax/firmware/imx/svc/rm.h>
 
 #if IS_ENABLED(CONFIG_IMX_SCU)
 int imx_scu_enable_general_irq_channel(struct device *dev);

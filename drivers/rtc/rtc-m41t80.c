@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
+#include <freax/bcd.h>
+#include <freax/clk-provider.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/string.h>
 #ifdef CONFIG_RTC_DRV_M41T80_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <freax/fs.h>
+#include <freax/ioctl.h>
+#include <freax/miscdevice.h>
+#include <freax/reboot.h>
+#include <freax/watchdog.h>
 #endif
 
 #define M41T80_REG_SSEC		0x00

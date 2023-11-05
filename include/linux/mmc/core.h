@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mmc/core.h
+ *  freax/include/freax/mmc/core.h
  */
-#ifndef LINUX_MMC_CORE_H
-#define LINUX_MMC_CORE_H
+#ifndef freax_MMC_CORE_H
+#define freax_MMC_CORE_H
 
-#include <linux/completion.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/types.h>
 
 struct mmc_data;
 struct mmc_request;
@@ -179,4 +179,4 @@ int mmc_hw_reset(struct mmc_card *card);
 int mmc_sw_reset(struct mmc_card *card);
 void mmc_set_data_timeout(struct mmc_data *data, const struct mmc_card *card);
 
-#endif /* LINUX_MMC_CORE_H */
+#endif /* freax_MMC_CORE_H */

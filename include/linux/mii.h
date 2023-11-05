@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/mii.h: definitions for MII-compatible transceivers
+ * freax/mii.h: definitions for MII-compatible transceivers
  * Originally drivers/net/sunhme.h.
  *
  * Copyright (C) 1996, 1999, 2001 David S. Miller (davem@redhat.com)
  */
-#ifndef __LINUX_MII_H__
-#define __LINUX_MII_H__
+#ifndef __freax_MII_H__
+#define __freax_MII_H__
 
 
-#include <linux/if.h>
-#include <linux/linkmode.h>
-#include <uapi/linux/mii.h>
+#include <freax/if.h>
+#include <freax/linkmode.h>
+#include <uapi/freax/mii.h>
 
 struct ethtool_cmd;
 
@@ -580,4 +580,4 @@ static inline u16 mii_bmcr_encode_fixed(int speed, int duplex)
 	return bmcr;
 }
 
-#endif /* __LINUX_MII_H__ */
+#endif /* __freax_MII_H__ */

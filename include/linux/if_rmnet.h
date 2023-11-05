@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only
- * Copyright (c) 2013-2019, 2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2019, 2021 The freax Foundation. All rights reserved.
  */
 
-#ifndef _LINUX_IF_RMNET_H_
-#define _LINUX_IF_RMNET_H_
+#ifndef _freax_IF_RMNET_H_
+#define _freax_IF_RMNET_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct rmnet_map_header {
 	u8 flags;			/* MAP_CMD_FLAG, MAP_PAD_LEN_MASK */
@@ -71,4 +71,4 @@ struct rmnet_map_v5_csum_header {
 #define MAPV5_CSUMINFO_VALID_FLAG	BIT(7)
 
 #define RMNET_MAP_HEADER_TYPE_CSUM_OFFLOAD 2
-#endif /* !(_LINUX_IF_RMNET_H_) */
+#endif /* !(_freax_IF_RMNET_H_) */

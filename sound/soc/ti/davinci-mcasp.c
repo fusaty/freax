@@ -12,19 +12,19 @@
  * Copyright:   (C) 2009  Texas Instruments, India
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/math64.h>
-#include <linux/bitmap.h>
-#include <linux/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/platform_data/davinci_asp.h>
+#include <freax/math64.h>
+#include <freax/bitmap.h>
+#include <freax/gpio/driver.h>
 
 #include <sound/asoundef.h>
 #include <sound/core.h>

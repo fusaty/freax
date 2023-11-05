@@ -6,21 +6,21 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/workqueue.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <net/net_namespace.h>
-#include <linux/sched.h>
-#include <linux/prefetch.h>
+#include <freax/sched.h>
+#include <freax/prefetch.h>
 #include <net/lwtunnel.h>
 #include <net/xfrm.h>
 

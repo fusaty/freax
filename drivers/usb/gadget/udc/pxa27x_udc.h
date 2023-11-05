@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/drivers/usb/gadget/pxa27x_udc.h
+ * freax/drivers/usb/gadget/pxa27x_udc.h
  * Intel PXA27x on-chip full speed USB device controller
  *
  * Inspired by original driver by Frank Becker, David Brownell, and others.
  * Copyright (C) 2008 Robert Jarzmik
  */
 
-#ifndef __LINUX_USB_GADGET_PXA27X_H
-#define __LINUX_USB_GADGET_PXA27X_H
+#ifndef __freax_USB_GADGET_PXA27X_H
+#define __freax_USB_GADGET_PXA27X_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/usb/otg.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/usb/otg.h>
 
 /*
  * Register definitions
@@ -495,4 +495,4 @@ static inline struct pxa_udc *to_gadget_udc(struct usb_gadget *gadget)
 #define ep_warn(ep, fmt, arg...) \
 	dev_warn(ep->dev->dev, "%s:%s:" fmt, EPNAME(ep), __func__, ## arg)
 
-#endif /* __LINUX_USB_GADGET_PXA27X_H */
+#endif /* __freax_USB_GADGET_PXA27X_H */

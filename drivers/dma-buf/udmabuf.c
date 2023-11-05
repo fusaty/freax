@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cred.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memfd.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/udmabuf.h>
-#include <linux/vmalloc.h>
-#include <linux/iosys-map.h>
+#include <freax/cred.h>
+#include <freax/device.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-resv.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/memfd.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/shmem_fs.h>
+#include <freax/slab.h>
+#include <freax/udmabuf.h>
+#include <freax/vmalloc.h>
+#include <freax/iosys-map.h>
 
 static int list_limit = 1024;
 module_param(list_limit, int, 0644);

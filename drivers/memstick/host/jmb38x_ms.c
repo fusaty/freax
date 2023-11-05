@@ -5,15 +5,15 @@
  *  Copyright (C) 2008 Alex Dubov <oakad@yahoo.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memstick.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/highmem.h>
+#include <freax/memstick.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #define DRIVER_NAME "jmb38x_ms"
 

@@ -6,18 +6,18 @@
  *  Copyright 2008 Rusty Russell IBM Corporation
  */
 
-#include <linux/virtio.h>
-#include <linux/virtio_balloon.h>
-#include <linux/swap.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/balloon_compaction.h>
-#include <linux/oom.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/page_reporting.h>
+#include <freax/virtio.h>
+#include <freax/virtio_balloon.h>
+#include <freax/swap.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/balloon_compaction.h>
+#include <freax/oom.h>
+#include <freax/wait.h>
+#include <freax/mm.h>
+#include <freax/page_reporting.h>
 
 /*
  * Balloon device works in 4K page units.  So each page is pointed to by
@@ -131,7 +131,7 @@ static u32 page_to_balloon_pfn(struct page *page)
 	unsigned long pfn = page_to_pfn(page);
 
 	BUILD_BUG_ON(PAGE_SHIFT < VIRTIO_BALLOON_PFN_SHIFT);
-	/* Convert pfn from Linux page size to balloon page size. */
+	/* Convert pfn from freax page size to balloon page size. */
 	return pfn * VIRTIO_BALLOON_PAGES_PER_PAGE;
 }
 

@@ -222,13 +222,13 @@
 		d3 {
 			label = "d3";
 			gpios = <&pioB 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		d2 {
 			label = "d2";
 			gpios = <&pioC 29 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "nand-disk";
+			freax,default-trigger = "nand-disk";
 		};
 	};
 
@@ -238,14 +238,14 @@
 		button-left-click {
 			label = "left_click";
 			gpios = <&pioC 5 GPIO_ACTIVE_LOW>;
-			linux,code = <272>;
+			freax,code = <272>;
 			wakeup-source;
 		};
 
 		button-right-click {
 			label = "right_click";
 			gpios = <&pioC 4 GPIO_ACTIVE_LOW>;
-			linux,code = <273>;
+			freax,code = <273>;
 			wakeup-source;
 		};
 	};

@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SMP_H
-#define __LINUX_SMP_H
+#ifndef __freax_SMP_H
+#define __freax_SMP_H
 
 /*
  *	Generic SMP support
  *		Alan Cox. <alan@redhat.com>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/smp_types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/smp_types.h>
 
 typedef void (*smp_call_func_t)(void *info);
 typedef bool (*smp_cond_func_t)(int cpu, void *info);
@@ -107,9 +107,9 @@ static inline void on_each_cpu_cond(smp_cond_func_t cond_func,
 
 #ifdef CONFIG_SMP
 
-#include <linux/preempt.h>
-#include <linux/compiler.h>
-#include <linux/thread_info.h>
+#include <freax/preempt.h>
+#include <freax/compiler.h>
+#include <freax/thread_info.h>
 #include <asm/smp.h>
 
 /*
@@ -293,4 +293,4 @@ int smpcfd_prepare_cpu(unsigned int cpu);
 int smpcfd_dead_cpu(unsigned int cpu);
 int smpcfd_dying_cpu(unsigned int cpu);
 
-#endif /* __LINUX_SMP_H */
+#endif /* __freax_SMP_H */

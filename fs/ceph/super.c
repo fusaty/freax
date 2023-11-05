@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/backing-dev.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
+#include <freax/backing-dev.h>
+#include <freax/ctype.h>
+#include <freax/fs.h>
+#include <freax/inet.h>
+#include <freax/in6.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/statfs.h>
+#include <freax/string.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
 #include "crypto.h"
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/auth.h>
+#include <freax/ceph/debugfs.h>
 
-#include <uapi/linux/magic.h>
+#include <uapi/freax/magic.h>
 
 static DEFINE_SPINLOCK(ceph_fsc_lock);
 static LIST_HEAD(ceph_fsc_list);
@@ -1677,5 +1677,5 @@ module_exit(exit_ceph);
 MODULE_AUTHOR("Sage Weil <sage@newdream.net>");
 MODULE_AUTHOR("Yehuda Sadeh <yehuda@hq.newdream.net>");
 MODULE_AUTHOR("Patience Warnick <patience@newdream.net>");
-MODULE_DESCRIPTION("Ceph filesystem for Linux");
+MODULE_DESCRIPTION("Ceph filesystem for freax");
 MODULE_LICENSE("GPL");

@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) "cpuidle-riscv-sbi: " fmt
 
-#include <linux/cpuhotplug.h>
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpu_cooling.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpuidle.h>
+#include <freax/cpumask.h>
+#include <freax/cpu_pm.h>
+#include <freax/cpu_cooling.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
 #include <asm/cpuidle.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>
@@ -82,7 +82,7 @@ static int sbi_suspend_finisher(unsigned long suspend_type,
 	ret = sbi_ecall(SBI_EXT_HSM, SBI_EXT_HSM_HART_SUSPEND,
 			suspend_type, resume_addr, opaque, 0, 0, 0);
 
-	return (ret.error) ? sbi_err_map_linux_errno(ret.error) : 0;
+	return (ret.error) ? sbi_err_map_freax_errno(ret.error) : 0;
 }
 
 static int sbi_suspend(u32 state)

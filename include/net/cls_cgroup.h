@@ -8,9 +8,9 @@
 #ifndef _NET_CLS_CGROUP_H
 #define _NET_CLS_CGROUP_H
 
-#include <linux/cgroup.h>
-#include <linux/hardirq.h>
-#include <linux/rcupdate.h>
+#include <freax/cgroup.h>
+#include <freax/hardirq.h>
+#include <freax/rcupdate.h>
 #include <net/sock.h>
 #include <net/inet_sock.h>
 

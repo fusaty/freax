@@ -6,9 +6,9 @@
  *  All Rights Reserved
  */
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/cacheinfo.h>
+#include <freax/of.h>
 
 #define MAX_CACHE_LEVEL			7	/* Max 7 level supported */
 

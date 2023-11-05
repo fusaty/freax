@@ -12,8 +12,8 @@
 #include <asm/unaligned.h>
 #include <crypto/internal/hash.h>
 #include <crypto/sha2.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 typedef void (sha256_block_fn)(struct sha256_state *sst, u8 const *src,
 			       int blocks);

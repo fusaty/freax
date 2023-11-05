@@ -33,9 +33,9 @@
 #ifndef XILINX_BUFFER_ICAP_H_	/* prevent circular inclusions */
 #define XILINX_BUFFER_ICAP_H_	/* by using protection macros */
 
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include "xilinx_hwicap.h"

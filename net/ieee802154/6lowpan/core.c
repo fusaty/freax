@@ -44,10 +44,10 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ieee802154.h>
-#include <linux/if_arp.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/ieee802154.h>
+#include <freax/if_arp.h>
 
 #include <net/ipv6.h>
 

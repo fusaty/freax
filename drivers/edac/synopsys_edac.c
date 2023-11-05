@@ -6,11 +6,11 @@
  * Copyright (C) 2012 - 2014 Xilinx, Inc.
  */
 
-#include <linux/edac.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
+#include <freax/edac.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
 
 #include "edac_module.h"
 

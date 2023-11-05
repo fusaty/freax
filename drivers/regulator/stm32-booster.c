@@ -2,13 +2,13 @@
 // Copyright (C) STMicroelectronics 2019
 // Author(s): Fabrice Gasnier <fabrice.gasnier@st.com>.
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 /* STM32H7 SYSCFG register */
 #define STM32H7_SYSCFG_PMCR		0x04

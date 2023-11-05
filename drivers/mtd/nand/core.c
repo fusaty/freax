@@ -9,8 +9,8 @@
 
 #define pr_fmt(fmt)	"nand: " fmt
 
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
+#include <freax/module.h>
+#include <freax/mtd/nand.h>
 
 /**
  * nanddev_isbad() - Check if a block is bad

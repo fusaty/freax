@@ -3,7 +3,7 @@
 #ifndef __MEDIA_I2C_DS90UB9XX_H__
 #define __MEDIA_I2C_DS90UB9XX_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct i2c_atr;
 

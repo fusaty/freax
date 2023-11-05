@@ -10,11 +10,11 @@
  * Author: Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2020 Anna Schumaker <Anna.Schumaker@Netapp.com>
  */
-#include <linux/sunrpc/clnt.h>
-#include <linux/kobject.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/kobject.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/xprtsock.h>
 
 #include "sysfs.h"
 

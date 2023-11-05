@@ -6,10 +6,10 @@
  * Written by Uday Savagaonkar, 2014.
  * Modified by Jaegeuk Kim, 2015.
  */
-#include <linux/ceph/ceph_debug.h>
-#include <linux/xattr.h>
-#include <linux/fscrypt.h>
-#include <linux/ceph/striper.h>
+#include <freax/ceph/ceph_debug.h>
+#include <freax/xattr.h>
+#include <freax/fscrypt.h>
+#include <freax/ceph/striper.h>
 
 #include "super.h"
 #include "mds_client.h"

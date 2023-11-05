@@ -8,13 +8,13 @@
 //
 // Guodong Xu <guodong.xu@linaro.org>
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/spmi.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/spmi.h>
 
 struct hi6421_spmi_reg_priv {
 	/* Serialize regulator enable logic */

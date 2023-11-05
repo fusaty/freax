@@ -4,12 +4,12 @@
  * Copyright (c) Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/pm.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/export.h>
+#include <freax/pm.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

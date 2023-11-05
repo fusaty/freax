@@ -6,13 +6,13 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/slab.h>
 
 #define DM_MSG_PREFIX "flakey"
 

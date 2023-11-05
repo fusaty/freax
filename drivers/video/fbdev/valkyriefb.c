@@ -39,22 +39,22 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/selection.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/of_address.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/selection.h>
+#include <freax/init.h>
+#include <freax/nvram.h>
+#include <freax/adb.h>
+#include <freax/cuda.h>
+#include <freax/of_address.h>
 #ifdef CONFIG_MAC
 #include <asm/macintosh.h>
 #endif
@@ -438,7 +438,7 @@ static int read_valkyrie_sense(struct fb_info_valkyrie *p)
  * swiping the platinumfb code is that we now have more comprehensible error
  * messages when a vmode/cmode switch fails. (Most of the error messages are
  * platinumfb.c, but I added two of my own, and I also changed some commas
- * into colons to make the messages more consistent with other Linux error
+ * into colons to make the messages more consistent with other freax error
  * messages.) In addition, I think the new code *might* fix some vmode-
  * switching oddities, but I'm not sure.
  *

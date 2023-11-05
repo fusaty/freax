@@ -3,7 +3,7 @@
  * Copyright (c) 2010 ASIX Electronics Corporation
  * Copyright (c) 2020 Samsung Electronics Co., Ltd.
  *
- * ASIX AX88796C SPI Fast Ethernet Linux driver
+ * ASIX AX88796C SPI Fast Ethernet freax driver
  */
 
 #define pr_fmt(fmt)	"ax88796c: " fmt
@@ -11,18 +11,18 @@
 #include "ax88796c_main.h"
 #include "ax88796c_ioctl.h"
 
-#include <linux/bitmap.h>
-#include <linux/etherdevice.h>
-#include <linux/iopoll.h>
-#include <linux/lockdep.h>
-#include <linux/mdio.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/skbuff.h>
-#include <linux/spi/spi.h>
+#include <freax/bitmap.h>
+#include <freax/etherdevice.h>
+#include <freax/iopoll.h>
+#include <freax/lockdep.h>
+#include <freax/mdio.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/skbuff.h>
+#include <freax/spi/spi.h>
 
 static int comp = IS_ENABLED(CONFIG_SPI_AX88796C_COMPRESSION);
 static int msg_enable = NETIF_MSG_PROBE |
@@ -34,7 +34,7 @@ static const char *no_regs_list = "80018001,e1918001,8001a001,fc0d0000";
 unsigned long ax88796c_no_regs_mask[AX88796C_REGDUMP_LEN / (sizeof(unsigned long) * 8)];
 
 module_param(msg_enable, int, 0444);
-MODULE_PARM_DESC(msg_enable, "Message mask (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Message mask (see freax/netdevice.h for bitmap)");
 
 static int ax88796c_soft_reset(struct ax88796c_device *ax_local)
 {

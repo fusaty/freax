@@ -7,12 +7,12 @@
  * Copyright (C) 2010 Tanguy Bouzeloc <tanguy.bouzeloc@efixo.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/clk.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_spi.h>

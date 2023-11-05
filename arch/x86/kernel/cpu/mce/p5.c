@@ -3,11 +3,11 @@
  * P5 specific Machine Check Exception Reporting
  * (C) Copyright 2002 Alan Cox <alan@lxorguk.ukuu.org.uk>
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/hardirq.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/smp.h>
+#include <freax/hardirq.h>
 
 #include <asm/processor.h>
 #include <asm/traps.h>

@@ -4,14 +4,14 @@
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
 #include <net/rtnetlink.h>
-#include <linux/if_team.h>
+#include <freax/if_team.h>
 
 struct ab_priv {
 	struct team_port __rcu *active_port;

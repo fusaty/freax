@@ -7,11 +7,11 @@
 #ifndef __MFD_INTEL_M10_BMC_H
 #define __MFD_INTEL_M10_BMC_H
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/dev_printk.h>
-#include <linux/regmap.h>
-#include <linux/rwsem.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/dev_printk.h>
+#include <freax/regmap.h>
+#include <freax/rwsem.h>
 
 #define M10BMC_N3000_LEGACY_BUILD_VER	0x300468
 #define M10BMC_N3000_SYS_BASE		0x300800

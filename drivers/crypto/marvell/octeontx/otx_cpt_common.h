@@ -11,9 +11,9 @@
 #ifndef __OTX_CPT_COMMON_H
 #define __OTX_CPT_COMMON_H
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/device.h>
 
 #define OTX_CPT_MAX_MBOX_DATA_STR_SIZE 64
 

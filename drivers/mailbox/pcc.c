@@ -46,17 +46,17 @@
  *  clients to be implemented as its Mailbox Client Channels.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/platform_device.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox_client.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #include <acpi/pcc.h>
 
 #include "mailbox.h"
@@ -211,11 +211,11 @@ static int pcc_chan_reg_read_modify_write(struct pcc_chan_reg *reg)
 }
 
 /**
- * pcc_map_interrupt - Map a PCC subspace GSI to a linux IRQ number
+ * pcc_map_interrupt - Map a PCC subspace GSI to a freax IRQ number
  * @interrupt: GSI number.
  * @flags: interrupt flags
  *
- * Returns: a valid linux IRQ number on success
+ * Returns: a valid freax IRQ number on success
  *		0 or -EINVAL on failure
  */
 static int pcc_map_interrupt(u32 interrupt, u32 flags)

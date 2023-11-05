@@ -8,17 +8,17 @@
 /*
  * Core code for the Via multifunction framebuffer device.
  */
-#include <linux/aperture.h>
-#include <linux/via-core.h>
-#include <linux/via_i2c.h>
+#include <freax/aperture.h>
+#include <freax/via-core.h>
+#include <freax/via_i2c.h>
 #include "via-gpio.h"
 #include "global.h"
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/pm.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/list.h>
+#include <freax/pm.h>
 
 /*
  * The default port config.

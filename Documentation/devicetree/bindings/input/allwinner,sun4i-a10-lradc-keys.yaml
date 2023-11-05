@@ -52,7 +52,7 @@ patternProperties:
         $ref: /schemas/types.yaml#/definitions/string
         description: Descriptive name of the key
 
-      linux,code: true
+      freax,code: true
 
       channel:
         $ref: /schemas/types.yaml#/definitions/uint32
@@ -67,7 +67,7 @@ patternProperties:
 
     required:
       - label
-      - linux,code
+      - freax,code
       - channel
       - voltage
 
@@ -103,14 +103,14 @@ examples:
 
         button-191 {
             label = "Volume Up";
-            linux,code = <115>;
+            freax,code = <115>;
             channel = <0>;
             voltage = <191274>;
         };
 
         button-392 {
             label = "Volume Down";
-            linux,code = <114>;
+            freax,code = <114>;
             channel = <0>;
             voltage = <392644>;
         };

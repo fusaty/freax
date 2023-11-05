@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
+ *  freax/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  *
  *  Documentation: ARM DDI 0173B
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/amba/bus.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

@@ -4,14 +4,14 @@
 //
 // Copyright (C) 2009-2010, Lars-Peter Clausen <lars@metafoo.de>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/regmap.h>
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

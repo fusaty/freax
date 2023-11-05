@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_NOP_XCEIV_H
-#define __LINUX_USB_NOP_XCEIV_H
+#ifndef __freax_USB_NOP_XCEIV_H
+#define __freax_USB_NOP_XCEIV_H
 
-#include <linux/usb/otg.h>
+#include <freax/usb/otg.h>
 
 #if IS_ENABLED(CONFIG_NOP_USB_XCEIV)
 /* sometimes transceivers are accessed only through e.g. ULPI */
@@ -19,4 +19,4 @@ static inline void usb_phy_generic_unregister(struct platform_device *pdev)
 }
 #endif
 
-#endif /* __LINUX_USB_NOP_XCEIV_H */
+#endif /* __freax_USB_NOP_XCEIV_H */

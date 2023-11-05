@@ -1,14 +1,14 @@
 /*
  * slcan.c - serial line CAN interface driver (using tty line discipline)
  *
- * This file is derived from linux/drivers/net/slip/slip.c and got
- * inspiration from linux/drivers/net/can/can327.c for the rework made
+ * This file is derived from freax/drivers/net/slip/slip.c and got
+ * inspiration from freax/drivers/net/can/can327.c for the rework made
  * on the line discipline code.
  *
  * slip.c Authors  : Laurence Culhane <loz@holmes.demon.co.uk>
  *                   Fred N. van Kempen <waltje@uwalt.nl.mugnet.org>
  * slcan.c Author  : Oliver Hartkopp <socketcan@hartkopp.net>
- * can327.c Author : Max Staudt <max-linux@enpas.org>
+ * can327.c Author : Max Staudt <max-freax@enpas.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -40,22 +40,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/skb.h>
+#include <freax/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/string.h>
+#include <freax/tty.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/workqueue.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/skb.h>
 
 #include "slcan.h"
 

@@ -5,7 +5,7 @@
  */
 #include "builtin.h"
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 #include "util/evlist.h"
 #include "util/evsel.h"
@@ -15,7 +15,7 @@
 #include "util/session.h"
 #include "util/data.h"
 #include "util/debug.h"
-#include <linux/err.h>
+#include <freax/err.h>
 #include "util/tool.h"
 #include "util/util.h"
 

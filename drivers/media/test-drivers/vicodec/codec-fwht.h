@@ -7,8 +7,8 @@
 #ifndef CODEC_FWHT_H
 #define CODEC_FWHT_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 #include <asm/byteorder.h>
 
 /*

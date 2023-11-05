@@ -22,13 +22,13 @@
  * Windows-Media-Center-RC-IR-Collection-Green-Button-Specification-03-08-2011-V2.pdf
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/pm_wakeup.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/usb.h>
+#include <freax/usb/input.h>
+#include <freax/pm_wakeup.h>
 #include <media/rc-core.h>
 
 #define DRIVER_VERSION	"1.95"

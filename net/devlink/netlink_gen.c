@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/devlink.yaml */
 /* YNL-GEN kernel source */
@@ -8,7 +8,7 @@
 
 #include "netlink_gen.h"
 
-#include <uapi/linux/devlink.h>
+#include <uapi/freax/devlink.h>
 
 /* Common nested types */
 const struct nla_policy devlink_dl_port_function_nl_policy[DEVLINK_PORT_FN_ATTR_CAPS + 1] = {

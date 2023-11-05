@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/blkdev.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_devinfo.h>

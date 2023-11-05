@@ -13,15 +13,15 @@
  * bus mainly).
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/property.h>
-#include <linux/bitops.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/property.h>
+#include <freax/bitops.h>
 
 #include "pinctrl-mvebu.h"
 

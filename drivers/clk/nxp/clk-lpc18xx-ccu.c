@@ -5,14 +5,14 @@
  * Copyright (C) 2015 Joachim Eastwood <manabian@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include <dt-bindings/clock/lpc18xx-ccu.h>
 

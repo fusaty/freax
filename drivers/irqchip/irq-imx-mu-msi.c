@@ -10,19 +10,19 @@
  * Based on drivers/mailbox/imx-mailbox.c
  */
 
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/spinlock.h>
 
 #define IMX_MU_CHANS            4
 

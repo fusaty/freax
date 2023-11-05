@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * i8k.h -- Linux driver for accessing the SMM BIOS on Dell laptops
+ * i8k.h -- freax driver for accessing the SMM BIOS on Dell laptops
  *
  * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
  *
@@ -15,8 +15,8 @@
  * General Public License for more details.
  */
 
-#ifndef _LINUX_I8K_H
-#define _LINUX_I8K_H
+#ifndef _freax_I8K_H
+#define _freax_I8K_H
 
 #define I8K_PROC		"/proc/i8k"
 #define I8K_PROC_FMT		"1.0"

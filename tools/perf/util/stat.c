@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <errno.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #include <inttypes.h>
 #include <math.h>
 #include <string.h>
@@ -15,7 +15,7 @@
 #include "evsel.h"
 #include "thread_map.h"
 #include "util/hashmap.h"
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 void update_stats(struct stats *stats, u64 val)
 {

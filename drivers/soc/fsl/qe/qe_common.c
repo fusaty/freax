@@ -13,15 +13,15 @@
  * 2006 (c) MontaVista Software, Inc.
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
-#include <linux/genalloc.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/genalloc.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 #include <soc/fsl/qe/qe.h>
 
 static struct gen_pool *muram_pool;

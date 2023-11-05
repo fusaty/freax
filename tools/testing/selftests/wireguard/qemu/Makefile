@@ -39,7 +39,7 @@ endef
 
 $(eval $(call tar_download,IPERF,iperf,3.11,.tar.gz,https://downloads.es.net/pub/iperf/,de8cb409fad61a0574f4cb07eb19ce1159707403ac2dc01b5d175e91240b7e5f))
 $(eval $(call tar_download,BASH,bash,5.1.16,.tar.gz,https://ftp.gnu.org/gnu/bash/,5bac17218d3911834520dad13cd1f85ab944e1c09ae1aba55906be1f8192f558))
-$(eval $(call tar_download,IPROUTE2,iproute2,5.17.0,.tar.gz,https://www.kernel.org/pub/linux/utils/net/iproute2/,bda331d5c4606138892f23a565d78fca18919b4d508a0b7ca8391c2da2db68b9))
+$(eval $(call tar_download,IPROUTE2,iproute2,5.17.0,.tar.gz,https://www.kernel.org/pub/freax/utils/net/iproute2/,bda331d5c4606138892f23a565d78fca18919b4d508a0b7ca8391c2da2db68b9))
 $(eval $(call tar_download,IPTABLES,iptables,1.8.7,.tar.bz2,https://www.netfilter.org/projects/iptables/files/,c109c96bb04998cd44156622d36f8e04b140701ec60531a10668cfdff5e8d8f0))
 $(eval $(call tar_download,NMAP,nmap,7.92,.tgz,https://nmap.org/dist/,064183ea642dc4c12b1ab3b5358ce1cef7d2e7e11ffa2849f16d339f5b717117))
 $(eval $(call tar_download,IPUTILS,iputils,s20190709,.tar.gz,https://github.com/iputils/iputils/archive/s20190709.tar.gz/#,a15720dd741d7538dd2645f9f516d193636ae4300ff7dbc8bfca757bf166490a))
@@ -54,7 +54,7 @@ export CPPFLAGS :=
 
 QEMU_VPORT_RESULT :=
 ifeq ($(ARCH),aarch64)
-CHOST := aarch64-linux-musl
+CHOST := aarch64-freax-musl
 QEMU_ARCH := aarch64
 KERNEL_ARCH := arm64
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/arm64/boot/Image
@@ -66,7 +66,7 @@ QEMU_MACHINE := -cpu max -machine virt
 CFLAGS += -march=armv8-a
 endif
 else ifeq ($(ARCH),aarch64_be)
-CHOST := aarch64_be-linux-musl
+CHOST := aarch64_be-freax-musl
 QEMU_ARCH := aarch64
 KERNEL_ARCH := arm64
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/arm64/boot/Image
@@ -78,7 +78,7 @@ QEMU_MACHINE := -cpu max -machine virt
 CFLAGS += -march=armv8-a
 endif
 else ifeq ($(ARCH),arm)
-CHOST := arm-linux-musleabi
+CHOST := arm-freax-musleabi
 QEMU_ARCH := arm
 KERNEL_ARCH := arm
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/arm/boot/zImage
@@ -87,10 +87,10 @@ ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine virt,gic_version=host,accel=kvm
 else
 QEMU_MACHINE := -cpu max -machine virt
-CFLAGS += -march=armv7-a -mabi=aapcs-linux
+CFLAGS += -march=armv7-a -mabi=aapcs-freax
 endif
 else ifeq ($(ARCH),armeb)
-CHOST := armeb-linux-musleabi
+CHOST := armeb-freax-musleabi
 QEMU_ARCH := arm
 KERNEL_ARCH := arm
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/arm/boot/zImage
@@ -99,11 +99,11 @@ ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine virt,gic_version=host,accel=kvm
 else
 QEMU_MACHINE := -cpu max -machine virt
-CFLAGS += -march=armv7-a -mabi=aapcs-linux
+CFLAGS += -march=armv7-a -mabi=aapcs-freax
 LDFLAGS += -Wl,--be8
 endif
 else ifeq ($(ARCH),x86_64)
-CHOST := x86_64-linux-musl
+CHOST := x86_64-freax-musl
 QEMU_ARCH := x86_64
 KERNEL_ARCH := x86_64
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/x86/boot/bzImage
@@ -114,7 +114,7 @@ else
 QEMU_MACHINE := -cpu max -machine microvm -no-acpi
 endif
 else ifeq ($(ARCH),i686)
-CHOST := i686-linux-musl
+CHOST := i686-freax-musl
 QEMU_ARCH := i386
 KERNEL_ARCH := x86
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/x86/boot/bzImage
@@ -125,10 +125,10 @@ else
 QEMU_MACHINE := -cpu coreduo -machine microvm -no-acpi
 endif
 else ifeq ($(ARCH),mips64)
-CHOST := mips64-linux-musl
+CHOST := mips64-freax-musl
 QEMU_ARCH := mips64
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EB
@@ -137,10 +137,10 @@ QEMU_MACHINE := -cpu MIPS64R2-generic -machine malta -smp 1
 CFLAGS += -march=mips64r2 -EB
 endif
 else ifeq ($(ARCH),mips64el)
-CHOST := mips64el-linux-musl
+CHOST := mips64el-freax-musl
 QEMU_ARCH := mips64el
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EL
@@ -149,10 +149,10 @@ QEMU_MACHINE := -cpu MIPS64R2-generic -machine malta -smp 1
 CFLAGS += -march=mips64r2 -EL
 endif
 else ifeq ($(ARCH),mips)
-CHOST := mips-linux-musl
+CHOST := mips-freax-musl
 QEMU_ARCH := mips
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EB
@@ -161,10 +161,10 @@ QEMU_MACHINE := -cpu 24Kf -machine malta -smp 1
 CFLAGS += -march=mips32r2 -EB
 endif
 else ifeq ($(ARCH),mipsel)
-CHOST := mipsel-linux-musl
+CHOST := mipsel-freax-musl
 QEMU_ARCH := mipsel
 KERNEL_ARCH := mips
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host -machine malta,accel=kvm
 CFLAGS += -EL
@@ -173,27 +173,27 @@ QEMU_MACHINE := -cpu 24Kf -machine malta -smp 1
 CFLAGS += -march=mips32r2 -EL
 endif
 else ifeq ($(ARCH),powerpc64)
-CHOST := powerpc64-linux-musl
+CHOST := powerpc64-freax-musl
 QEMU_ARCH := ppc64
 KERNEL_ARCH := powerpc
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host,accel=kvm -machine pseries
 else
 QEMU_MACHINE := -machine pseries -device spapr-rng,rng=rng -object rng-random,id=rng
 endif
 else ifeq ($(ARCH),powerpc64le)
-CHOST := powerpc64le-linux-musl
+CHOST := powerpc64le-freax-musl
 QEMU_ARCH := ppc64
 KERNEL_ARCH := powerpc
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 ifeq ($(HOST_ARCH),$(ARCH))
 QEMU_MACHINE := -cpu host,accel=kvm -machine pseries
 else
 QEMU_MACHINE := -machine pseries -device spapr-rng,rng=rng -object rng-random,id=rng
 endif
 else ifeq ($(ARCH),powerpc)
-CHOST := powerpc-linux-musl
+CHOST := powerpc-freax-musl
 QEMU_ARCH := ppc
 KERNEL_ARCH := powerpc
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/powerpc/boot/uImage
@@ -203,10 +203,10 @@ else
 QEMU_MACHINE := -machine ppce500
 endif
 else ifeq ($(ARCH),m68k)
-CHOST := m68k-linux-musl
+CHOST := m68k-freax-musl
 QEMU_ARCH := m68k
 KERNEL_ARCH := m68k
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 KERNEL_CMDLINE := $(shell sed -n 's/CONFIG_CMDLINE=\(.*\)/\1/p' arch/m68k.config)
 QEMU_VPORT_RESULT := virtio-serial-device
 ifeq ($(HOST_ARCH),$(ARCH))
@@ -215,7 +215,7 @@ else
 QEMU_MACHINE := -machine virt -smp 1 -append $(KERNEL_CMDLINE)
 endif
 else ifeq ($(ARCH),riscv64)
-CHOST := riscv64-linux-musl
+CHOST := riscv64-freax-musl
 QEMU_ARCH := riscv64
 KERNEL_ARCH := riscv
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/riscv/boot/Image
@@ -226,7 +226,7 @@ else
 QEMU_MACHINE := -cpu rv64 -machine virt
 endif
 else ifeq ($(ARCH),riscv32)
-CHOST := riscv32-linux-musl
+CHOST := riscv32-freax-musl
 QEMU_ARCH := riscv32
 KERNEL_ARCH := riscv
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/riscv/boot/Image
@@ -237,7 +237,7 @@ else
 QEMU_MACHINE := -cpu rv32 -machine virt
 endif
 else ifeq ($(ARCH),s390x)
-CHOST := s390x-linux-musl
+CHOST := s390x-freax-musl
 QEMU_ARCH := s390x
 KERNEL_ARCH := s390
 KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/arch/s390/boot/bzImage
@@ -249,8 +249,8 @@ else
 QEMU_MACHINE := -cpu max -machine s390-ccw-virtio -append $(KERNEL_CMDLINE)
 endif
 else ifeq ($(ARCH),um)
-CHOST := $(HOST_ARCH)-linux-musl
-KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmlinux
+CHOST := $(HOST_ARCH)-freax-musl
+KERNEL_BZIMAGE := $(KERNEL_BUILD_PATH)/vmfreax
 KERNEL_ARCH := um
 KERNEL_CMDLINE := $(shell sed -n 's/CONFIG_CMDLINE=\(.*\)/\1/p' arch/um.config)
 else
@@ -280,7 +280,7 @@ export CCACHE_SLOPPINESS := file_macro,time_macros
 export CCACHE_DIR ?= $(PWD)/ccache
 endif
 
-USERSPACE_DEPS := $(TOOLCHAIN_PATH)/.installed $(TOOLCHAIN_PATH)/$(CHOST)/include/linux/.installed
+USERSPACE_DEPS := $(TOOLCHAIN_PATH)/.installed $(TOOLCHAIN_PATH)/$(CHOST)/include/freax/.installed
 
 comma := ,
 build: $(KERNEL_BZIMAGE)
@@ -342,9 +342,9 @@ $(KERNEL_BZIMAGE): $(TOOLCHAIN_PATH)/.installed $(KERNEL_BUILD_PATH)/.config $(B
 	$(MAKE) -C $(KERNEL_PATH) O=$(KERNEL_BUILD_PATH) ARCH=$(KERNEL_ARCH) CROSS_COMPILE=$(CROSS_COMPILE)
 .PHONY: $(KERNEL_BZIMAGE)
 
-$(TOOLCHAIN_PATH)/$(CHOST)/include/linux/.installed: | $(KERNEL_BUILD_PATH)/.config $(TOOLCHAIN_PATH)/.installed
+$(TOOLCHAIN_PATH)/$(CHOST)/include/freax/.installed: | $(KERNEL_BUILD_PATH)/.config $(TOOLCHAIN_PATH)/.installed
 ifneq ($(ARCH),um)
-	rm -rf $(TOOLCHAIN_PATH)/$(CHOST)/include/linux
+	rm -rf $(TOOLCHAIN_PATH)/$(CHOST)/include/freax
 	$(MAKE) -C $(KERNEL_PATH) O=$(KERNEL_BUILD_PATH) INSTALL_HDR_PATH=$(TOOLCHAIN_PATH)/$(CHOST) ARCH=$(KERNEL_ARCH) CROSS_COMPILE=$(CROSS_COMPILE) headers_install
 endif
 	touch $@
@@ -438,7 +438,7 @@ $(NMAP_PATH)/.installed: $(NMAP_TAR)
 	touch $@
 
 $(NMAP_PATH)/ncat/ncat: | $(NMAP_PATH)/.installed $(USERSPACE_DEPS)
-	cd $(NMAP_PATH) && ./configure --prefix=/ $(CROSS_COMPILE_FLAG) --enable-static --disable-shared --without-ndiff --without-zenmap --without-nping --with-libpcap=included --with-libpcre=included --with-libdnet=included --without-liblua --with-liblinear=included --without-nmap-update --without-openssl --with-pcap=linux --without-libssh
+	cd $(NMAP_PATH) && ./configure --prefix=/ $(CROSS_COMPILE_FLAG) --enable-static --disable-shared --without-ndiff --without-zenmap --without-nping --with-libpcap=included --with-libpcre=included --with-libdnet=included --without-liblua --with-liblinear=included --without-nmap-update --without-openssl --with-pcap=freax --without-libssh
 	$(MAKE) -C $(NMAP_PATH)/libpcap
 	$(MAKE) -C $(NMAP_PATH)/ncat
 	$(STRIP) -s $@

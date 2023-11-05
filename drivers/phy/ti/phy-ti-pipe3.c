@@ -6,21 +6,21 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/phy/phy.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/phy/omap_control_phy.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/phy/phy.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/phy/omap_control_phy.h>
+#include <freax/of_platform.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #define	PLL_STATUS		0x00000004
 #define	PLL_GO			0x00000008

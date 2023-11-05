@@ -9,8 +9,8 @@
 #ifndef RENESAS_USB_MOD_H
 #define RENESAS_USB_MOD_H
 
-#include <linux/spinlock.h>
-#include <linux/usb/renesas_usbhs.h>
+#include <freax/spinlock.h>
+#include <freax/usb/renesas_usbhs.h>
 #include "common.h"
 
 /*

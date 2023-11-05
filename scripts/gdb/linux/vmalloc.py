@@ -8,7 +8,7 @@
 
 import gdb
 import re
-from linux import lists, utils, stackdepot, constants, mm
+from freax import lists, utils, stackdepot, constants, mm
 
 if constants.LX_CONFIG_MMU:
     vmap_area_type = utils.CachedType('struct vmap_area')

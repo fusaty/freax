@@ -5,9 +5,9 @@
  * Copyright (c) 2009 Trond Myklebust <Trond.Myklebust@netapp.com>
  */
 
-#include <linux/completion.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/atomic.h>
+#include <freax/completion.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/atomic.h>
 
 /*
  * Deferred request handling

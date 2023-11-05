@@ -7,12 +7,12 @@
  * Copyright (c) 2023, Oracle and/or its affiliates.
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
 
 #include <net/sock.h>
 #include <net/genetlink.h>
@@ -20,7 +20,7 @@
 
 #include <kunit/visibility.h>
 
-#include <uapi/linux/handshake.h>
+#include <uapi/freax/handshake.h>
 #include "handshake.h"
 #include "genl.h"
 

@@ -13,17 +13,17 @@
  */
 
 #include <asm/page.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/sysctl.h>
-#include <linux/timer.h>
+#include <freax/uaccess.h>
+#include <freax/ctype.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/sysctl.h>
+#include <freax/timer.h>
 
 #include "edac_device.h"
 #include "edac_module.h"

@@ -18,10 +18,10 @@
  * Thus some part of the code might be dependent on PT3 specific config.
  */
 
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/dvb/frontend.h>
-#include <linux/int_log.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/dvb/frontend.h>
+#include <freax/int_log.h>
 #include "tc90522.h"
 
 #define TC90522_I2C_THRU_REG 0xfe

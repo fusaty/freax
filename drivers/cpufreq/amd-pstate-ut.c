@@ -22,11 +22,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/fs.h>
-#include <linux/amd-pstate.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/fs.h>
+#include <freax/amd-pstate.h>
 
 #include <acpi/cppc_acpi.h>
 

@@ -9,11 +9,11 @@
  *	Christian König <christian.koenig@amd.com>
  */
 
-#ifndef __LINUX_DMA_FENCE_ARRAY_H
-#define __LINUX_DMA_FENCE_ARRAY_H
+#ifndef __freax_DMA_FENCE_ARRAY_H
+#define __freax_DMA_FENCE_ARRAY_H
 
-#include <linux/dma-fence.h>
-#include <linux/irq_work.h>
+#include <freax/dma-fence.h>
+#include <freax/irq_work.h>
 
 /**
  * struct dma_fence_array_cb - callback helper for fence array
@@ -87,4 +87,4 @@ struct dma_fence *dma_fence_array_first(struct dma_fence *head);
 struct dma_fence *dma_fence_array_next(struct dma_fence *head,
 				       unsigned int index);
 
-#endif /* __LINUX_DMA_FENCE_ARRAY_H */
+#endif /* __freax_DMA_FENCE_ARRAY_H */

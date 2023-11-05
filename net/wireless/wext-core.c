@@ -5,15 +5,15 @@
  * Copyright (c) 1997-2007 Jean Tourrilhes, All Rights Reserved.
  * Copyright	2009 Johannes Berg <johannes@sipsolutions.net>
  *
- * (As all part of the Linux kernel, this file is GPL)
+ * (As all part of the freax kernel, this file is GPL)
  */
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/wireless.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
 #include <net/cfg80211.h>
 #include <net/iw_handler.h>
 #include <net/netlink.h>

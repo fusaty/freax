@@ -15,7 +15,7 @@ extern unsigned long __phys_addr(unsigned long);
 #define __phys_addr_symbol(x)	__phys_addr(x)
 #define __phys_reloc_hide(x)	RELOC_HIDE((x), 0)
 
-#include <linux/string.h>
+#include <freax/string.h>
 
 static inline void clear_page(void *page)
 {

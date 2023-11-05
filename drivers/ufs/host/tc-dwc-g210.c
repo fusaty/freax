@@ -7,7 +7,7 @@
  * Authors: Joao Pinto <jpinto@synopsys.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <ufs/ufshcd.h>
 #include <ufs/unipro.h>

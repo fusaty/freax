@@ -17,8 +17,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
-#include <linux/hid.h>
+#include <freax/input.h>
+#include <freax/hid.h>
 
 #include "hid-lg.h"
 

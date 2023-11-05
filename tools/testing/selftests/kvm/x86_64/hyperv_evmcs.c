@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 #include "test_util.h"
 
@@ -82,7 +82,7 @@ void guest_code(struct vmx_pages *vmx_pages, struct hyperv_test_pages *hv_pages,
 #define L2_GUEST_STACK_SIZE 64
 	unsigned long l2_guest_stack[L2_GUEST_STACK_SIZE];
 
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, hv_hcall_page_gpa);
 
 	x2apic_enable();

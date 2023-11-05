@@ -11,9 +11,9 @@
 #ifndef __LOCAL_NXP_NCI_H_
 #define __LOCAL_NXP_NCI_H_
 
-#include <linux/completion.h>
-#include <linux/firmware.h>
-#include <linux/nfc.h>
+#include <freax/completion.h>
+#include <freax/firmware.h>
+#include <freax/nfc.h>
 
 #include <net/nfc/nci_core.h>
 

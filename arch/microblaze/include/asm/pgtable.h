@@ -19,8 +19,8 @@ extern int mem_init_done;
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <freax/sched.h>
+#include <freax/threads.h>
 #include <asm/processor.h>		/* For TASK_SIZE */
 #include <asm/mmu.h>
 #include <asm/page.h>
@@ -63,7 +63,7 @@ extern pte_t *va_to_pte(unsigned long address);
  *
  * We use the hash table as an extended TLB, i.e. a cache of currently
  * active mappings.  We maintain a two-level page table tree, much
- * like that used by the i386, for the sake of the Linux memory
+ * like that used by the i386, for the sake of the freax memory
  * management code.  Low-level assembler code in hashtable.S
  * (procedure hash_page) is responsible for extracting ptes from the
  * tree and putting them into the hash table when necessary, and
@@ -112,7 +112,7 @@ extern pte_t *va_to_pte(unsigned long address);
 		__FILE__, __LINE__, pgd_val(e))
 
 /*
- * Bits in a linux-style PTE.  These match the bits in the
+ * Bits in a freax-style PTE.  These match the bits in the
  * (hardware-defined) PTE as closely as possible.
  */
 
@@ -122,7 +122,7 @@ extern pte_t *va_to_pte(unsigned long address);
  * 0  1  2  3  4  ... 18 19 20 21 22 23 24 25 26 27 28 29 30 31
  * RPN.....................  0  0 EX WR ZSEL.......  W  I  M  G
  *
- * Where possible we make the Linux PTE bits match up with this
+ * Where possible we make the freax PTE bits match up with this
  *
  * - bits 20 and 21 must be cleared, because we use 4k pages (4xx can
  * support down to 1k pages), this is done in the TLBMiss exception
@@ -179,7 +179,7 @@ extern pte_t *va_to_pte(unsigned long address);
 /*
  * Note: the _PAGE_COHERENT bit automatically gets set in the hardware
  * PTE if CONFIG_SMP is defined (hash_page does this); there is no need
- * to have it in the Linux PTE, and in fact the bit could be reused for
+ * to have it in the freax PTE, and in fact the bit could be reused for
  * another purpose.  -- paulus.
  */
 #define _PAGE_BASE	(_PAGE_PRESENT | _PAGE_ACCESSED)
@@ -328,7 +328,7 @@ static inline unsigned long pte_update(pte_t *p, unsigned long clr,
 }
 
 /*
- * set_pte stores a linux PTE into the linux page table.
+ * set_pte stores a freax PTE into the freax page table.
  */
 static inline void set_pte(pte_t *ptep, pte_t pte)
 {

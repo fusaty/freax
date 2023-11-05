@@ -12,17 +12,17 @@
  * This controller supports square key matrices from 1x1 up to 8x8
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/input/matrix_keypad.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/input/matrix_keypad.h>
 
 #define DRV_NAME				"lpc32xx_keys"
 

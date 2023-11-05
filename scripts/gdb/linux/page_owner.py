@@ -7,7 +7,7 @@
 #
 
 import gdb
-from linux import utils, stackdepot, constants, mm
+from freax import utils, stackdepot, constants, mm
 
 if constants.LX_CONFIG_PAGE_OWNER:
     page_ext_t = utils.CachedType('struct page_ext')

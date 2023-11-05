@@ -6,13 +6,13 @@
  * Author: Irina Tirdea <irina.tirdea@intel.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_data/x86/clk-pmc-atom.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_data/x86/clk-pmc-atom.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define PLT_CLK_NAME_BASE	"pmc_plt_clk"
 

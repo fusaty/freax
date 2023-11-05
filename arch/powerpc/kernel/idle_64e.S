@@ -5,7 +5,7 @@
  * Generic idle routine for 64 bits e500 processors
  */
 
-#include <linux/threads.h>
+#include <freax/threads.h>
 #include <asm/reg.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-offsets.h>

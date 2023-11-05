@@ -6,9 +6,9 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <freax/dccp.h>
+#include <freax/skbuff.h>
+#include <freax/export.h>
 
 #include "dccp.h"
 
@@ -176,7 +176,7 @@ static void dccp_delack_timer(struct timer_list *t)
 	bh_lock_sock(sk);
 	if (sock_owned_by_user(sk)) {
 		/* Try again later. */
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_DELAYEDACKLOCKED);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_DELAYEDACKLOCKED);
 		sk_reset_timer(sk, &icsk->icsk_delack_timer,
 			       jiffies + TCP_DELACK_MIN);
 		goto out;
@@ -206,7 +206,7 @@ static void dccp_delack_timer(struct timer_list *t)
 			icsk->icsk_ack.ato = TCP_ATO_MIN;
 		}
 		dccp_send_ack(sk);
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_DELAYEDACKS);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_DELAYEDACKS);
 	}
 out:
 	bh_unlock_sock(sk);

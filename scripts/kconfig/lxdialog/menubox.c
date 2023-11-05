@@ -3,7 +3,7 @@
  *  menubox.c -- implements the menu box
  *
  *  ORIGINAL AUTHOR: Savio Lam (lam836@cs.cuhk.hk)
- *  MODIFIED FOR LINUX KERNEL CONFIG BY: William Roadcap (roadcapw@cfw.com)
+ *  MODIFIED FOR freax KERNEL CONFIG BY: William Roadcap (roadcapw@cfw.com)
  */
 
 /*

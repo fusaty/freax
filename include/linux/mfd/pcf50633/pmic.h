@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MFD_PCF50633_PMIC_H
-#define __LINUX_MFD_PCF50633_PMIC_H
+#ifndef __freax_MFD_PCF50633_PMIC_H
+#define __freax_MFD_PCF50633_PMIC_H
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/platform_device.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/platform_device.h>
 
 #define PCF50633_REG_AUTOOUT	0x1a
 #define PCF50633_REG_AUTOENA	0x1b

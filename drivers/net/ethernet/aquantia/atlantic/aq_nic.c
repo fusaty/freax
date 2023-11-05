@@ -18,13 +18,13 @@
 #include "aq_ptp.h"
 #include "aq_filters.h"
 
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/timer.h>
-#include <linux/cpu.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <freax/moduleparam.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/timer.h>
+#include <freax/cpu.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
 #include <net/ip.h>
 #include <net/pkt_cls.h>
 

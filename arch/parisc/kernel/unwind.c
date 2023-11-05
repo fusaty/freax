@@ -9,14 +9,14 @@
  * understand what is happening here
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/assembly.h>
 #include <asm/asm-offsets.h>
 #include <asm/ptrace.h>

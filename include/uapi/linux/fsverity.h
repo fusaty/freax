@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * fs-verity user API
  *
@@ -7,11 +7,11 @@
  *
  * Copyright 2019 Google LLC
  */
-#ifndef _UAPI_LINUX_FSVERITY_H
-#define _UAPI_LINUX_FSVERITY_H
+#ifndef _UAPI_freax_FSVERITY_H
+#define _UAPI_freax_FSVERITY_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define FS_VERITY_HASH_ALG_SHA256	1
 #define FS_VERITY_HASH_ALG_SHA512	2
@@ -100,4 +100,4 @@ struct fsverity_read_metadata_arg {
 #define FS_IOC_READ_VERITY_METADATA \
 	_IOWR('f', 135, struct fsverity_read_metadata_arg)
 
-#endif /* _UAPI_LINUX_FSVERITY_H */
+#endif /* _UAPI_freax_FSVERITY_H */

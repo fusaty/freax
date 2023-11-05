@@ -6,10 +6,10 @@
  *      Casey Schaufler <casey@schaufler-ca.com>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
 #include "smack.h"
 
 struct smack_known smack_known_huh = {

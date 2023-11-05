@@ -12,7 +12,7 @@
  *	  do this instead of the 9 instructions that
  *	  binary search needs).
  */
-#include <linux/export.h>
+#include <freax/export.h>
 	.set noreorder
 	.set noat
 

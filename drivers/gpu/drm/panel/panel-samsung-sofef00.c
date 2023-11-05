@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Caleb Connolly <caleb@connolly.tech>
- * Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Generated with freax-mdss-dsi-panel-driver-generator from vendor device tree:
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/backlight.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
+#include <freax/backlight.h>
 
 #include <video/mipi_display.h>
 

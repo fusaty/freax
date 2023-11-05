@@ -5,10 +5,10 @@
  * affiliates.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/uio.h>
-#include <linux/falloc.h>
-#include <linux/file.h>
-#include <linux/fs.h>
+#include <freax/uio.h>
+#include <freax/falloc.h>
+#include <freax/file.h>
+#include <freax/fs.h>
 #include "nvmet.h"
 
 #define NVMET_MIN_MPOOL_OBJ		16

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
 #include <asm/div64.h>
 #include "omfs.h"
 

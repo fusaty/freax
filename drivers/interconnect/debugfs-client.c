@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2023, Qualcomm Innovation Center, Inc. All rights reserved.
  */
-#include <linux/debugfs.h>
-#include <linux/interconnect.h>
-#include <linux/platform_device.h>
+#include <freax/debugfs.h>
+#include <freax/interconnect.h>
+#include <freax/platform_device.h>
 
 #include "internal.h"
 

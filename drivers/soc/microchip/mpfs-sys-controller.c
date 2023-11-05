@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/mailbox_client.h>
-#include <linux/platform_device.h>
+#include <freax/slab.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/mailbox_client.h>
+#include <freax/platform_device.h>
 #include <soc/microchip/mpfs.h>
 
 /*

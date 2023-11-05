@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/stop_machine.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/circ_buf.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/edac.h>
+#include <freax/interrupt.h>
+#include <freax/string.h>
+#include <freax/stop_machine.h>
+#include <freax/delay.h>
+#include <freax/sizes.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/circ_buf.h>
 
 #include <asm/page.h>
 

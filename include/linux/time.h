@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIME_H
-#define _LINUX_TIME_H
+#ifndef _freax_TIME_H
+#define _freax_TIME_H
 
-# include <linux/cache.h>
-# include <linux/math64.h>
-# include <linux/time64.h>
+# include <freax/cache.h>
+# include <freax/math64.h>
+# include <freax/time64.h>
 
 extern struct timezone sys_tz;
 
@@ -57,7 +57,7 @@ struct tm {
 
 void time64_to_tm(time64_t totalsecs, int offset, struct tm *result);
 
-# include <linux/time32.h>
+# include <freax/time32.h>
 
 static inline bool itimerspec64_valid(const struct itimerspec64 *its)
 {

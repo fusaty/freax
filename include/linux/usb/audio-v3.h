@@ -6,10 +6,10 @@
  * by the USB DEVICE CLASS DEFINITION FOR AUDIO DEVICES Release 3.0.
  */
 
-#ifndef __LINUX_USB_AUDIO_V3_H
-#define __LINUX_USB_AUDIO_V3_H
+#ifndef __freax_USB_AUDIO_V3_H
+#define __freax_USB_AUDIO_V3_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * v1.0, v2.0 and v3.0 of this standard have many things in common. For the rest
@@ -451,4 +451,4 @@ struct uac3_interrupt_data_msg {
 #define UAC3_BADD_PD_RECOVER_D1D0			0x0258	/* 30ms */
 #define UAC3_BADD_PD_RECOVER_D2D0			0x1770	/* 300ms */
 
-#endif /* __LINUX_USB_AUDIO_V3_H */
+#endif /* __freax_USB_AUDIO_V3_H */

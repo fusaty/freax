@@ -186,7 +186,7 @@
 			reg = <0x28>;
 
 			/*
-			 * Binding doesn't support specifying linux,input-type
+			 * Binding doesn't support specifying freax,input-type
 			 * and this results in unwanted key-presses handled by
 			 * applications, hence keep it disabled for now.
 			 */
@@ -195,7 +195,7 @@
 			interrupt-parent = <&gpio>;
 			interrupts = <TEGRA_GPIO(R, 3) IRQ_TYPE_LEVEL_HIGH>;
 
-			linux,keycodes = <KEY_RESERVED>,
+			freax,keycodes = <KEY_RESERVED>,
 					 <KEY_RESERVED>,
 					 <KEY_RESERVED>,
 					 <KEY_RESERVED>,

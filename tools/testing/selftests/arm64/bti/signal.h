@@ -7,7 +7,7 @@
 #ifndef SIGNAL_H
 #define SIGNAL_H
 
-#include <linux/signal.h>
+#include <freax/signal.h>
 
 #include "system.h"
 

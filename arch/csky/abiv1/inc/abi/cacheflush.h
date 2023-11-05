@@ -3,7 +3,7 @@
 #ifndef __ABI_CSKY_CACHEFLUSH_H
 #define __ABI_CSKY_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <asm/string.h>
 #include <asm/cache.h>
 

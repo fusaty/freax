@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/slab.h>
-#include <linux/mman.h>
+#include <freax/slab.h>
+#include <freax/mman.h>
 #include <net/sock.h>
 
 #include "iw_cxgb4.h"

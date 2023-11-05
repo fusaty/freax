@@ -5,20 +5,20 @@
  * Copyright (C) Matthijs Kooijman <matthijs@stdin.nl>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_data/s3c-hsotg.h>
-#include <linux/reset.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_data/s3c-hsotg.h>
+#include <freax/reset.h>
 
-#include <linux/usb/of.h>
+#include <freax/usb/of.h>
 
 #include "core.h"
 #include "hcd.h"

@@ -3,19 +3,19 @@
 //
 // Copyright (C) 2015 Google, Inc.
 
-#include <linux/circ_buf.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/circ_buf.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #define DRV_NAME "cros-ec-debugfs"
 

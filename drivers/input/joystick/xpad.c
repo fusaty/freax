@@ -23,7 +23,7 @@
  *  - ITO Takayuki for providing essential xpad information on his website
  *  - Vojtech Pavlik     - iforce driver / input subsystem
  *  - Greg Kroah-Hartman - usb-skeleton driver
- *  - Xbox Linux project - extra USB IDs
+ *  - Xbox freax project - extra USB IDs
  *  - Pekka Pöyry (quantus) - Xbox One controller reverse-engineering
  *
  * TODO:
@@ -52,7 +52,7 @@
  * 2002-07-17 - 0.0.5 : simplified d-pad handling
  *
  * 2004-10-02 - 0.0.6 : DDR pad support
- *  - borrowed from the Xbox Linux kernel
+ *  - borrowed from the Xbox freax kernel
  *  - USB id's for commonly used dance pads are present
  *  - dance pads will map D-PAD to buttons, not axes
  *  - pass the module paramater 'dpad_to_buttons' to force
@@ -61,15 +61,15 @@
  * Later changes can be tracked in SCM.
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
-#include <linux/usb/quirks.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
+#include <freax/input.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/module.h>
+#include <freax/usb/input.h>
+#include <freax/usb/quirks.h>
 
 #define XPAD_PKT_LEN 64
 
@@ -1565,8 +1565,8 @@ static int xpad_init_ff(struct usb_xpad *xpad) { return 0; }
 #endif
 
 #if defined(CONFIG_JOYSTICK_XPAD_LEDS)
-#include <linux/leds.h>
-#include <linux/idr.h>
+#include <freax/leds.h>
+#include <freax/idr.h>
 
 static DEFINE_IDA(xpad_pad_seq);
 

@@ -8,8 +8,8 @@
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@ghostprotocols.net>
  */
 
-#include <linux/dccp.h>
-#include <linux/ipv6.h>
+#include <freax/dccp.h>
+#include <freax/ipv6.h>
 
 struct dccp6_sock {
 	struct dccp_sock  dccp;

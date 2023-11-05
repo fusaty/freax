@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* Copyright (C) 2017 Arm Ltd. */
-#ifndef _UAPI_LINUX_ARM_SDEI_H
-#define _UAPI_LINUX_ARM_SDEI_H
+#ifndef _UAPI_freax_ARM_SDEI_H
+#define _UAPI_freax_ARM_SDEI_H
 
 #define SDEI_1_0_FN_BASE			0xC4000020
 #define SDEI_1_0_MASK				0xFFFFFFE0
@@ -70,4 +70,4 @@
 #define SDEI_EVENT_PRIORITY_NORMAL		0
 #define SDEI_EVENT_PRIORITY_CRITICAL		1
 
-#endif /* _UAPI_LINUX_ARM_SDEI_H */
+#endif /* _UAPI_freax_ARM_SDEI_H */

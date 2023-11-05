@@ -15,15 +15,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/skbuff.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <freax/nfc.h>
 
 /* Handle NCI Notification packets */
 

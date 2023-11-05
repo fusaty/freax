@@ -6,10 +6,10 @@
 #ifndef _TRACE_DYNEVENT_H
 #define _TRACE_DYNEVENT_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
 
 #include "trace.h"
 

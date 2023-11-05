@@ -32,10 +32,10 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/unistd.h>	/* for __NR_bpf */
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/if_packet.h>
+#include <freax/unistd.h>	/* for __NR_bpf */
+#include <freax/filter.h>
+#include <freax/bpf.h>
+#include <freax/if_packet.h>
 #include <net/if.h>
 #include <net/ethernet.h>
 #include <netinet/ip.h>

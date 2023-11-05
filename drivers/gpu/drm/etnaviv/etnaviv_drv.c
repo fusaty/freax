@@ -3,13 +3,13 @@
  * Copyright (C) 2015-2018 Etnaviv Project
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <freax/component.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_debugfs.h>
 #include <drm/drm_drv.h>
@@ -719,7 +719,7 @@ static void __exit etnaviv_exit(void)
 module_exit(etnaviv_exit);
 
 MODULE_AUTHOR("Christian Gmeiner <christian.gmeiner@gmail.com>");
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armfreax.org.uk>");
 MODULE_AUTHOR("Lucas Stach <l.stach@pengutronix.de>");
 MODULE_DESCRIPTION("etnaviv DRM Driver");
 MODULE_LICENSE("GPL v2");

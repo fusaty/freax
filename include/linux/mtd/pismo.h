@@ -2,8 +2,8 @@
 /*
  * PISMO memory driver - http://www.pismoworld.org/
  */
-#ifndef __LINUX_MTD_PISMO_H
-#define __LINUX_MTD_PISMO_H
+#ifndef __freax_MTD_PISMO_H
+#define __freax_MTD_PISMO_H
 
 struct pismo_pdata {
 	void			(*set_vpp)(void *, int);

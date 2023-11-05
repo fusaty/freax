@@ -9,14 +9,14 @@
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/dev_printk.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
+#include <freax/bits.h>
+#include <freax/completion.h>
+#include <freax/dev_printk.h>
+#include <freax/io.h>
+#include <freax/irqreturn.h>
 
 #include "t7xx_mhccif.h"
 #include "t7xx_modem_ops.h"

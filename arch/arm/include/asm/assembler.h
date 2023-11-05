@@ -63,7 +63,7 @@
 /*
  * Data preload for architectures that support it
  */
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 #define PLD(code...)	code
 #else
 #define PLD(code...)
@@ -93,7 +93,7 @@ THUMB(	fpreg	.req	r7	)
 /*
  * Enable and disable interrupts
  */
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	.macro	disable_irq_notrace
 	cpsid	i
 	.endm
@@ -111,7 +111,7 @@ THUMB(	fpreg	.req	r7	)
 	.endm
 #endif
 
-#if __LINUX_ARM_ARCH__ < 7
+#if __freax_ARM_ARCH__ < 7
 	.macro	dsb, args
 	mcr	p15, 0, r0, c7, c10, 4
 	.endm
@@ -363,9 +363,9 @@ ALT_UP_B(.L0_\@)
  * Instruction barrier
  */
 	.macro	instr_sync
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	isb
-#elif __LINUX_ARM_ARCH__ == 6
+#elif __freax_ARM_ARCH__ == 6
 	mcr	p15, 0, r0, c7, c5, 4
 #endif
 	.endm
@@ -375,13 +375,13 @@ ALT_UP_B(.L0_\@)
  */
 	.macro	smp_dmb mode
 #ifdef CONFIG_SMP
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	.ifeqs "\mode","arm"
 	ALT_SMP(dmb	ish)
 	.else
 	ALT_SMP(W(dmb)	ish)
 	.endif
-#elif __LINUX_ARM_ARCH__ == 6
+#elif __freax_ARM_ARCH__ == 6
 	ALT_SMP(mcr	p15, 0, r0, c7, c10, 5)	@ dmb
 #else
 #error Incompatible SMP platform
@@ -398,13 +398,13 @@ ALT_UP_B(.L0_\@)
  * Raw SMP data memory barrier
  */
 	.macro	__smp_dmb mode
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	.ifeqs "\mode","arm"
 	dmb	ish
 	.else
 	W(dmb)	ish
 	.endif
-#elif __LINUX_ARM_ARCH__ == 6
+#elif __freax_ARM_ARCH__ == 6
 	mcr	p15, 0, r0, c7, c10, 5	@ dmb
 #else
 	.error "Incompatible SMP platform"
@@ -437,7 +437,7 @@ ALT_UP_B(.L0_\@)
  * you cannot return to the original mode.
  */
 .macro safe_svcmode_maskall reg:req
-#if __LINUX_ARM_ARCH__ >= 6 && !defined(CONFIG_CPU_V7M)
+#if __freax_ARM_ARCH__ >= 6 && !defined(CONFIG_CPU_V7M)
 	mrs	\reg , cpsr
 	eor	\reg, \reg, #HYP_MODE
 	tst	\reg, #MODE_MASK
@@ -544,7 +544,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 
 	.irp	c,,eq,ne,cs,cc,mi,pl,vs,vc,hi,ls,ge,lt,gt,le,hs,lo
 	.macro	ret\c, reg
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	mov\c	pc, \reg
 #else
 	.ifeqs	"\reg", "lr"
@@ -592,7 +592,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 #endif
 
 	.macro		__adldst_l, op, reg, sym, tmp, c
-	.if		__LINUX_ARM_ARCH__ < 7
+	.if		__freax_ARM_ARCH__ < 7
 	ldr\c		\tmp, .La\@
 	.subsection	1
 	.align		2
@@ -633,7 +633,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	 * mov_l - move a constant value or [relocated] address into a register
 	 */
 	.macro		mov_l, dst:req, imm:req, cond
-	.if		__LINUX_ARM_ARCH__ < 7
+	.if		__freax_ARM_ARCH__ < 7
 	ldr\cond	\dst, =\imm
 	.else
 	movw\cond	\dst, #:lower16:\imm
@@ -676,7 +676,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	.endm
 
 	.macro		__ldst_va, op, reg, tmp, sym, cond, offset
-#if __LINUX_ARM_ARCH__ >= 7 || \
+#if __freax_ARM_ARCH__ >= 7 || \
     !defined(CONFIG_ARM_HAS_GROUP_RELOCS) || \
     (defined(MODULE) && defined(CONFIG_ARM_MODULE_PLTS))
 	mov_l		\tmp, \sym, \cond
@@ -742,7 +742,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	.macro		ldr_this_cpu, rd:req, sym:req, t1:req, t2:req
 #ifndef CONFIG_SMP
 	ldr_va		\rd, \sym, tmp=\t1
-#elif __LINUX_ARM_ARCH__ >= 7 || \
+#elif __freax_ARM_ARCH__ >= 7 || \
       !defined(CONFIG_ARM_HAS_GROUP_RELOCS) || \
       (defined(MODULE) && defined(CONFIG_ARM_MODULE_PLTS))
 	this_cpu_offset	\t1
@@ -760,7 +760,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	 * @tmp: scratch register
 	 */
 	.macro		rev_l, val:req, tmp:req
-	.if		__LINUX_ARM_ARCH__ < 6
+	.if		__freax_ARM_ARCH__ < 6
 	eor		\tmp, \val, \val, ror #16
 	bic		\tmp, \tmp, #0x00ff0000
 	mov		\val, \val, ror #8
@@ -770,7 +770,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	.endif
 	.endm
 
-	.if		__LINUX_ARM_ARCH__ < 6
+	.if		__freax_ARM_ARCH__ < 6
 	.set		.Lrev_l_uses_tmp, 1
 	.else
 	.set		.Lrev_l_uses_tmp, 0
@@ -783,7 +783,7 @@ THUMB(	orr	\reg , \reg , #PSR_T_BIT	)
 	 * @c: conditional opcode suffix
 	 */
 	.macro		bl_r, dst:req, c
-	.if		__LINUX_ARM_ARCH__ < 6
+	.if		__freax_ARM_ARCH__ < 6
 	mov\c		lr, pc
 	mov\c		pc, \dst
 	.else

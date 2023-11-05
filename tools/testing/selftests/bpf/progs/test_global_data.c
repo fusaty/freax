@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019 Isovalent, Inc.
 
-#include <linux/bpf.h>
-#include <linux/pkt_cls.h>
+#include <freax/bpf.h>
+#include <freax/pkt_cls.h>
 #include <string.h>
 
 #include <bpf/bpf_helpers.h>

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/objtool.h>
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <freax/objtool.h>
+#include <freax/module.h>
+#include <freax/sort.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
 #include <asm/unwind.h>
@@ -202,7 +202,7 @@ static struct orc_entry *orc_find(unsigned long ip)
 	if (ip == 0)
 		return &null_orc_entry;
 
-	/* For non-init vmlinux addresses, use the fast lookup table: */
+	/* For non-init vmfreax addresses, use the fast lookup table: */
 	if (ip >= LOOKUP_START_IP && ip < LOOKUP_STOP_IP) {
 		unsigned int idx, start, stop;
 
@@ -228,7 +228,7 @@ static struct orc_entry *orc_find(unsigned long ip)
 				  __start_orc_unwind + start, stop - start, ip);
 	}
 
-	/* vmlinux .init slow lookup: */
+	/* vmfreax .init slow lookup: */
 	if (is_kernel_inittext(ip))
 		return __orc_find(__start_orc_unwind_ip, __start_orc_unwind,
 				  __stop_orc_unwind_ip - __start_orc_unwind_ip, ip);

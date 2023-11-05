@@ -1,8 +1,8 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux aic7xxx SCSI driver.
+# Makefile for the freax aic7xxx SCSI driver.
 #
-# $Id: //depot/linux-aic79xx-2.5.0/drivers/scsi/aic7xxx/Makefile#8 $
+# $Id: //depot/freax-aic79xx-2.5.0/drivers/scsi/aic7xxx/Makefile#8 $
 #
 
 # Let kbuild descend into aicasm when cleaning

@@ -27,8 +27,8 @@
 #ifndef __INTEL_SDVO_REGS_H__
 #define __INTEL_SDVO_REGS_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /*
  * SDVO command definitions and structures.

@@ -4,12 +4,12 @@
  * Copyright (c) 2017, Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/crc32c.h>
-#include <linux/async_tx.h>
-#include <linux/raid/md_p.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/crc32c.h>
+#include <freax/async_tx.h>
+#include <freax/raid/md_p.h>
 #include "md.h"
 #include "raid5.h"
 #include "raid5-log.h"

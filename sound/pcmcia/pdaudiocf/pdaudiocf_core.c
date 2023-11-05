@@ -5,8 +5,8 @@
  * Copyright (c) 2003 by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include "pdaudiocf.h"

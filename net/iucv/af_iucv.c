@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  IUCV protocol stack for Linux on zSeries
+ *  IUCV protocol stack for freax on zSeries
  *
  *  Copyright IBM Corp. 2006, 2009
  *
  *  Author(s):	Jennifer Hunt <jenhunt@us.ibm.com>
- *		Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *		Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  *  PM functions:
  *		Ursula Braun <ursula.braun@de.ibm.com>
  */
@@ -13,24 +13,24 @@
 #define KMSG_COMPONENT "af_iucv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/filter.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/security.h>
+#include <freax/filter.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/limits.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/security.h>
 #include <net/sock.h>
 #include <asm/ebcdic.h>
 #include <asm/cpcmd.h>
-#include <linux/kmod.h>
+#include <freax/kmod.h>
 
 #include <net/iucv/af_iucv.h>
 

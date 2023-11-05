@@ -5,9 +5,9 @@
  * Copyright 2017 IBM Corp.
  */
 
-#include <linux/preempt.h>
-#include <linux/export.h>
-#include <linux/sched.h>
+#include <freax/preempt.h>
+#include <freax/export.h>
+#include <freax/sched.h>
 #include <asm/switch_to.h>
 #include <asm/xor_altivec.h>
 #include "xor_vmx.h"

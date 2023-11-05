@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
-#ifndef _UAPI_LINUX_CYCLADES_H
-#define _UAPI_LINUX_CYCLADES_H
+#ifndef _UAPI_freax_CYCLADES_H
+#define _UAPI_freax_CYCLADES_H
 
 #warning "Support for features provided by this header has been removed"
 #warning "Please consider updating your code"
@@ -32,4 +32,4 @@ struct cyclades_monitor {
 #define CYSETWAIT		0x435912
 #define CYGETWAIT		0x435913
 
-#endif /* _UAPI_LINUX_CYCLADES_H */
+#endif /* _UAPI_freax_CYCLADES_H */

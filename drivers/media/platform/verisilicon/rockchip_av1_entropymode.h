@@ -3,7 +3,7 @@
 #ifndef _ROCKCHIP_AV1_ENTROPYMODE_H_
 #define _ROCKCHIP_AV1_ENTROPYMODE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct hantro_ctx;
 

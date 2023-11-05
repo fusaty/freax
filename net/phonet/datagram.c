@@ -10,14 +10,14 @@
  *          Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
 #include <asm/ioctls.h>
 #include <net/sock.h>
 
-#include <linux/phonet.h>
-#include <linux/export.h>
+#include <freax/phonet.h>
+#include <freax/export.h>
 #include <net/phonet/phonet.h>
 
 static int pn_backlog_rcv(struct sock *sk, struct sk_buff *skb);

@@ -8,8 +8,8 @@
  * Author: Basavaraj Natikar <Basavaraj.Natikar@amd.com>
  */
 
-#include <linux/delay.h>
-#include <linux/hid.h>
+#include <freax/delay.h>
+#include <freax/hid.h>
 
 #include "amd_sfh_init.h"
 #include "amd_sfh_interface.h"

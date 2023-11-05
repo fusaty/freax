@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * audio.h - DEPRECATED MPEG-TS audio decoder API
  *
@@ -12,7 +12,7 @@
 #ifndef _DVBAUDIO_H_
 #define _DVBAUDIO_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 typedef enum {
 	AUDIO_SOURCE_DEMUX, /* Select the demux as the main source */

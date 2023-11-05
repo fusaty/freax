@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/signal.c
+ *  freax/arch/arm/kernel/signal.c
  *
  *  Copyright (C) 1995-2009 Russell King
  */
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/resume_user_mode.h>
-#include <linux/uprobes.h>
-#include <linux/syscalls.h>
+#include <freax/errno.h>
+#include <freax/random.h>
+#include <freax/signal.h>
+#include <freax/personality.h>
+#include <freax/uaccess.h>
+#include <freax/resume_user_mode.h>
+#include <freax/uprobes.h>
+#include <freax/syscalls.h>
 
 #include <asm/elf.h>
 #include <asm/cacheflush.h>

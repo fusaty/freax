@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/io-mapping.h>
+#include <freax/mm.h>
+#include <freax/io-mapping.h>
 
 
 #include "i915_drv.h"

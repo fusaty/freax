@@ -14,9 +14,9 @@
 #include "adreno/adreno_gpu.h"
 
 #include <generated/utsrelease.h>
-#include <linux/string_helpers.h>
-#include <linux/devcoredump.h>
-#include <linux/sched/task.h>
+#include <freax/string_helpers.h>
+#include <freax/devcoredump.h>
+#include <freax/sched/task.h>
 
 /*
  * Power Management:

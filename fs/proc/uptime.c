@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/time.h>
-#include <linux/time_namespace.h>
-#include <linux/kernel_stat.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/time.h>
+#include <freax/time_namespace.h>
+#include <freax/kernel_stat.h>
 #include "internal.h"
 
 static int uptime_proc_show(struct seq_file *m, void *v)

@@ -8,9 +8,9 @@
 #ifndef SECVAR_OPS_H
 #define SECVAR_OPS_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sysfs.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/sysfs.h>
 
 extern const struct secvar_operations *secvar_ops;
 

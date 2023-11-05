@@ -24,9 +24,9 @@
 #ifndef _QCA_FRAMING_H
 #define _QCA_FRAMING_H
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/types.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/types.h>
 
 /* Frame is currently being received */
 #define QCAFRM_GATHER 0

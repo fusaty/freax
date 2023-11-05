@@ -5,8 +5,8 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Ralph Wuerthner <rwuerthn@de.ibm.com>
  *	      Felix Beck <felix.beck@de.ibm.com>
- *	      Holger Dengler <hd@linux.vnet.ibm.com>
- *	      Harald Freudenberger <freude@linux.ibm.com>
+ *	      Holger Dengler <hd@freax.vnet.ibm.com>
+ *	      Harald Freudenberger <freude@freax.ibm.com>
  *
  * Adjunct processor bus.
  */
@@ -14,30 +14,30 @@
 #define KMSG_COMPONENT "ap"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
+#include <freax/kernel_stat.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/freezer.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/notifier.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
 #include <asm/airq.h>
 #include <asm/tpi.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/isc.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
+#include <freax/hrtimer.h>
+#include <freax/ktime.h>
 #include <asm/facility.h>
-#include <linux/crypto.h>
-#include <linux/mod_devicetable.h>
-#include <linux/debugfs.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
+#include <freax/crypto.h>
+#include <freax/mod_devicetable.h>
+#include <freax/debugfs.h>
+#include <freax/ctype.h>
+#include <freax/module.h>
 
 #include "ap_bus.h"
 #include "ap_debug.h"

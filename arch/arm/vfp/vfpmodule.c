@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/vfp/vfpmodule.c
+ *  freax/arch/arm/vfp/vfpmodule.c
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
  */
-#include <linux/types.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
-#include <linux/export.h>
-#include <linux/perf_event.h>
+#include <freax/types.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/hardirq.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
+#include <freax/signal.h>
+#include <freax/sched/signal.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/uaccess.h>
+#include <freax/user.h>
+#include <freax/export.h>
+#include <freax/perf_event.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

@@ -8,17 +8,17 @@
  * Based loosely on initial version by Oleksandr G Zhadan
  *
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/delay.h>
 
 #define DRV_NAME	"jcore_spi"
 

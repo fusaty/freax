@@ -4,8 +4,8 @@
 #ifndef DRIVERS_FSI_MASTER_I2CR_H
 #define DRIVERS_FSI_MASTER_I2CR_H
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 
 #include "fsi-master.h"
 

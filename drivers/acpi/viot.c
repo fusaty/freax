@@ -18,12 +18,12 @@
  */
 #define pr_fmt(fmt) "ACPI: VIOT: " fmt
 
-#include <linux/acpi_viot.h>
-#include <linux/fwnode.h>
-#include <linux/iommu.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/acpi_viot.h>
+#include <freax/fwnode.h>
+#include <freax/iommu.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 
 struct viot_iommu {
 	/* Node offset within the table */

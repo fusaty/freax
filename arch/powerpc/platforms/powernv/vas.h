@@ -5,13 +5,13 @@
 
 #ifndef _VAS_H
 #define _VAS_H
-#include <linux/atomic.h>
-#include <linux/idr.h>
+#include <freax/atomic.h>
+#include <freax/idr.h>
 #include <asm/vas.h>
-#include <linux/io.h>
-#include <linux/dcache.h>
-#include <linux/mutex.h>
-#include <linux/stringify.h>
+#include <freax/io.h>
+#include <freax/dcache.h>
+#include <freax/mutex.h>
+#include <freax/stringify.h>
 
 /*
  * Overview of Virtual Accelerator Switchboard (VAS).
@@ -400,7 +400,7 @@ struct vas_winctx {
 	bool notify_os_intr_reg;
 
 	int lpid;
-	int pidr;		/* value from SPRN_PID, not linux pid */
+	int pidr;		/* value from SPRN_PID, not freax pid */
 	int lnotify_lpid;
 	int lnotify_pid;
 	int lnotify_tid;

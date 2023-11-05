@@ -6,7 +6,7 @@
 
 #include "bcachefs_ioctl.h"
 
-#include <linux/math64.h>
+#include <freax/math64.h>
 
 struct bch_fs *bch2_dev_to_fs(dev_t);
 struct bch_fs *bch2_uuid_to_fs(__uuid_t);

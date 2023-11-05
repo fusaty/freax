@@ -14,22 +14,22 @@
  *         for ST-Ericsson.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
-#include <linux/mfd/abx500/ab8500-codec.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/mfd/abx500/ab8500.h>
+#include <freax/mfd/abx500.h>
+#include <freax/mfd/abx500/ab8500-sysctrl.h>
+#include <freax/mfd/abx500/ab8500-codec.h>
+#include <freax/regulator/consumer.h>
+#include <freax/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

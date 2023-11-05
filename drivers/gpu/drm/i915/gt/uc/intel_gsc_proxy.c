@@ -3,7 +3,7 @@
  * Copyright © 2023 Intel Corporation
  */
 
-#include <linux/component.h>
+#include <freax/component.h>
 
 #include <drm/i915_component.h>
 #include <drm/i915_gsc_proxy_mei_interface.h>

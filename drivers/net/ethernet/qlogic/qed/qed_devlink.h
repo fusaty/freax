@@ -6,7 +6,7 @@
 #ifndef _QED_DEVLINK_H
 #define _QED_DEVLINK_H
 
-#include <linux/qed/qed_if.h>
+#include <freax/qed/qed_if.h>
 #include <net/devlink.h>
 
 struct devlink *qed_devlink_register(struct qed_dev *cdev);

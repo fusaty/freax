@@ -4,16 +4,16 @@
  */
 
 /*
- * Guillemot Digital Interface Protocol driver for Linux
+ * Guillemot Digital Interface Protocol driver for freax
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gameport.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/gameport.h>
+#include <freax/input.h>
+#include <freax/jiffies.h>
 
 #define DRIVER_DESC	"Guillemot Digital joystick driver"
 

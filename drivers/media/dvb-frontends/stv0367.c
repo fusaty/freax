@@ -9,13 +9,13 @@
  * Copyright (C) 2010,2011 Igor M. Liplianin <liplianin@netup.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
 
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 
 #include "stv0367.h"
 #include "stv0367_defs.h"

@@ -6,7 +6,7 @@
  *  Copyright (c) 2022 Hewlett-Packard Inc.
  */
 
-#include <linux/wmi.h>
+#include <freax/wmi.h>
 #include "bioscfg.h"
 
 /*

@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/errno.h>
-#include <linux/iopoll.h>
-#include <linux/mutex.h>
+#include <freax/bitfield.h>
+#include <freax/errno.h>
+#include <freax/iopoll.h>
+#include <freax/mutex.h>
 
 #include "platform-access.h"
 

@@ -5,8 +5,8 @@
  * Copyright (C) 2006-2008 Barco N.V.
  */
 
-#ifndef _LINUX_USB_C67X00_H
-#define _LINUX_USB_C67X00_H
+#ifndef _freax_USB_C67X00_H
+#define _freax_USB_C67X00_H
 
 /* SIE configuration */
 #define C67X00_SIE_UNUSED	0
@@ -31,4 +31,4 @@ struct c67x00_platform_data {
 	unsigned long hpi_regstep;	/* Step between HPI registers  */
 };
 
-#endif /* _LINUX_USB_C67X00_H */
+#endif /* _freax_USB_C67X00_H */

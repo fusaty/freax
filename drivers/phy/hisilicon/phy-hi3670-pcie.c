@@ -15,16 +15,16 @@
  *	https://lore.kernel.org/lkml/4c9d6581478aa966698758c0420933f5defab4dd.1612335031.git.mchehab+huawei@kernel.org/
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_gpio.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define AXI_CLK_FREQ				207500000
 #define REF_CLK_FREQ				100000000

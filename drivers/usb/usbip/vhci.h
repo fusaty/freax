@@ -7,14 +7,14 @@
 #ifndef __USBIP_VHCI_H
 #define __USBIP_VHCI_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/wait.h>
 
 struct vhci_device {
 	struct usb_device *udev;

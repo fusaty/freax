@@ -12,15 +12,15 @@
  *   1. RAID features [comparison, XOR, striping, mirroring, etc.]
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #define	DRV_NAME	"pata_atp867x"
 #define	DRV_VERSION	"0.7.5"

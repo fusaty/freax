@@ -8,11 +8,11 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/tty.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
+#include <freax/tty.h>
+#include <freax/fdtable.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"
@@ -675,7 +675,7 @@ static int match_file(const void *p, struct file *file, unsigned int fd)
 }
 
 
-/* based on selinux's flush_unauthorized_files */
+/* based on sefreax's flush_unauthorized_files */
 void aa_inherit_files(const struct cred *cred, struct files_struct *files)
 {
 	struct aa_label *label = aa_get_newest_cred_label(cred);

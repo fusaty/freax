@@ -21,8 +21,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/math.h>
-#include <linux/string_helpers.h>
+#include <freax/math.h>
+#include <freax/string_helpers.h>
 
 #include "i915_reg.h"
 #include "intel_de.h"

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/dpll.yaml */
 /* YNL-GEN kernel header */
 
-#ifndef _LINUX_DPLL_GEN_H
-#define _LINUX_DPLL_GEN_H
+#ifndef _freax_DPLL_GEN_H
+#define _freax_DPLL_GEN_H
 
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/dpll.h>
+#include <uapi/freax/dpll.h>
 
 /* Common nested types */
 extern const struct nla_policy dpll_pin_parent_device_nl_policy[DPLL_A_PIN_PHASE_OFFSET + 1];
@@ -48,4 +48,4 @@ enum {
 
 extern struct genl_family dpll_nl_family;
 
-#endif /* _LINUX_DPLL_GEN_H */
+#endif /* _freax_DPLL_GEN_H */

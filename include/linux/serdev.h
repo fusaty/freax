@@ -2,15 +2,15 @@
 /*
  * Copyright (C) 2016-2017 Linaro Ltd., Rob Herring <robh@kernel.org>
  */
-#ifndef _LINUX_SERDEV_H
-#define _LINUX_SERDEV_H
+#ifndef _freax_SERDEV_H
+#define _freax_SERDEV_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/delay.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/iopoll.h>
+#include <freax/uaccess.h>
+#include <freax/termios.h>
+#include <freax/delay.h>
 
 struct serdev_controller;
 struct serdev_device;
@@ -341,4 +341,4 @@ static inline bool serdev_acpi_get_uart_resource(struct acpi_resource *ares,
 }
 #endif /* CONFIG_ACPI */
 
-#endif /*_LINUX_SERDEV_H */
+#endif /*_freax_SERDEV_H */

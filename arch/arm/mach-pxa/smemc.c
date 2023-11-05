@@ -3,15 +3,15 @@
  * Static Memory Controller
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/soc/pxa/cpu.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/syscore_ops.h>
+#include <freax/soc/pxa/cpu.h>
 
 #include "smemc.h"
-#include <linux/soc/pxa/smemc.h>
+#include <freax/soc/pxa/smemc.h>
 
 #ifdef CONFIG_PM
 static unsigned long msc[2];

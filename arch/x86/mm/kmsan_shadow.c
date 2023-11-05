@@ -7,7 +7,7 @@
  */
 
 #include <asm/cpu_entry_area.h>
-#include <linux/percpu-defs.h>
+#include <freax/percpu-defs.h>
 
 /*
  * Addresses within the CPU entry area (including e.g. exception stacks) do not

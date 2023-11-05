@@ -9,13 +9,13 @@
  *			Ldd-Mlp <ldd-mlp@list.ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/videodev2.h>
 #include <media/i2c/lm3560.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

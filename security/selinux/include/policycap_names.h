@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _SELINUX_POLICYCAP_NAMES_H_
-#define _SELINUX_POLICYCAP_NAMES_H_
+#ifndef _SEfreax_POLICYCAP_NAMES_H_
+#define _SEfreax_POLICYCAP_NAMES_H_
 
 #include "policycap.h"
 
 /* Policy capability names */
-const char *const selinux_policycap_names[__POLICYDB_CAP_MAX] = {
+const char *const sefreax_policycap_names[__POLICYDB_CAP_MAX] = {
 	"network_peer_controls",
 	"open_perms",
 	"extended_socket_class",
@@ -16,4 +16,4 @@ const char *const selinux_policycap_names[__POLICYDB_CAP_MAX] = {
 	"ioctl_skip_cloexec",
 };
 
-#endif /* _SELINUX_POLICYCAP_NAMES_H_ */
+#endif /* _SEfreax_POLICYCAP_NAMES_H_ */

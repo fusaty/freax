@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
 
 #include "dibx000_common.h"
 

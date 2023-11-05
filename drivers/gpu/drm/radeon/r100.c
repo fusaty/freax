@@ -26,11 +26,11 @@
  *          Jerome Glisse
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

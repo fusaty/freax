@@ -9,13 +9,13 @@
  *	Roopa Prabhu <roopa@cumulusnetworks.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/neighbour.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/neighbour.h>
 #include <net/arp.h>
-#include <linux/if_vlan.h>
-#include <linux/inetdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/inetdevice.h>
 #include <net/addrconf.h>
 #include <net/ipv6_stubs.h>
 #if IS_ENABLED(CONFIG_IPV6)

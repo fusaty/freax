@@ -11,7 +11,7 @@
 #define GAUDI2_EVENT_QUEUE_MSIX_IDX	0
 
 #define UBOOT_FW_OFFSET			0x100000	/* 1MB in SRAM */
-#define LINUX_FW_OFFSET			0x800000	/* 8BM in DDR */
+#define freax_FW_OFFSET			0x800000	/* 8BM in DDR */
 
 #define GAUDI2_PLL_FREQ_LOW		200000000 /* 200 MHz */
 
@@ -47,7 +47,7 @@
 
 enum gaudi2_fw_status {
 	GAUDI2_PID_STATUS_UP = 0x1,	/* PID on ARC0 is up */
-	GAUDI2_ARM_STATUS_UP = 0x2,	/* ARM Linux Boot complete */
+	GAUDI2_ARM_STATUS_UP = 0x2,	/* ARM freax Boot complete */
 	GAUDI2_MGMT_STATUS_UP = 0x3,	/* ARC1 Mgmt is up */
 	GAUDI2_STATUS_LAST = 0xFF
 };

@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Kang Luwei <luwei.kang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@freax.intel.com>
  *   Wu Hao <hao.wu@intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
@@ -16,11 +16,11 @@
  *   Henry Mitchel <henry.mitchel@intel.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/fpga/fpga-mgr.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/iopoll.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/fpga/fpga-mgr.h>
 
 #include "dfl-fme-pr.h"
 

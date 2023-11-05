@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR MIT) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR MIT) */
 /******************************************************************************
  * privcmd.h
  *
@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,11 +31,11 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __LINUX_PUBLIC_PRIVCMD_H__
-#define __LINUX_PUBLIC_PRIVCMD_H__
+#ifndef __freax_PUBLIC_PRIVCMD_H__
+#define __freax_PUBLIC_PRIVCMD_H__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 #include <xen/interface/xen.h>
 
 struct privcmd_hypercall {
@@ -158,4 +158,4 @@ struct privcmd_ioeventfd {
 #define IOCTL_PRIVCMD_IOEVENTFD					\
 	_IOW('P', 9, struct privcmd_ioeventfd)
 
-#endif /* __LINUX_PUBLIC_PRIVCMD_H__ */
+#endif /* __freax_PUBLIC_PRIVCMD_H__ */

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/arch/arm/mm/proc-feroceon.S: MMU functions for Feroceon
+ *  freax/arch/arm/mm/proc-feroceon.S: MMU functions for Feroceon
  *
  *  Heavily based on proc-arm926.S
  *  Maintainer: Assaf Hoffman <hoffman@marvell.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/hwcap.h>
 #include <asm/pgtable-hwdef.h>

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
 
 #include <asm/barrier.h>
 #include <asm/krait-l2-accessors.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux network driver for QLogic BR-series Converged Network Adapter.
+ * freax network driver for QLogic BR-series Converged Network Adapter.
  */
 /*
  * Copyright (c) 2005-2014 Brocade Communications Systems, Inc.
@@ -11,10 +11,10 @@
 
 #include "cna.h"
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/rtnetlink.h>
 
 #include "bna.h"
 

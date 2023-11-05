@@ -3,13 +3,13 @@
  * OF helpers for network devices.
  */
 
-#ifndef __LINUX_OF_NET_H
-#define __LINUX_OF_NET_H
+#ifndef __freax_OF_NET_H
+#define __freax_OF_NET_H
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 #if defined(CONFIG_OF) && defined(CONFIG_NET)
-#include <linux/of.h>
+#include <freax/of.h>
 
 struct net_device;
 extern int of_get_phy_mode(struct device_node *np, phy_interface_t *interface);
@@ -45,4 +45,4 @@ static inline struct net_device *of_find_net_device_by_node(struct device_node *
 }
 #endif
 
-#endif /* __LINUX_OF_NET_H */
+#endif /* __freax_OF_NET_H */

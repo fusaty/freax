@@ -5,10 +5,10 @@
  * Author: Zhichang Yuan <yuanzhichang@hisilicon.com>
  */
 
-#ifndef __LINUX_LOGIC_PIO_H
-#define __LINUX_LOGIC_PIO_H
+#ifndef __freax_LOGIC_PIO_H
+#define __freax_LOGIC_PIO_H
 
-#include <linux/fwnode.h>
+#include <freax/fwnode.h>
 
 enum {
 	LOGIC_PIO_INDIRECT,		/* Indirect IO flag */
@@ -118,4 +118,4 @@ void logic_pio_unregister_range(struct logic_pio_hwaddr *range);
 resource_size_t logic_pio_to_hwaddr(unsigned long pio);
 unsigned long logic_pio_trans_cpuaddr(resource_size_t hw_addr);
 
-#endif /* __LINUX_LOGIC_PIO_H */
+#endif /* __freax_LOGIC_PIO_H */

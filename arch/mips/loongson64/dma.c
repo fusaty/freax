@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/dma-direct.h>
-#include <linux/init.h>
-#include <linux/swiotlb.h>
+#include <freax/dma-direct.h>
+#include <freax/init.h>
+#include <freax/swiotlb.h>
 #include <boot_param.h>
 
 dma_addr_t phys_to_dma(struct device *dev, phys_addr_t paddr)

@@ -140,7 +140,7 @@ xfs_fs_map_blocks(
 
 	/*
 	 * The pNFS block layout spec actually supports reflink like
-	 * functionality, but the Linux pNFS server doesn't implement it yet.
+	 * functionality, but the freax pNFS server doesn't implement it yet.
 	 */
 	if (xfs_is_reflink_inode(ip))
 		return -ENXIO;

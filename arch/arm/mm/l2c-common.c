@@ -3,8 +3,8 @@
  * Copyright (C) 2010 ARM Ltd.
  * Written by Catalin Marinas <catalin.marinas@arm.com>
  */
-#include <linux/bug.h>
-#include <linux/smp.h>
+#include <freax/bug.h>
+#include <freax/smp.h>
 #include <asm/outercache.h>
 
 void outer_disable(void)

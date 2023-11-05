@@ -21,10 +21,10 @@
  * Only synchronous operations are supported.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
-#include <linux/comedi/comedi_8254.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8255.h>
+#include <freax/comedi/comedi_8254.h>
 
 /*
  * Register map

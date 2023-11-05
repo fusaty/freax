@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include <linux/refcount.h>
-#include <linux/idr.h>
+#include <freax/refcount.h>
+#include <freax/idr.h>
 
 #include "spectrum.h"
 #include "reg.h"

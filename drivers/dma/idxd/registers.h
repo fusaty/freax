@@ -3,7 +3,7 @@
 #ifndef _IDXD_REGISTERS_H_
 #define _IDXD_REGISTERS_H_
 
-#include <uapi/linux/idxd.h>
+#include <uapi/freax/idxd.h>
 
 /* PCI Config */
 #define PCI_DEVICE_ID_INTEL_DSA_SPR0	0x0b25

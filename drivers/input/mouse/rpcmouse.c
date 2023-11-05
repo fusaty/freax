@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Acorn RiscPC mouse driver for Linux/ARM
+ *  Acorn RiscPC mouse driver for freax/ARM
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  *  Copyright (C) 1996-2002 Russell King
@@ -14,12 +14,12 @@
  * the complete state and then work out if something has changed.
  */
 
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/ptrace.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/io.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>

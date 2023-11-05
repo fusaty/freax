@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CRC7_H
-#define _LINUX_CRC7_H
-#include <linux/types.h>
+#ifndef _freax_CRC7_H
+#define _freax_CRC7_H
+#include <freax/types.h>
 
 extern const u8 crc7_be_syndrome_table[256];
 

@@ -5,17 +5,17 @@
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/slab.h>
+#include <freax/platform_data/omap1_bl.h>
 
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/soc/ti/omap1-mux.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-mux.h>
 
 #define OMAPBL_MAX_INTENSITY		0xff
 

@@ -8,7 +8,7 @@
  *         Chun-Chia Chiu <chun-chia.chiu@mediatek.com>
  */
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 
 #include "mt8188-afe-common.h"
 #include "mt8188-afe-clk.h"

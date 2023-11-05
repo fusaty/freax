@@ -3,17 +3,17 @@
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/security.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
+#include <freax/sched/task_stack.h>
+#include <freax/stacktrace.h>
+#include <freax/security.h>
+#include <freax/kallsyms.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/ftrace.h>
+#include <freax/module.h>
+#include <freax/sysctl.h>
+#include <freax/init.h>
 
 #include <asm/setup.h>
 

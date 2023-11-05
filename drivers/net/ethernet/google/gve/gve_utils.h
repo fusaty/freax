@@ -7,7 +7,7 @@
 #ifndef _GVE_UTILS_H
 #define _GVE_UTILS_H
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 #include "gve.h"
 

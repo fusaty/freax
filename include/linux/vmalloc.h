@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VMALLOC_H
-#define _LINUX_VMALLOC_H
+#ifndef _freax_VMALLOC_H
+#define _freax_VMALLOC_H
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/llist.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/llist.h>
 #include <asm/page.h>		/* pgprot_t */
-#include <linux/rbtree.h>
-#include <linux/overflow.h>
+#include <freax/rbtree.h>
+#include <freax/overflow.h>
 
 #include <asm/vmalloc.h>
 
@@ -295,4 +295,4 @@ bool vmalloc_dump_obj(void *object);
 static inline bool vmalloc_dump_obj(void *object) { return false; }
 #endif
 
-#endif /* _LINUX_VMALLOC_H */
+#endif /* _freax_VMALLOC_H */

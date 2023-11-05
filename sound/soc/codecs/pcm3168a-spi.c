@@ -7,9 +7,9 @@
  * Author: Damien Horsley <Damien.Horsley@imgtec.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
 
 #include <sound/soc.h>
 

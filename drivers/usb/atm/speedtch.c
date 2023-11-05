@@ -10,18 +10,18 @@
  ******************************************************************************/
 
 #include <asm/page.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/usb/ch9.h>
+#include <freax/workqueue.h>
 
 #include "usbatm.h"
 

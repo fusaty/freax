@@ -7,15 +7,15 @@
  * Based on mtk_wdt.c
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <uapi/linux/psci.h>
+#include <freax/arm-smccc.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
+#include <uapi/freax/psci.h>
 
 #define DRV_NAME		"arm_smc_wdt"
 #define DRV_VERSION		"1.0"

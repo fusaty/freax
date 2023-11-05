@@ -46,10 +46,10 @@
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 110 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -61,21 +61,21 @@
 		key-home {
 			label = "Home";
 			gpios = <&tlmm 108 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOMEPAGE>;
+			freax,code = <KEY_HOMEPAGE>;
 			debounce-interval = <15>;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&tlmm 107 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <15>;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&tlmm 106 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
 		};
 	};

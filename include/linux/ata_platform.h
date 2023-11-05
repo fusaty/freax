@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ATA_PLATFORM_H
-#define __LINUX_ATA_PLATFORM_H
+#ifndef __freax_ATA_PLATFORM_H
+#define __freax_ATA_PLATFORM_H
 
 struct pata_platform_info {
 	/*
@@ -29,4 +29,4 @@ struct mv_sata_platform_data {
 	int	n_ports; /* number of sata ports */
 };
 
-#endif /* __LINUX_ATA_PLATFORM_H */
+#endif /* __freax_ATA_PLATFORM_H */

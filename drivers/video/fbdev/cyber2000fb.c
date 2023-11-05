@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/cyber2000fb.c
+ *  freax/drivers/video/cyber2000fb.c
  *
  *  Copyright (C) 1998-2002 Russell King
  *
@@ -33,20 +33,20 @@
  * (which, incidentally, is about the same saving as a 2.5in hard disk
  * entering standby mode.)
  */
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 #ifdef __arm__
 #include <asm/mach-types.h>

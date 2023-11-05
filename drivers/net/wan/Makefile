@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux network (wan) device drivers.
+# Makefile for the freax network (wan) device drivers.
 #
 # 3 Aug 2000, Christoph Hellwig <hch@infradead.org>
 # Rewritten to use lists instead of if-statements.
@@ -29,7 +29,7 @@ obj-$(CONFIG_SLIC_DS26522)	+= slic_ds26522.o
 clean-files := wanxlfw.inc
 $(obj)/wanxl.o:	$(obj)/wanxlfw.inc
 
-CROSS_COMPILE_M68K = m68k-linux-gnu-
+CROSS_COMPILE_M68K = m68k-freax-gnu-
 
 ifeq ($(CONFIG_WANXL_BUILD_FIRMWARE),y)
 ifeq ($(ARCH),m68k)

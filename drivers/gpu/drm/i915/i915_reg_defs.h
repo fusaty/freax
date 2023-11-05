@@ -6,8 +6,8 @@
 #ifndef __I915_REG_DEFS__
 #define __I915_REG_DEFS__
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
 
 /**
  * REG_BIT() - Prepare a u32 bit value

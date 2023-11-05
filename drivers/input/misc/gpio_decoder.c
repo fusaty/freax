@@ -6,13 +6,13 @@
  * encoded numeric value into an input event.
  */
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 struct gpio_decoder {
 	struct gpio_descs *input_gpios;
@@ -69,7 +69,7 @@ static int gpio_decoder_probe(struct platform_device *pdev)
 		return -ENOMEM;
 
 	decoder->dev = dev;
-	device_property_read_u32(dev, "linux,axis", &decoder->axis);
+	device_property_read_u32(dev, "freax,axis", &decoder->axis);
 
 	decoder->input_gpios = devm_gpiod_get_array(dev, NULL, GPIOD_IN);
 	if (IS_ERR(decoder->input_gpios)) {

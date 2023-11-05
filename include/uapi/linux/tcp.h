@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -15,12 +15,12 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _UAPI_LINUX_TCP_H
-#define _UAPI_LINUX_TCP_H
+#ifndef _UAPI_freax_TCP_H
+#define _UAPI_freax_TCP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
-#include <linux/socket.h>
+#include <freax/socket.h>
 
 struct tcphdr {
 	__be16	source;
@@ -483,4 +483,4 @@ struct tcp_zerocopy_receive {
 	__u32 msg_flags;
 	__u32 reserved; /* set to 0 for now */
 };
-#endif /* _UAPI_LINUX_TCP_H */
+#endif /* _UAPI_freax_TCP_H */

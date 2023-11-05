@@ -12,9 +12,9 @@
 
 #include "ssb_private.h"
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
 
 
 static inline u32 extif_read32(struct ssb_extif *extif, u16 offset)

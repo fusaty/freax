@@ -11,15 +11,15 @@
  */
 
 /*
- * Logitech Bus Mouse Driver for Linux
+ * Logitech Bus Mouse Driver for freax
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

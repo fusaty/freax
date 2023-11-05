@@ -6,8 +6,8 @@
 #ifndef __INTEL_GLOBAL_STATE_H__
 #define __INTEL_GLOBAL_STATE_H__
 
-#include <linux/kref.h>
-#include <linux/list.h>
+#include <freax/kref.h>
+#include <freax/list.h>
 
 struct drm_i915_private;
 struct intel_atomic_state;

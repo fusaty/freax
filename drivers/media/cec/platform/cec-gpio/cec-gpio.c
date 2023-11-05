@@ -3,11 +3,11 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
 #include <media/cec-notifier.h>
 #include <media/cec-pin.h>
 

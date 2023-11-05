@@ -24,19 +24,19 @@
  *     David Airlie
  */
 
-#include <linux/async.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/vga_switcheroo.h>
+#include <freax/async.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/vga_switcheroo.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_fb_helper.h>

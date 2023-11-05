@@ -10,16 +10,16 @@
  *	    Hal Feng <hal.feng@starfivetech.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

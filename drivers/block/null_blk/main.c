@@ -3,12 +3,12 @@
  * Add configfs and memory store: Kyungchan Koh <kkc6196@fb.com> and
  * Shaohua Li <shli@fb.com>
  */
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/init.h>
 #include "null_blk.h"
 
 #undef pr_fmt

@@ -2,21 +2,21 @@
 /*
  * SMP support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The freax Foundation. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/sched/mm.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/mm_types.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/percpu.h>
+#include <freax/sched/mm.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/cpu.h>
+#include <freax/mm_types.h>
 
 #include <asm/time.h>    /*  timer_interrupt  */
 #include <asm/hexagon_vm.h>

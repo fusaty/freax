@@ -2,28 +2,28 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
-#include <linux/hugetlb.h>
-#include <linux/mmzone.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/memremap.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/highmem.h>
+#include <freax/swap.h>
+#include <freax/proc_fs.h>
+#include <freax/pfn.h>
+#include <freax/hardirq.h>
+#include <freax/gfp.h>
+#include <freax/hugetlb.h>
+#include <freax/mmzone.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/bootinfo.h>

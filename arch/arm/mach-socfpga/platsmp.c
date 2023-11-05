@@ -5,12 +5,12 @@
  * Based on platsmp.c, Copyright (C) 2002 ARM Ltd.
  * Copyright (C) 2012 Altera Corporation
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_scu.h>

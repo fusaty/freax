@@ -498,7 +498,7 @@
 #define H_GUEST_CAP_BITMAP2	(1UL<<(63-63))
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * plpar_hcall_norets: - Make a pseries hypervisor call with no return arguments

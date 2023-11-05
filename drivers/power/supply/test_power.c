@@ -11,11 +11,11 @@
  * http://downloads.pylone.jp/src/virtual_battery/virtual_battery-0.0.1.tar.bz2
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/power_supply.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
 #include <generated/utsrelease.h>
 
 enum test_power_id {
@@ -75,7 +75,7 @@ static int test_power_get_battery_property(struct power_supply *psy,
 		val->strval = "Test battery";
 		break;
 	case POWER_SUPPLY_PROP_MANUFACTURER:
-		val->strval = "Linux";
+		val->strval = "freax";
 		break;
 	case POWER_SUPPLY_PROP_SERIAL_NUMBER:
 		val->strval = UTS_RELEASE;

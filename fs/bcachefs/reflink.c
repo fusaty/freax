@@ -11,7 +11,7 @@
 #include "subvolume.h"
 #include "super-io.h"
 
-#include <linux/sched/signal.h>
+#include <freax/sched/signal.h>
 
 static inline unsigned bkey_type_to_indirect(const struct bkey *k)
 {

@@ -22,28 +22,28 @@
 #define IOC3_NAME	"ioc3-eth"
 #define IOC3_VERSION	"2.6.3-4"
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crc16.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/gfp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/crc16.h>
+#include <freax/crc32.h>
+#include <freax/mii.h>
+#include <freax/in.h>
+#include <freax/io.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/gfp.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/nvmem-consumer.h>
 
 #include <net/ip.h>
 
@@ -1281,6 +1281,6 @@ static struct platform_driver ioc3eth_driver = {
 
 module_platform_driver(ioc3eth_driver);
 
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@freax-mips.org>");
 MODULE_DESCRIPTION("SGI IOC3 Ethernet driver");
 MODULE_LICENSE("GPL");

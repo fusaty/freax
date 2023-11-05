@@ -12,21 +12,21 @@
  *  i740fb by Patrick LERDA, v0.9
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/console.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/console.h>
 #include <video/vga.h>
 
 #include "i740_reg.h"
@@ -1305,7 +1305,7 @@ static void __exit i740fb_exit(void)
 module_init(i740fb_init);
 module_exit(i740fb_exit);
 
-MODULE_AUTHOR("(c) 2011 Ondrej Zary <linux@rainbow-software.org>");
+MODULE_AUTHOR("(c) 2011 Ondrej Zary <freax@rainbow-software.org>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("fbdev driver for Intel740");
 

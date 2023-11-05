@@ -8,17 +8,17 @@
  * Copyright:   (C) 2009 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/twl.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/twl4030-audio.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/mfd/twl.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/twl4030-audio.h>
 
 #define TWL4030_AUDIO_CELLS	2
 

@@ -8,18 +8,18 @@
  *	 Mauro Carvalho Chehab
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
-#include <linux/bitmap.h>
-#include <linux/math64.h>
-#include <linux/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/edac.h>
+#include <freax/mmzone.h>
+#include <freax/smp.h>
+#include <freax/bitmap.h>
+#include <freax/math64.h>
+#include <freax/mod_devicetable.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/processor.h>

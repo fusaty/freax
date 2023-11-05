@@ -2,9 +2,9 @@
 #ifndef SOUND_FIREWIRE_LIB_H_INCLUDED
 #define SOUND_FIREWIRE_LIB_H_INCLUDED
 
-#include <linux/firewire-constants.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <freax/firewire-constants.h>
+#include <freax/types.h>
+#include <freax/sched.h>
 #include <sound/rawmidi.h>
 
 struct fw_unit;

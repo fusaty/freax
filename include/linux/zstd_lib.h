@@ -12,8 +12,8 @@
 #define ZSTD_H_235446
 
 /* ======   Dependency   ======*/
-#include <linux/limits.h>   /* INT_MAX */
-#include <linux/types.h>   /* size_t */
+#include <freax/limits.h>   /* INT_MAX */
+#include <freax/types.h>   /* size_t */
 
 
 /* =====   ZSTDLIB_API : control library symbols visibility   ===== */

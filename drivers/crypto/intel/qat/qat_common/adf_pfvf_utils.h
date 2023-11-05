@@ -3,7 +3,7 @@
 #ifndef ADF_PFVF_UTILS_H
 #define ADF_PFVF_UTILS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "adf_pfvf_msg.h"
 
 /* How long to wait for far side to acknowledge receipt */

@@ -6,13 +6,13 @@
  * Copyright (c) 2020, ASPEED Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 #define DEVICE_NAME "spi-aspeed-smc"
 

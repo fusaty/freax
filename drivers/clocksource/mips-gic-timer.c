@@ -3,17 +3,17 @@
 
 #define pr_fmt(fmt) "mips-gic-timer: " fmt
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/sched_clock.h>
-#include <linux/smp.h>
-#include <linux/time.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/of_irq.h>
+#include <freax/percpu.h>
+#include <freax/sched_clock.h>
+#include <freax/smp.h>
+#include <freax/time.h>
 #include <asm/mips-cps.h>
 
 static DEFINE_PER_CPU(struct clock_event_device, gic_clockevent_device);

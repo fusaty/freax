@@ -8,7 +8,7 @@
  * This file incorporates work covered by the following copyright and
  * permission notice:
 
- * WPA Supplicant - driver interaction with Linux nl80211/cfg80211
+ * WPA Supplicant - driver interaction with freax nl80211/cfg80211
  * Copyright (c) 2003-2008, Jouni Malinen <j@w1.fi>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@
 #include <netlink/genl/family.h>
 #include <netlink/genl/ctrl.h>
 
-#include <linux/thermal.h>
+#include <freax/thermal.h>
 #include "isst.h"
 
 struct hfi_event_data {

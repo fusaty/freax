@@ -17,10 +17,10 @@
 #ifndef __POWER_SMARTREFLEX_H
 #define __POWER_SMARTREFLEX_H
 
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/platform_data/voltage-omap.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/platform_data/voltage-omap.h>
 
 /*
  * Different Smartreflex IPs version. The v1 is the 65nm version used in

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * frontend.h
  *
@@ -12,7 +12,7 @@
 #ifndef _DVBFRONTEND_H_
 #define _DVBFRONTEND_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * enum fe_caps - Frontend capabilities

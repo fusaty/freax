@@ -5,11 +5,11 @@
  * Copyright (C) 2015 Jakub Kicinski <kubakici@wp.pl>
  */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
+#include <freax/usb.h>
+#include <freax/skbuff.h>
 
 #include "mt7601u.h"
 #include "dma.h"

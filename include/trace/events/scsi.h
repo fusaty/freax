@@ -7,8 +7,8 @@
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <freax/tracepoint.h>
+#include <freax/trace_seq.h>
 
 #define scsi_opcode_name(opcode)	{ opcode, #opcode }
 #define show_opcode_name(val)					\

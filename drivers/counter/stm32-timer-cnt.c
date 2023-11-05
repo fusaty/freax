@@ -7,13 +7,13 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com>
  *
  */
-#include <linux/counter.h>
-#include <linux/mfd/stm32-timers.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/counter.h>
+#include <freax/mfd/stm32-timers.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 #define TIM_CCMR_CCXS	(BIT(8) | BIT(0))
 #define TIM_CCMR_MASK	(TIM_CCMR_CC1S | TIM_CCMR_CC2S | \

@@ -4,16 +4,16 @@
  *   Grant Erickson <gerickson@nuovations.com>
  */
 
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <freax/edac.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/types.h>
 
 #include <asm/dcr.h>
 

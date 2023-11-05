@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_GENERIC_NETLINK_H
-#define _UAPI__LINUX_GENERIC_NETLINK_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_GENERIC_NETLINK_H
+#define _UAPI__freax_GENERIC_NETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
 
 #define GENL_NAMSIZ	16	/* length of family name */
 
@@ -100,4 +100,4 @@ enum {
 
 #define CTRL_ATTR_POLICY_MAX (__CTRL_ATTR_POLICY_DUMP_MAX - 1)
 
-#endif /* _UAPI__LINUX_GENERIC_NETLINK_H */
+#endif /* _UAPI__freax_GENERIC_NETLINK_H */

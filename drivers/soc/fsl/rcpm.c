@@ -6,14 +6,14 @@
 //
 // Author: Ran Wang <ran.wang_1@nxp.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
 
 #define RCPM_WAKEUP_CELL_MAX_SIZE	7
 

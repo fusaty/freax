@@ -42,15 +42,15 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * Intel PCIe NTB Linux driver
+ * Intel PCIe NTB freax driver
  */
 
 #ifndef NTB_HW_INTEL_H
 #define NTB_HW_INTEL_H
 
-#include <linux/ntb.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/ntb.h>
+#include <freax/pci.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 /* PCI device IDs */
 #define PCI_DEVICE_ID_INTEL_NTB_B2B_JSF	0x3725

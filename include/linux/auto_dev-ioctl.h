@@ -4,8 +4,8 @@
  * Copyright 2008 Ian Kent <raven@themaw.net>
  */
 
-#ifndef _LINUX_AUTO_DEV_IOCTL_H
-#define _LINUX_AUTO_DEV_IOCTL_H
+#ifndef _freax_AUTO_DEV_IOCTL_H
+#define _freax_AUTO_DEV_IOCTL_H
 
-#include <uapi/linux/auto_dev-ioctl.h>
-#endif	/* _LINUX_AUTO_DEV_IOCTL_H */
+#include <uapi/freax/auto_dev-ioctl.h>
+#endif	/* _freax_AUTO_DEV_IOCTL_H */

@@ -6,19 +6,19 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/freezer.h>
-#include <linux/stddef.h>
-#include <linux/uaccess.h>
-#include <linux/sizes.h>
-#include <linux/string.h>
-#include <linux/resume_user_mode.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
+#include <freax/cache.h>
+#include <freax/compat.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/freezer.h>
+#include <freax/stddef.h>
+#include <freax/uaccess.h>
+#include <freax/sizes.h>
+#include <freax/string.h>
+#include <freax/resume_user_mode.h>
+#include <freax/ratelimit.h>
+#include <freax/syscalls.h>
 
 #include <asm/daifflags.h>
 #include <asm/debug-monitors.h>

@@ -11,7 +11,7 @@
 #ifndef __SOF_AMD_ACP_H
 #define __SOF_AMD_ACP_H
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #include "../sof-priv.h"
 #include "../sof-audio.h"

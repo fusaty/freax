@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	include/linux/vt_buffer.h -- Access to VT screen buffer
+ *	include/freax/vt_buffer.h -- Access to VT screen buffer
  *
  *	(c) 1998 Martin Mares <mj@ucw.cz>
  *
@@ -11,10 +11,10 @@
  *	the foreground console directly in video memory.
  */
 
-#ifndef _LINUX_VT_BUFFER_H_
-#define _LINUX_VT_BUFFER_H_
+#ifndef _freax_VT_BUFFER_H_
+#define _freax_VT_BUFFER_H_
 
-#include <linux/string.h>
+#include <freax/string.h>
 
 #if IS_ENABLED(CONFIG_VGA_CONSOLE) || IS_ENABLED(CONFIG_MDA_CONSOLE)
 #include <asm/vga.h>

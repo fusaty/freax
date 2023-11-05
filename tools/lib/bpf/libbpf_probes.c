@@ -9,19 +9,19 @@
 #include <net/if.h>
 #include <sys/utsname.h>
 
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
+#include <freax/btf.h>
+#include <freax/filter.h>
+#include <freax/kernel.h>
+#include <freax/version.h>
 
 #include "bpf.h"
 #include "libbpf.h"
 #include "libbpf_internal.h"
 
-/* On Ubuntu LINUX_VERSION_CODE doesn't correspond to info.release,
+/* On Ubuntu freax_VERSION_CODE doesn't correspond to info.release,
  * but Ubuntu provides /proc/version_signature file, as described at
  * https://ubuntu.com/kernel, with an example contents below, which we
- * can use to get a proper LINUX_VERSION_CODE.
+ * can use to get a proper freax_VERSION_CODE.
  *
  *   Ubuntu 5.4.0-12.15-generic 5.4.8
  *
@@ -50,7 +50,7 @@ static __u32 get_ubuntu_kernel_version(void)
 	return KERNEL_VERSION(major, minor, patch);
 }
 
-/* On Debian LINUX_VERSION_CODE doesn't correspond to info.release.
+/* On Debian freax_VERSION_CODE doesn't correspond to info.release.
  * Instead, it is provided in info.version. An example content of
  * Debian 10 looks like the below.
  *
@@ -325,7 +325,7 @@ static int probe_map_create(enum bpf_map_type map_type)
 		break;
 	case BPF_MAP_TYPE_STRUCT_OPS:
 		/* we'll get -ENOTSUPP for invalid BTF type ID for struct_ops */
-		opts.btf_vmlinux_value_type_id = 1;
+		opts.btf_vmfreax_value_type_id = 1;
 		exp_err = -524; /* -ENOTSUPP */
 		break;
 	case BPF_MAP_TYPE_BLOOM_FILTER:

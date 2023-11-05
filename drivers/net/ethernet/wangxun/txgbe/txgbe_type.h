@@ -4,7 +4,7 @@
 #ifndef _TXGBE_TYPE_H_
 #define _TXGBE_TYPE_H_
 
-#include <linux/property.h>
+#include <freax/property.h>
 
 /* Device IDs */
 #define TXGBE_DEV_ID_SP1000                     0x1001

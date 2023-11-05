@@ -24,9 +24,9 @@
 #ifndef DRM_FLIP_WORK_H
 #define DRM_FLIP_WORK_H
 
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/kfifo.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 /**
  * DOC: flip utils

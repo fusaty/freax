@@ -5,11 +5,11 @@
  *	   Sujuan Chen <sujuan.chen@mediatek.com>
  */
 
-#include <linux/firmware.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/mfd/syscon.h>
-#include <linux/soc/mediatek/mtk_wed.h>
+#include <freax/firmware.h>
+#include <freax/of_address.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/mfd/syscon.h>
+#include <freax/soc/mediatek/mtk_wed.h>
 #include <asm/unaligned.h>
 
 #include "mtk_wed_regs.h"

@@ -3,16 +3,16 @@
  * SM3 Secure Hash Algorithm, AVX assembler accelerated.
  * specified in: https://datatracker.ietf.org/doc/html/draft-sca-cfrg-sm3-02
  *
- * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
 #include <crypto/sm3.h>
 #include <crypto/sm3_base.h>
 #include <asm/simd.h>
@@ -128,7 +128,7 @@ module_init(sm3_avx_mod_init);
 module_exit(sm3_avx_mod_exit);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@linux.alibaba.com>");
+MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@freax.alibaba.com>");
 MODULE_DESCRIPTION("SM3 Secure Hash Algorithm, AVX assembler accelerated");
 MODULE_ALIAS_CRYPTO("sm3");
 MODULE_ALIAS_CRYPTO("sm3-avx");

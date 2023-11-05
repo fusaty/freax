@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KERNEL_FTRACE_INTERNAL_H
-#define  _LINUX_KERNEL_FTRACE_INTERNAL_H
+#ifndef _freax_KERNEL_FTRACE_INTERNAL_H
+#define  _freax_KERNEL_FTRACE_INTERNAL_H
 
 int __register_ftrace_function(struct ftrace_ops *ops);
 int __unregister_ftrace_function(struct ftrace_ops *ops);

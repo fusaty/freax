@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GOLDFISH_H
-#define __LINUX_GOLDFISH_H
+#ifndef __freax_GOLDFISH_H
+#define __freax_GOLDFISH_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 /* Helpers for Goldfish virtual platform */
 
@@ -37,4 +37,4 @@ static inline void gf_write_dma_addr(const dma_addr_t addr,
 }
 
 
-#endif /* __LINUX_GOLDFISH_H */
+#endif /* __freax_GOLDFISH_H */

@@ -61,7 +61,7 @@
 
 #include <asm/unaligned.h>
 #include <crypto/algapi.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 /* Generic path for arbitrary size */
 static inline unsigned long

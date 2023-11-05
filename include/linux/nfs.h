@@ -5,13 +5,13 @@
  * This file contains constants mostly for Version 2 of the protocol,
  * but also has a couple of NFSv3 bits in (notably the error codes).
  */
-#ifndef _LINUX_NFS_H
-#define _LINUX_NFS_H
+#ifndef _freax_NFS_H
+#define _freax_NFS_H
 
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <uapi/linux/nfs.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/string.h>
+#include <freax/crc32.h>
+#include <uapi/freax/nfs.h>
 
 /*
  * This is the kernel NFS client file handle representation
@@ -64,4 +64,4 @@ static inline u32 nfs_fhandle_hash(const struct nfs_fh *fh)
 	return 0;
 }
 #endif /* CONFIG_CRC32 */
-#endif /* _LINUX_NFS_H */
+#endif /* _freax_NFS_H */

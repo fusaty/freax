@@ -6,10 +6,10 @@
  * Copyright (C) 2017 Zodiac Inflight Innovations
  */
 
-#ifndef _LINUX_RAVE_SP_H_
-#define _LINUX_RAVE_SP_H_
+#ifndef _freax_RAVE_SP_H_
+#define _freax_RAVE_SP_H_
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 enum rave_sp_command {
 	RAVE_SP_CMD_GET_FIRMWARE_VERSION	= 0x20,
@@ -59,4 +59,4 @@ struct device;
 int devm_rave_sp_register_event_notifier(struct device *dev,
 					 struct notifier_block *nb);
 
-#endif /* _LINUX_RAVE_SP_H_ */
+#endif /* _freax_RAVE_SP_H_ */

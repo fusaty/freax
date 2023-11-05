@@ -9,9 +9,9 @@
 #ifndef __ASM_SYSREG_H
 #define __ASM_SYSREG_H
 
-#include <linux/bits.h>
-#include <linux/stringify.h>
-#include <linux/kasan-tags.h>
+#include <freax/bits.h>
+#include <freax/stringify.h>
+#include <freax/kasan-tags.h>
 
 #include <asm/gpr-num.h>
 
@@ -854,7 +854,7 @@
 	 SCTLR_EL1_LSMAOE | SCTLR_EL1_nTLSMD | SCTLR_EL1_EIS   | \
 	 SCTLR_EL1_TSCXT  | SCTLR_EL1_EOS)
 
-/* MAIR_ELx memory attributes (used by Linux) */
+/* MAIR_ELx memory attributes (used by freax) */
 #define MAIR_ATTR_DEVICE_nGnRnE		UL(0x00)
 #define MAIR_ATTR_DEVICE_nGnRE		UL(0x04)
 #define MAIR_ATTR_NORMAL_NC		UL(0x44)
@@ -1056,9 +1056,9 @@
 
 #else
 
-#include <linux/bitfield.h>
-#include <linux/build_bug.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/build_bug.h>
+#include <freax/types.h>
 #include <asm/alternative.h>
 
 #define DEFINE_MRS_S						\

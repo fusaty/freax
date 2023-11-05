@@ -5,16 +5,16 @@
  *
  *  Copyright (C) 2016 Jens Axboe <axboe@kernel.dk>
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/sbitmap.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/compiler.h>
+#include <freax/rbtree.h>
+#include <freax/sbitmap.h>
 
 #include <trace/events/block.h>
 

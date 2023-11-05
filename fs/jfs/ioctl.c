@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/jfs/ioctl.c
+ * freax/fs/jfs/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/capability.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/blkdev.h>
+#include <freax/fs.h>
+#include <freax/ctype.h>
+#include <freax/capability.h>
+#include <freax/mount.h>
+#include <freax/time.h>
+#include <freax/sched.h>
+#include <freax/blkdev.h>
 #include <asm/current.h>
-#include <linux/uaccess.h>
-#include <linux/fileattr.h>
+#include <freax/uaccess.h>
+#include <freax/fileattr.h>
 
 #include "jfs_filsys.h"
 #include "jfs_debug.h"

@@ -6,18 +6,18 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/resource.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/resource.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

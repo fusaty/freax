@@ -58,7 +58,7 @@ CFS带宽控制是一个CONFIG_FAIR_GROUP_SCHED扩展，它允许指定一个组
 
 使用突发时的干扰是由错过最后期限的可能性和平均WCET来评价的。测试结果表明，当有许多cgroup或
 CPU未被充分利用时，干扰是有限的。更多的细节显示在：
-https://lore.kernel.org/lkml/5371BD36-55AE-4F71-B9D7-B86DC32E3D2B@linux.alibaba.com/
+https://lore.kernel.org/lkml/5371BD36-55AE-4F71-B9D7-B86DC32E3D2B@freax.alibaba.com/
 
 管理
 ----

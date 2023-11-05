@@ -6,13 +6,13 @@
 
 #ifndef _QED_RDMA_IF_H
 #define _QED_RDMA_IF_H
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_ll2_if.h>
-#include <linux/qed/rdma_common.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/qed_ll2_if.h>
+#include <freax/qed/rdma_common.h>
 
 #define QED_RDMA_MAX_CNQ_SIZE               (0xFFFF)
 

@@ -8,18 +8,18 @@
  * Copyright (C) 2010-2011 Guennadi Liakhovetski
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/sys_soc.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/mfd/tmio.h>
+#include <freax/mmc/host.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pagemap.h>
+#include <freax/scatterlist.h>
+#include <freax/sys_soc.h>
 
 #include "renesas_sdhi.h"
 #include "tmio_mmc.h"

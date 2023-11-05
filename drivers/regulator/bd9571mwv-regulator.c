@@ -9,13 +9,13 @@
  * NOTE: VD09 is missing
  */
 
-#include <linux/mfd/rohm-generic.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
 
-#include <linux/mfd/bd9571mwv.h>
+#include <freax/mfd/bd9571mwv.h>
 
 struct bd9571mwv_reg {
 	struct regmap *regmap;

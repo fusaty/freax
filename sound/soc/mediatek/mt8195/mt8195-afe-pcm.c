@@ -7,16 +7,16 @@
  *         Trevor Wu <trevor.wu@mediatek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 #include "mt8195-afe-common.h"
 #include "mt8195-afe-clk.h"
 #include "mt8195-reg.h"

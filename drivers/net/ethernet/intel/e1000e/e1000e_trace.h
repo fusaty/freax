@@ -16,7 +16,7 @@
 #if !defined(_TRACE_E1000E_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_E1000E_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(e1000e_trace_mac_register,
 	    TP_PROTO(uint32_t reg),

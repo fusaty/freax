@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ONCE_LITE_H
-#define _LINUX_ONCE_LITE_H
+#ifndef _freax_ONCE_LITE_H
+#define _freax_ONCE_LITE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Call a function once. Similar to DO_ONCE(), but does not use jump label
  * patching via static keys.
@@ -33,4 +33,4 @@
 		unlikely(__ret_do_once);				\
 	})
 
-#endif /* _LINUX_ONCE_LITE_H */
+#endif /* _freax_ONCE_LITE_H */

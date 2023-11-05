@@ -15,17 +15,17 @@
  *	and ima_file_check.
  */
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/binfmts.h>
-#include <linux/kernel_read_file.h>
-#include <linux/mount.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/ima.h>
-#include <linux/fs.h>
-#include <linux/iversion.h>
+#include <freax/module.h>
+#include <freax/file.h>
+#include <freax/binfmts.h>
+#include <freax/kernel_read_file.h>
+#include <freax/mount.h>
+#include <freax/mman.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
+#include <freax/ima.h>
+#include <freax/fs.h>
+#include <freax/iversion.h>
 
 #include "ima.h"
 
@@ -512,7 +512,7 @@ int ima_file_mprotect(struct vm_area_struct *vma, unsigned long prot)
 
 /**
  * ima_bprm_check - based on policy, collect/store measurement.
- * @bprm: contains the linux_binprm structure
+ * @bprm: contains the freax_binprm structure
  *
  * The OS protects against an executable file, already open for write,
  * from being executed in deny_write_access() and an executable file,
@@ -523,7 +523,7 @@ int ima_file_mprotect(struct vm_area_struct *vma, unsigned long prot)
  * On success return 0.  On integrity appraisal error, assuming the file
  * is in policy and IMA-appraisal is in enforcing mode, return -EACCES.
  */
-int ima_bprm_check(struct linux_binprm *bprm)
+int ima_bprm_check(struct freax_binprm *bprm)
 {
 	int ret;
 	u32 secid;

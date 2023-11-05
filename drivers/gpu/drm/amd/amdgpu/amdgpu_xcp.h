@@ -24,8 +24,8 @@
 #ifndef AMDGPU_XCP_H
 #define AMDGPU_XCP_H
 
-#include <linux/pci.h>
-#include <linux/xarray.h>
+#include <freax/pci.h>
+#include <freax/xarray.h>
 
 #include "amdgpu_ctx.h"
 

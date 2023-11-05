@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/fault.c
+ *  freax/arch/m68k/mm/fault.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>

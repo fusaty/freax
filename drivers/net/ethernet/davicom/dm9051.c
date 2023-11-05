@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2022 Davicom Semiconductor,Inc.
- * Davicom DM9051 SPI Fast Ethernet Linux driver
+ * Davicom DM9051 SPI Fast Ethernet freax driver
  */
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/regmap.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 #include "dm9051.h"
 

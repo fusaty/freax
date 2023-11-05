@@ -7,18 +7,18 @@
  * Author : Yoshihiro Shimoda <yoshihiro.shimoda.uh@renesas.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
 
 #include "r8a66597-udc.h"
 

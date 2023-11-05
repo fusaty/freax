@@ -6,9 +6,9 @@
  *		Copyright 2014 Linaro Ltd
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
 
 #include "pcm512x.h"
 

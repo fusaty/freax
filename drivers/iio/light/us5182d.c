@@ -7,19 +7,19 @@
  * To do: Interrupt support.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/iio/sysfs.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/iio/sysfs.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 
 #define US5182D_REG_CFG0				0x00
 #define US5182D_CFG0_ONESHOT_EN				BIT(6)

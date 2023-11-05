@@ -4,17 +4,17 @@
  * Author: Zhiyong Tao <zhiyong.tao@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/iopoll.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/iopoll.h>
+#include <freax/io.h>
+#include <freax/iio/iio.h>
 
 /* Register definitions */
 #define MT6577_AUXADC_CON0                    0x00

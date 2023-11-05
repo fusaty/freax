@@ -1,5 +1,5 @@
 =================================
-Red-black Trees (rbtree) in Linux
+Red-black Trees (rbtree) in freax
 =================================
 
 
@@ -21,7 +21,7 @@ worst case performance for insertion and deletion (at most two rotations and
 three rotations, respectively, to balance the tree), with slightly slower
 (but still O(log n)) lookup time.
 
-To quote Linux Weekly News:
+To quote freax Weekly News:
 
     There are a number of red-black trees in use in the kernel.
     The deadline and CFQ I/O schedulers employ rbtrees to
@@ -32,22 +32,22 @@ To quote Linux Weekly News:
     trees, as are epoll file descriptors, cryptographic keys, and network
     packets in the "hierarchical token bucket" scheduler.
 
-This document covers use of the Linux rbtree implementation.  For more
+This document covers use of the freax rbtree implementation.  For more
 information on the nature and implementation of Red Black Trees,  see:
 
-  Linux Weekly News article on red-black trees
+  freax Weekly News article on red-black trees
     https://lwn.net/Articles/184495/
 
   Wikipedia entry on red-black trees
     https://en.wikipedia.org/wiki/Red-black_tree
 
-Linux implementation of red-black trees
+freax implementation of red-black trees
 ---------------------------------------
 
-Linux's rbtree implementation lives in the file "lib/rbtree.c".  To use it,
-"#include <linux/rbtree.h>".
+freax's rbtree implementation lives in the file "lib/rbtree.c".  To use it,
+"#include <freax/rbtree.h>".
 
-The Linux rbtree implementation is optimized for speed, and thus has one
+The freax rbtree implementation is optimized for speed, and thus has one
 less layer of indirection (and better cache locality) than more traditional
 tree implementations.  Instead of using pointers to separate rb_node and data
 structures, each instance of struct rb_node is embedded in the data structure
@@ -239,10 +239,10 @@ functions with the user provided augmentation callback when inserting
 and erasing nodes.
 
 C files implementing augmented rbtree manipulation must include
-<linux/rbtree_augmented.h> instead of <linux/rbtree.h>. Note that
-linux/rbtree_augmented.h exposes some rbtree implementations details
+<freax/rbtree_augmented.h> instead of <freax/rbtree.h>. Note that
+freax/rbtree_augmented.h exposes some rbtree implementations details
 you are not expected to rely on; please stick to the documented APIs
-there and do not include <linux/rbtree_augmented.h> from header files
+there and do not include <freax/rbtree_augmented.h> from header files
 either so as to minimize chances of your users accidentally relying on
 such implementation details.
 

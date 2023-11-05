@@ -43,8 +43,8 @@
 		stdout-path = &serial_2;
 
 		/* Default S-BOOT bootloader loads initramfs here */
-		linux,initrd-start = <0x42000000>;
-		linux,initrd-end = <0x42800000>;
+		freax,initrd-start = <0x42000000>;
+		freax,initrd-end = <0x42800000>;
 	};
 
 	firmware@204f000 {
@@ -71,7 +71,7 @@
 
 		key-power {
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "power";
 			debounce-interval = <10>;
 			wakeup-source;
@@ -79,30 +79,30 @@
 
 		key-up {
 			gpios = <&gpx2 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			label = "volume down";
 			debounce-interval = <10>;
 		};
 
 		key-down {
 			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			label = "volume up";
 			debounce-interval = <10>;
 		};
 
 		key-home {
 			gpios = <&gpx1 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			label = "home";
 			debounce-interval = <10>;
 		};
 
 		switch-hall-sensor {
 			gpios = <&gpx2 4 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 			label = "hall effect sensor";
 			debounce-interval = <10>;
 			wakeup-source;
@@ -489,7 +489,7 @@
 		touchscreen-size-y = <1280>;
 		avdd-supply = <&ldo21_reg>;
 		vdd-supply = <&ldo25_reg>;
-		linux,keycodes = <KEY_MENU KEY_BACK>;
+		freax,keycodes = <KEY_MENU KEY_BACK>;
 	};
 };
 

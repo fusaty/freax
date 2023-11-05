@@ -5,14 +5,14 @@
  * Copyright 2012 Benjamin Herrenschmidt, IBM Corp.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/i2c.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

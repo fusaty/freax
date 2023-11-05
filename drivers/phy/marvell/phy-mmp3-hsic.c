@@ -3,12 +3,12 @@
  * Copyright (C) 2020 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 #define HSIC_CTRL	0x08
 #define HSIC_ENABLE	BIT(7)

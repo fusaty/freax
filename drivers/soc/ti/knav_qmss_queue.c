@@ -8,20 +8,20 @@
  *		Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/soc/ti/knav_qmss.h>
+#include <freax/debugfs.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/soc/ti/knav_qmss.h>
 
 #include "knav_qmss.h"
 

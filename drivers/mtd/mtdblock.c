@@ -6,19 +6,19 @@
  * Copyright © 2000-2003 Nicolas Pitre <nico@fluxnic.net>
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/vmalloc.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mutex.h>
-#include <linux/major.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/mutex.h>
+#include <freax/major.h>
 
 
 struct mtdblk_dev {
@@ -34,7 +34,7 @@ struct mtdblk_dev {
 /*
  * Cache stuff...
  *
- * Since typical flash erasable sectors are much larger than what Linux's
+ * Since typical flash erasable sectors are much larger than what freax's
  * buffer cache can handle, we must implement read-modify-write on flash
  * sectors for each block write requests.  To avoid over-erasing flash sectors
  * and to speed things up, we locally cache a whole flash sector while it is

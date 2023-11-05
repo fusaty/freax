@@ -4,12 +4,12 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/rmi.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/of.h>
 #include "rmi_driver.h"
 
 #define RMI_SPI_DEFAULT_XFER_BUF_SIZE	64

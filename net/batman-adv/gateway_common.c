@@ -7,12 +7,12 @@
 #include "gateway_common.h"
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/byteorder/generic.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
-#include <uapi/linux/batman_adv.h>
+#include <freax/atomic.h>
+#include <freax/byteorder/generic.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <uapi/freax/batadv_packet.h>
+#include <uapi/freax/batman_adv.h>
 
 #include "gateway_client.h"
 #include "tvlv.h"

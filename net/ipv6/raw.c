@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	RAW sockets for IPv6
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Adapted from linux/net/ipv4/raw.c
+ *	Adapted from freax/net/ipv4/raw.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -14,21 +14,21 @@
  *	Kazunori MIYAZAWA @USAGI:	change process style to use ip6_append_data
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/slab.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/skbuff.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/slab.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/icmpv6.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/skbuff.h>
+#include <freax/compat.h>
+#include <freax/uaccess.h>
 #include <asm/ioctls.h>
 
 #include <net/net_namespace.h>
@@ -49,15 +49,15 @@
 #if IS_ENABLED(CONFIG_IPV6_MIP6)
 #include <net/mip6.h>
 #endif
-#include <linux/mroute6.h>
+#include <freax/mroute6.h>
 
 #include <net/raw.h>
 #include <net/rawv6.h>
 #include <net/xfrm.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/export.h>
 
 #define	ICMPV6_HDRLEN	4	/* ICMPv6 header, RFC 4443 Section 2.1 */
 
@@ -1005,7 +1005,7 @@ static int do_rawv6_setsockopt(struct sock *sk, int level, int optname,
 			 * allowed on ICMPv6 sockets.
 			 * If you want to set it, use IPPROTO_RAW
 			 * level IPV6_CHECKSUM socket option
-			 * (Linux extension).
+			 * (freax extension).
 			 */
 			return -EINVAL;
 		}

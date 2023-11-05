@@ -11,10 +11,10 @@
 #include <crypto/algapi.h>
 #include <crypto/des.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/crypto.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 struct des3_ede_x86_ctx {
 	struct des3_ede_ctx enc;

@@ -75,14 +75,14 @@
 		led-0 {
 			label = "panic";
 			gpios = <&gpioa 13 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "none";
+			freax,default-trigger = "none";
 			default-state = "off";
 			panic-indicator;
 		};
 		led-1 {
 			label = "heartbeat";
 			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 	};

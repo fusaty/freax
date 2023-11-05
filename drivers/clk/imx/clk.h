@@ -2,9 +2,9 @@
 #ifndef __MACH_IMX_CLK_H
 #define __MACH_IMX_CLK_H
 
-#include <linux/bits.h>
-#include <linux/spinlock.h>
-#include <linux/clk-provider.h>
+#include <freax/bits.h>
+#include <freax/spinlock.h>
+#include <freax/clk-provider.h>
 
 extern spinlock_t imx_ccm_lock;
 extern bool mcore_booted;

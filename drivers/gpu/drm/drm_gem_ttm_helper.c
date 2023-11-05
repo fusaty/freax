@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <drm/drm_gem_ttm_helper.h>
 #include <drm/ttm/ttm_placement.h>

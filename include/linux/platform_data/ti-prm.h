@@ -7,8 +7,8 @@
  * Tero Kristo <t-kristo@ti.com>
  */
 
-#ifndef _LINUX_PLATFORM_DATA_TI_PRM_H
-#define _LINUX_PLATFORM_DATA_TI_PRM_H
+#ifndef _freax_PLATFORM_DATA_TI_PRM_H
+#define _freax_PLATFORM_DATA_TI_PRM_H
 
 struct clockdomain;
 
@@ -18,4 +18,4 @@ struct ti_prm_platform_data {
 	struct clockdomain * (*clkdm_lookup)(const char *name);
 };
 
-#endif /* _LINUX_PLATFORM_DATA_TI_PRM_H */
+#endif /* _freax_PLATFORM_DATA_TI_PRM_H */

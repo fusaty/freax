@@ -8,14 +8,14 @@
  * Based on ak4535.c by Richard Purdie
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

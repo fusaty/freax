@@ -4,16 +4,16 @@
  * Copyright (C) 2007,2008 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
 #include <asm/sun3x.h>
 #include <asm/dma.h>

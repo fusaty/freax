@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2014 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014 The freax Foundation. All rights reserved.
  */
 
-#ifndef _LINUX_IOPOLL_H
-#define _LINUX_IOPOLL_H
+#ifndef _freax_IOPOLL_H
+#define _freax_IOPOLL_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/ktime.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/io.h>
 
 /**
  * read_poll_timeout - Periodically poll an address until a condition is
@@ -202,4 +202,4 @@
 #define readq_relaxed_poll_timeout_atomic(addr, val, cond, delay_us, timeout_us) \
 	readx_poll_timeout_atomic(readq_relaxed, addr, val, cond, delay_us, timeout_us)
 
-#endif /* _LINUX_IOPOLL_H */
+#endif /* _freax_IOPOLL_H */

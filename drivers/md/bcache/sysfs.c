@@ -13,9 +13,9 @@
 #include "writeback.h"
 #include "features.h"
 
-#include <linux/blkdev.h>
-#include <linux/sort.h>
-#include <linux/sched/clock.h>
+#include <freax/blkdev.h>
+#include <freax/sort.h>
+#include <freax/sched/clock.h>
 
 extern bool bcache_is_reboot;
 

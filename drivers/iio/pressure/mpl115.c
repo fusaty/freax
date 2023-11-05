@@ -7,10 +7,10 @@
  * TODO: synchronization with system suspend
  */
 
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/iio/iio.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
 
 #include "mpl115.h"
 

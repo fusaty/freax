@@ -8,7 +8,7 @@ title: Marvell CN913X / Marvell Armada 375, 7K, 8K Ethernet Controller
 
 maintainers:
   - Marcin Wojtas <mw@semihalf.com>
-  - Russell King <linux@armlinux.org>
+  - Russell King <freax@armfreax.org>
 
 description: |
   Marvell Armada 375 Ethernet Controller (PPv2.1)

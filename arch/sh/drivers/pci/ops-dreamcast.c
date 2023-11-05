@@ -6,15 +6,15 @@
  * Copyright (C) 2002, 2003  Paul Mundt
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/io.h>
 #include <mach/pci.h>
 
 /*

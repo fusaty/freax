@@ -6,7 +6,7 @@
  * Author: Roberto Sassu <roberto.sassu@huawei.com>
  */
 
-#include <linux/keyctl.h>
+#include <freax/keyctl.h>
 #include <test_progs.h>
 
 #include "test_lookup_key.skel.h"

@@ -6,10 +6,10 @@
 #ifndef _I915_FIXED_H_
 #define _I915_FIXED_H_
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/types.h>
 
 typedef struct {
 	u32 val;

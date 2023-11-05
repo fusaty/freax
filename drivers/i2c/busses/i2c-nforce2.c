@@ -34,17 +34,17 @@
 
 /* Note: we assume there can only be one nForce2, with two SMBus interfaces */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/ioport.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Hans-Frieder Vogt <hfvogt@gmx.net>");

@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/clkdev.h>
 #include <asm/clock.h>
 
 /* SH7343 registers */

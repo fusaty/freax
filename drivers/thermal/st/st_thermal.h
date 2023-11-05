@@ -9,10 +9,10 @@
 #ifndef __STI_THERMAL_SYSCFG_H
 #define __STI_THERMAL_SYSCFG_H
 
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
 
 enum st_thermal_regfield_ids {
 	INT_THRESH_HI = 0, /* Top two regfield IDs are mutually exclusive */

@@ -1,19 +1,19 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/ethtool.yaml */
 /* YNL-GEN user source */
-/* YNL-ARG --user-header linux/ethtool_netlink.h --exclude-op stats-get */
+/* YNL-ARG --user-header freax/ethtool_netlink.h --exclude-op stats-get */
 
 #include <stdlib.h>
 #include <string.h>
 #include "ethtool-user.h"
 #include "ynl.h"
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <freax/genetlink.h>
 
-#include "linux/ethtool_netlink.h"
+#include "freax/ethtool_netlink.h"
 
 /* Enums */
 static const char * const ethtool_op_strmap[] = {

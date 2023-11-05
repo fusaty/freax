@@ -5,15 +5,15 @@
  * Copyright (c) 2017, General Electric Company
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/spi/spi.h>
+#include <freax/regmap.h>
 
 /* XRA1403 registers */
 #define XRA_GSR   0x00 /* GPIO State */

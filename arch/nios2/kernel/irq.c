@@ -9,10 +9,10 @@
  * Copyright (C) 2007 Greg Ungerer <gerg@snapgear.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
 
 static u32 ienable;
 

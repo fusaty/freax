@@ -7,7 +7,7 @@
 
 #include <drm/intel-gtt.h>
 
-#include <linux/agp_backend.h>
+#include <freax/agp_backend.h>
 
 #include "i915_drv.h"
 #include "i915_utils.h"

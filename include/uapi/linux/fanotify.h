@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FANOTIFY_H
-#define _UAPI_LINUX_FANOTIFY_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_FANOTIFY_H
+#define _UAPI_freax_FANOTIFY_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* the following events that user-space can register for */
 #define FAN_ACCESS		0x00000001	/* File was accessed */
@@ -242,4 +242,4 @@ struct fanotify_response_info_audit_rule {
 				(long)(meta)->event_len >= (long)FAN_EVENT_METADATA_LEN && \
 				(long)(meta)->event_len <= (long)(len))
 
-#endif /* _UAPI_LINUX_FANOTIFY_H */
+#endif /* _UAPI_freax_FANOTIFY_H */

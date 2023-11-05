@@ -6,14 +6,14 @@
  * Copyright (c) 2023 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/module.h>
 
 #include <asm/unaligned.h>
 

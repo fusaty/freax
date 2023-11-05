@@ -5,33 +5,33 @@
  * Copyright (c) 2012, Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/compiler.h>
-#include <linux/stddef.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/acpi.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
+#include <freax/bitfield.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/compiler.h>
+#include <freax/stddef.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/acpi.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/pm.h>
+#include <freax/mmc/slot-gpio.h>
 
 #ifdef CONFIG_X86
-#include <linux/platform_data/x86/soc.h>
+#include <freax/platform_data/x86/soc.h>
 #include <asm/iosf_mbi.h>
 #endif
 

@@ -4,7 +4,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for freax.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -17,16 +17,16 @@
  *    This is a platform dependent module for the pci cyclone board.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/completion.h>
+#include <freax/mm.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>

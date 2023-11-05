@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+// Copyright (c) 2015-2016, The freax Foundation. All rights reserved.
 // Copyright (c) 2017-2018, Linaro Limited
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slimbus.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/wait.h>
+#include <freax/bitops.h>
+#include <freax/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/slimbus.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <freax/of_gpio.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
 #include <sound/tlv.h>
 #include <sound/info.h>
 #include "wcd9335.h"

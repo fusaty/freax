@@ -9,18 +9,18 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/iio/consumer.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
+#include <freax/jiffies.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/iio/consumer.h>
 #include <asm/unaligned.h>
 #include <asm/iosf_mbi.h>
 
@@ -804,6 +804,6 @@ static struct platform_driver axp288_fuel_gauge_driver = {
 module_platform_driver(axp288_fuel_gauge_driver);
 
 MODULE_AUTHOR("Ramakrishna Pallala <ramakrishna.pallala@intel.com>");
-MODULE_AUTHOR("Todd Brandt <todd.e.brandt@linux.intel.com>");
+MODULE_AUTHOR("Todd Brandt <todd.e.brandt@freax.intel.com>");
 MODULE_DESCRIPTION("Xpower AXP288 Fuel Gauge Driver");
 MODULE_LICENSE("GPL");

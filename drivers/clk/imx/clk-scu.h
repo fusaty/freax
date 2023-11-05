@@ -7,8 +7,8 @@
 #ifndef __IMX_CLK_SCU_H
 #define __IMX_CLK_SCU_H
 
-#include <linux/firmware/imx/sci.h>
-#include <linux/of.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/of.h>
 
 #define IMX_SCU_GPR_CLK_GATE	BIT(0)
 #define IMX_SCU_GPR_CLK_DIV	BIT(1)

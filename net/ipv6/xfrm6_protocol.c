@@ -10,10 +10,10 @@
  * net/ipv4/xfrm4_protocol.c
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/skbuff.h>
+#include <freax/icmpv6.h>
 #include <net/ip6_route.h>
 #include <net/ipv6.h>
 #include <net/protocol.h>

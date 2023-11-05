@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/cache-fa.S
+ *  freax/arch/arm/mm/cache-fa.S
  *
  *  Copyright (C) 2005 Faraday Corp.
  *  Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
@@ -10,8 +10,8 @@
  *
  *  Processors: FA520 FA526 FA626	
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

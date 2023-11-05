@@ -15,33 +15,33 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/seq_file.h>
-#include <linux/sizes.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/platform_data/hsmmc-omap.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/debugfs.h>
+#include <freax/dmaengine.h>
+#include <freax/seq_file.h>
+#include <freax/sizes.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_device.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/platform_data/hsmmc-omap.h>
 
 /* OMAP HSMMC Host Controller Registers */
 #define OMAP_HSMMC_SYSSTATUS	0x0014

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/sys_wildfire.c
+ *  freax/arch/alpha/kernel/sys_wildfire.c
  *
  *  Wildfire support.
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

@@ -5,9 +5,9 @@
  * Copyright (C) 2007-2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/stddef.h>
 #include <net/sock.h>
 #include <net/vsock_addr.h>
 

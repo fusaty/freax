@@ -6,13 +6,13 @@
  *
  * Heavily inspired from former arch/arm/mach-pxa/clock.c.
  */
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/soc/pxa/smemc.h>
-#include <linux/clk/pxa.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/of.h>
+#include <freax/soc/pxa/smemc.h>
+#include <freax/clk/pxa.h>
 
 #include <dt-bindings/clock/pxa-clock.h>
 #include "clk-pxa.h"

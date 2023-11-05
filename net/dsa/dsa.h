@@ -3,8 +3,8 @@
 #ifndef __DSA_H
 #define __DSA_H
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 struct dsa_db;
 struct dsa_device_ops;

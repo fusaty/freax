@@ -8,8 +8,8 @@
 
 #define pr_fmt(fmt) "Power allocator: " fmt
 
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 
 #define CREATE_TRACE_POINTS
 #include "thermal_trace_ipa.h"

@@ -3,15 +3,15 @@
  * Intel Low Power Subsystem clocks.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
- *	    Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@freax.intel.com>
+ *	    Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/clk-lpss.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_data/x86/clk-lpss.h>
+#include <freax/platform_device.h>
 
 static int lpss_atom_clk_probe(struct platform_device *pdev)
 {

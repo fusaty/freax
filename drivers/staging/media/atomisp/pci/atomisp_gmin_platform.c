@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
 #include <media/v4l2-subdev.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include "../../include/linux/atomisp_platform.h"
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio.h>
+#include <freax/platform_device.h>
+#include "../../include/freax/atomisp_platform.h"
+#include "../../include/freax/atomisp_gmin_platform.h"
 
 #define MAX_SUBDEVS 8
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_OBJTOOL_H
-#define _LINUX_OBJTOOL_H
+#ifndef _freax_OBJTOOL_H
+#define _freax_OBJTOOL_H
 
-#include <linux/objtool_types.h>
+#include <freax/objtool_types.h>
 
 #ifdef CONFIG_OBJTOOL
 
@@ -171,4 +171,4 @@
 
 #endif /* CONFIG_OBJTOOL */
 
-#endif /* _LINUX_OBJTOOL_H */
+#endif /* _freax_OBJTOOL_H */

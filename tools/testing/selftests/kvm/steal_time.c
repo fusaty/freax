@@ -9,7 +9,7 @@
 #include <time.h>
 #include <sched.h>
 #include <pthread.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/kvm.h>
 #include <asm/kvm_para.h>
 

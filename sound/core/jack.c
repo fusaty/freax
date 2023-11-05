@@ -5,12 +5,12 @@
  *  Copyright 2008 Wolfson Microelectronics
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/mm.h>
+#include <freax/debugfs.h>
 #include <sound/jack.h>
 #include <sound/core.h>
 #include <sound/control.h>

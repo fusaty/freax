@@ -8,13 +8,13 @@
  *  Copyright 2008 Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/stop_machine.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/sched/mm.h>
+#include <freax/stop_machine.h>
 #include <asm/cputable.h>
 #include <asm/code-patching.h>
 #include <asm/interrupt.h>
@@ -706,7 +706,7 @@ static int patch_feature_section(unsigned long value, struct fixup_entry *fcur)
 	return patch_feature_section_mask(value, ~0, fcur);
 }
 
-/* This must be after the text it fixes up, vmlinux.lds.S enforces that atm */
+/* This must be after the text it fixes up, vmfreax.lds.S enforces that atm */
 static struct fixup_entry fixup;
 
 static long __init calc_offset(struct fixup_entry *entry, unsigned int *p)

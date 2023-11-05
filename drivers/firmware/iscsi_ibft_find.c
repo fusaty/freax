@@ -3,28 +3,28 @@
  *  Copyright 2007-2010 Red Hat, Inc.
  *  by Peter Jones <pjones@redhat.com>
  *  Copyright 2007 IBM, Inc.
- *  by Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  by Konrad Rzeszutek <konradr@freax.vnet.ibm.com>
  *  Copyright 2008
  *  by Konrad Rzeszutek <ketuzsezr@darnok.org>
  *
  * This code finds the iSCSI Boot Format Table.
  */
 
-#include <linux/memblock.h>
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/iscsi_ibft.h>
+#include <freax/memblock.h>
+#include <freax/blkdev.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/efi.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/acpi.h>
+#include <freax/iscsi_ibft.h>
 
 #include <asm/mmzone.h>
 

@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_FS_PARSER_H
-#define _LINUX_FS_PARSER_H
+#ifndef _freax_FS_PARSER_H
+#define _freax_FS_PARSER_H
 
-#include <linux/fs_context.h>
+#include <freax/fs_context.h>
 
 struct path;
 
@@ -132,4 +132,4 @@ static inline bool fs_validate_description(const char *name,
 #define fsparam_path(NAME, OPT)	__fsparam(fs_param_is_path, NAME, OPT, 0, NULL)
 #define fsparam_fd(NAME, OPT)	__fsparam(fs_param_is_fd, NAME, OPT, 0, NULL)
 
-#endif /* _LINUX_FS_PARSER_H */
+#endif /* _freax_FS_PARSER_H */

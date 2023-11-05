@@ -2,8 +2,8 @@
 #ifndef _ASM_M68K_SYSCALLS_H
 #define _ASM_M68K_SYSCALLS_H
 
-#include <linux/compiler_types.h>
-#include <linux/linkage.h>
+#include <freax/compiler_types.h>
+#include <freax/linkage.h>
 
 asmlinkage int sys_cacheflush(unsigned long addr, int scope, int cache,
 			      unsigned long len);

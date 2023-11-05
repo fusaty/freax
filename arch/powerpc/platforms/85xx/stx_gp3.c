@@ -16,13 +16,13 @@
  * Copyright 2004-2005 MontaVista Software, Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/kdev_t.h>
+#include <freax/delay.h>
+#include <freax/seq_file.h>
+#include <freax/of.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

@@ -18,7 +18,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@freax.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -29,21 +29,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>		/* For character device */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/hrtimer.h>	/* For hrtimers */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/kstrtox.h>	/* For kstrto* */
-#include <linux/kthread.h>	/* For kthread_work */
-#include <linux/miscdevice.h>	/* For handling misc devices */
-#include <linux/module.h>	/* For module stuff/... */
-#include <linux/mutex.h>	/* For mutexes */
-#include <linux/slab.h>		/* For memory functions */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/watchdog.h>	/* For watchdog specific items */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <freax/cdev.h>		/* For character device */
+#include <freax/errno.h>	/* For the -ENODEV/... values */
+#include <freax/fs.h>		/* For file operations */
+#include <freax/init.h>		/* For __init/__exit/... */
+#include <freax/hrtimer.h>	/* For hrtimers */
+#include <freax/kernel.h>	/* For printk/panic/... */
+#include <freax/kstrtox.h>	/* For kstrto* */
+#include <freax/kthread.h>	/* For kthread_work */
+#include <freax/miscdevice.h>	/* For handling misc devices */
+#include <freax/module.h>	/* For module stuff/... */
+#include <freax/mutex.h>	/* For mutexes */
+#include <freax/slab.h>		/* For memory functions */
+#include <freax/types.h>	/* For standard types (like size_t) */
+#include <freax/watchdog.h>	/* For watchdog specific items */
+#include <freax/uaccess.h>	/* For copy_to_user/put_user/... */
 
 #include "watchdog_core.h"
 #include "watchdog_pretimeout.h"

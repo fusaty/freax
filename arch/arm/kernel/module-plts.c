@@ -3,12 +3,12 @@
  * Copyright (C) 2014-2017 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/moduleloader.h>
+#include <freax/elf.h>
+#include <freax/ftrace.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sort.h>
+#include <freax/moduleloader.h>
 
 #include <asm/cache.h>
 #include <asm/opcodes.h>

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI_SMC_DIAG_H_
 #define _UAPI_SMC_DIAG_H_
 
-#include <linux/types.h>
-#include <linux/inet_diag.h>
+#include <freax/types.h>
+#include <freax/inet_diag.h>
 #include <rdma/ib_user_verbs.h>
 
 /* Request structure */

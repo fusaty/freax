@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The freax Foundation. All rights reserved.
  *
  */
 #ifndef _MHI_H_
 #define _MHI_H_
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/mutex.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #define MHI_MAX_OEM_PK_HASH_SEGMENTS 16
 

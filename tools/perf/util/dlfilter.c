@@ -8,10 +8,10 @@
 #include <string.h>
 #include <dirent.h>
 #include <subcmd/exec-cmd.h>
-#include <linux/zalloc.h>
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/zalloc.h>
+#include <freax/build_bug.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 #include "debug.h"
 #include "event.h"

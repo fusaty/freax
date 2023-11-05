@@ -8,14 +8,14 @@
  * which provide mailbox interface for power management usage.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <asm/intel_punit_ipc.h>
 

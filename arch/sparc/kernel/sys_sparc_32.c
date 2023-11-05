@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc/kernel/sys_sparc.c
+/* freax/arch/sparc/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the freax/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/ipc.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/debug.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/syscalls.h>
+#include <freax/mman.h>
+#include <freax/utsname.h>
+#include <freax/smp.h>
+#include <freax/ipc.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 
 #include "systbls.h"
@@ -96,7 +96,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* freax version of mmap */
 
 SYSCALL_DEFINE6(mmap2, unsigned long, addr, unsigned long, len,
 	unsigned long, prot, unsigned long, flags, unsigned long, fd,

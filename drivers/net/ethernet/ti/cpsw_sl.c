@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
 
 #include "cpsw_sl.h"
 

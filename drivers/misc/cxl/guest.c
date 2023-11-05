@@ -3,11 +3,11 @@
  * Copyright 2015 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/irqdomain.h>
+#include <freax/platform_device.h>
 
 #include "cxl.h"
 #include "hcalls.h"

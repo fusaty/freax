@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_TASK_STACK_H
-#define _LINUX_SCHED_TASK_STACK_H
+#ifndef _freax_SCHED_TASK_STACK_H
+#define _freax_SCHED_TASK_STACK_H
 
 /*
  * task->stack (kernel stack) handling interfaces:
  */
 
-#include <linux/sched.h>
-#include <linux/magic.h>
+#include <freax/sched.h>
+#include <freax/magic.h>
 
 #ifdef CONFIG_THREAD_INFO_IN_TASK
 
@@ -125,4 +125,4 @@ static inline int kstack_end(void *addr)
 }
 #endif
 
-#endif /* _LINUX_SCHED_TASK_STACK_H */
+#endif /* _freax_SCHED_TASK_STACK_H */

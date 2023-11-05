@@ -9,7 +9,7 @@
 #ifndef __INCLUDE_SOUND_SOF_IPC4_HEADER_H__
 #define __INCLUDE_SOUND_SOF_IPC4_HEADER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <uapi/sound/sof/abi.h>
 
 /* maximum message size for mailbox Tx/Rx */

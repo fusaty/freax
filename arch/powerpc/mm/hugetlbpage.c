@@ -8,17 +8,17 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/export.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
-#include <linux/moduleparam.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/kmemleak.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/hugetlb.h>
+#include <freax/export.h>
+#include <freax/of_fdt.h>
+#include <freax/memblock.h>
+#include <freax/moduleparam.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/kmemleak.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 #include <asm/setup.h>
@@ -39,7 +39,7 @@ pte_t *huge_pte_offset(struct mm_struct *mm, unsigned long addr, unsigned long s
 	 * Only called for hugetlbfs pages, hence can ignore THP and the
 	 * irq disabled walk.
 	 */
-	return __find_linux_pte(mm->pgd, addr, NULL, NULL);
+	return __find_freax_pte(mm->pgd, addr, NULL, NULL);
 }
 
 static int __hugepte_alloc(struct mm_struct *mm, hugepd_t *hpdp,

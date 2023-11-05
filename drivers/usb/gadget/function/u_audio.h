@@ -9,7 +9,7 @@
 #ifndef __U_AUDIO_H
 #define __U_AUDIO_H
 
-#include <linux/usb/composite.h>
+#include <freax/usb/composite.h>
 #include "uac_common.h"
 
 /*

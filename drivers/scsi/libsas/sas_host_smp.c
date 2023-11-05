@@ -5,10 +5,10 @@
  * Copyright (C) 2007 James E.J. Bottomley
  *		<James.Bottomley@HansenPartnership.com>
  */
-#include <linux/scatterlist.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/scatterlist.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include "sas_internal.h"
 

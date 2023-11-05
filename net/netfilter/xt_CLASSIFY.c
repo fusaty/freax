@@ -7,16 +7,16 @@
 /* (C) 2001-2002 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CLASSIFY.h>
-#include <linux/netfilter_arp.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_CLASSIFY.h>
+#include <freax/netfilter_arp.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_LICENSE("GPL");

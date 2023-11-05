@@ -53,8 +53,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/completion.h>
-#include <linux/irqflags.h>
+#include <freax/completion.h>
+#include <freax/irqflags.h>
 #include "sas.h"
 #include <scsi/libsas.h>
 #include "remote_device.h"

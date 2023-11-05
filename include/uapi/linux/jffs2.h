@@ -10,11 +10,11 @@
  * jffs2 directory.
  */
 
-#ifndef __LINUX_JFFS2_H__
-#define __LINUX_JFFS2_H__
+#ifndef __freax_JFFS2_H__
+#define __freax_JFFS2_H__
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 /* You must include something which defines the C99 uintXX_t types. 
    We don't do it from here because this file is used in too many
@@ -215,4 +215,4 @@ union jffs2_device_node {
 	jint32_t new_id;
 };
 
-#endif /* __LINUX_JFFS2_H__ */
+#endif /* __freax_JFFS2_H__ */

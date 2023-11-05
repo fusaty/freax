@@ -40,26 +40,26 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/uaccess.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/can-ml.h>
-#include <linux/ratelimit.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/uaccess.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/socket.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/can.h>
+#include <freax/can/core.h>
+#include <freax/can/skb.h>
+#include <freax/can/can-ml.h>
+#include <freax/ratelimit.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

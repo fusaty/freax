@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
-#ifndef _LINUX_OF_PLATFORM_H
-#define _LINUX_OF_PLATFORM_H
+#ifndef _freax_OF_PLATFORM_H
+#define _freax_OF_PLATFORM_H
 /*
  *    Copyright (C) 2006 Benjamin Herrenschmidt, IBM Corp.
  *			 <benh@kernel.crashing.org>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
 
 struct device;
 struct of_device_id;
@@ -25,8 +25,8 @@ struct of_device_id;
  * should be terminated with an empty entry.  It also allows the platform_data
  * pointer to be set.
  *
- * The reason for this functionality is that some Linux infrastructure uses
- * the device name to look up a specific device, but the Linux-specific names
+ * The reason for this functionality is that some freax infrastructure uses
+ * the device name to look up a specific device, but the freax-specific names
  * are not encoded into the device tree, so the kernel needs to provide specific
  * values.
  *
@@ -127,4 +127,4 @@ static inline int devm_of_platform_populate(struct device *dev)
 static inline void devm_of_platform_depopulate(struct device *dev) { }
 #endif
 
-#endif	/* _LINUX_OF_PLATFORM_H */
+#endif	/* _freax_OF_PLATFORM_H */

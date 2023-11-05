@@ -6,17 +6,17 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/bug.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/bug.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 #include <asm/chpid.h>
 #include <asm/sclp.h>
 #include <asm/crw.h>

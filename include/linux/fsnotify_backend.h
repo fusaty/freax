@@ -1,26 +1,26 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Filesystem access notification for Linux
+ * Filesystem access notification for freax
  *
  *  Copyright (C) 2008 Red Hat, Inc., Eric Paris <eparis@redhat.com>
  */
 
-#ifndef __LINUX_FSNOTIFY_BACKEND_H
-#define __LINUX_FSNOTIFY_BACKEND_H
+#ifndef __freax_FSNOTIFY_BACKEND_H
+#define __freax_FSNOTIFY_BACKEND_H
 
 #ifdef __KERNEL__
 
-#include <linux/idr.h> /* inotify uses this */
-#include <linux/fs.h> /* struct inode */
-#include <linux/list.h>
-#include <linux/path.h> /* struct path */
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/user_namespace.h>
-#include <linux/refcount.h>
-#include <linux/mempool.h>
-#include <linux/sched/mm.h>
+#include <freax/idr.h> /* inotify uses this */
+#include <freax/fs.h> /* struct inode */
+#include <freax/list.h>
+#include <freax/path.h> /* struct path */
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/user_namespace.h>
+#include <freax/refcount.h>
+#include <freax/mempool.h>
+#include <freax/sched/mm.h>
 
 /*
  * IN_* from inotfy.h lines up EXACTLY with FS_*, this is so we can easily
@@ -862,4 +862,4 @@ static inline void fsnotify_unmount_inodes(struct super_block *sb)
 
 #endif	/* __KERNEL __ */
 
-#endif	/* __LINUX_FSNOTIFY_BACKEND_H */
+#endif	/* __freax_FSNOTIFY_BACKEND_H */

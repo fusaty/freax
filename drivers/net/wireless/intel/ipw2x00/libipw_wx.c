@@ -11,19 +11,19 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel freax Wireless <ilw@freax.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 
-#include <linux/hardirq.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <freax/hardirq.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
 
 #include <net/lib80211.h>
-#include <linux/wireless.h>
+#include <freax/wireless.h>
 
 #include "libipw.h"
 

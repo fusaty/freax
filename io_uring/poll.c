@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/hashtable.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/hashtable.h>
+#include <freax/io_uring.h>
 
 #include <trace/events/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 
 #include "io_uring.h"
 #include "refs.h"

@@ -10,8 +10,8 @@
 #ifndef __DEVFREQ_COOLING_H__
 #define __DEVFREQ_COOLING_H__
 
-#include <linux/devfreq.h>
-#include <linux/thermal.h>
+#include <freax/devfreq.h>
+#include <freax/thermal.h>
 
 
 /**

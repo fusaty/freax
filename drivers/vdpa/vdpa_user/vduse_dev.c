@@ -8,27 +8,27 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/dma-map-ops.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/vdpa.h>
-#include <linux/nospec.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
-#include <uapi/linux/vduse.h>
-#include <uapi/linux/vdpa.h>
-#include <uapi/linux/virtio_config.h>
-#include <uapi/linux/virtio_ids.h>
-#include <uapi/linux/virtio_blk.h>
-#include <linux/mod_devicetable.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/eventfd.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/dma-map-ops.h>
+#include <freax/poll.h>
+#include <freax/file.h>
+#include <freax/uio.h>
+#include <freax/vdpa.h>
+#include <freax/nospec.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/mm.h>
+#include <uapi/freax/vduse.h>
+#include <uapi/freax/vdpa.h>
+#include <uapi/freax/virtio_config.h>
+#include <uapi/freax/virtio_ids.h>
+#include <uapi/freax/virtio_blk.h>
+#include <freax/mod_devicetable.h>
 
 #include "iova_domain.h"
 

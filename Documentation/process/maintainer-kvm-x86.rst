@@ -22,7 +22,7 @@ Trees
 KVM x86 is currently in a transition period from being part of the main KVM
 tree, to being "just another KVM arch".  As such, KVM x86 is split across the
 main KVM tree, ``git.kernel.org/pub/scm/virt/kvm/kvm.git``, and a KVM x86
-specific tree, ``github.com/kvm-x86/linux.git``.
+specific tree, ``github.com/kvm-x86/freax.git``.
 
 Generally speaking, fixes for the current cycle are applied directly to the
 main KVM tree, while all development for the next cycle is routed through the
@@ -159,7 +159,7 @@ The preferred prefix format is ``KVM: <topic>:``, where ``<topic>`` is one of::
   - VMX
   - nVMX
 
-**DO NOT use x86/kvm!**  ``x86/kvm`` is used exclusively for Linux-as-a-KVM-guest
+**DO NOT use x86/kvm!**  ``x86/kvm`` is used exclusively for freax-as-a-KVM-guest
 changes, i.e. for arch/x86/kernel/kvm.c.  Do not use file names or complete file
 paths as the subject/shortlog prefix.
 

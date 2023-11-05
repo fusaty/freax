@@ -6,12 +6,12 @@
  *                             Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/minors.h>
-#include <linux/kmod.h>
+#include <freax/kmod.h>
 
 #include <sound/seq_kernel.h>
 #include <sound/ump.h>
@@ -24,7 +24,7 @@
 #include "seq_ump_convert.h"
 #include <sound/seq_device.h>
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 #endif
 
 /* Client Manager

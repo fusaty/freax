@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef _LINUX_RANDOMIZE_KSTACK_H
-#define _LINUX_RANDOMIZE_KSTACK_H
+#ifndef _freax_RANDOMIZE_KSTACK_H
+#define _freax_RANDOMIZE_KSTACK_H
 
 #ifdef CONFIG_RANDOMIZE_KSTACK_OFFSET
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
-#include <linux/percpu-defs.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
+#include <freax/percpu-defs.h>
 
 DECLARE_STATIC_KEY_MAYBE(CONFIG_RANDOMIZE_KSTACK_OFFSET_DEFAULT,
 			 randomize_kstack_offset);

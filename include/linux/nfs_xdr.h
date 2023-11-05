@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NFS_XDR_H
-#define _LINUX_NFS_XDR_H
+#ifndef _freax_NFS_XDR_H
+#define _freax_NFS_XDR_H
 
-#include <linux/nfsacl.h>
-#include <linux/sunrpc/gss_api.h>
+#include <freax/nfsacl.h>
+#include <freax/sunrpc/gss_api.h>
 
 /*
  * To change the maximum rsize and wsize supported by the NFS client, adjust

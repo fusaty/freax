@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_LINKAGE_H
 #define _ASM_X86_LINKAGE_H
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 #include <asm/ibt.h>
 
 #undef notrace

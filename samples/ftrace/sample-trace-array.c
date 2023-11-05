@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/trace.h>
-#include <linux/trace_events.h>
-#include <linux/timer.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/trace.h>
+#include <freax/trace_events.h>
+#include <freax/timer.h>
+#include <freax/err.h>
+#include <freax/jiffies.h>
+#include <freax/workqueue.h>
 
 /*
  * Any file that uses trace points, must include the header.

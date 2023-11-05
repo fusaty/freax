@@ -6,10 +6,10 @@
  *		Copyright 2014 Linaro Ltd
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
 
 #include "pcm512x.h"
 

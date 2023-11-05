@@ -13,9 +13,9 @@
 #ifndef __KERNEL_RTMUTEX_COMMON_H
 #define __KERNEL_RTMUTEX_COMMON_H
 
-#include <linux/debug_locks.h>
-#include <linux/rtmutex.h>
-#include <linux/sched/wake_q.h>
+#include <freax/debug_locks.h>
+#include <freax/rtmutex.h>
+#include <freax/sched/wake_q.h>
 
 
 /*

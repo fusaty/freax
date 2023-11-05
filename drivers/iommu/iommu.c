@@ -6,32 +6,32 @@
 
 #define pr_fmt(fmt)    "iommu: " fmt
 
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bits.h>
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/host1x_context_bus.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/fsl/mc.h>
-#include <linux/module.h>
-#include <linux/cc_platform.h>
-#include <linux/cdx/cdx_bus.h>
+#include <freax/amba/bus.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/bits.h>
+#include <freax/bug.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/host1x_context_bus.h>
+#include <freax/iommu.h>
+#include <freax/idr.h>
+#include <freax/err.h>
+#include <freax/pci.h>
+#include <freax/pci-ats.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/fsl/mc.h>
+#include <freax/module.h>
+#include <freax/cc_platform.h>
+#include <freax/cdx/cdx_bus.h>
 #include <trace/events/iommu.h>
-#include <linux/sched/mm.h>
-#include <linux/msi.h>
+#include <freax/sched/mm.h>
+#include <freax/msi.h>
 
 #include "dma-iommu.h"
 #include "iommu-priv.h"

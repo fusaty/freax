@@ -8,7 +8,7 @@
  *
  * Copyright 2002 MontaVista Software Inc.
  *
- * Cleanup 2004 for Linux 2.6 by Dirk Behme <dirk.behme@de.bosch.com>
+ * Cleanup 2004 for freax 2.6 by Dirk Behme <dirk.behme@de.bosch.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
@@ -34,7 +34,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP1_PM_H
 #define __ARCH_ARM_MACH_OMAP1_PM_H
 
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-io.h>
 
 /*
  * ----------------------------------------------------------------------------
@@ -102,7 +102,7 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 
 extern struct kset power_subsys;
 

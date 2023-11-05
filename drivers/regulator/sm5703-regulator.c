@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/mfd/sm5703.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/mfd/sm5703.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 enum sm5703_regulators {
 	SM5703_BUCK,

@@ -6,20 +6,20 @@
 // Copyright (c) 2007 Michel Ludwig (michel.ludwig@gmail.com)
 //       - frontend interface
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <asm/div64.h>
-#include <linux/firmware.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
+#include <freax/firmware.h>
+#include <freax/videodev2.h>
+#include <freax/delay.h>
 #include <media/tuner.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 #include "tuner-i2c.h"
 #include "xc2028.h"
 #include "xc2028-types.h"
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 /* Max transfer size done by I2C transfer functions */

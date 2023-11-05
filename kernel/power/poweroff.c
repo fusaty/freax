@@ -3,13 +3,13 @@
  * poweroff.c - sysrq handler to gracefully power down machine.
  */
 
-#include <linux/kernel.h>
-#include <linux/sysrq.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/cpumask.h>
+#include <freax/kernel.h>
+#include <freax/sysrq.h>
+#include <freax/init.h>
+#include <freax/pm.h>
+#include <freax/workqueue.h>
+#include <freax/reboot.h>
+#include <freax/cpumask.h>
 
 /*
  * When the user hits Sys-Rq o to power down the machine this is the

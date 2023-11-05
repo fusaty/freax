@@ -12,9 +12,9 @@
 #include <asm-generic/kprobes.h>
 
 #ifdef CONFIG_KPROBES
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/percpu.h>
 #include <asm/text-patching.h>
 #include <asm/insn.h>
 

@@ -9,11 +9,11 @@
 #ifndef _BT878_H_
 #define _BT878_H_
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
 
 #include "bt848.h"
 #include "bttv.h"

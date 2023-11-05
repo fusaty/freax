@@ -13,7 +13,7 @@
 #include "kvm_util.h"
 #include "processor.h"
 #include "test_util.h"
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 enum ftr_type {
 	FTR_EXACT,			/* Use a predefined safe value */

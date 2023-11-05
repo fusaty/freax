@@ -17,15 +17,15 @@
  *
  *
  */
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/pm_runtime.h>
-#include <linux/timer.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/kfifo.h>
+#include <freax/pm_runtime.h>
+#include <freax/timer.h>
 
 #include <asm/iosf_mbi.h>
 

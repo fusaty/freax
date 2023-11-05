@@ -5,10 +5,10 @@
  * Author: Varun Sethi <varun.sethi@freescale.com>
  */
 
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

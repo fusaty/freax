@@ -5,18 +5,18 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #define ADI_SPI_IF_CONFIG_A		0x00
 #define ADI_SPI_IF_CONFIG_B		0x01

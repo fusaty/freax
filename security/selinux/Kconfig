@@ -1,66 +1,66 @@
 # SPDX-License-Identifier: GPL-2.0-only
-config SECURITY_SELINUX
-	bool "SELinux Support"
+config SECURITY_SEfreax
+	bool "SEfreax Support"
 	depends on SECURITY_NETWORK && AUDIT && NET && INET
 	select NETWORK_SECMARK
 	default n
 	help
-	  This selects Security-Enhanced Linux (SELinux).
+	  This selects Security-Enhanced freax (SEfreax).
 	  You will also need a policy configuration and a labeled filesystem.
 	  If you are unsure how to answer this question, answer N.
 
-config SECURITY_SELINUX_BOOTPARAM
-	bool "SELinux boot parameter"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_BOOTPARAM
+	bool "SEfreax boot parameter"
+	depends on SECURITY_SEfreax
 	default n
 	help
-	  This option adds a kernel parameter 'selinux', which allows SELinux
-	  to be disabled at boot.  If this option is selected, SELinux
-	  functionality can be disabled with selinux=0 on the kernel
+	  This option adds a kernel parameter 'sefreax', which allows SEfreax
+	  to be disabled at boot.  If this option is selected, SEfreax
+	  functionality can be disabled with sefreax=0 on the kernel
 	  command line.  The purpose of this option is to allow a single
-	  kernel image to be distributed with SELinux built in, but not
+	  kernel image to be distributed with SEfreax built in, but not
 	  necessarily enabled.
 
 	  If you are unsure how to answer this question, answer N.
 
-config SECURITY_SELINUX_DEVELOP
-	bool "SELinux Development Support"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_DEVELOP
+	bool "SEfreax Development Support"
+	depends on SECURITY_SEfreax
 	default y
 	help
-	  This enables the development support option of SELinux,
-	  which is useful for experimenting with SELinux and developing
+	  This enables the development support option of SEfreax,
+	  which is useful for experimenting with SEfreax and developing
 	  policies.  If unsure, say Y.  With this option enabled, the
 	  kernel will start in permissive mode (log everything, deny nothing)
 	  unless you specify enforcing=1 on the kernel command line.  You
 	  can interactively toggle the kernel between enforcing mode and
 	  permissive mode (if permitted by the policy) via
-	  /sys/fs/selinux/enforce.
+	  /sys/fs/sefreax/enforce.
 
-config SECURITY_SELINUX_AVC_STATS
-	bool "SELinux AVC Statistics"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_AVC_STATS
+	bool "SEfreax AVC Statistics"
+	depends on SECURITY_SEfreax
 	default y
 	help
 	  This option collects access vector cache statistics to
-	  /sys/fs/selinux/avc/cache_stats, which may be monitored via
+	  /sys/fs/sefreax/avc/cache_stats, which may be monitored via
 	  tools such as avcstat.
 
-config SECURITY_SELINUX_SIDTAB_HASH_BITS
-	int "SELinux sidtab hashtable size"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_SIDTAB_HASH_BITS
+	int "SEfreax sidtab hashtable size"
+	depends on SECURITY_SEfreax
 	range 8 13
 	default 9
 	help
 	  This option sets the number of buckets used in the sidtab hashtable
-	  to 2^SECURITY_SELINUX_SIDTAB_HASH_BITS buckets. The number of hash
-	  collisions may be viewed at /sys/fs/selinux/ss/sidtab_hash_stats. If
+	  to 2^SECURITY_SEfreax_SIDTAB_HASH_BITS buckets. The number of hash
+	  collisions may be viewed at /sys/fs/sefreax/ss/sidtab_hash_stats. If
 	  chain lengths are high (e.g. > 20) then selecting a higher value here
 	  will ensure that lookups times are short and stable.
 
-config SECURITY_SELINUX_SID2STR_CACHE_SIZE
-	int "SELinux SID to context string translation cache size"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_SID2STR_CACHE_SIZE
+	int "SEfreax SID to context string translation cache size"
+	depends on SECURITY_SEfreax
 	default 256
 	help
 	  This option defines the size of the internal SID -> context string
@@ -69,12 +69,12 @@ config SECURITY_SELINUX_SID2STR_CACHE_SIZE
 
 	  If unsure, keep the default value.
 
-config SECURITY_SELINUX_DEBUG
-	bool "SELinux kernel debugging support"
-	depends on SECURITY_SELINUX
+config SECURITY_SEfreax_DEBUG
+	bool "SEfreax kernel debugging support"
+	depends on SECURITY_SEfreax
 	default n
 	help
-	  This enables debugging code designed to help SELinux kernel
+	  This enables debugging code designed to help SEfreax kernel
 	  developers, unless you know what this does in the kernel code you
 	  should leave this disabled.
 
@@ -85,5 +85,5 @@ config SECURITY_SELINUX_DEBUG
 
 	  Example usage:
 
-		echo -n 'file "security/selinux/*" +p' > \
+		echo -n 'file "security/sefreax/*" +p' > \
 			/proc/dynamic_debug/control

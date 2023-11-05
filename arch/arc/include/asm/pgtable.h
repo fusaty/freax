@@ -6,7 +6,7 @@
 #ifndef _ASM_ARC_PGTABLE_H
 #define _ASM_ARC_PGTABLE_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #include <asm/pgtable-levels.h>
 #include <asm/pgtable-bits-arcv2.h>

@@ -6,7 +6,7 @@
  * Copyright 2007	Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "core.h"
 #include "debugfs.h"
 

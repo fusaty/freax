@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_COMPILER_ATTRIBUTES_H
-#define __LINUX_COMPILER_ATTRIBUTES_H
+#ifndef __freax_COMPILER_ATTRIBUTES_H
+#define __freax_COMPILER_ATTRIBUTES_H
 
 /*
  * The attributes in this file are unconditionally defined and they directly
@@ -397,4 +397,4 @@
  */
 #define __fix_address noinline __noclone
 
-#endif /* __LINUX_COMPILER_ATTRIBUTES_H */
+#endif /* __freax_COMPILER_ATTRIBUTES_H */

@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2019 Paulo Alcantara <palcantara@suse.de>
  */
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/root_dev.h>
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/inet.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/root_dev.h>
+#include <freax/kernel.h>
+#include <freax/in.h>
+#include <freax/inet.h>
 #include <net/ipconfig.h>
 
 #define DEFAULT_MNT_OPTS \

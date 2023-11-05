@@ -2,20 +2,20 @@
 /*
  * Copyright 2012 Calxeda, Inc.
  */
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/completion.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/amba/bus.h>
 
-#include <linux/pl320-ipc.h>
+#include <freax/pl320-ipc.h>
 
 #define IPCMxSOURCE(m)		((m) * 0x40)
 #define IPCMxDSET(m)		(((m) * 0x40) + 0x004)

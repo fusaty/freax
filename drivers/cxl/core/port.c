@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/platform_device.h>
-#include <linux/memregion.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
+#include <freax/platform_device.h>
+#include <freax/memregion.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
 #include <cxlmem.h>
 #include <cxlpci.h>
 #include <cxl.h>

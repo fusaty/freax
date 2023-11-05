@@ -2,13 +2,13 @@
 /*
  * Apple mailbox message format
  *
- * Copyright (C) 2021 The Asahi Linux Contributors
+ * Copyright (C) 2021 The Asahi freax Contributors
  */
 
-#ifndef _LINUX_APPLE_MAILBOX_H_
-#define _LINUX_APPLE_MAILBOX_H_
+#ifndef _freax_APPLE_MAILBOX_H_
+#define _freax_APPLE_MAILBOX_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* encodes a single 96bit message sent over the single channel */
 struct apple_mbox_msg {

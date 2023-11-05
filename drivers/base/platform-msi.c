@@ -6,12 +6,12 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/msi.h>
+#include <freax/slab.h>
 
 #define DEV_ID_SHIFT	21
 #define MAX_DEV_MSIS	(1 << (32 - DEV_ID_SHIFT))

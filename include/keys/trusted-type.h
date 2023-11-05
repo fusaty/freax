@@ -7,9 +7,9 @@
 #ifndef _KEYS_TRUSTED_TYPE_H
 #define _KEYS_TRUSTED_TYPE_H
 
-#include <linux/key.h>
-#include <linux/rcupdate.h>
-#include <linux/tpm.h>
+#include <freax/key.h>
+#include <freax/rcupdate.h>
+#include <freax/tpm.h>
 
 #ifdef pr_fmt
 #undef pr_fmt

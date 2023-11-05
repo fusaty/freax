@@ -7,10 +7,10 @@
  *     Jacob Siverskog <jacob@teenage.engineering>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
 
 #include "pcm179x.h"
 

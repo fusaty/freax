@@ -6,22 +6,22 @@
  * Copyright (C) 2008-2009 Marvell Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/mbus.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/of_irq.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/mbus.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/of_irq.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/slot-gpio.h>
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/unaligned.h>
 
 #include "mvsdio.h"

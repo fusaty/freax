@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CPUMASK_H
-#define _LINUX_CPUMASK_H
+#ifndef _freax_CPUMASK_H
+#define _freax_CPUMASK_H
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
-#endif /* _LINUX_CPUMASK_H */
+#endif /* _freax_CPUMASK_H */

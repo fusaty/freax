@@ -6,8 +6,8 @@
 
 #ifndef _QED_ISCSI_IF_H
 #define _QED_ISCSI_IF_H
-#include <linux/types.h>
-#include <linux/qed/qed_if.h>
+#include <freax/types.h>
+#include <freax/qed/qed_if.h>
 
 typedef int (*iscsi_event_cb_t) (void *context,
 				 u8 fw_event_code, void *fw_handle);

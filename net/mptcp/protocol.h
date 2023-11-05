@@ -7,10 +7,10 @@
 #ifndef __MPTCP_PROTOCOL_H
 #define __MPTCP_PROTOCOL_H
 
-#include <linux/random.h>
+#include <freax/random.h>
 #include <net/tcp.h>
 #include <net/inet_connection_sock.h>
-#include <uapi/linux/mptcp.h>
+#include <uapi/freax/mptcp.h>
 #include <net/genetlink.h>
 
 #include "mptcp_pm_gen.h"

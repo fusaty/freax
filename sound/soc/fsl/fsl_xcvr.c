@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright 2019 NXP
 
-#include <linux/bitrev.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/bitrev.h>
+#include <freax/clk.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_iec958.h>
 #include <sound/pcm_params.h>

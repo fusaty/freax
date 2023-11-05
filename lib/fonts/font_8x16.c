@@ -5,8 +5,8 @@
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
-#include <linux/module.h>
+#include <freax/font.h>
+#include <freax/module.h>
 
 #define FONTDATAMAX 4096
 

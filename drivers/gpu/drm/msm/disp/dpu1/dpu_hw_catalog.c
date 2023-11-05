@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2022-2023, Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 #include "dpu_hw_mdss.h"
 #include "dpu_hw_interrupts.h"
 #include "dpu_hw_catalog.h"

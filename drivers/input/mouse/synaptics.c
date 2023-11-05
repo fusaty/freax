@@ -20,15 +20,15 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/rmi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/input/mt.h>
+#include <freax/serio.h>
+#include <freax/libps2.h>
+#include <freax/rmi.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
 #include "psmouse.h"
 #include "synaptics.h"
 
@@ -1796,7 +1796,7 @@ static int synaptics_setup_intertouch(struct psmouse *psmouse,
 			if (!psmouse_matches_pnp_id(psmouse, forcepad_pnp_ids))
 				psmouse_info(psmouse,
 					     "Your touchpad (%s) says it can support a different bus. "
-					     "If i2c-hid and hid-rmi are not used, you might want to try setting psmouse.synaptics_intertouch to 1 and report this to linux-input@vger.kernel.org.\n",
+					     "If i2c-hid and hid-rmi are not used, you might want to try setting psmouse.synaptics_intertouch to 1 and report this to freax-input@vger.kernel.org.\n",
 					     psmouse->ps2dev.serio->firmware_id);
 
 			return -ENXIO;

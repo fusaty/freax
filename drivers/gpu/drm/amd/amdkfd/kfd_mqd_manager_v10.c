@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #include "kfd_priv.h"
 #include "kfd_mqd_manager.h"
 #include "v10_structs.h"

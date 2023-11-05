@@ -34,19 +34,19 @@
     
 ======================================================================*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/ioport.h>
+#include <freax/major.h>
+#include <freax/interrupt.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
+#include <freax/parport.h>
+#include <freax/parport_pc.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mount.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -21,7 +21,7 @@
 #include "cifs_ioctl.h"
 #include "smb2proto.h"
 #include "smb2glob.h"
-#include <linux/btrfs.h>
+#include <freax/btrfs.h>
 
 static long cifs_ioctl_query_info(unsigned int xid, struct file *filep,
 				  unsigned long p)
@@ -174,7 +174,7 @@ static int cifs_shutdown(struct super_block *sb, unsigned long arg)
 
 	/*
 	 * see:
-	 *   https://man7.org/linux/man-pages/man2/ioctl_xfs_goingdown.2.html
+	 *   https://man7.org/freax/man-pages/man2/ioctl_xfs_goingdown.2.html
 	 * for more information and description of original intent of the flags
 	 */
 	switch (flags) {

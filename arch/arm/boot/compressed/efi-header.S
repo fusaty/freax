@@ -5,8 +5,8 @@
  *          Ard Biesheuvel <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <freax/pe.h>
+#include <freax/sizes.h>
 
 		.macro	__nop
  AR_CLASS(	mov	r0, r0		)
@@ -18,7 +18,7 @@
 		@ This is a two-instruction NOP, which happens to bear the
 		@ PE/COFF signature "MZ" in the first two bytes, so the kernel
 		@ is accepted as an EFI binary. Booting via the UEFI stub
-		@ will not execute those instructions, but the ARM/Linux
+		@ will not execute those instructions, but the ARM/freax
 		@ boot protocol does, so we need some NOPs here.
 		.inst	MZ_MAGIC | (0xe225 << 16)	@ eor r5, r5, 0x4d000
 		eor	r5, r5, 0x4d000			@ undo previous insn
@@ -76,8 +76,8 @@ extra_header_fields:
 		.long	SZ_512				@ FileAlignment
 		.short	0				@ MajorOsVersion
 		.short	0				@ MinorOsVersion
-		.short	LINUX_EFISTUB_MAJOR_VERSION	@ MajorImageVersion
-		.short	LINUX_EFISTUB_MINOR_VERSION	@ MinorImageVersion
+		.short	freax_EFISTUB_MAJOR_VERSION	@ MajorImageVersion
+		.short	freax_EFISTUB_MINOR_VERSION	@ MinorImageVersion
 		.short	0				@ MajorSubsystemVersion
 		.short	0				@ MinorSubsystemVersion
 		.long	0				@ Win32VersionValue

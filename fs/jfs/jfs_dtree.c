@@ -87,9 +87,9 @@
  *	log based recovery:
  */
 
-#include <linux/fs.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/quotaops.h>
+#include <freax/slab.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_filsys.h"
@@ -2817,7 +2817,7 @@ int jfs_readdir(struct file *file, struct dir_context *ctx)
 		}
 	} else {
 		/*
-		 * Legacy filesystem - OS/2 & Linux JFS < 0.3.6
+		 * Legacy filesystem - OS/2 & freax JFS < 0.3.6
 		 *
 		 * pn = 0; index = 1:	First entry "."
 		 * pn = 0; index = 2:	Second entry ".."

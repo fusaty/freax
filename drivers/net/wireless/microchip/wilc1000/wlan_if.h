@@ -7,7 +7,7 @@
 #ifndef WILC_WLAN_IF_H
 #define WILC_WLAN_IF_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include "fw.h"
 
 #define WILC_MAX_ASSOC_RESP_FRAME_SIZE 512

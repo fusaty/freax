@@ -8,13 +8,13 @@
  * Datasheet: https://www.allsensors.com/cad/DS-0355_Rev_B.PDF
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 #include <asm/unaligned.h>
 
 /* Commands */

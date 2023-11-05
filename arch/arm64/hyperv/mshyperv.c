@@ -9,12 +9,12 @@
  * Author : Michael Kelley <mikelley@microsoft.com>
  */
 
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/version.h>
-#include <linux/cpuhotplug.h>
+#include <freax/types.h>
+#include <freax/acpi.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/version.h>
+#include <freax/cpuhotplug.h>
 #include <asm/mshyperv.h>
 
 static bool hyperv_initialized;
@@ -38,7 +38,7 @@ static int __init hyperv_init(void)
 		return 0;
 
 	/* Setup the guest ID */
-	guest_id = hv_generate_guest_id(LINUX_VERSION_CODE);
+	guest_id = hv_generate_guest_id(freax_VERSION_CODE);
 	hv_set_vpreg(HV_REGISTER_GUEST_OSID, guest_id);
 
 	/* Get the features and hints from Hyper-V */

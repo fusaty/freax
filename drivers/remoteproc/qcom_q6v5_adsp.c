@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Qualcomm Technology Inc. ADSP Peripheral Image Loader for SDM845.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/soc/qcom/mdt_loader.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
+#include <freax/soc/qcom/mdt_loader.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/soc/qcom/smem_state.h>
 
 #include "qcom_common.h"
 #include "qcom_pil_info.h"

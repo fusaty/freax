@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2000-2001 Qualcomm Incorporated
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -26,7 +26,7 @@
 
 #define pr_fmt(fmt) "Bluetooth: " fmt
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include <net/bluetooth/bluetooth.h>
 

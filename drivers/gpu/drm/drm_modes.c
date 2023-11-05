@@ -30,12 +30,12 @@
  * authorization from the copyright holder(s) and author(s).
  */
 
-#include <linux/ctype.h>
-#include <linux/export.h>
-#include <linux/fb.h> /* for KHZ2PICOS() */
-#include <linux/list.h>
-#include <linux/list_sort.h>
-#include <linux/of.h>
+#include <freax/ctype.h>
+#include <freax/export.h>
+#include <freax/fb.h> /* for KHZ2PICOS() */
+#include <freax/list.h>
+#include <freax/list_sort.h>
+#include <freax/of.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

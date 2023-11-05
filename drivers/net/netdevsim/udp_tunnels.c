@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2020 Facebook Inc.
 
-#include <linux/debugfs.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
 #include <net/udp_tunnel.h>
 
 #include "netdevsim.h"

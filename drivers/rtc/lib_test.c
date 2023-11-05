@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-2.1+
 
 #include <kunit/test.h>
-#include <linux/rtc.h>
+#include <freax/rtc.h>
 
 /*
  * Advance a date by one day.

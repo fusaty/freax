@@ -4,17 +4,17 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Philipp Rudo <prudo@linux.vnet.ibm.com>
+ * Author(s): Philipp Rudo <prudo@freax.vnet.ibm.com>
  */
 
 #define pr_fmt(fmt)	"kexec: " fmt
 
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/module_signature.h>
-#include <linux/verification.h>
-#include <linux/vmalloc.h>
+#include <freax/elf.h>
+#include <freax/errno.h>
+#include <freax/kexec.h>
+#include <freax/module_signature.h>
+#include <freax/verification.h>
+#include <freax/vmalloc.h>
 #include <asm/boot_data.h>
 #include <asm/ipl.h>
 #include <asm/setup.h>

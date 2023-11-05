@@ -2,12 +2,12 @@
 /*
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/bits.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/midi.h>
+#include <freax/bits.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

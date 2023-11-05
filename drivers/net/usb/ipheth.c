@@ -43,16 +43,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
-#include <linux/usb/cdc.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/usb.h>
+#include <freax/workqueue.h>
+#include <freax/usb/cdc.h>
 
 #define USB_VENDOR_APPLE        0x05ac
 

@@ -5,11 +5,11 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 //
 
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include <sound/sof.h>
 #include "sof-priv.h"

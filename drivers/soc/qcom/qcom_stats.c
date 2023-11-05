@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2021, The freax Foundation. All rights reserved.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
 
-#include <linux/soc/qcom/smem.h>
+#include <freax/soc/qcom/smem.h>
 #include <clocksource/arm_arch_timer.h>
 
 #define RPM_DYNAMIC_ADDR	0x14

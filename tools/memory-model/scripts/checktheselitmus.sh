@@ -20,7 +20,7 @@
 #
 # Copyright IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.ibm.com>
+# Author: Paul E. McKenney <paulmck@freax.ibm.com>
 
 . scripts/parseargs.sh
 

@@ -21,14 +21,14 @@
  *
  */
 
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 /*
  * MAX 6620 registers

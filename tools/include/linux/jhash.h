@@ -1,5 +1,5 @@
-#ifndef _LINUX_JHASH_H
-#define _LINUX_JHASH_H
+#ifndef _freax_JHASH_H
+#define _freax_JHASH_H
 
 /* jhash.h: Jenkins hash support.
  *
@@ -19,12 +19,12 @@
  *
  * Copyright (C) 2009-2010 Jozsef Kadlecsik (kadlec@blackhole.kfki.hu)
  *
- * I've modified Bob's hash to be useful in the Linux kernel, and
+ * I've modified Bob's hash to be useful in the freax kernel, and
  * any bugs present are my fault.
  * Jozsef
  */
-#include <linux/bitops.h>
-#include <linux/unaligned/packed_struct.h>
+#include <freax/bitops.h>
+#include <freax/unaligned/packed_struct.h>
 
 /* Best hash sizes are of power of two */
 #define jhash_size(n)   ((u32)1<<(n))
@@ -172,4 +172,4 @@ static inline u32 jhash_1word(u32 a, u32 initval)
 	return __jhash_nwords(a, 0, 0, initval + JHASH_INITVAL + (1 << 2));
 }
 
-#endif /* _LINUX_JHASH_H */
+#endif /* _freax_JHASH_H */

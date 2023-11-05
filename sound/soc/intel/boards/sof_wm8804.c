@@ -5,13 +5,13 @@
 // based on WM8804/Hifiberry Digi+
 
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
@@ -188,7 +188,7 @@ static char codec_name[SND_ACPI_I2C_ID_LEN];
 /*
  * to control the HifiBerry Digi+ PRO, it's required to toggle GPIO to
  * select the clock source. On the Up2 board, this means
- * Pin29/BCM5/Linux GPIO 430 and Pin 31/BCM6/ Linux GPIO 404.
+ * Pin29/BCM5/freax GPIO 430 and Pin 31/BCM6/ freax GPIO 404.
  *
  * Using the ACPI device name is not very nice, but since we only use
  * the value for the Up2 board there is no risk of conflict with other

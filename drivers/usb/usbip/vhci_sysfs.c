@@ -4,14 +4,14 @@
  * Copyright (C) 2015-2016 Nobuo Iwata
  */
 
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/net.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/kthread.h>
+#include <freax/file.h>
+#include <freax/net.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 /* Hardening for Spectre-v1 */
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "usbip_common.h"
 #include "vhci.h"

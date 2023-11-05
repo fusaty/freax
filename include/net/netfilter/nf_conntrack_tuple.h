@@ -5,15 +5,15 @@
  * 16 Dec 2003: Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  *	- generalize L3 protocol dependent part.
  *
- * Derived from include/linux/netfiter_ipv4/ip_conntrack_tuple.h
+ * Derived from include/freax/netfiter_ipv4/ip_conntrack_tuple.h
  */
 
 #ifndef _NF_CONNTRACK_TUPLE_H
 #define _NF_CONNTRACK_TUPLE_H
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
-#include <linux/list_nulls.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/nf_conntrack_tuple_common.h>
+#include <freax/list_nulls.h>
 
 /* A `tuple' is a structure containing the information to uniquely
   identify a connection.  ie. if two packets have the same tuple, they

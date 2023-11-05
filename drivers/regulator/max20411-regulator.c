@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/bitfield.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
 
 #define MAX20411_UV_STEP		6250
 #define MAX20411_BASE_UV		243750

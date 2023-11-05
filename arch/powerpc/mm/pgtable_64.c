@@ -3,7 +3,7 @@
  *  This file contains pgtable related functions for 64-bit machines.
  *
  *  Derived from arch/ppc64/mm/init.c
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@samba.org)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -16,20 +16,20 @@
  *      Rework for PPC64 port.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/stddef.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/hugetlb.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>

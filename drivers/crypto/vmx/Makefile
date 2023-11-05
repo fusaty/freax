@@ -3,12 +3,12 @@ obj-$(CONFIG_CRYPTO_DEV_VMX_ENCRYPT) += vmx-crypto.o
 vmx-crypto-objs := vmx.o aesp8-ppc.o ghashp8-ppc.o aes.o aes_cbc.o aes_ctr.o aes_xts.o ghash.o
 
 ifeq ($(CONFIG_CPU_LITTLE_ENDIAN),y)
-override flavour := linux-ppc64le
+override flavour := freax-ppc64le
 else
 ifdef CONFIG_PPC64_ELF_ABI_V2
-override flavour := linux-ppc64-elfv2
+override flavour := freax-ppc64-elfv2
 else
-override flavour := linux-ppc64
+override flavour := freax-ppc64
 endif
 endif
 

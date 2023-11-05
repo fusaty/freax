@@ -6,7 +6,7 @@
 #ifndef _INTEL_GSC_FW_H_
 #define _INTEL_GSC_FW_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_gsc_uc;
 struct intel_uc_fw;

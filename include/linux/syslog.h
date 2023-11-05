@@ -5,10 +5,10 @@
  *  Author: Kees Cook <kees.cook@canonical.com>
  */
 
-#ifndef _LINUX_SYSLOG_H
-#define _LINUX_SYSLOG_H
+#ifndef _freax_SYSLOG_H
+#define _freax_SYSLOG_H
 
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 /* Close the log.  Currently a NOP. */
 #define SYSLOG_ACTION_CLOSE          0
@@ -39,4 +39,4 @@
 int do_syslog(int type, char __user *buf, int count, int source);
 extern wait_queue_head_t log_wait;
 
-#endif /* _LINUX_SYSLOG_H */
+#endif /* _freax_SYSLOG_H */

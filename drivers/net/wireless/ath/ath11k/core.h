@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef ATH11K_CORE_H
 #define ATH11K_CORE_H
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bitfield.h>
-#include <linux/dmi.h>
-#include <linux/ctype.h>
-#include <linux/rhashtable.h>
-#include <linux/average.h>
-#include <linux/firmware.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/bitfield.h>
+#include <freax/dmi.h>
+#include <freax/ctype.h>
+#include <freax/rhashtable.h>
+#include <freax/average.h>
+#include <freax/firmware.h>
 
 #include "qmi.h"
 #include "htc.h"

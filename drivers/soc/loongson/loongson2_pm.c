@@ -5,15 +5,15 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/of_platform.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/suspend.h>
+#include <freax/interrupt.h>
+#include <freax/of_platform.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/platform_device.h>
 #include <asm/bootinfo.h>
 #include <asm/suspend.h>
 

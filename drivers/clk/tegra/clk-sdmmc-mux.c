@@ -10,10 +10,10 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/types.h>
 
 #include "clk.h"
 

@@ -14,14 +14,14 @@
  * is not parsed in any way).
  */
 
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/root_dev.h>
-#include <linux/screen_info.h>
-#include <linux/memblock.h>
-#include <uapi/linux/mount.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/root_dev.h>
+#include <freax/screen_info.h>
+#include <freax/memblock.h>
+#include <uapi/freax/mount.h>
 
 #include <asm/setup.h>
 #include <asm/system_info.h>

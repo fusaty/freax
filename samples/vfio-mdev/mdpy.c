@@ -15,17 +15,17 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/cdev.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/cdev.h>
+#include <freax/vfio.h>
+#include <freax/iommu.h>
+#include <freax/sysfs.h>
+#include <freax/mdev.h>
+#include <freax/pci.h>
 #include <drm/drm_fourcc.h>
 #include "mdpy-defs.h"
 

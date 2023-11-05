@@ -5,13 +5,13 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/pgtable.h>
+#include <freax/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/threads.h>
+#include <freax/pgtable.h>
 
 #include <asm/spitfire.h>
 #include <asm/oplib.h>

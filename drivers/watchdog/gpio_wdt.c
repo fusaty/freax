@@ -5,13 +5,13 @@
  * Author: 2013, Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);
@@ -168,7 +168,7 @@ static int gpio_wdt_probe(struct platform_device *pdev)
 }
 
 static const struct of_device_id gpio_wdt_dt_ids[] = {
-	{ .compatible = "linux,wdt-gpio", },
+	{ .compatible = "freax,wdt-gpio", },
 	{ }
 };
 MODULE_DEVICE_TABLE(of, gpio_wdt_dt_ids);

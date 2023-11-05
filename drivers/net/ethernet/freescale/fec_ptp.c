@@ -7,31 +7,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/fec.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_net.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ptrace.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
+#include <freax/fec.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/of_net.h>
 
 #include "fec.h"
 

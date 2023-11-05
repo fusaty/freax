@@ -4,16 +4,16 @@
  */
 
 /*
- * Genius Flight 2000 joystick driver for Linux
+ * Genius Flight 2000 joystick driver for freax
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/gameport.h>
+#include <freax/jiffies.h>
 
 #define DRIVER_DESC	"Genius Flight 2000 joystick driver"
 

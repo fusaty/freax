@@ -7,7 +7,7 @@
 #include <asm/barrier.h>
 #include <asm/unistd.h>
 #include <asm/csr.h>
-#include <uapi/linux/time.h>
+#include <uapi/freax/time.h>
 
 /*
  * 32-bit land is lacking generic time vsyscalls as well as the legacy 32-bit

@@ -8,14 +8,14 @@
  * drivers/platform/chrome/wilco_ec/core.c
  */
 
-#include <linux/bcd.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/rtc.h>
-#include <linux/timekeeping.h>
+#include <freax/bcd.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/wilco-ec.h>
+#include <freax/rtc.h>
+#include <freax/timekeeping.h>
 
 #define EC_COMMAND_CMOS			0x7c
 #define EC_CMOS_TOD_WRITE		0x02

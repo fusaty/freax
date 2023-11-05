@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/cpumask.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irq_work.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/smp.h>
-#include <linux/serial_core.h>
-#include <linux/pgtable.h>
+#include <freax/acpi.h>
+#include <freax/arm-smccc.h>
+#include <freax/cpumask.h>
+#include <freax/efi.h>
+#include <freax/efi-bgrt.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/irq_work.h>
+#include <freax/memblock.h>
+#include <freax/of_fdt.h>
+#include <freax/libfdt.h>
+#include <freax/smp.h>
+#include <freax/serial_core.h>
+#include <freax/pgtable.h>
 
 #include <acpi/ghes.h>
 #include <asm/cputype.h>

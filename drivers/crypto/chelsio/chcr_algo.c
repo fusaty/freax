@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T6 Crypto driver for Linux.
+ * This file is part of the Chelsio T6 Crypto driver for freax.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -41,13 +41,13 @@
 
 #define pr_fmt(fmt) "chcr:" fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/highmem.h>
+#include <freax/scatterlist.h>
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>

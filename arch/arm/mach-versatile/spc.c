@@ -9,17 +9,17 @@
  *          Lorenzo Pieralisi     <lorenzo.pieralisi@arm.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/semaphore.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
+#include <freax/semaphore.h>
 
 #include <asm/cacheflush.h>
 

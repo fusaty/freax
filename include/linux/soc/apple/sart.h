@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only OR MIT */
 /*
  * Apple SART device driver
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi freax Contributors
  *
  * Apple SART is a simple address filter for DMA transactions.
  * Regions of physical memory must be added to the SART's allow
@@ -9,12 +9,12 @@
  * IOMMU no remapping can be done.
  */
 
-#ifndef _LINUX_SOC_APPLE_SART_H_
-#define _LINUX_SOC_APPLE_SART_H_
+#ifndef _freax_SOC_APPLE_SART_H_
+#define _freax_SOC_APPLE_SART_H_
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/types.h>
 
 struct apple_sart;
 
@@ -50,4 +50,4 @@ int apple_sart_add_allowed_region(struct apple_sart *sart, phys_addr_t paddr,
 int apple_sart_remove_allowed_region(struct apple_sart *sart, phys_addr_t paddr,
 				     size_t size);
 
-#endif /* _LINUX_SOC_APPLE_SART_H_ */
+#endif /* _freax_SOC_APPLE_SART_H_ */

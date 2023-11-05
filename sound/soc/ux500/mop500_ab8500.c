@@ -7,11 +7,11 @@
  *         for ST-Ericsson.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/mutex.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

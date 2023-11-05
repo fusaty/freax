@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: LGPL-2.1 OR MIT */
 /*
  * NOLIBC compiler support header
- * Copyright (C) 2023 Thomas Weißschuh <linux@weissschuh.net>
+ * Copyright (C) 2023 Thomas Weißschuh <freax@weissschuh.net>
  */
 #ifndef _NOLIBC_COMPILER_H
 #define _NOLIBC_COMPILER_H

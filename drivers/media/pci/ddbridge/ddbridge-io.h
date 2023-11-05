@@ -10,7 +10,7 @@
 #ifndef __DDBRIDGE_IO_H__
 #define __DDBRIDGE_IO_H__
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "ddbridge.h"
 

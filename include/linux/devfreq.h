@@ -7,13 +7,13 @@
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#ifndef __LINUX_DEVFREQ_H__
-#define __LINUX_DEVFREQ_H__
+#ifndef __freax_DEVFREQ_H__
+#define __freax_DEVFREQ_H__
 
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_qos.h>
+#include <freax/device.h>
+#include <freax/notifier.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_qos.h>
 
 /* DEVFREQ governor name */
 #define DEVFREQ_GOV_SIMPLE_ONDEMAND	"simple_ondemand"
@@ -452,4 +452,4 @@ static inline int devfreq_update_stats(struct devfreq *df)
 }
 #endif /* CONFIG_PM_DEVFREQ */
 
-#endif /* __LINUX_DEVFREQ_H__ */
+#endif /* __freax_DEVFREQ_H__ */

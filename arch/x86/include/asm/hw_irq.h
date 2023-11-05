@@ -20,11 +20,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/percpu.h>
-#include <linux/profile.h>
-#include <linux/smp.h>
+#include <freax/percpu.h>
+#include <freax/profile.h>
+#include <freax/smp.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/irq.h>
 #include <asm/sections.h>
 

@@ -8,14 +8,14 @@
  * Copyright (C) 1999-2000 Grant Grundler
  * Copyright (c) 2005 Matthew Wilcox
  */
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/sched/task_stack.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/seq_file.h>
+#include <freax/types.h>
+#include <freax/sched/task_stack.h>
 #include <asm/io.h>
 
 #include <asm/softirq_stack.h>

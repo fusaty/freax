@@ -6,6 +6,6 @@
 #ifndef __MEDIA_IMX_H__
 #define __MEDIA_IMX_H__
 
-#include <linux/imx-media.h>
+#include <freax/imx-media.h>
 
 #endif

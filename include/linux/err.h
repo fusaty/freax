@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ERR_H
-#define _LINUX_ERR_H
+#ifndef _freax_ERR_H
+#define _freax_ERR_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 #include <asm/errno.h>
 
@@ -112,4 +112,4 @@ static inline int __must_check PTR_ERR_OR_ZERO(__force const void *ptr)
 
 #endif
 
-#endif /* _LINUX_ERR_H */
+#endif /* _freax_ERR_H */

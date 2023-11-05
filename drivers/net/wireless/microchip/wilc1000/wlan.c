@@ -4,8 +4,8 @@
  * All rights reserved.
  */
 
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <freax/if_ether.h>
+#include <freax/ip.h>
 #include <net/dsfield.h>
 #include "cfg80211.h"
 #include "wlan_cfg.h"

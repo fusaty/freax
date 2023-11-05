@@ -3,19 +3,19 @@
  * Copyright 2012 Simon Arlott
  */
 
-#include <linux/bitops.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sched_clock.h>
+#include <freax/bitops.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/interrupt.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/sched_clock.h>
 
 #include <asm/irq.h>
 

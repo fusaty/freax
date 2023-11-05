@@ -3,8 +3,8 @@
  * Copyright 1997-1998 Transmeta Corporation -- All Rights Reserved
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/init.h>
 #include "autofs_i.h"
 
 struct file_system_type autofs_fs_type = {

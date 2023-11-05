@@ -16,22 +16,22 @@
  * v4l2_device/v4l2_subdev conversion by:
  * Copyright (C) 2009 Hans Verkuil <hverkuil@xs4all.nl>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/i2c/ov7670.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <freax/device.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/clkdev.h>
 
 #include "mcam-core.h"
 
@@ -83,7 +83,7 @@ struct cafe_camera {
 #define	  TWSIC0_SID	  0x000003fc	/* Slave ID */
 /*
  * Subtle trickery: the slave ID field starts with bit 2.  But the
- * Linux i2c stack wants to treat the bottommost bit as a separate
+ * freax i2c stack wants to treat the bottommost bit as a separate
  * read/write bit, which is why slave ID's are usually presented
  * >>1.  For consistency with that behavior, we shift over three
  * bits instead of two.

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/isofs/namei.c
+ *  freax/fs/isofs/namei.c
  *
  *  (C) 1992  Eric Youngdale Modified for ISO 9660 filesystem.
  *
  *  (C) 1991  Linus Torvalds - minix filesystem
  */
 
-#include <linux/gfp.h>
+#include <freax/gfp.h>
 #include "isofs.h"
 
 /*

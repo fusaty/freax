@@ -43,8 +43,8 @@
  * address space.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 #include <drm/drm.h>
 
 #include "amdgpu.h"

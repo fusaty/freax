@@ -4,10 +4,10 @@
  * Copyright (C) 2018 Intel Corporation
  */
 
-#ifndef _LINUX_ADXL_H
-#define _LINUX_ADXL_H
+#ifndef _freax_ADXL_H
+#define _freax_ADXL_H
 
 const char * const *adxl_get_component_names(void);
 int adxl_decode(u64 addr, u64 component_values[]);
 
-#endif /* _LINUX_ADXL_H */
+#endif /* _freax_ADXL_H */

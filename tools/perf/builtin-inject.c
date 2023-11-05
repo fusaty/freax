@@ -31,14 +31,14 @@
 
 #include <internal/lib.h>
 
-#include <linux/err.h>
+#include <freax/err.h>
 #include <subcmd/parse-options.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <uapi/freax/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <linux/hash.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
+#include <freax/hash.h>
 #include <ctype.h>
 #include <errno.h>
 #include <signal.h>
@@ -2237,10 +2237,10 @@ int cmd_inject(int argc, const char **argv)
 #endif
 		OPT_INCR('v', "verbose", &verbose,
 			 "be more verbose (show build ids, etc)"),
-		OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-			   "file", "vmlinux pathname"),
-		OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-			    "don't load vmlinux even if found"),
+		OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+			   "file", "vmfreax pathname"),
+		OPT_BOOLEAN(0, "ignore-vmfreax", &symbol_conf.ignore_vmfreax,
+			    "don't load vmfreax even if found"),
 		OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name, "file",
 			   "kallsyms pathname"),
 		OPT_BOOLEAN('f', "force", &data.force, "don't complain, do it"),

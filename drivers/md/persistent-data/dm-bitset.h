@@ -4,8 +4,8 @@
  *
  * This file is released under the GPL.
  */
-#ifndef _LINUX_DM_BITSET_H
-#define _LINUX_DM_BITSET_H
+#ifndef _freax_DM_BITSET_H
+#define _freax_DM_BITSET_H
 
 #include "dm-array.h"
 
@@ -203,4 +203,4 @@ bool dm_bitset_cursor_get_value(struct dm_bitset_cursor *c);
 
 /*----------------------------------------------------------------*/
 
-#endif /* _LINUX_DM_BITSET_H */
+#endif /* _freax_DM_BITSET_H */

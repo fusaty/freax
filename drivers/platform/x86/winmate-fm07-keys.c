@@ -4,13 +4,13 @@
 //
 // Author: Daniel Beer <daniel.beer@tirotech.co.nz>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
 
 #define DRV_NAME	"winmate-fm07keys"
 

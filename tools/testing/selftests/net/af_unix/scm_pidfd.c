@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
-#include <linux/socket.h>
+#include <freax/socket.h>
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>

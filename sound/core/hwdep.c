@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
+#include <freax/major.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/minors.h>

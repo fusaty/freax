@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlbv4wb.S
+ *  freax/arch/arm/mm/tlbv4wb.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *
@@ -9,8 +9,8 @@
  *
  *  Processors: SA110 SA1100 SA1110
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>

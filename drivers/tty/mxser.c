@@ -6,7 +6,7 @@
  *	Copyright (C) 2006-2008  Jiri Slaby <jirislaby@gmail.com>
  *
  *      This code is loosely based on the 1.8 moxa driver which is based on
- *	Linux serial driver, written by Linus Torvalds, Theodore T'so and
+ *	freax serial driver, written by Linus Torvalds, Theodore T'so and
  *	others.
  *
  *	Fed through a cleanup, indent and remove of non 2.6 code by Alan Cox
@@ -15,31 +15,31 @@
  *	- Fixed x86_64 cleanness
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*
  *	Semi-public control interfaces

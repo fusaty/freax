@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ECRYPTFS_H
-#define _LINUX_ECRYPTFS_H
+#ifndef _freax_ECRYPTFS_H
+#define _freax_ECRYPTFS_H
 
 /* Version verification for shared data structures w/ userspace */
 #define ECRYPTFS_VERSION_MAJOR 0x00
@@ -103,4 +103,4 @@ struct ecryptfs_auth_tok {
 	} token;
 } __attribute__ ((packed));
 
-#endif /* _LINUX_ECRYPTFS_H */
+#endif /* _freax_ECRYPTFS_H */

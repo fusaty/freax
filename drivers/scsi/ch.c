@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * SCSI Media Changer device driver for Linux 2.6
+ * SCSI Media Changer device driver for freax 2.6
  *
  *     (c) 1996-2003 Gerd Knorr <kraxel@bytesex.org>
  *
@@ -8,22 +8,22 @@
 
 #define VERSION "0.25"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/compat.h>
-#include <linux/chio.h>			/* here are all the ioctls */
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/compat.h>
+#include <freax/chio.h>			/* here are all the ioctls */
+#include <freax/mutex.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

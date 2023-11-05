@@ -7,15 +7,15 @@ Writing an ALSA Driver
 Preface
 =======
 
-This document describes how to write an `ALSA (Advanced Linux Sound
+This document describes how to write an `ALSA (Advanced freax Sound
 Architecture) <http://www.alsa-project.org/>`__ driver. The document
 focuses mainly on PCI soundcards. In the case of other device types, the
 API might be different, too. However, at least the ALSA kernel API is
 consistent, and therefore it would be still a bit help for writing them.
 
 This document targets people who already have enough C language skills
-and have basic linux kernel programming knowledge. This document doesn't
-explain the general topic of linux kernel coding and doesn't cover
+and have basic freax kernel programming knowledge. This document doesn't
+explain the general topic of freax kernel coding and doesn't cover
 low-level driver implementation details. It only describes the standard
 way to write a PCI sound driver on ALSA.
 
@@ -114,7 +114,7 @@ i2c directory
 
 This contains the ALSA i2c components.
 
-Although there is a standard i2c layer on Linux, ALSA has its own i2c
+Although there is a standard i2c layer on freax, ALSA has its own i2c
 code for some cards, because the soundcard needs only a simple operation
 and the standard i2c API is too complicated for such a purpose.
 
@@ -209,9 +209,9 @@ to details explained in the following section.
 
 ::
 
-      #include <linux/init.h>
-      #include <linux/pci.h>
-      #include <linux/slab.h>
+      #include <freax/init.h>
+      #include <freax/pci.h>
+      #include <freax/slab.h>
       #include <sound/core.h>
       #include <sound/initval.h>
 
@@ -495,9 +495,9 @@ Header Files
 For the above example, at least the following include files are
 necessary::
 
-  #include <linux/init.h>
-  #include <linux/pci.h>
-  #include <linux/slab.h>
+  #include <freax/init.h>
+  #include <freax/pci.h>
+  #include <freax/slab.h>
   #include <sound/core.h>
   #include <sound/initval.h>
 
@@ -505,10 +505,10 @@ where the last one is necessary only when module options are defined
 in the source file. If the code is split into several files, the files
 without module options don't need them.
 
-In addition to these headers, you'll need ``<linux/interrupt.h>`` for
-interrupt handling, and ``<linux/io.h>`` for I/O access. If you use the
+In addition to these headers, you'll need ``<freax/interrupt.h>`` for
+interrupt handling, and ``<freax/io.h>`` for I/O access. If you use the
 :c:func:`mdelay()` or :c:func:`udelay()` functions, you'll need
-to include ``<linux/delay.h>`` too.
+to include ``<freax/delay.h>`` too.
 
 The ALSA interfaces like the PCM and control APIs are defined in other
 ``<sound/xxx.h>`` header files. They have to be included after
@@ -1108,7 +1108,7 @@ access some functions related with hw_param.
 
 Each card device can have up to four PCM instances. A PCM instance
 corresponds to a PCM device file. The limitation of number of instances
-comes only from the available bit size of Linux' device numbers.
+comes only from the available bit size of freax' device numbers.
 Once 64bit device numbers are used, we'll have more PCM instances
 available.
 
@@ -2189,7 +2189,7 @@ Atomicity
 ---------
 
 One of the most important (and thus difficult to debug) problems in
-kernel programming are race conditions. In the Linux kernel, they are
+kernel programming are race conditions. In the freax kernel, they are
 usually avoided via spin-locks, mutexes or semaphores. In general, if a
 race condition can happen in an interrupt handler, it has to be managed
 atomically, and you have to use a spinlock to protect the critical
@@ -3500,7 +3500,7 @@ specified pointer (``dst``)::
 
 The given ``src`` or ``dst`` a struct iov_iter pointer containing the
 pointer and the size.  Use the existing helpers to copy or access the
-data as defined in ``linux/uio.h``.
+data as defined in ``freax/uio.h``.
 
 Careful readers might notice that these callbacks receive the
 arguments in bytes, not in frames like other callbacks.  It's because
@@ -3964,7 +3964,7 @@ alsa-driver tree, ``sound/pci`` directory in the case of PCI
 cards.
 
 In the following sections, the driver code is supposed to be put into
-Linux kernel tree. The two cases are covered: a driver consisting of a
+freax kernel tree. The two cases are covered: a driver consisting of a
 single source file and one consisting of several source files.
 
 Driver with A Single Source File

@@ -7,7 +7,7 @@
 #define __ASM_ARM_OPCODES_H
 
 #ifndef __ASSEMBLY__
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 extern asmlinkage unsigned int arm_check_condition(u32 opcode, u32 psr);
 #endif
 
@@ -82,8 +82,8 @@ extern asmlinkage unsigned int arm_check_condition(u32 opcode, u32 psr);
 
 #else /* ! __ASSEMBLY__ */
 
-#include <linux/types.h>
-#include <linux/swab.h>
+#include <freax/types.h>
+#include <freax/swab.h>
 
 #define ___opcode_swab32(x) swab32(x)
 #define ___opcode_swab16(x) swab16(x)
@@ -199,7 +199,7 @@ extern __u32 __opcode_to_mem_thumb32(__u32);
  *
  * Look at opcodes-virt.h for an example of how to use these macros.
  */
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #define __inst_arm(x) ___inst_arm(___asm_opcode_to_mem_arm(x))
 #define __inst_thumb32(x) ___inst_thumb32(				\

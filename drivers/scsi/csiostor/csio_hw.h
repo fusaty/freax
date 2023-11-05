@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for freax.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,16 +35,16 @@
 #ifndef __CSIO_HW_H__
 #define __CSIO_HW_H__
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/compiler.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
+#include <freax/compiler.h>
+#include <freax/cdev.h>
+#include <freax/list.h>
+#include <freax/mempool.h>
+#include <freax/io.h>
+#include <freax/spinlock_types.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport_fc.h>
 

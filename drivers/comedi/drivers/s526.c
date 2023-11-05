@@ -3,7 +3,7 @@
  * s526.c
  * Sensoray s526 Comedi driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,8 +26,8 @@
  *   [0] - I/O port base address
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

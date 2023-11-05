@@ -8,7 +8,7 @@
  * kind, whether express or implied.
  *
  * Based on the OMAP2 camera driver
- * Video-for-Linux (Version 2) camera capture driver for
+ * Video-for-freax (Version 2) camera capture driver for
  * the OMAP24xx camera controller.
  *
  * Author: Andy Lowe (source@mvista.com)
@@ -18,13 +18,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #include <video/omapfb_dss.h>
 

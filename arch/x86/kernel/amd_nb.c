@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/pci_ids.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/pci_ids.h>
 #include <asm/amd_nb.h>
 
 #define PCI_DEVICE_ID_AMD_17H_ROOT		0x1450

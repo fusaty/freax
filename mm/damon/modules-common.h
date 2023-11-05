@@ -5,7 +5,7 @@
  * Author: SeongJae Park <sj@kernel.org>
  */
 
-#include <linux/moduleparam.h>
+#include <freax/moduleparam.h>
 
 #define DEFINE_DAMON_MODULES_MON_ATTRS_PARAMS(attrs)			\
 	module_param_named(sample_interval, attrs.sample_interval,	\

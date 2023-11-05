@@ -35,13 +35,13 @@
  * SUCH DAMAGE.
  */
 
-#ifndef _LINUX_VIRTIO_MEM_H
-#define _LINUX_VIRTIO_MEM_H
+#ifndef _freax_VIRTIO_MEM_H
+#define _freax_VIRTIO_MEM_H
 
-#include <linux/types.h>
-#include <linux/virtio_types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <freax/types.h>
+#include <freax/virtio_types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
 
 /*
  * Each virtio-mem device manages a dedicated region in physical address
@@ -211,4 +211,4 @@ struct virtio_mem_config {
 	__le64 requested_size;
 };
 
-#endif /* _LINUX_VIRTIO_MEM_H */
+#endif /* _freax_VIRTIO_MEM_H */

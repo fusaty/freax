@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: BSD-3-Clause */
 
-#ifndef _UAPI_LINUX_VIRTIO_BT_H
-#define _UAPI_LINUX_VIRTIO_BT_H
+#ifndef _UAPI_freax_VIRTIO_BT_H
+#define _UAPI_freax_VIRTIO_BT_H
 
-#include <linux/virtio_types.h>
+#include <freax/virtio_types.h>
 
 /* Feature bits */
 #define VIRTIO_BT_F_VND_HCI	0	/* Indicates vendor command support */
@@ -36,4 +36,4 @@ struct virtio_bt_config_v2 {
 	__u16 msft_opcode;
 };
 
-#endif /* _UAPI_LINUX_VIRTIO_BT_H */
+#endif /* _UAPI_freax_VIRTIO_BT_H */

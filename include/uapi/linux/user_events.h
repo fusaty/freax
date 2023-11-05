@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (c) 2021-2022, Microsoft Corporation.
  *
  * Authors:
- *   Beau Belgrave <beaub@linux.microsoft.com>
+ *   Beau Belgrave <beaub@freax.microsoft.com>
  */
-#ifndef _UAPI_LINUX_USER_EVENTS_H
-#define _UAPI_LINUX_USER_EVENTS_H
+#ifndef _UAPI_freax_USER_EVENTS_H
+#define _UAPI_freax_USER_EVENTS_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 #define USER_EVENTS_SYSTEM "user_events"
 #define USER_EVENTS_PREFIX "u:"
@@ -87,4 +87,4 @@ struct user_unreg {
 /* Requests to unregister a user_event */
 #define DIAG_IOCSUNREG _IOW(DIAG_IOC_MAGIC, 2, struct user_unreg*)
 
-#endif /* _UAPI_LINUX_USER_EVENTS_H */
+#endif /* _UAPI_freax_USER_EVENTS_H */

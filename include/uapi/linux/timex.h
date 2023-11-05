@@ -42,7 +42,7 @@
  * 17 Sep 93    David L. Mills
  *      Created file $NTP/include/sys/timex.h
  * 07 Oct 93    Torsten Duwe
- *      Derived linux/timex.h
+ *      Derived freax/timex.h
  * 1995-08-13    Torsten Duwe
  *      kernel PLL updated to 1994-12-13 specs (rfc-1589)
  * 1997-08-30    Ulrich Windl
@@ -50,10 +50,10 @@
  * 2004-08-12    Christoph Lameter
  *      Reworked time interpolation logic
  */
-#ifndef _UAPI_LINUX_TIMEX_H
-#define _UAPI_LINUX_TIMEX_H
+#ifndef _UAPI_freax_TIMEX_H
+#define _UAPI_freax_TIMEX_H
 
-#include <linux/time.h>
+#include <freax/time.h>
 
 #define NTP_API		4	/* NTP API version */
 
@@ -204,4 +204,4 @@ struct __kernel_timex {
 #define TIME_BAD	TIME_ERROR /* bw compat */
 
 
-#endif /* _UAPI_LINUX_TIMEX_H */
+#endif /* _UAPI_freax_TIMEX_H */

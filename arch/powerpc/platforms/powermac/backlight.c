@@ -4,17 +4,17 @@
  * Contains support for the backlight.
  *
  *   Copyright (C) 2000 Benjamin Herrenschmidt
- *   Copyright (C) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ *   Copyright (C) 2006 Michael Hanselmann <freax-kernel@hansmi.ch>
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/atomic.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/atomic.h>
+#include <freax/export.h>
 #include <asm/backlight.h>
 
 #define OLD_BACKLIGHT_MAX 15

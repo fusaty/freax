@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_FLIP_H
-#define _LINUX_TTY_FLIP_H
+#ifndef _freax_TTY_FLIP_H
+#define _freax_TTY_FLIP_H
 
-#include <linux/tty_buffer.h>
-#include <linux/tty_port.h>
+#include <freax/tty_buffer.h>
+#include <freax/tty_port.h>
 
 struct tty_ldisc;
 
@@ -89,4 +89,4 @@ size_t tty_ldisc_receive_buf(struct tty_ldisc *ld, const u8 *p, const u8 *f,
 void tty_buffer_lock_exclusive(struct tty_port *port);
 void tty_buffer_unlock_exclusive(struct tty_port *port);
 
-#endif /* _LINUX_TTY_FLIP_H */
+#endif /* _freax_TTY_FLIP_H */

@@ -7,20 +7,20 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/mfd/core.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm831x/irq.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/gpio.h>
+#include <freax/mfd/wm831x/irq.h>
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 struct wm831x_irq_data {
 	int primary;

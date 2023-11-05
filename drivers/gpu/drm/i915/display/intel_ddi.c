@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/string_helpers.h>
+#include <freax/string_helpers.h>
 
 #include <drm/display/drm_scdc_helper.h>
 #include <drm/drm_privacy_screen_consumer.h>

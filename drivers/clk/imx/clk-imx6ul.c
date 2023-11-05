@@ -4,17 +4,17 @@
  */
 
 #include <dt-bindings/clock/imx6ul-clock.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/types.h>
 
 #include "clk.h"
 

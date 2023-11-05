@@ -11,20 +11,20 @@
  * All rights reserved.
  */
 
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/stringify.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <freax/platform_device.h>
+#include <freax/uio_driver.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/stringify.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
 
 #define DRIVER_NAME "uio_pdrv_genirq"
 
@@ -127,7 +127,7 @@ static int uio_pdrv_genirq_probe(struct platform_device *pdev)
 			return -ENOMEM;
 		}
 
-		if (!of_property_read_string(node, "linux,uio-name", &name))
+		if (!of_property_read_string(node, "freax,uio-name", &name))
 			uioinfo->name = devm_kstrdup(&pdev->dev, name, GFP_KERNEL);
 		else
 			uioinfo->name = devm_kasprintf(&pdev->dev, GFP_KERNEL,

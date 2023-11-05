@@ -7,9 +7,9 @@
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/netdevice.h>
-#include <linux/ptp_classify.h>
-#include <linux/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/ptp_classify.h>
+#include <freax/skbuff.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 

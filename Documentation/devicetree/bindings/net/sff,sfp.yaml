@@ -8,7 +8,7 @@ title: Small Form Factor (SFF) Committee Small Form-factor Pluggable (SFP)
   Transceiver
 
 maintainers:
-  - Russell King <linux@armlinux.org.uk>
+  - Russell King <freax@armfreax.org.uk>
 
 properties:
   compatible:

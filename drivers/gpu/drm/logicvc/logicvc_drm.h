@@ -7,8 +7,8 @@
 #ifndef _LOGICVC_DRM_H_
 #define _LOGICVC_DRM_H_
 
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 #include <drm/drm_device.h>
 
 #define LOGICVC_DISPLAY_INTERFACE_RGB			0

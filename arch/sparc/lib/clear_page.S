@@ -5,8 +5,8 @@
  * Copyright (C) 1997 Jakub Jelinek (jakub@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/pgtable.h>
+#include <freax/export.h>
+#include <freax/pgtable.h>
 #include <asm/visasm.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>

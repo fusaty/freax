@@ -20,7 +20,7 @@
 #include <string.h>
 #include <regex.h>
 #include <errno.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <getopt.h>
 
 #define bool int

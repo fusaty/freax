@@ -11,10 +11,10 @@
 
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/slab.h>
-#include <linux/drbd.h>
+#include <freax/slab.h>
+#include <freax/drbd.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 

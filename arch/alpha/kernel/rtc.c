@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/rtc.c
+ *  freax/arch/alpha/kernel/rtc.c
  *
  *  Copyright (C) 1991, 1992, 1995, 1999, 2000  Linus Torvalds
  *
  * This file contains date handling.
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mc146818rtc.h>
+#include <freax/bcd.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
 
 #include "proto.h"
 

@@ -34,7 +34,7 @@
 			function = LED_FUNCTION_SD;
 			color = <LED_COLOR_ID_AMBER>;
 			gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 
 		led-2 {

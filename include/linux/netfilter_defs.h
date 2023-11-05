@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NETFILTER_CORE_H_
-#define __LINUX_NETFILTER_CORE_H_
+#ifndef __freax_NETFILTER_CORE_H_
+#define __freax_NETFILTER_CORE_H_
 
-#include <uapi/linux/netfilter.h>
+#include <uapi/freax/netfilter.h>
 
 /* in/out/forward only */
 #define NF_ARP_NUMHOOKS 3

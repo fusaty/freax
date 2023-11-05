@@ -18,9 +18,9 @@
 #ifndef mISDNIF_H
 #define mISDNIF_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/socket.h>
 
 /*
  * ABI Version 32 bit
@@ -249,7 +249,7 @@
 #define OPTION_L2_CLEANUP	4
 #define OPTION_L1_HOLD		5
 
-/* should be in sync with linux/kobject.h:KOBJ_NAME_LEN */
+/* should be in sync with freax/kobject.h:KOBJ_NAME_LEN */
 #define MISDN_MAX_IDLEN		20
 
 struct mISDNhead {
@@ -408,11 +408,11 @@ struct mISDN_ctrl_req {
 #define MISDN_OPT_TEIMGR	2
 
 #ifdef __KERNEL__
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/net.h>
 #include <net/sock.h>
-#include <linux/completion.h>
+#include <freax/completion.h>
 
 #define DEBUG_CORE		0x000000ff
 #define DEBUG_CORE_FUNC		0x00000002

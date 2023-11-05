@@ -4,8 +4,8 @@
  *
  * For futher information, see: kernel/trace/rv/rv.c.
  */
-#ifndef _LINUX_RV_H
-#define _LINUX_RV_H
+#ifndef _freax_RV_H
+#define _freax_RV_H
 
 #define MAX_DA_NAME_LEN	24
 
@@ -67,4 +67,4 @@ int rv_register_reactor(struct rv_reactor *reactor);
 #endif /* CONFIG_RV_REACTORS */
 
 #endif /* CONFIG_RV */
-#endif /* _LINUX_RV_H */
+#endif /* _freax_RV_H */

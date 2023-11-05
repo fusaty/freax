@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for freax kernel debugging
 #
 #  module tools
 #
@@ -13,7 +13,7 @@
 
 import gdb
 
-from linux import cpus, utils, lists, constants
+from freax import cpus, utils, lists, constants
 
 
 module_type = utils.CachedType("struct module")

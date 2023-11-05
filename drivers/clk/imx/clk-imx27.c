@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <dt-bindings/clock/imx27-clock.h>
 #include <soc/imx/revision.h>
 #include <asm/irq.h>

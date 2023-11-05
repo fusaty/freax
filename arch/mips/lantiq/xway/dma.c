@@ -4,16 +4,16 @@
  *   Copyright (C) 2011 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/of.h>
 
 #include <lantiq_soc.h>
 #include <xway_dma.h>

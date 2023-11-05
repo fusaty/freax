@@ -8,18 +8,18 @@
  *
  */
 /* NOTE: Will not work on level 15 */
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/irq.h>
-#include <linux/bitmap.h>
+#include <freax/ptrace.h>
+#include <freax/errno.h>
+#include <freax/kernel_stat.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/spinlock.h>
+#include <freax/cache.h>
+#include <freax/irq.h>
+#include <freax/bitmap.h>
 #include <asm/irq.h>
 
 /* Bitmap of IRQ masked */

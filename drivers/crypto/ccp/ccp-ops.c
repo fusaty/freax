@@ -8,13 +8,13 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/des.h>
-#include <linux/ccp.h>
+#include <freax/ccp.h>
 
 #include "ccp-dev.h"
 

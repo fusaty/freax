@@ -2,9 +2,9 @@
 #define pr_fmt(fmt)				"bcmasp_ethtool: " fmt
 
 #include <asm-generic/unaligned.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/platform_device.h>
 
 #include "bcmasp.h"
 #include "bcmasp_intf_defs.h"

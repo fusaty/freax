@@ -12,12 +12,12 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/mfd/adp5520.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
+#include <freax/mfd/adp5520.h>
+#include <freax/slab.h>
 
 struct adp5520_led {
 	struct led_classdev	cdev;
@@ -189,7 +189,7 @@ static struct platform_driver adp5520_led_driver = {
 
 module_platform_driver(adp5520_led_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucfreax.org>");
 MODULE_DESCRIPTION("LEDS ADP5520(01) Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:adp5520-led");

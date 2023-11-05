@@ -27,7 +27,7 @@ config SECURITY
 	  This allows you to choose different security modules to be
 	  configured into your kernel.
 
-	  If this option is not selected, the default Linux security
+	  If this option is not selected, the default freax security
 	  model will be used.
 
 	  If you are unsure how to answer this question, answer N.
@@ -112,7 +112,7 @@ config INTEL_TXT
 
 config LSM_MMAP_MIN_ADDR
 	int "Low address space for LSM to protect from user allocation"
-	depends on SECURITY && SECURITY_SELINUX
+	depends on SECURITY && SECURITY_SEfreax
 	default 32768 if ARM || (ARM64 && COMPAT)
 	default 65536
 	help
@@ -185,7 +185,7 @@ config STATIC_USERMODEHELPER_PATH
 	  If you wish for all usermode helper programs to be disabled,
 	  specify an empty string here (i.e. "").
 
-source "security/selinux/Kconfig"
+source "security/sefreax/Kconfig"
 source "security/smack/Kconfig"
 source "security/tomoyo/Kconfig"
 source "security/apparmor/Kconfig"
@@ -199,7 +199,7 @@ source "security/integrity/Kconfig"
 
 choice
 	prompt "First legacy 'major LSM' to be initialized"
-	default DEFAULT_SECURITY_SELINUX if SECURITY_SELINUX
+	default DEFAULT_SECURITY_SEfreax if SECURITY_SEfreax
 	default DEFAULT_SECURITY_SMACK if SECURITY_SMACK
 	default DEFAULT_SECURITY_TOMOYO if SECURITY_TOMOYO
 	default DEFAULT_SECURITY_APPARMOR if SECURITY_APPARMOR
@@ -214,8 +214,8 @@ choice
 	  Selects the legacy "major security module" that will be
 	  initialized first. Overridden by non-default CONFIG_LSM.
 
-	config DEFAULT_SECURITY_SELINUX
-		bool "SELinux" if SECURITY_SELINUX=y
+	config DEFAULT_SECURITY_SEfreax
+		bool "SEfreax" if SECURITY_SEfreax=y
 
 	config DEFAULT_SECURITY_SMACK
 		bool "Simplified Mandatory Access Control" if SECURITY_SMACK=y
@@ -233,11 +233,11 @@ endchoice
 
 config LSM
 	string "Ordered list of enabled LSMs"
-	default "landlock,lockdown,yama,loadpin,safesetid,smack,selinux,tomoyo,apparmor,bpf" if DEFAULT_SECURITY_SMACK
-	default "landlock,lockdown,yama,loadpin,safesetid,apparmor,selinux,smack,tomoyo,bpf" if DEFAULT_SECURITY_APPARMOR
+	default "landlock,lockdown,yama,loadpin,safesetid,smack,sefreax,tomoyo,apparmor,bpf" if DEFAULT_SECURITY_SMACK
+	default "landlock,lockdown,yama,loadpin,safesetid,apparmor,sefreax,smack,tomoyo,bpf" if DEFAULT_SECURITY_APPARMOR
 	default "landlock,lockdown,yama,loadpin,safesetid,tomoyo,bpf" if DEFAULT_SECURITY_TOMOYO
 	default "landlock,lockdown,yama,loadpin,safesetid,bpf" if DEFAULT_SECURITY_DAC
-	default "landlock,lockdown,yama,loadpin,safesetid,selinux,smack,tomoyo,apparmor,bpf"
+	default "landlock,lockdown,yama,loadpin,safesetid,sefreax,smack,tomoyo,apparmor,bpf"
 	help
 	  A comma-separated list of LSMs, in initialization order.
 	  Any LSMs left off this list, except for those with order

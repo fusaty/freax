@@ -6,12 +6,12 @@
 #ifndef __SPRD_DPU_H__
 #define __SPRD_DPU_H__
 
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+#include <freax/bug.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
 #include <video/videomode.h>
 
 #include <drm/drm_crtc.h>

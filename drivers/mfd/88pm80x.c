@@ -7,13 +7,13 @@
  * Joseph(Yossi) Hanin <yhanin@marvell.com>
  * Qiao Zhou <zhouqiao@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/mfd/88pm80x.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/err.h>
 
 /* 88pm80x chips have same definition for chip id register. */
 #define PM80X_CHIP_ID			(0x00)

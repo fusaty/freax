@@ -5,13 +5,13 @@
  * Copyright 2009 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/adp5520.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/mfd/adp5520.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
 struct adp5520_keys {
 	struct input_dev *input;
@@ -187,7 +187,7 @@ static struct platform_driver adp5520_keys_driver = {
 };
 module_platform_driver(adp5520_keys_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucfreax.org>");
 MODULE_DESCRIPTION("Keys ADP5520 Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:adp5520-keys");

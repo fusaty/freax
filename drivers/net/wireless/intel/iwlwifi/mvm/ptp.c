@@ -5,8 +5,8 @@
 
 #include "mvm.h"
 #include "iwl-debug.h"
-#include <linux/timekeeping.h>
-#include <linux/math64.h>
+#include <freax/timekeeping.h>
+#include <freax/math64.h>
 
 #define IWL_PTP_GP2_WRAP	0x100000000ULL
 #define IWL_PTP_WRAP_TIME	(3600 * HZ)

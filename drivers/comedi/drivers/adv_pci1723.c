@@ -3,7 +3,7 @@
  * adv_pci1723.c
  * Comedi driver for the Advantech PCI-1723 card.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -31,8 +31,8 @@
  * 3. Implement calibration.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pci.h>
 
 /*
  * PCI Bar 2 I/O Register map (dev->iobase)

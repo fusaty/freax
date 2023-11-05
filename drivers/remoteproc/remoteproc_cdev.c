@@ -2,16 +2,16 @@
 /*
  * Character device interface driver for Remoteproc framework.
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/remoteproc.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/remoteproc_cdev.h>
+#include <freax/cdev.h>
+#include <freax/compat.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/remoteproc.h>
+#include <freax/uaccess.h>
+#include <uapi/freax/remoteproc_cdev.h>
 
 #include "remoteproc_internal.h"
 

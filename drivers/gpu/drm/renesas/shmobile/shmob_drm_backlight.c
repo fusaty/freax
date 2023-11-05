@@ -7,7 +7,7 @@
  * Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/backlight.h>
+#include <freax/backlight.h>
 
 #include "shmob_drm_backlight.h"
 #include "shmob_drm_crtc.h"

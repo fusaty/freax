@@ -14,7 +14,7 @@
  * Revision History:
  */
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 #include "desc.h"
 #include "mac.h"

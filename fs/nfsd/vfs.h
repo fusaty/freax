@@ -3,11 +3,11 @@
  * Copyright (C) 1995-1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_NFSD_VFS_H
-#define LINUX_NFSD_VFS_H
+#ifndef freax_NFSD_VFS_H
+#define freax_NFSD_VFS_H
 
-#include <linux/fs.h>
-#include <linux/posix_acl.h>
+#include <freax/fs.h>
+#include <freax/posix_acl.h>
 #include "nfsfh.h"
 #include "nfsd.h"
 
@@ -180,4 +180,4 @@ static inline __be32 fh_getattr(const struct svc_fh *fh, struct kstat *stat)
 				    AT_STATX_SYNC_AS_STAT));
 }
 
-#endif /* LINUX_NFSD_VFS_H */
+#endif /* freax_NFSD_VFS_H */

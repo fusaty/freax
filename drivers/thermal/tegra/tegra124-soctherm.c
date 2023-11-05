@@ -13,8 +13,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/thermal/tegra124-soctherm.h>
 

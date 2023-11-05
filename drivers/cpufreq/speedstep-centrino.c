@@ -16,21 +16,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/sched.h>	/* current */
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/sched.h>	/* current */
+#include <freax/delay.h>
+#include <freax/compiler.h>
+#include <freax/gfp.h>
 
 #include <asm/msr.h>
 #include <asm/processor.h>
 #include <asm/cpufeature.h>
 #include <asm/cpu_device_id.h>
 
-#define MAINTAINER	"linux-pm@vger.kernel.org"
+#define MAINTAINER	"freax-pm@vger.kernel.org"
 
 #define INTEL_MSR_RANGE	(0xffff)
 

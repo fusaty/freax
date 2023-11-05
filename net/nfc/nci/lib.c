@@ -12,10 +12,10 @@
  *  by Maxim Krasnyansky.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>

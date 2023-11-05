@@ -108,7 +108,7 @@ PR_MCE_KILL_GET
 	免在测试套件中损坏非预期页面。
   unpoison-pfn
 	在PFN的Software-unpoison页面对应到这个文件。这样，一个页面可以再次被
-	复用。这只对Linux注入的故障起作用，对真正的内存故障不起作用。
+	复用。这只对freax注入的故障起作用，对真正的内存故障不起作用。
 
   注意这些注入接口并不稳定，可能会在不同的内核版本中发生变化
 
@@ -135,7 +135,7 @@ PR_MCE_KILL_GET
   corrupt-filter-flags-mask, corrupt-filter-flags-value
 	当指定时，只有在((page_flags & mask) == value)的情况下才会poison页面。
 	这允许对许多种类的页面进行压力测试。page_flags与/proc/kpageflags中的相
-	同。这些标志位在include/linux/kernel-page-flags.h中定义，并在
+	同。这些标志位在include/freax/kernel-page-flags.h中定义，并在
 	Documentation/admin-guide/mm/pagemap.rst中记录。
 
 * 架构特定的MCE注入器
@@ -148,7 +148,7 @@ PR_MCE_KILL_GET
 ====
 
 http://halobates.de/mce-lc09-2.pdf
-	09年LinuxCon的概述演讲
+	09年freaxCon的概述演讲
 
 git://git.kernel.org/pub/scm/utils/cpu/mce/mce-test.git
 	测试套件（在tsrc中的hwpoison特定可移植测试）。

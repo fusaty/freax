@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_FPU_SCHED_H
 #define _ASM_X86_FPU_SCHED_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 #include <asm/cpufeature.h>
 #include <asm/fpu/types.h>

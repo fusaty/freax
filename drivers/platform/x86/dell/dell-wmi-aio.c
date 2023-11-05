@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/acpi.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/acpi.h>
+#include <freax/string.h>
 
 MODULE_DESCRIPTION("WMI hotkeys driver for Dell All-In-One series");
 MODULE_LICENSE("GPL");

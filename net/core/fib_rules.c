@@ -5,16 +5,16 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/module.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/fib_rules.h>
 #include <net/ip_tunnels.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/indirect_call_wrapper.h>
 
 #if defined(CONFIG_IPV6) && defined(CONFIG_IPV6_MULTIPLE_TABLES)
 #ifdef CONFIG_IP_MULTIPLE_TABLES

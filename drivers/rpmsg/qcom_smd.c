@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/wait.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/qcom_smd.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_client.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/sched.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/wait.h>
+#include <freax/rpmsg.h>
+#include <freax/rpmsg/qcom_smd.h>
 
 #include "rpmsg_internal.h"
 

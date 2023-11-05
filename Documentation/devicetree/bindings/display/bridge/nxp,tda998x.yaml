@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: NXP TDA998x HDMI transmitter
 
 maintainers:
-  - Russell King <linux@armlinux.org.uk>
+  - Russell King <freax@armfreax.org.uk>
 
 properties:
   compatible:

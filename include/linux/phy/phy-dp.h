@@ -6,7 +6,7 @@
 #ifndef __PHY_DP_H_
 #define __PHY_DP_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct phy_configure_opts_dp - DisplayPort PHY configuration set

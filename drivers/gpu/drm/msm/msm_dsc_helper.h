@@ -9,7 +9,7 @@
 #ifndef MSM_DSC_HELPER_H_
 #define MSM_DSC_HELPER_H_
 
-#include <linux/math.h>
+#include <freax/math.h>
 #include <drm/display/drm_dsc_helper.h>
 
 /**

@@ -10,18 +10,18 @@
  * Changelog:
  *	See git changelog.
  */
-#ifndef __LINUX_MTD_RAWNAND_H
-#define __LINUX_MTD_RAWNAND_H
+#ifndef __freax_MTD_RAWNAND_H
+#define __freax_MTD_RAWNAND_H
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/bbm.h>
-#include <linux/mtd/jedec.h>
-#include <linux/mtd/onfi.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/types.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand.h>
+#include <freax/mtd/flashchip.h>
+#include <freax/mtd/bbm.h>
+#include <freax/mtd/jedec.h>
+#include <freax/mtd/onfi.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/types.h>
 
 struct nand_chip;
 struct gpio_desc;
@@ -1627,4 +1627,4 @@ static inline void *nand_get_data_buf(struct nand_chip *chip)
 int rawnand_dt_parse_gpio_cs(struct device *dev, struct gpio_desc ***cs_array,
 			     unsigned int *ncs_array);
 
-#endif /* __LINUX_MTD_RAWNAND_H */
+#endif /* __freax_MTD_RAWNAND_H */

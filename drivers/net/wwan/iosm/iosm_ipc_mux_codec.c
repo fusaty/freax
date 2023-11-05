@@ -3,7 +3,7 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "iosm_ipc_imem_ops.h"
 #include "iosm_ipc_mux_codec.h"

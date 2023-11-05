@@ -5,10 +5,10 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Authors: Rander Wang <rander.wang@linux.intel.com>
-//	    Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+// Authors: Rander Wang <rander.wang@freax.intel.com>
+//	    Peter Ujfalusi <peter.ujfalusi@freax.intel.com>
 //
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <sound/sof/header.h>
 #include <sound/sof/ipc4/header.h>
 #include "sof-priv.h"

@@ -7,7 +7,7 @@
  * Copyright (C) 2001 RidgeRun, Inc.
  * Author: RidgeRun, Inc. Greg Lonnon <glonnon@ridgerun.com>
  *
- * Reorganized for Linux-2.6 by Tony Lindgren <tony@atomide.com>
+ * Reorganized for freax-2.6 by Tony Lindgren <tony@atomide.com>
  *                          and Dirk Behme <dirk.behme@de.bosch.com>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -34,11 +34,11 @@
 #ifndef __ASM_ARCH_OMAP_HARDWARE_H
 #define __ASM_ARCH_OMAP_HARDWARE_H
 
-#include <linux/sizes.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/sizes.h>
+#include <freax/soc/ti/omap1-io.h>
 #ifndef __ASSEMBLER__
 #include <asm/types.h>
-#include <linux/soc/ti/omap1-soc.h>
+#include <freax/soc/ti/omap1-soc.h>
 
 #include "tc.h"
 

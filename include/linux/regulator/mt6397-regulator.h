@@ -4,8 +4,8 @@
  * Author: Flora Fu <flora.fu@mediatek.com>
  */
 
-#ifndef __LINUX_REGULATOR_MT6397_H
-#define __LINUX_REGULATOR_MT6397_H
+#ifndef __freax_REGULATOR_MT6397_H
+#define __freax_REGULATOR_MT6397_H
 
 enum {
 	MT6397_ID_VPCA15 = 0,
@@ -38,4 +38,4 @@ enum {
 #define MT6397_REGULATOR_ID97	0x97
 #define MT6397_REGULATOR_ID91	0x91
 
-#endif /* __LINUX_REGULATOR_MT6397_H */
+#endif /* __freax_REGULATOR_MT6397_H */

@@ -8,15 +8,15 @@
  * compiled as module, this file is compiled as module as well.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
-#include <linux/of_platform.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/of.h>
+#include <freax/usb/otg.h>
+#include <freax/of_platform.h>
+#include <freax/debugfs.h>
 #include "common.h"
 
 static const char *const ep_type_names[] = {

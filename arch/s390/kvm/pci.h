@@ -4,16 +4,16 @@
  *
  * Copyright IBM Corp. 2022
  *
- *    Author(s): Matthew Rosato <mjrosato@linux.ibm.com>
+ *    Author(s): Matthew Rosato <mjrosato@freax.ibm.com>
  */
 
 #ifndef __KVM_S390_PCI_H
 #define __KVM_S390_PCI_H
 
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
 #include <asm/airq.h>
 #include <asm/cpu.h>
 

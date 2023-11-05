@@ -19,7 +19,7 @@
 #include "xfs_trans.h"
 #include "xfs_xattr.h"
 
-#include <linux/posix_acl_xattr.h>
+#include <freax/posix_acl_xattr.h>
 
 /*
  * Locking scheme:

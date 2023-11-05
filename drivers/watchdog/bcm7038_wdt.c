@@ -4,15 +4,15 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/bcm7038_wdt.h>
-#include <linux/pm.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/bcm7038_wdt.h>
+#include <freax/pm.h>
+#include <freax/watchdog.h>
 
 #define WDT_START_1		0xff00
 #define WDT_START_2		0x00ff

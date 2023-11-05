@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
  *  Copyright IBM Corp. 2019
- *  Author(s): Harald Freudenberger <freude@linux.ibm.com>
- *	       Ingo Franzki <ifranzki@linux.ibm.com>
+ *  Author(s): Harald Freudenberger <freude@freax.ibm.com>
+ *	       Ingo Franzki <ifranzki@freax.ibm.com>
  *
  *  Collection of CCA misc functions used by zcrypt and pkey
  */
@@ -10,10 +10,10 @@
 #define KMSG_COMPONENT "zcrypt"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/random.h>
 #include <asm/zcrypt.h>
 #include <asm/pkey.h>
 

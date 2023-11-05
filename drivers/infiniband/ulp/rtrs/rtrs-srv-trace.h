@@ -10,7 +10,7 @@
 #if !defined(_TRACE_RTRS_SRV_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RTRS_SRV_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 struct rtrs_srv_op;
 struct rtrs_srv_con;

@@ -8,13 +8,13 @@
  * <kmalkki@cc.hut.fi> and Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 
 /* ----- global defines ----------------------------------------------- */

@@ -9,11 +9,11 @@
  * Based on drivers/acpi/pmic/intel_pmic* drivers
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/tps68470.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/mfd/tps68470.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 struct tps68470_pmic_table {
 	u32 address;		/* operation region address */

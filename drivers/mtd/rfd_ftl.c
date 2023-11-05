@@ -12,14 +12,14 @@
  * based on ftl.c
  */
 
-#include <linux/hdreg.h>
-#include <linux/init.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mtd/mtd.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
+#include <freax/hdreg.h>
+#include <freax/init.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/mtd/mtd.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
 
 #include <asm/types.h>
 

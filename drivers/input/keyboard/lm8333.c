@@ -4,13 +4,13 @@
  * Copyright (C) 2012 Wolfram Sang, Pengutronix <kernel@pengutronix.de>
  */
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/input/lm8333.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/input/lm8333.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #define LM8333_FIFO_READ		0x20
 #define LM8333_DEBOUNCE			0x22

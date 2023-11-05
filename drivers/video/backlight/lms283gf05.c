@@ -5,15 +5,15 @@
  * Copyright (c) 2009 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/lcd.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/lcd.h>
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
 
 struct lms283gf05_state {
 	struct spi_device	*spi;

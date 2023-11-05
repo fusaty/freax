@@ -3,7 +3,7 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "hfi.h"
 #include "efivar.h"

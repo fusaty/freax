@@ -1,4 +1,4 @@
-/* linux/mfd/tps65010.h
+/* freax/mfd/tps65010.h
  *
  * Functions to access TPS65010 power management device.
  *
@@ -25,8 +25,8 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#ifndef __LINUX_I2C_TPS65010_H
-#define __LINUX_I2C_TPS65010_H
+#ifndef __freax_I2C_TPS65010_H
+#define __freax_I2C_TPS65010_H
 
 struct gpio_chip;
 
@@ -198,5 +198,5 @@ struct tps65010_board {
 	void		(*teardown)(struct i2c_client *client, struct gpio_chip *gc);
 };
 
-#endif /*  __LINUX_I2C_TPS65010_H */
+#endif /*  __freax_I2C_TPS65010_H */
 

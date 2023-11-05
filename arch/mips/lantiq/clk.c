@@ -4,15 +4,15 @@
  * Copyright (C) 2010 Thomas Langer <thomas.langer@lantiq.com>
  * Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/list.h>
+#include <freax/io.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/list.h>
 
 #include <asm/time.h>
 #include <asm/irq.h>

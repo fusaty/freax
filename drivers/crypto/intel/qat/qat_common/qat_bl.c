@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2014 - 2022 Intel Corporation */
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 #include "adf_accel_devices.h"
 #include "qat_bl.h"
 #include "qat_crypto.h"

@@ -5,13 +5,13 @@
  * This file contains the /proc/irq/ handling code.
  */
 
-#include <linux/irq.h>
-#include <linux/gfp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/mutex.h>
+#include <freax/irq.h>
+#include <freax/gfp.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/mutex.h>
 
 #include "internals.h"
 

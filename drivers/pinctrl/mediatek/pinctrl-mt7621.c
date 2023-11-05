@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 #include "pinctrl-mtmips.h"
 
 #define MT7621_GPIO_MODE_UART1		1

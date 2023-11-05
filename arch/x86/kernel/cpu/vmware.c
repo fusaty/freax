@@ -21,13 +21,13 @@
  *
  */
 
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/clocksource.h>
-#include <linux/cpu.h>
-#include <linux/reboot.h>
-#include <linux/static_call.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/clocksource.h>
+#include <freax/cpu.h>
+#include <freax/reboot.h>
+#include <freax/static_call.h>
 #include <asm/div64.h>
 #include <asm/x86_init.h>
 #include <asm/hypervisor.h>

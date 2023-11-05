@@ -10,19 +10,19 @@
 
   */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/i2c.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
+#include <freax/init.h>
+#include <freax/crc32.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-common.h>

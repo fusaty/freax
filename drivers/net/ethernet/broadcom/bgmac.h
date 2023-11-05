@@ -2,7 +2,7 @@
 #ifndef _BGMAC_H
 #define _BGMAC_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #include "unimac.h"
 

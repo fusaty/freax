@@ -9,14 +9,14 @@
  * Shubham Bansal <illusionist.neo@gmail.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <freax/netdevice.h>
+#include <freax/filter.h>
+#include <freax/if_vlan.h>
 #include <asm/cacheflush.h>
 #include <asm/set_memory.h>
 #include <asm/nospec-branch.h>
 #include <asm/asm-prototypes.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 /*
  * eBPF prog stack layout:

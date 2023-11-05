@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include "cgroup-internal.h"
 
-#include <linux/sched/cputime.h>
+#include <freax/sched/cputime.h>
 
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
 
 static DEFINE_SPINLOCK(cgroup_rstat_lock);
 static DEFINE_PER_CPU(raw_spinlock_t, cgroup_rstat_cpu_lock);

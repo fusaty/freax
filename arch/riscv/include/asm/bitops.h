@@ -6,12 +6,12 @@
 #ifndef _ASM_RISCV_BITOPS_H
 #define _ASM_RISCV_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error "Only <linux/bitops.h> can be included directly"
-#endif /* _LINUX_BITOPS_H */
+#ifndef _freax_BITOPS_H
+#error "Only <freax/bitops.h> can be included directly"
+#endif /* _freax_BITOPS_H */
 
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
+#include <freax/compiler.h>
+#include <freax/irqflags.h>
 #include <asm/barrier.h>
 #include <asm/bitsperlong.h>
 

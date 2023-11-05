@@ -17,10 +17,10 @@
  *    here
  */
 
-#include <linux/device.h>
-#include <linux/property.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw.h>
+#include <freax/device.h>
+#include <freax/property.h>
+#include <freax/mod_devicetable.h>
+#include <freax/soundwire/sdw.h>
 #include "bus.h"
 
 /**

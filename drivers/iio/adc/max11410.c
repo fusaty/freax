@@ -4,24 +4,24 @@
  *
  * Copyright 2022 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define MAX11410_REG_CONV_START	0x01
 #define		MAX11410_CONV_TYPE_SINGLE	0x00

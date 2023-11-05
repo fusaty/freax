@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/if_vlan.h>
-#include <linux/crash_dump.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/if_vlan.h>
+#include <freax/crash_dump.h>
 #include <net/ipv6.h>
 #include <net/rtnetlink.h>
 #include "hclge_cmd.h"

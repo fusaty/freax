@@ -2,7 +2,7 @@
 /*
  * Event jump tables
  *
- * Copyright (c) 2010-2012,2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012,2013, The freax Foundation. All rights reserved.
  */
 
 #include <asm/hexagon_vm.h>

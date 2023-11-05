@@ -6,10 +6,10 @@
 
 #define GENERATING_ASM_OFFSETS
 
-#include <linux/kbuild.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
+#include <freax/kbuild.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
 #include <asm/kvm_host.h>
 #include <asm/thread_info.h>
 #include <asm/ptrace.h>

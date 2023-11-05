@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #include "test_signals.h"
 

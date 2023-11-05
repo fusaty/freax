@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/reiserfs_xattr.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
+#include <freax/reiserfs_xattr.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/rwsem.h>
+#include <freax/xattr.h>
 
 struct inode;
 struct dentry;

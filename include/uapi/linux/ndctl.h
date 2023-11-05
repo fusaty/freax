@@ -13,7 +13,7 @@
 #ifndef __NDCTL_H__
 #define __NDCTL_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct nd_cmd_dimm_flags {
 	__u32 status;

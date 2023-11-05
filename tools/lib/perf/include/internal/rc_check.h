@@ -3,7 +3,7 @@
 #define __LIBPERF_INTERNAL_RC_CHECK_H
 
 #include <stdlib.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 /*
  * Enable reference count checking implicitly with leak checking, which is

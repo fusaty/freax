@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *  Linux ThunderLAN Driver
+ *  freax ThunderLAN Driver
  *
  *  tlan.c
  *  by James Banks
@@ -29,20 +29,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
+#include <freax/hardirq.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/eisa.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/mii.h>
 
 #include "tlan.h"
 
@@ -272,7 +272,7 @@ tlan_set_timer(struct net_device *dev, u32 ticks, u32 type)
 
 ThunderLAN driver primary functions
 
-these functions are more or less common to all linux network drivers.
+these functions are more or less common to all freax network drivers.
 
 ******************************************************************************
 *****************************************************************************/

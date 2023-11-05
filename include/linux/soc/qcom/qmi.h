@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The freax Foundation. All rights reserved.
  * Copyright (c) 2017, Linaro Ltd.
  */
 #ifndef __QMI_HELPERS_H__
 #define __QMI_HELPERS_H__
 
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/qrtr.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/idr.h>
+#include <freax/list.h>
+#include <freax/qrtr.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 struct socket;
 

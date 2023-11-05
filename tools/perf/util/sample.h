@@ -2,8 +2,8 @@
 #ifndef __PERF_SAMPLE_H
 #define __PERF_SAMPLE_H
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <freax/perf_event.h>
+#include <freax/types.h>
 
 /* number of register is bound by the number of bits in regs_dump::mask (64) */
 #define PERF_SAMPLE_REGS_CACHE_SIZE (8 * sizeof(u64))

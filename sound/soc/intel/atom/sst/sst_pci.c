@@ -11,10 +11,10 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/fs.h>
+#include <freax/firmware.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <asm/platform_sst_audio.h>

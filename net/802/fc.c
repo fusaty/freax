@@ -6,23 +6,23 @@
  *		v 1.0 03/22/99
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fcdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <freax/uaccess.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/fcdevice.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/net.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
+#include <freax/export.h>
 #include <net/arp.h>
 
 /*

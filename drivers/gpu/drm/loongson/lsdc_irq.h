@@ -6,7 +6,7 @@
 #ifndef __LSDC_IRQ_H__
 #define __LSDC_IRQ_H__
 
-#include <linux/irqreturn.h>
+#include <freax/irqreturn.h>
 
 #include "lsdc_drv.h"
 

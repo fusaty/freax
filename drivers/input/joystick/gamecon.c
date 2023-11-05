@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * NES, SNES, N64, MultiSystem, PSX gamepad driver for Linux
+ * NES, SNES, N64, MultiSystem, PSX gamepad driver for freax
  *
  *  Copyright (c) 1999-2004	Vojtech Pavlik <vojtech@suse.cz>
  *  Copyright (c) 2004		Peter Nelson <rufus-kernel@hackish.org>
@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/parport.h>
+#include <freax/input.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("NES, SNES, N64, MultiSystem, PSX gamepad driver");

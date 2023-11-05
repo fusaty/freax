@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MFD_TPS6586X_H
-#define __LINUX_MFD_TPS6586X_H
+#ifndef __freax_MFD_TPS6586X_H
+#define __freax_MFD_TPS6586X_H
 
 #define TPS6586X_SLEW_RATE_INSTANTLY	0x00
 #define TPS6586X_SLEW_RATE_110UV	0x01
@@ -109,4 +109,4 @@ extern int tps6586x_update(struct device *dev, int reg, uint8_t val,
 extern int tps6586x_irq_get_virq(struct device *dev, int irq);
 extern int tps6586x_get_version(struct device *dev);
 
-#endif /*__LINUX_MFD_TPS6586X_H */
+#endif /*__freax_MFD_TPS6586X_H */

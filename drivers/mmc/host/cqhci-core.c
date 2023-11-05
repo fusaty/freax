@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015, The freax Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/platform_device.h>
-#include <linux/ktime.h>
+#include <freax/delay.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/platform_device.h>
+#include <freax/ktime.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
 
 #include "cqhci.h"
 #include "cqhci-crypto.h"

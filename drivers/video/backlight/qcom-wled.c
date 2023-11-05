@@ -2,16 +2,16 @@
 /* Copyright (c) 2015, Sony Mobile Communications, AB.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
-#include <linux/kernel.h>
-#include <linux/backlight.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/ktime.h>
+#include <freax/kernel.h>
+#include <freax/backlight.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* From DT binding */
 #define WLED_MAX_STRINGS				4

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_RANDOM_H
-#define _LINUX_RANDOM_H
+#ifndef _freax_RANDOM_H
+#define _freax_RANDOM_H
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
 
-#include <uapi/linux/random.h>
+#include <uapi/freax/random.h>
 
 struct notifier_block;
 
@@ -147,10 +147,10 @@ declare_get_random_var_wait(long, unsigned long)
 
 /*
  * This is designed to be standalone for just prandom
- * users, but for now we include it from <linux/random.h>
+ * users, but for now we include it from <freax/random.h>
  * for legacy reasons.
  */
-#include <linux/prandom.h>
+#include <freax/prandom.h>
 
 #ifdef CONFIG_SMP
 int random_prepare_cpu(unsigned int cpu);
@@ -161,4 +161,4 @@ int random_online_cpu(unsigned int cpu);
 extern const struct file_operations random_fops, urandom_fops;
 #endif
 
-#endif /* _LINUX_RANDOM_H */
+#endif /* _freax_RANDOM_H */

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2022 NVIDIA Corporation and Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/vmalloc.h>
 
 #include "core.h"
 #include "../mlxfw/mlxfw.h"

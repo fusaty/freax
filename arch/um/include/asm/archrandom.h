@@ -2,7 +2,7 @@
 #ifndef __ASM_UM_ARCHRANDOM_H__
 #define __ASM_UM_ARCHRANDOM_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* This is from <os.h>, but better not to #include that in a global header here. */
 ssize_t os_getrandom(void *buf, size_t len, unsigned int flags);

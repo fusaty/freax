@@ -3,15 +3,15 @@
 // Copyright (c) 2019 MediaTek Inc.
 
 #include <asm/barrier.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/time64.h>
-#include <linux/remoteproc/mtk_scp.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/time64.h>
+#include <freax/remoteproc/mtk_scp.h>
 
 #include "mtk_common.h"
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/proc-syms.c
+ *  freax/arch/arm/mm/proc-syms.c
  *
  *  Copyright (C) 2000-2002 Russell King
  */
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <freax/module.h>
+#include <freax/mm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/proc-fns.h>

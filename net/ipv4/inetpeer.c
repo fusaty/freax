@@ -6,19 +6,19 @@
  *  Authors:	Andrey V. Savochkin <saw@msu.ru>
  */
 
-#include <linux/cache.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
+#include <freax/cache.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/random.h>
+#include <freax/timer.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/net.h>
+#include <freax/workqueue.h>
 #include <net/ip.h>
 #include <net/inetpeer.h>
 #include <net/secure_seq.h>

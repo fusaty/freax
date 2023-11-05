@@ -5,7 +5,7 @@
 #include "nocow_locking.h"
 #include "util.h"
 
-#include <linux/closure.h>
+#include <freax/closure.h>
 
 bool bch2_bucket_nocow_is_locked(struct bucket_nocow_lock_table *t, struct bpos bucket)
 {

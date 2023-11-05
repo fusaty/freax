@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * lm90.c - Part of lm_sensors, Linux kernel modules for hardware
+ * lm90.c - Part of lm_sensors, freax kernel modules for hardware
  *          monitoring
  * Copyright (C) 2003-2010  Jean Delvare <jdelvare@suse.de>
  *
@@ -95,21 +95,21 @@
  * concern all supported chipsets, unless mentioned otherwise.
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/hwmon.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 /* The maximum number of channels currently supported */
 #define MAX_CHANNELS	3

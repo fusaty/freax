@@ -8,11 +8,11 @@
  * Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #include "pll.h"
 

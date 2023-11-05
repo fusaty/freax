@@ -8,9 +8,9 @@
 #ifndef __SKL_SST_DSP_H__
 #define __SKL_SST_DSP_H__
 
-#include <linux/interrupt.h>
-#include <linux/uuid.h>
-#include <linux/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/uuid.h>
+#include <freax/firmware.h>
 #include <sound/memalloc.h>
 #include "skl-sst-cldma.h"
 

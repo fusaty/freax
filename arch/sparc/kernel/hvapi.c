@@ -3,9 +3,9 @@
  *
  * Copyright (C) 2007 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
 
 #include <asm/hypervisor.h>
 #include <asm/oplib.h>

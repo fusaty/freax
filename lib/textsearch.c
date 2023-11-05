@@ -97,15 +97,15 @@
  */
 /* ========================================================================== */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/err.h>
-#include <linux/textsearch.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
+#include <freax/err.h>
+#include <freax/textsearch.h>
+#include <freax/slab.h>
 
 static LIST_HEAD(ts_ops);
 static DEFINE_SPINLOCK(ts_mod_lock);

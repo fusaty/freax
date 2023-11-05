@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/ipv6.h>
 #include <net/inet_ecn.h>
 #include <net/route.h>
 #include <net/ip6_route.h>

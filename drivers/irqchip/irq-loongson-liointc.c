@@ -4,17 +4,17 @@
  *  Loongson Local IO Interrupt Controller support
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/irqchip/chained_irq.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/irqchip.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/io.h>
+#include <freax/smp.h>
+#include <freax/irqchip/chained_irq.h>
 
 #ifdef CONFIG_MIPS
 #include <loongson.h>

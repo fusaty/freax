@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_titan.c
+ *	freax/arch/alpha/kernel/core_titan.c
  *
  * Code common to all TITAN core logic chips.
  */
@@ -10,13 +10,13 @@
 #include <asm/core_titan.h>
 #undef __EXTERN_INLINE
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/memblock.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/vmalloc.h>
+#include <freax/memblock.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>
@@ -575,10 +575,10 @@ EXPORT_SYMBOL(titan_is_mmio);
 /*
  * AGP GART Support.
  */
-#include <linux/agp_backend.h>
+#include <freax/agp_backend.h>
 #include <asm/agp_backend.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 
 struct titan_agp_aperture {
 	struct pci_iommu_arena *arena;

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/bvec.h>
-#include <linux/fault-inject-usercopy.h>
-#include <linux/uio.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/splice.h>
-#include <linux/compat.h>
-#include <linux/scatterlist.h>
-#include <linux/instrumented.h>
-#include <linux/iov_iter.h>
+#include <freax/export.h>
+#include <freax/bvec.h>
+#include <freax/fault-inject-usercopy.h>
+#include <freax/uio.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/splice.h>
+#include <freax/compat.h>
+#include <freax/scatterlist.h>
+#include <freax/instrumented.h>
+#include <freax/iov_iter.h>
 
 static __always_inline
 size_t copy_to_user_iter(void __user *iter_to, size_t progress,
@@ -1238,7 +1238,7 @@ struct iovec *iovec_from_user(const struct iovec __user *uvec,
 
 	/*
 	 * SuS says "The readv() function *may* fail if the iovcnt argument was
-	 * less than or equal to 0, or greater than {IOV_MAX}.  Linux has
+	 * less than or equal to 0, or greater than {IOV_MAX}.  freax has
 	 * traditionally returned zero for zero segments, so...
 	 */
 	if (nr_segs == 0)
@@ -1310,7 +1310,7 @@ ssize_t __import_iovec(int type, const struct iovec __user *uvec,
 	 * an element length is < 0 when cast to ssize_t or if the total length
 	 * would overflow the ssize_t return value of the system call.
 	 *
-	 * Linux caps all read/write calls to MAX_RW_COUNT, and avoids the
+	 * freax caps all read/write calls to MAX_RW_COUNT, and avoids the
 	 * overflow case.
 	 */
 	for (seg = 0; seg < nr_segs; seg++) {

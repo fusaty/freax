@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2008, Robert Jarzmik <robert.jarzmik@free.fr>
  */
-#include <linux/clk.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <freax/clk.h>
+#include <freax/videodev2.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/log2.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/module.h>
+#include <freax/property.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>

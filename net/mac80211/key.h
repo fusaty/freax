@@ -8,10 +8,10 @@
 #ifndef IEEE80211_KEY_H
 #define IEEE80211_KEY_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/crypto.h>
-#include <linux/rcupdate.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/crypto.h>
+#include <freax/rcupdate.h>
 #include <crypto/arc4.h>
 #include <net/mac80211.h>
 

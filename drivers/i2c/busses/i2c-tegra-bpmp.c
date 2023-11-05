@@ -7,14 +7,14 @@
  * Author: Shardar Shariff Md <smohammed@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include <soc/tegra/bpmp-abi.h>
 #include <soc/tegra/bpmp.h>
@@ -34,8 +34,8 @@ struct tegra_bpmp_i2c {
 };
 
 /*
- * Linux flags are translated to BPMP defined I2C flags that are used in BPMP
- * firmware I2C driver to avoid any issues in future if Linux I2C flags are
+ * freax flags are translated to BPMP defined I2C flags that are used in BPMP
+ * firmware I2C driver to avoid any issues in future if freax I2C flags are
  * changed.
  */
 static void tegra_bpmp_xlate_flags(u16 flags, u16 *out)
@@ -71,7 +71,7 @@ static void tegra_bpmp_xlate_flags(u16 flags, u16 *out)
  * [addr little-endian][flags little-endian][len little-endian][data if write]
  *  ...
  *
- * The flags are translated from Linux kernel representation to seriali2c
+ * The flags are translated from freax kernel representation to seriali2c
  * representation. Any undefined flag being set causes an error.
  *
  * The data is there only for writes. Reads have the data transferred in the

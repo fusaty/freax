@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #if IS_ENABLED(CONFIG_NFT_CT)
-#include <linux/netfilter/nf_tables.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_conntrack.h>
 

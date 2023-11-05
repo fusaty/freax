@@ -31,7 +31,7 @@ platform-$(CONFIG_XTENSA_PLATFORM_ISS)		:= iss
 platform-$(CONFIG_XTENSA_PLATFORM_XTFPGA)	:= xtfpga
 
 # temporarily until string.h is fixed
-KBUILD_CFLAGS += -ffreestanding -D__linux__
+KBUILD_CFLAGS += -ffreestanding -D__freax__
 KBUILD_CFLAGS += -pipe -mlongcalls -mtext-section-literals
 KBUILD_CFLAGS += $(call cc-option,-mforce-no-pic,)
 KBUILD_CFLAGS += $(call cc-option,-mno-serialize-volatile,)
@@ -59,7 +59,7 @@ libs-y		+= arch/xtensa/lib/
 
 boot		:= arch/xtensa/boot
 
-all Image zImage uImage xipImage: vmlinux
+all Image zImage uImage xipImage: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
 archheaders:

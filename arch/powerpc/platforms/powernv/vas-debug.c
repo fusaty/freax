@@ -5,10 +5,10 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 #include <asm/vas.h>
 #include "vas.h"
 

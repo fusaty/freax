@@ -15,17 +15,17 @@
 // but provides extensions to which platform specific implementation of the gpio
 // and wakeup interrupts can be hooked to.
 
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "../core.h"
 #include "pinctrl-samsung.h"

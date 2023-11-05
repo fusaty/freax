@@ -18,15 +18,15 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/88pm860x.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
 #define PM8607_WAKEUP		0x0b
 

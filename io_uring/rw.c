@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/blk-mq.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fsnotify.h>
-#include <linux/poll.h>
-#include <linux/nospec.h>
-#include <linux/compat.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/blk-mq.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/fsnotify.h>
+#include <freax/poll.h>
+#include <freax/nospec.h>
+#include <freax/compat.h>
+#include <freax/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 
 #include "io_uring.h"
 #include "opdef.h"

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *  BSD Process Accounting for Linux - Definitions
+ *  BSD Process Accounting for freax - Definitions
  *
  *  Author: Marco van Wieringen (mvw@planets.elm.net)
  *
@@ -13,10 +13,10 @@
  *
  */
 
-#ifndef _UAPI_LINUX_ACCT_H
-#define _UAPI_LINUX_ACCT_H
+#ifndef _UAPI_freax_ACCT_H
+#define _UAPI_freax_ACCT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <asm/param.h>
 #include <asm/byteorder.h>
@@ -26,7 +26,7 @@
  *  exponent and a 13-bit fraction.
  *  comp2_t is 24-bit with 5-bit base 2 exponent and 20 bit fraction
  *  (leading 1 not stored).
- *  See linux/kernel/acct.c for the specific encoding systems used.
+ *  See freax/kernel/acct.c for the specific encoding systems used.
  */
 
 typedef __u16	comp_t;
@@ -125,4 +125,4 @@ struct acct_v3
 #endif	/* __KERNEL */
 
 
-#endif /* _UAPI_LINUX_ACCT_H */
+#endif /* _UAPI_freax_ACCT_H */

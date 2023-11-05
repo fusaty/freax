@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -11,12 +11,12 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_IF_BRIDGE_H
-#define _UAPI_LINUX_IF_BRIDGE_H
+#ifndef _UAPI_freax_IF_BRIDGE_H
+#define _UAPI_freax_IF_BRIDGE_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
+#include <freax/in6.h>
 
 #define SYSFS_BRIDGE_ATTR	"bridge"
 #define SYSFS_BRIDGE_FDB	"brforward"
@@ -854,4 +854,4 @@ enum {
 	__BRIDGE_QUERIER_MAX
 };
 #define BRIDGE_QUERIER_MAX (__BRIDGE_QUERIER_MAX - 1)
-#endif /* _UAPI_LINUX_IF_BRIDGE_H */
+#endif /* _UAPI_freax_IF_BRIDGE_H */

@@ -11,18 +11,18 @@
  *  Copyright (C) 1999 Paul `Rusty' Russell & Michael J. Neuling
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/audit.h>
+#include <freax/kmod.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/smp.h>
+#include <freax/cpumask.h>
+#include <freax/audit.h>
 #include <net/sock.h>
 #include <net/netns/generic.h>
 /* needed for logical [in,out]-dev filtering */

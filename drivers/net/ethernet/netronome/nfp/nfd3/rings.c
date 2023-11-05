@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2015-2019 Netronome Systems, Inc. */
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 
 #include "../nfp_net.h"
 #include "../nfp_net_dp.h"

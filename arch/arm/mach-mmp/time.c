@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-mmp/time.c
+ * freax/arch/arm/mach-mmp/time.c
  *
  *   Support for clocksource and clockevents
  *
@@ -15,22 +15,22 @@
  * the clock source, and match comparator #1 used as clock event device.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/clockchips.h>
+#include <freax/clk.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
 #include <asm/mach/time.h>
 
 #include "regs-timers.h"
-#include <linux/soc/mmp/cputype.h>
+#include <freax/soc/mmp/cputype.h>
 
 #define MAX_DELTA		(0xfffffffe)
 #define MIN_DELTA		(16)

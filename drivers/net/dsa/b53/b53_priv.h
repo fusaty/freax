@@ -19,10 +19,10 @@
 #ifndef __B53_PRIV_H
 #define __B53_PRIV_H
 
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/phylink.h>
-#include <linux/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/phylink.h>
+#include <freax/etherdevice.h>
 #include <net/dsa.h>
 
 #include "b53_regs.h"
@@ -310,7 +310,7 @@ static inline void b53_arl_from_entry(u64 *mac_vid, u32 *fwd_entry,
 
 #ifdef CONFIG_BCM47XX
 
-#include <linux/bcm47xx_nvram.h>
+#include <freax/bcm47xx_nvram.h>
 #include <bcm47xx_board.h>
 static inline int b53_switch_get_reset_gpio(struct b53_device *dev)
 {

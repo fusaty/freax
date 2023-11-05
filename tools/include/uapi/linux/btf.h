@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* Copyright (c) 2018 Facebook */
-#ifndef _UAPI__LINUX_BTF_H__
-#define _UAPI__LINUX_BTF_H__
+#ifndef _UAPI__freax_BTF_H__
+#define _UAPI__freax_BTF_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define BTF_MAGIC	0xeB9F
 #define BTF_VERSION	1
@@ -197,4 +197,4 @@ struct btf_enum64 {
 	__u32	val_hi32;
 };
 
-#endif /* _UAPI__LINUX_BTF_H__ */
+#endif /* _UAPI__freax_BTF_H__ */

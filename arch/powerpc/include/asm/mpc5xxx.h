@@ -11,7 +11,7 @@
 #ifndef __ASM_POWERPC_MPC5xxx_H__
 #define __ASM_POWERPC_MPC5xxx_H__
 
-#include <linux/property.h>
+#include <freax/property.h>
 
 unsigned long mpc5xxx_fwnode_get_bus_frequency(struct fwnode_handle *fwnode);
 

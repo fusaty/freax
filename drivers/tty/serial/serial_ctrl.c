@@ -10,11 +10,11 @@
  * port device.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/serial_core.h>
-#include <linux/spinlock.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/serial_core.h>
+#include <freax/spinlock.h>
 
 #include "serial_base.h"
 

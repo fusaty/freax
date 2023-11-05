@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SWAPOPS_H
-#define _LINUX_SWAPOPS_H
+#ifndef _freax_SWAPOPS_H
+#define _freax_SWAPOPS_H
 
-#include <linux/radix-tree.h>
-#include <linux/bug.h>
-#include <linux/mm_types.h>
+#include <freax/radix-tree.h>
+#include <freax/bug.h>
+#include <freax/mm_types.h>
 
 #ifdef CONFIG_MMU
 
 #ifdef CONFIG_SWAP
-#include <linux/swapfile.h>
+#include <freax/swapfile.h>
 #endif	/* CONFIG_SWAP */
 
 /*
@@ -583,4 +583,4 @@ static inline int non_swap_entry(swp_entry_t entry)
 }
 
 #endif /* CONFIG_MMU */
-#endif /* _LINUX_SWAPOPS_H */
+#endif /* _freax_SWAPOPS_H */

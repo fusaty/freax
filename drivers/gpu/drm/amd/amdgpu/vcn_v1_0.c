@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "amdgpu.h"
 #include "amdgpu_cs.h"

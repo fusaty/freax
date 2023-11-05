@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/stacktrace.h>
-#include <linux/fault-inject.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/stat.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/stacktrace.h>
+#include <freax/fault-inject.h>
 
 /*
  * setup_fault_attr() is a helper function for various __setup handlers, so it

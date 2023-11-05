@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bitops.h>
-#include <linux/fault-inject-usercopy.h>
-#include <linux/instrumented.h>
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
+#include <freax/bitops.h>
+#include <freax/fault-inject-usercopy.h>
+#include <freax/instrumented.h>
+#include <freax/uaccess.h>
+#include <freax/nospec.h>
 
 /* out-of-line parts */
 

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SIGNAL_H
-#define _UAPI_LINUX_SIGNAL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SIGNAL_H
+#define _UAPI_freax_SIGNAL_H
 
 #include <asm/signal.h>
 #include <asm/siginfo.h>
@@ -13,4 +13,4 @@
 /* mask for all SS_xxx flags */
 #define SS_FLAG_BITS	SS_AUTODISARM
 
-#endif /* _UAPI_LINUX_SIGNAL_H */
+#endif /* _UAPI_freax_SIGNAL_H */

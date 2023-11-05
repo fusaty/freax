@@ -78,7 +78,7 @@ additionalProperties: false
 examples:
   - |
     #include <dt-bindings/interrupt-controller/irq.h>
-    #include <dt-bindings/input/linux-event-codes.h>
+    #include <dt-bindings/input/freax-event-codes.h>
     i2c {
         #address-cells = <1>;
         #size-cells = <0>;
@@ -131,7 +131,7 @@ examples:
                 led@1 {
                     reg = <1>;
                     label = "red:usr1";
-                    linux,default-trigger = "heartbeat";
+                    freax,default-trigger = "heartbeat";
                 };
 
                 led@2 {
@@ -142,7 +142,7 @@ examples:
 
             onkey {
                 compatible = "maxim,max77650-onkey";
-                linux,code = <KEY_END>;
+                freax,code = <KEY_END>;
                 maxim,onkey-slide;
             };
         };

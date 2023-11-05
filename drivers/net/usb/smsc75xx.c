@@ -5,19 +5,19 @@
  *
  *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/bitrev.h>
-#include <linux/crc16.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
-#include <linux/of_net.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/bitrev.h>
+#include <freax/crc16.h>
+#include <freax/crc32.h>
+#include <freax/usb/usbnet.h>
+#include <freax/slab.h>
+#include <freax/of_net.h>
 #include "smsc75xx.h"
 
 #define SMSC_CHIPNAME			"smsc75xx"

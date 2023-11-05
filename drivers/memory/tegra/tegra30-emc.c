@@ -9,25 +9,25 @@
  * Copyright (C) 2019 GRATE-DRIVER project
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interconnect-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk/tegra.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interconnect-provider.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/types.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

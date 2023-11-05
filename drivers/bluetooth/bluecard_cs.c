@@ -20,24 +20,24 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/wait.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/spinlock.h>
+#include <freax/moduleparam.h>
+#include <freax/wait.h>
 
-#include <linux/skbuff.h>
-#include <linux/io.h>
+#include <freax/skbuff.h>
+#include <freax/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

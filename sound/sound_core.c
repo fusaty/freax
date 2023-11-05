@@ -8,11 +8,11 @@
 /*
  * First, the common part.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
 #include <sound/core.h>
 
 #ifdef CONFIG_SOUND_OSS_CORE
@@ -98,12 +98,12 @@ module_exit(cleanup_soundcore);
  *	locking at some point in 2.3.x.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sound.h>
-#include <linux/kmod.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sound.h>
+#include <freax/kmod.h>
 
 #define SOUND_STEP 16
 

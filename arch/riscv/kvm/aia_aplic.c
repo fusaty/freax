@@ -7,10 +7,10 @@
  *	Anup Patel <apatel@ventanamicro.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/math.h>
-#include <linux/spinlock.h>
-#include <linux/swab.h>
+#include <freax/kvm_host.h>
+#include <freax/math.h>
+#include <freax/spinlock.h>
+#include <freax/swab.h>
 #include <kvm/iodev.h>
 #include <asm/kvm_aia_aplic.h>
 

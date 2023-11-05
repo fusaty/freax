@@ -13,12 +13,12 @@
  * Karl-Heinz Schneider <karl-heinz@schneider-inet.de>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/i2c-mux.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
 
 #define SBSM_MAX_BATS  4
 #define SBSM_RETRY_CNT 3

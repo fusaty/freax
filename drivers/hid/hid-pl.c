@@ -28,10 +28,10 @@
 
 #define debug(format, arg...) pr_debug("hid-plff: " format "\n" , ## arg)
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/hid.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/hid.h>
 
 #include "hid-ids.h"
 

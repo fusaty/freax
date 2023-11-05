@@ -55,12 +55,12 @@
 			no-map;
 		};
 
-		linux,cma {
+		freax,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0x0 0x10000000>;
 			alignment = <0x0 0x400000>;
-			linux,cma-default;
+			freax,cma-default;
 		};
 	};
 

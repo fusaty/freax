@@ -2,7 +2,7 @@
 #ifndef _ASM_RISCV_TOPOLOGY_H
 #define _ASM_RISCV_TOPOLOGY_H
 
-#include <linux/arch_topology.h>
+#include <freax/arch_topology.h>
 
 /* Replace task scheduler's default frequency-invariant accounting */
 #define arch_scale_freq_tick		topology_scale_freq_tick

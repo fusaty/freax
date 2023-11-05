@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Userspace interface for /dev/acrn_hsm - ACRN Hypervisor Service Module
  *
@@ -11,7 +11,7 @@
 #ifndef _UAPI_ACRN_H
 #define _UAPI_ACRN_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ACRN_IO_REQUEST_MAX		16
 

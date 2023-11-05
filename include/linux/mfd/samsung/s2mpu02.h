@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S2MPU02_H
-#define __LINUX_MFD_S2MPU02_H
+#ifndef __freax_MFD_S2MPU02_H
+#define __freax_MFD_S2MPU02_H
 
 /* S2MPU02 registers */
 enum S2MPU02_reg {
@@ -186,4 +186,4 @@ enum S2MPU02_regulators {
 #define S2MPU02_BUCK4_RAMP_SHIFT	0
 #define S2MPU02_BUCK1234_RAMP_MASK	0x3
 
-#endif /*  __LINUX_MFD_S2MPU02_H */
+#endif /*  __freax_MFD_S2MPU02_H */

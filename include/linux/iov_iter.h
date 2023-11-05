@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_IOV_ITER_H
-#define _LINUX_IOV_ITER_H
+#ifndef _freax_IOV_ITER_H
+#define _freax_IOV_ITER_H
 
-#include <linux/uio.h>
-#include <linux/bvec.h>
+#include <freax/uio.h>
+#include <freax/bvec.h>
 
 typedef size_t (*iov_step_f)(void *iter_base, size_t progress, size_t len,
 			     void *priv, void *priv2);
@@ -271,4 +271,4 @@ size_t iterate_and_advance(struct iov_iter *iter, size_t len, void *priv,
 	return iterate_and_advance2(iter, len, priv, NULL, ustep, step);
 }
 
-#endif /* _LINUX_IOV_ITER_H */
+#endif /* _freax_IOV_ITER_H */

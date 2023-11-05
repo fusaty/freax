@@ -8,9 +8,9 @@
 
 #define pr_fmt(fmt) "ipmi_hotmod: " fmt
 
-#include <linux/moduleparam.h>
-#include <linux/ipmi.h>
-#include <linux/atomic.h>
+#include <freax/moduleparam.h>
+#include <freax/ipmi.h>
+#include <freax/atomic.h>
 #include "ipmi_si.h"
 #include "ipmi_plat_data.h"
 

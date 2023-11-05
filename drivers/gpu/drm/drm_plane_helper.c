@@ -23,7 +23,7 @@
  * SOFTWARE.
  */
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

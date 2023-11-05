@@ -16,16 +16,16 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sort.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/kref.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/sort.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/pci.h>
 
 #include "nfp_cpp.h"
 #include "nfp_dev.h"

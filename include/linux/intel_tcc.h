@@ -8,7 +8,7 @@
 #ifndef __INTEL_TCC_H__
 #define __INTEL_TCC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 int intel_tcc_get_tjmax(int cpu);
 int intel_tcc_get_offset(int cpu);

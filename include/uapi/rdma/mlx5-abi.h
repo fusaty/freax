@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB) */
 /*
  * Copyright (c) 2013-2015, Mellanox Technologies. All rights reserved.
  *
@@ -34,8 +34,8 @@
 #ifndef MLX5_ABI_USER_H
 #define MLX5_ABI_USER_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>	/* For ETH_ALEN. */
+#include <freax/types.h>
+#include <freax/if_ether.h>	/* For ETH_ALEN. */
 #include <rdma/ib_user_ioctl_verbs.h>
 
 enum {

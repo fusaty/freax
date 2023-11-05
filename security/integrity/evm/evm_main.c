@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) "EVM: "fmt
 
-#include <linux/init.h>
-#include <linux/audit.h>
-#include <linux/xattr.h>
-#include <linux/integrity.h>
-#include <linux/evm.h>
-#include <linux/magic.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/lsm_hooks.h>
+#include <freax/init.h>
+#include <freax/audit.h>
+#include <freax/xattr.h>
+#include <freax/integrity.h>
+#include <freax/evm.h>
+#include <freax/magic.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/lsm_hooks.h>
 
 #include <crypto/hash.h>
 #include <crypto/hash_info.h>
@@ -37,8 +37,8 @@ int evm_hmac_attrs;
 
 static struct xattr_list evm_config_default_xattrnames[] = {
 	{
-	 .name = XATTR_NAME_SELINUX,
-	 .enabled = IS_ENABLED(CONFIG_SECURITY_SELINUX)
+	 .name = XATTR_NAME_SEfreax,
+	 .enabled = IS_ENABLED(CONFIG_SECURITY_SEfreax)
 	},
 	{
 	 .name = XATTR_NAME_SMACK,

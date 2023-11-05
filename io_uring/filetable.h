@@ -2,8 +2,8 @@
 #ifndef IOU_FILE_TABLE_H
 #define IOU_FILE_TABLE_H
 
-#include <linux/file.h>
-#include <linux/io_uring_types.h>
+#include <freax/file.h>
+#include <freax/io_uring_types.h>
 
 bool io_alloc_file_tables(struct io_file_table *table, unsigned nr_files);
 void io_free_file_tables(struct io_file_table *table);

@@ -7,11 +7,11 @@
 
 #include "dhry.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/smp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/smp.h>
 
 #define DHRY_VAX	1757
 

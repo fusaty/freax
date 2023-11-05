@@ -6,7 +6,7 @@
 #if !defined(_EXT2_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _EXT2_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(ext2_dio_class,
 	TP_PROTO(struct kiocb *iocb, struct iov_iter *iter, ssize_t ret),

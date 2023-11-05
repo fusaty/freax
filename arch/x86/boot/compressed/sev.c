@@ -142,7 +142,7 @@ static void __page_state_change(unsigned long paddr, enum psc_op op)
 	 * state change in the RMP table.
 	 */
 	if (op == SNP_PAGE_STATE_SHARED && pvalidate(paddr, RMP_PG_SIZE_4K, 0))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PVALIDATE);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PVALIDATE);
 
 	/* Issue VMGEXIT to change the page state in RMP table. */
 	sev_es_wr_ghcb_msr(GHCB_MSR_PSC_REQ_GFN(paddr >> PAGE_SHIFT, op));
@@ -151,14 +151,14 @@ static void __page_state_change(unsigned long paddr, enum psc_op op)
 	/* Read the response of the VMGEXIT. */
 	val = sev_es_rd_ghcb_msr();
 	if ((GHCB_RESP_CODE(val) != GHCB_MSR_PSC_RESP) || GHCB_MSR_PSC_RESP_VAL(val))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PSC);
 
 	/*
 	 * Now that page state is changed in the RMP table, validate it so that it is
 	 * consistent with the RMP entry.
 	 */
 	if (op == SNP_PAGE_STATE_PRIVATE && pvalidate(paddr, RMP_PG_SIZE_4K, 1))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PVALIDATE);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PVALIDATE);
 }
 
 void snp_set_page_private(unsigned long paddr)
@@ -222,7 +222,7 @@ static phys_addr_t __snp_accept_memory(struct snp_psc_desc *desc,
 	}
 
 	if (vmgexit_psc(boot_ghcb, desc))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PSC);
 
 	pvalidate_pages(desc);
 
@@ -236,7 +236,7 @@ void snp_accept_memory(phys_addr_t start, phys_addr_t end)
 	phys_addr_t pa;
 
 	if (!boot_ghcb && !early_setup_ghcb())
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PSC);
 
 	pa = start;
 	while (pa < end)
@@ -338,13 +338,13 @@ static void enforce_vmpl0(void)
 	 * GHCB page. If the guest is not running at VMPL0, this will fail.
 	 *
 	 * If the guest is running at VMPL0, it will succeed. Even if that operation
-	 * modifies permission bits, it is still ok to do so currently because Linux
+	 * modifies permission bits, it is still ok to do so currently because freax
 	 * SNP guests are supported only on VMPL0 so VMPL1 or higher permission masks
 	 * changing is a don't-care.
 	 */
 	attrs = 1;
 	if (rmpadjust((unsigned long)&boot_ghcb_page, RMP_PG_SIZE_4K, attrs))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_NOT_VMPL0);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_NOT_VMPL0);
 }
 
 /*
@@ -549,7 +549,7 @@ static struct cc_blob_sev_info *find_cc_blob_efi(struct boot_params *bp)
  * by firmware/bootloader in the following ways:
  *
  * - via an entry in the EFI config table
- * - via a setup_data structure, as defined by the Linux Boot Protocol
+ * - via a setup_data structure, as defined by the freax Boot Protocol
  *
  * Scan for the blob in that order.
  */

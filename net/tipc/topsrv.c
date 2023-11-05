@@ -42,7 +42,7 @@
 #include "msg.h"
 #include "bearer.h"
 #include <net/sock.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include <trace/events/sock.h>
 
 /* Number of messages to send before rescheduling */

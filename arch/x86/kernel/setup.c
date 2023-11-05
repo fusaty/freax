@@ -5,28 +5,28 @@
  * This file contains the setup_arch() code, which handles the architecture-dependent
  * parts of early kernel initialization.
  */
-#include <linux/acpi.h>
-#include <linux/console.h>
-#include <linux/crash_dump.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/ima.h>
-#include <linux/init_ohci1394_dma.h>
-#include <linux/initrd.h>
-#include <linux/iscsi_ibft.h>
-#include <linux/memblock.h>
-#include <linux/panic_notifier.h>
-#include <linux/pci.h>
-#include <linux/root_dev.h>
-#include <linux/hugetlb.h>
-#include <linux/tboot.h>
-#include <linux/usb/xhci-dbgp.h>
-#include <linux/static_call.h>
-#include <linux/swiotlb.h>
-#include <linux/random.h>
+#include <freax/acpi.h>
+#include <freax/console.h>
+#include <freax/crash_dump.h>
+#include <freax/dma-map-ops.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/ima.h>
+#include <freax/init_ohci1394_dma.h>
+#include <freax/initrd.h>
+#include <freax/iscsi_ibft.h>
+#include <freax/memblock.h>
+#include <freax/panic_notifier.h>
+#include <freax/pci.h>
+#include <freax/root_dev.h>
+#include <freax/hugetlb.h>
+#include <freax/tboot.h>
+#include <freax/usb/xhci-dbgp.h>
+#include <freax/static_call.h>
+#include <freax/swiotlb.h>
+#include <freax/random.h>
 
-#include <uapi/linux/mount.h>
+#include <uapi/freax/mount.h>
 
 #include <xen/xen.h>
 
@@ -54,7 +54,7 @@
 #include <asm/thermal.h>
 #include <asm/unwind.h>
 #include <asm/vsyscall.h>
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 /*
  * max_low_pfn_mapped: highest directly mapped pfn < 4 GB
@@ -864,7 +864,7 @@ void __init setup_arch(char **cmdline_p)
 
 #ifdef CONFIG_MEMORY_HOTPLUG
 	/*
-	 * Memory used by the kernel cannot be hot-removed because Linux
+	 * Memory used by the kernel cannot be hot-removed because freax
 	 * cannot migrate the kernel pages. When memory hotplug is
 	 * enabled, we should prevent memblock from allocating memory
 	 * for the kernel.

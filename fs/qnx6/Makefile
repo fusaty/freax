@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux qnx4-filesystem routines.
+# Makefile for the freax qnx4-filesystem routines.
 #
 
 obj-$(CONFIG_QNX6FS_FS) += qnx6.o

@@ -13,8 +13,8 @@
  * month =        {June},
  *}
  * Used by the iSCSI driver, possibly others, and derived from
- * the iscsi-crc.c module of the linux-iscsi driver at
- * http://linux-iscsi.sourceforge.net.
+ * the iscsi-crc.c module of the freax-iscsi driver at
+ * http://freax-iscsi.sourceforge.net.
  *
  * Following the example of lib/crc32, this function is intended to be
  * flexible and useful for all users.  Modules that currently have their
@@ -27,11 +27,11 @@
  */
 
 #include <crypto/hash.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/crc32c.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/crc32c.h>
 
 static struct crypto_shash *tfm;
 

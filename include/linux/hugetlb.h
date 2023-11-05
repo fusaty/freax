@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HUGETLB_H
-#define _LINUX_HUGETLB_H
+#ifndef _freax_HUGETLB_H
+#define _freax_HUGETLB_H
 
-#include <linux/mm.h>
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/fs.h>
-#include <linux/hugetlb_inline.h>
-#include <linux/cgroup.h>
-#include <linux/page_ref.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/pgtable.h>
-#include <linux/gfp.h>
-#include <linux/userfaultfd_k.h>
+#include <freax/mm.h>
+#include <freax/mm_types.h>
+#include <freax/mmdebug.h>
+#include <freax/fs.h>
+#include <freax/hugetlb_inline.h>
+#include <freax/cgroup.h>
+#include <freax/page_ref.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/pgtable.h>
+#include <freax/gfp.h>
+#include <freax/userfaultfd_k.h>
 
 struct ctl_table;
 struct user_struct;
@@ -30,8 +30,8 @@ void free_huge_folio(struct folio *folio);
 
 #ifdef CONFIG_HUGETLB_PAGE
 
-#include <linux/pagemap.h>
-#include <linux/shm.h>
+#include <freax/pagemap.h>
+#include <freax/shm.h>
 #include <asm/tlbflush.h>
 
 /*
@@ -1299,4 +1299,4 @@ hugetlb_walk(struct vm_area_struct *vma, unsigned long addr, unsigned long sz)
 	return huge_pte_offset(vma->vm_mm, addr, sz);
 }
 
-#endif /* _LINUX_HUGETLB_H */
+#endif /* _freax_HUGETLB_H */

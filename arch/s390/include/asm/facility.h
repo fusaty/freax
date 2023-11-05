@@ -10,10 +10,10 @@
 
 #include <asm/facility-defs.h>
 
-#include <linux/minmax.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/preempt.h>
+#include <freax/minmax.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/preempt.h>
 
 #include <asm/lowcore.h>
 

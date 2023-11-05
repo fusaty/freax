@@ -3,23 +3,23 @@
  * Copyright (C) 2005-2007  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/crc-itu-t.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/completion.h>
+#include <freax/crc-itu-t.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

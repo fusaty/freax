@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (C) 2012 - 2014 Cisco Systems
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
 #ifndef __TIMER_INTERNAL_H__
 #define __TIMER_INTERNAL_H__
-#include <linux/list.h>
+#include <freax/list.h>
 #include <asm/bug.h>
 #include <shared/timetravel.h>
 

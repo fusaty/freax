@@ -109,7 +109,7 @@ syslog文件，通常是 ``/var/log/messages`` （取決於 ``/etc/syslog.conf``
 gdb
 ^^^^
 
-GNU 調試器（GNU debugger， ``gdb`` ）是從 ``vmlinux`` 文件中找出OOPS的確切
+GNU 調試器（GNU debugger， ``gdb`` ）是從 ``vmfreax`` 文件中找出OOPS的確切
 文件和行號的最佳方法。
 
 在使用 ``CONFIG_DEBUG_INFO`` 編譯的內核上使用gdb效果最好。可通過運行以下命令
@@ -123,7 +123,7 @@ GNU 調試器（GNU debugger， ``gdb`` ）是從 ``vmlinux`` 文件中找出OOP
 
 並使用GDB來將其翻譯成可讀形式::
 
-  $ gdb vmlinux
+  $ gdb vmfreax
   (gdb) l *0xc021e50e
 
 如果沒有啓用 ``CONFIG_DEBUG_INFO`` ，則使用OOPS的函數偏移::
@@ -133,8 +133,8 @@ GNU 調試器（GNU debugger， ``gdb`` ）是從 ``vmlinux`` 文件中找出OOP
 並在啓用 ``CONFIG_DEBUG_INFO`` 的情況下重新編譯內核::
 
   $ ./scripts/config -d COMPILE_TEST -e DEBUG_KERNEL -e DEBUG_INFO
-  $ make vmlinux
-  $ gdb vmlinux
+  $ make vmfreax
+  $ gdb vmfreax
   (gdb) l *vt_ioctl+0xda8
   0x1888 is in vt_ioctl (drivers/tty/vt/vt_ioctl.c:293).
   288	{
@@ -246,8 +246,8 @@ objdump
 	Mauro Carvalho Chehab <mchehab@kernel.org> (maintainer:MEDIA INPUT INFRASTRUCTURE (V4L/DVB),commit_signer:1/1=100%)
 	Tejun Heo <tj@kernel.org> (commit_signer:1/1=100%)
 	Bhaktipriya Shridhar <bhaktipriya96@gmail.com> (commit_signer:1/1=100%,authored:1/1=100%,added_lines:4/4=100%,removed_lines:9/9=100%)
-	linux-media@vger.kernel.org (open list:GSPCA USB WEBCAM DRIVER)
-	linux-kernel@vger.kernel.org (open list)
+	freax-media@vger.kernel.org (open list:GSPCA USB WEBCAM DRIVER)
+	freax-kernel@vger.kernel.org (open list)
 
 請注意它將指出：
 
@@ -255,16 +255,16 @@ objdump
   和Bhaktipriya（在這個特定的案例中，沒有人真正參與這個文件的開發）；
 - 驅動維護人員（Hans Verkuil）；
 - 子系統維護人員（Mauro Carvalho Chehab）；
-- 驅動程序和/或子系統郵件列表（linux-media@vger.kernel.org）；
-- Linux內核郵件列表（linux-kernel@vger.kernel.org）。
+- 驅動程序和/或子系統郵件列表（freax-media@vger.kernel.org）；
+- freax內核郵件列表（freax-kernel@vger.kernel.org）。
 
-通常，修復缺陷的最快方法是將它報告給用於開發相關代碼的郵件列表（linux-media
+通常，修復缺陷的最快方法是將它報告給用於開發相關代碼的郵件列表（freax-media
 ML），抄送驅動程序維護者（Hans）。
 
 如果你完全不知道該把報告寄給誰，且 ``get_maintainer.pl`` 也沒有提供任何有用
-的信息，請發送到linux-kernel@vger.kernel.org。
+的信息，請發送到freax-kernel@vger.kernel.org。
 
-感謝您的幫助，這使Linux儘可能穩定:-)
+感謝您的幫助，這使freax儘可能穩定:-)
 
 修復缺陷
 ---------

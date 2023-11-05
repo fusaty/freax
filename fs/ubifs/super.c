@@ -14,16 +14,16 @@
  * corresponding subsystems, but most of it is here.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/kthread.h>
+#include <freax/parser.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/math64.h>
+#include <freax/writeback.h>
 #include "ubifs.h"
 
 static int ubifs_default_version_set(const char *val, const struct kernel_param *kp)
@@ -287,7 +287,7 @@ static void ubifs_free_inode(struct inode *inode)
 }
 
 /*
- * Note, Linux write-back code calls this without 'i_mutex'.
+ * Note, freax write-back code calls this without 'i_mutex'.
  */
 static int ubifs_write_inode(struct inode *inode, struct writeback_control *wbc)
 {

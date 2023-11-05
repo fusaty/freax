@@ -5,11 +5,11 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/firewire.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include "lib.h"
 
 #define ERROR_RETRY_DELAY_MS	20

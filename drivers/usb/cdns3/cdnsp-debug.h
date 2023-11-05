@@ -7,8 +7,8 @@
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
  */
-#ifndef __LINUX_CDNSP_DEBUG
-#define __LINUX_CDNSP_DEBUG
+#ifndef __freax_CDNSP_DEBUG
+#define __freax_CDNSP_DEBUG
 
 static inline const char *cdnsp_trb_comp_code_string(u8 status)
 {
@@ -580,4 +580,4 @@ static inline const char *cdnsp_decode_ep_context(char *str, size_t size,
 	return str;
 }
 
-#endif /*__LINUX_CDNSP_DEBUG*/
+#endif /*__freax_CDNSP_DEBUG*/

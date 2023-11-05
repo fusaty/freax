@@ -3,15 +3,15 @@
  * Copyright (C) STMicroelectronics 2018 - All Rights Reserved
  * Author: Ludovic.barre@st.com for STMicroelectronics.
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/of_address.h>
-#include <linux/reset.h>
-#include <linux/scatterlist.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/iopoll.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/of_address.h>
+#include <freax/reset.h>
+#include <freax/scatterlist.h>
 #include "mmci.h"
 
 #define SDMMC_LLI_BUF_LEN	PAGE_SIZE

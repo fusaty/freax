@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MODULE_PARAMS_H
-#define _LINUX_MODULE_PARAMS_H
+#ifndef _freax_MODULE_PARAMS_H
+#define _freax_MODULE_PARAMS_H
 /* (C) Copyright 2001, 2002 Rusty Russell IBM Corporation */
-#include <linux/init.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
+#include <freax/init.h>
+#include <freax/stringify.h>
+#include <freax/kernel.h>
 
 /* You can override this manually, but generally this should match the
    module name. */
@@ -616,4 +616,4 @@ static inline void module_param_sysfs_remove(struct module *mod)
 { }
 #endif
 
-#endif /* _LINUX_MODULE_PARAMS_H */
+#endif /* _freax_MODULE_PARAMS_H */

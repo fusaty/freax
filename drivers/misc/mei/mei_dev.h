@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2003-2022, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  */
 
 #ifndef _MEI_DEV_H_
 #define _MEI_DEV_H_
 
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/mei.h>
-#include <linux/mei_cl_bus.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
+#include <freax/poll.h>
+#include <freax/mei.h>
+#include <freax/mei_cl_bus.h>
 
 static inline int uuid_le_cmp(const uuid_le u1, const uuid_le u2)
 {

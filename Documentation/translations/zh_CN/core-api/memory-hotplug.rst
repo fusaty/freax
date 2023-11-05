@@ -21,7 +21,7 @@
 
 热插拔事件被发送到一个通知队列中。
 
-在 ``include/linux/memory.h`` 中定义了六种类型的通知：
+在 ``include/freax/memory.h`` 中定义了六种类型的通知：
 
 MEM_GOING_ONLINE
   在新内存可用之前生成，以便能够为子系统处理内存做准备。页面分配器仍然无法从新
@@ -79,7 +79,7 @@ memory_notify结构体的指针::
 
   如果 status_changed_nid* >= 0，回调应该在必要时为节点创建/丢弃结构体。
 
-回调程序应返回 ``include/linux/notifier.h`` 中定义的NOTIFY_DONE, NOTIFY_OK,
+回调程序应返回 ``include/freax/notifier.h`` 中定义的NOTIFY_DONE, NOTIFY_OK,
 NOTIFY_BAD, NOTIFY_STOP中的一个值。
 
 NOTIFY_DONE和NOTIFY_OK对进一步处理没有影响。

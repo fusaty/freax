@@ -117,7 +117,7 @@ Testing
 
   unpoison-pfn
 	Software-unpoison page at PFN echoed into this file. This way
-	a page can be reused again.  This only works for Linux
+	a page can be reused again.  This only works for freax
 	injected failures, not for real memory failures. Once any hardware
 	memory failure happens, this feature is disabled.
 
@@ -151,7 +151,7 @@ Testing
 	When specified, only poison pages if ((page_flags & mask) ==
 	value).  This allows stress testing of many kinds of
 	pages. The page_flags are the same as in /proc/kpageflags. The
-	flag bits are defined in include/linux/kernel-page-flags.h and
+	flag bits are defined in include/freax/kernel-page-flags.h and
 	documented in Documentation/admin-guide/mm/pagemap.rst
 
 * Architecture specific MCE injector
@@ -164,7 +164,7 @@ References
 ==========
 
 http://halobates.de/mce-lc09-2.pdf
-	Overview presentation from LinuxCon 09
+	Overview presentation from freaxCon 09
 
 git://git.kernel.org/pub/scm/utils/cpu/mce/mce-test.git
 	Test suite (hwpoison specific portable tests in tsrc)

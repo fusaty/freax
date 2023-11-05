@@ -4,7 +4,7 @@
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-mem2mem.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "mtk_vcodec_dec.h"
 #include "mtk_vcodec_dec_pm.h"

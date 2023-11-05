@@ -7,29 +7,29 @@
 
 #define pr_fmt(fmt) "kfence: " fmt
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/debugfs.h>
-#include <linux/hash.h>
-#include <linux/irq_work.h>
-#include <linux/jhash.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/moduleparam.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/debugfs.h>
+#include <freax/hash.h>
+#include <freax/irq_work.h>
+#include <freax/jhash.h>
+#include <freax/kcsan-checks.h>
+#include <freax/kfence.h>
+#include <freax/kmemleak.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/log2.h>
+#include <freax/memblock.h>
+#include <freax/moduleparam.h>
+#include <freax/notifier.h>
+#include <freax/panic_notifier.h>
+#include <freax/random.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/clock.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
 
 #include <asm/kfence.h>
 

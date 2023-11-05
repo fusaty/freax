@@ -7,17 +7,17 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/simd.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/fips.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
 
 #include "internal.h"
 

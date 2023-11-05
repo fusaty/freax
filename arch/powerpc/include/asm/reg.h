@@ -11,8 +11,8 @@
 #define _ASM_POWERPC_REG_H
 #ifdef __KERNEL__
 
-#include <linux/stringify.h>
-#include <linux/const.h>
+#include <freax/stringify.h>
+#include <freax/const.h>
 #include <asm/cputable.h>
 #include <asm/asm-const.h>
 #include <asm/feature-fixups.h>

@@ -3,7 +3,7 @@
  * comedi_bond.c
  * A Comedi driver to 'bond' or merge multiple drivers and devices as one.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  * Copyright (C) 2005 Calin A. Culianu <calin@ajvar.org>
  */
@@ -37,12 +37,12 @@
  *   within each minor will be concatenated together in the order given here.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/comedi.h>
-#include <linux/comedi/comedilib.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/comedi.h>
+#include <freax/comedi/comedilib.h>
+#include <freax/comedi/comedidev.h>
 
 struct bonded_device {
 	struct comedi_device *dev;

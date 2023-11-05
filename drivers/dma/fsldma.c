@@ -19,20 +19,20 @@
  * on some platforms.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/fsldma.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/fsldma.h>
 #include "dmaengine.h"
 #include "fsldma.h"
 

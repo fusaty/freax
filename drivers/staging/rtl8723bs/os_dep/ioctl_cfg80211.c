@@ -5,10 +5,10 @@
  *
  ******************************************************************************/
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 #include <rtw_wifi_regd.h>
 

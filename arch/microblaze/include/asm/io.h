@@ -10,8 +10,8 @@
 
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/types.h>
-#include <linux/mm.h>          /* Get struct page {...} */
+#include <freax/types.h>
+#include <freax/mm.h>          /* Get struct page {...} */
 
 #ifndef CONFIG_PCI
 #define _IO_BASE	0

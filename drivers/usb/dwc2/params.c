@@ -3,12 +3,12 @@
  * Copyright (C) 2004-2016 Synopsys, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/usb/of.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/usb/of.h>
+#include <freax/pci_ids.h>
+#include <freax/pci.h>
 
 #include "core.h"
 

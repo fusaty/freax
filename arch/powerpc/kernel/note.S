@@ -5,7 +5,7 @@
  * Copyright 2019, IBM Corporation
  */
 
-#include <linux/elfnote.h>
+#include <freax/elfnote.h>
 #include <asm/elfnote.h>
 
 /*

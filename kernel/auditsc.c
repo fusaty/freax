@@ -14,7 +14,7 @@
  *
  * The method for actual interception of syscall entry and exit (not in
  * this file -- see entry.S) is based on a GPL'd patch written by
- * okir@suse.de and Copyright 2003 SuSE Linux AG.
+ * okir@suse.de and Copyright 2003 SuSE freax AG.
  *
  * POSIX message queue support added by George Wilson <ltcgcw@us.ibm.com>,
  * 2006.
@@ -31,40 +31,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
+#include <freax/init.h>
 #include <asm/types.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/socket.h>
-#include <linux/mqueue.h>
-#include <linux/audit.h>
-#include <linux/personality.h>
-#include <linux/time.h>
-#include <linux/netlink.h>
-#include <linux/compiler.h>
+#include <freax/atomic.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/mount.h>
+#include <freax/socket.h>
+#include <freax/mqueue.h>
+#include <freax/audit.h>
+#include <freax/personality.h>
+#include <freax/time.h>
+#include <freax/netlink.h>
+#include <freax/compiler.h>
 #include <asm/unistd.h>
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/binfmts.h>
-#include <linux/highmem.h>
-#include <linux/syscalls.h>
+#include <freax/security.h>
+#include <freax/list.h>
+#include <freax/binfmts.h>
+#include <freax/highmem.h>
+#include <freax/syscalls.h>
 #include <asm/syscall.h>
-#include <linux/capability.h>
-#include <linux/fs_struct.h>
-#include <linux/compat.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/fsnotify_backend.h>
-#include <uapi/linux/limits.h>
-#include <uapi/linux/netfilter/nf_tables.h>
-#include <uapi/linux/openat2.h> // struct open_how
-#include <uapi/linux/fanotify.h>
+#include <freax/capability.h>
+#include <freax/fs_struct.h>
+#include <freax/compat.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/fsnotify_backend.h>
+#include <uapi/freax/limits.h>
+#include <uapi/freax/netfilter/nf_tables.h>
+#include <uapi/freax/openat2.h> // struct open_how
+#include <uapi/freax/fanotify.h>
 
 #include "audit.h"
 
@@ -1692,7 +1692,7 @@ static void audit_log_exit(void)
 			return;
 		audit_log_format(ab, "arch=%x syscall=%d",
 				 context->arch, context->major);
-		if (context->personality != PER_LINUX)
+		if (context->personality != PER_freax)
 			audit_log_format(ab, " per=%lx", context->personality);
 		if (context->return_valid != AUDITSC_INVALID)
 			audit_log_format(ab, " success=%s exit=%ld",
@@ -2656,7 +2656,7 @@ void __audit_ipc_set_perm(unsigned long qbytes, uid_t uid, gid_t gid, umode_t mo
 	context->ipc.has_perm = 1;
 }
 
-void __audit_bprm(struct linux_binprm *bprm)
+void __audit_bprm(struct freax_binprm *bprm)
 {
 	struct audit_context *context = audit_context();
 
@@ -2795,7 +2795,7 @@ int audit_signal_info_syscall(struct task_struct *t)
  *
  * -Eric
  */
-int __audit_log_bprm_fcaps(struct linux_binprm *bprm,
+int __audit_log_bprm_fcaps(struct freax_binprm *bprm,
 			   const struct cred *new, const struct cred *old)
 {
 	struct audit_aux_data_bprm_fcaps *ax;

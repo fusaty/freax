@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __TOOLS_LINUX_LIST_H
-#define __TOOLS_LINUX_LIST_H
+#ifndef __TOOLS_freax_LIST_H
+#define __TOOLS_freax_LIST_H
 
-#include <linux/types.h>
-#include <linux/poison.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/poison.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
 
 /*
  * Simple doubly linked list implementation.
@@ -780,4 +780,4 @@ static inline void list_del_range(struct list_head *begin,
 #define list_for_each_from(pos, head) \
 	for (; pos != (head); pos = pos->next)
 
-#endif /* __TOOLS_LINUX_LIST_H */
+#endif /* __TOOLS_freax_LIST_H */

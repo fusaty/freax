@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/efi.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/efi.h>
+#include <freax/slab.h>
 #include <keys/asymmetric-type.h>
 #include <keys/system_keyring.h>
 #include "../integrity.h"

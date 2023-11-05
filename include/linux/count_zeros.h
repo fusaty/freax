@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_BITOPS_COUNT_ZEROS_H_
-#define _LINUX_BITOPS_COUNT_ZEROS_H_
+#ifndef _freax_BITOPS_COUNT_ZEROS_H_
+#define _freax_BITOPS_COUNT_ZEROS_H_
 
 #include <asm/bitops.h>
 
@@ -50,4 +50,4 @@ static inline int count_trailing_zeros(unsigned long x)
 		return (x != 0) ? __ffs(x) : COUNT_TRAILING_ZEROS_0;
 }
 
-#endif /* _LINUX_BITOPS_COUNT_ZEROS_H_ */
+#endif /* _freax_BITOPS_COUNT_ZEROS_H_ */

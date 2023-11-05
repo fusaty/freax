@@ -3,11 +3,11 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
 #include <sound/hda_register.h>
 #include <sound/hdaudio_ext.h>
 #include <sound/pcm_params.h>

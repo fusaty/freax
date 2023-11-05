@@ -6,18 +6,18 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 
-#include <linux/socket.h>
-#include <linux/if_vlan.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/reboot.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/smc.h>
+#include <freax/socket.h>
+#include <freax/if_vlan.h>
+#include <freax/random.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
+#include <freax/reboot.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/smc.h>
 #include <net/tcp.h>
 #include <net/sock.h>
 #include <rdma/ib_verbs.h>
@@ -2433,7 +2433,7 @@ void smc_rmb_sync_sg_for_cpu(struct smc_connection *conn)
 /* create the send and receive buffer for an SMC socket;
  * receive buffers are called RMBs;
  * (even though the SMC protocol allows more than one RMB-element per RMB,
- * the Linux implementation uses just one RMB-element per RMB, i.e. uses an
+ * the freax implementation uses just one RMB-element per RMB, i.e. uses an
  * extra RMB for every connection in a link group
  */
 int smc_buf_create(struct smc_sock *smc, bool is_smcd)

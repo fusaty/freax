@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	common UDP/RAW code
- *	Linux INET implementation
+ *	freax INET implementation
  *
  * Authors:
- * 	Hideaki YOSHIFUJI <yoshfuji@linux-ipv6.org>
+ * 	Hideaki YOSHIFUJI <yoshfuji@freax-ipv6.org>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/in.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/in.h>
 #include <net/ip.h>
 #include <net/sock.h>
 #include <net/route.h>

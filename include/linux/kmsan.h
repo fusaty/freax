@@ -6,13 +6,13 @@
  * Author: Alexander Potapenko <glider@google.com>
  *
  */
-#ifndef _LINUX_KMSAN_H
-#define _LINUX_KMSAN_H
+#ifndef _freax_KMSAN_H
+#define _freax_KMSAN_H
 
-#include <linux/dma-direction.h>
-#include <linux/gfp.h>
-#include <linux/kmsan-checks.h>
-#include <linux/types.h>
+#include <freax/dma-direction.h>
+#include <freax/gfp.h>
+#include <freax/kmsan-checks.h>
+#include <freax/types.h>
 
 struct page;
 struct kmem_cache;
@@ -331,4 +331,4 @@ static inline void kmsan_unpoison_entry_regs(const struct pt_regs *regs)
 
 #endif
 
-#endif /* _LINUX_KMSAN_H */
+#endif /* _freax_KMSAN_H */

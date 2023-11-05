@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <asm/uv/uv_hub.h>
 #if defined CONFIG_X86_64
 #include <asm/uv/bios.h>

@@ -4,7 +4,7 @@
  * Author: James.Qian.Wang <james.qian.wang@arm.com>
  *
  */
-#include <linux/of.h>
+#include <freax/of.h>
 
 #include <drm/drm_print.h>
 

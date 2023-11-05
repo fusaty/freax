@@ -4,7 +4,7 @@
 #ifndef __KCS_BMC_DEVICE_H__
 #define __KCS_BMC_DEVICE_H__
 
-#include <linux/irqreturn.h>
+#include <freax/irqreturn.h>
 
 #include "kcs_bmc.h"
 

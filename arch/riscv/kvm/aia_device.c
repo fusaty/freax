@@ -7,9 +7,9 @@
  *	Anup Patel <apatel@ventanamicro.com>
  */
 
-#include <linux/bits.h>
-#include <linux/kvm_host.h>
-#include <linux/uaccess.h>
+#include <freax/bits.h>
+#include <freax/kvm_host.h>
+#include <freax/uaccess.h>
 #include <asm/kvm_aia_imsic.h>
 
 static void unlock_vcpus(struct kvm *kvm, int vcpu_lock_idx)

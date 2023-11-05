@@ -12,10 +12,10 @@
 #ifndef _TRACEFS_H_
 #define _TRACEFS_H_
 
-#include <linux/fs.h>
-#include <linux/seq_file.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct file_operations;
 

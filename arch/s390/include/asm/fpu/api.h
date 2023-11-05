@@ -38,13 +38,13 @@
  *     registers V0 to V15 and floating-point controls.
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 
 #ifndef _ASM_S390_FPU_API_H
 #define _ASM_S390_FPU_API_H
 
-#include <linux/preempt.h>
+#include <freax/preempt.h>
 #include <asm/asm-extable.h>
 
 void save_fpu_regs(void);

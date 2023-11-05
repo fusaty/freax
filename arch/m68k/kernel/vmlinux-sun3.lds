@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* ld script to make m68k Linux kernel */
+/* ld script to make m68k freax kernel */
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>
 

@@ -5,9 +5,9 @@
  * Queued image conversion support, with tiling and rotation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/math.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/math.h>
 
 #include <video/imx-ipu-image-convert.h>
 

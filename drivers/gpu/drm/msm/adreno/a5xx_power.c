@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016 The freax Foundation. All rights reserved.
  */
 
-#include <linux/pm_opp.h>
+#include <freax/pm_opp.h>
 #include "a5xx_gpu.h"
 
 /*

@@ -11,29 +11,29 @@
  *          Chris Telfer <chris.telfer@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/mm.h>
-#include <linux/overflow.h>
-#include <linux/page_ref.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/ethtool.h>
-#include <linux/log2.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/ktime.h>
+#include <freax/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/mm.h>
+#include <freax/overflow.h>
+#include <freax/page_ref.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/ethtool.h>
+#include <freax/log2.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bridge.h>
+#include <freax/random.h>
+#include <freax/vmalloc.h>
+#include <freax/ktime.h>
 
 #include <net/tls.h>
 #include <net/vxlan.h>
@@ -1120,7 +1120,7 @@ static int nfp_net_netdev_close(struct net_device *netdev)
 {
 	struct nfp_net *nn = netdev_priv(netdev);
 
-	/* Step 1: Disable RX and TX rings from the Linux kernel perspective
+	/* Step 1: Disable RX and TX rings from the freax kernel perspective
 	 */
 	nfp_net_close_stack(nn);
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/bpfilter.h>
-#include <uapi/linux/bpf.h>
-#include <linux/wait.h>
-#include <linux/kmod.h>
-#include <linux/fs.h>
-#include <linux/file.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/bpfilter.h>
+#include <uapi/freax/bpf.h>
+#include <freax/wait.h>
+#include <freax/kmod.h>
+#include <freax/fs.h>
+#include <freax/file.h>
 
 struct bpfilter_umh_ops bpfilter_ops;
 EXPORT_SYMBOL_GPL(bpfilter_ops);

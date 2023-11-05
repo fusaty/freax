@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2008 Mark Nelson, IBM Corp.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/ppc_asm.h>

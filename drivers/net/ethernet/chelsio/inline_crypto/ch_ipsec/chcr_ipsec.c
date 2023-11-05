@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T6 Crypto driver for Linux.
+ * This file is part of the Chelsio T6 Crypto driver for freax.
  *
  * Copyright (c) 2003-2017 Chelsio Communications, Inc. All rights reserved.
  *
@@ -37,14 +37,14 @@
 
 #define pr_fmt(fmt) "ch_ipsec: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/highmem.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/highmem.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/netdevice.h>
 #include <net/esp.h>
 #include <net/xfrm.h>
 #include <crypto/aes.h>

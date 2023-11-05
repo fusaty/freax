@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/dir.c
+ *  freax/fs/affs/dir.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/iversion.h>
+#include <freax/iversion.h>
 #include "affs.h"
 
 static int affs_readdir(struct file *, struct dir_context *);

@@ -3,12 +3,12 @@
  * Copyright (C) 2017, Intel Corporation. All rights reserved.
  */
 
-#ifndef __LINUX_SND_SOC_ACPI_INTEL_MATCH_H
-#define __LINUX_SND_SOC_ACPI_INTEL_MATCH_H
+#ifndef __freax_SND_SOC_ACPI_INTEL_MATCH_H
+#define __freax_SND_SOC_ACPI_INTEL_MATCH_H
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/acpi.h>
 
 /*
  * these tables are not constants, some fields can be used for

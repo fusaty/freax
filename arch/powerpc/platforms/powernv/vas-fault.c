@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/mmu_context.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/kthread.h>
+#include <freax/sched/signal.h>
+#include <freax/mmu_context.h>
 #include <asm/icswx.h>
 
 #include "vas.h"

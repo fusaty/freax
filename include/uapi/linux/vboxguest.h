@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR CDDL-1.0) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR CDDL-1.0) */
 /*
  * VBoxGuest - VirtualBox Guest Additions Driver Interface.
  *
@@ -9,9 +9,9 @@
 #define __UAPI_VBOXGUEST_H__
 
 #include <asm/bitsperlong.h>
-#include <linux/ioctl.h>
-#include <linux/vbox_err.h>
-#include <linux/vbox_vmmdev_types.h>
+#include <freax/ioctl.h>
+#include <freax/vbox_err.h>
+#include <freax/vbox_vmmdev_types.h>
 
 /* Version of vbg_ioctl_hdr structure. */
 #define VBG_IOCTL_HDR_VERSION		0x10001

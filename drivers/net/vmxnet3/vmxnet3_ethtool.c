@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * freax driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2022, VMware, Inc. All Rights Reserved.
  *

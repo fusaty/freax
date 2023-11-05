@@ -2,8 +2,8 @@
 
 #ifndef __AUDIOREACH_H__
 #define __AUDIOREACH_H__
-#include <linux/types.h>
-#include <linux/soc/qcom/apr.h>
+#include <freax/types.h>
+#include <freax/soc/qcom/apr.h>
 #include <sound/soc.h>
 struct q6apm;
 struct q6apm_graph;

@@ -43,11 +43,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma@80000000 {
+		freax,cma@80000000 {
 			compatible = "shared-dma-pool";
 			alloc-ranges = <0x80000000 0x30000000>;
 			size = <0x10000000>; /* 256MiB */
-			linux,cma-default;
+			freax,cma-default;
 			reusable;
 		};
 
@@ -4622,7 +4622,7 @@
 		key-power {
 			gpios = <&gpio TEGRA_GPIO(V, 0) GPIO_ACTIVE_LOW>;
 			debounce-interval = <10>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
 		};
@@ -4635,7 +4635,7 @@
 			label = "power-led";
 			gpios = <&gpio TEGRA_GPIO(H, 2) GPIO_ACTIVE_HIGH>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			retain-state-suspended;
 		};
 	};

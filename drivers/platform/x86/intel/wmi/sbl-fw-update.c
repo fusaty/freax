@@ -14,12 +14,12 @@
  * https://slimbootloader.github.io/security/firmware-update.html
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/wmi.h>
 
 #define INTEL_WMI_SBL_GUID  "44FADEB1-B204-40F2-8581-394BBDC1B651"
 

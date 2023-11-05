@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight Funnel driver
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/coresight.h>
+#include <freax/amba/bus.h>
+#include <freax/clk.h>
 
 #include "coresight-priv.h"
 

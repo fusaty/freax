@@ -3,10 +3,10 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/genalloc.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
+#include <freax/genalloc.h>
+#include <freax/highmem.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
 
 #include "ivpu_drv.h"
 #include "ivpu_gem.h"

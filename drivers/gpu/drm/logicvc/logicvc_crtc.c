@@ -4,10 +4,10 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>

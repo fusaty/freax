@@ -8,7 +8,7 @@
 #include "mutex.h"
 #include "ordered-events.h"
 #include "record.h"
-#include <linux/types.h>
+#include <freax/types.h>
 #include <stddef.h>
 #include <stdbool.h>
 #include <sys/ioctl.h>
@@ -38,7 +38,7 @@ struct perf_top {
 	bool		   use_tui;
 #endif
 	bool		   use_stdio;
-	bool		   vmlinux_warned;
+	bool		   vmfreax_warned;
 	bool		   dump_symtab;
 	bool		   stitch_lbr;
 	struct hist_entry  *sym_filter_entry;

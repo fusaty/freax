@@ -8,23 +8,23 @@
  * Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/spi/spi.h>
-#include <linux/fsl_devices.h>
-#include <linux/reboot.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/major.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/export.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/spi/spi.h>
+#include <freax/fsl_devices.h>
+#include <freax/reboot.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/time.h>

@@ -5,20 +5,20 @@
  *			 <benh@kernel.crashing.org>
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/security.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/time_namespace.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/slab.h>
+#include <freax/user.h>
+#include <freax/elf.h>
+#include <freax/security.h>
+#include <freax/memblock.h>
+#include <freax/syscalls.h>
+#include <freax/time_namespace.h>
 #include <vdso/datapage.h>
 
 #include <asm/syscall.h>
@@ -167,7 +167,7 @@ static vm_fault_t vvar_fault(const struct vm_special_mapping *sm,
  * This is called from binfmt_elf, we create the special vma for the
  * vDSO and insert it into the mm struct tree
  */
-static int __arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+static int __arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	unsigned long vdso_size, vdso_base, mappings_size;
 	struct vm_special_mapping *vdso_spec;
@@ -229,7 +229,7 @@ static int __arch_setup_additional_pages(struct linux_binprm *bprm, int uses_int
 	return PTR_ERR_OR_ZERO(vma);
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int rc;

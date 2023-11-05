@@ -6,16 +6,16 @@
  * Copyright (C) 2013-2014 Marvell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mbus.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/mbus.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 /* Register definitions */
 #define ARMADA_DEV_WIDTH_SHIFT		30

@@ -6,8 +6,8 @@
 #ifndef __I915_TTM_BUDDY_MANAGER_H__
 #define __I915_TTM_BUDDY_MANAGER_H__
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 #include <drm/ttm/ttm_resource.h>
 

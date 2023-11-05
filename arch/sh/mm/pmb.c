@@ -10,23 +10,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/syscore_ops.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/vmalloc.h>
+#include <freax/pgtable.h>
 #include <asm/cacheflush.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <freax/sizes.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
 #include <asm/mmu_context.h>

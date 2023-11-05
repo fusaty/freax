@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2015, 2018, 2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2018, 2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
@@ -8,7 +8,7 @@
 #ifndef __QCOM_CLK_ALPHA_PLL_H__
 #define __QCOM_CLK_ALPHA_PLL_H__
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 #include "clk-regmap.h"
 
 /* Alpha PLL types */

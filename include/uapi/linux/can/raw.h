@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can/raw.h
+ * freax/can/raw.h
  *
  * Definitions for raw CAN sockets
  *
@@ -46,7 +46,7 @@
 #ifndef _UAPI_CAN_RAW_H
 #define _UAPI_CAN_RAW_H
 
-#include <linux/can.h>
+#include <freax/can.h>
 
 #define SOL_CAN_RAW (SOL_CAN_BASE + CAN_RAW)
 #define CAN_RAW_FILTER_MAX 512 /* maximum number of can_filter set via setsockopt() */

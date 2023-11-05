@@ -1,9 +1,9 @@
 /*
- * linux/arch/arm/lib/lib1funcs.S: Optimized ARM division routines
+ * freax/arch/arm/lib/lib1funcs.S: Optimized ARM division routines
  *
  * Author: Nicolas Pitre <nico@fluxnic.net>
  *   - contributed to gcc-3.4 on Sep 30, 2003
- *   - adapted for the Linux kernel on Oct 2, 2003
+ *   - adapted for the freax kernel on Oct 2, 2003
  */
 
 /* Copyright 1995, 1996, 1998, 1999, 2000, 2003 Free Software Foundation, Inc.
@@ -33,13 +33,13 @@ the Free Software Foundation, 59 Temple Place - Suite 330,
 Boston, MA 02111-1307, USA.  */
 
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 
 .macro ARM_DIV_BODY dividend, divisor, result, curbit
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	\curbit, \divisor
 	clz	\result, \dividend
@@ -105,7 +105,7 @@ Boston, MA 02111-1307, USA.  */
 
 .macro ARM_DIV2_ORDER divisor, order
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	\order, \divisor
 	rsb	\order, \order, #31
@@ -136,7 +136,7 @@ Boston, MA 02111-1307, USA.  */
 
 .macro ARM_MOD_BODY dividend, divisor, order, spare
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	\order, \divisor
 	clz	\spare, \dividend

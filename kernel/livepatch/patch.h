@@ -2,9 +2,9 @@
 #ifndef _LIVEPATCH_PATCH_H
 #define _LIVEPATCH_PATCH_H
 
-#include <linux/livepatch.h>
-#include <linux/list.h>
-#include <linux/ftrace.h>
+#include <freax/livepatch.h>
+#include <freax/list.h>
+#include <freax/ftrace.h>
 
 /**
  * struct klp_ops - structure for tracking registered ftrace ops structs

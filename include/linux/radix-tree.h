@@ -5,21 +5,21 @@
  * Copyright (C) 2006 Nick Piggin
  * Copyright (C) 2012 Konstantin Khlebnikov
  */
-#ifndef _LINUX_RADIX_TREE_H
-#define _LINUX_RADIX_TREE_H
+#ifndef _freax_RADIX_TREE_H
+#define _freax_RADIX_TREE_H
 
-#include <linux/bitops.h>
-#include <linux/gfp_types.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/math.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/xarray.h>
-#include <linux/local_lock.h>
+#include <freax/bitops.h>
+#include <freax/gfp_types.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/math.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/xarray.h>
+#include <freax/local_lock.h>
 
 /* Keep unconverted code working */
 #define radix_tree_root		xarray
@@ -469,4 +469,4 @@ static __always_inline void __rcu **radix_tree_next_slot(void __rcu **slot,
 	     slot = radix_tree_next_slot(slot, iter,			\
 				RADIX_TREE_ITER_TAGGED | tag))
 
-#endif /* _LINUX_RADIX_TREE_H */
+#endif /* _freax_RADIX_TREE_H */

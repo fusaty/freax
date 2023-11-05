@@ -26,7 +26,7 @@
 #define PM_PFRAME_MASK		~((1UL << PM_PFRAME_BITS) - 1)
 
 /*
- * For ia64 architecture, Linux kernel reserves Region number 4 for hugepages.
+ * For ia64 architecture, freax kernel reserves Region number 4 for hugepages.
  * That means the addresses starting with 0x800000... will need to be
  * specified.  Specifying a fixed address is not required on ppc64, i386
  * or x86_64.

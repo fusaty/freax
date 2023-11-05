@@ -11,16 +11,16 @@
  *      511-000136-01-Rev-E-RMI4-Interfacing-Guide.pdf
  */
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <uapi/linux/input.h>
-#include <linux/rmi.h>
+#include <freax/bitmap.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/irq.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/irqdomain.h>
+#include <uapi/freax/input.h>
+#include <freax/rmi.h>
 #include "rmi_bus.h"
 #include "rmi_driver.h"
 

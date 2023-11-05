@@ -17,11 +17,11 @@
 #include <media/media-entity.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/wait.h>
 
 #include "omap3isp.h"
 #include "ispstat.h"

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/etherdevice.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/etherdevice.h>
+#include <freax/of_address.h>
 #include <asm/prom.h>
 
 void of_parse_dma_window(struct device_node *dn, const __be32 *dma_window,

@@ -6,15 +6,15 @@
  * Copyright (C) 2010 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/pm_opp.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/pm_opp.h>
+#include <freax/export.h>
+#include <freax/suspend.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
 
 #include <asm/system_misc.h>
 

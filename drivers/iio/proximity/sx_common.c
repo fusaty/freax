@@ -5,27 +5,27 @@
  * Common part of most Semtech SAR sensor.
  */
 
-#include <linux/bitops.h>
-#include <linux/byteorder/generic.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bitops.h>
+#include <freax/byteorder/generic.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/irqreturn.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 #include <vdso/bits.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #include "sx_common.h"
 

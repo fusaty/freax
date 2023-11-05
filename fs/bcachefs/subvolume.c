@@ -9,7 +9,7 @@
 #include "snapshot.h"
 #include "subvolume.h"
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 static int bch2_subvolume_delete(struct btree_trans *, u32);
 

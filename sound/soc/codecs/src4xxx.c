@@ -5,7 +5,7 @@
 // Copyright 2021-2022 Deqx Pty Ltd
 // Author: Matt Flax <flatmax@flatmax.com>
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <sound/soc.h>
 #include <sound/tlv.h>

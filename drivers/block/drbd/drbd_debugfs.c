@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "drbd debugfs: " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/stat.h>
+#include <freax/jiffies.h>
+#include <freax/list.h>
 
 #include "drbd_int.h"
 #include "drbd_req.h"

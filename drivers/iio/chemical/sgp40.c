@@ -24,12 +24,12 @@
  * by writing to the out values of temp and humidityrelative.
  */
 
-#include <linux/delay.h>
-#include <linux/crc8.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <freax/delay.h>
+#include <freax/crc8.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
 
 /*
  * floating point calculation of voc is done as integer

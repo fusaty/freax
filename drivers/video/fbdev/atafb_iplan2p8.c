@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/iplan2p8.c -- Low level frame buffer operations for
+ *  freax/drivers/video/iplan2p8.c -- Low level frame buffer operations for
  *				      interleaved bitplanes à la Atari (8
  *				      planes, 2 bytes interleave)
  *
@@ -10,8 +10,8 @@
  *  more details.
  */
 
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <freax/string.h>
+#include <freax/fb.h>
 
 #include <asm/setup.h>
 

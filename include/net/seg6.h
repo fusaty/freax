@@ -9,10 +9,10 @@
 #ifndef _NET_SEG6_H
 #define _NET_SEG6_H
 
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/seg6.h>
-#include <linux/rhashtable-types.h>
+#include <freax/net.h>
+#include <freax/ipv6.h>
+#include <freax/seg6.h>
+#include <freax/rhashtable-types.h>
 
 static inline void update_csum_diff4(struct sk_buff *skb, __be32 from,
 				     __be32 to)

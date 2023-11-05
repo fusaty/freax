@@ -5,26 +5,26 @@
  * Copyright (c) 2013, Stephen Warren
  *
  * Based on q40fb.c, which was:
- * Copyright (C) 2001 Richard Zidlicky <rz@linux-m68k.org>
+ * Copyright (C) 2001 Richard Zidlicky <rz@freax-m68k.org>
  *
  * Also based on offb.c, which was:
  * Copyright (C) 1997 Geert Uytterhoeven
  * Copyright (C) 1996 Paul Mackerras
  */
 
-#include <linux/aperture.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_platform.h>
-#include <linux/parser.h>
-#include <linux/regulator/consumer.h>
+#include <freax/aperture.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_data/simplefb.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/of_platform.h>
+#include <freax/parser.h>
+#include <freax/regulator/consumer.h>
 
 static const struct fb_fix_screeninfo simplefb_fix = {
 	.id		= "simple",

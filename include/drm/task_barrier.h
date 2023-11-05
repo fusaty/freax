@@ -20,8 +20,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/semaphore.h>
-#include <linux/atomic.h>
+#include <freax/semaphore.h>
+#include <freax/atomic.h>
 
 /*
  * Reusable 2 PHASE task barrier (rendez-vous point) implementation for N tasks.

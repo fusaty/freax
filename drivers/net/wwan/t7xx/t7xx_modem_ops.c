@@ -7,7 +7,7 @@
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
@@ -15,21 +15,21 @@
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/kthread.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
+#include <freax/io.h>
+#include <freax/irqreturn.h>
+#include <freax/kthread.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include "t7xx_cldma.h"
 #include "t7xx_hif_cldma.h"

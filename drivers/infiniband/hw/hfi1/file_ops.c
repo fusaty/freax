@@ -4,12 +4,12 @@
  * Copyright(c) 2015-2020 Intel Corporation.
  */
 
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/sched/mm.h>
-#include <linux/bitmap.h>
+#include <freax/poll.h>
+#include <freax/cdev.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
+#include <freax/sched/mm.h>
+#include <freax/bitmap.h>
 
 #include <rdma/ib.h>
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/kvm_csr.h>
 #include <asm/kvm_vcpu.h>
 

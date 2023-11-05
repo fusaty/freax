@@ -8,8 +8,8 @@
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_plane.h>
-#include <linux/io.h>
-#include <linux/pm.h>
+#include <freax/io.h>
+#include <freax/pm.h>
 #include <video/videomode.h>
 
 #define SET			0x04

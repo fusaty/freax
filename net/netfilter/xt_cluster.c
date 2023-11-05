@@ -3,15 +3,15 @@
  * (C) 2008-2009 Pablo Neira Ayuso <pablo@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/jhash.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/jhash.h>
+#include <freax/ip.h>
 #include <net/ipv6.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/x_tables.h>
 #include <net/netfilter/nf_conntrack.h>
-#include <linux/netfilter/xt_cluster.h>
+#include <freax/netfilter/xt_cluster.h>
 
 static inline u32 nf_ct_orig_ipv4_src(const struct nf_conn *ct)
 {

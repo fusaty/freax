@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for freax.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,9 +32,9 @@
  * SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport_fc.h>
 

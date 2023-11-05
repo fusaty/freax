@@ -5,19 +5,19 @@
  * Copyright (C) 2019-2020 Antmicro <www.antmicro.com>
  */
 
-#include <linux/bits.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/litex.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/xarray.h>
+#include <freax/bits.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
+#include <freax/litex.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/tty_flip.h>
+#include <freax/xarray.h>
 
 /*
  * CSRs definitions (base address offsets + width)

@@ -124,28 +124,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
-#include <linux/rtnetlink.h>
+#include <freax/hardirq.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/mii.h>
+#include <freax/if_vlan.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/string.h>
+#include <freax/firmware.h>
+#include <freax/rtnetlink.h>
 #include <asm/unaligned.h>
 
 

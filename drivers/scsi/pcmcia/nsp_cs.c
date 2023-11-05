@@ -25,18 +25,18 @@
 
 ***********************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/stat.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/major.h>
+#include <freax/blkdev.h>
+#include <freax/stat.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

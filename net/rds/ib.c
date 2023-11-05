@@ -30,15 +30,15 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/in.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/if_arp.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <net/addrconf.h>
 
 #include "rds_single_path.h"

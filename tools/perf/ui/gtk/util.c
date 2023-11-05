@@ -4,7 +4,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 struct perf_gtk_context *pgctx;
 

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020 The freax Foundation. All rights reserved.
  */
 
-#include <linux/relay.h>
+#include <freax/relay.h>
 #include "core.h"
 #include "debug.h"
 

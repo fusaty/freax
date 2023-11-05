@@ -4,12 +4,12 @@
  * Copyright (c) 2014-2015 Jiri Pirko <jiri@resnulli.us>
  * Copyright (c) 2014-2015 Scott Feldman <sfeldma@gmail.com>
  */
-#ifndef _LINUX_SWITCHDEV_H_
-#define _LINUX_SWITCHDEV_H_
+#ifndef _freax_SWITCHDEV_H_
+#define _freax_SWITCHDEV_H_
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/list.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/list.h>
 #include <net/ip_fib.h>
 
 #define SWITCHDEV_F_NO_RECURSE		BIT(0)
@@ -522,4 +522,4 @@ switchdev_handle_port_attr_set(struct net_device *dev,
 }
 #endif
 
-#endif /* _LINUX_SWITCHDEV_H_ */
+#endif /* _freax_SWITCHDEV_H_ */

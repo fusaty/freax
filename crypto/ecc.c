@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2013, 2014 Kenneth MacKay. All rights reserved.
- * Copyright (c) 2019 Vitaly Chikunov <vt@altlinux.org>
+ * Copyright (c) 2019 Vitaly Chikunov <vt@altfreax.org>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -25,16 +25,16 @@
  */
 
 #include <crypto/ecc_curve.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
-#include <linux/fips.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/swab.h>
+#include <freax/fips.h>
 #include <crypto/ecdh.h>
 #include <crypto/rng.h>
 #include <crypto/internal/ecc.h>
 #include <asm/unaligned.h>
-#include <linux/ratelimit.h>
+#include <freax/ratelimit.h>
 
 #include "ecc_curve_defs.h"
 

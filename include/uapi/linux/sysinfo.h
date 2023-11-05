@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_SYSINFO_H
-#define _LINUX_SYSINFO_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_SYSINFO_H
+#define _freax_SYSINFO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SI_LOAD_SHIFT	16
 struct sysinfo {
@@ -22,4 +22,4 @@ struct sysinfo {
 	char _f[20-2*sizeof(__kernel_ulong_t)-sizeof(__u32)];	/* Padding: libc5 uses this.. */
 };
 
-#endif /* _LINUX_SYSINFO_H */
+#endif /* _freax_SYSINFO_H */

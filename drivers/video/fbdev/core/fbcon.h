@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon.h -- Low level frame buffer based console driver
+ *  freax/drivers/video/console/fbcon.h -- Low level frame buffer based console driver
  *
  *	Copyright (C) 1997 Geert Uytterhoeven
  *
@@ -11,10 +11,10 @@
 #ifndef _VIDEO_FBCON_H
 #define _VIDEO_FBCON_H
 
-#include <linux/types.h>
-#include <linux/vt_buffer.h>
-#include <linux/vt_kern.h>
-#include <linux/workqueue.h>
+#include <freax/types.h>
+#include <freax/vt_buffer.h>
+#include <freax/vt_kern.h>
+#include <freax/workqueue.h>
 
 #include <asm/io.h>
 

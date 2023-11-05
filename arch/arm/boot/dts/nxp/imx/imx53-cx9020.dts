@@ -102,12 +102,12 @@
 		};
 
 		led-sd1-b {
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 			gpios = <&gpio3 20 GPIO_ACTIVE_HIGH>;
 		};
 
 		led-sd2-b {
-			linux,default-trigger = "mmc1";
+			freax,default-trigger = "mmc1";
 			gpios = <&gpio3 17 GPIO_ACTIVE_HIGH>;
 		};
 	};

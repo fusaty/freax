@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) "tad_pmu: " fmt
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/cpuhotplug.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/cpuhotplug.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
 
 #define TAD_PFC_OFFSET		0x800
 #define TAD_PFC(counter)	(TAD_PFC_OFFSET | (counter << 3))

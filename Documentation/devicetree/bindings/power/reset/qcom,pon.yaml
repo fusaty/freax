@@ -109,7 +109,7 @@ allOf:
 examples:
   - |
    #include <dt-bindings/interrupt-controller/irq.h>
-   #include <dt-bindings/input/linux-event-codes.h>
+   #include <dt-bindings/input/freax-event-codes.h>
    #include <dt-bindings/spmi/spmi.h>
    spmi_bus: spmi@c440000 {
      reg = <0x0c440000 0x1100>;
@@ -128,7 +128,7 @@ examples:
             interrupts = < 0x0 0x8 0 IRQ_TYPE_EDGE_BOTH >;
             debounce = <15625>;
             bias-pull-up;
-            linux,code = <KEY_POWER>;
+            freax,code = <KEY_POWER>;
          };
 
          resin {
@@ -136,7 +136,7 @@ examples:
             interrupts = <0x0 0x8 1 IRQ_TYPE_EDGE_BOTH>;
             debounce = <15625>;
             bias-pull-up;
-            linux,code = <KEY_VOLUMEDOWN>;
+            freax,code = <KEY_VOLUMEDOWN>;
          };
        };
      };

@@ -54,7 +54,7 @@
 
 		key-vol-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -67,7 +67,7 @@
 			function = LED_FUNCTION_INDICATOR;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pm8998_gpios 13 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "panic-indicator";
+			freax,default-trigger = "panic-indicator";
 			default-state = "off";
 		};
 
@@ -76,7 +76,7 @@
 			function = LED_FUNCTION_WLAN;
 			color = <LED_COLOR_ID_YELLOW>;
 			gpios = <&pm8998_gpios 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			freax,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
@@ -85,7 +85,7 @@
 			function = LED_FUNCTION_BLUETOOTH;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&pm8998_gpios 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			freax,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 	};
@@ -667,7 +667,7 @@
 };
 
 &pm8998_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 
@@ -682,7 +682,7 @@
 		function = LED_FUNCTION_HEARTBEAT;
 		function-enumerator = <3>;
 
-		linux,default-trigger = "heartbeat";
+		freax,default-trigger = "heartbeat";
 		default-state = "on";
 	};
 

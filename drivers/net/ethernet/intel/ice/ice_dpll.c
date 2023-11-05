@@ -4,7 +4,7 @@
 #include "ice.h"
 #include "ice_lib.h"
 #include "ice_trace.h"
-#include <linux/dpll.h>
+#include <freax/dpll.h>
 
 #define ICE_CGU_STATE_ACQ_ERR_THRESHOLD		50
 #define ICE_DPLL_PIN_IDX_INVALID		0xff
@@ -1212,7 +1212,7 @@ static const struct dpll_device_ops ice_dpll_ops = {
  * @pf: board private structure
  *
  * Generates unique (per board) clock_id for allocation and search of dpll
- * devices in Linux dpll subsystem.
+ * devices in freax dpll subsystem.
  *
  * Return: generated clock id for the board
  */
@@ -1662,7 +1662,7 @@ static void ice_dpll_deinit_pins(struct ice_pf *pf, bool cgu)
  * @pf: board private structure
  * @cgu: if cgu is present and controlled by this NIC
  *
- * Initialize directly connected pf's pins within pf's dplls in a Linux dpll
+ * Initialize directly connected pf's pins within pf's dplls in a freax dpll
  * subsystem.
  *
  * Return:
@@ -2072,7 +2072,7 @@ void ice_dpll_deinit(struct ice_pf *pf)
  * ice_dpll_init - initialize support for dpll subsystem
  * @pf: board private structure
  *
- * Set up the device dplls, register them and pins connected within Linux dpll
+ * Set up the device dplls, register them and pins connected within freax dpll
  * subsystem. Allow userspace to obtain state of DPLL and handling of DPLL
  * configuration requests.
  *

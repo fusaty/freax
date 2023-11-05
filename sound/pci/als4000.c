@@ -51,12 +51,12 @@
  * - power management? (card can do voice wakeup according to datasheet!!)
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/gameport.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/gameport.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/rawmidi.h>

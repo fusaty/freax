@@ -36,13 +36,13 @@
  * T	Tip
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/usb/input.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
 
 /* USB HID defines */
 #define USB_REQ_GET_REPORT		0x01

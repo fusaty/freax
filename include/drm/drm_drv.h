@@ -1,6 +1,6 @@
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA freax Systems, Inc., Sunnyvale, California.
  * Copyright (c) 2009-2010, Code Aurora Forum.
  * Copyright 2016 Intel Corp.
  *
@@ -18,7 +18,7 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA freax SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
@@ -27,8 +27,8 @@
 #ifndef _DRM_DRV_H_
 #define _DRM_DRV_H_
 
-#include <linux/list.h>
-#include <linux/irqreturn.h>
+#include <freax/list.h>
+#include <freax/irqreturn.h>
 
 #include <video/nomodeset.h>
 

@@ -5,9 +5,9 @@
  * Copyright (C) 2015, Marvell International Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/of_gpio.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 #include "nfcmrvl.h"

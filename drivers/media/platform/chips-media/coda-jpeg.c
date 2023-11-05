@@ -6,12 +6,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
-#include <linux/videodev2.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
+#include <freax/swab.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-fh.h>

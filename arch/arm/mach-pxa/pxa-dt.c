@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa-dt.c
+ *  freax/arch/arm/mach-pxa/pxa-dt.c
  *
  *  Copyright (C) 2012 Daniel Mack
  */

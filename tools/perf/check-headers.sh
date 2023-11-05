@@ -6,33 +6,33 @@ NC='\033[0m' # No Color
 
 declare -a FILES
 FILES=(
-  "include/uapi/linux/const.h"
+  "include/uapi/freax/const.h"
   "include/uapi/drm/drm.h"
   "include/uapi/drm/i915_drm.h"
-  "include/uapi/linux/fadvise.h"
-  "include/uapi/linux/fcntl.h"
-  "include/uapi/linux/fs.h"
-  "include/uapi/linux/fscrypt.h"
-  "include/uapi/linux/kcmp.h"
-  "include/uapi/linux/kvm.h"
-  "include/uapi/linux/in.h"
-  "include/uapi/linux/mount.h"
-  "include/uapi/linux/openat2.h"
-  "include/uapi/linux/perf_event.h"
-  "include/uapi/linux/prctl.h"
-  "include/uapi/linux/sched.h"
-  "include/uapi/linux/seccomp.h"
-  "include/uapi/linux/stat.h"
-  "include/uapi/linux/usbdevice_fs.h"
-  "include/uapi/linux/vhost.h"
+  "include/uapi/freax/fadvise.h"
+  "include/uapi/freax/fcntl.h"
+  "include/uapi/freax/fs.h"
+  "include/uapi/freax/fscrypt.h"
+  "include/uapi/freax/kcmp.h"
+  "include/uapi/freax/kvm.h"
+  "include/uapi/freax/in.h"
+  "include/uapi/freax/mount.h"
+  "include/uapi/freax/openat2.h"
+  "include/uapi/freax/perf_event.h"
+  "include/uapi/freax/prctl.h"
+  "include/uapi/freax/sched.h"
+  "include/uapi/freax/seccomp.h"
+  "include/uapi/freax/stat.h"
+  "include/uapi/freax/usbdevice_fs.h"
+  "include/uapi/freax/vhost.h"
   "include/uapi/sound/asound.h"
-  "include/linux/bits.h"
+  "include/freax/bits.h"
   "include/vdso/bits.h"
-  "include/linux/const.h"
+  "include/freax/const.h"
   "include/vdso/const.h"
-  "include/linux/hash.h"
-  "include/linux/list-sort.h"
-  "include/uapi/linux/hw_breakpoint.h"
+  "include/freax/hash.h"
+  "include/freax/list-sort.h"
+  "include/uapi/freax/hw_breakpoint.h"
   "arch/x86/include/asm/disabled-features.h"
   "arch/x86/include/asm/required-features.h"
   "arch/x86/include/asm/cpufeatures.h"
@@ -74,7 +74,7 @@ FILES=(
   "include/asm-generic/bitops/__fls.h"
   "include/asm-generic/bitops/fls.h"
   "include/asm-generic/bitops/fls64.h"
-  "include/linux/coresight-pmu.h"
+  "include/freax/coresight-pmu.h"
   "include/uapi/asm-generic/errno.h"
   "include/uapi/asm-generic/errno-base.h"
   "include/uapi/asm-generic/ioctls.h"
@@ -97,7 +97,7 @@ SYNC_CHECK_FILES=(
 
 declare -a BEAUTY_FILES
 BEAUTY_FILES=(
-  "include/linux/socket.h"
+  "include/freax/socket.h"
 )
 
 declare -a FAILURES
@@ -158,17 +158,17 @@ do
 done
 
 # diff with extra ignore lines
-check arch/x86/lib/memcpy_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memcpy_\(erms\|orig\))" -I"^#include <linux/cfi_types.h>"'
+check arch/x86/lib/memcpy_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memcpy_\(erms\|orig\))" -I"^#include <freax/cfi_types.h>"'
 check arch/x86/lib/memset_64.S        '-I "^EXPORT_SYMBOL" -I "^#include <asm/export.h>" -I"^SYM_FUNC_START\(_LOCAL\)*(memset_\(erms\|orig\))"'
 check arch/x86/include/asm/amd-ibs.h  '-I "^#include [<\"]\(asm/\)*msr-index.h"'
 check arch/arm64/include/asm/cputype.h '-I "^#include [<\"]\(asm/\)*sysreg.h"'
-check include/asm-generic/unaligned.h '-I "^#include <linux/unaligned/packed_struct.h>" -I "^#include <asm/byteorder.h>" -I "^#pragma GCC diagnostic"'
+check include/asm-generic/unaligned.h '-I "^#include <freax/unaligned/packed_struct.h>" -I "^#include <asm/byteorder.h>" -I "^#pragma GCC diagnostic"'
 check include/uapi/asm-generic/mman.h '-I "^#include <\(uapi/\)*asm-generic/mman-common\(-tools\)*.h>"'
-check include/uapi/linux/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
-check include/linux/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
-check include/linux/ctype.h	      '-I "isdigit("'
-check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <linux/export.h>" -B'
-check lib/list_sort.c		      '-I "^#include <linux/bug.h>"'
+check include/uapi/freax/mman.h       '-I "^#include <\(uapi/\)*asm/mman.h>"'
+check include/freax/build_bug.h       '-I "^#\(ifndef\|endif\)\( \/\/\)* static_assert$"'
+check include/freax/ctype.h	      '-I "isdigit("'
+check lib/ctype.c		      '-I "^EXPORT_SYMBOL" -I "^#include <freax/export.h>" -B'
+check lib/list_sort.c		      '-I "^#include <freax/bug.h>"'
 
 # diff non-symmetric files
 check_2 tools/perf/arch/x86/entry/syscalls/syscall_64.tbl arch/x86/entry/syscalls/syscall_64.tbl

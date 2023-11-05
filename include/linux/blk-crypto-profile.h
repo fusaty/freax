@@ -3,11 +3,11 @@
  * Copyright 2019 Google LLC
  */
 
-#ifndef __LINUX_BLK_CRYPTO_PROFILE_H
-#define __LINUX_BLK_CRYPTO_PROFILE_H
+#ifndef __freax_BLK_CRYPTO_PROFILE_H
+#define __freax_BLK_CRYPTO_PROFILE_H
 
-#include <linux/bio.h>
-#include <linux/blk-crypto.h>
+#include <freax/bio.h>
+#include <freax/blk-crypto.h>
 
 struct blk_crypto_profile;
 
@@ -152,4 +152,4 @@ bool blk_crypto_has_capabilities(const struct blk_crypto_profile *target,
 void blk_crypto_update_capabilities(struct blk_crypto_profile *dst,
 				    const struct blk_crypto_profile *src);
 
-#endif /* __LINUX_BLK_CRYPTO_PROFILE_H */
+#endif /* __freax_BLK_CRYPTO_PROFILE_H */

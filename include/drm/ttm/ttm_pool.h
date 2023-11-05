@@ -26,9 +26,9 @@
 #ifndef _TTM_PAGE_POOL_H_
 #define _TTM_PAGE_POOL_H_
 
-#include <linux/mmzone.h>
-#include <linux/llist.h>
-#include <linux/spinlock.h>
+#include <freax/mmzone.h>
+#include <freax/llist.h>
+#include <freax/spinlock.h>
 #include <drm/ttm/ttm_caching.h>
 
 struct device;

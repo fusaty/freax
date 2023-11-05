@@ -7,16 +7,16 @@
  * This driver was based on: drivers/watchdog/rt2880_wdt.c
  */
 
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/watchdog.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #define SYSC_RSTSTAT			0x38
 #define WDT_RST_CAUSE			BIT(1)

@@ -8,8 +8,8 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include "ibmasm.h"
 #include "lowlevel.h"
 

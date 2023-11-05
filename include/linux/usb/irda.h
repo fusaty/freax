@@ -3,8 +3,8 @@
  * USB IrDA Bridge Device Definition
  */
 
-#ifndef __LINUX_USB_IRDA_H
-#define __LINUX_USB_IRDA_H
+#ifndef __freax_USB_IRDA_H
+#define __freax_USB_IRDA_H
 
 /* This device should use Application-specific class */
 
@@ -159,5 +159,5 @@ struct usb_irda_outbound_header {
 	__u8		bmChange;
 };
 
-#endif /* __LINUX_USB_IRDA_H */
+#endif /* __freax_USB_IRDA_H */
 

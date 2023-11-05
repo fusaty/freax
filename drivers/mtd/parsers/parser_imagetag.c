@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcm963xx_tag.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
+#include <freax/bcm963xx_tag.h>
+#include <freax/crc32.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
 
 /* Ensure strings read from flash structs are null terminated */
 #define STR_NULL_TERMINATE(x) \
@@ -60,7 +60,7 @@ static int bcm963xx_parse_imagetag_partitions(struct mtd_info *master,
 					const struct mtd_partition **pparts,
 					struct mtd_part_parser_data *data)
 {
-	/* CFE, NVRAM and global Linux are always present */
+	/* CFE, NVRAM and global freax are always present */
 	int nrparts = 0, curpart = 0;
 	struct bcm_tag *buf = NULL;
 	struct mtd_partition *parts;

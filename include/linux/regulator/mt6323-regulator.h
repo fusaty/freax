@@ -4,8 +4,8 @@
  * Author: Chen Zhong <chen.zhong@mediatek.com>
  */
 
-#ifndef __LINUX_REGULATOR_MT6323_H
-#define __LINUX_REGULATOR_MT6323_H
+#ifndef __freax_REGULATOR_MT6323_H
+#define __freax_REGULATOR_MT6323_H
 
 enum {
 	MT6323_ID_VPROC = 0,
@@ -41,4 +41,4 @@ enum {
 
 #define MT6323_MAX_REGULATOR	MT6323_ID_RG_MAX
 
-#endif /* __LINUX_REGULATOR_MT6323_H */
+#endif /* __freax_REGULATOR_MT6323_H */

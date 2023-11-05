@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* Copyright (C) 2021 ROHM Semiconductors */
 
-#ifndef __LINUX_MFD_BD957X_H__
-#define __LINUX_MFD_BD957X_H__
+#ifndef __freax_MFD_BD957X_H__
+#define __freax_MFD_BD957X_H__
 
 enum {
 	BD957X_VD50,

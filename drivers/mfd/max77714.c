@@ -6,13 +6,13 @@
  * Author: Luca Ceresoli <luca.ceresoli@bootlin.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77714.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max77714.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 static const struct mfd_cell max77714_cells[] = {
 	{ .name = "max77714-watchdog" },

@@ -20,19 +20,19 @@
  */
 
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
-#include <linux/module.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/usb.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/audio-v2.h>
+#include <freax/usb/audio-v3.h>
+#include <freax/module.h>
 
 #include <sound/control.h>
 #include <sound/core.h>
@@ -1152,7 +1152,7 @@ static const struct usb_device_id usb_audio_ids [] = {
 MODULE_DEVICE_TABLE(usb, usb_audio_ids);
 
 /*
- * entry point for linux usb interface
+ * entry point for freax usb interface
  */
 
 static struct usb_driver usb_audio_driver = {

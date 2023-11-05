@@ -6,15 +6,15 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <media/rc-core.h>
-#include <linux/bsearch.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <freax/bsearch.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
+#include <freax/device.h>
+#include <freax/module.h>
 #include "rc-core-priv.h"
 
 /* Sizes are in bytes, 256 bytes allows for 32 entries on x64 */

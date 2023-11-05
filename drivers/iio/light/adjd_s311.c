@@ -10,20 +10,20 @@
  * limitations: no calibration, no offset mode, no sleep mode
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/bitmap.h>
+#include <freax/err.h>
+#include <freax/irq.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define ADJD_S311_DRV_NAME "adjd_s311"
 

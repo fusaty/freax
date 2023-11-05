@@ -7,11 +7,11 @@
  * Copyright (c) 2004 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include "pcxhr.h"
 #include "pcxhr_mixer.h"

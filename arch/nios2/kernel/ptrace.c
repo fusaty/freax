@@ -7,16 +7,16 @@
  * archive for more details.
  */
 
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
+#include <freax/elf.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/ptrace.h>
+#include <freax/regset.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/uaccess.h>
+#include <freax/user.h>
 
 static int genregs_get(struct task_struct *target,
 		       const struct user_regset *regset,
@@ -87,7 +87,7 @@ static int genregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on Nios2 under Linux
+ * Define the register sets available on Nios2 under freax
  */
 enum nios2_regset {
 	REGSET_GENERAL,

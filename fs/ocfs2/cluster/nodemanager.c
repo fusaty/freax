@@ -3,10 +3,10 @@
  * Copyright (C) 2004, 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/configfs.h>
 
 #include "tcp.h"
 #include "nodemanager.h"

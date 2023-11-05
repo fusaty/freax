@@ -5,12 +5,12 @@
  * Copyright (C) 2015, Marvell International Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/nfc.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/nfc.h>
+#include <freax/delay.h>
+#include <freax/of_irq.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 #include "nfcmrvl.h"

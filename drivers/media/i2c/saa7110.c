@@ -9,18 +9,18 @@
  *    - some corrections for Pinnacle Systems Inc. DC10plus card.
  *
  * Changes by Ronald Bultje <rbultje@ronald.bitfreak.net>
- *    - moved over to linux>=2.4.x i2c protocol (1/1/2003)
+ *    - moved over to freax>=2.4.x i2c protocol (1/1/2003)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/uaccess.h>
+#include <freax/i2c.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 

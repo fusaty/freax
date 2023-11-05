@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BCM963XX_TAG_H__
-#define __LINUX_BCM963XX_TAG_H__
+#ifndef __freax_BCM963XX_TAG_H__
+#define __freax_BCM963XX_TAG_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define TAGVER_LEN		4	/* Length of Tag Version */
 #define TAGLAYOUT_LEN		4	/* Length of FlashLayoutVer */
@@ -100,4 +100,4 @@ struct bcm_tag {
 	char reserved2[16];
 };
 
-#endif /* __LINUX_BCM63XX_TAG_H__ */
+#endif /* __freax_BCM63XX_TAG_H__ */

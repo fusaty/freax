@@ -9,12 +9,12 @@
  * Copyright (C) 2002 Hewlett-Packard Company
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/uaccess.h>
 
 /*
  * "IKCFG_ST" and "IKCFG_ED" are used to extract the config data from

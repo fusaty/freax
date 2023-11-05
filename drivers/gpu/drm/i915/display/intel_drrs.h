@@ -6,7 +6,7 @@
 #ifndef __INTEL_DRRS_H__
 #define __INTEL_DRRS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum drrs_type;
 struct drm_i915_private;

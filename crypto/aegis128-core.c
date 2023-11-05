@@ -11,12 +11,12 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
 
 #include <asm/simd.h>
 

@@ -5,11 +5,11 @@
  * Copyright (C) 2010 Vivek Goyal <vgoyal@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/blktrace_api.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/blktrace_api.h>
 #include "blk.h"
 #include "blk-cgroup-rwstat.h"
 #include "blk-stat.h"

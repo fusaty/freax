@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * JMicron JMC2x0 series PCIe Ethernet Linux Device Driver
+ * JMicron JMC2x0 series PCIe Ethernet freax Device Driver
  *
  * Copyright 2008 JMicron Technology Corporation
  * https://www.jmicron.com/
@@ -11,24 +11,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/if_vlan.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
 #include <net/ip6_checksum.h>
 #include "jme.h"
 

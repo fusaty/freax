@@ -9,8 +9,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include "internal.h"
 
 struct kmem_cache *fscache_cookie_jar;

@@ -5,8 +5,8 @@
  * Copyright (C) 2006-2008 David Brownell
  */
 
-#ifndef	__LINUX_USB_COMPOSITE_H
-#define	__LINUX_USB_COMPOSITE_H
+#ifndef	__freax_USB_COMPOSITE_H
+#define	__freax_USB_COMPOSITE_H
 
 /*
  * This framework is an optional layer on top of the USB Gadget interface,
@@ -21,13 +21,13 @@
  * the composite model the host can use both functions at the same time.
  */
 
-#include <linux/bcd.h>
-#include <linux/version.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/webusb.h>
-#include <linux/log2.h>
-#include <linux/configfs.h>
+#include <freax/bcd.h>
+#include <freax/version.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/webusb.h>
+#include <freax/log2.h>
+#include <freax/configfs.h>
 
 /*
  * USB function drivers should return USB_GADGET_DELAYED_STATUS if they
@@ -566,8 +566,8 @@ static inline u16 get_default_bcdDevice(void)
 {
 	u16 bcdDevice;
 
-	bcdDevice = bin2bcd(LINUX_VERSION_MAJOR) << 8;
-	bcdDevice |= bin2bcd(LINUX_VERSION_PATCHLEVEL);
+	bcdDevice = bin2bcd(freax_VERSION_MAJOR) << 8;
+	bcdDevice |= bin2bcd(freax_VERSION_PATCHLEVEL);
 	return bcdDevice;
 }
 
@@ -635,4 +635,4 @@ void usb_remove_function(struct usb_configuration *c, struct usb_function *f);
 #define INFO(d, fmt, args...) \
 	dev_info(&(d)->gadget->dev , fmt , ## args)
 
-#endif	/* __LINUX_USB_COMPOSITE_H */
+#endif	/* __freax_USB_COMPOSITE_H */

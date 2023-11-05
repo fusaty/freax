@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* Copyright (C) 2019 ROHM Semiconductors */
 
-#ifndef __LINUX_MFD_BD71828_H__
-#define __LINUX_MFD_BD71828_H__
+#ifndef __freax_MFD_BD71828_H__
+#define __freax_MFD_BD71828_H__
 
-#include <linux/mfd/rohm-generic.h>
-#include <linux/mfd/rohm-shared.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/mfd/rohm-shared.h>
 
 /* Regulator IDs */
 enum {
@@ -423,4 +423,4 @@ enum {
 #define BD71828_OUT_TYPE_OPEN_DRAIN			0x0
 #define BD71828_OUT_TYPE_CMOS				0x2
 
-#endif /* __LINUX_MFD_BD71828_H__ */
+#endif /* __freax_MFD_BD71828_H__ */

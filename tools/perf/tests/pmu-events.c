@@ -6,8 +6,8 @@
 #include "tests.h"
 #include <errno.h>
 #include <stdio.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 #include "debug.h"
 #include "../pmu-events/pmu-events.h"
 #include <perf/evlist.h>

@@ -43,13 +43,13 @@
 
 		reset {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&gpionb 14 GPIO_ACTIVE_LOW>;
 		};
 
 		switch {
 			label = "switch";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&gpiosb 22 GPIO_ACTIVE_LOW>;
 		};
 	};

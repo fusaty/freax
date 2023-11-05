@@ -3,13 +3,13 @@
  * Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
  *
  * Authors: Cezary Rojewski <cezary.rojewski@intel.com>
- *          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+ *          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
  */
 
 #ifndef __SOUND_SOC_INTEL_AVS_REGS_H
 #define __SOUND_SOC_INTEL_AVS_REGS_H
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #define AZX_PCIREG_PGCTL		0x44
 #define AZX_PCIREG_CGCTL		0x48

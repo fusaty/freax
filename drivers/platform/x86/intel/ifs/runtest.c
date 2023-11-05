@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2022 Intel Corporation. */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/nmi.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/nmi.h>
+#include <freax/slab.h>
+#include <freax/stop_machine.h>
 
 #include "ifs.h"
 

@@ -5,13 +5,13 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/stddef.h>
-#include <linux/etherdevice.h>
-#include <linux/log2.h>
-#include <linux/net_tstamp.h>
-#include <linux/linkmode.h>
+#include <freax/pci.h>
+#include <freax/ethtool.h>
+#include <freax/stddef.h>
+#include <freax/etherdevice.h>
+#include <freax/log2.h>
+#include <freax/net_tstamp.h>
+#include <freax/linkmode.h>
 
 #include "otx2_common.h"
 #include "otx2_ptp.h"

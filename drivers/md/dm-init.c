@@ -6,13 +6,13 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/device-mapper.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/device-mapper.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/moduleparam.h>
 
 #define DM_MSG_PREFIX "init"
 #define DM_MAX_DEVICES 256

@@ -2,16 +2,16 @@
 /*
  * BIOS Flash chip on Intel 440GX board.
  *
- * Bugs this currently does not work under linuxBIOS.
+ * Bugs this currently does not work under freaxBIOS.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
 
 #define PIIXE_IOBASE_RESOURCE	11
 

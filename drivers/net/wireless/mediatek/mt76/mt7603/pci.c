@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "mt7603.h"
 

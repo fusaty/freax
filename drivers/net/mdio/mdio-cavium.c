@@ -3,10 +3,10 @@
  * Copyright (C) 2009-2016 Cavium, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/phy.h>
 
 #include "mdio-cavium.h"
 

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/attr.c
+ *  freax/fs/attr.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  changes by Thomas Schoebel-Theuer
  */
 
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
-#include <linux/capability.h>
-#include <linux/fsnotify.h>
-#include <linux/fcntl.h>
-#include <linux/filelock.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/ima.h>
+#include <freax/export.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/sched/signal.h>
+#include <freax/capability.h>
+#include <freax/fsnotify.h>
+#include <freax/fcntl.h>
+#include <freax/filelock.h>
+#include <freax/security.h>
+#include <freax/evm.h>
+#include <freax/ima.h>
 
 #include "internal.h"
 

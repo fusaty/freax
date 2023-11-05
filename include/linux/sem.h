@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SEM_H
-#define _LINUX_SEM_H
+#ifndef _freax_SEM_H
+#define _freax_SEM_H
 
-#include <uapi/linux/sem.h>
+#include <uapi/freax/sem.h>
 
 struct task_struct;
 struct sem_undo_list;
@@ -33,4 +33,4 @@ static inline void exit_sem(struct task_struct *tsk)
 }
 #endif
 
-#endif /* _LINUX_SEM_H */
+#endif /* _freax_SEM_H */

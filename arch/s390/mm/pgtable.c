@@ -4,20 +4,20 @@
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/sysctl.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/swapops.h>
+#include <freax/sysctl.h>
+#include <freax/ksm.h>
+#include <freax/mman.h>
 
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

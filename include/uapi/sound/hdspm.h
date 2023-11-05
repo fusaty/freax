@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 #ifndef __SOUND_HDSPM_H
 #define __SOUND_HDSPM_H
 /*
@@ -6,8 +6,8 @@
  *   based on hdsp.h from Thomas Charbonnel (thomas@undata.org)
  */
 
-#ifdef __linux__
-#include <linux/types.h>
+#ifdef __freax__
+#include <freax/types.h>
 #endif
 
 /* Maximum channels is 64 even on 56Mode you have 64playbacks to matrix */

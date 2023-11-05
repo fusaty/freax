@@ -6,9 +6,9 @@
  *		Initial version: Alan Stern <stern@rowland.harvard.edu>
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/export.h>
-#include <linux/blk-pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/export.h>
+#include <freax/blk-pm.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

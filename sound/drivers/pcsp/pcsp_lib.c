@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for freax
  *
  * Copyright (C) 1993-1997  Michael Beck
  * Copyright (C) 1997-2001  David Woodhouse
  * Copyright (C) 2001-2008  Stas Sergeev
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/moduleparam.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 #include <sound/pcm.h>
 #include "pcsp.h"
 

@@ -7,7 +7,7 @@
  *  Amir Hanania <amir.hanania@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
@@ -18,15 +18,15 @@
 #ifndef __T7XX_HIF_DPMAIF_H__
 #define __T7XX_HIF_DPMAIF_H__
 
-#include <linux/bitmap.h>
-#include <linux/mm_types.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/bitmap.h>
+#include <freax/mm_types.h>
+#include <freax/netdevice.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include "t7xx_dpmaif.h"
 #include "t7xx_pci.h"

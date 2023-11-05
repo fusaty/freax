@@ -9,8 +9,8 @@
 #ifndef __ASM_SH_WATCHDOG_H
 #define __ASM_SH_WATCHDOG_H
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 #define WTCNT_HIGH	0x5a
 #define WTCSR_HIGH	0xa5

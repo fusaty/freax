@@ -6,16 +6,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -38,8 +38,8 @@
 
 #define HFA384x_FIRMWARE_VERSION(a, b, c) (((a) << 16) + ((b) << 8) + (c))
 
-#include <linux/if_ether.h>
-#include <linux/usb.h>
+#include <freax/if_ether.h>
+#include <freax/usb.h>
 
 /*--- Mins & Maxs -----------------------------------*/
 #define	HFA384x_PORTID_MAX		((u16)7)

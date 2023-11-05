@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_IRQ_H__
 #define __INTEL_PXP_IRQ_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_pxp;
 

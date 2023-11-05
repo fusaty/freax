@@ -12,8 +12,8 @@
  * Author: Stephen Chivers <schivers@csc.com>
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
 
 #include <asm/i8259.h>
 #include <asm/pci-bridge.h>

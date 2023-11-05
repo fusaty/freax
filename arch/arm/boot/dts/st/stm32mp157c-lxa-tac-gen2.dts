@@ -11,7 +11,7 @@
 #include "stm32mp15xc-lxa-tac.dtsi"
 
 / {
-	model = "Linux Automation Test Automation Controller (TAC) Gen 2";
+	model = "freax Automation Test Automation Controller (TAC) Gen 2";
 	compatible = "lxa,stm32mp157c-tac-gen2", "oct,stm32mp15xx-osd32", "st,stm32mp157";
 
 	backlight: backlight {
@@ -111,7 +111,7 @@
 		led-14 {
 			label = "tac:green:usbg";
 			gpios = <&gpiod 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "usb-gadget";
+			freax,default-trigger = "usb-gadget";
 		};
 
 		led-15 {

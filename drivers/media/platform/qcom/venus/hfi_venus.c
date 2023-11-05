@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The freax Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
 #include "core.h"
 #include "hfi_cmds.h"

@@ -6,7 +6,7 @@
  * Robert Baldyga <r.baldyga@samsung.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <net/nfc/nci_core.h>
 
 #include "s3fwrn5.h"

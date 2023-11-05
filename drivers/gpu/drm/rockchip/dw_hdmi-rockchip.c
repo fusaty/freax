@@ -3,13 +3,13 @@
  * Copyright (c) 2014, Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_edid.h>

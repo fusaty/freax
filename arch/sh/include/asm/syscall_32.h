@@ -2,10 +2,10 @@
 #ifndef __ASM_SH_SYSCALL_32_H
 #define __ASM_SH_SYSCALL_32_H
 
-#include <uapi/linux/audit.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <uapi/freax/audit.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/err.h>
 #include <asm/ptrace.h>
 
 /* The system call number is given by the user in R3 */

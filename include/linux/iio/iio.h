@@ -7,10 +7,10 @@
 #ifndef _INDUSTRIAL_IO_H_
 #define _INDUSTRIAL_IO_H_
 
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/iio/types.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/iio/types.h>
 /* IIO TODO LIST */
 /*
  * Provide means of adjusting timer accuracy.

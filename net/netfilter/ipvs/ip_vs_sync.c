@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * IPVS         An implementation of the IP virtual server support for the
- *              LINUX operating system.  IPVS is now implemented as a module
+ *              freax operating system.  IPVS is now implemented as a module
  *              over the NetFilter framework. IPVS can be used to build a
  *              high-performance and highly available server based on a
  *              cluster of servers.
@@ -18,7 +18,7 @@
  *              Sync_conn: is a part of a Message
  *              Param Data is an option to a Sync_conn.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@freaxvirtualserver.org>
  *
  * ip_vs_sync:  sync connection info from master load balancer to backups
  *              through multicast
@@ -35,21 +35,21 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/inetdevice.h>
-#include <linux/net.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/igmp.h>                 /* for ip_mc_join_group */
-#include <linux/udp.h>
-#include <linux/err.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/inetdevice.h>
+#include <freax/net.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/skbuff.h>
+#include <freax/in.h>
+#include <freax/igmp.h>                 /* for ip_mc_join_group */
+#include <freax/udp.h>
+#include <freax/err.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
 
 #include <asm/unaligned.h>		/* Used for ntoh_seq and hton_seq */
 

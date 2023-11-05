@@ -3,11 +3,11 @@
  * Userspace indexing of printk formats
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
 
 #include "internal.h"
 
@@ -29,7 +29,7 @@ static struct pi_entry *pi_get_entry(const struct module *mod, loff_t pos)
 	} else
 #endif
 	{
-		/* vmlinux, comes from linker symbols */
+		/* vmfreax, comes from linker symbols */
 		entries = __start_printk_index;
 		nr_entries = __stop_printk_index - __start_printk_index;
 	}
@@ -127,12 +127,12 @@ DEFINE_SEQ_ATTRIBUTE(dfs_index);
 #ifdef CONFIG_MODULES
 static const char *pi_get_module_name(struct module *mod)
 {
-	return mod ? mod->name : "vmlinux";
+	return mod ? mod->name : "vmfreax";
 }
 #else
 static const char *pi_get_module_name(struct module *mod)
 {
-	return "vmlinux";
+	return "vmfreax";
 }
 #endif
 

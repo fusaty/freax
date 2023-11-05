@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
 #include "kfd_device_queue_manager.h"
 #include "kfd_kernel_queue.h"
 #include "kfd_priv.h"

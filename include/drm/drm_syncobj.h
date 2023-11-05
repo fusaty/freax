@@ -26,8 +26,8 @@
 #ifndef __DRM_SYNCOBJ_H__
 #define __DRM_SYNCOBJ_H__
 
-#include <linux/dma-fence.h>
-#include <linux/dma-fence-chain.h>
+#include <freax/dma-fence.h>
+#include <freax/dma-fence-chain.h>
 
 struct drm_file;
 

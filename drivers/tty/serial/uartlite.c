@@ -6,22 +6,22 @@
  * Copyright (C) 2007 Secret Lab Technologies Ltd.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/bitfield.h>
+#include <freax/console.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
 
 #define ULITE_NAME		"ttyUL"
 #define ULITE_MAJOR		204

@@ -7,8 +7,8 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#ifndef __LINUX_MFD_DA9052_REG_H
-#define __LINUX_MFD_DA9052_REG_H
+#ifndef __freax_MFD_DA9052_REG_H
+#define __freax_MFD_DA9052_REG_H
 
 /* PAGE REGISTERS */
 #define DA9052_PAGE0_CON_REG		0
@@ -747,4 +747,4 @@
 #define DA9052_SECONDD_SECONDSD	0XFF
 
 #endif
-/* __LINUX_MFD_DA9052_REG_H */
+/* __freax_MFD_DA9052_REG_H */

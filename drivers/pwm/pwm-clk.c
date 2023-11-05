@@ -18,14 +18,14 @@
  *   .get_state().
  */
 
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/pwm.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/pwm.h>
 
 struct pwm_clk_chip {
 	struct pwm_chip chip;

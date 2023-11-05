@@ -9,11 +9,11 @@
  * Copyright (C) 2010 ROCKCHIP, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/rtc.h>
 
 #define HYM8563_CTL1		0x00
 #define HYM8563_CTL1_TEST	BIT(7)

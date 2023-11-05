@@ -8,12 +8,12 @@
  *          Dacai Zhu <zhudacai@hisilicon.com>
  *          Gabriele Paoloni <gabriele.paoloni@huawei.com>
  */
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/pci-acpi.h>
+#include <freax/pci-ecam.h>
 #include "../../pci.h"
 
 #if defined(CONFIG_PCI_HISI) || (defined(CONFIG_ACPI) && defined(CONFIG_PCI_QUIRKS))

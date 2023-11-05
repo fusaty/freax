@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2018 MediaTek Inc.
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
+#include <freax/of.h>
 
 
 #define SPIS_IRQ_EN_REG		0x0

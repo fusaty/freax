@@ -6,8 +6,8 @@
 #ifndef _SCSI_COMMON_H_
 #define _SCSI_COMMON_H_
 
-#include <linux/types.h>
-#include <uapi/linux/pr.h>
+#include <freax/types.h>
+#include <uapi/freax/pr.h>
 #include <scsi/scsi_proto.h>
 
 enum scsi_pr_type {

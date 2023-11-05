@@ -51,11 +51,11 @@
 			ecc-size = <16>;
 		};
 
-		linux,cma@30000000 {
+		freax,cma@30000000 {
 			compatible = "shared-dma-pool";
 			alloc-ranges = <0x30000000 0x10000000>;
 			size = <0x10000000>; /* 256MiB */
-			linux,cma-default;
+			freax,cma-default;
 			reusable;
 		};
 	};
@@ -1263,7 +1263,7 @@
 		key-power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(I, 3) GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
@@ -1272,15 +1272,15 @@
 		key-rotation-lock {
 			label = "Rotate-lock";
 			gpios = <&gpio TEGRA_GPIO(Q, 2) GPIO_ACTIVE_HIGH>;
-			linux,code = <SW_ROTATE_LOCK>;
-			linux,input-type = <EV_SW>;
+			freax,code = <SW_ROTATE_LOCK>;
+			freax,input-type = <EV_SW>;
 			debounce-interval = <10>;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio TEGRA_GPIO(Q, 5) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
@@ -1289,7 +1289,7 @@
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio TEGRA_GPIO(Q, 4) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;

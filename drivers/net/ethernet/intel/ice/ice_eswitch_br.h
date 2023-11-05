@@ -4,8 +4,8 @@
 #ifndef _ICE_ESWITCH_BR_H_
 #define _ICE_ESWITCH_BR_H_
 
-#include <linux/rhashtable.h>
-#include <linux/workqueue.h>
+#include <freax/rhashtable.h>
+#include <freax/workqueue.h>
 
 struct ice_esw_br_fdb_data {
 	unsigned char addr[ETH_ALEN];

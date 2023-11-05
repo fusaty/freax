@@ -8,14 +8,14 @@
  *  Copyright © 2013 Tom St Denis <tstdenis@elliptictech.com>
  * Based on crypto/xcbc.c:
  *  Copyright © 2006 USAGI/WIDE Project,
- *   Author: Kazunori Miyazawa <miyazawa@linux-ipv6.org>
+ *   Author: Kazunori Miyazawa <miyazawa@freax-ipv6.org>
  */
 
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 /*
  * +------------------------

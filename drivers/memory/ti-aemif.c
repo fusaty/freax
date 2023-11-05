@@ -9,15 +9,15 @@
  * Ivan Khoronzhuk <ivan.khoronzhuk@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/ti-aemif.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/ti-aemif.h>
 
 #define TA_SHIFT	2
 #define RHOLD_SHIFT	4

@@ -5,12 +5,12 @@
  * Copyright (C) 2012  Renesas Solutions Corp.
  * Copyright (C) 2012  Magnus Damm
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/delay.h>
 #include <asm/smp_plat.h>
 #include <asm/smp_scu.h>
 

@@ -5,12 +5,12 @@
 // Copyright (C) 2019 Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 // Copyright (C) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
 
-#include <linux/mfd/atc260x/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <freax/mfd/atc260x/core.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
 
 struct atc260x_regulator_data {
 	int voltage_time_dcdc;

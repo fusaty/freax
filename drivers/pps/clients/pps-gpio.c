@@ -9,19 +9,19 @@
 #define PPS_GPIO_NAME "pps-gpio"
 #define pr_fmt(fmt) PPS_GPIO_NAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pps_kernel.h>
-#include <linux/gpio/consumer.h>
-#include <linux/list.h>
-#include <linux/property.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/pps_kernel.h>
+#include <freax/gpio/consumer.h>
+#include <freax/list.h>
+#include <freax/property.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
 
 /* Info for each registered platform device */
 struct pps_gpio_device_data {

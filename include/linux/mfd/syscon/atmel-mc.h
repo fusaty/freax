@@ -8,8 +8,8 @@
  * Based on AT91RM9200 datasheet revision E.
  */
 
-#ifndef _LINUX_MFD_SYSCON_ATMEL_MC_H_
-#define _LINUX_MFD_SYSCON_ATMEL_MC_H_
+#ifndef _freax_MFD_SYSCON_ATMEL_MC_H_
+#define _freax_MFD_SYSCON_ATMEL_MC_H_
 
 /* Memory Controller */
 #define AT91_MC_RCR			0x00
@@ -137,4 +137,4 @@
 #define AT91_MC_BFC_MUXEN		BIT(18)
 #define AT91_MC_BFC_RDYEN		BIT(19)
 
-#endif /* _LINUX_MFD_SYSCON_ATMEL_MC_H_ */
+#endif /* _freax_MFD_SYSCON_ATMEL_MC_H_ */

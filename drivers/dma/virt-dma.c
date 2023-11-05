@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2012 Russell King
  */
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
 
 #include "virt-dma.h"
 

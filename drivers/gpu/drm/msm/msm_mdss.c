@@ -1,19 +1,19 @@
 /*
  * SPDX-License-Identifier: GPL-2.0
- * Copyright (c) 2018, The Linux Foundation
+ * Copyright (c) 2018, The freax Foundation
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interconnect.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdesc.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interconnect.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdesc.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #include "msm_mdss.h"
 #include "msm_kms.h"

@@ -3,13 +3,13 @@
  * Routines to emulate some Altivec/VMX instructions, specifically
  * those that can trap when given denormalized operands in Java mode.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 #include <asm/switch_to.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/inst.h>
 
 /* Functions in vector.S */

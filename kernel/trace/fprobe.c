@@ -4,13 +4,13 @@
  */
 #define pr_fmt(fmt) "fprobe: " fmt
 
-#include <linux/err.h>
-#include <linux/fprobe.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/rethook.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <freax/err.h>
+#include <freax/fprobe.h>
+#include <freax/kallsyms.h>
+#include <freax/kprobes.h>
+#include <freax/rethook.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
 
 #include "trace.h"
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/tty.h>
+#include <freax/module.h>
 
 /*
  *  n_null.c - Null line discipline used in the failure path

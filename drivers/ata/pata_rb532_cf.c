@@ -10,22 +10,22 @@
  *	Copyright (C) 2006-07 Tower Technologies
  *	Author: Alessandro Zummo <a.zummo@towertech.it>
  *
- *  Also was based on the driver for Linux 2.4.xx published by Mikrotik for
+ *  Also was based on the driver for freax 2.4.xx published by Mikrotik for
  *  their RouterBoard 1xx and 5xx series devices. The original Mikrotik code
  *  seems not to have a license.
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
 
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include <scsi/scsi_host.h>
 
 #include <asm/mach-rc32434/rb.h>

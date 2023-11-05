@@ -6,10 +6,10 @@
 #include <unistd.h>
 #include <assert.h>
 
-#include <linux/gfp.h>
-#include <linux/poison.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
+#include <freax/gfp.h>
+#include <freax/poison.h>
+#include <freax/slab.h>
+#include <freax/radix-tree.h>
 #include <urcu/uatomic.h>
 
 int nr_allocated;

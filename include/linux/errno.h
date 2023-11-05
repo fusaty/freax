@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ERRNO_H
-#define _LINUX_ERRNO_H
+#ifndef _freax_ERRNO_H
+#define _freax_ERRNO_H
 
-#include <uapi/linux/errno.h>
+#include <uapi/freax/errno.h>
 
 
 /*

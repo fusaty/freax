@@ -11,16 +11,16 @@
 #ifndef ASM_KVM_HOST_H
 #define ASM_KVM_HOST_H
 
-#include <linux/types.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kvm_types.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/seqlock.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mmu_notifier.h>
+#include <freax/types.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
+#include <freax/kvm_types.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/seqlock.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/mmu_notifier.h>
 #include <asm/debug.h>
 #include <asm/cpu.h>
 #include <asm/fpu/api.h>

@@ -13,14 +13,14 @@
  */
 
 #include <crypto/scatterwalk.h>
-#include <linux/cryptouser.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <freax/cryptouser.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
 #include <net/netlink.h>
 
 #include "hash.h"

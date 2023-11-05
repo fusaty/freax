@@ -9,29 +9,29 @@
 
 #define pr_fmt(fmt) "iio-core: " fmt
 
-#include <linux/anon_inodes.h>
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/property.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/anon_inodes.h>
+#include <freax/cdev.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/idr.h>
+#include <freax/kdev_t.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/property.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/buffer_impl.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio-opaque.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/buffer_impl.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio-opaque.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #include "iio_core.h"
 #include "iio_core_trigger.h"
@@ -218,7 +218,7 @@ EXPORT_SYMBOL_GPL(iio_buffer_enabled);
 
 #if defined(CONFIG_DEBUG_FS)
 /*
- * There's also a CONFIG_DEBUG_FS guard in include/linux/iio/iio.h for
+ * There's also a CONFIG_DEBUG_FS guard in include/freax/iio/iio.h for
  * iio_get_debugfs_dentry() to make it inline if CONFIG_DEBUG_FS is undefined
  */
 struct dentry *iio_get_debugfs_dentry(struct iio_dev *indio_dev)

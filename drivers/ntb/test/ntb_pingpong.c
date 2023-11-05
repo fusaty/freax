@@ -47,7 +47,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Pingpong Linux driver
+ * PCIe NTB Pingpong freax driver
  */
 
 /*
@@ -67,18 +67,18 @@
  * root@self# cat $DBG_DIR/count
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/bitops.h>
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/hrtimer.h>
-#include <linux/debugfs.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/hrtimer.h>
+#include <freax/debugfs.h>
 
-#include <linux/ntb.h>
+#include <freax/ntb.h>
 
 #define DRIVER_NAME		"ntb_pingpong"
 #define DRIVER_VERSION		"2.0"

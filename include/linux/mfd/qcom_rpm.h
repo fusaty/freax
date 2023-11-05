@@ -2,7 +2,7 @@
 #ifndef __QCOM_RPM_H__
 #define __QCOM_RPM_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct qcom_rpm;
 

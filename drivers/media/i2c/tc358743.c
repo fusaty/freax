@@ -12,20 +12,20 @@
  * REF_02 - Toshiba, TC358743XBG_HDMI-CSI_Tv11p_nm.xls
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/of_graph.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/hdmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/of_graph.h>
+#include <freax/videodev2.h>
+#include <freax/workqueue.h>
+#include <freax/v4l2-dv-timings.h>
+#include <freax/hdmi.h>
 #include <media/cec.h>
 #include <media/v4l2-dv-timings.h>
 #include <media/v4l2-device.h>

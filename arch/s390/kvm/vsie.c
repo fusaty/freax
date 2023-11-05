@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2016, 2018
  *
- *    Author(s): David Hildenbrand <dahi@linux.vnet.ibm.com>
+ *    Author(s): David Hildenbrand <dahi@freax.vnet.ibm.com>
  */
-#include <linux/vmalloc.h>
-#include <linux/kvm_host.h>
-#include <linux/bug.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
-#include <linux/sched/signal.h>
+#include <freax/vmalloc.h>
+#include <freax/kvm_host.h>
+#include <freax/bug.h>
+#include <freax/list.h>
+#include <freax/bitmap.h>
+#include <freax/sched/signal.h>
 
 #include <asm/gmap.h>
 #include <asm/mmu_context.h>

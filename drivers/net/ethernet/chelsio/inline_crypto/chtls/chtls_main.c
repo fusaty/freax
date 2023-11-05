@@ -4,15 +4,15 @@
  *
  * Written by: Atul Gupta (atul.gupta@chelsio.com)
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/hash.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/hash.h>
+#include <freax/in.h>
+#include <freax/net.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
 #include <net/ipv6.h>
 #include <net/transp_v6.h>
 #include <net/tcp.h>

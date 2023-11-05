@@ -39,20 +39,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/dev.h> /* for can_is_canxl_dev_mtu() */
-#include <linux/can/skb.h>
-#include <linux/can/raw.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/uio.h>
+#include <freax/net.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/socket.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/can.h>
+#include <freax/can/core.h>
+#include <freax/can/dev.h> /* for can_is_canxl_dev_mtu() */
+#include <freax/can/skb.h>
+#include <freax/can/raw.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
 

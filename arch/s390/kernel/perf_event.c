@@ -3,19 +3,19 @@
  * Performance event support for s390x
  *
  *  Copyright IBM Corp. 2012, 2013
- *  Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 #define KMSG_COMPONENT	"perf"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/kvm_host.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/perf_event.h>
+#include <freax/kvm_host.h>
+#include <freax/percpu.h>
+#include <freax/export.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/sysfs.h>
 #include <asm/irq.h>
 #include <asm/cpu_mf.h>
 #include <asm/lowcore.h>

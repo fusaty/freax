@@ -20,25 +20,25 @@
 **        the coherency design originally worked out. Only PCX-W does.
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/dma-map-ops.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu-helper.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/reboot.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/dma-map-ops.h>
+#include <freax/scatterlist.h>
+#include <freax/iommu-helper.h>
+#include <freax/export.h>
 
 #include <asm/byteorder.h>
 #include <asm/cache.h>		/* for L1_CACHE_BYTES */
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/dma.h>
 #include <asm/io.h>
@@ -486,9 +486,9 @@ typedef unsigned long space_t;
 **
 ** FIXME: the default hints need to be per GSC device - not global.
 ** 
-** HP-UX dorks: linux device driver programming model is totally different
+** HP-UX dorks: freax device driver programming model is totally different
 **    than HP-UX's. HP-UX always sets HINT_PREFETCH since it's drivers
-**    do special things to work on non-coherent platforms...linux has to
+**    do special things to work on non-coherent platforms...freax has to
 **    be much more careful with this.
 */
 #define IOPDIR_VALID    0x01UL
@@ -1262,7 +1262,7 @@ ccio_ioc_init(struct ioc *ioc)
 	**
 	** Note: Grant Grunder says "Using 8k I/O pages isn't trivial either
 	**   since the pages must also be physically contiguous - typically
-	**   this is the case under linux."
+	**   this is the case under freax."
 	*/
 
 	iov_order = get_order(iova_space_size << PAGE_SHIFT);

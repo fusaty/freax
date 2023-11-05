@@ -4,14 +4,14 @@
  * Copyright © 2008-2015 Intel Corporation
  */
 
-#include <linux/oom.h>
-#include <linux/sched/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/pci.h>
-#include <linux/dma-buf.h>
-#include <linux/vmalloc.h>
+#include <freax/oom.h>
+#include <freax/sched/mm.h>
+#include <freax/shmem_fs.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
+#include <freax/pci.h>
+#include <freax/dma-buf.h>
+#include <freax/vmalloc.h>
 
 #include "gt/intel_gt_requests.h"
 #include "gt/intel_gt.h"

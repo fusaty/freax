@@ -10,9 +10,9 @@
 #ifndef __NET_MCTPDEVICE_H
 #define __NET_MCTPDEVICE_H
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/refcount.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
 
 struct mctp_sk_key;
 

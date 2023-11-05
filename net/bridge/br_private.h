@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -9,16 +9,16 @@
 #ifndef _BR_PRIVATE_H
 #define _BR_PRIVATE_H
 
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/netpoll.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/netdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/netpoll.h>
+#include <freax/u64_stats_sync.h>
 #include <net/route.h>
 #include <net/ip6_fib.h>
 #include <net/pkt_cls.h>
-#include <linux/if_vlan.h>
-#include <linux/rhashtable.h>
-#include <linux/refcount.h>
+#include <freax/if_vlan.h>
+#include <freax/rhashtable.h>
+#include <freax/refcount.h>
 
 #define BR_HASH_BITS 8
 #define BR_HASH_SIZE (1 << BR_HASH_BITS)

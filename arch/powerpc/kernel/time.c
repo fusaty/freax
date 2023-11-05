@@ -27,35 +27,35 @@
  *             "A Kernel Model for Precision Timekeeping" by Dave Mills
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cputime.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
-#include <linux/security.h>
-#include <linux/percpu.h>
-#include <linux/rtc.h>
-#include <linux/jiffies.h>
-#include <linux/posix-timers.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/irq_work.h>
-#include <linux/of_clk.h>
-#include <linux/suspend.h>
-#include <linux/processor.h>
-#include <linux/mc146818rtc.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/cputime.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/timex.h>
+#include <freax/kernel_stat.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/profile.h>
+#include <freax/cpu.h>
+#include <freax/security.h>
+#include <freax/percpu.h>
+#include <freax/rtc.h>
+#include <freax/jiffies.h>
+#include <freax/posix-timers.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/irq_work.h>
+#include <freax/of_clk.h>
+#include <freax/suspend.h>
+#include <freax/processor.h>
+#include <freax/mc146818rtc.h>
+#include <freax/platform_device.h>
 
 #include <asm/trace.h>
 #include <asm/interrupt.h>
@@ -63,7 +63,7 @@
 #include <asm/nvram.h>
 #include <asm/cache.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/time.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
@@ -74,8 +74,8 @@
 
 /* powerpc clocksource/clockevent code */
 
-#include <linux/clockchips.h>
-#include <linux/timekeeper_internal.h>
+#include <freax/clockchips.h>
+#include <freax/timekeeper_internal.h>
 
 static u64 timebase_read(struct clocksource *);
 static struct clocksource clocksource_timebase = {

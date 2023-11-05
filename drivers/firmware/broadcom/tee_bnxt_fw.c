@@ -3,14 +3,14 @@
  * Copyright 2019 Broadcom.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/tee_drv.h>
+#include <freax/uuid.h>
 
-#include <linux/firmware/broadcom/tee_bnxt_fw.h>
+#include <freax/firmware/broadcom/tee_bnxt_fw.h>
 
 #define MAX_SHM_MEM_SZ	SZ_4M
 

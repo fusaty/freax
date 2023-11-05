@@ -9,20 +9,20 @@
  * Based on drivers/media/video/s5p-tv/mixer_reg.c
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
 
 #include <drm/drm_blend.h>
 #include <drm/drm_edid.h>

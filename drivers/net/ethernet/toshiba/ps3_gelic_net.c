@@ -15,20 +15,20 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include <net/checksum.h>
 #include <asm/firmware.h>
 #include <asm/ps3.h>

@@ -9,7 +9,7 @@
 #ifndef _SUN6I_CSI_REG_H_
 #define _SUN6I_CSI_REG_H_
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #define SUN6I_CSI_ADDR_VALUE(a)			((a) >> 2)
 

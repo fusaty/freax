@@ -3,18 +3,18 @@
  * Copyright (C) 2005-2006 Micronas USA Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

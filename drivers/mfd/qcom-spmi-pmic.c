@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/spmi.h>
-#include <linux/types.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
+#include <freax/spmi.h>
+#include <freax/types.h>
+#include <freax/regmap.h>
 #include <soc/qcom/qcom-spmi-pmic.h>
 
 #define PMIC_REV2		0x101

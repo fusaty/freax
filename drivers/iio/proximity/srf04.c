@@ -34,19 +34,19 @@
  *                              pulse time measured
  *                              --> one round trip of ultra sonic waves
  */
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 struct srf04_cfg {
 	unsigned long trigger_pulse_us;

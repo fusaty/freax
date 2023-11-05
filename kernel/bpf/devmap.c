@@ -44,11 +44,11 @@
  * ifindexes. The setup and packet enqueue/send code is shared between the two
  * types of devmap; only the lookup and insertion is different.
  */
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <net/xdp.h>
-#include <linux/filter.h>
+#include <freax/filter.h>
 #include <trace/events/xdp.h>
-#include <linux/btf_ids.h>
+#include <freax/btf_ids.h>
 
 #define DEV_CREATE_FLAG_MASK \
 	(BPF_F_NUMA_NODE | BPF_F_RDONLY | BPF_F_WRONLY)

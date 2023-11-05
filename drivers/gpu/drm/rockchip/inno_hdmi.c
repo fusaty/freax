@@ -5,16 +5,16 @@
  *    Yakir Yang <ykk@rock-chips.com>
  */
 
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hdmi.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/hdmi.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

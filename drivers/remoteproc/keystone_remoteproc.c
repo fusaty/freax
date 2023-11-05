@@ -5,20 +5,20 @@
  * Copyright (C) 2015-2017 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/workqueue.h>
+#include <freax/of_address.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
 
 #include "remoteproc_internal.h"
 

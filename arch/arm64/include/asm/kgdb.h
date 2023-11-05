@@ -11,7 +11,7 @@
 #ifndef __ARM_KGDB_H
 #define __ARM_KGDB_H
 
-#include <linux/ptrace.h>
+#include <freax/ptrace.h>
 #include <asm/debug-monitors.h>
 
 #ifndef	__ASSEMBLY__

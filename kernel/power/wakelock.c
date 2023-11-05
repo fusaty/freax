@@ -10,15 +10,15 @@
  * manipulate wakelocks on Android.
  */
 
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/capability.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/hrtimer.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "power.h"
 

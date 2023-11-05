@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Media Bus API header
  *
  * Copyright (C) 2009, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#ifndef __LINUX_V4L2_MEDIABUS_H
-#define __LINUX_V4L2_MEDIABUS_H
+#ifndef __freax_V4L2_MEDIABUS_H
+#define __freax_V4L2_MEDIABUS_H
 
-#include <linux/media-bus-format.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/media-bus-format.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #define V4L2_MBUS_FRAMEFMT_SET_CSC	0x0001
 

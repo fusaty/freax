@@ -80,7 +80,7 @@
 		key-1 {
 			interrupt-parent = <&irqc>;
 			interrupts = <3 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			label = "SW1";
 			wakeup-source;
 		};
@@ -88,7 +88,7 @@
 		key-2 {
 			interrupt-parent = <&irqc>;
 			interrupts = <2 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_2>;
+			freax,code = <KEY_2>;
 			label = "SW2";
 			wakeup-source;
 		};
@@ -96,7 +96,7 @@
 		key-3 {
 			interrupt-parent = <&irqc>;
 			interrupts = <5 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_3>;
+			freax,code = <KEY_3>;
 			label = "SW3";
 			wakeup-source;
 		};

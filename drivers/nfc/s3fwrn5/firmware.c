@@ -6,8 +6,8 @@
  * Robert Baldyga <r.baldyga@samsung.com>
  */
 
-#include <linux/completion.h>
-#include <linux/firmware.h>
+#include <freax/completion.h>
+#include <freax/firmware.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
 

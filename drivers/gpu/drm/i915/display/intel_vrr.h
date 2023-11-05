@@ -6,7 +6,7 @@
 #ifndef __INTEL_VRR_H__
 #define __INTEL_VRR_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_connector_state;
 struct intel_atomic_state;

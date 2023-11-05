@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/in.h>
+#include <freax/ipv6.h>
 
 #include "rds.h"
 #include "loop.h"

@@ -6,12 +6,12 @@
  *  Justin Iurman <justin.iurman@uliege.be>
  */
 
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/ioam6.h>
-#include <linux/ioam6_iptunnel.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/ioam6.h>
+#include <freax/ioam6_iptunnel.h>
 #include <net/dst.h>
 #include <net/sock.h>
 #include <net/lwtunnel.h>

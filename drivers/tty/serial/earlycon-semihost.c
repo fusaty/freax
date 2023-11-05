@@ -7,10 +7,10 @@
  * Copyright (C) 2014 Linaro Ltd.
  * Author: Rob Herring <robh@kernel.org>
  */
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/serial_core.h>
 #include <asm/semihost.h>
 
 static void smh_write(struct console *con, const char *s, unsigned n)

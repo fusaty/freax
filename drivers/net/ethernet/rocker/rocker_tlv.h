@@ -8,7 +8,7 @@
 #ifndef _ROCKER_TLV_H
 #define _ROCKER_TLV_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "rocker_hw.h"
 #include "rocker.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Base infrastructure for Linux-z/VM Monitor Stream, Stage 1.
+ * Base infrastructure for freax-z/VM Monitor Stream, Stage 1.
  * Exports appldata_register_ops() and appldata_unregister_ops() for the
  * data gathering modules.
  *
@@ -12,22 +12,22 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/sched/stat.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/sched/stat.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/pagemap.h>
+#include <freax/sysctl.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/workqueue.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 #include <asm/appldata.h>
 #include <asm/vtimer.h>
 #include <asm/smp.h>
@@ -122,7 +122,7 @@ static void appldata_work_fn(struct work_struct *work)
 
 static struct appldata_product_id appldata_id = {
 	.prod_nr    = {0xD3, 0xC9, 0xD5, 0xE4,
-		       0xE7, 0xD2, 0xD9},	/* "LINUXKR" */
+		       0xE7, 0xD2, 0xD9},	/* "freaxKR" */
 	.prod_fn    = 0xD5D3,			/* "NL" */
 	.version_nr = 0xF2F6,			/* "26" */
 	.release_nr = 0xF0F1,			/* "01" */

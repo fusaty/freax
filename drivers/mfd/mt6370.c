@@ -5,14 +5,14 @@
  * Author: ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "mt6370.h"
 

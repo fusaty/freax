@@ -6,15 +6,15 @@
  * Copyright (C) 1997 Paul Mackerras (paulus@samba.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -83,7 +83,7 @@ static int __init fixup_one_level_bus_range(struct device_node *node, int higher
  * system since they tend to have their "last" member wrong on macs
  *
  * Note that the bus numbers manipulated here are OF bus numbers, they
- * are not Linux bus numbers.
+ * are not freax bus numbers.
  */
 static void __init fixup_bus_range(struct device_node *bridge)
 {
@@ -431,7 +431,7 @@ static struct pci_ops u4_pcie_pci_ops =
 static void pmac_pci_fixup_u4_of_node(struct pci_dev *dev)
 {
 	/* Apple's device-tree "hides" the root complex virtual P2P bridge
-	 * on U4. However, Linux sees it, causing the PCI <-> OF matching
+	 * on U4. However, freax sees it, causing the PCI <-> OF matching
 	 * code to fail to properly match devices below it. This works around
 	 * it by setting the node of the bridge to point to the PHB node,
 	 * which is not entirely correct but fixes the matching code and
@@ -750,7 +750,7 @@ static void __init setup_u3_ht(struct pci_controller* hose)
 	 * internal bits of the northbridge.
 	 *
 	 * Unfortunately, we can't just mask out those bit as we would end
-	 * up with more regions than we can cope (linux can only cope with
+	 * up with more regions than we can cope (freax can only cope with
 	 * 3 memory regions for a PHB at this stage).
 	 *
 	 * So for now, we just do a little hack. We happen to -know- that
@@ -1176,7 +1176,7 @@ DECLARE_PCI_FIXUP_HEADER(PCI_VENDOR_ID_SERVERWORKS, 0x0240, fixup_k2_sata);
 /*
  * On U4 (aka CPC945) the PCIe root complex "P2P" bridge resource ranges aren't
  * configured by the firmware. The bridge itself seems to ignore them but it
- * causes problems with Linux which then re-assigns devices below the bridge,
+ * causes problems with freax which then re-assigns devices below the bridge,
  * thus changing addresses of those devices from what was in the device-tree,
  * which sucks when those are video cards using offb
  *

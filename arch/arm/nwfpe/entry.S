@@ -7,7 +7,7 @@
     Direct questions, comments to Scott Bambrough <scottb@netwinder.org>
 
 */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/opcodes.h>
 

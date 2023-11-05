@@ -7,14 +7,14 @@
  * Copyright 2004 MontaVista Software Inc.
  *
  * Rewritten and ported to the merged powerpc tree:
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@freax.vnet.ibm.com>
  * Copyright 2007 IBM Corporation
  *
  * Modified from bamboo.c for sam440ep:
  * Copyright 2008 Giuseppe Coviello <gicoviello@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>
@@ -22,7 +22,7 @@
 #include <asm/uic.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc4xx.h>
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 static const struct of_device_id sam440ep_of_bus[] __initconst = {
 	{ .compatible = "ibm,plb4", },

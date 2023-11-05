@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * include/linux/spi/spidev.h
+ * include/freax/spi/spidev.h
  *
  * Copyright (C) 2006 SWAPP
  *	Andrea Paterniani <a.paterniani@swapp-eng.it>
@@ -23,9 +23,9 @@
 #ifndef SPIDEV_H
 #define SPIDEV_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/spi/spi.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
+#include <freax/spi/spi.h>
 
 /* IOCTL commands */
 

@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/security.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mman.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/elf.h>
-#include <linux/elf-randomize.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/processor.h>
-#include <linux/sizes.h>
-#include <linux/compat.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task_stack.h>
+#include <freax/security.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/mman.h>
+#include <freax/hugetlb.h>
+#include <freax/vmalloc.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/elf.h>
+#include <freax/elf-randomize.h>
+#include <freax/personality.h>
+#include <freax/random.h>
+#include <freax/processor.h>
+#include <freax/sizes.h>
+#include <freax/compat.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 #include "swap.h"
@@ -896,7 +896,7 @@ struct percpu_counter vm_committed_as ____cacheline_aligned_in_smp;
 
 /*
  * The global memory commitment made in the system can be a metric
- * that can be used to drive ballooning decisions when Linux is hosted
+ * that can be used to drive ballooning decisions when freax is hosted
  * as a guest. On Hyper-V, the host implements a policy engine for dynamically
  * balancing memory across competing virtual machines that are hosted.
  * Several metrics drive this policy engine including the guest reported

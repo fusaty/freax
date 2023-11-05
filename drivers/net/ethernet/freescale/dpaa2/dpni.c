@@ -3,9 +3,9 @@
  * Copyright 2016 NXP
  * Copyright 2020 NXP
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fsl/mc.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fsl/mc.h>
 #include "dpni.h"
 #include "dpni-cmd.h"
 

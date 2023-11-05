@@ -2,8 +2,8 @@
 #ifndef _TOOLS_SLAB_H
 #define _TOOLS_SLAB_H
 
-#include <linux/types.h>
-#include <linux/gfp.h>
+#include <freax/types.h>
+#include <freax/gfp.h>
 
 #define SLAB_PANIC 2
 #define SLAB_RECLAIM_ACCOUNT    0x00020000UL            /* Objects are reclaimable */

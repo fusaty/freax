@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/objtool.h>
-#include <linux/percpu.h>
+#include <freax/objtool.h>
+#include <freax/percpu.h>
 
 #include <asm/debugreg.h>
 #include <asm/mmu_context.h>

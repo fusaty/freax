@@ -11,12 +11,12 @@
 #define pr_fmt(fmt) "ap806-system-controller: " fmt
 
 #include "armada_ap_cp_helper.h"
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/syscon.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define AP806_SAR_REG			0x400
 #define AP806_SAR_CLKFREQ_MODE_MASK	0x1f

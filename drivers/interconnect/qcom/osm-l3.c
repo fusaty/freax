@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The freax Foundation. All rights reserved.
  */
 
-#include <linux/args.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/args.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/interconnect-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/interconnect/qcom,osm-l3.h>
 

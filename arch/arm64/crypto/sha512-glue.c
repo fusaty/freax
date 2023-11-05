@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/arm64 port of the OpenSSL SHA512 implementation for AArch64
+ * freax/arm64 port of the OpenSSL SHA512 implementation for AArch64
  *
  * Copyright (c) 2016 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/string.h>
 #include <crypto/sha2.h>
 #include <crypto/sha512_base.h>
 #include <asm/neon.h>

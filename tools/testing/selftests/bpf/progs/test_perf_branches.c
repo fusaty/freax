@@ -2,8 +2,8 @@
 // Copyright (c) 2019 Facebook
 
 #include <stddef.h>
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <freax/ptrace.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

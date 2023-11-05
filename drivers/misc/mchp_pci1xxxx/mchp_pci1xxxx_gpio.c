@@ -2,13 +2,13 @@
 // Copyright (C) 2022 Microchip Technology Inc.
 // pci1xxxx gpio driver
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/bio.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/gpio/driver.h>
+#include <freax/bio.h>
+#include <freax/mutex.h>
+#include <freax/kthread.h>
+#include <freax/interrupt.h>
 
 #include "mchp_pci1xxxx_gp.h"
 

@@ -9,13 +9,13 @@
 #ifndef __TI_BANDGAP_H
 #define __TI_BANDGAP_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/cpu_pm.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/cpu_pm.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm.h>
 
 struct gpio_desc;
 

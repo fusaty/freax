@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  * Userspace interface for AMD Dynamic Boost Control (DBC)
  *
@@ -10,7 +10,7 @@
 #ifndef __PSP_DBC_USER_H__
 #define __PSP_DBC_USER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * DOC: AMD Dynamic Boost Control (DBC) interface

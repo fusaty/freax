@@ -9,15 +9,15 @@
  * Include file for sample Host Bandwidth Manager (HBM) BPF programs
  */
 #define KBUILD_MODNAME "foo"
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/if_packet.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/ipv6.h>
-#include <uapi/linux/in.h>
-#include <uapi/linux/tcp.h>
-#include <uapi/linux/filter.h>
-#include <uapi/linux/pkt_cls.h>
+#include <uapi/freax/bpf.h>
+#include <uapi/freax/if_ether.h>
+#include <uapi/freax/if_packet.h>
+#include <uapi/freax/ip.h>
+#include <uapi/freax/ipv6.h>
+#include <uapi/freax/in.h>
+#include <uapi/freax/tcp.h>
+#include <uapi/freax/filter.h>
+#include <uapi/freax/pkt_cls.h>
 #include <net/ipv6.h>
 #include <net/inet_ecn.h>
 #include <bpf/bpf_endian.h>

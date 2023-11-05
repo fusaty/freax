@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/isofs/util.c
+ *  freax/fs/isofs/util.c
  */
 
-#include <linux/time.h>
+#include <freax/time.h>
 #include "isofs.h"
 
 /* 

@@ -2,30 +2,30 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/memblock.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task.h>
-#include <linux/sched/smt.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/kgdb.h>
-#include <linux/mem_encrypt.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
-#include <linux/pgtable.h>
-#include <linux/stackprotector.h>
-#include <linux/utsname.h>
+#include <freax/memblock.h>
+#include <freax/linkage.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/percpu.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/task.h>
+#include <freax/sched/smt.h>
+#include <freax/init.h>
+#include <freax/kprobes.h>
+#include <freax/kgdb.h>
+#include <freax/mem_encrypt.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
+#include <freax/syscore_ops.h>
+#include <freax/pgtable.h>
+#include <freax/stackprotector.h>
+#include <freax/utsname.h>
 
 #include <asm/alternative.h>
 #include <asm/cmdline.h>
@@ -39,9 +39,9 @@
 #include <asm/debugreg.h>
 #include <asm/sections.h>
 #include <asm/vsyscall.h>
-#include <linux/topology.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
+#include <freax/topology.h>
+#include <freax/cpumask.h>
+#include <freax/atomic.h>
 #include <asm/proto.h>
 #include <asm/setup.h>
 #include <asm/apic.h>
@@ -49,7 +49,7 @@
 #include <asm/fpu/api.h>
 #include <asm/mtrr.h>
 #include <asm/hwcap2.h>
-#include <linux/numa.h>
+#include <freax/numa.h>
 #include <asm/numa.h>
 #include <asm/asm.h>
 #include <asm/bugs.h>
@@ -1771,7 +1771,7 @@ static void generic_identify(struct cpuinfo_x86 *c)
 
 	/*
 	 * ESPFIX is a strange bug.  All real CPUs have it.  Paravirt
-	 * systems that run Linux at CPL > 0 may or may not have the
+	 * systems that run freax at CPL > 0 may or may not have the
 	 * issue, but, even if they have the issue, there's absolutely
 	 * nothing we can do about it because we can't use the real IRET
 	 * instruction.

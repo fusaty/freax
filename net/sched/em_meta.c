@@ -54,17 +54,17 @@
  * 	      only available if that subsystem is enabled in the kernel.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/if_vlan.h>
-#include <linux/tc_ematch/tc_em_meta.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
+#include <freax/random.h>
+#include <freax/if_vlan.h>
+#include <freax/tc_ematch/tc_em_meta.h>
 #include <net/dst.h>
 #include <net/route.h>
 #include <net/pkt_cls.h>

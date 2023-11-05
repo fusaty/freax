@@ -6,22 +6,22 @@
  * Copyright (C) 2004-2005 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
-#include <linux/mfd/tps65010.h>
+#include <freax/mfd/tps65010.h>
 
-#include <linux/gpio/driver.h>
+#include <freax/gpio/driver.h>
 
 
 /*-------------------------------------------------------------------------*/

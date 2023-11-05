@@ -8,17 +8,17 @@
  * NAT funded by Astaro.
  */
 
-#include <linux/if.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/types.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/if.h>
+#include <freax/inetdevice.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/types.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/x_tables.h>
 #include <net/addrconf.h>
 #include <net/checksum.h>
 #include <net/protocol.h>

@@ -22,10 +22,10 @@
 /*
  */
 
-#include <linux/device.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/usb.h>
+#include <freax/hid.h>
+#include <freax/module.h>
 
 #include "hid-ids.h"
 

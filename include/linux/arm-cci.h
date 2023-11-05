@@ -5,11 +5,11 @@
  * Copyright (C) 2013 ARM Ltd.
  */
 
-#ifndef __LINUX_ARM_CCI_H
-#define __LINUX_ARM_CCI_H
+#ifndef __freax_ARM_CCI_H
+#define __freax_ARM_CCI_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 #include <asm/arm-cci.h>
 

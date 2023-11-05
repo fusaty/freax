@@ -10,10 +10,10 @@
  *	Ville Nuorvala		<vnuorval@tcs.hut.fi>
  */
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/export.h>
+#include <freax/indirect_call_wrapper.h>
 
 #include <net/fib_rules.h>
 #include <net/inet_dscp.h>

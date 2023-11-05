@@ -9,20 +9,20 @@
  *   No. 450, Shenhu Road, Suzhou Industry Park, Suzhou, China
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
-#include <linux/cdrom.h>
+#include <freax/cdrom.h>
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/usb_usual.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/usb_usual.h>
 
 #include "usb.h"
 #include "transport.h"

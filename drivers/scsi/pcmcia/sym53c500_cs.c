@@ -39,18 +39,18 @@
 
 /* =============== End of user configurable parameters ============== */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/blkdev.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

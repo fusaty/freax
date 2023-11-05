@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2019 Collabora Ltd */
 
-#include <linux/completion.h>
-#include <linux/iopoll.h>
-#include <linux/iosys-map.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/completion.h>
+#include <freax/iopoll.h>
+#include <freax/iosys-map.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_file.h>
 #include <drm/drm_gem_shmem_helper.h>

@@ -6,14 +6,14 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2011--2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@freax.intel.com>
  */
 
 #ifndef SMIAPP_REGS_H
 #define SMIAPP_REGS_H
 
-#include <linux/i2c.h>
-#include <linux/types.h>
+#include <freax/i2c.h>
+#include <freax/types.h>
 
 #include "ccs-regs.h"
 

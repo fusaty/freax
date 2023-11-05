@@ -1,25 +1,25 @@
 /*
  * Multiplexed-IRQs driver for TS-4800's FPGA
  *
- * Copyright (c) 2015 - Savoir-faire Linux
+ * Copyright (c) 2015 - Savoir-faire freax
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
 
 #define IRQ_MASK        0x4
 #define IRQ_STATUS      0x8
@@ -164,6 +164,6 @@ static struct platform_driver ts4800_ic_driver = {
 };
 module_platform_driver(ts4800_ic_driver);
 
-MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinux.com>");
+MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairefreax.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:ts4800_irqc");

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/rtc/m48t59.h
+ * include/freax/rtc/m48t59.h
  *
  * Definitions for the platform data of m48t59 RTC chip driver.
  *
@@ -9,8 +9,8 @@
  * Mark Zhan <rongkai.zhan@windriver.com>
  */
 
-#ifndef _LINUX_RTC_M48T59_H_
-#define _LINUX_RTC_M48T59_H_
+#ifndef _freax_RTC_M48T59_H_
+#define _freax_RTC_M48T59_H_
 
 /*
  * M48T59 Register Offset
@@ -58,4 +58,4 @@ struct m48t59_plat_data {
 	unsigned int offset;
 };
 
-#endif /* _LINUX_RTC_M48T59_H_ */
+#endif /* _freax_RTC_M48T59_H_ */

@@ -5,15 +5,15 @@
  * Copyright (C) 2019 STMicroelectronics
  * Author(s): Amelie Delaunay <amelie.delaunay@st.com>.
  */
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/stmfx.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/stmfx.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
 
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

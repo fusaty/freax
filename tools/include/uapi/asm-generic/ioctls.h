@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __ASM_GENERIC_IOCTLS_H
 #define __ASM_GENERIC_IOCTLS_H
 
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /*
  * These are the most common definitions for tty ioctl numbers.
@@ -45,7 +45,7 @@
 #define TIOCSSOFTCAR	0x541A
 #define FIONREAD	0x541B
 #define TIOCINQ		FIONREAD
-#define TIOCLINUX	0x541C
+#define TIOCfreax	0x541C
 #define TIOCCONS	0x541D
 #define TIOCGSERIAL	0x541E
 #define TIOCSSERIAL	0x541F

@@ -13,25 +13,25 @@
 #define KMSG_COMPONENT "kvm-s390"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/pgtable.h>
-#include <linux/mmu_notifier.h>
+#include <freax/compiler.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/hrtimer.h>
+#include <freax/init.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/mman.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/vmalloc.h>
+#include <freax/bitmap.h>
+#include <freax/sched/signal.h>
+#include <freax/string.h>
+#include <freax/pgtable.h>
+#include <freax/mmu_notifier.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/lowcore.h>
@@ -5899,6 +5899,6 @@ module_exit(kvm_s390_exit);
  * Note that we add the module alias here instead of virt/kvm/kvm_main.c
  * since x86 takes a different approach.
  */
-#include <linux/miscdevice.h>
+#include <freax/miscdevice.h>
 MODULE_ALIAS_MISCDEV(KVM_MINOR);
 MODULE_ALIAS("devname:kvm");

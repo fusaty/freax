@@ -8,18 +8,18 @@
  * Copyright (C) 2003 Guido Guenther <agx@sigxcpu.org>
  */
 
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/panic_notifier.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/rtc/ds1685.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <freax/compiler.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/panic_notifier.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/notifier.h>
+#include <freax/delay.h>
+#include <freax/rtc/ds1685.h>
+#include <freax/interrupt.h>
+#include <freax/pm.h>
 
 #include <asm/addrspace.h>
 #include <asm/irq.h>

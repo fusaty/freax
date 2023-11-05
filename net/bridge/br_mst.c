@@ -6,7 +6,7 @@
  *	Tobias Waldekranz		<tobias@waldekranz.com>
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/switchdev.h>
 
 #include "br_private.h"

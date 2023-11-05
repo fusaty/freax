@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	DCCP over IPv6
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Based on net/dccp6/ipv6.c
  *
  *	Arnaldo Carvalho de Melo <acme@ghostprotocols.net>
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/xfrm.h>
+#include <freax/string.h>
 
 #include <net/addrconf.h>
 #include <net/inet_common.h>
@@ -114,7 +114,7 @@ static int dccp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 
 	bh_lock_sock(sk);
 	if (sock_owned_by_user(sk))
-		__NET_INC_STATS(net, LINUX_MIB_LOCKDROPPEDICMPS);
+		__NET_INC_STATS(net, freax_MIB_LOCKDROPPEDICMPS);
 
 	if (sk->sk_state == DCCP_CLOSED)
 		goto out;
@@ -122,7 +122,7 @@ static int dccp_v6_err(struct sk_buff *skb, struct inet6_skb_parm *opt,
 	dp = dccp_sk(sk);
 	if ((1 << sk->sk_state) & ~(DCCPF_REQUESTING | DCCPF_LISTEN) &&
 	    !between48(seq, dp->dccps_awl, dp->dccps_awh)) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, freax_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -560,11 +560,11 @@ static struct sock *dccp_v6_request_recv_sock(const struct sock *sk,
 	return newsk;
 
 out_overflow:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_LISTENOVERFLOWS);
 out_nonewsk:
 	dst_release(dst);
 out:
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_LISTENDROPS);
 	return NULL;
 }
 

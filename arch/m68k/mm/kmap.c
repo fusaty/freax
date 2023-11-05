@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/kmap.c
+ *  freax/arch/m68k/mm/kmap.c
  *
  *  Copyright (C) 1997 Roman Hodek
  *
@@ -8,13 +8,13 @@
  *	     used by other architectures		/Roman Zippel
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>

@@ -15,10 +15,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/stringify.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/stringify.h>
 
 struct alt_instr {
 	s32 orig_offset;	/* offset to original instructions */

@@ -5,16 +5,16 @@
  * Copyright (C) 2015 Joachim Eastwood <manabian@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/reset-controller.h>
+#include <freax/spinlock.h>
 
 /* LPC18xx RGU registers */
 #define LPC18XX_RGU_CTRL0		0x100

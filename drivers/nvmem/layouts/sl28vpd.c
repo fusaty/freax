@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/crc8.h>
-#include <linux/etherdevice.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <uapi/linux/if_ether.h>
+#include <freax/crc8.h>
+#include <freax/etherdevice.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <uapi/freax/if_ether.h>
 
 #define SL28VPD_MAGIC 'V'
 

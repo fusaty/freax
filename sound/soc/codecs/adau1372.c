@@ -6,13 +6,13 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

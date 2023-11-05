@@ -11,31 +11,31 @@
  *
  * U8500 PRCM Unit interface driver
  */
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/regulator/db8500-prcmu.h>
-#include <linux/regulator/machine.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/irq.h>
+#include <freax/jiffies.h>
+#include <freax/bitops.h>
+#include <freax/fs.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/dbx500-prcmu.h>
+#include <freax/mfd/abx500/ab8500.h>
+#include <freax/regulator/db8500-prcmu.h>
+#include <freax/regulator/machine.h>
 #include "db8500-prcmu-regs.h"
 
 /* Index of different voltages to be used when accessing AVSData */

@@ -16,7 +16,7 @@
         中文版翻譯者： 伍鵬  Bryan Wu <bryan.wu@analog.com>
         中文版校譯者： 張漢輝  Eugene Teo <eugeneteo@kernel.sg>
                        楊瑞  Dave Young <hidave.darkstar@gmail.com>
-                       時奎亮 Alex Shi <alex.shi@linux.alibaba.com>
+                       時奎亮 Alex Shi <alex.shi@freax.alibaba.com>
                        胡皓文 Hu Haowen <src.res.211@gmail.com>
 
 爲什麼不應該使用“volatile”類型

@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2021 Intel Corporation, Inc.
  */
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/uio_driver.h>
+#include <freax/dfl.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/uio_driver.h>
 
 #define DRIVER_NAME "uio_dfl"
 

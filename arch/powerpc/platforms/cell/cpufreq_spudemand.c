@@ -7,13 +7,13 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <freax/cpufreq.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/atomic.h>
 #include <asm/machdep.h>
 #include <asm/spu.h>
 

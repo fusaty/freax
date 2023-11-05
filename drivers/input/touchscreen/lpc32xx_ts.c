@@ -5,14 +5,14 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 
 /*
  * Touchscreen controller register offsets

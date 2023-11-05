@@ -11,24 +11,24 @@
 
 #define pr_fmt(fmt) "LSM: " fmt
 
-#include <linux/bpf.h>
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kernel_read_file.h>
-#include <linux/lsm_hooks.h>
-#include <linux/integrity.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
-#include <linux/fsnotify.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/backing-dev.h>
-#include <linux/string.h>
-#include <linux/msg.h>
+#include <freax/bpf.h>
+#include <freax/capability.h>
+#include <freax/dcache.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/kernel_read_file.h>
+#include <freax/lsm_hooks.h>
+#include <freax/integrity.h>
+#include <freax/ima.h>
+#include <freax/evm.h>
+#include <freax/fsnotify.h>
+#include <freax/mman.h>
+#include <freax/mount.h>
+#include <freax/personality.h>
+#include <freax/backing-dev.h>
+#include <freax/string.h>
+#include <freax/msg.h>
 #include <net/flow.h>
 
 /* How many LSMs were built into the kernel? */
@@ -406,7 +406,7 @@ int __init early_security_init(void)
 
 #define LSM_HOOK(RET, DEFAULT, NAME, ...) \
 	INIT_HLIST_HEAD(&security_hook_heads.NAME);
-#include "linux/lsm_hook_defs.h"
+#include "freax/lsm_hook_defs.h"
 #undef LSM_HOOK
 
 	for (lsm = __start_early_lsm_info; lsm < __end_early_lsm_info; lsm++) {
@@ -735,7 +735,7 @@ static int lsm_superblock_alloc(struct super_block *sb)
 }
 
 /*
- * The default value of the LSM hook is defined in linux/lsm_hook_defs.h and
+ * The default value of the LSM hook is defined in freax/lsm_hook_defs.h and
  * can be accessed with:
  *
  *	LSM_RET_DEFAULT(<hook_name>)
@@ -750,7 +750,7 @@ static int lsm_superblock_alloc(struct super_block *sb)
 #define LSM_HOOK(RET, DEFAULT, NAME, ...) \
 	DECLARE_LSM_RET_DEFAULT_##RET(DEFAULT, NAME)
 
-#include <linux/lsm_hook_defs.h>
+#include <freax/lsm_hook_defs.h>
 #undef LSM_HOOK
 
 /*
@@ -933,8 +933,8 @@ int security_capset(struct cred *new, const struct cred *old,
  * @opts: capability check options
  *
  * Check whether the @tsk process has the @cap capability in the indicated
- * credentials.  @cap contains the capability <include/linux/capability.h>.
- * @opts contains options for the capable check <include/linux/security.h>.
+ * credentials.  @cap contains the capability <include/freax/capability.h>.
+ * @opts contains options for the capable check <include/freax/security.h>.
  *
  * Return: Returns 0 if the capability is granted.
  */
@@ -996,7 +996,7 @@ int security_syslog(int type)
  * @tz: timezone
  *
  * Check permission to change the system time, struct timespec64 is defined in
- * <include/linux/time64.h> and timezone is defined in <include/linux/time.h>.
+ * <include/freax/time64.h> and timezone is defined in <include/freax/time.h>.
  *
  * Return: Returns 0 if permission is granted.
  */
@@ -1051,17 +1051,17 @@ int security_vm_enough_memory_mm(struct mm_struct *mm, long pages)
  * program.  This hook may also optionally check permissions (e.g. for
  * transitions between security domains).  The hook must set @bprm->secureexec
  * to 1 if AT_SECURE should be set to request libc enable secure mode.  @bprm
- * contains the linux_binprm structure.
+ * contains the freax_binprm structure.
  *
  * Return: Returns 0 if the hook is successful and permission is granted.
  */
-int security_bprm_creds_for_exec(struct linux_binprm *bprm)
+int security_bprm_creds_for_exec(struct freax_binprm *bprm)
 {
 	return call_int_hook(bprm_creds_for_exec, 0, bprm);
 }
 
 /**
- * security_bprm_creds_from_file() - Update linux_binprm creds based on file
+ * security_bprm_creds_from_file() - Update freax_binprm creds based on file
  * @bprm: binary program information
  * @file: associated file
  *
@@ -1074,12 +1074,12 @@ int security_bprm_creds_for_exec(struct linux_binprm *bprm)
  * transitions between security domains).  The hook must set @bprm->secureexec
  * to 1 if AT_SECURE should be set to request libc enable secure mode.  The
  * hook must add to @bprm->per_clear any personality flags that should be
- * cleared from current->personality.  @bprm contains the linux_binprm
+ * cleared from current->personality.  @bprm contains the freax_binprm
  * structure.
  *
  * Return: Returns 0 if the hook is successful and permission is granted.
  */
-int security_bprm_creds_from_file(struct linux_binprm *bprm, const struct file *file)
+int security_bprm_creds_from_file(struct freax_binprm *bprm, const struct file *file)
 {
 	return call_int_hook(bprm_creds_from_file, 0, bprm, file);
 }
@@ -1092,11 +1092,11 @@ int security_bprm_creds_from_file(struct linux_binprm *bprm, const struct file *
  * It allows a check against the @bprm->cred->security value which was set in
  * the preceding creds_for_exec call.  The argv list and envp list are reliably
  * available in @bprm.  This hook may be called multiple times during a single
- * execve.  @bprm contains the linux_binprm structure.
+ * execve.  @bprm contains the freax_binprm structure.
  *
  * Return: Returns 0 if the hook is successful and permission is granted.
  */
-int security_bprm_check(struct linux_binprm *bprm)
+int security_bprm_check(struct freax_binprm *bprm)
 {
 	int ret;
 
@@ -1113,12 +1113,12 @@ int security_bprm_check(struct linux_binprm *bprm)
  * Prepare to install the new security attributes of a process being
  * transformed by an execve operation, based on the old credentials pointed to
  * by @current->cred and the information set in @bprm->cred by the
- * bprm_creds_for_exec hook.  @bprm points to the linux_binprm structure.  This
+ * bprm_creds_for_exec hook.  @bprm points to the freax_binprm structure.  This
  * hook is a good place to perform state changes on the process such as closing
  * open file descriptors to which access will no longer be granted when the
  * attributes are changed.  This is called immediately before commit_creds().
  */
-void security_bprm_committing_creds(const struct linux_binprm *bprm)
+void security_bprm_committing_creds(const struct freax_binprm *bprm)
 {
 	call_void_hook(bprm_committing_creds, bprm);
 }
@@ -1129,12 +1129,12 @@ void security_bprm_committing_creds(const struct linux_binprm *bprm)
  *
  * Tidy up after the installation of the new security attributes of a process
  * being transformed by an execve operation.  The new credentials have, by this
- * point, been set to @current->cred.  @bprm points to the linux_binprm
+ * point, been set to @current->cred.  @bprm points to the freax_binprm
  * structure.  This hook is a good place to perform state changes on the
  * process such as clearing out non-inheritable signal state.  This is called
  * immediately after commit_creds().
  */
-void security_bprm_committed_creds(const struct linux_binprm *bprm)
+void security_bprm_committed_creds(const struct freax_binprm *bprm)
 {
 	call_void_hook(bprm_committed_creds, bprm);
 }
@@ -1612,7 +1612,7 @@ EXPORT_SYMBOL(security_dentry_create_files_as);
  * lsm_get_xattr_slot() to retrieve the slots reserved by the security module
  * with the lbs_xattr_count field of the lsm_blob_sizes structure.  For each
  * slot, the hook function should set ->name to the attribute name suffix
- * (e.g. selinux), to allocate ->value (will be freed by the caller) and set it
+ * (e.g. sefreax), to allocate ->value (will be freed by the caller) and set it
  * to the attribute value, to set ->value_len to the length of the value.  If
  * the security module does not use security attributes or does not wish to put
  * a security attribute on this particular inode, then it should return
@@ -1854,7 +1854,7 @@ int security_path_truncate(const struct path *path)
  *
  * Check for permission to change a mode of the file @path. The new mode is
  * specified in @mode which is a bitmask of constants from
- * <include/uapi/linux/stat.h>.
+ * <include/uapi/freax/stat.h>.
  *
  * Return: Returns 0 if permission is granted.
  */
@@ -2096,8 +2096,8 @@ int security_inode_follow_link(struct dentry *dentry, struct inode *inode,
  * @mask: access mask
  *
  * Check permission before accessing an inode.  This hook is called by the
- * existing Linux permission function, so a security module can use it to
- * provide additional checking for existing Linux permission checks.  Notice
+ * existing freax permission function, so a security module can use it to
+ * provide additional checking for existing freax permission checks.  Notice
  * that this hook is called when a file is opened (as well as many other
  * operations), whereas the file_security_ops permission hook is called when
  * the actual read/write operations are performed.
@@ -2175,7 +2175,7 @@ int security_inode_setxattr(struct mnt_idmap *idmap,
 	if (unlikely(IS_PRIVATE(d_backing_inode(dentry))))
 		return 0;
 	/*
-	 * SELinux and Smack integrate the cap call,
+	 * SEfreax and Smack integrate the cap call,
 	 * so assume that all LSMs supplying this call do so.
 	 */
 	ret = call_int_hook(inode_setxattr, 1, idmap, dentry, name, value,
@@ -2338,7 +2338,7 @@ int security_inode_removexattr(struct mnt_idmap *idmap,
 	if (unlikely(IS_PRIVATE(d_backing_inode(dentry))))
 		return 0;
 	/*
-	 * SELinux and Smack integrate the cap call,
+	 * SEfreax and Smack integrate the cap call,
 	 * so assume that all LSMs supplying this call do so.
 	 */
 	ret = call_int_hook(inode_removexattr, 1, idmap, dentry, name);
@@ -4062,7 +4062,7 @@ int security_watch_key(struct key *key)
  * between @sock and @other.
  *
  * The @unix_stream_connect and @unix_may_send hooks were necessary because
- * Linux provides an alternative to the conventional file name space for Unix
+ * freax provides an alternative to the conventional file name space for Unix
  * domain sockets.  Whereas binding and connecting to sockets in the file name
  * space is mediated by the typical file permissions (and caught by the mknod
  * and permission hooks in inode_security_ops), binding and connecting to
@@ -4089,7 +4089,7 @@ EXPORT_SYMBOL(security_unix_stream_connect);
  * @other.
  *
  * The @unix_stream_connect and @unix_may_send hooks were necessary because
- * Linux provides an alternative to the conventional file name space for Unix
+ * freax provides an alternative to the conventional file name space for Unix
  * domain sockets.  Whereas binding and connecting to sockets in the file name
  * space is mediated by the typical file permissions (and caught by the mknod
  * and permission hooks in inode_security_ops), binding and connecting to
@@ -4953,7 +4953,7 @@ int security_xfrm_state_pol_flow_match(struct xfrm_state *x,
 	/*
 	 * Since this function is expected to return 0 or 1, the judgment
 	 * becomes difficult if multiple LSMs supply this call. Fortunately,
-	 * we can use the first LSM's judgment because currently only SELinux
+	 * we can use the first LSM's judgment because currently only SEfreax
 	 * supplies this call.
 	 *
 	 * For speed optimization, we explicitly break the loop rather than

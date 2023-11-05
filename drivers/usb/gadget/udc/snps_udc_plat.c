@@ -5,16 +5,16 @@
  * Copyright (C) 2016 Broadcom
  */
 
-#include <linux/extcon.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/module.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <freax/extcon.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_gpio.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/module.h>
+#include <freax/dmapool.h>
+#include <freax/interrupt.h>
+#include <freax/moduleparam.h>
 #include "amd5536udc.h"
 
 /* description */

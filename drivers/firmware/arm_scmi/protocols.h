@@ -9,18 +9,18 @@
 #ifndef _SCMI_PROTOCOLS_H
 #define _SCMI_PROTOCOLS_H
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scmi_protocol.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/hashtable.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/refcount.h>
+#include <freax/scmi_protocol.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 

@@ -4,11 +4,11 @@
  * Author: Lin Huang <hl@rock-chips.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/arm-smccc.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include <soc/rockchip/rockchip_sip.h>
 #include "clk.h"
 

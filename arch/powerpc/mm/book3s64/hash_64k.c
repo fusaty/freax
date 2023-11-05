@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2015
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@freax.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2 of the GNU Lesser General Public License
@@ -12,7 +12,7 @@
  *
  */
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <asm/machdep.h>
 #include <asm/mmu.h>
 
@@ -48,7 +48,7 @@ int __hash_page_4K(unsigned long ea, unsigned long access, unsigned long vsid,
 	unsigned long shift = mmu_psize_defs[MMU_PAGE_4K].shift;
 
 	/*
-	 * atomically mark the linux large page PTE busy and dirty
+	 * atomically mark the freax large page PTE busy and dirty
 	 */
 	do {
 		pte_t pte = READ_ONCE(*ptep);
@@ -237,7 +237,7 @@ int __hash_page_64K(unsigned long ea, unsigned long access,
 	unsigned long shift = mmu_psize_defs[MMU_PAGE_64K].shift;
 
 	/*
-	 * atomically mark the linux large page PTE busy and dirty
+	 * atomically mark the freax large page PTE busy and dirty
 	 */
 	do {
 		pte_t pte = READ_ONCE(*ptep);

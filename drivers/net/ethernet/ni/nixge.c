@@ -4,19 +4,19 @@
  * Author: Moritz Fischer <mdf@kernel.org>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/phy.h>
-#include <linux/mii.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/ethtool.h>
-#include <linux/iopoll.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/skbuff.h>
+#include <freax/phy.h>
+#include <freax/mii.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/ethtool.h>
+#include <freax/iopoll.h>
 
 #define TX_BD_NUM		64
 #define RX_BD_NUM		128

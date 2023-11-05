@@ -10,13 +10,13 @@
  * This file contains the public data structure and API definitions.
  */
 
-#ifndef __LINUX_RT_MUTEX_H
-#define __LINUX_RT_MUTEX_H
+#ifndef __freax_RT_MUTEX_H
+#define __freax_RT_MUTEX_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/rbtree_types.h>
-#include <linux/spinlock_types_raw.h>
+#include <freax/compiler.h>
+#include <freax/linkage.h>
+#include <freax/rbtree_types.h>
+#include <freax/spinlock_types_raw.h>
 
 extern int max_lock_depth; /* for sysctl */
 

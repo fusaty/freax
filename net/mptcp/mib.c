@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 #include <net/ip.h>
 #include <net/mptcp.h>
 #include <net/snmp.h>

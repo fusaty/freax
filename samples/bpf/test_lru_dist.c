@@ -3,10 +3,10 @@
  * Copyright (c) 2016 Facebook
  */
 #define _GNU_SOURCE
-#include <linux/types.h>
+#include <freax/types.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <errno.h>
 #include <string.h>
 #include <assert.h>

@@ -2,11 +2,11 @@
 /* Copyright (c) 2020, Loongson Corporation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/of_irq.h>
+#include <freax/clk-provider.h>
+#include <freax/pci.h>
+#include <freax/dmi.h>
+#include <freax/device.h>
+#include <freax/of_irq.h>
 #include "stmmac.h"
 
 static int loongson_default_data(struct plat_stmmacenet_data *plat)

@@ -2,16 +2,16 @@
 /* Copyright (c) 2010-2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/log2.h>
+#include <freax/of.h>
 
 #define PON_CNTL_1 0x1C
 #define PON_CNTL_PULL_UP BIT(7)

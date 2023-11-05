@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CTYPE_H
-#define _LINUX_CTYPE_H
+#ifndef _freax_CTYPE_H
+#define _freax_CTYPE_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * NOTE! This ctype does not handle EOF like the standard C

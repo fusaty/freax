@@ -3,9 +3,9 @@
  * Handle interrupts from the SRM, assuming no additional weirdness.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/irq.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/irq.h>
 
 #include "proto.h"
 #include "irq_impl.h"

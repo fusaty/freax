@@ -6,7 +6,7 @@
 #include "alloc_background.h"
 #include "nocow_locking_types.h"
 
-#include <linux/hash.h>
+#include <freax/hash.h>
 
 static inline struct nocow_lock_bucket *bucket_nocow_lock(struct bucket_nocow_lock_table *t,
 							  u64 dev_bucket)

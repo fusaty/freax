@@ -6,9 +6,9 @@
  * Author: Yu Tu <yu.tu@amlogic.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
 
 #include "clk-regmap.h"
 #include "vid-pll-div.h"

@@ -16,13 +16,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/phy.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/brcmphy.h>
-#include <linux/rtnetlink.h>
+#include <freax/kernel.h>
+#include <freax/phy.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/delay.h>
+#include <freax/brcmphy.h>
+#include <freax/rtnetlink.h>
 #include <net/dsa.h>
 
 #include "b53_priv.h"

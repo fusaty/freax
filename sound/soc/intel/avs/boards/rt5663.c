@@ -3,12 +3,12 @@
 // Copyright(c) 2022-2023 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 
-#include <linux/clk.h>
-#include <linux/input.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/input.h>
+#include <freax/module.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

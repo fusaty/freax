@@ -3,14 +3,14 @@
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/leds.h>
-#include <linux/led-class-flash.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/leds.h>
+#include <freax/led-class-flash.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 #include <media/v4l2-flash-led-class.h>
 
 /* registers definitions */

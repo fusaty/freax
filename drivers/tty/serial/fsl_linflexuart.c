@@ -6,16 +6,16 @@
  * Copyright 2017-2019 NXP
  */
 
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
+#include <freax/console.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/tty_flip.h>
+#include <freax/delay.h>
 
 /* All registers are 32-bit width */
 

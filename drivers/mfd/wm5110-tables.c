@@ -7,11 +7,11 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/registers.h>
-#include <linux/device.h>
+#include <freax/mfd/arizona/core.h>
+#include <freax/mfd/arizona/registers.h>
+#include <freax/device.h>
 
 #include "arizona.h"
 

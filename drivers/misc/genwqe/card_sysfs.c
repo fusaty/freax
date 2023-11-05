@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@freax.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -16,15 +16,15 @@
  * debugging, please also see the debugfs interfaces of this driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/sysfs.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
 
 #include "card_base.h"
 #include "card_ddcb.h"

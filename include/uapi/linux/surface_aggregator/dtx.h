@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Surface DTX (clipboard detachment system driver) user-space interface.
  *
@@ -9,11 +9,11 @@
  * Copyright (C) 2020-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _UAPI_LINUX_SURFACE_AGGREGATOR_DTX_H
-#define _UAPI_LINUX_SURFACE_AGGREGATOR_DTX_H
+#ifndef _UAPI_freax_SURFACE_AGGREGATOR_DTX_H
+#define _UAPI_freax_SURFACE_AGGREGATOR_DTX_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /* Status/error categories */
 #define SDTX_CATEGORY_STATUS		0x0000
@@ -143,4 +143,4 @@ struct sdtx_base_info {
 #define SDTX_IOCTL_GET_DEVICE_MODE	_IOR(0xa5, 0x2a, __u16)
 #define SDTX_IOCTL_GET_LATCH_STATUS	_IOR(0xa5, 0x2b, __u16)
 
-#endif /* _UAPI_LINUX_SURFACE_AGGREGATOR_DTX_H */
+#endif /* _UAPI_freax_SURFACE_AGGREGATOR_DTX_H */

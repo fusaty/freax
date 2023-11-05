@@ -8,7 +8,7 @@ Introduction
 The Adjunct Processor (AP) facility is an IBM Z cryptographic facility comprised
 of three AP instructions and from 1 up to 256 PCIe cryptographic adapter cards.
 The AP devices provide cryptographic functions to all CPUs assigned to a
-linux system running in an IBM Z system LPAR.
+freax system running in an IBM Z system LPAR.
 
 The AP adapter cards are exposed via the AP bus. The motivation for vfio-ap
 is to make AP cards available to KVM guests using the VFIO mediated device
@@ -25,14 +25,14 @@ definitions:
 
   An AP adapter is an IBM Z adapter card that can perform cryptographic
   functions. There can be from 0 to 256 adapters assigned to an LPAR. Adapters
-  assigned to the LPAR in which a linux host is running will be available to
-  the linux host. Each adapter is identified by a number from 0 to 255; however,
+  assigned to the LPAR in which a freax host is running will be available to
+  the freax host. Each adapter is identified by a number from 0 to 255; however,
   the maximum adapter number is determined by machine model and/or adapter type.
   When installed, an AP adapter is accessed by AP instructions executed by any
   CPU.
 
   The AP adapter cards are assigned to a given LPAR via the system's Activation
-  Profile which can be edited via the HMC. When the linux host system is IPL'd
+  Profile which can be edited via the HMC. When the freax host system is IPL'd
   in the LPAR, the AP bus detects the AP adapter cards assigned to the LPAR and
   creates a sysfs device for each assigned adapter. For example, if AP adapters
   4 and 10 (0x0a) are assigned to the LPAR, the AP bus will create the following
@@ -66,7 +66,7 @@ definitions:
       domain.
 
   The AP usage and control domains are assigned to a given LPAR via the system's
-  Activation Profile which can be edited via the HMC. When a linux host system
+  Activation Profile which can be edited via the HMC. When a freax host system
   is IPL'd in the LPAR, the AP bus module detects the AP usage and control
   domains assigned to the LPAR. The domain number of each usage domain and
   adapter number of each AP adapter are combined to create AP queue devices
@@ -155,7 +155,7 @@ adapters 1 and 2 and usage domains 5 and 6 are assigned to a guest, the APQNs
 
 The APQNs can provide secure key functionality - i.e., a private key is stored
 on the adapter card for each of its domains - so each APQN must be assigned to
-at most one guest or to the linux host::
+at most one guest or to the freax host::
 
    Example 1: Valid configuration:
    ------------------------------
@@ -431,7 +431,7 @@ configured via its APCB by:
 * Setting the bits in the ADM corresponding to the domain dIDs assigned to the
   vfio_ap mediated device via its 'assign_control_domains' interface.
 
-The linux device model precludes passing a device through to a KVM guest that
+The freax device model precludes passing a device through to a KVM guest that
 is not bound to the device driver facilitating its pass-through. Consequently,
 an APQN that does not reference a queue device bound to the vfio_ap device
 driver will not be assigned to a KVM guest's matrix. The AP architecture,
@@ -536,7 +536,7 @@ CARD.DOMAIN TYPE  MODE
 
 These are the steps:
 
-1. Install the vfio_ap module on the linux host. The dependency chain for the
+1. Install the vfio_ap module on the freax host. The dependency chain for the
    vfio_ap module is:
    * iommu
    * s390
@@ -614,7 +614,7 @@ These are the steps:
 
    * All other APQNs are available for use by the non-default device drivers.
 
-   The APQN of each AP queue device assigned to the linux host is checked by the
+   The APQN of each AP queue device assigned to the freax host is checked by the
    AP bus against the set of APQNs derived from the Cartesian product of APIDs
    and APQIs marked as available to the default AP queue device drivers. If a
    match is detected,  only the default AP queue device drivers will be probed;
@@ -933,7 +933,7 @@ all of the steps starting with step 3 will have to be performed again. Note
 that the remove will fail if a guest using the vfio_ap mdev is still running.
 
 It is not necessary to remove a vfio_ap mdev, but one may want to
-remove it if no guest will use it during the remaining lifetime of the linux
+remove it if no guest will use it during the remaining lifetime of the freax
 host. If the vfio_ap mdev is removed, one may want to also reconfigure
 the pool of adapters and queues reserved for use by the default drivers.
 

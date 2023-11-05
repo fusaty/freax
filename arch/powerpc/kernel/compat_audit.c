@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #undef __powerpc64__
-#include <linux/audit_arch.h>
+#include <freax/audit_arch.h>
 #include <asm/unistd.h>
 
 #include "audit_32.h"

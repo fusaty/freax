@@ -44,9 +44,9 @@
 
 #include <asm/byteorder.h>
 #include <crypto/algapi.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
 #define ROUNDS 16
 

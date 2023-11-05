@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2012
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@freax.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -12,10 +12,10 @@
  *
  */
 
-#ifndef _LINUX_HUGETLB_CGROUP_H
-#define _LINUX_HUGETLB_CGROUP_H
+#ifndef _freax_HUGETLB_CGROUP_H
+#define _freax_HUGETLB_CGROUP_H
 
-#include <linux/mmdebug.h>
+#include <freax/mmdebug.h>
 
 struct hugetlb_cgroup;
 struct resv_map;

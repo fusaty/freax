@@ -4,14 +4,14 @@
 #define __NX_842_H__
 
 #include <crypto/algapi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/ratelimit.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/ratelimit.h>
 
 /* Restrictions on Data Descriptor List (DDL) and Entry (DDE) buffers
  *

@@ -11,7 +11,7 @@
 #ifndef _MSI_EC_H_
 #define _MSI_EC_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MSI_EC_DRIVER_NAME "msi-ec"
 

@@ -6,20 +6,20 @@
  * Copyright (C) 2013-2014 Jens Axboe
  */
 
-#ifndef __LINUX_SCALE_BITMAP_H
-#define __LINUX_SCALE_BITMAP_H
+#ifndef __freax_SCALE_BITMAP_H
+#define __freax_SCALE_BITMAP_H
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/minmax.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/cache.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/minmax.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 struct seq_file;
 
@@ -308,7 +308,7 @@ static inline unsigned long *__sbitmap_word(struct sbitmap *sb,
 	return &sb->map[SB_NR_TO_INDEX(sb, bitnr)].word;
 }
 
-/* Helpers equivalent to the operations in asm/bitops.h and linux/bitmap.h */
+/* Helpers equivalent to the operations in asm/bitops.h and freax/bitmap.h */
 
 static inline void sbitmap_set_bit(struct sbitmap *sb, unsigned int bitnr)
 {
@@ -636,4 +636,4 @@ void sbitmap_add_wait_queue(struct sbitmap_queue *sbq,
  */
 void sbitmap_del_wait_queue(struct sbq_wait *sbq_wait);
 
-#endif /* __LINUX_SCALE_BITMAP_H */
+#endif /* __freax_SCALE_BITMAP_H */

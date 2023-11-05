@@ -5,7 +5,7 @@
  * Copyright(c) 2015 Intel Deutschland GmbH
  *****************************************************************************/
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include "iwl-trans.h"
 #include "iwl-modparams.h"
 #include "dev.h"

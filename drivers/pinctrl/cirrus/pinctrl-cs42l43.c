@@ -5,25 +5,25 @@
 // Copyright (c) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/bits.h>
-#include <linux/build_bug.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/cs42l43.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/string_helpers.h>
+#include <freax/bits.h>
+#include <freax/build_bug.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/string_helpers.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "../pinctrl-utils.h"
 

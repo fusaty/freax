@@ -1,5 +1,5 @@
 What:		/sys/devices/system/machinecheck/machinecheckX/
-Contact:	Andi Kleen <ak@linux.intel.com>
+Contact:	Andi Kleen <ak@freax.intel.com>
 Date:		Feb, 2007
 Description:
 		(X = CPU number)
@@ -19,7 +19,7 @@ Description:
 		Each CPU has its own directory.
 
 What:		/sys/devices/system/machinecheck/machinecheckX/bank<Y>
-Contact:	Andi Kleen <ak@linux.intel.com>
+Contact:	Andi Kleen <ak@freax.intel.com>
 Date:		Feb, 2007
 Description:
 		(Y bank number)
@@ -36,7 +36,7 @@ Description:
 		per bank.  This is not visible here
 
 What:		/sys/devices/system/machinecheck/machinecheckX/check_interval
-Contact:	Andi Kleen <ak@linux.intel.com>
+Contact:	Andi Kleen <ak@freax.intel.com>
 Date:		Feb, 2007
 Description:
 		The entries appear for each CPU, but they are truly shared
@@ -54,7 +54,7 @@ Description:
 		in other ways)
 
 What:		/sys/devices/system/machinecheck/machinecheckX/trigger
-Contact:	Andi Kleen <ak@linux.intel.com>
+Contact:	Andi Kleen <ak@freax.intel.com>
 Date:		Feb, 2007
 Description:
 		The entries appear for each CPU, but they are truly shared
@@ -65,7 +65,7 @@ Description:
 		and allows to detect events faster.
 
 What:		/sys/devices/system/machinecheck/machinecheckX/monarch_timeout
-Contact:	Andi Kleen <ak@linux.intel.com>
+Contact:	Andi Kleen <ak@freax.intel.com>
 Date:		Feb, 2007
 Description:
 		How long to wait for the other CPUs to machine check too on a

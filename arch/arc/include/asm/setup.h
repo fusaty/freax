@@ -6,7 +6,7 @@
 #define __ASM_ARC_SETUP_H
 
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <uapi/asm/setup.h>
 
 #define COMMAND_LINE_SIZE 256

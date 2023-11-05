@@ -11,11 +11,11 @@
  * You could find a link for the datasheet in Documentation/arch/arm/sunxi.rst
  */
 
-#include <linux/bottom_half.h>
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/bottom_half.h>
+#include <freax/crypto.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/des.h>
 #include <crypto/internal/skcipher.h>

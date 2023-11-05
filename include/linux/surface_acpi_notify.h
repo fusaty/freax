@@ -8,11 +8,11 @@
  * Copyright (C) 2019-2020 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _LINUX_SURFACE_ACPI_NOTIFY_H
-#define _LINUX_SURFACE_ACPI_NOTIFY_H
+#ifndef _freax_SURFACE_ACPI_NOTIFY_H
+#define _freax_SURFACE_ACPI_NOTIFY_H
 
-#include <linux/notifier.h>
-#include <linux/types.h>
+#include <freax/notifier.h>
+#include <freax/types.h>
 
 /**
  * struct san_dgpu_event - Discrete GPU ACPI event.
@@ -36,4 +36,4 @@ int san_client_link(struct device *client);
 int san_dgpu_notifier_register(struct notifier_block *nb);
 int san_dgpu_notifier_unregister(struct notifier_block *nb);
 
-#endif /* _LINUX_SURFACE_ACPI_NOTIFY_H */
+#endif /* _freax_SURFACE_ACPI_NOTIFY_H */

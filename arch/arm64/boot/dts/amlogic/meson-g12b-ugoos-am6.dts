@@ -16,7 +16,7 @@
 
 	spdif_dit: audio-codec-1 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -122,7 +122,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-khadas";
+	freax,rc-map-name = "rc-khadas";
 };
 
 &spdifout_a {

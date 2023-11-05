@@ -13,18 +13,18 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bug.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/printk.h>
-#include <linux/proc_ns.h>
-#include <linux/rhashtable.h>
-#include <linux/rtnetlink.h>
-#include <linux/rwsem.h>
+#include <freax/bpf.h>
+#include <freax/bpf_verifier.h>
+#include <freax/bug.h>
+#include <freax/kdev_t.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/netdevice.h>
+#include <freax/printk.h>
+#include <freax/proc_ns.h>
+#include <freax/rhashtable.h>
+#include <freax/rtnetlink.h>
+#include <freax/rwsem.h>
 #include <net/xdp.h>
 
 /* Protects offdevs, members of bpf_offload_netdev and offload members

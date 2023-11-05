@@ -7,19 +7,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/skbuff.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/netfilter.h>
+#include <freax/slab.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_irc.h>
+#include <freax/netfilter/nf_conntrack_irc.h>
 
 #define MAX_PORTS 8
 static unsigned short ports[MAX_PORTS];

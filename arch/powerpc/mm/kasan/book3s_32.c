@@ -2,8 +2,8 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/kasan.h>
-#include <linux/memblock.h>
+#include <freax/kasan.h>
+#include <freax/memblock.h>
 #include <mm/mmu_decl.h>
 
 int __init kasan_init_region(void *start, size_t size)

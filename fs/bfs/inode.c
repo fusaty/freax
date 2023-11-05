@@ -7,20 +7,20 @@
  *	Made endianness-clean by Andrew Stribblehill <ads@wompom.org>, 2005.
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/vfs.h>
+#include <freax/writeback.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
 #include "bfs.h"
 
 MODULE_AUTHOR("Tigran Aivazian <aivazian.tigran@gmail.com>");
-MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for Linux");
+MODULE_DESCRIPTION("SCO UnixWare BFS filesystem for freax");
 MODULE_LICENSE("GPL");
 
 #undef DEBUG

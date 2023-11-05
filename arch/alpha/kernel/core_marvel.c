@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_marvel.c
+ *	freax/arch/alpha/kernel/core_marvel.c
  *
  * Code common to all Marvel based systems.
  */
@@ -10,15 +10,15 @@
 #include <asm/core_marvel.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/mc146818rtc.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/vmalloc.h>
+#include <freax/mc146818rtc.h>
+#include <freax/rtc.h>
+#include <freax/module.h>
+#include <freax/memblock.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>
@@ -845,10 +845,10 @@ EXPORT_SYMBOL(marvel_iowrite8);
 /*
  * AGP GART Support.
  */
-#include <linux/agp_backend.h>
+#include <freax/agp_backend.h>
 #include <asm/agp_backend.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 
 struct marvel_agp_aperture {
 	struct pci_iommu_arena *arena;

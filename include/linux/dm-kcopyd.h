@@ -10,12 +10,12 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_KCOPYD_H
-#define _LINUX_DM_KCOPYD_H
+#ifndef _freax_DM_KCOPYD_H
+#define _freax_DM_KCOPYD_H
 
 #ifdef __KERNEL__
 
-#include <linux/dm-io.h>
+#include <freax/dm-io.h>
 
 /* FIXME: make this configurable */
 #define DM_KCOPYD_MAX_REGIONS 8
@@ -88,4 +88,4 @@ void dm_kcopyd_zero(struct dm_kcopyd_client *kc,
 		    unsigned int flags, dm_kcopyd_notify_fn fn, void *context);
 
 #endif	/* __KERNEL__ */
-#endif	/* _LINUX_DM_KCOPYD_H */
+#endif	/* _freax_DM_KCOPYD_H */

@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/iopoll.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-h264.h>
 

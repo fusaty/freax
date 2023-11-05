@@ -53,8 +53,8 @@ Please see Documentation/arch/x86/x86_64/machinecheck.rst for sysfs runtime tuna
 		to disable.
    mce=bios_cmci_threshold
 		Don't overwrite the bios-set CMCI threshold. This boot option
-		prevents Linux from overwriting the CMCI threshold set by the
-		bios. Without this option, Linux always sets the CMCI
+		prevents freax from overwriting the CMCI threshold set by the
+		bios. Without this option, freax always sets the CMCI
 		threshold to 1. Enabling this may make memory predictive failure
 		analysis less effective if the bios sets thresholds for memory
 		errors since we will not see details for all errors.

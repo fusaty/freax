@@ -8,7 +8,7 @@ title: Texas Instruments INA3221 Current and Voltage Monitor
 
 maintainers:
   - Jean Delvare <jdelvare@suse.com>
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <freax@roeck-us.net>
 
 properties:
   compatible:

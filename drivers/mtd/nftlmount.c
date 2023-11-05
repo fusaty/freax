@@ -7,13 +7,13 @@
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nftl.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/nftl.h>
 
 #define SECTORSIZE 512
 

@@ -5,13 +5,13 @@
  * Copyright (C) 2023 Linaro Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/scmi_protocol.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_opp.h>
+#include <freax/scmi_protocol.h>
+#include <freax/slab.h>
 
 struct scmi_perf_domain {
 	struct generic_pm_domain genpd;

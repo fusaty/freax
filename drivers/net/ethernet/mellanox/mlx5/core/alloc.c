@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/bitmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/mlx5/driver.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/bitmap.h>
+#include <freax/dma-mapping.h>
+#include <freax/vmalloc.h>
+#include <freax/mlx5/driver.h>
 
 #include "mlx5_core.h"
 

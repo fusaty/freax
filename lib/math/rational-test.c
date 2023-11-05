@@ -2,7 +2,7 @@
 
 #include <kunit/test.h>
 
-#include <linux/rational.h>
+#include <freax/rational.h>
 
 struct rational_test_param {
 	unsigned long num, den;

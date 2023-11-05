@@ -34,14 +34,14 @@
 		button-reset {
 			label = "PB_RST";
 			gpios = <&pioB 30 GPIO_ACTIVE_HIGH>;
-			linux,code = <0x100>;
+			freax,code = <0x100>;
 			wakeup-source;
 		};
 
 		button-user {
 			label = "PB_USER";
 			gpios = <&pioB 31 GPIO_ACTIVE_HIGH>;
-			linux,code = <0x101>;
+			freax,code = <0x101>;
 			wakeup-source;
 		};
 	};
@@ -53,28 +53,28 @@
 			label = "pwm:green:network";
 			pwms = <&tcb1_pwm1 0 10000000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-2 {
 			label = "pwm:red:network";
 			pwms = <&tcb1_pwm2 0 10000000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-3 {
 			label = "pwm:green:user";
 			pwms = <&tcb1_pwm0 0 10000000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-4 {
 			label = "pwm:red:user";
 			pwms = <&tcb1_pwm0 1 10000000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 	};
 };

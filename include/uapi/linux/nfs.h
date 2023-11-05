@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * NFS protocol definitions
  *
  * This file contains constants mostly for Version 2 of the protocol,
  * but also has a couple of NFSv3 bits in (notably the error codes).
  */
-#ifndef _UAPI_LINUX_NFS_H
-#define _UAPI_LINUX_NFS_H
+#ifndef _UAPI_freax_NFS_H
+#define _UAPI_freax_NFS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define NFS_PROGRAM	100003
 #define NFS_PORT	2049
@@ -132,4 +132,4 @@ enum nfs_ftype {
 	NFFIFO = 8
 };
 
-#endif /* _UAPI_LINUX_NFS_H */
+#endif /* _UAPI_freax_NFS_H */

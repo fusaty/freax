@@ -11,7 +11,7 @@
 #ifndef _ASM_DEC_PROM_H
 #define _ASM_DEC_PROM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <asm/addrspace.h>
 

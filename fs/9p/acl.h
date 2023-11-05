@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: LGPL-2.1 */
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@freax.vnet.ibm.com>
  */
 #ifndef FS_9P_ACL_H
 #define FS_9P_ACL_H

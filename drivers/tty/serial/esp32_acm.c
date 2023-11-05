@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/tty_flip.h>
 #include <asm/serial.h>
 
 #define DRIVER_NAME	"esp32s3-acm"

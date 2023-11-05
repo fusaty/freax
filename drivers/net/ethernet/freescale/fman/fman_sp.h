@@ -7,7 +7,7 @@
 #define __FM_SP_H
 
 #include "fman.h"
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ILLEGAL_BASE    (~0)
 

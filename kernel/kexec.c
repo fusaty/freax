@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/security.h>
-#include <linux/kexec.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <freax/capability.h>
+#include <freax/mm.h>
+#include <freax/file.h>
+#include <freax/security.h>
+#include <freax/kexec.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/syscalls.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
 
 #include "kexec_internal.h"
 

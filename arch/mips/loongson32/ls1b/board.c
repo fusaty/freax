@@ -3,9 +3,9 @@
  * Copyright (c) 2011-2016 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/leds.h>
-#include <linux/mtd/partitions.h>
-#include <linux/sizes.h>
+#include <freax/leds.h>
+#include <freax/mtd/partitions.h>
+#include <freax/sizes.h>
 
 #include <loongson1.h>
 #include <dma.h>

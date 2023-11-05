@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
+#include <freax/export.h>
 
 #include "rds.h"
 

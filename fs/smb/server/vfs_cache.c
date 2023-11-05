@@ -4,10 +4,10 @@
  * Copyright (C) 2019 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 #include "glob.h"
 #include "vfs_cache.h"

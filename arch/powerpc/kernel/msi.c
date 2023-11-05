@@ -3,9 +3,9 @@
  * Copyright 2006-2007, Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/msi.h>
+#include <freax/pci.h>
 
 #include <asm/machdep.h>
 

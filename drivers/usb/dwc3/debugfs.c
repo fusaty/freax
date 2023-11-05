@@ -8,17 +8,17 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/ptrace.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
 
-#include <linux/usb/ch9.h>
+#include <freax/usb/ch9.h>
 
 #include "core.h"
 #include "gadget.h"

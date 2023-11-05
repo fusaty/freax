@@ -3,19 +3,19 @@
  * Copyright (c) 2023, Linaro Ltd. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/workqueue.h>
 #include "qcom_pmic_typec_port.h"
 
 struct pmic_typec_port_irq_data {

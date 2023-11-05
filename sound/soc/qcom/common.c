@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2018, Linaro Limited.
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
 #include <dt-bindings/sound/qcom,q6afe.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/jack.h>
-#include <linux/input-event-codes.h>
+#include <freax/input-event-codes.h>
 #include "common.h"
 
 static const struct snd_soc_dapm_widget qcom_jack_snd_widgets[] = {

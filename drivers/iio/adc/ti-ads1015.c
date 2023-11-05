@@ -11,23 +11,23 @@
  *	* 0x4B - ADDR connected to SCL
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/i2c.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/pm_runtime.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/events.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #define ADS1015_DRV_NAME "ads1015"
 

@@ -6,16 +6,16 @@
  * Copyright (C) 2022-2023 esd electronics gmbh, Frank Jungclaus <frank.jungclaus@esd.eu>
  */
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/units.h>
-#include <linux/usb.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/units.h>
+#include <freax/usb.h>
 
 MODULE_AUTHOR("Matthias Fuchs <socketcan@esd.eu>");
 MODULE_AUTHOR("Frank Jungclaus <frank.jungclaus@esd.eu>");

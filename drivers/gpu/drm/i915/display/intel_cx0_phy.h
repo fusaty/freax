@@ -6,9 +6,9 @@
 #ifndef __INTEL_CX0_PHY_H__
 #define __INTEL_CX0_PHY_H__
 
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
 
 enum icl_port_dpll_id;
 enum phy;

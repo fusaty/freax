@@ -3,7 +3,7 @@
 #ifndef _DRM_APERTURE_H_
 #define _DRM_APERTURE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_device;
 struct drm_driver;

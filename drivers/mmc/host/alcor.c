@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (C) 2018 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2018 Oleksij Rempel <freax@rempel-privat.de>
  *
  * Driver for Alcor Micro AU6601 and AU6621 controllers
  */
@@ -9,22 +9,22 @@
  * on sniffing, testing and in some cases mimic of original driver.
  * As soon as some one with documentation or more experience in SD/MMC, or
  * reverse engineering then me, please review this driver and question every
- * thing what I did. 2018 Oleksij Rempel <linux@rempel-privat.de>
+ * thing what I did. 2018 Oleksij Rempel <freax@rempel-privat.de>
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/pm.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
 
-#include <linux/alcor_pci.h>
+#include <freax/alcor_pci.h>
 
 enum alcor_cookie {
 	COOKIE_UNMAPPED,
@@ -1185,6 +1185,6 @@ static struct platform_driver alcor_pci_sdmmc_driver = {
 };
 module_platform_driver(alcor_pci_sdmmc_driver);
 
-MODULE_AUTHOR("Oleksij Rempel <linux@rempel-privat.de>");
+MODULE_AUTHOR("Oleksij Rempel <freax@rempel-privat.de>");
 MODULE_DESCRIPTION("PCI driver for Alcor Micro AU6601 Secure Digital Host Controller Interface");
 MODULE_LICENSE("GPL");

@@ -3,14 +3,14 @@
  * Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/cred.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/msdos_fs.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
+#include <freax/cred.h>
+#include <freax/buffer_head.h>
+#include <freax/blkdev.h>
+#include <freax/fsnotify.h>
+#include <freax/security.h>
+#include <freax/msdos_fs.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"
@@ -374,7 +374,7 @@ static int exfat_ioctl_set_attributes(struct file *file, u32 __user *user_attr)
 	}
 
 	if (((attr | oldattr) & EXFAT_ATTR_SYSTEM) &&
-	    !capable(CAP_LINUX_IMMUTABLE)) {
+	    !capable(CAP_freax_IMMUTABLE)) {
 		err = -EPERM;
 		goto out_unlock_inode;
 	}

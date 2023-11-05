@@ -8,10 +8,10 @@
  *
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sysfs.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/sysfs.h>
 #include "ifcvf_base.h"
 
 #define DRIVER_AUTHOR   "Intel Corporation"

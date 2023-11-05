@@ -6,16 +6,16 @@
  */
 
 #include <crypto/arc4.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
+#include <freax/fips.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
 #include "rtllib.h"
 
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 
 struct prism2_wep_data {
 	u32 iv;

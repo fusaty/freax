@@ -21,13 +21,13 @@
 #include "main.h"
 #include "tty.h"
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/device_id.h>

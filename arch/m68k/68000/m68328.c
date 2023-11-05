@@ -16,10 +16,10 @@
 
 /***************************************************************************/
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/rtc.h>
 #include <asm/machdep.h>
 
 #if defined(CONFIG_INIT_LCD) && defined(CONFIG_M68VZ328)

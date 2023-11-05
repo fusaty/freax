@@ -4,9 +4,9 @@
  * (C) 2019 Linus Walleij
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/mod_devicetable.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_print.h>

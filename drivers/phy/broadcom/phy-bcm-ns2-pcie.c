@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2016 Broadcom
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/of_mdio.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
+#include <freax/phy/phy.h>
 
 #define BLK_ADDR_REG_OFFSET	0x1f
 #define PLL_AFE1_100MHZ_BLK	0x2100

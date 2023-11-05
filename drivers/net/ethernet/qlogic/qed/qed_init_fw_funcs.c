@@ -4,12 +4,12 @@
  * Copyright (c) 2019-2021 Marvell International Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "qed_hsi.h"
 #include "qed_hw.h"
 #include "qed_init_ops.h"

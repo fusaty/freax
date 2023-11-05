@@ -19,7 +19,7 @@
 #define IRQMASK_I_BIT	PSR_I_BIT
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 
 #define arch_local_irq_save arch_local_irq_save
 static inline unsigned long arch_local_irq_save(void)

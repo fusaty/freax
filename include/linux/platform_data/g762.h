@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2013, Arnaud EBALARD <arno@natisbad.org>
  */
-#ifndef __LINUX_PLATFORM_DATA_G762_H__
-#define __LINUX_PLATFORM_DATA_G762_H__
+#ifndef __freax_PLATFORM_DATA_G762_H__
+#define __freax_PLATFORM_DATA_G762_H__
 
 /*
  * Following structure can be used to set g762 driver platform specific data
@@ -21,4 +21,4 @@ struct g762_platform_data {
 	u32 clk_freq;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_G762_H__ */
+#endif /* __freax_PLATFORM_DATA_G762_H__ */

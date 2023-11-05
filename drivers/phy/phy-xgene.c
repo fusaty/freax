@@ -38,13 +38,13 @@
  *
  * Currently, this driver only supports Gen3 SATA mode with external clock.
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/phy/phy.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/phy/phy.h>
+#include <freax/clk.h>
 
 /* Max 2 lanes per a PHY unit */
 #define MAX_LANE			2

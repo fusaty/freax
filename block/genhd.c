@@ -5,27 +5,27 @@
  * Portions Copyright (C) 2020 Christoph Hellwig
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/major.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/log2.h>
-#include <linux/pm_runtime.h>
-#include <linux/badblocks.h>
-#include <linux/part_stat.h>
-#include <linux/blktrace_api.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/fs.h>
+#include <freax/kdev_t.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/major.h>
+#include <freax/mutex.h>
+#include <freax/idr.h>
+#include <freax/log2.h>
+#include <freax/pm_runtime.h>
+#include <freax/badblocks.h>
+#include <freax/part_stat.h>
+#include <freax/blktrace_api.h>
 
 #include "blk-throttle.h"
 #include "blk.h"

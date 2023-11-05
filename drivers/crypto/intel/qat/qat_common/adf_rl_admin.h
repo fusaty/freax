@@ -4,7 +4,7 @@
 #ifndef ADF_RL_ADMIN_H_
 #define ADF_RL_ADMIN_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "adf_rl.h"
 

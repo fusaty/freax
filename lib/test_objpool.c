@@ -6,16 +6,16 @@
  * Copyright: wuqiang.matt@bytedance.com
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/hrtimer.h>
-#include <linux/objpool.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/completion.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/hrtimer.h>
+#include <freax/objpool.h>
 
 #define OT_NR_MAX_BULK (16)
 

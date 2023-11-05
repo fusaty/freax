@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _TOOLS_LINUX_LOG2_H
-#define _TOOLS_LINUX_LOG2_H
+#ifndef _TOOLS_freax_LOG2_H
+#define _TOOLS_freax_LOG2_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 /*
  * non-constant log of base 2 calculators
@@ -172,4 +172,4 @@ unsigned long __rounddown_pow_of_two(unsigned long n)
 	__rounddown_pow_of_two(n)		\
  )
 
-#endif /* _TOOLS_LINUX_LOG2_H */
+#endif /* _TOOLS_freax_LOG2_H */

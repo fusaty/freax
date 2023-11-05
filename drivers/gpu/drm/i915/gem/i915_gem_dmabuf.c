@@ -4,10 +4,10 @@
  * Copyright 2012 Red Hat Inc
  */
 
-#include <linux/dma-buf.h>
-#include <linux/highmem.h>
-#include <linux/dma-resv.h>
-#include <linux/module.h>
+#include <freax/dma-buf.h>
+#include <freax/highmem.h>
+#include <freax/dma-resv.h>
+#include <freax/module.h>
 
 #include <asm/smp.h>
 

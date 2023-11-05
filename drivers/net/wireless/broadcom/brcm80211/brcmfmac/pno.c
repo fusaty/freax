@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2016 Broadcom
  */
-#include <linux/netdevice.h>
-#include <linux/gcd.h>
+#include <freax/netdevice.h>
+#include <freax/gcd.h>
 #include <net/cfg80211.h>
 
 #include "core.h"

@@ -10,7 +10,7 @@
 #ifndef _PPC440SPE_XOR_H
 #define _PPC440SPE_XOR_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Number of XOR engines available on the contoller */
 #define XOR_ENGINES_NUM		1

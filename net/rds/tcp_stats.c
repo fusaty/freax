@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <freax/percpu.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
 
 #include "rds.h"
 #include "tcp.h"

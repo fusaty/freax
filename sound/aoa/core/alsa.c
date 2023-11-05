@@ -4,7 +4,7 @@
  *
  * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/module.h>
+#include <freax/module.h>
 #include "alsa.h"
 
 static int index = -1;

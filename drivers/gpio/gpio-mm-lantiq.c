@@ -4,16 +4,16 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/legacy-of-mm-gpiochip.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #include <lantiq_soc.h>
 

@@ -6,7 +6,7 @@
  * Copyright 2010 Freescale Semiconductor, Inc.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/hw_irq.h>
 
 #define MAX_HWEVENTS 6

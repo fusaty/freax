@@ -3,28 +3,28 @@
  * Intel Lynxpoint PCH pinctrl/GPIO driver
  *
  * Copyright (c) 2012, 2019, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@freax.intel.com>
+ *          Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/array_size.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/array_size.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "pinctrl-intel.h"
 

@@ -5,12 +5,12 @@
  * Copyright (C) 2014 ololoshka2871
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 
 #include "fbtft.h"
 

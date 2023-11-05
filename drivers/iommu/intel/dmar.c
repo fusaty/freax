@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt)     "DMAR: " fmt
 
-#include <linux/pci.h>
-#include <linux/dmar.h>
-#include <linux/iova.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/tboot.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/numa.h>
-#include <linux/limits.h>
+#include <freax/pci.h>
+#include <freax/dmar.h>
+#include <freax/iova.h>
+#include <freax/timer.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/tboot.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/iommu.h>
+#include <freax/numa.h>
+#include <freax/limits.h>
 #include <asm/irq_remapping.h>
 
 #include "iommu.h"

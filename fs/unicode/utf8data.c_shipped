@@ -1,7 +1,7 @@
 /* This file is generated code, do not edit. */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 #include "utf8n.h"
 
 static const unsigned int utf8agetab[] = {

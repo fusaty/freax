@@ -7,16 +7,16 @@
  * Author: Samuel Iglesias Gonsalvez <siglesias@igalia.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/ipack.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/tty.h>
+#include <freax/serial.h>
+#include <freax/tty_flip.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/ipack.h>
 #include "ipoctal.h"
 #include "scc2698.h"
 

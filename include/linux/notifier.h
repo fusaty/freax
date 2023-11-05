@@ -5,15 +5,15 @@
  *	that modules can poke their nose into the innards. The network devices
  *	needed them so here they are for the rest of you.
  *
- *				Alan Cox <Alan.Cox@linux.org>
+ *				Alan Cox <Alan.Cox@freax.org>
  */
  
-#ifndef _LINUX_NOTIFIER_H
-#define _LINUX_NOTIFIER_H
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/srcu.h>
+#ifndef _freax_NOTIFIER_H
+#define _freax_NOTIFIER_H
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/srcu.h>
 
 /*
  * Notifier chains are of four types:
@@ -216,15 +216,15 @@ static inline int notifier_to_errno(int ret)
  *	VC switch chains (for loadable kernel svgalib VC switch helpers) etc...
  */
  
-/* CPU notfiers are defined in include/linux/cpu.h. */
+/* CPU notfiers are defined in include/freax/cpu.h. */
 
-/* netdevice notifiers are defined in include/linux/netdevice.h */
+/* netdevice notifiers are defined in include/freax/netdevice.h */
 
-/* reboot notifiers are defined in include/linux/reboot.h. */
+/* reboot notifiers are defined in include/freax/reboot.h. */
 
-/* Hibernation and suspend events are defined in include/linux/suspend.h. */
+/* Hibernation and suspend events are defined in include/freax/suspend.h. */
 
-/* Virtual Terminal events are defined in include/linux/vt.h. */
+/* Virtual Terminal events are defined in include/freax/vt.h. */
 
 #define NETLINK_URELEASE	0x0001	/* Unicast netlink socket released */
 
@@ -240,4 +240,4 @@ static inline int notifier_to_errno(int ret)
 extern struct blocking_notifier_head reboot_notifier_list;
 
 #endif /* __KERNEL__ */
-#endif /* _LINUX_NOTIFIER_H */
+#endif /* _freax_NOTIFIER_H */

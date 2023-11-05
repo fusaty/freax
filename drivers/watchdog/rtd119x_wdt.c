@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 #define RTD119X_TCWCR		0x0
 #define RTD119X_TCWTR		0x4

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright 2018-2020 Broadcom.
  */
 
-#ifndef __UAPI_LINUX_MISC_BCM_VK_H
-#define __UAPI_LINUX_MISC_BCM_VK_H
+#ifndef __UAPI_freax_MISC_BCM_VK_H
+#define __UAPI_freax_MISC_BCM_VK_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define BCM_VK_MAX_FILENAME 64
 
@@ -81,4 +81,4 @@ struct vk_reset {
 #define VK_FWSTS_RESET_L0		(0x9 << VK_FWSTS_RESET_REASON_SHIFT)
 #define VK_FWSTS_RESET_UNKNOWN		(0xf << VK_FWSTS_RESET_REASON_SHIFT)
 
-#endif /* __UAPI_LINUX_MISC_BCM_VK_H */
+#endif /* __UAPI_freax_MISC_BCM_VK_H */

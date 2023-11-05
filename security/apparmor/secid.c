@@ -10,12 +10,12 @@
  * is replaced it receives the secid of the label it is replacing.
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/xarray.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/xarray.h>
 
 #include "include/cred.h"
 #include "include/lib.h"

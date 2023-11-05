@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

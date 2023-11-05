@@ -7,28 +7,28 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/hsi/ssi_protocol.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/hsi/hsi.h>
-#include <linux/idr.h>
+#include <freax/compiler.h>
+#include <freax/err.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/delay.h>
+#include <freax/hsi/ssi_protocol.h>
+#include <freax/seq_file.h>
+#include <freax/scatterlist.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/debugfs.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/hsi/hsi.h>
+#include <freax/idr.h>
 
 #include "omap_ssi_regs.h"
 #include "omap_ssi.h"

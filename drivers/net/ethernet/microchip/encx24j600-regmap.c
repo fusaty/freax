@@ -7,13 +7,13 @@
  * Author: Jon Ringle <jringle@gridpoint.com>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #include "encx24j600_hw.h"
 

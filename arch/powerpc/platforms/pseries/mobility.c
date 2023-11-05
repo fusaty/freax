@@ -9,19 +9,19 @@
 
 #define pr_fmt(fmt) "mobility: " fmt
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/stat.h>
-#include <linux/stop_machine.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/stringify.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/kobject.h>
+#include <freax/nmi.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/stat.h>
+#include <freax/stop_machine.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/stringify.h>
 
 #include <asm/machdep.h>
 #include <asm/nmi.h>

@@ -2,12 +2,12 @@
 /*
  * System call table for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <freax/syscalls.h>
+#include <freax/signal.h>
+#include <freax/unistd.h>
 
 #include <asm/syscall.h>
 

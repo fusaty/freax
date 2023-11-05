@@ -4,18 +4,18 @@
  *
  * Copyright (c) 2005, 2006, 2008 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/dccp.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/dccp.h>
+#include <freax/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <freax/netfilter/nfnetlink_conntrack.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
@@ -723,8 +723,8 @@ static int nlattr_to_dccp(struct nlattr *cda[], struct nf_conn *ct)
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_cttimeout.h>
 
 static int dccp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

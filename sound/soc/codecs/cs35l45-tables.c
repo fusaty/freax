@@ -6,8 +6,8 @@
 //
 // Author: James Schulman <james.schulman@cirrus.com>
 
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "cs35l45.h"
 

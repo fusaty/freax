@@ -5,18 +5,18 @@
  * Copyright (C) 2016 Martin Sperl
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/thermal.h>
 
 #include "../thermal_hwmon.h"
 

@@ -6,8 +6,8 @@
  *                    Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/component.h>
+#include <freax/acpi.h>
+#include <freax/component.h>
 
 #define HDA_MAX_COMPONENTS	4
 #define HDA_MAX_NAME_SIZE	50

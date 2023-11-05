@@ -8,12 +8,12 @@
  * Author : Michael Kelley <mikelley@microsoft.com>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
-#include <linux/arm-smccc.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/hyperv.h>
+#include <freax/arm-smccc.h>
+#include <freax/module.h>
 #include <asm-generic/bug.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>

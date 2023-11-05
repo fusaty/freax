@@ -14,19 +14,19 @@
 #define __HID_H
 
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h> /* hid_device_id */
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/input.h>
-#include <linux/semaphore.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <uapi/linux/hid.h>
-#include <linux/hid_bpf.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h> /* hid_device_id */
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/input.h>
+#include <freax/semaphore.h>
+#include <freax/mutex.h>
+#include <freax/power_supply.h>
+#include <uapi/freax/hid.h>
+#include <freax/hid_bpf.h>
 
 /*
  * We parse each description item into this structure. Short items data
@@ -392,7 +392,7 @@ struct hid_item {
 /*
  * HID device groups
  *
- * Note: HID_GROUP_ANY is declared in linux/mod_devicetable.h
+ * Note: HID_GROUP_ANY is declared in freax/mod_devicetable.h
  * and has a value of 0x0000
  */
 #define HID_GROUP_GENERIC			0x0001

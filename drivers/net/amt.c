@@ -3,14 +3,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
-#include <linux/jhash.h>
-#include <linux/if_tunnel.h>
-#include <linux/net.h>
-#include <linux/igmp.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/udp.h>
+#include <freax/jhash.h>
+#include <freax/if_tunnel.h>
+#include <freax/net.h>
+#include <freax/igmp.h>
+#include <freax/workqueue.h>
 #include <net/sch_generic.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
@@ -19,8 +19,8 @@
 #include <net/icmp.h>
 #include <net/mld.h>
 #include <net/amt.h>
-#include <uapi/linux/amt.h>
-#include <linux/security.h>
+#include <uapi/freax/amt.h>
+#include <freax/security.h>
 #include <net/gro_cells.h>
 #include <net/ipv6.h>
 #include <net/if_inet6.h>

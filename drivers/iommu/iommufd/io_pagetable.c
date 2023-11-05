@@ -8,14 +8,14 @@
  * The datastructure uses the iopt_pages to optimize the storage of the PFNs
  * between the domains and xarray.
  */
-#include <linux/iommufd.h>
-#include <linux/lockdep.h>
-#include <linux/iommu.h>
-#include <linux/sched/mm.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <uapi/linux/iommufd.h>
+#include <freax/iommufd.h>
+#include <freax/lockdep.h>
+#include <freax/iommu.h>
+#include <freax/sched/mm.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <uapi/freax/iommufd.h>
 
 #include "io_pagetable.h"
 #include "double_span.h"

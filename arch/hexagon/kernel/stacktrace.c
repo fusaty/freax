@@ -2,14 +2,14 @@
 /*
  * Stacktrace support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/module.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/stacktrace.h>
+#include <freax/thread_info.h>
+#include <freax/module.h>
 
 struct stackframe {
 	unsigned long fp;

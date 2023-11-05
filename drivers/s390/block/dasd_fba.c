@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  */
 
 #define KMSG_COMPONENT "dasd-fba"
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
 #include <asm/debug.h>
 
-#include <linux/slab.h>
-#include <linux/hdreg.h>	/* HDIO_GETGEO			    */
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/slab.h>
+#include <freax/hdreg.h>	/* HDIO_GETGEO			    */
+#include <freax/bio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 #include <asm/idals.h>
 #include <asm/ebcdic.h>

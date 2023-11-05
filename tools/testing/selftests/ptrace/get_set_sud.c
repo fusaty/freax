@@ -8,7 +8,7 @@
 #include <sys/syscall.h>
 #include <sys/prctl.h>
 
-#include "linux/ptrace.h"
+#include "freax/ptrace.h"
 
 static int sys_ptrace(int request, pid_t pid, void *addr, void *data)
 {

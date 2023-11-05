@@ -7,16 +7,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/limits.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/limits.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 
 MODULE_AUTHOR("Lauri Kasanen <cand@gmx.com>");
 MODULE_DESCRIPTION("Driver for N64 controllers");

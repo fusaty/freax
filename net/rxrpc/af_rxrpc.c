@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/key-type.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/net.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/random.h>
+#include <freax/poll.h>
+#include <freax/proc_fs.h>
+#include <freax/key-type.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>

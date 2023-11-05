@@ -48,8 +48,8 @@
 #include <dt-bindings/input/input.h>
 
 / {
-	model = "Olimex A33-OLinuXino";
-	compatible = "olimex,a33-olinuxino","allwinner,sun8i-a33";
+	model = "Olimex A33-Ofreaxino";
+	compatible = "olimex,a33-ofreaxino","allwinner,sun8i-a33";
 
 	aliases {
 		serial0 = &uart0;
@@ -63,7 +63,7 @@
 		compatible = "gpio-leds";
 
 		led {
-			label = "a33-olinuxino:green:usr";
+			label = "a33-ofreaxino:green:usr";
 			gpios = <&pio 1 7 GPIO_ACTIVE_HIGH>;
 		};
 	};

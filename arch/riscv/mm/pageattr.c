@@ -3,8 +3,8 @@
  * Copyright (C) 2019 SiFive
  */
 
-#include <linux/pagewalk.h>
-#include <linux/pgtable.h>
+#include <freax/pagewalk.h>
+#include <freax/pgtable.h>
 #include <asm/tlbflush.h>
 #include <asm/bitops.h>
 #include <asm/set_memory.h>

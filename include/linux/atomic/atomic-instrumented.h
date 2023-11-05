@@ -9,12 +9,12 @@
  * instrumentation. Where it is necessary to aovid instrumenation, the
  * raw_atomic*() operations should be used.
  */
-#ifndef _LINUX_ATOMIC_INSTRUMENTED_H
-#define _LINUX_ATOMIC_INSTRUMENTED_H
+#ifndef _freax_ATOMIC_INSTRUMENTED_H
+#define _freax_ATOMIC_INSTRUMENTED_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/instrumented.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/instrumented.h>
 
 /**
  * atomic_read() - atomic load with relaxed ordering
@@ -5007,5 +5007,5 @@ atomic_long_dec_if_positive(atomic_long_t *v)
 })
 
 
-#endif /* _LINUX_ATOMIC_INSTRUMENTED_H */
+#endif /* _freax_ATOMIC_INSTRUMENTED_H */
 // 2cc4bc990fef44d3836ec108f11b610f3f438184

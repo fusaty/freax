@@ -33,21 +33,21 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/io-mapping.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/io-mapping.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
 #include <net/devlink.h>
 
 #include <uapi/rdma/mlx4-abi.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/doorbell.h>
+#include <freax/mlx4/device.h>
+#include <freax/mlx4/doorbell.h>
 
 #include "mlx4.h"
 #include "fw.h"

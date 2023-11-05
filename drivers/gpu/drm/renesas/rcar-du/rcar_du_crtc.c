@@ -7,9 +7,9 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

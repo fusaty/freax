@@ -2,25 +2,25 @@
 /*
  * Copyright (C) 2017 - Cambridge Greys Ltd
  * Copyright (C) 2011 - 2014 Cisco Systems Inc
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  * Derived (i.e. mostly copied) from arch/i386/kernel/irq.c:
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  */
 
-#include <linux/cpumask.h>
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/cpumask.h>
+#include <freax/hardirq.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>
 #include <irq_user.h>
 #include <irq_kern.h>
-#include <linux/time-internal.h>
+#include <freax/time-internal.h>
 
 
 /* When epoll triggers we do not know why it did so

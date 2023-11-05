@@ -7,11 +7,11 @@
 
 #include "dm-core.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/bio.h>
+#include <freax/dax.h>
 
 #define DM_MSG_PREFIX "target"
 

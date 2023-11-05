@@ -9,21 +9,21 @@
  * can express various gestures.
  */
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define IQS626_VER_INFO				0x00
 #define IQS626_VER_INFO_PROD_NUM		0x51
@@ -513,12 +513,12 @@ iqs626_parse_events(struct iqs626_private *iqs626,
 			if (!ev_node)
 				continue;
 
-			if (!fwnode_property_read_u32(ev_node, "linux,code",
+			if (!fwnode_property_read_u32(ev_node, "freax,code",
 						      &val)) {
 				iqs626->kp_code[ch_id][i] = val;
 
 				if (fwnode_property_read_u32(ev_node,
-							     "linux,input-type",
+							     "freax,input-type",
 							     &val)) {
 					if (ch_id == IQS626_CH_HALL)
 						val = EV_SW;
@@ -813,10 +813,10 @@ static int iqs626_parse_trackpad(struct iqs626_private *iqs626,
 		fwnode_handle_put(tc_node);
 	}
 
-	if (!fwnode_property_present(ch_node, "linux,keycodes"))
+	if (!fwnode_property_present(ch_node, "freax,keycodes"))
 		return 0;
 
-	count = fwnode_property_count_u32(ch_node, "linux,keycodes");
+	count = fwnode_property_count_u32(ch_node, "freax,keycodes");
 	if (count > IQS626_NUM_GESTURES) {
 		dev_err(&client->dev, "Too many keycodes present\n");
 		return -EINVAL;
@@ -825,7 +825,7 @@ static int iqs626_parse_trackpad(struct iqs626_private *iqs626,
 		return count;
 	}
 
-	error = fwnode_property_read_u32_array(ch_node, "linux,keycodes",
+	error = fwnode_property_read_u32_array(ch_node, "freax,keycodes",
 					       iqs626->tp_code, count);
 	if (error) {
 		dev_err(&client->dev, "Failed to read keycodes: %d\n", error);

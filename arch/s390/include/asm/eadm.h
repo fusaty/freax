@@ -2,9 +2,9 @@
 #ifndef _ASM_S390_EADM_H
 #define _ASM_S390_EADM_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/blk_types.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/blk_types.h>
 
 struct arqb {
 	u64 data;

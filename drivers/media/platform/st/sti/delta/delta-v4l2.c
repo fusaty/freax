@@ -6,11 +6,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

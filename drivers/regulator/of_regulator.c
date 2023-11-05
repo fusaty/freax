@@ -6,12 +6,12 @@
  * Rajendra Nayak <rnayak@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 #include "internal.h"
 

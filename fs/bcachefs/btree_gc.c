@@ -30,13 +30,13 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/task.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/task.h>
 
 #define DROP_THIS_NODE		10
 #define DROP_PREV_NODE		11

@@ -3,16 +3,16 @@
  *  Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */
 
-#include <linux/input/matrix_keypad.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #define KEYPAD_SCAN_MODE	0x00
 #define KEYPAD_CNTL		0x04

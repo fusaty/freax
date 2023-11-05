@@ -17,12 +17,12 @@
  *   Copyright (C) 2008 Nokia Corporation and/or its subsidiary(-ies).
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/random.h>
+#include <freax/sched.h>
 #include <net/mac80211.h>
 
 #include "cw1200.h"

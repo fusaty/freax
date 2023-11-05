@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MATH64_H
-#define _LINUX_MATH64_H
+#ifndef _freax_MATH64_H
+#define _freax_MATH64_H
 
-#include <linux/types.h>
-#include <linux/math.h>
+#include <freax/types.h>
+#include <freax/math.h>
 #include <vdso/math64.h>
 #include <asm/div64.h>
 
@@ -346,4 +346,4 @@ u64 mul_u64_u64_div_u64(u64 a, u64 mul, u64 div);
 		div_s64((__x - (__d / 2)), __d);	\
 }							\
 )
-#endif /* _LINUX_MATH64_H */
+#endif /* _freax_MATH64_H */

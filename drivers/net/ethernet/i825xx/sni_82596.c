@@ -4,21 +4,21 @@
  *  		  used in older SNI RM machines
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/irq.h>
 
 #define SNI_82596_DRIVER_VERSION "SNI RM 82596 driver - Revision: 0.01"
 

@@ -11,13 +11,13 @@
  * Special thanks to Video BG4 project team.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 
 #include "sdhci-pltfm.h"
 #include "sdhci-xenon.h"

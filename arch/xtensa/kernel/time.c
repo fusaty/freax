@@ -12,21 +12,21 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/clk.h>
-#include <linux/of_clk.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
-#include <linux/sched_clock.h>
+#include <freax/clk.h>
+#include <freax/of_clk.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/time.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/profile.h>
+#include <freax/delay.h>
+#include <freax/irqdomain.h>
+#include <freax/sched_clock.h>
 
 #include <asm/timex.h>
 #include <asm/platform.h>
@@ -66,7 +66,7 @@ static int ccount_timer_set_next_event(unsigned long delta,
 
 	local_irq_save(flags);
 	next = get_ccount() + delta;
-	set_linux_timer(next);
+	set_freax_timer(next);
 	if (next - get_ccount() > delta)
 		ret = -ETIME;
 	local_irq_restore(flags);
@@ -119,7 +119,7 @@ static irqreturn_t timer_interrupt(int irq, void *dev_id)
 {
 	struct clock_event_device *evt = &this_cpu_ptr(&ccount_timer)->evt;
 
-	set_linux_timer(get_linux_timer());
+	set_freax_timer(get_freax_timer());
 	evt->event_handler(evt);
 	return IRQ_HANDLED;
 }
@@ -133,7 +133,7 @@ void local_timer_setup(unsigned cpu)
 	snprintf(timer->name, sizeof(timer->name), "ccount_clockevent_%u", cpu);
 	clockevent->name = timer->name;
 	clockevent->cpumask = cpumask_of(cpu);
-	clockevent->irq = irq_create_mapping(NULL, LINUX_TIMER_INT);
+	clockevent->irq = irq_create_mapping(NULL, freax_TIMER_INT);
 	if (WARN(!clockevent->irq, "error: can't map timer irq"))
 		return;
 	clockevents_config_and_register(clockevent, ccount_freq,

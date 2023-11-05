@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The freax Foundation. All rights reserved.
  */
 
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/stringhash.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/coresight.h>
-#include <linux/property.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <freax/build_bug.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/idr.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/stringhash.h>
+#include <freax/mutex.h>
+#include <freax/clk.h>
+#include <freax/coresight.h>
+#include <freax/property.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
 
 #include "coresight-etm-perf.h"
 #include "coresight-priv.h"

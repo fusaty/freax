@@ -11,23 +11,23 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
 #include <soc/fsl/qe/qe.h>
 #include <asm/fsl_gtm.h>
 #include "fhci.h"

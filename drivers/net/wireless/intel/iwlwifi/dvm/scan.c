@@ -4,9 +4,9 @@
  * Copyright(c) 2008 - 2014 Intel Corporation. All rights reserved.
  * Copyright(c) 2018        Intel Corporation
  *****************************************************************************/
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/etherdevice.h>
 #include <net/mac80211.h>
 
 #include "dev.h"

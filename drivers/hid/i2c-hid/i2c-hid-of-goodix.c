@@ -5,15 +5,15 @@
  * Copyright 2020 Google LLC
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/regulator/consumer.h>
 
 #include "i2c-hid.h"
 

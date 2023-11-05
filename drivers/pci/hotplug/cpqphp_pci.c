@@ -12,14 +12,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/proc_fs.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
 #include "../pci.h"
 #include "cpqphp.h"
 #include "cpqphp_nvram.h"

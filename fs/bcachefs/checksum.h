@@ -6,7 +6,7 @@
 #include "extents_types.h"
 #include "super-io.h"
 
-#include <linux/crc64.h>
+#include <freax/crc64.h>
 #include <crypto/chacha.h>
 
 static inline bool bch2_checksum_mergeable(unsigned type)

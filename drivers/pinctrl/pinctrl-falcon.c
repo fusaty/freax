@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/pinctrl/pinmux-falcon.c
- *  based on linux/drivers/pinctrl/pinmux-pxa910.c
+ *  freax/drivers/pinctrl/pinmux-falcon.c
+ *  based on freax/drivers/pinctrl/pinmux-pxa910.c
  *
  *  Copyright (C) 2012 Thomas Langer <thomas.langer@lantiq.com>
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #include "pinctrl-lantiq.h"
 

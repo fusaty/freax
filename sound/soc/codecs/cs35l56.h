@@ -9,10 +9,10 @@
 #ifndef CS35L56_H
 #define CS35L56_H
 
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/workqueue.h>
 #include <sound/cs35l56.h>
 #include "wm_adsp.h"
 

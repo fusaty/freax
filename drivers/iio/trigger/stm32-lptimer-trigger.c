@@ -9,12 +9,12 @@
  * Inspired by Benjamin Gaignard's stm32-timer-trigger driver
  */
 
-#include <linux/iio/timer/stm32-lptim-trigger.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/iio/timer/stm32-lptim-trigger.h>
+#include <freax/mfd/stm32-lptimer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 /* List Low-Power Timer triggers */
 static const char * const stm32_lptim_triggers[] = {

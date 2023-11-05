@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/frame.h>
 #include <asm/asm-offsets.h>
-#include <linux/cfi_types.h>
+#include <freax/cfi_types.h>
 
 /* register macros */
 #define CTX %rdi

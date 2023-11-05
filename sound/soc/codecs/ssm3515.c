@@ -2,15 +2,15 @@
 //
 // Analog Devices' SSM3515 audio amp driver
 //
-// Copyright (C) The Asahi Linux Contributors
+// Copyright (C) The Asahi freax Contributors
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

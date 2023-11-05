@@ -7,15 +7,15 @@
  * infrastructure in order to make this driver easier to implement.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/cpufreq.h>
-#include <linux/threads.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/cpufreq.h>
+#include <freax/threads.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
 
 #include <asm/asi.h>
 #include <asm/timer.h>

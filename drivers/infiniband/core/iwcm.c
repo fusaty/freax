@@ -35,18 +35,18 @@
  * SOFTWARE.
  *
  */
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/rbtree.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/completion.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/sysctl.h>
 
 #include <rdma/iw_cm.h>
 #include <rdma/ib_addr.h>

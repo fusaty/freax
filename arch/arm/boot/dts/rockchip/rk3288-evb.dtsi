@@ -18,31 +18,31 @@
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <100000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		button-menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <640000>;
 		};
 
 		button-esc {
 			label = "Esc";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			press-threshold-microvolt = <1000000>;
 		};
 
 		button-home  {
 			label = "Home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			press-threshold-microvolt = <1300000>;
 		};
 	};
@@ -120,9 +120,9 @@
 
 		key-power {
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};

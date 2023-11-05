@@ -2,7 +2,7 @@
 /* Copyright (c) Meta Platforms, Inc. and affiliates. */
 
 #include <stdbool.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 /* volatile to force a read, compiler may assume 0 otherwise */

@@ -6,8 +6,8 @@
 #ifndef _VAS_H
 #define _VAS_H
 #include <asm/vas.h>
-#include <linux/mutex.h>
-#include <linux/stringify.h>
+#include <freax/mutex.h>
+#include <freax/stringify.h>
 
 /*
  * VAS window modify flags

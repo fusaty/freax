@@ -10,25 +10,25 @@
  *	Arun R Murthy <arun.murthy@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/component.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/thermal.h>
-#include <linux/iio/consumer.h>
-#include <linux/fixp-arith.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/component.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/jiffies.h>
+#include <freax/of.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/abx500.h>
+#include <freax/mfd/abx500/ab8500.h>
+#include <freax/thermal.h>
+#include <freax/iio/consumer.h>
+#include <freax/fixp-arith.h>
 
 #include "ab8500-bm.h"
 

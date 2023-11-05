@@ -3,12 +3,12 @@
  * Copyright (c) 2011 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 
-#include <linux/netfilter/xt_devgroup.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/xt_devgroup.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_LICENSE("GPL");

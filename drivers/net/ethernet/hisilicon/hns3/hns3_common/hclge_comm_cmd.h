@@ -3,7 +3,7 @@
 
 #ifndef __HCLGE_COMM_CMD_H
 #define __HCLGE_COMM_CMD_H
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "hnae3.h"
 

@@ -12,27 +12,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/refcount.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
+#include <freax/refcount.h>
+#include <freax/cdev.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioctl.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/pci.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/syscalls.h>
+#include <freax/types.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #include "vme.h"
 #include "vme_user.h"
@@ -58,19 +58,19 @@ static unsigned int bus_num;
  *
  *		It is expected that all VME bus drivers will use the
  *		same interface.  For interface documentation see
- *		http://www.vmelinux.org/.
+ *		http://www.vmefreax.org/.
  *
- * However the VME driver at http://www.vmelinux.org/ is rather old and doesn't
+ * However the VME driver at http://www.vmefreax.org/ is rather old and doesn't
  * even support the tsi148 chipset (which has 8 master and 8 slave windows).
  * We'll run with this for now as far as possible, however it probably makes
  * sense to get rid of the old mappings and just do everything dynamically.
  *
  * So for now, we'll restrict the driver to providing 4 masters and 4 slaves as
  * defined above and try to support at least some of the interface from
- * http://www.vmelinux.org/ as an alternative the driver can be written
+ * http://www.vmefreax.org/ as an alternative the driver can be written
  * providing a saner interface later.
  *
- * The vmelinux.org driver never supported slave images, the devices reserved
+ * The vmefreax.org driver never supported slave images, the devices reserved
  * for slaves were repurposed to support all 8 master images on the UniverseII!
  * We shall support 4 masters and 4 slaves with this driver.
  */
@@ -280,7 +280,7 @@ static loff_t vme_user_llseek(struct file *file, loff_t off, int whence)
 }
 
 /*
- * The ioctls provided by the old VME access method (the one at vmelinux.org)
+ * The ioctls provided by the old VME access method (the one at vmefreax.org)
  * are most certainly wrong as the effectively push the registers layout
  * through to user space. Given that the VME core can handle multiple bridges,
  * with different register layouts this is most certainly not the way to go.

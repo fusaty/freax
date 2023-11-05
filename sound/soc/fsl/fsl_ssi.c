@@ -25,22 +25,22 @@
 // contains the same value) these status bits are not set. We work
 // around this by not polling these bits but only wait a fixed delay.
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/dma/imx-dma.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/dma/imx-dma.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

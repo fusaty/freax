@@ -2,20 +2,20 @@
 /*
  * Architecture specific OF callbacks.
  */
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/libfdt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/of_pci.h>
-#include <linux/initrd.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/of_irq.h>
+#include <freax/libfdt.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/of_pci.h>
+#include <freax/initrd.h>
 
 #include <asm/irqdomain.h>
 #include <asm/hpet.h>

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/smp_twd.c
+ *  freax/arch/arm/kernel/smp_twd.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/jiffies.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/smp.h>
+#include <freax/jiffies.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 
 #include <asm/smp_twd.h>
 

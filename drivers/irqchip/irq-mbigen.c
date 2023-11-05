@@ -5,16 +5,16 @@
  * Author: Yun Wu <wuyun.wu@huawei.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 /* Interrupt numbers per mbigen node supported */
 #define IRQS_PER_MBIGEN_NODE		128

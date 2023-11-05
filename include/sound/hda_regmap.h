@@ -6,7 +6,7 @@
 #ifndef __SOUND_HDA_REGMAP_H
 #define __SOUND_HDA_REGMAP_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/core.h>
 #include <sound/hdaudio.h>
 

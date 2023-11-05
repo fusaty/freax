@@ -5,15 +5,15 @@
  * SMBus host driver for PA Semi PWRficient
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #include "i2c-pasemi-core.h"
 

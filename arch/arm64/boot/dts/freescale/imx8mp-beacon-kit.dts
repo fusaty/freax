@@ -67,28 +67,28 @@
 
 		button-0 {
 			label = "btn0";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&pca6416_1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			wakeup-source;
 		};
 
 		button-1 {
 			label = "btn1";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&pca6416_1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			wakeup-source;
 		};
 
 		button-2 {
 			label = "btn2";
-			linux,code = <BTN_2>;
+			freax,code = <BTN_2>;
 			gpios = <&pca6416_1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			wakeup-source;
 		};
 
 		button-3 {
 			label = "btn3";
-			linux,code = <BTN_3>;
+			freax,code = <BTN_3>;
 			gpios = <&pca6416_1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			wakeup-source;
 		};
@@ -120,7 +120,7 @@
 		led-3 {
 			label = "heartbeat";
 			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

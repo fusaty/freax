@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #include <net/netfilter/nf_conntrack.h>
@@ -7,15 +7,15 @@
 #include <net/netfilter/nf_conntrack_labels.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_acct.h>
-#include <uapi/linux/tc_act/tc_pedit.h>
+#include <uapi/freax/tc_act/tc_pedit.h>
 #include <net/tc_act/tc_ct.h>
 #include <net/flow_offload.h>
 #include <net/netfilter/nf_flow_table.h>
-#include <linux/workqueue.h>
-#include <linux/refcount.h>
-#include <linux/xarray.h>
-#include <linux/if_macvlan.h>
-#include <linux/debugfs.h>
+#include <freax/workqueue.h>
+#include <freax/refcount.h>
+#include <freax/xarray.h>
+#include <freax/if_macvlan.h>
+#include <freax/debugfs.h>
 
 #include "lib/fs_chains.h"
 #include "en/tc_ct.h"

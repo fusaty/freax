@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright 2014 IBM Corp.
  *
@@ -11,8 +11,8 @@
 #ifndef _UAPI_MISC_CXL_H
 #define _UAPI_MISC_CXL_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 
 struct cxl_ioctl_start_work {

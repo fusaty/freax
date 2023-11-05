@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
-#include <linux/idr.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/serial_core.h>
+#include <freax/tty_flip.h>
+#include <freax/types.h>
+#include <freax/idr.h>
 
 #define SERIAL_NAME	"ttyMPS"
 #define DRIVER_NAME	"mps2-uart"

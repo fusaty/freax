@@ -10,14 +10,14 @@ struct idpf_vport;
 struct idpf_vport_max_q;
 
 #include <net/pkt_sched.h>
-#include <linux/aer.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/bitfield.h>
-#include <linux/sctp.h>
-#include <linux/ethtool.h>
+#include <freax/aer.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/bitfield.h>
+#include <freax/sctp.h>
+#include <freax/ethtool.h>
 #include <net/gro.h>
-#include <linux/dim.h>
+#include <freax/dim.h>
 
 #include "virtchnl2.h"
 #include "idpf_lan_txrx.h"

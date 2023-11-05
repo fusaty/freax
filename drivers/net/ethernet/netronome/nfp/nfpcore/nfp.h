@@ -9,8 +9,8 @@
 #ifndef __NFP_H__
 #define __NFP_H__
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
 #include "nfp_cpp.h"
 

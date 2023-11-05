@@ -3,9 +3,9 @@
  * Copyright 2008 Cisco Systems, Inc.  All rights reserved.
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/pci.h>
 #include "vnic_dev.h"
 #include "vnic_cq.h"
 

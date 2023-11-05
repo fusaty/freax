@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
-#include <linux/crypto.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/skbuff.h>
+#include <freax/udp.h>
+#include <freax/crypto.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <keys/rxrpc-type.h>

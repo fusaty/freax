@@ -4,9 +4,9 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/cpuidle.h>
-#include <linux/init.h>
+#include <freax/cpu_pm.h>
+#include <freax/cpuidle.h>
+#include <freax/init.h>
 
 #include <asm/idle.h>
 #include <asm/pm-cps.h>

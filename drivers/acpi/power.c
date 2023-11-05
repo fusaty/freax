@@ -23,15 +23,15 @@
 
 #define pr_fmt(fmt) "ACPI: PM: " fmt
 
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/sysfs.h>
-#include <linux/acpi.h>
+#include <freax/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/sysfs.h>
+#include <freax/acpi.h>
 #include "sleep.h"
 #include "internal.h"
 

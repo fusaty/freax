@@ -3,12 +3,12 @@
  * Copyright (c) 2006 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_NFLOG.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_NFLOG.h>
 #include <net/netfilter/nf_log.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");

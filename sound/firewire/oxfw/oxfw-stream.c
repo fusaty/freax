@@ -6,7 +6,7 @@
  */
 
 #include "oxfw.h"
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #define AVC_GENERIC_FRAME_MAXIMUM_BYTES	512
 #define READY_TIMEOUT_MS	600

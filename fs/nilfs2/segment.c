@@ -8,20 +8,20 @@
  *
  */
 
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/bitops.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/pagevec.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <freax/pagemap.h>
+#include <freax/buffer_head.h>
+#include <freax/writeback.h>
+#include <freax/bitops.h>
+#include <freax/bio.h>
+#include <freax/completion.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/crc32.h>
+#include <freax/pagevec.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
 
 #include "nilfs.h"
 #include "btnode.h"

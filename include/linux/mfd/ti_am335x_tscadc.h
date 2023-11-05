@@ -5,12 +5,12 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#ifndef __LINUX_TI_AM335X_TSCADC_MFD_H
-#define __LINUX_TI_AM335X_TSCADC_MFD_H
+#ifndef __freax_TI_AM335X_TSCADC_MFD_H
+#define __freax_TI_AM335X_TSCADC_MFD_H
 
-#include <linux/bitfield.h>
-#include <linux/mfd/core.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/mfd/core.h>
+#include <freax/units.h>
 
 #define REG_RAWIRQSTATUS	0x024
 #define REG_IRQSTATUS		0x028

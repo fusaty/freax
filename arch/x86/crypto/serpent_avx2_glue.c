@@ -5,10 +5,10 @@
  * Copyright © 2012-2013 Jussi Kivilinna <jussi.kivilinna@mbnet.fi>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/crypto.h>
+#include <freax/err.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/simd.h>
 #include <crypto/serpent.h>

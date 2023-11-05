@@ -7,17 +7,17 @@
  * Copyright (C) 2006 Randy Dunlap
  */
 
-#include <linux/module.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/libata.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/ata.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/libata.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
 #include <scsi/scsi_device.h>
 #include "libata.h"
 

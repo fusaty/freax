@@ -5,14 +5,14 @@
  */
 
 #include <inttypes.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 #include <stdio.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/zalloc.h>
 
 #include "session.h"
 #include "machine.h"

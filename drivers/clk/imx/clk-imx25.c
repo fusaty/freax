@@ -3,16 +3,16 @@
  * Copyright (C) 2009 by Sascha Hauer, Pengutronix
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 #include <soc/imx/revision.h>
 
 #include "clk.h"

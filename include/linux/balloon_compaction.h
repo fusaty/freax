@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/balloon_compaction.h
+ * include/freax/balloon_compaction.h
  *
  * Common interface definitions for making balloon pages movable by compaction.
  *
@@ -34,15 +34,15 @@
  *
  * Copyright (C) 2012, Red Hat, Inc.  Rafael Aquini <aquini@redhat.com>
  */
-#ifndef _LINUX_BALLOON_COMPACTION_H
-#define _LINUX_BALLOON_COMPACTION_H
-#include <linux/pagemap.h>
-#include <linux/page-flags.h>
-#include <linux/migrate.h>
-#include <linux/gfp.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/list.h>
+#ifndef _freax_BALLOON_COMPACTION_H
+#define _freax_BALLOON_COMPACTION_H
+#include <freax/pagemap.h>
+#include <freax/page-flags.h>
+#include <freax/migrate.h>
+#include <freax/gfp.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/list.h>
 
 /*
  * Balloon device information descriptor.
@@ -183,4 +183,4 @@ static inline struct page *balloon_page_pop(struct list_head *pages)
 	list_del(&page->lru);
 	return page;
 }
-#endif /* _LINUX_BALLOON_COMPACTION_H */
+#endif /* _freax_BALLOON_COMPACTION_H */

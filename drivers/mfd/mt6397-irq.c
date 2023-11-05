@@ -2,19 +2,19 @@
 //
 // Copyright (c) 2019 MediaTek Inc.
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/suspend.h>
-#include <linux/mfd/mt6323/core.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6331/core.h>
-#include <linux/mfd/mt6331/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6397/registers.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/suspend.h>
+#include <freax/mfd/mt6323/core.h>
+#include <freax/mfd/mt6323/registers.h>
+#include <freax/mfd/mt6331/core.h>
+#include <freax/mfd/mt6331/registers.h>
+#include <freax/mfd/mt6397/core.h>
+#include <freax/mfd/mt6397/registers.h>
 
 static void mt6397_irq_lock(struct irq_data *data)
 {

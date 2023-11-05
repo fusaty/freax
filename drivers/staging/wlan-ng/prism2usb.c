@@ -92,7 +92,7 @@ static int prism2sta_probe_usb(struct usb_interface *interface,
 	hw->wlandev = wlandev;
 
 	/* Register the wlandev, this gets us a name and registers the
-	 * linux netdevice.
+	 * freax netdevice.
 	 */
 	SET_NETDEV_DEV(wlandev->netdev, &interface->dev);
 

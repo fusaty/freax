@@ -14,16 +14,16 @@
  *   to hold the GPIO3/LTX pin low.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/mfd/iqs62x.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define IQS620_PWR_SETTINGS			0xd2
 #define IQS620_PWR_SETTINGS_PWM_OUT		BIT(7)

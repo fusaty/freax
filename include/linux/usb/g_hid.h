@@ -5,8 +5,8 @@
  * Copyright (C) 2010 Fabien Chouteau <fabien.chouteau@barco.com>
  */
 
-#ifndef __LINUX_USB_G_HID_H
-#define __LINUX_USB_G_HID_H
+#ifndef __freax_USB_G_HID_H
+#define __freax_USB_G_HID_H
 
 struct hidg_func_descriptor {
 	unsigned char		subclass;
@@ -16,4 +16,4 @@ struct hidg_func_descriptor {
 	unsigned char		report_desc[];
 };
 
-#endif /* __LINUX_USB_G_HID_H */
+#endif /* __freax_USB_G_HID_H */

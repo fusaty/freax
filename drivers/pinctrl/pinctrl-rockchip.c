@@ -15,24 +15,24 @@
  * Copyright (C) 2011-2012 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/string_helpers.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/string_helpers.h>
 
 #include <dt-bindings/pinctrl/rockchip.h>
 

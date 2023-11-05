@@ -7,20 +7,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/suspend.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/suspend.h>
+#include <freax/videodev2.h>
+#include <freax/mutex.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fh.h>
-#include <linux/most.h>
+#include <freax/most.h>
 
 #define V4L2_CMP_MAX_INPUT  1
 

@@ -7,9 +7,9 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
 
 void machine_shutdown(void)
 {

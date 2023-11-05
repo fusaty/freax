@@ -2,10 +2,10 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
 #include <acpi/reboot.h>
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #ifdef CONFIG_PCI
 static void acpi_pci_reboot(struct acpi_generic_address *rr, u8 reset_value)

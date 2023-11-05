@@ -5,17 +5,17 @@
  * Copyright 2020-2022 Google LLC.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/serdev.h>
-#include <linux/slab.h>
-#include <uapi/linux/sched/types.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/serdev.h>
+#include <freax/slab.h>
+#include <uapi/freax/sched/types.h>
 
 #include "cros_ec.h"
 
@@ -69,7 +69,7 @@ struct response_info {
  * @serdev:		serdev uart device we are connected to.
  * @baudrate:		UART baudrate of attached EC device.
  * @flowcontrol:	UART flowcontrol of attached device.
- * @irq:		Linux IRQ number of associated serial device.
+ * @irq:		freax IRQ number of associated serial device.
  * @response:		Response info passing between cros_ec_uart_pkt_xfer()
  *			and cros_ec_uart_rx_bytes()
  */
@@ -234,7 +234,7 @@ static int cros_ec_uart_acpi_probe(struct cros_ec_uart *ec_uart)
 
 	acpi_dev_free_resource_list(&resources);
 
-	/* Retrieve GpioInt and translate it to Linux IRQ number */
+	/* Retrieve GpioInt and translate it to freax IRQ number */
 	ret = acpi_dev_gpio_irq_get(adev, 0);
 	if (ret < 0)
 		return ret;

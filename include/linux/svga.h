@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SVGA_H
-#define _LINUX_SVGA_H
+#ifndef _freax_SVGA_H
+#define _freax_SVGA_H
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <video/vga.h>
 
 /* Terminator for register set */
@@ -121,5 +121,5 @@ void svga_set_timings(void __iomem *regbase, const struct svga_timing_regs *tm, 
 
 int svga_match_format(const struct svga_fb_format *frm, struct fb_var_screeninfo *var, struct fb_fix_screeninfo *fix);
 
-#endif /* _LINUX_SVGA_H */
+#endif /* _freax_SVGA_H */
 

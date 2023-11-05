@@ -13,7 +13,7 @@
 #
 # Copyright (C) IBM Corporation, 2013
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@freax.ibm.com>
 
 T="`mktemp -d ${TMPDIR-/tmp}/configinit.sh.XXXXXX`"
 trap 'rm -rf $T' 0

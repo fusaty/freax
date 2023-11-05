@@ -22,13 +22,13 @@
  * Authors: Ben Skeggs
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/mmu_notifier.h>
-#include <linux/dynamic_debug.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/vga_switcheroo.h>
+#include <freax/mmu_notifier.h>
+#include <freax/dynamic_debug.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

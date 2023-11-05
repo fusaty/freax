@@ -5,10 +5,10 @@
  *                   James Courtier-Dutton <James@superbug.co.uk>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 #include <sound/initval.h>

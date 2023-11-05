@@ -9,8 +9,8 @@
 #include "util/thread.h"
 #include "util/thread_map.h"
 #include "util/lock-contention.h"
-#include <linux/zalloc.h>
-#include <linux/string.h>
+#include <freax/zalloc.h>
+#include <freax/string.h>
 #include <bpf/bpf.h>
 
 #include "bpf_skel/lock_contention.skel.h"

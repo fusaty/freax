@@ -6,16 +6,16 @@
  * Copyright (C) 2005 Arcom Control Systems Ltd.
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
 
 #include "geodefb.h"
 #include "display_gx1.h"

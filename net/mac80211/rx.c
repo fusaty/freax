@@ -9,16 +9,16 @@
  * Copyright (C) 2018-2023 Intel Corporation
  */
 
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/kcov.h>
-#include <linux/bitops.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rcupdate.h>
+#include <freax/export.h>
+#include <freax/kcov.h>
+#include <freax/bitops.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include <asm/unaligned.h>

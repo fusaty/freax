@@ -8,28 +8,28 @@
  * Based on Sharp's 2.4 kernel patches/lubbock.c
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input-event-codes.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/regulator/machine.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/memblock.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/gpio_keys.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/leds.h>
+#include <freax/i2c.h>
+#include <freax/platform_data/i2c-pxa.h>
+#include <freax/platform_data/pca953x.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/ads7846.h>
+#include <freax/spi/corgi_lcd.h>
+#include <freax/spi/pxa2xx_spi.h>
+#include <freax/mtd/sharpsl.h>
+#include <freax/mtd/physmap.h>
+#include <freax/input-event-codes.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/regulator/machine.h>
+#include <freax/io.h>
+#include <freax/reboot.h>
+#include <freax/memblock.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
@@ -40,9 +40,9 @@
 #include "pxa27x.h"
 #include "pxa27x-udc.h"
 #include "reset.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <freax/platform_data/mmc-pxamci.h>
+#include <freax/platform_data/usb-ohci-pxa27x.h>
+#include <freax/platform_data/video-pxafb.h>
 #include "spitz.h"
 #include "sharpsl_pm.h"
 #include "smemc.h"

@@ -6,11 +6,11 @@
  * Phoebe Buckheister <phoebe.buckheister@itwm.fraunhofer.de>
  */
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/ieee802154.h>
-#include <linux/rculist.h>
+#include <freax/err.h>
+#include <freax/bug.h>
+#include <freax/completion.h>
+#include <freax/ieee802154.h>
+#include <freax/rculist.h>
 
 #include <crypto/aead.h>
 #include <crypto/skcipher.h>

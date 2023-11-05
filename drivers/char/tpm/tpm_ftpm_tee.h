@@ -6,9 +6,9 @@
 #ifndef __TPM_FTPM_TEE_H__
 #define __TPM_FTPM_TEE_H__
 
-#include <linux/tee_drv.h>
-#include <linux/tpm.h>
-#include <linux/uuid.h>
+#include <freax/tee_drv.h>
+#include <freax/tpm.h>
+#include <freax/uuid.h>
 
 /* The TAFs ID implemented in this TA */
 #define FTPM_OPTEE_TA_SUBMIT_COMMAND  (0)

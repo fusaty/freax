@@ -8,13 +8,13 @@
  *
  * Please send any bug reports or fixes you make to the
  * email addresched(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Xin Long <lucien.xin@gmail.com>
  */
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 #include <net/sctp/stream_sched.h>

@@ -3,8 +3,8 @@
  * Copyright (C) 2016 Noralf Trønnes
  */
 
-#ifndef __LINUX_DRM_SIMPLE_KMS_HELPER_H
-#define __LINUX_DRM_SIMPLE_KMS_HELPER_H
+#ifndef __freax_DRM_SIMPLE_KMS_HELPER_H
+#define __freax_DRM_SIMPLE_KMS_HELPER_H
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_encoder.h>
@@ -286,4 +286,4 @@ void *__drmm_simple_encoder_alloc(struct drm_device *dev, size_t size,
 					     offsetof(type, member), \
 					     encoder_type))
 
-#endif /* __LINUX_DRM_SIMPLE_KMS_HELPER_H */
+#endif /* __freax_DRM_SIMPLE_KMS_HELPER_H */

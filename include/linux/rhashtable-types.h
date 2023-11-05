@@ -6,13 +6,13 @@
  * files.
  */
 
-#ifndef _LINUX_RHASHTABLE_TYPES_H
-#define _LINUX_RHASHTABLE_TYPES_H
+#ifndef _freax_RHASHTABLE_TYPES_H
+#define _freax_RHASHTABLE_TYPES_H
 
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/compiler.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 
 struct rhash_head {
 	struct rhash_head __rcu		*next;
@@ -132,4 +132,4 @@ int rhashtable_init(struct rhashtable *ht,
 int rhltable_init(struct rhltable *hlt,
 		  const struct rhashtable_params *params);
 
-#endif /* _LINUX_RHASHTABLE_TYPES_H */
+#endif /* _freax_RHASHTABLE_TYPES_H */

@@ -7,8 +7,8 @@
  * Copyright (C) 2003 David Brownell
  */
 
-#ifndef __LINUX_USB_NET2280_H
-#define __LINUX_USB_NET2280_H
+#ifndef __freax_USB_NET2280_H
+#define __freax_USB_NET2280_H
 
 /*-------------------------------------------------------------------------*/
 
@@ -430,4 +430,4 @@ struct net2280_ep_regs {	/* [11.9] */
 	u32		_unused0[2];
 } __attribute__ ((packed));
 
-#endif /* __LINUX_USB_NET2280_H */
+#endif /* __freax_USB_NET2280_H */

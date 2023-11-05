@@ -12,36 +12,36 @@
  * bootup setup stuff..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/tty.h>
-#include <linux/major.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/adb.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/memblock.h>
-#include <linux/swiotlb.h>
-#include <linux/seq_buf.h>
+#include <freax/cpu.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/user.h>
+#include <freax/tty.h>
+#include <freax/major.h>
+#include <freax/interrupt.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/console.h>
+#include <freax/pci.h>
+#include <freax/utsname.h>
+#include <freax/adb.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/memblock.h>
+#include <freax/swiotlb.h>
+#include <freax/seq_buf.h>
 
 #include <asm/mmu.h>
 #include <asm/processor.h>
@@ -888,9 +888,9 @@ static int __init pSeries_init_panel(void)
 {
 	/* Manually leave the kernel version on the panel. */
 #ifdef __BIG_ENDIAN__
-	ppc_md.progress("Linux ppc64\n", 0);
+	ppc_md.progress("freax ppc64\n", 0);
 #else
-	ppc_md.progress("Linux ppc64le\n", 0);
+	ppc_md.progress("freax ppc64le\n", 0);
 #endif
 	ppc_md.progress(init_utsname()->version, 0);
 

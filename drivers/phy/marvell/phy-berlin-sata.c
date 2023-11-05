@@ -7,12 +7,12 @@
  * Antoine Ténart <antoine.tenart@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 
 #define HOST_VSA_ADDR		0x0
 #define HOST_VSA_DATA		0x4

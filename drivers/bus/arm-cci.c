@@ -14,13 +14,13 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/arm-cci.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/arm-cci.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

@@ -56,12 +56,12 @@
  *
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/usb/gadget.h>
-#include <linux/module.h>
-#include <linux/dmapool.h>
-#include <linux/iopoll.h>
-#include <linux/property.h>
+#include <freax/dma-mapping.h>
+#include <freax/usb/gadget.h>
+#include <freax/module.h>
+#include <freax/dmapool.h>
+#include <freax/iopoll.h>
+#include <freax/property.h>
 
 #include "core.h"
 #include "gadget-export.h"

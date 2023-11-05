@@ -5,8 +5,8 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/vmw_vmci_api.h>
 
 #include "vmci_context.h"
 #include "vmci_driver.h"

@@ -3,15 +3,15 @@
  * Copyright 2015 Linaro Limited
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
 
 #include <dt-bindings/clock/qcom,gcc-msm8916.h>
 #include <dt-bindings/reset/qcom,gcc-msm8916.h>

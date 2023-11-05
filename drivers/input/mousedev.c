@@ -12,18 +12,18 @@
 #define MOUSEDEV_MINORS		31
 #define MOUSEDEV_MIX		63
 
-#include <linux/bitops.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/random.h>
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/kernel.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/random.h>
+#include <freax/major.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/kernel.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Mouse (ExplorerPS/2) device interfaces");
@@ -1061,7 +1061,7 @@ static struct input_handler mousedev_handler = {
 };
 
 #ifdef CONFIG_INPUT_MOUSEDEV_PSAUX
-#include <linux/miscdevice.h>
+#include <freax/miscdevice.h>
 
 static struct miscdevice psaux_mouse = {
 	.minor	= PSMOUSE_MINOR,

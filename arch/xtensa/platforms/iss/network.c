@@ -13,22 +13,22 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/list.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/if_ether.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/if_tun.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/memblock.h>
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
-#include <linux/platform_device.h>
+#include <freax/list.h>
+#include <freax/irq.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/if_ether.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/if_tun.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/memblock.h>
+#include <freax/ethtool.h>
+#include <freax/rtnetlink.h>
+#include <freax/platform_device.h>
 
 #include <platform/simcall.h>
 

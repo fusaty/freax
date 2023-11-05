@@ -6,17 +6,17 @@
  * Author: Roy Im <Roy.Im.Opensource@diasemi.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
+#include <freax/workqueue.h>
+#include <freax/uaccess.h>
 
 /* Registers */
 #define DA7280_IRQ_EVENT1			0x03

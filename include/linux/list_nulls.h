@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LIST_NULLS_H
-#define _LINUX_LIST_NULLS_H
+#ifndef _freax_LIST_NULLS_H
+#define _freax_LIST_NULLS_H
 
-#include <linux/poison.h>
-#include <linux/const.h>
+#include <freax/poison.h>
+#include <freax/const.h>
 
 /*
  * Special version of lists, where end of list is not a NULL pointer,

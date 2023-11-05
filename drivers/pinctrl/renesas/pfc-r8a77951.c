@@ -5,9 +5,9 @@
  * Copyright (C) 2015-2019 Renesas Electronics Corporation
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sys_soc.h>
 
 #include "sh_pfc.h"
 

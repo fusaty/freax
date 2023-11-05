@@ -482,17 +482,17 @@ verdict program, as well as add a socket entry.
 References
 ===========
 
-- https://github.com/jrfastab/linux-kernel-xdp/commit/c89fd73cb9d2d7f3c716c3e00836f07b1aeb261f
+- https://github.com/jrfastab/freax-kernel-xdp/commit/c89fd73cb9d2d7f3c716c3e00836f07b1aeb261f
 - https://lwn.net/Articles/731133/
 - http://vger.kernel.org/lpc_net2018_talks/ktls_bpf_paper.pdf
 - https://lwn.net/Articles/748628/
 - https://lore.kernel.org/bpf/20200218171023.844439-7-jakub@cloudflare.com/
 
-.. _`tools/testing/selftests/bpf/progs/test_sockmap_kern.h`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_kern.h
-.. _`tools/testing/selftests/bpf/progs/sockmap_parse_prog.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/progs/sockmap_parse_prog.c
-.. _`tools/testing/selftests/bpf/progs/sockmap_verdict_prog.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/progs/sockmap_verdict_prog.c
-.. _`tools/testing/selftests/bpf/prog_tests/sockmap_basic.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/prog_tests/sockmap_basic.c
-.. _`tools/testing/selftests/bpf/test_sockmap.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/test_sockmap.c
-.. _`tools/testing/selftests/bpf/test_maps.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/test_maps.c
-.. _`tools/testing/selftests/bpf/progs/test_sockmap_listen.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_listen.c
-.. _`tools/testing/selftests/bpf/progs/test_sockmap_update.c`: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_update.c
+.. _`tools/testing/selftests/bpf/progs/test_sockmap_kern.h`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_kern.h
+.. _`tools/testing/selftests/bpf/progs/sockmap_parse_prog.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/progs/sockmap_parse_prog.c
+.. _`tools/testing/selftests/bpf/progs/sockmap_verdict_prog.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/progs/sockmap_verdict_prog.c
+.. _`tools/testing/selftests/bpf/prog_tests/sockmap_basic.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/prog_tests/sockmap_basic.c
+.. _`tools/testing/selftests/bpf/test_sockmap.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/test_sockmap.c
+.. _`tools/testing/selftests/bpf/test_maps.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/test_maps.c
+.. _`tools/testing/selftests/bpf/progs/test_sockmap_listen.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_listen.c
+.. _`tools/testing/selftests/bpf/progs/test_sockmap_update.c`: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/testing/selftests/bpf/progs/test_sockmap_update.c

@@ -3,7 +3,7 @@
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  */
 
@@ -44,19 +44,19 @@
 #define DASD_STATE_READY  4
 #define DASD_STATE_ONLINE 5
 
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
+#include <freax/module.h>
+#include <freax/wait.h>
+#include <freax/blkdev.h>
+#include <freax/hdreg.h>
+#include <freax/interrupt.h>
+#include <freax/log2.h>
 #include <asm/ccwdev.h>
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 #include <asm/debug.h>
 #include <asm/dasd.h>
 #include <asm/idals.h>
-#include <linux/bitops.h>
-#include <linux/blk-mq.h>
+#include <freax/bitops.h>
+#include <freax/blk-mq.h>
 
 /* DASD discipline magic */
 #define DASD_ECKD_MAGIC 0xC5C3D2C4

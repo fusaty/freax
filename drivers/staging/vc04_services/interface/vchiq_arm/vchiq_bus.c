@@ -5,11 +5,11 @@
  * Copyright (c) 2023 Ideas On Board Oy
  */
 
-#include <linux/device/bus.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/device/bus.h>
+#include <freax/dma-mapping.h>
+#include <freax/of_device.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include "vchiq_bus.h"
 

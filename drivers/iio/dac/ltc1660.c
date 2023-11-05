@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2018 Marcus Folkesson <marcus.folkesson@gmail.com>
  */
-#include <linux/bitops.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/bitops.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #define LTC1660_REG_WAKE	0x0
 #define LTC1660_REG_DAC_A	0x1

@@ -4,14 +4,14 @@
  *
  * Copyright IBM Corp. 2009, 2017
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
- *	      Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ *	      Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 
 #ifndef _ASM_S390_PERF_EVENT_H
 #define _ASM_S390_PERF_EVENT_H
 
-#include <linux/perf_event.h>
-#include <linux/device.h>
+#include <freax/perf_event.h>
+#include <freax/device.h>
 #include <asm/stacktrace.h>
 
 /* Per-CPU flags for PMU states */

@@ -7,15 +7,15 @@
  * GNU General Public License.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/edac.h>
+#include <freax/io.h>
 #include "edac_module.h"
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 #define EDAC_MOD_STR        "i3200_edac"
 

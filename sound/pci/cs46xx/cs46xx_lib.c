@@ -31,19 +31,19 @@
  *           Benny <benny@hostmobility.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/pm.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/gameport.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -3530,7 +3530,7 @@ static void amp_voyetra_4294(struct snd_cs46xx *chip, int change)
  *	whenever we need to beat on the chip.
  *
  *	The original idea and code for this hack comes from David Kaiser at
- *	Linuxcare. Perhaps one day Crystal will document their chips well
+ *	freaxcare. Perhaps one day Crystal will document their chips well
  *	enough to make them useful.
  */
  

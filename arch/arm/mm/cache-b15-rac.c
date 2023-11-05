@@ -5,15 +5,15 @@
  * Copyright (C) 2015-2016 Broadcom
  */
 
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/of_address.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/syscore_ops.h>
-#include <linux/reboot.h>
+#include <freax/err.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/of_address.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/syscore_ops.h>
+#include <freax/reboot.h>
 
 #include <asm/cacheflush.h>
 #include <asm/hardware/cache-b15-rac.h>
@@ -201,7 +201,7 @@ static struct notifier_block b15_rac_reboot_nb = {
  *      cpuhp_setup_state_*()
  *      ...
  *      set RAC_ENABLED
- *   However, there is no hotplug activity based on the Linux booting procedure.
+ *   However, there is no hotplug activity based on the freax booting procedure.
  *
  * Since we have to disable RAC for all cores, we keep RAC on as long as as
  * possible (disable it as late as possible) to gain the cache benefit.

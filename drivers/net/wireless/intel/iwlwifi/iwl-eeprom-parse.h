@@ -6,8 +6,8 @@
 #ifndef __iwl_eeprom_parse_h__
 #define __iwl_eeprom_parse_h__
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 #include <net/cfg80211.h>
 #include "iwl-trans.h"
 

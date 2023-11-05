@@ -9,7 +9,7 @@
 #ifndef _ASM_SN_TYPES_H
 #define _ASM_SN_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef __ASSEMBLY__
 

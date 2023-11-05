@@ -9,7 +9,7 @@
 
 #include <endian.h>
 #include <asm/types.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,12 +22,12 @@
 #include <limits.h>
 #include <assert.h>
 
-#include <linux/unistd.h>
-#include <linux/filter.h>
-#include <linux/bpf_perf_event.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/btf.h>
+#include <freax/unistd.h>
+#include <freax/filter.h>
+#include <freax/bpf_perf_event.h>
+#include <freax/bpf.h>
+#include <freax/if_ether.h>
+#include <freax/btf.h>
 
 #include <bpf/btf.h>
 #include <bpf/bpf.h>
@@ -39,7 +39,7 @@
 #include "bpf_rand.h"
 #include "bpf_util.h"
 #include "test_btf.h"
-#include "../../../include/linux/filter.h"
+#include "../../../include/freax/filter.h"
 #include "testing_helpers.h"
 
 #ifndef ENOTSUPP
@@ -892,7 +892,7 @@ static __u64 ptr_to_u64(const void *ptr)
 	return (uintptr_t) ptr;
 }
 
-static struct btf *btf__load_testmod_btf(struct btf *vmlinux)
+static struct btf *btf__load_testmod_btf(struct btf *vmfreax)
 {
 	struct bpf_btf_info info;
 	__u32 len = sizeof(info);
@@ -940,7 +940,7 @@ static struct btf *btf__load_testmod_btf(struct btf *vmlinux)
 			continue;
 		}
 
-		btf = btf__load_from_kernel_by_id_split(id, vmlinux);
+		btf = btf__load_from_kernel_by_id_split(id, vmfreax);
 		if (!btf) {
 			close(fd);
 			break;
@@ -959,12 +959,12 @@ static struct btf *btf__load_testmod_btf(struct btf *vmlinux)
 }
 
 static struct btf *testmod_btf;
-static struct btf *vmlinux_btf;
+static struct btf *vmfreax_btf;
 
 static void kfuncs_cleanup(void)
 {
 	btf__free(testmod_btf);
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 }
 
 static void fixup_prog_kfuncs(struct bpf_insn *prog, int *fd_array,
@@ -975,9 +975,9 @@ static void fixup_prog_kfuncs(struct bpf_insn *prog, int *fd_array,
 		int btf_id = 0;
 
 		/* try to find kfunc in kernel BTF */
-		vmlinux_btf = vmlinux_btf ?: btf__load_vmlinux_btf();
-		if (vmlinux_btf) {
-			btf_id = btf__find_by_name_kind(vmlinux_btf,
+		vmfreax_btf = vmfreax_btf ?: btf__load_vmfreax_btf();
+		if (vmfreax_btf) {
+			btf_id = btf__find_by_name_kind(vmfreax_btf,
 							fixup_kfunc_btf_id->kfunc,
 							BTF_KIND_FUNC);
 			btf_id = btf_id < 0 ? 0 : btf_id;
@@ -985,7 +985,7 @@ static void fixup_prog_kfuncs(struct bpf_insn *prog, int *fd_array,
 
 		/* kfunc not found in kernel BTF, try bpf_testmod BTF */
 		if (!btf_id) {
-			testmod_btf = testmod_btf ?: btf__load_testmod_btf(vmlinux_btf);
+			testmod_btf = testmod_btf ?: btf__load_testmod_btf(vmfreax_btf);
 			if (testmod_btf) {
 				btf_id = btf__find_by_name_kind(testmod_btf,
 								fixup_kfunc_btf_id->kfunc,
@@ -1616,7 +1616,7 @@ static void do_test_single(struct bpf_test *test, bool unpriv,
 	     prog_type == BPF_PROG_TYPE_LSM) && test->kfunc) {
 		int attach_btf_id;
 
-		attach_btf_id = libbpf_find_vmlinux_btf_id(test->kfunc,
+		attach_btf_id = libbpf_find_vmfreax_btf_id(test->kfunc,
 						opts.expected_attach_type);
 		if (attach_btf_id < 0) {
 			printf("FAIL\nFailed to find BTF ID for '%s'!\n",

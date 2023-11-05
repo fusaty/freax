@@ -4,10 +4,10 @@
   (C) 2012  Michel Lespinasse <walken@google.com>
 
 
-  include/linux/interval_tree_generic.h
+  include/freax/interval_tree_generic.h
 */
 
-#include <linux/rbtree_augmented.h>
+#include <freax/rbtree_augmented.h>
 
 /*
  * Template for implementing interval trees

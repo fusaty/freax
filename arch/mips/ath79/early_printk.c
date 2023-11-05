@@ -6,10 +6,10 @@
  *  Copyright (C) 2008 Imre Kaloz <kaloz@openwrt.org>
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
+#include <freax/io.h>
+#include <freax/errno.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
 #include <asm/addrspace.h>
 #include <asm/setup.h>
 

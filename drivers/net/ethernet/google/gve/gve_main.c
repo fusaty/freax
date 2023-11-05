@@ -4,18 +4,18 @@
  * Copyright (C) 2015-2021 Google, Inc.
  */
 
-#include <linux/bpf.h>
-#include <linux/cpumask.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
+#include <freax/bpf.h>
+#include <freax/cpumask.h>
+#include <freax/etherdevice.h>
+#include <freax/filter.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/utsname.h>
+#include <freax/version.h>
 #include <net/sch_generic.h>
 #include <net/xdp_sock_drv.h>
 #include "gve.h"
@@ -49,10 +49,10 @@ static int gve_verify_driver_compatibility(struct gve_priv *priv)
 		return -ENOMEM;
 
 	*driver_info = (struct gve_driver_info) {
-		.os_type = 1, /* Linux */
-		.os_version_major = cpu_to_be32(LINUX_VERSION_MAJOR),
-		.os_version_minor = cpu_to_be32(LINUX_VERSION_SUBLEVEL),
-		.os_version_sub = cpu_to_be32(LINUX_VERSION_PATCHLEVEL),
+		.os_type = 1, /* freax */
+		.os_version_major = cpu_to_be32(freax_VERSION_MAJOR),
+		.os_version_minor = cpu_to_be32(freax_VERSION_SUBLEVEL),
+		.os_version_sub = cpu_to_be32(freax_VERSION_PATCHLEVEL),
 		.driver_capability_flags = {
 			cpu_to_be64(GVE_DRIVER_CAPABILITY_FLAGS1),
 			cpu_to_be64(GVE_DRIVER_CAPABILITY_FLAGS2),

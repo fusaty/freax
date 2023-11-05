@@ -8,10 +8,10 @@
 #ifndef __ASM_ARM_ATOMIC_H
 #define __ASM_ARM_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <freax/compiler.h>
+#include <freax/prefetch.h>
+#include <freax/types.h>
+#include <freax/irqflags.h>
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>
 
@@ -25,7 +25,7 @@
 #define arch_atomic_read(v)	READ_ONCE((v)->counter)
 #define arch_atomic_set(v,i)	WRITE_ONCE(((v)->counter), (i))
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 
 /*
  * ARMv6 UP and SMP safe atomic ops.  We use load exclusive and
@@ -222,7 +222,7 @@ static inline int arch_atomic_cmpxchg(atomic_t *v, int old, int new)
 }
 #define arch_atomic_cmpxchg arch_atomic_cmpxchg
 
-#endif /* __LINUX_ARM_ARCH__ */
+#endif /* __freax_ARM_ARCH__ */
 
 #define ATOMIC_OPS(op, c_op, asm_op)					\
 	ATOMIC_OP(op, c_op, asm_op)					\

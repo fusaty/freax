@@ -8,13 +8,13 @@
 
 #include <crypto/algapi.h>
 #include <crypto/internal/aead.h>
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kobject.h>
-#include <linux/cpu.h>
+#include <freax/atomic.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kobject.h>
+#include <freax/cpu.h>
 #include <crypto/pcrypt.h>
 
 static struct padata_instance *pencrypt;

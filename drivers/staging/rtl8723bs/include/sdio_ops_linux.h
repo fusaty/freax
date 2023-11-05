@@ -4,8 +4,8 @@
  * Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved.
  *
  ******************************************************************************/
-#ifndef __SDIO_OPS_LINUX_H__
-#define __SDIO_OPS_LINUX_H__
+#ifndef __SDIO_OPS_freax_H__
+#define __SDIO_OPS_freax_H__
 
 #define SDIO_ERR_VAL8	0xEA
 #define SDIO_ERR_VAL16	0xEAEA

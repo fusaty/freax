@@ -12,23 +12,23 @@
  * Modeled after usb's driverfs.c
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/pm_runtime.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/aperture.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/stat.h>
+#include <freax/export.h>
+#include <freax/topology.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/capability.h>
+#include <freax/security.h>
+#include <freax/slab.h>
+#include <freax/vgaarb.h>
+#include <freax/pm_runtime.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/aperture.h>
 #include "pci.h"
 
 static int sysfs_initialized;	/* = 0 */

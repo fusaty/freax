@@ -6,12 +6,12 @@
  * to IDE adapter chip.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 #include <asm/io.h>
 #include "pata_parport.h"
 

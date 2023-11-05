@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
+ * freax/drivers/video/hgafb.c -- Hercules graphics adaptor frame buffer device
  *
  *      Created 25 Nov 1999 by Ferenc Bakonyi (fero@drama.obuda.kando.hu)
  *      Based on skeletonfb.c by Geert Uytterhoeven and
@@ -30,17 +30,17 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 #include <asm/vga.h>
 
@@ -242,7 +242,7 @@ static void hga_show_logo(struct fb_info *info)
 {
 /*
 	void __iomem *dest = hga_vram;
-	char *logo = linux_logo_bw;
+	char *logo = freax_logo_bw;
 	int x, y;
 
 	for (y = 134; y < 134 + 80 ; y++) * this needs some cleanup *

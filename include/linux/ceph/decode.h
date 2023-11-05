@@ -2,13 +2,13 @@
 #ifndef __CEPH_DECODE_H
 #define __CEPH_DECODE_H
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <freax/err.h>
+#include <freax/bug.h>
+#include <freax/slab.h>
+#include <freax/time.h>
 #include <asm/unaligned.h>
 
-#include <linux/ceph/types.h>
+#include <freax/ceph/types.h>
 
 /*
  * in all cases,

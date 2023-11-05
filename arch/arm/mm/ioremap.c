@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/ioremap.c
+ *  freax/arch/arm/mm/ioremap.c
  *
  * Re-map IO memory to kernel address space so that we can access it.
  *
@@ -21,13 +21,13 @@
  * We use MMU protection domains to trap any attempt to access the bank
  * that is not currently mapped.  (This isn't fully implemented yet.)
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
-#include <linux/memblock.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
+#include <freax/sizes.h>
+#include <freax/memblock.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

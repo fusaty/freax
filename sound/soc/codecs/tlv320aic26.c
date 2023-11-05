@@ -6,15 +6,15 @@
  * Copyright (C) 2008 Secret Lab Technologies Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

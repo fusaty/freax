@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/ti.h>
 #include <dt-bindings/clock/dm816.h>
 
 #include "clock.h"

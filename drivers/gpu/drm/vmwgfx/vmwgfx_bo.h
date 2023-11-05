@@ -33,8 +33,8 @@
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_placement.h>
 
-#include <linux/rbtree_types.h>
-#include <linux/types.h>
+#include <freax/rbtree_types.h>
+#include <freax/types.h>
 
 struct vmw_bo_dirty;
 struct vmw_fence_obj;

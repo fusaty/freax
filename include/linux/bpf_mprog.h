@@ -3,7 +3,7 @@
 #ifndef __BPF_MPROG_H
 #define __BPF_MPROG_H
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 /* bpf_mprog framework:
  *

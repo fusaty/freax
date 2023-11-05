@@ -1,7 +1,7 @@
 What:		/sys/bus/event_source/devices/dmar*/format
 Date:		Jan 2023
 KernelVersion:  6.3
-Contact:	Kan Liang <kan.liang@linux.intel.com>
+Contact:	Kan Liang <kan.liang@freax.intel.com>
 Description:	Read-only.  Attribute group to describe the magic bits
 		that go into perf_event_attr.config,
 		perf_event_attr.config1 or perf_event_attr.config2 for
@@ -31,7 +31,7 @@ Description:	Read-only.  Attribute group to describe the magic bits
 What:		/sys/bus/event_source/devices/dmar*/cpumask
 Date:		Jan 2023
 KernelVersion:	6.3
-Contact:	Kan Liang <kan.liang@linux.intel.com>
+Contact:	Kan Liang <kan.liang@freax.intel.com>
 Description:	Read-only. This file always returns the CPU to which the
 		IOMMU pmu is bound for access to all IOMMU pmu performance
 		monitoring events.

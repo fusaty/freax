@@ -3,8 +3,8 @@
  * Copyright (C) 2017 Spreadtrum Communications Inc.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
 
 #include "timer-of.h"
 

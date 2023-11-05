@@ -5,16 +5,16 @@
  * Copyright (C) 2017 Cadence Design Systems Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

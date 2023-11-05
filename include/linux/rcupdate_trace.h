@@ -5,11 +5,11 @@
  * Copyright (C) 2020 Paul E. McKenney.
  */
 
-#ifndef __LINUX_RCUPDATE_TRACE_H
-#define __LINUX_RCUPDATE_TRACE_H
+#ifndef __freax_RCUPDATE_TRACE_H
+#define __freax_RCUPDATE_TRACE_H
 
-#include <linux/sched.h>
-#include <linux/rcupdate.h>
+#include <freax/sched.h>
+#include <freax/rcupdate.h>
 
 extern struct lockdep_map rcu_trace_lock_map;
 
@@ -98,4 +98,4 @@ static inline void rcu_read_lock_trace(void) { BUG(); }
 static inline void rcu_read_unlock_trace(void) { BUG(); }
 #endif /* #ifdef CONFIG_TASKS_TRACE_RCU */
 
-#endif /* __LINUX_RCUPDATE_TRACE_H */
+#endif /* __freax_RCUPDATE_TRACE_H */

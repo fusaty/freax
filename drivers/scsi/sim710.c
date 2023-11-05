@@ -13,14 +13,14 @@
  * Rewritten to use 53c700.c by James.Bottomley@SteelEye.com
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/eisa.h>
-#include <linux/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/eisa.h>
+#include <freax/interrupt.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport.h>

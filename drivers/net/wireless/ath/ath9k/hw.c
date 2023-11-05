@@ -14,13 +14,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/bitops.h>
+#include <freax/etherdevice.h>
+#include <freax/gpio.h>
 #include <asm/unaligned.h>
 
 #include "hw.h"

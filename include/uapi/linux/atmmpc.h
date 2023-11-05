@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _ATMMPC_H_
 #define _ATMMPC_H_
 
-#include <linux/atmapi.h>
-#include <linux/atmioc.h>
-#include <linux/atm.h>
-#include <linux/types.h>
+#include <freax/atmapi.h>
+#include <freax/atmioc.h>
+#include <freax/atm.h>
+#include <freax/types.h>
 
 #define ATMMPC_CTRL _IO('a', ATMIOC_MPOA)
 #define ATMMPC_DATA _IO('a', ATMIOC_MPOA+1)

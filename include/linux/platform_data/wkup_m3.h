@@ -7,8 +7,8 @@
  * Dave Gerlach <d-gerlach@ti.com>
  */
 
-#ifndef _LINUX_PLATFORM_DATA_WKUP_M3_H
-#define _LINUX_PLATFORM_DATA_WKUP_M3_H
+#ifndef _freax_PLATFORM_DATA_WKUP_M3_H
+#define _freax_PLATFORM_DATA_WKUP_M3_H
 
 struct platform_device;
 
@@ -19,4 +19,4 @@ struct wkup_m3_platform_data {
 	int (*deassert_reset)(struct platform_device *pdev, const char *name);
 };
 
-#endif /* _LINUX_PLATFORM_DATA_WKUP_M3_H */
+#endif /* _freax_PLATFORM_DATA_WKUP_M3_H */

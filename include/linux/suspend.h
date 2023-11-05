@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SUSPEND_H
-#define _LINUX_SUSPEND_H
+#ifndef _freax_SUSPEND_H
+#define _freax_SUSPEND_H
 
-#include <linux/swap.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
+#include <freax/swap.h>
+#include <freax/notifier.h>
+#include <freax/init.h>
+#include <freax/pm.h>
+#include <freax/mm.h>
+#include <freax/freezer.h>
 #include <asm/errno.h>
 
 #ifdef CONFIG_VT
@@ -590,7 +590,7 @@ static inline int pm_dyn_debug_messages_on(void)
 #define pm_print_times_enabled	(false)
 #define pm_debug_messages_on	(false)
 
-#include <linux/printk.h>
+#include <freax/printk.h>
 
 #define __pm_pr_dbg(fmt, ...) \
 	no_printk(KERN_DEBUG pr_fmt(fmt), ##__VA_ARGS__)
@@ -626,4 +626,4 @@ static inline void queue_up_suspend_work(void) {}
 
 #endif /* !CONFIG_PM_AUTOSLEEP */
 
-#endif /* _LINUX_SUSPEND_H */
+#endif /* _freax_SUSPEND_H */

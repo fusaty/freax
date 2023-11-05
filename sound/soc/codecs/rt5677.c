@@ -6,22 +6,22 @@
  * Author: Oder Chiou <oder_chiou@realtek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/fs.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/workqueue.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -5,16 +5,16 @@
  * Copyright (C) 2009 Marvell International Ltd.
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/mfd/88pm860x.h>
+#include <freax/module.h>
 
 struct pm8607_regulator_info {
 	struct regulator_desc	desc;

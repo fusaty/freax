@@ -10,17 +10,17 @@
 
 #include "ssb_private.h"
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/ssb/ssb.h>
+#include <freax/ssb/ssb_regs.h>
+#include <freax/ssb/ssb_driver_gige.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

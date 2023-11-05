@@ -8,15 +8,15 @@
  *	   Mallikarjun Kasoju <mkasoju@nvidia.com>
  */
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/max77620.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/max77620.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 
 #define MAX77620_NORMAL_OPERATING_TEMP	100000
 #define MAX77620_TJALARM1_TEMP		120000

@@ -9,12 +9,12 @@
  * Added support RSX DMA Vivien Chappelier <vivien.chappelier@free.fr>
  */
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #include <asm/cell-regs.h>
 #include <asm/firmware.h>

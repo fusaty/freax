@@ -3,7 +3,7 @@
  * Copyright (C) 2019 Stefan Wahren
  */
 
-#include <linux/of_address.h>
+#include <freax/of_address.h>
 
 #include <asm/mach/arch.h>
 

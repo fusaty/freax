@@ -8,15 +8,15 @@
  * Started by Ingo Molnar <mingo@elte.hu>
  */
 
-#include <linux/elf-randomize.h>
-#include <linux/personality.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/random.h>
-#include <linux/compat.h>
-#include <linux/security.h>
+#include <freax/elf-randomize.h>
+#include <freax/personality.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/random.h>
+#include <freax/compat.h>
+#include <freax/security.h>
 #include <asm/elf.h>
 
 static unsigned long stack_maxrandom_size(void)

@@ -32,10 +32,10 @@
 #include <drm/drm_simple_kms_helper.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock.h>
 
 #include "zynqmp_disp.h"
 #include "zynqmp_dp.h"

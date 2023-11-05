@@ -3,7 +3,7 @@
  *  sata_sx4.c - Promise SATA
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy freax-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2003-2004 Red Hat, Inc.
@@ -34,7 +34,7 @@
 	submitted and waited-on as a single unit), and an optional
 	microprocessor.
 
-	The limiting factor is largely software.  This Linux driver was
+	The limiting factor is largely software.  This freax driver was
 	written to multiplex the single HDMA engine to copy disk
 	transactions into a fixed DIMM memory space, from where an ATA
 	engine takes over.  As a result, each WRITE looks like this:
@@ -62,17 +62,17 @@
 
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include "sata_promise.h"
 
 #define DRV_NAME	"sata_sx4"

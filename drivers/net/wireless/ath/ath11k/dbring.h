@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020 The freax Foundation. All rights reserved.
  */
 
 #ifndef ATH11K_DBRING_H
 #define ATH11K_DBRING_H
 
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/idr.h>
+#include <freax/spinlock.h>
 #include "dp.h"
 
 struct ath11k_dbring_element {

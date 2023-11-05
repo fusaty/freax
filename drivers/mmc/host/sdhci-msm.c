@@ -2,21 +2,21 @@
 /*
  * drivers/mmc/host/sdhci-msm.c - Qualcomm SDHCI Platform driver
  *
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mmc/mmc.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/iopoll.h>
-#include <linux/regulator/consumer.h>
-#include <linux/interconnect.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/mmc/mmc.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
+#include <freax/iopoll.h>
+#include <freax/regulator/consumer.h>
+#include <freax/interconnect.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/reset.h>
 
 #include <soc/qcom/ice.h>
 

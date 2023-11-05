@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/mlx5/mlx5_ifc_vdpa.h>
-#include <linux/mlx5/vport.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/eswitch.h>
+#include <freax/mlx5/mlx5_ifc_vdpa.h>
+#include <freax/mlx5/vport.h>
 #include "mlx5_core.h"
 #include "devlink.h"
 #include "lag/lag.h"

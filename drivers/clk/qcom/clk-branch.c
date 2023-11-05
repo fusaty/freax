@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
 
 #include "clk-branch.h"
 

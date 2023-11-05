@@ -3,19 +3,19 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/sort.h>
-#include <linux/rcupdate.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/percpu_counter.h>
-#include <linux/lockdep.h>
-#include <linux/crc32c.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/sort.h>
+#include <freax/rcupdate.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
+#include <freax/percpu_counter.h>
+#include <freax/lockdep.h>
+#include <freax/crc32c.h>
 #include "ctree.h"
 #include "extent-tree.h"
 #include "tree-log.h"

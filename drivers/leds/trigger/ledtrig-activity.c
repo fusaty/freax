@@ -6,16 +6,16 @@
  * Partially based on Atsushi Nemoto's ledtrig-heartbeat.c.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/kernel_stat.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/panic_notifier.h>
+#include <freax/reboot.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 #include "../leds.h"
 
 static int panic_detected;

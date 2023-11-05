@@ -3,9 +3,9 @@
 #include <sys/types.h>
 #include <sys/epoll.h>
 #include <sys/socket.h>
-#include <linux/netlink.h>
-#include <linux/connector.h>
-#include <linux/cn_proc.h>
+#include <freax/netlink.h>
+#include <freax/connector.h>
+#include <freax/cn_proc.h>
 
 #include <stddef.h>
 #include <stdio.h>

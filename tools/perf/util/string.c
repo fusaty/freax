@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "string2.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include <stdlib.h>
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 const char *graph_dotted_line =
 	"---------------------------------------------------------------------"

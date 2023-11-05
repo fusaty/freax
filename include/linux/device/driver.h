@@ -5,8 +5,8 @@
  * Copyright (c) 2001-2003 Patrick Mochel <mochel@osdl.org>
  * Copyright (c) 2004-2009 Greg Kroah-Hartman <gregkh@suse.de>
  * Copyright (c) 2008-2009 Novell Inc.
- * Copyright (c) 2012-2019 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
- * Copyright (c) 2012-2019 Linux Foundation
+ * Copyright (c) 2012-2019 Greg Kroah-Hartman <gregkh@freaxfoundation.org>
+ * Copyright (c) 2012-2019 freax Foundation
  *
  * See Documentation/driver-api/driver-model/ for more information.
  */
@@ -14,11 +14,11 @@
 #ifndef _DEVICE_DRIVER_H_
 #define _DEVICE_DRIVER_H_
 
-#include <linux/kobject.h>
-#include <linux/klist.h>
-#include <linux/pm.h>
-#include <linux/device/bus.h>
-#include <linux/module.h>
+#include <freax/kobject.h>
+#include <freax/klist.h>
+#include <freax/pm.h>
+#include <freax/device/bus.h>
+#include <freax/module.h>
 
 /**
  * enum probe_type - device driver probe type to try

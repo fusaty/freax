@@ -4,10 +4,10 @@
 //
 // Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-imx1.h"
 

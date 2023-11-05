@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 1999, 2000, 05, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1999, 2000, 05, 06 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/bcd.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched_clock.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/param.h>
-#include <linux/smp.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
+#include <freax/bcd.h>
+#include <freax/clockchips.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched_clock.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/param.h>
+#include <freax/smp.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/mm.h>
+#include <freax/platform_device.h>
 
 #include <asm/time.h>
 #include <asm/sgialib.h>

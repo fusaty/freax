@@ -4,15 +4,15 @@
  *
  * Author: Suresh Siddha <suresh.b.siddha@intel.com>
  */
-#include <linux/bitops.h>
-#include <linux/compat.h>
-#include <linux/cpu.h>
-#include <linux/mman.h>
-#include <linux/nospec.h>
-#include <linux/pkeys.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
+#include <freax/bitops.h>
+#include <freax/compat.h>
+#include <freax/cpu.h>
+#include <freax/mman.h>
+#include <freax/nospec.h>
+#include <freax/pkeys.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/vmalloc.h>
 
 #include <asm/fpu/api.h>
 #include <asm/fpu/regset.h>
@@ -35,7 +35,7 @@
 /*
  * Although we spell it out in here, the Processor Trace
  * xfeature is completely unused.  We use other mechanisms
- * to save/restore PT state in Linux.
+ * to save/restore PT state in freax.
  */
 static const char *xfeature_names[] =
 {

@@ -5,12 +5,12 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/device.h>
 
 #include "bus.h"
 #include "controller.h"

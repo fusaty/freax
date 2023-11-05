@@ -17,10 +17,10 @@
  */
 #include <crypto/internal/hash.h>
 #include <crypto/md5.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 const u8 md5_zero_message_hash[MD5_DIGEST_SIZE] = {

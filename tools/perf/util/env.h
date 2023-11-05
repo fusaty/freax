@@ -2,8 +2,8 @@
 #ifndef __PERF_ENV_H
 #define __PERF_ENV_H
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <freax/types.h>
+#include <freax/rbtree.h>
 #include "cpumap.h"
 #include "rwsem.h"
 

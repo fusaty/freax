@@ -4,14 +4,14 @@
  * Copyright (C) 2017 Florian Eckert <fe@dev.tdt.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <lantiq_soc.h>
 

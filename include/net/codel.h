@@ -41,16 +41,16 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/ktime.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/ktime.h>
+#include <freax/skbuff.h>
 
 /* Controlling Queue Delay (CoDel) algorithm
  * =========================================
  * Source : Kathleen Nichols and Van Jacobson
  * http://queue.acm.org/detail.cfm?id=2209336
  *
- * Implemented on linux by Dave Taht and Eric Dumazet
+ * Implemented on freax by Dave Taht and Eric Dumazet
  */
 
 

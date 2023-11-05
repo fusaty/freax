@@ -2,10 +2,10 @@
 #ifndef __NV_TYPE_H__
 #define __NV_TYPE_H__
 
-#include <linux/fb.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/fb.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 #include <video/vga.h>
 
 #define NV_ARCH_04  0x04

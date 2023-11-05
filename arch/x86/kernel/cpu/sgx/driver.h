@@ -3,12 +3,12 @@
 #define __ARCH_SGX_DRIVER_H__
 
 #include <crypto/hash.h>
-#include <linux/kref.h>
-#include <linux/mmu_notifier.h>
-#include <linux/radix-tree.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
+#include <freax/kref.h>
+#include <freax/mmu_notifier.h>
+#include <freax/radix-tree.h>
+#include <freax/rwsem.h>
+#include <freax/sched.h>
+#include <freax/workqueue.h>
 #include <uapi/asm/sgx.h>
 #include "sgx.h"
 

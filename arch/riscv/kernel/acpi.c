@@ -13,10 +13,10 @@
  *	Author: Sunil V L <sunilvl@ventanamicro.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/efi.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/efi.h>
 
 int acpi_noirq = 1;		/* skip ACPI IRQ initialization */
 int acpi_disabled = 1;

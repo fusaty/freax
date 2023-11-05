@@ -7,7 +7,7 @@
 #define _CEPH_CRYPTO_H
 
 #include <crypto/sha2.h>
-#include <linux/fscrypt.h>
+#include <freax/fscrypt.h>
 
 #define CEPH_FSCRYPT_BLOCK_SHIFT   12
 #define CEPH_FSCRYPT_BLOCK_SIZE    (_AC(1, UL) << CEPH_FSCRYPT_BLOCK_SHIFT)

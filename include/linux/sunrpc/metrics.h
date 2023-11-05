@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/metrics.h
+ *  freax/include/freax/sunrpc/metrics.h
  *
  *  Declarations for RPC client per-operation metrics
  *
@@ -23,12 +23,12 @@
  *  arrays per-CPU because these counters are always modified behind locks.
  */
 
-#ifndef _LINUX_SUNRPC_METRICS_H
-#define _LINUX_SUNRPC_METRICS_H
+#ifndef _freax_SUNRPC_METRICS_H
+#define _freax_SUNRPC_METRICS_H
 
-#include <linux/seq_file.h>
-#include <linux/ktime.h>
-#include <linux/spinlock.h>
+#include <freax/seq_file.h>
+#include <freax/ktime.h>
+#include <freax/spinlock.h>
 
 #define RPC_IOSTATS_VERS	"1.1"
 
@@ -105,4 +105,4 @@ static inline void rpc_free_iostats(struct rpc_iostats *stats) {}
 
 #endif  /*  CONFIG_PROC_FS  */
 
-#endif /* _LINUX_SUNRPC_METRICS_H */
+#endif /* _freax_SUNRPC_METRICS_H */

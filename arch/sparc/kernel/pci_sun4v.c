@@ -4,20 +4,20 @@
  * Copyright (C) 2006, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/dma-map-ops.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/percpu.h>
+#include <freax/irq.h>
+#include <freax/msi.h>
+#include <freax/export.h>
+#include <freax/log2.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/dma-map-ops.h>
 #include <asm/iommu-common.h>
 
 #include <asm/iommu.h>
@@ -1220,7 +1220,7 @@ static int pci_sun4v_pbm_init(struct pci_pbm_info *pbm,
 
 static int pci_sun4v_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *regs;
+	const struct freax_prom64_registers *regs;
 	static int hvapi_negotiated = 0;
 	struct pci_pbm_info *pbm;
 	struct device_node *dp;

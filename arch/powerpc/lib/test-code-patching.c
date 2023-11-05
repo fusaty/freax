@@ -3,8 +3,8 @@
  *  Copyright 2008 Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/vmalloc.h>
-#include <linux/init.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
 
 #include <asm/code-patching.h>
 

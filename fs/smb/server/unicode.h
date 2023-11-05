@@ -22,9 +22,9 @@
 #define _SMB_UNICODE_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/nls.h>
-#include <linux/unicode.h>
+#include <freax/types.h>
+#include <freax/nls.h>
+#include <freax/unicode.h>
 #include "../../nls/nls_ucs2_utils.h"
 
 #ifdef __KERNEL__

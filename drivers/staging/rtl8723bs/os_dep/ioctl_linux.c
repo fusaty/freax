@@ -5,13 +5,13 @@
  *
  ******************************************************************************/
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <rtw_mp.h>
 #include <hal_btcoex.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
 
 #define RTL_IOCTL_WPA_SUPPLICANT	(SIOCIWFIRSTPRIV + 30)
 

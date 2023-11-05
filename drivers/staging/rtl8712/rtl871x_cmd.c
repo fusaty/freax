@@ -3,9 +3,9 @@
  * rtl871x_cmd.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * freax device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the freax staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,22 +16,22 @@
 
 #define _RTL871X_CMD_C_
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/circ_buf.h>
-#include <linux/uaccess.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/kref.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/circ_buf.h>
+#include <freax/uaccess.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/semaphore.h>
-#include <linux/rtnetlink.h>
+#include <freax/atomic.h>
+#include <freax/semaphore.h>
+#include <freax/rtnetlink.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

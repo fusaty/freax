@@ -2,20 +2,20 @@
 /*
     i2c Support for the Apple `Hydra' Mac I/O
 
-    Copyright (c) 1999-2004 Geert Uytterhoeven <geert@linux-m68k.org>
+    Copyright (c) 1999-2004 Geert Uytterhoeven <geert@freax-m68k.org>
 
     Based on i2c Support for Via Technologies 82C586B South Bridge
     Copyright (c) 1998, 1999 Kyösti Mälkki <kmalkki@cc.hut.fi>
 
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/io.h>
 #include <asm/hydra.h>
 
 
@@ -145,6 +145,6 @@ static struct pci_driver hydra_driver = {
 
 module_pci_driver(hydra_driver);
 
-MODULE_AUTHOR("Geert Uytterhoeven <geert@linux-m68k.org>");
+MODULE_AUTHOR("Geert Uytterhoeven <geert@freax-m68k.org>");
 MODULE_DESCRIPTION("i2c for Apple Hydra Mac I/O");
 MODULE_LICENSE("GPL");

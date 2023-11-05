@@ -9,20 +9,20 @@
  *	Tero Kristo <t-kristo@ti.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pruss_driver.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pruss_driver.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
+#include <freax/slab.h>
 #include "pruss.h"
 
 /**

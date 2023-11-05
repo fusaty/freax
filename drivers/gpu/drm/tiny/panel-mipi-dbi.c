@@ -5,14 +5,14 @@
  * Copyright 2022 Noralf Trønnes
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

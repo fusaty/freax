@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* sonet.h - SONET/SHD physical layer control */
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#ifndef _UAPILINUX_SONET_H
-#define _UAPILINUX_SONET_H
+#ifndef _UAPIfreax_SONET_H
+#define _UAPIfreax_SONET_H
 
 #define __SONET_ITEMS \
     __HANDLE_ITEM(section_bip); 	/* section parity errors (B1) */ \
@@ -58,4 +58,4 @@ struct sonet_stats {
 
 
 
-#endif /* _UAPILINUX_SONET_H */
+#endif /* _UAPIfreax_SONET_H */

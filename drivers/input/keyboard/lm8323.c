@@ -10,17 +10,17 @@
  * Updated by Felipe Balbi <felipe.balbi@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/platform_data/lm8323.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/leds.h>
+#include <freax/platform_data/lm8323.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 
 /* Commands to send to the chip. */
 #define LM8323_CMD_READ_ID		0x80 /* Read chip ID. */

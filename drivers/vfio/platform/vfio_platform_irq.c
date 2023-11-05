@@ -6,12 +6,12 @@
  * Author: Antonios Motakis <a.motakis@virtualopensystems.com>
  */
 
-#include <linux/eventfd.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vfio.h>
-#include <linux/irq.h>
+#include <freax/eventfd.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/vfio.h>
+#include <freax/irq.h>
 
 #include "vfio_platform_private.h"
 

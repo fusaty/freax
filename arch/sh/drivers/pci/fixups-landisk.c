@@ -7,12 +7,12 @@
  * Copyright (C) 2006 kogiidena
  * Copyright (C) 2010 Nobuhiro Iwamatsu
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/sh_intc.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/sh_intc.h>
 #include "pci-sh4.h"
 
 #define PCIMCR_MRSET_OFF	0xBFFFFFFF

@@ -7,10 +7,10 @@
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

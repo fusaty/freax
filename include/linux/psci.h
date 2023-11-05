@@ -4,12 +4,12 @@
  * Copyright (C) 2015 ARM Limited
  */
 
-#ifndef __LINUX_PSCI_H
-#define __LINUX_PSCI_H
+#ifndef __freax_PSCI_H
+#define __freax_PSCI_H
 
-#include <linux/arm-smccc.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <freax/arm-smccc.h>
+#include <freax/init.h>
+#include <freax/types.h>
 
 #define PSCI_POWER_STATE_TYPE_STANDBY		0
 #define PSCI_POWER_STATE_TYPE_POWER_DOWN	1
@@ -59,4 +59,4 @@ static inline bool acpi_psci_present(void) { return false; }
 static inline bool acpi_psci_use_hvc(void) {return false; }
 #endif
 
-#endif /* __LINUX_PSCI_H */
+#endif /* __freax_PSCI_H */

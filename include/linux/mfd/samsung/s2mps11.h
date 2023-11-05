@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S2MPS11_H
-#define __LINUX_MFD_S2MPS11_H
+#ifndef __freax_MFD_S2MPS11_H
+#define __freax_MFD_S2MPS11_H
 
 /* S2MPS11 registers */
 enum s2mps11_reg {
@@ -195,4 +195,4 @@ enum s2mps11_regulators {
  * are the same as in S2MPS14: S2MPS14_ENABLE_SUSPEND
  */
 
-#endif /*  __LINUX_MFD_S2MPS11_H */
+#endif /*  __freax_MFD_S2MPS11_H */

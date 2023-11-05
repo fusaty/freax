@@ -7,10 +7,10 @@
  * found in some MIPS systems.
  *
  */
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/param.h>
+#include <freax/bcd.h>
+#include <freax/init.h>
+#include <freax/mc146818rtc.h>
+#include <freax/param.h>
 
 #include <asm/cpu-features.h>
 #include <asm/ds1287.h>

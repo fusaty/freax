@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
 
 #include "nfp_dev.h"
 

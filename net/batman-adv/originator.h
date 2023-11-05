@@ -9,13 +9,13 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/if_ether.h>
-#include <linux/jhash.h>
-#include <linux/kref.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/if_ether.h>
+#include <freax/jhash.h>
+#include <freax/kref.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 
 bool batadv_compare_orig(const struct hlist_node *node, const void *data2);
 int batadv_originator_init(struct batadv_priv *bat_priv);

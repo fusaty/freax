@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/printk.c
+ *  freax/kernel/printk.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,36 +19,36 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/nmi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/memblock.h>
-#include <linux/syscalls.h>
-#include <linux/crash_core.h>
-#include <linux/ratelimit.h>
-#include <linux/kmsg_dump.h>
-#include <linux/syslog.h>
-#include <linux/cpu.h>
-#include <linux/rculist.h>
-#include <linux/poll.h>
-#include <linux/irq_work.h>
-#include <linux/ctype.h>
-#include <linux/uio.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/nmi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/delay.h>
+#include <freax/smp.h>
+#include <freax/security.h>
+#include <freax/memblock.h>
+#include <freax/syscalls.h>
+#include <freax/crash_core.h>
+#include <freax/ratelimit.h>
+#include <freax/kmsg_dump.h>
+#include <freax/syslog.h>
+#include <freax/cpu.h>
+#include <freax/rculist.h>
+#include <freax/poll.h>
+#include <freax/irq_work.h>
+#include <freax/ctype.h>
+#include <freax/uio.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/sections.h>
 
 #include <trace/events/initcall.h>

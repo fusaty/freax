@@ -5,12 +5,12 @@
  *           (C) Balbir Singh,   IBM Corp. 2006
  */
 
-#ifndef _LINUX_TASKSTATS_KERN_H
-#define _LINUX_TASKSTATS_KERN_H
+#ifndef _freax_TASKSTATS_KERN_H
+#define _freax_TASKSTATS_KERN_H
 
-#include <linux/taskstats.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
+#include <freax/taskstats.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
 
 #ifdef CONFIG_TASKSTATS
 extern struct kmem_cache *taskstats_cache;

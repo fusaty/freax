@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/virtio.h>
-#include <linux/virtio_anchor.h>
+#include <freax/virtio.h>
+#include <freax/virtio_anchor.h>
 
 bool virtio_require_restricted_mem_acc(struct virtio_device *dev)
 {

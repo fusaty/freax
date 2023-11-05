@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 
 static struct snd_soc_dai_driver chv3_codec_dai = {

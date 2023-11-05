@@ -18,7 +18,7 @@
 #ifndef VIDTV_S302M_H
 #define VIDTV_S302M_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "vidtv_encoder.h"
 

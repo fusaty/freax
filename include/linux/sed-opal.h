@@ -7,12 +7,12 @@
  *    Scott  Bauer      <scott.bauer@intel.com>
  */
 
-#ifndef LINUX_OPAL_H
-#define LINUX_OPAL_H
+#ifndef freax_OPAL_H
+#define freax_OPAL_H
 
-#include <uapi/linux/sed-opal.h>
-#include <linux/compiler_types.h>
-#include <linux/types.h>
+#include <uapi/freax/sed-opal.h>
+#include <freax/compiler_types.h>
+#include <freax/types.h>
 
 struct opal_dev;
 
@@ -77,4 +77,4 @@ static inline bool opal_unlock_from_suspend(struct opal_dev *dev)
 }
 #define init_opal_dev(data, send_recv)		NULL
 #endif /* CONFIG_BLK_SED_OPAL */
-#endif /* LINUX_OPAL_H */
+#endif /* freax_OPAL_H */

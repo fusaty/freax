@@ -25,12 +25,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/build_bug.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <freax/build_bug.h>
+#include <freax/cache.h>
+#include <freax/init.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/thread_info.h>
 
 #include <vdso/processor.h>
 

@@ -5,15 +5,15 @@
  * Copyright (C) 2016-2020 Mellanox Technologies
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxcpld.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/i2c-mux.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_data/mlxcpld.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 /* mlxcpld_mux - mux control structure:
  * @last_val - last selected register value or -1 if mux deselected

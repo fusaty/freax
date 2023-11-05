@@ -11,13 +11,13 @@
  * The majority of actual code is related to sysfs create and read/write
  * attributes.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 

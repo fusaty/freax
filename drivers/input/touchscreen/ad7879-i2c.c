@@ -5,13 +5,13 @@
  * Copyright (C) 2008-2010 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <freax/input.h>	/* BUS_I2C */
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
 
 #include "ad7879.h"
 

@@ -4,8 +4,8 @@
 #ifndef ADF_GEN4_TIMER_H_
 #define ADF_GEN4_TIMER_H_
 
-#include <linux/ktime.h>
-#include <linux/workqueue.h>
+#include <freax/ktime.h>
+#include <freax/workqueue.h>
 
 struct adf_accel_dev;
 

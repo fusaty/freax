@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  * Copyright (C) 2013 Richard Weinberger <richrd@nod.at>
  */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/sysrq.h>
 #include <asm/stacktrace.h>

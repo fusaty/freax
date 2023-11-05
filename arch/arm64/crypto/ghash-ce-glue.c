@@ -18,9 +18,9 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <freax/cpufeature.h>
+#include <freax/crypto.h>
+#include <freax/module.h>
 
 MODULE_DESCRIPTION("GHASH and AES-GCM using ARMv8 Crypto Extensions");
 MODULE_AUTHOR("Ard Biesheuvel <ard.biesheuvel@linaro.org>");

@@ -14,10 +14,10 @@
 #include <crypto/scatterwalk.h>
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/module.h>
 
 #define CHACHA_KEY_WORDS	(CHACHA_KEY_SIZE / sizeof(u32))
 

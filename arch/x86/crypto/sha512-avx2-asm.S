@@ -7,7 +7,7 @@
 #     James Guilford <james.guilford@intel.com>
 #     Kirk Yap <kirk.s.yap@intel.com>
 #     David Cote <david.m.cote@intel.com>
-#     Tim Chen <tim.c.chen@linux.intel.com>
+#     Tim Chen <tim.c.chen@freax.intel.com>
 #
 # This software is available to you under a choice of one of two
 # licenses.  You may choose to be licensed under the terms of the GNU
@@ -49,8 +49,8 @@
 # This code schedules 1 blocks at a time, with 4 lanes per block
 ########################################################################
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 
 .text
 

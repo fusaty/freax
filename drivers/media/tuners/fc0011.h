@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_FC0011_H_
-#define LINUX_FC0011_H_
+#ifndef freax_FC0011_H_
+#define freax_FC0011_H_
 
 #include <media/dvb_frontend.h>
 
@@ -38,4 +38,4 @@ struct dvb_frontend *fc0011_attach(struct dvb_frontend *fe,
 }
 #endif
 
-#endif /* LINUX_FC0011_H_ */
+#endif /* freax_FC0011_H_ */

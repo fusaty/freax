@@ -5,18 +5,18 @@
  * Copyright (c) 2002 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/pm.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/auxio.h>
 #include <asm/processor.h>
 

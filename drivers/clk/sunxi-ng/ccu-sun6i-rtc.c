@@ -3,15 +3,15 @@
 // Copyright (c) 2021 Samuel Holland <samuel@sholland.org>
 //
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
 
-#include <linux/clk/sunxi-ng.h>
+#include <freax/clk/sunxi-ng.h>
 
 #include "ccu_common.h"
 

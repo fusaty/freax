@@ -9,23 +9,23 @@
  * Copyright 2004 Motorola Inc.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/syscalls.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/pagemap.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/syscalls.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 
 #include "vme.h"
 #include "vme_bridge.h"

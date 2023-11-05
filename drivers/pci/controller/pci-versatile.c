@@ -7,13 +7,13 @@
  *
  * 14/04/2005 Initial version, colin.king@philips.com
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 
 #include "../pci.h"
 

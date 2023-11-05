@@ -9,9 +9,9 @@
 #ifndef _XHCI_MTK_H_
 #define _XHCI_MTK_H_
 
-#include <linux/clk.h>
-#include <linux/hashtable.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/hashtable.h>
+#include <freax/regulator/consumer.h>
 
 #include "xhci.h"
 

@@ -5,10 +5,10 @@
  * Copyright (C) 2013 Atmel Corporation.
  */
 
-#ifndef __LINUX_REGULATOR_ACT8865_H
-#define __LINUX_REGULATOR_ACT8865_H
+#ifndef __freax_REGULATOR_ACT8865_H
+#define __freax_REGULATOR_ACT8865_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 enum {
 	ACT8600_ID_DCDC1,

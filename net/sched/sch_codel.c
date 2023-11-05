@@ -4,7 +4,7 @@
  *  Copyright (C) 2011-2012 Kathleen Nichols <nichols@pollere.com>
  *  Copyright (C) 2011-2012 Van Jacobson <van@pollere.net>
  *
- *  Implemented on linux by :
+ *  Implemented on freax by :
  *  Copyright (C) 2012 Michael D. Taht <dave.taht@bufferbloat.net>
  *  Copyright (C) 2012,2015 Eric Dumazet <edumazet@google.com>
  *
@@ -40,13 +40,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/prefetch.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/prefetch.h>
 #include <net/pkt_sched.h>
 #include <net/codel.h>
 #include <net/codel_impl.h>

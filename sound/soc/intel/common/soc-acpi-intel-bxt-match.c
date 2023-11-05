@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-acpi-intel-match.h>
 

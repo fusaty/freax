@@ -5,10 +5,10 @@
  * Copyright 2015 Linaro Ltd.
  */
 
-#ifndef __LINUX_GBAUDIO_CODEC_H
-#define __LINUX_GBAUDIO_CODEC_H
+#ifndef __freax_GBAUDIO_CODEC_H
+#define __freax_GBAUDIO_CODEC_H
 
-#include <linux/greybus.h>
+#include <freax/greybus.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 
@@ -240,4 +240,4 @@ int gb_audio_apbridgea_stop_rx(struct gb_connection *connection,
 int gb_audio_apbridgea_shutdown_rx(struct gb_connection *connection,
 				   __u16 i2s_port);
 
-#endif /* __LINUX_GBAUDIO_CODEC_H */
+#endif /* __freax_GBAUDIO_CODEC_H */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/host.c
+ *  freax/drivers/mmc/core/host.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright (C) 2007-2008 Pierre Ossman
@@ -9,20 +9,20 @@
  *  MMC host class device management
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pagemap.h>
-#include <linux/pm_wakeup.h>
-#include <linux/export.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/idr.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/pagemap.h>
+#include <freax/pm_wakeup.h>
+#include <freax/export.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/slot-gpio.h>
 
 #include "core.h"
 #include "crypto.h"

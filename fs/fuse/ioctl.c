@@ -5,9 +5,9 @@
 
 #include "fuse_i.h"
 
-#include <linux/uio.h>
-#include <linux/compat.h>
-#include <linux/fileattr.h>
+#include <freax/uio.h>
+#include <freax/compat.h>
+#include <freax/fileattr.h>
 
 static ssize_t fuse_send_ioctl(struct fuse_mount *fm, struct fuse_args *args,
 			       struct fuse_ioctl_out *outarg)

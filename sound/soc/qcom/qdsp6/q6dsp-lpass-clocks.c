@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2020, Linaro Limited
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 #include <dt-bindings/sound/qcom,q6dsp-lpass-ports.h>
 #include "q6dsp-lpass-clocks.h"
 

@@ -3,7 +3,7 @@
 #include <asm/loongson.h>
 #include <asm/sections.h>
 #include <asm/tlbflush.h>
-#include <linux/suspend.h>
+#include <freax/suspend.h>
 
 static u32 saved_crmd;
 static u32 saved_prmd;

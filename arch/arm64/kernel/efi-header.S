@@ -4,8 +4,8 @@
  * Copyright (C) 2013, 2014 Red Hat, Inc.
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <freax/pe.h>
+#include <freax/sizes.h>
 
 	.macro	efi_signature_nop
 #ifdef CONFIG_EFI
@@ -54,8 +54,8 @@
 	.long	PECOFF_FILE_ALIGNMENT			// FileAlignment
 	.short	0					// MajorOperatingSystemVersion
 	.short	0					// MinorOperatingSystemVersion
-	.short	LINUX_EFISTUB_MAJOR_VERSION		// MajorImageVersion
-	.short	LINUX_EFISTUB_MINOR_VERSION		// MinorImageVersion
+	.short	freax_EFISTUB_MAJOR_VERSION		// MajorImageVersion
+	.short	freax_EFISTUB_MINOR_VERSION		// MinorImageVersion
 	.short	0					// MajorSubsystemVersion
 	.short	0					// MinorSubsystemVersion
 	.long	0					// Win32VersionValue
@@ -164,7 +164,7 @@
 	.long	0					// Unknown2
 	.long	0					// Unknown3
 
-	.asciz	VMLINUX_PATH
+	.asciz	VMfreax_PATH
 
 	.set	.Lefi_debug_entry_size, . - .Lefi_debug_entry
 #endif

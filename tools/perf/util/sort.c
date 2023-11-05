@@ -3,8 +3,8 @@
 #include <inttypes.h>
 #include <regex.h>
 #include <stdlib.h>
-#include <linux/mman.h>
-#include <linux/time64.h>
+#include <freax/mman.h>
+#include <freax/time64.h>
 #include "debug.h"
 #include "dso.h"
 #include "sort.h"
@@ -29,8 +29,8 @@
 #include "cgroup.h"
 #include "machine.h"
 #include "trace-event.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>

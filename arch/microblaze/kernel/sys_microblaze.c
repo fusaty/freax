@@ -12,25 +12,25 @@
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/file.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/semaphore.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/syscalls.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/mman.h>
+#include <freax/sys.h>
+#include <freax/ipc.h>
+#include <freax/file.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/semaphore.h>
+#include <freax/uaccess.h>
+#include <freax/unistd.h>
+#include <freax/slab.h>
 #include <asm/syscalls.h>
 
 SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,

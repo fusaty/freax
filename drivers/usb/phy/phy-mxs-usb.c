@@ -5,19 +5,19 @@
  * on behalf of DENX Software Engineering GmbH
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/usb/otg.h>
-#include <linux/stmp_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/iopoll.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/usb/otg.h>
+#include <freax/stmp_device.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/iopoll.h>
 
 #define DRIVER_NAME "mxs_phy"
 

@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ==========================================================
-Linux Base Driver for Intel(R) Ethernet Network Connection
+freax Base Driver for Intel(R) Ethernet Network Connection
 ==========================================================
 
-Intel Gigabit Linux driver.
+Intel Gigabit freax driver.
 Copyright(c) 1999-2018 Intel Corporation.
 
 Contents

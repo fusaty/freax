@@ -7,9 +7,9 @@
 #ifndef _ASM_X86_PC_CONF_REG_H
 #define _ASM_X86_PC_CONF_REG_H
 
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define PC_CONF_INDEX		0x22
 #define PC_CONF_DATA		0x23

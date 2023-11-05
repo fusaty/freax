@@ -7,9 +7,9 @@
 #ifndef _MTK_HDMI_PHY_8195_H
 #define _MTK_HDMI_PHY_8195_H
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/types.h>
 
 #define PCW_DECIMAL_WIDTH 24
 #define PLL_PREDIV 1

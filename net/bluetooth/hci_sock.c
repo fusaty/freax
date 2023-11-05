@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2000-2001 Qualcomm Incorporated
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -23,10 +23,10 @@
 */
 
 /* Bluetooth HCI sockets. */
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/utsname.h>
-#include <linux/sched.h>
+#include <freax/compat.h>
+#include <freax/export.h>
+#include <freax/utsname.h>
+#include <freax/sched.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>
@@ -1380,7 +1380,7 @@ static int hci_sock_bind(struct socket *sock, struct sockaddr *addr,
 		 */
 		hci_sock_set_flag(sk, HCI_SOCK_TRUSTED);
 
-		send_monitor_note(sk, "Linux version %s (%s)",
+		send_monitor_note(sk, "freax version %s (%s)",
 				  init_utsname()->release,
 				  init_utsname()->machine);
 		send_monitor_note(sk, "Bluetooth subsystem version %u.%u",

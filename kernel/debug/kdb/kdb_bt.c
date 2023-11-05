@@ -9,13 +9,13 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/kdb.h>
-#include <linux/nmi.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/kdb.h>
+#include <freax/nmi.h>
 #include "kdb_private.h"
 
 

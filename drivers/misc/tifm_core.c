@@ -5,11 +5,11 @@
  *  Copyright (C) 2006 Alex Dubov <oakad@yahoo.com>
  */
 
-#include <linux/tifm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/module.h>
+#include <freax/tifm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/idr.h>
+#include <freax/module.h>
 
 #define DRIVER_NAME "tifm_core"
 #define DRIVER_VERSION "0.8"

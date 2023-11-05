@@ -4,18 +4,18 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
+#include <freax/utsname.h>
+#include <freax/proc_fs.h>
+#include <freax/mutex.h>
 
 int snd_info_check_reserved_words(const char *str)
 {
@@ -899,7 +899,7 @@ EXPORT_SYMBOL_GPL(snd_card_rw_proc_new);
 static void snd_info_version_read(struct snd_info_entry *entry, struct snd_info_buffer *buffer)
 {
 	snd_iprintf(buffer,
-		    "Advanced Linux Sound Architecture Driver Version k%s.\n",
+		    "Advanced freax Sound Architecture Driver Version k%s.\n",
 		    init_utsname()->release);
 }
 

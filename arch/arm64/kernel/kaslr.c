@@ -3,9 +3,9 @@
  * Copyright (C) 2016 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/printk.h>
+#include <freax/cache.h>
+#include <freax/init.h>
+#include <freax/printk.h>
 
 #include <asm/cpufeature.h>
 #include <asm/memory.h>

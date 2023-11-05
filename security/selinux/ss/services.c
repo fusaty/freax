@@ -37,17 +37,17 @@
  * Copyright (C) 2003 - 2004, 2006 Tresys Technology, LLC
  * Copyright (C) 2003 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/sched.h>
-#include <linux/audit.h>
-#include <linux/vmalloc.h>
-#include <linux/lsm_hooks.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/sched.h>
+#include <freax/audit.h>
+#include <freax/vmalloc.h>
+#include <freax/lsm_hooks.h>
 #include <net/netlabel.h>
 
 #include "flask.h"
@@ -68,7 +68,7 @@
 #include "policycap_names.h"
 #include "ima.h"
 
-struct selinux_policy_convert_data {
+struct sefreax_policy_convert_data {
 	struct convert_context_args args;
 	struct sidtab_convert_params sidtab_params;
 };
@@ -92,9 +92,9 @@ static void context_struct_compute_av(struct policydb *policydb,
 				      struct av_decision *avd,
 				      struct extended_perms *xperms);
 
-static int selinux_set_mapping(struct policydb *pol,
+static int sefreax_set_mapping(struct policydb *pol,
 			       const struct security_class_mapping *map,
-			       struct selinux_map *out_map)
+			       struct sefreax_map *out_map)
 {
 	u16 i, j;
 	bool print_unknown_handle = false;
@@ -115,7 +115,7 @@ static int selinux_set_mapping(struct policydb *pol,
 	j = 0;
 	while (map[j].name) {
 		const struct security_class_mapping *p_in = map + (j++);
-		struct selinux_mapping *p_out = out_map->mapping + j;
+		struct sefreax_mapping *p_out = out_map->mapping + j;
 		u16 k;
 
 		/* An empty class string skips ahead */
@@ -126,7 +126,7 @@ static int selinux_set_mapping(struct policydb *pol,
 
 		p_out->value = string_to_security_class(pol, p_in->name);
 		if (!p_out->value) {
-			pr_info("SELinux:  Class %s not defined in policy.\n",
+			pr_info("SEfreax:  Class %s not defined in policy.\n",
 			       p_in->name);
 			if (pol->reject_unknown)
 				goto err;
@@ -145,7 +145,7 @@ static int selinux_set_mapping(struct policydb *pol,
 			p_out->perms[k] = string_to_av_perm(pol, p_out->value,
 							    p_in->perms[k]);
 			if (!p_out->perms[k]) {
-				pr_info("SELinux:  Permission %s in class %s not defined in policy.\n",
+				pr_info("SEfreax:  Permission %s in class %s not defined in policy.\n",
 				       p_in->perms[k], p_in->name);
 				if (pol->reject_unknown)
 					goto err;
@@ -158,7 +158,7 @@ static int selinux_set_mapping(struct policydb *pol,
 	}
 
 	if (print_unknown_handle)
-		pr_info("SELinux: the above unknown classes and permissions will be %s\n",
+		pr_info("SEfreax: the above unknown classes and permissions will be %s\n",
 		       pol->allow_unknown ? "allowed" : "denied");
 
 	out_map->size = i;
@@ -173,7 +173,7 @@ err:
  * Get real, policy values from mapped values
  */
 
-static u16 unmap_class(struct selinux_map *map, u16 tclass)
+static u16 unmap_class(struct sefreax_map *map, u16 tclass)
 {
 	if (tclass < map->size)
 		return map->mapping[tclass].value;
@@ -184,7 +184,7 @@ static u16 unmap_class(struct selinux_map *map, u16 tclass)
 /*
  * Get kernel value for class from its policy value
  */
-static u16 map_class(struct selinux_map *map, u16 pol_value)
+static u16 map_class(struct sefreax_map *map, u16 pol_value)
 {
 	u16 i;
 
@@ -196,12 +196,12 @@ static u16 map_class(struct selinux_map *map, u16 pol_value)
 	return SECCLASS_NULL;
 }
 
-static void map_decision(struct selinux_map *map,
+static void map_decision(struct sefreax_map *map,
 			 u16 tclass, struct av_decision *avd,
 			 int allow_unknown)
 {
 	if (tclass < map->size) {
-		struct selinux_mapping *mapping = &map->mapping[tclass];
+		struct sefreax_mapping *mapping = &map->mapping[tclass];
 		unsigned int i, n = mapping->num_perms;
 		u32 result;
 
@@ -238,13 +238,13 @@ static void map_decision(struct selinux_map *map,
 int security_mls_enabled(void)
 {
 	int mls_enabled;
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	mls_enabled = policy->policydb.mls_enabled;
 	rcu_read_unlock();
 	return mls_enabled;
@@ -498,7 +498,7 @@ static void security_dump_masked_av(struct policydb *policydb,
 
 	/* audit a message */
 	ab = audit_log_start(audit_context(),
-			     GFP_ATOMIC, AUDIT_SELINUX_ERR);
+			     GFP_ATOMIC, AUDIT_SEfreax_ERR);
 	if (!ab)
 		goto out;
 
@@ -634,7 +634,7 @@ static void context_struct_compute_av(struct policydb *policydb,
 
 	if (unlikely(!tclass || tclass > policydb->p_classes.nprim)) {
 		if (printk_ratelimit())
-			pr_warn("SELinux:  Invalid class %hu\n", tclass);
+			pr_warn("SEfreax:  Invalid class %hu\n", tclass);
 		return;
 	}
 
@@ -713,7 +713,7 @@ static void context_struct_compute_av(struct policydb *policydb,
 				 tclass, avd);
 }
 
-static int security_validtrans_handle_fail(struct selinux_policy *policy,
+static int security_validtrans_handle_fail(struct sefreax_policy *policy,
 					struct sidtab_entry *oentry,
 					struct sidtab_entry *nentry,
 					struct sidtab_entry *tentry,
@@ -730,7 +730,7 @@ static int security_validtrans_handle_fail(struct selinux_policy *policy,
 		goto out;
 	if (sidtab_entry_to_string(p, sidtab, tentry, &t, &tlen))
 		goto out;
-	audit_log(audit_context(), GFP_ATOMIC, AUDIT_SELINUX_ERR,
+	audit_log(audit_context(), GFP_ATOMIC, AUDIT_SEfreax_ERR,
 		  "op=security_validate_transition seresult=denied"
 		  " oldcontext=%s newcontext=%s taskcontext=%s tclass=%s",
 		  o, n, t, sym_name(p, SYM_CLASSES, tclass-1));
@@ -747,7 +747,7 @@ out:
 static int security_compute_validatetrans(u32 oldsid, u32 newsid, u32 tasksid,
 					  u16 orig_tclass, bool user)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct sidtab_entry *oentry;
@@ -759,12 +759,12 @@ static int security_compute_validatetrans(u32 oldsid, u32 newsid, u32 tasksid,
 	int rc = 0;
 
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
 
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -781,7 +781,7 @@ static int security_compute_validatetrans(u32 oldsid, u32 newsid, u32 tasksid,
 
 	oentry = sidtab_search_entry(sidtab, oldsid);
 	if (!oentry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, oldsid);
 		rc = -EINVAL;
 		goto out;
@@ -789,7 +789,7 @@ static int security_compute_validatetrans(u32 oldsid, u32 newsid, u32 tasksid,
 
 	nentry = sidtab_search_entry(sidtab, newsid);
 	if (!nentry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, newsid);
 		rc = -EINVAL;
 		goto out;
@@ -797,7 +797,7 @@ static int security_compute_validatetrans(u32 oldsid, u32 newsid, u32 tasksid,
 
 	tentry = sidtab_search_entry(sidtab, tasksid);
 	if (!tentry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, tasksid);
 		rc = -EINVAL;
 		goto out;
@@ -851,7 +851,7 @@ int security_validate_transition(u32 oldsid, u32 newsid, u32 tasksid,
  */
 int security_bounded_transition(u32 old_sid, u32 new_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct sidtab_entry *old_entry, *new_entry;
@@ -859,18 +859,18 @@ int security_bounded_transition(u32 old_sid, u32 new_sid)
 	u32 index;
 	int rc;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
 	rc = -EINVAL;
 	old_entry = sidtab_search_entry(sidtab, old_sid);
 	if (!old_entry) {
-		pr_err("SELinux: %s: unrecognized SID %u\n",
+		pr_err("SEfreax: %s: unrecognized SID %u\n",
 		       __func__, old_sid);
 		goto out;
 	}
@@ -878,7 +878,7 @@ int security_bounded_transition(u32 old_sid, u32 new_sid)
 	rc = -EINVAL;
 	new_entry = sidtab_search_entry(sidtab, new_sid);
 	if (!new_entry) {
-		pr_err("SELinux: %s: unrecognized SID %u\n",
+		pr_err("SEfreax: %s: unrecognized SID %u\n",
 		       __func__, new_sid);
 		goto out;
 	}
@@ -916,7 +916,7 @@ int security_bounded_transition(u32 old_sid, u32 new_sid)
 		    !sidtab_entry_to_string(policydb, sidtab, new_entry,
 					    &new_name, &length)) {
 			audit_log(audit_context(),
-				  GFP_ATOMIC, AUDIT_SELINUX_ERR,
+				  GFP_ATOMIC, AUDIT_SEfreax_ERR,
 				  "op=security_bounded_transition "
 				  "seresult=denied "
 				  "oldcontext=%s newcontext=%s",
@@ -931,7 +931,7 @@ out:
 	return rc;
 }
 
-static void avd_init(struct selinux_policy *policy, struct av_decision *avd)
+static void avd_init(struct sefreax_policy *policy, struct av_decision *avd)
 {
 	avd->allowed = 0;
 	avd->auditallow = 0;
@@ -1003,7 +1003,7 @@ void security_compute_xperms_decision(u32 ssid,
 				      u8 driver,
 				      struct extended_perms_decision *xpermd)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	u16 tclass;
@@ -1021,23 +1021,23 @@ void security_compute_xperms_decision(u32 ssid,
 	memset(xpermd->dontaudit->p, 0, sizeof(xpermd->dontaudit->p));
 
 	rcu_read_lock();
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		goto allow;
 
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
 	scontext = sidtab_search(sidtab, ssid);
 	if (!scontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, ssid);
 		goto out;
 	}
 
 	tcontext = sidtab_search(sidtab, tsid);
 	if (!tcontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, tsid);
 		goto out;
 	}
@@ -1051,7 +1051,7 @@ void security_compute_xperms_decision(u32 ssid,
 
 
 	if (unlikely(!tclass || tclass > policydb->p_classes.nprim)) {
-		pr_warn_ratelimited("SELinux:  Invalid class %hu\n", tclass);
+		pr_warn_ratelimited("SEfreax:  Invalid class %hu\n", tclass);
 		goto out;
 	}
 
@@ -1098,17 +1098,17 @@ void security_compute_av(u32 ssid,
 			 struct av_decision *avd,
 			 struct extended_perms *xperms)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	u16 tclass;
 	struct context *scontext = NULL, *tcontext = NULL;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	avd_init(policy, avd);
 	xperms->len = 0;
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		goto allow;
 
 	policydb = &policy->policydb;
@@ -1116,7 +1116,7 @@ void security_compute_av(u32 ssid,
 
 	scontext = sidtab_search(sidtab, ssid);
 	if (!scontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, ssid);
 		goto out;
 	}
@@ -1127,7 +1127,7 @@ void security_compute_av(u32 ssid,
 
 	tcontext = sidtab_search(sidtab, tsid);
 	if (!tcontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, tsid);
 		goto out;
 	}
@@ -1155,15 +1155,15 @@ void security_compute_av_user(u32 ssid,
 			      u16 tclass,
 			      struct av_decision *avd)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct context *scontext = NULL, *tcontext = NULL;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	avd_init(policy, avd);
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		goto allow;
 
 	policydb = &policy->policydb;
@@ -1171,7 +1171,7 @@ void security_compute_av_user(u32 ssid,
 
 	scontext = sidtab_search(sidtab, ssid);
 	if (!scontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, ssid);
 		goto out;
 	}
@@ -1182,7 +1182,7 @@ void security_compute_av_user(u32 ssid,
 
 	tcontext = sidtab_search(sidtab, tsid);
 	if (!tcontext) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, tsid);
 		goto out;
 	}
@@ -1281,17 +1281,17 @@ static int sidtab_entry_to_string(struct policydb *p,
 
 int security_sidtab_hash_stats(char *page)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	int rc;
 
-	if (!selinux_initialized()) {
-		pr_err("SELinux: %s:  called before initial load_policy\n",
+	if (!sefreax_initialized()) {
+		pr_err("SEfreax: %s:  called before initial load_policy\n",
 		       __func__);
 		return -EINVAL;
 	}
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	rc = sidtab_hash_stats(policy->sidtab, page);
 	rcu_read_unlock();
 
@@ -1309,7 +1309,7 @@ static int security_sid_to_context_core(u32 sid, char **scontext,
 					u32 *scontext_len, int force,
 					int only_invalid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct sidtab_entry *entry;
@@ -1319,7 +1319,7 @@ static int security_sid_to_context_core(u32 sid, char **scontext,
 		*scontext = NULL;
 	*scontext_len  = 0;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		if (sid <= SECINITSID_NUM) {
 			char *scontextp;
 			const char *s = initial_sid_to_string[sid];
@@ -1335,12 +1335,12 @@ static int security_sid_to_context_core(u32 sid, char **scontext,
 			*scontext = scontextp;
 			return 0;
 		}
-		pr_err("SELinux: %s:  called before initial "
+		pr_err("SEfreax: %s:  called before initial "
 		       "load_policy on unknown SID %d\n", __func__, sid);
 		return -EINVAL;
 	}
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -1349,7 +1349,7 @@ static int security_sid_to_context_core(u32 sid, char **scontext,
 	else
 		entry = sidtab_search_entry(sidtab, sid);
 	if (!entry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, sid);
 		rc = -EINVAL;
 		goto out_unlock;
@@ -1494,7 +1494,7 @@ static int security_context_to_sid_core(const char *scontext, u32 scontext_len,
 					u32 *sid, u32 def_sid, gfp_t gfp_flags,
 					int force)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	char *scontext2, *str = NULL;
@@ -1510,7 +1510,7 @@ static int security_context_to_sid_core(const char *scontext, u32 scontext_len,
 	if (!scontext2)
 		return -ENOMEM;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		u32 i;
 
 		for (i = 1; i < SECINITSID_NUM; i++) {
@@ -1535,7 +1535,7 @@ static int security_context_to_sid_core(const char *scontext, u32 scontext_len,
 	}
 retry:
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 	rc = string_to_context_struct(policydb, sidtab, scontext2,
@@ -1624,7 +1624,7 @@ int security_context_to_sid_force(const char *scontext, u32 scontext_len,
 }
 
 static int compute_sid_handle_invalid_context(
-	struct selinux_policy *policy,
+	struct sefreax_policy *policy,
 	struct sidtab_entry *sentry,
 	struct sidtab_entry *tentry,
 	u16 tclass,
@@ -1642,7 +1642,7 @@ static int compute_sid_handle_invalid_context(
 		goto out;
 	if (context_struct_to_string(policydb, newcontext, &n, &nlen))
 		goto out;
-	ab = audit_log_start(audit_context(), GFP_ATOMIC, AUDIT_SELINUX_ERR);
+	ab = audit_log_start(audit_context(), GFP_ATOMIC, AUDIT_SEfreax_ERR);
 	if (!ab)
 		goto out;
 	audit_log_format(ab,
@@ -1699,7 +1699,7 @@ static int security_compute_sid(u32 ssid,
 				u32 *out_sid,
 				bool kern)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct class_datum *cladatum;
@@ -1711,7 +1711,7 @@ static int security_compute_sid(u32 ssid,
 	int rc = 0;
 	bool sock;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		switch (orig_tclass) {
 		case SECCLASS_PROCESS: /* kernel value */
 			*out_sid = ssid;
@@ -1729,7 +1729,7 @@ retry:
 
 	rcu_read_lock();
 
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 
 	if (kern) {
 		tclass = unmap_class(&policy->map, orig_tclass);
@@ -1745,14 +1745,14 @@ retry:
 
 	sentry = sidtab_search_entry(sidtab, ssid);
 	if (!sentry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, ssid);
 		rc = -EINVAL;
 		goto out_unlock;
 	}
 	tentry = sidtab_search_entry(sidtab, tsid);
 	if (!tentry) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, tsid);
 		rc = -EINVAL;
 		goto out_unlock;
@@ -1967,7 +1967,7 @@ static inline int convert_context_handle_invalid_context(
 		return -EINVAL;
 
 	if (!context_struct_to_string(policydb, context, &s, &len)) {
-		pr_warn("SELinux:  Context %s would be invalid if enforcing\n",
+		pr_warn("SEfreax:  Context %s would be invalid if enforcing\n",
 			s);
 		kfree(s);
 	}
@@ -2021,11 +2021,11 @@ int services_convert_context(struct convert_context_args *args,
 		kfree(s);
 		if (rc) {
 			/* Other error condition, e.g. ENOMEM. */
-			pr_err("SELinux:   Unable to map context %s, rc = %d.\n",
+			pr_err("SEfreax:   Unable to map context %s, rc = %d.\n",
 			       oldc->str, -rc);
 			return rc;
 		}
-		pr_info("SELinux:  Context %s became valid (mapped).\n",
+		pr_info("SEfreax:  Context %s became valid (mapped).\n",
 			oldc->str);
 		return 0;
 	}
@@ -2070,7 +2070,7 @@ int services_convert_context(struct convert_context_args *args,
 		while (oc && oc->sid[0] != SECINITSID_UNLABELED)
 			oc = oc->next;
 		if (!oc) {
-			pr_err("SELinux:  unable to look up"
+			pr_err("SEfreax:  unable to look up"
 				" the initial SIDs list\n");
 			goto bad;
 		}
@@ -2095,12 +2095,12 @@ bad:
 	context_destroy(newc);
 	newc->str = s;
 	newc->len = len;
-	pr_info("SELinux:  Context %s became invalid (unmapped).\n",
+	pr_info("SEfreax:  Context %s became invalid (unmapped).\n",
 		newc->str);
 	return 0;
 }
 
-static void security_load_policycaps(struct selinux_policy *policy)
+static void security_load_policycaps(struct sefreax_policy *policy)
 {
 	struct policydb *p;
 	unsigned int i;
@@ -2108,26 +2108,26 @@ static void security_load_policycaps(struct selinux_policy *policy)
 
 	p = &policy->policydb;
 
-	for (i = 0; i < ARRAY_SIZE(selinux_state.policycap); i++)
-		WRITE_ONCE(selinux_state.policycap[i],
+	for (i = 0; i < ARRAY_SIZE(sefreax_state.policycap); i++)
+		WRITE_ONCE(sefreax_state.policycap[i],
 			ebitmap_get_bit(&p->policycaps, i));
 
-	for (i = 0; i < ARRAY_SIZE(selinux_policycap_names); i++)
-		pr_info("SELinux:  policy capability %s=%d\n",
-			selinux_policycap_names[i],
+	for (i = 0; i < ARRAY_SIZE(sefreax_policycap_names); i++)
+		pr_info("SEfreax:  policy capability %s=%d\n",
+			sefreax_policycap_names[i],
 			ebitmap_get_bit(&p->policycaps, i));
 
 	ebitmap_for_each_positive_bit(&p->policycaps, node, i) {
-		if (i >= ARRAY_SIZE(selinux_policycap_names))
-			pr_info("SELinux:  unknown policy capability %u\n",
+		if (i >= ARRAY_SIZE(sefreax_policycap_names))
+			pr_info("SEfreax:  unknown policy capability %u\n",
 				i);
 	}
 }
 
-static int security_preserve_bools(struct selinux_policy *oldpolicy,
-				struct selinux_policy *newpolicy);
+static int security_preserve_bools(struct sefreax_policy *oldpolicy,
+				struct sefreax_policy *newpolicy);
 
-static void selinux_policy_free(struct selinux_policy *policy)
+static void sefreax_policy_free(struct sefreax_policy *policy)
 {
 	if (!policy)
 		return;
@@ -2139,40 +2139,40 @@ static void selinux_policy_free(struct selinux_policy *policy)
 	kfree(policy);
 }
 
-static void selinux_policy_cond_free(struct selinux_policy *policy)
+static void sefreax_policy_cond_free(struct sefreax_policy *policy)
 {
 	cond_policydb_destroy_dup(&policy->policydb);
 	kfree(policy);
 }
 
-void selinux_policy_cancel(struct selinux_load_state *load_state)
+void sefreax_policy_cancel(struct sefreax_load_state *load_state)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *oldpolicy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *oldpolicy;
 
 	oldpolicy = rcu_dereference_protected(state->policy,
 					lockdep_is_held(&state->policy_mutex));
 
 	sidtab_cancel_convert(oldpolicy->sidtab);
-	selinux_policy_free(load_state->policy);
+	sefreax_policy_free(load_state->policy);
 	kfree(load_state->convert_data);
 }
 
-static void selinux_notify_policy_change(u32 seqno)
+static void sefreax_notify_policy_change(u32 seqno)
 {
 	/* Flush external caches and notify userspace of policy load */
 	avc_ss_reset(seqno);
 	selnl_notify_policyload(seqno);
-	selinux_status_update_policyload(seqno);
-	selinux_netlbl_cache_invalidate();
-	selinux_xfrm_notify_policyload();
-	selinux_ima_measure_state_locked();
+	sefreax_status_update_policyload(seqno);
+	sefreax_netlbl_cache_invalidate();
+	sefreax_xfrm_notify_policyload();
+	sefreax_ima_measure_state_locked();
 }
 
-void selinux_policy_commit(struct selinux_load_state *load_state)
+void sefreax_policy_commit(struct sefreax_load_state *load_state)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *oldpolicy, *newpolicy = load_state->policy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *oldpolicy, *newpolicy = load_state->policy;
 	unsigned long flags;
 	u32 seqno;
 
@@ -2182,9 +2182,9 @@ void selinux_policy_commit(struct selinux_load_state *load_state)
 	/* If switching between different policy types, log MLS status */
 	if (oldpolicy) {
 		if (oldpolicy->policydb.mls_enabled && !newpolicy->policydb.mls_enabled)
-			pr_info("SELinux: Disabling MLS support...\n");
+			pr_info("SEfreax: Disabling MLS support...\n");
 		else if (!oldpolicy->policydb.mls_enabled && newpolicy->policydb.mls_enabled)
-			pr_info("SELinux: Enabling MLS support...\n");
+			pr_info("SEfreax: Enabling MLS support...\n");
 	}
 
 	/* Set latest granting seqno for new policy. */
@@ -2206,23 +2206,23 @@ void selinux_policy_commit(struct selinux_load_state *load_state)
 	/* Load the policycaps from the new policy */
 	security_load_policycaps(newpolicy);
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		/*
 		 * After first policy load, the security server is
 		 * marked as initialized and ready to handle requests and
 		 * any objects created prior to policy load are then labeled.
 		 */
-		selinux_mark_initialized();
-		selinux_complete_init();
+		sefreax_mark_initialized();
+		sefreax_complete_init();
 	}
 
 	/* Free the old policy */
 	synchronize_rcu();
-	selinux_policy_free(oldpolicy);
+	sefreax_policy_free(oldpolicy);
 	kfree(load_state->convert_data);
 
 	/* Notify others of the policy change */
-	selinux_notify_policy_change(seqno);
+	sefreax_notify_policy_change(seqno);
 }
 
 /**
@@ -2237,11 +2237,11 @@ void selinux_policy_commit(struct selinux_load_state *load_state)
  * loading the new policy.
  */
 int security_load_policy(void *data, size_t len,
-			 struct selinux_load_state *load_state)
+			 struct sefreax_load_state *load_state)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *newpolicy, *oldpolicy;
-	struct selinux_policy_convert_data *convert_data;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *newpolicy, *oldpolicy;
+	struct sefreax_policy_convert_data *convert_data;
 	int rc = 0;
 	struct policy_file file = { data, len }, *fp = &file;
 
@@ -2260,18 +2260,18 @@ int security_load_policy(void *data, size_t len,
 		goto err_sidtab;
 
 	newpolicy->policydb.len = len;
-	rc = selinux_set_mapping(&newpolicy->policydb, secclass_map,
+	rc = sefreax_set_mapping(&newpolicy->policydb, secclass_map,
 				&newpolicy->map);
 	if (rc)
 		goto err_policydb;
 
 	rc = policydb_load_isids(&newpolicy->policydb, newpolicy->sidtab);
 	if (rc) {
-		pr_err("SELinux:  unable to load the initial SIDs\n");
+		pr_err("SEfreax:  unable to load the initial SIDs\n");
 		goto err_mapping;
 	}
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		/* First policy load, so no need to preserve state from old policy */
 		load_state->policy = newpolicy;
 		load_state->convert_data = NULL;
@@ -2284,7 +2284,7 @@ int security_load_policy(void *data, size_t len,
 	/* Preserve active boolean values from the old policy */
 	rc = security_preserve_bools(oldpolicy, newpolicy);
 	if (rc) {
-		pr_err("SELinux:  unable to preserve booleans\n");
+		pr_err("SEfreax:  unable to preserve booleans\n");
 		goto err_free_isids;
 	}
 
@@ -2307,7 +2307,7 @@ int security_load_policy(void *data, size_t len,
 
 	rc = sidtab_convert(oldpolicy->sidtab, &convert_data->sidtab_params);
 	if (rc) {
-		pr_err("SELinux:  unable to convert the internal"
+		pr_err("SEfreax:  unable to convert the internal"
 			" representation of contexts in the new SID"
 			" table\n");
 		goto err_free_convert_data;
@@ -2378,13 +2378,13 @@ static int ocontext_to_sid(struct sidtab *sidtab, struct ocontext *c,
  */
 int security_port_sid(u8 protocol, u16 port, u32 *out_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct ocontext *c;
 	int rc;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*out_sid = SECINITSID_PORT;
 		return 0;
 	}
@@ -2392,7 +2392,7 @@ int security_port_sid(u8 protocol, u16 port, u32 *out_sid)
 retry:
 	rc = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2430,13 +2430,13 @@ out:
  */
 int security_ib_pkey_sid(u64 subnet_prefix, u16 pkey_num, u32 *out_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct ocontext *c;
 	int rc;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*out_sid = SECINITSID_UNLABELED;
 		return 0;
 	}
@@ -2444,7 +2444,7 @@ int security_ib_pkey_sid(u64 subnet_prefix, u16 pkey_num, u32 *out_sid)
 retry:
 	rc = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2482,13 +2482,13 @@ out:
  */
 int security_ib_endport_sid(const char *dev_name, u8 port_num, u32 *out_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct ocontext *c;
 	int rc;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*out_sid = SECINITSID_UNLABELED;
 		return 0;
 	}
@@ -2496,7 +2496,7 @@ int security_ib_endport_sid(const char *dev_name, u8 port_num, u32 *out_sid)
 retry:
 	rc = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2534,13 +2534,13 @@ out:
  */
 int security_netif_sid(char *name, u32 *if_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	int rc;
 	struct ocontext *c;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*if_sid = SECINITSID_NETIF;
 		return 0;
 	}
@@ -2548,7 +2548,7 @@ int security_netif_sid(char *name, u32 *if_sid)
 retry:
 	rc = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2600,20 +2600,20 @@ int security_node_sid(u16 domain,
 		      u32 addrlen,
 		      u32 *out_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	int rc;
 	struct ocontext *c;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*out_sid = SECINITSID_NODE;
 		return 0;
 	}
 
 retry:
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2694,7 +2694,7 @@ int security_get_user_sids(u32 fromsid,
 			   u32 **sids,
 			   u32 *nel)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct context *fromcon, usercon;
@@ -2708,7 +2708,7 @@ int security_get_user_sids(u32 fromsid,
 	*sids = NULL;
 	*nel = 0;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	mysids = kcalloc(maxnel, sizeof(*mysids), GFP_KERNEL);
@@ -2718,7 +2718,7 @@ int security_get_user_sids(u32 fromsid,
 retry:
 	mynel = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2813,7 +2813,7 @@ out_unlock:
  * WARNING: This function may return -ESTALE, indicating that the caller
  * must retry the operation after re-acquiring the policy pointer!
  */
-static inline int __security_genfs_sid(struct selinux_policy *policy,
+static inline int __security_genfs_sid(struct sefreax_policy *policy,
 				       const char *fstype,
 				       const char *path,
 				       u16 orig_sclass,
@@ -2869,17 +2869,17 @@ int security_genfs_sid(const char *fstype,
 		       u16 orig_sclass,
 		       u32 *sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	int retval;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*sid = SECINITSID_UNLABELED;
 		return 0;
 	}
 
 	do {
 		rcu_read_lock();
-		policy = rcu_dereference(selinux_state.policy);
+		policy = rcu_dereference(sefreax_state.policy);
 		retval = __security_genfs_sid(policy, fstype, path,
 					      orig_sclass, sid);
 		rcu_read_unlock();
@@ -2887,7 +2887,7 @@ int security_genfs_sid(const char *fstype,
 	return retval;
 }
 
-int selinux_policy_genfs_sid(struct selinux_policy *policy,
+int sefreax_policy_genfs_sid(struct sefreax_policy *policy,
 			const char *fstype,
 			const char *path,
 			u16 orig_sclass,
@@ -2903,15 +2903,15 @@ int selinux_policy_genfs_sid(struct selinux_policy *policy,
  */
 int security_fs_use(struct super_block *sb)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	int rc;
 	struct ocontext *c;
-	struct superblock_security_struct *sbsec = selinux_superblock(sb);
+	struct superblock_security_struct *sbsec = sefreax_superblock(sb);
 	const char *fstype = sb->s_type->name;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		sbsec->behavior = SECURITY_FS_USE_NONE;
 		sbsec->sid = SECINITSID_UNLABELED;
 		return 0;
@@ -2919,7 +2919,7 @@ int security_fs_use(struct super_block *sb)
 
 retry:
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -2959,7 +2959,7 @@ out:
 	return rc;
 }
 
-int security_get_bools(struct selinux_policy *policy,
+int security_get_bools(struct sefreax_policy *policy,
 		       u32 *len, char ***names, int **values)
 {
 	struct policydb *policydb;
@@ -3014,12 +3014,12 @@ err:
 
 int security_set_bools(u32 len, int *values)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *newpolicy, *oldpolicy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *newpolicy, *oldpolicy;
 	int rc;
 	u32 i, seqno = 0;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return -EINVAL;
 
 	oldpolicy = rcu_dereference_protected(state->policy,
@@ -3077,25 +3077,25 @@ int security_set_bools(u32 len, int *values)
 	 * structure itself but not what it references.
 	 */
 	synchronize_rcu();
-	selinux_policy_cond_free(oldpolicy);
+	sefreax_policy_cond_free(oldpolicy);
 
 	/* Notify others of the policy change */
-	selinux_notify_policy_change(seqno);
+	sefreax_notify_policy_change(seqno);
 	return 0;
 }
 
 int security_get_bool_value(u32 index)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	int rc;
 	u32 len;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 
 	rc = -EFAULT;
@@ -3109,8 +3109,8 @@ out:
 	return rc;
 }
 
-static int security_preserve_bools(struct selinux_policy *oldpolicy,
-				struct selinux_policy *newpolicy)
+static int security_preserve_bools(struct sefreax_policy *oldpolicy,
+				struct sefreax_policy *newpolicy)
 {
 	int rc, *bvalues = NULL;
 	char **bnames = NULL;
@@ -3144,7 +3144,7 @@ out:
  */
 int security_sid_mls_copy(u32 sid, u32 mls_sid, u32 *new_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	struct context *context1;
@@ -3154,7 +3154,7 @@ int security_sid_mls_copy(u32 sid, u32 mls_sid, u32 *new_sid)
 	u32 len;
 	int rc;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*new_sid = sid;
 		return 0;
 	}
@@ -3164,7 +3164,7 @@ retry:
 	context_init(&newcon);
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -3176,7 +3176,7 @@ retry:
 	rc = -EINVAL;
 	context1 = sidtab_search(sidtab, sid);
 	if (!context1) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, sid);
 		goto out_unlock;
 	}
@@ -3184,7 +3184,7 @@ retry:
 	rc = -EINVAL;
 	context2 = sidtab_search(sidtab, mls_sid);
 	if (!context2) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 			__func__, mls_sid);
 		goto out_unlock;
 	}
@@ -3207,7 +3207,7 @@ retry:
 
 				ab = audit_log_start(audit_context(),
 						     GFP_ATOMIC,
-						     AUDIT_SELINUX_ERR);
+						     AUDIT_SEfreax_ERR);
 				audit_log_format(ab,
 						 "op=security_sid_mls_copy invalid_context=");
 				/* don't record NUL with untrusted strings */
@@ -3255,7 +3255,7 @@ int security_net_peersid_resolve(u32 nlbl_sid, u32 nlbl_type,
 				 u32 xfrm_sid,
 				 u32 *peer_sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	int rc;
@@ -3279,11 +3279,11 @@ int security_net_peersid_resolve(u32 nlbl_sid, u32 nlbl_type,
 		return 0;
 	}
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -3300,14 +3300,14 @@ int security_net_peersid_resolve(u32 nlbl_sid, u32 nlbl_type,
 	rc = -EINVAL;
 	nlbl_ctx = sidtab_search(sidtab, nlbl_sid);
 	if (!nlbl_ctx) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, nlbl_sid);
 		goto out;
 	}
 	rc = -EINVAL;
 	xfrm_ctx = sidtab_search(sidtab, xfrm_sid);
 	if (!xfrm_ctx) {
-		pr_err("SELinux: %s:  unrecognized SID %d\n",
+		pr_err("SEfreax: %s:  unrecognized SID %d\n",
 		       __func__, xfrm_sid);
 		goto out;
 	}
@@ -3339,7 +3339,7 @@ static int get_classes_callback(void *k, void *d, void *args)
 	return 0;
 }
 
-int security_get_classes(struct selinux_policy *policy,
+int security_get_classes(struct sefreax_policy *policy,
 			 char ***classes, u32 *nclasses)
 {
 	struct policydb *policydb;
@@ -3380,7 +3380,7 @@ static int get_permissions_callback(void *k, void *d, void *args)
 	return 0;
 }
 
-int security_get_permissions(struct selinux_policy *policy,
+int security_get_permissions(struct sefreax_policy *policy,
 			     const char *class, char ***perms, u32 *nperms)
 {
 	struct policydb *policydb;
@@ -3393,7 +3393,7 @@ int security_get_permissions(struct selinux_policy *policy,
 	rc = -EINVAL;
 	match = symtab_search(&policydb->p_classes, class);
 	if (!match) {
-		pr_err("SELinux: %s:  unrecognized class %s\n",
+		pr_err("SEfreax: %s:  unrecognized class %s\n",
 			__func__, class);
 		goto out;
 	}
@@ -3428,14 +3428,14 @@ err:
 
 int security_get_reject_unknown(void)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	int value;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	value = policy->policydb.reject_unknown;
 	rcu_read_unlock();
 	return value;
@@ -3443,14 +3443,14 @@ int security_get_reject_unknown(void)
 
 int security_get_allow_unknown(void)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	int value;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	value = policy->policydb.allow_unknown;
 	rcu_read_unlock();
 	return value;
@@ -3468,28 +3468,28 @@ int security_get_allow_unknown(void)
  */
 int security_policycap_supported(unsigned int req_cap)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	int rc;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	rc = ebitmap_get_bit(&policy->policydb.policycaps, req_cap);
 	rcu_read_unlock();
 
 	return rc;
 }
 
-struct selinux_audit_rule {
+struct sefreax_audit_rule {
 	u32 au_seqno;
 	struct context au_ctxt;
 };
 
-void selinux_audit_rule_free(void *vrule)
+void sefreax_audit_rule_free(void *vrule)
 {
-	struct selinux_audit_rule *rule = vrule;
+	struct sefreax_audit_rule *rule = vrule;
 
 	if (rule) {
 		context_destroy(&rule->au_ctxt);
@@ -3497,21 +3497,21 @@ void selinux_audit_rule_free(void *vrule)
 	}
 }
 
-int selinux_audit_rule_init(u32 field, u32 op, char *rulestr, void **vrule)
+int sefreax_audit_rule_init(u32 field, u32 op, char *rulestr, void **vrule)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *policy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
-	struct selinux_audit_rule *tmprule;
+	struct sefreax_audit_rule *tmprule;
 	struct role_datum *roledatum;
 	struct type_datum *typedatum;
 	struct user_datum *userdatum;
-	struct selinux_audit_rule **rule = (struct selinux_audit_rule **)vrule;
+	struct sefreax_audit_rule **rule = (struct sefreax_audit_rule **)vrule;
 	int rc = 0;
 
 	*rule = NULL;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return -EOPNOTSUPP;
 
 	switch (field) {
@@ -3538,7 +3538,7 @@ int selinux_audit_rule_init(u32 field, u32 op, char *rulestr, void **vrule)
 		return -EINVAL;
 	}
 
-	tmprule = kzalloc(sizeof(struct selinux_audit_rule), GFP_KERNEL);
+	tmprule = kzalloc(sizeof(struct sefreax_audit_rule), GFP_KERNEL);
 	if (!tmprule)
 		return -ENOMEM;
 	context_init(&tmprule->au_ctxt);
@@ -3592,13 +3592,13 @@ int selinux_audit_rule_init(u32 field, u32 op, char *rulestr, void **vrule)
 
 err:
 	rcu_read_unlock();
-	selinux_audit_rule_free(tmprule);
+	sefreax_audit_rule_free(tmprule);
 	*rule = NULL;
 	return rc;
 }
 
-/* Check to see if the rule contains any selinux fields */
-int selinux_audit_rule_known(struct audit_krule *rule)
+/* Check to see if the rule contains any sefreax fields */
+int sefreax_audit_rule_known(struct audit_krule *rule)
 {
 	u32 i;
 
@@ -3622,21 +3622,21 @@ int selinux_audit_rule_known(struct audit_krule *rule)
 	return 0;
 }
 
-int selinux_audit_rule_match(u32 sid, u32 field, u32 op, void *vrule)
+int sefreax_audit_rule_match(u32 sid, u32 field, u32 op, void *vrule)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *policy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *policy;
 	struct context *ctxt;
 	struct mls_level *level;
-	struct selinux_audit_rule *rule = vrule;
+	struct sefreax_audit_rule *rule = vrule;
 	int match = 0;
 
 	if (unlikely(!rule)) {
-		WARN_ONCE(1, "selinux_audit_rule_match: missing rule\n");
+		WARN_ONCE(1, "sefreax_audit_rule_match: missing rule\n");
 		return -ENOENT;
 	}
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
@@ -3650,7 +3650,7 @@ int selinux_audit_rule_match(u32 sid, u32 field, u32 op, void *vrule)
 
 	ctxt = sidtab_search(policy->sidtab, sid);
 	if (unlikely(!ctxt)) {
-		WARN_ONCE(1, "selinux_audit_rule_match: unrecognized SID %d\n",
+		WARN_ONCE(1, "sefreax_audit_rule_match: unrecognized SID %d\n",
 			  sid);
 		match = -ENOENT;
 		goto out;
@@ -3759,7 +3759,7 @@ __initcall(aurule_init);
 /**
  * security_netlbl_cache_add - Add an entry to the NetLabel cache
  * @secattr: the NetLabel packet security attributes
- * @sid: the SELinux SID
+ * @sid: the SEfreax SID
  *
  * Description:
  * Attempt to cache the context in @ctx, which was derived from the packet in
@@ -3788,13 +3788,13 @@ static void security_netlbl_cache_add(struct netlbl_lsm_secattr *secattr,
 }
 
 /**
- * security_netlbl_secattr_to_sid - Convert a NetLabel secattr to a SELinux SID
+ * security_netlbl_secattr_to_sid - Convert a NetLabel secattr to a SEfreax SID
  * @secattr: the NetLabel packet security attributes
- * @sid: the SELinux SID
+ * @sid: the SEfreax SID
  *
  * Description:
  * Convert the given NetLabel security attributes in @secattr into a
- * SELinux SID.  If the @secattr field does not contain a full SELinux
+ * SEfreax SID.  If the @secattr field does not contain a full SEfreax
  * SID/context then use SECINITSID_NETMSG as the foundation.  If possible the
  * 'cache' field of @secattr is set and the CACHE flag is set; this is to
  * allow the @secattr to be used by NetLabel to cache the secattr to SID
@@ -3805,14 +3805,14 @@ static void security_netlbl_cache_add(struct netlbl_lsm_secattr *secattr,
 int security_netlbl_secattr_to_sid(struct netlbl_lsm_secattr *secattr,
 				   u32 *sid)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	struct sidtab *sidtab;
 	int rc;
 	struct context *ctx;
 	struct context ctx_new;
 
-	if (!selinux_initialized()) {
+	if (!sefreax_initialized()) {
 		*sid = SECSID_NULL;
 		return 0;
 	}
@@ -3820,7 +3820,7 @@ int security_netlbl_secattr_to_sid(struct netlbl_lsm_secattr *secattr,
 retry:
 	rc = 0;
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 	sidtab = policy->sidtab;
 
@@ -3869,27 +3869,27 @@ out:
 }
 
 /**
- * security_netlbl_sid_to_secattr - Convert a SELinux SID to a NetLabel secattr
- * @sid: the SELinux SID
+ * security_netlbl_sid_to_secattr - Convert a SEfreax SID to a NetLabel secattr
+ * @sid: the SEfreax SID
  * @secattr: the NetLabel packet security attributes
  *
  * Description:
- * Convert the given SELinux SID in @sid into a NetLabel security attribute.
+ * Convert the given SEfreax SID in @sid into a NetLabel security attribute.
  * Returns zero on success, negative values on failure.
  *
  */
 int security_netlbl_sid_to_secattr(u32 sid, struct netlbl_lsm_secattr *secattr)
 {
-	struct selinux_policy *policy;
+	struct sefreax_policy *policy;
 	struct policydb *policydb;
 	int rc;
 	struct context *ctx;
 
-	if (!selinux_initialized())
+	if (!sefreax_initialized())
 		return 0;
 
 	rcu_read_lock();
-	policy = rcu_dereference(selinux_state.policy);
+	policy = rcu_dereference(sefreax_state.policy);
 	policydb = &policy->policydb;
 
 	rc = -ENOENT;
@@ -3915,12 +3915,12 @@ out:
 
 /**
  * __security_read_policy - read the policy.
- * @policy: SELinux policy
+ * @policy: SEfreax policy
  * @data: binary policy data
  * @len: length of data in bytes
  *
  */
-static int __security_read_policy(struct selinux_policy *policy,
+static int __security_read_policy(struct sefreax_policy *policy,
 				  void *data, size_t *len)
 {
 	int rc;
@@ -3945,8 +3945,8 @@ static int __security_read_policy(struct selinux_policy *policy,
  */
 int security_read_policy(void **data, size_t *len)
 {
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *policy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *policy;
 
 	policy = rcu_dereference_protected(
 			state->policy, lockdep_is_held(&state->policy_mutex));
@@ -3966,7 +3966,7 @@ int security_read_policy(void **data, size_t *len)
  * @data: binary policy data
  * @len: length of data in bytes
  *
- * Allocates kernel memory for reading SELinux policy.
+ * Allocates kernel memory for reading SEfreax policy.
  * This function is for internal use only and should not
  * be used for returning data to user space.
  *
@@ -3975,8 +3975,8 @@ int security_read_policy(void **data, size_t *len)
 int security_read_state_kernel(void **data, size_t *len)
 {
 	int err;
-	struct selinux_state *state = &selinux_state;
-	struct selinux_policy *policy;
+	struct sefreax_state *state = &sefreax_state;
+	struct sefreax_policy *policy;
 
 	policy = rcu_dereference_protected(
 			state->policy, lockdep_is_held(&state->policy_mutex));

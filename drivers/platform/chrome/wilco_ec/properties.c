@@ -3,11 +3,11 @@
  * Copyright 2019 Google LLC
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/platform_data/wilco-ec.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <asm/unaligned.h>
 
 /* Operation code; what the EC should do with the property */

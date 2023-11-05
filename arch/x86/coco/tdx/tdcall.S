@@ -2,8 +2,8 @@
 #include <asm/asm-offsets.h>
 #include <asm/asm.h>
 
-#include <linux/linkage.h>
-#include <linux/errno.h>
+#include <freax/linkage.h>
+#include <freax/errno.h>
 
 #include "../../virt/vmx/tdx/tdxcall.S"
 

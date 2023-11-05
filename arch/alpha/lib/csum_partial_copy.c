@@ -10,9 +10,9 @@
  * we do for performance..
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
 #include <net/checksum.h>
 
 

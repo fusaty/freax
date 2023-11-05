@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Lai Jiangshan <laijs@cn.fujitsu.com>
  *
  */
-#include <linux/seq_file.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/seq_file.h>
+#include <freax/security.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/ftrace.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/ctype.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include "trace.h"
 

@@ -28,9 +28,9 @@
 #ifndef _VMWGFX_VALIDATION_H_
 #define _VMWGFX_VALIDATION_H_
 
-#include <linux/list.h>
-#include <linux/hashtable.h>
-#include <linux/ww_mutex.h>
+#include <freax/list.h>
+#include <freax/hashtable.h>
+#include <freax/ww_mutex.h>
 
 #include <drm/ttm/ttm_execbuf_util.h>
 

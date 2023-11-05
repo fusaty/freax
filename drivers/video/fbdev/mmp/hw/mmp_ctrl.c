@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/video/mmp/hw/mmp_ctrl.c
+ * freax/drivers/video/mmp/hw/mmp_ctrl.c
  * Marvell MMP series Display Controller support
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -8,22 +8,22 @@
  *          Lisa Du <cldu@marvell.com>
  *          Zhou Zhu <zzhu3@marvell.com>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/vmalloc.h>
+#include <freax/uaccess.h>
+#include <freax/kthread.h>
+#include <freax/io.h>
 
 #include "mmp_ctrl.h"
 

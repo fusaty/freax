@@ -6,7 +6,7 @@
 #define __ASM_SECTIONS_H
 
 #include <asm-generic/sections.h>
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 extern char _start[];
 extern char _start_kernel[];

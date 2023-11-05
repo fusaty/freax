@@ -6,13 +6,13 @@
  * Contact: Felipe Balbi <felipe.balbi@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "musb_core.h"
 #include "musb_debug.h"

@@ -11,21 +11,21 @@
  * See Documentation/security/keys/trusted-encrypted.rst
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/string.h>
-#include <linux/err.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/parser.h>
+#include <freax/string.h>
+#include <freax/err.h>
 #include <keys/user-type.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>
-#include <linux/key-type.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/scatterlist.h>
-#include <linux/ctype.h>
+#include <freax/key-type.h>
+#include <freax/random.h>
+#include <freax/rcupdate.h>
+#include <freax/scatterlist.h>
+#include <freax/ctype.h>
 #include <crypto/aes.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>

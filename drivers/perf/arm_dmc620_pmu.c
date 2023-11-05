@@ -9,24 +9,24 @@
 #define DMC620_DRVNAME		DMC620_PMUNAME "_pmu"
 #define pr_fmt(fmt)		DMC620_DRVNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/rculist.h>
-#include <linux/refcount.h>
+#include <freax/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpumask.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/rculist.h>
+#include <freax/refcount.h>
 
 #define DMC620_PA_SHIFT					12
 #define DMC620_CNT_INIT					0x80000000

@@ -10,8 +10,8 @@
 #ifndef __SPARX5_VCAP_IMPL_H__
 #define __SPARX5_VCAP_IMPL_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 #include "vcap_api.h"
 #include "vcap_api_client.h"

@@ -8,15 +8,15 @@
  * Lionel Pouliquen <lionel.lp.pouliquen@nokia.com>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x48, 0x49, 0x4a, 0x4b, I2C_CLIENT_END };

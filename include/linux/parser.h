@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/parser.h
+ * freax/include/freax/parser.h
  *
  * Header for lib/parser.c
  * Intended use of these functions is parsing filesystem argument lists,
  * but could potentially be used anywhere else that simple option=arg
  * parsing is required.
  */
-#ifndef _LINUX_PARSER_H
-#define _LINUX_PARSER_H
+#ifndef _freax_PARSER_H
+#define _freax_PARSER_H
 
 /* associates an integer enumerator with a pattern string. */
 struct match_token {
@@ -37,4 +37,4 @@ bool match_wildcard(const char *pattern, const char *str);
 size_t match_strlcpy(char *, const substring_t *, size_t);
 char *match_strdup(const substring_t *);
 
-#endif /* _LINUX_PARSER_H */
+#endif /* _freax_PARSER_H */

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * FS_IOC_FIEMAP ioctl infrastructure.
  *
@@ -9,10 +9,10 @@
  *          Andreas Dilger <adilger@sun.com>
  */
 
-#ifndef _UAPI_LINUX_FIEMAP_H
-#define _UAPI_LINUX_FIEMAP_H
+#ifndef _UAPI_freax_FIEMAP_H
+#define _UAPI_freax_FIEMAP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct fiemap_extent {
 	__u64 fe_logical;  /* logical offset in bytes for the start of
@@ -67,4 +67,4 @@ struct fiemap {
 #define FIEMAP_EXTENT_SHARED		0x00002000 /* Space shared with other
 						    * files. */
 
-#endif /* _UAPI_LINUX_FIEMAP_H */
+#endif /* _UAPI_freax_FIEMAP_H */

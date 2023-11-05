@@ -6,10 +6,10 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 #include <asm/unaligned.h>
 
 #include "adt7x10.h"

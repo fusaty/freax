@@ -7,9 +7,9 @@
  */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
 #else
 #include <asm/types.h>
 #endif

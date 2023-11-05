@@ -5,15 +5,15 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/blk-mq.h>
-#include <linux/hrtimer.h>
-#include <linux/configfs.h>
-#include <linux/badblocks.h>
-#include <linux/fault-inject.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/blk-mq.h>
+#include <freax/hrtimer.h>
+#include <freax/configfs.h>
+#include <freax/badblocks.h>
+#include <freax/fault-inject.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
 
 struct nullb_cmd {
 	union {

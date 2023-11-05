@@ -9,17 +9,17 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/property.h>
-#include <linux/string_helpers.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/property.h>
+#include <freax/string_helpers.h>
 
 #include "nhi.h"
 #include "nhi_regs.h"

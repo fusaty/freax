@@ -8,8 +8,8 @@
 #ifndef _MEDIA_RC_MAP_H
 #define _MEDIA_RC_MAP_H
 
-#include <linux/input.h>
-#include <uapi/linux/lirc.h>
+#include <freax/input.h>
+#include <uapi/freax/lirc.h>
 
 #define RC_PROTO_BIT_NONE		0ULL
 #define RC_PROTO_BIT_UNKNOWN		BIT_ULL(RC_PROTO_UNKNOWN)
@@ -135,7 +135,7 @@
  * struct rc_map_table - represents a scancode/keycode pair
  *
  * @scancode: scan code (u64)
- * @keycode: Linux input keycode
+ * @keycode: freax input keycode
  */
 struct rc_map_table {
 	u64	scancode;

@@ -8,15 +8,15 @@
  * Copyright Sarah Sharp for Intel Corp, 2010
  */
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/storage.h>
-#include <linux/usb/uas.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb_usual.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/storage.h>
+#include <freax/usb/uas.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>

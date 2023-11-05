@@ -6,7 +6,7 @@
 #ifndef __NETNS_MPLS_H__
 #define __NETNS_MPLS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct mpls_route;
 struct ctl_table_header;

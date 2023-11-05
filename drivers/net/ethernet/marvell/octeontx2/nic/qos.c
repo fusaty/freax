@@ -4,10 +4,10 @@
  * Copyright (C) 2023 Marvell.
  *
  */
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/bitfield.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/bitfield.h>
 
 #include "otx2_common.h"
 #include "cn10k.h"

@@ -6,9 +6,9 @@
  *	Dave Gerlach, Vaibhav Bedia
  */
 
-#include <linux/linkage.h>
-#include <linux/ti-emif-sram.h>
-#include <linux/platform_data/pm33xx.h>
+#include <freax/linkage.h>
+#include <freax/ti-emif-sram.h>
+#include <freax/platform_data/pm33xx.h>
 #include <asm/assembler.h>
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/page.h>
@@ -22,7 +22,7 @@
 #include "prm33xx.h"
 #include "prcm43xx.h"
 
-/* replicated define because linux/bitops.h cannot be included in assembly */
+/* replicated define because freax/bitops.h cannot be included in assembly */
 #define BIT(nr)			(1 << (nr))
 
 #define AM33XX_CM_CLKCTRL_MODULESTATE_DISABLED		0x00030000

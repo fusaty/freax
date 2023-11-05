@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  * Copyright (C) 2012 Regents of the University of California
  */
@@ -8,7 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define PTRACE_GETFDPIC		33
 

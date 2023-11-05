@@ -11,10 +11,10 @@
 #ifndef _NILFS_BTNODE_H
 #define _NILFS_BTNODE_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/backing-dev.h>
+#include <freax/types.h>
+#include <freax/buffer_head.h>
+#include <freax/fs.h>
+#include <freax/backing-dev.h>
 
 /**
  * struct nilfs_btnode_chkey_ctxt - change key context

@@ -217,7 +217,7 @@
 				bus-range = <0x00 0xff>;
 				#interrupt-cells = <1>;
 				num-lanes = <1>;
-				linux,pci-domain = <0>;
+				freax,pci-domain = <0>;
 				phys = <&pcie1_phy>;
 				phy-names = "pcie-phy0";
 				ti,syscon-lane-sel = <&scm_conf_pcie 0x18>;
@@ -288,7 +288,7 @@
 				bus-range = <0x00 0xff>;
 				#interrupt-cells = <1>;
 				num-lanes = <1>;
-				linux,pci-domain = <1>;
+				freax,pci-domain = <1>;
 				phys = <&pcie2_phy>;
 				phy-names = "pcie-phy0";
 				interrupt-map-mask = <0 0 0 7>;

@@ -4,17 +4,17 @@
 #ifndef _ICE_OSDEP_H_
 #define _ICE_OSDEP_H_
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/pci_ids.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/pci_ids.h>
 #ifndef CONFIG_64BIT
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #endif
 #include <net/udp_tunnel.h>
 

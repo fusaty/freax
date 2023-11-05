@@ -579,7 +579,7 @@ affinity scope for unbound pools.
   ``WQ_CPU_INTENSIVE`` per-cpu workqueue. There is no real advanage to the
   latter and an unbound workqueue provides a lot more flexibility.
 
-* Affinity scopes are introduced in Linux v6.5. To emulate the previous
+* Affinity scopes are introduced in freax v6.5. To emulate the previous
   behavior, use strict "numa" affinity scope.
 
 * The loss of work-conservation in non-strict affinity scopes is likely
@@ -758,6 +758,6 @@ required when breaking the conditions inside a work function.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/linux/workqueue.h
+.. kernel-doc:: include/freax/workqueue.h
 
 .. kernel-doc:: kernel/workqueue.c

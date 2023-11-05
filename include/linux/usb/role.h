@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#ifndef __LINUX_USB_ROLE_H
-#define __LINUX_USB_ROLE_H
+#ifndef __freax_USB_ROLE_H
+#define __freax_USB_ROLE_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 struct usb_role_switch;
 
@@ -123,4 +123,4 @@ static inline const char *usb_role_string(enum usb_role role)
 
 #endif
 
-#endif /* __LINUX_USB_ROLE_H */
+#endif /* __freax_USB_ROLE_H */

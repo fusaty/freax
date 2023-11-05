@@ -63,8 +63,8 @@
  * human readable bytes. prt_units() obeys it.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 enum printbuf_si {
 	PRINTBUF_UNITS_2,	/* use binary powers of 2^10 */

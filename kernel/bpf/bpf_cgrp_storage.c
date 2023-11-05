@@ -3,11 +3,11 @@
  * Copyright (c) 2022 Meta Platforms, Inc. and affiliates.
  */
 
-#include <linux/types.h>
-#include <linux/bpf.h>
-#include <linux/bpf_local_storage.h>
-#include <uapi/linux/btf.h>
-#include <linux/btf_ids.h>
+#include <freax/types.h>
+#include <freax/bpf.h>
+#include <freax/bpf_local_storage.h>
+#include <uapi/freax/btf.h>
+#include <freax/btf_ids.h>
 
 DEFINE_BPF_STORAGE_CACHE(cgroup_cache);
 

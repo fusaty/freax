@@ -2,20 +2,20 @@
 //
 // Copyright (c) 2017-2019 Samuel Holland <samuel@sholland.org>
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_controller.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
 
 #define NUM_CHANS		8
 
@@ -234,7 +234,7 @@ static int sun6i_msgbox_probe(struct platform_device *pdev)
 	/*
 	 * NOTE: We rely on platform firmware to preconfigure the channel
 	 * directions, and we share this hardware block with other firmware
-	 * that runs concurrently with Linux (e.g. a trusted monitor).
+	 * that runs concurrently with freax (e.g. a trusted monitor).
 	 *
 	 * Therefore, we do *not* assert the reset line if probing fails or
 	 * when removing the device.

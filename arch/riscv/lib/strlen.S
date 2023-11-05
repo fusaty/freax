@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asm.h>
 #include <asm/alternative-macros.h>
 #include <asm/hwcap.h>

@@ -5,11 +5,11 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk/davinci.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <freax/clkdev.h>
+#include <freax/clk/davinci.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/types.h>
 
 #include "pll.h"
 

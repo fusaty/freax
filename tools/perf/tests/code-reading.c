@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 #include <inttypes.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -32,7 +32,7 @@
 
 #include "tests.h"
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 #define BUFSZ	1024
 #define READLEN	128
@@ -554,7 +554,7 @@ static void do_something(void)
 
 enum {
 	TEST_CODE_READING_OK,
-	TEST_CODE_READING_NO_VMLINUX,
+	TEST_CODE_READING_NO_VMfreax,
 	TEST_CODE_READING_NO_KCORE,
 	TEST_CODE_READING_NO_ACCESS,
 	TEST_CODE_READING_NO_KERNEL_OBJ,
@@ -583,7 +583,7 @@ static int do_test_code_reading(bool try_kcore)
 	int err = -1, ret;
 	pid_t pid;
 	struct map *map;
-	bool have_vmlinux, have_kcore, excl_kernel = false;
+	bool have_vmfreax, have_kcore, excl_kernel = false;
 	struct dso *dso;
 
 	pid = getpid();
@@ -597,7 +597,7 @@ static int do_test_code_reading(bool try_kcore)
 		goto out_err;
 	}
 
-	/* Force the use of kallsyms instead of vmlinux to try kcore */
+	/* Force the use of kallsyms instead of vmfreax to try kcore */
 	if (try_kcore)
 		symbol_conf.kallsyms_name = "/proc/kallsyms";
 
@@ -609,7 +609,7 @@ static int do_test_code_reading(bool try_kcore)
 		goto out_err;
 	}
 	dso = map__dso(map);
-	have_vmlinux = dso__is_vmlinux(dso);
+	have_vmfreax = dso__is_vmfreax(dso);
 	have_kcore = dso__is_kcore(dso);
 
 	/* 2nd time through we just try kcore */
@@ -617,7 +617,7 @@ static int do_test_code_reading(bool try_kcore)
 		return TEST_CODE_READING_NO_KCORE;
 
 	/* No point getting kernel events if there is no kernel object */
-	if (!have_vmlinux && !have_kcore)
+	if (!have_vmfreax && !have_kcore)
 		excl_kernel = true;
 
 	threads = thread_map__new_by_tid(pid);
@@ -717,10 +717,10 @@ static int do_test_code_reading(bool try_kcore)
 	if (ret < 0)
 		goto out_put;
 
-	if (!have_vmlinux && !have_kcore && !try_kcore)
+	if (!have_vmfreax && !have_kcore && !try_kcore)
 		err = TEST_CODE_READING_NO_KERNEL_OBJ;
-	else if (!have_vmlinux && !try_kcore)
-		err = TEST_CODE_READING_NO_VMLINUX;
+	else if (!have_vmfreax && !try_kcore)
+		err = TEST_CODE_READING_NO_VMfreax;
 	else if (excl_kernel)
 		err = TEST_CODE_READING_NO_ACCESS;
 	else
@@ -747,8 +747,8 @@ static int test__code_reading(struct test_suite *test __maybe_unused, int subtes
 	switch (ret) {
 	case TEST_CODE_READING_OK:
 		return 0;
-	case TEST_CODE_READING_NO_VMLINUX:
-		pr_debug("no vmlinux\n");
+	case TEST_CODE_READING_NO_VMfreax:
+		pr_debug("no vmfreax\n");
 		return 0;
 	case TEST_CODE_READING_NO_KCORE:
 		pr_debug("no kcore\n");

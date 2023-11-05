@@ -1,14 +1,14 @@
 /*
- *  Amiga Linux/m68k Ariadne Ethernet Driver
+ *  Amiga freax/m68k Ariadne Ethernet Driver
  *
- *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@linux-m68k.org)
+ *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@freax-m68k.org)
  *			     Peter De Schrijver (p2@mind.be)
  *
  *  ---------------------------------------------------------------------------
  *
  *  This program is based on
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for freax.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -21,7 +21,7 @@
  *  ---------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the freax
  *  distribution for more details.
  *
  *  ---------------------------------------------------------------------------
@@ -37,19 +37,19 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 /*#define DEBUG*/
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/zorro.h>
+#include <freax/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/amigaints.h>

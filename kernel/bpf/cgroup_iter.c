@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2022 Google */
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
-#include <linux/cgroup.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
+#include <freax/bpf.h>
+#include <freax/btf_ids.h>
+#include <freax/cgroup.h>
+#include <freax/kernel.h>
+#include <freax/seq_file.h>
 
 #include "../cgroup/cgroup-internal.h"  /* cgroup_mutex and cgroup_is_dead */
 
@@ -307,7 +307,7 @@ struct bpf_iter_css_kern {
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		"Global functions as their definitions will be in vmlinux BTF");
+		"Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc int bpf_iter_css_new(struct bpf_iter_css *it,
 		struct cgroup_subsys_state *start, unsigned int flags)

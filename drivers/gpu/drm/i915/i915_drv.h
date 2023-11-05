@@ -1,4 +1,4 @@
-/* i915_drv.h -- Private header for the I915 driver -*- linux-c -*-
+/* i915_drv.h -- Private header for the I915 driver -*- freax-c -*-
  */
 /*
  *
@@ -32,7 +32,7 @@
 
 #include <uapi/drm/i915_drm.h>
 
-#include <linux/pm_qos.h>
+#include <freax/pm_qos.h>
 
 #include <drm/ttm/ttm_device.h>
 

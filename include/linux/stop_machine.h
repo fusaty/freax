@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STOP_MACHINE
-#define _LINUX_STOP_MACHINE
+#ifndef _freax_STOP_MACHINE
+#define _freax_STOP_MACHINE
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/list.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/smp.h>
+#include <freax/list.h>
 
 /*
  * stop_cpu[s]() is simplistic per-cpu maximum priority cpu
@@ -41,7 +41,7 @@ extern void print_stop_info(const char *log_lvl, struct task_struct *task);
 
 #else	/* CONFIG_SMP */
 
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 struct cpu_stop_work {
 	struct work_struct	work;
@@ -169,4 +169,4 @@ stop_machine_from_inactive_cpu(cpu_stop_fn_t fn, void *data,
 }
 
 #endif	/* CONFIG_SMP || CONFIG_HOTPLUG_CPU */
-#endif	/* _LINUX_STOP_MACHINE */
+#endif	/* _freax_STOP_MACHINE */

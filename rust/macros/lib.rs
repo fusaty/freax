@@ -20,7 +20,7 @@ use proc_macro::TokenStream;
 /// The `type` argument should be a type which implements the [`Module`]
 /// trait. Also accepts various forms of kernel metadata.
 ///
-/// C header: [`include/linux/moduleparam.h`](../../../include/linux/moduleparam.h)
+/// C header: [`include/freax/moduleparam.h`](../../../include/freax/moduleparam.h)
 ///
 /// [`Module`]: ../kernel/trait.Module.html
 ///
@@ -32,7 +32,7 @@ use proc_macro::TokenStream;
 /// module!{
 ///     type: MyModule,
 ///     name: "my_kernel_module",
-///     author: "Rust for Linux Contributors",
+///     author: "Rust for freax Contributors",
 ///     description: "My very own kernel module!",
 ///     license: "GPL",
 ///     params: {
@@ -81,10 +81,10 @@ pub fn module(ts: TokenStream) -> TokenStream {
 
 /// Declares or implements a vtable trait.
 ///
-/// Linux's use of pure vtables is very close to Rust traits, but they differ
+/// freax's use of pure vtables is very close to Rust traits, but they differ
 /// in how unimplemented functions are represented. In Rust, traits can provide
 /// default implementation for all non-required methods (and the default
-/// implementation could just return `Error::EINVAL`); Linux typically use C
+/// implementation could just return `Error::EINVAL`); freax typically use C
 /// `NULL` pointers to represent these functions.
 ///
 /// This attribute is intended to close the gap. Traits can be declared and

@@ -22,24 +22,24 @@
  * concurrent access to the same port.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/circ_buf.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/circ_buf.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/kfifo.h>
+#include <freax/slab.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/sdio_ids.h>
 
 
 #define UART_NR		8	/* Number of UARTs this driver can handle */

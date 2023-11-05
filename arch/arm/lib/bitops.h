@@ -2,7 +2,7 @@
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	.macro	bitop, name, instr
 ENTRY(	\name		)
 UNWIND(	.fnstart	)
@@ -12,7 +12,7 @@ UNWIND(	.fnstart	)
 	and	r3, r0, #31		@ Get bit offset
 	mov	r0, r0, lsr #5
 	add	r1, r1, r0, lsl #2	@ Get word offset
-#if __LINUX_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
+#if __freax_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
 	.arch_extension	mp
 	ALT_SMP(W(pldw)	[r1])
 	ALT_UP(W(nop))
@@ -39,7 +39,7 @@ UNWIND(	.fnstart	)
 	add	r1, r1, r0, lsl #2	@ Get word offset
 	mov	r3, r2, lsl r3		@ create mask
 	\barrier
-#if __LINUX_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
+#if __freax_ARM_ARCH__ >= 7 && defined(CONFIG_SMP)
 	.arch_extension	mp
 	ALT_SMP(W(pldw)	[r1])
 	ALT_UP(W(nop))

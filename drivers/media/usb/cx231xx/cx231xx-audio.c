@@ -7,13 +7,13 @@
  */
 
 #include "cx231xx.h"
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sound.h>
-#include <linux/spinlock.h>
-#include <linux/soundcard.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sound.h>
+#include <freax/spinlock.h>
+#include <freax/soundcard.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

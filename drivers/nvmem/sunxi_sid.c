@@ -6,15 +6,15 @@
  * Copyright (C) 2014 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/random.h>
 
 /* Registers and special values for doing register-based SID readout on H3 */
 #define SUN8I_SID_PRCTL		0x40

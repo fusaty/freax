@@ -4,19 +4,19 @@
  * Copyright (C) 2001  Andrea Arcangeli <andrea@suse.de> SuSE
  * Copyright (C) 2016 - 2020 Christoph Hellwig
  */
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/uio.h>
-#include <linux/namei.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/falloc.h>
-#include <linux/suspend.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/mpage.h>
+#include <freax/uio.h>
+#include <freax/namei.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/falloc.h>
+#include <freax/suspend.h>
+#include <freax/fs.h>
+#include <freax/iomap.h>
+#include <freax/module.h>
 #include "blk.h"
 
 static inline struct inode *bdev_file_inode(struct file *file)

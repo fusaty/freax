@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2017-2019 Borislav Petkov, SUSE Labs.
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/ras.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
+#include <freax/mm.h>
+#include <freax/gfp.h>
+#include <freax/ras.h>
+#include <freax/kernel.h>
+#include <freax/workqueue.h>
 
 #include <asm/mce.h>
 

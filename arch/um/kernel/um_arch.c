@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/panic_notifier.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/utsname.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/kmsg_dump.h>
-#include <linux/suspend.h>
-#include <linux/random.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/ctype.h>
+#include <freax/module.h>
+#include <freax/panic_notifier.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
+#include <freax/utsname.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/kmsg_dump.h>
+#include <freax/suspend.h>
+#include <freax/random.h>
 
 #include <asm/processor.h>
 #include <asm/cpufeature.h>
@@ -76,7 +76,7 @@ static int show_cpuinfo(struct seq_file *m, void *v)
 	int i = 0;
 
 	seq_printf(m, "processor\t: %d\n", i);
-	seq_printf(m, "vendor_id\t: User Mode Linux\n");
+	seq_printf(m, "vendor_id\t: User Mode freax\n");
 	seq_printf(m, "model name\t: UML\n");
 	seq_printf(m, "mode\t\t: skas\n");
 	seq_printf(m, "host\t\t: %s\n", host_info);
@@ -117,7 +117,7 @@ const struct seq_operations cpuinfo_op = {
 	.show	= show_cpuinfo,
 };
 
-/* Set in linux_main */
+/* Set in freax_main */
 unsigned long uml_physmem;
 EXPORT_SYMBOL(uml_physmem);
 
@@ -132,13 +132,13 @@ int ncpus = 1;
 static int have_root __initdata;
 static int have_console __initdata;
 
-/* Set in uml_mem_setup and modified in linux_main */
+/* Set in uml_mem_setup and modified in freax_main */
 long long physmem_size = 64 * 1024 * 1024;
 EXPORT_SYMBOL(physmem_size);
 
 static const char *usage_string =
-"User Mode Linux v%s\n"
-"	available at http://user-mode-linux.sourceforge.net/\n\n";
+"User Mode freax v%s\n"
+"	available at http://user-mode-freax.sourceforge.net/\n\n";
 
 static int __init uml_version_setup(char *line, int *add)
 {
@@ -172,7 +172,7 @@ __uml_setup("root=", uml_root_setup,
 static int __init no_skas_debug_setup(char *line, int *add)
 {
 	os_warn("'debug' is not necessary to gdb UML in skas mode - run\n");
-	os_warn("'gdb linux'\n");
+	os_warn("'gdb freax'\n");
 
 	return 0;
 }
@@ -304,7 +304,7 @@ static void parse_cache_line(char *line)
 	}
 }
 
-int __init linux_main(int argc, char **argv)
+int __init freax_main(int argc, char **argv)
 {
 	unsigned long avail, diff;
 	unsigned long virtmem_size, max_physmem;

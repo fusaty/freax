@@ -4,8 +4,8 @@
  *  Loongson-2K1000 reset support
  */
 
-#include <linux/of_address.h>
-#include <linux/pm.h>
+#include <freax/of_address.h>
+#include <freax/pm.h>
 #include <asm/reboot.h>
 
 #define	PM1_STS		0x0c /* Power Management 1 Status Register */

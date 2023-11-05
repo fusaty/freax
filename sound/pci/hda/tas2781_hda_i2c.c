@@ -6,16 +6,16 @@
 //
 // Author: Shenghao Ding <shenghao-ding@ti.com>
 
-#include <linux/acpi.h>
-#include <linux/crc8.h>
-#include <linux/crc32.h>
-#include <linux/efi.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/crc8.h>
+#include <freax/crc32.h>
+#include <freax/efi.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 #include <sound/hda_codec.h>
 #include <sound/soc.h>
 #include <sound/tas2781.h>

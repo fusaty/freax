@@ -7,8 +7,8 @@
 #ifndef __SAMSUNG_DSIM__
 #define __SAMSUNG_DSIM__
 
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_of.h>

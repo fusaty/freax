@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The freax Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
 #include "q6dsp-common.h"
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/errno.h>
 
 int q6dsp_map_channels(u8 ch_map[PCM_MAX_NUM_CHANNEL], int ch)
 {

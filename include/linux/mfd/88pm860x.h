@@ -6,10 +6,10 @@
  * 	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#ifndef __LINUX_MFD_88PM860X_H
-#define __LINUX_MFD_88PM860X_H
+#ifndef __freax_MFD_88PM860X_H
+#define __freax_MFD_88PM860X_H
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #define MFD_NAME_SIZE		(40)
 
@@ -475,4 +475,4 @@ extern int pm860x_set_bits(struct i2c_client *, int, unsigned char,
 extern int pm860x_page_reg_write(struct i2c_client *, int, unsigned char);
 extern int pm860x_page_bulk_read(struct i2c_client *, int, int,
 				 unsigned char *);
-#endif /* __LINUX_MFD_88PM860X_H */
+#endif /* __freax_MFD_88PM860X_H */

@@ -7,15 +7,15 @@
 #include "qla_target.h"
 #include "qla_gbl.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/t10-pi.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/t10-pi.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_bsg_fc.h>
 #include <scsi/scsi_eh.h>
 #include <scsi/fc/fc_fs.h>
-#include <linux/nvme-fc-driver.h>
+#include <freax/nvme-fc-driver.h>
 
 static void qla2x00_mbx_completion(scsi_qla_host_t *, uint16_t);
 static void qla2x00_status_entry(scsi_qla_host_t *, struct rsp_que *, void *);
@@ -3474,7 +3474,7 @@ qla2x00_status_entry(scsi_qla_host_t *vha, struct rsp_que *rsp, void *pkt)
 		qla2x00_set_retry_delay_timestamp(fcport, sts_qual);
 
 	/*
-	 * Based on Host and scsi status generate status code for Linux
+	 * Based on Host and scsi status generate status code for freax
 	 */
 	switch (comp_status) {
 	case CS_COMPLETE:

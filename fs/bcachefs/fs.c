@@ -27,18 +27,18 @@
 #include "super.h"
 #include "xattr.h"
 
-#include <linux/aio.h>
-#include <linux/backing-dev.h>
-#include <linux/exportfs.h>
-#include <linux/fiemap.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/posix_acl.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
-#include <linux/xattr.h>
+#include <freax/aio.h>
+#include <freax/backing-dev.h>
+#include <freax/exportfs.h>
+#include <freax/fiemap.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/posix_acl.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
+#include <freax/statfs.h>
+#include <freax/string.h>
+#include <freax/xattr.h>
 
 static struct kmem_cache *bch2_inode_cache;
 

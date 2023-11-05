@@ -51,7 +51,7 @@ fi
 #
 cp -v -- "${objtree}/System.map" "${tmpdir}/boot/System.map-${KERNELRELEASE}"
 cp -v -- "${KCONFIG_CONFIG}" "${tmpdir}/boot/config-${KERNELRELEASE}"
-cp -v -- "${objtree}/vmlinux" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+cp -v -- "${objtree}/vmfreax" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
 
 
 #
@@ -62,31 +62,31 @@ case "${ARCH}" in
 		[ -f "${objtree}/arch/x86/boot/bzImage" ] && cp -v -- "${objtree}/arch/x86/boot/bzImage" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	alpha)
-		[ -f "${objtree}/arch/alpha/boot/vmlinux.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmlinux.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		[ -f "${objtree}/arch/alpha/boot/vmfreax.gz" ] && cp -v -- "${objtree}/arch/alpha/boot/vmfreax.gz" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
 		;;
 	parisc*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
 		[ -f "${objtree}/lifimage" ] && cp -v -- "${objtree}/lifimage" "${tmpdir}/boot/lifimage-${KERNELRELEASE}"
 		;;
 	mips)
-		if [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.bin" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.bin" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.ecoff" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.ecoff" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/compressed/vmlinux.srec" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/compressed/vmlinux.srec" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux.32" ]; then
-			cp -v -- "${objtree}/vmlinux.32" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux.64" ]; then
-			cp -v -- "${objtree}/vmlinux.64" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.bin" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.bin" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.ecoff" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.ecoff" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/arch/mips/boot/vmlinux.srec" ]; then
-			cp -v -- "${objtree}/arch/mips/boot/vmlinux.srec" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
-		elif [ -f "${objtree}/vmlinux" ]; then
-			cp -v -- "${objtree}/vmlinux" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+		if [ -f "${objtree}/arch/mips/boot/compressed/vmfreax.bin" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmfreax.bin" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/compressed/vmfreax.ecoff" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmfreax.ecoff" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/compressed/vmfreax.srec" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/compressed/vmfreax.srec" "${tmpdir}/boot/vmlinuz-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmfreax.32" ]; then
+			cp -v -- "${objtree}/vmfreax.32" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmfreax.64" ]; then
+			cp -v -- "${objtree}/vmfreax.64" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmfreax.bin" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmfreax.bin" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmfreax.ecoff" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmfreax.ecoff" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
+		elif [ -f "${objtree}/arch/mips/boot/vmfreax.srec" ]; then
+			cp -v -- "${objtree}/arch/mips/boot/vmfreax.srec" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
+		elif [ -f "${objtree}/vmfreax" ]; then
+			cp -v -- "${objtree}/vmfreax" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
 		fi
 		;;
 	arm64)
@@ -100,13 +100,13 @@ case "${ARCH}" in
 	riscv)
 		for i in Image.bz2 Image.gz Image; do
 			if [ -f "${objtree}/arch/riscv/boot/${i}" ] ; then
-				cp -v -- "${objtree}/arch/riscv/boot/${i}" "${tmpdir}/boot/vmlinux-${KERNELRELEASE}"
+				cp -v -- "${objtree}/arch/riscv/boot/${i}" "${tmpdir}/boot/vmfreax-${KERNELRELEASE}"
 				break
 			fi
 		done
 		;;
 	*)
-		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmlinux-kbuild-${KERNELRELEASE}"
+		[ -f "${KBUILD_IMAGE}" ] && cp -v -- "${KBUILD_IMAGE}" "${tmpdir}/boot/vmfreax-kbuild-${KERNELRELEASE}"
 		echo "" >&2
 		echo '** ** **  WARNING  ** ** **' >&2
 		echo "" >&2

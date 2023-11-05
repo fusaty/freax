@@ -8,18 +8,18 @@
 // TODO: add support for TDM mode.
 //
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/jack.h>

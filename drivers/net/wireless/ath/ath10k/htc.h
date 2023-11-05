@@ -7,12 +7,12 @@
 #ifndef _HTC_H_
 #define _HTC_H_
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/bug.h>
+#include <freax/skbuff.h>
+#include <freax/timer.h>
+#include <freax/bitfield.h>
 
 struct ath10k;
 

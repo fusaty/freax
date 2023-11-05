@@ -7,8 +7,8 @@
  *             Kirti Wankhede <kwankhede@nvidia.com>
  */
 
-#include <linux/iommu.h>
-#include <linux/mdev.h>
+#include <freax/iommu.h>
+#include <freax/mdev.h>
 
 #include "mdev_private.h"
 

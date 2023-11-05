@@ -7,7 +7,7 @@
 
 #if defined(CONFIG_LTO) && !defined(__ASSEMBLY__)
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 #include <asm/alternative-macros.h>
 
 #ifndef BUILD_VDSO

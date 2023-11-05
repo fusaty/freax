@@ -35,10 +35,10 @@
 #include <drm/ttm/ttm_device.h>
 #include <drm/ttm/ttm_tt.h>
 #include <drm/ttm/ttm_resource.h>
-#include <linux/agp_backend.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/agp_backend.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 #include <asm/agp.h>
 
 struct ttm_agp_backend {

@@ -21,12 +21,12 @@ properties:
       - const: fsl,imx8qxp-sc-key
       - const: fsl,imx-sc-key
 
-  linux,keycodes:
+  freax,keycodes:
     maxItems: 1
 
 required:
   - compatible
-  - linux,keycodes
+  - freax,keycodes
 
 additionalProperties: false
 
@@ -36,5 +36,5 @@ examples:
 
     keys {
         compatible = "fsl,imx8qxp-sc-key", "fsl,imx-sc-key";
-        linux,keycodes = <KEY_POWER>;
+        freax,keycodes = <KEY_POWER>;
     };

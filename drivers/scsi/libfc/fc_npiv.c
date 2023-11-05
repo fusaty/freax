@@ -10,7 +10,7 @@
  */
 
 #include <scsi/libfc.h>
-#include <linux/export.h>
+#include <freax/export.h>
 
 /**
  * libfc_vport_create() - Create a new NPIV vport instance

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
 
 static DEFINE_RAW_SPINLOCK(__io_lock);
 

@@ -3,8 +3,8 @@
 #ifndef __MFD_MAX77541_H
 #define __MFD_MAX77541_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 /* REGISTERS */
 #define MAX77541_REG_INT_SRC                    0x00

@@ -5,10 +5,10 @@
 // Author: Shawn Guo <shawn.guo@linaro.org>
 // Copyright 2012 Freescale Semiconductor, Inc.
 
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
 #include "pinctrl-mxs.h"
 
 enum imx28_pin_enum {

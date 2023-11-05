@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Performance events:
  *
@@ -12,11 +12,11 @@
  *
  * For licencing details see kernel-base/COPYING
  */
-#ifndef _UAPI_LINUX_PERF_EVENT_H
-#define _UAPI_LINUX_PERF_EVENT_H
+#ifndef _UAPI_freax_PERF_EVENT_H
+#define _UAPI_freax_PERF_EVENT_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 #include <asm/byteorder.h>
 
 /*
@@ -1446,4 +1446,4 @@ union perf_sample_weight {
 #endif
 };
 
-#endif /* _UAPI_LINUX_PERF_EVENT_H */
+#endif /* _UAPI_freax_PERF_EVENT_H */

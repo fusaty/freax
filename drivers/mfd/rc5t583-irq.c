@@ -8,10 +8,10 @@
  * based on code
  *      Copyright (C) 2011 RICOH COMPANY,LTD
  */
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/rc5t583.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mfd/rc5t583.h>
 
 enum int_type {
 	SYS_INT  = 0x1,

@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/core.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm831x/irq.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/gpio.h>
+#include <freax/mfd/wm831x/irq.h>
 
 struct wm831x_gpio {
 	struct wm831x *wm831x;

@@ -24,9 +24,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/usb/ch9.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/usb/ch9.h>
+#include <freax/module.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -40,7 +40,7 @@
  * Instead:  allocate your own, using normal USB-IF procedures.
  */
 #define FSG_VENDOR_ID	0x0525	/* NetChip */
-#define FSG_PRODUCT_ID	0xa4a5	/* Linux-USB File-backed Storage Gadget */
+#define FSG_PRODUCT_ID	0xa4a5	/* freax-USB File-backed Storage Gadget */
 
 #include "f_mass_storage.h"
 
@@ -128,7 +128,7 @@ put_func:
 }
 
 static struct usb_configuration msg_config_driver = {
-	.label			= "Linux File-Backed Storage",
+	.label			= "freax File-Backed Storage",
 	.bConfigurationValue	= 1,
 	.bmAttributes		= USB_CONFIG_ATT_SELFPOWER,
 };

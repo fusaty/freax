@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_PCI_ATS_H
-#define LINUX_PCI_ATS_H
+#ifndef freax_PCI_ATS_H
+#define freax_PCI_ATS_H
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #ifdef CONFIG_PCI_ATS
 /* Address Translation Service */
@@ -49,4 +49,4 @@ static inline int pci_max_pasids(struct pci_dev *pdev)
 { return -EINVAL; }
 #endif /* CONFIG_PCI_PASID */
 
-#endif /* LINUX_PCI_ATS_H */
+#endif /* freax_PCI_ATS_H */

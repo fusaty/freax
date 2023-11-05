@@ -8,18 +8,18 @@
  *
  * This file contains the main data structure and API definitions.
  */
-#ifndef __LINUX_MUTEX_H
-#define __LINUX_MUTEX_H
+#ifndef __freax_MUTEX_H
+#define __freax_MUTEX_H
 
 #include <asm/current.h>
-#include <linux/list.h>
-#include <linux/spinlock_types.h>
-#include <linux/lockdep.h>
-#include <linux/atomic.h>
+#include <freax/list.h>
+#include <freax/spinlock_types.h>
+#include <freax/lockdep.h>
+#include <freax/atomic.h>
 #include <asm/processor.h>
-#include <linux/osq_lock.h>
-#include <linux/debug_locks.h>
-#include <linux/cleanup.h>
+#include <freax/osq_lock.h>
+#include <freax/debug_locks.h>
+#include <freax/cleanup.h>
 
 #ifdef CONFIG_DEBUG_LOCK_ALLOC
 # define __DEP_MAP_MUTEX_INITIALIZER(lockname)			\
@@ -131,7 +131,7 @@ extern bool mutex_is_locked(struct mutex *lock);
 /*
  * Preempt-RT variant based on rtmutexes.
  */
-#include <linux/rtmutex.h>
+#include <freax/rtmutex.h>
 
 struct mutex {
 	struct rt_mutex_base	rtmutex;
@@ -223,4 +223,4 @@ extern int atomic_dec_and_mutex_lock(atomic_t *cnt, struct mutex *lock);
 DEFINE_GUARD(mutex, struct mutex *, mutex_lock(_T), mutex_unlock(_T))
 DEFINE_FREE(mutex, struct mutex *, if (_T) mutex_unlock(_T))
 
-#endif /* __LINUX_MUTEX_H */
+#endif /* __freax_MUTEX_H */

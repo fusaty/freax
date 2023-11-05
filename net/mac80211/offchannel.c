@@ -10,7 +10,7 @@
  * Copyright 2009	Johannes Berg <johannes@sipsolutions.net>
  * Copyright (C) 2019, 2022-2023 Intel Corporation
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

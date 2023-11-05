@@ -8,14 +8,14 @@
  * Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved.
  */
 
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/random.h>
-#include <linux/elf.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/random.h>
+#include <freax/elf.h>
 #include <asm/cacheflush.h>
 #include <asm/spitfire.h>
 #include <asm/vdso.h>
@@ -346,7 +346,7 @@ static int __init init_vdso(void)
 }
 subsys_initcall(init_vdso);
 
-struct linux_binprm;
+struct freax_binprm;
 
 /* Shuffle the vdso up a bit, randomly. */
 static unsigned long vdso_addr(unsigned long start, unsigned int len)
@@ -426,7 +426,7 @@ up_fail:
 	return ret;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 
 	if (!vdso_enabled)

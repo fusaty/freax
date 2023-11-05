@@ -1,6 +1,6 @@
 from ..qemu_config import QemuArchParams
 
-QEMU_ARCH = QemuArchParams(linux_arch='x86_64',
+QEMU_ARCH = QemuArchParams(freax_arch='x86_64',
 			   kconfig='''
 CONFIG_SERIAL_8250=y
 CONFIG_SERIAL_8250_CONSOLE=y''',

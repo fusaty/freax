@@ -4,8 +4,8 @@
  * Copyright © 2008 Intel Corporation
  */
 
-#include <linux/string.h>
-#include <linux/bitops.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
 
 #include "i915_drv.h"
 #include "i915_gem.h"

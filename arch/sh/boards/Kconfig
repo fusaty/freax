@@ -130,7 +130,7 @@ config SH_DREAMCAST
 	depends on CPU_SUBTYPE_SH7091
 	help
 	  Select Dreamcast if configuring for a SEGA Dreamcast.
-	  More information at <http://www.linux-sh.org>
+	  More information at <http://www.freax-sh.org>
 
 config SH_SH03
 	bool "Interface CTP/PCI-SH03"

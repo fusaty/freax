@@ -5,9 +5,9 @@
  * Copyright (C) IBM Corporation, 2003, 2010
  *
  * Authors: Dave Larson <larson1@us.ibm.com>
- *	    Santiago Leon <santil@linux.vnet.ibm.com>
- *	    Brian King <brking@linux.vnet.ibm.com>
- *	    Robert Jennings <rcj@linux.vnet.ibm.com>
+ *	    Santiago Leon <santil@freax.vnet.ibm.com>
+ *	    Brian King <brking@freax.vnet.ibm.com>
+ *	    Robert Jennings <rcj@freax.vnet.ibm.com>
  *	    Anton Blanchard <anton@au.ibm.com>
  */
 

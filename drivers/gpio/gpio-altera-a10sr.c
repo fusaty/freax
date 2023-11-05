@@ -7,11 +7,11 @@
  * Adapted from gpio-tps65910.c
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/mfd/altera-a10sr.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/altera-a10sr.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
 
 /**
  * struct altr_a10sr_gpio - Altera Max5 GPIO device private data structure

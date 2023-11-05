@@ -8,26 +8,26 @@
 #ifndef HABANALABSP_H_
 #define HABANALABSP_H_
 
-#include <linux/habanalabs/cpucp_if.h>
+#include <freax/habanalabs/cpucp_if.h>
 #include "../include/common/qman_if.h"
 #include "../include/hw_ip/mmu/mmu_general.h"
 #include <uapi/drm/habanalabs_accel.h>
 
-#include <linux/cdev.h>
-#include <linux/iopoll.h>
-#include <linux/irqreturn.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/hashtable.h>
-#include <linux/debugfs.h>
-#include <linux/rwsem.h>
-#include <linux/eventfd.h>
-#include <linux/bitfield.h>
-#include <linux/genalloc.h>
-#include <linux/sched/signal.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/coresight.h>
-#include <linux/dma-buf.h>
+#include <freax/cdev.h>
+#include <freax/iopoll.h>
+#include <freax/irqreturn.h>
+#include <freax/dma-direction.h>
+#include <freax/scatterlist.h>
+#include <freax/hashtable.h>
+#include <freax/debugfs.h>
+#include <freax/rwsem.h>
+#include <freax/eventfd.h>
+#include <freax/bitfield.h>
+#include <freax/genalloc.h>
+#include <freax/sched/signal.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/coresight.h>
+#include <freax/dma-buf.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>
@@ -317,18 +317,18 @@ enum hl_pci_match_mode {
  * enum hl_fw_component - F/W components to read version through registers.
  * @FW_COMP_BOOT_FIT: boot fit.
  * @FW_COMP_PREBOOT: preboot.
- * @FW_COMP_LINUX: linux.
+ * @FW_COMP_freax: freax.
  */
 enum hl_fw_component {
 	FW_COMP_BOOT_FIT,
 	FW_COMP_PREBOOT,
-	FW_COMP_LINUX,
+	FW_COMP_freax,
 };
 
 /**
  * enum hl_fw_types - F/W types present in the system
  * @FW_TYPE_NONE: no FW component indication
- * @FW_TYPE_LINUX: Linux image for device CPU
+ * @FW_TYPE_freax: freax image for device CPU
  * @FW_TYPE_BOOT_CPU: Boot image for device CPU
  * @FW_TYPE_PREBOOT_CPU: Indicates pre-loaded CPUs are present in the system
  *                       (preboot, ppboot etc...)
@@ -336,11 +336,11 @@ enum hl_fw_component {
  */
 enum hl_fw_types {
 	FW_TYPE_NONE = 0x0,
-	FW_TYPE_LINUX = 0x1,
+	FW_TYPE_freax = 0x1,
 	FW_TYPE_BOOT_CPU = 0x2,
 	FW_TYPE_PREBOOT_CPU = 0x4,
 	FW_TYPE_ALL_TYPES =
-		(FW_TYPE_LINUX | FW_TYPE_BOOT_CPU | FW_TYPE_PREBOOT_CPU)
+		(FW_TYPE_freax | FW_TYPE_BOOT_CPU | FW_TYPE_PREBOOT_CPU)
 };
 
 /**
@@ -1276,7 +1276,7 @@ struct hl_cs_parser;
 
 /**
  * enum hl_pm_mng_profile - power management profile.
- * @PM_AUTO: internal clock is set by the Linux driver.
+ * @PM_AUTO: internal clock is set by the freax driver.
  * @PM_MANUAL: internal clock is set by the user.
  * @PM_LAST: last power management type.
  */
@@ -1443,7 +1443,7 @@ struct fw_image_props {
  * @static_loader: specific structure for static load
  * @pre_fw_load_props: parameter for pre FW load
  * @boot_fit_img: boot fit image properties
- * @linux_img: linux image properties
+ * @freax_img: freax image properties
  * @cpu_timeout: CPU response timeout in usec
  * @boot_fit_timeout: Boot fit load timeout in usec
  * @skip_bmc: should BMC be skipped
@@ -1459,7 +1459,7 @@ struct fw_load_mgr {
 	};
 	struct pre_fw_load_props pre_fw_load;
 	struct fw_image_props boot_fit_img;
-	struct fw_image_props linux_img;
+	struct fw_image_props freax_img;
 	u32 cpu_timeout;
 	u32 boot_fit_timeout;
 	u8 skip_bmc;
@@ -3335,7 +3335,7 @@ struct hl_reset_info {
  * @device_cpu_is_halted: Flag to indicate whether the device CPU was already
  *                        halted. We can't halt it again because the COMMS
  *                        protocol will throw an error. Relevant only for
- *                        cases where Linux was not loaded to device CPU
+ *                        cases where freax was not loaded to device CPU
  * @supports_wait_for_multi_cs: true if wait for multi CS is supported
  * @is_compute_ctx_active: Whether there is an active compute context executing.
  * @compute_ctx_in_release: true if the current compute context is being released.
@@ -3914,8 +3914,8 @@ int get_used_pll_index(struct hl_device *hdev, u32 input_pll_index,
 int hl_fw_cpucp_pll_info_get(struct hl_device *hdev, u32 pll_index,
 		u16 *pll_freq_arr);
 int hl_fw_cpucp_power_get(struct hl_device *hdev, u64 *power);
-void hl_fw_ask_hard_reset_without_linux(struct hl_device *hdev);
-void hl_fw_ask_halt_machine_without_linux(struct hl_device *hdev);
+void hl_fw_ask_hard_reset_without_freax(struct hl_device *hdev);
+void hl_fw_ask_halt_machine_without_freax(struct hl_device *hdev);
 int hl_fw_init_cpu(struct hl_device *hdev);
 int hl_fw_wait_preboot_ready(struct hl_device *hdev);
 int hl_fw_read_preboot_status(struct hl_device *hdev);

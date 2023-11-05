@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/svcshare.c
+ * freax/fs/lockd/svcshare.c
  *
  * Management of DOS shares.
  *
  * Copyright (C) 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/time.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/time.h>
+#include <freax/unistd.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
-#include <linux/lockd/share.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/lockd/lockd.h>
+#include <freax/lockd/share.h>
 
 static inline int
 nlm_cmp_owner(struct nlm_share *share, struct xdr_netobj *oh)

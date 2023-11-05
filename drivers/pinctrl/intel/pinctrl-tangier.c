@@ -4,28 +4,28 @@
  *
  * Copyright (C) 2016, 2023 Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  *          Raag Jadav <raag.jadav@intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/overflow.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "../core.h"
 #include "pinctrl-intel.h"
@@ -583,7 +583,7 @@ int devm_tng_pinctrl_probe(struct platform_device *pdev)
 }
 EXPORT_SYMBOL_NS_GPL(devm_tng_pinctrl_probe, PINCTRL_TANGIER);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@freax.intel.com>");
 MODULE_AUTHOR("Raag Jadav <raag.jadav@intel.com>");
 MODULE_DESCRIPTION("Intel Tangier pinctrl driver");
 MODULE_LICENSE("GPL");

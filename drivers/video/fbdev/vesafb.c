@@ -9,19 +9,19 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
-#include <linux/io.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/screen_info.h>
+#include <freax/io.h>
 
 #include <video/vga.h>
 

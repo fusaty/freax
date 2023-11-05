@@ -4,9 +4,9 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 struct test_struct {
 	int		num;

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
-#include <linux/if_bridge.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/ipv6.h>
+#include <freax/if_bridge.h>
 #ifdef NETIF_F_HW_VLAN_CTAG_TX
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 #endif
 
 #include "ixgbe.h"

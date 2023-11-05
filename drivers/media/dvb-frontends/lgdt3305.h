@@ -2,13 +2,13 @@
 /*
  *    Support for LG Electronics LGDT3304 and LGDT3305 - VSB/QAM
  *
- *    Copyright (C) 2008, 2009, 2010 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2008, 2009, 2010 Michael Krufky <mkrufky@freaxtv.org>
  */
 
 #ifndef _LGDT3305_H_
 #define _LGDT3305_H_
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <media/dvb_frontend.h>
 
 

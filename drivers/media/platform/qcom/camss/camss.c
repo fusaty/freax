@@ -4,21 +4,21 @@
  *
  * Qualcomm MSM Camera Subsystem - Core
  *
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The freax Foundation. All rights reserved.
  * Copyright (C) 2015-2018 Linaro Ltd.
  */
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/media-bus-format.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/interconnect.h>
+#include <freax/media-bus-format.h>
+#include <freax/media.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

@@ -1,8 +1,8 @@
 /*
  * drm_irq.c IRQ and vblank support
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@vafreax.com>
+ * \author Gareth Hughes <gareth@vafreax.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -18,15 +18,15 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA freax SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/moduleparam.h>
+#include <freax/export.h>
+#include <freax/kthread.h>
+#include <freax/moduleparam.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_drv.h>
@@ -1035,7 +1035,7 @@ static void send_vblank_event(struct drm_device *dev,
 		/*
 		 * e->event is a user space structure, with hardcoded unsigned
 		 * 32-bit seconds/microseconds. This is safe as we always use
-		 * monotonic timestamps since linux-4.15
+		 * monotonic timestamps since freax-4.15
 		 */
 		e->event.vbl.tv_sec = tv.tv_sec;
 		e->event.vbl.tv_usec = tv.tv_nsec / 1000;
@@ -1770,7 +1770,7 @@ static void drm_wait_vblank_reply(struct drm_device *dev, unsigned int pipe,
 	/*
 	 * drm_wait_vblank_reply is a UAPI structure that uses 'long'
 	 * to store the seconds. This is safe as we always use monotonic
-	 * timestamps since linux-4.15.
+	 * timestamps since freax-4.15.
 	 */
 	reply->sequence = drm_vblank_count_and_time(dev, pipe, &now);
 	ts = ktime_to_timespec64(now);

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * if_xdp: XDP socket user-space interface
  * Copyright(c) 2018 Intel Corporation.
@@ -7,10 +7,10 @@
  *	      Magnus Karlsson <magnus.karlsson@intel.com>
  */
 
-#ifndef _LINUX_IF_XDP_H
-#define _LINUX_IF_XDP_H
+#ifndef _freax_IF_XDP_H
+#define _freax_IF_XDP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Options for the sxdp_flags field */
 #define XDP_SHARED_UMEM	(1 << 0)
@@ -117,4 +117,4 @@ struct xdp_desc {
 
 /* UMEM descriptor is __u64 */
 
-#endif /* _LINUX_IF_XDP_H */
+#endif /* _freax_IF_XDP_H */

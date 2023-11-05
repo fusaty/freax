@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/mmc/host.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <freax/mmc/host.h>
+#include <freax/platform_data/mmc-omap.h>
 
 #define OMAP15XX_NR_MMC		1
 #define OMAP16XX_NR_MMC		2

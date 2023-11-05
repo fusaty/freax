@@ -304,7 +304,7 @@ TODO: 完成這一節。
 
 以下的接口層普遍存在於當前的sysfs中:
 
-- 設備 (include/linux/device.h)
+- 設備 (include/freax/device.h)
 ----------------------------------
 結構體:
 
@@ -326,7 +326,7 @@ int device_create_file(struct device *dev, const struct device_attribute * attr)
 void device_remove_file(struct device *dev, const struct device_attribute * attr);
 
 
-- 總線驅動程序 (include/linux/device.h)
+- 總線驅動程序 (include/freax/device.h)
 --------------------------------------
 結構體:
 
@@ -346,7 +346,7 @@ int bus_create_file(struct bus_type *, struct bus_attribute *);
 void bus_remove_file(struct bus_type *, struct bus_attribute *);
 
 
-- 設備驅動程序 (include/linux/device.h)
+- 設備驅動程序 (include/freax/device.h)
 -----------------------------------------
 
 結構體:

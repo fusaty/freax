@@ -3,11 +3,11 @@
  * Copyright 2021, Dario Binacchi <dariobin@libero.it>
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
+#include <freax/can/dev.h>
 
 #include "c_can.h"
 

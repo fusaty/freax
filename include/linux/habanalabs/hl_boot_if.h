@@ -243,7 +243,7 @@ enum cpu_boot_dev_sts {
  *
  * CPU_BOOT_DEV_STS0_SRAM_SCR_EN	SRAM scrambler enabled.
  *					FW initialized SRAM scrambler.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_DRAM_SCR_EN	DRAM scrambler enabled.
  *					FW initialized DRAM scrambler.
@@ -254,10 +254,10 @@ enum cpu_boot_dev_sts {
  *					implemented. This means that FW will
  *					perform hard reset procedure on
  *					receiving the halt-machine event.
- *					Initialized in: preboot, u-boot, linux
+ *					Initialized in: preboot, u-boot, freax
  *
  * CPU_BOOT_DEV_STS0_PLL_INFO_EN	FW retrieval of PLL info is enabled.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_SP_SRAM_EN		SP SRAM is initialized and available
  *					for use.
@@ -269,11 +269,11 @@ enum cpu_boot_dev_sts {
  *
  * CPU_BOOT_DEV_STS0_HBM_ECC_EN		HBM ECC handling Enabled.
  *					FW handles HBM ECC indications.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_PKT_PI_ACK_EN	Packets ack value used in the armcpd
  *					is set to the PI counter.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_FW_LD_COM_EN	Flexible FW loading communication
  *					protocol is enabled.
@@ -286,18 +286,18 @@ enum cpu_boot_dev_sts {
  *
  * CPU_BOOT_DEV_STS0_FW_NIC_MAC_EN	NIC MAC channels init is done by FW and
  *					any access to them is done via the FW.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_DYN_PLL_EN		Dynamic PLL configuration is enabled.
  *					FW sends to host a bitmap of supported
  *					PLLs.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_GIC_PRIVILEGED_EN	GIC access permission only from
  *					previleged entity. FW sets this status
  *					bit for host. If this bit is set then
  *					GIC can not be accessed from host.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_EQ_INDEX_EN	Event Queue (EQ) index is a running
  *					index for each new event sent to host.
@@ -305,31 +305,31 @@ enum cpu_boot_dev_sts {
  *					identify that the waiting event in
  *					queue is actually a new event which
  *					was not served before.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_MULTI_IRQ_POLL_EN	Use multiple scratchpad interfaces to
  *					prevent IRQs overriding each other.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_FW_NIC_STAT_XPCS91_EN
  *					NIC STAT and XPCS91 access is restricted
  *					and is done via FW only.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_FW_NIC_STAT_EXT_EN
  *					NIC STAT get all is supported.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_IS_IDLE_CHECK_EN
  *					F/W checks if the device is idle by reading defined set
  *					of registers. It returns a bitmask of all the engines,
  *					where a bit is set if the engine is not idle.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_MAP_HWMON_EN
  *					If set, means f/w supports proprietary
  *					HWMON enum mapping to cpucp enums.
- *					Initialized in: linux
+ *					Initialized in: freax
  *
  * CPU_BOOT_DEV_STS0_ENABLED		Device status register enabled.
  *					This is a main indication that the

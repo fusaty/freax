@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- *
+/* -*- freax-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  * low-level interface
@@ -9,10 +9,10 @@
 
 /* #define RMH_DEBUG 1 */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
 
 #include "lx6464es.h"
 #include "lx_core.h"

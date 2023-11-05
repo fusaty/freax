@@ -8,11 +8,11 @@
 #ifndef _RC_CORE
 #define _RC_CORE
 
-#include <linux/spinlock.h>
-#include <linux/cdev.h>
-#include <linux/kfifo.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <freax/spinlock.h>
+#include <freax/cdev.h>
+#include <freax/kfifo.h>
+#include <freax/time.h>
+#include <freax/timer.h>
 #include <media/rc-map.h>
 
 /**

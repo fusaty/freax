@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/compat.h>
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/major.h>
+#include <freax/compat.h>
+#include <freax/console.h>
+#include <freax/fb.h>
+#include <freax/fbcon.h>
+#include <freax/major.h>
 
 #include "fb_internal.h"
 

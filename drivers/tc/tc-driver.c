@@ -12,9 +12,9 @@
  *	directory of this archive for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/tc.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/tc.h>
 
 /**
  * tc_register_driver - register a new TC driver

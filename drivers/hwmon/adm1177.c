@@ -5,13 +5,13 @@
  * Copyright 2015-2019 Analog Devices Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
 
 /*  Command Byte Operations */
 #define ADM1177_CMD_V_CONT	BIT(0)

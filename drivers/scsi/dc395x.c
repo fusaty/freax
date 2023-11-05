@@ -46,18 +46,18 @@
  *
  ************************************************************************
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/delay.h>
+#include <freax/ctype.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/list.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

@@ -4,12 +4,12 @@
  * Copyright (C) 2006 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/xfrm.h>
 
 #include "xfrm_hash.h"
 

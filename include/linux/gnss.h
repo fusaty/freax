@@ -5,16 +5,16 @@
  * Copyright (C) 2018 Johan Hovold <johan@kernel.org>
  */
 
-#ifndef _LINUX_GNSS_H
-#define _LINUX_GNSS_H
+#ifndef _freax_GNSS_H
+#define _freax_GNSS_H
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/kfifo.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/kfifo.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 struct gnss_device;
 
@@ -73,4 +73,4 @@ static inline void *gnss_get_drvdata(struct gnss_device *gdev)
 	return dev_get_drvdata(&gdev->dev);
 }
 
-#endif /* _LINUX_GNSS_H */
+#endif /* _freax_GNSS_H */

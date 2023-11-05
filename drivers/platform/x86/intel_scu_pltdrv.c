@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2019, Intel Corporation
  * Authors: Divya Sasidharan <divya.s.sasidharan@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@freax.intel.com>
  *	    Rajmohan Mani <rajmohan.mani@intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <asm/intel_scu_ipc.h>
 
@@ -54,7 +54,7 @@ static struct platform_driver intel_scu_platform_driver = {
 module_platform_driver(intel_scu_platform_driver);
 
 MODULE_AUTHOR("Divya Sasidharan <divya.s.sasidharan@intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com");
 MODULE_AUTHOR("Rajmohan Mani <rajmohan.mani@intel.com>");
 MODULE_DESCRIPTION("Intel SCU platform driver");
 MODULE_LICENSE("GPL v2");

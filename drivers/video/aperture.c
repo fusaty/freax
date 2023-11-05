@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
 
-#include <linux/aperture.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sysfb.h>
-#include <linux/types.h>
-#include <linux/vgaarb.h>
+#include <freax/aperture.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/sysfb.h>
+#include <freax/types.h>
+#include <freax/vgaarb.h>
 
 #include <video/vga.h>
 

@@ -5,17 +5,17 @@
  *		      Md.Jamal Mohiuddin <mjmohiuddin@cdac.in>
  *		      P Sowjanya <sowjanyap@cdac.in>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/property.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/ieee802154.h>
-#include <linux/crc-ccitt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/spi/spi.h>
+#include <freax/property.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/skbuff.h>
+#include <freax/ieee802154.h>
+#include <freax/crc-ccitt.h>
 #include <asm/unaligned.h>
 
 #include <net/mac802154.h>

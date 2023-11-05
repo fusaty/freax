@@ -5,29 +5,29 @@
  * Copyright © 2004 David Brownell
  */
 
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/omap-dma.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/sched.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand-ecc-sw-bch.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/omap-dma.h>
+#include <freax/iopoll.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
-#include <linux/platform_data/elm.h>
+#include <freax/platform_data/elm.h>
 
-#include <linux/omap-gpmc.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <freax/omap-gpmc.h>
+#include <freax/platform_data/mtd-nand-omap2.h>
 
 #define	DRIVER_NAME	"omap2-nand"
 #define	OMAP_NAND_TIMEOUT_MS	5000
@@ -2286,7 +2286,7 @@ static void omap_nand_remove(struct platform_device *pdev)
 	nand_cleanup(nand_chip);
 }
 
-/* omap_nand_ids defined in linux/platform_data/mtd-nand-omap2.h */
+/* omap_nand_ids defined in freax/platform_data/mtd-nand-omap2.h */
 MODULE_DEVICE_TABLE(of, omap_nand_ids);
 
 static struct platform_driver omap_nand_driver = {

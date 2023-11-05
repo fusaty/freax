@@ -27,23 +27,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/jiffies.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ioport.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/jiffies.h>
+#include <freax/firmware.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
@@ -52,7 +52,7 @@
 #include <pcmcia/ss.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*====================================================================*/
 
@@ -1324,7 +1324,7 @@ static void smc_eph_irq(struct net_device *dev)
     card_stats >>= 4;
     /* multiple collisions */
     dev->stats.collisions += card_stats & 0xF;
-#if 0 		/* These are for when linux supports these statistics */
+#if 0 		/* These are for when freax supports these statistics */
     card_stats >>= 4;			/* deferred */
     card_stats >>= 4;			/* excess deferred */
 #endif

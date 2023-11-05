@@ -5,22 +5,22 @@
  * Based on of-dma.c
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
+ *	    Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
-#include <linux/acpi_dma.h>
-#include <linux/property.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/acpi.h>
+#include <freax/acpi_dma.h>
+#include <freax/property.h>
 
 static LIST_HEAD(acpi_dma_list);
 static DEFINE_MUTEX(acpi_dma_lock);
@@ -84,7 +84,7 @@ static int acpi_dma_parse_resource_group(const struct acpi_csrt_group *grp,
 	if (ret < 0)
 		return 0;
 
-	/* Match device by Linux vIRQ */
+	/* Match device by freax vIRQ */
 	if (ret != irq)
 		return 0;
 

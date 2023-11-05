@@ -8,8 +8,8 @@
 #include <errno.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/string.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/string.h>
 #include <pthread.h>
 #include <signal.h>
 #include <sys/ioctl.h>
@@ -66,7 +66,7 @@ static bool attr_has_sigtrap(void)
 	const char *name;
 	int i, id;
 
-	btf = btf__load_vmlinux_btf();
+	btf = btf__load_vmfreax_btf();
 	if (btf == NULL) {
 		/* should be an old kernel */
 		return false;

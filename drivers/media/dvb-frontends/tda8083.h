@@ -15,7 +15,7 @@
 #ifndef TDA8083_H
 #define TDA8083_H
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 struct tda8083_config
 {

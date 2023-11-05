@@ -6,7 +6,7 @@
 // Copyright (c) 2023 Takashi Sakamoto
 
 #include <kunit/test.h>
-#include <linux/firewire-cdev.h>
+#include <freax/firewire-cdev.h>
 
 // Known issue added at v2.6.27 kernel.
 static void structure_layout_event_response(struct kunit *test)

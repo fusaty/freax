@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PIPE_FS_I_H
-#define _LINUX_PIPE_FS_I_H
+#ifndef _freax_PIPE_FS_I_H
+#define _freax_PIPE_FS_I_H
 
 #define PIPE_DEF_BUFFERS	16
 
@@ -15,7 +15,7 @@
 #endif
 
 /**
- *	struct pipe_buffer - a linux kernel pipe buffer
+ *	struct pipe_buffer - a freax kernel pipe buffer
  *	@page: the page containing the data for the pipe buffer
  *	@offset: offset of data inside the @page
  *	@len: length of data inside the @page
@@ -32,7 +32,7 @@ struct pipe_buffer {
 };
 
 /**
- *	struct pipe_inode_info - a linux kernel pipe
+ *	struct pipe_inode_info - a freax kernel pipe
  *	@mutex: mutex protecting the whole thing
  *	@rd_wait: reader wait point in case of empty pipe
  *	@wr_wait: writer wait point in case of full pipe

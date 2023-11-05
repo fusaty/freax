@@ -6,7 +6,7 @@
  * (e.g. a char device).
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@freaxbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  *
  * Updated RFC4106 AES-GCM testing.
@@ -22,18 +22,18 @@
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timex.h>
+#include <freax/err.h>
+#include <freax/fips.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timex.h>
 
 #include "internal.h"
 #include "tcrypt.h"

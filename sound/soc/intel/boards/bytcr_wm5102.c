@@ -9,17 +9,17 @@
  *  Author: Subhransu S. Prusty <subhransu.s.prusty@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -46,18 +46,18 @@
  * provided by the Intel VSEC driver.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/intel_tpmi.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/security.h>
-#include <linux/sizes.h>
-#include <linux/string_helpers.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/bitfield.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/intel_tpmi.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/security.h>
+#include <freax/sizes.h>
+#include <freax/string_helpers.h>
 
 #include "vsec.h"
 
@@ -172,7 +172,7 @@ struct tpmi_feature_state {
 
 /*
  * List of supported TMPI IDs.
- * Some TMPI IDs are not used by Linux, so the numbers are not consecutive.
+ * Some TMPI IDs are not used by freax, so the numbers are not consecutive.
  */
 enum intel_tpmi_id {
 	TPMI_ID_RAPL = 0, /* Running Average Power Limit */

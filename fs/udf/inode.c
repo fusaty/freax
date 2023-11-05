@@ -26,15 +26,15 @@
  */
 
 #include "udfdecl.h"
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/crc-itu-t.h>
-#include <linux/mpage.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
+#include <freax/slab.h>
+#include <freax/crc-itu-t.h>
+#include <freax/mpage.h>
+#include <freax/uio.h>
+#include <freax/bio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"
@@ -1784,7 +1784,7 @@ static int udf_update_inode(struct inode *inode, int do_sync)
 		memset(eid, 0, sizeof(*eid));
 		strcpy(eid->ident, UDF_ID_DEVELOPER);
 		eid->identSuffix[0] = UDF_OS_CLASS_UNIX;
-		eid->identSuffix[1] = UDF_OS_ID_LINUX;
+		eid->identSuffix[1] = UDF_OS_ID_freax;
 		dsea->majorDeviceIdent = cpu_to_le32(imajor(inode));
 		dsea->minorDeviceIdent = cpu_to_le32(iminor(inode));
 	}
@@ -1808,7 +1808,7 @@ static int udf_update_inode(struct inode *inode, int do_sync)
 		memset(&(fe->impIdent), 0, sizeof(struct regid));
 		strcpy(fe->impIdent.ident, UDF_ID_DEVELOPER);
 		fe->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-		fe->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+		fe->impIdent.identSuffix[1] = UDF_OS_ID_freax;
 		fe->uniqueID = cpu_to_le64(iinfo->i_unique);
 		fe->lengthExtendedAttr = cpu_to_le32(iinfo->i_lenEAttr);
 		fe->lengthAllocDescs = cpu_to_le32(iinfo->i_lenAlloc);
@@ -1847,7 +1847,7 @@ static int udf_update_inode(struct inode *inode, int do_sync)
 		memset(&(efe->impIdent), 0, sizeof(efe->impIdent));
 		strcpy(efe->impIdent.ident, UDF_ID_DEVELOPER);
 		efe->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-		efe->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+		efe->impIdent.identSuffix[1] = UDF_OS_ID_freax;
 		efe->uniqueID = cpu_to_le64(iinfo->i_unique);
 		efe->lengthExtendedAttr = cpu_to_le32(iinfo->i_lenEAttr);
 		efe->lengthAllocDescs = cpu_to_le32(iinfo->i_lenAlloc);

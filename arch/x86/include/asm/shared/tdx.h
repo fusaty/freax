@@ -2,8 +2,8 @@
 #ifndef _ASM_X86_SHARED_TDX_H
 #define _ASM_X86_SHARED_TDX_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 #define TDX_HYPERCALL_STANDARD  0
 
@@ -56,7 +56,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler_attributes.h>
+#include <freax/compiler_attributes.h>
 
 /*
  * Used in __tdcall*() to gather the input/output registers' values of the

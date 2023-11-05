@@ -8,8 +8,8 @@
  *
  *  TODO: Userspace stacktrace (CONFIG_USER_STACKTRACE_SUPPORT)
  */
-#include <linux/kernel.h>
-#include <linux/stacktrace.h>
+#include <freax/kernel.h>
+#include <freax/stacktrace.h>
 
 #include <asm/unwind.h>
 

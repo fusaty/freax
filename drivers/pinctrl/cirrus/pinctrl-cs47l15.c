@@ -6,8 +6,8 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/mfd/madera/core.h>
+#include <freax/err.h>
+#include <freax/mfd/madera/core.h>
 
 #include "pinctrl-madera.h"
 

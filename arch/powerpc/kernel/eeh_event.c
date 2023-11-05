@@ -4,13 +4,13 @@
  * Copyright (c) 2005 Linas Vepstas <linas@linas.org>
  */
 
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/sched.h>
+#include <freax/semaphore.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
 #include <asm/eeh_event.h>
 #include <asm/ppc-pci.h>
 

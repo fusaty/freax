@@ -6,10 +6,10 @@
  * 		 2001-2003 by Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <freax/if_arp.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/export.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 

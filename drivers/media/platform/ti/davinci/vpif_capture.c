@@ -7,18 +7,18 @@
  *	  add static buffer allocation
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-ioctl.h>
 #include <media/i2c/tvp514x.h>
 #include <media/v4l2-mediabus.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 #include "vpif.h"
 #include "vpif_capture.h"

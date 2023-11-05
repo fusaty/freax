@@ -4,22 +4,22 @@
  *
  *  Derived from the many other 8390 drivers.
  *
- *  (C) Copyright 2012,  Greg Ungerer <gerg@uclinux.org>
+ *  (C) Copyright 2012,  Greg Ungerer <gerg@ucfreax.org>
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/jiffies.h>
+#include <freax/io.h>
 #include <asm/mcf8390.h>
 
 static const char version[] =
-	"mcf8390.c: (15-06-2012) Greg Ungerer <gerg@uclinux.org>";
+	"mcf8390.c: (15-06-2012) Greg Ungerer <gerg@ucfreax.org>";
 
 #define NE_CMD		0x00
 #define NE_DATAPORT	0x10	/* NatSemi-defined port window offset */
@@ -463,6 +463,6 @@ static struct platform_driver mcf8390_drv = {
 module_platform_driver(mcf8390_drv);
 
 MODULE_DESCRIPTION("MCF8390 ColdFire NS8390 driver");
-MODULE_AUTHOR("Greg Ungerer <gerg@uclinux.org>");
+MODULE_AUTHOR("Greg Ungerer <gerg@ucfreax.org>");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:mcf8390");

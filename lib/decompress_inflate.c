@@ -3,9 +3,9 @@
 #define PREBOOT
 /* Pre-boot environment: included */
 
-/* prevent inclusion of _LINUX_KERNEL_H in pre-boot environment: lots
+/* prevent inclusion of _freax_KERNEL_H in pre-boot environment: lots
  * errors about console_printk etc... on ARM */
-#define _LINUX_KERNEL_H
+#define _freax_KERNEL_H
 
 #include "zlib_inflate/inftrees.c"
 #include "zlib_inflate/inffast.c"
@@ -18,18 +18,18 @@
 #else /* STATIC */
 /* initramfs et al: linked */
 
-#include <linux/zutil.h>
+#include <freax/zutil.h>
 
 #include "zlib_inflate/inftrees.h"
 #include "zlib_inflate/inffast.h"
 #include "zlib_inflate/inflate.h"
 
 #include "zlib_inflate/infutil.h"
-#include <linux/decompress/inflate.h>
+#include <freax/decompress/inflate.h>
 
 #endif /* STATIC */
 
-#include <linux/decompress/mm.h>
+#include <freax/decompress/mm.h>
 
 #define GZIP_IOBUF_SIZE (16*1024)
 

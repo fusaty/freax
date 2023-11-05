@@ -7,16 +7,16 @@
  * Author: Mark Zhan <rongkai.zhan@windriver.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/rtc/m48t59.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
 
 #ifndef NO_IRQ
 #define NO_IRQ	(-1)

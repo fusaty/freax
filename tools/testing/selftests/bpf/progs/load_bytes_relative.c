@@ -5,9 +5,9 @@
  */
 
 #include <errno.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <freax/bpf.h>
+#include <freax/if_ether.h>
+#include <freax/ip.h>
 #include <bpf/bpf_helpers.h>
 
 struct {

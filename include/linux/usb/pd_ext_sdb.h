@@ -5,8 +5,8 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#ifndef __LINUX_USB_PD_EXT_SDB_H
-#define __LINUX_USB_PD_EXT_SDB_H
+#ifndef __freax_USB_PD_EXT_SDB_H
+#define __freax_USB_PD_EXT_SDB_H
 
 /* SDB : Status Data Block */
 enum usb_pd_ext_sdb_fields {
@@ -24,4 +24,4 @@ enum usb_pd_ext_sdb_fields {
 #define USB_PD_EXT_SDB_EVENT_OVP		BIT(3)
 #define USB_PD_EXT_SDB_EVENT_CF_CV_MODE		BIT(4)
 
-#endif /* __LINUX_USB_PD_EXT_SDB_H */
+#endif /* __freax_USB_PD_EXT_SDB_H */

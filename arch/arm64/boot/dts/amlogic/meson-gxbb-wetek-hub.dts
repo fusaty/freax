@@ -53,5 +53,5 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-wetek-hub";
+	freax,rc-map-name = "rc-wetek-hub";
 };

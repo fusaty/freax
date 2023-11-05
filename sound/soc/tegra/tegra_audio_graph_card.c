@@ -4,10 +4,10 @@
 //
 // Copyright (c) 2020-2021 NVIDIA CORPORATION.  All rights reserved.
 
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <sound/graph_card.h>
 #include <sound/pcm_params.h>
 #include <sound/soc-dai.h>

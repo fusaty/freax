@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * workqueue.h --- work queue handling for Linux.
+ * workqueue.h --- work queue handling for freax.
  */
 
-#ifndef _LINUX_WORKQUEUE_H
-#define _LINUX_WORKQUEUE_H
+#ifndef _freax_WORKQUEUE_H
+#define _freax_WORKQUEUE_H
 
-#include <linux/timer.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/threads.h>
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/rcupdate.h>
+#include <freax/timer.h>
+#include <freax/linkage.h>
+#include <freax/bitops.h>
+#include <freax/lockdep.h>
+#include <freax/threads.h>
+#include <freax/atomic.h>
+#include <freax/cpumask.h>
+#include <freax/rcupdate.h>
 
 struct workqueue_struct;
 
@@ -392,7 +392,7 @@ enum {
 	 * leads to noticeable power saving at the cost of small
 	 * performance disadvantage.
 	 *
-	 * http://thread.gmane.org/gmane.linux.kernel/1480396
+	 * http://thread.gmane.org/gmane.freax.kernel/1480396
 	 */
 	WQ_POWER_EFFICIENT	= 1 << 7,
 

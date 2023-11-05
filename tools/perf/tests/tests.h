@@ -73,7 +73,7 @@ struct test_suite {
 	}
 
 /* Tests */
-DECLARE_SUITE(vmlinux_matches_kallsyms);
+DECLARE_SUITE(vmfreax_matches_kallsyms);
 DECLARE_SUITE(openat_syscall_event);
 DECLARE_SUITE(openat_syscall_event_on_all_cpus);
 DECLARE_SUITE(basic_mmap);

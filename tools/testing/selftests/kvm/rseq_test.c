@@ -12,9 +12,9 @@
 #include <sys/ioctl.h>
 #include <sys/sysinfo.h>
 #include <asm/barrier.h>
-#include <linux/atomic.h>
-#include <linux/rseq.h>
-#include <linux/unistd.h>
+#include <freax/atomic.h>
+#include <freax/rseq.h>
+#include <freax/unistd.h>
 
 #include "kvm_util.h"
 #include "processor.h"

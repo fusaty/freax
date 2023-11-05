@@ -3,15 +3,15 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <freax/ptrace.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 /* non-existing BPF helper, to test dead code elimination */
 static int (*bpf_missing_helper)(const void *arg1, int arg2) = (void *) 999;
 
-extern int LINUX_KERNEL_VERSION __kconfig;
-extern int LINUX_UNKNOWN_VIRTUAL_EXTERN __kconfig __weak;
+extern int freax_KERNEL_VERSION __kconfig;
+extern int freax_UNKNOWN_VIRTUAL_EXTERN __kconfig __weak;
 extern bool CONFIG_BPF_SYSCALL __kconfig; /* strong */
 extern enum libbpf_tristate CONFIG_TRISTATE __kconfig __weak;
 extern bool CONFIG_BOOL __kconfig __weak;
@@ -39,8 +39,8 @@ int handle_sys_enter(struct pt_regs *ctx)
 {
 	int i;
 
-	kern_ver = LINUX_KERNEL_VERSION;
-	unkn_virt_val = LINUX_UNKNOWN_VIRTUAL_EXTERN;
+	kern_ver = freax_KERNEL_VERSION;
+	unkn_virt_val = freax_UNKNOWN_VIRTUAL_EXTERN;
 	bpf_syscall = CONFIG_BPF_SYSCALL;
 	tristate_val = CONFIG_TRISTATE;
 	bool_val = CONFIG_BOOL;

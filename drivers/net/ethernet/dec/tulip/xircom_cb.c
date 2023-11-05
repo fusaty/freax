@@ -16,21 +16,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #ifdef CONFIG_NET_POLL_CONTROLLER
 #include <asm/irq.h>

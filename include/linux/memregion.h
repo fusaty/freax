@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _MEMREGION_H_
 #define _MEMREGION_H_
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/range.h>
-#include <linux/bug.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/range.h>
+#include <freax/bug.h>
 
 struct memregion_info {
 	int target_node;

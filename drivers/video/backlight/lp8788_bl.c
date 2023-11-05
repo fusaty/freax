@@ -7,13 +7,13 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/mfd/lp8788.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
 
 /* Register address */
 #define LP8788_BL_CONFIG		0x96

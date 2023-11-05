@@ -3,11 +3,11 @@
  *   Copyright (c) 2006-2008 Daniel Mack, Karsten Wiese
 */
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/usb.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 

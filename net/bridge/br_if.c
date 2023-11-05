@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Userspace interface
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/netpoll.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/netpoll.h>
+#include <freax/ethtool.h>
+#include <freax/if_arp.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_ether.h>
+#include <freax/slab.h>
 #include <net/dsa.h>
 #include <net/sock.h>
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 #include <net/switchdev.h>
 #include <net/net_namespace.h>
 

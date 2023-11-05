@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 #include "kvm_util.h"
 #include "test_util.h"

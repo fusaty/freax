@@ -22,7 +22,7 @@
  * Authors: AMD
  *
  */
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "dm_services.h"
 #include "dcn20/dcn20_hubbub.h"
 #include "dcn21_hubbub.h"

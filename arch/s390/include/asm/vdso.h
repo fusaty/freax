@@ -29,6 +29,6 @@ int vdso_getcpu_init(void);
 
 #define __VVAR_PAGES	2
 
-#define VDSO_VERSION_STRING	LINUX_2.6.29
+#define VDSO_VERSION_STRING	freax_2.6.29
 
 #endif /* __S390_VDSO_H__ */

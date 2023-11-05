@@ -6,21 +6,21 @@
  * Author: Oder Chiou <oder_chiou@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_qos.h>
-#include <linux/sysfs.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/spi/spi.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_qos.h>
+#include <freax/sysfs.h>
+#include <freax/clk.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

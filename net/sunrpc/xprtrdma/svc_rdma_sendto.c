@@ -99,14 +99,14 @@
  * where two different Write segments send portions of the same page.
  */
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <asm/unaligned.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <freax/sunrpc/debug.h>
+#include <freax/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

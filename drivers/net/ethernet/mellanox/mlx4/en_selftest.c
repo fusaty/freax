@@ -31,11 +31,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/mlx4/driver.h>
+#include <freax/kernel.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/mlx4/driver.h>
 
 #include "mlx4_en.h"
 

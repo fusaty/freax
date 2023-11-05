@@ -3,30 +3,30 @@
  * File: drivers/input/keyboard/adp5588_keys.c
  * Description:  keypad driver for ADP5588 and ADP5587
  *		 I2C QWERTY Keypad and IO Expander
- * Bugs: Enter bugs at http://blackfin.uclinux.org/
+ * Bugs: Enter bugs at http://blackfin.ucfreax.org/
  *
  * Copyright (C) 2008-2010 Analog Devices Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/timekeeping.h>
 
 #define DEV_ID 0x00		/* Device ID */
 #define CFG 0x01		/* Configuration Register1 */
@@ -859,5 +859,5 @@ static struct i2c_driver adp5588_driver = {
 module_i2c_driver(adp5588_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.ucfreax.org>");
 MODULE_DESCRIPTION("ADP5588/87 Keypad driver");

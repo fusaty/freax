@@ -7,11 +7,11 @@
 #define pr_fmt(fmt) "%s" fmt, "ipmi:dmi: "
 #define dev_fmt pr_fmt
 
-#include <linux/ipmi.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/ipmi.h>
+#include <freax/init.h>
+#include <freax/dmi.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 #include "ipmi_dmi.h"
 #include "ipmi_plat_data.h"
 

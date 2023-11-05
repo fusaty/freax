@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NET_DEBUG_H
-#define _LINUX_NET_DEBUG_H
+#ifndef _freax_NET_DEBUG_H
+#define _freax_NET_DEBUG_H
 
-#include <linux/bug.h>
-#include <linux/kern_levels.h>
+#include <freax/bug.h>
+#include <freax/kern_levels.h>
 
 struct net_device;
 
@@ -154,4 +154,4 @@ do {								\
 #define DEBUG_NET_WARN_ON_ONCE(cond) BUILD_BUG_ON_INVALID(cond)
 #endif
 
-#endif	/* _LINUX_NET_DEBUG_H */
+#endif	/* _freax_NET_DEBUG_H */

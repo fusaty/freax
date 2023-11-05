@@ -23,23 +23,23 @@
  *    Copyright © 2005-2009 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/concat.h>
-#include <linux/mtd/cfi_endian.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/mtd/concat.h>
+#include <freax/mtd/cfi_endian.h>
+#include <freax/io.h>
+#include <freax/of_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/gpio/consumer.h>
 
 #include "physmap-bt1-rom.h"
 #include "physmap-gemini.h"
@@ -277,7 +277,7 @@ static const char * const *of_get_part_probes(struct platform_device *dev)
 	const char **res;
 	int count;
 
-	count = of_property_count_strings(dp, "linux,part-probe");
+	count = of_property_count_strings(dp, "freax,part-probe");
 	if (count < 0)
 		return of_default_part_probes;
 
@@ -285,7 +285,7 @@ static const char * const *of_get_part_probes(struct platform_device *dev)
 	if (!res)
 		return NULL;
 
-	count = of_property_read_string_array(dp, "linux,part-probe", res,
+	count = of_property_read_string_array(dp, "freax,part-probe", res,
 					      count);
 	if (count < 0)
 		return NULL;
@@ -349,7 +349,7 @@ static int physmap_flash_of_init(struct platform_device *dev)
 	if (!info->part_types)
 		return -ENOMEM;
 
-	of_property_read_string(dp, "linux,mtd-name", &mtd_name);
+	of_property_read_string(dp, "freax,mtd-name", &mtd_name);
 
 	map_indirect = of_property_read_bool(dp, "no-unaligned-direct-access");
 

@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
-#include <linux/nfc.h>
+#include <freax/nfc.h>
 #include <net/nfc/hci.h>
 
 #include "pn544.h"

@@ -10,21 +10,21 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/limits.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/limits.h>
+#include <freax/err.h>
+#include <freax/clk-provider.h>
+#include <freax/cpu_pm.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "soc.h"
 #include "clock.h"

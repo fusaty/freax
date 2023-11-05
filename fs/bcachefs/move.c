@@ -23,8 +23,8 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/ioprio.h>
-#include <linux/kthread.h>
+#include <freax/ioprio.h>
+#include <freax/kthread.h>
 
 static void trace_move_extent2(struct bch_fs *c, struct bkey_s_c k)
 {

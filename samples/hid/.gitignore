@@ -3,6 +3,6 @@ hid_mouse
 hid_surface_dial
 *.out
 *.skel.h
-/vmlinux.h
+/vmfreax.h
 /bpftool/
 /libbpf/

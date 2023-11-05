@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/cpuidle34xx.c
+ * freax/arch/arm/mach-omap2/cpuidle34xx.c
  *
  * OMAP3 CPU IDLE Routines
  *
@@ -19,10 +19,10 @@
  * Based on pm.c for omap2
  */
 
-#include <linux/sched.h>
-#include <linux/cpuidle.h>
-#include <linux/export.h>
-#include <linux/cpu_pm.h>
+#include <freax/sched.h>
+#include <freax/cpuidle.h>
+#include <freax/export.h>
+#include <freax/cpu_pm.h>
 #include <asm/cpuidle.h>
 
 #include "powerdomain.h"

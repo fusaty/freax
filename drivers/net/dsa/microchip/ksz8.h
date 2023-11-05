@@ -8,7 +8,7 @@
 #ifndef __KSZ8XXX_H
 #define __KSZ8XXX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/dsa.h>
 #include "ksz_common.h"
 

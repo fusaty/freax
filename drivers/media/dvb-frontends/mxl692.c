@@ -9,10 +9,10 @@
  * which was released under GPL V2
  */
 
-#include <linux/mutex.h>
-#include <linux/i2c-mux.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
+#include <freax/mutex.h>
+#include <freax/i2c-mux.h>
+#include <freax/string.h>
+#include <freax/firmware.h>
 
 #include "mxl692.h"
 #include "mxl692_defs.h"

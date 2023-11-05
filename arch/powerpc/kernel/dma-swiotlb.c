@@ -5,7 +5,7 @@
  * Copyright (C) 2009-2010 Freescale Semiconductor, Inc.
  * Author: Becky Bruce
  */
-#include <linux/memblock.h>
+#include <freax/memblock.h>
 #include <asm/machdep.h>
 #include <asm/swiotlb.h>
 

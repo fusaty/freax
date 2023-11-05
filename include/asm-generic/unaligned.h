@@ -6,7 +6,7 @@
  * This is the most generic implementation of unaligned accesses
  * and should work almost anywhere.
  */
-#include <linux/unaligned/packed_struct.h>
+#include <freax/unaligned/packed_struct.h>
 #include <asm/byteorder.h>
 
 #define __get_unaligned_t(type, ptr) ({						\

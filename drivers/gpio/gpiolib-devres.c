@@ -6,12 +6,12 @@
  * Copyright (c) 2011 John Crispin <john@phrozen.org>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
 
 #include "gpiolib.h"
 

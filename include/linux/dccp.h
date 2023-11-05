@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DCCP_H
-#define _LINUX_DCCP_H
+#ifndef _freax_DCCP_H
+#define _freax_DCCP_H
 
 
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/uio.h>
-#include <linux/workqueue.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/uio.h>
+#include <freax/workqueue.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_sock.h>
 #include <net/inet_timewait_sock.h>
 #include <net/tcp_states.h>
-#include <uapi/linux/dccp.h>
+#include <uapi/freax/dccp.h>
 
 enum dccp_state {
 	DCCP_OPEN	     = TCP_ESTABLISHED,
@@ -321,4 +321,4 @@ static inline const char *dccp_role(const struct sock *sk)
 
 extern void dccp_syn_ack_timeout(const struct request_sock *req);
 
-#endif /* _LINUX_DCCP_H */
+#endif /* _freax_DCCP_H */

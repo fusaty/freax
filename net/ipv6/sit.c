@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 over IPv4 tunnel device - Simple Internet Transition (SIT)
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -15,22 +15,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmp.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/if_ether.h>
+#include <freax/module.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/icmp.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/init.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/if_ether.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

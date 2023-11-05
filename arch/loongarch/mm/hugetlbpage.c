@@ -3,12 +3,12 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/sysctl.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/pagemap.h>
+#include <freax/err.h>
+#include <freax/sysctl.h>
 #include <asm/mman.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

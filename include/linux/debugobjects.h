@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DEBUGOBJECTS_H
-#define _LINUX_DEBUGOBJECTS_H
+#ifndef _freax_DEBUGOBJECTS_H
+#define _freax_DEBUGOBJECTS_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
 
 enum debug_obj_state {
 	ODEBUG_STATE_NONE,

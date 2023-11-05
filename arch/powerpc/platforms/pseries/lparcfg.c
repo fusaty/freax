@@ -14,16 +14,16 @@
  * keyword - value pairs that specify the configuration of the partition.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
 #include <asm/papr-sysparm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/hugetlb.h>
 #include <asm/lppaca.h>
 #include <asm/hvcall.h>
 #include <asm/firmware.h>

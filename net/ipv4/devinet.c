@@ -22,37 +22,37 @@
  */
 
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/if_addr.h>
-#include <linux/if_ether.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <freax/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/capability.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/in.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/if_addr.h>
+#include <freax/if_ether.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/notifier.h>
+#include <freax/inetdevice.h>
+#include <freax/igmp.h>
+#include <freax/slab.h>
+#include <freax/hash.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
-#include <linux/kmod.h>
-#include <linux/netconf.h>
+#include <freax/kmod.h>
+#include <freax/netconf.h>
 
 #include <net/arp.h>
 #include <net/ip.h>

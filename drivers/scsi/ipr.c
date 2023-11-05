@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * ipr.c -- driver for IBM Power Linux RAID adapters
+ * ipr.c -- driver for IBM Power freax RAID adapters
  *
  * Written By: Brian King <brking@us.ibm.com>, IBM Corporation
  *
@@ -40,27 +40,27 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/hdreg.h>
-#include <linux/reboot.h>
-#include <linux/stringify.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/wait.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/hdreg.h>
+#include <freax/reboot.h>
+#include <freax/stringify.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/processor.h>
@@ -3094,7 +3094,7 @@ static void ipr_get_ioa_dump(struct ipr_ioa_cfg *ioa_cfg, struct ipr_dump *dump)
 	driver_dump->hdr.num_entries = 1;
 	driver_dump->hdr.first_entry_offset = sizeof(struct ipr_dump_header);
 	driver_dump->hdr.status = IPR_DUMP_STATUS_SUCCESS;
-	driver_dump->hdr.os = IPR_DUMP_OS_LINUX;
+	driver_dump->hdr.os = IPR_DUMP_OS_freax;
 	driver_dump->hdr.driver_name = IPR_DUMP_DRIVER_NAME;
 
 	ipr_dump_version_data(ioa_cfg, driver_dump);

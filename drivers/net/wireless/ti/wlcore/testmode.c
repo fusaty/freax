@@ -8,8 +8,8 @@
  */
 #include "testmode.h"
 
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 #include <net/genetlink.h>
 
 #include "wlcore.h"

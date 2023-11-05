@@ -8,11 +8,11 @@
  * Copyright 2003 by Hans-Joerg Frieden and Thomas Frieden
  */
 
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/seq_file.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/seq_file.h>
 #include <generated/utsrelease.h>
 
 #include <asm/machdep.h>
@@ -68,7 +68,7 @@ static int __init amigaone_add_bridge(struct device_node *dev)
 void __init amigaone_setup_arch(void)
 {
 	if (ppc_md.progress)
-		ppc_md.progress("Linux/PPC "UTS_RELEASE"\n", 0);
+		ppc_md.progress("freax/PPC "UTS_RELEASE"\n", 0);
 }
 
 static void __init amigaone_discover_phbs(void)

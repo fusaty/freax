@@ -4,12 +4,12 @@
 /*  IBM System i and System p Virtual NIC Device Driver                   */
 /*  Copyright (C) 2014 IBM Corp.                                          */
 /*  Santiago Leon (santi_leon@yahoo.com)                                  */
-/*  Thomas Falcon (tlfalcon@linux.vnet.ibm.com)                           */
-/*  John Allen (jallen@linux.vnet.ibm.com)                                */
+/*  Thomas Falcon (tlfalcon@freax.vnet.ibm.com)                           */
+/*  John Allen (jallen@freax.vnet.ibm.com)                                */
 /*                                                                        */
 /*                                                                        */
 /* This module contains the implementation of a virtual ethernet device   */
-/* for use with IBM i/p Series LPAR Linux. It utilizes the logical LAN    */
+/* for use with IBM i/p Series LPAR freax. It utilizes the logical LAN    */
 /* option of the RS/6000 Platform Architecture to interface with virtual  */
 /* ethernet NICs that are presented to the partition by the hypervisor.   */
 /*									   */
@@ -32,43 +32,43 @@
 /*                                                                        */
 /**************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/completion.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/ethtool.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kthread.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/completion.h>
+#include <freax/ioport.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/ethtool.h>
+#include <freax/proc_fs.h>
+#include <freax/if_arp.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kthread.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
 #include <net/net_namespace.h>
 #include <asm/hvcall.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/vio.h>
 #include <asm/xive.h>
 #include <asm/iommu.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/firmware.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/utsname.h>
-#include <linux/cpu.h>
+#include <freax/workqueue.h>
+#include <freax/if_vlan.h>
+#include <freax/utsname.h>
+#include <freax/cpu.h>
 
 #include "ibmvnic.h"
 
@@ -4739,7 +4739,7 @@ static int vnic_client_data_len(struct ibmvnic_adapter *adapter)
 	 * OS name, LPAR name, device name, and a null last entry.
 	 */
 	len = 4 * sizeof(struct vnic_login_client_data);
-	len += 6; /* "Linux" plus NULL */
+	len += 6; /* "freax" plus NULL */
 	len += strlen(utsname()->nodename) + 1;
 	len += strlen(adapter->netdev->name) + 1;
 
@@ -4749,7 +4749,7 @@ static int vnic_client_data_len(struct ibmvnic_adapter *adapter)
 static void vnic_add_client_data(struct ibmvnic_adapter *adapter,
 				 struct vnic_login_client_data *vlcd)
 {
-	const char *os_name = "Linux";
+	const char *os_name = "freax";
 	int len;
 
 	/* Type 1 - LPAR OS */

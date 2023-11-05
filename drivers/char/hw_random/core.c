@@ -10,20 +10,20 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/hw_random.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/hw_random.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #define RNG_MODULE_NAME		"hw_random"
 

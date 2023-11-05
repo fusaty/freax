@@ -4,10 +4,10 @@
  * eventually.
  */
 
-#include <linux/migrate.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
+#include <freax/migrate.h>
+#include <freax/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/swap.h>
 #include "internal.h"
 
 struct address_space *page_mapping(struct page *page)

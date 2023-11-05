@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kstrtox.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
+#include <freax/irqchip/arm-gic-v3.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kstrtox.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
 #include <kvm/arm_vgic.h>
 #include <asm/kvm_hyp.h>
 #include <asm/kvm_mmu.h>

@@ -16,20 +16,20 @@
 #define pr_fmt(fmt) "kcsan_test: " fmt
 
 #include <kunit/test.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/seqlock.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/torture.h>
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
+#include <freax/kcsan-checks.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/seqlock.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/torture.h>
+#include <freax/tracepoint.h>
+#include <freax/types.h>
 #include <trace/events/printk.h>
 
 #define KCSAN_TEST_REQUIRES(test, cond) do {			\

@@ -8,18 +8,18 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/errno.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
 
 #include "bnxt_hsi.h"
 #include "bnxt.h"

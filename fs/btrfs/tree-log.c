@@ -3,11 +3,11 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/list_sort.h>
-#include <linux/iversion.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/list_sort.h>
+#include <freax/iversion.h>
 #include "misc.h"
 #include "ctree.h"
 #include "tree-log.h"
@@ -6410,7 +6410,7 @@ static int btrfs_log_inode(struct btrfs_trans_handle *trans,
 	/*
 	 * For symlinks, we must always log their content, which is stored in an
 	 * inline extent, otherwise we could end up with an empty symlink after
-	 * log replay, which is invalid on linux (symlink(2) returns -ENOENT if
+	 * log replay, which is invalid on freax (symlink(2) returns -ENOENT if
 	 * one attempts to create an empty symlink).
 	 * We don't need to worry about flushing delalloc, because when we create
 	 * the inline extent when the symlink is created (we never have delalloc

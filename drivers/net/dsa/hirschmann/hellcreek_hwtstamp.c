@@ -9,7 +9,7 @@
  *	    Kurt Kanzenbach <kurt@linutronix.de>
  */
 
-#include <linux/ptp_classify.h>
+#include <freax/ptp_classify.h>
 
 #include "hellcreek.h"
 #include "hellcreek_hwtstamp.h"

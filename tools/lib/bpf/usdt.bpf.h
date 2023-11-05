@@ -3,7 +3,7 @@
 #ifndef __USDT_BPF_H__
 #define __USDT_BPF_H__
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include "bpf_helpers.h"
 #include "bpf_tracing.h"
 
@@ -74,12 +74,12 @@ struct {
 	__type(value, __u32);
 } __bpf_usdt_ip_to_spec_id SEC(".maps") __weak;
 
-extern const _Bool LINUX_HAS_BPF_COOKIE __kconfig;
+extern const _Bool freax_HAS_BPF_COOKIE __kconfig;
 
 static __always_inline
 int __bpf_usdt_spec_id(struct pt_regs *ctx)
 {
-	if (!LINUX_HAS_BPF_COOKIE) {
+	if (!freax_HAS_BPF_COOKIE) {
 		long ip = PT_REGS_IP(ctx);
 		int *spec_id_ptr;
 

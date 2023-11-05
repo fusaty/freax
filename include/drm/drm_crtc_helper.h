@@ -33,7 +33,7 @@
 #ifndef __DRM_CRTC_HELPER_H__
 #define __DRM_CRTC_HELPER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_atomic_state;
 struct drm_connector;

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SWAB_H
-#define _LINUX_SWAB_H
+#ifndef _freax_SWAB_H
+#define _freax_SWAB_H
 
-#include <uapi/linux/swab.h>
+#include <uapi/freax/swab.h>
 
 # define swab16 __swab16
 # define swab32 __swab32
@@ -45,4 +45,4 @@ static inline void swab64_array(u64 *buf, unsigned int words)
 	}
 }
 
-#endif /* _LINUX_SWAB_H */
+#endif /* _freax_SWAB_H */

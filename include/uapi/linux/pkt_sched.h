@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_PKT_SCHED_H
-#define __LINUX_PKT_SCHED_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_PKT_SCHED_H
+#define __freax_PKT_SCHED_H
 
-#include <linux/const.h>
-#include <linux/types.h>
+#include <freax/const.h>
+#include <freax/types.h>
 
 /* Logical priority bands not depending on specific packet scheduler.
    Every scheduler will map them to real traffic classes, if it has

@@ -173,13 +173,13 @@
 
 		button-1 {
 			label = "BOOT";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&wkup_gpio0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		button-2 {
 			label = "POWER";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&wkup_gpio0 4 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -192,25 +192,25 @@
 		led-0 {
 			gpios = <&main_gpio0 96 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_HEARTBEAT;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-1 {
 			gpios = <&main_gpio0 95 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_DISK_ACTIVITY;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 
 		led-2 {
 			gpios = <&main_gpio0 97 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_CPU;
-			linux,default-trigger = "cpu";
+			freax,default-trigger = "cpu";
 		};
 
 		led-3 {
 			gpios = <&main_gpio0 110 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_DISK_ACTIVITY;
-			linux,default-trigger = "mmc1";
+			freax,default-trigger = "mmc1";
 		};
 
 		led-4 {

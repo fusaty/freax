@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (C) 2009 - 2019 Broadcom */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/printk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/pci-ecam.h>
+#include <freax/printk.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include "../pci.h"
 

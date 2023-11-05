@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for freax.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,7 +32,7 @@
  * SOFTWARE.
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "cxgb4.h"
 #include "t4_regs.h"
 #include "t4_values.h"

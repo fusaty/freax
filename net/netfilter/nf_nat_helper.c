@@ -5,12 +5,12 @@
  * (C) 2003-2006 Netfilter Core Team <coreteam@netfilter.org>
  * (C) 2007-2012 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
 #include <net/tcp.h>
 
 #include <net/netfilter/nf_conntrack.h>

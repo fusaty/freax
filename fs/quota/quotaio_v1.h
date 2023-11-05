@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_QUOTAIO_V1_H
-#define _LINUX_QUOTAIO_V1_H
+#ifndef _freax_QUOTAIO_V1_H
+#define _freax_QUOTAIO_V1_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * The following constants define the amount of time given a user
@@ -33,4 +33,4 @@ struct v1_disk_dqblk {
 
 #define v1_dqoff(UID)      ((loff_t)((UID) * sizeof (struct v1_disk_dqblk)))
 
-#endif	/* _LINUX_QUOTAIO_V1_H */
+#endif	/* _freax_QUOTAIO_V1_H */

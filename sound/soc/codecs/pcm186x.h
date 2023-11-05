@@ -10,8 +10,8 @@
 #ifndef _PCM186X_H_
 #define _PCM186X_H_
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
 
 enum pcm186x_type {
 	PCM1862,

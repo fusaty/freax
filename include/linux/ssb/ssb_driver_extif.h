@@ -16,8 +16,8 @@
  * Copyright 2005, Broadcom Corporation
  * Copyright 2006, Michael Buesch
  */
-#ifndef LINUX_SSB_EXTIFCORE_H_
-#define LINUX_SSB_EXTIFCORE_H_
+#ifndef freax_SSB_EXTIFCORE_H_
+#define freax_SSB_EXTIFCORE_H_
 
 /* external interface address space */
 #define	SSB_EXTIF_PCMCIA_MEMBASE(x)	(x)
@@ -255,4 +255,4 @@ static inline int ssb_extif_serial_init(struct ssb_extif *extif,
 #endif /* CONFIG_SSB_SERIAL */
 
 #endif /* CONFIG_SSB_DRIVER_EXTIF */
-#endif /* LINUX_SSB_EXTIFCORE_H_ */
+#endif /* freax_SSB_EXTIFCORE_H_ */

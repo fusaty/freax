@@ -6,7 +6,7 @@
 #ifndef __INTEL_DISPLAY_RPS_H__
 #define __INTEL_DISPLAY_RPS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dma_fence;
 struct drm_crtc;

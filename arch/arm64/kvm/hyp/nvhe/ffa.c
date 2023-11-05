@@ -26,8 +26,8 @@
  * the duration and are therefore serialised.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/arm_ffa.h>
+#include <freax/arm-smccc.h>
+#include <freax/arm_ffa.h>
 #include <asm/kvm_pkvm.h>
 
 #include <nvhe/ffa.h>

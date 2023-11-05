@@ -189,7 +189,7 @@ examples:
                          <GIC_SPI 157 IRQ_TYPE_LEVEL_HIGH>,
                          <GIC_SPI 156 IRQ_TYPE_LEVEL_HIGH>;
             interrupt-names = "sys", "pmc", "msg", "legacy", "err";
-            linux,pci-domain = <2>;
+            freax,pci-domain = <2>;
             max-link-speed = <2>;
             msi-map = <0x2000 &its 0x2000 0x1000>;
             num-lanes = <2>;

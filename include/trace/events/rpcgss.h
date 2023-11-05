@@ -11,7 +11,7 @@
 #if !defined(_TRACE_RPCGSS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RPCGSS_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #include <trace/misc/sunrpc.h>
 

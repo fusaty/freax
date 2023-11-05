@@ -1,38 +1,38 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc64/kernel/setup.c
+ *  freax/arch/sparc64/kernel/setup.c
  *
  *  Copyright (C) 1995,1996  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 1997       Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/inet.h>
-#include <linux/console.h>
-#include <linux/root_dev.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/start_kernel.h>
-#include <linux/memblock.h>
-#include <uapi/linux/mount.h>
+#include <freax/user.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/syscalls.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/inet.h>
+#include <freax/console.h>
+#include <freax/root_dev.h>
+#include <freax/interrupt.h>
+#include <freax/cpu.h>
+#include <freax/initrd.h>
+#include <freax/module.h>
+#include <freax/start_kernel.h>
+#include <freax/memblock.h>
+#include <uapi/freax/mount.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>

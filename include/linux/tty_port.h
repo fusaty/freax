@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_PORT_H
-#define _LINUX_TTY_PORT_H
+#ifndef _freax_TTY_PORT_H
+#define _freax_TTY_PORT_H
 
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/tty_buffer.h>
-#include <linux/wait.h>
+#include <freax/kfifo.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/tty_buffer.h>
+#include <freax/wait.h>
 
 struct attribute_group;
 struct tty_driver;

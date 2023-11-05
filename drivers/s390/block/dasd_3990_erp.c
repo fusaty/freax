@@ -2,14 +2,14 @@
 /*
  * Author(s)......: Horst  Hummel    <Horst.Hummel@de.ibm.com>
  *		    Holger Smolinski <Holger.Smolinski@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 2000, 2001
  *
  */
 
 #define KMSG_COMPONENT "dasd-eckd"
 
-#include <linux/timer.h>
+#include <freax/timer.h>
 #include <asm/idals.h>
 
 #define PRINTK_HEADER "dasd_erp(3990): "
@@ -1193,7 +1193,7 @@ dasd_3990_erp_data_check(struct dasd_ccw_req * erp, char *sense)
 			    "Data recovered during retry with PCI "
 			    "fetch mode active\n");
 
-		/* not possible to handle this situation in Linux */
+		/* not possible to handle this situation in freax */
 		panic("No way to inform application about the possibly "
 		      "incorrect data");
 
@@ -2185,7 +2185,7 @@ dasd_3990_erp_inspect_32(struct dasd_ccw_req * erp, char *sense)
 				    "Data recovered during retry with PCI "
 				    "fetch mode active\n");
 
-			/* not possible to handle this situation in Linux */
+			/* not possible to handle this situation in freax */
 			panic
 			    ("Invalid data - No way to inform application "
 			     "about the possibly incorrect data");

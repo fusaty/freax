@@ -5,22 +5,22 @@
  *
  * This driver supports the ACCES 104-QUAD-8 and ACCES 104-QUAD-4.
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/counter.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/isa.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/regmap.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 

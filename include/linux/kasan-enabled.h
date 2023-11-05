@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KASAN_ENABLED_H
-#define _LINUX_KASAN_ENABLED_H
+#ifndef _freax_KASAN_ENABLED_H
+#define _freax_KASAN_ENABLED_H
 
-#include <linux/static_key.h>
+#include <freax/static_key.h>
 
 #ifdef CONFIG_KASAN_HW_TAGS
 
@@ -32,4 +32,4 @@ static inline bool kasan_hw_tags_enabled(void)
 
 #endif /* CONFIG_KASAN_HW_TAGS */
 
-#endif /* LINUX_KASAN_ENABLED_H */
+#endif /* freax_KASAN_ENABLED_H */

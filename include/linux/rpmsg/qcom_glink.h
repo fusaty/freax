@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_RPMSG_QCOM_GLINK_H
-#define _LINUX_RPMSG_QCOM_GLINK_H
+#ifndef _freax_RPMSG_QCOM_GLINK_H
+#define _freax_RPMSG_QCOM_GLINK_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 struct qcom_glink_smem;
 

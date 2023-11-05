@@ -6,20 +6,20 @@
  *
  * Authors:
  *   Ananda Ravuri <ananda.ravuri@intel.com>
- *   Matthew Gerlach <matthew.gerlach@linux.intel.com>
+ *   Matthew Gerlach <matthew.gerlach@freax.intel.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/dfl.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/types.h>
 
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
 
 #define DFHv1_PARAM_ID_CLK_FRQ    0x2
 #define DFHv1_PARAM_ID_FIFO_LEN   0x3

@@ -2,7 +2,7 @@
 /*
  * OpenRISC ptrace.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -12,17 +12,17 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/string.h>
 
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/audit.h>
+#include <freax/regset.h>
+#include <freax/elf.h>
 
 #include <asm/thread_info.h>
 #include <asm/page.h>
@@ -117,7 +117,7 @@ static int fpregs_set(struct task_struct *target,
 }
 
 /*
- * Define the register sets available on OpenRISC under Linux
+ * Define the register sets available on OpenRISC under freax
  */
 enum or1k_regset {
 	REGSET_GENERAL,

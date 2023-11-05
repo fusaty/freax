@@ -2,7 +2,7 @@
 
 #include "netlink.h"
 #include "common.h"
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 struct linkstate_req_info {
 	struct ethnl_req_info		base;

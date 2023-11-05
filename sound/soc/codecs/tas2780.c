@@ -3,15 +3,15 @@
 //		Audio amplifier
 // Copyright (C) 2022 Texas Instruments Inc.
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

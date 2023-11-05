@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ICMPV6_H
-#define _LINUX_ICMPV6_H
+#ifndef _freax_ICMPV6_H
+#define _freax_ICMPV6_H
 
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
-#include <uapi/linux/icmpv6.h>
+#include <freax/skbuff.h>
+#include <freax/ipv6.h>
+#include <uapi/freax/icmpv6.h>
 
 static inline struct icmp6hdr *icmp6_hdr(const struct sk_buff *skb)
 {
 	return (struct icmp6hdr *)skb_transport_header(skb);
 }
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
 

@@ -6,15 +6,15 @@
 #ifndef __ASM_LOONGARCH_KVM_HOST_H__
 #define __ASM_LOONGARCH_KVM_HOST_H__
 
-#include <linux/cpumask.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/kvm.h>
-#include <linux/kvm_types.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/types.h>
+#include <freax/cpumask.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
+#include <freax/kvm.h>
+#include <freax/kvm_types.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/threads.h>
+#include <freax/types.h>
 
 #include <asm/inst.h>
 #include <asm/kvm_mmu.h>

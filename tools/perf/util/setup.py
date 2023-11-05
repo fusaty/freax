@@ -105,7 +105,7 @@ perf = Extension('perf',
 
 setup(name='perf',
       version='0.1',
-      description='Interface with the Linux profiling infrastructure',
+      description='Interface with the freax profiling infrastructure',
       author='Arnaldo Carvalho de Melo',
       author_email='acme@redhat.com',
       license='GPLv2',

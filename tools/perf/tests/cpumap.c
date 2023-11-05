@@ -5,7 +5,7 @@
 #include "event.h"
 #include "util/synthetic-events.h"
 #include <string.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include <internal/cpumap.h>
 #include "debug.h"
 

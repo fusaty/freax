@@ -7,21 +7,21 @@
  * Author: Tom Lendacky <thomas.lendacky@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/ccp.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/dma-mapping.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/ccp.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/acpi.h>
 
 #include "ccp-dev.h"
 

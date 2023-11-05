@@ -3,7 +3,7 @@
 #define __ASM_BUG_H
 
 #include <asm/break.h>
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #ifndef CONFIG_DEBUG_BUGVERBOSE
 #define _BUGVERBOSE_LOCATION(file, line)

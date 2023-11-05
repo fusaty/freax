@@ -6,7 +6,7 @@
  *
  * This code can only be used to if you are running in the secure world.
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/hardware/cache-l2x0.h>
 

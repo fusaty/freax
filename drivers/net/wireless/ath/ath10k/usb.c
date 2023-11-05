@@ -5,8 +5,8 @@
  * Copyright (c) 2016-2017 Erik Stromdahl <erik.stromdahl@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 
 #include "debug.h"
 #include "core.h"

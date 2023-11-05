@@ -7,7 +7,7 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008	 Thiemo Seufer
  * Copyright (C) 2005, 2007, 2008, 2009	 Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2008, 2009 Cavium Networks, Inc.
  * Copyright (C) 2011  MIPS Technologies, Inc.
  *
@@ -21,14 +21,14 @@
  * (Condolences to Napoleon XIV)
  */
 
-#include <linux/bug.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/cache.h>
-#include <linux/pgtable.h>
+#include <freax/bug.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/smp.h>
+#include <freax/string.h>
+#include <freax/cache.h>
+#include <freax/pgtable.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpu-type.h>

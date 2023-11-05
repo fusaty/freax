@@ -5,12 +5,12 @@
  * Copyright (C) 2022 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/bits.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/tps65219.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/tps65219.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define TPS65219_GPIO0_DIR_MASK		BIT(3)
 #define TPS65219_GPIO0_OFFSET		2
@@ -89,7 +89,7 @@ static int tps65219_gpio_change_direction(struct gpio_chip *gc, unsigned int off
 	struct device *dev = gpio->tps->dev;
 
 	/*
-	 * Documentation is stating that GPIO0 direction must not be changed in Linux:
+	 * Documentation is stating that GPIO0 direction must not be changed in freax:
 	 * Table 8-34. MFP_1_CONFIG(3): MULTI_DEVICE_ENABLE, should only be changed in INITIALIZE
 	 * state (prior to ON Request).
 	 * Set statically by NVM, changing direction in application can cause a hang.

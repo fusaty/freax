@@ -6,7 +6,7 @@
 #ifndef SELFTEST_LIBRAPL_H
 #define SELFTEST_LIBRAPL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 

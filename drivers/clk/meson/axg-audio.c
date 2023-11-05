@@ -4,16 +4,16 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
 
 #include "meson-clkc-utils.h"
 #include "axg-audio.h"

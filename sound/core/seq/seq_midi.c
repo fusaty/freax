@@ -12,12 +12,12 @@ Possible options for midisynth module:
 */
 
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/seq_kernel.h>
@@ -26,7 +26,7 @@ Possible options for midisynth module:
 #include <sound/initval.h>
 
 MODULE_AUTHOR("Frank van de Pol <fvdpol@coil.demon.nl>, Jaroslav Kysela <perex@perex.cz>");
-MODULE_DESCRIPTION("Advanced Linux Sound Architecture sequencer MIDI synth.");
+MODULE_DESCRIPTION("Advanced freax Sound Architecture sequencer MIDI synth.");
 MODULE_LICENSE("GPL");
 static int output_buffer_size = PAGE_SIZE;
 module_param(output_buffer_size, int, 0644);

@@ -3,16 +3,16 @@
  * Copyright IBM Corp. 2005, 2011
  *
  * Author(s): Rolf Adelsberger,
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/debug_locks.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/kexec.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/ftrace.h>
+#include <freax/debug_locks.h>
 #include <asm/pfault.h>
 #include <asm/cio.h>
 #include <asm/setup.h>

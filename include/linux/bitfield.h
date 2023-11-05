@@ -4,10 +4,10 @@
  * Copyright (C) 2004 - 2009 Ivo van Doorn <IvDoorn@gmail.com>
  */
 
-#ifndef _LINUX_BITFIELD_H
-#define _LINUX_BITFIELD_H
+#ifndef _freax_BITFIELD_H
+#define _freax_BITFIELD_H
 
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 #include <asm/byteorder.h>
 
 /*
@@ -19,8 +19,8 @@
  *
  * Example:
  *
- *  #include <linux/bitfield.h>
- *  #include <linux/bits.h>
+ *  #include <freax/bitfield.h>
+ *  #include <freax/bits.h>
  *
  *  #define REG_FIELD_A  GENMASK(6, 0)
  *  #define REG_FIELD_B  BIT(7)

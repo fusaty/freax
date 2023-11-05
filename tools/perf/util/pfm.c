@@ -16,7 +16,7 @@
 #include "util/thread_map.h"
 
 #include <string.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <perfmon/pfmlib_perf_event.h>
 
 static void libpfm_initialize(void)

@@ -6,8 +6,8 @@
 #ifndef __SOC_RASPBERRY_FIRMWARE_H__
 #define __SOC_RASPBERRY_FIRMWARE_H__
 
-#include <linux/types.h>
-#include <linux/of_device.h>
+#include <freax/types.h>
+#include <freax/of_device.h>
 
 struct rpi_firmware;
 

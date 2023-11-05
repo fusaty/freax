@@ -8,13 +8,13 @@
  * TS-7300, heavily based on load_fpga.c in their vendor tree.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/iopoll.h>
-#include <linux/fpga/fpga-mgr.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/iopoll.h>
+#include <freax/fpga/fpga-mgr.h>
 
 #define TS73XX_FPGA_DATA_REG		0
 #define TS73XX_FPGA_CONFIG_REG		1

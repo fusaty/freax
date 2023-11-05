@@ -14,7 +14,7 @@ targets: include $(TARGETS)
 main: $(OFILES)
 
 clean:
-	$(RM) $(TARGETS) $(OFILES) scatterlist.c linux/scatterlist.h linux/highmem.h linux/kmemleak.h linux/slab.h asm/io.h
+	$(RM) $(TARGETS) $(OFILES) scatterlist.c freax/scatterlist.h freax/highmem.h freax/kmemleak.h freax/slab.h asm/io.h
 	@rmdir asm
 
 scatterlist.c: ../../../lib/scatterlist.c
@@ -22,11 +22,11 @@ scatterlist.c: ../../../lib/scatterlist.c
 
 .PHONY: include
 
-include: ../../../include/linux/scatterlist.h
-	@mkdir -p linux
+include: ../../../include/freax/scatterlist.h
+	@mkdir -p freax
 	@mkdir -p asm
 	@touch asm/io.h
-	@touch linux/highmem.h
-	@touch linux/kmemleak.h
-	@touch linux/slab.h
-	@cp $< linux/scatterlist.h
+	@touch freax/highmem.h
+	@touch freax/kmemleak.h
+	@touch freax/slab.h
+	@cp $< freax/scatterlist.h

@@ -7,10 +7,10 @@
  * Copyright (C) 2022 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include "rate.h"
 #include "ieee80211_i.h"
 #include "debugfs.h"

@@ -5,7 +5,7 @@
 #ifndef __HID_BPF_HELPERS_H
 #define __HID_BPF_HELPERS_H
 
-/* "undefine" structs and enums in vmlinux.h, because we "override" them below */
+/* "undefine" structs and enums in vmfreax.h, because we "override" them below */
 #define hid_bpf_ctx hid_bpf_ctx___not_used
 #define hid_report_type hid_report_type___not_used
 #define hid_class_request hid_class_request___not_used
@@ -24,7 +24,7 @@
 #define HID_BPF_FLAG_INSERT_HEAD HID_BPF_FLAG_INSERT_HEAD___not_used
 #define HID_BPF_FLAG_MAX         HID_BPF_FLAG_MAX___not_used
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 
 #undef hid_bpf_ctx
 #undef hid_report_type
@@ -46,7 +46,7 @@
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
-#include <linux/const.h>
+#include <freax/const.h>
 
 enum hid_report_type {
 	HID_INPUT_REPORT		= 0,

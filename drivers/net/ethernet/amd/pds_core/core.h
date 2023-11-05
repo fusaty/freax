@@ -4,13 +4,13 @@
 #ifndef _PDSC_H_
 #define _PDSC_H_
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 #include <net/devlink.h>
 
-#include <linux/pds/pds_common.h>
-#include <linux/pds/pds_core_if.h>
-#include <linux/pds/pds_adminq.h>
-#include <linux/pds/pds_intr.h>
+#include <freax/pds/pds_common.h>
+#include <freax/pds/pds_core_if.h>
+#include <freax/pds/pds_adminq.h>
+#include <freax/pds/pds_intr.h>
 
 #define PDSC_DRV_DESCRIPTION	"AMD/Pensando Core Driver"
 

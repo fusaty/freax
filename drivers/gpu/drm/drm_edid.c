@@ -28,15 +28,15 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/bitfield.h>
-#include <linux/cec.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vga_switcheroo.h>
+#include <freax/bitfield.h>
+#include <freax/cec.h>
+#include <freax/hdmi.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/vga_switcheroo.h>
 
 #include <drm/drm_displayid.h>
 #include <drm/drm_drv.h>

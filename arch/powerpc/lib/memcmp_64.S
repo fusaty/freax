@@ -3,7 +3,7 @@
  * Author: Anton Blanchard <anton@au.ibm.com>
  * Copyright 2015 IBM Corporation.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/ppc_asm.h>
 #include <asm/ppc-opcode.h>
 

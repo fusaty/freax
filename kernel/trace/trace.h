@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#ifndef _LINUX_KERNEL_TRACE_H
-#define _LINUX_KERNEL_TRACE_H
+#ifndef _freax_KERNEL_TRACE_H
+#define _freax_KERNEL_TRACE_H
 
-#include <linux/fs.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/clocksource.h>
-#include <linux/ring_buffer.h>
-#include <linux/mmiotrace.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/trace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/trace_seq.h>
-#include <linux/trace_events.h>
-#include <linux/compiler.h>
-#include <linux/glob.h>
-#include <linux/irq_work.h>
-#include <linux/workqueue.h>
-#include <linux/ctype.h>
-#include <linux/once_lite.h>
+#include <freax/fs.h>
+#include <freax/atomic.h>
+#include <freax/sched.h>
+#include <freax/clocksource.h>
+#include <freax/ring_buffer.h>
+#include <freax/mmiotrace.h>
+#include <freax/tracepoint.h>
+#include <freax/ftrace.h>
+#include <freax/trace.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/trace_seq.h>
+#include <freax/trace_events.h>
+#include <freax/compiler.h>
+#include <freax/glob.h>
+#include <freax/irq_work.h>
+#include <freax/workqueue.h>
+#include <freax/ctype.h>
+#include <freax/once_lite.h>
 
 #include "pid_list.h"
 
@@ -1762,7 +1762,7 @@ struct event_trigger_ops {
  *	commands need to do this if they themselves log to the trace
  *	buffer (see the @post_trigger() member below).  @trigger_type
  *	values are defined by adding new values to the trigger_type
- *	enum in include/linux/trace_events.h.
+ *	enum in include/freax/trace_events.h.
  *
  * @flags: See the enum event_command_flags below.
  *
@@ -2064,4 +2064,4 @@ static inline int rv_init_interface(void)
 }
 #endif
 
-#endif /* _LINUX_KERNEL_TRACE_H */
+#endif /* _freax_KERNEL_TRACE_H */

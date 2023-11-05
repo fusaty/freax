@@ -2,12 +2,12 @@
 /*
  * ip22-berr.c: Bus error handling.
  *
- * Copyright (C) 2002, 2003 Ladislav Michl (ladis@linux-mips.org)
+ * Copyright (C) 2002, 2003 Ladislav Michl (ladis@freax-mips.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
 
 #include <asm/addrspace.h>
 #include <asm/traps.h>

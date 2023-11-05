@@ -7,8 +7,8 @@
 #define _OBJTOOL_H
 
 #include <stdbool.h>
-#include <linux/list.h>
-#include <linux/hashtable.h>
+#include <freax/list.h>
+#include <freax/hashtable.h>
 
 #include <objtool/elf.h>
 

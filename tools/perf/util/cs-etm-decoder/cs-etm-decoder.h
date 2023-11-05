@@ -10,7 +10,7 @@
 #ifndef INCLUDE__CS_ETM_DECODER_H__
 #define INCLUDE__CS_ETM_DECODER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <opencsd/ocsd_if_types.h>
 #include <stdio.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_mcpcia.c
+ *	freax/arch/alpha/kernel/core_mcpcia.c
  *
  * Based on code written by David A Rusling (david.rusling@reo.mts.dec.com).
  *
@@ -12,11 +12,11 @@
 #include <asm/core_mcpcia.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/delay.h>
 
 #include <asm/ptrace.h>
 

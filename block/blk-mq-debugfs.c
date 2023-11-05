@@ -3,9 +3,9 @@
  * Copyright (C) 2017 Facebook
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/debugfs.h>
 
 #include "blk.h"
 #include "blk-mq.h"

@@ -15,10 +15,10 @@
 
 #define dev_fmt(fmt) "pciehp: " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pm_runtime.h>
+#include <freax/pci.h>
 #include "pciehp.h"
 
 /* The following routines constitute the bulk of the

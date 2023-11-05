@@ -20,15 +20,15 @@
  * See also Documentation/block/ioprio.rst
  *
  */
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/ioprio.h>
-#include <linux/cred.h>
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/ioprio.h>
+#include <freax/cred.h>
+#include <freax/blkdev.h>
+#include <freax/capability.h>
+#include <freax/syscalls.h>
+#include <freax/security.h>
+#include <freax/pid_namespace.h>
 
 int ioprio_check_cap(int ioprio)
 {
@@ -40,7 +40,7 @@ int ioprio_check_cap(int ioprio)
 			/*
 			 * Originally this only checked for CAP_SYS_ADMIN,
 			 * which was implicitly allowed for pid 0 by security
-			 * modules such as SELinux. Make sure we check
+			 * modules such as SEfreax. Make sure we check
 			 * CAP_SYS_ADMIN first to avoid a denial/avc for
 			 * possibly missing CAP_SYS_NICE permission.
 			 */

@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2015 Niklas Söderlund
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "sh_pfc.h"
 

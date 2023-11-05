@@ -12,7 +12,7 @@ implemented at the hardware. Otherwise, the Kernel provides a software
 emulation.
 
 It can be accessed through ``/dev/adapter?/demux?``. Data types and
-ioctl definitions can be accessed by including ``linux/dvb/dmx.h`` in
+ioctl definitions can be accessed by including ``freax/dvb/dmx.h`` in
 your application.
 
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/clk/at91_pmc.h
+ * include/freax/clk/at91_pmc.h
  *
  * Copyright (C) 2005 Ivan Kokshaysky
  * Copyright (C) SAN People
@@ -12,7 +12,7 @@
 #ifndef AT91_PMC_H
 #define AT91_PMC_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define AT91_PMC_V1		(1)			/* PMC version 1 */
 #define AT91_PMC_V2		(2)			/* PMC version 2 [SAM9X60] */

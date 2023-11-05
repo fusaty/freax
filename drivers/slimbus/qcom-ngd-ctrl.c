@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The freax Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/slimbus.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/soc/qcom/qmi.h>
-#include <linux/soc/qcom/pdr.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/slimbus.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/remoteproc/qcom_rproc.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/soc/qcom/qmi.h>
+#include <freax/soc/qcom/pdr.h>
 #include <net/sock.h>
 #include "slimbus.h"
 

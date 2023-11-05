@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/log2.h>
+#include <freax/mm.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
 #include "fun_dev.h"
 #include "fun_queue.h"

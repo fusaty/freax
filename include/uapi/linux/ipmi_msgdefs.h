@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * ipmi_smi.h
  *
@@ -12,8 +12,8 @@
  *
  */
 
-#ifndef __LINUX_IPMI_MSGDEFS_H
-#define __LINUX_IPMI_MSGDEFS_H
+#ifndef __freax_IPMI_MSGDEFS_H
+#define __freax_IPMI_MSGDEFS_H
 
 /* Various definitions for IPMI messages used by almost everything in
    the IPMI stack. */
@@ -101,4 +101,4 @@
 #define IPMI_CHANNEL_MEDIUM_OEM_MIN	0x60
 #define IPMI_CHANNEL_MEDIUM_OEM_MAX	0x7f
 
-#endif /* __LINUX_IPMI_MSGDEFS_H */
+#endif /* __freax_IPMI_MSGDEFS_H */

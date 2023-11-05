@@ -3,14 +3,14 @@
  * Intel Lewisburg pinctrl/GPIO driver
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-intel.h"
 
@@ -319,7 +319,7 @@ static struct platform_driver lbg_pinctrl_driver = {
 };
 module_platform_driver(lbg_pinctrl_driver);
 
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_DESCRIPTION("Intel Lewisburg pinctrl/GPIO driver");
 MODULE_LICENSE("GPL v2");
 MODULE_IMPORT_NS(PINCTRL_INTEL);

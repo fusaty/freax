@@ -8,7 +8,7 @@
 #ifndef CDX_BITFIELD_H
 #define CDX_BITFIELD_H
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 /* Lowest bit numbers and widths */
 #define CDX_DWORD_LBN 0

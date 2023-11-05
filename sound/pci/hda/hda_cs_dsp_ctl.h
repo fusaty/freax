@@ -11,7 +11,7 @@
 #define __HDA_CS_DSP_CTL_H__
 
 #include <sound/soc.h>
-#include <linux/firmware/cirrus/cs_dsp.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
 
 enum hda_cs_dsp_fw_id {
 	HDA_CS_DSP_FW_SPK_PROT,

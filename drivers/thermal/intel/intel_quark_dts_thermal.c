@@ -57,10 +57,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/thermal.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/thermal.h>
 #include <asm/cpu_device_id.h>
 #include <asm/iosf_mbi.h>
 

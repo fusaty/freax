@@ -2,16 +2,16 @@
 /* (C) 1999-2001 Michal Ludvig <michal@logix.cz>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 
-#include <linux/netfilter/xt_pkttype.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/xt_pkttype.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Michal Ludvig <michal@logix.cz>");

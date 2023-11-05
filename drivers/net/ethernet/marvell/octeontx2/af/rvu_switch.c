@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 #include "rvu.h"
 
 static void rvu_switch_enable_lbk_link(struct rvu *rvu, u16 pcifunc, bool enable)

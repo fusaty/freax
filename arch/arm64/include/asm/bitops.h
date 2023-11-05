@@ -5,10 +5,10 @@
 #ifndef __ASM_BITOPS_H
 #define __ASM_BITOPS_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/builtin-__ffs.h>

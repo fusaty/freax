@@ -4,13 +4,13 @@
  *
  * Copyright IBM Corporation, 2008
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *		Documentation/RCU
  */
-#ifndef __LINUX_TINY_H
-#define __LINUX_TINY_H
+#ifndef __freax_TINY_H
+#define __freax_TINY_H
 
 #include <asm/param.h> /* for HZ */
 
@@ -92,7 +92,7 @@ static inline void synchronize_rcu_expedited(void)
 
 /*
  * Add one more declaration of kvfree() here. It is
- * not so straight forward to just include <linux/mm.h>
+ * not so straight forward to just include <freax/mm.h>
  * where it is defined due to getting many compile
  * errors caused by that include.
  */
@@ -173,4 +173,4 @@ static inline void rcu_all_qs(void) { barrier(); }
 #define rcutree_dying_cpu        NULL
 static inline void rcutree_report_cpu_starting(unsigned int cpu) { }
 
-#endif /* __LINUX_RCUTINY_H */
+#endif /* __freax_RCUTINY_H */

@@ -10,15 +10,15 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/string.h>
+#include <freax/of_irq.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <asm/irq.h>
 #include <asm/machdep.h>

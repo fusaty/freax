@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/udp.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/socket.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/icmp.h>
+#include <freax/udp.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 #include <net/genetlink.h>
 #include <net/gro.h>
 #include <net/gue.h>
@@ -16,8 +16,8 @@
 #include <net/protocol.h>
 #include <net/udp.h>
 #include <net/udp_tunnel.h>
-#include <uapi/linux/fou.h>
-#include <uapi/linux/genetlink.h>
+#include <uapi/freax/fou.h>
+#include <uapi/freax/genetlink.h>
 
 #include "fou_nl.h"
 

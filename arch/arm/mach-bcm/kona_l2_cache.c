@@ -2,8 +2,8 @@
 // Copyright (C) 2012-2014 Broadcom Corporation
 
 
-#include <linux/init.h>
-#include <linux/printk.h>
+#include <freax/init.h>
+#include <freax/printk.h>
 #include <asm/hardware/cache-l2x0.h>
 
 #include "bcm_kona_smc.h"

@@ -10,12 +10,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/videodev2.h>
-#include <linux/kdev_t.h>
-#include <linux/refcount.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/videodev2.h>
+#include <freax/kdev_t.h>
+#include <freax/refcount.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>
@@ -30,7 +30,7 @@
 #include "cx88-reg.h"
 #include "xc2028.h"
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #define CX88_VERSION "1.0.0"
 

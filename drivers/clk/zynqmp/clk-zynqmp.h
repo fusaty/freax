@@ -3,12 +3,12 @@
  *  Copyright (C) 2016-2018 Xilinx
  */
 
-#ifndef __LINUX_CLK_ZYNQMP_H_
-#define __LINUX_CLK_ZYNQMP_H_
+#ifndef __freax_CLK_ZYNQMP_H_
+#define __freax_CLK_ZYNQMP_H_
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <freax/firmware/xlnx-zynqmp.h>
 
 /* Common Flags */
 /* must be gated across rate change */

@@ -6,8 +6,8 @@
 #ifndef __MP2629_H__
 #define __MP2629_H__
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 struct mp2629_data {
 	struct device *dev;

@@ -5,11 +5,11 @@
  * Copyright (C) 2018 Stanislaw Gruszka <stf_xl@wp.pl>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/etherdevice.h>
 #include <asm/unaligned.h>
 #include "mt76x0.h"
 #include "eeprom.h"

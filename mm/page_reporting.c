@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/page_reporting.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/scatterlist.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/page_reporting.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/scatterlist.h>
 
 #include "page_reporting.h"
 #include "internal.h"

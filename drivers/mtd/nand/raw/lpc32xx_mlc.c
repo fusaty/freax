@@ -13,24 +13,24 @@
  * - Tested Page Sizes: 2048, 4096
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mtd/lpc32xx_mlc.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mtd/lpc32xx_mlc.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
 
 #define DRV_NAME "lpc32xx_mlc"
 

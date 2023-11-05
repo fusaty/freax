@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/idr.h>
-#include <linux/thermal.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/suspend.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/kdev_t.h>
+#include <freax/idr.h>
+#include <freax/thermal.h>
+#include <freax/reboot.h>
+#include <freax/string.h>
+#include <freax/of.h>
+#include <freax/suspend.h>
 
 #define CREATE_TRACE_POINTS
 #include "thermal_trace.h"

@@ -7,21 +7,21 @@
  * Copied and modified from arch/i386/kernel/time.c
  *
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/kernel_stat.h>
+#include <freax/mc146818rtc.h>
+#include <freax/init.h>
+#include <freax/bcd.h>
+#include <freax/ioport.h>
+#include <freax/of_address.h>
 
 #include <asm/io.h>
 #include <asm/nvram.h>

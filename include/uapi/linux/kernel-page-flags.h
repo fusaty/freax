@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPILINUX_KERNEL_PAGE_FLAGS_H
-#define _UAPILINUX_KERNEL_PAGE_FLAGS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPIfreax_KERNEL_PAGE_FLAGS_H
+#define _UAPIfreax_KERNEL_PAGE_FLAGS_H
 
 /*
  * Stable page flag bits exported to user space
@@ -37,4 +37,4 @@
 #define KPF_IDLE		25
 #define KPF_PGTABLE		26
 
-#endif /* _UAPILINUX_KERNEL_PAGE_FLAGS_H */
+#endif /* _UAPIfreax_KERNEL_PAGE_FLAGS_H */

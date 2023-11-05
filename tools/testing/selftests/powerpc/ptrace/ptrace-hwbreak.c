@@ -21,7 +21,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/syscall.h>
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include "ptrace.h"
 #include "reg.h"
 

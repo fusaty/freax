@@ -4,20 +4,20 @@
  * Copyright (c) 2008 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/idr.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
-#include <linux/iio/trigger.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/iio-opaque.h>
+#include <freax/iio/trigger.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/trigger_consumer.h>
 
 /* RFC - Question of approach
  * Make the common case (single sensor single trigger)

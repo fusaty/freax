@@ -8,14 +8,14 @@
  * MPC512x Shared code
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/fsl-diu-fb.h>
-#include <linux/memblock.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/fsl-diu-fb.h>
+#include <freax/memblock.h>
 #include <sysdev/fsl_soc.h>
 
 #include <asm/cacheflush.h>

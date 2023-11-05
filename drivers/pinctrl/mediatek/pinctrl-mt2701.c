@@ -5,11 +5,11 @@
  */
 
 #include <dt-bindings/pinctrl/mt65xx.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/regmap.h>
 
 #include "pinctrl-mtk-common.h"
 #include "pinctrl-mtk-mt2701.h"

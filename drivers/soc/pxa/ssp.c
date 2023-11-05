@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/ssp.c
+ *  freax/arch/arm/mach-pxa/ssp.c
  *
- *  based on linux/arch/arm/mach-sa1100/ssp.c by Russell King
+ *  based on freax/arch/arm/mach-sa1100/ssp.c by Russell King
  *
  *  Copyright (C) 2003 Russell King.
  *  Copyright (C) 2003 Wolfson Microelectronics PLC
@@ -13,22 +13,22 @@
  *  Author: Liam Girdwood <liam.girdwood@wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/spi/pxa2xx_spi.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
 
 #include <asm/irq.h>
 

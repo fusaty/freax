@@ -4,17 +4,17 @@
  * Copyright 2021 Pengutronix, Lucas Stach <kernel@pengutronix.de>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/interconnect.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/clk.h>
 
 #include <dt-bindings/power/imx8mm-power.h>
 #include <dt-bindings/power/imx8mn-power.h>

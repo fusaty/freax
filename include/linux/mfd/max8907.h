@@ -6,11 +6,11 @@
  * Copyright (C) 2012, NVIDIA CORPORATION. All rights reserved.
  */
 
-#ifndef __LINUX_MFD_MAX8907_H
-#define __LINUX_MFD_MAX8907_H
+#ifndef __freax_MFD_MAX8907_H
+#define __freax_MFD_MAX8907_H
 
-#include <linux/mutex.h>
-#include <linux/pm.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
 
 #define MAX8907_GEN_I2C_ADDR		(0x78 >> 1)
 #define MAX8907_ADC_I2C_ADDR		(0x8e >> 1)

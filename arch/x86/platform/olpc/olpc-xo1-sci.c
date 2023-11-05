@@ -7,18 +7,18 @@
  * Copyright (C) 2006 Advanced Micro Devices, Inc.
  */
 
-#include <linux/cs5535.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeup.h>
-#include <linux/power_supply.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/olpc-ec.h>
+#include <freax/cs5535.h>
+#include <freax/device.h>
+#include <freax/gpio.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_wakeup.h>
+#include <freax/power_supply.h>
+#include <freax/suspend.h>
+#include <freax/workqueue.h>
+#include <freax/olpc-ec.h>
 
 #include <asm/io.h>
 #include <asm/msr.h>

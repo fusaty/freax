@@ -6,23 +6,23 @@
  */
 
 /*
- * This file contains the core HCD code, and implements the Linux hc_driver
+ * This file contains the core HCD code, and implements the freax hc_driver
  * API
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
-#include <linux/usb/of.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/ch11.h>
+#include <freax/usb/of.h>
 
 #include "core.h"
 #include "hcd.h"
@@ -4231,7 +4231,7 @@ static void dwc2_hcd_phy_reset_func(struct work_struct *work)
 
 /*
  * =========================================================================
- *  Linux HC Driver Functions
+ *  freax HC Driver Functions
  * =========================================================================
  */
 

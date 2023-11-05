@@ -10,18 +10,18 @@
  *          Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/hwspinlock.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/hwspinlock.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "hwspinlock_internal.h"
 

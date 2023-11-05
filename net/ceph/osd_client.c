@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/highmem.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #ifdef CONFIG_BLOCK
-#include <linux/bio.h>
+#include <freax/bio.h>
 #endif
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/osd_client.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/ceph/striper.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/osd_client.h>
+#include <freax/ceph/messenger.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/auth.h>
+#include <freax/ceph/pagelist.h>
+#include <freax/ceph/striper.h>
 
 #define OSD_OPREPLY_FRONT_LEN	512
 

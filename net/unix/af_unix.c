@@ -77,46 +77,46 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/filter.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/dcache.h>
+#include <freax/namei.h>
+#include <freax/socket.h>
+#include <freax/un.h>
+#include <freax/fcntl.h>
+#include <freax/filter.h>
+#include <freax/termios.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/af_unix.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/mount.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/rtnetlink.h>
+#include <freax/mount.h>
 #include <net/checksum.h>
-#include <linux/security.h>
-#include <linux/splice.h>
-#include <linux/freezer.h>
-#include <linux/file.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf-cgroup.h>
+#include <freax/security.h>
+#include <freax/splice.h>
+#include <freax/freezer.h>
+#include <freax/file.h>
+#include <freax/btf_ids.h>
+#include <freax/bpf-cgroup.h>
 
 #include "scm.h"
 
@@ -672,7 +672,7 @@ static void unix_release_sock(struct sock *sk, int embrion)
 
 	/*
 	 * Fixme: BSD difference: In BSD all sockets connected to us get
-	 *	  ECONNRESET and we die on the spot. In Linux we behave
+	 *	  ECONNRESET and we die on the spot. In freax we behave
 	 *	  like files and pipes do and wait for the last
 	 *	  dereference.
 	 *

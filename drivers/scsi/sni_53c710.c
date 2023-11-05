@@ -13,18 +13,18 @@
  * Based on lasi700.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/mm.h>
+#include <freax/blkdev.h>
+#include <freax/sched.h>
+#include <freax/ioport.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
 
 #include <asm/page.h>
 #include <asm/irq.h>

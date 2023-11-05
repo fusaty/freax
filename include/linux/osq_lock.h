@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_OSQ_LOCK_H
-#define __LINUX_OSQ_LOCK_H
+#ifndef __freax_OSQ_LOCK_H
+#define __freax_OSQ_LOCK_H
 
 /*
  * An MCS like lock especially tailored for optimistic spinning for sleeping

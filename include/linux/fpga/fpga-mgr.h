@@ -5,11 +5,11 @@
  *  Copyright (C) 2013-2016 Altera Corporation
  *  Copyright (C) 2017 Intel Corporation
  */
-#ifndef _LINUX_FPGA_MGR_H
-#define _LINUX_FPGA_MGR_H
+#ifndef _freax_FPGA_MGR_H
+#define _freax_FPGA_MGR_H
 
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
 
 struct fpga_manager;
 struct sg_table;
@@ -64,7 +64,7 @@ enum fpga_mgr_states {
  *
  * %FPGA_MGR_PARTIAL_RECONFIG: do partial reconfiguration if supported
  *
- * %FPGA_MGR_EXTERNAL_CONFIG: FPGA has been configured prior to Linux booting
+ * %FPGA_MGR_EXTERNAL_CONFIG: FPGA has been configured prior to freax booting
  *
  * %FPGA_MGR_ENCRYPTED_BITSTREAM: indicates bitstream is encrypted
  *
@@ -244,4 +244,4 @@ struct fpga_manager *
 devm_fpga_mgr_register(struct device *parent, const char *name,
 		       const struct fpga_manager_ops *mops, void *priv);
 
-#endif /*_LINUX_FPGA_MGR_H */
+#endif /*_freax_FPGA_MGR_H */

@@ -2,8 +2,8 @@
 #ifndef _COMEDI_INTERNAL_H
 #define _COMEDI_INTERNAL_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /*
  * various internal comedi stuff

@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/smsc911x.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 #include <asm/machvec.h>
 #include <asm/heartbeat.h>

@@ -28,8 +28,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_FTL_H
-#define _LINUX_FTL_H
+#ifndef _freax_FTL_H
+#define _freax_FTL_H
 
 typedef struct erase_unit_header_t {
     uint8_t	LinkTargetTuple[5];
@@ -71,4 +71,4 @@ typedef struct erase_unit_header_t {
 #define BLOCK_REPLACEMENT	0x60
 #define BLOCK_BAD		0x70
 
-#endif /* _LINUX_FTL_H */
+#endif /* _freax_FTL_H */

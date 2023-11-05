@@ -7,12 +7,12 @@
  * 		From code originally in include/net/tcp.h
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tcp.h>
+#include <freax/vmalloc.h>
 
 #include <net/request_sock.h>
 

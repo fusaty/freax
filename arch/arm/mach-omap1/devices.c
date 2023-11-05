@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/arch/arm/mach-omap1/devices.c
+ * freax/arch/arm/mach-omap1/devices.c
  *
  * OMAP1 platform device setup/initialization
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
 
-#include <linux/platform_data/omap-wd-timer.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/platform_data/omap-wd-timer.h>
+#include <freax/soc/ti/omap1-io.h>
 
 #include <asm/mach/map.h>
 

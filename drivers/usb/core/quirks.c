@@ -6,10 +6,10 @@
  * Copyright (c) 2007 Greg Kroah-Hartman <gregkh@suse.de>
  */
 
-#include <linux/moduleparam.h>
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
-#include <linux/usb/hcd.h>
+#include <freax/moduleparam.h>
+#include <freax/usb.h>
+#include <freax/usb/quirks.h>
+#include <freax/usb/hcd.h>
 #include "usb.h"
 
 struct quirk_entry {

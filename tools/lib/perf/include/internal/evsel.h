@@ -2,8 +2,8 @@
 #ifndef __LIBPERF_INTERNAL_EVSEL_H
 #define __LIBPERF_INTERNAL_EVSEL_H
 
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <freax/types.h>
+#include <freax/perf_event.h>
 #include <stdbool.h>
 #include <sys/types.h>
 #include <internal/cpumap.h>

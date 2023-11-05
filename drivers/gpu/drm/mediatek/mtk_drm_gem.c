@@ -3,7 +3,7 @@
  * Copyright (c) 2015 MediaTek Inc.
  */
 
-#include <linux/dma-buf.h>
+#include <freax/dma-buf.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

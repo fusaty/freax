@@ -7,14 +7,14 @@
  * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/of_address.h>
-#include <linux/suspend.h>
+#include <freax/cpu_pm.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mbus.h>
+#include <freax/of_address.h>
+#include <freax/suspend.h>
 #include <asm/cacheflush.h>
 #include <asm/outercache.h>
 #include <asm/suspend.h>
@@ -132,7 +132,7 @@ static void mvebu_pm_store_armadaxp_bootinfo(u32 *store_addr)
 
 	/*
 	 * Set the internal register base address to the value
-	 * expected by Linux, as read from the Device Tree.
+	 * expected by freax, as read from the Device Tree.
 	 */
 	writel(MBUS_INTERNAL_REG_ADDRESS, store_addr++);
 	writel(mvebu_internal_reg_base(), store_addr++);

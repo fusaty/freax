@@ -10,14 +10,14 @@
 #ifndef __ETHSW_H
 #define __ETHSW_H
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <uapi/linux/if_bridge.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_vlan.h>
+#include <uapi/freax/if_bridge.h>
 #include <net/switchdev.h>
-#include <linux/if_bridge.h>
-#include <linux/fsl/mc.h>
+#include <freax/if_bridge.h>
+#include <freax/fsl/mc.h>
 #include <net/pkt_cls.h>
 #include <soc/fsl/dpaa2-io.h>
 

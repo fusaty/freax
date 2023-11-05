@@ -4,7 +4,7 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Tony Krowiak <akrowia@linux.vnet.ibm.com>
+ * Author(s): Tony Krowiak <akrowia@freax.vnet.ibm.com>
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Harald Freudenberger <freude@de.ibm.com>
  */
@@ -12,7 +12,7 @@
 #ifndef _ASM_S390_AP_H_
 #define _ASM_S390_AP_H_
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/asm-extable.h>
 
 /**

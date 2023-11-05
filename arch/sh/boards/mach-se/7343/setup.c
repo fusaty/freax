@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/usb/isp116x.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/physmap.h>
+#include <freax/serial_8250.h>
+#include <freax/serial_reg.h>
+#include <freax/usb/isp116x.h>
+#include <freax/delay.h>
+#include <freax/irqdomain.h>
 #include <asm/machvec.h>
 #include <mach-se/mach/se7343.h>
 #include <asm/heartbeat.h>

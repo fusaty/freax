@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2022 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/panic_notifier.h>
+#include <freax/pm_runtime.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/soc/qcom/smem_state.h>
 
 #include "ipa_smp2p.h"
 #include "ipa.h"

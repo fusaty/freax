@@ -6,8 +6,8 @@
 #ifndef VIRTIO_SND_PCM_H
 #define VIRTIO_SND_PCM_H
 
-#include <linux/atomic.h>
-#include <linux/virtio_config.h>
+#include <freax/atomic.h>
+#include <freax/virtio_config.h>
 #include <sound/pcm.h>
 #include <sound/pcm-indirect.h>
 

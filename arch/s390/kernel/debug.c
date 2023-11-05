@@ -7,25 +7,25 @@
  *    Author(s): Michael Holzheu (holzheu@de.ibm.com),
  *		 Holger Smolinski (Holger.Smolinski@de.ibm.com)
  *
- *    Bugreports to: <Linux390@de.ibm.com>
+ *    Bugreports to: <freax390@de.ibm.com>
  */
 
 #define KMSG_COMPONENT "s390dbf"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/minmax.h>
-#include <linux/debugfs.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/sysctl.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/minmax.h>
+#include <freax/debugfs.h>
 
 #include <asm/debug.h>
 

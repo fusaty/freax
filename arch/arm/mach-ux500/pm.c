@@ -7,14 +7,14 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org> for Linaro.
  */
 
-#include <linux/kernel.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/platform_data/arm-ux500-pm.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/suspend.h>
+#include <freax/platform_data/arm-ux500-pm.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 /* ARM WFI Standby signal register */
 #define PRCM_ARM_WFI_STANDBY    (prcmu_base + 0x130)

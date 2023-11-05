@@ -9,19 +9,19 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/serdev.h>
+#include <freax/skbuff.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

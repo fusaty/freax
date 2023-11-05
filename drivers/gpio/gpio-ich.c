@@ -5,12 +5,12 @@
  * Copyright (C) 2010 Extreme Engineering Solutions.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/ioport.h>
-#include <linux/mfd/lpc_ich.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/ioport.h>
+#include <freax/mfd/lpc_ich.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #define DRV_NAME "gpio_ich"
 

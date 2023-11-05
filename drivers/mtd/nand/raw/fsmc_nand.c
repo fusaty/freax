@@ -13,27 +13,27 @@
  *  Copyright © 2009 Alessandro Rubini
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/resource.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/amba/bus.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/resource.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand-ecc-sw-hamming.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/mtd/partitions.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/amba/bus.h>
 #include <mtd/mtd-abi.h>
 
 /* fsmc controller registers for NOR flash */

@@ -4,11 +4,11 @@
  * Copyright (C) 2020 Zong Li
  */
 
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
 #include "sifive-prci.h"
 #include "fu540-prci.h"
 #include "fu740-prci.h"
@@ -169,9 +169,9 @@ static void __prci_wrpll_write_cfg1(struct __prci_data *pd,
 }
 
 /*
- * Linux clock framework integration
+ * freax clock framework integration
  *
- * See the Linux clock framework documentation for more information on
+ * See the freax clock framework documentation for more information on
  * these functions.
  */
 
@@ -492,12 +492,12 @@ void sifive_prci_pcie_aux_clock_disable(struct clk_hw *hw)
 
 /**
  * __prci_register_clocks() - register clock controls in the PRCI
- * @dev: Linux struct device
+ * @dev: freax struct device
  * @pd: The pointer for PRCI per-device instance data
  * @desc: The pointer for the information of clocks of each SoCs
  *
  * Register the list of clock controls described in __prci_init_clocks[] with
- * the Linux clock framework.
+ * the freax clock framework.
  *
  * Return: 0 upon success or a negative error code upon failure.
  */

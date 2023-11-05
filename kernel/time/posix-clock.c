@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/posix-clock.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/file.h>
+#include <freax/posix-clock.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/uaccess.h>
 
 #include "posix-timers.h"
 

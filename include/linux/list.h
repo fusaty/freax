@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LIST_H
-#define _LINUX_LIST_H
+#ifndef _freax_LIST_H
+#define _freax_LIST_H
 
-#include <linux/container_of.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/poison.h>
-#include <linux/const.h>
+#include <freax/container_of.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/poison.h>
+#include <freax/const.h>
 
 #include <asm/barrier.h>
 

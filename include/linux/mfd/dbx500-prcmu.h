@@ -7,9 +7,9 @@
 #ifndef __MACH_PRCMU_H
 #define __MACH_PRCMU_H
 
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/err.h>
 
 #include <dt-bindings/mfd/dbx500-prcmu.h> /* For clock identifiers */
 
@@ -209,7 +209,7 @@ struct prcmu_fw_version {
 	char project_name[PRCMU_FW_PROJECT_NAME_LEN];
 };
 
-#include <linux/mfd/db8500-prcmu.h>
+#include <freax/mfd/db8500-prcmu.h>
 
 #if defined(CONFIG_UX500_SOC_DB8500)
 

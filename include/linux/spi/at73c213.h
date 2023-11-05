@@ -3,8 +3,8 @@
  * Board-specific data used to set up AT73c213 audio DAC driver.
  */
 
-#ifndef __LINUX_SPI_AT73C213_H
-#define __LINUX_SPI_AT73C213_H
+#ifndef __freax_SPI_AT73C213_H
+#define __freax_SPI_AT73C213_H
 
 /**
  * at73c213_board_info - how the external DAC is wired to the device.
@@ -23,4 +23,4 @@ struct at73c213_board_info {
 	char		shortname[32];
 };
 
-#endif /* __LINUX_SPI_AT73C213_H */
+#endif /* __freax_SPI_AT73C213_H */

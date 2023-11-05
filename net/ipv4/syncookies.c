@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Syncookies implementation for the Linux kernel
+ *  Syncookies implementation for the freax kernel
  *
  *  Copyright (C) 1997 Andi Kleen
  *  Based on ideas by D.J.Bernstein and Eric Schenk.
  */
 
-#include <linux/tcp.h>
-#include <linux/siphash.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <freax/tcp.h>
+#include <freax/siphash.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
 #include <net/secure_seq.h>
 #include <net/tcp.h>
 #include <net/route.h>
@@ -355,11 +355,11 @@ struct sock *cookie_v4_check(struct sock *sk, struct sk_buff *skb)
 
 	mss = __cookie_v4_check(ip_hdr(skb), th, cookie);
 	if (mss == 0) {
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESFAILED);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_SYNCOOKIESFAILED);
 		goto out;
 	}
 
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESRECV);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_SYNCOOKIESRECV);
 
 	/* check for timestamp cookie support */
 	memset(&tcp_opt, 0, sizeof(tcp_opt));

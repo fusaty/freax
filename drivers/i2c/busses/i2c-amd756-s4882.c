@@ -20,12 +20,12 @@
  *   CPU3: virtual adapter 4, channels 4 and 7
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 
 extern struct i2c_adapter amd756_smbus;
 

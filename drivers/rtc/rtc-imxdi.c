@@ -6,7 +6,7 @@
 
 /*
  * This driver uses the 47-bit 32 kHz counter in the Freescale DryIce block
- * to implement a Linux RTC. Times and alarms are truncated to seconds.
+ * to implement a freax RTC. Times and alarms are truncated to seconds.
  * Since the RTC framework performs API locking via rtc->ops_lock the
  * only simultaneous accesses we need to deal with is updating DryIce
  * registers while servicing an alarm.
@@ -19,17 +19,17 @@
  * not supported by the hardware.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/rtc.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/rtc.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/of.h>
 
 /* DryIce Register Definitions */
 

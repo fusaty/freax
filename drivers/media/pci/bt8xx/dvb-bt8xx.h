@@ -11,8 +11,8 @@
 #ifndef DVB_BT8XX_H
 #define DVB_BT8XX_H
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 #include <media/dvbdev.h>
 #include <media/dvb_net.h>
 #include "bttv.h"

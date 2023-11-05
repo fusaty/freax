@@ -6,17 +6,17 @@
  * (C) Copyright 2011 (Alejandro Cabrera <aldaya@gmail.com>)
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/watchdog.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 /* Register offsets for the Wdt device */
 #define XWT_TWCSR0_OFFSET   0x0 /* Control/Status Register0 */

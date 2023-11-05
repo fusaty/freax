@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/cpuidle.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
 
 #include <asm/paca.h>
 #include <asm/reg.h>
@@ -378,7 +378,7 @@ static void __init fixup_cede0_latency(void)
 		 * We expect the exit latency of an extended CEDE
 		 * state to be non-zero, it to since it takes at least
 		 * a few nanoseconds to wakeup the idle CPU and
-		 * dispatch the virtual processor into the Linux
+		 * dispatch the virtual processor into the freax
 		 * Guest.
 		 *
 		 * So we consider only non-zero value for performing

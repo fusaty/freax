@@ -5,8 +5,8 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_SPACE_MAP_H
-#define _LINUX_DM_SPACE_MAP_H
+#ifndef _freax_DM_SPACE_MAP_H
+#define _freax_DM_SPACE_MAP_H
 
 #include "dm-block-manager.h"
 
@@ -166,4 +166,4 @@ static inline int dm_sm_register_threshold_callback(struct dm_space_map *sm,
 }
 
 
-#endif	/* _LINUX_DM_SPACE_MAP_H */
+#endif	/* _freax_DM_SPACE_MAP_H */

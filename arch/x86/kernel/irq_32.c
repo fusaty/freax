@@ -9,16 +9,16 @@
  * io_apic.c.)
  */
 
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel_stat.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/percpu.h>
+#include <freax/mm.h>
 
 #include <asm/apic.h>
 #include <asm/nospec-branch.h>

@@ -4,7 +4,7 @@
  * Author: Gabriel Fernandez <gabriel.fernandez@foss.st.com> for STMicroelectronics.
  */
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 
 struct stm32_rcc_match_data;
 

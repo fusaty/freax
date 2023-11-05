@@ -9,16 +9,16 @@
  * for more details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/timecounter.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched_clock.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/timecounter.h>
 #include <asm/cpuinfo.h>
 
 static void __iomem *timer_baseaddr;

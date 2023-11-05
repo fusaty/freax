@@ -7,7 +7,7 @@
 #ifndef __ASM_EXEC_H
 #define __ASM_EXEC_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 extern unsigned long arch_align_stack(unsigned long sp);
 

@@ -12,10 +12,10 @@
  * we allow the resending of IRQs via a tasklet.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/interrupt.h>
 
 #include "internals.h"
 

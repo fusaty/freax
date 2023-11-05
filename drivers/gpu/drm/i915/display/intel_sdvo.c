@@ -1,5 +1,5 @@
 /*
- * Copyright 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright 2006 Dave Airlie <airlied@freax.ie>
  * Copyright © 2006-2007 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -26,10 +26,10 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
 
 #include <drm/display/drm_hdmi_helper.h>
 #include <drm/drm_atomic_helper.h>

@@ -8,12 +8,12 @@
  */
 
 #include <dt-bindings/interrupt-controller/irq-st.h>
-#include <linux/err.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define STIH407_SYSCFG_5102		0x198
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Isovalent */
-#include <uapi/linux/if_link.h>
-#include <uapi/linux/pkt_sched.h>
+#include <uapi/freax/if_link.h>
+#include <uapi/freax/pkt_sched.h>
 #include <net/if.h>
 #include <test_progs.h>
 

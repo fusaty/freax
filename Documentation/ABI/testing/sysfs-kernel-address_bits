@@ -1,10 +1,10 @@
 What:		/sys/kernel/address_bit
 Date:		May 2023
 KernelVersion:	6.3
-Contact:	Thomas Weißschuh <linux@weissschuh.net>
+Contact:	Thomas Weißschuh <freax@weissschuh.net>
 Description:
 		The address size of the running kernel in bits.
 
 		Access: Read
 
-Users:		util-linux
+Users:		util-freax

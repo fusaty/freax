@@ -7,22 +7,22 @@
  * Author: Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/regulator/machine.h>
-#include <linux/power/charger-manager.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/88pm860x.h>
+#include <freax/regulator/machine.h>
+#include <freax/power/charger-manager.h>
 
 #define INT_STATUS_NUM			3
 

@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * Linux Socket Filter Data Structures
+ * freax Socket Filter Data Structures
  */
 
-#ifndef _UAPI__LINUX_FILTER_H__
-#define _UAPI__LINUX_FILTER_H__
+#ifndef _UAPI__freax_FILTER_H__
+#define _UAPI__freax_FILTER_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bpf_common.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/bpf_common.h>
 
 /*
  * Current version of the filter code architecture.
@@ -87,4 +87,4 @@ struct sock_fprog {	/* Required for SO_ATTACH_FILTER. */
 #define BPF_NET_OFF	SKF_NET_OFF
 #define BPF_LL_OFF	SKF_LL_OFF
 
-#endif /* _UAPI__LINUX_FILTER_H__ */
+#endif /* _UAPI__freax_FILTER_H__ */

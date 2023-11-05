@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 #include "mtk-eint.h"
 

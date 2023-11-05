@@ -16,10 +16,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/fsl/guts.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/fsl/guts.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <asm/div64.h>
 #include <asm/mpic.h>
 #include <asm/swiotlb.h>

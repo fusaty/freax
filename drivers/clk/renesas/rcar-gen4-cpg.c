@@ -10,15 +10,15 @@
  * Copyright (C) 2019 Renesas Electronics Corp.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/slab.h>
 
 #include "renesas-cpg-mssr.h"
 #include "rcar-gen4-cpg.h"

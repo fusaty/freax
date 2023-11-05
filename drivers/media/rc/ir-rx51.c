@@ -4,13 +4,13 @@
  *
  *  Based on lirc_serial.c
  */
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/pwm.h>
-#include <linux/of.h>
-#include <linux/hrtimer.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/wait.h>
+#include <freax/pwm.h>
+#include <freax/of.h>
+#include <freax/hrtimer.h>
 
 #include <media/rc-core.h>
 

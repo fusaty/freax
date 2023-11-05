@@ -1,39 +1,39 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/open.c
+ *  freax/fs/open.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/securebits.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
-#include <linux/audit.h>
-#include <linux/falloc.h>
-#include <linux/fs_struct.h>
-#include <linux/ima.h>
-#include <linux/dnotify.h>
-#include <linux/compat.h>
-#include <linux/mnt_idmapping.h>
-#include <linux/filelock.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/fsnotify.h>
+#include <freax/module.h>
+#include <freax/tty.h>
+#include <freax/namei.h>
+#include <freax/backing-dev.h>
+#include <freax/capability.h>
+#include <freax/securebits.h>
+#include <freax/security.h>
+#include <freax/mount.h>
+#include <freax/fcntl.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/fs.h>
+#include <freax/personality.h>
+#include <freax/pagemap.h>
+#include <freax/syscalls.h>
+#include <freax/rcupdate.h>
+#include <freax/audit.h>
+#include <freax/falloc.h>
+#include <freax/fs_struct.h>
+#include <freax/ima.h>
+#include <freax/dnotify.h>
+#include <freax/compat.h>
+#include <freax/mnt_idmapping.h>
+#include <freax/filelock.h>
 
 #include "internal.h"
 

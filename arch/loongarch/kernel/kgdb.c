@@ -5,13 +5,13 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/hw_breakpoint.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
-#include <linux/processor.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/kdebug.h>
+#include <freax/kgdb.h>
+#include <freax/processor.h>
+#include <freax/ptrace.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fpu.h>
@@ -233,7 +233,7 @@ void arch_kgdb_breakpoint(void)
 }
 
 /*
- * Calls linux_debug_hook before the kernel dies. If KGDB is enabled,
+ * Calls freax_debug_hook before the kernel dies. If KGDB is enabled,
  * then try to fall into the debugger
  */
 static int kgdb_loongarch_notify(struct notifier_block *self, unsigned long cmd, void *ptr)

@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atmsvc.h - ATM signaling kernel-demon interface definitions */
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#ifndef _LINUX_ATMSVC_H
-#define _LINUX_ATMSVC_H
+#ifndef _freax_ATMSVC_H
+#define _freax_ATMSVC_H
 
-#include <linux/atmapi.h>
-#include <linux/atm.h>
-#include <linux/atmioc.h>
+#include <freax/atmapi.h>
+#include <freax/atm.h>
+#include <freax/atmioc.h>
 
 
 #define ATMSIGD_CTRL _IO('a',ATMIOC_SPECIAL)
@@ -39,7 +39,7 @@ struct atmsvc_msg {
 } __ATM_API_ALIGN;
 
 /*
- * Message contents: see ftp://icaftp.epfl.ch/pub/linux/atm/docs/isp-*.tar.gz
+ * Message contents: see ftp://icaftp.epfl.ch/pub/freax/atm/docs/isp-*.tar.gz
  */
 
 /*

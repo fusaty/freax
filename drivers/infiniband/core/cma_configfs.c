@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/configfs.h>
+#include <freax/configfs.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 

@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/net.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/net.h>
+#include <freax/io_uring.h>
 
 #include "io_uring.h"
 #include "notif.h"

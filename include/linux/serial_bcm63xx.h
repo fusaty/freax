@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SERIAL_BCM63XX_H
-#define _LINUX_SERIAL_BCM63XX_H
+#ifndef _freax_SERIAL_BCM63XX_H
+#define _freax_SERIAL_BCM63XX_H
 
 /* UART Control Register */
 #define UART_CTL_REG			0x0
@@ -117,4 +117,4 @@
 					UART_FIFO_PARERR_MASK |		\
 					UART_FIFO_BRKDET_MASK)
 
-#endif /* _LINUX_SERIAL_BCM63XX_H */
+#endif /* _freax_SERIAL_BCM63XX_H */

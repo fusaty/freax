@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DNOTIFY_H
-#define _LINUX_DNOTIFY_H
+#ifndef _freax_DNOTIFY_H
+#define _freax_DNOTIFY_H
 /*
- * Directory notification for Linux
+ * Directory notification for freax
  *
  * Copyright (C) 2000,2002 Stephen Rothwell
  */
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 struct dnotify_struct {
 	struct dnotify_struct *	dn_next;
@@ -47,4 +47,4 @@ static inline int fcntl_dirnotify(int fd, struct file *filp, unsigned int arg)
 
 #endif /* __KERNEL __ */
 
-#endif /* _LINUX_DNOTIFY_H */
+#endif /* _freax_DNOTIFY_H */

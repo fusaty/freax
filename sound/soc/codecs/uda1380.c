@@ -11,15 +11,15 @@
  * Copyright 2005 Openedhand Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/gpio.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/workqueue.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>

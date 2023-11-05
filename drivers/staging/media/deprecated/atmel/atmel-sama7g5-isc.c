@@ -26,19 +26,19 @@
  * HIS: Histogram module performs statistic counters on the frames
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

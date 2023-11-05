@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2015 - 2021 Intel Corporation */
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/minmax.h>
+#include <freax/types.h>
 #include "adf_accel_devices.h"
 #include "adf_common_drv.h"
 #include "adf_pfvf_msg.h"

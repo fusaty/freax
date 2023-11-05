@@ -3,19 +3,19 @@
  * Driver for an SoC block (Numerically Controlled Oscillator)
  * found on t8103 (M1) and other Apple chips
  *
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi freax Contributors
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define NCO_CHANNEL_STRIDE	0x4000
 #define NCO_CHANNEL_REGSIZE	20

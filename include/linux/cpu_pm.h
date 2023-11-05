@@ -6,11 +6,11 @@
  *	Colin Cross <ccross@android.com>
  */
 
-#ifndef _LINUX_CPU_PM_H
-#define _LINUX_CPU_PM_H
+#ifndef _freax_CPU_PM_H
+#define _freax_CPU_PM_H
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
 
 /*
  * When a CPU goes to a low power state that turns off power to the CPU's

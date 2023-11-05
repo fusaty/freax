@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_DEBUG_H
-#define _LINUX_SCHED_DEBUG_H
+#ifndef _freax_SCHED_DEBUG_H
+#define _freax_SCHED_DEBUG_H
 
 /*
  * Various scheduler/task debugging interfaces:
@@ -51,4 +51,4 @@ extern char __sched_text_start[], __sched_text_end[];
 /* Is this address in the __sched functions? */
 extern int in_sched_functions(unsigned long addr);
 
-#endif /* _LINUX_SCHED_DEBUG_H */
+#endif /* _freax_SCHED_DEBUG_H */

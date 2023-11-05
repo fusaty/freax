@@ -22,7 +22,7 @@
  * Authors: Dave Airlie
  */
 
-#include <linux/dma-buf.h>
+#include <freax/dma-buf.h>
 #include <drm/ttm/ttm_tt.h>
 
 #include "nouveau_drv.h"

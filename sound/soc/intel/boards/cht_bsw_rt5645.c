@@ -12,12 +12,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

@@ -8,15 +8,15 @@
  * Copyright (c) 2018 Analog Devices Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/regulator/driver.h>
 #include "pmbus.h"
 
 enum chips {

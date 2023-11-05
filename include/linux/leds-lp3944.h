@@ -5,8 +5,8 @@
  * Copyright (C) 2009 Antonio Ospite <ospite@studenti.unina.it>
  */
 
-#ifndef __LINUX_LEDS_LP3944_H
-#define __LINUX_LEDS_LP3944_H
+#ifndef __freax_LEDS_LP3944_H
+#define __freax_LEDS_LP3944_H
 
 #define LP3944_LED0 0
 #define LP3944_LED1 1
@@ -43,4 +43,4 @@ struct lp3944_platform_data {
 	u8 leds_size;
 };
 
-#endif /* __LINUX_LEDS_LP3944_H */
+#endif /* __freax_LEDS_LP3944_H */

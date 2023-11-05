@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the freax kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -38,7 +38,7 @@
 #ifndef _SISUSB_H_
 #define _SISUSB_H_
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 /* Version Information */
 
@@ -48,7 +48,7 @@
 
 /* Include console and mode switching code? */
 
-#include <linux/vt_kern.h>
+#include <freax/vt_kern.h>
 #include "sisusb_struct.h"
 
 /* USB related */

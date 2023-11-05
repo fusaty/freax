@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/compiler.h>
-#include <linux/gcd.h>
-#include <linux/export.h>
-#include <linux/lcm.h>
+#include <freax/compiler.h>
+#include <freax/gcd.h>
+#include <freax/export.h>
+#include <freax/lcm.h>
 
 /* Lowest common multiple */
 unsigned long lcm(unsigned long a, unsigned long b)

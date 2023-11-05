@@ -3,8 +3,8 @@
 
 #ifndef __HCLGEVF_CMD_H
 #define __HCLGEVF_CMD_H
-#include <linux/io.h>
-#include <linux/types.h>
+#include <freax/io.h>
+#include <freax/types.h>
 #include "hnae3.h"
 #include "hclge_comm_cmd.h"
 

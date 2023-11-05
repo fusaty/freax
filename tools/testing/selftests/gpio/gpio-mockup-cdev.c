@@ -14,7 +14,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <linux/gpio.h>
+#include <freax/gpio.h>
 
 #define CONSUMER	"gpio-mockup-cdev"
 

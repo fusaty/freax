@@ -5,10 +5,10 @@
  * Copyright (C) 2019 Intel Corporation
  */
 
-#ifndef __LINUX_DMA_IDMA64_H__
-#define __LINUX_DMA_IDMA64_H__
+#ifndef __freax_DMA_IDMA64_H__
+#define __freax_DMA_IDMA64_H__
 
 /* Platform driver name */
 #define LPSS_IDMA64_DRIVER_NAME		"idma64"
 
-#endif /* __LINUX_DMA_IDMA64_H__ */
+#endif /* __freax_DMA_IDMA64_H__ */

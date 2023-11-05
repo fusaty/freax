@@ -6,8 +6,8 @@
 #ifndef _IOVA_BITMAP_H_
 #define _IOVA_BITMAP_H_
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 
 struct iova_bitmap;
 

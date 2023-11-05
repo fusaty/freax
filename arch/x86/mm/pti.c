@@ -6,7 +6,7 @@
  *
  *	https://github.com/IAIK/KAISER
  *
- * The original work was written by and and signed off by for the Linux
+ * The original work was written by and and signed off by for the freax
  * kernel by:
  *
  *   Signed-off-by: Richard Fellner <richard.fellner@student.tugraz.at>
@@ -18,16 +18,16 @@
  * Mostly rewritten by Thomas Gleixner <tglx@linutronix.de> and
  *		       Andy Lutomirsky <luto@amacapital.net>
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/cpu.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/bug.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/uaccess.h>
+#include <freax/cpu.h>
 
 #include <asm/cpufeature.h>
 #include <asm/hypervisor.h>

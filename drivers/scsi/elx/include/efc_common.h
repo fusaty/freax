@@ -7,7 +7,7 @@
 #ifndef __EFC_COMMON_H__
 #define __EFC_COMMON_H__
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 struct efc_dma {
 	void		*virt;

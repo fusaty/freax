@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR freax-OpenIB) */
 /*
  * Copyright (c) 2005 Intel Corporation.  All rights reserved.
  *
@@ -34,7 +34,7 @@
 #ifndef IB_USER_SA_H
 #define IB_USER_SA_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	IB_PATH_GMP		= 1,

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * aht10.c - Linux hwmon driver for AHT10/AHT20 Temperature and Humidity sensors
+ * aht10.c - freax hwmon driver for AHT10/AHT20 Temperature and Humidity sensors
  * Copyright (C) 2020 Johannes Cornelis Draaijer
  */
 
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/crc8.h>
+#include <freax/delay.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/crc8.h>
 
 #define AHT10_MEAS_SIZE		6
 

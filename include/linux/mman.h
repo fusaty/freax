@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MMAN_H
-#define _LINUX_MMAN_H
+#ifndef _freax_MMAN_H
+#define _freax_MMAN_H
 
-#include <linux/mm.h>
-#include <linux/percpu_counter.h>
+#include <freax/mm.h>
+#include <freax/percpu_counter.h>
 
-#include <linux/atomic.h>
-#include <uapi/linux/mman.h>
+#include <freax/atomic.h>
+#include <uapi/freax/mman.h>
 
 /*
  * Arrange for legacy / undefined architecture specific flags to be
@@ -194,4 +194,4 @@ static inline bool map_deny_write_exec(struct vm_area_struct *vma,  unsigned lon
 	return false;
 }
 
-#endif /* _LINUX_MMAN_H */
+#endif /* _freax_MMAN_H */

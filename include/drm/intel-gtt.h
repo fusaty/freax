@@ -4,7 +4,7 @@
 #ifndef _DRM_INTEL_GTT_H
 #define	_DRM_INTEL_GTT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct agp_bridge_data;
 struct pci_dev;

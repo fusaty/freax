@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * PTP 1588 clock support - user space interface
  *
@@ -22,8 +22,8 @@
 #ifndef _PTP_CLOCK_H_
 #define _PTP_CLOCK_H_
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /*
  * Bits of the ptp_extts_request.flags field:

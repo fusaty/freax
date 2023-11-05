@@ -5,11 +5,11 @@
  * Copyright (C) 2011 Rafael J. Wysocki <rjw@sisk.pl>, Renesas Electronics Corp.
  */
 
-#ifndef _LINUX_PM_CLOCK_H
-#define _LINUX_PM_CLOCK_H
+#ifndef _freax_PM_CLOCK_H
+#define _freax_PM_CLOCK_H
 
-#include <linux/device.h>
-#include <linux/notifier.h>
+#include <freax/device.h>
+#include <freax/notifier.h>
 
 struct pm_clk_notifier_block {
 	struct notifier_block nb;

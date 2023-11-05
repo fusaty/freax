@@ -3,7 +3,7 @@
  *	arch/alpha/lib/callback_srm.S
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/console.h>
 
 .text

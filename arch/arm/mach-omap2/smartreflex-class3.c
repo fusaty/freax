@@ -8,7 +8,7 @@
  * Thara Gopinath <thara@ti.com>
  */
 
-#include <linux/power/smartreflex.h>
+#include <freax/power/smartreflex.h>
 #include "soc.h"
 #include "voltage.h"
 

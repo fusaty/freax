@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/workqueue.h>
-#include <linux/jiffies.h>
-#include <linux/rtnetlink.h>
-#include <linux/netlink.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/skbuff.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bridge.h>
+#include <freax/workqueue.h>
+#include <freax/jiffies.h>
+#include <freax/rtnetlink.h>
+#include <freax/netlink.h>
 #include <net/switchdev.h>
 #include <net/vxlan.h>
 
@@ -3577,7 +3577,7 @@ mlxsw_sp_switchdev_vxlan_fdb_add(struct mlxsw_sp *mlxsw_sp,
 		return;
 	}
 
-	/* The device has a single FDB table, whereas Linux has two - one
+	/* The device has a single FDB table, whereas freax has two - one
 	 * in the bridge driver and another in the VxLAN driver. We only
 	 * program an entry to the device if the MAC points to the VxLAN
 	 * device in the bridge's FDB table

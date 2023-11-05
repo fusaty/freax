@@ -7,7 +7,7 @@
 #ifndef _MHI_EP_INTERNAL_
 #define _MHI_EP_INTERNAL_
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #include "../common.h"
 

@@ -9,9 +9,9 @@
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/highmem.h>
-#include <linux/kvm_host.h>
-#include <linux/uaccess.h>
+#include <freax/highmem.h>
+#include <freax/kvm_host.h>
+#include <freax/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
 

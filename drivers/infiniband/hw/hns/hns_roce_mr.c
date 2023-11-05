@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 #include <rdma/ib_umem.h>
-#include <linux/math.h>
+#include <freax/math.h>
 #include "hns_roce_device.h"
 #include "hns_roce_cmd.h"
 #include "hns_roce_hem.h"

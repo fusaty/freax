@@ -7,15 +7,15 @@
  * Copyright (c) 2018 Guenter Roeck
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/log2.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
+#include <freax/log2.h>
 #include "pmbus.h"
 
 enum chips { adm1075, adm1272, adm1275, adm1276, adm1278, adm1293, adm1294 };

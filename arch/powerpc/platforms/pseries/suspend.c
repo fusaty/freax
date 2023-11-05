@@ -3,10 +3,10 @@
   * Copyright (C) 2010 Brian King IBM Corporation
   */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/suspend.h>
-#include <linux/stat.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/suspend.h>
+#include <freax/stat.h>
 #include <asm/firmware.h>
 #include <asm/hvcall.h>
 #include <asm/machdep.h>

@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include "dcn20_vmid.h"
 #include "reg_helper.h"

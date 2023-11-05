@@ -37,8 +37,8 @@
 #endif /* CONFIG_PPC64 */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/thread_info.h>
+#include <freax/types.h>
+#include <freax/thread_info.h>
 #include <asm/ptrace.h>
 #include <asm/hw_breakpoint.h>
 

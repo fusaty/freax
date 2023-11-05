@@ -10,17 +10,17 @@
  * http://sensing.honeywell.com/index.php?ci_id=3106&la_id=1&defId=44872
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
 
 /**
  * struct hih6130 - HIH-6130 device specific data

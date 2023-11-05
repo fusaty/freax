@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Antti Palosaari <crope@iki.fi>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include "si2168_priv.h"
 

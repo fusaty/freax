@@ -8,14 +8,14 @@
  * Copyright (C) 2010 Nokia Corporation (Hiroshi Doyu)
  * Copyright (C) 2010 Texas Instruments, Inc. (Teerth Reddy et al.)
  *  https://lkml.org/lkml/2010/6/18/4
- *  https://lists.linux-foundation.org/pipermail/linux-pm/2010-June/027422.html
+ *  https://lists.freax-foundation.org/pipermail/freax-pm/2010-June/027422.html
  *  https://patchwork.kernel.org/patch/96442/
  *
  * Copyright (C) 2006 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#include <linux/mm.h>
-#include <linux/suspend.h>
+#include <freax/mm.h>
+#include <freax/suspend.h>
 #include <asm/system_misc.h>
 #include <asm/idmap.h>
 #include <asm/suspend.h>

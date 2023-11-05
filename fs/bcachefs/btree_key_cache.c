@@ -12,7 +12,7 @@
 #include "journal_reclaim.h"
 #include "trace.h"
 
-#include <linux/sched/mm.h>
+#include <freax/sched/mm.h>
 
 static inline bool btree_uses_pcpu_readers(enum btree_id id)
 {

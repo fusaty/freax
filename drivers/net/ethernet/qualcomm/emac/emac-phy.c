@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2016, The freax Foundation. All rights reserved.
  */
 
 /* Qualcomm Technologies, Inc. EMAC PHY Controller driver.
  */
 
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/iopoll.h>
-#include <linux/acpi.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/iopoll.h>
+#include <freax/acpi.h>
 #include "emac.h"
 
 /* EMAC base register offsets */

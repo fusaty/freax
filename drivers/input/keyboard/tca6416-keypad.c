@@ -7,17 +7,17 @@
  * Author : Sriramakrishnan.A.G. <srk@ti.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/tca6416_keypad.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/tca6416_keypad.h>
 
 #define TCA6416_INPUT          0
 #define TCA6416_OUTPUT         1
@@ -229,7 +229,7 @@ static int tca6416_keypad_probe(struct i2c_client *client)
 	input->id.product = 0x0001;
 	input->id.version = 0x0100;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of freax input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

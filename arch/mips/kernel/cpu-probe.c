@@ -7,12 +7,12 @@
  * Copyright (C) 2003, 2004  Maciej W. Rozycki
  * Copyright (C) 2001, 2004, 2011, 2012	 MIPS Technologies, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/export.h>
 
 #include <asm/bugs.h>
 #include <asm/cpu.h>
@@ -27,7 +27,7 @@
 #include <asm/pgtable-bits.h>
 #include <asm/spram.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "fpu-probe.h"
 
@@ -1137,7 +1137,7 @@ static inline void cpu_probe_legacy(struct cpuinfo_mips *c, unsigned int cpu)
 	case PRID_IMP_R4650:
 		/*
 		 * This processor doesn't have an MMU, so it's not
-		 * "real easy" to run Linux on it. It is left purely
+		 * "real easy" to run freax on it. It is left purely
 		 * for documentation.  Commented out because it shares
 		 * it's c0_prid id number with the TX3900.
 		 */

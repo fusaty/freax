@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include "cgroup-internal.h"
 
-#include <linux/ctype.h>
-#include <linux/kmod.h>
-#include <linux/sort.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delayacct.h>
-#include <linux/pid_namespace.h>
-#include <linux/cgroupstats.h>
-#include <linux/fs_parser.h>
+#include <freax/ctype.h>
+#include <freax/kmod.h>
+#include <freax/sort.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/magic.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/delayacct.h>
+#include <freax/pid_namespace.h>
+#include <freax/cgroupstats.h>
+#include <freax/fs_parser.h>
 
 #include <trace/events/cgroup.h>
 

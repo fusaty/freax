@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright (c) 2020-2022, Alibaba Group.
  */
@@ -6,7 +6,7 @@
 #ifndef __ERDMA_USER_H__
 #define __ERDMA_USER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ERDMA_ABI_VERSION       1
 

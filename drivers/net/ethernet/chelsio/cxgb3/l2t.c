@@ -29,13 +29,13 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #include <net/neighbour.h>
 #include "common.h"
 #include "t3cdev.h"

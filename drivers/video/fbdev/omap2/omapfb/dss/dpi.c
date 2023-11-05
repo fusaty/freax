@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dpi.c
+ * freax/drivers/video/omap2/dss/dpi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,17 +11,17 @@
 
 #define DSS_SUBSYS_NAME "DPI"
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/component.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/string.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/component.h>
 
 #include <video/omapfb_dss.h>
 

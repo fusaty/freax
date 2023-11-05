@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* atm.h - general ATM declarations */
-#ifndef _LINUX_ATM_H
-#define _LINUX_ATM_H
+#ifndef _freax_ATM_H
+#define _freax_ATM_H
 
-#include <uapi/linux/atm.h>
+#include <uapi/freax/atm.h>
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 struct compat_atmif_sioc {
 	int number;
 	int length;

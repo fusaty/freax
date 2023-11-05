@@ -9,17 +9,17 @@
  * SangPil Moon.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
 

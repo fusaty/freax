@@ -5,7 +5,7 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext2/xattr.c
+ * Portions of this code from freax/fs/ext2/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher <agruen@suse.de>
  *
@@ -15,10 +15,10 @@
  * xattr consolidation Copyright (c) 2004 James Morris <jmorris@redhat.com>,
  *  Red Hat Inc.
  */
-#include <linux/rwsem.h>
-#include <linux/f2fs_fs.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/rwsem.h>
+#include <freax/f2fs_fs.h>
+#include <freax/security.h>
+#include <freax/posix_acl_xattr.h>
 #include "f2fs.h"
 #include "xattr.h"
 #include "segment.h"

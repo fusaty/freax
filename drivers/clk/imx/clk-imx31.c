@@ -3,13 +3,13 @@
  * Copyright (C) 2012 Sascha Hauer <kernel@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <soc/imx/revision.h>
 #include <asm/irq.h>
 

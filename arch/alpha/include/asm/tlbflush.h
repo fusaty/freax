@@ -2,8 +2,8 @@
 #ifndef _ALPHA_TLBFLUSH_H
 #define _ALPHA_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
 #include <asm/compiler.h>
 
 #ifndef __EXTERN_INLINE

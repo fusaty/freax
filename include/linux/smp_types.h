@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SMP_TYPES_H
-#define __LINUX_SMP_TYPES_H
+#ifndef __freax_SMP_TYPES_H
+#define __freax_SMP_TYPES_H
 
-#include <linux/llist.h>
+#include <freax/llist.h>
 
 enum {
 	CSD_FLAG_LOCK		= 0x01,
@@ -66,4 +66,4 @@ struct __call_single_node {
 #endif
 };
 
-#endif /* __LINUX_SMP_TYPES_H */
+#endif /* __freax_SMP_TYPES_H */

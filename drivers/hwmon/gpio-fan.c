@@ -7,20 +7,20 @@
  * Author: Simon Guinot <sguinot@lacie.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/kstrtox.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/thermal.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/kstrtox.h>
+#include <freax/mutex.h>
+#include <freax/hwmon.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/thermal.h>
 
 struct gpio_fan_speed {
 	int rpm;

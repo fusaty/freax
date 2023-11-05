@@ -7,13 +7,13 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 struct virtual_consumer_data {
 	struct mutex lock;

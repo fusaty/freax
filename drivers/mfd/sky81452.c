@@ -6,15 +6,15 @@
  * Author : Gyungoh Yoo <jack.yoo@skyworksinc.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/sky81452.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/sky81452.h>
 
 static const struct regmap_config sky81452_config = {
 	.reg_bits = 8,

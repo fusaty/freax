@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RCULIST_BL_H
-#define _LINUX_RCULIST_BL_H
+#ifndef _freax_RCULIST_BL_H
+#define _freax_RCULIST_BL_H
 
 /*
- * RCU-protected bl list version. See include/linux/list_bl.h.
+ * RCU-protected bl list version. See include/freax/list_bl.h.
  */
-#include <linux/list_bl.h>
-#include <linux/rcupdate.h>
+#include <freax/list_bl.h>
+#include <freax/rcupdate.h>
 
 static inline void hlist_bl_set_first_rcu(struct hlist_bl_head *h,
 					struct hlist_bl_node *n)

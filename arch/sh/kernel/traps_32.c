@@ -8,21 +8,21 @@
  *                  Copyright (C) 2000 David Howells
  *                  Copyright (C) 2002 - 2010 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/debug_locks.h>
-#include <linux/kdebug.h>
-#include <linux/limits.h>
-#include <linux/sysfs.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/hardirq.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/kallsyms.h>
+#include <freax/io.h>
+#include <freax/bug.h>
+#include <freax/debug_locks.h>
+#include <freax/kdebug.h>
+#include <freax/limits.h>
+#include <freax/sysfs.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/alignment.h>
 #include <asm/fpu.h>

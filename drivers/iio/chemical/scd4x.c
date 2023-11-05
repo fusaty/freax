@@ -12,22 +12,22 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/types.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/types.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #define SCD4X_CRC8_POLYNOMIAL 0x31
 #define SCD4X_TIMEOUT_ERR 1000

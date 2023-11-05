@@ -8,8 +8,8 @@
 #ifndef __PHY_MTK_H__
 #define __PHY_MTK_H__
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
 
 static inline void mtk_phy_clear_bits(void __iomem *reg, u32 bits)
 {

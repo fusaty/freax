@@ -6,12 +6,12 @@
  * and possibly other systems. Also allow for the gradual elimination of
  * outb_p/inb_p API uses.
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
 
 #define IO_DELAY_TYPE_0X80	0
 #define IO_DELAY_TYPE_0XED	1

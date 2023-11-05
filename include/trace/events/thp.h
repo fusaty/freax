@@ -5,8 +5,8 @@
 #if !defined(_TRACE_THP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_THP_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(hugepage_set,
 

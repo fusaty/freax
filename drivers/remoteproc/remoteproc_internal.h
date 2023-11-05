@@ -12,8 +12,8 @@
 #ifndef REMOTEPROC_INTERNAL_H
 #define REMOTEPROC_INTERNAL_H
 
-#include <linux/irqreturn.h>
-#include <linux/firmware.h>
+#include <freax/irqreturn.h>
+#include <freax/firmware.h>
 
 struct rproc;
 

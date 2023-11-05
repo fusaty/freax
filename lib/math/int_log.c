@@ -5,11 +5,11 @@
  * Copyright (C) 2006 Christoph Pfister (christophpfister@gmail.com)
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/int_log.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/export.h>
+#include <freax/int_log.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
 #include <asm/bug.h>
 

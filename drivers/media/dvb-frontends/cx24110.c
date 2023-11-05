@@ -9,10 +9,10 @@
 
 */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 #include <media/dvb_frontend.h>
 #include "cx24110.h"

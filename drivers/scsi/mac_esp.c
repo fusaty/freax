@@ -9,18 +9,18 @@
  * Copyright (C) 2007-2008 Finn Thain
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/nubus.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/nubus.h>
+#include <freax/slab.h>
 
 #include <asm/irq.h>
 #include <asm/dma.h>

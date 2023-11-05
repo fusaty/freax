@@ -8,9 +8,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/cpm.h>
 #ifdef CONFIG_8xx_GPIO

@@ -7,8 +7,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include <asm/extable.h>
 #include <asm-generic/access_ok.h>
 

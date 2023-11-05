@@ -4,14 +4,14 @@
  * Copyright(c) 2022, HiSilicon Limited.
  */
 
-#include <linux/atomic.h>
-#include <linux/acpi.h>
-#include <linux/circ_buf.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/atomic.h>
+#include <freax/acpi.h>
+#include <freax/circ_buf.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "coresight-etm-perf.h"
 #include "coresight-priv.h"

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2021 Mellanox Technologies. All rights reserved */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/etherdevice.h>
-#include <linux/inet.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/err.h>
+#include <freax/etherdevice.h>
+#include <freax/inet.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
+#include <freax/slab.h>
 #include <net/devlink.h>
 #include <net/ip.h>
 #include <net/psample.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/udp.h>
+#include <uapi/freax/ip.h>
+#include <uapi/freax/udp.h>
 
 #include "netdevsim.h"
 

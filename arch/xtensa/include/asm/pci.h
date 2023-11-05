@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-xtensa/pci.h
+ * freax/include/asm-xtensa/pci.h
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -27,10 +27,10 @@
  * Xtensa has everything mapped statically like x86.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
 #include <asm/io.h>
 
 /* The PCI address space does equal the physical memory address space.

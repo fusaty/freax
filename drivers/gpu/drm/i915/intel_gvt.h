@@ -24,7 +24,7 @@
 #ifndef _INTEL_GVT_H_
 #define _INTEL_GVT_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 

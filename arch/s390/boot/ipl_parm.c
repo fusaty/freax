@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/ctype.h>
+#include <freax/pgtable.h>
 #include <asm/ebcdic.h>
 #include <asm/sclp.h>
 #include <asm/sections.h>
@@ -212,7 +212,7 @@ static void check_cleared_facilities(void)
 
 	for (i = 0; i < ARRAY_SIZE(als); i++) {
 		if ((stfle_fac_list[i] & als[i]) != als[i]) {
-			sclp_early_printk("Warning: The Linux kernel requires facilities cleared via command line option\n");
+			sclp_early_printk("Warning: The freax kernel requires facilities cleared via command line option\n");
 			print_missing_facilities();
 			break;
 		}

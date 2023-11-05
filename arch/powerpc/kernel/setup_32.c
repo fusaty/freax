@@ -3,25 +3,25 @@
  * Common prep/pmac/chrp boot and setup code.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/tty.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/nvram.h>
-#include <linux/pgtable.h>
-#include <linux/of_fdt.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/initrd.h>
+#include <freax/tty.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/cpu.h>
+#include <freax/console.h>
+#include <freax/memblock.h>
+#include <freax/export.h>
+#include <freax/nvram.h>
+#include <freax/pgtable.h>
+#include <freax/of_fdt.h>
+#include <freax/irq.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -32,7 +32,7 @@
 #include <asm/bootx.h>
 #include <asm/btext.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/pmac_feature.h>
 #include <asm/sections.h>
 #include <asm/nvram.h>

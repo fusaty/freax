@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/ip.h>
 #include "internal.h"
 #include "afs_cm.h"
 #include "protocol_yfs.h"

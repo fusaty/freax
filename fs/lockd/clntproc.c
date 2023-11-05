@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/clntproc.c
+ * freax/fs/lockd/clntproc.c
  *
  * RPC procedures for the client side NLM implementation
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/nfs_fs.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/nfs_fs.h>
+#include <freax/utsname.h>
+#include <freax/freezer.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/lockd/lockd.h>
 
 #include "trace.h"
 
@@ -663,7 +663,7 @@ nlmclnt_reclaim(struct nlm_host *host, struct file_lock *fl,
 	 * FIXME: This is a serious failure. We can
 	 *
 	 *  a.	Ignore the problem
-	 *  b.	Send the owning process some signal (Linux doesn't have
+	 *  b.	Send the owning process some signal (freax doesn't have
 	 *	SIGLOST, though...)
 	 *  c.	Retry the operation
 	 *

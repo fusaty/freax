@@ -43,15 +43,15 @@
 /* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA */
 /*                                                                           */
 /* Bugs/Comments/Suggestions should be mailed to:                            */
-/*      ipslinux@adaptec.com                                                 */
+/*      ipsfreax@adaptec.com                                                 */
 /*                                                                           */
 /*****************************************************************************/
 
 #ifndef _IPS_H_
    #define _IPS_H_
 
-#include <linux/nmi.h>
-#include <linux/uaccess.h>
+#include <freax/nmi.h>
+#include <freax/uaccess.h>
    #include <asm/io.h>
 
    /*
@@ -258,7 +258,7 @@
    #define IPS_OS_UNIXWARE              0x04
    #define IPS_OS_SOLARIS               0x05
    #define IPS_OS_OS2                   0x06
-   #define IPS_OS_LINUX                 0x07
+   #define IPS_OS_freax                 0x07
    #define IPS_OS_FREEBSD               0x08
 
    /*

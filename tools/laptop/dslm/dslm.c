@@ -13,7 +13,7 @@
 #include <string.h>
 #include <signal.h>
 #include <sys/ioctl.h>
-#include <linux/hdreg.h>
+#include <freax/hdreg.h>
 
 #ifdef DEBUG
 #define D(x) x

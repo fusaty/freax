@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/lib/vsprintf.c
+ *  freax/lib/vsprintf.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -17,34 +17,34 @@
  * - scnprintf and vscnprintf
  */
 
-#include <linux/stdarg.h>
-#include <linux/build_bug.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/errname.h>
-#include <linux/module.h>	/* for KSYM_SYMBOL_LEN */
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/ioport.h>
-#include <linux/dcache.h>
-#include <linux/cred.h>
-#include <linux/rtc.h>
-#include <linux/sprintf.h>
-#include <linux/time.h>
-#include <linux/uuid.h>
-#include <linux/of.h>
+#include <freax/stdarg.h>
+#include <freax/build_bug.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/errname.h>
+#include <freax/module.h>	/* for KSYM_SYMBOL_LEN */
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/kallsyms.h>
+#include <freax/math64.h>
+#include <freax/uaccess.h>
+#include <freax/ioport.h>
+#include <freax/dcache.h>
+#include <freax/cred.h>
+#include <freax/rtc.h>
+#include <freax/sprintf.h>
+#include <freax/time.h>
+#include <freax/uuid.h>
+#include <freax/of.h>
 #include <net/addrconf.h>
-#include <linux/siphash.h>
-#include <linux/compiler.h>
-#include <linux/property.h>
-#include <linux/notifier.h>
+#include <freax/siphash.h>
+#include <freax/compiler.h>
+#include <freax/property.h>
+#include <freax/notifier.h>
 #ifdef CONFIG_BLOCK
-#include <linux/blkdev.h>
+#include <freax/blkdev.h>
 #endif
 
 #include "../mm/internal.h"	/* For the trace_print_flags arrays */
@@ -53,7 +53,7 @@
 #include <asm/byteorder.h>	/* cpu_to_le16 */
 #include <asm/unaligned.h>
 
-#include <linux/string_helpers.h>
+#include <freax/string_helpers.h>
 #include "kstrtox.h"
 
 /* Disable pointer hashing if requested */

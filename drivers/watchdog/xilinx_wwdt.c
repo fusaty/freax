@@ -5,15 +5,15 @@
  * Copyright (C) 2022 - 2023, Advanced Micro Devices, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/math64.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/math64.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
 
 /* Max timeout is calculated at 100MHz source clock */
 #define XWWDT_DEFAULT_TIMEOUT	42

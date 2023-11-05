@@ -89,7 +89,7 @@ config PARISC
 	help
 	  The PA-RISC microprocessor is designed by Hewlett-Packard and used
 	  in many of their workstations & servers (HP9000 700 and 800 series,
-	  and later HP3000 series).  The PA-RISC Linux project home page is
+	  and later HP3000 series).  The PA-RISC freax project home page is
 	  at <https://parisc.wiki.kernel.org>.
 
 config CPU_BIG_ENDIAN
@@ -242,7 +242,7 @@ config MLONGCALLS
 	  If you configure the kernel to include many drivers built-in instead
 	  as modules, the kernel executable may become too big, so that the
 	  linker will not be able to resolve some long branches and fails to link
-	  your vmlinux kernel. In that case enabling this option will help you
+	  your vmfreax kernel. In that case enabling this option will help you
 	  to overcome this limit by using the -mlong-calls compiler option.
 
 	  Usually you want to say N here, unless you e.g. want to build

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_KCONFIG_H
-#define __LINUX_KCONFIG_H
+#ifndef __freax_KCONFIG_H
+#define __freax_KCONFIG_H
 
 #include <generated/autoconf.h>
 
@@ -72,4 +72,4 @@
  */
 #define IS_ENABLED(option) __or(IS_BUILTIN(option), IS_MODULE(option))
 
-#endif /* __LINUX_KCONFIG_H */
+#endif /* __freax_KCONFIG_H */

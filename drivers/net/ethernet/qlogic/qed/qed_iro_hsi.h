@@ -6,7 +6,7 @@
 #ifndef _QED_IRO_HSI_H
 #define _QED_IRO_HSI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	IRO_YSTORM_FLOW_CONTROL_MODE_GTT,

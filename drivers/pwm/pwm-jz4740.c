@@ -8,17 +8,17 @@
  *   reconfiguring the hardware.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/mfd/ingenic-tcu.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/mfd/ingenic-tcu.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
 
 struct soc_info {
 	unsigned int num_pwms;

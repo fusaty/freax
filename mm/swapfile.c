@@ -1,51 +1,51 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swapfile.c
+ *  freax/mm/swapfile.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  */
 
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/shmem_fs.h>
-#include <linux/blk-cgroup.h>
-#include <linux/random.h>
-#include <linux/writeback.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/mutex.h>
-#include <linux/capability.h>
-#include <linux/syscalls.h>
-#include <linux/memcontrol.h>
-#include <linux/poll.h>
-#include <linux/oom.h>
-#include <linux/swapfile.h>
-#include <linux/export.h>
-#include <linux/swap_slots.h>
-#include <linux/sort.h>
-#include <linux/completion.h>
-#include <linux/suspend.h>
-#include <linux/zswap.h>
+#include <freax/blkdev.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/hugetlb.h>
+#include <freax/mman.h>
+#include <freax/slab.h>
+#include <freax/kernel_stat.h>
+#include <freax/swap.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/namei.h>
+#include <freax/shmem_fs.h>
+#include <freax/blk-cgroup.h>
+#include <freax/random.h>
+#include <freax/writeback.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/ksm.h>
+#include <freax/rmap.h>
+#include <freax/security.h>
+#include <freax/backing-dev.h>
+#include <freax/mutex.h>
+#include <freax/capability.h>
+#include <freax/syscalls.h>
+#include <freax/memcontrol.h>
+#include <freax/poll.h>
+#include <freax/oom.h>
+#include <freax/swapfile.h>
+#include <freax/export.h>
+#include <freax/swap_slots.h>
+#include <freax/sort.h>
+#include <freax/completion.h>
+#include <freax/suspend.h>
+#include <freax/zswap.h>
 
 #include <asm/tlbflush.h>
-#include <linux/swapops.h>
-#include <linux/swap_cgroup.h>
+#include <freax/swapops.h>
+#include <freax/swap_cgroup.h>
 #include "internal.h"
 #include "swap.h"
 

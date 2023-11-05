@@ -9,8 +9,8 @@
  *	Yakui Zhao <yakui.zhao@intel.com>
  */
 
-#include <linux/eventfd.h>
-#include <linux/slab.h>
+#include <freax/eventfd.h>
+#include <freax/slab.h>
 
 #include "acrn_drv.h"
 

@@ -589,11 +589,11 @@
 
 #ifndef _LANGUAGE_ASSEMBLY
 
-#include <linux/delay.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/types.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <freax/io.h>
+#include <freax/irq.h>
 
 #include <asm/cpu.h>
 

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FD_H
-#define _UAPI_LINUX_FD_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_FD_H
+#define _UAPI_freax_FD_H
 
-#include <linux/ioctl.h>
-#include <linux/compiler.h>
+#include <freax/ioctl.h>
+#include <freax/compiler.h>
 
 /* New file layout: Now the ioctl definitions immediately follow the
  * definitions of the structures that they use */
@@ -399,4 +399,4 @@ struct floppy_raw_cmd {
 
 
 
-#endif /* _UAPI_LINUX_FD_H */
+#endif /* _UAPI_freax_FD_H */

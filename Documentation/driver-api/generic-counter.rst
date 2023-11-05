@@ -227,11 +227,11 @@ Driver API
 ==========
 
 Driver authors may utilize the Generic Counter interface in their code
-by including the include/linux/counter.h header file. This header file
+by including the include/freax/counter.h header file. This header file
 provides several core data structures, function prototypes, and macros
 for defining a counter device.
 
-.. kernel-doc:: include/linux/counter.h
+.. kernel-doc:: include/freax/counter.h
    :internal:
 
 .. kernel-doc:: drivers/counter/counter-core.c
@@ -496,7 +496,7 @@ Counter Character Device
 Counter character device nodes are created under the ``/dev`` directory
 as ``counterX``, where ``X`` is the respective counter device id.
 Defines for the standard Counter data types are exposed via the
-userspace ``include/uapi/linux/counter.h`` file.
+userspace ``include/uapi/freax/counter.h`` file.
 
 Counter events
 --------------
@@ -543,7 +543,7 @@ Userspace
 ---------
 Userspace applications can configure Counter events via ioctl operations
 on the Counter character device node. There following ioctl codes are
-supported and provided by the ``linux/counter.h`` userspace header file:
+supported and provided by the ``freax/counter.h`` userspace header file:
 
 * :c:macro:`COUNTER_ADD_WATCH_IOCTL`
 

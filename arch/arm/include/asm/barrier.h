@@ -6,8 +6,8 @@
 
 #define nop() __asm__ __volatile__("mov\tr0,r0\t@ nop\n\t");
 
-#if __LINUX_ARM_ARCH__ >= 7 ||		\
-	(__LINUX_ARM_ARCH__ == 6 && defined(CONFIG_CPU_32v6K))
+#if __freax_ARM_ARCH__ >= 7 ||		\
+	(__freax_ARM_ARCH__ == 6 && defined(CONFIG_CPU_32v6K))
 #define sev()	__asm__ __volatile__ ("sev" : : : "memory")
 #define wfe()	__asm__ __volatile__ ("wfe" : : : "memory")
 #define wfi()	__asm__ __volatile__ ("wfi" : : : "memory")
@@ -15,7 +15,7 @@
 #define wfe()	do { } while (0)
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 #define isb(option) __asm__ __volatile__ ("isb " #option : : : "memory")
 #define dsb(option) __asm__ __volatile__ ("dsb " #option : : : "memory")
 #define dmb(option) __asm__ __volatile__ ("dmb " #option : : : "memory")
@@ -25,7 +25,7 @@
 #define CSDB	".inst	0xe320f014"
 #endif
 #define csdb() __asm__ __volatile__(CSDB : : : "memory")
-#elif defined(CONFIG_CPU_XSC3) || __LINUX_ARM_ARCH__ == 6
+#elif defined(CONFIG_CPU_XSC3) || __freax_ARM_ARCH__ == 6
 #define isb(x) __asm__ __volatile__ ("mcr p15, 0, %0, c7, c5, 4" \
 				    : : "r" (0) : "memory")
 #define dsb(x) __asm__ __volatile__ ("mcr p15, 0, %0, c7, c10, 4" \

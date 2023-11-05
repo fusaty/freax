@@ -6,7 +6,7 @@
 #ifndef __I915_GEM_EVICT_H__
 #define __I915_GEM_EVICT_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_mm_node;
 struct i915_address_space;

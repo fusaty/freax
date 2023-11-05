@@ -18,10 +18,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/vmalloc.h>
+#include <freax/zlib.h>
 #include "internal.h"
 
 static z_stream stream;

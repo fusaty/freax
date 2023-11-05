@@ -6,7 +6,7 @@
 #ifndef CORESIGHT_SYSCFG_CONFIGFS_H
 #define CORESIGHT_SYSCFG_CONFIGFS_H
 
-#include <linux/configfs.h>
+#include <freax/configfs.h>
 #include "coresight-syscfg.h"
 
 #define CSCFG_FS_SUBSYS_NAME "cs-syscfg"

@@ -6,13 +6,13 @@
 # for more details.
 #
 
-LDFLAGS_vmlinux := -z norelro
+LDFLAGS_vmfreax := -z norelro
 ifeq ($(CONFIG_RELOCATABLE),y)
-	LDFLAGS_vmlinux += -shared -Bsymbolic -z notext --emit-relocs
+	LDFLAGS_vmfreax += -shared -Bsymbolic -z notext --emit-relocs
 	KBUILD_CFLAGS += -fPIE
 endif
 ifeq ($(CONFIG_DYNAMIC_FTRACE),y)
-	LDFLAGS_vmlinux += --no-relax
+	LDFLAGS_vmfreax += --no-relax
 	KBUILD_CPPFLAGS += -DCC_USING_PATCHABLE_FUNCTION_ENTRY
 ifeq ($(CONFIG_RISCV_ISA_C),y)
 	CC_FLAGS_FTRACE := -fpatchable-function-entry=4
@@ -159,7 +159,7 @@ BOOT_TARGETS := Image Image.gz loader loader.bin xipImage vmlinuz.efi
 
 all:	$(notdir $(KBUILD_IMAGE))
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 	@$(kecho) '  Kernel: $(boot)/$@ is ready'
 

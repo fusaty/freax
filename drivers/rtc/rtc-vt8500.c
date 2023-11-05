@@ -7,15 +7,15 @@
  * Based on rtc-pxa.c
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/bcd.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 
 /*
  * Register definitions

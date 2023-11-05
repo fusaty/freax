@@ -16,11 +16,11 @@
 #include <asm/ccwdev.h>
 #include <asm/debug.h>
 #include <asm/idals.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtio.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mtio.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
 
 struct gendisk;
 

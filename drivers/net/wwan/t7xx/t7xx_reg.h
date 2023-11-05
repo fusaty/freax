@@ -9,17 +9,17 @@
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
 #ifndef __T7XX_REG_H__
 #define __T7XX_REG_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* Device base address offset */
 #define MHCCIF_RC_DEV_BASE			0x10024000
@@ -105,7 +105,7 @@ enum t7xx_pm_resume_state {
 #define MISC_STAGE_MASK				GENMASK(2, 0)
 #define MISC_RESET_TYPE_PLDR			BIT(26)
 #define MISC_RESET_TYPE_FLDR			BIT(27)
-#define LINUX_STAGE				4
+#define freax_STAGE				4
 
 #define T7XX_PCIE_RESOURCE_STATUS		0x0d28
 #define T7XX_PCIE_RESOURCE_STS_MSK		GENMASK(4, 0)

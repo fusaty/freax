@@ -8,7 +8,7 @@
 #ifndef _KEYS_SYSTEM_KEYRING_H
 #define _KEYS_SYSTEM_KEYRING_H
 
-#include <linux/key.h>
+#include <freax/key.h>
 
 enum blacklist_hash_type {
 	/* TBSCertificate hash */

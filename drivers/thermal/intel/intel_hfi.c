@@ -4,8 +4,8 @@
  *
  * Copyright (c) 2021, Intel Corporation.
  *
- * Authors: Aubrey Li <aubrey.li@linux.intel.com>
- *          Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
+ * Authors: Aubrey Li <aubrey.li@freax.intel.com>
+ *          Ricardo Neri <ricardo.neri-calderon@freax.intel.com>
  *
  *
  * The Hardware Feedback Interface provides a performance and energy efficiency
@@ -21,22 +21,22 @@
 
 #define pr_fmt(fmt)  "intel-hfi: " fmt
 
-#include <linux/bitops.h>
-#include <linux/cpufeature.h>
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math.h>
-#include <linux/mutex.h>
-#include <linux/percpu-defs.h>
-#include <linux/printk.h>
-#include <linux/processor.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/topology.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/cpufeature.h>
+#include <freax/cpumask.h>
+#include <freax/gfp.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/math.h>
+#include <freax/mutex.h>
+#include <freax/percpu-defs.h>
+#include <freax/printk.h>
+#include <freax/processor.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/topology.h>
+#include <freax/workqueue.h>
 
 #include <asm/msr.h>
 

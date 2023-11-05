@@ -5,10 +5,10 @@
  * Copyright (C) 2006 Christoph Pfister (christophpfister@gmail.com)
  */
 
-#ifndef __LINUX_INT_LOG_H
-#define __LINUX_INT_LOG_H
+#ifndef __freax_INT_LOG_H
+#define __freax_INT_LOG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * intlog2 - computes log2 of a value; the result is shifted left by 24 bits

@@ -1,17 +1,17 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * L2TP-over-IP socket for L2TPv3.
  *
  * Author: James Chapman <jchapman@katalix.com>
  */
 
-#ifndef _UAPI_LINUX_L2TP_H_
-#define _UAPI_LINUX_L2TP_H_
+#ifndef _UAPI_freax_L2TP_H_
+#define _UAPI_freax_L2TP_H_
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 /**
  * struct sockaddr_l2tpip - the sockaddr structure for L2TP-over-IP sockets
@@ -200,4 +200,4 @@ enum l2tp_debug_flags {
 #define L2TP_GENL_VERSION	0x1
 #define L2TP_GENL_MCGROUP       "l2tp"
 
-#endif /* _UAPI_LINUX_L2TP_H_ */
+#endif /* _UAPI_freax_L2TP_H_ */

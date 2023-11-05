@@ -3,15 +3,15 @@
  * Copyright (c) 2016, Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reboot-mode.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/reboot-mode.h>
 
 struct syscon_reboot_mode {
 	struct regmap *map;

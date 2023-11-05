@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2023 Meta, Inc */
-#include <linux/bpf.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/cpumask.h>
+#include <freax/bpf.h>
+#include <freax/bpf_mem_alloc.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/cpumask.h>
 
 /**
  * struct bpf_cpumask - refcounted BPF cpumask wrapper structure
@@ -16,7 +16,7 @@
  * Note that we explicitly embed a cpumask_t rather than a cpumask_var_t.  This
  * is done to avoid confusing the verifier due to the typedef of cpumask_var_t
  * changing depending on whether CONFIG_CPUMASK_OFFSTACK is defined or not. See
- * the details in <linux/cpumask.h>. The consequence is that this structure is
+ * the details in <freax/cpumask.h>. The consequence is that this structure is
  * likely a bit larger than it needs to be when CONFIG_CPUMASK_OFFSTACK is
  * defined due to embedding the whole NR_CPUS-size bitmap, but the extra memory
  * overhead is minimal. For the more typical case of CONFIG_CPUMASK_OFFSTACK

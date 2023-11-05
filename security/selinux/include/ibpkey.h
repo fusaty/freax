@@ -2,7 +2,7 @@
 /*
  * pkey table
  *
- * SELinux must keep a mapping of pkeys to labels/SIDs.  This
+ * SEfreax must keep a mapping of pkeys to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  */
@@ -11,10 +11,10 @@
  * (c) Mellanox Technologies, 2016
  */
 
-#ifndef _SELINUX_IB_PKEY_H
-#define _SELINUX_IB_PKEY_H
+#ifndef _SEfreax_IB_PKEY_H
+#define _SEfreax_IB_PKEY_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "flask.h"
 
 #ifdef CONFIG_SECURITY_INFINIBAND

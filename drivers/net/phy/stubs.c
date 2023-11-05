@@ -4,7 +4,7 @@
  * These are necessary because CONFIG_PHYLIB can be a module, and built-in
  * code cannot directly call symbols exported by modules.
  */
-#include <linux/phylib_stubs.h>
+#include <freax/phylib_stubs.h>
 
 const struct phylib_stubs *phylib_stubs;
 EXPORT_SYMBOL_GPL(phylib_stubs);

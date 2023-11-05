@@ -14,17 +14,17 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2008
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/audit.h>
+#include <freax/audit.h>
 
 #include "netlabel_addrlist.h"
 

@@ -11,14 +11,14 @@
 	Supported chipsets: RT2561, RT2561s, RT2661.
  */
 
-#include <linux/crc-itu-t.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/eeprom_93cx6.h>
+#include <freax/crc-itu-t.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/eeprom_93cx6.h>
 
 #include "rt2x00.h"
 #include "rt2x00mmio.h"

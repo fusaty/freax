@@ -9,17 +9,17 @@
  *	Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/wireless.h>
 #include <net/cfg80211.h>
 #include <net/iw_handler.h>
-#include <linux/string.h>
-#include <linux/if_arp.h>
-#include <linux/firmware.h>
+#include <freax/string.h>
+#include <freax/if_arp.h>
+#include <freax/firmware.h>
 #include "zd1201.h"
 
 static const struct usb_device_id zd1201_table[] = {
@@ -64,7 +64,7 @@ static int zd1201_fw_upload(struct usb_device *dev, int apfw)
 	if (err) {
 		dev_err(&dev->dev, "Failed to load %s firmware file!\n", fwfile);
 		dev_err(&dev->dev, "Make sure the hotplug firmware loader is installed.\n");
-		dev_err(&dev->dev, "Goto http://linux-lc100020.sourceforge.net for more info.\n");
+		dev_err(&dev->dev, "Goto http://freax-lc100020.sourceforge.net for more info.\n");
 		return err;
 	}
 

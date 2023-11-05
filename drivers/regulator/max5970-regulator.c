@@ -7,21 +7,21 @@
  * Author: Patrick Rudolph <patrick.rudolph@9elements.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/platform_device.h>
 
-#include <linux/mfd/max5970.h>
+#include <freax/mfd/max5970.h>
 
 struct max5970_regulator {
 	int num_switches, mon_rng, irng, shunt_micro_ohms, lim_uA;

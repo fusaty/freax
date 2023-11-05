@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/char/ppdev.c
+ * freax/drivers/char/ppdev.c
  *
  * This is the code behind /dev/parport* -- it allows a user-space
  * application to use the parport subsystem.
@@ -52,20 +52,20 @@
  * Added GETFLAGS/SETFLAGS ioctls, Fred Barnes, 04/2001
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/device.h>
-#include <linux/ioctl.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/ppdev.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched/signal.h>
+#include <freax/device.h>
+#include <freax/ioctl.h>
+#include <freax/parport.h>
+#include <freax/ctype.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/major.h>
+#include <freax/ppdev.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/compat.h>
 
 #define PP_VERSION "ppdev: user-space parallel port driver"
 #define CHRDEV "ppdev"

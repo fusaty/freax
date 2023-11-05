@@ -11,13 +11,13 @@
  * interface such as RFM69HCW, RFM12, RFM95 and so on.
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <freax@wolf-entwicklungen.de>
  */
 
 #ifndef PI433_H
 #define PI433_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "rf69_enum.h"
 
 /*---------------------------------------------------------------------------*/

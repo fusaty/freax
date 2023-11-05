@@ -2,7 +2,7 @@
 /*
  * OpenRISC traps.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -15,20 +15,20 @@
  *  things.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/extable.h>
-#include <linux/kmod.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/extable.h>
+#include <freax/kmod.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/timer.h>
+#include <freax/mm.h>
+#include <freax/kallsyms.h>
+#include <freax/uaccess.h>
 
 #include <asm/bug.h>
 #include <asm/io.h>

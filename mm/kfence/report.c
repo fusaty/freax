@@ -5,17 +5,17 @@
  * Copyright (C) 2020, Google LLC.
  */
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/math.h>
-#include <linux/printk.h>
-#include <linux/sched/debug.h>
-#include <linux/seq_file.h>
-#include <linux/sprintf.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/lockdep.h>
+#include <freax/math.h>
+#include <freax/printk.h>
+#include <freax/sched/debug.h>
+#include <freax/seq_file.h>
+#include <freax/sprintf.h>
+#include <freax/stacktrace.h>
+#include <freax/string.h>
 #include <trace/events/error_report.h>
 
 #include <asm/kfence.h>

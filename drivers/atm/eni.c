@@ -4,25 +4,25 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/init.h>
-#include <linux/atm_eni.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/sonet.h>
+#include <freax/skbuff.h>
+#include <freax/time.h>
+#include <freax/delay.h>
+#include <freax/uio.h>
+#include <freax/init.h>
+#include <freax/atm_eni.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
 #include <asm/io.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/uaccess.h>
 #include <asm/string.h>
 #include <asm/byteorder.h>
 

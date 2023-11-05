@@ -7,9 +7,9 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/cpufreq.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/cell-regs.h>

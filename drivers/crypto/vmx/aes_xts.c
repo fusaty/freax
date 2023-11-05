@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2015 International Business Machines Inc.
  *
- * Author: Leonidas S. Barbosa <leosilva@linux.vnet.ibm.com>
+ * Author: Leonidas S. Barbosa <leosilva@freax.vnet.ibm.com>
  */
 
 #include <asm/simd.h>

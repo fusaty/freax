@@ -3,14 +3,14 @@
  * comedi_8255.h
  * Generic 8255 digital I/O subdevice support
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDI_8255_H
 #define _COMEDI_8255_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 #define I8255_SIZE		0x04
 

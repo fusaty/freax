@@ -5,22 +5,22 @@
  *	    Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  *	    Sjur Brendeland
  */
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/virtio.h>
-#include <linux/vringh.h>
-#include <linux/debugfs.h>
-#include <linux/spinlock.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_caif.h>
-#include <linux/virtio_ring.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/if_arp.h>
+#include <freax/virtio.h>
+#include <freax/vringh.h>
+#include <freax/debugfs.h>
+#include <freax/spinlock.h>
+#include <freax/genalloc.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_caif.h>
+#include <freax/virtio_ring.h>
+#include <freax/dma-mapping.h>
 #include <net/caif/caif_dev.h>
-#include <linux/virtio_config.h>
+#include <freax/virtio_config.h>
 
 MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Vicram Arv");

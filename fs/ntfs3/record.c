@@ -5,7 +5,7 @@
  *
  */
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "debug.h"
 #include "ntfs.h"

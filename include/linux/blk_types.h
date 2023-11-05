@@ -3,13 +3,13 @@
  * Block data types and constants.  Directly include this file only to
  * break include dependency loop.
  */
-#ifndef __LINUX_BLK_TYPES_H
-#define __LINUX_BLK_TYPES_H
+#ifndef __freax_BLK_TYPES_H
+#define __freax_BLK_TYPES_H
 
-#include <linux/types.h>
-#include <linux/bvec.h>
-#include <linux/device.h>
-#include <linux/ktime.h>
+#include <freax/types.h>
+#include <freax/bvec.h>
+#include <freax/device.h>
+#include <freax/ktime.h>
 
 struct bio_set;
 struct bio;
@@ -22,7 +22,7 @@ struct bio_crypt_ctx;
 
 /*
  * The basic unit of block I/O is a sector. It is used in a number of contexts
- * in Linux (blk, bio, genhd). The size of one sector is 512 = 2**9
+ * in freax (blk, bio, genhd). The size of one sector is 512 = 2**9
  * bytes. Variables of type sector_t represent an offset or size that is a
  * multiple of 512 bytes. Hence these two constants.
  */
@@ -540,4 +540,4 @@ struct blk_rq_stat {
 	u64 batch;
 };
 
-#endif /* __LINUX_BLK_TYPES_H */
+#endif /* __freax_BLK_TYPES_H */

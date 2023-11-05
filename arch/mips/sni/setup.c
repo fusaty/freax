@@ -5,15 +5,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1996, 97, 98, 2000, 03, 04, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 97, 98, 2000, 03, 04, 06 Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2006,2007 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
-#include <linux/eisa.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/screen_info.h>
+#include <freax/eisa.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/console.h>
+#include <freax/fb.h>
+#include <freax/screen_info.h>
 
 #ifdef CONFIG_FW_ARC
 #include <asm/fw/arc/types.h>
@@ -235,7 +235,7 @@ void __init plat_mem_setup(void)
 
 #ifdef CONFIG_PCI
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <video/vga.h>
 #include <video/cirrus.h>
 

@@ -9,7 +9,7 @@
  *	(c) 1999/2000 Henning Zabel <henning@uni-paderborn.de>
  *
  *
- * The driver brings the USB functions of the MDC800 to Linux.
+ * The driver brings the USB functions of the MDC800 to freax.
  * To use the Camera you must support the USB Protocol of the camera
  * to the Kernel Node.
  * The Driver uses a misc device Node. Create it with :
@@ -72,20 +72,20 @@
  * (20/10/1999)
  */
 
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <freax/sched/signal.h>
+#include <freax/signal.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/random.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
 
-#include <linux/usb.h>
-#include <linux/fs.h>
+#include <freax/usb.h>
+#include <freax/fs.h>
 
 /*
  * Version Information

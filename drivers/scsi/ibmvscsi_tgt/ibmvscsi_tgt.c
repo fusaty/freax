@@ -8,21 +8,21 @@
  * Copyright (C) 2005-2011 FUJITA Tomonori <tomof@acm.org>
  * Copyright (C) 2010 Nicholas A. Bellinger <nab@kernel.org>
  *
- * Authors: Bryant G. Ly <bryantly@linux.vnet.ibm.com>
- * Authors: Michael Cyr <mikecyr@linux.vnet.ibm.com>
+ * Authors: Bryant G. Ly <bryantly@freax.vnet.ibm.com>
+ * Authors: Michael Cyr <mikecyr@freax.vnet.ibm.com>
  *
  ****************************************************************************/
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/of.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
@@ -1565,7 +1565,7 @@ static long ibmvscsis_adapter_info(struct scsi_info *vscsi,
 		sizeof(info->partition_name));
 	info->partition_number = cpu_to_be32(vscsi->dds.partition_num);
 	info->mad_version = cpu_to_be32(MAD_VERSION_1);
-	info->os_type = cpu_to_be32(LINUX);
+	info->os_type = cpu_to_be32(freax);
 	memset(&info->port_max_txu[0], 0, sizeof(info->port_max_txu));
 	info->port_max_txu[0] = cpu_to_be32(MAX_TXU);
 
@@ -2528,7 +2528,7 @@ static long ibmvscsis_parse_command(struct scsi_info *vscsi,
 		switch (crq->format) {
 		case OS400_FORMAT:
 		case AIX_FORMAT:
-		case LINUX_FORMAT:
+		case freax_FORMAT:
 		case MAD_FORMAT:
 			if (vscsi->flags & PROCESSING_MAD) {
 				rc = ERROR;
@@ -4021,7 +4021,7 @@ static struct vio_driver ibmvscsis_driver = {
  * ibmvscsis_init() - Kernel Module initialization
  *
  * Note: vio_register_driver() registers callback functions, and at least one
- * of those callback functions calls TCM - Linux IO Target Subsystem, thus
+ * of those callback functions calls TCM - freax IO Target Subsystem, thus
  * the SCSI Target template must be registered before vio_register_driver()
  * is called.
  */

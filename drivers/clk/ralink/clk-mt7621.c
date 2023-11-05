@@ -4,15 +4,15 @@
  * Author: Sergio Paracuellos <sergio.paracuellos@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk-provider.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
 #include <dt-bindings/clock/mt7621-clk.h>
 #include <dt-bindings/reset/mt7621-reset.h>
 

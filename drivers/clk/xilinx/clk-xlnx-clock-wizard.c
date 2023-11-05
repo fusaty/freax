@@ -8,17 +8,17 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/iopoll.h>
+#include <freax/bitfield.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/iopoll.h>
 
 #define WZRD_NUM_OUTPUTS	7
 #define WZRD_ACLK_MAX_FREQ	250000000UL

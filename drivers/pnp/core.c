@@ -5,17 +5,17 @@
  * Copyright 2002 Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
+#include <freax/pnp.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/dma-mapping.h>
 
 #include "base.h"
 

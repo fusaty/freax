@@ -5,7 +5,7 @@
  *
  * Copyright 2023 Intel Corporation.
  */
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/sof.h>
 #include "sof_nuvoton_common.h"
 

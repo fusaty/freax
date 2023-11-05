@@ -13,21 +13,21 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/drbd.h>
-#include <linux/in.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/blkpg.h>
-#include <linux/cpumask.h>
+#include <freax/module.h>
+#include <freax/drbd.h>
+#include <freax/in.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/blkpg.h>
+#include <freax/cpumask.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h"
 #include "drbd_state_change.h"
 #include <asm/unaligned.h>
-#include <linux/drbd_limits.h>
-#include <linux/kthread.h>
+#include <freax/drbd_limits.h>
+#include <freax/kthread.h>
 
 #include <net/genetlink.h>
 
@@ -73,9 +73,9 @@ int drbd_adm_dump_peer_devices(struct sk_buff *skb, struct netlink_callback *cb)
 int drbd_adm_dump_peer_devices_done(struct netlink_callback *cb);
 int drbd_adm_get_initial_state(struct sk_buff *skb, struct netlink_callback *cb);
 
-#include <linux/drbd_genl_api.h>
+#include <freax/drbd_genl_api.h>
 #include "drbd_nla.h"
-#include <linux/genl_magic_func.h>
+#include <freax/genl_magic_func.h>
 
 static atomic_t drbd_genl_seq = ATOMIC_INIT(2); /* two. */
 static atomic_t notify_genl_seq = ATOMIC_INIT(2); /* two. */
@@ -354,7 +354,7 @@ static void setup_khelper_env(struct drbd_connection *connection, char **envp)
 int drbd_khelper(struct drbd_device *device, char *cmd)
 {
 	char *envp[] = { "HOME=/",
-			"TERM=linux",
+			"TERM=freax",
 			"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 			 (char[20]) { }, /* address family */
 			 (char[60]) { }, /* address */
@@ -406,7 +406,7 @@ int drbd_khelper(struct drbd_device *device, char *cmd)
 enum drbd_peer_state conn_khelper(struct drbd_connection *connection, char *cmd)
 {
 	char *envp[] = { "HOME=/",
-			"TERM=linux",
+			"TERM=freax",
 			"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 			 (char[20]) { }, /* address family */
 			 (char[60]) { }, /* address */

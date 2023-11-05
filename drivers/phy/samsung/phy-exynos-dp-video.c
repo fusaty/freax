@@ -6,16 +6,16 @@
  * Author: Jingoo Han <jg1.han@samsung.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/soc/samsung/exynos-regs-pmu.h>
 
 struct exynos_dp_video_phy_drvdata {
 	u32 phy_ctrl_offset;

@@ -6,16 +6,16 @@
  * Copyright (C) 2023, Christophe Branchereau <cbranchereau@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/media-bus-format.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>

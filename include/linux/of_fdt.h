@@ -6,12 +6,12 @@
  * benh@kernel.crashing.org
  */
 
-#ifndef _LINUX_OF_FDT_H
-#define _LINUX_OF_FDT_H
+#ifndef _freax_OF_FDT_H
+#define _freax_OF_FDT_H
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/errno.h>
 
 /* Definitions used by the flattened device tree */
 #define OF_DT_HEADER		0xd00dfeed	/* marker */
@@ -94,4 +94,4 @@ static inline void unflatten_and_copy_device_tree(void) {}
 #endif /* CONFIG_OF_EARLY_FLATTREE */
 
 #endif /* __ASSEMBLY__ */
-#endif /* _LINUX_OF_FDT_H */
+#endif /* _freax_OF_FDT_H */

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "libgcc.h"
 

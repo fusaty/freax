@@ -10,7 +10,7 @@
 
 #define pr_fmt(fmt) "fs-verity: " fmt
 
-#include <linux/fsverity.h>
+#include <freax/fsverity.h>
 
 /*
  * Implementation limit: maximum depth of the Merkle tree.  For now 8 is plenty;

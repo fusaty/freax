@@ -7,21 +7,21 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
+#include <freax/sched.h>
+#include <freax/splice.h>
+#include <freax/mount.h>
+#include <freax/writeback.h>
+#include <freax/falloc.h>
+#include <freax/quotaops.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
 
 #include <cluster/masklog.h>
 

@@ -4,10 +4,10 @@
  */
 
 #include <asm/io.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
 
 #define IP30_LED_SYSTEM	0
 #define IP30_LED_FAULT	1

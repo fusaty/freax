@@ -4,11 +4,11 @@
  * Copyright (C) 2016 Zodiac Inflight Innovations
  */
 
-#include <linux/kernel.h>
-#include <linux/rmi.h>
-#include <linux/firmware.h>
+#include <freax/kernel.h>
+#include <freax/rmi.h>
+#include <freax/firmware.h>
 #include <asm/unaligned.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "rmi_driver.h"
 #include "rmi_f34.h"

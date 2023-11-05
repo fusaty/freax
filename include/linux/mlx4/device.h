@@ -33,17 +33,17 @@
 #ifndef MLX4_DEVICE_H
 #define MLX4_DEVICE_H
 
-#include <linux/auxiliary_bus.h>
-#include <linux/if_ether.h>
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/radix-tree.h>
-#include <linux/cpu_rmap.h>
-#include <linux/crash_dump.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/if_ether.h>
+#include <freax/pci.h>
+#include <freax/completion.h>
+#include <freax/radix-tree.h>
+#include <freax/cpu_rmap.h>
+#include <freax/crash_dump.h>
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
-#include <linux/timecounter.h>
+#include <freax/timecounter.h>
 
 #define DEFAULT_UAR_PAGE_SHIFT  12
 

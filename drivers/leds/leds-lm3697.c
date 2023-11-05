@@ -2,17 +2,17 @@
 // TI LM3697 LED chip family driver
 // Copyright (C) 2018 Texas Instruments Incorporated - https://www.ti.com/
 
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
 
-#include <linux/leds-ti-lmu-common.h>
+#include <freax/leds-ti-lmu-common.h>
 
 #define LM3697_REV			0x0
 #define LM3697_RESET			0x1

@@ -7,25 +7,25 @@
 //
 // Author: Liam Girdwood <lrg@slimlogic.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/async.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/suspend.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regulator/coupler.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/module.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/regulator.h>

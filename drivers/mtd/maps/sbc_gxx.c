@@ -32,14 +32,14 @@ separate MTD devices.
 
 // Includes
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
 #include <asm/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
 
 // Defines
 

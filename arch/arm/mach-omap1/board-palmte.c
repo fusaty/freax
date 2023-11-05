@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-palmte.c
+ * freax/arch/arm/mach-omap1/board-palmte.c
  *
  * Modified from board-generic.c
  *
@@ -8,27 +8,27 @@
  *
  * Original version : Laurent Gonzalez
  *
- * Maintainers : http://palmtelinux.sf.net
- *                palmtelinux-developpers@lists.sf.net
+ * Maintainers : http://palmtefreax.sf.net
+ *                palmtefreax-developpers@lists.sf.net
  *
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  */
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/apm-emulation.h>
-#include <linux/omapfb.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/spi/spi.h>
+#include <freax/interrupt.h>
+#include <freax/apm-emulation.h>
+#include <freax/omapfb.h>
+#include <freax/omap-dma.h>
+#include <freax/platform_data/keypad-omap.h>
+#include <freax/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

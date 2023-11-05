@@ -14,8 +14,8 @@
 #include "visl-trace-h264.h"
 #include "visl-trace-hevc.h"
 
-#include <linux/delay.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/tpg/v4l2-tpg.h>
 

@@ -3,13 +3,13 @@
  * Copyright 2019 Inspur Corp.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/hwmon-sysfs.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/pmbus.h>
+#include <freax/hwmon-sysfs.h>
 
 #include "pmbus.h"
 

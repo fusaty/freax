@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-2-Clause) */
 /*
     This file defines the kernel interface of FUSE
     Copyright (C) 2001-2008  Miklos Szeredi <miklos@szeredi.hu>
@@ -213,11 +213,11 @@
  *  - add FUSE_STATX and related structures
  */
 
-#ifndef _LINUX_FUSE_H
-#define _LINUX_FUSE_H
+#ifndef _freax_FUSE_H
+#define _freax_FUSE_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <freax/types.h>
 #else
 #include <stdint.h>
 #endif
@@ -275,7 +275,7 @@ struct fuse_attr {
 
 /*
  * The following structures are bit-for-bit compatible with the statx(2) ABI in
- * Linux.
+ * freax.
  */
 struct fuse_sx_time {
 	int64_t		tv_sec;
@@ -399,7 +399,7 @@ struct fuse_file_lock {
  *			Upon write/truncate suid/sgid is only killed if caller
  *			does not have CAP_FSETID. Additionally upon
  *			write/truncate sgid is killed only if file has group
- *			execute permission. (Same as Linux VFS behavior).
+ *			execute permission. (Same as freax VFS behavior).
  * FUSE_SETXATTR_EXT:	Server supports extended struct fuse_setxattr_in
  * FUSE_INIT_EXT: extended fuse_init_in request
  * FUSE_INIT_RESERVED: reserved, do not use
@@ -1151,4 +1151,4 @@ struct fuse_supp_groups {
 	uint32_t	groups[];
 };
 
-#endif /* _LINUX_FUSE_H */
+#endif /* _freax_FUSE_H */

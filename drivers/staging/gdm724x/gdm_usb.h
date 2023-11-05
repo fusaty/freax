@@ -4,10 +4,10 @@
 #ifndef _GDM_USB_H_
 #define _GDM_USB_H_
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/list.h>
-#include <linux/time.h>
+#include <freax/types.h>
+#include <freax/usb.h>
+#include <freax/list.h>
+#include <freax/time.h>
 
 #include "gdm_endian.h"
 #include "hci_packet.h"

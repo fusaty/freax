@@ -2,7 +2,7 @@
 #ifndef __RZV2M_USB3DRD_H
 #define __RZV2M_USB3DRD_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct rzv2m_usb3drd {
 	void __iomem *reg;

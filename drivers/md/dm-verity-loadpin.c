@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/dm-verity-loadpin.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/dm-verity-loadpin.h>
 
 #include "dm.h"
 #include "dm-core.h"

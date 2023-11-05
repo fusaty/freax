@@ -9,7 +9,7 @@
 #ifndef _INET6_CONNECTION_SOCK_H
 #define _INET6_CONNECTION_SOCK_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct flowi;
 struct flowi6;

@@ -9,25 +9,25 @@
  * Copyright (C) 2011-2012 Red Hat, Inc., Peter Zijlstra
  */
 
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>	/* read_mapping_page */
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/export.h>
-#include <linux/rmap.h>		/* anon_vma_prepare */
-#include <linux/mmu_notifier.h>	/* set_pte_at_notify */
-#include <linux/swap.h>		/* folio_free_swap */
-#include <linux/ptrace.h>	/* user_enable_single_step */
-#include <linux/kdebug.h>	/* notifier mechanism */
-#include <linux/percpu-rwsem.h>
-#include <linux/task_work.h>
-#include <linux/shmem_fs.h>
-#include <linux/khugepaged.h>
+#include <freax/kernel.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>	/* read_mapping_page */
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/export.h>
+#include <freax/rmap.h>		/* anon_vma_prepare */
+#include <freax/mmu_notifier.h>	/* set_pte_at_notify */
+#include <freax/swap.h>		/* folio_free_swap */
+#include <freax/ptrace.h>	/* user_enable_single_step */
+#include <freax/kdebug.h>	/* notifier mechanism */
+#include <freax/percpu-rwsem.h>
+#include <freax/task_work.h>
+#include <freax/shmem_fs.h>
+#include <freax/khugepaged.h>
 
-#include <linux/uprobes.h>
+#include <freax/uprobes.h>
 
 #define UINSNS_PER_PAGE			(PAGE_SIZE/UPROBE_XOL_SLOT_BYTES)
 #define MAX_UPROBE_XOL_SLOTS		UINSNS_PER_PAGE

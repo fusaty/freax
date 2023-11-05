@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 static DEFINE_SPINLOCK(sun9i_a80_cpus_lock);
 

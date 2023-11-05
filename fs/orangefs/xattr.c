@@ -7,15 +7,15 @@
  */
 
 /*
- *  Linux VFS extended attribute operations.
+ *  freax VFS extended attribute operations.
  */
 
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/hashtable.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/xattr.h>
+#include <freax/hashtable.h>
 
 #define SYSTEM_ORANGEFS_KEY "system.pvfs2."
 #define SYSTEM_ORANGEFS_KEY_LEN 13

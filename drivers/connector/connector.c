@@ -6,18 +6,18 @@
  * All rights reserved.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
 #include <net/netlink.h>
-#include <linux/moduleparam.h>
-#include <linux/connector.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
+#include <freax/moduleparam.h>
+#include <freax/connector.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/proc_fs.h>
+#include <freax/spinlock.h>
 
 #include <net/sock.h>
 

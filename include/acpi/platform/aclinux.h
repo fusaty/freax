@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0 */
 /******************************************************************************
  *
- * Name: aclinux.h - OS specific defines, etc. for Linux
+ * Name: acfreax.h - OS specific defines, etc. for freax
  *
  * Copyright (C) 2000 - 2023, Intel Corp.
  *
  *****************************************************************************/
 
-#ifndef __ACLINUX_H__
-#define __ACLINUX_H__
+#ifndef __ACfreax_H__
+#define __ACfreax_H__
 
 #ifdef __KERNEL__
 
 /* ACPICA external files should not include ACPICA headers directly. */
 
-#if !defined(BUILDING_ACPICA) && !defined(_LINUX_ACPI_H)
-#error "Please don't include <acpi/acpi.h> directly, include <linux/acpi.h> instead."
+#if !defined(BUILDING_ACPICA) && !defined(_freax_ACPI_H)
+#error "Please don't include <acpi/acpi.h> directly, include <freax/acpi.h> instead."
 #endif
 
 #endif
@@ -49,16 +49,16 @@
 #define ACPI_MUTEX_DEBUG
 #endif
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/spinlock_types.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/ctype.h>
+#include <freax/sched.h>
+#include <freax/atomic.h>
+#include <freax/math64.h>
+#include <freax/slab.h>
+#include <freax/spinlock_types.h>
 #ifdef EXPORT_ACPI_INTERFACES
-#include <linux/export.h>
+#include <freax/export.h>
 #endif
 #ifdef CONFIG_ACPI
 #include <asm/acenv.h>
@@ -119,7 +119,7 @@
 #define ACPI_TO_INTEGER(p)                  ((uintptr_t)(p))
 #define ACPI_OFFSET(d, f)                   offsetof(d, f)
 
-/* Use native linux version of acpi_os_allocate_zeroed */
+/* Use native freax version of acpi_os_allocate_zeroed */
 
 #define USE_NATIVE_ALLOCATE_ZEROED
 
@@ -171,7 +171,7 @@
 #define ACPI_MSG_BIOS_WARNING   KERN_WARNING "ACPI BIOS Warning (bug): "
 
 /*
- * Linux wants to use designated initializers for function pointer structs.
+ * freax wants to use designated initializers for function pointer structs.
  */
 #define ACPI_STRUCT_INIT(field, value)	.field = value
 
@@ -222,4 +222,4 @@
 
 #endif				/* __KERNEL__ */
 
-#endif				/* __ACLINUX_H__ */
+#endif				/* __ACfreax_H__ */

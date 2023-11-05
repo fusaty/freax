@@ -5,9 +5,9 @@
  *  Copyright (C) 2010 Sameer Ahmad, Lantiq GmbH
  */
 
-#include <linux/ioport.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include <lantiq_soc.h>
 

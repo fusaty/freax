@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 #ifdef CONFIG_HOTPLUG_CPU
 #define ARM_CPU_DISCARD(x)
@@ -28,7 +28,7 @@
 
 /*
  * ld.lld does not support NOCROSSREFS:
- * https://github.com/ClangBuiltLinux/linux/issues/1609
+ * https://github.com/ClangBuiltfreax/freax/issues/1609
  */
 #ifdef CONFIG_LD_IS_LLD
 #define NOCROSSREFS

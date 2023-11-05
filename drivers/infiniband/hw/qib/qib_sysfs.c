@@ -31,7 +31,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include <rdma/ib_sysfs.h>
 
 #include "qib.h"

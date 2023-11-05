@@ -5,11 +5,11 @@
  *
  *      - loads keys and hashes stored and controlled by the firmware.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 #include <asm/secure_boot.h>
 #include <asm/secvar.h>
 #include "keyring_handler.h"

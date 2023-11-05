@@ -5,15 +5,15 @@
  *  Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
+#include <freax/slab.h>
 
 enum {
 	CLPS711X_CLKSRC_CLOCKSOURCE,

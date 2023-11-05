@@ -5,31 +5,31 @@
  * Copyright (C) 2001 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  */
 
-#ifndef _LINUX_ACPI_H
-#define _LINUX_ACPI_H
+#ifndef _freax_ACPI_H
+#define _freax_ACPI_H
 
-#include <linux/errno.h>
-#include <linux/ioport.h>	/* for struct resource */
-#include <linux/resource_ext.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/uuid.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>	/* for struct resource */
+#include <freax/resource_ext.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/uuid.h>
 
 struct irq_domain;
 struct irq_domain_ops;
 
-#ifndef _LINUX
-#define _LINUX
+#ifndef _freax
+#define _freax
 #endif
 #include <acpi/acpi.h>
 
 #ifdef	CONFIG_ACPI
 
-#include <linux/list.h>
-#include <linux/dynamic_debug.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/list.h>
+#include <freax/dynamic_debug.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include <acpi/acpi_bus.h>
 #include <acpi/acpi_drivers.h>
@@ -1551,4 +1551,4 @@ static inline void acpi_device_notify(struct device *dev) { }
 static inline void acpi_device_notify_remove(struct device *dev) { }
 #endif
 
-#endif	/*_LINUX_ACPI_H*/
+#endif	/*_freax_ACPI_H*/

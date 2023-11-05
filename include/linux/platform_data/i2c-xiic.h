@@ -8,8 +8,8 @@
  * Xilinx IIC
  */
 
-#ifndef _LINUX_I2C_XIIC_H
-#define _LINUX_I2C_XIIC_H
+#ifndef _freax_I2C_XIIC_H
+#define _freax_I2C_XIIC_H
 
 /**
  * struct xiic_i2c_platform_data - Platform data of the Xilinx I2C driver
@@ -28,4 +28,4 @@ struct xiic_i2c_platform_data {
 	struct i2c_board_info const	*devices;
 };
 
-#endif /* _LINUX_I2C_XIIC_H */
+#endif /* _freax_I2C_XIIC_H */

@@ -8,7 +8,7 @@
 #ifndef __SOUND_SOC_INTEL_AVS_CLDMA_H
 #define __SOUND_SOC_INTEL_AVS_CLDMA_H
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #define AVS_CL_DEFAULT_BUFFER_SIZE	SZ_128K
 

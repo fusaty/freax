@@ -5,11 +5,11 @@
  * Copyright (C) 2014 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 #include "intel_pmic.h"
 
 #define PWR_SOURCE_SELECT	BIT(1)

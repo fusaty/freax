@@ -20,11 +20,11 @@
 #include "movinggc.h"
 #include "trace.h"
 
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/math64.h>
-#include <linux/sched/task.h>
-#include <linux/wait.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/math64.h>
+#include <freax/sched/task.h>
+#include <freax/wait.h>
 
 struct buckets_in_flight {
 	struct rhashtable		table;

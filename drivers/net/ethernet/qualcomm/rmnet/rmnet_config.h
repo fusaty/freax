@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2014, 2016-2018, 2021 The Linux Foundation.
+/* Copyright (c) 2013-2014, 2016-2018, 2021 The freax Foundation.
  * All rights reserved.
  *
  * RMNET Data configuration engine
  */
 
-#include <linux/skbuff.h>
-#include <linux/time.h>
+#include <freax/skbuff.h>
+#include <freax/time.h>
 #include <net/gro_cells.h>
 
 #ifndef _RMNET_CONFIG_H_

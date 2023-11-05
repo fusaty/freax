@@ -6,17 +6,17 @@
  * Copyright (C) 2018 Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #define RPI_TS_DEFAULT_WIDTH	800

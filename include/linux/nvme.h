@@ -4,12 +4,12 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#ifndef _LINUX_NVME_H
-#define _LINUX_NVME_H
+#ifndef _freax_NVME_H
+#define _freax_NVME_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <freax/bits.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
 
 /* NQN names in commands fields specified one size */
 #define NVMF_NQN_FIELD_LEN	256
@@ -2021,4 +2021,4 @@ struct nvme_completion {
 #define NVME_MINOR(ver)		(((ver) >> 8) & 0xff)
 #define NVME_TERTIARY(ver)	((ver) & 0xff)
 
-#endif /* _LINUX_NVME_H */
+#endif /* _freax_NVME_H */

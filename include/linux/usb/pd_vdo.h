@@ -3,8 +3,8 @@
  * Copyright 2015-2017 Google, Inc
  */
 
-#ifndef __LINUX_USB_PD_VDO_H
-#define __LINUX_USB_PD_VDO_H
+#ifndef __freax_USB_PD_VDO_H
+#define __freax_USB_PD_VDO_H
 
 #include "pd.h"
 
@@ -517,4 +517,4 @@
 #define PD_T_VDM_E_MODE		25
 #define PD_T_VDM_RCVR_RSP	15
 
-#endif /* __LINUX_USB_PD_VDO_H */
+#endif /* __freax_USB_PD_VDO_H */

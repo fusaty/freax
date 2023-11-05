@@ -4,17 +4,17 @@
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/kallsyms.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/irqreturn.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

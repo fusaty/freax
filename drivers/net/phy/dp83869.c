@@ -3,15 +3,15 @@
  * Copyright (C) 2019 Texas Instruments Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/delay.h>
-#include <linux/bitfield.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/delay.h>
+#include <freax/bitfield.h>
 
 #include <dt-bindings/net/ti-dp83869.h>
 

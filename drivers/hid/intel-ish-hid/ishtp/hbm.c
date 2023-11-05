@@ -5,11 +5,11 @@
  * Copyright (c) 2003-2016, Intel Corporation.
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/spinlock.h>
 #include "ishtp-dev.h"
 #include "hbm.h"
 #include "client.h"

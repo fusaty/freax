@@ -8,7 +8,7 @@ title: Common Properties for Video Receiver and Transmitter Devices
 
 maintainers:
   - Jacopo Mondi <jacopo@jmondi.org>
-  - Sakari Ailus <sakari.ailus@linux.intel.com>
+  - Sakari Ailus <sakari.ailus@freax.intel.com>
 
 properties:
   flash-leds:

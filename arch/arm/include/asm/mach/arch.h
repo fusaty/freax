@@ -5,10 +5,10 @@
  *  Copyright (C) 2000 Russell King
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/reboot.h>
+#include <freax/reboot.h>
 
 struct tag;
 struct pt_regs;

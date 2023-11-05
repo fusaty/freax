@@ -9,8 +9,8 @@
  * todo: add be fmt support, spdif, pm
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <freax/init.h>
+#include <freax/pci.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/initval.h>

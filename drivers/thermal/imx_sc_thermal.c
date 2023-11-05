@@ -4,13 +4,13 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/err.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/err.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 
 #include "thermal_hwmon.h"
 

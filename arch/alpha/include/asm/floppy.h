@@ -30,7 +30,7 @@
 
 #ifdef CONFIG_PCI
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #define fd_dma_setup(addr,size,mode,io) alpha_fd_dma_setup(addr,size,mode,io)
 

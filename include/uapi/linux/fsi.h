@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FSI_H
-#define _UAPI_LINUX_FSI_H
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
+#ifndef _UAPI_freax_FSI_H
+#define _UAPI_freax_FSI_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /*
  * /dev/scom "raw" ioctl interface
  *
  * The driver supports a high level "read/write" interface which
- * handles retries and converts the status to Linux error codes,
+ * handles retries and converts the status to freax error codes,
  * however low level tools an debugger need to access the "raw"
  * HW status information and interpret it themselves, so this
  * ioctl interface is also provided for their use case.
@@ -79,4 +79,4 @@ struct scom_access {
  */
 #define FSI_SBEFIFO_READ_TIMEOUT_SECONDS	_IOW('s', 0x00, __u32)
 
-#endif /* _UAPI_LINUX_FSI_H */
+#endif /* _UAPI_freax_FSI_H */

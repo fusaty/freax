@@ -11,15 +11,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
-#include <linux/hdmi.h>
-#include <linux/v4l2-dv-timings.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/videodev2.h>
+#include <freax/workqueue.h>
+#include <freax/hdmi.h>
+#include <freax/v4l2-dv-timings.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

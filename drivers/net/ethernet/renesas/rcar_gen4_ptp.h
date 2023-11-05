@@ -7,7 +7,7 @@
 #ifndef __RCAR_GEN4_PTP_H__
 #define __RCAR_GEN4_PTP_H__
 
-#include <linux/ptp_clock_kernel.h>
+#include <freax/ptp_clock_kernel.h>
 
 #define PTPTIVC_INIT			0x19000000	/* 320MHz */
 #define RCAR_GEN4_PTP_CLOCK_S4		PTPTIVC_INIT

@@ -4,14 +4,14 @@
  * Copyright (C) 2004-2006 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/iomap.h>
-#include <linux/ktime.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/blkdev.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/crc32.h>
+#include <freax/iomap.h>
+#include <freax/ktime.h>
 
 #include "gfs2.h"
 #include "incore.h"

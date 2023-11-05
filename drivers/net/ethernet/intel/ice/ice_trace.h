@@ -20,7 +20,7 @@
 #if !defined(_ICE_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _ICE_TRACE_H_
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "ice_eswitch_br.h"
 
 /* ice_trace() macro enables shared code to refer to trace points

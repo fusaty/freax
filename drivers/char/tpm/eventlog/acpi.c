@@ -7,21 +7,21 @@
  *	Stefan Berger <stefanb@us.ibm.com>
  *	Reiner Sailer <sailer@watson.ibm.com>
  *	Kylene Hall <kjhall@us.ibm.com>
- *	Nayna Jain <nayna@linux.vnet.ibm.com>
+ *	Nayna Jain <nayna@freax.vnet.ibm.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *
  * Access to the event log extended by the TCG BIOS of PC platform
  */
 
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/tpm_eventlog.h>
+#include <freax/device.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/security.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/tpm_eventlog.h>
 
 #include "../tpm.h"
 #include "common.h"

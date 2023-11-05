@@ -1,27 +1,27 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MMZONE_H
-#define _LINUX_MMZONE_H
+#ifndef _freax_MMZONE_H
+#define _freax_MMZONE_H
 
 #ifndef __ASSEMBLY__
 #ifndef __GENERATING_BOUNDS_H
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/threads.h>
-#include <linux/numa.h>
-#include <linux/init.h>
-#include <linux/seqlock.h>
-#include <linux/nodemask.h>
-#include <linux/pageblock-flags.h>
-#include <linux/page-flags-layout.h>
-#include <linux/atomic.h>
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
-#include <linux/local_lock.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/list_nulls.h>
+#include <freax/wait.h>
+#include <freax/bitops.h>
+#include <freax/cache.h>
+#include <freax/threads.h>
+#include <freax/numa.h>
+#include <freax/init.h>
+#include <freax/seqlock.h>
+#include <freax/nodemask.h>
+#include <freax/pageblock-flags.h>
+#include <freax/page-flags-layout.h>
+#include <freax/atomic.h>
+#include <freax/mm_types.h>
+#include <freax/page-flags.h>
+#include <freax/local_lock.h>
 #include <asm/page.h>
 
 /* Free memory management - zoned buddy allocator.  */
@@ -1430,7 +1430,7 @@ static inline unsigned long pgdat_end_pfn(pg_data_t *pgdat)
 	return pgdat->node_start_pfn + pgdat->node_spanned_pages;
 }
 
-#include <linux/memory_hotplug.h>
+#include <freax/memory_hotplug.h>
 
 void build_all_zonelists(pg_data_t *pgdat);
 void wakeup_kswapd(struct zone *zone, gfp_t gfp_mask, int order,
@@ -2071,4 +2071,4 @@ void sparse_init(void);
 
 #endif /* !__GENERATING_BOUNDS.H */
 #endif /* !__ASSEMBLY__ */
-#endif /* _LINUX_MMZONE_H */
+#endif /* _freax_MMZONE_H */

@@ -7,11 +7,11 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/poly1305.h>
 #include <crypto/internal/simd.h>
-#include <linux/crypto.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <freax/crypto.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
 #include <asm/intel-family.h>
 #include <asm/simd.h>
 

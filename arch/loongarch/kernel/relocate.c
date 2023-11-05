@@ -5,11 +5,11 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/panic_notifier.h>
-#include <linux/start_kernel.h>
+#include <freax/elf.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/panic_notifier.h>
+#include <freax/start_kernel.h>
 #include <asm/bootinfo.h>
 #include <asm/early_ioremap.h>
 #include <asm/inst.h>
@@ -34,7 +34,7 @@ static inline void __init relocate_relative(void)
 		if (rela->r_info != R_LARCH_RELATIVE)
 			continue;
 
-		if (relocated_addr >= VMLINUX_LOAD_ADDRESS)
+		if (relocated_addr >= VMfreax_LOAD_ADDRESS)
 			relocated_addr = (Elf64_Addr)RELOCATED(relocated_addr);
 
 		*(Elf64_Addr *)RELOCATED(addr) = relocated_addr;
@@ -94,7 +94,7 @@ static inline __init unsigned long get_random_boot(void)
 	unsigned long entropy = random_get_entropy();
 
 	/* Attempt to create a simple but unpredictable starting entropy. */
-	hash = rotate_xor(hash, linux_banner, strlen(linux_banner));
+	hash = rotate_xor(hash, freax_banner, strlen(freax_banner));
 
 	/* Add in any runtime entropy we can get */
 	hash = rotate_xor(hash, &entropy, sizeof(entropy));
@@ -173,7 +173,7 @@ unsigned long __init relocate_kernel(void)
 	if (relocation_addr_valid(location_new))
 		random_offset = (unsigned long)location_new - (unsigned long)(_text);
 #endif
-	reloc_offset = (unsigned long)_text - VMLINUX_LOAD_ADDRESS;
+	reloc_offset = (unsigned long)_text - VMfreax_LOAD_ADDRESS;
 
 	if (random_offset) {
 		kernel_length = (long)(_end) - (long)(_text);

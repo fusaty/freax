@@ -7,11 +7,11 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#ifndef __LINUX_OF_DMA_H
-#define __LINUX_OF_DMA_H
+#ifndef __freax_OF_DMA_H
+#define __freax_OF_DMA_H
 
-#include <linux/of.h>
-#include <linux/dmaengine.h>
+#include <freax/of.h>
+#include <freax/dmaengine.h>
 
 struct device_node;
 
@@ -90,4 +90,4 @@ static inline struct dma_chan *of_dma_simple_xlate(struct of_phandle_args *dma_s
 
 #endif
 
-#endif /* __LINUX_OF_DMA_H */
+#endif /* __freax_OF_DMA_H */

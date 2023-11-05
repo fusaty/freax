@@ -7,11 +7,11 @@
  * Author: Jun Sun, jsun@mvista.com or jsun@junsun.net
  */
 
-#ifndef __LINUX_MTD_PHYSMAP__
-#define __LINUX_MTD_PHYSMAP__
+#ifndef __freax_MTD_PHYSMAP__
+#define __freax_MTD_PHYSMAP__
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
 
 struct map_info;
 struct platform_device;
@@ -28,4 +28,4 @@ struct physmap_flash_data {
 	const char * const	*part_probe_types;
 };
 
-#endif /* __LINUX_MTD_PHYSMAP__ */
+#endif /* __freax_MTD_PHYSMAP__ */

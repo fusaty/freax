@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
  * Copyright (C) 2012 Google, Inc.
  *
@@ -9,11 +9,11 @@
  *
  */
 
-#ifndef _UAPI_LINUX_SYNC_H
-#define _UAPI_LINUX_SYNC_H
+#ifndef _UAPI_freax_SYNC_H
+#define _UAPI_freax_SYNC_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /**
  * struct sync_merge_data - SYNC_IOC_MERGE: merge two fences
@@ -88,4 +88,4 @@ struct sync_file_info {
 #define SYNC_IOC_MERGE		_IOWR(SYNC_IOC_MAGIC, 3, struct sync_merge_data)
 #define SYNC_IOC_FILE_INFO	_IOWR(SYNC_IOC_MAGIC, 4, struct sync_file_info)
 
-#endif /* _UAPI_LINUX_SYNC_H */
+#endif /* _UAPI_freax_SYNC_H */

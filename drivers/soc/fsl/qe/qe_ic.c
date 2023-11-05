@@ -10,20 +10,20 @@
  * QUICC ENGINE Interrupt Controller
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/irq.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/signal.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <soc/fsl/qe/qe.h>
@@ -50,7 +50,7 @@ struct qe_ic {
 	/* The remapper for this QEIC */
 	struct irq_domain *irqhost;
 
-	/* The "linux" controller struct */
+	/* The "freax" controller struct */
 	struct irq_chip hc_irq;
 
 	/* VIRQ numbers of QE high/low irqs */

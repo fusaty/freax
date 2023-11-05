@@ -10,7 +10,7 @@
  * processors using the ACPI Collaborative Performance and Power Control (CPPC)
  * feature which works with the AMD SMU firmware providing a finer grained
  * frequency control range. It is to replace the legacy ACPI P-States control,
- * allows a flexible, low-latency interface for the Linux kernel to directly
+ * allows a flexible, low-latency interface for the freax kernel to directly
  * communicate the performance hints to hardware.
  *
  * AMD P-State is supported on recent AMD Zen base CPU series include some of
@@ -22,21 +22,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/static_call.h>
-#include <linux/amd-pstate.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/sched.h>
+#include <freax/cpufreq.h>
+#include <freax/compiler.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/static_call.h>
+#include <freax/amd-pstate.h>
 
 #include <acpi/processor.h>
 #include <acpi/cppc_acpi.h>

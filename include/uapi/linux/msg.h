@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_MSG_H
-#define _UAPI_LINUX_MSG_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_MSG_H
+#define _UAPI_freax_MSG_H
 
-#include <linux/ipc.h>
+#include <freax/ipc.h>
 
 /* ipcs ctl commands */
 #define MSG_STAT 11
@@ -87,4 +87,4 @@ struct msginfo {
 #define MSGSEG (__MSGSEG <= 0xffff ? __MSGSEG : 0xffff)
 
 
-#endif /* _UAPI_LINUX_MSG_H */
+#endif /* _UAPI_freax_MSG_H */

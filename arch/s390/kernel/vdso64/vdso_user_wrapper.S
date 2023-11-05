@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/vdso.h>
 #include <asm/unistd.h>
 #include <asm/asm-offsets.h>

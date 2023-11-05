@@ -10,7 +10,7 @@
 #ifndef __RCAR_DU_GROUP_H__
 #define __RCAR_DU_GROUP_H__
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #include "rcar_du_plane.h"
 

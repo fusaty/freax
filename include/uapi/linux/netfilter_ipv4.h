@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* IPv4-specific defines for netfilter. 
  * (C)1998 Rusty Russell -- This code is GPL.
  */
-#ifndef _UAPI__LINUX_IP_NETFILTER_H
-#define _UAPI__LINUX_IP_NETFILTER_H
+#ifndef _UAPI__freax_IP_NETFILTER_H
+#define _UAPI__freax_IP_NETFILTER_H
 
 
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
 /* only for userspace compatibility */
 #ifndef __KERNEL__
@@ -32,14 +32,14 @@ enum nf_ip_hook_priorities {
 	NF_IP_PRI_RAW_BEFORE_DEFRAG = -450,
 	NF_IP_PRI_CONNTRACK_DEFRAG = -400,
 	NF_IP_PRI_RAW = -300,
-	NF_IP_PRI_SELINUX_FIRST = -225,
+	NF_IP_PRI_SEfreax_FIRST = -225,
 	NF_IP_PRI_CONNTRACK = -200,
 	NF_IP_PRI_MANGLE = -150,
 	NF_IP_PRI_NAT_DST = -100,
 	NF_IP_PRI_FILTER = 0,
 	NF_IP_PRI_SECURITY = 50,
 	NF_IP_PRI_NAT_SRC = 100,
-	NF_IP_PRI_SELINUX_LAST = 225,
+	NF_IP_PRI_SEfreax_LAST = 225,
 	NF_IP_PRI_CONNTRACK_HELPER = 300,
 	NF_IP_PRI_CONNTRACK_CONFIRM = INT_MAX,
 	NF_IP_PRI_LAST = INT_MAX,
@@ -52,4 +52,4 @@ enum nf_ip_hook_priorities {
 #define SO_ORIGINAL_DST 80
 
 
-#endif /* _UAPI__LINUX_IP_NETFILTER_H */
+#endif /* _UAPI__freax_IP_NETFILTER_H */

@@ -47,7 +47,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Debugging Tool Linux driver
+ * PCIe NTB Debugging Tool freax driver
  */
 
 /*
@@ -176,17 +176,17 @@
  * root@peer# head -c 7 $DBG_DIR/peer0/peer_mw0
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
-#include <linux/ntb.h>
+#include <freax/ntb.h>
 
 #define DRIVER_NAME		"ntb_tool"
 #define DRIVER_VERSION		"2.0"

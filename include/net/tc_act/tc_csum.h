@@ -2,9 +2,9 @@
 #ifndef __NET_TC_CSUM_H
 #define __NET_TC_CSUM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/act_api.h>
-#include <linux/tc_act/tc_csum.h>
+#include <freax/tc_act/tc_csum.h>
 
 struct tcf_csum_params {
 	u32 update_flags;

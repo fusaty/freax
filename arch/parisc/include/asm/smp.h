@@ -13,9 +13,9 @@ extern int init_per_cpu(int cpuid);
 #define PDC_OS_BOOT_RENDEZVOUS_HI  0x28
 
 #ifndef ASSEMBLY
-#include <linux/bitops.h>
-#include <linux/threads.h>	/* for NR_CPUS */
-#include <linux/cpumask.h>
+#include <freax/bitops.h>
+#include <freax/threads.h>	/* for NR_CPUS */
+#include <freax/cpumask.h>
 typedef unsigned long address_t;
 
 

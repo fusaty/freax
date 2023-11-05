@@ -40,19 +40,19 @@
  *
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
-#include <linux/sched/mm.h>
-#include <linux/debugfs.h>
-#include <linux/bug.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/crash_dump.h>
-#include <linux/pgtable.h>
+#include <freax/sched/mm.h>
+#include <freax/debugfs.h>
+#include <freax/bug.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/gfp.h>
+#include <freax/memblock.h>
+#include <freax/seq_file.h>
+#include <freax/crash_dump.h>
+#include <freax/pgtable.h>
 #ifdef CONFIG_KEXEC_CORE
-#include <linux/kexec.h>
+#include <freax/kexec.h>
 #endif
 
 #include <trace/events/xen.h>
@@ -1381,7 +1381,7 @@ static void xen_write_cr3(unsigned long cr3)
  * Since there are no user-page tables at all, we have two variants
  * of xen_write_cr3 - the early bootup (this one), and the late one
  * (xen_write_cr3). The reason we have to do that is that in 64-bit
- * the Linux kernel and user-space are both in ring 3 while the
+ * the freax kernel and user-space are both in ring 3 while the
  * hypervisor is in ring 0.
  */
 static void __init xen_write_cr3_init(unsigned long cr3)

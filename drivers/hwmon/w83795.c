@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  w83795.c - Linux kernel driver for hardware monitoring
+ *  w83795.c - freax kernel driver for hardware monitoring
  *  Copyright (C) 2008 Nuvoton Technology Corp.
  *                Wei Song
  *  Copyright (C) 2010 Jean Delvare <jdelvare@suse.de>
@@ -12,17 +12,17 @@
  *  w83795adg   18     14     2     6     8    0x79   0x5ca3  yes   no
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/util_macros.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/jiffies.h>
+#include <freax/util_macros.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = {

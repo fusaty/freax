@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,13 +16,13 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _LINUX_SOCKIOS_H
-#define _LINUX_SOCKIOS_H
+#ifndef _freax_SOCKIOS_H
+#define _freax_SOCKIOS_H
 
 #include <asm/bitsperlong.h>
 #include <asm/sockios.h>
 
-/* Linux-specific socket ioctls */
+/* freax-specific socket ioctls */
 #define SIOCINQ		FIONREAD
 #define SIOCOUTQ	TIOCOUTQ        /* output queue size (not sent + not acked) */
 
@@ -149,7 +149,7 @@
 #define SIOCBRADDIF	0x89a2		/* add interface to bridge      */
 #define SIOCBRDELIF	0x89a3		/* remove interface from bridge */
 
-/* hardware time stamping: parameters in linux/net_tstamp.h */
+/* hardware time stamping: parameters in freax/net_tstamp.h */
 #define SIOCSHWTSTAMP	0x89b0		/* set and get config		*/
 #define SIOCGHWTSTAMP	0x89b1		/* get config			*/
 
@@ -171,4 +171,4 @@
  */
  
 #define SIOCPROTOPRIVATE 0x89E0 /* to 89EF */
-#endif	/* _LINUX_SOCKIOS_H */
+#endif	/* _freax_SOCKIOS_H */

@@ -5,7 +5,7 @@
  * Copyright (C) 2021 Vincent Mailhol <mailhol.vincent@wanadoo.fr>
  */
 
-#include <linux/can/dev.h>
+#include <freax/can/dev.h>
 #include <net/rtnetlink.h>
 
 static const struct nla_policy can_policy[IFLA_CAN_MAX + 1] = {

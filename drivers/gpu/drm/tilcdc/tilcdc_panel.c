@@ -4,10 +4,10 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/gpio/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
 
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>

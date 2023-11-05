@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_COMPILER_H_
-#define _TOOLS_LINUX_COMPILER_H_
+#ifndef _TOOLS_freax_COMPILER_H_
+#define _TOOLS_freax_COMPILER_H_
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 #ifndef __compiletime_error
 # define __compiletime_error(message)
@@ -122,7 +122,7 @@
 # define __init
 #endif
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Following functions are taken from kernel sources and
@@ -216,4 +216,4 @@ static __always_inline void __write_once_size(volatile void *p, void *res, int s
 	__asm__ ("" : "=r" (var) : "0" (var))
 #endif
 
-#endif /* _TOOLS_LINUX_COMPILER_H */
+#endif /* _TOOLS_freax_COMPILER_H */

@@ -12,15 +12,15 @@
  * Copyright (C) 2020 Daniel W. S. Almeida
  */
 
-#include <linux/delay.h>
-#include <linux/dev_printk.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/dev_printk.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/vmalloc.h>
 
 #include "vidtv_channel.h"
 #include "vidtv_common.h"

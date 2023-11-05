@@ -5,7 +5,7 @@
  * Author: Won Chung <wonchung@google.com>
  */
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #ifdef CONFIG_ACPI
 bool dev_add_physical_location(struct device *dev);

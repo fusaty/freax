@@ -3,16 +3,16 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@freax.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-map-ops.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/iommu-helper.h>
+#include <freax/dma-map-ops.h>
+#include <freax/vmalloc.h>
+#include <freax/pci.h>
 #include <asm/pci_dma.h>
 
 static struct kmem_cache *dma_region_table_cache;

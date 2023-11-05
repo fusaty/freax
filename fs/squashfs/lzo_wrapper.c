@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for freax
  *
  * Copyright (c) 2010 LG Electronics
  * Chan Jeong <chan.jeong@lge.com>
@@ -8,11 +8,11 @@
  * lzo_wrapper.c
  */
 
-#include <linux/mutex.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/lzo.h>
+#include <freax/mutex.h>
+#include <freax/bio.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/lzo.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

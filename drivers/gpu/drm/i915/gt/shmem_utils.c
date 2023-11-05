@@ -3,10 +3,10 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/iosys-map.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
+#include <freax/iosys-map.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/shmem_fs.h>
 
 #include "i915_drv.h"
 #include "gem/i915_gem_object.h"

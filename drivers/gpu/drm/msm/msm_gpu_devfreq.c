@@ -7,10 +7,10 @@
 #include "msm_gpu.h"
 #include "msm_gpu_trace.h"
 
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/math64.h>
-#include <linux/units.h>
+#include <freax/devfreq.h>
+#include <freax/devfreq_cooling.h>
+#include <freax/math64.h>
+#include <freax/units.h>
 
 /*
  * Power Management:

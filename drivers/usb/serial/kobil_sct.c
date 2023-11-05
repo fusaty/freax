@@ -5,9 +5,9 @@
  *  Copyright (C) 2002  KOBIL Systems GmbH
  *  Author: Thomas Wahrenbruch
  *
- *  Contact: linuxusb@kobil.de
+ *  Contact: freaxusb@kobil.de
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the freax-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -19,18 +19,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/ioctl.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/ioctl.h>
 #include "kobil_sct.h"
 
 #define DRIVER_AUTHOR "KOBIL Systems GmbH - http://www.kobil.com"

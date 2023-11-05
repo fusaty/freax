@@ -2,26 +2,26 @@
 /*
  * Qualcomm PCIe Endpoint controller driver
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  * Author: Siddartha Mohanadoss <smohanad@codeaurora.org
  *
  * Copyright (c) 2021, Linaro Ltd.
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interconnect.h>
-#include <linux/mfd/syscon.h>
-#include <linux/phy/pcie.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interconnect.h>
+#include <freax/mfd/syscon.h>
+#include <freax/phy/pcie.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/module.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

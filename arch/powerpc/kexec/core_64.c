@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * PPC64 code to handle Linux booting another kernel.
+ * PPC64 code to handle freax booting another kernel.
  *
  * Copyright (C) 2004-2005, IBM Corp.
  *
@@ -8,15 +8,15 @@
  */
 
 
-#include <linux/kexec.h>
-#include <linux/smp.h>
-#include <linux/thread_info.h>
-#include <linux/init_task.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/hardirq.h>
-#include <linux/of.h>
+#include <freax/kexec.h>
+#include <freax/smp.h>
+#include <freax/thread_info.h>
+#include <freax/init_task.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/cpu.h>
+#include <freax/hardirq.h>
+#include <freax/of.h>
 
 #include <asm/page.h>
 #include <asm/current.h>
@@ -51,8 +51,8 @@ int machine_kexec_prepare(struct kimage *image)
 
 	/* We also should not overwrite the tce tables */
 	for_each_node_by_type(node, "pci") {
-		basep = of_get_property(node, "linux,tce-base", NULL);
-		sizep = of_get_property(node, "linux,tce-size", NULL);
+		basep = of_get_property(node, "freax,tce-base", NULL);
+		sizep = of_get_property(node, "freax,tce-size", NULL);
 		if (basep == NULL || sizep == NULL)
 			continue;
 
@@ -383,13 +383,13 @@ static __be64 htab_base;
 static __be64 htab_size;
 
 static struct property htab_base_prop = {
-	.name = "linux,htab-base",
+	.name = "freax,htab-base",
 	.length = sizeof(unsigned long),
 	.value = &htab_base,
 };
 
 static struct property htab_size_prop = {
-	.name = "linux,htab-size",
+	.name = "freax,htab-size",
 	.length = sizeof(unsigned long),
 	.value = &htab_size,
 };

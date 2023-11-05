@@ -34,8 +34,8 @@
 		button-0 {
 			label = "Volume Down";
 			gpios = <&pm8994_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,input-type = <1>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -43,8 +43,8 @@
 		button-1 {
 			label = "Volume Up";
 			gpios = <&pm8994_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,input-type = <1>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -52,8 +52,8 @@
 		button-2 {
 			label = "Camera Snapshot";
 			gpios = <&pm8994_gpios 4 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_CAMERA>;
+			freax,input-type = <1>;
+			freax,code = <KEY_CAMERA>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -61,8 +61,8 @@
 		button-3 {
 			label = "Camera Focus";
 			gpios = <&pm8994_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,input-type = <1>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -160,7 +160,7 @@
  * specific downstream MDSS/backlight nodes in the active DTB.
  * One way to use that framebuffer is to load a secondary instance of
  * LK with the downstream DTB appended and then, only from there, load
- * mainline Linux.
+ * mainline freax.
  */
 &cont_splash_mem {
 	reg = <0 0x03401000 0 0x2200000>;

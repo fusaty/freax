@@ -4,15 +4,15 @@
  *
  *	Copyright (c) 2008 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/llc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 #include <net/garp.h>

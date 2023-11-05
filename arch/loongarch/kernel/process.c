@@ -5,33 +5,33 @@
  *
  * Derived from MIPS:
  * Copyright (C) 1994 - 1999, 2000 by Ralf Baechle and others.
- * Copyright (C) 2005, 2006 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 2006 by Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2004 Thiemo Seufer
  * Copyright (C) 2013  Imagination Technologies Ltd.
  */
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/personality.h>
-#include <linux/sys.h>
-#include <linux/completion.h>
-#include <linux/kallsyms.h>
-#include <linux/random.h>
-#include <linux/prctl.h>
-#include <linux/nmi.h>
+#include <freax/cpu.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/export.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/personality.h>
+#include <freax/sys.h>
+#include <freax/completion.h>
+#include <freax/kallsyms.h>
+#include <freax/random.h>
+#include <freax/prctl.h>
+#include <freax/nmi.h>
 
 #include <asm/asm.h>
 #include <asm/bootinfo.h>
@@ -51,7 +51,7 @@
 #include <asm/vdso.h>
 
 #ifdef CONFIG_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <freax/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

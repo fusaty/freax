@@ -6,8 +6,8 @@
 #ifndef _ASM_RISCV_PROCESSOR_H
 #define _ASM_RISCV_PROCESSOR_H
 
-#include <linux/const.h>
-#include <linux/cache.h>
+#include <freax/const.h>
+#include <freax/cache.h>
 
 #include <vdso/processor.h>
 

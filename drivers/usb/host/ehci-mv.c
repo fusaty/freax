@@ -5,17 +5,17 @@
  *        Neil Zhang <zhangwm@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/of.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/of.h>
+#include <freax/platform_data/mv_usb.h>
+#include <freax/io.h>
 
-#include <linux/usb/hcd.h>
+#include <freax/usb/hcd.h>
 
 #include "ehci.h"
 

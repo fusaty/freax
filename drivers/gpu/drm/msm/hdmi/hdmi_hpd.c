@@ -4,9 +4,9 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/pinctrl/consumer.h>
 
 #include "msm_kms.h"
 #include "hdmi.h"

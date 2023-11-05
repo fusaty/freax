@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Huawei Inc.
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include "../decode.h"
 #include "../decode-thumb.h"
 #include "checkers.h"

@@ -8,14 +8,14 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/overflow.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/overflow.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
 
 #define NFP_SUBSYS "nfp_nsp"
 

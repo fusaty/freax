@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/security.h>
-#include <linux/debugfs.h>
-#include <linux/ktime.h>
-#include <linux/mutex.h>
+#include <freax/security.h>
+#include <freax/debugfs.h>
+#include <freax/ktime.h>
+#include <freax/mutex.h>
 #include <asm/unaligned.h>
 #include <cxlpci.h>
 #include <cxlmem.h>

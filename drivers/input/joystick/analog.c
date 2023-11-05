@@ -4,21 +4,21 @@
  */
 
 /*
- * Analog joystick and gamepad driver for Linux
+ * Analog joystick and gamepad driver for freax
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
-#include <linux/seq_buf.h>
-#include <linux/timex.h>
-#include <linux/timekeeping.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/gameport.h>
+#include <freax/jiffies.h>
+#include <freax/seq_buf.h>
+#include <freax/timex.h>
+#include <freax/timekeeping.h>
 
 #define DRIVER_DESC	"Analog joystick and gamepad driver"
 

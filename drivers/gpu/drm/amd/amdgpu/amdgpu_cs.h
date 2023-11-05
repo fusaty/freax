@@ -23,7 +23,7 @@
 #ifndef __AMDGPU_CS_H__
 #define __AMDGPU_CS_H__
 
-#include <linux/ww_mutex.h>
+#include <freax/ww_mutex.h>
 #include <drm/drm_exec.h>
 
 #include "amdgpu_job.h"

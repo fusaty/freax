@@ -5,15 +5,15 @@
 // Copyright (C) 2022-2023 Cirrus Logic, Inc. and
 //                         Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/build_bug.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/mfd/cs42l43.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <freax/build_bug.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/irq.h>
+#include <freax/jiffies.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
 #include <sound/control.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

@@ -4,17 +4,17 @@
  * (C) 2000 Red Hat.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
 
 static int maprom_read (struct mtd_info *, loff_t, size_t, size_t *, u_char *);
 static int maprom_write (struct mtd_info *, loff_t, size_t, size_t *, const u_char *);

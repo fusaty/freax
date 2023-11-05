@@ -13,7 +13,7 @@
 #include "net_driver.h"
 
 #if IS_ENABLED(CONFIG_SFC_SRIOV)
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <net/tc_act/tc_tunnel_key.h>
 
 /**

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/nfs/symlink.c
+ *  freax/fs/nfs/symlink.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -11,16 +11,16 @@
  *  nfs symlink handling code
  */
 
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs_fs.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <freax/time.h>
+#include <freax/errno.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/nfs.h>
+#include <freax/nfs2.h>
+#include <freax/nfs_fs.h>
+#include <freax/pagemap.h>
+#include <freax/stat.h>
+#include <freax/mm.h>
+#include <freax/string.h>
 
 /* Symlink caching in the page cache is even more simplistic
  * and straight-forward than readdir caching.

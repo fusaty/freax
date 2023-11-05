@@ -5,14 +5,14 @@
  * Copyright 2018 Arcx Inc
  */
 
-#ifndef __LINUX_ANYBUSS_CLIENT_H__
-#define __LINUX_ANYBUSS_CLIENT_H__
+#ifndef __freax_ANYBUSS_CLIENT_H__
+#define __freax_ANYBUSS_CLIENT_H__
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/poll.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/poll.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <freax/fieldbus_dev.h> when taking this out of staging */
 #include "../fieldbus_dev.h"
 
 struct anybuss_host;
@@ -96,4 +96,4 @@ int anybuss_read_output(struct anybuss_client *client,
 			char __user *buf, size_t size,
 				loff_t *offset);
 
-#endif /* __LINUX_ANYBUSS_CLIENT_H__ */
+#endif /* __freax_ANYBUSS_CLIENT_H__ */

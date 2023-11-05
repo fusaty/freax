@@ -10,17 +10,17 @@
  * TMO, SEC, UNS are the codes which are supported by CBB.
  */
 
-#include <linux/clk.h>
-#include <linux/cpufeature.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <freax/clk.h>
+#include <freax/cpufeature.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/tegra-cbb.h>
 

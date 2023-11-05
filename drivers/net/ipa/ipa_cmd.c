@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2023 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/bitfield.h>
-#include <linux/dma-direction.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/bitfield.h>
+#include <freax/dma-direction.h>
 
 #include "gsi.h"
 #include "gsi_trans.h"

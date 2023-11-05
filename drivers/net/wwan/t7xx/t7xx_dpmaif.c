@@ -7,23 +7,23 @@
  *  Amir Hanania <amir.hanania@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dev_printk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/dev_printk.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/types.h>
 
 #include "t7xx_dpmaif.h"
 #include "t7xx_reg.h"

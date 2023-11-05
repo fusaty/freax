@@ -2,9 +2,9 @@
 /******************************************************************************
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * freax device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the freax staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -15,11 +15,11 @@
 
 #define _HAL_INIT_C_
 
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
+#include <freax/usb.h>
+#include <freax/device.h>
+#include <freax/usb/ch9.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

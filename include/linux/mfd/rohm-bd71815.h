@@ -12,7 +12,7 @@
 #ifndef _MFD_BD71815_H
 #define _MFD_BD71815_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 enum {
 	BD71815_BUCK1	=	0,
@@ -559,4 +559,4 @@ enum {
 /* BD71815_REG_LED_CTRL bits */
 #define CHGDONE_LED_EN					BIT(4)
 
-#endif /* __LINUX_MFD_BD71815_H */
+#endif /* __freax_MFD_BD71815_H */

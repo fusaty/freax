@@ -4,10 +4,10 @@
  * Copyright 2009-2010 Pengutronix
  * Uwe Kleine-Koenig <u.kleine-koenig@pengutronix.de>
  */
-#ifndef __LINUX_MFD_MC13783_H
-#define __LINUX_MFD_MC13783_H
+#ifndef __freax_MFD_MC13783_H
+#define __freax_MFD_MC13783_H
 
-#include <linux/mfd/mc13xxx.h>
+#include <freax/mfd/mc13xxx.h>
 
 #define	MC13783_REG_SW1A		0
 #define	MC13783_REG_SW1B		1
@@ -84,4 +84,4 @@
 #define MC13783_IRQ_ALSPTH	44
 #define MC13783_IRQ_AHSSHORT	45
 
-#endif /* ifndef __LINUX_MFD_MC13783_H */
+#endif /* ifndef __freax_MFD_MC13783_H */

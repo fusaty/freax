@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 
 #include "clk-div6.h"
 

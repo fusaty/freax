@@ -1,4 +1,4 @@
-/*** -*- linux-c -*- **********************************************************
+/*** -*- freax-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,8 +7,8 @@
 
     This code was developed from version 2.1.1 of the Atmel drivers,
     released by Atmel corp. under the GPL in December 2002. It also
-    includes code from the Linux aironet drivers (C) Benjamin Reed,
-    and the Linux PCMCIA package, (C) David Hinds and the Linux wireless
+    includes code from the freax aironet drivers (C) Benjamin Reed,
+    and the freax PCMCIA package, (C) David Hinds and the freax wireless
     extensions, (C) Jean Tourrilhes.
 
     The firmware module for reading the MAC address of the card comes from
@@ -39,33 +39,33 @@
 
 ******************************************************************************/
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ioport.h>
+#include <freax/fcntl.h>
+#include <freax/delay.h>
+#include <freax/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/crc32.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
+#include <freax/crc32.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/moduleparam.h>
+#include <freax/firmware.h>
+#include <freax/jiffies.h>
 #include <net/cfg80211.h>
 #include "atmel.h"
 

@@ -8,15 +8,15 @@
  * Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/bitops.h>
 
 /* register offset */
 #define GPIO_DIR	0x00

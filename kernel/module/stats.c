@@ -5,15 +5,15 @@
  * Copyright (C) 2023 Luis Chamberlain <mcgrof@kernel.org>
  */
 
-#include <linux/module.h>
-#include <uapi/linux/module.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
-#include <linux/math.h>
+#include <freax/module.h>
+#include <uapi/freax/module.h>
+#include <freax/string.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/debugfs.h>
+#include <freax/rculist.h>
+#include <freax/math.h>
 
 #include "internal.h"
 

@@ -7,11 +7,11 @@
  * directly mapped busses.
  */
 
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/bug.h>
+#include <freax/device.h>
+#include <freax/dma-map-ops.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
+#include <freax/bug.h>
 #include <asm/cacheflush.h>
 
 static void __dma_sync(phys_addr_t paddr, size_t size,

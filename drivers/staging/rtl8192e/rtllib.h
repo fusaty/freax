@@ -11,7 +11,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@freax.intel.com>
  * Copyright (c) 2004, Intel Corporation
  *
  * Modified for Realtek's wi-fi cards by Andrea Merello
@@ -19,24 +19,24 @@
  */
 #ifndef RTLLIB_H
 #define RTLLIB_H
-#include <linux/if_ether.h> /* ETH_ALEN */
-#include <linux/kernel.h>   /* ARRAY_SIZE */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <freax/if_ether.h> /* ETH_ALEN */
+#include <freax/kernel.h>   /* ARRAY_SIZE */
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/timer.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
 
-#include <linux/delay.h>
-#include <linux/wireless.h>
+#include <freax/delay.h>
+#include <freax/wireless.h>
 
 #include "rtl819x_HT.h"
 #include "rtl819x_BA.h"
 #include "rtl819x_TS.h"
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h> /* ARPHRD_ETHER */
+#include <freax/netdevice.h>
+#include <freax/if_arp.h> /* ARPHRD_ETHER */
 #include <net/cfg80211.h>
 #include <net/lib80211.h>
 

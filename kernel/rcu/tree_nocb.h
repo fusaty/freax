@@ -9,7 +9,7 @@
  * Copyright SUSE, 2021
  *
  * Author: Ingo Molnar <mingo@elte.hu>
- *	   Paul E. McKenney <paulmck@linux.ibm.com>
+ *	   Paul E. McKenney <paulmck@freax.ibm.com>
  *	   Frederic Weisbecker <frederic@kernel.org>
  */
 

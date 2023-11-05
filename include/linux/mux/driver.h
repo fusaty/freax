@@ -7,13 +7,13 @@
  * Author: Peter Rosin <peda@axentia.se>
  */
 
-#ifndef _LINUX_MUX_DRIVER_H
-#define _LINUX_MUX_DRIVER_H
+#ifndef _freax_MUX_DRIVER_H
+#define _freax_MUX_DRIVER_H
 
 #include <dt-bindings/mux/mux.h>
-#include <linux/device.h>
-#include <linux/ktime.h>
-#include <linux/semaphore.h>
+#include <freax/device.h>
+#include <freax/ktime.h>
+#include <freax/semaphore.h>
 
 struct mux_chip;
 struct mux_control;
@@ -106,4 +106,4 @@ static inline unsigned int mux_control_get_index(struct mux_control *mux)
 	return mux - mux->chip->mux;
 }
 
-#endif /* _LINUX_MUX_DRIVER_H */
+#endif /* _freax_MUX_DRIVER_H */

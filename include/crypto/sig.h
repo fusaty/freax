@@ -7,7 +7,7 @@
 #ifndef _CRYPTO_SIG_H
 #define _CRYPTO_SIG_H
 
-#include <linux/crypto.h>
+#include <freax/crypto.h>
 
 /**
  * struct crypto_sig - user-instantiated objects which encapsulate

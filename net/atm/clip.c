@@ -5,40 +5,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h> /* for UINT_MAX */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/if_arp.h> /* for some manifest constants */
-#include <linux/notifier.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/atmarp.h>
-#include <linux/capability.h>
-#include <linux/ip.h> /* for net/route.h */
-#include <linux/in.h> /* for struct sockaddr_in */
-#include <linux/if.h> /* for IFF_UP */
-#include <linux/inetdevice.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/kernel.h> /* for UINT_MAX */
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/timer.h>
+#include <freax/if_arp.h> /* for some manifest constants */
+#include <freax/notifier.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/atmclip.h>
+#include <freax/atmarp.h>
+#include <freax/capability.h>
+#include <freax/ip.h> /* for net/route.h */
+#include <freax/in.h> /* for struct sockaddr_in */
+#include <freax/if.h> /* for IFF_UP */
+#include <freax/inetdevice.h>
+#include <freax/bitops.h>
+#include <freax/poison.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/rcupdate.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
 #include <net/route.h> /* for struct rtable and routing */
 #include <net/icmp.h> /* icmp_send */
 #include <net/arp.h>
-#include <linux/param.h> /* for HZ */
-#include <linux/uaccess.h>
+#include <freax/param.h> /* for HZ */
+#include <freax/uaccess.h>
 #include <asm/byteorder.h> /* for htons etc. */
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "common.h"
 #include "resources.h"

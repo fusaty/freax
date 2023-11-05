@@ -6,20 +6,20 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/mfd/wm8994/pdata.h>
+#include <freax/mfd/wm8994/core.h>
+#include <freax/mfd/wm8994/registers.h>
+#include <freax/mfd/wm8994/pdata.h>
 
 struct wm8994_ldo {
 	struct regulator_dev *regulator;

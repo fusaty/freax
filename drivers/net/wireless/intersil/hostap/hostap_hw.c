@@ -28,20 +28,20 @@
 
 
 #include <asm/delay.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/if_arp.h>
+#include <freax/delay.h>
+#include <freax/random.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
+#include <freax/rtnetlink.h>
+#include <freax/wireless.h>
 #include <net/iw_handler.h>
 #include <net/lib80211.h>
 #include <asm/irq.h>

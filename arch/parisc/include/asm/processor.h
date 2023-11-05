@@ -10,8 +10,8 @@
 #define __ASM_PARISC_PROCESSOR_H
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>
-#include <linux/irqreturn.h>
+#include <freax/threads.h>
+#include <freax/irqreturn.h>
 
 #include <asm/assembly.h>
 #include <asm/prefetch.h>
@@ -246,7 +246,7 @@ on downward growing arches, it looks like this:
 	regs->iasq[1] = spaceid;			\
 	regs->iaoq[0] = pc;				\
 	regs->iaoq[1] = pc + 4;                         \
-	regs->sr[2] = LINUX_GATEWAY_SPACE;              \
+	regs->sr[2] = freax_GATEWAY_SPACE;              \
 	regs->sr[3] = 0xffff;				\
 	regs->sr[4] = spaceid;				\
 	regs->sr[5] = spaceid;				\

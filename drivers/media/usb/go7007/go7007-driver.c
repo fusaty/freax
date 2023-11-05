@@ -3,21 +3,21 @@
  * Copyright (C) 2005-2006 Micronas USA Inc.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/unistd.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/unistd.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/firmware.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 #include <media/tuner.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>

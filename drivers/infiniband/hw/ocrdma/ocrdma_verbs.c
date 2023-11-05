@@ -33,14 +33,14 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include <net/addrconf.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

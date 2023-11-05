@@ -7,12 +7,12 @@
  * the first version, Baolin Wang simplified and improved the approach.
  */
 
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 
 #define MAX_PATTERNS		1024
 /*

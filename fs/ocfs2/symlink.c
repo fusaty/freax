@@ -1,5 +1,5 @@
 /*
- *  linux/cluster/ssi/cfs/symlink.c
+ *  freax/cluster/ssi/cfs/symlink.c
  *
  *	This program is free software; you can redistribute it and/or
  *	modify it under the terms of the GNU General Public License as
@@ -16,7 +16,7 @@
  * 	along with this program; if not, write to the Free Software
  * 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- *	Questions/Comments/Bugfixes to ssic-linux-devel@lists.sourceforge.net
+ *	Questions/Comments/Bugfixes to ssic-freax-devel@lists.sourceforge.net
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -32,11 +32,11 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/namei.h>
 
 #include <cluster/masklog.h>
 

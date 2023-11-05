@@ -4,7 +4,7 @@
  * Copyright(c) 2015-2018 Intel Corporation.
  */
 #include <asm/page.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 #include "mmu_rb.h"
 #include "user_exp_rcv.h"

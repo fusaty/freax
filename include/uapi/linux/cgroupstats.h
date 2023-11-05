@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: LGPL-2.1 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1 WITH freax-syscall-note */
 /* cgroupstats.h - exporting per-cgroup statistics
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@freax.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -13,11 +13,11 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#ifndef _LINUX_CGROUPSTATS_H
-#define _LINUX_CGROUPSTATS_H
+#ifndef _freax_CGROUPSTATS_H
+#define _freax_CGROUPSTATS_H
 
-#include <linux/types.h>
-#include <linux/taskstats.h>
+#include <freax/types.h>
+#include <freax/taskstats.h>
 
 /*
  * Data shared between user space and kernel space on a per cgroup
@@ -67,4 +67,4 @@ enum {
 
 #define CGROUPSTATS_CMD_ATTR_MAX (__CGROUPSTATS_CMD_ATTR_MAX - 1)
 
-#endif /* _LINUX_CGROUPSTATS_H */
+#endif /* _freax_CGROUPSTATS_H */

@@ -4,11 +4,11 @@
  * Copyright (c) 2002-3 Open Source Development Labs
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memory.h>
-#include <linux/of.h>
-#include <linux/backing-dev.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/memory.h>
+#include <freax/of.h>
+#include <freax/backing-dev.h>
 
 #include "base.h"
 

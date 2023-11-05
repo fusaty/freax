@@ -5,16 +5,16 @@
  * Copyright (C) 2013, Apelete Seketeli <apelete@seketeli.net>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/usb/role.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/usb/role.h>
+#include <freax/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

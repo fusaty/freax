@@ -10,9 +10,9 @@
 #ifndef AQ_NIC_H
 #define AQ_NIC_H
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 #include <net/xdp.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 #include "aq_common.h"
 #include "aq_rss.h"
@@ -147,7 +147,7 @@ struct aq_nic_s {
 		u32 count;
 		u8 ar[AQ_HW_MULTICAST_ADDRESS_MAX][ETH_ALEN];
 	} mc_list;
-	/* Bitmask of currently assigned vlans from linux */
+	/* Bitmask of currently assigned vlans from freax */
 	unsigned long active_vlans[BITS_TO_LONGS(VLAN_N_VID)];
 
 	struct pci_dev *pdev;

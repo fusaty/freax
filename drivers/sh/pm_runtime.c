@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_clock.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/sh_clk.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_clock.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/sh_clk.h>
+#include <freax/bitmap.h>
+#include <freax/slab.h>
 
 static struct dev_pm_domain default_pm_domain = {
 	.ops = {

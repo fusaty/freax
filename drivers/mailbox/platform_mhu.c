@@ -8,17 +8,17 @@
  * Author: Jassi Brar <jaswinder.singh@linaro.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mailbox_controller.h>
 
 #define INTR_SET_OFS	0x0
 #define INTR_STAT_OFS	0x4

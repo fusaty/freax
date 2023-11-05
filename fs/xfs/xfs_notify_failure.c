@@ -20,8 +20,8 @@
 #include "xfs_trans.h"
 #include "xfs_ag.h"
 
-#include <linux/mm.h>
-#include <linux/dax.h>
+#include <freax/mm.h>
+#include <freax/dax.h>
 
 struct xfs_failure_info {
 	xfs_agblock_t		startblock;

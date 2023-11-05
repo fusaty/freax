@@ -4,7 +4,7 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/mhi_ep.h>
+#include <freax/mhi_ep.h>
 #include "internal.h"
 
 size_t mhi_ep_ring_addr2offset(struct mhi_ep_ring *ring, u64 ptr)

@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2002-2014 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8255.h>
 
 #include "amplc_pc236.h"
 

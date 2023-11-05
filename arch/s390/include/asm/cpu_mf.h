@@ -3,13 +3,13 @@
  * CPU-measurement facilities
  *
  *  Copyright IBM Corp. 2012, 2018
- *  Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
- *	       Jan Glauber <jang@linux.vnet.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
+ *	       Jan Glauber <jang@freax.vnet.ibm.com>
  */
 #ifndef _ASM_S390_CPU_MF_H
 #define _ASM_S390_CPU_MF_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include <asm/asm-extable.h>
 #include <asm/facility.h>
 

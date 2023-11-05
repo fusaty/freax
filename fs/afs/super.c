@@ -14,18 +14,18 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/fs_parser.h>
-#include <linux/statfs.h>
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/magic.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/fs_parser.h>
+#include <freax/statfs.h>
+#include <freax/sched.h>
+#include <freax/nsproxy.h>
+#include <freax/magic.h>
 #include <net/net_namespace.h>
 #include "internal.h"
 

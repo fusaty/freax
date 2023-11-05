@@ -5,17 +5,17 @@
  * Copyright 2005-2015 Solarflare Communications Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <freax/pci.h>
+#include <freax/tcp.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/ipv6.h>
+#include <freax/slab.h>
 #include <net/ipv6.h>
-#include <linux/if_ether.h>
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/cache.h>
+#include <freax/if_ether.h>
+#include <freax/highmem.h>
+#include <freax/moduleparam.h>
+#include <freax/cache.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "io.h"
@@ -340,7 +340,7 @@ static int tso_start_new_packet(struct efx_tx_queue *tx_queue,
 
 	st->seqnum += skb_shinfo(skb)->gso_size;
 
-	/* Linux leaves suitable gaps in the IP ID space for us to fill. */
+	/* freax leaves suitable gaps in the IP ID space for us to fill. */
 	++st->ipv4_id;
 
 	return 0;

@@ -29,7 +29,7 @@
  *    Christian König <christian.koenig@amd.com>
  */
 
-#include <linux/dma-fence-chain.h>
+#include <freax/dma-fence-chain.h>
 
 #include "amdgpu.h"
 #include "amdgpu_trace.h"

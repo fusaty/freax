@@ -10,7 +10,7 @@
 #ifndef VIDTV_TUNER_H
 #define VIDTV_TUNER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <media/dvb_frontend.h>
 

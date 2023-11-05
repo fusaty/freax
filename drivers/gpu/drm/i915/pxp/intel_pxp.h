@@ -6,8 +6,8 @@
 #ifndef __INTEL_PXP_H__
 #define __INTEL_PXP_H__
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 struct drm_i915_gem_object;
 struct drm_i915_private;

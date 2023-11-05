@@ -13,9 +13,9 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/sched/cputime.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/sched/cputime.h>
 
 /*
  * Check if an extent should be moved:

@@ -10,10 +10,10 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
   */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/types.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/dvb/frontend.h>
+#include <freax/types.h>
 #include "ascot2e.h"
 #include <media/dvb_frontend.h>
 

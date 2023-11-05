@@ -5,7 +5,7 @@
  * Copyright 2011-2020 NXP
  */
 
-#include <uapi/linux/ipv6.h>
+#include <uapi/freax/ipv6.h>
 #include <net/ndisc.h>
 #include "decl.h"
 #include "ioctl.h"

@@ -12,20 +12,20 @@
  *     https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/application-notes/AN619.pdf
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/rational.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/platform_data/si5351.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/rational.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/platform_data/si5351.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <asm/div64.h>
 
 #include "clk-si5351.h"

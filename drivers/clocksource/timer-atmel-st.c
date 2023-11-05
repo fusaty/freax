@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/arch/arm/mach-at91/at91rm9200_time.c
+ * freax/arch/arm/mach-at91/at91rm9200_time.c
  *
  *  Copyright (C) 2003 SAN People
  *  Copyright (C) 2003 ATMEL
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/export.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-st.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/export.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/atmel-st.h>
+#include <freax/of_irq.h>
+#include <freax/regmap.h>
 
 static unsigned long last_crtr;
 static u32 irqmask;

@@ -9,13 +9,13 @@
  * for more details.
  */
 
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
-#include <linux/personality.h>
-#include <linux/resume_user_mode.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/uaccess.h>
+#include <freax/unistd.h>
+#include <freax/personality.h>
+#include <freax/resume_user_mode.h>
 
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>

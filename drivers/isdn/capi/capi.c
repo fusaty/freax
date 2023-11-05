@@ -1,6 +1,6 @@
 /* $Id: capi.c,v 1.1.2.7 2004/04/28 09:48:59 armin Exp $
  *
- * CAPI 2.0 Interface for Linux
+ * CAPI 2.0 Interface for freax
  *
  * Copyright 1996 by Carsten Paeth <calle@calle.de>
  *
@@ -9,40 +9,40 @@
  *
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/ethtool.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capicmd.h>
+#include <freax/compiler.h>
+#include <freax/module.h>
+#include <freax/ethtool.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/major.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/fcntl.h>
+#include <freax/fs.h>
+#include <freax/signal.h>
+#include <freax/mutex.h>
+#include <freax/mm.h>
+#include <freax/timer.h>
+#include <freax/wait.h>
+#include <freax/tty.h>
+#include <freax/netdevice.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/poll.h>
+#include <freax/capi.h>
+#include <freax/kernelcapi.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/moduleparam.h>
+#include <freax/isdn/capiutil.h>
+#include <freax/isdn/capicmd.h>
 
 #include "kcapi.h"
 
-MODULE_DESCRIPTION("CAPI4Linux: kernel CAPI layer and /dev/capi20 interface");
+MODULE_DESCRIPTION("CAPI4freax: kernel CAPI layer and /dev/capi20 interface");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

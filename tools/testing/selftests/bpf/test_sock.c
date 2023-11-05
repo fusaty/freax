@@ -8,7 +8,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 
-#include <linux/filter.h>
+#include <freax/filter.h>
 
 #include <bpf/bpf.h>
 

@@ -11,7 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_KASAN_HW_TAGS
 

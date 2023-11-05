@@ -2,7 +2,7 @@
 /*
  * sata_inic162x.c - Driver for Initio 162x SATA controllers
  *
- * Copyright 2006  SUSE Linux Products GmbH
+ * Copyright 2006  SUSE freax Products GmbH
  * Copyright 2006  Tejun Heo <teheo@novell.com>
  *
  * **** WARNING ****
@@ -12,7 +12,7 @@
  * no support from the vendor.  Do not use this driver in any production
  * environment.
  *
- * http://thread.gmane.org/gmane.linux.debian.devel.bugs.rc/378525/focus=54491
+ * http://thread.gmane.org/gmane.freax.debian.devel.bugs.rc/378525/focus=54491
  * https://bugzilla.kernel.org/show_bug.cgi?id=60565
  *
  * *****************
@@ -50,13 +50,13 @@
  * happy to assist.
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/blkdev.h>
+#include <freax/libata.h>
+#include <freax/blkdev.h>
 #include <scsi/scsi_device.h>
 
 #define DRV_NAME	"sata_inic162x"
@@ -823,7 +823,7 @@ static int inic_init_one(struct pci_dev *pdev, const struct pci_device_id *ent)
 
 	ata_print_version_once(&pdev->dev, DRV_VERSION);
 
-	dev_alert(&pdev->dev, "inic162x support is broken with common data corruption issues and will be disabled by default, contact linux-ide@vger.kernel.org if in production use\n");
+	dev_alert(&pdev->dev, "inic162x support is broken with common data corruption issues and will be disabled by default, contact freax-ide@vger.kernel.org if in production use\n");
 
 	/* alloc host */
 	host = ata_host_alloc_pinfo(&pdev->dev, ppi, NR_PORTS);

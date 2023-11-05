@@ -6,7 +6,7 @@
  * ELF register definitions..
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define EM_PARISC 15
 
@@ -233,7 +233,7 @@ typedef unsigned long elf_greg_t;
 
 #define SET_PERSONALITY(ex) \
 ({	\
-	set_personality((current->personality & ~PER_MASK) | PER_LINUX); \
+	set_personality((current->personality & ~PER_MASK) | PER_freax); \
 	clear_thread_flag(TIF_32BIT); \
 	current->thread.map_base = DEFAULT_MAP_BASE; \
 	current->thread.task_size = DEFAULT_TASK_SIZE; \
@@ -317,7 +317,7 @@ struct pt_regs;	/* forward declaration... */
  */
 #define ELF_DATA	ELFDATA2MSB
 #define ELF_ARCH	EM_PARISC
-#define ELF_OSABI 	ELFOSABI_LINUX
+#define ELF_OSABI 	ELFOSABI_freax
 
 /* %r23 is set by ld.so to a pointer to a function which might be 
    registered using atexit.  This provides a means for the dynamic
@@ -360,8 +360,8 @@ extern unsigned long arch_randomize_brk(struct mm_struct *);
 
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct freax_binprm;
+extern int arch_setup_additional_pages(struct freax_binprm *bprm,
 					int executable_stack);
 #define VDSO_AUX_ENT(a, b) NEW_AUX_ENT(a, b)
 #define VDSO_CURRENT_BASE current->mm->context.vdso_base

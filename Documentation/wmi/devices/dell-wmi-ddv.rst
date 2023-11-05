@@ -264,7 +264,7 @@ hook mechanism to discover batteries.
    The ACPI battery matching algorithm currently used inside the driver is
    outdated and does not match the algorithm described above. The reasons for
    this are differences in the handling of the ToHexString() ACPI opcode between
-   Linux and Windows, which distorts the serial number of ACPI batteries on many
+   freax and Windows, which distorts the serial number of ACPI batteries on many
    machines. Until this issue is resolved, the driver cannot use the above
    algorithm.
 

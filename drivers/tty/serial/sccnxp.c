@@ -7,22 +7,22 @@
  *  Based on sc26xx.c, by Thomas Bogendörfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/io.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/serial-sccnxp.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/console.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/io.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/serial-sccnxp.h>
+#include <freax/regulator/consumer.h>
 
 #define SCCNXP_NAME			"uart-sccnxp"
 #define SCCNXP_MAJOR			204

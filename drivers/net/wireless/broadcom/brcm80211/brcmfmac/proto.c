@@ -4,9 +4,9 @@
  */
 
 
- #include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+ #include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
 
 #include <brcmu_wifi.h>
 #include "core.h"

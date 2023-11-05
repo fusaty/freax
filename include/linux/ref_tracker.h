@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#ifndef _LINUX_REF_TRACKER_H
-#define _LINUX_REF_TRACKER_H
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/stackdepot.h>
+#ifndef _freax_REF_TRACKER_H
+#define _freax_REF_TRACKER_H
+#include <freax/refcount.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/stackdepot.h>
 
 struct ref_tracker;
 
@@ -97,4 +97,4 @@ static inline int ref_tracker_free(struct ref_tracker_dir *dir,
 
 #endif
 
-#endif /* _LINUX_REF_TRACKER_H */
+#endif /* _freax_REF_TRACKER_H */

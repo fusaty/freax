@@ -6,11 +6,11 @@
  * Author: Paolo Abeni <pabeni@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/inet_diag.h>
+#include <freax/kernel.h>
+#include <freax/net.h>
+#include <freax/inet_diag.h>
 #include <net/netlink.h>
-#include <uapi/linux/mptcp.h>
+#include <uapi/freax/mptcp.h>
 #include "protocol.h"
 
 static int sk_diag_dump(struct sock *sk, struct sk_buff *skb,

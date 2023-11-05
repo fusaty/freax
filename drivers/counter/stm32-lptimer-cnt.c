@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/counter.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/counter.h>
+#include <freax/mfd/stm32-lptimer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 struct stm32_lptim_cnt {
 	struct device *dev;

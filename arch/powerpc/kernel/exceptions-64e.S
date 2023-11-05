@@ -5,8 +5,8 @@
  *  Copyright (C) 2007 Ben. Herrenschmidt (benh@kernel.crashing.org), IBM Corp.
  */
 
-#include <linux/linkage.h>
-#include <linux/threads.h>
+#include <freax/linkage.h>
+#include <freax/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/ppc_asm.h>
@@ -820,7 +820,7 @@ kernel_dbg_exc:
 	addi	r3,r1,STACK_INT_FRAME_REGS
 	/*
 	 * XXX: Returning from performance_monitor_exception taken as a
-	 * soft-NMI (Linux irqs disabled) may be risky to use interrupt_return
+	 * soft-NMI (freax irqs disabled) may be risky to use interrupt_return
 	 * and could cause bugs in return or elsewhere. That case should just
 	 * restore registers and return. There is a workaround for one known
 	 * problem in interrupt_exit_kernel_prepare().

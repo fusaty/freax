@@ -4,19 +4,19 @@
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/media-bus-format.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/units.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/media-bus-format.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/units.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

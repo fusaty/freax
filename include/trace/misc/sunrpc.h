@@ -8,7 +8,7 @@
 #if !defined(_TRACE_SUNRPC_BASE_H)
 #define _TRACE_SUNRPC_BASE_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #define SUNRPC_TRACE_PID_SPECIFIER	"%08x"
 #define SUNRPC_TRACE_CLID_SPECIFIER	"%08x"

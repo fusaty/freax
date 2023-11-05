@@ -20,12 +20,12 @@
 #define pr_fmt(fmt) "pciehp: " fmt
 #define dev_fmt pr_fmt
 
-#include <linux/bitfield.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <freax/bitfield.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pci.h>
 #include "pciehp.h"
 
 #include "../pci.h"

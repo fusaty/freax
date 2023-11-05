@@ -6,14 +6,14 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "internal.h"
 

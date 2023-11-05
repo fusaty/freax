@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * CPU Microcode Update Driver for Linux
+ * CPU Microcode Update Driver for freax
  *
  * Copyright (C) 2000-2006 Tigran Aivazian <aivazian.tigran@gmail.com>
  *	      2006	Shaohua Li <shaohua.li@intel.com>
  *	      2013-2016	Borislav Petkov <bp@alien8.de>
  *
- * X86 CPU microcode early update for Linux:
+ * X86 CPU microcode early update for freax:
  *
  *	Copyright (C) 2012 Fenghua Yu <fenghua.yu@intel.com>
  *			   H Peter Anvin" <hpa@zytor.com>
@@ -17,20 +17,20 @@
 
 #define pr_fmt(fmt) "microcode: " fmt
 
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/syscore_ops.h>
-#include <linux/miscdevice.h>
-#include <linux/capability.h>
-#include <linux/firmware.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <freax/platform_device.h>
+#include <freax/stop_machine.h>
+#include <freax/syscore_ops.h>
+#include <freax/miscdevice.h>
+#include <freax/capability.h>
+#include <freax/firmware.h>
+#include <freax/cpumask.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/cpu.h>
+#include <freax/nmi.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
 
 #include <asm/apic.h>
 #include <asm/cpu_device_id.h>

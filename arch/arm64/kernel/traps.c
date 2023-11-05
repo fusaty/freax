@@ -6,29 +6,29 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bug.h>
-#include <linux/context_tracking.h>
-#include <linux/signal.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sizes.h>
-#include <linux/syscalls.h>
-#include <linux/mm_types.h>
-#include <linux/kasan.h>
-#include <linux/ubsan.h>
-#include <linux/cfi.h>
+#include <freax/bug.h>
+#include <freax/context_tracking.h>
+#include <freax/signal.h>
+#include <freax/kallsyms.h>
+#include <freax/kprobes.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/hardirq.h>
+#include <freax/kdebug.h>
+#include <freax/module.h>
+#include <freax/kexec.h>
+#include <freax/delay.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sizes.h>
+#include <freax/syscalls.h>
+#include <freax/mm_types.h>
+#include <freax/kasan.h>
+#include <freax/ubsan.h>
+#include <freax/cfi.h>
 
 #include <asm/atomic.h>
 #include <asm/bug.h>

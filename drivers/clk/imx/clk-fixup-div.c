@@ -3,10 +3,10 @@
  * Copyright (C) 2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include "clk.h"
 
 #define div_mask(d)	((1 << (d->width)) - 1)

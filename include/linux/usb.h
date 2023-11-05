@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_H
-#define __LINUX_USB_H
+#ifndef __freax_USB_H
+#define __freax_USB_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/usb/ch9.h>
+#include <freax/mod_devicetable.h>
+#include <freax/usb/ch9.h>
 
 #define USB_MAJOR			180
 #define USB_DEVICE_MAJOR		189
@@ -11,17 +11,17 @@
 
 #ifdef __KERNEL__
 
-#include <linux/errno.h>        /* for -ENODEV */
-#include <linux/delay.h>	/* for mdelay() */
-#include <linux/interrupt.h>	/* for in_interrupt() */
-#include <linux/list.h>		/* for struct list_head */
-#include <linux/kref.h>		/* for struct kref */
-#include <linux/device.h>	/* for struct device */
-#include <linux/fs.h>		/* for struct file_operations */
-#include <linux/completion.h>	/* for struct completion */
-#include <linux/sched.h>	/* for current && schedule_timeout */
-#include <linux/mutex.h>	/* for struct mutex */
-#include <linux/pm_runtime.h>	/* for runtime PM */
+#include <freax/errno.h>        /* for -ENODEV */
+#include <freax/delay.h>	/* for mdelay() */
+#include <freax/interrupt.h>	/* for in_interrupt() */
+#include <freax/list.h>		/* for struct list_head */
+#include <freax/kref.h>		/* for struct kref */
+#include <freax/device.h>	/* for struct device */
+#include <freax/fs.h>		/* for struct file_operations */
+#include <freax/completion.h>	/* for struct completion */
+#include <freax/sched.h>	/* for current && schedule_timeout */
+#include <freax/mutex.h>	/* for struct mutex */
+#include <freax/pm_runtime.h>	/* for runtime PM */
 
 struct usb_device;
 struct usb_driver;
@@ -311,7 +311,7 @@ bool usb_check_int_endpoints(
  * USB Resume Timer: Every Host controller driver should drive the resume
  * signalling on the bus for the amount of time defined by this macro.
  *
- * That way we will have a 'stable' behavior among all HCDs supported by Linux.
+ * That way we will have a 'stable' behavior among all HCDs supported by freax.
  *
  * Note that the USB Specification states we should drive resume for *at least*
  * 20 ms, but it doesn't give an upper bound. This creates two possible
@@ -1943,7 +1943,7 @@ void usb_sg_wait(struct usb_sg_request *io);
 /* ----------------------------------------------------------------------- */
 
 /*
- * For various legacy reasons, Linux has a small cookie that's paired with
+ * For various legacy reasons, freax has a small cookie that's paired with
  * a struct usb_device to identify an endpoint queue.  Queue characteristics
  * are defined by the endpoint's descriptor.  This cookie is called a "pipe",
  * an unsigned int encoded as:

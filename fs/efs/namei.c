@@ -7,9 +7,9 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/exportfs.h>
+#include <freax/buffer_head.h>
+#include <freax/string.h>
+#include <freax/exportfs.h>
 #include "efs.h"
 
 

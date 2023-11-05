@@ -7,10 +7,10 @@
  *              Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/stat.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"

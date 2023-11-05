@@ -5,17 +5,17 @@
  * Author: Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/workqueue.h>
+#include <freax/spi/spi-mem.h>
 
 /* Register offset definitions */
 #define ZYNQ_QSPI_CONFIG_OFFSET		0x00 /* Configuration  Register, RW */

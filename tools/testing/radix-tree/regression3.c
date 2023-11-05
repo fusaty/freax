@@ -17,10 +17,10 @@
  * Upstream commit:
  * Not yet
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/radix-tree.h>
 #include <stdlib.h>
 #include <stdio.h>
 

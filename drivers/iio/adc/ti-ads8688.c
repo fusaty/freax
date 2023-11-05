@@ -3,21 +3,21 @@
  * Copyright (C) 2015 Prevas A/S
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/sysfs.h>
 
 #define ADS8688_CMD_REG(x)		(x << 8)
 #define ADS8688_CMD_REG_NOOP		0x00

@@ -2,7 +2,7 @@
 #ifndef __ASM_ARM_INSN_H
 #define __ASM_ARM_INSN_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Avoid a literal load by emitting a sequence of ADD/LDR instructions with the

@@ -8,21 +8,21 @@
  * Copyright (c) 2017-2018 Brian Masney <masneyb@onstation.org>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/platform_data/tsl2772.h>
-#include <linux/regulator/consumer.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/platform_data/tsl2772.h>
+#include <freax/regulator/consumer.h>
 
 /* Cal defs */
 #define PROX_STAT_CAL			0

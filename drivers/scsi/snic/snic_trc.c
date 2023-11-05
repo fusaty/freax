@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2014 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/errno.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/mempool.h>
+#include <freax/errno.h>
+#include <freax/vmalloc.h>
 
 #include "snic_io.h"
 #include "snic.h"

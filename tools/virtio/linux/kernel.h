@@ -9,14 +9,14 @@
 #include <assert.h>
 #include <stdarg.h>
 
-#include <linux/compiler.h>
-#include "../../../include/linux/container_of.h"
-#include <linux/log2.h>
-#include <linux/types.h>
-#include <linux/overflow.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/bug.h>
+#include <freax/compiler.h>
+#include "../../../include/freax/container_of.h"
+#include <freax/log2.h>
+#include <freax/types.h>
+#include <freax/overflow.h>
+#include <freax/list.h>
+#include <freax/printk.h>
+#include <freax/bug.h>
 #include <errno.h>
 #include <unistd.h>
 #include <asm/barrier.h>

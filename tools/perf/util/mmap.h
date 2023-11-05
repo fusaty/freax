@@ -2,8 +2,8 @@
 #define __PERF_MMAP_H 1
 
 #include <internal/mmap.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 #include <perf/cpumap.h>
 #ifdef HAVE_AIO_SUPPORT
 #include <aio.h>

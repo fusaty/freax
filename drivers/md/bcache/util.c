@@ -6,14 +6,14 @@
  * Copyright 2012 Google, Inc.
  */
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
-#include <linux/sched/clock.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/types.h>
+#include <freax/sched/clock.h>
 
 #include "util.h"
 

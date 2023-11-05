@@ -3,13 +3,13 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/kfifo.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
+#include <freax/debugfs.h>
+#include <freax/kfifo.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
 #include <sound/soc.h>
 #include "avs.h"
 #include "messages.h"

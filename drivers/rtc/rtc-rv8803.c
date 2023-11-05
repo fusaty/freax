@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/log2.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
+#include <freax/bcd.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
+#include <freax/log2.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
 
 #define RV8803_I2C_TRY_COUNT		4
 

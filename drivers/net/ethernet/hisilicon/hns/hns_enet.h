@@ -6,11 +6,11 @@
 #ifndef __HNS_ENET_H
 #define __HNS_ENET_H
 
-#include <linux/netdevice.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/netdevice.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 
 #include "hnae.h"
 

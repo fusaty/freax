@@ -4,9 +4,9 @@
  *
  * Copyright(c) 2013-2016 Intel Corporation. All rights reserved.
  */
-#include <linux/notifier.h>
-#include <linux/acpi.h>
-#include <linux/nd.h>
+#include <freax/notifier.h>
+#include <freax/acpi.h>
+#include <freax/nd.h>
 #include <asm/mce.h>
 #include "nfit.h"
 

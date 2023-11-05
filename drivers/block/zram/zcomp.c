@@ -3,14 +3,14 @@
  * Copyright (C) 2014 Sergey Senozhatsky.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/crypto.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/cpu.h>
+#include <freax/crypto.h>
 
 #include "zcomp.h"
 

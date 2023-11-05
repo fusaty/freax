@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/circ_buf.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/circ_buf.h>
+#include <freax/sched.h>
 #include "internal.h"
 
 /*

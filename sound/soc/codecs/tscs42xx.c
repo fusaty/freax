@@ -3,16 +3,16 @@
 // Copyright 2017 Tempo Semiconductor, Inc.
 // Author: Steven Eckhoff <steven.eckhoff.opensource@gmail.com>
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/clk.h>
 #include <sound/tlv.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

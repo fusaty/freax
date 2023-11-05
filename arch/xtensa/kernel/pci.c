@@ -12,14 +12,14 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/memblock.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/platform.h>

@@ -8,13 +8,13 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kmod.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
+#include <freax/kmod.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/ctype.h>
+#include <freax/uaccess.h>
 
 #include "sclp.h"
 #include "sclp_rw.h"

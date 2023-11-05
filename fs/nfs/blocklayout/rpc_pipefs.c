@@ -26,8 +26,8 @@
  * possibility of such damages.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
 
 #include "blocklayout.h"
 

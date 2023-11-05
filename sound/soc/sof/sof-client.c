@@ -2,16 +2,16 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Authors: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
-//	    Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+// Authors: Ranjani Sridharan <ranjani.sridharan@freax.intel.com>
+//	    Peter Ujfalusi <peter.ujfalusi@freax.intel.com>
 //
 
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 #include <sound/sof/ipc4/header.h>
 #include "ops.h"
 #include "sof-client.h"

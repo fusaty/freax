@@ -16,8 +16,8 @@
 
 #define MODULE_NAME "cpia1"
 
-#include <linux/input.h>
-#include <linux/sched/signal.h>
+#include <freax/input.h>
+#include <freax/sched/signal.h>
 
 #include "gspca.h"
 

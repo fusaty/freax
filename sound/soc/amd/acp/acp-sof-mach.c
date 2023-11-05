@@ -16,8 +16,8 @@
 #include <sound/pcm_params.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-dapm.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
 
 #include "acp-mach.h"
 

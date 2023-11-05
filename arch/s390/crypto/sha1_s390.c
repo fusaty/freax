@@ -16,12 +16,12 @@
  * Derived from "crypto/sha1_generic.c"
  *   Copyright (c) Alan Smithee.
  *   Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- *   Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ *   Copyright (c) Jean-Francois Dive <jef@freaxbe.org>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/cpufeature.h>
 #include <crypto/sha1.h>
 #include <asm/cpacf.h>
 

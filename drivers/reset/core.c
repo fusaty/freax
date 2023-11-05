@@ -4,18 +4,18 @@
  *
  * Copyright 2013 Philipp Zabel, Pengutronix
  */
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/reset.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/acpi.h>
+#include <freax/reset.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
 
 static DEFINE_MUTEX(reset_list_mutex);
 static LIST_HEAD(reset_controller_list);

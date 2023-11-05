@@ -3,7 +3,7 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@freax.vnet.ibm.com>
  *
  * The System z PCI code is a rewrite from a prototype by
  * the following people (Kudoz!):
@@ -19,15 +19,15 @@
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/jump_label.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/seq_file.h>
+#include <freax/jump_label.h>
+#include <freax/pci.h>
+#include <freax/printk.h>
 
 #include <asm/isc.h>
 #include <asm/airq.h>

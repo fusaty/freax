@@ -14,21 +14,21 @@
  * pin should provide pulses even when the LCD is blanked, otherwise
  * a pen touch needed to unblank the LCD will never be read.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/mfd/ucb1x00.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/input.h>
+#include <freax/device.h>
+#include <freax/freezer.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/mfd/ucb1x00.h>
 
 #include <mach/collie.h>
 #include <asm/mach-types.h>
@@ -440,6 +440,6 @@ module_param(adcsync, int, 0444);
 module_init(ucb1x00_ts_init);
 module_exit(ucb1x00_ts_exit);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.freax.org.uk>");
 MODULE_DESCRIPTION("UCB1x00 touchscreen driver");
 MODULE_LICENSE("GPL");

@@ -5,7 +5,7 @@
  * Copyright (C) 2020 Safran Passenger Innovations LLC
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <media/v4l2-mem2mem.h>
 
 #include "hantro.h"

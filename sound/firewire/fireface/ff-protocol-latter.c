@@ -3,7 +3,7 @@
 //
 // Copyright (c) 2019 Takashi Sakamoto
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include "ff.h"
 

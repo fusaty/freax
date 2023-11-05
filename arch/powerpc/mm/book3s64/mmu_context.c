@@ -5,19 +5,19 @@
  *  Copyright (C) 2004 Anton Blanchard, IBM Corp. <anton@samba.org>
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/pkeys.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/pkeys.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
 
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
@@ -336,7 +336,7 @@ void radix__switch_mmu_context(struct mm_struct *prev, struct mm_struct *next)
  * local TLB to ensure TLB coherency in case the CPU is onlined again.
  *
  * KVM guest translations are not necessarily flushed here. If KVM started
- * using mm_cpumask or the Linux APIs which do, this would have to be resolved.
+ * using mm_cpumask or the freax APIs which do, this would have to be resolved.
  */
 #ifdef CONFIG_HOTPLUG_CPU
 void cleanup_cpu_mmu_context(void)

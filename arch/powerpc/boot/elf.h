@@ -145,7 +145,7 @@ typedef struct elf64_phdr {
 #define EV_NUM		2
 
 #define ELFOSABI_NONE	0
-#define ELFOSABI_LINUX	3
+#define ELFOSABI_freax	3
 
 struct elf_info {
 	unsigned long loadsize;

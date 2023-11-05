@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/sh03/setup.c
+ * freax/arch/sh/boards/sh03/setup.c
  *
  * Copyright (C) 2004  Interface Co.,Ltd. Saito.K
  *
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
 #include <asm/io.h>
 #include <asm/rtc.h>
 #include <mach-sh03/mach/io.h>

@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex freax Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -20,15 +20,15 @@
  * more details, a copy of which can be found in the file COPYING  *
  * included with this package.                                     *
  *******************************************************************/
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/delay.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/delay.h>
 #include <asm/unaligned.h>
-#include <linux/t10-pi.h>
-#include <linux/crc-t10dif.h>
-#include <linux/blk-cgroup.h>
+#include <freax/t10-pi.h>
+#include <freax/crc-t10dif.h>
+#include <freax/blk-cgroup.h>
 #include <net/checksum.h>
 
 #include <scsi/scsi.h>

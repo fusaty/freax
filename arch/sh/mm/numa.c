@@ -7,11 +7,11 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/numa.h>
-#include <linux/pfn.h>
+#include <freax/module.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/numa.h>
+#include <freax/pfn.h>
 #include <asm/sections.h>
 
 struct pglist_data *node_data[MAX_NUMNODES] __read_mostly;

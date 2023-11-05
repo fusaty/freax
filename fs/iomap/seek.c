@@ -3,12 +3,12 @@
  * Copyright (C) 2017 Red Hat, Inc.
  * Copyright (c) 2018-2021 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/fs.h>
+#include <freax/iomap.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
 
 static loff_t iomap_seek_hole_iter(const struct iomap_iter *iter,
 		loff_t *hole_pos)

@@ -8,17 +8,17 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/workqueue.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/workqueue.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
 
 #define PCI_DEVICE_ID_INTEL_BYT			0x0f37
 #define PCI_DEVICE_ID_INTEL_MRFLD		0x119e
@@ -123,32 +123,32 @@ unmap:
 
 static const struct property_entry dwc3_pci_intel_properties[] = {
 	PROPERTY_ENTRY_STRING("dr_mode", "peripheral"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 
 static const struct property_entry dwc3_pci_intel_phy_charger_detect_properties[] = {
 	PROPERTY_ENTRY_STRING("dr_mode", "peripheral"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u2_susphy_quirk"),
-	PROPERTY_ENTRY_BOOL("linux,phy_charger_detect"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,phy_charger_detect"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 
 static const struct property_entry dwc3_pci_intel_byt_properties[] = {
 	PROPERTY_ENTRY_STRING("dr_mode", "peripheral"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u2_susphy_quirk"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 
 static const struct property_entry dwc3_pci_mrfld_properties[] = {
 	PROPERTY_ENTRY_STRING("dr_mode", "otg"),
-	PROPERTY_ENTRY_STRING("linux,extcon-name", "mrfld_bcove_pwrsrc"),
+	PROPERTY_ENTRY_STRING("freax,extcon-name", "mrfld_bcove_pwrsrc"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u3_susphy_quirk"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u2_susphy_quirk"),
 	PROPERTY_ENTRY_BOOL("snps,usb2-gadget-lpm-disable"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 
@@ -168,7 +168,7 @@ static const struct property_entry dwc3_pci_amd_properties[] = {
 	PROPERTY_ENTRY_BOOL("snps,disable_scramble_quirk"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u3_susphy_quirk"),
 	PROPERTY_ENTRY_BOOL("snps,dis_u2_susphy_quirk"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 
@@ -176,7 +176,7 @@ static const struct property_entry dwc3_pci_mr_properties[] = {
 	PROPERTY_ENTRY_STRING("dr_mode", "otg"),
 	PROPERTY_ENTRY_BOOL("usb-role-switch"),
 	PROPERTY_ENTRY_STRING("role-switch-default-mode", "host"),
-	PROPERTY_ENTRY_BOOL("linux,sysdev_is_parent"),
+	PROPERTY_ENTRY_BOOL("freax,sysdev_is_parent"),
 	{}
 };
 

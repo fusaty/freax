@@ -8,11 +8,11 @@
  * Copyright (C) 2012 Renesas Electronics Corp.
  * Author: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
-#ifndef __LINUX_OF_GRAPH_H
-#define __LINUX_OF_GRAPH_H
+#ifndef __freax_OF_GRAPH_H
+#define __freax_OF_GRAPH_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 
 /**
  * struct of_endpoint - the OF graph endpoint data structure
@@ -124,4 +124,4 @@ static inline struct device_node *of_graph_get_remote_node(
 
 #endif /* CONFIG_OF */
 
-#endif /* __LINUX_OF_GRAPH_H */
+#endif /* __freax_OF_GRAPH_H */

@@ -3,11 +3,11 @@
  * Platform data for the chipidea USB dual role controller
  */
 
-#ifndef __LINUX_USB_CHIPIDEA_H
-#define __LINUX_USB_CHIPIDEA_H
+#ifndef __freax_USB_CHIPIDEA_H
+#define __freax_USB_CHIPIDEA_H
 
-#include <linux/extcon.h>
-#include <linux/usb/otg.h>
+#include <freax/extcon.h>
+#include <freax/usb/otg.h>
 
 struct ci_hdrc;
 

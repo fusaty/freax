@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-omap1/clock.c
+ *  freax/arch/arm/mach-omap1/clock.c
  *
  *  Copyright (C) 2004 - 2005, 2009-2010 Nokia Corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -8,17 +8,17 @@
  *  Modified to use omap shared clock framework by
  *  Tony Lindgren <tony@atomide.com>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/spinlock.h>
 
 #include <asm/mach-types.h>
 

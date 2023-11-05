@@ -6,15 +6,15 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#ifndef LINUX_RIO_DRV_H
-#define LINUX_RIO_DRV_H
+#ifndef freax_RIO_DRV_H
+#define freax_RIO_DRV_H
 
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/rio.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/rio.h>
 
 extern int __rio_local_read_config_32(struct rio_mport *port, u32 offset,
 				      u32 * data);
@@ -446,4 +446,4 @@ extern u16 rio_local_get_device_id(struct rio_mport *port);
 extern void rio_local_set_device_id(struct rio_mport *port, u16 did);
 extern int rio_init_mports(void);
 
-#endif				/* LINUX_RIO_DRV_H */
+#endif				/* freax_RIO_DRV_H */

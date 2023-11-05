@@ -14,29 +14,29 @@
  *	      serial8250_register_8250_port() ports
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/tty.h>
-#include <linux/ratelimit.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/nmi.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/tty.h>
+#include <freax/ratelimit.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/nmi.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 #ifdef CONFIG_SPARC
-#include <linux/sunserialcore.h>
+#include <freax/sunserialcore.h>
 #endif
 
 #include <asm/irq.h>

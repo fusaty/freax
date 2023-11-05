@@ -1,42 +1,42 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_H
-#define _LINUX_SCHED_H
+#ifndef _freax_SCHED_H
+#define _freax_SCHED_H
 
 /*
  * Define 'struct task_struct' and provide the main scheduler
  * APIs (schedule(), wakeup variants, etc.)
  */
 
-#include <uapi/linux/sched.h>
+#include <uapi/freax/sched.h>
 
 #include <asm/current.h>
 
-#include <linux/pid.h>
-#include <linux/sem.h>
-#include <linux/shm.h>
-#include <linux/kmsan_types.h>
-#include <linux/mutex.h>
-#include <linux/plist.h>
-#include <linux/hrtimer.h>
-#include <linux/irqflags.h>
-#include <linux/seccomp.h>
-#include <linux/nodemask.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/resource.h>
-#include <linux/latencytop.h>
-#include <linux/sched/prio.h>
-#include <linux/sched/types.h>
-#include <linux/signal_types.h>
-#include <linux/syscall_user_dispatch.h>
-#include <linux/mm_types_task.h>
-#include <linux/task_io_accounting.h>
-#include <linux/posix-timers.h>
-#include <linux/rseq.h>
-#include <linux/seqlock.h>
-#include <linux/kcsan.h>
-#include <linux/rv.h>
-#include <linux/livepatch_sched.h>
+#include <freax/pid.h>
+#include <freax/sem.h>
+#include <freax/shm.h>
+#include <freax/kmsan_types.h>
+#include <freax/mutex.h>
+#include <freax/plist.h>
+#include <freax/hrtimer.h>
+#include <freax/irqflags.h>
+#include <freax/seccomp.h>
+#include <freax/nodemask.h>
+#include <freax/rcupdate.h>
+#include <freax/refcount.h>
+#include <freax/resource.h>
+#include <freax/latencytop.h>
+#include <freax/sched/prio.h>
+#include <freax/sched/types.h>
+#include <freax/signal_types.h>
+#include <freax/syscall_user_dispatch.h>
+#include <freax/mm_types_task.h>
+#include <freax/task_io_accounting.h>
+#include <freax/posix-timers.h>
+#include <freax/rseq.h>
+#include <freax/seqlock.h>
+#include <freax/kcsan.h>
+#include <freax/rv.h>
+#include <freax/livepatch_sched.h>
 #include <asm/kmap_size.h>
 
 /* task_struct member predeclarations (sorted alphabetically): */
@@ -886,7 +886,7 @@ struct task_struct {
 	/* JOBCTL_*, siglock protected: */
 	unsigned long			jobctl;
 
-	/* Used for emulating ABI behavior of previous Linux versions: */
+	/* Used for emulating ABI behavior of previous freax versions: */
 	unsigned int			personality;
 
 	/* Scheduler bits, serialized by scheduler locks: */
@@ -1575,7 +1575,7 @@ static inline struct pid *task_pid(struct task_struct *task)
  *                     current.
  * task_xid_nr_ns()  : id seen from the ns specified;
  *
- * see also pid_nr() etc in include/linux/pid.h
+ * see also pid_nr() etc in include/freax/pid.h
  */
 pid_t __task_pid_nr_ns(struct task_struct *task, enum pid_type type, struct pid_namespace *ns);
 
@@ -1984,7 +1984,7 @@ extern unsigned long init_stack[THREAD_SIZE / sizeof(unsigned long)];
  * find_task_by_vpid():
  *      finds a task by its virtual pid
  *
- * see also find_vpid() etc in include/linux/pid.h
+ * see also find_vpid() etc in include/freax/pid.h
  */
 
 extern struct task_struct *find_task_by_vpid(pid_t nr);

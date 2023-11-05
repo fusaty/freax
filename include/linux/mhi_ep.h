@@ -6,8 +6,8 @@
 #ifndef _MHI_EP_H_
 #define _MHI_EP_H_
 
-#include <linux/dma-direction.h>
-#include <linux/mhi.h>
+#include <freax/dma-direction.h>
+#include <freax/mhi.h>
 
 #define MHI_EP_DEFAULT_MTU 0x8000
 

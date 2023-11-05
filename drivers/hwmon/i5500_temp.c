@@ -5,16 +5,16 @@
  * Copyright (C) 2012, 2014 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
 
 /* Register definitions from datasheet */
 #define REG_TSTHRCATA	0xE2

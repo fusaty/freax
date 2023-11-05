@@ -10,9 +10,9 @@
 
 #include <crypto/algapi.h>
 #include <crypto/engine.h>
-#include <linux/kthread.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <freax/kthread.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
 
 #define ENGINE_NAME_LEN	30
 

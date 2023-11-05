@@ -4,7 +4,7 @@
  *
  * Copyright (C) 1996-2005 Paul Mackerras.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/errno.h>

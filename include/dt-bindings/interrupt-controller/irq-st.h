@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  include/linux/irqchip/irq-st.h
+ *  include/freax/irqchip/irq-st.h
  *
  *  Copyright (C) 2014 STMicroelectronics – All Rights Reserved
  *

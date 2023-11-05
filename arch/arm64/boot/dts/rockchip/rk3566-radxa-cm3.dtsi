@@ -21,7 +21,7 @@
 			gpios = <&gpio0 RK_PA6 GPIO_ACTIVE_HIGH>;
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_STATUS;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 			default-state = "on";
 			pinctrl-names = "default";
 			pinctrl-0 = <&user_led2>;

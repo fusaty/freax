@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 #ifndef _GSI_H_
 #define _GSI_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
 
 #include "ipa_version.h"
 

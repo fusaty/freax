@@ -8,13 +8,13 @@
  *
  * This code is based on the uncore PMUs like arm-cci and arm-ccn.
  */
-#include <linux/acpi.h>
-#include <linux/bug.h>
-#include <linux/cpuhotplug.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/smp.h>
+#include <freax/acpi.h>
+#include <freax/bug.h>
+#include <freax/cpuhotplug.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/list.h>
+#include <freax/smp.h>
 
 #include "hisi_uncore_pmu.h"
 

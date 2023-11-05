@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <freax/if_ether.h>
+#include <freax/ip.h>
 
 /* Dummy prog to test TC-BPF API */
 

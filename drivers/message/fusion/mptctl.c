@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptctl.c
+ *  freax/drivers/message/fusion/mptctl.c
  *      mpt Ioctl driver.
  *      For use with LSI PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionfreax@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -45,20 +45,20 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/delay.h>	/* for mdelay */
+#include <freax/miscdevice.h>
+#include <freax/mutex.h>
+#include <freax/compat.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -73,7 +73,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT misc device (ioctl) driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_freax_VERSION_COMMON
 #define MYNAM		"mptctl"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -159,7 +159,7 @@ static struct fasync_struct *async_queue=NULL;
 //                  ^----------------- 80 + 512
 #define MAX_SGL_BYTES		((MAX_FRAGS_SPILL1 + 1 + (4 * FRAGS_PER_BUCKET)) * 8)
 
-/* linux only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
+/* freax only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
 #define MAX_KMALLOC_SZ		(128*1024)
 
 #define MPT_IOCTL_DEFAULT_TIMEOUT 10	/* Default timeout value (seconds) */
@@ -1328,7 +1328,7 @@ mptctl_getiocinfo (MPT_ADAPTER *ioc, unsigned long arg, unsigned int data_size)
 
 	/* Set the Version Strings.
 	 */
-	strscpy_pad(karg->driverVersion, MPT_LINUX_PACKAGE_NAME,
+	strscpy_pad(karg->driverVersion, MPT_freax_PACKAGE_NAME,
 		    sizeof(karg->driverVersion));
 
 	karg->busChangeEvent = 0;

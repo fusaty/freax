@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/most.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
+#include <freax/most.h>
 
 #define DRIVER_NAME "sound"
 #define STRING_SIZE	80

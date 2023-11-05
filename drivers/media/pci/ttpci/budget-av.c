@@ -13,7 +13,7 @@
  * Copyright (C) 1999-2002 Ralph  Metzler
  *                       & Marcus Metzler for convergence integrated media GmbH
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://freaxtv.org
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
@@ -30,13 +30,13 @@
 #include "tua6100.h"
 #include "dvb-pll.h"
 #include <media/drv-intf/saa7146_vv.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/spinlock.h>
 
 #include <media/dvb_ca_en50221.h>
 

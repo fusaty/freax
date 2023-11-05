@@ -12,10 +12,10 @@
  *
  * Device file system interface to the TPM
  */
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/workqueue.h>
 #include "tpm.h"
 #include "tpm-dev.h"
 

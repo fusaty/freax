@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: LGPL-2.1 OR MIT */
 /*
  * Stack protector support for NOLIBC
- * Copyright (C) 2023 Thomas Weißschuh <linux@weissschuh.net>
+ * Copyright (C) 2023 Thomas Weißschuh <freax@weissschuh.net>
  */
 
 #ifndef _NOLIBC_STACKPROTECTOR_H

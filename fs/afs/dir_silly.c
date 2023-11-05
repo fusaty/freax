@@ -6,10 +6,10 @@
  * - Derived from NFS's sillyrename.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/fsnotify.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/fsnotify.h>
 #include "internal.h"
 
 static void afs_silly_rename_success(struct afs_operation *op)

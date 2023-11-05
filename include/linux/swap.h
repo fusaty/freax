@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SWAP_H
-#define _LINUX_SWAP_H
+#ifndef _freax_SWAP_H
+#define _freax_SWAP_H
 
-#include <linux/spinlock.h>
-#include <linux/linkage.h>
-#include <linux/mmzone.h>
-#include <linux/list.h>
-#include <linux/memcontrol.h>
-#include <linux/sched.h>
-#include <linux/node.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/atomic.h>
-#include <linux/page-flags.h>
-#include <uapi/linux/mempolicy.h>
+#include <freax/spinlock.h>
+#include <freax/linkage.h>
+#include <freax/mmzone.h>
+#include <freax/list.h>
+#include <freax/memcontrol.h>
+#include <freax/sched.h>
+#include <freax/node.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/atomic.h>
+#include <freax/page-flags.h>
+#include <uapi/freax/mempolicy.h>
 #include <asm/page.h>
 
 struct notifier_block;
@@ -65,7 +65,7 @@ static inline int current_is_kswapd(void)
 			    SWP_MIGRATION_NUM + SWP_DEVICE_NUM)
 
 /*
- * Unaddressable device memory support. See include/linux/hmm.h and
+ * Unaddressable device memory support. See include/freax/hmm.h and
  * Documentation/mm/hmm.rst. Short description is we need struct pages for
  * device memory that is unaddressable (inaccessible) by CPU, so that we can
  * migrate part of a process memory to device memory.
@@ -343,7 +343,7 @@ static inline swp_entry_t page_swap_entry(struct page *page)
 	return entry;
 }
 
-/* linux/mm/workingset.c */
+/* freax/mm/workingset.c */
 bool workingset_test_recent(void *shadow, bool file, bool *workingset);
 void workingset_age_nonresident(struct lruvec *lruvec, unsigned long nr_pages);
 void *workingset_eviction(struct folio *folio, struct mem_cgroup *target_memcg);
@@ -360,14 +360,14 @@ extern struct list_lru shadow_nodes;
 	}								\
 } while (0)
 
-/* linux/mm/page_alloc.c */
+/* freax/mm/page_alloc.c */
 extern unsigned long totalreserve_pages;
 
 /* Definition of global_zone_page_state not available yet */
 #define nr_free_pages() global_zone_page_state(NR_FREE_PAGES)
 
 
-/* linux/mm/swap.c */
+/* freax/mm/swap.c */
 void lru_note_cost(struct lruvec *lruvec, bool file,
 		   unsigned int nr_io, unsigned int nr_rotated);
 void lru_note_cost_refault(struct folio *);
@@ -400,7 +400,7 @@ extern void swap_setup(void);
 extern void lru_cache_add_inactive_or_unevictable(struct page *page,
 						struct vm_area_struct *vma);
 
-/* linux/mm/vmscan.c */
+/* freax/mm/vmscan.c */
 extern unsigned long zone_reclaimable_pages(struct zone *zone);
 extern unsigned long try_to_free_pages(struct zonelist *zonelist, int order,
 					gfp_t gfp_mask, nodemask_t *mask);
@@ -453,7 +453,7 @@ static inline unsigned long total_swapcache_pages(void)
 extern void free_swap_cache(struct page *page);
 extern void free_page_and_swap_cache(struct page *);
 extern void free_pages_and_swap_cache(struct encoded_page **, int);
-/* linux/mm/swapfile.c */
+/* freax/mm/swapfile.c */
 extern atomic_long_t nr_swap_pages;
 extern long total_swap_pages;
 extern atomic_t nr_rotate_swap;
@@ -525,7 +525,7 @@ static inline void put_swap_device(struct swap_info_struct *si)
 
 #define si_swapinfo(val) \
 	do { (val)->freeswap = (val)->totalswap = 0; } while (0)
-/* only sparc can not include linux/pagemap.h in this file
+/* only sparc can not include freax/pagemap.h in this file
  * so leave put_page and release_pages undeclared... */
 #define free_page_and_swap_cache(page) \
 	put_page(page)
@@ -688,4 +688,4 @@ static inline bool mem_cgroup_swap_full(struct folio *folio)
 #endif
 
 #endif /* __KERNEL__*/
-#endif /* _LINUX_SWAP_H */
+#endif /* _freax_SWAP_H */

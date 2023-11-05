@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_POISON_H
-#define _LINUX_POISON_H
+#ifndef _freax_POISON_H
+#define _freax_POISON_H
 
-/********** include/linux/list.h **********/
+/********** include/freax/list.h **********/
 
 /*
  * Architectures might want to move the poison pointer offset
@@ -23,7 +23,7 @@
 #define LIST_POISON1  ((void *) 0x100 + POISON_POINTER_DELTA)
 #define LIST_POISON2  ((void *) 0x122 + POISON_POINTER_DELTA)
 
-/********** include/linux/timer.h **********/
+/********** include/freax/timer.h **********/
 #define TIMER_ENTRY_STATIC	((void *) 0x300 + POISON_POINTER_DELTA)
 
 /********** mm/page_poison.c **********/

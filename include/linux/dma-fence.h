@@ -10,17 +10,17 @@
  * Maarten Lankhorst <maarten.lankhorst@canonical.com>
  */
 
-#ifndef __LINUX_DMA_FENCE_H
-#define __LINUX_DMA_FENCE_H
+#ifndef __freax_DMA_FENCE_H
+#define __freax_DMA_FENCE_H
 
-#include <linux/err.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/kref.h>
-#include <linux/sched.h>
-#include <linux/printk.h>
-#include <linux/rcupdate.h>
+#include <freax/err.h>
+#include <freax/wait.h>
+#include <freax/list.h>
+#include <freax/bitops.h>
+#include <freax/kref.h>
+#include <freax/sched.h>
+#include <freax/printk.h>
+#include <freax/rcupdate.h>
 
 struct dma_fence;
 struct dma_fence_ops;
@@ -666,4 +666,4 @@ static inline bool dma_fence_is_container(struct dma_fence *fence)
 	return dma_fence_is_array(fence) || dma_fence_is_chain(fence);
 }
 
-#endif /* __LINUX_DMA_FENCE_H */
+#endif /* __freax_DMA_FENCE_H */

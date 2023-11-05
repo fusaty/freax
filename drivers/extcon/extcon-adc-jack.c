@@ -13,16 +13,16 @@
  * Modified for calling to IIO to get adc by <anish.singh@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/iio/consumer.h>
-#include <linux/extcon/extcon-adc-jack.h>
-#include <linux/extcon-provider.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/iio/consumer.h>
+#include <freax/extcon/extcon-adc-jack.h>
+#include <freax/extcon-provider.h>
 
 /**
  * struct adc_jack_data - internal data for adc_jack device driver

@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2016 Christoph Hellwig.
  */
-#include <linux/kobject.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <freax/kobject.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/pci.h>
+#include <freax/module.h>
 
 #include "blk-mq.h"
 

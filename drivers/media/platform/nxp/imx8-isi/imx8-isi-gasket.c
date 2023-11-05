@@ -3,7 +3,7 @@
  * Copyright 2019-2023 NXP
  */
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 #include <media/mipi-csi2.h>
 

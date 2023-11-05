@@ -4,12 +4,12 @@
  * for more details.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <freax/moduleloader.h>
+#include <freax/elf.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
 
 #if 0
 #define DEBUGP(fmt, ...) printk(KERN_DEBUG pr_fmt(fmt), ##__VA_ARGS__)

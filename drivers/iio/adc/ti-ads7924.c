@@ -11,19 +11,19 @@
  * Datasheet: https://www.ti.com/lit/gpn/ads7924
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
 
 #define ADS7924_CHANNELS	 4
 #define ADS7924_BITS		12

@@ -7,12 +7,12 @@
  * See Documentation/core-api/watch_queue.rst
  */
 
-#ifndef _LINUX_WATCH_QUEUE_H
-#define _LINUX_WATCH_QUEUE_H
+#ifndef _freax_WATCH_QUEUE_H
+#define _freax_WATCH_QUEUE_H
 
-#include <uapi/linux/watch_queue.h>
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
+#include <uapi/freax/watch_queue.h>
+#include <freax/kref.h>
+#include <freax/rcupdate.h>
 
 #ifdef CONFIG_WATCH_QUEUE
 
@@ -130,4 +130,4 @@ static inline int watch_queue_init(struct pipe_inode_info *pipe)
 
 #endif
 
-#endif /* _LINUX_WATCH_QUEUE_H */
+#endif /* _freax_WATCH_QUEUE_H */

@@ -7,15 +7,15 @@
 //
 // Author: Matti Vaittinen <matti.vaittinen@fi.rohmeurope.com>
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/regulator/driver.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/regulator/driver.h>
 
 #include "internal.h"
 

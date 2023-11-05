@@ -7,13 +7,13 @@
  * Author: Lars Povlsen <lars.povlsen@microchip.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/bitfield.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/bitfield.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/microchip,sparx5.h>
 
 #define PLL_DIV		GENMASK(7, 0)

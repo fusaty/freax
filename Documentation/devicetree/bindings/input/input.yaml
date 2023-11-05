@@ -14,7 +14,7 @@ properties:
     description: Enable autorepeat when key is pressed and held down.
     type: boolean
 
-  linux,keycodes:
+  freax,keycodes:
     description:
       Specifies an array of numeric keycode values to be used for reporting
       button presses.
@@ -23,7 +23,7 @@ properties:
       minimum: 0
       maximum: 0x2ff
 
-  linux,code:
+  freax,code:
     description:
       Specifies a single numeric keycode value to be used for reporting
       button/switch events. Specify KEY_RESERVED (0) to opt out of event
@@ -31,7 +31,7 @@ properties:
     $ref: /schemas/types.yaml#/definitions/uint32
     maximum: 0x2ff
 
-  linux,input-type:
+  freax,input-type:
     $ref: /schemas/types.yaml#/definitions/uint32
     enum:
       - 1   # EV_KEY
@@ -59,6 +59,6 @@ properties:
       this property.
 
 dependencies:
-  linux,input-type: [ "linux,code" ]
+  freax,input-type: [ "freax,code" ]
 
 additionalProperties: true

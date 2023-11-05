@@ -4,14 +4,14 @@
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
 
 MODULE_AUTHOR("David S. Miller <davem@davemloft.net>");
 MODULE_DESCRIPTION("TI BQ4802 RTC driver");

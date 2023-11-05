@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2023 Xilinx, Inc. All rights reserved.
  */
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
 
 #include "../pci.h"
 #include "pcie-xilinx-common.h"

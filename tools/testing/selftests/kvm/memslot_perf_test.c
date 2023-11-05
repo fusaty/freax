@@ -19,8 +19,8 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <linux/compiler.h>
-#include <linux/sizes.h>
+#include <freax/compiler.h>
+#include <freax/sizes.h>
 
 #include <test_util.h>
 #include <kvm_util.h>

@@ -5,9 +5,9 @@
  * Author: John Fastabend <john.r.fastabend@intel.com>
  */
 
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <freax/rtnetlink.h>
+#include <freax/notifier.h>
+#include <freax/export.h>
 #include <net/dcbevent.h>
 
 static ATOMIC_NOTIFIER_HEAD(dcbevent_notif_chain);

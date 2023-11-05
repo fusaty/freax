@@ -30,14 +30,14 @@
  *	Receive: the packet's reception time is converted to an appropriate
  *	timestamp.
  */
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/pps_kernel.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
+#include <freax/time.h>
+#include <freax/errno.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/pps_kernel.h>
+#include <freax/ptp_clock_kernel.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "mcdi.h"

@@ -6,8 +6,8 @@
 #include "qla_def.h"
 #include "qla_target.h"
 
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
 
 #ifdef CONFIG_PPC
 #define IS_PPCARCH      true

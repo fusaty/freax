@@ -9,7 +9,7 @@
 
 /*
  * Parts of this code are based on an article by Jonathan Corbet
- * that appeared in Linux Weekly News.
+ * that appeared in freax Weekly News.
  */
 
 
@@ -59,11 +59,11 @@
  *	read: read value
  */
 
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include "ibmasm.h"
 #include "remote.h"

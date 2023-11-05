@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "prime numbers: " fmt
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/prime_numbers.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/prime_numbers.h>
+#include <freax/slab.h>
 
 #define bitmap_size(nbits) (BITS_TO_LONGS(nbits) * sizeof(unsigned long))
 

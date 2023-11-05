@@ -6,13 +6,13 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  * Author: Rickard Andersson <rickard.andersson@stericsson.com>
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/genalloc.h>
-#include <linux/string.h> /* memcpy */
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/ioport.h>
+#include <freax/genalloc.h>
+#include <freax/string.h> /* memcpy */
 #include <asm/cputype.h>
 #include <asm/mach/map.h>
 #include <asm/page.h>

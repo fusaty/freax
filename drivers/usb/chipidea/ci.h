@@ -10,14 +10,14 @@
 #ifndef __DRIVERS_USB_CHIPIDEA_CI_H
 #define __DRIVERS_USB_CHIPIDEA_CI_H
 
-#include <linux/list.h>
-#include <linux/irqreturn.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg-fsm.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
-#include <linux/ulpi/interface.h>
+#include <freax/list.h>
+#include <freax/irqreturn.h>
+#include <freax/usb.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg-fsm.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/role.h>
+#include <freax/ulpi/interface.h>
 
 /******************************************************************************
  * DEFINE

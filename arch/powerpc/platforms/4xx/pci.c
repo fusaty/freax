@@ -18,13 +18,13 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
@@ -2155,7 +2155,7 @@ static void __init ppc4xx_probe_pciex_bridge(struct device_node *np)
 		return;
 	}
 
-	/* Setup the linux hose data structure */
+	/* Setup the freax hose data structure */
 	ppc4xx_pciex_port_setup_hose(port);
 }
 

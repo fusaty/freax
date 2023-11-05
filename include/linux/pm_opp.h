@@ -8,12 +8,12 @@
  *	Kevin Hilman
  */
 
-#ifndef __LINUX_OPP_H__
-#define __LINUX_OPP_H__
+#ifndef __freax_OPP_H__
+#define __freax_OPP_H__
 
-#include <linux/energy_model.h>
-#include <linux/err.h>
-#include <linux/notifier.h>
+#include <freax/energy_model.h>
+#include <freax/err.h>
+#include <freax/notifier.h>
 
 struct clk;
 struct regulator;
@@ -699,4 +699,4 @@ static inline unsigned long dev_pm_opp_get_freq(struct dev_pm_opp *opp)
 	return dev_pm_opp_get_freq_indexed(opp, 0);
 }
 
-#endif		/* __LINUX_OPP_H__ */
+#endif		/* __freax_OPP_H__ */

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/misc/xillybus.h
+ * freax/drivers/misc/xillybus.h
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
@@ -10,15 +10,15 @@
 #ifndef __XILLYBUS_H
 #define __XILLYBUS_H
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/cdev.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/cdev.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 
 struct xilly_endpoint_hardware;
 

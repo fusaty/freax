@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * NET		An implementation of the SOCKET network access protocol.
- *		This is the master header file for the Linux NET layer,
+ *		This is the master header file for the freax NET layer,
  *		or, in plain English: the networking handling part of the
  *		kernel.
  *
@@ -16,10 +16,10 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _UAPI_LINUX_NET_H
-#define _UAPI_LINUX_NET_H
+#ifndef _UAPI_freax_NET_H
+#define _UAPI_freax_NET_H
 
-#include <linux/socket.h>
+#include <freax/socket.h>
 #include <asm/socket.h>
 
 #define NPROTO		AF_MAX
@@ -55,4 +55,4 @@ typedef enum {
 
 #define __SO_ACCEPTCON	(1 << 16)	/* performed a listen		*/
 
-#endif /* _UAPI_LINUX_NET_H */
+#endif /* _UAPI_freax_NET_H */

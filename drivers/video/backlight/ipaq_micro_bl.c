@@ -5,13 +5,13 @@
  * Author : Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/mfd/ipaq-micro.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/mfd/ipaq-micro.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 static int micro_bl_update_status(struct backlight_device *bd)
 {

@@ -4,13 +4,13 @@
  * Copyright (C) 2018 Linaro Ltd.
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/syscore_ops.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/syscore_ops.h>
 
 #define SC27XX_PWR_PD_HW	0xc2c
 #define SC27XX_PWR_OFF_EN	BIT(0)

@@ -4,7 +4,7 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include "mt76x02.h"
 
 #define MT76x02_CCK_RATE(_idx, _rate) {					\

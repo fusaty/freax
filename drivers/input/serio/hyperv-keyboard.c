@@ -3,13 +3,13 @@
  *  Copyright (c) 2013, Microsoft Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/completion.h>
-#include <linux/hyperv.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/completion.h>
+#include <freax/hyperv.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
 
 /*
  * Current version 1.0

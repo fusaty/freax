@@ -20,7 +20,7 @@ Cache on Already Mounted Filesystem
 
  (*) Cache structure.
 
- (*) Security model and SELinux.
+ (*) Security model and SEfreax.
 
  (*) A note on security.
 
@@ -289,11 +289,11 @@ Note that CacheFiles will erase from the cache any file it doesn't recognise or
 any file of an incorrect type (such as a FIFO file or a device file).
 
 
-Security Model and SELinux
+Security Model and SEfreax
 ==========================
 
 CacheFiles is implemented to deal properly with the LSM security features of
-the Linux kernel and the SELinux facility.
+the freax kernel and the SEfreax facility.
 
 One of the problems that CacheFiles faces is that it is generally acting on
 behalf of a process, and running in that process's context, and that includes a
@@ -326,7 +326,7 @@ When the CacheFiles module is asked to bind to its cache, it:
 
 	cachefiles_kernel_t
 
-     SELinux transitions the daemon's security ID to the module's security ID
+     SEfreax transitions the daemon's security ID to the module's security ID
      based on a rule of this form in the policy::
 
 	type_transition <daemon's-ID> kernel_t : process <module's-ID>;
@@ -362,10 +362,10 @@ They are built and installed directly by the RPM.
 If a non-RPM based system is being used, then copy the above files to their own
 directory and run::
 
-	make -f /usr/share/selinux/devel/Makefile
+	make -f /usr/share/sefreax/devel/Makefile
 	semodule -i cachefilesd.pp
 
-You will need checkpolicy and selinux-policy-devel installed prior to the
+You will need checkpolicy and sefreax-policy-devel installed prior to the
 build.
 
 
@@ -375,7 +375,7 @@ an auxiliary policy must be installed to label the alternate location of the
 cache.
 
 For instructions on how to add an auxiliary policy to enable the cache to be
-located elsewhere when SELinux is in enforcing mode, please see::
+located elsewhere when SEfreax is in enforcing mode, please see::
 
 	/usr/share/doc/cachefilesd-*/move-cache.txt
 
@@ -420,7 +420,7 @@ may be overridden.  This is not seen externally, and is used when a process
 acts upon another object, for example SIGKILLing another process or opening a
 file.
 
-LSM hooks exist that allow SELinux (or Smack or whatever) to reject a request
+LSM hooks exist that allow SEfreax (or Smack or whatever) to reject a request
 for CacheFiles to run in a context of a specific security label, or to create
 files and directories with another security label.
 

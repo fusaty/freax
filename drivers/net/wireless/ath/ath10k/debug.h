@@ -2,13 +2,13 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "trace.h"
 
 enum ath10k_debug_mask {

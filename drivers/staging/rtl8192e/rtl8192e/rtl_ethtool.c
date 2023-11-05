@@ -7,9 +7,9 @@
  *
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/delay.h>
 
 #include "rtl_core.h"
 

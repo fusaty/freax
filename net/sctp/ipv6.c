@@ -11,7 +11,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Le Yanqun		    <yanqun.le@nokia.com>
@@ -22,28 +22,28 @@
  *    Ardelle Fan	    <ardelle.fan@intel.com>
  *
  * Based on:
- *	linux/net/ipv6/tcp_ipv6.c
+ *	freax/net/ipv6/tcp_ipv6.c
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/ipsec.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/init.h>
+#include <freax/ipsec.h>
+#include <freax/slab.h>
 
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
+#include <freax/ipv6.h>
+#include <freax/icmpv6.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
 
 #include <net/protocol.h>
 #include <net/ndisc.h>
@@ -57,7 +57,7 @@
 #include <net/sctp/sctp.h>
 #include <net/udp_tunnel.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static inline int sctp_v6_addr_match_len(union sctp_addr *s1,
 					 union sctp_addr *s2);

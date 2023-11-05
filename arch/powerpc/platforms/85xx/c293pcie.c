@@ -5,9 +5,9 @@
  * Copyright 2013 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

@@ -33,7 +33,7 @@
 
 		switch {
 			label = "ci20:sw1";
-			linux,code = <KEY_F13>;
+			freax,code = <KEY_F13>;
 			gpios = <&gpd 17 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
@@ -45,25 +45,25 @@
 		led-0 {
 			label = "ci20:red:led0";
 			gpios = <&gpc 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "none";
+			freax,default-trigger = "none";
 		};
 
 		led-1 {
 			label = "ci20:red:led1";
 			gpios = <&gpc 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "nand-disk";
+			freax,default-trigger = "nand-disk";
 		};
 
 		led-2 {
 			label = "ci20:red:led2";
 			gpios = <&gpc 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu1";
+			freax,default-trigger = "cpu1";
 		};
 
 		led-3 {
 			label = "ci20:red:led3";
 			gpios = <&gpc 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			freax,default-trigger = "cpu0";
 		};
 	};
 

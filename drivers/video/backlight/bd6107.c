@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/bd6107.h>
-#include <linux/slab.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_data/bd6107.h>
+#include <freax/slab.h>
 
 #define BD6107_PSCNT1				0x00
 #define BD6107_PSCNT1_PSCNTREG2			(1 << 2)

@@ -32,15 +32,15 @@
  * the default is can_queue == 1.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/nvram.h>
+#include <freax/bitops.h>
+#include <freax/wait.h>
+#include <freax/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/atarihw.h>

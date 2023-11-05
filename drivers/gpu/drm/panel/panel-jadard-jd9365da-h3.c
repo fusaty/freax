@@ -13,11 +13,11 @@
 #include <drm/drm_panel.h>
 #include <drm/drm_print.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 #define JD9365DA_INIT_CMD_LEN		2
 

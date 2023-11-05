@@ -6,7 +6,7 @@
 #ifndef _ASM_S390_SCLP_H
 #define _ASM_S390_SCLP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SCLP_CHP_INFO_MASK_SIZE		32
 #define EARLY_SCCB_SIZE		PAGE_SIZE
@@ -17,7 +17,7 @@
 #define EXT_SCCB_READ_CPU	(3 * PAGE_SIZE)
 
 #ifndef __ASSEMBLY__
-#include <linux/uio.h>
+#include <freax/uio.h>
 #include <asm/chpid.h>
 #include <asm/cpu.h>
 

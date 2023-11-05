@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2011-2013 Freescale Semiconductor, Inc. All Rights Reserved.
  */
-#ifndef __LINUX_REG_PFUZE100_H
-#define __LINUX_REG_PFUZE100_H
+#ifndef __freax_REG_PFUZE100_H
+#define __freax_REG_PFUZE100_H
 
 #define PFUZE100_SW1AB		0
 #define PFUZE100_SW1C		1
@@ -63,4 +63,4 @@
 #define PFUZE3001_VLDO3		8
 #define PFUZE3001_VLDO4		9
 
-#endif /* __LINUX_REG_PFUZE100_H */
+#endif /* __freax_REG_PFUZE100_H */

@@ -62,14 +62,14 @@
  *   needed for ZV, so maybe the datasheet is entirely wrong here.
  */
  
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/isapnp.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/isa.h>
+#include <freax/pnp.h>
+#include <freax/isapnp.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 
 #include <asm/dma.h>
 #include <sound/core.h>

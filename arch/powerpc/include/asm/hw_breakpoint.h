@@ -3,7 +3,7 @@
  * PowerPC BookIII S hardware breakpoint definitions
  *
  * Copyright 2010, IBM Corporation.
- * Author: K.Prasad <prasad@linux.vnet.ibm.com>
+ * Author: K.Prasad <prasad@freax.vnet.ibm.com>
  */
 
 #ifndef _PPC_BOOK3S_64_HW_BREAKPOINT_H
@@ -64,7 +64,7 @@ void wp_get_instr_detail(struct pt_regs *regs, ppc_inst_t *instr,
 			 int *type, int *size, unsigned long *ea);
 
 #ifdef CONFIG_HAVE_HW_BREAKPOINT
-#include <linux/kdebug.h>
+#include <freax/kdebug.h>
 #include <asm/reg.h>
 #include <asm/debug.h>
 

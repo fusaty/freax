@@ -4,8 +4,8 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/bitmap.h>
-#include <linux/string_helpers.h>
+#include <freax/bitmap.h>
+#include <freax/string_helpers.h>
 
 #include "i915_drv.h"
 #include "intel_gt_debugfs.h"

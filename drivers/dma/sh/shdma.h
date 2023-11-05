@@ -9,11 +9,11 @@
 #ifndef __DMA_SHDMA_H
 #define __DMA_SHDMA_H
 
-#include <linux/sh_dma.h>
-#include <linux/shdma-base.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
+#include <freax/sh_dma.h>
+#include <freax/shdma-base.h>
+#include <freax/dmaengine.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
 
 #define SH_DMAE_MAX_CHANNELS 20
 #define SH_DMAE_TCR_MAX 0x00FFFFFF	/* 16MB */

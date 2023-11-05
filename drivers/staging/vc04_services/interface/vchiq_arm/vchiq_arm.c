@@ -4,31 +4,31 @@
  * Copyright (c) 2010-2012 Broadcom. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/device/bus.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/compat.h>
-#include <linux/dma-mapping.h>
-#include <linux/rcupdate.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/cdev.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/device/bus.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/bug.h>
+#include <freax/completion.h>
+#include <freax/list.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/compat.h>
+#include <freax/dma-mapping.h>
+#include <freax/rcupdate.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #include "vchiq_core.h"

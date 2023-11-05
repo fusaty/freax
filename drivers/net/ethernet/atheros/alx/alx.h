@@ -35,10 +35,10 @@
 #ifndef _ALX_H_
 #define _ALX_H_
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/etherdevice.h>
+#include <freax/dma-mapping.h>
+#include <freax/spinlock.h>
 #include "hw.h"
 
 #define ALX_WATCHDOG_TIME   (5 * HZ)

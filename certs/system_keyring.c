@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/uidgid.h>
-#include <linux/verification.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/uidgid.h>
+#include <freax/verification.h>
 #include <keys/asymmetric-type.h>
 #include <keys/system_keyring.h>
 #include <crypto/pkcs7.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * freax Socket Filter - Kernel level socket filtering
  *
  * Based on the design of the Berkeley Packet Filter. The new
  * internal format has been designed by PLUMgrid:
@@ -17,38 +17,38 @@
  * Kris Katterjohn - Added many additional checks in bpf_check_classic()
  */
 
-#include <linux/atomic.h>
-#include <linux/bpf_verifier.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/sock_diag.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/if_arp.h>
-#include <linux/gfp.h>
+#include <freax/atomic.h>
+#include <freax/bpf_verifier.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/fcntl.h>
+#include <freax/socket.h>
+#include <freax/sock_diag.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/if_packet.h>
+#include <freax/if_arp.h>
+#include <freax/gfp.h>
 #include <net/inet_common.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/skmsg.h>
+#include <freax/skbuff.h>
+#include <freax/skmsg.h>
 #include <net/sock.h>
 #include <net/flow_dissector.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/filter.h>
-#include <linux/ratelimit.h>
-#include <linux/seccomp.h>
-#include <linux/if_vlan.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
+#include <freax/filter.h>
+#include <freax/ratelimit.h>
+#include <freax/seccomp.h>
+#include <freax/if_vlan.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
 #include <net/sch_generic.h>
 #include <net/cls_cgroup.h>
 #include <net/dst_metadata.h>
@@ -58,9 +58,9 @@
 #include <net/tcp.h>
 #include <net/xfrm.h>
 #include <net/udp.h>
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 #include <net/xdp_sock.h>
-#include <linux/inetdevice.h>
+#include <freax/inetdevice.h>
 #include <net/inet_hashtables.h>
 #include <net/inet6_hashtables.h>
 #include <net/ip_fib.h>
@@ -69,19 +69,19 @@
 #include <net/arp.h>
 #include <net/ipv6.h>
 #include <net/net_namespace.h>
-#include <linux/seg6_local.h>
+#include <freax/seg6_local.h>
 #include <net/seg6.h>
 #include <net/seg6_local.h>
 #include <net/lwtunnel.h>
 #include <net/ipv6_stubs.h>
 #include <net/bpf_sk_storage.h>
 #include <net/transp_v6.h>
-#include <linux/btf_ids.h>
+#include <freax/btf_ids.h>
 #include <net/tls.h>
 #include <net/xdp.h>
 #include <net/mptcp.h>
 #include <net/netfilter/nf_conntrack_bpf.h>
-#include <linux/un.h>
+#include <freax/un.h>
 
 #include "dev.h"
 
@@ -135,7 +135,7 @@ int sk_filter_trim_cap(struct sock *sk, struct sk_buff *skb, unsigned int cap)
 	 * helping free memory
 	 */
 	if (skb_pfmemalloc(skb) && !sock_flag(sk, SOCK_MEMALLOC)) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_PFMEMALLOCDROP);
+		NET_INC_STATS(sock_net(sk), freax_MIB_PFMEMALLOCDROP);
 		return -ENOMEM;
 	}
 	err = BPF_CGROUP_RUN_PROG_INET_INGRESS(sk, skb);
@@ -8205,9 +8205,9 @@ xdp_func_proto(enum bpf_func_id func_id, const struct bpf_prog *prog)
 	 * kfuncs are defined in two different modules, and we want to be able
 	 * to use them interchangably with the same BTF type ID. Because modules
 	 * can't de-duplicate BTF IDs between each other, we need the type to be
-	 * referenced in the vmlinux BTF or the verifier will get confused about
+	 * referenced in the vmfreax BTF or the verifier will get confused about
 	 * the different types. So we add this dummy type reference which will
-	 * be included in vmlinux BTF, allowing both modules to refer to the
+	 * be included in vmfreax BTF, allowing both modules to refer to the
 	 * same type ID.
 	 */
 	BTF_TYPE_EMIT(struct nf_conn___init);
@@ -11769,7 +11769,7 @@ bpf_sk_base_func_proto(enum bpf_func_id func_id)
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 __bpf_kfunc int bpf_dynptr_from_skb(struct sk_buff *skb, u64 flags,
 				    struct bpf_dynptr_kern *ptr__uninit)
 {
@@ -11882,7 +11882,7 @@ late_initcall(bpf_kfunc_init);
 /* Disables missing prototype warnings */
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 /* bpf_sock_destroy: Destroy the given socket with ECONNABORTED error code.
  *

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <freax/math64.h>
+#include <freax/slab.h>
 
-#include <linux/ceph/striper.h>
-#include <linux/ceph/types.h>
+#include <freax/ceph/striper.h>
+#include <freax/ceph/types.h>
 
 /*
  * Map a file extent to a stripe unit within an object.

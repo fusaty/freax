@@ -7,20 +7,20 @@
  *         Louis Yu <louis.yu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/thermal.h>
-#include <linux/reset.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/thermal.h>
+#include <freax/reset.h>
+#include <freax/types.h>
 
 #include "../thermal_hwmon.h"
 

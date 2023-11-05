@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, 2017-2018, 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2017-2018, 2022, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/pm_domain.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/pm_domain.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
 #include "gdsc.h"
 
 #define PWR_ON_MASK		BIT(31)

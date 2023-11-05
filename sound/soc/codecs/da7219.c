@@ -7,19 +7,19 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/pm.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

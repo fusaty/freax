@@ -12,11 +12,11 @@
 #include <asm/hwcap.h>
 #include <asm/sysreg.h>
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/smp.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/init.h>
+#include <freax/jump_label.h>
+#include <freax/smp.h>
+#include <freax/types.h>
 
 #include <clocksource/arm_arch_timer.h>
 

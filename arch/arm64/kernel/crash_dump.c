@@ -6,10 +6,10 @@
  * Author: AKASHI Takahiro <takahiro.akashi@linaro.org>
  */
 
-#include <linux/crash_dump.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/uio.h>
+#include <freax/crash_dump.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/uio.h>
 #include <asm/memory.h>
 
 ssize_t copy_oldmem_page(struct iov_iter *iter, unsigned long pfn,

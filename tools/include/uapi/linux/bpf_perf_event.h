@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* Copyright (c) 2016 Facebook
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#ifndef _UAPI__LINUX_BPF_PERF_EVENT_H__
-#define _UAPI__LINUX_BPF_PERF_EVENT_H__
+#ifndef _UAPI__freax_BPF_PERF_EVENT_H__
+#define _UAPI__freax_BPF_PERF_EVENT_H__
 
 #include <asm/bpf_perf_event.h>
 
@@ -16,4 +16,4 @@ struct bpf_perf_event_data {
 	__u64 addr;
 };
 
-#endif /* _UAPI__LINUX_BPF_PERF_EVENT_H__ */
+#endif /* _UAPI__freax_BPF_PERF_EVENT_H__ */

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: LGPL-2.1 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1 WITH freax-syscall-note */
 /* Copyright(c) 2019 Intel Corporation. All rights rsvd. */
 #ifndef _USR_IDXD_H_
 #define _USR_IDXD_H_
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <freax/types.h>
 #else
 #include <stdint.h>
 #endif

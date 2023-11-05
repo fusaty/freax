@@ -4,9 +4,9 @@
  * Copyright © 2017 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/string_helpers.h>
-#include <linux/swap.h>
+#include <freax/prime_numbers.h>
+#include <freax/string_helpers.h>
+#include <freax/swap.h>
 
 #include "i915_selftest.h"
 

@@ -1,7 +1,7 @@
 What:		/sys/.../iio:deviceX/in_capacitableY_calibbias_calibration
 What:		/sys/.../iio:deviceX/in_capacitableY_calibscale_calibration
 KernelVersion:	6.1
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Write 1 to trigger a calibration of the calibbias or
 		calibscale. For calibscale, a full scale capacitance should

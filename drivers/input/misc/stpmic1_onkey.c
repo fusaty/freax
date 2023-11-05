@@ -2,14 +2,14 @@
 // Copyright (C) STMicroelectronics 2018
 // Author: Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/stpmic1.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/stpmic1.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 /**
  * struct stpmic1_onkey - OnKey data

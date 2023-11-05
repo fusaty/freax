@@ -17,7 +17,7 @@
 
 #define RUNTIME_DISCARD_EXIT
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 #undef mips
 #define mips mips

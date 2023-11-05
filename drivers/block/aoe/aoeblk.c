@@ -4,19 +4,19 @@
  * block device routines
  */
 
-#include <linux/kernel.h>
-#include <linux/hdreg.h>
-#include <linux/blk-mq.h>
-#include <linux/backing-dev.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/hdreg.h>
+#include <freax/blk-mq.h>
+#include <freax/backing-dev.h>
+#include <freax/fs.h>
+#include <freax/ioctl.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
+#include <freax/netdevice.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
+#include <freax/moduleparam.h>
+#include <freax/debugfs.h>
 #include <scsi/sg.h>
 #include "aoe.h"
 

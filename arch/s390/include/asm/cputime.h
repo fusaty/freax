@@ -8,7 +8,7 @@
 #ifndef _S390_CPUTIME_H
 #define _S390_CPUTIME_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/timex.h>
 
 /*

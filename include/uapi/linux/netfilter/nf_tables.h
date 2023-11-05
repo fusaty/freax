@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_NF_TABLES_H
-#define _LINUX_NF_TABLES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_NF_TABLES_H
+#define _freax_NF_TABLES_H
 
 #define NFT_NAME_MAXLEN		256
 #define NFT_TABLE_MAXNAMELEN	NFT_NAME_MAXLEN
@@ -1438,7 +1438,7 @@ enum nft_nat_types {
  * @NFTA_NAT_REG_ADDR_MAX: source register of address range end (NLA_U32: nft_registers)
  * @NFTA_NAT_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_NAT_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
- * @NFTA_NAT_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_NAT_FLAGS: NAT flags (see NF_NAT_RANGE_* in freax/netfilter/nf_nat.h) (NLA_U32)
  */
 enum nft_nat_attributes {
 	NFTA_NAT_UNSPEC,
@@ -1472,7 +1472,7 @@ enum nft_tproxy_attributes {
 /**
  * enum nft_masq_attributes - nf_tables masquerade expression attributes
  *
- * @NFTA_MASQ_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_MASQ_FLAGS: NAT flags (see NF_NAT_RANGE_* in freax/netfilter/nf_nat.h) (NLA_U32)
  * @NFTA_MASQ_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_MASQ_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
  */
@@ -1490,7 +1490,7 @@ enum nft_masq_attributes {
  *
  * @NFTA_REDIR_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_REDIR_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
- * @NFTA_REDIR_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_REDIR_FLAGS: NAT flags (see NF_NAT_RANGE_* in freax/netfilter/nf_nat.h) (NLA_U32)
  */
 enum nft_redir_attributes {
 	NFTA_REDIR_UNSPEC,
@@ -1981,4 +1981,4 @@ enum nft_tunnel_attributes {
 };
 #define NFTA_TUNNEL_MAX	(__NFTA_TUNNEL_MAX - 1)
 
-#endif /* _LINUX_NF_TABLES_H */
+#endif /* _freax_NF_TABLES_H */

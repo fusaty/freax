@@ -8,20 +8,20 @@
  * Based on board-sh7785lcr.c
  * Copyright (C) 2008  Yoshihiro Shimoda
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/sh_intc.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/fb.h>
+#include <freax/smc91x.h>
+#include <freax/mtd/physmap.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/sh_intc.h>
 #include <mach/urquell.h>
 #include <cpu/sh7786.h>
 #include <asm/heartbeat.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/smp-ops.h>
 
 /*

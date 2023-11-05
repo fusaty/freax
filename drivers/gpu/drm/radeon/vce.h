@@ -1,4 +1,4 @@
-/* vce.h -- Private header for radeon driver -*- linux-c -*-
+/* vce.h -- Private header for radeon driver -*- freax-c -*-
  *
  * Copyright 2013 Advanced Micro Devices, Inc.
  * All Rights Reserved.

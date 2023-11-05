@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #define JCORE_AIC_MAX_HWIRQ	127
 #define JCORE_AIC1_MIN_HWIRQ	16

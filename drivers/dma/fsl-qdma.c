@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
 
 #include "virt-dma.h"
 #include "fsldma.h"

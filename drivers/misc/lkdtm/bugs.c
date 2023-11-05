@@ -6,14 +6,14 @@
  * test source files.
  */
 #include "lkdtm.h"
-#include <linux/cpu.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/uaccess.h>
+#include <freax/cpu.h>
+#include <freax/list.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
+#include <freax/stop_machine.h>
+#include <freax/uaccess.h>
 
 #if IS_ENABLED(CONFIG_X86_32) && !IS_ENABLED(CONFIG_UML)
 #include <asm/desc.h>

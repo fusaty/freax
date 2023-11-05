@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <asm/insn.h>
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 #include "perf_event.h"
 

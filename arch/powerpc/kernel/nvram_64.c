@@ -5,21 +5,21 @@
  * /dev/nvram driver for PPC64
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kmsg_dump.h>
-#include <linux/pagemap.h>
-#include <linux/pstore.h>
-#include <linux/zlib.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/fcntl.h>
+#include <freax/nvram.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/kmsg_dump.h>
+#include <freax/pagemap.h>
+#include <freax/pstore.h>
+#include <freax/zlib.h>
+#include <freax/uaccess.h>
+#include <freax/of.h>
 #include <asm/nvram.h>
 #include <asm/rtas.h>
 #include <asm/machdep.h>

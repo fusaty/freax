@@ -2,49 +2,49 @@
  *  Copyright (C) 1995  Linus Torvalds
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vafreax.com>, May 2000
  */
 
 /*
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/mc146818rtc.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/ptrace.h>
-#include <linux/personality.h>
-#include <linux/percpu.h>
-#include <linux/prctl.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/kdebug.h>
-#include <linux/syscalls.h>
+#include <freax/cpu.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/elfcore.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/user.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/mc146818rtc.h>
+#include <freax/export.h>
+#include <freax/kallsyms.h>
+#include <freax/ptrace.h>
+#include <freax/personality.h>
+#include <freax/percpu.h>
+#include <freax/prctl.h>
+#include <freax/ftrace.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/kdebug.h>
+#include <freax/syscalls.h>
 
 #include <asm/ldt.h>
 #include <asm/processor.h>
 #include <asm/fpu/sched.h>
 #include <asm/desc.h>
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include <asm/tlbflush.h>
 #include <asm/cpu.h>

@@ -13,12 +13,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_connlimit.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_connlimit.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

@@ -33,14 +33,14 @@
  * SOFTWARE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/prefetch.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
+#include <freax/prefetch.h>
 
 #include "qib.h"
 

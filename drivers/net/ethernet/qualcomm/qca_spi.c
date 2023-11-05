@@ -22,24 +22,24 @@
  *   serial converter;
  */
 
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 #include "qca_7k.h"
 #include "qca_7k_common.h"

@@ -5,12 +5,12 @@
  * Author: Liam Girdwood <lrg@slimlogic.co.uk>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

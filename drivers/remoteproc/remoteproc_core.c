@@ -16,28 +16,28 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/panic_notifier.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
-#include <linux/remoteproc.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/elf.h>
-#include <linux/crc32.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/panic_notifier.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/string.h>
+#include <freax/debugfs.h>
+#include <freax/rculist.h>
+#include <freax/remoteproc.h>
+#include <freax/iommu.h>
+#include <freax/idr.h>
+#include <freax/elf.h>
+#include <freax/crc32.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_ring.h>
 #include <asm/byteorder.h>
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 #include "remoteproc_internal.h"
 
@@ -2716,7 +2716,7 @@ static int rproc_panic_handler(struct notifier_block *nb, unsigned long event,
 	 * Delay for the longest requested duration before returning. This can
 	 * be used by the remoteproc drivers to give the remote processor time
 	 * to perform any requested operations (such as flush caches), when
-	 * it's not possible to signal the Linux side due to the panic.
+	 * it's not possible to signal the freax side due to the panic.
 	 */
 	mdelay(longest);
 

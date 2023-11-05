@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CLOSURE_H
-#define _LINUX_CLOSURE_H
+#ifndef _freax_CLOSURE_H
+#define _freax_CLOSURE_H
 
-#include <linux/llist.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/workqueue.h>
+#include <freax/llist.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/workqueue.h>
 
 /*
  * Closure is perhaps the most overused and abused term in computer science, but
@@ -401,4 +401,4 @@ do {									\
 		__closure_wait_event(waitlist, _cond);			\
 } while (0)
 
-#endif /* _LINUX_CLOSURE_H */
+#endif /* _freax_CLOSURE_H */

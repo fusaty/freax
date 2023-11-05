@@ -8,14 +8,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

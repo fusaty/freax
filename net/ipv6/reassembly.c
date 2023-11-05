@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 fragment reassembly
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -14,7 +14,7 @@
  *	Andi Kleen	Make it work with multiple hosts.
  *			More RFC compliance.
  *
- *      Horst von Brand Add missing #include <linux/string.h>
+ *      Horst von Brand Add missing #include <freax/string.h>
  *	Alexey Kuznetsov	SMP races, threading, cleanup.
  *	Patrick McHardy		LRU queue of frag heads for evictor.
  *	Mitsuru KANDA @USAGI	Register inet6_protocol{}.
@@ -25,25 +25,25 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/jiffies.h>
-#include <linux/net.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/jiffies.h>
+#include <freax/net.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/in6.h>
+#include <freax/ipv6.h>
+#include <freax/icmpv6.h>
+#include <freax/random.h>
+#include <freax/jhash.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>

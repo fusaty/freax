@@ -2,12 +2,12 @@
 /* U1memcpy.S: UltraSPARC-I/II/IIi/IIe optimized memcpy.
  *
  * Copyright (C) 1997, 2004 David S. Miller (davem@redhat.com)
- * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.freax.cz)
  */
 
 #ifdef __KERNEL__
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/visasm.h>
 #include <asm/asi.h>
 #define GLOBAL_SPARE	g7

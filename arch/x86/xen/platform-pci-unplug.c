@@ -9,9 +9,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/export.h>
 
 #include <xen/xen.h>
 #include <xen/platform_pci.h>
@@ -43,8 +43,8 @@ static int check_platform_magic(void)
 
 	switch (protocol) {
 	case 1:
-		outw(XEN_IOPORT_LINUX_PRODNUM, XEN_IOPORT_PRODNUM);
-		outl(XEN_IOPORT_LINUX_DRVVER, XEN_IOPORT_DRVVER);
+		outw(XEN_IOPORT_freax_PRODNUM, XEN_IOPORT_PRODNUM);
+		outl(XEN_IOPORT_freax_DRVVER, XEN_IOPORT_DRVVER);
 		if (inw(XEN_IOPORT_MAGIC) != XEN_IOPORT_MAGIC_VAL) {
 			pr_err("Xen Platform: blacklisted by host\n");
 			return XEN_PLATFORM_ERR_BLACKLIST;

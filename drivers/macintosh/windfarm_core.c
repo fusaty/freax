@@ -21,19 +21,19 @@
  * instead which is a bit of an overkill imho
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
-#include <linux/reboot.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/jiffies.h>
+#include <freax/reboot.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/freezer.h>
 
 #include "windfarm.h"
 
@@ -74,7 +74,7 @@ static int wf_critical_overtemp(void)
 	static char const critical_overtemp_path[] = "/sbin/critical_overtemp";
 	char *argv[] = { (char *)critical_overtemp_path, NULL };
 	static char *envp[] = { "HOME=/",
-				"TERM=linux",
+				"TERM=freax",
 				"PATH=/sbin:/usr/sbin:/bin:/usr/bin",
 				NULL };
 

@@ -13,12 +13,12 @@
  * messages, proper stop/repstart signaling during receive, added detect code
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pcf.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-pcf.h>
 #include "i2c-algo-pcf.h"
 
 

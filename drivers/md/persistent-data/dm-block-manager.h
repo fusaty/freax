@@ -5,11 +5,11 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_BLOCK_MANAGER_H
-#define _LINUX_DM_BLOCK_MANAGER_H
+#ifndef _freax_DM_BLOCK_MANAGER_H
+#define _freax_DM_BLOCK_MANAGER_H
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
+#include <freax/types.h>
+#include <freax/blkdev.h>
 
 /*----------------------------------------------------------------*/
 
@@ -133,4 +133,4 @@ u32 dm_bm_checksum(const void *data, size_t len, u32 init_xor);
 
 /*----------------------------------------------------------------*/
 
-#endif	/* _LINUX_DM_BLOCK_MANAGER_H */
+#endif	/* _freax_DM_BLOCK_MANAGER_H */

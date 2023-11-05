@@ -24,17 +24,17 @@
  * generator).
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <dt-bindings/clock/bcm2835.h>
 
 #define CM_PASSWORD		0x5a000000

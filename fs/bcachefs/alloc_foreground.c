@@ -31,9 +31,9 @@
 #include "nocow_locking.h"
 #include "trace.h"
 
-#include <linux/math64.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
+#include <freax/math64.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
 
 static void bch2_trans_mutex_lock_norelock(struct btree_trans *trans,
 					   struct mutex *lock)

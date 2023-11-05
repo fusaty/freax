@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2007 Atmel Corporation
  */
-#ifndef _LINUX_I2C_GPIO_H
-#define _LINUX_I2C_GPIO_H
+#ifndef _freax_I2C_GPIO_H
+#define _freax_I2C_GPIO_H
 
 /**
  * struct i2c_gpio_platform_data - Platform-dependent data for i2c-gpio
@@ -37,4 +37,4 @@ struct i2c_gpio_platform_data {
 	unsigned int	scl_has_no_pullup:1;
 };
 
-#endif /* _LINUX_I2C_GPIO_H */
+#endif /* _freax_I2C_GPIO_H */

@@ -3,7 +3,7 @@
  * efi_secret module
  *
  * Copyright (C) 2022 IBM Corporation
- * Author: Dov Murik <dovmurik@linux.ibm.com>
+ * Author: Dov Murik <dovmurik@freax.ibm.com>
  */
 
 /**
@@ -16,16 +16,16 @@
  * is the GUID of the secret entry, and its content is the secret data.
  */
 
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/security.h>
-#include <linux/efi.h>
-#include <linux/cacheflush.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/security.h>
+#include <freax/efi.h>
+#include <freax/cacheflush.h>
 
 #define EFI_SECRET_NUM_FILES 64
 
@@ -156,7 +156,7 @@ static int efi_secret_map_area(struct platform_device *dev)
 {
 	int ret;
 	struct efi_secret *s = efi_secret_get();
-	struct linux_efi_coco_secret_area *secret_area;
+	struct freax_efi_coco_secret_area *secret_area;
 
 	if (efi.coco_secret == EFI_INVALID_TABLE_ADDR) {
 		dev_err(&dev->dev, "Secret area address is not available\n");

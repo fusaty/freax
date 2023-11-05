@@ -26,9 +26,9 @@
 
 		key-power {
 			gpios = <&gpio0 RK_PA4 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};
@@ -67,7 +67,7 @@
 	};
 
 	spdif_out: spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

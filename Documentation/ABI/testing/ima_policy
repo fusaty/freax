@@ -69,9 +69,9 @@ Description:
 			template:= name of a defined IMA template type
 			(eg, ima-ng). Only valid when action is "measure".
 			pcr:= decimal value
-			label:= [selinux]|[kernel_info]|[data_label]
+			label:= [sefreax]|[kernel_info]|[data_label]
 			data_label:= a unique string used for grouping and limiting critical data.
-			For example, "selinux" to measure critical data for SELinux.
+			For example, "sefreax" to measure critical data for SEfreax.
 			appraise_algos:= comma-separated list of hash algorithms
 			For example, "sha256,sha512" to only accept to appraise
 			files where the security.ima xattr was hashed with one
@@ -101,7 +101,7 @@ Description:
 			# SECURITYFS_MAGIC
 			dont_measure fsmagic=0x73636673
 			dont_appraise fsmagic=0x73636673
-			# SELINUX_MAGIC
+			# SEfreax_MAGIC
 			dont_measure fsmagic=0xf97cff8c
 			dont_appraise fsmagic=0xf97cff8c
 			# CGROUP_SUPER_MAGIC
@@ -125,7 +125,7 @@ Description:
 
 		Examples of LSM specific definitions:
 
-		SELinux::
+		SEfreax::
 
 			dont_measure obj_type=var_log_t
 			dont_appraise obj_type=var_log_t

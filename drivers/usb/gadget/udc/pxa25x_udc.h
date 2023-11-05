@@ -6,10 +6,10 @@
  * Copyright (C) 2003 David Brownell
  */
 
-#ifndef __LINUX_USB_GADGET_PXA25X_H
-#define __LINUX_USB_GADGET_PXA25X_H
+#ifndef __freax_USB_GADGET_PXA25X_H
+#define __freax_USB_GADGET_PXA25X_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -240,4 +240,4 @@ dump_state(struct pxa25x_udc *dev)
 #define INFO(stuff...)		pr_info("udc: " stuff)
 
 
-#endif /* __LINUX_USB_GADGET_PXA25X_H */
+#endif /* __freax_USB_GADGET_PXA25X_H */

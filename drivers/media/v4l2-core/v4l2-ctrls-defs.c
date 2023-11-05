@@ -5,7 +5,7 @@
  * Copyright (C) 2010-2021  Hans Verkuil <hverkuil-cisco@xs4all.nl>
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <media/v4l2-ctrls.h>
 
 /*

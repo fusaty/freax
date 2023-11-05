@@ -7,15 +7,15 @@
  * All rights reserved.
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/mbc.h>
 
 int pcf50633_register_irq(struct pcf50633 *pcf, int irq,
 			void (*handler) (int, void *), void *data)

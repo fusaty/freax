@@ -5,15 +5,15 @@
  *  Copyright (c) 2003 Silicon Graphics, Inc.  All rights reserved.
  *  Copyright (c) 2004, 2005 James Bottomley <James.Bottomley@SteelEye.com>
  */
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/ctype.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/workqueue.h>
+#include <freax/blkdev.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 #include <scsi/scsi.h>
 #include "scsi_priv.h"
 #include <scsi/scsi_device.h>

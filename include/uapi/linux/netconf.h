@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_NETCONF_H_
-#define _UAPI_LINUX_NETCONF_H_
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_NETCONF_H_
+#define _UAPI_freax_NETCONF_H_
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
 
 struct netconfmsg {
 	__u8	ncm_family;
@@ -27,4 +27,4 @@ enum {
 #define NETCONFA_IFINDEX_ALL		-1
 #define NETCONFA_IFINDEX_DEFAULT	-2
 
-#endif /* _UAPI_LINUX_NETCONF_H_ */
+#endif /* _UAPI_freax_NETCONF_H_ */

@@ -1,7 +1,7 @@
-#ifndef __LINUX_RWLOCK_H
-#define __LINUX_RWLOCK_H
+#ifndef __freax_RWLOCK_H
+#define __freax_RWLOCK_H
 
-#ifndef __LINUX_INSIDE_SPINLOCK_H
+#ifndef __freax_INSIDE_SPINLOCK_H
 # error "please don't include this file directly"
 #endif
 
@@ -126,4 +126,4 @@ do {								\
 #define rwlock_is_contended(lock)	((void)(lock), 0)
 #endif /* arch_rwlock_is_contended */
 
-#endif /* __LINUX_RWLOCK_H */
+#endif /* __freax_RWLOCK_H */

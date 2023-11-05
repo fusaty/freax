@@ -4,8 +4,8 @@
 #ifndef _NGBE_TYPE_H_
 #define _NGBE_TYPE_H_
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
 
 /************ NGBE_register.h ************/
 /* Device IDs */

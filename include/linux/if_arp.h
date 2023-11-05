@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,11 +16,11 @@
  *		Jonathan Layes <layes@loran.com>
  *		Arnaldo Carvalho de Melo <acme@conectiva.com.br> ARPHRD_HWX25
  */
-#ifndef _LINUX_IF_ARP_H
-#define _LINUX_IF_ARP_H
+#ifndef _freax_IF_ARP_H
+#define _freax_IF_ARP_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/if_arp.h>
+#include <freax/skbuff.h>
+#include <uapi/freax/if_arp.h>
 
 static inline struct arphdr *arp_hdr(const struct sk_buff *skb)
 {
@@ -63,4 +63,4 @@ static inline bool dev_is_mac_header_xmit(const struct net_device *dev)
 	}
 }
 
-#endif	/* _LINUX_IF_ARP_H */
+#endif	/* _freax_IF_ARP_H */

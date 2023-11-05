@@ -3,13 +3,13 @@
  * Copyright (c) 2010 Patrick McHardy <kaber@trash.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CT.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_CT.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_helper.h>

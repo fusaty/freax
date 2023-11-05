@@ -7,7 +7,7 @@
  * Author: Eric Biggers <ebiggers@google.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 	// Registers used to hold message words temporarily.  There aren't
@@ -22,7 +22,7 @@
 	.word	0x510E527F, 0x9B05688C, 0x1F83D9AB, 0x5BE0CD19
 
 .macro __ldrd		a, b, src, offset
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	ldrd		\a, \b, [\src, #\offset]
 #else
 	ldr		\a, [\src, #\offset]
@@ -31,7 +31,7 @@
 .endm
 
 .macro __strd		a, b, dst, offset
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	strd		\a, \b, [\dst, #\offset]
 #else
 	str		\a, [\dst, #\offset]

@@ -28,12 +28,12 @@
  * Copyright (C) 2003 - 2004 Tresys Technology, LLC
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/audit.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/audit.h>
 #include "security.h"
 
 #include "policydb.h"
@@ -41,7 +41,7 @@
 #include "mls.h"
 #include "services.h"
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 static const char *const symtab_name[SYM_NUM] = {
 	"common prefixes",
 	"classes",
@@ -678,13 +678,13 @@ static int (*const index_f[SYM_NUM]) (void *key, void *datum, void *datap) = {
 	cat_index,
 };
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 static void hash_eval(struct hashtab *h, const char *hash_name)
 {
 	struct hashtab_info info;
 
 	hashtab_stat(h, &info);
-	pr_debug("SELinux: %s:  %d entries and %d/%d buckets used, longest chain length %d, sum of chain length^2 %llu\n",
+	pr_debug("SEfreax: %s:  %d entries and %d/%d buckets used, longest chain length %d, sum of chain length^2 %llu\n",
 		 hash_name, h->nel, info.slots_used, h->size,
 		 info.max_chain_len, info.chain2_len_sum);
 }
@@ -704,7 +704,7 @@ static inline void hash_eval(struct hashtab *h, const char *hash_name)
 static inline void symtab_hash_eval(struct symtab *s)
 {
 }
-#endif /* CONFIG_SECURITY_SELINUX_DEBUG */
+#endif /* CONFIG_SECURITY_SEfreax_DEBUG */
 
 /*
  * Define the other val_to_name and val_to_struct arrays
@@ -717,15 +717,15 @@ static int policydb_index(struct policydb *p)
 	int i, rc;
 
 	if (p->mls_enabled)
-		pr_debug("SELinux:  %d users, %d roles, %d types, %d bools, %d sens, %d cats\n",
+		pr_debug("SEfreax:  %d users, %d roles, %d types, %d bools, %d sens, %d cats\n",
 			 p->p_users.nprim, p->p_roles.nprim, p->p_types.nprim,
 			 p->p_bools.nprim, p->p_levels.nprim, p->p_cats.nprim);
 	else
-		pr_debug("SELinux:  %d users, %d roles, %d types, %d bools\n",
+		pr_debug("SEfreax:  %d users, %d roles, %d types, %d bools\n",
 			 p->p_users.nprim, p->p_roles.nprim, p->p_types.nprim,
 			 p->p_bools.nprim);
 
-	pr_debug("SELinux:  %d classes, %d rules\n",
+	pr_debug("SEfreax:  %d classes, %d rules\n",
 		 p->p_classes.nprim, p->te_avtab.nel);
 
 	avtab_hash_eval(&p->te_avtab, "rules");
@@ -868,7 +868,7 @@ int policydb_load_isids(struct policydb *p, struct sidtab *s)
 
 	rc = sidtab_init(s);
 	if (rc) {
-		pr_err("SELinux:  out of memory on SID table init\n");
+		pr_err("SEfreax:  out of memory on SID table init\n");
 		return rc;
 	}
 
@@ -878,7 +878,7 @@ int policydb_load_isids(struct policydb *p, struct sidtab *s)
 		const char *name = security_get_initial_sid_context(sid);
 
 		if (sid == SECSID_NULL) {
-			pr_err("SELinux:  SID 0 was assigned a context.\n");
+			pr_err("SEfreax:  SID 0 was assigned a context.\n");
 			sidtab_destroy(s);
 			return -EINVAL;
 		}
@@ -889,7 +889,7 @@ int policydb_load_isids(struct policydb *p, struct sidtab *s)
 
 		rc = sidtab_set_initial(s, sid, &c->context[0]);
 		if (rc) {
-			pr_err("SELinux:  unable to load initial SID %s.\n",
+			pr_err("SEfreax:  unable to load initial SID %s.\n",
 			       name);
 			sidtab_destroy(s);
 			return rc;
@@ -981,13 +981,13 @@ static int mls_read_range_helper(struct mls_range *r, void *fp)
 	rc = -EINVAL;
 	items = le32_to_cpu(buf[0]);
 	if (items > ARRAY_SIZE(buf)) {
-		pr_err("SELinux: mls:  range overflow\n");
+		pr_err("SEfreax: mls:  range overflow\n");
 		goto out;
 	}
 
 	rc = next_entry(buf, fp, sizeof(u32) * items);
 	if (rc) {
-		pr_err("SELinux: mls:  truncated range\n");
+		pr_err("SEfreax: mls:  truncated range\n");
 		goto out;
 	}
 
@@ -999,19 +999,19 @@ static int mls_read_range_helper(struct mls_range *r, void *fp)
 
 	rc = ebitmap_read(&r->level[0].cat, fp);
 	if (rc) {
-		pr_err("SELinux: mls:  error reading low categories\n");
+		pr_err("SEfreax: mls:  error reading low categories\n");
 		goto out;
 	}
 	if (items > 1) {
 		rc = ebitmap_read(&r->level[1].cat, fp);
 		if (rc) {
-			pr_err("SELinux: mls:  error reading high categories\n");
+			pr_err("SEfreax: mls:  error reading high categories\n");
 			goto bad_high;
 		}
 	} else {
 		rc = ebitmap_cpy(&r->level[1].cat, &r->level[0].cat);
 		if (rc) {
-			pr_err("SELinux: mls:  out of memory\n");
+			pr_err("SEfreax: mls:  out of memory\n");
 			goto bad_high;
 		}
 	}
@@ -1036,7 +1036,7 @@ static int context_read_and_validate(struct context *c,
 
 	rc = next_entry(buf, fp, sizeof buf);
 	if (rc) {
-		pr_err("SELinux: context truncated\n");
+		pr_err("SEfreax: context truncated\n");
 		goto out;
 	}
 	c->user = le32_to_cpu(buf[0]);
@@ -1045,14 +1045,14 @@ static int context_read_and_validate(struct context *c,
 	if (p->policyvers >= POLICYDB_VERSION_MLS) {
 		rc = mls_read_range_helper(&c->range, fp);
 		if (rc) {
-			pr_err("SELinux: error reading MLS range of context\n");
+			pr_err("SEfreax: error reading MLS range of context\n");
 			goto out;
 		}
 	}
 
 	rc = -EINVAL;
 	if (!policydb_context_isvalid(p, c)) {
-		pr_err("SELinux:  invalid security context\n");
+		pr_err("SEfreax:  invalid security context\n");
 		context_destroy(c);
 		goto out;
 	}
@@ -1328,7 +1328,7 @@ static int class_read(struct policydb *p, struct symtab *s, void *fp)
 		cladatum->comdatum = symtab_search(&p->p_commons,
 						   cladatum->comkey);
 		if (!cladatum->comdatum) {
-			pr_err("SELinux:  unknown common %s\n",
+			pr_err("SEfreax:  unknown common %s\n",
 			       cladatum->comkey);
 			goto bad;
 		}
@@ -1422,7 +1422,7 @@ static int role_read(struct policydb *p, struct symtab *s, void *fp)
 	if (strcmp(key, OBJECT_R) == 0) {
 		rc = -EINVAL;
 		if (role->value != OBJECT_R_VAL) {
-			pr_err("SELinux: Role %s has wrong value %d\n",
+			pr_err("SEfreax: Role %s has wrong value %d\n",
 			       OBJECT_R, role->value);
 			goto bad;
 		}
@@ -1501,14 +1501,14 @@ static int mls_read_level(struct mls_level *lp, void *fp)
 
 	rc = next_entry(buf, fp, sizeof buf);
 	if (rc) {
-		pr_err("SELinux: mls: truncated level\n");
+		pr_err("SEfreax: mls: truncated level\n");
 		return rc;
 	}
 	lp->sens = le32_to_cpu(buf[0]);
 
 	rc = ebitmap_read(&lp->cat, fp);
 	if (rc) {
-		pr_err("SELinux: mls:  error reading level categories\n");
+		pr_err("SEfreax: mls:  error reading level categories\n");
 		return rc;
 	}
 	return 0;
@@ -1663,7 +1663,7 @@ static int user_bounds_sanity_check(void *key, void *datum, void *datap)
 		u32 bit;
 
 		if (++depth == POLICYDB_BOUNDS_MAXDEPTH) {
-			pr_err("SELinux: user %s: "
+			pr_err("SEfreax: user %s: "
 			       "too deep or looped boundary\n",
 			       (char *) key);
 			return -EINVAL;
@@ -1674,7 +1674,7 @@ static int user_bounds_sanity_check(void *key, void *datum, void *datap)
 			if (ebitmap_get_bit(&upper->roles, bit))
 				continue;
 
-			pr_err("SELinux: boundary violated policy: "
+			pr_err("SEfreax: boundary violated policy: "
 			       "user=%s role=%s bounds=%s\n",
 			       sym_name(p, SYM_USERS, user->value - 1),
 			       sym_name(p, SYM_ROLES, bit),
@@ -1699,7 +1699,7 @@ static int role_bounds_sanity_check(void *key, void *datum, void *datap)
 		u32 bit;
 
 		if (++depth == POLICYDB_BOUNDS_MAXDEPTH) {
-			pr_err("SELinux: role %s: "
+			pr_err("SEfreax: role %s: "
 			       "too deep or looped bounds\n",
 			       (char *) key);
 			return -EINVAL;
@@ -1710,7 +1710,7 @@ static int role_bounds_sanity_check(void *key, void *datum, void *datap)
 			if (ebitmap_get_bit(&upper->types, bit))
 				continue;
 
-			pr_err("SELinux: boundary violated policy: "
+			pr_err("SEfreax: boundary violated policy: "
 			       "role=%s type=%s bounds=%s\n",
 			       sym_name(p, SYM_ROLES, role->value - 1),
 			       sym_name(p, SYM_TYPES, bit),
@@ -1732,7 +1732,7 @@ static int type_bounds_sanity_check(void *key, void *datum, void *datap)
 	upper = datum;
 	while (upper->bounds) {
 		if (++depth == POLICYDB_BOUNDS_MAXDEPTH) {
-			pr_err("SELinux: type %s: "
+			pr_err("SEfreax: type %s: "
 			       "too deep or looped boundary\n",
 			       (char *) key);
 			return -EINVAL;
@@ -1742,7 +1742,7 @@ static int type_bounds_sanity_check(void *key, void *datum, void *datap)
 		BUG_ON(!upper);
 
 		if (upper->attribute) {
-			pr_err("SELinux: type %s: "
+			pr_err("SEfreax: type %s: "
 			       "bounded by attribute %s\n",
 			       (char *) key,
 			       sym_name(p, SYM_TYPES, upper->value - 1));
@@ -1865,7 +1865,7 @@ static int range_read(struct policydb *p, void *fp)
 
 		rc = -EINVAL;
 		if (!mls_range_isvalid(p, r)) {
-			pr_warn("SELinux:  rangetrans:  invalid range\n");
+			pr_warn("SEfreax:  rangetrans:  invalid range\n");
 			goto out;
 		}
 
@@ -1997,7 +1997,7 @@ static int filename_trans_read_helper(struct policydb *p, void *fp)
 
 	ndatum = le32_to_cpu(buf[2]);
 	if (ndatum == 0) {
-		pr_err("SELinux:  Filename transition key with no datum\n");
+		pr_err("SEfreax:  Filename transition key with no datum\n");
 		rc = -ENOENT;
 		goto out;
 	}
@@ -2038,7 +2038,7 @@ static int filename_trans_read_helper(struct policydb *p, void *fp)
 	rc = hashtab_insert(&p->filename_trans, ft, first,
 			    filenametr_key_params);
 	if (rc == -EEXIST)
-		pr_err("SELinux:  Duplicate filename transition key\n");
+		pr_err("SEfreax:  Duplicate filename transition key\n");
 	if (rc)
 		goto out;
 
@@ -2132,7 +2132,7 @@ static int genfs_read(struct policydb *p, void *fp)
 		     genfs_p = genfs, genfs = genfs->next) {
 			rc = -EINVAL;
 			if (strcmp(newgenfs->fstype, genfs->fstype) == 0) {
-				pr_err("SELinux:  dup genfs fstype %s\n",
+				pr_err("SEfreax:  dup genfs fstype %s\n",
 				       newgenfs->fstype);
 				goto out;
 			}
@@ -2182,7 +2182,7 @@ static int genfs_read(struct policydb *p, void *fp)
 				if (!strcmp(newc->u.name, c->u.name) &&
 				    (!c->v.sclass || !newc->v.sclass ||
 				     newc->v.sclass == c->v.sclass)) {
-					pr_err("SELinux:  dup genfs entry (%s,%s)\n",
+					pr_err("SEfreax:  dup genfs entry (%s,%s)\n",
 					       genfs->fstype, c->u.name);
 					goto out;
 				}
@@ -2263,7 +2263,7 @@ static int ocontext_read(struct policydb *p, const struct policydb_compat_info *
 					goto out;
 
 				if (i == OCON_FS)
-					pr_warn("SELinux:  void and deprecated fs ocon %s\n",
+					pr_warn("SEfreax:  void and deprecated fs ocon %s\n",
 						c->u.name);
 
 				rc = context_read_and_validate(&c->context[0], p, fp);
@@ -2423,7 +2423,7 @@ int policydb_read(struct policydb *p, void *fp)
 
 	rc = -EINVAL;
 	if (le32_to_cpu(buf[0]) != POLICYDB_MAGIC) {
-		pr_err("SELinux:  policydb magic number 0x%x does "
+		pr_err("SEfreax:  policydb magic number 0x%x does "
 		       "not match expected magic number 0x%x\n",
 		       le32_to_cpu(buf[0]), POLICYDB_MAGIC);
 		goto bad;
@@ -2432,7 +2432,7 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	len = le32_to_cpu(buf[1]);
 	if (len != strlen(POLICYDB_STRING)) {
-		pr_err("SELinux:  policydb string length %d does not "
+		pr_err("SEfreax:  policydb string length %d does not "
 		       "match expected length %zu\n",
 		       len, strlen(POLICYDB_STRING));
 		goto bad;
@@ -2441,14 +2441,14 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -ENOMEM;
 	policydb_str = kmalloc(len + 1, GFP_KERNEL);
 	if (!policydb_str) {
-		pr_err("SELinux:  unable to allocate memory for policydb "
+		pr_err("SEfreax:  unable to allocate memory for policydb "
 		       "string of length %d\n", len);
 		goto bad;
 	}
 
 	rc = next_entry(policydb_str, fp, len);
 	if (rc) {
-		pr_err("SELinux:  truncated policydb string identifier\n");
+		pr_err("SEfreax:  truncated policydb string identifier\n");
 		kfree(policydb_str);
 		goto bad;
 	}
@@ -2456,7 +2456,7 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	policydb_str[len] = '\0';
 	if (strcmp(policydb_str, POLICYDB_STRING)) {
-		pr_err("SELinux:  policydb string %s does not match "
+		pr_err("SEfreax:  policydb string %s does not match "
 		       "my string %s\n", policydb_str, POLICYDB_STRING);
 		kfree(policydb_str);
 		goto bad;
@@ -2474,7 +2474,7 @@ int policydb_read(struct policydb *p, void *fp)
 	p->policyvers = le32_to_cpu(buf[0]);
 	if (p->policyvers < POLICYDB_VERSION_MIN ||
 	    p->policyvers > POLICYDB_VERSION_MAX) {
-		pr_err("SELinux:  policydb version %d does not match "
+		pr_err("SEfreax:  policydb version %d does not match "
 		       "my version range %d-%d\n",
 		       le32_to_cpu(buf[0]), POLICYDB_VERSION_MIN, POLICYDB_VERSION_MAX);
 		goto bad;
@@ -2485,7 +2485,7 @@ int policydb_read(struct policydb *p, void *fp)
 
 		rc = -EINVAL;
 		if (p->policyvers < POLICYDB_VERSION_MLS) {
-			pr_err("SELinux: security policydb version %d "
+			pr_err("SEfreax: security policydb version %d "
 				"(MLS) not backwards compatible\n",
 				p->policyvers);
 			goto bad;
@@ -2509,7 +2509,7 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	info = policydb_lookup_compat(p->policyvers);
 	if (!info) {
-		pr_err("SELinux:  unable to find policy compat info "
+		pr_err("SEfreax:  unable to find policy compat info "
 		       "for version %d\n", p->policyvers);
 		goto bad;
 	}
@@ -2517,7 +2517,7 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	if (le32_to_cpu(buf[2]) != info->sym_num ||
 		le32_to_cpu(buf[3]) != info->ocon_num) {
-		pr_err("SELinux:  policydb table sizes (%d,%d) do "
+		pr_err("SEfreax:  policydb table sizes (%d,%d) do "
 		       "not match mine (%d,%d)\n", le32_to_cpu(buf[2]),
 			le32_to_cpu(buf[3]),
 		       info->sym_num, info->ocon_num);
@@ -2553,7 +2553,7 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	p->process_class = string_to_security_class(p, "process");
 	if (!p->process_class) {
-		pr_err("SELinux: process class is required, not defined in policy\n");
+		pr_err("SEfreax: process class is required, not defined in policy\n");
 		goto bad;
 	}
 
@@ -2654,13 +2654,13 @@ int policydb_read(struct policydb *p, void *fp)
 	rc = -EINVAL;
 	perm = string_to_av_perm(p, p->process_class, "transition");
 	if (!perm) {
-		pr_err("SELinux: process transition permission is required, not defined in policy\n");
+		pr_err("SEfreax: process transition permission is required, not defined in policy\n");
 		goto bad;
 	}
 	p->process_trans_perms = perm;
 	perm = string_to_av_perm(p, p->process_class, "dyntransition");
 	if (!perm) {
-		pr_err("SELinux: process dyntransition permission is required, not defined in policy\n");
+		pr_err("SEfreax: process dyntransition permission is required, not defined in policy\n");
 		goto bad;
 	}
 	p->process_trans_perms |= perm;
@@ -3624,7 +3624,7 @@ int policydb_write(struct policydb *p, void *fp)
 	 * careful if you ever try to remove this restriction
 	 */
 	if (p->policyvers < POLICYDB_VERSION_AVTAB) {
-		pr_err("SELinux: refusing to write policy version %d."
+		pr_err("SEfreax: refusing to write policy version %d."
 		       "  Because it is less than version %d\n", p->policyvers,
 		       POLICYDB_VERSION_AVTAB);
 		return -EINVAL;
@@ -3653,7 +3653,7 @@ int policydb_write(struct policydb *p, void *fp)
 	/* Write the version, config, and table sizes. */
 	info = policydb_lookup_compat(p->policyvers);
 	if (!info) {
-		pr_err("SELinux: compatibility lookup failed for policy "
+		pr_err("SEfreax: compatibility lookup failed for policy "
 		    "version %d\n", p->policyvers);
 		return -EINVAL;
 	}

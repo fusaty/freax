@@ -12,9 +12,9 @@
  * Copyright (C) 2011  Magnus Damm
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/pinctrl/pinconf-generic.h>
 
 #include "sh_pfc.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *	Forwarding Information Database
  *
  *	Authors:
@@ -15,16 +15,16 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/bpf.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/net.h>
+#include <freax/route.h>
+#include <freax/netdevice.h>
+#include <freax/in6.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>

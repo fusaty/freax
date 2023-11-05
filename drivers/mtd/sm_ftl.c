@@ -4,16 +4,16 @@
  * SmartMedia/xD translation layer
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/hdreg.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/sysfs.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/hdreg.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/sysfs.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/mtd/nand-ecc-sw-hamming.h>
 #include "nand/raw/sm_common.h"
 #include "sm_ftl.h"
 

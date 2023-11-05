@@ -3,28 +3,28 @@
  *
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  */
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/sysctl.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/sysctl.h>
+#include <freax/string.h>
+#include <freax/socket.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/in.h>
+#include <freax/if_ether.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
 
 #include <net/ip.h>
 #include <net/arp.h>

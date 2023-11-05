@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/sched_clock.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/sched_clock.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
 #include <asm/mach/time.h>
 #include "soc.h"
 #include "platform.h"

@@ -2,32 +2,32 @@
 /*
  * common LSM auditing functions
  *
- * Based on code written for SELinux by :
+ * Based on code written for SEfreax by :
  *			Stephen Smalley, <sds@tycho.nsa.gov>
  * 			James Morris <jmorris@redhat.com>
  * Author : Etienne Basset, <etienne.basset@ensta.org>
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/fs.h>
+#include <freax/init.h>
 #include <net/sock.h>
-#include <linux/un.h>
+#include <freax/un.h>
 #include <net/af_unix.h>
-#include <linux/audit.h>
-#include <linux/ipv6.h>
-#include <linux/ip.h>
+#include <freax/audit.h>
+#include <freax/ipv6.h>
+#include <freax/ip.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/dccp.h>
-#include <linux/sctp.h>
-#include <linux/lsm_audit.h>
-#include <linux/security.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/dccp.h>
+#include <freax/sctp.h>
+#include <freax/lsm_audit.h>
+#include <freax/security.h>
 
 /**
  * ipv4_skb_to_auditdata : fill auditdata from skb

@@ -1,5 +1,5 @@
-/*-*- linux-c -*-
- *  linux/drivers/video/savage/savage_accel.c -- Hardware Acceleration
+/*-*- freax-c -*-
+ *  freax/drivers/video/savage/savage_accel.c -- Hardware Acceleration
  *
  *      Copyright (C) 2004 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved
@@ -8,10 +8,10 @@
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/fb.h>
+#include <freax/module.h>
 
 #include "savagefb.h"
 

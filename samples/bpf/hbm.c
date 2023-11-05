@@ -38,10 +38,10 @@
 #include <unistd.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/unistd.h>
-#include <linux/compiler.h>
+#include <freax/unistd.h>
+#include <freax/compiler.h>
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf.h>
 #include <getopt.h>
 

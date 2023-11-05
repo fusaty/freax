@@ -5,9 +5,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/refcount.h>
-#include <linux/perf_event.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
+#include <freax/perf_event.h>
 #include "stat.h"
 #include "evsel.h"
 

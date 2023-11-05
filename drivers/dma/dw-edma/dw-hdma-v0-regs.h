@@ -3,13 +3,13 @@
  * Copyright (c) 2023 Cai Huoqing
  * Synopsys DesignWare HDMA v0 reg
  *
- * Author: Cai Huoqing <cai.huoqing@linux.dev>
+ * Author: Cai Huoqing <cai.huoqing@freax.dev>
  */
 
 #ifndef _DW_HDMA_V0_REGS_H
 #define _DW_HDMA_V0_REGS_H
 
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 
 #define HDMA_V0_MAX_NR_CH			8
 #define HDMA_V0_LOCAL_ABORT_INT_EN		BIT(6)

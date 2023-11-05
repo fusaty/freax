@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2014, Sony Mobile Communications AB.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The freax Foundation. All rights reserved.
  * Author: Bjorn Andersson <bjorn.andersson@sonymobile.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/qcom_rpm.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/qcom_rpm.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/clk.h>
 
 #include <dt-bindings/mfd/qcom-rpm.h>
 

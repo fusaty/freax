@@ -6,16 +6,16 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <Ursula Braun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <Ursula Braun@freax.vnet.ibm.com>
  */
 
 #ifndef _SMC_IB_H
 #define _SMC_IB_H
 
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
+#include <freax/interrupt.h>
+#include <freax/if_ether.h>
+#include <freax/mutex.h>
+#include <freax/wait.h>
 #include <rdma/ib_verbs.h>
 #include <net/smc.h>
 

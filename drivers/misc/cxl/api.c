@@ -3,16 +3,16 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/file.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/file.h>
 #include <misc/cxl.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/irqdomain.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/sched/mm.h>
+#include <freax/mmu_context.h>
+#include <freax/irqdomain.h>
 
 #include "cxl.h"
 

@@ -34,11 +34,11 @@
 
 #include "core_priv.h"
 
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_pma.h>

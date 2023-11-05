@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kbuild.h>
-#include <linux/mod_devicetable.h>
+#include <freax/kbuild.h>
+#include <freax/mod_devicetable.h>
 
 #define DEVID(devid) DEFINE(SIZE_##devid, sizeof(struct devid))
 #define DEVID_FIELD(devid, field) \

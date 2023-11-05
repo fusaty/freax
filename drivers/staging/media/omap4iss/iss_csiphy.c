@@ -7,9 +7,9 @@
  * Author: Sergio Aguirre <sergio.a.aguirre@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 #include "../../../../arch/arm/mach-omap2/control.h"
 

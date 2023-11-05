@@ -19,13 +19,13 @@
 #include <drm/drm_managed.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/vsp1.h>
 

@@ -8,7 +8,7 @@
 #include <asm/vdso/timebase.h>
 #include <asm/barrier.h>
 #include <asm/unistd.h>
-#include <uapi/linux/time.h>
+#include <uapi/freax/time.h>
 
 #define VDSO_HAS_CLOCK_GETRES		1
 

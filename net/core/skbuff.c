@@ -34,35 +34,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/sctp.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/slab.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/sctp.h>
+#include <freax/netdevice.h>
 #ifdef CONFIG_NET_CLS_ACT
 #include <net/pkt_sched.h>
 #endif
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/splice.h>
-#include <linux/cache.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/errqueue.h>
-#include <linux/prefetch.h>
-#include <linux/bitfield.h>
-#include <linux/if_vlan.h>
-#include <linux/mpls.h>
-#include <linux/kcov.h>
-#include <linux/iov_iter.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
+#include <freax/splice.h>
+#include <freax/cache.h>
+#include <freax/rtnetlink.h>
+#include <freax/init.h>
+#include <freax/scatterlist.h>
+#include <freax/errqueue.h>
+#include <freax/prefetch.h>
+#include <freax/bitfield.h>
+#include <freax/if_vlan.h>
+#include <freax/mpls.h>
+#include <freax/kcov.h>
+#include <freax/iov_iter.h>
 
 #include <net/protocol.h>
 #include <net/dst.h>
@@ -77,13 +77,13 @@
 #include <net/page_pool/helpers.h>
 #include <net/dropreason.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <trace/events/skb.h>
-#include <linux/highmem.h>
-#include <linux/capability.h>
-#include <linux/user_namespace.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/textsearch.h>
+#include <freax/highmem.h>
+#include <freax/capability.h>
+#include <freax/user_namespace.h>
+#include <freax/indirect_call_wrapper.h>
+#include <freax/textsearch.h>
 
 #include "dev.h"
 #include "sock_destructor.h"
@@ -2185,7 +2185,7 @@ struct sk_buff *skb_realloc_headroom(struct sk_buff *skb, unsigned int headroom)
 }
 EXPORT_SYMBOL(skb_realloc_headroom);
 
-/* Note: We plan to rework this in linux-6.4 */
+/* Note: We plan to rework this in freax-6.4 */
 int __skb_unclone_keeptruesize(struct sk_buff *skb, gfp_t pri)
 {
 	unsigned int saved_end_offset, saved_truesize;

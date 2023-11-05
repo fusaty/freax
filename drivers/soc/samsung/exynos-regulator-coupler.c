@@ -9,12 +9,12 @@
  * if consumers didn't apply their constraints yet.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/regulator/coupler.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 static int regulator_get_optimal_voltage(struct regulator_dev *rdev,
 					 int *current_uV,

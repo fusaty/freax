@@ -8,16 +8,16 @@
  * This driver is based on drivers/devfreq/exynos/exynos_ppmu.c
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/suspend.h>
-#include <linux/devfreq-event.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/suspend.h>
+#include <freax/devfreq-event.h>
 
 #include "exynos-ppmu.h"
 

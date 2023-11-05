@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/sizes.h
+ * include/freax/sizes.h
  */
-#ifndef __LINUX_SIZES_H__
-#define __LINUX_SIZES_H__
+#ifndef __freax_SIZES_H__
+#define __freax_SIZES_H__
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #define SZ_1				0x00000001
 #define SZ_2				0x00000002
@@ -45,4 +45,4 @@
 
 #define SZ_4G				_AC(0x100000000, ULL)
 
-#endif /* __LINUX_SIZES_H__ */
+#endif /* __freax_SIZES_H__ */

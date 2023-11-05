@@ -10,7 +10,7 @@
 #ifndef ZFCP_DIAG_H
 #define ZFCP_DIAG_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 #include "zfcp_fsf.h"
 #include "zfcp_def.h"

@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Kang Luwei <luwei.kang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@freax.intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
  *   Tim Whisonant <tim.whisonant@intel.com>
@@ -14,13 +14,13 @@
  *   Henry Mitchel <henry.mitchel@intel.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/units.h>
-#include <linux/fpga-dfl.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/units.h>
+#include <freax/fpga-dfl.h>
 
 #include "dfl.h"
 #include "dfl-fme.h"

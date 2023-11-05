@@ -44,7 +44,7 @@
 		led-power-white {
 			label = "bcm53xx:white:power";
 			gpios = <&chipcommon 0 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-wan-white {
@@ -66,14 +66,14 @@
 			label = "bcm53xx:white:usb3";
 			gpios = <&chipcommon 8 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&xhci_port1>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 		led-usb2-white {
 			label = "bcm53xx:white:usb2";
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 		led-2ghz {
@@ -92,14 +92,14 @@
 
 		button-wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 
 		/* Called "factory reset" in the vendor dmesg */
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 17 GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -11,7 +11,7 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/kfifo.h>
+#include <freax/kfifo.h>
 
 #define HID_DEBUG_BUFSIZE 512
 #define HID_DEBUG_FIFOSIZE 512

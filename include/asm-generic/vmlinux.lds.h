@@ -87,7 +87,7 @@
 /*
  * LD_DEAD_CODE_DATA_ELIMINATION option enables -fdata-sections, which
  * generates .data.identifier sections, which need to be pulled in with
- * .data. We don't want to pull in .data..other sections, which Linux
+ * .data. We don't want to pull in .data..other sections, which freax
  * has defined. Same for text and bss.
  *
  * With LTO_CLANG, the linker also splits sections by default, so we need
@@ -158,7 +158,7 @@
 #ifndef CONFIG_ARCH_SUPPORTS_CFI_CLANG
 /*
  * Simply points to ftrace_stub, but with the proper protocol.
- * Defined by the linker script in linux/vmlinux.lds.h
+ * Defined by the linker script in freax/vmfreax.lds.h
  */
 #define	FTRACE_STUB_HACK	ftrace_stub_graph = ftrace_stub;
 #else

@@ -8,16 +8,16 @@
 * Based on various ohci-*.c drivers
 */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/signal.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #include "ohci.h"
 

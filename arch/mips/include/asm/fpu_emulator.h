@@ -12,7 +12,7 @@
 #ifndef _ASM_FPU_EMULATOR_H
 #define _ASM_FPU_EMULATOR_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 #include <asm/dsemul.h>
 #include <asm/thread_info.h>
 #include <asm/inst.h>

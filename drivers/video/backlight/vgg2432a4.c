@@ -4,18 +4,18 @@
  * VGG2432A4 (ILI9320) LCD controller driver.
  *
  * Copyright 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
 */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/lcd.h>
+#include <freax/module.h>
 
-#include <linux/spi/spi.h>
+#include <freax/spi/spi.h>
 
 #include <video/ili9320.h>
 
@@ -257,7 +257,7 @@ static struct spi_driver vgg2432a4_driver = {
 
 module_spi_driver(vgg2432a4_driver);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-freax@fluff.org>");
 MODULE_DESCRIPTION("VGG2432A4 LCD Driver");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("spi:VGG2432A4");

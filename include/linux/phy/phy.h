@@ -10,15 +10,15 @@
 #ifndef __DRIVERS_PHY_H
 #define __DRIVERS_PHY_H
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/phy/phy-dp.h>
-#include <linux/phy/phy-lvds.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <freax/phy/phy-dp.h>
+#include <freax/phy/phy-lvds.h>
+#include <freax/phy/phy-mipi-dphy.h>
 
 struct phy;
 

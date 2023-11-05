@@ -10,17 +10,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <freax/clk.h>
+#include <freax/genalloc.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mbus.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/skbuff.h>
 #include <net/hwbm.h>
 #include "mvneta_bm.h"
 

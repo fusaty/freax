@@ -9,24 +9,24 @@
  *
  */
 
-#include <linux/alarmtimer.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/anon_inodes.h>
-#include <linux/timerfd.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/rcupdate.h>
-#include <linux/time_namespace.h>
+#include <freax/alarmtimer.h>
+#include <freax/file.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
+#include <freax/hrtimer.h>
+#include <freax/anon_inodes.h>
+#include <freax/timerfd.h>
+#include <freax/syscalls.h>
+#include <freax/compat.h>
+#include <freax/rcupdate.h>
+#include <freax/time_namespace.h>
 
 struct timerfd_ctx {
 	union {

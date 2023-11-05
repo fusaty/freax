@@ -9,8 +9,8 @@
  *               Martin Peschke <peschke@fh-brandenburg.de>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/export.h>
 #include <asm/ebcdic.h>
 
 /*

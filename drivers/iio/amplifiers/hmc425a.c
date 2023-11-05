@@ -5,19 +5,19 @@
  * Copyright 2020 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sysfs.h>
 
 enum hmc425a_type {
 	ID_HMC425A,

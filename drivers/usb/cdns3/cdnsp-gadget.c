@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
+#include <freax/moduleparam.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/iopoll.h>
+#include <freax/delay.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/irq.h>
+#include <freax/dmi.h>
 
 #include "core.h"
 #include "gadget-export.h"

@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef _LINUX_HECUBAFB_H_
-#define _LINUX_HECUBAFB_H_
+#ifndef _freax_HECUBAFB_H_
+#define _freax_HECUBAFB_H_
 
 /* Apollo controller specific defines */
 #define APOLLO_START_NEW_IMG	0xA0

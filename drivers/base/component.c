@@ -2,13 +2,13 @@
 /*
  * Componentized device handling.
  */
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
+#include <freax/component.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
 
 /**
  * DOC: overview

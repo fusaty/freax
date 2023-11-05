@@ -5,7 +5,7 @@
 #ifndef _ASM_BOOTINFO_H
 #define _ASM_BOOTINFO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/setup.h>
 
 const char *get_system_type(void);

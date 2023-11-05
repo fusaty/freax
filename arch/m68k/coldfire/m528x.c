@@ -13,12 +13,12 @@
 
 /***************************************************************************/
 
-#include <linux/clkdev.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <freax/clkdev.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

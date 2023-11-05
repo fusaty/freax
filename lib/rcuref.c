@@ -174,8 +174,8 @@
  * object DEAD it also provides acquire ordering.
  */
 
-#include <linux/export.h>
-#include <linux/rcuref.h>
+#include <freax/export.h>
+#include <freax/rcuref.h>
 
 /**
  * rcuref_get_slowpath - Slowpath of rcuref_get()

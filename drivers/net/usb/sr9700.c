@@ -10,16 +10,16 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/stddef.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/crc32.h>
+#include <freax/usb/usbnet.h>
 
 #include "sr9700.h"
 

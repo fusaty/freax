@@ -16,12 +16,12 @@
  *                                 |-----T timeout_stage
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/kempld.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/uaccess.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/kempld.h>
 
 #define KEMPLD_WDT_STAGE_TIMEOUT(x)	(0x1b + (x) * 4)
 #define KEMPLD_WDT_STAGE_CFG(x)		(0x18 + (x))

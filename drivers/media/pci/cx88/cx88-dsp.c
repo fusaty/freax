@@ -8,10 +8,10 @@
 #include "cx88.h"
 #include "cx88-reg.h"
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
 #include <asm/div64.h>
 
 #define INT_PI			((s32)(3.141592653589 * 32768.0))

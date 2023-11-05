@@ -5,11 +5,11 @@
  *  Copyright (c) 2004 by Castet Matthieu <castet.matthieu@free.fr>
  */
 
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/pnp.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include <sound/initval.h>

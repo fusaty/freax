@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mmtimer.h>
-#include <linux/miscdevice.h>
-#include <linux/posix-timers.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/math64.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/ioctl.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/mmtimer.h>
+#include <freax/miscdevice.h>
+#include <freax/posix-timers.h>
+#include <freax/interrupt.h>
+#include <freax/time.h>
+#include <freax/math64.h>
 
 #include <asm/genapic.h>
 #include <asm/uv/uv_hub.h>

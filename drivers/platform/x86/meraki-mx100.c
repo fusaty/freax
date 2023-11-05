@@ -13,16 +13,16 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/dmi.h>
+#include <freax/err.h>
+#include <freax/gpio_keys.h>
+#include <freax/gpio/machine.h>
+#include <freax/input.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #define TINK_GPIO_DRIVER_NAME "gpio_ich"
 

@@ -5,18 +5,18 @@
 // Copyright (C) 2022-2023 Cirrus Logic, Inc. and
 //                         Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/mfd/cs42l43.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/units.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/units.h>
 
 #define CS42L43_FIFO_SIZE		16
 #define CS42L43_SPI_ROOT_HZ		(40 * HZ_PER_MHZ)

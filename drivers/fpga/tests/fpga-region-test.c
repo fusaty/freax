@@ -8,12 +8,12 @@
  */
 
 #include <kunit/test.h>
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/fpga/fpga-region.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/fpga/fpga-bridge.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/fpga/fpga-region.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 struct mgr_stats {
 	u32 write_count;

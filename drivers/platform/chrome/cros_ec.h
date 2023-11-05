@@ -8,7 +8,7 @@
 #ifndef __CROS_EC_H
 #define __CROS_EC_H
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 struct cros_ec_device;
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/sched/signal.h>
+#include <freax/sched/signal.h>
 
 #include "futex.h"
 #include "../locking/rtmutex_common.h"

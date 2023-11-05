@@ -5,10 +5,10 @@
  * Copyright (C) Jay Lan	SGI
  */
 
-#ifndef _LINUX_TSACCT_KERN_H
-#define _LINUX_TSACCT_KERN_H
+#ifndef _freax_TSACCT_KERN_H
+#define _freax_TSACCT_KERN_H
 
-#include <linux/taskstats.h>
+#include <freax/taskstats.h>
 
 #ifdef CONFIG_TASKSTATS
 extern void bacct_add_tsk(struct user_namespace *user_ns,

@@ -24,7 +24,7 @@
  *          Alex Deucher
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <acpi/video.h>
 
@@ -35,7 +35,7 @@
 #include "atom.h"
 #include "atombios_encoders.h"
 #include "atombios_dp.h"
-#include <linux/backlight.h>
+#include <freax/backlight.h>
 #include "bif/bif_4_1_d.h"
 
 u8

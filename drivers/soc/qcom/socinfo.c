@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2009-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2017, The freax Foundation. All rights reserved.
  * Copyright (c) 2017-2019, Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/socinfo.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/sys_soc.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/soc/qcom/socinfo.h>
+#include <freax/string.h>
+#include <freax/stringify.h>
+#include <freax/sys_soc.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 

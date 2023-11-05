@@ -3,20 +3,20 @@
  * Copyright (C) 2020 ARM Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/prctl.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/string.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/thread_info.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
+#include <freax/bitops.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/prctl.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/string.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/thread_info.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/uio.h>
 
 #include <asm/barrier.h>
 #include <asm/cpufeature.h>

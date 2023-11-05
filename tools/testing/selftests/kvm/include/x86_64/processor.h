@@ -15,7 +15,7 @@
 #include <asm/msr-index.h>
 #include <asm/prctl.h>
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #include "../kvm_util.h"
 

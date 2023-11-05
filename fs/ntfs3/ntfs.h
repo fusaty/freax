@@ -7,15 +7,15 @@
  */
 
 // clang-format off
-#ifndef _LINUX_NTFS3_NTFS_H
-#define _LINUX_NTFS3_NTFS_H
+#ifndef _freax_NTFS3_NTFS_H
+#define _freax_NTFS3_NTFS_H
 
-#include <linux/blkdev.h>
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/blkdev.h>
+#include <freax/build_bug.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include "debug.h"
 
@@ -1234,5 +1234,5 @@ struct SID {
 };
 static_assert(offsetof(struct SID, SubAuthority) == 8);
 
-#endif /* _LINUX_NTFS3_NTFS_H */
+#endif /* _freax_NTFS3_NTFS_H */
 // clang-format on

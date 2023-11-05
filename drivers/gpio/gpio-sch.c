@@ -6,17 +6,17 @@
  *  Author: Denis Turischev <denis@compulab.co.il>
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci_ids.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 #define GEN	0x00
 #define GIO	0x04

@@ -7,26 +7,26 @@
  * discipline handling modules (like SLIP).
  */
 
-#include <linux/bits.h>
-#include <linux/types.h>
-#include <linux/termios.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/tty.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
-#include <linux/termios_internal.h>
+#include <freax/bits.h>
+#include <freax/types.h>
+#include <freax/termios.h>
+#include <freax/errno.h>
+#include <freax/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/major.h>
+#include <freax/tty.h>
+#include <freax/fcntl.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/mutex.h>
+#include <freax/compat.h>
+#include <freax/termios_internal.h>
 #include "tty.h"
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #undef	DEBUG
 

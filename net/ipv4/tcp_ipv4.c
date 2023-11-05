@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,9 +9,9 @@
  *		IPv4 specific functions
  *
  *		code split from:
- *		linux/ipv4/tcp.c
- *		linux/ipv4/tcp_input.c
- *		linux/ipv4/tcp_output.c
+ *		freax/ipv4/tcp.c
+ *		freax/ipv4/tcp_input.c
+ *		freax/ipv4/tcp_output.c
  *
  *		See tcp.c for author information
  */
@@ -47,17 +47,17 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/bottom_half.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/cache.h>
-#include <linux/jhash.h>
-#include <linux/init.h>
-#include <linux/times.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <freax/bottom_half.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/cache.h>
+#include <freax/jhash.h>
+#include <freax/init.h>
+#include <freax/times.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
 
 #include <net/net_namespace.h>
 #include <net/icmp.h>
@@ -71,16 +71,16 @@
 #include <net/secure_seq.h>
 #include <net/busy_poll.h>
 
-#include <linux/inet.h>
-#include <linux/ipv6.h>
-#include <linux/stddef.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/inetdevice.h>
-#include <linux/btf_ids.h>
+#include <freax/inet.h>
+#include <freax/ipv6.h>
+#include <freax/stddef.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/inetdevice.h>
+#include <freax/btf_ids.h>
 
 #include <crypto/hash.h>
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 
 #include <trace/events/tcp.h>
 
@@ -402,7 +402,7 @@ void tcp_req_err(struct sock *sk, u32 seq, bool abort)
 	 * an established socket here.
 	 */
 	if (seq != tcp_rsk(req)->snt_isn) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, freax_MIB_OUTOFWINDOWICMPS);
 	} else if (abort) {
 		/*
 		 * Still in SYN_RECV, just remove it silently.
@@ -522,7 +522,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 	 */
 	if (sock_owned_by_user(sk)) {
 		if (!(type == ICMP_DEST_UNREACH && code == ICMP_FRAG_NEEDED))
-			__NET_INC_STATS(net, LINUX_MIB_LOCKDROPPEDICMPS);
+			__NET_INC_STATS(net, freax_MIB_LOCKDROPPEDICMPS);
 	}
 	if (sk->sk_state == TCP_CLOSE)
 		goto out;
@@ -530,7 +530,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 	if (static_branch_unlikely(&ip4_min_ttl)) {
 		/* min_ttl can be changed concurrently from do_ip_setsockopt() */
 		if (unlikely(iph->ttl < READ_ONCE(inet_sk(sk)->min_ttl))) {
-			__NET_INC_STATS(net, LINUX_MIB_TCPMINTTLDROP);
+			__NET_INC_STATS(net, freax_MIB_TCPMINTTLDROP);
 			goto out;
 		}
 	}
@@ -541,7 +541,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 	snd_una = fastopen ? tcp_rsk(fastopen)->snt_isn : tp->snd_una;
 	if (sk->sk_state != TCP_LISTEN &&
 	    !between(seq, snd_una, tp->snd_nxt)) {
-		__NET_INC_STATS(net, LINUX_MIB_OUTOFWINDOWICMPS);
+		__NET_INC_STATS(net, freax_MIB_OUTOFWINDOWICMPS);
 		goto out;
 	}
 
@@ -562,7 +562,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 
 		if (code == ICMP_FRAG_NEEDED) { /* PMTU discovery (RFC1191) */
 			/* We are not interested in TCP_LISTEN and open_requests
-			 * (SYN-ACKs send out by Linux are always <576bytes so
+			 * (SYN-ACKs send out by freax are always <576bytes so
 			 * they should go through unfragmented).
 			 */
 			if (sk->sk_state == TCP_LISTEN)
@@ -626,7 +626,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even freax sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)
@@ -1832,7 +1832,7 @@ struct sock *tcp_v4_syn_recv_sock(const struct sock *sk, struct sk_buff *skb,
 	return newsk;
 
 exit_overflow:
-	NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENOVERFLOWS);
+	NET_INC_STATS(sock_net(sk), freax_MIB_LISTENOVERFLOWS);
 exit_nonewsk:
 	dst_release(dst);
 exit:
@@ -2093,7 +2093,7 @@ bool tcp_add_backlog(struct sock *sk, struct sk_buff *skb,
 
 		sk->sk_backlog.len += delta;
 		__NET_INC_STATS(sock_net(sk),
-				LINUX_MIB_TCPBACKLOGCOALESCE);
+				freax_MIB_TCPBACKLOGCOALESCE);
 		kfree_skb_partial(skb, fragstolen);
 		return false;
 	}
@@ -2111,7 +2111,7 @@ no_coalesce:
 	if (unlikely(sk_add_backlog(sk, skb, limit))) {
 		bh_unlock_sock(sk);
 		*reason = SKB_DROP_REASON_SOCKET_BACKLOG;
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPBACKLOGDROP);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_TCPBACKLOGDROP);
 		return true;
 	}
 	return false;
@@ -2287,7 +2287,7 @@ process:
 	if (static_branch_unlikely(&ip4_min_ttl)) {
 		/* min_ttl can be changed concurrently from do_ip_setsockopt() */
 		if (unlikely(iph->ttl < READ_ONCE(inet_sk(sk)->min_ttl))) {
-			__NET_INC_STATS(net, LINUX_MIB_TCPMINTTLDROP);
+			__NET_INC_STATS(net, freax_MIB_TCPMINTTLDROP);
 			drop_reason = SKB_DROP_REASON_TCP_MINTTL;
 			goto discard_and_relse;
 		}

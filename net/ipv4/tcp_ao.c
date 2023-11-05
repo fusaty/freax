@@ -10,8 +10,8 @@
 #define pr_fmt(fmt) "TCP: " fmt
 
 #include <crypto/hash.h>
-#include <linux/inetdevice.h>
-#include <linux/tcp.h>
+#include <freax/inetdevice.h>
+#include <freax/tcp.h>
 
 #include <net/tcp.h>
 #include <net/ipv6.h>
@@ -96,7 +96,7 @@ bool tcp_ao_ignore_icmp(const struct sock *sk, int family, int type, int code)
 
 	if (ao && !ao->accept_icmps) {
 		ignore_icmp = true;
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAODROPPEDICMPS);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_TCPAODROPPEDICMPS);
 		atomic64_inc(&ao->counters.dropped_icmp);
 	}
 	rcu_read_unlock();
@@ -715,7 +715,7 @@ int tcp_ao_prepare_reset(const struct sock *sk, struct sk_buff *skb,
 	 * Drop the segment. RFC5925 (7.7) advises to require graceful
 	 * restart [RFC4724]. Alternatively, the RFC5925 advises to
 	 * save/restore traffic keys before/after reboot.
-	 * Linux TCP-AO support provides TCP_AO_ADD_KEY and TCP_AO_REPAIR
+	 * freax TCP-AO support provides TCP_AO_ADD_KEY and TCP_AO_REPAIR
 	 * options to restore a socket post-reboot.
 	 */
 	if (!sk)
@@ -877,7 +877,7 @@ tcp_ao_verify_hash(const struct sock *sk, const struct sk_buff *skb,
 	void *hash_buf = NULL;
 
 	if (maclen != tcp_ao_maclen(key)) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOBAD);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOBAD);
 		atomic64_inc(&info->counters.pkt_bad);
 		atomic64_inc(&key->pkt_bad);
 		tcp_hash_fail("AO hash wrong length", family, skb,
@@ -894,7 +894,7 @@ tcp_ao_verify_hash(const struct sock *sk, const struct sk_buff *skb,
 	tcp_ao_hash_skb(family, hash_buf, key, sk, skb, traffic_key,
 			(phash - (u8 *)th), sne);
 	if (memcmp(phash, hash_buf, maclen)) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOBAD);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOBAD);
 		atomic64_inc(&info->counters.pkt_bad);
 		atomic64_inc(&key->pkt_bad);
 		tcp_hash_fail("AO hash mismatch", family, skb,
@@ -902,7 +902,7 @@ tcp_ao_verify_hash(const struct sock *sk, const struct sk_buff *skb,
 		kfree(hash_buf);
 		return SKB_DROP_REASON_TCP_AOFAILURE;
 	}
-	NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOGOOD);
+	NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOGOOD);
 	atomic64_inc(&info->counters.pkt_good);
 	atomic64_inc(&key->pkt_good);
 	kfree(hash_buf);
@@ -925,7 +925,7 @@ tcp_inbound_ao_hash(struct sock *sk, const struct sk_buff *skb,
 
 	info = rcu_dereference(tcp_sk(sk)->ao_info);
 	if (!info) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOKEYNOTFOUND);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOKEYNOTFOUND);
 		tcp_hash_fail("AO key not found", family, skb,
 			      "keyid: %u L3index: %d", aoh->keyid, l3index);
 		return SKB_DROP_REASON_TCP_AOUNEXPECTED;
@@ -1027,7 +1027,7 @@ verify_hash:
 	return ret;
 
 key_not_found:
-	NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOKEYNOTFOUND);
+	NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOKEYNOTFOUND);
 	atomic64_inc(&info->counters.key_not_found);
 	tcp_hash_fail("Requested by the peer AO key id not found",
 		      family, skb, "L3index: %d", l3index);

@@ -2,7 +2,7 @@
 #ifndef __NOUVEAU_FENCE_H__
 #define __NOUVEAU_FENCE_H__
 
-#include <linux/dma-fence.h>
+#include <freax/dma-fence.h>
 #include <nvif/event.h>
 
 struct nouveau_drm;

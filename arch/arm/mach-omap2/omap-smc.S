@@ -9,7 +9,7 @@
  * Copyright (C) 2013 Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
  * This is common routine to manage secure monitor API

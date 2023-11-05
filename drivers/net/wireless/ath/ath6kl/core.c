@@ -17,10 +17,10 @@
 
 #include "core.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/export.h>
+#include <freax/vmalloc.h>
 
 #include "debug.h"
 #include "hif-ops.h"

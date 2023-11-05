@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/security.h>
+#include <freax/export.h>
+#include <freax/security.h>
 #include "internal.h"
 
 /**

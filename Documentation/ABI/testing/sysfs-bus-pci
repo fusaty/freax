@@ -1,7 +1,7 @@
 What:		/sys/bus/pci/drivers/.../bind
 What:		/sys/devices/pciX/.../bind
 Date:		December 2003
-Contact:	linux-pci@vger.kernel.org
+Contact:	freax-pci@vger.kernel.org
 Description:
 		Writing a device location to this file will cause
 		the driver to attempt to bind to the device found at
@@ -17,7 +17,7 @@ Description:
 What:		/sys/bus/pci/drivers/.../unbind
 What:		/sys/devices/pciX/.../unbind
 Date:		December 2003
-Contact:	linux-pci@vger.kernel.org
+Contact:	freax-pci@vger.kernel.org
 Description:
 		Writing a device location to this file will cause the
 		driver to attempt to unbind from the device found at
@@ -33,7 +33,7 @@ Description:
 What:		/sys/bus/pci/drivers/.../new_id
 What:		/sys/devices/pciX/.../new_id
 Date:		December 2003
-Contact:	linux-pci@vger.kernel.org
+Contact:	freax-pci@vger.kernel.org
 Description:
 		Writing a device ID to this file will attempt to
 		dynamically add a new device ID to a PCI device driver.
@@ -69,7 +69,7 @@ Description:
 
 What:		/sys/bus/pci/rescan
 Date:		January 2009
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		Writing a non-zero value to this attribute will
 		force a rescan of all PCI buses in the system, and
@@ -77,7 +77,7 @@ Description:
 
 What:		/sys/bus/pci/devices/.../msi_bus
 Date:		September 2014
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		Writing a zero value to this attribute disallows MSI and
 		MSI-X for any future drivers of the device.  If the device
@@ -102,7 +102,7 @@ Description:
 
 What:		/sys/bus/pci/devices/.../irq
 Date:		August 2021
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		If a driver has enabled MSI (not MSI-X), "irq" contains the
 		IRQ of the first MSI vector. Otherwise "irq" contains the
@@ -113,14 +113,14 @@ Description:
 
 What:		/sys/bus/pci/devices/.../remove
 Date:		January 2009
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		Writing a non-zero value to this attribute will
 		hot-remove the PCI device and any of its children.
 
 What:		/sys/bus/pci/devices/.../pci_bus/.../rescan
 Date:		May 2011
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		Writing a non-zero value to this attribute will
 		force a rescan of the bus and all child buses,
@@ -129,7 +129,7 @@ Description:
 
 What:		/sys/bus/pci/devices/.../rescan
 Date:		January 2009
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		Writing a non-zero value to this attribute will
 		force a rescan of the device's parent bus and all
@@ -204,7 +204,7 @@ Description:
 
 What:		/sys/bus/pci/devices/.../modalias
 Date:		May 2005
-Contact:	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Contact:	Greg Kroah-Hartman <gregkh@freaxfoundation.org>
 Description:
 		This attribute indicates the PCI ID of the device object.
 
@@ -222,14 +222,14 @@ Description:
 
 What:		/sys/bus/pci/slots/.../module
 Date:		June 2009
-Contact:	linux-pci@vger.kernel.org
+Contact:	freax-pci@vger.kernel.org
 Description:
 		This symbolic link points to the PCI hotplug controller driver
 		module that manages the hotplug slot.
 
 What:		/sys/bus/pci/devices/.../label
 Date:		July 2010
-Contact:	Narendra K <narendra_k@dell.com>, linux-bugs@dell.com
+Contact:	Narendra K <narendra_k@dell.com>, freax-bugs@dell.com
 Description:
 		Reading this attribute will provide the firmware
 		given name (SMBIOS type 41 string or ACPI _DSM string) of
@@ -243,7 +243,7 @@ Users:
 
 What:		/sys/bus/pci/devices/.../index
 Date:		July 2010
-Contact:	Narendra K <narendra_k@dell.com>, linux-bugs@dell.com
+Contact:	Narendra K <narendra_k@dell.com>, freax-bugs@dell.com
 Description:
 		Reading this attribute will provide the firmware given instance
 		number of the PCI device.  Depending on the platform this can
@@ -260,7 +260,7 @@ Users:
 
 What:		/sys/bus/pci/devices/.../acpi_index
 Date:		July 2010
-Contact:	Narendra K <narendra_k@dell.com>, linux-bugs@dell.com
+Contact:	Narendra K <narendra_k@dell.com>, freax-bugs@dell.com
 Description:
 		Reading this attribute will provide the firmware
 		given instance (ACPI _DSM instance number) of the PCI device.
@@ -432,7 +432,7 @@ Description:	If ASPM is supported for an endpoint, these files can be
 
 What:		/sys/bus/pci/devices/.../power_state
 Date:		November 2020
-Contact:	Linux PCI developers <linux-pci@vger.kernel.org>
+Contact:	freax PCI developers <freax-pci@vger.kernel.org>
 Description:
 		This file contains the current PCI power state of the device.
 		The value comes from the PCI kernel device state and can be one

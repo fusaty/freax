@@ -5,17 +5,17 @@
  * Copyright 2009 Wolfson Microelectronics PLC.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/usb/phy.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/usb/phy.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/pmu.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/auxadc.h>
+#include <freax/mfd/wm831x/pmu.h>
+#include <freax/mfd/wm831x/pdata.h>
 
 struct wm831x_power {
 	struct wm831x *wm831x;

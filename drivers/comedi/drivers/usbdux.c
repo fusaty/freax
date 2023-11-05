@@ -67,13 +67,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/fcntl.h>
-#include <linux/compiler.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/fcntl.h>
+#include <freax/compiler.h>
+#include <freax/comedi/comedi_usb.h>
 
 /* constants for firmware upload and download */
 #define USBDUX_FIRMWARE		"usbdux_firmware.bin"

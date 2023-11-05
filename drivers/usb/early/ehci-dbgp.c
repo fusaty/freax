@@ -12,18 +12,18 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/delay.h>
-#include <linux/serial_core.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
+#include <freax/console.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/pci_regs.h>
+#include <freax/pci_ids.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/ehci_def.h>
+#include <freax/delay.h>
+#include <freax/serial_core.h>
+#include <freax/kgdb.h>
+#include <freax/kthread.h>
 #include <asm/io.h>
 #include <asm/pci-direct.h>
 #include <asm/fixmap.h>

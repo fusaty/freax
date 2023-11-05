@@ -36,7 +36,7 @@ properties:
   touchscreen-size-x: true
   touchscreen-size-y: true
 
-  linux,keycodes:
+  freax,keycodes:
     minItems: 1
     maxItems: 4
 

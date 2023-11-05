@@ -7,11 +7,11 @@
  * Tero Kristo (t-kristo@ti.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk/ti.h>
 #include <dt-bindings/clock/dra7.h>
 
 #include "clock.h"

@@ -7,8 +7,8 @@
  * Contact: Niklas Söderlund (niklas.soderlund@ragnatech.se)
  */
 
-#include <linux/device.h>
-#include <linux/gfp.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
 
 #include <media/v4l2-subdev.h>
 #include <media/videobuf2-vmalloc.h>

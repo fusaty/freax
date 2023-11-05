@@ -6,13 +6,13 @@
 
 #include "fuse_i.h"
 
-#include <linux/delay.h>
-#include <linux/dax.h>
-#include <linux/uio.h>
-#include <linux/pagemap.h>
-#include <linux/pfn_t.h>
-#include <linux/iomap.h>
-#include <linux/interval_tree.h>
+#include <freax/delay.h>
+#include <freax/dax.h>
+#include <freax/uio.h>
+#include <freax/pagemap.h>
+#include <freax/pfn_t.h>
+#include <freax/iomap.h>
+#include <freax/interval_tree.h>
 
 /*
  * Default memory range size.  A power of 2 so it agrees with common FUSE_INIT

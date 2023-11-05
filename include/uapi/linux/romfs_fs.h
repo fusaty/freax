@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_ROMFS_FS_H
-#define __LINUX_ROMFS_FS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_ROMFS_FS_H
+#define __freax_ROMFS_FS_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/fs.h>
 
 /* The basic structures of the romfs filesystem */
 

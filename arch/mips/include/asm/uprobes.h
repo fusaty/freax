@@ -6,8 +6,8 @@
 #ifndef __ASM_UPROBES_H
 #define __ASM_UPROBES_H
 
-#include <linux/notifier.h>
-#include <linux/types.h>
+#include <freax/notifier.h>
+#include <freax/types.h>
 
 #include <asm/break.h>
 #include <asm/inst.h>

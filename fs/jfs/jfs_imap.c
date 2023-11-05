@@ -28,11 +28,11 @@
  *	written out when the filesystem is unmounted by diUnmount().
  */
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/quotaops.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/pagemap.h>
+#include <freax/quotaops.h>
+#include <freax/slab.h>
 
 #include "jfs_incore.h"
 #include "jfs_inode.h"

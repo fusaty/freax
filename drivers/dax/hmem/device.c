@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/platform_device.h>
-#include <linux/memregion.h>
-#include <linux/module.h>
-#include <linux/dax.h>
-#include <linux/mm.h>
+#include <freax/platform_device.h>
+#include <freax/memregion.h>
+#include <freax/module.h>
+#include <freax/dax.h>
+#include <freax/mm.h>
 
 static bool nohmem;
 module_param_named(disable, nohmem, bool, 0444);

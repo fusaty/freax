@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/memblock.h>
-#include <linux/mmdebug.h>
-#include <linux/export.h>
-#include <linux/mm.h>
+#include <freax/memblock.h>
+#include <freax/mmdebug.h>
+#include <freax/export.h>
+#include <freax/mm.h>
 
 #include <asm/page.h>
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include "physaddr.h"
 

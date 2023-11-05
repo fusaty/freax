@@ -4,10 +4,10 @@
  * Copyright (C) 2019, 2021-2023 Intel Corporation
  * Author:     Luis Carlos Cobo <luisca@cozybit.com>
  */
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/rculist.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/random.h>
+#include <freax/rculist.h>
 
 #include "ieee80211_i.h"
 #include "rate.h"

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
 
 #include "adf_admin.h"
 #include "adf_accel_devices.h"

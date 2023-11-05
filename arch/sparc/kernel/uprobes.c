@@ -9,12 +9,12 @@
  *	Eric Saint Etienne <eric.saint.etienne@oracle.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/uprobes.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h> /* For struct task_struct */
-#include <linux/kdebug.h>
+#include <freax/kernel.h>
+#include <freax/highmem.h>
+#include <freax/uprobes.h>
+#include <freax/uaccess.h>
+#include <freax/sched.h> /* For struct task_struct */
+#include <freax/kdebug.h>
 
 #include <asm/cacheflush.h>
 

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2019 Intel Corporation. All rights rsvd. */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <uapi/linux/idxd.h>
-#include <linux/dmaengine.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/workqueue.h>
+#include <freax/fs.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/iommu.h>
+#include <uapi/freax/idxd.h>
+#include <freax/dmaengine.h>
 #include "../dmaengine.h"
 #include "registers.h"
 #include "idxd.h"

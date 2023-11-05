@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Via labs VL817 USB 3.1 hub controller
 
 maintainers:
-  - Anand Moon <linux.amoon@gmail.com>
+  - Anand Moon <freax.amoon@gmail.com>
 
 allOf:
   - $ref: usb-device.yaml#

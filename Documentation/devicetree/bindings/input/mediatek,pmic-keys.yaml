@@ -55,13 +55,13 @@ patternProperties:
 
       interrupt-names: true
 
-      linux,keycodes:
+      freax,keycodes:
         maxItems: 1
 
       wakeup-source: true
 
     required:
-      - linux,keycodes
+      - freax,keycodes
 
     if:
       properties:
@@ -104,12 +104,12 @@ examples:
           power-off-time-sec = <0>;
 
           key-power {
-            linux,keycodes = <KEY_POWER>;
+            freax,keycodes = <KEY_POWER>;
             wakeup-source;
           };
 
           key-home {
-            linux,keycodes = <KEY_VOLUMEDOWN>;
+            freax,keycodes = <KEY_VOLUMEDOWN>;
           };
         };
     };

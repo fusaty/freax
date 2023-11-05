@@ -3,7 +3,7 @@
  * Tracepoints for Thunderbolt/USB4 networking driver
  *
  * Copyright (C) 2023, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #undef TRACE_SYSTEM
@@ -12,9 +12,9 @@
 #if !defined(__TRACE_THUNDERBOLT_NET_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __TRACE_THUNDERBOLT_NET_H
 
-#include <linux/dma-direction.h>
-#include <linux/skbuff.h>
-#include <linux/tracepoint.h>
+#include <freax/dma-direction.h>
+#include <freax/skbuff.h>
+#include <freax/tracepoint.h>
 
 #define DMA_DATA_DIRECTION_NAMES			\
 	{ DMA_BIDIRECTIONAL, "DMA_BIDIRECTIONAL" },	\

@@ -61,13 +61,13 @@
 #include <crypto/internal/engine.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/xts.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 /*
  * crypto alg

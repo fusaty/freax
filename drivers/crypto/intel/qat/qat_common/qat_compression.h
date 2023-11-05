@@ -3,8 +3,8 @@
 #ifndef _QAT_COMPRESSION_H_
 #define _QAT_COMPRESSION_H_
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include "adf_accel_devices.h"
 #include "qat_algs_send.h"
 

@@ -234,5 +234,5 @@ References
 ===========
 
 - https://lwn.net/Articles/728146/
-- https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/commit/?id=6f9d451ab1a33728adb72d7ff66a7b374d665176
-- https://elixir.bootlin.com/linux/latest/source/net/core/filter.c#L4106
+- https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/commit/?id=6f9d451ab1a33728adb72d7ff66a7b374d665176
+- https://elixir.bootlin.com/freax/latest/source/net/core/filter.c#L4106

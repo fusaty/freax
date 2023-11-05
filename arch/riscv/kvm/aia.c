@@ -7,13 +7,13 @@
  *	Anup Patel <apatel@ventanamicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kvm_host.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kvm_host.h>
+#include <freax/percpu.h>
+#include <freax/spinlock.h>
 #include <asm/hwcap.h>
 #include <asm/kvm_aia_imsic.h>
 

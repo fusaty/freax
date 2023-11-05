@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CPUSET_H
-#define _LINUX_CPUSET_H
+#ifndef _freax_CPUSET_H
+#define _freax_CPUSET_H
 /*
  *  cpuset interface
  *
@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/task.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/jump_label.h>
+#include <freax/sched.h>
+#include <freax/sched/topology.h>
+#include <freax/sched/task.h>
+#include <freax/cpumask.h>
+#include <freax/nodemask.h>
+#include <freax/mm.h>
+#include <freax/mmu_context.h>
+#include <freax/jump_label.h>
 
 #ifdef CONFIG_CPUSETS
 
@@ -293,4 +293,4 @@ static inline bool read_mems_allowed_retry(unsigned int seq)
 
 #endif /* !CONFIG_CPUSETS */
 
-#endif /* _LINUX_CPUSET_H */
+#endif /* _freax_CPUSET_H */

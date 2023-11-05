@@ -6,16 +6,16 @@
 //
 //  based on rtc-max8997.c
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/rtc.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/max77686-private.h>
+#include <freax/irqdomain.h>
+#include <freax/regmap.h>
 
 #define MAX77686_I2C_ADDR_RTC		(0x0C >> 1)
 #define MAX77620_I2C_ADDR_RTC		0x68

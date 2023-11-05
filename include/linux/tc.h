@@ -15,13 +15,13 @@
  *	General Public License.  See the file "COPYING" in the main
  *	directory of this archive for more details.
  */
-#ifndef _LINUX_TC_H
-#define _LINUX_TC_H
+#ifndef _freax_TC_H
+#define _freax_TC_H
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/device.h>
+#include <freax/ioport.h>
+#include <freax/types.h>
 
 /*
  * Offsets for the ROM header locations for TURBOchannel cards.
@@ -139,4 +139,4 @@ extern int tc_preadb(u8 *valp, void __iomem *addr);
 extern int tc_bus_get_info(struct tc_bus *tbus);
 extern void tc_device_get_irq(struct tc_dev *tdev);
 
-#endif /* _LINUX_TC_H */
+#endif /* _freax_TC_H */

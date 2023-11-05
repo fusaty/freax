@@ -8,15 +8,15 @@
 #ifndef SOUND_TASCAM_H_INCLUDED
 #define SOUND_TASCAM_H_INCLUDED
 
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
+#include <freax/device.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
+#include <freax/sched/signal.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

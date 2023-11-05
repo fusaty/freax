@@ -3,18 +3,18 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/ip.h>
+#include <freax/netfilter.h>
+#include <freax/module.h>
+#include <freax/rcupdate.h>
+#include <freax/skbuff.h>
 #include <net/netns/generic.h>
 #include <net/route.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/netfilter_ipv4.h>
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>

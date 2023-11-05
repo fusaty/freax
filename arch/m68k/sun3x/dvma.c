@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/vmalloc.h>
 
 #include <asm/sun3x.h>
 #include <asm/dvma.h>

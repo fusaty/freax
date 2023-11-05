@@ -5,14 +5,14 @@
 
 #include <rdma/ib_mad.h>
 #include <rdma/ib_user_verbs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/rculist.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/utsname.h>
+#include <freax/rculist.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
 #include <rdma/opa_addr.h>
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "hfi.h"
 #include "common.h"

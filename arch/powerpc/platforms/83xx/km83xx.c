@@ -7,25 +7,25 @@
  * Keymile 83xx platform specific routines.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/reboot.h>
+#include <freax/pci.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/initrd.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
-#include <linux/atomic.h>
-#include <linux/time.h>
-#include <linux/io.h>
+#include <freax/atomic.h>
+#include <freax/time.h>
+#include <freax/io.h>
 #include <asm/machdep.h>
 #include <asm/ipic.h>
 #include <asm/irq.h>

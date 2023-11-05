@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
-#include <linux/export.h>
+#include <freax/highmem.h>
+#include <freax/gfp.h>
+#include <freax/cpu.h>
+#include <freax/export.h>
 
 #include "rds.h"
 

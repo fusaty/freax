@@ -10,14 +10,14 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/watchdog.h>
+#include <freax/bcd.h>
+#include <freax/bitfield.h>
+#include <freax/i2c.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/watchdog.h>
 
 #define ABX8XX_REG_HTH		0x00
 #define ABX8XX_REG_SC		0x01

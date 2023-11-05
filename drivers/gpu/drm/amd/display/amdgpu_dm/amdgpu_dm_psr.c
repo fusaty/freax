@@ -116,7 +116,7 @@ bool amdgpu_dm_link_setup_psr(struct dc_stream_state *stream)
 	if (link->psr_settings.psr_version != DC_PSR_VERSION_UNSUPPORTED) {
 		mod_power_calc_psr_configs(&psr_config, link, stream);
 
-		/* linux DM specific updating for psr config fields */
+		/* freax DM specific updating for psr config fields */
 		psr_config.allow_smu_optimizations =
 			(amdgpu_dc_feature_mask & DC_PSR_ALLOW_SMU_OPT) &&
 			mod_power_only_edp(dc->current_state, stream);

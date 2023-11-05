@@ -25,12 +25,12 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 
 #include <drm/display/drm_dsc.h>
 #include <drm/drm_mipi_dsi.h>

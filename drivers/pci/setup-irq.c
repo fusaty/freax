@@ -8,11 +8,11 @@
  *	David Miller (davem@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/cache.h>
 #include "pci.h"
 
 void pci_assign_irq(struct pci_dev *dev)

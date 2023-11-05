@@ -10,12 +10,12 @@
 #include "libertas_tf.h"
 #include "if_usb.h"
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 #define INSANEDEBUG	0
 #define lbtf_deb_usb2(...) do { if (INSANEDEBUG) lbtf_deb_usbd(__VA_ARGS__); } while (0)

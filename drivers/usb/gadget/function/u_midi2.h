@@ -6,7 +6,7 @@
 #ifndef U_MIDI2_H
 #define U_MIDI2_H
 
-#include <linux/usb/composite.h>
+#include <freax/usb/composite.h>
 #include <sound/asound.h>
 
 struct f_midi2_opts;

@@ -1,11 +1,11 @@
 #ifndef IO_URING_TYPES_H
 #define IO_URING_TYPES_H
 
-#include <linux/blkdev.h>
-#include <linux/task_work.h>
-#include <linux/bitmap.h>
-#include <linux/llist.h>
-#include <uapi/linux/io_uring.h>
+#include <freax/blkdev.h>
+#include <freax/task_work.h>
+#include <freax/bitmap.h>
+#include <freax/llist.h>
+#include <uapi/freax/io_uring.h>
 
 struct io_wq_work_node {
 	struct io_wq_work_node *next;

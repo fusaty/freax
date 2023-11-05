@@ -3,7 +3,7 @@
  * Copyright (c) 2005 Richard Purdie
  */
 
-#include <linux/suspend.h>
+#include <freax/suspend.h>
 
 struct pxa_cpu_pm_fns {
 	int	save_count;

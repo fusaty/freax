@@ -12,12 +12,12 @@
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/genetlink.h>
+#include <freax/netlink.h>
+#include <freax/rtnetlink.h>
+#include <freax/genetlink.h>
 
 /* avoid multiple definition of netlink features */
-#define __LINUX_NETLINK_H
+#define __freax_NETLINK_H
 
 /**
  * Standard attribute types to specify validation policy

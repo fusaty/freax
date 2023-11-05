@@ -3,14 +3,14 @@
  * Copyright (C) 2008 Red Hat.  All rights reserved.
  */
 
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/math64.h>
-#include <linux/ratelimit.h>
-#include <linux/error-injection.h>
-#include <linux/sched/mm.h>
+#include <freax/pagemap.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/math64.h>
+#include <freax/ratelimit.h>
+#include <freax/error-injection.h>
+#include <freax/sched/mm.h>
 #include "ctree.h"
 #include "fs.h"
 #include "messages.h"

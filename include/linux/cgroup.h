@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CGROUP_H
-#define _LINUX_CGROUP_H
+#ifndef _freax_CGROUP_H
+#define _freax_CGROUP_H
 /*
  *  cgroup interface
  *
@@ -9,23 +9,23 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/rculist.h>
-#include <linux/cgroupstats.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/kernfs.h>
-#include <linux/jump_label.h>
-#include <linux/types.h>
-#include <linux/ns_common.h>
-#include <linux/nsproxy.h>
-#include <linux/user_namespace.h>
-#include <linux/refcount.h>
-#include <linux/kernel_stat.h>
+#include <freax/sched.h>
+#include <freax/cpumask.h>
+#include <freax/nodemask.h>
+#include <freax/rculist.h>
+#include <freax/cgroupstats.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/kernfs.h>
+#include <freax/jump_label.h>
+#include <freax/types.h>
+#include <freax/ns_common.h>
+#include <freax/nsproxy.h>
+#include <freax/user_namespace.h>
+#include <freax/refcount.h>
+#include <freax/kernel_stat.h>
 
-#include <linux/cgroup-defs.h>
+#include <freax/cgroup-defs.h>
 
 struct kernel_clone_args;
 
@@ -71,13 +71,13 @@ extern struct cgroup_root cgrp_dfl_root;
 extern struct css_set init_css_set;
 
 #define SUBSYS(_x) extern struct cgroup_subsys _x ## _cgrp_subsys;
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 #undef SUBSYS
 
 #define SUBSYS(_x)								\
 	extern struct static_key_true _x ## _cgrp_subsys_enabled_key;		\
 	extern struct static_key_true _x ## _cgrp_subsys_on_dfl_key;
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 #undef SUBSYS
 
 /**
@@ -317,7 +317,7 @@ void css_put_many(struct cgroup_subsys_state *css, unsigned int n);
 #else
 #define CGROUP_REF_FN_ATTRS	static inline
 #define CGROUP_REF_EXPORT(fn)
-#include <linux/cgroup_refcnt.h>
+#include <freax/cgroup_refcnt.h>
 #endif
 
 static inline u64 cgroup_id(const struct cgroup *cgrp)
@@ -853,4 +853,4 @@ static inline void cgroup_bpf_put(struct cgroup *cgrp) {}
 
 #endif /* CONFIG_CGROUP_BPF */
 
-#endif /* _LINUX_CGROUP_H */
+#endif /* _freax_CGROUP_H */

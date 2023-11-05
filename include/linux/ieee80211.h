@@ -12,13 +12,13 @@
  * Copyright (c) 2018 - 2023 Intel Corporation
  */
 
-#ifndef LINUX_IEEE80211_H
-#define LINUX_IEEE80211_H
+#ifndef freax_IEEE80211_H
+#define freax_IEEE80211_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/bitfield.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
+#include <freax/etherdevice.h>
+#include <freax/bitfield.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 
@@ -5256,4 +5256,4 @@ static inline bool ieee80211_tid_to_link_map_size_ok(const u8 *data, size_t len)
 				 _data + ieee80211_mle_common_size(_data),\
 				 _len - ieee80211_mle_common_size(_data))
 
-#endif /* LINUX_IEEE80211_H */
+#endif /* freax_IEEE80211_H */

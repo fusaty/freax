@@ -3,8 +3,8 @@
  * Copyright (c) 2014-2017 Mentor Graphics Inc.
  */
 
-#ifndef __LINUX_IMX_MEDIA_H__
-#define __LINUX_IMX_MEDIA_H__
+#ifndef __freax_IMX_MEDIA_H__
+#define __freax_IMX_MEDIA_H__
 
 /*
  * events from the subdevs

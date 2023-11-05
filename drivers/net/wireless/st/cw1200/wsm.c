@@ -7,11 +7,11 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/random.h>
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/random.h>
 
 #include "cw1200.h"
 #include "wsm.h"

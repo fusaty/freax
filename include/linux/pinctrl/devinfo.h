@@ -18,10 +18,10 @@ struct device;
 
 #ifdef CONFIG_PINCTRL
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /* The device core acts as a consumer toward pinctrl */
-#include <linux/pinctrl/consumer.h>
+#include <freax/pinctrl/consumer.h>
 
 struct pinctrl;
 

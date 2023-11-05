@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (c) 2008 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (c) 2008 Rodolfo Giometti <giometti@freax.it>
  * Copyright (c) 2008 Eurotech S.p.A. <info@eurtech.it>
  *
  * This code is *strongly* based on EHCI-HCD code by David Brownell since
  * the chip is a quasi-EHCI compatible.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/dmapool.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/moduleparam.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
 
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
 
 #define DRIVER_VERSION "0.0.50"
 
@@ -4327,5 +4327,5 @@ static struct platform_driver oxu_driver = {
 module_platform_driver(oxu_driver);
 
 MODULE_DESCRIPTION("Oxford OXU210HP HCD driver - ver. " DRIVER_VERSION);
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@freax.it>");
 MODULE_LICENSE("GPL");

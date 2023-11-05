@@ -5,21 +5,21 @@
 
 #define pr_fmt(fmt) "aspeed-kcs-bmc: " fmt
 
-#include <linux/atomic.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/atomic.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/regmap.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 
 #include "kcs_bmc_device.h"
 
@@ -679,6 +679,6 @@ static struct platform_driver ast_kcs_bmc_driver = {
 module_platform_driver(ast_kcs_bmc_driver);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@freax.intel.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_DESCRIPTION("Aspeed device interface to the KCS BMC device");

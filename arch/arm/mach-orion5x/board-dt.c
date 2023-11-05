@@ -7,13 +7,13 @@
  * Flattened Device Tree board initialization
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/cpu.h>
-#include <linux/mbus.h>
-#include <linux/clocksource.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/cpu.h>
+#include <freax/mbus.h>
+#include <freax/clocksource.h>
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

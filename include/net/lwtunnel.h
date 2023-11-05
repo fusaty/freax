@@ -2,10 +2,10 @@
 #ifndef __NET_LWTUNNEL_H
 #define __NET_LWTUNNEL_H 1
 
-#include <linux/lwtunnel.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/lwtunnel.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include <net/route.h>
 
 #define LWTUNNEL_HASH_BITS   7
@@ -17,7 +17,7 @@
 #define LWTUNNEL_STATE_XMIT_REDIRECT	BIT(2)
 
 /* LWTUNNEL_XMIT_CONTINUE should be distinguishable from dst_output return
- * values (NET_XMIT_xxx and NETDEV_TX_xxx in linux/netdevice.h) for safety.
+ * values (NET_XMIT_xxx and NETDEV_TX_xxx in freax/netdevice.h) for safety.
  */
 enum {
 	LWTUNNEL_XMIT_DONE,

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_CACHE_H
-#define __LINUX_CACHE_H
+#ifndef __freax_CACHE_H
+#define __freax_CACHE_H
 
-#include <uapi/linux/kernel.h>
+#include <uapi/freax/kernel.h>
 #include <asm/cache.h>
 
 #ifndef L1_CACHE_ALIGN
@@ -104,4 +104,4 @@ struct cacheline_padding {
 #define ARCH_DMA_MINALIGN __alignof__(unsigned long long)
 #endif
 
-#endif /* __LINUX_CACHE_H */
+#endif /* __freax_CACHE_H */

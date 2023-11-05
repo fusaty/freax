@@ -6,12 +6,12 @@
  *
  * 2009 (c) MontaVista Software, Inc.
  */
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/etherdevice.h>
-#include <linux/davinci_emac.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_data/davinci-cpufreq.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/etherdevice.h>
+#include <freax/davinci_emac.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_data/davinci-cpufreq.h>
 
 #include <asm/tlb.h>
 #include <asm/mach/map.h>

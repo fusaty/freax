@@ -2,7 +2,7 @@
 /*
  * ibmvfc.h -- driver for IBM Power Virtual Fibre Channel Adapter
  *
- * Written By: Brian King <brking@linux.vnet.ibm.com>, IBM Corporation
+ * Written By: Brian King <brking@freax.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) IBM Corporation, 2008
  */
@@ -10,8 +10,8 @@
 #ifndef _IBMVFC_H
 #define _IBMVFC_H
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include <scsi/viosrp.h>
 
 #define IBMVFC_NAME	"ibmvfc"
@@ -162,7 +162,7 @@ struct ibmvfc_npiv_logout_mad {
 
 struct ibmvfc_npiv_login {
 	__be32 ostype;
-#define IBMVFC_OS_LINUX	0x02
+#define IBMVFC_OS_freax	0x02
 	__be32 pad;
 	__be64 max_dma_len;
 	__be32 max_payload;

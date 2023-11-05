@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0+ WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0+ WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
- *  Video for Linux Two header file
+ *  Video for freax Two header file
  *
  *  Copyright (C) 1999-2012 the contributors
  *
@@ -47,24 +47,24 @@
  * All kernel-specific stuff were moved to media/v4l2-dev.h, so
  * no #if __KERNEL tests are allowed here
  *
- *	See https://linuxtv.org for more info
+ *	See https://freaxtv.org for more info
  *
  *	Author: Bill Dirks <bill@thedirks.org>
  *		Justin Schoeman
  *              Hans Verkuil <hverkuil@xs4all.nl>
  *		et al.
  */
-#ifndef _UAPI__LINUX_VIDEODEV2_H
-#define _UAPI__LINUX_VIDEODEV2_H
+#ifndef _UAPI__freax_VIDEODEV2_H
+#define _UAPI__freax_VIDEODEV2_H
 
 #ifndef __KERNEL__
 #include <sys/time.h>
 #endif
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/v4l2-common.h>
-#include <linux/v4l2-controls.h>
+#include <freax/compiler.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
+#include <freax/v4l2-common.h>
+#include <freax/v4l2-controls.h>
 
 /*
  * Common stuff for both V4L1 and V4L2
@@ -2732,4 +2732,4 @@ struct v4l2_create_buffers {
 #define V4L2_CAP_ASYNCIO 0x02000000
 #endif
 
-#endif /* _UAPI__LINUX_VIDEODEV2_H */
+#endif /* _UAPI__freax_VIDEODEV2_H */

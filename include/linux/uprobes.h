@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_UPROBES_H
-#define _LINUX_UPROBES_H
+#ifndef _freax_UPROBES_H
+#define _freax_UPROBES_H
 /*
  * User-space Probes (UProbes)
  *
@@ -11,10 +11,10 @@
  * Copyright (C) 2011-2012 Red Hat, Inc., Peter Zijlstra
  */
 
-#include <linux/errno.h>
-#include <linux/rbtree.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/errno.h>
+#include <freax/rbtree.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 struct vm_area_struct;
 struct mm_struct;
@@ -201,4 +201,4 @@ static inline void uprobe_clear_state(struct mm_struct *mm)
 {
 }
 #endif /* !CONFIG_UPROBES */
-#endif	/* _LINUX_UPROBES_H */
+#endif	/* _freax_UPROBES_H */

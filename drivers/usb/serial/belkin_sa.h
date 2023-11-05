@@ -5,7 +5,7 @@
  *  Copyright (C) 2000
  *      William Greathouse (wgreathouse@smva.com)
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the freax-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -27,8 +27,8 @@
  *
  */
 
-#ifndef __LINUX_USB_SERIAL_BSA_H
-#define __LINUX_USB_SERIAL_BSA_H
+#ifndef __freax_USB_SERIAL_BSA_H
+#define __freax_USB_SERIAL_BSA_H
 
 #define BELKIN_DOCKSTATION_VID	0x050d	/* Vendor Id */
 #define BELKIN_DOCKSTATION_PID	0x1203	/* Product Id */
@@ -116,5 +116,5 @@
 #define BELKIN_SA_MSR_RI		0x40	/* Current RI */
 #define BELKIN_SA_MSR_CD		0x80	/* Current CD */
 
-#endif /* __LINUX_USB_SERIAL_BSA_H */
+#endif /* __freax_USB_SERIAL_BSA_H */
 

@@ -2,8 +2,8 @@
 #ifndef _S390_TLBFLUSH_H
 #define _S390_TLBFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
 #include <asm/processor.h>
 
 /*

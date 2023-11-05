@@ -9,14 +9,14 @@
  *  Copyright (c) 2010-2011 Ericsson AB
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/dln2.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/dln2.h>
+#include <freax/acpi.h>
 
 #define DLN2_I2C_MODULE_ID		0x03
 #define DLN2_I2C_CMD(cmd)		DLN2_CMD(cmd, DLN2_I2C_MODULE_ID)

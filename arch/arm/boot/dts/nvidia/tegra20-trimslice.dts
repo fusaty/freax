@@ -403,7 +403,7 @@
 		key-power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(X, 6) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};

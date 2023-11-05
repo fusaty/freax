@@ -45,11 +45,11 @@
 #include <asm/ioctls.h>
 #include <net/sock.h>
 #include <net/tcp.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mutex.h>
-#include <linux/sctp.h>
-#include <linux/slab.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/mutex.h>
+#include <freax/sctp.h>
+#include <freax/slab.h>
 #include <net/sctp/sctp.h>
 #include <net/ipv6.h>
 

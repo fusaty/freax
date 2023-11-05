@@ -7,16 +7,16 @@
  * sebastien requiem <sebastien@requiem.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/ethtool.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/ethtool.h>
+#include <freax/i2c.h>
+#include <freax/gpio.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include "mv78xx0.h"

@@ -7,7 +7,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Analog Devices LTC2945 wide range i2c power monitor
 
 maintainers:
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <freax@roeck-us.net>
 
 description: |
   Analog Devices LTC2945 wide range i2c power monitor over I2C.

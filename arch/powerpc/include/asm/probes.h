@@ -7,7 +7,7 @@
  *
  * Copyright IBM Corporation, 2012
  */
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/disassemble.h>
 #include <asm/ppc-opcode.h>
 

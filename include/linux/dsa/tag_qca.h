@@ -3,7 +3,7 @@
 #ifndef __TAG_QCA_H
 #define __TAG_QCA_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dsa_switch;
 struct sk_buff;

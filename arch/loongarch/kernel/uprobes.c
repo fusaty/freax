@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/highmem.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/uprobes.h>
+#include <freax/highmem.h>
+#include <freax/ptrace.h>
+#include <freax/sched.h>
+#include <freax/uprobes.h>
 #include <asm/cacheflush.h>
 
 #define UPROBE_TRAP_NR	UINT_MAX

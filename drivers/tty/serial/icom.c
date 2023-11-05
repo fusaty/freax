@@ -8,39 +8,39 @@
   *
   * Based on code from serial.c
   */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/termios.h>
-#include <linux/fs.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/firmware.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/tty.h>
+#include <freax/termios.h>
+#include <freax/fs.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/kref.h>
+#include <freax/firmware.h>
+#include <freax/bitops.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*#define ICOM_TRACE		 enable port trace capabilities */
 

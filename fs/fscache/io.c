@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 #define FSCACHE_DEBUG_LEVEL OPERATION
-#include <linux/fscache-cache.h>
-#include <linux/uio.h>
-#include <linux/bvec.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
+#include <freax/fscache-cache.h>
+#include <freax/uio.h>
+#include <freax/bvec.h>
+#include <freax/slab.h>
+#include <freax/uio.h>
 #include "internal.h"
 
 /**

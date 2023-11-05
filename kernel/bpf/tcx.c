@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Isovalent */
 
-#include <linux/bpf.h>
-#include <linux/bpf_mprog.h>
-#include <linux/netdevice.h>
+#include <freax/bpf.h>
+#include <freax/bpf_mprog.h>
+#include <freax/netdevice.h>
 
 #include <net/tcx.h>
 

@@ -111,7 +111,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio3 5 0>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

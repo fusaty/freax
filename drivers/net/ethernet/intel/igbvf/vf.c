@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2009 - 2018 Intel Corporation. */
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 #include "vf.h"
 

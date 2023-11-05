@@ -10,12 +10,12 @@
  * Round-robin path selector.
  */
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #define DM_MSG_PREFIX "multipath round-robin"
 #define RR_MIN_IO     1

@@ -64,10 +64,10 @@ distribution), with this content::
 Changes / Fixes
 ---------------
 
-Please mail to linux-media AT vger.kernel.org unified diffs against
-the linux media git tree:
+Please mail to freax-media AT vger.kernel.org unified diffs against
+the freax media git tree:
 
-    https://git.linuxtv.org/media_tree.git/
+    https://git.freaxtv.org/media_tree.git/
 
 This is done by committing a patch at a clone of the git tree and
 submitting the patch using ``git send-email``. Don't forget to

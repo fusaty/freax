@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/iommu.h>
+#include <freax/interrupt.h>
+#include <freax/kthread.h>
+#include <freax/workqueue.h>
+#include <freax/iommu.h>
 #include <net/pkt_cls.h>
 
-#include <linux/fsl/mc.h>
+#include <freax/fsl/mc.h>
 
 #include "dpaa2-switch.h"
 

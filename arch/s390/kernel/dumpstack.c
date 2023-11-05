@@ -5,18 +5,18 @@
  *  Copyright IBM Corp. 1999, 2013
  */
 
-#include <linux/kallsyms.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/utsname.h>
-#include <linux/export.h>
-#include <linux/kdebug.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kallsyms.h>
+#include <freax/hardirq.h>
+#include <freax/kprobes.h>
+#include <freax/utsname.h>
+#include <freax/export.h>
+#include <freax/kdebug.h>
+#include <freax/ptrace.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
 #include <asm/processor.h>
 #include <asm/debug.h>
 #include <asm/dis.h>

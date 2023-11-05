@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_COMPILER_TYPES_H
-#define __LINUX_COMPILER_TYPES_H
+#ifndef __freax_COMPILER_TYPES_H
+#define __freax_COMPILER_TYPES_H
 
 /* Builtins */
 
@@ -33,11 +33,11 @@
 
 /* Compiler specific macros. */
 #ifdef __GNUC__
-#include <linux/compiler-gcc.h>
+#include <freax/compiler-gcc.h>
 #endif
 
 #ifndef asm_volatile_goto
 #define asm_volatile_goto(x...) asm goto(x)
 #endif
 
-#endif /* __LINUX_COMPILER_TYPES_H */
+#endif /* __freax_COMPILER_TYPES_H */

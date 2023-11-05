@@ -5,7 +5,7 @@
 #include "acl.h"
 #include "xattr.h"
 
-#include <linux/posix_acl.h>
+#include <freax/posix_acl.h>
 
 static const char * const acl_types[] = {
 	[ACL_USER_OBJ]	= "user_obj",
@@ -61,10 +61,10 @@ void bch2_acl_to_text(struct printbuf *out, const void *value, size_t size)
 
 #include "fs.h"
 
-#include <linux/fs.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 static inline size_t bch2_acl_size(unsigned nr_short, unsigned nr_long)
 {

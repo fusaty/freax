@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fbmon.c
+ * freax/drivers/video/fbmon.c
  *
  * Copyright (C) 2002 James Simmons <jsimmons@users.sf.net>
  *
@@ -26,10 +26,10 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/fb.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 #include <video/edid.h>
 #include <video/of_videomode.h>
 #include <video/videomode.h>

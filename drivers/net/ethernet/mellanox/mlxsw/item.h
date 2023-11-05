@@ -4,9 +4,9 @@
 #ifndef _MLXSW_ITEM_H
 #define _MLXSW_ITEM_H
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
 
 struct mlxsw_item {
 	unsigned short	offset;		/* bytes in container */

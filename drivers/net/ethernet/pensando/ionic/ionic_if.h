@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 OR Linux-OpenIB) OR BSD-2-Clause */
+/* SPDX-License-Identifier: (GPL-2.0 OR freax-OpenIB) OR BSD-2-Clause */
 /* Copyright (c) 2017-2020 Pensando Systems, Inc.  All rights reserved. */
 
 #ifndef _IONIC_IF_H_
@@ -226,7 +226,7 @@ struct ionic_dev_identify_comp {
 };
 
 enum ionic_os_type {
-	IONIC_OS_TYPE_LINUX   = 1,
+	IONIC_OS_TYPE_freax   = 1,
 	IONIC_OS_TYPE_WIN     = 2,
 	IONIC_OS_TYPE_DPDK    = 3,
 	IONIC_OS_TYPE_FREEBSD = 4,

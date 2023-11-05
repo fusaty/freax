@@ -9,13 +9,13 @@
 #define __CONNECTOR_H
 
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
 
 #include <net/sock.h>
-#include <uapi/linux/connector.h>
+#include <uapi/freax/connector.h>
 
 #define CN_CBQ_NAMELEN		32
 

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TRACE_RECURSION_H
-#define _LINUX_TRACE_RECURSION_H
+#ifndef _freax_TRACE_RECURSION_H
+#define _freax_TRACE_RECURSION_H
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
 
 #ifdef CONFIG_TRACING
 
@@ -225,4 +225,4 @@ static __always_inline void ftrace_test_recursion_unlock(int bit)
 }
 
 #endif /* CONFIG_TRACING */
-#endif /* _LINUX_TRACE_RECURSION_H */
+#endif /* _freax_TRACE_RECURSION_H */

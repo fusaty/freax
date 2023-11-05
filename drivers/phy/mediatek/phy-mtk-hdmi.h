@@ -6,14 +6,14 @@
 
 #ifndef _MTK_HDMI_PHY_H
 #define _MTK_HDMI_PHY_H
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 struct mtk_hdmi_phy;
 

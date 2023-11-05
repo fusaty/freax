@@ -9,7 +9,7 @@
 #ifndef WFX_HIF_TX_MIB_H
 #define WFX_HIF_TX_MIB_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sk_buff;
 struct wfx_vif;

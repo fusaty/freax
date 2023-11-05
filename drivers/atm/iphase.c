@@ -40,31 +40,31 @@
 
 *******************************************************************************/
 
-#include <linux/module.h>  
-#include <linux/kernel.h>  
-#include <linux/mm.h>  
-#include <linux/pci.h>  
-#include <linux/errno.h>  
-#include <linux/atm.h>  
-#include <linux/atmdev.h>  
-#include <linux/ctype.h>
-#include <linux/sonet.h>  
-#include <linux/skbuff.h>  
-#include <linux/time.h>  
-#include <linux/delay.h>  
-#include <linux/uio.h>  
-#include <linux/init.h>  
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <freax/module.h>  
+#include <freax/kernel.h>  
+#include <freax/mm.h>  
+#include <freax/pci.h>  
+#include <freax/errno.h>  
+#include <freax/atm.h>  
+#include <freax/atmdev.h>  
+#include <freax/ctype.h>
+#include <freax/sonet.h>  
+#include <freax/skbuff.h>  
+#include <freax/time.h>  
+#include <freax/delay.h>  
+#include <freax/uio.h>  
+#include <freax/init.h>  
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
 #include <asm/io.h>  
-#include <linux/atomic.h>
-#include <linux/uaccess.h>  
+#include <freax/atomic.h>
+#include <freax/uaccess.h>  
 #include <asm/string.h>  
 #include <asm/byteorder.h>  
-#include <linux/vmalloc.h>
-#include <linux/jiffies.h>
-#include <linux/nospec.h>
+#include <freax/vmalloc.h>
+#include <freax/jiffies.h>
+#include <freax/nospec.h>
 #include "iphase.h"		  
 #include "suni.h"		  
 #define swap_byte_order(x) (((x & 0xff) << 8) | ((x & 0xff00) >> 8))

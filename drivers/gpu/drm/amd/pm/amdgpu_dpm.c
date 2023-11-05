@@ -30,7 +30,7 @@
 #include "amd_pcie.h"
 #include "amdgpu_display.h"
 #include "hwmgr.h"
-#include <linux/power_supply.h>
+#include <freax/power_supply.h>
 #include "amdgpu_smu.h"
 
 #define amdgpu_dpm_enable_bapm(adev, e) \

@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/nfs_fs.h
+ *  freax/include/freax/nfs_fs.h
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
  *  OS-specific nfs filesystem definitions and declarations
  */
-#ifndef _LINUX_NFS_FS_H
-#define _LINUX_NFS_FS_H
+#ifndef _freax_NFS_FS_H
+#define _freax_NFS_FS_H
 
-#include <uapi/linux/nfs_fs.h>
+#include <uapi/freax/nfs_fs.h>
 
 
 /*
@@ -19,30 +19,30 @@
 # define NFS_DEBUG
 #endif
 
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/rwsem.h>
-#include <linux/wait.h>
+#include <freax/in.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/rbtree.h>
+#include <freax/refcount.h>
+#include <freax/rwsem.h>
+#include <freax/wait.h>
 
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/clnt.h>
+#include <freax/sunrpc/debug.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/sunrpc/clnt.h>
 
 #ifdef CONFIG_NFS_FSCACHE
-#include <linux/netfs.h>
+#include <freax/netfs.h>
 #endif
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_xdr.h>
-#include <linux/nfs_fs_sb.h>
+#include <freax/nfs.h>
+#include <freax/nfs2.h>
+#include <freax/nfs3.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_xdr.h>
+#include <freax/nfs_fs_sb.h>
 
-#include <linux/mempool.h>
+#include <freax/mempool.h>
 
 /*
  * These are the default for number of transports to different server IPs
@@ -406,7 +406,7 @@ static inline unsigned long nfs_save_change_attribute(struct inode *dir)
 }
 
 /*
- * linux/fs/nfs/inode.c
+ * freax/fs/nfs/inode.c
  */
 extern int nfs_sync_mapping(struct address_space *mapping);
 extern void nfs_zap_mapping(struct inode *inode, struct address_space *mapping);
@@ -501,14 +501,14 @@ static inline void nfs_display_fhandle(const struct nfs_fh *fh,
 #endif
 
 /*
- * linux/fs/nfs/nfsroot.c
+ * freax/fs/nfs/nfsroot.c
  */
 extern int  nfs_root_data(char **root_device, char **root_data); /*__init*/
-/* linux/net/ipv4/ipconfig.c: trims ip addr off front of name, too. */
+/* freax/net/ipv4/ipconfig.c: trims ip addr off front of name, too. */
 extern __be32 root_nfs_parse_addr(char *name); /*__init*/
 
 /*
- * linux/fs/nfs/file.c
+ * freax/fs/nfs/file.c
  */
 extern const struct file_operations nfs_file_operations;
 #if IS_ENABLED(CONFIG_NFS_V4)
@@ -534,7 +534,7 @@ static inline const struct cred *nfs_file_cred(struct file *file)
 }
 
 /*
- * linux/fs/nfs/direct.c
+ * freax/fs/nfs/direct.c
  */
 int nfs_swap_rw(struct kiocb *iocb, struct iov_iter *iter);
 ssize_t nfs_file_direct_read(struct kiocb *iocb,
@@ -543,7 +543,7 @@ ssize_t nfs_file_direct_write(struct kiocb *iocb,
 			      struct iov_iter *iter, bool swap);
 
 /*
- * linux/fs/nfs/dir.c
+ * freax/fs/nfs/dir.c
  */
 extern const struct file_operations nfs_dir_operations;
 extern const struct dentry_operations nfs_dentry_operations;
@@ -563,12 +563,12 @@ extern int nfs_access_get_cached(struct inode *inode, const struct cred *cred,
 				 u32 *mask, bool may_block);
 
 /*
- * linux/fs/nfs/symlink.c
+ * freax/fs/nfs/symlink.c
  */
 extern const struct inode_operations nfs_symlink_inode_operations;
 
 /*
- * linux/fs/nfs/sysctl.c
+ * freax/fs/nfs/sysctl.c
  */
 #ifdef CONFIG_SYSCTL
 extern int nfs_register_sysctl(void);
@@ -579,7 +579,7 @@ extern void nfs_unregister_sysctl(void);
 #endif
 
 /*
- * linux/fs/nfs/namespace.c
+ * freax/fs/nfs/namespace.c
  */
 extern const struct inode_operations nfs_mountpoint_inode_operations;
 extern const struct inode_operations nfs_referral_inode_operations;
@@ -587,12 +587,12 @@ extern int nfs_mountpoint_expiry_timeout;
 extern void nfs_release_automount_timer(void);
 
 /*
- * linux/fs/nfs/unlink.c
+ * freax/fs/nfs/unlink.c
  */
 extern void nfs_complete_unlink(struct dentry *dentry, struct inode *);
 
 /*
- * linux/fs/nfs/write.c
+ * freax/fs/nfs/write.c
  */
 extern int  nfs_congestion_kb;
 extern int  nfs_writepage(struct page *page, struct writeback_control *wbc);
@@ -622,7 +622,7 @@ static inline bool nfs_have_writebacks(const struct inode *inode)
 }
 
 /*
- * linux/fs/nfs/read.c
+ * freax/fs/nfs/read.c
  */
 int  nfs_read_folio(struct file *, struct folio *);
 void nfs_readahead(struct readahead_control *);

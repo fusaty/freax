@@ -27,17 +27,17 @@
  * for a real GPIO controller.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/acpi.h>
+#include <freax/bitmap.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 
 #define DRV_NAME			"INT0002 Virtual GPIO"
 

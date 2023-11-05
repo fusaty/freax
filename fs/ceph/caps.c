@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/iversion.h>
-#include <linux/filelock.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
+#include <freax/writeback.h>
+#include <freax/iversion.h>
+#include <freax/filelock.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
 #include "crypto.h"
-#include <linux/ceph/decode.h>
-#include <linux/ceph/messenger.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/messenger.h>
 
 /*
  * Capability management

@@ -27,8 +27,8 @@
 // 4. bpf program should decode IR and report keycode
 // 5. We can read keycode from same /dev/lirc device
 
-#include <linux/bpf.h>
-#include <linux/input.h>
+#include <freax/bpf.h>
+#include <freax/input.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -9,12 +9,12 @@
 #ifndef __DRIVERS_IIO_DAC_AD5592R_BASE_H__
 #define __DRIVERS_IIO_DAC_AD5592R_BASE_H__
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/mutex.h>
-#include <linux/gpio/driver.h>
+#include <freax/types.h>
+#include <freax/cache.h>
+#include <freax/mutex.h>
+#include <freax/gpio/driver.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 struct device;
 struct ad5592r_state;

@@ -8,10 +8,10 @@
 
 #include <stdio.h>
 #include <gelf.h>
-#include <linux/list.h>
-#include <linux/hashtable.h>
-#include <linux/rbtree.h>
-#include <linux/jhash.h>
+#include <freax/list.h>
+#include <freax/hashtable.h>
+#include <freax/rbtree.h>
+#include <freax/jhash.h>
 #include <arch/elf.h>
 
 #ifdef LIBELF_USE_DEPRECATED
@@ -144,7 +144,7 @@ struct reloc *find_reloc_by_dest_range(const struct elf *elf, struct section *se
 struct symbol *find_func_containing(struct section *sec, unsigned long offset);
 
 /*
- * Try to see if it's a whole archive (vmlinux.o or module).
+ * Try to see if it's a whole archive (vmfreax.o or module).
  *
  * Note this will miss the case where a module only has one source file.
  */

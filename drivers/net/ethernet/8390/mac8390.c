@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-1.0+
 /* mac8390.c: New driver for 8390-based Nubus (or Nubus-alike)
-   Ethernet cards on Linux */
+   Ethernet cards on freax */
 /* Based on the former daynaport.c driver, by Alan Cox.  Some code
    taken from or inspired by skeleton.c by Donald Becker, acenic.c by
    Jes Sorensen, and ne2k-pci.c by Donald Becker and Paul Gortmaker. */
@@ -17,23 +17,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/nubus.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/nubus.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
 
 #include <asm/dma.h>
 #include <asm/hwtest.h>

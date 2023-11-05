@@ -7,22 +7,22 @@
  * See Documentation/security/keys/core.rst for information on keys/keyrings.
  */
 
-#ifndef _LINUX_KEY_H
-#define _LINUX_KEY_H
+#ifndef _freax_KEY_H
+#define _freax_KEY_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
-#include <linux/sysctl.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
-#include <linux/assoc_array.h>
-#include <linux/refcount.h>
-#include <linux/time64.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/rcupdate.h>
+#include <freax/sysctl.h>
+#include <freax/rwsem.h>
+#include <freax/atomic.h>
+#include <freax/assoc_array.h>
+#include <freax/refcount.h>
+#include <freax/time64.h>
 
 #ifdef __KERNEL__
-#include <linux/uidgid.h>
+#include <freax/uidgid.h>
 
 /* key handle serial number */
 typedef int32_t key_serial_t;
@@ -519,4 +519,4 @@ extern void key_init(void);
 
 #endif /* CONFIG_KEYS */
 #endif /* __KERNEL__ */
-#endif /* _LINUX_KEY_H */
+#endif /* _freax_KEY_H */

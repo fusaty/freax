@@ -381,7 +381,7 @@
 		button {
 			label = "PB_USER";
 			gpios = <&pioE 29 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			freax,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -395,7 +395,7 @@
 		led-d2 {
 			label = "d2";
 			gpios = <&pioE 23 GPIO_ACTIVE_LOW>;	/* PE23, conflicts with A23, CTS2 */
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-d3 {

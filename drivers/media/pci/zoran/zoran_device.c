@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Zoran zr36057/zr36067 PCI controller driver, for the
- * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Linux
+ * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, freax
  * Media Labs LML33/LML33R10.
  *
  * This part handles device access (PCI/I2C/codec/...)
@@ -9,23 +9,23 @@
  * Copyright (C) 2000 Serguei Miridonov <mirsev@cicese.mx>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/videodev2.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-common.h>
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/wait.h>
+#include <freax/dma-mapping.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "videocodec.h"
 #include "zoran.h"

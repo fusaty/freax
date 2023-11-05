@@ -5,11 +5,11 @@
 #
 # . scripts/parseargs.sh
 #
-# Include into other Linux kernel tools/memory-model scripts.
+# Include into other freax kernel tools/memory-model scripts.
 #
 # Copyright IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.ibm.com>
+# Author: Paul E. McKenney <paulmck@freax.ibm.com>
 
 T=/tmp/parseargs.sh.$$
 mkdir $T
@@ -26,7 +26,7 @@ initparam () {
 }
 
 initparam LKMM_DESTDIR "."
-initparam LKMM_HERD_OPTIONS "-conf linux-kernel.cfg"
+initparam LKMM_HERD_OPTIONS "-conf freax-kernel.cfg"
 initparam LKMM_HW_MAP_FILE ""
 initparam LKMM_JOBS `getconf _NPROCESSORS_ONLN`
 initparam LKMM_PROCS "3"
@@ -37,7 +37,7 @@ scriptname=$0
 usagehelp () {
 	echo "Usage $scriptname [ arguments ]"
 	echo "      --destdir path (place for .litmus.out, default by .litmus)"
-	echo "      --herdopts -conf linux-kernel.cfg ..."
+	echo "      --herdopts -conf freax-kernel.cfg ..."
 	echo "      --hw AArch64"
 	echo "      --jobs N (number of jobs, default one per CPU)"
 	echo "      --procs N (litmus tests with at most this many processes)"

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/log2.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/task.h>
+#include <freax/slab.h>
 
 #include "six.h"
 

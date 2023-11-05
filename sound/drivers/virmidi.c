@@ -27,11 +27,11 @@
  * - Run application using a midi device (eg. /dev/snd/midiC1D0)
  */
 
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/seq_kernel.h>
 #include <sound/seq_virmidi.h>

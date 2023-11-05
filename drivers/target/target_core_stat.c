@@ -7,19 +7,19 @@
  *
  * (c) Copyright 2006-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/utsname.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/configfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/utsname.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

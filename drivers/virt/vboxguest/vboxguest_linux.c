@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * vboxguest linux pci driver, char-dev and input-device code,
+ * vboxguest freax pci driver, char-dev and input-device code,
  *
  * Copyright (C) 2006-2016 Oracle Corporation
  */
 
-#include <linux/cred.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/vbox_utils.h>
+#include <freax/cred.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/vbox_utils.h>
 #include "vboxguest_core.h"
 
 /** The device name. */
@@ -461,7 +461,7 @@ EXPORT_SYMBOL(vbg_put_gdev);
  *
  * @gdev:		The device extension.
  */
-void vbg_linux_mouse_event(struct vbg_dev *gdev)
+void vbg_freax_mouse_event(struct vbg_dev *gdev)
 {
 	int rc;
 
@@ -496,5 +496,5 @@ static struct pci_driver vbg_pci_driver = {
 module_pci_driver(vbg_pci_driver);
 
 MODULE_AUTHOR("Oracle Corporation");
-MODULE_DESCRIPTION("Oracle VM VirtualBox Guest Additions for Linux Module");
+MODULE_DESCRIPTION("Oracle VM VirtualBox Guest Additions for freax Module");
 MODULE_LICENSE("GPL");

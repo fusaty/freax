@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_PTDUMP_H
-#define _LINUX_PTDUMP_H
+#ifndef _freax_PTDUMP_H
+#define _freax_PTDUMP_H
 
-#include <linux/mm_types.h>
+#include <freax/mm_types.h>
 
 struct ptdump_range {
 	unsigned long start;
@@ -20,4 +20,4 @@ struct ptdump_state {
 
 void ptdump_walk_pgd(struct ptdump_state *st, struct mm_struct *mm, pgd_t *pgd);
 
-#endif /* _LINUX_PTDUMP_H */
+#endif /* _freax_PTDUMP_H */

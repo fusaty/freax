@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* pm_wakeirq.h - Device wakeirq helper functions */
 
-#ifndef _LINUX_PM_WAKEIRQ_H
-#define _LINUX_PM_WAKEIRQ_H
+#ifndef _freax_PM_WAKEIRQ_H
+#define _freax_PM_WAKEIRQ_H
 
 #ifdef CONFIG_PM
 
@@ -33,4 +33,4 @@ static inline void dev_pm_clear_wake_irq(struct device *dev)
 }
 
 #endif	/* CONFIG_PM */
-#endif	/* _LINUX_PM_WAKEIRQ_H */
+#endif	/* _freax_PM_WAKEIRQ_H */

@@ -8,18 +8,18 @@
  *
  * You could find a link for the datasheet in Documentation/arch/arm/sunxi.rst
  */
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/crypto.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <crypto/scatterwalk.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/reset.h>
+#include <freax/scatterlist.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/reset.h>
 
 #include "sun4i-ss.h"
 

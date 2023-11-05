@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2022 Broadcom Corporation
  */
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 #include <core.h>
 #include <bus.h>
 #include <fwvid.h>

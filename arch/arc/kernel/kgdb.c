@@ -5,9 +5,9 @@
  * Copyright (C) 2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/kgdb.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kgdb.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 #include <asm/disasm.h>
 #include <asm/cacheflush.h>
 

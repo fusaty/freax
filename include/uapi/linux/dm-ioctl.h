@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright (C) 2001 - 2003 Sistina Software (UK) Limited.
  * Copyright (C) 2004 - 2009 Red Hat, Inc. All rights reserved.
@@ -6,10 +6,10 @@
  * This file is released under the LGPL.
  */
 
-#ifndef _LINUX_DM_IOCTL_V4_H
-#define _LINUX_DM_IOCTL_V4_H
+#ifndef _freax_DM_IOCTL_V4_H
+#define _freax_DM_IOCTL_V4_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define DM_DIR "mapper"		/* Slashes not supported */
 #define DM_CONTROL_NODE "control"
@@ -382,4 +382,4 @@ enum {
  */
 #define DM_IMA_MEASUREMENT_FLAG	(1 << 19) /* In */
 
-#endif				/* _LINUX_DM_IOCTL_H */
+#endif				/* _freax_DM_IOCTL_H */

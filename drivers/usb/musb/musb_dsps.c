@@ -6,7 +6,7 @@
  *
  * Based on the am35x "glue layer" code.
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for freax.
  *
  * musb_dsps.c will be a common file for all the TI DSPS platforms
  * such as dm64x, dm36x, dm35x, da8x, am35x and ti81x.
@@ -14,22 +14,22 @@
  * da8xx.c would be merged to this file after testing.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/sizes.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/usb/usb_phy_generic.h>
+#include <freax/platform_data/usb-omap.h>
+#include <freax/sizes.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/usb/of.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/usb/of.h>
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "musb_core.h"
 

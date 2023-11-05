@@ -8,19 +8,19 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/prefetch.h>
-#include <linux/filter.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/vmalloc.h>
+#include <freax/rtnetlink.h>
+#include <freax/prefetch.h>
+#include <freax/filter.h>
 
 #include <asm/sync_bitops.h>
 #include <asm/mshyperv.h>

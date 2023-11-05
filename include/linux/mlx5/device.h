@@ -33,10 +33,10 @@
 #ifndef MLX5_DEVICE_H
 #define MLX5_DEVICE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <rdma/ib_verbs.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/bitfield.h>
+#include <freax/mlx5/mlx5_ifc.h>
+#include <freax/bitfield.h>
 
 #if defined(__LITTLE_ENDIAN)
 #define MLX5_SET_HOST_ENDIANNESS	0

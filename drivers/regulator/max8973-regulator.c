@@ -9,26 +9,26 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8973-regulator.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_gpio.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/max8973-regulator.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of_gpio.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
 
 /* Register definitions */
 #define MAX8973_VOUT					0x0

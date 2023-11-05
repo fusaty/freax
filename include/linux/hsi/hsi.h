@@ -7,15 +7,15 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#ifndef __LINUX_HSI_H__
-#define __LINUX_HSI_H__
+#ifndef __freax_HSI_H__
+#define __freax_HSI_H__
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/scatterlist.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
 
 /* HSI message ttype */
 #define HSI_MSG_READ	0
@@ -425,4 +425,4 @@ static inline int hsi_stop_tx(struct hsi_client *cl)
 		return -EACCES;
 	return hsi_get_port(cl)->stop_tx(cl);
 }
-#endif /* __LINUX_HSI_H__ */
+#endif /* __freax_HSI_H__ */

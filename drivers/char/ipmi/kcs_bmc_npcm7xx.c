@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt) "nuvoton-kcs-bmc: " fmt
 
-#include <linux/atomic.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/atomic.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "kcs_bmc_device.h"
 
@@ -249,5 +249,5 @@ module_platform_driver(npcm_kcs_bmc_driver);
 
 MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Avi Fishman <avifishman70@gmail.com>");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@freax.intel.com>");
 MODULE_DESCRIPTION("NPCM7xx device interface to the KCS BMC device");

@@ -5,22 +5,22 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/acpi_viot.h>
-#include <linux/iommu.h>
-#include <linux/signal.h>
-#include <linux/kthread.h>
-#include <linux/dmi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/pgtable.h>
-#include <linux/crc32.h>
-#include <linux/dma-direct.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/acpi_iort.h>
+#include <freax/acpi_viot.h>
+#include <freax/iommu.h>
+#include <freax/signal.h>
+#include <freax/kthread.h>
+#include <freax/dmi.h>
+#include <freax/dma-map-ops.h>
+#include <freax/platform_data/x86/apple.h>
+#include <freax/pgtable.h>
+#include <freax/crc32.h>
+#include <freax/dma-direct.h>
 
 #include "internal.h"
 #include "sleep.h"
@@ -1225,7 +1225,7 @@ acpi_backlight_cap_match(acpi_handle handle, u32 level, void *context,
 
 /* Returns true if the ACPI object is a video device which can be
  * handled by video.ko.
- * The device will get a Linux specific CID added in scan.c to
+ * The device will get a freax specific CID added in scan.c to
  * identify the device as an ACPI graphics device
  * Be aware that the graphics device may not be physically present
  * Use acpi_video_get_capabilities() to detect general ACPI video

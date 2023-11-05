@@ -8,7 +8,7 @@
 /dts-v1/;
 
 #include "imx7d.dtsi"
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 
 / {
 	model = "reMarkable 2.0";
@@ -269,42 +269,42 @@
 
 		button@0 {
 			reg = <0>;
-			linux,keycodes = <KEY_HOMEPAGE>;
+			freax,keycodes = <KEY_HOMEPAGE>;
 		};
 
 		button@1 {
 			reg = <1>;
-			linux,keycodes = <KEY_MENU>;
+			freax,keycodes = <KEY_MENU>;
 		};
 
 		button@2 {
 			reg = <2>;
-			linux,keycodes = <KEY_BACK>;
+			freax,keycodes = <KEY_BACK>;
 		};
 
 		button@3 {
 			reg = <3>;
-			linux,keycodes = <KEY_SEARCH>;
+			freax,keycodes = <KEY_SEARCH>;
 		};
 
 		button@4 {
 			reg = <4>;
-			linux,keycodes = <KEY_VOLUMEDOWN>;
+			freax,keycodes = <KEY_VOLUMEDOWN>;
 		};
 
 		button@5 {
 			reg = <5>;
-			linux,keycodes = <KEY_VOLUMEUP>;
+			freax,keycodes = <KEY_VOLUMEUP>;
 		};
 
 		button@6 {
 			reg = <6>;
-			linux,keycodes = <KEY_CAMERA>;
+			freax,keycodes = <KEY_CAMERA>;
 		};
 
 		button@7 {
 			reg = <7>;
-			linux,keycodes = <KEY_POWER>;
+			freax,keycodes = <KEY_POWER>;
 		};
 	};
 };

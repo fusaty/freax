@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2004 Texas Instruments
  *
- * This driver is based on the Linux io_ti driver, which is
+ * This driver is based on the freax io_ti driver, which is
  *   Copyright (C) 2000-2002 Inside Out Networks
  *   Copyright (C) 2001-2002 Greg Kroah-Hartman
  *
@@ -13,22 +13,22 @@
  * Peter Berger <pberger@brimson.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/ioctl.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/ioctl.h>
+#include <freax/serial.h>
+#include <freax/kfifo.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
 
 /* Configuration ids */
 #define TI_BOOT_CONFIG			1

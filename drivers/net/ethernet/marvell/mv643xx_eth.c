@@ -10,7 +10,7 @@
  * Copyright (C) 2003 PMC-Sierra, Inc.,
  *	written by Manish Lachwani
  *
- * Copyright (C) 2003 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2003 Ralf Baechle <ralf@freax-mips.org>
  *
  * Copyright (C) 2004-2006 MontaVista Software, Inc.
  *			   Dale Farnsworth <dale@farnsworth.org>
@@ -26,32 +26,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/in.h>
+#include <freax/ip.h>
 #include <net/tso.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/phy.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/phy.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
 
 static char mv643xx_eth_driver_name[] = "mv643xx_eth";
 static char mv643xx_eth_driver_version[] = "1.4";

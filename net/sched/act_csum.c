@@ -5,23 +5,23 @@
  * Copyright (c) 2010 Gregoire Baron <baronchon@n7mm.org>
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
 
-#include <linux/netlink.h>
+#include <freax/netlink.h>
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
+#include <freax/rtnetlink.h>
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/igmp.h>
+#include <freax/icmpv6.h>
+#include <freax/igmp.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/ip6_checksum.h>
@@ -30,7 +30,7 @@
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_csum.h>
+#include <freax/tc_act/tc_csum.h>
 #include <net/tc_act/tc_csum.h>
 #include <net/tc_wrapper.h>
 

@@ -9,10 +9,10 @@
  * preserved in its entirety in all copies and derived works.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/apm-emulation.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/power_supply.h>
+#include <freax/apm-emulation.h>
 
 
 #define PSY_PROP(psy, prop, val) (power_supply_get_property(psy, \

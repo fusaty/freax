@@ -26,13 +26,13 @@
  */
 
 /*****************************************************************************/
-#ifndef _LINUX_USBDEVICE_FS_H
-#define _LINUX_USBDEVICE_FS_H
+#ifndef _freax_USBDEVICE_FS_H
+#define _freax_USBDEVICE_FS_H
 
-#include <uapi/linux/usbdevice_fs.h>
+#include <uapi/freax/usbdevice_fs.h>
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 
 struct usbdevfs_ctrltransfer32 {
         u8 bRequestType;
@@ -78,4 +78,4 @@ struct usbdevfs_ioctl32 {
 	compat_caddr_t data;
 };
 #endif
-#endif /* _LINUX_USBDEVICE_FS_H */
+#endif /* _freax_USBDEVICE_FS_H */

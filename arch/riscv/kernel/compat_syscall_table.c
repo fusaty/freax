@@ -2,8 +2,8 @@
 
 #define __SYSCALL_COMPAT
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
+#include <freax/compat.h>
+#include <freax/syscalls.h>
 #include <asm-generic/mman-common.h>
 #include <asm-generic/syscalls.h>
 #include <asm/syscall.h>

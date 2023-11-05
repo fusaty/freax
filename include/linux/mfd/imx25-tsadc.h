@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INCLUDE_MFD_IMX25_TSADC_H_
-#define _LINUX_INCLUDE_MFD_IMX25_TSADC_H_
+#ifndef _freax_INCLUDE_MFD_IMX25_TSADC_H_
+#define _freax_INCLUDE_MFD_IMX25_TSADC_H_
 
 struct regmap;
 struct clk;
@@ -138,4 +138,4 @@ struct mx25_tsadc {
 #define MX25_ADCQ_CFG_REFN_MASK		GENMASK(3, 2)
 #define MX25_ADCQ_CFG_PENIACK		(1 << 1)
 
-#endif  /* _LINUX_INCLUDE_MFD_IMX25_TSADC_H_ */
+#endif  /* _freax_INCLUDE_MFD_IMX25_TSADC_H_ */

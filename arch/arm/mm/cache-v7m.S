@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/cache-v7m.S
+ *  freax/arch/arm/mm/cache-v7m.S
  *
- *  Based on linux/arch/arm/mm/cache-v7.S
+ *  Based on freax/arch/arm/mm/cache-v7.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *  Copyright (C) 2005 ARM Ltd.
  *
  *  This is the "shell" of the ARMv7M processor support.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/unwind.h>

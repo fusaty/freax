@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/export.h>
-#include <linux/fb.h>
-#include <linux/mutex.h>
+#include <freax/export.h>
+#include <freax/fb.h>
+#include <freax/mutex.h>
 
 #if IS_ENABLED(CONFIG_FB_BACKLIGHT)
 /*

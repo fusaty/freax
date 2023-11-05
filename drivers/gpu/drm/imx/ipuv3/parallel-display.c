@@ -5,12 +5,12 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/component.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <freax/component.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
 
 #include <video/of_display_timing.h>
 

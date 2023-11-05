@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_RESOURCE_H
-#define _UAPI_LINUX_RESOURCE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_RESOURCE_H
+#define _UAPI_freax_RESOURCE_H
 
-#include <linux/time.h>
-#include <linux/types.h>
+#include <freax/time.h>
+#include <freax/types.h>
 
 /*
- * Resource control/accounting header file for linux
+ * Resource control/accounting header file for freax
  */
 
 /*
@@ -80,9 +80,9 @@ struct rlimit64 {
 
 /*
  * Due to binary compatibility, the actual resource numbers
- * may be different for different linux versions..
+ * may be different for different freax versions..
  */
 #include <asm/resource.h>
 
 
-#endif /* _UAPI_LINUX_RESOURCE_H */
+#endif /* _UAPI_freax_RESOURCE_H */

@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PTRACE_H
-#define _LINUX_PTRACE_H
+#ifndef _freax_PTRACE_H
+#define _freax_PTRACE_H
 
-#include <linux/compiler.h>		/* For unlikely.  */
-#include <linux/sched.h>		/* For struct task_struct.  */
-#include <linux/sched/signal.h>		/* For send_sig(), same_thread_group(), etc. */
-#include <linux/err.h>			/* for IS_ERR_VALUE */
-#include <linux/bug.h>			/* For BUG_ON.  */
-#include <linux/pid_namespace.h>	/* For task_active_pid_ns.  */
-#include <uapi/linux/ptrace.h>
-#include <linux/seccomp.h>
+#include <freax/compiler.h>		/* For unlikely.  */
+#include <freax/sched.h>		/* For struct task_struct.  */
+#include <freax/sched/signal.h>		/* For send_sig(), same_thread_group(), etc. */
+#include <freax/err.h>			/* for IS_ERR_VALUE */
+#include <freax/bug.h>			/* For BUG_ON.  */
+#include <freax/pid_namespace.h>	/* For task_active_pid_ns.  */
+#include <uapi/freax/ptrace.h>
+#include <freax/seccomp.h>
 
 /* Add sp to seccomp_data, as seccomp is user API, we don't want to modify it */
 struct syscall_info {

@@ -7,7 +7,7 @@
 #include <asm/cfi.h>
 #include <asm/insn.h>
 #include <asm/insn-eval.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 /*
  * Returns the target address and the expected type when regs->ip points

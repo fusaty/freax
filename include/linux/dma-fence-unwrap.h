@@ -5,8 +5,8 @@
  *	Christian König <christian.koenig@amd.com>
  */
 
-#ifndef __LINUX_DMA_FENCE_UNWRAP_H
-#define __LINUX_DMA_FENCE_UNWRAP_H
+#ifndef __freax_DMA_FENCE_UNWRAP_H
+#define __freax_DMA_FENCE_UNWRAP_H
 
 struct dma_fence;
 

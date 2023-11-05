@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * coretemp.c - Linux kernel module for hardware monitoring
+ * coretemp.c - freax kernel module for hardware monitoring
  *
  * Copyright (C) 2007 Rudolf Marek <r.marek@assembler.cz>
  *
@@ -9,25 +9,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/hwmon.h>
+#include <freax/sysfs.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/platform_device.h>
+#include <freax/cpu.h>
+#include <freax/smp.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
 #include <asm/msr.h>
 #include <asm/processor.h>
 #include <asm/cpu_device_id.h>
-#include <linux/sched/isolation.h>
+#include <freax/sched/isolation.h>
 
 #define DRVNAME	"coretemp"
 

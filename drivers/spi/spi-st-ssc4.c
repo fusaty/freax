@@ -9,18 +9,18 @@
  *  SPI master mode controller driver, used in STMicroelectronics devices.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
 
 /* SSC registers */
 #define SSC_BRG				0x000

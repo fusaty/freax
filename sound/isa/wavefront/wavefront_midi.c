@@ -44,10 +44,10 @@
  *  
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/wait.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 

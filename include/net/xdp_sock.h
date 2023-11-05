@@ -3,15 +3,15 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#ifndef _LINUX_XDP_SOCK_H
-#define _LINUX_XDP_SOCK_H
+#ifndef _freax_XDP_SOCK_H
+#define _freax_XDP_SOCK_H
 
-#include <linux/bpf.h>
-#include <linux/workqueue.h>
-#include <linux/if_xdp.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <freax/bpf.h>
+#include <freax/workqueue.h>
+#include <freax/if_xdp.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
 #include <net/sock.h>
 
 #define XDP_UMEM_SG_FLAG (1 << 1)
@@ -125,4 +125,4 @@ static inline bool xsk_map_check_flush(void)
 }
 #endif
 
-#endif /* _LINUX_XDP_SOCK_H */
+#endif /* _freax_XDP_SOCK_H */

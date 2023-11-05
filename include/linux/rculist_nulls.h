@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RCULIST_NULLS_H
-#define _LINUX_RCULIST_NULLS_H
+#ifndef _freax_RCULIST_NULLS_H
+#define _freax_RCULIST_NULLS_H
 
 #ifdef __KERNEL__
 
 /*
  * RCU-protected list version
  */
-#include <linux/list_nulls.h>
-#include <linux/rcupdate.h>
+#include <freax/list_nulls.h>
+#include <freax/rcupdate.h>
 
 /**
  * hlist_nulls_del_init_rcu - deletes entry from hash list with re-initialization

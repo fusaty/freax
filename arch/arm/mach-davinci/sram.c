@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2009 David Brownell
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/genalloc.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/genalloc.h>
 
 #include "common.h"
 #include "sram.h"

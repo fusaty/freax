@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2023 Isovalent */
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/netfilter_netdev.h>
-#include <linux/bpf_mprog.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/filter.h>
+#include <freax/netfilter_netdev.h>
+#include <freax/bpf_mprog.h>
 
 #include <net/netkit.h>
 #include <net/dst.h>

@@ -8,16 +8,16 @@
  * Steffen Klassert <steffen.klassert@secunet.com>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <net/dst.h>
 #include <net/gso.h>
 #include <net/xfrm.h>
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 #ifdef CONFIG_XFRM_OFFLOAD
 static void __xfrm_transport_prep(struct xfrm_state *x, struct sk_buff *skb,
@@ -186,7 +186,7 @@ struct sk_buff *validate_xmit_xfrm(struct sk_buff *skb, netdev_features_t featur
 			if (err == -EINPROGRESS)
 				return NULL;
 
-			XFRM_INC_STATS(xs_net(x), LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+			XFRM_INC_STATS(xs_net(x), freax_MIB_XFRMOUTSTATEPROTOERROR);
 			kfree_skb(skb);
 			return NULL;
 		}
@@ -209,7 +209,7 @@ struct sk_buff *validate_xmit_xfrm(struct sk_buff *skb, netdev_features_t featur
 		if (!err) {
 			skb2->next = nskb;
 		} else if (err != -EINPROGRESS) {
-			XFRM_INC_STATS(xs_net(x), LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+			XFRM_INC_STATS(xs_net(x), freax_MIB_XFRMOUTSTATEPROTOERROR);
 			skb2->next = nskb;
 			kfree_skb_list(skb2);
 			return NULL;

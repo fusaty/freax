@@ -12,18 +12,18 @@
  * Copyright IBM Corp. 2012,2015
  *
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "bpf_jit"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/init.h>
-#include <linux/bpf.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/filter.h>
+#include <freax/init.h>
+#include <freax/bpf.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
 #include <asm/cacheflush.h>
 #include <asm/extable.h>
 #include <asm/dis.h>

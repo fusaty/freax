@@ -6,7 +6,7 @@
 #ifndef __INTEL_DSI_VBT_H__
 #define __INTEL_DSI_VBT_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum mipi_seq;
 struct intel_dsi;

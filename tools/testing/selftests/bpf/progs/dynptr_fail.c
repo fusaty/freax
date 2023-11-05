@@ -4,9 +4,9 @@
 #include <errno.h>
 #include <string.h>
 #include <stdbool.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 #include "bpf_misc.h"
 #include "bpf_kfuncs.h"
 

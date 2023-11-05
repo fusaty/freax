@@ -6,9 +6,9 @@
 #ifndef MEMORY_TEGRA_MC_H
 #define MEMORY_TEGRA_MC_H
 
-#include <linux/bits.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/io.h>
+#include <freax/types.h>
 
 #include <soc/tegra/mc.h>
 

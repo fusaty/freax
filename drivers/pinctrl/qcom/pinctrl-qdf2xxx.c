@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The freax Foundation. All rights reserved.
  *
  * GPIO and pin control functions on this SOC are handled by the "TLMM"
  * device.  The driver which controls this device is pinctrl-msm.c.  Each
@@ -15,10 +15,10 @@
  * pinctrl-msm.c into another driver.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/acpi.h>
 
 #include "pinctrl-msm.h"
 

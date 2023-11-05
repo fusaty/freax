@@ -5,11 +5,11 @@
  * Copyright (C) 2017 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <freax/mfd/lp87565.h>
 
 enum LP87565_regulator_id {
 	/* BUCK's */

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PWM_H
-#define __LINUX_PWM_H
+#ifndef __freax_PWM_H
+#define __freax_PWM_H
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
 
 struct pwm_chip;
 
@@ -592,4 +592,4 @@ static inline void pwmchip_sysfs_unexport(struct pwm_chip *chip)
 }
 #endif /* CONFIG_PWM_SYSFS */
 
-#endif /* __LINUX_PWM_H */
+#endif /* __freax_PWM_H */

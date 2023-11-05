@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_USER_RETURN_NOTIFIER_H
-#define _LINUX_USER_RETURN_NOTIFIER_H
+#ifndef _freax_USER_RETURN_NOTIFIER_H
+#define _freax_USER_RETURN_NOTIFIER_H
 
 #ifdef CONFIG_USER_RETURN_NOTIFIER
 
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <freax/list.h>
+#include <freax/sched.h>
 
 struct user_return_notifier {
 	void (*on_user_return)(struct user_return_notifier *urn);

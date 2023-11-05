@@ -29,16 +29,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/log2.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ptrace.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/log2.h>
+#include <freax/etherdevice.h>
+#include <freax/mii.h>
 #include "8390.h"
 
 #include <pcmcia/cistpl.h>
@@ -48,7 +48,7 @@
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define PCNET_CMD	0x00
 #define PCNET_DATAPORT	0x10	/* NatSemi-defined port window offset. */

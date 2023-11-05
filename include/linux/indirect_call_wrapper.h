@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INDIRECT_CALL_WRAPPER_H
-#define _LINUX_INDIRECT_CALL_WRAPPER_H
+#ifndef _freax_INDIRECT_CALL_WRAPPER_H
+#define _freax_INDIRECT_CALL_WRAPPER_H
 
 #ifdef CONFIG_RETPOLINE
 

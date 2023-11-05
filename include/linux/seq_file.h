@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SEQ_FILE_H
-#define _LINUX_SEQ_FILE_H
+#ifndef _freax_SEQ_FILE_H
+#define _freax_SEQ_FILE_H
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
-#include <linux/bug.h>
-#include <linux/mutex.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/fs.h>
-#include <linux/cred.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/string_helpers.h>
+#include <freax/bug.h>
+#include <freax/mutex.h>
+#include <freax/cpumask.h>
+#include <freax/nodemask.h>
+#include <freax/fs.h>
+#include <freax/cred.h>
 
 struct seq_operations;
 

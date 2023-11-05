@@ -9,16 +9,16 @@
  * Author: Scott Wood <scottwood@freescale.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/fsl_devices.h>
+#include <freax/of_platform.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/cpm2.h>
 #include <asm/udbg.h>
 #include <asm/machdep.h>
-#include <linux/time.h>
+#include <freax/time.h>
 
 #include <sysdev/fsl_soc.h>
 #include <sysdev/cpm2_pic.h>

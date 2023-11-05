@@ -11,18 +11,18 @@
 
 #define pr_fmt(fmt) "AF_XDP: %s: " fmt, __func__
 
-#include <linux/if_xdp.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/vmalloc.h>
+#include <freax/if_xdp.h>
+#include <freax/init.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/socket.h>
+#include <freax/file.h>
+#include <freax/uaccess.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/rculist.h>
+#include <freax/vmalloc.h>
 #include <net/xdp_sock_drv.h>
 #include <net/busy_poll.h>
 #include <net/netdev_rx_queue.h>

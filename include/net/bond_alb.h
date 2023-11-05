@@ -6,7 +6,7 @@
 #ifndef _NET_BOND_ALB_H
 #define _NET_BOND_ALB_H
 
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 
 struct bonding;
 struct slave;

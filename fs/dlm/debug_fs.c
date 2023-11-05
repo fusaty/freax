@@ -8,12 +8,12 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <freax/pagemap.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
 
 #include "dlm_internal.h"
 #include "midcomms.h"

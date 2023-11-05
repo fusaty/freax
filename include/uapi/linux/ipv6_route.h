@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- *	Linux INET6 implementation 
+ *	freax INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -11,11 +11,11 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_IPV6_ROUTE_H
-#define _UAPI_LINUX_IPV6_ROUTE_H
+#ifndef _UAPI_freax_IPV6_ROUTE_H
+#define _UAPI_freax_IPV6_ROUTE_H
 
-#include <linux/types.h>
-#include <linux/in6.h>			/* For struct in6_addr. */
+#include <freax/types.h>
+#include <freax/in6.h>			/* For struct in6_addr. */
 
 #define RTF_DEFAULT	0x00010000	/* default - learned via ND	*/
 #define RTF_ALLONLINK	0x00020000	/* (deprecated and will be removed)
@@ -61,4 +61,4 @@ struct in6_rtmsg {
 #define IP6_RT_PRIO_USER	1024
 #define IP6_RT_PRIO_ADDRCONF	256
 
-#endif /* _UAPI_LINUX_IPV6_ROUTE_H */
+#endif /* _UAPI_freax_IPV6_ROUTE_H */

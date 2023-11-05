@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_WATCH_QUEUE_H
-#define _UAPI_LINUX_WATCH_QUEUE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_WATCH_QUEUE_H
+#define _UAPI_freax_WATCH_QUEUE_H
 
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/ioctl.h>
 
 #define O_NOTIFICATION_PIPE	O_EXCL	/* Parameter to pipe2() selecting notification pipe */
 
@@ -101,4 +101,4 @@ struct key_notification {
 	__u32	aux;		/* Per-type auxiliary data */
 };
 
-#endif /* _UAPI_LINUX_WATCH_QUEUE_H */
+#endif /* _UAPI_freax_WATCH_QUEUE_H */

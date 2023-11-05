@@ -8,14 +8,14 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
 
 #include "mt76.h"
 #include "sdio.h"

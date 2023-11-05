@@ -15,27 +15,27 @@
 
 #undef VERBOSE
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/dmapool.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/mm.h>
+#include <freax/moduleparam.h>
+#include <freax/device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/fsl_devices.h>
+#include <freax/dmapool.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -2010,7 +2010,7 @@ static int fsl_udc_stop(struct usb_gadget *g)
 -------------------------------------------------------------------------*/
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 
 static const char proc_filename[] = "driver/fsl_usb2_udc";
 

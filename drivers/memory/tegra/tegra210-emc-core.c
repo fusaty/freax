@@ -3,18 +3,18 @@
  * Copyright (c) 2015-2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk/tegra.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/mc.h>
 

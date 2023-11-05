@@ -30,14 +30,14 @@
  *
  */
 
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
+#include <freax/dma-map-ops.h> /* for dma_default_coherent */
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/syscore_ops.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>
 

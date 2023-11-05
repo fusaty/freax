@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mmc/sd.h
+ *  include/freax/mmc/sd.h
  *
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
  */
 
-#ifndef LINUX_MMC_SD_H
-#define LINUX_MMC_SD_H
+#ifndef freax_MMC_SD_H
+#define freax_MMC_SD_H
 
 /* SD commands                           type  argument     response */
   /* class 0 */
@@ -97,4 +97,4 @@
 #define SD_ERASE_ARG			0x00000000
 #define SD_DISCARD_ARG			0x00000001
 
-#endif /* LINUX_MMC_SD_H */
+#endif /* freax_MMC_SD_H */

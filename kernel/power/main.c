@@ -6,17 +6,17 @@
  * Copyright (c) 2003 Open Source Development Lab
  */
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/pm-trace.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/export.h>
+#include <freax/kobject.h>
+#include <freax/string.h>
+#include <freax/pm-trace.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/suspend.h>
+#include <freax/syscalls.h>
+#include <freax/pm_runtime.h>
 
 #include "power.h"
 

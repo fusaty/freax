@@ -123,7 +123,7 @@
 **   o disable IRdT - call disable_irq(vector[line]->processor_irq)
 */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <asm/pdc.h>
 #include <asm/pdcpat.h>

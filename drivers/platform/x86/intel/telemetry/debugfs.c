@@ -13,13 +13,13 @@
  * /sys/kernel/debug/telemetry/ioss_race_verbosity: Write and Change Tracing
  *				Verbosity via firmware
  */
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/mfd/intel_pmc_bxt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/mfd/intel_pmc_bxt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/seq_file.h>
+#include <freax/suspend.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

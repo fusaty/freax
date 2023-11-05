@@ -3,10 +3,10 @@
  * Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/pm.h>
-#include <linux/time.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/pm.h>
+#include <freax/time.h>
 
 #include <asm/reboot.h>
 #include <asm/mach-ar7/ar7.h>

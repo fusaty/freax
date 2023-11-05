@@ -12,25 +12,25 @@
  *      Changed the compression method from stem compression to "table lookup"
  *      compression (see scripts/kallsyms.c for a more complete description)
  */
-#include <linux/kallsyms.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/kdb.h>
-#include <linux/err.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>	/* for cond_resched */
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/filter.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bsearch.h>
-#include <linux/btf_ids.h>
+#include <freax/kallsyms.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/kdb.h>
+#include <freax/err.h>
+#include <freax/proc_fs.h>
+#include <freax/sched.h>	/* for cond_resched */
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/filter.h>
+#include <freax/ftrace.h>
+#include <freax/kprobes.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/bsearch.h>
+#include <freax/btf_ids.h>
 
 #include "kallsyms_internal.h"
 
@@ -279,7 +279,7 @@ unsigned long kallsyms_lookup_name(const char *name)
 }
 
 /*
- * Iterate over all symbols in vmlinux.  For symbols from modules use
+ * Iterate over all symbols in vmfreax.  For symbols from modules use
  * module_kallsyms_on_each_symbol instead.
  */
 int kallsyms_on_each_symbol(int (*fn)(void *, const char *, unsigned long),

@@ -10,7 +10,7 @@
  * General Public License for more details.
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "net_shared.h"
 #include <bpf/bpf_helpers.h>
 #include <string.h>

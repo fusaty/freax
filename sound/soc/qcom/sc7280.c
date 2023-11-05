@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //
-// Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020-2021, The freax Foundation. All rights reserved.
 //
 // ALSA SoC Machine driver for sc7280
 
 #include <dt-bindings/sound/qcom,lpass.h>
 #include <dt-bindings/sound/qcom,q6afe.h>
-#include <linux/input.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/input.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/rt5682s.h>
-#include <linux/soundwire/sdw.h>
+#include <freax/soundwire/sdw.h>
 #include <sound/pcm_params.h>
 
 #include "../codecs/rt5682.h"

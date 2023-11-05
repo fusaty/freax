@@ -6,14 +6,14 @@
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 
-#include <linux/ipmi.h>
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <freax/ipmi.h>
+#include <freax/module.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/err.h>
 
 #define REFRESH_INTERVAL	(2 * HZ)
 #define DRVNAME			"ibmpex"

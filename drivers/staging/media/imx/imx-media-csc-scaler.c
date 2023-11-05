@@ -5,11 +5,11 @@
  * Copyright (C) 2011 Pengutronix, Sascha Hauer
  * Copyright (C) 2018 Pengutronix, Philipp Zabel
  */
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include <video/imx-ipu-v3.h>
 #include <video/imx-ipu-image-convert.h>
 

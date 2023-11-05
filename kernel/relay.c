@@ -12,16 +12,16 @@
  *
  * This file is released under the GPL.
  */
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/relay.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/splice.h>
+#include <freax/errno.h>
+#include <freax/stddef.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/relay.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/cpu.h>
+#include <freax/splice.h>
 
 /* list of open channels, for cpu hotplug */
 static DEFINE_MUTEX(relay_channels_mutex);

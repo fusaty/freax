@@ -157,7 +157,7 @@ class Thread:
 		string_id = self._intern_string(frame_str)
 
 		symbol_name_to_category = KERNEL_CATEGORY_INDEX if frame_str.find('kallsyms') != -1 \
-		or frame_str.find('/vmlinux') != -1 \
+		or frame_str.find('/vmfreax') != -1 \
 		or frame_str.endswith('.ko)') \
 		else USER_CATEGORY_INDEX
 

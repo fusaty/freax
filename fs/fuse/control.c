@@ -8,9 +8,9 @@
 
 #include "fuse_i.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs_context.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/fs_context.h>
 
 #define FUSE_CTL_SUPER_MAGIC 0x65735543
 

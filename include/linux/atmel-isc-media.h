@@ -5,8 +5,8 @@
  * Author: Eugen Hristev <eugen.hristev@microchip.com>
  */
 
-#ifndef __LINUX_ATMEL_ISC_MEDIA_H__
-#define __LINUX_ATMEL_ISC_MEDIA_H__
+#ifndef __freax_ATMEL_ISC_MEDIA_H__
+#define __freax_ATMEL_ISC_MEDIA_H__
 
 /*
  * There are 8 controls available:

@@ -22,7 +22,7 @@ static inline void __raw_writel(unsigned int value, unsigned int ptr)
 
 /*
  * Some bootloaders don't turn off DMA from the ethernet MAC before
- * jumping to linux, which means that we might end up with bits of RX
+ * jumping to freax, which means that we might end up with bits of RX
  * status and packet data scribbled over the uncompressed kernel image.
  * Work around this by resetting the ethernet MAC before we uncompress.
  */

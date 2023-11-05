@@ -5,8 +5,8 @@
  * Copyright (C) 2009 Antonio Ospite <ospite@studenti.unina.it>
  */
 
-#ifndef __LINUX_LEDS_REGULATOR_H
-#define __LINUX_LEDS_REGULATOR_H
+#ifndef __freax_LEDS_REGULATOR_H
+#define __freax_LEDS_REGULATOR_H
 
 /*
  * Use "vled" as supply id when declaring the regulator consumer:
@@ -32,11 +32,11 @@
  * };
  */
 
-#include <linux/leds.h>
+#include <freax/leds.h>
 
 struct led_regulator_platform_data {
 	char *name;                     /* LED name as expected by LED class */
 	enum led_brightness brightness; /* initial brightness value */
 };
 
-#endif /* __LINUX_LEDS_REGULATOR_H */
+#endif /* __freax_LEDS_REGULATOR_H */

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* linux/drivers/i2c/busses/i2c-s3c2410.c
+/* freax/drivers/i2c/busses/i2c-s3c2410.c
  *
  * Copyright (C) 2004,2005,2009 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -7,31 +7,31 @@
  * S3C2410 I2C Controller
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include <asm/irq.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <freax/platform_data/i2c-s3c2410.h>
 
 /* see s3c2410x user guide, v1.1, section 9 (p447) for more info */
 

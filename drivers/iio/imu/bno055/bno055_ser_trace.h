@@ -3,7 +3,7 @@
 #if !defined(__BNO055_SERDEV_TRACE_H__) || defined(TRACE_HEADER_MULTI_READ)
 #define __BNO055_SERDEV_TRACE_H__
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM bno055_ser

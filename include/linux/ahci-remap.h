@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_AHCI_REMAP_H
-#define _LINUX_AHCI_REMAP_H
+#ifndef _freax_AHCI_REMAP_H
+#define _freax_AHCI_REMAP_H
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #define AHCI_VSCAP		0xa4
 #define AHCI_REMAP_CAP		0x800
@@ -26,4 +26,4 @@ static inline unsigned int ahci_remap_base(int i)
 	return AHCI_REMAP_N_OFFSET + i * AHCI_REMAP_N_SIZE;
 }
 
-#endif /* _LINUX_AHCI_REMAP_H */
+#endif /* _freax_AHCI_REMAP_H */

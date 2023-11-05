@@ -4,35 +4,35 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/cpu.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <freax/acpi.h>
+#include <freax/acpi_iort.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/cpu.h>
+#include <freax/crash_dump.h>
+#include <freax/delay.h>
+#include <freax/efi.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/irqdomain.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/syscore_ops.h>
 
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic-v3.h>
-#include <linux/irqchip/arm-gic-v4.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/arm-gic-v3.h>
+#include <freax/irqchip/arm-gic-v4.h>
 
 #include <asm/cputype.h>
 #include <asm/exception.h>

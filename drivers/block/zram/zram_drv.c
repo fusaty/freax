@@ -15,24 +15,24 @@
 #define KMSG_COMPONENT "zram"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/cpuhotplug.h>
-#include <linux/part_stat.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/bio.h>
+#include <freax/bitops.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/device.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
+#include <freax/backing-dev.h>
+#include <freax/string.h>
+#include <freax/vmalloc.h>
+#include <freax/err.h>
+#include <freax/idr.h>
+#include <freax/sysfs.h>
+#include <freax/debugfs.h>
+#include <freax/cpuhotplug.h>
+#include <freax/part_stat.h>
 
 #include "zram_drv.h"
 

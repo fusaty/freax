@@ -9,7 +9,7 @@
 #ifndef __SOC_FSL_QMC_H__
 #define __SOC_FSL_QMC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device_node;
 struct device;

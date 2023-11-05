@@ -22,14 +22,14 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
-#include <linux/power_supply.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/slab.h>
+#include <freax/xarray.h>
+#include <freax/power_supply.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
 #include <acpi/video.h>
 #include <acpi/actbl.h>
 

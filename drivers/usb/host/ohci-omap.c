@@ -15,24 +15,24 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-omap1.h>
-#include <linux/soc/ti/omap1-usb.h>
-#include <linux/soc/ti/omap1-mux.h>
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/usb/otg.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/usb-omap1.h>
+#include <freax/soc/ti/omap1-usb.h>
+#include <freax/soc/ti/omap1-mux.h>
+#include <freax/soc/ti/omap1-soc.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/signal.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #include "ohci.h"
 

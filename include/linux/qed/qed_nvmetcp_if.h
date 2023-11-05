@@ -3,10 +3,10 @@
 
 #ifndef _QED_NVMETCP_IF_H
 #define _QED_NVMETCP_IF_H
-#include <linux/types.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/storage_common.h>
-#include <linux/qed/nvmetcp_common.h>
+#include <freax/types.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/storage_common.h>
+#include <freax/qed/nvmetcp_common.h>
 
 #define QED_NVMETCP_MAX_IO_SIZE	0x800000
 #define QED_NVMETCP_CMN_HDR_SIZE (sizeof(struct nvme_tcp_hdr))

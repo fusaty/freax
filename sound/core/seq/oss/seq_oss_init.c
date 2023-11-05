@@ -14,11 +14,11 @@
 #include "seq_oss_readq.h"
 #include "seq_oss_timer.h"
 #include "seq_oss_event.h"
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 /*
  * common variables

@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex freax Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -20,14 +20,14 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/interrupt.h>
-#include <linux/mempool.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/bsg-lib.h>
-#include <linux/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/mempool.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/bsg-lib.h>
+#include <freax/vmalloc.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -3091,7 +3091,7 @@ lpfc_bsg_diag_loopback_run(struct bsg_job *job)
 		/*
 		 * Allocate memory for ioctl data. If buffer is bigger than 64k,
 		 * then we allocate 64k and re-use that buffer over and over to
-		 * xfer the whole block. This is because Linux kernel has a
+		 * xfer the whole block. This is because freax kernel has a
 		 * problem allocating more than 120k of kernel space memory. Saw
 		 * problem with GET_FCPTARGETMAPPING...
 		 */

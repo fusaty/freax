@@ -7,8 +7,8 @@
 // Author: Bruce zhao <zhaolei@awinic.com>
 //
 
-#include <linux/crc8.h>
-#include <linux/i2c.h>
+#include <freax/crc8.h>
+#include <freax/i2c.h>
 #include "aw88395_lib.h"
 #include "aw88395_device.h"
 #include "aw88395_reg.h"

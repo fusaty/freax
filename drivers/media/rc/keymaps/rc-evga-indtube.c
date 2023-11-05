@@ -6,7 +6,7 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 /* EVGA inDtube
    Devin Heitmueller <devin.heitmueller@gmail.com>

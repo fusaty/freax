@@ -80,7 +80,7 @@ properties:
     description: |
       If present, sets maximum type of kmsg dump reasons to store.
       This can be set to INT_MAX to store all kmsg dumps.
-      See include/linux/kmsg_dump.h KMSG_DUMP_* for other kmsg dump reason values.
+      See include/freax/kmsg_dump.h KMSG_DUMP_* for other kmsg dump reason values.
       Setting this to 0 (KMSG_DUMP_UNDEF), means the reason filtering will be
       controlled by the printk.always_kmsg_dump boot param.
       If unset, it will be 2 (KMSG_DUMP_OOPS), otherwise 5 (KMSG_DUMP_MAX).
@@ -90,7 +90,7 @@ properties:
     default: 0
     description: |
       If present, pass ramoops behavioral flags
-      (see include/linux/pstore_ram.h RAMOOPS_FLAG_* for flag values).
+      (see include/freax/pstore_ram.h RAMOOPS_FLAG_* for flag values).
 
   no-dump-oops:
     deprecated: true

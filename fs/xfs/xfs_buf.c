@@ -4,8 +4,8 @@
  * All Rights Reserved.
  */
 #include "xfs.h"
-#include <linux/backing-dev.h>
-#include <linux/dax.h>
+#include <freax/backing-dev.h>
+#include <freax/dax.h>
 
 #include "xfs_shared.h"
 #include "xfs_format.h"

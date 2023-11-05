@@ -9,11 +9,11 @@
  *	Copyright (c) 2004 Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>
@@ -248,7 +248,7 @@ static int radio_tea5777_update_read_reg(struct radio_tea5777 *tea, int wait)
 }
 
 /*
- * Linux Video interface
+ * freax Video interface
  */
 
 static int vidioc_querycap(struct file *file, void  *priv,

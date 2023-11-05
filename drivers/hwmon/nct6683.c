@@ -3,10 +3,10 @@
  * nct6683 - Driver for the hardware monitoring functionality of
  *	     Nuvoton NCT6683D/NCT6686D/NCT6687D eSIO
  *
- * Copyright (C) 2013  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2013  Guenter Roeck <freax@roeck-us.net>
  *
  * Derived from nct6775 driver
- * Copyright (C) 2012, 2013  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2012, 2013  Guenter Roeck <freax@roeck-us.net>
  *
  * Supports the following chips:
  *
@@ -21,18 +21,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 enum kinds { nct6683, nct6686, nct6687 };
 
@@ -1503,7 +1503,7 @@ static void __exit sensors_nct6683_exit(void)
 	platform_driver_unregister(&nct6683_driver);
 }
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <freax@roeck-us.net>");
 MODULE_DESCRIPTION("NCT6683D driver");
 MODULE_LICENSE("GPL");
 

@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/numa.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/numa.h>
 #include <asm/uv/uv_hub.h>
 #include <asm/uv/bios.h>
 #include <asm/uv/uv_irq.h>

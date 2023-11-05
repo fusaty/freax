@@ -8,16 +8,16 @@
  * Copyright (C) 2013-2015 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/regmap.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/regmap.h>
 
 /* PMIC device registers */
 #define REG_OFFSET_MASK		GENMASK(7, 0)
@@ -141,7 +141,7 @@ static const struct dmi_system_id cht_wc_model_dmi_ids[] = {
 		.driver_data = (void *)(long)INTEL_CHT_WC_GPD_WIN_POCKET,
 		/*
 		 * This DMI match may not seem unique, but it is. In the 67000+
-		 * DMI decode dumps from linux-hardware.org only 116 have
+		 * DMI decode dumps from freax-hardware.org only 116 have
 		 * board_vendor set to "AMI Corporation" and of those 116 only
 		 * the GPD win's and pocket's board_name is "Default string".
 		 */

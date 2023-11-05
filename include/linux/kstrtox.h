@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KSTRTOX_H
-#define _LINUX_KSTRTOX_H
+#ifndef _freax_KSTRTOX_H
+#define _freax_KSTRTOX_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /* Internal, do not use. */
 int __must_check _kstrtoul(const char *s, unsigned int base, unsigned long *res);
@@ -147,4 +147,4 @@ extern long simple_strtol(const char *,char **,unsigned int);
 extern unsigned long long simple_strtoull(const char *,char **,unsigned int);
 extern long long simple_strtoll(const char *,char **,unsigned int);
 
-#endif	/* _LINUX_KSTRTOX_H */
+#endif	/* _freax_KSTRTOX_H */

@@ -7,21 +7,21 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/tcp.h>
-#include <linux/bvec.h>
-#include <linux/highmem.h>
-#include <linux/uaccess.h>
-#include <linux/processor.h>
-#include <linux/mempool.h>
-#include <linux/sched/signal.h>
-#include <linux/task_io_accounting_ops.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/gfp.h>
+#include <freax/wait.h>
+#include <freax/net.h>
+#include <freax/delay.h>
+#include <freax/freezer.h>
+#include <freax/tcp.h>
+#include <freax/bvec.h>
+#include <freax/highmem.h>
+#include <freax/uaccess.h>
+#include <freax/processor.h>
+#include <freax/mempool.h>
+#include <freax/sched/signal.h>
+#include <freax/task_io_accounting_ops.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

@@ -5,7 +5,7 @@
  * Copyright (C) 2019-2020 Marvell International Ltd.
  */
 
-/* File aq_main.c: Main file for aQuantia Linux driver. */
+/* File aq_main.c: Main file for aQuantia freax driver. */
 
 #include "aq_main.h"
 #include "aq_nic.h"
@@ -16,13 +16,13 @@
 #include "aq_hw_utils.h"
 #include "aq_vec.h"
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <freax/netdevice.h>
+#include <freax/module.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
-#include <linux/filter.h>
+#include <freax/filter.h>
 
 MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR(AQ_CFG_DRV_AUTHOR);

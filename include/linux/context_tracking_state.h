@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CONTEXT_TRACKING_STATE_H
-#define _LINUX_CONTEXT_TRACKING_STATE_H
+#ifndef _freax_CONTEXT_TRACKING_STATE_H
+#define _freax_CONTEXT_TRACKING_STATE_H
 
-#include <linux/percpu.h>
-#include <linux/static_key.h>
-#include <linux/context_tracking_irq.h>
+#include <freax/percpu.h>
+#include <freax/static_key.h>
+#include <freax/context_tracking_irq.h>
 
 /* Offset to allow distinguishing irq vs. task-based idle entry/exit. */
 #define DYNTICK_IRQ_NONIDLE	((LONG_MAX / 2) + 1)

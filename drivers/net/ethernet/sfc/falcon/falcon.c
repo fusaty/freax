@@ -5,15 +5,15 @@
  * Copyright 2006-2013 Solarflare Communications Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/i2c.h>
-#include <linux/mii.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/i2c.h>
+#include <freax/mii.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
 
 #include "net_driver.h"
 #include "bitfield.h"

@@ -3,28 +3,28 @@
 /*
  *    PARISC specific syscalls
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-freax.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-freax.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-freax.org>
  *    Copyright (C) 1999-2020 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/elf.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/shm.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/compat.h>
-#include <linux/elf-randomize.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/linkage.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/shm.h>
+#include <freax/syscalls.h>
+#include <freax/utsname.h>
+#include <freax/personality.h>
+#include <freax/random.h>
+#include <freax/compat.h>
+#include <freax/elf-randomize.h>
 
 /*
  * Construct an artificial page offset for the mapping based on the physical
@@ -292,13 +292,13 @@ asmlinkage long parisc_personality(unsigned long personality)
 {
 	long err;
 
-	if (personality(current->personality) == PER_LINUX32
-	    && personality(personality) == PER_LINUX)
-		personality = (personality & ~PER_MASK) | PER_LINUX32;
+	if (personality(current->personality) == PER_freax32
+	    && personality(personality) == PER_freax)
+		personality = (personality & ~PER_MASK) | PER_freax32;
 
 	err = sys_personality(personality);
-	if (personality(err) == PER_LINUX32)
-		err = (err & ~PER_MASK) | PER_LINUX;
+	if (personality(err) == PER_freax32)
+		err = (err & ~PER_MASK) | PER_freax;
 
 	return err;
 }

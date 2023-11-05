@@ -44,7 +44,7 @@
 		bmc_alive {
 			label = "bmc_alive";
 			gpios = <&gpio ASPEED_GPIO(B, 0) GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 			led-pattern = <1000 1000>;
 		};
 

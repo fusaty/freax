@@ -3,8 +3,8 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/string_helpers.h>
+#include <freax/debugfs.h>
+#include <freax/string_helpers.h>
 
 #include <drm/drm_print.h>
 

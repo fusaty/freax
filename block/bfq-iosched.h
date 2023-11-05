@@ -6,8 +6,8 @@
 #ifndef _BFQ_H
 #define _BFQ_H
 
-#include <linux/blktrace_api.h>
-#include <linux/hrtimer.h>
+#include <freax/blktrace_api.h>
+#include <freax/hrtimer.h>
 
 #include "blk-cgroup-rwstat.h"
 

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/handshake.yaml */
 /* YNL-GEN uapi header */
 
-#ifndef _UAPI_LINUX_HANDSHAKE_H
-#define _UAPI_LINUX_HANDSHAKE_H
+#ifndef _UAPI_freax_HANDSHAKE_H
+#define _UAPI_freax_HANDSHAKE_H
 
 #define HANDSHAKE_FAMILY_NAME		"handshake"
 #define HANDSHAKE_FAMILY_VERSION	1
@@ -71,4 +71,4 @@ enum {
 #define HANDSHAKE_MCGRP_NONE	"none"
 #define HANDSHAKE_MCGRP_TLSHD	"tlshd"
 
-#endif /* _UAPI_LINUX_HANDSHAKE_H */
+#endif /* _UAPI_freax_HANDSHAKE_H */

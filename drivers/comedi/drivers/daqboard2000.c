@@ -3,7 +3,7 @@
  * comedi/drivers/daqboard2000.c
  * hardware driver for IOtech DAQboard/2000
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
  */
 /*
@@ -93,11 +93,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedi_pci.h>
+#include <freax/comedi/comedi_8255.h>
 
 #include "plx9080.h"
 

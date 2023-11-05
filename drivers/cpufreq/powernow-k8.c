@@ -7,7 +7,7 @@
  *
  *  Based on the powernow-k7.c module written by Dave Jones.
  *  (C) 2003 Dave Jones on behalf of SuSE Labs
- *  (C) 2004 Dominik Brodowski <linux@brodo.de>
+ *  (C) 2004 Dominik Brodowski <freax@brodo.de>
  *  (C) 2004 Pavel Machek <pavel@ucw.cz>
  *  Based upon datasheets & sample CPUs kindly provided by AMD.
  *
@@ -26,22 +26,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/cpumask.h>
+#include <freax/io.h>
+#include <freax/delay.h>
 
 #include <asm/msr.h>
 #include <asm/cpu_device_id.h>
 
-#include <linux/acpi.h>
-#include <linux/mutex.h>
+#include <freax/acpi.h>
+#include <freax/mutex.h>
 #include <acpi/processor.h>
 
 #define VERSION "version 2.20.00"
@@ -692,9 +692,9 @@ static int find_psb_table(struct powernow_k8_data *data)
 	}
 	/*
 	 * If you see this message, complain to BIOS manufacturer. If
-	 * he tells you "we do not support Linux" or some similar
+	 * he tells you "we do not support freax" or some similar
 	 * nonsense, remember that Windows 2000 uses the same legacy
-	 * mechanism that the old Linux PSB driver uses. Tell them it
+	 * mechanism that the old freax PSB driver uses. Tell them it
 	 * is broken with Windows 2000.
 	 *
 	 * The reference to the AMD documentation is chapter 9 in the

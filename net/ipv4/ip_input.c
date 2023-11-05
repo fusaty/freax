@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -108,38 +108,38 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/net.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/indirect_call_wrapper.h>
 
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/route.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
 #include <net/arp.h>
 #include <net/icmp.h>
 #include <net/raw.h>
 #include <net/checksum.h>
 #include <net/inet_ecn.h>
-#include <linux/netfilter_ipv4.h>
+#include <freax/netfilter_ipv4.h>
 #include <net/xfrm.h>
-#include <linux/mroute.h>
-#include <linux/netlink.h>
+#include <freax/mroute.h>
+#include <freax/netlink.h>
 #include <net/dst_metadata.h>
 
 /*
@@ -359,7 +359,7 @@ static int ip_rcv_finish_core(struct net *net, struct sock *sk,
 
 	/*
 	 *	Initialise the virtual path cache for the packet. It describes
-	 *	how the packet travels inside Linux networking.
+	 *	how the packet travels inside freax networking.
 	 */
 	if (!skb_valid_dst(skb)) {
 		err = ip_route_input_noref(skb, iph->daddr, iph->saddr,
@@ -427,7 +427,7 @@ drop:
 drop_error:
 	if (err == -EXDEV) {
 		drop_reason = SKB_DROP_REASON_IP_RPFILTER;
-		__NET_INC_STATS(net, LINUX_MIB_IPRPFILTER);
+		__NET_INC_STATS(net, freax_MIB_IPRPFILTER);
 	}
 	goto drop;
 }

@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob@ti.com>
  */
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #include <drm/drm_blend.h>
 #include <drm/drm_modeset_helper.h>

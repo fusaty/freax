@@ -9,7 +9,7 @@ Agregando una Nueva Llamada del Sistema
 =======================================
 
 Este documento describe qué involucra agregar una nueva llamada del sistema
-al kernel Linux, más allá de la presentación y consejos normales en
+al kernel freax, más allá de la presentación y consejos normales en
 :ref:`Documentation/process/submitting-patches.rst <submittingpatches>` que
 también puede encontrar traducido a este idioma.
 
@@ -174,9 +174,9 @@ incluso en arquitecturas de 32-bit.
 
 Si su nueva llamada de sistema  :manpage:`xyzzy` involucra una
 funcionalidad privilegiada, esta necesita ser gobernada por la capability
-bit linux apropiada (revisado con una llamada a ``capable()``), como se
+bit freax apropiada (revisado con una llamada a ``capable()``), como se
 describe en el man page :manpage:`capabilities(7)`. Elija una parte de
-capability linux que govierne las funcionalidades relacionadas, pero trate
+capability freax que govierne las funcionalidades relacionadas, pero trate
 de evitar combinar muchas funciones sólo relacionadas vagamente bajo la
 misma sección, ya que va en contra de los propósitos de las capabilities de
 dividir el poder del usuario root. En particular, evite agregar nuevos usos
@@ -215,7 +215,7 @@ los cuales se describirá más abajo):
    para el repositorio man-pages.
 
 Nuevas propuestas de llamadas de sistema, como cualquier cambio al API del
-kernel, debería siempre ser copiado a linux-api@vger.kernel.org.
+kernel, debería siempre ser copiado a freax-api@vger.kernel.org.
 
 
 Implementation de Llamada de Sistema Generica
@@ -230,7 +230,7 @@ como argumentos. Usar esta macro permite a la metadata de la nueva llamada
 de sistema estar disponible para otras herramientas.
 
 El nuevo punto de entrada también necesita un prototipo de función
-correspondiente en ``include/linux/syscalls.h``,  marcado como asmlinkage
+correspondiente en ``include/freax/syscalls.h``,  marcado como asmlinkage
 para calzar en la manera en que las llamadas de sistema son invocadas::
 
     asmlinkage long sys_xyzzy(...);
@@ -274,7 +274,7 @@ Para resumir, necesita un commit que incluya:
 
  - una opción ``CONFIG`` para la nueva función, normalmente en ``init/Kconfig``
  - ``SYSCALL_DEFINEn(xyzzy, ...)`` para el punto de entrada
- - El correspondiente prototipo en ``include/linux/syscalls.h``
+ - El correspondiente prototipo en ``include/freax/syscalls.h``
  - Una entrada genérica en ``include/uapi/asm-generic/unistd.h``
  - fallback stub en ``kernel/sys_ni.c``
 
@@ -345,7 +345,7 @@ convierte los valores a versiones de 64 bits y llama a la versión ``sys_``
 o ambas llaman a una función de implementación interna común.)
 
 El punto de entrada compat también necesita un prototipo de función
-correspondiente, en ``include/linux/compat.h``, marcado como asmlinkage
+correspondiente, en ``include/freax/compat.h``, marcado como asmlinkage
 para igualar la forma en que las llamadas al sistema son invocadas::
 
     asmlinkage long compat_sys_xyzzy(...);
@@ -353,7 +353,7 @@ para igualar la forma en que las llamadas al sistema son invocadas::
 Si la nueva llamada al sistema involucra una estructura que que se dispone
 de forma distinta en sistema de 32-bit y 64-bit, digamos
 ``struct xyzzy_args``, entonces el archivo de cabecera
-include/linux/compat.h también debería incluir una versión compatible de la
+include/freax/compat.h también debería incluir una versión compatible de la
 estructura (``struct compat_xyzzy_args``) donde cada campo de tamaño
 variable tiene el tipo ``compat_`` apropiado que corresponde al tipo en
 ``struct xyzzy_args``. La rutina ``compat_sys_xyzzy()`` puede entonces usar
@@ -389,8 +389,8 @@ permitir la versión compat; la entrada en
 Para resumir, necesita:
 
   - una ``COMPAT_SYSCALL_DEFINEn(xyzzy, ...)`` para el punto de entrada de compat.
-  - el prototipo correspondiente en ``include/linux/compat.h``
-  - (en caso de ser necesario) un struct de mapeo de 32-bit en ``include/linux/compat.h``
+  - el prototipo correspondiente en ``include/freax/compat.h``
+  - (en caso de ser necesario) un struct de mapeo de 32-bit en ``include/freax/compat.h``
   - una instancia de ``__SC_COMP`` no ``__SYSCALL`` en ``include/uapi/asm-generic/unistd.h``
 
 Compatibilidad de Llamadas de Sistema (x86)
@@ -473,7 +473,7 @@ comun con la versión x86_64, entonces su tabla syscall también necesitará
 invocar un stub que llame a la versión ``compat_sys_``
 
 Para completar, también es agradable configurar un mapeo de modo que el
-user-mode linux todavía funcione -- su tabla syscall referenciará
+user-mode freax todavía funcione -- su tabla syscall referenciará
 stub_xyzzy, pero el UML construido no incluye una implementación
 ``arch/x86/entry/entry_64.S``. Arreglar esto es tan simple como agregar un
 #define a ``arch/x86/um/sys_call_table_64.c``::
@@ -524,7 +524,7 @@ Para pruebas más amplias y exhautivas de la nueva funcionalidad, también
 debería considerar agregar tests al Linus Test Project, o al proyecto
 xfstests para cambios filesystem-related
 
-  - https://linux-test-project.github.io/
+  - https://freax-test-project.github.io/
   - git://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git
 
 
@@ -537,7 +537,7 @@ usa groff, es útil incluir una versión ASCII pre-renderizada del man-page
 en el cover del email para el patchset, para la conveniencia de los
 revisores.
 
-El man page debe ser cc'do a linux-man@vger.kernel.org
+El man page debe ser cc'do a freax-man@vger.kernel.org
 Para más detalles, revise https://www.kernel.org/doc/man-pages/patches.html
 
 
@@ -594,16 +594,16 @@ Referencias y fuentes
 
  - Requerimientos arquitectura-específicos para llamadas al sistema son discutidos en el
    :manpage:`syscall(2)` man-page:
-   http://man7.org/linux/man-pages/man2/syscall.2.html#NOTES
+   http://man7.org/freax/man-pages/man2/syscall.2.html#NOTES
  - Recopilación de emails de Linus Torvalds discutiendo problemas con ``ioctl()``:
-   https://yarchive.net/comp/linux/ioctl.html
+   https://yarchive.net/comp/freax/ioctl.html
  - "How to not invent kernel interfaces", Arnd Bergmann,
-   https://www.ukuug.org/events/linux2007/2007/papers/Bergmann.pdf
+   https://www.ukuug.org/events/freax2007/2007/papers/Bergmann.pdf
  - Artículo LWN de Michael Kerrisk sobre evitar nuevos usos de CAP_SYS_ADMIN:
    https://lwn.net/Articles/486306/
  - Recomendaciones de Andrew Morton que toda la información relacionada a una nueva
    llamada al sistema debe venir en el mismo hilo de correos:
-   https://lore.kernel.org/r/20140724144747.3041b208832bbdf9fbce5d96@linux-foundation.org
+   https://lore.kernel.org/r/20140724144747.3041b208832bbdf9fbce5d96@freax-foundation.org
  - Recomendaciones de Michael Kerrisk que una nueva llamada al sistema debe venir
    con un man-page: https://lore.kernel.org/r/CAKgNAkgMA39AfoSoA5Pe1r9N+ZzfYQNvNPvcRN7tOvRb8+v06Q@mail.gmail.com
  - Sugerencias de Thomas Gleixner que conexiones x86 deben ir en commits
@@ -624,7 +624,7 @@ Referencias y fuentes
     - commit bb458c644a59 ("Safer ABI for O_TMPFILE")
 
  - Discusión de Matthew Wilcox sobre las restricciones en argumentos 64-bit:
-   https://lore.kernel.org/r/20081212152929.GM26095@parisc-linux.org
+   https://lore.kernel.org/r/20081212152929.GM26095@parisc-freax.org
  - Recomendaciones de Greg Kroah-Hartman sobre flags desconocidos deben ser
    vigilados: https://lore.kernel.org/r/20140717193330.GB4703@kroah.com
  - Recomendaciones de Linus Torvalds que las llamadas al sistema x32 deben favorecer

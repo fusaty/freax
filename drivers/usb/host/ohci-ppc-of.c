@@ -14,11 +14,11 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/signal.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/signal.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 static int
 ohci_ppc_of_start(struct usb_hcd *hcd)

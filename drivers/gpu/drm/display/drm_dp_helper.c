@@ -20,17 +20,17 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/string_helpers.h>
-#include <linux/dynamic_debug.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/string_helpers.h>
+#include <freax/dynamic_debug.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/display/drm_dp_mst_helper.h>

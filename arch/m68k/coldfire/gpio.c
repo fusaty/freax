@@ -5,13 +5,13 @@
  * (C) Copyright 2009, Steven King <sfking@fdwdc.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/gpio/driver.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/mcfgpio.h>

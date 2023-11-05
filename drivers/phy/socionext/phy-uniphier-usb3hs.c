@@ -9,19 +9,19 @@
  *      Masami Hiramatsu <masami.hiramatsu@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #define HSPHY_CFG0		0x0
 #define HSPHY_CFG0_HS_I_MASK	GENMASK(31, 28)

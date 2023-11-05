@@ -9,19 +9,19 @@
  *              Vlad Lungu   <vlad.lungu@windriver.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
-#include <linux/kmod.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/videodev2.h>
+#include <freax/kmod.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
@@ -101,7 +101,7 @@ static inline struct vip_buffer *to_vip_buffer(struct vb2_v4l2_buffer *vb2)
  * @sequence: sequence number of acquired buffer
  * @active: current active buffer
  * @lock: used in videobuf2 callback
- * @v4l_lock: serialize its video4linux ioctls
+ * @v4l_lock: serialize its video4freax ioctls
  * @tcount: Number of top frames
  * @bcount: Number of bottom frames
  * @overflow: Number of FIFO overflows

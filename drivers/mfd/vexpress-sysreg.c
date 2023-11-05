@@ -4,16 +4,16 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <freax/gpio/driver.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_data/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
 
 #define SYS_ID			0x000
 #define SYS_SW			0x004

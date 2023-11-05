@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * efs_fs_sb.h
  *
@@ -10,8 +10,8 @@
 #ifndef __EFS_FS_SB_H__
 #define __EFS_FS_SB_H__
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 /* EFS superblock magic numbers */
 #define EFS_MAGIC	0x072959

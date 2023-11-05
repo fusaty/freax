@@ -4,20 +4,20 @@
  * Copyright (c) 2018 Lightbits Labs. All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/key.h>
-#include <linux/nvme-tcp.h>
-#include <linux/nvme-keyring.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/key.h>
+#include <freax/nvme-tcp.h>
+#include <freax/nvme-keyring.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <net/tls.h>
 #include <net/tls_prot.h>
 #include <net/handshake.h>
-#include <linux/inet.h>
-#include <linux/llist.h>
+#include <freax/inet.h>
+#include <freax/llist.h>
 #include <crypto/hash.h>
 #include <trace/events/sock.h>
 

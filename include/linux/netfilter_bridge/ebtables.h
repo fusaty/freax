@@ -10,12 +10,12 @@
  *  This code is strongly inspired by the iptables code which is
  *  Copyright (C) 1999 Paul `Rusty' Russell & Michael J. Neuling
  */
-#ifndef __LINUX_BRIDGE_EFF_H
-#define __LINUX_BRIDGE_EFF_H
+#ifndef __freax_BRIDGE_EFF_H
+#define __freax_BRIDGE_EFF_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <uapi/linux/netfilter_bridge/ebtables.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <uapi/freax/netfilter_bridge/ebtables.h>
 
 struct ebt_match {
 	struct list_head list;

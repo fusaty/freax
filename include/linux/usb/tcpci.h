@@ -5,11 +5,11 @@
  * USB Type-C Port Controller Interface.
  */
 
-#ifndef __LINUX_USB_TCPCI_H
-#define __LINUX_USB_TCPCI_H
+#ifndef __freax_USB_TCPCI_H
+#define __freax_USB_TCPCI_H
 
-#include <linux/usb/typec.h>
-#include <linux/usb/tcpm.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/tcpm.h>
 
 #define TCPC_VENDOR_ID			0x0
 #define TCPC_PRODUCT_ID			0x2
@@ -237,4 +237,4 @@ static inline enum typec_cc_status tcpci_to_typec_cc(unsigned int cc, bool sink)
 		return TYPEC_CC_OPEN;
 	}
 }
-#endif /* __LINUX_USB_TCPCI_H */
+#endif /* __freax_USB_TCPCI_H */

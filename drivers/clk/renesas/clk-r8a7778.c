@@ -5,11 +5,11 @@
  * Copyright (C) 2014  Ulrich Hecht
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/renesas.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/soc/renesas/rcar-rst.h>
 
 /* PLL multipliers per bits 11, 12, and 18 of MODEMR */
 static const struct {

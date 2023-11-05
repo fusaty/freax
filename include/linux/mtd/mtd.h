@@ -6,13 +6,13 @@
 #ifndef __MTD_MTD_H__
 #define __MTD_MTD_H__
 
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/nvmem-provider.h>
+#include <freax/types.h>
+#include <freax/uio.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/nvmem-provider.h>
 
 #include <mtd/mtd-abi.h>
 

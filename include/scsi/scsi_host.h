@@ -2,13 +2,13 @@
 #ifndef _SCSI_SCSI_HOST_H
 #define _SCSI_SCSI_HOST_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/blk-mq.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/blk-mq.h>
 #include <scsi/scsi.h>
 
 struct block_device;

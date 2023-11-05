@@ -15,10 +15,10 @@
 #include "../include/gaudi2/gaudi2_async_ids_map_extended.h"
 #include "../include/gaudi2/arc/gaudi2_arc_common_packets.h"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/iommu.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/hwmon.h>
+#include <freax/iommu.h>
 
 #define GAUDI2_DMA_POOL_BLK_SIZE		SZ_256		/* 256 bytes */
 
@@ -4838,7 +4838,7 @@ static void gaudi2_init_firmware_loader(struct hl_device *hdev)
 	/* fill common fields */
 	fw_loader->fw_comp_loaded = FW_TYPE_NONE;
 	fw_loader->boot_fit_img.image_name = GAUDI2_BOOT_FIT_FILE;
-	fw_loader->linux_img.image_name = GAUDI2_LINUX_FW_FILE;
+	fw_loader->freax_img.image_name = GAUDI2_freax_FW_FILE;
 	fw_loader->boot_fit_timeout = GAUDI2_BOOT_FIT_REQ_TIMEOUT_USEC;
 	fw_loader->skip_bmc = false;
 	fw_loader->sram_bar_id = SRAM_CFG_BAR_ID;
@@ -6069,7 +6069,7 @@ static int gaudi2_hw_init(struct hl_device *hdev)
 		gaudi2->dram_bar_cur_addr = DRAM_PHYS_BASE;
 
 	/*
-	 * Before pushing u-boot/linux to device, need to set the hbm bar to
+	 * Before pushing u-boot/freax to device, need to set the hbm bar to
 	 * base address of dram
 	 */
 	if (gaudi2_set_hbm_bar_base(hdev, DRAM_PHYS_BASE) == U64_MAX) {
@@ -6172,7 +6172,7 @@ static void gaudi2_send_hard_reset_cmd(struct hl_device *hdev)
 		cpu_initialized = true;
 
 	/*
-	 * when Linux/Bootfit exist this write to the SP can be interpreted in 2 ways:
+	 * when freax/Bootfit exist this write to the SP can be interpreted in 2 ways:
 	 * 1. FW reset: FW initiate the reset sequence
 	 * 2. driver reset: FW will start HALT sequence (the preparations for the
 	 *                  reset but not the reset itself as it is not implemented
@@ -6187,14 +6187,14 @@ static void gaudi2_send_hard_reset_cmd(struct hl_device *hdev)
 	}
 
 	/*
-	 * When working with preboot (without Linux/Boot fit) we can
+	 * When working with preboot (without freax/Boot fit) we can
 	 * communicate only using the COMMS commands to issue halt/reset.
 	 *
-	 * For the case in which we are working with Linux/Bootfit this is a hail-mary
+	 * For the case in which we are working with freax/Bootfit this is a hail-mary
 	 * attempt to revive the card in the small chance that the f/w has
 	 * experienced a watchdog event, which caused it to return back to preboot.
 	 * In that case, triggering reset through GIC won't help. We need to
-	 * trigger the reset as if Linux wasn't loaded.
+	 * trigger the reset as if freax wasn't loaded.
 	 *
 	 * We do it only if the reset cause was HB, because that would be the
 	 * indication of such an event.
@@ -6205,9 +6205,9 @@ static void gaudi2_send_hard_reset_cmd(struct hl_device *hdev)
 
 	if (heartbeat_reset || preboot_only || !cpu_initialized) {
 		if (hdev->asic_prop.hard_reset_done_by_fw)
-			hl_fw_ask_hard_reset_without_linux(hdev);
+			hl_fw_ask_hard_reset_without_freax(hdev);
 		else
-			hl_fw_ask_halt_machine_without_linux(hdev);
+			hl_fw_ask_halt_machine_without_freax(hdev);
 	}
 }
 
@@ -8394,7 +8394,7 @@ static int gaudi2_ack_psoc_razwi_event_handler(struct hl_device *hdev, u64 *even
 {
 	u32 razwi_mask_info, razwi_intr = 0, error_count = 0;
 
-	if (hdev->pldm || !(hdev->fw_components & FW_TYPE_LINUX)) {
+	if (hdev->pldm || !(hdev->fw_components & FW_TYPE_freax)) {
 		razwi_intr = RREG32(mmPSOC_GLOBAL_CONF_RAZWI_INTERRUPT);
 		if (!razwi_intr)
 			return 0;
@@ -8418,7 +8418,7 @@ static int gaudi2_ack_psoc_razwi_event_handler(struct hl_device *hdev, u64 *even
 				razwi_mask_info);
 
 	/* Clear Interrupts only on pldm or if f/w doesn't handle interrupts */
-	if (hdev->pldm || !(hdev->fw_components & FW_TYPE_LINUX))
+	if (hdev->pldm || !(hdev->fw_components & FW_TYPE_freax))
 		WREG32(mmPSOC_GLOBAL_CONF_RAZWI_INTERRUPT, razwi_intr);
 
 	return error_count;

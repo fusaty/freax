@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2019-2022 HiSilicon Limited. */
 
-#include <linux/bitfield.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/dmaengine.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
 #include "virt-dma.h"
 
 /* HiSilicon DMA register common field define */
@@ -838,7 +838,7 @@ static void hisi_dma_init_dma_dev(struct hisi_dma_dev *hdma_dev)
 
 /* --- debugfs implementation --- */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 static struct debugfs_reg32 *hisi_dma_get_ch_regs(struct hisi_dma_dev *hdma_dev,
 						  u32 *regs_sz)
 {

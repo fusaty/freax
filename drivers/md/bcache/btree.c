@@ -26,16 +26,16 @@
 #include "debug.h"
 #include "extents.h"
 
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/hash.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/clock.h>
-#include <linux/rculist.h>
-#include <linux/delay.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/hash.h>
+#include <freax/kthread.h>
+#include <freax/prefetch.h>
+#include <freax/random.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/clock.h>
+#include <freax/rculist.h>
+#include <freax/delay.h>
 #include <trace/events/bcache.h>
 
 /*

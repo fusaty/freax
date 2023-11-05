@@ -7,24 +7,24 @@
  *
  * (c) Copyright 2010-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@freax-iscsi.org>
 *
  ****************************************************************************/
 
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/utsname.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/unistd.h>
+#include <freax/string.h>
+#include <freax/syscalls.h>
+#include <freax/configfs.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

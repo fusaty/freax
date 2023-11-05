@@ -8,14 +8,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#ifndef _LINUX_IRQCHIP_H
-#define _LINUX_IRQCHIP_H
+#ifndef _freax_IRQCHIP_H
+#define _freax_IRQCHIP_H
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 /* Undefined on purpose */
 extern of_irq_init_cb_t typecheck_irq_init_cb;

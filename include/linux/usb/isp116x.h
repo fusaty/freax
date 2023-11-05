@@ -4,8 +4,8 @@
  * and place the isp116x onto platform_bus.
  */
 
-#ifndef __LINUX_USB_ISP116X_H
-#define __LINUX_USB_ISP116X_H
+#ifndef __freax_USB_ISP116X_H
+#define __freax_USB_ISP116X_H
 
 struct isp116x_platform_data {
 	/* Enable internal resistors on downstream ports */
@@ -31,4 +31,4 @@ struct isp116x_platform_data {
 	void (*delay) (struct device *dev, int delay);
 };
 
-#endif /* __LINUX_USB_ISP116X_H */
+#endif /* __freax_USB_ISP116X_H */

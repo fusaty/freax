@@ -9,11 +9,11 @@
  * Copyright (C) 2012 Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <freax/dma-mapping.h>
+#include <freax/fb.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
 
 #include <video/sh_mobile_lcdc.h>
 

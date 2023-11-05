@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/9p/trans_xen
+ * freax/fs/9p/trans_xen
  *
  * Xen transport layer.
  *
@@ -13,8 +13,8 @@
 #include <xen/xenbus.h>
 #include <xen/interface/io/9pfs.h>
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>

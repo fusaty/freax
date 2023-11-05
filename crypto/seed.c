@@ -9,10 +9,10 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 #include <asm/byteorder.h>
 
 #define SEED_NUM_KCONSTANTS	16

@@ -6,9 +6,9 @@
  * AV backend support for PS3
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
 
 #include <asm/ps3av.h>
 #include <asm/ps3.h>

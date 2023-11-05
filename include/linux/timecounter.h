@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/include/linux/timecounter.h
+ * freax/include/freax/timecounter.h
  *
  * based on code that migrated away from
- * linux/include/linux/clocksource.h
+ * freax/include/freax/clocksource.h
  */
-#ifndef _LINUX_TIMECOUNTER_H
-#define _LINUX_TIMECOUNTER_H
+#ifndef _freax_TIMECOUNTER_H
+#define _freax_TIMECOUNTER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* simplify initialization of mask field */
 #define CYCLECOUNTER_MASK(bits) (u64)((bits) < 64 ? ((1ULL<<(bits))-1) : -1)

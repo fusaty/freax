@@ -17,12 +17,12 @@
  * - power doesn't need to be ON if all lights are off
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
 #include <media/i2c/adp1653.h>
 #include <media/v4l2-device.h>
 

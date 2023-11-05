@@ -2,12 +2,12 @@
 #ifndef _ASM_VERMAGIC_H
 #define _ASM_VERMAGIC_H
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 /*
  * Add the ARM architecture version to the version magic string
  */
-#define MODULE_ARCH_VERMAGIC_ARMVSN "ARMv" __stringify(__LINUX_ARM_ARCH__) " "
+#define MODULE_ARCH_VERMAGIC_ARMVSN "ARMv" __stringify(__freax_ARM_ARCH__) " "
 
 /* Add __virt_to_phys patching state as well */
 #ifdef CONFIG_ARM_PATCH_PHYS_VIRT

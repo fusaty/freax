@@ -8,12 +8,12 @@
  *	Jan Engelhardt <jengelh@medozas.de>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_connmark.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_connmark.h>
 
 MODULE_AUTHOR("Henrik Nordstrom <hno@marasystems.com>");
 MODULE_DESCRIPTION("Xtables: connection mark operations");

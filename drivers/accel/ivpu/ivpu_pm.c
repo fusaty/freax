@@ -3,11 +3,11 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/highmem.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/reboot.h>
+#include <freax/highmem.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/reboot.h>
 
 #include "vpu_boot_api.h"
 #include "ivpu_drv.h"

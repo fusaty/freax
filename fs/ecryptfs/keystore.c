@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: freax filesystem encryption layer
  * In-kernel key management code.  Includes functions to parse and
  * write authentication token-related packets with the underlying
  * file.
@@ -13,12 +13,12 @@
 
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/key.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <freax/string.h>
+#include <freax/pagemap.h>
+#include <freax/key.h>
+#include <freax/random.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
 #include "ecryptfs_kernel.h"
 
 /*

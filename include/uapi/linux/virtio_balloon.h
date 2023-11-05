@@ -1,5 +1,5 @@
-#ifndef _LINUX_VIRTIO_BALLOON_H
-#define _LINUX_VIRTIO_BALLOON_H
+#ifndef _freax_VIRTIO_BALLOON_H
+#define _freax_VIRTIO_BALLOON_H
 /* This header is BSD licensed so anyone can use the definitions to implement
  * compatible drivers/servers.
  *
@@ -25,10 +25,10 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE. */
-#include <linux/types.h>
-#include <linux/virtio_types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <freax/types.h>
+#include <freax/virtio_types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
 
 /* The feature bitmap for virtio balloon */
 #define VIRTIO_BALLOON_F_MUST_TELL_HOST	0 /* Tell before reclaiming pages */
@@ -116,4 +116,4 @@ struct virtio_balloon_stat {
 	__virtio64 val;
 } __attribute__((packed));
 
-#endif /* _LINUX_VIRTIO_BALLOON_H */
+#endif /* _freax_VIRTIO_BALLOON_H */

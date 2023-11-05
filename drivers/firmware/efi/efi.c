@@ -14,24 +14,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/of.h>
-#include <linux/initrd.h>
-#include <linux/io.h>
-#include <linux/kexec.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/ucs2_string.h>
-#include <linux/memblock.h>
-#include <linux/security.h>
+#include <freax/kobject.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/efi.h>
+#include <freax/of.h>
+#include <freax/initrd.h>
+#include <freax/io.h>
+#include <freax/kexec.h>
+#include <freax/platform_device.h>
+#include <freax/random.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/ucs2_string.h>
+#include <freax/memblock.h>
+#include <freax/security.h>
 
 #include <asm/early_ioremap.h>
 
@@ -577,26 +577,26 @@ static const efi_config_table_type_t common_tables[] __initconst = {
 	{SMBIOS3_TABLE_GUID,			&efi.smbios3,		"SMBIOS 3.0"	},
 	{EFI_SYSTEM_RESOURCE_TABLE_GUID,	&efi.esrt,		"ESRT"		},
 	{EFI_MEMORY_ATTRIBUTES_TABLE_GUID,	&efi_mem_attr_table,	"MEMATTR"	},
-	{LINUX_EFI_RANDOM_SEED_TABLE_GUID,	&efi_rng_seed,		"RNG"		},
-	{LINUX_EFI_TPM_EVENT_LOG_GUID,		&efi.tpm_log,		"TPMEventLog"	},
-	{LINUX_EFI_TPM_FINAL_LOG_GUID,		&efi.tpm_final_log,	"TPMFinalLog"	},
-	{LINUX_EFI_MEMRESERVE_TABLE_GUID,	&mem_reserve,		"MEMRESERVE"	},
-	{LINUX_EFI_INITRD_MEDIA_GUID,		&initrd,		"INITRD"	},
+	{freax_EFI_RANDOM_SEED_TABLE_GUID,	&efi_rng_seed,		"RNG"		},
+	{freax_EFI_TPM_EVENT_LOG_GUID,		&efi.tpm_log,		"TPMEventLog"	},
+	{freax_EFI_TPM_FINAL_LOG_GUID,		&efi.tpm_final_log,	"TPMFinalLog"	},
+	{freax_EFI_MEMRESERVE_TABLE_GUID,	&mem_reserve,		"MEMRESERVE"	},
+	{freax_EFI_INITRD_MEDIA_GUID,		&initrd,		"INITRD"	},
 	{EFI_RT_PROPERTIES_TABLE_GUID,		&rt_prop,		"RTPROP"	},
 #ifdef CONFIG_EFI_RCI2_TABLE
 	{DELLEMC_EFI_RCI2_TABLE_GUID,		&rci2_table_phys			},
 #endif
 #ifdef CONFIG_LOAD_UEFI_KEYS
-	{LINUX_EFI_MOK_VARIABLE_TABLE_GUID,	&efi.mokvar_table,	"MOKvar"	},
+	{freax_EFI_MOK_VARIABLE_TABLE_GUID,	&efi.mokvar_table,	"MOKvar"	},
 #endif
 #ifdef CONFIG_EFI_COCO_SECRET
-	{LINUX_EFI_COCO_SECRET_AREA_GUID,	&efi.coco_secret,	"CocoSecret"	},
+	{freax_EFI_COCO_SECRET_AREA_GUID,	&efi.coco_secret,	"CocoSecret"	},
 #endif
 #ifdef CONFIG_UNACCEPTED_MEMORY
-	{LINUX_EFI_UNACCEPTED_MEM_TABLE_GUID,	&efi.unaccepted,	"Unaccepted"	},
+	{freax_EFI_UNACCEPTED_MEM_TABLE_GUID,	&efi.unaccepted,	"Unaccepted"	},
 #endif
 #ifdef CONFIG_EFI_GENERIC_STUB
-	{LINUX_EFI_SCREEN_INFO_TABLE_GUID,	&screen_info_table			},
+	{freax_EFI_SCREEN_INFO_TABLE_GUID,	&screen_info_table			},
 #endif
 	{},
 };
@@ -692,7 +692,7 @@ int __init efi_config_parse_tables(const efi_config_table_t *config_tables,
 	set_bit(EFI_CONFIG_TABLES, &efi.flags);
 
 	if (efi_rng_seed != EFI_INVALID_TABLE_ADDR) {
-		struct linux_efi_random_seed *seed;
+		struct freax_efi_random_seed *seed;
 		u32 size = 0;
 
 		seed = early_memremap(efi_rng_seed, sizeof(*seed));
@@ -724,7 +724,7 @@ int __init efi_config_parse_tables(const efi_config_table_t *config_tables,
 		unsigned long prsv = mem_reserve;
 
 		while (prsv) {
-			struct linux_efi_memreserve *rsv;
+			struct freax_efi_memreserve *rsv;
 			u8 *p;
 
 			/*
@@ -767,7 +767,7 @@ int __init efi_config_parse_tables(const efi_config_table_t *config_tables,
 
 	if (IS_ENABLED(CONFIG_BLK_DEV_INITRD) &&
 	    initrd != EFI_INVALID_TABLE_ADDR && phys_initrd_size == 0) {
-		struct linux_efi_initrd *tbl;
+		struct freax_efi_initrd *tbl;
 
 		tbl = early_memremap(initrd, sizeof(*tbl));
 		if (tbl) {
@@ -1010,7 +1010,7 @@ int efi_status_to_err(efi_status_t status)
 EXPORT_SYMBOL_GPL(efi_status_to_err);
 
 static DEFINE_SPINLOCK(efi_mem_reserve_persistent_lock);
-static struct linux_efi_memreserve *efi_memreserve_root __ro_after_init;
+static struct freax_efi_memreserve *efi_memreserve_root __ro_after_init;
 
 static int __init efi_memreserve_map_root(void)
 {
@@ -1056,7 +1056,7 @@ static int efi_mem_reserve_iomem(phys_addr_t addr, u64 size)
 
 int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 {
-	struct linux_efi_memreserve *rsv;
+	struct freax_efi_memreserve *rsv;
 	unsigned long prsv;
 	int rc, index;
 
@@ -1087,7 +1087,7 @@ int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 	}
 
 	/* no slot found - allocate a new linked list entry */
-	rsv = (struct linux_efi_memreserve *)__get_free_page(GFP_ATOMIC);
+	rsv = (struct freax_efi_memreserve *)__get_free_page(GFP_ATOMIC);
 	if (!rsv)
 		return -ENOMEM;
 
@@ -1098,7 +1098,7 @@ int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 	}
 
 	/*
-	 * The memremap() call above assumes that a linux_efi_memreserve entry
+	 * The memremap() call above assumes that a freax_efi_memreserve entry
 	 * never crosses a page boundary, so let's ensure that this remains true
 	 * even when kexec'ing a 4k pages kernel from a >4k pages kernel, by
 	 * using SZ_4K explicitly in the size calculation below.
@@ -1130,7 +1130,7 @@ early_initcall(efi_memreserve_root_init);
 static int update_efi_random_seed(struct notifier_block *nb,
 				  unsigned long code, void *unused)
 {
-	struct linux_efi_random_seed *seed;
+	struct freax_efi_random_seed *seed;
 	u32 size = 0;
 
 	if (!kexec_in_progress)

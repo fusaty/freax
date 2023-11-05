@@ -6,19 +6,19 @@
  * Copyright (C) 2001 Peter Bergner.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/poison.h>
-#include <linux/pfn.h>
-#include <linux/debugfs.h>
-#include <linux/kmemleak.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/poison.h>
+#include <freax/pfn.h>
+#include <freax/debugfs.h>
+#include <freax/kmemleak.h>
+#include <freax/seq_file.h>
+#include <freax/memblock.h>
 
 #include <asm/sections.h>
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "internal.h"
 

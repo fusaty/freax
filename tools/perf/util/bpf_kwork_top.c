@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include <linux/time64.h>
+#include <freax/time64.h>
 
 #include "util/debug.h"
 #include "util/evsel.h"

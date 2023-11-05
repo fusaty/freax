@@ -4,13 +4,13 @@
  * Copyright (c) 2009 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/of_irq.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/of_irq.h>
 
 #include <asm/pmac_feature.h>
 #include <asm/pmac_pfunc.h>

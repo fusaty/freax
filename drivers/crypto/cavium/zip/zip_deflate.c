@@ -43,8 +43,8 @@
  * WITH YOU.
  ***********************license end**************************************/
 
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
 
 #include "common.h"
 #include "zip_deflate.h"

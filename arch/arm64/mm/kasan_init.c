@@ -7,12 +7,12 @@
  */
 
 #define pr_fmt(fmt) "kasan: " fmt
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/sched/task.h>
-#include <linux/memblock.h>
-#include <linux/start_kernel.h>
-#include <linux/mm.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/sched/task.h>
+#include <freax/memblock.h>
+#include <freax/start_kernel.h>
+#include <freax/mm.h>
 
 #include <asm/mmu_context.h>
 #include <asm/kernel-pgtable.h>

@@ -4,19 +4,19 @@
  * ILI9320 LCD controller driver core.
  *
  * Copyright 2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
 */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/lcd.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/spi/spi.h>
+#include <freax/spi/spi.h>
 
 #include <video/ili9320.h>
 
@@ -294,6 +294,6 @@ void ili9320_shutdown(struct ili9320 *lcd)
 }
 EXPORT_SYMBOL_GPL(ili9320_shutdown);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-freax@fluff.org>");
 MODULE_DESCRIPTION("ILI9320 LCD Driver");
 MODULE_LICENSE("GPL v2");

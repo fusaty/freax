@@ -4,20 +4,20 @@
  * Copyright (C) 2015 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clk/tegra.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include <soc/tegra/fuse.h>
 

@@ -5,7 +5,7 @@
  * Copyright (c) 2022 SeongJae Park <sj@kernel.org>
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "sysfs-common.h"
 

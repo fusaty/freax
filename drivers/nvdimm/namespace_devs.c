@@ -2,13 +2,13 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/nd.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/sort.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/nd.h>
 #include "nd-core.h"
 #include "pmem.h"
 #include "pfn.h"

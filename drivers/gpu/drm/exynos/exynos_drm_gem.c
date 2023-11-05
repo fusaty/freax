@@ -6,10 +6,10 @@
  */
 
 
-#include <linux/dma-buf.h>
-#include <linux/pfn_t.h>
-#include <linux/shmem_fs.h>
-#include <linux/module.h>
+#include <freax/dma-buf.h>
+#include <freax/pfn_t.h>
+#include <freax/shmem_fs.h>
+#include <freax/module.h>
 
 #include <drm/drm_prime.h>
 #include <drm/drm_vma_manager.h>

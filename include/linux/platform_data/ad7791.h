@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PLATFORM_DATA_AD7791__
-#define __LINUX_PLATFORM_DATA_AD7791__
+#ifndef __freax_PLATFORM_DATA_AD7791__
+#define __freax_PLATFORM_DATA_AD7791__
 
 /**
  * struct ad7791_platform_data - AD7791 device platform data

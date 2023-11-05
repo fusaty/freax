@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/kmemleak.h
+ * include/freax/kmemleak.h
  *
  * Copyright (C) 2008 ARM Limited
  * Written by Catalin Marinas <catalin.marinas@arm.com>
@@ -9,8 +9,8 @@
 #ifndef __KMEMLEAK_H
 #define __KMEMLEAK_H
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 #ifdef CONFIG_DEBUG_KMEMLEAK
 

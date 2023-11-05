@@ -12,18 +12,18 @@
  * Contact Cypress Semiconductor at www.cypress.com <ttdrivers@cypress.com>
  */
 
-#ifndef _LINUX_CYTTSP4_CORE_H
-#define _LINUX_CYTTSP4_CORE_H
+#ifndef _freax_CYTTSP4_CORE_H
+#define _freax_CYTTSP4_CORE_H
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/platform_data/cyttsp4.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
+#include <freax/platform_data/cyttsp4.h>
 
 #define CY_REG_BASE			0x00
 
@@ -445,4 +445,4 @@ int cyttsp_i2c_read_block_data(struct device *dev, u8 *xfer_buf, u16 addr,
 		u8 length, void *values);
 extern const struct dev_pm_ops cyttsp4_pm_ops;
 
-#endif /* _LINUX_CYTTSP4_CORE_H */
+#endif /* _freax_CYTTSP4_CORE_H */

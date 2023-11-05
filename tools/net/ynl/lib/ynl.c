@@ -3,10 +3,10 @@
 #include <poll.h>
 #include <string.h>
 #include <stdlib.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <freax/genetlink.h>
 
 #include "ynl.h"
 

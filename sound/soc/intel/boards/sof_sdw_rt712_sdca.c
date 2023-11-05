@@ -5,10 +5,10 @@
  *  sof_sdw_rt712_sdca - Helpers to handle RT712-SDCA from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
 #include <sound/control.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

@@ -5,17 +5,17 @@
 // Copyright (C) 2022-2023 Cirrus Logic, Inc. and
 //                         Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gcd.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/mfd/cs42l43.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gcd.h>
+#include <freax/irq.h>
+#include <freax/jiffies.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/string.h>
 #include <sound/control.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

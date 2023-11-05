@@ -8,12 +8,12 @@
  * Hanna Hawa <hannah@marvell.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-mvebu.h"
 

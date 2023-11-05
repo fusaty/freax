@@ -157,7 +157,7 @@
 		led-0 {
 			bootph-all;
 			gpios = <&main_gpio0 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			function = LED_FUNCTION_HEARTBEAT;
 			default-state = "off";
 		};
@@ -165,7 +165,7 @@
 		led-1 {
 			bootph-all;
 			gpios = <&main_gpio0 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			freax,default-trigger = "disk-activity";
 			function = LED_FUNCTION_DISK_ACTIVITY;
 			default-state = "keep";
 		};
@@ -197,7 +197,7 @@
 
 		usr: button-usr {
 			label = "User Key";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&main_gpio0 18 GPIO_ACTIVE_LOW>;
 		};
 

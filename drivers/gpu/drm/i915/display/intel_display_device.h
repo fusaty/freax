@@ -6,7 +6,7 @@
 #ifndef __INTEL_DISPLAY_DEVICE_H__
 #define __INTEL_DISPLAY_DEVICE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_display_limits.h"
 

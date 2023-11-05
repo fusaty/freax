@@ -14,8 +14,8 @@
 #include <asm/asm.h>
 #include <asm/smap.h>
 #include <asm/nospec-branch.h>
-#include <linux/linkage.h>
-#include <linux/err.h>
+#include <freax/linkage.h>
+#include <freax/err.h>
 
 #include "calling.h"
 
@@ -146,7 +146,7 @@ SYM_CODE_END(entry_SYSENTER_compat)
  *
  *  - Most programmers do not directly target AMD CPUs, and the 32-bit
  *    SYSCALL instruction does not exist on Intel CPUs.  Even on AMD
- *    CPUs, Linux disables the SYSCALL instruction on 32-bit kernels
+ *    CPUs, freax disables the SYSCALL instruction on 32-bit kernels
  *    because the SYSCALL instruction in legacy/native 32-bit mode (as
  *    opposed to compat mode) is sufficiently poorly designed as to be
  *    essentially unusable.
@@ -279,7 +279,7 @@ SYM_CODE_END(entry_SYSCALL_compat)
 /*
  * 32-bit legacy system call entry.
  *
- * 32-bit x86 Linux system calls traditionally used the INT $0x80
+ * 32-bit x86 freax system calls traditionally used the INT $0x80
  * instruction.  INT $0x80 lands here.
  *
  * This entry point can be used by 32-bit and 64-bit programs to perform

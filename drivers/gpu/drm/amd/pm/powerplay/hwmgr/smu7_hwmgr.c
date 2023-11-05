@@ -21,10 +21,10 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 #include <asm/div64.h>
 #if IS_ENABLED(CONFIG_X86_64)
 #include <asm/intel-family.h>

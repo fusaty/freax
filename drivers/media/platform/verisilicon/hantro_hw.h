@@ -9,8 +9,8 @@
 #ifndef HANTRO_HW_H_
 #define HANTRO_HW_H_
 
-#include <linux/interrupt.h>
-#include <linux/v4l2-controls.h>
+#include <freax/interrupt.h>
+#include <freax/v4l2-controls.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-vp9.h>
 #include <media/videobuf2-core.h>

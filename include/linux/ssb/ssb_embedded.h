@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_EMBEDDED_H_
-#define LINUX_SSB_EMBEDDED_H_
+#ifndef freax_SSB_EMBEDDED_H_
+#define freax_SSB_EMBEDDED_H_
 
-#include <linux/types.h>
-#include <linux/ssb/ssb.h>
+#include <freax/types.h>
+#include <freax/ssb/ssb.h>
 
 
 extern int ssb_watchdog_timer_set(struct ssb_bus *bus, u32 ticks);
@@ -16,4 +16,4 @@ u32 ssb_gpio_control(struct ssb_bus *bus, u32 mask, u32 value);
 u32 ssb_gpio_intmask(struct ssb_bus *bus, u32 mask, u32 value);
 u32 ssb_gpio_polarity(struct ssb_bus *bus, u32 mask, u32 value);
 
-#endif /* LINUX_SSB_EMBEDDED_H_ */
+#endif /* freax_SSB_EMBEDDED_H_ */

@@ -2,13 +2,13 @@
 /*
  * Copyright (C) 2001 Jens Axboe <axboe@suse.de>
  */
-#ifndef __LINUX_BIO_H
-#define __LINUX_BIO_H
+#ifndef __freax_BIO_H
+#define __freax_BIO_H
 
-#include <linux/mempool.h>
+#include <freax/mempool.h>
 /* struct bio, bio_vec and BIO_* flags are defined in blk_types.h */
-#include <linux/blk_types.h>
-#include <linux/uio.h>
+#include <freax/blk_types.h>
+#include <freax/uio.h>
 
 #define BIO_MAX_VECS		256U
 
@@ -813,4 +813,4 @@ static inline void bio_clear_polled(struct bio *bio)
 struct bio *blk_next_bio(struct bio *bio, struct block_device *bdev,
 		unsigned int nr_pages, blk_opf_t opf, gfp_t gfp);
 
-#endif /* __LINUX_BIO_H */
+#endif /* __freax_BIO_H */

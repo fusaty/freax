@@ -20,13 +20,13 @@
 		module_led: led-0 {
 			label = "module_led";
 			gpios = <&gpio2 RK_PD1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			panic-indicator;
 		};
 	};
 
 	extcon_usb3: extcon-usb3 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		id-gpios = <&gpio1 RK_PC2 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb3_id>;

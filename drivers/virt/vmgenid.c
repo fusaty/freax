@@ -7,10 +7,10 @@
  * information to random.c.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/random.h>
 
 ACPI_MODULE_NAME("vmgenid");
 

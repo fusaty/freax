@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 /* Copyright (c) 2021, Microsoft Corporation. */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/utsname.h>
+#include <freax/version.h>
 
 #include <net/mana/mana.h>
 
@@ -917,10 +917,10 @@ int mana_gd_verify_vf_version(struct pci_dev *pdev)
 	req.gd_drv_cap_flags4 = GDMA_DRV_CAP_FLAGS4;
 
 	req.drv_ver = 0;	/* Unused*/
-	req.os_type = 0x10;	/* Linux */
-	req.os_ver_major = LINUX_VERSION_MAJOR;
-	req.os_ver_minor = LINUX_VERSION_PATCHLEVEL;
-	req.os_ver_build = LINUX_VERSION_SUBLEVEL;
+	req.os_type = 0x10;	/* freax */
+	req.os_ver_major = freax_VERSION_MAJOR;
+	req.os_ver_minor = freax_VERSION_PATCHLEVEL;
+	req.os_ver_build = freax_VERSION_SUBLEVEL;
 	strscpy(req.os_ver_str1, utsname()->sysname, sizeof(req.os_ver_str1));
 	strscpy(req.os_ver_str2, utsname()->release, sizeof(req.os_ver_str2));
 	strscpy(req.os_ver_str3, utsname()->version, sizeof(req.os_ver_str3));

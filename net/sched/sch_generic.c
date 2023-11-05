@@ -7,23 +7,23 @@
  *              - Ingress support
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
-#include <linux/skb_array.h>
-#include <linux/if_macvlan.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/init.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/if_vlan.h>
+#include <freax/skb_array.h>
+#include <freax/if_macvlan.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>
 #include <net/dst.h>

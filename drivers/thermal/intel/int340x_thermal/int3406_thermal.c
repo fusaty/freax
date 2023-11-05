@@ -6,11 +6,11 @@
  * Authors: Aaron Lu <aaron.lu@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/thermal.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/thermal.h>
 #include <acpi/video.h>
 
 #define INT3406_BRIGHTNESS_LIMITS_CHANGED	0x80

@@ -4,13 +4,13 @@
  * Copyright (C) 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mpls.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/mpls.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 #include <net/icmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>

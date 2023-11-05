@@ -4,17 +4,17 @@
  * Copyright (C) 2015 Texas Instruments Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/bitfield.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/bitfield.h>
+#include <freax/nvmem-consumer.h>
 
 #include <dt-bindings/net/ti-dp83867.h>
 

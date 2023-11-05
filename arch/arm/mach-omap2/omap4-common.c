@@ -7,19 +7,19 @@
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/export.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/of_address.h>
-#include <linux/reboot.h>
-#include <linux/genalloc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/export.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/of_address.h>
+#include <freax/reboot.h>
+#include <freax/genalloc.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/map.h>

@@ -9,17 +9,17 @@
  *
  *  Started by: Thomas Gleixner and Ingo Molnar
  */
-#ifndef _LINUX_HRTIMER_H
-#define _LINUX_HRTIMER_H
+#ifndef _freax_HRTIMER_H
+#define _freax_HRTIMER_H
 
-#include <linux/hrtimer_defs.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/seqlock.h>
-#include <linux/timer.h>
-#include <linux/timerqueue.h>
+#include <freax/hrtimer_defs.h>
+#include <freax/rbtree.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/percpu.h>
+#include <freax/seqlock.h>
+#include <freax/timer.h>
+#include <freax/timerqueue.h>
 
 struct hrtimer_clock_base;
 struct hrtimer_cpu_base;

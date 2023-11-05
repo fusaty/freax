@@ -8,11 +8,11 @@
 #ifndef IIO_SX_COMMON_H
 #define IIO_SX_COMMON_H
 
-#include <linux/acpi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
 
 struct device;
 struct i2c_client;

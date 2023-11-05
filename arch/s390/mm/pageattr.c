@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@freax.vnet.ibm.com>
  */
-#include <linux/hugetlb.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/proc_fs.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/facility.h>
 #include <asm/pgalloc.h>

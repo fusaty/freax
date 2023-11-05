@@ -11,17 +11,17 @@
 #include "super.h"
 #include "super-io.h"
 
-#include <linux/anon_inodes.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/kthread.h>
-#include <linux/major.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/anon_inodes.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/ioctl.h>
+#include <freax/kthread.h>
+#include <freax/major.h>
+#include <freax/sched/task.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 /* returns with ref on ca->ref */
 static struct bch_dev *bch2_device_lookup(struct bch_fs *c, u64 dev,

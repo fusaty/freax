@@ -6,7 +6,7 @@
 #ifndef __NCSI_NETLINK_H__
 #define __NCSI_NETLINK_H__
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #include "internal.h"
 

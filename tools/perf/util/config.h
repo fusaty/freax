@@ -3,7 +3,7 @@
 #define __PERF_CONFIG_H
 
 #include <stdbool.h>
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct perf_config_item {
 	char *name;

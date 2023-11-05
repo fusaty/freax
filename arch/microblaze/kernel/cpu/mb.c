@@ -9,18 +9,18 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/initrd.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/seq_file.h>
+#include <freax/cpu.h>
+#include <freax/initrd.h>
 
-#include <linux/bug.h>
+#include <freax/bug.h>
 #include <asm/cpuinfo.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 #include <asm/page.h>
-#include <linux/param.h>
+#include <freax/param.h>
 #include <asm/pvr.h>
 #include <asm/sections.h>
 #include <asm/setup.h>

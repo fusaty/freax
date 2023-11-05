@@ -9,12 +9,12 @@
  *  input is done also via polling. Do not expect good performance.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

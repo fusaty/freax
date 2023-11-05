@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/pgd.c
+ *  freax/arch/arm/mm/pgd.c
  *
  *  Copyright (C) 1998-2005 Russell King
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <freax/mm.h>
+#include <freax/gfp.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
 
 #include <asm/cp15.h>
 #include <asm/pgalloc.h>

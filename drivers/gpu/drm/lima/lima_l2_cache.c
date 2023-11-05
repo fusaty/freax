@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/iopoll.h>
-#include <linux/device.h>
+#include <freax/iopoll.h>
+#include <freax/device.h>
 
 #include "lima_device.h"
 #include "lima_l2_cache.h"

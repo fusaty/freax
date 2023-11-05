@@ -7,8 +7,8 @@
 #ifndef __ASM_ARM_KVM_PMU_H
 #define __ASM_ARM_KVM_PMU_H
 
-#include <linux/perf_event.h>
-#include <linux/perf/arm_pmuv3.h>
+#include <freax/perf_event.h>
+#include <freax/perf/arm_pmuv3.h>
 
 #define ARMV8_PMU_CYCLE_IDX		(ARMV8_PMU_MAX_COUNTERS - 1)
 

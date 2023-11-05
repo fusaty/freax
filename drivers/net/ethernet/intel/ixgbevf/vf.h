@@ -4,11 +4,11 @@
 #ifndef __IXGBE_VF_H__
 #define __IXGBE_VF_H__
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
 
 #include "defines.h"
 #include "regs.h"

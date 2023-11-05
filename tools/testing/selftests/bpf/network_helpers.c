@@ -13,10 +13,10 @@
 #include <sys/stat.h>
 #include <sys/un.h>
 
-#include <linux/err.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/limits.h>
+#include <freax/err.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/limits.h>
 
 #include "bpf_util.h"
 #include "network_helpers.h"

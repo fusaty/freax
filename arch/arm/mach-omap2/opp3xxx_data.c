@@ -9,7 +9,7 @@
  *      Eduardo Valentin
  *      Paul Walmsley
  */
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "soc.h"
 #include "control.h"

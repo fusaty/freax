@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,21 +16,21 @@
  *		Jes Sorensen, <Jes.Sorensen@cern.ch>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/hippidevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/hippidevice.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
 #include <net/arp.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*
  * Create the HIPPI MAC header for an arbitrary protocol layer

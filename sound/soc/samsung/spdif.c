@@ -5,14 +5,14 @@
 // Copyright (c) 2010 Samsung Electronics Co. Ltd
 //		http://www.samsung.com/
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <freax/platform_data/asoc-s3c.h>
 
 #include "dma.h"
 #include "spdif.h"

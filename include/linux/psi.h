@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PSI_H
-#define _LINUX_PSI_H
+#ifndef _freax_PSI_H
+#define _freax_PSI_H
 
-#include <linux/jump_label.h>
-#include <linux/psi_types.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
-#include <linux/cgroup-defs.h>
-#include <linux/cgroup.h>
+#include <freax/jump_label.h>
+#include <freax/psi_types.h>
+#include <freax/sched.h>
+#include <freax/poll.h>
+#include <freax/cgroup-defs.h>
+#include <freax/cgroup.h>
 
 struct seq_file;
 struct css_set;
@@ -67,4 +67,4 @@ static inline void psi_cgroup_restart(struct psi_group *group) {}
 
 #endif /* CONFIG_PSI */
 
-#endif /* _LINUX_PSI_H */
+#endif /* _freax_PSI_H */

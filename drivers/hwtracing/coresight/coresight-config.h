@@ -7,8 +7,8 @@
 #ifndef _CORESIGHT_CORESIGHT_CONFIG_H
 #define _CORESIGHT_CORESIGHT_CONFIG_H
 
-#include <linux/coresight.h>
-#include <linux/types.h>
+#include <freax/coresight.h>
+#include <freax/types.h>
 
 /* CoreSight Configuration Management - component and system wide configuration */
 

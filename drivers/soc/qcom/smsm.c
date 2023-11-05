@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/regmap.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/soc/qcom/smem_state.h>
 
 /*
  * This driver implements the Qualcomm Shared Memory State Machine, a mechanism

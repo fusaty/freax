@@ -6,7 +6,7 @@
  * tools/ copied this from include/asm-generic/bitops.h, bit by bit as it needed
  * some functions.
  *
- * For the benefit of those who are trying to port Linux to another
+ * For the benefit of those who are trying to port freax to another
  * architecture, here are some C-language equivalents.  You should
  * recode these in the native assembly language, if at all possible.
  *
@@ -19,8 +19,8 @@
 #include <asm-generic/bitops/__fls.h>
 #include <asm-generic/bitops/fls64.h>
 
-#ifndef _TOOLS_LINUX_BITOPS_H_
-#error only <linux/bitops.h> can be included directly
+#ifndef _TOOLS_freax_BITOPS_H_
+#error only <freax/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/hweight.h>

@@ -2,7 +2,7 @@
 //
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
-// Authors: Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+// Authors: Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //          Cezary Rojewski <cezary.rojewski@intel.com>
 //
 

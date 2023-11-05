@@ -6,8 +6,8 @@
  * Copyright 2021 Google LLC
  * Contributed by Stephane Eranian <eranian@google.com>
  */
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
 #include <asm/msr.h>
 #include <asm/cpufeature.h>
 

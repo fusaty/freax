@@ -13,16 +13,16 @@
  * from Florian Echtler, Henrik Bjerregaard Pedersen, and others.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/usb.h>
+#include <freax/uaccess.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 #include <asm/unaligned.h>
 #include <video/udlfb.h>
 #include "edid.h"

@@ -1,5 +1,5 @@
 /*
- *  linux/arch/arm/vfp/vfpdouble.c
+ *  freax/arch/arm/vfp/vfpdouble.c
  *
  * This code is derived in part from John R. Housers softfloat library, which
  * carries the following notice:
@@ -30,8 +30,8 @@
  * this code that are retained.
  * ===========================================================================
  */
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
 
 #include <asm/div64.h>
 #include <asm/vfp.h>

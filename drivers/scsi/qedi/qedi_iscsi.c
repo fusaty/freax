@@ -4,10 +4,10 @@
  * Copyright (c) 2016 Cavium Inc.
  */
 
-#include <linux/blkdev.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <freax/blkdev.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
 #include <scsi/scsi_tcq.h>
 
 #include "qedi.h"

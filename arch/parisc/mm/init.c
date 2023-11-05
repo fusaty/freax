@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/parisc/mm/init.c
+ *  freax/arch/parisc/mm/init.c
  *
  *  Copyright (C) 1995	Linus Torvalds
  *  Copyright 1999 SuSE GmbH
@@ -12,18 +12,18 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/swap.h>
-#include <linux/unistd.h>
-#include <linux/nodemask.h>	/* for node_online_map */
-#include <linux/pagemap.h>	/* for release_pages */
-#include <linux/compat.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/gfp.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/swap.h>
+#include <freax/unistd.h>
+#include <freax/nodemask.h>	/* for node_online_map */
+#include <freax/pagemap.h>	/* for release_pages */
+#include <freax/compat.h>
 
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
@@ -610,7 +610,7 @@ EXPORT_SYMBOL(empty_zero_page);
 /*
  * pagetable_init() sets up the page tables
  *
- * Note that gateway_init() places the Linux gateway page at page 0.
+ * Note that gateway_init() places the freax gateway page at page 0.
  * Since gateway pages cannot be dereferenced this has the desirable
  * side effect of trapping those pesky NULL-reference errors in the
  * kernel.
@@ -648,21 +648,21 @@ static void __init pagetable_init(void)
 
 static void __init gateway_init(void)
 {
-	unsigned long linux_gateway_page_addr;
+	unsigned long freax_gateway_page_addr;
 	/* FIXME: This is 'const' in order to trick the compiler
 	   into not treating it as DP-relative data. */
-	extern void * const linux_gateway_page;
+	extern void * const freax_gateway_page;
 
-	linux_gateway_page_addr = LINUX_GATEWAY_ADDR & PAGE_MASK;
+	freax_gateway_page_addr = freax_GATEWAY_ADDR & PAGE_MASK;
 
 	/*
-	 * Setup Linux Gateway page.
+	 * Setup freax Gateway page.
 	 *
-	 * The Linux gateway page will reside in kernel space (on virtual
+	 * The freax gateway page will reside in kernel space (on virtual
 	 * page 0), so it doesn't need to be aliased into user space.
 	 */
 
-	map_pages(linux_gateway_page_addr, __pa(&linux_gateway_page),
+	map_pages(freax_gateway_page_addr, __pa(&freax_gateway_page),
 		  PAGE_SIZE, PAGE_GATEWAY, 1);
 }
 

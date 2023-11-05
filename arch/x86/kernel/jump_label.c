@@ -5,13 +5,13 @@
  * Copyright (C) 2009 Jason Baron <jbaron@redhat.com>
  *
  */
-#include <linux/jump_label.h>
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/cpu.h>
+#include <freax/jump_label.h>
+#include <freax/memory.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/jhash.h>
+#include <freax/cpu.h>
 #include <asm/kprobes.h>
 #include <asm/alternative.h>
 #include <asm/text-patching.h>

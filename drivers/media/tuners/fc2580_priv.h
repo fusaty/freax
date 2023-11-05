@@ -11,8 +11,8 @@
 #include "fc2580.h"
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-subdev.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <freax/regmap.h>
+#include <freax/math64.h>
 
 struct fc2580_reg_val {
 	u8 reg;

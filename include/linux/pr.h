@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_PR_H
-#define LINUX_PR_H
+#ifndef freax_PR_H
+#define freax_PR_H
 
-#include <uapi/linux/pr.h>
+#include <uapi/freax/pr.h>
 
 struct pr_keys {
 	u32	generation;
@@ -41,4 +41,4 @@ struct pr_ops {
 			struct pr_held_reservation *rsv);
 };
 
-#endif /* LINUX_PR_H */
+#endif /* freax_PR_H */

@@ -21,8 +21,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/interrupt.h>
-#include <linux/threads.h>
+#include <freax/interrupt.h>
+#include <freax/threads.h>
 #include <asm/tlbflush.h>
 #include <asm/paravirt.h>
 #include <asm/fixmap.h>

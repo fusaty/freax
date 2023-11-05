@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MSG_H
-#define _LINUX_MSG_H
+#ifndef _freax_MSG_H
+#define _freax_MSG_H
 
-#include <linux/list.h>
-#include <uapi/linux/msg.h>
+#include <freax/list.h>
+#include <uapi/freax/msg.h>
 
 /* one msg_msg structure for each message */
 struct msg_msg {
@@ -15,4 +15,4 @@ struct msg_msg {
 	/* the actual message follows immediately */
 };
 
-#endif /* _LINUX_MSG_H */
+#endif /* _freax_MSG_H */

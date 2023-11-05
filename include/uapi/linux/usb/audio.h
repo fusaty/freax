@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * <linux/usb/audio.h> -- USB Audio definitions.
+ * <freax/usb/audio.h> -- USB Audio definitions.
  *
  * Copyright (C) 2006 Thumtronics Pty Ltd.
  * Developed for Thumtronics by Grey Innovation
@@ -19,10 +19,10 @@
  * this standard or common for newer versions.
  */
 
-#ifndef _UAPI__LINUX_USB_AUDIO_H
-#define _UAPI__LINUX_USB_AUDIO_H
+#ifndef _UAPI__freax_USB_AUDIO_H
+#define _UAPI__freax_USB_AUDIO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* bInterfaceProtocol values to denote the version of the standard used */
 #define UAC_VERSION_1			0x00
@@ -635,4 +635,4 @@ struct uac1_status_word {
 } __attribute__((packed));
 
 
-#endif /* _UAPI__LINUX_USB_AUDIO_H */
+#endif /* _UAPI__freax_USB_AUDIO_H */

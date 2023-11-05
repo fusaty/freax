@@ -8,8 +8,8 @@
  *
  * Head.S contains the SH exception handlers and startup code.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/mmu.h>
 #include <cpu/mmu_context.h>

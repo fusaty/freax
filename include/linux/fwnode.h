@@ -6,13 +6,13 @@
  * Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#ifndef _LINUX_FWNODE_H_
-#define _LINUX_FWNODE_H_
+#ifndef _freax_FWNODE_H_
+#define _freax_FWNODE_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/bits.h>
-#include <linux/err.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/bits.h>
+#include <freax/err.h>
 
 struct fwnode_operations;
 struct device;

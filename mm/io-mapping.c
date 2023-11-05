@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/mm.h>
-#include <linux/io-mapping.h>
+#include <freax/mm.h>
+#include <freax/io-mapping.h>
 
 /**
  * io_mapping_map_user - remap an I/O mapping to userspace

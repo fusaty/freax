@@ -85,7 +85,7 @@ Supported chips:
     Datasheet: n.a.
 
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <freax@roeck-us.net>
 
 
 Description

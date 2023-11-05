@@ -1,13 +1,13 @@
-Linux CDC ACM inf
+freax CDC ACM inf
 -----------------
 
-.. include:: linux-cdc-acm.inf
+.. include:: freax-cdc-acm.inf
     :literal:
 
-Linux inf
+freax inf
 ---------
 
-.. include:: linux.inf
+.. include:: freax.inf
     :literal:
 
 USB devfs drop permissions source

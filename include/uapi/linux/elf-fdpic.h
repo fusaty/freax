@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /* elf-fdpic.h: FDPIC ELF load map
  *
  * Copyright (C) 2003 Red Hat, Inc. All Rights Reserved.
@@ -10,10 +10,10 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_ELF_FDPIC_H
-#define _UAPI_LINUX_ELF_FDPIC_H
+#ifndef _UAPI_freax_ELF_FDPIC_H
+#define _UAPI_freax_ELF_FDPIC_H
 
-#include <linux/elf.h>
+#include <freax/elf.h>
 
 #define PT_GNU_STACK    (PT_LOOS + 0x474e551)
 
@@ -47,4 +47,4 @@ struct elf64_fdpic_loadmap {
 
 #define ELF64_FDPIC_LOADMAP_VERSION	0x0000
 
-#endif /* _UAPI_LINUX_ELF_FDPIC_H */
+#endif /* _UAPI_freax_ELF_FDPIC_H */

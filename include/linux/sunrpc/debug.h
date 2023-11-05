@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/debug.h
+ * freax/include/freax/sunrpc/debug.h
  *
  * Debugging support for sunrpc module
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
-#ifndef _LINUX_SUNRPC_DEBUG_H_
-#define _LINUX_SUNRPC_DEBUG_H_
+#ifndef _freax_SUNRPC_DEBUG_H_
+#define _freax_SUNRPC_DEBUG_H_
 
-#include <uapi/linux/sunrpc/debug.h>
+#include <uapi/freax/sunrpc/debug.h>
 
 /*
  * Debugging macros etc
@@ -127,4 +127,4 @@ rpc_xprt_debugfs_unregister(struct rpc_xprt *xprt)
 }
 #endif
 
-#endif /* _LINUX_SUNRPC_DEBUG_H_ */
+#endif /* _freax_SUNRPC_DEBUG_H_ */

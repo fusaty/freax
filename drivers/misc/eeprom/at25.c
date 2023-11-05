@@ -6,19 +6,19 @@
  * Copyright (C) 2006 David Brownell
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
-#include <linux/spi/eeprom.h>
-#include <linux/spi/spi.h>
+#include <freax/spi/eeprom.h>
+#include <freax/spi/spi.h>
 
-#include <linux/nvmem-provider.h>
+#include <freax/nvmem-provider.h>
 
 /*
  * NOTE: this is an *EEPROM* driver. The vagaries of product naming

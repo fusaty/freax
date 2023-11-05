@@ -8,15 +8,15 @@
  * Based on net/netfilter/xt_tcpudp.c
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/types.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/module.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
 #include <net/mip6.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6t_mh.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_ipv6/ip6t_mh.h>
 
 MODULE_DESCRIPTION("Xtables: IPv6 Mobility Header match");
 MODULE_LICENSE("GPL");

@@ -5,16 +5,16 @@
  *  Copyright (C) 2015  Red Hat, Inc.
  */
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/mmu_notifier.h>
-#include <linux/hugetlb.h>
-#include <linux/shmem_fs.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/mmu_notifier.h>
+#include <freax/hugetlb.h>
+#include <freax/shmem_fs.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
 #include "internal.h"

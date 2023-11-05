@@ -7,10 +7,10 @@
  * Copyright (C) 2014 Philipp Zabel, Pengutronix
  */
 
-#include <linux/align.h>
-#include <linux/build_bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/align.h>
+#include <freax/build_bug.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include "hantro_jpeg.h"
 #include "hantro.h"
 

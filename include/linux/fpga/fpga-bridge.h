@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_FPGA_BRIDGE_H
-#define _LINUX_FPGA_BRIDGE_H
+#ifndef _freax_FPGA_BRIDGE_H
+#define _freax_FPGA_BRIDGE_H
 
-#include <linux/device.h>
-#include <linux/fpga/fpga-mgr.h>
+#include <freax/device.h>
+#include <freax/fpga/fpga-mgr.h>
 
 struct fpga_bridge;
 
@@ -85,4 +85,4 @@ fpga_bridge_register(struct device *parent, const char *name,
 		     void *priv);
 void fpga_bridge_unregister(struct fpga_bridge *br);
 
-#endif /* _LINUX_FPGA_BRIDGE_H */
+#endif /* _freax_FPGA_BRIDGE_H */

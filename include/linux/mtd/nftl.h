@@ -6,8 +6,8 @@
 #ifndef __MTD_NFTL_H__
 #define __MTD_NFTL_H__
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/blktrans.h>
 
 #include <mtd/nftl-user.h>
 

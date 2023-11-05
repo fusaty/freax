@@ -6,15 +6,15 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on freax XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp.
  */
-#ifndef __LINUX_CDNSP_GADGET_H
-#define __LINUX_CDNSP_GADGET_H
+#ifndef __freax_CDNSP_GADGET_H
+#define __freax_CDNSP_GADGET_H
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/usb/gadget.h>
-#include <linux/irq.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/usb/gadget.h>
+#include <freax/irq.h>
 
 /* Max number slots - only 1 is allowed. */
 #define CDNSP_DEV_MAX_SLOTS	1
@@ -1594,4 +1594,4 @@ static inline struct cdnsp_request *next_request(struct list_head *list)
 int cdnsp_remove_request(struct cdnsp_device *pdev, struct cdnsp_request *preq,
 			 struct cdnsp_ep *pep);
 
-#endif /* __LINUX_CDNSP_GADGET_H */
+#endif /* __freax_CDNSP_GADGET_H */

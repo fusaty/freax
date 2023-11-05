@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <assert.h>
 #include <bpf/bpf.h>
-#include <linux/filter.h>
+#include <freax/filter.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>

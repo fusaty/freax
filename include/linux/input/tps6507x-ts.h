@@ -1,4 +1,4 @@
-/* linux/i2c/tps6507x-ts.h
+/* freax/i2c/tps6507x-ts.h
  *
  * Functions to access TPS65070 touch screen chip.
  *
@@ -8,8 +8,8 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#ifndef __LINUX_I2C_TPS6507X_TS_H
-#define __LINUX_I2C_TPS6507X_TS_H
+#ifndef __freax_I2C_TPS6507X_TS_H
+#define __freax_I2C_TPS6507X_TS_H
 
 /* Board specific touch screen initial values */
 struct touchscreen_init_data {
@@ -20,4 +20,4 @@ struct touchscreen_init_data {
 	__u16	version;
 };
 
-#endif /*  __LINUX_I2C_TPS6507X_TS_H */
+#endif /*  __freax_I2C_TPS6507X_TS_H */

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (C) 2007 Oracle.  All rights reserved.
  *
@@ -17,16 +17,16 @@
  * Boston, MA 021110-1307, USA.
  */
 
-#ifndef _UAPI_LINUX_BTRFS_H
-#define _UAPI_LINUX_BTRFS_H
+#ifndef _UAPI_freax_BTRFS_H
+#define _UAPI_freax_BTRFS_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
+#include <freax/fs.h>
 
 #define BTRFS_IOCTL_MAGIC 0x94
 #define BTRFS_VOL_NAME_MAX 255
@@ -1182,4 +1182,4 @@ enum btrfs_err_code {
 }
 #endif
 
-#endif /* _UAPI_LINUX_BTRFS_H */
+#endif /* _UAPI_freax_BTRFS_H */

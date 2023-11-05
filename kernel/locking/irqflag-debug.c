@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/bug.h>
-#include <linux/export.h>
-#include <linux/irqflags.h>
+#include <freax/bug.h>
+#include <freax/export.h>
+#include <freax/irqflags.h>
 
 noinstr void warn_bogus_irq_restore(void)
 {

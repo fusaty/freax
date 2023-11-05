@@ -9,8 +9,8 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include <sound/hda_register.h>
 #include <sound/hdaudio_ext.h>
 

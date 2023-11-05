@@ -5,41 +5,41 @@
  *
  * 		Author: 	Alan Cox <alan@lxorguk.ukuu.org.uk>
  * 
- *              Adapted to become the Linux 2.0 Coda pseudo device
+ *              Adapted to become the freax 2.0 Coda pseudo device
  *              Peter  Braam  <braam@maths.ox.ac.uk> 
  *              Michael Callahan <mjc@emmy.smith.edu>           
  *
- *              Changes for Linux 2.1
+ *              Changes for freax 2.1
  *              Copyright (c) 1997 Carnegie-Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/pid_namespace.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/major.h>
+#include <freax/time.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/fcntl.h>
+#include <freax/delay.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/pid_namespace.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 
 #include "coda_int.h"
 

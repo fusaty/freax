@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (C) 2023 Intel Corporation. All rights reserved.
- * Intel Visual Sensing Controller CSI Linux driver
+ * Intel Visual Sensing Controller CSI freax driver
  */
 
 /*
@@ -12,18 +12,18 @@
  * up the caller. There can be only one outstanding command at a time.
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/units.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/mei_cl_bus.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/units.h>
+#include <freax/uuid.h>
+#include <freax/workqueue.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>

@@ -5,8 +5,8 @@
 	.level 1.1
 
 #include <asm/assembly.h>
-#include <linux/threads.h>
-#include <linux/linkage.h>
+#include <freax/threads.h>
+#include <freax/linkage.h>
 
 	.text
 	.import toc_intr,code

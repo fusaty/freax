@@ -5,9 +5,9 @@
  * - Kurt Van Dijck, EIA Electronics
  */
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
 #include <asm/io.h>
 
 #include "softing.h"

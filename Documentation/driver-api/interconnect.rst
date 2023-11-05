@@ -82,7 +82,7 @@ Interconnect provider is an entity that implements methods to initialize and
 configure interconnect bus hardware. The interconnect provider drivers should
 be registered with the interconnect provider core.
 
-.. kernel-doc:: include/linux/interconnect-provider.h
+.. kernel-doc:: include/freax/interconnect-provider.h
 
 Interconnect consumers
 ----------------------

@@ -20,13 +20,13 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/clk.h>
-#include <linux/host1x.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/host1x.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "dev.h"
 

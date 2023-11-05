@@ -33,7 +33,7 @@
 		led1 {
 			label = "led1";
 			gpios = <&gpio4 17 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led2 {
@@ -160,7 +160,7 @@
 &uart2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	uart-has-rtscts;
 	status = "okay";
 };

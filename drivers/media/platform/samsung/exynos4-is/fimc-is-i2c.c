@@ -7,12 +7,12 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
 #include "fimc-is-i2c.h"
 
 struct fimc_is_i2c {

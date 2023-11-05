@@ -7,7 +7,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,22 +31,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
 #include <net/tcp.h>
-#include <linux/udp.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/udp.h>
+#include <freax/moduleparam.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 #include <net/ip.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <net/page_pool/types.h>
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 
 #include <xen/xen.h>
 #include <xen/xenbus.h>

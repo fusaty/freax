@@ -10,18 +10,18 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <freax/bcd.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/palmas.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
 
 struct palmas_rtc {
 	struct rtc_device	*rtc;

@@ -5,18 +5,18 @@
  *
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@freax.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/kasan.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/ptdump.h>
+#include <freax/debugfs.h>
+#include <freax/kasan.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/highmem.h>
+#include <freax/pci.h>
+#include <freax/ptdump.h>
 
 #include <asm/e820/types.h>
 

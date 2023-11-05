@@ -8,16 +8,16 @@
  *  Authors:	Omair Mohammed Abdullah <omair.m.abdullah@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/pm_qos.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/firmware.h>
+#include <freax/pm_qos.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
 #include <asm/platform_sst_audio.h>
 #include <sound/core.h>
 #include <sound/intel-dsp-config.h>
@@ -25,7 +25,7 @@
 #include <sound/compress_driver.h>
 #include <acpi/acbuffer.h>
 #include <acpi/platform/acenv.h>
-#include <acpi/platform/aclinux.h>
+#include <acpi/platform/acfreax.h>
 #include <acpi/actypes.h>
 #include <acpi/acpi_bus.h>
 #include <sound/soc-acpi.h>

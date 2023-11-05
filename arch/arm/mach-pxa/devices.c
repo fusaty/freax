@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/soc/pxa/cpu.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/spi/pxa2xx_spi.h>
+#include <freax/platform_data/i2c-pxa.h>
+#include <freax/soc/pxa/cpu.h>
 
 #include "udc.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <freax/platform_data/video-pxafb.h>
+#include <freax/platform_data/mmc-pxamci.h>
 #include "irqs.h"
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmp_dma.h>
+#include <freax/platform_data/usb-ohci-pxa27x.h>
+#include <freax/platform_data/mmp_dma.h>
 
 #include "regs-ost.h"
 #include "reset.h"

@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "cifs_unicode.h"
 #include "cifsproto.h"
 #include "ntlmssp.h"
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
-#include <linux/fips.h>
+#include <freax/ctype.h>
+#include <freax/random.h>
+#include <freax/highmem.h>
+#include <freax/fips.h>
 #include "../common/arc4.h"
 #include <crypto/aead.h>
 

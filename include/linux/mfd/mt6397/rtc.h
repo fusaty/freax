@@ -6,13 +6,13 @@
  *        Sean Wang <sean.wang@mediatek.com>
  */
 
-#ifndef _LINUX_MFD_MT6397_RTC_H_
-#define _LINUX_MFD_MT6397_RTC_H_
+#ifndef _freax_MFD_MT6397_RTC_H_
+#define _freax_MFD_MT6397_RTC_H_
 
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
 
 #define RTC_BBPU               0x0000
 #define RTC_BBPU_CBUSY         BIT(6)
@@ -83,4 +83,4 @@ struct mt6397_rtc {
 	const struct mtk_rtc_data *data;
 };
 
-#endif /* _LINUX_MFD_MT6397_RTC_H_ */
+#endif /* _freax_MFD_MT6397_RTC_H_ */

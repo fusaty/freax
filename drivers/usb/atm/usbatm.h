@@ -10,17 +10,17 @@
 #ifndef	_USBATM_H_
 #define	_USBATM_H_
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/stringify.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
+#include <freax/ratelimit.h>
 
 /*
 #define VERBOSE_DEBUG

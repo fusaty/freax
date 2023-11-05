@@ -6,11 +6,11 @@
  *  Copyright (c) 2014 Sebastian Reichel <sre@kernel.org>
  */
 
-#include <linux/property.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/module.h>
+#include <freax/property.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/module.h>
 
 static bool touchscreen_get_prop_u32(struct device *dev,
 				     const char *property,

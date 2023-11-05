@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MROUTE_H
-#define __LINUX_MROUTE_H
+#ifndef __freax_MROUTE_H
+#define __freax_MROUTE_H
 
-#include <linux/in.h>
-#include <linux/pim.h>
+#include <freax/in.h>
+#include <freax/pim.h>
 #include <net/fib_rules.h>
 #include <net/fib_notifier.h>
-#include <uapi/linux/mroute.h>
-#include <linux/mroute_base.h>
-#include <linux/sockptr.h>
+#include <uapi/freax/mroute.h>
+#include <freax/mroute_base.h>
+#include <freax/sockptr.h>
 
 #ifdef CONFIG_IP_MROUTE
 static inline int ip_mroute_opt(int opt)

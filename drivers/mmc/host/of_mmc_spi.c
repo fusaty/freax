@@ -7,17 +7,17 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/mmc_spi.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/host.h>
 
 MODULE_LICENSE("GPL");
 

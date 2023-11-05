@@ -5,26 +5,26 @@
  * Copyright (C) 2004-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/idr.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/rculist.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include <asm/byteorder.h>
 

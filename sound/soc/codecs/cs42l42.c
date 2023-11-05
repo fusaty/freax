@@ -9,21 +9,21 @@
  * Author: Michael White <michael.white@cirrus.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/version.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/version.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

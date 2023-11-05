@@ -9,9 +9,9 @@
 #ifndef _ASM_GENERIC_HYPERV_TLFS_H
 #define _ASM_GENERIC_HYPERV_TLFS_H
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/time64.h>
+#include <freax/types.h>
+#include <freax/bits.h>
+#include <freax/time64.h>
 
 /*
  * While not explicitly listed in the TLFS, Hyper-V always runs with a page size
@@ -118,24 +118,24 @@ union hv_reference_tsc_msr {
  *
  * msdn.microsoft.com/en-us/library/windows/hardware/ff542653%28v=vs.85%29.aspx
  *
- * While the current guideline does not specify how Linux guest ID(s)
+ * While the current guideline does not specify how freax guest ID(s)
  * need to be generated, our plan is to publish the guidelines for
- * Linux and other guest operating systems that currently are hosted
+ * freax and other guest operating systems that currently are hosted
  * on Hyper-V. The implementation here conforms to this yet
  * unpublished guidelines.
  *
  *
  * Bit(s)
  * 63 - Indicates if the OS is Open Source or not; 1 is Open Source
- * 62:56 - Os Type; Linux is 0x100
+ * 62:56 - Os Type; freax is 0x100
  * 55:48 - Distro specific identification
- * 47:16 - Linux kernel version number
+ * 47:16 - freax kernel version number
  * 15:0  - Distro specific identification
  *
  *
  */
 
-#define HV_LINUX_VENDOR_ID              0x8100
+#define HV_freax_VENDOR_ID              0x8100
 
 /*
  * Crash notification flags.

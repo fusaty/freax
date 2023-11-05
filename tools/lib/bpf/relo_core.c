@@ -2,10 +2,10 @@
 /* Copyright (c) 2019 Facebook */
 
 #ifdef __KERNEL__
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/string.h>
-#include <linux/bpf_verifier.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/string.h>
+#include <freax/bpf_verifier.h>
 #include "relo_core.h"
 
 static const char *btf_kind_str(const struct btf_type *t)
@@ -59,7 +59,7 @@ enum libbpf_print_level {
 #include <string.h>
 #include <errno.h>
 #include <ctype.h>
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include "libbpf.h"
 #include "bpf.h"

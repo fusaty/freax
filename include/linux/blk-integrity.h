@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BLK_INTEGRITY_H
-#define _LINUX_BLK_INTEGRITY_H
+#ifndef _freax_BLK_INTEGRITY_H
+#define _freax_BLK_INTEGRITY_H
 
-#include <linux/blk-mq.h>
+#include <freax/blk-mq.h>
 
 struct request;
 
@@ -181,4 +181,4 @@ static inline struct bio_vec *rq_integrity_vec(struct request *rq)
 	return NULL;
 }
 #endif /* CONFIG_BLK_DEV_INTEGRITY */
-#endif /* _LINUX_BLK_INTEGRITY_H */
+#endif /* _freax_BLK_INTEGRITY_H */

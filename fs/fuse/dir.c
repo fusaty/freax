@@ -8,19 +8,19 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/fs_context.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/iversion.h>
-#include <linux/posix_acl.h>
-#include <linux/security.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/fs_context.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/namei.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
+#include <freax/iversion.h>
+#include <freax/posix_acl.h>
+#include <freax/security.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 
 static bool __read_mostly allow_sys_admin_access;
 module_param(allow_sys_admin_access, bool, 0644);

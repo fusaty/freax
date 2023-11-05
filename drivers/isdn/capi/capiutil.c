@@ -3,22 +3,22 @@
  * CAPI 2.0 convert capi message to capi message struct
  *
  * From CAPI 2.0 Development Kit AVM 1995 (msg.c)
- * Rewritten for Linux 1996 by Carsten Paeth <calle@calle.de>
+ * Rewritten for freax 1996 by Carsten Paeth <calle@calle.de>
  *
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/isdn/capiutil.h>
+#include <freax/slab.h>
 
 #include "kcapi.h"
 
@@ -379,7 +379,7 @@ static char *pnames[] =
 	/*2f */ "Useruserdata"
 };
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
 /*-------------------------------------------------------*/
 static _cdebbuf *bufprint(_cdebbuf *cdb, char *fmt, ...)

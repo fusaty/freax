@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2016 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@freax.intel.com>
  */
 
-#ifndef __LINUX_XHCI_DBGP_H
-#define __LINUX_XHCI_DBGP_H
+#ifndef __freax_XHCI_DBGP_H
+#define __freax_XHCI_DBGP_H
 
 #ifdef CONFIG_EARLY_PRINTK_USB_XDBC
 int __init early_xdbc_parse_parameter(char *s, int keep_early);
@@ -23,4 +23,4 @@ static inline void __init early_xdbc_register_console(void)
 {
 }
 #endif /* CONFIG_EARLY_PRINTK_USB_XDBC */
-#endif /* __LINUX_XHCI_DBGP_H */
+#endif /* __freax_XHCI_DBGP_H */

@@ -8,13 +8,13 @@
  * Copyright (C) 2004 - 2005 Alex Aizman
  * maintained by open-iscsi@googlegroups.com
  */
-#include <linux/types.h>
-#include <linux/kfifo.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kfifo.h>
+#include <freax/delay.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 #include <net/tcp.h>
 #include <scsi/scsi_cmnd.h>

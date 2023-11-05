@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2006, 2007 Atmel Corporation
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/lcd.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 
 #include "ltv350qv.h"
 

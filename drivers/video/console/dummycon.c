@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/dummycon.c -- A dummy console driver
+ *  freax/drivers/video/dummycon.c -- A dummy console driver
  *
  *  To be used if there's no other console driver (e.g. for plain VGA text)
  *  available, usually until fbcon takes console over.
  */
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/vt_kern.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kdev_t.h>
+#include <freax/console.h>
+#include <freax/vt_kern.h>
+#include <freax/screen_info.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
 /*
  *  Dummy console driver

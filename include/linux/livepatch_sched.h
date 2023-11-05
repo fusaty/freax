@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_LIVEPATCH_SCHED_H_
-#define _LINUX_LIVEPATCH_SCHED_H_
+#ifndef _freax_LIVEPATCH_SCHED_H_
+#define _freax_LIVEPATCH_SCHED_H_
 
-#include <linux/jump_label.h>
-#include <linux/static_call_types.h>
+#include <freax/jump_label.h>
+#include <freax/static_call_types.h>
 
 #ifdef CONFIG_LIVEPATCH
 
@@ -26,4 +26,4 @@ static inline void klp_sched_try_switch(void) {}
 static inline void __klp_sched_try_switch(void) {}
 #endif /* CONFIG_LIVEPATCH */
 
-#endif /* _LINUX_LIVEPATCH_SCHED_H_ */
+#endif /* _freax_LIVEPATCH_SCHED_H_ */

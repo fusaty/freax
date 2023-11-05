@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/scsi/msgqueue.c
+ *  freax/drivers/acorn/scsi/msgqueue.c
  *
  *  Copyright (C) 1997-1998 Russell King
  *
  *  message queue handling
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
 
 #include "msgqueue.h"
 

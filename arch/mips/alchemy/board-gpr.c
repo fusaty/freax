@@ -5,19 +5,19 @@
  * Copyright (C) 2010 Wolfgang Grandegger <wg@denx.de>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/machine.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/leds.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/platform_data/i2c-gpio.h>
+#include <freax/gpio/machine.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/reboot.h>

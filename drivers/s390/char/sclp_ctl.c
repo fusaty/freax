@@ -4,16 +4,16 @@
  *
  * Copyright IBM Corp. 2012
  *
- * Author: Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author: Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
+#include <freax/compat.h>
+#include <freax/uaccess.h>
+#include <freax/miscdevice.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
+#include <freax/ioctl.h>
+#include <freax/fs.h>
 #include <asm/sclp_ctl.h>
 #include <asm/sclp.h>
 

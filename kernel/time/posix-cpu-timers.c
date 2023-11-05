@@ -3,19 +3,19 @@
  * Implement CPU time clocks for the POSIX clock interface.
  */
 
-#include <linux/sched/signal.h>
-#include <linux/sched/cputime.h>
-#include <linux/posix-timers.h>
-#include <linux/errno.h>
-#include <linux/math64.h>
-#include <linux/uaccess.h>
-#include <linux/kernel_stat.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/cputime.h>
+#include <freax/posix-timers.h>
+#include <freax/errno.h>
+#include <freax/math64.h>
+#include <freax/uaccess.h>
+#include <freax/kernel_stat.h>
 #include <trace/events/timer.h>
-#include <linux/tick.h>
-#include <linux/workqueue.h>
-#include <linux/compat.h>
-#include <linux/sched/deadline.h>
-#include <linux/task_work.h>
+#include <freax/tick.h>
+#include <freax/workqueue.h>
+#include <freax/compat.h>
+#include <freax/sched/deadline.h>
+#include <freax/task_work.h>
 
 #include "posix-timers.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa25x.c
+ *  freax/arch/arm/mach-pxa/pxa25x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -13,21 +13,21 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
+#include <freax/dmaengine.h>
+#include <freax/dma/pxa-dma.h>
+#include <freax/gpio.h>
+#include <freax/gpio-pxa.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/suspend.h>
+#include <freax/syscore_ops.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/platform_data/mmp_dma.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/soc/pxa/smemc.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>

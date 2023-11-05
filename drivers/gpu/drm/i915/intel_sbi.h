@@ -6,7 +6,7 @@
 #ifndef _INTEL_SBI_H_
 #define _INTEL_SBI_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 

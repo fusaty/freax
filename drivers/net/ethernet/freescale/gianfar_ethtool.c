@@ -15,33 +15,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/crc32.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/crc32.h>
 #include <asm/types.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/sort.h>
-#include <linux/if_vlan.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
+#include <freax/sort.h>
+#include <freax/if_vlan.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/fsl/ptp_qoriq.h>
 
 #include "gianfar.h"
 

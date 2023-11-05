@@ -5,16 +5,16 @@
  * Based on of_dma.h
  *
  * Copyright (C) 2013, Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  */
 
-#ifndef __LINUX_ACPI_DMA_H
-#define __LINUX_ACPI_DMA_H
+#ifndef __freax_ACPI_DMA_H
+#define __freax_ACPI_DMA_H
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/dmaengine.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/dmaengine.h>
 
 /**
  * struct acpi_dma_spec - slave device DMA resources
@@ -115,4 +115,4 @@ static inline struct dma_chan *acpi_dma_request_slave_chan_by_name(
 
 #define acpi_dma_request_slave_channel	acpi_dma_request_slave_chan_by_index
 
-#endif /* __LINUX_ACPI_DMA_H */
+#endif /* __freax_ACPI_DMA_H */

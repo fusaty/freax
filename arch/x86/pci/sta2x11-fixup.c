@@ -7,12 +7,12 @@
  * Copyright (c) 2010-2011 Wind River Systems, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/dma-map-ops.h>
-#include <linux/swiotlb.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/export.h>
+#include <freax/list.h>
+#include <freax/dma-map-ops.h>
+#include <freax/swiotlb.h>
 #include <asm/iommu.h>
 
 #define STA2X11_SWIOTLB_SIZE (4*1024*1024)

@@ -21,24 +21,24 @@
  * Tested on arch/arm/mach-spear13xx
  */
 
-#include <linux/ata.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pata_arasan_cf_data.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/ata.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/libata.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pata_arasan_cf_data.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 #include <trace/events/libata.h>
 
 #define DRIVER_NAME	"arasan_cf"

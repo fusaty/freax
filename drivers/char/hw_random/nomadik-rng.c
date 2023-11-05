@@ -4,14 +4,14 @@
  *  Copyright 2009 Alessandro Rubini
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/amba/bus.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/err.h>
 
 static int nmk_rng_read(struct hwrng *rng, void *data, size_t max, bool wait)
 {

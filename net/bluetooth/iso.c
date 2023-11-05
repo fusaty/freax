@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * BlueZ - Bluetooth protocol stack for Linux
+ * BlueZ - Bluetooth protocol stack for freax
  *
  * Copyright (C) 2022 Intel Corporation
  * Copyright 2023 NXP
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/sched/signal.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

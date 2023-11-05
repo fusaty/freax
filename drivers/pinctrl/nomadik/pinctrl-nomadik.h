@@ -2,10 +2,10 @@
 #ifndef PINCTRL_PINCTRL_NOMADIK_H
 #define PINCTRL_PINCTRL_NOMADIK_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinctrl.h>
 
 /* Package definitions */
 #define PINCTRL_NMK_STN8815	0

@@ -4,7 +4,7 @@
 #ifndef _AUX_DRV_H_
 #define _AUX_DRV_H_
 
-#include <linux/virtio_pci_modern.h>
+#include <freax/virtio_pci_modern.h>
 
 #define PDS_VDPA_DRV_DESCRIPTION    "AMD/Pensando vDPA VF Device Driver"
 #define PDS_VDPA_DRV_NAME           KBUILD_MODNAME

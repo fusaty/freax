@@ -12,9 +12,9 @@
 #include "hyperv.h"
 #include "lapic.h"
 
-#include <linux/eventfd.h>
-#include <linux/kvm_host.h>
-#include <linux/sched/stat.h>
+#include <freax/eventfd.h>
+#include <freax/kvm_host.h>
+#include <freax/sched/stat.h>
 
 #include <trace/events/kvm.h>
 #include <xen/interface/xen.h>
@@ -1452,7 +1452,7 @@ static bool kvm_xen_hcall_set_timer_op(struct kvm_vcpu *vcpu, uint64_t timeout,
 		uint64_t guest_now = get_kvmclock_ns(vcpu->kvm);
 		int64_t delta = timeout - guest_now;
 
-		/* Xen has a 'Linux workaround' in do_set_timer_op() which
+		/* Xen has a 'freax workaround' in do_set_timer_op() which
 		 * checks for negative absolute timeout values (caused by
 		 * integer overflow), and for values about 13 days in the
 		 * future (2^50ns) which would be caused by jiffies

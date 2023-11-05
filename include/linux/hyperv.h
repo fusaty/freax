@@ -12,18 +12,18 @@
 #ifndef _HYPERV_H
 #define _HYPERV_H
 
-#include <uapi/linux/hyperv.h>
+#include <uapi/freax/hyperv.h>
 
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/reciprocal_div.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
+#include <freax/list.h>
+#include <freax/timer.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/interrupt.h>
+#include <freax/reciprocal_div.h>
 #include <asm/hyperv-tlfs.h>
 
 #define MAX_PAGE_BUFFER_COUNT				32
@@ -242,7 +242,7 @@ static inline u32 hv_get_avail_to_write_percent(
  *
  * The WS2008 and WIN7 versions are listed here for
  * completeness but are no longer supported in the
- * Linux kernel.
+ * freax kernel.
  */
 
 #define VERSION_WS2008  ((0 << 16) | (13))
@@ -1486,7 +1486,7 @@ void vmbus_free_mmio(resource_size_t start, resource_size_t size);
 			  0x80, 0x2e, 0x27, 0xed, 0xe1, 0x9f)
 
 /*
- * Linux doesn't support these 4 devices: the first two are for
+ * freax doesn't support these 4 devices: the first two are for
  * Automatic Virtual Machine Activation, the third is for
  * Remote Desktop Virtualization, and the fourth is Initial
  * Machine Configuration (IMC) used only by Windows guests.

@@ -7,17 +7,17 @@
  * To do: Interrupt support.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #define PA12203001_DRIVER_NAME	"pa12203001"
 

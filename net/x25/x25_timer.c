@@ -14,9 +14,9 @@
  *					Centralised disconnection processing.
  */
 
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
+#include <freax/errno.h>
+#include <freax/jiffies.h>
+#include <freax/timer.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/x25.h>

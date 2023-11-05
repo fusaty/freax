@@ -9,12 +9,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
-#include <linux/signal.h>
-#include <linux/ratelimit.h>
-#include <linux/reboot.h>
+#include <freax/compiler.h>
+#include <freax/linkage.h>
+#include <freax/irqflags.h>
+#include <freax/signal.h>
+#include <freax/ratelimit.h>
+#include <freax/reboot.h>
 
 struct pt_regs;
 

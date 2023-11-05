@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
 
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/pid_namespace.h>
-#include <linux/fs.h>
-#include <linux/fdtable.h>
-#include <linux/filter.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/btf_ids.h>
-#include <linux/mm_types.h>
+#include <freax/init.h>
+#include <freax/namei.h>
+#include <freax/pid_namespace.h>
+#include <freax/fs.h>
+#include <freax/fdtable.h>
+#include <freax/filter.h>
+#include <freax/bpf_mem_alloc.h>
+#include <freax/btf_ids.h>
+#include <freax/mm_types.h>
 #include "mmap_unlock_work.h"
 
 static const char * const iter_task_type_names[] = {
@@ -812,7 +812,7 @@ struct bpf_iter_task_vma_kern_data {
 
 struct bpf_iter_task_vma {
 	/* opaque iterator state; having __u64 here allows to preserve correct
-	 * alignment requirements in vmlinux.h, generated from BTF
+	 * alignment requirements in vmfreax.h, generated from BTF
 	 */
 	__u64 __opaque[1];
 } __attribute__((aligned(8)));
@@ -824,7 +824,7 @@ struct bpf_iter_task_vma_kern {
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc int bpf_iter_task_vma_new(struct bpf_iter_task_vma *it,
 				      struct task_struct *task, u64 addr)
@@ -902,7 +902,7 @@ struct bpf_iter_css_task_kern {
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc int bpf_iter_css_task_new(struct bpf_iter_css_task *it,
 		struct cgroup_subsys_state *css, unsigned int flags)
@@ -971,7 +971,7 @@ enum {
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc int bpf_iter_task_new(struct bpf_iter_task *it,
 		struct task_struct *task__nullable, unsigned int flags)

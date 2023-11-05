@@ -5,8 +5,8 @@
  * Copyright (C) 2000, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/asm.h>
 
 	.text

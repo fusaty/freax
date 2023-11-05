@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/fou.yaml */
 /* YNL-GEN kernel header */
 
-#ifndef _LINUX_FOU_GEN_H
-#define _LINUX_FOU_GEN_H
+#ifndef _freax_FOU_GEN_H
+#define _freax_FOU_GEN_H
 
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/fou.h>
+#include <uapi/freax/fou.h>
 
 /* Global operation policy for fou */
 extern const struct nla_policy fou_nl_policy[FOU_ATTR_IFINDEX + 1];
@@ -22,4 +22,4 @@ int fou_nl_del_doit(struct sk_buff *skb, struct genl_info *info);
 int fou_nl_get_doit(struct sk_buff *skb, struct genl_info *info);
 int fou_nl_get_dumpit(struct sk_buff *skb, struct netlink_callback *cb);
 
-#endif /* _LINUX_FOU_GEN_H */
+#endif /* _freax_FOU_GEN_H */

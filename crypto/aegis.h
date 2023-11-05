@@ -10,8 +10,8 @@
 #define _CRYPTO_AEGIS_H
 
 #include <crypto/aes.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 #define AEGIS_BLOCK_SIZE 16
 

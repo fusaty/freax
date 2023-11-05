@@ -7,23 +7,23 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <sound/soc.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>
 #include <trace/events/asoc.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/registers.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/gpio.h>
+#include <freax/mfd/wm8994/core.h>
+#include <freax/mfd/wm8994/registers.h>
+#include <freax/mfd/wm8994/pdata.h>
+#include <freax/mfd/wm8994/gpio.h>
 
 #include <asm/unaligned.h>
 

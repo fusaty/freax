@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
  * 1999 Copyright (C) Pavel Machek, pavel@ucw.cz. This code is GPL.
  * 1999/11/04 Copyright (C) 1999 VMware, Inc. (Regis "HPReg" Duchesne)
  *            Made nbd_end_request() use the io_request_lock
  * 2001 Copyright (C) Steven Whitehouse
- *            New nbd_end_request() for compatibility with new linux block
+ *            New nbd_end_request() for compatibility with new freax block
  *            layer code.
  * 2003/06/24 Louis D. Langholtz <ldl@aros.net>
  *            Removed unneeded blksize_bits field from nbd_device struct.
@@ -15,10 +15,10 @@
  *            Link to userspace extensions, favor cookie over handle.
  */
 
-#ifndef _UAPILINUX_NBD_H
-#define _UAPILINUX_NBD_H
+#ifndef _UAPIfreax_NBD_H
+#define _UAPIfreax_NBD_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define NBD_SET_SOCK	_IO( 0xab, 0 )
 #define NBD_SET_BLKSIZE	_IO( 0xab, 1 )
@@ -101,4 +101,4 @@ struct nbd_reply {
 		char handle[8];	/* older spelling of cookie		*/
 	};
 };
-#endif /* _UAPILINUX_NBD_H */
+#endif /* _UAPIfreax_NBD_H */

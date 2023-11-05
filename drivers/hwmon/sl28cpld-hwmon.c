@@ -5,14 +5,14 @@
  * Copyright 2020 Kontron Europe GmbH
  */
 
-#include <linux/bitfield.h>
-#include <linux/hwmon.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/hwmon.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 #define FAN_INPUT		0x00
 #define   FAN_SCALE_X8		BIT(7)

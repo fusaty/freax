@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Nuvoton NCT7802Y Hardware Monitoring IC
 
 maintainers:
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <freax@roeck-us.net>
 
 description: |
   The NCT7802Y is a hardware monitor IC which supports one on-die and up to

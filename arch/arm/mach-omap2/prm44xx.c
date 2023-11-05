@@ -9,14 +9,14 @@
  * Rajendra Nayak <rnayak@ti.com>
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
+#include <freax/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of_irq.h>
+#include <freax/of.h>
 
 #include "soc.h"
 #include "iomap.h"

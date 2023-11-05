@@ -5,17 +5,17 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/sys_soc.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/sys_soc.h>
 
-#include <linux/fsl/mc.h>
+#include <freax/fsl/mc.h>
 #include <soc/fsl/dpaa2-io.h>
 
 #include "qbman-portal.h"

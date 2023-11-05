@@ -4,10 +4,10 @@
  * Copyright © 2008,2010 Intel Corporation
  */
 
-#include <linux/dma-resv.h>
-#include <linux/highmem.h>
-#include <linux/sync_file.h>
-#include <linux/uaccess.h>
+#include <freax/dma-resv.h>
+#include <freax/highmem.h>
+#include <freax/sync_file.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_syncobj.h>
 

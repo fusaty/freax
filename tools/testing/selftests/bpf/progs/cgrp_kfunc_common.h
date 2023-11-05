@@ -5,7 +5,7 @@
 #define _CGRP_KFUNC_COMMON_H
 
 #include <errno.h>
-#include <vmlinux.h>
+#include <vmfreax.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

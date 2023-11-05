@@ -6,15 +6,15 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched/signal.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <freax/delay.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/nvmem-provider.h>
+#include <freax/pm_runtime.h>
+#include <freax/sched/signal.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
 
 #include "tb.h"
 

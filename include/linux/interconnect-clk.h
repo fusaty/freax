@@ -3,8 +3,8 @@
  * Copyright (c) 2023, Linaro Ltd.
  */
 
-#ifndef __LINUX_INTERCONNECT_CLK_H
-#define __LINUX_INTERCONNECT_CLK_H
+#ifndef __freax_INTERCONNECT_CLK_H
+#define __freax_INTERCONNECT_CLK_H
 
 struct device;
 

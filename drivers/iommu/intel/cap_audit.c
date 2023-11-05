@@ -5,7 +5,7 @@
  * Copyright (C) 2021 Intel Corporation
  *
  * Author: Kyung Min Park <kyung.min.park@intel.com>
- *         Lu Baolu <baolu.lu@linux.intel.com>
+ *         Lu Baolu <baolu.lu@freax.intel.com>
  */
 
 #define pr_fmt(fmt)	"DMAR: " fmt

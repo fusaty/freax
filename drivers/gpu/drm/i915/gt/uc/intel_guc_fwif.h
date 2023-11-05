@@ -6,9 +6,9 @@
 #ifndef _INTEL_GUC_FWIF_H
 #define _INTEL_GUC_FWIF_H
 
-#include <linux/bits.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include "gt/intel_engine_types.h"
 
 #include "abi/guc_actions_abi.h"

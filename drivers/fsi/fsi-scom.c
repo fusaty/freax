@@ -5,17 +5,17 @@
  * Copyright (C) IBM Corporation 2016
  */
 
-#include <linux/fsi.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mod_devicetable.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <freax/fsi.h>
+#include <freax/module.h>
+#include <freax/cdev.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/mod_devicetable.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/list.h>
 
-#include <uapi/linux/fsi.h>
+#include <uapi/freax/fsi.h>
 
 #define FSI_ENGID_SCOM		0x5
 

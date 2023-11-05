@@ -3,7 +3,7 @@
  * rti802.c
  * Comedi driver for Analog Devices RTI-802 board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1999 Anders Blomdell <anders.blomdell@control.lth.se>
  */
 
@@ -21,8 +21,8 @@
  *   [3,5,7,9,11,13,15,17] - dac#[0-7]  0=bipolar, 1=unipolar
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

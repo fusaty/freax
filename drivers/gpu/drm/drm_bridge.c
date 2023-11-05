@@ -21,10 +21,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/err.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include <drm/drm_atomic_state_helper.h>
 #include <drm/drm_debugfs.h>

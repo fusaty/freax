@@ -7,12 +7,12 @@
  * Copyright (c) 2004 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/hwdep.h>
 #include "pcxhr.h"

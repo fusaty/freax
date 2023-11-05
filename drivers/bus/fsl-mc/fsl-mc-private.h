@@ -8,10 +8,10 @@
 #ifndef _FSL_MC_PRIVATE_H_
 #define _FSL_MC_PRIVATE_H_
 
-#include <linux/fsl/mc.h>
-#include <linux/mutex.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
+#include <freax/fsl/mc.h>
+#include <freax/mutex.h>
+#include <freax/ioctl.h>
+#include <freax/miscdevice.h>
 
 /*
  * Data Path Management Complex (DPMNG) General API

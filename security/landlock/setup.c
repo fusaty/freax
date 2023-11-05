@@ -6,8 +6,8 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#include <linux/init.h>
-#include <linux/lsm_hooks.h>
+#include <freax/init.h>
+#include <freax/lsm_hooks.h>
 
 #include "common.h"
 #include "cred.h"

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_MM_DEBUG_H
-#define LINUX_MM_DEBUG_H 1
+#ifndef freax_MM_DEBUG_H
+#define freax_MM_DEBUG_H 1
 
-#include <linux/bug.h>
-#include <linux/stringify.h>
+#include <freax/bug.h>
+#include <freax/stringify.h>
 
 struct page;
 struct vm_area_struct;

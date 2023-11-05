@@ -10,12 +10,12 @@ helpers, which abstract this config option.
 
 ::
 
- List:       linux-kernel
+ List:       freax-kernel
  Subject:    Re: active_mm
  From:       Linus Torvalds <torvalds () transmeta ! com>
  Date:       1999-07-30 21:36:24
 
- Cc'd to linux-kernel, because I don't write explanations all that often,
+ Cc'd to freax-kernel, because I don't write explanations all that often,
  and when I do I feel better about more people reading them.
 
  On Fri, 30 Jul 1999, David Mosberger wrote:
@@ -23,7 +23,7 @@ helpers, which abstract this config option.
  > Is there a brief description someplace on how "mm" vs. "active_mm" in
  > the task_struct are supposed to be used?  (My apologies if this was
  > discussed on the mailing lists---I just returned from vacation and
- > wasn't able to follow linux-kernel for a while).
+ > wasn't able to follow freax-kernel for a while).
 
  Basically, the new setup is:
 
@@ -92,4 +92,4 @@ helpers, which abstract this config option.
  and register state is separate, the alpha PALcode joins the two, and you
  need to switch both together).
 
- (From http://marc.info/?l=linux-kernel&m=93337278602211&w=2)
+ (From http://marc.info/?l=freax-kernel&m=93337278602211&w=2)

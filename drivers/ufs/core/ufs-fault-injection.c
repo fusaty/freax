@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/kconfig.h>
-#include <linux/types.h>
-#include <linux/fault-inject.h>
-#include <linux/module.h>
+#include <freax/kconfig.h>
+#include <freax/types.h>
+#include <freax/fault-inject.h>
+#include <freax/module.h>
 #include "ufs-fault-injection.h"
 
 static int ufs_fault_get(char *buffer, const struct kernel_param *kp);

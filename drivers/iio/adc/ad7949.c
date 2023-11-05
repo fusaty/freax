@@ -6,12 +6,12 @@
  * https://www.analog.com/media/en/technical-documentation/data-sheets/AD7949.pdf
  */
 
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/bitfield.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/bitfield.h>
 
 #define AD7949_CFG_MASK_TOTAL		GENMASK(13, 0)
 

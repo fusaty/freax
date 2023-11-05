@@ -10,9 +10,9 @@
 #ifndef WFX_HIF_TX_H
 #define WFX_HIF_TX_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
 
 struct ieee80211_channel;
 struct ieee80211_bss_conf;

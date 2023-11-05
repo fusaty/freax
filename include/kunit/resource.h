@@ -11,10 +11,10 @@
 
 #include <kunit/test.h>
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 struct kunit_resource;
 

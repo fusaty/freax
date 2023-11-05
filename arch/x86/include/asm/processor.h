@@ -30,13 +30,13 @@ struct vm86;
 #include <asm/vdso/processor.h>
 #include <asm/shstk.h>
 
-#include <linux/personality.h>
-#include <linux/cache.h>
-#include <linux/threads.h>
-#include <linux/math64.h>
-#include <linux/err.h>
-#include <linux/irqflags.h>
-#include <linux/mem_encrypt.h>
+#include <freax/personality.h>
+#include <freax/cache.h>
+#include <freax/threads.h>
+#include <freax/math64.h>
+#include <freax/err.h>
+#include <freax/irqflags.h>
+#include <freax/mem_encrypt.h>
 
 /*
  * We handle most unaligned accesses in hardware.  On the other hand
@@ -288,7 +288,7 @@ struct x86_hw_tss {
 	u64			sp1;
 
 	/*
-	 * Since Linux does not use ring 2, the 'sp2' slot is unused by
+	 * Since freax does not use ring 2, the 'sp2' slot is unused by
 	 * hardware.  entry_SYSCALL_64 uses it as scratch space to stash
 	 * the user RSP value.
 	 */

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* $Id: sunlance.c,v 1.112 2002/01/15 06:48:55 davem Exp $
- * lance.c: Linux/Sparc/Lance driver
+ * lance.c: freax/Sparc/Lance driver
  *
  *	Written 1995, 1996 by Miguel de Icaza
  * Sources:
- *	The Linux  depca driver
- *	The Linux  lance driver.
- *	The Linux  skeleton driver.
+ *	The freax  depca driver
+ *	The freax  lance driver.
+ *	The freax  skeleton driver.
  *	The NetBSD Sparc/Lance driver.
  *	Theo de Raadt (deraadt@openbsd.org)
  *	NCR92C990 Lan Controller manual
@@ -72,29 +72,29 @@
 
 static char lancestr[] = "LANCE";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/errno.h>
-#include <linux/socket.h> /* Used for the temporal inet entries and routing */
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/errno.h>
+#include <freax/socket.h> /* Used for the temporal inet entries and routing */
+#include <freax/route.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/gfp.h>
+#include <freax/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

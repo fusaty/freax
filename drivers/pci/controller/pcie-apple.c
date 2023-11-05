@@ -18,17 +18,17 @@
  * Author: Marc Zyngier <maz@kernel.org>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/iopoll.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/notifier.h>
-#include <linux/of_irq.h>
-#include <linux/pci-ecam.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/iopoll.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/notifier.h>
+#include <freax/of_irq.h>
+#include <freax/pci-ecam.h>
 
 #define CORE_RC_PHYIF_CTL		0x00024
 #define   CORE_RC_PHYIF_CTL_RUN		BIT(0)

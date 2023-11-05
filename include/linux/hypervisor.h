@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_HYPEVISOR_H
-#define __LINUX_HYPEVISOR_H
+#ifndef __freax_HYPEVISOR_H
+#define __freax_HYPEVISOR_H
 
 /*
  *	Generic Hypervisor support
@@ -19,7 +19,7 @@ static inline void hypervisor_pin_vcpu(int cpu)
 
 #else /* !CONFIG_X86 */
 
-#include <linux/of.h>
+#include <freax/of.h>
 
 static inline void hypervisor_pin_vcpu(int cpu)
 {
@@ -40,4 +40,4 @@ static inline bool hypervisor_isolated_pci_functions(void)
 	return jailhouse_paravirt();
 }
 
-#endif /* __LINUX_HYPEVISOR_H */
+#endif /* __freax_HYPEVISOR_H */

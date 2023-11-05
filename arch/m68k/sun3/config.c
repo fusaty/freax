@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/sun3/config.c
+ *  freax/arch/m68k/sun3/config.c
  *
  *  Copyright (C) 1996,1997 Pekka Pietik{inen
  *
@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/platform_device.h>
-#include <linux/linkage.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/seq_file.h>
+#include <freax/tty.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/platform_device.h>
+#include <freax/linkage.h>
 
 #include <asm/oplib.h>
 #include <asm/setup.h>
@@ -63,7 +63,7 @@ asmlinkage void __init sun3_init(void)
 	sun3_intreg = (unsigned char *) 0xfe0a000;	/* magic */
 	sun3_disable_interrupts();
 
-	prom_init((void *)LINUX_OPPROM_BEGVM);
+	prom_init((void *)freax_OPPROM_BEGVM);
 
 	GET_CONTROL_BYTE(AC_SENABLE,enable_register);
 	enable_register |= 0x50; /* Enable FPU */
@@ -96,7 +96,7 @@ asmlinkage void __init sun3_init(void)
 /* Without this, Bad Things happen when something calls arch_reset. */
 static void sun3_reboot (void)
 {
-	prom_reboot ("vmlinux");
+	prom_reboot ("vmfreax");
 }
 
 static void sun3_halt (void)

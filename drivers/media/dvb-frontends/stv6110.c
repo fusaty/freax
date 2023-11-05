@@ -8,11 +8,11 @@
  * Copyright (C) 2009 Igor M. Liplianin <liplianin@netup.ru>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/dvb/frontend.h>
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "stv6110.h"
 

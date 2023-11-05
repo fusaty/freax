@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2001 Ming Lei <ming.lei@canonical.com>
  */
-#ifndef __LINUX_BVEC_H
-#define __LINUX_BVEC_H
+#ifndef __freax_BVEC_H
+#define __freax_BVEC_H
 
-#include <linux/highmem.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/limits.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
+#include <freax/highmem.h>
+#include <freax/bug.h>
+#include <freax/errno.h>
+#include <freax/limits.h>
+#include <freax/minmax.h>
+#include <freax/types.h>
 
 struct page;
 
@@ -280,4 +280,4 @@ static inline void *bvec_virt(struct bio_vec *bvec)
 	return page_address(bvec->bv_page) + bvec->bv_offset;
 }
 
-#endif /* __LINUX_BVEC_H */
+#endif /* __freax_BVEC_H */

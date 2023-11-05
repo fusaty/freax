@@ -26,19 +26,19 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pci.h>
-#include <linux/miscdevice.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mman.h>
+#include <freax/pci.h>
+#include <freax/miscdevice.h>
+#include <freax/agp_backend.h>
+#include <freax/agpgart.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
 
 #include "agp.h"
 #include "compat_ioctl.h"

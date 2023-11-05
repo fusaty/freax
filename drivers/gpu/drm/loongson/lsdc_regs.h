@@ -6,8 +6,8 @@
 #ifndef __LSDC_REGS_H__
 #define __LSDC_REGS_H__
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
 
 /*
  * PIXEL PLL Reference clock
@@ -279,7 +279,7 @@ enum lsdc_cursor_location {
  * bridge chip itself. Those offsets are relative to DC register base address
  *
  * LS2k1000 don't have those registers, they use hardware i2c or general GPIO
- * emulated i2c from linux i2c subsystem.
+ * emulated i2c from freax i2c subsystem.
  *
  * GPIO data register, address offset: 0x1650
  *   +---------------+-----------+-----------+

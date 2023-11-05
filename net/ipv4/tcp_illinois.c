@@ -10,12 +10,12 @@
  * http://tamerbasar.csl.illinois.edu/LiuBasarSrikantPerfEvalArtJun2008.pdf
  *
  * Implemented from description in paper and ns-2 simulation.
- * Copyright (C) 2007 Stephen Hemminger <shemminger@linux-foundation.org>
+ * Copyright (C) 2007 Stephen Hemminger <shemminger@freax-foundation.org>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/inet_diag.h>
 #include <asm/div64.h>
 #include <net/tcp.h>
 

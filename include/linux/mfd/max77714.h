@@ -6,10 +6,10 @@
  * Author: Luca Ceresoli <luca.ceresoli@bootlin.com>
  */
 
-#ifndef __LINUX_MFD_MAX77714_H_
-#define __LINUX_MFD_MAX77714_H_
+#ifndef __freax_MFD_MAX77714_H_
+#define __freax_MFD_MAX77714_H_
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define MAX77714_INT_TOP	0x00
 #define MAX77714_INT_TOPM	0x07 /* Datasheet says "read only", but it is RW */
@@ -57,4 +57,4 @@ enum {
 	MAX77714_IRQ_TOP_GLBL,		/* "Global resources": Low-Battery, overtemp... */
 };
 
-#endif /* __LINUX_MFD_MAX77714_H_ */
+#endif /* __freax_MFD_MAX77714_H_ */

@@ -3,13 +3,13 @@
  * Copyright (c) 2010 Sascha Hauer <s.hauer@pengutronix.de>
  * Copyright (C) 2005-2009 Freescale Semiconductor, Inc.
  */
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
 
 #include <video/imx-ipu-v3.h>
 #include "ipu-prv.h"

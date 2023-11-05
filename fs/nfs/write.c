@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/write.c
+ * freax/fs/nfs/write.c
  *
  * Write file data over NFS.
  *
  * Copyright (C) 1996, 1997, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/writeback.h>
+#include <freax/swap.h>
+#include <freax/migrate.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs_page.h>
-#include <linux/backing-dev.h>
-#include <linux/export.h>
-#include <linux/freezer.h>
-#include <linux/wait.h>
-#include <linux/iversion.h>
-#include <linux/filelock.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/nfs_page.h>
+#include <freax/backing-dev.h>
+#include <freax/export.h>
+#include <freax/freezer.h>
+#include <freax/wait.h>
+#include <freax/iversion.h>
+#include <freax/filelock.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <freax/uaccess.h>
+#include <freax/sched/mm.h>
 
 #include "delegation.h"
 #include "internal.h"

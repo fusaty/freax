@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include "vas.h"
 

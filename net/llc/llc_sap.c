@@ -22,8 +22,8 @@
 #include <net/llc_s_st.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
+#include <freax/llc.h>
+#include <freax/slab.h>
 
 static int llc_mac_header_len(unsigned short devtype)
 {

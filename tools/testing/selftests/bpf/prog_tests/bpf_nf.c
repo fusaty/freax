@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <test_progs.h>
 #include <network_helpers.h>
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <freax/netfilter/nf_conntrack_common.h>
 #include "test_bpf_nf.skel.h"
 #include "test_bpf_nf_fail.skel.h"
 

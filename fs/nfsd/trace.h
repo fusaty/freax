@@ -8,8 +8,8 @@
 #if !defined(_NFSD_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _NFSD_TRACE_H
 
-#include <linux/tracepoint.h>
-#include <linux/sunrpc/xprt.h>
+#include <freax/tracepoint.h>
+#include <freax/sunrpc/xprt.h>
 #include <trace/misc/nfs.h>
 
 #include "export.h"

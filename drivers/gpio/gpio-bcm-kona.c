@@ -6,16 +6,16 @@
  * Copyright (C) 2012-2014 Broadcom Corporation
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #define BCM_GPIO_PASSWD				0x00a5a501
 #define GPIO_PER_BANK				32

@@ -4,13 +4,13 @@
 //
 // Copyright (c) 2018 Socionext Inc.
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/int_log.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/int_log.h>
 
 #include "mn88443x.h"
 

@@ -1,7 +1,7 @@
-#ifndef __LINUX_RWLOCK_TYPES_H
-#define __LINUX_RWLOCK_TYPES_H
+#ifndef __freax_RWLOCK_TYPES_H
+#define __freax_RWLOCK_TYPES_H
 
-#if !defined(__LINUX_SPINLOCK_TYPES_H)
+#if !defined(__freax_SPINLOCK_TYPES_H)
 # error "Do not include directly, include spinlock_types.h"
 #endif
 
@@ -52,7 +52,7 @@ typedef struct {
 
 #else /* !CONFIG_PREEMPT_RT */
 
-#include <linux/rwbase_rt.h>
+#include <freax/rwbase_rt.h>
 
 typedef struct {
 	struct rwbase_rt	rwbase;
@@ -75,4 +75,4 @@ typedef struct {
 
 #endif /* CONFIG_PREEMPT_RT */
 
-#endif /* __LINUX_RWLOCK_TYPES_H */
+#endif /* __freax_RWLOCK_TYPES_H */

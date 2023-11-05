@@ -3,11 +3,11 @@
  * perf_dlfilter.h: API for perf --dlfilter shared object
  * Copyright (c) 2021, Intel Corporation.
  */
-#ifndef _LINUX_PERF_DLFILTER_H
-#define _LINUX_PERF_DLFILTER_H
+#ifndef _freax_PERF_DLFILTER_H
+#define _freax_PERF_DLFILTER_H
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <freax/perf_event.h>
+#include <freax/types.h>
 
 /*
  * The following macro can be used to determine if this header defines
@@ -33,12 +33,12 @@ enum {
 };
 
 /*
- * perf sample event information (as per perf script and <linux/perf_event.h>)
+ * perf sample event information (as per perf script and <freax/perf_event.h>)
  */
 struct perf_dlfilter_sample {
 	__u32 size; /* Size of this structure (for compatibility checking) */
-	__u16 ins_lat;		/* Refer PERF_SAMPLE_WEIGHT_TYPE in <linux/perf_event.h> */
-	__u16 p_stage_cyc;	/* Refer PERF_SAMPLE_WEIGHT_TYPE in <linux/perf_event.h> */
+	__u16 ins_lat;		/* Refer PERF_SAMPLE_WEIGHT_TYPE in <freax/perf_event.h> */
+	__u16 p_stage_cyc;	/* Refer PERF_SAMPLE_WEIGHT_TYPE in <freax/perf_event.h> */
 	__u64 ip;
 	__s32 pid;
 	__s32 tid;
@@ -47,26 +47,26 @@ struct perf_dlfilter_sample {
 	__u64 id;
 	__u64 stream_id;
 	__u64 period;
-	__u64 weight;		/* Refer PERF_SAMPLE_WEIGHT_TYPE in <linux/perf_event.h> */
-	__u64 transaction;	/* Refer PERF_SAMPLE_TRANSACTION in <linux/perf_event.h> */
+	__u64 weight;		/* Refer PERF_SAMPLE_WEIGHT_TYPE in <freax/perf_event.h> */
+	__u64 transaction;	/* Refer PERF_SAMPLE_TRANSACTION in <freax/perf_event.h> */
 	__u64 insn_cnt;	/* For instructions-per-cycle (IPC) */
 	__u64 cyc_cnt;		/* For instructions-per-cycle (IPC) */
 	__s32 cpu;
 	__u32 flags;		/* Refer PERF_DLFILTER_FLAG_* above */
-	__u64 data_src;		/* Refer PERF_SAMPLE_DATA_SRC in <linux/perf_event.h> */
-	__u64 phys_addr;	/* Refer PERF_SAMPLE_PHYS_ADDR in <linux/perf_event.h> */
-	__u64 data_page_size;	/* Refer PERF_SAMPLE_DATA_PAGE_SIZE in <linux/perf_event.h> */
-	__u64 code_page_size;	/* Refer PERF_SAMPLE_CODE_PAGE_SIZE in <linux/perf_event.h> */
-	__u64 cgroup;		/* Refer PERF_SAMPLE_CGROUP in <linux/perf_event.h> */
-	__u8  cpumode;		/* Refer CPUMODE_MASK etc in <linux/perf_event.h> */
+	__u64 data_src;		/* Refer PERF_SAMPLE_DATA_SRC in <freax/perf_event.h> */
+	__u64 phys_addr;	/* Refer PERF_SAMPLE_PHYS_ADDR in <freax/perf_event.h> */
+	__u64 data_page_size;	/* Refer PERF_SAMPLE_DATA_PAGE_SIZE in <freax/perf_event.h> */
+	__u64 code_page_size;	/* Refer PERF_SAMPLE_CODE_PAGE_SIZE in <freax/perf_event.h> */
+	__u64 cgroup;		/* Refer PERF_SAMPLE_CGROUP in <freax/perf_event.h> */
+	__u8  cpumode;		/* Refer CPUMODE_MASK etc in <freax/perf_event.h> */
 	__u8  addr_correlates_sym; /* True => resolve_addr() can be called */
-	__u16 misc;		/* Refer perf_event_header in <linux/perf_event.h> */
-	__u32 raw_size;		/* Refer PERF_SAMPLE_RAW in <linux/perf_event.h> */
-	const void *raw_data;	/* Refer PERF_SAMPLE_RAW in <linux/perf_event.h> */
+	__u16 misc;		/* Refer perf_event_header in <freax/perf_event.h> */
+	__u32 raw_size;		/* Refer PERF_SAMPLE_RAW in <freax/perf_event.h> */
+	const void *raw_data;	/* Refer PERF_SAMPLE_RAW in <freax/perf_event.h> */
 	__u64 brstack_nr;	/* Number of brstack entries */
-	const struct perf_branch_entry *brstack; /* Refer <linux/perf_event.h> */
+	const struct perf_branch_entry *brstack; /* Refer <freax/perf_event.h> */
 	__u64 raw_callchain_nr;	/* Number of raw_callchain entries */
-	const __u64 *raw_callchain; /* Refer <linux/perf_event.h> */
+	const __u64 *raw_callchain; /* Refer <freax/perf_event.h> */
 	const char *event;
 	__s32 machine_pid;
 	__s32 vcpu;
@@ -111,7 +111,7 @@ struct perf_dlfilter_fns {
 	const __u8 *(*insn)(void *ctx, __u32 *length);
 	/* Return source file name and line number */
 	const char *(*srcline)(void *ctx, __u32 *line_number);
-	/* Return perf_event_attr, refer <linux/perf_event.h> */
+	/* Return perf_event_attr, refer <freax/perf_event.h> */
 	struct perf_event_attr *(*attr)(void *ctx);
 	/* Read object code, return numbers of bytes read */
 	__s32 (*object_code)(void *ctx, __u64 ip, void *buf, __u32 len);

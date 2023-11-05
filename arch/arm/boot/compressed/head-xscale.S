@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/arch/arm/boot/compressed/head-xscale.S
+ * freax/arch/arm/boot/compressed/head-xscale.S
  *
  * XScale specific tweaks.  This is merged into head.S by the linker.
  *
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 		.section        ".start", "ax"
 

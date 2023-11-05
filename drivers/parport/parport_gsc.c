@@ -16,22 +16,22 @@
 
 #undef DEBUG	/* undef for production */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/sysctl.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/sysctl.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/superio.h>
 
-#include <linux/parport.h>
+#include <freax/parport.h>
 #include <asm/pdc.h>
 #include <asm/parisc-device.h>
 #include <asm/hardware.h>

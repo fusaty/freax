@@ -6,10 +6,10 @@
 #ifndef _HFI1_IOWAIT_H
 #define _HFI1_IOWAIT_H
 
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
 
 #include "sdma_txreq.h"
 

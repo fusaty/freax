@@ -11,7 +11,7 @@
 #ifndef _XTENSA_IRQ_H
 #define _XTENSA_IRQ_H
 
-#include <linux/init.h>
+#include <freax/init.h>
 #include <asm/core.h>
 
 #ifdef CONFIG_PLATFORM_NR_IRQS
@@ -21,7 +21,7 @@
 #endif
 #define XTENSA_NR_IRQS XCHAL_NUM_INTERRUPTS
 #define NR_IRQS (XTENSA_NR_IRQS + PLATFORM_NR_IRQS + 1)
-#define XTENSA_PIC_LINUX_IRQ(hwirq) ((hwirq) + 1)
+#define XTENSA_PIC_freax_IRQ(hwirq) ((hwirq) + 1)
 
 static __inline__ int irq_canonicalize(int irq)
 {

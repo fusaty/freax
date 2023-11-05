@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Spreadtrum Communications Inc.
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/usb/phy.h>
-#include <linux/regmap.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/usb/phy.h>
+#include <freax/regmap.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
 
 /* PMIC global registers definition */
 #define SC2731_CHARGE_STATUS		0xedc

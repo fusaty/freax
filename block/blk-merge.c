@@ -2,14 +2,14 @@
 /*
  * Functions related to segment and merge handling
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
-#include <linux/blk-cgroup.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/scatterlist.h>
+#include <freax/part_stat.h>
+#include <freax/blk-cgroup.h>
 
 #include <trace/events/block.h>
 

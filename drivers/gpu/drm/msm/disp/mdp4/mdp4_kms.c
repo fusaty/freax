@@ -4,7 +4,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include <drm/drm_vblank.h>
 

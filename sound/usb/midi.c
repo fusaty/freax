@@ -35,20 +35,20 @@
  * SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/usb.h>
+#include <freax/wait.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/midi.h>
+#include <freax/module.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

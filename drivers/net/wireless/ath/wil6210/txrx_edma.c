@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2012-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2019 The freax Foundation. All rights reserved.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/prefetch.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/etherdevice.h>
+#include <freax/moduleparam.h>
+#include <freax/prefetch.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include "wil6210.h"
 #include "txrx_edma.h"
 #include "txrx.h"

@@ -7,40 +7,40 @@
  * Copyright (C) 2007 Herbert Valerio Riedel <hvr@gnu.org>
  *
  * Thanks go to Michael Burian and Ray Lehtiniemi for their key
- * role in the ep93xx linux community.
+ * role in the ep93xx freax community.
  */
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/uaccess.h>
-#include <linux/termios.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/gpio/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
-#include <linux/irqchip/arm-vic.h>
-#include <linux/reboot.h>
-#include <linux/usb/ohci_pdriver.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/sys_soc.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/leds.h>
+#include <freax/uaccess.h>
+#include <freax/termios.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/serial.h>
+#include <freax/mtd/physmap.h>
+#include <freax/i2c.h>
+#include <freax/gpio/machine.h>
+#include <freax/spi/spi.h>
+#include <freax/export.h>
+#include <freax/irqchip/arm-vic.h>
+#include <freax/reboot.h>
+#include <freax/usb/ohci_pdriver.h>
+#include <freax/random.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <freax/platform_data/video-ep93xx.h>
+#include <freax/platform_data/keypad-ep93xx.h>
+#include <freax/platform_data/spi-ep93xx.h>
+#include <freax/soc/cirrus/ep93xx.h>
 
 #include "gpio-ep93xx.h"
 

@@ -4,9 +4,9 @@
 #include <string.h>
 
 #include <urcu/uatomic.h>
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <malloc.h>
-#include <linux/gfp.h>
+#include <freax/gfp.h>
 
 int kmalloc_nr_allocated;
 int kmalloc_verbose;

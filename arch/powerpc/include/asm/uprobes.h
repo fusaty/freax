@@ -9,7 +9,7 @@
  * Adapted from the x86 port by Ananth N Mavinakayanahalli <ananth@in.ibm.com>
  */
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 #include <asm/probes.h>
 
 typedef u32 uprobe_opcode_t;

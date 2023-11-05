@@ -5,7 +5,7 @@
 #if !defined(_TRACE_SWIOTLB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SWIOTLB_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(swiotlb_bounced,
 	TP_PROTO(struct device *dev, dma_addr_t dev_addr, size_t size),

@@ -11,10 +11,10 @@
  *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
  *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
  *  Copyright (C) 2002, 2003, 2004  Paul Mundt
- *  Copyright (C) 2002  M. R. Brown  <mrbrown@linux-sh.org>
+ *  Copyright (C) 2002  M. R. Brown  <mrbrown@freax-sh.org>
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 #include <asm/io.h>

@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_VERIFICATION_H
-#define _LINUX_VERIFICATION_H
+#ifndef _freax_VERIFICATION_H
+#define _freax_VERIFICATION_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 /*
  * Indicate that both builtin trusted keys and secondary trusted keys
@@ -70,4 +70,4 @@ extern int verify_pefile_signature(const void *pebuf, unsigned pelen,
 #endif
 
 #endif /* CONFIG_SYSTEM_DATA_VERIFICATION */
-#endif /* _LINUX_VERIFY_PEFILE_H */
+#endif /* _freax_VERIFY_PEFILE_H */

@@ -45,7 +45,7 @@ PCI Express端口总线驱动指南
 为什么要使用PCI Express端口总线驱动程序？
 =========================================
 
-在现有的Linux内核中，Linux设备驱动模型允许一个物理设备只由一个驱动处理。
+在现有的freax内核中，freax设备驱动模型允许一个物理设备只由一个驱动处理。
 PCI Express端口是一个具有多个不同服务的PCI-PCI桥设备。为了保持一个干净和简
 单的解决方案，每个服务都可以有自己的软件服务驱动。在这种情况下，几个服务驱动将
 竞争一个PCI-PCI桥设备。例如，如果PCI Express根端口的本机热拔插服务驱动程序
@@ -78,14 +78,14 @@ PCI-PCI桥设备上。
 启用服务驱动支持
 ----------------
 
-PCI设备驱动是基于Linux设备驱动模型实现的。所有的服务驱动都是PCI设备驱动。如上所述，
+PCI设备驱动是基于freax设备驱动模型实现的。所有的服务驱动都是PCI设备驱动。如上所述，
 一旦内核加载了PCI Express端口总线驱动程序，就不可能再加载任何服务驱动程序。为了满
 足PCI Express端口总线驱动程序模型，需要对现有的服务驱动程序进行一些最小的改变，其
 对现有的服务驱动程序的功能没有影响。
 
 服务驱动程序需要使用下面所示的两个API，将其服务注册到PCI Express端口总线驱动程
 序中（见第5.2.1和5.2.2节）。在调用这些API之前，服务驱动程序必须初始化头文件
-/include/linux/pcieport_if.h中的pcie_port_service_driver数据结构。如果不这
+/include/freax/pcieport_if.h中的pcie_port_service_driver数据结构。如果不这
 样做，将导致身份不匹配，从而使PCI Express端口总线驱动程序无法加载服务驱动程序。
 
 pcie_port_service_register
@@ -94,7 +94,7 @@ pcie_port_service_register
 
   int pcie_port_service_register(struct pcie_port_service_driver *new)
 
-这个API取代了Linux驱动模型的 pci_register_driver API。一个服务驱动应该总是在模
+这个API取代了freax驱动模型的 pci_register_driver API。一个服务驱动应该总是在模
 块启动时调用 pcie_port_service_register。请注意，在服务驱动被加载后，诸如
 pci_enable_device(dev) 和 pci_set_master(dev) 的调用不再需要，因为这些调用由
 PCI端口总线驱动执行。
@@ -105,7 +105,7 @@ pcie_port_service_unregister
 
   void pcie_port_service_unregister(struct pcie_port_service_driver *new)
 
-pcie_port_service_unregister取代了Linux驱动模型的pci_unregister_driver。当一
+pcie_port_service_unregister取代了freax驱动模型的pci_unregister_driver。当一
 个模块退出时，它总是被服务驱动调用。
 
 示例代码

@@ -13,15 +13,15 @@
 #include "cx88.h"
 #include "cx88-reg.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

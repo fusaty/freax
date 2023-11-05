@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * This module enables machines with Intel VT-x extensions to run virtual
  * machines without emulation or binary translation.
@@ -15,47 +15,47 @@
 
 #include <kvm/iodev.h>
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/reboot.h>
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/syscore_ops.h>
-#include <linux/cpu.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/stat.h>
-#include <linux/cpumask.h>
-#include <linux/smp.h>
-#include <linux/anon_inodes.h>
-#include <linux/profile.h>
-#include <linux/kvm_para.h>
-#include <linux/pagemap.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/compat.h>
-#include <linux/srcu.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/bsearch.h>
-#include <linux/io.h>
-#include <linux/lockdep.h>
-#include <linux/kthread.h>
-#include <linux/suspend.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/percpu.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/reboot.h>
+#include <freax/debugfs.h>
+#include <freax/highmem.h>
+#include <freax/file.h>
+#include <freax/syscore_ops.h>
+#include <freax/cpu.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/stat.h>
+#include <freax/cpumask.h>
+#include <freax/smp.h>
+#include <freax/anon_inodes.h>
+#include <freax/profile.h>
+#include <freax/kvm_para.h>
+#include <freax/pagemap.h>
+#include <freax/mman.h>
+#include <freax/swap.h>
+#include <freax/bitops.h>
+#include <freax/spinlock.h>
+#include <freax/compat.h>
+#include <freax/srcu.h>
+#include <freax/hugetlb.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/bsearch.h>
+#include <freax/io.h>
+#include <freax/lockdep.h>
+#include <freax/kthread.h>
+#include <freax/suspend.h>
 
 #include <asm/processor.h>
 #include <asm/ioctl.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "coalesced_mmio.h"
 #include "async_pf.h"
@@ -67,7 +67,7 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/kvm.h>
 
-#include <linux/kvm_dirty_ring.h>
+#include <freax/kvm_dirty_ring.h>
 
 
 /* Worst case buffer size needed for holding an integer. */

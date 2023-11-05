@@ -17,33 +17,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/rtnetlink.h>
-#include <linux/prefetch.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/rtnetlink.h>
+#include <freax/prefetch.h>
 #include <net/ip6_checksum.h>
-#include <linux/ktime.h>
-#include <linux/numa.h>
+#include <freax/ktime.h>
+#include <freax/numa.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <freax/cpu_rmap.h>
 #endif
-#include <linux/crash_dump.h>
+#include <freax/crash_dump.h>
 #include <net/busy_poll.h>
 #include <net/vxlan.h>
 

@@ -7,17 +7,17 @@
  * Author: Martin Kurbanov <mmkurbanov@sberdevices.ru>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/container_of.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/time.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/container_of.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/time.h>
+#include <freax/units.h>
 
 #define AW200XX_DIM_MAX                  (BIT(6) - 1)
 #define AW200XX_FADE_MAX                 (BIT(8) - 1)

@@ -61,7 +61,7 @@ can be seen here:
 memblock
 |-- asm       ------------------,
 |-- lib                         |-- implement function and struct stubs
-|-- linux     ------------------'
+|-- freax     ------------------'
 |-- scripts
 |    |-- Makefile.include        -- handles `make` parameters
 |-- tests

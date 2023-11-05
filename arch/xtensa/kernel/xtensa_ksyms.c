@@ -12,7 +12,7 @@
  * Joe Taylor <joe@tensilica.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <asm/pgtable.h>
 
 EXPORT_SYMBOL(empty_zero_page);

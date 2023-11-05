@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_PRIVATE_H_
-#define LINUX_BCMA_PRIVATE_H_
+#ifndef freax_BCMA_PRIVATE_H_
+#define freax_BCMA_PRIVATE_H_
 
 #ifndef pr_fmt
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 #endif
 
-#include <linux/bcma/bcma.h>
-#include <linux/delay.h>
+#include <freax/bcma/bcma.h>
+#include <freax/delay.h>
 
 #define bcma_err(bus, fmt, ...) \
 	dev_err((bus)->dev, "bus%d: " fmt, (bus)->num, ##__VA_ARGS__)

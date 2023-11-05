@@ -8,11 +8,11 @@
  * Based on i2c-mux.h
  */
 
-#ifndef _LINUX_I2C_ATR_H
-#define _LINUX_I2C_ATR_H
+#ifndef _freax_I2C_ATR_H
+#define _freax_I2C_ATR_H
 
-#include <linux/i2c.h>
-#include <linux/types.h>
+#include <freax/i2c.h>
+#include <freax/types.h>
 
 struct device;
 struct fwnode_handle;
@@ -113,4 +113,4 @@ void i2c_atr_set_driver_data(struct i2c_atr *atr, void *data);
  */
 void *i2c_atr_get_driver_data(struct i2c_atr *atr);
 
-#endif /* _LINUX_I2C_ATR_H */
+#endif /* _freax_I2C_ATR_H */

@@ -5,12 +5,12 @@
  * Copyright 2020 Dan Robertson <dan@dlrobertson.com>
  *
  */
-#include <linux/bits.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/bits.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 #include "bma400.h"
 

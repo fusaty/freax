@@ -6,15 +6,15 @@
  *
  *  Copyright IBM Corp. 2020
  *
- *  Author(s):	Guvenc Gulce <guvenc@linux.ibm.com>
+ *  Author(s):	Guvenc Gulce <guvenc@freax.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/if.h>
-#include <linux/smc.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/ctype.h>
+#include <freax/mutex.h>
+#include <freax/if.h>
+#include <freax/smc.h>
 
 #include "smc_core.h"
 #include "smc_ism.h"

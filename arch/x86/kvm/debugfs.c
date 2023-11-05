@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * Copyright 2016 Red Hat, Inc. and/or its affiliates.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
-#include <linux/debugfs.h>
+#include <freax/kvm_host.h>
+#include <freax/debugfs.h>
 #include "lapic.h"
 #include "mmu.h"
 #include "mmu/mmu_internal.h"

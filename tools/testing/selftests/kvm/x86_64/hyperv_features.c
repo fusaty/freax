@@ -5,7 +5,7 @@
  * Tests for Hyper-V features enablement
  */
 #include <asm/kvm_para.h>
-#include <linux/kvm_para.h>
+#include <freax/kvm_para.h>
 #include <stdint.h>
 
 #include "test_util.h"
@@ -89,7 +89,7 @@ static void guest_hcall(vm_vaddr_t pgs_gpa, struct hcall_data *hcall)
 
 	GUEST_ASSERT_NE(hcall->control, 0);
 
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, pgs_gpa);
 
 	if (!(hcall->control & HV_HYPERCALL_FAST_BIT)) {
@@ -185,7 +185,7 @@ static void guest_test_msrs_access(void)
 			 */
 			msr->idx = HV_X64_MSR_GUEST_OS_ID;
 			msr->write = true;
-			msr->write_val = HYPERV_LINUX_OS_ID;
+			msr->write_val = HYPERV_freax_OS_ID;
 			msr->fault_expected = false;
 			break;
 		case 3:

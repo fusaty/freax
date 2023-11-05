@@ -118,15 +118,15 @@
  * :8421.8421:8421.8421:8421.8421:8421.8421: hex digit
  *
  */
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/math64.h>
-#include <linux/io.h>
-#include <linux/nospec.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/math64.h>
+#include <freax/io.h>
+#include <freax/nospec.h>
 
 #include <sound/core.h>
 #include <sound/control.h>
@@ -157,10 +157,10 @@ MODULE_PARM_DESC(enable, "Enable/disable specific HDSPM soundcards.");
 MODULE_AUTHOR
 (
 	"Winfried Ritsch <ritsch_AT_iem.at>, "
-	"Paul Davis <paul@linuxaudiosystems.com>, "
+	"Paul Davis <paul@freaxaudiosystems.com>, "
 	"Marcus Andersson, Thomas Charbonnel <thomas@undata.org>, "
 	"Remy Bruno <remy.bruno@trinnov.com>, "
-	"Florian Faber <faberman@linuxproaudio.org>, "
+	"Florian Faber <faberman@freaxproaudio.org>, "
 	"Adrian Knoth <adi@drcomp.erfurt.thur.de>"
 );
 MODULE_DESCRIPTION("RME HDSPM");

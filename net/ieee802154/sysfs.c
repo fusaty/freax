@@ -7,8 +7,8 @@
  * Based on: net/wireless/sysfs.c
  */
 
-#include <linux/device.h>
-#include <linux/rtnetlink.h>
+#include <freax/device.h>
+#include <freax/rtnetlink.h>
 
 #include <net/cfg802154.h>
 

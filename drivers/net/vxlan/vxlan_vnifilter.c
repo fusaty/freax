@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/rhashtable.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/etherdevice.h>
+#include <freax/rhashtable.h>
 #include <net/rtnetlink.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>

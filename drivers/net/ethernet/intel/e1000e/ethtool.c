@@ -3,14 +3,14 @@
 
 /* ethtool support for e1000 */
 
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/pm_runtime.h>
+#include <freax/netdevice.h>
+#include <freax/interrupt.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/vmalloc.h>
+#include <freax/pm_runtime.h>
 
 #include "e1000.h"
 

@@ -14,13 +14,13 @@
 #include <asm/signal.h>  /* for SIGCHLD */
 #include <asm/ioctls.h>
 #include <asm/mman.h>
-#include <linux/fs.h>
-#include <linux/loop.h>
-#include <linux/time.h>
-#include <linux/auxvec.h>
-#include <linux/fcntl.h> /* for O_* and AT_* */
-#include <linux/stat.h>  /* for statx() */
-#include <linux/prctl.h>
+#include <freax/fs.h>
+#include <freax/loop.h>
+#include <freax/time.h>
+#include <freax/auxvec.h>
+#include <freax/fcntl.h> /* for O_* and AT_* */
+#include <freax/stat.h>  /* for statx() */
+#include <freax/prctl.h>
 
 #include "arch.h"
 #include "errno.h"
@@ -352,17 +352,17 @@ int fsync(int fd)
 
 
 /*
- * int getdents64(int fd, struct linux_dirent64 *dirp, int count);
+ * int getdents64(int fd, struct freax_dirent64 *dirp, int count);
  */
 
 static __attribute__((unused))
-int sys_getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int sys_getdents64(int fd, struct freax_dirent64 *dirp, int count)
 {
 	return my_syscall3(__NR_getdents64, fd, dirp, count);
 }
 
 static __attribute__((unused))
-int getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int getdents64(int fd, struct freax_dirent64 *dirp, int count)
 {
 	return __sysret(sys_getdents64(fd, dirp, count));
 }
@@ -690,7 +690,7 @@ void *sys_mmap(void *addr, size_t length, int prot, int flags, int fd,
 }
 #endif
 
-/* Note that on Linux, MAP_FAILED is -1 so we can use the generic __sysret()
+/* Note that on freax, MAP_FAILED is -1 so we can use the generic __sysret()
  * which returns -1 upon error and still satisfy user land that checks for
  * MAP_FAILED.
  */
@@ -882,7 +882,7 @@ ssize_t read(int fd, void *buf, size_t count)
 
 /*
  * int reboot(int cmd);
- * <cmd> is among LINUX_REBOOT_CMD_*
+ * <cmd> is among freax_REBOOT_CMD_*
  */
 
 static __attribute__((unused))
@@ -894,7 +894,7 @@ ssize_t sys_reboot(int magic1, int magic2, int cmd, void *arg)
 static __attribute__((unused))
 int reboot(int cmd)
 {
-	return __sysret(sys_reboot(LINUX_REBOOT_MAGIC1, LINUX_REBOOT_MAGIC2, cmd, 0));
+	return __sysret(sys_reboot(freax_REBOOT_MAGIC1, freax_REBOOT_MAGIC2, cmd, 0));
 }
 
 

@@ -17,16 +17,16 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/cpufeature.h>
+#include <freax/crypto.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #define	PPC_ALIGN		16
 #define GCM_IV_SIZE		12
 
 MODULE_DESCRIPTION("PPC64le AES-GCM with Stitched implementation");
-MODULE_AUTHOR("Danny Tsen <dtsen@linux.ibm.com");
+MODULE_AUTHOR("Danny Tsen <dtsen@freax.ibm.com");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS_CRYPTO("aes");
 

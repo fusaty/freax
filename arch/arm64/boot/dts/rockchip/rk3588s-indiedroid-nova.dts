@@ -3,7 +3,7 @@
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/pinctrl/rockchip.h>
 #include <dt-bindings/usb/pd.h>
 #include "rk3588s.dtsi"
@@ -21,7 +21,7 @@
 
 		button-boot {
 			label = "boot";
-			linux,code = <KEY_PROG1>;
+			freax,code = <KEY_PROG1>;
 			press-threshold-microvolt = <18000>;
 		};
 	};
@@ -35,7 +35,7 @@
 
 		button-recovery {
 			label = "recovery";
-			linux,code = <KEY_PROG2>;
+			freax,code = <KEY_PROG2>;
 			press-threshold-microvolt = <18000>;
 		};
 	};

@@ -14,15 +14,15 @@
  * 1. Support stream at lower speed: lower frame rate or lower frame size.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <freax/usb.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
 #include <media/i2c/saa7115.h>
 
 #include "stk1160.h"

@@ -10,13 +10,13 @@
  * "rfkill-input: remove unused code".
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/moduleparam.h>
+#include <freax/workqueue.h>
+#include <freax/init.h>
+#include <freax/rfkill.h>
+#include <freax/sched.h>
 
 #include "rfkill.h"
 

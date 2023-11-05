@@ -10,16 +10,16 @@
 /*
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/input.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/power_supply.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
 
 #define WIIMOTE_NAME "Nintendo Wii Remote"
 #define WIIMOTE_BUFSIZE 32

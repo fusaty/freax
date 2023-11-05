@@ -7,26 +7,26 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/unistd.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/compiler.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/elf.h>
-#include <linux/sched/task_stack.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/linkage.h>
+#include <freax/fs.h>
+#include <freax/smp.h>
+#include <freax/ptrace.h>
+#include <freax/string.h>
+#include <freax/syscalls.h>
+#include <freax/file.h>
+#include <freax/utsname.h>
+#include <freax/unistd.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/compiler.h>
+#include <freax/ipc.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/elf.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/asm.h>
 #include <asm/asm-eva.h>
@@ -45,7 +45,7 @@
  * For historic reasons the pipe(2) syscall on MIPS has an unusual calling
  * convention.	It returns results in registers $v0 / $v1 which means there
  * is no need for it to do verify the validity of a userspace pointer
- * argument.  Historically that used to be expensive in Linux.	These days
+ * argument.  Historically that used to be expensive in freax.	These days
  * the performance advantage is negligible.
  */
 asmlinkage int sysm_pipe(void)

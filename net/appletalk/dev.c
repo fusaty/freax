@@ -4,11 +4,11 @@
  *	Written 1993,1994,1995 by Donald Becker.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ltalk.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/if_ltalk.h>
 
 static void ltalk_setup(struct net_device *dev)
 {

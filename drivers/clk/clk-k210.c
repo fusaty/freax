@@ -5,16 +5,16 @@
  */
 #define pr_fmt(fmt)     "k210-clk: " fmt
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/of_address.h>
+#include <freax/clk-provider.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
 #include <soc/canaan/k210-sysctl.h>
 
 #include <dt-bindings/clock/k210-clk.h>

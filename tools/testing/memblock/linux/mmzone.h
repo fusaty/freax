@@ -2,7 +2,7 @@
 #ifndef _TOOLS_MMZONE_H
 #define _TOOLS_MMZONE_H
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 struct pglist_data *first_online_pgdat(void);
 struct pglist_data *next_online_pgdat(struct pglist_data *pgdat);

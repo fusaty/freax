@@ -8,18 +8,18 @@
  * Author: Jorge Eduardo Candelaria <jedu@slimlogic.co.uk>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/mfd/tps65910.h>
-#include <linux/of.h>
-#include <linux/property.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mfd/core.h>
+#include <freax/regmap.h>
+#include <freax/mfd/tps65910.h>
+#include <freax/of.h>
+#include <freax/property.h>
 
 static const struct resource rtc_resources[] = {
 	{

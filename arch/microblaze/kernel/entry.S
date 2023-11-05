@@ -15,8 +15,8 @@
  * Heavily modified by John Williams for Microblaze
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <freax/sys.h>
+#include <freax/linkage.h>
 
 #include <asm/entry.h>
 #include <asm/current.h>
@@ -29,7 +29,7 @@
 #include <asm/unistd.h>
 #include <asm/xilinx_mb_manager.h>
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include <asm/signal.h>
 #include <asm/mmu.h>
 

@@ -6,8 +6,8 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
+#include <freax/moduleparam.h>
+#include <freax/seq_file.h>
 
 #include <drm/drm_print.h>
 

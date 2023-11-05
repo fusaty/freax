@@ -6,18 +6,18 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/namei.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
+#include <freax/posix_acl.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 
@@ -190,7 +190,7 @@ static int v9fs_mapped_dotl_flags(int flags)
 }
 
 /**
- * v9fs_open_to_dotl_flags- convert Linux specific open flags to
+ * v9fs_open_to_dotl_flags- convert freax specific open flags to
  * plan 9 open flag.
  * @flags: flags to convert
  */

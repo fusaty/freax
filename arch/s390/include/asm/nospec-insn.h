@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_NOSPEC_ASM_H
 #define _ASM_S390_NOSPEC_ASM_H
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/dwarf.h>
 
 #ifdef __ASSEMBLY__

@@ -4,8 +4,8 @@
 #ifndef _ORC_HEADER_H
 #define _ORC_HEADER_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 #include <asm/orc_hash.h>
 
 /*

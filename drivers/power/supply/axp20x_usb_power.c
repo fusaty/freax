@@ -3,25 +3,25 @@
  * AXP20x PMIC USB power supply status driver
  *
  * Copyright (C) 2015 Hans de Goede <hdegoede@redhat.com>
- * Copyright (C) 2014 Bruno Prémont <bonbons@linux-vserver.org>
+ * Copyright (C) 2014 Bruno Prémont <bonbons@freax-vserver.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/devm-helpers.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/devm-helpers.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/iio/consumer.h>
+#include <freax/workqueue.h>
 
 #define DRVNAME "axp20x-usb-power-supply"
 

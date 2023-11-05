@@ -8,7 +8,7 @@
  * Little-endian word-at-a-time zero byte handling.
  * Heavily based on the x86 algorithm.
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 struct word_at_a_time {
 	const unsigned long one_bits, high_bits;
@@ -36,7 +36,7 @@ static inline unsigned long find_zero(unsigned long mask)
 {
 	unsigned long ret;
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	/* We have clz available. */
 	ret = fls(mask) >> 3;
 #else

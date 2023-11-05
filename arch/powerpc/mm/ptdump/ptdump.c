@@ -7,21 +7,21 @@
  * /sys/kernel/debug/kernel_pagetables.
  *
  * Derived from the arm64 implementation:
- * Copyright (c) 2014, The Linux Foundation, Laura Abbott.
+ * Copyright (c) 2014, The freax Foundation, Laura Abbott.
  * (C) Copyright 2008 Intel Corporation, Arjan van de Ven.
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/hugetlb.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/ptdump.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/hugetlb.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/ptdump.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
 #include <asm/fixmap.h>
-#include <linux/const.h>
-#include <linux/kasan.h>
+#include <freax/const.h>
+#include <freax/kasan.h>
 #include <asm/page.h>
 #include <asm/hugetlb.h>
 

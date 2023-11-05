@@ -18,7 +18,7 @@
  * TODO:
  * Add more ethtool functions.
  * Fix abstruse irq enable/disable condition described here:
- *	http://marc.theaimsgroup.com/?l=linux-netdev&m=116398508500553&w=2
+ *	http://marc.theaimsgroup.com/?l=freax-netdev&m=116398508500553&w=2
  *
  * NEEDS TESTING:
  * VLAN
@@ -28,38 +28,38 @@
  * SMP torture testing
  */
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
-#include <linux/compiler.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/hardirq.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/irqflags.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/compiler.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/hardirq.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/irqflags.h>
+#include <freax/irqreturn.h>
+#include <freax/jiffies.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/pm.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tcp.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include <net/checksum.h>
 

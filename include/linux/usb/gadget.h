@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * <linux/usb/gadget.h>
+ * <freax/usb/gadget.h>
  *
- * We call the USB code inside a Linux-based peripheral device a "gadget"
+ * We call the USB code inside a freax-based peripheral device a "gadget"
  * driver, except for the hardware-specific bus glue.  One USB host can
  * talk to many USB gadgets, but the gadgets are only able to communicate
  * to one host.
@@ -12,19 +12,19 @@
  * All Rights Reserved.
  */
 
-#ifndef __LINUX_USB_GADGET_H
-#define __LINUX_USB_GADGET_H
+#ifndef __freax_USB_GADGET_H
+#define __freax_USB_GADGET_H
 
-#include <linux/configfs.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/usb/ch9.h>
+#include <freax/configfs.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/usb/ch9.h>
 
 #define UDC_TRACE_STR_MAX	512
 
@@ -969,4 +969,4 @@ extern void usb_ep_autoconfig_release(struct usb_ep *);
 
 extern void usb_ep_autoconfig_reset(struct usb_gadget *);
 
-#endif /* __LINUX_USB_GADGET_H */
+#endif /* __freax_USB_GADGET_H */

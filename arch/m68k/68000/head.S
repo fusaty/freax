@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 
@@ -199,11 +199,11 @@ _copy_initmem:
  * If the kernel is in RAM, move romfs to right above bss and
  * adjust _ramstart to where romfs ends.
  *
- * (Do this only if CONFIG_MTD_UCLINUX is true)
+ * (Do this only if CONFIG_MTD_UCfreax is true)
  *****************************************************************************/
 
 #if defined(CONFIG_ROMFS_FS) && defined(CONFIG_RAMKERNEL) && \
-    defined(CONFIG_MTD_UCLINUX)
+    defined(CONFIG_MTD_UCfreax)
 	lea	__bss_start, %a0		/* get start of bss */
 	lea	__bss_stop, %a1			/* set up destination  */
 	movel	%a0, %a2			/* copy of bss start */
@@ -219,7 +219,7 @@ _copy_romfs:
 	movel	-(%a0), -(%a1)			/* copy dword */
 	cmpl	%a0, %a2			/* check if at end */
 	bne	_copy_romfs
-#endif /* CONFIG_ROMFS_FS && CONFIG_RAMKERNEL && CONFIG_MTD_UCLINUX */
+#endif /* CONFIG_ROMFS_FS && CONFIG_RAMKERNEL && CONFIG_MTD_UCfreax */
 
 /*****************************************************************************
  * Clear bss region
@@ -236,6 +236,6 @@ _clear_bss:
  *****************************************************************************/
 	lea	init_thread_union,%a0
 	lea	THREAD_SIZE(%a0),%sp
-	jsr	start_kernel			/* start Linux kernel */
+	jsr	start_kernel			/* start freax kernel */
 _exit:
 	jmp	_exit				/* should never get here */

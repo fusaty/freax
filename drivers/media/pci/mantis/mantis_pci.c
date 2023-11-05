@@ -6,21 +6,21 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
 #include <asm/io.h>
 #include <asm/page.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/pci.h>
+#include <freax/kmod.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/pci.h>
 
 #include <asm/irq.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

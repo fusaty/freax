@@ -3,9 +3,9 @@
 
 #include <stdio.h>
 #include <stdbool.h>
-#include <linux/kernel.h>
-#include <linux/magic.h>
-#include <linux/mman.h>
+#include <freax/kernel.h>
+#include <freax/magic.h>
+#include <freax/mman.h>
 #include <sys/mman.h>
 #include <sys/shm.h>
 #include <sys/syscall.h>

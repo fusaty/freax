@@ -11,14 +11,14 @@
  * Copyright (C) 2002 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/tty.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/serial_core.h>
+#include <freax/sunserialcore.h>
+#include <freax/init.h>
 
 #include <asm/prom.h>
 

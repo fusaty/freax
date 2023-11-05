@@ -11,9 +11,9 @@
  * f(N2_integer, SDM_IN ) = 2.0G/(N2_integer + SDM_IN/16384)
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
 
 #include "clk-regmap.h"
 #include "clk-mpll.h"

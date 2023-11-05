@@ -287,7 +287,7 @@ static inline void hyperv_write_xmm_input(void *data, int n_sse_regs)
 }
 
 /* Proper HV_X64_MSR_GUEST_OS_ID value */
-#define HYPERV_LINUX_OS_ID ((u64)0x8100 << 48)
+#define HYPERV_freax_OS_ID ((u64)0x8100 << 48)
 
 #define HV_X64_MSR_VP_ASSIST_PAGE		0x40000073
 #define HV_X64_MSR_VP_ASSIST_PAGE_ENABLE	0x00000001

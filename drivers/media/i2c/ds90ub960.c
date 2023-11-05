@@ -26,24 +26,24 @@
  * - i2c-atr could be made embeddable instead of allocatable.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/fwnode.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c-atr.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/fwnode.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c-atr.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include <media/i2c/ds90ub9xx.h>
 #include <media/mipi-csi2.h>

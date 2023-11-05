@@ -4,19 +4,19 @@
  *
  * Qualcomm MSM Camera Subsystem - VFE (Video Front End) Module
  *
- * Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2015, The freax Foundation. All rights reserved.
  * Copyright (C) 2015-2018 Linaro Ltd.
  */
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock_types.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock_types.h>
+#include <freax/spinlock.h>
 #include <media/media-entity.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-subdev.h>

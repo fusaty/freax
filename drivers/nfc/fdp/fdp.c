@@ -5,11 +5,11 @@
  * -------------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/nfc.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
 #include <net/nfc/nci_core.h>
 
 #include "fdp.h"

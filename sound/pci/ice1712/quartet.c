@@ -7,11 +7,11 @@
  *	Copyright (c) 2009 Pavel Hofman <pavel.hofman@ivitera.com>
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <sound/core.h>
 #include <sound/tlv.h>
 #include <sound/info.h>

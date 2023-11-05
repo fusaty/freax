@@ -14,8 +14,8 @@
  * GNU General Public License for more details.
  */
 
-#ifndef __LINUX_PLATFORM_DATA_MCF_EDMA_H__
-#define __LINUX_PLATFORM_DATA_MCF_EDMA_H__
+#ifndef __freax_PLATFORM_DATA_MCF_EDMA_H__
+#define __freax_PLATFORM_DATA_MCF_EDMA_H__
 
 struct dma_slave_map;
 
@@ -35,4 +35,4 @@ struct mcf_edma_platform_data {
 	int slavecnt;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_MCF_EDMA_H__ */
+#endif /* __freax_PLATFORM_DATA_MCF_EDMA_H__ */

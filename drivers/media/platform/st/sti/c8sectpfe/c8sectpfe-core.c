@@ -8,31 +8,31 @@
  *	    Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dvb/dmx.h>
-#include <linux/dvb/frontend.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dvb/dmx.h>
+#include <freax/dvb/frontend.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_gpio.h>
+#include <freax/of_platform.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/usb.h>
+#include <freax/wait.h>
 
 #include "c8sectpfe-common.h"
 #include "c8sectpfe-core.h"

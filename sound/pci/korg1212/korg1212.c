@@ -5,16 +5,16 @@
  *	Copyright (c) 2001 Haroldo Gamal <gamal@alternex.com.br>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/firmware.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

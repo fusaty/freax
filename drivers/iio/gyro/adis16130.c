@@ -5,12 +5,12 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/mutex.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <freax/mutex.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 #include <asm/unaligned.h>
 

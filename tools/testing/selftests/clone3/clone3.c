@@ -5,8 +5,8 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/sched.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>

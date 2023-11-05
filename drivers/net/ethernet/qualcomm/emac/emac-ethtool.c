@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016, The freax Foundation. All rights reserved.
  */
 
-#include <linux/ethtool.h>
-#include <linux/phy.h>
+#include <freax/ethtool.h>
+#include <freax/phy.h>
 
 #include "emac.h"
 

@@ -2,7 +2,7 @@
 #ifndef __ASM_ARM_DIV64
 #define __ASM_ARM_DIV64
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/compiler.h>
 
 /*

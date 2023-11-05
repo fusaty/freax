@@ -5,22 +5,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ip.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ip.h>
 #include <net/ipv6.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/tcp.h>
 #include <net/route.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/xt_LOG.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/xt_LOG.h>
 #include <net/netfilter/nf_log.h>
 
 static const struct nf_loginfo default_loginfo = {

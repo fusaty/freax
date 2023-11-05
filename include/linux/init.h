@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INIT_H
-#define _LINUX_INIT_H
+#ifndef _freax_INIT_H
+#define _freax_INIT_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
 
 /* Built-in __init functions needn't be compiled with retpoline */
 #if defined(__noretpoline) && !defined(MODULE)
@@ -40,7 +40,7 @@
  * and equal sign followed by value, e.g.:
  *
  * static int init_variable __initdata = 0;
- * static const char linux_logo[] __initconst = { 0x32, 0x36, ... };
+ * static const char freax_logo[] __initconst = { 0x32, 0x36, ... };
  *
  * Don't forget to initialize data not at file scope, i.e. within a function,
  * as gcc otherwise puts the data into the bss section and not into the init
@@ -222,7 +222,7 @@ extern bool initcall_debug;
  * With LTO, the compiler doesn't necessarily obey link order for
  * initcalls. In order to preserve the correct order, we add each
  * variable into its own section and generate a linker script (in
- * scripts/link-vmlinux.sh) to specify the order of the sections.
+ * scripts/link-vmfreax.sh) to specify the order of the sections.
  */
 #define __initcall_section(__sec, __iid)			\
 	#__sec ".init.." #__iid
@@ -394,4 +394,4 @@ void __init parse_early_options(char *cmdline);
 #define __exit_p(x) NULL
 #endif
 
-#endif /* _LINUX_INIT_H */
+#endif /* _freax_INIT_H */

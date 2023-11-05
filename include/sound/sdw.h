@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/sdw.h -- SoundWire helpers for ALSA/ASoC
+ * freax/sound/sdw.h -- SoundWire helpers for ALSA/ASoC
  *
  * Copyright (c) 2022 Cirrus Logic Inc.
  *
  * Author: Charles Keepax <ckeepax@opensource.cirrus.com>
  */
 
-#include <linux/soundwire/sdw.h>
+#include <freax/soundwire/sdw.h>
 #include <sound/asound.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -17,21 +17,21 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
-#include <linux/bits.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_qos.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/interrupt.h>
+#include <freax/bits.h>
 #include <media/v4l2-fwnode.h>
 
 #include <asm/iosf_mbi.h>
 
-#include "../../include/linux/atomisp_gmin_platform.h"
+#include "../../include/freax/atomisp_gmin_platform.h"
 
 #include "atomisp_cmd.h"
 #include "atomisp_common.h"

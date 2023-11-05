@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
 /*
  * Copyright (c) 2007-2017 Nicira, Inc.
@@ -18,11 +18,11 @@
  * 02110-1301, USA
  */
 
-#ifndef _UAPI__LINUX_OPENVSWITCH_H
-#define _UAPI__LINUX_OPENVSWITCH_H 1
+#ifndef _UAPI__freax_OPENVSWITCH_H
+#define _UAPI__freax_OPENVSWITCH_H 1
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 /**
  * struct ovs_header - header for OVS Generic Netlink messages.
@@ -122,8 +122,8 @@ struct ovs_vport_stats {
 	__u64   tx_bytes;		/* total bytes transmitted      */
 	__u64   rx_errors;		/* bad packets received         */
 	__u64   tx_errors;		/* packet transmit problems     */
-	__u64   rx_dropped;		/* no space in linux buffers    */
-	__u64   tx_dropped;		/* no space available in linux  */
+	__u64   rx_dropped;		/* no space in freax buffers    */
+	__u64   tx_dropped;		/* no space available in freax  */
 };
 
 /* Allow last Netlink attribute to be unaligned */
@@ -1104,4 +1104,4 @@ enum ovs_dec_ttl_attr {
 
 #define OVS_DEC_TTL_ATTR_MAX (__OVS_DEC_TTL_ATTR_MAX - 1)
 
-#endif /* _LINUX_OPENVSWITCH_H */
+#endif /* _freax_OPENVSWITCH_H */

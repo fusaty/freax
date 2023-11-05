@@ -8,20 +8,20 @@
  *		Vitaly Andrianov
  */
 
-#include <linux/hw_random.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/timekeeping.h>
+#include <freax/hw_random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
+#include <freax/err.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
+#include <freax/timekeeping.h>
 
 #define SA_CMD_STATUS_OFS			0x8
 

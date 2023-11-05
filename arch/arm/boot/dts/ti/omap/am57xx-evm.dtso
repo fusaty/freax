@@ -30,31 +30,31 @@
 		button-user1 {
 			gpios = <&gpio2 23 GPIO_ACTIVE_LOW>;
 			label = "USER1";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 		};
 
 		button-user2 {
 			gpios = <&gpio2 25 GPIO_ACTIVE_LOW>;
 			label = "USER2";
-			linux,code = <BTN_2>;
+			freax,code = <BTN_2>;
 		};
 
 		button-user3 {
 			gpios = <&gpio2 28 GPIO_ACTIVE_LOW>;
 			label = "USER3";
-			linux,code = <BTN_3>;
+			freax,code = <BTN_3>;
 		};
 
 		button-user4 {
 			gpios = <&gpio2 24 GPIO_ACTIVE_LOW>;
 			label = "USER4";
-			linux,code = <BTN_4>;
+			freax,code = <BTN_4>;
 		};
 
 		button-user5 {
 			gpios = <&gpio2 20 GPIO_ACTIVE_LOW>;
 			label = "USER5";
-			linux,code = <BTN_5>;
+			freax,code = <BTN_5>;
 		};
 	};
 

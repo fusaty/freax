@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * w83793.c - Linux kernel driver for hardware monitoring
+ * w83793.c - freax kernel driver for hardware monitoring
  * Copyright (C) 2006 Winbond Electronics Corp.
  *	      Yuan Mu
  *	      Rudolf Marek <r.marek@assembler.cz>
@@ -17,23 +17,23 @@
  * w83793	10	12	8	6	0x7b	0x5ca3	yes	no
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-vid.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/fs.h>
+#include <freax/watchdog.h>
+#include <freax/miscdevice.h>
+#include <freax/uaccess.h>
+#include <freax/kref.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/jiffies.h>
 
 /* Default values */
 #define WATCHDOG_TIMEOUT 2	/* 2 minute default timeout */

@@ -8,10 +8,10 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 #include <asm/ccwdev.h>
 #include <asm/setup.h>
 #include <asm/cio.h>

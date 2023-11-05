@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/module.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/mhi.h>
+#include <freax/module.h>
 #include "internal.h"
 
 static int mhi_debugfs_states_show(struct seq_file *m, void *d)

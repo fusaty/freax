@@ -14,21 +14,21 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/cpu.h>
-#include <linux/audit.h>
-#include <linux/rhashtable.h>
-#include <linux/if_tunnel.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/notifier.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/module.h>
+#include <freax/cache.h>
+#include <freax/cpu.h>
+#include <freax/audit.h>
+#include <freax/rhashtable.h>
+#include <freax/if_tunnel.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/inet_ecn.h>
@@ -2830,13 +2830,13 @@ xfrm_resolve_and_create_bundle(struct xfrm_policy **pols, int num_pols,
 			return NULL;
 
 		if (err != -EAGAIN)
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTPOLERROR);
 		return ERR_PTR(err);
 	}
 
 	dst = xfrm_bundle_create(pols[0], xfrm, bundle, err, fl, dst_orig);
 	if (IS_ERR(dst)) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTBUNDLEGENERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMOUTBUNDLEGENERROR);
 		return ERR_CAST(dst);
 	}
 
@@ -3094,7 +3094,7 @@ make_dummy_bundle:
 	return xdst;
 
 inc_error:
-	XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLERROR);
+	XFRM_INC_STATS(net, freax_MIB_XFRMOUTPOLERROR);
 error:
 	xfrm_pols_put(pols, num_pols);
 	return ERR_PTR(err);
@@ -3213,14 +3213,14 @@ struct dst_entry *xfrm_lookup_with_ifid(struct net *net,
 		 * have the xfrm_state's. We need to wait for KM to
 		 * negotiate new SA's or bail out with error.*/
 		if (net->xfrm.sysctl_larval_drop) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTNOSTATES);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTNOSTATES);
 			err = -EREMOTE;
 			goto error;
 		}
 
 		err = -EAGAIN;
 
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTNOSTATES);
+		XFRM_INC_STATS(net, freax_MIB_XFRMOUTNOSTATES);
 		goto error;
 	}
 
@@ -3239,7 +3239,7 @@ no_transform:
 
 	if (num_xfrms < 0) {
 		/* Prohibit the flow */
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTPOLBLOCK);
+		XFRM_INC_STATS(net, freax_MIB_XFRMOUTPOLBLOCK);
 		err = -EPERM;
 		goto error;
 	} else if (num_xfrms > 0) {
@@ -3536,7 +3536,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 	dir &= XFRM_POLICY_MASK;
 
 	if (__xfrm_decode_session(net, skb, &fl, family, reverse) < 0) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINHDRERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMINHDRERROR);
 		return 0;
 	}
 
@@ -3550,7 +3550,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 		for (i = sp->len - 1; i >= 0; i--) {
 			struct xfrm_state *x = sp->xvec[i];
 			if (!xfrm_selector_match(&x->sel, &fl, family)) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINSTATEMISMATCH);
+				XFRM_INC_STATS(net, freax_MIB_XFRMINSTATEMISMATCH);
 				return 0;
 			}
 		}
@@ -3561,7 +3561,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 	if (sk && sk->sk_policy[dir]) {
 		pol = xfrm_sk_policy_lookup(sk, dir, &fl, family, if_id);
 		if (IS_ERR(pol)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMINPOLERROR);
 			return 0;
 		}
 	}
@@ -3570,19 +3570,19 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 		pol = xfrm_policy_lookup(net, &fl, family, dir, if_id);
 
 	if (IS_ERR(pol)) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMINPOLERROR);
 		return 0;
 	}
 
 	if (!pol) {
 		if (net->xfrm.policy_default[dir] == XFRM_USERPOLICY_BLOCK) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOPOLS);
+			XFRM_INC_STATS(net, freax_MIB_XFRMINNOPOLS);
 			return 0;
 		}
 
 		if (sp && secpath_has_nontransport(sp, 0, &xerr_idx)) {
 			xfrm_secpath_reject(xerr_idx, skb, &fl);
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOPOLS);
+			XFRM_INC_STATS(net, freax_MIB_XFRMINNOPOLS);
 			return 0;
 		}
 		return 1;
@@ -3600,7 +3600,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 						    XFRM_POLICY_IN, if_id);
 		if (pols[1]) {
 			if (IS_ERR(pols[1])) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLERROR);
+				XFRM_INC_STATS(net, freax_MIB_XFRMINPOLERROR);
 				xfrm_pol_put(pols[0]);
 				return 0;
 			}
@@ -3627,11 +3627,11 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 		for (pi = 0; pi < npols; pi++) {
 			if (pols[pi] != pol &&
 			    pols[pi]->action != XFRM_POLICY_ALLOW) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLBLOCK);
+				XFRM_INC_STATS(net, freax_MIB_XFRMINPOLBLOCK);
 				goto reject;
 			}
 			if (ti + pols[pi]->xfrm_nr >= XFRM_MAX_DEPTH) {
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+				XFRM_INC_STATS(net, freax_MIB_XFRMINBUFFERERROR);
 				goto reject_error;
 			}
 			for (i = 0; i < pols[pi]->xfrm_nr; i++)
@@ -3659,13 +3659,13 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 				if (k < -1)
 					/* "-2 - errored_index" returned */
 					xerr_idx = -(2+k);
-				XFRM_INC_STATS(net, LINUX_MIB_XFRMINTMPLMISMATCH);
+				XFRM_INC_STATS(net, freax_MIB_XFRMINTMPLMISMATCH);
 				goto reject;
 			}
 		}
 
 		if (secpath_has_nontransport(sp, k, &xerr_idx)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMINTMPLMISMATCH);
+			XFRM_INC_STATS(net, freax_MIB_XFRMINTMPLMISMATCH);
 			goto reject;
 		}
 
@@ -3674,7 +3674,7 @@ int __xfrm_policy_check(struct sock *sk, int dir, struct sk_buff *skb,
 
 		return 1;
 	}
-	XFRM_INC_STATS(net, LINUX_MIB_XFRMINPOLBLOCK);
+	XFRM_INC_STATS(net, freax_MIB_XFRMINPOLBLOCK);
 
 reject:
 	xfrm_secpath_reject(xerr_idx, skb, &fl);
@@ -3692,13 +3692,13 @@ int __xfrm_route_forward(struct sk_buff *skb, unsigned short family)
 	int res = 1;
 
 	if (xfrm_decode_session(net, skb, &fl, family) < 0) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMFWDHDRERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMFWDHDRERROR);
 		return 0;
 	}
 
 	skb_dst_force(skb);
 	if (!skb_dst(skb)) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMFWDHDRERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMFWDHDRERROR);
 		return 0;
 	}
 
@@ -3994,7 +3994,7 @@ EXPORT_SYMBOL(xfrm_if_unregister_cb);
 static int __net_init xfrm_statistics_init(struct net *net)
 {
 	int rv;
-	net->mib.xfrm_statistics = alloc_percpu(struct linux_xfrm_mib);
+	net->mib.xfrm_statistics = alloc_percpu(struct freax_xfrm_mib);
 	if (!net->mib.xfrm_statistics)
 		return -ENOMEM;
 	rv = xfrm_proc_init(net);

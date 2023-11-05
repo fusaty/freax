@@ -9,7 +9,7 @@
 #ifndef RTL28XXU_H
 #define RTL28XXU_H
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 #include "dvb_usb.h"
 

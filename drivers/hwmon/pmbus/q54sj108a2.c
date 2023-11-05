@@ -6,11 +6,11 @@
  * Copyright 2020 Delta LLC.
  */
 
-#include <linux/debugfs.h>
-#include <linux/i2c.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/debugfs.h>
+#include <freax/i2c.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/of.h>
 #include "pmbus.h"
 
 #define STORE_DEFAULT_ALL		0x11

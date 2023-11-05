@@ -10,26 +10,26 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mii.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
-#include <linux/netdevice.h>
-#include <linux/netdev_features.h>
-#include <linux/rcutree.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
+#include <freax/compat.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/io.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/mii.h>
+#include <freax/mm.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/if_vlan.h>
+#include <freax/netdevice.h>
+#include <freax/netdev_features.h>
+#include <freax/rcutree.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
 
 #include <net/iucv/af_iucv.h>
 #include <net/dsfield.h>

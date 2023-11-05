@@ -7,12 +7,12 @@
  *          Maso Huang <maso.huang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pm_runtime.h>
 
 #include "mt7986-afe-common.h"
 #include "mt7986-reg.h"

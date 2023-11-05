@@ -60,12 +60,12 @@
 
 		heartbeat {
 			gpios = <&gpio ASPEED_GPIO(P, 0) GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		panic {
 			gpios = <&gpio ASPEED_GPIO(P, 2) GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "panic";
+			freax,default-trigger = "panic";
 		};
 	};
 

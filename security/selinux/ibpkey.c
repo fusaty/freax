@@ -2,7 +2,7 @@
 /*
  * Pkey table
  *
- * SELinux must keep a mapping of Infinband PKEYs to labels/SIDs.  This
+ * SEfreax must keep a mapping of Infinband PKEYs to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  *
@@ -10,7 +10,7 @@
  * developed by
  * James Morris <jmorris@redhat.com> and
  * Paul Moore <paul@paul-moore.com>
- *   (see security/selinux/netif.c and security/selinux/netport.c for more
+ *   (see security/sefreax/netif.c and security/sefreax/netport.c for more
  *   information)
  */
 
@@ -18,10 +18,10 @@
  * (c) Mellanox Technologies, 2016
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
 
 #include "ibpkey.h"
 #include "objsec.h"
@@ -223,7 +223,7 @@ static __init int sel_ib_pkey_init(void)
 {
 	int iter;
 
-	if (!selinux_enabled_boot)
+	if (!sefreax_enabled_boot)
 		return 0;
 
 	for (iter = 0; iter < SEL_PKEY_HASH_SIZE; iter++) {

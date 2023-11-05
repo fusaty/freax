@@ -13,19 +13,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/mutex.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
 
 #define DRVNAME		"lm70"
 
@@ -218,5 +218,5 @@ static struct spi_driver lm70_driver = {
 module_spi_driver(lm70_driver);
 
 MODULE_AUTHOR("Kaiwan N Billimoria");
-MODULE_DESCRIPTION("NS LM70 and compatibles Linux driver");
+MODULE_DESCRIPTION("NS LM70 and compatibles freax driver");
 MODULE_LICENSE("GPL");

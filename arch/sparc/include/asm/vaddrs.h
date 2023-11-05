@@ -62,8 +62,8 @@ enum fixed_addresses {
 #define DEBUG_FIRSTVADDR	KADB_DEBUGGER_BEGVM
 #define DEBUG_LASTVADDR		KADB_DEBUGGER_ENDVM
 
-#define LINUX_OPPROM_BEGVM	0xffd00000
-#define LINUX_OPPROM_ENDVM	0xfff00000
+#define freax_OPPROM_BEGVM	0xffd00000
+#define freax_OPPROM_ENDVM	0xfff00000
 
 #define DVMA_VADDR		0xfff00000 /* Base area of the DVMA on suns */
 #define DVMA_END		0xfffc0000

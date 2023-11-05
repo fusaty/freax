@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_STRING_H_
-#define _TOOLS_LINUX_STRING_H_
+#ifndef _TOOLS_freax_STRING_H_
+#define _TOOLS_freax_STRING_H_
 
-#include <linux/types.h>	/* for size_t */
+#include <freax/types.h>	/* for size_t */
 #include <string.h>
 
 void *memdup(const void *src, size_t len);
@@ -47,4 +47,4 @@ extern char * __must_check skip_spaces(const char *);
 extern char *strim(char *);
 
 extern void *memchr_inv(const void *start, int c, size_t bytes);
-#endif /* _TOOLS_LINUX_STRING_H_ */
+#endif /* _TOOLS_freax_STRING_H_ */

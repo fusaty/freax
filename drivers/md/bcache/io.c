@@ -10,7 +10,7 @@
 #include "bset.h"
 #include "debug.h"
 
-#include <linux/blkdev.h>
+#include <freax/blkdev.h>
 
 /* Bios with headers */
 

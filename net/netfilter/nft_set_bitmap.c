@@ -3,13 +3,13 @@
  * Copyright (c) 2017 Pablo Neira Ayuso <pablo@netfilter.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 
 struct nft_bitmap_elem {

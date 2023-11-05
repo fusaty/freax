@@ -6,23 +6,23 @@
  * based on the patches by Rockchip Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/spinlock.h>
+#include <freax/clk.h>
+#include <freax/wait.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/math64.h>
 
 
 /* Register Map */

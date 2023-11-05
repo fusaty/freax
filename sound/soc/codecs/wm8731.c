@@ -10,15 +10,15 @@
  * Based on wm8753.c by Liam Girdwood
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/clk.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

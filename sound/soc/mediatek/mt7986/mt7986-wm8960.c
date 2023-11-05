@@ -7,7 +7,7 @@
  *          Maso Huang <maso.huang@mediatek.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 
 #include "mt7986-afe-common.h"

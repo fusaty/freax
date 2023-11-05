@@ -5,13 +5,13 @@
  * (C) Copyright David Gibson, IBM Corporation 2008.
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/irq.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/irq.h>
 
 #include <asm/udbg.h>
 

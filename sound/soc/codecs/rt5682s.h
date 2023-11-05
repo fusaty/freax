@@ -10,11 +10,11 @@
 #define __RT5682S_H__
 
 #include <sound/rt5682s.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
 
 
 /* Info */

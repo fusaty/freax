@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight Embedded Trace Buffer driver
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/circ_buf.h>
-#include <linux/mm.h>
-#include <linux/perf_event.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/pm_runtime.h>
+#include <freax/seq_file.h>
+#include <freax/coresight.h>
+#include <freax/amba/bus.h>
+#include <freax/clk.h>
+#include <freax/circ_buf.h>
+#include <freax/mm.h>
+#include <freax/perf_event.h>
 
 
 #include "coresight-priv.h"

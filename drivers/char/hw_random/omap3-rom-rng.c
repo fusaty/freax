@@ -11,17 +11,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/hw_random.h>
-#include <linux/workqueue.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/random.h>
+#include <freax/hw_random.h>
+#include <freax/workqueue.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #define RNG_RESET			0x01
 #define RNG_GEN_PRNG_HW_INIT		0x02

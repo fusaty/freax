@@ -11,15 +11,15 @@
  * themselves.
  */
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitmap.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
+#include <freax/acpi.h>
+#include <freax/efi.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/bitmap.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/rculist.h>
 #include <asm/e820/api.h>
 #include <asm/pci_x86.h>
 #include <asm/acpi.h>

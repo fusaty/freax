@@ -3,7 +3,7 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <pthread.h>
 #include <sched.h>
 #include <signal.h>

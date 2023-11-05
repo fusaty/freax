@@ -16,19 +16,19 @@
  * later using the "UBI control device".
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/namei.h>
-#include <linux/stat.h>
-#include <linux/miscdevice.h>
-#include <linux/mtd/partitions.h>
-#include <linux/log2.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/major.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/stringify.h>
+#include <freax/namei.h>
+#include <freax/stat.h>
+#include <freax/miscdevice.h>
+#include <freax/mtd/partitions.h>
+#include <freax/log2.h>
+#include <freax/kthread.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/major.h>
 #include "ubi.h"
 
 /* Maximum length of the 'mtd=' parameter */

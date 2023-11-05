@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/fdtable.h>
-#include <linux/string.h>
-#include <linux/random.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/cache.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/kcmp.h>
-#include <linux/capability.h>
-#include <linux/list.h>
-#include <linux/eventpoll.h>
-#include <linux/file.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/fdtable.h>
+#include <freax/string.h>
+#include <freax/random.h>
+#include <freax/module.h>
+#include <freax/ptrace.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/cache.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/kcmp.h>
+#include <freax/capability.h>
+#include <freax/list.h>
+#include <freax/eventpoll.h>
+#include <freax/file.h>
 
 #include <asm/unistd.h>
 

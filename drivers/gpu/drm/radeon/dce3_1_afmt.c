@@ -20,7 +20,7 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include <linux/hdmi.h>
+#include <freax/hdmi.h>
 
 #include "radeon.h"
 #include "radeon_asic.h"

@@ -4,12 +4,12 @@
  * Copyright (c)  2003-2017 QLogic Corporation
  */
 #include "qla_nvme.h"
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/nvme.h>
-#include <linux/nvme-fc.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/blk-mq.h>
+#include <freax/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/nvme.h>
+#include <freax/nvme-fc.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/blk-mq.h>
 
 static struct nvme_fc_port_template qla_nvme_fc_transport;
 static int qla_nvme_ls_reject_iocb(struct scsi_qla_host *vha,

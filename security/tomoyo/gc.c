@@ -6,8 +6,8 @@
  */
 
 #include "common.h"
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
 
 /**
  * tomoyo_memory_free - Free memory for elements.

@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ================================================================
-Linux Base Driver for WangXun(R) 10 Gigabit PCI Express Adapters
+freax Base Driver for WangXun(R) 10 Gigabit PCI Express Adapters
 ================================================================
 
-WangXun 10 Gigabit Linux driver.
+WangXun 10 Gigabit freax driver.
 Copyright (c) 2015 - 2022 Beijing WangXun Technology Co., Ltd.
 
 

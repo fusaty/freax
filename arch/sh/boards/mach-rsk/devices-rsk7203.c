@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2008 - 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/smsc911x.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/smsc911x.h>
+#include <freax/input.h>
+#include <freax/gpio.h>
+#include <freax/gpio_keys.h>
+#include <freax/leds.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 #include <cpu/sh7203.h>

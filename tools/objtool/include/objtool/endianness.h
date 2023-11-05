@@ -2,7 +2,7 @@
 #ifndef _OBJTOOL_ENDIANNESS_H
 #define _OBJTOOL_ENDIANNESS_H
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <endian.h>
 #include <objtool/elf.h>
 

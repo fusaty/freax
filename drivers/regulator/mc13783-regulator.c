@@ -6,15 +6,15 @@
 // Copyright (C) 2008 Sascha Hauer, Pengutronix <s.hauer@pengutronix.de>
 // Copyright 2009 Alberto Panizzo <maramaopercheseimorto@gmail.com>
 
-#include <linux/mfd/mc13783.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/mfd/mc13783.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/driver.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/module.h>
 #include "mc13xxx.h"
 
 #define MC13783_REG_SWITCHERS0			24

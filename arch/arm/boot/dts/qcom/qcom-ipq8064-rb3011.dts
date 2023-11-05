@@ -27,9 +27,9 @@
 
 		button {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&qcom_pinmux 66 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			debounce-interval = <60>;
 		};
 	};

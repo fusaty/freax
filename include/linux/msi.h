@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_MSI_H
-#define LINUX_MSI_H
+#ifndef freax_MSI_H
+#define freax_MSI_H
 
 /*
  * This header file contains MSI data structures and functions which are
@@ -15,17 +15,17 @@
  * especially storing MSI descriptor pointers in random code is considered
  * abuse.
  *
- * Device driver relevant functions are available in <linux/msi_api.h>
+ * Device driver relevant functions are available in <freax/msi_api.h>
  */
 
-#include <linux/irqdomain_defs.h>
-#include <linux/cpumask.h>
-#include <linux/msi_api.h>
-#include <linux/xarray.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/irq.h>
-#include <linux/bits.h>
+#include <freax/irqdomain_defs.h>
+#include <freax/cpumask.h>
+#include <freax/msi_api.h>
+#include <freax/xarray.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/irq.h>
+#include <freax/bits.h>
 
 #include <asm/msi.h>
 
@@ -407,7 +407,7 @@ bool arch_restore_msi_irqs(struct pci_dev *dev);
 
 #ifdef CONFIG_GENERIC_MSI_IRQ
 
-#include <linux/irqhandler.h>
+#include <freax/irqhandler.h>
 
 struct irq_domain;
 struct irq_domain_ops;
@@ -692,4 +692,4 @@ static inline struct irq_domain *pci_msi_get_device_domain(struct pci_dev *pdev)
 static inline void pci_write_msi_msg(unsigned int irq, struct msi_msg *msg) { }
 #endif /* !CONFIG_PCI_MSI */
 
-#endif /* LINUX_MSI_H */
+#endif /* freax_MSI_H */

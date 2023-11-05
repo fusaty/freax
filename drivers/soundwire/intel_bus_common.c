@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 // Copyright(c) 2015-2023 Intel Corporation. All rights reserved.
 
-#include <linux/acpi.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
+#include <freax/acpi.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_intel.h>
 #include "cadence_master.h"
 #include "bus.h"
 #include "intel.h"

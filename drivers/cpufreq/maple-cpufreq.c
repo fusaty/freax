@@ -12,18 +12,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/cpufreq.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/mutex.h>
+#include <freax/time.h>
+#include <freax/of.h>
 
 #define DBG(fmt...) pr_debug(fmt)
 

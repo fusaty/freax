@@ -4,12 +4,12 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/spinlock.h>
+#include <freax/tcp.h>
 #include "qed_cxt.h"
 #include "qed_hw.h"
 #include "qed_ll2.h"

@@ -2,7 +2,7 @@
 #ifndef _NET_INET_DATALINK_H_
 #define _NET_INET_DATALINK_H_
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct llc_sap;
 struct net_device;

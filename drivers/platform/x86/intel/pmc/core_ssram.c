@@ -8,8 +8,8 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/pci.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 #include "core.h"
 

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/debugfs.h>
-#include <linux/mtd/spi-nor.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/debugfs.h>
+#include <freax/mtd/spi-nor.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 #include "core.h"
 

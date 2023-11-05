@@ -1,41 +1,41 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * dell-smm-hwmon.c -- Linux driver for accessing the SMM BIOS on Dell laptops.
+ * dell-smm-hwmon.c -- freax driver for accessing the SMM BIOS on Dell laptops.
  *
  * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
  *
  * Hwmon integration:
  * Copyright (C) 2011  Jean Delvare <jdelvare@suse.de>
- * Copyright (C) 2013, 2014  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2013, 2014  Guenter Roeck <freax@roeck-us.net>
  * Copyright (C) 2014, 2015  Pali Rohár <pali@kernel.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/capability.h>
+#include <freax/cpu.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/hwmon.h>
+#include <freax/init.h>
+#include <freax/kconfig.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/string.h>
+#include <freax/thermal.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
-#include <linux/i8k.h>
+#include <freax/i8k.h>
 
 #define I8K_SMM_FN_STATUS	0x0025
 #define I8K_SMM_POWER_STATUS	0x0069

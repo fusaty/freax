@@ -7,9 +7,9 @@
 
   */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/dvb/frontend.h>
 #include <asm/types.h>
 
 #include "tda826x.h"

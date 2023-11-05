@@ -8,8 +8,8 @@
 #ifndef _MWIFIEX_USB_H
 #define _MWIFIEX_USB_H
 
-#include <linux/completion.h>
-#include <linux/usb.h>
+#include <freax/completion.h>
+#include <freax/usb.h>
 
 #define USB8XXX_VID		0x1286
 

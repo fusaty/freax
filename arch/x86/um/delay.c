@@ -4,9 +4,9 @@
  * Mostly copied from arch/x86/lib/delay.c
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
 #include <asm/param.h>
 
 void __delay(unsigned long loops)

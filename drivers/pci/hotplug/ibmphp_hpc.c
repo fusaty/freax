@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
+#include <freax/wait.h>
+#include <freax/time.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
 #include "ibmphp.h"
 
 static int to_debug = 0;

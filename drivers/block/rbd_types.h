@@ -13,7 +13,7 @@
 #ifndef CEPH_RBD_TYPES_H
 #define CEPH_RBD_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* For format version 2, rbd image 'foo' consists of objects
  *   rbd_id.foo		- id of image

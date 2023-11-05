@@ -81,9 +81,9 @@
  *	   the input with zeros to fill it up to the 8 byte boundary.
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/scatterlist.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>

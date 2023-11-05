@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/idr.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/posix-clock.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <uapi/linux/sched/types.h>
+#include <freax/idr.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/posix-clock.h>
+#include <freax/pps_kernel.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <uapi/freax/sched/types.h>
 
 #include "ptp_private.h"
 

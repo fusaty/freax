@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -18,17 +18,17 @@
 #ifndef _UDP_H
 #define _UDP_H
 
-#include <linux/list.h>
-#include <linux/bug.h>
+#include <freax/list.h>
+#include <freax/bug.h>
 #include <net/inet_sock.h>
 #include <net/gso.h>
 #include <net/sock.h>
 #include <net/snmp.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/ipv6.h>
+#include <freax/seq_file.h>
+#include <freax/poll.h>
+#include <freax/indirect_call_wrapper.h>
 
 /**
  *	struct udp_skb_cb  -  UDP(-Lite) private variables

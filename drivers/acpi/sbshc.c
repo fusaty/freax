@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <freax/acpi.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
 #include "sbshc.h"
 
 #define ACPI_SMB_HC_CLASS	"smbus_host_ctl"

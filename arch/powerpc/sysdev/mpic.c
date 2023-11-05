@@ -18,20 +18,20 @@
 #undef DEBUG_IRQ
 #undef DEBUG_LOW
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
-#include <linux/ratelimit.h>
-#include <linux/pgtable.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/syscore_ops.h>
+#include <freax/ratelimit.h>
+#include <freax/pgtable.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #include <asm/ptrace.h>
 #include <asm/signal.h>
@@ -601,7 +601,7 @@ static void __init mpic_scan_ht_pics(struct mpic *mpic)
 
 #endif /* CONFIG_MPIC_U3_HT_IRQS */
 
-/* Find an mpic associated with a given linux interrupt */
+/* Find an mpic associated with a given freax interrupt */
 static struct mpic *mpic_find(unsigned int irq)
 {
 	if (irq < NR_IRQS_LEGACY)
@@ -610,13 +610,13 @@ static struct mpic *mpic_find(unsigned int irq)
 	return irq_get_chip_data(irq);
 }
 
-/* Determine if the linux irq is an IPI */
+/* Determine if the freax irq is an IPI */
 static unsigned int mpic_is_ipi(struct mpic *mpic, unsigned int src)
 {
 	return (src >= mpic->ipi_vecs[0] && src <= mpic->ipi_vecs[3]);
 }
 
-/* Determine if the linux irq is a timer */
+/* Determine if the freax irq is a timer */
 static unsigned int mpic_is_tm(struct mpic *mpic, unsigned int src)
 {
 	return (src >= mpic->timer_vecs[0] && src <= mpic->timer_vecs[7]);
@@ -660,7 +660,7 @@ static inline void mpic_eoi(struct mpic *mpic)
 }
 
 /*
- * Linux descriptor level callbacks
+ * freax descriptor level callbacks
  */
 
 

@@ -6,15 +6,15 @@
  * Copyright 2015 Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/greybus.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/greybus.h>
 
 #include "gb-camera.h"
 #include "greybus_protocols.h"

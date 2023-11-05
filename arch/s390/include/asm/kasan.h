@@ -2,7 +2,7 @@
 #ifndef __ASM_KASAN_H
 #define __ASM_KASAN_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #ifdef CONFIG_KASAN
 

@@ -5,11 +5,11 @@
  * Credit goes to Avi Kivity for the original idea.
  */
 
-#ifndef __LINUX_KVM_IRQFD_H
-#define __LINUX_KVM_IRQFD_H
+#ifndef __freax_KVM_IRQFD_H
+#define __freax_KVM_IRQFD_H
 
-#include <linux/kvm_host.h>
-#include <linux/poll.h>
+#include <freax/kvm_host.h>
+#include <freax/poll.h>
 
 /*
  * Resampling irqfds are a special variety of irqfds used to emulate
@@ -61,4 +61,4 @@ struct kvm_kernel_irqfd {
 	struct irq_bypass_producer *producer;
 };
 
-#endif /* __LINUX_KVM_IRQFD_H */
+#endif /* __freax_KVM_IRQFD_H */

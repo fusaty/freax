@@ -10,14 +10,14 @@
  * Richard Woodruff <r-woodruff2@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/io.h>
 
 #include "soc.h"
 #include "iomap.h"

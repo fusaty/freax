@@ -35,7 +35,7 @@
 			label = "gw2348:green:user";
 			gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

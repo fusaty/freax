@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/skbuff.h>
+#include <freax/gfp.h>
 #include <net/xfrm.h>
-#include <linux/siphash.h>
-#include <linux/rtnetlink.h>
+#include <freax/siphash.h>
+#include <freax/rtnetlink.h>
 
 #include <net/netfilter/nf_conntrack_bpf.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -23,7 +23,7 @@
 #include <net/netfilter/nf_conntrack_zones.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <uapi/linux/netfilter/nf_nat.h>
+#include <uapi/freax/netfilter/nf_nat.h>
 
 #include "nf_internals.h"
 
@@ -917,8 +917,8 @@ static int nf_nat_proto_clean(struct nf_conn *ct, void *data)
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_conntrack.h>
 
 static const struct nla_policy protonat_nla_policy[CTA_PROTONAT_MAX+1] = {
 	[CTA_PROTONAT_PORT_MIN]	= { .type = NLA_U16 },

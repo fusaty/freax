@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ULPI_DRIVER_H
-#define __LINUX_ULPI_DRIVER_H
+#ifndef __freax_ULPI_DRIVER_H
+#define __freax_ULPI_DRIVER_H
 
-#include <linux/mod_devicetable.h>
+#include <freax/mod_devicetable.h>
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 struct ulpi_ops;
 
@@ -62,4 +62,4 @@ void ulpi_unregister_driver(struct ulpi_driver *drv);
 int ulpi_read(struct ulpi *ulpi, u8 addr);
 int ulpi_write(struct ulpi *ulpi, u8 addr, u8 val);
 
-#endif /* __LINUX_ULPI_DRIVER_H */
+#endif /* __freax_ULPI_DRIVER_H */

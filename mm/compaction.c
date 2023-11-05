@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/compaction.c
+ * freax/mm/compaction.c
  *
  * Memory compaction for the reduction of external fragmentation. Note that
  * this heavily depends upon page migration to do all the real heavy
@@ -8,21 +8,21 @@
  *
  * Copyright IBM Corp. 2007-2010 Mel Gorman <mel@csn.ul.ie>
  */
-#include <linux/cpu.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/sched/signal.h>
-#include <linux/backing-dev.h>
-#include <linux/sysctl.h>
-#include <linux/sysfs.h>
-#include <linux/page-isolation.h>
-#include <linux/kasan.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/page_owner.h>
-#include <linux/psi.h>
+#include <freax/cpu.h>
+#include <freax/swap.h>
+#include <freax/migrate.h>
+#include <freax/compaction.h>
+#include <freax/mm_inline.h>
+#include <freax/sched/signal.h>
+#include <freax/backing-dev.h>
+#include <freax/sysctl.h>
+#include <freax/sysfs.h>
+#include <freax/page-isolation.h>
+#include <freax/kasan.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/page_owner.h>
+#include <freax/psi.h>
 #include "internal.h"
 
 #ifdef CONFIG_COMPACTION

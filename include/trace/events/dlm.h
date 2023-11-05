@@ -5,10 +5,10 @@
 #if !defined(_TRACE_DLM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_DLM_H
 
-#include <linux/dlm.h>
-#include <linux/dlmconstants.h>
-#include <uapi/linux/dlm_plock.h>
-#include <linux/tracepoint.h>
+#include <freax/dlm.h>
+#include <freax/dlmconstants.h>
+#include <uapi/freax/dlm_plock.h>
+#include <freax/tracepoint.h>
 
 #include "../../../fs/dlm/dlm_internal.h"
 

@@ -9,7 +9,7 @@
 #ifndef _S390_KEXEC_H
 #define _S390_KEXEC_H
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <asm/processor.h>
 #include <asm/page.h>

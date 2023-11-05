@@ -8,13 +8,13 @@
  * Copyright (C) 2013 Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <freax/arm-smccc.h>
+#include <freax/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
 
 #include <asm/cacheflush.h>
 #include <asm/memblock.h>

@@ -11,8 +11,8 @@
 #endif
 
 #include <errno.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include "pmu.h"
 #include "pmus.h"
 #include "evsel.h"

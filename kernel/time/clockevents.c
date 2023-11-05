@@ -7,12 +7,12 @@
  * Copyright(C) 2006-2007, Timesys Corp., Thomas Gleixner
  */
 
-#include <linux/clockchips.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/device.h>
+#include <freax/clockchips.h>
+#include <freax/hrtimer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/smp.h>
+#include <freax/device.h>
 
 #include "tick-internal.h"
 

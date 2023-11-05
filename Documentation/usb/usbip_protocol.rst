@@ -341,7 +341,7 @@ USBIP_CMD_SUBMIT:
 +-----------+--------+---------------------------------------------------+
 | 0x14      | 4      | transfer_flags: possible values depend on the     |
 |           |        | USBIP_URB transfer_flags.                         |
-|           |        | Refer to include/uapi/linux/usbip.h and           |
+|           |        | Refer to include/uapi/freax/usbip.h and           |
 |           |        | Documentation/driver-api/usb/URB.rst.             |
 |           |        | Refer to usbip_pack_cmd_submit() and              |
 |           |        | tweak_transfer_flags() in drivers/usb/usbip/      |

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/auth_gss.h
+ * freax/include/freax/sunrpc/auth_gss.h
  *
  * Declarations for RPCSEC_GSS
  *
@@ -10,13 +10,13 @@
  * Copyright (c) 2000 The Regents of the University of Michigan
  */
 
-#ifndef _LINUX_SUNRPC_AUTH_GSS_H
-#define _LINUX_SUNRPC_AUTH_GSS_H
+#ifndef _freax_SUNRPC_AUTH_GSS_H
+#define _freax_SUNRPC_AUTH_GSS_H
 
-#include <linux/refcount.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/gss_api.h>
+#include <freax/refcount.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/gss_api.h>
 
 #define RPC_GSS_VERSION		1
 
@@ -89,5 +89,5 @@ struct gss_cred {
 	unsigned long		gc_upcall_timestamp;
 };
 
-#endif /* _LINUX_SUNRPC_AUTH_GSS_H */
+#endif /* _freax_SUNRPC_AUTH_GSS_H */
 

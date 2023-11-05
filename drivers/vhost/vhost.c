@@ -10,26 +10,26 @@
  * Generic code for virtio server in host kernel.
  */
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/vhost_task.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/nospec.h>
-#include <linux/kcov.h>
+#include <freax/eventfd.h>
+#include <freax/vhost.h>
+#include <freax/uio.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/file.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/sort.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/vhost_task.h>
+#include <freax/interval_tree_generic.h>
+#include <freax/nospec.h>
+#include <freax/kcov.h>
 
 #include "vhost.h"
 

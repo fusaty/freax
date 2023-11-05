@@ -5,13 +5,13 @@
  * Copyright (C) 2011 Texas Instruments
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/ip.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/ip.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/irq.h>
 
 #include "../wlcore/wlcore.h"
 #include "../wlcore/debug.h"

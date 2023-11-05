@@ -6,15 +6,15 @@
  * based on exynos_drm_drv.c
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
-#include <linux/console.h>
-#include <linux/iommu.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/of_platform.h>
+#include <freax/component.h>
+#include <freax/console.h>
+#include <freax/iommu.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

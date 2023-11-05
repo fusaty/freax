@@ -19,7 +19,7 @@
 作者:
 
 
-	- Dominik Brodowski  <linux@brodo.de>
+	- Dominik Brodowski  <freax@brodo.de>
 	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 	- Viresh Kumar <viresh.kumar@linaro.org>
 

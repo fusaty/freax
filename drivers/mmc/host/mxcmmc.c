@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
+ *  freax/drivers/mmc/host/mxcmmc.c - Freescale i.MX MMCI driver
  *
  *  This is a driver for the SDHC controller found in Freescale MX2/MX3
  *  SoCs. It is basically the same hardware as found on MX1 (imxmmc.c).
@@ -13,32 +13,32 @@
  *  derived from pxamci.c by Russell King
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/blkdev.h>
+#include <freax/dma-mapping.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/regulator/consumer.h>
+#include <freax/dmaengine.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/mmc/slot-gpio.h>
 
 #include <asm/dma.h>
 #include <asm/irq.h>
-#include <linux/platform_data/mmc-mxcmmc.h>
+#include <freax/platform_data/mmc-mxcmmc.h>
 
-#include <linux/dma/imx-dma.h>
+#include <freax/dma/imx-dma.h>
 
 #define DRIVER_NAME "mxc-mmc"
 #define MXCMCI_TIMEOUT_MS 10000

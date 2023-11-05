@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/linkage.h>
+#include <freax/compat.h>
+#include <freax/signal.h>
+#include <freax/uaccess.h>
+#include <freax/syscalls.h>
+#include <freax/linkage.h>
 
 #include <asm/csr.h>
 #include <asm/signal32.h>

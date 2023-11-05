@@ -8,7 +8,7 @@
 
 #include <kunit/resource.h>
 #include <kunit/test.h>
-#include <linux/kref.h>
+#include <freax/kref.h>
 
 /*
  * Used for static resources and when a kunit_resource * has been created by

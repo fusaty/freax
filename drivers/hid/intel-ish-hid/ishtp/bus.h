@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2014-2016, Intel Corporation.
  */
-#ifndef _LINUX_ISHTP_CL_BUS_H
-#define _LINUX_ISHTP_CL_BUS_H
+#ifndef _freax_ISHTP_CL_BUS_H
+#define _freax_ISHTP_CL_BUS_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/intel-ish-client-if.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/intel-ish-client-if.h>
 
 struct ishtp_cl;
 struct ishtp_cl_device;
@@ -73,4 +73,4 @@ void	ishtp_reset_handler(struct ishtp_device *dev);
 void	ishtp_reset_compl_handler(struct ishtp_device *dev);
 
 int	ishtp_fw_cl_by_uuid(struct ishtp_device *dev, const guid_t *cuuid);
-#endif /* _LINUX_ISHTP_CL_BUS_H */
+#endif /* _freax_ISHTP_CL_BUS_H */

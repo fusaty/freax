@@ -13,13 +13,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/pagemap.h>
-#include <linux/crc32.h>
-#include <linux/compiler.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/pagemap.h>
+#include <freax/crc32.h>
+#include <freax/compiler.h>
+#include <freax/vmalloc.h>
 #include "nodelist.h"
 #include "debug.h"
 

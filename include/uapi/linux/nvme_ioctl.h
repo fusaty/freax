@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Definitions for the NVM Express ioctl interface
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#ifndef _UAPI_LINUX_NVME_IOCTL_H
-#define _UAPI_LINUX_NVME_IOCTL_H
+#ifndef _UAPI_freax_NVME_IOCTL_H
+#define _UAPI_freax_NVME_IOCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct nvme_user_io {
 	__u8	opcode;
@@ -111,4 +111,4 @@ struct nvme_uring_cmd {
 #define NVME_URING_CMD_ADMIN	_IOWR('N', 0x82, struct nvme_uring_cmd)
 #define NVME_URING_CMD_ADMIN_VEC _IOWR('N', 0x83, struct nvme_uring_cmd)
 
-#endif /* _UAPI_LINUX_NVME_IOCTL_H */
+#endif /* _UAPI_freax_NVME_IOCTL_H */

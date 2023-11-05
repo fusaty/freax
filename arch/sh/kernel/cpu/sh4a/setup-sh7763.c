@@ -6,14 +6,14 @@
  *  Copyright (C) 2007  Yoshihiro Shimoda
  *  Copyright (C) 2008, 2009  Nobuhiro Iwamatsu
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
-#include <linux/serial_sci.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/sh_timer.h>
+#include <freax/sh_intc.h>
+#include <freax/io.h>
+#include <freax/serial_sci.h>
+#include <freax/usb/ohci_pdriver.h>
 #include <asm/platform_early.h>
 
 static struct plat_sci_port scif0_platform_data = {

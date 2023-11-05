@@ -6,19 +6,19 @@
  * Copyright (c) 2002-3 Open Source Development Labs
  * Copyright (c) 2007 Greg Kroah-Hartman <gregkh@suse.de>
  * Copyright (c) 2007 Novell Inc.
- * Copyright (c) 2023 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2023 Greg Kroah-Hartman <gregkh@freaxfoundation.org>
  */
 
-#include <linux/async.h>
-#include <linux/device/bus.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <freax/async.h>
+#include <freax/device/bus.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
 #include "base.h"
 #include "power/power.h"
 

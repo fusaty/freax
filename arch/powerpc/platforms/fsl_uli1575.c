@@ -5,12 +5,12 @@
  * Copyright 2007 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/of_irq.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/mc146818rtc.h>
+#include <freax/of_irq.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>

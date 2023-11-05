@@ -6,23 +6,23 @@
  *
  * originally based on:
  *
- *  linux/bvme/config.c
+ *  freax/bvme/config.c
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/serial_reg.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/tty.h>
+#include <freax/console.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/major.h>
+#include <freax/serial_reg.h>
+#include <freax/rtc.h>
+#include <freax/vt_kern.h>
+#include <freax/bcd.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

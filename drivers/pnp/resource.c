@@ -8,20 +8,20 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/irq.h>
-#include <linux/pci.h>
-#include <linux/libata.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
+#include <freax/pci.h>
+#include <freax/libata.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
 
-#include <linux/pnp.h>
+#include <freax/pnp.h>
 #include "base.h"
 
 static int pnp_reserve_irq[16] = {[0 ... 15] = -1 };	/* reserve (don't use) some IRQ */

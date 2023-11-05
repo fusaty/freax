@@ -1,9 +1,9 @@
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/agp_backend.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 
 #include <asm/machvec.h>
 #include <asm/agp_backend.h>

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for freax
  * Point-to-point protocol support
  *
  * Copyright (C) 1999 - 2008 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/errno.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/errno.h>
+#include <freax/hdlc.h>
+#include <freax/if_arp.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pkt_sched.h>
+#include <freax/poll.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #define DEBUG_CP		0 /* also bytes# to dump */
 #define DEBUG_STATE		0

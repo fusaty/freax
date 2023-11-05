@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/watchdog.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/platform_device.h>
+#include <freax/time.h>
+#include <freax/watchdog.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
 
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/da9052.h>
+#include <freax/mfd/da9052/reg.h>
+#include <freax/mfd/da9052/da9052.h>
 
 #define DA9052_DEF_TIMEOUT	4
 #define DA9052_TWDMIN		256

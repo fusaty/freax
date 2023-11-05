@@ -8,14 +8,14 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

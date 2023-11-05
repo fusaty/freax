@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_IO_URING_H
-#define _LINUX_IO_URING_H
+#ifndef _freax_IO_URING_H
+#define _freax_IO_URING_H
 
-#include <linux/sched.h>
-#include <linux/xarray.h>
-#include <uapi/linux/io_uring.h>
+#include <freax/sched.h>
+#include <freax/xarray.h>
+#include <uapi/freax/io_uring.h>
 
 enum io_uring_cmd_flags {
 	IO_URING_F_COMPLETE_DEFER	= 1,

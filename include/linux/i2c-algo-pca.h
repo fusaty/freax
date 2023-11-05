@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_I2C_ALGO_PCA_H
-#define _LINUX_I2C_ALGO_PCA_H
+#ifndef _freax_I2C_ALGO_PCA_H
+#define _freax_I2C_ALGO_PCA_H
 
 /* Chips known to the pca algo */
 #define I2C_PCA_CHIP_9564	0x00
@@ -84,4 +84,4 @@ struct i2c_algo_pca_data {
 int i2c_pca_add_bus(struct i2c_adapter *);
 int i2c_pca_add_numbered_bus(struct i2c_adapter *);
 
-#endif /* _LINUX_I2C_ALGO_PCA_H */
+#endif /* _freax_I2C_ALGO_PCA_H */

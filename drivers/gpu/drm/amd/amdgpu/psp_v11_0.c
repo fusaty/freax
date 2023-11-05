@@ -20,9 +20,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
 #include <drm/drm_drv.h>
 
 #include "amdgpu.h"

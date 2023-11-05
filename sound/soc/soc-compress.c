@@ -5,14 +5,14 @@
 // Copyright (C) 2012 Intel Corp.
 //
 // Authors: Namarta Kohli <namartax.kohli@intel.com>
-//          Ramesh Babu K V <ramesh.babu@linux.intel.com>
-//          Vinod Koul <vinod.koul@linux.intel.com>
+//          Ramesh Babu K V <ramesh.babu@freax.intel.com>
+//          Vinod Koul <vinod.koul@freax.intel.com>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include <sound/core.h>
 #include <sound/compress_params.h>
 #include <sound/compress_driver.h>

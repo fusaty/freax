@@ -2,7 +2,7 @@
 #ifndef _XDP_SAMPLE_BPF_H
 #define _XDP_SAMPLE_BPF_H
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_helpers.h>
@@ -48,8 +48,8 @@ static __always_inline void swap_src_dst_mac(void *data)
 }
 
 /*
- * Note: including linux/compiler.h or linux/kernel.h for the macros below
- * conflicts with vmlinux.h include in BPF files, so we define them here.
+ * Note: including freax/compiler.h or freax/kernel.h for the macros below
+ * conflicts with vmfreax.h include in BPF files, so we define them here.
  *
  * Following functions are taken from kernel sources and
  * break aliasing rules in their original form.

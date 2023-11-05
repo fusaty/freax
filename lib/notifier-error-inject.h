@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/atomic.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
+#include <freax/atomic.h>
+#include <freax/debugfs.h>
+#include <freax/notifier.h>
 
 struct notifier_err_inject_action {
 	unsigned long val;

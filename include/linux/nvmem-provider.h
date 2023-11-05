@@ -6,13 +6,13 @@
  * Copyright (C) 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#ifndef _LINUX_NVMEM_PROVIDER_H
-#define _LINUX_NVMEM_PROVIDER_H
+#ifndef _freax_NVMEM_PROVIDER_H
+#define _freax_NVMEM_PROVIDER_H
 
-#include <linux/device/driver.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
+#include <freax/device/driver.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
 
 struct nvmem_device;
 typedef int (*nvmem_reg_read_t)(void *priv, unsigned int offset,
@@ -248,4 +248,4 @@ nvmem_layout_get_match_data(struct nvmem_device *nvmem,
 	module_driver(__layout_driver, nvmem_layout_register,	\
 		      nvmem_layout_unregister)
 
-#endif  /* ifndef _LINUX_NVMEM_PROVIDER_H */
+#endif  /* ifndef _freax_NVMEM_PROVIDER_H */

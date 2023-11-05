@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2021 Intel Corporation */
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 #ifndef __PECI_HWMON_COMMON_H
 #define __PECI_HWMON_COMMON_H

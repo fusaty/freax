@@ -20,30 +20,30 @@
 
 #define pr_fmt(fmt) "kprobes: " fmt
 
-#include <linux/kprobes.h>
-#include <linux/hash.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
-#include <linux/moduleloader.h>
-#include <linux/kallsyms.h>
-#include <linux/freezer.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sysctl.h>
-#include <linux/kdebug.h>
-#include <linux/memory.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
-#include <linux/jump_label.h>
-#include <linux/static_call.h>
-#include <linux/perf_event.h>
+#include <freax/kprobes.h>
+#include <freax/hash.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/export.h>
+#include <freax/moduleloader.h>
+#include <freax/kallsyms.h>
+#include <freax/freezer.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/sysctl.h>
+#include <freax/kdebug.h>
+#include <freax/memory.h>
+#include <freax/ftrace.h>
+#include <freax/cpu.h>
+#include <freax/jump_label.h>
+#include <freax/static_call.h>
+#include <freax/perf_event.h>
 
 #include <asm/sections.h>
 #include <asm/cacheflush.h>
 #include <asm/errno.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define KPROBE_HASH_BITS 6
 #define KPROBE_TABLE_SIZE (1 << KPROBE_HASH_BITS)

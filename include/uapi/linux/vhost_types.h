@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_VHOST_TYPES_H
-#define _LINUX_VHOST_TYPES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_VHOST_TYPES_H
+#define _freax_VHOST_TYPES_H
 /* Userspace interface for in-kernel virtio accelerators. */
 
 /* vhost is used to reduce the number of system calls involved in virtio.
@@ -11,10 +11,10 @@
  * device configuration.
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_ring.h>
 
 struct vhost_vring_state {
 	unsigned int index;

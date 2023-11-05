@@ -8,14 +8,14 @@
  * Copyright (C) 2008  Renesas Solutions Corp.
  * Copyright (C) 2008  Atom Create Engineering Co., Ltd.
  */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/completion.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 
 #define SMCR		0x00
 #define SMCR_START	(1 << 0)

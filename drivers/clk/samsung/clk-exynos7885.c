@@ -6,10 +6,10 @@
  * Common Clock Framework support for Exynos7885 SoC.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/clock/exynos7885.h>
 

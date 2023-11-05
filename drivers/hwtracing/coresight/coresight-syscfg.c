@@ -4,8 +4,8 @@
  * Author: Mike Leach <mike.leach@linaro.org>
  */
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "coresight-config.h"
 #include "coresight-etm-perf.h"

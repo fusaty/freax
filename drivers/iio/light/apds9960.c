@@ -8,22 +8,22 @@
  * TODO: gesture + proximity calib offsets
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/i2c.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/events.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/sysfs.h>
 
 #define APDS9960_REGMAP_NAME	"apds9960_regmap"
 #define APDS9960_DRV_NAME	"apds9960"

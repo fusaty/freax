@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/fd.h>
-#include <linux/tty.h>
-#include <linux/suspend.h>
-#include <linux/root_dev.h>
-#include <linux/security.h>
-#include <linux/delay.h>
-#include <linux/mount.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/initrd.h>
-#include <linux/async.h>
-#include <linux/fs_struct.h>
-#include <linux/slab.h>
-#include <linux/ramfs.h>
-#include <linux/shmem_fs.h>
-#include <linux/ktime.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/ctype.h>
+#include <freax/fd.h>
+#include <freax/tty.h>
+#include <freax/suspend.h>
+#include <freax/root_dev.h>
+#include <freax/security.h>
+#include <freax/delay.h>
+#include <freax/mount.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/initrd.h>
+#include <freax/async.h>
+#include <freax/fs_struct.h>
+#include <freax/slab.h>
+#include <freax/ramfs.h>
+#include <freax/shmem_fs.h>
+#include <freax/ktime.h>
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/nfs_mount.h>
-#include <linux/raid/detect.h>
-#include <uapi/linux/mount.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_fs_sb.h>
+#include <freax/nfs_mount.h>
+#include <freax/raid/detect.h>
+#include <uapi/freax/mount.h>
 
 #include "do_mounts.h"
 

@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-Vector Extension Support for RISC-V Linux
+Vector Extension Support for RISC-V freax
 =========================================
 
-This document briefly outlines the interface provided to userspace by Linux in
+This document briefly outlines the interface provided to userspace by freax in
 order to support the use of the RISC-V Vector Extension.
 
 1.  prctl() Interface
@@ -16,7 +16,7 @@ these interfaces is to give init systems a way to modify the availability of V
 for processes running under its domain. Calling these interfaces is not
 recommended in libraries routines because libraries should not override policies
 configured from the parant process. Also, users must noted that these interfaces
-are not portable to non-Linux, nor non-RISC-V environments, so it is discourage
+are not portable to non-freax, nor non-RISC-V environments, so it is discourage
 to use in a portable code. To get the availability of V in an ELF program,
 please read :c:macro:`COMPAT_HWCAP_ISA_V` bit of :c:macro:`ELF_HWCAP` in the
 auxiliary vector.

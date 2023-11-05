@@ -7,13 +7,13 @@
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
 
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/tboot.h>
-#include <linux/dmi.h>
-#include <linux/pgtable.h>
+#include <freax/suspend.h>
+#include <freax/export.h>
+#include <freax/smp.h>
+#include <freax/perf_event.h>
+#include <freax/tboot.h>
+#include <freax/dmi.h>
+#include <freax/pgtable.h>
 
 #include <asm/proto.h>
 #include <asm/mtrr.h>

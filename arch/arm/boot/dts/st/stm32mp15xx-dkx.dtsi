@@ -66,7 +66,7 @@
 		led-blue {
 			label = "heartbeat";
 			gpios = <&gpiod 11 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};

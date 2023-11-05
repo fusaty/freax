@@ -12,10 +12,10 @@
  * (C) 2006,2008 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CONNSECMARK.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_CONNSECMARK.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 

@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 
@@ -12,7 +12,7 @@
  */
 #define BSS_FIRST_SECTIONS *(.bss..swapper_pg_dir)
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 #include "image-vars.h"
 
 /*
@@ -33,7 +33,7 @@ jiffies	 = jiffies_64;
 
 SECTIONS
 {
-	. = VMLINUX_LOAD_ADDRESS;
+	. = VMfreax_LOAD_ADDRESS;
 
 	_text = .;
 	HEAD_TEXT_SECTION

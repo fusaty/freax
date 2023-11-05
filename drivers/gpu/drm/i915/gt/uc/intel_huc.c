@@ -3,7 +3,7 @@
  * Copyright © 2016-2019 Intel Corporation
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "gt/intel_gt.h"
 #include "intel_guc_reg.h"
@@ -13,8 +13,8 @@
 #include "i915_reg.h"
 #include "pxp/intel_pxp_cmd_interface_43.h"
 
-#include <linux/device/bus.h>
-#include <linux/mei_aux.h>
+#include <freax/device/bus.h>
+#include <freax/mei_aux.h>
 
 /**
  * DOC: HuC

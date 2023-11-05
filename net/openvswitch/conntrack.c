@@ -3,13 +3,13 @@
  * Copyright (c) 2015 Nicira, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/openvswitch.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/sctp.h>
-#include <linux/static_key.h>
-#include <linux/string_helpers.h>
+#include <freax/module.h>
+#include <freax/openvswitch.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/sctp.h>
+#include <freax/static_key.h>
+#include <freax/string_helpers.h>
 #include <net/ip.h>
 #include <net/genetlink.h>
 #include <net/netfilter/nf_conntrack_core.h>

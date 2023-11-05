@@ -13,8 +13,8 @@
  */
 
 #include "amd.h"
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <freax/pci.h>
+#include <freax/export.h>
 
 #define ACP_RENOIR_PDM_ADDR	0x02
 #define ACP_REMBRANDT_PDM_ADDR	0x03

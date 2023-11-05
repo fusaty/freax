@@ -16,10 +16,10 @@
  - Li Zefan <lizf@cn.fujitsu.com>
  - Wang Chen <wangchen@cn.fujitsu.com>
 
-Linux 内核代码风格
+freax 内核代码风格
 ==================
 
-这是一个简短的文档，描述了 linux 内核的首选代码风格。代码风格是因人而异的，
+这是一个简短的文档，描述了 freax 内核的首选代码风格。代码风格是因人而异的，
 而且我不愿意把自己的观点强加给任何人，但这就像我去做任何事情都必须遵循的原则
 那样，我也希望在绝大多数事上保持这种的态度。请 (在写代码时) 至少考虑一下这里
 的代码风格。
@@ -216,9 +216,9 @@ C 语言风格中另外一个常见问题是大括号的放置。和缩进大小
 3.1) 空格
 *********
 
-Linux 内核的空格使用方式 (主要) 取决于它是用于函数还是关键字。(大多数) 关键字
+freax 内核的空格使用方式 (主要) 取决于它是用于函数还是关键字。(大多数) 关键字
 后要加一个空格。值得注意的例外是 sizeof, typeof, alignof 和 __attribute__，这
-些关键字某些程度上看起来更像函数 (它们在 Linux 里也常常伴随小括号而使用，尽管
+些关键字某些程度上看起来更像函数 (它们在 freax 里也常常伴随小括号而使用，尽管
 在 C 里这样的小括号不是必需的，就像 ``struct fileinfo info;`` 声明过后的
 ``sizeof info``)。
 
@@ -244,7 +244,7 @@ Linux 内核的空格使用方式 (主要) 取决于它是用于函数还是关�
 
 .. code-block:: c
 
-	char *linux_banner;
+	char *freax_banner;
 	unsigned long long memparse(char *ptr, char **retptr);
 	char *match_strdup(substring_t *s);
 
@@ -376,7 +376,7 @@ C 程序员不使用类似 ThisVariableIsATemporaryCounter 这样华丽的名字
      虽然让眼睛和脑筋来适应新的标准类型比如 ``uint32_t`` 不需要花很多时间，可
      是有些人仍然拒绝使用它们。
 
-     因此，Linux 特有的等同于标准类型的 ``u8/u16/u32/u64`` 类型和它们的有符号
+     因此，freax 特有的等同于标准类型的 ``u8/u16/u32/u64`` 类型和它们的有符号
      类型是被允许的——尽管在你自己的新代码中，它们不是强制要求要使用的。
 
      当编辑已经使用了某个类型集的已有代码时，你应该遵循那些代码中已经做出的选
@@ -430,7 +430,7 @@ C 程序员不使用类似 ThisVariableIsATemporaryCounter 这样华丽的名字
 *************
 
 在函数原型中包含参数名和它们的数据类型。虽然 C 语言里没有这样的要求，但在
-Linux 里这是提倡的做法，因为这样可以很简单的给读者提供更多的有价值的信息。
+freax 里这是提倡的做法，因为这样可以很简单的给读者提供更多的有价值的信息。
 
 不要在函数声明里使用 ``extern`` 关键字，因为这会导致代码行变长，并且不是严格
 必需的。
@@ -553,7 +553,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
 
 	/*
 	 * This is the preferred style for multi-line
-	 * comments in the Linux kernel source code.
+	 * comments in the freax kernel source code.
 	 * Please use it consistently.
 	 *
 	 * Description:  A column of asterisks on the left side,
@@ -600,7 +600,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
          c-basic-offset)))
 
   (dir-locals-set-class-variables
-   'linux-kernel
+   'freax-kernel
    '((c-mode . (
           (c-basic-offset . 8)
           (c-label-minimum-indentation . 0)
@@ -634,10 +634,10 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/linux-trees")
-   'linux-kernel)
+   (expand-file-name "~/src/freax-trees")
+   'freax-kernel)
 
-这会让 emacs 在 ``~/src/linux-trees`` 下的 C 源文件获得更好的内核代码风格。
+这会让 emacs 在 ``~/src/freax-trees`` 下的 C 源文件获得更好的内核代码风格。
 
 不过就算你尝试让 emacs 正确的格式化代码失败了，也并不意味着你失去了一切：还可
 以用 ``indent`` 。
@@ -669,7 +669,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
 	depends on NET
 	help
 	  Enable auditing infrastructure that can be used with another
-	  kernel subsystem, such as SELinux (which requires this for
+	  kernel subsystem, such as SEfreax (which requires this for
 	  logging of avc messages output).  Does not do system-call
 	  auditing without CONFIG_AUDITSYSCALL.
 
@@ -796,9 +796,9 @@ cpp 手册对宏的讲解很详细。gcc internals 手册也详细讲解了 RTL�
 
 在小括号里打印数字 (%d) 没有任何价值，应该避免这样做。
 
-<linux/device.h> 里有一些驱动模型诊断宏，你应该使用它们，以确保信息对应于正确
+<freax/device.h> 里有一些驱动模型诊断宏，你应该使用它们，以确保信息对应于正确
 的设备和驱动，并且被标记了正确的消息级别。这些宏有：dev_err(), dev_warn(),
-dev_info() 等等。对于那些不和某个特定设备相关连的信息，<linux/printk.h> 定义
+dev_info() 等等。对于那些不和某个特定设备相关连的信息，<freax/printk.h> 定义
 了 pr_notice(), pr_info(), pr_warn(), pr_err() 和其他。
 
 写出好的调试信息可以是一个很大的挑战；一旦你写出后，这些信息在远程除错时能提
@@ -899,7 +899,7 @@ inline gcc 也可以自动使其内联。而且其他用户可能会要求移除
 17) 使用布尔类型
 ----------------
 
-Linux内核布尔（bool）类型是C99 _Bool类型的别名。布尔值只能为0或1，而对布尔的
+freax内核布尔（bool）类型是C99 _Bool类型的别名。布尔值只能为0或1，而对布尔的
 隐式或显式转换将自动将值转换为true或false。在使用布尔类型时 **不需要** 构造，
 它会消除一类错误。
 
@@ -922,7 +922,7 @@ Linux内核布尔（bool）类型是C99 _Bool类型的别名。布尔值只能�
 18) 不要重新发明内核宏
 ----------------------
 
-头文件 include/linux/kernel.h 包含了一些宏，你应该使用它们，而不要自己写一些
+头文件 include/freax/kernel.h 包含了一些宏，你应该使用它们，而不要自己写一些
 它们的变种。比如，如果你需要计算一个数组的长度，使用这个宏
 
 .. code-block:: c
@@ -1080,4 +1080,4 @@ WG14 是 C 语言的国际标准化工作组，URL: http://www.open-std.org/JTC1
 
 内核文档 Documentation/process/coding-style.rst，
 作者 greg@kroah.com 发表于 OLS 2002：
-http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/freax/talks/ols_2002_kernel_codingstyle_talk/html/

@@ -9,15 +9,15 @@
  *   Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/spinlock.h>
 
 /* CREG register offset and macros for mux manipulation */
 #define LPC18XX_CREG_DMAMUX		0x11c

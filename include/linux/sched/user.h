@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_USER_H
-#define _LINUX_SCHED_USER_H
+#ifndef _freax_SCHED_USER_H
+#define _freax_SCHED_USER_H
 
-#include <linux/uidgid.h>
-#include <linux/atomic.h>
-#include <linux/percpu_counter.h>
-#include <linux/refcount.h>
-#include <linux/ratelimit.h>
+#include <freax/uidgid.h>
+#include <freax/atomic.h>
+#include <freax/percpu_counter.h>
+#include <freax/refcount.h>
+#include <freax/ratelimit.h>
 
 /*
  * Some day this will be a full-fledged user tracking system..
@@ -53,4 +53,4 @@ static inline struct user_struct *get_uid(struct user_struct *u)
 }
 extern void free_uid(struct user_struct *);
 
-#endif /* _LINUX_SCHED_USER_H */
+#endif /* _freax_SCHED_USER_H */

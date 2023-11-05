@@ -4,11 +4,11 @@
  * Copyright (c) 2008-2011 Jonathan Cameron
  */
 
-#ifndef __LINUX_IIO_TRIGGER_CONSUMER_H__
-#define __LINUX_IIO_TRIGGER_CONSUMER_H__
+#ifndef __freax_IIO_TRIGGER_CONSUMER_H__
+#define __freax_IIO_TRIGGER_CONSUMER_H__
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
 
 struct iio_dev;
 struct iio_trigger;

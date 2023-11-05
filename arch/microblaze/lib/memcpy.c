@@ -24,12 +24,12 @@
  * not any responsibility to update it.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/compiler.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/compiler.h>
 
-#include <linux/string.h>
+#include <freax/string.h>
 
 #ifdef CONFIG_OPT_LIB_FUNCTION
 void *memcpy(void *v_dst, const void *v_src, __kernel_size_t c)

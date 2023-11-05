@@ -8,13 +8,13 @@
  *  Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/gpio/driver.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define CDNS_GPIO_BYPASS_MODE		0x00
 #define CDNS_GPIO_DIRECTION_MODE	0x04

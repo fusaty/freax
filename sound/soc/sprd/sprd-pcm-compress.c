@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2019 Spreadtrum Communications Inc.
 
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/sprd-dma.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/dma/sprd-dma.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

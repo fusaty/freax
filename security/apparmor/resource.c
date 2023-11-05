@@ -8,8 +8,8 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/audit.h>
-#include <linux/security.h>
+#include <freax/audit.h>
+#include <freax/security.h>
 
 #include "include/audit.h"
 #include "include/cred.h"

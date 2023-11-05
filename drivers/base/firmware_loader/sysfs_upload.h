@@ -2,7 +2,7 @@
 #ifndef __SYSFS_UPLOAD_H
 #define __SYSFS_UPLOAD_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #include "sysfs.h"
 

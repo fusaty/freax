@@ -52,14 +52,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/vmalloc.h>
-#include <linux/bio.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/buffer_head.h>
+#include <freax/sort.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/crc32.h>
+#include <freax/vmalloc.h>
+#include <freax/bio.h>
 
 #include "gfs2.h"
 #include "incore.h"

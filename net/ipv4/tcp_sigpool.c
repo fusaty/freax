@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include <crypto/hash.h>
-#include <linux/cpu.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/workqueue.h>
+#include <freax/cpu.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/workqueue.h>
 #include <net/tcp.h>
 
 static size_t __scratch_size;

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Converted from tools/testing/selftests/bpf/verifier/unpriv.c */
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include "../../../include/linux/filter.h"
+#include "../../../include/freax/filter.h"
 #include "bpf_misc.h"
 
 #define BPF_SK_LOOKUP(func) \

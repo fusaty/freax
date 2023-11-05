@@ -11,13 +11,13 @@
 #ifndef __AA_POLICY_H
 #define __AA_POLICY_H
 
-#include <linux/capability.h>
-#include <linux/cred.h>
-#include <linux/kref.h>
-#include <linux/rhashtable.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
+#include <freax/capability.h>
+#include <freax/cred.h>
+#include <freax/kref.h>
+#include <freax/rhashtable.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
 
 #include "apparmor.h"
 #include "audit.h"

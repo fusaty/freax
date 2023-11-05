@@ -12,16 +12,16 @@
  * which are suitable for UP and SMP based clocksources respectively
  */
 
-#include <linux/interrupt.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <freax/interrupt.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
 
 #include <soc/arc/timers.h>
 #include <soc/arc/mcip.h>

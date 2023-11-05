@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 static
 struct rb_node *strlist__node_new(struct rblist *rblist, const void *entry)

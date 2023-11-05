@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef SCATTERLIST_H
 #define SCATTERLIST_H
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
 
 struct scatterlist {
 	unsigned long	page_link;
@@ -11,7 +11,7 @@ struct scatterlist {
 	dma_addr_t	dma_address;
 };
 
-/* Scatterlist helpers, stolen from linux/scatterlist.h */
+/* Scatterlist helpers, stolen from freax/scatterlist.h */
 #define sg_is_chain(sg)		((sg)->page_link & 0x01)
 #define sg_is_last(sg)		((sg)->page_link & 0x02)
 #define sg_chain_ptr(sg)	\

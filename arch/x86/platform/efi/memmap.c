@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/efi.h>
+#include <freax/io.h>
 #include <asm/early_ioremap.h>
 #include <asm/efi.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
 
 static phys_addr_t __init __efi_memmap_alloc_early(unsigned long size)
 {

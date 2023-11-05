@@ -10,13 +10,13 @@
  */
 
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"PenMount serial touchscreen driver"
 

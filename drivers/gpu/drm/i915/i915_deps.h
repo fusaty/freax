@@ -6,7 +6,7 @@
 #ifndef _I915_DEPS_H_
 #define _I915_DEPS_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct ttm_operation_ctx;
 struct dma_fence;

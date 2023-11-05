@@ -6,16 +6,16 @@
  * Copyright (C) 1999 Jakub Jelinek   (jakub@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include <asm/iommu.h>
 #include <asm/irq.h>
@@ -509,7 +509,7 @@ static struct pci_pbm_info *psycho_find_sibling(u32 upa_portid)
 
 static int psycho_probe(struct platform_device *op)
 {
-	const struct linux_prom64_registers *pr_regs;
+	const struct freax_prom64_registers *pr_regs;
 	struct device_node *dp = op->dev.of_node;
 	struct pci_pbm_info *pbm;
 	struct iommu *iommu;

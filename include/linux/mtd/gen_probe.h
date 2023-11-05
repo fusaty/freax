@@ -4,13 +4,13 @@
  * Copyright © 2001-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#ifndef __LINUX_MTD_GEN_PROBE_H__
-#define __LINUX_MTD_GEN_PROBE_H__
+#ifndef __freax_MTD_GEN_PROBE_H__
+#define __freax_MTD_GEN_PROBE_H__
 
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/bitops.h>
+#include <freax/mtd/flashchip.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/cfi.h>
+#include <freax/bitops.h>
 
 struct chip_probe {
 	char *name;
@@ -20,4 +20,4 @@ struct chip_probe {
 
 struct mtd_info *mtd_do_chip_probe(struct map_info *map, struct chip_probe *cp);
 
-#endif /* __LINUX_MTD_GEN_PROBE_H__ */
+#endif /* __freax_MTD_GEN_PROBE_H__ */

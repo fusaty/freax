@@ -7,11 +7,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/notifier.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_modes.h>
 #include <drm/drm_print.h>

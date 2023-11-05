@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_TLBFLUSH_H
 #define _ASM_X86_TLBFLUSH_H
 
-#include <linux/mm_types.h>
-#include <linux/mmu_notifier.h>
-#include <linux/sched.h>
+#include <freax/mm_types.h>
+#include <freax/mmu_notifier.h>
+#include <freax/sched.h>
 
 #include <asm/processor.h>
 #include <asm/cpufeature.h>

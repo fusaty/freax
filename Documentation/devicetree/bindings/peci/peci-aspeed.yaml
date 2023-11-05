@@ -8,7 +8,7 @@ title: Aspeed PECI Bus
 
 maintainers:
   - Iwona Winiarska <iwona.winiarska@intel.com>
-  - Jae Hyun Yoo <jae.hyun.yoo@linux.intel.com>
+  - Jae Hyun Yoo <jae.hyun.yoo@freax.intel.com>
 
 allOf:
   - $ref: peci-controller.yaml#

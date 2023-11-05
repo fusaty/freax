@@ -7,11 +7,11 @@
  *	Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

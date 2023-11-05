@@ -7,10 +7,10 @@
  * Based on AT91RM9200 datasheet revision E.
  */
 
-#ifndef _LINUX_MFD_SYSCON_ATMEL_ST_H
-#define _LINUX_MFD_SYSCON_ATMEL_ST_H
+#ifndef _freax_MFD_SYSCON_ATMEL_ST_H
+#define _freax_MFD_SYSCON_ATMEL_ST_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define AT91_ST_CR	0x00	/* Control Register */
 #define		AT91_ST_WDRST	BIT(0)	/* Watchdog Timer Restart */
@@ -42,4 +42,4 @@
 #define AT91_ST_CRTR	0x24	/* Current Real-time Register */
 #define		AT91_ST_CRTV	0xfffff	/* Current Real-Time Value */
 
-#endif /* _LINUX_MFD_SYSCON_ATMEL_ST_H */
+#endif /* _freax_MFD_SYSCON_ATMEL_ST_H */

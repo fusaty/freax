@@ -3,7 +3,7 @@
  *	IP multicast routing support for mrouted 3.6/3.8
  *
  *		(c) 1995 Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *	  Linux Consultancy and Custom Driver Development
+ *	  freax Consultancy and Custom Driver Development
  *
  *	Fixes:
  *	Michael Chastain	:	Incorrect size of copying.
@@ -21,49 +21,49 @@
  *					Relax this requirement to work with older peers.
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mroute.h>
-#include <linux/init.h>
-#include <linux/if_ether.h>
-#include <linux/slab.h>
+#include <freax/uaccess.h>
+#include <freax/types.h>
+#include <freax/cache.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/fcntl.h>
+#include <freax/stat.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/igmp.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/mroute.h>
+#include <freax/init.h>
+#include <freax/if_ether.h>
+#include <freax/slab.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/route.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/rhashtable.h>
+#include <freax/notifier.h>
+#include <freax/if_arp.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/compat.h>
+#include <freax/export.h>
+#include <freax/rhashtable.h>
 #include <net/ip_tunnels.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
-#include <linux/netconf.h>
+#include <freax/netconf.h>
 #include <net/rtnh.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 struct ipmr_rule {
 	struct fib_rule		common;

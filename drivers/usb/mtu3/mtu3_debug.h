@@ -10,7 +10,7 @@
 #ifndef __MTU3_DEBUG_H__
 #define __MTU3_DEBUG_H__
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 struct ssusb_mtk;
 

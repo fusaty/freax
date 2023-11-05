@@ -20,23 +20,23 @@
 /*
  * This file contains functions for buffer object structure management
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gfp.h>		/* for GFP_ATOMIC */
-#include <linux/mm.h>
-#include <linux/mm_types.h>
-#include <linux/hugetlb.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>		/* for kmalloc */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/gfp.h>		/* for GFP_ATOMIC */
+#include <freax/mm.h>
+#include <freax/mm_types.h>
+#include <freax/hugetlb.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>		/* for kmalloc */
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/io.h>
 #include <asm/current.h>
-#include <linux/sched/signal.h>
-#include <linux/file.h>
+#include <freax/sched/signal.h>
+#include <freax/file.h>
 
 #include <asm/set_memory.h>
 

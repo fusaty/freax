@@ -5,15 +5,15 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/imu/adis.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/imu/adis.h>
 
 #define ADIS16240_STARTUP_DELAY	220 /* ms */
 

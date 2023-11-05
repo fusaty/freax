@@ -5,26 +5,26 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/stat.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/falloc.h>
-#include <linux/types.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/mount.h>
-#include <linux/pagevec.h>
-#include <linux/uio.h>
-#include <linux/uuid.h>
-#include <linux/file.h>
-#include <linux/nls.h>
-#include <linux/sched/signal.h>
-#include <linux/fileattr.h>
-#include <linux/fadvise.h>
-#include <linux/iomap.h>
+#include <freax/fs.h>
+#include <freax/f2fs_fs.h>
+#include <freax/stat.h>
+#include <freax/buffer_head.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/falloc.h>
+#include <freax/types.h>
+#include <freax/compat.h>
+#include <freax/uaccess.h>
+#include <freax/mount.h>
+#include <freax/pagevec.h>
+#include <freax/uio.h>
+#include <freax/uuid.h>
+#include <freax/file.h>
+#include <freax/nls.h>
+#include <freax/sched/signal.h>
+#include <freax/fileattr.h>
+#include <freax/fadvise.h>
+#include <freax/iomap.h>
 
 #include "f2fs.h"
 #include "node.h"
@@ -34,7 +34,7 @@
 #include "gc.h"
 #include "iostat.h"
 #include <trace/events/f2fs.h>
-#include <uapi/linux/f2fs.h>
+#include <uapi/freax/f2fs.h>
 
 static vm_fault_t f2fs_filemap_fault(struct vm_fault *vmf)
 {

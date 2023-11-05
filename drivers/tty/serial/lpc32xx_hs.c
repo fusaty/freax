@@ -9,23 +9,23 @@
  * Copyright (C) 2012 Roland Stigge
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/nmi.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/sizes.h>
-#include <linux/soc/nxp/lpc32xx-misc.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/nmi.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/sizes.h>
+#include <freax/soc/nxp/lpc32xx-misc.h>
 
 /*
  * High Speed UART register offsets

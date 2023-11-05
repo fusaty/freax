@@ -12,9 +12,9 @@
 #include <sys/socket.h>
 #include <sys/ioctl.h>
 
-#include <linux/if.h>
-#include <linux/net_tstamp.h>
-#include <linux/sockios.h>
+#include <freax/if.h>
+#include <freax/net_tstamp.h>
+#include <freax/sockios.h>
 
 #include "kselftest.h"
 

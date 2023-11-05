@@ -3,8 +3,8 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/of.h>
+#include <freax/cpuidle.h>
+#include <freax/of.h>
 #include <asm/cpuidle.h>
 
 extern struct of_cpuidle_method __cpuidle_method_of_table[];

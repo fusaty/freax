@@ -3,7 +3,7 @@
  * comedi_pcmcia.h
  * header file for Comedi PCMCIA drivers
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -12,7 +12,7 @@
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/comedi/comedidev.h>
 
 struct pcmcia_device *comedi_to_pcmcia_dev(struct comedi_device *dev);
 

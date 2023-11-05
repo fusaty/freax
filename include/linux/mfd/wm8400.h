@@ -5,10 +5,10 @@
  * Copyright 2008 Wolfson Microelectronics plc
  */
 
-#ifndef __LINUX_MFD_WM8400_H
-#define __LINUX_MFD_WM8400_H
+#ifndef __freax_MFD_WM8400_H
+#define __freax_MFD_WM8400_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #define WM8400_LDO1  0
 #define WM8400_LDO2  1

@@ -4,7 +4,7 @@
 #include <sys/ttydefaults.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include "../../util/debug.h"
 #include "../../util/map.h"
 #include "../../util/dso.h"
@@ -14,7 +14,7 @@
 #include "../keysyms.h"
 #include "map.h"
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 struct map_browser {
 	struct ui_browser b;

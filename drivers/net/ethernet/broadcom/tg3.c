@@ -22,50 +22,50 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/stringify.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/brcmphy.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/workqueue.h>
-#include <linux/prefetch.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/crc32poly.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/stringify.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/mdio.h>
+#include <freax/mii.h>
+#include <freax/phy.h>
+#include <freax/brcmphy.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/workqueue.h>
+#include <freax/prefetch.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/ssb/ssb_driver_gige.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/crc32poly.h>
 
 #include <net/checksum.h>
 #include <net/gso.h>
 #include <net/ip.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <uapi/linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
+#include <uapi/freax/net_tstamp.h>
+#include <freax/ptp_clock_kernel.h>
 
 #define BAR_0	0
 #define BAR_2	2
@@ -10099,7 +10099,7 @@ static int tg3_reset_hw(struct tg3 *tp, bool reset_phy)
 	 * the offload processers, so make the chip do the pseudo-
 	 * header checksums on receive.  For transmit it is more
 	 * convenient to do the pseudo-header checksum in software
-	 * as Linux does that on transmit for us in all cases.
+	 * as freax does that on transmit for us in all cases.
 	 */
 	tp->grc_mode |= GRC_MODE_NO_TX_PHDR_CSUM;
 

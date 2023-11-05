@@ -9,8 +9,8 @@
 #ifndef __GREYBUS_AUTHENTICATION_USER_H
 #define __GREYBUS_AUTHENTICATION_USER_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define CAP_CERTIFICATE_MAX_SIZE	1600
 #define CAP_SIGNATURE_MAX_SIZE		320

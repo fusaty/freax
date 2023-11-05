@@ -10,16 +10,16 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/pci_ids.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
 
 #include "ptdma.h"
 

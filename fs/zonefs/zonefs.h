@@ -7,12 +7,12 @@
 #ifndef __ZONEFS_H__
 #define __ZONEFS_H__
 
-#include <linux/fs.h>
-#include <linux/magic.h>
-#include <linux/uuid.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/kobject.h>
+#include <freax/fs.h>
+#include <freax/magic.h>
+#include <freax/uuid.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/kobject.h>
 
 /*
  * Maximum length of file names: this only needs to be large enough to fit
@@ -23,7 +23,7 @@
 
 /*
  * Zone types: ZONEFS_ZTYPE_SEQ is used for all sequential zone types
- * defined in linux/blkzoned.h, that is, BLK_ZONE_TYPE_SEQWRITE_REQ and
+ * defined in freax/blkzoned.h, that is, BLK_ZONE_TYPE_SEQWRITE_REQ and
  * BLK_ZONE_TYPE_SEQWRITE_PREF.
  */
 enum zonefs_ztype {

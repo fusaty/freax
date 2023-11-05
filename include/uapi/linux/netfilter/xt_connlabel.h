@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
 #ifndef _UAPI_XT_CONNLABEL_H
 #define _UAPI_XT_CONNLABEL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define XT_CONNLABEL_MAXBIT 127
 enum xt_connlabel_mtopts {

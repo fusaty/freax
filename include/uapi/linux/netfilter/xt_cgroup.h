@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI_XT_CGROUP_H
 #define _UAPI_XT_CGROUP_H
 
-#include <linux/types.h>
-#include <linux/limits.h>
+#include <freax/types.h>
+#include <freax/limits.h>
 
 struct xt_cgroup_info_v0 {
 	__u32 id;

@@ -10,9 +10,9 @@
 #include "util/pmu.h"
 #include "util/pmus.h"
 #include "util/stat.h"
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/time64.h>
+#include <freax/atomic.h>
+#include <freax/err.h>
+#include <freax/time64.h>
 #include <subcmd/parse-options.h>
 
 static unsigned int iterations = 100;

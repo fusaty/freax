@@ -5,10 +5,10 @@
  *  Copyright (C) 2010 Yong Shen <yong.shen@linaro.org>
  */
 
-#ifndef __LINUX_REGULATOR_MC13XXX_H
-#define __LINUX_REGULATOR_MC13XXX_H
+#ifndef __freax_REGULATOR_MC13XXX_H
+#define __freax_REGULATOR_MC13XXX_H
 
-#include <linux/regulator/driver.h>
+#include <freax/regulator/driver.h>
 
 struct mc13xxx_regulator {
 	struct regulator_desc desc;

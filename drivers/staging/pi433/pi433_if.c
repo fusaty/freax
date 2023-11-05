@@ -13,35 +13,35 @@
  * HopeRf with a similar interace - e. g. RFM69HCW, RFM12, RFM95, ...
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <freax@wolf-entwicklungen.de>
  */
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/err.h>
-#include <linux/kfifo.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/spi/spi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/idr.h>
+#include <freax/ioctl.h>
+#include <freax/uaccess.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/err.h>
+#include <freax/kfifo.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/spi/spi.h>
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 #endif
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 #include "pi433_if.h"
 #include "rf69.h"
@@ -1431,7 +1431,7 @@ static void __exit pi433_exit(void)
 }
 module_exit(pi433_exit);
 
-MODULE_AUTHOR("Marcus Wolf, <linux@wolf-entwicklungen.de>");
+MODULE_AUTHOR("Marcus Wolf, <freax@wolf-entwicklungen.de>");
 MODULE_DESCRIPTION("Driver for Pi433");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:pi433");

@@ -36,30 +36,30 @@
 
 #define pr_fmt(fmt) "Memory failure: " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/dax.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/backing-dev.h>
-#include <linux/migrate.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memory_hotplug.h>
-#include <linux/mm_inline.h>
-#include <linux/memremap.h>
-#include <linux/kfifo.h>
-#include <linux/ratelimit.h>
-#include <linux/pagewalk.h>
-#include <linux/shmem_fs.h>
-#include <linux/sysctl.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/page-flags.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/dax.h>
+#include <freax/ksm.h>
+#include <freax/rmap.h>
+#include <freax/export.h>
+#include <freax/pagemap.h>
+#include <freax/swap.h>
+#include <freax/backing-dev.h>
+#include <freax/migrate.h>
+#include <freax/slab.h>
+#include <freax/swapops.h>
+#include <freax/hugetlb.h>
+#include <freax/memory_hotplug.h>
+#include <freax/mm_inline.h>
+#include <freax/memremap.h>
+#include <freax/kfifo.h>
+#include <freax/ratelimit.h>
+#include <freax/pagewalk.h>
+#include <freax/shmem_fs.h>
+#include <freax/sysctl.h>
 #include "swap.h"
 #include "internal.h"
 #include "ras/ras_event.h"
@@ -1088,7 +1088,7 @@ static int me_pagecache_dirty(struct page_state *ps, struct page *p)
 		 *
 		 * The EIO will be only reported on the next IO
 		 * operation and then cleared through the IO map.
-		 * Normally Linux has two mechanisms to pass IO error
+		 * Normally freax has two mechanisms to pass IO error
 		 * first through the AS_EIO flag in the address space
 		 * and then through the PageError flag in the page.
 		 * Since we drop pages on memory failure handling the
@@ -2495,7 +2495,7 @@ core_initcall(memory_failure_init);
  * memory_failure() earlier.
  *
  * This is only done on the software-level, so it only works
- * for linux injected failures, not real hardware failures
+ * for freax injected failures, not real hardware failures
  *
  * Returns 0 for success, otherwise -errno.
  */

@@ -2,12 +2,12 @@
 /*
 // Copyright (c) 2022 Pengutronix, Oleksij Rempel <kernel@pengutronix.de>
  */
-#ifndef _LINUX_PSE_CONTROLLER_H
-#define _LINUX_PSE_CONTROLLER_H
+#ifndef _freax_PSE_CONTROLLER_H
+#define _freax_PSE_CONTROLLER_H
 
-#include <linux/ethtool.h>
-#include <linux/list.h>
-#include <uapi/linux/ethtool.h>
+#include <freax/ethtool.h>
+#include <freax/list.h>
+#include <uapi/freax/ethtool.h>
 
 struct phy_device;
 struct pse_controller_dev;

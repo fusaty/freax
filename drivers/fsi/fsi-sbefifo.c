@@ -12,27 +12,27 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fsi.h>
-#include <linux/fsi-sbefifo.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/fsi.h>
+#include <freax/fsi-sbefifo.h>
+#include <freax/kernel.h>
+#include <freax/cdev.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/uio.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
 
-#include <uapi/linux/fsi.h>
+#include <uapi/freax/fsi.h>
 
 /*
  * The SBEFIFO is a pipe-like FSI device for communicating with
@@ -255,7 +255,7 @@ int sbefifo_parse_status(struct device *dev, u16 cmd, __be32 *response,
 
 	/*
 	 * Primary status don't have the top bit set, so can't be confused with
-	 * Linux negative error codes, so return the status word whole.
+	 * freax negative error codes, so return the status word whole.
 	 */
 	return s1;
 }
@@ -1153,7 +1153,7 @@ module_init(sbefifo_init);
 module_exit(sbefifo_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Brad Bishop <bradleyb@fuzziesquirrel.com>");
-MODULE_AUTHOR("Eddie James <eajames@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@freax.vnet.ibm.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_AUTHOR("Benjamin Herrenschmidt <benh@kernel.crashing.org>");
-MODULE_DESCRIPTION("Linux device interface to the POWER Self Boot Engine");
+MODULE_DESCRIPTION("freax device interface to the POWER Self Boot Engine");

@@ -6,7 +6,7 @@
 #ifndef __iwl_notif_wait_h__
 #define __iwl_notif_wait_h__
 
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 #include "iwl-trans.h"
 

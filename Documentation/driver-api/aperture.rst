@@ -6,7 +6,7 @@ Managing Ownership of the Framebuffer Aperture
 .. kernel-doc:: drivers/video/aperture.c
    :doc: overview
 
-.. kernel-doc:: include/linux/aperture.h
+.. kernel-doc:: include/freax/aperture.h
    :internal:
 
 .. kernel-doc:: drivers/video/aperture.c

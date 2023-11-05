@@ -2,34 +2,34 @@
 /*
  * Qualcomm PCIe root complex driver
  *
- * Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2015, The freax Foundation. All rights reserved.
  * Copyright 2015 Linaro Limited.
  *
  * Author: Stanimir Varbanov <svarbanov@mm-sol.com>
  */
 
-#include <linux/clk.h>
-#include <linux/crc8.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/phy/pcie.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/crc8.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interconnect.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/phy/pcie.h>
+#include <freax/phy/phy.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

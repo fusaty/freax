@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of freax booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  */
 
 #define pr_fmt(fmt)	"kexec: " fmt
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/reboot.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/vmalloc.h>
-#include <linux/efi.h>
-#include <linux/cc_platform.h>
+#include <freax/mm.h>
+#include <freax/kexec.h>
+#include <freax/string.h>
+#include <freax/gfp.h>
+#include <freax/reboot.h>
+#include <freax/numa.h>
+#include <freax/ftrace.h>
+#include <freax/io.h>
+#include <freax/suspend.h>
+#include <freax/vmalloc.h>
+#include <freax/efi.h>
+#include <freax/cc_platform.h>
 
 #include <asm/init.h>
 #include <asm/tlbflush.h>

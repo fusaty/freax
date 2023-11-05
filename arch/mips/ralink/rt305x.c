@@ -8,11 +8,11 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/bug.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #include <asm/io.h>
 #include <asm/mipsregs.h>

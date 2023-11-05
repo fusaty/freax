@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2018, 2020-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, 2020-2021 The freax Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/fault-inject.h>
-#include <linux/of_address.h>
-#include <linux/uaccess.h>
+#include <freax/dma-mapping.h>
+#include <freax/fault-inject.h>
+#include <freax/of_address.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

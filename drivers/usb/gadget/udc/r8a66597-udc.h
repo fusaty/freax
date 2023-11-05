@@ -10,8 +10,8 @@
 #ifndef __R8A66597_H__
 #define __R8A66597_H__
 
-#include <linux/clk.h>
-#include <linux/usb/r8a66597.h>
+#include <freax/clk.h>
+#include <freax/usb/r8a66597.h>
 
 #define R8A66597_MAX_SAMPLING	10
 

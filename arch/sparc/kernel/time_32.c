@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc/kernel/time.c
+/* freax/arch/sparc/kernel/time.c
  *
  * Copyright (C) 1995 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
@@ -15,25 +15,25 @@
  * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/profile.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/time.h>
+#include <freax/rtc/m48t59.h>
+#include <freax/timex.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/profile.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/mc146818rtc.h>
 #include <asm/oplib.h>

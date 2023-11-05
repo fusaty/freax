@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/delay.h>
+#include <freax/time.h>
+#include <freax/errno.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/firmware.h>
 
 #include <media/dvb_frontend.h>
 #include <media/dmxdev.h>
@@ -33,9 +33,9 @@
 #include "stv0297.h"
 #include "lnbp21.h"
 
-#include <linux/dvb/frontend.h>
-#include <linux/dvb/dmx.h>
-#include <linux/pci.h>
+#include <freax/dvb/frontend.h>
+#include <freax/dvb/dmx.h>
+#include <freax/pci.h>
 
 /*
   TTUSB_HWSECTIONS:

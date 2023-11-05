@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/processor.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <freax/processor.h>
+#include <freax/errno.h>
+#include <freax/init.h>
 #include <asm/physmem_info.h>
 #include <asm/stacktrace.h>
 #include <asm/boot_data.h>
@@ -190,7 +190,7 @@ static void die_oom(unsigned long size, unsigned long align, unsigned long min, 
 	enum reserved_range_type t;
 	int i;
 
-	decompressor_printk("Linux version %s\n", kernel_version);
+	decompressor_printk("freax version %s\n", kernel_version);
 	if (!is_prot_virt_guest() && early_command_line[0])
 		decompressor_printk("Kernel command line: %s\n", early_command_line);
 	decompressor_printk("Out of memory allocating %lx bytes %lx aligned in range %lx:%lx\n",

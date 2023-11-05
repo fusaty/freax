@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/console.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/console.h>
 #ifdef CONFIG_MTRR
 #include <asm/mtrr.h>
 #endif
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
+#include <freax/platform_device.h>
+#include <freax/sizes.h>
 
 #include "sm750.h"
 #include "ddk750.h"

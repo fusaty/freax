@@ -5,13 +5,13 @@
  * Copyright (c) 2009 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
 #include <net/netlink.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>

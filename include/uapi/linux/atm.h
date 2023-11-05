@@ -1,27 +1,27 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atm.h - general ATM declarations */
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
 /*
- * WARNING: User-space programs should not #include <linux/atm.h> directly.
+ * WARNING: User-space programs should not #include <freax/atm.h> directly.
  *          Instead, #include <atm.h>
  */
 
-#ifndef _UAPI_LINUX_ATM_H
-#define _UAPI_LINUX_ATM_H
+#ifndef _UAPI_freax_ATM_H
+#define _UAPI_freax_ATM_H
 
 /*
  * BEGIN_xx and END_xx markers are used for automatic generation of
  * documentation. Do not change them.
  */
 
-#include <linux/compiler.h>
-#include <linux/atmapi.h>
-#include <linux/atmsap.h>
-#include <linux/atmioc.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/atmapi.h>
+#include <freax/atmsap.h>
+#include <freax/atmioc.h>
+#include <freax/types.h>
 
 
 /* general ATM constants */
@@ -118,7 +118,7 @@
 
 
 /*
- * The following items should stay in linux/atm.h, which should be linked to
+ * The following items should stay in freax/atm.h, which should be linked to
  * netatm/atm.h
  */
 
@@ -228,7 +228,7 @@ static __inline__ int atmpvc_addr_in_use(struct sockaddr_atmpvc addr)
 
 
 /*
- * Some stuff for linux/sockios.h
+ * Some stuff for freax/sockios.h
  */
 
 struct atmif_sioc {
@@ -239,4 +239,4 @@ struct atmif_sioc {
 
 
 typedef unsigned short atm_backend_t;
-#endif /* _UAPI_LINUX_ATM_H */
+#endif /* _UAPI_freax_ATM_H */

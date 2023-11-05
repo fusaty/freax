@@ -10,19 +10,19 @@
  * DWC_otg hardware. These services are used by both the Host Controller
  * Driver and the Peripheral Controller Driver.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/ch11.h>
 
 #include "core.h"
 #include "hcd.h"

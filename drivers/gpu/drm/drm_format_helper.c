@@ -8,10 +8,10 @@
  * (at your option) any later version.
  */
 
-#include <linux/io.h>
-#include <linux/iosys-map.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/iosys-map.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_format_helper.h>

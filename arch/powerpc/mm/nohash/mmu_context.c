@@ -21,14 +21,14 @@
  *     also clear mm->cpu_vm_mask bits when processes are migrated
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/memblock.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/slab.h>
 
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

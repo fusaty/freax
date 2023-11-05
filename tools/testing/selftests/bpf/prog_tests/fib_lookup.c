@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Meta Platforms, Inc. and affiliates. */
 
-#include <linux/rtnetlink.h>
+#include <freax/rtnetlink.h>
 #include <sys/types.h>
 #include <net/if.h>
 

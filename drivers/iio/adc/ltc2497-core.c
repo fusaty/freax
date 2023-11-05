@@ -6,12 +6,12 @@
  * Copyright (C) 2017 Analog Devices Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
 
 #include "ltc2497.h"
 

@@ -9,7 +9,7 @@
 /*
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	PYRA_SIZE_CONTROL = 0x03,

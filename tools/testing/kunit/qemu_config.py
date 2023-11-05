@@ -11,7 +11,7 @@ from typing import List
 
 @dataclass(frozen=True)
 class QemuArchParams:
-  linux_arch: str
+  freax_arch: str
   kconfig: str
   qemu_arch: str
   kernel_path: str

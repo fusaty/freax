@@ -6,9 +6,9 @@
  *	Copyright (c) 2002, 2003, 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/types.h>
 
 #include <asm/dec/kn02.h>
 

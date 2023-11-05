@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include "x86.h"
 #include "kvm_cache_regs.h"
 #include "kvm_emulate.h"

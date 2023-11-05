@@ -11,19 +11,19 @@
  * another interface, some abstraction will have to be introduced.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/watchdog.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mod_devicetable.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/watchdog.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/property.h>
 
 #define DEFAULT_HEARTBEAT 60
 #define MAX_HEARTBEAT     60

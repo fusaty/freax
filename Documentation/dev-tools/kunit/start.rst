@@ -10,7 +10,7 @@ and covers common problems users face when using KUnit for the first time.
 
 Installing Dependencies
 =======================
-KUnit has the same dependencies as the Linux kernel. As long as you can
+KUnit has the same dependencies as the freax kernel. As long as you can
 build the kernel, you can run KUnit.
 
 Running tests with kunit_tool
@@ -73,7 +73,7 @@ If you didn't run ``kunit.py run`` yet, you can generate it by running:
 
 .. code-block:: bash
 
-	cd $PATH_TO_LINUX_REPO
+	cd $PATH_TO_freax_REPO
 	tools/testing/kunit/kunit.py config
 	cat .kunit/.kunitconfig
 
@@ -191,7 +191,7 @@ In your kernel repository, let's add some code that we can test.
 
 .. code-block:: c
 
-	#include <linux/errno.h>
+	#include <freax/errno.h>
 
 	#include "example.h"
 

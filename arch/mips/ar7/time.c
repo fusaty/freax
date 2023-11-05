@@ -6,10 +6,10 @@
  * Setting up the clock on the MIPS boards.
  */
 
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/err.h>
+#include <freax/clk.h>
 
 #include <asm/time.h>
 #include <asm/mach-ar7/ar7.h>

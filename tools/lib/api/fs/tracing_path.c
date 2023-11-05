@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/string.h>
+#include <freax/string.h>
 #include <errno.h>
 #include <unistd.h>
 #include "fs.h"

@@ -10,21 +10,21 @@
  * based on work by Grant Guenther <grant@torque.net>
  *              and Philip Blundell
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <freax@arm.uk.freax.org>
  */
 
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/device.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/parport.h>
+#include <freax/ctype.h>
+#include <freax/sysctl.h>
+#include <freax/device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #if defined(CONFIG_SYSCTL) && defined(CONFIG_PROC_FS)
 

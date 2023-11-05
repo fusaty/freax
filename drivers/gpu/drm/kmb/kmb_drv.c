@@ -3,15 +3,15 @@
  * Copyright © 2018-2020 Intel Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/of_platform.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

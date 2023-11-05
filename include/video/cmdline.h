@@ -3,7 +3,7 @@
 #ifndef VIDEO_CMDLINE_H
 #define VIDEO_CMDLINE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #if defined(CONFIG_VIDEO_CMDLINE)
 const char *video_get_options(const char *name);

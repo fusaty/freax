@@ -13,8 +13,8 @@
 #include "sb-members.h"
 #include "trace.h"
 
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
+#include <freax/kthread.h>
+#include <freax/sched/mm.h>
 
 /* Free space calculations: */
 

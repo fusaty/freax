@@ -3,17 +3,17 @@
  * Copyright (C) 2022 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 enum u_boot_env_format {
 	U_BOOT_FORMAT_SINGLE,

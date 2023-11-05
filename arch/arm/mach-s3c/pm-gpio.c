@@ -3,15 +3,15 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // S3C series GPIO PM code
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
 
 #include "gpio-samsung.h"
 

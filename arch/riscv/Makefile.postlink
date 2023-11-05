@@ -3,7 +3,7 @@
 # Post-link riscv pass
 # ===========================================================================
 #
-# Check that vmlinux relocations look sane
+# Check that vmfreax relocations look sane
 
 PHONY := __archpost
 __archpost:
@@ -16,8 +16,8 @@ cmd_relocs_check = 							\
 	$(CONFIG_SHELL) $(srctree)/arch/riscv/tools/relocs_check.sh "$(OBJDUMP)" "$(NM)" "$@"
 
 ifdef CONFIG_RELOCATABLE
-quiet_cmd_cp_vmlinux_relocs = CPREL   vmlinux.relocs
-cmd_cp_vmlinux_relocs = cp vmlinux vmlinux.relocs
+quiet_cmd_cp_vmfreax_relocs = CPREL   vmfreax.relocs
+cmd_cp_vmfreax_relocs = cp vmfreax vmfreax.relocs
 
 quiet_cmd_relocs_strip = STRIPREL $@
 cmd_relocs_strip = $(OBJCOPY)   --remove-section='.rel.*'       \
@@ -28,11 +28,11 @@ endif
 
 # `@true` prevents complaint when there is nothing to be done
 
-vmlinux: FORCE
+vmfreax: FORCE
 	@true
 ifdef CONFIG_RELOCATABLE
 	$(call if_changed,relocs_check)
-	$(call if_changed,cp_vmlinux_relocs)
+	$(call if_changed,cp_vmfreax_relocs)
 	$(call if_changed,relocs_strip)
 endif
 

@@ -6,19 +6,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bits.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <freax/bits.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pm.h>
+#include <freax/init.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/platform_device.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
 #include "sch56xx-common.h"
 
 #define DRVNAME "sch5627"

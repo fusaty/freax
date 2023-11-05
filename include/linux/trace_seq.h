@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TRACE_SEQ_H
-#define _LINUX_TRACE_SEQ_H
+#ifndef _freax_TRACE_SEQ_H
+#define _freax_TRACE_SEQ_H
 
-#include <linux/seq_buf.h>
+#include <freax/seq_buf.h>
 
 #include <asm/page.h>
 
@@ -148,4 +148,4 @@ static inline char *trace_seq_acquire(struct trace_seq *s, unsigned int len)
 }
 #endif /* CONFIG_TRACING */
 
-#endif /* _LINUX_TRACE_SEQ_H */
+#endif /* _freax_TRACE_SEQ_H */

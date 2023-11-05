@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/tcp.h>
-#include <linux/rcupdate.h>
+#include <freax/kernel.h>
+#include <freax/tcp.h>
+#include <freax/rcupdate.h>
 #include <net/tcp.h>
 
 void tcp_fastopen_init_key_once(struct net *net)
@@ -319,7 +319,7 @@ static bool tcp_fastopen_queue_check(struct sock *sk)
 		req1 = fastopenq->rskq_rst_head;
 		if (!req1 || time_after(req1->rsk_timer.expires, jiffies)) {
 			__NET_INC_STATS(sock_net(sk),
-					LINUX_MIB_TCPFASTOPENLISTENOVERFLOW);
+					freax_MIB_TCPFASTOPENLISTENOVERFLOW);
 			spin_unlock(&fastopenq->lock);
 			return false;
 		}
@@ -356,7 +356,7 @@ struct sock *tcp_try_fastopen(struct sock *sk, struct sk_buff *skb,
 	int ret = 0;
 
 	if (foc->len == 0) /* Client requests a cookie */
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPFASTOPENCOOKIEREQD);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPFASTOPENCOOKIEREQD);
 
 	if (!((tcp_fastopen & TFO_SERVER_ENABLE) &&
 	      (syn_data || foc->len >= 0) &&
@@ -376,7 +376,7 @@ struct sock *tcp_try_fastopen(struct sock *sk, struct sk_buff *skb,
 						    &valid_foc);
 		if (!ret) {
 			NET_INC_STATS(sock_net(sk),
-				      LINUX_MIB_TCPFASTOPENPASSIVEFAIL);
+				      freax_MIB_TCPFASTOPENPASSIVEFAIL);
 		} else {
 			/* Cookie is valid. Create a (full) child socket to
 			 * accept the data in SYN before returning a SYN-ACK to
@@ -394,16 +394,16 @@ fastopen:
 					valid_foc.exp = foc->exp;
 					*foc = valid_foc;
 					NET_INC_STATS(sock_net(sk),
-						      LINUX_MIB_TCPFASTOPENPASSIVEALTKEY);
+						      freax_MIB_TCPFASTOPENPASSIVEALTKEY);
 				} else {
 					foc->len = -1;
 				}
 				NET_INC_STATS(sock_net(sk),
-					      LINUX_MIB_TCPFASTOPENPASSIVE);
+					      freax_MIB_TCPFASTOPENPASSIVE);
 				return child;
 			}
 			NET_INC_STATS(sock_net(sk),
-				      LINUX_MIB_TCPFASTOPENPASSIVEFAIL);
+				      freax_MIB_TCPFASTOPENPASSIVEFAIL);
 		}
 	}
 	valid_foc.exp = foc->exp;
@@ -504,7 +504,7 @@ void tcp_fastopen_active_disable(struct sock *sk)
 	smp_mb__before_atomic();
 	atomic_inc(&net->ipv4.tfo_active_disable_times);
 
-	NET_INC_STATS(net, LINUX_MIB_TCPFASTOPENBLACKHOLE);
+	NET_INC_STATS(net, freax_MIB_TCPFASTOPENBLACKHOLE);
 }
 
 /* Calculate timeout for tfo active disable
@@ -590,6 +590,6 @@ void tcp_fastopen_active_detect_blackhole(struct sock *sk, bool expired)
 	if ((tp->syn_fastopen || tp->syn_data || tp->syn_data_acked) &&
 	    (timeouts == 2 || (timeouts < 2 && expired))) {
 		tcp_fastopen_active_disable(sk);
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPFASTOPENACTIVEFAIL);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPFASTOPENACTIVEFAIL);
 	}
 }

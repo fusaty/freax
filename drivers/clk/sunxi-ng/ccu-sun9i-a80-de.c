@@ -3,11 +3,11 @@
  * Copyright (c) 2016 Chen-Yu Tsai. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

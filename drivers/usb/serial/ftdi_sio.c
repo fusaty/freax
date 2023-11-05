@@ -27,20 +27,20 @@
 /* Thanx to gkh and the rest of the usb dev group for all code I have
    assimilated :-) */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/serial.h>
-#include <linux/gpio/driver.h>
-#include <linux/usb/serial.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/serial.h>
+#include <freax/gpio/driver.h>
+#include <freax/usb/serial.h>
 #include "ftdi_sio.h"
 #include "ftdi_sio_ids.h"
 

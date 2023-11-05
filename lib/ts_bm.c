@@ -31,12 +31,12 @@
  *   matchings spread over multiple fragments, then go BM.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/textsearch.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/textsearch.h>
 
 /* Alphabet size, use ASCII */
 #define ASIZE 256

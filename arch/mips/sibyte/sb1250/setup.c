@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2000, 2001, 2002, 2003 Broadcom Corporation
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>

@@ -7,12 +7,12 @@
  *  Copyright 2006 Tejun Heo <htejun@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_eh.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include <asm/unaligned.h>
 
 #include "libata.h"

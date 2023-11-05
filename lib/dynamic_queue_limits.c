@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Dynamic byte queue limits.  See include/linux/dynamic_queue_limits.h
+ * Dynamic byte queue limits.  See include/freax/dynamic_queue_limits.h
  *
  * Copyright (c) 2011, Tom Herbert <therbert@google.com>
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/dynamic_queue_limits.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/dynamic_queue_limits.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
 
 #define POSDIFF(A, B) ((int)((A) - (B)) > 0 ? (A) - (B) : 0)
 #define AFTER_EQ(A, B) ((int)((A) - (B)) >= 0)

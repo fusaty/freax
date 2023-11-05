@@ -11,7 +11,7 @@
 # Copyright (C) 1994 by Linus Torvalds
 # Portions Copyright (C) 1999 The Puffin Group
 #
-# Modified for PA-RISC Linux by Paul Lahaie, Alex deVries,
+# Modified for PA-RISC freax by Paul Lahaie, Alex deVries,
 # Mike Shaver, Helge Deller and Martin K. Petersen
 #
 
@@ -23,9 +23,9 @@ CHECKFLAGS	+= -D__hppa__=1
 ifdef CONFIG_64BIT
 UTS_MACHINE	:= parisc64
 CHECKFLAGS	+= -D__LP64__=1
-LD_BFD		:= elf64-hppa-linux
+LD_BFD		:= elf64-hppa-freax
 else # 32-bit
-LD_BFD		:= elf32-hppa-linux
+LD_BFD		:= elf32-hppa-freax
 endif
 
 # select defconfig based on actual architecture
@@ -41,7 +41,7 @@ export LD_BFD
 
 # Set default 32 bits cross compilers for vdso
 CC_ARCHES_32 = hppa hppa2.0 hppa1.1
-CC_SUFFIXES  = linux linux-gnu unknown-linux-gnu suse-linux
+CC_SUFFIXES  = freax freax-gnu unknown-freax-gnu suse-freax
 CROSS32_COMPILE := $(call cc-cross-prefix, \
 	$(foreach a,$(CC_ARCHES_32), \
 	$(foreach s,$(CC_SUFFIXES),$(a)-$(s)-)))
@@ -51,7 +51,7 @@ export CROSS32CC
 # Set default cross compiler for kernel build
 ifdef cross_compiling
 	ifeq ($(CROSS_COMPILE),)
-		CC_SUFFIXES = linux linux-gnu unknown-linux-gnu suse-linux
+		CC_SUFFIXES = freax freax-gnu unknown-freax-gnu suse-freax
 		CROSS_COMPILE := $(call cc-cross-prefix, \
 			$(foreach a,$(CC_ARCHES), \
 			$(foreach s,$(CC_SUFFIXES),$(a)-$(s)-)))
@@ -79,7 +79,7 @@ OBJCOPY_FLAGS =-O binary -R .note -R .comment -S
 
 cflags-y	:= -pipe
 
-# These flags should be implied by an hppa-linux configuration, but they
+# These flags should be implied by an hppa-freax configuration, but they
 # are not in gcc 3.2.
 cflags-y	+= -mno-space-regs
 
@@ -94,7 +94,7 @@ endif
 cflags-y	+= -mdisable-fpregs
 
 # Use long jumps instead of long branches (needed if your linker fails to
-# link a too big vmlinux executable). Not enabled for building modules.
+# link a too big vmfreax executable). Not enabled for building modules.
 ifdef CONFIG_MLONGCALLS
 KBUILD_CFLAGS_KERNEL += -mlong-calls
 endif
@@ -155,9 +155,9 @@ PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)
 all: bzImage
 
 zImage: vmlinuz
-Image: vmlinux
+Image: vmfreax
 
-bzImage: vmlinux
+bzImage: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 vmlinuz: bzImage
@@ -180,7 +180,7 @@ endif
 vdso-install-y			+= arch/parisc/kernel/vdso32/vdso32.so
 vdso-install-$(CONFIG_64BIT)	+= arch/parisc/kernel/vdso64/vdso64.so
 
-install: KBUILD_IMAGE := vmlinux
+install: KBUILD_IMAGE := vmfreax
 zinstall: KBUILD_IMAGE := vmlinuz
 install zinstall:
 	$(call cmd,install)
@@ -189,10 +189,10 @@ CLEAN_FILES	+= lifimage
 MRPROPER_FILES	+= palo.conf
 
 define archhelp
-	@echo  '* vmlinux	- Uncompressed kernel image (./vmlinux)'
+	@echo  '* vmfreax	- Uncompressed kernel image (./vmfreax)'
 	@echo  '  vmlinuz	- Compressed kernel image (./vmlinuz)'
 	@echo  '  palo		- Bootable image (./lifimage)'
-	@echo  '  install	- Install uncompressed vmlinux kernel using'
+	@echo  '  install	- Install uncompressed vmfreax kernel using'
 	@echo  '		  (your) ~/bin/$(INSTALLKERNEL) or'
 	@echo  '		  (distribution) /sbin/$(INSTALLKERNEL) or'
 	@echo  '		  copy to $$(INSTALL_PATH)'

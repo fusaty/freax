@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5682s.h -- Platform data for RT5682I-VS
+ * freax/sound/rt5682s.h -- Platform data for RT5682I-VS
  *
  * Copyright 2021 Realtek Microelectronics
  */
 
-#ifndef __LINUX_SND_RT5682S_H
-#define __LINUX_SND_RT5682S_H
+#ifndef __freax_SND_RT5682S_H
+#define __freax_SND_RT5682S_H
 
 enum rt5682s_dmic1_data_pin {
 	RT5682S_DMIC1_DATA_NULL,

@@ -10,7 +10,7 @@
 #ifndef NET_PHONET_PEP_H
 #define NET_PHONET_PEP_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/phonet/phonet.h>
 
 struct pep_sock {

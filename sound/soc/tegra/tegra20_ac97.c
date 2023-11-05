@@ -9,19 +9,19 @@
  * Copyright (c) 2011,2012 Toradex Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

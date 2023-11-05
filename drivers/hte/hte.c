@@ -5,17 +5,17 @@
  * Author: Dipen Patel <dipenp@nvidia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/hte.h>
-#include <linux/delay.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/hte.h>
+#include <freax/delay.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
 
 /* Global list of the HTE devices */
 static DEFINE_SPINLOCK(hte_lock);

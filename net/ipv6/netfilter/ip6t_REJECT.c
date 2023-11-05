@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * IP6 tables REJECT target module
- * Linux INET6 implementation
+ * freax INET6 implementation
  *
  * Copyright (C)2003 USAGI/WIDE Project
  *
@@ -14,16 +14,16 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
-#include <linux/netdevice.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/icmpv6.h>
+#include <freax/netdevice.h>
 #include <net/icmp.h>
 #include <net/flow.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_ipv6/ip6t_REJECT.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter_ipv6/ip6t_REJECT.h>
 
 #include <net/netfilter/ipv6/nf_reject.h>
 

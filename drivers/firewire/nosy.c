@@ -4,28 +4,28 @@
  * Copyright (C) 2002-2007 Kristian Høgsberg
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/time64.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/atomic.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/sched.h> /* required for freax/wait.h */
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/time64.h>
+#include <freax/timex.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
+#include <freax/dma-mapping.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
 #include "nosy.h"

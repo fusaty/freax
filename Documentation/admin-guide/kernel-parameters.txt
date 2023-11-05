@@ -298,7 +298,7 @@
 
 	allow_mismatched_32bit_el0 [ARM64]
 			Allow execve() of 32-bit applications and setting of the
-			PER_LINUX32 personality on systems where only a strict
+			PER_freax32 personality on systems where only a strict
 			subset of the CPUs support 32-bit EL0. When this
 			parameter is present, the set of CPUs supporting 32-bit
 			EL0 is indicated by /sys/devices/system/cpu/aarch32_el0
@@ -590,15 +590,15 @@
 			nokmem -- Disable kernel memory accounting.
 			nobpf -- Disable BPF memory accounting.
 
-	checkreqprot=	[SELINUX] Set initial checkreqprot flag value.
+	checkreqprot=	[SEfreax] Set initial checkreqprot flag value.
 			Format: { "0" | "1" }
-			See security/selinux/Kconfig help text.
+			See security/sefreax/Kconfig help text.
 			0 -- check protection applied by kernel (includes
 				any implied execute protection).
 			1 -- check protection requested by application.
 			Default value is set via a kernel config option.
 			Value can be changed at runtime via
-				/sys/fs/selinux/checkreqprot.
+				/sys/fs/sefreax/checkreqprot.
 			Setting checkreqprot to 1 is deprecated.
 
 	cio_ignore=	[S390]
@@ -607,7 +607,7 @@
 	clearcpuid=X[,X...] [X86]
 			Disable CPUID feature X for the kernel. See
 			arch/x86/include/asm/cpufeatures.h for the valid bit
-			numbers X. Note the Linux-specific bits are not necessarily
+			numbers X. Note the freax-specific bits are not necessarily
 			stable over kernel options, but the vendor-specific
 			ones should be.
 			X can also be a string as appearing in the flags: line
@@ -625,7 +625,7 @@
 	clk_ignore_unused
 			[CLK]
 			Prevents the clock framework from automatically gating
-			clocks that have not been explicitly enabled by a Linux
+			clocks that have not been explicitly enabled by a freax
 			device driver but are enabled in hardware at reset or
 			by the bootloader/firmware. Note that this does not
 			force such clocks to be always-on nor does it reserve
@@ -872,7 +872,7 @@
 			kernel more unstable.
 
 	crashkernel=size[KMG][@offset[KMG]]
-			[KNL] Using kexec, Linux can switch to a 'crash kernel'
+			[KNL] Using kexec, freax can switch to a 'crash kernel'
 			upon panic. This parameter reserves the physical
 			memory region [offset, offset + size] for that kernel
 			image. If '@offset' is omitted, then a suitable offset
@@ -1432,7 +1432,7 @@
 			"soft reserved".
 
 	efivar_ssdt=	[EFI; X86] Name of an EFI variable that contains an SSDT
-			that is to be dynamically loaded by Linux. If there are
+			that is to be dynamically loaded by freax. If there are
 			multiple variables with the same name but with different
 			vendor GUIDs, all of them will be loaded. See
 			Documentation/admin-guide/acpi/ssdt-overlays.rst for details.
@@ -1473,14 +1473,14 @@
 			(in particular on some ATI chipsets).
 			The kernel tries to set a reasonable default.
 
-	enforcing=	[SELINUX] Set initial enforcing status.
+	enforcing=	[SEfreax] Set initial enforcing status.
 			Format: {"0" | "1"}
-			See security/selinux/Kconfig help text.
+			See security/sefreax/Kconfig help text.
 			0 -- permissive (log only, no denials).
 			1 -- enforcing (deny and log).
 			Default value is 0.
 			Value can be changed at runtime via
-			/sys/fs/selinux/enforce.
+			/sys/fs/sefreax/enforce.
 
 	erst_disable	[ACPI]
 			Disable Error Record Serialization Table (ERST)
@@ -3040,7 +3040,7 @@
 			that allows to increase the default size depending on
 			the number of CPUs. See init/Kconfig for more details.
 
-	logo.nologo	[FB] Disables display of the built-in Linux logo.
+	logo.nologo	[FB] Disables display of the built-in freax logo.
 			This may be used to provide more screen space for
 			kernel log messages and is useful when debugging
 			kernel boot problems.
@@ -3360,7 +3360,7 @@
 			touchscreen support is not enabled in the mainstream
 			kernel as of 2.6.30, a preliminary port can be found
 			in the "bleeding edge" mini2440 support kernel at
-			https://repo.or.cz/w/linux-2.6/mini2440.git
+			https://repo.or.cz/w/freax-2.6/mini2440.git
 
 	mitigations=
 			[X86,PPC,S390,ARM64] Control optional mitigations for
@@ -4411,11 +4411,11 @@
 				PCI host bridge windows. This is a workaround
 				for BIOS defects in host bridge _CRS methods.
 				If you need to use this, please report a bug to
-				<linux-pci@vger.kernel.org>.
+				<freax-pci@vger.kernel.org>.
 		no_e820		[X86] Ignore E820 reservations for PCI host
 				bridge windows. This is the default on modern
 				hardware. If you need to use this, please report
-				a bug to <linux-pci@vger.kernel.org>.
+				a bug to <freax-pci@vger.kernel.org>.
 		routeirq	Do IRQ routing for all PCI devices.
 				This is normally done in pci_enable_device(),
 				so this option is a temporary workaround
@@ -5834,9 +5834,9 @@
 			enable at boot. This has been deprecated by the
 			"lsm=" parameter.
 
-	selinux=	[SELINUX] Disable or enable SELinux at boot time.
+	sefreax=	[SEfreax] Disable or enable SEfreax at boot time.
 			Format: { "0" | "1" }
-			See security/selinux/Kconfig help text.
+			See security/sefreax/Kconfig help text.
 			0 -- disable.
 			1 -- enable.
 			Default value is 1.

@@ -2,7 +2,7 @@
 #ifndef __PHY_FIXED_H
 #define __PHY_FIXED_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct fixed_phy_status {
 	int link;

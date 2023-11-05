@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ELF_FDPIC_H
-#define _LINUX_ELF_FDPIC_H
+#ifndef _freax_ELF_FDPIC_H
+#define _freax_ELF_FDPIC_H
 
-#include <uapi/linux/elf-fdpic.h>
+#include <uapi/freax/elf-fdpic.h>
 
 #if ELF_CLASS == ELFCLASS32
 #define Elf_Sword			Elf32_Sword
@@ -56,4 +56,4 @@ extern void elf_fdpic_arch_lay_out_mm(struct elf_fdpic_params *exec_params,
 				      unsigned long *start_brk);
 #endif
 
-#endif /* _LINUX_ELF_FDPIC_H */
+#endif /* _freax_ELF_FDPIC_H */

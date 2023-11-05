@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* -*- linux-c -*-
+/* -*- freax-c -*-
  *
  * (C) 2003 zecke@handhelds.org
  *
@@ -7,10 +7,10 @@
  * factor out the information needed by architectures to provide
  * apm status
  */
-#ifndef __LINUX_APM_EMULATION_H
-#define __LINUX_APM_EMULATION_H
+#ifndef __freax_APM_EMULATION_H
+#define __freax_APM_EMULATION_H
 
-#include <linux/apm_bios.h>
+#include <freax/apm_bios.h>
 
 /*
  * This structure gets filled in by the machine specific 'get_power_status'
@@ -58,4 +58,4 @@ extern void (*apm_get_power_status)(struct apm_power_info *);
  */
 void apm_queue_event(apm_event_t event);
 
-#endif /* __LINUX_APM_EMULATION_H */
+#endif /* __freax_APM_EMULATION_H */

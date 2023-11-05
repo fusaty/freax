@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_OLPC_EC_H
-#define _LINUX_OLPC_EC_H
+#ifndef _freax_OLPC_EC_H
+#define _freax_OLPC_EC_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* XO-1 EC commands */
 #define EC_FIRMWARE_REV			0x08
@@ -73,4 +73,4 @@ static inline bool olpc_ec_wakeup_available(void)
 
 #endif /* CONFIG_OLPC_EC */
 
-#endif /* _LINUX_OLPC_EC_H */
+#endif /* _freax_OLPC_EC_H */

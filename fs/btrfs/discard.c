@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/math64.h>
-#include <linux/sizes.h>
-#include <linux/workqueue.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/math64.h>
+#include <freax/sizes.h>
+#include <freax/workqueue.h>
 #include "ctree.h"
 #include "block-group.h"
 #include "discard.h"

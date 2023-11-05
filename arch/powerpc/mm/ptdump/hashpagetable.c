@@ -9,16 +9,16 @@
  * If radix is enabled then there is no hash page table and so no debugfs file
  * is generated.
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/const.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/const.h>
 #include <asm/page.h>
 #include <asm/plpar_wrappers.h>
-#include <linux/memblock.h>
+#include <freax/memblock.h>
 #include <asm/firmware.h>
 #include <asm/pgalloc.h>
 
@@ -397,8 +397,8 @@ static void walk_pte(struct pg_state *st, pmd_t *pmd, unsigned long start)
 
 		if (((pteval & H_PAGE_HASHPTE) != H_PAGE_HASHPTE)
 				&& (status != -1)) {
-		/* found a hpte that is not in the linux page tables */
-			seq_printf(st->seq, "page probably bolted before linux"
+		/* found a hpte that is not in the freax page tables */
+			seq_printf(st->seq, "page probably bolted before freax"
 				" pagetables were set: addr:%lx, pteval:%lx\n",
 				addr, pteval);
 		}
@@ -454,7 +454,7 @@ static void walk_pagetables(struct pg_state *st)
 	unsigned long addr;
 
 	/*
-	 * Traverse the linux pagetable structure and dump pages that are in
+	 * Traverse the freax pagetable structure and dump pages that are in
 	 * the hash pagetable.
 	 */
 	for (i = 0; i < PTRS_PER_PGD; i++, pgd++) {

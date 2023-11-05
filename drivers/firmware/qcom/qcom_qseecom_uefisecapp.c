@@ -7,17 +7,17 @@
  * Copyright (C) 2023 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/ucs2_string.h>
+#include <freax/efi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/ucs2_string.h>
 
-#include <linux/firmware/qcom/qcom_qseecom.h>
+#include <freax/firmware/qcom/qcom_qseecom.h>
 
 /* -- Qualcomm "uefisecapp" interface definitions. -------------------------- */
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/percpu-defs.h - basic definitions for percpu areas
+ * freax/percpu-defs.h - basic definitions for percpu areas
  *
  * DO NOT INCLUDE DIRECTLY OUTSIDE PERCPU IMPLEMENTATION PROPER.
  *
- * This file is separate from linux/percpu.h to avoid cyclic inclusion
+ * This file is separate from freax/percpu.h to avoid cyclic inclusion
  * dependency from arch header files.  Only to be included from
  * asm/percpu.h.
  *
@@ -14,8 +14,8 @@
  * they can only include asm/percpu.h to avoid cyclic inclusion dependency.
  */
 
-#ifndef _LINUX_PERCPU_DEFS_H
-#define _LINUX_PERCPU_DEFS_H
+#ifndef _freax_PERCPU_DEFS_H
+#define _freax_PERCPU_DEFS_H
 
 #ifdef CONFIG_SMP
 
@@ -372,7 +372,7 @@ do {									\
 } while (0)
 
 /*
- * this_cpu operations (C) 2008-2013 Christoph Lameter <cl@linux.com>
+ * this_cpu operations (C) 2008-2013 Christoph Lameter <cl@freax.com>
  *
  * Optimized manipulation for memory allocated through the per cpu
  * allocator or for addresses of per cpu variables.
@@ -505,4 +505,4 @@ do {									\
 #define this_cpu_dec_return(pcp)	this_cpu_add_return(pcp, -1)
 
 #endif /* __ASSEMBLY__ */
-#endif /* _LINUX_PERCPU_DEFS_H */
+#endif /* _freax_PERCPU_DEFS_H */

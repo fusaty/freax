@@ -7,9 +7,9 @@
 #ifndef NET_ATM_SIGNALING_H
 #define NET_ATM_SIGNALING_H
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmsvc.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/atmsvc.h>
 
 
 extern struct atm_vcc *sigd; /* needed in svc_release */

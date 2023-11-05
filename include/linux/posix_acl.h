@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/posix_acl.h
+  File: freax/posix_acl.h
 
   (C) 2002 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
 
-#ifndef __LINUX_POSIX_ACL_H
-#define __LINUX_POSIX_ACL_H
+#ifndef __freax_POSIX_ACL_H
+#define __freax_POSIX_ACL_H
 
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <uapi/linux/posix_acl.h>
+#include <freax/bug.h>
+#include <freax/slab.h>
+#include <freax/rcupdate.h>
+#include <freax/refcount.h>
+#include <uapi/freax/posix_acl.h>
 
 struct user_namespace;
 
@@ -164,4 +164,4 @@ static inline int posix_acl_listxattr(struct inode *inode, char **buffer,
 
 struct posix_acl *get_inode_acl(struct inode *inode, int type);
 
-#endif  /* __LINUX_POSIX_ACL_H */
+#endif  /* __freax_POSIX_ACL_H */

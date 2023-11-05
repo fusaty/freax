@@ -4,7 +4,7 @@
 Message logging with printk
 ===========================
 
-printk() is one of the most widely known functions in the Linux kernel. It's the
+printk() is one of the most widely known functions in the freax kernel. It's the
 standard tool we have for printing messages and usually the most basic way of
 tracing and debugging. If you're familiar with printf(3) you can tell printk()
 is based on it, although it has some functional differences:
@@ -107,6 +107,6 @@ also ``CONFIG_DYNAMIC_DEBUG`` in the case of pr_debug()) is defined.
 Function reference
 ==================
 
-.. kernel-doc:: include/linux/printk.h
+.. kernel-doc:: include/freax/printk.h
    :functions: printk pr_emerg pr_alert pr_crit pr_err pr_warn pr_notice pr_info
       pr_fmt pr_debug pr_devel pr_cont

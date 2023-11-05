@@ -1,28 +1,28 @@
 /*
- * linux/drivers/video/q40fb.c -- Q40 frame buffer device
+ * freax/drivers/video/q40fb.c -- Q40 frame buffer device
  *
  * Copyright (C) 2001
  *
- *      Richard Zidlicky <rz@linux-m68k.org>
+ *      Richard Zidlicky <rz@freax-m68k.org>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
  *  more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/setup.h>
 #include <asm/q40_master.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <freax/fb.h>
+#include <freax/module.h>
 
 #define Q40_PHYS_SCREEN_ADDR 0xFE800000
 

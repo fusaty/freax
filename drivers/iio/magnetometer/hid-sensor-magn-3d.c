@@ -3,13 +3,13 @@
  * HID Sensors Driver
  * Copyright (c) 2012, Intel Corporation.
  */
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hid-sensor-hub.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/hid-sensor-hub.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
 #include "../common/hid-sensors/hid-sensor-trigger.h"
 
 enum magn_3d_channel {

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_OPENVSWITCH_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_OPENVSWITCH_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #include "datapath.h"
 

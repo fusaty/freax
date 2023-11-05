@@ -11,8 +11,8 @@
  * crtc, HDMI encoder).
  */
 
-#include <linux/clk.h>
-#include <linux/sort.h>
+#include <freax/clk.h>
+#include <freax/sort.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

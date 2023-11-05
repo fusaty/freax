@@ -21,18 +21,18 @@
  *			fixed requeue routine
  *		and many others. thanks.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/list.h>
+#include <freax/compiler.h>
+#include <freax/rbtree.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>

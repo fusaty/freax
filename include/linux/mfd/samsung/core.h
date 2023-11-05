@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_SEC_CORE_H
-#define __LINUX_MFD_SEC_CORE_H
+#ifndef __freax_MFD_SEC_CORE_H
+#define __freax_MFD_SEC_CORE_H
 
 /* Macros to represent minimum voltages for LDO/BUCK */
 #define MIN_3000_MV		3000000
@@ -142,4 +142,4 @@ enum sec_opmode {
 	SEC_OPMODE_SUSPEND,
 };
 
-#endif /*  __LINUX_MFD_SEC_CORE_H */
+#endif /*  __freax_MFD_SEC_CORE_H */

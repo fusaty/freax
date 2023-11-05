@@ -35,9 +35,9 @@
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 52 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 		};
 	};
 
@@ -52,13 +52,13 @@
 		button-volume-up {
 			label = "Volume Up";
 			gpios = <&tlmm 107 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		button-home {
 			label = "Home Key";
 			gpios = <&tlmm 109 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOMEPAGE>;
+			freax,code = <KEY_HOMEPAGE>;
 		};
 	};
 
@@ -137,7 +137,7 @@
 
 &pm8916_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 };
 
 &sdhc_1 {

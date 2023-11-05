@@ -7,10 +7,10 @@
  *	Peter Pan <peterpandong@micron.com>
  */
 
-#ifndef __LINUX_MTD_NAND_H
-#define __LINUX_MTD_NAND_H
+#ifndef __freax_MTD_NAND_H
+#define __freax_MTD_NAND_H
 
-#include <linux/mtd/mtd.h>
+#include <freax/mtd/mtd.h>
 
 struct nand_device;
 
@@ -1062,4 +1062,4 @@ static inline bool nanddev_bbt_is_initialized(struct nand_device *nand)
 int nanddev_mtd_erase(struct mtd_info *mtd, struct erase_info *einfo);
 int nanddev_mtd_max_bad_blocks(struct mtd_info *mtd, loff_t offs, size_t len);
 
-#endif /* __LINUX_MTD_NAND_H */
+#endif /* __freax_MTD_NAND_H */

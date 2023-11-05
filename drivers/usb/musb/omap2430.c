@@ -6,24 +6,24 @@
  * Copyright (C) 2006 Nokia Corporation
  * Tony Lindgren <tony@atomide.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for freax.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/usb/musb.h>
-#include <linux/phy/omap_control_phy.h>
-#include <linux/of_platform.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/usb/musb.h>
+#include <freax/phy/omap_control_phy.h>
+#include <freax/of_platform.h>
 
 #include "musb_core.h"
 #include "omap2430.h"

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Common code for 32 and 64-bit NUMA */
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/ctype.h>
-#include <linux/nodemask.h>
-#include <linux/sched.h>
-#include <linux/topology.h>
-#include <linux/sort.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/mmzone.h>
+#include <freax/ctype.h>
+#include <freax/nodemask.h>
+#include <freax/sched.h>
+#include <freax/topology.h>
+#include <freax/sort.h>
 
 #include <asm/e820/api.h>
 #include <asm/proto.h>

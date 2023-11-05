@@ -12,9 +12,9 @@
  *	X.25 001	Jonathan Naylor	Started coding.
  */
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <net/x25.h>
 
 LIST_HEAD(x25_route_list);

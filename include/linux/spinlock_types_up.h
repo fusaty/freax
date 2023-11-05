@@ -1,12 +1,12 @@
-#ifndef __LINUX_SPINLOCK_TYPES_UP_H
-#define __LINUX_SPINLOCK_TYPES_UP_H
+#ifndef __freax_SPINLOCK_TYPES_UP_H
+#define __freax_SPINLOCK_TYPES_UP_H
 
-#ifndef __LINUX_SPINLOCK_TYPES_RAW_H
+#ifndef __freax_SPINLOCK_TYPES_RAW_H
 # error "please don't include this file directly"
 #endif
 
 /*
- * include/linux/spinlock_types_up.h - spinlock type definitions for UP
+ * include/freax/spinlock_types_up.h - spinlock type definitions for UP
  *
  * portions Copyright 2005, Red Hat, Inc., Ingo Molnar
  * Released under the General Public License (GPL).
@@ -34,4 +34,4 @@ typedef struct {
 
 #define __ARCH_RW_LOCK_UNLOCKED { }
 
-#endif /* __LINUX_SPINLOCK_TYPES_UP_H */
+#endif /* __freax_SPINLOCK_TYPES_UP_H */

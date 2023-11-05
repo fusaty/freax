@@ -5,11 +5,11 @@
  * Copyright (C) 2018-2021 ARM Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pm_domain.h>
-#include <linux/scmi_protocol.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pm_domain.h>
+#include <freax/scmi_protocol.h>
 
 static const struct scmi_power_proto_ops *power_ops;
 

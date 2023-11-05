@@ -5,9 +5,9 @@
 // Copyright (C) 2020 Renesas Electronics Corp.
 // Copyright (C) 2020 Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 //
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of_gpio.h>
+#include <freax/platform_device.h>
 #include <sound/graph_card.h>
 
 /*

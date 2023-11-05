@@ -13,7 +13,7 @@
 
 #define _GNU_SOURCE
 
-#include <linux/psci.h>
+#include <freax/psci.h>
 
 #include "kvm_util.h"
 #include "processor.h"

@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt)  "Hyper-V: " fmt
 
-#include <linux/efi.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/io.h>
+#include <freax/efi.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
 #include <asm/apic.h>
 #include <asm/desc.h>
 #include <asm/sev.h>
@@ -22,17 +22,17 @@
 #include <asm/mshyperv.h>
 #include <asm/idtentry.h>
 #include <asm/set_memory.h>
-#include <linux/kexec.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/cpuhotplug.h>
-#include <linux/syscore_ops.h>
+#include <freax/kexec.h>
+#include <freax/version.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/hyperv.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/cpuhotplug.h>
+#include <freax/syscore_ops.h>
 #include <clocksource/hyperv_timer.h>
-#include <linux/highmem.h>
+#include <freax/highmem.h>
 
 int hyperv_init_cpuhp;
 u64 hv_current_partition_id = ~0ull;
@@ -504,7 +504,7 @@ void __init hyperv_init(void)
 	 * instead, hv_post_message() uses the post_msg_page, which is decrypted
 	 * in such a VM and is only used in such a VM.
 	 */
-	guest_id = hv_generate_guest_id(LINUX_VERSION_CODE);
+	guest_id = hv_generate_guest_id(freax_VERSION_CODE);
 	wrmsrl(HV_X64_MSR_GUEST_OS_ID, guest_id);
 
 	/* With the paravisor, the VM must also write the ID via GHCB/GHCI */
@@ -559,10 +559,10 @@ skip_hypercall_pg_init:
 	 * in that there's no ENDBR64 instruction at the entry to the
 	 * hypercall page. Because hypercalls are invoked via an indirect call
 	 * to the hypercall page, all hypercall attempts fail when IBT is
-	 * enabled, and Linux panics. For such buggy versions, disable IBT.
+	 * enabled, and freax panics. For such buggy versions, disable IBT.
 	 *
 	 * Fixed versions of Hyper-V always provide ENDBR64 on the hypercall
-	 * page, so if future Linux kernel versions enable IBT for 32-bit
+	 * page, so if future freax kernel versions enable IBT for 32-bit
 	 * builds, additional hypercall page hackery will be required here
 	 * to provide an ENDBR32.
 	 */

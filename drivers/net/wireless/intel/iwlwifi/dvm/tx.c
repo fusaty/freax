@@ -6,10 +6,10 @@
  * Copyright (C) 2023 Intel Corporation
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/ieee80211.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/ieee80211.h>
 #include "iwl-io.h"
 #include "iwl-trans.h"
 #include "iwl-agn-hw.h"

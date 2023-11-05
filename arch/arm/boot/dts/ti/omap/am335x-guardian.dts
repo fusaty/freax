@@ -36,14 +36,14 @@
 
 		select-button {
 			label = "guardian-select-button";
-			linux,code = <KEY_5>;
+			freax,code = <KEY_5>;
 			gpios = <&gpio1 31 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		power-button {
 			label = "guardian-power-button";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio2 21 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -57,7 +57,7 @@
 		life-led {
 			label = "guardian:life-led";
 			gpios = <&gpio1 26 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};
@@ -124,7 +124,7 @@
 		debounce-delay-ms = <10>;
 		col-scan-delay-us = <2>;
 		keypad,num-lines = <5>;
-		linux,no-autorepeat;
+		freax,no-autorepeat;
 		gpio-activelow;
 		line-gpios = <
 			&gpio1 24 GPIO_ACTIVE_LOW    /*gpio_56*/
@@ -300,11 +300,11 @@
    * mode") at poweroff.  Most BeagleBone versions do not support RTC-only
    * mode and risk hardware damage if this mode is entered.
    *
-   * For details, see linux-omap mailing list May 2015 thread
+   * For details, see freax-omap mailing list May 2015 thread
    *  [PATCH] ARM: dts: am335x-bone* enable pmic-shutdown-controller
    * In particular, messages:
-   *  http://www.spinics.net/lists/linux-omap/msg118585.html
-   *  http://www.spinics.net/lists/linux-omap/msg118615.html
+   *  http://www.spinics.net/lists/freax-omap/msg118585.html
+   *  http://www.spinics.net/lists/freax-omap/msg118615.html
    *
    * You can override this later with
    *  &tps {  /delete-property/ ti,pmic-shutdown-controller;  }

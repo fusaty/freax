@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5668.h -- Platform data for RT5668
+ * freax/sound/rt5668.h -- Platform data for RT5668
  *
  * Copyright 2018 Realtek Microelectronics
  */
 
-#ifndef __LINUX_SND_RT5668_H
-#define __LINUX_SND_RT5668_H
+#ifndef __freax_SND_RT5668_H
+#define __freax_SND_RT5668_H
 
 enum rt5668_dmic1_data_pin {
 	RT5668_DMIC1_NULL,

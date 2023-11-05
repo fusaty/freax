@@ -9,9 +9,9 @@
 #ifndef _CDX_BUS_H_
 #define _CDX_BUS_H_
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
 
 #define MAX_CDX_DEV_RESOURCES	4
 #define CDX_CONTROLLER_ID_SHIFT 4
@@ -85,7 +85,7 @@ struct cdx_ops {
 
 /**
  * struct cdx_controller: CDX controller object
- * @dev: Linux device associated with the CDX controller.
+ * @dev: freax device associated with the CDX controller.
  * @priv: private data
  * @id: Controller ID
  * @controller_registered: controller registered with bus
@@ -101,7 +101,7 @@ struct cdx_controller {
 
 /**
  * struct cdx_device - CDX device object
- * @dev: Linux driver model device object
+ * @dev: freax driver model device object
  * @cdx: CDX controller associated with the device
  * @vendor: Vendor ID for CDX device
  * @device: Device ID for CDX device

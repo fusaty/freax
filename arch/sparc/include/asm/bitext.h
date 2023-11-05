@@ -8,7 +8,7 @@
 #ifndef _SPARC_BITEXT_H
 #define _SPARC_BITEXT_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 struct bit_map {
 	spinlock_t lock;

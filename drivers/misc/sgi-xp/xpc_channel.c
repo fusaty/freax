@@ -14,7 +14,7 @@
  *
  */
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include "xpc.h"
 
 /*

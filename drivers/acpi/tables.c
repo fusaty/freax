@@ -9,19 +9,19 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/earlycpio.h>
-#include <linux/initrd.h>
-#include <linux/security.h>
-#include <linux/kmemleak.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/irq.h>
+#include <freax/errno.h>
+#include <freax/acpi.h>
+#include <freax/memblock.h>
+#include <freax/earlycpio.h>
+#include <freax/initrd.h>
+#include <freax/security.h>
+#include <freax/kmemleak.h>
 #include "internal.h"
 
 #ifdef CONFIG_ACPI_CUSTOM_DSDT
@@ -521,7 +521,7 @@ static void __init check_multiple_madt(void)
 		pr_warn("BIOS bug: multiple APIC/MADT found, using %d\n",
 			acpi_apic_instance);
 		pr_warn("If \"acpi_apic_instance=%d\" works better, "
-			"notify linux-acpi@vger.kernel.org\n",
+			"notify freax-acpi@vger.kernel.org\n",
 			acpi_apic_instance ? 0 : 2);
 		acpi_put_table(table);
 

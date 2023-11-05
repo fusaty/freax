@@ -7,28 +7,28 @@
  * Author(s): Peter Oberparleiter <Peter.Oberparleiter@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/panic_notifier.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/kdev_t.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/panic_notifier.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/timer.h>
+#include <freax/kernel.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/major.h>
+#include <freax/console.h>
+#include <freax/kdev_t.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "sclp.h"
 #include "ctrlchar.h"
 
@@ -722,7 +722,7 @@ static const struct tty_operations sclp_vt220_ops = {
 };
 
 /*
- * Register driver with SCLP and Linux and initialize internal tty structures.
+ * Register driver with SCLP and freax and initialize internal tty structures.
  */
 static int __init sclp_vt220_tty_init(void)
 {
@@ -837,7 +837,7 @@ sclp_vt220_con_init(void)
 	rc = __sclp_vt220_init(sclp_console_pages);
 	if (rc)
 		return rc;
-	/* Attach linux console */
+	/* Attach freax console */
 	atomic_notifier_chain_register(&panic_notifier_list, &on_panic_nb);
 	register_reboot_notifier(&on_reboot_nb);
 	register_console(&sclp_vt220_console);

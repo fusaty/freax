@@ -7,9 +7,9 @@
 #ifndef _I915_SCHEDULER_H_
 #define _I915_SCHEDULER_H_
 
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
+#include <freax/bitops.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
 
 #include "i915_scheduler_types.h"
 #include "i915_tasklet.h"

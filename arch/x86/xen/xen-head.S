@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_XEN
 
-#include <linux/elfnote.h>
-#include <linux/init.h>
+#include <freax/elfnote.h>
+#include <freax/init.h>
 
 #include <asm/boot.h>
 #include <asm/asm.h>
@@ -87,7 +87,7 @@ SYM_CODE_END(xen_cpu_bringup_again)
 #endif
 #endif
 
-	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "linux")
+	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_OS,       .asciz "freax")
 	ELFNOTE(Xen, XEN_ELFNOTE_GUEST_VERSION,  .asciz "2.6")
 	ELFNOTE(Xen, XEN_ELFNOTE_XEN_VERSION,    .asciz "xen-3.0")
 #ifdef CONFIG_XEN_PV
@@ -106,7 +106,7 @@ SYM_CODE_END(xen_cpu_bringup_again)
 # define FEATURES_PV 0
 #endif
 #ifdef CONFIG_XEN_PVH
-# define FEATURES_PVH (1 << XENFEAT_linux_rsdp_unrestricted)
+# define FEATURES_PVH (1 << XENFEAT_freax_rsdp_unrestricted)
 #else
 # define FEATURES_PVH 0
 #endif

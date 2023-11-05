@@ -4,21 +4,21 @@
  * Copyright (c) 2008-2009 Marvell Semiconductor
  */
 
-#ifndef __LINUX_NET_DSA_H
-#define __LINUX_NET_DSA_H
+#ifndef __freax_NET_DSA_H
+#define __freax_NET_DSA_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/ethtool.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/platform_data/dsa.h>
-#include <linux/phylink.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/of.h>
+#include <freax/ethtool.h>
+#include <freax/net_tstamp.h>
+#include <freax/phy.h>
+#include <freax/platform_data/dsa.h>
+#include <freax/phylink.h>
 #include <net/devlink.h>
 #include <net/switchdev.h>
 

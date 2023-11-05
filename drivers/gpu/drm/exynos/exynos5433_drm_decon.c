@@ -7,15 +7,15 @@
  *	Hyungwon Hwang <human.hwang@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include <drm/drm_blend.h>
 #include <drm/drm_fourcc.h>

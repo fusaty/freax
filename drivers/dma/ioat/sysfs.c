@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel I/OAT DMA Linux driver
+ * Intel I/OAT DMA freax driver
  * Copyright(c) 2004 - 2015 Intel Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/pci.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/dmaengine.h>
+#include <freax/pci.h>
 #include "dma.h"
 #include "registers.h"
 #include "hw.h"

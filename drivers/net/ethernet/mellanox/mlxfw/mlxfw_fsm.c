@@ -3,9 +3,9 @@
 
 #define pr_fmt(fmt) "mlxfw: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
 
 #include "mlxfw.h"
 #include "mlxfw_mfa2.h"

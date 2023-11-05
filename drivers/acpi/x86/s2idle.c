@@ -3,7 +3,7 @@
  * Architecture-specific ACPI-based support for suspend-to-idle.
  *
  * Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
  * Author: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  *
  * On platforms supporting the Low Power S0 Idle interface there is an ACPI
@@ -15,10 +15,10 @@
  * mode accordingly.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/suspend.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/dmi.h>
+#include <freax/suspend.h>
 
 #include "../sleep.h"
 

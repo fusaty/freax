@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptlan.c
+ *  freax/drivers/message/fusion/mptlan.c
  *      IP Over Fibre Channel device driver.
  *      For use with LSI Fibre Channel PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 2000-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionfreax@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -53,13 +53,13 @@
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
 #include "mptlan.h"
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_freax_VERSION_COMMON
 #define MYNAM		"mptlan"
 
 MODULE_LICENSE("GPL");

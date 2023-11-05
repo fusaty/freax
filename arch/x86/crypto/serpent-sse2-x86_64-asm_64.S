@@ -9,7 +9,7 @@
  *                2003 Herbert Valerio Riedel <hvr@gnu.org>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 .file "serpent-sse2-x86_64-asm_64.S"
 .text

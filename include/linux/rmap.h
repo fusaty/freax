@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RMAP_H
-#define _LINUX_RMAP_H
+#ifndef _freax_RMAP_H
+#define _freax_RMAP_H
 /*
  * Declarations for Reverse Mapping functions in mm/rmap.c
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/rwsem.h>
-#include <linux/memcontrol.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/memremap.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/rwsem.h>
+#include <freax/memcontrol.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/memremap.h>
 
 /*
  * The anon_vma heads a list of private "related" vmas, to scan if
@@ -502,4 +502,4 @@ static inline int page_mkclean(struct page *page)
 {
 	return folio_mkclean(page_folio(page));
 }
-#endif	/* _LINUX_RMAP_H */
+#endif	/* _freax_RMAP_H */

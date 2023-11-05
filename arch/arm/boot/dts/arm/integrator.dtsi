@@ -26,7 +26,7 @@
 			offset = <0x0c>;
 			mask = <0x01>;
 			label = "integrator:core_module";
-			linux,default-trigger = "cpu0";
+			freax,default-trigger = "cpu0";
 			default-state = "on";
 		};
 	};
@@ -122,7 +122,7 @@
 				offset = <0x04>;
 				mask = <0x01>;
 				label = "integrator:green0";
-				linux,default-trigger = "heartbeat";
+				freax,default-trigger = "heartbeat";
 				default-state = "on";
 			};
 			led@4,1 {

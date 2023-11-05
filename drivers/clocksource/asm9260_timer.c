@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright (C) 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2014 Oleksij Rempel <freax@rempel-privat.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/bitops.h>
 
 #define DRIVER_NAME	"asm9260-timer"
 

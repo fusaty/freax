@@ -6,7 +6,7 @@
 #ifndef _INTEL_GUC_SUBMISSION_H_
 #define _INTEL_GUC_SUBMISSION_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_guc.h"
 

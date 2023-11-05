@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/ethtool_netlink.h>
+#include <freax/ethtool_netlink.h>
 
 #include "en.h"
 #include "en/port.h"
@@ -1529,7 +1529,7 @@ static __u32 mlx5e_get_wol_supported(struct mlx5_core_dev *mdev)
 	return ret;
 }
 
-static __u32 mlx5e_reformat_wol_mode_mlx5_to_linux(u8 mode)
+static __u32 mlx5e_reformat_wol_mode_mlx5_to_freax(u8 mode)
 {
 	__u32 ret = 0;
 
@@ -1557,7 +1557,7 @@ static __u32 mlx5e_reformat_wol_mode_mlx5_to_linux(u8 mode)
 	return ret;
 }
 
-static u8 mlx5e_reformat_wol_mode_linux_to_mlx5(__u32 mode)
+static u8 mlx5e_reformat_wol_mode_freax_to_mlx5(__u32 mode)
 {
 	u8 ret = 0;
 
@@ -1603,7 +1603,7 @@ static void mlx5e_get_wol(struct net_device *netdev,
 	if (err)
 		return;
 
-	wol->wolopts = mlx5e_reformat_wol_mode_mlx5_to_linux(mlx5_wol_mode);
+	wol->wolopts = mlx5e_reformat_wol_mode_mlx5_to_freax(mlx5_wol_mode);
 }
 
 static int mlx5e_set_wol(struct net_device *netdev, struct ethtool_wolinfo *wol)
@@ -1619,7 +1619,7 @@ static int mlx5e_set_wol(struct net_device *netdev, struct ethtool_wolinfo *wol)
 	if (wol->wolopts & ~wol_supported)
 		return -EINVAL;
 
-	mlx5_wol_mode = mlx5e_reformat_wol_mode_linux_to_mlx5(wol->wolopts);
+	mlx5_wol_mode = mlx5e_reformat_wol_mode_freax_to_mlx5(wol->wolopts);
 
 	return mlx5_set_port_wol(mdev, mlx5_wol_mode);
 }

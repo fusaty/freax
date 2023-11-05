@@ -10,19 +10,19 @@
  * Copyright (c) 2008 QUALCOMM USA, INC.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/property.h>
 
 /*
  * Coordinate calculation:

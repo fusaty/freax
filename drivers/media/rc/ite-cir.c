@@ -16,18 +16,18 @@
  * <spmf2004-lirc@yahoo.fr> in 2008.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pnp.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pnp.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/bitops.h>
 #include <media/rc-core.h>
-#include <linux/pci_ids.h>
+#include <freax/pci_ids.h>
 
 #include "ite-cir.h"
 

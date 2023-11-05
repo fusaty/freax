@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NET_SCM_H
-#define __LINUX_NET_SCM_H
+#ifndef __freax_NET_SCM_H
+#define __freax_NET_SCM_H
 
-#include <linux/limits.h>
-#include <linux/net.h>
-#include <linux/cred.h>
-#include <linux/security.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/sched/signal.h>
+#include <freax/limits.h>
+#include <freax/net.h>
+#include <freax/cred.h>
+#include <freax/security.h>
+#include <freax/pid.h>
+#include <freax/nsproxy.h>
+#include <freax/sched/signal.h>
 #include <net/compat.h>
 
 /* Well, we should have at least one descriptor open
@@ -208,5 +208,5 @@ static inline void scm_recv_unix(struct socket *sock, struct msghdr *msg,
 	scm_destroy_cred(scm);
 }
 
-#endif /* __LINUX_NET_SCM_H */
+#endif /* __freax_NET_SCM_H */
 

@@ -7,8 +7,8 @@
 #include "media/videobuf2-core.h"
 #include "media/videobuf2-dma-contig.h"
 #include "media/videobuf2-v4l2.h"
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-vp9.h>
 

@@ -6,11 +6,11 @@
  *	Dave Gerlach
  */
 
-#include <linux/device.h>
-#include <linux/genalloc.h>
-#include <linux/mm.h>
-#include <linux/sram.h>
-#include <linux/set_memory.h>
+#include <freax/device.h>
+#include <freax/genalloc.h>
+#include <freax/mm.h>
+#include <freax/sram.h>
+#include <freax/set_memory.h>
 
 #include <asm/fncpy.h>
 

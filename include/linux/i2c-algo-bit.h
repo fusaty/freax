@@ -7,10 +7,10 @@
  * Frodo Looijaard <frodol@dds.nl>
  */
 
-#ifndef _LINUX_I2C_ALGO_BIT_H
-#define _LINUX_I2C_ALGO_BIT_H
+#ifndef _freax_I2C_ALGO_BIT_H
+#define _freax_I2C_ALGO_BIT_H
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 /* --- Defines for bit-adapters ---------------------------------------	*/
 /*
@@ -40,4 +40,4 @@ int i2c_bit_add_bus(struct i2c_adapter *);
 int i2c_bit_add_numbered_bus(struct i2c_adapter *);
 extern const struct i2c_algorithm i2c_bit_algo;
 
-#endif /* _LINUX_I2C_ALGO_BIT_H */
+#endif /* _freax_I2C_ALGO_BIT_H */

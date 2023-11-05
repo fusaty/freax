@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Ethernet netdevice using ATM AAL5 as underlying carrier
- * (RFC1483 obsoleted by RFC2684) for Linux
+ * (RFC1483 obsoleted by RFC2684) for freax
  *
  * Authors: Marcell GAL, 2000, XDSL Ltd, Hungary
  *          Eric Kinzie, 2006-2007, US Naval Research Laboratory
@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/ip.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 #include <net/arp.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/capability.h>
+#include <freax/seq_file.h>
 
-#include <linux/atmbr2684.h>
+#include <freax/atmbr2684.h>
 
 #include "common.h"
 

@@ -3,8 +3,8 @@
  *  Copyright (C) 2013-2015 Chelsio Communications.  All rights reserved.
  */
 
-#include <linux/firmware.h>
-#include <linux/mdio.h>
+#include <freax/firmware.h>
+#include <freax/mdio.h>
 
 #include "cxgb4.h"
 #include "t4_regs.h"

@@ -4,18 +4,18 @@
  *		based on the ISAR DSP
  *		Thanks to Sedlbauer AG for informations and HW
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4freax.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4freax.de>
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/mISDNhw.h>
+#include <freax/firmware.h>
 #include "ipac.h"
 #include "isar.h"
 

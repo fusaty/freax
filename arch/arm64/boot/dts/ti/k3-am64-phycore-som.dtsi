@@ -49,7 +49,7 @@
 		led-0 {
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&main_gpio0 12 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			function = LED_FUNCTION_HEARTBEAT;
 		};
 	};

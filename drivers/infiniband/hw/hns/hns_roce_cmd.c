@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/dmapool.h>
+#include <freax/dmapool.h>
 #include "hns_roce_common.h"
 #include "hns_roce_device.h"
 #include "hns_roce_cmd.h"

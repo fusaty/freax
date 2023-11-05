@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2014 Intel Corp.
- * Author: Jiang Liu <jiang.liu@linux.intel.com>
+ * Author: Jiang Liu <jiang.liu@freax.intel.com>
  *
  * This file is licensed under GPLv2.
  *
  * This file contains common code to support Message Signaled Interrupts for
  * PCI compatible and non PCI compatible devices.
  */
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/msi.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/pci.h>
 
 #include "internals.h"
 
@@ -24,7 +24,7 @@
  * @domid:	ID of the domain on which management operations should be done
  * @first:	First (hardware) slot index to operate on
  * @last:	Last (hardware) slot index to operate on
- * @nirqs:	The number of Linux interrupts to allocate. Can be larger
+ * @nirqs:	The number of freax interrupts to allocate. Can be larger
  *		than the range due to PCI/multi-MSI.
  */
 struct msi_ctrl {
@@ -421,12 +421,12 @@ struct msi_desc *msi_next_desc(struct device *dev, unsigned int domid,
 EXPORT_SYMBOL_GPL(msi_next_desc);
 
 /**
- * msi_domain_get_virq - Lookup the Linux interrupt number for a MSI index on a interrupt domain
+ * msi_domain_get_virq - Lookup the freax interrupt number for a MSI index on a interrupt domain
  * @dev:	Device to operate on
  * @domid:	Domain ID of the interrupt domain associated to the device
  * @index:	MSI interrupt index to look for (0-based)
  *
- * Return: The Linux interrupt number on success (> 0), 0 if not found
+ * Return: The freax interrupt number on success (> 0), 0 if not found
  */
 unsigned int msi_domain_get_virq(struct device *dev, unsigned int domid, unsigned int index)
 {
@@ -1451,7 +1451,7 @@ int msi_domain_alloc_irqs_all_locked(struct device *dev, unsigned int domid, int
  * Return: struct msi_map
  *
  *	On success msi_map::index contains the allocated index number and
- *	msi_map::virq the corresponding Linux interrupt number
+ *	msi_map::virq the corresponding freax interrupt number
  *
  *	On failure msi_map::index contains the error code and msi_map::virq
  *	is %0.

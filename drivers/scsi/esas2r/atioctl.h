@@ -1,8 +1,8 @@
-/*  linux/drivers/scsi/esas2r/atioctl.h
+/*  freax/drivers/scsi/esas2r/atioctl.h
  *      ATTO IOCTL Handling
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)
+ *  (mailto:freaxdrivers@attotech.com)
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*

@@ -13,10 +13,10 @@
  * Marek Szyprowski, <m.szyprowski@samsung.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

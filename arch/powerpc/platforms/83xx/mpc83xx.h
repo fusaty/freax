@@ -2,7 +2,7 @@
 #ifndef __MPC83XX_H__
 #define __MPC83XX_H__
 
-#include <linux/init.h>
+#include <freax/init.h>
 
 /* System Clock Control Register */
 #define MPC83XX_SCCR_OFFS          0xA08

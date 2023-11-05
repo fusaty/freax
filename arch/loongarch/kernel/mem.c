@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/efi.h>
-#include <linux/initrd.h>
-#include <linux/memblock.h>
+#include <freax/efi.h>
+#include <freax/initrd.h>
+#include <freax/memblock.h>
 
 #include <asm/bootinfo.h>
 #include <asm/loongson.h>

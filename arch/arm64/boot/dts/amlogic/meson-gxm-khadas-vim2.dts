@@ -37,7 +37,7 @@
 
 		button-function {
 			label = "Function";
-			linux,code = <KEY_FN>;
+			freax,code = <KEY_FN>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -66,7 +66,7 @@
 
 		power-button {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -89,7 +89,7 @@
 			label = "vim:red:power";
 			pwms = <&pwm_AO_ab 1 7812500 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 	};
 
@@ -278,7 +278,7 @@
 	status = "okay";
 	pinctrl-0 = <&remote_input_ao_pins>;
 	pinctrl-names = "default";
-	linux,rc-map-name = "rc-khadas";
+	freax,rc-map-name = "rc-khadas";
 };
 
 &pwm_AO_ab {
@@ -398,7 +398,7 @@
 	};
 };
 
-/* This is brought out on the Linux_RX (18) and Linux_TX (19) pins: */
+/* This is brought out on the freax_RX (18) and freax_TX (19) pins: */
 &uart_AO {
 	status = "okay";
 	pinctrl-0 = <&uart_ao_a_pins>;

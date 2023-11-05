@@ -7,12 +7,12 @@
  * Copyright (c) 2020-2021 Huawei Technologies Co., Ltd.
  */
 
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spmi.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/spmi.h>
 
 static const struct mfd_cell hi6421v600_devs[] = {
 	{ .name = "hi6421v600-irq", },

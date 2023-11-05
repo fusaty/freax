@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PERCPU_RWSEM_H
-#define _LINUX_PERCPU_RWSEM_H
+#ifndef _freax_PERCPU_RWSEM_H
+#define _freax_PERCPU_RWSEM_H
 
-#include <linux/atomic.h>
-#include <linux/percpu.h>
-#include <linux/rcuwait.h>
-#include <linux/wait.h>
-#include <linux/rcu_sync.h>
-#include <linux/lockdep.h>
+#include <freax/atomic.h>
+#include <freax/percpu.h>
+#include <freax/rcuwait.h>
+#include <freax/wait.h>
+#include <freax/rcu_sync.h>
+#include <freax/lockdep.h>
 
 struct percpu_rw_semaphore {
 	struct rcu_sync		rss;

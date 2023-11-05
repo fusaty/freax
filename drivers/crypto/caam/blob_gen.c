@@ -6,8 +6,8 @@
 
 #define pr_fmt(fmt) "caam blob_gen: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
 #include <soc/fsl/caam-blob.h>
 
 #include "compat.h"

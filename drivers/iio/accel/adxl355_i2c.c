@@ -5,10 +5,10 @@
  * Copyright (c) 2021 Puranjay Mohan <puranjay12@gmail.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regmap.h>
 
 #include "adxl355.h"
 

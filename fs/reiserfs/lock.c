@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "reiserfs.h"
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 /*
  * The previous reiserfs locking scheme was heavily based on

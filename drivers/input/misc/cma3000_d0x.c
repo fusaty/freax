@@ -6,13 +6,13 @@
  * Author: Hemanth V <hemanthv@ti.com>
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/cma3000.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/input/cma3000.h>
+#include <freax/module.h>
 
 #include "cma3000_d0x.h"
 

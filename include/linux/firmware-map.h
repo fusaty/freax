@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/firmware-map.h:
- *  Copyright (C) 2008 SUSE LINUX Products GmbH
+ * include/freax/firmware-map.h:
+ *  Copyright (C) 2008 SUSE freax Products GmbH
  *  by Bernhard Walle <bernhard.walle@gmx.de>
  */
-#ifndef _LINUX_FIRMWARE_MAP_H
-#define _LINUX_FIRMWARE_MAP_H
+#ifndef _freax_FIRMWARE_MAP_H
+#define _freax_FIRMWARE_MAP_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 /*
  * provide a dummy interface if CONFIG_FIRMWARE_MEMMAP is disabled
@@ -37,4 +37,4 @@ static inline int firmware_map_remove(u64 start, u64 end, const char *type)
 
 #endif /* CONFIG_FIRMWARE_MEMMAP */
 
-#endif /* _LINUX_FIRMWARE_MAP_H */
+#endif /* _freax_FIRMWARE_MAP_H */

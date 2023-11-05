@@ -19,7 +19,7 @@
 #include <sys/syscall.h>
 #include <sys/ioctl.h>
 #include <sys/wait.h>
-#include <linux/userfaultfd.h>
+#include <freax/userfaultfd.h>
 
 #include "../kselftest.h"
 #include "vm_util.h"

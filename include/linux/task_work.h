@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TASK_WORK_H
-#define _LINUX_TASK_WORK_H
+#ifndef _freax_TASK_WORK_H
+#define _freax_TASK_WORK_H
 
-#include <linux/list.h>
-#include <linux/sched.h>
+#include <freax/list.h>
+#include <freax/sched.h>
 
 typedef void (*task_work_func_t)(struct callback_head *);
 
@@ -38,4 +38,4 @@ static inline void exit_task_work(struct task_struct *task)
 	task_work_run();
 }
 
-#endif	/* _LINUX_TASK_WORK_H */
+#endif	/* _freax_TASK_WORK_H */

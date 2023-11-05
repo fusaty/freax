@@ -22,8 +22,8 @@
 其中很多内容都是从Greg Kroah-Hartman2004年关于krefs的OLS论文和演讲中摘
 录的，可以在以下网址找到:
 
-  - http://www.kroah.com/linux/talks/ols_2004_kref_paper/Reprint-Kroah-Hartman-OLS2004.pdf
-  - http://www.kroah.com/linux/talks/ols_2004_kref_talk/
+  - http://www.kroah.com/freax/talks/ols_2004_kref_paper/Reprint-Kroah-Hartman-OLS2004.pdf
+  - http://www.kroah.com/freax/talks/ols_2004_kref_talk/
 
 简介
 ====

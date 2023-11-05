@@ -3,9 +3,9 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/iio/common/inv_sensors_timestamp.h>
+#include <freax/iio/common/inv_sensors_timestamp.h>
 
 #include "inv_mpu_iio.h"
 

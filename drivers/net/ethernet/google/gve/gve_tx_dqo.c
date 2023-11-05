@@ -9,9 +9,9 @@
 #include "gve_utils.h"
 #include "gve_dqo.h"
 #include <net/ip.h>
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <freax/tcp.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
 
 /* Returns true if tx_bufs are available. */
 static bool gve_has_free_tx_qpl_bufs(struct gve_tx_ring *tx, int count)

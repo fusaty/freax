@@ -6,12 +6,12 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/slab.h>
-#include <linux/mISDNif.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/sched/cputime.h>
-#include <linux/signal.h>
+#include <freax/slab.h>
+#include <freax/mISDNif.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/sched/cputime.h>
+#include <freax/signal.h>
 
 #include "core.h"
 

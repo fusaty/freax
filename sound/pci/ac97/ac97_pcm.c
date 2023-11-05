@@ -8,11 +8,11 @@
  *  for specific codecs.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

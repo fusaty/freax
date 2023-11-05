@@ -5,12 +5,12 @@
  * Copyright (C) 2022-2023 StarFive Technology Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #include <dt-bindings/clock/starfive,jh7110-crg.h>
 

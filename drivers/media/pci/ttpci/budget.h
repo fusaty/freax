@@ -10,8 +10,8 @@
 #include <media/dmxdev.h>
 #include <media/dvb_net.h>
 
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include <media/drv-intf/saa7146.h>
 

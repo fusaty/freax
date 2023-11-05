@@ -1,7 +1,7 @@
 What:		/sys/bus/pci/devices/<BDF>/qat/state
 Date:		June 2022
 KernelVersion:	6.0
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RW) Reports the current state of the QAT device. Write to
 		the file to start or stop the device.
 
@@ -19,7 +19,7 @@ Description:	(RW) Reports the current state of the QAT device. Write to
 What:		/sys/bus/pci/devices/<BDF>/qat/cfg_services
 Date:		June 2022
 KernelVersion:	6.0
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RW) Reports the current configuration of the QAT device.
 		Write to the file to change the configured services.
 
@@ -64,7 +64,7 @@ Description:	(RW) Reports the current configuration of the QAT device.
 What:		/sys/bus/pci/devices/<BDF>/qat/pm_idle_enabled
 Date:		June 2023
 KernelVersion:	6.5
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RW) This configuration option provides a way to force the device into remaining in
 		the MAX power state.
 		If idle support is enabled the device will transition to the `MIN` power state when
@@ -99,7 +99,7 @@ Description:	(RW) This configuration option provides a way to force the device i
 What:		/sys/bus/pci/devices/<BDF>/qat/rp2srv
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) This attribute provides a way for a user to query a
 		specific ring pair for the type of service that it is currently
@@ -131,7 +131,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat/num_rps
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RO) Returns the number of ring pairs that a single device has.
 

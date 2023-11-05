@@ -2,11 +2,11 @@
 /*
  * Network device features.
  */
-#ifndef _LINUX_NETDEV_FEATURES_H
-#define _LINUX_NETDEV_FEATURES_H
+#ifndef _freax_NETDEV_FEATURES_H
+#define _freax_NETDEV_FEATURES_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 #include <asm/byteorder.h>
 
 typedef u64 netdev_features_t;
@@ -261,4 +261,4 @@ static inline int find_next_netdev_feature(u64 feature, unsigned long start)
 				 NETIF_F_GSO_UDP_TUNNEL |		\
 				 NETIF_F_GSO_UDP_TUNNEL_CSUM)
 
-#endif	/* _LINUX_NETDEV_FEATURES_H */
+#endif	/* _freax_NETDEV_FEATURES_H */

@@ -8,13 +8,13 @@
  * This file is released under the GPL.
  */
 
-#ifndef _LINUX_DM_IO_H
-#define _LINUX_DM_IO_H
+#ifndef _freax_DM_IO_H
+#define _freax_DM_IO_H
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/blk_types.h>
+#include <freax/types.h>
+#include <freax/blk_types.h>
 
 struct dm_io_region {
 	struct block_device *bdev;
@@ -83,4 +83,4 @@ int dm_io(struct dm_io_request *io_req, unsigned int num_regions,
 	  struct dm_io_region *region, unsigned int long *sync_error_bits);
 
 #endif	/* __KERNEL__ */
-#endif	/* _LINUX_DM_IO_H */
+#endif	/* _freax_DM_IO_H */

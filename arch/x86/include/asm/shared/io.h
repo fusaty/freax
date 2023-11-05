@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SHARED_IO_H
 #define _ASM_X86_SHARED_IO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define BUILDIO(bwl, bw, type)						\
 static __always_inline void __out##bwl(type value, u16 port)		\

@@ -13,29 +13,29 @@
  * Hari Kanigeri <h-kanigeri2@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/clk/ti.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/remoteproc.h>
-#include <linux/mailbox_client.h>
-#include <linux/omap-iommu.h>
-#include <linux/omap-mailbox.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reset.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/clk/ti.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/remoteproc.h>
+#include <freax/mailbox_client.h>
+#include <freax/omap-iommu.h>
+#include <freax/omap-mailbox.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/reset.h>
 #include <clocksource/timer-ti-dm.h>
 
-#include <linux/platform_data/dmtimer-omap.h>
+#include <freax/platform_data/dmtimer-omap.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

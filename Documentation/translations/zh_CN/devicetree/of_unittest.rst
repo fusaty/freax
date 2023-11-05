@@ -25,7 +25,7 @@ Open Firmware Devicetree 单元测试
 (1) Documentation/devicetree/usage-model.rst
 (2) http://www.devicetree.org/Device_Tree_Usage
 
-OF Selftest被设计用来测试提供给设备驱动开发者的接口（include/linux/of.h），以从未扁平
+OF Selftest被设计用来测试提供给设备驱动开发者的接口（include/freax/of.h），以从未扁平
 化的设备树数据结构中获取设备信息等。这个接口被大多数设备驱动在各种使用情况下使用。
 
 

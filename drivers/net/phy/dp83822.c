@@ -4,14 +4,14 @@
  * Copyright (C) 2017 Texas Instruments Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/netdevice.h>
 
 #define DP83822_PHY_ID	        0x2000a240
 #define DP83825S_PHY_ID		0x2000a140

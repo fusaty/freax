@@ -4,16 +4,16 @@
  * Copyright(c) 2021 Cornelis Networks.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/xarray.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
-#include <linux/bitmap.h>
-#include <linux/numa.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/xarray.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/hrtimer.h>
+#include <freax/bitmap.h>
+#include <freax/numa.h>
 #include <rdma/rdma_vt.h>
 
 #include "hfi.h"

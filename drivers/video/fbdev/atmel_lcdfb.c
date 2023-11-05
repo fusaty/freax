@@ -8,23 +8,23 @@
  * more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/backlight.h>
-#include <linux/gfp.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/backlight.h>
+#include <freax/gfp.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
 #include <video/of_videomode.h>
 #include <video/of_display_timing.h>
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 #include <video/videomode.h>
 
 #include <video/atmel_lcdc.h>

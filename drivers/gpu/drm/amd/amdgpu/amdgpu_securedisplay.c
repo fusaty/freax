@@ -21,8 +21,8 @@
  *
  *
  */
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
+#include <freax/debugfs.h>
+#include <freax/pm_runtime.h>
 
 #include "amdgpu.h"
 #include "amdgpu_securedisplay.h"

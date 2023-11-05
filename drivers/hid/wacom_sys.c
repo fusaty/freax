@@ -5,7 +5,7 @@
 
 #include "wacom_wac.h"
 #include "wacom.h"
-#include <linux/input/mt.h>
+#include <freax/input/mt.h>
 
 #define WAC_MSG_RETRIES		5
 #define WAC_CMD_RETRIES		10

@@ -6,14 +6,14 @@
  * Copyright (C) 2016-2017 Pengutronix, Philipp Zabel <kernel@pengutronix.de>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/mux/consumer.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>

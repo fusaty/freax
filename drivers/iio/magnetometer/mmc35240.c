@@ -9,16 +9,16 @@
  * TODO: offset, ACPI, continuous measurement mode, PM
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
-#include <linux/pm.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/regmap.h>
+#include <freax/acpi.h>
+#include <freax/pm.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define MMC35240_DRV_NAME "mmc35240"
 #define MMC35240_REGMAP_NAME "mmc35240_regmap"

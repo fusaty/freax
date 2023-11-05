@@ -5,7 +5,7 @@
 #ifndef __ASM_TLB_H
 #define __ASM_TLB_H
 
-#include <linux/mm_types.h>
+#include <freax/mm_types.h>
 #include <asm/cpu-features.h>
 #include <asm/loongarch.h>
 

@@ -6,9 +6,9 @@
 #ifndef _SUN8I_MIXER_H_
 #define _SUN8I_MIXER_H_
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 
 #include "sunxi_engine.h"
 

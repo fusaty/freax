@@ -7,7 +7,7 @@
 #ifndef __IIO_GTS_HELPER__
 #define __IIO_GTS_HELPER__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 

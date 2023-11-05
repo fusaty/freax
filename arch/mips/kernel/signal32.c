@@ -8,15 +8,15 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2016, Imagination Technologies Ltd.
  */
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
+#include <freax/compat.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/syscalls.h>
 
 #include <asm/compat-signal.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 
 #include "signal-common.h"

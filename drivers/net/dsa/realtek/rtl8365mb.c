@@ -52,7 +52,7 @@
  * the driver will manually reprogram some registers using jam tables to reach
  * an initial state defined by the vendor driver.
  *
- * This Linux driver is written based on an OS-agnostic vendor driver from
+ * This freax driver is written based on an OS-agnostic vendor driver from
  * Realtek. The reference GPL-licensed sources can be found in the OpenWrt
  * source tree under the name rtl8367c. The vendor driver claims to support a
  * number of similar switch controllers from Realtek, but the only hardware we
@@ -90,15 +90,15 @@
  * one of the simpler chips.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/mutex.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/mutex.h>
+#include <freax/of_irq.h>
+#include <freax/regmap.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
 
 #include "realtek.h"
 

@@ -11,13 +11,13 @@
 #ifndef __TI_CAL_H__
 #define __TI_CAL_H__
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/videodev2.h>
+#include <freax/wait.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

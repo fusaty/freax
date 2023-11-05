@@ -6,8 +6,8 @@
 #if !defined(_CXL_EVENTS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _CXL_EVENTS_H
 
-#include <linux/tracepoint.h>
-#include <linux/pci.h>
+#include <freax/tracepoint.h>
+#include <freax/pci.h>
 #include <asm-generic/unaligned.h>
 
 #include <cxl.h>

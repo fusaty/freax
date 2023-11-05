@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HW_BREAKPOINT_H
-#define _LINUX_HW_BREAKPOINT_H
+#ifndef _freax_HW_BREAKPOINT_H
+#define _freax_HW_BREAKPOINT_H
 
-#include <linux/perf_event.h>
-#include <uapi/linux/hw_breakpoint.h>
+#include <freax/perf_event.h>
+#include <uapi/freax/hw_breakpoint.h>
 
 #ifdef CONFIG_HAVE_HW_BREAKPOINT
 
@@ -142,4 +142,4 @@ static inline struct arch_hw_breakpoint *counter_arch_bp(struct perf_event *bp)
 }
 
 #endif /* CONFIG_HAVE_HW_BREAKPOINT */
-#endif /* _LINUX_HW_BREAKPOINT_H */
+#endif /* _freax_HW_BREAKPOINT_H */

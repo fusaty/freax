@@ -10,9 +10,9 @@
 #include <net/caif/caif_layer.h>
 #include <net/caif/cfcnfg.h>
 #include <net/caif/caif_device.h>
-#include <linux/caif/caif_socket.h>
-#include <linux/if.h>
-#include <linux/net.h>
+#include <freax/caif/caif_socket.h>
+#include <freax/if.h>
+#include <freax/net.h>
 
 /**
  * struct caif_param - CAIF parameters.

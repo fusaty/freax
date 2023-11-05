@@ -8,11 +8,11 @@
  *  All rights reserved.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/math64.h>
-#include <linux/pci.h>
-#include <linux/v4l2-dv-timings.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/math64.h>
+#include <freax/pci.h>
+#include <freax/v4l2-dv-timings.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>

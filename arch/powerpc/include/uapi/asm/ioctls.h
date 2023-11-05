@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _ASM_POWERPC_IOCTLS_H
 #define _ASM_POWERPC_IOCTLS_H
 
@@ -69,7 +69,7 @@
 
 #define TIOCGSOFTCAR	0x5419
 #define TIOCSSOFTCAR	0x541A
-#define TIOCLINUX	0x541C
+#define TIOCfreax	0x541C
 #define TIOCCONS	0x541D
 #define TIOCGSERIAL	0x541E
 #define TIOCSSERIAL	0x541F

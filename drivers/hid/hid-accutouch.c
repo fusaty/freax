@@ -12,8 +12,8 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <freax/hid.h>
+#include <freax/module.h>
 #include "hid-ids.h"
 
 static int accutouch_input_mapping(struct hid_device *hdev,

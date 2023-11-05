@@ -16,11 +16,11 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <crypto/blowfish.h>
 
 static const u32 bf_pbox[16 + 2] = {

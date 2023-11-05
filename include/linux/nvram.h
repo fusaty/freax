@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NVRAM_H
-#define _LINUX_NVRAM_H
+#ifndef _freax_NVRAM_H
+#define _freax_NVRAM_H
 
-#include <linux/errno.h>
-#include <uapi/linux/nvram.h>
+#include <freax/errno.h>
+#include <uapi/freax/nvram.h>
 
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>
@@ -130,4 +130,4 @@ static inline ssize_t nvram_write(char *buf, size_t count, loff_t *ppos)
 	return nvram_write_bytes(buf, count, ppos);
 }
 
-#endif  /* _LINUX_NVRAM_H */
+#endif  /* _freax_NVRAM_H */

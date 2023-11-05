@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
 
 #include "spk_types.h"
 #include "speakup.h"
 #include "spk_priv.h"
 #include "serialio.h"
 
-#include <linux/serial_core.h>
-/* WARNING:  Do not change this to <linux/serial.h> without testing that
+#include <freax/serial_core.h>
+/* WARNING:  Do not change this to <freax/serial.h> without testing that
  * SERIAL_PORT_DFNS does get defined to the appropriate value.
  */
 #include <asm/serial.h>

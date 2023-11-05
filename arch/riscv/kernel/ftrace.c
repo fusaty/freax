@@ -5,9 +5,9 @@
  * Copyright (C) 2017 Andes Technology Corporation
  */
 
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/memory.h>
+#include <freax/ftrace.h>
+#include <freax/uaccess.h>
+#include <freax/memory.h>
 #include <asm/cacheflush.h>
 #include <asm/patch.h>
 

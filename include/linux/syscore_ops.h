@@ -5,10 +5,10 @@
  *  Copyright (C) 2011 Rafael J. Wysocki <rjw@sisk.pl>, Novell Inc.
  */
 
-#ifndef _LINUX_SYSCORE_OPS_H
-#define _LINUX_SYSCORE_OPS_H
+#ifndef _freax_SYSCORE_OPS_H
+#define _freax_SYSCORE_OPS_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct syscore_ops {
 	struct list_head node;

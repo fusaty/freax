@@ -10,15 +10,15 @@
  * Copyright (C) 2019-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _LINUX_SURFACE_AGGREGATOR_DEVICE_H
-#define _LINUX_SURFACE_AGGREGATOR_DEVICE_H
+#ifndef _freax_SURFACE_AGGREGATOR_DEVICE_H
+#define _freax_SURFACE_AGGREGATOR_DEVICE_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/controller.h>
 
 
 /* -- Surface System Aggregator Module bus. --------------------------------- */
@@ -630,4 +630,4 @@ static inline int ssam_device_notifier_unregister(struct ssam_device *sdev,
 					  !ssam_device_is_hot_removed(sdev));
 }
 
-#endif /* _LINUX_SURFACE_AGGREGATOR_DEVICE_H */
+#endif /* _freax_SURFACE_AGGREGATOR_DEVICE_H */

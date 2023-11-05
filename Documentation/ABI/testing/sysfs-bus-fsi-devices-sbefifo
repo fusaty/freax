@@ -1,6 +1,6 @@
 What:		/sys/bus/fsi/devices/XX.XX.00:06/sbefifoX/timeout
 KernelVersion:	5.15
-Contact:	eajames@linux.ibm.com
+Contact:	eajames@freax.ibm.com
 Description:
 		Indicates whether or not this SBE device has experienced a
 		timeout; i.e. the SBE did not respond within the time allotted

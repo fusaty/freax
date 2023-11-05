@@ -8,11 +8,11 @@
  * Author: Dong Aisheng <dong.aisheng@linaro.org>
  */
 
-#ifndef __LINUX_MFD_SYSCON_H__
-#define __LINUX_MFD_SYSCON_H__
+#ifndef __freax_MFD_SYSCON_H__
+#define __freax_MFD_SYSCON_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
+#include <freax/err.h>
+#include <freax/errno.h>
 
 struct device_node;
 
@@ -72,4 +72,4 @@ static inline struct regmap *syscon_regmap_lookup_by_phandle_optional(
 
 #endif
 
-#endif /* __LINUX_MFD_SYSCON_H__ */
+#endif /* __freax_MFD_SYSCON_H__ */

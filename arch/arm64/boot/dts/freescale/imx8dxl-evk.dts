@@ -42,12 +42,12 @@
 		 */
 
 		/* global autoconfigured region for contiguous allocations */
-		linux,cma {
+		freax,cma {
 			compatible = "shared-dma-pool";
 			reusable;
 			size = <0 0x14000000>;
 			alloc-ranges = <0 0x98000000 0 0x14000000>;
-			linux,cma-default;
+			freax,cma-default;
 		};
 	};
 

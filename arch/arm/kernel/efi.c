@@ -3,9 +3,9 @@
  * Copyright (C) 2015 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/screen_info.h>
+#include <freax/efi.h>
+#include <freax/memblock.h>
+#include <freax/screen_info.h>
 
 #include <asm/efi.h>
 #include <asm/mach/map.h>
@@ -81,7 +81,7 @@ int __init efi_create_mapping(struct mm_struct *mm, efi_memory_desc_t *md)
 static unsigned long __initdata cpu_state_table = EFI_INVALID_TABLE_ADDR;
 
 const efi_config_table_type_t efi_arch_tables[] __initconst = {
-	{LINUX_EFI_ARM_CPU_STATE_TABLE_GUID, &cpu_state_table},
+	{freax_EFI_ARM_CPU_STATE_TABLE_GUID, &cpu_state_table},
 	{}
 };
 

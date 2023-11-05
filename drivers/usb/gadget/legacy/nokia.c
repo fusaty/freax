@@ -12,9 +12,9 @@
  * Copyright (C) 2008 by Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
 
 #include "u_serial.h"
 #include "u_ether.h"

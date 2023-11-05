@@ -22,9 +22,9 @@
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>
 #include <scsi/scsi_dh.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #define RDAC_NAME "rdac"
 #define RDAC_RETRY_COUNT 5
@@ -34,7 +34,7 @@
  *
  * These struct definitions and the forming of the
  * mode page were taken from the LSI RDAC 2.4 GPL'd
- * driver, and then converted to Linux conventions.
+ * driver, and then converted to freax conventions.
  */
 #define RDAC_QUIESCENCE_TIME 20
 /*

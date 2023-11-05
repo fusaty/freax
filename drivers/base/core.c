@@ -8,29 +8,29 @@
  * Copyright (c) 2006 Novell, Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fwnode.h>
-#include <linux/init.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/netdevice.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/string_helpers.h>
-#include <linux/swiotlb.h>
-#include <linux/sysfs.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <freax/acpi.h>
+#include <freax/cpufreq.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fwnode.h>
+#include <freax/init.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kdev_t.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/blkdev.h>
+#include <freax/mutex.h>
+#include <freax/pm_runtime.h>
+#include <freax/netdevice.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/string_helpers.h>
+#include <freax/swiotlb.h>
+#include <freax/sysfs.h>
+#include <freax/dma-map-ops.h> /* for dma_default_coherent */
 
 #include "base.h"
 #include "physical_location.h"

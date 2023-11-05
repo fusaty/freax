@@ -14,8 +14,8 @@
 #ifndef CFE_API_H
 #define CFE_API_H
 
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/string.h>
 
 /*
  * Constants

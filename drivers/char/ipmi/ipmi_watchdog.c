@@ -13,30 +13,30 @@
 
 #define pr_fmt(fmt) "IPMI Watchdog: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/mutex.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/kdebug.h>
-#include <linux/kstrtox.h>
-#include <linux/rwsem.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/notifier.h>
-#include <linux/nmi.h>
-#include <linux/reboot.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/ipmi.h>
+#include <freax/ipmi_smi.h>
+#include <freax/mutex.h>
+#include <freax/watchdog.h>
+#include <freax/miscdevice.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/kdebug.h>
+#include <freax/kstrtox.h>
+#include <freax/rwsem.h>
+#include <freax/errno.h>
+#include <freax/uaccess.h>
+#include <freax/notifier.h>
+#include <freax/nmi.h>
+#include <freax/reboot.h>
+#include <freax/wait.h>
+#include <freax/poll.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/atomic.h>
+#include <freax/sched/signal.h>
 
 #ifdef CONFIG_X86
 /*

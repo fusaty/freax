@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * ethtool.h: Defines for Linux ethtool.
+ * ethtool.h: Defines for freax ethtool.
  *
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  * Copyright 2001 Jeff Garzik <jgarzik@pobox.com>
@@ -11,12 +11,12 @@
  * Portions Copyright (C) Sun Microsystems 2008
  */
 
-#ifndef _UAPI_LINUX_ETHTOOL_H
-#define _UAPI_LINUX_ETHTOOL_H
+#ifndef _UAPI_freax_ETHTOOL_H
+#define _UAPI_freax_ETHTOOL_H
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #ifndef __KERNEL__
 #include <limits.h> /* for INT_MAX */
@@ -135,14 +135,14 @@ static inline __u32 ethtool_cmd_speed(const struct ethtool_cmd *ep)
 }
 
 /* Device supports clause 22 register access to PHY or peripherals
- * using the interface defined in <linux/mii.h>.  This should not be
+ * using the interface defined in <freax/mii.h>.  This should not be
  * set if there are known to be no such peripherals present or if
  * the driver only emulates clause 22 registers for compatibility.
  */
 #define ETH_MDIO_SUPPORTS_C22	1
 
 /* Device supports clause 45 register access to PHY or peripherals
- * using the interface defined in <linux/mii.h> and <linux/mdio.h>.
+ * using the interface defined in <freax/mii.h> and <freax/mdio.h>.
  * This should not be set if there are known to be no such peripherals
  * present.
  */
@@ -180,7 +180,7 @@ static inline __u32 ethtool_cmd_speed(const struct ethtool_cmd *ep)
  *	command, in bytes
  *
  * Users can use the %ETHTOOL_GSSET_INFO command to get the number of
- * strings in any string set (from Linux 2.6.34).
+ * strings in any string set (from freax 2.6.34).
  */
 struct ethtool_drvinfo {
 	__u32	cmd;
@@ -2205,4 +2205,4 @@ struct ethtool_link_settings {
 	 * __u32 map_lp_advertising[link_mode_masks_nwords];
 	 */
 };
-#endif /* _UAPI_LINUX_ETHTOOL_H */
+#endif /* _UAPI_freax_ETHTOOL_H */

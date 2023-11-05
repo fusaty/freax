@@ -4,18 +4,18 @@
  * Author:  Amelie Delaunay <amelie.delaunay@st.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <freax/bcd.h>
+#include <freax/clk.h>
+#include <freax/errno.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
 
 #define DRIVER_NAME "stm32_rtc"
 

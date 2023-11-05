@@ -9,9 +9,9 @@
 #ifndef __VSP1_H__
 #define __VSP1_H__
 
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-device.h>

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * SM4 common functions for Crypto Extensions
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 void sm4_ce_expand_key(const u8 *key, u32 *rkey_enc, u32 *rkey_dec,

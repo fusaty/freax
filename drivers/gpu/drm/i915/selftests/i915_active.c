@@ -4,8 +4,8 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/kref.h>
-#include <linux/string_helpers.h>
+#include <freax/kref.h>
+#include <freax/string_helpers.h>
 
 #include "gem/i915_gem_pm.h"
 #include "gt/intel_gt.h"

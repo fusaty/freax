@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2020 Remi Pommarel <repk@triplefau.lt>
  */
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/bitfield.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/platform_device.h>
+#include <freax/bitfield.h>
 #include <dt-bindings/phy/phy.h>
 
 #define MESON_PCIE_REG0 0x00

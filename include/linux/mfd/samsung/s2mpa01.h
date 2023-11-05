@@ -4,8 +4,8 @@
  *		http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S2MPA01_H
-#define __LINUX_MFD_S2MPA01_H
+#ifndef __freax_MFD_S2MPA01_H
+#define __freax_MFD_S2MPA01_H
 
 /* S2MPA01 registers */
 enum s2mpa01_reg {
@@ -172,4 +172,4 @@ enum s2mpa01_regulators {
 #define S2MPA01_BUCK4_RAMP_EN_SHIFT	0
 #define S2MPA01_PMIC_EN_SHIFT	6
 
-#endif /*__LINUX_MFD_S2MPA01_H */
+#endif /*__freax_MFD_S2MPA01_H */

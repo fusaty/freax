@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* drivers/atm/idt77105.c - IDT77105 (PHY) driver */
  
-/* Written 1999 by Greg Banks, NEC Australia <gnb@linuxfan.com>. Based on suni.c */
+/* Written 1999 by Greg Banks, NEC Australia <gnb@freaxfan.com>. Based on suni.c */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/atm_idt77105.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/atmdev.h>
+#include <freax/sonet.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/capability.h>
+#include <freax/atm_idt77105.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "idt77105.h"
 

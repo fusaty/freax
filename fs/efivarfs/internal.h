@@ -6,8 +6,8 @@
 #ifndef EFIVAR_FS_INTERNAL_H
 #define EFIVAR_FS_INTERNAL_H
 
-#include <linux/list.h>
-#include <linux/efi.h>
+#include <freax/list.h>
+#include <freax/efi.h>
 
 struct efivarfs_mount_opts {
 	kuid_t uid;

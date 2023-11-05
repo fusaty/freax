@@ -2,7 +2,7 @@
 PINCTRL (PIN CONTROL) subsystem
 ===============================
 
-This document outlines the pin control subsystem in Linux
+This document outlines the pin control subsystem in freax
 
 This subsystem deals with:
 
@@ -59,7 +59,7 @@ this in our driver:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/pinctrl.h>
+	#include <freax/pinctrl/pinctrl.h>
 
 	const struct pinctrl_pin_desc foo_pins[] = {
 		PINCTRL_PIN(0, "A8"),
@@ -135,7 +135,7 @@ some generic ``pinctrl_ops`` like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/pinctrl.h>
+	#include <freax/pinctrl/pinctrl.h>
 
 	static const unsigned int spi0_pins[] = { 0, 8, 16, 24 };
 	static const unsigned int i2c0_pins[] = { 24, 25 };
@@ -207,8 +207,8 @@ configuration in the pin controller ops like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/pinconf.h>
-	#include <linux/pinctrl/pinctrl.h>
+	#include <freax/pinctrl/pinconf.h>
+	#include <freax/pinctrl/pinctrl.h>
 
 	#include "platform_x_pindefs.h"
 
@@ -284,9 +284,9 @@ like this:
 
 .. code-block:: c
 
-	#include <linux/gpio/driver.h>
+	#include <freax/gpio/driver.h>
 
-	#include <linux/pinctrl/pinctrl.h>
+	#include <freax/pinctrl/pinctrl.h>
 
 	struct gpio_chip chip_a;
 	struct gpio_chip chip_b;
@@ -580,8 +580,8 @@ group of pins would work something like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/pinctrl.h>
-	#include <linux/pinctrl/pinmux.h>
+	#include <freax/pinctrl/pinctrl.h>
+	#include <freax/pinctrl/pinmux.h>
 
 	static const unsigned int spi0_0_pins[] = { 0, 8, 16, 24 };
 	static const unsigned int spi0_1_pins[] = { 38, 46, 54, 62 };
@@ -697,7 +697,7 @@ Pin control interaction with the GPIO subsystem
 ===============================================
 
 Note that the following implies that the use case is to use a certain pin
-from the Linux kernel using the API in ``<linux/gpio/consumer.h>`` with gpiod_get()
+from the freax kernel using the API in ``<freax/gpio/consumer.h>`` with gpiod_get()
 and similar functions. There are cases where you may be using something
 that your datasheet calls "GPIO mode", but actually is just an electrical
 configuration for a certain device. See the section below named
@@ -749,7 +749,7 @@ is taken to mean different things than what the kernel does, the developer
 may be confused by a datasheet talking about a pin being possible to set
 into "GPIO mode". It appears that what hardware engineers mean with
 "GPIO mode" is not necessarily the use case that is implied in the kernel
-interface ``<linux/gpio/consumer.h>``: a pin that you grab from kernel code and then
+interface ``<freax/gpio/consumer.h>``: a pin that you grab from kernel code and then
 either listen for input or drive high/low to assert/deassert some
 external line.
 
@@ -844,7 +844,7 @@ module rather than the GPIO HW module.
 Electrical properties of the pin such as biasing and drive strength
 may be placed at some pin-specific register in all cases or as part
 of the GPIO register in case (B) especially. This doesn't mean that such
-properties necessarily pertain to what the Linux kernel calls "GPIO".
+properties necessarily pertain to what the freax kernel calls "GPIO".
 
 Example: a pin is usually muxed in to be used as a UART TX line. But during
 system sleep, we need to put this pin into "GPIO mode" and ground it.
@@ -859,8 +859,8 @@ wake up and maybe even gpiod_get() / gpiod_put() as part of this cycle. This
 all gets very complicated.
 
 The solution is to not think that what the datasheet calls "GPIO mode"
-has to be handled by the ``<linux/gpio/consumer.h>`` interface. Instead view this as
-a certain pin config setting. Look in e.g. ``<linux/pinctrl/pinconf-generic.h>``
+has to be handled by the ``<freax/gpio/consumer.h>`` interface. Instead view this as
+a certain pin config setting. Look in e.g. ``<freax/pinctrl/pinconf-generic.h>``
 and you find this in the documentation:
 
   PIN_CONFIG_OUTPUT:
@@ -873,7 +873,7 @@ driver may look like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/consumer.h>
+	#include <freax/pinctrl/consumer.h>
 
 	struct pinctrl          *pinctrl;
 	struct pinctrl_state    *pins_default;
@@ -927,7 +927,7 @@ GPIO subsystem. It is just an electrical configuration used by that device
 when going to sleep, it might imply that the pin is set into something the
 datasheet calls "GPIO mode", but that is not the point: it is still used
 by that UART device to control the pins that pertain to that very UART
-driver, putting them into modes needed by the UART. GPIO in the Linux
+driver, putting them into modes needed by the UART. GPIO in the freax
 kernel sense are just some 1-bit line, and is a different use case.
 
 How the registers are poked to attain the push or pull, and output low
@@ -956,7 +956,7 @@ and spi on the second function mapping:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/machine.h>
+	#include <freax/pinctrl/machine.h>
 
 	static const struct pinctrl_map mapping[] __initconst = {
 		{
@@ -1190,7 +1190,7 @@ default state like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/consumer.h>
+	#include <freax/pinctrl/consumer.h>
 
 	struct foo_state {
 	struct pinctrl *p;
@@ -1286,8 +1286,8 @@ So say that your driver is fetching its resources like this:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/consumer.h>
-	#include <linux/gpio/consumer.h>
+	#include <freax/pinctrl/consumer.h>
+	#include <freax/gpio/consumer.h>
 
 	struct pinctrl *pinctrl;
 	struct gpio_desc *gpio;
@@ -1372,7 +1372,7 @@ on the pins defined by group B:
 
 .. code-block:: c
 
-	#include <linux/pinctrl/consumer.h>
+	#include <freax/pinctrl/consumer.h>
 
 	struct pinctrl *p;
 	struct pinctrl_state *s1, *s2;

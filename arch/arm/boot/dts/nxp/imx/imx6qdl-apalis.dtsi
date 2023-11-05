@@ -45,7 +45,7 @@
 			debounce-interval = <10>;
 			gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
 			label = "Wake-Up";
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};

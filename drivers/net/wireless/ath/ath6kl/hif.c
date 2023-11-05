@@ -16,7 +16,7 @@
  */
 #include "hif.h"
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include "core.h"
 #include "target.h"

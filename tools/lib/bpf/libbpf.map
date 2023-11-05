@@ -117,7 +117,7 @@ LIBBPF_0.0.6 {
 		bpf_program__get_expected_attach_type;
 		bpf_program__get_type;
 		btf__find_by_name_kind;
-		libbpf_find_vmlinux_btf_id;
+		libbpf_find_vmfreax_btf_id;
 } LIBBPF_0.0.5;
 
 LIBBPF_0.0.7 {
@@ -280,7 +280,7 @@ LIBBPF_0.5.0 {
 		btf__load_from_kernel_by_id_split;
 		btf__load_into_kernel;
 		btf__load_module_btf;
-		btf__load_vmlinux_btf;
+		btf__load_vmfreax_btf;
 		btf_dump__dump_type_data;
 		libbpf_set_strict_mode;
 } LIBBPF_0.4.0;

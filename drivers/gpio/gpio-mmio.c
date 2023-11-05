@@ -40,25 +40,25 @@ o        `                     ~~~~\___/~~~~    ` controller in FPGA is ,.`
  *               `.......````.```
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/log2.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
 
 #include "gpiolib.h"
 

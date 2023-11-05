@@ -5,17 +5,17 @@
  * Copyright (c) 2012 Trond Myklebust <Trond.Myklebust@netapp.com>
  *
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/bc_xprt.h>
+#include <freax/nfs.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_fs.h>
+#include <freax/module.h>
 
 #include "nfs4_fs.h"
 #include "internal.h"

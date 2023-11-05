@@ -19,24 +19,24 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
-#include <linux/can/dev.h>
+#include <freax/can/dev.h>
 
 #include "c_can.h"
 

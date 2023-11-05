@@ -10,16 +10,16 @@
 #ifndef _HELLCREEK_H_
 #define _HELLCREEK_H_
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
-#include <linux/platform_data/hirschmann-hellcreek.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/leds.h>
+#include <freax/platform_data/hirschmann-hellcreek.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/timecounter.h>
 #include <net/dsa.h>
 #include <net/pkt_sched.h>
 

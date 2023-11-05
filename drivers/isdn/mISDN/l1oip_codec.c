@@ -34,9 +34,9 @@
 
 */
 
-#include <linux/vmalloc.h>
-#include <linux/mISDNif.h>
-#include <linux/in.h>
+#include <freax/vmalloc.h>
+#include <freax/mISDNif.h>
+#include <freax/in.h>
 #include "core.h"
 #include "l1oip.h"
 

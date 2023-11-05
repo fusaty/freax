@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/devlink.yaml */
 /* YNL-GEN user header */
 
-#ifndef _LINUX_DEVLINK_GEN_H
-#define _LINUX_DEVLINK_GEN_H
+#ifndef _freax_DEVLINK_GEN_H
+#define _freax_DEVLINK_GEN_H
 
 #include <stdlib.h>
 #include <string.h>
-#include <linux/types.h>
-#include <linux/netlink.h>
-#include <linux/devlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
+#include <freax/devlink.h>
 
 struct ynl_sock;
 
@@ -5252,4 +5252,4 @@ devlink_selftests_run_req_set_selftests_flash(struct devlink_selftests_run_req *
 int devlink_selftests_run(struct ynl_sock *ys,
 			  struct devlink_selftests_run_req *req);
 
-#endif /* _LINUX_DEVLINK_GEN_H */
+#endif /* _freax_DEVLINK_GEN_H */

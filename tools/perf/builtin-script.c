@@ -35,11 +35,11 @@
 #include "ui/ui.h"
 #include "print_binary.h"
 #include "archinsn.h"
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/bitmap.h>
+#include <freax/kernel.h>
+#include <freax/stringify.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 #include <sys/utsname.h>
 #include "asm/bug.h"
 #include "util/mem-events.h"
@@ -55,14 +55,14 @@
 #include <unistd.h>
 #include <subcmd/pager.h>
 #include <perf/evlist.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #include "util/dlfilter.h"
 #include "util/record.h"
 #include "util/util.h"
 #include "util/cgroup.h"
 #include "perf.h"
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>
 #endif
@@ -3886,8 +3886,8 @@ int cmd_script(int argc, const char **argv)
 		   "do various checks like samples ordering and lost events"),
 	OPT_BOOLEAN(0, "header", &header, "Show data header."),
 	OPT_BOOLEAN(0, "header-only", &header_only, "Show only data header."),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('G', "hide-call-graph", &no_callchain,
@@ -3984,8 +3984,8 @@ int cmd_script(int argc, const char **argv)
 	OPT_STRING(0, "guestmount", &symbol_conf.guestmount, "directory",
 		   "guest mount directory under which every guest os"
 		   " instance has a subdir"),
-	OPT_STRING(0, "guestvmlinux", &symbol_conf.default_guest_vmlinux_name,
-		   "file", "file saving guest os vmlinux"),
+	OPT_STRING(0, "guestvmfreax", &symbol_conf.default_guest_vmfreax_name,
+		   "file", "file saving guest os vmfreax"),
 	OPT_STRING(0, "guestkallsyms", &symbol_conf.default_guest_kallsyms,
 		   "file", "file saving guest os /proc/kallsyms"),
 	OPT_STRING(0, "guestmodules", &symbol_conf.default_guest_modules,
@@ -4015,7 +4015,7 @@ int cmd_script(int argc, const char **argv)
 			     PARSE_OPT_STOP_AT_NON_OPTION);
 
 	if (symbol_conf.guestmount ||
-	    symbol_conf.default_guest_vmlinux_name ||
+	    symbol_conf.default_guest_vmfreax_name ||
 	    symbol_conf.default_guest_kallsyms ||
 	    symbol_conf.default_guest_modules ||
 	    symbol_conf.guest_code) {

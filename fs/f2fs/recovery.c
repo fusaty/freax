@@ -6,9 +6,9 @@
  *             http://www.samsung.com/
  */
 #include <asm/unaligned.h>
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/sched/mm.h>
+#include <freax/fs.h>
+#include <freax/f2fs_fs.h>
+#include <freax/sched/mm.h>
 #include "f2fs.h"
 #include "node.h"
 #include "segment.h"

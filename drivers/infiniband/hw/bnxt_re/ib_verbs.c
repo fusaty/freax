@@ -36,11 +36,11 @@
  * Description: IB Verbs interpreter
  */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
 #include <net/addrconf.h>
 
 #include <rdma/ib_verbs.h>

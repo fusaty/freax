@@ -9,7 +9,7 @@ a packet.
 Basic sk_buff geometry
 ----------------------
 
-.. kernel-doc:: include/linux/skbuff.h
+.. kernel-doc:: include/freax/skbuff.h
    :doc: Basic sk_buff geometry
 
 Shared skbs and skb clones
@@ -27,11 +27,11 @@ packet data (i.e. clones).
 dataref and headerless skbs
 ---------------------------
 
-.. kernel-doc:: include/linux/skbuff.h
+.. kernel-doc:: include/freax/skbuff.h
    :doc: dataref and headerless skbs
 
 Checksum information
 --------------------
 
-.. kernel-doc:: include/linux/skbuff.h
+.. kernel-doc:: include/freax/skbuff.h
    :doc: skb checksums

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_BITOPS_H_
-#define _TOOLS_LINUX_BITOPS_H_
+#ifndef _TOOLS_freax_BITOPS_H_
+#define _TOOLS_freax_BITOPS_H_
 
 #include <asm/types.h>
 #include <limits.h>
@@ -11,8 +11,8 @@
 #ifndef BITS_PER_LONG
 # define BITS_PER_LONG __WORDSIZE
 #endif
-#include <linux/bits.h>
-#include <linux/compiler.h>
+#include <freax/bits.h>
+#include <freax/compiler.h>
 
 #define BITS_PER_TYPE(type)	(sizeof(type) * BITS_PER_BYTE)
 #define BITS_TO_LONGS(nr)	DIV_ROUND_UP(nr, BITS_PER_TYPE(long))

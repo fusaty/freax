@@ -9,14 +9,14 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kdb.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/kdb.h>
+#include <freax/kgdb.h>
+#include <freax/smp.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
 #include "kdb_private.h"
 
 /*

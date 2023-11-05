@@ -1,13 +1,13 @@
 /*
  * Defines, structures, APIs for edac_pci and edac_pci_sysfs
  *
- * (C) 2007 Linux Networx (http://lnxi.com)
+ * (C) 2007 freax Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written by Thayne Harbaugh
  * Based on work by Dan Hollis <goemon at anime dot net> and others.
- *	http://www.anime.net/~goemon/linux-ecc/
+ *	http://www.anime.net/~goemon/freax-ecc/
  *
  * NMI handling support added by
  *     Dave Peterson <dsp@llnl.gov> <dave_peterson@pobox.com>
@@ -22,14 +22,14 @@
 #ifndef _EDAC_PCI_H_
 #define _EDAC_PCI_H_
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/edac.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/edac.h>
+#include <freax/kobject.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #ifdef CONFIG_PCI
 

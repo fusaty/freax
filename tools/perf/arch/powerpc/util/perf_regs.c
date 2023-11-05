@@ -2,7 +2,7 @@
 #include <errno.h>
 #include <string.h>
 #include <regex.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 #include "perf_regs.h"
 #include "../../../util/perf_regs.h"
@@ -12,7 +12,7 @@
 #include "../../../perf-sys.h"
 #include "utils_header.h"
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #define PVR_POWER9		0x004E
 #define PVR_POWER10		0x0080

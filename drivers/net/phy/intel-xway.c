@@ -4,11 +4,11 @@
  * Copyright (C) 2016 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/phy.h>
+#include <freax/of.h>
+#include <freax/bitfield.h>
 
 #define XWAY_MDIO_MIICTRL		0x17	/* mii control */
 #define XWAY_MDIO_IMASK			0x19	/* interrupt mask */

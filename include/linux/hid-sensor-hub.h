@@ -6,10 +6,10 @@
 #ifndef _HID_SENSORS_HUB_H
 #define _HID_SENSORS_HUB_H
 
-#include <linux/hid.h>
-#include <linux/hid-sensor-ids.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <freax/hid.h>
+#include <freax/hid-sensor-ids.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
 
 /**
  * struct hid_sensor_hub_attribute_info - Attribute info

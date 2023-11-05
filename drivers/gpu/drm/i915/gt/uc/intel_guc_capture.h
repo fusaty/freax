@@ -6,7 +6,7 @@
 #ifndef _INTEL_GUC_CAPTURE_H
 #define _INTEL_GUC_CAPTURE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_error_state_buf;
 struct guc_gt_system_info;

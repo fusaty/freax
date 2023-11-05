@@ -6,15 +6,15 @@
  *
  */
 
-#include <linux/litex.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <freax/litex.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/reboot.h>
 
 /* reset register located at the base address */
 #define RESET_REG_OFF           0x00

@@ -4,7 +4,7 @@
 #ifndef _ICE_VLAN_H_
 #define _ICE_VLAN_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "ice_type.h"
 
 struct ice_vlan {

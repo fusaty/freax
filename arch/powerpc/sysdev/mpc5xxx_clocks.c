@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/property.h>
 
 #include <asm/mpc5xxx.h>
 

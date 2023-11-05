@@ -72,7 +72,7 @@ examples:
             offset = <0x08>;
             mask = <0x01>;
             label = "versatile:0";
-            linux,default-trigger = "heartbeat";
+            freax,default-trigger = "heartbeat";
             default-state = "on";
         };
         led@8,1 {

@@ -4,13 +4,13 @@
  *   Copyright (c) 2006 by Matthias König <mk@phasorlab.de>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/parport.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/parport.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

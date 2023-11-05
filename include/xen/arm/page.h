@@ -4,10 +4,10 @@
 
 #include <asm/page.h>
 
-#include <linux/pfn.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/pgtable.h>
+#include <freax/pfn.h>
+#include <freax/types.h>
+#include <freax/dma-mapping.h>
+#include <freax/pgtable.h>
 
 #include <xen/xen.h>
 #include <xen/interface/grant_table.h>
@@ -33,7 +33,7 @@ typedef struct xpaddr {
  * The pseudo-physical frame (pfn) used in all the helpers is always based
  * on Xen page granularity (i.e 4KB).
  *
- * A Linux page may be split across multiple non-contiguous Xen page so we
+ * A freax page may be split across multiple non-contiguous Xen page so we
  * have to keep track with frame based on 4KB page granularity.
  *
  * PV drivers should never make a direct usage of those helpers (particularly

@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ELFCORE_H
-#define _LINUX_ELFCORE_H
+#ifndef _freax_ELFCORE_H
+#define _freax_ELFCORE_H
 
-#include <linux/user.h>
-#include <linux/bug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/types.h>
-#include <linux/signal.h>
-#include <linux/time.h>
-#include <linux/ptrace.h>
-#include <linux/fs.h>
-#include <linux/elf.h>
+#include <freax/user.h>
+#include <freax/bug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/types.h>
+#include <freax/signal.h>
+#include <freax/time.h>
+#include <freax/ptrace.h>
+#include <freax/fs.h>
+#include <freax/elf.h>
 
 struct coredump_params;
 
@@ -24,9 +24,9 @@ struct elf_siginfo
 /*
  * Definitions to generate Intel SVR4-like core files.
  * These mostly have the same names as the SVR4 types with "elf_"
- * tacked on the front to prevent clashes with linux definitions,
+ * tacked on the front to prevent clashes with freax definitions,
  * and the typedef forms have been avoided.  This is mostly like
- * the SVR4 structure, but more Linuxy, with things that Linux does
+ * the SVR4 structure, but more freaxy, with things that freax does
  * not support and which gdb doesn't really use excluded.
  */
 struct elf_prstatus_common
@@ -133,4 +133,4 @@ static inline size_t elf_core_extra_data_size(struct coredump_params *cprm)
 }
 #endif /* CONFIG_ARCH_BINFMT_ELF_EXTRA_PHDRS */
 
-#endif /* _LINUX_ELFCORE_H */
+#endif /* _freax_ELFCORE_H */

@@ -8,27 +8,27 @@
  *  Copyright (C) 2014 Codethink Limited
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/cache.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/sh_eth.h>
-#include <linux/of_mdio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/mdio-bitbang.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/cache.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/sh_eth.h>
+#include <freax/of_mdio.h>
 
 #include "sh_eth.h"
 

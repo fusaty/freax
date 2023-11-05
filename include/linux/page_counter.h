@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PAGE_COUNTER_H
-#define _LINUX_PAGE_COUNTER_H
+#ifndef _freax_PAGE_COUNTER_H
+#define _freax_PAGE_COUNTER_H
 
-#include <linux/atomic.h>
-#include <linux/cache.h>
-#include <linux/kernel.h>
+#include <freax/atomic.h>
+#include <freax/cache.h>
+#include <freax/kernel.h>
 #include <asm/page.h>
 
 struct page_counter {
@@ -81,4 +81,4 @@ static inline void page_counter_reset_watermark(struct page_counter *counter)
 	counter->watermark = page_counter_read(counter);
 }
 
-#endif /* _LINUX_PAGE_COUNTER_H */
+#endif /* _freax_PAGE_COUNTER_H */

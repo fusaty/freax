@@ -36,15 +36,15 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 #include <net/addrconf.h>
-#include <linux/security.h>
+#include <freax/security.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

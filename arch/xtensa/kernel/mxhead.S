@@ -13,7 +13,7 @@
  * Pete Delaney <piet@tensilica.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #include <asm/cacheasm.h>
 #include <asm/initialize_mmu.h>
@@ -50,7 +50,7 @@ _SetupOCD:
 	rsync
 
 _SetupMMU:
-#ifdef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+#ifdef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	initialize_mmu
 #endif
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/block/floppy.c
+ *  freax/drivers/block/floppy.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1993, 1994  Alain Knaff
@@ -163,35 +163,35 @@
 
 /* do print messages for unexpected interrupts */
 static int print_unex = 1;
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/fdreg.h>
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>	/* CMOS defines */
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/async.h>
-#include <linux/compat.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/fdreg.h>
+#include <freax/fd.h>
+#include <freax/hdreg.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/bio.h>
+#include <freax/string.h>
+#include <freax/jiffies.h>
+#include <freax/fcntl.h>
+#include <freax/delay.h>
+#include <freax/mc146818rtc.h>	/* CMOS defines */
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/major.h>
+#include <freax/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/async.h>
+#include <freax/compat.h>
 
 /*
  * PS/2 floppies have much slower step rates than regular floppies.
@@ -251,10 +251,10 @@ static int allowed_drive_mask = 0x33;
 
 static int irqdma_allocated;
 
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/cdrom.h>	/* for the compatibility eject ioctl */
-#include <linux/completion.h>
+#include <freax/blk-mq.h>
+#include <freax/blkpg.h>
+#include <freax/cdrom.h>	/* for the compatibility eject ioctl */
+#include <freax/completion.h>
 
 static LIST_HEAD(floppy_reqs);
 static struct request *current_req;

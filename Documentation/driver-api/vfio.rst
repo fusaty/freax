@@ -373,7 +373,7 @@ IOMMUFD IOAS/HWPT to enable userspace DMA::
 VFIO User API
 -------------------------------------------------------------------------------
 
-Please see include/uapi/linux/vfio.h for complete API documentation.
+Please see include/uapi/freax/vfio.h for complete API documentation.
 
 VFIO bus driver API
 -------------------------------------------------------------------------------

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2018 Intel Corporation. All rights reserved. */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/ndctl.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/cred.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/ndctl.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/cred.h>
+#include <freax/key.h>
+#include <freax/key-type.h>
 #include <keys/user-type.h>
 #include <keys/encrypted-type.h>
 #include "nd-core.h"

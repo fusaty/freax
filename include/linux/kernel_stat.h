@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KERNEL_STAT_H
-#define _LINUX_KERNEL_STAT_H
+#ifndef _freax_KERNEL_STAT_H
+#define _freax_KERNEL_STAT_H
 
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/percpu.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/vtime.h>
+#include <freax/smp.h>
+#include <freax/threads.h>
+#include <freax/percpu.h>
+#include <freax/cpumask.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/vtime.h>
 #include <asm/irq.h>
 
 /*
@@ -134,4 +134,4 @@ extern void account_idle_ticks(unsigned long ticks);
 extern void __account_forceidle_time(struct task_struct *tsk, u64 delta);
 #endif
 
-#endif /* _LINUX_KERNEL_STAT_H */
+#endif /* _freax_KERNEL_STAT_H */

@@ -54,7 +54,7 @@ ifdef CONFIG_MIPS_DISABLE_VDSO
 endif
 
 # VDSO linker flags.
-ldflags-y := -Bsymbolic --no-undefined -soname=linux-vdso.so.1 \
+ldflags-y := -Bsymbolic --no-undefined -soname=freax-vdso.so.1 \
 	$(filter -E%,$(KBUILD_CFLAGS)) -shared \
 	-G 0 --eh-frame-hdr --hash-style=sysv --build-id=sha1 -T
 

@@ -4,18 +4,18 @@
  * (C) 2008 Korolev Alexey <akorolev@infradead.org>
  * (C) 2008 Vasiliy Leonenko <vasiliy.leonenko@gmail.com>
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
 
-#include <linux/mtd/xip.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/pfow.h>
-#include <linux/mtd/qinfo.h>
+#include <freax/mtd/xip.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/pfow.h>
+#include <freax/mtd/qinfo.h>
 
 static int lpddr_chip_setup(struct map_info *map, struct lpddr_private *lpddr);
 struct mtd_info *lpddr_probe(struct map_info *map);

@@ -10,10 +10,10 @@
  *	Neil Brown <neilb@suse.de>
  *	Jeff Garzik <jeff@garzik.org>
  */
-#include <linux/rculist.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/async_tx.h>
+#include <freax/rculist.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/async_tx.h>
 
 #ifdef CONFIG_DMA_ENGINE
 static int __init async_tx_init(void)

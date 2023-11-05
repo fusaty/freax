@@ -7,8 +7,8 @@
 #ifndef _KERNEL_DMA_DIRECT_H
 #define _KERNEL_DMA_DIRECT_H
 
-#include <linux/dma-direct.h>
-#include <linux/memremap.h>
+#include <freax/dma-direct.h>
+#include <freax/memremap.h>
 
 int dma_direct_get_sgtable(struct device *dev, struct sg_table *sgt,
 		void *cpu_addr, dma_addr_t dma_addr, size_t size,

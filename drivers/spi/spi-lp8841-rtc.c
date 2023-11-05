@@ -10,12 +10,12 @@
  * Copyright (C) 2002 David McCullough
  * Copyright (C) 2003 - 2007 Paul Mundt
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
 
 #define DRIVER_NAME	"spi_lp8841_rtc"
 

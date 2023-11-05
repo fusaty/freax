@@ -9,10 +9,10 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
 
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>

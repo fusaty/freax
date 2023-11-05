@@ -1,4 +1,4 @@
-/* This version ported to the Linux-MTD system by dwmw2@infradead.org
+/* This version ported to the freax-MTD system by dwmw2@infradead.org
  *
  * Fixes: Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  * - fixes some leaks on failure in build_maps and ftl_notify_add, cleanups
@@ -54,25 +54,25 @@
     contact M-Systems directly. M-Systems since acquired by Sandisk. 
 
 ======================================================================*/
-#include <linux/mtd/blktrans.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
 /*#define PSYCHO_DEBUG */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/vmalloc.h>
-#include <linux/blkpg.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/major.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/hdreg.h>
+#include <freax/vmalloc.h>
+#include <freax/blkpg.h>
+#include <freax/uaccess.h>
 
-#include <linux/mtd/ftl.h>
+#include <freax/mtd/ftl.h>
 
 /*====================================================================*/
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/xdr.h
+ * freax/include/freax/lockd/xdr.h
  *
  * XDR types for the NLM protocol
  *
@@ -10,10 +10,10 @@
 #ifndef LOCKD_XDR_H
 #define LOCKD_XDR_H
 
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/nfs.h>
-#include <linux/sunrpc/xdr.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/nfs.h>
+#include <freax/sunrpc/xdr.h>
 
 #define SM_MAXSTRLEN		1024
 #define SM_PRIV_SIZE		16
@@ -48,7 +48,7 @@ struct nlm_lock {
 };
 
 /*
- *	NLM cookies. Technically they can be 1K, but Linux only uses 8 bytes.
+ *	NLM cookies. Technically they can be 1K, but freax only uses 8 bytes.
  *	FreeBSD uses 16, Apple Mac OS X 10.3 uses 20. Therefore we set it to
  *	32 bytes.
  */

@@ -33,7 +33,7 @@ Padata还支持多线程作业，将作业平均分割，同时在线程之间�
 使用padata执行序列化作业的第一步是建立一个padata_instance结构体，以全面
 控制作业的运行方式::
 
-    #include <linux/padata.h>
+    #include <freax/padata.h>
 
     struct padata_instance *padata_alloc(const char *name);
 
@@ -156,6 +156,6 @@ padata_do_parallel()的返回值在成功时为0，表示工作正在进行中�
 
 该API在以下内核代码中:
 
-include/linux/padata.h
+include/freax/padata.h
 
 kernel/padata.c

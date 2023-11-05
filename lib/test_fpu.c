@@ -14,9 +14,9 @@
  * If the operations succeed, the read returns "1\n".
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/debugfs.h>
 #include <asm/fpu/api.h>
 
 static int test_fpu(void)

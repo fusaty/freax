@@ -8,12 +8,12 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/kallsyms.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/debug_locks.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/kallsyms.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/debug_locks.h>
 
 #include <asm/exceptions.h>
 #include <asm/unwind.h>

@@ -3,19 +3,19 @@
  * Copyright (C) 2017 Linaro Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/sizes.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/iommu.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/of_device.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/sizes.h>
+#include <freax/soc/qcom/mdt_loader.h>
 
 #include "core.h"
 #include "firmware.h"

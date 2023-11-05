@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2008 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/irqflags.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/hash.h>
-#include <linux/fs.h>
+#include <freax/kallsyms.h>
+#include <freax/seq_file.h>
+#include <freax/spinlock.h>
+#include <freax/irqflags.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/ftrace.h>
+#include <freax/hash.h>
+#include <freax/fs.h>
 #include <asm/local.h>
 
 #include "trace.h"

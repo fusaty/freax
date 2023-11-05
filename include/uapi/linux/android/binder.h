@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (C) 2008 Google, Inc.
  *
@@ -18,11 +18,11 @@
  *
  */
 
-#ifndef _UAPI_LINUX_BINDER_H
-#define _UAPI_LINUX_BINDER_H
+#ifndef _UAPI_freax_BINDER_H
+#define _UAPI_freax_BINDER_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 #define B_PACK_CHARS(c1, c2, c3, c4) \
 	((((c1)<<24)) | (((c2)<<16)) | (((c3)<<8)) | (c4))
@@ -550,5 +550,5 @@ enum binder_driver_command_protocol {
 	 */
 };
 
-#endif /* _UAPI_LINUX_BINDER_H */
+#endif /* _UAPI_freax_BINDER_H */
 

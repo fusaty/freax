@@ -8,16 +8,16 @@
  * Author: Chao Xie <xiechao.mail@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
 
 #define PHY_28NM_HSIC_CTRL			0x08
 #define PHY_28NM_HSIC_IMPCAL_CAL		0x18

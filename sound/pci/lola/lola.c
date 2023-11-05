@@ -5,14 +5,14 @@
  *  Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

@@ -7,10 +7,10 @@
  *
  * see Documentation/locking/lockdep-design.rst for more details.
  */
-#ifndef __LINUX_LOCKDEP_TYPES_H
-#define __LINUX_LOCKDEP_TYPES_H
+#ifndef __freax_LOCKDEP_TYPES_H
+#define __freax_LOCKDEP_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MAX_LOCKDEP_SUBCLASSES		8UL
 
@@ -214,4 +214,4 @@ struct pin_cookie { };
 
 #endif /* !LOCKDEP */
 
-#endif /* __LINUX_LOCKDEP_TYPES_H */
+#endif /* __freax_LOCKDEP_TYPES_H */

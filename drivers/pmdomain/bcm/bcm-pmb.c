@@ -5,12 +5,12 @@
  */
 
 #include <dt-bindings/soc/bcm-pmb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/reset/bcm63xx_pmb.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/reset/bcm63xx_pmb.h>
 
 #define BPCM_ID_REG					0x00
 #define BPCM_CAPABILITIES				0x04

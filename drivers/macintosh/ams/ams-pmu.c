@@ -2,15 +2,15 @@
 /*
  * Apple Motion Sensor driver (PMU variant)
  *
- * Copyright (C) 2006 Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006 Michael Hanselmann (freax-kernel@hansmi.ch)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
 
 #include "ams.h"
 

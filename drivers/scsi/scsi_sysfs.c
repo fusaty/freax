@@ -7,13 +7,13 @@
  * Created to pull SCSI mid layer sysfs routines into one file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/bsg.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/bsg.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

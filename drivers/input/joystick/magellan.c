@@ -4,14 +4,14 @@
  */
 
 /*
- * Magellan and Space Mouse 6dof controller driver for Linux
+ * Magellan and Space Mouse 6dof controller driver for freax
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"Magellan and SpaceMouse 6dof controller driver"
 

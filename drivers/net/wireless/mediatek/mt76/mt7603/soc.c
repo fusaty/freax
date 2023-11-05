@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include "mt7603.h"
 

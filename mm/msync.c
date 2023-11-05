@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/msync.c
+ *	freax/mm/msync.c
  *
  * Copyright (C) 1994-1999  Linus Torvalds
  */
@@ -8,12 +8,12 @@
 /*
  * The msync() system call.
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/file.h>
+#include <freax/syscalls.h>
+#include <freax/sched.h>
 
 /*
  * MS_SYNC syncs the entire file - including mappings.

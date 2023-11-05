@@ -12,8 +12,8 @@
  * Roberto Sassu <roberto.sassu@polito.it>
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
+#include <freax/export.h>
+#include <freax/string.h>
 #include "ecryptfs_format.h"
 
 u8 *ecryptfs_get_auth_tok_key(struct ecryptfs_auth_tok *auth_tok)

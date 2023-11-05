@@ -6,13 +6,13 @@
 #ifndef _NE_MISC_DEV_H_
 #define _NE_MISC_DEV_H_
 
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <freax/cpumask.h>
+#include <freax/list.h>
+#include <freax/miscdevice.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/wait.h>
 
 #include "ne_pci_dev.h"
 

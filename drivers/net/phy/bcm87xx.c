@@ -3,9 +3,9 @@
  * Copyright (C) 2011 - 2012 Cavium, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/phy.h>
+#include <freax/of.h>
 
 #define PHY_ID_BCM8706	0x0143bdc1
 #define PHY_ID_BCM8727	0x0143bff0

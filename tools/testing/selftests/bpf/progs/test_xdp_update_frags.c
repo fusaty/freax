@@ -4,8 +4,8 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
+#include <freax/bpf.h>
+#include <freax/if_ether.h>
 #include <bpf/bpf_helpers.h>
 
 int _version SEC("version") = 1;

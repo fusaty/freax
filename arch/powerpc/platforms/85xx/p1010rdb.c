@@ -5,12 +5,12 @@
  * Copyright 2011 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

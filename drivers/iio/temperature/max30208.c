@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * Copyright (c) Rajat Khandelwal <rajat.khandelwal@linux.intel.com>
+ * Copyright (c) Rajat Khandelwal <rajat.khandelwal@freax.intel.com>
  *
  * Maxim MAX30208 digital temperature sensor with 0.1°C accuracy
  * (7-bit I2C slave address (0x50 - 0x53))
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #define MAX30208_STATUS			0x00
 #define MAX30208_STATUS_TEMP_RDY	BIT(0)
@@ -247,6 +247,6 @@ static struct i2c_driver max30208_driver = {
 };
 module_i2c_driver(max30208_driver);
 
-MODULE_AUTHOR("Rajat Khandelwal <rajat.khandelwal@linux.intel.com>");
+MODULE_AUTHOR("Rajat Khandelwal <rajat.khandelwal@freax.intel.com>");
 MODULE_DESCRIPTION("Maxim MAX30208 digital temperature sensor");
 MODULE_LICENSE("GPL");

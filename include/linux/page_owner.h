@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PAGE_OWNER_H
-#define __LINUX_PAGE_OWNER_H
+#ifndef __freax_PAGE_OWNER_H
+#define __freax_PAGE_OWNER_H
 
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 
 #ifdef CONFIG_PAGE_OWNER
 extern struct static_key_false page_owner_inited;
@@ -73,4 +73,4 @@ static inline void dump_page_owner(const struct page *page)
 {
 }
 #endif /* CONFIG_PAGE_OWNER */
-#endif /* __LINUX_PAGE_OWNER_H */
+#endif /* __freax_PAGE_OWNER_H */

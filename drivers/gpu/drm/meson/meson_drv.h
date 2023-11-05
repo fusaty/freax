@@ -7,9 +7,9 @@
 #ifndef __MESON_DRV_H
 #define __MESON_DRV_H
 
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 struct drm_crtc;
 struct drm_device;

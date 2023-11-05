@@ -37,13 +37,13 @@
 			label = "bcm53xx:green:usb2-port1";
 			gpios = <&chipcommon 2 GPIO_ACTIVE_HIGH>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 		led-power {
 			label = "bcm53xx:green:power";
 			gpios = <&chipcommon 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-wan-green {
@@ -70,7 +70,7 @@
 			label = "bcm53xx:green:usb2-port2";
 			gpios = <&chipcommon 13 GPIO_ACTIVE_HIGH>;
 			trigger-sources = <&ohci_port2>, <&ehci_port2>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 	};
 
@@ -79,13 +79,13 @@
 
 		button-rfkill {
 			label = "WiFi";
-			linux,code = <KEY_RFKILL>;
+			freax,code = <KEY_RFKILL>;
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
 		};
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -103,7 +103,7 @@
 		};
 
 		partition-file-system {
-			linux,rootfs;
+			freax,rootfs;
 		};
 	};
 };

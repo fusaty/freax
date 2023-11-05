@@ -26,16 +26,16 @@
  *	fix: driver refuses to address self.
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/io.h>
+#include <freax/gpio/consumer.h>
 
 #include "i2c-iop3xx.h"
 

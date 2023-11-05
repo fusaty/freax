@@ -8,21 +8,21 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ip.h>
 #include <net/ipv6.h>
 #include <net/icmp.h>
 #include <net/udp.h>
 #include <net/tcp.h>
 #include <net/route.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_LOG.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_LOG.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/nf_log.h>
 
 static unsigned int

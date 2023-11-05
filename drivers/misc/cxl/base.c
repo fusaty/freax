@@ -3,12 +3,12 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/module.h>
-#include <linux/rcupdate.h>
+#include <freax/module.h>
+#include <freax/rcupdate.h>
 #include <asm/errno.h>
 #include <misc/cxl-base.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 #include "cxl.h"
 
 /* protected by rcu */

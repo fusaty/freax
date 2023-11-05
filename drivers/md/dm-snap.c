@@ -5,20 +5,20 @@
  * This file is released under the GPL.
  */
 
-#include <linux/blkdev.h>
-#include <linux/device-mapper.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/list_bl.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
-#include <linux/dm-kcopyd.h>
+#include <freax/blkdev.h>
+#include <freax/device-mapper.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kdev_t.h>
+#include <freax/list.h>
+#include <freax/list_bl.h>
+#include <freax/mempool.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/log2.h>
+#include <freax/dm-kcopyd.h>
 
 #include "dm.h"
 

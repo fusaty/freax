@@ -19,11 +19,11 @@
 #include <drm/drm_panel.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/media-bus-format.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/media-bus-format.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 #include "vc4_drv.h"
 #include "vc4_regs.h"
 

@@ -5,11 +5,11 @@
  * Copyright (C) 2018 Christoph Hellwig
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>
 #include <asm/softirq_stack.h>

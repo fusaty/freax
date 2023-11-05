@@ -3,11 +3,11 @@
  * NHI specific operations
  *
  * Copyright (C) 2019, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/suspend.h>
+#include <freax/delay.h>
+#include <freax/suspend.h>
 
 #include "nhi.h"
 #include "nhi_regs.h"

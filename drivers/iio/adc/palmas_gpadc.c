@@ -7,21 +7,21 @@
  * Author: Pradeep Goudagunta <pgoudagunta@nvidia.com>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/mfd/palmas.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/mfd/palmas.h>
+#include <freax/completion.h>
+#include <freax/of.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/machine.h>
+#include <freax/iio/driver.h>
 
 #define MOD_NAME "palmas-gpadc"
 #define PALMAS_ADC_CONVERSION_TIMEOUT	(msecs_to_jiffies(5000))

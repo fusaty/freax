@@ -7,16 +7,16 @@
  * Author: Daire McNamara <daire.mcnamara@microchip.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/pci-ecam.h>
+#include <freax/platform_device.h>
 
 #include "../pci.h"
 

@@ -6,14 +6,14 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-dirty-log.h>
-#include <linux/dm-region-hash.h>
+#include <freax/dm-dirty-log.h>
+#include <freax/dm-region-hash.h>
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/ctype.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 #include "dm.h"
 

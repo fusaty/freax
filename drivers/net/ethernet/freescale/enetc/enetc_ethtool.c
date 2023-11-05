@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2017-2019 NXP */
 
-#include <linux/ethtool_netlink.h>
-#include <linux/net_tstamp.h>
-#include <linux/module.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/net_tstamp.h>
+#include <freax/module.h>
 #include "enetc.h"
 
 static const u32 enetc_si_regs[] = {

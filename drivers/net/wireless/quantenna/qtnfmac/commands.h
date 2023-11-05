@@ -4,7 +4,7 @@
 #ifndef QLINK_COMMANDS_H_
 #define QLINK_COMMANDS_H_
 
-#include <linux/nl80211.h>
+#include <freax/nl80211.h>
 
 #include "core.h"
 #include "bus.h"

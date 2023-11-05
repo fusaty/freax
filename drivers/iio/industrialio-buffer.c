@@ -9,24 +9,24 @@
  * - Better memory allocation techniques?
  * - Alternative access techniques?
  */
-#include <linux/anon_inodes.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
+#include <freax/anon_inodes.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/sched/signal.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/iio-opaque.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/buffer_impl.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/buffer_impl.h>
 
 static const char * const iio_endian_prefix[] = {
 	[IIO_BE] = "be",

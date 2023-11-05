@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __ASM_SH_IOCTLS_H
 #define __ASM_SH_IOCTLS_H
 
@@ -58,7 +58,7 @@
 
 #define TIOCGSOFTCAR	_IOR('T', 25, unsigned int) /* 0x5419 */
 #define TIOCSSOFTCAR	_IOW('T', 26, unsigned int) /* 0x541A */
-#define TIOCLINUX	_IOW('T', 28, char) /* 0x541C */
+#define TIOCfreax	_IOW('T', 28, char) /* 0x541C */
 #define TIOCCONS	_IO('T', 29) /* 0x541D */
 #define TIOCGSERIAL	0x803C541E	/* _IOR('T', 30, struct serial_struct) 0x541E */
 #define TIOCSSERIAL	0x403C541F	/* _IOW('T', 31, struct serial_struct) 0x541F */

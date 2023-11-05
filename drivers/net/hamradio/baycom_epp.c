@@ -25,22 +25,22 @@
 
 /*****************************************************************************/
 
-#include <linux/crc-ccitt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/parport.h>
-#include <linux/if_arp.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
+#include <freax/crc-ccitt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
+#include <freax/fs.h>
+#include <freax/parport.h>
+#include <freax/if_arp.h>
+#include <freax/hdlcdrv.h>
+#include <freax/baycom.h>
+#include <freax/jiffies.h>
+#include <freax/random.h>
 #include <net/ax25.h> 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* --------------------------------------------------------------------- */
 
@@ -286,7 +286,7 @@ static inline void baycom_int_freq(struct baycom_state *bc)
 
 static char const eppconfig_path[] = "/usr/sbin/eppfpga";
 
-static char *envp[] = { "HOME=/", "TERM=linux", "PATH=/usr/bin:/bin", NULL };
+static char *envp[] = { "HOME=/", "TERM=freax", "PATH=/usr/bin:/bin", NULL };
 
 /* eppconfig: called during ifconfig up to configure the modem */
 static int eppconfig(struct baycom_state *bc)

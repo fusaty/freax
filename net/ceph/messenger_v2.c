@@ -5,25 +5,25 @@
  * Copyright (C) 2020 Ilya Dryomov <idryomov@gmail.com>
  */
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
 #include <crypto/utils.h>
-#include <linux/bvec.h>
-#include <linux/crc32c.h>
-#include <linux/net.h>
-#include <linux/scatterlist.h>
-#include <linux/socket.h>
-#include <linux/sched/mm.h>
+#include <freax/bvec.h>
+#include <freax/crc32c.h>
+#include <freax/net.h>
+#include <freax/scatterlist.h>
+#include <freax/socket.h>
+#include <freax/sched/mm.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/messenger.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/messenger.h>
 
 #include "crypto.h"  /* for CEPH_KEY_LEN and CEPH_MAX_CON_SECRET_LEN */
 

@@ -6,7 +6,7 @@
 #ifndef _CROS_KUNIT_UTIL_H_
 #define _CROS_KUNIT_UTIL_H_
 
-#include <linux/platform_data/cros_ec_proto.h>
+#include <freax/platform_data/cros_ec_proto.h>
 
 struct ec_xfer_mock {
 	struct list_head list;

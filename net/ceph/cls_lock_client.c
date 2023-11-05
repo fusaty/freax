@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 
-#include <linux/ceph/cls_lock_client.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/libceph.h>
+#include <freax/ceph/cls_lock_client.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/libceph.h>
 
 /**
  * ceph_cls_lock - grab rados lock for object

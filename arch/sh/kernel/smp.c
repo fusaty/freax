@@ -7,20 +7,20 @@
  * Copyright (C) 2002 - 2010 Paul Mundt
  * Copyright (C) 2006 - 2007 Akio Idehara
  */
-#include <linux/err.h>
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/hotplug.h>
-#include <linux/atomic.h>
-#include <linux/clockchips.h>
+#include <freax/err.h>
+#include <freax/cache.h>
+#include <freax/cpumask.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/hotplug.h>
+#include <freax/atomic.h>
+#include <freax/clockchips.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/smp.h>

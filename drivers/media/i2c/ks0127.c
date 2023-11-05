@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Video Capture Driver (Video for Linux 1/2)
+ * Video Capture Driver (Video for freax 1/2)
  * for the Matrox Marvel G200,G400 and Rainbow Runner-G series
  *
  * This module is an interface to the KS0127 video decoder chip.
@@ -20,14 +20,14 @@
  * V1.1 Gerard v.d. Horst  Added some debugoutput, reset the video-standard
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/i2c.h>
+#include <freax/videodev2.h>
+#include <freax/slab.h>
 #include <media/v4l2-device.h>
 #include "ks0127.h"
 

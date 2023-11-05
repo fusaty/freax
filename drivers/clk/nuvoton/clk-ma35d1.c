@@ -4,12 +4,12 @@
  * Author: Chi-Fang Li <cfli0@nuvoton.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 #include <dt-bindings/clock/nuvoton,ma35d1-clk.h>
 
 #include "clk-ma35d1.h"

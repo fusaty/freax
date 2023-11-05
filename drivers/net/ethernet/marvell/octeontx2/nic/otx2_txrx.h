@@ -8,9 +8,9 @@
 #ifndef OTX2_TXRX_H
 #define OTX2_TXRX_H
 
-#include <linux/etherdevice.h>
-#include <linux/iommu.h>
-#include <linux/if_vlan.h>
+#include <freax/etherdevice.h>
+#include <freax/iommu.h>
+#include <freax/if_vlan.h>
 #include <net/xdp.h>
 
 #define LBK_CHAN_BASE	0x000

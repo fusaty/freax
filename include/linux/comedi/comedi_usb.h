@@ -2,15 +2,15 @@
 /* comedi_usb.h
  * header file for USB Comedi drivers
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDI_USB_H
 #define _COMEDI_USB_H
 
-#include <linux/usb.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/usb.h>
+#include <freax/comedi/comedidev.h>
 
 struct usb_interface *comedi_to_usb_interface(struct comedi_device *dev);
 struct usb_device *comedi_to_usb_dev(struct comedi_device *dev);

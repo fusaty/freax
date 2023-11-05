@@ -6,14 +6,14 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/coresight-pmu.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/coresight-pmu.h>
+#include <freax/err.h>
+#include <freax/log2.h>
+#include <freax/types.h>
+#include <freax/zalloc.h>
 
 #include <stdlib.h>
 
@@ -1023,7 +1023,7 @@ static u32 cs_etm__mem_access(struct cs_etm_queue *etmq, u8 trace_chan_id,
 
 	if (len <= 0) {
 		ui__warning_once("CS ETM Trace: Missing DSO. Use 'perf archive' or debuginfod to export data from the traced system.\n"
-				 "              Enable CONFIG_PROC_KCORE or use option '-k /path/to/vmlinux' for kernel symbols.\n");
+				 "              Enable CONFIG_PROC_KCORE or use option '-k /path/to/vmfreax' for kernel symbols.\n");
 		if (!dso->auxtrace_warned) {
 			pr_err("CS ETM Trace: Debug data not found for address %#"PRIx64" in %s\n",
 				    address,

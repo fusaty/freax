@@ -2,13 +2,13 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#ifndef __LINUX_ND_H__
-#define __LINUX_ND_H__
-#include <linux/fs.h>
-#include <linux/ndctl.h>
-#include <linux/device.h>
-#include <linux/badblocks.h>
-#include <linux/perf_event.h>
+#ifndef __freax_ND_H__
+#define __freax_ND_H__
+#include <freax/fs.h>
+#include <freax/ndctl.h>
+#include <freax/device.h>
+#include <freax/badblocks.h>
+#include <freax/perf_event.h>
 
 enum nvdimm_event {
 	NVDIMM_REVALIDATE_POISON,
@@ -207,4 +207,4 @@ static inline void nd_driver_unregister(struct nd_device_driver *drv)
 	__nd_driver_register(driver, THIS_MODULE, KBUILD_MODNAME)
 #define module_nd_driver(driver) \
 	module_driver(driver, nd_driver_register, nd_driver_unregister)
-#endif /* __LINUX_ND_H__ */
+#endif /* __freax_ND_H__ */

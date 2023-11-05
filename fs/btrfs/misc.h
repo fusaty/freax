@@ -3,10 +3,10 @@
 #ifndef BTRFS_MISC_H
 #define BTRFS_MISC_H
 
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/math64.h>
-#include <linux/rbtree.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/math64.h>
+#include <freax/rbtree.h>
 
 /*
  * Enumerate bits using enum autoincrement. Define the @name as the n-th bit.

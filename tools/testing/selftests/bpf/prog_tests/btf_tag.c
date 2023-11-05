@@ -44,15 +44,15 @@ static void test_btf_type_tag(void)
 	btf_type_tag__destroy(skel);
 }
 
-/* loads vmlinux_btf as well as module_btf. If the caller passes NULL as
+/* loads vmfreax_btf as well as module_btf. If the caller passes NULL as
  * module_btf, it will not load module btf.
  *
  * Returns 0 on success.
  * Return -1 On error. In case of error, the loaded btf will be freed and the
  * input parameters will be set to pointing to NULL.
  */
-static int load_btfs(struct btf **vmlinux_btf, struct btf **module_btf,
-		     bool needs_vmlinux_tag)
+static int load_btfs(struct btf **vmfreax_btf, struct btf **module_btf,
+		     bool needs_vmfreax_tag)
 {
 	const char *module_name = "bpf_testmod";
 	__s32 type_id;
@@ -62,19 +62,19 @@ static int load_btfs(struct btf **vmlinux_btf, struct btf **module_btf,
 		return -1;
 	}
 
-	*vmlinux_btf = btf__load_vmlinux_btf();
-	if (!ASSERT_OK_PTR(*vmlinux_btf, "could not load vmlinux BTF"))
+	*vmfreax_btf = btf__load_vmfreax_btf();
+	if (!ASSERT_OK_PTR(*vmfreax_btf, "could not load vmfreax BTF"))
 		return -1;
 
-	if (!needs_vmlinux_tag)
+	if (!needs_vmfreax_tag)
 		goto load_module_btf;
 
-	/* skip the test if the vmlinux does not have __user tags */
-	type_id = btf__find_by_name_kind(*vmlinux_btf, "user", BTF_KIND_TYPE_TAG);
+	/* skip the test if the vmfreax does not have __user tags */
+	type_id = btf__find_by_name_kind(*vmfreax_btf, "user", BTF_KIND_TYPE_TAG);
 	if (type_id <= 0) {
-		printf("%s:SKIP: btf_type_tag attribute not in vmlinux btf", __func__);
+		printf("%s:SKIP: btf_type_tag attribute not in vmfreax btf", __func__);
 		test__skip();
-		goto free_vmlinux_btf;
+		goto free_vmfreax_btf;
 	}
 
 load_module_btf:
@@ -82,9 +82,9 @@ load_module_btf:
 	if (!module_btf)
 		return 0;
 
-	*module_btf = btf__load_module_btf(module_name, *vmlinux_btf);
+	*module_btf = btf__load_module_btf(module_name, *vmfreax_btf);
 	if (!ASSERT_OK_PTR(*module_btf, "could not load module BTF"))
-		goto free_vmlinux_btf;
+		goto free_vmfreax_btf;
 
 	/* skip the test if the module does not have __user tags */
 	type_id = btf__find_by_name_kind(*module_btf, "user", BTF_KIND_TYPE_TAG);
@@ -98,10 +98,10 @@ load_module_btf:
 
 free_module_btf:
 	btf__free(*module_btf);
-free_vmlinux_btf:
-	btf__free(*vmlinux_btf);
+free_vmfreax_btf:
+	btf__free(*vmfreax_btf);
 
-	*vmlinux_btf = NULL;
+	*vmfreax_btf = NULL;
 	if (module_btf)
 		*module_btf = NULL;
 	return -1;
@@ -109,11 +109,11 @@ free_vmlinux_btf:
 
 static void test_btf_type_tag_mod_user(bool load_test_user1)
 {
-	struct btf *vmlinux_btf = NULL, *module_btf = NULL;
+	struct btf *vmfreax_btf = NULL, *module_btf = NULL;
 	struct btf_type_tag_user *skel;
 	int err;
 
-	if (load_btfs(&vmlinux_btf, &module_btf, /*needs_vmlinux_tag=*/false))
+	if (load_btfs(&vmfreax_btf, &module_btf, /*needs_vmfreax_tag=*/false))
 		return;
 
 	skel = btf_type_tag_user__open();
@@ -133,16 +133,16 @@ static void test_btf_type_tag_mod_user(bool load_test_user1)
 
 cleanup:
 	btf__free(module_btf);
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 }
 
-static void test_btf_type_tag_vmlinux_user(void)
+static void test_btf_type_tag_vmfreax_user(void)
 {
 	struct btf_type_tag_user *skel;
-	struct btf *vmlinux_btf = NULL;
+	struct btf *vmfreax_btf = NULL;
 	int err;
 
-	if (load_btfs(&vmlinux_btf, NULL, /*needs_vmlinux_tag=*/true))
+	if (load_btfs(&vmfreax_btf, NULL, /*needs_vmfreax_tag=*/true))
 		return;
 
 	skel = btf_type_tag_user__open();
@@ -158,16 +158,16 @@ static void test_btf_type_tag_vmlinux_user(void)
 	btf_type_tag_user__destroy(skel);
 
 cleanup:
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 }
 
 static void test_btf_type_tag_mod_percpu(bool load_test_percpu1)
 {
-	struct btf *vmlinux_btf, *module_btf;
+	struct btf *vmfreax_btf, *module_btf;
 	struct btf_type_tag_percpu *skel;
 	int err;
 
-	if (load_btfs(&vmlinux_btf, &module_btf, /*needs_vmlinux_tag=*/false))
+	if (load_btfs(&vmfreax_btf, &module_btf, /*needs_vmfreax_tag=*/false))
 		return;
 
 	skel = btf_type_tag_percpu__open();
@@ -188,16 +188,16 @@ static void test_btf_type_tag_mod_percpu(bool load_test_percpu1)
 
 cleanup:
 	btf__free(module_btf);
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 }
 
-static void test_btf_type_tag_vmlinux_percpu(bool load_test)
+static void test_btf_type_tag_vmfreax_percpu(bool load_test)
 {
 	struct btf_type_tag_percpu *skel;
-	struct btf *vmlinux_btf = NULL;
+	struct btf *vmfreax_btf = NULL;
 	int err;
 
-	if (load_btfs(&vmlinux_btf, NULL, /*needs_vmlinux_tag=*/true))
+	if (load_btfs(&vmfreax_btf, NULL, /*needs_vmfreax_tag=*/true))
 		return;
 
 	skel = btf_type_tag_percpu__open();
@@ -221,7 +221,7 @@ static void test_btf_type_tag_vmlinux_percpu(bool load_test)
 	btf_type_tag_percpu__destroy(skel);
 
 cleanup:
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 }
 
 void test_btf_tag(void)
@@ -235,15 +235,15 @@ void test_btf_tag(void)
 		test_btf_type_tag_mod_user(true);
 	if (test__start_subtest("btf_type_tag_user_mod2"))
 		test_btf_type_tag_mod_user(false);
-	if (test__start_subtest("btf_type_tag_sys_user_vmlinux"))
-		test_btf_type_tag_vmlinux_user();
+	if (test__start_subtest("btf_type_tag_sys_user_vmfreax"))
+		test_btf_type_tag_vmfreax_user();
 
 	if (test__start_subtest("btf_type_tag_percpu_mod1"))
 		test_btf_type_tag_mod_percpu(true);
 	if (test__start_subtest("btf_type_tag_percpu_mod2"))
 		test_btf_type_tag_mod_percpu(false);
-	if (test__start_subtest("btf_type_tag_percpu_vmlinux_load"))
-		test_btf_type_tag_vmlinux_percpu(true);
-	if (test__start_subtest("btf_type_tag_percpu_vmlinux_helper"))
-		test_btf_type_tag_vmlinux_percpu(false);
+	if (test__start_subtest("btf_type_tag_percpu_vmfreax_load"))
+		test_btf_type_tag_vmfreax_percpu(true);
+	if (test__start_subtest("btf_type_tag_percpu_vmfreax_helper"))
+		test_btf_type_tag_vmfreax_percpu(false);
 }

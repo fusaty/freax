@@ -7,16 +7,16 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/console.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
 
 #include <asm/hvconsole.h>
 #include <asm/firmware.h>

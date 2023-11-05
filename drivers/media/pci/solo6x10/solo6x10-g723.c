@@ -9,13 +9,13 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/mempool.h>
-#include <linux/poll.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/mempool.h>
+#include <freax/poll.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

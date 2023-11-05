@@ -9,28 +9,28 @@
  *
  * Original skeleton written by: John(Zongxi) Chen (zongxi@broadcom.com)
  * Previously modified and maintained by: Michael Chan <mchan@broadcom.com>
- * Maintained By: Dept-HSGLinuxNICDev@qlogic.com
+ * Maintained By: Dept-HSGfreaxNICDev@qlogic.com
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/uio_driver.h>
-#include <linux/in.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/uio_driver.h>
+#include <freax/in.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/prefetch.h>
+#include <freax/random.h>
 #if IS_ENABLED(CONFIG_VLAN_8021Q)
 #define BCM_VLAN 1
 #endif

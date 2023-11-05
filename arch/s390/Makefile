@@ -15,7 +15,7 @@ KBUILD_CFLAGS_MODULE += -fPIC
 KBUILD_AFLAGS	+= -m64
 KBUILD_CFLAGS	+= -m64
 KBUILD_CFLAGS	+= -fPIE
-LDFLAGS_vmlinux	:= -pie
+LDFLAGS_vmfreax	:= -pie
 aflags_dwarf	:= -Wa,-gdwarf-2
 KBUILD_AFLAGS_DECOMPRESSOR := $(CLANG_FLAGS) -m64 -D__ASSEMBLY__
 ifndef CONFIG_AS_IS_LLVM
@@ -132,7 +132,7 @@ KBUILD_IMAGE	:= $(boot)/bzImage
 install:
 	$(call cmd,install)
 
-bzImage: vmlinux
+bzImage: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 zfcpdump:

@@ -4,13 +4,13 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/err.h>
 #include "clk.h"
 
 static int clk_busy_wait(void __iomem *reg, u8 shift)

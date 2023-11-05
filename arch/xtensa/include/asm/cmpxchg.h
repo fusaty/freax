@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bits.h>
-#include <linux/stringify.h>
+#include <freax/bits.h>
+#include <freax/stringify.h>
 
 /*
  * cmpxchg

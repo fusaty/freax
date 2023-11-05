@@ -2,7 +2,7 @@
 // Copyright (C) 2022, Linaro Ltd - Daniel Lezcano <daniel.lezcano@linaro.org>
 #include <stdio.h>
 #include <sys/time.h>
-#include <linux/sysinfo.h>
+#include <freax/sysinfo.h>
 #include "thermal-tools.h"
 
 static unsigned long __offset;

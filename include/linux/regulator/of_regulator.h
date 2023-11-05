@@ -4,8 +4,8 @@
  *
  */
 
-#ifndef __LINUX_OF_REG_H
-#define __LINUX_OF_REG_H
+#ifndef __freax_OF_REG_H
+#define __freax_OF_REG_H
 
 struct regulator_desc;
 
@@ -43,4 +43,4 @@ static inline int of_regulator_match(struct device *dev,
 }
 #endif /* CONFIG_OF */
 
-#endif /* __LINUX_OF_REG_H */
+#endif /* __freax_OF_REG_H */

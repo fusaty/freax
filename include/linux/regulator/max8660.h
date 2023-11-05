@@ -5,10 +5,10 @@
  * Copyright (C) 2009 Wolfram Sang, Pengutronix e.K.
  */
 
-#ifndef __LINUX_REGULATOR_MAX8660_H
-#define __LINUX_REGULATOR_MAX8660_H
+#ifndef __freax_REGULATOR_MAX8660_H
+#define __freax_REGULATOR_MAX8660_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 enum {
 	MAX8660_V3,

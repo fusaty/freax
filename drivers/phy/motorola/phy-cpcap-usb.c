@@ -3,30 +3,30 @@
  * Motorola CPCAP PMIC USB PHY driver
  * Copyright (C) 2017 Tony Lindgren <tony@atomide.com>
  *
- * Some parts based on earlier Motorola Linux kernel tree code in
+ * Some parts based on earlier Motorola freax kernel tree code in
  * board-mapphone-usb.c and cpcap-usb-det.c:
  * Copyright (C) 2007 - 2011 Motorola, Inc.
  */
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/iio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/iio/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/mfd/motorola-cpcap.h>
-#include <linux/phy/omap_usb.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/musb.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mfd/motorola-cpcap.h>
+#include <freax/phy/omap_usb.h>
+#include <freax/phy/phy.h>
+#include <freax/regulator/consumer.h>
+#include <freax/usb/musb.h>
 
 /* CPCAP_REG_USBC1 register bits */
 #define CPCAP_BIT_IDPULSE		BIT(15)

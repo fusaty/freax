@@ -3,7 +3,7 @@
 #define __ACPI_NUMA_H
 
 #ifdef CONFIG_ACPI_NUMA
-#include <linux/numa.h>
+#include <freax/numa.h>
 
 /* Proximity bitmap length */
 #if MAX_NUMNODES > 256

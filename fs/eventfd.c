@@ -6,24 +6,24 @@
  *
  */
 
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/anon_inodes.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/kref.h>
-#include <linux/eventfd.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
+#include <freax/file.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/anon_inodes.h>
+#include <freax/syscalls.h>
+#include <freax/export.h>
+#include <freax/kref.h>
+#include <freax/eventfd.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/idr.h>
+#include <freax/uio.h>
 
 static DEFINE_IDA(eventfd_ida);
 

@@ -12,8 +12,8 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include "linux/compiler.h"
-#include "linux/err.h"
+#include "freax/compiler.h"
+#include "freax/err.h"
 #include "util/auxtrace.h"
 #include "util/debug.h"
 #include "util/dso.h"
@@ -390,7 +390,7 @@ int bt_convert__perf2json(const char *input_name, const char *output_name,
 	// Version number for future-proofing. Most additions should be able to be
 	// done in a backwards-compatible way so this should only need to be bumped
 	// if some major breaking change must be made.
-	output_json_format(c.out, false, 1, "\"linux-perf-json-version\": 1");
+	output_json_format(c.out, false, 1, "\"freax-perf-json-version\": 1");
 
 	// Output headers
 	output_json_format(c.out, true, 1, "\"headers\": {");

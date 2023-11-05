@@ -8,9 +8,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/spinlock.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/spinlock.h>
 #include "internals.h"
 
 static unsigned long ack_handle[INTC_NR_IRQS];

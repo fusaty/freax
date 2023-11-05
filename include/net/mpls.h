@@ -6,9 +6,9 @@
 #ifndef _NET_MPLS_H
 #define _NET_MPLS_H 1
 
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/mpls.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
+#include <freax/mpls.h>
 
 #define MPLS_HLEN 4
 

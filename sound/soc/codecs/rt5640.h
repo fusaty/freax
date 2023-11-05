@@ -9,9 +9,9 @@
 #ifndef _RT5640_H
 #define _RT5640_H
 
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/gpio/consumer.h>
+#include <freax/workqueue.h>
 #include <dt-bindings/sound/rt5640.h>
 
 /* Info */

@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/mptcp.yaml */
 /* YNL-GEN kernel source */
@@ -8,7 +8,7 @@
 
 #include "mptcp_pm_gen.h"
 
-#include <uapi/linux/mptcp_pm.h>
+#include <uapi/freax/mptcp_pm.h>
 
 /* Common nested types */
 const struct nla_policy mptcp_pm_address_nl_policy[MPTCP_PM_ADDR_ATTR_IF_IDX + 1] = {

@@ -9,9 +9,9 @@
 
 #include "main.h"
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <uapi/freax/batadv_packet.h>
 
 void batadv_tvlv_container_register(struct batadv_priv *bat_priv,
 				    u8 type, u8 version,

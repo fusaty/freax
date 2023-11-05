@@ -5,19 +5,19 @@
  *    Copyright IBM Corp. 2007, 2020
  *    Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  *		 David Hildenbrand <david@redhat.com>
- *		 Janosch Frank <frankja@linux.vnet.ibm.com>
+ *		 Janosch Frank <frankja@freax.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/swapops.h>
-#include <linux/ksm.h>
-#include <linux/mman.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/pagewalk.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/swapops.h>
+#include <freax/ksm.h>
+#include <freax/mman.h>
+#include <freax/pgtable.h>
 
 #include <asm/pgalloc.h>
 #include <asm/gmap.h>

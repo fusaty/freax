@@ -11,19 +11,19 @@
  * Eric Biederman, of course, was a major help in this effort.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/list.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/cfi.h>
+#include <freax/mtd/flashchip.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/list.h>
 
 #define MOD_NAME KBUILD_BASENAME
 

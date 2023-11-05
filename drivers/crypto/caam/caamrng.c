@@ -9,12 +9,12 @@
  *
  */
 
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/atomic.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
+#include <freax/hw_random.h>
+#include <freax/completion.h>
+#include <freax/atomic.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/kfifo.h>
 
 #include "compat.h"
 

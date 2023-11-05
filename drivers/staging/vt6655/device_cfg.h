@@ -13,7 +13,7 @@
 #ifndef __DEVICE_CONFIG_H
 #define __DEVICE_CONFIG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define VID_TABLE_SIZE      64
 #define MCAST_TABLE_SIZE    64
@@ -36,8 +36,8 @@
 #define DEVICE_VERSION       "1.19.12"
 #endif
 
-#include <linux/fs.h>
-#include <linux/fcntl.h>
+#include <freax/fs.h>
+#include <freax/fcntl.h>
 
 #define PKT_BUF_SZ          2390
 

@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/soc/nxp/lpc32xx-misc.h>
+#include <freax/clk.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/soc/nxp/lpc32xx-misc.h>
 
 #define MODNAME "lpc-eth"
 #define DRV_VERSION "1.00"

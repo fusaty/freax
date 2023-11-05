@@ -5,12 +5,12 @@
  * Copyright (C) 2008 Kim B. Heino
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/spi/spi.h>
+#include <freax/bcd.h>
 
 #define M41T94_REG_SECONDS	0x01
 #define M41T94_REG_MINUTES	0x02

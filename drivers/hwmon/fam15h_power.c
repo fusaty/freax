@@ -6,18 +6,18 @@
  * Author: Andreas Herrmann <herrmann.der.user@googlemail.com>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/topology.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/bitops.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/time.h>
+#include <freax/sched.h>
+#include <freax/topology.h>
 #include <asm/processor.h>
 #include <asm/msr.h>
 

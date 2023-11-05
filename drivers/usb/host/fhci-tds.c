@@ -11,14 +11,14 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 #include "fhci.h"
 
 #define DUMMY_BD_BUFFER  0xdeadbeef

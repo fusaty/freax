@@ -1,5 +1,5 @@
 /*
- * gdb helper commands and functions for Linux kernel debugging
+ * gdb helper commands and functions for freax kernel debugging
  *
  *  Kernel constants derived from include files.
  *
@@ -12,17 +12,17 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/irq.h>
-#include <linux/mount.h>
-#include <linux/of_fdt.h>
-#include <linux/page_ext.h>
-#include <linux/radix-tree.h>
-#include <linux/slab.h>
-#include <linux/threads.h>
-#include <linux/vmalloc.h>
+#include <freax/clk-provider.h>
+#include <freax/fs.h>
+#include <freax/hrtimer.h>
+#include <freax/irq.h>
+#include <freax/mount.h>
+#include <freax/of_fdt.h>
+#include <freax/page_ext.h>
+#include <freax/radix-tree.h>
+#include <freax/slab.h>
+#include <freax/threads.h>
+#include <freax/vmalloc.h>
 
 /* We need to stringify expanded macros so that they can be parsed */
 
@@ -46,11 +46,11 @@ import gdb
 
 LX_CONFIG(CONFIG_DEBUG_INFO_REDUCED)
 
-/* linux/clk-provider.h */
+/* freax/clk-provider.h */
 if IS_BUILTIN(CONFIG_COMMON_CLK):
     LX_GDBPARSED(CLK_GET_RATE_NOCACHE)
 
-/* linux/fs.h */
+/* freax/fs.h */
 LX_GDBPARSED(SB_RDONLY)
 LX_GDBPARSED(SB_SYNCHRONOUS)
 LX_GDBPARSED(SB_MANDLOCK)
@@ -58,21 +58,21 @@ LX_GDBPARSED(SB_DIRSYNC)
 LX_GDBPARSED(SB_NOATIME)
 LX_GDBPARSED(SB_NODIRATIME)
 
-/* linux/htimer.h */
+/* freax/htimer.h */
 LX_GDBPARSED(hrtimer_resolution)
 
-/* linux/irq.h */
+/* freax/irq.h */
 LX_GDBPARSED(IRQD_LEVEL)
 LX_GDBPARSED(IRQ_HIDDEN)
 
-/* linux/module.h */
+/* freax/module.h */
 if IS_BUILTIN(CONFIG_MODULES):
     LX_GDBPARSED(MOD_TEXT)
     LX_GDBPARSED(MOD_DATA)
     LX_GDBPARSED(MOD_RODATA)
     LX_GDBPARSED(MOD_RO_AFTER_INIT)
 
-/* linux/mount.h */
+/* freax/mount.h */
 LX_VALUE(MNT_NOSUID)
 LX_VALUE(MNT_NODEV)
 LX_VALUE(MNT_NOEXEC)
@@ -80,32 +80,32 @@ LX_VALUE(MNT_NOATIME)
 LX_VALUE(MNT_NODIRATIME)
 LX_VALUE(MNT_RELATIME)
 
-/* linux/threads.h */
+/* freax/threads.h */
 LX_VALUE(NR_CPUS)
 
-/* linux/of_fdt.h> */
+/* freax/of_fdt.h> */
 LX_VALUE(OF_DT_HEADER)
 
-/* linux/radix-tree.h */
+/* freax/radix-tree.h */
 LX_GDBPARSED(RADIX_TREE_ENTRY_MASK)
 LX_GDBPARSED(RADIX_TREE_INTERNAL_NODE)
 LX_GDBPARSED(RADIX_TREE_MAP_SIZE)
 LX_GDBPARSED(RADIX_TREE_MAP_SHIFT)
 LX_GDBPARSED(RADIX_TREE_MAP_MASK)
 
-/* linux/vmalloc.h */
+/* freax/vmalloc.h */
 LX_VALUE(VM_IOREMAP)
 LX_VALUE(VM_ALLOC)
 LX_VALUE(VM_MAP)
 LX_VALUE(VM_USERMAP)
 LX_VALUE(VM_DMA_COHERENT)
 
-/* linux/page_ext.h */
+/* freax/page_ext.h */
 if IS_BUILTIN(CONFIG_PAGE_OWNER):
     LX_GDBPARSED(PAGE_EXT_OWNER)
     LX_GDBPARSED(PAGE_EXT_OWNER_ALLOCATED)
 
-/* linux/slab.h */
+/* freax/slab.h */
 LX_GDBPARSED(SLAB_RED_ZONE)
 LX_GDBPARSED(SLAB_POISON)
 LX_GDBPARSED(SLAB_KMALLOC)

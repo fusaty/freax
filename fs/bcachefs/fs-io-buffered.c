@@ -11,9 +11,9 @@
 #include "io_read.h"
 #include "io_write.h"
 
-#include <linux/backing-dev.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
+#include <freax/backing-dev.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
 
 static inline bool bio_full(struct bio *bio, unsigned len)
 {

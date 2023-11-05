@@ -6,10 +6,10 @@
  */
 
 #include <asm/iommu.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/nmi.h>
+#include <freax/irq.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/nmi.h>
 
 void do_after_copyback(void)
 {

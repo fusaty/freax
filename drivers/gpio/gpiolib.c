@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/compat.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <freax/acpi.h>
+#include <freax/bitmap.h>
+#include <freax/compat.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
 
-#include <linux/gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
+#include <freax/gpio.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
 
-#include <uapi/linux/gpio.h>
+#include <uapi/freax/gpio.h>
 
 #include "gpiolib-acpi.h"
 #include "gpiolib-cdev.h"
@@ -885,7 +885,7 @@ int gpiochip_add_data_with_key(struct gpio_chip *gc, void *data,
 	spin_lock_irqsave(&gpio_lock, flags);
 
 	/*
-	 * TODO: this allocates a Linux GPIO number base in the global
+	 * TODO: this allocates a freax GPIO number base in the global
 	 * GPIO numberspace for this chip. In the long run we want to
 	 * get *rid* of this numberspace and use only descriptors, but
 	 * it may be a pipe dream. It will not happen before we get rid

@@ -1,15 +1,15 @@
 /*
- * (C) 2005, 2006 Linux Networx (http://lnxi.com)
+ * (C) 2005, 2006 freax Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
  * Written Doug Thompson <norsk5@xmission.com>
  *
  */
-#include <linux/module.h>
-#include <linux/edac.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
+#include <freax/module.h>
+#include <freax/edac.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
 
 #include "edac_pci.h"
 #include "edac_module.h"
@@ -487,7 +487,7 @@ static u16 get_pci_parity_status(struct pci_dev *dev, int secondary)
 	pci_read_config_word(dev, where, &status);
 
 	/* If we get back 0xFFFF then we must suspect that the card has been
-	 * pulled but the Linux PCI layer has not yet finished cleaning up.
+	 * pulled but the freax PCI layer has not yet finished cleaning up.
 	 * We don't want to report on such devices
 	 */
 

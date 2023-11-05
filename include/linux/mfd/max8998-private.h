@@ -7,8 +7,8 @@
  *  Marek Szyprowski <m.szyprowski@samsung.com>
  */
 
-#ifndef __LINUX_MFD_MAX8998_PRIV_H
-#define __LINUX_MFD_MAX8998_PRIV_H
+#ifndef __freax_MFD_MAX8998_PRIV_H
+#define __freax_MFD_MAX8998_PRIV_H
 
 #define MAX8998_NUM_IRQ_REGS	4
 
@@ -166,4 +166,4 @@ extern int max8998_bulk_write(struct i2c_client *i2c, u8 reg, int count,
 		u8 *buf);
 extern int max8998_update_reg(struct i2c_client *i2c, u8 reg, u8 val, u8 mask);
 
-#endif /*  __LINUX_MFD_MAX8998_PRIV_H */
+#endif /*  __freax_MFD_MAX8998_PRIV_H */

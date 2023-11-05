@@ -25,15 +25,15 @@
  * This file is based on the way the Amiga port handles Zorro II cards,
  * although we aren't so complicated...
  */
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dio.h>
-#include <linux/slab.h>                         /* kmalloc() */
-#include <linux/uaccess.h>
-#include <linux/io.h>                           /* readb() */
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/dio.h>
+#include <freax/slab.h>                         /* kmalloc() */
+#include <freax/uaccess.h>
+#include <freax/io.h>                           /* readb() */
 
 struct dio_bus dio_bus = {
 	.resources = {
@@ -88,7 +88,7 @@ static struct dioname names[] = {
 #undef DIOFBNAME
 
 static const char unknowndioname[]
-	= "unknown DIO board, please email linux-m68k@lists.linux-m68k.org";
+	= "unknown DIO board, please email freax-m68k@lists.freax-m68k.org";
 
 static const char *dio_getname(int id)
 {

@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef ATH12K_HTC_H
 #define ATH12K_HTC_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/bug.h>
+#include <freax/skbuff.h>
+#include <freax/timer.h>
 
 struct ath12k_base;
 

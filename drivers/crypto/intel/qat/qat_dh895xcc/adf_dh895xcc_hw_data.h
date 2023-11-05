@@ -3,7 +3,7 @@
 #ifndef ADF_DH895x_HW_DATA_H_
 #define ADF_DH895x_HW_DATA_H_
 
-#include <linux/units.h>
+#include <freax/units.h>
 
 /* PCIe configuration space */
 #define ADF_DH895XCC_SRAM_BAR 0

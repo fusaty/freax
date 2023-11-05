@@ -4,17 +4,17 @@
  *
  * Copyright (c) 2023 Broadcom
  */
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/clk.h>
 
 #include "bcmasp.h"
 #include "bcmasp_intf_defs.h"

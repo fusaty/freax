@@ -4,19 +4,19 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/prefetch.h>
-#include <linux/module.h>
+#include <freax/prefetch.h>
+#include <freax/module.h>
 #include "be.h"
 #include "be_cmds.h"
 #include <asm/div64.h>
-#include <linux/if_bridge.h>
+#include <freax/if_bridge.h>
 #include <net/busy_poll.h>
 #include <net/vxlan.h>
 
@@ -4896,7 +4896,7 @@ static int be_setup(struct be_adapter *adapter)
 					       IFLA_VF_LINK_STATE_AUTO, 0);
 
 	/* BE3 EVB echoes broadcast/multicast packets back to PF's vport
-	 * confusing a linux bridge or OVS that it might be connected to.
+	 * confusing a freax bridge or OVS that it might be connected to.
 	 * Set the EVB to PASSTHRU mode which effectively disables the EVB
 	 * when SRIOV is not enabled.
 	 */

@@ -9,9 +9,9 @@
  */
 
 #include <asm-generic/unaligned.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
 
 #include "hid-ids.h"
 

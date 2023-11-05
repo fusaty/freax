@@ -9,7 +9,7 @@
 #ifndef _PLATFORM_PROFILE_H_
 #define _PLATFORM_PROFILE_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /*
  * If more options are added please update profile_names array in

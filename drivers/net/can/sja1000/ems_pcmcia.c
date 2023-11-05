@@ -5,16 +5,16 @@
  * Rework for mainline by Oliver Hartkopp <socketcan@hartkopp.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
 #include "sja1000.h"
 
 #define DRV_NAME "ems_pcmcia"

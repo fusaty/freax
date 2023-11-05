@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE freax Products GmbH. All rights reserved.
  *
  * Authors:
  *    Alexander Graf <agraf@suse.de>
@@ -11,21 +11,21 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <freax/kvm_host.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/miscdevice.h>
+#include <freax/gfp.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

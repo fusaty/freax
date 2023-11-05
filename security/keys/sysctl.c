@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/key.h>
-#include <linux/sysctl.h>
+#include <freax/key.h>
+#include <freax/sysctl.h>
 #include "internal.h"
 
 static struct ctl_table key_sysctls[] = {

@@ -11,7 +11,7 @@
 #ifndef _AHCI_PLATFORM_H
 #define _AHCI_PLATFORM_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 struct clk;
 struct device;

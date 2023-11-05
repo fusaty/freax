@@ -8,15 +8,15 @@
  * NAND support by Christian Gan <cgan@iders.ca>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/backing-dev.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/backing-dev.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/concat.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/concat.h>
 
 #include <asm/div64.h>
 

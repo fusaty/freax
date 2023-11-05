@@ -7,17 +7,17 @@
  * Copyright Altera Corporation (C) 2013-2015. All rights reserved
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define MSI_STATUS		0x0
 #define MSI_ERROR		0x4

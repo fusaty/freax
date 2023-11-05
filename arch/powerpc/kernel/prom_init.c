@@ -14,22 +14,22 @@
 /* we cannot use FORTIFY as it brings in new symbols */
 #define __NO_FORTIFY
 
-#include <linux/stdarg.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/threads.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/bitops.h>
-#include <linux/pgtable.h>
-#include <linux/printk.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <freax/stdarg.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/threads.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/proc_fs.h>
+#include <freax/delay.h>
+#include <freax/initrd.h>
+#include <freax/bitops.h>
+#include <freax/pgtable.h>
+#include <freax/printk.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
 #include <asm/prom.h>
 #include <asm/rtas.h>
 #include <asm/page.h>
@@ -46,7 +46,7 @@
 #include <asm/asm-prototypes.h>
 #include <asm/ultravisor-api.h>
 
-#include <linux/linux_logo.h>
+#include <freax/freax_logo.h>
 
 /* All of prom_init bss lives here */
 #define __prombss __section(".bss.prominit")
@@ -1116,7 +1116,7 @@ static const struct ibm_arch_vec ibm_architecture_vec_template __initconst = {
 	.vec6 = {
 		.reserved = 0,
 		.secondary_pteg = 0,
-		.os_name = OV6_LINUX,
+		.os_name = OV6_freax,
 	},
 
 	/* option vector 7: OS Identification */
@@ -1349,7 +1349,7 @@ static void __init prom_check_platform_support(void)
 	memcpy(&ibm_architecture_vec, &ibm_architecture_vec_template,
 	       sizeof(ibm_architecture_vec));
 
-	prom_strscpy_pad(ibm_architecture_vec.vec7.os_id, linux_banner, 256);
+	prom_strscpy_pad(ibm_architecture_vec.vec7.os_id, freax_banner, 256);
 
 	if (prop_len > 1) {
 		int i;
@@ -1454,7 +1454,7 @@ static void __init prom_send_capabilities(void)
 /*
  * Memory allocation strategy... our layout is normally:
  *
- *  at 14Mb or more we have vmlinux, then a gap and initrd.  In some
+ *  at 14Mb or more we have vmfreax, then a gap and initrd.  In some
  *  rare cases, initrd might end up being before the kernel though.
  *  We assume this won't override the final kernel at 0, we have no
  *  provision to handle that in this version, but it should hopefully
@@ -1871,10 +1871,10 @@ static void __init prom_instantiate_rtas(void)
 	reserve_mem(base, size);
 
 	val = cpu_to_be32(base);
-	prom_setprop(rtas_node, "/rtas", "linux,rtas-base",
+	prom_setprop(rtas_node, "/rtas", "freax,rtas-base",
 		     &val, sizeof(val));
 	val = cpu_to_be32(entry);
-	prom_setprop(rtas_node, "/rtas", "linux,rtas-entry",
+	prom_setprop(rtas_node, "/rtas", "freax,rtas-entry",
 		     &val, sizeof(val));
 
 	/* Check if it supports "query-cpu-stopped-state" */
@@ -1956,9 +1956,9 @@ static void __init prom_instantiate_sml(void)
 
 	reserve_mem(base, size);
 
-	prom_setprop(ibmvtpm_node, "/vdevice/vtpm", "linux,sml-base",
+	prom_setprop(ibmvtpm_node, "/vdevice/vtpm", "freax,sml-base",
 		     &base, sizeof(base));
-	prom_setprop(ibmvtpm_node, "/vdevice/vtpm", "linux,sml-size",
+	prom_setprop(ibmvtpm_node, "/vdevice/vtpm", "freax,sml-size",
 		     &size, sizeof(size));
 
 	prom_debug("sml base     = 0x%llx\n", base);
@@ -2050,8 +2050,8 @@ static void __init prom_initialize_tce_table(void)
 		}
 
 		/* Save away the TCE table attributes for later use. */
-		prom_setprop(node, path, "linux,tce-base", &base, sizeof(base));
-		prom_setprop(node, path, "linux,tce-size", &minsize, sizeof(minsize));
+		prom_setprop(node, path, "freax,tce-base", &base, sizeof(base));
+		prom_setprop(node, path, "freax,tce-size", &minsize, sizeof(minsize));
 
 		prom_debug("TCE table: %s\n", path);
 		prom_debug("\tnode = 0x%x\n", node);
@@ -2278,7 +2278,7 @@ static void __init prom_init_stdout(void)
 	memset(path, 0, 256);
 	call_prom("instance-to-path", 3, 1, prom.stdout, path, 255);
 	prom_printf("OF stdout device is: %s\n", of_stdout_device);
-	prom_setprop(prom.chosen, "/chosen", "linux,stdout-path",
+	prom_setprop(prom.chosen, "/chosen", "freax,stdout-path",
 		     path, prom_strlen(path) + 1);
 
 	/* instance-to-package fails on PA-Semi */
@@ -2290,7 +2290,7 @@ static void __init prom_init_stdout(void)
 		memset(type, 0, sizeof(type));
 		prom_getprop(stdout_node, "device_type", type, sizeof(type));
 		if (prom_strcmp(type, "display") == 0)
-			prom_setprop(stdout_node, path, "linux,boot-display", NULL, 0);
+			prom_setprop(stdout_node, path, "freax,boot-display", NULL, 0);
 	}
 }
 
@@ -2425,7 +2425,7 @@ static void __init prom_check_displays(void)
 
 		/* Success */
 		prom_printf("done\n");
-		prom_setprop(node, path, "linux,opened", NULL, 0);
+		prom_setprop(node, path, "freax,opened", NULL, 0);
 
 		/* Setup a usable color table when the appropriate
 		 * method is available. Should update this to set-colors */
@@ -2435,16 +2435,16 @@ static void __init prom_check_displays(void)
 					   clut[2]) != 0)
 				break;
 
-#ifdef CONFIG_LOGO_LINUX_CLUT224
-		clut = PTRRELOC(logo_linux_clut224.clut);
-		for (i = 0; i < logo_linux_clut224.clutsize; i++, clut += 3)
+#ifdef CONFIG_LOGO_freax_CLUT224
+		clut = PTRRELOC(logo_freax_clut224.clut);
+		for (i = 0; i < logo_freax_clut224.clutsize; i++, clut += 3)
 			if (prom_set_color(ih, i + 32, clut[0], clut[1],
 					   clut[2]) != 0)
 				break;
-#endif /* CONFIG_LOGO_LINUX_CLUT224 */
+#endif /* CONFIG_LOGO_freax_CLUT224 */
 
 #ifdef CONFIG_PPC_EARLY_DEBUG_BOOTX
-		if (prom_getprop(node, "linux,boot-display", NULL, 0) !=
+		if (prom_getprop(node, "freax,boot-display", NULL, 0) !=
 		    PROM_ERROR) {
 			u32 width, height, pitch, addr;
 
@@ -3225,10 +3225,10 @@ static void __init prom_check_initrd(unsigned long r3, unsigned long r4)
 		prom_initrd_end = prom_initrd_start + r4;
 
 		val = cpu_to_be64(prom_initrd_start);
-		prom_setprop(prom.chosen, "/chosen", "linux,initrd-start",
+		prom_setprop(prom.chosen, "/chosen", "freax,initrd-start",
 			     &val, sizeof(val));
 		val = cpu_to_be64(prom_initrd_end);
-		prom_setprop(prom.chosen, "/chosen", "linux,initrd-end",
+		prom_setprop(prom.chosen, "/chosen", "freax,initrd-end",
 			     &val, sizeof(val));
 
 		reserve_mem(prom_initrd_start,
@@ -3330,7 +3330,7 @@ unsigned long __init prom_init(unsigned long r3, unsigned long r4,
 	 */
 	prom_init_stdout();
 
-	prom_printf("Preparing to boot %s", linux_banner);
+	prom_printf("Preparing to boot %s", freax_banner);
 
 	/*
 	 * Get default machine type. At this point, we do not differentiate
@@ -3422,23 +3422,23 @@ unsigned long __init prom_init(unsigned long r3, unsigned long r4,
 	 */
 	if (prom_memory_limit) {
 		__be64 val = cpu_to_be64(prom_memory_limit);
-		prom_setprop(prom.chosen, "/chosen", "linux,memory-limit",
+		prom_setprop(prom.chosen, "/chosen", "freax,memory-limit",
 			     &val, sizeof(val));
 	}
 #ifdef CONFIG_PPC64
 	if (prom_iommu_off)
-		prom_setprop(prom.chosen, "/chosen", "linux,iommu-off",
+		prom_setprop(prom.chosen, "/chosen", "freax,iommu-off",
 			     NULL, 0);
 
 	if (prom_iommu_force_on)
-		prom_setprop(prom.chosen, "/chosen", "linux,iommu-force-on",
+		prom_setprop(prom.chosen, "/chosen", "freax,iommu-force-on",
 			     NULL, 0);
 
 	if (prom_tce_alloc_start) {
-		prom_setprop(prom.chosen, "/chosen", "linux,tce-alloc-start",
+		prom_setprop(prom.chosen, "/chosen", "freax,tce-alloc-start",
 			     &prom_tce_alloc_start,
 			     sizeof(prom_tce_alloc_start));
-		prom_setprop(prom.chosen, "/chosen", "linux,tce-alloc-end",
+		prom_setprop(prom.chosen, "/chosen", "freax,tce-alloc-end",
 			     &prom_tce_alloc_end,
 			     sizeof(prom_tce_alloc_end));
 	}
@@ -3477,7 +3477,7 @@ unsigned long __init prom_init(unsigned long r3, unsigned long r4,
 	 */
 	hdr = dt_header_start;
 
-	prom_printf("Booting Linux via __start() @ 0x%lx ...\n", kbase);
+	prom_printf("Booting freax via __start() @ 0x%lx ...\n", kbase);
 	prom_debug("->dt_header_start=0x%lx\n", hdr);
 
 #ifdef CONFIG_PPC32

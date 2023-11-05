@@ -4,13 +4,13 @@
  * as specified in rfc8998
  * https://datatracker.ietf.org/doc/html/rfc8998
  *
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/cpufeature.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/kernel.h>
+#include <freax/cpufeature.h>
 #include <asm/neon.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/aead.h>
@@ -77,7 +77,7 @@ static int ccm_format_input(u8 info[], struct aead_request *req,
 
 	/*
 	 * format message length field,
-	 * Linux uses a u32 type to represent msglen
+	 * freax uses a u32 type to represent msglen
 	 */
 	if (l >= 4)
 		l = 4;
@@ -303,5 +303,5 @@ module_exit(sm4_ce_ccm_exit);
 
 MODULE_DESCRIPTION("Synchronous SM4 in CCM mode using ARMv8 Crypto Extensions");
 MODULE_ALIAS_CRYPTO("ccm(sm4)");
-MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@linux.alibaba.com>");
+MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@freax.alibaba.com>");
 MODULE_LICENSE("GPL v2");

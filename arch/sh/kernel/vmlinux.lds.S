@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * ld script to make SuperH Linux kernel
+ * ld script to make SuperH freax kernel
  * Written by Niibe Yutaka and Paul Mundt
  */
 OUTPUT_ARCH(sh)
 #define RUNTIME_DISCARD_EXIT
 #include <asm/thread_info.h>
 #include <asm/cache.h>
-#include <asm/vmlinux.lds.h>
+#include <asm/vmfreax.lds.h>
 
 #ifdef CONFIG_PMB
  #define MEMORY_OFFSET	0

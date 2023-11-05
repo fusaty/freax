@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SPI_FLASH_H
-#define LINUX_SPI_FLASH_H
+#ifndef freax_SPI_FLASH_H
+#define freax_SPI_FLASH_H
 
 struct mtd_partition;
 

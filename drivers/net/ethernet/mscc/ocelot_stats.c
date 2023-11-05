@@ -4,10 +4,10 @@
  * Copyright (c) 2017 Microsemi Corporation
  * Copyright 2022 NXP
  */
-#include <linux/ethtool_netlink.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 #include "ocelot.h"
 
 enum ocelot_stat {

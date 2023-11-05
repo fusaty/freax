@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/i2c.h>
-#include <linux/pci.h>
-#include <linux/psp-platform-access.h>
-#include <linux/psp.h>
-#include <linux/workqueue.h>
+#include <freax/i2c.h>
+#include <freax/pci.h>
+#include <freax/psp-platform-access.h>
+#include <freax/psp.h>
+#include <freax/workqueue.h>
 
 #include "i2c-designware-core.h"
 

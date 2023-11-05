@@ -60,7 +60,7 @@ static __always_inline void native_halt(void)
 #include <asm/paravirt.h>
 #else
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 
 static __always_inline unsigned long arch_local_save_flags(void)
 {

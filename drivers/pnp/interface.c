@@ -8,17 +8,17 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <freax/pnp.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/stat.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "base.h"
 

@@ -5,7 +5,7 @@
  * Copyright (C) 2021 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/kvm.h>
+#include <freax/kvm.h>
 
 #include "kvm_util.h"
 #include "processor.h"

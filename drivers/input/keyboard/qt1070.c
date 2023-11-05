@@ -10,15 +10,15 @@
  *  Raphael Derosso Pereira <raphaelpereira@gmail.com>
  *  Copyright (C) 2009
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/delay.h>
 
 /* Address for each register */
 #define CHIP_ID            0x00

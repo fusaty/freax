@@ -12,10 +12,10 @@
 	Abstract: rt2x00 queue specific routines.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
 
 #include "rt2x00.h"
 #include "rt2x00lib.h"

@@ -8,7 +8,7 @@
 #ifndef _LIB_SW_FENCE_H_
 #define _LIB_SW_FENCE_H_
 
-#include <linux/timer.h>
+#include <freax/timer.h>
 
 #include "../i915_sw_fence.h"
 

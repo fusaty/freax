@@ -19,7 +19,7 @@
  *
  * Contact Information:
  * 	Sean Gulley <sean.m.gulley@intel.com>
- * 	Tim Chen <tim.c.chen@linux.intel.com>
+ * 	Tim Chen <tim.c.chen@freax.intel.com>
  *
  * BSD LICENSE
  *
@@ -53,8 +53,8 @@
  *
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 
 #define DIGEST_PTR	%rdi	/* 1st arg */
 #define DATA_PTR	%rsi	/* 2nd arg */

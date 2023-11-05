@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <perf/cpumap.h>
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
 /** Identify where counts are aggregated, -1 implies not to aggregate. */
 struct aggr_cpu_id {

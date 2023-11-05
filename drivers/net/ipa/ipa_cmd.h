@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2022 Linaro Ltd.
  */
 #ifndef _IPA_CMD_H_
 #define _IPA_CMD_H_
 
-#include <linux/types.h>
-#include <linux/dma-direction.h>
+#include <freax/types.h>
+#include <freax/dma-direction.h>
 
 struct sk_buff;
 struct scatterlist;

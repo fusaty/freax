@@ -114,10 +114,10 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/net_tstamp.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

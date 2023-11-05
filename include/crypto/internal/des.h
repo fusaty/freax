@@ -6,8 +6,8 @@
 #ifndef __CRYPTO_INTERNAL_DES_H
 #define __CRYPTO_INTERNAL_DES_H
 
-#include <linux/crypto.h>
-#include <linux/fips.h>
+#include <freax/crypto.h>
+#include <freax/fips.h>
 #include <crypto/des.h>
 #include <crypto/aead.h>
 #include <crypto/skcipher.h>

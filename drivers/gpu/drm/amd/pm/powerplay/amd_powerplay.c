@@ -21,12 +21,12 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/reboot.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
+#include <freax/reboot.h>
 #include "amd_shared.h"
 #include "amd_powerplay.h"
 #include "power_state.h"

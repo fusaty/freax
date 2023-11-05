@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2018-2019 HiSilicon Limited. */
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/topology.h>
-#include <linux/uacce.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/topology.h>
+#include <freax/uacce.h>
 #include "hpre.h"
 
 #define HPRE_QM_ABNML_INT_MASK		0x100004

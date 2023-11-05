@@ -6,10 +6,10 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  */
-#ifndef __LINUX_CDNS3_DRD
-#define __LINUX_CDNS3_DRD
+#ifndef __freax_CDNS3_DRD
+#define __freax_CDNS3_DRD
 
-#include <linux/usb/otg.h>
+#include <freax/usb/otg.h>
 #include "core.h"
 
 /*  DRD register interface for version v1 of cdns3 driver. */
@@ -216,4 +216,4 @@ void cdns_drd_gadget_off(struct cdns *cdns);
 int cdns_drd_host_on(struct cdns *cdns);
 void cdns_drd_host_off(struct cdns *cdns);
 bool cdns_power_is_lost(struct cdns *cdns);
-#endif /* __LINUX_CDNS3_DRD */
+#endif /* __freax_CDNS3_DRD */

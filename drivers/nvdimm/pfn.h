@@ -6,8 +6,8 @@
 #ifndef __NVDIMM_PFN_H
 #define __NVDIMM_PFN_H
 
-#include <linux/types.h>
-#include <linux/mmzone.h>
+#include <freax/types.h>
+#include <freax/mmzone.h>
 
 #define PFN_SIG_LEN 16
 #define PFN_SIG "NVDIMM_PFN_INFO\0"

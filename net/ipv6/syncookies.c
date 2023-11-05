@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  IPv6 Syncookies implementation for the Linux kernel
+ *  IPv6 Syncookies implementation for the freax kernel
  *
  *  Authors:
  *  Glenn Griffin	<ggriffin.kernel@gmail.com>
  *
  *  Based on IPv4 implementation by Andi Kleen
- *  linux/net/ipv4/syncookies.c
+ *  freax/net/ipv4/syncookies.c
  */
 
-#include <linux/tcp.h>
-#include <linux/random.h>
-#include <linux/siphash.h>
-#include <linux/kernel.h>
+#include <freax/tcp.h>
+#include <freax/random.h>
+#include <freax/siphash.h>
+#include <freax/kernel.h>
 #include <net/secure_seq.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
@@ -151,11 +151,11 @@ struct sock *cookie_v6_check(struct sock *sk, struct sk_buff *skb)
 
 	mss = __cookie_v6_check(ipv6_hdr(skb), th, cookie);
 	if (mss == 0) {
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESFAILED);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_SYNCOOKIESFAILED);
 		goto out;
 	}
 
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESRECV);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_SYNCOOKIESRECV);
 
 	/* check for timestamp cookie support */
 	memset(&tcp_opt, 0, sizeof(tcp_opt));

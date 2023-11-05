@@ -14,16 +14,16 @@
  *	single producer and a single consumer CPU.
  */
 
-#ifndef _LINUX_PTR_RING_H
-#define _LINUX_PTR_RING_H 1
+#ifndef _freax_PTR_RING_H
+#define _freax_PTR_RING_H 1
 
 #ifdef __KERNEL__
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/spinlock.h>
+#include <freax/cache.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 #include <asm/errno.h>
 #endif
 
@@ -671,4 +671,4 @@ static inline void ptr_ring_cleanup(struct ptr_ring *r, void (*destroy)(void *))
 	kvfree(r->queue);
 }
 
-#endif /* _LINUX_PTR_RING_H  */
+#endif /* _freax_PTR_RING_H  */

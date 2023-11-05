@@ -25,8 +25,8 @@
 #ifndef __I915_GEM_H__
 #define __I915_GEM_H__
 
-#include <linux/bug.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/types.h>
 
 #include <drm/drm_drv.h>
 

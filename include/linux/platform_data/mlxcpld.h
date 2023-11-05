@@ -5,8 +5,8 @@
  * Copyright (C) 2016-2020 Mellanox Technologies
  */
 
-#ifndef _LINUX_I2C_MLXCPLD_H
-#define _LINUX_I2C_MLXCPLD_H
+#ifndef _freax_I2C_MLXCPLD_H
+#define _freax_I2C_MLXCPLD_H
 
 /* Platform data for the CPLD I2C multiplexers */
 
@@ -28,4 +28,4 @@ struct mlxcpld_mux_plat_data {
 				 struct i2c_adapter *adapters[]);
 };
 
-#endif /* _LINUX_I2C_MLXCPLD_H */
+#endif /* _freax_I2C_MLXCPLD_H */

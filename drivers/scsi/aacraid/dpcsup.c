@@ -4,7 +4,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for freax.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -16,13 +16,13 @@
  * Abstract: All DPC processing routines for the cyclone board occur here.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/blkdev.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
+#include <freax/blkdev.h>
 
 #include "aacraid.h"
 

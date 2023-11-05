@@ -3,7 +3,7 @@
 #ifndef ADF_PFVF_VF_PROTO_H
 #define ADF_PFVF_VF_PROTO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "adf_accel_devices.h"
 
 int adf_send_vf2pf_msg(struct adf_accel_dev *accel_dev, struct pfvf_message msg);

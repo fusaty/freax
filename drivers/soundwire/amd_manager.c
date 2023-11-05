@@ -5,17 +5,17 @@
  * Copyright 2023 Advanced Micro Devices, Inc.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/pm_runtime.h>
-#include <linux/wait.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/pm_runtime.h>
+#include <freax/wait.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bus.h"

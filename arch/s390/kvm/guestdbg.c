@@ -4,10 +4,10 @@
  *
  * Copyright IBM Corp. 2014
  *
- *    Author(s): David Hildenbrand <dahi@linux.vnet.ibm.com>
+ *    Author(s): David Hildenbrand <dahi@freax.vnet.ibm.com>
  */
-#include <linux/kvm_host.h>
-#include <linux/errno.h>
+#include <freax/kvm_host.h>
+#include <freax/errno.h>
 #include "kvm-s390.h"
 #include "gaccess.h"
 

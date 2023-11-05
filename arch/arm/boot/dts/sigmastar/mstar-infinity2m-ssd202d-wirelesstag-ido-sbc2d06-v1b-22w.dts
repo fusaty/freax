@@ -17,7 +17,7 @@
 		compatible = "gpio-leds";
 		sys_led {
 			gpios = <&gpio SSD20XD_GPIO_GPIO85 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

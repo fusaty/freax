@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/swap.c
+ * freax/kernel/power/swap.c
  *
  * This file provides functions for reading the suspend image from
  * and writing it to a swap partition.
@@ -12,24 +12,24 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/lzo.h>
-#include <linux/vmalloc.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/ktime.h>
+#include <freax/module.h>
+#include <freax/file.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/lzo.h>
+#include <freax/vmalloc.h>
+#include <freax/cpumask.h>
+#include <freax/atomic.h>
+#include <freax/kthread.h>
+#include <freax/crc32.h>
+#include <freax/ktime.h>
 
 #include "power.h"
 

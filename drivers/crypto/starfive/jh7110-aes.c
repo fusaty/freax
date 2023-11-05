@@ -11,11 +11,11 @@
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
 #include "jh7110-cryp.h"
-#include <linux/err.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/err.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #define STARFIVE_AES_REGS_OFFSET	0x100
 #define STARFIVE_AES_AESDIO0R		(STARFIVE_AES_REGS_OFFSET + 0x0)

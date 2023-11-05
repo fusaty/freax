@@ -3,8 +3,8 @@
 #ifndef __RESET_PRCC_H
 #define __RESET_PRCC_H
 
-#include <linux/reset-controller.h>
-#include <linux/io.h>
+#include <freax/reset-controller.h>
+#include <freax/io.h>
 
 /**
  * struct u8500_prcc_reset - U8500 PRCC reset controller state

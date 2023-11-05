@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_IPC_H
-#define _UAPI_LINUX_IPC_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_IPC_H
+#define _UAPI_freax_IPC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define IPC_PRIVATE ((__kernel_key_t) 0)  
 
@@ -79,4 +79,4 @@ struct ipc_kludge {
 #define IPCCALL(version,op)	((version)<<16 | (op))
 
 
-#endif /* _UAPI_LINUX_IPC_H */
+#endif /* _UAPI_freax_IPC_H */

@@ -16,12 +16,12 @@
  * 	Matt Porter <mporter@kernel.crashing.org>
  * 	Copyright 2004 MontaVista Software, Inc.
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/ethtool.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 
 #include "emac.h"

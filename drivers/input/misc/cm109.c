@@ -25,13 +25,13 @@
  *   - Read/write EEPROM
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/rwsem.h>
-#include <linux/usb/input.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/rwsem.h>
+#include <freax/usb/input.h>
 
 #define DRIVER_VERSION "20080805"
 #define DRIVER_AUTHOR  "Alfred E. Heggestad"
@@ -631,7 +631,7 @@ static int cm109_input_ev(struct input_dev *idev, unsigned int type,
 
 
 /******************************************************************************
- * Linux interface and usb initialisation
+ * freax interface and usb initialisation
  *****************************************************************************/
 
 struct driver_info {

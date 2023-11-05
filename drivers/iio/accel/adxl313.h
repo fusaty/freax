@@ -8,7 +8,7 @@
 #ifndef _ADXL313_H_
 #define _ADXL313_H_
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 /* ADXL313 register definitions */
 #define ADXL313_REG_DEVID0		0x00

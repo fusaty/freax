@@ -17,8 +17,8 @@
  * Czech Technical University        (http://www.cvut.cz/)
  ******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "ctucanfd.h"
 

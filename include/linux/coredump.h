@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_COREDUMP_H
-#define _LINUX_COREDUMP_H
+#ifndef _freax_COREDUMP_H
+#define _freax_COREDUMP_H
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
 #include <asm/siginfo.h>
 
 #ifdef CONFIG_COREDUMP
@@ -51,4 +51,4 @@ extern void validate_coredump_safety(void);
 static inline void validate_coredump_safety(void) {}
 #endif
 
-#endif /* _LINUX_COREDUMP_H */
+#endif /* _freax_COREDUMP_H */

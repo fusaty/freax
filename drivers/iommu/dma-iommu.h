@@ -5,7 +5,7 @@
 #ifndef __DMA_IOMMU_H
 #define __DMA_IOMMU_H
 
-#include <linux/iommu.h>
+#include <freax/iommu.h>
 
 #ifdef CONFIG_IOMMU_DMA
 

@@ -3,8 +3,8 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/firmware.h>
-#include <linux/fs.h>
+#include <freax/firmware.h>
+#include <freax/fs.h>
 #include "mt7996.h"
 #include "mcu.h"
 #include "mac.h"

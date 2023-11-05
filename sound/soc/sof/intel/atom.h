@@ -5,7 +5,7 @@
  *
  * Copyright(c) 2017-2021 Intel Corporation. All rights reserved.
  *
- * Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+ * Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
  */
 
 #ifndef __SOF_INTEL_ATOM_H

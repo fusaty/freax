@@ -5,8 +5,8 @@
 #ifndef __ASM_VECTORS_H
 #define __ASM_VECTORS_H
 
-#include <linux/bug.h>
-#include <linux/percpu.h>
+#include <freax/bug.h>
+#include <freax/percpu.h>
 
 #include <asm/fixmap.h>
 

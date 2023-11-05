@@ -14,34 +14,34 @@
  *     argument : macaddr=0x00,0x10,0x20,0x30,0x40,0x50
  */
 
-#include <linux/bitops.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/fcntl.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/fcntl.h>
+#include <freax/in.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include <asm/byteorder.h>
 #include <asm/dma.h>
@@ -2202,7 +2202,7 @@ static void hme_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *info
 	}
 #ifdef CONFIG_SBUS
 	else {
-		const struct linux_prom_registers *regs;
+		const struct freax_prom_registers *regs;
 		struct platform_device *op = hp->happy_dev;
 		regs = of_get_property(op->dev.of_node, "regs", NULL);
 		if (regs)

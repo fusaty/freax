@@ -31,37 +31,37 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/bitfield.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/math.h>
-#include <linux/nospec.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/tty_driver.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/major.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/fcntl.h>
+#include <freax/sched/signal.h>
+#include <freax/interrupt.h>
+#include <freax/tty.h>
+#include <freax/bitfield.h>
+#include <freax/ctype.h>
+#include <freax/mm.h>
+#include <freax/math.h>
+#include <freax/nospec.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/bitops.h>
+#include <freax/file.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/tty_flip.h>
+#include <freax/tty_driver.h>
+#include <freax/serial.h>
+#include <freax/kfifo.h>
+#include <freax/skbuff.h>
 #include <net/arp.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/gsmmux.h>
+#include <freax/ip.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/gsmmux.h>
 #include "tty.h"
 
 static int debug;
@@ -1672,7 +1672,7 @@ static int gsm_process_negotiation(struct gsm_mux *gsm, unsigned int addr,
  *
  *	We have received a modem status control message. This is used by
  *	the GSM mux protocol to pass virtual modem line status and optionally
- *	to indicate break signals. Unpack it, convert to Linux representation
+ *	to indicate break signals. Unpack it, convert to freax representation
  *	and if need be stuff a break message down the tty.
  */
 
@@ -2275,7 +2275,7 @@ static void gsm_dlci_t1(struct timer_list *t)
  *	gsm_dlci_begin_open	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence opening a DLCI from the Linux side. We issue SABM messages
+ *	Commence opening a DLCI from the freax side. We issue SABM messages
  *	to the modem which should then reply with a UA or ADM, at which point
  *	we will move into open state. Opening is done asynchronously with retry
  *	running off timers and the responses.
@@ -2364,7 +2364,7 @@ static void gsm_dlci_set_wait_config(struct gsm_dlci *dlci)
  *	gsm_dlci_begin_close	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence closing a DLCI from the Linux side. We issue DISC messages
+ *	Commence closing a DLCI from the freax side. We issue DISC messages
  *	to the modem which should then reply with a UA, at which point we
  *	will move into closed state. Closing is done asynchronously with retry
  *	off timers. We may also receive a DM reply from the other end which

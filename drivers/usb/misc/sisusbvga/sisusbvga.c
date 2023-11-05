@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the freax kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -37,18 +37,18 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/poll.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/kref.h>
+#include <freax/usb.h>
+#include <freax/vmalloc.h>
 
 #include "sisusb.h"
 

@@ -6,13 +6,13 @@
  * Author: Andrey Ryabinin <ryabinin.a.a@gmail.com>
  */
 
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pfn.h>
+#include <freax/slab.h>
 
 #include <asm/page.h>
 #include <asm/pgalloc.h>

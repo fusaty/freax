@@ -53,7 +53,7 @@
 		led-status {
 			label = "bcm53xx:green:status";
 			gpios = <&chipcommon 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 		};
 	};
 
@@ -62,7 +62,7 @@
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 	};

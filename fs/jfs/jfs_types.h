@@ -14,8 +14,8 @@
  * of JFS include list in all JFS .c file.
  */
 
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <freax/types.h>
+#include <freax/nls.h>
 
 /*
  * transaction and lock id's
@@ -27,7 +27,7 @@ typedef u16 tid_t;
 typedef u16 lid_t;
 
 /*
- * Almost identical to Linux's timespec, but not quite
+ * Almost identical to freax's timespec, but not quite
  */
 struct timestruc_t {
 	__le32 tv_sec;

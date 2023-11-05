@@ -5,27 +5,27 @@
  * Copyright 2007 IBM Corporation
  *
  * Stephen Winiecki <stevewin@us.ibm.com>
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@freax.vnet.ibm.com>
  *
  * Based on code from mpc7448_hpc2.c
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/extable.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/kdev_t.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/seq_file.h>
+#include <freax/root_dev.h>
+#include <freax/serial.h>
+#include <freax/tty.h>
+#include <freax/serial_core.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/extable.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

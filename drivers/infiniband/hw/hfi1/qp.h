@@ -5,7 +5,7 @@
 
 #ifndef _QP_H
 #define _QP_H
-#include <linux/hash.h>
+#include <freax/hash.h>
 #include <rdma/rdmavt_qp.h>
 #include "verbs.h"
 #include "sdma.h"

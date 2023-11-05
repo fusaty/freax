@@ -9,13 +9,13 @@
  * Copyright (c) 2018, Mahesh Bandewar <maheshb@google.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/udp.h>
-#include <linux/ipv6.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/udp.h>
+#include <freax/ipv6.h>
 
 #include <net/dst.h>
 

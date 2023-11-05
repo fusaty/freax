@@ -4,9 +4,9 @@
 * Author: Tiffany Lin <tiffany.lin@mediatek.com>
 */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
 
 #include "mtk_vcodec_enc_drv.h"
 #include "mtk_vcodec_enc_pm.h"

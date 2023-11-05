@@ -4,19 +4,19 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/kexec.h>
+#include <freax/kexec.h>
 #include <asm/kexec.h>		/* For riscv_kexec_* symbol defines */
-#include <linux/smp.h>		/* For smp_send_stop () */
+#include <freax/smp.h>		/* For smp_send_stop () */
 #include <asm/cacheflush.h>	/* For local_flush_icache_all() */
 #include <asm/barrier.h>	/* For smp_wmb() */
 #include <asm/page.h>		/* For PAGE_MASK */
-#include <linux/libfdt.h>	/* For fdt_check_header() */
+#include <freax/libfdt.h>	/* For fdt_check_header() */
 #include <asm/set_memory.h>	/* For set_memory_x() */
-#include <linux/compiler.h>	/* For unreachable() */
-#include <linux/cpu.h>		/* For cpu_down() */
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/compiler.h>	/* For unreachable() */
+#include <freax/cpu.h>		/* For cpu_down() */
+#include <freax/reboot.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
 /*
  * kexec_image_info - Print received image details
@@ -195,7 +195,7 @@ machine_crash_shutdown(struct pt_regs *regs)
  * machine_kexec - Jump to the loaded kimage
  *
  * This function is called by kernel_kexec which is called by the
- * reboot system call when the reboot cmd is LINUX_REBOOT_CMD_KEXEC,
+ * reboot system call when the reboot cmd is freax_REBOOT_CMD_KEXEC,
  * or by crash_kernel which is called by the kernel's arch-specific
  * trap handler in case of a kernel panic. It's the final stage of
  * the kexec process where the pre-loaded kimage is ready to be

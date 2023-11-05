@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/u64_stats_sync.h>
-#include <uapi/linux/if_link.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/workqueue.h>
+#include <freax/u64_stats_sync.h>
+#include <uapi/freax/if_link.h>
 
 struct xrs700x_info {
 	unsigned int id;

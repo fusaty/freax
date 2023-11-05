@@ -95,28 +95,28 @@
 
 		key-1 {
 			gpios = <&gpio5 10 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			label = "SW4-1";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-2 {
 			gpios = <&gpio5 11 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_2>;
+			freax,code = <KEY_2>;
 			label = "SW4-2";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-3 {
 			gpios = <&gpio5 12 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_3>;
+			freax,code = <KEY_3>;
 			label = "SW4-3";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-4 {
 			gpios = <&gpio5 13 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_4>;
+			freax,code = <KEY_4>;
 			label = "SW4-4";
 			wakeup-source;
 			debounce-interval = <20>;

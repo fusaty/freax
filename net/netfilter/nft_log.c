@@ -6,18 +6,18 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/audit.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/audit.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_log.h>
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 static const char *nft_log_null_prefix = "";
 

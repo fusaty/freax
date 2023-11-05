@@ -12,17 +12,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/wait.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/kthread.h>
 #include "cpqphp.h"
 
 static u32 configure_new_device(struct controller *ctrl, struct pci_func *func,
@@ -1559,9 +1559,9 @@ static u32 board_added(struct pci_func *func, struct controller *ctrl)
 		func->switch_save = 0x10;
 		func->is_a_board = 0x01;
 
-		/* next, we will instantiate the linux pci_dev structures (with
+		/* next, we will instantiate the freax pci_dev structures (with
 		 * appropriate driver notification, if already present) */
-		dbg("%s: configure linux pci_dev structure\n", __func__);
+		dbg("%s: configure freax pci_dev structure\n", __func__);
 		index = 0;
 		do {
 			new_slot = cpqhp_slot_find(ctrl->bus, func->device, index++);

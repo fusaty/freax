@@ -15,12 +15,12 @@
  *    - EMU10K1X-DBQ
  *    - STAC 9708T
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

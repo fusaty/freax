@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2012, Red Hat, Inc.  Rafael Aquini <aquini@redhat.com>
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/balloon_compaction.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/balloon_compaction.h>
 
 static void balloon_page_enqueue_one(struct balloon_dev_info *b_dev_info,
 				     struct page *page)
@@ -236,7 +236,7 @@ static int balloon_page_migrate(struct page *newpage, struct page *page,
 
 	/*
 	 * We can not easily support the no copy case here so ignore it as it
-	 * is unlikely to be used with balloon pages. See include/linux/hmm.h
+	 * is unlikely to be used with balloon pages. See include/freax/hmm.h
 	 * for a user of the MIGRATE_SYNC_NO_COPY mode.
 	 */
 	if (mode == MIGRATE_SYNC_NO_COPY)

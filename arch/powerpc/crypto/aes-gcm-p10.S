@@ -5,7 +5,7 @@
  # Copyright 2022- IBM Inc. All rights reserved
  #
  #===================================================================================
- # Written by Danny Tsen <dtsen@linux.ibm.com>
+ # Written by Danny Tsen <dtsen@freax.ibm.com>
  #
  # GHASH is based on the Karatsuba multiplication method.
  #
@@ -39,7 +39,7 @@
  #
 
 #include <asm/ppc_asm.h>
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 .machine        "any"
 .text

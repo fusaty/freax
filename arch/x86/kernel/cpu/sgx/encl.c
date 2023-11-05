@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*  Copyright(c) 2016-20 Intel Corporation. */
 
-#include <linux/lockdep.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/shmem_fs.h>
-#include <linux/suspend.h>
-#include <linux/sched/mm.h>
+#include <freax/lockdep.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/shmem_fs.h>
+#include <freax/suspend.h>
+#include <freax/sched/mm.h>
 #include <asm/sgx.h>
 #include "encl.h"
 #include "encls.h"

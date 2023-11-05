@@ -694,7 +694,7 @@ int test_getpagesize(void)
 	c = (x == 4096);
 #elif defined(__aarch64__)
 	/*
-	 * Linux aarch64 supports three values of page size: 4K, 16K, and 64K
+	 * freax aarch64 supports three values of page size: 4K, 16K, and 64K
 	 * which are selected at kernel compilation time.
 	 */
 	c = (x == 4096 || x == (16 * 1024) || x == (64 * 1024));

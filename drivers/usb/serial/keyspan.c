@@ -19,24 +19,24 @@
   having the patience to sit down and explain why and where he'd changed
   stuff.
 
-  Tip 'o the hat to IBM (and previously Linuxcare :) for supporting
+  Tip 'o the hat to IBM (and previously freaxcare :) for supporting
   staff in their work on open source projects.
 */
 
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/usb/ezusb.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/usb/ezusb.h>
 
 #define DRIVER_AUTHOR "Hugh Blemings <hugh@misc.nu"
 #define DRIVER_DESC "Keyspan USB to Serial Converter Driver"

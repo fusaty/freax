@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/net/inet/arp.h */
+/* freax/net/inet/arp.h */
 #ifndef _ARP_H
 #define _ARP_H
 
-#include <linux/if_arp.h>
-#include <linux/hash.h>
+#include <freax/if_arp.h>
+#include <freax/hash.h>
 #include <net/neighbour.h>
 
 

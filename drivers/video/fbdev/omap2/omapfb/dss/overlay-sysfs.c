@@ -9,12 +9,12 @@
 
 #define DSS_SUBSYS_NAME "OVERLAY"
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/kstrtox.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/kstrtox.h>
+#include <freax/platform_device.h>
 
 #include <video/omapfb_dss.h>
 

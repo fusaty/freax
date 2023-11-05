@@ -4,8 +4,8 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
 #include "qed.h"
 #include "qed_sriov.h"
 #include "qed_vf.h"
@@ -264,7 +264,7 @@ static int qed_vf_pf_acquire(struct qed_hwfn *p_hwfn)
 	p_resc->num_vlan_filters = QED_ETH_VF_NUM_VLAN_FILTERS;
 	p_resc->num_cids = QED_ETH_VF_DEFAULT_NUM_CIDS;
 
-	req->vfdev_info.os_type = VFPF_ACQUIRE_OS_LINUX;
+	req->vfdev_info.os_type = VFPF_ACQUIRE_OS_freax;
 	req->vfdev_info.fw_major = FW_MAJOR_VERSION;
 	req->vfdev_info.fw_minor = FW_MINOR_VERSION;
 	req->vfdev_info.fw_revision = FW_REVISION_VERSION;

@@ -10,12 +10,12 @@
  * Copyright (C) 2007 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  */
-#ifndef __TOOLS_LINUX_ASM_GENERIC_BARRIER_H
-#define __TOOLS_LINUX_ASM_GENERIC_BARRIER_H
+#ifndef __TOOLS_freax_ASM_GENERIC_BARRIER_H
+#define __TOOLS_freax_ASM_GENERIC_BARRIER_H
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * Force strict CPU ordering. And yes, this is required on UP too when we're
@@ -37,4 +37,4 @@
 #endif
 
 #endif /* !__ASSEMBLY__ */
-#endif /* __TOOLS_LINUX_ASM_GENERIC_BARRIER_H */
+#endif /* __TOOLS_freax_ASM_GENERIC_BARRIER_H */

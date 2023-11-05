@@ -6,10 +6,10 @@
  */
 #ifndef _LEC_ARP_H_
 #define _LEC_ARP_H_
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/if_ether.h>
-#include <linux/atmlec.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/if_ether.h>
+#include <freax/atmlec.h>
 
 struct lec_arp_table {
 	struct hlist_node next;		/* Linked entry list */

@@ -7,7 +7,7 @@
 #ifndef _VXLAN_PRIVATE_H
 #define _VXLAN_PRIVATE_H
 
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 
 extern unsigned int vxlan_net_id;
 extern const u8 all_zeros_mac[ETH_ALEN + 2];

@@ -3,9 +3,9 @@
  * Copyright © 2022 Intel Corporation
  */
 
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/types.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/types.h>
 
 #include "i915_drv.h"
 #include "i915_hwmon.h"

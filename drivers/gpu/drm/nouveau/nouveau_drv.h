@@ -38,7 +38,7 @@
  *      - implemented limited ABI16/NVIF interop
  */
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 #include <nvif/client.h>
 #include <nvif/device.h>

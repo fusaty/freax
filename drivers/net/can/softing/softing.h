@@ -5,13 +5,13 @@
  * by Kurt Van Dijck, 2008-2010
  */
 
-#include <linux/atomic.h>
-#include <linux/netdevice.h>
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <freax/atomic.h>
+#include <freax/netdevice.h>
+#include <freax/ktime.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
 
 #include "softing_platform.h"
 

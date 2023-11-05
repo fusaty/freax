@@ -9,13 +9,13 @@
  * The MFGPTs are documented in AMD Geode CS5536 Companion Device Data Book.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/cs5535.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/cs5535.h>
+#include <freax/slab.h>
 
 #define DRV_NAME "cs5535-mfgpt"
 
@@ -108,7 +108,7 @@ int cs5535_mfgpt_set_irq(struct cs5535_mfgpt_timer *timer, int cmp, int *irq,
 	 * Unfortunately, MFGPTs come in pairs sharing their IRQ lines. If VSA
 	 * is using the same CMP of the timer's Siamese twin, the IRQ is set to
 	 * 2, and we mustn't use nor change it.
-	 * XXX: Likewise, 2 Linux drivers might clash if the 2nd overwrites the
+	 * XXX: Likewise, 2 freax drivers might clash if the 2nd overwrites the
 	 * IRQ of the 1st. This can only happen if forcing an IRQ, calling this
 	 * with *irq==0 is safe. Currently there _are_ no 2 drivers.
 	 */

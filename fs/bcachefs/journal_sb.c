@@ -4,7 +4,7 @@
 #include "journal_sb.h"
 #include "darray.h"
 
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 /* BCH_SB_FIELD_journal: */
 

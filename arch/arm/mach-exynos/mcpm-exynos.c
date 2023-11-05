@@ -4,12 +4,12 @@
 //
 // Based on arch/arm/mach-vexpress/dcscb.c
 
-#include <linux/arm-cci.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/syscore_ops.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
+#include <freax/arm-cci.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/syscore_ops.h>
+#include <freax/soc/samsung/exynos-regs-pmu.h>
 
 #include <asm/cputype.h>
 #include <asm/cp15.h>

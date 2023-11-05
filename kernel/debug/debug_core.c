@@ -27,36 +27,36 @@
 
 #define pr_fmt(fmt) "KGDB: " fmt
 
-#include <linux/pid_namespace.h>
-#include <linux/clocksource.h>
-#include <linux/serial_core.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/console.h>
-#include <linux/threads.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/sysrq.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/nmi.h>
-#include <linux/pid.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
-#include <linux/irq.h>
-#include <linux/security.h>
+#include <freax/pid_namespace.h>
+#include <freax/clocksource.h>
+#include <freax/serial_core.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/console.h>
+#include <freax/threads.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ptrace.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/sysrq.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/kgdb.h>
+#include <freax/kdb.h>
+#include <freax/nmi.h>
+#include <freax/pid.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/rcupdate.h>
+#include <freax/irq.h>
+#include <freax/security.h>
 
 #include <asm/cacheflush.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "debug_core.h"
 
@@ -469,7 +469,7 @@ void kdb_dump_stack_on_cpu(int cpu)
 	/*
 	 * In general, architectures don't support dumping the stack of a
 	 * "running" process that's not the current one.  From the point of
-	 * view of the Linux, kernel processes that are looping in the kgdb
+	 * view of the freax, kernel processes that are looping in the kgdb
 	 * slave loop are still "running".  There's also no API (that actually
 	 * works across all architectures) that can do a stack crawl based
 	 * on registers passed as a parameter.
@@ -521,7 +521,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 
 	/* Panic on recursive debugger calls: */
 	exception_level++;
-	addr = kgdb_arch_pc(ks->ex_vector, ks->linux_regs);
+	addr = kgdb_arch_pc(ks->ex_vector, ks->freax_regs);
 	dbg_deactivate_sw_breakpoints();
 
 	/*
@@ -532,7 +532,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 	 */
 	if (dbg_remove_sw_break(addr) == 0) {
 		exception_level = 0;
-		kgdb_skipexception(ks->ex_vector, ks->linux_regs);
+		kgdb_skipexception(ks->ex_vector, ks->freax_regs);
 		dbg_activate_sw_breakpoints();
 		pr_crit("re-enter error: breakpoint removed %lx\n", addr);
 		WARN_ON_ONCE(1);
@@ -540,7 +540,7 @@ static int kgdb_reenter_check(struct kgdb_state *ks)
 		return 1;
 	}
 	dbg_remove_all_break();
-	kgdb_skipexception(ks->ex_vector, ks->linux_regs);
+	kgdb_skipexception(ks->ex_vector, ks->freax_regs);
 
 	if (exception_level > 1) {
 		dump_stack();
@@ -683,7 +683,7 @@ return_normal:
 	/*
 	 * Don't enter if we have hit a removed breakpoint.
 	 */
-	if (kgdb_skipexception(ks->ex_vector, ks->linux_regs))
+	if (kgdb_skipexception(ks->ex_vector, ks->freax_regs))
 		goto kgdb_restore;
 
 	atomic_inc(&ignore_console_lock_warning);
@@ -855,7 +855,7 @@ kgdb_handle_exception(int evector, int signo, int ecode, struct pt_regs *regs)
 	ks->ex_vector		= evector;
 	ks->signo		= signo;
 	ks->err_code		= ecode;
-	ks->linux_regs		= regs;
+	ks->freax_regs		= regs;
 
 	if (kgdb_reenter_check(ks))
 		goto out; /* Ouch, double exception ! */
@@ -893,7 +893,7 @@ int kgdb_nmicallback(int cpu, void *regs)
 
 	memset(ks, 0, sizeof(struct kgdb_state));
 	ks->cpu			= cpu;
-	ks->linux_regs		= regs;
+	ks->freax_regs		= regs;
 
 	if (kgdb_info[ks->cpu].enter_kgdb == 0 &&
 			raw_spin_is_locked(&dbg_master_lock)) {
@@ -921,7 +921,7 @@ int kgdb_nmicallin(int cpu, int trapnr, void *regs, int err_code,
 		ks->ex_vector		= trapnr;
 		ks->signo		= SIGTRAP;
 		ks->err_code		= err_code;
-		ks->linux_regs		= regs;
+		ks->freax_regs		= regs;
 		ks->send_ready		= send_ready;
 		kgdb_cpu_enter(ks, regs, DCPU_WANT_MASTER);
 		return 0;

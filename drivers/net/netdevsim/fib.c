@@ -14,13 +14,13 @@
  * THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
  */
 
-#include <linux/bitmap.h>
-#include <linux/in6.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rhashtable.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <freax/bitmap.h>
+#include <freax/in6.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/rhashtable.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
 #include <net/fib_notifier.h>
 #include <net/inet_dscp.h>
 #include <net/ip_fib.h>
@@ -28,7 +28,7 @@
 #include <net/fib_rules.h>
 #include <net/net_namespace.h>
 #include <net/nexthop.h>
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "netdevsim.h"
 

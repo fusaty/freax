@@ -5,8 +5,8 @@
  * Copyright (C) 2012  Renesas Solutions Corp.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
 
 #include <cpu/pfc.h>
 

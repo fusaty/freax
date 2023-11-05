@@ -3,14 +3,14 @@
  * Copyright (C) 2019 SiFive
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/ptdump.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/ptdump.h>
 
 #include <asm/ptdump.h>
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 #include <asm/kasan.h>
 
 #define pt_dump_seq_printf(m, fmt, args...)	\

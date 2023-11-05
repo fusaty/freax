@@ -6,7 +6,7 @@
 #define _NET_DSA_8021Q_H
 
 #include <net/dsa.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 int dsa_tag_8021q_register(struct dsa_switch *ds, __be16 proto);
 

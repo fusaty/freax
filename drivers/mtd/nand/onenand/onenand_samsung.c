@@ -11,16 +11,16 @@
  *	S5PC110: use DMA
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/onenand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
 #include "samsung.h"
 

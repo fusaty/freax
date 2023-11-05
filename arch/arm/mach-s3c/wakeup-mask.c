@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 //
-// Copyright 2010 Ben Dooks <ben-linux@fluff.org>
+// Copyright 2010 Ben Dooks <ben-freax@fluff.org>
 //
 // Support for wakeup mask interrupts on newer SoCs
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/irq.h>
+#include <freax/io.h>
 
 #include "wakeup-mask.h"
 #include "pm.h"

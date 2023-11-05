@@ -7,9 +7,9 @@
  * Copyright (c) 2020, Oracle and/or its affiliates.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/nfs_ssc.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/nfs_ssc.h>
 #include "../nfs/nfs4_fs.h"
 
 

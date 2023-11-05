@@ -41,8 +41,8 @@ $code.=<<___;
 #ifndef	__KERNEL__
 # include "arm_arch.h"
 #else
-# define __ARM_ARCH__ __LINUX_ARM_ARCH__
-# define __ARM_MAX_ARCH__ __LINUX_ARM_ARCH__
+# define __ARM_ARCH__ __freax_ARM_ARCH__
+# define __ARM_MAX_ARCH__ __freax_ARM_ARCH__
 # define poly1305_init   poly1305_init_arm
 # define poly1305_blocks poly1305_blocks_arm
 # define poly1305_emit   poly1305_emit_arm

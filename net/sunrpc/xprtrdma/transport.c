@@ -49,13 +49,13 @@
  * transport switch. All others are RPC RDMA internal.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
+#include <freax/smp.h>
 
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

@@ -5,8 +5,8 @@
  * Copyright(c) 2018 - 2020, 2023 Intel Corporation
  *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/stringify.h>
+#include <freax/module.h>
+#include <freax/stringify.h>
 #include "iwl-config.h"
 #include "iwl-agn-hw.h"
 

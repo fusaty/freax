@@ -8,8 +8,8 @@
 #ifndef REMOTEPROC_ELF_LOADER_H
 #define REMOTEPROC_ELF_LOADER_H
 
-#include <linux/elf.h>
-#include <linux/types.h>
+#include <freax/elf.h>
+#include <freax/types.h>
 
 /**
  * fw_elf_get_class - Get elf class

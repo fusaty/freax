@@ -2,7 +2,7 @@
 /* Copyright Altera Corporation (C) 2014. All rights reserved.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <asm/delay.h>
 #include <asm/param.h>
 #include <asm/processor.h>

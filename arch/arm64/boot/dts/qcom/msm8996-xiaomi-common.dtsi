@@ -37,7 +37,7 @@
 		key-vol-up {
 			label = "Volume Up";
 			gpios = <&pm8994_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -45,7 +45,7 @@
 		key-dome {
 			label = "Home";
 			gpios = <&tlmm 34 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -293,7 +293,7 @@
 &pm8994_resin {
 	status = "okay";
 
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 };
 
 &pm8994_lpg {

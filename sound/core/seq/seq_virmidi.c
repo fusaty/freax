@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/info.h>

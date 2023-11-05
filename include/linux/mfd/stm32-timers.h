@@ -4,13 +4,13 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com>
  */
 
-#ifndef _LINUX_STM32_GPTIMER_H_
-#define _LINUX_STM32_GPTIMER_H_
+#ifndef _freax_STM32_GPTIMER_H_
+#define _freax_STM32_GPTIMER_H_
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/regmap.h>
 
 #define TIM_CR1		0x00	/* Control Register 1      */
 #define TIM_CR2		0x04	/* Control Register 2      */

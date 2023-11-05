@@ -4,20 +4,20 @@
  *
  * Copyright (C) 2008 Atmel Corporation
  */
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/fault-inject.h>
-#include <linux/time.h>
+#include <freax/moduleparam.h>
+#include <freax/export.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/fault-inject.h>
+#include <freax/time.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
 
 #include "core.h"
 #include "card.h"

@@ -38,20 +38,20 @@
 		button-sync {
 			wakeup-source;
 			/* Closest approximation of what the key should do */
-			linux,code = <KEY_CONNECT>;
+			freax,code = <KEY_CONNECT>;
 			label = "sync";
 			gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
 		};
 		button-reset {
 			wakeup-source;
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			label = "reset";
 			gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 		};
 		button-usb {
 			wakeup-source;
 			/* Unplug USB, closest approximation of what the key should do */
-			linux,code = <KEY_EJECTCD>;
+			freax,code = <KEY_EJECTCD>;
 			label = "usb";
 			gpios = <&gpio0 10 GPIO_ACTIVE_LOW>;
 		};
@@ -112,7 +112,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x01>;
 					label = "fsg:blue:wlan";
-					linux,default-trigger = "wlan";
+					freax,default-trigger = "wlan";
 					default-state = "on";
 				};
 				led@0,1 {
@@ -120,7 +120,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x02>;
 					label = "fsg:blue:wan";
-					linux,default-trigger = "";
+					freax,default-trigger = "";
 					default-state = "on";
 				};
 				led@0,2 {
@@ -128,7 +128,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x04>;
 					label = "fsg:blue:sata";
-					linux,default-trigger = "";
+					freax,default-trigger = "";
 					default-state = "on";
 				};
 				led@0,3 {
@@ -136,7 +136,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x04>;
 					label = "fsg:blue:usb";
-					linux,default-trigger = "";
+					freax,default-trigger = "";
 					default-state = "on";
 				};
 				led@0,4 {
@@ -144,7 +144,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x08>;
 					label = "fsg:blue:sync";
-					linux,default-trigger = "";
+					freax,default-trigger = "";
 					default-state = "on";
 				};
 				led@0,5 {
@@ -152,7 +152,7 @@
 					reg = <0x00 0x02>;
 					mask = <0x10>;
 					label = "fsg:blue:ring";
-					linux,default-trigger = "";
+					freax,default-trigger = "";
 					default-state = "on";
 				};
 			};

@@ -11,8 +11,8 @@
 #ifndef ST_ACCEL_H
 #define ST_ACCEL_H
 
-#include <linux/types.h>
-#include <linux/iio/common/st_sensors.h>
+#include <freax/types.h>
+#include <freax/iio/common/st_sensors.h>
 
 #define H3LIS331DL_ACCEL_DEV_NAME	"h3lis331dl_accel"
 #define LIS3LV02DL_ACCEL_DEV_NAME	"lis3lv02dl_accel"

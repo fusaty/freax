@@ -4,11 +4,11 @@
  *  Authored by: Mike D. Day <ncmike@us.ibm.com>
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/err.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/kobject.h>
+#include <freax/err.h>
 
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/hypercall.h>

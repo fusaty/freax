@@ -6,10 +6,10 @@
  * Copyright (c) 2008 Embedded Alley Solutions Inc
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include "hda_beep.h"
 #include "hda_local.h"

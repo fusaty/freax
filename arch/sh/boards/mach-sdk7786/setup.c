@@ -5,21 +5,21 @@
  * Copyright (C) 2010  Matt Fleming
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/smsc911x.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
 #include <mach/fpga.h>
 #include <mach/irq.h>
 #include <asm/machvec.h>
 #include <asm/heartbeat.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/clock.h>
 #include <asm/reboot.h>
 #include <asm/smp-ops.h>

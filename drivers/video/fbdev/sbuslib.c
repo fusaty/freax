@@ -4,14 +4,14 @@
  * Copyright (C) 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <freax/compat.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/fb.h>
+#include <freax/mm.h>
+#include <freax/uaccess.h>
+#include <freax/of.h>
 
 #include <asm/fbio.h>
 

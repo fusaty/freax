@@ -4,22 +4,22 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/xattr.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
+#include <freax/uio.h>
+#include <freax/xattr.h>
 #include <crypto/hash.h>
 #include <crypto/aead.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
+#include <freax/random.h>
+#include <freax/scatterlist.h>
 
 #include "auth.h"
 #include "glob.h"
 
-#include <linux/fips.h>
+#include <freax/fips.h>
 #include <crypto/des.h>
 
 #include "server.h"

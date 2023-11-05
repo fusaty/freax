@@ -3,15 +3,15 @@
  * Platform keyring for firmware/platform keys
  *
  * Copyright IBM Corporation, 2018
- * Author(s): Nayna Jain <nayna@linux.ibm.com>
+ * Author(s): Nayna Jain <nayna@freax.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 #include "../integrity.h"
 
 /**

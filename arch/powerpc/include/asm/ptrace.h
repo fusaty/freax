@@ -19,7 +19,7 @@
 #ifndef _ASM_POWERPC_PTRACE_H
 #define _ASM_POWERPC_PTRACE_H
 
-#include <linux/err.h>
+#include <freax/err.h>
 #include <uapi/asm/ptrace.h>
 #include <asm/asm-const.h>
 #include <asm/reg.h>
@@ -338,8 +338,8 @@ static inline void regs_set_unrecoverable(struct pt_regs *regs)
  * kprobe-based event tracer support
  */
 
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
+#include <freax/stddef.h>
+#include <freax/thread_info.h>
 extern int regs_query_register_offset(const char *name);
 extern const char *regs_query_register_name(unsigned int offset);
 #define MAX_REG_OFFSET (offsetof(struct pt_regs, dsisr))

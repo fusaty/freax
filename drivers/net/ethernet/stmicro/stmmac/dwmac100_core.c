@@ -14,7 +14,7 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 #include <asm/io.h>
 #include "stmmac.h"
 #include "dwmac100.h"

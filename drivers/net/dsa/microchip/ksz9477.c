@@ -5,13 +5,13 @@
  * Copyright (C) 2017-2019 Microchip Technology Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/platform_data/microchip-ksz.h>
-#include <linux/phy.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/iopoll.h>
+#include <freax/platform_data/microchip-ksz.h>
+#include <freax/phy.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
 #include <net/dsa.h>
 #include <net/switchdev.h>
 

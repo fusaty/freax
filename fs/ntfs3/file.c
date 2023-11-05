@@ -7,12 +7,12 @@
  *
  */
 
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/compat.h>
-#include <linux/falloc.h>
-#include <linux/fiemap.h>
+#include <freax/backing-dev.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/compat.h>
+#include <freax/falloc.h>
+#include <freax/fiemap.h>
 
 #include "debug.h"
 #include "ntfs.h"
@@ -698,7 +698,7 @@ int ntfs3_setattr(struct mnt_idmap *idmap, struct dentry *dentry,
 		if (err)
 			goto out;
 
-		/* Linux 'w' -> Windows 'ro'. */
+		/* freax 'w' -> Windows 'ro'. */
 		if (0222 & inode->i_mode)
 			ni->std_fa &= ~FILE_ATTRIBUTE_READONLY;
 		else

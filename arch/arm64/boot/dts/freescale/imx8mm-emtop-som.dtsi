@@ -27,7 +27,7 @@
 		led-0 {
 			function = LED_FUNCTION_POWER;
 			gpios = <&gpio3 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

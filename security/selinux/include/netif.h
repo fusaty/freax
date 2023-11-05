@@ -11,8 +11,8 @@
  * Copyright (C) 2007 Hewlett-Packard Development Company, L.P.
  *                    Paul Moore <paul@paul-moore.com>
  */
-#ifndef _SELINUX_NETIF_H_
-#define _SELINUX_NETIF_H_
+#ifndef _SEfreax_NETIF_H_
+#define _SEfreax_NETIF_H_
 
 #include <net/net_namespace.h>
 
@@ -20,5 +20,5 @@ void sel_netif_flush(void);
 
 int sel_netif_sid(struct net *ns, int ifindex, u32 *sid);
 
-#endif	/* _SELINUX_NETIF_H_ */
+#endif	/* _SEfreax_NETIF_H_ */
 

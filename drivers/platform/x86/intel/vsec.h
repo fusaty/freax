@@ -2,8 +2,8 @@
 #ifndef _VSEC_H
 #define _VSEC_H
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bits.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/bits.h>
 
 #define VSEC_CAP_TELEMETRY	BIT(0)
 #define VSEC_CAP_WATCHER	BIT(1)

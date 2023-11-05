@@ -1,5 +1,5 @@
 /*
- *  linux/net/sunrpc/gss_krb5_crypto.c
+ *  freax/net/sunrpc/gss_krb5_crypto.c
  *
  *  Copyright (c) 2000-2008 The Regents of the University of Michigan.
  *  All rights reserved.
@@ -37,15 +37,15 @@
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
 #include <crypto/utils.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/random.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/scatterlist.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/random.h>
+#include <freax/sunrpc/gss_krb5.h>
+#include <freax/sunrpc/xdr.h>
 #include <kunit/visibility.h>
 
 #include "gss_krb5_internal.h"

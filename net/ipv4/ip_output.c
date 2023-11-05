@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,12 +9,12 @@
  * Authors:	Ross Biro
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Donald Becker, <becker@super.org>
- *		Alan Cox, <Alan.Cox@linux.org>
+ *		Alan Cox, <Alan.Cox@freax.org>
  *		Richard Underwood
  *		Stefan Becker, <stefanb@yello.ping.de>
  *		Jorge Cwik, <jorge@laser.satlink.net>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@vafreax.co.jp>
  *
  *	See ip_input.c for original log
  *
@@ -43,32 +43,32 @@
  *		Hirokazu Takahashi:	sendfile() on UDP works now.
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
 
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/init.h>
 
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/route.h>
 #include <net/xfrm.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
 #include <net/arp.h>
 #include <net/icmp.h>
@@ -77,12 +77,12 @@
 #include <net/inetpeer.h>
 #include <net/inet_ecn.h>
 #include <net/lwtunnel.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/igmp.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netlink.h>
-#include <linux/tcp.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/igmp.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/netlink.h>
+#include <freax/tcp.h>
 
 static int
 ip_fragment(struct net *net, struct sock *sk, struct sk_buff *skb,

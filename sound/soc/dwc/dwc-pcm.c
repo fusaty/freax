@@ -11,8 +11,8 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/rcupdate.h>
+#include <freax/io.h>
+#include <freax/rcupdate.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include "local.h"

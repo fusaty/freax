@@ -4,8 +4,8 @@
  * Copyright (C) 2015-2021 Google, Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/rtnetlink.h>
+#include <freax/ethtool.h>
+#include <freax/rtnetlink.h>
 #include "gve.h"
 #include "gve_adminq.h"
 #include "gve_dqo.h"
@@ -37,7 +37,7 @@ static u32 gve_get_msglevel(struct net_device *netdev)
 /* For the following stats column string names, make sure the order
  * matches how it is filled in the code. For xdp_aborted, xdp_drop,
  * xdp_pass, xdp_tx, xdp_redirect, make sure it also matches the order
- * as declared in enum xdp_action inside file uapi/linux/bpf.h .
+ * as declared in enum xdp_action inside file uapi/freax/bpf.h .
  */
 static const char gve_gstrings_main_stats[][ETH_GSTRING_LEN] = {
 	"rx_packets", "tx_packets", "rx_bytes", "tx_bytes",

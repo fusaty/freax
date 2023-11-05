@@ -5,27 +5,27 @@
  * Copyright 2011 Marvell. <jyli@marvell.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/blkdev.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/ktime.h>
+#include <freax/blkdev.h>
+#include <freax/io.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>
 #include <scsi/scsi_eh.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
+#include <freax/uaccess.h>
+#include <freax/kthread.h>
 
 #include "mvumi.h"
 
@@ -841,7 +841,7 @@ static void mvumi_hs_build_page(struct mvumi_hba *mhba,
 		hs_page2 = (struct mvumi_hs_page2 *) hs_header;
 		hs_header->frame_length = sizeof(*hs_page2) - 4;
 		memset(hs_header->frame_content, 0, hs_header->frame_length);
-		hs_page2->host_type = 3; /* 3 mean linux*/
+		hs_page2->host_type = 3; /* 3 mean freax*/
 		if (mhba->hba_capability & HS_CAPABILITY_SUPPORT_DYN_SRC)
 			hs_page2->host_cap = 0x08;/* host dynamic source mode */
 		hs_page2->host_ver.ver_major = VER_MAJOR;

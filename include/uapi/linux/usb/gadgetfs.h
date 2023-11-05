@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Filesystem based user-mode API to USB Gadget controller hardware
  *
@@ -16,13 +16,13 @@
  * then performing data transfers by reading or writing.
  */
 
-#ifndef __LINUX_USB_GADGETFS_H
-#define __LINUX_USB_GADGETFS_H
+#ifndef __freax_USB_GADGETFS_H
+#define __freax_USB_GADGETFS_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
-#include <linux/usb/ch9.h>
+#include <freax/usb/ch9.h>
 
 /*
  * Events are delivered on the ep0 file descriptor, when the user mode driver
@@ -86,4 +86,4 @@ struct usb_gadgetfs_event {
  */
 #define	GADGETFS_CLEAR_HALT	_IO('g', 3)
 
-#endif /* __LINUX_USB_GADGETFS_H */
+#endif /* __freax_USB_GADGETFS_H */

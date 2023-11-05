@@ -5,18 +5,18 @@
  *
  * Copyright (C) IBM Corporation, 2017
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@freax.ibm.com>
  */
 
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/preempt.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/srcu.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/preempt.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/srcu.h>
 
-#include <linux/rcu_node_tree.h>
+#include <freax/rcu_node_tree.h>
 #include "rcu_segcblist.h"
 #include "rcu.h"
 

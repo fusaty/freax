@@ -5,16 +5,16 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/acpi.h>
-#include <linux/regmap.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/acpi.h>
+#include <freax/regmap.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #define MXC4005_DRV_NAME		"mxc4005"
 #define MXC4005_IRQ_NAME		"mxc4005_event"

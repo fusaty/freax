@@ -4,15 +4,15 @@
  *
  * Written by Yongqiang Yang <xiaoqiangnk@gmail.com>
  * Modified by
- *	Allison Henderson <achender@linux.vnet.ibm.com>
+ *	Allison Henderson <achender@freax.vnet.ibm.com>
  *	Hugh Dickins <hughd@google.com>
  *	Zheng Liu <wenqing.lz@taobao.com>
  *
  * Ext4 extents status tree core functions.
  */
-#include <linux/list_sort.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/list_sort.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include "ext4.h"
 
 #include <trace/events/ext4.h>

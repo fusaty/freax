@@ -3,20 +3,20 @@
  * Miscellaneous Mac68K-specific stuff
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/mm.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/time.h>
+#include <freax/rtc.h>
+#include <freax/mm.h>
 
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
+#include <freax/adb.h>
+#include <freax/cuda.h>
+#include <freax/pmu.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/setup.h>
 #include <asm/macintosh.h>

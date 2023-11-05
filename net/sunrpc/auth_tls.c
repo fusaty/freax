@@ -6,9 +6,9 @@
  * for RPC-over-TLS support.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/sunrpc/clnt.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/sunrpc/clnt.h>
 
 static const char *starttls_token = "STARTTLS";
 static const size_t starttls_len = 8;

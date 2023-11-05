@@ -6,8 +6,8 @@
 #ifndef _VCHIQ_DEVICE_H
 #define _VCHIQ_DEVICE_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
 struct vchiq_device {
 	struct device dev;

@@ -63,12 +63,12 @@
  * merged in the usual way.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/gfp.h>
-#include <linux/part_stat.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/gfp.h>
+#include <freax/part_stat.h>
 
 #include "blk.h"
 #include "blk-mq.h"

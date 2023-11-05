@@ -230,4 +230,4 @@ able to start the dataplane processing as follows:
 5. Inject an interrupt for specific virtqueue with the VDUSE_INJECT_VQ_IRQ ioctl
    after the used ring is filled.
 
-For more details on the uAPI, please see include/uapi/linux/vduse.h.
+For more details on the uAPI, please see include/uapi/freax/vduse.h.

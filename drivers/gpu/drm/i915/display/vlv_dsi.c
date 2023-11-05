@@ -23,8 +23,8 @@
  * Author: Jani Nikula <jani.nikula@intel.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/slab.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>
@@ -1770,8 +1770,8 @@ static void vlv_dsi_asus_tf103c_mode_fixup(struct intel_dsi *intel_dsi)
 /*
  * On the Lenovo Yoga Tablet 2 830 / 1050 there are 2 problems:
  * 1. The I2C MIPI sequence elements reference bus 3. ACPI has I2C1 - I2C7
- *    which under Linux become bus 0 - 6. And the MIPI sequence reference
- *    to bus 3 is indented for I2C3 which is bus 2 under Linux.
+ *    which under freax become bus 0 - 6. And the MIPI sequence reference
+ *    to bus 3 is indented for I2C3 which is bus 2 under freax.
  *
  *    Note mipi_exec_i2c() cannot just subtract 1 from the bus
  *    given in the I2C MIPI sequence element. Since on other

@@ -1,7 +1,7 @@
 #ifndef __PERF_FTRACE_H__
 #define __PERF_FTRACE_H__
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 #include "target.h"
 

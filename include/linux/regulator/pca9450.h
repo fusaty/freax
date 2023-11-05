@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* Copyright 2020 NXP. */
 
-#ifndef __LINUX_REG_PCA9450_H__
-#define __LINUX_REG_PCA9450_H__
+#ifndef __freax_REG_PCA9450_H__
+#define __freax_REG_PCA9450_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 enum pca9450_chip_type {
 	PCA9450_TYPE_PCA9450A = 0,
@@ -233,4 +233,4 @@ enum {
 #define I2C_LT_ON_RUN			0x02
 #define I2C_LT_FORCE_ENABLE		0x03
 
-#endif /* __LINUX_REG_PCA9450_H__ */
+#endif /* __freax_REG_PCA9450_H__ */

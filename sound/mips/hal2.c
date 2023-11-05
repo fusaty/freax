@@ -3,17 +3,17 @@
  *  Driver for A2 audio system used in SGI machines
  *  Copyright (c) 2008 Thomas Bogendoerfer <tsbogend@alpha.fanken.de>
  *
- *  Based on OSS code from Ladislav Michl <ladis@linux-mips.org>, which
+ *  Based on OSS code from Ladislav Michl <ladis@freax-mips.org>, which
  *  was based on code from Ulf Carlsson
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include <asm/sgi/hpc3.h>
 #include <asm/sgi/ip22.h>

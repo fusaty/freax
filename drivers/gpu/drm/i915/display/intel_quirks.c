@@ -3,7 +3,7 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #include "i915_drv.h"
 #include "intel_display_types.h"

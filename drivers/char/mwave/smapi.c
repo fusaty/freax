@@ -46,8 +46,8 @@
 *	First release to the public
 */
 
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>	/* CMOS defines */
+#include <freax/kernel.h>
+#include <freax/mc146818rtc.h>	/* CMOS defines */
 #include "smapi.h"
 #include "mwavedd.h"
 

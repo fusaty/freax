@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init_task.h>
-#include <linux/export.h>
-#include <linux/mqueue.h>
-#include <linux/sched.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/task.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/audit.h>
-#include <linux/numa.h>
-#include <linux/scs.h>
+#include <freax/init_task.h>
+#include <freax/export.h>
+#include <freax/mqueue.h>
+#include <freax/sched.h>
+#include <freax/sched/sysctl.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/task.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/audit.h>
+#include <freax/numa.h>
+#include <freax/scs.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static struct signal_struct init_signals = {
 	.nr_threads	= 1,

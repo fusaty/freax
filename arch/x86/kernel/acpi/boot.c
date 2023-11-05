@@ -7,21 +7,21 @@
  */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/efi.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/dmi.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/efi-bgrt.h>
-#include <linux/serial_core.h>
-#include <linux/pgtable.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/acpi_pmtmr.h>
+#include <freax/efi.h>
+#include <freax/cpumask.h>
+#include <freax/export.h>
+#include <freax/dmi.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
+#include <freax/memblock.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/efi-bgrt.h>
+#include <freax/serial_core.h>
+#include <freax/pgtable.h>
 
 #include <asm/e820/api.h>
 #include <asm/irqdomain.h>
@@ -1500,7 +1500,7 @@ static void __init acpi_reduced_hw_init(void)
 
 /*
  * If your system is blacklisted here, but you find that acpi=force
- * works for you, please contact linux-acpi@vger.kernel.org
+ * works for you, please contact freax-acpi@vger.kernel.org
  */
 static const struct dmi_system_id acpi_dmi_table[] __initconst = {
 	/*

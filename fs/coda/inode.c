@@ -5,30 +5,30 @@
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk> and 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Rewritten for Linux 2.1.  Peter Braam <braam@cs.cmu.edu>
+ * Rewritten for freax 2.1.  Peter Braam <braam@cs.cmu.edu>
  * Copyright (C) Carnegie Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/file.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pid_namespace.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/file.h>
+#include <freax/vfs.h>
+#include <freax/slab.h>
+#include <freax/pid_namespace.h>
+#include <freax/uaccess.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

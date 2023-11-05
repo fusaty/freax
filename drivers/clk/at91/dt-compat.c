@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk-provider.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/at91_pmc.h>
+#include <freax/of.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "pmc.h"
 
@@ -502,7 +502,7 @@ of_at91_clk_periph_setup(struct device_node *np, u8 type)
 			/*
 			 * mpddr_clk feed DDR controller and is enabled by
 			 * bootloader thus we need to keep it enabled in case
-			 * there is no Linux consumer for it.
+			 * there is no freax consumer for it.
 			 */
 			if (!strcmp(periphclknp->name, "mpddr_clk"))
 				flags = CLK_IS_CRITICAL;
@@ -902,7 +902,7 @@ static void __init of_at91rm9200_clk_sys_setup(struct device_node *np)
 
 		/*
 		 * ddrck feeds DDR controller and is enabled by bootloader thus
-		 * we need to keep it enabled in case there is no Linux consumer
+		 * we need to keep it enabled in case there is no freax consumer
 		 * for it.
 		 */
 		if (!strcmp(sysclknp->name, "ddrck"))

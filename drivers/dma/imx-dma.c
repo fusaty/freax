@@ -8,24 +8,24 @@
 // Copyright 2010 Sascha Hauer, Pengutronix <s.hauer@pengutronix.de>
 // Copyright 2012 Javier Martin, Vista Silicon <javier.martin@vista-silicon.com>
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
 
 #include <asm/irq.h>
-#include <linux/dma/imx-dma.h>
+#include <freax/dma/imx-dma.h>
 
 #include "dmaengine.h"
 #define IMXDMA_MAX_CHAN_DESCRIPTORS	16

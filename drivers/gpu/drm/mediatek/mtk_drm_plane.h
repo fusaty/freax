@@ -8,7 +8,7 @@
 #define _MTK_DRM_PLANE_H_
 
 #include <drm/drm_crtc.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define AFBC_DATA_BLOCK_WIDTH 32
 #define AFBC_DATA_BLOCK_HEIGHT 8

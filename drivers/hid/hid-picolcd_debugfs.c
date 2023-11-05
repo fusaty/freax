@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /***************************************************************************
- *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linux-vserver.org>  *
+ *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@freax-vserver.org>  *
  *                                                                         *
  *   Based on Logitech G13 driver (v0.4)                                   *
  *     Copyright (C) 2009 by Rick L. Vinyard, Jr. <rvinyard@cs.nmsu.edu>   *
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
+#include <freax/hid.h>
+#include <freax/hid-debug.h>
 
-#include <linux/fb.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <freax/fb.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
 
 #include "hid-picolcd.h"
 

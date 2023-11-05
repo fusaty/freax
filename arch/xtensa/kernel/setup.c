@@ -15,23 +15,23 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/reboot.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/percpu.h>
+#include <freax/reboot.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
 
 #if defined(CONFIG_VGA_CONSOLE) || defined(CONFIG_DUMMY_CONSOLE)
-# include <linux/console.h>
+# include <freax/console.h>
 #endif
 
 #ifdef CONFIG_PROC_FS
-# include <linux/seq_file.h>
+# include <freax/seq_file.h>
 #endif
 
 #include <asm/bootparam.h>
@@ -394,7 +394,7 @@ void cpu_reset(void)
 	/*
 	 * We have full MMU: all autoload ways, ways 7, 8 and 9 of DTLB must
 	 * be flushed.
-	 * Way 4 is not currently used by linux.
+	 * Way 4 is not currently used by freax.
 	 * Ways 5 and 6 shall not be touched on MMUv2 as they are hardwired.
 	 * Way 5 shall be flushed and way 6 shall be set to identity mapping
 	 * on MMUv3.

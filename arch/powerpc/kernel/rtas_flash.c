@@ -9,13 +9,13 @@
  * firmware image and flash it as it reboots (see rtas.c).
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/reboot.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/proc_fs.h>
+#include <freax/reboot.h>
 #include <asm/delay.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/rtas.h>
 
 #define MODULE_VERS "1.0"

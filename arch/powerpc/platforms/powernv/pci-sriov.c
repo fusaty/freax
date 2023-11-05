@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/bitmap.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/bitmap.h>
+#include <freax/pci.h>
 
 #include <asm/opal.h>
 
@@ -25,7 +25,7 @@
  * are not coupled. The alignment is set based on the per-VF BAR size, but
  * the total BAR area is: number-of-vfs * per-vf-size. The number of VFs
  * isn't necessarily a power of two, so neither is the total size. To fix that
- * we need to finesse (read: hack) the Linux BAR allocator so that it will
+ * we need to finesse (read: hack) the freax BAR allocator so that it will
  * allocate the SR-IOV BARs in a way that lets us map them using the MBT.
  *
  * The changes to size and alignment that we need to do depend on the "mode"
@@ -58,7 +58,7 @@
  *    based on the maximum number of VFs supported by the device and we need
  *    to increase that to new_size.
  *
- * 2. Later, when Linux actually assigns resources it tries to make the resource
+ * 2. Later, when freax actually assigns resources it tries to make the resource
  *    allocations for each PCI bus as compact as possible. As a part of that it
  *    sorts the BARs on a bus by their required alignment, which is calculated
  *    using pci_resource_alignment().
@@ -121,7 +121,7 @@
  * PHB4 (IODA3) added a few new features that would be useful for SR-IOV. It
  * allowed the MBT to map 32bit MMIO space in addition to 64bit which allows
  * us to support SR-IOV BARs in the 32bit MMIO window. This is useful since
- * the Linux BAR allocation will place any BAR marked as non-prefetchable into
+ * the freax BAR allocation will place any BAR marked as non-prefetchable into
  * the non-prefetchable bridge window, which is 32bit only. It also added two
  * new modes:
  *

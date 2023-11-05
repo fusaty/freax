@@ -89,9 +89,9 @@
 		key-vol-up {
 			label = "Volume Up";
 			gpios = <&pm8150_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -632,7 +632,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

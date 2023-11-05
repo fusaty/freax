@@ -7,19 +7,19 @@
  * This file is released under the GPL.
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/khugepaged.h>
-#include <linux/syscalls.h>
-#include <linux/hugetlb.h>
-#include <linux/shmem_fs.h>
-#include <linux/memfd.h>
-#include <linux/pid_namespace.h>
-#include <uapi/linux/memfd.h>
+#include <freax/fs.h>
+#include <freax/vfs.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/khugepaged.h>
+#include <freax/syscalls.h>
+#include <freax/hugetlb.h>
+#include <freax/shmem_fs.h>
+#include <freax/memfd.h>
+#include <freax/pid_namespace.h>
+#include <uapi/freax/memfd.h>
 
 /*
  * We need a tag: a new tag would expand every xa_node by 8 bytes,

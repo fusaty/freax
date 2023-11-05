@@ -3,17 +3,17 @@
 // Copyright (c) 2011 Samsung Electronics Co., Ltd
 //              http://www.samsung.com
 
-#include <linux/err.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/s5m8767.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <freax/err.h>
+#include <freax/of_gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/mfd/samsung/core.h>
+#include <freax/mfd/samsung/s5m8767.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regmap.h>
 
 #define S5M8767_OPMODE_NORMAL_MODE 0x1
 

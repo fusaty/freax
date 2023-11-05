@@ -8,16 +8,16 @@
 //	Boris Brezillon <boris.brezillon@bootlin.com>
 //
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand-ecc-mxic.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mtd/nand.h>
+#include <freax/mtd/nand-ecc-mxic.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 #define HC_CFG			0x0
 #define HC_CFG_IF_CFG(x)	((x) << 27)

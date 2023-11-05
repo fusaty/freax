@@ -3,8 +3,8 @@
  * Copyright (c) 2022 MediaTek Inc.
  */
 
-#ifndef __LINUX_REGULATOR_MT6357_H
-#define __LINUX_REGULATOR_MT6357_H
+#ifndef __freax_REGULATOR_MT6357_H
+#define __freax_REGULATOR_MT6357_H
 
 enum {
 	/* Bucks */
@@ -48,4 +48,4 @@ enum {
 
 #define MT6357_MAX_REGULATOR	MT6357_ID_RG_MAX
 
-#endif /* __LINUX_REGULATOR_MT6357_H */
+#endif /* __freax_REGULATOR_MT6357_H */

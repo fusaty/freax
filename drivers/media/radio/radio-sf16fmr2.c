@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* SF16-FMR2 and SF16-FMD2 radio driver for Linux
+/* SF16-FMR2 and SF16-FMD2 radio driver for freax
  * Copyright (c) 2011 Ondrej Zary
  *
  * Original driver was (c) 2000-2002 Ziglio Frediano, freddy77@angelfire.com
@@ -7,14 +7,14 @@
  * implementation
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>	/* Modules			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/slab.h>
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/isa.h>
-#include <linux/pnp.h>
+#include <freax/delay.h>
+#include <freax/module.h>	/* Modules			*/
+#include <freax/init.h>		/* Initdata			*/
+#include <freax/slab.h>
+#include <freax/ioport.h>	/* request_region		*/
+#include <freax/io.h>		/* outb, outb_p			*/
+#include <freax/isa.h>
+#include <freax/pnp.h>
 #include <media/drv-intf/tea575x.h>
 
 MODULE_AUTHOR("Ondrej Zary");

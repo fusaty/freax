@@ -6,18 +6,18 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/dma-buf.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/clk.h>
+#include <freax/dma-buf.h>
+#include <freax/genalloc.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/pmc.h>

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2019-2020 Arm Ltd.
 
-#include <linux/compiler.h>
-#include <linux/kasan-checks.h>
-#include <linux/kernel.h>
+#include <freax/compiler.h>
+#include <freax/kasan-checks.h>
+#include <freax/kernel.h>
 
 #include <net/checksum.h>
 

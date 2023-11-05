@@ -5,8 +5,8 @@
 #ifndef OPTEE_SMC_H
 #define OPTEE_SMC_H
 
-#include <linux/arm-smccc.h>
-#include <linux/bitops.h>
+#include <freax/arm-smccc.h>
+#include <freax/bitops.h>
 
 #define OPTEE_SMC_STD_CALL_VAL(func_num) \
 	ARM_SMCCC_CALL_VAL(ARM_SMCCC_STD_CALL, ARM_SMCCC_SMC_32, \
@@ -105,7 +105,7 @@ struct optee_smc_call_get_os_revision_result {
 };
 
 /*
- * Load Trusted OS from optee/tee.bin in the Linux firmware.
+ * Load Trusted OS from optee/tee.bin in the freax firmware.
  *
  * WARNING: Use this cautiously as it could lead to insecure loading of the
  * Trusted OS.

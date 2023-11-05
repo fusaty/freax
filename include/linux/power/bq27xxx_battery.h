@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BQ27X00_BATTERY_H__
-#define __LINUX_BQ27X00_BATTERY_H__
+#ifndef __freax_BQ27X00_BATTERY_H__
+#define __freax_BQ27X00_BATTERY_H__
 
-#include <linux/power_supply.h>
+#include <freax/power_supply.h>
 
 enum bq27xxx_chip {
 	BQ27000 = 1, /* bq27000, bq27200 */

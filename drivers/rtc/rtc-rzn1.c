@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Renesas RZ/N1 Real Time Clock interface for Linux
+ * Renesas RZ/N1 Real Time Clock interface for freax
  *
  * Copyright:
  * - 2014 Renesas Electronics Europe Limited
@@ -11,14 +11,14 @@
  * - Miquel Raynal <miquel.raynal@bootlin.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rtc.h>
+#include <freax/bcd.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/rtc.h>
 
 #define RZN1_RTC_CTL0 0x00
 #define   RZN1_RTC_CTL0_SLSB_SUBU 0

@@ -4,11 +4,11 @@
 #ifndef _I40E_H_
 #define _I40E_H_
 
-#include <linux/pci.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/types.h>
-#include <linux/avf/virtchnl.h>
-#include <linux/net/intel/i40e_client.h>
+#include <freax/pci.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/types.h>
+#include <freax/avf/virtchnl.h>
+#include <freax/net/intel/i40e_client.h>
 #include <net/devlink.h>
 #include <net/pkt_cls.h>
 #include <net/udp_tunnel.h>

@@ -4,23 +4,23 @@
  * (C) Copyright 2007 Novell Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mempolicy.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/isolation.h>
-#include <linux/cpu.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/kexec.h>
-#include <linux/of_device.h>
-#include <linux/acpi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/iommu.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/mempolicy.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/isolation.h>
+#include <freax/cpu.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
+#include <freax/kexec.h>
+#include <freax/of_device.h>
+#include <freax/acpi.h>
+#include <freax/dma-map-ops.h>
+#include <freax/iommu.h>
 #include "pci.h"
 #include "pcie/portdrv.h"
 

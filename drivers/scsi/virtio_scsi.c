@@ -6,30 +6,30 @@
  * Copyright Red Hat, Inc. 2011
  *
  * Authors:
- *  Stefan Hajnoczi   <stefanha@linux.vnet.ibm.com>
+ *  Stefan Hajnoczi   <stefanha@freax.vnet.ibm.com>
  *  Paolo Bonzini   <pbonzini@redhat.com>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_scsi.h>
-#include <linux/cpu.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/mempool.h>
+#include <freax/interrupt.h>
+#include <freax/virtio.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_scsi.h>
+#include <freax/cpu.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsi_devinfo.h>
-#include <linux/seqlock.h>
-#include <linux/blk-mq-virtio.h>
+#include <freax/seqlock.h>
+#include <freax/blk-mq-virtio.h>
 
 #include "sd.h"
 

@@ -25,8 +25,8 @@
 #ifndef _INTEL_OPREGION_H_
 #define _INTEL_OPREGION_H_
 
-#include <linux/workqueue.h>
-#include <linux/pci.h>
+#include <freax/workqueue.h>
+#include <freax/pci.h>
 
 struct drm_i915_private;
 struct intel_connector;

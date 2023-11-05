@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * super.c - NTFS kernel super block handling. Part of the Linux-NTFS project.
+ * super.c - NTFS kernel super block handling. Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2012 Anton Altaparmakov and Tuxera Inc.
  * Copyright (c) 2001,2002 Richard Russon
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/blkdev.h>	/* For bdev_logical_block_size(). */
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/moduleparam.h>
-#include <linux/bitmap.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/blkdev.h>	/* For bdev_logical_block_size(). */
+#include <freax/backing-dev.h>
+#include <freax/buffer_head.h>
+#include <freax/vfs.h>
+#include <freax/moduleparam.h>
+#include <freax/bitmap.h>
 
 #include "sysctl.h"
 #include "logfile.h"
@@ -2644,7 +2644,7 @@ static int ntfs_statfs(struct dentry *dentry, struct kstatfs *sfs)
 	up_read(&vol->mftbmp_lock);
 	/*
 	 * File system id. This is extremely *nix flavour dependent and even
-	 * within Linux itself all fs do their own thing. I interpret this to
+	 * within freax itself all fs do their own thing. I interpret this to
 	 * mean a unique id associated with the mounted fs and not the id
 	 * associated with the filesystem driver, the latter is already given
 	 * by the filesystem type in sfs->f_type. Thus we use the 64-bit

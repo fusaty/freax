@@ -16,14 +16,14 @@
  *     Prabhakar Lad <prabhakar.lad@ti.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/videodev2.h>
+#include <freax/module.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
@@ -47,7 +47,7 @@ module_param(debug, bool, 0644);
 MODULE_PARM_DESC(debug, "Debug level (0-1)");
 
 MODULE_AUTHOR("Texas Instruments");
-MODULE_DESCRIPTION("TVP514X linux decoder driver");
+MODULE_DESCRIPTION("TVP514X freax decoder driver");
 MODULE_LICENSE("GPL");
 
 /* enum tvp514x_std - enum for supported standards */

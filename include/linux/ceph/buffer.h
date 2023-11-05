@@ -2,11 +2,11 @@
 #ifndef __FS_CEPH_BUFFER_H
 #define __FS_CEPH_BUFFER_H
 
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/types.h>
-#include <linux/uio.h>
+#include <freax/kref.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/types.h>
+#include <freax/uio.h>
 
 /*
  * a simple reference counted buffer.

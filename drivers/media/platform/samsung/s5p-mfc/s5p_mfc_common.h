@@ -12,8 +12,8 @@
 #ifndef S5P_MFC_COMMON_H_
 #define S5P_MFC_COMMON_H_
 
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

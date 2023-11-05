@@ -7,14 +7,14 @@
  *	Santosh Shilimkar <santosh.shillimkar@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/dma-map-ops.h>
-#include <linux/init.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_clock.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/dma-map-ops.h>
+#include <freax/init.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_clock.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/mach/map.h>

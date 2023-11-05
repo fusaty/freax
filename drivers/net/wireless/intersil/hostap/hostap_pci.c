@@ -5,17 +5,17 @@
  * driver patches from Reyk Floeter <reyk@vantronix.net> and
  * Andy Warner <andyw@pobox.com> */
 
-#include <linux/module.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/wireless.h>
+#include <freax/module.h>
+#include <freax/if.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/wireless.h>
 #include <net/iw_handler.h>
 
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
 #include <asm/io.h>
 
 #include "hostap_wlan.h"
@@ -227,7 +227,7 @@ static void prism2_pci_cor_sreset(local_info_t *local)
 	reg = HFA384X_INB(HFA384X_PCICOR_OFF);
 	printk(KERN_DEBUG "%s: Original COR value: 0x%0x\n", dev->name, reg);
 
-	/* linux-wlan-ng uses extremely long hold and settle times for
+	/* freax-wlan-ng uses extremely long hold and settle times for
 	 * COR sreset. A comment in the driver code mentions that the long
 	 * delays appear to be necessary. However, at least IBM 22P6901 seems
 	 * to work fine with shorter delays.

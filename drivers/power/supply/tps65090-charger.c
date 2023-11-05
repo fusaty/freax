@@ -5,20 +5,20 @@
  * Copyright (c) 2013, NVIDIA CORPORATION.  All rights reserved.
 
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/freezer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/tps65090.h>
+#include <freax/mfd/tps65090.h>
 
 #define TPS65090_CHARGER_ENABLE	BIT(0)
 #define TPS65090_VACG		BIT(1)

@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2023 Intel Corporation
  */
-#include <linux/ieee80211.h>
+#include <freax/ieee80211.h>
 #include <net/cfg80211.h>
 #include <kunit/test.h>
 

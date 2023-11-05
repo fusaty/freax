@@ -10,9 +10,9 @@
 #ifndef __RTSX_PCI_H
 #define __RTSX_PCI_H
 
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/rtsx_common.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/rtsx_common.h>
 
 #define MAX_RW_REG_CNT			1024
 

@@ -4,7 +4,7 @@
  *
  * Parts of this software are based on (derived) the following:
  *
- * - Kvaser linux driver, version 4.72 BETA
+ * - Kvaser freax driver, version 4.72 BETA
  *   Copyright (C) 2002-2007 KVASER AB
  *
  * - Lincan driver, version 0.3.3, OCERA project
@@ -18,14 +18,14 @@
  *   38106 Braunschweig, GERMANY
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/can/dev.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/can/dev.h>
+#include <freax/io.h>
 
 #include "sja1000.h"
 

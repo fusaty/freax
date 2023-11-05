@@ -4,7 +4,7 @@
 #ifndef _I40E_CLIENT_H_
 #define _I40E_CLIENT_H_
 
-#include <linux/auxiliary_bus.h>
+#include <freax/auxiliary_bus.h>
 
 #define I40E_CLIENT_STR_LENGTH 10
 

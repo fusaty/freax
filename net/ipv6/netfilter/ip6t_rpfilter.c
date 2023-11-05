@@ -3,15 +3,15 @@
  * Copyright (c) 2011 Florian Westphal <fw@strlen.de>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/route.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/route.h>
 #include <net/ip6_fib.h>
 #include <net/ip6_route.h>
 
-#include <linux/netfilter/xt_rpfilter.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/xt_rpfilter.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Florian Westphal <fw@strlen.de>");

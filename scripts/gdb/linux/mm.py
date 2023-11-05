@@ -8,7 +8,7 @@
 
 import gdb
 import math
-from linux import utils, constants
+from freax import utils, constants
 
 def DIV_ROUND_UP(n,d):
     return ((n) + (d) - 1) // (d)

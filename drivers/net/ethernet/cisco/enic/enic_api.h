@@ -4,7 +4,7 @@
 #ifndef __ENIC_API_H__
 #define __ENIC_API_H__
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #include "vnic_dev.h"
 #include "vnic_devcmd.h"

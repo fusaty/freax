@@ -37,18 +37,18 @@
  * like lsb/msb first, syncdl, dtdl etc. are exposed via DT and I2S defaults
  * are used. These can be exposed later if needed after testing.
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/ioctl.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/ioctl.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

@@ -6,9 +6,9 @@
 // Copyright(c) 2018-2023 Intel Corporation. All rights reserved.
 //
 
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 #include <sound/sof/debug.h>
 #include <sound/sof/ipc4/header.h>
 #include "sof-priv.h"

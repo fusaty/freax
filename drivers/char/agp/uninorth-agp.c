@@ -2,15 +2,15 @@
 /*
  * UniNorth AGPGART routines.
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/agp_backend.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/agp_backend.h>
+#include <freax/delay.h>
+#include <freax/vmalloc.h>
 #include <asm/uninorth.h>
 #include <asm/prom.h>
 #include <asm/pmac_feature.h>

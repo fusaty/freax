@@ -6,10 +6,10 @@
  * Paul Walmsley
  */
 
-#ifndef __LINUX_PLATFORM_DATA_OMAP_WD_TIMER_H
-#define __LINUX_PLATFORM_DATA_OMAP_WD_TIMER_H
+#ifndef __freax_PLATFORM_DATA_OMAP_WD_TIMER_H
+#define __freax_PLATFORM_DATA_OMAP_WD_TIMER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Standardized OMAP reset source bits

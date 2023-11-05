@@ -3,15 +3,15 @@
 #ifndef __PSTORE_BLK_H_
 #define __PSTORE_BLK_H_
 
-#include <linux/types.h>
-#include <linux/pstore.h>
-#include <linux/pstore_zone.h>
+#include <freax/types.h>
+#include <freax/pstore.h>
+#include <freax/pstore_zone.h>
 
 /**
  * struct pstore_device_info - back-end pstore/blk driver structure.
  *
  * @flags:	Refer to macro starting with PSTORE_FLAGS defined in
- *		linux/pstore.h. It means what front-ends this device support.
+ *		freax/pstore.h. It means what front-ends this device support.
  *		Zero means all backends for compatible.
  * @zone:	The struct pstore_zone_info details.
  *

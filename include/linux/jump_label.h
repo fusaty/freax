@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_JUMP_LABEL_H
-#define _LINUX_JUMP_LABEL_H
+#ifndef _freax_JUMP_LABEL_H
+#define _freax_JUMP_LABEL_H
 
 /*
  * Jump label support
@@ -73,8 +73,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 
 extern bool static_key_initialized;
 
@@ -252,8 +252,8 @@ extern enum jump_label_type jump_label_init_type(struct jump_entry *entry);
 
 #else  /* !CONFIG_JUMP_LABEL */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
 
 static __always_inline int static_key_count(struct static_key *key)
 {
@@ -534,4 +534,4 @@ extern bool ____wrong_branch_error(void);
 
 #endif /* __ASSEMBLY__ */
 
-#endif	/* _LINUX_JUMP_LABEL_H */
+#endif	/* _freax_JUMP_LABEL_H */

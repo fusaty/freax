@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KERNEL_SPRINTF_H_
-#define _LINUX_KERNEL_SPRINTF_H_
+#ifndef _freax_KERNEL_SPRINTF_H_
+#define _freax_KERNEL_SPRINTF_H_
 
-#include <linux/compiler_attributes.h>
-#include <linux/types.h>
+#include <freax/compiler_attributes.h>
+#include <freax/types.h>
 
 int num_to_str(char *buf, int size, unsigned long long num, unsigned int width);
 
@@ -24,4 +24,4 @@ __scanf(2, 0) int vsscanf(const char *, const char *, va_list);
 extern bool no_hash_pointers;
 int no_hash_pointers_enable(char *str);
 
-#endif	/* _LINUX_KERNEL_SPRINTF_H */
+#endif	/* _freax_KERNEL_SPRINTF_H */

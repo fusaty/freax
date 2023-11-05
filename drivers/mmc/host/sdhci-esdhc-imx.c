@@ -8,23 +8,23 @@
  *   Author: Wolfram Sang <kernel@pengutronix.de>
  */
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm_qos.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pm_qos.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
 #include "sdhci-cqhci.h"
 #include "sdhci-pltfm.h"
 #include "sdhci-esdhc.h"
@@ -1531,12 +1531,12 @@ static void sdhci_esdhc_imx_hwinit(struct sdhci_host *host)
 		}
 
 		/*
-		 * On i.MX8MM, we are running Dual Linux OS, with 1st Linux using SD Card
-		 * as rootfs storage, 2nd Linux using eMMC as rootfs storage. We let
-		 * the 1st linux configure power/clock for the 2nd Linux.
+		 * On i.MX8MM, we are running Dual freax OS, with 1st freax using SD Card
+		 * as rootfs storage, 2nd freax using eMMC as rootfs storage. We let
+		 * the 1st freax configure power/clock for the 2nd freax.
 		 *
-		 * When the 2nd Linux is booting into rootfs stage, we let the 1st Linux
-		 * to destroy the 2nd linux, then restart the 2nd linux, we met SDHCI dump.
+		 * When the 2nd freax is booting into rootfs stage, we let the 1st freax
+		 * to destroy the 2nd freax, then restart the 2nd freax, we met SDHCI dump.
 		 * After we clear the pending interrupt and halt CQCTL, issue gone.
 		 */
 		if (cq_host) {

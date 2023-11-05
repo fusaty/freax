@@ -6,7 +6,7 @@
 #ifndef __INTEL_DP_H__
 #define __INTEL_DP_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum intel_output_format;
 enum pipe;

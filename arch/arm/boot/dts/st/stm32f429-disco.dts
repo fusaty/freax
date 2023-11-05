@@ -77,7 +77,7 @@
 		};
 		led-green {
 			gpios = <&gpiog 13 0>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -86,7 +86,7 @@
 		autorepeat;
 		button-0 {
 			label = "User";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&gpioa 0 0>;
 		};
 	};

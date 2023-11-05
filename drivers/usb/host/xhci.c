@@ -5,19 +5,19 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the freax EHCI driver.
  */
 
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/dmi.h>
+#include <freax/dma-mapping.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

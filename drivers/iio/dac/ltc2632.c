@@ -6,12 +6,12 @@
  * expanded by Silvan Murer <silvan.murer@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <freax/device.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
+#include <freax/iio/iio.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 

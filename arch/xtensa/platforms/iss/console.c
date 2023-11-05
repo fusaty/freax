@@ -9,24 +9,24 @@
  *   Authors	Christian Zankel, Joe Taylor
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/param.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/major.h>
+#include <freax/param.h>
+#include <freax/seq_file.h>
+#include <freax/serial.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 
 #include <platform/simcall.h>
 
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
 #define SERIAL_MAX_NUM_LINES 1
 #define SERIAL_TIMER_VALUE (HZ / 10)

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * A fast, small, non-recursive O(n log n) sort for the Linux kernel
+ * A fast, small, non-recursive O(n log n) sort for the freax kernel
  *
  * This performs n*log2(n) + 0.37*n + o(n) comparisons on average,
  * and 1.5*n*log2(n) + O(n) in the (very contrived) worst case.
@@ -12,9 +12,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/sort.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/sort.h>
 
 /**
  * is_aligned - is this pointer & size okay for word-wide copying?

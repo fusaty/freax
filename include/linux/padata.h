@@ -12,12 +12,12 @@
 #ifndef PADATA_H
 #define PADATA_H
 
-#include <linux/refcount.h>
-#include <linux/compiler_types.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
+#include <freax/refcount.h>
+#include <freax/compiler_types.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/kobject.h>
 
 #define PADATA_CPU_SERIAL   0x01
 #define PADATA_CPU_PARALLEL 0x02

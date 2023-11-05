@@ -4,13 +4,13 @@
  *
  * Copyright IBM Corporation, 2017
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@freax.ibm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
 #include "rcu_segcblist.h"
 

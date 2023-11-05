@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2000,2001,2004 Broadcom Corporation
  */
-#include <linux/init.h>
+#include <freax/init.h>
 
 extern void sb1480_clockevent_init(void);
 extern void sb1480_clocksource_init(void);

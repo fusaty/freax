@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/random.h>
 
 #include <rdma/ib_cache.h>
 #include "sa.h"

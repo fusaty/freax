@@ -6,13 +6,13 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/kvm_host.h>
+#include <freax/bitops.h>
+#include <freax/cpumask.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/smp.h>
+#include <freax/kvm_host.h>
 #include <asm/csr.h>
 
 static unsigned long vmid_version = 1;

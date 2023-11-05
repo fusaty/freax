@@ -2,23 +2,23 @@
 /*
  * TTUSB DEC Driver
  *
- * Copyright (C) 2003-2004 Alex Woods <linux-dvb@giblets.org>
+ * Copyright (C) 2003-2004 Alex Woods <freax-dvb@giblets.org>
  * IR support by Peter Beutner <p.beutner@gmx.net>
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/init.h>
-#include <linux/input.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/usb.h>
+#include <freax/interrupt.h>
+#include <freax/firmware.h>
+#include <freax/crc32.h>
+#include <freax/init.h>
+#include <freax/input.h>
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #include <media/dmxdev.h>
 #include <media/dvb_demux.h>
@@ -1780,7 +1780,7 @@ static struct usb_driver ttusb_dec_driver = {
 
 module_usb_driver(ttusb_dec_driver);
 
-MODULE_AUTHOR("Alex Woods <linux-dvb@giblets.org>");
+MODULE_AUTHOR("Alex Woods <freax-dvb@giblets.org>");
 MODULE_DESCRIPTION(DRIVER_NAME);
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(usb, ttusb_dec_table);

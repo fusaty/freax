@@ -4,15 +4,15 @@
  * Joshua Henderson <joshua.henderson@microchip.com>
  * Copyright (C) 2016 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
+#include <freax/irq.h>
 
 #include <asm/irq.h>
 #include <asm/traps.h>

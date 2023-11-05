@@ -5,15 +5,15 @@
  * Copyright (c) 1997--1999 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/capability.h>
+#include <freax/uaccess.h>
+#include <freax/security.h>
 #include <asm/byteorder.h>
 #include "pci.h"
 

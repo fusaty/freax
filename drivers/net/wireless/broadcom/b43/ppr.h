@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_B43_PPR_H_
-#define LINUX_B43_PPR_H_
+#ifndef freax_B43_PPR_H_
+#define freax_B43_PPR_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define B43_PPR_CCK_RATES_NUM		4
 #define B43_PPR_OFDM_RATES_NUM		8
@@ -43,4 +43,4 @@ u8 b43_ppr_get_max(struct b43_wldev *dev, struct b43_ppr *ppr);
 bool b43_ppr_load_max_from_sprom(struct b43_wldev *dev, struct b43_ppr *ppr,
 				 enum b43_band band);
 
-#endif /* LINUX_B43_PPR_H_ */
+#endif /* freax_B43_PPR_H_ */

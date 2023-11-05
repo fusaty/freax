@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_RTNETLINK_H
-#define __LINUX_RTNETLINK_H
+#ifndef __freax_RTNETLINK_H
+#define __freax_RTNETLINK_H
 
 
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/wait.h>
-#include <linux/refcount.h>
-#include <uapi/linux/rtnetlink.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/wait.h>
+#include <freax/refcount.h>
+#include <uapi/freax/rtnetlink.h>
 
 extern int rtnetlink_send(struct sk_buff *skb, struct net *net, u32 pid, u32 group, int echo);
 extern int rtnl_unicast(struct sk_buff *skb, struct net *net, u32 pid);
@@ -130,4 +130,4 @@ extern int ndo_dflt_bridge_getlink(struct sk_buff *skb, u32 pid, u32 seq,
 
 extern void rtnl_offload_xstats_notify(struct net_device *dev);
 
-#endif	/* __LINUX_RTNETLINK_H */
+#endif	/* __freax_RTNETLINK_H */

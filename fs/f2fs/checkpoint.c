@@ -5,15 +5,15 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/f2fs_fs.h>
-#include <linux/pagevec.h>
-#include <linux/swap.h>
-#include <linux/kthread.h>
+#include <freax/fs.h>
+#include <freax/bio.h>
+#include <freax/mpage.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/f2fs_fs.h>
+#include <freax/pagevec.h>
+#include <freax/swap.h>
+#include <freax/kthread.h>
 
 #include "f2fs.h"
 #include "node.h"

@@ -10,16 +10,16 @@
  *		Vineet Gupta
  */
 
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
 
 #include "emac.h"
 
@@ -84,7 +84,7 @@ static void arc_emac_adjust_link(struct net_device *ndev)
  * @info:	Pointer to ethtool_drvinfo structure.
  *
  * This implements ethtool command for getting the driver information.
- * Issue "ethtool -i ethX" under linux prompt to execute this function.
+ * Issue "ethtool -i ethX" under freax prompt to execute this function.
  */
 static void arc_emac_get_drvinfo(struct net_device *ndev,
 				 struct ethtool_drvinfo *info)

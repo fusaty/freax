@@ -15,9 +15,9 @@
 #include <unistd.h>
 #include <errno.h>
 #include <stdbool.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 #include <internal/lib.h> // page_size
 #include <sys/param.h>
 

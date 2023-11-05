@@ -2,24 +2,24 @@
 /*
  * Inode operations for Coda filesystem
  * Original version: (C) 1996 P. Braam and M. Callahan
- * Rewritten for Linux 2.1. (C) 1997 Carnegie Mellon University
+ * Rewritten for freax 2.1. (C) 1997 Carnegie Mellon University
  * 
  * Carnegie Mellon encourages users to contribute improvements to
  * the Coda project. Contact Peter Braam (coda@cs.cmu.edu).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/uaccess.h>
+#include <freax/string.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 
 /* initialize the debugging variables */
 int coda_fake_statfs;
@@ -136,8 +136,8 @@ void coda_vattr_to_iattr(struct inode *inode, struct coda_vattr *attr)
 
 /* 
  * BSD sets attributes that need not be modified to -1. 
- * Linux uses the valid field to indicate what should be
- * looked at.  The BSD type field needs to be deduced from linux 
+ * freax uses the valid field to indicate what should be
+ * looked at.  The BSD type field needs to be deduced from freax 
  * mode.
  * So we have to do some translations here.
  */

@@ -7,10 +7,10 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>

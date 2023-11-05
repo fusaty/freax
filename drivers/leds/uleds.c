@@ -6,16 +6,16 @@
  *
  * Based on uinput.c: Aristeu Sergio Rozanski Filho <aris@cathedrallabs.org>
  */
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/leds.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
-#include <uapi/linux/uleds.h>
+#include <uapi/freax/uleds.h>
 
 #define ULEDS_NAME	"uleds"
 

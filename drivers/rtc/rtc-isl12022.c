@@ -8,16 +8,16 @@
  * by Alessandro Zummo <a.zummo@towertech.it>.
  */
 
-#include <linux/bcd.h>
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/bcd.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 #include <asm/byteorder.h>
 

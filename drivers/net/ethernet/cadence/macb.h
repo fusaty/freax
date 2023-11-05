@@ -7,12 +7,12 @@
 #ifndef _MACB_H
 #define _MACB_H
 
-#include <linux/clk.h>
-#include <linux/phylink.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/interrupt.h>
-#include <linux/phy/phy.h>
+#include <freax/clk.h>
+#include <freax/phylink.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/net_tstamp.h>
+#include <freax/interrupt.h>
+#include <freax/phy/phy.h>
 
 #if defined(CONFIG_ARCH_DMA_ADDR_T_64BIT) || defined(CONFIG_MACB_USE_HWSTAMP)
 #define MACB_EXT_DESC

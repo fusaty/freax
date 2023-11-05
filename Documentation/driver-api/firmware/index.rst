@@ -1,5 +1,5 @@
 ==================
-Linux Firmware API
+freax Firmware API
 ==================
 
 .. toctree::

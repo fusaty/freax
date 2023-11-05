@@ -17,10 +17,10 @@
 
 #include "core.h"
 
-#include <linux/skbuff.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <freax/skbuff.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
 
 #include "debug.h"
 #include "target.h"

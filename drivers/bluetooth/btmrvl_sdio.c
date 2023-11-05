@@ -5,14 +5,14 @@
  * Copyright (C) 2009, Marvell International Ltd.
  **/
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/devcoredump.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/module.h>
+#include <freax/devcoredump.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

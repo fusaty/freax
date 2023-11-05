@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
-#include <linux/bits.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/bits.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
 #define PCH_EDGE_FALLING	0
 #define PCH_EDGE_RISING		1

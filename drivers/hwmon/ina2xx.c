@@ -22,21 +22,21 @@
  * Thanks to Jan Volkering
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/util_macros.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/of.h>
+#include <freax/delay.h>
+#include <freax/util_macros.h>
+#include <freax/regmap.h>
 
-#include <linux/platform_data/ina2xx.h>
+#include <freax/platform_data/ina2xx.h>
 
 /* common register definitions */
 #define INA2XX_CONFIG			0x00

@@ -3,12 +3,12 @@
  * MV-643XX ethernet platform device data definition file.
  */
 
-#ifndef __LINUX_MV643XX_ETH_H
-#define __LINUX_MV643XX_ETH_H
+#ifndef __freax_MV643XX_ETH_H
+#define __freax_MV643XX_ETH_H
 
-#include <linux/mbus.h>
-#include <linux/if_ether.h>
-#include <linux/phy.h>
+#include <freax/mbus.h>
+#include <freax/if_ether.h>
+#include <freax/phy.h>
 
 #define MV643XX_ETH_SHARED_NAME		"mv643xx_eth"
 #define MV643XX_ETH_NAME		"mv643xx_eth_port"

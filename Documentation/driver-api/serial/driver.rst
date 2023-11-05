@@ -5,7 +5,7 @@ Low Level Serial API
 
 This document is meant as a brief overview of some aspects of the new serial
 driver.  It is not complete, any questions you have should be directed to
-<rmk@arm.linux.org.uk>
+<rmk@arm.freax.org.uk>
 
 The reference implementation is contained within amba-pl011.c.
 
@@ -63,7 +63,7 @@ commonly referred to as the port mutex.
 uart_ops
 --------
 
-.. kernel-doc:: include/linux/serial_core.h
+.. kernel-doc:: include/freax/serial_core.h
    :identifiers: uart_ops
 
 Other functions
@@ -78,7 +78,7 @@ Other functions
            uart_get_lsr_info uart_handle_dcd_change uart_handle_cts_change
            uart_try_toggle_sysrq uart_get_console
 
-.. kernel-doc:: include/linux/serial_core.h
+.. kernel-doc:: include/freax/serial_core.h
    :identifiers: uart_port_tx_limited uart_port_tx
 
 Other notes

@@ -10,17 +10,17 @@
  * Author: Shadi Ammouri <shadi@marvell.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/of_pci.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/pci.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/resource.h>
+#include <freax/of_pci.h>
 
 #include "pcie-designware.h"
 

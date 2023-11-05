@@ -5,7 +5,7 @@
  *
  * Authors:
  *  Haijun Liu <haijun.liu@mediatek.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
  *
  * Contributors:
@@ -15,13 +15,13 @@
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kthread.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/kthread.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
 
 #include "t7xx_port.h"
 #include "t7xx_port_proxy.h"

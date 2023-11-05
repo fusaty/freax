@@ -3,7 +3,7 @@
  *  libahci.c - Common AHCI SATA low-level routines
  *
  *  Maintained by:  Tejun Heo <tj@kernel.org>
- *    		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *    		    Please ALWAYS copy freax-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004-2005 Red Hat, Inc.
@@ -16,20 +16,20 @@
  * http://www.intel.com/technology/serialata/pdf/rev1_1.pdf
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/nospec.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
-#include <linux/pci.h>
+#include <freax/libata.h>
+#include <freax/pci.h>
 #include "ahci.h"
 #include "libata.h"
 

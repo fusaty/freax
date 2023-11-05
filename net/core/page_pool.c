@@ -5,21 +5,21 @@
  *	Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
 #include <net/page_pool/helpers.h>
 #include <net/xdp.h>
 
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/page-flags.h>
-#include <linux/mm.h> /* for put_page() */
-#include <linux/poison.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/page-flags.h>
+#include <freax/mm.h> /* for put_page() */
+#include <freax/poison.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
 
 #include <trace/events/page_pool.h>
 

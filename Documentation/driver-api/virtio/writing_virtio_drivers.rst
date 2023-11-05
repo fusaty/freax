@@ -11,7 +11,7 @@ Introduction
 
 This document serves as a basic guideline for driver programmers that
 need to hack a new virtio driver or understand the essentials of the
-existing ones. See :ref:`Virtio on Linux <virtio>` for a general
+existing ones. See :ref:`Virtio on freax <virtio>` for a general
 overview of virtio.
 
 
@@ -24,10 +24,10 @@ configuration of the virtqueues in the driver side must match the
 virtqueue definitions in the device. A basic driver skeleton could look
 like this::
 
-	#include <linux/virtio.h>
-	#include <linux/virtio_ids.h>
-	#include <linux/virtio_config.h>
-	#include <linux/module.h>
+	#include <freax/virtio.h>
+	#include <freax/virtio_ids.h>
+	#include <freax/virtio_config.h>
+	#include <freax/module.h>
 
 	/* device private data (one per device) */
 	struct virtio_dummy_dev {
@@ -110,7 +110,7 @@ like this::
 
 The device id ``VIRTIO_ID_DUMMY`` here is a placeholder, virtio drivers
 should be added only for devices that are defined in the spec, see
-include/uapi/linux/virtio_ids.h. Device ids need to be at least reserved
+include/uapi/freax/virtio_ids.h. Device ids need to be at least reserved
 in the virtio spec before being added to that file.
 
 If your driver doesn't have to do anything special in its ``init`` and
@@ -124,7 +124,7 @@ notify the device that the driver is ready to manage the device
 ("DRIVER_OK"). The virtqueues are anyway enabled automatically by the
 core after ``probe`` returns.
 
-.. kernel-doc:: include/linux/virtio_config.h
+.. kernel-doc:: include/freax/virtio_config.h
     :identifiers: virtio_device_ready
 
 In any case, the virtqueues need to be enabled before adding buffers to

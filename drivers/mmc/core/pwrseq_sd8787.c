@@ -9,18 +9,18 @@
  *  Author: Ulf Hansson <ulf.hansson@linaro.org>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
 
-#include <linux/mmc/host.h>
+#include <freax/mmc/host.h>
 
 #include "pwrseq.h"
 

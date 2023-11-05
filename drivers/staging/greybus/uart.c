@@ -10,25 +10,25 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/kfifo.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/mutex.h>
+#include <freax/tty.h>
+#include <freax/serial.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/idr.h>
+#include <freax/fs.h>
+#include <freax/kdev_t.h>
+#include <freax/kfifo.h>
+#include <freax/workqueue.h>
+#include <freax/completion.h>
+#include <freax/greybus.h>
 
 #include "gbphy.h"
 

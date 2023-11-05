@@ -5,13 +5,13 @@
 
 #define pr_fmt(fmt) "SMCCC: SOC_ID: " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/arm-smccc.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #define SMCCC_SOC_ID_JEP106_BANK_IDX_MASK	GENMASK(30, 24)
 /*

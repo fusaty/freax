@@ -5,8 +5,8 @@
  */
 
 
-#ifndef _LINUX_SERIAL_MAX3100_H
-#define _LINUX_SERIAL_MAX3100_H 1
+#ifndef _freax_SERIAL_MAX3100_H
+#define _freax_SERIAL_MAX3100_H 1
 
 
 /**

@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 // Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 #include <net/flow_offload.h>
 #include "en/tc_priv.h"
 #include "act_stats.h"

@@ -9,13 +9,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/devm-helpers.h>
-#include <linux/mfd/rk808.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <freax/devm-helpers.h>
+#include <freax/mfd/rk808.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
 
 /* Charging statuses reported by hardware register */
 enum rk817_charge_status {

@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * freax driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2022, VMware, Inc. All Rights Reserved.
  *
@@ -463,7 +463,7 @@ enum {
 	VMXNET3_GOS_BITS_64     = 2,
 };
 
-#define VMXNET3_GOS_TYPE_LINUX	1
+#define VMXNET3_GOS_TYPE_freax	1
 
 
 struct Vmxnet3_GOSInfo {

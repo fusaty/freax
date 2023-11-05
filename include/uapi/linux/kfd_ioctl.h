@@ -24,7 +24,7 @@
 #define KFD_IOCTL_H_INCLUDED
 
 #include <drm/drm.h>
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /*
  * - 1.1 - initial version

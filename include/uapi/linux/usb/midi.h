@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * <linux/usb/midi.h> -- USB MIDI definitions.
+ * <freax/usb/midi.h> -- USB MIDI definitions.
  *
  * Copyright (C) 2006 Thumtronics Pty Ltd.
  * Developed for Thumtronics by Grey Innovation
@@ -16,10 +16,10 @@
  * http://www.usb.org/developers/devclass_docs/midi10.pdf
  */
 
-#ifndef __LINUX_USB_MIDI_H
-#define __LINUX_USB_MIDI_H
+#ifndef __freax_USB_MIDI_H
+#define __freax_USB_MIDI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* A.1  MS Class-Specific Interface Descriptor Subtypes */
 #define USB_MS_HEADER		0x01
@@ -110,4 +110,4 @@ struct usb_ms_endpoint_descriptor_##n {				\
 	__u8  baAssocJackID[n];					\
 } __attribute__ ((packed))
 
-#endif /* __LINUX_USB_MIDI_H */
+#endif /* __freax_USB_MIDI_H */

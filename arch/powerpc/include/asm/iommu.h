@@ -9,11 +9,11 @@
 #define _ASM_IOMMU_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/bitops.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/dma-map-ops.h>
+#include <freax/bitops.h>
 #include <asm/machdep.h>
 #include <asm/types.h>
 #include <asm/pci-bridge.h>
@@ -28,8 +28,8 @@
 #define IOMMU_PAGE_MASK(tblptr) (~((1 << (tblptr)->it_page_shift) - 1))
 #define IOMMU_PAGE_ALIGN(addr, tblptr) ALIGN(addr, IOMMU_PAGE_SIZE(tblptr))
 
-#define DIRECT64_PROPNAME "linux,direct64-ddr-window-info"
-#define DMA64_PROPNAME "linux,dma64-ddr-window-info"
+#define DIRECT64_PROPNAME "freax,direct64-ddr-window-info"
+#define DMA64_PROPNAME "freax,dma64-ddr-window-info"
 
 /* Boot time flags */
 extern int iommu_is_off;

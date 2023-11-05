@@ -5,8 +5,8 @@
  *  Info:
  *   Contains defines, datastructures for ndfc nand controller
  */
-#ifndef __LINUX_MTD_NDFC_H
-#define __LINUX_MTD_NDFC_H
+#ifndef __freax_MTD_NDFC_H
+#define __freax_MTD_NDFC_H
 
 /* NDFC Register definitions */
 #define NDFC_CMD		0x00

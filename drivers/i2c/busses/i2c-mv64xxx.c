@@ -9,24 +9,24 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mv643xx_i2c.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mv643xx_i2c.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_irq.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/delay.h>
 
 #define MV64XXX_I2C_ADDR_ADDR(val)			((val & 0x7f) << 1)
 #define MV64XXX_I2C_BAUD_DIV_N(val)			(val & 0x7)

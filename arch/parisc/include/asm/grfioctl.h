@@ -2,8 +2,8 @@
 /*  Architecture specific parts of HP's STI (framebuffer) driver.
  *  Structures are HP-UX compatible for XFree86 usage.
  * 
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
- *    Copyright (C) 2001 Helge Deller (deller a parisc-linux org)
+ *    freax/PA-RISC Project (http://www.parisc-freax.org/)
+ *    Copyright (C) 2001 Helge Deller (deller a parisc-freax org)
  */
 
 #ifndef __ASM_PARISC_GRFIOCTL_H

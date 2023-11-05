@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/sched.h> /* for wake_up_process() */
-#include <linux/ftrace.h>
+#include <freax/sched.h> /* for wake_up_process() */
+#include <freax/ftrace.h>
 #ifndef CONFIG_ARM64
 #include <asm/asm-offsets.h>
 #endif

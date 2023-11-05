@@ -11,19 +11,19 @@
  *  - TDM mode configuration.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/gpio/driver.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/gpio/driver.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/mutex.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

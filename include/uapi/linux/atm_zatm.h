@@ -1,20 +1,20 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atm_zatm.h - Driver-specific declarations of the ZATM driver (for use by
 		driver-specific utilities) */
 
 /* Written 1995-1999 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#ifndef LINUX_ATM_ZATM_H
-#define LINUX_ATM_ZATM_H
+#ifndef freax_ATM_ZATM_H
+#define freax_ATM_ZATM_H
 
 /*
  * Note: non-kernel programs including this file must also include
  * sys/types.h for struct timeval
  */
 
-#include <linux/atmapi.h>
-#include <linux/atmioc.h>
+#include <freax/atmapi.h>
+#include <freax/atmioc.h>
 
 #define ZATM_GETPOOL	_IOW('a',ATMIOC_SARPRV+1,struct atmif_sioc)
 						/* get pool statistics */

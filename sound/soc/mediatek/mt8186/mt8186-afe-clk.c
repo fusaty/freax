@@ -5,9 +5,9 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Jiaxin Yu <jiaxin.yu@mediatek.com>
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
 #include "mt8186-afe-common.h"
 #include "mt8186-afe-clk.h"

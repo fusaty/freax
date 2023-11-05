@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/hugetlb.h>
-#include <linux/err.h>
+#include <freax/hugetlb.h>
+#include <freax/err.h>
 
 #ifdef CONFIG_RISCV_ISA_SVNAPOT
 pte_t huge_ptep_get(pte_t *ptep)

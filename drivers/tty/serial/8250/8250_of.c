@@ -4,17 +4,17 @@
  *
  *    Copyright (C) 2006 Arnd Bergmann <arnd@arndb.de>, IBM Corp.
  */
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
+#include <freax/console.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
 
 #include "8250.h"
 

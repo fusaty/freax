@@ -8,13 +8,13 @@
  * board inside the router is named E119921
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
 
 struct dir685_touchkeys {
 	struct device		*dev;

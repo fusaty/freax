@@ -7,11 +7,11 @@
  * Copyright (c) Russ Anderson <rja@sgi.com>
  */
 
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/efi.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 #include <asm/efi.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/pgalloc.h>
 #include <asm/uv/bios.h>
 #include <asm/uv/uv_hub.h>

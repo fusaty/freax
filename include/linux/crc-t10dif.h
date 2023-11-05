@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CRC_T10DIF_H
-#define _LINUX_CRC_T10DIF_H
+#ifndef _freax_CRC_T10DIF_H
+#define _freax_CRC_T10DIF_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define CRC_T10DIF_DIGEST_SIZE 2
 #define CRC_T10DIF_BLOCK_SIZE 1

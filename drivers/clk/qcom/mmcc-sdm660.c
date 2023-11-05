@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2020, Martin Botka <martin.botka@somainline.org>
  * Copyright (c) 2020, Konrad Dybcio <konrad.dybcio@somainline.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/clk.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
+#include <freax/clk.h>
 
 
 #include <dt-bindings/clock/qcom,mmcc-sdm660.h>
@@ -2046,7 +2046,7 @@ static const struct freq_tbl ftbl_axi_clk_src[] = {
 		{ }
 };
 
-/* RO to linux */
+/* RO to freax */
 static struct clk_rcg2 axi_clk_src = {
 	.cmd_rcgr = 0xd000,
 	.hid_width = 5,

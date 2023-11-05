@@ -7,7 +7,7 @@ EXTRA_INSTALL = install-man
 EXTRA_UNINSTALL = uninstall-man
 
 CFLAGS += -Wall -O2
-CFLAGS += -DPFRUT_HEADER='"../../../../../include/uapi/linux/pfrut.h"'
+CFLAGS += -DPFRUT_HEADER='"../../../../../include/uapi/freax/pfrut.h"'
 LDFLAGS += -luuid
 
 TOOL_OBJS = \

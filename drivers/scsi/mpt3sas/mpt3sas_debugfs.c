@@ -9,22 +9,22 @@
  * Sreekanth Reddy  <sreekanth.reddy@broadcom.com>
  * Suganath Prabu <suganath-prabu.subramani@broadcom.com>
  *
- * Send feedback to : MPT-FusionLinux.pdl@broadcom.com)
+ * Send feedback to : MPT-Fusionfreax.pdl@broadcom.com)
  *
  **/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/uio.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/compat.h>
+#include <freax/uio.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include "mpt3sas_base.h"
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 static struct dentry *mpt3sas_debugfs_root;
 

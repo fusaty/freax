@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/highmem.h>
-#include <linux/kdebug.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/uprobes.h>
+#include <freax/highmem.h>
+#include <freax/kdebug.h>
+#include <freax/types.h>
+#include <freax/notifier.h>
+#include <freax/sched.h>
+#include <freax/uprobes.h>
 
 #include <asm/branch.h>
 #include <asm/cpu-features.h>

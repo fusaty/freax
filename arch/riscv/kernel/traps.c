@@ -3,23 +3,23 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/uprobes.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/signal.h>
+#include <freax/signal.h>
+#include <freax/kdebug.h>
+#include <freax/uaccess.h>
+#include <freax/kprobes.h>
+#include <freax/uprobes.h>
 #include <asm/uprobes.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/kexec.h>
-#include <linux/entry-common.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/irq.h>
+#include <freax/kexec.h>
+#include <freax/entry-common.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/bug.h>

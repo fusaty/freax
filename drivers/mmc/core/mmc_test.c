@@ -3,19 +3,19 @@
  *  Copyright 2007-2008 Pierre Ossman
  */
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/slab.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/slab.h>
 
-#include <linux/scatterlist.h>
-#include <linux/list.h>
+#include <freax/scatterlist.h>
+#include <freax/list.h>
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/seq_file.h>
+#include <freax/module.h>
 
 #include "core.h"
 #include "card.h"

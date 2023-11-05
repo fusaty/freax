@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_STACKTRACE_H
-#define __LINUX_STACKTRACE_H
+#ifndef __freax_STACKTRACE_H
+#define __freax_STACKTRACE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/errno.h>
 
 struct task_struct;
@@ -108,4 +108,4 @@ static inline int stack_trace_save_tsk_reliable(struct task_struct *tsk,
 }
 #endif
 
-#endif /* __LINUX_STACKTRACE_H */
+#endif /* __freax_STACKTRACE_H */

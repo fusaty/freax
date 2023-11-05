@@ -9,14 +9,14 @@
  * For details see https://www.amd.com/products/epd/desiging/evalboards/18.elansc520/520_cdp_brief/index.html
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/concat.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/concat.h>
 
 /*
 ** The Embedded Systems BIOS decodes the first FLASH starting at
@@ -36,7 +36,7 @@
 ** choose more useful addresses for the FLASH banks by reprogramming the
 ** responsible PARxx registers in the SC520's MMCR region. This will
 ** cause the settings to be incompatible with the BIOS's settings, which
-** shouldn't be a problem since you are running Linux, (i.e. the BIOS is
+** shouldn't be a problem since you are running freax, (i.e. the BIOS is
 ** not much use anyway). However, if you need to be compatible with
 ** the BIOS for some reason, just undefine REPROGRAM_PAR.
 */

@@ -4,9 +4,9 @@
 
 #include "cx88.h"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 static unsigned int vbi_debug;
 module_param(vbi_debug, int, 0644);

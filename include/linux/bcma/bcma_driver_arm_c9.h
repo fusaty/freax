@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_ARM_C9_H_
-#define LINUX_BCMA_DRIVER_ARM_C9_H_
+#ifndef freax_BCMA_DRIVER_ARM_C9_H_
+#define freax_BCMA_DRIVER_ARM_C9_H_
 
 /* DMU (Device Management Unit) */
 #define BCMA_DMU_CRU_USB2_CONTROL			0x0164
@@ -13,4 +13,4 @@
 #define  BCMA_DMU_CRU_STRAPS_CTRL_USB3			0x00000010
 #define  BCMA_DMU_CRU_STRAPS_CTRL_4BYTE			0x00008000
 
-#endif /* LINUX_BCMA_DRIVER_ARM_C9_H_ */
+#endif /* freax_BCMA_DRIVER_ARM_C9_H_ */

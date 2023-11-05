@@ -46,15 +46,15 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_MWAVEDD_H
-#define _LINUX_MWAVEDD_H
+#ifndef _freax_MWAVEDD_H
+#define _freax_MWAVEDD_H
 #include "3780i.h"
 #include "tp3780i.h"
 #include "smapi.h"
 #include "mwavepub.h"
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <freax/ioctl.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
 
 extern int mwave_debug;
 extern int mwave_3780i_irq;

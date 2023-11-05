@@ -37,10 +37,10 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/random.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/random.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
 #include "hw.h"

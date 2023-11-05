@@ -7,26 +7,26 @@
  * Copyrignt (C) 2006 Michael Ellerman, IBM Corp
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsg_dump.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/sysrq.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/sched/signal.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/kallsyms.h>
+#include <freax/kmsg_dump.h>
+#include <freax/cpumask.h>
+#include <freax/export.h>
+#include <freax/sysrq.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/bug.h>
+#include <freax/nmi.h>
+#include <freax/ctype.h>
+#include <freax/highmem.h>
+#include <freax/security.h>
+#include <freax/debugfs.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>
@@ -1881,7 +1881,7 @@ static void excprint(struct pt_regs *fp)
 	if (trap == INTERRUPT_PROGRAM)
 		print_bug_trap(fp);
 
-	printf(linux_banner);
+	printf(freax_banner);
 }
 
 static void prregs(struct pt_regs *fp)

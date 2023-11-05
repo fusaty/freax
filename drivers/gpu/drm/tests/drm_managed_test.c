@@ -6,7 +6,7 @@
 
 #include <kunit/resource.h>
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /* Ought to be enough for anybody */
 #define TEST_TIMEOUT_MS	100

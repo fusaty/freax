@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/mount.h>
+#include <freax/blkdev.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
 
 #include <asm/setup.h>
 #include <asm/machdep.h>

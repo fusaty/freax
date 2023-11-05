@@ -8,8 +8,8 @@
  */
 
 // clang-format off
-#ifndef _LINUX_NTFS3_DEBUG_H
-#define _LINUX_NTFS3_DEBUG_H
+#ifndef _freax_NTFS3_DEBUG_H
+#define _freax_NTFS3_DEBUG_H
 
 struct super_block;
 struct inode;
@@ -51,5 +51,5 @@ void ntfs_inode_printk(struct inode *inode, const char *fmt, ...)
 #define ntfs_inode_warn(inode, fmt, ...)                                       \
 	ntfs_inode_printk(inode, KERN_WARNING fmt, ##__VA_ARGS__)
 
-#endif /* _LINUX_NTFS3_DEBUG_H */
+#endif /* _freax_NTFS3_DEBUG_H */
 // clang-format on

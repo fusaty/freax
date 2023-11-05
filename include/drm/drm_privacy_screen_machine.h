@@ -9,7 +9,7 @@
 #ifndef __DRM_PRIVACY_SCREEN_MACHINE_H__
 #define __DRM_PRIVACY_SCREEN_MACHINE_H__
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 /**
  * struct drm_privacy_screen_lookup -  static privacy-screen lookup list entry

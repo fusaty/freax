@@ -5,11 +5,11 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#ifndef __LINUX_CLK_DAVINCI_PLL_H___
-#define __LINUX_CLK_DAVINCI_PLL_H___
+#ifndef __freax_CLK_DAVINCI_PLL_H___
+#define __freax_CLK_DAVINCI_PLL_H___
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /* function for registering clocks in early boot */
 
@@ -20,4 +20,4 @@ int da830_pll_init(struct device *dev, void __iomem *base, struct regmap *cfgchi
 int da850_pll0_init(struct device *dev, void __iomem *base, struct regmap *cfgchip);
 #endif
 
-#endif /* __LINUX_CLK_DAVINCI_PLL_H___ */
+#endif /* __freax_CLK_DAVINCI_PLL_H___ */

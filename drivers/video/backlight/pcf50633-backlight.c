@@ -4,16 +4,16 @@
  *      PCF50633 backlight device driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <freax/backlight.h>
+#include <freax/fb.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/backlight.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/backlight.h>
 
 struct pcf50633_bl {
 	struct pcf50633 *pcf;

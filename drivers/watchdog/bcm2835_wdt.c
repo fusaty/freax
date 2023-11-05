@@ -3,22 +3,22 @@
  * Watchdog driver for Broadcom BCM2835
  *
  * "bcm2708_wdog" driver written by Luke Diamand that was obtained from
- * branch "rpi-3.6.y" of git://github.com/raspberrypi/linux.git was used
+ * branch "rpi-3.6.y" of git://github.com/raspberrypi/freax.git was used
  * as a hardware reference for the Broadcom BCM2835 watchdog timer.
  *
  * Copyright (C) 2013 Lubomir Rintel <lkundrak@v3.sk>
  *
  */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/mfd/bcm2835-pm.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <freax/delay.h>
+#include <freax/types.h>
+#include <freax/mfd/bcm2835-pm.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
 
 #define PM_RSTC				0x1c
 #define PM_RSTS				0x20

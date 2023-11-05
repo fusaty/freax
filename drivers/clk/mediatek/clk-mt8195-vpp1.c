@@ -7,8 +7,8 @@
 #include "clk-mtk.h"
 
 #include <dt-bindings/clock/mt8195-clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 
 static const struct mtk_gate_regs vpp1_0_cg_regs = {
 	.set_ofs = 0x104,

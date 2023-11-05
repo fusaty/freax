@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ATALK_H__
-#define __LINUX_ATALK_H__
+#ifndef __freax_ATALK_H__
+#define __freax_ATALK_H__
 
 
 #include <net/sock.h>
-#include <uapi/linux/atalk.h>
+#include <uapi/freax/atalk.h>
 
 struct atalk_route {
 	struct net_device  *dev;
@@ -183,4 +183,4 @@ static inline void atalk_proc_exit(void)
 }
 #endif /* CONFIG_PROC_FS */
 
-#endif /* __LINUX_ATALK_H__ */
+#endif /* __freax_ATALK_H__ */

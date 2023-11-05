@@ -8,7 +8,7 @@
 IOSM Driver for Intel M.2 PCIe based Modems
 ===========================================
 The IOSM (IPC over Shared Memory) driver is a WWAN PCIe host driver developed
-for linux or chrome platform for data exchange over PCIe interface between
+for freax or chrome platform for data exchange over PCIe interface between
 Host platform & Intel M.2 Modem. The driver exposes interface conforming to the
 MBIM protocol [1]. Any front end application ( eg: Modem Manager) could easily
 manage the MBIM interface to enable data communication towards WWAN.

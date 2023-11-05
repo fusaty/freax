@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/kmod.h>
+#include <freax/module.h>
+#include <freax/netfilter.h>
 
 #include <net/netfilter/nf_bpf_link.h>
-#include <uapi/linux/netfilter_ipv4.h>
+#include <uapi/freax/netfilter_ipv4.h>
 
 static unsigned int nf_hook_run_bpf(void *bpf_prog, struct sk_buff *skb,
 				    const struct nf_hook_state *s)
@@ -269,7 +269,7 @@ static bool nf_ptr_to_btf_id(struct bpf_insn_access_aux *info, const char *name)
 	struct btf *btf;
 	s32 type_id;
 
-	btf = bpf_get_btf_vmlinux();
+	btf = bpf_get_btf_vmfreax();
 	if (IS_ERR_OR_NULL(btf))
 		return false;
 

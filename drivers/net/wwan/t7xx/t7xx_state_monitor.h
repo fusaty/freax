@@ -10,18 +10,18 @@
  *
  * Contributors:
  *  Eliot Lee <eliot.lee@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
 #ifndef __T7XX_MONITOR_H__
 #define __T7XX_MONITOR_H__
 
-#include <linux/bits.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/bits.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include "t7xx_modem_ops.h"
 

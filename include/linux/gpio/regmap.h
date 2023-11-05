@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#ifndef _LINUX_GPIO_REGMAP_H
-#define _LINUX_GPIO_REGMAP_H
+#ifndef _freax_GPIO_REGMAP_H
+#define _freax_GPIO_REGMAP_H
 
 struct device;
 struct fwnode_handle;
@@ -91,4 +91,4 @@ struct gpio_regmap *devm_gpio_regmap_register(struct device *dev,
 					      const struct gpio_regmap_config *config);
 void *gpio_regmap_get_drvdata(struct gpio_regmap *gpio);
 
-#endif /* _LINUX_GPIO_REGMAP_H */
+#endif /* _freax_GPIO_REGMAP_H */

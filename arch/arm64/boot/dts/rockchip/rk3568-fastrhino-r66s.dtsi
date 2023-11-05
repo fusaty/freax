@@ -22,7 +22,7 @@
 			debounce-interval = <50>;
 			gpios = <&gpio0 RK_PB6 GPIO_ACTIVE_LOW>;
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 		};
 	};
 
@@ -35,7 +35,7 @@
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio0 RK_PC0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

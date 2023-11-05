@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm1250-ev1.h - Platform data for WM1250-EV1
+ * freax/sound/wm1250-ev1.h - Platform data for WM1250-EV1
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM1250_EV1_H
-#define __LINUX_SND_WM1250_EV1_H
+#ifndef __freax_SND_WM1250_EV1_H
+#define __freax_SND_WM1250_EV1_H
 
 #define WM1250_EV1_NUM_GPIOS 5
 

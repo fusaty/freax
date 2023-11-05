@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * gl520sm.c - Part of lm_sensors, Linux kernel modules for hardware
+ * gl520sm.c - Part of lm_sensors, freax kernel modules for hardware
  *	       monitoring
  * Copyright (c) 1998, 1999  Frodo Looijaard <frodol@dds.nl>,
  *			     Kyösti Mälkki <kmalkki@cc.hut.fi>
  * Copyright (c) 2005	Maarten Deprez <maartendeprez@users.sourceforge.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
 
 /* Type of the extra sensor */
 static unsigned short extra_sensor_type;

@@ -6,13 +6,13 @@
  * Copyright 2023 Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
 #include "../leds.h"
 
 struct gpio_trig_data {

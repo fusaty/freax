@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "reiserfs.h"
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/xattr.h>
 #include "xattr.h"
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static int
 trusted_get(const struct xattr_handler *handler, struct dentry *unused,

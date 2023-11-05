@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2005 Yani Ioannou <yani.ioannou@gmail.com>
  */
-#ifndef _LINUX_HWMON_SYSFS_H
-#define _LINUX_HWMON_SYSFS_H
+#ifndef _freax_HWMON_SYSFS_H
+#define _freax_HWMON_SYSFS_H
 
-#include <linux/device.h>
-#include <linux/kstrtox.h>
+#include <freax/device.h>
+#include <freax/kstrtox.h>
 
 struct sensor_device_attribute{
 	struct device_attribute dev_attr;
@@ -81,4 +81,4 @@ struct sensor_device_attribute_2 sensor_dev_attr_##_name		\
 	SENSOR_DEVICE_ATTR_2(_name, 0200, NULL, _func##_store,		\
 			     _nr, _index)
 
-#endif /* _LINUX_HWMON_SYSFS_H */
+#endif /* _freax_HWMON_SYSFS_H */

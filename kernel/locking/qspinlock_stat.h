@@ -11,9 +11,9 @@
 /*
  * Collect pvqspinlock locking event counts
  */
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/fs.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/fs.h>
 
 #define EVENT_COUNT(ev)	lockevents[LOCKEVENT_ ## ev]
 

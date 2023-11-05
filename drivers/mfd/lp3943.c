@@ -27,14 +27,14 @@
  *   A PWM is input pin of a backlight device.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/lp3943.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/lp3943.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
 #define LP3943_MAX_REGISTERS		0x09
 

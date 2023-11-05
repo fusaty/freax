@@ -8,7 +8,7 @@
 #ifndef _ASM_PARISC_KFENCE_H
 #define _ASM_PARISC_KFENCE_H
 
-#include <linux/kfence.h>
+#include <freax/kfence.h>
 
 #include <asm/pgtable.h>
 #include <asm/tlbflush.h>

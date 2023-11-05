@@ -1,4 +1,4 @@
-/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for Linux. */
+/* epic100.c: A SMC 83c170 EPIC/100 Fast Ethernet driver for freax. */
 /*
 	Written/copyright 1997-2001 by Donald Becker.
 
@@ -67,26 +67,26 @@ static int rx_copybreak;
 #define TX_FIFO_THRESH 256
 #define RX_FIFO_THRESH 1		/* 0-3, 0==32, 64,96, or 3==128 bytes  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/crc32.h>
+#include <freax/bitops.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/byteorder.h>
 
 /* These identify the driver base version and may not be removed. */

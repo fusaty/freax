@@ -6,14 +6,14 @@
 #ifndef __TEE_DRV_H
 #define __TEE_DRV_H
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/tee.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
+#include <freax/tee.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
 
 /*
  * The file describes the API provided by the generic TEE driver to the

@@ -9,9 +9,9 @@
 #if !defined(__INTEL_DISPLAY_TRACE_H__) || defined(TRACE_HEADER_MULTI_READ)
 #define __INTEL_DISPLAY_TRACE_H__
 
-#include <linux/string_helpers.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/string_helpers.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
 #include "i915_drv.h"
 #include "intel_crtc.h"

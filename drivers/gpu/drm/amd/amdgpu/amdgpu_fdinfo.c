@@ -23,12 +23,12 @@
  *          Roy Sun
  */
 
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/reboot.h>
-#include <linux/syscalls.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/reboot.h>
+#include <freax/syscalls.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_debugfs.h>

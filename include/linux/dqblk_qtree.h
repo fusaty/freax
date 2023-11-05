@@ -3,10 +3,10 @@
  *	Definitions of structures and functions for quota formats using trie
  */
 
-#ifndef _LINUX_DQBLK_QTREE_H
-#define _LINUX_DQBLK_QTREE_H
+#ifndef _freax_DQBLK_QTREE_H
+#define _freax_DQBLK_QTREE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Numbers of blocks needed for updates - we count with the smallest
  * possible block size (1024) */
@@ -56,4 +56,4 @@ static inline int qtree_depth(struct qtree_mem_dqinfo *info)
 }
 int qtree_get_next_id(struct qtree_mem_dqinfo *info, struct kqid *qid);
 
-#endif /* _LINUX_DQBLK_QTREE_H */
+#endif /* _freax_DQBLK_QTREE_H */

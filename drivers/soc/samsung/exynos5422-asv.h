@@ -6,10 +6,10 @@
  * Samsung Exynos 5422 SoC Adaptive Supply Voltage support
  */
 
-#ifndef __LINUX_SOC_EXYNOS5422_ASV_H
-#define __LINUX_SOC_EXYNOS5422_ASV_H
+#ifndef __freax_SOC_EXYNOS5422_ASV_H
+#define __freax_SOC_EXYNOS5422_ASV_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 enum {
 	EXYNOS_ASV_SUBSYS_ID_ARM,
@@ -28,4 +28,4 @@ static inline int exynos5422_asv_init(struct exynos_asv *asv)
 }
 #endif
 
-#endif /* __LINUX_SOC_EXYNOS5422_ASV_H */
+#endif /* __freax_SOC_EXYNOS5422_ASV_H */

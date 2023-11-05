@@ -2,11 +2,11 @@
 #ifndef _ASM_X86_CURRENT_H
 #define _ASM_X86_CURRENT_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cache.h>
+#include <freax/cache.h>
 #include <asm/percpu.h>
 
 struct task_struct;

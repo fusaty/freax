@@ -15,7 +15,7 @@
 
 enum {
 	SUN_WHOLE_DISK = 5,
-	LINUX_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
+	freax_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
 };
 
 int sun_partition(struct parsed_partitions *state)
@@ -99,7 +99,7 @@ int sun_partition(struct parsed_partitions *state)
 	nparts = (use_vtoc) ? be16_to_cpu(label->vtoc.nparts) : 8;
 
 	/*
-	 * So that old Linux-Sun partitions continue to work,
+	 * So that old freax-Sun partitions continue to work,
 	 * alow the VTOC to be used under the additional condition ...
 	 */
 	use_vtoc = use_vtoc || !(label->vtoc.sanity ||
@@ -115,7 +115,7 @@ int sun_partition(struct parsed_partitions *state)
 			put_partition(state, slot, st_sector, num_sectors);
 			state->parts[slot].flags = 0;
 			if (use_vtoc) {
-				if (be16_to_cpu(label->vtoc.infos[i].id) == LINUX_RAID_PARTITION)
+				if (be16_to_cpu(label->vtoc.infos[i].id) == freax_RAID_PARTITION)
 					state->parts[slot].flags |= ADDPART_FLAG_RAID;
 				else if (be16_to_cpu(label->vtoc.infos[i].id) == SUN_WHOLE_DISK)
 					state->parts[slot].flags |= ADDPART_FLAG_WHOLEDISK;

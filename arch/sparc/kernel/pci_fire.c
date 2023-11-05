@@ -3,16 +3,16 @@
  *
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/numa.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/msi.h>
+#include <freax/export.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/numa.h>
 
 #include <asm/prom.h>
 #include <asm/irq.h>
@@ -414,7 +414,7 @@ static void pci_fire_hw_init(struct pci_pbm_info *pbm)
 static int pci_fire_pbm_init(struct pci_pbm_info *pbm,
 			     struct platform_device *op, u32 portid)
 {
-	const struct linux_prom64_registers *regs;
+	const struct freax_prom64_registers *regs;
 	struct device_node *dp = op->dev.of_node;
 	int err;
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm_types.h>
-#include <linux/maple_tree.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/cpumask.h>
-#include <linux/mman.h>
-#include <linux/pgtable.h>
+#include <freax/mm_types.h>
+#include <freax/maple_tree.h>
+#include <freax/rwsem.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/cpumask.h>
+#include <freax/mman.h>
+#include <freax/pgtable.h>
 
-#include <linux/atomic.h>
-#include <linux/user_namespace.h>
-#include <linux/iommu.h>
+#include <freax/atomic.h>
+#include <freax/user_namespace.h>
+#include <freax/iommu.h>
 #include <asm/mmu.h>
 
 #ifndef INIT_MM_CONTEXT

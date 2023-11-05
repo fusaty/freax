@@ -6,7 +6,7 @@
 #ifndef _TSNEP_HW_H
 #define _TSNEP_HW_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* type */
 #define ECM_TYPE 0x0000

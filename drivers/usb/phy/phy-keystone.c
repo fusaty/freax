@@ -7,11 +7,11 @@
  * Author: WingMan Kwok <w-kwok2@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/usb/usb_phy_generic.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include "phy-generic.h"
 

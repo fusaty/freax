@@ -83,7 +83,7 @@
  *   assert.h, locale.h, math.h, setjmp.h, limits.h
  *
  * A very useful calling convention table may be found here :
- *      http://man7.org/linux/man-pages/man2/syscall.2.html
+ *      http://man7.org/freax/man-pages/man2/syscall.2.html
  *
  * This doc is quite convenient though not necessarily up to date :
  *      https://w3challs.com/syscalls/

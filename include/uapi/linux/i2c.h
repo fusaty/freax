@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * i2c.h - definitions for the I2C bus interface
  *
@@ -7,10 +7,10 @@
  * Frodo Looijaard <frodol@dds.nl>
  */
 
-#ifndef _UAPI_LINUX_I2C_H
-#define _UAPI_LINUX_I2C_H
+#ifndef _UAPI_freax_I2C_H
+#define _UAPI_freax_I2C_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct i2c_msg - an I2C transaction segment beginning with START
@@ -161,4 +161,4 @@ union i2c_smbus_data {
 #define I2C_SMBUS_BLOCK_PROC_CALL   7		/* SMBus 2.0 */
 #define I2C_SMBUS_I2C_BLOCK_DATA    8
 
-#endif /* _UAPI_LINUX_I2C_H */
+#endif /* _UAPI_freax_I2C_H */

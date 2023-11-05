@@ -3,20 +3,20 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * KVM/MIPS TLB handling, this file is part of the Linux host kernel so that
+ * KVM/MIPS TLB handling, this file is part of the freax host kernel so that
  * TLB handlers run from KSEG0
  *
  * Copyright (C) 2012  MIPS Technologies, Inc.  All rights reserved.
  * Authors: Sanjay Lal <sanjayl@kymasys.com>
  */
 
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kvm_host.h>
-#include <linux/srcu.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/kvm_host.h>
+#include <freax/srcu.h>
 
 #include <asm/cpu.h>
 #include <asm/bootinfo.h>

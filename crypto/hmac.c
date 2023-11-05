@@ -8,19 +8,19 @@
  * Copyright (c) 2006 Herbert Xu <herbert@gondor.apana.org.au>
  *
  * The HMAC implementation is derived from USAGI.
- * Copyright (c) 2002 Kazunori Miyazawa <miyazawa@linux-ipv6.org> / USAGI
+ * Copyright (c) 2002 Kazunori Miyazawa <miyazawa@freax-ipv6.org> / USAGI
  */
 
 #include <crypto/hmac.h>
 #include <crypto/internal/hash.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <freax/err.h>
+#include <freax/fips.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
 
 struct hmac_ctx {
 	struct crypto_shash *hash;

@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
-#include "linux/perf_event.h"
+#include "freax/perf_event.h"
 #include "tests.h"
 #include "debug.h"
 #include "pmu.h"

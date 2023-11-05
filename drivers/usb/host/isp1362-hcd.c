@@ -20,7 +20,7 @@
  * 1. Configure your memory controller to add such delays if it can (the best)
  * 2. Implement platform-specific delay function possibly
  *    combined with configuring the memory controller; see
- *    include/linux/usb_isp1362.h for more info.
+ *    include/freax/usb_isp1362.h for more info.
  * 3. Use ndelay (easiest, poorest).
  *
  * Use the corresponding macros USE_PLATFORM_DELAY and USE_NDELAY in the
@@ -60,26 +60,26 @@
  */
 #undef CHIP_BUFFER_TEST
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/isp1362.h>
-#include <linux/usb/hcd.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/bitmap.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/usb.h>
+#include <freax/usb/isp1362.h>
+#include <freax/usb/hcd.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/io.h>
+#include <freax/bitmap.h>
+#include <freax/prefetch.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 #include <asm/irq.h>
 #include <asm/byteorder.h>

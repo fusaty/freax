@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_TC_CSUM_H
-#define __LINUX_TC_CSUM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_TC_CSUM_H
+#define __freax_TC_CSUM_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <freax/types.h>
+#include <freax/pkt_cls.h>
 
 enum {
 	TCA_CSUM_UNSPEC,
@@ -30,4 +30,4 @@ struct tc_csum {
 	__u32 update_flags;
 };
 
-#endif /* __LINUX_TC_CSUM_H */
+#endif /* __freax_TC_CSUM_H */

@@ -20,9 +20,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
 #include "vega10_processpptables.h"
 #include "ppatomfwctrl.h"

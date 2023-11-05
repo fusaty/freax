@@ -36,19 +36,19 @@
  * Description: Main component of the bnxt_re driver
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
 #include <net/dcbnl.h>
 #include <net/ipv6.h>
 #include <net/addrconf.h>
-#include <linux/if_ether.h>
-#include <linux/auxiliary_bus.h>
+#include <freax/if_ether.h>
+#include <freax/auxiliary_bus.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

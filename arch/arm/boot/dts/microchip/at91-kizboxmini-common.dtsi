@@ -40,14 +40,14 @@
 		key-prog {
 			label = "PB_PROG";
 			gpios = <&pioC 17 GPIO_ACTIVE_LOW>;
-			linux,code = <0x102>;
+			freax,code = <0x102>;
 			wakeup-source;
 		};
 
 		key-reset {
 			label = "PB_RST";
 			gpios = <&pioC 16 GPIO_ACTIVE_LOW>;
-			linux,code = <0x100>;
+			freax,code = <0x100>;
 			wakeup-source;
 		};
 	};
@@ -59,7 +59,7 @@
 			label = "pwm:blue:user";
 			pwms = <&pwm0 2 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "none";
+			freax,default-trigger = "none";
 			status = "disabled";
 		};
 
@@ -67,14 +67,14 @@
 			label = "pwm:green:user";
 			pwms = <&pwm0 0 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led_red: led-3 {
 			label = "pwm:red:user";
 			pwms = <&pwm0 1 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 	};
 };

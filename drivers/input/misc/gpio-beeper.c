@@ -5,12 +5,12 @@
  * Copyright (C) 2013-2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
 
 #define BEEPER_MODNAME		"gpio-beeper"
 

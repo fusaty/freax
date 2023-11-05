@@ -9,15 +9,15 @@
  *   Authors	Victor Prupis
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/proc_fs.h>
+#include <freax/uaccess.h>
 #include <platform/simcall.h>
 
 #define SIMDISK_MAJOR 240

@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/pm.c
+ * freax/arch/arm/mach-omap1/pm.c
  *
  * OMAP Power Management Routines
  *
@@ -35,16 +35,16 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/suspend.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/atomic.h>
-#include <linux/cpu.h>
+#include <freax/suspend.h>
+#include <freax/sched.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/atomic.h>
+#include <freax/cpu.h>
 
 #include <asm/fncpy.h>
 #include <asm/system_misc.h>
@@ -52,9 +52,9 @@
 #include <asm/mach/time.h>
 #include <asm/mach/irq.h>
 
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-io.h>
 #include "tc.h"
-#include <linux/omap-dma.h>
+#include <freax/omap-dma.h>
 #include <clocksource/timer-ti-dm.h>
 
 #include "hardware.h"

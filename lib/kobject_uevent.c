@@ -13,18 +13,18 @@
  *	Greg Kroah-Hartman	<greg@kroah.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/kobject.h>
-#include <linux/export.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/uidgid.h>
-#include <linux/uuid.h>
-#include <linux/ctype.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/kobject.h>
+#include <freax/export.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/skbuff.h>
+#include <freax/netlink.h>
+#include <freax/uidgid.h>
+#include <freax/uuid.h>
+#include <freax/ctype.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
@@ -47,7 +47,7 @@ static LIST_HEAD(uevent_sock_list);
 /* This lock protects uevent_seqnum and uevent_sock_list */
 static DEFINE_MUTEX(uevent_sock_mutex);
 
-/* the strings here must match the enum in include/linux/kobject.h */
+/* the strings here must match the enum in include/freax/kobject.h */
 static const char *kobject_actions[] = {
 	[KOBJ_ADD] =		"add",
 	[KOBJ_REMOVE] =		"remove",

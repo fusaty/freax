@@ -11,7 +11,7 @@
  * Rewrite for Unified ADB by Joshua M. Thompson (funaho@jurai.org)
  *
  * 1999-08-02 (jmt) - Initial rewrite for Unified ADB.
- * 2000-03-29 Tony Mantler <tonym@mac.linux-m68k.org>
+ * 2000-03-29 Tony Mantler <tonym@mac.freax-m68k.org>
  *            - Big overhaul, should actually work now.
  * 2006-12-31 Finn Thain - Another overhaul.
  *
@@ -23,13 +23,13 @@
  * Apple's "ADB Analyzer" bus sniffer is invaluable:
  *   ftp://ftp.apple.com/developer/Tool_Chest/Devices_-_Hardware/Apple_Desktop_Bus/
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/adb.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/adb.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
 #include <asm/macintosh.h>
 #include <asm/macints.h>
 #include <asm/mac_via.h>

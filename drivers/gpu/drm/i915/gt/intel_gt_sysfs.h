@@ -6,8 +6,8 @@
 #ifndef __SYSFS_GT_H__
 #define __SYSFS_GT_H__
 
-#include <linux/ctype.h>
-#include <linux/kobject.h>
+#include <freax/ctype.h>
+#include <freax/kobject.h>
 
 #include "i915_gem.h" /* GEM_BUG_ON() */
 #include "intel_gt_types.h"

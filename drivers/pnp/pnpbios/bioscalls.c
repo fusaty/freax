@@ -3,18 +3,18 @@
  * bioscalls.c - the lowlevel layer of the PnPBIOS driver
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/pnp.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kmod.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/pnp.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kmod.h>
+#include <freax/completion.h>
+#include <freax/spinlock.h>
 
 #include <asm/page.h>
 #include <asm/desc.h>
@@ -29,12 +29,12 @@ __visible struct {
 
 /*
  * These are some opcodes for a "static asmlinkage"
- * As this code is *not* executed inside the linux kernel segment, but in a
+ * As this code is *not* executed inside the freax kernel segment, but in a
  * alias at offset 0, we need a far return that can not be compiled by
  * default (please, prove me wrong! this is *really* ugly!)
  * This is the only way to get the bios to return into the kernel code,
  * because the bios code runs in 16 bit protected mode and therefore can only
- * return to the caller if the call is within the first 64kB, and the linux
+ * return to the caller if the call is within the first 64kB, and the freax
  * kernel begins at offset 3GB...
  */
 

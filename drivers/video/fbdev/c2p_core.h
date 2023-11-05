@@ -12,7 +12,7 @@
  *  for more details.
  */
 
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 
 
     /*

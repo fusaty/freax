@@ -6,7 +6,7 @@
  * Copyright (C) 2009 Frederic Weisbecker <fweisbec@gmail.com>
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@freax.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -15,18 +15,18 @@
  * using the CPU's debug registers.
  */
 
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/irqflags.h>
-#include <linux/notifier.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/percpu.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <freax/perf_event.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/irqflags.h>
+#include <freax/notifier.h>
+#include <freax/kallsyms.h>
+#include <freax/kprobes.h>
+#include <freax/percpu.h>
+#include <freax/kdebug.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
 
 #include <asm/hw_breakpoint.h>
 #include <asm/processor.h>

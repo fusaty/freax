@@ -17,8 +17,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <asm/bug.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 
 static const char *perf_ns__names[] = {
 	[NET_NS_INDEX]		= "net",

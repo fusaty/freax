@@ -13,17 +13,17 @@
  *	Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/cpu_pm.h>
 
 #include "omap-wakeupgen.h"
 #include "omap-secure.h"

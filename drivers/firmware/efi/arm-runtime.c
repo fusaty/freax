@@ -7,18 +7,18 @@
  * Copyright (C) 2013, 2014 Linaro Ltd.
  */
 
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/mm_types.h>
-#include <linux/preempt.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/pgtable.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/mm_types.h>
+#include <freax/preempt.h>
+#include <freax/rbtree.h>
+#include <freax/rwsem.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/pgtable.h>
 
 #include <asm/cacheflush.h>
 #include <asm/efi.h>

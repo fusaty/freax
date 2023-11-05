@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
 # Ignore header name
-ignore define _UAPI__LINUX_VIDEODEV2_H
+ignore define _UAPI__freax_VIDEODEV2_H
 
 #
 # The cross reference valitator for videodev2.h DocBook never cared

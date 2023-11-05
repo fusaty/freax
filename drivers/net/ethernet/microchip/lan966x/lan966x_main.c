@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/module.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/iopoll.h>
-#include <linux/ip.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/iopoll.h>
+#include <freax/ip.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 #include <net/addrconf.h>
 
 #include "lan966x_main.h"

@@ -8,7 +8,7 @@
 #ifndef __ASM_S390_CTLREG_H
 #define __ASM_S390_CTLREG_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define CR0_TRANSACTIONAL_EXECUTION_BIT		(63 - 8)
 #define CR0_CLOCK_COMPARATOR_SIGN_BIT		(63 - 10)
@@ -82,7 +82,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bug.h>
+#include <freax/bug.h>
 
 struct ctlreg {
 	unsigned long val;

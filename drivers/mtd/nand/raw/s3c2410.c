@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright © 2004-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Samsung S3C2410/S3C2440/S3C2412 NAND driver
@@ -13,25 +13,25 @@
 #define DEBUG
 #endif
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/of.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
 
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <freax/platform_data/mtd-nand-s3c2410.h>
 
 #define S3C2410_NFREG(x) (x)
 

@@ -28,10 +28,10 @@
  *
  */
 
-#ifndef _LINUX_VGA_SWITCHEROO_H_
-#define _LINUX_VGA_SWITCHEROO_H_
+#ifndef _freax_VGA_SWITCHEROO_H_
+#define _freax_VGA_SWITCHEROO_H_
 
-#include <linux/fb.h>
+#include <freax/fb.h>
 
 struct pci_dev;
 
@@ -196,4 +196,4 @@ static inline int vga_switcheroo_init_domain_pm_ops(struct device *dev, struct d
 static inline void vga_switcheroo_fini_domain_pm_ops(struct device *dev) {}
 
 #endif
-#endif /* _LINUX_VGA_SWITCHEROO_H_ */
+#endif /* _freax_VGA_SWITCHEROO_H_ */

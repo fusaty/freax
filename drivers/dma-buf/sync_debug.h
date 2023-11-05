@@ -10,16 +10,16 @@
  *
  */
 
-#ifndef _LINUX_SYNC_H
-#define _LINUX_SYNC_H
+#ifndef _freax_SYNC_H
+#define _freax_SYNC_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/dma-fence.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/spinlock.h>
+#include <freax/dma-fence.h>
 
-#include <linux/sync_file.h>
-#include <uapi/linux/sync_file.h>
+#include <freax/sync_file.h>
+#include <uapi/freax/sync_file.h>
 
 /**
  * struct sync_timeline - sync object
@@ -69,4 +69,4 @@ void sync_timeline_debug_remove(struct sync_timeline *obj);
 void sync_file_debug_add(struct sync_file *fence);
 void sync_file_debug_remove(struct sync_file *fence);
 
-#endif /* _LINUX_SYNC_H */
+#endif /* _freax_SYNC_H */

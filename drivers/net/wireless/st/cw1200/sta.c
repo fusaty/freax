@@ -6,11 +6,11 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/sched.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
 
 #include "cw1200.h"
 #include "sta.h"

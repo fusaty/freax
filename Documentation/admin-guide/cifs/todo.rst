@@ -46,7 +46,7 @@ g) Add GUI tool to configure /proc/fs/cifs settings and for display of
    the CIFS statistics (started)
 
 h) implement support for security and trusted categories of xattrs
-   (requires minor protocol extension) to enable better support for SELINUX
+   (requires minor protocol extension) to enable better support for SEfreax
 
 i) Add support for tree connect contexts (see MS-SMB2) a new SMB3.1.1 protocol
    feature (may be especially useful for virtualization).
@@ -75,7 +75,7 @@ o) mount helper GUI (to simplify the various configuration options on mount)
 
 p) Expand support for witness protocol to allow for notification of share
    move, and server network adapter changes. Currently only notifications by
-   the witness protocol for server move is supported by the Linux client.
+   the witness protocol for server move is supported by the freax client.
 
 q) Allow mount.cifs to be more verbose in reporting errors with dialect
    or unsupported feature errors. This would now be easier due to the

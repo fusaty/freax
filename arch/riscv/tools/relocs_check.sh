@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Based on powerpc relocs_check.sh
 
-# This script checks the relocations of a vmlinux for "suspicious"
+# This script checks the relocations of a vmfreax for "suspicious"
 # relocations.
 
 if [ $# -lt 3 ]; then
-        echo "$0 [path to objdump] [path to nm] [path to vmlinux]" 1>&2
+        echo "$0 [path to objdump] [path to nm] [path to vmfreax]" 1>&2
         exit 1
 fi
 

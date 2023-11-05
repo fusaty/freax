@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/relay.h
+ * freax/include/freax/relay.h
  *
  * Copyright (C) 2002, 2003 - Tom Zanussi (zanussi@us.ibm.com), IBM Corp
  * Copyright (C) 1999, 2000, 2001, 2002 - Karim Yaghmour (karim@opersys.com)
@@ -8,20 +8,20 @@
  * CONFIG_RELAY definitions and declarations
  */
 
-#ifndef _LINUX_RELAY_H
-#define _LINUX_RELAY_H
+#ifndef _freax_RELAY_H
+#define _freax_RELAY_H
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/irq_work.h>
-#include <linux/bug.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/kref.h>
-#include <linux/percpu.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/wait.h>
+#include <freax/list.h>
+#include <freax/irq_work.h>
+#include <freax/bug.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/kref.h>
+#include <freax/percpu.h>
 
 /*
  * Tracks changes to rchan/rchan_buf structs
@@ -283,5 +283,5 @@ int relay_prepare_cpu(unsigned int cpu);
 #define relay_prepare_cpu     NULL
 #endif
 
-#endif /* _LINUX_RELAY_H */
+#endif /* _freax_RELAY_H */
 

@@ -3,14 +3,14 @@
  * Copyright (C) 2018 Spreadtrum Communications Inc.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/workqueue.h>
 
 #define CUR_DRV_CAL_SEL			GENMASK(13, 12)
 #define SLP_LDOVIBR_PD_EN		BIT(9)

@@ -2,7 +2,7 @@
 /*
  * OpenRISC or32_ksyms.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,17 +11,17 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/export.h>
-#include <linux/elfcore.h>
-#include <linux/sched.h>
-#include <linux/in6.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/semaphore.h>
-#include <linux/pgtable.h>
+#include <freax/export.h>
+#include <freax/elfcore.h>
+#include <freax/sched.h>
+#include <freax/in6.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/semaphore.h>
+#include <freax/pgtable.h>
 
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/checksum.h>
 #include <asm/io.h>
 #include <asm/hardirq.h>

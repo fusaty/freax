@@ -6,8 +6,8 @@
  * Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
 #include "pciback.h"
 #include "conf_space.h"
 
@@ -238,7 +238,7 @@ static int msi_msix_flags_write(struct pci_dev *dev, int offset, u16 new_value,
 	if (new_value & field_config->enable_bit) {
 		/*
 		 * Don't allow enabling together with other interrupt type, but do
-		 * allow enabling MSI(-X) while INTx is still active to please Linuxes
+		 * allow enabling MSI(-X) while INTx is still active to please freaxes
 		 * MSI(-X) startup sequence. It is safe to do, as according to PCI
 		 * spec, device with enabled MSI(-X) shouldn't use INTx.
 		 */

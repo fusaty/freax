@@ -4,7 +4,7 @@
 Physical Memory
 ===============
 
-Linux is available for a wide range of architectures so there is a need for an
+freax is available for a wide range of architectures so there is a need for an
 architecture-independent abstraction to represent the physical memory. This
 chapter describes the structures used to manage physical memory in a running
 system.
@@ -17,7 +17,7 @@ that incur a different cost to access depending on the “distance” from the
 processor. For example, there might be a bank of memory assigned to each CPU or
 a bank of memory very suitable for DMA near peripheral devices.
 
-Each bank is called a node and the concept is represented under Linux by a
+Each bank is called a node and the concept is represented under freax by a
 ``struct pglist_data`` even if the architecture is UMA. This structure is
 always referenced by its typedef ``pg_data_t``. A ``pg_data_t`` structure
 for a particular node can be referenced by ``NODE_DATA(nid)`` macro where
@@ -140,7 +140,7 @@ Nodes
 
 As we have mentioned, each node in memory is described by a ``pg_data_t`` which
 is a typedef for a ``struct pglist_data``. When allocating a page, by default
-Linux uses a node-local allocation policy to allocate memory from the node
+freax uses a node-local allocation policy to allocate memory from the node
 closest to the running CPU. As processes tend to run on the same CPU, it is
 likely the memory from the current node will be used. The allocation policy can
 be controlled by users as described in
@@ -185,7 +185,7 @@ For example, for node 2 with normal memory and CPUs, bit 2 will be set in ::
   node_states[N_CPU]
 
 For various operations possible with nodemasks please refer to
-``include/linux/nodemask.h``.
+``include/freax/nodemask.h``.
 
 Among other things, nodemasks are used to provide macros for node traversal,
 namely ``for_each_node()`` and ``for_each_online_node()``.
@@ -202,7 +202,7 @@ Node structure
 --------------
 
 The nodes structure ``struct pglist_data`` is declared in
-``include/linux/mmzone.h``. Here we briefly describe fields of this
+``include/freax/mmzone.h``. Here we briefly describe fields of this
 structure:
 
 General

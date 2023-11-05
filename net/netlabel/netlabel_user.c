@@ -13,14 +13,14 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/socket.h>
-#include <linux/audit.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/gfp.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/socket.h>
+#include <freax/audit.h>
+#include <freax/tty.h>
+#include <freax/security.h>
+#include <freax/gfp.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>

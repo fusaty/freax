@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /**
  * file phonet.h
  *
@@ -21,11 +21,11 @@
  * 02110-1301 USA
  */
 
-#ifndef _UAPILINUX_PHONET_H
-#define _UAPILINUX_PHONET_H
+#ifndef _UAPIfreax_PHONET_H
+#define _UAPIfreax_PHONET_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <freax/types.h>
+#include <freax/socket.h>
 
 /* Automatic protocol selection */
 #define PN_PROTO_TRANSPORT	0
@@ -183,4 +183,4 @@ static inline __u8 pn_sockaddr_get_resource(const struct sockaddr_pn *spn)
 
 /* Phonet device ioctl requests */
 
-#endif /* _UAPILINUX_PHONET_H */
+#endif /* _UAPIfreax_PHONET_H */

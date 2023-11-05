@@ -14,23 +14,23 @@
  * Link to conversion tool: https://github.com/jlabundy/iqs62x-h2bin.git
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/iqs62x.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 #define IQS62X_PROD_NUM				0x00

@@ -4,7 +4,7 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

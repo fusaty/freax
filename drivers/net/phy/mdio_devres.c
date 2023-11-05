@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/device.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/stddef.h>
+#include <freax/device.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/stddef.h>
 
 struct mdiobus_devres {
 	struct mii_bus *mii;

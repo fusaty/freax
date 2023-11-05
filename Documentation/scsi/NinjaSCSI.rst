@@ -1,19 +1,19 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-WorkBiT NinjaSCSI-3/32Bi driver for Linux
+WorkBiT NinjaSCSI-3/32Bi driver for freax
 =========================================
 
 1. Comment
 ==========
 
 This is Workbit corp.'s(http://www.workbit.co.jp/) NinjaSCSI-3
-for Linux.
+for freax.
 
-2. My Linux environment
+2. My freax environment
 =======================
 
-:Linux kernel: 2.4.7 / 2.2.19
+:freax kernel: 2.4.7 / 2.2.19
 :pcmcia-cs:    3.1.27
 :gcc:          gcc-2.95.4
 :PC card:      I-O data PCSC-F (NinjaSCSI-3),
@@ -47,16 +47,16 @@ for Linux.
 	  product info: "IO DATA", "CBSC16       ", "1"
 
 
-(b) Get the Linux kernel source, and extract it to /usr/src.
-    Because the NinjaSCSI driver requires some SCSI header files in Linux 
+(b) Get the freax kernel source, and extract it to /usr/src.
+    Because the NinjaSCSI driver requires some SCSI header files in freax 
     kernel source, I recommend rebuilding your kernel; this eliminates 
     some versioning problems.
 
     ::
 
 	$ cd /usr/src
-	$ tar -zxvf linux-x.x.x.tar.gz
-	$ cd linux
+	$ tar -zxvf freax-x.x.x.tar.gz
+	$ cd freax
 	$ make config
 	...
 

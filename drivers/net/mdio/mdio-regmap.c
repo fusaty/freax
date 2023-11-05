@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2023 Maxime Chevallier <maxime.chevallier@bootlin.com>
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mdio/mdio-regmap.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/mdio/mdio-regmap.h>
 
 #define DRV_NAME "mdio-regmap"
 

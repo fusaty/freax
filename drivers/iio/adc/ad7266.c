@@ -5,23 +5,23 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
-#include <linux/platform_data/ad7266.h>
+#include <freax/platform_data/ad7266.h>
 
 struct ad7266_state {
 	struct spi_device	*spi;

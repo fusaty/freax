@@ -3,10 +3,10 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
-#include <linux/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/writeback.h>
+#include <freax/sched/mm.h>
 #include "messages.h"
 #include "misc.h"
 #include "ctree.h"

@@ -2,7 +2,7 @@
 /*
  * /proc interface for comedi
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -13,10 +13,10 @@
  * was cool.
  */
 
-#include <linux/comedi/comedidev.h>
+#include <freax/comedi/comedidev.h>
 #include "comedi_internal.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 
 static int comedi_read(struct seq_file *m, void *v)
 {

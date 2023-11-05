@@ -7,11 +7,11 @@
  * Author: Wenyou Yang <wenyou.yang@atmel.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 static const struct mfd_cell act8945a_devs[] = {
 	{

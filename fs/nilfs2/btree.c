@@ -7,10 +7,10 @@
  * Written by Koji Sato.
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/pagevec.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/pagevec.h>
 #include "nilfs.h"
 #include "page.h"
 #include "btnode.h"

@@ -9,9 +9,9 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 
 #include "hid-ids.h"
 

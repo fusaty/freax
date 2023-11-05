@@ -10,7 +10,7 @@
 #include "fs.h"
 #include "snapshot.h"
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 /*
  * Snapshot trees:

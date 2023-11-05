@@ -24,7 +24,7 @@ Jump instructions
 =================
 
 If ``-O0`` is used, Clang will generate the ``BPF_CALL | BPF_X | BPF_JMP`` (0x8d)
-instruction, which is not supported by the Linux kernel verifier.
+instruction, which is not supported by the freax kernel verifier.
 
 Atomic operations
 =================

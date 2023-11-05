@@ -15,7 +15,7 @@
 /* SRP Information Units (IUs) are sent on a "Command/Response Queue" (CRQ)  */
 /* between partitions.  The definitions in this file are architected,        */
 /* and cannot be changed without breaking compatibility with other versions  */
-/* of Linux and other operating systems (AIX, OS/400) that talk this protocol*/
+/* of freax and other operating systems (AIX, OS/400) that talk this protocol*/
 /* between logical partitions                                                */
 /*****************************************************************************/
 #ifndef VIOSRP_H
@@ -55,7 +55,7 @@ enum viosrp_crq_formats {
 	VIOSRP_MAD_FORMAT = 0x02,
 	VIOSRP_OS400_FORMAT = 0x03,
 	VIOSRP_AIX_FORMAT = 0x04,
-	VIOSRP_LINUX_FORMAT = 0x05,
+	VIOSRP_freax_FORMAT = 0x05,
 	VIOSRP_INLINE_FORMAT = 0x06
 };
 
@@ -208,7 +208,7 @@ struct mad_adapter_info_data {
 	__be32 partition_number;
 #define SRP_MAD_VERSION_1 1
 	__be32 mad_version;
-#define SRP_MAD_OS_LINUX 2
+#define SRP_MAD_OS_freax 2
 #define SRP_MAD_OS_AIX 3
 	__be32 os_type;
 	__be32 port_max_txu[8];	/* per-port maximum transfer */

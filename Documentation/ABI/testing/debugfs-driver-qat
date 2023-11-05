@@ -1,7 +1,7 @@
 What:		/sys/kernel/debug/qat_<device>_<BDF>/fw_counters
 Date:		November 2023
 KernelVersion:	6.6
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns the number of requests sent to the FW and the number of responses
 		received from the FW for each Acceleration Engine
 		Reported firmware counters::
@@ -12,7 +12,7 @@ Description:	(RO) Read returns the number of requests sent to the FW and the num
 What:		/sys/kernel/debug/qat_<device>_<BDF>/heartbeat/config
 Date:		November 2023
 KernelVersion:	6.6
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RW) Read returns value of the Heartbeat update period.
 		Write to the file changes this period value.
 
@@ -32,7 +32,7 @@ Description:	(RW) Read returns value of the Heartbeat update period.
 What:		/sys/kernel/debug/qat_<device>_<BDF>/heartbeat/queries_failed
 Date:		November 2023
 KernelVersion:	6.6
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns the number of times the device became unresponsive.
 
 		Attribute returns value of the counter which is incremented when
@@ -41,7 +41,7 @@ Description:	(RO) Read returns the number of times the device became unresponsiv
 What:		/sys/kernel/debug/qat_<device>_<BDF>/heartbeat/queries_sent
 Date:		November 2023
 KernelVersion:	6.6
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns the number of times the control process checked
 		if the device is responsive.
 
@@ -51,7 +51,7 @@ Description:	(RO) Read returns the number of times the control process checked
 What:		/sys/kernel/debug/qat_<device>_<BDF>/heartbeat/status
 Date:		November 2023
 KernelVersion:	6.6
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns the device health status.
 
 		Returns 0 when device is healthy or -1 when is unresponsive
@@ -63,7 +63,7 @@ Description:	(RO) Read returns the device health status.
 What:		/sys/kernel/debug/qat_<device>_<BDF>/pm_status
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns power management information specific to the
 		QAT device.
 
@@ -72,7 +72,7 @@ Description:	(RO) Read returns power management information specific to the
 What:		/sys/kernel/debug/qat_<device>_<BDF>/cnv_errors
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:	(RO) Read returns, for each Acceleration Engine (AE), the number
 		of errors and the type of the last error detected by the device
 		when performing verified compression.

@@ -15,23 +15,23 @@
  * the dcache entry is deleted or garbage collected.
  */
 
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/fscrypt.h>
-#include <linux/fsnotify.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/cache.h>
-#include <linux/export.h>
-#include <linux/security.h>
-#include <linux/seqlock.h>
-#include <linux/memblock.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rculist_bl.h>
-#include <linux/list_lru.h>
+#include <freax/ratelimit.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/fscrypt.h>
+#include <freax/fsnotify.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/hash.h>
+#include <freax/cache.h>
+#include <freax/export.h>
+#include <freax/security.h>
+#include <freax/seqlock.h>
+#include <freax/memblock.h>
+#include <freax/bit_spinlock.h>
+#include <freax/rculist_bl.h>
+#include <freax/list_lru.h>
 #include "internal.h"
 #include "mount.h"
 

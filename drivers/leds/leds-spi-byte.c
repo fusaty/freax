@@ -28,12 +28,12 @@
  *   NOTE: This driver currently only supports mode 00.
  */
 
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/mutex.h>
-#include <uapi/linux/uleds.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
+#include <freax/mutex.h>
+#include <uapi/freax/uleds.h>
 
 struct spi_byte_chipdef {
 	/* SPI byte that will be send to switch the LED off */

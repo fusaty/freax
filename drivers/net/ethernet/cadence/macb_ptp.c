@@ -7,19 +7,19 @@
  * Authors: Rafal Ozieblo <rafalo@cadence.com>
  *          Bartosz Folta <bfolta@cadence.com>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/time64.h>
-#include <linux/ptp_classify.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/net_tstamp.h>
-#include <linux/circ_buf.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/time64.h>
+#include <freax/ptp_classify.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/net_tstamp.h>
+#include <freax/circ_buf.h>
+#include <freax/spinlock.h>
 
 #include "macb.h"
 

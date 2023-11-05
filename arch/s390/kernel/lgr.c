@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux Guest Relocation (LGR) detection
+ * freax Guest Relocation (LGR) detection
  *
  * Copyright IBM Corp. 2012
- * Author(s): Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ * Author(s): Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
 #include <asm/facility.h>
 #include <asm/sysinfo.h>
 #include <asm/ebcdic.h>

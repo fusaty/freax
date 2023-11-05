@@ -10,7 +10,7 @@
 
 NM := $(NM) -B
 
-LDFLAGS_vmlinux	:= -static -N #-relax
+LDFLAGS_vmfreax	:= -static -N #-relax
 CHECKFLAGS	+= -D__alpha__
 cflags-y	:= -pipe -mno-fp-regs -ffixed-8
 cflags-y	+= $(call cc-option, -fno-jump-tables)
@@ -45,19 +45,19 @@ export LIBS_Y
 boot := arch/alpha/boot
 
 #Default target when executing make with no arguments
-all boot: $(boot)/vmlinux.gz
+all boot: $(boot)/vmfreax.gz
 
-$(boot)/vmlinux.gz: vmlinux
+$(boot)/vmfreax.gz: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-bootimage bootpfile bootpzfile: vmlinux
+bootimage bootpfile bootpzfile: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/alpha/kernel/syscalls all
 
 define archhelp
-  echo '* boot		- Compressed kernel image (arch/alpha/boot/vmlinux.gz)'
+  echo '* boot		- Compressed kernel image (arch/alpha/boot/vmfreax.gz)'
   echo '  bootimage	- SRM bootable image (arch/alpha/boot/bootimage)'
   echo '  bootpfile	- BOOTP bootable image (arch/alpha/boot/bootpfile)'
   echo '  bootpzfile	- compressed kernel BOOTP image (arch/alpha/boot/bootpzfile)'

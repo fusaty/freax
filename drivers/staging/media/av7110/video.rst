@@ -9,15 +9,15 @@ Digital TV Video Device
 The Digital TV video device controls the MPEG2 video decoder of the Digital
 TV hardware. It can be accessed through **/dev/dvb/adapter0/video0**. Data
 types and ioctl definitions can be accessed by including
-**linux/dvb/video.h** in your application.
+**freax/dvb/video.h** in your application.
 
 Note that the Digital TV video device only controls decoding of the MPEG video
 stream, not its presentation on the TV or computer screen. On PCs this
-is typically handled by an associated video4linux device, e.g.
+is typically handled by an associated video4freax device, e.g.
 **/dev/video**, which allows scaling and defining output windows.
 
 Some Digital TV cards don't have their own MPEG decoder, which results in the
-omission of the audio and video device as well as the video4linux
+omission of the audio and video device as well as the video4freax
 device.
 
 The ioctls that deal with SPUs (sub picture units) and navigation

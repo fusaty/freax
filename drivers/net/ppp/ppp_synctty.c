@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * PPP synchronous tty channel driver for Linux.
+ * PPP synchronous tty channel driver for freax.
  *
  * This is a ppp channel driver that can be used with tty device drivers
  * that are frame oriented, such as synchronous HDLC devices.
@@ -28,23 +28,23 @@
  * ==FILEVERSION 20040616==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/tty.h>
+#include <freax/netdevice.h>
+#include <freax/poll.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/ppp_channel.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/refcount.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define PPP_VERSION	"2.4.2"
 

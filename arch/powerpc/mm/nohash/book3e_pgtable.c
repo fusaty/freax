@@ -5,8 +5,8 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
-#include <linux/sched.h>
-#include <linux/memblock.h>
+#include <freax/sched.h>
+#include <freax/memblock.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 #include <asm/dma.h>

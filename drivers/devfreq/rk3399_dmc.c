@@ -4,22 +4,22 @@
  * Author: Lin Huang <hl@rock-chips.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq-event.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/rwsem.h>
-#include <linux/suspend.h>
+#include <freax/arm-smccc.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/devfreq.h>
+#include <freax/devfreq-event.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/rwsem.h>
+#include <freax/suspend.h>
 
 #include <soc/rockchip/pm_domains.h>
 #include <soc/rockchip/rockchip_grf.h>

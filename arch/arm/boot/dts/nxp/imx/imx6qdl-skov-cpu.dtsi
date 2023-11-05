@@ -35,7 +35,7 @@
 			gpios = <&gpio1 2 GPIO_ACTIVE_HIGH>;
 			function = LED_FUNCTION_STATUS;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-1 {

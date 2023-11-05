@@ -8,7 +8,7 @@
 #define _ASMARM_TLBFLUSH_H
 
 #ifndef __ASSEMBLY__
-# include <linux/mm_types.h>
+# include <freax/mm_types.h>
 #endif
 
 #ifdef CONFIG_MMU
@@ -202,7 +202,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 struct cpu_tlb_fns {
 	void (*flush_user_range)(unsigned long, unsigned long, struct vm_area_struct *);
@@ -621,7 +621,7 @@ extern void flush_bp_all(void);
  * back to the page. On ARMv6 and later, the cache coherency is handled via
  * the set_ptes() function.
  */
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 void update_mmu_cache_range(struct vm_fault *vmf, struct vm_area_struct *vma,
 		unsigned long addr, pte_t *ptep, unsigned int nr);
 #else

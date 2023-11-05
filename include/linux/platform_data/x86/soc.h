@@ -8,11 +8,11 @@
 #ifndef __PLATFORM_DATA_X86_SOC_H
 #define __PLATFORM_DATA_X86_SOC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #if IS_ENABLED(CONFIG_X86)
 
-#include <linux/mod_devicetable.h>
+#include <freax/mod_devicetable.h>
 
 #include <asm/cpu_device_id.h>
 

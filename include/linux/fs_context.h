@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_FS_CONTEXT_H
-#define _LINUX_FS_CONTEXT_H
+#ifndef _freax_FS_CONTEXT_H
+#define _freax_FS_CONTEXT_H
 
-#include <linux/kernel.h>
-#include <linux/refcount.h>
-#include <linux/errno.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/refcount.h>
+#include <freax/errno.h>
+#include <freax/security.h>
+#include <freax/mutex.h>
 
 struct cred;
 struct dentry;
@@ -234,4 +234,4 @@ void logfc(struct fc_log *log, const char *prefix, char level, const char *fmt, 
 #define inval_plog(p, fmt, ...) (error_plog(p, fmt, ## __VA_ARGS__), -EINVAL)
 #define invalfc(fc, fmt, ...) (errorfc(fc, fmt, ## __VA_ARGS__), -EINVAL)
 
-#endif /* _LINUX_FS_CONTEXT_H */
+#endif /* _freax_FS_CONTEXT_H */

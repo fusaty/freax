@@ -106,7 +106,7 @@ in the kernel config::
 Run gcc (native or cross-compiler) to ensure plugin headers are detected::
 
 	gcc -print-file-name=plugin
-	CROSS_COMPILE=arm-linux-gnu- ${CROSS_COMPILE}gcc -print-file-name=plugin
+	CROSS_COMPILE=arm-freax-gnu- ${CROSS_COMPILE}gcc -print-file-name=plugin
 
 The word "plugin" means they are not detected::
 
@@ -114,7 +114,7 @@ The word "plugin" means they are not detected::
 
 A full path means they are detected::
 
-       /usr/lib/gcc/x86_64-redhat-linux/12/plugin
+       /usr/lib/gcc/x86_64-redhat-freax/12/plugin
 
 To compile the minimum tool set including the plugin(s)::
 

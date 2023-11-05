@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/cpufeature.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/cpufeature.h>
 #include <asm/simd.h>
 #include <asm/switch_to.h>
 

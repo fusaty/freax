@@ -2,14 +2,14 @@
 #include <test_progs.h>
 #include <network_helpers.h>
 #include <net/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_link.h>
-#include <linux/ipv6.h>
-#include <linux/in6.h>
-#include <linux/udp.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/if_link.h>
+#include <freax/ipv6.h>
+#include <freax/in6.h>
+#include <freax/udp.h>
 #include <bpf/bpf_endian.h>
-#include <uapi/linux/netdev.h>
+#include <uapi/freax/netdev.h>
 #include "test_xdp_do_redirect.skel.h"
 
 struct udp_packet {

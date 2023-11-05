@@ -68,7 +68,7 @@
 		compatible = "gpio-leds";
 		led-green {
 			gpios = <&gpioj 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 		led-red {
 			gpios = <&gpioj 13 GPIO_ACTIVE_HIGH>;
@@ -80,7 +80,7 @@
 		autorepeat;
 		button-0 {
 			label = "User";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
 		};
 	};

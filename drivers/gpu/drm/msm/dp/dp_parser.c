@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/of_gpio.h>
-#include <linux/phy/phy.h>
+#include <freax/of_gpio.h>
+#include <freax/phy/phy.h>
 
 #include <drm/drm_of.h>
 #include <drm/drm_print.h>

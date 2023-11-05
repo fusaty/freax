@@ -9,17 +9,17 @@
  * able to have per-user limits for system resources. 
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/key.h>
-#include <linux/sched/user.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
-#include <linux/binfmts.h>
-#include <linux/proc_ns.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/key.h>
+#include <freax/sched/user.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/user_namespace.h>
+#include <freax/binfmts.h>
+#include <freax/proc_ns.h>
 
 #if IS_ENABLED(CONFIG_BINFMT_MISC)
 struct binfmt_misc init_binfmt_misc = {

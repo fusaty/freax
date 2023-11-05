@@ -9,11 +9,11 @@
  * (C) 2006,2008 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_SECMARK.h>
+#include <freax/module.h>
+#include <freax/security.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_SECMARK.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("James Morris <jmorris@redhat.com>");

@@ -6,15 +6,15 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/tdo24m.h>
-#include <linux/fb.h>
-#include <linux/lcd.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/tdo24m.h>
+#include <freax/fb.h>
+#include <freax/lcd.h>
+#include <freax/slab.h>
 
 #define POWER_IS_ON(pwr)	((pwr) <= FB_BLANK_NORMAL)
 

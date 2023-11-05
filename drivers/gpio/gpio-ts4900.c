@@ -3,14 +3,14 @@
  * Digital I/O driver for Technologic Systems I2C FPGA Core
  *
  * Copyright (C) 2015, 2018 Technologic Systems
- * Copyright (C) 2016 Savoir-Faire Linux
+ * Copyright (C) 2016 Savoir-Faire freax
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #define DEFAULT_PIN_NUMBER	32
 /*

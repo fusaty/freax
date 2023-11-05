@@ -5,8 +5,8 @@
  * Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 

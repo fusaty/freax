@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Based on arch/arm/include/asm/ptrace.h
  *
@@ -20,7 +20,7 @@
 #ifndef _UAPI__ASM_PTRACE_H
 #define _UAPI__ASM_PTRACE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <asm/hwcap.h>
 #include <asm/sve_context.h>
@@ -128,7 +128,7 @@ struct user_sve_header {
 
 /*
  * Common SVE_PT_* flags:
- * These must be kept in sync with prctl interface in <linux/prctl.h>
+ * These must be kept in sync with prctl interface in <freax/prctl.h>
  */
 #define SVE_PT_VL_INHERIT		((1 << 17) /* PR_SVE_VL_INHERIT */ >> 16)
 #define SVE_PT_VL_ONEXEC		((1 << 18) /* PR_SVE_SET_VL_ONEXEC */ >> 16)
@@ -281,7 +281,7 @@ struct user_za_header {
 
 /*
  * Common ZA_PT_* flags:
- * These must be kept in sync with prctl interface in <linux/prctl.h>
+ * These must be kept in sync with prctl interface in <freax/prctl.h>
  */
 #define ZA_PT_VL_INHERIT		((1 << 17) /* PR_SME_VL_INHERIT */ >> 16)
 #define ZA_PT_VL_ONEXEC			((1 << 18) /* PR_SME_SET_VL_ONEXEC */ >> 16)

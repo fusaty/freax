@@ -3,10 +3,10 @@
 #ifndef __ASM_CSKY_MEMORY_H
 #define __ASM_CSKY_MEMORY_H
 
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
+#include <freax/compiler.h>
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/sizes.h>
 
 #define FIXADDR_TOP	_AC(0xffffc000, UL)
 #define PKMAP_BASE	_AC(0xff800000, UL)

@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <test_progs.h>
-#include <linux/ring_buffer.h>
+#include <freax/ring_buffer.h>
 
 #include "ima.skel.h"
 

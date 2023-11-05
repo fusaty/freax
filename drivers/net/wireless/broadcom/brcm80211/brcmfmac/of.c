@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2014 Broadcom Corporation
  */
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_net.h>
 
 #include <defs.h>
 #include "debug.h"

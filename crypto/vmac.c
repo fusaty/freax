@@ -29,11 +29,11 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/crypto.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
 #include <asm/byteorder.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/cipher.h>

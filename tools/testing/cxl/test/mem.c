@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright(c) 2021 Intel Corporation. All rights reserved.
 
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/bits.h>
+#include <freax/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/sizes.h>
+#include <freax/bits.h>
 #include <asm/unaligned.h>
 #include <crypto/sha2.h>
 #include <cxlmem.h>

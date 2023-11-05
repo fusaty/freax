@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017 IBM Corp.
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 #include <asm/mmu.h>
 #include "ocxl_internal.h"
 

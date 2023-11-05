@@ -72,7 +72,7 @@
 
 		key-vol-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&pm660l_gpios 7 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -456,7 +456,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

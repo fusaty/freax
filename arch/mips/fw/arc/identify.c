@@ -11,11 +11,11 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/bug.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
 
 #include <asm/sgialib.h>
 #include <asm/bootinfo.h>

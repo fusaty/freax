@@ -5,9 +5,9 @@
  *   Author: Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include "common.h"
 

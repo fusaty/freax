@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STRING_HELPERS_H_
-#define _LINUX_STRING_HELPERS_H_
+#ifndef _freax_STRING_HELPERS_H_
+#define _freax_STRING_HELPERS_H_
 
-#include <linux/bits.h>
-#include <linux/ctype.h>
-#include <linux/string_choices.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/ctype.h>
+#include <freax/string_choices.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 struct device;
 struct file;

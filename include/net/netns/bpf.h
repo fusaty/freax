@@ -6,7 +6,7 @@
 #ifndef __NETNS_BPF_H__
 #define __NETNS_BPF_H__
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct bpf_prog;
 struct bpf_prog_array;

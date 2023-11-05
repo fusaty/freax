@@ -4,14 +4,14 @@
  * Author: YT SHEN <yt.shen@mediatek.com>
  */
 
-#include <linux/component.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
+#include <freax/component.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-mapping.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

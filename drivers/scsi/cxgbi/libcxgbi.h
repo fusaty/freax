@@ -14,16 +14,16 @@
 #ifndef	__LIBCXGBI_H__
 #define	__LIBCXGBI_H__
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/scatterlist.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
 #include <scsi/scsi_device.h>
 #include <scsi/libiscsi_tcp.h>
 

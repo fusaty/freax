@@ -3,10 +3,10 @@
  *  Copyright (C) 2020 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/if_ether.h>
-#include <linux/rhashtable.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/if_ether.h>
+#include <freax/rhashtable.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/flow_offload.h>
 #include <net/pkt_cls.h>
 #include <net/dsa.h>

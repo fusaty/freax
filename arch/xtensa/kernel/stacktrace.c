@@ -8,14 +8,14 @@
  * Copyright (C) 2001 - 2013 Tensilica Inc.
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/stacktrace.h>
 
 #include <asm/ftrace.h>
 #include <asm/stacktrace.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #if IS_ENABLED(CONFIG_PERF_EVENTS)
 

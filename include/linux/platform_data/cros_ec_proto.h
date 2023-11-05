@@ -5,15 +5,15 @@
  * Copyright (C) 2012 Google, Inc
  */
 
-#ifndef __LINUX_CROS_EC_PROTO_H
-#define __LINUX_CROS_EC_PROTO_H
+#ifndef __freax_CROS_EC_PROTO_H
+#define __freax_CROS_EC_PROTO_H
 
-#include <linux/device.h>
-#include <linux/lockdep_types.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
+#include <freax/device.h>
+#include <freax/lockdep_types.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
 
-#include <linux/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_commands.h>
 
 #define CROS_EC_DEV_NAME	"cros_ec"
 #define CROS_EC_DEV_FP_NAME	"cros_fp"
@@ -274,4 +274,4 @@ static inline ktime_t cros_ec_get_time_ns(void)
 	return ktime_get_boottime_ns();
 }
 
-#endif /* __LINUX_CROS_EC_PROTO_H */
+#endif /* __freax_CROS_EC_PROTO_H */

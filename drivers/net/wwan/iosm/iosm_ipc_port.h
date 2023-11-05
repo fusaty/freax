@@ -6,7 +6,7 @@
 #ifndef IOSM_IPC_PORT_H
 #define IOSM_IPC_PORT_H
 
-#include <linux/wwan.h>
+#include <freax/wwan.h>
 
 #include "iosm_ipc_imem_ops.h"
 

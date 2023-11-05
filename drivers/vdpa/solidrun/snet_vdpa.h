@@ -10,8 +10,8 @@
 #ifndef _SNET_VDPA_H_
 #define _SNET_VDPA_H_
 
-#include <linux/vdpa.h>
-#include <linux/pci.h>
+#include <freax/vdpa.h>
+#include <freax/pci.h>
 
 #define SNET_NAME_SIZE 256
 

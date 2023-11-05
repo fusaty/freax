@@ -3,10 +3,10 @@
  * Copyright (C) 2023 Renesas Electronics Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
+#include <freax/delay.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
 
 #define PWC_PWCRST			0x00
 #define PWC_PWCCKEN			0x04

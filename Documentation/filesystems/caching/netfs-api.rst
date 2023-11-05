@@ -22,7 +22,7 @@ caching facilities.  The API is arranged around a number of principles:
 
 This API is used by::
 
-	#include <linux/fscache.h>.
+	#include <freax/fscache.h>.
 
 .. This document contains the following sections:
 
@@ -449,4 +449,4 @@ page to say that a DIO write is underway from that page::
 API Function Reference
 ======================
 
-.. kernel-doc:: include/linux/fscache.h
+.. kernel-doc:: include/freax/fscache.h

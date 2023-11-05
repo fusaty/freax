@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#ifndef _LINUX_MM_SLOT_H
-#define _LINUX_MM_SLOT_H
+#ifndef _freax_MM_SLOT_H
+#define _freax_MM_SLOT_H
 
-#include <linux/hashtable.h>
-#include <linux/slab.h>
+#include <freax/hashtable.h>
+#include <freax/slab.h>
 
 /*
  * struct mm_slot - hash lookup from mm to mm_slot
@@ -52,4 +52,4 @@ static inline void mm_slot_free(struct kmem_cache *cache, void *objp)
 	hash_add(_hashtable, &_mm_slot->hash, (unsigned long)_mm);	       \
 })
 
-#endif /* _LINUX_MM_SLOT_H */
+#endif /* _freax_MM_SLOT_H */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/nfs2xdr.c
+ * freax/fs/nfs/nfs2xdr.c
  *
  * XDR functions to encode/decode NFS RPC arguments and results.
  *
@@ -10,18 +10,18 @@
  * 		FIFO's need special handling in NFSv2
  */
 
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs_fs.h>
+#include <freax/param.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/pagemap.h>
+#include <freax/proc_fs.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/nfs.h>
+#include <freax/nfs2.h>
+#include <freax/nfs_fs.h>
 #include "nfstrace.h"
 #include "internal.h"
 

@@ -12,7 +12,7 @@
 #include "types.h"
 #include "sys.h"
 #include "string.h"
-#include <linux/auxvec.h>
+#include <freax/auxvec.h>
 
 struct nolibc_heap {
 	size_t	len;

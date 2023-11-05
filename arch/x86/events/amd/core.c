@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/perf_event.h>
-#include <linux/jump_label.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <freax/perf_event.h>
+#include <freax/jump_label.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
 #include <asm/apicdef.h>
 #include <asm/apic.h>
 #include <asm/nmi.h>

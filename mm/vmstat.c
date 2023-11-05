@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/vmstat.c
+ *  freax/mm/vmstat.c
  *
  *  Manages VM statistics
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -10,24 +10,24 @@
  *		Christoph Lameter <christoph@lameter.com>
  *  Copyright (C) 2008-2014 Christoph Lameter
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/vmstat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/page_owner.h>
-#include <linux/sched/isolation.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/vmstat.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/sched.h>
+#include <freax/math64.h>
+#include <freax/writeback.h>
+#include <freax/compaction.h>
+#include <freax/mm_inline.h>
+#include <freax/page_owner.h>
+#include <freax/sched/isolation.h>
 
 #include "internal.h"
 

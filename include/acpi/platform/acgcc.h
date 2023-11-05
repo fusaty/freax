@@ -12,7 +12,7 @@
 
 #ifndef va_arg
 #ifdef __KERNEL__
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 #else
 #include <stdarg.h>
 #endif /* __KERNEL__ */

@@ -30,20 +30,20 @@
  *  or SLAB cache will reuse socket for another flow)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/hash.h>
-#include <linux/prefetch.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/rbtree.h>
+#include <freax/hash.h>
+#include <freax/prefetch.h>
+#include <freax/vmalloc.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/sock.h>

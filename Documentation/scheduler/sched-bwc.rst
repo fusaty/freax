@@ -63,7 +63,7 @@ The interferenece when using burst is valued by the possibilities for
 missing the deadline and the average WCET. Test results showed that when
 there many cgroups or CPU is under utilized, the interference is
 limited. More details are shown in:
-https://lore.kernel.org/lkml/5371BD36-55AE-4F71-B9D7-B86DC32E3D2B@linux.alibaba.com/
+https://lore.kernel.org/lkml/5371BD36-55AE-4F71-B9D7-B86DC32E3D2B@freax.alibaba.com/
 
 Management
 ----------

@@ -8,11 +8,11 @@
 
 #include <rdma/ib_verbs.h>
 #include <rdma/restrack.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
+#include <freax/socket.h>
+#include <freax/skbuff.h>
 #include <crypto/hash.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
+#include <freax/crc32.h>
+#include <freax/crc32c.h>
 
 #include <rdma/siw-abi.h>
 #include "iwarp.h"

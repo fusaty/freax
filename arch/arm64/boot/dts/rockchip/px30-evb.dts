@@ -32,31 +32,31 @@
 
 		button-esc {
 			label = "esc";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			press-threshold-microvolt = <1310000>;
 		};
 
 		button-home {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			press-threshold-microvolt = <624000>;
 		};
 
 		button-menu {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <987000>;
 		};
 
 		button-down {
 			label = "volume down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		button-up {
 			label = "volume up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <17000>;
 		};
 	};

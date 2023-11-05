@@ -1,5 +1,5 @@
 /*
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on freax/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -9,25 +9,25 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/txx9/ndfmc.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/string.h>
+#include <freax/export.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/txx9/ndfmc.h>
+#include <freax/serial_core.h>
+#include <freax/mtd/physmap.h>
+#include <freax/leds.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/time.h>

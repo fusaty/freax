@@ -3,7 +3,7 @@
  * das16.c
  * DAS16 driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  * Copyright (C) 2000 Chris R. Baugher <baugher@enteract.com>
  * Copyright (C) 2001,2002 Frank Mori Hess <fmhess@users.sourceforge.net>
@@ -60,13 +60,13 @@
  * www.measurementcomputing.com
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
-#include <linux/comedi/comedi_8254.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8255.h>
+#include <freax/comedi/comedi_8254.h>
+#include <freax/comedi/comedi_isadma.h>
 
 #define DAS16_DMA_SIZE 0xff00	/*  size in bytes of allocated dma buffer */
 

@@ -5,25 +5,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/sprintf.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/random.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/sprintf.h>
+#include <freax/string.h>
 
-#include <linux/bitmap.h>
-#include <linux/dcache.h>
-#include <linux/socket.h>
-#include <linux/in.h>
+#include <freax/bitmap.h>
+#include <freax/dcache.h>
+#include <freax/socket.h>
+#include <freax/in.h>
 
-#include <linux/gfp.h>
-#include <linux/mm.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
 
-#include <linux/property.h>
+#include <freax/property.h>
 
 #include "../tools/testing/selftests/kselftest_module.h"
 
@@ -823,5 +823,5 @@ static void __init selftest(void)
 }
 
 KSTM_MODULE_LOADERS(test_printf);
-MODULE_AUTHOR("Rasmus Villemoes <linux@rasmusvillemoes.dk>");
+MODULE_AUTHOR("Rasmus Villemoes <freax@rasmusvillemoes.dk>");
 MODULE_LICENSE("GPL");

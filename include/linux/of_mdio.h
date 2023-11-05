@@ -5,12 +5,12 @@
  * Copyright (c) 2009 Secret Lab Technologies, Ltd.
  */
 
-#ifndef __LINUX_OF_MDIO_H
-#define __LINUX_OF_MDIO_H
+#ifndef __freax_OF_MDIO_H
+#define __freax_OF_MDIO_H
 
-#include <linux/device.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <freax/device.h>
+#include <freax/phy.h>
+#include <freax/of.h>
 
 #if IS_ENABLED(CONFIG_OF_MDIO)
 bool of_mdiobus_child_is_phy(struct device_node *child);
@@ -151,4 +151,4 @@ static inline int of_mdiobus_phy_device_register(struct mii_bus *mdio,
 #endif
 
 
-#endif /* __LINUX_OF_MDIO_H */
+#endif /* __freax_OF_MDIO_H */

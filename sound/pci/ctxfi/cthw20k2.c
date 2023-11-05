@@ -11,14 +11,14 @@
  * @Date 	May 14 2008
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
 #include "cthw20k2.h"
 #include "ct20k2reg.h"
 

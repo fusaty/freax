@@ -6,10 +6,10 @@
  * Author: Alex Smith <alex@alex-smith.me.uk>
  */
 
-#ifndef __LINUX_JZ4780_NEMC_H__
-#define __LINUX_JZ4780_NEMC_H__
+#ifndef __freax_JZ4780_NEMC_H__
+#define __freax_JZ4780_NEMC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 
@@ -36,4 +36,4 @@ extern void jz4780_nemc_set_type(struct device *dev, unsigned int bank,
 extern void jz4780_nemc_assert(struct device *dev, unsigned int bank,
 			       bool assert);
 
-#endif /* __LINUX_JZ4780_NEMC_H__ */
+#endif /* __freax_JZ4780_NEMC_H__ */

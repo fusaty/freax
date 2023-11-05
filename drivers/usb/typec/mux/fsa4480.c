@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2021-2022 Linaro Ltd.
- * Copyright (C) 2018-2020 The Linux Foundation
+ * Copyright (C) 2018-2020 The freax Foundation
  */
 
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
+#include <freax/bits.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
 
 #define FSA4480_SWITCH_ENABLE	0x04
 #define FSA4480_SWITCH_SELECT	0x05

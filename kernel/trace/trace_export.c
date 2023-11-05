@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2009 Steven Rostedt <srostedt@redhat.com>
  */
-#include <linux/stringify.h>
-#include <linux/kallsyms.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/stringify.h>
+#include <freax/kallsyms.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/ftrace.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 #include "trace_output.h"
 

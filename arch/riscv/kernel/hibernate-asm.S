@@ -12,7 +12,7 @@
 #include <asm/assembler.h>
 #include <asm/csr.h>
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
  * int __hibernate_cpu_resume(void)

@@ -2,7 +2,7 @@
 #ifndef BOOT_COMPRESSED_ERROR_H
 #define BOOT_COMPRESSED_ERROR_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 void warn(const char *m);
 void error(char *m) __noreturn;

@@ -9,10 +9,10 @@
  *
  * net-3-driver for the NI5210 card (i82586 Ethernet chip)
  *
- * This is an extension to the Linux operating system, and is covered by the
+ * This is an extension to the freax operating system, and is covered by the
  * same Gnu Public License that covers that work.
  *
- * Alphacode 0.82 (96/09/29) for Linux 2.0.0 (or later)
+ * Alphacode 0.82 (96/09/29) for freax 2.0.0 (or later)
  * Copyrights (c) 1994,1995,1996 by M.Hipp (hippm@informatik.uni-tuebingen.de)
  * --------------------------
  *
@@ -29,15 +29,15 @@ static int automatic_resume = 0; /* experimental .. better should be zero */
 static int rfdadd = 0; /* rfdadd=1 may be better for 8K MEM cards */
 static int fifo=0x8;	/* don't change */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
 #include <asm/io.h>
 #include <asm/idprom.h>
 #include <asm/machines.h>
@@ -45,9 +45,9 @@ static int fifo=0x8;	/* don't change */
 #include <asm/dvma.h>
 #include <asm/byteorder.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 
 #include "sun3_82586.h"
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RESET_H_
-#define _LINUX_RESET_H_
+#ifndef _freax_RESET_H_
+#define _freax_RESET_H_
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 struct device;
 struct device_node;

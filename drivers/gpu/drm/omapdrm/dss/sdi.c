@@ -6,14 +6,14 @@
 
 #define DSS_SUBSYS_NAME "SDI"
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/string.h>
 
 #include <drm/drm_bridge.h>
 

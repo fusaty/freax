@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BITREV_H
-#define _LINUX_BITREV_H
+#ifndef _freax_BITREV_H
+#define _freax_BITREV_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_HAVE_ARCH_BITREVERSE
 #include <asm/bitrev.h>
@@ -102,4 +102,4 @@ static inline u32 __bitrev32(u32 x)
 	__constant_bitrev8(__x) :			\
 	__bitrev8(__x)	;			\
  })
-#endif /* _LINUX_BITREV_H */
+#endif /* _freax_BITREV_H */

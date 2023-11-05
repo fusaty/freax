@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/iversion.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/pagemap.h>
+#include <freax/iversion.h>
 #include "internal.h"
 #include "xdr_fs.h"
 

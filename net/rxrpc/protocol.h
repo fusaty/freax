@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_RXRPC_PACKET_H
-#define _LINUX_RXRPC_PACKET_H
+#ifndef _freax_RXRPC_PACKET_H
+#define _freax_RXRPC_PACKET_H
 
 typedef u32	rxrpc_seq_t;	/* Rx message sequence number */
 typedef u32	rxrpc_serial_t;	/* Rx message serial number */
@@ -176,4 +176,4 @@ struct rxkad_response {
 	__be32		ticket_len;	/* Kerberos ticket length  */
 } __packed;
 
-#endif /* _LINUX_RXRPC_PACKET_H */
+#endif /* _freax_RXRPC_PACKET_H */

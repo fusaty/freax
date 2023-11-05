@@ -29,7 +29,7 @@
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pio 4 6 GPIO_ACTIVE_HIGH>; /* PE6 */
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

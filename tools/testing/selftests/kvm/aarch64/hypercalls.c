@@ -9,7 +9,7 @@
  * enabled from the KVM userspace, respectively.
  */
 #include <errno.h>
-#include <linux/arm-smccc.h>
+#include <freax/arm-smccc.h>
 #include <asm/kvm.h>
 #include <kvm_util.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/recovery.c
+ * freax/fs/jbd2/recovery.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1999
  *
@@ -13,12 +13,12 @@
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
-#include <linux/blkdev.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/jbd2.h>
+#include <freax/errno.h>
+#include <freax/crc32.h>
+#include <freax/blkdev.h>
 #endif
 
 /*

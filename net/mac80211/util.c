@@ -12,15 +12,15 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/netdevice.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/bitmap.h>
-#include <linux/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
+#include <freax/bitmap.h>
+#include <freax/crc32.h>
 #include <net/net_namespace.h>
 #include <net/cfg80211.h>
 #include <net/rtnetlink.h>

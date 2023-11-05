@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
+ *  freax/drivers/mmc/host/sdhci.c - Secure Digital Host Controller Interface driver
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -9,28 +9,28 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/ktime.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/ktime.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/sizes.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
 
-#include <linux/leds.h>
+#include <freax/leds.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/slot-gpio.h>
 
 #include "sdhci.h"
 

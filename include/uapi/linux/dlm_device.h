@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /******************************************************************************
 *******************************************************************************
 **
@@ -12,15 +12,15 @@
 *******************************************************************************
 ******************************************************************************/
 
-#ifndef _LINUX_DLM_DEVICE_H
-#define _LINUX_DLM_DEVICE_H
+#ifndef _freax_DLM_DEVICE_H
+#define _freax_DLM_DEVICE_H
 
 /* This is the device interface for dlm, most users will use a library
  * interface.
  */
 
-#include <linux/dlm.h>
-#include <linux/types.h>
+#include <freax/dlm.h>
+#include <freax/types.h>
 
 #define DLM_USER_LVB_LEN	32
 

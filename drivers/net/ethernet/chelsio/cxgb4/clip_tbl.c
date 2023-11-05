@@ -1,5 +1,5 @@
 /*
- *  This file is part of the Chelsio T4 Ethernet driver for Linux.
+ *  This file is part of the Chelsio T4 Ethernet driver for freax.
  *  Copyright (C) 2003-2014 Chelsio Communications.  All rights reserved.
  *
  *  Written by Deepak (deepak.s@chelsio.com)
@@ -10,10 +10,10 @@
  *  release for licensing terms and conditions.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/jhash.h>
-#include <linux/if_vlan.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/jhash.h>
+#include <freax/if_vlan.h>
 #include <net/addrconf.h>
 #include "cxgb4.h"
 #include "clip_tbl.h"

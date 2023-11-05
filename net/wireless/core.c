@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This is the linux wireless configuration interface.
+ * This is the freax wireless configuration interface.
  *
  * Copyright 2006-2010		Johannes Berg <johannes@sipsolutions.net>
  * Copyright 2013-2014  Intel Mobile Communications GmbH
@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/nl80211.h>
-#include <linux/debugfs.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
+#include <freax/if.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/nl80211.h>
+#include <freax/debugfs.h>
+#include <freax/notifier.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/sched.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"

@@ -2,14 +2,14 @@
 #include <subcmd/parse-options.h>
 #include "bench.h"
 
-#include <uapi/linux/filter.h>
+#include <uapi/freax/filter.h>
 #include <sys/types.h>
 #include <sys/time.h>
-#include <linux/unistd.h>
+#include <freax/unistd.h>
 #include <sys/syscall.h>
 #include <sys/ioctl.h>
-#include <linux/time64.h>
-#include <uapi/linux/seccomp.h>
+#include <freax/time64.h>
+#include <uapi/freax/seccomp.h>
 #include <sys/prctl.h>
 
 #include <unistd.h>

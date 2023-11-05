@@ -5,16 +5,16 @@
  * Copyright (C) 2004 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/device.h>
 
-#include <linux/ctype.h>
-#include <linux/string.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
 
 /**
  * usb_ep_autoconfig_ss() - choose an endpoint matching the ep

@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _CTTIMEOUT_NETLINK_H
 #define _CTTIMEOUT_NETLINK_H
-#include <linux/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink.h>
 
 enum ctnl_timeout_msg_types {
 	IPCTNL_MSG_TIMEOUT_NEW,

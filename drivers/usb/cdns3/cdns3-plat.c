@@ -12,12 +12,12 @@
  *         Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include "core.h"
 #include "gadget-export.h"
@@ -172,7 +172,7 @@ err_phy3_init:
 
 /**
  * cdns3_plat_remove() - unbind drd driver and clean up
- * @pdev: Pointer to Linux platform device
+ * @pdev: Pointer to freax platform device
  *
  * Returns 0 on success otherwise negative errno
  */

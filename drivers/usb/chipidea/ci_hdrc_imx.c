@@ -5,16 +5,16 @@
  * on behalf of DENX Software Engineering GmbH
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/of.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_qos.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/usb/chipidea.h>
+#include <freax/usb/of.h>
+#include <freax/clk.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_qos.h>
 
 #include "ci.h"
 #include "ci_hdrc_imx.h"

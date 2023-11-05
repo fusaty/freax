@@ -7,10 +7,10 @@
 #ifndef QEDE_ROCE_H
 #define QEDE_ROCE_H
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 struct qedr_dev;
 struct qed_dev;

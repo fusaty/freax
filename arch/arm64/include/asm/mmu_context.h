@@ -10,11 +10,11 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <freax/compiler.h>
+#include <freax/sched.h>
+#include <freax/sched/hotplug.h>
+#include <freax/mm_types.h>
+#include <freax/pgtable.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>

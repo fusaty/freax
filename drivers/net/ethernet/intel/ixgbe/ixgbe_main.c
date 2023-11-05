@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/pkt_sched.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/sctp.h>
+#include <freax/pkt_sched.h>
+#include <freax/ipv6.h>
+#include <freax/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/if_macvlan.h>
-#include <linux/if_bridge.h>
-#include <linux/prefetch.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/atomic.h>
-#include <linux/numa.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/if_macvlan.h>
+#include <freax/if_bridge.h>
+#include <freax/prefetch.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
+#include <freax/atomic.h>
+#include <freax/numa.h>
 #include <generated/utsrelease.h>
 #include <scsi/fc/fc_fcoe.h>
 #include <net/udp_tunnel.h>
@@ -162,7 +162,7 @@ static int debug = -1;
 module_param(debug, int, 0);
 MODULE_PARM_DESC(debug, "Debug level (0=none,...,16=all)");
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <freax.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) 10 Gigabit PCI Express Network Driver");
 MODULE_LICENSE("GPL v2");
 

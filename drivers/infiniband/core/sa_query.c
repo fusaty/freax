@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/xarray.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/if_ether.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/random.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/kref.h>
+#include <freax/xarray.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/if_ether.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_cache.h>
 #include <rdma/rdma_netlink.h>

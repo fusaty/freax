@@ -3,7 +3,7 @@
 
 #ifndef _QED_SELFTEST_API_H
 #define _QED_SELFTEST_API_H
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * qed_selftest_memory(): Perform memory test.

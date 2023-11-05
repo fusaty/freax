@@ -4,10 +4,10 @@
  * Copyright (c) 2017 Microsemi Corporation
  * Copyright 2020 NXP
  */
-#include <linux/time64.h>
+#include <freax/time64.h>
 
-#include <linux/dsa/ocelot.h>
-#include <linux/ptp_classify.h>
+#include <freax/dsa/ocelot.h>
+#include <freax/ptp_classify.h>
 #include <soc/mscc/ocelot_ptp.h>
 #include <soc/mscc/ocelot_sys.h>
 #include <soc/mscc/ocelot_vcap.h>

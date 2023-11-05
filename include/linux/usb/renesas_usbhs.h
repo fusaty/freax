@@ -8,9 +8,9 @@
  */
 #ifndef RENESAS_USB_H
 #define RENESAS_USB_H
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/usb/ch9.h>
 
 /*
  * module type

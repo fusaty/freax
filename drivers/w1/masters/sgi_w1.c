@@ -3,16 +3,16 @@
  * sgi_w1.c - w1 master driver for one wire support in SGI ASICs
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/sgi-w1.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/sgi-w1.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 #define MCR_RD_DATA	BIT(0)
 #define MCR_DONE	BIT(1)

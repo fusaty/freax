@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2021 Intel Corporation. All rights reserved. */
-#include <linux/libnvdimm.h>
+#include <freax/libnvdimm.h>
 #include <asm/unaligned.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/ndctl.h>
-#include <linux/async.h>
-#include <linux/slab.h>
-#include <linux/nd.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/ndctl.h>
+#include <freax/async.h>
+#include <freax/slab.h>
+#include <freax/nd.h>
 #include "cxlmem.h"
 #include "cxl.h"
 

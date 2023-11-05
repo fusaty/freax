@@ -1,6 +1,6 @@
 from ..qemu_config import QemuArchParams
 
-QEMU_ARCH = QemuArchParams(linux_arch='arm64',
+QEMU_ARCH = QemuArchParams(freax_arch='arm64',
 			   kconfig='''
 CONFIG_SERIAL_AMBA_PL010=y
 CONFIG_SERIAL_AMBA_PL010_CONSOLE=y

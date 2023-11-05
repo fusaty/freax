@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt286.h -- Platform data for RT286
+ * freax/sound/rt286.h -- Platform data for RT286
  *
  * Copyright 2013 Realtek Microelectronics
  */
 
-#ifndef __LINUX_SND_RT298_H
-#define __LINUX_SND_RT298_H
+#ifndef __freax_SND_RT298_H
+#define __freax_SND_RT298_H
 
 struct rt298_platform_data {
 	bool cbj_en; /*combo jack enable*/

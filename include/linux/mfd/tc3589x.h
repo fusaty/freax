@@ -3,8 +3,8 @@
  * Copyright (C) ST-Ericsson SA 2010
  */
 
-#ifndef __LINUX_MFD_TC3589x_H
-#define __LINUX_MFD_TC3589x_H
+#ifndef __freax_MFD_TC3589x_H
+#define __freax_MFD_TC3589x_H
 
 struct device;
 

@@ -5,11 +5,11 @@
  * Copyright (C) 2014 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/regmap.h>
+#include <freax/platform_device.h>
 #include <asm/iosf_mbi.h>
 #include "intel_pmic.h"
 

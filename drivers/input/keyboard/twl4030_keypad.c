@@ -12,14 +12,14 @@
  * Manjunatha G K <manjugk@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/twl.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/twl.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 
 /*
  * The TWL4030 family chips include a keypad controller that supports
@@ -389,7 +389,7 @@ static int twl4030_kp_probe(struct platform_device *pdev)
 	}
 
 	input_set_capability(input, EV_MSC, MSC_SCAN);
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of freax input subsystem */
 	if (kp->autorepeat)
 		__set_bit(EV_REP, input->evbit);
 

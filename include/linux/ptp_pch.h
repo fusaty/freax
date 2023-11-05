@@ -10,7 +10,7 @@
 #ifndef _PTP_PCH_H_
 #define _PTP_PCH_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pci_dev;
 

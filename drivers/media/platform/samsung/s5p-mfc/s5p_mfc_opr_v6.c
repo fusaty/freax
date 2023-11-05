@@ -11,14 +11,14 @@
 
 #undef DEBUG
 
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/firmware.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/firmware.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/cacheflush.h>
 

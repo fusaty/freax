@@ -5,17 +5,17 @@
  *
  * Setting up the clock on the MIPS boards.
  */
-#include <linux/types.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/libfdt.h>
-#include <linux/math64.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/mc146818rtc.h>
+#include <freax/types.h>
+#include <freax/i8253.h>
+#include <freax/init.h>
+#include <freax/kernel_stat.h>
+#include <freax/libfdt.h>
+#include <freax/math64.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/timex.h>
+#include <freax/mc146818rtc.h>
 
 #include <asm/cpu.h>
 #include <asm/mipsregs.h>

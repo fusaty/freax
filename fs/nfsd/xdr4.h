@@ -34,8 +34,8 @@
  *
  */
 
-#ifndef _LINUX_NFSD_XDR4_H
-#define _LINUX_NFSD_XDR4_H
+#ifndef _freax_NFSD_XDR4_H
+#define _freax_NFSD_XDR4_H
 
 #include "state.h"
 #include "nfsd.h"

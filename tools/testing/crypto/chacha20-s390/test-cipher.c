@@ -17,24 +17,24 @@
 #include <crypto/chacha.h>
 #include <crypto/aead.h>
 #include <crypto/hash.h>
-#include <linux/crypto.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/fips.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/scatterlist.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
-#include <linux/once.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/crypto.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/fips.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/scatterlist.h>
+#include <freax/time.h>
+#include <freax/vmalloc.h>
+#include <freax/zlib.h>
+#include <freax/once.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 static unsigned int data_size __read_mostly = 256;
 static unsigned int debug __read_mostly = 0;

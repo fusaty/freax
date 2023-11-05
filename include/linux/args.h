@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_ARGS_H
-#define _LINUX_ARGS_H
+#ifndef _freax_ARGS_H
+#define _freax_ARGS_H
 
 /*
  * How do these macros work?
@@ -25,4 +25,4 @@
 #define __CONCAT(a, b) a ## b
 #define CONCATENATE(a, b) __CONCAT(a, b)
 
-#endif	/* _LINUX_ARGS_H */
+#endif	/* _freax_ARGS_H */

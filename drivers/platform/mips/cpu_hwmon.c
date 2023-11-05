@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/jiffies.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
 
 #include <loongson.h>
 #include <boot_param.h>

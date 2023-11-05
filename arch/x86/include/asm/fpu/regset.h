@@ -5,7 +5,7 @@
 #ifndef _ASM_X86_FPU_REGSET_H
 #define _ASM_X86_FPU_REGSET_H
 
-#include <linux/regset.h>
+#include <freax/regset.h>
 
 extern user_regset_active_fn regset_fpregs_active, regset_xregset_fpregs_active,
 				ssp_active;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* Xilinx EmacLite Linux driver for the Xilinx Ethernet MAC Lite device.
+/* Xilinx EmacLite freax driver for the Xilinx Ethernet MAC Lite device.
  *
  * This is a new flat driver which is based on the original emac_lite
  * driver from John Williams <john.williams@xilinx.com>.
@@ -7,22 +7,22 @@
  * Copyright (c) 2007 - 2013 Xilinx, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
 
 #define DRIVER_NAME "xilinx_emaclite"
 
@@ -1055,7 +1055,7 @@ static bool get_bool(struct platform_device *ofdev, const char *s)
  * @ed:         Pointer to ethtool_drvinfo structure
  *
  * This implements ethtool command for getting the driver information.
- * Issue "ethtool -i ethX" under linux prompt to execute this function.
+ * Issue "ethtool -i ethX" under freax prompt to execute this function.
  */
 static void xemaclite_ethtools_get_drvinfo(struct net_device *ndev,
 					   struct ethtool_drvinfo *ed)

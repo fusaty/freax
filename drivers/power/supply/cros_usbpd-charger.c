@@ -5,13 +5,13 @@
  * Copyright (c) 2014 - 2018 Google, Inc
  */
 
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_usbpd_notify.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_data/cros_usbpd_notify.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
 
 #define CHARGER_USBPD_DIR_NAME			"CROS_USBPD_CHARGER%d"
 #define CHARGER_DEDICATED_DIR_NAME		"CROS_DEDICATED_CHARGER"

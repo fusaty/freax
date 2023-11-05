@@ -9,7 +9,7 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <crypto/internal/hash.h>
 
 #include <asm/cpu-features.h>

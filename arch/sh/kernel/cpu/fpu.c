@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
 #include <asm/processor.h>
 #include <asm/fpu.h>
 #include <asm/traps.h>

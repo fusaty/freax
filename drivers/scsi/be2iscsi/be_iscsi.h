@@ -4,7 +4,7 @@
  * The term "Broadcom" refers to Broadcom Limited and/or its subsidiaries.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * freax-drivers@broadcom.com
  */
 
 #ifndef _BE_ISCSI_

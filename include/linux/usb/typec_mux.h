@@ -3,8 +3,8 @@
 #ifndef __USB_TYPEC_MUX
 #define __USB_TYPEC_MUX
 
-#include <linux/property.h>
-#include <linux/usb/typec.h>
+#include <freax/property.h>
+#include <freax/usb/typec.h>
 
 struct device;
 struct typec_mux;

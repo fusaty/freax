@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/pl320-ipc.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/pl320-ipc.h>
+#include <freax/platform_device.h>
 
 #define HB_CPUFREQ_CHANGE_NOTE	0x80000001
 #define HB_CPUFREQ_IPC_LEN	7

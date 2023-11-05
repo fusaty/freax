@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HIGHUID_H
-#define _LINUX_HIGHUID_H
+#ifndef _freax_HIGHUID_H
+#define _freax_HIGHUID_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * general notes:
@@ -95,4 +95,4 @@ extern int fs_overflowgid;
 #define low_16_bits(x)	((x) & 0xFFFF)
 #define high_16_bits(x)	(((x) & 0xFFFF0000) >> 16)
 
-#endif /* _LINUX_HIGHUID_H */
+#endif /* _freax_HIGHUID_H */

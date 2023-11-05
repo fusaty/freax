@@ -5,15 +5,15 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
 
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_atomic_helper.h>
@@ -23,7 +23,7 @@
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_print.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 #include "meson_drv.h"
 #include "meson_dw_hdmi.h"

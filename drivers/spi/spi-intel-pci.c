@@ -3,11 +3,11 @@
  * Intel PCH/PCU SPI flash PCI driver.
  *
  * Copyright (C) 2016 - 2022, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "spi-intel.h"
 
@@ -98,5 +98,5 @@ static struct pci_driver intel_spi_pci_driver = {
 module_pci_driver(intel_spi_pci_driver);
 
 MODULE_DESCRIPTION("Intel PCH/PCU SPI flash PCI driver");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_LICENSE("GPL v2");

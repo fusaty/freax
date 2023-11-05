@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2023 Nuvoton Technology corporation.
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/chipidea.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/reset-controller.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/usb/chipidea.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/reset-controller.h>
+#include <freax/of.h>
 
 #include "ci.h"
 

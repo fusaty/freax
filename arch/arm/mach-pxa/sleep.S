@@ -11,7 +11,7 @@
  * modify it under the terms of the GNU General Public License.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include "smemc.h"
 #include "pxa2xx-regs.h"

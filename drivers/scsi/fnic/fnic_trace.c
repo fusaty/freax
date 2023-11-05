@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2012 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/mempool.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
+#include <freax/kallsyms.h>
+#include <freax/time.h>
+#include <freax/vmalloc.h>
 #include "fnic_io.h"
 #include "fnic.h"
 

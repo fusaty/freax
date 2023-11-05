@@ -36,11 +36,11 @@ properties:
            pin should be configured for pull up.
     $ref: /schemas/types.yaml#/definitions/flag
 
-  linux,code:
+  freax,code:
     description: |
            The input key-code associated with the power key.
-           Use the linux event codes defined in
-           include/dt-bindings/input/linux-event-codes.h
+           Use the freax event codes defined in
+           include/dt-bindings/input/freax-event-codes.h
            When property is omitted KEY_POWER is assumed.
 
 required:

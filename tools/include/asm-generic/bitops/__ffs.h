@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_ASM_GENERIC_BITOPS___FFS_H_
-#define _TOOLS_LINUX_ASM_GENERIC_BITOPS___FFS_H_
+#ifndef _TOOLS_freax_ASM_GENERIC_BITOPS___FFS_H_
+#define _TOOLS_freax_ASM_GENERIC_BITOPS___FFS_H_
 
 #include <asm/types.h>
 #include <asm/bitsperlong.h>
@@ -42,4 +42,4 @@ static __always_inline unsigned long __ffs(unsigned long word)
 	return num;
 }
 
-#endif /* _TOOLS_LINUX_ASM_GENERIC_BITOPS___FFS_H_ */
+#endif /* _TOOLS_freax_ASM_GENERIC_BITOPS___FFS_H_ */

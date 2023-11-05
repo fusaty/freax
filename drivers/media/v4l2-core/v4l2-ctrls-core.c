@@ -5,9 +5,9 @@
  * Copyright (C) 2010-2021  Hans Verkuil <hverkuil-cisco@xs4all.nl>
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-fwnode.h>

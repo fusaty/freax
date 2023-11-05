@@ -6,17 +6,17 @@
  *
  * Copyright (C) 2011-2012 One Laptop per Child Foundation.
  */
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/regulator/driver.h>
-#include <linux/olpc-ec.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/regulator/driver.h>
+#include <freax/olpc-ec.h>
 
 struct ec_cmd_desc {
 	u8 cmd;

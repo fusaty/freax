@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/atari/stmda.c
+ *  freax/arch/m68k/atari/stmda.c
  *
  *  Copyright (C) 1994 Roman Hodek
  *
@@ -28,13 +28,13 @@
 /* (can be determined by looking at its status register).              */
 
 
-#include <linux/types.h>
-#include <linux/kdev_t.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kdev_t.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/module.h>
 
 #include <asm/atari_stdma.h>
 #include <asm/atariints.h>

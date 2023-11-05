@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *  linux/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
+ *  freax/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
  *
  *  Copyright (C) 1995--2003 Geert Uytterhoeven
  *
@@ -9,10 +9,10 @@
  *  for more details.
  */
 
-#ifndef _UAPI_LINUX_ZORRO_H
-#define _UAPI_LINUX_ZORRO_H
+#ifndef _UAPI_freax_ZORRO_H
+#define _UAPI_freax_ZORRO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 
     /*
@@ -40,7 +40,7 @@ typedef __u32 zorro_id;
 
 
 /* Include the ID list */
-#include <linux/zorro_ids.h>
+#include <freax/zorro_ids.h>
 
 
     /*
@@ -111,4 +111,4 @@ struct ConfigDev {
 
 #define ZORRO_NUM_AUTO		16
 
-#endif /* _UAPI_LINUX_ZORRO_H */
+#endif /* _UAPI_freax_ZORRO_H */

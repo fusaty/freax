@@ -3,7 +3,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/dma-map-ops.h>
+#include <freax/dma-map-ops.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>
 
@@ -32,7 +32,7 @@ void arch_dma_prep_coherent(struct page *page, size_t size)
 
 /*
  * Cache operations depending on function and direction argument, inspired by
- * https://lore.kernel.org/lkml/20180518175004.GF17671@n2100.armlinux.org.uk
+ * https://lore.kernel.org/lkml/20180518175004.GF17671@n2100.armfreax.org.uk
  * "dma_sync_*_for_cpu and direction=TO_DEVICE (was Re: [PATCH 02/20]
  * dma-mapping: provide a generic dma-noncoherent implementation)"
  *
@@ -45,7 +45,7 @@ void arch_dma_prep_coherent(struct page *page, size_t size)
  *     [*] needed for CPU speculative prefetches
  *
  * NOTE: we don't check the validity of direction argument as it is done in
- * upper layer functions (in include/linux/dma-mapping.h)
+ * upper layer functions (in include/freax/dma-mapping.h)
  */
 
 void arch_sync_dma_for_device(phys_addr_t paddr, size_t size,

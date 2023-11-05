@@ -7,12 +7,12 @@
  *	Anup Patel <apatel@ventanamicro.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/kvm_host.h>
-#include <linux/math.h>
-#include <linux/spinlock.h>
-#include <linux/swab.h>
+#include <freax/atomic.h>
+#include <freax/bitmap.h>
+#include <freax/kvm_host.h>
+#include <freax/math.h>
+#include <freax/spinlock.h>
+#include <freax/swab.h>
 #include <kvm/iodev.h>
 #include <asm/csr.h>
 #include <asm/kvm_aia_imsic.h>

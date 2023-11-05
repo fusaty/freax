@@ -7,14 +7,14 @@
  * Copyright (C) 2019-2020 Cogent Embedded, Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 
 #include <memory/renesas-rpc-if.h>
 

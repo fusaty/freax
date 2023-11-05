@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/devlink.yaml */
 /* YNL-GEN user source */
@@ -7,10 +7,10 @@
 #include <string.h>
 #include "devlink-user.h"
 #include "ynl.h"
-#include <linux/devlink.h>
+#include <freax/devlink.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <freax/genetlink.h>
 
 /* Enums */
 static const char * const devlink_op_strmap[] = {

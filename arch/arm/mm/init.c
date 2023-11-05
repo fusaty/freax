@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/init.c
+ *  freax/arch/arm/mm/init.c
  *
  *  Copyright (C) 1995-2005 Russell King
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/dma-map-ops.h>
-#include <linux/sizes.h>
-#include <linux/stop_machine.h>
-#include <linux/swiotlb.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/swap.h>
+#include <freax/init.h>
+#include <freax/mman.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/export.h>
+#include <freax/nodemask.h>
+#include <freax/initrd.h>
+#include <freax/of_fdt.h>
+#include <freax/highmem.h>
+#include <freax/gfp.h>
+#include <freax/memblock.h>
+#include <freax/dma-map-ops.h>
+#include <freax/sizes.h>
+#include <freax/stop_machine.h>
+#include <freax/swiotlb.h>
 
 #include <asm/cp15.h>
 #include <asm/mach-types.h>

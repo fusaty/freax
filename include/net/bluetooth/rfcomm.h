@@ -1,5 +1,5 @@
 /*
-   RFCOMM implementation for Linux Bluetooth stack (BlueZ)
+   RFCOMM implementation for freax Bluetooth stack (BlueZ)
    Copyright (C) 2002 Maxim Krasnyansky <maxk@qualcomm.com>
    Copyright (C) 2002 Marcel Holtmann <marcel@holtmann.org>
 
@@ -21,7 +21,7 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
 #ifndef __RFCOMM_H
 #define __RFCOMM_H

@@ -6,8 +6,8 @@
 #ifndef __INTEL_DISPLAY_POWER_H__
 #define __INTEL_DISPLAY_POWER_H__
 
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 
 #include "intel_wakeref.h"
 

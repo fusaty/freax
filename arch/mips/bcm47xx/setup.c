@@ -28,15 +28,15 @@
 
 #include "bcm47xx_private.h"
 
-#include <linux/bcm47xx_sprom.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_embedded.h>
-#include <linux/bcma/bcma_soc.h>
+#include <freax/bcm47xx_sprom.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/ethtool.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/ssb/ssb.h>
+#include <freax/ssb/ssb_embedded.h>
+#include <freax/bcma/bcma_soc.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/prom.h>

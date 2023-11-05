@@ -6,8 +6,8 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_ADAU17X1_H__
-#define __LINUX_PLATFORM_DATA_ADAU17X1_H__
+#ifndef __freax_PLATFORM_DATA_ADAU17X1_H__
+#define __freax_PLATFORM_DATA_ADAU17X1_H__
 
 /**
  * enum adau17x1_micbias_voltage - Microphone bias voltage

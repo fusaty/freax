@@ -23,8 +23,8 @@
 #include "kfd_debug.h"
 #include "kfd_device_queue_manager.h"
 #include "kfd_topology.h"
-#include <linux/file.h>
-#include <uapi/linux/kfd_ioctl.h>
+#include <freax/file.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 #define MAX_WATCH_ADDRESSES	4
 

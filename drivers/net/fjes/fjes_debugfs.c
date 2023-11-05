@@ -8,9 +8,9 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/platform_device.h>
 
 #include "fjes.h"
 

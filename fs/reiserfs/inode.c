@@ -2,24 +2,24 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
+#include <freax/time.h>
+#include <freax/fs.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/exportfs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/exportfs.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/writeback.h>
-#include <linux/quotaops.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
+#include <freax/buffer_head.h>
+#include <freax/mpage.h>
+#include <freax/writeback.h>
+#include <freax/quotaops.h>
+#include <freax/swap.h>
+#include <freax/uio.h>
+#include <freax/bio.h>
 
 int reiserfs_commit_write(struct file *f, struct page *page,
 			  unsigned from, unsigned to);

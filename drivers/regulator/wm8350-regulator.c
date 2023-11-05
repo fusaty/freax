@@ -5,19 +5,19 @@
 // Copyright 2007, 2008 Wolfson Microelectronics PLC.
 //
 // Author: Liam Girdwood
-//         linux@wolfsonmicro.com
+//         freax@wolfsonmicro.com
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/mfd/wm8350/core.h>
+#include <freax/mfd/wm8350/pmic.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 /* Maximum value possible for VSEL */
 #define WM8350_DCDC_MAX_VSEL 0x66

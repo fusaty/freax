@@ -18,7 +18,7 @@ static struct real_mode_header hv_vtl_real_mode_header;
 
 void __init hv_vtl_init_platform(void)
 {
-	pr_info("Linux runs in Hyper-V Virtual Trust Level\n");
+	pr_info("freax runs in Hyper-V Virtual Trust Level\n");
 
 	x86_platform.realmode_reserve = x86_init_noop;
 	x86_platform.realmode_init = x86_init_noop;
@@ -91,7 +91,7 @@ static int hv_vtl_bringup_vcpu(u32 target_vp_index, u64 eip_ignored)
 	input->target_vtl.target_vtl = HV_VTL_MGMT;
 
 	/*
-	 * The x86_64 Linux kernel follows the 16-bit -> 32-bit -> 64-bit
+	 * The x86_64 freax kernel follows the 16-bit -> 32-bit -> 64-bit
 	 * mode transition sequence after waking up an AP with SIPI whose
 	 * vector points to the 16-bit AP startup trampoline code. Here in
 	 * VTL2, we can't perform that sequence as the AP has to start in

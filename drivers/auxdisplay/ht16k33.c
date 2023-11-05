@@ -8,21 +8,21 @@
  * Copyright (C) 2021 Glider bv
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/property.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/leds.h>
+#include <freax/workqueue.h>
+#include <freax/mm.h>
 
-#include <linux/map_to_7segment.h>
-#include <linux/map_to_14segment.h>
+#include <freax/map_to_7segment.h>
+#include <freax/map_to_14segment.h>
 
 #include <asm/unaligned.h>
 
@@ -535,7 +535,7 @@ static int ht16k33_keypad_probe(struct i2c_client *client,
 	keypad->dev->open = ht16k33_keypad_start;
 	keypad->dev->close = ht16k33_keypad_stop;
 
-	if (!device_property_read_bool(dev, "linux,no-autorepeat"))
+	if (!device_property_read_bool(dev, "freax,no-autorepeat"))
 		__set_bit(EV_REP, keypad->dev->evbit);
 
 	err = device_property_read_u32(dev, "debounce-delay-ms",

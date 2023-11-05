@@ -6,8 +6,8 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
-#include <uapi/linux/fcntl.h>
+#include <freax/kernel.h>
+#include <uapi/freax/fcntl.h>
 
 static size_t fcntl__scnprintf_getfd(unsigned long val, char *bf, size_t size, bool show_prefix)
 {

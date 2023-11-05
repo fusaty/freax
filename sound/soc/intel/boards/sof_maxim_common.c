@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //
 // Copyright(c) 2020 Intel Corporation. All rights reserved.
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/string.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

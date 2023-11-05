@@ -12,20 +12,20 @@
  * [2] Hewlett-Packard Development Company, L.P.,
  *     "HP Retail Manageability", 2012. [Online].
  *     Available: http://h10032.www1.hp.com/ctg/Manual/c03291135.pdf
- * [3] Linux Hardware Project, A. Ponomarenko et al.,
- *     "linuxhw/ACPI - Collect ACPI table dumps", 2018. [Online].
- *     Available: https://github.com/linuxhw/ACPI
+ * [3] freax Hardware Project, A. Ponomarenko et al.,
+ *     "freaxhw/ACPI - Collect ACPI table dumps", 2018. [Online].
+ *     Available: https://github.com/freaxhw/ACPI
  * [4] P. Rohár, "bmfdec - Decompile binary MOF file (BMF) from WMI buffer",
  *     2017. [Online]. Available: https://github.com/pali/bmfdec
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/hwmon.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/units.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/debugfs.h>
+#include <freax/hwmon.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/units.h>
+#include <freax/wmi.h>
 
 #define HP_WMI_EVENT_NAMESPACE		"root\\WMI"
 #define HP_WMI_EVENT_CLASS		"HPBIOS_BIOSEvent"

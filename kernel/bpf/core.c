@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux Socket Filter - Kernel level socket filtering
+ * freax Socket Filter - Kernel level socket filtering
  *
  * Based on the design of the Berkeley Packet Filter. The new
  * internal format has been designed by PLUMgrid:
@@ -17,26 +17,26 @@
  * Kris Katterjohn - Added many additional checks in bpf_check_classic()
  */
 
-#include <uapi/linux/btf.h>
-#include <linux/filter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/moduleloader.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/objtool.h>
-#include <linux/rbtree_latch.h>
-#include <linux/kallsyms.h>
-#include <linux/rcupdate.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/log2.h>
-#include <linux/bpf_verifier.h>
-#include <linux/nodemask.h>
-#include <linux/nospec.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/memcontrol.h>
+#include <uapi/freax/btf.h>
+#include <freax/filter.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/random.h>
+#include <freax/moduleloader.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/objtool.h>
+#include <freax/rbtree_latch.h>
+#include <freax/kallsyms.h>
+#include <freax/rcupdate.h>
+#include <freax/perf_event.h>
+#include <freax/extable.h>
+#include <freax/log2.h>
+#include <freax/bpf_verifier.h>
+#include <freax/nodemask.h>
+#include <freax/nospec.h>
+#include <freax/bpf_mem_alloc.h>
+#include <freax/memcontrol.h>
 
 #include <asm/barrier.h>
 #include <asm/unaligned.h>
@@ -2946,7 +2946,7 @@ EXPORT_SYMBOL(bpf_stats_enabled_key);
 
 /* All definitions of tracepoints related to BPF. */
 #define CREATE_TRACE_POINTS
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_exception);
 EXPORT_TRACEPOINT_SYMBOL_GPL(xdp_bulk_tx);

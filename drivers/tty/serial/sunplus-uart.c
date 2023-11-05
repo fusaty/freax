@@ -16,21 +16,21 @@
  * done signal, then proceed next write command. It is no need to do a read
  * before write.
  */
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 #include <asm/irq.h>
 
 /* Register offsets */

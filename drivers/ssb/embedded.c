@@ -11,13 +11,13 @@
 
 #include "ssb_private.h"
 
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_embedded.h>
-#include <linux/ssb/ssb_driver_pci.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/pci.h>
+#include <freax/export.h>
+#include <freax/platform_device.h>
+#include <freax/ssb/ssb.h>
+#include <freax/ssb/ssb_embedded.h>
+#include <freax/ssb/ssb_driver_pci.h>
+#include <freax/ssb/ssb_driver_gige.h>
+#include <freax/pci.h>
 
 
 int ssb_watchdog_timer_set(struct ssb_bus *bus, u32 ticks)

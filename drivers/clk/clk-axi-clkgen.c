@@ -6,13 +6,13 @@
  *  Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <freax/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/err.h>
 
 #define AXI_CLKGEN_V2_REG_RESET		0x40
 #define AXI_CLKGEN_V2_REG_CLKSEL	0x44

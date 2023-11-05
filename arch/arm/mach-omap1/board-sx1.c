@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-* linux/arch/arm/mach-omap1/board-sx1.c
+* freax/arch/arm/mach-omap1/board-sx1.c
 *
 * Modified from board-generic.c
 *
@@ -11,23 +11,23 @@
 * Maintainters : Vladimir Ananiev (aka Vovan888), Sergge
 *		oslik.ru
 */
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/omap-dma.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/notifier.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/omapfb.h>
+#include <freax/platform_data/keypad-omap.h>
+#include <freax/omap-dma.h>
 #include "tc.h"
 
 #include <asm/mach-types.h>

@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright (c) 2020, Mellanox Technologies inc.  All rights reserved.
  */
 #ifndef _IBA_DEFS_H_
 #define _IBA_DEFS_H_
 
-#include <linux/kernel.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/bitfield.h>
 #include <asm/unaligned.h>
 
 static inline u32 _iba_get8(const u8 *ptr)

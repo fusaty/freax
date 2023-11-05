@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/sched/mm.h>
-#include <linux/dma-fence-array.h>
+#include <freax/sched/mm.h>
+#include <freax/dma-fence-array.h>
 #include <drm/drm_gem.h>
 
 #include "display/intel_display.h"
@@ -69,7 +69,7 @@ static void i915_vma_free(struct i915_vma *vma)
 
 #if IS_ENABLED(CONFIG_DRM_I915_ERRLOG_GEM) && IS_ENABLED(CONFIG_DRM_DEBUG_MM)
 
-#include <linux/stackdepot.h>
+#include <freax/stackdepot.h>
 
 static void vma_print_allocator(struct i915_vma *vma, const char *reason)
 {

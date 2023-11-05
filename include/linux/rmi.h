@@ -6,14 +6,14 @@
 
 #ifndef _RMI_H
 #define _RMI_H
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/kfifo.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #define NAME_BUFFER_SIZE 256
 

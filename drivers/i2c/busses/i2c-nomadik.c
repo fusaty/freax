@@ -9,18 +9,18 @@
  * Author: Srinidhi Kasagar <srinidhi.kasagar@stericsson.com>
  * Author: Sachin Verma <sachin.verma@st.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/amba/bus.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/amba/bus.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
 
 #define DRIVER_NAME "nmk-i2c"
 

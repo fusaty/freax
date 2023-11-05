@@ -4,11 +4,11 @@
  * Synopsys DesignWare XPCS helpers
  */
 
-#ifndef __LINUX_PCS_XPCS_H
-#define __LINUX_PCS_XPCS_H
+#ifndef __freax_PCS_XPCS_H
+#define __freax_PCS_XPCS_H
 
-#include <linux/phy.h>
-#include <linux/phylink.h>
+#include <freax/phy.h>
+#include <freax/phylink.h>
 
 #define NXP_SJA1105_XPCS_ID		0x00000010
 #define NXP_SJA1110_XPCS_ID		0x00000020
@@ -48,4 +48,4 @@ struct dw_xpcs *xpcs_create_mdiodev(struct mii_bus *bus, int addr,
 				    phy_interface_t interface);
 void xpcs_destroy(struct dw_xpcs *xpcs);
 
-#endif /* __LINUX_PCS_XPCS_H */
+#endif /* __freax_PCS_XPCS_H */

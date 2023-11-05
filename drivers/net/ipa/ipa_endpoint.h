@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2023 Linaro Ltd.
  */
 #ifndef _IPA_ENDPOINT_H_
 #define _IPA_ENDPOINT_H_
 
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/if_ether.h>
 
 #include "gsi.h"
 #include "ipa_reg.h"

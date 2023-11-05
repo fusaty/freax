@@ -9,9 +9,9 @@
  * Copyright (C) 2020 Intel Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
 
 #include "../pci.h"
 

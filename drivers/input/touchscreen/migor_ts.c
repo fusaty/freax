@@ -6,15 +6,15 @@
  * Copyright (c) 2007 Ujjwal Pande <ujjwal@kenati.com>,
  *  Kenati Technologies Pvt Ltd.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 #include <asm/io.h>
-#include <linux/i2c.h>
-#include <linux/timer.h>
+#include <freax/i2c.h>
+#include <freax/timer.h>
 
 #define EVENT_PENDOWN 1
 #define EVENT_REPEAT  2

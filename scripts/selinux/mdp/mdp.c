@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <linux/kconfig.h>
+#include <freax/kconfig.h>
 
 static void usage(char *name)
 {
@@ -119,8 +119,8 @@ int main(int argc, char *argv[])
 	}
 
 	/* enable all policy capabilities */
-	for (i = 0; i < ARRAY_SIZE(selinux_policycap_names); i++)
-		fprintf(fout, "policycap %s;\n", selinux_policycap_names[i]);
+	for (i = 0; i < ARRAY_SIZE(sefreax_policycap_names); i++)
+		fprintf(fout, "policycap %s;\n", sefreax_policycap_names[i]);
 
 	/* types, roles, and allows */
 	fprintf(fout, "type base_t;\n");
@@ -240,8 +240,8 @@ int main(int argc, char *argv[])
 #ifdef CONFIG_PROC_FS
 	GENFSCON("proc", "/");
 #endif
-#ifdef CONFIG_SECURITY_SELINUX
-	GENFSCON("selinuxfs", "/");
+#ifdef CONFIG_SECURITY_SEfreax
+	GENFSCON("sefreaxfs", "/");
 #endif
 #ifdef CONFIG_SYSFS
 	GENFSCON("sysfs", "/");

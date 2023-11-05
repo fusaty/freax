@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/kstrtox.h>
+#include <freax/types.h>
 #include "adf_admin.h"
 #include "adf_cfg.h"
 #include "adf_common_drv.h"

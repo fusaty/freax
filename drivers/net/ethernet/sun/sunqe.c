@@ -7,28 +7,28 @@
  * Copyright (C) 1996, 1999, 2003, 2006, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/pgtable.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/pgtable.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -680,7 +680,7 @@ static void qe_set_multicast(struct net_device *dev)
 /* Ethtool support... */
 static void qe_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *info)
 {
-	const struct linux_prom_registers *regs;
+	const struct freax_prom_registers *regs;
 	struct sunqe *qep = netdev_priv(dev);
 	struct platform_device *op;
 

@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_ARM_CPU_TOPOLOGY
 
-#include <linux/cpumask.h>
-#include <linux/arch_topology.h>
+#include <freax/cpumask.h>
+#include <freax/arch_topology.h>
 
 /* big.LITTLE switcher is incompatible with frequency invariance */
 #ifndef CONFIG_BL_SWITCHER

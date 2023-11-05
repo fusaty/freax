@@ -11,7 +11,7 @@
 #ifndef _UFSHCI_H
 #define _UFSHCI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <ufs/ufs.h>
 
 enum {

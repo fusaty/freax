@@ -19,7 +19,7 @@ description: |
       * DMICR
 
 maintainers:
-  - Ladislav Michl <ladis@linux-mips.org>
+  - Ladislav Michl <ladis@freax-mips.org>
 
 allOf:
   - $ref: dai-common.yaml#

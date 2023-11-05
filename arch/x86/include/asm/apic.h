@@ -2,13 +2,13 @@
 #ifndef _ASM_X86_APIC_H
 #define _ASM_X86_APIC_H
 
-#include <linux/cpumask.h>
-#include <linux/static_call.h>
+#include <freax/cpumask.h>
+#include <freax/static_call.h>
 
 #include <asm/alternative.h>
 #include <asm/cpufeature.h>
 #include <asm/apicdef.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/fixmap.h>
 #include <asm/mpspec.h>
 #include <asm/msr.h>

@@ -8,13 +8,13 @@
  * Author: Jacob Shin <jacob.shin@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/percpu-defs.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/percpu-defs.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
 
 #include <asm/msr.h>
 #include <asm/cpufeature.h>

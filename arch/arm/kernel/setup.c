@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/setup.c
+ *  freax/arch/arm/kernel/setup.c
  *
  *  Copyright (C) 1995-2001 Russell King
  */
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/utsname.h>
-#include <linux/initrd.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
-#include <linux/screen_info.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/proc_fs.h>
-#include <linux/memblock.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/sort.h>
-#include <linux/psci.h>
+#include <freax/efi.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/utsname.h>
+#include <freax/initrd.h>
+#include <freax/console.h>
+#include <freax/seq_file.h>
+#include <freax/screen_info.h>
+#include <freax/init.h>
+#include <freax/kexec.h>
+#include <freax/libfdt.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/proc_fs.h>
+#include <freax/memblock.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/sort.h>
+#include <freax/psci.h>
 
 #include <asm/unified.h>
 #include <asm/cp15.h>
@@ -610,7 +610,7 @@ void __init smp_setup_processor_id(void)
 	 */
 	set_my_cpu_offset(0);
 
-	pr_info("Booting Linux on physical CPU 0x%x\n", mpidr);
+	pr_info("Booting freax on physical CPU 0x%x\n", mpidr);
 }
 
 struct mpidr_hash mpidr_hash;

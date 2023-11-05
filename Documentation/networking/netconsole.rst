@@ -50,7 +50,7 @@ following format::
 
 Examples::
 
- linux netconsole=4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
+ freax netconsole=4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
 
 or::
 
@@ -178,7 +178,7 @@ If '+' is prefixed to the configuration line or "extended" config file
 is set to 1, extended console support is enabled. An example boot
 param follows::
 
- linux netconsole=+4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
+ freax netconsole=+4444@10.0.0.1/eth1,9353@10.0.0.2/12:34:56:78:9a:bc
 
 Log messages are transmitted with extended metadata header in the
 following format which is the same as /dev/kmsg::

@@ -6,7 +6,7 @@
 #ifndef INTEL_GT_IRQ_H
 #define INTEL_GT_IRQ_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_engine_types.h"
 

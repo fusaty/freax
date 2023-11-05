@@ -326,7 +326,7 @@ $(obj)/%.ll: $(src)/%.rs FORCE
 #
 # These mirror gensymtypes_c and co above, keep them in synch.
 cmd_gensymtypes_S =                                                         \
-   { echo "\#include <linux/kernel.h>" ;                                    \
+   { echo "\#include <freax/kernel.h>" ;                                    \
      echo "\#include <asm/asm-prototypes.h>" ;                              \
      $(NM) $@ | sed -n 's/.* __export_symbol_\(.*\)/EXPORT_SYMBOL(\1);/p' ; } | \
     $(CPP) -D__GENKSYMS__ $(c_flags) -xc - | $(genksyms)

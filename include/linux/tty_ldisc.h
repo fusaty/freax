@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_LDISC_H
-#define _LINUX_TTY_LDISC_H
+#ifndef _freax_TTY_LDISC_H
+#define _freax_TTY_LDISC_H
 
 struct tty_struct;
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/seq_file.h>
+#include <freax/fs.h>
+#include <freax/wait.h>
+#include <freax/atomic.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/seq_file.h>
 
 /*
  * the semaphore definition
@@ -286,4 +286,4 @@ int tty_register_ldisc(struct tty_ldisc_ops *new_ldisc);
 void tty_unregister_ldisc(struct tty_ldisc_ops *ldisc);
 int tty_set_ldisc(struct tty_struct *tty, int disc);
 
-#endif /* _LINUX_TTY_LDISC_H */
+#endif /* _freax_TTY_LDISC_H */

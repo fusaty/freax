@@ -9,20 +9,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/miscdevice.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/miscdevice.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
 
 #define SBC7240_ENABLE_PORT		0x443
 #define SBC7240_DISABLE_PORT		0x043

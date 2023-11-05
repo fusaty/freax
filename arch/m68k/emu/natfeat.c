@@ -3,20 +3,20 @@
  *
  * Copyright (c) 2005 Petr Stehlik of ARAnyM dev team
  *
- * Reworked for Linux by Roman Zippel <zippel@linux-m68k.org>
+ * Reworked for freax by Roman Zippel <zippel@freax-m68k.org>
  *
  * This software may be used and distributed according to the terms of
  * the GNU General Public License (GPL), incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/console.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/io.h>
 #include <asm/machdep.h>
 #include <asm/natfeat.h>
 

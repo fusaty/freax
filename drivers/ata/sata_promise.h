@@ -11,7 +11,7 @@
 #ifndef __SATA_PROMISE_H__
 #define __SATA_PROMISE_H__
 
-#include <linux/ata.h>
+#include <freax/ata.h>
 
 enum pdc_packet_bits {
 	PDC_PKT_READ		= (1 << 2),

@@ -2,16 +2,16 @@
 /*
  * Common interrupt code for 32 and 64 bit
  */
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/smp.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/irq.h>
+#include <freax/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/of.h>
+#include <freax/seq_file.h>
+#include <freax/smp.h>
+#include <freax/ftrace.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/irq.h>
 
 #include <asm/irq_stack.h>
 #include <asm/apic.h>

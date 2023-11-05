@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S2MPS13_H
-#define __LINUX_MFD_S2MPS13_H
+#ifndef __freax_MFD_S2MPS13_H
+#define __freax_MFD_S2MPS13_H
 
 /* S2MPS13 registers */
 enum s2mps13_reg {
@@ -174,4 +174,4 @@ enum s2mps13_regulators {
 #define S2MPS13_BUCK_RAMP_DELAY		12500
 #define S2MPS13_REG_WRSTBI_MASK		BIT(5)
 
-#endif /*  __LINUX_MFD_S2MPS13_H */
+#endif /*  __freax_MFD_S2MPS13_H */

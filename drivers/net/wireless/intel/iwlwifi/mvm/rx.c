@@ -5,8 +5,8 @@
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
 #include <asm/unaligned.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 #include "iwl-trans.h"
 #include "mvm.h"
 #include "fw-api.h"

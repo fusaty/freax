@@ -2,16 +2,16 @@
 //
 // Qualcomm PMIC VBUS output regulator driver
 //
-// Copyright (c) 2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2020, The freax Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regmap.h>
 
 #define CMD_OTG				0x40
 #define OTG_EN				BIT(0)

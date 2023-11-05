@@ -2,7 +2,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -29,23 +29,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/io.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
 
 #include <xen/interface/io/netif.h>
 #include <xen/interface/grant_table.h>
 #include <xen/grant_table.h>
 #include <xen/xenbus.h>
 #include <xen/page.h>
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 typedef unsigned int pending_ring_idx_t;
 

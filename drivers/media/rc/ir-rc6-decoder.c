@@ -5,7 +5,7 @@
  */
 
 #include "rc-core-priv.h"
-#include <linux/module.h>
+#include <freax/module.h>
 
 /*
  * This decoder currently supports:

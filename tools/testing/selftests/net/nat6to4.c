@@ -24,21 +24,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include <linux/bpf.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/pkt_cls.h>
-#include <linux/swab.h>
+#include <freax/bpf.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/pkt_cls.h>
+#include <freax/swab.h>
 #include <stdbool.h>
 #include <stdint.h>
 
 
-#include <linux/udp.h>
+#include <freax/udp.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

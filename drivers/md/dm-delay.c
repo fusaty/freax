@@ -8,14 +8,14 @@
  * This file is released under the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/bio.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
 #define DM_MSG_PREFIX "delay"
 

@@ -1,28 +1,28 @@
 /*
- *  linux/arch/m68k/kernel/ptrace.c
+ *  freax/arch/m68k/kernel/ptrace.c
  *
  *  Copyright (C) 1994 by Hamish Macdonald
- *  Taken from linux/kernel/ptrace.c and modified for M680x0.
- *  linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ *  Taken from freax/kernel/ptrace.c and modified for M680x0.
+ *  freax/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  *
  * This file is subject to the terms and conditions of the GNU General
  * Public License.  See the file COPYING in the main directory of
  * this archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/seccomp.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/signal.h>
+#include <freax/regset.h>
+#include <freax/elf.h>
+#include <freax/seccomp.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_EEPROM_H
-#define __LINUX_SPI_EEPROM_H
+#ifndef __freax_SPI_EEPROM_H
+#define __freax_SPI_EEPROM_H
 
-#include <linux/memory.h>
+#include <freax/memory.h>
 
 /*
  * Put one of these structures in platform_data for SPI EEPROMS handled
@@ -34,4 +34,4 @@ struct spi_eeprom {
 	void *context;
 };
 
-#endif /* __LINUX_SPI_EEPROM_H */
+#endif /* __freax_SPI_EEPROM_H */

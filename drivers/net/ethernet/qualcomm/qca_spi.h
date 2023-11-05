@@ -26,11 +26,11 @@
 #ifndef _QCA_SPI_H
 #define _QCA_SPI_H
 
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 #include "qca_7k_common.h"
 

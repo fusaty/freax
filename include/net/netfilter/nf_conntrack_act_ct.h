@@ -4,7 +4,7 @@
 #define _NF_CONNTRACK_ACT_CT_H
 
 #include <net/netfilter/nf_conntrack.h>
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <freax/netfilter/nf_conntrack_common.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 
 struct nf_conn_act_ct_ext {

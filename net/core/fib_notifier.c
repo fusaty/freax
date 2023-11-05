@@ -1,9 +1,9 @@
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/rtnetlink.h>
+#include <freax/notifier.h>
+#include <freax/rcupdate.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/fib_notifier.h>

@@ -2,7 +2,7 @@
 /*
  * Universal Flash Storage Host controller driver
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, The freax Foundation. All rights reserved.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
@@ -12,13 +12,13 @@
 #ifndef _UFSHCD_H
 #define _UFSHCD_H
 
-#include <linux/bitfield.h>
-#include <linux/blk-crypto-profile.h>
-#include <linux/blk-mq.h>
-#include <linux/devfreq.h>
-#include <linux/msi.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-direction.h>
+#include <freax/bitfield.h>
+#include <freax/blk-crypto-profile.h>
+#include <freax/blk-mq.h>
+#include <freax/devfreq.h>
+#include <freax/msi.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-direction.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <ufs/unipro.h>

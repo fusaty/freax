@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 #include <asm/addrspace.h>
 #include <asm/fw/fw.h>

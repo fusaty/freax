@@ -8,11 +8,11 @@
  * Copyright (c) 2023 Code Construct
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/i3c/device.h>
-#include <linux/i3c/master.h>
-#include <linux/if_arp.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/i3c/device.h>
+#include <freax/i3c/master.h>
+#include <freax/if_arp.h>
 #include <asm/unaligned.h>
 #include <net/mctp.h>
 #include <net/mctpdevice.h>

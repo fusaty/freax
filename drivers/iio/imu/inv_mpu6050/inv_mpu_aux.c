@@ -3,10 +3,10 @@
  * Copyright (C) 2019 TDK-InvenSense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
 
 #include "inv_mpu_aux.h"
 #include "inv_mpu_iio.h"
@@ -72,7 +72,7 @@ int inv_mpu_aux_init(const struct inv_mpu6050_state *st)
 	int ret;
 
 	/*
-	 * Code based on the vendor Linux kernel v3.0,
+	 * Code based on the vendor freax kernel v3.0,
 	 * the exact meaning is unknown.
 	 */
 	if (st->chip_type == INV_MPU9150) {

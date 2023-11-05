@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2004, 2005 IBM, John Stultz (johnstul@us.ibm.com)
  */
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/clocksource.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 #include "timekeeping.h"
 #include "tick-internal.h"

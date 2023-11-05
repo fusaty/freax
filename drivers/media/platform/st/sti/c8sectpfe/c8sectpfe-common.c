@@ -7,19 +7,19 @@
  *   Author: Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dvb/dmx.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dvb/dmx.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/wait.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

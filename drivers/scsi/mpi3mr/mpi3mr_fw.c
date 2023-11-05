@@ -3,12 +3,12 @@
  * Driver for Broadcom MPI3 Storage Controllers
  *
  * Copyright (C) 2017-2023 Broadcom Inc.
- *  (mailto: mpi3mr-linuxdrv.pdl@broadcom.com)
+ *  (mailto: mpi3mr-freaxdrv.pdl@broadcom.com)
  *
  */
 
 #include "mpi3mr.h"
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 static int
 mpi3mr_issue_reset(struct mpi3mr_ioc *mrioc, u16 reset_type, u32 reset_reason);

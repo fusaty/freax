@@ -11,18 +11,18 @@
  * You could find the datasheet in Documentation/arch/arm/sunxi.rst
  */
 
-#include <linux/clk.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/crypto.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 #include <crypto/scatterwalk.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <freax/scatterlist.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
 #include <crypto/md5.h>
 #include <crypto/skcipher.h>
 #include <crypto/sha1.h>

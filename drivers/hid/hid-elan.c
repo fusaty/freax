@@ -7,11 +7,11 @@
  * Copyright (c) 2016 Alexandrov Stanislav <neko@nya.ai>
  */
 
-#include <linux/hid.h>
-#include <linux/input/mt.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/hid.h>
+#include <freax/input/mt.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 
 #include "hid-ids.h"
 

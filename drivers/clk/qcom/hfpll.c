@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
 
 #include "clk-regmap.h"
 #include "clk-hfpll.h"

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#ifdef  __LINUX_COMPILER_VERSION_H
-#error "Please do not include <linux/compiler-version.h>. This is done by the build system."
+#ifdef  __freax_COMPILER_VERSION_H
+#error "Please do not include <freax/compiler-version.h>. This is done by the build system."
 #endif
-#define __LINUX_COMPILER_VERSION_H
+#define __freax_COMPILER_VERSION_H
 
 /*
  * This header exists to force full rebuild when the compiler is upgraded.

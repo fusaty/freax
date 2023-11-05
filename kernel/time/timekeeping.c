@@ -3,27 +3,27 @@
  *  Kernel timekeeping code and accessor functions. Based on code from
  *  timer.c, moved in commit 8524070b7982.
  */
-#include <linux/timekeeper_internal.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/clock.h>
-#include <linux/syscore_ops.h>
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/tick.h>
-#include <linux/stop_machine.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/compiler.h>
-#include <linux/audit.h>
-#include <linux/random.h>
+#include <freax/timekeeper_internal.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/percpu.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/nmi.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/clock.h>
+#include <freax/syscore_ops.h>
+#include <freax/clocksource.h>
+#include <freax/jiffies.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/tick.h>
+#include <freax/stop_machine.h>
+#include <freax/pvclock_gtod.h>
+#include <freax/compiler.h>
+#include <freax/audit.h>
+#include <freax/random.h>
 
 #include "tick-internal.h"
 #include "ntp_internal.h"

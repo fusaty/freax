@@ -6,19 +6,19 @@
  * Author: Tudor Ambarus
  */
 
-#include <linux/bitrev.h>
-#include <linux/crc16.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/bitrev.h>
+#include <freax/crc16.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include "atmel-i2c.h"
 
 static const struct {

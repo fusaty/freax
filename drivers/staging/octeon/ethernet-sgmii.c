@@ -5,10 +5,10 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/phy.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/ratelimit.h>
+#include <freax/phy.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/ratelimit.h>
 #include <net/dst.h>
 
 #include "octeon-ethernet.h"

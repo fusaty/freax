@@ -6,12 +6,12 @@
  * Copyright (c) 2000 RP Internet (www.rpi.net.au).
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/oid_registry.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/oid_registry.h>
 
 #include "glob.h"
 

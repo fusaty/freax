@@ -3,8 +3,8 @@
  * Author: Huacai Chen <chenhuacai@loongson.cn>
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
 
 #include <asm/bootinfo.h>
 #include <asm/loongson.h>

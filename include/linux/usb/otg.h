@@ -7,11 +7,11 @@
  * continue to use just usb_device and usb_gadget.
  */
 
-#ifndef __LINUX_USB_OTG_H
-#define __LINUX_USB_OTG_H
+#ifndef __freax_USB_OTG_H
+#define __freax_USB_OTG_H
 
-#include <linux/phy/phy.h>
-#include <linux/usb/phy.h>
+#include <freax/phy/phy.h>
+#include <freax/usb/phy.h>
 
 struct usb_otg {
 	u8			default_a;
@@ -130,4 +130,4 @@ enum usb_dr_mode {
 extern enum usb_dr_mode usb_get_dr_mode(struct device *dev);
 extern enum usb_dr_mode usb_get_role_switch_default_mode(struct device *dev);
 
-#endif /* __LINUX_USB_OTG_H */
+#endif /* __freax_USB_OTG_H */

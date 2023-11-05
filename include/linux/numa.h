@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NUMA_H
-#define _LINUX_NUMA_H
-#include <linux/types.h>
+#ifndef _freax_NUMA_H
+#define _freax_NUMA_H
+#include <freax/types.h>
 
 #ifdef CONFIG_NODES_SHIFT
 #define NODES_SHIFT     CONFIG_NODES_SHIFT
@@ -22,7 +22,7 @@
 #endif
 
 #ifdef CONFIG_NUMA
-#include <linux/printk.h>
+#include <freax/printk.h>
 #include <asm/sparsemem.h>
 
 /* Generic implementation available */
@@ -72,4 +72,4 @@ static inline int phys_to_target_node(u64 start)
 extern const struct attribute_group arch_node_dev_group;
 #endif
 
-#endif /* _LINUX_NUMA_H */
+#endif /* _freax_NUMA_H */

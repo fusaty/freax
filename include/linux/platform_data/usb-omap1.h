@@ -5,10 +5,10 @@
  * License. See the file "COPYING" in the main directory of this archive for
  * more details.
  */
-#ifndef __LINUX_USB_OMAP1_H
-#define __LINUX_USB_OMAP1_H
+#ifndef __freax_USB_OMAP1_H
+#define __freax_USB_OMAP1_H
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 struct omap_usb_config {
 	/* Configure drivers according to the connectors on your board:
@@ -54,4 +54,4 @@ struct omap_usb_config {
 	int (*transceiver_power)(int on);
 };
 
-#endif /* __LINUX_USB_OMAP1_H */
+#endif /* __freax_USB_OMAP1_H */

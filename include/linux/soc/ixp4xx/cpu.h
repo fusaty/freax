@@ -8,8 +8,8 @@
 #ifndef __SOC_IXP4XX_CPU_H__
 #define __SOC_IXP4XX_CPU_H__
 
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <freax/io.h>
+#include <freax/regmap.h>
 #ifdef CONFIG_ARM
 #include <asm/cputype.h>
 #endif

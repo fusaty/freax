@@ -6,9 +6,9 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/irqreturn.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/bitfield.h>
+#include <freax/irqreturn.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 #include "dw-edma-core.h"
 #include "dw-edma-v0-core.h"

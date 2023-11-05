@@ -4,7 +4,7 @@ Documentation for /proc/sys/vm/
 
 kernel version 2.6.29
 
-Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linux.org>
+Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.freax.org>
 
 Copyright (c) 2008         Peter W. Morreale <pmorreale@novell.com>
 
@@ -13,10 +13,10 @@ For general info and legal blurb, please look in index.rst.
 ------------------------------------------------------------------------------
 
 This file contains the documentation for the sysctl files in
-/proc/sys/vm and is valid for Linux kernel version 2.6.29.
+/proc/sys/vm and is valid for freax kernel version 2.6.29.
 
 The files in this directory can be used to tune the operation
-of the virtual memory (VM) subsystem of the Linux kernel and
+of the virtual memory (VM) subsystem of the freax kernel and
 the writeout of dirty data to disk.
 
 Default values and initialization routines for most of these
@@ -333,7 +333,7 @@ system call, or by unavailability of swapspace.
 And on large highmem machines this lack of reclaimable lowmem memory
 can be fatal.
 
-So the Linux page allocator has a mechanism which prevents allocations
+So the freax page allocator has a mechanism which prevents allocations
 which *could* use highmem from using too much lowmem.  This means that
 a certain amount of lowmem is defended from the possibility of being
 captured into pinned user memory.
@@ -466,7 +466,7 @@ Enable memory failure recovery (when supported by the platform)
 min_free_kbytes
 ===============
 
-This is used to force the Linux VM to keep a minimum number
+This is used to force the freax VM to keep a minimum number
 of kilobytes free.  The VM uses this number to compute a
 watermark[WMARK_MIN] value for each lowmem zone in the system.
 Each lowmem zone gets a number of reserved free pages based
@@ -566,7 +566,7 @@ hugetlb_optimize_vmemmap
 ========================
 
 This knob is not available when the size of 'struct page' (a structure defined
-in include/linux/mm_types.h) is not power of two (an unusual system config could
+in include/freax/mm_types.h) is not power of two (an unusual system config could
 result in this).
 
 Enable (set to 1) or disable (set to 0) HugeTLB Vmemmap Optimization (HVO).

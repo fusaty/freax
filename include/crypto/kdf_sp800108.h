@@ -8,7 +8,7 @@
 #define _CRYPTO_KDF108_H
 
 #include <crypto/hash.h>
-#include <linux/uio.h>
+#include <freax/uio.h>
 
 /**
  * Counter KDF generate operation according to SP800-108 section 5.1

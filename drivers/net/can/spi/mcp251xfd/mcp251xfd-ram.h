@@ -9,7 +9,7 @@
 #ifndef _MCP251XFD_RAM_H
 #define _MCP251XFD_RAM_H
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 #define CAN_RAM_NUM_MAX (-1)
 

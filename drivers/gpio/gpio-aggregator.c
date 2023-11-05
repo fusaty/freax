@@ -7,25 +7,25 @@
 #define DRV_NAME       "gpio-aggregator"
 #define pr_fmt(fmt)	DRV_NAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/idr.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/overflow.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
 
 #define AGGREGATOR_MAX_GPIOS 512
 

@@ -14,11 +14,11 @@
 #include <string.h>
 #include <errno.h>
 #include <limits.h>
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/time64.h>
-#include <linux/overflow.h>
+#include <freax/capability.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/time64.h>
+#include <freax/overflow.h>
 #include <unistd.h>
 #include "cap.h"
 #include "strlist.h"

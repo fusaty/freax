@@ -5,18 +5,18 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/ethtool.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/string.h>
+#include <freax/ethtool.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <freax/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 

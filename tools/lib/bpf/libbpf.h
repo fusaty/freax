@@ -15,7 +15,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <sys/types.h>  // for size_t
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 #include "libbpf_common.h"
 #include "libbpf_legacy.h"
@@ -134,10 +134,10 @@ struct bpf_object_open_opts {
 	 */
 	const char *kconfig;
 	/* Path to the custom BTF to be used for BPF CO-RE relocations.
-	 * This custom BTF completely replaces the use of vmlinux BTF
+	 * This custom BTF completely replaces the use of vmfreax BTF
 	 * for the purpose of CO-RE relocations.
 	 * NOTE: any other BPF feature (e.g., fentry/fexit programs,
-	 * struct_ops, etc) will need actual kernel BTF at /sys/kernel/btf/vmlinux.
+	 * struct_ops, etc) will need actual kernel BTF at /sys/kernel/btf/vmfreax.
 	 */
 	const char *btf_custom_path;
 	/* Pointer to a buffer for storing kernel logs for applicable BPF
@@ -285,7 +285,7 @@ libbpf_prog_type_by_name(const char *name, enum bpf_prog_type *prog_type,
 			 enum bpf_attach_type *expected_attach_type);
 LIBBPF_API int libbpf_attach_type_by_name(const char *name,
 					  enum bpf_attach_type *attach_type);
-LIBBPF_API int libbpf_find_vmlinux_btf_id(const char *name,
+LIBBPF_API int libbpf_find_vmfreax_btf_id(const char *name,
 					  enum bpf_attach_type attach_type);
 
 /* Accessors of bpf_program */

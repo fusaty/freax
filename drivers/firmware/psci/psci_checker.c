@@ -6,24 +6,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/psci.h>
-#include <linux/slab.h>
-#include <linux/tick.h>
-#include <linux/topology.h>
+#include <freax/atomic.h>
+#include <freax/completion.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
+#include <freax/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/module.h>
+#include <freax/preempt.h>
+#include <freax/psci.h>
+#include <freax/slab.h>
+#include <freax/tick.h>
+#include <freax/topology.h>
 
 #include <asm/cpuidle.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/freax/psci.h>
 
 #define NUM_SUSPEND_CYCLE (10)
 

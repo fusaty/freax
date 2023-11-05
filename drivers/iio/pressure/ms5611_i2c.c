@@ -11,10 +11,10 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
 
 #include <asm/unaligned.h>
 

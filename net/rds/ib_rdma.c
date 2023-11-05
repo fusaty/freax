@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
-#include <linux/llist.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/rculist.h>
+#include <freax/llist.h>
 
 #include "rds_single_path.h"
 #include "ib_mr.h"

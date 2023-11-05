@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2014 Akihiro Tsukada <tskd08@gmail.com>
  */
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
 
 #include "pt3.h"
 

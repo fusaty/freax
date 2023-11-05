@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <stdlib.h>
 
 #include "../../../util/event.h"

@@ -2,18 +2,18 @@
 /*
  * arch-independent dma-mapping routines
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE freax Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  */
-#include <linux/memblock.h> /* for max_pfn */
-#include <linux/acpi.h>
-#include <linux/dma-map-ops.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/kmsan.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/memblock.h> /* for max_pfn */
+#include <freax/acpi.h>
+#include <freax/dma-map-ops.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
+#include <freax/kmsan.h>
+#include <freax/of_device.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include "debug.h"
 #include "direct.h"
 

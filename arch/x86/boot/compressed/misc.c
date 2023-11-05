@@ -30,7 +30,7 @@
 #define STATIC		static
 /* Define an externally visible malloc()/free(). */
 #define MALLOC_VISIBLE
-#include <linux/decompress/mm.h>
+#include <freax/decompress/mm.h>
 
 /*
  * Provide definitions of memzero and memmove as some of the decompressors will
@@ -191,7 +191,7 @@ static void handle_relocations(void *output, unsigned long output_len,
 	unsigned long max_addr = min_addr + (VO___bss_start - VO__text);
 
 	/*
-	 * Calculate the delta between where vmlinux was linked to load
+	 * Calculate the delta between where vmfreax was linked to load
 	 * and where it was actually loaded.
 	 */
 	delta = min_addr - LOAD_PHYSICAL_ADDR;
@@ -477,7 +477,7 @@ asmlinkage __visible void *extract_kernel(void *rmode, unsigned char *output)
 		error("Destination virtual address changed when not relocatable");
 #endif
 
-	debug_putstr("\nDecompressing Linux... ");
+	debug_putstr("\nDecompressing freax... ");
 
 	if (init_unaccepted_memory()) {
 		debug_putstr("Accepting memory... ");

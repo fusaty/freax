@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2022 Jonathan Neuschäfer
 
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi-mem.h>
 
 #define FIU_CFG		0x00
 #define FIU_BURST_BFG	0x01
@@ -218,7 +218,7 @@ static int wpcm_fiu_4ba_exec(struct spi_mem *mem, const struct spi_mem_op *op)
 }
 
 /*
- * RDID (Read Identification) needs special handling because Linux expects to
+ * RDID (Read Identification) needs special handling because freax expects to
  * be able to read 6 ID bytes and FIU can only read up to 4 at once.
  *
  * We're lucky in this case, because executing the RDID instruction twice will

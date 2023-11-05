@@ -6,11 +6,11 @@
  *	Dave Gerlach <d-gerlach@ti.com>
  */
 
-#ifndef _LINUX_PLATFORM_DATA_PM33XX_H
-#define _LINUX_PLATFORM_DATA_PM33XX_H
+#ifndef _freax_PLATFORM_DATA_PM33XX_H
+#define _freax_PLATFORM_DATA_PM33XX_H
 
-#include <linux/kbuild.h>
-#include <linux/types.h>
+#include <freax/kbuild.h>
+#include <freax/types.h>
 
 /*
  * WFI Flags for sleep code control
@@ -72,4 +72,4 @@ struct am33xx_pm_ro_sram_data {
 } __packed __aligned(8);
 
 #endif /* __ASSEMBLER__ */
-#endif /* _LINUX_PLATFORM_DATA_PM33XX_H */
+#endif /* _freax_PLATFORM_DATA_PM33XX_H */

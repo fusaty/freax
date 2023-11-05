@@ -4,29 +4,29 @@
  *
  *  Copyright (C) 2004 Luming Yu <luming.yu@intel.com>
  *  Copyright (C) 2004 Bruno Ducrot <ducrot@poupinou.org>
- *  Copyright (C) 2006 Thomas Tuttle <linux-kernel@ttuttle.net>
+ *  Copyright (C) 2006 Thomas Tuttle <freax-kernel@ttuttle.net>
  */
 
 #define pr_fmt(fmt) "ACPI: video: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/input.h>
-#include <linux/backlight.h>
-#include <linux/thermal.h>
-#include <linux/sort.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/suspend.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/input.h>
+#include <freax/backlight.h>
+#include <freax/thermal.h>
+#include <freax/sort.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/dmi.h>
+#include <freax/suspend.h>
+#include <freax/acpi.h>
 #include <acpi/video.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define ACPI_VIDEO_BUS_NAME		"Video Bus"
 #define ACPI_VIDEO_DEVICE_NAME		"Video Device"

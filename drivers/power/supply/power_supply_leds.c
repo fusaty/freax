@@ -9,11 +9,11 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/leds.h>
 
 #include "power_supply.h"
 

@@ -4,10 +4,10 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1998 Anton Blanchard (anton@progsoc.uts.edu.au)
- * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.freax.cz)
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/ptrace.h>
 #include <asm/psr.h>
 #include <asm/smp.h>

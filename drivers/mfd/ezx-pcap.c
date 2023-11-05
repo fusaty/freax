@@ -6,15 +6,15 @@
  * Copyright (C) 2009 Daniel Ribeiro <drwyrm@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mfd/ezx-pcap.h>
+#include <freax/spi/spi.h>
+#include <freax/gpio.h>
+#include <freax/slab.h>
 
 #define PCAP_ADC_MAXQ		8
 struct pcap_adc_request {

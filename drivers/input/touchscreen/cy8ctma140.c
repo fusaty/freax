@@ -17,17 +17,17 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/input/mt.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/input.h>
+#include <freax/input/touchscreen.h>
+#include <freax/input/mt.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/i2c.h>
+#include <freax/regulator/consumer.h>
+#include <freax/delay.h>
 
 #define CY8CTMA140_NAME			"cy8ctma140"
 

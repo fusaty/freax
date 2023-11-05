@@ -6,16 +6,16 @@
  * Copyright (C) 2009 Sascha Hauer, Pengutronix
  */
 
-#include <linux/mfd/mc13xxx.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hwmon.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <freax/mfd/mc13xxx.h>
+#include <freax/platform_device.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/hwmon.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/err.h>
 
 #define DRIVER_NAME	"mc13783-adc"
 

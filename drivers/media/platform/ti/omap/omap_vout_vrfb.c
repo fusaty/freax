@@ -9,10 +9,10 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <freax/sched.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-device.h>
 

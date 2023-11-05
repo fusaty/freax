@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
 #ifndef __OS_H__
@@ -13,7 +13,7 @@
 #include <mm_id.h>
 /* This is to get size_t */
 #ifndef __UM_HOST__
-#include <linux/types.h>
+#include <freax/types.h>
 #else
 #include <sys/types.h>
 #endif

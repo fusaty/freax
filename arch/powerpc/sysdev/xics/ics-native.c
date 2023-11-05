@@ -7,18 +7,18 @@
 
 //#define DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/msi.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/spinlock.h>
+#include <freax/msi.h>
+#include <freax/list.h>
 
 #include <asm/smp.h>
 #include <asm/machdep.h>

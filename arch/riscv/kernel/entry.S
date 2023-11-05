@@ -4,8 +4,8 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 
 #include <asm/asm.h>
 #include <asm/csr.h>

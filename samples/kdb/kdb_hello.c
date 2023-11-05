@@ -8,8 +8,8 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kdb.h>
+#include <freax/module.h>
+#include <freax/kdb.h>
 
 /*
  * All kdb shell command call backs receive argc and argv, where

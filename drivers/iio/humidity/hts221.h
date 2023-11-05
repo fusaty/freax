@@ -12,7 +12,7 @@
 
 #define HTS221_DEV_NAME		"hts221"
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 enum hts221_sensor_type {
 	HTS221_SENSOR_H,

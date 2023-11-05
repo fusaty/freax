@@ -4,13 +4,13 @@ Driver Basics
 Driver Entry and Exit points
 ----------------------------
 
-.. kernel-doc:: include/linux/module.h
+.. kernel-doc:: include/freax/module.h
    :internal:
 
 Driver device table
 -------------------
 
-.. kernel-doc:: include/linux/mod_devicetable.h
+.. kernel-doc:: include/freax/mod_devicetable.h
    :internal:
    :no-identifiers: pci_device_id
 
@@ -18,7 +18,7 @@ Driver device table
 Delaying and scheduling routines
 --------------------------------
 
-.. kernel-doc:: include/linux/sched.h
+.. kernel-doc:: include/freax/sched.h
    :internal:
 
 .. kernel-doc:: kernel/sched/core.c
@@ -30,13 +30,13 @@ Delaying and scheduling routines
 .. kernel-doc:: kernel/sched/fair.c
    :internal:
 
-.. kernel-doc:: include/linux/completion.h
+.. kernel-doc:: include/freax/completion.h
    :internal:
 
 Time and timer routines
 -----------------------
 
-.. kernel-doc:: include/linux/jiffies.h
+.. kernel-doc:: include/freax/jiffies.h
    :internal:
 
 .. kernel-doc:: kernel/time/time.c
@@ -48,10 +48,10 @@ Time and timer routines
 High-resolution timers
 ----------------------
 
-.. kernel-doc:: include/linux/ktime.h
+.. kernel-doc:: include/freax/ktime.h
    :internal:
 
-.. kernel-doc:: include/linux/hrtimer.h
+.. kernel-doc:: include/freax/hrtimer.h
    :internal:
 
 .. kernel-doc:: kernel/time/hrtimer.c
@@ -60,7 +60,7 @@ High-resolution timers
 Wait queues and Wake events
 ---------------------------
 
-.. kernel-doc:: include/linux/wait.h
+.. kernel-doc:: include/freax/wait.h
    :internal:
 
 .. kernel-doc:: kernel/sched/wait.c
@@ -75,7 +75,7 @@ Internal Functions
 .. kernel-doc:: kernel/signal.c
    :internal:
 
-.. kernel-doc:: include/linux/kthread.h
+.. kernel-doc:: include/freax/kthread.h
    :internal:
 
 .. kernel-doc:: kernel/kthread.c
@@ -84,7 +84,7 @@ Internal Functions
 Reference counting
 ------------------
 
-.. kernel-doc:: include/linux/refcount.h
+.. kernel-doc:: include/freax/refcount.h
    :internal:
 
 .. kernel-doc:: lib/refcount.c
@@ -93,13 +93,13 @@ Reference counting
 Atomics
 -------
 
-.. kernel-doc:: include/linux/atomic/atomic-instrumented.h
+.. kernel-doc:: include/freax/atomic/atomic-instrumented.h
    :internal:
 
-.. kernel-doc:: include/linux/atomic/atomic-arch-fallback.h
+.. kernel-doc:: include/freax/atomic/atomic-arch-fallback.h
    :internal:
 
-.. kernel-doc:: include/linux/atomic/atomic-long.h
+.. kernel-doc:: include/freax/atomic/atomic-long.h
    :internal:
 
 Kernel objects manipulation
@@ -111,7 +111,7 @@ Kernel objects manipulation
 Kernel utility functions
 ------------------------
 
-.. kernel-doc:: include/linux/kernel.h
+.. kernel-doc:: include/freax/kernel.h
    :internal:
    :no-identifiers: kstrtol kstrtoul
 

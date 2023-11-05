@@ -13,19 +13,19 @@
  *   1.2: PowerPC (big endian) support.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/ioport.h>
+#include <freax/major.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/ctype.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

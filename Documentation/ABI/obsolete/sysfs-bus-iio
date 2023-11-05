@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/length
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Number of scans contained by the buffer.
 
@@ -11,7 +11,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/enable
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Actually start the buffer capture up.  Will start trigger
 		if first device and appropriate.
@@ -23,7 +23,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/scan_elements
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Directory containing interfaces for elements that will be
 		captured for a single triggered sample set in the buffer.
@@ -59,7 +59,7 @@ What:		/sys/.../iio:deviceX/scan_elements/in_pressure_en
 What:		/sys/.../iio:deviceX/scan_elements/in_rot_quaternion_en
 What:		/sys/.../iio:deviceX/scan_elements/in_proximity_en
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Scan element control for triggered data capture.
 
@@ -83,7 +83,7 @@ What:		/sys/.../iio:deviceX/scan_elements/in_pressure_type
 What:		/sys/.../iio:deviceX/scan_elements/in_rot_quaternion_type
 What:		/sys/.../iio:deviceX/scan_elements/in_proximity_type
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		Description of the scan element data storage within the buffer
 		and hence the form in which it is read from user-space.
@@ -149,7 +149,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/watermark
 KernelVersion:	4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		A single positive integer specifying the maximum number of scan
 		elements to wait for.
@@ -172,7 +172,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/data_available
 KernelVersion: 4.16
-Contact:	linux-iio@vger.kernel.org
+Contact:	freax-iio@vger.kernel.org
 Description:
 		A read-only value indicating the bytes of data available in the
 		buffer. In the case of an output buffer, this indicates the

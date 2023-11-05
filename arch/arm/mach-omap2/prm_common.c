@@ -12,17 +12,17 @@
  * XXX This code should eventually be moved to a PRM driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/ti.h>
 
 #include "soc.h"
 #include "prm2xxx_3xxx.h"
@@ -163,7 +163,7 @@ static void omap_prcm_irq_handler(struct irq_desc *desc)
  * corresponding IRQ on which the handler should be registered
  * @name: name of the PRCM interrupt bit to look up - see struct omap_prcm_irq
  *
- * Returns the Linux internal IRQ ID corresponding to @name upon success,
+ * Returns the freax internal IRQ ID corresponding to @name upon success,
  * or -ENOENT upon failure.
  */
 int omap_prcm_event_to_irq(const char *name)

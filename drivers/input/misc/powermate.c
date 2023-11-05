@@ -29,11 +29,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/usb/input.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/usb/input.h>
 
 #define POWERMATE_VENDOR	0x077d	/* Griffin Technology, Inc. */
 #define POWERMATE_PRODUCT_NEW	0x0410	/* Griffin PowerMate */

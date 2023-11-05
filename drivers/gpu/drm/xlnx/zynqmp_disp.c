@@ -14,14 +14,14 @@
 #include <drm/drm_framebuffer.h>
 #include <drm/drm_plane.h>
 
-#include <linux/clk.h>
-#include <linux/dma/xilinx_dpdma.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/dma/xilinx_dpdma.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "zynqmp_disp.h"
 #include "zynqmp_disp_regs.h"

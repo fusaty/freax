@@ -969,14 +969,14 @@ int get_bpf_max_tramp_links_from(struct btf *btf)
 
 int get_bpf_max_tramp_links(void)
 {
-	struct btf *vmlinux_btf;
+	struct btf *vmfreax_btf;
 	int ret;
 
-	vmlinux_btf = btf__load_vmlinux_btf();
-	if (!ASSERT_OK_PTR(vmlinux_btf, "vmlinux btf"))
+	vmfreax_btf = btf__load_vmfreax_btf();
+	if (!ASSERT_OK_PTR(vmfreax_btf, "vmfreax btf"))
 		return -1;
-	ret = get_bpf_max_tramp_links_from(vmlinux_btf);
-	btf__free(vmlinux_btf);
+	ret = get_bpf_max_tramp_links_from(vmfreax_btf);
+	btf__free(vmfreax_btf);
 
 	return ret;
 }

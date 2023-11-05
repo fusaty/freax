@@ -5,12 +5,12 @@
  *
  * Based on implementations in various addi-data COMEDI drivers.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 #include "addi_tcw.h"
 #include "addi_watchdog.h"
 

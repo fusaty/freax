@@ -1,9 +1,9 @@
 #! /usr/bin/env perl
 # SPDX-License-Identifier: GPL-2.0
 #
-# checkversion finds uses of all macros in <linux/version.h>
-# where the source files do not #include <linux/version.h>; or cases
-# of including <linux/version.h> where it is not needed.
+# checkversion finds uses of all macros in <freax/version.h>
+# where the source files do not #include <freax/version.h>; or cases
+# of including <freax/version.h> where it is not needed.
 # Copyright (C) 2003, Randy Dunlap <rdunlap@infradead.org>
 
 use strict;
@@ -13,15 +13,15 @@ $| = 1;
 my $debugging;
 
 foreach my $file (@ARGV) {
-    next if $file =~ "include/generated/uapi/linux/version\.h";
-    next if $file =~ "usr/include/linux/version\.h";
+    next if $file =~ "include/generated/uapi/freax/version\.h";
+    next if $file =~ "usr/include/freax/version\.h";
     # Open this file.
     open( my $f, '<', $file )
       or die "Can't open $file: $!\n";
 
     # Initialize variables.
     my ($fInComment, $fInString, $fUseVersion);
-    my $iLinuxVersion = 0;
+    my $ifreaxVersion = 0;
 
     while (<$f>) {
 	# Strip comments.
@@ -30,7 +30,7 @@ foreach my $file (@ARGV) {
 
 	# Pick up definitions.
 	if ( m/^\s*#/o ) {
-	    $iLinuxVersion      = $. if m/^\s*#\s*include\s*"linux\/version\.h"/o;
+	    $ifreaxVersion      = $. if m/^\s*#\s*include\s*"freax\/version\.h"/o;
 	}
 
 	# Strip strings.
@@ -39,35 +39,35 @@ foreach my $file (@ARGV) {
 
 	# Pick up definitions.
 	if ( m/^\s*#/o ) {
-	    $iLinuxVersion      = $. if m/^\s*#\s*include\s*<linux\/version\.h>/o;
+	    $ifreaxVersion      = $. if m/^\s*#\s*include\s*<freax\/version\.h>/o;
 	}
 
-	# Look for uses: LINUX_VERSION_CODE, KERNEL_VERSION,
-	# LINUX_VERSION_MAJOR, LINUX_VERSION_PATCHLEVEL, LINUX_VERSION_SUBLEVEL
-	if (($_ =~ /LINUX_VERSION_CODE/) || ($_ =~ /\WKERNEL_VERSION/) ||
-	    ($_ =~ /LINUX_VERSION_MAJOR/) || ($_ =~ /LINUX_VERSION_PATCHLEVEL/) ||
-	    ($_ =~ /LINUX_VERSION_SUBLEVEL/)) {
+	# Look for uses: freax_VERSION_CODE, KERNEL_VERSION,
+	# freax_VERSION_MAJOR, freax_VERSION_PATCHLEVEL, freax_VERSION_SUBLEVEL
+	if (($_ =~ /freax_VERSION_CODE/) || ($_ =~ /\WKERNEL_VERSION/) ||
+	    ($_ =~ /freax_VERSION_MAJOR/) || ($_ =~ /freax_VERSION_PATCHLEVEL/) ||
+	    ($_ =~ /freax_VERSION_SUBLEVEL/)) {
 	    $fUseVersion = 1;
-            last if $iLinuxVersion;
+            last if $ifreaxVersion;
         }
     }
 
     # Report used version IDs without include?
-    if ($fUseVersion && ! $iLinuxVersion) {
-	print "$file: $.: need linux/version.h\n";
+    if ($fUseVersion && ! $ifreaxVersion) {
+	print "$file: $.: need freax/version.h\n";
     }
 
     # Report superfluous includes.
-    if ($iLinuxVersion && ! $fUseVersion) {
-	print "$file: $iLinuxVersion linux/version.h not needed.\n";
+    if ($ifreaxVersion && ! $fUseVersion) {
+	print "$file: $ifreaxVersion freax/version.h not needed.\n";
     }
 
     # debug: report OK results:
     if ($debugging) {
-        if ($iLinuxVersion && $fUseVersion) {
-	    print "$file: version use is OK ($iLinuxVersion)\n";
+        if ($ifreaxVersion && $fUseVersion) {
+	    print "$file: version use is OK ($ifreaxVersion)\n";
         }
-        if (! $iLinuxVersion && ! $fUseVersion) {
+        if (! $ifreaxVersion && ! $fUseVersion) {
 	    print "$file: version use is OK (none)\n";
         }
     }

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The freax Foundation. All rights reserved.
  */
 
 #ifndef __QCOM_CLK_REGMAP_DIVIDER_H__
 #define __QCOM_CLK_REGMAP_DIVIDER_H__
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 #include "clk-regmap.h"
 
 struct clk_regmap_div {

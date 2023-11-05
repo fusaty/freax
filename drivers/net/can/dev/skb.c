@@ -4,8 +4,8 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/can/dev.h>
-#include <linux/module.h>
+#include <freax/can/dev.h>
+#include <freax/module.h>
 
 #define MOD_DESC "CAN device driver interface"
 

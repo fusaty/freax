@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm-generic/export.h>
 #include <asm/asm.h>
 #include <asm/asm-extable.h>

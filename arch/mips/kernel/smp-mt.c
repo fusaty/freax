@@ -3,18 +3,18 @@
  *
  * Copyright (C) 2004, 05, 06 MIPS Technologies, Inc.
  *    Elizabeth Clarke (beth@mips.com)
- *    Ralf Baechle (ralf@linux-mips.org)
- * Copyright (C) 2006 Ralf Baechle (ralf@linux-mips.org)
+ *    Ralf Baechle (ralf@freax-mips.org)
+ * Copyright (C) 2006 Ralf Baechle (ralf@freax-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/sched/task_stack.h>
-#include <linux/smp.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cpumask.h>
+#include <freax/interrupt.h>
+#include <freax/compiler.h>
+#include <freax/sched/task_stack.h>
+#include <freax/smp.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>

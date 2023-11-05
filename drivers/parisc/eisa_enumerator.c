@@ -5,12 +5,12 @@
  * Copyright (c) 2002 Daniel Engstrom <5116@telia.com>
  */
 
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/byteorder.h>
 
 #include <asm/eisa_bus.h>

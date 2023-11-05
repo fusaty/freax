@@ -128,7 +128,7 @@ sub end_function() {
 }
 
 $code.=<<___ if $kernel;
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 ___
 
 if ($avx) {

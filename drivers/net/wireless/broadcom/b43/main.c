@@ -19,17 +19,17 @@
 
 */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/firmware.h>
+#include <freax/workqueue.h>
+#include <freax/skbuff.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 #include "b43.h"
@@ -44,7 +44,7 @@
 #include "xmit.h"
 #include "lo.h"
 #include "sdio.h"
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/sdio_func.h>
 
 MODULE_DESCRIPTION("Broadcom B43 wireless driver");
 MODULE_AUTHOR("Martin Langer");

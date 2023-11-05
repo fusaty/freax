@@ -12,14 +12,14 @@
 #define XZ_H
 
 #ifdef __KERNEL__
-#	include <linux/stddef.h>
-#	include <linux/types.h>
+#	include <freax/stddef.h>
+#	include <freax/types.h>
 #else
 #	include <stddef.h>
 #	include <stdint.h>
 #endif
 
-/* In Linux, this is used to make extern functions static when needed. */
+/* In freax, this is used to make extern functions static when needed. */
 #ifndef XZ_EXTERN
 #	define XZ_EXTERN extern
 #endif

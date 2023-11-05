@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * Copyright(c) 2003-2015 Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  * Intel MEI Interface Header
  */
-#ifndef _LINUX_MEI_H
-#define _LINUX_MEI_H
+#ifndef _freax_MEI_H
+#define _freax_MEI_H
 
-#include <linux/mei_uuid.h>
+#include <freax/mei_uuid.h>
 
 /*
  * This IOCTL is used to associate the current file descriptor with a
@@ -115,4 +115,4 @@ struct mei_connect_client_data_vtag {
 #define IOCTL_MEI_CONNECT_CLIENT_VTAG \
 	_IOWR('H', 0x04, struct mei_connect_client_data_vtag)
 
-#endif /* _LINUX_MEI_H  */
+#endif /* _freax_MEI_H  */

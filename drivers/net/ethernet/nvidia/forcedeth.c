@@ -32,27 +32,27 @@
 #define FORCEDETH_VERSION		"0.64"
 #define DRV_NAME			"forcedeth"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/random.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/prefetch.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/timer.h>
+#include <freax/skbuff.h>
+#include <freax/mii.h>
+#include <freax/random.h>
+#include <freax/if_vlan.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/prefetch.h>
+#include <freax/u64_stats_sync.h>
+#include <freax/io.h>
 
 #include <asm/irq.h>
 
@@ -927,7 +927,7 @@ static int phy_cross = NV_CROSSOVER_DETECTION_DISABLED;
 
 /*
  * Power down phy when interface is down (persists through reboot;
- * older Linux and other OSes may not power it up again)
+ * older freax and other OSes may not power it up again)
  */
 static int phy_power_down;
 

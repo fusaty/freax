@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/nmi.h
+ *  freax/include/freax/nmi.h
  */
-#ifndef LINUX_NMI_H
-#define LINUX_NMI_H
+#ifndef freax_NMI_H
+#define freax_NMI_H
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 #include <asm/irq.h>
 
 /* Arch specific watchdogs might need to share extra watchdog-related APIs. */

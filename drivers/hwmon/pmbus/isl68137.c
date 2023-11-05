@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
+#include <freax/err.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
 
 #include "pmbus.h"
 

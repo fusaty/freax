@@ -20,7 +20,7 @@
  *	of the real mode code before doing anything further.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include "realmode.h"

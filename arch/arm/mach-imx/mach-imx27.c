@@ -3,7 +3,7 @@
  * Copyright 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 

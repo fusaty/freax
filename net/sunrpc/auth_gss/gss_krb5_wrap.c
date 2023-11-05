@@ -29,10 +29,10 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/pagemap.h>
+#include <freax/types.h>
+#include <freax/jiffies.h>
+#include <freax/sunrpc/gss_krb5.h>
+#include <freax/pagemap.h>
 
 #include "gss_krb5_internal.h"
 

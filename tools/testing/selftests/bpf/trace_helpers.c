@@ -9,10 +9,10 @@
 #include <poll.h>
 #include <pthread.h>
 #include <unistd.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 #include <sys/mman.h>
 #include "trace_helpers.h"
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <libelf.h>
 #include <gelf.h>
 #include "bpf/libbpf_internal.h"

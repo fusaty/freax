@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/xtensa/kernel/irq.c
+ * freax/arch/xtensa/kernel/irq.c
  *
  * Xtensa built-in interrupt controller and some generic functions copied
  * from i386.
@@ -14,19 +14,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/xtensa-mx.h>
-#include <linux/irqchip/xtensa-pic.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel_stat.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/xtensa-mx.h>
+#include <freax/irqchip/xtensa-pic.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
 
 #include <asm/mxregs.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/platform.h>
 #include <asm/traps.h>
 

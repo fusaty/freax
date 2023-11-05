@@ -9,42 +9,42 @@
  *
  * (part of code stolen from loop.c)
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/mutex.h>
-#include <linux/writeback.h>
-#include <linux/completion.h>
-#include <linux/highmem.h>
-#include <linux/sysfs.h>
-#include <linux/miscdevice.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
-#include <linux/ioprio.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <linux/cdev.h>
-#include <linux/io_uring.h>
-#include <linux/blk-mq.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/major.h>
+#include <freax/wait.h>
+#include <freax/blkdev.h>
+#include <freax/init.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
+#include <freax/mutex.h>
+#include <freax/writeback.h>
+#include <freax/completion.h>
+#include <freax/highmem.h>
+#include <freax/sysfs.h>
+#include <freax/miscdevice.h>
+#include <freax/falloc.h>
+#include <freax/uio.h>
+#include <freax/ioprio.h>
+#include <freax/sched/mm.h>
+#include <freax/uaccess.h>
+#include <freax/cdev.h>
+#include <freax/io_uring.h>
+#include <freax/blk-mq.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
 #include <asm/page.h>
-#include <linux/task_work.h>
-#include <linux/namei.h>
-#include <linux/kref.h>
-#include <uapi/linux/ublk_cmd.h>
+#include <freax/task_work.h>
+#include <freax/namei.h>
+#include <freax/kref.h>
+#include <uapi/freax/ublk_cmd.h>
 
 #define UBLK_MINORS		(1U << MINORBITS)
 

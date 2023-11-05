@@ -11,38 +11,38 @@
  * Copyright (C) 2006 Craig W. Nadler
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/cdev.h>
-#include <linux/kref.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/idr.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/moduleparam.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/cdev.h>
+#include <freax/kref.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/g_printer.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/composite.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/g_printer.h>
 
 #include "u_printer.h"
 

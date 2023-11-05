@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/overflow.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/overflow.h>
+#include <freax/printk.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include "../tools/testing/selftests/kselftest_module.h"
 

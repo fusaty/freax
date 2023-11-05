@@ -11,8 +11,8 @@
  * Previously Maintained by: Eddie Wai (eddie.wai@broadcom.com)
  * Maintained by: QLogic-Storage-Upstream@qlogic.com
  */
-#ifndef __57XX_ISCSI_HSI_LINUX_LE__
-#define __57XX_ISCSI_HSI_LINUX_LE__
+#ifndef __57XX_ISCSI_HSI_freax_LE__
+#define __57XX_ISCSI_HSI_freax_LE__
 
 /*
  * iSCSI Async CQE
@@ -1523,4 +1523,4 @@ union iscsi_response {
 	struct bnx2i_nop_in_msg nop_in;
 };
 
-#endif /* __57XX_ISCSI_HSI_LINUX_LE__ */
+#endif /* __57XX_ISCSI_HSI_freax_LE__ */

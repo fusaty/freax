@@ -6,7 +6,7 @@
 #include <libelf.h>
 #include <gelf.h>
 #include <fcntl.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "libbpf_internal.h"
 #include "str_error.h"

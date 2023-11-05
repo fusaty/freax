@@ -8,14 +8,14 @@
  * Copyright (C) 2018-2022 Intel Corporation
  */
 
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <freax/ieee80211.h>
+#include <freax/nl80211.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
 #include <net/net_namespace.h>
-#include <linux/rcupdate.h>
-#include <linux/fips.h>
-#include <linux/if_ether.h>
+#include <freax/rcupdate.h>
+#include <freax/fips.h>
+#include <freax/if_ether.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"
 #include "driver-ops.h"

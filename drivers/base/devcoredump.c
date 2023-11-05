@@ -5,13 +5,13 @@
  *
  * Author: Johannes Berg <johannes@sipsolutions.net>
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/devcoredump.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/devcoredump.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/workqueue.h>
 
 static struct class devcd_class;
 

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ZSWAP_H
-#define _LINUX_ZSWAP_H
+#ifndef _freax_ZSWAP_H
+#define _freax_ZSWAP_H
 
-#include <linux/types.h>
-#include <linux/mm_types.h>
+#include <freax/types.h>
+#include <freax/mm_types.h>
 
 extern u64 zswap_pool_total_size;
 extern atomic_t zswap_stored_pages;
@@ -34,4 +34,4 @@ static inline void zswap_swapoff(int type) {}
 
 #endif
 
-#endif /* _LINUX_ZSWAP_H */
+#endif /* _freax_ZSWAP_H */

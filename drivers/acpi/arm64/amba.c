@@ -7,15 +7,15 @@
  * Author: Graeme Gregory <graeme.gregory@linaro.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/acpi.h>
+#include <freax/amba/bus.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "init.h"
 

@@ -6,16 +6,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -26,10 +26,10 @@
  *
  *  While this file is called 'ioctl' is purpose goes a little beyond
  *  that.  This file defines the types and contants used to implement
- *  the p80211 request/confirm/indicate interfaces on Linux.  The
+ *  the p80211 request/confirm/indicate interfaces on freax.  The
  *  request/confirm interface is, in fact, normally implemented as an
  *  ioctl.  The indicate interface on the other hand, is implemented
- *  using the Linux 'netlink' interface.
+ *  using the freax 'netlink' interface.
  *
  *  The reason I say that request/confirm is 'normally' implemented
  *  via ioctl is that we're reserving the right to be able to send

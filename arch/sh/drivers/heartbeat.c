@@ -15,13 +15,13 @@
  * handled by this driver, rather than giving each LED bit position its
  * own struct device.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/sched/loadavg.h>
+#include <freax/timer.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include <asm/heartbeat.h>
 
 #define DRV_NAME "heartbeat"

@@ -3,7 +3,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 #include <asm/cache.h>
 #include <asm/page.h>
 #include <asm/thread_info.h>
@@ -25,7 +25,7 @@ SECTIONS
 	 * Essentially vector is also in ICCM.
 	 */
 
-	. = CONFIG_LINUX_LINK_BASE;
+	. = CONFIG_freax_LINK_BASE;
 
 	_int_vec_base_lds = .;
 	.vector : {

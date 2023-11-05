@@ -8,7 +8,7 @@
 #ifndef _RT3883_REGS_H_
 #define _RT3883_REGS_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define IOMEM(x)		((void __iomem *)(KSEG1ADDR(x)))
 

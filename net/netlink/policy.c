@@ -7,9 +7,9 @@
  * Copyright 2019 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 #include <net/netlink.h>
 
 #define INITIAL_POLICIES_ALLOC	10

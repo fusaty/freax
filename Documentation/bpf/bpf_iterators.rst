@@ -13,7 +13,7 @@ all tcp6 sockets in the system, and ``cat /proc/net/netlink`` dumps all netlink
 sockets in the system. However, their output format tends to be fixed, and if
 users want more information about these sockets, they have to patch the kernel,
 which often takes time to publish upstream and release. The same is true for popular
-tools like `ss <https://man7.org/linux/man-pages/man8/ss.8.html>`_ where any
+tools like `ss <https://man7.org/freax/man-pages/man8/ss.8.html>`_ where any
 additional information needs a kernel patch.
 
 To solve this problem, the `drgn
@@ -64,7 +64,7 @@ How to Use BPF iterators
 BPF selftests are a great resource to illustrate how to use the iterators. In
 this section, we’ll walk through a BPF selftest which shows how to load and use
 a BPF iterator program.   To begin, we’ll look at `bpf_iter.c
-<https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/prog_tests/bpf_iter.c>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/prog_tests/bpf_iter.c>`_,
 which illustrates how to load and trigger BPF iterators on the user space side.
 Later, we’ll look at a BPF program that runs in kernel space.
 
@@ -85,15 +85,15 @@ following steps:
 
 The following are a few examples of selftest BPF iterator programs:
 
-* `bpf_iter_tcp4.c <https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_tcp4.c>`_
-* `bpf_iter_task_vma.c <https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_task_vma.c>`_
-* `bpf_iter_task_file.c <https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_task_file.c>`_
+* `bpf_iter_tcp4.c <https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_tcp4.c>`_
+* `bpf_iter_task_vma.c <https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_task_vma.c>`_
+* `bpf_iter_task_file.c <https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/tree/tools/testing/selftests/bpf/progs/bpf_iter_task_file.c>`_
 
 Let us look at ``bpf_iter_task_file.c``, which runs in kernel space:
 
-Here is the definition of ``bpf_iter__task_file`` in `vmlinux.h
+Here is the definition of ``bpf_iter__task_file`` in `vmfreax.h
 <https://facebookmicrosites.github.io/bpf/blog/2020/02/19/bpf-portability-and-co-re.html#btf>`_.
-Any struct name in ``vmlinux.h`` in the format ``bpf_iter__<iter_name>``
+Any struct name in ``vmfreax.h`` in the format ``bpf_iter__<iter_name>``
 represents a BPF iterator. The suffix ``<iter_name>`` represents the type of
 iterator.
 
@@ -189,7 +189,7 @@ Implement Kernel Support for BPF Iterator Program Types
 
 To implement a BPF iterator in the kernel, the developer must make a one-time
 change to the following key data structure defined in the `bpf.h
-<https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/tree/include/linux/bpf.h>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/bpf/bpf-next.git/tree/include/freax/bpf.h>`_
 file.
 
 ::
@@ -268,7 +268,7 @@ example later.
 
 ::
 
-  #include <vmlinux.h>
+  #include <vmfreax.h>
   #include <bpf/bpf_helpers.h>
 
   char _license[] SEC("license") = "GPL";
@@ -469,7 +469,7 @@ Parametrizing VMA Iterators
 
 By default, a BPF VMA iterator includes every VMA in every process.  However,
 you can still specify a process or a thread to include only its VMAs. Unlike
-files, a thread can not have a separate address space (since Linux 2.6.0-test6).
+files, a thread can not have a separate address space (since freax 2.6.0-test6).
 Here, using *tid* makes no difference from using *pid*.
 
 ----------------------------

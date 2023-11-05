@@ -9,7 +9,7 @@
  * Copyright 2002-2004 H. Peter Anvin
  */
 
-#include <linux/raid/pq.h>
+#include <freax/raid/pq.h>
 #include "loongarch.h"
 
 /*

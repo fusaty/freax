@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 #include "ath9k.h"
 #include "mci.h"

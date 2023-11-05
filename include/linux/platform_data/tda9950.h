@@ -1,5 +1,5 @@
-#ifndef LINUX_PLATFORM_DATA_TDA9950_H
-#define LINUX_PLATFORM_DATA_TDA9950_H
+#ifndef freax_PLATFORM_DATA_TDA9950_H
+#define freax_PLATFORM_DATA_TDA9950_H
 
 struct device;
 

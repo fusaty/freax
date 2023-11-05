@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_TRACE_EVENT_H
-#define _LINUX_TRACE_EVENT_H
+#ifndef _freax_TRACE_EVENT_H
+#define _freax_TRACE_EVENT_H
 
-#include <linux/ring_buffer.h>
-#include <linux/trace_seq.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/perf_event.h>
-#include <linux/tracepoint.h>
+#include <freax/ring_buffer.h>
+#include <freax/trace_seq.h>
+#include <freax/percpu.h>
+#include <freax/hardirq.h>
+#include <freax/perf_event.h>
+#include <freax/tracepoint.h>
 
 struct trace_array;
 struct array_buffer;
@@ -963,7 +963,7 @@ perf_trace_buf_submit(void *raw_data, int size, int rctx, u16 type,
 	min(__ret, TRACE_EVENT_STR_MAX);		\
 })
 
-#endif /* _LINUX_TRACE_EVENT_H */
+#endif /* _freax_TRACE_EVENT_H */
 
 /*
  * Note: we keep the TRACE_CUSTOM_EVENT outside the include file ifdef protection.

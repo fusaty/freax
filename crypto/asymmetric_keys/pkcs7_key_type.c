@@ -6,11 +6,11 @@
  */
 
 #define pr_fmt(fmt) "PKCS7key: "fmt
-#include <linux/key.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/verification.h>
-#include <linux/key-type.h>
+#include <freax/key.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/verification.h>
+#include <freax/key-type.h>
 #include <keys/user-type.h>
 
 MODULE_LICENSE("GPL");

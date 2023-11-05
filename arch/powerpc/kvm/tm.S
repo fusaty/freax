@@ -6,7 +6,7 @@
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/reg.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-offsets.h>

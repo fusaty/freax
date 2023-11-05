@@ -13,7 +13,7 @@
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <time.h>

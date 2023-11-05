@@ -8,29 +8,29 @@
 #ifndef __NET_TI_ICSSG_PRUETH_H
 #define __NET_TI_ICSSG_PRUETH_H
 
-#include <linux/etherdevice.h>
-#include <linux/genalloc.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/net_tstamp.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/remoteproc/pruss.h>
-#include <linux/pruss_driver.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/remoteproc.h>
+#include <freax/etherdevice.h>
+#include <freax/genalloc.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/net_tstamp.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/phy.h>
+#include <freax/remoteproc/pruss.h>
+#include <freax/pruss_driver.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/remoteproc.h>
 
-#include <linux/dma-mapping.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma/ti-cppi5.h>
+#include <freax/dma/k3-udma-glue.h>
 
 #include <net/devlink.h>
 
@@ -77,10 +77,10 @@
 #define ICSS_CMD_ADD_MAC 0x8
 
 /* In switch mode there are 3 real ports i.e. 3 mac addrs.
- * however Linux sees only the host side port. The other 2 ports
+ * however freax sees only the host side port. The other 2 ports
  * are the switch ports.
  * In emac mode there are 2 real ports i.e. 2 mac addrs.
- * Linux sees both the ports.
+ * freax sees both the ports.
  */
 enum prueth_port {
 	PRUETH_PORT_HOST = 0,	/* host side port */

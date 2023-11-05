@@ -3,12 +3,12 @@
  * Copyright (C) 2016 National Instruments Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/watchdog.h>
 
 #define NIWD_CONTROL	0x01
 #define NIWD_COUNTER2	0x02

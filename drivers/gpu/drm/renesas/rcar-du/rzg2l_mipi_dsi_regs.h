@@ -8,7 +8,7 @@
 #ifndef __RZG2L_MIPI_DSI_REGS_H__
 #define __RZG2L_MIPI_DSI_REGS_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* DPHY Registers */
 #define DSIDPHYCTRL0			0x00

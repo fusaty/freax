@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_JUMP_LABEL_RATELIMIT_H
-#define _LINUX_JUMP_LABEL_RATELIMIT_H
+#ifndef _freax_JUMP_LABEL_RATELIMIT_H
+#define _freax_JUMP_LABEL_RATELIMIT_H
 
-#include <linux/jump_label.h>
-#include <linux/workqueue.h>
+#include <freax/jump_label.h>
+#include <freax/workqueue.h>
 
 #if defined(CONFIG_JUMP_LABEL)
 struct static_key_deferred {
@@ -96,4 +96,4 @@ jump_label_rate_limit(struct static_key_deferred *key,
 
 #define static_branch_deferred_inc(x)	static_branch_inc(&(x)->key)
 
-#endif	/* _LINUX_JUMP_LABEL_RATELIMIT_H */
+#endif	/* _freax_JUMP_LABEL_RATELIMIT_H */

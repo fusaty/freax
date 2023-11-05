@@ -9,8 +9,8 @@
 #ifndef __TEGRA210_PEQ_H__
 #define __TEGRA210_PEQ_H__
 
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 
 /* Register offsets from PEQ base */

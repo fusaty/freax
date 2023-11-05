@@ -7,13 +7,13 @@
 #ifndef __iwl_trans_int_pcie_h__
 #define __iwl_trans_int_pcie_h__
 
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
-#include <linux/cpu.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/skbuff.h>
+#include <freax/wait.h>
+#include <freax/pci.h>
+#include <freax/timer.h>
+#include <freax/cpu.h>
 
 #include "iwl-fh.h"
 #include "iwl-csr.h"

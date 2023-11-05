@@ -5,26 +5,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmdev.h>
-#include <linux/socket.h>	/* SOL_SOCKET */
-#include <linux/errno.h>	/* error codes */
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/time64.h>	/* 64-bit time for seconds */
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/net.h>		/* struct socket, struct proto_ops */
+#include <freax/atm.h>		/* ATM stuff */
+#include <freax/atmdev.h>
+#include <freax/socket.h>	/* SOL_SOCKET */
+#include <freax/errno.h>	/* error codes */
+#include <freax/capability.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/time64.h>	/* 64-bit time for seconds */
+#include <freax/skbuff.h>
+#include <freax/bitops.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <net/sock.h>		/* struct sock */
-#include <linux/uaccess.h>
-#include <linux/poll.h>
+#include <freax/uaccess.h>
+#include <freax/poll.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "resources.h"		/* atm_find_dev */
 #include "common.h"		/* prototypes */

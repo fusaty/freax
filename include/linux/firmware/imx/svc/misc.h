@@ -14,7 +14,7 @@
 #ifndef _SC_MISC_API_H
 #define _SC_MISC_API_H
 
-#include <linux/firmware/imx/sci.h>
+#include <freax/firmware/imx/sci.h>
 
 /*
  * This type is used to indicate RPC MISC function calls.

@@ -7,9 +7,9 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  * Author: Jeremy Kerr <jk@ozlabs.org>
  */
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/export.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/export.h>
 #include <asm/reg.h>
 #include <asm/copro.h>
 #include <asm/spu.h>

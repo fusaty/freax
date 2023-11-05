@@ -4,16 +4,16 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@freax.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@freax.vnet.ibm.com>
  */
 
-#include <linux/ratelimit.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/vfio.h>
+#include <freax/ratelimit.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/iommu.h>
+#include <freax/vfio.h>
 #include <asm/idals.h>
 
 #include "vfio_ccw_cp.h"

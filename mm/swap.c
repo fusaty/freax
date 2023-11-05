@@ -1,42 +1,42 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swap.c
+ *  freax/mm/swap.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
 /*
  * This file contains the default values for the operation of the
- * Linux VM subsystem. Fine-tuning documentation can be found in
+ * freax VM subsystem. Fine-tuning documentation can be found in
  * Documentation/admin-guide/sysctl/vm.rst.
  * Started 18.12.91
  * Swap aging added 23.2.95, Stephen Tweedie.
  * Buffermem limits added 12.3.98, Rik van Riel.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm_inline.h>
-#include <linux/percpu_counter.h>
-#include <linux/memremap.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/backing-dev.h>
-#include <linux/memcontrol.h>
-#include <linux/gfp.h>
-#include <linux/uio.h>
-#include <linux/hugetlb.h>
-#include <linux/page_idle.h>
-#include <linux/local_lock.h>
-#include <linux/buffer_head.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/kernel_stat.h>
+#include <freax/swap.h>
+#include <freax/mman.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/mm_inline.h>
+#include <freax/percpu_counter.h>
+#include <freax/memremap.h>
+#include <freax/percpu.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/backing-dev.h>
+#include <freax/memcontrol.h>
+#include <freax/gfp.h>
+#include <freax/uio.h>
+#include <freax/hugetlb.h>
+#include <freax/page_idle.h>
+#include <freax/local_lock.h>
+#include <freax/buffer_head.h>
 
 #include "internal.h"
 

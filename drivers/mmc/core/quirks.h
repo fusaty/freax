@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/of.h>
-#include <linux/mmc/sdio_ids.h>
+#include <freax/of.h>
+#include <freax/mmc/sdio_ids.h>
 
 #include "card.h"
 

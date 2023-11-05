@@ -6,13 +6,13 @@
  * Copyright(C) General Electric Company 2015
  */
 
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <freax/bcd.h>
+#include <freax/bitops.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
 
 #define RX8010_SEC		0x10
 #define RX8010_MIN		0x11

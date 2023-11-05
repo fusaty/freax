@@ -11,9 +11,9 @@
 #ifndef _SS_SIDTAB_H_
 #define _SS_SIDTAB_H_
 
-#include <linux/spinlock_types.h>
-#include <linux/log2.h>
-#include <linux/hashtable.h>
+#include <freax/spinlock_types.h>
+#include <freax/log2.h>
+#include <freax/hashtable.h>
 
 #include "context.h"
 
@@ -21,7 +21,7 @@ struct sidtab_entry {
 	u32 sid;
 	u32 hash;
 	struct context context;
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 	struct sidtab_str_cache __rcu *cache;
 #endif
 	struct hlist_node list;
@@ -69,7 +69,7 @@ struct sidtab_convert_params {
 	struct sidtab *target;
 };
 
-#define SIDTAB_HASH_BITS CONFIG_SECURITY_SELINUX_SIDTAB_HASH_BITS
+#define SIDTAB_HASH_BITS CONFIG_SECURITY_SEfreax_SIDTAB_HASH_BITS
 #define SIDTAB_HASH_BUCKETS (1 << SIDTAB_HASH_BITS)
 
 struct sidtab {
@@ -88,7 +88,7 @@ struct sidtab {
 	bool frozen;
 	spinlock_t lock;
 
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 	/* SID -> context string cache */
 	u32 cache_free_slots;
 	struct list_head cache_lru_list;
@@ -134,7 +134,7 @@ void sidtab_destroy(struct sidtab *s);
 
 int sidtab_hash_stats(struct sidtab *sidtab, char *page);
 
-#if CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0
+#if CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0
 void sidtab_sid2str_put(struct sidtab *s, struct sidtab_entry *entry,
 			const char *str, u32 str_len);
 int sidtab_sid2str_get(struct sidtab *s, struct sidtab_entry *entry,
@@ -151,7 +151,7 @@ static inline int sidtab_sid2str_get(struct sidtab *s,
 {
 	return -ENOENT;
 }
-#endif /* CONFIG_SECURITY_SELINUX_SID2STR_CACHE_SIZE > 0 */
+#endif /* CONFIG_SECURITY_SEfreax_SID2STR_CACHE_SIZE > 0 */
 
 #endif	/* _SS_SIDTAB_H_ */
 

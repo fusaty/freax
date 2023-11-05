@@ -4,7 +4,7 @@
  * Copyright (C) 2008-2009 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/can/dev.h>
+#include <freax/can/dev.h>
 
 void can_sjw_set_default(struct can_bittiming *bt)
 {
@@ -44,7 +44,7 @@ int can_sjw_check(const struct net_device *dev, const struct can_bittiming *bt,
 /* Checks the validity of the specified bit-timing parameters prop_seg,
  * phase_seg1, phase_seg2 and sjw and tries to determine the bitrate
  * prescaler value brp. You can find more information in the header
- * file linux/can/netlink.h.
+ * file freax/can/netlink.h.
  */
 static int can_fixup_bittiming(const struct net_device *dev, struct can_bittiming *bt,
 			       const struct can_bittiming_const *btc,

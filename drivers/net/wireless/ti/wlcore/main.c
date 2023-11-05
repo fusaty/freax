@@ -6,14 +6,14 @@
  * Copyright (C) 2011-2013 Texas Instruments Inc.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
 
 #include "wlcore.h"
 #include "debug.h"

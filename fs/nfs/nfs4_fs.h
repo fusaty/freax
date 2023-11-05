@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/nfs/nfs4_fs.h
+ * freax/fs/nfs/nfs4_fs.h
  *
  * Copyright (C) 2005 Trond Myklebust
  *
  * NFSv4-specific filesystem definitions and declarations
  */
 
-#ifndef __LINUX_FS_NFS_NFS4_FS_H
-#define __LINUX_FS_NFS_NFS4_FS_H
+#ifndef __freax_FS_NFS_NFS4_FS_H
+#define __freax_FS_NFS_NFS4_FS_H
 
 #if defined(CONFIG_NFS_V4_2)
 #define NFS4_MAX_MINOR_VERSION 2
@@ -22,8 +22,8 @@
 
 #define NFS4_MAX_LOOP_ON_RECOVER (10)
 
-#include <linux/seqlock.h>
-#include <linux/filelock.h>
+#include <freax/seqlock.h>
+#include <freax/filelock.h>
 
 struct idmap;
 
@@ -671,4 +671,4 @@ static inline void nfs4_xattr_cache_zap(struct inode *inode)
 
 
 #endif /* CONFIG_NFS_V4 */
-#endif /* __LINUX_FS_NFS_NFS4_FS.H */
+#endif /* __freax_FS_NFS_NFS4_FS.H */

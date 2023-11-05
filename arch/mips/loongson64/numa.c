@@ -6,20 +6,20 @@
  *          Huacai Chen, chenhc@lemote.com
  *          Xiaofu Meng, Shuangshuang Zhang
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/swap.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/highmem.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/export.h>
+#include <freax/nodemask.h>
+#include <freax/swap.h>
+#include <freax/memblock.h>
+#include <freax/pfn.h>
+#include <freax/highmem.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/sections.h>
-#include <linux/irq.h>
+#include <freax/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/mc146818-time.h>
 #include <asm/time.h>

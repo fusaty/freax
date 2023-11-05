@@ -3,8 +3,8 @@
 # Makefile for bootable kernel images
 #
 
-targets += vmlinux.bin
+targets += vmfreax.bin
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmfreax.bin := -O binary
+$(obj)/vmfreax.bin: vmfreax FORCE
 	$(call if_changed,objcopy)

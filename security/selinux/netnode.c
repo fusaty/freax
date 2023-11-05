@@ -2,7 +2,7 @@
 /*
  * Network node table
  *
- * SELinux must keep a mapping of network nodes to labels/SIDs.  This
+ * SEfreax must keep a mapping of network nodes to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead since most of these queries happen on
  * a per-packet basis.
@@ -11,22 +11,22 @@
  *
  * This code is heavily based on the "netif" concept originally developed by
  * James Morris <jmorris@redhat.com>
- *   (see security/selinux/netif.c for more information)
+ *   (see security/sefreax/netif.c for more information)
  */
 
 /*
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2007
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 
@@ -228,7 +228,7 @@ static int sel_netnode_sid_slow(void *addr, u16 family, u32 *sid)
 
 	spin_unlock_bh(&sel_netnode_lock);
 	if (unlikely(ret))
-		pr_warn("SELinux: failure in %s(), unable to determine network node label\n",
+		pr_warn("SEfreax: failure in %s(), unable to determine network node label\n",
 			__func__);
 	return ret;
 }
@@ -291,7 +291,7 @@ static __init int sel_netnode_init(void)
 {
 	int iter;
 
-	if (!selinux_enabled_boot)
+	if (!sefreax_enabled_boot)
 		return 0;
 
 	for (iter = 0; iter < SEL_NETNODE_HASH_SIZE; iter++) {

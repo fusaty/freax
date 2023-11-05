@@ -5,11 +5,11 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/string.h>
+#include <freax/videodev2.h>
 
 #include "vivid-vbi-gen.h"
 

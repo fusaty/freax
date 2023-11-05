@@ -8,7 +8,7 @@
  * Copyright (C) 2000-2001 Deep Blue Solutions Ltd
  *
  * Contributors to the old driver include:
- * Russell King <linux@armlinux.org.uk>
+ * Russell King <freax@armfreax.org.uk>
  * David A. Rusling <david.rusling@linaro.org> (uHAL, ARM Firmware suite)
  * Rob Herring <robh@kernel.org>
  * Liviu Dudau <Liviu.Dudau@arm.com>
@@ -16,20 +16,20 @@
  * Arnd Bergmann <arnd@arndb.de>
  * Bjorn Helgaas <bhelgaas@google.com>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_pci.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/irq.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/clk.h>
 
 #include "../pci.h"
 

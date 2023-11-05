@@ -3,7 +3,7 @@
  *  sata_sis.c - Silicon Integrated Systems SATA
  *
  *  Maintained by:  Uwe Koziolek
- *  		    Please ALWAYS copy linux-ide@vger.kernel.org
+ *  		    Please ALWAYS copy freax-ide@vger.kernel.org
  *		    on emails.
  *
  *  Copyright 2004 Uwe Koziolek
@@ -14,15 +14,15 @@
  *  Hardware documentation available under NDA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 #include "sis.h"
 
 #define DRV_NAME	"sata_sis"

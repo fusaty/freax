@@ -11,10 +11,10 @@
  * for a description of the cache backend interface declared here.
  */
 
-#ifndef _LINUX_FSCACHE_CACHE_H
-#define _LINUX_FSCACHE_CACHE_H
+#ifndef _freax_FSCACHE_CACHE_H
+#define _freax_FSCACHE_CACHE_H
 
-#include <linux/fscache.h>
+#include <freax/fscache.h>
 
 enum fscache_cache_trace;
 enum fscache_cookie_trace;
@@ -202,4 +202,4 @@ extern atomic_t fscache_n_culled;
 #define fscache_count_culled() do {} while(0)
 #endif
 
-#endif /* _LINUX_FSCACHE_CACHE_H */
+#endif /* _freax_FSCACHE_CACHE_H */

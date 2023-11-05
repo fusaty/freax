@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *	pci.h
  *
@@ -15,10 +15,10 @@
  *	PCI System Design Guide
  */
 
-#ifndef _UAPILINUX_PCI_H
-#define _UAPILINUX_PCI_H
+#ifndef _UAPIfreax_PCI_H
+#define _UAPIfreax_PCI_H
 
-#include <linux/pci_regs.h>	/* The pci register defines */
+#include <freax/pci_regs.h>	/* The pci register defines */
 
 /*
  * The PCI interface treats multi-function devices as independent
@@ -39,4 +39,4 @@
 #define PCIIOC_MMAP_IS_MEM	(PCIIOC_BASE | 0x02)	/* Set mmap state to MEM space. */
 #define PCIIOC_WRITE_COMBINE	(PCIIOC_BASE | 0x03)	/* Enable/disable write-combining. */
 
-#endif /* _UAPILINUX_PCI_H */
+#endif /* _UAPIfreax_PCI_H */

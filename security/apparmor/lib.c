@@ -8,11 +8,11 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <freax/ctype.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/vmalloc.h>
 
 #include "include/audit.h"
 #include "include/apparmor.h"

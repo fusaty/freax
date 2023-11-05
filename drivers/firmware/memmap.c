@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/firmware/memmap.c
- *  Copyright (C) 2008 SUSE LINUX Products GmbH
+ * freax/drivers/firmware/memmap.c
+ *  Copyright (C) 2008 SUSE freax Products GmbH
  *  by Bernhard Walle <bernhard.walle@gmx.de>
  */
 
-#include <linux/string.h>
-#include <linux/firmware-map.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/string.h>
+#include <freax/firmware-map.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 /*
  * Data types ------------------------------------------------------------------

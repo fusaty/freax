@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright 2020-2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  */
 
-#ifndef _UAPI_LINUX_NITRO_ENCLAVES_H_
-#define _UAPI_LINUX_NITRO_ENCLAVES_H_
+#ifndef _UAPI_freax_NITRO_ENCLAVES_H_
+#define _UAPI_freax_NITRO_ENCLAVES_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * DOC: Nitro Enclaves (NE) Kernel Driver Interface
@@ -356,4 +356,4 @@ struct ne_enclave_start_info {
 	__u64	enclave_cid;
 };
 
-#endif /* _UAPI_LINUX_NITRO_ENCLAVES_H_ */
+#endif /* _UAPI_freax_NITRO_ENCLAVES_H_ */

@@ -20,14 +20,14 @@
  * it is not needed for IPCOMP and keeps the code simpler.  It can be
  * implemented if someone wants it.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/zlib.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/net.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/zlib.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/net.h>
 #include <crypto/internal/scompress.h>
 
 #define DEFLATE_DEF_LEVEL		Z_DEFAULT_COMPRESSION

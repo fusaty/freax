@@ -11,12 +11,12 @@
  * memmap.
  */
 
-#include <linux/kernel.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/types.h>
-#include <linux/sort.h>
+#include <freax/kernel.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/types.h>
+#include <freax/sort.h>
 #include <asm/e820/api.h>
 #include <asm/efi.h>
 

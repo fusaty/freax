@@ -5,12 +5,12 @@
  * Copyright (C) 2020, Linaro Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
+#include <freax/ctype.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/smem.h>
 
 #define SMEM_AARM_PARTITION_TABLE	9
 #define SMEM_APPS			0

@@ -20,12 +20,12 @@
  *   Authors: Maxim Locktyukhin <maxim.locktyukhin@intel.com>
  *            Ronen Zohar <ronen.zohar@intel.com>
  *
- * Converted to AT&T syntax and adapted for inclusion in the Linux kernel:
+ * Converted to AT&T syntax and adapted for inclusion in the freax kernel:
  *   Author: Mathias Krause <minipli@googlemail.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 
 #define CTX	%rdi	// arg1
 #define BUF	%rsi	// arg2

@@ -7,7 +7,7 @@
 #define __ARM64_KERNEL_IMAGE_VARS_H
 
 #ifndef LINKER_SCRIPT
-#error This file should only be included in vmlinux.lds.S
+#error This file should only be included in vmfreax.lds.S
 #endif
 
 PROVIDE(__efistub_primary_entry		= primary_entry);

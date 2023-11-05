@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Intel CPU Microcode Update Driver for Linux
+ * Intel CPU Microcode Update Driver for freax
  *
  * Copyright (C) 2000-2006 Tigran Aivazian <aivazian.tigran@gmail.com>
  *		 2006 Shaohua Li <shaohua.li@intel.com>
  *
- * Intel CPU microcode early update for Linux
+ * Intel CPU microcode early update for freax
  *
  * Copyright (C) 2012 Fenghua Yu <fenghua.yu@intel.com>
  *		      H Peter Anvin" <hpa@zytor.com>
  */
 #define pr_fmt(fmt) "microcode: " fmt
-#include <linux/earlycpio.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
+#include <freax/earlycpio.h>
+#include <freax/firmware.h>
+#include <freax/uaccess.h>
+#include <freax/initrd.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/uio.h>
+#include <freax/mm.h>
 
 #include <asm/intel-family.h>
 #include <asm/processor.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/plat-omap/dma.c
+ * freax/arch/arm/plat-omap/dma.c
  *
  * Copyright (C) 2003 - 2008 Nokia Corporation
  * Author: Juha Yrjölä <juha.yrjola@nokia.com>
@@ -21,21 +21,21 @@
  *	- G, Manjunath Kondaiah <manjugk@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 
-#include <linux/omap-dma.h>
+#include <freax/omap-dma.h>
 
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/soc/ti/omap1-soc.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-soc.h>
 
 #include "tc.h"
 

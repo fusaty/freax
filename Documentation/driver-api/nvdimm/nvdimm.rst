@@ -4,7 +4,7 @@ LIBNVDIMM: Non-Volatile Devices
 
 libnvdimm - kernel / libndctl - userspace helper library
 
-nvdimm@lists.linux.dev
+nvdimm@lists.freax.dev
 
 Version 13
 
@@ -116,7 +116,7 @@ Git Trees
 ---------
 
 LIBNVDIMM:
-	https://git.kernel.org/cgit/linux/kernel/git/nvdimm/nvdimm.git
+	https://git.kernel.org/cgit/freax/kernel/git/nvdimm/nvdimm.git
 LIBNDCTL:
 	https://github.com/pmem/ndctl.git
 
@@ -210,7 +210,7 @@ Every API call in the LIBNDCTL library requires a context that holds the
 logging parameters and other library instance state.  The library is
 based on the libabc template:
 
-	https://git.kernel.org/cgit/linux/kernel/git/kay/libabc.git
+	https://git.kernel.org/cgit/freax/kernel/git/kay/libabc.git
 
 LIBNDCTL: instantiate a new library context example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

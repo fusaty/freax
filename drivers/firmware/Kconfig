@@ -175,7 +175,7 @@ config INTEL_STRATIX10_RSU
 	  risk of corrupting the bitstream storage and bricking the system.
 
 	  Enable RSU support if you are using an Intel SoC FPGA with the RSU
-	  feature enabled and you want Linux user space control.
+	  feature enabled and you want freax user space control.
 
 	  Say Y here if you want Intel RSU support.
 
@@ -184,7 +184,7 @@ config MTK_ADSP_IPC
 	depends on MTK_ADSP_MBOX
 	help
 	  Say yes here to add support for the MediaTek ADSP IPC
-	  between host AP (Linux) and the firmware running on ADSP.
+	  between host AP (freax) and the firmware running on ADSP.
 	  ADSP exists on some mtk processors.
 	  Client might use shared memory to exchange information with ADSP.
 
@@ -246,7 +246,7 @@ config TRUSTED_FOUNDATIONS
 
 	  This option allows the kernel to invoke the secure monitor whenever
 	  required on devices using Trusted Foundations. See the functions and
-	  comments in linux/firmware/trusted_foundations.h or the device tree
+	  comments in freax/firmware/trusted_foundations.h or the device tree
 	  bindings for "tlm,trusted-foundations" for details on how to use it.
 
 	  Choose N if you don't know what this is about.

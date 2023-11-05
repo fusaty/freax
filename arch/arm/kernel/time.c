@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/time.c
+ *  freax/arch/arm/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Modifications for ARM (C) 1994-2001 Russell King
@@ -8,22 +8,22 @@
  *  This file contains the ARM-specific time handling details:
  *  reading the RTC at bootup, etc...
  */
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of_clk.h>
-#include <linux/profile.h>
-#include <linux/sched.h>
-#include <linux/sched_clock.h>
-#include <linux/smp.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/timer.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/of_clk.h>
+#include <freax/profile.h>
+#include <freax/sched.h>
+#include <freax/sched_clock.h>
+#include <freax/smp.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/timer.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>

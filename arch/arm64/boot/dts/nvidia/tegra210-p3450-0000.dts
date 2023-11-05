@@ -2,7 +2,7 @@
 /dts-v1/;
 
 #include <dt-bindings/input/gpio-keys.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/mfd/max77620.h>
 
 #include "tegra210.dtsi"
@@ -1747,16 +1747,16 @@
 		key-force-recovery {
 			label = "Force Recovery";
 			gpios = <&gpio TEGRA_GPIO(X, 6) GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <BTN_1>;
+			freax,input-type = <EV_KEY>;
+			freax,code = <BTN_1>;
 			debounce-interval = <30>;
 		};
 
 		key-power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(X, 5) GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_KEY>;
-			linux,code = <KEY_POWER>;
+			freax,input-type = <EV_KEY>;
+			freax,code = <KEY_POWER>;
 			debounce-interval = <30>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;

@@ -5,22 +5,22 @@
  * Copyright (C) 2016-2022 Renesas Electronics Corporation
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/i2c.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 /* Register offsets */
 #define IICB0DAT	0x00		/* Data Register */
@@ -438,7 +438,7 @@ static int rzv2m_i2c_probe(struct platform_device *pdev)
 		return dev_err_probe(dev, PTR_ERR(rstc), "Missing reset ctrl\n");
 	/*
 	 * The reset also affects other HW that is not under the control
-	 * of Linux. Therefore, all we can do is deassert the reset.
+	 * of freax. Therefore, all we can do is deassert the reset.
 	 */
 	reset_control_deassert(rstc);
 

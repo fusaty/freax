@@ -5,19 +5,19 @@
  * Copyright (C) 1999, 2000 Jakub Jelinek (jakub@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/errno.h>
-#include <linux/iommu-helper.h>
-#include <linux/bitmap.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-map-ops.h>
+#include <freax/errno.h>
+#include <freax/iommu-helper.h>
+#include <freax/bitmap.h>
 #include <asm/iommu-common.h>
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <freax/pci.h>
 #endif
 
 #include <asm/iommu.h>

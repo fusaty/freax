@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#ifndef _LINUX_BPF_VERIFIER_H
-#define _LINUX_BPF_VERIFIER_H 1
+#ifndef _freax_BPF_VERIFIER_H
+#define _freax_BPF_VERIFIER_H 1
 
-#include <linux/bpf.h> /* for enum bpf_reg_type */
-#include <linux/btf.h> /* for struct btf and btf_id() */
-#include <linux/filter.h> /* for MAX_BPF_STACK */
-#include <linux/tnum.h>
+#include <freax/bpf.h> /* for enum bpf_reg_type */
+#include <freax/btf.h> /* for struct btf and btf_id() */
+#include <freax/filter.h> /* for MAX_BPF_STACK */
+#include <freax/tnum.h>
 
 /* Maximum variable offset umax_value permitted when resolving memory accesses.
  * In practice this is far bigger than any realistic pointer offset; this limit
@@ -778,4 +778,4 @@ static inline bool bpf_type_has_unsafe_modifiers(u32 type)
 	return type_flag(type) & ~BPF_REG_TRUSTED_MODIFIERS;
 }
 
-#endif /* _LINUX_BPF_VERIFIER_H */
+#endif /* _freax_BPF_VERIFIER_H */

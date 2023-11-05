@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/fcntl.h>
-#include <linux/memfd.h>
+#include <freax/fcntl.h>
+#include <freax/memfd.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 

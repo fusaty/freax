@@ -8,12 +8,12 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_MACHINE_H
-#define __LINUX_PINCTRL_MACHINE_H
+#ifndef __freax_PINCTRL_MACHINE_H
+#define __freax_PINCTRL_MACHINE_H
 
-#include <linux/array_size.h>
+#include <freax/array_size.h>
 
-#include <linux/pinctrl/pinctrl-state.h>
+#include <freax/pinctrl/pinctrl-state.h>
 
 enum pinctrl_map_type {
 	PIN_MAP_TYPE_INVALID,

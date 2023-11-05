@@ -2,9 +2,9 @@
 #ifndef __ASM_ARCH_DMA_H
 #define __ASM_ARCH_DMA_H
 
-#include <linux/types.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <freax/types.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
 
 /*
  * M2P channels.

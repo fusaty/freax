@@ -6,20 +6,20 @@
  * Copyright (C) 1996 Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
-#include <linux/spinlock.h>
-#include <linux/bitrev.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/crc32.h>
+#include <freax/spinlock.h>
+#include <freax/bitrev.h>
+#include <freax/slab.h>
+#include <freax/pgtable.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/macio.h>

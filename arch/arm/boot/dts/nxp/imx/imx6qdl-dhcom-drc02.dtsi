@@ -89,7 +89,7 @@
 	 * node above.
 	 */
 	/delete-property/ uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	pinctrl-0 = <&pinctrl_uart5_core &pinctrl_dhcom_p &pinctrl_dhcom_q>;
 	pinctrl-names = "default";
 	rts-gpios = <&gpio7 13 GPIO_ACTIVE_HIGH>; /* GPIO P */

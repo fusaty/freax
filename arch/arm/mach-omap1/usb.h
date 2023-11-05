@@ -3,8 +3,8 @@
  * fixme correct answer depends on hmc_mode,
  * as does (on omap1) any nonzero value for config->otg port number
  */
-#include <linux/platform_data/usb-omap1.h>
-#include <linux/soc/ti/omap1-usb.h>
+#include <freax/platform_data/usb-omap1.h>
+#include <freax/soc/ti/omap1-usb.h>
 
 #if IS_ENABLED(CONFIG_USB_OMAP)
 #define	is_usb0_device(config)	1

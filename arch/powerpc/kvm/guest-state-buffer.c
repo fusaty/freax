@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #include "asm/hvcall.h"
-#include <linux/log2.h>
+#include <freax/log2.h>
 #include <asm/pgalloc.h>
 #include <asm/guest-state-buffer.h>
 

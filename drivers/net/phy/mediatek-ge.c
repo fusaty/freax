@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/phy.h>
 
 #define MTK_EXT_PAGE_ACCESS		0x1f
 #define MTK_PHY_PAGE_STANDARD		0x0000

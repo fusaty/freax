@@ -28,7 +28,7 @@ Supported chips:
 
 	Datasheet: Available from http://www.intel.com/design/literature.htm
 
-Author: Jae Hyun Yoo <jae.hyun.yoo@linux.intel.com>
+Author: Jae Hyun Yoo <jae.hyun.yoo@freax.intel.com>
 
 Description
 -----------

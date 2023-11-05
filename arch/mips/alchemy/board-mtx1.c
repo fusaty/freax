@@ -5,17 +5,17 @@
  * Copyright (C) 2007-2009, Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/physmap.h>
 #include <mtd/mtd-abi.h>
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>

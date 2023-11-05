@@ -5,14 +5,14 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/proc_fs.h>
-#include <linux/proc_ns.h>
-#include <linux/refcount.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/binfmts.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
+#include <freax/proc_fs.h>
+#include <freax/proc_ns.h>
+#include <freax/refcount.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/binfmts.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/task.h>
 
 struct ctl_table_header;
 struct mempolicy;

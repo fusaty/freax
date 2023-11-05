@@ -125,7 +125,7 @@
 			max-brightness = <248>;
 			default-state = "off";
 			pwms = <&pwm3 0 500000>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -515,7 +515,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart1>;
 	rts-gpios = <&gpio7 8 GPIO_ACTIVE_HIGH>;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	rs485-rx-during-tx;
 	status = "okay";
 };

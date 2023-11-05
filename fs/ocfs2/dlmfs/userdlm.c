@@ -11,13 +11,13 @@
  * Copyright (C) 2003, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
+#include <freax/signal.h>
+#include <freax/sched/signal.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/crc32.h>
 
 #include "../ocfs2_lockingver.h"
 #include "../stackglue.h"

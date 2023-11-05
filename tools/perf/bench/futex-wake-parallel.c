@@ -8,7 +8,7 @@
  * it can be used to measure futex_wake() changes.
  */
 #include "bench.h"
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include "../util/debug.h"
 #include "../util/mutex.h"
 
@@ -26,8 +26,8 @@ int bench_futex_wake_parallel(int argc __maybe_unused, const char **argv __maybe
 #include <signal.h>
 #include "../util/stat.h"
 #include <subcmd/parse-options.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
+#include <freax/kernel.h>
+#include <freax/time64.h>
 #include <errno.h>
 #include "futex.h"
 #include <perf/cpumap.h>

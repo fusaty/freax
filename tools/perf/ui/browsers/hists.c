@@ -5,11 +5,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/rbtree.h>
-#include <linux/string.h>
+#include <freax/rbtree.h>
+#include <freax/string.h>
 #include <sys/ttydefaults.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 
 #include "../../util/debug.h"
 #include "../../util/dso.h"
@@ -43,7 +43,7 @@
 #include "units.h"
 #include "time-utils.h"
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 extern void hist_browser__init_hpp(void);
 
@@ -3134,7 +3134,7 @@ do_hotkey:		 // key came straight from options ui__popup_menu()
 		case 'k':
 			if (browser->selection != NULL)
 				hists_browser__zoom_map(browser,
-					      maps__machine(browser->selection->maps)->vmlinux_map);
+					      maps__machine(browser->selection->maps)->vmfreax_map);
 			continue;
 		case 'V':
 			verbose = (verbose + 1) % 4;

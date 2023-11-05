@@ -8,10 +8,10 @@
 #ifndef __USB_MON_H
 #define __USB_MON_H
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kref.h>
-/* #include <linux/usb.h> */	/* We use struct pointers only in this header */
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/kref.h>
+/* #include <freax/usb.h> */	/* We use struct pointers only in this header */
 
 #define TAG "usbmon"
 

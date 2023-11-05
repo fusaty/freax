@@ -8,11 +8,11 @@
  * Authors: Peter Chen <peter.chen@nxp.com>
  *          Pawel Laszczak <pawell@cadence.com>
  */
-#ifndef __LINUX_CDNS3_CORE_H
-#define __LINUX_CDNS3_CORE_H
+#ifndef __freax_CDNS3_CORE_H
+#define __freax_CDNS3_CORE_H
 
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/role.h>
 
 struct cdns;
 
@@ -135,4 +135,4 @@ static inline void cdns_set_active(struct cdns *cdns, u8 set_active) { }
 static inline int cdns_suspend(struct cdns *cdns)
 { return 0; }
 #endif /* CONFIG_PM_SLEEP */
-#endif /* __LINUX_CDNS3_CORE_H */
+#endif /* __freax_CDNS3_CORE_H */

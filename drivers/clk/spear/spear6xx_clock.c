@@ -6,10 +6,10 @@
  * Viresh Kumar <vireshk@kernel.org>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk/spear.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <freax/clkdev.h>
+#include <freax/clk/spear.h>
+#include <freax/io.h>
+#include <freax/spinlock_types.h>
 #include "clk.h"
 
 static DEFINE_SPINLOCK(_lock);

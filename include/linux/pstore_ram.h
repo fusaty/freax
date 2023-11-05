@@ -5,10 +5,10 @@
  * Copyright (C) 2011 Google, Inc.
  */
 
-#ifndef __LINUX_PSTORE_RAM_H__
-#define __LINUX_PSTORE_RAM_H__
+#ifndef __freax_PSTORE_RAM_H__
+#define __freax_PSTORE_RAM_H__
 
-#include <linux/pstore.h>
+#include <freax/pstore.h>
 
 struct persistent_ram_ecc_info {
 	int block_size;

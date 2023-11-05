@@ -6,13 +6,13 @@
  * FIXME: LOCKING !!!
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
 
 #include <asm/pmac_pfunc.h>
 

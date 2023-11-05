@@ -27,14 +27,14 @@
 #define BX_NUM		4
 
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>
@@ -43,7 +43,7 @@
 #include <sound/pcm_params.h>
 #include <sound/asoundef.h>
 #include <sound/initval.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include "echoaudio.h"
 
 MODULE_FIRMWARE("ea/loader_dsp.fw");

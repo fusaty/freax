@@ -5,7 +5,7 @@
  *
  *  adapted from:
  *      sd.c Copyright (C) 1992 Drew Eckhardt
- *      Linux scsi disk driver by
+ *      freax scsi disk driver by
  *              Drew Eckhardt <drew@colorado.edu>
  *
  *	Modified by Eric Youngdale ericy@andante.org to
@@ -33,24 +33,24 @@
  *	check resource allocation in sr_init and some cleanups
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/compat.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/cdrom.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/blk-pm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/bio.h>
+#include <freax/compat.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/cdrom.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/major.h>
+#include <freax/blkdev.h>
+#include <freax/blk-pm.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/uaccess.h>
 
 #include <asm/unaligned.h>
 

@@ -13,18 +13,18 @@
  *   Steven J. Hill <steven.hill@cavium.com>
  *   Jan Glauber <jglauber@cavium.com>
  */
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/scatterlist.h>
-#include <linux/time.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/scatterlist.h>
+#include <freax/time.h>
 
 #include "cavium.h"
 

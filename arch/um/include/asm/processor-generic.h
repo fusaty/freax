@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
 #ifndef __UM_PROCESSOR_GENERIC_H
@@ -13,7 +13,7 @@ struct task_struct;
 #include <asm/ptrace.h>
 #include <sysdep/archsetjmp.h>
 
-#include <linux/prefetch.h>
+#include <freax/prefetch.h>
 
 #include <asm/cpufeatures.h>
 

@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIMERQUEUE_H
-#define _LINUX_TIMERQUEUE_H
+#ifndef _freax_TIMERQUEUE_H
+#define _freax_TIMERQUEUE_H
 
-#include <linux/rbtree.h>
-#include <linux/ktime.h>
+#include <freax/rbtree.h>
+#include <freax/ktime.h>
 
 
 struct timerqueue_node {
@@ -57,4 +57,4 @@ static inline void timerqueue_init_head(struct timerqueue_head *head)
 {
 	head->rb_root = RB_ROOT_CACHED;
 }
-#endif /* _LINUX_TIMERQUEUE_H */
+#endif /* _freax_TIMERQUEUE_H */

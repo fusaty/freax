@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  * Copyright (C) 2021 Intel Corporation.
  */

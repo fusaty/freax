@@ -7,9 +7,9 @@
  *
  */
 
-#include <linux/tty.h>
-#include <linux/sysrq.h>
-#include <linux/workqueue.h>
+#include <freax/tty.h>
+#include <freax/sysrq.h>
+#include <freax/workqueue.h>
 
 extern unsigned int
 ctrlchar_handle(const unsigned char *buf, int len, struct tty_struct *tty);

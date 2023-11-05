@@ -3,13 +3,13 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/pid.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/pid.h>
 #include <asm/cputable.h>
 #include <misc/cxl-base.h>
 

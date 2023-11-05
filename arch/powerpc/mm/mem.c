@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -12,10 +12,10 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/suspend.h>
-#include <linux/dma-direct.h>
+#include <freax/memblock.h>
+#include <freax/highmem.h>
+#include <freax/suspend.h>
+#include <freax/dma-direct.h>
 
 #include <asm/swiotlb.h>
 #include <asm/machdep.h>

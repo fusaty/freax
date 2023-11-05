@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/gfp.h>
-#include <linux/mpage.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/uio.h>
-#include <linux/fiemap.h>
+#include <freax/buffer_head.h>
+#include <freax/gfp.h>
+#include <freax/mpage.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
+#include <freax/uio.h>
+#include <freax/fiemap.h>
 #include "nilfs.h"
 #include "btnode.h"
 #include "segment.h"

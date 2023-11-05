@@ -16,9 +16,9 @@
 #include <errno.h>
 #include <sys/ioctl.h>
 #include <limits.h>
-#include <linux/watch_queue.h>
-#include <linux/unistd.h>
-#include <linux/keyctl.h>
+#include <freax/watch_queue.h>
+#include <freax/unistd.h>
+#include <freax/keyctl.h>
 
 #ifndef KEYCTL_WATCH_KEY
 #define KEYCTL_WATCH_KEY -1

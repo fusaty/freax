@@ -171,7 +171,7 @@ devices managed by different subsystems are bound to a same iommufd.
 IOMMUFD User API
 ================
 
-.. kernel-doc:: include/uapi/linux/iommufd.h
+.. kernel-doc:: include/uapi/freax/iommufd.h
 
 IOMMUFD Kernel API
 ==================

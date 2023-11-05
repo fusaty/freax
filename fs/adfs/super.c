@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/adfs/super.c
+ *  freax/fs/adfs/super.c
  *
  *  Copyright (C) 1997-1999 Russell King
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parser.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/user_namespace.h>
-#include <linux/blkdev.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/parser.h>
+#include <freax/mount.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/statfs.h>
+#include <freax/user_namespace.h>
+#include <freax/blkdev.h>
 #include "adfs.h"
 #include "dir_f.h"
 #include "dir_fplus.h"

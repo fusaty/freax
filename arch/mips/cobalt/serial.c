@@ -2,13 +2,13 @@
 /*
  *  Registration of Cobalt UART platform device.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@freax-mips.org>
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/serial_8250.h>
 
 #include <cobalt.h>
 #include <irq.h>

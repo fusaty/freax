@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0-only OR MIT */
 /*
  * Apple RTKit IPC library
- * Copyright (C) The Asahi Linux Contributors
+ * Copyright (C) The Asahi freax Contributors
  */
 
 #ifndef _APPLE_RTKIT_INTERAL_H
 #define _APPLE_RTKIT_INTERAL_H
 
-#include <linux/apple-mailbox.h>
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/soc/apple/rtkit.h>
-#include <linux/workqueue.h>
+#include <freax/apple-mailbox.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/soc/apple/rtkit.h>
+#include <freax/workqueue.h>
 
 #define APPLE_RTKIT_APP_ENDPOINT_START 0x20
 #define APPLE_RTKIT_MAX_ENDPOINTS 0x100

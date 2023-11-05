@@ -4,7 +4,7 @@
  * Copyright (C) 2006 Thomas Maier <balagi@justmail.de>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See freax/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-RW, DVD+RW, DVD-RW and
  * DVD-RAM devices.
@@ -46,26 +46,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nospec.h>
-#include <linux/pktcdvd.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/backing-dev.h>
+#include <freax/compat.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nospec.h>
+#include <freax/pktcdvd.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

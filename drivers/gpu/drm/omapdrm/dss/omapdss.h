@@ -10,10 +10,10 @@
 #include <drm/drm_color_mgmt.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_mode.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/platform_data/omapdss.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/platform_data/omapdss.h>
 #include <video/videomode.h>
 
 #define DISPC_IRQ_FRAMEDONE		(1 << 0)

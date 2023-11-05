@@ -2,9 +2,9 @@
 #ifndef _ENTRY_H
 #define _ENTRY_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
 
 /* irq */
 void handler_irq(int irq, struct pt_regs *regs);

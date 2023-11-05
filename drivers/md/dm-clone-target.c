@@ -3,31 +3,31 @@
  * Copyright (C) 2019 Arrikto, Inc. All Rights Reserved.
  */
 
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/err.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/dm-io.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/blk_types.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/workqueue.h>
-#include <linux/backing-dev.h>
-#include <linux/device-mapper.h>
+#include <freax/mm.h>
+#include <freax/bio.h>
+#include <freax/err.h>
+#include <freax/hash.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/dm-io.h>
+#include <freax/mutex.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/blkdev.h>
+#include <freax/kdev_t.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
+#include <freax/mempool.h>
+#include <freax/spinlock.h>
+#include <freax/blk_types.h>
+#include <freax/dm-kcopyd.h>
+#include <freax/workqueue.h>
+#include <freax/backing-dev.h>
+#include <freax/device-mapper.h>
 
 #include "dm.h"
 #include "dm-clone-metadata.h"

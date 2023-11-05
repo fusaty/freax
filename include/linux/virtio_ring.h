@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VIRTIO_RING_H
-#define _LINUX_VIRTIO_RING_H
+#ifndef _freax_VIRTIO_RING_H
+#define _freax_VIRTIO_RING_H
 
 #include <asm/barrier.h>
-#include <linux/irqreturn.h>
-#include <uapi/linux/virtio_ring.h>
+#include <freax/irqreturn.h>
+#include <uapi/freax/virtio_ring.h>
 
 /*
  * Barriers in virtio are tricky.  Non-SMP virtio guests can't assume
@@ -120,4 +120,4 @@ void vring_transport_features(struct virtio_device *vdev);
 irqreturn_t vring_interrupt(int irq, void *_vq);
 
 u32 vring_notification_data(struct virtqueue *_vq);
-#endif /* _LINUX_VIRTIO_RING_H */
+#endif /* _freax_VIRTIO_RING_H */

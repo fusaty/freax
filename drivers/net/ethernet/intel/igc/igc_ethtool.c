@@ -2,9 +2,9 @@
 /* Copyright (c)  2018 Intel Corporation */
 
 /* ethtool support for igc */
-#include <linux/if_vlan.h>
-#include <linux/pm_runtime.h>
-#include <linux/mdio.h>
+#include <freax/if_vlan.h>
+#include <freax/pm_runtime.h>
+#include <freax/mdio.h>
 
 #include "igc.h"
 #include "igc_diag.h"

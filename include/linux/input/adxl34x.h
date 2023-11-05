@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/input/adxl34x.h
+ * include/freax/input/adxl34x.h
  *
  * Digital Accelerometer characteristics are highly application specific
  * and may vary between boards and models. The platform_data for the
@@ -9,10 +9,10 @@
  * Copyright 2009 Analog Devices Inc.
  */
 
-#ifndef __LINUX_INPUT_ADXL34X_H__
-#define __LINUX_INPUT_ADXL34X_H__
+#ifndef __freax_INPUT_ADXL34X_H__
+#define __freax_INPUT_ADXL34X_H__
 
-#include <linux/input.h>
+#include <freax/input.h>
 
 struct adxl34x_platform_data {
 

@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/vt8500lcdfb.c
+ *  freax/drivers/video/vt8500lcdfb.c
  *
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  *
  * Based on skeletonfb.c and pxafb.c
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/wait.h>
 #include <video/of_display_timing.h>
 
 #include "vt8500lcdfb.h"
 #include "wmt_ge_rops.h"
 
 #ifdef CONFIG_OF
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/memblock.h>
 #endif
 
 

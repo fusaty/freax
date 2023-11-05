@@ -68,8 +68,8 @@ RECORD OPTIONS
 REPORT OPTIONS
 --------------
 -k::
---vmlinux=<file>::
-	vmlinux pathname
+--vmfreax=<file>::
+	vmfreax pathname
 
 -v::
 --verbose::

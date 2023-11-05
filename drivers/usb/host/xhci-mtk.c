@@ -7,18 +7,18 @@
  *  Chunfeng Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <freax/dma-mapping.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
 
 #include "xhci.h"
 #include "xhci-mtk.h"

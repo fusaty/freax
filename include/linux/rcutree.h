@@ -5,17 +5,17 @@
  * Copyright IBM Corporation, 2008
  *
  * Author: Dipankar Sarma <dipankar@in.ibm.com>
- *	   Paul E. McKenney <paulmck@linux.ibm.com> Hierarchical algorithm
+ *	   Paul E. McKenney <paulmck@freax.ibm.com> Hierarchical algorithm
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@freax.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *	Documentation/RCU
  */
 
-#ifndef __LINUX_RCUTREE_H
-#define __LINUX_RCUTREE_H
+#ifndef __freax_RCUTREE_H
+#define __freax_RCUTREE_H
 
 void rcu_softirq_qs(void);
 void rcu_note_context_switch(bool preempt);
@@ -127,4 +127,4 @@ void rcutree_migrate_callbacks(int cpu);
 /* Called from hotplug and also arm64 early secondary boot failure */
 void rcutree_report_cpu_dead(void);
 
-#endif /* __LINUX_RCUTREE_H */
+#endif /* __freax_RCUTREE_H */

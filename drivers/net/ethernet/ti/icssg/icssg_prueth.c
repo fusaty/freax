@@ -6,27 +6,27 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/etherdevice.h>
-#include <linux/genalloc.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/property.h>
-#include <linux/remoteproc/pruss.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma/ti-cppi5.h>
+#include <freax/etherdevice.h>
+#include <freax/genalloc.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
+#include <freax/property.h>
+#include <freax/remoteproc/pruss.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
 
 #include "icssg_prueth.h"
 #include "icssg_mii_rt.h"

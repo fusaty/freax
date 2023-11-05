@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Copyright (C) 2023 Thomas Weißschuh <linux@weissschuh.net>
+ *  Copyright (C) 2023 Thomas Weißschuh <freax@weissschuh.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/hwmon.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/usb.h>
 
 #define DRIVER_NAME	"powerz"
 #define POWERZ_EP_CMD_OUT	0x01
@@ -271,5 +271,5 @@ static struct usb_driver powerz_driver = {
 module_usb_driver(powerz_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Thomas Weißschuh <linux@weissschuh.net>");
+MODULE_AUTHOR("Thomas Weißschuh <freax@weissschuh.net>");
 MODULE_DESCRIPTION("ChargerLAB POWER-Z USB-C tester");

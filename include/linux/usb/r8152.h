@@ -3,8 +3,8 @@
  *  Copyright (c) 2020 Realtek Semiconductor Corp. All rights reserved.
  */
 
-#ifndef	__LINUX_R8152_H
-#define __LINUX_R8152_H
+#ifndef	__freax_R8152_H
+#define __freax_R8152_H
 
 #define RTL8152_REQT_READ		0xc0
 #define RTL8152_REQT_WRITE		0x40
@@ -35,4 +35,4 @@
 extern u8 rtl8152_get_version(struct usb_interface *intf);
 #endif
 
-#endif /* __LINUX_R8152_H */
+#endif /* __freax_R8152_H */

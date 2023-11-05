@@ -12,10 +12,10 @@
  *  more details.
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/fb.h>
 #include <asm/types.h>
 #include <asm/io.h>
 #include "fb_draw.h"

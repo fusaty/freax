@@ -5,20 +5,20 @@
  * Copyright (C) 2014 Andreas Noever <andreas.noever@gmail.com>
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #ifndef THUNDERBOLT_H_
 #define THUNDERBOLT_H_
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pci.h>
+#include <freax/uuid.h>
+#include <freax/workqueue.h>
 
 enum tb_cfg_pkg_type {
 	TB_CFG_PKG_READ = 1,
@@ -67,7 +67,7 @@ enum tb_security_level {
  * @wq: Ordered workqueue for all domain specific work
  * @root_switch: Root switch of this domain
  * @cm_ops: Connection manager specific operations vector
- * @index: Linux assigned domain number
+ * @index: freax assigned domain number
  * @security_level: Current security level
  * @nboot_acl: Number of boot ACLs the domain supports
  * @privdata: Private connection manager specific data

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_WAIT_H
-#define _UAPI_LINUX_WAIT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_WAIT_H
+#define _UAPI_freax_WAIT_H
 
 #define WNOHANG		0x00000001
 #define WUNTRACED	0x00000002
@@ -20,4 +20,4 @@
 #define P_PIDFD		3
 
 
-#endif /* _UAPI_LINUX_WAIT_H */
+#endif /* _UAPI_freax_WAIT_H */

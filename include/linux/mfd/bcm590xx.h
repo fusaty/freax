@@ -6,12 +6,12 @@
  * Author: Matt Porter <mporter@linaro.org>
  */
 
-#ifndef __LINUX_MFD_BCM590XX_H
-#define __LINUX_MFD_BCM590XX_H
+#ifndef __freax_MFD_BCM590XX_H
+#define __freax_MFD_BCM590XX_H
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
 
 /* max register address */
 #define BCM590XX_MAX_REGISTER_PRI	0xe7
@@ -26,4 +26,4 @@ struct bcm590xx {
 	unsigned int id;
 };
 
-#endif /*  __LINUX_MFD_BCM590XX_H */
+#endif /*  __freax_MFD_BCM590XX_H */

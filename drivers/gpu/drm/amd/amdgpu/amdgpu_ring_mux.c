@@ -20,7 +20,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <drm/drm_print.h>
 
 #include "amdgpu_ring_mux.h"

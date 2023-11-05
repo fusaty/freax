@@ -7,9 +7,9 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL313.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "adxl313.h"
 

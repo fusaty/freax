@@ -102,12 +102,12 @@
  *    if the branch was converted.
  */
 
-#include <linux/limits.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/slab.h>
+#include <freax/limits.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/filter.h>
+#include <freax/bpf.h>
+#include <freax/slab.h>
 #include <asm/bitops.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu-features.h>

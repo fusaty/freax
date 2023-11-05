@@ -10,19 +10,19 @@
 #
 # Copyright (C) 1995-2001 by Russell King
 
-LDFLAGS_vmlinux	:=--no-undefined -X
+LDFLAGS_vmfreax	:=--no-undefined -X
 
 ifeq ($(CONFIG_RELOCATABLE), y)
 # Pass --no-apply-dynamic-relocs to restore pre-binutils-2.27 behaviour
 # for relative relocs, since this leads to better Image compression
 # with the relocation offsets always being zero.
-LDFLAGS_vmlinux		+= -shared -Bsymbolic -z notext \
+LDFLAGS_vmfreax		+= -shared -Bsymbolic -z notext \
 			$(call ld-option, --no-apply-dynamic-relocs)
 endif
 
 ifeq ($(CONFIG_ARM64_ERRATUM_843419),y)
   ifeq ($(CONFIG_ARM64_LD_HAS_FIX_ERRATUM_843419),y)
-LDFLAGS_vmlinux	+= --fix-cortex-a53-843419
+LDFLAGS_vmfreax	+= --fix-cortex-a53-843419
   endif
 endif
 
@@ -109,14 +109,14 @@ ifeq ($(CONFIG_CPU_BIG_ENDIAN), y)
 KBUILD_CPPFLAGS	+= -mbig-endian
 CHECKFLAGS	+= -D__AARCH64EB__
 # Prefer the baremetal ELF build target, but not all toolchains include
-# it so fall back to the standard linux version if needed.
-KBUILD_LDFLAGS	+= -EB $(call ld-option, -maarch64elfb, -maarch64linuxb -z norelro)
+# it so fall back to the standard freax version if needed.
+KBUILD_LDFLAGS	+= -EB $(call ld-option, -maarch64elfb, -maarch64freaxb -z norelro)
 UTS_MACHINE	:= aarch64_be
 else
 KBUILD_CPPFLAGS	+= -mlittle-endian
 CHECKFLAGS	+= -D__AARCH64EL__
-# Same as above, prefer ELF but fall back to linux target if needed.
-KBUILD_LDFLAGS	+= -EL $(call ld-option, -maarch64elf, -maarch64linux -z norelro)
+# Same as above, prefer ELF but fall back to freax target if needed.
+KBUILD_LDFLAGS	+= -EL $(call ld-option, -maarch64elf, -maarch64freax -z norelro)
 UTS_MACHINE	:= aarch64
 endif
 
@@ -159,7 +159,7 @@ endif
 all:	$(notdir $(KBUILD_IMAGE))
 
 
-Image vmlinuz.efi: vmlinux
+Image vmlinuz.efi: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 Image.%: Image

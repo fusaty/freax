@@ -41,14 +41,14 @@
 			label = "VOL_UP";
 			gpios = <&gpio4 21 GPIO_ACTIVE_LOW>;
 			wakeup-source;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		button-2 {
 			label = "VOL_DOWN";
 			gpios = <&gpio4 22 GPIO_ACTIVE_LOW>;
 			wakeup-source;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 
 		button-3 {
@@ -57,7 +57,7 @@
 			interrupt-parent = <&gpio3>;
 			interrupts = <8 IRQ_TYPE_LEVEL_LOW>;
 			wakeup-source;
-			linux,code = <KEY_PHONE>;
+			freax,code = <KEY_PHONE>;
 		};
 	};
 

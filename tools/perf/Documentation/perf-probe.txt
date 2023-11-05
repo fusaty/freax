@@ -34,10 +34,10 @@ and C local variables) with debuginfo.
 OPTIONS
 -------
 -k::
---vmlinux=PATH::
-	Specify vmlinux path which has debuginfo (Dwarf binary).
+--vmfreax=PATH::
+	Specify vmfreax path which has debuginfo (Dwarf binary).
 	Only when using this with --definition, you can give an offline
-	vmlinux file.
+	vmfreax file.
 
 -m::
 --module=MODNAME|PATH::
@@ -305,7 +305,7 @@ Since perf probe depends on ftrace (tracefs) and kallsyms (/proc/kallsyms), you 
 
  - /proc/sys/kernel/kptr_restrict = 2 (restrict all users) also prevents perf probe to retrieve the important information from kallsyms. You also need to set to 1 (restrict non CAP_SYSLOG users) for the above commands. Since the user-space probe doesn't need to access kallsyms, this is only for probing the kernel function (kprobes).
 
- - Since the perf probe commands read the vmlinux (for kernel) and/or the debuginfo file (including user-space application), you need to ensure that you can read those files.
+ - Since the perf probe commands read the vmfreax (for kernel) and/or the debuginfo file (including user-space application), you need to ensure that you can read those files.
 
 
 SEE ALSO

@@ -14,10 +14,10 @@
  * others and b) it can be enabled simply by using MAX17042 driver.
  */
 
-#ifndef __LINUX_MFD_MAX8997_H
-#define __LINUX_MFD_MAX8997_H
+#ifndef __freax_MFD_MAX8997_H
+#define __freax_MFD_MAX8997_H
 
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 
 /* MAX8997/8966 regulator IDs */
 enum max8997_regulators {
@@ -204,4 +204,4 @@ struct max8997_platform_data {
 	struct max8997_led_platform_data *led_pdata;
 };
 
-#endif /* __LINUX_MFD_MAX8997_H */
+#endif /* __freax_MFD_MAX8997_H */

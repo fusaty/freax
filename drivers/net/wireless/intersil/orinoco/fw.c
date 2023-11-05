@@ -2,11 +2,11 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
+#include <freax/device.h>
+#include <freax/module.h>
 
 #include "hermes.h"
 #include "hermes_dld.h"

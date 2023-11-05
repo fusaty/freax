@@ -3,18 +3,18 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #define DEBOUNCE_TIME				30
 #define REPEAT_INTERVAL				60
@@ -122,9 +122,9 @@ static int imx_sc_key_probe(struct platform_device *pdev)
 	if (error)
 		return error;
 
-	if (device_property_read_u32(&pdev->dev, "linux,keycodes",
+	if (device_property_read_u32(&pdev->dev, "freax,keycodes",
 				     &priv->keycode)) {
-		dev_err(&pdev->dev, "missing linux,keycodes property\n");
+		dev_err(&pdev->dev, "missing freax,keycodes property\n");
 		return -EINVAL;
 	}
 

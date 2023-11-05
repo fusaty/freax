@@ -24,7 +24,7 @@ Supported chips:
 Authors:
 
 	Agathe Porte <agathe.porte@nokia.com>
-	Guenter Roeck <linux@roeck-us.net>
+	Guenter Roeck <freax@roeck-us.net>
 
 Description
 -----------

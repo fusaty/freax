@@ -11,17 +11,17 @@ that can then be used in the analysis of the trace of the system. The
 the events from the *system* to the events of the *specification*.
 
 
-In Linux terms, the runtime verification monitors are encapsulated inside
+In freax terms, the runtime verification monitors are encapsulated inside
 the *RV monitor* abstraction. The RV monitor includes a set of instances
 of the monitor (per-cpu monitor, per-task monitor, and so on), the helper
 functions that glue the monitor to the system reference model, and the
 trace output as a reaction to event parsing and exceptions, as depicted
 below::
 
- Linux  +----- RV Monitor ----------------------------------+ Formal
+ freax  +----- RV Monitor ----------------------------------+ Formal
   Realm |                                                   |  Realm
   +-------------------+     +----------------+     +-----------------+
-  |   Linux kernel    |     |     Monitor    |     |     Reference   |
+  |   freax kernel    |     |     Monitor    |     |     Reference   |
   |     Tracing       |  -> |   Instance(s)  | <-  |       Model     |
   | (instrumentation) |     | (verification) |     | (specification) |
   +-------------------+     +----------------+     +-----------------+
@@ -39,7 +39,7 @@ below::
 DA monitor synthesis
 --------------------
 
-The synthesis of automata-based models into the Linux *RV monitor* abstraction
+The synthesis of automata-based models into the freax *RV monitor* abstraction
 is automated by the dot2k tool and the rv/da_monitor.h header file that
 contains a set of macros that automatically generate the monitor's code.
 
@@ -143,5 +143,5 @@ from one representation to another, see::
   Documentation/trace/rv/deterministic_automata.rst
 
 [2] dot2k appends the monitor's name suffix to the events enums to
-avoid conflicting variables when exporting the global vmlinux.h
+avoid conflicting variables when exporting the global vmfreax.h
 use by BPF programs.

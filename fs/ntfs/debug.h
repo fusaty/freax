@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * debug.h - NTFS kernel debug support. Part of the Linux-NTFS project.
+ * debug.h - NTFS kernel debug support. Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_DEBUG_H
-#define _LINUX_NTFS_DEBUG_H
+#ifndef _freax_NTFS_DEBUG_H
+#define _freax_NTFS_DEBUG_H
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "runlist.h"
 
@@ -54,4 +54,4 @@ void __ntfs_error(const char *function, const struct super_block *sb,
 		  const char *fmt, ...);
 #define ntfs_error(sb, f, a...)		__ntfs_error(__func__, sb, f, ##a)
 
-#endif /* _LINUX_NTFS_DEBUG_H */
+#endif /* _freax_NTFS_DEBUG_H */

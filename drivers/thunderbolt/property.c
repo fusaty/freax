@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uuid.h>
-#include <linux/thunderbolt.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/uuid.h>
+#include <freax/thunderbolt.h>
 
 struct tb_property_entry {
 	u32 key_hi;

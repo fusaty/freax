@@ -5,9 +5,9 @@
 #if !defined(_TRACE_WRITEBACK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_WRITEBACK_H
 
-#include <linux/tracepoint.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
+#include <freax/tracepoint.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
 
 #define show_inode_state(state)					\
 	__print_flags(state, "|",				\

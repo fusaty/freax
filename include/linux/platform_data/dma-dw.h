@@ -8,8 +8,8 @@
 #ifndef _PLATFORM_DATA_DMA_DW_H
 #define _PLATFORM_DATA_DMA_DW_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 #define DW_DMA_MAX_NR_MASTERS	4
 #define DW_DMA_MAX_NR_CHANNELS	8

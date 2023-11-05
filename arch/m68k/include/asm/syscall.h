@@ -2,7 +2,7 @@
 #ifndef _ASM_M68K_SYSCALL_H
 #define _ASM_M68K_SYSCALL_H
 
-#include <uapi/linux/audit.h>
+#include <uapi/freax/audit.h>
 
 #include <asm/unistd.h>
 

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BADBLOCKS_H
-#define _LINUX_BADBLOCKS_H
+#ifndef _freax_BADBLOCKS_H
+#define _freax_BADBLOCKS_H
 
-#include <linux/seqlock.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <freax/seqlock.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
 
 #define BB_LEN_MASK	(0x00000000000001FFULL)
 #define BB_OFFSET_MASK	(0x7FFFFFFFFFFFFE00ULL)

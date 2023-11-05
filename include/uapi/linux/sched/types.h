@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SCHED_TYPES_H
-#define _UAPI_LINUX_SCHED_TYPES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SCHED_TYPES_H
+#define _UAPI_freax_SCHED_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SCHED_ATTR_SIZE_VER0	48	/* sizeof first published struct */
 #define SCHED_ATTR_SIZE_VER1	56	/* add: util_{min,max} */
@@ -118,4 +118,4 @@ struct sched_attr {
 
 };
 
-#endif /* _UAPI_LINUX_SCHED_TYPES_H */
+#endif /* _UAPI_freax_SCHED_TYPES_H */

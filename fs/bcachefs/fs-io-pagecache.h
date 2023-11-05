@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_FS_IO_PAGECACHE_H
 #define _BCACHEFS_FS_IO_PAGECACHE_H
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 
 typedef DARRAY(struct folio *) folios;
 

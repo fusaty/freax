@@ -2,7 +2,7 @@
 /* 
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 2000
  *
  * History of changes
@@ -13,12 +13,12 @@
 #ifndef _S390_IDALS_H
 #define _S390_IDALS_H
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 #include <asm/cio.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define IDA_SIZE_LOG 12 /* 11 for 2k , 12 for 4k */
 #define IDA_BLOCK_SIZE (1L<<IDA_SIZE_LOG)

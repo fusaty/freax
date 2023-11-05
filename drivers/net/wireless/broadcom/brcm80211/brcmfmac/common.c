@@ -3,11 +3,11 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/netdevice.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
 #include <brcmu_wifi.h>
 #include <brcmu_utils.h>
 #include "core.h"

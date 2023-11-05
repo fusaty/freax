@@ -6,8 +6,8 @@
 #ifndef _HFI1_USER_SDMA_H
 #define _HFI1_USER_SDMA_H
 
-#include <linux/device.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/wait.h>
 
 #include "common.h"
 #include "iowait.h"

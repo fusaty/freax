@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/vgacon.c -- Low level VGA based console driver
+ *  freax/drivers/video/vgacon.c -- Low level VGA based console driver
  *
  *	Created 28 Sep 1997 by Geert Uytterhoeven
  *
@@ -14,7 +14,7 @@
  *	<crosser@average.org>
  *
  *	Improved loadable font/UTF-8 support by H. Peter Anvin
- *	Feb-Sep 1995 <peter.anvin@linux.org>
+ *	Feb-Sep 1995 <peter.anvin@freax.org>
  *
  *	Colour palette handling, by Simon Tatham
  *	17-Jun-95 <sgt20@cam.ac.uk>
@@ -33,21 +33,21 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/vt_kern.h>
-#include <linux/sched.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/string.h>
+#include <freax/kd.h>
+#include <freax/slab.h>
+#include <freax/vt_kern.h>
+#include <freax/sched.h>
+#include <freax/selection.h>
+#include <freax/spinlock.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/screen_info.h>
 #include <video/vga.h>
 #include <asm/io.h>
 

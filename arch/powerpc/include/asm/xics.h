@@ -7,7 +7,7 @@
 #ifndef _XICS_H
 #define _XICS_H
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #define XICS_IPI		2
 #define XICS_IRQ_SPURIOUS	0

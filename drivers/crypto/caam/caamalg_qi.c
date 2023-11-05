@@ -20,11 +20,11 @@
 #include "caamalg_desc.h"
 #include <crypto/xts.h>
 #include <asm/unaligned.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 /*
  * crypto alg

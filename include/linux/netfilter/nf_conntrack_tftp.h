@@ -4,9 +4,9 @@
 
 #define TFTP_PORT 69
 
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 
 struct tftphdr {

@@ -9,12 +9,12 @@
 // Modified:
 //               Copyright 2008 Analog Devices Inc.
 //
-// Bugs:         Enter bugs at http://blackfin.uclinux.org/
+// Bugs:         Enter bugs at http://blackfin.ucfreax.org/
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

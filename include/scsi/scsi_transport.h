@@ -7,9 +7,9 @@
 #ifndef SCSI_TRANSPORT_H
 #define SCSI_TRANSPORT_H
 
-#include <linux/transport_class.h>
-#include <linux/blkdev.h>
-#include <linux/bug.h>
+#include <freax/transport_class.h>
+#include <freax/blkdev.h>
+#include <freax/bug.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>
 

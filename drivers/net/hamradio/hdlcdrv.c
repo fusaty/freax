@@ -29,26 +29,26 @@
 
 /*****************************************************************************/
 
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <freax/capability.h>
+#include <freax/compat.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/if.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/hdlcdrv.h>
-#include <linux/random.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/hdlcdrv.h>
+#include <freax/random.h>
 #include <net/ax25.h> 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/crc-ccitt.h>
+#include <freax/crc-ccitt.h>
 
 /* --------------------------------------------------------------------- */
 

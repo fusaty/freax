@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_CRASH_CORE_H
-#define LINUX_CRASH_CORE_H
+#ifndef freax_CRASH_CORE_H
+#define freax_CRASH_CORE_H
 
-#include <linux/linkage.h>
-#include <linux/elfcore.h>
-#include <linux/elf.h>
+#include <freax/linkage.h>
+#include <freax/elfcore.h>
+#include <freax/elf.h>
 #ifdef CONFIG_ARCH_HAS_GENERIC_CRASHKERNEL_RESERVATION
 #include <asm/crash_core.h>
 #endif
@@ -50,8 +50,8 @@ phys_addr_t paddr_vmcoreinfo_note(void);
 	vmcoreinfo_append_str("OSRELEASE=%s\n", value)
 #define VMCOREINFO_BUILD_ID()						\
 	({								\
-		static_assert(sizeof(vmlinux_build_id) == 20);		\
-		vmcoreinfo_append_str("BUILD-ID=%20phN\n", vmlinux_build_id); \
+		static_assert(sizeof(vmfreax_build_id) == 20);		\
+		vmcoreinfo_append_str("BUILD-ID=%20phN\n", vmfreax_build_id); \
 	})
 
 #define VMCOREINFO_PAGESIZE(value) \
@@ -150,4 +150,4 @@ struct kexec_segment;
 #define KEXEC_CRASH_HP_REMOVE_MEMORY		4
 #define KEXEC_CRASH_HP_INVALID_CPU		-1U
 
-#endif /* LINUX_CRASH_CORE_H */
+#endif /* freax_CRASH_CORE_H */

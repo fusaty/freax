@@ -11,10 +11,10 @@
 #include "habanalabs.h"
 #include "../include/hw_ip/pci/pci_general.h"
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/version.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
+#include <freax/version.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_drv.h>
@@ -98,9 +98,9 @@ static const struct drm_driver hl_driver = {
 
 	.name = HL_NAME,
 	.desc = HL_DRIVER_DESC,
-	.major = LINUX_VERSION_MAJOR,
-	.minor = LINUX_VERSION_PATCHLEVEL,
-	.patchlevel = LINUX_VERSION_SUBLEVEL,
+	.major = freax_VERSION_MAJOR,
+	.minor = freax_VERSION_PATCHLEVEL,
+	.patchlevel = freax_VERSION_SUBLEVEL,
 	.date = "20190505",
 
 	.fops = &hl_fops,

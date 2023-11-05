@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2016-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Limited
  */
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
 
 #define REG_BATID			0x00 /* This one is very unclear */
  #define BATID_101			0x0101 /* 107kOhm */

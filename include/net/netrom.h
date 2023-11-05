@@ -8,12 +8,12 @@
 #ifndef _NETROM_H
 #define _NETROM_H 
 
-#include <linux/netrom.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/netrom.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 #include <net/sock.h>
-#include <linux/refcount.h>
-#include <linux/seq_file.h>
+#include <freax/refcount.h>
+#include <freax/seq_file.h>
 #include <net/ax25.h>
 
 #define	NR_NETWORK_LEN			15

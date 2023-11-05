@@ -11,9 +11,9 @@
 #ifndef _PCIE_ROCKCHIP_H
 #define _PCIE_ROCKCHIP_H
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci-ecam.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/pci-ecam.h>
 
 /*
  * The upper 16 bits of PCIE_CLIENT_CONFIG are a write mask for the lower 16

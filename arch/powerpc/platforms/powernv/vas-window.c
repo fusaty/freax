@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/rcupdate.h>
-#include <linux/cred.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_context.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/rcupdate.h>
+#include <freax/cred.h>
+#include <freax/sched/mm.h>
+#include <freax/mmu_context.h>
 #include <asm/switch_to.h>
 #include <asm/ppc-opcode.h>
 #include <asm/vas.h>

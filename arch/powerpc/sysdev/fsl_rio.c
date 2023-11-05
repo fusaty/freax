@@ -18,20 +18,20 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/init.h>
-#include <linux/extable.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/extable.h>
+#include <freax/types.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <asm/machdep.h>
 #include <asm/rio.h>
 

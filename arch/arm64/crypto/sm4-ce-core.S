@@ -5,10 +5,10 @@
  * https://tools.ietf.org/id/draft-ribose-cfrg-sm4-10.html
  *
  * Copyright (C) 2022, Alibaba Group.
- * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2022 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include "sm4-ce-asm.h"
 

@@ -24,8 +24,8 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
 #include "device.h"
 #include "card.h"
 #include "baseband.h"

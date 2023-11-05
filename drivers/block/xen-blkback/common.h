@@ -2,7 +2,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,14 +27,14 @@
 #ifndef __XEN_BLKIF__BACKEND__COMMON_H__
 #define __XEN_BLKIF__BACKEND__COMMON_H__
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/io.h>
-#include <linux/rbtree.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
+#include <freax/io.h>
+#include <freax/rbtree.h>
 #include <asm/setup.h>
 #include <asm/hypervisor.h>
 #include <xen/grant_table.h>

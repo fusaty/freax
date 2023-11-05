@@ -3,14 +3,14 @@
  * Copyright (c) 2023 Hannes Reinecke, SUSE Labs
  */
 
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/key.h>
+#include <freax/key-type.h>
 #include <keys/user-type.h>
-#include <linux/nvme.h>
-#include <linux/nvme-tcp.h>
-#include <linux/nvme-keyring.h>
+#include <freax/nvme.h>
+#include <freax/nvme-tcp.h>
+#include <freax/nvme-keyring.h>
 
 static struct key *nvme_keyring;
 

@@ -6,7 +6,7 @@
 #ifndef __GEN8_PPGTT_H__
 #define __GEN8_PPGTT_H__
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 struct i915_address_space;
 struct intel_gt;

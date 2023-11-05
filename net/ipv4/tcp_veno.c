@@ -10,10 +10,10 @@
  * 	See https://www.ie.cuhk.edu.hk/fileadmin/staff_upload/soung/Journal/J3.pdf
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/inet_diag.h>
 
 #include <net/tcp.h>
 

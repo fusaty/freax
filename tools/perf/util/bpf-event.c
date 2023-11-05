@@ -4,9 +4,9 @@
 #include <bpf/bpf.h>
 #include <bpf/btf.h>
 #include <bpf/libbpf.h>
-#include <linux/btf.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <freax/btf.h>
+#include <freax/err.h>
+#include <freax/string.h>
 #include <internal/lib.h>
 #include <symbol/kallsyms.h>
 #include "bpf-event.h"

@@ -10,22 +10,22 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/iommu-helper.h>
-#include <linux/crash_dump.h>
-#include <linux/hash.h>
-#include <linux/fault-inject.h>
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/bitmap.h>
+#include <freax/iommu-helper.h>
+#include <freax/crash_dump.h>
+#include <freax/hash.h>
+#include <freax/fault-inject.h>
+#include <freax/pci.h>
+#include <freax/iommu.h>
+#include <freax/sched.h>
+#include <freax/debugfs.h>
 #include <asm/io.h>
 #include <asm/iommu.h>
 #include <asm/pci-bridge.h>

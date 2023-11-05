@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *	FIB front-end.
  *
  *	Authors:
@@ -22,26 +22,26 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/times.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/jhash.h>
-#include <linux/siphash.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/times.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/route.h>
+#include <freax/netdevice.h>
+#include <freax/in6.h>
+#include <freax/mroute6.h>
+#include <freax/init.h>
+#include <freax/if_arp.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/nsproxy.h>
+#include <freax/slab.h>
+#include <freax/jhash.h>
+#include <freax/siphash.h>
 #include <net/net_namespace.h>
 #include <net/snmp.h>
 #include <net/ipv6.h>
@@ -50,7 +50,7 @@
 #include <net/ndisc.h>
 #include <net/addrconf.h>
 #include <net/tcp.h>
-#include <linux/rtnetlink.h>
+#include <freax/rtnetlink.h>
 #include <net/dst.h>
 #include <net/dst_metadata.h>
 #include <net/xfrm.h>
@@ -61,11 +61,11 @@
 #include <net/ip_tunnels.h>
 #include <net/l3mdev.h>
 #include <net/ip.h>
-#include <linux/uaccess.h>
-#include <linux/btf_ids.h>
+#include <freax/uaccess.h>
+#include <freax/btf_ids.h>
 
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
 
 static int ip6_rt_type_to_error(u8 fib6_type);

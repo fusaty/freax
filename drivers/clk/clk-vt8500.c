@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Clock implementation for VIA/Wondermedia SoC's
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <freax@prisktech.co.nz>
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
 
 #define LEGACY_PMC_BASE		0xD8130000
 

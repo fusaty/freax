@@ -2,14 +2,14 @@
 /*
  * Copyright (c) 2021 Raffaele Tranquillini <raffaele.tranquillini@gmail.com>
  *
- * Generated using linux-mdss-dsi-panel-driver-generator from Lineage OS device tree:
+ * Generated using freax-mdss-dsi-panel-driver-generator from Lineage OS device tree:
  * https://github.com/LineageOS/android_kernel_xiaomi_msm8996/blob/lineage-18.1/arch/arm/boot/dts/qcom/a1-msm8996-mtp.dtsi
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include <video/mipi_display.h>
 

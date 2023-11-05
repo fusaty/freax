@@ -8,7 +8,7 @@
 #ifndef __NET_DCBNL_H__
 #define __NET_DCBNL_H__
 
-#include <linux/dcbnl.h>
+#include <freax/dcbnl.h>
 
 struct net_device;
 

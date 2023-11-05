@@ -4,21 +4,21 @@
  * Copyright (C) 2012, Anish Kumar <anish198519851985@gmail.com>
  * Copyright (c) 2023, Sebastian Reichel <sre@kernel.org>
  */
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/of.h>
-#include <linux/devm-helpers.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/iio/consumer.h>
+#include <freax/iio/types.h>
+#include <freax/of.h>
+#include <freax/devm-helpers.h>
 
 #define JITTER_DEFAULT 10 /* hope 10ms is enough */
 

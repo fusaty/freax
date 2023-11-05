@@ -4,17 +4,17 @@
  * Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/file.h>
-#include <linux/fileattr.h>
-#include <linux/uuid.h>
-#include <linux/namei.h>
-#include <linux/ratelimit.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/xattr.h>
+#include <freax/exportfs.h>
+#include <freax/file.h>
+#include <freax/fileattr.h>
+#include <freax/uuid.h>
+#include <freax/namei.h>
+#include <freax/ratelimit.h>
 #include "overlayfs.h"
 
 int ovl_want_write(struct dentry *dentry)

@@ -4,7 +4,7 @@
 #ifndef _I40E_DEBUG_H_
 #define _I40E_DEBUG_H_
 
-#include <linux/dev_printk.h>
+#include <freax/dev_printk.h>
 
 /* debug masks - set these bits in hw->debug_mask to control output */
 enum i40e_debug_mask {

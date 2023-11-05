@@ -6,7 +6,7 @@
 #ifndef _INTEL_GUC_CAPTURE_FWIF_H
 #define _INTEL_GUC_CAPTURE_FWIF_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "intel_guc_fwif.h"
 
 struct intel_guc;

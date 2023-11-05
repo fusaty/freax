@@ -6,25 +6,25 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
-#include <linux/greybus.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/suspend.h>
+#include <freax/time.h>
+#include <freax/greybus.h>
+#include <freax/of.h>
 #include "arche_platform.h"
 
 #if IS_ENABLED(CONFIG_USB_HSIC_USB3613)
-#include <linux/usb/usb3613.h>
+#include <freax/usb/usb3613.h>
 #else
 static inline int usb3613_hub_mode_ctrl(bool unused)
 {

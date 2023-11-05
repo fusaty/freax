@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Facebook */
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/error-injection.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/percpu-defs.h>
-#include <linux/sysfs.h>
-#include <linux/tracepoint.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/error-injection.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/percpu-defs.h>
+#include <freax/sysfs.h>
+#include <freax/tracepoint.h>
 #include "bpf_testmod.h"
 #include "bpf_testmod_kfunc.h"
 

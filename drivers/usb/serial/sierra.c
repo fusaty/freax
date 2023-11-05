@@ -5,7 +5,7 @@
   Copyright (C) 2006, 2007, 2008  Kevin Lloyd <klloyd@sierrawireless.com>,
 
   Copyright (C) 2008, 2009  Elina Pasheva, Matthew Safar, Rory Filer
-			<linux@sierrawireless.com>
+			<freax@sierrawireless.com>
 
   IMPORTANT DISCLAIMER: This driver is not commercially supported by
   Sierra Wireless. Use at your own risk.
@@ -19,15 +19,15 @@
 #define DRIVER_AUTHOR "Kevin Lloyd, Elina Pasheva, Matthew Safar, Rory Filer"
 #define DRIVER_DESC "USB Driver for Sierra Wireless USB modems"
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/tty.h>
+#include <freax/slab.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
 
 #define SWIMS_USB_REQUEST_SetPower	0x00
 #define SWIMS_USB_REQUEST_SetNmea	0x07

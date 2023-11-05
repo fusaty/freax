@@ -3,7 +3,7 @@
  * Copyright (C) STRATO AG 2013.  All rights reserved.
  */
 
-#include <linux/uuid.h>
+#include <freax/uuid.h>
 #include <asm/unaligned.h>
 #include "messages.h"
 #include "ctree.h"

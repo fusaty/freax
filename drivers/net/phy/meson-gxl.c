@@ -6,14 +6,14 @@
  * Copyright (C) 2016 BayLibre, SAS. All rights reserved.
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/bitfield.h>
-#include <linux/smscphy.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/phy.h>
+#include <freax/netdevice.h>
+#include <freax/bitfield.h>
+#include <freax/smscphy.h>
 
 #define TSTCNTL		20
 #define  TSTCNTL_READ		BIT(15)

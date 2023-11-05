@@ -4,11 +4,11 @@
  *
  * Copyright(C) 2010 Red Hat.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mxm-wmi.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mxm-wmi.h>
+#include <freax/acpi.h>
 
 MODULE_AUTHOR("Dave Airlie");
 MODULE_DESCRIPTION("MXM WMI Driver");

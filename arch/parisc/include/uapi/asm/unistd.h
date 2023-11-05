@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI_ASM_PARISC_UNISTD_H_
 #define _UAPI_ASM_PARISC_UNISTD_H_
 
@@ -8,6 +8,6 @@
 #include <asm/unistd_32.h>
 #endif
 
-#define LINUX_GATEWAY_ADDR	0x100
+#define freax_GATEWAY_ADDR	0x100
 
 #endif /* _UAPI_ASM_PARISC_UNISTD_H_ */

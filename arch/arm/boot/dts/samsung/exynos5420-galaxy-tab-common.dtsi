@@ -61,7 +61,7 @@
 			debounce-interval = <10>;
 			gpios = <&gpx2 2 GPIO_ACTIVE_LOW>;
 			label = "Power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
@@ -69,7 +69,7 @@
 			debounce-interval = <10>;
 			gpios = <&gpx0 5 GPIO_ACTIVE_LOW>;
 			label = "Home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			wakeup-source;
 		};
 
@@ -77,14 +77,14 @@
 			debounce-interval = <10>;
 			gpios = <&gpx0 2 GPIO_ACTIVE_LOW>;
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		key-volume-down {
 			debounce-interval = <10>;
 			gpios = <&gpx0 3 GPIO_ACTIVE_LOW>;
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 };

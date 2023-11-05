@@ -3,22 +3,22 @@
  * kernfs.h - pseudo filesystem decoupled from vfs locking
  */
 
-#ifndef __LINUX_KERNFS_H
-#define __LINUX_KERNFS_H
+#ifndef __freax_KERNFS_H
+#define __freax_KERNFS_H
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/lockdep.h>
-#include <linux/rbtree.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/uidgid.h>
-#include <linux/wait.h>
-#include <linux/rwsem.h>
-#include <linux/cache.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/idr.h>
+#include <freax/lockdep.h>
+#include <freax/rbtree.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/types.h>
+#include <freax/uidgid.h>
+#include <freax/wait.h>
+#include <freax/rwsem.h>
+#include <freax/cache.h>
 
 struct file;
 struct dentry;
@@ -630,4 +630,4 @@ static inline int kernfs_rename(struct kernfs_node *kn,
 	return kernfs_rename_ns(kn, new_parent, new_name, NULL);
 }
 
-#endif	/* __LINUX_KERNFS_H */
+#endif	/* __freax_KERNFS_H */

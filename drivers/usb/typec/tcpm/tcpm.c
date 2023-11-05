@@ -5,33 +5,33 @@
  * USB Power Delivery protocol stack.
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/proc_fs.h>
-#include <linux/property.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/pd_ado.h>
-#include <linux/usb/pd_bdo.h>
-#include <linux/usb/pd_ext_sdb.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/role.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec_altmode.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/hrtimer.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/power_supply.h>
+#include <freax/proc_fs.h>
+#include <freax/property.h>
+#include <freax/sched/clock.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/usb.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/pd_ado.h>
+#include <freax/usb/pd_bdo.h>
+#include <freax/usb/pd_ext_sdb.h>
+#include <freax/usb/pd_vdo.h>
+#include <freax/usb/role.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/typec_altmode.h>
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/freax/sched/types.h>
 
 #define FOREACH_STATE(S)			\
 	S(INVALID_STATE),			\

@@ -3,17 +3,17 @@
  *
  * i2c-mux.h - functions for the i2c-bus mux support
  *
- * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@freax.it>
  * Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
  * Michael Lawnick <michael.lawnick.ext@nsn.com>
  */
 
-#ifndef _LINUX_I2C_MUX_H
-#define _LINUX_I2C_MUX_H
+#ifndef _freax_I2C_MUX_H
+#define _freax_I2C_MUX_H
 
 #ifdef __KERNEL__
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 struct i2c_mux_core {
 	struct i2c_adapter *parent;
@@ -63,4 +63,4 @@ void i2c_mux_del_adapters(struct i2c_mux_core *muxc);
 
 #endif /* __KERNEL__ */
 
-#endif /* _LINUX_I2C_MUX_H */
+#endif /* _freax_I2C_MUX_H */

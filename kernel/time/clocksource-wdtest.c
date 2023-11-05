@@ -8,16 +8,16 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sched.h> /* for spin_unlock_irq() using preempt_count() m68k */
-#include <linux/tick.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/prandom.h>
-#include <linux/cpu.h>
+#include <freax/device.h>
+#include <freax/clocksource.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/sched.h> /* for spin_unlock_irq() using preempt_count() m68k */
+#include <freax/tick.h>
+#include <freax/kthread.h>
+#include <freax/delay.h>
+#include <freax/prandom.h>
+#include <freax/cpu.h>
 
 #include "tick-internal.h"
 

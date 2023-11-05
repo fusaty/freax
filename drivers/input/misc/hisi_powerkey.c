@@ -14,14 +14,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/reboot.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_irq.h>
+#include <freax/input.h>
+#include <freax/slab.h>
 
 /* the held interrupt will trigger after 4 seconds */
 #define MAX_HELD_TIME	(4 * MSEC_PER_SEC)

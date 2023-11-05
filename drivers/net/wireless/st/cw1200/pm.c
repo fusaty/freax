@@ -6,8 +6,8 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/module.h>
-#include <linux/if_ether.h>
+#include <freax/module.h>
+#include <freax/if_ether.h>
 #include "cw1200.h"
 #include "pm.h"
 #include "sta.h"

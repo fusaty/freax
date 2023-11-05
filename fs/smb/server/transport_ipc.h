@@ -6,7 +6,7 @@
 #ifndef __KSMBD_TRANSPORT_IPC_H__
 #define __KSMBD_TRANSPORT_IPC_H__
 
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 #define KSMBD_IPC_MAX_PAYLOAD	4096
 

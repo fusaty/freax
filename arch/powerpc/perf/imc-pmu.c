@@ -6,15 +6,15 @@
  *           (C) 2017 Anju T Sudhakar, IBM Corporation.
  *           (C) 2017 Hemant K Shaw, IBM Corporation.
  */
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/slab.h>
 #include <asm/opal.h>
 #include <asm/imc-pmu.h>
 #include <asm/cputhreads.h>
 #include <asm/smp.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
 
 /* Nest IMC data structures and variables */
 

@@ -3,8 +3,8 @@
  * Copyright(c) 2016 Intel Corporation.
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include <rdma/ib_umem.h>
 #include <rdma/rdma_vt.h>
 #include "vt.h"

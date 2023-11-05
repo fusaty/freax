@@ -6,14 +6,14 @@
  */
 
 #include <dt-bindings/phy/phy.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/units.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/units.h>
 
 #define BIT_WRITEABLE_SHIFT		16
 #define REF_CLOCK_24MHz			(24 * HZ_PER_MHZ)

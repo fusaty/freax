@@ -4,12 +4,12 @@
  *
  * Copyright 2016 Google Inc.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sizes.h>
+#include <freax/uaccess.h>
+#include <freax/greybus.h>
 
 struct gb_log {
 	struct gb_connection *connection;

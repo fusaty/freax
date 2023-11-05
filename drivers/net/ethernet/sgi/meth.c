@@ -4,26 +4,26 @@
  *
  * Copyright (C) 2001-2003 Ilya Volynets
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/device.h> /* struct device, et al */
-#include <linux/netdevice.h>   /* struct device, and other headers */
-#include <linux/etherdevice.h> /* eth_type_trans */
-#include <linux/ip.h>          /* struct iphdr */
-#include <linux/tcp.h>         /* struct tcphdr */
-#include <linux/skbuff.h>
-#include <linux/mii.h>         /* MII definitions */
-#include <linux/crc32.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/device.h> /* struct device, et al */
+#include <freax/netdevice.h>   /* struct device, and other headers */
+#include <freax/etherdevice.h> /* eth_type_trans */
+#include <freax/ip.h>          /* struct iphdr */
+#include <freax/tcp.h>         /* struct tcphdr */
+#include <freax/skbuff.h>
+#include <freax/mii.h>         /* MII definitions */
+#include <freax/crc32.h>
 
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>

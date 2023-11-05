@@ -9,17 +9,17 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/irq.h>
-#include <linux/vmalloc.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/list.h>
+#include <freax/syscalls.h>
+#include <freax/irq.h>
+#include <freax/vmalloc.h>
+#include <freax/of.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

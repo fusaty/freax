@@ -78,7 +78,7 @@ Classic vs Generic Netlink
 Initial implementation of Netlink depended on a static allocation
 of IDs to subsystems and provided little supporting infrastructure.
 Let us refer to those protocols collectively as **Classic Netlink**.
-The list of them is defined on top of the ``include/uapi/linux/netlink.h``
+The list of them is defined on top of the ``include/uapi/freax/netlink.h``
 file, they include among others - general networking (NETLINK_ROUTE),
 iSCSI (NETLINK_ISCSI), and audit (NETLINK_AUDIT).
 
@@ -91,7 +91,7 @@ number of subsystems using Generic Netlink outnumbers the older
 protocols by an order of magnitude. There are also no plans for adding
 more Classic Netlink protocols to the kernel.
 Basic information on how communicating with core networking parts of
-the Linux kernel (or another of the 20 subsystems using Classic
+the freax kernel (or another of the 20 subsystems using Classic
 Netlink) differs from Generic Netlink is provided later in this document.
 
 Generic Netlink
@@ -543,7 +543,7 @@ with the explicit goal of giving the Generic Netlink
 users the confidence to ignore them when reading the uAPI headers.
 
 Most of the concepts and examples here refer to the ``NETLINK_ROUTE`` family,
-which covers much of the configuration of the Linux networking stack.
+which covers much of the configuration of the freax networking stack.
 Real documentation of that family, deserves a chapter (or a book) of its own.
 
 Families
@@ -680,4 +680,4 @@ added to the list rather than replacing the entire list.
 uAPI reference
 ==============
 
-.. kernel-doc:: include/uapi/linux/netlink.h
+.. kernel-doc:: include/uapi/freax/netlink.h

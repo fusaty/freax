@@ -12,9 +12,9 @@
 #include "tests.h"
 #include "util/mmap.h"
 #include "util/sample.h"
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include <perf/evlist.h>
 #include <perf/mmap.h>
 

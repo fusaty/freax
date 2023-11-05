@@ -4,8 +4,8 @@
  * Author: Weiyi Lu <weiyi.lu@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

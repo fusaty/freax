@@ -17,19 +17,19 @@
  * issues can usefully be addressed by this framework.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ctype.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ctype.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/usb/usbnet.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/pm_runtime.h>
 
 /*-------------------------------------------------------------------------*/
 

@@ -6,10 +6,10 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/soc/qcom/smd-rpm.h>
+#include <freax/interconnect-provider.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/soc/qcom/smd-rpm.h>
 
 #include "icc-rpm.h"
 

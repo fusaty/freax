@@ -9,17 +9,17 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/linux_logo.h>
-#include <linux/syscore_ops.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/mutex.h>
+#include <freax/freax_logo.h>
+#include <freax/syscore_ops.h>
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>
 #include <asm/spu_csa.h>

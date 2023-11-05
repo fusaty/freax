@@ -11,13 +11,13 @@
  * for a description of the network filesystem interface declared here.
  */
 
-#ifndef _LINUX_NETFS_H
-#define _LINUX_NETFS_H
+#ifndef _freax_NETFS_H
+#define _freax_NETFS_H
 
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
+#include <freax/workqueue.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
 
 enum netfs_sreq_ref_trace;
 
@@ -358,4 +358,4 @@ static inline struct fscache_cookie *netfs_i_cookie(struct netfs_inode *ctx)
 #endif
 }
 
-#endif /* _LINUX_NETFS_H */
+#endif /* _freax_NETFS_H */

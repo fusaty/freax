@@ -9,11 +9,11 @@
 #ifndef RENESAS_USB_DRIVER_H
 #define RENESAS_USB_DRIVER_H
 
-#include <linux/clk.h>
-#include <linux/extcon.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/usb/renesas_usbhs.h>
+#include <freax/clk.h>
+#include <freax/extcon.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/usb/renesas_usbhs.h>
 
 struct usbhs_priv;
 

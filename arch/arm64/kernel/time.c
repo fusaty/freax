@@ -7,25 +7,25 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/clockchips.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/errno.h>
-#include <linux/profile.h>
-#include <linux/stacktrace.h>
-#include <linux/syscore_ops.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/clocksource.h>
-#include <linux/of_clk.h>
-#include <linux/acpi.h>
+#include <freax/clockchips.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/timex.h>
+#include <freax/errno.h>
+#include <freax/profile.h>
+#include <freax/stacktrace.h>
+#include <freax/syscore_ops.h>
+#include <freax/timer.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/clocksource.h>
+#include <freax/of_clk.h>
+#include <freax/acpi.h>
 
 #include <clocksource/arm_arch_timer.h>
 

@@ -4,14 +4,14 @@
  * for more details.
  *
  * Copyright (C) 2007 MIPS Technologies, Inc.
- * Copyright (C) 2007 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2007 Ralf Baechle <ralf@freax-mips.org>
  */
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/cpufreq.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/irq.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/cpufreq.h>
+#include <freax/percpu.h>
+#include <freax/smp.h>
+#include <freax/irq.h>
 
 #include <asm/time.h>
 #include <asm/cevt-r4k.h>

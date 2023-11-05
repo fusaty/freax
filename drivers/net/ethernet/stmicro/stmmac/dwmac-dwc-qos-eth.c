@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Synopsys DWC Ethernet Quality-of-Service v4.10a linux driver
+ * Synopsys DWC Ethernet Quality-of-Service v4.10a freax driver
  *
  * Copyright (C) 2016 Joao Pinto <jpinto@synopsys.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/stmmac.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/ethtool.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/stmmac.h>
 
 #include "stmmac_platform.h"
 #include "dwmac4.h"

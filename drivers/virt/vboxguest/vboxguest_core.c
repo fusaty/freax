@@ -5,15 +5,15 @@
  * Copyright (C) 2007-2016 Oracle Corporation
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/vbox_err.h>
-#include <linux/vbox_utils.h>
-#include <linux/vmalloc.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/vbox_err.h>
+#include <freax/vbox_utils.h>
+#include <freax/vmalloc.h>
 #include "vboxguest_core.h"
 #include "vboxguest_version.h"
 
@@ -187,7 +187,7 @@ static int vbg_report_guest_info(struct vbg_dev *gdev)
 		goto out_free;
 
 	req1->interface_version = VMMDEV_VERSION;
-	req1->os_type = VMMDEV_OSTYPE_LINUX26;
+	req1->os_type = VMMDEV_OSTYPE_freax26;
 #if __BITS_PER_LONG == 64
 	req1->os_type |= VMMDEV_OSTYPE_X64;
 #endif
@@ -1048,7 +1048,7 @@ void vbg_core_exit(struct vbg_dev *gdev)
 /**
  * Creates a VBoxGuest user session.
  *
- * vboxguest_linux.c calls this when userspace opens the char-device.
+ * vboxguest_freax.c calls this when userspace opens the char-device.
  * Return: A pointer to the new session or an ERR_PTR on error.
  * @gdev:		The Guest extension device.
  * @requestor:		VMMDEV_REQUESTOR_* flags
@@ -1640,7 +1640,7 @@ static int vbg_ioctl_check_balloon(struct vbg_dev *gdev,
 
 	balloon_info->u.out.balloon_chunks = gdev->mem_balloon.chunks;
 	/*
-	 * Under Linux we handle VMMDEV_EVENT_BALLOON_CHANGE_REQUEST
+	 * Under freax we handle VMMDEV_EVENT_BALLOON_CHANGE_REQUEST
 	 * events entirely in the kernel, see vbg_core_isr().
 	 */
 	balloon_info->u.out.handle_in_r3 = false;
@@ -1820,7 +1820,7 @@ irqreturn_t vbg_core_isr(int irq, void *dev_id)
 	}
 
 	if (mouse_position_changed)
-		vbg_linux_mouse_event(gdev);
+		vbg_freax_mouse_event(gdev);
 
 	return IRQ_HANDLED;
 }

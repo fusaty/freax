@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_SEC_RTC_H
-#define __LINUX_MFD_SEC_RTC_H
+#ifndef __freax_MFD_SEC_RTC_H
+#define __freax_MFD_SEC_RTC_H
 
 enum s5m_rtc_reg {
 	S5M_RTC_SEC,
@@ -130,4 +130,4 @@ enum s2mps_rtc_reg {
 #define WTSR_ENABLE_SHIFT	6
 #define WTSR_ENABLE_MASK	(1 << WTSR_ENABLE_SHIFT)
 
-#endif /*  __LINUX_MFD_SEC_RTC_H */
+#endif /*  __freax_MFD_SEC_RTC_H */

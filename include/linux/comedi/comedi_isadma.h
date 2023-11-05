@@ -7,7 +7,7 @@
 #ifndef _COMEDI_ISADMA_H
 #define _COMEDI_ISADMA_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct comedi_device;
 struct device;

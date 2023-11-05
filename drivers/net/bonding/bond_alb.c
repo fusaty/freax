@@ -3,20 +3,20 @@
  * Copyright(c) 1999 - 2004 Intel Corporation. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pkt_sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_bonding.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/pkt_sched.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/if_bonding.h>
+#include <freax/if_vlan.h>
+#include <freax/in.h>
 #include <net/arp.h>
 #include <net/ipv6.h>
 #include <net/ndisc.h>

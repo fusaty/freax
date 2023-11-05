@@ -7,13 +7,13 @@
  * Author: Alexander Shishkin
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/chipidea.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/chipidea.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pinctrl/consumer.h>
 
 #include "../host/ehci.h"
 

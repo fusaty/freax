@@ -8,10 +8,10 @@
 // Mark Brown <broonie@opensource.wolfsonmicro.com>
 // Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 //
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 #include <sound/soc.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define soc_component_ret(dai, ret) _soc_component_ret(dai, __func__, ret, -1)
 #define soc_component_ret_reg_rw(dai, ret, reg) _soc_component_ret(dai, __func__, ret, reg)

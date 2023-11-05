@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Sysfs attributes of bridge
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Stephen Hemminger		<shemminger@osdl.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/times.h>
-#include <linux/sched/signal.h>
+#include <freax/capability.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/rtnetlink.h>
+#include <freax/spinlock.h>
+#include <freax/times.h>
+#include <freax/sched/signal.h>
 
 #include "br_private.h"
 

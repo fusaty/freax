@@ -3,20 +3,20 @@
  * Driver for Intel PMC USB mux control
  *
  * Copyright (C) 2020 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_tbt.h>
-#include <linux/debugfs.h>
-#include <linux/usb.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/role.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_tbt.h>
+#include <freax/debugfs.h>
+#include <freax/usb.h>
 
 #include <asm/intel_scu_ipc.h>
 
@@ -847,6 +847,6 @@ static void __exit pmc_usb_exit(void)
 }
 module_exit(pmc_usb_exit);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@freax.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Intel PMC USB mux control");

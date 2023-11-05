@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* linux/drivers/media/platform/samsung/s5p-jpeg/jpeg-core.h
+/* freax/drivers/media/platform/samsung/s5p-jpeg/jpeg-core.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -10,7 +10,7 @@
 #ifndef JPEG_CORE_H_
 #define JPEG_CORE_H_
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 #include <media/jpeg.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>

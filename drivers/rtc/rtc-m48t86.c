@@ -10,12 +10,12 @@
  * to not introduce bugs.
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/bcd.h>
+#include <freax/io.h>
 
 #define M48T86_SEC		0x00
 #define M48T86_SECALRM		0x01

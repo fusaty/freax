@@ -7,12 +7,12 @@
  */
 
 #define pr_fmt(fmt) "big_key: "fmt
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/file.h>
-#include <linux/shmem_fs.h>
-#include <linux/err.h>
-#include <linux/random.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/file.h>
+#include <freax/shmem_fs.h>
+#include <freax/err.h>
+#include <freax/random.h>
 #include <keys/user-type.h>
 #include <keys/big_key-type.h>
 #include <crypto/chacha20poly1305.h>

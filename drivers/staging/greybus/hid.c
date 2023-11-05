@@ -6,13 +6,13 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/hid.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/greybus.h>
+#include <freax/bitops.h>
+#include <freax/hid.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/greybus.h>
 
 /* Greybus HID device's structure */
 struct gb_hid {
@@ -408,7 +408,7 @@ static int gb_hid_init(struct gb_hid *ghid)
 	hid->driver_data = ghid;
 	hid->ll_driver = &gb_hid_ll_driver;
 	hid->dev.parent = &ghid->connection->bundle->dev;
-//	hid->bus = BUS_GREYBUS; /* Need a bustype for GREYBUS in <linux/input.h> */
+//	hid->bus = BUS_GREYBUS; /* Need a bustype for GREYBUS in <freax/input.h> */
 
 	/* Set HID device's name */
 	snprintf(hid->name, sizeof(hid->name), "%s %04X:%04X",

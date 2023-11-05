@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h> /* for kmalloc */
-#include <linux/consolemap.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/device.h> /* for dev_warn */
-#include <linux/selection.h>
-#include <linux/workqueue.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/atomic.h>
-#include <linux/console.h>
+#include <freax/slab.h> /* for kmalloc */
+#include <freax/consolemap.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/device.h> /* for dev_warn */
+#include <freax/selection.h>
+#include <freax/workqueue.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/atomic.h>
+#include <freax/console.h>
 
 #include "speakup.h"
 

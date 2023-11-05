@@ -4,8 +4,8 @@
  * Copyright 2015 Google Inc.
  * Copyright 2015 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 

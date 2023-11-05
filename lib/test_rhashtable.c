@@ -10,18 +10,18 @@
  * Self Test
  **************************************************************************/
 
-#include <linux/init.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/rcupdate.h>
-#include <linux/rhashtable.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <freax/init.h>
+#include <freax/jhash.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/rcupdate.h>
+#include <freax/rhashtable.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/random.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
 
 #define MAX_ENTRIES	1000000
 #define TEST_INSERT_FAIL INT_MAX

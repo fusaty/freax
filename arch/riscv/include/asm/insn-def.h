@@ -68,7 +68,7 @@
 
 #else
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 #include <asm/gpr-num.h>
 
 #define DEFINE_INSN_R							\

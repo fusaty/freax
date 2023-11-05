@@ -13,7 +13,7 @@
 #ifndef RT2X00QUEUE_H
 #define RT2X00QUEUE_H
 
-#include <linux/prefetch.h>
+#include <freax/prefetch.h>
 
 /**
  * DOC: Entry frame size

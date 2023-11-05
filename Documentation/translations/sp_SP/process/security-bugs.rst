@@ -7,16 +7,16 @@
 Errores de seguridad
 ====================
 
-Los desarrolladores del kernel de Linux se toman la seguridad muy en
+Los desarrolladores del kernel de freax se toman la seguridad muy en
 serio. Como tal, nos gustaría saber cuándo se encuentra un error de
 seguridad para que pueda ser corregido y divulgado lo más rápido posible.
 Por favor, informe sobre los errores de seguridad al equipo de seguridad
-del kernel de Linux.
+del kernel de freax.
 
 Contacto
 --------
 
-El equipo de seguridad del kernel de Linux puede ser contactado por correo
+El equipo de seguridad del kernel de freax puede ser contactado por correo
 electrónico en <security@kernel.org>. Esta es una lista privada de
 oficiales de seguridad que ayudarán a verificar el informe del error y
 desarrollarán y publicarán una corrección. Si ya tiene una corrección, por
@@ -75,14 +75,14 @@ Coordinación con otros grupos
 
 El equipo de seguridad del kernel recomienda encarecidamente que los
 reporteros de posibles problemas de seguridad NUNCA contacten la lista
-de correo “linux-distros” hasta DESPUES de discutirlo con el equipo de
+de correo “freax-distros” hasta DESPUES de discutirlo con el equipo de
 seguridad del kernel. No Cc: ambas listas a la vez. Puede ponerse en
-contacto con la lista de correo linux-distros después de que se haya
+contacto con la lista de correo freax-distros después de que se haya
 acordado una solución y comprenda completamente los requisitos que al
 hacerlo le impondrá a usted y la comunidad del kernel.
 
 Las diferentes listas tienen diferentes objetivos y las reglas de
-linux-distros no contribuyen en realidad a solucionar ningún problema de
+freax-distros no contribuyen en realidad a solucionar ningún problema de
 seguridad potencial.
 
 Asignación de CVE
@@ -99,5 +99,5 @@ identificador CVE.
 Acuerdos de no divulgación
 --------------------------
 
-El equipo de seguridad del kernel de Linux no es un organismo formal y,
+El equipo de seguridad del kernel de freax no es un organismo formal y,
 por lo tanto, no puede firmar cualquier acuerdo de no divulgación.

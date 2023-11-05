@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * include/uapi/linux/smiapp.h
+ * include/uapi/freax/smiapp.h
  *
  * Generic driver for SMIA/SMIA++ compliant camera modules
  *
@@ -18,8 +18,8 @@
  *
  */
 
-#ifndef __UAPI_LINUX_SMIAPP_H_
-#define __UAPI_LINUX_SMIAPP_H_
+#ifndef __UAPI_freax_SMIAPP_H_
+#define __UAPI_freax_SMIAPP_H_
 
 #define V4L2_SMIAPP_TEST_PATTERN_MODE_DISABLED			0
 #define V4L2_SMIAPP_TEST_PATTERN_MODE_SOLID_COLOUR		1
@@ -27,4 +27,4 @@
 #define V4L2_SMIAPP_TEST_PATTERN_MODE_COLOUR_BARS_GREY		3
 #define V4L2_SMIAPP_TEST_PATTERN_MODE_PN9			4
 
-#endif /* __UAPI_LINUX_SMIAPP_H_ */
+#endif /* __UAPI_freax_SMIAPP_H_ */

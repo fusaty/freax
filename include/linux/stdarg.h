@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#ifndef _LINUX_STDARG_H
-#define _LINUX_STDARG_H
+#ifndef _freax_STDARG_H
+#define _freax_STDARG_H
 
 typedef __builtin_va_list va_list;
 #define va_start(v, l)	__builtin_va_start(v, l)

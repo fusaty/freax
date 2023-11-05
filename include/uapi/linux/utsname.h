@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_UTSNAME_H
-#define _UAPI_LINUX_UTSNAME_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_UTSNAME_H
+#define _UAPI_freax_UTSNAME_H
 
 #define __OLD_UTS_LEN 8
 
@@ -32,4 +32,4 @@ struct new_utsname {
 };
 
 
-#endif /* _UAPI_LINUX_UTSNAME_H */
+#endif /* _UAPI_freax_UTSNAME_H */

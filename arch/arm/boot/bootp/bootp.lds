@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/boot/bootp/bootp.lds
+ *  freax/arch/arm/boot/bootp/bootp.lds
  *
  *  Copyright (C) 2000-2002 Russell King
  */

@@ -7,7 +7,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "ar-internal.h"
 
 static atomic_t rxrpc_txbuf_debug_ids;

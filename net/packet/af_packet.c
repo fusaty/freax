@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,7 +16,7 @@
  *		Alan Cox	:	tidied skbuff lists.
  *		Alan Cox	:	Now uses generic datagram routines I
  *					added. Also fixed the peek/read crash
- *					from all old Linux datagram code.
+ *					from all old freax datagram code.
  *		Alan Cox	:	Uses the improved datagram code.
  *		Alan Cox	:	Added NULL's for socket options.
  *		Alan Cox	:	Re-commented the code.
@@ -48,51 +48,51 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ethtool.h>
-#include <linux/filter.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/if_packet.h>
-#include <linux/wireless.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/ethtool.h>
+#include <freax/filter.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/capability.h>
+#include <freax/fcntl.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/if_packet.h>
+#include <freax/wireless.h>
+#include <freax/kernel.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/uaccess.h>
 #include <asm/ioctls.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/if_vlan.h>
-#include <linux/virtio_net.h>
-#include <linux/errqueue.h>
-#include <linux/net_tstamp.h>
-#include <linux/percpu.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/poll.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/if_vlan.h>
+#include <freax/virtio_net.h>
+#include <freax/errqueue.h>
+#include <freax/net_tstamp.h>
+#include <freax/percpu.h>
 #ifdef CONFIG_INET
 #include <net/inet_common.h>
 #endif
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <net/compat.h>
-#include <linux/netfilter_netdev.h>
+#include <freax/netfilter_netdev.h>
 
 #include "internal.h"
 

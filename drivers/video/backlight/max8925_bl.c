@@ -6,15 +6,15 @@
  *      Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/mfd/max8925.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/fb.h>
+#include <freax/i2c.h>
+#include <freax/backlight.h>
+#include <freax/mfd/max8925.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #define MAX_BRIGHTNESS		(0xff)
 #define MIN_BRIGHTNESS		(0)

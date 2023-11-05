@@ -4,18 +4,18 @@
  *
  * Author : Stephen Smalley, <stephen.smalley.work@gmail.com>
  */
-#ifndef _SELINUX_AVC_H_
-#define _SELINUX_AVC_H_
+#ifndef _SEfreax_AVC_H_
+#define _SEfreax_AVC_H_
 
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/audit.h>
-#include <linux/lsm_audit.h>
-#include <linux/in6.h>
+#include <freax/stddef.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/kdev_t.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/audit.h>
+#include <freax/lsm_audit.h>
+#include <freax/in6.h>
 #include "flask.h"
 #include "av_permissions.h"
 #include "security.h"
@@ -44,7 +44,7 @@ struct avc_cache_stats {
 /*
  * We only need this data after we have decided to send an audit message.
  */
-struct selinux_audit_data {
+struct sefreax_audit_data {
 	u32 ssid;
 	u32 tsid;
 	u16 tclass;
@@ -163,14 +163,14 @@ u32 avc_policy_seqno(void);
 
 int avc_add_callback(int (*callback)(u32 event), u32 events);
 
-/* Exported to selinuxfs */
+/* Exported to sefreaxfs */
 int avc_get_hash_stats(char *page);
 unsigned int avc_get_cache_threshold(void);
 void avc_set_cache_threshold(unsigned int cache_threshold);
 
-#ifdef CONFIG_SECURITY_SELINUX_AVC_STATS
+#ifdef CONFIG_SECURITY_SEfreax_AVC_STATS
 DECLARE_PER_CPU(struct avc_cache_stats, avc_cache_stats);
 #endif
 
-#endif /* _SELINUX_AVC_H_ */
+#endif /* _SEfreax_AVC_H_ */
 

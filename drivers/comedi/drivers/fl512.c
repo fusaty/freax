@@ -3,7 +3,7 @@
  * fl512.c
  * Anders Gnistrup <ex18@kalman.iau.dtu.dk>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -20,9 +20,9 @@
  *   [0] - I/O port base address
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/delay.h>
 
 /*
  * Register I/O map

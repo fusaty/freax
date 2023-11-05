@@ -11,13 +11,13 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/vmalloc.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/vmalloc.h>
+#include <freax/file.h>
+#include <freax/fcntl.h>
+#include <freax/fs.h>
 #include <scsi/scsi_proto.h>
 #include <asm/unaligned.h>
 

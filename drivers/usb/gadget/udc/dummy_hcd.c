@@ -11,11 +11,11 @@
 
 /*
  * This exposes a device side "USB gadget" API, driven by requests to a
- * Linux-USB host controller driver.  USB traffic is simulated; there's
+ * freax-USB host controller driver.  USB traffic is simulated; there's
  * no need for USB hardware.  Use this with two other drivers:
  *
  *  - Gadget driver, responding to requests (device);
- *  - Host-side device driver, as already familiar in Linux.
+ *  - Host-side device driver, as already familiar in freax.
  *
  * Having this all in one kernel can help some stages of development,
  * bypassing some hardware (and driver) issues.  UML could help too.
@@ -23,24 +23,24 @@
  * Note: The emulation does not include isochronous transfers!
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/scatterlist.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/usb.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/hcd.h>
+#include <freax/scatterlist.h>
 
 #include <asm/byteorder.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>
 

@@ -5,10 +5,10 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
-#define __LINUX_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
+#ifndef __freax_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
+#define __freax_PLATFORM_DATA_CLK_DAVINCI_PLL_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 /**
  * davinci_pll_platform_data
@@ -18,4 +18,4 @@ struct davinci_pll_platform_data {
 	struct regmap *cfgchip;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_CLK_DAVINCI_PLL_H__ */
+#endif /* __freax_PLATFORM_DATA_CLK_DAVINCI_PLL_H__ */

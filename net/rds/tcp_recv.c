@@ -30,8 +30,8 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <net/tcp.h>
 #include <trace/events/sock.h>
 

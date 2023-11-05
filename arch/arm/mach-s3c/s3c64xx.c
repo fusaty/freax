@@ -6,7 +6,7 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // Common Codes for S3C64XX machines
 
@@ -14,21 +14,21 @@
  * NOTE: Code in this file is not used when booting with Device Tree support.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
-#include <linux/clk/samsung.h>
-#include <linux/dma-mapping.h>
-#include <linux/irq.h>
-#include <linux/irqchip/arm-vic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/serial_core.h>
+#include <freax/serial_s3c.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/io.h>
+#include <freax/clk/samsung.h>
+#include <freax/dma-mapping.h>
+#include <freax/irq.h>
+#include <freax/irqchip/arm-vic.h>
 #include <clocksource/samsung_pwm.h>
 
 #include <asm/mach/arch.h>
@@ -422,6 +422,6 @@ arch_initcall(s3c64xx_init_irq_eint);
 #ifndef CONFIG_COMPILE_TEST
 #pragma message "The platform is deprecated and scheduled for removal. " \
 		"Please reach to the maintainers of the platform " \
-		"and linux-samsung-soc@vger.kernel.org if you still use it." \
+		"and freax-samsung-soc@vger.kernel.org if you still use it." \
 		"Without such feedback, the platform will be removed after 2024."
 #endif

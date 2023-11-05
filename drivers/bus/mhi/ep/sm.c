@@ -4,8 +4,8 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/errno.h>
-#include <linux/mhi_ep.h>
+#include <freax/errno.h>
+#include <freax/mhi_ep.h>
 #include "internal.h"
 
 bool __must_check mhi_ep_check_mhi_state(struct mhi_ep_cntrl *mhi_cntrl,

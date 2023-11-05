@@ -7,21 +7,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/err.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/core.h>
 
 /* Read a block of up to 32 regs  */
 int pcf50633_read_block(struct pcf50633 *pcf, u8 reg,

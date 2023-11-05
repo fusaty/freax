@@ -3,17 +3,17 @@
  * Copyright (C) 2017 Google, Inc.
  */
 
-#ifndef _LINUX_BINDER_ALLOC_H
-#define _LINUX_BINDER_ALLOC_H
+#ifndef _freax_BINDER_ALLOC_H
+#define _freax_BINDER_ALLOC_H
 
-#include <linux/rbtree.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/rtmutex.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/list_lru.h>
-#include <uapi/linux/android/binder.h>
+#include <freax/rbtree.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/rtmutex.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/list_lru.h>
+#include <uapi/freax/android/binder.h>
 
 extern struct list_lru binder_alloc_lru;
 struct binder_transaction;
@@ -181,5 +181,5 @@ int binder_alloc_copy_from_buffer(struct binder_alloc *alloc,
 				  binder_size_t buffer_offset,
 				  size_t bytes);
 
-#endif /* _LINUX_BINDER_ALLOC_H */
+#endif /* _freax_BINDER_ALLOC_H */
 

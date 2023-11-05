@@ -5,17 +5,17 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/dmi.h>
-#include <linux/kconfig.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/cros_ec_chardev.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
+#include <freax/dmi.h>
+#include <freax/kconfig.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/cros_ec_chardev.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/slab.h>
 
 #define DRV_NAME "cros-ec-dev"
 

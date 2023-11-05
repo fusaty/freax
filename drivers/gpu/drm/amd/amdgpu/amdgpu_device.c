@@ -25,15 +25,15 @@
  *          Alex Deucher
  *          Jerome Glisse
  */
-#include <linux/power_supply.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/apple-gmux.h>
+#include <freax/power_supply.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/console.h>
+#include <freax/slab.h>
+#include <freax/iommu.h>
+#include <freax/pci.h>
+#include <freax/pci-p2pdma.h>
+#include <freax/apple-gmux.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>
@@ -41,9 +41,9 @@
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/amdgpu_drm.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/efi.h>
+#include <freax/vgaarb.h>
+#include <freax/vga_switcheroo.h>
+#include <freax/efi.h>
 #include "amdgpu.h"
 #include "amdgpu_trace.h"
 #include "amdgpu_i2c.h"
@@ -61,7 +61,7 @@
 #include "soc15.h"
 #include "nv.h"
 #include "bif/bif_4_1_d.h"
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include "amdgpu_vf_error.h"
 
 #include "amdgpu_amdkfd.h"
@@ -73,9 +73,9 @@
 #include "amdgpu_fru_eeprom.h"
 #include "amdgpu_reset.h"
 
-#include <linux/suspend.h>
+#include <freax/suspend.h>
 #include <drm/task_barrier.h>
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/drm_drv.h>
 

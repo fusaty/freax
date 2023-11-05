@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/linkmode.h>
+#include <freax/linkmode.h>
 
 /**
  * linkmode_resolve_pause - resolve the allowable pause modes

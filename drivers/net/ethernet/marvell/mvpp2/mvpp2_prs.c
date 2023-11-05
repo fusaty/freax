@@ -7,11 +7,11 @@
  * Marcin Wojtas <mw@semihalf.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <uapi/linux/ppp_defs.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <uapi/freax/ppp_defs.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 

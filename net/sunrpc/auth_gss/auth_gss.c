@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * linux/net/sunrpc/auth_gss/auth_gss.c
+ * freax/net/sunrpc/auth_gss/auth_gss.c
  *
  * RPCSEC_GSS client authentication.
  *
@@ -11,23 +11,23 @@
  *  Andy Adamson   <andros@umich.edu>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/uaccess.h>
-#include <linux/hashtable.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/pagemap.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/sunrpc/auth_gss.h>
+#include <freax/sunrpc/gss_krb5.h>
+#include <freax/sunrpc/svcauth_gss.h>
+#include <freax/sunrpc/gss_err.h>
+#include <freax/workqueue.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/uaccess.h>
+#include <freax/hashtable.h>
 
 #include "auth_gss_internal.h"
 #include "../netns.h"

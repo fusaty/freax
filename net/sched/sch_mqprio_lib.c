@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/types.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/types.h>
 #include <net/pkt_sched.h>
 
 #include "sch_mqprio_lib.h"

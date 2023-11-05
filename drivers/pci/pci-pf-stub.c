@@ -6,8 +6,8 @@
  * driver of their own.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 /*
  * pci_pf_stub_whitelist - White list of devices to bind pci-pf-stub onto

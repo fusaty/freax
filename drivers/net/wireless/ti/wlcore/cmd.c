@@ -7,13 +7,13 @@
  * Contact: Luciano Coelho <luciano.coelho@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/etherdevice.h>
-#include <linux/ieee80211.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
+#include <freax/etherdevice.h>
+#include <freax/ieee80211.h>
+#include <freax/slab.h>
 
 #include "wlcore.h"
 #include "debug.h"

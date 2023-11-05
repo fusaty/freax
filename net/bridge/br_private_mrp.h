@@ -4,7 +4,7 @@
 #define _BR_PRIVATE_MRP_H_
 
 #include "br_private.h"
-#include <uapi/linux/mrp_bridge.h>
+#include <uapi/freax/mrp_bridge.h>
 
 #define MRP_OPT_PADDING		0x2
 

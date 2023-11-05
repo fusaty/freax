@@ -6,14 +6,14 @@
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/of_platform.h>
+#include <freax/export.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/of_platform.h>
 
 #include <media/cec.h>
 #include <media/cec-notifier.h>

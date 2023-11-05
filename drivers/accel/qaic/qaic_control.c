@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The freax Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
 #include <asm/byteorder.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/overflow.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
+#include <freax/completion.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mhi.h>
+#include <freax/mm.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/overflow.h>
+#include <freax/pci.h>
+#include <freax/scatterlist.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>
 #include <uapi/drm/qaic_accel.h>

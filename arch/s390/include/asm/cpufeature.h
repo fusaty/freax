@@ -3,7 +3,7 @@
  * Module interface for CPU features
  *
  * Copyright IBM Corp. 2015, 2022
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 
 #ifndef __ASM_S390_CPUFEATURE_H

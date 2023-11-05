@@ -8,15 +8,15 @@
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/mmci.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/slab.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/mmci.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

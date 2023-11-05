@@ -3,26 +3,26 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-map-ops.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
-#include <linux/videodev2.h>
-#include <linux/of_reserved_mem.h>
+#include <freax/init.h>
+#include <freax/interconnect.h>
+#include <freax/ioctl.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/dma-map-ops.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pm_runtime.h>
+#include <freax/videodev2.h>
+#include <freax/of_reserved_mem.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-ioctl.h>
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 #include "vpu.h"
 #include "vpu_imx8q.h"
 
@@ -259,5 +259,5 @@ module_init(vpu_driver_init);
 module_exit(vpu_driver_exit);
 
 MODULE_AUTHOR("Freescale Semiconductor, Inc.");
-MODULE_DESCRIPTION("Linux VPU driver for Freescale i.MX8Q");
+MODULE_DESCRIPTION("freax VPU driver for Freescale i.MX8Q");
 MODULE_LICENSE("GPL v2");

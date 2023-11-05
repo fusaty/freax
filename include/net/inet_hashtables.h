@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -11,15 +11,15 @@
 #define _INET_HASHTABLES_H
 
 
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_sock.h>
@@ -29,7 +29,7 @@
 #include <net/tcp_states.h>
 #include <net/netns/hash.h>
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <asm/byteorder.h>
 
 /* This is for all connections with a full identity, no wildcards.

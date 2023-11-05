@@ -2,8 +2,8 @@
 #ifndef _ASM_DMI_H
 #define _ASM_DMI_H
 
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
 
 #define dmi_early_remap(x, l)		ioremap_cache(x, l)
 #define dmi_early_unmap(x, l)		iounmap(x)

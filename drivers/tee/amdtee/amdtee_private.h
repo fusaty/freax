@@ -7,15 +7,15 @@
 #ifndef AMDTEE_PRIVATE_H
 #define AMDTEE_PRIVATE_H
 
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/tee_drv.h>
-#include <linux/kref.h>
-#include <linux/types.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/tee_drv.h>
+#include <freax/kref.h>
+#include <freax/types.h>
 #include "amdtee_if.h"
 
 #define DRIVER_NAME	"amdtee"
-#define DRIVER_AUTHOR   "AMD-TEE Linux driver team"
+#define DRIVER_AUTHOR   "AMD-TEE freax driver team"
 
 /* Some GlobalPlatform error codes used in this driver */
 #define TEEC_SUCCESS			0x00000000

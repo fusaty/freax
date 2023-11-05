@@ -2,28 +2,28 @@
 /*
  * Universal Flash Storage Host controller driver Core
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, The freax Foundation. All rights reserved.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
  *	Vinayak Holikatti <h.vinayak@samsung.com>
  */
 
-#include <linux/async.h>
-#include <linux/devfreq.h>
-#include <linux/nls.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
-#include <linux/blk-pm.h>
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_opp.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched/clock.h>
-#include <linux/iopoll.h>
+#include <freax/async.h>
+#include <freax/devfreq.h>
+#include <freax/nls.h>
+#include <freax/of.h>
+#include <freax/bitfield.h>
+#include <freax/blk-pm.h>
+#include <freax/blkdev.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pm_opp.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sched/clock.h>
+#include <freax/iopoll.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_dbg.h>
 #include <scsi/scsi_driver.h>

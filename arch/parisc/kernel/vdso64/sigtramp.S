@@ -7,7 +7,7 @@
  * Copyright (C) 2022 John David Anglin <dave.anglin@bell.net>
  */
 #include <asm/unistd.h>
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <generated/asm-offsets.h>
 
 	.text

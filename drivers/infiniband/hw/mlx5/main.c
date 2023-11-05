@@ -1,36 +1,36 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2013-2020, Mellanox Technologies inc. All rights reserved.
  * Copyright (c) 2020, Intel Corporation. All rights reserved.
  */
 
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/delay.h>
+#include <freax/debugfs.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/bitmap.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/delay.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>
-#include <linux/mlx5/port.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/mlx5/driver.h>
-#include <linux/list.h>
+#include <freax/mlx5/port.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/fs.h>
+#include <freax/mlx5/eswitch.h>
+#include <freax/mlx5/driver.h>
+#include <freax/list.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_umem_odp.h>
 #include <rdma/lag.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
+#include <freax/in.h>
+#include <freax/etherdevice.h>
 #include "mlx5_ib.h"
 #include "ib_rep.h"
 #include "cmd.h"

@@ -6,16 +6,16 @@
  * Author:	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm860x.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/rtc.h>
+#include <freax/delay.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/88pm860x.h>
 
 #define VRTC_CALIBRATION
 

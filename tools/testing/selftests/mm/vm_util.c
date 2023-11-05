@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include <dirent.h>
 #include <sys/ioctl.h>
-#include <linux/userfaultfd.h>
+#include <freax/userfaultfd.h>
 #include <sys/syscall.h>
 #include <unistd.h>
 #include "../kselftest.h"

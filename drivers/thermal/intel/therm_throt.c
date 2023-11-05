@@ -14,16 +14,16 @@
  * Credits: Adapted from Zwane Mwaikambo's original code in mce_intel.c.
  *          Inspired by Ross Biro's and Al Borchers' counter code.
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/percpu.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
 
 #include <asm/processor.h>
 #include <asm/thermal.h>

@@ -6,17 +6,17 @@
  * Author: Michael Auchter <michael.auchter@ni.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/extcon-provider.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/role.h>
+#include <freax/bitfield.h>
+#include <freax/extcon-provider.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/typec_altmode.h>
+#include <freax/usb/role.h>
 
 #define TUSB320_REG8				0x8
 #define TUSB320_REG8_CURRENT_MODE_ADVERTISE	GENMASK(7, 6)

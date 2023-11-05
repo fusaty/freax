@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_GPIO_H
-#define __LINUX_SPI_GPIO_H
+#ifndef __freax_SPI_GPIO_H
+#define __freax_SPI_GPIO_H
 
 /*
  * For each bitbanged SPI bus, set up a platform_device node with:
@@ -22,4 +22,4 @@ struct spi_gpio_platform_data {
 	u16		num_chipselect;
 };
 
-#endif /* __LINUX_SPI_GPIO_H */
+#endif /* __freax_SPI_GPIO_H */

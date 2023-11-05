@@ -6,7 +6,7 @@
 #ifndef _LOONGARCH_SETUP_H
 #define _LOONGARCH_SETUP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/sections.h>
 #include <uapi/asm/setup.h>
 
@@ -40,7 +40,7 @@ extern unsigned long __init relocate_kernel(void);
 
 static inline unsigned long kaslr_offset(void)
 {
-	return (unsigned long)&_text - VMLINUX_LOAD_ADDRESS;
+	return (unsigned long)&_text - VMfreax_LOAD_ADDRESS;
 }
 
 #endif /* __SETUP_H */

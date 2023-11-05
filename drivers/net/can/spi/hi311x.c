@@ -3,7 +3,7 @@
  *
  * Copyright(C) Timesys Corporation 2016
  *
- * Based on Microchip 251x CAN Controller (mcp251x) Linux kernel driver
+ * Based on Microchip 251x CAN Controller (mcp251x) freax kernel driver
  * Copyright 2009 Christian Pellegrin EVOL S.r.l.
  * Copyright 2007 Raymarine UK, Ltd. All Rights Reserved.
  * Copyright 2006 Arcom Control Systems Ltd.
@@ -14,26 +14,26 @@
  * Copyright 2007
  */
 
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <freax/can/core.h>
+#include <freax/can/dev.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/freezer.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/uaccess.h>
 
 #define HI3110_MASTER_RESET 0x56
 #define HI3110_READ_CTRL0 0xD2

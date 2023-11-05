@@ -5,14 +5,14 @@
  * Copyright (C) 2012 Texas Instruments, Inc. - https://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
 
 /* EHRPWM registers and bits definitions */
 

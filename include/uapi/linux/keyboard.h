@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_KEYBOARD_H
-#define _UAPI__LINUX_KEYBOARD_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_KEYBOARD_H
+#define _UAPI__freax_KEYBOARD_H
 
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 #define KG_SHIFT	0
 #define KG_CTRL		2
@@ -462,4 +462,4 @@
 #define NR_BRL		11
 
 #define MAX_DIACR	256
-#endif /* _UAPI__LINUX_KEYBOARD_H */
+#endif /* _UAPI__freax_KEYBOARD_H */

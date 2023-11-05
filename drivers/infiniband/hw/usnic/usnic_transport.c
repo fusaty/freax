@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/bitmap.h>
-#include <linux/file.h>
-#include <linux/slab.h>
+#include <freax/bitmap.h>
+#include <freax/file.h>
+#include <freax/slab.h>
 #include <net/inet_sock.h>
 
 #include "usnic_transport.h"

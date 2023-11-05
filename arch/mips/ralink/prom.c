@@ -6,7 +6,7 @@
  *  Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/string.h>
+#include <freax/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/addrspace.h>

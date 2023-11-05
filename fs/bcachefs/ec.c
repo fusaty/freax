@@ -22,12 +22,12 @@
 #include "super-io.h"
 #include "util.h"
 
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 #ifdef __KERNEL__
 
-#include <linux/raid/pq.h>
-#include <linux/raid/xor.h>
+#include <freax/raid/pq.h>
+#include <freax/raid/xor.h>
 
 static void raid5_recov(unsigned disks, unsigned failed_idx,
 			size_t size, void **data)

@@ -7,10 +7,10 @@
  * Author: Charles Keepax <ckeepax@opensource.wolfsonmicro.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
 
 #include "wm8804.h"
 

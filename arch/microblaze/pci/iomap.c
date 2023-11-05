@@ -4,11 +4,11 @@
  *
  * (C) Copyright 2004 Linus Torvalds
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/io.h>
 #include <asm/pci-bridge.h>
 
 static DEFINE_SPINLOCK(hose_spinlock);

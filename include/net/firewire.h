@@ -2,7 +2,7 @@
 #ifndef _NET_FIREWIRE_H
 #define _NET_FIREWIRE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Pseudo L2 address */
 #define FWNET_ALEN	16

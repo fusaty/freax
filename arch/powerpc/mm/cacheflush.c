@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/highmem.h>
-#include <linux/kprobes.h>
+#include <freax/highmem.h>
+#include <freax/kprobes.h>
 
 /**
  * flush_coherent_icache() - if a CPU has a coherent icache, flush it

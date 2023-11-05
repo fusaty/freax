@@ -3,18 +3,18 @@
  * Copyright 2011 IBM Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
 
 #include <asm/io.h>
 #include <asm/smp.h>
@@ -128,7 +128,7 @@ static unsigned int icp_native_get_irq(void)
 		return irq;
 	}
 
-	/* We don't have a linux mapping, so have rtas mask it. */
+	/* We don't have a freax mapping, so have rtas mask it. */
 	xics_mask_unknown_vec(vec);
 
 	/* We might learn about it later, so EOI it */
@@ -216,7 +216,7 @@ static int __init icp_native_map_one_cpu(int hw_id, unsigned long addr,
 	int i, cpu = -1;
 
 	/* This may look gross but it's good enough for now, we don't quite
-	 * have a hard -> linux processor id matching.
+	 * have a hard -> freax processor id matching.
 	 */
 	for_each_possible_cpu(i) {
 		if (!cpu_present(i))

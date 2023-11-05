@@ -5,7 +5,7 @@
  * Copyright(c) 2015 Intel Deutschland GmbH
  *****************************************************************************/
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "iwl-io.h"
 #include "iwl-agn-hw.h"

@@ -6,15 +6,15 @@
 
 */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/page.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/pci.h>
 
 #include <asm/irq.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

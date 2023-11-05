@@ -3,9 +3,9 @@
  * Copyright 2023 Ondrej Zary
  * based on paride.c by Grant R. Guenther <grant@torque.net>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/parport.h>
 #include "pata_parport.h"
 
 #define DRV_NAME "pata_parport"

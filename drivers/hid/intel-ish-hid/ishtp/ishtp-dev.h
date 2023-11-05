@@ -8,9 +8,9 @@
 #ifndef _ISHTP_DEV_H_
 #define _ISHTP_DEV_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/intel-ish-client-if.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/intel-ish-client-if.h>
 #include "bus.h"
 #include "hbm.h"
 

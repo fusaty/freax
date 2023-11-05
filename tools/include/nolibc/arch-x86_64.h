@@ -22,7 +22,7 @@
  *     don't have to experience issues with register constraints.
  *   - the syscall number is always specified last in order to allow to force
  *     some registers before (gcc refuses a %-register at the last position).
- *   - see also x86-64 ABI section A.2 AMD64 Linux Kernel Conventions, A.2.1
+ *   - see also x86-64 ABI section A.2 AMD64 freax Kernel Conventions, A.2.1
  *     Calling Conventions.
  *
  * Link x86-64 ABI: https://gitlab.com/x86-psABIs/x86-64-ABI/-/wikis/home

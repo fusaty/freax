@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext2/xattr.c
+ * freax/fs/ext2/xattr.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher <agruen@suse.de>
  *
@@ -54,14 +54,14 @@
  * to avoid deadlocks.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/mbcache.h>
-#include <linux/quotaops.h>
-#include <linux/rwsem.h>
-#include <linux/security.h>
+#include <freax/buffer_head.h>
+#include <freax/init.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/mbcache.h>
+#include <freax/quotaops.h>
+#include <freax/rwsem.h>
+#include <freax/security.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

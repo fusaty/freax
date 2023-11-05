@@ -5,8 +5,8 @@
  *  Copyright (C) 2004 Aurelien Alleaume <slts@free.fr>
  */
 
-#include <linux/device.h>   // for linux/firmware.h
-#include <linux/firmware.h>
+#include <freax/device.h>   // for freax/firmware.h
+#include <freax/firmware.h>
 #include "pvrusb2-util.h"
 #include "pvrusb2-encoder.h"
 #include "pvrusb2-hdw-internal.h"

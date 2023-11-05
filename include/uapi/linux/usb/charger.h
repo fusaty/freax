@@ -3,8 +3,8 @@
  * USB device APIs.
  */
 
-#ifndef _UAPI__LINUX_USB_CHARGER_H
-#define _UAPI__LINUX_USB_CHARGER_H
+#ifndef _UAPI__freax_USB_CHARGER_H
+#define _UAPI__freax_USB_CHARGER_H
 
 /*
  * USB charger type:
@@ -28,4 +28,4 @@ enum usb_charger_state {
 	USB_CHARGER_ABSENT = 2,
 };
 
-#endif /* _UAPI__LINUX_USB_CHARGER_H */
+#endif /* _UAPI__freax_USB_CHARGER_H */

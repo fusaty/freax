@@ -18,7 +18,7 @@
 #ifndef _SR_H
 #define _SR_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #define MAX_RETRIES	3
 #define SR_TIMEOUT	(30 * HZ)

@@ -11,19 +11,19 @@
  * TODO: proximity power saving feature
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/kfifo_buf.h>
 
 #define MAX30102_REGMAP_NAME	"max30102_regmap"
 #define MAX30102_DRV_NAME	"max30102"

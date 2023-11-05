@@ -8,35 +8,35 @@
 #include <asm/heartbeat.h>
 #include <asm/suspend.h>
 #include <cpu/sh7724.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/sh_mmcif.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/gpio_backlight.h>
-#include <linux/platform_data/tsc2007.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/spi/sh_msiof.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/usb/renesas_usbhs.h>
-#include <linux/videodev2.h>
-#include <linux/dma-map-ops.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sh_keysc.h>
+#include <freax/interrupt.h>
+#include <freax/memblock.h>
+#include <freax/mfd/tmio.h>
+#include <freax/mmc/host.h>
+#include <freax/platform_data/sh_mmcif.h>
+#include <freax/mtd/physmap.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/platform_data/gpio_backlight.h>
+#include <freax/platform_data/tsc2007.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/sh_eth.h>
+#include <freax/sh_intc.h>
+#include <freax/spi/mmc_spi.h>
+#include <freax/spi/sh_msiof.h>
+#include <freax/spi/spi.h>
+#include <freax/usb/r8a66597.h>
+#include <freax/usb/renesas_usbhs.h>
+#include <freax/videodev2.h>
+#include <freax/dma-map-ops.h>
 
 #include <media/drv-intf/renesas-ceu.h>
 #include <media/i2c/mt9t112.h>
@@ -51,8 +51,8 @@
  *  Address      Interface        BusWidth
  *-----------------------------------------
  *  0x0000_0000  uboot            16bit
- *  0x0004_0000  Linux romImage   16bit
- *  0x0014_0000  MTD for Linux    16bit
+ *  0x0004_0000  freax romImage   16bit
+ *  0x0014_0000  MTD for freax    16bit
  *  0x0400_0000  Internal I/O     16/32bit
  *  0x0800_0000  DRAM             32bit
  *  0x1800_0000  MFI              16bit

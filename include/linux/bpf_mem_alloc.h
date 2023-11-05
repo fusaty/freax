@@ -2,8 +2,8 @@
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
 #ifndef _BPF_MEM_ALLOC_H
 #define _BPF_MEM_ALLOC_H
-#include <linux/compiler_types.h>
-#include <linux/workqueue.h>
+#include <freax/compiler_types.h>
+#include <freax/workqueue.h>
 
 struct bpf_mem_cache;
 struct bpf_mem_caches;

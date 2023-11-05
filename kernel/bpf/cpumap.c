@@ -19,21 +19,21 @@
  * netstack, and assigning dedicated CPUs for this stage.  This
  * basically allows for 10G wirespeed pre-filtering via bpf.
  */
-#include <linux/bitops.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/ptr_ring.h>
+#include <freax/bitops.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/ptr_ring.h>
 #include <net/xdp.h>
 
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
+#include <freax/sched.h>
+#include <freax/workqueue.h>
+#include <freax/kthread.h>
+#include <freax/completion.h>
 #include <trace/events/xdp.h>
-#include <linux/btf_ids.h>
+#include <freax/btf_ids.h>
 
-#include <linux/netdevice.h>   /* netif_receive_skb_list */
-#include <linux/etherdevice.h> /* eth_type_trans */
+#include <freax/netdevice.h>   /* netif_receive_skb_list */
+#include <freax/etherdevice.h> /* eth_type_trans */
 
 /* General idea: XDP packets getting XDP redirected to another CPU,
  * will maximum be stored/queued for one driver ->poll() call.  It is

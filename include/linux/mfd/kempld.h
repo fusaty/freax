@@ -6,8 +6,8 @@
  * Author: Michael Brunner <michael.brunner@kontron.com>
  */
 
-#ifndef _LINUX_MFD_KEMPLD_H_
-#define _LINUX_MFD_KEMPLD_H_
+#ifndef _freax_MFD_KEMPLD_H_
+#define _freax_MFD_KEMPLD_H_
 
 /* kempld register definitions */
 #define KEMPLD_IOINDEX			0xa80
@@ -123,4 +123,4 @@ extern void kempld_write16(struct kempld_device_data *pld, u8 index, u16 data);
 extern u32 kempld_read32(struct kempld_device_data *pld, u8 index);
 extern void kempld_write32(struct kempld_device_data *pld, u8 index, u32 data);
 
-#endif /* _LINUX_MFD_KEMPLD_H_ */
+#endif /* _freax_MFD_KEMPLD_H_ */

@@ -4,7 +4,7 @@
 #define __PSP_H
 
 #ifdef CONFIG_X86
-#include <linux/mem_encrypt.h>
+#include <freax/mem_encrypt.h>
 
 #define __psp_pa(x)	__sme_pa(x)
 #else

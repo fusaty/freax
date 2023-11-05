@@ -13,10 +13,10 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/kasan.h>
-#include <linux/printk.h>
-#include <linux/sched/task.h>
-#include <linux/memblock.h>
+#include <freax/kasan.h>
+#include <freax/printk.h>
+#include <freax/sched/task.h>
+#include <freax/memblock.h>
 #include <asm/pgalloc.h>
 
 DEFINE_STATIC_KEY_FALSE(powerpc_kasan_enabled_key);

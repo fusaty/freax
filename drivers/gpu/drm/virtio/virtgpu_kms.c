@@ -23,9 +23,9 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
+#include <freax/virtio.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_ring.h>
 
 #include <drm/drm_file.h>
 #include <drm/drm_managed.h>

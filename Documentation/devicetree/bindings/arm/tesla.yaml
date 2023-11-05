@@ -8,7 +8,7 @@ title: Tesla Full Self Driving(FSD) platforms
 
 maintainers:
   - Alim Akhtar <alim.akhtar@samsung.com>
-  - linux-fsd@tesla.com
+  - freax-fsd@tesla.com
 
 properties:
   $nodename:

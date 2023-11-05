@@ -3,15 +3,15 @@
 // Copyright (C) 2017 Socionext Inc.
 //   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
 
-#include <linux/bits.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/bits.h>
+#include <freax/gpio/driver.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 #include <dt-bindings/gpio/uniphier-gpio.h>
 
 #define UNIPHIER_GPIO_IRQ_MAX_NUM	24

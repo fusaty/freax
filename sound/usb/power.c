@@ -3,11 +3,11 @@
  *   UAC3 Power Domain state management functions
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/usb/audio-v3.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/audio-v2.h>
+#include <freax/usb/audio-v3.h>
 
 #include "usbaudio.h"
 #include "helper.h"

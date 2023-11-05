@@ -1,5 +1,5 @@
 /*
- * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for linux.
+ * tc35815.c: A TOSHIBA TC35815CF PCI 10/100Mbps ethernet driver for freax.
  *
  * Based on skelton.c by Donald Becker.
  *
@@ -26,27 +26,27 @@
 static const char version[] = "tc35815.c:v" DRV_VERSION "\n";
 #define MODNAME			"tc35815"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/phy.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/if_vlan.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/phy.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
+#include <freax/prefetch.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 

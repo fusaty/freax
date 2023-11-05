@@ -1,5 +1,5 @@
-#ifndef _LINUX_LOCAL_LOCK
-#define _LINUX_LOCAL_LOCK
+#ifndef _freax_LOCAL_LOCK
+#define _freax_LOCAL_LOCK
 typedef struct { } local_lock_t;
 
 static inline void local_lock(local_lock_t *lock) { }

@@ -7,11 +7,11 @@
 #ifndef _ASM_RISCV_MMU_CONTEXT_H
 #define _ASM_RISCV_MMU_CONTEXT_H
 
-#include <linux/mm_types.h>
+#include <freax/mm_types.h>
 #include <asm-generic/mm_hooks.h>
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
 
 void switch_mm(struct mm_struct *prev, struct mm_struct *next,
 	struct task_struct *task);

@@ -10,10 +10,10 @@
  * and 1 input status line (BUSY) able to cause an interrupt.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/parport.h>
+#include <freax/interrupt.h>
 #include <asm/setup.h>
 #include <asm/atarihw.h>
 #include <asm/irq.h>

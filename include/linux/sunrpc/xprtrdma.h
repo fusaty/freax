@@ -38,12 +38,12 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_SUNRPC_XPRTRDMA_H
-#define _LINUX_SUNRPC_XPRTRDMA_H
+#ifndef _freax_SUNRPC_XPRTRDMA_H
+#define _freax_SUNRPC_XPRTRDMA_H
 
 /*
  * Constants. Max RPC/NFS header is big enough to account for
- * additional marshaling buffers passed down by Linux client.
+ * additional marshaling buffers passed down by freax client.
  *
  * RDMA header is currently fixed max size, and is big enough for a
  * fully-chunked NFS message (read chunks are the largest). Note only
@@ -70,4 +70,4 @@ enum rpcrdma_memreg {
 	RPCRDMA_LAST
 };
 
-#endif /* _LINUX_SUNRPC_XPRTRDMA_H */
+#endif /* _freax_SUNRPC_XPRTRDMA_H */

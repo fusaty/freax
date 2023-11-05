@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved.
  */
@@ -7,9 +7,9 @@
 #include <rdma/ib_verbs.h>
 #include <rdma/restrack.h>
 #include <rdma/rdma_counter.h>
-#include <linux/mutex.h>
-#include <linux/sched/task.h>
-#include <linux/pid_namespace.h>
+#include <freax/mutex.h>
+#include <freax/sched/task.h>
+#include <freax/pid_namespace.h>
 
 #include "cma_priv.h"
 #include "restrack.h"

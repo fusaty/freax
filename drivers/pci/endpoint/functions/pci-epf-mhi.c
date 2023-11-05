@@ -6,13 +6,13 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/dmaengine.h>
-#include <linux/mhi_ep.h>
-#include <linux/module.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <freax/dmaengine.h>
+#include <freax/mhi_ep.h>
+#include <freax/module.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/pci-epc.h>
+#include <freax/pci-epf.h>
 
 #define MHI_VERSION_1_0 0x01000000
 

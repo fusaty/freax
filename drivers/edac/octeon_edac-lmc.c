@@ -4,17 +4,17 @@
  * for more details.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@freax-mips.org>
  *
  * Copyright (c) 2013 by Cisco Systems, Inc.
  * All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/edac.h>
-#include <linux/ctype.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/edac.h>
+#include <freax/ctype.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-lmcx-defs.h>
@@ -321,4 +321,4 @@ static struct platform_driver octeon_lmc_edac_driver = {
 module_platform_driver(octeon_lmc_edac_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@freax-mips.org>");

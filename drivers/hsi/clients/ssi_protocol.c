@@ -10,27 +10,27 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/if_phonet.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/ssi_protocol.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
+#include <freax/if_phonet.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/scatterlist.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/hsi/hsi.h>
+#include <freax/hsi/ssi_protocol.h>
 
 #define SSIP_TXQUEUE_LEN	100
 #define SSIP_MAX_MTU		65535

@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /* Copyright (C) 2018 Microchip Technology Inc. */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/microchipphy.h>
-#include <linux/net_tstamp.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/rtnetlink.h>
-#include <linux/iopoll.h>
-#include <linux/crc16.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/microchipphy.h>
+#include <freax/net_tstamp.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/rtnetlink.h>
+#include <freax/iopoll.h>
+#include <freax/crc16.h>
 #include "lan743x_main.h"
 #include "lan743x_ethtool.h"
 

@@ -10,12 +10,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
 
-#include <linux/can/dev.h>
+#include <freax/can/dev.h>
 
 #include "c_can.h"
 

@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (c) 2008, Intel Corporation.
  *
  * Author: Alexander Duyck <alexander.h.duyck@intel.com>
  */
 
-#ifndef __LINUX_TC_SKBEDIT_H
-#define __LINUX_TC_SKBEDIT_H
+#ifndef __freax_TC_SKBEDIT_H
+#define __freax_TC_SKBEDIT_H
 
-#include <linux/pkt_cls.h>
+#include <freax/pkt_cls.h>
 
 #define SKBEDIT_F_PRIORITY		0x1
 #define SKBEDIT_F_QUEUE_MAPPING		0x2

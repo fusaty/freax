@@ -5,21 +5,21 @@
  * Copyright (C) 2017 Google, Inc
  */
 
-#include <linux/device.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/common/cros_ec_sensors_core.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/common/cros_ec_sensors_core.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_device.h>
 
 /*
  * One channel for pressure, the other for timestamp.

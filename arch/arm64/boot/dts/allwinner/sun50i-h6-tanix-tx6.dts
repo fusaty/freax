@@ -11,7 +11,7 @@
 };
 
 &r_ir {
-	linux,rc-map-name = "rc-tanix-tx5max";
+	freax,rc-map-name = "rc-tanix-tx5max";
 };
 
 &uart1 {

@@ -6,16 +6,16 @@
  *
  * Copyright (C) 2017 Eric Nelson
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/rtc.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/bcd.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 /*
  * Date/Time registers

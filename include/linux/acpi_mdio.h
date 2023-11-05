@@ -3,10 +3,10 @@
  * ACPI helper for the MDIO (Ethernet PHY) API
  */
 
-#ifndef __LINUX_ACPI_MDIO_H
-#define __LINUX_ACPI_MDIO_H
+#ifndef __freax_ACPI_MDIO_H
+#define __freax_ACPI_MDIO_H
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 #if IS_ENABLED(CONFIG_ACPI_MDIO)
 int __acpi_mdiobus_register(struct mii_bus *mdio, struct fwnode_handle *fwnode,
@@ -30,4 +30,4 @@ acpi_mdiobus_register(struct mii_bus *mdio, struct fwnode_handle *fwnode)
 }
 #endif
 
-#endif /* __LINUX_ACPI_MDIO_H */
+#endif /* __freax_ACPI_MDIO_H */

@@ -9,18 +9,18 @@
  * JC42.4 compliant temperature sensors are typically used on memory modules.
  */
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/bitops.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = {
@@ -638,6 +638,6 @@ static struct i2c_driver jc42_driver = {
 
 module_i2c_driver(jc42_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <freax@roeck-us.net>");
 MODULE_DESCRIPTION("JC42 driver");
 MODULE_LICENSE("GPL");

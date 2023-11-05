@@ -15,35 +15,35 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/ptrace.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/bitops.h>
+#include <freax/fs.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
+#include <freax/property.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/pgtable.h>
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "fs_enet.h"
 

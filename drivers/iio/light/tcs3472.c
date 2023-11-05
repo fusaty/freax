@@ -13,17 +13,17 @@
  * TODO: wait time
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/events.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define TCS3472_DRV_NAME "tcs3472"
 

@@ -57,15 +57,15 @@
 #include "sysfs.h"
 #include "trace.h"
 
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/percpu.h>
-#include <linux/random.h>
-#include <linux/sysfs.h>
+#include <freax/backing-dev.h>
+#include <freax/blkdev.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/percpu.h>
+#include <freax/random.h>
+#include <freax/sysfs.h>
 #include <crypto/hash.h>
 
 MODULE_LICENSE("GPL");

@@ -38,23 +38,23 @@
  *  out_of_space hacks, D. Gilbert (dpg) 990608
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/unistd.h>
-#include <linux/spinlock.h>
-#include <linux/kmod.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/unistd.h>
+#include <freax/spinlock.h>
+#include <freax/kmod.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/mutex.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

@@ -4,21 +4,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/ktime.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mod_devicetable.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/highmem.h>
+#include <freax/crypto.h>
+#include <freax/hw_random.h>
+#include <freax/ktime.h>
 
 #include <crypto/algapi.h>
 #include <crypto/internal/des.h>

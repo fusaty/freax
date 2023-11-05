@@ -8,15 +8,15 @@
  * Bongsu Jeon <bongsu.jeon@samsung.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/serdev.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/nfc.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/serdev.h>
+#include <freax/gpio.h>
+#include <freax/of_gpio.h>
 
 #include "phy_common.h"
 

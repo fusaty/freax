@@ -3,12 +3,12 @@
  * qdio queue initialization
  *
  * Copyright IBM Corp. 2008
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@freax.vnet.ibm.com>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/io.h>
 
 #include <asm/ebcdic.h>
 #include <asm/qdio.h>

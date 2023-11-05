@@ -6,52 +6,52 @@
  */
 
 /*
- *  The ORANGEFS Linux kernel support allows ORANGEFS volumes to be mounted and
- *  accessed through the Linux VFS (i.e. using standard I/O system calls).
+ *  The ORANGEFS freax kernel support allows ORANGEFS volumes to be mounted and
+ *  accessed through the freax VFS (i.e. using standard I/O system calls).
  *  This support is only needed on clients that wish to mount the file system.
  *
  */
 
 /*
- *  Declarations and macros for the ORANGEFS Linux kernel support.
+ *  Declarations and macros for the ORANGEFS freax kernel support.
  */
 
 #ifndef __ORANGEFSKERNEL_H
 #define __ORANGEFSKERNEL_H
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/statfs.h>
-#include <linux/backing-dev.h>
-#include <linux/device.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/statfs.h>
+#include <freax/backing-dev.h>
+#include <freax/device.h>
+#include <freax/mpage.h>
+#include <freax/namei.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
 
-#include <linux/aio.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/uio.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/dcache.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/hashtable.h>
+#include <freax/aio.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/compat.h>
+#include <freax/mount.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/uio.h>
+#include <freax/sched/signal.h>
+#include <freax/mm.h>
+#include <freax/wait.h>
+#include <freax/dcache.h>
+#include <freax/pagemap.h>
+#include <freax/poll.h>
+#include <freax/rwsem.h>
+#include <freax/xattr.h>
+#include <freax/exportfs.h>
+#include <freax/hashtable.h>
 
 #include <asm/unaligned.h>
 

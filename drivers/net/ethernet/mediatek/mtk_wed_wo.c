@@ -5,13 +5,13 @@
  *	   Sujuan Chen <sujuan.chen@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/bitfield.h>
 
 #include "mtk_wed.h"
 #include "mtk_wed_regs.h"

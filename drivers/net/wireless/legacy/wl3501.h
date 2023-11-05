@@ -2,8 +2,8 @@
 #ifndef __WL3501_H__
 #define __WL3501_H__
 
-#include <linux/spinlock.h>
-#include <linux/ieee80211.h>
+#include <freax/spinlock.h>
+#include <freax/ieee80211.h>
 
 /* define for WLA 2.0 */
 #define WL3501_BLKSZ 256

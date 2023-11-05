@@ -5,13 +5,13 @@
  * Copyright (c) 2008 Sascha Hauer <s.hauer@pengutronix.de>, Pengutronix
  */
 
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/of.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/gpio/legacy-of-mm-gpiochip.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 
 #include <asm/mpc52xx.h>
 #include <sysdev/fsl_soc.h>

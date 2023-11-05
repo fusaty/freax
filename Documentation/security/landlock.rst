@@ -126,4 +126,4 @@ makes the reasoning much easier and helps avoid pitfalls.
 
 .. Links
 .. _tools/testing/selftests/landlock/:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/landlock/
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/tools/testing/selftests/landlock/

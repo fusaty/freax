@@ -2,7 +2,7 @@
 /* Copyright (c) 2021 Facebook */
 
 #include <argp.h>
-#include <linux/log2.h>
+#include <freax/log2.h>
 #include <pthread.h>
 #include "bench.h"
 #include "bloom_filter_bench.skel.h"

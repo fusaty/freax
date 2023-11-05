@@ -4,7 +4,7 @@
 #include "sb-members.h"
 #include "super-io.h"
 
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 static int group_cmp(const void *_l, const void *_r)
 {

@@ -6,20 +6,20 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/time.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/time.h>
 #include <net/gso.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>

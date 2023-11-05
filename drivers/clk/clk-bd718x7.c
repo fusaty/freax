@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 ROHM Semiconductors
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/regmap.h>
 
 /* clk control registers */
 /* BD71815 */

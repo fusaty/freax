@@ -6,9 +6,9 @@
  * Copyright (c) 2009 Dmitry Artamonow <mad_soft@inbox.ru>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/gpio.h>
 
 #include <video/sa1100fb.h>
 

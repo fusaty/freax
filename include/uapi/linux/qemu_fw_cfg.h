@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: BSD-3-Clause */
-#ifndef _LINUX_FW_CFG_H
-#define _LINUX_FW_CFG_H
+#ifndef _freax_FW_CFG_H
+#define _freax_FW_CFG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define FW_CFG_ACPI_DEVICE_ID	"QEMU0002"
 

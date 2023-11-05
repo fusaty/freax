@@ -6,7 +6,7 @@
  * Author: Dmitry Tarnyagin <dmitry.tarnyagin@lockless.no>
  */
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 #include "cw1200.h"
 #include "scan.h"
 #include "sta.h"

@@ -4,9 +4,9 @@
  *
  * Author : Stephen Smalley, <stephen.smalley.work@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
 #include "symtab.h"
 
 static unsigned int symhash(const void *key)

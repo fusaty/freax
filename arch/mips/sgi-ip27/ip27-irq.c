@@ -7,13 +7,13 @@
  * Copyright (C) 1999 - 2001 Kanoj Sarcar
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>
 
 #include <asm/io.h>
 #include <asm/irq_cpu.h>

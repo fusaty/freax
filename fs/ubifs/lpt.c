@@ -32,9 +32,9 @@
  */
 
 #include "ubifs.h"
-#include <linux/crc16.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <freax/crc16.h>
+#include <freax/math64.h>
+#include <freax/slab.h>
 
 /**
  * do_calc_lpt_geom - calculate sizes for the LPT area.

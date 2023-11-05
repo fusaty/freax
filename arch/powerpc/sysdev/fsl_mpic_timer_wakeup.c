@@ -5,12 +5,12 @@
  * Copyright 2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
 
 #include <asm/mpic_timer.h>
 #include <asm/mpic.h>

@@ -7,10 +7,10 @@
 #ifndef SH_DMA_H
 #define SH_DMA_H
 
-#include <linux/dmaengine.h>
-#include <linux/list.h>
-#include <linux/shdma-base.h>
-#include <linux/types.h>
+#include <freax/dmaengine.h>
+#include <freax/list.h>
+#include <freax/shdma-base.h>
+#include <freax/types.h>
 
 struct device;
 

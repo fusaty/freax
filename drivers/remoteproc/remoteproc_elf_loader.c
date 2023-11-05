@@ -17,10 +17,10 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/remoteproc.h>
-#include <linux/elf.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/remoteproc.h>
+#include <freax/elf.h>
 
 #include "remoteproc_internal.h"
 #include "remoteproc_elf_helpers.h"

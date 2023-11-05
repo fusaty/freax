@@ -12,9 +12,9 @@
 #ifndef PMC_CORE_H
 #define PMC_CORE_H
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/bits.h>
+#include <freax/platform_device.h>
 
 #define SLP_S0_RES_COUNTER_MASK			GENMASK(31, 0)
 

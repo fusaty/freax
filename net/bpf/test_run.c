@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2017 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/sched/signal.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/vmalloc.h>
+#include <freax/etherdevice.h>
+#include <freax/filter.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/sched/signal.h>
 #include <net/bpf_sk_storage.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <net/net_namespace.h>
 #include <net/page_pool/helpers.h>
-#include <linux/error-injection.h>
-#include <linux/smp.h>
-#include <linux/sock_diag.h>
-#include <linux/netfilter.h>
+#include <freax/error-injection.h>
+#include <freax/smp.h>
+#include <freax/sock_diag.h>
+#include <freax/netfilter.h>
 #include <net/netdev_rx_queue.h>
 #include <net/xdp.h>
 #include <net/netfilter/nf_bpf_link.h>
@@ -505,7 +505,7 @@ out:
  */
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 __bpf_kfunc int bpf_fentry_test1(int a)
 {
 	return a + 1;

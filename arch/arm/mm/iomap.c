@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/arm/mm/iomap.c
+ *  freax/arch/arm/mm/iomap.c
  *
  * Map IO port and PCI memory spaces so that {read,write}[bwl] can
  * be used to access this memory.
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
 
 #include <asm/vga.h>
 

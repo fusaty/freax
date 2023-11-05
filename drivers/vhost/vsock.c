@@ -6,15 +6,15 @@
  * Author: Asias He <asias@redhat.com>
  *         Stefan Hajnoczi <stefanha@redhat.com>
  */
-#include <linux/miscdevice.h>
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
+#include <freax/miscdevice.h>
+#include <freax/atomic.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/vmalloc.h>
 #include <net/sock.h>
-#include <linux/virtio_vsock.h>
-#include <linux/vhost.h>
-#include <linux/hashtable.h>
+#include <freax/virtio_vsock.h>
+#include <freax/vhost.h>
+#include <freax/hashtable.h>
 
 #include <net/af_vsock.h>
 #include "vhost.h"

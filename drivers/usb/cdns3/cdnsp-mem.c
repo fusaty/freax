@@ -6,14 +6,14 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on freax XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 #include "cdnsp-gadget.h"
 #include "cdnsp-trace.h"

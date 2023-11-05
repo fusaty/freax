@@ -5,21 +5,21 @@
  * Copyright (C) 2013 Samsung Electronics Co., Ltd.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
-#include <linux/i2c.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
+#include <freax/i2c.h>
+#include <freax/time.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/spinlock.h>
 
 /*
  * HSI2C controller from Samsung supports 2 modes of operation

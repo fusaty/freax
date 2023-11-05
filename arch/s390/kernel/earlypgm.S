@@ -4,7 +4,7 @@
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asm-offsets.h>
 
 SYM_CODE_START(early_pgm_check_handler)

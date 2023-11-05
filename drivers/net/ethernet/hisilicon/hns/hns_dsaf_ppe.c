@@ -3,12 +3,12 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
 
 #include "hns_dsaf_ppe.h"
 

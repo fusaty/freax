@@ -6,16 +6,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -24,29 +24,29 @@
  *
  * --------------------------------------------------------------------
  *
- * This file implements the module and linux pcmcia routines for the
+ * This file implements the module and freax pcmcia routines for the
  * prism2 driver.
  *
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/byteorder/generic.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/wireless.h>
+#include <freax/netdevice.h>
+#include <freax/workqueue.h>
+#include <freax/byteorder/generic.h>
+#include <freax/etherdevice.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <freax/io.h>
+#include <freax/delay.h>
 #include <asm/byteorder.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/bitops.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -312,7 +312,7 @@ static int prism2sta_mlmerequest(struct wlandevice *wlandev,
 		result = prism2mgmt_flashdl_write(wlandev, msg);
 		break;
 		/*
-		 * Linux specific messages
+		 * freax specific messages
 		 */
 	case DIDMSG_LNXREQ_HOSTWEP:
 		break;		/* ignore me. */
@@ -1767,7 +1767,7 @@ void prism2sta_ev_info(struct wlandevice *wlandev,
 void prism2sta_ev_tx(struct wlandevice *wlandev, u16 status)
 {
 	netdev_dbg(wlandev->netdev, "Tx Complete, status=0x%04x\n", status);
-	/* update linux network stats */
+	/* update freax network stats */
 	wlandev->netdev->stats.tx_packets++;
 }
 

@@ -4,11 +4,11 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/quotaops.h>
-#include <linux/exportfs.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/ctype.h>
+#include <freax/quotaops.h>
+#include <freax/exportfs.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_inode.h"

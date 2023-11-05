@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: LGPL-2.1 OR BSD-2-Clause
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
@@ -78,7 +78,7 @@ struct {
 } allowed_ports SEC(".maps");
 
 /* Some symbols defined in net/netfilter/nf_conntrack_bpf.c are unavailable in
- * vmlinux.h if CONFIG_NF_CONNTRACK=m, so they are redefined locally.
+ * vmfreax.h if CONFIG_NF_CONNTRACK=m, so they are redefined locally.
  */
 
 struct bpf_ct_opts___local {

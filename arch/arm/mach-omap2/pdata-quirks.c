@@ -4,26 +4,26 @@
  *
  * Copyright (C) 2013 Texas Instruments
  */
-#include <linux/clk.h>
-#include <linux/davinci_emac.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/power/smartreflex.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <freax/clk.h>
+#include <freax/davinci_emac.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/of_platform.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/power/smartreflex.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/fixed.h>
 
-#include <linux/platform_data/pinctrl-single.h>
-#include <linux/platform_data/hsmmc-omap.h>
-#include <linux/platform_data/iommu-omap.h>
-#include <linux/platform_data/ti-sysc.h>
-#include <linux/platform_data/wkup_m3.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/platform_data/ti-prm.h>
+#include <freax/platform_data/pinctrl-single.h>
+#include <freax/platform_data/hsmmc-omap.h>
+#include <freax/platform_data/iommu-omap.h>
+#include <freax/platform_data/ti-sysc.h>
+#include <freax/platform_data/wkup_m3.h>
+#include <freax/platform_data/asoc-ti-mcbsp.h>
+#include <freax/platform_data/ti-prm.h>
 
 #include "clockdomain.h"
 #include "common.h"

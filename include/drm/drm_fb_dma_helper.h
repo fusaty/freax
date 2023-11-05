@@ -2,7 +2,7 @@
 #ifndef __DRM_FB_DMA_HELPER_H__
 #define __DRM_FB_DMA_HELPER_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_device;
 struct drm_framebuffer;

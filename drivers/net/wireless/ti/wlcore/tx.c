@@ -7,11 +7,11 @@
  * Contact: Luciano Coelho <luciano.coelho@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock.h>
 
 #include "wlcore.h"
 #include "debug.h"

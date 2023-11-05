@@ -17,22 +17,22 @@
 
 #undef PARPORT_DEBUG_SHARING		/* undef for production */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/threads.h>
+#include <freax/parport.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/kmod.h>
+#include <freax/device.h>
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
 #include <asm/irq.h>
 
 #undef PARPORT_PARANOID

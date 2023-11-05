@@ -13,7 +13,7 @@
 
 #include "ctpcm.h"
 #include "cttimer.h"
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <sound/pcm.h>
 
 /* Hardware descriptions for playback */

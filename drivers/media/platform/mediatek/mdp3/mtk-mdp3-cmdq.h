@@ -7,9 +7,9 @@
 #ifndef __MTK_MDP3_CMDQ_H__
 #define __MTK_MDP3_CMDQ_H__
 
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <freax/platform_device.h>
+#include <freax/videodev2.h>
+#include <freax/soc/mediatek/mtk-cmdq.h>
 #include "mtk-img-ipi.h"
 
 struct platform_device *mdp_get_plat_device(struct platform_device *pdev);

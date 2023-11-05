@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/floppydma.S
+ *  freax/arch/arm/lib/floppydma.S
  *
  *  Copyright (C) 1995, 1996 Russell King
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 		.text
 

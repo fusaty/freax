@@ -6,7 +6,7 @@
 #ifndef __QCOM_ICE_H__
 #define __QCOM_ICE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct qcom_ice;
 

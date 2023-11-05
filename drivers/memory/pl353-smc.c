@@ -7,13 +7,13 @@
  * Author: Naga Sureshkumar Relli <nagasure@xilinx.com>
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/amba/bus.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/amba/bus.h>
 
 /**
  * struct pl353_smc_data - Private smc driver structure

@@ -12,25 +12,25 @@
  *   Based on imxfb.c Copyright (C) 2004 S.Hauer, Pengutronix
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/spinlock.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #include <sysdev/fsl_soc.h>
-#include <linux/fsl-diu-fb.h>
+#include <freax/fsl-diu-fb.h>
 #include "edid.h"
 
 #define NUM_AOIS	5	/* 1 for plane 0, 2 for planes 1 & 2 each */

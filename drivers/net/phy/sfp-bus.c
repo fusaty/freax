@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/phylink.h>
-#include <linux/property.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/phylink.h>
+#include <freax/property.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
 
 #include "sfp.h"
 

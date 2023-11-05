@@ -10,7 +10,7 @@
 #include <asm/simple_spinlock.h>
 #endif
 
-/* See include/linux/spinlock.h */
+/* See include/freax/spinlock.h */
 #define smp_mb__after_spinlock()	smp_mb()
 
 #ifndef CONFIG_PPC_QUEUED_SPINLOCKS

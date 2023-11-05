@@ -106,20 +106,20 @@
  * be reported as messages under "errors" for later analysis.
  */
 
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
+#include <freax/bitmap.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/poll.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/xarray.h>
 
 #include "common.h"
 
@@ -469,7 +469,7 @@ static void scmi_xfer_raw_worker(struct work_struct *work)
 		ret = scmi_xfer_raw_wait_for_message_response(cinfo, xfer,
 							      timeout_ms);
 		if (!ret && xfer->hdr.status)
-			ret = scmi_to_linux_errno(xfer->hdr.status);
+			ret = scmi_to_freax_errno(xfer->hdr.status);
 
 		if (raw->desc->ops->mark_txdone)
 			raw->desc->ops->mark_txdone(rw->cinfo, ret, xfer);

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_EISA_H
-#define _LINUX_EISA_H
+#ifndef _freax_EISA_H
+#define _freax_EISA_H
 
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
 #define EISA_MAX_SLOTS 8
 

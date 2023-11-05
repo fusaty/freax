@@ -10,16 +10,16 @@
 #include <crypto/internal/hash.h>
 #include <crypto/scatterwalk.h>
 #include "jh7110-cryp.h"
-#include <linux/amba/pl080.h>
-#include <linux/clk.h>
-#include <linux/dma-direct.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/amba/pl080.h>
+#include <freax/clk.h>
+#include <freax/dma-direct.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #define STARFIVE_HASH_REGS_OFFSET	0x300
 #define STARFIVE_HASH_SHACSR		(STARFIVE_HASH_REGS_OFFSET + 0x0)

@@ -12,19 +12,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/memory.h>
-#include <linux/vmalloc.h>
-#include <linux/set_memory.h>
+#include <freax/spinlock.h>
+#include <freax/hardirq.h>
+#include <freax/uaccess.h>
+#include <freax/ftrace.h>
+#include <freax/percpu.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/memory.h>
+#include <freax/vmalloc.h>
+#include <freax/set_memory.h>
 
 #include <trace/syscall.h>
 
@@ -261,7 +261,7 @@ void arch_ftrace_update_code(int command)
 #ifdef CONFIG_X86_64
 
 #ifdef CONFIG_MODULES
-#include <linux/moduleloader.h>
+#include <freax/moduleloader.h>
 /* Module allocation simplifies allocating memory for code */
 static inline void *alloc_tramp(unsigned long size)
 {

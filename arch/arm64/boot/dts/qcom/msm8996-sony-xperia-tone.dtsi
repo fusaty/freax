@@ -70,7 +70,7 @@
 	};
 
 	usb3_id: usb3-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		id-gpios = <&tlmm 25 GPIO_ACTIVE_LOW>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb_detect>;
@@ -473,7 +473,7 @@
 };
 
 &pm8994_resin {
-	linux,code = <KEY_VOLUMEUP>;
+	freax,code = <KEY_VOLUMEUP>;
 	status = "okay";
 };
 

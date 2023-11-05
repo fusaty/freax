@@ -5,16 +5,16 @@
  * Copyright (C) 2020 Intel Corporation, Inc.
  *
  */
-#include <linux/bitfield.h>
-#include <linux/dfl.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/dfl.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define FME_FEATURE_ID_EMIF		0x9
 

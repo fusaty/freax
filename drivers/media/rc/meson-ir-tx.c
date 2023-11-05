@@ -7,16 +7,16 @@
  * Author: Viktor Prutyanov <viktor.prutyanov@phystech.edu>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/of_irq.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
 #include <media/rc-core.h>
 
 #define DEVICE_NAME	"Meson IR TX"

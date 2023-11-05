@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/xprtsock.h
+ *  freax/include/freax/sunrpc/xprtsock.h
  *
  *  Declarations for the RPC transport socket provider.
  */
 
-#ifndef _LINUX_SUNRPC_XPRTSOCK_H
-#define _LINUX_SUNRPC_XPRTSOCK_H
+#ifndef _freax_SUNRPC_XPRTSOCK_H
+#define _freax_SUNRPC_XPRTSOCK_H
 
 int		init_socket_xprt(void);
 void		cleanup_socket_xprt(void);
@@ -94,4 +94,4 @@ struct sock_xprt {
 #define XPRT_SOCK_NOSPACE	(9)
 #define XPRT_SOCK_IGNORE_RECV	(10)
 
-#endif /* _LINUX_SUNRPC_XPRTSOCK_H */
+#endif /* _freax_SUNRPC_XPRTSOCK_H */

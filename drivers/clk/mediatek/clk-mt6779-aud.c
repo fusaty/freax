@@ -4,10 +4,10 @@
  * Author: Wendell Lin <wendell.lin@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

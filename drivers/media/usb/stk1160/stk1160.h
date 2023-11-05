@@ -10,14 +10,14 @@
  *	<rmthomas--a.t--sciolus.org>
  */
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #define STK1160_VERSION		"0.9.5"
 #define STK1160_VERSION_NUM	0x000905

@@ -35,21 +35,21 @@
 		button-0 {
 			/* #SWITCH_A */
 			label = "S11";
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			gpios = <&pca9555 13 GPIO_ACTIVE_LOW>;
 		};
 
 		button-1 {
 			/* #SWITCH_B */
 			label = "S12";
-			linux,code = <KEY_2>;
+			freax,code = <KEY_2>;
 			gpios = <&pca9555 14 GPIO_ACTIVE_LOW>;
 		};
 
 		button-2 {
 			/* #SWITCH_C */
 			label = "S13";
-			linux,code = <KEY_3>;
+			freax,code = <KEY_3>;
 			gpios = <&pca9555 15 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -60,13 +60,13 @@
 		led1 {
 			label = "led1";
 			gpios = <&pca9555 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led2 {
 			label = "led2";
 			gpios = <&pca9555 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -262,8 +262,8 @@
 			reg = <0xf0000 0x10000>;
 		};
 
-		linux@100000 {
-			label = "Linux";
+		freax@100000 {
+			label = "freax";
 			reg = <0x100000 0x700000>;
 		};
 
@@ -598,7 +598,7 @@
 	assigned-clocks = <&clks IMX7D_UART7_ROOT_SRC>;
 	assigned-clock-parents = <&clks IMX7D_OSC_24M_CLK>;
 	uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	rs485-rts-active-low;
 	rs485-rx-during-tx;
 	status = "okay";

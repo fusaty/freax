@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/sound/soc/codecs/tlv320aic32x4.c
+ * freax/sound/soc/codecs/tlv320aic32x4.c
  *
  * Copyright 2011 Vista Silicon S.L.
  *
@@ -9,18 +9,18 @@
  * Based on sound/soc/codecs/wm8974 and TI driver for kernel 2.6.27.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of_clk.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/gpio.h>
+#include <freax/of_gpio.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/of_clk.h>
+#include <freax/regulator/consumer.h>
 
 #include <sound/tlv320aic32x4.h>
 #include <sound/core.h>

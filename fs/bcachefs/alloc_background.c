@@ -21,13 +21,13 @@
 #include "trace.h"
 #include "varint.h"
 
-#include <linux/kthread.h>
-#include <linux/math64.h>
-#include <linux/random.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/task.h>
-#include <linux/sort.h>
+#include <freax/kthread.h>
+#include <freax/math64.h>
+#include <freax/random.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/task.h>
+#include <freax/sort.h>
 
 /* Persistent alloc info: */
 

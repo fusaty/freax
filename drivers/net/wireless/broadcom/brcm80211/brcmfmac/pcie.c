@@ -3,19 +3,19 @@
  * Copyright (c) 2014 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/bcma/bcma.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/bcma/bcma.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/kthread.h>
+#include <freax/io.h>
+#include <freax/random.h>
 #include <asm/unaligned.h>
 
 #include <soc.h>

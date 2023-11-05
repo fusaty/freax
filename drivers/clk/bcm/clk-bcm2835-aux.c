@@ -3,11 +3,11 @@
  * Copyright (C) 2015 Broadcom
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/bcm2835-aux.h>
 
 #define BCM2835_AUXIRQ		0x00

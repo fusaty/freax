@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/sched/signal.h>
 #include "internal.h"
 #include "afs_fs.h"
 

@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #define ALTR_TIMER_COMPATIBLE		"altr,timer-1.0"
 

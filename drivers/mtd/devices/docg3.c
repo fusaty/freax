@@ -5,23 +5,23 @@
  * Copyright (C) 2011 Robert Jarzmik
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/bitmap.h>
-#include <linux/bitrev.h>
-#include <linux/bch.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/bitmap.h>
+#include <freax/bitrev.h>
+#include <freax/bch.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 #define CREATE_TRACE_POINTS
 #include "docg3.h"

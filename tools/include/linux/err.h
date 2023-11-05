@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __TOOLS_LINUX_ERR_H
-#define __TOOLS_LINUX_ERR_H
+#ifndef __TOOLS_freax_ERR_H
+#define __TOOLS_freax_ERR_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 #include <asm/errno.h>
 
@@ -72,4 +72,4 @@ static inline void * __must_check ERR_CAST(__force const void *ptr)
 	/* cast away the const */
 	return (void *) ptr;
 }
-#endif /* _LINUX_ERR_H */
+#endif /* _freax_ERR_H */

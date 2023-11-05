@@ -16,13 +16,13 @@
  */
 
 #include "udfdecl.h"
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/pagemap.h>
+#include <freax/uaccess.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/stat.h>
+#include <freax/pagemap.h>
 #include "udf_i.h"
 
 static int udf_pc_to_char(struct super_block *sb, unsigned char *from,

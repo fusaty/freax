@@ -6,8 +6,8 @@
 #ifndef INTEL_RC6_TYPES_H
 #define INTEL_RC6_TYPES_H
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include "intel_engine_types.h"
 

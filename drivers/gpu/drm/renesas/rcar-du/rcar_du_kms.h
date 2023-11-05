@@ -10,7 +10,7 @@
 #ifndef __RCAR_DU_KMS_H__
 #define __RCAR_DU_KMS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dma_buf_attachment;
 struct drm_file;

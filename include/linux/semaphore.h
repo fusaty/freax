@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Copyright (c) 2008 Intel Corporation
- * Author: Matthew Wilcox <willy@linux.intel.com>
+ * Author: Matthew Wilcox <willy@freax.intel.com>
  *
  * Please see kernel/locking/semaphore.c for documentation of these functions
  */
-#ifndef __LINUX_SEMAPHORE_H
-#define __LINUX_SEMAPHORE_H
+#ifndef __freax_SEMAPHORE_H
+#define __freax_SEMAPHORE_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
 
 /* Please don't access any members of this structure directly */
 struct semaphore {
@@ -48,4 +48,4 @@ extern int __must_check down_trylock(struct semaphore *sem);
 extern int __must_check down_timeout(struct semaphore *sem, long jiffies);
 extern void up(struct semaphore *sem);
 
-#endif /* __LINUX_SEMAPHORE_H */
+#endif /* __freax_SEMAPHORE_H */

@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2012-2016 Synaptics Incorporated
  */
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/rmi.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/rmi.h>
 #include "rmi_driver.h"
 #include "rmi_2d_sensor.h"
 

@@ -3,7 +3,7 @@
 #define _ASM_X86_STRING_64_H
 
 #ifdef __KERNEL__
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 
 /* Written 2002 by Andi Kleen */
 
@@ -11,7 +11,7 @@
    function. */
 
 #if defined(__SANITIZE_MEMORY__) && defined(__NO_FORTIFY)
-#include <linux/kmsan_string.h>
+#include <freax/kmsan_string.h>
 #endif
 
 #define __HAVE_ARCH_MEMCPY 1

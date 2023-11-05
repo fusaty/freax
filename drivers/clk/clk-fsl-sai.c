@@ -5,13 +5,13 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 
 #define I2S_CSR		0x00
 #define I2S_CR2		0x08

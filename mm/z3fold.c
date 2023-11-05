@@ -23,23 +23,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/page-flags.h>
-#include <linux/migrate.h>
-#include <linux/node.h>
-#include <linux/compaction.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/zpool.h>
-#include <linux/kmemleak.h>
+#include <freax/atomic.h>
+#include <freax/sched.h>
+#include <freax/cpumask.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/page-flags.h>
+#include <freax/migrate.h>
+#include <freax/node.h>
+#include <freax/compaction.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/zpool.h>
+#include <freax/kmemleak.h>
 
 /*
  * NCHUNKS_ORDER determines the internal allocation granularity, effectively

@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SPECCTRL_H_
 #define _ASM_X86_SPECCTRL_H_
 
-#include <linux/thread_info.h>
+#include <freax/thread_info.h>
 #include <asm/nospec-branch.h>
 #include <asm/msr.h>
 

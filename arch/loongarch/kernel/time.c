@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/clockchips.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched_clock.h>
-#include <linux/spinlock.h>
+#include <freax/clockchips.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/sched_clock.h>
+#include <freax/spinlock.h>
 
 #include <asm/cpu-features.h>
 #include <asm/loongarch.h>

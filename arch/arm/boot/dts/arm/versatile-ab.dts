@@ -80,7 +80,7 @@
 			offset = <0x08>;
 			mask = <0x01>;
 			label = "versatile:0";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 		led@8,1 {
@@ -89,7 +89,7 @@
 			offset = <0x08>;
 			mask = <0x02>;
 			label = "versatile:1";
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 			default-state = "off";
 		};
 		led@8,2 {
@@ -98,7 +98,7 @@
 			offset = <0x08>;
 			mask = <0x04>;
 			label = "versatile:2";
-			linux,default-trigger = "cpu0";
+			freax,default-trigger = "cpu0";
 			default-state = "off";
 		};
 		led@8,3 {

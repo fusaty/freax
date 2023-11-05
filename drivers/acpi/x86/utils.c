@@ -10,9 +10,9 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/platform_device.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include "../internal.h"
@@ -69,7 +69,7 @@ struct override_status_id {
 static const struct override_status_id override_status_ids[] = {
 	/*
 	 * Bay / Cherry Trail PWM directly poked by GPU driver in win10,
-	 * but Linux uses a separate PWM driver, harmless if not used.
+	 * but freax uses a separate PWM driver, harmless if not used.
 	 */
 	PRESENT_ENTRY_HID("80860F09", "1", ATOM_SILVERMONT, {}),
 	PRESENT_ENTRY_HID("80862288", "1", ATOM_AIRMONT, {}),
@@ -104,7 +104,7 @@ static const struct override_status_id override_status_ids[] = {
 	 * The GPD win BIOS dated 20170221 has disabled the accelerometer, the
 	 * drivers sometimes cause crashes under Windows and this is how the
 	 * manufacturer has solved this :|  The DMI match may not seem unique,
-	 * but it is. In the 67000+ DMI decode dumps from linux-hardware.org
+	 * but it is. In the 67000+ DMI decode dumps from freax-hardware.org
 	 * only 116 have board_vendor set to "AMI Corporation" and of those 116
 	 * only the GPD win and pocket entries' board_name is "Default string".
 	 *
@@ -208,7 +208,7 @@ bool acpi_device_override_status(struct acpi_device *adev, unsigned long long *s
  * The Microsoft documentation for StorageD3Enable mentioned that Windows has
  * a hardcoded allowlist for D3 support, which was used for these platforms.
  *
- * This allows quirking on Linux in a similar fashion.
+ * This allows quirking on freax in a similar fashion.
  *
  * Cezanne systems shouldn't *normally* need this as the BIOS includes
  * StorageD3Enable.  But for two reasons we have added it.

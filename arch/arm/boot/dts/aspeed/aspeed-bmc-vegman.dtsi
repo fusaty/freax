@@ -51,7 +51,7 @@
 
 		identify {
 			label = "platform:blue:indicator";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			gpios = <&gpio ASPEED_GPIO(S, 6) GPIO_ACTIVE_LOW>;
 		};
 

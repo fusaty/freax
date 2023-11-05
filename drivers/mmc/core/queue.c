@@ -3,16 +3,16 @@
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2006-2007 Pierre Ossman
  */
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/freezer.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/backing-dev.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/freezer.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/backing-dev.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
 
 #include "queue.h"
 #include "block.h"

@@ -68,27 +68,27 @@ is added.
 
 However:
 
-- If noinstr validation is enabled, it also runs on vmlinux.o, with all
+- If noinstr validation is enabled, it also runs on vmfreax.o, with all
   options removed and '--noinstr' added.
 
 - If IBT or LTO is enabled, it doesn't run on TUs at all.  Instead it
-  runs on vmlinux.o and linked modules, with all options.
+  runs on vmfreax.o and linked modules, with all options.
 
 In summary:
 
   A) Legacy mode:
              TU: objtool [--module] <options>
-        vmlinux: N/A
+        vmfreax: N/A
          module: N/A
 
   B) CONFIG_NOINSTR_VALIDATION=y && !(CONFIG_X86_KERNEL_IBT=y || CONFIG_LTO=y):
              TU: objtool [--module] <options>	// no --noinstr
-        vmlinux: objtool --noinstr		// other options removed
+        vmfreax: objtool --noinstr		// other options removed
          module: N/A
 
   C) CONFIG_X86_KERNEL_IBT=y || CONFIG_LTO=y:
              TU: N/A
-        vmlinux: objtool --noinstr <options>
+        vmfreax: objtool --noinstr <options>
          module: objtool --module --noinstr <options>
 
 
@@ -190,7 +190,7 @@ c) Higher live patching compatibility rate
    stack traces need to be reliable (or an unreliable condition needs to
    be detectable).  Objtool makes that possible.
 
-   For more details, see the livepatch documentation in the Linux kernel
+   For more details, see the livepatch documentation in the freax kernel
    source tree at Documentation/livepatch/livepatch.rst.
 
 To achieve the validation, objtool enforces the following rules:
@@ -456,5 +456,5 @@ ignore it:
   to the Makefile.
 
 NOTE: OBJECT_FILES_NON_STANDARD doesn't work for link time validation of
-vmlinux.o or a linked module.  So it should only be used for files which
-aren't linked into vmlinux or a module.
+vmfreax.o or a linked module.  So it should only be used for files which
+aren't linked into vmfreax or a module.

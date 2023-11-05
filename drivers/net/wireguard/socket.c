@@ -9,11 +9,11 @@
 #include "queueing.h"
 #include "messages.h"
 
-#include <linux/ctype.h>
-#include <linux/net.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
-#include <linux/inetdevice.h>
+#include <freax/ctype.h>
+#include <freax/net.h>
+#include <freax/if_vlan.h>
+#include <freax/if_ether.h>
+#include <freax/inetdevice.h>
 #include <net/udp_tunnel.h>
 #include <net/ipv6.h>
 

@@ -5,17 +5,17 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/static_key.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/skbuff.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/static_key.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_log.h>

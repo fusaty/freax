@@ -4,7 +4,7 @@
 #ifndef ADF_HEARTBEAT_H_
 #define ADF_HEARTBEAT_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct adf_accel_dev;
 struct dentry;

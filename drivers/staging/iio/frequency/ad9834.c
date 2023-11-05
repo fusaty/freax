@@ -5,22 +5,22 @@
  * Copyright 2010-2011 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/list.h>
+#include <freax/spi/spi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/module.h>
 #include <asm/div64.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 #include "dds.h"
 
 #include "ad9834.h"

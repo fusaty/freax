@@ -2,11 +2,11 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/time.h>
+#include <freax/uaccess.h>
+#include <freax/string.h>
+#include <freax/time.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <freax/buffer_head.h>
 
 /* this is one and only function that is used outside (do_balance.c) */
 int balance_internal(struct tree_balance *,

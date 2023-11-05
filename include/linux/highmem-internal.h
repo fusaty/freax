@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HIGHMEM_INTERNAL_H
-#define _LINUX_HIGHMEM_INTERNAL_H
+#ifndef _freax_HIGHMEM_INTERNAL_H
+#define _freax_HIGHMEM_INTERNAL_H
 
 /*
  * Outside of CONFIG_HIGHMEM to support X86 32bit iomap_atomic() cruft.

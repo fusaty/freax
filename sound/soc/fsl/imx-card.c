@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017-2021 NXP
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/i2c.h>
+#include <freax/clk.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/pcm.h>

@@ -4,17 +4,17 @@
  * Copyright (c) 2009 Intel Corporation
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/media/timb_radio.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_data/media/timb_radio.h>
 
 #define DRIVER_NAME "timb-radio"
 

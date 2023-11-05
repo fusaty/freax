@@ -4,22 +4,22 @@
  * Stack trace utility functions etc.
  *
  * Copyright 2008 Christoph Hellwig, IBM Corp.
- * Copyright 2018 SUSE Linux GmbH
+ * Copyright 2018 SUSE freax GmbH
  * Copyright 2018 Nick Piggin, Michael Ellerman, IBM Corp.
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/kallsyms.h>
+#include <freax/module.h>
+#include <freax/nmi.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/stacktrace.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/ftrace.h>
+#include <freax/ftrace.h>
 #include <asm/kprobes.h>
 
 #include <asm/paca.h>

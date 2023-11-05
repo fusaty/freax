@@ -6,13 +6,13 @@
  *
  * Authors:
  *   Wu Hao <hao.wu@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@freax.intel.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
+#include <freax/mm.h>
 
 #include "dfl-afu.h"
 

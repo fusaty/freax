@@ -6,7 +6,7 @@
 
 #include "spectrum_router.h"
 #include <net/ip_fib.h>
-#include <linux/if_tunnel.h>
+#include <freax/if_tunnel.h>
 #include <net/ip6_tunnel.h>
 
 struct ip_tunnel_parm

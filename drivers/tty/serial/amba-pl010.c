@@ -15,21 +15,21 @@
  * and hooked into this driver.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/serial.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #define UART_NR		8
 

@@ -2,11 +2,11 @@
  * Legacy: Generic DRM Buffer Management
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA freax Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
- * Author: Rickard E. (Rik) Faith <faith@valinux.com>
- * Author: Gareth Hughes <gareth@valinux.com>
+ * Author: Rickard E. (Rik) Faith <faith@vafreax.com>
+ * Author: Gareth Hughes <gareth@vafreax.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -22,21 +22,21 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA freax SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/nospec.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <freax/export.h>
+#include <freax/log2.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/nospec.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
 
 #include <asm/shmparam.h>
 

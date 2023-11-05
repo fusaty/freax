@@ -27,7 +27,7 @@
 
 		button-wps {
 			label = "wps";
-			linux,code = <KEY_WPS_BUTTON>;
+			freax,code = <KEY_WPS_BUTTON>;
 			gpios = <&tlmm 35 GPIO_ACTIVE_LOW>;
 			debounce-interval = <60>;
 		};
@@ -40,7 +40,7 @@
 
 		led-0 {
 			gpios = <&tlmm 36 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			freax,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 	};

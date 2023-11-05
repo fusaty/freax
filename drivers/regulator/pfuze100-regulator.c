@@ -2,21 +2,21 @@
 //
 // Copyright (C) 2011-2013 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/pfuze100.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/pfuze100.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
 
 #define PFUZE_FLAG_DISABLE_SW	BIT(1)
 

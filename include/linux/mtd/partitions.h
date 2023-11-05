@@ -9,7 +9,7 @@
 #ifndef MTD_PARTITIONS_H
 #define MTD_PARTITIONS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 
 /*

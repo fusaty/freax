@@ -4,15 +4,15 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/seq_file.h>
+#include <freax/component.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/reset.h>
+#include <freax/seq_file.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_device.h>

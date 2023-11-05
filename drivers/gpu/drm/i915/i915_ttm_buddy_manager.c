@@ -3,7 +3,7 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include <drm/ttm/ttm_placement.h>
 #include <drm/ttm/ttm_bo.h>

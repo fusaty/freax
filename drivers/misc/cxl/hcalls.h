@@ -6,7 +6,7 @@
 #ifndef _HCALLS_H
 #define _HCALLS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 #include <asm/hvcall.h>
 #include "cxl.h"

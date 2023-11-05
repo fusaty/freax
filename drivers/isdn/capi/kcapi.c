@@ -11,26 +11,26 @@
  */
 
 #include "kcapi.h"
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/isdn/capicmd.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/proc_fs.h>
+#include <freax/sched/signal.h>
+#include <freax/seq_file.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
+#include <freax/capi.h>
+#include <freax/kernelcapi.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/isdn/capicmd.h>
+#include <freax/isdn/capiutil.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
 
 static int showcapimsgs;
 static struct workqueue_struct *kcapi_wq;

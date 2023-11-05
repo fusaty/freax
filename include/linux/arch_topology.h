@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/arch_topology.h - arch specific cpu topology information
+ * include/freax/arch_topology.h - arch specific cpu topology information
  */
-#ifndef _LINUX_ARCH_TOPOLOGY_H_
-#define _LINUX_ARCH_TOPOLOGY_H_
+#ifndef _freax_ARCH_TOPOLOGY_H_
+#define _freax_ARCH_TOPOLOGY_H_
 
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <freax/types.h>
+#include <freax/percpu.h>
 
 void topology_normalize_cpu_scale(void);
 int topology_update_cpu_topology(void);
@@ -94,4 +94,4 @@ void reset_cpu_topology(void);
 int parse_acpi_topology(void);
 #endif
 
-#endif /* _LINUX_ARCH_TOPOLOGY_H_ */
+#endif /* _freax_ARCH_TOPOLOGY_H_ */

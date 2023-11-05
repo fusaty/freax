@@ -43,7 +43,7 @@
  *               +----------------------+
  */
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "ksz9477.h"
 #include "ksz9477_reg.h"

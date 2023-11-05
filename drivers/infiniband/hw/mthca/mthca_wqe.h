@@ -33,7 +33,7 @@
 #ifndef MTHCA_WQE_H
 #define MTHCA_WQE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	MTHCA_NEXT_DBD		= 1 << 7,

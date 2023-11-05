@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/stmmac.h>
-#include <linux/clk.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/stmmac.h>
+#include <freax/clk.h>
 
 #include "stmmac_platform.h"
 

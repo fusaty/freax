@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/random.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/random.h>
 #include <net/vxlan.h>
 
 #include "reg.h"

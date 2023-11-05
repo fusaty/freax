@@ -6,12 +6,12 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/driver.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regulator/driver.h>
 #include "pmbus.h"
 
 static const struct regulator_desc __maybe_unused tda38640_reg_desc[] = {

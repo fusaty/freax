@@ -23,16 +23,16 @@
 #include "reflink.h"
 #include "trace.h"
 
-#include <linux/aio.h>
-#include <linux/backing-dev.h>
-#include <linux/falloc.h>
-#include <linux/migrate.h>
-#include <linux/mmu_context.h>
-#include <linux/pagevec.h>
-#include <linux/rmap.h>
-#include <linux/sched/signal.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/uio.h>
+#include <freax/aio.h>
+#include <freax/backing-dev.h>
+#include <freax/falloc.h>
+#include <freax/migrate.h>
+#include <freax/mmu_context.h>
+#include <freax/pagevec.h>
+#include <freax/rmap.h>
+#include <freax/sched/signal.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/uio.h>
 
 #include <trace/events/writeback.h>
 

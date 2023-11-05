@@ -58,15 +58,15 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 
-#include <linux/irqchip.h>
+#include <freax/irqchip.h>
 
 #define OMPIC_CPUBYTES		8
 #define OMPIC_CTRL(cpu)		(0x0 + (cpu * OMPIC_CPUBYTES))

@@ -14,7 +14,7 @@
 
 #include <stdbool.h>
 #include <string.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
 

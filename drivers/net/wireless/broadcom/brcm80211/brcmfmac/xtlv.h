@@ -5,8 +5,8 @@
 #ifndef __BRCMF_XTLV_H
 #define __BRCMF_XTLV_H
 
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <freax/types.h>
+#include <freax/bits.h>
 
 /* bcm type(id), length, value with w/16 bit id/len. The structure below
  * is nominal, and is used to support variable length id and type. See

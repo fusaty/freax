@@ -5,13 +5,13 @@
  * Copyright (C) 2019 Marek Behún <kabel@kernel.org>
  */
 
-#ifndef __LINUX_MOXTET_H
-#define __LINUX_MOXTET_H
+#ifndef __freax_MOXTET_H
+#define __freax_MOXTET_H
 
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mutex.h>
 
 #define TURRIS_MOX_MAX_MODULES	10
 
@@ -106,4 +106,4 @@ to_moxtet_device(struct device *dev)
 	return container_of(dev, struct moxtet_device, dev);
 }
 
-#endif /* __LINUX_MOXTET_H */
+#endif /* __freax_MOXTET_H */

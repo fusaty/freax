@@ -6,7 +6,7 @@
  * Copyright 2012 Matt Evans & Michael Neuling, IBM Corporation.
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/asm-offsets.h>
 #include <asm/ppc_asm.h>
 #include <asm/ppc-opcode.h>

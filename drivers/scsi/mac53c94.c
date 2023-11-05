@@ -8,19 +8,19 @@
  * Paul Mackerras, August 1996.
  * Copyright (C) 1996 Paul Mackerras.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pgtable.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/prom.h>

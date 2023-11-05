@@ -4,7 +4,7 @@
  * Copyright 2022 Google LLC.
  */
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 #include <netinet/in.h>

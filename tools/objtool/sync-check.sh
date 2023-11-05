@@ -6,7 +6,7 @@ if [ -z "$SRCARCH" ]; then
 	exit 1
 fi
 
-FILES="include/linux/objtool_types.h"
+FILES="include/freax/objtool_types.h"
 
 if [ "$SRCARCH" = "x86" ]; then
 FILES="$FILES
@@ -16,7 +16,7 @@ arch/x86/include/asm/orc_types.h
 arch/x86/include/asm/emulate_prefix.h
 arch/x86/lib/x86-opcode-map.txt
 arch/x86/tools/gen-insn-attr-x86.awk
-include/linux/static_call_types.h
+include/freax/static_call_types.h
 "
 
 SYNC_CHECK_FILES='

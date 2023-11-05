@@ -22,7 +22,7 @@
  *  ---------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the freax
  *  distribution for more details.
  */
 
@@ -30,35 +30,35 @@
 
 #include "cgroup-internal.h"
 
-#include <linux/bpf-cgroup.h>
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/init_task.h>
-#include <linux/kernel.h>
-#include <linux/magic.h>
-#include <linux/mutex.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/string.h>
-#include <linux/hashtable.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
-#include <linux/atomic.h>
-#include <linux/cpuset.h>
-#include <linux/proc_ns.h>
-#include <linux/nsproxy.h>
-#include <linux/file.h>
-#include <linux/fs_parser.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/deadline.h>
-#include <linux/psi.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/cred.h>
+#include <freax/errno.h>
+#include <freax/init_task.h>
+#include <freax/kernel.h>
+#include <freax/magic.h>
+#include <freax/mutex.h>
+#include <freax/mount.h>
+#include <freax/pagemap.h>
+#include <freax/proc_fs.h>
+#include <freax/rcupdate.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/percpu-rwsem.h>
+#include <freax/string.h>
+#include <freax/hashtable.h>
+#include <freax/idr.h>
+#include <freax/kthread.h>
+#include <freax/atomic.h>
+#include <freax/cpuset.h>
+#include <freax/proc_ns.h>
+#include <freax/nsproxy.h>
+#include <freax/file.h>
+#include <freax/fs_parser.h>
+#include <freax/sched/cputime.h>
+#include <freax/sched/deadline.h>
+#include <freax/psi.h>
 #include <net/sock.h>
 
 #define CREATE_TRACE_POINTS
@@ -129,14 +129,14 @@ static struct workqueue_struct *cgroup_destroy_wq;
 /* generate an array of cgroup subsystem pointers */
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys,
 struct cgroup_subsys *cgroup_subsys[] = {
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 };
 #undef SUBSYS
 
 /* array of cgroup subsystem names */
 #define SUBSYS(_x) [_x ## _cgrp_id] = #_x,
 static const char *cgroup_subsys_name[] = {
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 };
 #undef SUBSYS
 
@@ -146,18 +146,18 @@ static const char *cgroup_subsys_name[] = {
 	DEFINE_STATIC_KEY_TRUE(_x ## _cgrp_subsys_on_dfl_key);			\
 	EXPORT_SYMBOL_GPL(_x ## _cgrp_subsys_enabled_key);			\
 	EXPORT_SYMBOL_GPL(_x ## _cgrp_subsys_on_dfl_key);
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 #undef SUBSYS
 
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys_enabled_key,
 static struct static_key_true *cgroup_subsys_enabled_key[] = {
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 };
 #undef SUBSYS
 
 #define SUBSYS(_x) [_x ## _cgrp_id] = &_x ## _cgrp_subsys_on_dfl_key,
 static struct static_key_true *cgroup_subsys_on_dfl_key[] = {
-#include <linux/cgroup_subsys.h>
+#include <freax/cgroup_subsys.h>
 };
 #undef SUBSYS
 
@@ -254,7 +254,7 @@ static int cgroup_addrm_files(struct cgroup_subsys_state *css,
 #ifdef CONFIG_DEBUG_CGROUP_REF
 #define CGROUP_REF_FN_ATTRS	noinline
 #define CGROUP_REF_EXPORT(fn)	EXPORT_SYMBOL_GPL(fn);
-#include <linux/cgroup_refcnt.h>
+#include <freax/cgroup_refcnt.h>
 #endif
 
 /**

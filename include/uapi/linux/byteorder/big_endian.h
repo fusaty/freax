@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_BYTEORDER_BIG_ENDIAN_H
-#define _UAPI_LINUX_BYTEORDER_BIG_ENDIAN_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_BYTEORDER_BIG_ENDIAN_H
+#define _UAPI_freax_BYTEORDER_BIG_ENDIAN_H
 
 #ifndef __BIG_ENDIAN
 #define __BIG_ENDIAN 4321
@@ -9,9 +9,9 @@
 #define __BIG_ENDIAN_BITFIELD
 #endif
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/swab.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <freax/swab.h>
 
 #define __constant_htonl(x) ((__force __be32)(__u32)(x))
 #define __constant_ntohl(x) ((__force __u32)(__be32)(x))
@@ -104,4 +104,4 @@ static __always_inline __u16 __be16_to_cpup(const __be16 *p)
 #define __be16_to_cpus(x) do { (void)(x); } while (0)
 
 
-#endif /* _UAPI_LINUX_BYTEORDER_BIG_ENDIAN_H */
+#endif /* _UAPI_freax_BYTEORDER_BIG_ENDIAN_H */

@@ -14,9 +14,9 @@
 
 #include "ctvmem.h"
 #include "ctatc.h"
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/io.h>
 #include <sound/pcm.h>
 
 #define CT_PTES_PER_PAGE (CT_PAGE_SIZE / sizeof(void *))

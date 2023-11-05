@@ -3,22 +3,22 @@
  * IIO driver for the Apex Embedded Systems STX104
  * Copyright (C) 2016 William Breathitt Gray
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/regmap.h>
-#include <linux/i8254.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gpio/regmap.h>
+#include <freax/i8254.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
+#include <freax/isa.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #define STX104_OUT_CHAN(chan) {				\
 	.type = IIO_VOLTAGE,				\

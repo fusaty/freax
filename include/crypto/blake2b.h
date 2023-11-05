@@ -3,9 +3,9 @@
 #ifndef _CRYPTO_BLAKE2B_H
 #define _CRYPTO_BLAKE2B_H
 
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/bug.h>
+#include <freax/types.h>
+#include <freax/string.h>
 
 enum blake2b_lengths {
 	BLAKE2B_BLOCK_SIZE = 128,

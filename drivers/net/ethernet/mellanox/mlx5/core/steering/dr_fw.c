@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "dr_types.h"
 
 struct mlx5dr_fw_recalc_cs_ft *

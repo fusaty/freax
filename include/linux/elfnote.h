@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ELFNOTE_H
-#define _LINUX_ELFNOTE_H
+#ifndef _freax_ELFNOTE_H
+#define _freax_ELFNOTE_H
 /*
  * Helper macros to generate ELF Note structures, which are put into a
- * PT_NOTE segment of the final vmlinux image.  These are useful for
+ * PT_NOTE segment of the final vmfreax image.  These are useful for
  * including name-value pairs of metadata into the kernel binary (or
  * modules?) for use by external programs.
  *
@@ -59,7 +59,7 @@
 	ELFNOTE_END
 
 #else	/* !__ASSEMBLER__ */
-#include <uapi/linux/elf.h>
+#include <uapi/freax/elf.h>
 /*
  * Use an anonymous structure which matches the shape of
  * Elf{32,64}_Nhdr, but includes the name and desc data.  The size and
@@ -96,4 +96,4 @@
 #define ELFNOTE64(name, type, desc) ELFNOTE(64, name, type, desc)
 #endif	/* __ASSEMBLER__ */
 
-#endif /* _LINUX_ELFNOTE_H */
+#endif /* _freax_ELFNOTE_H */

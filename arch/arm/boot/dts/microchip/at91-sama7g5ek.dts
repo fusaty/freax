@@ -54,7 +54,7 @@
 		button {
 			label = "PB_USER";
 			gpios = <&pioA PIN_PA12 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			freax,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -78,7 +78,7 @@
 		blue_led {
 			label = "blue";
 			gpios = <&pioA PIN_PD20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -115,12 +115,12 @@
 
 	spdif_in: spdif-in {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dir";
+		compatible = "freax,spdif-dir";
 	};
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 	};
 };
 

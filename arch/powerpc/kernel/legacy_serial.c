@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/serial_reg.h>
+#include <freax/kernel.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/serial_core.h>
+#include <freax/console.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/serial_reg.h>
 #include <asm/io.h>
 #include <asm/mmu.h>
 #include <asm/serial.h>
@@ -399,7 +399,7 @@ void __init find_legacy_serial_ports(void)
 	DBG(" -> find_legacy_serial_port()\n");
 
 	/* Now find out if one of these is out firmware console */
-	path = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	path = of_get_property(of_chosen, "freax,stdout-path", NULL);
 	if (path == NULL)
 		path = of_get_property(of_chosen, "stdout-path", NULL);
 	if (path != NULL) {
@@ -407,7 +407,7 @@ void __init find_legacy_serial_ports(void)
 		if (stdout)
 			DBG("stdout is %pOF\n", stdout);
 	} else {
-		DBG(" no linux,stdout-path !\n");
+		DBG(" no freax,stdout-path !\n");
 	}
 
 	/* Iterate over all the 16550 ports, looking for known parents */
@@ -632,7 +632,7 @@ static int __init check_legacy_serial_console(void)
 	}
 	/* We are getting a weird phandle from OF ... */
 	/* ... So use the full path instead */
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "freax,stdout-path", NULL);
 	if (name == NULL)
 		name = of_get_property(of_chosen, "stdout-path", NULL);
 	if (name == NULL) {

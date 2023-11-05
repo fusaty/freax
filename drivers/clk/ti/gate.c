@@ -7,12 +7,12 @@
  * Tero Kristo <t-kristo@ti.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/ti.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk/ti.h>
 
 #include "clock.h"
 

@@ -5,9 +5,9 @@
 // Copyright (C) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "cs35l56_hda.h"
 

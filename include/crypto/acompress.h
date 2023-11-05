@@ -9,9 +9,9 @@
 #ifndef _CRYPTO_ACOMP_H
 #define _CRYPTO_ACOMP_H
 
-#include <linux/atomic.h>
-#include <linux/container_of.h>
-#include <linux/crypto.h>
+#include <freax/atomic.h>
+#include <freax/container_of.h>
+#include <freax/crypto.h>
 
 #define CRYPTO_ACOMP_ALLOC_OUTPUT	0x00000001
 #define CRYPTO_ACOMP_DST_MAX		131072

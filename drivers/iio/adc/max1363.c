@@ -3,35 +3,35 @@
   * iio/adc/max1363.c
   * Copyright (C) 2008-2010 Jonathan Cameron
   *
-  * based on linux/drivers/i2c/chips/max123x
+  * based on freax/drivers/i2c/chips/max123x
   * Copyright (C) 2002-2004 Stefan Eletzhofer
   *
-  * based on linux/drivers/acron/char/pcf8583.c
+  * based on freax/drivers/acron/char/pcf8583.c
   * Copyright (C) 2000 Russell King
   *
   * Driver for max1363 and similar chips.
   */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/sysfs.h>
+#include <freax/list.h>
+#include <freax/i2c.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/events.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define MAX1363_SETUP_BYTE(a) ((a) | 0x80)
 

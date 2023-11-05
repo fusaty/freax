@@ -5,17 +5,17 @@
  * Copyright (C) 2005 John Lenz <lenz@cs.wisc.edu>
  * Copyright (C) 2005 Richard Purdie <rpurdie@openedhand.com>
  */
-#ifndef __LINUX_LEDS_H_INCLUDED
-#define __LINUX_LEDS_H_INCLUDED
+#ifndef __freax_LEDS_H_INCLUDED
+#define __freax_LEDS_H_INCLUDED
 
 #include <dt-bindings/leds/common.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 struct attribute_group;
 struct device_node;
@@ -737,4 +737,4 @@ static inline void ledtrig_audio_set(enum led_audio type,
 }
 #endif
 
-#endif		/* __LINUX_LEDS_H_INCLUDED */
+#endif		/* __freax_LEDS_H_INCLUDED */

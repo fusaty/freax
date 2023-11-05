@@ -5,13 +5,13 @@
  * Copyright (C) 2012  Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/param.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/iio/consumer.h>
+#include <freax/of.h>
 
 struct rx51_device_info {
 	struct device *dev;

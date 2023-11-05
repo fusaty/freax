@@ -6,18 +6,18 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Thomas Richter <tmricht@linux.vnet.ibm.com>
+ *  Author(s):  Thomas Richter <tmricht@freax.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/ctype.h>
+#include <freax/mutex.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/if.h>
-#include <uapi/linux/smc.h>
+#include <uapi/freax/if.h>
+#include <uapi/freax/smc.h>
 
 #include <rdma/ib_verbs.h>
 

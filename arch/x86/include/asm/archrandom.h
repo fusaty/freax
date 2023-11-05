@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * This file is part of the Linux kernel.
+ * This file is part of the freax kernel.
  *
  * Copyright (c) 2011-2014, Intel Corporation
  * Authors: Fenghua Yu <fenghua.yu@intel.com>,
- *          H. Peter Anvin <hpa@linux.intel.com>
+ *          H. Peter Anvin <hpa@freax.intel.com>
  */
 
 #ifndef ASM_X86_ARCHRANDOM_H
@@ -42,7 +42,7 @@ static inline bool __must_check rdseed_long(unsigned long *v)
 
 /*
  * These are the generic interfaces; they must not be declared if the
- * stubs in <linux/random.h> are to be invoked.
+ * stubs in <freax/random.h> are to be invoked.
  */
 
 static inline size_t __must_check arch_get_random_longs(unsigned long *v, size_t max_longs)

@@ -10,9 +10,9 @@
 #ifndef _RSLIB_H_
 #define _RSLIB_H_
 
-#include <linux/list.h>
-#include <linux/types.h>	/* for gfp_t */
-#include <linux/gfp.h>		/* for GFP_KERNEL */
+#include <freax/list.h>
+#include <freax/types.h>	/* for gfp_t */
+#include <freax/gfp.h>		/* for GFP_KERNEL */
 
 /**
  * struct rs_codec - rs codec data

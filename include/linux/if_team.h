@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/if_team.h - Network team device driver header
+ * include/freax/if_team.h - Network team device driver header
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  */
-#ifndef _LINUX_IF_TEAM_H_
-#define _LINUX_IF_TEAM_H_
+#ifndef _freax_IF_TEAM_H_
+#define _freax_IF_TEAM_H_
 
-#include <linux/netpoll.h>
+#include <freax/netpoll.h>
 #include <net/sch_generic.h>
-#include <linux/types.h>
-#include <uapi/linux/if_team.h>
+#include <freax/types.h>
+#include <uapi/freax/if_team.h>
 
 struct team_pcpu_stats {
 	u64_stats_t		rx_packets;
@@ -315,4 +315,4 @@ extern void team_mode_unregister(const struct team_mode *mode);
 
 #define MODULE_ALIAS_TEAM_MODE(kind) MODULE_ALIAS("team-mode-" kind)
 
-#endif /* _LINUX_IF_TEAM_H_ */
+#endif /* _freax_IF_TEAM_H_ */

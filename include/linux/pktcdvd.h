@@ -3,7 +3,7 @@
  * Copyright (C) 2001-2004 Peter Osterlund <petero2@telia.com>
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See freax/COPYING for more information.
  *
  * Packet writing layer for ATAPI and SCSI CD-R, CD-RW, DVD-R, and
  * DVD-RW devices.
@@ -12,13 +12,13 @@
 #ifndef __PKTCDVD_H
 #define __PKTCDVD_H
 
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/cdrom.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/mempool.h>
-#include <uapi/linux/pktcdvd.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/cdrom.h>
+#include <freax/kobject.h>
+#include <freax/sysfs.h>
+#include <freax/mempool.h>
+#include <uapi/freax/pktcdvd.h>
 
 /* default bio write queue congestion marks */
 #define PKT_WRITE_CONGESTION_ON    10000

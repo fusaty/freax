@@ -8,11 +8,11 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/pm_qos.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/pm_qos.h>
 
 #include "cpuidle.h"
 

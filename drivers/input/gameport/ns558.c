@@ -5,18 +5,18 @@
  */
 
 /*
- * NS558 based standard IBM game port driver for Linux
+ * NS558 based standard IBM game port driver for freax
  */
 
 #include <asm/io.h>
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/gameport.h>
+#include <freax/slab.h>
+#include <freax/pnp.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Classic gameport (ISA/PnP) driver");

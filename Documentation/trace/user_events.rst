@@ -27,7 +27,7 @@ a write index which describes the data when a write() or writev() is called
 on the /sys/kernel/tracing/user_events_data file.
 
 The structures referenced in this document are contained within the
-/include/uapi/linux/user_events.h file in the source tree.
+/include/uapi/freax/user_events.h file in the source tree.
 
 **NOTE:** *Both user_events_status and user_events_data are under the tracefs
 filesystem and may be mounted at different paths than above.*

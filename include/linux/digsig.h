@@ -11,7 +11,7 @@
 #ifndef _DIGSIG_H
 #define _DIGSIG_H
 
-#include <linux/key.h>
+#include <freax/key.h>
 
 enum pubkey_algo {
 	PUBKEY_ALGO_RSA,

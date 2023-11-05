@@ -6,12 +6,12 @@
  * Author: Andrey Konovalov <andreyknvl@google.com>
  */
 
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/memory.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include "kasan.h"
 

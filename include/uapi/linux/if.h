@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -17,13 +17,13 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _LINUX_IF_H
-#define _LINUX_IF_H
+#ifndef _freax_IF_H
+#define _freax_IF_H
 
-#include <linux/libc-compat.h>          /* for compatibility with glibc */
-#include <linux/types.h>		/* for "__kernel_caddr_t" et al	*/
-#include <linux/socket.h>		/* for "struct sockaddr" et al	*/
-#include <linux/compiler.h>		/* for "__user" et al           */
+#include <freax/libc-compat.h>          /* for compatibility with glibc */
+#include <freax/types.h>		/* for "__kernel_caddr_t" et al	*/
+#include <freax/socket.h>		/* for "struct sockaddr" et al	*/
+#include <freax/compiler.h>		/* for "__user" et al           */
 
 #ifndef __KERNEL__
 #include <sys/socket.h>			/* for struct sockaddr.		*/
@@ -34,7 +34,7 @@
 #endif /* __UAPI_DEF_IF_IFNAMSIZ */
 #define	IFALIASZ	256
 #define	ALTIFNAMSIZ	128
-#include <linux/hdlc/ioctl.h>
+#include <freax/hdlc/ioctl.h>
 
 /* For glibc compatibility. An empty enum does not compile. */
 #if __UAPI_DEF_IF_NET_DEVICE_FLAGS_LOWER_UP_DORMANT_ECHO != 0 || \
@@ -295,4 +295,4 @@ struct ifconf  {
 #define	ifc_buf	ifc_ifcu.ifcu_buf		/* buffer address	*/
 #define	ifc_req	ifc_ifcu.ifcu_req		/* array of structures	*/
 
-#endif /* _LINUX_IF_H */
+#endif /* _freax_IF_H */

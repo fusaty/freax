@@ -7,18 +7,18 @@
  * Copyright (c) Mike Travis
  */
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/kdb.h>
-#include <linux/kexec.h>
-#include <linux/kgdb.h>
-#include <linux/moduleparam.h>
-#include <linux/nmi.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/clocksource.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/kdb.h>
+#include <freax/kexec.h>
+#include <freax/kgdb.h>
+#include <freax/moduleparam.h>
+#include <freax/nmi.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/clocksource.h>
 
 #include <asm/apic.h>
 #include <asm/current.h>

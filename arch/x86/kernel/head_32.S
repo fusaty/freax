@@ -8,10 +8,10 @@
  */
 
 .text
-#include <linux/export.h>
-#include <linux/threads.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/threads.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/pgtable_types.h>

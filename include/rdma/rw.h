@@ -5,8 +5,8 @@
 #ifndef _RDMA_RW_H
 #define _RDMA_RW_H
 
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/mr_pool.h>

@@ -16,14 +16,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
 
 #define DRIVER_AUTHOR "John Homppi"
 #define DRIVER_DESC "adutux (see www.ontrak.net)"

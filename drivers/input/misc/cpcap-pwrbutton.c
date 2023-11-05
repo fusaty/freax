@@ -5,16 +5,16 @@
  * Copyright (C) 2017 Sebastian Reichel <sre@kernel.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/motorola-cpcap.h>
 
 #define CPCAP_IRQ_ON 23
 #define CPCAP_IRQ_ON_BITMASK (1 << (CPCAP_IRQ_ON % 16))

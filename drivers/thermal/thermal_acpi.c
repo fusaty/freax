@@ -6,9 +6,9 @@
  * Library routines for populating a generic thermal trip point structure
  * with data obtained by evaluating a specific object in the ACPI Namespace.
  */
-#include <linux/acpi.h>
-#include <linux/units.h>
-#include <linux/thermal.h>
+#include <freax/acpi.h>
+#include <freax/units.h>
+#include <freax/thermal.h>
 
 /*
  * Minimum temperature for full military grade is 218°K (-55°C) and

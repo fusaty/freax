@@ -7,14 +7,14 @@
  *
  * Copyright (C) 2007, 2008 Cavium Networks
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/partitions.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/semaphore.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/partitions.h>
 
 #include <asm/octeon/octeon.h>
 

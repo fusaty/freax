@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_UACCESS_H__
-#define __LINUX_UACCESS_H__
+#ifndef __freax_UACCESS_H__
+#define __freax_UACCESS_H__
 
-#include <linux/fault-inject-usercopy.h>
-#include <linux/instrumented.h>
-#include <linux/minmax.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
+#include <freax/fault-inject-usercopy.h>
+#include <freax/instrumented.h>
+#include <freax/minmax.h>
+#include <freax/sched.h>
+#include <freax/thread_info.h>
 
 #include <asm/uaccess.h>
 
@@ -442,4 +442,4 @@ void __noreturn usercopy_abort(const char *name, const char *detail,
 			       unsigned long len);
 #endif
 
-#endif		/* __LINUX_UACCESS_H__ */
+#endif		/* __freax_UACCESS_H__ */

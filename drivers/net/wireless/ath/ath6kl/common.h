@@ -18,7 +18,7 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #define ATH6KL_MAX_IE			256
 

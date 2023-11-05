@@ -6,7 +6,7 @@
  * Author: Ard Biesheuvel <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 	.text

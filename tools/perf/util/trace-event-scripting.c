@@ -16,7 +16,7 @@
 #include "debug.h"
 #include "trace-event.h"
 #include "evsel.h"
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 #include "util/sample.h"
 
 struct scripting_context *scripting_context;

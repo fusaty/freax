@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPIBLKTRACE_H
 #define _UAPIBLKTRACE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Trace categories

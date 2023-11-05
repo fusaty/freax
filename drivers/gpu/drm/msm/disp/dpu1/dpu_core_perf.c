@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The freax Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
 
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/pm_opp.h>
-#include <linux/sort.h>
-#include <linux/clk.h>
-#include <linux/bitmap.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/pm_opp.h>
+#include <freax/sort.h>
+#include <freax/clk.h>
+#include <freax/bitmap.h>
 
 #include "dpu_kms.h"
 #include "dpu_trace.h"

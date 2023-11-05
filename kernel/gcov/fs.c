@@ -3,30 +3,30 @@
  *  This code exports profiling data as debugfs files to userspace.
  *
  *    Copyright IBM Corp. 2009
- *    Author(s): Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *    Author(s): Peter Oberparleiter <oberpar@freax.vnet.ibm.com>
  *
  *    Uses gcc-internal data definitions.
  *    Based on the gcov-kernel patch by:
  *		 Hubertus Franke <frankeh@us.ibm.com>
  *		 Nigel Hinds <nhinds@us.ibm.com>
  *		 Rajan Ravindran <rajancr@us.ibm.com>
- *		 Peter Oberparleiter <oberpar@linux.vnet.ibm.com>
+ *		 Peter Oberparleiter <oberpar@freax.vnet.ibm.com>
  *		 Paul Larson
  *		 Yi CDL Yang
  */
 
 #define pr_fmt(fmt)	"gcov: " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
+#include <freax/mm.h>
 #include "gcov.h"
 
 /**

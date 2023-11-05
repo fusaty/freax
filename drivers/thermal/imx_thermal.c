@@ -2,20 +2,20 @@
 //
 // Copyright 2013 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu_cooling.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/cpu_cooling.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/pm_runtime.h>
 
 #define REG_SET		0x4
 #define REG_CLR		0x8

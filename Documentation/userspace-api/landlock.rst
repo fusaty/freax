@@ -344,7 +344,7 @@ contract with each other.  This is required to make sure sandboxing will not
 get stricter with a system update, which could break applications.
 
 Developers can subscribe to the `Landlock mailing list
-<https://subspace.kernel.org/lists.linux.dev.html>`_ to knowingly update and
+<https://subspace.kernel.org/lists.freax.dev.html>`_ to knowingly update and
 test their applications with the latest available features.  In the interest of
 users, and because they may use different kernel versions, it is strongly
 encouraged to follow a best-effort security approach by checking the Landlock
@@ -388,7 +388,7 @@ Kernel interface
 Access rights
 -------------
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/freax/landlock.h
     :identifiers: fs_access net_access
 
 Creating a new ruleset
@@ -397,7 +397,7 @@ Creating a new ruleset
 .. kernel-doc:: security/landlock/syscalls.c
     :identifiers: sys_landlock_create_ruleset
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/freax/landlock.h
     :identifiers: landlock_ruleset_attr
 
 Extending a ruleset
@@ -406,7 +406,7 @@ Extending a ruleset
 .. kernel-doc:: security/landlock/syscalls.c
     :identifiers: sys_landlock_add_rule
 
-.. kernel-doc:: include/uapi/linux/landlock.h
+.. kernel-doc:: include/uapi/freax/landlock.h
     :identifiers: landlock_rule_type landlock_path_beneath_attr
                   landlock_net_port_attr
 
@@ -499,7 +499,7 @@ access rights.
 Kernel support
 ==============
 
-Landlock was first introduced in Linux 5.13 but it must be configured at build
+Landlock was first introduced in freax 5.13 but it must be configured at build
 time with ``CONFIG_SECURITY_LANDLOCK=y``.  Landlock must also be enabled at boot
 time as the other security modules.  The list of security modules enabled by
 default is set with ``CONFIG_LSM``.  The kernel configuration should then
@@ -546,4 +546,4 @@ Additional documentation
 
 .. Links
 .. _samples/landlock/sandboxer.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/samples/landlock/sandboxer.c
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/samples/landlock/sandboxer.c

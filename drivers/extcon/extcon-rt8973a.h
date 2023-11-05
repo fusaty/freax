@@ -5,8 +5,8 @@
  * Copyright (c) 2014 Samsung Electronics Co., Ltd
  */
 
-#ifndef __LINUX_EXTCON_RT8973A_H
-#define __LINUX_EXTCON_RT8973A_H
+#ifndef __freax_EXTCON_RT8973A_H
+#define __freax_EXTCON_RT8973A_H
 
 enum rt8973a_types {
 	TYPE_RT8973A,
@@ -196,4 +196,4 @@ enum rt8973a_irq {
 #define RT8973A_INT2_OCP_MASK			BIT(5)
 #define RT8973A_INT2_OVP_OCP_MASK		BIT(6)
 
-#endif /*  __LINUX_EXTCON_RT8973A_H */
+#endif /*  __freax_EXTCON_RT8973A_H */

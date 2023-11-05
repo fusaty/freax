@@ -3,8 +3,8 @@
 #ifndef _KERNEL_PRINTK_RINGBUFFER_H
 #define _KERNEL_PRINTK_RINGBUFFER_H
 
-#include <linux/atomic.h>
-#include <linux/dev_printk.h>
+#include <freax/atomic.h>
+#include <freax/dev_printk.h>
 
 /*
  * Meta information about each stored message.

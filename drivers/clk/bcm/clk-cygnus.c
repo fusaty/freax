@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2014 Broadcom Corporation
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clkdev.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/clkdev.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
 
 #include <dt-bindings/clock/bcm-cygnus.h>
 #include "clk-iproc.h"

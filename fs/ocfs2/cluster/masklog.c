@@ -3,12 +3,12 @@
  * Copyright (C) 2004, 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
 
 #include "masklog.h"
 

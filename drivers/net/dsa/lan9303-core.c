@@ -2,17 +2,17 @@
 /*
  * Copyright (C) 2017 Pengutronix, Juergen Borleis <kernel@pengutronix.de>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
-#include <linux/mutex.h>
-#include <linux/mii.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regmap.h>
+#include <freax/mutex.h>
+#include <freax/mii.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/etherdevice.h>
 
 #include "lan9303.h"
 

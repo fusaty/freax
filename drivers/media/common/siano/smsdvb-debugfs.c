@@ -4,12 +4,12 @@
 
 #include "smscoreapi.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/debugfs.h>
+#include <freax/spinlock.h>
+#include <freax/usb.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

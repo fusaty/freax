@@ -8,9 +8,9 @@
  * parameter. Now every user can use their own standalone ratelimit_state.
  */
 
-#include <linux/ratelimit.h>
-#include <linux/jiffies.h>
-#include <linux/export.h>
+#include <freax/ratelimit.h>
+#include <freax/jiffies.h>
+#include <freax/export.h>
 
 /*
  * __ratelimit - rate limiting

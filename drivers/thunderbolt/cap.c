@@ -6,8 +6,8 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
 
 #include "tb.h"
 

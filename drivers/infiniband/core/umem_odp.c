@@ -30,18 +30,18 @@
  * SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/pid.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
-#include <linux/interval_tree.h>
-#include <linux/hmm.h>
-#include <linux/pagemap.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/pid.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/vmalloc.h>
+#include <freax/hugetlb.h>
+#include <freax/interval_tree.h>
+#include <freax/hmm.h>
+#include <freax/pagemap.h>
 
 #include <rdma/ib_umem_odp.h>
 

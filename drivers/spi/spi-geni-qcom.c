@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The freax foundation. All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/qcom-gpi-dma.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/soc/qcom/geni-se.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma/qcom-gpi-dma.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/soc/qcom/geni-se.h>
+#include <freax/spi/spi.h>
+#include <freax/spinlock.h>
 
 /* SPI SE specific registers and respective register fields */
 #define SE_SPI_CPHA		0x224

@@ -7,8 +7,8 @@
  *
  * Author: Basavaraj Natikar <Basavaraj.Natikar@amd.com>
  */
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/iopoll.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/iopoll.h>
 
 #include "amd_sfh_interface.h"
 

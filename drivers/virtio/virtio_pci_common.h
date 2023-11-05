@@ -16,19 +16,19 @@
  *  Michael S. Tsirkin <mst@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
-#include <linux/virtio_pci.h>
-#include <linux/virtio_pci_legacy.h>
-#include <linux/virtio_pci_modern.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/virtio.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_ring.h>
+#include <freax/virtio_pci.h>
+#include <freax/virtio_pci_legacy.h>
+#include <freax/virtio_pci_modern.h>
+#include <freax/highmem.h>
+#include <freax/spinlock.h>
 
 struct virtio_pci_vq_info {
 	/* the actual virtqueue */

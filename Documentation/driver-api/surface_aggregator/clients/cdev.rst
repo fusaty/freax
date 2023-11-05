@@ -17,10 +17,10 @@ module is not loaded automatically, but instead must be loaded manually.
 The provided interface is accessible through the ``/dev/surface/aggregator``
 device-file. All functionality of this interface is provided via IOCTLs.
 These IOCTLs and their respective input/output parameter structs are defined in
-``include/uapi/linux/surface_aggregator/cdev.h``.
+``include/uapi/freax/surface_aggregator/cdev.h``.
 
 A small python library and scripts for accessing this interface can be found
-at https://github.com/linux-surface/surface-aggregator-module/tree/master/scripts/ssam.
+at https://github.com/freax-surface/surface-aggregator-module/tree/master/scripts/ssam.
 
 .. contents::
 
@@ -201,4 +201,4 @@ notifiers.
 Structures and Enums
 ====================
 
-.. kernel-doc:: include/uapi/linux/surface_aggregator/cdev.h
+.. kernel-doc:: include/uapi/freax/surface_aggregator/cdev.h

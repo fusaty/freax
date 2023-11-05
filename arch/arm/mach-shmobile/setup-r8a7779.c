@@ -6,8 +6,8 @@
  * Copyright (C) 2011  Magnus Damm
  * Copyright (C) 2013  Cogent Embedded, Inc.
  */
-#include <linux/init.h>
-#include <linux/irqchip.h>
+#include <freax/init.h>
+#include <freax/irqchip.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

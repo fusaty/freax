@@ -10,13 +10,13 @@
  *
  */
 
-#include "linux/blk-mq.h"
-#include "linux/console.h"
-#include "linux/gfp_types.h"
-#include "linux/signal.h"
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/pgtable.h>
+#include "freax/blk-mq.h"
+#include "freax/console.h"
+#include "freax/gfp_types.h"
+#include "freax/signal.h"
+#include <freax/kernel.h>
+#include <freax/kvm_host.h>
+#include <freax/pgtable.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

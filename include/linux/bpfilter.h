@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BPFILTER_H
-#define _LINUX_BPFILTER_H
+#ifndef _freax_BPFILTER_H
+#define _freax_BPFILTER_H
 
-#include <uapi/linux/bpfilter.h>
-#include <linux/usermode_driver.h>
-#include <linux/sockptr.h>
+#include <uapi/freax/bpfilter.h>
+#include <freax/usermode_driver.h>
+#include <freax/sockptr.h>
 
 struct sock;
 int bpfilter_ip_set_sockopt(struct sock *sk, int optname, sockptr_t optval,

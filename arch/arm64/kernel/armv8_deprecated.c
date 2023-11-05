@@ -3,14 +3,14 @@
  *  Copyright (C) 2014 ARM Limited
  */
 
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/perf_event.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
+#include <freax/cpu.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/perf_event.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/uaccess.h>
 
 #include <asm/cpufeature.h>
 #include <asm/insn.h>

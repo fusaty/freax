@@ -51,12 +51,12 @@ static inline long x86_syscall3(long nr, long a0, long a1, long a2)
 	return ret;
 }
 
-static inline long linux_write(int fd, const void *data, size_t len)
+static inline long freax_write(int fd, const void *data, size_t len)
 {
 	return x86_syscall3(__NR_write, fd, (long)data, (long)len);
 }
 
-static inline void linux_exit(int code)
+static inline void freax_exit(int code)
 {
 	x86_syscall3(__NR_exit, code, 0, 0);
 }
@@ -86,10 +86,10 @@ __attribute__((externally_visible)) void c_main(void **stack)
 
 	/* Find gettimeofday. */
 	typedef long (*gtod_t)(struct timeval *tv, struct timezone *tz);
-	gtod_t gtod = (gtod_t)vdso_sym("LINUX_2.6", "__vdso_gettimeofday");
+	gtod_t gtod = (gtod_t)vdso_sym("freax_2.6", "__vdso_gettimeofday");
 
 	if (!gtod)
-		linux_exit(1);
+		freax_exit(1);
 
 	struct timeval tv;
 	long ret = gtod(&tv, 0);
@@ -98,12 +98,12 @@ __attribute__((externally_visible)) void c_main(void **stack)
 		char buf[] = "The time is                     .000000\n";
 		to_base10(buf + 31, tv.tv_sec);
 		to_base10(buf + 38, tv.tv_usec);
-		linux_write(1, buf, sizeof(buf) - 1);
+		freax_write(1, buf, sizeof(buf) - 1);
 	} else {
-		linux_exit(ret);
+		freax_exit(ret);
 	}
 
-	linux_exit(0);
+	freax_exit(0);
 }
 
 /*

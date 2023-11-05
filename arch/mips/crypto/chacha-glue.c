@@ -10,8 +10,8 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/chacha.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 asmlinkage void chacha_crypt_arch(u32 *state, u8 *dst, const u8 *src,
 				  unsigned int bytes, int nrounds);

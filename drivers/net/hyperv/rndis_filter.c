@@ -6,22 +6,22 @@
  *   Haiyang Zhang <haiyangz@microsoft.com>
  *   Hank Janssen  <hjanssen@microsoft.com>
  */
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/nls.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/ucs2_string.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/nls.h>
+#include <freax/vmalloc.h>
+#include <freax/rtnetlink.h>
+#include <freax/ucs2_string.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 #include "hyperv_net.h"
 #include "netvsc_trace.h"
@@ -1363,7 +1363,7 @@ static int rndis_netdev_set_hwcaps(struct rndis_device *rndis_device,
 	/* A value of zero means "no change"; now turn on what we want. */
 	memset(&offloads, 0, sizeof(struct ndis_offload_params));
 
-	/* Linux does not care about IP checksum, always does in kernel */
+	/* freax does not care about IP checksum, always does in kernel */
 	offloads.ip_v4_csum = NDIS_OFFLOAD_PARAMETERS_TX_RX_DISABLED;
 
 	/* Reset previously set hw_features flags */

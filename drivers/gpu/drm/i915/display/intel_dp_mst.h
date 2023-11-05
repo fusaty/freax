@@ -6,7 +6,7 @@
 #ifndef __INTEL_DP_MST_H__
 #define __INTEL_DP_MST_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_atomic_state;
 struct intel_crtc;

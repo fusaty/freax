@@ -5,18 +5,18 @@
  * Copyright (C) 2012-2014, 2022 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@freax.intel.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/pwm.h>
+#include <freax/regmap.h>
 
 #define CRYSTAL_COVE_MAX_REGISTER	0xC6
 
@@ -272,4 +272,4 @@ module_i2c_driver(crystal_cove_i2c_driver);
 
 MODULE_DESCRIPTION("I2C driver for Intel SoC PMIC");
 MODULE_AUTHOR("Yang, Bin <bin.yang@intel.com>");
-MODULE_AUTHOR("Zhu, Lejun <lejun.zhu@linux.intel.com>");
+MODULE_AUTHOR("Zhu, Lejun <lejun.zhu@freax.intel.com>");

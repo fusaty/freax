@@ -5,7 +5,7 @@
  * Copyright (C) IBM Corporation, 2006
  * Copyright (C) Fujitsu, 2012
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@freax.ibm.com>
  *	   Lai Jiangshan <laijs@cn.fujitsu.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
@@ -13,13 +13,13 @@
  *
  */
 
-#ifndef _LINUX_SRCU_H
-#define _LINUX_SRCU_H
+#ifndef _freax_SRCU_H
+#define _freax_SRCU_H
 
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
-#include <linux/rcu_segcblist.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/workqueue.h>
+#include <freax/rcu_segcblist.h>
 
 struct srcu_struct;
 
@@ -44,9 +44,9 @@ int init_srcu_struct(struct srcu_struct *ssp);
 #endif /* #else #ifdef CONFIG_DEBUG_LOCK_ALLOC */
 
 #ifdef CONFIG_TINY_SRCU
-#include <linux/srcutiny.h>
+#include <freax/srcutiny.h>
 #elif defined(CONFIG_TREE_SRCU)
-#include <linux/srcutree.h>
+#include <freax/srcutree.h>
 #else
 #error "Unknown SRCU implementation specified to kernel configuration"
 #endif

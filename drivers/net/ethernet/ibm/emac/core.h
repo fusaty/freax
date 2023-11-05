@@ -20,14 +20,14 @@
 #ifndef __IBM_NEWEMAC_CORE_H
 #define __IBM_NEWEMAC_CORE_H
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/dma-mapping.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 #include <asm/dcr.h>

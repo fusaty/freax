@@ -6,15 +6,15 @@
 #ifndef _CXL_H_
 #define _CXL_H_
 
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/pid.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
+#include <freax/interrupt.h>
+#include <freax/semaphore.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
+#include <freax/pid.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/fs.h>
 #include <asm/cputable.h>
 #include <asm/mmu.h>
 #include <asm/reg.h>

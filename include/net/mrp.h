@@ -2,9 +2,9 @@
 #ifndef _NET_MRP_H
 #define _NET_MRP_H
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 
 #define MRP_END_MARK		0x0
 

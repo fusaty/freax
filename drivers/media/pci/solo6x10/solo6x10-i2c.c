@@ -17,8 +17,8 @@
  * that occur during interrupt scare me. The ISR should merely signal
  * thread context, ACK the interrupt, and move on. -- BenC */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
 
 #include "solo6x10.h"
 

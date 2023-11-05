@@ -12,14 +12,14 @@
  * Copyright (C) 2011 Colin Leitner <colin.leitner@googlemail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <freax/bitops.h>
+#include <freax/etherdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/of_irq.h>
+#include <freax/regmap.h>
 
 #include "realtek.h"
 

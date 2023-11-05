@@ -25,13 +25,13 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/iio: ../../include/uapi/linux/iio
-	mkdir -p $(OUTPUT)include/linux/iio 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/buffer.h $@
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/events.h $@
-	ln -sf $(CURDIR)/../../include/uapi/linux/iio/types.h $@
+$(OUTPUT)include/freax/iio: ../../include/uapi/freax/iio
+	mkdir -p $(OUTPUT)include/freax/iio 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/freax/iio/buffer.h $@
+	ln -sf $(CURDIR)/../../include/uapi/freax/iio/events.h $@
+	ln -sf $(CURDIR)/../../include/uapi/freax/iio/types.h $@
 
-prepare: $(OUTPUT)include/linux/iio
+prepare: $(OUTPUT)include/freax/iio
 
 IIO_UTILS_IN := $(OUTPUT)iio_utils-in.o
 $(IIO_UTILS_IN): prepare FORCE
@@ -57,7 +57,7 @@ $(OUTPUT)iio_generic_buffer: $(IIO_GENERIC_BUFFER_IN)
 
 clean:
 	rm -f $(ALL_PROGRAMS)
-	rm -rf $(OUTPUT)include/linux/iio
+	rm -rf $(OUTPUT)include/freax/iio
 	find $(or $(OUTPUT),.) -name '*.o' -delete -o -name '\.*.d' -delete
 
 install: $(ALL_PROGRAMS)

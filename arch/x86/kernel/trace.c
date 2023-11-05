@@ -1,5 +1,5 @@
 #include <asm/trace/irq_vectors.h>
-#include <linux/trace.h>
+#include <freax/trace.h>
 
 #if defined(CONFIG_OSNOISE_TRACER) && defined(CONFIG_X86_LOCAL_APIC)
 /*

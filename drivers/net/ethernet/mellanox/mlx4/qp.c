@@ -33,11 +33,11 @@
  * SOFTWARE.
  */
 
-#include <linux/gfp.h>
-#include <linux/export.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
+#include <freax/mlx4/cmd.h>
+#include <freax/mlx4/qp.h>
 
 #include "mlx4.h"
 #include "icm.h"

@@ -8,10 +8,10 @@
  *	Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#ifndef __LINUX_SPI_MEM_H
-#define __LINUX_SPI_MEM_H
+#ifndef __freax_SPI_MEM_H
+#define __freax_SPI_MEM_H
 
-#include <linux/spi/spi.h>
+#include <freax/spi/spi.h>
 
 #define SPI_MEM_OP_CMD(__opcode, __buswidth)			\
 	{							\
@@ -405,4 +405,4 @@ void spi_mem_driver_unregister(struct spi_mem_driver *drv);
 	module_driver(__drv, spi_mem_driver_register,                   \
 		      spi_mem_driver_unregister)
 
-#endif /* __LINUX_SPI_MEM_H */
+#endif /* __freax_SPI_MEM_H */

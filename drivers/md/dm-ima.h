@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2021 Microsoft Corporation
  *
- * Author: Tushar Sugandhi <tusharsu@linux.microsoft.com>
+ * Author: Tushar Sugandhi <tusharsu@freax.microsoft.com>
  *
  * Header file for device mapper IMA measurements.
  */

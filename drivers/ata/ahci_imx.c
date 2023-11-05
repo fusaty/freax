@@ -6,20 +6,20 @@
  * based on the AHCI SATA platform driver by Jeff Garzik and Anton Vorontsov
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/ahci_platform.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/libata.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/thermal.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/ahci_platform.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/libata.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/thermal.h>
 #include "ahci.h"
 
 #define DRV_NAME "ahci-imx"

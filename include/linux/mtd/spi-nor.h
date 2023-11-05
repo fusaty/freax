@@ -3,12 +3,12 @@
  * Copyright (C) 2014 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_MTD_SPI_NOR_H
-#define __LINUX_MTD_SPI_NOR_H
+#ifndef __freax_MTD_SPI_NOR_H
+#define __freax_MTD_SPI_NOR_H
 
-#include <linux/bitops.h>
-#include <linux/mtd/mtd.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/bitops.h>
+#include <freax/mtd/mtd.h>
+#include <freax/spi/spi-mem.h>
 
 /*
  * Note on opcode nomenclature: some opcodes have a format like

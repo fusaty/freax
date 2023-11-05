@@ -3,16 +3,16 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // S3C64XX CPU PM support.
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/pm_domain.h>
+#include <freax/init.h>
+#include <freax/suspend.h>
+#include <freax/serial_core.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/pm_domain.h>
 
 #include "map.h"
 #include "irqs.h"

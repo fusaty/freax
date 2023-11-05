@@ -9,9 +9,9 @@
 #include <sys/file.h>
 #include <sys/time.h>
 #include <sys/resource.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
-#include <linux/perf_event.h>
+#include <freax/err.h>
+#include <freax/zalloc.h>
+#include <freax/perf_event.h>
 #include <api/fs/fs.h>
 #include <perf/bpf_perf.h>
 

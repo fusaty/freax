@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/drivers/serial/acorn.c
+ *  freax/drivers/serial/acorn.c
  *
  *  Copyright (C) 1996-2003 Russell King.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/tty.h>
+#include <freax/serial_core.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/init.h>
 
 #include <asm/io.h>
 #include <asm/ecard.h>

@@ -2,15 +2,15 @@
 #ifndef _NFS_FS_SB
 #define _NFS_FS_SB
 
-#include <linux/list.h>
-#include <linux/backing-dev.h>
-#include <linux/idr.h>
-#include <linux/wait.h>
-#include <linux/nfs_xdr.h>
-#include <linux/sunrpc/xprt.h>
+#include <freax/list.h>
+#include <freax/backing-dev.h>
+#include <freax/idr.h>
+#include <freax/wait.h>
+#include <freax/nfs_xdr.h>
+#include <freax/sunrpc/xprt.h>
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
 
 struct nfs4_session;
 struct nfs_iostats;
@@ -143,7 +143,7 @@ struct nfs_server {
 	unsigned int		write_congested;/* flag set when writeback gets too high */
 	unsigned int		flags;		/* various flags */
 
-/* The following are for internal use only. Also see uapi/linux/nfs_mount.h */
+/* The following are for internal use only. Also see uapi/freax/nfs_mount.h */
 #define NFS_MOUNT_LOOKUP_CACHE_NONEG	0x10000
 #define NFS_MOUNT_LOOKUP_CACHE_NONE	0x20000
 #define NFS_MOUNT_NORESVPORT		0x40000

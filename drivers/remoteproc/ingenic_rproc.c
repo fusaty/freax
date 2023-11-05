@@ -4,14 +4,14 @@
  * Copyright 2019, Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc.h>
 
 #include "remoteproc_internal.h"
 

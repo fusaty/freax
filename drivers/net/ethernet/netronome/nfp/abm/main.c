@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2018 Netronome Systems, Inc. */
 
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/etherdevice.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/etherdevice.h>
+#include <freax/lockdep.h>
+#include <freax/netdevice.h>
+#include <freax/rcupdate.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
 
 #include "../nfpcore/nfp.h"
 #include "../nfpcore/nfp_cpp.h"

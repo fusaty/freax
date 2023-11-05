@@ -5,13 +5,13 @@
  *	Copyright (C) 2013 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
 #include <asm/proc-fns.h>
 
 #define CPU_SW_INT_BLK BIT(28)

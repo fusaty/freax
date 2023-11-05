@@ -10,8 +10,8 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#ifndef __LINUX_REGULATOR_TPS51632_H
-#define __LINUX_REGULATOR_TPS51632_H
+#ifndef __freax_REGULATOR_TPS51632_H
+#define __freax_REGULATOR_TPS51632_H
 
 /*
  * struct tps51632_regulator_platform_data - tps51632 regulator platform data.
@@ -30,4 +30,4 @@ struct tps51632_regulator_platform_data {
 	int base_voltage_uV;
 };
 
-#endif /* __LINUX_REGULATOR_TPS51632_H */
+#endif /* __freax_REGULATOR_TPS51632_H */

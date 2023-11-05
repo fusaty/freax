@@ -10,14 +10,14 @@
  * is not much point in implementing the full Dwarf2 unwind API.
  */
 
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/memblock.h>
+#include <freax/sort.h>
+#include <freax/slab.h>
+#include <freax/stop_machine.h>
+#include <freax/uaccess.h>
+#include <freax/ptrace.h>
 #include <asm/sections.h>
 #include <asm/unaligned.h>
 #include <asm/unwind.h>

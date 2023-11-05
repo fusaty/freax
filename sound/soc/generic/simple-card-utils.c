@@ -4,12 +4,12 @@
 //
 // Copyright (c) 2016 Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <freax/clk.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/simple_card_utils.h>

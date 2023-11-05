@@ -1,37 +1,37 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/prctl.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/random.h>
-#include <linux/user-return-notifier.h>
-#include <linux/dmi.h>
-#include <linux/utsname.h>
-#include <linux/stackprotector.h>
-#include <linux/cpuidle.h>
-#include <linux/acpi.h>
-#include <linux/elf-randomize.h>
-#include <linux/static_call.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/prctl.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/idle.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/pm.h>
+#include <freax/tick.h>
+#include <freax/random.h>
+#include <freax/user-return-notifier.h>
+#include <freax/dmi.h>
+#include <freax/utsname.h>
+#include <freax/stackprotector.h>
+#include <freax/cpuidle.h>
+#include <freax/acpi.h>
+#include <freax/elf-randomize.h>
+#include <freax/static_call.h>
 #include <trace/events/power.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/entry-common.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/entry-common.h>
 #include <asm/cpu.h>
 #include <asm/apic.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/mwait.h>
 #include <asm/fpu/api.h>
 #include <asm/fpu/sched.h>
@@ -56,7 +56,7 @@
 #include "process.h"
 
 /*
- * per-CPU TSS segments. Threads are completely 'soft' on Linux,
+ * per-CPU TSS segments. Threads are completely 'soft' on freax,
  * no more per-task TSS's. The TSS size is kept cacheline-aligned
  * so they are allowed to end up in the .data..cacheline_aligned
  * section. Since TSS's are completely CPU-local, we want them

@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptspi.c
+ *  freax/drivers/message/fusion/mptspi.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionfreax@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -44,18 +44,18 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/interrupt.h>
-#include <linux/reboot.h>	/* notifier code */
-#include <linux/workqueue.h>
-#include <linux/raid_class.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/kdev_t.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>	/* for mdelay */
+#include <freax/interrupt.h>
+#include <freax/reboot.h>	/* notifier code */
+#include <freax/workqueue.h>
+#include <freax/raid_class.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -71,7 +71,7 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 #define my_NAME		"Fusion MPT SPI Host driver"
-#define my_VERSION	MPT_LINUX_VERSION_COMMON
+#define my_VERSION	MPT_freax_VERSION_COMMON
 #define MYNAM		"mptspi"
 
 MODULE_AUTHOR(MODULEAUTHOR);
@@ -1432,7 +1432,7 @@ mptspi_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 	sh->max_cmd_len = 16;
 
 	/* Yikes!  This is important!
-	 * Otherwise, by default, linux
+	 * Otherwise, by default, freax
 	 * only scans target IDs 0-7!
 	 * pfactsN->MaxDevices unreliable
 	 * (not supported in early

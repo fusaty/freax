@@ -6,8 +6,8 @@
  * Copyright (C) 2018 Stanislaw Gruszka <stf_xl@wp.pl>
  */
 
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/etherdevice.h>
 
 #include "mt76x0.h"
 #include "mcu.h"

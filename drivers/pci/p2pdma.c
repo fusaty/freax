@@ -9,17 +9,17 @@
  */
 
 #define pr_fmt(fmt) "pci-p2pdma: " fmt
-#include <linux/ctype.h>
-#include <linux/dma-map-ops.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
-#include <linux/memremap.h>
-#include <linux/percpu-refcount.h>
-#include <linux/random.h>
-#include <linux/seq_buf.h>
-#include <linux/xarray.h>
+#include <freax/ctype.h>
+#include <freax/dma-map-ops.h>
+#include <freax/pci-p2pdma.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/genalloc.h>
+#include <freax/memremap.h>
+#include <freax/percpu-refcount.h>
+#include <freax/random.h>
+#include <freax/seq_buf.h>
+#include <freax/xarray.h>
 
 struct pci_p2pdma {
 	struct gen_pool *pool;

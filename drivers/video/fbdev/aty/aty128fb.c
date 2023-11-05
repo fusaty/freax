@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* $Id: aty128fb.c,v 1.1.1.1.36.1 1999/12/11 09:03:05 Exp $
- *  linux/drivers/video/aty128fb.c -- Frame buffer device for ATI Rage128
+ *  freax/drivers/video/aty128fb.c -- Frame buffer device for ATI Rage128
  *
  *  Copyright (C) 1999-2003, Brad Douglas <brad@neruo.com>
  *  Copyright (C) 1999, Anthony Tong <atong@uiuc.edu>
@@ -47,23 +47,23 @@
  */
 
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/backlight.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/uaccess.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/console.h>
+#include <freax/backlight.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PPC_PMAC

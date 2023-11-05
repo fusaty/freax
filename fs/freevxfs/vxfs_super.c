@@ -7,17 +7,17 @@
 /*
  * Veritas filesystem driver - superblock related routines.
  */
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
+#include <freax/blkdev.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/vfs.h>
+#include <freax/mount.h>
 
 #include "vxfs.h"
 #include "vxfs_extern.h"

@@ -7,10 +7,10 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL313.pdf
  */
 
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "adxl313.h"
 

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_TASK_H
-#define _LINUX_SCHED_TASK_H
+#ifndef _freax_SCHED_TASK_H
+#define _freax_SCHED_TASK_H
 
 /*
  * Interface between the scheduler and various task lifetime (fork()/exit())
  * functionality:
  */
 
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
 
 struct task_struct;
 struct rusage;
@@ -226,4 +226,4 @@ static inline void task_unlock(struct task_struct *p)
 	spin_unlock(&p->alloc_lock);
 }
 
-#endif /* _LINUX_SCHED_TASK_H */
+#endif /* _freax_SCHED_TASK_H */

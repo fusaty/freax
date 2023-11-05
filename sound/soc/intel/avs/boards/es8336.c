@@ -3,16 +3,16 @@
 // Copyright(c) 2023 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/processor.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/processor.h>
+#include <freax/slab.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

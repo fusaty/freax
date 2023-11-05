@@ -4,35 +4,35 @@
  *
  * Copyright (C) 2004-2008 Atmel Corporation
  */
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/types.h>
+#include <freax/blkdev.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/scatterlist.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/types.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio.h>
 
-#include <linux/atmel_pdc.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/atmel_pdc.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/pinctrl/consumer.h>
 
 #include <asm/cacheflush.h>
 #include <asm/io.h>

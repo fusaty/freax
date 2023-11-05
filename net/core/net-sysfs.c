@@ -5,24 +5,24 @@
  * Copyright (c) 2003 Stephen Hemminger <shemminger@osdl.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/isolation.h>
-#include <linux/nsproxy.h>
+#include <freax/capability.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/isolation.h>
+#include <freax/nsproxy.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/cpu.h>
+#include <freax/rtnetlink.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/cpu.h>
 #include <net/netdev_rx_queue.h>
 
 #include "dev.h"

@@ -3,23 +3,23 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.freax-ipv6.org>
  * (c) 2005-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/kernel.h>
-#include <linux/siphash.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/stddef.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/percpu.h>
+#include <freax/kernel.h>
+#include <freax/siphash.h>
+#include <freax/moduleparam.h>
+#include <freax/export.h>
 #include <net/net_namespace.h>
 #include <net/netns/hash.h>
 

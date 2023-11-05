@@ -9,12 +9,12 @@
  *      Copyright (C) 2011 RICOH COMPANY,LTD
  */
 
-#ifndef __LINUX_MFD_RC5T583_H
-#define __LINUX_MFD_RC5T583_H
+#ifndef __freax_MFD_RC5T583_H
+#define __freax_MFD_RC5T583_H
 
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/regmap.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/regmap.h>
 
 /* Maximum number of main interrupts */
 #define MAX_MAIN_INTERRUPT		5

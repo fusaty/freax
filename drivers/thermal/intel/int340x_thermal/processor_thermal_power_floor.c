@@ -26,7 +26,7 @@
  * Copyright (c) 2023, Intel Corporation.
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "processor_thermal_device.h"
 
 #define SOC_POWER_FLOOR_STATUS		BIT(39)

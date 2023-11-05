@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright 2019 NXP
  */
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/fsl/ptp_qoriq.h>
+#include <freax/device.h>
+#include <freax/debugfs.h>
+#include <freax/fsl/ptp_qoriq.h>
 
 static int ptp_qoriq_fiper1_lpbk_get(void *data, u64 *val)
 {

@@ -13,13 +13,13 @@
  *	Implemented as a type-safe wrapper around ptr_ring.
  */
 
-#ifndef _LINUX_SKB_ARRAY_H
-#define _LINUX_SKB_ARRAY_H 1
+#ifndef _freax_SKB_ARRAY_H
+#define _freax_SKB_ARRAY_H 1
 
 #ifdef __KERNEL__
-#include <linux/ptr_ring.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
+#include <freax/ptr_ring.h>
+#include <freax/skbuff.h>
+#include <freax/if_vlan.h>
 #endif
 
 struct skb_array {
@@ -213,4 +213,4 @@ static inline void skb_array_cleanup(struct skb_array *a)
 	ptr_ring_cleanup(&a->ring, __skb_array_destroy_skb);
 }
 
-#endif /* _LINUX_SKB_ARRAY_H  */
+#endif /* _freax_SKB_ARRAY_H  */

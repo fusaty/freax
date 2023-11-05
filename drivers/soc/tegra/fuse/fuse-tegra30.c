@@ -3,16 +3,16 @@
  * Copyright (c) 2013-2022, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
+#include <freax/device.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/random.h>
 
 #include <soc/tegra/fuse.h>
 

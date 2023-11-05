@@ -4,15 +4,15 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
+#include <freax/init.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/parser.h>
+#include <freax/seq_file.h>
 #include "nvme.h"
 #include "fabrics.h"
-#include <linux/nvme-keyring.h>
+#include <freax/nvme-keyring.h>
 
 static LIST_HEAD(nvmf_transports);
 static DECLARE_RWSEM(nvmf_transports_rwsem);
@@ -167,7 +167,7 @@ EXPORT_SYMBOL_GPL(nvmf_get_address);
  * Return:
  *	0: successful read
  *	> 0: NVMe error status code
- *	< 0: Linux errno error code
+ *	< 0: freax errno error code
  */
 int nvmf_reg_read32(struct nvme_ctrl *ctrl, u32 off, u32 *val)
 {
@@ -212,7 +212,7 @@ EXPORT_SYMBOL_GPL(nvmf_reg_read32);
  * Return:
  *	0: successful read
  *	> 0: NVMe error status code
- *	< 0: Linux errno error code
+ *	< 0: freax errno error code
  */
 int nvmf_reg_read64(struct nvme_ctrl *ctrl, u32 off, u64 *val)
 {
@@ -257,7 +257,7 @@ EXPORT_SYMBOL_GPL(nvmf_reg_read64);
  * Return:
  *	0: successful write
  *	> 0: NVMe error status code
- *	< 0: Linux errno error code
+ *	< 0: freax errno error code
  */
 int nvmf_reg_write32(struct nvme_ctrl *ctrl, u32 off, u32 val)
 {
@@ -432,7 +432,7 @@ static void nvmf_connect_cmd_prep(struct nvme_ctrl *ctrl, u16 qid,
  * Return:
  *	0: success
  *	> 0: NVMe error status code
- *	< 0: Linux errno error code
+ *	< 0: freax errno error code
  *
  */
 int nvmf_connect_admin_queue(struct nvme_ctrl *ctrl)
@@ -508,7 +508,7 @@ EXPORT_SYMBOL_GPL(nvmf_connect_admin_queue);
  * Return:
  *	0: success
  *	> 0: NVMe error status code
- *	< 0: Linux errno error code
+ *	< 0: freax errno error code
  */
 int nvmf_connect_io_queue(struct nvme_ctrl *ctrl, u16 qid)
 {

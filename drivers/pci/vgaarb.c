@@ -14,24 +14,24 @@
 #define vgaarb_info(dev, fmt, arg...)	dev_info(dev, "vgaarb: " fmt, ##arg)
 #define vgaarb_err(dev, fmt, arg...)	dev_err(dev, "vgaarb: " fmt, ##arg)
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/poll.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/screen_info.h>
-#include <linux/vt.h>
-#include <linux/console.h>
-#include <linux/acpi.h>
-#include <linux/uaccess.h>
-#include <linux/vgaarb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/sched/signal.h>
+#include <freax/wait.h>
+#include <freax/spinlock.h>
+#include <freax/poll.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/screen_info.h>
+#include <freax/vt.h>
+#include <freax/console.h>
+#include <freax/acpi.h>
+#include <freax/uaccess.h>
+#include <freax/vgaarb.h>
 
 static void vga_arbiter_notify_clients(void);
 

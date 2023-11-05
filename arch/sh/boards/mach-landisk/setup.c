@@ -9,11 +9,11 @@
  * Copylight (C) 2002 Atom Create Engineering Co., Ltd.
  * Copyright (C) 2005-2007 kogiidena
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/pm.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
+#include <freax/pm.h>
+#include <freax/mm.h>
 #include <asm/machvec.h>
 #include <mach-landisk/mach/iodata_landisk.h>
 #include <asm/io.h>

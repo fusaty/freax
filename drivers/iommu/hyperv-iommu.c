@@ -8,11 +8,11 @@
  * Author : Lan Tianyu <Tianyu.Lan@microsoft.com>
  */
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
 
 #include <asm/apic.h>
 #include <asm/cpu.h>
@@ -183,7 +183,7 @@ struct irq_remap_ops hyperv_irq_remap_ops = {
 	.enable			= hyperv_enable_irq_remapping,
 };
 
-/* IRQ remapping domain when Linux runs as the root partition */
+/* IRQ remapping domain when freax runs as the root partition */
 struct hyperv_root_ir_data {
 	u8 ioapic_id;
 	bool is_level;

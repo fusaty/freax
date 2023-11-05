@@ -7,11 +7,11 @@
  * Margarita Olaya Cabrera <magi@slimlogic.co.uk>
  */
 
-#ifndef __LINUX_MFD_TPS65912_H
-#define __LINUX_MFD_TPS65912_H
+#ifndef __freax_MFD_TPS65912_H
+#define __freax_MFD_TPS65912_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /* List of registers for TPS65912 */
 #define TPS65912_DCDC1_CTRL		0x00
@@ -316,4 +316,4 @@ extern const struct regmap_config tps65912_regmap_config;
 int tps65912_device_init(struct tps65912 *tps);
 void tps65912_device_exit(struct tps65912 *tps);
 
-#endif /*  __LINUX_MFD_TPS65912_H */
+#endif /*  __freax_MFD_TPS65912_H */

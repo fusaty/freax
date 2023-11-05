@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KERNEL_VTIME_H
-#define _LINUX_KERNEL_VTIME_H
+#ifndef _freax_KERNEL_VTIME_H
+#define _freax_KERNEL_VTIME_H
 
-#include <linux/context_tracking_state.h>
-#include <linux/sched.h>
+#include <freax/context_tracking_state.h>
+#include <freax/sched.h>
 
 #ifdef CONFIG_VIRT_CPU_ACCOUNTING_NATIVE
 #include <asm/vtime.h>
@@ -159,4 +159,4 @@ static inline void account_hardirq_exit(struct task_struct *tsk)
 	irqtime_account_irq(tsk, 0);
 }
 
-#endif /* _LINUX_KERNEL_VTIME_H */
+#endif /* _freax_KERNEL_VTIME_H */

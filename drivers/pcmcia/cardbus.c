@@ -17,9 +17,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

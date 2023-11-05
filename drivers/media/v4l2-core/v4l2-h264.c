@@ -7,8 +7,8 @@
  * Author: Boris Brezillon <boris.brezillon@collabora.com>
  */
 
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <freax/module.h>
+#include <freax/sort.h>
 
 #include <media/v4l2-h264.h>
 

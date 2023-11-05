@@ -2,9 +2,9 @@
 #ifndef BMI088_ACCEL_H
 #define BMI088_ACCEL_H
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 struct device;
 

@@ -6,9 +6,9 @@
  */
 
 #include <net/genetlink.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/nfc.h>
+#include <freax/delay.h>
 #include <net/nfc/nci_core.h>
 
 #include "st-nci.h"

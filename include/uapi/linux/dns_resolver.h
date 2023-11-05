@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /* DNS resolver interface definitions.
  *
  * Copyright (C) 2018 Red Hat, Inc. All Rights Reserved.
@@ -10,10 +10,10 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_DNS_RESOLVER_H
-#define _UAPI_LINUX_DNS_RESOLVER_H
+#ifndef _UAPI_freax_DNS_RESOLVER_H
+#define _UAPI_freax_DNS_RESOLVER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Type of payload.
@@ -113,4 +113,4 @@ struct dns_server_list_v1_address {
 	__u8		address_type;	/* enum dns_payload_address_type */
 } __packed;
 
-#endif /* _UAPI_LINUX_DNS_RESOLVER_H */
+#endif /* _UAPI_freax_DNS_RESOLVER_H */

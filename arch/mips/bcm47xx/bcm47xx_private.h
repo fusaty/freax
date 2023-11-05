@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCM47XX_PRIVATE_H_
-#define LINUX_BCM47XX_PRIVATE_H_
+#ifndef freax_BCM47XX_PRIVATE_H_
+#define freax_BCM47XX_PRIVATE_H_
 
 #ifndef pr_fmt
 #define pr_fmt(fmt)		"bcm47xx: " fmt
 #endif
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 /* prom.c */
 void __init bcm47xx_prom_highmem_init(void);

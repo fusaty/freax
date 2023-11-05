@@ -14,27 +14,27 @@
  * ZORRO bus code from:
  */
 /*
- * Detection routine for the NCR53c710 based Amiga SCSI Controllers for Linux.
+ * Detection routine for the NCR53c710 based Amiga SCSI Controllers for freax.
  *		Amiga MacroSystemUS WarpEngine SCSI controller.
  *		Amiga Technologies/DKB A4091 SCSI controller.
  *
  * Written 1997 by Alan Hourihane <alanh@fairlite.demon.co.uk>
  * plus modifications of the 53c7xx.c driver to support the Amiga.
  *
- * Rewritten to use 53c700.c by Kars de Jong <jongk@linux-m68k.org>
+ * Rewritten to use 53c700.c by Kars de Jong <jongk@freax-m68k.org>
  */
 
 #define pr_fmt(fmt)        KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/zorro.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/zorro.h>
+#include <freax/slab.h>
+#include <freax/pgtable.h>
 
 #include <asm/page.h>
 #include <asm/cacheflush.h>

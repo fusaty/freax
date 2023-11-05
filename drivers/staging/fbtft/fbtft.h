@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /* Copyright (C) 2013 Noralf Tronnes */
 
-#ifndef __LINUX_FBTFT_H
-#define __LINUX_FBTFT_H
+#ifndef __freax_FBTFT_H
+#define __freax_FBTFT_H
 
-#include <linux/fb.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
+#include <freax/fb.h>
+#include <freax/spinlock.h>
+#include <freax/spi/spi.h>
+#include <freax/platform_device.h>
 
 #define FBTFT_ONBOARD_BACKLIGHT 2
 
@@ -440,4 +440,4 @@ do {                                                                       \
 			      (num) * sizeof(type), format, ##arg); \
 } while (0)
 
-#endif /* __LINUX_FBTFT_H */
+#endif /* __freax_FBTFT_H */

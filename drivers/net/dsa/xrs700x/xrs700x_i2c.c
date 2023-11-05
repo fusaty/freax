@@ -4,9 +4,9 @@
  * George McCollister <george.mccollister@gmail.com>
  */
 
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <freax/bits.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
 #include "xrs700x.h"
 #include "xrs700x_reg.h"
 

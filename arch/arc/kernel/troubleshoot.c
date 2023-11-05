@@ -3,15 +3,15 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/ptrace.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/proc_fs.h>
-#include <linux/file.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
+#include <freax/ptrace.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/kdev_t.h>
+#include <freax/proc_fs.h>
+#include <freax/file.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/debug.h>
 
 #include <asm/arcregs.h>
 #include <asm/irqflags.h>

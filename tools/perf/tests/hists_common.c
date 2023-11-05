@@ -10,8 +10,8 @@
 #include "util/machine.h"
 #include "util/thread.h"
 #include "tests/hists_common.h"
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
+#include <freax/kernel.h>
+#include <freax/perf_event.h>
 
 static struct {
 	u32 pid;

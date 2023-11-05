@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/mm/init.c
+ *  freax/arch/alpha/mm/init.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
 
 /* 2.3.x zone allocator, 1999 Andrea Arcangeli <andrea@suse.de> */
 
-#include <linux/pagemap.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/memblock.h> /* max_low_pfn */
-#include <linux/vmalloc.h>
-#include <linux/gfp.h>
+#include <freax/pagemap.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/init.h>
+#include <freax/memblock.h> /* max_low_pfn */
+#include <freax/vmalloc.h>
+#include <freax/gfp.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/hwrpb.h>
 #include <asm/dma.h>
@@ -61,8 +61,8 @@ pgd_alloc(struct mm_struct *mm)
 
 
 /*
- * BAD_PAGE is the page that is used for page faults when linux
- * is out-of-memory. Older versions of linux just did a
+ * BAD_PAGE is the page that is used for page faults when freax
+ * is out-of-memory. Older versions of freax just did a
  * do_exit(), but using this instead means there is less risk
  * for a process dying in kernel mode, possibly leaving an inode
  * unused etc..
@@ -103,7 +103,7 @@ switch_to_system_map(void)
 	unsigned long newptbr;
 	unsigned long original_pcb_ptr;
 
-	/* Initialize the kernel's page tables.  Linux puts the vptb in
+	/* Initialize the kernel's page tables.  freax puts the vptb in
 	   the last slot of the L1 page table.  */
 	memset(swapper_pg_dir, 0, PAGE_SIZE);
 	newptbr = ((unsigned long) swapper_pg_dir - PAGE_OFFSET) >> PAGE_SHIFT;

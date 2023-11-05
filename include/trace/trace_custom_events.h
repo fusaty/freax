@@ -9,7 +9,7 @@
  * be placed in the "custom" system.
  */
 
-#include <linux/trace_events.h>
+#include <freax/trace_events.h>
 
 /* All custom events are placed in the custom group */
 #undef TRACE_SYSTEM

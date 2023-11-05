@@ -8,12 +8,12 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_PINCONF_GENERIC_H
-#define __LINUX_PINCTRL_PINCONF_GENERIC_H
+#ifndef __freax_PINCTRL_PINCONF_GENERIC_H
+#define __freax_PINCTRL_PINCONF_GENERIC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/machine.h>
+#include <freax/pinctrl/machine.h>
 
 struct device_node;
 
@@ -229,4 +229,4 @@ static inline int pinconf_generic_dt_node_to_map_all(struct pinctrl_dev *pctldev
 			PIN_MAP_TYPE_INVALID);
 }
 
-#endif /* __LINUX_PINCTRL_PINCONF_GENERIC_H */
+#endif /* __freax_PINCTRL_PINCONF_GENERIC_H */

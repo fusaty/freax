@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/rfkill.h>
-#include <linux/power_supply.h>
-#include <linux/acpi.h>
-#include <linux/mm.h>
-#include <linux/i8042.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
+#include <freax/rfkill.h>
+#include <freax/power_supply.h>
+#include <freax/acpi.h>
+#include <freax/mm.h>
+#include <freax/i8042.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 #include <acpi/video.h>
 #include "dell-rbtn.h"
 #include "dell-smbios.h"

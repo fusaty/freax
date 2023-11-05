@@ -3,9 +3,9 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/module.h>
+#include <freax/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
 #include <net/rtnetlink.h>
 
 #include "iosm_ipc_imem.h"

@@ -3,30 +3,30 @@
  *  Copyright (c) 2014 Realtek Semiconductor Corp. All rights reserved.
  */
 
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/usb.h>
+#include <freax/crc32.h>
+#include <freax/if_vlan.h>
+#include <freax/uaccess.h>
+#include <freax/list.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <uapi/linux/mdio.h>
-#include <linux/mdio.h>
-#include <linux/usb/cdc.h>
-#include <linux/suspend.h>
-#include <linux/atomic.h>
-#include <linux/acpi.h>
-#include <linux/firmware.h>
+#include <uapi/freax/mdio.h>
+#include <freax/mdio.h>
+#include <freax/usb/cdc.h>
+#include <freax/suspend.h>
+#include <freax/atomic.h>
+#include <freax/acpi.h>
+#include <freax/firmware.h>
 #include <crypto/hash.h>
-#include <linux/usb/r8152.h>
+#include <freax/usb/r8152.h>
 #include <net/gso.h>
 
 /* Information for net-next */
@@ -36,7 +36,7 @@
 #define NET_VERSION		"13"
 
 #define DRIVER_VERSION		"v1." NETNEXT_VERSION "." NET_VERSION
-#define DRIVER_AUTHOR "Realtek linux nic maintainers <nic_swsd@realtek.com>"
+#define DRIVER_AUTHOR "Realtek freax nic maintainers <nic_swsd@realtek.com>"
 #define DRIVER_DESC "Realtek RTL8152/RTL8153 Based USB Ethernet Adapters"
 #define MODULENAME "r8152"
 

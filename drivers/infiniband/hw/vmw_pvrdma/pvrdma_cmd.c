@@ -43,7 +43,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 #include "pvrdma.h"
 

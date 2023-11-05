@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt)	"board_staging: "  fmt
 
-#include <linux/clkdev.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
+#include <freax/clkdev.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
 
 #include "board.h"
 

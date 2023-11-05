@@ -5,10 +5,10 @@
  * even non-readable regions.
  */
 #include "lkdtm.h"
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mman.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/sections.h>
 

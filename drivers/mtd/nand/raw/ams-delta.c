@@ -14,17 +14,17 @@
  *   Amstrad E3 (Delta).
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand-gpio.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/sizes.h>
 
 /*
  * MTD structure for E3 (Delta)

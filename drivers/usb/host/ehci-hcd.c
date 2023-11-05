@@ -7,27 +7,27 @@
  * Copyright (c) 2000-2004 by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/dmapool.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/hrtimer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/otg.h>
+#include <freax/moduleparam.h>
+#include <freax/dma-mapping.h>
+#include <freax/debugfs.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

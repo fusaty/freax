@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * endian.h - Defines for endianness handling in NTFS Linux kernel driver.
- *	      Part of the Linux-NTFS project.
+ * endian.h - Defines for endianness handling in NTFS freax kernel driver.
+ *	      Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_ENDIAN_H
-#define _LINUX_NTFS_ENDIAN_H
+#ifndef _freax_NTFS_ENDIAN_H
+#define _freax_NTFS_ENDIAN_H
 
 #include <asm/byteorder.h>
 #include "types.h"
@@ -76,4 +76,4 @@ static inline sle64 cpu_to_sle64p(s64 *x)
 	return (__force sle64)cpu_to_le64(*x);
 }
 
-#endif /* _LINUX_NTFS_ENDIAN_H */
+#endif /* _freax_NTFS_ENDIAN_H */

@@ -7,18 +7,18 @@
  * J Keerthy <j-keerthy@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/ti.h>
-#include <linux/delay.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/string.h>
+#include <freax/log2.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk/ti.h>
+#include <freax/delay.h>
 
 #include "clock.h"
 

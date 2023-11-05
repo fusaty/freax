@@ -148,7 +148,7 @@ Currently it's your only option if you want to test on architectures other than
 UML.
 
 As running the tests under UML is fairly straightforward (configure and compile
-the kernel, run the ``./linux`` binary), this section will focus on testing
+the kernel, run the ``./freax`` binary), this section will focus on testing
 non-UML architectures.
 
 

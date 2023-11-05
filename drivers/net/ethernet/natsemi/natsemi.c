@@ -1,4 +1,4 @@
-/* natsemi.c: A Linux PCI Ethernet driver for the NatSemi DP8381x series. */
+/* natsemi.c: A freax PCI Ethernet driver for the NatSemi DP8381x series. */
 /*
 	Written/copyright 1999-2001 by Donald Becker.
 	Portions copyright (c) 2001,2002 Sun Microsystems (thockin@sun.com)
@@ -27,31 +27,31 @@
 	* big endian support with CFG:BEM instead of cpu_to_le32
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/rtnetlink.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/prefetch.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/delay.h>
+#include <freax/rtnetlink.h>
+#include <freax/mii.h>
+#include <freax/crc32.h>
+#include <freax/bitops.h>
+#include <freax/prefetch.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define DRV_NAME	"natsemi"
 #define DRV_VERSION	"2.1"

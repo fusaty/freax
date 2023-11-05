@@ -10,14 +10,14 @@
 // Authors: Liam Girdwood <lrg@ti.com>
 //          Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/export.h>
+#include <freax/debugfs.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

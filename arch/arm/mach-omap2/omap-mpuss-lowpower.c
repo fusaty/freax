@@ -33,12 +33,12 @@
  * and first to wake-up when MPUSS low power states are excercised
  */
 
-#include <linux/cpuidle.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/smp.h>
+#include <freax/cpuidle.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/errno.h>
+#include <freax/linkage.h>
+#include <freax/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

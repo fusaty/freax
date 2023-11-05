@@ -7,14 +7,14 @@
  *  Copyright (C) 2017 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #define LANTIQ_RCU_RESET_TIMEOUT	10000
 

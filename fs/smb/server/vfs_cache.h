@@ -6,12 +6,12 @@
 #ifndef __VFS_CACHE_H__
 #define __VFS_CACHE_H__
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/rwsem.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
+#include <freax/workqueue.h>
 
 #include "vfs.h"
 

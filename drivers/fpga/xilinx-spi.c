@@ -10,15 +10,15 @@
  * the slave serial configuration interface.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/sizes.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
+#include <freax/sizes.h>
 
 struct xilinx_spi_conf {
 	struct spi_device *spi;

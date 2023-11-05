@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MBCACHE_H
-#define _LINUX_MBCACHE_H
+#ifndef _freax_MBCACHE_H
+#define _freax_MBCACHE_H
 
-#include <linux/hash.h>
-#include <linux/list_bl.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
+#include <freax/hash.h>
+#include <freax/list_bl.h>
+#include <freax/list.h>
+#include <freax/atomic.h>
+#include <freax/fs.h>
 
 struct mb_cache;
 
@@ -69,4 +69,4 @@ struct mb_cache_entry *mb_cache_entry_find_next(struct mb_cache *cache,
 void mb_cache_entry_touch(struct mb_cache *cache,
 			  struct mb_cache_entry *entry);
 
-#endif	/* _LINUX_MBCACHE_H */
+#endif	/* _freax_MBCACHE_H */

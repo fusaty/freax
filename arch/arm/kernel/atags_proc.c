@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
+#include <freax/slab.h>
+#include <freax/proc_fs.h>
 #include <asm/setup.h>
 #include <asm/types.h>
 #include <asm/page.h>

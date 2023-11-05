@@ -11,7 +11,7 @@
 #include "str_hash.h"
 #include "subvolume.h"
 
-#include <linux/dcache.h>
+#include <freax/dcache.h>
 
 static unsigned bch2_dirent_name_bytes(struct bkey_s_c_dirent d)
 {

@@ -19,22 +19,22 @@
  *  Copyright (C) 2000 Hermann Jung <hej@odn.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/dmi.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/dmi.h>
+#include <freax/fs.h>
+#include <freax/watchdog.h>
+#include <freax/miscdevice.h>
+#include <freax/uaccess.h>
+#include <freax/kref.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x73, I2C_CLIENT_END };

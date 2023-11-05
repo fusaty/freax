@@ -7,14 +7,14 @@
  * platform energy management capabilities.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
 #include <asm/cputhreads.h>
 #include <asm/page.h>
 #include <asm/hvcall.h>

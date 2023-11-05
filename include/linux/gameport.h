@@ -5,13 +5,13 @@
 #ifndef _GAMEPORT_H
 #define _GAMEPORT_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <uapi/linux/gameport.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <uapi/freax/gameport.h>
 
 struct gameport {
 

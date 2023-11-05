@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/inode.c
+ *  freax/fs/affs/inode.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -10,9 +10,9 @@
  *
  *  (C) 1991  Linus Torvalds - minix filesystem
  */
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/gfp.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/gfp.h>
 #include "affs.h"
 
 struct inode *affs_iget(struct super_block *sb, unsigned long ino)

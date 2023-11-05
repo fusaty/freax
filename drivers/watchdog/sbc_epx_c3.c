@@ -11,20 +11,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 
 static int epx_c3_alive;
 

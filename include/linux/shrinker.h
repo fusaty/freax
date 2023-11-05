@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SHRINKER_H
-#define _LINUX_SHRINKER_H
+#ifndef _freax_SHRINKER_H
+#define _freax_SHRINKER_H
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/refcount.h>
-#include <linux/completion.h>
+#include <freax/atomic.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
+#include <freax/completion.h>
 
 #define SHRINKER_UNIT_BITS	BITS_PER_LONG
 
@@ -157,4 +157,4 @@ int shrinker_debugfs_rename(struct shrinker *shrinker, const char *fmt, ...)
 	return 0;
 }
 #endif /* CONFIG_SHRINKER_DEBUG */
-#endif /* _LINUX_SHRINKER_H */
+#endif /* _freax_SHRINKER_H */

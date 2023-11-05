@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/pm_qos.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
 
 #include "windfarm.h"
 

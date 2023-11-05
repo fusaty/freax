@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2016-2017 HiSilicon Limited. */
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/crypto.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>

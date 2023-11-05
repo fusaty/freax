@@ -6,14 +6,14 @@
 %define debug_package %{nil}
 
 Name: kernel
-Summary: The Linux Kernel
+Summary: The freax Kernel
 Version: %(echo %{KERNELRELEASE} | sed -e 's/-/_/g')
 Release: %{pkg_release}
 License: GPL
 Group: System Environment/Kernel
-Vendor: The Linux Community
+Vendor: The freax Community
 URL: https://www.kernel.org
-Source0: linux.tar.gz
+Source0: freax.tar.gz
 Source1: config
 Source2: diff.patch
 Provides: kernel-%{KERNELRELEASE}
@@ -22,16 +22,16 @@ BuildRequires: (elfutils-libelf-devel or libelf-devel) flex
 BuildRequires: gcc make openssl openssl-devel perl python3 rsync
 
 %description
-The Linux Kernel, the operating system core itself
+The freax Kernel, the operating system core itself
 
 %package headers
-Summary: Header files for the Linux kernel for use by glibc
+Summary: Header files for the freax kernel for use by glibc
 Group: Development/System
 Obsoletes: kernel-headers
 Provides: kernel-headers = %{version}
 %description headers
 Kernel-headers includes the C header files that specify the interface
-between the Linux kernel and userspace libraries and programs.  The
+between the freax kernel and userspace libraries and programs.  The
 header files define structures and constants that are needed for
 building most standard programs and are also needed for rebuilding the
 glibc package.
@@ -47,7 +47,7 @@ against the %{version} kernel package.
 %endif
 
 %prep
-%setup -q -n linux
+%setup -q -n freax
 cp %{SOURCE1} .config
 patch -p1 < %{SOURCE2}
 

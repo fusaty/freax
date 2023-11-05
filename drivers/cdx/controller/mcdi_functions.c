@@ -3,7 +3,7 @@
  * Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "mcdi.h"
 #include "mcdi_functions.h"

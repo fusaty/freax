@@ -9,17 +9,17 @@
  *  Bits copied from original nmi.c file
  *
  */
-#include <linux/thread_info.h>
+#include <freax/thread_info.h>
 #include <asm/apic.h>
 #include <asm/nmi.h>
 
-#include <linux/cpumask.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <freax/cpumask.h>
+#include <freax/kdebug.h>
+#include <freax/notifier.h>
+#include <freax/kprobes.h>
+#include <freax/nmi.h>
+#include <freax/init.h>
+#include <freax/delay.h>
 
 #include "local.h"
 

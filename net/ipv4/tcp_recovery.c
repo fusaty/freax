@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 #include <net/tcp.h>
 
 static u32 tcp_rack_reo_wnd(const struct sock *sk)

@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2009  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/perf_event.h>
 #include <asm/processor.h>
 
 #define PM_CR_BASE	0xff000084	/* 16-bit */

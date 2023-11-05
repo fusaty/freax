@@ -25,7 +25,7 @@
 	};
 
 	reserved-memory {
-		linux,cma {
+		freax,cma {
 			size = <0x0 0x400000>;
 		};
 	};

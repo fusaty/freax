@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RESET_CONTROLLER_H_
-#define _LINUX_RESET_CONTROLLER_H_
+#ifndef _freax_RESET_CONTROLLER_H_
+#define _freax_RESET_CONTROLLER_H_
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct reset_controller_dev;
 

@@ -5,7 +5,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "fman_keygen.h"
 

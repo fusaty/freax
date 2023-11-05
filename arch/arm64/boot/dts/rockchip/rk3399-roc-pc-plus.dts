@@ -84,7 +84,7 @@
 	};
 
 	ir-receiver {
-		linux,rc-map-name = "rc-khadas";
+		freax,rc-map-name = "rc-khadas";
 	};
 
 	leds {

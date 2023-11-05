@@ -12,16 +12,16 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/gpio.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6105x.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/gpio.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/tps6105x.h>
 
 static struct regmap_config tps6105x_regmap_config = {
 	.reg_bits = 8,

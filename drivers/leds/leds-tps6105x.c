@@ -3,11 +3,11 @@
  * Copyright (C) 2019 Sven Van Asbroeck
  */
 
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps6105x.h>
-#include <linux/regmap.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/tps6105x.h>
+#include <freax/regmap.h>
 
 struct tps6105x_priv {
 	struct regmap *regmap;

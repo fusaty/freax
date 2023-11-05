@@ -5,9 +5,9 @@
 
 /* ETHTOOL Support for VNIC_VF Device*/
 
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/net_tstamp.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
+#include <freax/net_tstamp.h>
 
 #include "nic_reg.h"
 #include "nic.h"

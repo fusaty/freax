@@ -3,7 +3,7 @@
  * Copyright (C) 2022, Alibaba Cloud
  * Copyright (C) 2022, Bytedance Inc. All rights reserved.
  */
-#include <linux/fscache.h>
+#include <freax/fscache.h>
 #include "internal.h"
 
 static DEFINE_MUTEX(erofs_domain_list_lock);

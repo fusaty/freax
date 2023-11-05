@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  *
- * Copyright SUSE Linux Products GmbH 2010
+ * Copyright SUSE freax Products GmbH 2010
  *
  * Authors: Alexander Graf <agraf@suse.de>
  */

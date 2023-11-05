@@ -6,7 +6,7 @@
  * Author:  Frank Mori Hess <fmh6jj@gmail.com>
  * Copyright (C) 2013 GnuBIO Inc
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
@@ -37,8 +37,8 @@
  * outputs in the desired range.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pci.h>
 
 /*
  * PCI bar 2 Register I/O map (dev->iobase)

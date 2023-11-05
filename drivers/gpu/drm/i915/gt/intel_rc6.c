@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/string_helpers.h>
+#include <freax/pm_runtime.h>
+#include <freax/string_helpers.h>
 
 #include "gem/i915_gem_region.h"
 #include "i915_drv.h"

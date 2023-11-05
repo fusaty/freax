@@ -2,7 +2,7 @@
 /*
  * CUSE: Character device in Userspace
  *
- * Copyright (C) 2008-2009  SUSE Linux Products GmbH
+ * Copyright (C) 2008-2009  SUSE freax Products GmbH
  * Copyright (C) 2008-2009  Tejun Heo <tj@kernel.org>
  *
  * CUSE enables character devices to be implemented from userland much
@@ -34,22 +34,22 @@
 
 #define pr_fmt(fmt) "CUSE: " fmt
 
-#include <linux/fuse.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/magic.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/uio.h>
-#include <linux/user_namespace.h>
+#include <freax/fuse.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/kdev_t.h>
+#include <freax/kthread.h>
+#include <freax/list.h>
+#include <freax/magic.h>
+#include <freax/miscdevice.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/module.h>
+#include <freax/uio.h>
+#include <freax/user_namespace.h>
 
 #include "fuse_i.h"
 

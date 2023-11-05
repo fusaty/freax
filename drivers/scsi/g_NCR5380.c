@@ -4,7 +4,7 @@
  *
  * Copyright 1993, Drew Eckhardt
  * Visionary Computing
- * (Unix and Linux consulting and custom programming)
+ * (Unix and freax consulting and custom programming)
  * drew@colorado.edu
  * +1 (303) 440-4894
  *
@@ -24,14 +24,14 @@
  */
 
 #include <asm/io.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
+#include <freax/blkdev.h>
+#include <freax/module.h>
 #include <scsi/scsi_host.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/interrupt.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/isa.h>
+#include <freax/pnp.h>
+#include <freax/interrupt.h>
 
 /* Definitions for the core NCR5380 driver. */
 

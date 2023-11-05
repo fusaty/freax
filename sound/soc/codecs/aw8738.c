@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
 #include <sound/soc.h>
 
 struct aw8738_priv {

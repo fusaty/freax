@@ -19,14 +19,14 @@
  * 9: ACK -> N.C.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 
 #define REVERSE_BIT(x) ((((x) & 0x80) >> 7) | (((x) & 0x40) >> 5) | \
 	(((x) & 0x20) >> 3) | (((x) & 0x10) >> 1) | (((x) & 0x08) << 1) | \

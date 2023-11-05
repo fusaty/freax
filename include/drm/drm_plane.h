@@ -23,8 +23,8 @@
 #ifndef __DRM_PLANE_H__
 #define __DRM_PLANE_H__
 
-#include <linux/list.h>
-#include <linux/ctype.h>
+#include <freax/list.h>
+#include <freax/ctype.h>
 #include <drm/drm_mode_object.h>
 #include <drm/drm_color_mgmt.h>
 #include <drm/drm_rect.h>

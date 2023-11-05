@@ -5,21 +5,21 @@
  * Copyright (C) 2004 Nokia Corporation
  * Author: Imre Deak <imre.deak@nokia.com>
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/err.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/dma-mapping.h>
+#include <freax/vmalloc.h>
+#include <freax/clk.h>
+#include <freax/gfp.h>
 
-#include <linux/soc/ti/omap1-io.h>
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/omap-dma.h>
+#include <freax/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-soc.h>
+#include <freax/omap-dma.h>
 
 #include <asm/mach-types.h>
 

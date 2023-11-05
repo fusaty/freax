@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2004-2009 EMS Dr. Thomas Wuensche
  */
-#include <linux/ethtool.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <freax/ethtool.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
 
 MODULE_AUTHOR("Sebastian Haas <haas@ems-wuensche.com>");
 MODULE_DESCRIPTION("CAN driver for EMS Dr. Thomas Wuensche CAN/USB interfaces");

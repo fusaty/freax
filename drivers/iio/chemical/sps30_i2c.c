@@ -7,14 +7,14 @@
  * I2C slave address: 0x69
  */
 #include <asm/unaligned.h>
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #include "sps30.h"
 

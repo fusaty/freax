@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FB_H
-#define _UAPI_LINUX_FB_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_FB_H
+#define _UAPI_freax_FB_H
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
 
 /* Definitions of frame buffers						*/
 
@@ -399,4 +399,4 @@ struct fb_cursor {
 #define FB_BACKLIGHT_MAX	0xFF
 
 
-#endif /* _UAPI_LINUX_FB_H */
+#endif /* _UAPI_freax_FB_H */

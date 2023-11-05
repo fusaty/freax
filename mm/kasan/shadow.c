@@ -10,16 +10,16 @@
  *        Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <freax/init.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/kfence.h>
+#include <freax/kmemleak.h>
+#include <freax/memory.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
@@ -353,7 +353,7 @@ int kasan_populate_vmalloc(unsigned long addr, unsigned long size)
 	shadow_end = (unsigned long)kasan_mem_to_shadow((void *)addr + size);
 
 	/*
-	 * User Mode Linux maps enough shadow memory for all of virtual memory
+	 * User Mode freax maps enough shadow memory for all of virtual memory
 	 * at boot, so doesn't need to allocate more on vmalloc, just clear it.
 	 *
 	 * The remaining CONFIG_UML checks in this file exist for the same

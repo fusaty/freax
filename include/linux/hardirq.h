@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_HARDIRQ_H
-#define LINUX_HARDIRQ_H
+#ifndef freax_HARDIRQ_H
+#define freax_HARDIRQ_H
 
-#include <linux/context_tracking_state.h>
-#include <linux/preempt.h>
-#include <linux/lockdep.h>
-#include <linux/ftrace_irq.h>
-#include <linux/sched.h>
-#include <linux/vtime.h>
+#include <freax/context_tracking_state.h>
+#include <freax/preempt.h>
+#include <freax/lockdep.h>
+#include <freax/ftrace_irq.h>
+#include <freax/sched.h>
+#include <freax/vtime.h>
 #include <asm/hardirq.h>
 
 extern void synchronize_irq(unsigned int irq);
@@ -140,4 +140,4 @@ void irq_exit_rcu(void);
 		__nmi_exit();					\
 	} while (0)
 
-#endif /* LINUX_HARDIRQ_H */
+#endif /* freax_HARDIRQ_H */

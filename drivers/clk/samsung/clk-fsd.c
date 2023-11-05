@@ -8,12 +8,12 @@
  * Common Clock Framework support for FSD SoC.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/clock/fsd-clk.h>
 

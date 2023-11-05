@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
@@ -16,9 +16,9 @@
  *  (The PPC 8xx embedded CPUs use head_8xx.S instead.)
  */
 
-#include <linux/init.h>
-#include <linux/pgtable.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/pgtable.h>
+#include <freax/linkage.h>
 
 #include <asm/reg.h>
 #include <asm/page.h>
@@ -413,11 +413,11 @@ END_FTR_SECTION_IFSET(CPU_FTR_FPU_UNAVAILABLE)
 InstructionTLBMiss:
 /*
  * r0:	userspace flag (later scratch)
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	freax style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to freax-style pte
  * r3:	fault address
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (freax-style) and check access */
 	mfspr	r3,SPRN_IMISS
 #ifdef CONFIG_MODULES
 	lis	r1, TASK_SIZE@h		/* check if kernel address */
@@ -438,10 +438,10 @@ InstructionTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	InstructionAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r2,0(r2)		/* get linux-style pte */
+	lwz	r2,0(r2)		/* get freax-style pte */
 	andc.	r1,r1,r2		/* check access & ~permission */
 	bne-	InstructionAddressInvalid /* return if access not permitted */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert freax-style PTE to low word of PPC-style PTE */
 #ifdef CONFIG_MODULES
 	rlwimi	r2, r0, 0, 31, 31	/* userspace ? -> PP lsb */
 #endif
@@ -482,11 +482,11 @@ InstructionAddressInvalid:
 DataLoadTLBMiss:
 /*
  * r0:	userspace flag (later scratch)
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	freax style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to freax-style pte
  * r3:	fault address
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (freax-style) and check access */
 	mfspr	r3,SPRN_DMISS
 	lis	r1, TASK_SIZE@h		/* check if kernel address */
 	cmplw	0,r1,r3
@@ -503,10 +503,10 @@ DataLoadTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	DataAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r2,0(r2)		/* get linux-style pte */
+	lwz	r2,0(r2)		/* get freax-style pte */
 	andc.	r1,r1,r2		/* check access & ~permission */
 	bne-	DataAddressInvalid	/* return if access not permitted */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert freax-style PTE to low word of PPC-style PTE */
 	rlwinm	r1,r2,32-9,30,30	/* _PAGE_WRITE -> PP msb */
 	rlwimi	r2,r0,0,30,31		/* userspace ? -> PP */
 	rlwimi	r1,r2,32-3,24,24	/* _PAGE_WRITE -> _PAGE_DIRTY */
@@ -562,11 +562,11 @@ DataAddressInvalid:
 DataStoreTLBMiss:
 /*
  * r0:	userspace flag (later scratch)
- * r1:	linux style pte ( later becomes ppc hardware pte )
- * r2:	ptr to linux-style pte
+ * r1:	freax style pte ( later becomes ppc hardware pte )
+ * r2:	ptr to freax-style pte
  * r3:	fault address
  */
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (freax-style) and check access */
 	mfspr	r3,SPRN_DMISS
 	lis	r1, TASK_SIZE@h		/* check if kernel address */
 	cmplw	0,r1,r3
@@ -583,10 +583,10 @@ DataStoreTLBMiss:
 	rlwinm.	r2,r2,0,0,19		/* extract address of pte page */
 	beq-	DataAddressInvalid	/* return if no mapping */
 	rlwimi	r2,r3,22,20,29		/* insert next 10 bits of address */
-	lwz	r2,0(r2)		/* get linux-style pte */
+	lwz	r2,0(r2)		/* get freax-style pte */
 	andc.	r1,r1,r2		/* check access & ~permission */
 	bne-	DataAddressInvalid	/* return if access not permitted */
-	/* Convert linux-style PTE to low word of PPC-style PTE */
+	/* Convert freax-style PTE to low word of PPC-style PTE */
 	rlwimi	r2,r0,0,31,31		/* userspace ? -> PP lsb */
 	li	r1,0xe06		/* clear out reserved bits & PP msb */
 	andc	r1,r2,r1		/* PP = user? 1: 0 */

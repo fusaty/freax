@@ -2,11 +2,11 @@
 /*
  * User Events Dyn Events Test Program
  *
- * Copyright (c) 2021 Beau Belgrave <beaub@linux.microsoft.com>
+ * Copyright (c) 2021 Beau Belgrave <beaub@freax.microsoft.com>
  */
 
 #include <errno.h>
-#include <linux/user_events.h>
+#include <freax/user_events.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>

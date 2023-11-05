@@ -18,10 +18,10 @@ El objetivo de esta traducción es facilitar la lectura y comprensión para
 aquellos que no entiendan inglés o duden de sus interpretaciones, o
 simplemente para aquellos que prefieran leer en el idioma español. Sin
 embargo, tenga en cuenta que la *única* documentación oficial es la que
-está en inglés: :ref:`linux_doc`
+está en inglés: :ref:`freax_doc`
 
 La propagación simultánea de la traducción de una modificación en
-:ref:`linux_doc` es altamente improbable. Los maintainers y colaboradores
+:ref:`freax_doc` es altamente improbable. Los maintainers y colaboradores
 de la traducción intentan mantener sus traducciones al día, en tanto les
 es posible. Por tanto, no existe ninguna garantía de que una traducción
 esté actualizada con las últimas modificaciones. Si lo que lee en una
@@ -47,7 +47,7 @@ la forma, pero todavía transmiten el mensaje original. A pesar de la gran
 difusión del inglés en el idioma hablado, cuando sea posible, expresiones
 en inglés serán reemplazadas por las palabras correspondientes en español.
 
-Si necesita ayuda para comunicarse con la comunidad de Linux pero no se
+Si necesita ayuda para comunicarse con la comunidad de freax pero no se
 siente cómodo escribiendo en inglés, puede pedir ayuda al maintainer para
 obtener una traducción.
 
@@ -58,7 +58,7 @@ sientan más cómodos. En principio, estas pequeñas diferencias no deberían
 suponer una gran barrera para hablantes de distintas versiones del español,
 pero en caso de duda se puede consultar a los maintainers.
 
-La documentación del kernel Linux
+La documentación del kernel freax
 =================================
 
 Este es el nivel superior de la documentación del kernel en idioma español.
@@ -68,7 +68,7 @@ la falta de una traducción o de un grupo de traducciones.
 En términos más generales, la documentación, como el kernel mismo, están en
 constante desarrollo. Las mejoras en la documentación siempre son
 bienvenidas; de modo que, si desea ayudar, únase a la lista de correo
-linux-doc en vger.kernel.org.
+freax-doc en vger.kernel.org.
 
 Traducciones al español
 =======================

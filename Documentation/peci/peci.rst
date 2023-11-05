@@ -41,7 +41,7 @@ processors.
 PECI subsystem internals
 ------------------------
 
-.. kernel-doc:: include/linux/peci.h
+.. kernel-doc:: include/freax/peci.h
 .. kernel-doc:: drivers/peci/internal.h
 .. kernel-doc:: drivers/peci/core.c
 .. kernel-doc:: drivers/peci/request.c

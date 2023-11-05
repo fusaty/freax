@@ -8,14 +8,14 @@
  * Based on wm8350.c
  */
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/lp3971.h>
-#include <linux/slab.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/lp3971.h>
+#include <freax/slab.h>
 
 struct lp3971 {
 	struct device *dev;

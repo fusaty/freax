@@ -120,11 +120,11 @@
 /* special defines for the videocodec_io structure */
 /* =============================================== */
 
-#ifndef __LINUX_VIDEOCODEC_H
-#define __LINUX_VIDEOCODEC_H
+#ifndef __freax_VIDEOCODEC_H
+#define __freax_VIDEOCODEC_H
 
-#include <linux/debugfs.h>
-#include <linux/videodev2.h>
+#include <freax/debugfs.h>
+#include <freax/videodev2.h>
 
 #define CODEC_DO_COMPRESSION 0
 #define CODEC_DO_EXPANSION   1
@@ -322,4 +322,4 @@ static inline struct zoran *videocodec_to_zoran(struct videocodec *codec)
 	return videocodec_master_to_zoran(master);
 }
 
-#endif				/*ifndef __LINUX_VIDEOCODEC_H */
+#endif				/*ifndef __freax_VIDEOCODEC_H */

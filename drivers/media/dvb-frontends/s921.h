@@ -9,7 +9,7 @@
 #ifndef S921_H
 #define S921_H
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 struct s921_config {
 	/* the demodulator's i2c address */

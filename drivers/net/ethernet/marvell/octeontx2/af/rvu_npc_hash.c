@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/stddef.h>
-#include <linux/debugfs.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/firmware.h>
+#include <freax/stddef.h>
+#include <freax/debugfs.h>
 
 #include "rvu_struct.h"
 #include "rvu_reg.h"

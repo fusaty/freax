@@ -3,47 +3,47 @@
 #define __KVM_HOST_H
 
 
-#include <linux/types.h>
-#include <linux/hardirq.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/stat.h>
-#include <linux/bug.h>
-#include <linux/minmax.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/preempt.h>
-#include <linux/msi.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/rcupdate.h>
-#include <linux/ratelimit.h>
-#include <linux/err.h>
-#include <linux/irqflags.h>
-#include <linux/context_tracking.h>
-#include <linux/irqbypass.h>
-#include <linux/rcuwait.h>
-#include <linux/refcount.h>
-#include <linux/nospec.h>
-#include <linux/notifier.h>
-#include <linux/ftrace.h>
-#include <linux/hashtable.h>
-#include <linux/instrumentation.h>
-#include <linux/interval_tree.h>
-#include <linux/rbtree.h>
-#include <linux/xarray.h>
+#include <freax/types.h>
+#include <freax/hardirq.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/sched/stat.h>
+#include <freax/bug.h>
+#include <freax/minmax.h>
+#include <freax/mm.h>
+#include <freax/mmu_notifier.h>
+#include <freax/preempt.h>
+#include <freax/msi.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/rcupdate.h>
+#include <freax/ratelimit.h>
+#include <freax/err.h>
+#include <freax/irqflags.h>
+#include <freax/context_tracking.h>
+#include <freax/irqbypass.h>
+#include <freax/rcuwait.h>
+#include <freax/refcount.h>
+#include <freax/nospec.h>
+#include <freax/notifier.h>
+#include <freax/ftrace.h>
+#include <freax/hashtable.h>
+#include <freax/instrumentation.h>
+#include <freax/interval_tree.h>
+#include <freax/rbtree.h>
+#include <freax/xarray.h>
 #include <asm/signal.h>
 
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
+#include <freax/kvm.h>
+#include <freax/kvm_para.h>
 
-#include <linux/kvm_types.h>
+#include <freax/kvm_types.h>
 
 #include <asm/kvm_host.h>
-#include <linux/kvm_dirty_ring.h>
+#include <freax/kvm_dirty_ring.h>
 
 #ifndef KVM_MAX_VCPU_IDS
 #define KVM_MAX_VCPU_IDS KVM_MAX_VCPUS
@@ -52,7 +52,7 @@
 /*
  * The bit 16 ~ bit 31 of kvm_userspace_memory_region::flags are internally
  * used in kvm, other bits are visible for userspace which are defined in
- * include/linux/kvm_h.
+ * include/freax/kvm_h.
  */
 #define KVM_MEMSLOT_INVALID	(1UL << 16)
 

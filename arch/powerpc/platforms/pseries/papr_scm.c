@@ -2,24 +2,24 @@
 
 #define pr_fmt(fmt)	"papr-scm: " fmt
 
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/ndctl.h>
-#include <linux/sched.h>
-#include <linux/libnvdimm.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/seq_buf.h>
-#include <linux/nd.h>
+#include <freax/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/ndctl.h>
+#include <freax/sched.h>
+#include <freax/libnvdimm.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/seq_buf.h>
+#include <freax/nd.h>
 
 #include <asm/plpar_wrappers.h>
 #include <asm/papr_pdsm.h>
 #include <asm/mce.h>
 #include <asm/unaligned.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 
 #define BIND_ANY_ADDR (~0ul)
 

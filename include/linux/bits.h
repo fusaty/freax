@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BITS_H
-#define __LINUX_BITS_H
+#ifndef __freax_BITS_H
+#define __freax_BITS_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <vdso/bits.h>
 #include <asm/bitsperlong.h>
 
@@ -18,7 +18,7 @@
  * GENMASK_ULL(39, 21) gives us the 64bit vector 0x000000ffffe00000.
  */
 #if !defined(__ASSEMBLY__)
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 #define GENMASK_INPUT_CHECK(h, l) \
 	(BUILD_BUG_ON_ZERO(__builtin_choose_expr( \
 		__is_constexpr((l) > (h)), (l) > (h), 0)))
@@ -42,4 +42,4 @@
 #define GENMASK_ULL(h, l) \
 	(GENMASK_INPUT_CHECK(h, l) + __GENMASK_ULL(h, l))
 
-#endif	/* __LINUX_BITS_H */
+#endif	/* __freax_BITS_H */

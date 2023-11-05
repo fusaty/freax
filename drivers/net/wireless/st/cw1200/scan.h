@@ -9,7 +9,7 @@
 #ifndef SCAN_H_INCLUDED
 #define SCAN_H_INCLUDED
 
-#include <linux/semaphore.h>
+#include <freax/semaphore.h>
 #include "wsm.h"
 
 /* external */ struct sk_buff;

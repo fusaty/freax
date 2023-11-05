@@ -3,10 +3,10 @@
  * Include file for the interface to an APM BIOS
  * Copyright 1994-2001 Stephen Rothwell (sfr@canb.auug.org.au)
  */
-#ifndef _LINUX_APM_H
-#define _LINUX_APM_H
+#ifndef _freax_APM_H
+#define _freax_APM_H
 
-#include <uapi/linux/apm_bios.h>
+#include <uapi/freax/apm_bios.h>
 
 
 #define APM_CS		(GDT_ENTRY_APMBIOS_BASE * 8)
@@ -89,4 +89,4 @@ extern struct apm_info	apm_info;
  */
 #define APM_DEVICE_BALL		((apm_info.connection_version > 0x0100) ? \
 				 APM_DEVICE_ALL : APM_DEVICE_OLD_ALL)
-#endif	/* LINUX_APM_H */
+#endif	/* freax_APM_H */

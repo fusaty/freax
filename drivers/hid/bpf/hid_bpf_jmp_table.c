@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- *  HID-BPF support for Linux
+ *  HID-BPF support for freax
  *
  *  Copyright (c) 2022 Benjamin Tissoires
  */
 
-#include <linux/bitops.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/circ_buf.h>
-#include <linux/filter.h>
-#include <linux/hid.h>
-#include <linux/hid_bpf.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/circ_buf.h>
+#include <freax/filter.h>
+#include <freax/hid.h>
+#include <freax/hid_bpf.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/workqueue.h>
 #include "hid_bpf_dispatch.h"
 #include "entrypoints/entrypoints.lskel.h"
 

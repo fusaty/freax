@@ -4,13 +4,13 @@
  * Copyright (C) 2020 Daniel González Cabanelas <dgcbueu@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/reboot.h>
-#include <linux/phy.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_platform.h>
+#include <freax/reboot.h>
+#include <freax/phy.h>
 
 /* Defines from the eth phy Marvell driver */
 #define MII_MARVELL_COPPER_PAGE		0

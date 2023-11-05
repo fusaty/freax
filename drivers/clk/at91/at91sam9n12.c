@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/syscon.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/at91.h>
 
@@ -59,7 +59,7 @@ static const struct {
 } at91sam9n12_systemck[] = {
 	/*
 	 * ddrck feeds DDR controller and is enabled by bootloader thus we need
-	 * to keep it enabled in case there is no Linux consumer for it.
+	 * to keep it enabled in case there is no freax consumer for it.
 	 */
 	{ .n = "ddrck", .p = "masterck_div", .id = 2, .flags = CLK_IS_CRITICAL },
 	{ .n = "lcdck", .p = "masterck_div", .id = 3 },

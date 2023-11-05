@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The freax Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm-dp] %s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-dp.h>
-#include <linux/rational.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/phy/phy.h>
+#include <freax/phy/phy-dp.h>
+#include <freax/rational.h>
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_print.h>
 

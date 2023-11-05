@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI__CRAMFS_H
 #define _UAPI__CRAMFS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 #define CRAMFS_SIGNATURE	"Compressed ROMFS"
 

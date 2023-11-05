@@ -2,8 +2,8 @@
 #ifndef PERF_LOCK_CONTENTION_H
 #define PERF_LOCK_CONTENTION_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
 
 struct lock_filter {
 	int			nr_types;
@@ -62,7 +62,7 @@ struct lock_stat {
 
 /*
  * MAX_LOCK_DEPTH
- * Imported from include/linux/sched.h.
+ * Imported from include/freax/sched.h.
  * Should this be synchronized?
  */
 #define MAX_LOCK_DEPTH 48

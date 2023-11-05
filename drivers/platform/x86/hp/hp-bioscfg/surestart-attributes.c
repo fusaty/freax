@@ -7,7 +7,7 @@
  */
 
 #include "bioscfg.h"
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Maximum number of log entries supported when log entry size is 16
  * bytes. This value is calculated by dividing 4096 (page size) by

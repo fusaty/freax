@@ -40,7 +40,7 @@
 			label = "dsmg600:green:power";
 			gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 		led-wlan {
 			label = "dsmg600:green:wlan";
@@ -48,7 +48,7 @@
 			gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
 			default-state = "on";
 			/* We don't have WLAN trigger in the kernel (yet) */
-			linux,default-trigger = "netdev";
+			freax,default-trigger = "netdev";
 		};
 	};
 
@@ -57,7 +57,7 @@
 
 		button-reset {
 			wakeup-source;
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			label = "reset";
 			gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
 		};
@@ -73,7 +73,7 @@
 		 */
 		button-power {
 			wakeup-source;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "power";
 			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
 		};

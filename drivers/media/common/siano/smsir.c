@@ -12,8 +12,8 @@
 
 #include "smscoreapi.h"
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <freax/types.h>
+#include <freax/input.h>
 
 #include "smsir.h"
 #include "sms-cards.h"

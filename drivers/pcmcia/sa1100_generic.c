@@ -30,12 +30,12 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 
 #include <pcmcia/ss.h>
 
@@ -206,7 +206,7 @@ static void __exit sa11x0_pcmcia_exit(void)
 }
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: SA-11x0 Socket Controller");
+MODULE_DESCRIPTION("freax PCMCIA Card Services: SA-11x0 Socket Controller");
 MODULE_LICENSE("Dual MPL/GPL");
 
 fs_initcall(sa11x0_pcmcia_init);

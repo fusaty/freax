@@ -3,7 +3,7 @@
 //                    Cirrus Logic International Semiconductor Ltd.
 
 #include <kunit/test.h>
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

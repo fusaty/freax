@@ -6,11 +6,11 @@
 //
 // Author: Dimitris Papastamos <dp@opensource.wolfsonmicro.com>
 
-#include <linux/bsearch.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <freax/bsearch.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
 
 #include "trace.h"
 #include "internal.h"

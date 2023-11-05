@@ -8,9 +8,9 @@
  *  Copyright  ©  2009 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/perf_event.h>
-#include <linux/slab.h>
-#include <linux/sched/task_stack.h>
+#include <freax/perf_event.h>
+#include <freax/slab.h>
+#include <freax/sched/task_stack.h>
 
 #include "internal.h"
 

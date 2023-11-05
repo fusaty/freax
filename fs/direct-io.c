@@ -20,24 +20,24 @@
  *		added IO completion notifier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/rwsem.h>
-#include <linux/uio.h>
-#include <linux/atomic.h>
-#include <linux/prefetch.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/bio.h>
+#include <freax/wait.h>
+#include <freax/err.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/rwsem.h>
+#include <freax/uio.h>
+#include <freax/atomic.h>
+#include <freax/prefetch.h>
 
 #include "internal.h"
 

@@ -2,19 +2,19 @@
 /*
  * Wakeup statistics in sysfs
  *
- * Copyright (c) 2019 Linux Foundation
- * Copyright (c) 2019 Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+ * Copyright (c) 2019 freax Foundation
+ * Copyright (c) 2019 Greg Kroah-Hartman <gregkh@freaxfoundation.org>
  * Copyright (c) 2019 Google Inc.
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/kdev_t.h>
+#include <freax/kernel.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
+#include <freax/timekeeping.h>
 
 #include "power.h"
 

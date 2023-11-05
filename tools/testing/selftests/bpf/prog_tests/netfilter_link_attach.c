@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include <netinet/in.h>
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
 #include "test_progs.h"
 #include "test_netfilter_link_attach.skel.h"

@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef _LINUX_BROADSHEETFB_H_
-#define _LINUX_BROADSHEETFB_H_
+#ifndef _freax_BROADSHEETFB_H_
+#define _freax_BROADSHEETFB_H_
 
 /* Broadsheet command defines */
 #define BS_CMD_INIT_SYS_RUN	0x06

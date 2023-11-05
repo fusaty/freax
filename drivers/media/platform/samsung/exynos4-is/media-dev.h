@@ -6,11 +6,11 @@
 #ifndef FIMC_MDEVICE_H_
 #define FIMC_MDEVICE_H_
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
 #include <media/media-device.h>
 #include <media/media-entity.h>
 #include <media/v4l2-device.h>

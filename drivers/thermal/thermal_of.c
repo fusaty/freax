@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
+#include <freax/types.h>
+#include <freax/string.h>
 
 #include "thermal_core.h"
 
@@ -52,7 +52,7 @@ out:
 }
 
 /*
- * It maps 'enum thermal_trip_type' found in include/linux/thermal.h
+ * It maps 'enum thermal_trip_type' found in include/freax/thermal.h
  * into the device tree binding of 'trip', property type.
  */
 static const char * const trip_types[] = {

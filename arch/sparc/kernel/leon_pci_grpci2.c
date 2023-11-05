@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/leon.h>

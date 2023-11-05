@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/mmc/core/sd_ops.h
+ *  freax/drivers/mmc/core/sd_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
@@ -8,7 +8,7 @@
 #ifndef _MMC_SD_OPS_H
 #define _MMC_SD_OPS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct mmc_card;
 struct mmc_host;

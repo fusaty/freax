@@ -3,20 +3,20 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (C) 2016-2019 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/buffer_head.h>
-#include <linux/dax.h>
-#include <linux/writeback.h>
-#include <linux/list_sort.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/sched/signal.h>
-#include <linux/migrate.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/fs.h>
+#include <freax/iomap.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
+#include <freax/buffer_head.h>
+#include <freax/dax.h>
+#include <freax/writeback.h>
+#include <freax/list_sort.h>
+#include <freax/swap.h>
+#include <freax/bio.h>
+#include <freax/sched/signal.h>
+#include <freax/migrate.h>
 #include "trace.h"
 
 #include "../internal.h"

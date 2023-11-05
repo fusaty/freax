@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ELFCORE_COMPAT_H
-#define _LINUX_ELFCORE_COMPAT_H
+#ifndef _freax_ELFCORE_COMPAT_H
+#define _freax_ELFCORE_COMPAT_H
 
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/compat.h>
+#include <freax/elf.h>
+#include <freax/elfcore.h>
+#include <freax/compat.h>
 
 /*
- * Make sure these layouts match the linux/elfcore.h native definitions.
+ * Make sure these layouts match the freax/elfcore.h native definitions.
  */
 
 struct compat_elf_siginfo
@@ -63,4 +63,4 @@ struct compat_elf_prstatus
 	compat_int_t			pr_fpvalid;
 };
 
-#endif /* _LINUX_ELFCORE_COMPAT_H */
+#endif /* _freax_ELFCORE_COMPAT_H */

@@ -8,22 +8,22 @@
 
 #define DSS_SUBSYS_NAME "VENC"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/seq_file.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/component.h>
+#include <freax/sys_soc.h>
 
 #include <drm/drm_bridge.h>
 

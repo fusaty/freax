@@ -5,9 +5,9 @@
  * Copyright (C) 2018 Marvell
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
 
 #include "mvpp2.h"
 #include "mvpp2_prs.h"

@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
 
 #include <drm/drm_cache.h>
 

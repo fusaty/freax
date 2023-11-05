@@ -6,11 +6,11 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"
@@ -26,17 +26,17 @@
  * They mostly relate to driver binding, since the data transfer model is
  * so simple (CDC Ethernet).  The original versions of this protocol used
  * specific product/vendor IDs:  byteswapped IDs for Digital Equipment's
- * SA-1100 "Itsy" board, which could run Linux 2.4 kernels and supported
+ * SA-1100 "Itsy" board, which could run freax 2.4 kernels and supported
  * daughtercards with USB peripheral connectors.  (It was used more often
- * with other boards, using the Itsy identifiers.)  Linux hosts recognized
- * this with CONFIG_USB_ARMLINUX; these devices have only one configuration
+ * with other boards, using the Itsy identifiers.)  freax hosts recognized
+ * this with CONFIG_USB_ARMfreax; these devices have only one configuration
  * and one interface.
  *
  * At some point, MCCI defined a (nonconformant) CDC MDLM variant called
  * "SAFE", which happens to have a mode which is identical to the "CDC
  * Subset" in terms of data transfer and lack of control model.  This was
  * adopted by later Sharp Zaurus models, and by some other software which
- * Linux hosts recognize with CONFIG_USB_NET_ZAURUS.
+ * freax hosts recognize with CONFIG_USB_NET_ZAURUS.
  *
  * Because Microsoft's RNDIS drivers are far from robust, we added a few
  * descriptors to the CDC Subset code, making this code look like a SAFE

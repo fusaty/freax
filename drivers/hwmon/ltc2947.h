@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LTC2947_H
-#define _LINUX_LTC2947_H
+#ifndef _freax_LTC2947_H
+#define _freax_LTC2947_H
 
 struct regmap;
 

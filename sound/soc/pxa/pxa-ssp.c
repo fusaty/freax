@@ -10,15 +10,15 @@
  *  o Test network mode for > 16bit sample size
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/of.h>
-#include <linux/dmaengine.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/pxa2xx_ssp.h>
+#include <freax/of.h>
+#include <freax/dmaengine.h>
 
 #include <asm/irq.h>
 

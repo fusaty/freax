@@ -6,12 +6,12 @@
 
 #include <hyp/switch.h>
 
-#include <linux/arm-smccc.h>
-#include <linux/kvm_host.h>
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/percpu.h>
-#include <uapi/linux/psci.h>
+#include <freax/arm-smccc.h>
+#include <freax/kvm_host.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
+#include <freax/percpu.h>
+#include <uapi/freax/psci.h>
 
 #include <kvm/arm_psci.h>
 

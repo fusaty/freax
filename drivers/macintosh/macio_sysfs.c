@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/stat.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/stat.h>
 #include <asm/macio.h>
 
 static ssize_t

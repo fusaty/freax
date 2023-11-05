@@ -5,12 +5,12 @@
  * Copyright (C) 2017 Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 #include <media/rc-core.h>
 
 #define MTK_IR_DEV KBUILD_MODNAME
@@ -338,7 +338,7 @@ static int mtk_ir_probe(struct platform_device *pdev)
 	ir->rc->input_id.vendor = 0x0001;
 	ir->rc->input_id.product = 0x0001;
 	ir->rc->input_id.version = 0x0001;
-	map_name = of_get_property(dn, "linux,rc-map-name", NULL);
+	map_name = of_get_property(dn, "freax,rc-map-name", NULL);
 	ir->rc->map_name = map_name ?: RC_MAP_EMPTY;
 	ir->rc->dev.parent = dev;
 	ir->rc->driver_name = MTK_IR_DEV;

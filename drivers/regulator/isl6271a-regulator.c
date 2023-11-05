@@ -7,14 +7,14 @@
  * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
 
 #define	ISL6271A_VOLTAGE_MIN	850000
 #define	ISL6271A_VOLTAGE_MAX	1600000

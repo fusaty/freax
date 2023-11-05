@@ -6,12 +6,12 @@
  *  Chiwoong Byun <woong.byun@samsung.com>
  */
 
-#ifndef __LINUX_MFD_MAX77686_PRIV_H
-#define __LINUX_MFD_MAX77686_PRIV_H
+#ifndef __freax_MFD_MAX77686_PRIV_H
+#define __freax_MFD_MAX77686_PRIV_H
 
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/module.h>
 
 #define MAX77686_REG_INVALID		(0xff)
 
@@ -441,4 +441,4 @@ enum max77686_types {
 	TYPE_MAX77802,
 };
 
-#endif /*  __LINUX_MFD_MAX77686_PRIV_H */
+#endif /*  __freax_MFD_MAX77686_PRIV_H */

@@ -5,15 +5,15 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the freax EHCI driver.
  */
 
-#include <linux/usb.h>
-#include <linux/overflow.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
+#include <freax/usb.h>
+#include <freax/overflow.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/dmapool.h>
+#include <freax/dma-mapping.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

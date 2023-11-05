@@ -10,7 +10,7 @@
 
 /*
  * Workaround for capacitor C70 issue, see "Boards revision A and < B5"
- * section at https://elinux.org/BeagleBoard_Community
+ * section at https://efreax.org/BeagleBoard_Community
  */
 
 /* Unusable as clocksource because of unreliable oscillator */

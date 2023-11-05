@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #include <media/v4l2-cci.h>
 #include <media/v4l2-common.h>
@@ -1033,7 +1033,7 @@ static int ov2680_parse_dt(struct ov2680_dev *sensor)
 		return ret;
 
 	/*
-	 * The pin we want is named XSHUTDN in the datasheet. Linux sensor
+	 * The pin we want is named XSHUTDN in the datasheet. freax sensor
 	 * drivers have standardized on using "powerdown" as con-id name
 	 * for powerdown or shutdown pins. Older DTB files use "reset",
 	 * so fallback to that if there is no "powerdown" pin.

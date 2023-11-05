@@ -6,14 +6,14 @@
  * are exposed through to BPF programs is explicitly unstable.
  */
 
-#include <linux/bpf_verifier.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/btf_ids.h>
-#include <linux/net_namespace.h>
+#include <freax/bpf_verifier.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/filter.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/btf_ids.h>
+#include <freax/net_namespace.h>
 #include <net/xdp.h>
 #include <net/netfilter/nf_conntrack_bpf.h>
 #include <net/netfilter/nf_conntrack_core.h>

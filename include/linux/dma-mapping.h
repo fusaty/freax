@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DMA_MAPPING_H
-#define _LINUX_DMA_MAPPING_H
+#ifndef _freax_DMA_MAPPING_H
+#define _freax_DMA_MAPPING_H
 
-#include <linux/cache.h>
-#include <linux/sizes.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/bug.h>
-#include <linux/mem_encrypt.h>
+#include <freax/cache.h>
+#include <freax/sizes.h>
+#include <freax/string.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/dma-direction.h>
+#include <freax/scatterlist.h>
+#include <freax/bug.h>
+#include <freax/mem_encrypt.h>
 
 /**
  * List of possible attributes associated with a DMA mapping. The semantics
@@ -606,4 +606,4 @@ static inline int dma_mmap_wc(struct device *dev,
 #define dma_unmap_len_set(PTR, LEN_NAME, VAL)    do { } while (0)
 #endif
 
-#endif /* _LINUX_DMA_MAPPING_H */
+#endif /* _freax_DMA_MAPPING_H */

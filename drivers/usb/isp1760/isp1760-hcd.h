@@ -2,8 +2,8 @@
 #ifndef _ISP1760_HCD_H_
 #define _ISP1760_HCD_H_
 
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
+#include <freax/spinlock.h>
+#include <freax/regmap.h>
 
 #include "isp1760-regs.h"
 

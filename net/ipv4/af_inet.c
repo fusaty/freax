@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -63,35 +63,35 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/kernel.h>
+#include <freax/kmod.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/capability.h>
+#include <freax/fcntl.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/stat.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/random.h>
+#include <freax/slab.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
+#include <freax/inet.h>
+#include <freax/igmp.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/protocol.h>
@@ -105,7 +105,7 @@
 #include <net/udp.h>
 #include <net/udplite.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
 #include <net/raw.h>
 #include <net/icmp.h>
@@ -115,7 +115,7 @@
 #include <net/net_namespace.h>
 #include <net/secure_seq.h>
 #ifdef CONFIG_IP_MROUTE
-#include <linux/mroute.h>
+#include <freax/mroute.h>
 #endif
 #include <net/l3mdev.h>
 #include <net/compat.h>
@@ -1781,7 +1781,7 @@ static __net_init int ipv4_mib_init_net(struct net *net)
 		u64_stats_init(&af_inet_stats->syncp);
 	}
 
-	net->mib.net_statistics = alloc_percpu(struct linux_mib);
+	net->mib.net_statistics = alloc_percpu(struct freax_mib);
 	if (!net->mib.net_statistics)
 		goto err_net_mib;
 	net->mib.udp_statistics = alloc_percpu(struct udp_mib);

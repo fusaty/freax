@@ -3,16 +3,16 @@
 #ifndef _BCACHE_UTIL_H
 #define _BCACHE_UTIL_H
 
-#include <linux/blkdev.h>
-#include <linux/closure.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched/clock.h>
-#include <linux/llist.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/crc64.h>
+#include <freax/blkdev.h>
+#include <freax/closure.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched/clock.h>
+#include <freax/llist.h>
+#include <freax/ratelimit.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/crc64.h>
 
 struct closure;
 

@@ -3,13 +3,13 @@
 // Copyright (C) 2019-20 Texas Instruments Incorporated - http://www.ti.com/
 // Author: Dan Murphy <dmurphy@ti.com>
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include "leds.h"
 

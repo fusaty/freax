@@ -29,11 +29,11 @@
 #include <signal.h>
 #include <pthread.h>
 #include <sys/ioctl.h>
-#include <linux/userfaultfd.h>
+#include <freax/userfaultfd.h>
 #include <setjmp.h>
 #include <sys/ptrace.h>
 #include <sys/signal.h>
-#include <linux/elf.h>
+#include <freax/elf.h>
 
 /*
  * Define the ABI defines if needed, so people can run the tests

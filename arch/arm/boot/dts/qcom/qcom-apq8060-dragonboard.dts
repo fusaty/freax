@@ -357,7 +357,7 @@
 };
 
 &pm8058_keypad {
-	linux,keymap = <
+	freax,keymap = <
 		MATRIX_KEY(0, 0, KEY_MENU)
 		MATRIX_KEY(0, 2, KEY_1)
 		MATRIX_KEY(0, 3, KEY_4)
@@ -396,7 +396,7 @@
 	 */
 	label = "pm8058:infrared:proximitysensor";
 	default-state = "off";
-	linux,default-trigger = "cm3605";
+	freax,default-trigger = "cm3605";
 	status = "okay";
 };
 
@@ -415,7 +415,7 @@
 	label = "pm8058:yellow";
 	color = <LED_COLOR_ID_YELLOW>;
 	default-state = "off";
-	linux,default-trigger = "mmc0";
+	freax,default-trigger = "mmc0";
 	status = "okay";
 };
 
@@ -424,7 +424,7 @@
 	function = LED_FUNCTION_HEARTBEAT;
 	color = <LED_COLOR_ID_GREEN>;
 	default-state = "on";
-	linux,default-trigger = "heartbeat";
+	freax,default-trigger = "heartbeat";
 	status = "okay";
 };
 

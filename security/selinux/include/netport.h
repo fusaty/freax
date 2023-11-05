@@ -2,7 +2,7 @@
 /*
  * Network port table
  *
- * SELinux must keep a mapping of network ports to labels/SIDs.  This
+ * SEfreax must keep a mapping of network ports to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  *
@@ -13,10 +13,10 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2008
  */
 
-#ifndef _SELINUX_NETPORT_H
-#define _SELINUX_NETPORT_H
+#ifndef _SEfreax_NETPORT_H
+#define _SEfreax_NETPORT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 void sel_netport_flush(void);
 

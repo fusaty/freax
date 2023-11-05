@@ -6,41 +6,41 @@
  * Copyright (C) 1996-2000 Russell King - Converted to ARM.
  * Copyright (C) 2012 ARM Ltd.
  */
-#include <linux/compat.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/personality.h>
-#include <linux/notifier.h>
+#include <freax/compat.h>
+#include <freax/efi.h>
+#include <freax/elf.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/nospec.h>
+#include <freax/stddef.h>
+#include <freax/sysctl.h>
+#include <freax/unistd.h>
+#include <freax/user.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/elfcore.h>
+#include <freax/pm.h>
+#include <freax/tick.h>
+#include <freax/utsname.h>
+#include <freax/uaccess.h>
+#include <freax/random.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/personality.h>
+#include <freax/notifier.h>
 #include <trace/events/power.h>
-#include <linux/percpu.h>
-#include <linux/thread_info.h>
-#include <linux/prctl.h>
-#include <linux/stacktrace.h>
+#include <freax/percpu.h>
+#include <freax/thread_info.h>
+#include <freax/prctl.h>
+#include <freax/stacktrace.h>
 
 #include <asm/alternative.h>
 #include <asm/compat.h>
@@ -57,7 +57,7 @@
 #include <asm/system_misc.h>
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <freax/stackprotector.h>
 unsigned long __stack_chk_guard __ro_after_init;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

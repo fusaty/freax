@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/dec21285.c: PCI functions for DC21285
+ *  freax/arch/arm/kernel/dec21285.c: PCI functions for DC21285
  *
  *  Copyright (C) 1998-2001 Russell King
  *  Copyright (C) 1998-2000 Phil Blundell
  */
-#include <linux/dma-map-ops.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <freax/dma-map-ops.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
 
 #include <asm/irq.h>
 #include <asm/mach/pci.h>

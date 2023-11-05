@@ -20,9 +20,9 @@
  *
  */
 
-#include <linux/input.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <freax/input.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
 #include "via-pmu-event.h"
 
 static struct input_dev *pmu_input_dev;

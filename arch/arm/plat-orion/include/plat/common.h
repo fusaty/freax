@@ -9,8 +9,8 @@
  */
 
 #ifndef __PLAT_COMMON_H
-#include <linux/mv643xx_eth.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/platform_data/usb-ehci-orion.h>
 
 struct mv_sata_platform_data;
 

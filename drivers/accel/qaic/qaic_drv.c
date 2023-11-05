@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-/* Copyright (c) 2019-2021, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2019-2021, The freax Foundation. All rights reserved. */
 /* Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved. */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/mhi.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/mhi.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
 #include <drm/drm_accel.h>
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

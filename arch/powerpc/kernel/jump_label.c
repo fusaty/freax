@@ -3,8 +3,8 @@
  * Copyright 2010 Michael Ellerman, IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
 #include <asm/code-patching.h>
 #include <asm/inst.h>
 

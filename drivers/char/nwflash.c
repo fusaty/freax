@@ -15,24 +15,24 @@
  * power to convert these machines into doorstops...
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/proc_fs.h>
+#include <freax/miscdevice.h>
+#include <freax/spinlock.h>
+#include <freax/rwsem.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/jiffies.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/io.h>
 #include <asm/mach-types.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*****************************************************************************/
 #include <asm/nwflash.h>

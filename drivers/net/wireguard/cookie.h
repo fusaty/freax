@@ -7,7 +7,7 @@
 #define _WG_COOKIE_H
 
 #include "messages.h"
-#include <linux/rwsem.h>
+#include <freax/rwsem.h>
 
 struct wg_peer;
 

@@ -1,16 +1,16 @@
 /*
- * include/linux/serial.h
+ * include/freax/serial.h
  *
  * Copyright (C) 1992 by Theodore Ts'o.
  * 
  * Redistribution of this file is permitted under the terms of the GNU 
  * Public License (GPL)
  */
-#ifndef _LINUX_SERIAL_H
-#define _LINUX_SERIAL_H
+#ifndef _freax_SERIAL_H
+#define _freax_SERIAL_H
 
-#include <uapi/linux/serial.h>
-#include <uapi/linux/serial_reg.h>
+#include <uapi/freax/serial.h>
+#include <uapi/freax/serial_reg.h>
 
 #define UART_IER_ALL_INTR	(UART_IER_MSI | \
 				 UART_IER_RLSI | \
@@ -43,6 +43,6 @@ struct async_icount {
 	__u32	buf_overrun;
 };
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
-#endif /* _LINUX_SERIAL_H */
+#endif /* _freax_SERIAL_H */

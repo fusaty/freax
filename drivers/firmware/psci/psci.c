@@ -6,21 +6,21 @@
 
 #define pr_fmt(fmt) "psci: " fmt
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/cpuidle.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/printk.h>
-#include <linux/psci.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <freax/acpi.h>
+#include <freax/arm-smccc.h>
+#include <freax/cpuidle.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/linkage.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/printk.h>
+#include <freax/psci.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/freax/psci.h>
 
 #include <asm/cpuidle.h>
 #include <asm/cputype.h>
@@ -130,7 +130,7 @@ __invoke_psci_fn_smc(unsigned long function_id,
 	return res.a0;
 }
 
-static __always_inline int psci_to_linux_errno(int errno)
+static __always_inline int psci_to_freax_errno(int errno)
 {
 	switch (errno) {
 	case PSCI_RET_SUCCESS:
@@ -169,7 +169,7 @@ int psci_set_osi_mode(bool enable)
 	if (err < 0)
 		pr_info(FW_BUG "failed to set %s mode: %d\n",
 				enable ? "OSI" : "PC", err);
-	return psci_to_linux_errno(err);
+	return psci_to_freax_errno(err);
 }
 
 static __always_inline int
@@ -178,7 +178,7 @@ __psci_cpu_suspend(u32 fn, u32 state, unsigned long entry_point)
 	int err;
 
 	err = invoke_psci_fn(fn, state, entry_point, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_freax_errno(err);
 }
 
 static __always_inline int
@@ -200,7 +200,7 @@ static int __psci_cpu_off(u32 fn, u32 state)
 	int err;
 
 	err = invoke_psci_fn(fn, state, 0, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_freax_errno(err);
 }
 
 static int psci_0_1_cpu_off(u32 state)
@@ -218,7 +218,7 @@ static int __psci_cpu_on(u32 fn, unsigned long cpuid, unsigned long entry_point)
 	int err;
 
 	err = invoke_psci_fn(fn, cpuid, entry_point, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_freax_errno(err);
 }
 
 static int psci_0_1_cpu_on(unsigned long cpuid, unsigned long entry_point)
@@ -236,7 +236,7 @@ static int __psci_migrate(u32 fn, unsigned long cpuid)
 	int err;
 
 	err = invoke_psci_fn(fn, cpuid, 0, 0);
-	return psci_to_linux_errno(err);
+	return psci_to_freax_errno(err);
 }
 
 static int psci_0_1_migrate(unsigned long cpuid)

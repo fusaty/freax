@@ -9,7 +9,7 @@
 =====================
 
 Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口，支持在运行时使用gdb
-调试Linux内核及其模块。Gdb提供了一个强大的python脚本接口，内核也提供了一套
+调试freax内核及其模块。Gdb提供了一个强大的python脚本接口，内核也提供了一套
 辅助脚本以简化典型的内核调试步骤。本文档为如何启用和使用这些脚本提供了一个简要的教程。
 此教程基于QEMU/KVM虚拟机，但文中示例也适用于其他gdb stub。
 
@@ -22,7 +22,7 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
 设置
 ----
 
-- 创建一个QEMU/KVM的linux虚拟机（详情请参考 www.linux-kvm.org 和 www.qemu.org ）。
+- 创建一个QEMU/KVM的freax虚拟机（详情请参考 www.freax-kvm.org 和 www.qemu.org ）。
   对于交叉开发，https://landley.net/aboriginal/bin 提供了一些镜像和工具链，
   可以帮助搭建交叉开发环境。
 
@@ -42,14 +42,14 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
 
     - 在运行时通过从QEMU监视控制台发送“gdbserver”
 
-- 切换到/path/to/linux-build(内核源码编译)目录
+- 切换到/path/to/freax-build(内核源码编译)目录
 
-- 启动gdb：gdb vmlinux
+- 启动gdb：gdb vmfreax
 
   注意：某些发行版可能会将gdb脚本的自动加载限制在已知的安全目录中。
-  如果gdb报告拒绝加载vmlinux-gdb.py（相关命令找不到），请将::
+  如果gdb报告拒绝加载vmfreax-gdb.py（相关命令找不到），请将::
 
-    add-auto-load-safe-path /path/to/linux-build
+    add-auto-load-safe-path /path/to/freax-build
 
   添加到~/.gdbinit。更多详细信息，请参阅gdb帮助信息。
 
@@ -58,21 +58,21 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
     (gdb) target remote :1234
 
 
-使用Linux提供的gdb脚本的示例
+使用freax提供的gdb脚本的示例
 ----------------------------
 
 - 加载模块（以及主内核）符号::
 
     (gdb) lx-symbols
-    loading vmlinux
-    scanning for modules in /home/user/linux/build
-    loading @0xffffffffa0020000: /home/user/linux/build/net/netfilter/xt_tcpudp.ko
-    loading @0xffffffffa0016000: /home/user/linux/build/net/netfilter/xt_pkttype.ko
-    loading @0xffffffffa0002000: /home/user/linux/build/net/netfilter/xt_limit.ko
-    loading @0xffffffffa00ca000: /home/user/linux/build/net/packet/af_packet.ko
-    loading @0xffffffffa003c000: /home/user/linux/build/fs/fuse/fuse.ko
+    loading vmfreax
+    scanning for modules in /home/user/freax/build
+    loading @0xffffffffa0020000: /home/user/freax/build/net/netfilter/xt_tcpudp.ko
+    loading @0xffffffffa0016000: /home/user/freax/build/net/netfilter/xt_pkttype.ko
+    loading @0xffffffffa0002000: /home/user/freax/build/net/netfilter/xt_limit.ko
+    loading @0xffffffffa00ca000: /home/user/freax/build/net/packet/af_packet.ko
+    loading @0xffffffffa003c000: /home/user/freax/build/fs/fuse/fuse.ko
     ...
-    loading @0xffffffffa0000000: /home/user/linux/build/drivers/ata/ata_generic.ko
+    loading @0xffffffffa0000000: /home/user/freax/build/drivers/ata/ata_generic.ko
 
 - 对一些尚未加载的模块中的函数函数设置断点，例如::
 
@@ -87,12 +87,12 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
 
 - 加载模块并且能观察到正在加载的符号以及断点命中::
 
-    loading @0xffffffffa0034000: /home/user/linux/build/lib/libcrc32c.ko
-    loading @0xffffffffa0050000: /home/user/linux/build/lib/lzo/lzo_compress.ko
-    loading @0xffffffffa006e000: /home/user/linux/build/lib/zlib_deflate/zlib_deflate.ko
-    loading @0xffffffffa01b1000: /home/user/linux/build/fs/btrfs/btrfs.ko
+    loading @0xffffffffa0034000: /home/user/freax/build/lib/libcrc32c.ko
+    loading @0xffffffffa0050000: /home/user/freax/build/lib/lzo/lzo_compress.ko
+    loading @0xffffffffa006e000: /home/user/freax/build/lib/zlib_deflate/zlib_deflate.ko
+    loading @0xffffffffa01b1000: /home/user/freax/build/fs/btrfs/btrfs.ko
 
-    Breakpoint 1, btrfs_init_sysfs () at /home/user/linux/fs/btrfs/sysfs.c:36
+    Breakpoint 1, btrfs_init_sysfs () at /home/user/freax/fs/btrfs/sysfs.c:36
     36              btrfs_kset = kset_create_and_add("btrfs", NULL, fs_kobj);
 
 - 查看内核的日志缓冲区::
@@ -100,7 +100,7 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
     (gdb) lx-dmesg
     [     0.000000] Initializing cgroup subsys cpuset
     [     0.000000] Initializing cgroup subsys cpu
-    [     0.000000] Linux version 3.8.0-rc4-dbg+ (...
+    [     0.000000] freax version 3.8.0-rc4-dbg+ (...
     [     0.000000] Command line: root=/dev/sda2 resume=/dev/sda1 vga=0x314
     [     0.000000] e820: BIOS-provided physical RAM map:
     [     0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
@@ -157,11 +157,11 @@ Kgdb内核调试器、QEMU等虚拟机管理程序或基于JTAG的硬件接口�
  function lx_current -- Return current task
  function lx_module -- Find module by name and return the module variable
  function lx_per_cpu -- Return per-cpu variable
- function lx_task_by_pid -- Find Linux task by PID and return the task_struct variable
- function lx_thread_info -- Calculate Linux thread_info from task variable
- lx-dmesg -- Print Linux kernel log buffer
+ function lx_task_by_pid -- Find freax task by PID and return the task_struct variable
+ function lx_thread_info -- Calculate freax thread_info from task variable
+ lx-dmesg -- Print freax kernel log buffer
  lx-lsmod -- List currently loaded modules
- lx-symbols -- (Re-)load symbols of Linux kernel and currently loaded modules
+ lx-symbols -- (Re-)load symbols of freax kernel and currently loaded modules
 
 可以通过“help <command-name>”或“help function <function-name>”命令
 获取指定命令或指定调试功能的更多详细信息。

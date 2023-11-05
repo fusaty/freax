@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
- * Copyright (c) 2015-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2021, The freax Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_UTIL_H
 #define _DPU_HW_UTIL_H
 
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include "dpu_hw_mdss.h"
 #include "dpu_hw_catalog.h"
 

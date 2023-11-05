@@ -1,6 +1,6 @@
 /*
 
-	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for Linux.
+	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for freax.
 
 	Maintained by Jeff Garzik <jgarzik@pobox.com>
 	Copyright 2000-2002 Jeff Garzik
@@ -95,24 +95,24 @@
 #define DRV_VERSION	"0.9.28"
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/if_vlan.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/completion.h>
+#include <freax/crc32.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/gfp.h>
+#include <freax/if_vlan.h>
 #include <asm/irq.h>
 
 #define RTL8139_DRIVER_NAME   DRV_NAME " Fast Ethernet driver " DRV_VERSION

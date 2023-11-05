@@ -4,12 +4,12 @@
 #ifndef _I40E_ADMINQ_CMD_H_
 #define _I40E_ADMINQ_CMD_H_
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* This header file defines the i40e Admin Queue commands and is shared between
  * i40e Firmware and Software.
  *
- * This file needs to comply with the Linux Kernel coding style.
+ * This file needs to comply with the freax Kernel coding style.
  */
 
 #define I40E_FW_API_VERSION_MAJOR	0x0001
@@ -2140,7 +2140,7 @@ I40E_CHECK_CMD_LENGTH(i40e_aqc_set_dcb_parameters);
 #define I40E_AQC_CEE_FIP_STATUS_MASK	(0x7 << I40E_AQC_CEE_FIP_STATUS_SHIFT)
 
 /* struct i40e_aqc_get_cee_dcb_cfg_v1_resp was originally defined with
- * word boundary layout issues, which the Linux compilers silently deal
+ * word boundary layout issues, which the freax compilers silently deal
  * with by adding padding, making the actual struct larger than designed.
  * However, the FW compiler for the NIC is less lenient and complains
  * about the struct.  Hence, the struct defined here has an extra byte in

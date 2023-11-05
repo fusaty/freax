@@ -2,28 +2,28 @@
 #define pr_fmt(fmt) "kcov: " fmt
 
 #define DISABLE_BRANCH_PROFILING
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/hashtable.h>
-#include <linux/init.h>
-#include <linux/kmsan-checks.h>
-#include <linux/mm.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/kcov.h>
-#include <linux/refcount.h>
-#include <linux/log2.h>
+#include <freax/atomic.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/hashtable.h>
+#include <freax/init.h>
+#include <freax/kmsan-checks.h>
+#include <freax/mm.h>
+#include <freax/preempt.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/vmalloc.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/kcov.h>
+#include <freax/refcount.h>
+#include <freax/log2.h>
 #include <asm/setup.h>
 
 #define kcov_debug(fmt, ...) pr_debug("%s: " fmt, __func__, ##__VA_ARGS__)

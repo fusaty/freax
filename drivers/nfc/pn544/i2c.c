@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc-ccitt.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/nfc.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
+#include <freax/crc-ccitt.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/nfc.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
 
 #include <asm/unaligned.h>
 

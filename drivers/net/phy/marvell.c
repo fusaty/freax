@@ -10,33 +10,33 @@
  *
  * Copyright (c) 2013 Michael Stapelberg <michael@stapelberg.de>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/phy.h>
-#include <linux/marvell_phy.h>
-#include <linux/bitfield.h>
-#include <linux/of.h>
-#include <linux/sfp.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/hwmon.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/phy.h>
+#include <freax/marvell_phy.h>
+#include <freax/bitfield.h>
+#include <freax/of.h>
+#include <freax/sfp.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define MII_MARVELL_PHY_PAGE		22
 #define MII_MARVELL_COPPER_PAGE		0x00

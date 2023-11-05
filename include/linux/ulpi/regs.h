@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_ULPI_REGS_H
-#define __LINUX_ULPI_REGS_H
+#ifndef __freax_ULPI_REGS_H
+#define __freax_ULPI_REGS_H
 
 /*
  * Macros for Set and Clear
@@ -128,4 +128,4 @@
 #define ULPI_CARKIT_PLS_CTRL_SPKRLEFT_BIASEN	BIT(2)
 #define ULPI_CARKIT_PLS_CTRL_SPKRRIGHT_BIASEN	BIT(3)
 
-#endif /* __LINUX_ULPI_REGS_H */
+#endif /* __freax_ULPI_REGS_H */

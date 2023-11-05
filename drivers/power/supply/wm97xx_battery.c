@@ -7,17 +7,17 @@
  * Copyright (C) 2008 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/wm97xx.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/irq.h>
+#include <freax/slab.h>
 
 static struct work_struct bat_work;
 static struct gpio_desc *charge_gpiod;

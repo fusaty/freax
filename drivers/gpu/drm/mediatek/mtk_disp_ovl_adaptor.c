@@ -5,17 +5,17 @@
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_of.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
-#include <linux/soc/mediatek/mtk-mutex.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/soc/mediatek/mtk-cmdq.h>
+#include <freax/soc/mediatek/mtk-mmsys.h>
+#include <freax/soc/mediatek/mtk-mutex.h>
 
 #include "mtk_disp_drv.h"
 #include "mtk_drm_crtc.h"

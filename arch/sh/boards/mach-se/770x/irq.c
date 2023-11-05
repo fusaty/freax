@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/770x/irq.c
+ * freax/arch/sh/boards/se/770x/irq.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  * Copyright (C) 2006  Nobuhiro Iwamatsu
@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <mach-se/mach/se.h>

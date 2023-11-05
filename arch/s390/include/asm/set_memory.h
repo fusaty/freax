@@ -2,7 +2,7 @@
 #ifndef _ASMS390_SET_MEMORY_H
 #define _ASMS390_SET_MEMORY_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 extern struct mutex cpa_mutex;
 

@@ -9,7 +9,7 @@
  *
  * based on work by Grant Guenther <grant@torque.net> and Phil Blundell.
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <freax@arm.uk.freax.org>
  * DMA support - Bert De Jonghe <bert@sophis.be>
  * Many ECP bugs fixed.  Fred Barnes & Jamie Lokier, 1999
  * More PCI support now conditional on CONFIG_PCI, 03/2001, Paul G.
@@ -43,28 +43,28 @@
  * but rather will start at port->base_hi.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/platform_device.h>
-#include <linux/sysctl.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched/signal.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/pnp.h>
+#include <freax/platform_device.h>
+#include <freax/sysctl.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #include <asm/dma.h>
 
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/via.h>
+#include <freax/parport.h>
+#include <freax/parport_pc.h>
+#include <freax/via.h>
 #include <asm/parport.h>
 
 #define PARPORT_PC_MAX_PORTS PARPORT_MAX

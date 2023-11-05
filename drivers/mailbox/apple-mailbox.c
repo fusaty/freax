@@ -2,7 +2,7 @@
 /*
  * Apple mailbox driver
  *
- * Copyright (C) 2021 The Asahi Linux Contributors
+ * Copyright (C) 2021 The Asahi freax Contributors
  *
  * This driver adds support for two mailbox variants (called ASC and M3 by
  * Apple) found in Apple SoCs such as the M1. It consists of two FIFOs used to
@@ -16,18 +16,18 @@
  * other direction.
  */
 
-#include <linux/apple-mailbox.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/apple-mailbox.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mailbox_controller.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define APPLE_ASC_MBOX_CONTROL_FULL  BIT(16)
 #define APPLE_ASC_MBOX_CONTROL_EMPTY BIT(17)

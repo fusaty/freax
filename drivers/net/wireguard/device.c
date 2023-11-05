@@ -11,14 +11,14 @@
 #include "peer.h"
 #include "messages.h"
 
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmp.h>
-#include <linux/suspend.h>
+#include <freax/module.h>
+#include <freax/rtnetlink.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/if_arp.h>
+#include <freax/icmp.h>
+#include <freax/suspend.h>
 #include <net/dst_metadata.h>
 #include <net/gso.h>
 #include <net/icmp.h>

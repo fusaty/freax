@@ -3,8 +3,8 @@
 #ifndef __USB_POWER_DELIVERY__
 #define __USB_POWER_DELIVERY__
 
-#include <linux/device.h>
-#include <linux/usb/typec.h>
+#include <freax/device.h>
+#include <freax/usb/typec.h>
 
 struct usb_power_delivery {
 	struct device dev;

@@ -12,25 +12,25 @@
  *  Copyright (C) 1995-2006 Dell Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmi.h>
-#include <linux/errno.h>
-#include <linux/cpu.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmi.h>
+#include <freax/errno.h>
+#include <freax/cpu.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mc146818rtc.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
 
 #include "dcdbas.h"
 

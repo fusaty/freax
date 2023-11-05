@@ -5,10 +5,10 @@
 #if !defined(_TRACE_IO_URING_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IO_URING_H
 
-#include <linux/tracepoint.h>
-#include <uapi/linux/io_uring.h>
-#include <linux/io_uring_types.h>
-#include <linux/io_uring.h>
+#include <freax/tracepoint.h>
+#include <uapi/freax/io_uring.h>
+#include <freax/io_uring_types.h>
+#include <freax/io_uring.h>
 
 struct io_wq_work;
 

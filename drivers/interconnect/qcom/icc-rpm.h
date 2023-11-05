@@ -6,12 +6,12 @@
 #ifndef __DRIVERS_INTERCONNECT_QCOM_ICC_RPM_H
 #define __DRIVERS_INTERCONNECT_QCOM_ICC_RPM_H
 
-#include <linux/soc/qcom/smd-rpm.h>
+#include <freax/soc/qcom/smd-rpm.h>
 
 #include <dt-bindings/interconnect/qcom,rpm-icc.h>
-#include <linux/clk.h>
-#include <linux/interconnect-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/interconnect-provider.h>
+#include <freax/platform_device.h>
 
 #define RPM_BUS_MASTER_REQ	0x73616d62
 #define RPM_BUS_SLAVE_REQ	0x766c7362

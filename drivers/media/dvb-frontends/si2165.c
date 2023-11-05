@@ -8,18 +8,18 @@
  *  https://www.silabs.com/Support%20Documents/TechnicalDocs/Si2165-short.pdf
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
+#include <freax/regmap.h>
 
 #include <media/dvb_frontend.h>
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include "si2165_priv.h"
 #include "si2165.h"
 

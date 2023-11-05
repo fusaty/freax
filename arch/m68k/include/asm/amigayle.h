@@ -17,7 +17,7 @@
 #ifndef _M68K_AMIGAYLE_H_
 #define _M68K_AMIGAYLE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/amigahw.h>
 
 /* memory layout */

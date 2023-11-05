@@ -9,10 +9,10 @@
  * having to use actual hardware.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME		"rc-loopback"

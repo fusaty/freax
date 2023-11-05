@@ -4,8 +4,8 @@
  * Author: Keir Fraser <keirf@google.com>
  */
 
-#include <linux/list.h>
-#include <linux/bug.h>
+#include <freax/list.h>
+#include <freax/bug.h>
 
 static inline __must_check bool nvhe_check_data_corruption(bool v)
 {

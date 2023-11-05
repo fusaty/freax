@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/input/ad714x.h
+ * include/freax/input/ad714x.h
  *
  * AD714x is very flexible, it can be used as buttons, scrollwheel,
  * slider, touchpad at the same time. That depends on the boards.
@@ -10,8 +10,8 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#ifndef __LINUX_INPUT_AD714X_H__
-#define __LINUX_INPUT_AD714X_H__
+#ifndef __freax_INPUT_AD714X_H__
+#define __freax_INPUT_AD714X_H__
 
 #define STAGE_NUM              12
 #define STAGE_CFGREG_NUM       8

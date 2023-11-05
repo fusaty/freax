@@ -4,20 +4,20 @@
  * Copyright 2020 Google LLC.
  */
 
-#include <linux/pid.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bpf.h>
-#include <linux/bpf_local_storage.h>
-#include <linux/filter.h>
-#include <uapi/linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/fdtable.h>
-#include <linux/rcupdate_trace.h>
+#include <freax/pid.h>
+#include <freax/sched.h>
+#include <freax/rculist.h>
+#include <freax/list.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/bpf.h>
+#include <freax/bpf_local_storage.h>
+#include <freax/filter.h>
+#include <uapi/freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/fdtable.h>
+#include <freax/rcupdate_trace.h>
 
 DEFINE_BPF_STORAGE_CACHE(task_cache);
 

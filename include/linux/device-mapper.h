@@ -6,14 +6,14 @@
  * This file is released under the LGPL.
  */
 
-#ifndef _LINUX_DEVICE_MAPPER_H
-#define _LINUX_DEVICE_MAPPER_H
+#ifndef _freax_DEVICE_MAPPER_H
+#define _freax_DEVICE_MAPPER_H
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/dm-ioctl.h>
-#include <linux/math64.h>
-#include <linux/ratelimit.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/dm-ioctl.h>
+#include <freax/math64.h>
+#include <freax/ratelimit.h>
 
 struct dm_dev;
 struct dm_target;
@@ -719,4 +719,4 @@ static inline unsigned long to_bytes(sector_t n)
 	return (n << SECTOR_SHIFT);
 }
 
-#endif	/* _LINUX_DEVICE_MAPPER_H */
+#endif	/* _freax_DEVICE_MAPPER_H */

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: LGPL-2.1
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@freax.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <freax/module.h>
+#include <freax/fs.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/posix_acl_xattr.h>
 #include "xattr.h"
 #include "acl.h"
 #include "v9fs.h"

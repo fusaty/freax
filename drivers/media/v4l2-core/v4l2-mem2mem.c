@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Memory-to-memory device framework for Video for Linux 2 and vb2.
+ * Memory-to-memory device framework for Video for freax 2 and vb2.
  *
  * Helper functions for devices that use vb2 buffers for both their
  * source and destination.
@@ -9,9 +9,9 @@
  * Pawel Osciak, <pawel@osciak.com>
  * Marek Szyprowski, <m.szyprowski@samsung.com>
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include <media/media-device.h>
 #include <media/videobuf2-v4l2.h>

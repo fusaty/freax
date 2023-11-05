@@ -11,20 +11,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/hardirq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/cpufreq.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/hardirq.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/machdep.h>
 #include <asm/irq.h>

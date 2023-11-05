@@ -313,7 +313,7 @@
 				offset = <0x08>;
 				mask = <0x01>;
 				label = "versatile:0";
-				linux,default-trigger = "heartbeat";
+				freax,default-trigger = "heartbeat";
 				default-state = "on";
 			};
 			led@8,1 {
@@ -322,7 +322,7 @@
 				offset = <0x08>;
 				mask = <0x02>;
 				label = "versatile:1";
-				linux,default-trigger = "mmc0";
+				freax,default-trigger = "mmc0";
 				default-state = "off";
 			};
 			led@8,2 {
@@ -331,7 +331,7 @@
 				offset = <0x08>;
 				mask = <0x04>;
 				label = "versatile:2";
-				linux,default-trigger = "cpu0";
+				freax,default-trigger = "cpu0";
 				default-state = "off";
 			};
 			led@8,3 {
@@ -340,7 +340,7 @@
 				offset = <0x08>;
 				mask = <0x08>;
 				label = "versatile:3";
-				linux,default-trigger = "cpu1";
+				freax,default-trigger = "cpu1";
 				default-state = "off";
 			};
 			led@8,4 {
@@ -349,7 +349,7 @@
 				offset = <0x08>;
 				mask = <0x10>;
 				label = "versatile:4";
-				linux,default-trigger = "cpu2";
+				freax,default-trigger = "cpu2";
 				default-state = "off";
 			};
 			led@8,5 {
@@ -358,7 +358,7 @@
 				offset = <0x08>;
 				mask = <0x20>;
 				label = "versatile:5";
-				linux,default-trigger = "cpu3";
+				freax,default-trigger = "cpu3";
 				default-state = "off";
 			};
 			led@8,6 {

@@ -7,8 +7,8 @@
 #ifndef _ASM_POWERPC_LIVEPATCH_H
 #define _ASM_POWERPC_LIVEPATCH_H
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
 
 #ifdef CONFIG_LIVEPATCH_64
 static inline void klp_init_thread_info(struct task_struct *p)

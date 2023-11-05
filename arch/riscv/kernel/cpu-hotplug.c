@@ -3,14 +3,14 @@
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpu.h>
-#include <linux/sched/hotplug.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpu.h>
+#include <freax/sched/hotplug.h>
 #include <asm/irq.h>
 #include <asm/cpu_ops.h>
 #include <asm/numa.h>

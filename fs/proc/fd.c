@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/dcache.h>
-#include <linux/path.h>
-#include <linux/fdtable.h>
-#include <linux/namei.h>
-#include <linux/pid.h>
-#include <linux/ptrace.h>
-#include <linux/bitmap.h>
-#include <linux/security.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/dcache.h>
+#include <freax/path.h>
+#include <freax/fdtable.h>
+#include <freax/namei.h>
+#include <freax/pid.h>
+#include <freax/ptrace.h>
+#include <freax/bitmap.h>
+#include <freax/security.h>
+#include <freax/file.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
 
-#include <linux/proc_fs.h>
+#include <freax/proc_fs.h>
 
 #include "../mount.h"
 #include "internal.h"

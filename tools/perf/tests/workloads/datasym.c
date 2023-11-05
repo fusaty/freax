@@ -1,4 +1,4 @@
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include "../tests.h"
 
 typedef struct _buf {

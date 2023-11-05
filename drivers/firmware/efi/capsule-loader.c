@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/efi.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/miscdevice.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/efi.h>
+#include <freax/vmalloc.h>
 
 #define NO_FURTHER_WRITE_ACTION -1
 

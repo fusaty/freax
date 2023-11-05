@@ -8,22 +8,22 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/security.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/rcupdate.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/poll.h>
-#include <linux/zstd.h>
-#include <uapi/linux/major.h>
-#include <uapi/linux/magic.h>
+#include <freax/ctype.h>
+#include <freax/security.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/capability.h>
+#include <freax/rcupdate.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/poll.h>
+#include <freax/zstd.h>
+#include <uapi/freax/major.h>
+#include <uapi/freax/magic.h>
 
 #include "include/apparmor.h"
 #include "include/apparmorfs.h"

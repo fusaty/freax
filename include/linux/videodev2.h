@@ -1,5 +1,5 @@
 /*
- *  Video for Linux Two header file
+ *  Video for freax Two header file
  *
  *  Copyright (C) 1999-2012 the contributors
  *
@@ -46,18 +46,18 @@
  * All kernel-specific stuff were moved to media/v4l2-dev.h, so
  * no #if __KERNEL tests are allowed here
  *
- *	See https://linuxtv.org for more info
+ *	See https://freaxtv.org for more info
  *
  *	Author: Bill Dirks <bill@thedirks.org>
  *		Justin Schoeman
  *              Hans Verkuil <hverkuil@xs4all.nl>
  *		et al.
  */
-#ifndef __LINUX_VIDEODEV2_H
-#define __LINUX_VIDEODEV2_H
+#ifndef __freax_VIDEODEV2_H
+#define __freax_VIDEODEV2_H
 
-#include <linux/time.h>     /* need struct timeval */
-#include <linux/kernel.h>
-#include <uapi/linux/videodev2.h>
+#include <freax/time.h>     /* need struct timeval */
+#include <freax/kernel.h>
+#include <uapi/freax/videodev2.h>
 
-#endif /* __LINUX_VIDEODEV2_H */
+#endif /* __freax_VIDEODEV2_H */

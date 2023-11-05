@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SCHED_H
-#define _UAPI_LINUX_SCHED_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SCHED_H
+#define _UAPI_freax_SCHED_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * cloning flags:
@@ -145,4 +145,4 @@ struct clone_args {
 			 SCHED_FLAG_KEEP_ALL		| \
 			 SCHED_FLAG_UTIL_CLAMP)
 
-#endif /* _UAPI_LINUX_SCHED_H */
+#endif /* _UAPI_freax_SCHED_H */

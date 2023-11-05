@@ -11,16 +11,16 @@
  *  - http://www.intersil.com/content/dam/Intersil/documents/isl2/isl29030.pdf
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/pm_runtime.h>
 
 #define ISL29028_CONV_TIME_MS			100
 

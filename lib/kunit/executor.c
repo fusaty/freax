@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/reboot.h>
+#include <freax/reboot.h>
 #include <kunit/test.h>
 #include <kunit/attributes.h>
-#include <linux/glob.h>
-#include <linux/moduleparam.h>
+#include <freax/glob.h>
+#include <freax/moduleparam.h>
 
 /*
  * These symbols point to the .kunit_test_suites section and are defined in
- * include/asm-generic/vmlinux.lds.h, and consequently must be extern.
+ * include/asm-generic/vmfreax.lds.h, and consequently must be extern.
  */
 extern struct kunit_suite * const __kunit_suites_start[];
 extern struct kunit_suite * const __kunit_suites_end[];

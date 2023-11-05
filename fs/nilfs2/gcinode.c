@@ -21,11 +21,11 @@
  * written individually.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/mpage.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
+#include <freax/buffer_head.h>
+#include <freax/mpage.h>
+#include <freax/hash.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
 #include "nilfs.h"
 #include "btree.h"
 #include "btnode.h"

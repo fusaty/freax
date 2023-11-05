@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#ifndef _LINUX_ASN1_ENCODER_H
-#define _LINUX_ASN1_ENCODER_H
+#ifndef _freax_ASN1_ENCODER_H
+#define _freax_ASN1_ENCODER_H
 
-#include <linux/types.h>
-#include <linux/asn1.h>
-#include <linux/asn1_ber_bytecode.h>
-#include <linux/bug.h>
+#include <freax/types.h>
+#include <freax/asn1.h>
+#include <freax/asn1_ber_bytecode.h>
+#include <freax/bug.h>
 
 #define asn1_oid_len(oid) (sizeof(oid)/sizeof(u32))
 unsigned char *

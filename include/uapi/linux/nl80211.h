@@ -1,5 +1,5 @@
-#ifndef __LINUX_NL80211_H
-#define __LINUX_NL80211_H
+#ifndef __freax_NL80211_H
+#define __freax_NL80211_H
 /*
  * 802.11 netlink interface public header
  *
@@ -40,7 +40,7 @@
  * Nonetheless, semantics should also be documented carefully in this file.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define NL80211_GENL_NAME "nl80211"
 
@@ -2292,7 +2292,7 @@ enum nl80211_commands {
  *	u8 attribute.
  *
  * @NL80211_ATTR_VENDOR_ID: The vendor ID, either a 24-bit OUI or, if
- *	%NL80211_VENDOR_ID_IS_LINUX is set, a special Linux ID (not used yet)
+ *	%NL80211_VENDOR_ID_IS_freax is set, a special freax ID (not used yet)
  * @NL80211_ATTR_VENDOR_SUBCMD: vendor sub-command
  * @NL80211_ATTR_VENDOR_DATA: data for the vendor command, if any; this
  *	attribute is also used for vendor command feature advertisement
@@ -6777,14 +6777,14 @@ enum nl80211_rxmgmt_flags {
 
 /*
  * If this flag is unset, the lower 24 bits are an OUI, if set
- * a Linux nl80211 vendor ID is used (no such IDs are allocated
+ * a freax nl80211 vendor ID is used (no such IDs are allocated
  * yet, so that's not valid so far)
  */
-#define NL80211_VENDOR_ID_IS_LINUX	0x80000000
+#define NL80211_VENDOR_ID_IS_freax	0x80000000
 
 /**
  * struct nl80211_vendor_cmd_info - vendor command data
- * @vendor_id: If the %NL80211_VENDOR_ID_IS_LINUX flag is clear, then the
+ * @vendor_id: If the %NL80211_VENDOR_ID_IS_freax flag is clear, then the
  *	value is a 24-bit OUI; if it is set then a separately allocated ID
  *	may be used, but no such IDs are allocated yet. New IDs should be
  *	added to this file when needed.
@@ -7869,4 +7869,4 @@ enum nl80211_ap_settings_flags {
 	NL80211_AP_SETTINGS_SA_QUERY_OFFLOAD_SUPPORT	= 1 << 1,
 };
 
-#endif /* __LINUX_NL80211_H */
+#endif /* __freax_NL80211_H */

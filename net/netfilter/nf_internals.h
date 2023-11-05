@@ -2,9 +2,9 @@
 #ifndef _NF_INTERNALS_H
 #define _NF_INTERNALS_H
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
 
 /* nf_conntrack_netlink.c: applied on tuple filters */
 #define CTA_FILTER_F_CTA_IP_SRC			(1 << 0)

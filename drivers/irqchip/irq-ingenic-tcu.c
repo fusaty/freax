@@ -4,14 +4,14 @@
  * Copyright (C) 2019 Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/mfd/ingenic-tcu.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/mfd/ingenic-tcu.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_irq.h>
+#include <freax/regmap.h>
 
 struct ingenic_tcu {
 	struct regmap *map;

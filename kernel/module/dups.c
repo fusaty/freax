@@ -7,30 +7,30 @@
 
 #define pr_fmt(fmt)     "module: " fmt
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/binfmts.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/resource.h>
-#include <linux/notifier.h>
-#include <linux/suspend.h>
-#include <linux/rwsem.h>
-#include <linux/ptrace.h>
-#include <linux/async.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/binfmts.h>
+#include <freax/syscalls.h>
+#include <freax/unistd.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
+#include <freax/cred.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/workqueue.h>
+#include <freax/security.h>
+#include <freax/mount.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/resource.h>
+#include <freax/notifier.h>
+#include <freax/suspend.h>
+#include <freax/rwsem.h>
+#include <freax/ptrace.h>
+#include <freax/async.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

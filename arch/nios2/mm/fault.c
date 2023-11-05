@@ -11,20 +11,20 @@
  * for more details.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/extable.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/extable.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
 
 #include <asm/mmu_context.h>
 #include <asm/traps.h>

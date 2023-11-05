@@ -15,12 +15,12 @@
  * will be subsequently registered.
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/regmap.h>
 
 #include "simple-mfd-i2c.h"
 

@@ -32,7 +32,7 @@
 #ifndef _GVT_INTERRUPT_H_
 #define _GVT_INTERRUPT_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 struct intel_gvt;
 struct intel_gvt_irq;

@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2021 VMware Inc, Steven Rostedt <rostedt@goodmis.org>
  */
-#include <linux/spinlock.h>
-#include <linux/irq_work.h>
-#include <linux/slab.h>
+#include <freax/spinlock.h>
+#include <freax/irq_work.h>
+#include <freax/slab.h>
 #include "trace.h"
 
 /* See pid_list.h for details */
@@ -413,7 +413,7 @@ struct trace_pid_list *trace_pid_list_alloc(void)
 	struct trace_pid_list *pid_list;
 	int i;
 
-	/* According to linux/thread.h, pids can be no bigger that 30 bits */
+	/* According to freax/thread.h, pids can be no bigger that 30 bits */
 	WARN_ON_ONCE(pid_max > (1 << 30));
 
 	pid_list = kzalloc(sizeof(*pid_list), GFP_KERNEL);

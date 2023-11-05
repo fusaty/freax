@@ -8,10 +8,10 @@
  * Copyright (C) 2012  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/sys_soc.h>
 
 #include "core.h"
 #include "sh_pfc.h"

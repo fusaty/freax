@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/page_alloc.c
+ *  freax/mm/page_alloc.c
  *
  *  Manages the free list, the system allocates free pages here.
  *  Note that kmalloc() lives in slab.c
@@ -15,44 +15,44 @@
  *          (lots of bits borrowed from Ingo Molnar & Andrew Morton)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/kmsan.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/ratelimit.h>
-#include <linux/oom.h>
-#include <linux/topology.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/memory_hotplug.h>
-#include <linux/nodemask.h>
-#include <linux/vmstat.h>
-#include <linux/fault-inject.h>
-#include <linux/compaction.h>
+#include <freax/stddef.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/kasan.h>
+#include <freax/kmsan.h>
+#include <freax/module.h>
+#include <freax/suspend.h>
+#include <freax/ratelimit.h>
+#include <freax/oom.h>
+#include <freax/topology.h>
+#include <freax/sysctl.h>
+#include <freax/cpu.h>
+#include <freax/cpuset.h>
+#include <freax/memory_hotplug.h>
+#include <freax/nodemask.h>
+#include <freax/vmstat.h>
+#include <freax/fault-inject.h>
+#include <freax/compaction.h>
 #include <trace/events/kmem.h>
 #include <trace/events/oom.h>
-#include <linux/prefetch.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/sched/mm.h>
-#include <linux/page_owner.h>
-#include <linux/page_table_check.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/lockdep.h>
-#include <linux/psi.h>
-#include <linux/khugepaged.h>
-#include <linux/delayacct.h>
-#include <linux/cacheinfo.h>
+#include <freax/prefetch.h>
+#include <freax/mm_inline.h>
+#include <freax/mmu_notifier.h>
+#include <freax/migrate.h>
+#include <freax/sched/mm.h>
+#include <freax/page_owner.h>
+#include <freax/page_table_check.h>
+#include <freax/memcontrol.h>
+#include <freax/ftrace.h>
+#include <freax/lockdep.h>
+#include <freax/psi.h>
+#include <freax/khugepaged.h>
+#include <freax/delayacct.h>
+#include <freax/cacheinfo.h>
 #include <asm/div64.h>
 #include "internal.h"
 #include "shuffle.h"
@@ -173,7 +173,7 @@ DEFINE_STATIC_KEY_TRUE(vm_numa_stat_key);
  * N.B., Do NOT reference the '_numa_mem_' per cpu variable directly.
  * It will not be defined when CONFIG_HAVE_MEMORYLESS_NODES is not defined.
  * Use the accessor functions set_numa_mem(), numa_mem_id() and cpu_to_mem()
- * defined in <linux/topology.h>.
+ * defined in <freax/topology.h>.
  */
 DEFINE_PER_CPU(int, _numa_mem_);		/* Kernel "local memory" node */
 EXPORT_PER_CPU_SYMBOL(_numa_mem_);

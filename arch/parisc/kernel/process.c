@@ -3,43 +3,43 @@
  *    PARISC Architecture-dependent parts of process handling
  *    based on the work for i386
  *
- *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-linux.org>
+ *    Copyright (C) 1999-2003 Matthew Wilcox <willy at parisc-freax.org>
  *    Copyright (C) 2000 Martin K Petersen <mkp at mkp.net>
- *    Copyright (C) 2000 John Marvin <jsm at parisc-linux.org>
+ *    Copyright (C) 2000 John Marvin <jsm at parisc-freax.org>
  *    Copyright (C) 2000 David Huggins-Daines <dhd with pobox.org>
- *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-linux.org>
+ *    Copyright (C) 2000-2003 Paul Bame <bame at parisc-freax.org>
  *    Copyright (C) 2000 Philipp Rumpf <prumpf with tux.org>
- *    Copyright (C) 2000 David Kennedy <dkennedy with linuxcare.com>
- *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linux.org>
- *    Copyright (C) 2000 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2001 Alan Modra <amodra at parisc-linux.org>
- *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-linux.org>
+ *    Copyright (C) 2000 David Kennedy <dkennedy with freaxcare.com>
+ *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-freax.org>
+ *    Copyright (C) 2000 Grant Grundler <grundler with parisc-freax.org>
+ *    Copyright (C) 2001 Alan Modra <amodra at parisc-freax.org>
+ *    Copyright (C) 2001-2002 Ryan Bradetich <rbrad at parisc-freax.org>
  *    Copyright (C) 2001-2014 Helge Deller <deller@gmx.de>
- *    Copyright (C) 2002 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq with parisc-freax.org>
  */
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/nmi.h>
-#include <linux/sched/hotplug.h>
+#include <freax/elf.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/personality.h>
+#include <freax/ptrace.h>
+#include <freax/reboot.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/kallsyms.h>
+#include <freax/uaccess.h>
+#include <freax/rcupdate.h>
+#include <freax/random.h>
+#include <freax/nmi.h>
+#include <freax/sched/hotplug.h>
 
 #include <asm/io.h>
 #include <asm/asm-offsets.h>

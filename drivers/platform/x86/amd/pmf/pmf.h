@@ -11,8 +11,8 @@
 #ifndef PMF_H
 #define PMF_H
 
-#include <linux/acpi.h>
-#include <linux/platform_profile.h>
+#include <freax/acpi.h>
+#include <freax/platform_profile.h>
 
 /* APMF Functions */
 #define APMF_FUNC_VERIFY_INTERFACE			0

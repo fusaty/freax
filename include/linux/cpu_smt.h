@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CPU_SMT_H_
-#define _LINUX_CPU_SMT_H_
+#ifndef _freax_CPU_SMT_H_
+#define _freax_CPU_SMT_H_
 
 enum cpuhp_smt_control {
 	CPU_SMT_ENABLED,
@@ -30,4 +30,4 @@ static inline int cpuhp_smt_enable(void) { return 0; }
 static inline int cpuhp_smt_disable(enum cpuhp_smt_control ctrlval) { return 0; }
 #endif
 
-#endif /* _LINUX_CPU_SMT_H_ */
+#endif /* _freax_CPU_SMT_H_ */

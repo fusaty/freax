@@ -3,14 +3,14 @@
  * Copyright (c) 2015-2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/tegra.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/tegra.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #include "clk.h"
 

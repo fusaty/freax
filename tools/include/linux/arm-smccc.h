@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2015, Linaro Limited
  */
-#ifndef __LINUX_ARM_SMCCC_H
-#define __LINUX_ARM_SMCCC_H
+#ifndef __freax_ARM_SMCCC_H
+#define __freax_ARM_SMCCC_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 /*
  * This file provides common defines for ARM SMC Calling Convention as
@@ -190,4 +190,4 @@
 #define SMCCC_RET_NOT_REQUIRED			-2
 #define SMCCC_RET_INVALID_PARAMETER		-3
 
-#endif /*__LINUX_ARM_SMCCC_H*/
+#endif /*__freax_ARM_SMCCC_H*/

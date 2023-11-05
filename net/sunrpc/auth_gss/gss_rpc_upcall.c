@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *  linux/net/sunrpc/gss_rpc_upcall.c
+ *  freax/net/sunrpc/gss_rpc_upcall.c
  *
  *  Copyright (C) 2012 Simo Sorce <simo@redhat.com>
  */
 
-#include <linux/types.h>
-#include <linux/un.h>
+#include <freax/types.h>
+#include <freax/un.h>
 
-#include <linux/sunrpc/svcauth.h>
+#include <freax/sunrpc/svcauth.h>
 #include "gss_rpc_upcall.h"
 
 #define GSSPROXY_SOCK_PATHNAME	"/var/run/gssproxy.sock"

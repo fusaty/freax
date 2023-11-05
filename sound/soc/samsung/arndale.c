@@ -4,10 +4,10 @@
 //
 //  Author: Claude <claude@insginal.co.kr>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

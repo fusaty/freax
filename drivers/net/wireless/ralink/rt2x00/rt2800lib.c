@@ -21,10 +21,10 @@
 	Abstract: rt2800 generic device routines.
  */
 
-#include <linux/crc-ccitt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/crc-ccitt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "rt2x00.h"
 #include "rt2800lib.h"

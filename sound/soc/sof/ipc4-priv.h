@@ -9,7 +9,7 @@
 #ifndef __SOUND_SOC_SOF_IPC4_PRIV_H
 #define __SOUND_SOC_SOF_IPC4_PRIV_H
 
-#include <linux/idr.h>
+#include <freax/idr.h>
 #include <sound/sof/ext_manifest4.h>
 #include "sof-priv.h"
 

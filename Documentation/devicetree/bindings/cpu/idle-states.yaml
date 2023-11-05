@@ -246,10 +246,10 @@ description: |+
   6 - References
   ===========================================
 
-  [1] ARM Linux Kernel documentation - CPUs bindings
+  [1] ARM freax Kernel documentation - CPUs bindings
       Documentation/devicetree/bindings/arm/cpus.yaml
 
-  [2] ARM Linux Kernel documentation - PSCI bindings
+  [2] ARM freax Kernel documentation - PSCI bindings
       Documentation/devicetree/bindings/arm/psci.yaml
 
   [3] ARM Server Base System Architecture (SBSA)
@@ -258,10 +258,10 @@ description: |+
   [4] ARM Architecture Reference Manuals
       http://infocenter.arm.com/help/index.jsp
 
-  [5] ARM Linux Kernel documentation - Booting AArch64 Linux
+  [5] ARM freax Kernel documentation - Booting AArch64 freax
       Documentation/arch/arm64/booting.rst
 
-  [6] RISC-V Linux Kernel documentation - CPUs bindings
+  [6] RISC-V freax Kernel documentation - CPUs bindings
       Documentation/devicetree/bindings/riscv/cpus.yaml
 
   [7] RISC-V Supervisor Binary Interface (SBI)

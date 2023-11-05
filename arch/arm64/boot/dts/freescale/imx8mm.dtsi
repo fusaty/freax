@@ -622,7 +622,7 @@
 					interrupts = <GIC_SPI 4 IRQ_TYPE_LEVEL_HIGH>;
 					clocks = <&clk IMX8MM_CLK_SNVS_ROOT>;
 					clock-names = "snvs-pwrkey";
-					linux,keycode = <KEY_POWER>;
+					freax,keycode = <KEY_POWER>;
 					wakeup-source;
 					status = "disabled";
 				};
@@ -1358,7 +1358,7 @@
 					<0 0 0 3 &gic GIC_SPI 123 IRQ_TYPE_LEVEL_HIGH>,
 					<0 0 0 4 &gic GIC_SPI 122 IRQ_TYPE_LEVEL_HIGH>;
 			fsl,max-link-speed = <2>;
-			linux,pci-domain = <0>;
+			freax,pci-domain = <0>;
 			clocks = <&clk IMX8MM_CLK_PCIE1_ROOT>,
 				 <&clk IMX8MM_CLK_PCIE1_PHY>,
 				 <&clk IMX8MM_CLK_PCIE1_AUX>;

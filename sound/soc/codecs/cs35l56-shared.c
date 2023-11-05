@@ -5,9 +5,9 @@
 // Copyright (C) 2023 Cirrus Logic, Inc. and
 //                    Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
 
 #include "cs35l56.h"
 

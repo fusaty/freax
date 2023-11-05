@@ -6,19 +6,19 @@
  * Copyright (C) 2019 Linaro Ltd.
  */
 
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/err.h>
-#include <linux/xarray.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/dma-heap.h>
-#include <uapi/linux/dma-heap.h>
+#include <freax/cdev.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/dma-buf.h>
+#include <freax/err.h>
+#include <freax/xarray.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/nospec.h>
+#include <freax/uaccess.h>
+#include <freax/syscalls.h>
+#include <freax/dma-heap.h>
+#include <uapi/freax/dma-heap.h>
 
 #define DEVNAME "dma_heap"
 

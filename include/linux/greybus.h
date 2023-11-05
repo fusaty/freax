@@ -6,32 +6,32 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#ifndef __LINUX_GREYBUS_H
-#define __LINUX_GREYBUS_H
+#ifndef __freax_GREYBUS_H
+#define __freax_GREYBUS_H
 
 #ifdef __KERNEL__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/idr.h>
 
-#include <linux/greybus/greybus_id.h>
-#include <linux/greybus/greybus_manifest.h>
-#include <linux/greybus/greybus_protocols.h>
-#include <linux/greybus/manifest.h>
-#include <linux/greybus/hd.h>
-#include <linux/greybus/svc.h>
-#include <linux/greybus/control.h>
-#include <linux/greybus/module.h>
-#include <linux/greybus/interface.h>
-#include <linux/greybus/bundle.h>
-#include <linux/greybus/connection.h>
-#include <linux/greybus/operation.h>
+#include <freax/greybus/greybus_id.h>
+#include <freax/greybus/greybus_manifest.h>
+#include <freax/greybus/greybus_protocols.h>
+#include <freax/greybus/manifest.h>
+#include <freax/greybus/hd.h>
+#include <freax/greybus/svc.h>
+#include <freax/greybus/control.h>
+#include <freax/greybus/module.h>
+#include <freax/greybus/interface.h>
+#include <freax/greybus/bundle.h>
+#include <freax/greybus/connection.h>
+#include <freax/greybus/operation.h>
 
 /* Matches up with the Greybus Protocol specification document */
 #define GREYBUS_VERSION_MAJOR	0x00
@@ -149,4 +149,4 @@ static inline bool cport_id_valid(struct gb_host_device *hd, u16 cport_id)
 }
 
 #endif /* __KERNEL__ */
-#endif /* __LINUX_GREYBUS_H */
+#endif /* __freax_GREYBUS_H */

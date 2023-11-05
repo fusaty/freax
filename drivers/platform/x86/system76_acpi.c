@@ -9,18 +9,18 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/power_supply.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/pci_ids.h>
+#include <freax/power_supply.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #include <acpi/battery.h>
 

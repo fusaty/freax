@@ -3,17 +3,17 @@
  * Copyright (c) 2022 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/init.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #include <soc/amlogic/meson_ddr_pmu.h>
 

@@ -4,10 +4,10 @@
  *
  * Definitions for the Dreamcast System ASIC and related peripherals.
  *
- * Copyright (c) 2001 M. R. Brown <mrbrown@linuxdc.org>
- * Copyright (C) 2003 Paul Mundt <lethal@linux-sh.org>
+ * Copyright (c) 2001 M. R. Brown <mrbrown@freaxdc.org>
+ * Copyright (C) 2003 Paul Mundt <lethal@freax-sh.org>
  *
- * This file is part of the LinuxDC project (www.linuxdc.org)
+ * This file is part of the freaxDC project (www.freaxdc.org)
  */
 #ifndef __ASM_SH_DREAMCAST_SYSASIC_H
 #define __ASM_SH_DREAMCAST_SYSASIC_H

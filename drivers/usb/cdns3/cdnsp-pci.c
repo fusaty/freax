@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
 
 #include "core.h"
 #include "gadget-export.h"

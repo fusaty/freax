@@ -3,8 +3,8 @@
 #define _FB_DRAW_H
 
 #include <asm/types.h>
-#include <linux/fb.h>
-#include <linux/bug.h>
+#include <freax/fb.h>
+#include <freax/bug.h>
 
     /*
      *  Compose two values, using a bitmask as decision value

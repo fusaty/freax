@@ -2,24 +2,24 @@
 /* Copyright 2021 NXP */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <freax/arm-smccc.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/firmware.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/remoteproc.h>
+#include <freax/slab.h>
 
 #include "imx_rproc.h"
 #include "remoteproc_elf_helpers.h"

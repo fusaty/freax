@@ -5,7 +5,7 @@
  * (C) Copyright 2009 Intel Corporation
  *
  * Authors:
- *     Arjan van de Ven <arjan@linux.intel.com>
+ *     Arjan van de Ven <arjan@freax.intel.com>
  */
 
 #include <inttypes.h>
@@ -13,10 +13,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <linux/bitmap.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/bitmap.h>
+#include <freax/string.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 #include <internal/cpumap.h>
 #include <perf/cpumap.h>
 

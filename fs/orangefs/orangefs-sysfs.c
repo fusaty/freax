@@ -136,12 +136,12 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/fs.h>
+#include <freax/kobject.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 #include "protocol.h"
 #include "orangefs-kernel.h"

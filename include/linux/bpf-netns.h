@@ -2,9 +2,9 @@
 #ifndef _BPF_NETNS_H
 #define _BPF_NETNS_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 #include <net/netns/bpf.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/freax/bpf.h>
 
 static inline enum netns_bpf_attach_type
 to_netns_bpf_attach_type(enum bpf_attach_type attach_type)

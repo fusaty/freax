@@ -7,7 +7,7 @@
 #define _OBJTOOL_CFI_H
 
 #include <arch/cfi_regs.h>
-#include <linux/list.h>
+#include <freax/list.h>
 
 #define CFI_UNDEFINED		-1
 #define CFI_CFA			-2

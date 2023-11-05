@@ -32,16 +32,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/ctype.h>
-#include <linux/kthread.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/inet.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/ctype.h>
+#include <freax/kthread.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/atomic.h>
+#include <freax/inet.h>
 #include <rdma/ib_cache.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/scsi_tcq.h>
@@ -52,7 +52,7 @@
 /* Name of this kernel module. */
 #define DRV_NAME		"ib_srpt"
 
-#define SRPT_ID_STRING	"Linux SRP target"
+#define SRPT_ID_STRING	"freax SRP target"
 
 #undef pr_fmt
 #define pr_fmt(fmt) DRV_NAME " " fmt

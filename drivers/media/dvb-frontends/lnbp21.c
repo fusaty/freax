@@ -5,15 +5,15 @@
  * Copyright (C) 2006, 2009 Oliver Endriss <o.endriss@gmx.de>
  * Copyright (C) 2009 Igor M. Liplianin <liplianin@netup.ru>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://freaxtv.org
  */
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "lnbp21.h"

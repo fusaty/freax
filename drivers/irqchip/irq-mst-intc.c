@@ -3,17 +3,17 @@
  * Copyright (c) 2020 MediaTek Inc.
  * Author Mark-PK Tsai <mark-pk.tsai@mediatek.com>
  */
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/syscore_ops.h>
 
 #define MST_INTC_MAX_IRQS	64
 

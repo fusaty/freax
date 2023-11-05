@@ -11,14 +11,14 @@
  * Funded by:  Volkswagen Group Research
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
 #include <net/pkt_cls.h>
-#include <linux/can.h>
+#include <freax/can.h>
 
 #define EM_CAN_RULES_MAX 500
 

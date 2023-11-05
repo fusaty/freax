@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Definitions for MIBs
  *
- * Author: Hideaki YOSHIFUJI <yoshfuji@linux-ipv6.org>
+ * Author: Hideaki YOSHIFUJI <yoshfuji@freax-ipv6.org>
  */
 
-#ifndef _LINUX_SNMP_H
-#define _LINUX_SNMP_H
+#ifndef _freax_SNMP_H
+#define _freax_SNMP_H
 
 /* ipstats mib definitions */
 /*
@@ -167,196 +167,196 @@ enum
 	__UDP_MIB_MAX
 };
 
-/* linux mib definitions */
+/* freax mib definitions */
 enum
 {
-	LINUX_MIB_NUM = 0,
-	LINUX_MIB_SYNCOOKIESSENT,		/* SyncookiesSent */
-	LINUX_MIB_SYNCOOKIESRECV,		/* SyncookiesRecv */
-	LINUX_MIB_SYNCOOKIESFAILED,		/* SyncookiesFailed */
-	LINUX_MIB_EMBRYONICRSTS,		/* EmbryonicRsts */
-	LINUX_MIB_PRUNECALLED,			/* PruneCalled */
-	LINUX_MIB_RCVPRUNED,			/* RcvPruned */
-	LINUX_MIB_OFOPRUNED,			/* OfoPruned */
-	LINUX_MIB_OUTOFWINDOWICMPS,		/* OutOfWindowIcmps */
-	LINUX_MIB_LOCKDROPPEDICMPS,		/* LockDroppedIcmps */
-	LINUX_MIB_ARPFILTER,			/* ArpFilter */
-	LINUX_MIB_TIMEWAITED,			/* TimeWaited */
-	LINUX_MIB_TIMEWAITRECYCLED,		/* TimeWaitRecycled */
-	LINUX_MIB_TIMEWAITKILLED,		/* TimeWaitKilled */
-	LINUX_MIB_PAWSACTIVEREJECTED,		/* PAWSActiveRejected */
-	LINUX_MIB_PAWSESTABREJECTED,		/* PAWSEstabRejected */
-	LINUX_MIB_DELAYEDACKS,			/* DelayedACKs */
-	LINUX_MIB_DELAYEDACKLOCKED,		/* DelayedACKLocked */
-	LINUX_MIB_DELAYEDACKLOST,		/* DelayedACKLost */
-	LINUX_MIB_LISTENOVERFLOWS,		/* ListenOverflows */
-	LINUX_MIB_LISTENDROPS,			/* ListenDrops */
-	LINUX_MIB_TCPHPHITS,			/* TCPHPHits */
-	LINUX_MIB_TCPPUREACKS,			/* TCPPureAcks */
-	LINUX_MIB_TCPHPACKS,			/* TCPHPAcks */
-	LINUX_MIB_TCPRENORECOVERY,		/* TCPRenoRecovery */
-	LINUX_MIB_TCPSACKRECOVERY,		/* TCPSackRecovery */
-	LINUX_MIB_TCPSACKRENEGING,		/* TCPSACKReneging */
-	LINUX_MIB_TCPSACKREORDER,		/* TCPSACKReorder */
-	LINUX_MIB_TCPRENOREORDER,		/* TCPRenoReorder */
-	LINUX_MIB_TCPTSREORDER,			/* TCPTSReorder */
-	LINUX_MIB_TCPFULLUNDO,			/* TCPFullUndo */
-	LINUX_MIB_TCPPARTIALUNDO,		/* TCPPartialUndo */
-	LINUX_MIB_TCPDSACKUNDO,			/* TCPDSACKUndo */
-	LINUX_MIB_TCPLOSSUNDO,			/* TCPLossUndo */
-	LINUX_MIB_TCPLOSTRETRANSMIT,		/* TCPLostRetransmit */
-	LINUX_MIB_TCPRENOFAILURES,		/* TCPRenoFailures */
-	LINUX_MIB_TCPSACKFAILURES,		/* TCPSackFailures */
-	LINUX_MIB_TCPLOSSFAILURES,		/* TCPLossFailures */
-	LINUX_MIB_TCPFASTRETRANS,		/* TCPFastRetrans */
-	LINUX_MIB_TCPSLOWSTARTRETRANS,		/* TCPSlowStartRetrans */
-	LINUX_MIB_TCPTIMEOUTS,			/* TCPTimeouts */
-	LINUX_MIB_TCPLOSSPROBES,		/* TCPLossProbes */
-	LINUX_MIB_TCPLOSSPROBERECOVERY,		/* TCPLossProbeRecovery */
-	LINUX_MIB_TCPRENORECOVERYFAIL,		/* TCPRenoRecoveryFail */
-	LINUX_MIB_TCPSACKRECOVERYFAIL,		/* TCPSackRecoveryFail */
-	LINUX_MIB_TCPRCVCOLLAPSED,		/* TCPRcvCollapsed */
-	LINUX_MIB_TCPDSACKOLDSENT,		/* TCPDSACKOldSent */
-	LINUX_MIB_TCPDSACKOFOSENT,		/* TCPDSACKOfoSent */
-	LINUX_MIB_TCPDSACKRECV,			/* TCPDSACKRecv */
-	LINUX_MIB_TCPDSACKOFORECV,		/* TCPDSACKOfoRecv */
-	LINUX_MIB_TCPABORTONDATA,		/* TCPAbortOnData */
-	LINUX_MIB_TCPABORTONCLOSE,		/* TCPAbortOnClose */
-	LINUX_MIB_TCPABORTONMEMORY,		/* TCPAbortOnMemory */
-	LINUX_MIB_TCPABORTONTIMEOUT,		/* TCPAbortOnTimeout */
-	LINUX_MIB_TCPABORTONLINGER,		/* TCPAbortOnLinger */
-	LINUX_MIB_TCPABORTFAILED,		/* TCPAbortFailed */
-	LINUX_MIB_TCPMEMORYPRESSURES,		/* TCPMemoryPressures */
-	LINUX_MIB_TCPMEMORYPRESSURESCHRONO,	/* TCPMemoryPressuresChrono */
-	LINUX_MIB_TCPSACKDISCARD,		/* TCPSACKDiscard */
-	LINUX_MIB_TCPDSACKIGNOREDOLD,		/* TCPSACKIgnoredOld */
-	LINUX_MIB_TCPDSACKIGNOREDNOUNDO,	/* TCPSACKIgnoredNoUndo */
-	LINUX_MIB_TCPSPURIOUSRTOS,		/* TCPSpuriousRTOs */
-	LINUX_MIB_TCPMD5NOTFOUND,		/* TCPMD5NotFound */
-	LINUX_MIB_TCPMD5UNEXPECTED,		/* TCPMD5Unexpected */
-	LINUX_MIB_TCPMD5FAILURE,		/* TCPMD5Failure */
-	LINUX_MIB_SACKSHIFTED,
-	LINUX_MIB_SACKMERGED,
-	LINUX_MIB_SACKSHIFTFALLBACK,
-	LINUX_MIB_TCPBACKLOGDROP,
-	LINUX_MIB_PFMEMALLOCDROP,
-	LINUX_MIB_TCPMINTTLDROP, /* RFC 5082 */
-	LINUX_MIB_TCPDEFERACCEPTDROP,
-	LINUX_MIB_IPRPFILTER, /* IP Reverse Path Filter (rp_filter) */
-	LINUX_MIB_TCPTIMEWAITOVERFLOW,		/* TCPTimeWaitOverflow */
-	LINUX_MIB_TCPREQQFULLDOCOOKIES,		/* TCPReqQFullDoCookies */
-	LINUX_MIB_TCPREQQFULLDROP,		/* TCPReqQFullDrop */
-	LINUX_MIB_TCPRETRANSFAIL,		/* TCPRetransFail */
-	LINUX_MIB_TCPRCVCOALESCE,		/* TCPRcvCoalesce */
-	LINUX_MIB_TCPBACKLOGCOALESCE,		/* TCPBacklogCoalesce */
-	LINUX_MIB_TCPOFOQUEUE,			/* TCPOFOQueue */
-	LINUX_MIB_TCPOFODROP,			/* TCPOFODrop */
-	LINUX_MIB_TCPOFOMERGE,			/* TCPOFOMerge */
-	LINUX_MIB_TCPCHALLENGEACK,		/* TCPChallengeACK */
-	LINUX_MIB_TCPSYNCHALLENGE,		/* TCPSYNChallenge */
-	LINUX_MIB_TCPFASTOPENACTIVE,		/* TCPFastOpenActive */
-	LINUX_MIB_TCPFASTOPENACTIVEFAIL,	/* TCPFastOpenActiveFail */
-	LINUX_MIB_TCPFASTOPENPASSIVE,		/* TCPFastOpenPassive*/
-	LINUX_MIB_TCPFASTOPENPASSIVEFAIL,	/* TCPFastOpenPassiveFail */
-	LINUX_MIB_TCPFASTOPENLISTENOVERFLOW,	/* TCPFastOpenListenOverflow */
-	LINUX_MIB_TCPFASTOPENCOOKIEREQD,	/* TCPFastOpenCookieReqd */
-	LINUX_MIB_TCPFASTOPENBLACKHOLE,		/* TCPFastOpenBlackholeDetect */
-	LINUX_MIB_TCPSPURIOUS_RTX_HOSTQUEUES, /* TCPSpuriousRtxHostQueues */
-	LINUX_MIB_BUSYPOLLRXPACKETS,		/* BusyPollRxPackets */
-	LINUX_MIB_TCPAUTOCORKING,		/* TCPAutoCorking */
-	LINUX_MIB_TCPFROMZEROWINDOWADV,		/* TCPFromZeroWindowAdv */
-	LINUX_MIB_TCPTOZEROWINDOWADV,		/* TCPToZeroWindowAdv */
-	LINUX_MIB_TCPWANTZEROWINDOWADV,		/* TCPWantZeroWindowAdv */
-	LINUX_MIB_TCPSYNRETRANS,		/* TCPSynRetrans */
-	LINUX_MIB_TCPORIGDATASENT,		/* TCPOrigDataSent */
-	LINUX_MIB_TCPHYSTARTTRAINDETECT,	/* TCPHystartTrainDetect */
-	LINUX_MIB_TCPHYSTARTTRAINCWND,		/* TCPHystartTrainCwnd */
-	LINUX_MIB_TCPHYSTARTDELAYDETECT,	/* TCPHystartDelayDetect */
-	LINUX_MIB_TCPHYSTARTDELAYCWND,		/* TCPHystartDelayCwnd */
-	LINUX_MIB_TCPACKSKIPPEDSYNRECV,		/* TCPACKSkippedSynRecv */
-	LINUX_MIB_TCPACKSKIPPEDPAWS,		/* TCPACKSkippedPAWS */
-	LINUX_MIB_TCPACKSKIPPEDSEQ,		/* TCPACKSkippedSeq */
-	LINUX_MIB_TCPACKSKIPPEDFINWAIT2,	/* TCPACKSkippedFinWait2 */
-	LINUX_MIB_TCPACKSKIPPEDTIMEWAIT,	/* TCPACKSkippedTimeWait */
-	LINUX_MIB_TCPACKSKIPPEDCHALLENGE,	/* TCPACKSkippedChallenge */
-	LINUX_MIB_TCPWINPROBE,			/* TCPWinProbe */
-	LINUX_MIB_TCPKEEPALIVE,			/* TCPKeepAlive */
-	LINUX_MIB_TCPMTUPFAIL,			/* TCPMTUPFail */
-	LINUX_MIB_TCPMTUPSUCCESS,		/* TCPMTUPSuccess */
-	LINUX_MIB_TCPDELIVERED,			/* TCPDelivered */
-	LINUX_MIB_TCPDELIVEREDCE,		/* TCPDeliveredCE */
-	LINUX_MIB_TCPACKCOMPRESSED,		/* TCPAckCompressed */
-	LINUX_MIB_TCPZEROWINDOWDROP,		/* TCPZeroWindowDrop */
-	LINUX_MIB_TCPRCVQDROP,			/* TCPRcvQDrop */
-	LINUX_MIB_TCPWQUEUETOOBIG,		/* TCPWqueueTooBig */
-	LINUX_MIB_TCPFASTOPENPASSIVEALTKEY,	/* TCPFastOpenPassiveAltKey */
-	LINUX_MIB_TCPTIMEOUTREHASH,		/* TCPTimeoutRehash */
-	LINUX_MIB_TCPDUPLICATEDATAREHASH,	/* TCPDuplicateDataRehash */
-	LINUX_MIB_TCPDSACKRECVSEGS,		/* TCPDSACKRecvSegs */
-	LINUX_MIB_TCPDSACKIGNOREDDUBIOUS,	/* TCPDSACKIgnoredDubious */
-	LINUX_MIB_TCPMIGRATEREQSUCCESS,		/* TCPMigrateReqSuccess */
-	LINUX_MIB_TCPMIGRATEREQFAILURE,		/* TCPMigrateReqFailure */
-	LINUX_MIB_TCPPLBREHASH,			/* TCPPLBRehash */
-	LINUX_MIB_TCPAOREQUIRED,		/* TCPAORequired */
-	LINUX_MIB_TCPAOBAD,			/* TCPAOBad */
-	LINUX_MIB_TCPAOKEYNOTFOUND,		/* TCPAOKeyNotFound */
-	LINUX_MIB_TCPAOGOOD,			/* TCPAOGood */
-	LINUX_MIB_TCPAODROPPEDICMPS,		/* TCPAODroppedIcmps */
-	__LINUX_MIB_MAX
+	freax_MIB_NUM = 0,
+	freax_MIB_SYNCOOKIESSENT,		/* SyncookiesSent */
+	freax_MIB_SYNCOOKIESRECV,		/* SyncookiesRecv */
+	freax_MIB_SYNCOOKIESFAILED,		/* SyncookiesFailed */
+	freax_MIB_EMBRYONICRSTS,		/* EmbryonicRsts */
+	freax_MIB_PRUNECALLED,			/* PruneCalled */
+	freax_MIB_RCVPRUNED,			/* RcvPruned */
+	freax_MIB_OFOPRUNED,			/* OfoPruned */
+	freax_MIB_OUTOFWINDOWICMPS,		/* OutOfWindowIcmps */
+	freax_MIB_LOCKDROPPEDICMPS,		/* LockDroppedIcmps */
+	freax_MIB_ARPFILTER,			/* ArpFilter */
+	freax_MIB_TIMEWAITED,			/* TimeWaited */
+	freax_MIB_TIMEWAITRECYCLED,		/* TimeWaitRecycled */
+	freax_MIB_TIMEWAITKILLED,		/* TimeWaitKilled */
+	freax_MIB_PAWSACTIVEREJECTED,		/* PAWSActiveRejected */
+	freax_MIB_PAWSESTABREJECTED,		/* PAWSEstabRejected */
+	freax_MIB_DELAYEDACKS,			/* DelayedACKs */
+	freax_MIB_DELAYEDACKLOCKED,		/* DelayedACKLocked */
+	freax_MIB_DELAYEDACKLOST,		/* DelayedACKLost */
+	freax_MIB_LISTENOVERFLOWS,		/* ListenOverflows */
+	freax_MIB_LISTENDROPS,			/* ListenDrops */
+	freax_MIB_TCPHPHITS,			/* TCPHPHits */
+	freax_MIB_TCPPUREACKS,			/* TCPPureAcks */
+	freax_MIB_TCPHPACKS,			/* TCPHPAcks */
+	freax_MIB_TCPRENORECOVERY,		/* TCPRenoRecovery */
+	freax_MIB_TCPSACKRECOVERY,		/* TCPSackRecovery */
+	freax_MIB_TCPSACKRENEGING,		/* TCPSACKReneging */
+	freax_MIB_TCPSACKREORDER,		/* TCPSACKReorder */
+	freax_MIB_TCPRENOREORDER,		/* TCPRenoReorder */
+	freax_MIB_TCPTSREORDER,			/* TCPTSReorder */
+	freax_MIB_TCPFULLUNDO,			/* TCPFullUndo */
+	freax_MIB_TCPPARTIALUNDO,		/* TCPPartialUndo */
+	freax_MIB_TCPDSACKUNDO,			/* TCPDSACKUndo */
+	freax_MIB_TCPLOSSUNDO,			/* TCPLossUndo */
+	freax_MIB_TCPLOSTRETRANSMIT,		/* TCPLostRetransmit */
+	freax_MIB_TCPRENOFAILURES,		/* TCPRenoFailures */
+	freax_MIB_TCPSACKFAILURES,		/* TCPSackFailures */
+	freax_MIB_TCPLOSSFAILURES,		/* TCPLossFailures */
+	freax_MIB_TCPFASTRETRANS,		/* TCPFastRetrans */
+	freax_MIB_TCPSLOWSTARTRETRANS,		/* TCPSlowStartRetrans */
+	freax_MIB_TCPTIMEOUTS,			/* TCPTimeouts */
+	freax_MIB_TCPLOSSPROBES,		/* TCPLossProbes */
+	freax_MIB_TCPLOSSPROBERECOVERY,		/* TCPLossProbeRecovery */
+	freax_MIB_TCPRENORECOVERYFAIL,		/* TCPRenoRecoveryFail */
+	freax_MIB_TCPSACKRECOVERYFAIL,		/* TCPSackRecoveryFail */
+	freax_MIB_TCPRCVCOLLAPSED,		/* TCPRcvCollapsed */
+	freax_MIB_TCPDSACKOLDSENT,		/* TCPDSACKOldSent */
+	freax_MIB_TCPDSACKOFOSENT,		/* TCPDSACKOfoSent */
+	freax_MIB_TCPDSACKRECV,			/* TCPDSACKRecv */
+	freax_MIB_TCPDSACKOFORECV,		/* TCPDSACKOfoRecv */
+	freax_MIB_TCPABORTONDATA,		/* TCPAbortOnData */
+	freax_MIB_TCPABORTONCLOSE,		/* TCPAbortOnClose */
+	freax_MIB_TCPABORTONMEMORY,		/* TCPAbortOnMemory */
+	freax_MIB_TCPABORTONTIMEOUT,		/* TCPAbortOnTimeout */
+	freax_MIB_TCPABORTONLINGER,		/* TCPAbortOnLinger */
+	freax_MIB_TCPABORTFAILED,		/* TCPAbortFailed */
+	freax_MIB_TCPMEMORYPRESSURES,		/* TCPMemoryPressures */
+	freax_MIB_TCPMEMORYPRESSURESCHRONO,	/* TCPMemoryPressuresChrono */
+	freax_MIB_TCPSACKDISCARD,		/* TCPSACKDiscard */
+	freax_MIB_TCPDSACKIGNOREDOLD,		/* TCPSACKIgnoredOld */
+	freax_MIB_TCPDSACKIGNOREDNOUNDO,	/* TCPSACKIgnoredNoUndo */
+	freax_MIB_TCPSPURIOUSRTOS,		/* TCPSpuriousRTOs */
+	freax_MIB_TCPMD5NOTFOUND,		/* TCPMD5NotFound */
+	freax_MIB_TCPMD5UNEXPECTED,		/* TCPMD5Unexpected */
+	freax_MIB_TCPMD5FAILURE,		/* TCPMD5Failure */
+	freax_MIB_SACKSHIFTED,
+	freax_MIB_SACKMERGED,
+	freax_MIB_SACKSHIFTFALLBACK,
+	freax_MIB_TCPBACKLOGDROP,
+	freax_MIB_PFMEMALLOCDROP,
+	freax_MIB_TCPMINTTLDROP, /* RFC 5082 */
+	freax_MIB_TCPDEFERACCEPTDROP,
+	freax_MIB_IPRPFILTER, /* IP Reverse Path Filter (rp_filter) */
+	freax_MIB_TCPTIMEWAITOVERFLOW,		/* TCPTimeWaitOverflow */
+	freax_MIB_TCPREQQFULLDOCOOKIES,		/* TCPReqQFullDoCookies */
+	freax_MIB_TCPREQQFULLDROP,		/* TCPReqQFullDrop */
+	freax_MIB_TCPRETRANSFAIL,		/* TCPRetransFail */
+	freax_MIB_TCPRCVCOALESCE,		/* TCPRcvCoalesce */
+	freax_MIB_TCPBACKLOGCOALESCE,		/* TCPBacklogCoalesce */
+	freax_MIB_TCPOFOQUEUE,			/* TCPOFOQueue */
+	freax_MIB_TCPOFODROP,			/* TCPOFODrop */
+	freax_MIB_TCPOFOMERGE,			/* TCPOFOMerge */
+	freax_MIB_TCPCHALLENGEACK,		/* TCPChallengeACK */
+	freax_MIB_TCPSYNCHALLENGE,		/* TCPSYNChallenge */
+	freax_MIB_TCPFASTOPENACTIVE,		/* TCPFastOpenActive */
+	freax_MIB_TCPFASTOPENACTIVEFAIL,	/* TCPFastOpenActiveFail */
+	freax_MIB_TCPFASTOPENPASSIVE,		/* TCPFastOpenPassive*/
+	freax_MIB_TCPFASTOPENPASSIVEFAIL,	/* TCPFastOpenPassiveFail */
+	freax_MIB_TCPFASTOPENLISTENOVERFLOW,	/* TCPFastOpenListenOverflow */
+	freax_MIB_TCPFASTOPENCOOKIEREQD,	/* TCPFastOpenCookieReqd */
+	freax_MIB_TCPFASTOPENBLACKHOLE,		/* TCPFastOpenBlackholeDetect */
+	freax_MIB_TCPSPURIOUS_RTX_HOSTQUEUES, /* TCPSpuriousRtxHostQueues */
+	freax_MIB_BUSYPOLLRXPACKETS,		/* BusyPollRxPackets */
+	freax_MIB_TCPAUTOCORKING,		/* TCPAutoCorking */
+	freax_MIB_TCPFROMZEROWINDOWADV,		/* TCPFromZeroWindowAdv */
+	freax_MIB_TCPTOZEROWINDOWADV,		/* TCPToZeroWindowAdv */
+	freax_MIB_TCPWANTZEROWINDOWADV,		/* TCPWantZeroWindowAdv */
+	freax_MIB_TCPSYNRETRANS,		/* TCPSynRetrans */
+	freax_MIB_TCPORIGDATASENT,		/* TCPOrigDataSent */
+	freax_MIB_TCPHYSTARTTRAINDETECT,	/* TCPHystartTrainDetect */
+	freax_MIB_TCPHYSTARTTRAINCWND,		/* TCPHystartTrainCwnd */
+	freax_MIB_TCPHYSTARTDELAYDETECT,	/* TCPHystartDelayDetect */
+	freax_MIB_TCPHYSTARTDELAYCWND,		/* TCPHystartDelayCwnd */
+	freax_MIB_TCPACKSKIPPEDSYNRECV,		/* TCPACKSkippedSynRecv */
+	freax_MIB_TCPACKSKIPPEDPAWS,		/* TCPACKSkippedPAWS */
+	freax_MIB_TCPACKSKIPPEDSEQ,		/* TCPACKSkippedSeq */
+	freax_MIB_TCPACKSKIPPEDFINWAIT2,	/* TCPACKSkippedFinWait2 */
+	freax_MIB_TCPACKSKIPPEDTIMEWAIT,	/* TCPACKSkippedTimeWait */
+	freax_MIB_TCPACKSKIPPEDCHALLENGE,	/* TCPACKSkippedChallenge */
+	freax_MIB_TCPWINPROBE,			/* TCPWinProbe */
+	freax_MIB_TCPKEEPALIVE,			/* TCPKeepAlive */
+	freax_MIB_TCPMTUPFAIL,			/* TCPMTUPFail */
+	freax_MIB_TCPMTUPSUCCESS,		/* TCPMTUPSuccess */
+	freax_MIB_TCPDELIVERED,			/* TCPDelivered */
+	freax_MIB_TCPDELIVEREDCE,		/* TCPDeliveredCE */
+	freax_MIB_TCPACKCOMPRESSED,		/* TCPAckCompressed */
+	freax_MIB_TCPZEROWINDOWDROP,		/* TCPZeroWindowDrop */
+	freax_MIB_TCPRCVQDROP,			/* TCPRcvQDrop */
+	freax_MIB_TCPWQUEUETOOBIG,		/* TCPWqueueTooBig */
+	freax_MIB_TCPFASTOPENPASSIVEALTKEY,	/* TCPFastOpenPassiveAltKey */
+	freax_MIB_TCPTIMEOUTREHASH,		/* TCPTimeoutRehash */
+	freax_MIB_TCPDUPLICATEDATAREHASH,	/* TCPDuplicateDataRehash */
+	freax_MIB_TCPDSACKRECVSEGS,		/* TCPDSACKRecvSegs */
+	freax_MIB_TCPDSACKIGNOREDDUBIOUS,	/* TCPDSACKIgnoredDubious */
+	freax_MIB_TCPMIGRATEREQSUCCESS,		/* TCPMigrateReqSuccess */
+	freax_MIB_TCPMIGRATEREQFAILURE,		/* TCPMigrateReqFailure */
+	freax_MIB_TCPPLBREHASH,			/* TCPPLBRehash */
+	freax_MIB_TCPAOREQUIRED,		/* TCPAORequired */
+	freax_MIB_TCPAOBAD,			/* TCPAOBad */
+	freax_MIB_TCPAOKEYNOTFOUND,		/* TCPAOKeyNotFound */
+	freax_MIB_TCPAOGOOD,			/* TCPAOGood */
+	freax_MIB_TCPAODROPPEDICMPS,		/* TCPAODroppedIcmps */
+	__freax_MIB_MAX
 };
 
-/* linux Xfrm mib definitions */
+/* freax Xfrm mib definitions */
 enum
 {
-	LINUX_MIB_XFRMNUM = 0,
-	LINUX_MIB_XFRMINERROR,			/* XfrmInError */
-	LINUX_MIB_XFRMINBUFFERERROR,		/* XfrmInBufferError */
-	LINUX_MIB_XFRMINHDRERROR,		/* XfrmInHdrError */
-	LINUX_MIB_XFRMINNOSTATES,		/* XfrmInNoStates */
-	LINUX_MIB_XFRMINSTATEPROTOERROR,	/* XfrmInStateProtoError */
-	LINUX_MIB_XFRMINSTATEMODEERROR,		/* XfrmInStateModeError */
-	LINUX_MIB_XFRMINSTATESEQERROR,		/* XfrmInStateSeqError */
-	LINUX_MIB_XFRMINSTATEEXPIRED,		/* XfrmInStateExpired */
-	LINUX_MIB_XFRMINSTATEMISMATCH,		/* XfrmInStateMismatch */
-	LINUX_MIB_XFRMINSTATEINVALID,		/* XfrmInStateInvalid */
-	LINUX_MIB_XFRMINTMPLMISMATCH,		/* XfrmInTmplMismatch */
-	LINUX_MIB_XFRMINNOPOLS,			/* XfrmInNoPols */
-	LINUX_MIB_XFRMINPOLBLOCK,		/* XfrmInPolBlock */
-	LINUX_MIB_XFRMINPOLERROR,		/* XfrmInPolError */
-	LINUX_MIB_XFRMOUTERROR,			/* XfrmOutError */
-	LINUX_MIB_XFRMOUTBUNDLEGENERROR,	/* XfrmOutBundleGenError */
-	LINUX_MIB_XFRMOUTBUNDLECHECKERROR,	/* XfrmOutBundleCheckError */
-	LINUX_MIB_XFRMOUTNOSTATES,		/* XfrmOutNoStates */
-	LINUX_MIB_XFRMOUTSTATEPROTOERROR,	/* XfrmOutStateProtoError */
-	LINUX_MIB_XFRMOUTSTATEMODEERROR,	/* XfrmOutStateModeError */
-	LINUX_MIB_XFRMOUTSTATESEQERROR,		/* XfrmOutStateSeqError */
-	LINUX_MIB_XFRMOUTSTATEEXPIRED,		/* XfrmOutStateExpired */
-	LINUX_MIB_XFRMOUTPOLBLOCK,		/* XfrmOutPolBlock */
-	LINUX_MIB_XFRMOUTPOLDEAD,		/* XfrmOutPolDead */
-	LINUX_MIB_XFRMOUTPOLERROR,		/* XfrmOutPolError */
-	LINUX_MIB_XFRMFWDHDRERROR,		/* XfrmFwdHdrError*/
-	LINUX_MIB_XFRMOUTSTATEINVALID,		/* XfrmOutStateInvalid */
-	LINUX_MIB_XFRMACQUIREERROR,		/* XfrmAcquireError */
-	__LINUX_MIB_XFRMMAX
+	freax_MIB_XFRMNUM = 0,
+	freax_MIB_XFRMINERROR,			/* XfrmInError */
+	freax_MIB_XFRMINBUFFERERROR,		/* XfrmInBufferError */
+	freax_MIB_XFRMINHDRERROR,		/* XfrmInHdrError */
+	freax_MIB_XFRMINNOSTATES,		/* XfrmInNoStates */
+	freax_MIB_XFRMINSTATEPROTOERROR,	/* XfrmInStateProtoError */
+	freax_MIB_XFRMINSTATEMODEERROR,		/* XfrmInStateModeError */
+	freax_MIB_XFRMINSTATESEQERROR,		/* XfrmInStateSeqError */
+	freax_MIB_XFRMINSTATEEXPIRED,		/* XfrmInStateExpired */
+	freax_MIB_XFRMINSTATEMISMATCH,		/* XfrmInStateMismatch */
+	freax_MIB_XFRMINSTATEINVALID,		/* XfrmInStateInvalid */
+	freax_MIB_XFRMINTMPLMISMATCH,		/* XfrmInTmplMismatch */
+	freax_MIB_XFRMINNOPOLS,			/* XfrmInNoPols */
+	freax_MIB_XFRMINPOLBLOCK,		/* XfrmInPolBlock */
+	freax_MIB_XFRMINPOLERROR,		/* XfrmInPolError */
+	freax_MIB_XFRMOUTERROR,			/* XfrmOutError */
+	freax_MIB_XFRMOUTBUNDLEGENERROR,	/* XfrmOutBundleGenError */
+	freax_MIB_XFRMOUTBUNDLECHECKERROR,	/* XfrmOutBundleCheckError */
+	freax_MIB_XFRMOUTNOSTATES,		/* XfrmOutNoStates */
+	freax_MIB_XFRMOUTSTATEPROTOERROR,	/* XfrmOutStateProtoError */
+	freax_MIB_XFRMOUTSTATEMODEERROR,	/* XfrmOutStateModeError */
+	freax_MIB_XFRMOUTSTATESEQERROR,		/* XfrmOutStateSeqError */
+	freax_MIB_XFRMOUTSTATEEXPIRED,		/* XfrmOutStateExpired */
+	freax_MIB_XFRMOUTPOLBLOCK,		/* XfrmOutPolBlock */
+	freax_MIB_XFRMOUTPOLDEAD,		/* XfrmOutPolDead */
+	freax_MIB_XFRMOUTPOLERROR,		/* XfrmOutPolError */
+	freax_MIB_XFRMFWDHDRERROR,		/* XfrmFwdHdrError*/
+	freax_MIB_XFRMOUTSTATEINVALID,		/* XfrmOutStateInvalid */
+	freax_MIB_XFRMACQUIREERROR,		/* XfrmAcquireError */
+	__freax_MIB_XFRMMAX
 };
 
-/* linux TLS mib definitions */
+/* freax TLS mib definitions */
 enum
 {
-	LINUX_MIB_TLSNUM = 0,
-	LINUX_MIB_TLSCURRTXSW,			/* TlsCurrTxSw */
-	LINUX_MIB_TLSCURRRXSW,			/* TlsCurrRxSw */
-	LINUX_MIB_TLSCURRTXDEVICE,		/* TlsCurrTxDevice */
-	LINUX_MIB_TLSCURRRXDEVICE,		/* TlsCurrRxDevice */
-	LINUX_MIB_TLSTXSW,			/* TlsTxSw */
-	LINUX_MIB_TLSRXSW,			/* TlsRxSw */
-	LINUX_MIB_TLSTXDEVICE,			/* TlsTxDevice */
-	LINUX_MIB_TLSRXDEVICE,			/* TlsRxDevice */
-	LINUX_MIB_TLSDECRYPTERROR,		/* TlsDecryptError */
-	LINUX_MIB_TLSRXDEVICERESYNC,		/* TlsRxDeviceResync */
-	LINUX_MIB_TLSDECRYPTRETRY,		/* TlsDecryptRetry */
-	LINUX_MIB_TLSRXNOPADVIOL,		/* TlsRxNoPadViolation */
-	__LINUX_MIB_TLSMAX
+	freax_MIB_TLSNUM = 0,
+	freax_MIB_TLSCURRTXSW,			/* TlsCurrTxSw */
+	freax_MIB_TLSCURRRXSW,			/* TlsCurrRxSw */
+	freax_MIB_TLSCURRTXDEVICE,		/* TlsCurrTxDevice */
+	freax_MIB_TLSCURRRXDEVICE,		/* TlsCurrRxDevice */
+	freax_MIB_TLSTXSW,			/* TlsTxSw */
+	freax_MIB_TLSRXSW,			/* TlsRxSw */
+	freax_MIB_TLSTXDEVICE,			/* TlsTxDevice */
+	freax_MIB_TLSRXDEVICE,			/* TlsRxDevice */
+	freax_MIB_TLSDECRYPTERROR,		/* TlsDecryptError */
+	freax_MIB_TLSRXDEVICERESYNC,		/* TlsRxDeviceResync */
+	freax_MIB_TLSDECRYPTRETRY,		/* TlsDecryptRetry */
+	freax_MIB_TLSRXNOPADVIOL,		/* TlsRxNoPadViolation */
+	__freax_MIB_TLSMAX
 };
 
-#endif	/* _LINUX_SNMP_H */
+#endif	/* _freax_SNMP_H */

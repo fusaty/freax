@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021 Mellanox Technologies. */
 
 #ifndef __MLX5_IRQ_H__
 #define __MLX5_IRQ_H__
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 
 #define MLX5_COMP_EQS_PER_SF 8
 

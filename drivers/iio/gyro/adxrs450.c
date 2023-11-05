@@ -5,20 +5,20 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/list.h>
+#include <freax/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define ADXRS450_STARTUP_DELAY	50 /* ms */
 

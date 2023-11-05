@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_COMPILER_H_
-#error "Please don't include <linux/compiler-gcc.h> directly, include <linux/compiler.h> instead."
+#ifndef _TOOLS_freax_COMPILER_H_
+#error "Please don't include <freax/compiler-gcc.h> directly, include <freax/compiler.h> instead."
 #endif
 
 /*

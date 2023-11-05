@@ -3,28 +3,28 @@
  *
  * Copyright (C) 1997, 1998, 1999 David S. Miller (davem@redhat.com)
  * Copyright (C) 1998, 1999 Eddie C. Dost   (ecd@skynet.be)
- * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1999 Jakub Jelinek   (jj@ultra.freax.cz)
  *
  * OF tree based PCI bus probing taken from the PowerPC port
  * with minor modifications, see there for credits.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pgtable.h>
-#include <linux/platform_device.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/sched.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
+#include <freax/irq.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pgtable.h>
+#include <freax/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 #include <asm/prom.h>
 #include <asm/apb.h>

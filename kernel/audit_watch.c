@@ -6,19 +6,19 @@
  * Copyright 2005 IBM Corporation
  */
 
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/audit.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/namei.h>
-#include <linux/netlink.h>
-#include <linux/refcount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <freax/file.h>
+#include <freax/kernel.h>
+#include <freax/audit.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
+#include <freax/fs.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/namei.h>
+#include <freax/netlink.h>
+#include <freax/refcount.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/security.h>
 #include "audit.h"
 
 /*

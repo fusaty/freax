@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IRQRETURN_H
-#define _LINUX_IRQRETURN_H
+#ifndef _freax_IRQRETURN_H
+#define _freax_IRQRETURN_H
 
 /**
  * enum irqreturn - irqreturn type values

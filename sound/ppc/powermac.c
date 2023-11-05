@@ -5,10 +5,10 @@
  *   based on dmasound.c.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "pmac.h"

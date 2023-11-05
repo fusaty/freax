@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Huawei. All rights reserved. */
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
 #include <cxlmem.h>
 #include <pmu.h>
 #include <cxl.h>

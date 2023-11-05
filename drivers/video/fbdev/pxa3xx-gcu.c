@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  pxa3xx-gcu.c - Linux kernel module for PXA3xx graphics controllers
+ *  pxa3xx-gcu.c - freax kernel module for PXA3xx graphics controllers
  *
  *  This driver needs a DirectFB counterpart in user space, communication
  *  is handled via mmap()ed memory areas and an ioctl.
@@ -13,25 +13,25 @@
 /*
  * WARNING: This controller is attached to System Bus 2 of the PXA which
  * needs its arbiter to be enabled explicitly (CKENB & 1<<9).
- * There is currently no way to do this from Linux, so you need to teach
+ * There is currently no way to do this from freax, so you need to teach
  * your bootloader for now.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/ioctl.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/miscdevice.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/ioctl.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include "pxa3xx-gcu.h"
 

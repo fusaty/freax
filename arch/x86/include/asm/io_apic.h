@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_IO_APIC_H
 #define _ASM_X86_IO_APIC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/mpspec.h>
 #include <asm/apicdef.h>
 #include <asm/irq_vectors.h>

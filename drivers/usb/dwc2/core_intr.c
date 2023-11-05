@@ -8,18 +8,18 @@
 /*
  * This file contains the common interrupt handlers
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/ch11.h>
 
 #include "core.h"
 #include "hcd.h"
@@ -164,7 +164,7 @@ static void dwc2_handle_otg_intr(struct dwc2_hsotg *hsotg)
 				 * if host mode is already set. The HCD
 				 * interrupt handler won't get called if the
 				 * HCD state is HALT. This means that the
-				 * interrupt does not get handled and Linux
+				 * interrupt does not get handled and freax
 				 * complains loudly.
 				 */
 				gintmsk = dwc2_readl(hsotg, GINTMSK);

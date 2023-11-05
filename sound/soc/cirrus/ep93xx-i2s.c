@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/sound/soc/ep93xx-i2s.c
+ * freax/sound/soc/ep93xx-i2s.c
  * EP93xx I2S driver
  *
  * Copyright (C) 2010 Ryan Mallon
@@ -10,12 +10,12 @@
  *   Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
@@ -24,8 +24,8 @@
 #include <sound/initval.h>
 #include <sound/soc.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <freax/platform_data/dma-ep93xx.h>
+#include <freax/soc/cirrus/ep93xx.h>
 
 #include "ep93xx-pcm.h"
 

@@ -28,9 +28,9 @@
  *   1   IRQ (not-used)
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

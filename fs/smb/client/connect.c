@@ -5,33 +5,33 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/ctype.h>
-#include <linux/utsname.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/pagevec.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
-#include <linux/uuid.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/net.h>
+#include <freax/string.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/ctype.h>
+#include <freax/utsname.h>
+#include <freax/mempool.h>
+#include <freax/delay.h>
+#include <freax/completion.h>
+#include <freax/kthread.h>
+#include <freax/pagevec.h>
+#include <freax/freezer.h>
+#include <freax/namei.h>
+#include <freax/uuid.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
-#include <linux/inet.h>
-#include <linux/module.h>
+#include <freax/inet.h>
+#include <freax/module.h>
 #include <keys/user-type.h>
 #include <net/ipv6.h>
-#include <linux/parser.h>
-#include <linux/bvec.h>
+#include <freax/parser.h>
+#include <freax/bvec.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -2288,7 +2288,7 @@ cifs_get_smb_ses(struct TCP_Server_Info *server, struct smb3_fs_context *ctx)
 	if (ctx->domainauto)
 		ses->domainAuto = ctx->domainauto;
 	ses->cred_uid = ctx->cred_uid;
-	ses->linux_uid = ctx->linux_uid;
+	ses->freax_uid = ctx->freax_uid;
 
 	ses->sectype = ctx->sectype;
 	ses->sign = ctx->sign;
@@ -2551,7 +2551,7 @@ cifs_get_tcon(struct cifs_ses *ses, struct smb3_fs_context *ctx)
 		}
 	}
 
-	if (ctx->linux_ext) {
+	if (ctx->freax_ext) {
 		if (ses->server->posix_ext_supported) {
 			tcon->posix_extensions = true;
 			pr_warn_once("SMB3.11 POSIX Extensions are experimental\n");
@@ -2738,8 +2738,8 @@ compare_mount_options(struct super_block *sb, struct cifs_mnt_data *mnt_data)
 	if (new->ctx->rsize && new->ctx->rsize < old->ctx->rsize)
 		return 0;
 
-	if (!uid_eq(old->ctx->linux_uid, new->ctx->linux_uid) ||
-	    !gid_eq(old->ctx->linux_gid, new->ctx->linux_gid))
+	if (!uid_eq(old->ctx->freax_uid, new->ctx->freax_uid) ||
+	    !gid_eq(old->ctx->freax_gid, new->ctx->freax_gid))
 		return 0;
 
 	if (old->ctx->file_mode != new->ctx->file_mode ||
@@ -2947,7 +2947,7 @@ ip_rfc1001_connect(struct TCP_Server_Info *server)
 			      RFC1001_NAME_LEN_WITH_NULL);
 	else
 		rfc1002mangle(req.trailer.session_req.calling_name,
-			      "LINUX_CIFS_CLNT",
+			      "freax_CIFS_CLNT",
 			      RFC1001_NAME_LEN_WITH_NULL);
 
 	/*
@@ -3115,10 +3115,10 @@ void reset_cifs_unix_caps(unsigned int xid, struct cifs_tcon *tcon,
 	 */
 	__u64 saved_cap = le64_to_cpu(tcon->fsUnixInfo.Capability);
 
-	if (ctx && ctx->no_linux_ext) {
+	if (ctx && ctx->no_freax_ext) {
 		tcon->fsUnixInfo.Capability = 0;
 		tcon->unix_ext = 0; /* Unix Extensions disabled */
-		cifs_dbg(FYI, "Linux protocol extensions disabled\n");
+		cifs_dbg(FYI, "freax protocol extensions disabled\n");
 		return;
 	} else if (ctx)
 		tcon->unix_ext = 1; /* Unix Extensions supported */
@@ -3419,7 +3419,7 @@ static int mount_setup_tlink(struct cifs_sb_info *cifs_sb, struct cifs_ses *ses,
 	if (tlink == NULL)
 		return -ENOMEM;
 
-	tlink->tl_uid = ses->linux_uid;
+	tlink->tl_uid = ses->freax_uid;
 	tlink->tl_tcon = tcon;
 	tlink->tl_time = jiffies;
 	set_bit(TCON_LINK_MASTER, &tlink->tl_flags);
@@ -3867,7 +3867,7 @@ cifs_setup_session(const unsigned int xid, struct cifs_ses *ses,
 
 	if (!is_binding) {
 		ses->capabilities = server->capabilities;
-		if (!linuxExtEnabled)
+		if (!freaxExtEnabled)
 			ses->capabilities &= (~server->vals->cap_unix);
 
 		if (ses->auth_key.response) {
@@ -3934,7 +3934,7 @@ cifs_construct_tcon(struct cifs_sb_info *cifs_sb, kuid_t fsuid)
 		return ERR_PTR(-ENOMEM);
 
 	ctx->local_nls = cifs_sb->local_nls;
-	ctx->linux_uid = fsuid;
+	ctx->freax_uid = fsuid;
 	ctx->cred_uid = fsuid;
 	ctx->UNC = master_tcon->tree_name;
 	ctx->retry = master_tcon->retry;
@@ -3945,8 +3945,8 @@ cifs_construct_tcon(struct cifs_sb_info *cifs_sb, kuid_t fsuid)
 	ctx->resilient = master_tcon->use_resilient;
 	ctx->persistent = master_tcon->use_persistent;
 	ctx->handle_timeout = master_tcon->handle_timeout;
-	ctx->no_linux_ext = !master_tcon->unix_ext;
-	ctx->linux_ext = master_tcon->posix_extensions;
+	ctx->no_freax_ext = !master_tcon->unix_ext;
+	ctx->freax_ext = master_tcon->posix_extensions;
 	ctx->sectype = master_tcon->ses->sectype;
 	ctx->sign = master_tcon->ses->sign;
 	ctx->seal = master_tcon->seal;

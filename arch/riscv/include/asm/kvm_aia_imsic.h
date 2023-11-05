@@ -6,7 +6,7 @@
 #ifndef __KVM_RISCV_AIA_IMSIC_H
 #define __KVM_RISCV_AIA_IMSIC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/csr.h>
 
 #define IMSIC_MMIO_PAGE_SHIFT		12

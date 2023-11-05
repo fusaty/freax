@@ -29,11 +29,11 @@
  *  full control over both mixers.
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/isa.h>
+#include <freax/pnp.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/opl3.h>

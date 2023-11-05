@@ -6,11 +6,11 @@
  * Copyright (c) 2003 Eric Wong <eric@yhbt.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/input.h>
+#include <freax/serio.h>
+#include <freax/libps2.h>
+#include <freax/types.h>
 #include "psmouse.h"
 #include "logips2pp.h"
 

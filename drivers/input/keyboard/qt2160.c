@@ -5,15 +5,15 @@
  *  Copyright (C) 2009 Raphael Derosso Pereira <raphaelpereira@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
 
 #define QT2160_VALID_CHIPID  0x11
 

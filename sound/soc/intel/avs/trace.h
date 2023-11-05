@@ -5,8 +5,8 @@
 #if !defined(_TRACE_INTEL_AVS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_INTEL_AVS_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(avs_dsp_core_op,
 

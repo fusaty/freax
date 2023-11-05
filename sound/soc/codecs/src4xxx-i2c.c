@@ -5,10 +5,10 @@
 // Copyright 2021-2022 Deqx Pty Ltd
 // Author: Matt Flax <flatmax@flatmax.com>
 
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "src4xxx.h"
 

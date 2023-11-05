@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/parser.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/key.h>
+#include <freax/keyctl.h>
+#include <freax/parser.h>
+#include <freax/uaccess.h>
 #include <keys/user-type.h>
 #include "internal.h"
 

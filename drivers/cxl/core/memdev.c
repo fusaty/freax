@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2020 Intel Corporation. */
 
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/firmware.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/firmware.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
+#include <freax/pci.h>
 #include <cxlmem.h>
 #include "trace.h"
 #include "core.h"

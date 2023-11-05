@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /* Copyright (C) 2018 ROHM Semiconductors */
 
-#ifndef __LINUX_MFD_BD718XX_H__
-#define __LINUX_MFD_BD718XX_H__
+#ifndef __freax_MFD_BD718XX_H__
+#define __freax_MFD_BD718XX_H__
 
-#include <linux/mfd/rohm-generic.h>
-#include <linux/regmap.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/regmap.h>
 
 enum {
 	BD718XX_BUCK1 = 0,
@@ -310,4 +310,4 @@ enum {
 	BD718XX_PWRBTN_LONG_PRESS_15S
 };
 
-#endif /* __LINUX_MFD_BD718XX_H__ */
+#endif /* __freax_MFD_BD718XX_H__ */

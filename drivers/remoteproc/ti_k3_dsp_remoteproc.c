@@ -6,16 +6,16 @@
  *	Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/omap-mailbox.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/omap-mailbox.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

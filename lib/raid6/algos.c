@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- freax-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -11,13 +11,13 @@
  * Algorithm list and algorithm selection for RAID-6
  */
 
-#include <linux/raid/pq.h>
+#include <freax/raid/pq.h>
 #ifndef __KERNEL__
 #include <sys/mman.h>
 #include <stdio.h>
 #else
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
 /* In .bss so it's zeroed */
 const char raid6_empty_zero_page[PAGE_SIZE] __attribute__((aligned(256)));
 EXPORT_SYMBOL(raid6_empty_zero_page);

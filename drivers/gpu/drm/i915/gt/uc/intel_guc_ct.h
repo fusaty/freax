@@ -6,12 +6,12 @@
 #ifndef _INTEL_GUC_CT_H_
 #define _INTEL_GUC_CT_H_
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/stackdepot.h>
-#include <linux/workqueue.h>
-#include <linux/ktime.h>
-#include <linux/wait.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/stackdepot.h>
+#include <freax/workqueue.h>
+#include <freax/ktime.h>
+#include <freax/wait.h>
 
 #include "intel_guc_fwif.h"
 

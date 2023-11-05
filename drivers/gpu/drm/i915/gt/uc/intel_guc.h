@@ -6,9 +6,9 @@
 #ifndef _INTEL_GUC_H_
 #define _INTEL_GUC_H_
 
-#include <linux/delay.h>
-#include <linux/iosys-map.h>
-#include <linux/xarray.h>
+#include <freax/delay.h>
+#include <freax/iosys-map.h>
+#include <freax/xarray.h>
 
 #include "intel_guc_ct.h"
 #include "intel_guc_fw.h"

@@ -11,14 +11,14 @@
  * legacy nodes instead.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/screen_info.h>
-#include <linux/sysfb.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/platform_data/simplefb.h>
+#include <freax/platform_device.h>
+#include <freax/screen_info.h>
+#include <freax/sysfb.h>
 
 static const char simplefb_resname[] = "BOOTFB";
 static const struct simplefb_format formats[] = SIMPLEFB_FORMATS;
@@ -41,7 +41,7 @@ __init bool sysfb_parse_mode(const struct screen_info *si,
 	 *
 	 *  - DRM format info specifies depth as the number of color
 	 *    bits; including alpha, but not including filler bits.
-	 *  - Linux' EFI platform code computes lfb_depth from the
+	 *  - freax' EFI platform code computes lfb_depth from the
 	 *    individual color channels, including the reserved bits.
 	 *  - VBE 1.1 defines lfb_depth for XRGB1555 as 16, but later
 	 *    versions use 15.

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_XILINX_SPI_H
-#define __LINUX_SPI_XILINX_SPI_H
+#ifndef __freax_SPI_XILINX_SPI_H
+#define __freax_SPI_XILINX_SPI_H
 
 /**
  * struct xspi_platform_data - Platform data of the Xilinx SPI driver
@@ -18,4 +18,4 @@ struct xspi_platform_data {
 	bool force_irq;
 };
 
-#endif /* __LINUX_SPI_XILINX_SPI_H */
+#endif /* __freax_SPI_XILINX_SPI_H */

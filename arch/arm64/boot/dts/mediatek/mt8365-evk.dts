@@ -41,7 +41,7 @@
 		key-volume-up {
 			gpios = <&pio 24 GPIO_ACTIVE_LOW>;
 			label = "volume_up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};

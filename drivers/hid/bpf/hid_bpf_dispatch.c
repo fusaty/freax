@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- *  HID-BPF support for Linux
+ *  HID-BPF support for freax
  *
  *  Copyright (c) 2022 Benjamin Tissoires
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/bitops.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
-#include <linux/hid.h>
-#include <linux/hid_bpf.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/filter.h>
+#include <freax/hid.h>
+#include <freax/hid_bpf.h>
+#include <freax/init.h>
+#include <freax/kfifo.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/workqueue.h>
 #include "hid_bpf_dispatch.h"
 #include "entrypoints/entrypoints.lskel.h"
 

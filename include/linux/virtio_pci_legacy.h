@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VIRTIO_PCI_LEGACY_H
-#define _LINUX_VIRTIO_PCI_LEGACY_H
+#ifndef _freax_VIRTIO_PCI_LEGACY_H
+#define _freax_VIRTIO_PCI_LEGACY_H
 
-#include "linux/mod_devicetable.h"
-#include <linux/pci.h>
-#include <linux/virtio_pci.h>
+#include "freax/mod_devicetable.h"
+#include <freax/pci.h>
+#include <freax/virtio_pci.h>
 
 struct virtio_pci_legacy_device {
 	struct pci_dev *pci_dev;

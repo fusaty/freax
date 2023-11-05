@@ -13,10 +13,10 @@
 #ifndef _DRBD_REQ_H
 #define _DRBD_REQ_H
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/slab.h>
-#include <linux/drbd.h>
+#include <freax/slab.h>
+#include <freax/drbd.h>
 #include "drbd_int.h"
 
 /* The request callbacks will be called in irq context by the IDE drivers,

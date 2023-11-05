@@ -4,7 +4,7 @@
 #ifndef _MLXSW_PCI_HW_H
 #define _MLXSW_PCI_HW_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #include "item.h"
 

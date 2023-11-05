@@ -4,8 +4,8 @@
  *
  * This file is released under the GPL.
  */
-#ifndef _LINUX_DM_BTREE_H
-#define _LINUX_DM_BTREE_H
+#ifndef _freax_DM_BTREE_H
+#define _freax_DM_BTREE_H
 
 #include "dm-block-manager.h"
 
@@ -213,4 +213,4 @@ int dm_btree_cursor_next(struct dm_btree_cursor *c);
 int dm_btree_cursor_skip(struct dm_btree_cursor *c, uint32_t count);
 int dm_btree_cursor_get_value(struct dm_btree_cursor *c, uint64_t *key, void *value_le);
 
-#endif	/* _LINUX_DM_BTREE_H */
+#endif	/* _freax_DM_BTREE_H */

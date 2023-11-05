@@ -9,17 +9,17 @@
  * Author: Hema HK <hemahk@ti.com>
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/gpio/consumer.h>
-#include <linux/workqueue.h>
+#include <freax/devm-helpers.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/mfd/palmas.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/gpio/consumer.h>
+#include <freax/workqueue.h>
 
 #define USB_GPIO_DEBOUNCE_MS	20	/* ms */
 

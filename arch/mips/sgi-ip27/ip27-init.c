@@ -6,13 +6,13 @@
  * Copyright (C) 2000 - 2001 by Kanoj Sarcar (kanoj@sgi.com)
  * Copyright (C) 2000 - 2001 by Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/cpumask.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/cpumask.h>
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>
 #include <asm/io.h>

@@ -8,7 +8,7 @@
  * Copyright (C) 1994-2000 Algorithmics Ltd.
  */
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #include "ieee754int.h"
 

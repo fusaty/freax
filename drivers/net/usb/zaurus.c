@@ -7,15 +7,15 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/mii.h>
+#include <freax/crc32.h>
+#include <freax/usb.h>
+#include <freax/usb/cdc.h>
+#include <freax/usb/usbnet.h>
 
 
 /*
@@ -27,7 +27,7 @@
  * There are non-Zaurus products that use these same protocols too.
  *
  * The annoying thing is that at the same time Sharp was developing
- * that annoying standards-breaking software, the Linux community had
+ * that annoying standards-breaking software, the freax community had
  * a simple "CDC Subset" working reliably on the same SA-1100 hardware.
  * That is, the same functionality but not violating standards.
  *

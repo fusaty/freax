@@ -8,7 +8,7 @@
 #ifndef __NFCMRVL_FW_DNLD_H__
 #define __NFCMRVL_FW_DNLD_H__
 
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 #define NFCMRVL_FW_MAGIC		0x88888888
 

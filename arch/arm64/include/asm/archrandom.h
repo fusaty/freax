@@ -2,10 +2,10 @@
 #ifndef _ASM_ARCHRANDOM_H
 #define _ASM_ARCHRANDOM_H
 
-#include <linux/arm-smccc.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
+#include <freax/arm-smccc.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/irqflags.h>
 #include <asm/cpufeature.h>
 
 #define ARM_SMCCC_TRNG_MIN_VERSION	0x10000UL

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Simple NUMA memory policy for the Linux kernel.
+ * Simple NUMA memory policy for the freax kernel.
  *
  * Copyright 2003,2004 Andi Kleen, SuSE Labs.
  * (C) Copyright 2005 Christoph Lameter, Silicon Graphics, Inc.
@@ -35,7 +35,7 @@
  *                similar to preferred without the special case.
  *
  * default        Allocate on the local node first, or when on a VMA
- *                use the process policy. This is what Linux always did
+ *                use the process policy. This is what freax always did
  *		  in a NUMA aware kernel and still does by, ahem, default.
  *
  * The process policy is applied for most non interrupt memory allocations
@@ -70,42 +70,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mempolicy.h>
-#include <linux/pagewalk.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/nodemask.h>
-#include <linux/cpuset.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/ptrace.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/migrate.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ctype.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/printk.h>
-#include <linux/swapops.h>
+#include <freax/mempolicy.h>
+#include <freax/pagewalk.h>
+#include <freax/highmem.h>
+#include <freax/hugetlb.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/numa_balancing.h>
+#include <freax/sched/task.h>
+#include <freax/nodemask.h>
+#include <freax/cpuset.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/export.h>
+#include <freax/nsproxy.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/compat.h>
+#include <freax/ptrace.h>
+#include <freax/swap.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/migrate.h>
+#include <freax/ksm.h>
+#include <freax/rmap.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/ctype.h>
+#include <freax/mm_inline.h>
+#include <freax/mmu_notifier.h>
+#include <freax/printk.h>
+#include <freax/swapops.h>
 
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

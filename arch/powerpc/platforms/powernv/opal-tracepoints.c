@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/percpu.h>
-#include <linux/jump_label.h>
+#include <freax/percpu.h>
+#include <freax/jump_label.h>
 #include <asm/trace.h>
 
 #ifdef CONFIG_JUMP_LABEL

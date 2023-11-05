@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * bitmap.h - Defines for NTFS kernel bitmap handling.  Part of the Linux-NTFS
+ * bitmap.h - Defines for NTFS kernel bitmap handling.  Part of the freax-NTFS
  *	      project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_BITMAP_H
-#define _LINUX_NTFS_BITMAP_H
+#ifndef _freax_NTFS_BITMAP_H
+#define _freax_NTFS_BITMAP_H
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "types.h"
 
@@ -101,4 +101,4 @@ static inline int ntfs_bitmap_clear_bit(struct inode *vi, const s64 bit)
 
 #endif /* NTFS_RW */
 
-#endif /* defined _LINUX_NTFS_BITMAP_H */
+#endif /* defined _freax_NTFS_BITMAP_H */

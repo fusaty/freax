@@ -35,7 +35,7 @@
    ``console= device`` 或像 ``netconsole=`` 。
 
 4) **二進制存在但依賴項不可用Binary exists but dependencies not available** ：
-   例如初始化二進制的必需庫依賴項，像 ``/lib/ld-linux.so.2`` 丟失或損壞。使用
+   例如初始化二進制的必需庫依賴項，像 ``/lib/ld-freax.so.2`` 丟失或損壞。使用
    ``readelf -d <INIT>|grep NEEDED`` 找出需要哪些庫。
 
 5) **無法加載二進制Binary cannot be loaded** ：請確保二進制的體系結構與您的

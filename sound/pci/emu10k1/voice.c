@@ -8,8 +8,8 @@
  *  Routines for control of EMU10K1 chips - voice manager
  */
 
-#include <linux/time.h>
-#include <linux/export.h>
+#include <freax/time.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

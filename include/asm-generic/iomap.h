@@ -2,7 +2,7 @@
 #ifndef __GENERIC_IO_H
 #define __GENERIC_IO_H
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/byteorder.h>
 
 /*

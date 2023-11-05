@@ -3,14 +3,14 @@
  * Copyright (c) 2010 ASIX Electronics Corporation
  * Copyright (c) 2020 Samsung Electronics
  *
- * ASIX AX88796C SPI Fast Ethernet Linux driver
+ * ASIX AX88796C SPI Fast Ethernet freax driver
  */
 
 #ifndef _AX88796C_MAIN_H
 #define _AX88796C_MAIN_H
 
-#include <linux/netdevice.h>
-#include <linux/mii.h>
+#include <freax/netdevice.h>
+#include <freax/mii.h>
 
 #include "ax88796c_spi.h"
 

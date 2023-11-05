@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PMIC_DA903X_H
-#define __LINUX_PMIC_DA903X_H
+#ifndef __freax_PMIC_DA903X_H
+#define __freax_PMIC_DA903X_H
 
 /* Unified sub device IDs for DA9030/DA9034/DA9035 */
 enum {
@@ -245,4 +245,4 @@ extern int da903x_reads(struct device *dev, int reg, int len, uint8_t *val);
 extern int da903x_update(struct device *dev, int reg, uint8_t val, uint8_t mask);
 extern int da903x_set_bits(struct device *dev, int reg, uint8_t bit_mask);
 extern int da903x_clr_bits(struct device *dev, int reg, uint8_t bit_mask);
-#endif /* __LINUX_PMIC_DA903X_H */
+#endif /* __freax_PMIC_DA903X_H */

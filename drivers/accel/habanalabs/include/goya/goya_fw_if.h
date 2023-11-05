@@ -13,7 +13,7 @@
 #define CPU_BOOT_ADDR		0x7FF8040000ull
 
 #define UBOOT_FW_OFFSET		0x100000		/* 1MB in SRAM */
-#define LINUX_FW_OFFSET		0x800000		/* 8MB in DDR */
+#define freax_FW_OFFSET		0x800000		/* 8MB in DDR */
 
 #define GOYA_PLL_FREQ_LOW		50000000 /* 50 MHz */
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/net/netconsole.c
+ *  freax/drivers/net/netconsole.c
  *
  *  Copyright (C) 2001  Ingo Molnar <mingo@redhat.com>
  *
@@ -24,19 +24,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netpoll.h>
-#include <linux/inet.h>
-#include <linux/configfs.h>
-#include <linux/etherdevice.h>
-#include <linux/utsname.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/console.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/netpoll.h>
+#include <freax/inet.h>
+#include <freax/configfs.h>
+#include <freax/etherdevice.h>
+#include <freax/utsname.h>
 
 MODULE_AUTHOR("Maintainer: Matt Mackall <mpm@selenic.com>");
 MODULE_DESCRIPTION("Console driver for network interfaces");

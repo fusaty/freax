@@ -5,9 +5,9 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/lockdep.h>
-#include <linux/kasan-checks.h>
+#include <freax/compiler.h>
+#include <freax/lockdep.h>
+#include <freax/kasan-checks.h>
 #include <asm/alternative.h>
 #include <asm/cpufeatures.h>
 #include <asm/page.h>

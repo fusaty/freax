@@ -17,7 +17,7 @@
 
 		button {
 			label = "IRQBTN";
-			linux,code = <99>;
+			freax,code = <99>;
 			gpios = <&pioB 18 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};

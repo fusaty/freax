@@ -9,29 +9,29 @@
  * Re-worked by Ben Greear <greearb@candelatech.com>
  * ---
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/rculist.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/if_link.h>
-#include <linux/if_macvlan.h>
-#include <linux/hash.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/rculist.h>
+#include <freax/notifier.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/ethtool.h>
+#include <freax/if_arp.h>
+#include <freax/if_vlan.h>
+#include <freax/if_link.h>
+#include <freax/if_macvlan.h>
+#include <freax/hash.h>
+#include <freax/workqueue.h>
 #include <net/rtnetlink.h>
 #include <net/xfrm.h>
-#include <linux/netpoll.h>
-#include <linux/phy.h>
+#include <freax/netpoll.h>
+#include <freax/phy.h>
 
 #define MACVLAN_HASH_BITS	8
 #define MACVLAN_HASH_SIZE	(1<<MACVLAN_HASH_BITS)

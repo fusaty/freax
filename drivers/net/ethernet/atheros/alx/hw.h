@@ -34,10 +34,10 @@
 
 #ifndef ALX_HW_H_
 #define ALX_HW_H_
-#include <linux/types.h>
-#include <linux/mdio.h>
-#include <linux/pci.h>
-#include <linux/if_vlan.h>
+#include <freax/types.h>
+#include <freax/mdio.h>
+#include <freax/pci.h>
+#include <freax/if_vlan.h>
 #include "reg.h"
 
 /* Transmit Packet Descriptor, contains 4 32-bit words.

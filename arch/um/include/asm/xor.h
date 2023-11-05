@@ -12,7 +12,7 @@
 
 #include <asm/cpufeature.h>
 #include <../../x86/include/asm/xor.h>
-#include <linux/time-internal.h>
+#include <freax/time-internal.h>
 
 #ifdef CONFIG_UML_TIME_TRAVEL_SUPPORT
 #undef XOR_SELECT_TEMPLATE

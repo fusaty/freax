@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2010, Code Aurora Forum. All rights reserved. */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/chipidea.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/io.h>
-#include <linux/reset-controller.h>
-#include <linux/extcon.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/usb/chipidea.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/io.h>
+#include <freax/reset-controller.h>
+#include <freax/extcon.h>
+#include <freax/of.h>
 
 #include "ci.h"
 

@@ -9,10 +9,10 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/leds.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/leds.h>
 
 DEFINE_LED_TRIGGER(ledtrig_flash);
 DEFINE_LED_TRIGGER(ledtrig_torch);

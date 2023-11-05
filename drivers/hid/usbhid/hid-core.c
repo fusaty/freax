@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  USB HID support for Linux
+ *  USB HID support for freax
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -12,27 +12,27 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
-#include <linux/input.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/string.h>
+#include <freax/input.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
+#include <freax/string.h>
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/hid-debug.h>
-#include <linux/hidraw.h>
+#include <freax/hid.h>
+#include <freax/hiddev.h>
+#include <freax/hid-debug.h>
+#include <freax/hidraw.h>
 #include "usbhid.h"
 
 /*

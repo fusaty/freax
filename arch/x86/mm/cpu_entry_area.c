@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/kallsyms.h>
-#include <linux/kcore.h>
-#include <linux/pgtable.h>
+#include <freax/spinlock.h>
+#include <freax/percpu.h>
+#include <freax/kallsyms.h>
+#include <freax/kcore.h>
+#include <freax/pgtable.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/fixmap.h>

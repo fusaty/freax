@@ -4,13 +4,13 @@
  * All Rights Reserved
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/acpi.h>
+#include <freax/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/acpi.h>
 
 /*
  * XLP GPIO has multiple 32 bit registers for each feature where each register

@@ -52,7 +52,7 @@ static inline int generic_atomic_fetch_##op(int i, atomic_t *v)		\
 
 #else
 
-#include <linux/irqflags.h>
+#include <freax/irqflags.h>
 
 #define ATOMIC_OP(op, c_op)						\
 static inline void generic_atomic_##op(int i, atomic_t *v)		\

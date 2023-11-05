@@ -9,7 +9,7 @@
 #include <bpf/libbpf.h>
 #include "test_progs.h"
 #include "testing_helpers.h"
-#include <linux/membarrier.h>
+#include <freax/membarrier.h>
 
 int parse_num_list(const char *s, bool **num_set, int *num_set_len)
 {

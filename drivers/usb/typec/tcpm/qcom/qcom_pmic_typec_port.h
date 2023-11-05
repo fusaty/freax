@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Ltd. All rights reserved.
  */
 #ifndef __QCOM_PMIC_TYPEC_H__
 #define __QCOM_PMIC_TYPEC_H__
 
-#include <linux/platform_device.h>
-#include <linux/usb/tcpm.h>
+#include <freax/platform_device.h>
+#include <freax/usb/tcpm.h>
 
 #define TYPEC_SNK_STATUS_REG				0x06
 #define DETECTED_SNK_TYPE_MASK				GENMASK(6, 0)

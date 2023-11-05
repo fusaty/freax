@@ -20,9 +20,9 @@
 #ifndef __CTUCANFD__
 #define __CTUCANFD__
 
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
-#include <linux/list.h>
+#include <freax/netdevice.h>
+#include <freax/can/dev.h>
+#include <freax/list.h>
 
 enum ctu_can_fd_can_registers;
 

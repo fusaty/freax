@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 extern int pxa25x_clocks_init(void __iomem *regs);
 extern int pxa27x_clocks_init(void __iomem *regs);

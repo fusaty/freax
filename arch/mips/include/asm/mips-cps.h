@@ -7,9 +7,9 @@
 #ifndef __MIPS_ASM_MIPS_CPS_H__
 #define __MIPS_ASM_MIPS_CPS_H__
 
-#include <linux/bitfield.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/io.h>
+#include <freax/types.h>
 
 extern unsigned long __cps_access_bad_size(void)
 	__compiletime_error("Bad size for CPS accessor");

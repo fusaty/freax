@@ -12,12 +12,12 @@
  * to perform transactions on that bus.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/display/drm_dp_aux_bus.h>
 #include <drm/display/drm_dp_helper.h>

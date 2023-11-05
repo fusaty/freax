@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/video/s3c-fb.c
+/* freax/drivers/video/s3c-fb.c
  *
  * Copyright 2008 Openmoko Inc.
  * Copyright 2008-2010 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armfreax.simtec.co.uk/
  *
  * Samsung SoC Framebuffer driver
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/video_s3c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/clk.h>
+#include <freax/fb.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/interrupt.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_data/video_s3c.h>
 
 #include <video/samsung_fimd.h>
 

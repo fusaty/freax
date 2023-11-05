@@ -5,9 +5,9 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/delay.h>
 
 #include "uniperif.h"
 

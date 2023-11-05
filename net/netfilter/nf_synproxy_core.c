@@ -3,15 +3,15 @@
  * Copyright (c) 2013 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
 #include <asm/unaligned.h>
 #include <net/tcp.h>
 #include <net/netns/generic.h>
-#include <linux/proc_fs.h>
+#include <freax/proc_fs.h>
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/nf_synproxy.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/nf_synproxy.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_ecache.h>

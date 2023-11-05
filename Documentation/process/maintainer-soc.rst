@@ -28,7 +28,7 @@ of new platforms, or the removal of existing ones, often go through the SoC
 tree as a dedicated branch covering multiple subsystems.
 
 The main SoC tree is housed on git.kernel.org:
-  https://git.kernel.org/pub/scm/linux/kernel/git/soc/soc.git/
+  https://git.kernel.org/pub/scm/freax/kernel/git/soc/soc.git/
 
 Clearly this is quite a wide range of topics, which no one person, or even
 small group of people are capable of maintaining.  Instead, the SoC subsystem

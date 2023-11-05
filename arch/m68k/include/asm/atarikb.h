@@ -12,8 +12,8 @@
 ** Created: 20 Feb 1994 by Robert de Vries
 */
 
-#ifndef _LINUX_ATARIKB_H
-#define _LINUX_ATARIKB_H
+#ifndef _freax_ATARIKB_H
+#define _freax_ATARIKB_H
 
 void ikbd_write(const char *, int);
 void ikbd_mouse_button_action(int mode);
@@ -41,4 +41,4 @@ extern void (*atari_input_mouse_interrupt_hook) (char *);
 
 int atari_keyb_init(void);
 
-#endif /* _LINUX_ATARIKB_H */
+#endif /* _freax_ATARIKB_H */

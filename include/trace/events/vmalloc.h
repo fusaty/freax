@@ -5,7 +5,7 @@
 #if !defined(_TRACE_VMALLOC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_VMALLOC_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 /**
  * alloc_vmap_area - called when a new vmap allocation occurs

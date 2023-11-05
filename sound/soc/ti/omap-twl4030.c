@@ -16,10 +16,10 @@
  * sdp3430 (Author: Misael Lopez Cruz <misael.lopez@ti.com>)
  */
 
-#include <linux/platform_device.h>
-#include <linux/platform_data/omap-twl4030.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/omap-twl4030.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

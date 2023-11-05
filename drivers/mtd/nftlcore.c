@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for NAND Flash Translation Layer
+ * freax driver for NAND Flash Translation Layer
  *
  * Copyright © 1999 Machine Vision Holdings, Inc.
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
@@ -8,22 +8,22 @@
 
 #define PRERELEASE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/hdreg.h>
+#include <freax/blkdev.h>
 
-#include <linux/kmod.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nftl.h>
-#include <linux/mtd/blktrans.h>
+#include <freax/kmod.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/nftl.h>
+#include <freax/mtd/blktrans.h>
 
 /* maximum number of loops while examining next block, to have a
    chance to detect consistency problems (they should never happen

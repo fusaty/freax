@@ -2,10 +2,10 @@
 
 /* Copyright (C) 2021-2022 Linaro Ltd. */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
 
 #include "ipa.h"
 #include "ipa_version.h"

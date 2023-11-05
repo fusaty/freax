@@ -2,7 +2,7 @@
 /*
  * SDM845 LG G7 (judyln) device tree.
  *
- * Copyright (c) 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, The freax Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -32,7 +32,7 @@
 
 		key-thinq {
 			label = "ThinQ";
-			linux,code = <KEY_ASSISTANT>;
+			freax,code = <KEY_ASSISTANT>;
 			interrupt-parent = <&tlmm>;
 			interrupts = <89 IRQ_TYPE_LEVEL_LOW>;
 		};

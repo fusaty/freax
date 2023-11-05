@@ -9,18 +9,18 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/module.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitmap.h>
-#include <linux/inetdevice.h>
+#include <freax/module.h>
+#include <freax/fips.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
+#include <freax/rtnetlink.h>
+#include <freax/bitmap.h>
+#include <freax/inetdevice.h>
 #include <net/net_namespace.h>
 #include <net/dropreason.h>
 #include <net/cfg80211.h>

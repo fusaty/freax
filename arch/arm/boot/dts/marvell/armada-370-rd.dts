@@ -87,7 +87,7 @@
 				compatible = "gpio-keys";
 				button {
 					label = "Software Button";
-					linux,code = <KEY_POWER>;
+					freax,code = <KEY_POWER>;
 					gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
 				};
 			};
@@ -256,7 +256,7 @@
 				reg = <0 0x800000>;
 			};
 			partition@800000 {
-				label = "Linux";
+				label = "freax";
 				reg = <0x800000 0x800000>;
 			};
 			partition@1000000 {

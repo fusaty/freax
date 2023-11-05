@@ -7,10 +7,10 @@
 #ifndef _QED_HW_H
 #define _QED_HW_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "qed.h"
 #include "qed_dev_api.h"
 

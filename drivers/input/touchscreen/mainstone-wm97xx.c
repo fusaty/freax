@@ -17,16 +17,16 @@
  *       - processors supported:- Intel XScale PXA25x, PXA26x, PXA27x
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/wm97xx.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/wm97xx.h>
 
 #include <sound/pxa2xx-lib.h>
 

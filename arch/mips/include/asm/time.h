@@ -10,10 +10,10 @@
 #ifndef _ASM_TIME_H
 #define _ASM_TIME_H
 
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
+#include <freax/rtc.h>
+#include <freax/spinlock.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
 
 extern spinlock_t rtc_lock;
 

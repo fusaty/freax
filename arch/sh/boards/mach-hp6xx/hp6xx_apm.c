@@ -5,12 +5,12 @@
  * Copyright 2005 (c) Andriy Skulysh <askulysh@gmail.com>
  * Copyright 2008 (c) Kristoffer Ericson <kristoffer.ericson@gmail.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/apm-emulation.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/apm-emulation.h>
+#include <freax/io.h>
 #include <asm/adc.h>
 #include <mach/hp6xx.h>
 

@@ -8,17 +8,17 @@
  * Copyright (C) 2008-2009 Pengutronix <kernel@pengutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/list.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/io.h>
 
 #include "mscan.h"
 

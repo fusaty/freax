@@ -32,15 +32,15 @@
  *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-#include <linux/fs_struct.h>
-#include <linux/file.h>
-#include <linux/falloc.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/namei.h>
+#include <freax/fs_struct.h>
+#include <freax/file.h>
+#include <freax/falloc.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/namei.h>
 
-#include <linux/sunrpc/addr.h>
-#include <linux/nfs_ssc.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/nfs_ssc.h>
 
 #include "idmap.h"
 #include "cache.h"
@@ -169,7 +169,7 @@ static __be32 nfsd_check_obj_isreg(struct svc_fh *fh)
 	/*
 	 * Using err_symlink as our catch-all case may look odd; but
 	 * there's no other obvious error for this case in 4.0, and we
-	 * happen to know that it will cause the linux v4 client to do
+	 * happen to know that it will cause the freax v4 client to do
 	 * the right thing on attempts to open something other than a
 	 * regular file.
 	 */
@@ -503,7 +503,7 @@ do_open_fhandle(struct svc_rqst *rqstp, struct nfsd4_compound_state *cstate, str
 	 * should let it succeed now if possible.
 	 *
 	 * In the case of a CLAIM_FH open, on the other hand, the client
-	 * may be counting on us to enforce permissions (the Linux 4.1
+	 * may be counting on us to enforce permissions (the freax 4.1
 	 * client uses this for normal opens, for example).
 	 */
 	if (open->op_claim_type == NFS4_OPEN_CLAIM_DELEG_CUR_FH)

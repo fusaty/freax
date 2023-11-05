@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2005 Stephen Street / StreetFire Sound Labs
  */
-#ifndef __LINUX_SPI_PXA2XX_SPI_H
-#define __LINUX_SPI_PXA2XX_SPI_H
+#ifndef __freax_SPI_PXA2XX_SPI_H
+#define __freax_SPI_PXA2XX_SPI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
-#include <linux/pxa2xx_ssp.h>
+#include <freax/pxa2xx_ssp.h>
 
 struct dma_chan;
 
@@ -46,10 +46,10 @@ struct pxa2xx_spi_chip {
 
 #if defined(CONFIG_ARCH_PXA) || defined(CONFIG_ARCH_MMP)
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 
 extern void pxa2xx_set_spi_info(unsigned id, struct pxa2xx_spi_controller *info);
 
 #endif
 
-#endif	/* __LINUX_SPI_PXA2XX_SPI_H */
+#endif	/* __freax_SPI_PXA2XX_SPI_H */

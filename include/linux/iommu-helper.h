@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IOMMU_HELPER_H
-#define _LINUX_IOMMU_HELPER_H
+#ifndef _freax_IOMMU_HELPER_H
+#define _freax_IOMMU_HELPER_H
 
-#include <linux/bug.h>
-#include <linux/log2.h>
-#include <linux/math.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/log2.h>
+#include <freax/math.h>
+#include <freax/types.h>
 
 static inline unsigned long iommu_device_max_index(unsigned long size,
 						   unsigned long offset,

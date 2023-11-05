@@ -9,7 +9,7 @@
 #ifndef __DRM_PRIVACY_SCREEN_CONSUMER_H__
 #define __DRM_PRIVACY_SCREEN_CONSUMER_H__
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <drm/drm_connector.h>
 
 struct drm_privacy_screen;

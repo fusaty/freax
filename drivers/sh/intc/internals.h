@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/sh_intc.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/radix-tree.h>
-#include <linux/device.h>
+#include <freax/sh_intc.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/radix-tree.h>
+#include <freax/device.h>
 
 #define _INTC_MK(fn, mode, addr_e, addr_d, width, shift) \
 	((shift) | ((width) << 5) | ((fn) << 9) | ((mode) << 13) | \

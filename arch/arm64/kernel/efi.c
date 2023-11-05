@@ -7,9 +7,9 @@
  * Copyright (C) 2013, 2014 Linaro Ltd.
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/screen_info.h>
 
 #include <asm/efi.h>
 #include <asm/stacktrace.h>

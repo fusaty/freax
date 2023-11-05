@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #include <stdlib.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include "../tests.h"
 
 /* We want to check these symbols in perf script */

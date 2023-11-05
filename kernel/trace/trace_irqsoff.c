@@ -10,11 +10,11 @@
  *  Copyright (C) 2004-2006 Ingo Molnar
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
+#include <freax/kallsyms.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/ftrace.h>
+#include <freax/kprobes.h>
 
 #include "trace.h"
 

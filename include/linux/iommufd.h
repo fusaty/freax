@@ -3,12 +3,12 @@
  * Copyright (C) 2021 Intel Corporation
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#ifndef __LINUX_IOMMUFD_H
-#define __LINUX_IOMMUFD_H
+#ifndef __freax_IOMMUFD_H
+#define __freax_IOMMUFD_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
 
 struct device;
 struct iommufd_device;

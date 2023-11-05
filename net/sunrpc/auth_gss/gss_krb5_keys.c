@@ -55,11 +55,11 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/lcm.h>
+#include <freax/err.h>
+#include <freax/types.h>
+#include <freax/sunrpc/gss_krb5.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/lcm.h>
 #include <crypto/hash.h>
 #include <kunit/visibility.h>
 

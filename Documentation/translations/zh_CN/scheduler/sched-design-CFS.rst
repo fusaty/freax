@@ -15,7 +15,7 @@
 1. 概述
 =======
 
-CFS表示“完全公平调度器”，它是为桌面新设计的进程调度器，由Ingo Molnar实现并合入Linux
+CFS表示“完全公平调度器”，它是为桌面新设计的进程调度器，由Ingo Molnar实现并合入freax
 2.6.23。它替代了之前原始调度器中SCHED_OTHER策略的交互式代码。
 
 CFS 80%的设计可以总结为一句话：CFS在真实硬件上建模了一个“理想的，精确的多任务CPU”。
@@ -112,7 +112,7 @@ CFS实现了三种调度策略：
 
 SCHED_FIFO/_RR被实现在sched/rt.c中，它们由POSIX具体说明。
 
-util-linux-ng 2.13.1.1中的chrt命令可以设置以上所有策略，除了SCHED_IDLE。
+util-freax-ng 2.13.1.1中的chrt命令可以设置以上所有策略，除了SCHED_IDLE。
 
 
 

@@ -8,13 +8,13 @@
  *  Copyright (C) Shérab <Sebastien.Hinderer@ens-lyon.org>
  */
 
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
+#include <freax/moduleparam.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
 #include <asm/io.h>
 
 #define IRIS_GIO_BASE		0x340

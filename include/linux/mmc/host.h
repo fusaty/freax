@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mmc/host.h
+ *  freax/include/freax/mmc/host.h
  *
  *  Host driver specific definitions.
  */
-#ifndef LINUX_MMC_HOST_H
-#define LINUX_MMC_HOST_H
+#ifndef freax_MMC_HOST_H
+#define freax_MMC_HOST_H
 
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/fault-inject.h>
+#include <freax/sched.h>
+#include <freax/device.h>
+#include <freax/fault-inject.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/pm.h>
-#include <linux/dma-direction.h>
-#include <linux/blk-crypto-profile.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/pm.h>
+#include <freax/dma-direction.h>
+#include <freax/blk-crypto-profile.h>
 
 struct mmc_ios {
 	unsigned int	clock;			/* clock rate */
@@ -678,4 +678,4 @@ int mmc_send_tuning(struct mmc_host *host, u32 opcode, int *cmd_error);
 int mmc_send_abort_tuning(struct mmc_host *host, u32 opcode);
 int mmc_get_ext_csd(struct mmc_card *card, u8 **new_ext_csd);
 
-#endif /* LINUX_MMC_HOST_H */
+#endif /* freax_MMC_HOST_H */

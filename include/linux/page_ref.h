@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PAGE_REF_H
-#define _LINUX_PAGE_REF_H
+#ifndef _freax_PAGE_REF_H
+#define _freax_PAGE_REF_H
 
-#include <linux/atomic.h>
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
-#include <linux/tracepoint-defs.h>
+#include <freax/atomic.h>
+#include <freax/mm_types.h>
+#include <freax/page-flags.h>
+#include <freax/tracepoint-defs.h>
 
 DECLARE_TRACEPOINT(page_ref_set);
 DECLARE_TRACEPOINT(page_ref_mod);
@@ -22,7 +22,7 @@ DECLARE_TRACEPOINT(page_ref_unfreeze);
  * functions. But due to include header file issues, that is not
  * feasible. Instead we have to open code the static key functions.
  *
- * See trace_##name##_enabled(void) in include/linux/tracepoint.h
+ * See trace_##name##_enabled(void) in include/freax/tracepoint.h
  */
 #define page_ref_tracepoint_active(t) tracepoint_enabled(t)
 

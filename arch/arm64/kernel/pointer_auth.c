@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/prctl.h>
-#include <linux/random.h>
-#include <linux/sched.h>
+#include <freax/compat.h>
+#include <freax/errno.h>
+#include <freax/prctl.h>
+#include <freax/random.h>
+#include <freax/sched.h>
 #include <asm/cpufeature.h>
 #include <asm/pointer_auth.h>
 

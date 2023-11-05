@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/debug.h
+ * freax/include/freax/lockd/debug.h
  *
  * Debugging stuff.
  *
  * Copyright (C) 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_LOCKD_DEBUG_H
-#define LINUX_LOCKD_DEBUG_H
+#ifndef freax_LOCKD_DEBUG_H
+#define freax_LOCKD_DEBUG_H
 
-#include <linux/sunrpc/debug.h>
+#include <freax/sunrpc/debug.h>
 
 /*
  * Enable lockd debugging.
@@ -37,4 +37,4 @@
 #define NLMDBG_XDR		0x0100
 #define NLMDBG_ALL		0x7fff
 
-#endif /* LINUX_LOCKD_DEBUG_H */
+#endif /* freax_LOCKD_DEBUG_H */

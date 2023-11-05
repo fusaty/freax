@@ -3,8 +3,8 @@
  * Remote Processor Framework
  */
 
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <freax/remoteproc.h>
+#include <freax/slab.h>
 
 #include "remoteproc_internal.h"
 

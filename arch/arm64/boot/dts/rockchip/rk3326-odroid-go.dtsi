@@ -35,82 +35,82 @@
 		button-sw1 {
 			gpios = <&gpio1 RK_PB4 GPIO_ACTIVE_LOW>;
 			label = "DPAD-UP";
-			linux,code = <BTN_DPAD_UP>;
+			freax,code = <BTN_DPAD_UP>;
 		};
 		button-sw2 {
 			gpios = <&gpio1 RK_PB5 GPIO_ACTIVE_LOW>;
 			label = "DPAD-DOWN";
-			linux,code = <BTN_DPAD_DOWN>;
+			freax,code = <BTN_DPAD_DOWN>;
 		};
 		button-sw3 {
 			gpios = <&gpio1 RK_PB6 GPIO_ACTIVE_LOW>;
 			label = "DPAD-LEFT";
-			linux,code = <BTN_DPAD_LEFT>;
+			freax,code = <BTN_DPAD_LEFT>;
 		};
 		button-sw4 {
 			gpios = <&gpio1 RK_PB7 GPIO_ACTIVE_LOW>;
 			label = "DPAD-RIGHT";
-			linux,code = <BTN_DPAD_RIGHT>;
+			freax,code = <BTN_DPAD_RIGHT>;
 		};
 		button-sw5 {
 			gpios = <&gpio1 RK_PA2 GPIO_ACTIVE_LOW>;
 			label = "BTN-A";
-			linux,code = <BTN_EAST>;
+			freax,code = <BTN_EAST>;
 		};
 		button-sw6 {
 			gpios = <&gpio1 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "BTN-B";
-			linux,code = <BTN_SOUTH>;
+			freax,code = <BTN_SOUTH>;
 		};
 		button-sw7 {
 			gpios = <&gpio1 RK_PA6 GPIO_ACTIVE_LOW>;
 			label = "BTN-Y";
-			linux,code = <BTN_WEST>;
+			freax,code = <BTN_WEST>;
 		};
 		button-sw8 {
 			gpios = <&gpio1 RK_PA7 GPIO_ACTIVE_LOW>;
 			label = "BTN-X";
-			linux,code = <BTN_NORTH>;
+			freax,code = <BTN_NORTH>;
 		};
 		btn_f1: button-sw9 {
 			gpios = <&gpio2 RK_PA0 GPIO_ACTIVE_LOW>;
 			label = "F1";
-			linux,code = <BTN_TRIGGER_HAPPY1>;
+			freax,code = <BTN_TRIGGER_HAPPY1>;
 		};
 		btn_f2: button-sw10 {
 			gpios = <&gpio2 RK_PA1 GPIO_ACTIVE_LOW>;
 			label = "F2";
-			linux,code = <BTN_TRIGGER_HAPPY2>;
+			freax,code = <BTN_TRIGGER_HAPPY2>;
 		};
 		btn_f3: button-sw11 {
 			gpios = <&gpio2 RK_PA2 GPIO_ACTIVE_LOW>;
 			label = "F3";
-			linux,code = <BTN_TRIGGER_HAPPY3>;
+			freax,code = <BTN_TRIGGER_HAPPY3>;
 		};
 		btn_f4: button-sw12 {
 			gpios = <&gpio2 RK_PA3 GPIO_ACTIVE_LOW>;
 			label = "F4";
-			linux,code = <BTN_TRIGGER_HAPPY4>;
+			freax,code = <BTN_TRIGGER_HAPPY4>;
 		};
 		btn_f5: button-sw13 {
 			gpios = <&gpio2 RK_PA4 GPIO_ACTIVE_LOW>;
 			label = "F5";
-			linux,code = <BTN_TRIGGER_HAPPY5>;
+			freax,code = <BTN_TRIGGER_HAPPY5>;
 		};
 		btn_f6: button-sw14 {
 			gpios = <&gpio2 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "F6";
-			linux,code = <BTN_TRIGGER_HAPPY6>;
+			freax,code = <BTN_TRIGGER_HAPPY6>;
 		};
 		button-sw15 {
 			gpios = <&gpio2 RK_PA6 GPIO_ACTIVE_LOW>;
 			label = "TOP-LEFT";
-			linux,code = <BTN_TL>;
+			freax,code = <BTN_TL>;
 		};
 		button-sw16 {
 			gpios = <&gpio2 RK_PA7 GPIO_ACTIVE_LOW>;
 			label = "TOP-RIGHT";
-			linux,code = <BTN_TR>;
+			freax,code = <BTN_TR>;
 		};
 	};
 
@@ -134,7 +134,7 @@
 		blue_led: led-2 {
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			max-brightness = <255>;
 			pwms = <&pwm3 0 25000 0>;
 		};

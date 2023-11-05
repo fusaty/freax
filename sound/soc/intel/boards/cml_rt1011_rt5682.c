@@ -5,13 +5,13 @@
  * Intel Cometlake I2S Machine driver for RT1011 + RT5682 codec
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

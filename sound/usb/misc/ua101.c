@@ -4,11 +4,11 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/audio.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

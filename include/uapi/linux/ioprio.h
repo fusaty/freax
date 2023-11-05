@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_IOPRIO_H
-#define _UAPI_LINUX_IOPRIO_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_IOPRIO_H
+#define _UAPI_freax_IOPRIO_H
 
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
 
 /*
  * Gives us 8 prio classes with 13-bits of data for each class
@@ -124,4 +124,4 @@ static __always_inline __u16 ioprio_value(int prioclass, int priolevel,
 #define IOPRIO_PRIO_VALUE_HINT(prioclass, priolevel, priohint)	\
 	ioprio_value(prioclass, priolevel, priohint)
 
-#endif /* _UAPI_LINUX_IOPRIO_H */
+#endif /* _UAPI_freax_IOPRIO_H */

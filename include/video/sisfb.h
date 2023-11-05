@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2001-2005 by Thomas Winischhofer, Vienna, Austria.
  */
-#ifndef _LINUX_SISFB_H_
-#define _LINUX_SISFB_H_
+#ifndef _freax_SISFB_H_
+#define _freax_SISFB_H_
 
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <uapi/video/sisfb.h>
 
 #define	UNKNOWN_VGA  0

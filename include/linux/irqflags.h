@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/irqflags.h
+ * include/freax/irqflags.h
  *
  * IRQ flags tracing: follow the state of the hardirq and softirq flags and
  * provide callbacks for transitions between ON and OFF states.
@@ -9,11 +9,11 @@
  * wrapped versions of the local_irq_*() APIs, based on the
  * raw_local_irq_*() macros from the lowlevel headers.
  */
-#ifndef _LINUX_TRACE_IRQFLAGS_H
-#define _LINUX_TRACE_IRQFLAGS_H
+#ifndef _freax_TRACE_IRQFLAGS_H
+#define _freax_TRACE_IRQFLAGS_H
 
-#include <linux/typecheck.h>
-#include <linux/cleanup.h>
+#include <freax/typecheck.h>
+#include <freax/cleanup.h>
 #include <asm/irqflags.h>
 #include <asm/percpu.h>
 

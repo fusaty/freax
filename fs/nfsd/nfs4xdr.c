@@ -33,18 +33,18 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/utsname.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/xattr.h>
-#include <linux/vmalloc.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/namei.h>
+#include <freax/statfs.h>
+#include <freax/utsname.h>
+#include <freax/pagemap.h>
+#include <freax/sunrpc/svcauth_gss.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/xattr.h>
+#include <freax/vmalloc.h>
 
-#include <uapi/linux/xattr.h>
+#include <uapi/freax/xattr.h>
 
 #include "idmap.h"
 #include "acl.h"
@@ -59,7 +59,7 @@
 #include "trace.h"
 
 #ifdef CONFIG_NFSD_V4_SECURITY_LABEL
-#include <linux/security.h>
+#include <freax/security.h>
 #endif
 
 
@@ -475,7 +475,7 @@ nfsd4_decode_fattr4(struct nfsd4_compoundargs *argp, u32 *bmval, u32 bmlen,
 	if (bmval[1] & FATTR4_WORD1_TIME_CREATE) {
 		struct timespec64 ts;
 
-		/* No Linux filesystem supports setting this attribute. */
+		/* No freax filesystem supports setting this attribute. */
 		bmval[1] &= ~FATTR4_WORD1_TIME_CREATE;
 		status = nfsd4_decode_nfstime4(argp, &ts);
 		if (status)

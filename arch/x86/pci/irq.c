@@ -5,18 +5,18 @@
  *	(c) 1999--2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
 #include <asm/io_apic.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
+#include <freax/irq.h>
+#include <freax/acpi.h>
 
 #include <asm/i8259.h>
 #include <asm/pc-conf-reg.h>

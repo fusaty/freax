@@ -21,11 +21,11 @@
  *
  *
  */
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <drm/amdgpu_drm.h>
 #include "amdgpu.h"
 #include "atom.h"

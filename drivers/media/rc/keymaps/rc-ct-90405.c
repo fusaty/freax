@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 static struct rc_map_table ct_90405[] = {
 	{ 0x4014, KEY_SWITCHVIDEOMODE },

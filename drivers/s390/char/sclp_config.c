@@ -6,13 +6,13 @@
 #define KMSG_COMPONENT "sclp_config"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/cpu.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
 #include <asm/smp.h>
 
 #include "sclp.h"

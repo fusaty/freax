@@ -8,15 +8,15 @@
  * that made this driver possible.
  */
 
-#include <linux/blk-mq.h>
-#include <linux/idr.h>
-#include <linux/hdreg.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/memstick.h>
-#include <linux/module.h>
+#include <freax/blk-mq.h>
+#include <freax/idr.h>
+#include <freax/hdreg.h>
+#include <freax/kthread.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/memstick.h>
+#include <freax/module.h>
 
 #define DRIVER_NAME "mspro_block"
 

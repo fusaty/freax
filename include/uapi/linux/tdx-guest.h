@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Userspace interface for TDX guest driver
  *
  * Copyright (C) 2022 Intel Corporation
  */
 
-#ifndef _UAPI_LINUX_TDX_GUEST_H_
-#define _UAPI_LINUX_TDX_GUEST_H_
+#ifndef _UAPI_freax_TDX_GUEST_H_
+#define _UAPI_freax_TDX_GUEST_H_
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /* Length of the REPORTDATA used in TDG.MR.REPORT TDCALL */
 #define TDX_REPORTDATA_LEN              64
@@ -39,4 +39,4 @@ struct tdx_report_req {
  */
 #define TDX_CMD_GET_REPORT0              _IOWR('T', 1, struct tdx_report_req)
 
-#endif /* _UAPI_LINUX_TDX_GUEST_H_ */
+#endif /* _UAPI_freax_TDX_GUEST_H_ */

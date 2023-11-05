@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/xattr.h>
+#include <freax/slab.h>
 #include "xattr.h"
-#include <linux/security.h>
-#include <linux/uaccess.h>
+#include <freax/security.h>
+#include <freax/uaccess.h>
 
 static int
 security_get(const struct xattr_handler *handler, struct dentry *unused,
@@ -69,7 +69,7 @@ int reiserfs_security_init(struct inode *dir, struct inode *inode,
 	sec->value = NULL;
 	sec->length = 0;
 
-	/* Don't add selinux attributes on xattrs - they'll never get used */
+	/* Don't add sefreax attributes on xattrs - they'll never get used */
 	if (IS_PRIVATE(dir))
 		return 0;
 

@@ -9,26 +9,26 @@
  *  Ryan S. Arnold <rsa@us.ibm.com>
  */
 
-#include <linux/console.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kbd_kern.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/major.h>
-#include <linux/atomic.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/serial_core.h>
+#include <freax/console.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/kbd_kern.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/list.h>
+#include <freax/major.h>
+#include <freax/atomic.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/freezer.h>
+#include <freax/slab.h>
+#include <freax/serial_core.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "hvc_console.h"
 

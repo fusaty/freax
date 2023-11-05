@@ -5,11 +5,11 @@
  * Maintained at www.Open-FCoE.org
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
+#include <freax/crc32.h>
+#include <freax/module.h>
 
 #include <scsi/libfc.h>
 

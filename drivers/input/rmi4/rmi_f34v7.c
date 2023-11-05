@@ -6,13 +6,13 @@
  * Copyright (C) 2012 Scott Lin <scott.lin@tw.synaptics.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/rmi.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/rmi.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
 #include <asm/unaligned.h>
 
 #include "rmi_driver.h"

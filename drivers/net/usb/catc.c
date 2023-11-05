@@ -20,22 +20,22 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/crc32.h>
+#include <freax/bitops.h>
+#include <freax/gfp.h>
+#include <freax/uaccess.h>
 
 #undef DEBUG
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
 /*
  * Version information.

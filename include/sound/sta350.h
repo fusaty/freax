@@ -5,8 +5,8 @@
  * Copyright: 2014 Raumfeld GmbH
  * Author: Sven Brandau <info@brandau.biz>
  */
-#ifndef __LINUX_SND__STA350_H
-#define __LINUX_SND__STA350_H
+#ifndef __freax_SND__STA350_H
+#define __freax_SND__STA350_H
 
 #define STA350_OCFG_2CH		0
 #define STA350_OCFG_2_1CH	1
@@ -50,4 +50,4 @@ struct sta350_platform_data {
 	unsigned int powerdown_master_vol:1;
 };
 
-#endif /* __LINUX_SND__STA350_H */
+#endif /* __freax_SND__STA350_H */

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5659.h -- Platform data for RT5659
+ * freax/sound/rt5659.h -- Platform data for RT5659
  *
  * Copyright 2013 Realtek Microelectronics
  */
 
-#ifndef __LINUX_SND_RT5659_H
-#define __LINUX_SND_RT5659_H
+#ifndef __freax_SND_RT5659_H
+#define __freax_SND_RT5659_H
 
 enum rt5659_dmic1_data_pin {
 	RT5659_DMIC1_NULL,

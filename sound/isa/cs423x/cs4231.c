@@ -6,12 +6,12 @@
  *  Tugrul Galatali <galatalt@stuy.edu>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/isa.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/wss.h>
 #include <sound/mpu401.h>

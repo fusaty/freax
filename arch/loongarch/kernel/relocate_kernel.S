@@ -5,7 +5,7 @@
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/kexec.h>
+#include <freax/kexec.h>
 
 #include <asm/asm.h>
 #include <asm/asmmacro.h>

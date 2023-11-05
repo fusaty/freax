@@ -6,12 +6,12 @@
  *
  * 2009 (c) MontaVista Software, Inc.
  */
-#include <linux/clk-provider.h>
-#include <linux/clk/davinci.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip/irq-davinci-cp-intc.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/davinci.h>
+#include <freax/gpio.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irqchip/irq-davinci-cp-intc.h>
 
 #include <clocksource/timer-davinci.h>
 

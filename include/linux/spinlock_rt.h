@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#ifndef __LINUX_SPINLOCK_RT_H
-#define __LINUX_SPINLOCK_RT_H
+#ifndef __freax_SPINLOCK_RT_H
+#define __freax_SPINLOCK_RT_H
 
-#ifndef __LINUX_INSIDE_SPINLOCK_H
+#ifndef __freax_INSIDE_SPINLOCK_H
 #error Do not include directly. Use spinlock.h
 #endif
 
@@ -154,6 +154,6 @@ static inline int spin_is_locked(spinlock_t *lock)
 
 #define assert_spin_locked(lock) BUG_ON(!spin_is_locked(lock))
 
-#include <linux/rwlock_rt.h>
+#include <freax/rwlock_rt.h>
 
 #endif

@@ -4,9 +4,9 @@
  * Copyright (C) Sunplus Tech / Tibbo Tech.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "sppctl.h"
 

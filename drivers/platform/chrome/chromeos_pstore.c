@@ -3,11 +3,11 @@
 //
 // Copyright (C) 2013 Google, Inc.
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pstore_ram.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pstore_ram.h>
 
 static const struct dmi_system_id chromeos_pstore_dmi_table[] __initconst = {
 	{

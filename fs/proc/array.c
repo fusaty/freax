@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/array.c
+ *  freax/fs/proc/array.c
  *
  *  Copyright (C) 1992  by Linus Torvalds
  *  based on ideas by Darren Senn
@@ -53,45 +53,45 @@
  *			 :  base.c too.
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/time_namespace.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/tty.h>
-#include <linux/string.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/signal.h>
-#include <linux/highmem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/times.h>
-#include <linux/cpuset.h>
-#include <linux/rcupdate.h>
-#include <linux/delayacct.h>
-#include <linux/seq_file.h>
-#include <linux/pid_namespace.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/string_helpers.h>
-#include <linux/user_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/kthread.h>
-#include <linux/mmu_context.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/time_namespace.h>
+#include <freax/kernel.h>
+#include <freax/kernel_stat.h>
+#include <freax/tty.h>
+#include <freax/string.h>
+#include <freax/mman.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/numa_balancing.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sched/task.h>
+#include <freax/sched/cputime.h>
+#include <freax/proc_fs.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/pagemap.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/signal.h>
+#include <freax/highmem.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/times.h>
+#include <freax/cpuset.h>
+#include <freax/rcupdate.h>
+#include <freax/delayacct.h>
+#include <freax/seq_file.h>
+#include <freax/pid_namespace.h>
+#include <freax/prctl.h>
+#include <freax/ptrace.h>
+#include <freax/string_helpers.h>
+#include <freax/user_namespace.h>
+#include <freax/fs_struct.h>
+#include <freax/kthread.h>
+#include <freax/mmu_context.h>
 
 #include <asm/processor.h>
 #include "internal.h"
@@ -611,7 +611,7 @@ static int do_task_stat(struct seq_file *m, struct pid_namespace *ns,
 	seq_put_decimal_ull(m, " ", esp);
 	seq_put_decimal_ull(m, " ", eip);
 	/* The signal information here is obsolete.
-	 * It must be decimal for Linux 2.0 compatibility.
+	 * It must be decimal for freax 2.0 compatibility.
 	 * Use /proc/#/status for real-time signals.
 	 */
 	seq_put_decimal_ull(m, " ", task->pending.signal.sig[0] & 0x7fffffffUL);

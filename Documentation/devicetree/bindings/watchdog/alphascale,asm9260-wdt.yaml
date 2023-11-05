@@ -10,7 +10,7 @@ allOf:
   - $ref: watchdog.yaml#
 
 maintainers:
-  - Oleksij Rempel <linux@rempel-privat.de>
+  - Oleksij Rempel <freax@rempel-privat.de>
 
 properties:
   compatible:

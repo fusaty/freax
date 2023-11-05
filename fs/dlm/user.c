@@ -3,18 +3,18 @@
  * Copyright (C) 2006-2010 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/dlm.h>
-#include <linux/dlm_device.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <freax/miscdevice.h>
+#include <freax/init.h>
+#include <freax/wait.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/signal.h>
+#include <freax/spinlock.h>
+#include <freax/dlm.h>
+#include <freax/dlm_device.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
 
 #include <trace/events/dlm.h>
 

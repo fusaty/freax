@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MODULELOADER_H
-#define _LINUX_MODULELOADER_H
+#ifndef _freax_MODULELOADER_H
+#define _freax_MODULELOADER_H
 /* The stuff needed for archs to support modules. */
 
-#include <linux/module.h>
-#include <linux/elf.h>
+#include <freax/module.h>
+#include <freax/elf.h>
 
 /* These may be implemented by architectures that need to hook into the
  * module loader code.  Architectures that don't need to do anything special
@@ -123,7 +123,7 @@ void module_arch_freeing_init(struct module *mod);
 
 #if (defined(CONFIG_KASAN_GENERIC) || defined(CONFIG_KASAN_SW_TAGS)) && \
 		!defined(CONFIG_KASAN_VMALLOC)
-#include <linux/kasan.h>
+#include <freax/kasan.h>
 #define MODULE_ALIGN (PAGE_SIZE << KASAN_SHADOW_SCALE_SHIFT)
 #else
 #define MODULE_ALIGN PAGE_SIZE

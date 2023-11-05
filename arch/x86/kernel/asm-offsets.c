@@ -6,13 +6,13 @@
  */
 #define COMPILE_OFFSETS
 
-#include <linux/crypto.h>
+#include <freax/crypto.h>
 #include <crypto/aria.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/hardirq.h>
-#include <linux/suspend.h>
-#include <linux/kbuild.h>
+#include <freax/sched.h>
+#include <freax/stddef.h>
+#include <freax/hardirq.h>
+#include <freax/suspend.h>
+#include <freax/kbuild.h>
 #include <asm/processor.h>
 #include <asm/thread_info.h>
 #include <asm/sigframe.h>

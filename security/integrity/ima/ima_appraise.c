@@ -5,17 +5,17 @@
  * Author:
  * Mimi Zohar <zohar@us.ibm.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/magic.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
-#include <linux/fsverity.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/xattr.h>
+#include <freax/magic.h>
+#include <freax/ima.h>
+#include <freax/evm.h>
+#include <freax/fsverity.h>
 #include <keys/system_keyring.h>
-#include <uapi/linux/fsverity.h>
+#include <uapi/freax/fsverity.h>
 
 #include "ima.h"
 

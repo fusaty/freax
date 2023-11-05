@@ -8,9 +8,9 @@
  * mmconfig.c - Low-level direct PCI config space access via MMCONFIG
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/rcupdate.h>
 #include <asm/e820/api.h>
 #include <asm/pci_x86.h>
 

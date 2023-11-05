@@ -9,28 +9,28 @@
  * This driver is developed for Axi CAN IP and for Zynq CANPS Controller.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/errno.h>
+#include <freax/ethtool.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/can/dev.h>
+#include <freax/can/error.h>
+#include <freax/phy/phy.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #define DRIVER_NAME	"xilinx_can"
 

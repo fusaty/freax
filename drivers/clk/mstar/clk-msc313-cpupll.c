@@ -3,11 +3,11 @@
  * Copyright (C) 2019 Daniel Palmer <daniel@thingy.jp>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 /*
  * This IP is not documented outside of the messy vendor driver.

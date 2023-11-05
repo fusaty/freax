@@ -10,14 +10,14 @@
  * (alarms, trickle charger, different control registers) are unavailable.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/spi/spi.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 
 #define DS1390_REG_100THS		0x00
 #define DS1390_REG_SECONDS		0x01

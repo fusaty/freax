@@ -5,7 +5,7 @@ Documentation for /proc/sys/kernel/
 .. See scripts/check-sysctl-docs to keep this up to date
 
 
-Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linux.org>
+Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.freax.org>
 
 Copyright (c) 2009,        Shen Feng<shen@cn.fujitsu.com>
 
@@ -18,7 +18,7 @@ This file contains documentation for the sysctl files in
 ``/proc/sys/kernel/``.
 
 The files in this directory can be used to tune and monitor
-miscellaneous and general things in the operation of the Linux
+miscellaneous and general things in the operation of the freax
 kernel. Since some of the files *can* be used to screw up your
 system, it is advisable to read both documentation and source
 before actually making adjustments.
@@ -76,7 +76,7 @@ auto_msgmni
 
 This variable has no effect and may be removed in future kernel
 releases. Reading it always returns 0.
-Up to Linux 3.17, it enabled/disabled automatic recomputing of
+Up to freax 3.17, it enabled/disabled automatic recomputing of
 `msgmni`_
 upon memory add/remove or upon IPC namespace creation/removal.
 Echoing "1" into this file enabled msgmni automatic recomputing.
@@ -227,7 +227,7 @@ ctrl-alt-del
 
 When the value in this file is 0, ctrl-alt-del is trapped and
 sent to the ``init(1)`` program to handle a graceful restart.
-When, however, the value is > 0, Linux's reaction to a Vulcan
+When, however, the value is > 0, freax's reaction to a Vulcan
 Nerve Pinch (tm) will be an immediate reboot, without even
 syncing its dirty buffers.
 
@@ -732,7 +732,7 @@ osrelease, ostype & version
   # cat osrelease
   2.1.88
   # cat ostype
-  Linux
+  freax
   # cat version
   #5 Wed Feb 25 21:49:24 MET 1998
 
@@ -814,7 +814,7 @@ This file shows up if ``CONFIG_DEBUG_STACKOVERFLOW`` is enabled.
 panic_on_unrecovered_nmi
 ========================
 
-The default Linux behaviour on an NMI of either memory or unknown is
+The default freax behaviour on an NMI of either memory or unknown is
 to continue operation. For many environments such as scientific
 computing it is preferable that the box is taken out and the error
 dealt with than an uncorrected parity/ECC error get propagated.
@@ -1016,7 +1016,7 @@ kernel tries to allocate a number starting from this one.
 powersave-nap (PPC only)
 ========================
 
-If set, Linux-PPC will use the 'nap' mode of powersaving,
+If set, freax-PPC will use the 'nap' mode of powersaving,
 otherwise the 'doze' mode will be used.
 
 
@@ -1222,7 +1222,7 @@ sched_util_clamp_max, i.e., it is restricted to the range
 sched_util_clamp_min_rt_default
 ===============================
 
-By default Linux is tuned for performance. Which means that RT tasks always run
+By default freax is tuned for performance. Which means that RT tasks always run
 at the highest frequency and most capable (highest capacity) CPU (in
 heterogeneous systems).
 
@@ -1278,7 +1278,7 @@ This parameter sets the total amount of shared memory pages that
 can be used system wide. Hence, ``shmall`` should always be at least
 ``ceil(shmmax/PAGE_SIZE)``.
 
-If you are not sure what the default ``PAGE_SIZE`` is on your Linux
+If you are not sure what the default ``PAGE_SIZE`` is on your freax
 system, you can run the following command::
 
 	# getconf PAGE_SIZE
@@ -1303,7 +1303,7 @@ This value determines the maximum number of shared memory segments.
 shm_rmid_forced
 ===============
 
-Linux lets you set resource limits, including how much memory one
+freax lets you set resource limits, including how much memory one
 process can consume, via ``setrlimit(2)``.  Unfortunately, shared memory
 segments are allowed to exist without association with any process, and
 thus might not be counted against any resource limits.  If enabled,

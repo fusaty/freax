@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* ZD1211 USB-WLAN driver for Linux
+/* ZD1211 USB-WLAN driver for freax
  *
  * Copyright (C) 2005-2007 Ulrich Kunitz <kune@deine-taler.de>
  * Copyright (C) 2006-2007 Daniel Drake <dsd@gentoo.org>
@@ -7,11 +7,11 @@
  * Copyright (C) 2007-2008 Luis R. Rodriguez <mcgrof@winlab.rutgers.edu>
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/jiffies.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/jiffies.h>
 #include <net/ieee80211_radiotap.h>
 
 #include "zd_def.h"

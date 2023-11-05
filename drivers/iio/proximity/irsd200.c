@@ -6,19 +6,19 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/types.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/types.h>
 
 #define IRS_DRV_NAME "irsd200"
 

@@ -3,17 +3,17 @@
  * Intel 8254 Programmable Interval Timer
  * Copyright (C) William Breathitt Gray
  */
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/i8254.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/counter.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/i8254.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
 
 #include <asm/unaligned.h>
 

@@ -3,9 +3,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "mt7921.h"
 #include "../mt76_connac2_mac.h"

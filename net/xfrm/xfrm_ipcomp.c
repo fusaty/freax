@@ -11,15 +11,15 @@
  *   - Adaptive compression.
  */
 
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/vmalloc.h>
+#include <freax/crypto.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/vmalloc.h>
 #include <net/ip.h>
 #include <net/ipcomp.h>
 #include <net/xfrm.h>

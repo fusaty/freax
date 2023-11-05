@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/errno.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/errno.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #define REGVAL_MASK		GENMASK(15, 0)
 #define REGNUM_C22_MASK		GENMASK(4, 0)

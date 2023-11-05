@@ -3,15 +3,15 @@
  */
 /* Reiserfs block (de)allocator, bitmap-based. */
 
-#include <linux/time.h>
+#include <freax/time.h>
 #include "reiserfs.h"
-#include <linux/errno.h>
-#include <linux/buffer_head.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
+#include <freax/errno.h>
+#include <freax/buffer_head.h>
+#include <freax/kernel.h>
+#include <freax/pagemap.h>
+#include <freax/vmalloc.h>
+#include <freax/quotaops.h>
+#include <freax/seq_file.h>
 
 #define PREALLOCATION_SIZE 9
 

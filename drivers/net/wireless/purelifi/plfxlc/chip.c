@@ -3,8 +3,8 @@
  * Copyright (c) 2021 pureLiFi
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
 
 #include "chip.h"
 #include "mac.h"

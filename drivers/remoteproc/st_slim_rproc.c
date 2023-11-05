@@ -7,14 +7,14 @@
  * Author: Peter Griffin <peter.griffin@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/remoteproc/st_slim_rproc.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc.h>
+#include <freax/remoteproc/st_slim_rproc.h>
 #include "remoteproc_internal.h"
 
 /* SLIM core registers */

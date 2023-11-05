@@ -6,9 +6,9 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/mfd/cs42l43.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
 
 #ifndef CS42L43_CORE_INT_H
 #define CS42L43_CORE_INT_H

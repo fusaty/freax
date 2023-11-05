@@ -6,9 +6,9 @@
 #ifndef IOSM_IPC_PCIE_H
 #define IOSM_IPC_PCIE_H
 
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
 
 #include "iosm_ipc_irq.h"
 

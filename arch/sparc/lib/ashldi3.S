@@ -6,8 +6,8 @@
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 
 	.text
 ENTRY(__ashldi3)

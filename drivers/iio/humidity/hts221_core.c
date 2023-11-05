@@ -7,15 +7,15 @@
  * Lorenzo Bianconi <lorenzo.bianconi@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/iio/sysfs.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/iio/sysfs.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/bitfield.h>
 
 #include "hts221.h"
 

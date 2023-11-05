@@ -9,8 +9,8 @@
 #ifndef __MODULE_H
 #define __MODULE_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/device.h>
 
 struct gb_module {
 	struct device dev;

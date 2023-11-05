@@ -22,10 +22,10 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/ssb/ssb.h>
-#include <linux/bcma/bcma.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/ssb/ssb.h>
+#include <freax/bcma/bcma.h>
 #include <bcm47xx.h>
 
 int pcibios_map_irq(const struct pci_dev *dev, u8 slot, u8 pin)

@@ -51,7 +51,7 @@ endif
 
 ifdef cross_compiling
   ifeq ($(CROSS_COMPILE),)
-    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-linux-  $(tool-archpref)-linux-gnu-  $(tool-archpref)-unknown-linux-gnu-)
+    CROSS_COMPILE := $(call cc-cross-prefix, $(tool-archpref)-freax-  $(tool-archpref)-freax-gnu-  $(tool-archpref)-unknown-freax-gnu-)
   endif
 endif
 
@@ -66,22 +66,22 @@ cflags-y += $(call cc-option, -mno-check-zero-division)
 
 ifdef CONFIG_32BIT
 ld-emul			= $(32bit-emul)
-vmlinux-32		= vmlinux
-vmlinux-64		= vmlinux.64
+vmfreax-32		= vmfreax
+vmfreax-64		= vmfreax.64
 
 cflags-y		+= -mabi=32
 endif
 
 ifdef CONFIG_64BIT
 ld-emul			= $(64bit-emul)
-vmlinux-32		= vmlinux.32
-vmlinux-64		= vmlinux
+vmfreax-32		= vmfreax.32
+vmfreax-64		= vmfreax
 
 cflags-y		+= -mabi=64
 endif
 
-all-$(CONFIG_BOOT_ELF32)	:= $(vmlinux-32)
-all-$(CONFIG_BOOT_ELF64)	:= $(vmlinux-64)
+all-$(CONFIG_BOOT_ELF32)	:= $(vmfreax-32)
+all-$(CONFIG_BOOT_ELF64)	:= $(vmfreax-64)
 all-$(CONFIG_SYS_SUPPORTS_ZBOOT)+= vmlinuz
 
 #
@@ -96,12 +96,12 @@ all-$(CONFIG_SYS_SUPPORTS_ZBOOT)+= vmlinuz
 #
 cflags-y			+= -G 0 -mno-abicalls -fno-pic -pipe
 cflags-y			+= -msoft-float -Wa,-msoft-float
-LDFLAGS_vmlinux			+= -G 0 -static -n -nostdlib
+LDFLAGS_vmfreax			+= -G 0 -static -n -nostdlib
 KBUILD_AFLAGS_MODULE		+= -mlong-calls
 KBUILD_CFLAGS_MODULE		+= -mlong-calls
 
 ifeq ($(CONFIG_RELOCATABLE),y)
-LDFLAGS_vmlinux			+= --emit-relocs
+LDFLAGS_vmfreax			+= --emit-relocs
 endif
 
 cflags-y += -ffreestanding
@@ -274,7 +274,7 @@ libs-y				+= arch/mips/fw/lib/
 ifdef CONFIG_SYS_SUPPORTS_ZBOOT
 COMPRESSION_FNAME		= vmlinuz
 else
-COMPRESSION_FNAME		= vmlinux
+COMPRESSION_FNAME		= vmfreax
 endif
 
 #
@@ -286,7 +286,7 @@ ifdef CONFIG_PHYSICAL_START
 load-y					= $(CONFIG_PHYSICAL_START)
 endif
 
-entry-y				= $(shell $(objtree)/arch/mips/tools/elf-entry vmlinux)
+entry-y				= $(shell $(objtree)/arch/mips/tools/elf-entry vmfreax)
 cflags-y			+= -I$(srctree)/arch/mips/include/asm/mach-generic
 drivers-$(CONFIG_PCI)		+= arch/mips/pci/
 
@@ -324,12 +324,12 @@ endif
 
 KBUILD_AFLAGS	+= $(cflags-y)
 KBUILD_CFLAGS	+= $(cflags-y)
-KBUILD_CPPFLAGS += -DVMLINUX_LOAD_ADDRESS=$(load-y) -DLINKER_LOAD_ADDRESS=$(load-ld)
+KBUILD_CPPFLAGS += -DVMfreax_LOAD_ADDRESS=$(load-y) -DLINKER_LOAD_ADDRESS=$(load-ld)
 KBUILD_CPPFLAGS += -DDATAOFFSET=$(if $(dataoffset-y),$(dataoffset-y),0)
 
-bootvars-y	= VMLINUX_LOAD_ADDRESS=$(load-y) \
+bootvars-y	= VMfreax_LOAD_ADDRESS=$(load-y) \
 		  LINKER_LOAD_ADDRESS=$(load-ld) \
-		  VMLINUX_ENTRY_ADDRESS=$(entry-y) \
+		  VMfreax_ENTRY_ADDRESS=$(entry-y) \
 		  PLATFORM="$(platform-y)" \
 		  ITS_INPUTS="$(its-y)"
 ifdef CONFIG_32BIT
@@ -362,20 +362,20 @@ drivers-y			+= arch/mips/crypto/
 drivers-$(CONFIG_PM)	+= arch/mips/power/
 
 # boot image targets (arch/mips/boot/)
-boot-y			:= vmlinux.bin
-boot-y			+= vmlinux.ecoff
-boot-y			+= vmlinux.srec
+boot-y			:= vmfreax.bin
+boot-y			+= vmfreax.ecoff
+boot-y			+= vmfreax.srec
 boot-y			+= uImage
 boot-y			+= uImage.bin
 boot-y			+= uImage.bz2
 boot-y			+= uImage.gz
 boot-y			+= uImage.lzma
 boot-y			+= uImage.lzo
-boot-y			+= vmlinux.itb
-boot-y			+= vmlinux.gz.itb
-boot-y			+= vmlinux.bz2.itb
-boot-y			+= vmlinux.lzma.itb
-boot-y			+= vmlinux.lzo.itb
+boot-y			+= vmfreax.itb
+boot-y			+= vmfreax.gz.itb
+boot-y			+= vmfreax.bz2.itb
+boot-y			+= vmfreax.lzma.itb
+boot-y			+= vmfreax.lzo.itb
 
 # compressed boot image targets (arch/mips/boot/compressed/)
 bootz-y			:= vmlinuz
@@ -392,7 +392,7 @@ bootz-y			+= vmlinuz.itb
 #
 quiet_cmd_32 = OBJCOPY $@
 	cmd_32 = $(OBJCOPY) -O $(32bit-bfd) $(OBJCOPYFLAGS) $< $@
-vmlinux.32: vmlinux
+vmfreax.32: vmfreax
 	$(call cmd,32)
 
 #
@@ -401,19 +401,19 @@ vmlinux.32: vmlinux
 #
 quiet_cmd_64 = OBJCOPY $@
 	cmd_64 = $(OBJCOPY) -O $(64bit-bfd) $(OBJCOPYFLAGS) $< $@
-vmlinux.64: vmlinux
+vmfreax.64: vmfreax
 	$(call cmd,64)
 
 all:	$(all-y) $(KBUILD_DTBS)
 
 # boot
-$(boot-y): $(vmlinux-32) FORCE
-	$(Q)$(MAKE) $(build)=arch/mips/boot VMLINUX=$(vmlinux-32) \
+$(boot-y): $(vmfreax-32) FORCE
+	$(Q)$(MAKE) $(build)=arch/mips/boot VMfreax=$(vmfreax-32) \
 		$(bootvars-y) arch/mips/boot/$@
 
 ifdef CONFIG_SYS_SUPPORTS_ZBOOT
 # boot/compressed
-$(bootz-y): $(vmlinux-32) FORCE
+$(bootz-y): $(vmfreax-32) FORCE
 	$(Q)$(MAKE) $(build)=arch/mips/boot/compressed \
 		$(bootvars-y) 32bit-bfd=$(32bit-bfd) arch/mips/boot/$@
 else
@@ -423,7 +423,7 @@ vmlinuz: FORCE
 endif
 
 
-CLEAN_FILES += vmlinux.32 vmlinux.64
+CLEAN_FILES += vmfreax.32 vmfreax.64
 
 # device-trees
 core-y += arch/mips/boot/dts/
@@ -439,7 +439,7 @@ ifdef CONFIG_MIPS32_O32
 endif
 
 install:
-	$(Q)install -D -m 755 vmlinux $(INSTALL_PATH)/vmlinux-$(KERNELRELEASE)
+	$(Q)install -D -m 755 vmfreax $(INSTALL_PATH)/vmfreax-$(KERNELRELEASE)
 ifdef CONFIG_SYS_SUPPORTS_ZBOOT
 	$(Q)install -D -m 755 vmlinuz $(INSTALL_PATH)/vmlinuz-$(KERNELRELEASE)
 endif
@@ -451,10 +451,10 @@ archheaders:
 
 define archhelp
 	echo '  install              - install kernel into $(INSTALL_PATH)'
-	echo '  vmlinux.ecoff        - ECOFF boot image'
-	echo '  vmlinux.bin          - Raw binary boot image'
-	echo '  vmlinux.srec         - SREC boot image'
-	echo '  vmlinux.32           - 64-bit boot image wrapped in 32bits (IP22/IP32)'
+	echo '  vmfreax.ecoff        - ECOFF boot image'
+	echo '  vmfreax.bin          - Raw binary boot image'
+	echo '  vmfreax.srec         - SREC boot image'
+	echo '  vmfreax.32           - 64-bit boot image wrapped in 32bits (IP22/IP32)'
 	echo '  vmlinuz              - Compressed boot(zboot) image'
 	echo '  vmlinuz.ecoff        - ECOFF zboot image'
 	echo '  vmlinuz.bin          - Raw binary zboot image'

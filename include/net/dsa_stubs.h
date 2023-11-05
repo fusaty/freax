@@ -3,9 +3,9 @@
  * include/net/dsa_stubs.h - Stubs for the Distributed Switch Architecture framework
  */
 
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/net_tstamp.h>
 #include <net/dsa.h>
 
 #if IS_ENABLED(CONFIG_NET_DSA)

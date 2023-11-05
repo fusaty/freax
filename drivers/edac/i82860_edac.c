@@ -6,14 +6,14 @@
  *
  * Written by Ben Woodard <woodard@redhat.com>
  * shamelessly copied from and based upon the edac_i82875 driver
- * by Thayne Harbaugh of Linux Networx. (http://lnxi.com)
+ * by Thayne Harbaugh of freax Networx. (http://lnxi.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR	"i82860_edac"

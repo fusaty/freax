@@ -6,15 +6,15 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/filter.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
+#include <freax/filter.h>
 #include <net/page_pool/helpers.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"

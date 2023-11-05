@@ -4,14 +4,14 @@
  * (C) 2005 Pablo Neira Ayuso <pablo@eurodev.net>
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_string.h>
-#include <linux/textsearch.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_string.h>
+#include <freax/textsearch.h>
 
 MODULE_AUTHOR("Pablo Neira Ayuso <pablo@eurodev.net>");
 MODULE_DESCRIPTION("Xtables: string-based matching");

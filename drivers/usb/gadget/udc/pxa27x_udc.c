@@ -5,31 +5,31 @@
  * Inspired by original driver by Frank Becker, David Brownell, and others.
  * Copyright (C) 2008 Robert Jarzmik
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/byteorder/generic.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/clk.h>
+#include <freax/irq.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
+#include <freax/byteorder/generic.h>
+#include <freax/platform_data/pxa2xx_udc.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/phy.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/phy.h>
 
 #include "pxa27x_udc.h"
 
@@ -83,9 +83,9 @@ static void handle_ep(struct pxa_ep *ep);
  */
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/seq_file.h>
 
 static int state_dbg_show(struct seq_file *s, void *p)
 {

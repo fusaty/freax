@@ -11,14 +11,14 @@
  * - The hardware cannot generate a 100% duty cycle.
  * - The hardware generates only inverted output.
  */
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/bitfield.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
+#include <freax/bitfield.h>
 
 /* Register offsets */
 #define PWM_SIFIVE_PWMCFG		0x0

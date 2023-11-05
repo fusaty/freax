@@ -1,7 +1,7 @@
 What:		/sys/kernel/cpu_byteorder
 Date:		February 2023
 KernelVersion:	6.2
-Contact:	Thomas Weißschuh <linux@weissschuh.net>
+Contact:	Thomas Weißschuh <freax@weissschuh.net>
 Description:
 		The endianness of the running kernel.
 
@@ -9,4 +9,4 @@ Description:
 
 		Valid values:
 			"little", "big"
-Users:		util-linux
+Users:		util-freax

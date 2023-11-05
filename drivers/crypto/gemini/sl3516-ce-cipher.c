@@ -11,14 +11,14 @@
 #include <crypto/engine.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "sl3516-ce.h"
 
 /* sl3516_ce_need_fallback - check if a request can be handled by the CE */

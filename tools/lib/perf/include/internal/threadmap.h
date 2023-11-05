@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_INTERNAL_THREADMAP_H
 #define __LIBPERF_INTERNAL_THREADMAP_H
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <sys/types.h>
 #include <unistd.h>
 

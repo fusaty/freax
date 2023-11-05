@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2018-2020 Intel Corporation. All rights reserved.
  */
-#include <linux/bitfield.h>
-#include <linux/dev_printk.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/dev_printk.h>
+#include <freax/init.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/intel-m10-bmc.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
 static const struct regmap_range m10bmc_regmap_range[] = {
 	regmap_reg_range(M10BMC_N3000_LEGACY_BUILD_VER, M10BMC_N3000_LEGACY_BUILD_VER),

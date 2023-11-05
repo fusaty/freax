@@ -8,16 +8,16 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/media.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/version.h>
+#include <freax/compat.h>
+#include <freax/export.h>
+#include <freax/idr.h>
+#include <freax/ioctl.h>
+#include <freax/media.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/usb.h>
+#include <freax/version.h>
 
 #include <media/media-device.h>
 #include <media/media-devnode.h>
@@ -27,7 +27,7 @@
 #ifdef CONFIG_MEDIA_CONTROLLER
 
 /*
- * Legacy defines from linux/media.h. This is the only place we need this
+ * Legacy defines from freax/media.h. This is the only place we need this
  * so we just define it here. The media.h header doesn't expose it to the
  * kernel to prevent it from being used by drivers, but here (and only here!)
  * we need it to handle the legacy behavior.
@@ -71,7 +71,7 @@ static long media_device_get_info(struct media_device *dev, void *arg)
 	strscpy(info->serial, dev->serial, sizeof(info->serial));
 	strscpy(info->bus_info, dev->bus_info, sizeof(info->bus_info));
 
-	info->media_version = LINUX_VERSION_CODE;
+	info->media_version = freax_VERSION_CODE;
 	info->driver_version = info->media_version;
 	info->hw_revision = dev->hw_revision;
 

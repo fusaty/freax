@@ -3,16 +3,16 @@
  * Copyright (C) 2017 Red Hat, Inc.
  */
 
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <freax/cred.h>
+#include <freax/file.h>
+#include <freax/mount.h>
+#include <freax/xattr.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
+#include <freax/splice.h>
+#include <freax/security.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
 #include "overlayfs.h"
 
 struct ovl_aio_req {

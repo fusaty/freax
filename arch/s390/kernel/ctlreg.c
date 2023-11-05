@@ -3,12 +3,12 @@
  *	Copyright IBM Corp. 1999, 2023
  */
 
-#include <linux/irqflags.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/cache.h>
+#include <freax/irqflags.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/cache.h>
 #include <asm/abs_lowcore.h>
 #include <asm/ctlreg.h>
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_PCI_H_
-#define LINUX_BCMA_DRIVER_PCI_H_
+#ifndef freax_BCMA_DRIVER_PCI_H_
+#define freax_BCMA_DRIVER_PCI_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pci_dev;
 
@@ -261,4 +261,4 @@ static inline int bcma_core_pci_plat_dev_init(struct pci_dev *dev)
 }
 #endif
 
-#endif /* LINUX_BCMA_DRIVER_PCI_H_ */
+#endif /* freax_BCMA_DRIVER_PCI_H_ */

@@ -1,5 +1,5 @@
-/*-*- linux-c -*-
- *  linux/drivers/video/i810_dvt.c -- Intel 810 Discrete Video Timings (Intel)
+/*-*- freax-c -*-
+ *  freax/drivers/video/i810_dvt.c -- Intel 810 Discrete Video Timings (Intel)
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>
  *      All Rights Reserved      
@@ -10,7 +10,7 @@
  *  more details.
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "i810_regs.h"
 #include "i810.h"

@@ -10,21 +10,21 @@
  * Copyright (C) 2003-2005 Benjamin Herrenschmidt.
  *
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/interrupt.h>
-#include <linux/hardirq.h>
-#include <linux/rtc.h>
-#include <linux/of_address.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/adb.h>
+#include <freax/cuda.h>
+#include <freax/pmu.h>
+#include <freax/interrupt.h>
+#include <freax/hardirq.h>
+#include <freax/rtc.h>
+#include <freax/of_address.h>
 
 #include <asm/early_ioremap.h>
 #include <asm/sections.h>

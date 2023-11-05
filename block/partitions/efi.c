@@ -39,7 +39,7 @@
  * - Added compare_gpts().
  * - moved le_efi_guid_to_cpus() back into this file.  GPT is the only
  *   thing that keeps EFI GUIDs on disk.
- * - Changed gpt structure names and members to be simpler and more Linux-like.
+ * - Changed gpt structure names and members to be simpler and more freax-like.
  * 
  * Wed Oct 17 2001 Matt Domsch <Matt_Domsch@dell.com>
  * - Removed CONFIG_DEVFS_VOLUMES_UUID code entirely per Martin Wilck
@@ -68,7 +68,7 @@
  *   mounting file systems by the partition GUID. 
  *
  * Tue Dec  5 2000 Matt Domsch <Matt_Domsch@dell.com>
- * - Moved crc32() to linux/lib, added efi_crc32().
+ * - Moved crc32() to freax/lib, added efi_crc32().
  *
  * Thu Nov 30 2000 Matt Domsch <Matt_Domsch@dell.com>
  * - Replaced Intel's CRC32 function with an equivalent
@@ -82,11 +82,11 @@
  * - Code works, detects all the partitions.
  *
  ************************************************************/
-#include <linux/kernel.h>
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/crc32.h>
+#include <freax/ctype.h>
+#include <freax/math64.h>
+#include <freax/slab.h>
 #include "check.h"
 #include "efi.h"
 
@@ -702,7 +702,7 @@ static void utf16_le_to_7bit(const __le16 *in, unsigned int size, u8 *out)
  * it will get handled by msdos_partition().
  * If it's a Protective MBR, we'll handle it here.
  *
- * We do not create a Linux partition for GPT, but
+ * We do not create a freax partition for GPT, but
  * only for the actual data partitions.
  * Returns:
  * -1 if unable to read the partition table
@@ -738,7 +738,7 @@ int efi_partition(struct parsed_partitions *state)
 		put_partition(state, i+1, start * ssz, size * ssz);
 
 		/* If this is a RAID volume, tell md */
-		if (!efi_guidcmp(ptes[i].partition_type_guid, PARTITION_LINUX_RAID_GUID))
+		if (!efi_guidcmp(ptes[i].partition_type_guid, PARTITION_freax_RAID_GUID))
 			state->parts[i + 1].flags = ADDPART_FLAG_RAID;
 
 		info = &state->parts[i + 1].info;

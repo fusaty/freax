@@ -4,10 +4,10 @@
 
 /* Written 1997-2000 by Werner Almesberger, EPFL LRC/ICA */
 
-#ifndef LINUX_ATM_TCP_H
-#define LINUX_ATM_TCP_H
+#ifndef freax_ATM_TCP_H
+#define freax_ATM_TCP_H
 
-#include <uapi/linux/atm_tcp.h>
+#include <uapi/freax/atm_tcp.h>
 
 struct atm_vcc;
 struct module;

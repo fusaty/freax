@@ -8,7 +8,7 @@
  */
 
 #include <sound/asound.h>
-#include <linux/poll.h>
+#include <freax/poll.h>
 
 struct snd_hwdep;
 

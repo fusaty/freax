@@ -10,11 +10,11 @@ Introduction
 ============
 
 Welcome, to Rusty's Remarkably Unreliable Guide to Kernel Locking
-issues. This document describes the locking systems in the Linux Kernel
+issues. This document describes the locking systems in the freax Kernel
 in 2.6.
 
 With the wide availability of HyperThreading, and preemption in the
-Linux Kernel, everyone hacking on the kernel needs to know the
+freax Kernel, everyone hacking on the kernel needs to know the
 fundamentals of concurrency and locking for SMP.
 
 The Problem With Concurrency
@@ -77,7 +77,7 @@ Race Conditions and Critical Regions
 This overlap, where the result depends on the relative timing of
 multiple tasks, is called a race condition. The piece of code containing
 the concurrency issue is called a critical region. And especially since
-Linux starting running on SMP machines, they became one of the major
+freax starting running on SMP machines, they became one of the major
 issues in kernel design and implementation.
 
 Preemption can have the same effect, even if there is only one CPU: by
@@ -87,11 +87,11 @@ critical region itself.
 
 The solution is to recognize when these simultaneous accesses occur, and
 use locks to make sure that only one instance can enter the critical
-region at any time. There are many friendly primitives in the Linux
+region at any time. There are many friendly primitives in the freax
 kernel to help you do this. And then there are the unfriendly
 primitives, but I'll pretend they don't exist.
 
-Locking in the Linux Kernel
+Locking in the freax Kernel
 ===========================
 
 If I could give you one piece of advice on locking: **keep it simple**.
@@ -107,7 +107,7 @@ single-holder lock: if you can't get the spinlock, you keep trying
 (spinning) until you can. Spinlocks are very small and fast, and can be
 used anywhere.
 
-The second type is a mutex (``include/linux/mutex.h``): it is like a
+The second type is a mutex (``include/freax/mutex.h``): it is like a
 spinlock, but you may block holding a mutex. If you can't lock a mutex,
 your task will suspend itself, and be woken up when the mutex is
 released. This means the CPU can do something else while you are
@@ -142,7 +142,7 @@ Locking Only In User Context
 ----------------------------
 
 If you have a data structure which is only ever accessed from user
-context, then you can use a simple mutex (``include/linux/mutex.h``) to
+context, then you can use a simple mutex (``include/freax/mutex.h``) to
 protect it. This is the most trivial case: you initialize the mutex.
 Then you can call mutex_lock_interruptible() to grab the
 mutex, and mutex_unlock() to release it. There is also a
@@ -164,7 +164,7 @@ Locking Between User Context and Softirqs
 If a softirq shares data with user context, you have two problems.
 Firstly, the current user context can be interrupted by a softirq, and
 secondly, the critical region could be entered from another CPU. This is
-where spin_lock_bh() (``include/linux/spinlock.h``) is
+where spin_lock_bh() (``include/freax/spinlock.h``) is
 used. It disables softirqs on that CPU, then grabs the lock.
 spin_unlock_bh() does the reverse. (The '_bh' suffix is
 a historical reference to "Bottom Halves", the old name for software
@@ -177,7 +177,7 @@ as well: see `Hard IRQ Context`_.
 
 This works perfectly for UP as well: the spin lock vanishes, and this
 macro simply becomes local_bh_disable()
-(``include/linux/interrupt.h``), which protects you from the softirq
+(``include/freax/interrupt.h``), which protects you from the softirq
 being run.
 
 Locking Between User Context and Tasklets
@@ -268,7 +268,7 @@ macro simply becomes local_irq_disable()
 (``include/asm/smp.h``), which protects you from the softirq/tasklet/BH
 being run.
 
-spin_lock_irqsave() (``include/linux/spinlock.h``) is a
+spin_lock_irqsave() (``include/freax/spinlock.h``) is a
 variant which saves whether interrupts were on or off in a flags word,
 which is passed to spin_unlock_irqrestore(). This means
 that the same code can be used inside an hard irq handler (where
@@ -382,10 +382,10 @@ For our first example, we assume that all operations are in user context
 (ie. from system calls), so we can sleep. This means we can use a mutex
 to protect the cache and all the objects within it. Here's the code::
 
-    #include <linux/list.h>
-    #include <linux/slab.h>
-    #include <linux/string.h>
-    #include <linux/mutex.h>
+    #include <freax/list.h>
+    #include <freax/slab.h>
+    #include <freax/string.h>
+    #include <freax/mutex.h>
     #include <asm/errno.h>
 
     struct object
@@ -876,7 +876,7 @@ Deadlock: Simple and Advanced
 
 There is a coding bug where a piece of code tries to grab a spinlock
 twice: it will spin forever, waiting for the lock to be released
-(spinlocks, rwlocks and mutexes are not recursive in Linux). This is
+(spinlocks, rwlocks and mutexes are not recursive in freax). This is
 trivial to diagnose: not a
 stay-up-five-nights-talk-to-fluffy-code-bunnies kind of problem.
 
@@ -893,7 +893,7 @@ corruption in the second example).
 
 This complete lockup is easy to diagnose: on SMP boxes the watchdog
 timer or compiling with ``DEBUG_SPINLOCK`` set
-(``include/linux/spinlock.h``) will show this up immediately when it
+(``include/freax/spinlock.h``) will show this up immediately when it
 happens.
 
 A more complex problem is the so-called 'deadly embrace', involving two
@@ -1005,7 +1005,7 @@ do::
 Another common problem is deleting timers which restart themselves (by
 calling add_timer() at the end of their timer function).
 Because this is a fairly common case which is prone to races, you should
-use timer_delete_sync() (``include/linux/timer.h``) to handle this case.
+use timer_delete_sync() (``include/freax/timer.h``) to handle this case.
 
 Before freeing a timer, timer_shutdown() or timer_shutdown_sync() should be
 called which will keep it from being rearmed. Any subsequent attempt to
@@ -1034,8 +1034,8 @@ on a machine with more CPUs, this likelihood drops fast. Consider a
 700MHz Intel Pentium III: an instruction takes about 0.7ns, an atomic
 increment takes about 58ns, a lock which is cache-hot on this CPU takes
 160ns, and a cacheline transfer from another CPU takes an additional 170
-to 360ns. (These figures from Paul McKenney's `Linux Journal RCU
-article <http://www.linuxjournal.com/article.php?sid=6993>`__).
+to 360ns. (These figures from Paul McKenney's `freax Journal RCU
+article <http://www.freaxjournal.com/article.php?sid=6993>`__).
 
 These two aims conflict: holding a lock for a short time might be done
 by splitting locks into parts (such as in our final per-object-lock
@@ -1091,7 +1091,7 @@ rest of the list.
 
 Fortunately, there is a function to do this for standard
 :c:type:`struct list_head <list_head>` lists:
-list_add_rcu() (``include/linux/list.h``).
+list_add_rcu() (``include/freax/list.h``).
 
 Removing an element from the list is even simpler: we replace the
 pointer to the old element with a pointer to its successor, and readers
@@ -1102,7 +1102,7 @@ will either see it, or skip over it.
             list->next = old->next;
 
 
-There is list_del_rcu() (``include/linux/list.h``) which
+There is list_del_rcu() (``include/freax/list.h``) which
 does this (the normal version poisons the old object, which we don't
 want).
 
@@ -1110,7 +1110,7 @@ The reader must also be careful: some CPUs can look through the ``next``
 pointer to start reading the contents of the next element early, but
 don't realize that the pre-fetched contents is wrong when the ``next``
 pointer changes underneath them. Once again, there is a
-list_for_each_entry_rcu() (``include/linux/list.h``)
+list_for_each_entry_rcu() (``include/freax/list.h``)
 to help you. Of course, writers can just use
 list_for_each_entry(), since there cannot be two
 simultaneous writers.
@@ -1143,11 +1143,11 @@ this is the fundamental idea.
     --- cache.c.perobjectlock   2003-12-11 17:15:03.000000000 +1100
     +++ cache.c.rcupdate    2003-12-11 17:55:14.000000000 +1100
     @@ -1,15 +1,18 @@
-     #include <linux/list.h>
-     #include <linux/slab.h>
-     #include <linux/string.h>
-    +#include <linux/rcupdate.h>
-     #include <linux/mutex.h>
+     #include <freax/list.h>
+     #include <freax/slab.h>
+     #include <freax/string.h>
+    +#include <freax/rcupdate.h>
+     #include <freax/mutex.h>
      #include <asm/errno.h>
 
      struct object
@@ -1255,7 +1255,7 @@ If that was too slow (it's usually not, but if you've got a really big
 machine to test on and can show that it is), you could instead use a
 counter for each CPU, then none of them need an exclusive lock. See
 DEFINE_PER_CPU(), get_cpu_var() and
-put_cpu_var() (``include/linux/percpu.h``).
+put_cpu_var() (``include/freax/percpu.h``).
 
 Of particular use for simple per-cpu counters is the ``local_t`` type,
 and the cpu_local_inc() and related functions, which are
@@ -1343,7 +1343,7 @@ lock.
 Mutex API reference
 ===================
 
-.. kernel-doc:: include/linux/mutex.h
+.. kernel-doc:: include/freax/mutex.h
    :internal:
 
 .. kernel-doc:: kernel/locking/mutex.c
@@ -1377,7 +1377,7 @@ Further reading
    Caching for Kernel Programmers:
 
    Curt Schimmel's very good introduction to kernel level locking (not
-   written for Linux, but nearly everything applies). The book is
+   written for freax, but nearly everything applies). The book is
    expensive, but really worth every penny to understand SMP locking.
    [ISBN: 0201633388]
 

@@ -3,20 +3,20 @@
  * Generic sched_clock() support, to extend low level hardware time
  * counters to full 64-bit ns values.
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
-#include <linux/kernel.h>
-#include <linux/math.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/syscore_ops.h>
-#include <linux/hrtimer.h>
-#include <linux/sched_clock.h>
-#include <linux/seqlock.h>
-#include <linux/bitops.h>
+#include <freax/clocksource.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/ktime.h>
+#include <freax/kernel.h>
+#include <freax/math.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/syscore_ops.h>
+#include <freax/hrtimer.h>
+#include <freax/sched_clock.h>
+#include <freax/seqlock.h>
+#include <freax/bitops.h>
 
 #include "timekeeping.h"
 

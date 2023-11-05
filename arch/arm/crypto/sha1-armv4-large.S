@@ -1,4 +1,4 @@
-#define __ARM_ARCH__ __LINUX_ARM_ARCH__
+#define __ARM_ARCH__ __freax_ARM_ARCH__
 @ SPDX-License-Identifier: GPL-2.0
 
 @ This code is taken from the OpenSSL project but the author (Andy Polyakov)
@@ -61,7 +61,7 @@
 @ Profiler-assisted and platform-specific optimization resulted in 10%
 @ improvement on Cortex A8 core and 12.2 cycles per byte.
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 .text
 

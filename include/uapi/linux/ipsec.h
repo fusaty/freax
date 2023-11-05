@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_IPSEC_H
-#define _LINUX_IPSEC_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_IPSEC_H
+#define _freax_IPSEC_H
 
 /* The definitions, required to talk to KAME racoon IKE. */
 
-#include <linux/pfkeyv2.h>
+#include <freax/pfkeyv2.h>
 
 #define IPSEC_PORT_ANY		0
 #define IPSEC_ULPROTO_ANY	255
@@ -45,4 +45,4 @@ enum {
 
 #define IPSEC_REPLAYWSIZE  32
 
-#endif	/* _LINUX_IPSEC_H */
+#endif	/* _freax_IPSEC_H */

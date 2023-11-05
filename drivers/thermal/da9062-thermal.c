@@ -18,17 +18,17 @@
  * be detected without constant software monitoring.
  */
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/workqueue.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
+#include <freax/workqueue.h>
 
-#include <linux/mfd/da9062/core.h>
-#include <linux/mfd/da9062/registers.h>
+#include <freax/mfd/da9062/core.h>
+#include <freax/mfd/da9062/registers.h>
 
 /* Minimum, maximum and default polling millisecond periods are provided
  * here as an example. It is expected that any final implementation to also

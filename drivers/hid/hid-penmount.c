@@ -11,8 +11,8 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/hid.h>
+#include <freax/module.h>
+#include <freax/hid.h>
 #include "hid-ids.h"
 
 static int penmount_input_mapping(struct hid_device *hdev,

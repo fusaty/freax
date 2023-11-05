@@ -1,5 +1,5 @@
 /*
- *	linux/drivers/video/pmag-aa-fb.c
+ *	freax/drivers/video/pmag-aa-fb.c
  *	Copyright 2002 Karsten Merker <merker@debian.org>
  *
  *	PMAG-AA TurboChannel framebuffer card support ... derived from
@@ -14,7 +14,7 @@
  *	Public License.  See the file COPYING in the main directory of this
  *	archive for more details.
  *
- *	2002-09-28  Karsten Merker <merker@linuxtag.org>
+ *	2002-09-28  Karsten Merker <merker@freaxtag.org>
  *		Version 0.01: First try to get a PMAG-AA running.
  *
  *	2003-02-24  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
@@ -23,26 +23,26 @@
  *	2003-09-21  Thiemo Seufer  <seufer@csv.ica.uni-stuttgart.de>
  *		Hardware cursor support.
  *
- *	2016-02-21  Maciej W. Rozycki  <macro@linux-mips.org>
+ *	2016-02-21  Maciej W. Rozycki  <macro@freax-mips.org>
  *		Version 0.03: Rewritten for the new FB and TC APIs.
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/tc.h>
+#include <freax/timer.h>
 
 #include "bt455.h"
 #include "bt431.h"
 
 /* Version information */
 #define DRIVER_VERSION "0.03"
-#define DRIVER_AUTHOR "Karsten Merker <merker@linuxtag.org>"
+#define DRIVER_AUTHOR "Karsten Merker <merker@freaxtag.org>"
 #define DRIVER_DESCRIPTION "PMAG-AA Framebuffer Driver"
 
 /*

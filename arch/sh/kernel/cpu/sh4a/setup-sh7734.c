@@ -8,14 +8,14 @@
  * Copyright (C) 2011,2012 Renesas Solutions Corp.
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/serial_sci.h>
+#include <freax/sh_timer.h>
+#include <freax/io.h>
 #include <asm/clock.h>
 #include <asm/irq.h>
 #include <asm/platform_early.h>

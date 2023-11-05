@@ -13,8 +13,8 @@
 #ifndef _KREF_H_
 #define _KREF_H_
 
-#include <linux/spinlock.h>
-#include <linux/refcount.h>
+#include <freax/spinlock.h>
+#include <freax/refcount.h>
 
 struct kref {
 	refcount_t refcount;

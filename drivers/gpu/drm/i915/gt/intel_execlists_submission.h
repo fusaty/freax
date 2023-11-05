@@ -6,8 +6,8 @@
 #ifndef __INTEL_EXECLISTS_SUBMISSION_H__
 #define __INTEL_EXECLISTS_SUBMISSION_H__
 
-#include <linux/llist.h>
-#include <linux/types.h>
+#include <freax/llist.h>
+#include <freax/types.h>
 
 struct drm_printer;
 

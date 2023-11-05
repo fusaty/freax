@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //#define DEBUG
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_blk.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/idr.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-virtio.h>
-#include <linux/numa.h>
-#include <linux/vmalloc.h>
-#include <uapi/linux/virtio_ring.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/hdreg.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/virtio.h>
+#include <freax/virtio_blk.h>
+#include <freax/scatterlist.h>
+#include <freax/string_helpers.h>
+#include <freax/idr.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-mq-virtio.h>
+#include <freax/numa.h>
+#include <freax/vmalloc.h>
+#include <uapi/freax/virtio_ring.h>
 
 #define PART_BITS 4
 #define VQ_NAME_LEN 16
@@ -1481,7 +1481,7 @@ static int virtblk_probe(struct virtio_device *vdev)
 		blk_queue_max_write_zeroes_sectors(q, v ? v : UINT_MAX);
 	}
 
-	/* The discard and secure erase limits are combined since the Linux
+	/* The discard and secure erase limits are combined since the freax
 	 * block layer uses the same limit for both commands.
 	 *
 	 * If both VIRTIO_BLK_F_SECURE_ERASE and VIRTIO_BLK_F_DISCARD features

@@ -6,7 +6,7 @@
 
 /* This file included from timer.c */
 
-#include <linux/compat.h>
+#include <freax/compat.h>
 
 /*
  * ILP32/LP64 has different size for 'long' type. Additionally, the size

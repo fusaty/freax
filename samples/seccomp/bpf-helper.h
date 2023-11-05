@@ -17,10 +17,10 @@
 
 #include <asm/bitsperlong.h>	/* for __BITS_PER_LONG */
 #include <endian.h>
-#include <linux/filter.h>
-#include <linux/seccomp.h>	/* for seccomp_data */
-#include <linux/types.h>
-#include <linux/unistd.h>
+#include <freax/filter.h>
+#include <freax/seccomp.h>	/* for seccomp_data */
+#include <freax/types.h>
+#include <freax/unistd.h>
 #include <stddef.h>
 
 #define BPF_LABELS_MAX 256

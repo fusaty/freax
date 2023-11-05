@@ -7,24 +7,24 @@
  * Copyright (C) 2007 David Brownell (simplification, cleanup)
  */
 
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
+#include <freax/init.h>
+#include <freax/ioctl.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spidev.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spidev.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 
 /*
@@ -716,7 +716,7 @@ MODULE_DEVICE_TABLE(spi, spidev_spi_ids);
 
 /*
  * spidev should never be referenced in DT without a specific compatible string,
- * it is a Linux implementation thing rather than a description of the hardware.
+ * it is a freax implementation thing rather than a description of the hardware.
  */
 static int spidev_of_check(struct device *dev)
 {

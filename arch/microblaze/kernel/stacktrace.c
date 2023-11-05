@@ -9,11 +9,11 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/stacktrace.h>
+#include <freax/thread_info.h>
+#include <freax/ptrace.h>
 #include <asm/unwind.h>
 
 void save_stack_trace(struct stack_trace *trace)

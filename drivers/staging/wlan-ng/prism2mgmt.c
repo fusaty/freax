@@ -6,16 +6,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -37,20 +37,20 @@
  * --------------------------------------------------------------------
  */
 
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/if_arp.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/wireless.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 #include <asm/byteorder.h>
-#include <linux/random.h>
-#include <linux/usb.h>
-#include <linux/bitops.h>
+#include <freax/random.h>
+#include <freax/usb.h>
+#include <freax/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"

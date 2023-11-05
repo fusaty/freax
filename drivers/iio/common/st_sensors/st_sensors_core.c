@@ -7,17 +7,17 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regmap.h>
 #include <asm/unaligned.h>
-#include <linux/iio/common/st_sensors.h>
+#include <freax/iio/common/st_sensors.h>
 
 #include "st_sensors_core.h"
 

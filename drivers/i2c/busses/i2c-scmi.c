@@ -5,13 +5,13 @@
  * Copyright (C) 2009 Crane Cai <crane.cai@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
 
 struct smbus_methods_t {
 	char *mt_info;

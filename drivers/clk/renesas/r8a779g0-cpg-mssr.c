@@ -7,13 +7,13 @@
  * Based on r8a779f0-cpg-mssr.c
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/soc/renesas/rcar-rst.h>
 
 #include <dt-bindings/clock/r8a779g0-cpg-mssr.h>
 

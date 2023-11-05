@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (c) 2018 Facebook */
 
-#ifndef _LINUX_BTF_H
-#define _LINUX_BTF_H 1
+#ifndef _freax_BTF_H
+#define _freax_BTF_H 1
 
-#include <linux/types.h>
-#include <linux/bpfptr.h>
-#include <linux/bsearch.h>
-#include <linux/btf_ids.h>
-#include <uapi/linux/btf.h>
-#include <uapi/linux/bpf.h>
+#include <freax/types.h>
+#include <freax/bpfptr.h>
+#include <freax/bsearch.h>
+#include <freax/btf_ids.h>
+#include <uapi/freax/btf.h>
+#include <uapi/freax/bpf.h>
 
 #define BTF_TYPE_EMIT(type) ((void)(type *)0)
 #define BTF_TYPE_EMIT_ENUM(enum_val) ((void)enum_val)
@@ -488,7 +488,7 @@ struct bpf_verifier_log;
 #ifdef CONFIG_BPF_SYSCALL
 const struct btf_type *btf_type_by_id(const struct btf *btf, u32 type_id);
 const char *btf_name_by_offset(const struct btf *btf, u32 offset);
-struct btf *btf_parse_vmlinux(void);
+struct btf *btf_parse_vmfreax(void);
 struct btf *bpf_prog_get_target_btf(const struct bpf_prog *prog);
 u32 *btf_kfunc_id_set_contains(const struct btf *btf, u32 kfunc_btf_id,
 			       const struct bpf_prog *prog);

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The freax Foundation. All rights reserved.
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
+#include <freax/bitfield.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/mhi.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
 #include "internal.h"
 
 static DEFINE_IDA(mhi_controller_ida);

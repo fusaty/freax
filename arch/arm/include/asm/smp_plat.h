@@ -6,8 +6,8 @@
 #ifndef __ASMARM_SMP_PLAT_H
 #define __ASMARM_SMP_PLAT_H
 
-#include <linux/cpumask.h>
-#include <linux/err.h>
+#include <freax/cpumask.h>
+#include <freax/err.h>
 
 #include <asm/cpu.h>
 #include <asm/cputype.h>
@@ -54,7 +54,7 @@ static inline int tlb_ops_need_broadcast(void)
 }
 #endif
 
-#if !defined(CONFIG_SMP) || __LINUX_ARM_ARCH__ >= 7
+#if !defined(CONFIG_SMP) || __freax_ARM_ARCH__ >= 7
 #define cache_ops_need_broadcast()	0
 #else
 static inline int cache_ops_need_broadcast(void)

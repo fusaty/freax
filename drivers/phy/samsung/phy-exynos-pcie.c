@@ -8,12 +8,12 @@
  * Jaehoon Chung <jh80.chung@samsung.com>
  */
 
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
 
 #define PCIE_PHY_OFFSET(x)		((x) * 0x4)
 

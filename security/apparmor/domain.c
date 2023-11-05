@@ -8,15 +8,15 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/syscalls.h>
-#include <linux/personality.h>
-#include <linux/xattr.h>
-#include <linux/user_namespace.h>
+#include <freax/errno.h>
+#include <freax/fdtable.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mount.h>
+#include <freax/syscalls.h>
+#include <freax/personality.h>
+#include <freax/xattr.h>
+#include <freax/user_namespace.h>
 
 #include "include/audit.h"
 #include "include/apparmorfs.h"
@@ -303,7 +303,7 @@ static int change_profile_perms(struct aa_profile *profile,
  *
  * Returns: number of extended attributes that matched, or < 0 on error
  */
-static int aa_xattrs_match(const struct linux_binprm *bprm,
+static int aa_xattrs_match(const struct freax_binprm *bprm,
 			   struct aa_profile *profile, aa_state_t state)
 {
 	int i;
@@ -382,7 +382,7 @@ out:
  *
  * Returns: label or NULL if no match found
  */
-static struct aa_label *find_attach(const struct linux_binprm *bprm,
+static struct aa_label *find_attach(const struct freax_binprm *bprm,
 				    struct aa_ns *ns, struct list_head *head,
 				    const char *name, const char **info)
 {
@@ -560,7 +560,7 @@ struct aa_label *x_table_lookup(struct aa_profile *profile, u32 xindex,
  * Returns: refcounted label or NULL if not found available
  */
 static struct aa_label *x_to_label(struct aa_profile *profile,
-				   const struct linux_binprm *bprm,
+				   const struct freax_binprm *bprm,
 				   const char *name, u32 xindex,
 				   const char **lookupname,
 				   const char **info)
@@ -630,7 +630,7 @@ static struct aa_label *x_to_label(struct aa_profile *profile,
 
 static struct aa_label *profile_transition(const struct cred *subj_cred,
 					   struct aa_profile *profile,
-					   const struct linux_binprm *bprm,
+					   const struct freax_binprm *bprm,
 					   char *buffer, struct path_cond *cond,
 					   bool *secure_exec)
 {
@@ -732,7 +732,7 @@ audit:
 
 static int profile_onexec(const struct cred *subj_cred,
 			  struct aa_profile *profile, struct aa_label *onexec,
-			  bool stack, const struct linux_binprm *bprm,
+			  bool stack, const struct freax_binprm *bprm,
 			  char *buffer, struct path_cond *cond,
 			  bool *secure_exec)
 {
@@ -809,7 +809,7 @@ audit:
 static struct aa_label *handle_onexec(const struct cred *subj_cred,
 				      struct aa_label *label,
 				      struct aa_label *onexec, bool stack,
-				      const struct linux_binprm *bprm,
+				      const struct freax_binprm *bprm,
 				      char *buffer, struct path_cond *cond,
 				      bool *unsafe)
 {
@@ -870,7 +870,7 @@ static struct aa_label *handle_onexec(const struct cred *subj_cred,
  *
  * TODO: once the other paths are done see if we can't refactor into a fn
  */
-int apparmor_bprm_creds_for_exec(struct linux_binprm *bprm)
+int apparmor_bprm_creds_for_exec(struct freax_binprm *bprm)
 {
 	struct aa_task_ctx *ctx;
 	struct aa_label *label, *new = NULL;

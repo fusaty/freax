@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_GSCCS_H__
 #define __INTEL_PXP_GSCCS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "gt/uc/intel_gsc_uc_heci_cmd_submit.h"
 

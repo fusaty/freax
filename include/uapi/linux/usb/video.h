@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * USB Video Class definitions.
  *
@@ -12,10 +12,10 @@
  * http://www.usb.org/developers/devclass_docs/USB_Video_Class_1_1.zip
  */
 
-#ifndef __LINUX_USB_VIDEO_H
-#define __LINUX_USB_VIDEO_H
+#ifndef __freax_USB_VIDEO_H
+#define __freax_USB_VIDEO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* --------------------------------------------------------------------------
  * UVC constants
@@ -597,5 +597,5 @@ struct UVC_FRAME_MJPEG(n) {				\
 	__le32 dwFrameInterval[n];			\
 } __attribute__ ((packed))
 
-#endif /* __LINUX_USB_VIDEO_H */
+#endif /* __freax_USB_VIDEO_H */
 

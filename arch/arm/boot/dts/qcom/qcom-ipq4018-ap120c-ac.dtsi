@@ -22,7 +22,7 @@
 		key-reset {
 			label = "reset";
 			gpios = <&tlmm 63 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 		};
 	};
 };

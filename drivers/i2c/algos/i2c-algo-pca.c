@@ -5,14 +5,14 @@
  *    Copyright (C) 2008 Pengutronix
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pca.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-pca.h>
 
 #define DEB1(fmt, args...) do { if (i2c_debug >= 1)			\
 				 printk(KERN_DEBUG fmt, ## args); } while (0)

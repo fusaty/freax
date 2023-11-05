@@ -7,10 +7,10 @@
  * modify it under the terms of the GNU General Public License.
  */
 
-#include <linux/of_address.h>
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <freax/of_address.h>
+#include <freax/kernel.h>
+#include <freax/suspend.h>
+#include <freax/io.h>
 
 #include "common.h"
 #include "hardware.h"

@@ -11,10 +11,10 @@
 #ifndef _RKISP1_COMMON_H
 #define _RKISP1_COMMON_H
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/rkisp1-config.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/rkisp1-config.h>
 #include <media/media-device.h>
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

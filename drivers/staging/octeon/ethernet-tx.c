@@ -5,21 +5,21 @@
  * Copyright (c) 2003-2010 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/ratelimit.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <freax/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <net/sch_generic.h>
 
 #include "octeon-ethernet.h"
@@ -285,7 +285,7 @@ netdev_tx_t cvm_oct_xmit(struct sk_buff *skb, struct net_device *dev)
 
 	/*
 	 * See if we can put this skb in the FPA pool. Any strange
-	 * behavior from the Linux networking stack will most likely
+	 * behavior from the freax networking stack will most likely
 	 * be caused by a bug in the following code. If some field is
 	 * in use by the network stack and gets carried over when a
 	 * buffer is reused, bad things may happen.  If in doubt and
@@ -597,7 +597,7 @@ netdev_tx_t cvm_oct_xmit_pow(struct sk_buff *skb, struct net_device *dev)
 					  (ip_hdr(skb)->frag_off ==
 					      cpu_to_be16(1 << 14)));
 #if 0
-		/* Assume Linux is sending a good packet */
+		/* Assume freax is sending a good packet */
 		work->word2.s.IP_exc = 0;
 #endif
 		work->word2.s.is_bcast = (skb->pkt_type == PACKET_BROADCAST);

@@ -9,15 +9,15 @@
  *	(c) 2006 Red Hat
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/device.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <freax/libata.h>
+#include <freax/ata.h>
 
 #define DRV_NAME	"pata_marvell"
 #define DRV_VERSION	"0.1.6"

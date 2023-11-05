@@ -37,7 +37,7 @@ config etc. They should be placed in `/lib/firmware/netronome` directory to
 load firmware from the host file system.
 
 Firmware for basic NIC operation is available in the upstream
-`linux-firmware.git` repository.
+`freax-firmware.git` repository.
 
 A more comprehensive list of firmware can be downloaded from the
 `Corigine Support site <https://www.corigine.com/DPUDownload.html>`_.

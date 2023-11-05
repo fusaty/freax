@@ -1,17 +1,17 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atm_tcp.h - Driver-specific declarations of the ATMTCP driver (for use by
 	       driver-specific utilities) */
 
 /* Written 1997-2000 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#ifndef _UAPILINUX_ATM_TCP_H
-#define _UAPILINUX_ATM_TCP_H
+#ifndef _UAPIfreax_ATM_TCP_H
+#define _UAPIfreax_ATM_TCP_H
 
-#include <linux/atmapi.h>
-#include <linux/atm.h>
-#include <linux/atmioc.h>
-#include <linux/types.h>
+#include <freax/atmapi.h>
+#include <freax/atm.h>
+#include <freax/atmioc.h>
+#include <freax/types.h>
 
 
 /*
@@ -59,4 +59,4 @@ struct atmtcp_control {
 
 
 
-#endif /* _UAPILINUX_ATM_TCP_H */
+#endif /* _UAPIfreax_ATM_TCP_H */

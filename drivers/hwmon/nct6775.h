@@ -2,7 +2,7 @@
 #ifndef __HWMON_NCT6775_H__
 #define __HWMON_NCT6775_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum kinds { nct6106, nct6116, nct6775, nct6776, nct6779, nct6791, nct6792,
 	     nct6793, nct6795, nct6796, nct6797, nct6798, nct6799 };

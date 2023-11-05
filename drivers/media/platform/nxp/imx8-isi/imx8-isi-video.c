@@ -8,16 +8,16 @@
  * Copyright (c) 2019 NXP Semiconductor
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/minmax.h>
-#include <linux/pm_runtime.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/media-bus-format.h>
+#include <freax/minmax.h>
+#include <freax/pm_runtime.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

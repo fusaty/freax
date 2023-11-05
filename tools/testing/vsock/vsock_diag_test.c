@@ -15,11 +15,11 @@
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <linux/list.h>
-#include <linux/net.h>
-#include <linux/netlink.h>
-#include <linux/sock_diag.h>
-#include <linux/vm_sockets_diag.h>
+#include <freax/list.h>
+#include <freax/net.h>
+#include <freax/netlink.h>
+#include <freax/sock_diag.h>
+#include <freax/vm_sockets_diag.h>
 #include <netinet/tcp.h>
 
 #include "timeout.h"

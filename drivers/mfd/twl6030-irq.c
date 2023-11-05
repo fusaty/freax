@@ -18,16 +18,16 @@
  * Balaji T K <balajitk@ti.com>
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/mfd/twl.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/suspend.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kthread.h>
+#include <freax/mfd/twl.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/suspend.h>
+#include <freax/of.h>
+#include <freax/irqdomain.h>
 
 #include "twl-core.h"
 

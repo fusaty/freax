@@ -4,11 +4,11 @@
  * driver for Ricoh xD readers
  */
 
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/spinlock.h>
+#include <freax/pci.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/spinlock.h>
 
 
 /* nand interface + ecc

@@ -12,9 +12,9 @@
 #ifndef _KERNEL_KCSAN_PERMISSIVE_H
 #define _KERNEL_KCSAN_PERMISSIVE_H
 
-#include <linux/bitops.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/sched.h>
+#include <freax/types.h>
 
 /*
  * Access ignore rules based on address.

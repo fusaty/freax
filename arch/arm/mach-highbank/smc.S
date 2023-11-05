@@ -4,7 +4,7 @@
  * Copyright 2012 Calxeda, Inc.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
  * This is common routine to manage secure monitor API

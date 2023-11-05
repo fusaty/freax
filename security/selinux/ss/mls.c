@@ -19,10 +19,10 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/errno.h>
 #include <net/netlabel.h>
 #include "sidtab.h"
 #include "mls.h"
@@ -631,7 +631,7 @@ int mls_export_netlbl_cat(struct policydb *p,
  * @secattr: the NetLabel security attributes
  *
  * Description:
- * Copy the NetLabel security attributes into the SELinux context; since the
+ * Copy the NetLabel security attributes into the SEfreax context; since the
  * NetLabel security attribute only contains a single MLS category use it for
  * both the low and high categories of the context.  Returns zero on success,
  * negative values on failure.

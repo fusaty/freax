@@ -11,17 +11,17 @@
  * their supports.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/uuid.h>
-#include <linux/vdpa.h>
-#include <linux/nospec.h>
-#include <linux/vhost.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/iommu.h>
+#include <freax/uuid.h>
+#include <freax/vdpa.h>
+#include <freax/nospec.h>
+#include <freax/vhost.h>
 
 #include "vhost.h"
 

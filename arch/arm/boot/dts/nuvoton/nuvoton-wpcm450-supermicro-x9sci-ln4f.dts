@@ -8,7 +8,7 @@
 
 #include "nuvoton-wpcm450.dtsi"
 
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/gpio/gpio.h>
 
 / {
@@ -36,7 +36,7 @@
 
 		uid {
 			label = "UID button";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&gpio0 14 GPIO_ACTIVE_HIGH>;
 		};
 	};

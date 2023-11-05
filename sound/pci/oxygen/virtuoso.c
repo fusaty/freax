@@ -5,9 +5,9 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

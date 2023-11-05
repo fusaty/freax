@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
 
 #define LPC32XX_TIMER_IR		0x000
 #define  LPC32XX_TIMER_IR_MR0INT	BIT(0)

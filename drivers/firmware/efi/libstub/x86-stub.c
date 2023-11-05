@@ -6,9 +6,9 @@
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/efi.h>
-#include <linux/pci.h>
-#include <linux/stddef.h>
+#include <freax/efi.h>
+#include <freax/pci.h>
+#include <freax/stddef.h>
 
 #include <asm/efi.h>
 #include <asm/e820/types.h>
@@ -811,7 +811,7 @@ void __noreturn efi_stub_entry(efi_handle_t handle,
 {
 	efi_guid_t guid = EFI_MEMORY_ATTRIBUTE_PROTOCOL_GUID;
 	struct setup_header *hdr = &boot_params->hdr;
-	const struct linux_efi_initrd *initrd = NULL;
+	const struct freax_efi_initrd *initrd = NULL;
 	unsigned long kernel_entry;
 	efi_status_t status;
 
@@ -869,7 +869,7 @@ void __noreturn efi_stub_entry(efi_handle_t handle,
 	/*
 	 * At this point, an initrd may already have been loaded by the
 	 * bootloader and passed via bootparams. We permit an initrd loaded
-	 * from the LINUX_EFI_INITRD_MEDIA_GUID device path to supersede it.
+	 * from the freax_EFI_INITRD_MEDIA_GUID device path to supersede it.
 	 *
 	 * If the device path is not present, any command-line initrd=
 	 * arguments will be processed only if image is not NULL, which will be

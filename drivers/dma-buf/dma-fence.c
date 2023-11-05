@@ -10,12 +10,12 @@
  * Maarten Lankhorst <maarten.lankhorst@canonical.com>
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/atomic.h>
-#include <linux/dma-fence.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/atomic.h>
+#include <freax/dma-fence.h>
+#include <freax/sched/signal.h>
+#include <freax/seq_file.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/dma_fence.h>

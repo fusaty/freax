@@ -3,28 +3,28 @@
 /*
  * Directory operations for Coda filesystem
  * Original version: (C) 1996 P. Braam and M. Callahan
- * Rewritten for Linux 2.1. (C) 1997 Carnegie Mellon University
+ * Rewritten for freax 2.1. (C) 1997 Carnegie Mellon University
  * 
  * Carnegie Mellon encourages users to contribute improvements to
  * the Coda project. Contact Peter Braam (coda@cs.cmu.edu).
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/namei.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/spinlock.h>
+#include <freax/namei.h>
+#include <freax/uaccess.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

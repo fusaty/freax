@@ -3,11 +3,11 @@
  * ACPI support
  *
  * Copyright (C) 2020, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/pm_runtime.h>
 
 #include "tb.h"
 
@@ -344,7 +344,7 @@ static struct acpi_device *tb_acpi_find_companion(struct device *dev)
 	 *      Device (DFP1)		// Downstream port _ADR == lane 0 adapter number
 	 *
 	 * At the moment we bind the host router to the corresponding
-	 * Linux device.
+	 * freax device.
 	 */
 	if (tb_is_switch(dev))
 		return tb_acpi_switch_find_companion(tb_to_switch(dev));

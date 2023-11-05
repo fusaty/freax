@@ -34,7 +34,7 @@
 		led-0 {
 			label = "tac:green:user1";
 			gpios = <&gpiof 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led-1 {
@@ -72,13 +72,13 @@
 
 		button-lower {
 			label = "USER_BTN2";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			gpios = <&gpioe 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 		};
 
 		button-upper {
 			label = "USER_BTN";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&gpioi 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 		};
 	};

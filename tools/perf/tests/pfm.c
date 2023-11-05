@@ -9,7 +9,7 @@
 #include "util/evlist.h"
 #include "util/pfm.h"
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #ifdef HAVE_LIBPFM
 static int count_pfm_events(struct perf_evlist *evlist)

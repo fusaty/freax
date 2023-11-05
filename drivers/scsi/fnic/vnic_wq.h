@@ -6,7 +6,7 @@
 #ifndef _VNIC_WQ_H_
 #define _VNIC_WQ_H_
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "vnic_dev.h"
 #include "vnic_cq.h"
 

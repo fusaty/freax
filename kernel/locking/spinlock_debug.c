@@ -6,12 +6,12 @@
  * DEBUG_SPINLOCK.
  */
 
-#include <linux/spinlock.h>
-#include <linux/nmi.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <freax/spinlock.h>
+#include <freax/nmi.h>
+#include <freax/interrupt.h>
+#include <freax/debug_locks.h>
+#include <freax/delay.h>
+#include <freax/export.h>
 
 void __raw_spin_lock_init(raw_spinlock_t *lock, const char *name,
 			  struct lock_class_key *key, short inner)

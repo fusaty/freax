@@ -7,15 +7,15 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkfreax.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
 #ifndef _ASUS_WMI_H_
 #define _ASUS_WMI_H_
 
-#include <linux/platform_device.h>
-#include <linux/i8042.h>
+#include <freax/platform_device.h>
+#include <freax/i8042.h>
 
 #define ASUS_WMI_KEY_IGNORE (-1)
 #define ASUS_WMI_BRN_DOWN	0x2e

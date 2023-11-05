@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/libfdt.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/libfdt.h>
+#include <freax/string.h>
 #include <asm/pgtable.h>
 #include <asm/setup.h>
 

@@ -15,9 +15,9 @@
 
 #include <asm/unaligned.h>
 #include <kunit/visibility.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/zstd.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/zstd.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

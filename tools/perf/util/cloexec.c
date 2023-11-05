@@ -9,7 +9,7 @@
 #include "debug.h"
 #include <unistd.h>
 #include <sys/syscall.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 static unsigned long flag = PERF_FLAG_FD_CLOEXEC;
 

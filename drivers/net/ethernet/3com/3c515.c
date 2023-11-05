@@ -52,21 +52,21 @@ static int max_interrupt_work = 20;
 #define RX_RING_SIZE	16
 #define PKT_BUF_SZ		1536	/* Size of each temporary Rx buffer. */
 
-#include <linux/module.h>
-#include <linux/isapnp.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/isapnp.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/ioport.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/ethtool.h>
+#include <freax/bitops.h>
+#include <freax/uaccess.h>
 
 #include <net/Space.h>
 
@@ -74,7 +74,7 @@ static int max_interrupt_work = 20;
 #include <asm/dma.h>
 
 #define NEW_MULTICAST
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #define MAX_UNITS 8
 
@@ -121,7 +121,7 @@ it's not practical to integrate this driver with the other EtherLink drivers.
 II. Board-specific settings
 
 The Corkscrew has an EEPROM for configuration, but no special settings are
-needed for Linux.
+needed for freax.
 
 III. Driver operation
 

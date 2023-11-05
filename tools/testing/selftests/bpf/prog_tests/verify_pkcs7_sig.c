@@ -15,7 +15,7 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 #include <sys/mman.h>
-#include <linux/keyctl.h>
+#include <freax/keyctl.h>
 #include <test_progs.h>
 
 #include "test_verify_pkcs7_sig.skel.h"

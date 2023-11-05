@@ -5,13 +5,13 @@
  *  Copyright (C) 2013 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/slab.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

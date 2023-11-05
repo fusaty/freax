@@ -2,24 +2,24 @@
 /*
  * Copyright IBM Corporation, 2021
  *
- * Author: Mike Rapoport <rppt@linux.ibm.com>
+ * Author: Mike Rapoport <rppt@freax.ibm.com>
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/swap.h>
-#include <linux/mount.h>
-#include <linux/memfd.h>
-#include <linux/bitops.h>
-#include <linux/printk.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/pseudo_fs.h>
-#include <linux/secretmem.h>
-#include <linux/set_memory.h>
-#include <linux/sched/signal.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/swap.h>
+#include <freax/mount.h>
+#include <freax/memfd.h>
+#include <freax/bitops.h>
+#include <freax/printk.h>
+#include <freax/pagemap.h>
+#include <freax/syscalls.h>
+#include <freax/pseudo_fs.h>
+#include <freax/secretmem.h>
+#include <freax/set_memory.h>
+#include <freax/sched/signal.h>
 
-#include <uapi/linux/magic.h>
+#include <uapi/freax/magic.h>
 
 #include <asm/tlbflush.h>
 

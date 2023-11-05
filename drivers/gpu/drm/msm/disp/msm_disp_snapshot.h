@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The freax Foundation. All rights reserved.
  */
 
 #ifndef MSM_DISP_SNAPSHOT_H_
@@ -11,19 +11,19 @@
 #include "../../../drm_crtc_internal.h"
 #include <drm/drm_print.h>
 #include <drm/drm_atomic.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
-#include <linux/uaccess.h>
-#include <linux/dma-buf.h>
-#include <linux/slab.h>
-#include <linux/list_sort.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/kthread.h>
-#include <linux/devcoredump.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/ktime.h>
+#include <freax/uaccess.h>
+#include <freax/dma-buf.h>
+#include <freax/slab.h>
+#include <freax/list_sort.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/kthread.h>
+#include <freax/devcoredump.h>
 #include "msm_kms.h"
 
 #define MSM_DISP_SNAPSHOT_MAX_BLKS		10

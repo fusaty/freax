@@ -10,28 +10,28 @@
  *		Mark Brown <markb@marvell.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pxa168_eth.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/udp.h>
-#include <linux/workqueue.h>
-#include <linux/pgtable.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/pxa168_eth.h>
+#include <freax/tcp.h>
+#include <freax/types.h>
+#include <freax/udp.h>
+#include <freax/workqueue.h>
+#include <freax/pgtable.h>
 
 #include <asm/cacheflush.h>
 

@@ -8,15 +8,15 @@
  *  Copyright (C) 2008 by IBM, Corp.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/uio.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <freax/uio.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include "protocol.h"

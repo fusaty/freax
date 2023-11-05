@@ -3,16 +3,16 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/ioctl.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pm_runtime.h>
 #include <media/v4l2-device.h>
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 #include "vpu.h"
 #include "vpu_defs.h"
 #include "vpu_core.h"

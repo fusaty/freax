@@ -10,18 +10,18 @@
  * Copyright (c) 2011 Analog Devices Inc.
  */
 
-#include <linux/irq.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/bitops.h>
+#include <freax/irq.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/imu/adis.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/imu/adis.h>
 
 #define ADIS16400_STARTUP_DELAY	290 /* ms */
 #define ADIS16400_MTEST_DELAY 90 /* ms */

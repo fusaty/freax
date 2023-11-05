@@ -24,8 +24,8 @@
 #ifndef __AMDGPU_RING_MUX__
 #define __AMDGPU_RING_MUX__
 
-#include <linux/timer.h>
-#include <linux/spinlock.h>
+#include <freax/timer.h>
+#include <freax/spinlock.h>
 #include "amdgpu_ring.h"
 
 struct amdgpu_ring;

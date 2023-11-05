@@ -2,8 +2,8 @@
 #ifndef _BCACHEFS_ERROR_H
 #define _BCACHEFS_ERROR_H
 
-#include <linux/list.h>
-#include <linux/printk.h>
+#include <freax/list.h>
+#include <freax/printk.h>
 
 struct bch_dev;
 struct bch_fs;

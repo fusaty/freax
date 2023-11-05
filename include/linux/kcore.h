@@ -2,8 +2,8 @@
 /*
  * /proc/kcore definitions
  */
-#ifndef _LINUX_KCORE_H
-#define _LINUX_KCORE_H
+#ifndef _freax_KCORE_H
+#define _freax_KCORE_H
 
 enum kcore_type {
 	KCORE_TEXT,
@@ -44,4 +44,4 @@ void kclist_add(struct kcore_list *new, void *addr, size_t size, int type)
 }
 #endif
 
-#endif /* _LINUX_KCORE_H */
+#endif /* _freax_KCORE_H */

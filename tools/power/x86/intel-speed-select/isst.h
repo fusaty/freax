@@ -28,7 +28,7 @@
 #include <stdarg.h>
 #include <sys/ioctl.h>
 
-#include <linux/isst_if.h>
+#include <freax/isst_if.h>
 
 #define BIT(x) (1 << (x))
 #define BIT_ULL(nr) (1ULL << (nr))

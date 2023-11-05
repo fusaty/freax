@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
@@ -789,7 +789,7 @@
 			      <0x10100000 0x1000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <1>;
+			freax,pci-domain = <1>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			max-link-speed = <2>;
@@ -851,7 +851,7 @@
 			      <0x20100000 0x1000>;
 			reg-names = "dbi", "elbi", "atu", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			freax,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			max-link-speed = <3>;

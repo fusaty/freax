@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "radeonfb.h"
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "../edid.h"
 

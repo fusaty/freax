@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ASN1_H
-#define _LINUX_ASN1_H
+#ifndef _freax_ASN1_H
+#define _freax_ASN1_H
 
 /* Class */
 enum asn1_class {
@@ -62,4 +62,4 @@ enum asn1_tag {
 
 #define ASN1_INDEFINITE_LENGTH 0x80
 
-#endif /* _LINUX_ASN1_H */
+#endif /* _freax_ASN1_H */

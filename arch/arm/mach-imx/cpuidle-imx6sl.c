@@ -3,9 +3,9 @@
  * Copyright (C) 2014 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk/imx.h>
-#include <linux/cpuidle.h>
-#include <linux/module.h>
+#include <freax/clk/imx.h>
+#include <freax/cpuidle.h>
+#include <freax/module.h>
 #include <asm/cpuidle.h>
 
 #include "common.h"

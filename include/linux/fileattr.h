@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_FILEATTR_H
-#define _LINUX_FILEATTR_H
+#ifndef _freax_FILEATTR_H
+#define _freax_FILEATTR_H
 
 /* Flags shared betwen flags/xflags */
 #define FS_COMMON_FL \
@@ -56,4 +56,4 @@ int vfs_fileattr_get(struct dentry *dentry, struct fileattr *fa);
 int vfs_fileattr_set(struct mnt_idmap *idmap, struct dentry *dentry,
 		     struct fileattr *fa);
 
-#endif /* _LINUX_FILEATTR_H */
+#endif /* _freax_FILEATTR_H */

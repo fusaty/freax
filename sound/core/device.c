@@ -4,10 +4,10 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/export.h>
-#include <linux/errno.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/export.h>
+#include <freax/errno.h>
 #include <sound/core.h>
 
 /**

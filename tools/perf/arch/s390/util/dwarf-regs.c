@@ -3,14 +3,14 @@
  * Mapping of DWARF debug register numbers into register names.
  *
  * Copyright IBM Corp. 2010, 2017
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  *
  */
 
 #include <errno.h>
 #include <stddef.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/ptrace.h>
 #include <string.h>
 #include <dwarf-regs.h>

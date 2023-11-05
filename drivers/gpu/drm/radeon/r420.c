@@ -26,9 +26,9 @@
  *          Jerome Glisse
  */
 
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/pci.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

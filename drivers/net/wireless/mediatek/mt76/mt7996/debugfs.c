@@ -3,7 +3,7 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/relay.h>
+#include <freax/relay.h>
 #include "mt7996.h"
 #include "eeprom.h"
 #include "mcu.h"

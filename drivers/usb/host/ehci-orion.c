@@ -5,18 +5,18 @@
  * Tzachi Perelstein <tzachi@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mbus.h>
-#include <linux/clk.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mbus.h>
+#include <freax/clk.h>
+#include <freax/platform_data/usb-ehci-orion.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
 
 #include "ehci.h"
 

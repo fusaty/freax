@@ -8,15 +8,15 @@
  * 
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/parport.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/parport.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

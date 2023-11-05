@@ -8,7 +8,7 @@
 #ifndef __ASM_LDT_H
 #define __ASM_LDT_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 #include <asm/ldt.h>
 
 #define LDT_PAGES_MAX \

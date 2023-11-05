@@ -2,17 +2,17 @@
 /*
  *  mm/pgtable-generic.c
  *
- *  Generic pgtable methods declared in linux/pgtable.h
+ *  Generic pgtable methods declared in freax/pgtable.h
  *
  *  Copyright (C) 2010  Linus Torvalds
  */
 
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
-#include <linux/pgtable.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mm_inline.h>
+#include <freax/pagemap.h>
+#include <freax/hugetlb.h>
+#include <freax/pgtable.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/mm_inline.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 
@@ -255,7 +255,7 @@ void pte_free_defer(struct mm_struct *mm, pgtable_t pgtable)
 #if defined(CONFIG_GUP_GET_PXX_LOW_HIGH) && \
 	(defined(CONFIG_SMP) || defined(CONFIG_PREEMPT_RCU))
 /*
- * See the comment above ptep_get_lockless() in include/linux/pgtable.h:
+ * See the comment above ptep_get_lockless() in include/freax/pgtable.h:
  * the barriers in pmdp_get_lockless() cannot guarantee that the value in
  * pmd_high actually belongs with the value in pmd_low; but holding interrupts
  * off blocks the TLB flush between present updates, which guarantees that a

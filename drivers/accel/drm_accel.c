@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/idr.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/idr.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_debugfs.h>

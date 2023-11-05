@@ -6,16 +6,16 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/udp.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/udp.h>
+#include <freax/skbuff.h>
+#include <freax/in.h>
 
-#include <linux/netfilter/xt_multiport.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter/xt_multiport.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Netfilter Core Team <coreteam@netfilter.org>");

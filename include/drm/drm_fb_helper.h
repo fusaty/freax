@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2006-2009 Red Hat Inc.
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@freax.ie>
  *
  * DRM framebuffer helper functions
  *
@@ -24,7 +24,7 @@
  * OF THIS SOFTWARE.
  *
  * Authors:
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@freax.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
 #ifndef DRM_FB_HELPER_H
@@ -33,7 +33,7 @@
 struct drm_clip_rect;
 struct drm_fb_helper;
 
-#include <linux/fb.h>
+#include <freax/fb.h>
 
 #include <drm/drm_client.h>
 

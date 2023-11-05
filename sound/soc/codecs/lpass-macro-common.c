@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2022, The Linux Foundation. All rights reserved.
+// Copyright (c) 2022, The freax Foundation. All rights reserved.
 
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
 
 #include "lpass-macro-common.h"
 

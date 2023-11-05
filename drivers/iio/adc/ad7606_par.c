@@ -5,14 +5,14 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/io.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 #include "ad7606.h"
 
 static int ad7606_par16_read_block(struct device *dev,

@@ -4,7 +4,7 @@
 #ifndef _MLXSW_PCI_H
 #define _MLXSW_PCI_H
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #define PCI_DEVICE_ID_MELLANOX_SPECTRUM		0xcb84
 #define PCI_DEVICE_ID_MELLANOX_SPECTRUM2	0xcf6c

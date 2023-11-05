@@ -39,13 +39,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
 
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>

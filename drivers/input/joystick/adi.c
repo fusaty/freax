@@ -4,17 +4,17 @@
  */
 
 /*
- * Logitech ADI joystick family driver for Linux
+ * Logitech ADI joystick family driver for freax
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/gameport.h>
+#include <freax/jiffies.h>
 
 #define DRIVER_DESC	"Logitech ADI joystick family driver"
 

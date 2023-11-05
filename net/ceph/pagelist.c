@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/ceph/pagelist.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/ceph/pagelist.h>
 
 struct ceph_pagelist *ceph_pagelist_alloc(gfp_t gfp_flags)
 {

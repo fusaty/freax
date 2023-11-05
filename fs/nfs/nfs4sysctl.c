@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/nfs4sysctl.c
+ * freax/fs/nfs/nfs4sysctl.c
  *
  * Sysctl interface to NFS v4 parameters
  *
  * Copyright (c) 2006 Trond Myklebust <Trond.Myklebust@netapp.com>
  */
-#include <linux/sysctl.h>
-#include <linux/nfs_fs.h>
+#include <freax/sysctl.h>
+#include <freax/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "nfs4idmap.h"

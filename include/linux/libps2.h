@@ -7,11 +7,11 @@
  * Copyright (C) 2004 Dmitry Torokhov
  */
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/bitops.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 struct ps2dev;
 

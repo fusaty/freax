@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (C) 2013 Red Hat
- * Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
  *
  * Author: Rob Clark <robdclark@gmail.com>
@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
 
-#include <linux/debugfs.h>
-#include <linux/dma-buf.h>
-#include <linux/of_irq.h>
-#include <linux/pm_opp.h>
+#include <freax/debugfs.h>
+#include <freax/dma-buf.h>
+#include <freax/of_irq.h>
+#include <freax/pm_opp.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_file.h>

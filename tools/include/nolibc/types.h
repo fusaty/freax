@@ -8,10 +8,10 @@
 #define _NOLIBC_TYPES_H
 
 #include "std.h"
-#include <linux/mman.h>
-#include <linux/reboot.h> /* for LINUX_REBOOT_* */
-#include <linux/stat.h>
-#include <linux/time.h>
+#include <freax/mman.h>
+#include <freax/reboot.h> /* for freax_REBOOT_* */
+#include <freax/stat.h>
+#include <freax/time.h>
 
 
 /* Only the generic macros and types may be defined here. The arch-specific
@@ -20,7 +20,7 @@
  */
 
 /* stat flags (WARNING, octal here). We need to check for an existing
- * definition because linux/stat.h may omit to define those if it finds
+ * definition because freax/stat.h may omit to define those if it finds
  * that any glibc header was already included.
  */
 #if !defined(S_IFMT)
@@ -94,13 +94,13 @@
 #define SEEK_END       2
 
 /* flags for reboot */
-#define RB_AUTOBOOT     LINUX_REBOOT_CMD_RESTART
-#define RB_HALT_SYSTEM  LINUX_REBOOT_CMD_HALT
-#define RB_ENABLE_CAD   LINUX_REBOOT_CMD_CAD_ON
-#define RB_DISABLE_CAD  LINUX_REBOOT_CMD_CAD_OFF
-#define RB_POWER_OFF    LINUX_REBOOT_CMD_POWER_OFF
-#define RB_SW_SUSPEND   LINUX_REBOOT_CMD_SW_SUSPEND
-#define RB_KEXEC        LINUX_REBOOT_CMD_KEXEC
+#define RB_AUTOBOOT     freax_REBOOT_CMD_RESTART
+#define RB_HALT_SYSTEM  freax_REBOOT_CMD_HALT
+#define RB_ENABLE_CAD   freax_REBOOT_CMD_CAD_ON
+#define RB_DISABLE_CAD  freax_REBOOT_CMD_CAD_OFF
+#define RB_POWER_OFF    freax_REBOOT_CMD_POWER_OFF
+#define RB_SW_SUSPEND   freax_REBOOT_CMD_SW_SUSPEND
+#define RB_KEXEC        freax_REBOOT_CMD_KEXEC
 
 /* Macros used on waitpid()'s return status */
 #define WEXITSTATUS(status) (((status) & 0xff00) >> 8)
@@ -172,7 +172,7 @@ struct pollfd {
 };
 
 /* for getdents64() */
-struct linux_dirent64 {
+struct freax_dirent64 {
 	uint64_t       d_ino;
 	int64_t        d_off;
 	unsigned short d_reclen;

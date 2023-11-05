@@ -7,17 +7,17 @@
  * Created by David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/zlib.h>
-#include <linux/zutil.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/refcount.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/zlib.h>
+#include <freax/zutil.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/pagemap.h>
+#include <freax/bio.h>
+#include <freax/refcount.h>
 #include "compression.h"
 
 /* workspace buffer size for s390 zlib hardware support */

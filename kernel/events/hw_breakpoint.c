@@ -7,7 +7,7 @@
  * Thanks to Ingo Molnar for his many suggestions.
  *
  * Authors: Alan Stern <stern@rowland.harvard.edu>
- *          K.Prasad <prasad@linux.vnet.ibm.com>
+ *          K.Prasad <prasad@freax.vnet.ibm.com>
  *          Frederic Weisbecker <fweisbec@gmail.com>
  */
 
@@ -17,23 +17,23 @@
  * This file contains the arch-independent routines.
  */
 
-#include <linux/hw_breakpoint.h>
+#include <freax/hw_breakpoint.h>
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/kdebug.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/percpu.h>
-#include <linux/rhashtable.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/cpu.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/irqflags.h>
+#include <freax/kdebug.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/percpu-rwsem.h>
+#include <freax/percpu.h>
+#include <freax/rhashtable.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 /*
  * Datastructure to track the total uses of N slots across tasks or CPUs;

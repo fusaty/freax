@@ -5,13 +5,13 @@
  * Copyright (C) 2014 Romain Perier <romain.perier@gmail.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/etherdevice.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #include "emac.h"
 

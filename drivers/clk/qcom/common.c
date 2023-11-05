@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/clk-provider.h>
-#include <linux/reset-controller.h>
-#include <linux/of.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/reset-controller.h>
+#include <freax/of.h>
 
 #include "common.h"
 #include "clk-rcg.h"

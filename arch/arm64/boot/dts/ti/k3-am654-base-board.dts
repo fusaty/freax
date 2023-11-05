@@ -88,13 +88,13 @@
 
 		switch-5 {
 			label = "GPIO Key USER1";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&wkup_gpio0 24 GPIO_ACTIVE_LOW>;
 		};
 
 		switch-6 {
 			label = "GPIO Key USER2";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&wkup_gpio0 27 GPIO_ACTIVE_LOW>;
 		};
 	};

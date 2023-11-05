@@ -7,14 +7,14 @@
 // Initial development of this code was funded by
 // Phytec Messtechnik GmbH, https://www.phytec.de
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "imx-audmux.h"
 
@@ -32,7 +32,7 @@ static u32 reg_max;
 static struct dentry *audmux_debugfs_root;
 
 /* There is an annoying discontinuity in the SSI numbering with regard
- * to the Linux number of the devices */
+ * to the freax number of the devices */
 static const char *audmux_port_string(int port)
 {
 	switch (port) {

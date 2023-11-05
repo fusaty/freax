@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * NFS protocol definitions
  *
  * This file contains constants for Version 2 of the protocol.
  */
-#ifndef _LINUX_NFS2_H
-#define _LINUX_NFS2_H
+#ifndef _freax_NFS2_H
+#define _freax_NFS2_H
 
 #define NFS2_PORT	2049
 #define NFS2_MAXDATA	8192
@@ -65,4 +65,4 @@ struct nfs2_fh {
 #define NFSPROC_READDIR		16
 #define NFSPROC_STATFS		17
 
-#endif /* _LINUX_NFS2_H */
+#endif /* _freax_NFS2_H */

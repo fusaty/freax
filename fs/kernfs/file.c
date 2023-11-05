@@ -3,18 +3,18 @@
  * fs/kernfs/file.c - kernfs file implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE freax Products GmbH
  * Copyright (c) 2007, 2013 Tejun Heo <tj@kernel.org>
  */
 
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/pagemap.h>
-#include <linux/sched/mm.h>
-#include <linux/fsnotify.h>
-#include <linux/uio.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/pagemap.h>
+#include <freax/sched/mm.h>
+#include <freax/fsnotify.h>
+#include <freax/uio.h>
 
 #include "kernfs-internal.h"
 

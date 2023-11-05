@@ -3,7 +3,7 @@
 #ifndef __ACPI_VIOT_H__
 #define __ACPI_VIOT_H__
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 #ifdef CONFIG_ACPI_VIOT
 void __init acpi_viot_early_init(void);

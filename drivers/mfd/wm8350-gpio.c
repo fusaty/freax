@@ -7,13 +7,13 @@
  * Author: Liam Girdwood
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <freax/mfd/wm8350/core.h>
+#include <freax/mfd/wm8350/gpio.h>
+#include <freax/mfd/wm8350/pmic.h>
 
 static int gpio_set_dir(struct wm8350 *wm8350, int gpio, int dir)
 {

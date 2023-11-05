@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	Linux Magic System Request Key Hacks
+ *	freax Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *	based on ideas by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>
@@ -15,42 +15,42 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched/signal.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/ctype.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/reboot.h>
-#include <linux/sysrq.h>
-#include <linux/kbd_kern.h>
-#include <linux/proc_fs.h>
-#include <linux/nmi.h>
-#include <linux/quotaops.h>
-#include <linux/perf_event.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/spinlock.h>
-#include <linux/vt_kern.h>
-#include <linux/workqueue.h>
-#include <linux/hrtimer.h>
-#include <linux/oom.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
-#include <linux/moduleparam.h>
-#include <linux/jiffies.h>
-#include <linux/syscalls.h>
-#include <linux/of.h>
-#include <linux/rcupdate.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/ctype.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
+#include <freax/reboot.h>
+#include <freax/sysrq.h>
+#include <freax/kbd_kern.h>
+#include <freax/proc_fs.h>
+#include <freax/nmi.h>
+#include <freax/quotaops.h>
+#include <freax/perf_event.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/suspend.h>
+#include <freax/writeback.h>
+#include <freax/swap.h>
+#include <freax/spinlock.h>
+#include <freax/vt_kern.h>
+#include <freax/workqueue.h>
+#include <freax/hrtimer.h>
+#include <freax/oom.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/uaccess.h>
+#include <freax/moduleparam.h>
+#include <freax/jiffies.h>
+#include <freax/syscalls.h>
+#include <freax/of.h>
+#include <freax/rcupdate.h>
 
 #include <asm/ptrace.h>
 #include <asm/irq_regs.h>
@@ -324,7 +324,7 @@ static const struct sysrq_key_op sysrq_showstate_blocked_op = {
 };
 
 #ifdef CONFIG_TRACING
-#include <linux/ftrace.h>
+#include <freax/ftrace.h>
 
 static void sysrq_ftrace_dump(u8 key)
 {
@@ -762,7 +762,7 @@ static void sysrq_of_get_keyreset_config(void)
 	struct property *prop;
 	const __be32 *p;
 
-	np = of_find_node_by_path("/chosen/linux,sysrq-reset-seq");
+	np = of_find_node_by_path("/chosen/freax,sysrq-reset-seq");
 	if (!np) {
 		pr_debug("No sysrq node found");
 		return;

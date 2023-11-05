@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,13 +9,13 @@
  * Authors:	Lotsa people, from code originally in tcp
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/vmalloc.h>
-#include <linux/memblock.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/vmalloc.h>
+#include <freax/memblock.h>
 
 #include <net/addrconf.h>
 #include <net/inet_connection_sock.h>
@@ -588,7 +588,7 @@ static int __inet_check_established(struct inet_timewait_death_row *death_row,
 	__sk_nulls_add_node_rcu(sk, &head->chain);
 	if (tw) {
 		sk_nulls_del_node_init_rcu((struct sock *)tw);
-		__NET_INC_STATS(net, LINUX_MIB_TIMEWAITRECYCLED);
+		__NET_INC_STATS(net, freax_MIB_TIMEWAITRECYCLED);
 	}
 	spin_unlock(lock);
 	sock_prot_inuse_add(sock_net(sk), sk->sk_prot, 1);

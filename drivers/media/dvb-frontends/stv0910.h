@@ -10,8 +10,8 @@
 #ifndef _STV0910_H_
 #define _STV0910_H_
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
 
 struct stv0910_cfg {
 	u32 clk;

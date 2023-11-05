@@ -3,12 +3,12 @@
  * Copyright Gavin Shan, IBM Corporation 2016.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
 
 #include <net/ncsi.h>
 #include <net/net_namespace.h>

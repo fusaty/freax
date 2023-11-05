@@ -68,7 +68,7 @@ Changes from 20050308 to 20050323
 	  a multi-value file which is against the sysfs guidelines).
 	* Change pci_module_init to pci_register_module() with appropriate
 	  ifdefs.
-	* Added #include <linux/dma-mapping.h> as required by the DMA
+	* Added #include <freax/dma-mapping.h> as required by the DMA
 	  32bit and 64bit defines on some archs.
 	* Merged patch from Christoph Hellwig (03/19) - fix initialization
 	  order - scsi_add_host must happen last from scsi POV. Also some
@@ -199,7 +199,7 @@ Changes from 20050201 to 20050208
 	* Removed unused NLP_NS_NODE #define.
 	* Integrated Christoph Hellwig's patch from 1/30: remove unused
 	  lpfc_hba_list; remove unused lpfc_rdrev_wd30; remove
-	  lpfc_get_brd_no and use Linux provided IDR.
+	  lpfc_get_brd_no and use freax provided IDR.
 	* Changed board reset procedure so that lpfc_sli_send_reset()
 	  writes the INITFF bit and leaves lpfc_sli_brdreset() to clear
 	  the bit.
@@ -266,7 +266,7 @@ Changes from 20050124 to 20050201
 	* Moved lock from around of lpfc_work_done to lpfc_work_done
 	  itself.
 	* Removed typedef for LPFC_WORK_EVT_t and left just struct
-	  lpfc_work_evt to comply with linux_scsi review coding style.
+	  lpfc_work_evt to comply with freax_scsi review coding style.
 	* Fixed some trailing whitespaces, spaces used for indentation and
 	  ill-formatting multiline comments.
 	* Bug fix for Raw IO errors.  Reuse of IOCBs now mandates setting
@@ -281,7 +281,7 @@ Changes from 20050110 to 20050124
 	* Makefile cleanup.  Use ?= operator for setting default
 	  KERNELVERSION and BASEINCLUDE values.  Use $(PWD) consistently.
 	* Removed call to lpfc_sli_intr from lpfc_config_port_post.  All
-	  Linux systems will service hardware interrupts while bringing up
+	  freax systems will service hardware interrupts while bringing up
 	  the driver.
 	* Christoph Hellwig change request: Reorg of contents of
 	  lpfc_hbadisc.c, lpfc_scsi.h, lpfc_init.c, lpfc_sli.c,
@@ -371,7 +371,7 @@ Changes from 20041220 to 20041229
 	  structures.
 	* Fixed potential discovery bug, nlp list corrutpion fix potential
 	  memory leak
-	* Part 1 of the memory allocation rework request by linux-scsi.
+	* Part 1 of the memory allocation rework request by freax-scsi.
 	  This effort fixes the number of bdes per scsi_buf to 64, makes
 	  the scatter-gather count a module parameter, builds a linked
 	  list of scsi_bufs, and removes all dependencies on lpfc_mem.h.
@@ -433,7 +433,7 @@ Changes from 20041207 to 20041213
 	* Remove all trailing whitespace.
 	* Integrate Christoph Hellwig's patch for 8.0.14: if
 	  pci_module_init fails we need to release the transport template.
- 	  (also don't print the driver name at startup, linux drivers can
+ 	  (also don't print the driver name at startup, freax drivers can
 	  be loaded without hardware present, and noise in the log for
 	  that case is considered unpolite, better print messages only for
 	  hardware actually found).
@@ -517,7 +517,7 @@ Changes from 20041018 to 20041123
 	  and 8 is an offset of the "prev") Driver runs out of iotags and
 	  does not handle that case well. The root of the problem is in the
 	  initialization code in lpfc_sli.c
-	* Changes to work with proposed linux kernel patch to support
+	* Changes to work with proposed freax kernel patch to support
 	  hotplug.
 	* Zero out seg_cnt in prep_io failure path to prevent double sg
 	  unmap calls.
@@ -661,7 +661,7 @@ Changes from 20040920 to 20041018
 	  dependencies on scsi.h.
 	* Fixed a bug with RSCN handling. A RSCN received on one device,
 	  shouldn't affect other devices not referenced by the RSCN.
-	* Moved #if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,6) to include
+	* Moved #if freax_VERSION_CODE >= KERNEL_VERSION(2,6,6) to include
 	  lpfc_jedec_to_ascii to prevent warning in SLES 9.
 	* Update Makefile to account for SLES 9 and scsi-target upstream
 	  kernel.
@@ -761,7 +761,7 @@ Changes from 20040908 to 20040920
 	  discovery.
 	* Ensure lpfc_target is also cleaned up in lpfc_cleanup().
 	* Preliminary changes for block/unblock kernel API extensions in
-	  progress with linux-scsi list.  These are name changes and
+	  progress with freax-scsi list.  These are name changes and
 	  prototype changes only.
 	* Added send_abts flag to lpfc_els_abort. For rcv LOGO when ADISC
 	  sent, the XRI of the LOGO rcv'ed is the same as the ADISC
@@ -909,7 +909,7 @@ Changes from 20040730 to 20040810
 	
 	* Changed version number to 8.0.9
 	* Removed per HBA driver lock.  Driver now uses the host->host_lock
-	* Restored support for the 2.6.5 kernel for those linux distributions
+	* Restored support for the 2.6.5 kernel for those freax distributions
 	  shipped with the 2.6.5 kernel.
 	* Applied patch from Christoph Hellwig (hch@infradead.org) as follows
 	  "[PATCH] use scsi host private data in ->proc_info.  
@@ -1216,7 +1216,7 @@ Changes from 20040526 to 20040604
 	  lpfcHBA.
 	* Remove some instances of unneeded casting of kmalloc's return in
 	  lpfc_scsiport.c
-	* Remove lpfc_linux_attach() and lpfc_linux_detach(). Integrate
+	* Remove lpfc_freax_attach() and lpfc_freax_detach(). Integrate
 	  them into lpfc_probe_one() and lpfc_release_one() respectively.
 	* Remove lpfc_num_iocbs, lpfc_num_bufs module parameters
 	* Remove #defines for NUM_NODES, NUM_BUFS and NUM_IOCBS
@@ -1269,7 +1269,7 @@ Changes from 20040515 to 20040526
 	* Eliminate unnecessary checking on every cmd just to see if we
 	  are accessing the device the first time.
 	* Remove assumption in lpfc_reset_lun_handler that a valid
-	  lpfc_scsi_buf is hung off of linux's scsi_cmnd->host_scribble
+	  lpfc_scsi_buf is hung off of freax's scsi_cmnd->host_scribble
 	  when our reset is called.
 
 Changes from 20040507 to 20040515
@@ -1366,7 +1366,7 @@ Changes from 20040416 to 20040426
 	* Removed code that manipulates rspSnsLen.
 	* Fix use of lun-q-depth config param
 	* Fix severity inconsistency with log message 249
-	* Removed lpfc_max_target from lpfc_linux_attach
+	* Removed lpfc_max_target from lpfc_freax_attach
 	* Replace references to lpfcDRVR.pHba[] with lpfc_get_phba_by_inst()
 	* Change lpfc_param to lpfc-param
 	* Partially removed 32 HBA restriction within driver.  Incorporated
@@ -1403,7 +1403,7 @@ Changes from 20040409 to 20040416
 	  during driver load will cause this and the driver to panic.
 	  Fixed this bug.  Also found a bug in the error_x handling with
 	  lpfc_sli_hba_down - it was in the wrong place and the driver
-	  lock was not held, but needed to be (in lpfc_linux_attach) Fixed
+	  lock was not held, but needed to be (in lpfc_freax_attach) Fixed
 	  both.  Did some minor comment clean up.
 	* Removed unwanted (void *) castings.
 	* Replace define of INVALID_PHYS, with kernel 2.6.5's
@@ -1457,11 +1457,11 @@ Changes from 20040402 to 20040409
 	* Change sleep to uninterruptible in lpfc_sli_issue_icob_wait
 	  because this function doesn't handle signals.
 	* Move lpfc_wakeup_event from lpfc_fcp.c to lpfc_ioctl.c
-	* Remove unneeded #include <linux/netdevice.h>
+	* Remove unneeded #include <freax/netdevice.h>
 	* Remove unused clock variables lpfc_clkCnt and lpfc_sec_clk.
 	* Get rid of capitalization of function names.
 	* Removed lpfc_addr_sprintf.
-	* Implemented gotos in lpfc_linux_attach for error cases.
+	* Implemented gotos in lpfc_freax_attach for error cases.
 	* Replace mlist->dma.list = dmp->dma.list; to mlist = dmp.
 	* Remove functions lpfc_get_OsNameVersion and elx_wakeup. Change
 	  elx_wakeup to wake_up_interruptible
@@ -1486,7 +1486,7 @@ Changes from 20040402 to 20040409
 	* Renamed elx_sched.c to lpfc_sched.c
 	* Renamed elx_mem.c to lpfc_mem.c
 	* Renamed elx_logmsg.c to lpfc_logmsg.c
-	* Renamed lpfcLINUXfcp.c lpfc_fcp.c
+	* Renamed lpfcfreaxfcp.c lpfc_fcp.c
 	* Renamed elx_clock.c to lpfc_clock.c
 	* Reduce stack usage in lpfc_info().
 	* Move lpip_stats structure from lpfc_hba.h to lpfc_ip.h.
@@ -1529,10 +1529,10 @@ Changes from 20040326 to 20040402
 	* Remove nle. reference.
         * Remove support for building 2.4 drivers
 	* Remove elx_util.h and replace elx_disc.h with lpfc_disc.h
-	* Implemented the Linux list macros in the discovery code.
+	* Implemented the freax list macros in the discovery code.
 	  Also moved elx_disc.h contents into lpfc_disc.h
 	* Unused variable cleanup
-	* Use Linux list macros for DMABUF_t
+	* Use freax list macros for DMABUF_t
 	* Break up ioctls into 3 sections, dfc, util, hbaapi
 	  rearranged code so this could be easily separated into a
 	  different module later. All 3 are currently turned on by
@@ -1547,7 +1547,7 @@ Changes from 20040326 to 20040402
 	* Cleaned up iocb list using list macros and list_head data
 	  structure.
 	* lpfc_online() was missing some timer routines that were
-	  started by lpfc_linux_attach().  These routines are now also
+	  started by lpfc_freax_attach().  These routines are now also
 	  started by lpfc_online().  lpfc_offline() only stopped
 	  els_timeout routine.  It now stops all timeout routines
 	  associated with that hba.
@@ -1610,14 +1610,14 @@ Changes from 20040326 to 20040402
 	* Remove references to "elx_clock.h"
 	* Added utsname.h to include list.  The previous checkin to
 	  elx_os.h removed its inclusion of utsname.h since there is
-	  precious little in the file.  However, lpfcLINUXfcp.c needs
+	  precious little in the file.  However, lpfcfreaxfcp.c needs
 	  it and now has it.
 	* Removed some commented-out code
 	* Removed elx_lck_t data structure, stray elxDRVR_t type, and
 	  include from file.  No longer used.
 	* Removed two PCI Sync defines.  Removed includes - not
 	  needed.  Cleaned up macro lines.
-	* Added two functions from elxLINUXfcp.c.  These functions
+	* Added two functions from elxfreaxfcp.c.  These functions
 	  were IPFC specific.
 	* Removed hipri lock abstractions and added OS call into code.
 	  Removed elx_lck_t and added spinlock_t directly. Moved two
@@ -1630,7 +1630,7 @@ Changes from 20040326 to 20040402
 	* Patched elx_free_scsi_buf
   	* Removed elx_sched.o from 2.6 dependencies
 	* Reworked lpfc_pcimap.
-	* Use Linux swap macros to replace ELX swapping macros
+	* Use freax swap macros to replace ELX swapping macros
 	  (SWAP_SHORT, SWAP_LONG, SWAP_DATA, SWAP_DATA16,
 	  PCIMEM_SHORT, PCIMEM_LONG, PCIMEM_DATA).
 	* move in_interrupt() check inside of elx_sleep_ms()
@@ -1674,9 +1674,9 @@ Changes from 20040326 to 20040402
 	  not generated if CONFIG_NET_LPFC is not set. Also refer to
 	  BASEINCLUDE only in out of kernel source module builds as it
 	  will not exist otherwise.
-	* Removed unused malloc counters from lpfcLINUXfcp.c.
-	* Remove some unnecessary #includes in lpfcLINUXfcp.c
-	* Remove unnecessary #includes in elxLINUXfcp.c
+	* Removed unused malloc counters from lpfcfreaxfcp.c.
+	* Remove some unnecessary #includes in lpfcfreaxfcp.c
+	* Remove unnecessary #includes in elxfreaxfcp.c
 	* Minor formatting cleanups in Makefile to avoid some
           linewrapping.
 	* Removed unused elx_mem_pool data structure.
@@ -1707,7 +1707,7 @@ Changes from 20040319 to 20040326
 	  messages 406, 407, 409, 927, 928, 1201, 1202, 1204, 1205, 1206
 	  and 1207.  Create a new message 738 to fix duplicate instances
 	  of 736.
-	* Removed remaining pci interface abstractions from elxLINUXfcp.c.
+	* Removed remaining pci interface abstractions from elxfreaxfcp.c.
 	  Implemented OS calls directly in all remaining files and cleaned
 	  up modules.  Removed prototypes as well.
 	* Removed following functions/structures elx_mem_dmapool
@@ -1718,7 +1718,7 @@ Changes from 20040319 to 20040326
 	* lpfc_els_timeout_handler() now uses system timer.
 	* Further cleanup of #ifdef powerpc
 	* lpfc_scsi_timeout_handler() now uses system timer.
-	* Replace common driver's own defines for endianness w/ Linux's
+	* Replace common driver's own defines for endianness w/ freax's
 	  __BIG_ENDIAN etc.
 	* Added #ifdef IPFC for all IPFC specific code.
 	* lpfc_disc_retry_rptlun() now uses system timer.
@@ -1740,7 +1740,7 @@ Changes from 20040319 to 20040326
 	* moving sysfs show/store implementations to lpfc_sysfs.c. Also add
 	  support for lip.
 	* Add files: lpfc_sysfs.c, lpfc_sysfs.h
-	* move LPFC_DRIVER_NAME and LPFC_MODULE_DESC out of lpfcLINUXfcp.c
+	* move LPFC_DRIVER_NAME and LPFC_MODULE_DESC out of lpfcfreaxfcp.c
 	  to lpfc_version.h, since it is now needed in lpfc_sysfs.c
 	* elx_mbox_timeout now uses system timer
 	* Changed lpfc_nodev_timeout, lpfc_els_retry_delay and
@@ -1751,18 +1751,18 @@ Changes from 20040319 to 20040326
 	* Remove some unnecessary typecasting.
 	* Remove log message that is no longer used (was used by
 	  elx_str_atox).
-	* Replaced DLINK_t and SLINK_t by standard Linux list_head
+	* Replaced DLINK_t and SLINK_t by standard freax list_head
 	* Removed deque macro
-	* Replaced ELX_DLINK_t and ELX_SLINK_t by Linux struct list_head
+	* Replaced ELX_DLINK_t and ELX_SLINK_t by freax struct list_head
 	  (except for clock)
-	* Removed following functions from code: linux_kmalloc linux_kfree
+	* Removed following functions from code: freax_kmalloc freax_kfree
 	  elx_alloc_bigbuf elx_free_bigbuf
 	* Removed following abstract functions from the code.  elx_malloc
 	  elx_free elx_ip_get_rcv_buf elx_ip_free_rcv_buf
 	  elx_mem_alloc_dmabuf elx_mem_alloc_dmabufext elx_mem_alloc_dma
 	  elx_mem_alloc_buf lpfc_bufmap
 	* Removed custom PCI configuration #defines and replaced with
-	  OS-provided #defines. Also added linux/pci.h to *.c files.
+	  OS-provided #defines. Also added freax/pci.h to *.c files.
 	* Remove elx_str_ctox.	Replace elx_str_atox with sscanf.
 	* Many indentation/whitespace fixes.
 	* Replace elx_str_ctox with isxdigit where it was only used to
@@ -1776,9 +1776,9 @@ Changes from 20040319 to 20040326
 	* Move 2.6 compatibility irqreturn definitions to lpfc_compat.h.
 	  Protect these definitions from conflicting with similar ones in
 	  later 2.4 kernels.
-	* Remove unused definitions: LINUX_TGT_t, LINUX_LUN_t,
-	  LINUX_BUF_t, elx_lun_t, SET_ADAPTER_STATUS.
-	* Convert pci_ calls to linux 2.6 dma_ equivalents.
+	* Remove unused definitions: freax_TGT_t, freax_LUN_t,
+	  freax_BUF_t, elx_lun_t, SET_ADAPTER_STATUS.
+	* Convert pci_ calls to freax 2.6 dma_ equivalents.
 	* Removed unused types: struct buf, struct sc_buf, T_SCSIBUF
 	  typedef.
 	* Fix Makefile so that 2.4 drivers don't always rebuild all files.
@@ -1819,7 +1819,7 @@ Changes from 20040312 to 20040319
 	  in lpfc_ValidLun()
 	* Change elx_printf_log to use vsprintf.
 	* Added lpfc_compat.h provides macros to aid compilation in the
-	  Linux 2.4 kernel over various platform architectures.  Initially
+	  freax 2.4 kernel over various platform architectures.  Initially
 	  support mapping to a DMA address.
 	* Removed memory pool for nlp/bind buffers and use kmalloc/kfree
 	  directly.
@@ -1839,12 +1839,12 @@ Changes from 20040312 to 20040319
 	* Removed the mem_lock, its prototype, function, macro, and
 	  iflags.
 	* Use kmalloc/kfree for ELX_SCSI_BUF_t
-	* Use linux pci_pools for SCSI_DMA_EXT
-	* Use linux pci_pools for BPLs.
+	* Use freax pci_pools for SCSI_DMA_EXT
+	* Use freax pci_pools for BPLs.
 	* Minor cleanup of DFC args for PPC64.
 	* Several small indentation cleanups.
-	* New Linux 2.6 style of char device registration.
-	* Migrated members of LPFCHBA_t and LINUX_HBA_t into elxHBA_t
+	* New freax 2.6 style of char device registration.
+	* Migrated members of LPFCHBA_t and freax_HBA_t into elxHBA_t
 	* Use strcpy, strncmp, isdigit, strlen instead of abstractions
 	* Cleanup of driver_template.
 	* Facilitate compile time turn on/off of lpfc_network_on.

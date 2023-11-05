@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/net/etherh.c
+ *  freax/drivers/acorn/net/etherh.c
  *
  *  Copyright (C) 2000-2002 Russell King
  *
@@ -23,24 +23,24 @@
  *  03-01-2002	RMK	1.09	Always enable IRQs if we're in the nic slot.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
 
 #include <asm/ecard.h>
 #include <asm/io.h>

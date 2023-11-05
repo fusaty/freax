@@ -3,13 +3,13 @@
  * Copyright (C) 2022 Linaro Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
 
 struct gpio_sbu_mux {
 	struct gpio_desc *enable_gpio;

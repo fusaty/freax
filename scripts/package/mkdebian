@@ -2,7 +2,7 @@
 #
 # Copyright 2003 Wichert Akkerman <wichert@wiggy.net>
 #
-# Simple script to generate a debian/ directory for a Linux kernel.
+# Simple script to generate a debian/ directory for a freax kernel.
 
 set -e
 
@@ -103,7 +103,7 @@ gen_source ()
 		echo "Author: ${maintainer}"
 		echo
 		echo "--- /dev/null"
-		echo "+++ linux/.config"
+		echo "+++ freax/.config"
 		diff -u /dev/null "${KCONFIG_CONFIG}" | tail -n +3
 	} > debian/patches/config.patch
 	echo config.patch > debian/patches/series
@@ -152,12 +152,12 @@ if [ -n "$KDEB_PKGVERSION" ]; then
 else
 	packageversion=$(${srctree}/scripts/setlocalversion --no-local ${srctree})-$($srctree/init/build-version)
 fi
-sourcename=${KDEB_SOURCENAME:-linux-upstream}
+sourcename=${KDEB_SOURCENAME:-freax-upstream}
 
 if [ "$ARCH" = "um" ] ; then
-	packagename=user-mode-linux
+	packagename=user-mode-freax
 else
-	packagename=linux-image
+	packagename=freax-image
 fi
 
 debarch=
@@ -183,28 +183,28 @@ extra_build_depends="$extra_build_depends, $(if_enabled_echo CONFIG_SYSTEM_TRUST
 cat <<EOF > debian/changelog
 $sourcename ($packageversion) $distribution; urgency=low
 
-  * Custom built Linux kernel.
+  * Custom built freax kernel.
 
  -- $maintainer  $(date -R)
 EOF
 
 # Generate copyright file
 cat <<EOF > debian/copyright
-This is a packaged upstream version of the Linux kernel.
+This is a packaged upstream version of the freax kernel.
 
-The sources may be found at most Linux archive sites, including:
-https://www.kernel.org/pub/linux/kernel
+The sources may be found at most freax archive sites, including:
+https://www.kernel.org/pub/freax/kernel
 
 Copyright: 1991 - 2018 Linus Torvalds and others.
 
 The git repository for mainline kernel development is at:
-git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+git://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; version 2 dated June, 1991.
 
-On Debian GNU/Linux systems, the complete text of the GNU General Public
+On Debian GNU/freax systems, the complete text of the GNU General Public
 License version 2 can be found in \`/usr/share/common-licenses/GPL-2'.
 EOF
 
@@ -220,20 +220,20 @@ Homepage: https://www.kernel.org/
 
 Package: $packagename-$version
 Architecture: $debarch
-Description: Linux kernel, version $version
- This package contains the Linux kernel, modules and corresponding other
+Description: freax kernel, version $version
+ This package contains the freax kernel, modules and corresponding other
  files, version: $version.
 EOF
 
 if [ "${SRCARCH}" != um ]; then
 cat <<EOF >> debian/control
 
-Package: linux-libc-dev
+Package: freax-libc-dev
 Section: devel
-Provides: linux-kernel-headers
+Provides: freax-kernel-headers
 Architecture: $debarch
-Description: Linux support headers for userspace development
- This package provides userspaces headers from the Linux kernel.  These headers
+Description: freax support headers for userspace development
+ This package provides userspaces headers from the freax kernel.  These headers
  are used by the installed headers for GNU glibc and other system libraries.
 Multi-Arch: same
 EOF
@@ -241,9 +241,9 @@ EOF
 if is_enabled CONFIG_MODULES; then
 cat <<EOF >> debian/control
 
-Package: linux-headers-$version
+Package: freax-headers-$version
 Architecture: $debarch
-Description: Linux kernel headers for $version on $debarch
+Description: freax kernel headers for $version on $debarch
  This package provides kernel header files for $version on $debarch
  .
  This is useful for people who need to build external modules
@@ -254,10 +254,10 @@ fi
 if is_enabled CONFIG_DEBUG_INFO; then
 cat <<EOF >> debian/control
 
-Package: linux-image-$version-dbg
+Package: freax-image-$version-dbg
 Section: debug
 Architecture: $debarch
-Description: Linux kernel debugging symbols for $version
+Description: freax kernel debugging symbols for $version
  This package will come in handy if you need to debug the kernel. It provides
  all the necessary debug symbols for the kernel and its modules.
 EOF

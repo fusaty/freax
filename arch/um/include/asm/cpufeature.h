@@ -7,7 +7,7 @@
 #if defined(__KERNEL__) && !defined(__ASSEMBLY__)
 
 #include <asm/asm.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 extern const char * const x86_cap_flags[NCAPINTS*32];
 extern const char * const x86_power_flags[32];

@@ -20,8 +20,8 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_plane.h>
 #include <drm/drm_drv.h>
@@ -137,7 +137,7 @@
  *     Note that userspace can check the &DRM_CAP_ADDFB2_MODIFIERS driver
  *     capability for general modifier support. If this flag is set then every
  *     plane will have the IN_FORMATS property, even when it only supports
- *     DRM_FORMAT_MOD_LINEAR. Before linux kernel release v5.1 there have been
+ *     DRM_FORMAT_MOD_LINEAR. Before freax kernel release v5.1 there have been
  *     various bugs in this area with inconsistencies between the capability
  *     flag and per-plane properties.
  */

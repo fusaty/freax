@@ -9,10 +9,10 @@
  * Copyright (C) 2008 Ingo Molnar <mingo@redhat.com>
  *
  */
-#include <linux/init.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/ftrace.h>
+#include <freax/init.h>
+#include <freax/kgdb.h>
+#include <freax/kdb.h>
+#include <freax/ftrace.h>
 
 #include "trace.h"
 #include "trace_output.h"

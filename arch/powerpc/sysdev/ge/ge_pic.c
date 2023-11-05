@@ -10,15 +10,15 @@
  * kind, whether express or implied.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/interrupt.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/spinlock.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

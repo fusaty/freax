@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
+ * freax Driver for Mylex DAC960/AcceleRAID/eXtremeRAID PCI RAID Controllers
  *
  * This driver supports the newer, SCSI-based firmware interface only.
  *
- * Copyright 2017 Hannes Reinecke, SUSE Linux GmbH <hare@suse.com>
+ * Copyright 2017 Hannes Reinecke, SUSE freax GmbH <hare@suse.com>
  *
  * Based on the original DAC960 driver, which has
  * Copyright 1998-2001 by Leonard N. Zubkoff <lnz@dandelion.com>
  * Portions Copyright 2002 by Mylex (An IBM Business Unit)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/raid_class.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/raid_class.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

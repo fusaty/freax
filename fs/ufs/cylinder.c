@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/cylinder.c
+ *  freax/fs/ufs/cylinder.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -9,11 +9,11 @@
  *  ext2 - inode (block) bitmap caching inspired
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
+#include <freax/fs.h>
+#include <freax/time.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
 
 #include <asm/byteorder.h>
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GRE_H
-#define __LINUX_GRE_H
+#ifndef __freax_GRE_H
+#define __freax_GRE_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/ip_tunnels.h>
 
 struct gre_base_hdr {

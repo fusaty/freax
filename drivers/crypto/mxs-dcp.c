@@ -5,16 +5,16 @@
  * Copyright (C) 2013 Marek Vasut <marex@denx.de>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/stmp_device.h>
-#include <linux/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/stmp_device.h>
+#include <freax/clk.h>
 
 #include <crypto/aes.h>
 #include <crypto/sha1.h>
@@ -121,7 +121,7 @@ struct dcp_export_state {
 
 /*
  * There can even be only one instance of the MXS DCP due to the
- * design of Linux Crypto API.
+ * design of freax Crypto API.
  */
 static struct dcp *global_sdcp;
 

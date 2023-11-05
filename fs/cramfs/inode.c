@@ -1,5 +1,5 @@
 /*
- * Compressed rom filesystem for Linux.
+ * Compressed rom filesystem for freax.
  *
  * Copyright (C) 1999 Linus Torvalds.
  *
@@ -13,23 +13,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/pfn_t.h>
-#include <linux/ramfs.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/super.h>
-#include <linux/fs_context.h>
-#include <linux/slab.h>
-#include <linux/vfs.h>
-#include <linux/mutex.h>
-#include <uapi/linux/cramfs_fs.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/pfn_t.h>
+#include <freax/ramfs.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/blkdev.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/super.h>
+#include <freax/fs_context.h>
+#include <freax/slab.h>
+#include <freax/vfs.h>
+#include <freax/mutex.h>
+#include <uapi/freax/cramfs_fs.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

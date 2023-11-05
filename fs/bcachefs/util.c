@@ -6,22 +6,22 @@
  * Copyright 2012 Google, Inc.
  */
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched/clock.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/console.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/log2.h>
+#include <freax/math64.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/sched/clock.h>
 
 #include "eytzinger.h"
 #include "mean_and_variance.h"

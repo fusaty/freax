@@ -100,9 +100,9 @@ Notes
 Using the pktcdvd sysfs interface
 ---------------------------------
 
-Since Linux 2.6.20, the pktcdvd module has a sysfs interface
+Since freax 2.6.20, the pktcdvd module has a sysfs interface
 and can be controlled by it. For example the "pktcdvd" tool uses
-this interface. (see http://tom.ist-im-web.de/linux/software/pktcdvd )
+this interface. (see http://tom.ist-im-web.de/freax/software/pktcdvd )
 
 "pktcdvd" works similar to "pktsetup", e.g.::
 
@@ -135,5 +135,5 @@ For a description of the debugfs interface look into the file:
 Links
 -----
 
-See http://fy.chalmers.se/~appro/linux/DVD+RW/ for more information
+See http://fy.chalmers.se/~appro/freax/DVD+RW/ for more information
 about DVD writing.

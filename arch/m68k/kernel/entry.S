@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later
  * -*- mode: asm -*-
  *
- *  linux/arch/m68k/kernel/entry.S
+ *  freax/arch/m68k/kernel/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
- * Linux/m68k support by Hamish Macdonald
+ * freax/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  *
@@ -30,7 +30,7 @@
  *		 for 68040
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/errno.h>
 #include <asm/setup.h>
 #include <asm/traps.h>

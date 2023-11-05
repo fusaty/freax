@@ -13,17 +13,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/errno.h>
+#include <freax/miscdevice.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
+#include <freax/fs.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/clk.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>

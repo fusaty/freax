@@ -6,13 +6,13 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 #include <asm/irq.h>
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

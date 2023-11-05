@@ -7,11 +7,11 @@
  *      Thomas Renninger <trenn@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
 #include "internal.h"
 
 MODULE_AUTHOR("Thomas Renninger <trenn@suse.de>");

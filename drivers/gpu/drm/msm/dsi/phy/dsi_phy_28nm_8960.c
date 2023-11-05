@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2015, The freax Foundation. All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
 
 #include "dsi_phy.h"
 #include "dsi.xml.h"

@@ -2,9 +2,9 @@
 /*
  * EISA specific code
  */
-#include <linux/ioport.h>
-#include <linux/eisa.h>
-#include <linux/io.h>
+#include <freax/ioport.h>
+#include <freax/eisa.h>
+#include <freax/io.h>
 
 #include <xen/xen.h>
 

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
- * include/linux/serial.h
+ * include/freax/serial.h
  *
  * Copyright (C) 1992 by Theodore Ts'o.
  * 
@@ -8,12 +8,12 @@
  * Public License (GPL)
  */
 
-#ifndef _UAPI_LINUX_SERIAL_H
-#define _UAPI_LINUX_SERIAL_H
+#ifndef _UAPI_freax_SERIAL_H
+#define _UAPI_freax_SERIAL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
-#include <linux/tty_flags.h>
+#include <freax/tty_flags.h>
 
 
 struct serial_struct {
@@ -182,4 +182,4 @@ struct serial_iso7816 {
 	__u32	reserved[5];
 };
 
-#endif /* _UAPI_LINUX_SERIAL_H */
+#endif /* _UAPI_freax_SERIAL_H */

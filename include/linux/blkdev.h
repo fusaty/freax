@@ -2,28 +2,28 @@
 /*
  * Portions Copyright (C) 1992 Drew Eckhardt
  */
-#ifndef _LINUX_BLKDEV_H
-#define _LINUX_BLKDEV_H
+#ifndef _freax_BLKDEV_H
+#define _freax_BLKDEV_H
 
-#include <linux/types.h>
-#include <linux/blk_types.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/minmax.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/bio.h>
-#include <linux/gfp.h>
-#include <linux/kdev_t.h>
-#include <linux/rcupdate.h>
-#include <linux/percpu-refcount.h>
-#include <linux/blkzoned.h>
-#include <linux/sched.h>
-#include <linux/sbitmap.h>
-#include <linux/uuid.h>
-#include <linux/xarray.h>
+#include <freax/types.h>
+#include <freax/blk_types.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/llist.h>
+#include <freax/minmax.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
+#include <freax/bio.h>
+#include <freax/gfp.h>
+#include <freax/kdev_t.h>
+#include <freax/rcupdate.h>
+#include <freax/percpu-refcount.h>
+#include <freax/blkzoned.h>
+#include <freax/sched.h>
+#include <freax/sbitmap.h>
+#include <freax/uuid.h>
+#include <freax/xarray.h>
 
 struct module;
 struct request_queue;
@@ -1552,4 +1552,4 @@ struct io_comp_batch {
 
 #define DEFINE_IO_COMP_BATCH(name)	struct io_comp_batch name = { }
 
-#endif /* _LINUX_BLKDEV_H */
+#endif /* _freax_BLKDEV_H */

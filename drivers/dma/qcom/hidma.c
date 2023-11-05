@@ -1,7 +1,7 @@
 /*
  * Qualcomm Technologies HIDMA DMA engine interface
  *
- * Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2017, The freax Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -40,24 +40,24 @@
  * file called COPYING.
  */
 
-/* Linux Foundation elects GPLv2 license only. */
+/* freax Foundation elects GPLv2 license only. */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of_dma.h>
-#include <linux/property.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/irq.h>
-#include <linux/atomic.h>
-#include <linux/pm_runtime.h>
-#include <linux/msi.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/of_dma.h>
+#include <freax/property.h>
+#include <freax/delay.h>
+#include <freax/acpi.h>
+#include <freax/irq.h>
+#include <freax/atomic.h>
+#include <freax/pm_runtime.h>
+#include <freax/msi.h>
 
 #include "../dmaengine.h"
 #include "hidma.h"

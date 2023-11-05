@@ -12,13 +12,13 @@
  * merely parroted back to the host at the start of each frame.
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 
 #include "go7007-priv.h"

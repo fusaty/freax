@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/scsi/queue.c: queue handling primitives
+ *  freax/drivers/acorn/scsi/queue.c: queue handling primitives
  *
  *  Copyright (C) 1997-2000 Russell King
  *
@@ -9,16 +9,16 @@
  *   11-Oct-1997 RMK	Corrected problem with queue_remove_exclude
  *			not updating internal linked list properly
  *			(was causing commands to go missing).
- *   30-Aug-2000 RMK	Use Linux list handling and spinlocks
+ *   30-Aug-2000 RMK	Use freax list handling and spinlocks
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/init.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

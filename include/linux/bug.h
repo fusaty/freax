@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BUG_H
-#define _LINUX_BUG_H
+#ifndef _freax_BUG_H
+#define _freax_BUG_H
 
 #include <asm/bug.h>
-#include <linux/compiler.h>
-#include <linux/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/build_bug.h>
 
 enum bug_trap_type {
 	BUG_TRAP_TYPE_NONE = 0,
@@ -91,4 +91,4 @@ static inline __must_check bool check_data_corruption(bool v) { return v; }
 		corruption;						 \
 	}))
 
-#endif	/* _LINUX_BUG_H */
+#endif	/* _freax_BUG_H */

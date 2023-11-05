@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
 
 #include "ionic.h"
 #include "ionic_bus.h"

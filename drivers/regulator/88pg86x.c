@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/regulator/driver.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/regulator/driver.h>
+#include <freax/regmap.h>
 
 static const struct regulator_ops pg86x_ops = {
 	.set_voltage_sel = regulator_set_voltage_sel_regmap,

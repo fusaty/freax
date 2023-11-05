@@ -2,11 +2,11 @@
 #ifndef BLK_STAT_H
 #define BLK_STAT_H
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/ktime.h>
-#include <linux/rcupdate.h>
-#include <linux/timer.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/ktime.h>
+#include <freax/rcupdate.h>
+#include <freax/timer.h>
 
 /**
  * struct blk_stat_callback - Block statistics callback.

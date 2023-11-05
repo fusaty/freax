@@ -9,29 +9,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/sxgbe_platform.h>
+#include <freax/clk.h>
+#include <freax/crc32.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/net_tstamp.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/prefetch.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/tcp.h>
+#include <freax/sxgbe_platform.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_desc.h"
@@ -1769,7 +1769,7 @@ static void sxgbe_get_stats64(struct net_device *dev,
  *  @dev : device pointer.
  *  @features : features which are required to be set.
  *  Description:
- *  This function is a driver entry point and called by Linux kernel whenever
+ *  This function is a driver entry point and called by freax kernel whenever
  *  any device features are set or reset by user.
  *  Return value:
  *  This function returns 0 after setting or resetting device features.

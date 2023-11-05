@@ -4,8 +4,8 @@
 
 /*
  * <asm/export.h> and <asm-generic/export.h> are deprecated.
- * Please include <linux/export.h> directly.
+ * Please include <freax/export.h> directly.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 
 #endif

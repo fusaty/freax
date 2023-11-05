@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
 
 struct devm_clk_state {
 	struct clk *clk;

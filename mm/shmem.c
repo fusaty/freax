@@ -1,5 +1,5 @@
 /*
- * Resizable virtual memory filesystem for Linux.
+ * Resizable virtual memory filesystem for freax.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *		 2000 Transmeta Corp.
@@ -21,25 +21,25 @@
  * This file is released under the GPL.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/ramfs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/fileattr.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/shmem_fs.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/hugetlb.h>
-#include <linux/fs_parser.h>
-#include <linux/swapfile.h>
-#include <linux/iversion.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/vfs.h>
+#include <freax/mount.h>
+#include <freax/ramfs.h>
+#include <freax/pagemap.h>
+#include <freax/file.h>
+#include <freax/fileattr.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/sched/signal.h>
+#include <freax/export.h>
+#include <freax/shmem_fs.h>
+#include <freax/swap.h>
+#include <freax/uio.h>
+#include <freax/hugetlb.h>
+#include <freax/fs_parser.h>
+#include <freax/swapfile.h>
+#include <freax/iversion.h>
 #include "swap.h"
 
 static struct vfsmount *shm_mnt __ro_after_init;
@@ -51,36 +51,36 @@ static struct vfsmount *shm_mnt __ro_after_init;
  * which makes it a completely usable filesystem.
  */
 
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/percpu_counter.h>
-#include <linux/falloc.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/swapops.h>
-#include <linux/mempolicy.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/migrate.h>
-#include <linux/highmem.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <uapi/linux/memfd.h>
-#include <linux/rmap.h>
-#include <linux/uuid.h>
-#include <linux/quotaops.h>
+#include <freax/xattr.h>
+#include <freax/exportfs.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/mman.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
+#include <freax/pagevec.h>
+#include <freax/percpu_counter.h>
+#include <freax/falloc.h>
+#include <freax/splice.h>
+#include <freax/security.h>
+#include <freax/swapops.h>
+#include <freax/mempolicy.h>
+#include <freax/namei.h>
+#include <freax/ctype.h>
+#include <freax/migrate.h>
+#include <freax/highmem.h>
+#include <freax/seq_file.h>
+#include <freax/magic.h>
+#include <freax/syscalls.h>
+#include <freax/fcntl.h>
+#include <uapi/freax/memfd.h>
+#include <freax/rmap.h>
+#include <freax/uuid.h>
+#include <freax/quotaops.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 
@@ -4856,7 +4856,7 @@ int shmem_zero_setup(struct vm_area_struct *vma)
 
 	/*
 	 * Cloning a new file under mmap_lock leads to a lock ordering conflict
-	 * between XFS directory reading and selinux: since this file is only
+	 * between XFS directory reading and sefreax: since this file is only
 	 * accessible to the user through its mapping, use S_PRIVATE flag to
 	 * bypass file security, in the same way as shmem_kernel_file_setup().
 	 */

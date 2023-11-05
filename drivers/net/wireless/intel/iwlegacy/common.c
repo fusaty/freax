@@ -4,21 +4,21 @@
  * Copyright(c) 2008 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel freax Wireless <ilw@freax.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/lockdep.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/skbuff.h>
 #include <net/mac80211.h>
 
 #include "common.h"

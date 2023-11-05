@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext2/xattr_security.c
+ * freax/fs/ext2/xattr_security.c
  * Handler for storing security labels as extended attributes.
  */
 
 #include "ext2.h"
-#include <linux/security.h>
+#include <freax/security.h>
 #include "xattr.h"
 
 static int

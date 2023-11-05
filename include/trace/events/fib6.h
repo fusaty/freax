@@ -5,10 +5,10 @@
 #if !defined(_TRACE_FIB6_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FIB6_H
 
-#include <linux/in6.h>
+#include <freax/in6.h>
 #include <net/flow.h>
 #include <net/ip6_fib.h>
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(fib6_table_lookup,
 

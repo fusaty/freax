@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 //
-// linux/sound/mpc5200-ac97.c -- AC97 support for the Freescale MPC52xx chip.
+// freax/sound/mpc5200-ac97.c -- AC97 support for the Freescale MPC52xx chip.
 //
 // Copyright (C) 2009 Jon Smirl, Digispeaker
 // Author: Jon Smirl <jonsmirl@gmail.com>
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/time.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

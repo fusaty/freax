@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PKEYS_H
-#define _LINUX_PKEYS_H
+#ifndef _freax_PKEYS_H
+#define _freax_PKEYS_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 #define ARCH_DEFAULT_PKEY	0
 
@@ -48,4 +48,4 @@ static inline bool arch_pkeys_enabled(void)
 
 #endif /* ! CONFIG_ARCH_HAS_PKEYS */
 
-#endif /* _LINUX_PKEYS_H */
+#endif /* _freax_PKEYS_H */

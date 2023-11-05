@@ -8,10 +8,10 @@
  */
 
 #include <kunit/test.h>
-#include <linux/device.h>
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/fpga/fpga-bridge.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 struct bridge_stats {
 	bool enable;

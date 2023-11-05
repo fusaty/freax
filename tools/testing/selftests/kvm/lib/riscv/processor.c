@@ -5,7 +5,7 @@
  * Copyright (C) 2021 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <assert.h>
 
 #include "kvm_util.h"

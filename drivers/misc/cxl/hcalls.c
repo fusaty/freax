@@ -4,9 +4,9 @@
  */
 
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/delay.h>
 #include <asm/byteorder.h>
 #include "hcalls.h"
 #include "trace.h"

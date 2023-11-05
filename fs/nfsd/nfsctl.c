@@ -5,18 +5,18 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/fs_context.h>
+#include <freax/slab.h>
+#include <freax/namei.h>
+#include <freax/ctype.h>
+#include <freax/fs_context.h>
 
-#include <linux/sunrpc/svcsock.h>
-#include <linux/lockd/lockd.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/module.h>
-#include <linux/fsnotify.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/lockd/lockd.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
+#include <freax/module.h>
+#include <freax/fsnotify.h>
 
 #include "idmap.h"
 #include "nfsd.h"

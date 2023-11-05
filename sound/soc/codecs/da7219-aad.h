@@ -10,8 +10,8 @@
 #ifndef __DA7219_AAD_H
 #define __DA7219_AAD_H
 
-#include <linux/timer.h>
-#include <linux/mutex.h>
+#include <freax/timer.h>
+#include <freax/mutex.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include <sound/da7219-aad.h>

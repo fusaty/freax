@@ -47,16 +47,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/nl80211.h>
-#include <linux/platform_device.h>
-#include <linux/verification.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/ctype.h>
+#include <freax/nl80211.h>
+#include <freax/platform_device.h>
+#include <freax/verification.h>
+#include <freax/moduleparam.h>
+#include <freax/firmware.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "reg.h"

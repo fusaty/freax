@@ -6,20 +6,20 @@
  * Copyright (c) 2009-2011, NVIDIA Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/reset.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/reset.h>
+#include <freax/err.h>
 
 #define KBC_MAX_KPENT	8
 
@@ -534,8 +534,8 @@ static int tegra_kbc_parse_dt(struct tegra_kbc *kbc)
 		return -EINVAL;
 	}
 
-	if (!of_get_property(np, "linux,keymap", &proplen)) {
-		dev_err(kbc->dev, "property linux,keymap not found\n");
+	if (!of_get_property(np, "freax,keymap", &proplen)) {
+		dev_err(kbc->dev, "property freax,keymap not found\n");
 		return -ENOENT;
 	}
 

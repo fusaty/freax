@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * A generic implementation of binary search for the Linux kernel
+ * A generic implementation of binary search for the freax kernel
  *
  * Copyright (C) 2008-2009 Ksplice, Inc.
  * Author: Tim Abbott <tabbott@ksplice.com>
  */
 
-#include <linux/export.h>
-#include <linux/bsearch.h>
-#include <linux/kprobes.h>
+#include <freax/export.h>
+#include <freax/bsearch.h>
+#include <freax/kprobes.h>
 
 /*
  * bsearch - binary search an array of elements

@@ -5,16 +5,16 @@
  * Antoine Tenart <antoine.tenart@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/ulpi.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/usb/chipidea.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/ulpi.h>
 
 #include "ci.h"
 

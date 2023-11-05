@@ -13,7 +13,7 @@
 #include "net_driver.h"
 
 #if IS_ENABLED(CONFIG_SFC_SRIOV)
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <net/netfilter/nf_flow_table.h>
 
 struct efx_tc_ct_zone {

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * A hack to export Rust symbols for loadable modules without having to redo
- * the entire `include/linux/export.h` logic in Rust.
+ * the entire `include/freax/export.h` logic in Rust.
  *
  * This requires the Rust's new/future `v0` mangling scheme because the default
  * one ("legacy") uses invalid characters for C identifiers (thus we cannot use
@@ -11,7 +11,7 @@
  * accidentally exposed.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #define EXPORT_SYMBOL_RUST_GPL(sym) extern int sym; EXPORT_SYMBOL_GPL(sym)
 

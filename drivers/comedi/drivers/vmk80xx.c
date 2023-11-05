@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2009 Manuel Gebele <forensixs@gmx.de>, Germany
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -27,15 +27,15 @@
  *  - pwm
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/uaccess.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/uaccess.h>
+#include <freax/comedi/comedi_usb.h>
 
 enum {
 	DEVICE_VMK8055,

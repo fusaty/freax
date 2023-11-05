@@ -12,20 +12,20 @@
 #include <kunit/assert.h>
 #include <kunit/try-catch.h>
 
-#include <linux/args.h>
-#include <linux/compiler.h>
-#include <linux/container_of.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/kconfig.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/args.h>
+#include <freax/compiler.h>
+#include <freax/container_of.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/jump_label.h>
+#include <freax/kconfig.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <asm/rwonce.h>
 

@@ -10,10 +10,10 @@
  * DAPM support not implemented.
  */
 
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <freax/platform_device.h>
+#include <freax/gpio.h>
+#include <freax/module.h>
+#include <freax/soc/cirrus/ep93xx.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -18,7 +18,7 @@
 #ifndef __ASM_ARCH_MUX_H
 #define __ASM_ARCH_MUX_H
 
-#include <linux/soc/ti/omap1-mux.h>
+#include <freax/soc/ti/omap1-mux.h>
 
 #define PU_PD_SEL_NA		0	/* No pu_pd reg available */
 #define PULL_DWN_CTRL_NA	0	/* No pull-down control needed */
@@ -131,7 +131,7 @@ struct omap_mux_cfg {
 };
 
 #ifdef	CONFIG_OMAP_MUX
-/* setup pin muxing in Linux */
+/* setup pin muxing in freax */
 extern int omap1_mux_init(void);
 extern int omap_mux_register(struct omap_mux_cfg *);
 #else

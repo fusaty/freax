@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
 #include <asm/io.h>
 
 MODULE_AUTHOR("Daniel Quinlan <quinlan@pathname.com>, Vojtech Pavlik <vojtech@suse.cz>");

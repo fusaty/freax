@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for freax kernel debugging
 #
 #  VFS tools
 #
@@ -14,7 +14,7 @@
 #
 
 import gdb
-from linux import utils
+from freax import utils
 
 
 def dentry_name(d):

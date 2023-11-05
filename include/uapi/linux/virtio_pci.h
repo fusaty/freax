@@ -36,10 +36,10 @@
  * SUCH DAMAGE.
  */
 
-#ifndef _LINUX_VIRTIO_PCI_H
-#define _LINUX_VIRTIO_PCI_H
+#ifndef _freax_VIRTIO_PCI_H
+#define _freax_VIRTIO_PCI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef VIRTIO_PCI_NO_LEGACY
 

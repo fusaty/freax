@@ -6,16 +6,16 @@
  *	 Dave Gerlach <d-gerlach@ti.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define REVISION_MASK				0xF
 #define REVISION_SHIFT				28

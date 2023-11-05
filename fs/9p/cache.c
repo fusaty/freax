@@ -5,12 +5,12 @@
  *  Copyright (C) 2009 by Abhishek Kulkarni <adkulkar@umail.iu.edu>
  */
 
-#include <linux/jiffies.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
+#include <freax/jiffies.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
 #include <net/9p/9p.h>
 
 #include "v9fs.h"

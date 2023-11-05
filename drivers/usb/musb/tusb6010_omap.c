@@ -5,14 +5,14 @@
  * Copyright (C) 2006 Nokia Corporation
  * Tony Lindgren <tony@atomide.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/usb.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/dmaengine.h>
 
 #include "musb_core.h"
 #include "tusb6010.h"

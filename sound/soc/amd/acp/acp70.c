@@ -10,16 +10,16 @@
  * Hardware interface for ACP7.0 block
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm_runtime.h>
+#include <freax/pci.h>
 #include "amd.h"
 #include "acp-mach.h"
 

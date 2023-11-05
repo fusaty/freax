@@ -10,8 +10,8 @@
 #ifndef __STB0899_DRV_H
 #define __STB0899_DRV_H
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include <media/dvb_frontend.h>
 

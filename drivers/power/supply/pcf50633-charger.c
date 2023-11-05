@@ -9,18 +9,18 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/mbc.h>
 
 struct pcf50633_mbc {
 	struct pcf50633 *pcf;

@@ -5,39 +5,39 @@
  * Copyright (C) 2005-2007  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-cdev.h>
-#include <linux/idr.h>
-#include <linux/irqflags.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h> /* required for linux/wait.h */
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/compat.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/firewire.h>
+#include <freax/firewire-cdev.h>
+#include <freax/idr.h>
+#include <freax/irqflags.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/sched.h> /* required for freax/wait.h */
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/time.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 
 #include "core.h"
 
 /*
- * ABI version history is documented in linux/firewire-cdev.h.
+ * ABI version history is documented in freax/firewire-cdev.h.
  */
 #define FW_CDEV_KERNEL_VERSION			5
 #define FW_CDEV_VERSION_EVENT_REQUEST2		4

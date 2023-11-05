@@ -3,7 +3,7 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <misc/cxl.h>
 #include "cxl.h"
 

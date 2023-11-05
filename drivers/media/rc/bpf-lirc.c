@@ -3,9 +3,9 @@
 //
 // Copyright (C) 2018 Sean Young <sean@mess.org>
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/bpf_lirc.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/bpf_lirc.h>
 #include "rc-core-priv.h"
 
 #define lirc_rcu_dereference(p)						\

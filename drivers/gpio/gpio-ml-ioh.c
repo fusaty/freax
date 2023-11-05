@@ -2,13 +2,13 @@
 /*
  * Copyright (C) 2010 OKI SEMICONDUCTOR Co., LTD.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
 #define IOH_EDGE_FALLING	0
 #define IOH_EDGE_RISING		BIT(0)

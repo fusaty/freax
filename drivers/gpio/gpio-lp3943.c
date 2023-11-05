@@ -7,14 +7,14 @@
  * Author: Milo Kim <milo.kim@ti.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/mfd/lp3943.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/mfd/lp3943.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 enum lp3943_gpios {
 	LP3943_GPIO1,

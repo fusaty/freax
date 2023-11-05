@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCATTERLIST_H
-#define _LINUX_SCATTERLIST_H
+#ifndef _freax_SCATTERLIST_H
+#define _freax_SCATTERLIST_H
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/bug.h>
+#include <freax/mm.h>
 #include <asm/io.h>
 
 struct scatterlist {
@@ -692,4 +692,4 @@ bool sg_miter_skip(struct sg_mapping_iter *miter, off_t offset);
 bool sg_miter_next(struct sg_mapping_iter *miter);
 void sg_miter_stop(struct sg_mapping_iter *miter);
 
-#endif /* _LINUX_SCATTERLIST_H */
+#endif /* _freax_SCATTERLIST_H */

@@ -6,14 +6,14 @@
  * Copyright (C) 2008 Analog Devices, Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/syscalls.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/ctype.h>
+#include <freax/random.h>
+#include <freax/syscalls.h>
 
 #include "u_uac1_legacy.h"
 

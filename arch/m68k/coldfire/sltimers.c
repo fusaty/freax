@@ -12,13 +12,13 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/profile.h>
-#include <linux/clocksource.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/profile.h>
+#include <freax/clocksource.h>
 #include <asm/io.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>

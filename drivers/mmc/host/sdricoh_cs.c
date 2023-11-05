@@ -10,20 +10,20 @@
 #define DEBUG
 #define VERBOSE_DEBUG
 */
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/iopoll.h>
+#include <freax/scatterlist.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
-#include <linux/io.h>
+#include <freax/io.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
 
 #define DRIVER_NAME "sdricoh_cs"
 

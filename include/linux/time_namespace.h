@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIMENS_H
-#define _LINUX_TIMENS_H
+#ifndef _freax_TIMENS_H
+#define _freax_TIMENS_H
 
 
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/err.h>
+#include <freax/sched.h>
+#include <freax/nsproxy.h>
+#include <freax/ns_common.h>
+#include <freax/err.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;
@@ -164,4 +164,4 @@ static inline ktime_t timens_ktime_to_host(clockid_t clockid, ktime_t tim)
 
 struct vdso_data *arch_get_vdso_data(void *vvar_page);
 
-#endif /* _LINUX_TIMENS_H */
+#endif /* _freax_TIMENS_H */

@@ -7,8 +7,8 @@
 
 #include <kunit/test.h>
 
-#include <linux/module.h>
-#include <linux/prime_numbers.h>
+#include <freax/module.h>
+#include <freax/prime_numbers.h>
 
 #include <drm/drm_exec.h>
 #include <drm/drm_device.h>

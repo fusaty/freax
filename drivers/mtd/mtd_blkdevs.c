@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Interface to Linux block layer for MTD 'translation layers'.
+ * Interface to freax block layer for MTD 'translation layers'.
  *
  * Copyright © 2003-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mtd/mtd.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/spinlock.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/fs.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/mtd/mtd.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq.h>
+#include <freax/blkpg.h>
+#include <freax/spinlock.h>
+#include <freax/hdreg.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
 
 #include "mtdcore.h"
 

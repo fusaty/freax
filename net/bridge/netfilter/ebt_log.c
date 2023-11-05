@@ -9,19 +9,19 @@
  *  April, 2002
  *
  */
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/if_arp.h>
+#include <freax/spinlock.h>
 #include <net/netfilter/nf_log.h>
-#include <linux/ipv6.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_log.h>
-#include <linux/netfilter.h>
+#include <freax/in6.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_log.h>
+#include <freax/netfilter.h>
 
 static DEFINE_SPINLOCK(ebt_log_lock);
 

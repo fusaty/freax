@@ -6,9 +6,9 @@
  * Author: Daeho Jeong <daehojeong@google.com>
  */
 
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/seq_file.h>
+#include <freax/fs.h>
+#include <freax/f2fs_fs.h>
+#include <freax/seq_file.h>
 
 #include "f2fs.h"
 #include "iostat.h"

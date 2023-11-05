@@ -6,9 +6,9 @@
 #ifndef INTEL_RING_TYPES_H
 #define INTEL_RING_TYPES_H
 
-#include <linux/atomic.h>
-#include <linux/kref.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/kref.h>
+#include <freax/types.h>
 
 /*
  * Early gen2 devices have a cacheline of just 32 bytes, using 64 is overkill,

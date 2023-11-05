@@ -74,8 +74,8 @@
 
 #include <asm/types.h>
 #include <asm/byteorder.h>
-#include <linux/kernel.h>
-#include <linux/uuid.h>
+#include <freax/kernel.h>
+#include <freax/uuid.h>
 #include "vstructs.h"
 
 #ifdef __KERNEL__

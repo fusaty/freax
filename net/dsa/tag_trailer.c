@@ -4,9 +4,9 @@
  * Copyright (c) 2008-2009 Marvell Semiconductor
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/etherdevice.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include "tag.h"
 

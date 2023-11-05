@@ -18,7 +18,7 @@
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio_ao GPIOAO_11 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			panic-indicator;
 		};
 	};
@@ -54,5 +54,5 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-odroid";
+	freax,rc-map-name = "rc-odroid";
 };

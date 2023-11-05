@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/svc.c
+ * freax/fs/lockd/svc.c
  *
  * This is the central lockd service.
  *
@@ -13,31 +13,31 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/moduleparam.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
+#include <freax/moduleparam.h>
 
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/uio.h>
-#include <linux/smp.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/inetdevice.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/uio.h>
+#include <freax/smp.h>
+#include <freax/mutex.h>
+#include <freax/freezer.h>
+#include <freax/inetdevice.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <freax/sunrpc/types.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/svc_xprt.h>
 #include <net/ip.h>
 #include <net/addrconf.h>
 #include <net/ipv6.h>
-#include <linux/lockd/lockd.h>
-#include <linux/nfs.h>
+#include <freax/lockd/lockd.h>
+#include <freax/nfs.h>
 
 #include "netns.h"
 #include "procfs.h"

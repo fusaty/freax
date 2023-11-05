@@ -6,9 +6,9 @@
 #include <sys/mman.h>
 #include <sys/user.h>
 #define __FRAME_OFFSETS
-#include <linux/ptrace.h>
+#include <freax/ptrace.h>
 #include <asm/types.h>
-#include <linux/kbuild.h>
+#include <freax/kbuild.h>
 
 #define DEFINE_LONGS(sym, val)	\
 	COMMENT(#val " / sizeof(unsigned long)");	\

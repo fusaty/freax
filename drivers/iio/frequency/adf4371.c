@@ -4,18 +4,18 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/sysfs.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 /* Registers address macro */
 #define ADF4371_REG(x)			(x)

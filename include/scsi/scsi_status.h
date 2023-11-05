@@ -3,7 +3,7 @@
 #ifndef _SCSI_SCSI_STATUS_H
 #define _SCSI_SCSI_STATUS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <scsi/scsi_proto.h>
 
 /* Message codes. */

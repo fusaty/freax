@@ -6,8 +6,8 @@
 #ifndef __ASM_ARC_CMPXCHG_H
 #define __ASM_ARC_CMPXCHG_H
 
-#include <linux/build_bug.h>
-#include <linux/types.h>
+#include <freax/build_bug.h>
+#include <freax/types.h>
 
 #include <asm/barrier.h>
 #include <asm/smp.h>

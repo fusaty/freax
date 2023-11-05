@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- *	Linux NET3:	Internet Group Management Protocol  [IGMP]
+ *	freax NET3:	Internet Group Management Protocol  [IGMP]
  *
  *	Authors:
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>
@@ -14,10 +14,10 @@
  *	2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_IGMP_H
-#define _UAPI_LINUX_IGMP_H
+#ifndef _UAPI_freax_IGMP_H
+#define _UAPI_freax_IGMP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 /*
@@ -127,4 +127,4 @@ struct igmpv3_query {
  * struct for keeping the multicast list in
  */
 
-#endif /* _UAPI_LINUX_IGMP_H */
+#endif /* _UAPI_freax_IGMP_H */

@@ -8,8 +8,8 @@ include::guestmount.txt[]
 	Guest OS /proc/modules file copy. perf reads it to get guest
 	kernel module information. Users copy it out from guest OS.
 
---guestvmlinux=<path>::
-	Guest OS kernel vmlinux.
+--guestvmfreax=<path>::
+	Guest OS kernel vmfreax.
 
 --guest-code::
 	Indicate that guest code can be found in the hypervisor process,

@@ -6,10 +6,10 @@
 //
 // Copyright 2010 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
 #include <sound/soc.h>
 
 #include "fsl_utils.h"

@@ -26,12 +26,12 @@
 #ifndef DRM_PRINT_H_
 #define DRM_PRINT_H_
 
-#include <linux/compiler.h>
-#include <linux/printk.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/dynamic_debug.h>
+#include <freax/compiler.h>
+#include <freax/printk.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/debugfs.h>
+#include <freax/dynamic_debug.h>
 
 #include <drm/drm.h>
 

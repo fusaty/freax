@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
 PHONY := __default
-__default: vmlinux.o modules.builtin.modinfo modules.builtin
+__default: vmfreax.o modules.builtin.modinfo modules.builtin
 
 include include/config/auto.conf
 include $(srctree)/scripts/Kbuild.include
@@ -18,7 +18,7 @@ quiet_cmd_gen_initcalls_lds = GEN     $@
 	$(PERL) $(real-prereqs) > $@
 
 .tmp_initcalls.lds: $(srctree)/scripts/generate_initcall_order.pl \
-		vmlinux.a $(KBUILD_VMLINUX_LIBS) FORCE
+		vmfreax.a $(KBUILD_VMfreax_LIBS) FORCE
 	$(call if_changed,gen_initcalls_lds)
 
 targets := .tmp_initcalls.lds
@@ -27,41 +27,41 @@ ifdef CONFIG_LTO_CLANG
 initcalls-lds := .tmp_initcalls.lds
 endif
 
-# objtool for vmlinux.o
+# objtool for vmfreax.o
 # ---------------------------------------------------------------------------
 #
 # For LTO and IBT, objtool doesn't run on individual translation units.
-# Run everything on vmlinux instead.
+# Run everything on vmfreax instead.
 
 objtool-enabled := $(or $(delay-objtool),$(CONFIG_NOINSTR_VALIDATION))
 
-vmlinux-objtool-args-$(delay-objtool)			+= $(objtool-args-y)
-vmlinux-objtool-args-$(CONFIG_GCOV_KERNEL)		+= --no-unreachable
-vmlinux-objtool-args-$(CONFIG_NOINSTR_VALIDATION)	+= --noinstr \
+vmfreax-objtool-args-$(delay-objtool)			+= $(objtool-args-y)
+vmfreax-objtool-args-$(CONFIG_GCOV_KERNEL)		+= --no-unreachable
+vmfreax-objtool-args-$(CONFIG_NOINSTR_VALIDATION)	+= --noinstr \
 							   $(if $(or $(CONFIG_CPU_UNRET_ENTRY),$(CONFIG_CPU_SRSO)), --unret)
 
-objtool-args = $(vmlinux-objtool-args-y) --link
+objtool-args = $(vmfreax-objtool-args-y) --link
 
-# Link of vmlinux.o used for section mismatch analysis
+# Link of vmfreax.o used for section mismatch analysis
 # ---------------------------------------------------------------------------
 
-quiet_cmd_ld_vmlinux.o = LD      $@
-      cmd_ld_vmlinux.o = \
+quiet_cmd_ld_vmfreax.o = LD      $@
+      cmd_ld_vmfreax.o = \
 	$(LD) ${KBUILD_LDFLAGS} -r -o $@ \
 	$(addprefix -T , $(initcalls-lds)) \
-	--whole-archive vmlinux.a --no-whole-archive \
-	--start-group $(KBUILD_VMLINUX_LIBS) --end-group \
+	--whole-archive vmfreax.a --no-whole-archive \
+	--start-group $(KBUILD_VMfreax_LIBS) --end-group \
 	$(cmd_objtool)
 
-define rule_ld_vmlinux.o
-	$(call cmd_and_savecmd,ld_vmlinux.o)
+define rule_ld_vmfreax.o
+	$(call cmd_and_savecmd,ld_vmfreax.o)
 	$(call cmd,gen_objtooldep)
 endef
 
-vmlinux.o: $(initcalls-lds) vmlinux.a $(KBUILD_VMLINUX_LIBS) FORCE
-	$(call if_changed_rule,ld_vmlinux.o)
+vmfreax.o: $(initcalls-lds) vmfreax.a $(KBUILD_VMfreax_LIBS) FORCE
+	$(call if_changed_rule,ld_vmfreax.o)
 
-targets += vmlinux.o
+targets += vmfreax.o
 
 # module.builtin.modinfo
 # ---------------------------------------------------------------------------
@@ -69,7 +69,7 @@ targets += vmlinux.o
 OBJCOPYFLAGS_modules.builtin.modinfo := -j .modinfo -O binary
 
 targets += modules.builtin.modinfo
-modules.builtin.modinfo: vmlinux.o FORCE
+modules.builtin.modinfo: vmfreax.o FORCE
 	$(call if_changed,objcopy)
 
 # module.builtin

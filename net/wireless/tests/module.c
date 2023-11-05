@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2023 Intel Corporation
  */
-#include <linux/module.h>
+#include <freax/module.h>
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("tests for cfg80211");

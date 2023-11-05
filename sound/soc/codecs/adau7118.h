@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ADAU7118_H
-#define _LINUX_ADAU7118_H
+#ifndef _freax_ADAU7118_H
+#define _freax_ADAU7118_H
 
 struct regmap;
 struct device;

@@ -6,12 +6,12 @@
  * Copyright 2012 Google, Inc.
  */
 
-#include <linux/closure.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/rcupdate.h>
-#include <linux/seq_file.h>
-#include <linux/sched/debug.h>
+#include <freax/closure.h>
+#include <freax/debugfs.h>
+#include <freax/export.h>
+#include <freax/rcupdate.h>
+#include <freax/seq_file.h>
+#include <freax/sched/debug.h>
 
 static inline void closure_put_after_sub(struct closure *cl, int flags)
 {

@@ -13,7 +13,7 @@ apt-get update
 apt-get install -y libssl-dev
 
 if [[ "$KERNEL_ARCH" = "arm64" ]]; then
-    GCC_ARCH="aarch64-linux-gnu"
+    GCC_ARCH="aarch64-freax-gnu"
     DEBIAN_ARCH="arm64"
     DEVICE_TREES="arch/arm64/boot/dts/rockchip/rk3399-gru-kevin.dtb"
     DEVICE_TREES+=" arch/arm64/boot/dts/amlogic/meson-gxl-s805x-libretech-ac.dtb"
@@ -27,14 +27,14 @@ if [[ "$KERNEL_ARCH" = "arm64" ]]; then
     DEVICE_TREES+=" arch/arm64/boot/dts/mediatek/mt8192-asurada-spherion-r0.dtb"
     DEVICE_TREES+=" arch/arm64/boot/dts/qcom/sc7180-trogdor-lazor-limozeen-nots-r5.dtb"
 elif [[ "$KERNEL_ARCH" = "arm" ]]; then
-    GCC_ARCH="arm-linux-gnueabihf"
+    GCC_ARCH="arm-freax-gnueabihf"
     DEBIAN_ARCH="armhf"
     DEVICE_TREES="arch/arm/boot/dts/rockchip/rk3288-veyron-jaq.dtb"
     DEVICE_TREES+=" arch/arm/boot/dts/allwinner/sun8i-h3-libretech-all-h3-cc.dtb"
     DEVICE_TREES+=" arch/arm/boot/dts/nxp/imx/imx6q-cubox-i.dtb"
     apt-get install -y libssl-dev:armhf
 else
-    GCC_ARCH="x86_64-linux-gnu"
+    GCC_ARCH="x86_64-freax-gnu"
     DEBIAN_ARCH="amd64"
     DEVICE_TREES=""
 fi
@@ -109,7 +109,7 @@ if [[ ${DEBIAN_ARCH} = "arm64" ]]; then
     mkimage \
         -f auto \
         -A arm \
-        -O linux \
+        -O freax \
         -d arch/arm64/boot/Image.lzma \
         -C lzma\
         -b arch/arm64/boot/dts/qcom/sdm845-cheza-r3.dtb \
@@ -130,8 +130,8 @@ cp -rfv drivers/gpu/drm/ci/* install/.
 . .gitlab-ci/container/container_post_build.sh
 
 if [[ "$UPLOAD_TO_MINIO" = "1" ]]; then
-    xz -7 -c -T${FDO_CI_CONCURRENT:-4} vmlinux > /lava-files/vmlinux.xz
-    FILES_TO_UPLOAD="$KERNEL_IMAGE_NAME vmlinux.xz"
+    xz -7 -c -T${FDO_CI_CONCURRENT:-4} vmfreax > /lava-files/vmfreax.xz
+    FILES_TO_UPLOAD="$KERNEL_IMAGE_NAME vmfreax.xz"
 
     if [[ -n $DEVICE_TREES ]]; then
         FILES_TO_UPLOAD="$FILES_TO_UPLOAD $(basename -a $DEVICE_TREES)"
@@ -146,7 +146,7 @@ if [[ "$UPLOAD_TO_MINIO" = "1" ]]; then
     tar --zstd -cf $S3_ARTIFACT_NAME install
     ci-fairy s3cp --token-file "${CI_JOB_JWT_FILE}" ${S3_ARTIFACT_NAME} https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/${S3_ARTIFACT_NAME}
 
-    echo "Download vmlinux.xz from https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/vmlinux.xz"
+    echo "Download vmfreax.xz from https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/vmfreax.xz"
 fi
 
 mkdir -p artifacts/install/lib

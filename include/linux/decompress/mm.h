@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/compr_mm.h
+ * freax/compr_mm.h
  *
  * Memory management for pre-boot and ramdisk uncompressors
  *
@@ -76,11 +76,11 @@ MALLOC_VISIBLE void free(void *where)
 
 /* Code active when compiled standalone for use when loading ramdisk: */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 /* Use defines rather than static inline in order to avoid spurious
  * warnings when not needed (indeed large_malloc / large_free are not
@@ -95,7 +95,7 @@ MALLOC_VISIBLE void free(void *where)
 #define INIT __init
 #define STATIC
 
-#include <linux/init.h>
+#include <freax/init.h>
 
 #endif /* STATIC */
 

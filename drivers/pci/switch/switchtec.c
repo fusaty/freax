@@ -4,17 +4,17 @@
  * Copyright (c) 2017, Microsemi Corporation
  */
 
-#include <linux/switchtec.h>
-#include <linux/switchtec_ioctl.h>
+#include <freax/switchtec.h>
+#include <freax/switchtec_ioctl.h>
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/nospec.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/poll.h>
+#include <freax/wait.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/nospec.h>
 
 MODULE_DESCRIPTION("Microsemi Switchtec(tm) PCIe Management Driver");
 MODULE_VERSION("0.1");

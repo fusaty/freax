@@ -6,7 +6,7 @@
 #ifndef __INTEL_HDMI_H__
 #define __INTEL_HDMI_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum hdmi_infoframe_type;
 enum intel_output_format;

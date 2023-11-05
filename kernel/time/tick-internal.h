@@ -2,8 +2,8 @@
 /*
  * tick internal variable and functions used by low/high res code
  */
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
+#include <freax/hrtimer.h>
+#include <freax/tick.h>
 
 #include "timekeeping.h"
 #include "tick-sched.h"

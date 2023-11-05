@@ -8,13 +8,13 @@
  *	Author: Lars-Peter Clausen <lars@metafoo.de>
  * Copyright (C) 2015, Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/hrtimer.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/hrtimer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/sw_trigger.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/sw_trigger.h>
 
 /* Defined locally, not in time64.h yet. */
 #define PSEC_PER_SEC   1000000000000LL

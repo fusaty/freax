@@ -2,12 +2,12 @@
 #ifndef __CGROUP_INTERNAL_H
 #define __CGROUP_INTERNAL_H
 
-#include <linux/cgroup.h>
-#include <linux/kernfs.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/refcount.h>
-#include <linux/fs_parser.h>
+#include <freax/cgroup.h>
+#include <freax/kernfs.h>
+#include <freax/workqueue.h>
+#include <freax/list.h>
+#include <freax/refcount.h>
+#include <freax/fs_parser.h>
 
 #define TRACE_CGROUP_PATH_LEN 1024
 extern spinlock_t trace_cgroup_path_lock;

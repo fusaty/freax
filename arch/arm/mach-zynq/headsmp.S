@@ -3,8 +3,8 @@
  * Copyright (c) 2013 Steffen Trumtrar <s.trumtrar@pengutronix.de>
  * Copyright (c) 2012-2013 Xilinx
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 
 	.arm

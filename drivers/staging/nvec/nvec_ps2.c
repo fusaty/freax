@@ -9,11 +9,11 @@
  *           Marc Dietrich <marvin24@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/serio.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
 
 #include "nvec.h"
 

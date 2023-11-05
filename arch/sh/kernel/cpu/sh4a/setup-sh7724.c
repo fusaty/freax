@@ -9,17 +9,17 @@
  * Based on SH7723 Setup
  * Copyright (C) 2008  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/mm.h>
+#include <freax/serial_sci.h>
+#include <freax/uio_driver.h>
+#include <freax/sh_dma.h>
+#include <freax/sh_timer.h>
+#include <freax/sh_intc.h>
+#include <freax/io.h>
+#include <freax/notifier.h>
 
 #include <asm/suspend.h>
 #include <asm/clock.h>

@@ -33,9 +33,9 @@
 
 		button {
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};
@@ -46,17 +46,17 @@
 
 		act_led: led-0 {
 			gpios = <&gpio1 RK_PD0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 
 		heartbeat_led: led-1 {
 			gpios = <&gpio1 RK_PD1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		pwr_led: led-2 {
 			gpios = <&gpio0 RK_PA3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 	};
 

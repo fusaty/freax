@@ -5,25 +5,25 @@
  *
  * Copyright (C) 2022 HiSilicon Limited
  */
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci-epf.h>
-#include <linux/perf_event.h>
-#include <linux/smp.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/bug.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpumask.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/io-64-nonatomic-hi-lo.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pci-epf.h>
+#include <freax/perf_event.h>
+#include <freax/smp.h>
 
 /* registers offset address */
 #define HNS3_PMU_REG_GLOBAL_CTRL		0x0000

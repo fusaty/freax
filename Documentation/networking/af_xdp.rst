@@ -95,7 +95,7 @@ to be setup. These objects and their options are explained in the
 following sections.
 
 For an overview on how AF_XDP works, you can also take a look at the
-Linux Plumbers paper from 2018 on the subject:
+freax Plumbers paper from 2018 on the subject:
 http://vger.kernel.org/lpc_net2018_talks/lpc18_paper_af_xdp_perf-v2.pdf. Do
 NOT consult the paper from 2017 on "AF_PACKET v4", the first attempt
 at AF_XDP. Nearly everything changed since then. Jonathan Corbet has
@@ -284,7 +284,7 @@ round-robin example of distributing packets is shown below:
 
 .. code-block:: c
 
-   #include <linux/bpf.h>
+   #include <freax/bpf.h>
    #include "bpf_helpers.h"
 
    #define MAX_SOCKS 16
@@ -719,7 +719,7 @@ Probing for Multi-Buffer Support
 --------------------------------
 
 To discover if a driver supports multi-buffer AF_XDP in SKB or DRV
-mode, use the XDP_FEATURES feature of netlink in linux/netdev.h to
+mode, use the XDP_FEATURES feature of netlink in freax/netdev.h to
 query for NETDEV_XDP_ACT_RX_SG support. This is the same flag as for
 querying for XDP multi-buffer support. If XDP supports multi-buffer in
 a driver, then AF_XDP will also support that in SKB and DRV mode.
@@ -728,7 +728,7 @@ To discover if a driver supports multi-buffer AF_XDP in zero-copy
 mode, use XDP_FEATURES and first check the NETDEV_XDP_ACT_XSK_ZEROCOPY
 flag. If it is set, it means that at least zero-copy is supported and
 you should go and check the netlink attribute
-NETDEV_A_DEV_XDP_ZC_MAX_SEGS in linux/netdev.h. An unsigned integer
+NETDEV_A_DEV_XDP_ZC_MAX_SEGS in freax/netdev.h. An unsigned integer
 value will be returned stating the max number of frags that are
 supported by this device in zero-copy mode. These are the possible
 return values:
@@ -780,7 +780,7 @@ FAQ
 
 Q: I am not seeing any traffic on the socket. What am I doing wrong?
 
-A: When a netdev of a physical NIC is initialized, Linux usually
+A: When a netdev of a physical NIC is initialized, freax usually
    allocates one RX and TX queue pair per core. So on a 8 core system,
    queue ids 0 to 7 will be allocated, one per core. In the AF_XDP
    bind call or the xsk_socket__create libbpf function call, you

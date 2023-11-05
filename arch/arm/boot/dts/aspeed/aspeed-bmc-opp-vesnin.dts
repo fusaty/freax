@@ -65,13 +65,13 @@
 
 		event-checkstop {
 			label = "checkstop";
-			linux,code = <74>;
+			freax,code = <74>;
 			gpios = <&gpio ASPEED_GPIO(P, 5) GPIO_ACTIVE_LOW>;
 		};
 
 		event-identify {
 			label = "identify";
-			linux,code = <152>;
+			freax,code = <152>;
 			gpios = <&gpio ASPEED_GPIO(O, 7) GPIO_ACTIVE_LOW>;
 		};
 	};

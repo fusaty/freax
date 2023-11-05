@@ -3,20 +3,20 @@
 //
 // Copyright (C) 2014 Google, Inc.
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/kobject.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 
 #define DRV_NAME "cros-ec-lightbar"
 

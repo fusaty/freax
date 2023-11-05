@@ -2,11 +2,11 @@
 /*
  * HD-audio bus
  */
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/export.h>
 #include <sound/hdaudio.h>
 
 MODULE_DESCRIPTION("HD-audio bus");

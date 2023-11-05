@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_IF_LINK_H
-#define _UAPI_LINUX_IF_LINK_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_IF_LINK_H
+#define _UAPI_freax_IF_LINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
 
 /* This struct should be in sync with struct rtnl_link_stats64 */
 struct rtnl_link_stats {
@@ -1422,4 +1422,4 @@ enum {
 
 #define IFLA_DSA_MAX	(__IFLA_DSA_MAX - 1)
 
-#endif /* _UAPI_LINUX_IF_LINK_H */
+#endif /* _UAPI_freax_IF_LINK_H */

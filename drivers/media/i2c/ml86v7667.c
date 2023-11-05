@@ -7,11 +7,11 @@
  * Copyright (C) 2013 Renesas Solutions Corp.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

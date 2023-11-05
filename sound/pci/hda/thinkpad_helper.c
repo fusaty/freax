@@ -5,8 +5,8 @@
 
 #if IS_ENABLED(CONFIG_THINKPAD_ACPI)
 
-#include <linux/acpi.h>
-#include <linux/leds.h>
+#include <freax/acpi.h>
+#include <freax/leds.h>
 
 static bool is_thinkpad(struct hda_codec *codec)
 {

@@ -7,7 +7,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/livepatch.h>
+#include <freax/livepatch.h>
 #include "core.h"
 #include "state.h"
 #include "transition.h"

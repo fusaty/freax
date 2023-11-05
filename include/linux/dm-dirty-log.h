@@ -8,13 +8,13 @@
  * This file is released under the LGPL.
  */
 
-#ifndef _LINUX_DM_DIRTY_LOG
-#define _LINUX_DM_DIRTY_LOG
+#ifndef _freax_DM_DIRTY_LOG
+#define _freax_DM_DIRTY_LOG
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/device-mapper.h>
+#include <freax/types.h>
+#include <freax/device-mapper.h>
 
 typedef sector_t region_t;
 
@@ -144,4 +144,4 @@ struct dm_dirty_log *dm_dirty_log_create(const char *type_name,
 void dm_dirty_log_destroy(struct dm_dirty_log *log);
 
 #endif	/* __KERNEL__ */
-#endif	/* _LINUX_DM_DIRTY_LOG_H */
+#endif	/* _freax_DM_DIRTY_LOG_H */

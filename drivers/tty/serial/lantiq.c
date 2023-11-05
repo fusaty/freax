@@ -8,23 +8,23 @@
  * Copyright (C) 2010 Thomas Langer, <thomas.langer@lantiq.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/lantiq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/lantiq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
 #define PORT_LTQ_ASC		111
 #define MAXPORTS		2

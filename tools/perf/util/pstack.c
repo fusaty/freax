@@ -7,8 +7,8 @@
 
 #include "pstack.h"
 #include "debug.h"
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 #include <stdlib.h>
 #include <string.h>
 

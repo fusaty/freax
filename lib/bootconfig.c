@@ -5,13 +5,13 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/bootconfig.h>
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/string.h>
+#include <freax/bootconfig.h>
+#include <freax/bug.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/memblock.h>
+#include <freax/string.h>
 
 #ifdef CONFIG_BOOT_CONFIG_EMBED
 /* embedded_bootconfig_data is defined in bootconfig-data.S */
@@ -33,7 +33,7 @@ const char * __init xbc_get_embedded_bootconfig(size_t *size)
  * However, if you change this file, please make sure the tools/bootconfig
  * has no issue on building and running.
  */
-#include <linux/bootconfig.h>
+#include <freax/bootconfig.h>
 #endif
 
 /*

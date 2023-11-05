@@ -2,7 +2,7 @@
 #ifndef __RISCV_ASM_VDSO_DATA_H
 #define __RISCV_ASM_VDSO_DATA_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <vdso/datapage.h>
 #include <asm/hwprobe.h>
 

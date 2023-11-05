@@ -10,18 +10,18 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/tty.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/dma-mapping.h>
+#include <freax/tty_flip.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
 
 #include "8250.h"
 

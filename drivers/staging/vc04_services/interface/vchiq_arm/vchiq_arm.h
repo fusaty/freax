@@ -7,10 +7,10 @@
 #ifndef VCHIQ_ARM_H
 #define VCHIQ_ARM_H
 
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/semaphore.h>
-#include <linux/atomic.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/semaphore.h>
+#include <freax/atomic.h>
 #include "vchiq_core.h"
 #include "vchiq_debugfs.h"
 

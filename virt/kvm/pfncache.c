@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * This module enables kernel and guest-mode vCPU access to guest physical
  * memory with suitable invalidation mechanisms.
@@ -11,11 +11,11 @@
  *   David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/errno.h>
 
 #include "kvm_mm.h"
 

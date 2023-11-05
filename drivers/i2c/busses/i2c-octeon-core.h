@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
 
 /* Controller command patterns */
 #define SW_TWSI_V		BIT_ULL(63)	/* Valid bit */

@@ -3,9 +3,9 @@
 #ifndef __DRM_GEM_SHMEM_HELPER_H__
 #define __DRM_GEM_SHMEM_HELPER_H__
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
 
 #include <drm/drm_file.h>
 #include <drm/drm_gem.h>

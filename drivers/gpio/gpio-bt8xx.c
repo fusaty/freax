@@ -31,11 +31,11 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
 
 /* Steal the hardware definitions from the bttv driver. */
 #include "../media/pci/bt8xx/bt848.h"

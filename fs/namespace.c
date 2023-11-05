@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/namespace.c
+ *  freax/fs/namespace.c
  *
  * (C) Copyright Al Viro 2000, 2001
  *
@@ -8,30 +8,30 @@
  * Heavily rewritten.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/capability.h>
-#include <linux/mnt_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/idr.h>
-#include <linux/init.h>		/* init_rootfs */
-#include <linux/fs_struct.h>	/* get_fs_root et.al. */
-#include <linux/fsnotify.h>	/* fsnotify_vfsmount_delete */
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/proc_ns.h>
-#include <linux/magic.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/task_work.h>
-#include <linux/sched/task.h>
-#include <uapi/linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/shmem_fs.h>
-#include <linux/mnt_idmapping.h>
+#include <freax/syscalls.h>
+#include <freax/export.h>
+#include <freax/capability.h>
+#include <freax/mnt_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/namei.h>
+#include <freax/security.h>
+#include <freax/cred.h>
+#include <freax/idr.h>
+#include <freax/init.h>		/* init_rootfs */
+#include <freax/fs_struct.h>	/* get_fs_root et.al. */
+#include <freax/fsnotify.h>	/* fsnotify_vfsmount_delete */
+#include <freax/file.h>
+#include <freax/uaccess.h>
+#include <freax/proc_ns.h>
+#include <freax/magic.h>
+#include <freax/memblock.h>
+#include <freax/proc_fs.h>
+#include <freax/task_work.h>
+#include <freax/sched/task.h>
+#include <uapi/freax/mount.h>
+#include <freax/fs_context.h>
+#include <freax/shmem_fs.h>
+#include <freax/mnt_idmapping.h>
 
 #include "pnode.h"
 #include "internal.h"

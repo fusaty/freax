@@ -27,7 +27,7 @@
 #ifndef __ASM_GENERIC_SPINLOCK_H
 #define __ASM_GENERIC_SPINLOCK_H
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm-generic/spinlock_types.h>
 
 static __always_inline void arch_spin_lock(arch_spinlock_t *lock)

@@ -5,10 +5,10 @@
  * Copyright (C) 2012 Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/device.h>
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/gcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "aptina-pll.h"
 

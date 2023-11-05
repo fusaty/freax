@@ -8,8 +8,8 @@
 #ifndef _ASM_UACCESS_H
 #define _ASM_UACCESS_H
 
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <freax/compiler.h>
+#include <freax/string.h>
 
 #include <asm/processor.h>
 #include <asm-generic/access_ok.h>

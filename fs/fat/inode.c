@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/fat/inode.c
+ *  freax/fs/fat/inode.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *  VFAT extensions by Gordon Chaffee, merged with msdos fs by Henrik Storner
@@ -11,18 +11,18 @@
  *	Max Cohan: Fixed invalid FSINFO offset when info_sector is 0
  */
 
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/mpage.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/uio.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/mpage.h>
+#include <freax/vfs.h>
+#include <freax/seq_file.h>
+#include <freax/parser.h>
+#include <freax/uio.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
 #include <asm/unaligned.h>
-#include <linux/random.h>
-#include <linux/iversion.h>
+#include <freax/random.h>
+#include <freax/iversion.h>
 #include "fat.h"
 
 #ifndef CONFIG_FAT_DEFAULT_IOCHARSET

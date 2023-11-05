@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/resize.c
+ *  freax/fs/ext4/resize.c
  *
  * Support for resizing an ext4 filesystem while it is mounted.
  *
@@ -10,9 +10,9 @@
  */
 
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
 
 #include "ext4_jbd2.h"
 

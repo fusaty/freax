@@ -3,32 +3,32 @@
  * Copyright © 2010-2015 Broadcom Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/brcmnand.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/static_key.h>
-#include <linux/list.h>
-#include <linux/log2.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/brcmnand.h>
+#include <freax/err.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/dma-mapping.h>
+#include <freax/ioport.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/mm.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/slab.h>
+#include <freax/static_key.h>
+#include <freax/list.h>
+#include <freax/log2.h>
 
 #include "brcmnand.h"
 

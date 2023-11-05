@@ -7,10 +7,10 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/scatterlist.h>
+#include <freax/crypto.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/rsa.h>
 #include <crypto/internal/akcipher.h>

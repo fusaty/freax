@@ -5,22 +5,22 @@
  * Copyright (C) 2018 Arcx Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/delay.h>
+#include <freax/idr.h>
+#include <freax/mutex.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regmap.h>
 
-/* move to <linux/anybuss-controller.h> when taking this out of staging */
+/* move to <freax/anybuss-controller.h> when taking this out of staging */
 #include "anybuss-controller.h"
 
 #define CPLD_STATUS1		0x80

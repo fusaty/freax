@@ -5,13 +5,13 @@
 // Copyright (C) 2021, Christophe Branchereau <cbranchereau@gmail.com>
 // Copyright (C) 2021, Paul Cercueil <paul@crapouillou.net>
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/time64.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/time64.h>
 
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

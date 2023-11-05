@@ -6,9 +6,9 @@
  * Author: Prashant Malani <pmalani@chromium.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/usb/pd_vdo.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/usb/pd_vdo.h>
 
 #include "cros_ec_typec.h"
 #include "cros_typec_vdm.h"

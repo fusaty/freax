@@ -3,14 +3,14 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 //
 // Base S3C64XX setup information for 24bpp LCD framebuffer
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fb.h>
+#include <freax/gpio.h>
 
 #include "fb.h"
 #include "gpio-cfg.h"

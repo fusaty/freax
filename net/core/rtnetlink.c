@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -12,36 +12,36 @@
  *	Vitaly E. Lavrov		RTA_OK arithmetic was wrong.
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/if_addr.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/bpf.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/fcntl.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/capability.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/security.h>
+#include <freax/mutex.h>
+#include <freax/if_addr.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
+#include <freax/bpf.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/arp.h>
@@ -57,7 +57,7 @@
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/addrconf.h>
 #endif
-#include <linux/dpll.h>
+#include <freax/dpll.h>
 
 #include "dev.h"
 
@@ -188,7 +188,7 @@ static inline int rtm_msgindex(int msgtype)
 	/*
 	 * msgindex < 0 implies someone tried to register a netlink
 	 * control code. msgindex >= RTM_NR_MSGTYPES may indicate that
-	 * the message type has not been added to linux/rtnetlink.h
+	 * the message type has not been added to freax/rtnetlink.h
 	 */
 	BUG_ON(msgindex < 0 || msgindex >= RTM_NR_MSGTYPES);
 
@@ -2189,7 +2189,7 @@ static int rtnl_valid_dump_ifinfo_req(const struct nlmsghdr *nlh,
 
 	/* A hack to preserve kernel<->userspace interface.
 	 * The correct header is ifinfomsg. It is consistent with rtnl_getlink.
-	 * However, before Linux v3.9 the code here assumed rtgenmsg and that's
+	 * However, before freax v3.9 the code here assumed rtgenmsg and that's
 	 * what iproute2 < v3.9.0 used.
 	 * We can detect the old iproute2. Even including the IFLA_EXT_MASK
 	 * attribute, its netlink message is shorter than struct ifinfomsg.
@@ -4596,7 +4596,7 @@ static int valid_fdb_dump_legacy(const struct nlmsghdr *nlh,
 	int err;
 
 	/* A hack to preserve kernel<->userspace interface.
-	 * Before Linux v4.12 this code accepted ndmsg since iproute2 v3.3.0.
+	 * Before freax v4.12 this code accepted ndmsg since iproute2 v3.3.0.
 	 * However, ndmsg is shorter than ifinfomsg thus nlmsg_parse() bails.
 	 * So, check for ndmsg with an optional u32 attribute (not used here).
 	 * Fortunately these sizes don't conflict with the size of ifinfomsg

@@ -9,20 +9,20 @@
  * Copyright (C) 2018 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/completion.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/olpc-ec.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
+#include <freax/completion.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/kfifo.h>
+#include <freax/module.h>
+#include <freax/olpc-ec.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/spi/spi.h>
 
 struct ec_cmd_t {
 	u8 cmd;

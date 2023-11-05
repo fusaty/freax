@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/devcoredump.h>
+#include <freax/devcoredump.h>
 #include <generated/utsrelease.h>
 
 #include "amdgpu_reset.h"

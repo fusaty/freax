@@ -7,8 +7,8 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/export.h>
-#include <linux/of.h>
+#include <freax/export.h>
+#include <freax/of.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_bridge_connector.h>

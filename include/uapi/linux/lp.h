@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * usr/include/linux/lp.h c.1991-1992 James Wiegand
+ * usr/include/freax/lp.h c.1991-1992 James Wiegand
  * many modifications copyright (C) 1992 Michael K. Johnson
  * Interrupt support added 1993 Nigel Gamble
  * Removed 8255 status defines from inside __KERNEL__ Marcelo Tosatti 
  */
-#ifndef _UAPI_LINUX_LP_H
-#define _UAPI_LINUX_LP_H
+#ifndef _UAPI_freax_LP_H
+#define _UAPI_freax_LP_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /*
  * Per POSIX guidelines, this module reserves the LP and lp prefixes
@@ -108,4 +108,4 @@
 #define LP_TIMEOUT_POLLED	(10 * HZ)
 
 
-#endif /* _UAPI_LINUX_LP_H */
+#endif /* _UAPI_freax_LP_H */

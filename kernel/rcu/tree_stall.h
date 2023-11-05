@@ -4,11 +4,11 @@
  *
  * Copyright IBM Corporation, 2019
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  */
 
-#include <linux/kvm_para.h>
-#include <linux/rcu_notifier.h>
+#include <freax/kvm_para.h>
+#include <freax/rcu_notifier.h>
 
 //////////////////////////////////////////////////////////////////////////////
 //

@@ -19,10 +19,10 @@
  * Copyright (C) 2009-2010 Gabor Juhos <juhosg@openwrt.org>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/overflow.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/overflow.h>
+#include <freax/regmap.h>
 
 #include "realtek.h"
 

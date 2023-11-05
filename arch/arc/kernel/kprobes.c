@@ -3,13 +3,13 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/types.h>
-#include <linux/kprobes.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kdebug.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/kprobes.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/kdebug.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/current.h>
 #include <asm/disasm.h>

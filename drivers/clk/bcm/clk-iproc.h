@@ -4,13 +4,13 @@
 #ifndef _CLK_IPROC_H
 #define _CLK_IPROC_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/clk-provider.h>
 
 #define IPROC_CLK_NAME_LEN 25
 #define IPROC_CLK_INVALID_OFFSET 0xffffffff

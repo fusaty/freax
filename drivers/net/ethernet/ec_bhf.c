@@ -9,19 +9,19 @@
  * Those can be found on Bechhoff CX50xx industrial PCs.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/init.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/skbuff.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
+#include <freax/stat.h>
 
 #define TIMER_INTERVAL_NSEC	20000
 

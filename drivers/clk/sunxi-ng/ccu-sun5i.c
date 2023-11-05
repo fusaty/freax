@@ -3,9 +3,9 @@
  * Copyright (c) 2016 Maxime Ripard. All rights reserved.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
 
 #include "ccu_common.h"
 #include "ccu_reset.h"

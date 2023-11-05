@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
  */
@@ -6,12 +6,12 @@
 #ifndef MLX5_VFIO_CMD_H
 #define MLX5_VFIO_CMD_H
 
-#include <linux/kernel.h>
-#include <linux/vfio_pci_core.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
+#include <freax/kernel.h>
+#include <freax/vfio_pci_core.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/cq.h>
+#include <freax/mlx5/qp.h>
 
 #define MLX5VF_PRE_COPY_SUPP(mvdev) \
 	((mvdev)->core_device.vdev.migration_flags & VFIO_MIGRATION_PRE_COPY)

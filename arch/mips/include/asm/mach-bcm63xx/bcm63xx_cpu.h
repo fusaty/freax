@@ -2,8 +2,8 @@
 #ifndef BCM63XX_CPU_H_
 #define BCM63XX_CPU_H_
 
-#include <linux/types.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/init.h>
 
 /*
  * Macro to fetch bcm63xx cpu id and revision, should be optimized at

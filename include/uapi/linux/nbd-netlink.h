@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (C) 2017 Facebook.  All rights reserved.
  *
@@ -16,8 +16,8 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 021110-1307, USA.
  */
-#ifndef _UAPILINUX_NBD_NETLINK_H
-#define _UAPILINUX_NBD_NETLINK_H
+#ifndef _UAPIfreax_NBD_NETLINK_H
+#define _UAPIfreax_NBD_NETLINK_H
 
 #define NBD_GENL_FAMILY_NAME		"nbd"
 #define NBD_GENL_VERSION		0x1
@@ -97,4 +97,4 @@ enum {
 };
 #define NBD_CMD_MAX	(__NBD_CMD_MAX - 1)
 
-#endif /* _UAPILINUX_NBD_NETLINK_H */
+#endif /* _UAPIfreax_NBD_NETLINK_H */

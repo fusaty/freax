@@ -2,8 +2,8 @@
 #ifndef ASMARM_ARCH_MMC_H
 #define ASMARM_ARCH_MMC_H
 
-#include <linux/mmc/host.h>
-#include <linux/interrupt.h>
+#include <freax/mmc/host.h>
+#include <freax/interrupt.h>
 
 struct device;
 struct mmc_host;

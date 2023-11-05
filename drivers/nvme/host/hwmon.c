@@ -4,8 +4,8 @@
  * Copyright (c) 2019, Guenter Roeck
  */
 
-#include <linux/hwmon.h>
-#include <linux/units.h>
+#include <freax/hwmon.h>
+#include <freax/units.h>
 #include <asm/unaligned.h>
 
 #include "nvme.h"

@@ -5,11 +5,11 @@
  * Copyright (C) 2012 Google, Inc.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/sync_file.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/sync_file.h>
 
 #include "sync_debug.h"
 

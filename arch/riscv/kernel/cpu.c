@@ -3,12 +3,12 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/ctype.h>
+#include <freax/init.h>
+#include <freax/seq_file.h>
+#include <freax/of.h>
 #include <asm/acpi.h>
 #include <asm/cpufeature.h>
 #include <asm/csr.h>

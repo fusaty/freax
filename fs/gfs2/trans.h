@@ -7,7 +7,7 @@
 #ifndef __TRANS_DOT_H__
 #define __TRANS_DOT_H__
 
-#include <linux/buffer_head.h>
+#include <freax/buffer_head.h>
 struct gfs2_sbd;
 struct gfs2_rgrpd;
 struct gfs2_glock;

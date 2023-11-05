@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  * cpuid support routines
  *
  * derived from arch/x86/kvm/x86.c
@@ -10,12 +10,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
-#include "linux/lockdep.h"
-#include <linux/export.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/sched/stat.h>
+#include <freax/kvm_host.h>
+#include "freax/lockdep.h"
+#include <freax/export.h>
+#include <freax/vmalloc.h>
+#include <freax/uaccess.h>
+#include <freax/sched/stat.h>
 
 #include <asm/processor.h>
 #include <asm/user.h>
@@ -770,7 +770,7 @@ void kvm_set_cpu_caps(void)
 	/*
 	 * Synthesize "LFENCE is serializing" into the AMD-defined entry in
 	 * KVM's supported CPUID if the feature is reported as supported by the
-	 * kernel.  LFENCE_RDTSC was a Linux-defined synthetic feature long
+	 * kernel.  LFENCE_RDTSC was a freax-defined synthetic feature long
 	 * before AMD joined the bandwagon, e.g. LFENCE is serializing on most
 	 * CPUs that support SSE2.  On CPUs that don't support AMD's leaf,
 	 * kvm_cpu_cap_mask() will unfortunately drop the flag due to ANDing

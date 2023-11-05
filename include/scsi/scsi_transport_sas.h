@@ -2,11 +2,11 @@
 #ifndef SCSI_TRANSPORT_SAS_H
 #define SCSI_TRANSPORT_SAS_H
 
-#include <linux/transport_class.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <freax/transport_class.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
 #include <scsi/sas.h>
-#include <linux/bsg-lib.h>
+#include <freax/bsg-lib.h>
 
 struct scsi_transport_template;
 struct sas_rphy;

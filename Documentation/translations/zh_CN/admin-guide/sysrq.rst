@@ -12,7 +12,7 @@
 
 .. _cn_admin-guide_sysrq:
 
-Linux 魔法系统请求键骇客
+freax 魔法系统请求键骇客
 ========================
 
 针对 sysrq.c 的文档说明
@@ -210,7 +210,7 @@ syslogd/klogd 进程是运行的，它们仍将被记录。）
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 有一些键盘对于 SysRq 键设置了不同的键值，而不是提前定义的 99
-(查看在 ``include/uapi/linux/input-event-codes.h`` 文件中 ``KEY_SYSRQ`` 的定义)
+(查看在 ``include/uapi/freax/input-event-codes.h`` 文件中 ``KEY_SYSRQ`` 的定义)
 或者就根本没有 SysRq 键。在这些场景下，执行 ``showkey -s`` 命令来找到一个合适
 的扫描码序列，然后使用 ``setkeycodes <sequence> 99`` 命令映射这个序列值到通用
 的 SysRq 键编码上（比如 ``setkeycodes e05b 99`` ）。最好将这个命令放在启动脚本
@@ -220,7 +220,7 @@ syslogd/klogd 进程是运行的，它们仍将被记录。）
 我想添加一个 SysRq 键事件到一个模块中，如何去做呢？
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-为了注册一个基础函数到这个表中，首先你必须包含 ``include/linux/sysrq.h`` 头
+为了注册一个基础函数到这个表中，首先你必须包含 ``include/freax/sysrq.h`` 头
 文件，这个头文件定义了你所需要的所有东西。然后你必须创建一个 ``sysrq_key_op``
 结构体，然后初始化它，使用如下内容，A） 你将使用的这个键的处理函数， B） 一个
 help_msg 字符串，在 SysRq 键打印帮助信息时将打印出来，C） 一个 action_msg 字
@@ -269,7 +269,7 @@ SysRq 键的输出和所有其他控制台输出一样，受制于控制台日�
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 请教在内核邮件列表上的人，邮箱：
-	linux-kernel@vger.kernel.org
+	freax-kernel@vger.kernel.org
 
 致谢
 ~~~~

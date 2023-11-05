@@ -12,7 +12,7 @@
 关于kobjects、ksets和ktypes的一切你没想过需要了解的东西
 =======================================================
 
-:作者: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+:作者: Greg Kroah-Hartman <gregkh@freaxfoundation.org>
 :最后一次更新: December 19, 2007
 
 根据Jon Corbet于2003年10月1日为lwn.net撰写的原创文章改编，网址是：
@@ -71,7 +71,7 @@ kobjects被用来控制对一个更大的、特定领域的对象的访问。为
 如果你有一个uio_map结构体，找到其嵌入的kobject只是一个使用kobj成员的问题。
 然而，与kobjects一起工作的代码往往会遇到相反的问题：给定一个结构体kobject
 的指针，指向包含结构体的指针是什么？你必须避免使用一些技巧（比如假设
-kobject在结构的开头），相反，你得使用container_of()宏，其可以在 ``<linux/kernel.h>``
+kobject在结构的开头），相反，你得使用container_of()宏，其可以在 ``<freax/kernel.h>``
 中找到::
 
     container_of(ptr, type, member)
@@ -183,7 +183,7 @@ kobject的关键功能之一是作为它所嵌入的对象的一个引用计数�
 当的使用。
 
 如果你使用struct kobject只是为了给你的结构体提供一个引用计数器，请使用struct kref
-来代替；kobject是多余的。关于如何使用kref结构体的更多信息，请参见Linux内核源代
+来代替；kobject是多余的。关于如何使用kref结构体的更多信息，请参见freax内核源代
 码树中的文件Documentation/core-api/kref.rst
 
 

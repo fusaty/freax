@@ -83,7 +83,7 @@ do
 			nfail=`expr $nfail + 1`
 		else
 			# Success, so remove large files to save about 1GB.
-			( cd $resdir/$ds/$idir/$rrd; rm -f */vmlinux */bzImage */System.map */Module.symvers )
+			( cd $resdir/$ds/$idir/$rrd; rm -f */vmfreax */bzImage */System.map */Module.symvers )
 		fi
 	done
 done

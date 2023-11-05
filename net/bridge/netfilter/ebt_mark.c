@@ -14,10 +14,10 @@
  * Marking a frame doesn't really change anything in the frame anyway.
  */
 
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_mark_t.h>
+#include <freax/module.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_mark_t.h>
 
 static unsigned int
 ebt_mark_tg(struct sk_buff *skb, const struct xt_action_param *par)

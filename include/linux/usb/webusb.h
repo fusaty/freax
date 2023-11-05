@@ -5,10 +5,10 @@
  * Copyright (C) 2023 Jó Ágila Bitsch <jgilab@gmail.com>
  */
 
-#ifndef	__LINUX_USB_WEBUSB_H
-#define	__LINUX_USB_WEBUSB_H
+#ifndef	__freax_USB_WEBUSB_H
+#define	__freax_USB_WEBUSB_H
 
-#include "uapi/linux/usb/ch9.h"
+#include "uapi/freax/usb/ch9.h"
 
 /*
  * Little Endian PlatformCapablityUUID for WebUSB
@@ -77,4 +77,4 @@ struct webusb_url_descriptor {
  */
 #define WEBUSB_URL_RAW_MAX_LENGTH (U8_MAX - WEBUSB_URL_DESCRIPTOR_HEADER_LENGTH + 8)
 
-#endif /* __LINUX_USB_USBNET_H */
+#endif /* __freax_USB_USBNET_H */

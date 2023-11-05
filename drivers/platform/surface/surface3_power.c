@@ -31,15 +31,15 @@
  *     dumps.
  */
 
-#include <linux/acpi.h>
-#include <linux/bits.h>
-#include <linux/freezer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <freax/acpi.h>
+#include <freax/bits.h>
+#include <freax/freezer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
 #include <asm/unaligned.h>
 
 #define SURFACE_3_POLL_INTERVAL		(2 * HZ)

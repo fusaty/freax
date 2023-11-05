@@ -1,5 +1,5 @@
 /*
- * Linux Security Module interfaces
+ * freax Security Module interfaces
  *
  * Copyright (C) 2001 WireX Communications, Inc <chris@wirex.com>
  * Copyright (C) 2001 Greg Kroah-Hartman <greg@kroah.com>
@@ -22,13 +22,13 @@
  *
  */
 
-#ifndef __LINUX_LSM_HOOKS_H
-#define __LINUX_LSM_HOOKS_H
+#ifndef __freax_LSM_HOOKS_H
+#define __freax_LSM_HOOKS_H
 
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/xattr.h>
+#include <freax/security.h>
+#include <freax/init.h>
+#include <freax/rculist.h>
+#include <freax/xattr.h>
 
 union security_list_options {
 	#define LSM_HOOK(RET, DEFAULT, NAME, ...) RET (*NAME)(__VA_ARGS__);
@@ -87,7 +87,7 @@ static inline struct xattr *lsm_get_xattr_slot(struct xattr *xattrs,
 
 /*
  * LSM_RET_VOID is used as the default value in LSM_HOOK definitions for void
- * LSM hooks (in include/linux/lsm_hook_defs.h).
+ * LSM hooks (in include/freax/lsm_hook_defs.h).
  */
 #define LSM_RET_VOID ((void) 0)
 
@@ -139,4 +139,4 @@ extern struct lsm_info __start_early_lsm_info[], __end_early_lsm_info[];
 
 extern int lsm_inode_alloc(struct inode *inode);
 
-#endif /* ! __LINUX_LSM_HOOKS_H */
+#endif /* ! __freax_LSM_HOOKS_H */

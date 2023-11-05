@@ -14,9 +14,9 @@
 /*
  * User space memory access functions
  */
-#include <linux/bitops.h>
-#include <linux/kasan-checks.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/kasan-checks.h>
+#include <freax/string.h>
 
 #include <asm/asm-extable.h>
 #include <asm/cpufeature.h>

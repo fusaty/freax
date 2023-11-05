@@ -3,18 +3,18 @@
  * Copyright (c) 2014 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_vlan.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 #include <net/tc_wrapper.h>
 
-#include <linux/tc_act/tc_vlan.h>
+#include <freax/tc_act/tc_vlan.h>
 #include <net/tc_act/tc_vlan.h>
 
 static struct tc_action_ops act_vlan_ops;

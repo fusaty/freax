@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/mfd/rave-sp.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/watchdog.h>
 
 enum {
 	RAVE_SP_RESET_BYTE = 1,

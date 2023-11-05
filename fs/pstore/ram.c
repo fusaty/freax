@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/pstore.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/version.h>
+#include <freax/pstore.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/compiler.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/mm.h>
 
 #include "internal.h"
 #include "ram_internal.h"
@@ -802,7 +802,7 @@ static int ramoops_probe(struct platform_device *pdev)
 				: 1;
 	err = ramoops_init_przs("ftrace", dev, cxt, &cxt->fprzs, &paddr,
 				cxt->ftrace_size, -1,
-				&cxt->max_ftrace_cnt, LINUX_VERSION_CODE,
+				&cxt->max_ftrace_cnt, freax_VERSION_CODE,
 				(cxt->flags & RAMOOPS_FLAG_FTRACE_PER_CPU)
 					? PRZ_FLAG_NO_LOCK : 0);
 	if (err)

@@ -7,15 +7,15 @@
  * Created by: Haren Myneni
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/export.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/reboot.h>
+#include <freax/kexec.h>
+#include <freax/export.h>
+#include <freax/crash_dump.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/types.h>
 
 #include <asm/processor.h>
 #include <asm/machdep.h>

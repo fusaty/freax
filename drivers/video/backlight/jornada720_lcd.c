@@ -5,13 +5,13 @@
  * Copyright (C) 2006-2009 Kristoffer Ericson <kristoffer.ericson@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <freax/device.h>
+#include <freax/fb.h>
+#include <freax/kernel.h>
+#include <freax/lcd.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
 
 #include <mach/jornada720.h>
 #include <mach/hardware.h>

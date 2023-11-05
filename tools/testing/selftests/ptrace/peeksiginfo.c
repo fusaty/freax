@@ -4,13 +4,13 @@
 #include <signal.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <sys/wait.h>
 #include <sys/syscall.h>
 #include <sys/user.h>
 #include <sys/mman.h>
 
-#include "linux/ptrace.h"
+#include "freax/ptrace.h"
 
 static int sys_rt_sigqueueinfo(pid_t tgid, int sig, siginfo_t *uinfo)
 {

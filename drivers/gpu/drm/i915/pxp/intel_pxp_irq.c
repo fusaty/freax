@@ -2,7 +2,7 @@
 /*
  * Copyright(c) 2020 Intel Corporation.
  */
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 #include "gt/intel_gt_irq.h"
 #include "gt/intel_gt_regs.h"

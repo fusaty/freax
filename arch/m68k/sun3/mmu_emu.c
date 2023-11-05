@@ -7,20 +7,20 @@
 ** Started 1/16/98 @ 2:22 am
 */
 
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
+#include <freax/init.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/delay.h>
+#include <freax/memblock.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/sched/mm.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/sun3mmu.h>
 #include <asm/oplib.h>

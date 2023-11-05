@@ -5,14 +5,14 @@
  * Copyright (C) 2014 Paratronic S.A.
  */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/termios.h>
-#include <linux/serial_core.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/termios.h>
+#include <freax/serial_core.h>
+#include <freax/module.h>
+#include <freax/property.h>
 
 #include "serial_mctrl_gpio.h"
 

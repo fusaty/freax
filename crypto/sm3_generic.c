@@ -5,17 +5,17 @@
  *
  * Copyright (C) 2017 ARM Limited or its affiliates.
  * Written by Gilad Ben-Yossef <gilad@benyossef.com>
- * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 #include <crypto/sm3.h>
 #include <crypto/sm3_base.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

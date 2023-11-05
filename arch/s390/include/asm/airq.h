@@ -10,8 +10,8 @@
 #ifndef _ASM_S390_AIRQ_H
 #define _ASM_S390_AIRQ_H
 
-#include <linux/bit_spinlock.h>
-#include <linux/dma-mapping.h>
+#include <freax/bit_spinlock.h>
+#include <freax/dma-mapping.h>
 #include <asm/tpi.h>
 
 struct airq_struct {

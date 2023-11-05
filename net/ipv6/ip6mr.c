@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux IPv6 multicast routing support for BSD pim6sd
+ *	freax IPv6 multicast routing support for BSD pim6sd
  *	Based on net/ipv4/ipmr.c.
  *
  *	(c) 2004 Mickael Hoerdt, <hoerdt@clarinet.u-strasbg.fr>
@@ -8,47 +8,47 @@
  *	(c) 2004 Jean-Philippe Andriot, <jean-philippe.andriot@6WIND.com>
  *		6WIND, Paris, France
  *	Copyright (C)2007,2008 USAGI/WIDE Project
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@freax-ipv6.org>
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/rhashtable.h>
+#include <freax/uaccess.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/fcntl.h>
+#include <freax/stat.h>
+#include <freax/socket.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/compat.h>
+#include <freax/rhashtable.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
+#include <freax/notifier.h>
+#include <freax/if_arp.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
 
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
-#include <linux/mroute6.h>
-#include <linux/pim.h>
+#include <freax/mroute6.h>
+#include <freax/pim.h>
 #include <net/addrconf.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/export.h>
 #include <net/ip6_checksum.h>
-#include <linux/netconf.h>
+#include <freax/netconf.h>
 #include <net/ip_tunnels.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 struct ip6mr_rule {
 	struct fib_rule		common;

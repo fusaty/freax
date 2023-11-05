@@ -7,11 +7,11 @@
  * Author: Pawel Laszczak <pawell@cadence.com>
  */
 
-#ifndef __LINUX_CDNS2_GADGET
-#define __LINUX_CDNS2_GADGET
+#ifndef __freax_CDNS2_GADGET
+#define __freax_CDNS2_GADGET
 
-#include <linux/usb/gadget.h>
-#include <linux/dma-direction.h>
+#include <freax/usb/gadget.h>
+#include <freax/dma-direction.h>
 
 /*
  * USBHS register interface.
@@ -704,4 +704,4 @@ void set_reg_bit_8(void __iomem *ptr, u8 mask);
 int cdns2_halt_endpoint(struct cdns2_device *pdev, struct cdns2_endpoint *pep,
 			int value);
 
-#endif /* __LINUX_CDNS2_GADGET */
+#endif /* __freax_CDNS2_GADGET */

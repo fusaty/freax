@@ -2,7 +2,7 @@
 #ifndef _TSO_H
 #define _TSO_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/ip.h>
 
 #define TSO_HEADER_SIZE		256

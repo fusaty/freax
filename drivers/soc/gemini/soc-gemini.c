@@ -9,11 +9,11 @@
  * published by the Free Software Foundation.
  *
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
 
 #define GLOBAL_WORD_ID				0x00
 #define GEMINI_GLOBAL_ARB1_CTRL			0x2c

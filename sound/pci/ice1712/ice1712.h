@@ -8,7 +8,7 @@
  *	Copyright (c) 2000 Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <sound/control.h>
 #include <sound/ac97_codec.h>
 #include <sound/rawmidi.h>

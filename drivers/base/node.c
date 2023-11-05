@@ -3,23 +3,23 @@
  * Basic Node interface support
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/vmstat.h>
-#include <linux/notifier.h>
-#include <linux/node.h>
-#include <linux/hugetlb.h>
-#include <linux/compaction.h>
-#include <linux/cpumask.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/memory.h>
+#include <freax/vmstat.h>
+#include <freax/notifier.h>
+#include <freax/node.h>
+#include <freax/hugetlb.h>
+#include <freax/compaction.h>
+#include <freax/cpumask.h>
+#include <freax/topology.h>
+#include <freax/nodemask.h>
+#include <freax/cpu.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
 
 static struct bus_type node_subsys = {
 	.name = "node",

@@ -7,13 +7,13 @@
  * Copyright 2009 Ilya Yanok, Emcraft Systems Ltd, yanok@emcraft.com
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/system_misc.h>
 #include <asm/proc-fns.h>

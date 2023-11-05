@@ -15,18 +15,18 @@
  * Copyright (C) 2005	   Stelian Pop (stelian@popies.net)
  * Copyright (C) 2005	   Frank Arnold (frank@scirocco-5v-turbo.de)
  * Copyright (C) 2005	   Peter Osterlund (petero2@telia.com)
- * Copyright (C) 2005	   Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2005	   Michael Hanselmann (freax-kernel@hansmi.ch)
  * Copyright (C) 2006	   Nicolas Boichat (nicolas@boichat.ch)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
-#include <linux/input/mt.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb/input.h>
+#include <freax/hid.h>
+#include <freax/mutex.h>
+#include <freax/input/mt.h>
 
 #define USB_VENDOR_ID_APPLE		0x05ac
 

@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2012 Bryan Schumaker <bjschuma@netapp.com>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_ssc.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/nfs4_mount.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_ssc.h>
 #include "delegation.h"
 #include "internal.h"
 #include "nfs4_fs.h"

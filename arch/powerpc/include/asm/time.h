@@ -10,8 +10,8 @@
 #define __POWERPC_TIME_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <freax/types.h>
+#include <freax/percpu.h>
 
 #include <asm/processor.h>
 #include <asm/cpu_has_feature.h>

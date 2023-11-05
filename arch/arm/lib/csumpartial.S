@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/csumpartial.S
+ *  freax/arch/arm/lib/csumpartial.S
  *
  *  Copyright (C) 1995-1998 Russell King
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 		.text
@@ -47,7 +47,7 @@ td3	.req	lr
 		/* we are now half-word aligned */
 
 .Lless8_wordlp:
-#if __LINUX_ARM_ARCH__ >= 4
+#if __freax_ARM_ARCH__ >= 4
 		ldrh	td0, [buf], #2
 		sub	len, len, #2
 #else
@@ -80,7 +80,7 @@ td3	.req	lr
 		adcsne	sum, sum, td0, put_byte_1	@ update checksum
 
 		tst	buf, #2			@ 32-bit aligned?
-#if __LINUX_ARM_ARCH__ >= 4
+#if __freax_ARM_ARCH__ >= 4
 		ldrhne	td0, [buf], #2		@ make 32-bit aligned
 		subne	len, len, #2
 #else

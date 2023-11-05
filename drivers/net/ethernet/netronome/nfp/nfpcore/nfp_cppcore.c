@@ -10,15 +10,15 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #include "nfp_arm.h"
 #include "nfp_cpp.h"
@@ -1274,7 +1274,7 @@ void *nfp_cpp_priv(struct nfp_cpp *cpp)
 }
 
 /**
- * nfp_cpp_device() - Get the Linux device handle of a CPP handle
+ * nfp_cpp_device() - Get the freax device handle of a CPP handle
  * @cpp:	CPP handle
  *
  * Return: Device for the NFP CPP bus

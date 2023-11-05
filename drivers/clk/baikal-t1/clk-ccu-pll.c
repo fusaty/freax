@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) "bt1-ccu-pll: " fmt
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/ioport.h>
+#include <freax/regmap.h>
 
 #include <dt-bindings/clock/bt1-ccu.h>
 

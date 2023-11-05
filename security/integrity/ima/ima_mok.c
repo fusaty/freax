@@ -6,13 +6,13 @@
  * Petko Manolov <petko.manolov@konsulko.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <keys/system_keyring.h>
 
 

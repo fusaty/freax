@@ -4,9 +4,9 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/smp.h>
+#include <freax/platform_device.h>
 
 static struct platform_device loongson2_cpufreq_device = {
 	.name = "loongson2_cpufreq",

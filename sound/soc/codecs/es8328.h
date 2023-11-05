@@ -6,7 +6,7 @@
 #ifndef _ES8328_H
 #define _ES8328_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 struct device;
 

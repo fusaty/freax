@@ -6,11 +6,11 @@
 
 */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
 #include <asm/io.h>
 
 #include <media/dmxdev.h>

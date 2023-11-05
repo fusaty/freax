@@ -13,16 +13,16 @@
 #include <kunit/test.h>
 #include "kmsan.h"
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kmsan.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tracepoint.h>
-#include <linux/vmalloc.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kmsan.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tracepoint.h>
+#include <freax/vmalloc.h>
 #include <trace/events/printk.h>
 
 static DEFINE_PER_CPU(int, per_cpu_var);

@@ -9,7 +9,7 @@
 #ifndef SPLICE_H
 #define SPLICE_H
 
-#include <linux/pipe_fs_i.h>
+#include <freax/pipe_fs_i.h>
 
 /*
  * Flags passed in from splice/tee/vmsplice

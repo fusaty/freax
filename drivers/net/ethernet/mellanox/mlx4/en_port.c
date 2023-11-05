@@ -32,10 +32,10 @@
  */
 
 
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
+#include <freax/mlx4/device.h>
+#include <freax/mlx4/cmd.h>
 
 #include "en_port.h"
 #include "mlx4_en.h"

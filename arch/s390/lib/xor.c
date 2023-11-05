@@ -6,9 +6,9 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/raid/xor.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/raid/xor.h>
 #include <asm/xor.h>
 
 static void xor_xc_2(unsigned long bytes, unsigned long * __restrict p1,

@@ -7,18 +7,18 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/utsname.h>
-#include <linux/bitfield.h>
-#include <linux/uuid.h>
+#include <freax/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/utsname.h>
+#include <freax/bitfield.h>
+#include <freax/uuid.h>
 
-#include <linux/usb/composite.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/webusb.h>
+#include <freax/usb/composite.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/webusb.h>
 #include <asm/unaligned.h>
 
 #include "u_os_desc.h"
@@ -339,7 +339,7 @@ int usb_add_function(struct usb_configuration *config,
 		value = 0;
 
 	/* We allow configurations that don't work at both speeds.
-	 * If we run into a lowspeed Linux system, treat it the same
+	 * If we run into a lowspeed freax system, treat it the same
 	 * as full speed ... it's the function drivers that will need
 	 * to avoid bulk and ISO transfers.
 	 */

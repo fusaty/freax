@@ -6,7 +6,7 @@
 #ifndef __IVPU_PM_H__
 #define __IVPU_PM_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct ivpu_device;
 

@@ -9,13 +9,13 @@
 #ifndef CAMIF_CORE_H_
 #define CAMIF_CORE_H_
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

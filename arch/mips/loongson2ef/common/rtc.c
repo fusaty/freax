@@ -5,10 +5,10 @@
  *  Copyright(c) 2010 Arnaud Patard <apatard@mandriva.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mc146818rtc.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/mc146818rtc.h>
 
 static struct resource loongson_rtc_resources[] = {
 	{

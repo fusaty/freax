@@ -5,28 +5,28 @@
  * Copyright (c) 2016 BayLibre, SAS.
  * Author: Kevin Hilman <khilman@baylibre.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/interrupt.h>
-#include <linux/bitfield.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/dma-mapping.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/interrupt.h>
+#include <freax/bitfield.h>
+#include <freax/pinctrl/consumer.h>
 
 #define DRIVER_NAME "meson-gx-mmc"
 

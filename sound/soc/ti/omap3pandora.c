@@ -5,19 +5,19 @@
  * Author: Gražvydas Ignotas <notasas@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
+#include <freax/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <freax/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 

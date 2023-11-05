@@ -2,7 +2,7 @@
 /*
  * ipmi_devintf.c
  *
- * Linux device interface for the IPMI message handler.
+ * freax device interface for the IPMI message handler.
  *
  * Author: MontaVista Software, Inc.
  *         Corey Minyard <minyard@mvista.com>
@@ -11,18 +11,18 @@
  * Copyright 2002 MontaVista Software Inc.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/compat.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/errno.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/ipmi.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/compat.h>
 
 struct ipmi_file_private
 {
@@ -907,4 +907,4 @@ module_exit(cleanup_ipmi);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Corey Minyard <minyard@mvista.com>");
-MODULE_DESCRIPTION("Linux device interface for the IPMI message handler.");
+MODULE_DESCRIPTION("freax device interface for the IPMI message handler.");

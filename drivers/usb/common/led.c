@@ -5,11 +5,11 @@
  * Copyright 2014 Michal Sojka <sojka@merica.cz>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/leds.h>
+#include <freax/usb.h>
 #include "common.h"
 
 #define BLINK_DELAY 30

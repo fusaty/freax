@@ -4,9 +4,9 @@
  * Debugging macro include header
  *
  *  Copyright (C) 1994-1999 Russell King
- *  Moved from linux/arch/arm/kernel/debug.S by Ben Dooks
+ *  Moved from freax/arch/arm/kernel/debug.S by Ben Dooks
 */
-#include <linux/amba/serial.h>
+#include <freax/amba/serial.h>
 
 #ifdef CONFIG_DEBUG_UART_PHYS
 		.macro	addruart, rp, rv, tmp

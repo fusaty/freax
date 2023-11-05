@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <freax/cpumask.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
+#include <freax/mlx4/driver.h>
+#include <freax/mlx4/device.h>
+#include <freax/mlx4/cmd.h>
 
 #include "mlx4_en.h"
 

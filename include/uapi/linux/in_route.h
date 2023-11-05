@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_IN_ROUTE_H
-#define _LINUX_IN_ROUTE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_IN_ROUTE_H
+#define _freax_IN_ROUTE_H
 
 /* IPv4 routing cache flags */
 
@@ -30,4 +30,4 @@
 
 #define RT_TOS(tos)	((tos)&IPTOS_TOS_MASK)
 
-#endif /* _LINUX_IN_ROUTE_H */
+#endif /* _freax_IN_ROUTE_H */

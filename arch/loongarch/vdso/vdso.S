@@ -6,8 +6,8 @@
  * Copyright (C) 2014 Regents of the University of California
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/page.h>
 
 	__PAGE_ALIGNED_DATA

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2009 SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009 SUSE freax Products GmbH. All rights reserved.
  *
  * Authors:
  *     Alexander Graf <agraf@suse.de>
  *     Kevin Wolf <mail@kevin-wolf.de>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/pkeys.h>
+#include <freax/kvm_host.h>
+#include <freax/pkeys.h>
 
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

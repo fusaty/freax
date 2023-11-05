@@ -5,16 +5,16 @@
  * Copyright 2022 Sven Schwermer <sven.schwermer@disruptive-technologies.com>
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/leds.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/leds.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/pwm.h>
 
 struct pwm_led {
 	struct pwm_device *pwm;

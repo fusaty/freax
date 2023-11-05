@@ -6,7 +6,7 @@
 #ifndef BTRFS_TRANSACTION_H
 #define BTRFS_TRANSACTION_H
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include "btrfs_inode.h"
 #include "delayed-ref.h"
 #include "ctree.h"

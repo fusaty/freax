@@ -8,8 +8,8 @@
 #if !defined(__IWLWIFI_DEVICE_TRACE_IO) || defined(TRACE_HEADER_MULTI_READ)
 #define __IWLWIFI_DEVICE_TRACE_IO
 
-#include <linux/tracepoint.h>
-#include <linux/pci.h>
+#include <freax/tracepoint.h>
+#include <freax/pci.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM iwlwifi_io

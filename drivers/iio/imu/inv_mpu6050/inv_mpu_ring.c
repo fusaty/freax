@@ -3,18 +3,18 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/math64.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/poll.h>
+#include <freax/math64.h>
 
-#include <linux/iio/common/inv_sensors_timestamp.h>
+#include <freax/iio/common/inv_sensors_timestamp.h>
 
 #include "inv_mpu_iio.h"
 

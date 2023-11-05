@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INTERVAL_TREE_H
-#define _LINUX_INTERVAL_TREE_H
+#ifndef _freax_INTERVAL_TREE_H
+#define _freax_INTERVAL_TREE_H
 
-#include <linux/rbtree.h>
+#include <freax/rbtree.h>
 
 struct interval_tree_node {
 	struct rb_node rb;
@@ -85,4 +85,4 @@ interval_tree_span_iter_done(struct interval_tree_span_iter *state)
 	     !interval_tree_span_iter_done(span);                              \
 	     interval_tree_span_iter_next(span))
 
-#endif	/* _LINUX_INTERVAL_TREE_H */
+#endif	/* _freax_INTERVAL_TREE_H */

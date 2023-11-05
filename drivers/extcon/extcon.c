@@ -14,16 +14,16 @@
  * Author: Mike Lockwood <lockwood@android.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
 
 #include "extcon.h"
 

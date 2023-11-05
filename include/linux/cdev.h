@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CDEV_H
-#define _LINUX_CDEV_H
+#ifndef _freax_CDEV_H
+#define _freax_CDEV_H
 
-#include <linux/kobject.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/device.h>
+#include <freax/kobject.h>
+#include <freax/kdev_t.h>
+#include <freax/list.h>
+#include <freax/device.h>
 
 struct file_operations;
 struct inode;

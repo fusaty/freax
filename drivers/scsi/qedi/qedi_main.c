@@ -4,19 +4,19 @@
  * Copyright (c) 2016 Cavium Inc.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/if_arp.h>
 #include <scsi/iscsi_if.h>
-#include <linux/inet.h>
+#include <freax/inet.h>
 #include <net/arp.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
-#include <linux/iscsi_boot_sysfs.h>
+#include <freax/list.h>
+#include <freax/kthread.h>
+#include <freax/mm.h>
+#include <freax/if_vlan.h>
+#include <freax/cpu.h>
+#include <freax/iscsi_boot_sysfs.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

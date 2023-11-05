@@ -14,12 +14,12 @@
  * problems, but...
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/platform_device.h>
 #include <asm/hardware.h>
 #include <asm/io.h>
 #include <asm/mmzone.h>

@@ -2,18 +2,18 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@freaxtv.org>
  */
 
 #include "cx23885.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/suspend.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/kthread.h>
+#include <freax/file.h>
+#include <freax/suspend.h>
 
 #include <media/v4l2-common.h>
 

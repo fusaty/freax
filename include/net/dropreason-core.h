@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-#ifndef _LINUX_DROPREASON_CORE_H
-#define _LINUX_DROPREASON_CORE_H
+#ifndef _freax_DROPREASON_CORE_H
+#define _freax_DROPREASON_CORE_H
 
 #define DEFINE_DROP_REASON(FN, FNe)	\
 	FN(NOT_SPECIFIED)		\
@@ -154,55 +154,55 @@ enum skb_drop_reason {
 	SKB_DROP_REASON_TCP_AUTH_HDR,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5NOTFOUND: no MD5 hash and one expected,
-	 * corresponding to LINUX_MIB_TCPMD5NOTFOUND
+	 * corresponding to freax_MIB_TCPMD5NOTFOUND
 	 */
 	SKB_DROP_REASON_TCP_MD5NOTFOUND,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5UNEXPECTED: MD5 hash and we're not expecting
-	 * one, corresponding to LINUX_MIB_TCPMD5UNEXPECTED
+	 * one, corresponding to freax_MIB_TCPMD5UNEXPECTED
 	 */
 	SKB_DROP_REASON_TCP_MD5UNEXPECTED,
 	/**
 	 * @SKB_DROP_REASON_TCP_MD5FAILURE: MD5 hash and its wrong, corresponding
-	 * to LINUX_MIB_TCPMD5FAILURE
+	 * to freax_MIB_TCPMD5FAILURE
 	 */
 	SKB_DROP_REASON_TCP_MD5FAILURE,
 	/**
 	 * @SKB_DROP_REASON_TCP_AONOTFOUND: no TCP-AO hash and one was expected,
-	 * corresponding to LINUX_MIB_TCPAOREQUIRED
+	 * corresponding to freax_MIB_TCPAOREQUIRED
 	 */
 	SKB_DROP_REASON_TCP_AONOTFOUND,
 	/**
 	 * @SKB_DROP_REASON_TCP_AOUNEXPECTED: TCP-AO hash is present and it
-	 * was not expected, corresponding to LINUX_MIB_TCPAOKEYNOTFOUND
+	 * was not expected, corresponding to freax_MIB_TCPAOKEYNOTFOUND
 	 */
 	SKB_DROP_REASON_TCP_AOUNEXPECTED,
 	/**
 	 * @SKB_DROP_REASON_TCP_AOKEYNOTFOUND: TCP-AO key is unknown,
-	 * corresponding to LINUX_MIB_TCPAOKEYNOTFOUND
+	 * corresponding to freax_MIB_TCPAOKEYNOTFOUND
 	 */
 	SKB_DROP_REASON_TCP_AOKEYNOTFOUND,
 	/**
 	 * @SKB_DROP_REASON_TCP_AOFAILURE: TCP-AO hash is wrong,
-	 * corresponding to LINUX_MIB_TCPAOBAD
+	 * corresponding to freax_MIB_TCPAOBAD
 	 */
 	SKB_DROP_REASON_TCP_AOFAILURE,
 	/**
 	 * @SKB_DROP_REASON_SOCKET_BACKLOG: failed to add skb to socket backlog (
-	 * see LINUX_MIB_TCPBACKLOGDROP)
+	 * see freax_MIB_TCPBACKLOGDROP)
 	 */
 	SKB_DROP_REASON_SOCKET_BACKLOG,
 	/** @SKB_DROP_REASON_TCP_FLAGS: TCP flags invalid */
 	SKB_DROP_REASON_TCP_FLAGS,
 	/**
 	 * @SKB_DROP_REASON_TCP_ZEROWINDOW: TCP receive window size is zero,
-	 * see LINUX_MIB_TCPZEROWINDOWDROP
+	 * see freax_MIB_TCPZEROWINDOWDROP
 	 */
 	SKB_DROP_REASON_TCP_ZEROWINDOW,
 	/**
 	 * @SKB_DROP_REASON_TCP_OLD_DATA: the TCP data reveived is already
 	 * received before (spurious retrans may happened), see
-	 * LINUX_MIB_DELAYEDACKLOST
+	 * freax_MIB_DELAYEDACKLOST
 	 */
 	SKB_DROP_REASON_TCP_OLD_DATA,
 	/**
@@ -213,12 +213,12 @@ enum skb_drop_reason {
 	SKB_DROP_REASON_TCP_OVERWINDOW,
 	/**
 	 * @SKB_DROP_REASON_TCP_OFOMERGE: the data of skb is already in the ofo
-	 * queue, corresponding to LINUX_MIB_TCPOFOMERGE
+	 * queue, corresponding to freax_MIB_TCPOFOMERGE
 	 */
 	SKB_DROP_REASON_TCP_OFOMERGE,
 	/**
 	 * @SKB_DROP_REASON_TCP_RFC7323_PAWS: PAWS check, corresponding to
-	 * LINUX_MIB_PAWSESTABREJECTED
+	 * freax_MIB_PAWSESTABREJECTED
 	 */
 	SKB_DROP_REASON_TCP_RFC7323_PAWS,
 	/** @SKB_DROP_REASON_TCP_OLD_SEQUENCE: Old SEQ field (duplicate packet) */

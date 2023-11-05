@@ -4,14 +4,14 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/in.h>
-#include <uapi/linux/if.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/ipv6.h>
-#include <uapi/linux/if_tunnel.h>
-#include <uapi/linux/mpls.h>
+#include <uapi/freax/bpf.h>
+#include <uapi/freax/in.h>
+#include <uapi/freax/if.h>
+#include <uapi/freax/if_ether.h>
+#include <uapi/freax/ip.h>
+#include <uapi/freax/ipv6.h>
+#include <uapi/freax/if_tunnel.h>
+#include <uapi/freax/mpls.h>
 #include <bpf/bpf_helpers.h>
 #include "bpf_legacy.h"
 #define IP_MF		0x2000

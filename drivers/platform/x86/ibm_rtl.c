@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * IBM Real-Time Linux driver
+ * IBM Real-Time freax driver
  *
  * Copyright (C) IBM Corporation, 2010
  *
@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/mutex.h>
 #include <asm/bios_ebda.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 static bool force;
 module_param(force, bool, 0);

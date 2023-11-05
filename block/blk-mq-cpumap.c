@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2013-2014 Jens Axboe
  */
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/group_cpus.h>
+#include <freax/kernel.h>
+#include <freax/threads.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/group_cpus.h>
 
 #include "blk.h"
 #include "blk-mq.h"

@@ -3,21 +3,21 @@
  * Driver for TI TPS6598x USB Power Delivery controller family
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/role.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/interrupt.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/typec_altmode.h>
+#include <freax/usb/role.h>
+#include <freax/workqueue.h>
+#include <freax/firmware.h>
 
 #include "tps6598x.h"
 #include "trace.h"
@@ -1442,6 +1442,6 @@ static struct i2c_driver tps6598x_i2c_driver = {
 };
 module_i2c_driver(tps6598x_i2c_driver);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@freax.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("TI TPS6598x USB Power Delivery Controller Driver");

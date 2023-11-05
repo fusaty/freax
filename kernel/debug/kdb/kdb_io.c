@@ -9,20 +9,20 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/kallsyms.h>
+#include <freax/types.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/kdev_t.h>
+#include <freax/console.h>
+#include <freax/string.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/nmi.h>
+#include <freax/delay.h>
+#include <freax/kgdb.h>
+#include <freax/kdb.h>
+#include <freax/kallsyms.h>
 #include "kdb_private.h"
 
 #define CMD_BUFLEN 256

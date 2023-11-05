@@ -12,12 +12,12 @@
  * attribute 'rci2' under /sys/firmware/efi/tables directory.
  */
 
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/efi.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/kobject.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/efi.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 #define RCI_SIGNATURE	"_RC_"
 

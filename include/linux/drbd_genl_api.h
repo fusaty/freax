@@ -42,15 +42,15 @@ enum drbd_state_info_bcast_reason {
 	SIB_SYNC_PROGRESS = 5,
 };
 
-/* hack around predefined gcc/cpp "linux=1",
+/* hack around predefined gcc/cpp "freax=1",
  * we cannot possibly include <1/drbd_genl.h> */
-#undef linux
+#undef freax
 
-#include <linux/drbd.h>
+#include <freax/drbd.h>
 #define GENL_MAGIC_VERSION	1
 #define GENL_MAGIC_FAMILY	drbd
 #define GENL_MAGIC_FAMILY_HDRSZ	sizeof(struct drbd_genlmsghdr)
-#define GENL_MAGIC_INCLUDE_FILE <linux/drbd_genl.h>
-#include <linux/genl_magic_struct.h>
+#define GENL_MAGIC_INCLUDE_FILE <freax/drbd_genl.h>
+#include <freax/genl_magic_struct.h>
 
 #endif

@@ -10,8 +10,8 @@
 #include <drm/drm_rect.h>
 #include <drm/drm_mode.h>
 
-#include <linux/string_helpers.h>
-#include <linux/errno.h>
+#include <freax/string_helpers.h>
+#include <freax/errno.h>
 
 static void drm_rect_compare(struct kunit *test, const struct drm_rect *r,
 			     const struct drm_rect *expected)

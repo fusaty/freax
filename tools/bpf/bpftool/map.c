@@ -3,8 +3,8 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
 #include <net/if.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -86,7 +86,7 @@ static int do_dump_btf(const struct btf_dumper *d,
 			goto err_end_obj;
 	}
 
-	value_id = map_info->btf_vmlinux_value_type_id ?
+	value_id = map_info->btf_vmfreax_value_type_id ?
 		: map_info->btf_value_type_id;
 
 	if (!map_is_per_cpu(map_info->type)) {
@@ -785,21 +785,21 @@ static int maps_have_btf(int *fds, int nb_fds)
 	return 1;
 }
 
-static struct btf *btf_vmlinux;
+static struct btf *btf_vmfreax;
 
 static int get_map_kv_btf(const struct bpf_map_info *info, struct btf **btf)
 {
 	int err = 0;
 
-	if (info->btf_vmlinux_value_type_id) {
-		if (!btf_vmlinux) {
-			btf_vmlinux = libbpf_find_kernel_btf();
-			if (!btf_vmlinux) {
+	if (info->btf_vmfreax_value_type_id) {
+		if (!btf_vmfreax) {
+			btf_vmfreax = libbpf_find_kernel_btf();
+			if (!btf_vmfreax) {
 				p_err("failed to get kernel btf");
 				return -errno;
 			}
 		}
-		*btf = btf_vmlinux;
+		*btf = btf_vmfreax;
 	} else if (info->btf_value_type_id) {
 		*btf = btf__load_from_kernel_by_id(info->btf_id);
 		if (!*btf) {
@@ -815,7 +815,7 @@ static int get_map_kv_btf(const struct bpf_map_info *info, struct btf **btf)
 
 static void free_map_kv_btf(struct btf *btf)
 {
-	if (btf != btf_vmlinux)
+	if (btf != btf_vmfreax)
 		btf__free(btf);
 }
 
@@ -955,7 +955,7 @@ exit_close:
 		close(fds[i]);
 exit_free:
 	free(fds);
-	btf__free(btf_vmlinux);
+	btf__free(btf_vmfreax);
 	return err;
 }
 

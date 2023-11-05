@@ -2,7 +2,7 @@
 #ifndef __ASM_ASM_EXTABLE_H
 #define __ASM_ASM_EXTABLE_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <asm/gpr-num.h>
 
 #define EX_TYPE_NONE			0
@@ -71,7 +71,7 @@
 
 #else /* __ASSEMBLY__ */
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #define __ASM_EXTABLE_RAW(insn, fixup, type, data)	\
 	".pushsection	__ex_table, \"a\"\n"		\

@@ -18,7 +18,7 @@
 
 #include <uapi/asm/swab.h>
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 
 static inline __attribute_const__ __u32 __arch_swahb32(__u32 x)
 {

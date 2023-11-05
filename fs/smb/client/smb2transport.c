@@ -9,15 +9,15 @@
  *
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/net.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
-#include <linux/mempool.h>
-#include <linux/highmem.h>
+#include <freax/mempool.h>
+#include <freax/highmem.h>
 #include <crypto/aead.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -839,7 +839,7 @@ smb2_check_receive(struct mid_q_entry *mid, struct TCP_Server_Info *server,
 				 rc);
 	}
 
-	return map_smb2_to_linux_error(mid->resp_buf, log_error);
+	return map_smb2_to_freax_error(mid->resp_buf, log_error);
 }
 
 struct mid_q_entry *

@@ -1,5 +1,5 @@
 /*
- *	An async IO implementation for Linux
+ *	An async IO implementation for freax
  *	Written by Benjamin LaHaise <bcrl@kvack.org>
  *
  *	Implements an efficient asynchronous io interface.
@@ -11,40 +11,40 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/aio_abi.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/backing-dev.h>
-#include <linux/refcount.h>
-#include <linux/uio.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/aio_abi.h>
+#include <freax/export.h>
+#include <freax/syscalls.h>
+#include <freax/backing-dev.h>
+#include <freax/refcount.h>
+#include <freax/uio.h>
 
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/aio.h>
-#include <linux/highmem.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/eventfd.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/migrate.h>
-#include <linux/ramfs.h>
-#include <linux/percpu-refcount.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
+#include <freax/sched/signal.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/aio.h>
+#include <freax/highmem.h>
+#include <freax/workqueue.h>
+#include <freax/security.h>
+#include <freax/eventfd.h>
+#include <freax/blkdev.h>
+#include <freax/compat.h>
+#include <freax/migrate.h>
+#include <freax/ramfs.h>
+#include <freax/percpu-refcount.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
 
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
+#include <freax/uaccess.h>
+#include <freax/nospec.h>
 
 #include "internal.h"
 
@@ -168,7 +168,7 @@ struct kioctx {
 
 /*
  * First field must be the file pointer in all the
- * iocb unions! See also 'struct kiocb' in <linux/fs.h>
+ * iocb unions! See also 'struct kiocb' in <freax/fs.h>
  */
 struct fsync_iocb {
 	struct file		*file;

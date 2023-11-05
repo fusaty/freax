@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2010 Rafael J. Wysocki <rjw@sisk.pl>, Novell Inc.
  */
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/export.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/export.h>
 
 #ifdef CONFIG_PM
 /**

@@ -6,7 +6,7 @@
 #ifndef _SIW_VERBS_H
 #define _SIW_VERBS_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 #include <rdma/iw_cm.h>
 #include <rdma/ib_verbs.h>

@@ -13,7 +13,7 @@
  * Simplifications of the original code by
  * Oleg Nesterov <oleg@tv-sign.ru>
  *
- * Based on simple lists (include/linux/list.h).
+ * Based on simple lists (include/freax/list.h).
  *
  * This is a priority-sorted list of nodes; each node has a
  * priority from INT_MIN (highest) to INT_MAX (lowest).
@@ -70,12 +70,12 @@
  *
  * No locking is done, up to the caller.
  */
-#ifndef _LINUX_PLIST_H_
-#define _LINUX_PLIST_H_
+#ifndef _freax_PLIST_H_
+#define _freax_PLIST_H_
 
-#include <linux/container_of.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/container_of.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 #include <asm/bug.h>
 

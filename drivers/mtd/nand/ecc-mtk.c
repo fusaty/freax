@@ -6,16 +6,16 @@
  *		Jorge Ramirez-Ortiz	<jorge.ramirez-ortiz@linaro.org>
  */
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/mutex.h>
-#include <linux/mtd/nand-ecc-mtk.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/mutex.h>
+#include <freax/mtd/nand-ecc-mtk.h>
 
 #define ECC_IDLE_MASK		BIT(0)
 #define ECC_IRQ_EN		BIT(0)

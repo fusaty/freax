@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
-#include <linux/ceph/pagelist.h>
+#include <freax/ceph/ceph_debug.h>
+#include <freax/ceph/pagelist.h>
 
 #include "super.h"
 #include "mds_client.h"
 
-#include <linux/ceph/decode.h>
+#include <freax/ceph/decode.h>
 
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/slab.h>
+#include <freax/xattr.h>
+#include <freax/security.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/slab.h>
 
 #define XATTR_CEPH_PREFIX "ceph."
 #define XATTR_CEPH_PREFIX_LEN (sizeof (XATTR_CEPH_PREFIX) - 1)
@@ -1386,7 +1386,7 @@ int ceph_security_init_secctx(struct dentry *dentry, umode_t mode,
 
 	/*
 	 * FIXME: Make security_dentry_init_security() generic. Currently
-	 * It only supports single security module and only selinux has
+	 * It only supports single security module and only sefreax has
 	 * dentry_init_security hook.
 	 */
 	name_len = strlen(name);

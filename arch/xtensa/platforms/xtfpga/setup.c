@@ -10,21 +10,21 @@
  *
  * Copyright 2001 - 2006 Tensilica Inc.
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/errno.h>
+#include <freax/reboot.h>
+#include <freax/kdev_t.h>
+#include <freax/types.h>
+#include <freax/major.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/clk-provider.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 
 #include <asm/timex.h>
 #include <asm/processor.h>
@@ -150,10 +150,10 @@ arch_initcall(machine_setup);
 
 #else
 
-#include <linux/serial_8250.h>
-#include <linux/if.h>
+#include <freax/serial_8250.h>
+#include <freax/if.h>
 #include <net/ethoc.h>
-#include <linux/usb/c67x00.h>
+#include <freax/usb/c67x00.h>
 
 /*----------------------------------------------------------------------------
  *  Ethernet -- OpenCores Ethernet MAC (ethoc driver)
@@ -171,8 +171,8 @@ static struct resource ethoc_res[] = {
 		.flags = IORESOURCE_MEM,
 	},
 	[2] = { /* IRQ number */
-		.start = XTENSA_PIC_LINUX_IRQ(OETH_IRQ),
-		.end   = XTENSA_PIC_LINUX_IRQ(OETH_IRQ),
+		.start = XTENSA_PIC_freax_IRQ(OETH_IRQ),
+		.end   = XTENSA_PIC_freax_IRQ(OETH_IRQ),
 		.flags = IORESOURCE_IRQ,
 	},
 };
@@ -209,8 +209,8 @@ static struct resource c67x00_res[] = {
 		.flags = IORESOURCE_MEM,
 	},
 	[1] = { /* IRQ number */
-		.start = XTENSA_PIC_LINUX_IRQ(C67X00_IRQ),
-		.end   = XTENSA_PIC_LINUX_IRQ(C67X00_IRQ),
+		.start = XTENSA_PIC_freax_IRQ(C67X00_IRQ),
+		.end   = XTENSA_PIC_freax_IRQ(C67X00_IRQ),
 		.flags = IORESOURCE_IRQ,
 	},
 };
@@ -243,7 +243,7 @@ static struct resource serial_resource = {
 static struct plat_serial8250_port serial_platform_data[] = {
 	[0] = {
 		.mapbase	= DUART16552_PADDR,
-		.irq		= XTENSA_PIC_LINUX_IRQ(DUART16552_INTNUM),
+		.irq		= XTENSA_PIC_freax_IRQ(DUART16552_INTNUM),
 		.flags		= UPF_BOOT_AUTOCONF | UPF_SKIP_TEST |
 				  UPF_IOREMAP,
 		.iotype		= XCHAL_HAVE_BE ? UPIO_MEM32BE : UPIO_MEM32,

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_UHCI_HCD_H
-#define __LINUX_UHCI_HCD_H
+#ifndef __freax_UHCI_HCD_H
+#define __freax_UHCI_HCD_H
 
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/clk.h>
+#include <freax/list.h>
+#include <freax/usb.h>
+#include <freax/clk.h>
 
 #define usb_packetid(pipe)	(usb_pipein(pipe) ? USB_PID_IN : USB_PID_OUT)
 #define PIPE_DEVEP_MASK		0x0007ff00

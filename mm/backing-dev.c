@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/blkdev.h>
-#include <linux/wait.h>
-#include <linux/rbtree.h>
-#include <linux/kthread.h>
-#include <linux/backing-dev.h>
-#include <linux/blk-cgroup.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/writeback.h>
-#include <linux/device.h>
+#include <freax/blkdev.h>
+#include <freax/wait.h>
+#include <freax/rbtree.h>
+#include <freax/kthread.h>
+#include <freax/backing-dev.h>
+#include <freax/blk-cgroup.h>
+#include <freax/freezer.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/writeback.h>
+#include <freax/device.h>
 #include <trace/events/writeback.h>
 #include "internal.h"
 
@@ -36,8 +36,8 @@ LIST_HEAD(bdi_list);
 struct workqueue_struct *bdi_wq;
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 static struct dentry *bdi_debug_root;
 
@@ -498,7 +498,7 @@ static void wb_exit(struct bdi_writeback *wb)
 
 #ifdef CONFIG_CGROUP_WRITEBACK
 
-#include <linux/memcontrol.h>
+#include <freax/memcontrol.h>
 
 /*
  * cgwb_lock protects bdi->cgwb_tree, blkcg->cgwb_list, offline_cgwbs and

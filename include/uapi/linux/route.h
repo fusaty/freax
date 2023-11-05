@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -21,11 +21,11 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _LINUX_ROUTE_H
-#define _LINUX_ROUTE_H
+#ifndef _freax_ROUTE_H
+#define _freax_ROUTE_H
 
-#include <linux/if.h>
-#include <linux/compiler.h>
+#include <freax/if.h>
+#include <freax/compiler.h>
 
 /* This structure gets passed by the SIOCADDRT and SIOCDELRT calls. */
 struct rtentry {
@@ -61,10 +61,10 @@ struct rtentry {
 #define RTF_REJECT	0x0200		/* Reject route			*/
 
 /*
- *	<linux/ipv6_route.h> uses RTF values >= 64k
+ *	<freax/ipv6_route.h> uses RTF values >= 64k
  */
 
 
 
-#endif	/* _LINUX_ROUTE_H */
+#endif	/* _freax_ROUTE_H */
 

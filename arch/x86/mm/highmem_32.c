@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/swap.h> /* for totalram_pages */
-#include <linux/memblock.h>
+#include <freax/highmem.h>
+#include <freax/export.h>
+#include <freax/swap.h> /* for totalram_pages */
+#include <freax/memblock.h>
 #include <asm/numa.h>
 
 void __init set_highmem_pages_init(void)

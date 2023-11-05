@@ -2,7 +2,7 @@
 #ifndef __ARCH_ORION5X_COMMON_H
 #define __ARCH_ORION5X_COMMON_H
 
-#include <linux/reboot.h>
+#include <freax/reboot.h>
 
 struct mv643xx_eth_platform_data;
 struct mv_sata_platform_data;

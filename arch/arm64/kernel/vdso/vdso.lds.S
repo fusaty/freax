@@ -8,10 +8,10 @@
  * Heavily based on the vDSO linker scripts for other archs.
  */
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 OUTPUT_FORMAT("elf64-littleaarch64", "elf64-bigaarch64", "elf64-littleaarch64")
 OUTPUT_ARCH(aarch64)
@@ -96,7 +96,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.6.39 {
+	freax_2.6.39 {
 	global:
 		__kernel_rt_sigreturn;
 		__kernel_gettimeofday;

@@ -31,16 +31,16 @@
  *   below for details. )
  */
 
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
-#include <linux/debugfs.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/pfn_t.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/rbtree.h>
+#include <freax/seq_file.h>
+#include <freax/memblock.h>
+#include <freax/debugfs.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/pfn_t.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/rbtree.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cacheinfo.h>

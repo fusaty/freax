@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * kdebug.h:  Defines and definitions for debugging the Linux kernel
+ * kdebug.h:  Defines and definitions for debugging the freax kernel
  *            under various kernel debuggers.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
@@ -44,18 +44,18 @@ struct kernel_debug {
 	debugger_funct teach_debugger;
 }; /* I think that is it... */
 
-extern struct kernel_debug *linux_dbvec;
+extern struct kernel_debug *freax_dbvec;
 
 /* Use this macro in C-code to enter the debugger. */
 static inline void sp_enter_debugger(void)
 {
 	__asm__ __volatile__("jmpl %0, %%o7\n\t"
 			     "nop\n\t" : :
-			     "r" (linux_dbvec) : "o7", "memory");
+			     "r" (freax_dbvec) : "o7", "memory");
 }
 
 #define SP_ENTER_DEBUGGER do { \
-	     if((linux_dbvec!=0) && ((*(short *)linux_dbvec)!=-1)) \
+	     if((freax_dbvec!=0) && ((*(short *)freax_dbvec)!=-1)) \
 	       sp_enter_debugger(); \
 		       } while(0)
 

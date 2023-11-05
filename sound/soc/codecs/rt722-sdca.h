@@ -8,12 +8,12 @@
 #ifndef __RT722_H__
 #define __RT722_H__
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
 #include <sound/soc.h>
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 
 struct  rt722_sdca_priv {
 	struct regmap *regmap;

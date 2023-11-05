@@ -5,18 +5,18 @@
  * Copyright (C) 2003 David Brownell
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/device.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/otg.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/composite.h>
+#include <freax/usb/otg.h>
 
 /**
  * usb_descriptor_fillbuf - fill buffer with descriptors

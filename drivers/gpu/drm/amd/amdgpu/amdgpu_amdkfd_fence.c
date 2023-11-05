@@ -20,13 +20,13 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-fence.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/stacktrace.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <freax/dma-fence.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/stacktrace.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/sched/mm.h>
 #include "amdgpu_amdkfd.h"
 #include "kfd_svm.h"
 

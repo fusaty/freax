@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) "riscv-pmu-sbi: " fmt
 
-#include <linux/mod_devicetable.h>
-#include <linux/perf/riscv_pmu.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
-#include <linux/cpu_pm.h>
-#include <linux/sched/clock.h>
+#include <freax/mod_devicetable.h>
+#include <freax/perf/riscv_pmu.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/of_irq.h>
+#include <freax/of.h>
+#include <freax/cpu_pm.h>
+#include <freax/sched/clock.h>
 
 #include <asm/errata_list.h>
 #include <asm/sbi.h>
@@ -377,7 +377,7 @@ static int pmu_sbi_ctr_get_idx(struct perf_event *event)
 	if (ret.error) {
 		pr_debug("Not able to find a counter for event %lx config %llx\n",
 			hwc->event_base, hwc->config);
-		return sbi_err_map_linux_errno(ret.error);
+		return sbi_err_map_freax_errno(ret.error);
 	}
 
 	idx = ret.value;
@@ -539,7 +539,7 @@ static void pmu_sbi_ctr_start(struct perf_event *event, u64 ival)
 #endif
 	if (ret.error && (ret.error != SBI_ERR_ALREADY_STARTED))
 		pr_err("Starting counter idx %d failed with error %d\n",
-			hwc->idx, sbi_err_map_linux_errno(ret.error));
+			hwc->idx, sbi_err_map_freax_errno(ret.error));
 
 	if ((hwc->flags & PERF_EVENT_FLAG_USER_ACCESS) &&
 	    (hwc->flags & PERF_EVENT_FLAG_USER_READ_CNT))
@@ -561,7 +561,7 @@ static void pmu_sbi_ctr_stop(struct perf_event *event, unsigned long flag)
 	if (ret.error && (ret.error != SBI_ERR_ALREADY_STOPPED) &&
 		flag != SBI_PMU_STOP_FLAG_RESET)
 		pr_err("Stopping counter idx %d failed with error %d\n",
-			hwc->idx, sbi_err_map_linux_errno(ret.error));
+			hwc->idx, sbi_err_map_freax_errno(ret.error));
 }
 
 static int pmu_sbi_find_num_ctrs(void)
@@ -572,7 +572,7 @@ static int pmu_sbi_find_num_ctrs(void)
 	if (!ret.error)
 		return ret.value;
 	else
-		return sbi_err_map_linux_errno(ret.error);
+		return sbi_err_map_freax_errno(ret.error);
 }
 
 static int pmu_sbi_get_ctrinfo(int nctr, unsigned long *mask)

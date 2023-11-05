@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2017-2019 Netronome Systems, Inc. */
 
-#include <linux/bitfield.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/if_link.h>
-#include <linux/if_ether.h>
+#include <freax/bitfield.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/if_link.h>
+#include <freax/if_ether.h>
 
 #include "nfpcore/nfp_cpp.h"
 #include "nfp_app.h"

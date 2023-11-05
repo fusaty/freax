@@ -6,11 +6,11 @@
  * Author: Sean O'Brien <seobrien@chromium.org>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input/vivaldi-fmap.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/input/vivaldi-fmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "hid-vivaldi-common.h"
 

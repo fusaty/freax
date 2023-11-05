@@ -13,7 +13,7 @@ Supported chips:
 
     Datasheet: https://www.analog.com/en/products/lt7182s.html
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <freax@roeck-us.net>
 
 
 Description

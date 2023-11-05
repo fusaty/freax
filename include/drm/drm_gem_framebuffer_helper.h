@@ -1,8 +1,8 @@
 #ifndef __DRM_GEM_FB_HELPER_H__
 #define __DRM_GEM_FB_HELPER_H__
 
-#include <linux/dma-buf.h>
-#include <linux/iosys-map.h>
+#include <freax/dma-buf.h>
+#include <freax/iosys-map.h>
 
 struct drm_afbc_framebuffer;
 struct drm_device;

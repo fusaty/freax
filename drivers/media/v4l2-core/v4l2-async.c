@@ -5,19 +5,19 @@
  * Copyright (C) 2012-2013, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>
@@ -967,6 +967,6 @@ subsys_initcall(v4l2_async_init);
 module_exit(v4l2_async_exit);
 
 MODULE_AUTHOR("Guennadi Liakhovetski <g.liakhovetski@gmx.de>");
-MODULE_AUTHOR("Sakari Ailus <sakari.ailus@linux.intel.com>");
+MODULE_AUTHOR("Sakari Ailus <sakari.ailus@freax.intel.com>");
 MODULE_AUTHOR("Ezequiel Garcia <ezequiel@collabora.com>");
 MODULE_LICENSE("GPL");

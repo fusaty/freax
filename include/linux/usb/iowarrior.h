@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_IOWARRIOR_H
-#define __LINUX_USB_IOWARRIOR_H
+#ifndef __freax_USB_IOWARRIOR_H
+#define __freax_USB_IOWARRIOR_H
 
 #define CODEMERCS_MAGIC_NUMBER	0xC0	/* like COde Mercenaries */
 
@@ -40,4 +40,4 @@ struct iowarrior_info {
 */
 #define IOW_GETINFO _IOR(CODEMERCS_MAGIC_NUMBER, 3, struct iowarrior_info)
 
-#endif /* __LINUX_USB_IOWARRIOR_H */
+#endif /* __freax_USB_IOWARRIOR_H */

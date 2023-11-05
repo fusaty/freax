@@ -11,25 +11,25 @@
  * NO WARRANTY
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/time.h>
+#include <freax/uaccess.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/quotaops.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/crc32.h>
-#include <linux/seq_file.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/buffer_head.h>
+#include <freax/exportfs.h>
+#include <freax/quotaops.h>
+#include <freax/vfs.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/crc32.h>
+#include <freax/seq_file.h>
 
 struct file_system_type reiserfs_fs_type;
 

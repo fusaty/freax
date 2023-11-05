@@ -3,8 +3,8 @@
 #ifndef __QCOM_CLK_HFPLL_H__
 #define __QCOM_CLK_HFPLL_H__
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <freax/clk-provider.h>
+#include <freax/spinlock.h>
 #include "clk-regmap.h"
 
 struct hfpll_data {

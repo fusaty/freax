@@ -60,50 +60,50 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/stacktrace.h>
-#include <linux/stackdepot.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/mmzone.h>
-#include <linux/slab.h>
-#include <linux/thread_info.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/jiffies.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/kthread.h>
+#include <freax/rbtree.h>
+#include <freax/fs.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/cpumask.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/stacktrace.h>
+#include <freax/stackdepot.h>
+#include <freax/cache.h>
+#include <freax/percpu.h>
+#include <freax/memblock.h>
+#include <freax/pfn.h>
+#include <freax/mmzone.h>
+#include <freax/slab.h>
+#include <freax/thread_info.h>
+#include <freax/err.h>
+#include <freax/uaccess.h>
+#include <freax/string.h>
+#include <freax/nodemask.h>
+#include <freax/mm.h>
+#include <freax/workqueue.h>
+#include <freax/crc32.h>
 
 #include <asm/sections.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
-#include <linux/kasan.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/memory_hotplug.h>
+#include <freax/kasan.h>
+#include <freax/kfence.h>
+#include <freax/kmemleak.h>
+#include <freax/memory_hotplug.h>
 
 /*
  * Kmemleak configuration and common defines.

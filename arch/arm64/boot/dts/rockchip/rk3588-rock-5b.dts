@@ -47,7 +47,7 @@
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&gpio0 RK_PB7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

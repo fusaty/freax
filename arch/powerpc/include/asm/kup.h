@@ -7,7 +7,7 @@
 #define KUAP_READ_WRITE	(KUAP_READ | KUAP_WRITE)
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 
 static __always_inline bool kuap_is_disabled(void);
 #endif
@@ -40,7 +40,7 @@ static __always_inline bool kuap_is_disabled(void);
 extern bool disable_kuep;
 extern bool disable_kuap;
 
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 
 void setup_kup(void);
 void setup_kuep(bool disabled);

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *  Linux for S/390 Lan Channel Station Network Driver
+ *  freax for S/390 Lan Channel Station Network Driver
  *
  *  Copyright IBM Corp. 1999, 2009
  *  Author(s): Original Code written by
@@ -13,23 +13,23 @@
 #define KMSG_COMPONENT		"lcs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/igmp.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/in.h>
+#include <freax/igmp.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
 #include <net/arp.h>
 #include <net/ip.h>
 
 #include <asm/debug.h>
 #include <asm/idals.h>
 #include <asm/timex.h>
-#include <linux/device.h>
+#include <freax/device.h>
 #include <asm/ccwgroup.h>
 
 #include "lcs.h"

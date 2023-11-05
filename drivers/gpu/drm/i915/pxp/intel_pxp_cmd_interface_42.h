@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_FW_INTERFACE_42_H__
 #define __INTEL_PXP_FW_INTERFACE_42_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "intel_pxp_cmd_interface_cmn.h"
 
 /* PXP-Opcode for Init Session */

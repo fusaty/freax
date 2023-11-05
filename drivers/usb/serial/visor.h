@@ -10,8 +10,8 @@
  *
  */
 
-#ifndef __LINUX_USB_SERIAL_VISOR_H
-#define __LINUX_USB_SERIAL_VISOR_H
+#ifndef __freax_USB_SERIAL_VISOR_H
+#define __freax_USB_SERIAL_VISOR_H
 
 
 #define HANDSPRING_VENDOR_ID		0x082d

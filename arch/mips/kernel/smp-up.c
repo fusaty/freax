@@ -3,12 +3,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2006, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006, 07 by Ralf Baechle (ralf@freax-mips.org)
  *
  * Symmetric Uniprocessor (TM) Support
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
 
 /*
  * Send inter-processor interrupt

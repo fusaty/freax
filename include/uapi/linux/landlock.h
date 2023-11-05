@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Landlock - User space API
  *
@@ -6,10 +6,10 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#ifndef _UAPI_LINUX_LANDLOCK_H
-#define _UAPI_LINUX_LANDLOCK_H
+#ifndef _UAPI_freax_LANDLOCK_H
+#define _UAPI_freax_LANDLOCK_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct landlock_ruleset_attr - Ruleset definition
@@ -244,4 +244,4 @@ struct landlock_net_port_attr {
 #define LANDLOCK_ACCESS_NET_BIND_TCP			(1ULL << 0)
 #define LANDLOCK_ACCESS_NET_CONNECT_TCP			(1ULL << 1)
 /* clang-format on */
-#endif /* _UAPI_LINUX_LANDLOCK_H */
+#endif /* _UAPI_freax_LANDLOCK_H */

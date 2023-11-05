@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/cache-v6.S
+ *  freax/arch/arm/mm/cache-v6.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *
  *  This is the "shell" of the ARMv6 processor support.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 #include <asm/errno.h>
 #include <asm/unwind.h>

@@ -56,7 +56,7 @@ ARM_OK(	.arm	)
 	.endm
 
 
-#if __LINUX_ARM_ARCH__ <= 4
+#if __freax_ARM_ARCH__ <= 4
 	/*
 	 * Note we manually set minimally required arch that supports
 	 * required thumb opcodes for early arch versions. It is OK

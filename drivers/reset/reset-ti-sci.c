@@ -6,13 +6,13 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/soc/ti/ti_sci_protocol.h>
 
 /**
  * struct ti_sci_reset_control - reset control structure

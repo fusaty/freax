@@ -5,16 +5,16 @@
  * All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/err.h>
 #include <crypto/hash.h>
-#include <linux/crc32.h>
-#include <linux/base64.h>
-#include <linux/ctype.h>
-#include <linux/random.h>
-#include <linux/nvme-auth.h>
+#include <freax/crc32.h>
+#include <freax/base64.h>
+#include <freax/ctype.h>
+#include <freax/random.h>
+#include <freax/nvme-auth.h>
 #include <asm/unaligned.h>
 
 #include "nvmet.h"

@@ -13,9 +13,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/kernel_stat.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/kernel_stat.h>
+#include <freax/slab.h>
 
 #include "cpufreq_governor.h"
 

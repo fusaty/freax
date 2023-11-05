@@ -1,4 +1,4 @@
-/* -*- linux-c -*- */
+/* -*- freax-c -*- */
 
 /* fs/reiserfs/procfs.c */
 
@@ -8,14 +8,14 @@
 
 /* proc info support a la one created by Sizif@Botik.RU for PGC */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
 #include "reiserfs.h"
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/blkdev.h>
 
 /*
  * LOCKING:

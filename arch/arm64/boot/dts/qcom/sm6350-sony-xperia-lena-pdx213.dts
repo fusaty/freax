@@ -39,7 +39,7 @@
 
 		key-volume-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			gpios = <&pm6350_gpios 2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -313,7 +313,7 @@
 };
 
 &pm6350_resin {
-	linux,code = <KEY_VOLUMEUP>;
+	freax,code = <KEY_VOLUMEUP>;
 	status = "okay";
 };
 

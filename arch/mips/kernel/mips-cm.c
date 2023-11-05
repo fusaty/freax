@@ -4,9 +4,9 @@
  * Author: Paul Burton <paul.burton@mips.com>
  */
 
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
+#include <freax/errno.h>
+#include <freax/percpu.h>
+#include <freax/spinlock.h>
 
 #include <asm/mips-cps.h>
 #include <asm/mipsregs.h>

@@ -10,7 +10,7 @@
 #include <sys/ioctl.h>
 #include <pthread.h>
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #include "test_util.h"
 #include "kvm_util.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *  ebt_ip6
  *
@@ -10,11 +10,11 @@
  *
  */
 
-#ifndef __LINUX_BRIDGE_EBT_IP6_H
-#define __LINUX_BRIDGE_EBT_IP6_H
+#ifndef __freax_BRIDGE_EBT_IP6_H
+#define __freax_BRIDGE_EBT_IP6_H
 
-#include <linux/types.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/in6.h>
 
 #define EBT_IP6_SOURCE 0x01
 #define EBT_IP6_DEST 0x02

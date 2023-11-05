@@ -5,8 +5,8 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitfield.h>
+#include <freax/rtnetlink.h>
+#include <freax/bitfield.h>
 #include "otx2_common.h"
 
 #define MCS_TCAM0_MAC_DA_MASK		GENMASK_ULL(47, 0)

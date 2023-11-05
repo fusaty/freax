@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BRCMPHY_H
-#define _LINUX_BRCMPHY_H
+#ifndef _freax_BRCMPHY_H
+#define _freax_BRCMPHY_H
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 /* All Broadcom Ethernet switches have a pseudo-PHY at address 30 which is used
  * to configure the switch internal registers via MDIO accesses.
@@ -430,4 +430,4 @@
 #define BCM54XX_EXP_ECD_PAIR_D_LENGTH_RESULTS	(MII_BCM54XX_EXP_SEL_ER + 0xc5)
 #define BCM54XX_ECD_LENGTH_RESULTS_INVALID	0xffff
 
-#endif /* _LINUX_BRCMPHY_H */
+#endif /* _freax_BRCMPHY_H */

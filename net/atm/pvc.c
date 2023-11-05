@@ -4,15 +4,15 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
 
 
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmdev.h>	/* ATM devices */
-#include <linux/errno.h>	/* error codes */
-#include <linux/kernel.h>	/* printk */
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
+#include <freax/net.h>		/* struct socket, struct proto_ops */
+#include <freax/atm.h>		/* ATM stuff */
+#include <freax/atmdev.h>	/* ATM devices */
+#include <freax/errno.h>	/* error codes */
+#include <freax/kernel.h>	/* printk */
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/bitops.h>
+#include <freax/export.h>
 #include <net/sock.h>		/* for sock_no_* */
 
 #include "resources.h"		/* devs and vccs */

@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the freax staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -17,16 +17,16 @@
 #define _SUCCESS	1
 #define _FAIL		0
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/sched/signal.h>
-#include <linux/sem.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/semaphore.h>
+#include <freax/sched/signal.h>
+#include <freax/sem.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <net/iw_handler.h>
-#include <linux/proc_fs.h>      /* Necessary because we use the proc fs */
+#include <freax/proc_fs.h>      /* Necessary because we use the proc fs */
 
 #include "basic_types.h"
 

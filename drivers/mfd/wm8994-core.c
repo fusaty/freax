@@ -7,22 +7,22 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/machine.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/mfd/core.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regulator/machine.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <freax/mfd/wm8994/core.h>
+#include <freax/mfd/wm8994/pdata.h>
+#include <freax/mfd/wm8994/registers.h>
 
 #include "wm8994.h"
 

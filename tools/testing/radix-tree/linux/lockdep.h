@@ -1,7 +1,7 @@
-#ifndef _LINUX_LOCKDEP_H
-#define _LINUX_LOCKDEP_H
+#ifndef _freax_LOCKDEP_H
+#define _freax_LOCKDEP_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 struct lock_class_key {
 	unsigned int a;
@@ -13,4 +13,4 @@ static inline void lockdep_set_class(spinlock_t *lock,
 }
 
 extern int lockdep_is_held(const void *);
-#endif /* _LINUX_LOCKDEP_H */
+#endif /* _freax_LOCKDEP_H */

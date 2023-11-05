@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
 # Ignore header name
-ignore define __LINUX_MEDIA_H
+ignore define __freax_MEDIA_H
 
 # Ignore macros
 ignore define MEDIA_API_VERSION

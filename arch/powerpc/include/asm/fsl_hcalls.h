@@ -40,8 +40,8 @@
 #ifndef _FSL_HCALLS_H
 #define _FSL_HCALLS_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 #include <asm/byteorder.h>
 #include <asm/epapr_hcalls.h>
 

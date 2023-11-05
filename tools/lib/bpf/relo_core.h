@@ -4,7 +4,7 @@
 #ifndef __RELO_CORE_H
 #define __RELO_CORE_H
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 struct bpf_core_cand {
 	const struct btf *btf;

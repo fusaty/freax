@@ -11,24 +11,24 @@
  *  POSIX 1003.1e draft standard 17 ACLs.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
-#include <linux/namei.h>
-#include <linux/mnt_idmapping.h>
-#include <linux/iversion.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/fsnotify.h>
-#include <linux/filelock.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/xattr.h>
+#include <freax/export.h>
+#include <freax/user_namespace.h>
+#include <freax/namei.h>
+#include <freax/mnt_idmapping.h>
+#include <freax/iversion.h>
+#include <freax/security.h>
+#include <freax/evm.h>
+#include <freax/fsnotify.h>
+#include <freax/filelock.h>
 
 #include "internal.h"
 

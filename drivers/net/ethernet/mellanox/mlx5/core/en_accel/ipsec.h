@@ -34,9 +34,9 @@
 #ifndef __MLX5E_IPSEC_H__
 #define __MLX5E_IPSEC_H__
 
-#include <linux/mlx5/device.h>
+#include <freax/mlx5/device.h>
 #include <net/xfrm.h>
-#include <linux/idr.h>
+#include <freax/idr.h>
 #include "lib/aso.h"
 #include "lib/devcom.h"
 

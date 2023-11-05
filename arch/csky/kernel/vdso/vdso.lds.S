@@ -46,7 +46,7 @@ PHDRS
 
 VERSION
 {
-	LINUX_5.10 {
+	freax_5.10 {
 	global:
 		__vdso_rt_sigreturn;
 		__vdso_clock_gettime;

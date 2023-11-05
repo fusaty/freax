@@ -12,11 +12,11 @@
  *
  */
 
-#ifndef __LINUX_USB_EHCI_DBGP_H
-#define __LINUX_USB_EHCI_DBGP_H
+#ifndef __freax_USB_EHCI_DBGP_H
+#define __freax_USB_EHCI_DBGP_H
 
-#include <linux/console.h>
-#include <linux/types.h>
+#include <freax/console.h>
+#include <freax/types.h>
 
 /* Appendix C, Debug port ... intended for use with special "debug devices"
  * that can help if there's no serial console.  (nonstandard enumeration.)
@@ -81,4 +81,4 @@ static inline int dbgp_external_startup(struct usb_hcd *hcd)
 }
 #endif
 
-#endif /* __LINUX_USB_EHCI_DBGP_H */
+#endif /* __freax_USB_EHCI_DBGP_H */

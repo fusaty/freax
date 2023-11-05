@@ -3,7 +3,7 @@
 #define _NF_NAT_HELPER_H
 /* NAT protocol helper routines. */
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 

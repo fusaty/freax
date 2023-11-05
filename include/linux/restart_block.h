@@ -2,12 +2,12 @@
 /*
  * Common syscall restarting data
  */
-#ifndef __LINUX_RESTART_BLOCK_H
-#define __LINUX_RESTART_BLOCK_H
+#ifndef __freax_RESTART_BLOCK_H
+#define __freax_RESTART_BLOCK_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/time64.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/time64.h>
 
 struct timespec;
 struct old_timespec32;
@@ -58,4 +58,4 @@ struct restart_block {
 
 extern long do_no_restart_syscall(struct restart_block *parm);
 
-#endif /* __LINUX_RESTART_BLOCK_H */
+#endif /* __freax_RESTART_BLOCK_H */

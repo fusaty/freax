@@ -10,7 +10,7 @@
 #if !defined(__IWLWIFI_DEVICE_TRACE_IWLWIFI) || defined(TRACE_HEADER_MULTI_READ)
 #define __IWLWIFI_DEVICE_TRACE_IWLWIFI
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM iwlwifi

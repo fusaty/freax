@@ -18,11 +18,11 @@
 #ifndef CORE_H
 #define CORE_H
 
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/firmware.h>
-#include <linux/sched.h>
-#include <linux/circ_buf.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/firmware.h>
+#include <freax/sched.h>
+#include <freax/circ_buf.h>
 #include <net/cfg80211.h>
 #include "htc.h"
 #include "wmi.h"

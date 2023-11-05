@@ -5,12 +5,12 @@
  * Copyright (C) 2009 Ming Lei <ming.lei@canonical.com>
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/rpm.h>

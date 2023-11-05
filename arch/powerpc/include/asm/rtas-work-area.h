@@ -2,9 +2,9 @@
 #ifndef _ASM_POWERPC_RTAS_WORK_AREA_H
 #define _ASM_POWERPC_RTAS_WORK_AREA_H
 
-#include <linux/build_bug.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
+#include <freax/build_bug.h>
+#include <freax/sizes.h>
+#include <freax/types.h>
 
 #include <asm/page.h>
 

@@ -3,15 +3,15 @@
  *       All rights reserved.
  */
 
-#include <linux/platform_device.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/of_net.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <freax/platform_device.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/of_net.h>
+#include <freax/reset.h>
+#include <freax/clk.h>
+#include <freax/of.h>
 
 #include "spl2sw_register.h"
 #include "spl2sw_define.h"

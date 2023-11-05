@@ -15,23 +15,23 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/moduleparam.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/moduleparam.h>
 #include <media/v4l2-device.h>
-#include "../include/linux/atomisp_gmin_platform.h"
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include "../include/freax/atomisp_gmin_platform.h"
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 #include "ov2722.h"
 

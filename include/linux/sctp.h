@@ -13,7 +13,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Or submit a bug report through the following website:
  *    http://www.sf.net/projects/lksctp
@@ -32,14 +32,14 @@
  * Any bugs reported given to us we will try to fix... any fixes shared will
  * be incorporated into the next SCTP release.
  */
-#ifndef __LINUX_SCTP_H__
-#define __LINUX_SCTP_H__
+#ifndef __freax_SCTP_H__
+#define __freax_SCTP_H__
 
-#include <linux/in.h>		/* We need in_addr.  */
-#include <linux/in6.h>		/* We need in6_addr.  */
-#include <linux/skbuff.h>
+#include <freax/in.h>		/* We need in_addr.  */
+#include <freax/in6.h>		/* We need in6_addr.  */
+#include <freax/skbuff.h>
 
-#include <uapi/linux/sctp.h>
+#include <uapi/freax/sctp.h>
 
 /* Section 3.1.  SCTP Common Header Format */
 struct sctphdr {
@@ -825,4 +825,4 @@ struct sctp_new_encap_port_hdr {
 /* Truncate to the previous multiple of 4.  */
 #define SCTP_TRUNC4(s) ((s)&~3)
 
-#endif /* __LINUX_SCTP_H__ */
+#endif /* __freax_SCTP_H__ */

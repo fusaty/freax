@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/fs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/socket.h>
+#include <freax/net.h>
+#include <freax/fs.h>
 #include <net/af_unix.h>
 #include <net/scm.h>
-#include <linux/init.h>
-#include <linux/io_uring.h>
+#include <freax/init.h>
+#include <freax/io_uring.h>
 
 #include "scm.h"
 

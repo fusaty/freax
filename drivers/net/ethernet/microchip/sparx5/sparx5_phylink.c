@@ -4,11 +4,11 @@
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/module.h>
-#include <linux/phylink.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/sfp.h>
+#include <freax/module.h>
+#include <freax/phylink.h>
+#include <freax/device.h>
+#include <freax/netdevice.h>
+#include <freax/sfp.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

@@ -14,7 +14,7 @@
 #ifndef VIDTV_PES_H
 #define VIDTV_PES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "vidtv_common.h"
 

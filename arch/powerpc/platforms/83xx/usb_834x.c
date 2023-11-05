@@ -6,12 +6,12 @@
  * Author: Li Yang
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/io.h>
 
 #include <sysdev/fsl_soc.h>
 

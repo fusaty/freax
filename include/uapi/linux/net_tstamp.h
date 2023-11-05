@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Userspace API for hardware time stamping of network packets
  *
@@ -10,8 +10,8 @@
 #ifndef _NET_TIMESTAMPING_H
 #define _NET_TIMESTAMPING_H
 
-#include <linux/types.h>
-#include <linux/socket.h>   /* for SO_TIMESTAMPING */
+#include <freax/types.h>
+#include <freax/socket.h>   /* for SO_TIMESTAMPING */
 
 /* SO_TIMESTAMPING flags */
 enum {

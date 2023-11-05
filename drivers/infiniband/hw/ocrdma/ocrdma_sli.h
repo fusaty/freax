@@ -33,7 +33,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street

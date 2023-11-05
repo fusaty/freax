@@ -10,19 +10,19 @@
  * DT support
  * Copyright (c) 2016 Petr Kulhavy <petr@barix.com>
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for freax.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/usb/usb_phy_generic.h>
 
 #include "musb_core.h"
 

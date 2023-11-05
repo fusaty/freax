@@ -6,10 +6,10 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/arm-smccc.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "mt8192-afe-clk.h"
 #include "mt8192-afe-common.h"

@@ -15,20 +15,20 @@
  *   Resets the system according to RST_MODE
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/math.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/math.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reboot.h>
+#include <freax/watchdog.h>
 
 #define OTTO_WDT_REG_CNTR		0x0
 #define OTTO_WDT_CNTR_PING		BIT(31)

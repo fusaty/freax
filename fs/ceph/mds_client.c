@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/ratelimit.h>
-#include <linux/bits.h>
-#include <linux/ktime.h>
-#include <linux/bitmap.h>
+#include <freax/fs.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/gfp.h>
+#include <freax/sched.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/ratelimit.h>
+#include <freax/bits.h>
+#include <freax/ktime.h>
+#include <freax/bitmap.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "crypto.h"
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/messenger.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/pagelist.h>
+#include <freax/ceph/auth.h>
+#include <freax/ceph/debugfs.h>
 
 #define RECONNECT_MAX_SIZE (INT_MAX - PAGE_SIZE)
 

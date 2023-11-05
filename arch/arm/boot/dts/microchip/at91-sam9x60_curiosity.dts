@@ -46,7 +46,7 @@
 		button-user {
 			label = "PB_USER";
 			gpios = <&pioA 29 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			freax,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -69,7 +69,7 @@
 		led-blue {
 			label = "blue";
 			gpios = <&pioD 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

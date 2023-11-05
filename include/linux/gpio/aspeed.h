@@ -1,7 +1,7 @@
 #ifndef __GPIO_ASPEED_H
 #define __GPIO_ASPEED_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct gpio_desc;
 

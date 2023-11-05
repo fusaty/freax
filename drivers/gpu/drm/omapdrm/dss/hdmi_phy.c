@@ -5,12 +5,12 @@
  * Copyright (C) 2013 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
 
 #include "omapdss.h"
 #include "dss.h"

@@ -9,11 +9,11 @@
 #ifndef XILINX_AXIENET_H
 #define XILINX_AXIENET_H
 
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/if_vlan.h>
-#include <linux/phylink.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/if_vlan.h>
+#include <freax/phylink.h>
 
 /* Packet size info */
 #define XAE_HDR_SIZE			14 /* Size of Ethernet header */

@@ -11,21 +11,21 @@
  * the host to read and write to various regions of the BMC's memory.
  */
 
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/miscdevice.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
-#include <linux/aspeed-p2a-ctrl.h>
+#include <freax/aspeed-p2a-ctrl.h>
 
 #define DEVICE_NAME	"aspeed-p2a-ctrl"
 

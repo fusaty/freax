@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/sched.c
+ * freax/net/sunrpc/sched.c
  *
  * Scheduling for synchronous and asynchronous RPC requests.
  *
  * Copyright (C) 1996 Olaf Kirch, <okir@monad.swb.de>
  *
  * TCP NFS related read + write fixes
- * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linux.ie>
+ * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@freax.ie>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/sched/mm.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/mempool.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/freezer.h>
+#include <freax/sched/mm.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/metrics.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/metrics.h>
 
 #include "sunrpc.h"
 

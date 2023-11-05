@@ -4,20 +4,20 @@
  * Copyright (C) 2015  Dialog Semiconductor Ltd.
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/workqueue.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/mfd/da9063/core.h>
-#include <linux/mfd/da9063/registers.h>
-#include <linux/mfd/da9062/core.h>
-#include <linux/mfd/da9062/registers.h>
+#include <freax/devm-helpers.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/workqueue.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/mfd/da9063/core.h>
+#include <freax/mfd/da9063/registers.h>
+#include <freax/mfd/da9062/core.h>
+#include <freax/mfd/da9062/registers.h>
 
 struct da906x_chip_config {
 	/* REGS */

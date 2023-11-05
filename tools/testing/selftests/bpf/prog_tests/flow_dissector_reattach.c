@@ -11,7 +11,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf.h>
 
 #include "test_progs.h"

@@ -12,28 +12,28 @@
 #define __UBIFS_H__
 
 #include <asm/div64.h>
-#include <linux/statfs.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/mtd/ubi.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/security.h>
-#include <linux/xattr.h>
-#include <linux/random.h>
-#include <linux/sysfs.h>
-#include <linux/completion.h>
+#include <freax/statfs.h>
+#include <freax/fs.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/mtd/ubi.h>
+#include <freax/pagemap.h>
+#include <freax/backing-dev.h>
+#include <freax/security.h>
+#include <freax/xattr.h>
+#include <freax/random.h>
+#include <freax/sysfs.h>
+#include <freax/completion.h>
 #include <crypto/hash_info.h>
 #include <crypto/hash.h>
 #include <crypto/utils.h>
 
-#include <linux/fscrypt.h>
+#include <freax/fscrypt.h>
 
 #include "ubifs-media.h"
 

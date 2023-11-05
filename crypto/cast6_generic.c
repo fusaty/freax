@@ -12,11 +12,11 @@
 
 #include <asm/unaligned.h>
 #include <crypto/algapi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <crypto/cast6.h>
 
 #define s1 cast_s1

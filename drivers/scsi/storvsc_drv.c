@@ -8,20 +8,20 @@
  *   K. Y. Srinivasan <kys@microsoft.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/hyperv.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/hyperv.h>
+#include <freax/blkdev.h>
+#include <freax/dma-mapping.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

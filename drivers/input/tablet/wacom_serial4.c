@@ -14,10 +14,10 @@
  *  - wacom_w8001 driver by Jaya Kumar <jayakumar.lkml@gmail.com>;
  *  - the USB wacom input driver, credited to many people
  *    (see drivers/input/tablet/wacom.h);
- *  - new and old versions of linuxwacom / xf86-input-wacom credited to
+ *  - new and old versions of freaxwacom / xf86-input-wacom credited to
  *    Frederic Lepied, France. <Lepied@XFree86.org> and
  *    Ping Cheng, Wacom. <pingc@wacom.com>;
- *  - and xf86wacom.c (a presumably ancient version of the linuxwacom code),
+ *  - and xf86wacom.c (a presumably ancient version of the freaxwacom code),
  *    by Frederic Lepied and Raph Levien <raph@gtk.org>.
  *
  * To do:
@@ -26,7 +26,7 @@
  */
 
 /*
- * Wacom serial protocol 4 documentation taken from linuxwacom-0.9.9 code,
+ * Wacom serial protocol 4 documentation taken from freaxwacom-0.9.9 code,
  * protocol 4 uses 7 or 9 byte of data in the following format:
  *
  *	Byte 1
@@ -99,15 +99,15 @@
  *	bit 0  Yt1
  */
 
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 MODULE_AUTHOR("Julian Squires <julian@cipht.net>, Hans de Goede <hdegoede@redhat.com>");
 MODULE_DESCRIPTION("Wacom protocol 4 serial tablet driver");

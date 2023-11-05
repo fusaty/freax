@@ -4,10 +4,10 @@
  *
  * Author : Stephen Smalley, <stephen.smalley.work@gmail.com>
  */
-#ifndef _SELINUX_AVC_SS_H_
-#define _SELINUX_AVC_SS_H_
+#ifndef _SEfreax_AVC_SS_H_
+#define _SEfreax_AVC_SS_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 int avc_ss_reset(u32 seqno);
 
@@ -19,5 +19,5 @@ struct security_class_mapping {
 
 extern const struct security_class_mapping secclass_map[];
 
-#endif /* _SELINUX_AVC_SS_H_ */
+#endif /* _SEfreax_AVC_SS_H_ */
 

@@ -13,41 +13,41 @@
     code in the Developer's manual was granted for this driver by
     Aironet.  Major code contributions were received from Javier Achirica
     <achirica@users.sourceforge.net> and Jean Tourrilhes <jt@hpl.hp.com>.
-    Code was also integrated from the Cisco Aironet driver for Linux.
+    Code was also integrated from the Cisco Aironet driver for freax.
     Support for MPI350 cards was added by Fabrice Bellet
     <fabrice@bellet.info>.
 
 ======================================================================*/
 
-#include <linux/err.h>
-#include <linux/init.h>
+#include <freax/err.h>
+#include <freax/init.h>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/bitops.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/io.h>
+#include <freax/sched.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/in.h>
+#include <freax/bitops.h>
+#include <freax/scatterlist.h>
+#include <freax/crypto.h>
+#include <freax/io.h>
 #include <asm/unaligned.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/uaccess.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
 
 #include <crypto/aes.h>
 #include <crypto/skcipher.h>
@@ -91,12 +91,12 @@ static struct pci_driver airo_driver = {
 #endif /* CONFIG_PCI */
 
 /* Include Wireless Extension definition and check version - Jean II */
-#include <linux/wireless.h>
+#include <freax/wireless.h>
 #define WIRELESS_SPY		/* enable iwspy support */
 
 #define CISCO_EXT		/* enable Cisco extensions */
 #ifdef CISCO_EXT
-#include <linux/delay.h>
+#include <freax/delay.h>
 #endif
 
 /* Hack to do some power saving */
@@ -1183,7 +1183,7 @@ struct airo_info {
 #define FLAG_UPDATE_MULTI 5
 #define FLAG_UPDATE_UNI 6
 #define FLAG_802_11	7
-#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/linux/if.h */
+#define FLAG_PROMISC	8	/* IFF_PROMISC 0x100 - include/freax/if.h */
 #define FLAG_PENDING_XMIT 9
 #define FLAG_PENDING_XMIT11 10
 #define FLAG_MPI	11

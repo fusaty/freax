@@ -9,9 +9,9 @@
 #ifndef __CS35L56_H
 #define __CS35L56_H
 
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regmap.h>
 
 #define CS35L56_DEVID					0x0000000
 #define CS35L56_REVID					0x0000004

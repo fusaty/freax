@@ -10,11 +10,11 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
 #include <asm/exceptions.h>
 #include <asm/pvr.h>
-#include <linux/irqflags.h>
+#include <freax/irqflags.h>
 
 /*
  * Until we get an assembler that knows about the pvr registers,

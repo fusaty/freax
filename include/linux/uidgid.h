@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UIDGID_H
-#define _LINUX_UIDGID_H
+#ifndef _freax_UIDGID_H
+#define _freax_UIDGID_H
 
 /*
  * A set of types for the internal kernel types representing uids and gids.
@@ -12,8 +12,8 @@
  * to detect when we overlook these differences.
  *
  */
-#include <linux/types.h>
-#include <linux/highuid.h>
+#include <freax/types.h>
+#include <freax/highuid.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;
@@ -188,4 +188,4 @@ static inline bool kgid_has_mapping(struct user_namespace *ns, kgid_t gid)
 
 #endif /* CONFIG_USER_NS */
 
-#endif /* _LINUX_UIDGID_H */
+#endif /* _freax_UIDGID_H */

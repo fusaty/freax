@@ -44,14 +44,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/kdebug.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/kdebug.h>
+#include <freax/kthread.h>
 #include "xpc.h"
 
 #ifdef CONFIG_X86_64

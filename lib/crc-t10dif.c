@@ -6,15 +6,15 @@
  * Written by Martin K. Petersen <martin.petersen@oracle.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc-t10dif.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/crc-t10dif.h>
+#include <freax/err.h>
+#include <freax/init.h>
 #include <crypto/hash.h>
 #include <crypto/algapi.h>
-#include <linux/static_key.h>
-#include <linux/notifier.h>
+#include <freax/static_key.h>
+#include <freax/notifier.h>
 
 static struct crypto_shash __rcu *crct10dif_tfm;
 static DEFINE_STATIC_KEY_TRUE(crct10dif_fallback);

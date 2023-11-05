@@ -5,22 +5,22 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/cred.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/key.h>
+#include <freax/keyctl.h>
+#include <freax/fs.h>
+#include <freax/capability.h>
+#include <freax/cred.h>
+#include <freax/string.h>
+#include <freax/err.h>
+#include <freax/vmalloc.h>
+#include <freax/security.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
 #include <keys/request_key_auth-type.h>
 #include "internal.h"
 

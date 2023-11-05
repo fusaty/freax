@@ -9,14 +9,14 @@
  * Mylène Josserand <mylene.josserand@free-electrons.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/log2.h>
 
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

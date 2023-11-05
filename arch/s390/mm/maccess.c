@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/cpu.h>
-#include <linux/uio.h>
-#include <linux/io.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/cpu.h>
+#include <freax/uio.h>
+#include <freax/io.h>
 #include <asm/asm-extable.h>
 #include <asm/abs_lowcore.h>
 #include <asm/stacktrace.h>

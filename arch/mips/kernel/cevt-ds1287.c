@@ -2,13 +2,13 @@
 /*
  *  DS1287 clockevent driver
  *
- *  Copyright (C) 2008	Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008	Yoichi Yuasa <yuasa@freax-mips.org>
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/irq.h>
+#include <freax/clockchips.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/mc146818rtc.h>
+#include <freax/irq.h>
 
 #include <asm/time.h>
 

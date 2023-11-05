@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/console.h>
-#include <linux/moduleparam.h>
-#include <linux/stackdepot.h>
-#include <linux/stacktrace.h>
-#include <linux/uaccess.h>
+#include <freax/console.h>
+#include <freax/moduleparam.h>
+#include <freax/stackdepot.h>
+#include <freax/stacktrace.h>
+#include <freax/uaccess.h>
 
 #include "kmsan.h"
 

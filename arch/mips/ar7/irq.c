@@ -4,9 +4,9 @@
  * Copyright (C) 2006,2007 Eugene Konev <ejka@openwrt.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

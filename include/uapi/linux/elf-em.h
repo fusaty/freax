@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_ELF_EM_H
-#define _LINUX_ELF_EM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_ELF_EM_H
+#define _freax_ELF_EM_H
 
 /* These constants define the various ELF target machines */
 #define EM_NONE		0
@@ -14,7 +14,7 @@
 #define EM_MIPS		8	/* MIPS R3000 (officially, big-endian only) */
 				/* Next two are historical and binaries and
 				   modules of these types will be rejected by
-				   Linux.  */
+				   freax.  */
 #define EM_MIPS_RS3_LE	10	/* MIPS R3000 little-endian */
 #define EM_MIPS_RS4_BE	10	/* MIPS R4000 big-endian */
 
@@ -49,7 +49,7 @@
 #define EM_TILEGX	191	/* Tilera TILE-Gx */
 #define EM_ARCV2	195	/* ARCv2 Cores */
 #define EM_RISCV	243	/* RISC-V */
-#define EM_BPF		247	/* Linux BPF - in-kernel virtual machine */
+#define EM_BPF		247	/* freax BPF - in-kernel virtual machine */
 #define EM_CSKY		252	/* C-SKY */
 #define EM_LOONGARCH	258	/* LoongArch */
 #define EM_FRV		0x5441	/* Fujitsu FR-V */
@@ -68,4 +68,4 @@
 #define EM_CYGNUS_MN10300 0xbeef
 
 
-#endif /* _LINUX_ELF_EM_H */
+#endif /* _freax_ELF_EM_H */

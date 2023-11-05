@@ -8,8 +8,8 @@
  * Timberdale FPGA DMA engine
  */
 
-#ifndef _LINUX_TIMB_DMA_H
-#define _LINUX_TIMB_DMA_H
+#ifndef _freax_TIMB_DMA_H
+#define _freax_TIMB_DMA_H
 
 /**
  * struct timb_dma_platform_data_channel - Description of each individual

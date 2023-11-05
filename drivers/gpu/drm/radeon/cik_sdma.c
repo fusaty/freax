@@ -21,7 +21,7 @@
  *
  * Authors: Alex Deucher
  */
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "radeon.h"
 #include "radeon_ucode.h"

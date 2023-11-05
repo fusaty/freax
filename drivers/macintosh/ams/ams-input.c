@@ -3,15 +3,15 @@
  * Apple Motion Sensor driver (joystick emulation)
  *
  * Copyright (C) 2005 Stelian Pop (stelian@popies.net)
- * Copyright (C) 2006 Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2006 Michael Hanselmann (freax-kernel@hansmi.ch)
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/delay.h>
 
 #include "ams.h"
 

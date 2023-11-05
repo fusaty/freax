@@ -3,13 +3,13 @@
  *  Copyright (c) 1998-2002 by Paul Davis <pbd@op.net>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 #include <sound/initval.h>

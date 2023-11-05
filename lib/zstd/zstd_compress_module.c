@@ -9,10 +9,10 @@
  * You may select, at your option, one of the above-listed licenses.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/zstd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/zstd.h>
 
 #include "common/zstd_deps.h"
 #include "common/zstd_internal.h"
@@ -119,7 +119,7 @@ zstd_cstream *zstd_init_cstream(const zstd_parameters *parameters,
 	if (cstream == NULL)
 		return NULL;
 
-	/* 0 means unknown in linux zstd API but means 0 in new zstd API */
+	/* 0 means unknown in freax zstd API but means 0 in new zstd API */
 	if (pledged_src_size == 0)
 		pledged_src_size = ZSTD_CONTENTSIZE_UNKNOWN;
 

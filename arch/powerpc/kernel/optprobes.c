@@ -5,11 +5,11 @@
  * Copyright 2017, Anju T, IBM Corp.
  */
 
-#include <linux/kprobes.h>
-#include <linux/jump_label.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <freax/kprobes.h>
+#include <freax/jump_label.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/list.h>
 #include <asm/kprobes.h>
 #include <asm/ptrace.h>
 #include <asm/cacheflush.h>

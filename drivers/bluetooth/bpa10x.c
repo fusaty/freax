@@ -6,16 +6,16 @@
  *  Copyright (C) 2004-2007  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

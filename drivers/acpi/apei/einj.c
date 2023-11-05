@@ -12,15 +12,15 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/nmi.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
 #include <asm/unaligned.h>
 
 #include "apei-internal.h"

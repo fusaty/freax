@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#include <linux/objtool.h>
+#include <freax/objtool.h>
 #include <asm/asm-offsets.h>
 #include <asm/code-patching-asm.h>
 #include <asm/mmu.h>

@@ -26,7 +26,7 @@
 
 #include "hdp/hdp_6_0_0_offset.h"
 #include "hdp/hdp_6_0_0_sh_mask.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 #define regHDP_CLK_CNTL_V6_1	0xd5
 #define regHDP_CLK_CNTL_V6_1_BASE_IDX 0

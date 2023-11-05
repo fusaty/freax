@@ -7,15 +7,15 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger.h>
 
-#include <linux/iio/common/st_sensors.h>
+#include <freax/iio/common/st_sensors.h>
 #include "st_magn.h"
 
 #define ST_MAGN_NUMBER_DATA_CHANNELS		3

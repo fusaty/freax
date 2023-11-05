@@ -32,14 +32,14 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/printk.h>
 #ifdef CONFIG_INFINIBAND_QIB_DCA
-#include <linux/dca.h>
+#include <freax/dca.h>
 #endif
 #include <rdma/rdma_vt.h>
 

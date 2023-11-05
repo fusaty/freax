@@ -3,24 +3,24 @@
  * Copyright (C) STMicroelectronics 2018 - All Rights Reserved
  * Author: Ludovic Barre <ludovic.barre@st.com> for STMicroelectronics.
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/sizes.h>
+#include <freax/spi/spi-mem.h>
 
 #define QSPI_CR			0x00
 #define CR_EN			BIT(0)

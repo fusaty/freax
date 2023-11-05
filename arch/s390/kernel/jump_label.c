@@ -3,11 +3,11 @@
  * Jump label s390 support
  *
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@freax.vnet.ibm.com>
  */
-#include <linux/uaccess.h>
-#include <linux/jump_label.h>
-#include <linux/module.h>
+#include <freax/uaccess.h>
+#include <freax/jump_label.h>
+#include <freax/module.h>
 #include <asm/text-patching.h>
 #include <asm/ipl.h>
 

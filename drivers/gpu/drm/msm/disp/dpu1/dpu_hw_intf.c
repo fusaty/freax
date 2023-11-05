@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
- * Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  */
 
 #include "dpu_hwio.h"
@@ -10,7 +10,7 @@
 #include "dpu_kms.h"
 #include "dpu_trace.h"
 
-#include <linux/iopoll.h>
+#include <freax/iopoll.h>
 
 #define INTF_TIMING_ENGINE_EN           0x000
 #define INTF_CONFIG                     0x004

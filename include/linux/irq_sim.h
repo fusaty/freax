@@ -4,12 +4,12 @@
  * Copyright (C) 2020 Bartosz Golaszewski <bgolaszewski@baylibre.com>
  */
 
-#ifndef _LINUX_IRQ_SIM_H
-#define _LINUX_IRQ_SIM_H
+#ifndef _freax_IRQ_SIM_H
+#define _freax_IRQ_SIM_H
 
-#include <linux/device.h>
-#include <linux/fwnode.h>
-#include <linux/irqdomain.h>
+#include <freax/device.h>
+#include <freax/fwnode.h>
+#include <freax/irqdomain.h>
 
 /*
  * Provides a framework for allocating simulated interrupts which can be
@@ -23,4 +23,4 @@ struct irq_domain *devm_irq_domain_create_sim(struct device *dev,
 					      unsigned int num_irqs);
 void irq_domain_remove_sim(struct irq_domain *domain);
 
-#endif /* _LINUX_IRQ_SIM_H */
+#endif /* _freax_IRQ_SIM_H */

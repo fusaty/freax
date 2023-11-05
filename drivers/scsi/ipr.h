@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * ipr.h -- driver for IBM Power Linux RAID adapters
+ * ipr.h -- driver for IBM Power freax RAID adapters
  *
  * Written By: Brian King <brking@us.ibm.com>, IBM Corporation
  *
@@ -14,11 +14,11 @@
 #define _IPR_H
 
 #include <asm/unaligned.h>
-#include <linux/types.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/irq_poll.h>
+#include <freax/types.h>
+#include <freax/completion.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/irq_poll.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 
@@ -1593,7 +1593,7 @@ struct ipr_dump_header {
 #define IPR_DUMP_STATUS_QUAL_SUCCESS		2
 #define IPR_DUMP_STATUS_FAILED			0xffffffff
 	u32 os;
-#define IPR_DUMP_OS_LINUX	0x4C4E5558
+#define IPR_DUMP_OS_freax	0x4C4E5558
 	u32 driver_name;
 #define IPR_DUMP_DRIVER_NAME	0x49505232
 }__attribute__((packed, aligned (4)));

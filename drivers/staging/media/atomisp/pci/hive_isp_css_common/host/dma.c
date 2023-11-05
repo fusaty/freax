@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "dma.h"
 

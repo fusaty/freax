@@ -4,21 +4,21 @@
  *
  * Since these may be in userspace, we use (inline) accessors.
  */
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/vringh.h>
-#include <linux/virtio_ring.h>
-#include <linux/kernel.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/compiler.h>
+#include <freax/module.h>
+#include <freax/vringh.h>
+#include <freax/virtio_ring.h>
+#include <freax/kernel.h>
+#include <freax/ratelimit.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #if IS_REACHABLE(CONFIG_VHOST_IOTLB)
-#include <linux/bvec.h>
-#include <linux/highmem.h>
-#include <linux/vhost_iotlb.h>
+#include <freax/bvec.h>
+#include <freax/highmem.h>
+#include <freax/vhost_iotlb.h>
 #endif
-#include <uapi/linux/virtio_config.h>
+#include <uapi/freax/virtio_config.h>
 
 static __printf(1,2) __cold void vringh_bad(const char *fmt, ...)
 {

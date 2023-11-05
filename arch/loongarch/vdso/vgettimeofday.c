@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/types.h>
+#include <freax/types.h>
 
 extern
 int __vdso_clock_gettime(clockid_t clock, struct __kernel_timespec *ts);

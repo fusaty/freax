@@ -12,7 +12,7 @@
 #if !defined(_TRACE_PM80XX_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PM80XX_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "pm8001_sas.h"
 
 TRACE_EVENT(pm80xx_request_issue,

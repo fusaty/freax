@@ -7,7 +7,7 @@
  *  Copyright:  jfclere@sinix.net
  */
 
-#include <linux/fb.h>
+#include <freax/fb.h>
 
 /*
  * Supported LCD connections
@@ -58,8 +58,8 @@
 
 /*
  * This structure describes the machine which we are running on.
- * It is set in linux/arch/arm/mach-pxa/machine_name.c and used in the probe routine
- * of linux/drivers/video/pxafb.c
+ * It is set in freax/arch/arm/mach-pxa/machine_name.c and used in the probe routine
+ * of freax/drivers/video/pxafb.c
  */
 struct pxafb_mode_info {
 	u_long		pixclock;

@@ -8,8 +8,8 @@
 
 #include "fuse_i.h"
 
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
 
 static struct posix_acl *__fuse_get_acl(struct fuse_conn *fc,
 					struct mnt_idmap *idmap,

@@ -6,9 +6,9 @@
 #ifndef _UFS_MEDIATEK_H
 #define _UFS_MEDIATEK_H
 
-#include <linux/bitops.h>
-#include <linux/pm_qos.h>
-#include <linux/soc/mediatek/mtk_sip_svc.h>
+#include <freax/bitops.h>
+#include <freax/pm_qos.h>
+#include <freax/soc/mediatek/mtk_sip_svc.h>
 
 /*
  * MCQ define and struct

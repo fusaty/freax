@@ -8,15 +8,15 @@
  *
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
+#include <freax/mfd/wm8350/core.h>
+#include <freax/mfd/wm8350/gpio.h>
 
 struct wm8350_gpio_data {
 	struct wm8350 *wm8350;

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched/task.h>
-#include <linux/pgtable.h>
-#include <linux/kasan.h>
+#include <freax/sched/task.h>
+#include <freax/pgtable.h>
+#include <freax/kasan.h>
 #include <asm/pgalloc.h>
 #include <asm/facility.h>
 #include <asm/sections.h>
@@ -18,9 +18,9 @@ struct ctlreg __bootdata_preserved(s390_invalid_asce);
 atomic_long_t __bootdata_preserved(direct_pages_count[PG_DIRECT_MAP_MAX]);
 #endif
 
-#define init_mm			(*(struct mm_struct *)vmlinux.init_mm_off)
-#define swapper_pg_dir		vmlinux.swapper_pg_dir_off
-#define invalid_pg_dir		vmlinux.invalid_pg_dir_off
+#define init_mm			(*(struct mm_struct *)vmfreax.init_mm_off)
+#define swapper_pg_dir		vmfreax.swapper_pg_dir_off
+#define invalid_pg_dir		vmfreax.invalid_pg_dir_off
 
 enum populate_mode {
 	POPULATE_NONE,
@@ -37,11 +37,11 @@ static void pgtable_populate(unsigned long addr, unsigned long end, enum populat
 
 #ifdef CONFIG_KASAN
 
-#define kasan_early_shadow_page	vmlinux.kasan_early_shadow_page_off
-#define kasan_early_shadow_pte	((pte_t *)vmlinux.kasan_early_shadow_pte_off)
-#define kasan_early_shadow_pmd	((pmd_t *)vmlinux.kasan_early_shadow_pmd_off)
-#define kasan_early_shadow_pud	((pud_t *)vmlinux.kasan_early_shadow_pud_off)
-#define kasan_early_shadow_p4d	((p4d_t *)vmlinux.kasan_early_shadow_p4d_off)
+#define kasan_early_shadow_page	vmfreax.kasan_early_shadow_page_off
+#define kasan_early_shadow_pte	((pte_t *)vmfreax.kasan_early_shadow_pte_off)
+#define kasan_early_shadow_pmd	((pmd_t *)vmfreax.kasan_early_shadow_pmd_off)
+#define kasan_early_shadow_pud	((pud_t *)vmfreax.kasan_early_shadow_pud_off)
+#define kasan_early_shadow_p4d	((p4d_t *)vmfreax.kasan_early_shadow_p4d_off)
 #define __sha(x)		((unsigned long)kasan_mem_to_shadow((void *)x))
 
 static pte_t pte_z;

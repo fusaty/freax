@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Spanning tree protocol; BPDU handling
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/etherdevice.h>
-#include <linux/llc.h>
-#include <linux/slab.h>
-#include <linux/pkt_sched.h>
+#include <freax/kernel.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/etherdevice.h>
+#include <freax/llc.h>
+#include <freax/slab.h>
+#include <freax/pkt_sched.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>

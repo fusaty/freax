@@ -5,7 +5,7 @@
  * Author: Joerg Roedel <jroedel@suse.de>
  *
  * This file is not compiled stand-alone. It contains code shared
- * between the pre-decompression boot code and the running Linux kernel
+ * between the pre-decompression boot code and the running freax kernel
  * and is included directly into both code-bases.
  */
 
@@ -137,7 +137,7 @@ static void snp_register_ghcb_early(unsigned long paddr)
 	/* If the response GPA is not ours then abort the guest */
 	if ((GHCB_RESP_CODE(val) != GHCB_MSR_REG_GPA_RESP) ||
 	    (GHCB_MSR_REG_GPA_RESP_VAL(val) != pfn))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_REGISTER);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_REGISTER);
 }
 
 static bool sev_es_negotiate_protocol(void)
@@ -430,7 +430,7 @@ snp_cpuid_get_validated_func(struct cpuid_leaf *leaf)
 static void snp_cpuid_hv(struct ghcb *ghcb, struct es_em_ctxt *ctxt, struct cpuid_leaf *leaf)
 {
 	if (sev_cpuid_hv(ghcb, ctxt, leaf))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_CPUID_HV);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_CPUID_HV);
 }
 
 static int snp_cpuid_postprocess(struct ghcb *ghcb, struct es_em_ctxt *ctxt,
@@ -1014,7 +1014,7 @@ struct cc_setup_data {
 
 /*
  * Search for a Confidential Computing blob passed in as a setup_data entry
- * via the Linux Boot Protocol.
+ * via the freax Boot Protocol.
  */
 static struct cc_blob_sev_info *find_cc_blob_setup_data(struct boot_params *bp)
 {
@@ -1049,11 +1049,11 @@ static void __init setup_cpuid_table(const struct cc_blob_sev_info *cc_info)
 	int i;
 
 	if (!cc_info || !cc_info->cpuid_phys || cc_info->cpuid_len < PAGE_SIZE)
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_CPUID);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_CPUID);
 
 	cpuid_table_fw = (const struct snp_cpuid_table *)cc_info->cpuid_phys;
 	if (!cpuid_table_fw->count || cpuid_table_fw->count > SNP_CPUID_COUNT_MAX)
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_CPUID);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_CPUID);
 
 	cpuid_table = snp_cpuid_get_table();
 	memcpy((void *)cpuid_table, cpuid_table_fw, sizeof(*cpuid_table));
@@ -1100,7 +1100,7 @@ static void pvalidate_pages(struct snp_psc_desc *desc)
 
 		if (rc) {
 			WARN(1, "Failed to validate address 0x%lx ret %d", vaddr, rc);
-			sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PVALIDATE);
+			sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PVALIDATE);
 		}
 	}
 }

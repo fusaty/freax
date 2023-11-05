@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #include <stdlib.h>
 #include <stdio.h>
-#include <linux/unistd.h>
+#include <freax/unistd.h>
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 #include <net/if.h>
-#include <linux/if_packet.h>
+#include <freax/if_packet.h>
 #include <arpa/inet.h>
 
 static inline int open_raw_sock(const char *name)

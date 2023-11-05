@@ -8,9 +8,9 @@
 #ifndef RENESAS_USB_FIFO_H
 #define RENESAS_USB_FIFO_H
 
-#include <linux/interrupt.h>
-#include <linux/sh_dma.h>
-#include <linux/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/sh_dma.h>
+#include <freax/workqueue.h>
 #include <asm/dma.h>
 #include "pipe.h"
 

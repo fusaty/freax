@@ -35,22 +35,22 @@
  *		        within kupdate, it will ignore the immediate flag
  */
 
-#include <linux/time.h>
-#include <linux/semaphore.h>
-#include <linux/vmalloc.h>
+#include <freax/time.h>
+#include <freax/semaphore.h>
+#include <freax/vmalloc.h>
 #include "reiserfs.h"
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/workqueue.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/buffer_head.h>
+#include <freax/workqueue.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 
 
 /* gets a struct reiserfs_journal_list * from a list head */

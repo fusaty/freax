@@ -6,15 +6,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/power/bq27xxx_battery.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/power/bq27xxx_battery.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 #define W1_FAMILY_BQ27000	0x01
 

@@ -1,4 +1,4 @@
-Linux Braille Console
+freax Braille Console
 =====================
 
 To get early boot messages on a braille device (before userspace screen

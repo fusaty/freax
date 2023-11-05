@@ -12,21 +12,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/crypto.h>
+#include <freax/hw_random.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aes.h>

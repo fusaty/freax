@@ -3,11 +3,11 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/dma-buf.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/set_memory.h>
-#include <linux/xarray.h>
+#include <freax/dma-buf.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/set_memory.h>
+#include <freax/xarray.h>
 
 #include <drm/drm_cache.h>
 #include <drm/drm_debugfs.h>

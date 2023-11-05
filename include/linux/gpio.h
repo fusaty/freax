@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * <linux/gpio.h>
+ * <freax/gpio.h>
  *
  * This is the LEGACY GPIO bulk include file, including legacy APIs. It is
  * used for GPIO drivers still referencing the global GPIO numberspace,
  * and should not be included in new code.
  *
- * If you're implementing a GPIO driver, only include <linux/gpio/driver.h>
- * If you're implementing a GPIO consumer, only include <linux/gpio/consumer.h>
+ * If you're implementing a GPIO driver, only include <freax/gpio/driver.h>
+ * If you're implementing a GPIO consumer, only include <freax/gpio/consumer.h>
  */
-#ifndef __LINUX_GPIO_H
-#define __LINUX_GPIO_H
+#ifndef __freax_GPIO_H
+#define __freax_GPIO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 
@@ -46,7 +46,7 @@ struct gpio {
 
 #ifdef CONFIG_GPIOLIB
 
-#include <linux/gpio/consumer.h>
+#include <freax/gpio/consumer.h>
 
 /*
  * "valid" GPIO numbers are nonnegative and may be passed to
@@ -125,7 +125,7 @@ int devm_gpio_request_one(struct device *dev, unsigned gpio,
 
 #else /* ! CONFIG_GPIOLIB */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <asm/bug.h>
 #include <asm/errno.h>
@@ -226,4 +226,4 @@ static inline int devm_gpio_request_one(struct device *dev, unsigned gpio,
 
 #endif /* ! CONFIG_GPIOLIB */
 
-#endif /* __LINUX_GPIO_H */
+#endif /* __freax_GPIO_H */

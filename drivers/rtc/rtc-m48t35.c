@@ -10,13 +10,13 @@
  * Based on code written by Paul Gortmaker.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/bcd.h>
+#include <freax/io.h>
+#include <freax/err.h>
 
 struct m48t35_rtc {
 	u8	pad[0x7ff8];    /* starts at 0x7ff8 */

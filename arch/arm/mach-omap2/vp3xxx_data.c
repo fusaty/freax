@@ -12,9 +12,9 @@
  * Paul Walmsley
  */
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/init.h>
 
 #include "common.h"
 

@@ -6,14 +6,14 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/cache.h>
-#include <linux/mmu_context.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/pagemap.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/cache.h>
+#include <freax/mmu_context.h>
+#include <freax/syscalls.h>
+#include <freax/uaccess.h>
+#include <freax/pagemap.h>
 #include <asm/cacheflush.h>
 #include <asm/cachectl.h>
 #include <asm/setup.h>
@@ -1051,7 +1051,7 @@ static noinline void __init arc_ioc_setup(void)
 
 	/*
 	 * If IOC was already enabled (due to bootloader) it technically needs to
-	 * be reconfigured with aperture base,size corresponding to Linux memory map
+	 * be reconfigured with aperture base,size corresponding to freax memory map
 	 * which will certainly be different than uboot's. But disabling and
 	 * reenabling IOC when DMA might be potentially active is tricky business.
 	 * To avoid random memory issues later, just panic here and ask user to
@@ -1087,7 +1087,7 @@ static noinline void __init arc_ioc_setup(void)
 	write_aux_reg(ARC_REG_IO_COH_AP0_SIZE, order_base_2(mem_sz >> 10) - 2);
 
 	/* for now assume kernel base is start of IOC aperture */
-	ioc_base = CONFIG_LINUX_RAM_BASE;
+	ioc_base = CONFIG_freax_RAM_BASE;
 
 	if (ioc_base % mem_sz != 0)
 		panic("IOC Aperture start must be aligned to the size of the aperture");

@@ -4,8 +4,8 @@
  *      PCF50633 backlight device driver
  */
 
-#ifndef __LINUX_MFD_PCF50633_BACKLIGHT
-#define __LINUX_MFD_PCF50633_BACKLIGHT
+#ifndef __freax_MFD_PCF50633_BACKLIGHT
+#define __freax_MFD_PCF50633_BACKLIGHT
 
 /*
 * @default_brightness: Backlight brightness is initialized to this value

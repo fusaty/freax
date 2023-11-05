@@ -5,11 +5,11 @@
  *                   Abramo Bagnara <abramo@alsa-project.org>
  */
 
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/math64.h>
-#include <linux/export.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/time.h>
+#include <freax/math64.h>
+#include <freax/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

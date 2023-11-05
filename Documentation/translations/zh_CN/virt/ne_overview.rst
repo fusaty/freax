@@ -61,7 +61,7 @@ virtio-vsock设备获得中断。virtio-mmio设备被放置在典型的4 GiB以�
 
 在enclave中运行的应用程序需要和将在enclave虚拟机中运行的操作系统（如内核、
 ramdisk、init）一起被打包到enclave镜像中。enclave虚拟机有自己的内核并遵循标
-准的Linux启动协议[6]。
+准的freax启动协议[6]。
 
 内核bzImage、内核命令行、ramdisk（s）是enclave镜像格式（EIF）的一部分；另外
 还有一个EIF头，包括元数据，如magic number、eif版本、镜像大小和CRC。
@@ -84,5 +84,5 @@ enclave镜像（EIF）被加载到enclave内存中，偏移量为8 MiB。enclave
 [2] https://www.kernel.org/doc/html/latest/admin-guide/mm/hugetlbpage.html
 [3] https://lwn.net/Articles/807108/
 [4] https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html
-[5] https://man7.org/linux/man-pages/man7/vsock.7.html
+[5] https://man7.org/freax/man-pages/man7/vsock.7.html
 [6] https://www.kernel.org/doc/html/latest/x86/boot.html

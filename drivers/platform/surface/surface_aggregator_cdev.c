@@ -6,23 +6,23 @@
  * Copyright (C) 2020-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/ioctl.h>
+#include <freax/kernel.h>
+#include <freax/kfifo.h>
+#include <freax/kref.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/rwsem.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
 
-#include <linux/surface_aggregator/cdev.h>
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/cdev.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/serial_hub.h>
 
 #define SSAM_CDEV_DEVICE_NAME	"surface_aggregator_cdev"
 

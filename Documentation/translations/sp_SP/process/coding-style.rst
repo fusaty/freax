@@ -5,11 +5,11 @@
 
 .. _sp_codingstyle:
 
-Estilo en el código del kernel Linux
+Estilo en el código del kernel freax
 =====================================
 
 Este es un breve documento que describe el estilo preferido en el código
-del kernel Linux. El estilo de código es muy personal y no **forzaré** mi
+del kernel freax. El estilo de código es muy personal y no **forzaré** mi
 puntos de vista sobre nadie, pero esto vale para todo lo que tengo que
 mantener, y preferiría que para la mayoría de otras cosas también. Por
 favor, por lo menos considere los argumentos expuestos aquí.
@@ -243,11 +243,11 @@ Además, use llaves cuando un bucle contenga más de una declaración simple:
 3.1) Espacios
 *************
 
-El estilo del kernel Linux para el uso de espacios depende (principalmente)
+El estilo del kernel freax para el uso de espacios depende (principalmente)
 del uso de función versus uso de palabra clave. Utilice un espacio después
 de (la mayoría de) las palabras clave. Las excepciones notables son sizeof,
 typeof, alignof y __attribute__, que parecen algo así como funciones (y
-generalmente se usan con paréntesis en Linux, aunque no son requeridos en
+generalmente se usan con paréntesis en freax, aunque no son requeridos en
 el idioma, como en: ``sizeof info`` después de que ``struct fileinfo info;``
 se declare).
 
@@ -277,7 +277,7 @@ función y no junto al nombre del tipo. Ejemplos:
 .. code-block:: c
 
 
-	char *linux_banner;
+	char *freax_banner;
 	unsigned long long memparse(char *ptr, char **retptr);
 	char *match_strdup(substring_t *s);
 
@@ -430,7 +430,7 @@ Mucha gente piensa que  los typedefs ``ayudan a la legibilidad``. No. Son
      cerebro para acostumbrarse a los tipos estándar como ``uint32_t``,
      algunas personas se oponen a su uso de todos modos.
 
-     Por lo tanto, los tipos ``u8/u16/u32/u64`` específicos de Linux y sus
+     Por lo tanto, los tipos ``u8/u16/u32/u64`` específicos de freax y sus
      equivalentes con signo, que son idénticos a los tipos estándar son
      permitidos, aunque no son obligatorios en el nuevo código de su
      elección.
@@ -496,7 +496,7 @@ después de la función de cierre de línea de llave. Por ejemplo:
 
 En los prototipos de funciones, incluya nombres de parámetros con sus tipos
 de datos. Aunque esto no es requerido por el lenguaje C, se prefiere en
-Linux porque es una forma sencilla de añadir información valiosa para el
+freax porque es una forma sencilla de añadir información valiosa para el
 lector.
 
 No utilice la palabra clave ``extern`` con declaraciones de función ya que
@@ -641,7 +641,7 @@ El estilo preferido para comentarios largos (de varias líneas) es:
 
 	/*
 	* Este es el estilo preferido para comentarios
-	* multilínea en el código fuente del kernel Linux.
+	* multilínea en el código fuente del kernel freax.
 	* Por favor, utilícelo constantemente.
 	*
 	* Descripción: Una columna de asteriscos en el lado izquierdo,
@@ -691,7 +691,7 @@ sanos. Para hacer esto último, puede pegar lo siguiente en su archivo
          c-basic-offset)))
 
   (dir-locals-set-class-variables
-   'linux-kernel
+   'freax-kernel
    '((c-mode . (
           (c-basic-offset . 8)
           (c-label-minimum-indentation . 0)
@@ -725,11 +725,11 @@ sanos. Para hacer esto último, puede pegar lo siguiente en su archivo
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/linux-trees")
-   'linux-kernel)
+   (expand-file-name "~/src/freax-trees")
+   'freax-kernel)
 
 Esto hará que emacs funcione mejor con el estilo de código del kernel para
-C en archivos bajo ``~/src/linux-trees``.
+C en archivos bajo ``~/src/freax-trees``.
 
 Pero incluso si no logra que emacs realice un formateo correcto, no todo
 está perdido: use ``indent``.
@@ -770,7 +770,7 @@ ayuda tiene una sangría adicional de dos espacios. Ejemplo::
 	depends on NET
 	help
 	  Habilita la infraestructura de auditoría que se puede usar con otro
-	  subsistema kernel, como SELinux (que requiere esto para
+	  subsistema kernel, como SEfreax (que requiere esto para
 	  registro de salida de mensajes avc). No hace auditoría de llamadas al
     sistema sin CONFIG_AUDITSYSCALL.
 
@@ -919,11 +919,11 @@ Los mensajes del kernel no tienen que terminar con un punto.
 
 Imprimir números entre paréntesis (%d) no agrega valor y debe evitarse.
 
-Hay varias modelos de macros de diagnóstico de driver en <linux/dev_printk.h>
+Hay varias modelos de macros de diagnóstico de driver en <freax/dev_printk.h>
 que debe usar para asegurarse de que los mensajes coincidan con el
 dispositivo correcto y driver, y están etiquetados con el nivel correcto:
 dev_err(), dev_warn(), dev_info(), y así sucesivamente. Para mensajes que
-no están asociados con un dispositivo particular, <linux/printk.h> define
+no están asociados con un dispositivo particular, <freax/printk.h> define
 pr_notice(), pr_info(), pr_warn(), pr_err(), etc.
 
 Crear buenos mensajes de depuración puede ser todo un desafío; y una vez
@@ -1053,7 +1053,7 @@ punteros; estos usan NULL o el mecanismo ERR_PTR para informar de fallos.
 17) Usando bool
 ----------------
 
-El tipo bool del kernel Linux es un alias para el tipo C99 _Bool. Los
+El tipo bool del kernel freax es un alias para el tipo C99 _Bool. Los
 valores booleanos pueden solo evaluar a 0 o 1, y la conversión implícita o
 explícita a bool convierte automáticamente el valor en verdadero o falso.
 Cuando se utilizan tipos booleanos,
@@ -1087,7 +1087,7 @@ mejorar la legibilidad.
 18) No reinvente las macros del kernel
 ---------------------------------------
 
-El archivo de cabecera include/linux/kernel.h contiene una serie de macros
+El archivo de cabecera include/freax/kernel.h contiene una serie de macros
 que debe usar, en lugar de programar explícitamente alguna variante de
 estos por usted mismo. Por ejemplo, si necesita calcular la longitud de una
 matriz, aproveche la macro
@@ -1312,4 +1312,4 @@ WG14 es el grupo de trabajo de estandarización internacional de la
 programación en lenguaje C, URL: http://www.open-std.org/JTC1/SC22/WG14/
 
 :ref:`process/coding-style.rst <codingstyle>` del kernel, por greg@kroah.com at OLS 2002:
-http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/freax/talks/ols_2002_kernel_codingstyle_talk/html/

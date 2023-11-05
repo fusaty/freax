@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/hash.c
+ *  freax/fs/ext4/hash.c
  *
  * Copyright (C) 2002 by Theodore Ts'o
  */
 
-#include <linux/fs.h>
-#include <linux/unicode.h>
-#include <linux/compiler.h>
-#include <linux/bitops.h>
+#include <freax/fs.h>
+#include <freax/unicode.h>
+#include <freax/compiler.h>
+#include <freax/bitops.h>
 #include "ext4.h"
 
 #define DELTA 0x9E3779B9

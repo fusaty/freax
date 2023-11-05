@@ -15,23 +15,23 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rculist.h>
-#include <linux/rculist_nulls.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/siphash.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/rculist.h>
+#include <freax/rculist_nulls.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/security.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/netlink.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/siphash.h>
 
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_conntrack.h>
@@ -51,8 +51,8 @@
 #include <net/netfilter/nf_nat_helper.h>
 #endif
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_conntrack.h>
 
 #include "nf_internals.h"
 

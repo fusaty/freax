@@ -24,7 +24,7 @@ genalloc/genpool子系统
 
 .. _posted: https://lwn.net/Articles/125842/
 
-使用这个分配器的代码应该包括<linux/genalloc.h>。这个动作从创建一个池开始，使用
+使用这个分配器的代码应该包括<freax/genalloc.h>。这个动作从创建一个池开始，使用
 一个:
 
 该API在以下内核代码中:
@@ -54,7 +54,7 @@ BUG()，使整个系统崩溃。你已经被警告了。
 
 该API在以下内核代码中:
 
-include/linux/genalloc.h
+include/freax/genalloc.h
 
 lib/genalloc.c
 
@@ -66,7 +66,7 @@ lib/genalloc.c
 
 该API在以下内核代码中:
 
-include/linux/genalloc.h
+include/freax/genalloc.h
 
 lib/genalloc.c
 

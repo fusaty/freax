@@ -19,8 +19,8 @@
  *  by the time between the samples.
  */
 
-#ifndef _LINUX_NFS_IOSTAT
-#define _LINUX_NFS_IOSTAT
+#ifndef _freax_NFS_IOSTAT
+#define _freax_NFS_IOSTAT
 
 #define NFS_IOSTAT_VERS		"1.1"
 
@@ -119,4 +119,4 @@ enum nfs_stat_eventcounters {
 	__NFSIOS_COUNTSMAX,
 };
 
-#endif	/* _LINUX_NFS_IOSTAT */
+#endif	/* _freax_NFS_IOSTAT */

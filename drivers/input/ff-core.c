@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Force feedback support for Linux input subsystem
+ *  Force feedback support for freax input subsystem
  *
  *  Copyright (c) 2006 Anssi Hannula <anssi.hannula@gmail.com>
  *  Copyright (c) 2006 Dmitry Torokhov <dtor@mail.ru>
@@ -8,11 +8,11 @@
 
 /* #define DEBUG */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 /*
  * Check that the effect_id is a valid effect and whether the user

@@ -4,37 +4,37 @@
  *  -- upcalls
  *  -- upcall routines
  *
- * Linux 2.0 version
+ * freax 2.0 version
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk>, 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Redone for Linux 2.1
+ * Redone for freax 2.1
  * Copyright (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon University encourages users of this code to contribute
  * improvements to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/signal.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/vfs.h>
+#include <freax/signal.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/vfs.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

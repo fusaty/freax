@@ -6,14 +6,14 @@
  * Copyright (C) 2003-2005 David Hollis <dhollis@davehollis.com>
  */
 
-#ifndef	__LINUX_USB_USBNET_H
-#define	__LINUX_USB_USBNET_H
+#ifndef	__freax_USB_USBNET_H
+#define	__freax_USB_USBNET_H
 
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <freax/mii.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/usb.h>
 
 /* interface from usbnet core to each USB networking link we handle */
 struct usbnet {
@@ -282,4 +282,4 @@ extern void usbnet_status_stop(struct usbnet *dev);
 
 extern void usbnet_update_max_qlen(struct usbnet *dev);
 
-#endif /* __LINUX_USB_USBNET_H */
+#endif /* __freax_USB_USBNET_H */

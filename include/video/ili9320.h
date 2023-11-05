@@ -6,7 +6,7 @@
  * Copyright 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
  *
- * http://armlinux.simtec.co.uk/
+ * http://armfreax.simtec.co.uk/
 */
 
 #define ILI9320_REG(x)	(x)

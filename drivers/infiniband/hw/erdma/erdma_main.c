@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 
-/* Authors: Cheng Xu <chengyou@linux.alibaba.com> */
-/*          Kai Shen <kaishen@linux.alibaba.com> */
+/* Authors: Cheng Xu <chengyou@freax.alibaba.com> */
+/*          Kai Shen <kaishen@freax.alibaba.com> */
 /* Copyright (c) 2020-2022, Alibaba Group. */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <net/addrconf.h>
 #include <rdma/erdma-abi.h>
 
@@ -12,7 +12,7 @@
 #include "erdma_cm.h"
 #include "erdma_verbs.h"
 
-MODULE_AUTHOR("Cheng Xu <chengyou@linux.alibaba.com>");
+MODULE_AUTHOR("Cheng Xu <chengyou@freax.alibaba.com>");
 MODULE_DESCRIPTION("Alibaba elasticRDMA adapter driver");
 MODULE_LICENSE("Dual BSD/GPL");
 

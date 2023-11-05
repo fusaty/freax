@@ -1,51 +1,51 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FS_H
-#define _LINUX_FS_H
+#ifndef _freax_FS_H
+#define _freax_FS_H
 
-#include <linux/linkage.h>
-#include <linux/wait_bit.h>
-#include <linux/kdev_t.h>
-#include <linux/dcache.h>
-#include <linux/path.h>
-#include <linux/stat.h>
-#include <linux/cache.h>
-#include <linux/list.h>
-#include <linux/list_lru.h>
-#include <linux/llist.h>
-#include <linux/radix-tree.h>
-#include <linux/xarray.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/pid.h>
-#include <linux/bug.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/mm_types.h>
-#include <linux/capability.h>
-#include <linux/semaphore.h>
-#include <linux/fcntl.h>
-#include <linux/rculist_bl.h>
-#include <linux/atomic.h>
-#include <linux/shrinker.h>
-#include <linux/migrate_mode.h>
-#include <linux/uidgid.h>
-#include <linux/lockdep.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/delayed_call.h>
-#include <linux/uuid.h>
-#include <linux/errseq.h>
-#include <linux/ioprio.h>
-#include <linux/fs_types.h>
-#include <linux/build_bug.h>
-#include <linux/stddef.h>
-#include <linux/mount.h>
-#include <linux/cred.h>
-#include <linux/mnt_idmapping.h>
-#include <linux/slab.h>
+#include <freax/linkage.h>
+#include <freax/wait_bit.h>
+#include <freax/kdev_t.h>
+#include <freax/dcache.h>
+#include <freax/path.h>
+#include <freax/stat.h>
+#include <freax/cache.h>
+#include <freax/list.h>
+#include <freax/list_lru.h>
+#include <freax/llist.h>
+#include <freax/radix-tree.h>
+#include <freax/xarray.h>
+#include <freax/rbtree.h>
+#include <freax/init.h>
+#include <freax/pid.h>
+#include <freax/bug.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/mm_types.h>
+#include <freax/capability.h>
+#include <freax/semaphore.h>
+#include <freax/fcntl.h>
+#include <freax/rculist_bl.h>
+#include <freax/atomic.h>
+#include <freax/shrinker.h>
+#include <freax/migrate_mode.h>
+#include <freax/uidgid.h>
+#include <freax/lockdep.h>
+#include <freax/percpu-rwsem.h>
+#include <freax/workqueue.h>
+#include <freax/delayed_call.h>
+#include <freax/uuid.h>
+#include <freax/errseq.h>
+#include <freax/ioprio.h>
+#include <freax/fs_types.h>
+#include <freax/build_bug.h>
+#include <freax/stddef.h>
+#include <freax/mount.h>
+#include <freax/cred.h>
+#include <freax/mnt_idmapping.h>
+#include <freax/slab.h>
 
 #include <asm/byteorder.h>
-#include <uapi/linux/fs.h>
+#include <uapi/freax/fs.h>
 
 struct backing_dev_info;
 struct bdi_writeback;
@@ -262,7 +262,7 @@ struct iattr {
 /*
  * Includes for diskquotas.
  */
-#include <linux/quota.h>
+#include <freax/quota.h>
 
 /*
  * Maximum number of layers of fs stack.  Needs to be limited to
@@ -374,7 +374,7 @@ struct kiocb {
 	void (*ki_complete)(struct kiocb *iocb, long ret);
 	void			*private;
 	int			ki_flags;
-	u16			ki_ioprio; /* See linux/ioprio.h */
+	u16			ki_ioprio; /* See freax/ioprio.h */
 	union {
 		/*
 		 * Only used for async buffered reads, where it denotes the
@@ -595,7 +595,7 @@ static inline void mapping_allow_writable(struct address_space *mapping)
  * Use sequence counter to get consistent i_size on 32-bit processors.
  */
 #if BITS_PER_LONG==32 && defined(CONFIG_SMP)
-#include <linux/seqlock.h>
+#include <freax/seqlock.h>
 #define __NEED_I_SIZE_ORDERED
 #define i_size_ordered_init(inode) seqcount_init(&inode->i_size_seqcount)
 #else
@@ -2128,7 +2128,7 @@ struct super_operations {
  * Unfortunately, it is possible to change a filesystems flags with it mounted
  * with files in use.  This means that all of the inodes will not have their
  * i_flags updated.  Hence, i_flags no longer inherit the superblock mount
- * flags, so these have to be checked separately. -- rmk@arm.uk.linux.org
+ * flags, so these have to be checked separately. -- rmk@arm.uk.freax.org
  */
 #define __IS_FLG(inode, flg)	((inode)->i_sb->s_flags & (flg))
 
@@ -2846,7 +2846,7 @@ extern bool path_is_under(const struct path *, const struct path *);
 
 extern char *file_path(struct file *, char *, int);
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 /* needed for stackable file system support */
 extern loff_t default_llseek(struct file *file, loff_t offset, int whence);
@@ -3447,4 +3447,4 @@ extern int vfs_fadvise(struct file *file, loff_t offset, loff_t len,
 extern int generic_fadvise(struct file *file, loff_t offset, loff_t len,
 			   int advice);
 
-#endif /* _LINUX_FS_H */
+#endif /* _freax_FS_H */

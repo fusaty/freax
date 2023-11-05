@@ -5,13 +5,13 @@
  *	i8259A interrupt definitions.
  *
  *	Copyright (C) 2003  Maciej W. Rozycki
- *	Copyright (C) 2003  Ralf Baechle <ralf@linux-mips.org>
+ *	Copyright (C) 2003  Ralf Baechle <ralf@freax-mips.org>
  */
 #ifndef _ASM_I8259_H
 #define _ASM_I8259_H
 
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
 
 #include <asm/io.h>
 #include <irq.h>

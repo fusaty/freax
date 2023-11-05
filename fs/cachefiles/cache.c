@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/namei.h>
+#include <freax/slab.h>
+#include <freax/statfs.h>
+#include <freax/namei.h>
 #include "internal.h"
 
 /*

@@ -4,12 +4,12 @@
  * Author: Hongzhou.Yang <hongzhou.yang@mediatek.com>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/mfd/mt6397/core.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/mfd/mt6397/core.h>
 
 #include "pinctrl-mtk-common.h"
 #include "pinctrl-mtk-mt6397.h"

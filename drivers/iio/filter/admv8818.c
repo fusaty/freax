@@ -5,18 +5,18 @@
  * Copyright 2021 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/units.h>
 
 /* ADMV8818 Register Map */
 #define ADMV8818_REG_SPI_CONFIG_A		0x0

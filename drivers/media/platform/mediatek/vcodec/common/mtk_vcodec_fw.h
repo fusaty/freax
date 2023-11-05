@@ -3,8 +3,8 @@
 #ifndef _MTK_VCODEC_FW_H_
 #define _MTK_VCODEC_FW_H_
 
-#include <linux/remoteproc.h>
-#include <linux/remoteproc/mtk_scp.h>
+#include <freax/remoteproc.h>
+#include <freax/remoteproc/mtk_scp.h>
 
 #include "../../vpu/mtk_vpu.h"
 

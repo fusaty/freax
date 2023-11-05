@@ -7,8 +7,8 @@
 //
 // Hardware interface for mt8186 DSP clock
 
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <freax/clk.h>
+#include <freax/io.h>
 
 #include "../../sof-audio.h"
 #include "../../ops.h"

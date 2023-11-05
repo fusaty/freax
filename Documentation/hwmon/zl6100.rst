@@ -141,7 +141,7 @@ https://flexpowermodules.com/resources/fpm-techspec-bmr450-digital-pol-regulator
 
     Datasheet: https://flexpowermodules.com/resources/fpm-techspec-bmr4696001
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <freax@roeck-us.net>
 
 
 Description

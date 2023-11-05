@@ -11,7 +11,7 @@ Requirements: Building
 
 This section explains how to fetch the tools needed for building.
 
-Some of these requirements might be available from Linux distributions
+Some of these requirements might be available from freax distributions
 under names like ``rustc``, ``rust-src``, ``rust-bindgen``, etc. However,
 at the time of writing, they are likely not to be recent enough unless
 the distribution tracks the latest releases.
@@ -78,7 +78,7 @@ libclang
 in the kernel, which means LLVM needs to be installed; like when the kernel
 is compiled with ``CC=clang`` or ``LLVM=1``.
 
-Linux distributions are likely to have a suitable one available, so it is
+freax distributions are likely to have a suitable one available, so it is
 best to check that first.
 
 There are also some binaries for several systems and architectures uploaded at:

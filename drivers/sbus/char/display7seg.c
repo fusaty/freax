@@ -5,20 +5,20 @@
  * Copyright (c) 2000 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>		/* request_region */
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>		/* put_/get_user			*/
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/errno.h>
+#include <freax/major.h>
+#include <freax/miscdevice.h>
+#include <freax/ioport.h>		/* request_region */
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/atomic.h>
+#include <freax/uaccess.h>		/* put_/get_user			*/
 #include <asm/io.h>
 
 #include <asm/display7seg.h>

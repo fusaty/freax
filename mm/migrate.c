@@ -1,55 +1,55 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Memory Migration functionality - linux/mm/migrate.c
+ * Memory Migration functionality - freax/mm/migrate.c
  *
  * Copyright (C) 2006 Silicon Graphics, Inc., Christoph Lameter
  *
  * Page migration was first developed in the context of the memory hotplug
  * project. The main authors of the migration code are:
  *
- * IWAMOTO Toshihiro <iwamoto@valinux.co.jp>
- * Hirokazu Takahashi <taka@valinux.co.jp>
+ * IWAMOTO Toshihiro <iwamoto@vafreax.co.jp>
+ * Hirokazu Takahashi <taka@vafreax.co.jp>
  * Dave Hansen <haveblue@us.ibm.com>
  * Christoph Lameter
  */
 
-#include <linux/migrate.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/writeback.h>
-#include <linux/mempolicy.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/compaction.h>
-#include <linux/syscalls.h>
-#include <linux/compat.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/gfp.h>
-#include <linux/pfn_t.h>
-#include <linux/memremap.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/balloon_compaction.h>
-#include <linux/page_idle.h>
-#include <linux/page_owner.h>
-#include <linux/sched/mm.h>
-#include <linux/ptrace.h>
-#include <linux/oom.h>
-#include <linux/memory.h>
-#include <linux/random.h>
-#include <linux/sched/sysctl.h>
-#include <linux/memory-tiers.h>
+#include <freax/migrate.h>
+#include <freax/export.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/pagemap.h>
+#include <freax/buffer_head.h>
+#include <freax/mm_inline.h>
+#include <freax/nsproxy.h>
+#include <freax/ksm.h>
+#include <freax/rmap.h>
+#include <freax/topology.h>
+#include <freax/cpu.h>
+#include <freax/cpuset.h>
+#include <freax/writeback.h>
+#include <freax/mempolicy.h>
+#include <freax/vmalloc.h>
+#include <freax/security.h>
+#include <freax/backing-dev.h>
+#include <freax/compaction.h>
+#include <freax/syscalls.h>
+#include <freax/compat.h>
+#include <freax/hugetlb.h>
+#include <freax/hugetlb_cgroup.h>
+#include <freax/gfp.h>
+#include <freax/pfn_t.h>
+#include <freax/memremap.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/balloon_compaction.h>
+#include <freax/page_idle.h>
+#include <freax/page_owner.h>
+#include <freax/sched/mm.h>
+#include <freax/ptrace.h>
+#include <freax/oom.h>
+#include <freax/memory.h>
+#include <freax/random.h>
+#include <freax/sched/sysctl.h>
+#include <freax/memory-tiers.h>
 
 #include <asm/tlbflush.h>
 

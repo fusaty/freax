@@ -4,19 +4,19 @@
  * Copyright 2014 Rose Technology
  *
  * Author: Søren Andersen <san@rosetechnology.dk>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-freax.org/
  *
  * Copyright (C) 2019 Micro Crystal AG
  * Author: Alexandre Belloni <alexandre.belloni@bootlin.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/rtc.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regmap.h>
 
 /*
  * Information for this driver was pulled from the following datasheets.

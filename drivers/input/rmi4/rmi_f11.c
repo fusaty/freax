@@ -4,14 +4,14 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/rmi.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 #include "rmi_driver.h"
 #include "rmi_2d_sensor.h"
 

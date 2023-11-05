@@ -2,9 +2,9 @@
 #ifndef _STATIC_CALL_TYPES_H
 #define _STATIC_CALL_TYPES_H
 
-#include <linux/types.h>
-#include <linux/stringify.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/stringify.h>
+#include <freax/compiler.h>
 
 #define STATIC_CALL_KEY_PREFIX		__SCK__
 #define STATIC_CALL_KEY_PREFIX_STR	__stringify(STATIC_CALL_KEY_PREFIX)

@@ -2,14 +2,14 @@
 /*
     tda18271.h - header for the Philips / NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@freaxtv.org>
 
 */
 
 #ifndef __TDA18271_H__
 #define __TDA18271_H__
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include <media/dvb_frontend.h>
 
 struct tda18271_std_map_item {

@@ -1,28 +1,28 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* freax PRO/1000 Ethernet Driver main header file */
 
 #ifndef _E1000_H_
 #define _E1000_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/mii.h>
-#include <linux/mdio.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/io.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/crc32.h>
+#include <freax/if_vlan.h>
+#include <freax/timecounter.h>
+#include <freax/net_tstamp.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/ptp_classify.h>
+#include <freax/mii.h>
+#include <freax/mdio.h>
+#include <freax/mutex.h>
+#include <freax/pm_qos.h>
 #include "hw.h"
 
 struct e1000_info;

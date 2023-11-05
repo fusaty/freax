@@ -1,10 +1,10 @@
-#ifndef _LINUX_HASH_H
-#define _LINUX_HASH_H
+#ifndef _freax_HASH_H
+#define _freax_HASH_H
 /* Fast hashing routine for ints,  longs and pointers.
    (C) 2002 Nadia Yvette Chambers, IBM */
 
 #include <asm/types.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * The "GOLDEN_RATIO_PRIME" is used in ifs/btrfs/brtfs_inode.h and
@@ -98,4 +98,4 @@ static inline u32 hash32_ptr(const void *ptr)
 	return (u32)val;
 }
 
-#endif /* _LINUX_HASH_H */
+#endif /* _freax_HASH_H */

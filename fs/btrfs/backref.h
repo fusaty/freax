@@ -6,7 +6,7 @@
 #ifndef BTRFS_BACKREF_H
 #define BTRFS_BACKREF_H
 
-#include <linux/btrfs.h>
+#include <freax/btrfs.h>
 #include "messages.h"
 #include "ulist.h"
 #include "disk-io.h"

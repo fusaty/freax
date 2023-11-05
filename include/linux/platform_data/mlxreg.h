@@ -3,8 +3,8 @@
  * Copyright (C) 2017-2020 Mellanox Technologies Ltd.
  */
 
-#ifndef __LINUX_PLATFORM_DATA_MLXREG_H
-#define __LINUX_PLATFORM_DATA_MLXREG_H
+#ifndef __freax_PLATFORM_DATA_MLXREG_H
+#define __freax_PLATFORM_DATA_MLXREG_H
 
 #define MLXREG_CORE_LABEL_MAX_SIZE	32
 #define MLXREG_CORE_WD_FEATURE_NOWAYOUT		BIT(0)
@@ -236,4 +236,4 @@ struct mlxreg_core_hotplug_platform_data {
 	int (*completion_notify)(void *handle, int id);
 };
 
-#endif /* __LINUX_PLATFORM_DATA_MLXREG_H */
+#endif /* __freax_PLATFORM_DATA_MLXREG_H */

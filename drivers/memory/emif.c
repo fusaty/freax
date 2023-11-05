@@ -7,22 +7,22 @@
  * Aneesh V <aneesh@ti.com>
  * Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/platform_data/emif_plat.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pm.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/platform_data/emif_plat.h>
+#include <freax/io.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/pm.h>
 
 #include "emif.h"
 #include "jedec_ddr.h"

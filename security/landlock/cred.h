@@ -9,9 +9,9 @@
 #ifndef _SECURITY_LANDLOCK_CRED_H
 #define _SECURITY_LANDLOCK_CRED_H
 
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
+#include <freax/cred.h>
+#include <freax/init.h>
+#include <freax/rcupdate.h>
 
 #include "ruleset.h"
 #include "setup.h"

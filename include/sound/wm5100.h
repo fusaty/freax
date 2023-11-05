@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm5100.h -- Platform data for WM5100
+ * freax/sound/wm5100.h -- Platform data for WM5100
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM5100_H
-#define __LINUX_SND_WM5100_H
+#ifndef __freax_SND_WM5100_H
+#define __freax_SND_WM5100_H
 
 enum wm5100_in_mode {
 	WM5100_IN_SE = 0,

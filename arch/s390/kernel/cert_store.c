@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/key-type.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/key-type.h>
+#include <freax/key.h>
+#include <freax/keyctl.h>
+#include <freax/kobject.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
 #include <crypto/sha2.h>
 #include <keys/user-type.h>
 #include <asm/debug.h>

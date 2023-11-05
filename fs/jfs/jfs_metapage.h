@@ -6,7 +6,7 @@
 #ifndef	_H_JFS_METAPAGE
 #define _H_JFS_METAPAGE
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 
 struct metapage {
 	/* Common logsyncblk prefix (see jfs_logmgr.h) */

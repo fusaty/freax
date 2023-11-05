@@ -7,9 +7,9 @@
  * Copyright 2000 Grant Grundler (grundler@cup.hp.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
 
 #ifdef CONFIG_SMP
 arch_spinlock_t __atomic_hash[ATOMIC_HASH_SIZE] __lock_aligned = {

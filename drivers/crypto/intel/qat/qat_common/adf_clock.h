@@ -3,7 +3,7 @@
 #ifndef ADF_CLOCK_H
 #define ADF_CLOCK_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct adf_accel_dev;
 

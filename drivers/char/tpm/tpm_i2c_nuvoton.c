@@ -12,14 +12,14 @@
  * Nuvoton contact information: APC.Support@nuvoton.com
  *****************************************************************************/
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/i2c.h>
+#include <freax/of_device.h>
 #include "tpm.h"
 
 /* I2C interface offsets */

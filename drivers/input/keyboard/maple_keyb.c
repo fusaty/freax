@@ -6,13 +6,13 @@
  * Porting to 2.6 Copyright (c) Adrian McMenamin, 2007 - 2009
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/maple.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/timer.h>
+#include <freax/maple.h>
 
 /* Very simple mutex to ensure proper cleanup */
 static DEFINE_MUTEX(maple_keyb_mutex);

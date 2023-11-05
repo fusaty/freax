@@ -46,16 +46,16 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 /* Device specific zlib function definitions */
 #include "zip_device.h"

@@ -7,12 +7,12 @@
  * Copyright (C) 2008 by Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
 #include "u_serial.h"
 
@@ -34,7 +34,7 @@ USB_GADGET_COMPOSITE_OPTIONS();
 * Instead:  allocate your own, using normal USB-IF procedures.
 */
 #define GS_VENDOR_ID			0x0525	/* NetChip */
-#define GS_PRODUCT_ID			0xa4a6	/* Linux-USB Serial Gadget */
+#define GS_PRODUCT_ID			0xa4a6	/* freax-USB Serial Gadget */
 #define GS_CDC_PRODUCT_ID		0xa4a7	/* ... as CDC-ACM */
 #define GS_CDC_OBEX_PRODUCT_ID		0xa4a9	/* ... as CDC-OBEX */
 

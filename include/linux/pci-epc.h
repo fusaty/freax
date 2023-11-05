@@ -6,10 +6,10 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#ifndef __LINUX_PCI_EPC_H
-#define __LINUX_PCI_EPC_H
+#ifndef __freax_PCI_EPC_H
+#define __freax_PCI_EPC_H
 
-#include <linux/pci-epf.h>
+#include <freax/pci-epf.h>
 
 struct pci_epc;
 
@@ -251,4 +251,4 @@ void __iomem *pci_epc_mem_alloc_addr(struct pci_epc *epc,
 				     phys_addr_t *phys_addr, size_t size);
 void pci_epc_mem_free_addr(struct pci_epc *epc, phys_addr_t phys_addr,
 			   void __iomem *virt_addr, size_t size);
-#endif /* __LINUX_PCI_EPC_H */
+#endif /* __freax_PCI_EPC_H */

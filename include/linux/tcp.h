@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -10,16 +10,16 @@
  *
  * Author:	Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  */
-#ifndef _LINUX_TCP_H
-#define _LINUX_TCP_H
+#ifndef _freax_TCP_H
+#define _freax_TCP_H
 
 
-#include <linux/skbuff.h>
-#include <linux/win_minmax.h>
+#include <freax/skbuff.h>
+#include <freax/win_minmax.h>
 #include <net/sock.h>
 #include <net/inet_connection_sock.h>
 #include <net/inet_timewait_sock.h>
-#include <uapi/linux/tcp.h>
+#include <uapi/freax/tcp.h>
 
 static inline struct tcphdr *tcp_hdr(const struct sk_buff *skb)
 {
@@ -416,7 +416,7 @@ struct tcp_sock {
 /* Sock_ops bpf program related variables */
 #ifdef CONFIG_BPF
 	u8	bpf_sock_ops_cb_flags;  /* Control calling BPF programs
-					 * values defined in uapi/linux/tcp.h
+					 * values defined in uapi/freax/tcp.h
 					 */
 	u8	bpf_chg_cc_inprogress:1; /* In the middle of
 					  * bpf_setsockopt(TCP_CONGESTION),
@@ -609,4 +609,4 @@ static inline bool dst_tcp_usec_ts(const struct dst_entry *dst)
 	return dst_feature(dst, RTAX_FEATURE_TCP_USEC_TS);
 }
 
-#endif	/* _LINUX_TCP_H */
+#endif	/* _freax_TCP_H */

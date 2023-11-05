@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2018, 2021, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, 2021, The freax Foundation. All rights reserved.
  *
  * RMNET Data MAP protocol
  */
 
-#include <linux/netdevice.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/netdevice.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 #include "rmnet_config.h"
 #include "rmnet_map.h"
 #include "rmnet_private.h"

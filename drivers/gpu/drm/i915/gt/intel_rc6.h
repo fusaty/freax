@@ -6,7 +6,7 @@
 #ifndef INTEL_RC6_H
 #define INTEL_RC6_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum intel_rc6_res_type;
 struct intel_rc6;

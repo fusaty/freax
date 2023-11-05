@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PROFILE_H
-#define _LINUX_PROFILE_H
+#ifndef _freax_PROFILE_H
+#define _freax_PROFILE_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cpumask.h>
-#include <linux/cache.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/cpumask.h>
+#include <freax/cache.h>
 
 #include <asm/errno.h>
 
@@ -88,4 +88,4 @@ static inline void profile_hit(int type, void *ip)
 
 #endif /* CONFIG_PROFILING */
 
-#endif /* _LINUX_PROFILE_H */
+#endif /* _freax_PROFILE_H */

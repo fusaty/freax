@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __TOOLS_LINUX_KERNEL_H
-#define __TOOLS_LINUX_KERNEL_H
+#ifndef __TOOLS_freax_KERNEL_H
+#define __TOOLS_freax_KERNEL_H
 
 #include <stdarg.h>
 #include <stddef.h>
 #include <assert.h>
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/math.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/math.h>
 #include <endian.h>
 #include <byteswap.h>
 

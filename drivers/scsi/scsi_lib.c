@@ -6,23 +6,23 @@
  *  SCSI queueing library.
  *      Initial versions: Eric Youngdale (eric@andante.org).
  *                        Based upon conversations with large numbers
- *                        of people at Linux Expo.
+ *                        of people at freax Expo.
  */
 
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/scatterlist.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-integrity.h>
-#include <linux/ratelimit.h>
+#include <freax/bio.h>
+#include <freax/bitops.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/hardirq.h>
+#include <freax/scatterlist.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-integrity.h>
+#include <freax/ratelimit.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>
@@ -196,7 +196,7 @@ void scsi_queue_insert(struct scsi_cmnd *cmd, int reason)
  * @args:	Optional args. See struct definition for field descriptions
  *
  * Returns the scsi_cmnd result field if a command was executed, or a negative
- * Linux error code if we didn't get that far.
+ * freax error code if we didn't get that far.
  */
 int scsi_execute_cmd(struct scsi_device *sdev, const unsigned char *cmd,
 		     blk_opf_t opf, void *buffer, unsigned int bufflen,

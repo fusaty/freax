@@ -19,7 +19,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define NL802154_GENL_NAME "nl802154"
 

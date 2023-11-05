@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Function calling ABI conversion from Linux to EFI for x86_64
+ * Function calling ABI conversion from freax to EFI for x86_64
  *
  * Copyright (C) 2007 Intel Corp
  *	Bibo Mao <bibo.mao@intel.com>
  *	Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/nospec-branch.h>
 
 SYM_FUNC_START(__efi_call)

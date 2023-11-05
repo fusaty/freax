@@ -7,13 +7,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/power_supply.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/device.h>
+#include <freax/surface_aggregator/device.h>
 
 
 /* -- SAM interface. -------------------------------------------------------- */

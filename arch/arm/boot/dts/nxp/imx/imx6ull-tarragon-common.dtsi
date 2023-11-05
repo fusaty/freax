@@ -57,7 +57,7 @@
 			function = LED_FUNCTION_BOOT;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio3 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 		};
 
 		led-2 {
@@ -70,7 +70,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&gpio3 19 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

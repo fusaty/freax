@@ -26,7 +26,7 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <drm/drm_managed.h>
 #include <drm/drm_print.h>

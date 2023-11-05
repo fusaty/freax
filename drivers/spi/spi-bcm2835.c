@@ -11,27 +11,27 @@
  * spi-atmel.c, Copyright (C) 2006 Atmel Corporation
  */
 
-#include <linux/cleanup.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h> /* FIXME: using GPIO lookup tables */
-#include <linux/of_irq.h>
-#include <linux/overflow.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/cleanup.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h> /* FIXME: using GPIO lookup tables */
+#include <freax/of_irq.h>
+#include <freax/overflow.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 
 /* SPI register offsets */
 #define BCM2835_SPI_CS			0x00
@@ -1297,7 +1297,7 @@ static int bcm2835_spi_setup(struct spi_device *spi)
 	 * descriptor and then releases the lookup table.
 	 *
 	 * More on the problem that it addresses:
-	 *   https://www.spinics.net/lists/linux-gpio/msg36218.html
+	 *   https://www.spinics.net/lists/freax-gpio/msg36218.html
 	 */
 	lookup = kzalloc(struct_size(lookup, table, 2), GFP_KERNEL);
 	if (!lookup) {

@@ -13,18 +13,18 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kallsyms.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/kallsyms.h>
 
 #include <asm/exceptions.h>
 #include <asm/entry.h>		/* For KM CPU var */
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
+#include <freax/uaccess.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
 #include <asm/current.h>
 #include <asm/cacheflush.h>
 

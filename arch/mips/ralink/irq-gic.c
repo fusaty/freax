@@ -5,10 +5,10 @@
  * Copyright (C) 2015 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 
-#include <linux/of.h>
-#include <linux/irqchip.h>
+#include <freax/of.h>
+#include <freax/irqchip.h>
 #include <asm/mips-cps.h>
 
 int get_c0_perfcount_int(void)

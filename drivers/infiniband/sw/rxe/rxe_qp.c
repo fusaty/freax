@@ -1,13 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2016 Mellanox Technologies Ltd. All rights reserved.
  * Copyright (c) 2015 System Fabric Works, Inc. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
 #include <rdma/uverbs_ioctl.h>
 
 #include "rxe.h"

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "cmd.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/etherdevice.h>
 
 #include "wl1251.h"
 #include "reg.h"

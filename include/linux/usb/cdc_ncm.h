@@ -37,8 +37,8 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __LINUX_USB_CDC_NCM_H
-#define __LINUX_USB_CDC_NCM_H
+#ifndef __freax_USB_CDC_NCM_H
+#define __freax_USB_CDC_NCM_H
 
 #define CDC_NCM_COMM_ALTSETTING_NCM		0
 #define CDC_NCM_COMM_ALTSETTING_MBIM		1
@@ -165,4 +165,4 @@ struct sk_buff *
 cdc_ncm_tx_fixup(struct usbnet *dev, struct sk_buff *skb, gfp_t flags);
 int cdc_ncm_rx_fixup(struct usbnet *dev, struct sk_buff *skb_in);
 
-#endif /* __LINUX_USB_CDC_NCM_H */
+#endif /* __freax_USB_CDC_NCM_H */

@@ -25,7 +25,7 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/radeon_drm.h>

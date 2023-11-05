@@ -92,16 +92,16 @@
  * are transferred from the svc_rdma_recv_ctxt to the second svc_rqst.
  */
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <asm/unaligned.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/sunrpc/rpc_rdma.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/debug.h>
+#include <freax/sunrpc/rpc_rdma.h>
+#include <freax/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

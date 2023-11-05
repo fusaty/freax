@@ -5,13 +5,13 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 /* USB Standard */
 /* USB Control request vendor type */

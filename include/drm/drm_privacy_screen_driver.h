@@ -9,9 +9,9 @@
 #ifndef __DRM_PRIVACY_SCREEN_DRIVER_H__
 #define __DRM_PRIVACY_SCREEN_DRIVER_H__
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
 #include <drm/drm_connector.h>
 
 struct drm_privacy_screen;

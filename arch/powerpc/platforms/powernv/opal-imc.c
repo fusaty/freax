@@ -7,12 +7,12 @@
  *		(C) 2017 Anju T Sudhakar, IBM Corporation.
  *		(C) 2017 Hemant K Shaw, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/crash_dump.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/crash_dump.h>
+#include <freax/debugfs.h>
 #include <asm/opal.h>
 #include <asm/io.h>
 #include <asm/imc-pmu.h>

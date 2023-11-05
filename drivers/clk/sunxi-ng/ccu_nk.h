@@ -6,7 +6,7 @@
 #ifndef _CCU_NK_H_
 #define _CCU_NK_H_
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

@@ -8,10 +8,10 @@
 #ifndef __HOST1X_CDMA_H
 #define __HOST1X_CDMA_H
 
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
 
 struct host1x_syncpt;
 struct host1x_userctx_timeout;

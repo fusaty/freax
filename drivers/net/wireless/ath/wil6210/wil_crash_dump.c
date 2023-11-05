@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2015,2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The freax Foundation. All rights reserved.
  */
 
 #include "wil6210.h"
-#include <linux/devcoredump.h>
+#include <freax/devcoredump.h>
 
 static int wil_fw_get_crash_dump_bounds(struct wil6210_priv *wil,
 					u32 *out_dump_size, u32 *out_host_min)

@@ -3,15 +3,15 @@
  * Copyright (C) 2012 ARM Ltd.
  * Copyright (C) 2020 Google LLC
  */
-#include <linux/cma.h>
-#include <linux/debugfs.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-direct.h>
-#include <linux/init.h>
-#include <linux/genalloc.h>
-#include <linux/set_memory.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/cma.h>
+#include <freax/debugfs.h>
+#include <freax/dma-map-ops.h>
+#include <freax/dma-direct.h>
+#include <freax/init.h>
+#include <freax/genalloc.h>
+#include <freax/set_memory.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 static struct gen_pool *atomic_pool_dma __ro_after_init;
 static unsigned long pool_size_dma;

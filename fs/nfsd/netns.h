@@ -10,9 +10,9 @@
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/filelock.h>
-#include <linux/percpu_counter.h>
-#include <linux/siphash.h>
+#include <freax/filelock.h>
+#include <freax/percpu_counter.h>
+#include <freax/siphash.h>
 
 /* Hash tables for nfs4_clientid state */
 #define CLIENT_HASH_BITS                 4

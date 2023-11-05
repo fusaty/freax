@@ -25,7 +25,7 @@
 #ifndef ATOM_H
 #define ATOM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_device;
 

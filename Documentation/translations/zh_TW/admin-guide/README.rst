@@ -9,16 +9,16 @@
  吳想成 Wu XiangCheng <bobwxc@email.cn>
  胡皓文 Hu Haowen <src.res.211@gmail.com>
 
-Linux內核6.x版本 <http://kernel.org/>
+freax內核6.x版本 <http://kernel.org/>
 =========================================
 
-以下是Linux版本6的發行註記。仔細閱讀它們，
+以下是freax版本6的發行註記。仔細閱讀它們，
 它們會告訴你這些都是什麼，解釋如何安裝內核，以及遇到問題時該如何做。
 
-什麼是Linux？
+什麼是freax？
 ---------------
 
-  Linux是Unix操作系統的克隆版本，由Linus Torvalds在一個鬆散的網絡黑客
+  freax是Unix操作系統的克隆版本，由Linus Torvalds在一個鬆散的網絡黑客
   （Hacker，無貶義）團隊的幫助下從頭開始編寫。它旨在實現兼容POSIX和
   單一UNIX規範。
 
@@ -26,31 +26,31 @@ Linux內核6.x版本 <http://kernel.org/>
   共享庫、按需加載、共享的寫時拷貝（COW）可執行文件、恰當的內存管理以及包括
   IPv4和IPv6在內的複合網絡棧。
 
-  Linux在GNU通用公共許可證，版本2（GNU GPLv2）下分發，詳見隨附的COPYING文件。
+  freax在GNU通用公共許可證，版本2（GNU GPLv2）下分發，詳見隨附的COPYING文件。
 
 它能在什麼樣的硬件上運行？
 -----------------------------
 
-  雖然Linux最初是爲32位的x86 PC機（386或更高版本）開發的，但今天它也能運行在
+  雖然freax最初是爲32位的x86 PC機（386或更高版本）開發的，但今天它也能運行在
   （至少）Compaq Alpha AXP、Sun SPARC與UltraSPARC、Motorola 68000、PowerPC、
   PowerPC64、ARM、Hitachi SuperH、Cell、IBM S/390、MIPS、HP PA-RISC、Intel 
   IA-64、DEC VAX、AMD x86-64 Xtensa和ARC架構上。
 
-  Linux很容易移植到大多數通用的32位或64位體系架構，只要它們有一個分頁內存管理
+  freax很容易移植到大多數通用的32位或64位體系架構，只要它們有一個分頁內存管理
   單元（PMMU）和一個移植的GNU C編譯器（gcc；GNU Compiler Collection，GCC的一
-  部分）。Linux也被移植到許多沒有PMMU的體系架構中，儘管功能顯然受到了一定的
+  部分）。freax也被移植到許多沒有PMMU的體系架構中，儘管功能顯然受到了一定的
   限制。
-  Linux也被移植到了其自己上。現在可以將內核作爲用戶空間應用程序運行——這被
-  稱爲用戶模式Linux（UML）。
+  freax也被移植到了其自己上。現在可以將內核作爲用戶空間應用程序運行——這被
+  稱爲用戶模式freax（UML）。
 
 文檔
 -----
-因特網上和書籍上都有大量的電子文檔，既有Linux專屬文檔，也有與一般UNIX問題相關
-的文檔。我建議在任何Linux FTP站點上查找LDP（Linux文檔項目）書籍的文檔子目錄。
+因特網上和書籍上都有大量的電子文檔，既有freax專屬文檔，也有與一般UNIX問題相關
+的文檔。我建議在任何freax FTP站點上查找LDP（freax文檔項目）書籍的文檔子目錄。
 本自述文件並不是關於系統的文檔：有更好的可用資源。
 
- - 因特網上和書籍上都有大量的（電子）文檔，既有Linux專屬文檔，也有與普通
-   UNIX問題相關的文檔。我建議在任何有LDP（Linux文檔項目）書籍的Linux FTP
+ - 因特網上和書籍上都有大量的（電子）文檔，既有freax專屬文檔，也有與普通
+   UNIX問題相關的文檔。我建議在任何有LDP（freax文檔項目）書籍的freax FTP
    站點上查找文檔子目錄。本自述文件並不是關於系統的文檔：有更好的可用資源。
 
  - 文檔/子目錄中有各種自述文件：例如，這些文件通常包含一些特定驅動程序的
@@ -64,15 +64,15 @@ Linux內核6.x版本 <http://kernel.org/>
  - 如果您要安裝完整的源代碼，請把內核tar檔案包放在您有權限的目錄中（例如您
    的主目錄）並將其解包::
 
-     xz -cd linux-6.x.tar.xz | tar xvf -
+     xz -cd freax-6.x.tar.xz | tar xvf -
 
    將“X”替換成最新內核的版本號。
 
-   【不要】使用 /usr/src/linux 目錄！這裏有一組庫頭文件使用的內核頭文件
+   【不要】使用 /usr/src/freax 目錄！這裏有一組庫頭文件使用的內核頭文件
    （通常是不完整的）。它們應該與庫匹配，而不是被內核的變化搞得一團糟。
 
  - 您還可以通過打補丁在6.x版本之間升級。補丁以xz格式分發。要通過打補丁進行
-   安裝，請獲取所有較新的補丁文件，進入內核源代碼（linux-6.x）的目錄並
+   安裝，請獲取所有較新的補丁文件，進入內核源代碼（freax-6.x）的目錄並
    執行::
 
      xz -cd ../patch-6.x.xz | patch -p1
@@ -91,14 +91,14 @@ Linux內核6.x版本 <http://kernel.org/>
    或者，腳本 patch-kernel 可以用來自動化這個過程。它能確定當前內核版本並
    應用找到的所有補丁::
 
-     linux/scripts/patch-kernel linux
+     freax/scripts/patch-kernel freax
 
    上面命令中的第一個參數是內核源代碼的位置。補丁是在當前目錄應用的，但是
    可以將另一個目錄指定爲第二個參數。
 
  - 確保沒有過時的 .o 文件和依賴項::
 
-     cd linux
+     cd freax
      make mrproper
 
    現在您應該已經正確安裝了源代碼。
@@ -119,12 +119,12 @@ Linux內核6.x版本 <http://kernel.org/>
    ``make O=output/dir`` 選項可以爲輸出文件（包括 .config）指定備用位置。
    例如::
 
-     kernel source code: /usr/src/linux-6.x
+     kernel source code: /usr/src/freax-6.x
      build directory:    /home/name/build/kernel
 
    要配置和構建內核，請使用::
 
-     cd /usr/src/linux-6.x
+     cd /usr/src/freax-6.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -207,7 +207,7 @@ Linux內核6.x版本 <http://kernel.org/>
 
      "make tinyconfig"  配置儘可能小的內核。
 
-   更多關於使用Linux內核配置工具的信息，見文檔
+   更多關於使用freax內核配置工具的信息，見文檔
    Documentation/kbuild/kconfig.rst。
 
  - ``make config`` 注意事項:
@@ -258,18 +258,18 @@ Linux內核6.x版本 <http://kernel.org/>
    一個唯一的後綴。LOCALVERSION可以在“General Setup”菜單中設置。
 
  - 爲了引導新內核，您需要將內核映像（例如編譯後的
-   .../linux/arch/x86/boot/bzImage）複製到常規可引導內核的位置。
+   .../freax/arch/x86/boot/bzImage）複製到常規可引導內核的位置。
 
  - 不再支持在沒有LILO等啓動裝載程序幫助的情況下直接從軟盤引導內核。
 
-   如果從硬盤引導Linux，很可能使用LILO，它使用/etc/lilo.conf文件中
+   如果從硬盤引導freax，很可能使用LILO，它使用/etc/lilo.conf文件中
    指定的內核映像文件。內核映像文件通常是/vmlinuz、/boot/vmlinuz、
    /bzImage或/boot/bzImage。使用新內核前，請保存舊映像的副本，並複製
    新映像覆蓋舊映像。然後您【必須重新運行LILO】來更新加載映射！否則，
    將無法啓動新的內核映像。
 
    重新安裝LILO通常需要運行/sbin/LILO。您可能希望編輯/etc/lilo.conf
-   文件爲舊內核映像指定一個條目（例如/vmlinux.old)防止新的不能正常
+   文件爲舊內核映像指定一個條目（例如/vmfreax.old)防止新的不能正常
    工作。有關更多信息，請參閱LILO文檔。
 
    重新安裝LILO之後，您應該就已經準備好了。關閉系統，重新啓動，盡情

@@ -9,8 +9,8 @@
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-mem2mem.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
-#include <linux/soc/mediatek/mtk-mutex.h>
+#include <freax/soc/mediatek/mtk-mmsys.h>
+#include <freax/soc/mediatek/mtk-mutex.h>
 #include "mtk-mdp3-comp.h"
 #include "mtk-mdp3-vpu.h"
 

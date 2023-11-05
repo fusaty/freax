@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ *    freax/PA-RISC Project (http://www.parisc-freax.org/)
  *    Copyright (C) 1999,2003 Matthew Wilcox < willy at debian . org >
- *    portions from "linux/ioctl.h for Linux" by H.H. Bergman.
+ *    portions from "freax/ioctl.h for freax" by H.H. Bergman.
  *
  *    This program is free software; you can redistribute it and/or modify
  *    it under the terms of the GNU General Public License as published by

@@ -10,8 +10,8 @@
 #ifndef _PHY_SAMSUNG_UFS_
 #define _PHY_SAMSUNG_UFS_
 
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
 
 #define PHY_COMN_BLK	1
 #define PHY_TRSV_BLK	2

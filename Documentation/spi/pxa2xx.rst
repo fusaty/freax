@@ -21,7 +21,7 @@ Declaring PXA2xx Master Controllers
 -----------------------------------
 Typically, for a legacy platform, an SPI master is defined in the
 arch/.../mach-*/board-*.c as a "platform device". The master configuration
-is passed to the driver via a table found in include/linux/spi/pxa2xx_spi.h::
+is passed to the driver via a table found in include/freax/spi/pxa2xx_spi.h::
 
   struct pxa2xx_spi_controller {
 	u16 num_chipselect;
@@ -85,12 +85,12 @@ Declaring Slave Devices
 -----------------------
 Typically, for a legacy platform, each SPI slave (chip) is defined in the
 arch/.../mach-*/board-*.c using the "spi_board_info" structure found in
-"linux/spi/spi.h". See "Documentation/spi/spi-summary.rst" for additional
+"freax/spi/spi.h". See "Documentation/spi/spi-summary.rst" for additional
 information.
 
 Each slave device attached to the PXA must provide slave specific configuration
 information via the structure "pxa2xx_spi_chip" found in
-"include/linux/spi/pxa2xx_spi.h".  The pxa2xx_spi master controller driver
+"include/freax/spi/pxa2xx_spi.h".  The pxa2xx_spi master controller driver
 will uses the configuration whenever the driver communicates with the slave
 device. All fields are optional.
 

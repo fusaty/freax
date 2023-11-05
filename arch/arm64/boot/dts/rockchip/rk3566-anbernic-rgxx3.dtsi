@@ -3,7 +3,7 @@
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/pinctrl/rockchip.h>
 #include <dt-bindings/soc/rockchip,vop2.h>
@@ -31,7 +31,7 @@
 			abs-flat = <32>;
 			abs-fuzz = <32>;
 			abs-range = <1023 15>;
-			linux,code = <ABS_X>;
+			freax,code = <ABS_X>;
 		};
 
 		axis@1 {
@@ -39,7 +39,7 @@
 			abs-flat = <32>;
 			abs-fuzz = <32>;
 			abs-range = <15 1023>;
-			linux,code = <ABS_RX>;
+			freax,code = <ABS_RX>;
 		};
 
 		axis@2 {
@@ -47,7 +47,7 @@
 			abs-flat = <32>;
 			abs-fuzz = <32>;
 			abs-range = <15 1023>;
-			linux,code = <ABS_Y>;
+			freax,code = <ABS_Y>;
 		};
 
 		axis@3 {
@@ -55,7 +55,7 @@
 			abs-flat = <32>;
 			abs-fuzz = <32>;
 			abs-range = <1023 15>;
-			linux,code = <ABS_RY>;
+			freax,code = <ABS_RY>;
 		};
 	};
 
@@ -72,7 +72,7 @@
 		 */
 		button-mode {
 			label = "MODE";
-			linux,code = <BTN_MODE>;
+			freax,code = <BTN_MODE>;
 			press-threshold-microvolt = <1750>;
 		};
 	};
@@ -95,61 +95,61 @@
 		button-b {
 			gpios = <&gpio3 RK_PC3 GPIO_ACTIVE_LOW>;
 			label = "SOUTH";
-			linux,code = <BTN_SOUTH>;
+			freax,code = <BTN_SOUTH>;
 		};
 
 		button-down {
 			gpios = <&gpio3 RK_PA4 GPIO_ACTIVE_LOW>;
 			label = "DPAD-DOWN";
-			linux,code = <BTN_DPAD_DOWN>;
+			freax,code = <BTN_DPAD_DOWN>;
 		};
 
 		button-l1 {
 			gpios = <&gpio3 RK_PB1 GPIO_ACTIVE_LOW>;
 			label = "TL";
-			linux,code = <BTN_TL>;
+			freax,code = <BTN_TL>;
 		};
 
 		button-l2 {
 			gpios = <&gpio3 RK_PB2 GPIO_ACTIVE_LOW>;
 			label = "TL2";
-			linux,code = <BTN_TL2>;
+			freax,code = <BTN_TL2>;
 		};
 
 		button-select {
 			gpios = <&gpio3 RK_PB6 GPIO_ACTIVE_LOW>;
 			label = "SELECT";
-			linux,code = <BTN_SELECT>;
+			freax,code = <BTN_SELECT>;
 		};
 
 		button-start {
 			gpios = <&gpio3 RK_PB5 GPIO_ACTIVE_LOW>;
 			label = "START";
-			linux,code = <BTN_START>;
+			freax,code = <BTN_START>;
 		};
 
 		button-thumbl {
 			gpios = <&gpio3 RK_PA1 GPIO_ACTIVE_LOW>;
 			label = "THUMBL";
-			linux,code = <BTN_THUMBL>;
+			freax,code = <BTN_THUMBL>;
 		};
 
 		button-thumbr {
 			gpios = <&gpio3 RK_PA2 GPIO_ACTIVE_LOW>;
 			label = "THUMBR";
-			linux,code = <BTN_THUMBR>;
+			freax,code = <BTN_THUMBR>;
 		};
 
 		button-up {
 			gpios = <&gpio3 RK_PA3 GPIO_ACTIVE_LOW>;
 			label = "DPAD-UP";
-			linux,code = <BTN_DPAD_UP>;
+			freax,code = <BTN_DPAD_UP>;
 		};
 
 		button-x {
 			gpios = <&gpio3 RK_PC0 GPIO_ACTIVE_LOW>;
 			label = "NORTH";
-			linux,code = <BTN_NORTH>;
+			freax,code = <BTN_NORTH>;
 		};
 	};
 
@@ -162,13 +162,13 @@
 		button-vol-down {
 			gpios = <&gpio3 RK_PB0 GPIO_ACTIVE_LOW>;
 			label = "VOLUMEDOWN";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 
 		button-vol-up {
 			gpios = <&gpio3 RK_PA7 GPIO_ACTIVE_LOW>;
 			label = "VOLUMEUP";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 	};
 

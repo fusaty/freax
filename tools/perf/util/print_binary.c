@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "print_binary.h"
-#include <linux/log2.h>
-#include <linux/ctype.h>
+#include <freax/log2.h>
+#include <freax/ctype.h>
 
 int binary__fprintf(unsigned char *data, size_t len,
 		    size_t bytes_per_line, binary__fprintf_t printer,

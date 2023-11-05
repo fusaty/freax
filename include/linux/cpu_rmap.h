@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef __LINUX_CPU_RMAP_H
-#define __LINUX_CPU_RMAP_H
+#ifndef __freax_CPU_RMAP_H
+#define __freax_CPU_RMAP_H
 
 /*
  * cpu_rmap.c: CPU affinity reverse-map support
  * Copyright 2011 Solarflare Communications Inc.
  */
 
-#include <linux/cpumask.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/kref.h>
+#include <freax/cpumask.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/kref.h>
 
 /**
  * struct cpu_rmap - CPU affinity reverse-map
@@ -63,4 +63,4 @@ extern void free_irq_cpu_rmap(struct cpu_rmap *rmap);
 int irq_cpu_rmap_remove(struct cpu_rmap *rmap, int irq);
 extern int irq_cpu_rmap_add(struct cpu_rmap *rmap, int irq);
 
-#endif /* __LINUX_CPU_RMAP_H */
+#endif /* __freax_CPU_RMAP_H */

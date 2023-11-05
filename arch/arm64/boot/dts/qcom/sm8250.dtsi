@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-3-Clause
 /*
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
@@ -2133,7 +2133,7 @@
 			      <0 0x01c03000 0 0x1000>;
 			reg-names = "parf", "dbi", "elbi", "atu", "config", "mhi";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			freax,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 
@@ -2237,7 +2237,7 @@
 			      <0 0x01c0b000 0 0x1000>;
 			reg-names = "parf", "dbi", "elbi", "atu", "config", "mhi";
 			device_type = "pci";
-			linux,pci-domain = <1>;
+			freax,pci-domain = <1>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <2>;
 
@@ -2338,7 +2338,7 @@
 			      <0 0x01c13000 0 0x1000>;
 			reg-names = "parf", "dbi", "elbi", "atu", "config", "mhi";
 			device_type = "pci";
-			linux,pci-domain = <2>;
+			freax,pci-domain = <2>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <2>;
 

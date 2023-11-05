@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/net.h>
-#include <linux/uio.h>
+#include <freax/net.h>
+#include <freax/uio.h>
 
 #include "alloc_cache.h"
 

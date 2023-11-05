@@ -7,8 +7,8 @@
 #ifndef VIRT_DMA_H
 #define VIRT_DMA_H
 
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/interrupt.h>
 
 #include "dmaengine.h"
 

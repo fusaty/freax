@@ -8,16 +8,16 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/hyperv.h>
-#include <linux/uio.h>
-#include <linux/interrupt.h>
-#include <linux/set_memory.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/hyperv.h>
+#include <freax/uio.h>
+#include <freax/interrupt.h>
+#include <freax/set_memory.h>
 #include <asm/page.h>
 #include <asm/mshyperv.h>
 

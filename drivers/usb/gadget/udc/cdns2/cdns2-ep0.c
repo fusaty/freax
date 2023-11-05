@@ -7,7 +7,7 @@
  * Authors: Pawel Laszczak <pawell@cadence.com>
  */
 
-#include <linux/usb/composite.h>
+#include <freax/usb/composite.h>
 #include <asm/unaligned.h>
 
 #include "cdns2-gadget.h"

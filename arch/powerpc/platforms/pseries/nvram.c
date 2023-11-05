@@ -6,14 +6,14 @@
  */
 
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
+#include <freax/uaccess.h>
+#include <freax/of.h>
 #include <asm/nvram.h>
 #include <asm/rtas.h>
 #include <asm/machdep.h>

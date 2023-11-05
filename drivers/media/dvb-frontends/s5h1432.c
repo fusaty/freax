@@ -5,12 +5,12 @@
  *  Copyright (C) 2009 Bill Liu <Bill.Liu@Conexant.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 #include <media/dvb_frontend.h>
 #include "s5h1432.h"
 

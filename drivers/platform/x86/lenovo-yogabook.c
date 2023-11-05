@@ -11,17 +11,17 @@
  * Copyright 2023 Hans de Goede <hansg@kernel.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/wmi.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/wmi.h>
+#include <freax/workqueue.h>
 
 #define YB_MBTN_EVENT_GUID	"243FEC1D-1963-41C1-8100-06A9D82A94B4"
 

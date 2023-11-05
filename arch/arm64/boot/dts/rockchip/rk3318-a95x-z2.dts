@@ -27,7 +27,7 @@
 
 		button-recovery {
 			label = "recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <17000>;
 		};
 	};
@@ -72,7 +72,7 @@
 	};
 
 	spdif_out: spdif-out {
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SIGNAL_TYPES_H
-#define _LINUX_SIGNAL_TYPES_H
+#ifndef _freax_SIGNAL_TYPES_H
+#define _freax_SIGNAL_TYPES_H
 
 /*
  * Basic signal handling related data type definitions:
  */
 
-#include <linux/list.h>
-#include <uapi/linux/signal.h>
+#include <freax/list.h>
+#include <uapi/freax/signal.h>
 
 typedef struct kernel_siginfo {
 	__SIGINFO;
@@ -85,4 +85,4 @@ struct ksignal {
 	(SA_NOCLDSTOP | SA_NOCLDWAIT | SA_SIGINFO | SA_ONSTACK | SA_RESTART |  \
 	 SA_NODEFER | SA_RESETHAND | SA_EXPOSE_TAGBITS | __ARCH_UAPI_SA_FLAGS)
 
-#endif /* _LINUX_SIGNAL_TYPES_H */
+#endif /* _freax_SIGNAL_TYPES_H */

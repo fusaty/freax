@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) */
+/* SPDX-License-Identifier: (GPL-2.0 WITH freax-syscall-note) */
 /*
  * Copyright (c) 2022, Microsoft Corporation. All rights reserved.
  */
@@ -6,7 +6,7 @@
 #ifndef MANA_ABI_USER_H
 #define MANA_ABI_USER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <rdma/ib_user_ioctl_verbs.h>
 
 /*

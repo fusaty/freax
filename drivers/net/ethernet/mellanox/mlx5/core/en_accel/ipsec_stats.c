@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 #include <net/sock.h>
 
 #include "en.h"

@@ -16,19 +16,19 @@
  *   Copyright (C) 2007 David Sterba
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ppp_defs.h>
-#include <linux/if.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/ppp_defs.h>
+#include <freax/if.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/sched.h>
+#include <freax/serial.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/uaccess.h>
 
 #include "tty.h"
 #include "network.h"
@@ -85,9 +85,9 @@ static struct ipw_tty *get_tty(int index)
 	return ttys[index];
 }
 
-static int ipw_open(struct tty_struct *linux_tty, struct file *filp)
+static int ipw_open(struct tty_struct *freax_tty, struct file *filp)
 {
-	struct ipw_tty *tty = get_tty(linux_tty->index);
+	struct ipw_tty *tty = get_tty(freax_tty->index);
 
 	if (!tty)
 		return -ENODEV;
@@ -98,8 +98,8 @@ static int ipw_open(struct tty_struct *linux_tty, struct file *filp)
 
 	tty->port.count++;
 
-	tty->port.tty = linux_tty;
-	linux_tty->driver_data = tty;
+	tty->port.tty = freax_tty;
+	freax_tty->driver_data = tty;
 
 	if (tty->tty_type == TTYTYPE_MODEM)
 		ipwireless_ppp_open(tty->network);
@@ -114,11 +114,11 @@ static void do_ipw_close(struct ipw_tty *tty)
 	tty->port.count--;
 
 	if (tty->port.count == 0) {
-		struct tty_struct *linux_tty = tty->port.tty;
+		struct tty_struct *freax_tty = tty->port.tty;
 
-		if (linux_tty != NULL) {
+		if (freax_tty != NULL) {
 			tty->port.tty = NULL;
-			linux_tty->driver_data = NULL;
+			freax_tty->driver_data = NULL;
 
 			if (tty->tty_type == TTYTYPE_MODEM)
 				ipwireless_ppp_close(tty->network);
@@ -126,9 +126,9 @@ static void do_ipw_close(struct ipw_tty *tty)
 	}
 }
 
-static void ipw_hangup(struct tty_struct *linux_tty)
+static void ipw_hangup(struct tty_struct *freax_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 
 	if (!tty)
 		return;
@@ -144,9 +144,9 @@ static void ipw_hangup(struct tty_struct *linux_tty)
 	mutex_unlock(&tty->ipw_tty_mutex);
 }
 
-static void ipw_close(struct tty_struct *linux_tty, struct file *filp)
+static void ipw_close(struct tty_struct *freax_tty, struct file *filp)
 {
-	ipw_hangup(linux_tty);
+	ipw_hangup(freax_tty);
 }
 
 /* Take data received from hardware, and send it out the tty */
@@ -186,10 +186,10 @@ static void ipw_write_packet_sent_callback(void *callback_data,
 	tty->tx_bytes_queued -= packet_length;
 }
 
-static ssize_t ipw_write(struct tty_struct *linux_tty, const u8 *buf,
+static ssize_t ipw_write(struct tty_struct *freax_tty, const u8 *buf,
 			 size_t count)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 	int room, ret;
 
 	if (!tty)
@@ -227,9 +227,9 @@ static ssize_t ipw_write(struct tty_struct *linux_tty, const u8 *buf,
 	return count;
 }
 
-static unsigned int ipw_write_room(struct tty_struct *linux_tty)
+static unsigned int ipw_write_room(struct tty_struct *freax_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 	int room;
 
 	/* FIXME: Exactly how is the tty object locked here .. */
@@ -246,10 +246,10 @@ static unsigned int ipw_write_room(struct tty_struct *linux_tty)
 	return room;
 }
 
-static int ipwireless_get_serial_info(struct tty_struct *linux_tty,
+static int ipwireless_get_serial_info(struct tty_struct *freax_tty,
 				      struct serial_struct *ss)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 
 	if (!tty)
 		return -ENODEV;
@@ -263,15 +263,15 @@ static int ipwireless_get_serial_info(struct tty_struct *linux_tty,
 	return 0;
 }
 
-static int ipwireless_set_serial_info(struct tty_struct *linux_tty,
+static int ipwireless_set_serial_info(struct tty_struct *freax_tty,
 				      struct serial_struct *ss)
 {
 	return 0;	/* Keeps the PCMCIA scripts happy. */
 }
 
-static unsigned int ipw_chars_in_buffer(struct tty_struct *linux_tty)
+static unsigned int ipw_chars_in_buffer(struct tty_struct *freax_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 
 	if (!tty)
 		return 0;
@@ -349,9 +349,9 @@ static int set_control_lines(struct ipw_tty *tty, unsigned int set,
 	return 0;
 }
 
-static int ipw_tiocmget(struct tty_struct *linux_tty)
+static int ipw_tiocmget(struct tty_struct *freax_tty)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 	/* FIXME: Exactly how is the tty object locked here .. */
 
 	if (!tty)
@@ -364,10 +364,10 @@ static int ipw_tiocmget(struct tty_struct *linux_tty)
 }
 
 static int
-ipw_tiocmset(struct tty_struct *linux_tty,
+ipw_tiocmset(struct tty_struct *freax_tty,
 	     unsigned int set, unsigned int clear)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 	/* FIXME: Exactly how is the tty object locked here .. */
 
 	if (!tty)
@@ -379,10 +379,10 @@ ipw_tiocmset(struct tty_struct *linux_tty,
 	return set_control_lines(tty, set, clear);
 }
 
-static int ipw_ioctl(struct tty_struct *linux_tty,
+static int ipw_ioctl(struct tty_struct *freax_tty,
 		     unsigned int cmd, unsigned long arg)
 {
-	struct ipw_tty *tty = linux_tty->driver_data;
+	struct ipw_tty *tty = freax_tty->driver_data;
 
 	if (!tty)
 		return -ENODEV;
@@ -426,7 +426,7 @@ static int ipw_ioctl(struct tty_struct *linux_tty,
 			}
 			return 0;
 		case TCFLSH:
-			return tty_perform_flush(linux_tty, arg);
+			return tty_perform_flush(freax_tty, arg);
 		}
 	}
 	return -ENOIOCTLCMD;

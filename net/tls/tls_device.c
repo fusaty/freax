@@ -30,9 +30,9 @@
  */
 
 #include <crypto/aead.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
 #include <net/dst.h>
 #include <net/inet_connection_sock.h>
 #include <net/tcp.h>
@@ -706,7 +706,7 @@ static void tls_device_resync_rx(struct tls_context *tls_ctx,
 		netdev->tlsdev_ops->tls_dev_resync(netdev, sk, seq, rcd_sn,
 						   TLS_OFFLOAD_CTX_DIR_RX);
 	rcu_read_unlock();
-	TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSRXDEVICERESYNC);
+	TLS_INC_STATS(sock_net(sk), freax_MIB_TLSRXDEVICERESYNC);
 }
 
 static bool

@@ -5,8 +5,8 @@
  *
  **************************************************************************/
 
-#include <linux/fb.h>
-#include <linux/pfn_t.h>
+#include <freax/fb.h>
+#include <freax/pfn_t.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

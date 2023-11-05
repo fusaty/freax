@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI PCMCIA MIO E series cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,10 +26,10 @@
  *	341080a.pdf  DAQCard E Series Register Level Programmer Manual
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedi_pcmcia.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/comedi/comedi_pcmcia.h>
+#include <freax/comedi/comedi_8255.h>
 
 #include "ni_stc.h"
 

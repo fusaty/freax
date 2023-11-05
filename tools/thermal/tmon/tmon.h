@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2012 Intel Corporation. All rights reserved.
  *
- * Author Name Jacob Pan <jacob.jun.pan@linux.intel.com>
+ * Author Name Jacob Pan <jacob.jun.pan@freax.intel.com>
  */
 
 #ifndef TMON_H

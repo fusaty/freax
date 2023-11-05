@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
 
 #include "dpu_core_irq.h"
 #include "dpu_kms.h"

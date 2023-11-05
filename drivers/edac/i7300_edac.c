@@ -16,13 +16,13 @@
  * This driver uses "csrows" EDAC attribute to represent DIMM slot#
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/edac.h>
+#include <freax/mmzone.h>
 
 #include "edac_module.h"
 

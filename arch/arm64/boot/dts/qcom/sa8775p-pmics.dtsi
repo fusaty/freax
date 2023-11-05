@@ -120,7 +120,7 @@
 			pmm8654au_0_pon_pwrkey: pwrkey {
 				compatible = "qcom,pmk8350-pwrkey";
 				interrupts-extended = <&spmi_bus 0x0 0x12 0x7 IRQ_TYPE_EDGE_BOTH>;
-				linux,code = <KEY_POWER>;
+				freax,code = <KEY_POWER>;
 				debounce = <15625>;
 			};
 

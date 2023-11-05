@@ -8,10 +8,10 @@
  * Copyright (C) 2006, 2007 Motorola Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/stddef.h>
+#include <freax/ptrace.h>
 
 #include "decode.h"
 #include "decode-arm.h"
@@ -238,7 +238,7 @@ static const union decode_item arm_cccc_0000_____1001_table[] = {
 static const union decode_item arm_cccc_0001_____1001_table[] = {
 	/* Synchronization primitives					*/
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	/* Deprecated on ARMv6 and may be UNDEFINED on v7		*/
 	/* SMP/SWPB		cccc 0001 0x00 xxxx xxxx xxxx 1001 xxxx */
 	DECODE_EMULATEX	(0x0fb000f0, 0x01000090, PROBES_SWP,

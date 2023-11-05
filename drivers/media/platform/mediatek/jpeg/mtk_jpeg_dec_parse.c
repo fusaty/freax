@@ -5,8 +5,8 @@
  *         Rick Chang <rick.chang@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/videodev2.h>
+#include <freax/kernel.h>
+#include <freax/videodev2.h>
 #include <media/jpeg.h>
 
 #include "mtk_jpeg_dec_parse.h"

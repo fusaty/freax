@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/mm_types.h>
 
 #include "kfd_priv.h"
 #include "kfd_mqd_manager.h"

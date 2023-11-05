@@ -3,7 +3,7 @@
 #ifndef __ASM_GENERIC_SPINLOCK_TYPES_H
 #define __ASM_GENERIC_SPINLOCK_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 typedef atomic_t arch_spinlock_t;
 
 /*

@@ -8,21 +8,21 @@
  * Based on the bttv driver for Bt848 with respective copyright holders
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
@@ -1370,5 +1370,5 @@ static struct platform_driver atmel_isi_driver = {
 module_platform_driver(atmel_isi_driver);
 
 MODULE_AUTHOR("Josh Wu <josh.wu@atmel.com>");
-MODULE_DESCRIPTION("The V4L2 driver for Atmel Linux");
+MODULE_DESCRIPTION("The V4L2 driver for Atmel freax");
 MODULE_LICENSE("GPL");

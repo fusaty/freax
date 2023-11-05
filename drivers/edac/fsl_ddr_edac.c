@@ -12,18 +12,18 @@
  *
  * 2006-2007 (c) MontaVista Software, Inc.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/edac.h>
-#include <linux/smp.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ctype.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/edac.h>
+#include <freax/smp.h>
+#include <freax/gfp.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include "edac_module.h"
 #include "fsl_ddr_edac.h"
 

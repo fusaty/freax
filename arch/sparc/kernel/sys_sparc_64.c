@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc64/kernel/sys_sparc.c
+/* freax/arch/sparc64/kernel/sys_sparc.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/sparc
+ * have a non-standard calling sequence on the freax/sparc
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/utsname.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/ipc.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/export.h>
-#include <linux/context_tracking.h>
-#include <linux/timex.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/debug.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mm.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/mman.h>
+#include <freax/utsname.h>
+#include <freax/smp.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/ipc.h>
+#include <freax/personality.h>
+#include <freax/random.h>
+#include <freax/export.h>
+#include <freax/context_tracking.h>
+#include <freax/timex.h>
+#include <freax/uaccess.h>
 
 #include <asm/utrap.h>
 #include <asm/unistd.h>
@@ -422,12 +422,12 @@ SYSCALL_DEFINE1(sparc64_personality, unsigned long, personality)
 {
 	long ret;
 
-	if (personality(current->personality) == PER_LINUX32 &&
-	    personality(personality) == PER_LINUX)
-		personality |= PER_LINUX32;
+	if (personality(current->personality) == PER_freax32 &&
+	    personality(personality) == PER_freax)
+		personality |= PER_freax32;
 	ret = sys_personality(personality);
-	if (personality(ret) == PER_LINUX32)
-		ret &= ~PER_LINUX32;
+	if (personality(ret) == PER_freax32)
+		ret &= ~PER_freax32;
 
 	return ret;
 }
@@ -451,7 +451,7 @@ int sparc_mmap_check(unsigned long addr, unsigned long len)
 	return 0;
 }
 
-/* Linux version of mmap */
+/* freax version of mmap */
 SYSCALL_DEFINE6(mmap, unsigned long, addr, unsigned long, len,
 		unsigned long, prot, unsigned long, flags, unsigned long, fd,
 		unsigned long, off)

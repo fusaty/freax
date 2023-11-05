@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/static_call.h>
-#include <linux/bug.h>
-#include <linux/smp.h>
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/processor.h>
+#include <freax/init.h>
+#include <freax/static_call.h>
+#include <freax/bug.h>
+#include <freax/smp.h>
+#include <freax/sort.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/cpu.h>
+#include <freax/processor.h>
 #include <asm/sections.h>
 
 extern struct static_call_site __start_static_call_sites[],
@@ -242,7 +242,7 @@ static int __static_call_init(struct module *mod,
 			prev_key = key;
 
 			/*
-			 * For vmlinux (!mod) avoid the allocation by storing
+			 * For vmfreax (!mod) avoid the allocation by storing
 			 * the sites pointer in the key itself. Also see
 			 * __static_call_update()'s @first.
 			 *

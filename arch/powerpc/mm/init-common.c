@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -16,8 +16,8 @@
 
 #undef DEBUG
 
-#include <linux/string.h>
-#include <linux/pgtable.h>
+#include <freax/string.h>
+#include <freax/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/kup.h>
 #include <asm/smp.h>

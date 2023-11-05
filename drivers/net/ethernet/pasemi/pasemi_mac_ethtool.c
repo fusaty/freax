@@ -6,9 +6,9 @@
  */
 
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/pci.h>
 
 #include <asm/pasemi_dma.h>
 #include "pasemi_mac.h"

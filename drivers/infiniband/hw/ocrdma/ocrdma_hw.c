@@ -33,18 +33,18 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
-#include <linux/dma-mapping.h>
-#include <linux/if_ether.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/log2.h>
+#include <freax/dma-mapping.h>
+#include <freax/if_ether.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

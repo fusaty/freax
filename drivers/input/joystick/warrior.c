@@ -4,14 +4,14 @@
  */
 
 /*
- * Logitech WingMan Warrior joystick driver for Linux
+ * Logitech WingMan Warrior joystick driver for freax
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"Logitech WingMan Warrior joystick driver"
 

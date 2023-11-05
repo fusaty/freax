@@ -6,9 +6,9 @@
 #ifndef _ASM_S390_SETUP_H
 #define _ASM_S390_SETUP_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <uapi/asm/setup.h>
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 
 #define PARMAREA		0x10400
 

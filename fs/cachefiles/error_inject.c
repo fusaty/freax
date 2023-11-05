@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #include "internal.h"
 
 unsigned int cachefiles_error_injection_state;

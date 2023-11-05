@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_MMC_HSQ_H
-#define LINUX_MMC_HSQ_H
+#ifndef freax_MMC_HSQ_H
+#define freax_MMC_HSQ_H
 
 #define HSQ_NUM_SLOTS	64
 #define HSQ_INVALID_TAG	HSQ_NUM_SLOTS

@@ -12,7 +12,7 @@
 KBUILD_CFLAGS	+= -fno-builtin
 
 subdir-y	:= lib
-targets		+= vmlinux.bin vmlinux.bin.gz
+targets		+= vmfreax.bin vmfreax.bin.gz
 targets		+= uImage xipImage
 
 # Subdirs for the boot loader(s)
@@ -32,22 +32,22 @@ boot-elf boot-redboot: $(addprefix $(obj)/,$(subdir-y))
 
 OBJCOPYFLAGS = --strip-all -R .comment -R .notes -O binary
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmfreax.bin: vmfreax FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmfreax.bin.gz: $(obj)/vmfreax.bin FORCE
 	$(call if_changed,gzip)
 
-boot-elf: $(obj)/vmlinux.bin
-boot-redboot: $(obj)/vmlinux.bin.gz
+boot-elf: $(obj)/vmfreax.bin
+boot-redboot: $(obj)/vmfreax.bin.gz
 
 UIMAGE_LOADADDR = $(CONFIG_KERNEL_LOAD_ADDRESS)
 UIMAGE_COMPRESSION = gzip
 
-$(obj)/uImage: $(obj)/vmlinux.bin.gz FORCE
+$(obj)/uImage: $(obj)/vmfreax.bin.gz FORCE
 	$(call if_changed,uimage)
 	$(Q)$(kecho) '  Kernel: $@ is ready'
 
-$(obj)/xipImage: vmlinux FORCE
+$(obj)/xipImage: vmfreax FORCE
 	$(call if_changed,objcopy)
 	$(Q)$(kecho) '  Kernel: $@ is ready'

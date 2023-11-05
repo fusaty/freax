@@ -7,11 +7,11 @@
  *   Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/crypto.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/crypto.h>
 #include <crypto/algapi.h>
 #include <crypto/cryptd.h>
 #include <crypto/gf128mul.h>

@@ -11,16 +11,16 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/err.h>
-#include <linux/vfio.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/err.h>
+#include <freax/vfio.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/mm.h>
 #include "vfio.h"
 
 #include <asm/iommu.h>

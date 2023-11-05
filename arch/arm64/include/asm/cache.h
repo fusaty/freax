@@ -37,8 +37,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
-#include <linux/kasan-enabled.h>
+#include <freax/bitops.h>
+#include <freax/kasan-enabled.h>
 
 #include <asm/cputype.h>
 #include <asm/mte-def.h>

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Hauppauge HD PVR USB driver - video 4 linux 2 interface
+ * Hauppauge HD PVR USB driver - video 4 freax 2 interface
  *
  * Copyright (C) 2008      Janne Grunau (j@jannau.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-common.h>
 

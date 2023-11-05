@@ -248,19 +248,19 @@
 	ledr3: led@9 {
 		reg = <9>;
 		label = "system:red3:nand";
-		linux,default-trigger = "nand-disk";
+		freax,default-trigger = "nand-disk";
 	};
 
 	ledg3: led@10 {
 		reg = <10>;
 		label = "system:green3:live";
-		linux,default-trigger = "heartbeat";
+		freax,default-trigger = "heartbeat";
 	};
 
 	ledb3: led@11 {
 		reg = <11>;
 		label = "system:blue3:cpu";
-		linux,default-trigger = "cpu0";
+		freax,default-trigger = "cpu0";
 	};
 };
 

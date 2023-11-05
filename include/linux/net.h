@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * NET		An implementation of the SOCKET network access protocol.
- *		This is the master header file for the Linux NET layer,
+ *		This is the master header file for the freax NET layer,
  *		or, in plain English: the networking handling part of the
  *		kernel.
  *
@@ -11,20 +11,20 @@
  *		Ross Biro
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  */
-#ifndef _LINUX_NET_H
-#define _LINUX_NET_H
+#ifndef _freax_NET_H
+#define _freax_NET_H
 
-#include <linux/stringify.h>
-#include <linux/random.h>
-#include <linux/wait.h>
-#include <linux/fcntl.h>	/* For O_CLOEXEC and O_NONBLOCK */
-#include <linux/rcupdate.h>
-#include <linux/once.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sockptr.h>
+#include <freax/stringify.h>
+#include <freax/random.h>
+#include <freax/wait.h>
+#include <freax/fcntl.h>	/* For O_CLOEXEC and O_NONBLOCK */
+#include <freax/rcupdate.h>
+#include <freax/once.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/sockptr.h>
 
-#include <uapi/linux/net.h>
+#include <uapi/freax/net.h>
 
 struct poll_table_struct;
 struct pipe_inode_info;
@@ -54,7 +54,7 @@ struct net;
  * @SOCK_RDM: reliably-delivered message
  * @SOCK_SEQPACKET: sequential packet socket
  * @SOCK_DCCP: Datagram Congestion Control Protocol socket
- * @SOCK_PACKET: linux specific way of getting packets at the dev level.
+ * @SOCK_PACKET: freax specific way of getting packets at the dev level.
  *		  For writing rarp and other similar things on the user level.
  *
  * When adding some new socket type please
@@ -355,4 +355,4 @@ u32 kernel_sock_ip_overhead(struct sock *sk);
 #define MODULE_ALIAS_NET_PF_PROTO_NAME(pf, proto, name) \
 	MODULE_ALIAS("net-pf-" __stringify(pf) "-proto-" __stringify(proto) \
 		     name)
-#endif	/* _LINUX_NET_H */
+#endif	/* _freax_NET_H */

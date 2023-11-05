@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BITMAP_H
-#define __LINUX_BITMAP_H
+#ifndef __freax_BITMAP_H
+#define __freax_BITMAP_H
 
 #ifndef __ASSEMBLY__
 
-#include <linux/align.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/find.h>
-#include <linux/limits.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bitmap-str.h>
+#include <freax/align.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/find.h>
+#include <freax/limits.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/bitmap-str.h>
 
 struct device;
 
@@ -112,7 +112,7 @@ struct device;
 
 /**
  * DOC: declare bitmap
- * The DECLARE_BITMAP(name,bits) macro, in linux/types.h, can be used
+ * The DECLARE_BITMAP(name,bits) macro, in freax/types.h, can be used
  * to declare an array named 'name' of just enough unsigned longs to
  * contain all bit positions from 0 to 'bits' - 1.
  */
@@ -559,10 +559,10 @@ static inline int bitmap_find_free_region(unsigned long *bitmap, unsigned int bi
  * BITMAP_FROM_U64() - Represent u64 value in the format suitable for bitmap.
  * @n: u64 value
  *
- * Linux bitmaps are internally arrays of unsigned longs, i.e. 32-bit
+ * freax bitmaps are internally arrays of unsigned longs, i.e. 32-bit
  * integers in 32-bit environment, and 64-bit integers in 64-bit one.
  *
- * There are four combinations of endianness and length of the word in linux
+ * There are four combinations of endianness and length of the word in freax
  * ABIs: LE64, BE64, LE32 and BE32.
  *
  * On 64-bit kernels 64-bit LE and BE numbers are naturally ordered in
@@ -638,4 +638,4 @@ static inline void bitmap_set_value8(unsigned long *map, unsigned long value,
 
 #endif /* __ASSEMBLY__ */
 
-#endif /* __LINUX_BITMAP_H */
+#endif /* __freax_BITMAP_H */

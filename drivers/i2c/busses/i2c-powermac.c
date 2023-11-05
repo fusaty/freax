@@ -8,13 +8,13 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of_irq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/of_irq.h>
 
 #include <asm/pmac_low_i2c.h>
 

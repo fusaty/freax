@@ -16,7 +16,7 @@
  * rendering can return quickly.
  */
 
-#include <linux/dma-buf.h>
+#include <freax/dma-buf.h>
 
 #include <drm/drm_fourcc.h>
 

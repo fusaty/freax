@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  BSD Process Accounting for Linux - Definitions
+ *  BSD Process Accounting for freax - Definitions
  *
  *  Author: Marco van Wieringen (mvw@planets.elm.net)
  *
@@ -12,10 +12,10 @@
  *  Copyright (C) 1995 - 1997 Marco van Wieringen - ELM Consultancy B.V.
  *
  */
-#ifndef _LINUX_ACCT_H
-#define _LINUX_ACCT_H
+#ifndef _freax_ACCT_H
+#define _freax_ACCT_H
 
-#include <uapi/linux/acct.h>
+#include <uapi/freax/acct.h>
 
 
 
@@ -58,10 +58,10 @@ typedef struct acct_v3 acct_t;
 typedef struct acct acct_t;
 #endif
 
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 /*
  * Yet another set of HZ to *HZ helper functions.
- * See <linux/jiffies.h> for the original.
+ * See <freax/jiffies.h> for the original.
  */
 
 static inline u32 jiffies_to_AHZ(unsigned long x)
@@ -99,4 +99,4 @@ static inline u64 nsec_to_AHZ(u64 x)
 	return x;
 }
 
-#endif	/* _LINUX_ACCT_H */
+#endif	/* _freax_ACCT_H */

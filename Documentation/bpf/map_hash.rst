@@ -149,7 +149,7 @@ struct value.
 
 .. code-block:: c
 
-    #include <linux/bpf.h>
+    #include <freax/bpf.h>
     #include <bpf/bpf_helpers.h>
 
     struct key {
@@ -220,7 +220,7 @@ Userspace walking the map elements from the map declared above:
 Internals
 =========
 
-This section of the document is targeted at Linux developers and describes
+This section of the document is targeted at freax developers and describes
 aspects of the map implementations that are not considered stable ABI. The
 following details are subject to change in future versions of the kernel.
 

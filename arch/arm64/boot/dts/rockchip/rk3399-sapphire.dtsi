@@ -57,8 +57,8 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Power";
-			linux,code = <KEY_POWER>;
-			linux,input-type = <1>;
+			freax,code = <KEY_POWER>;
+			freax,input-type = <1>;
 			pinctrl-names = "default";
 			pinctrl-0 = <&pwr_btn>;
 			wakeup-source;

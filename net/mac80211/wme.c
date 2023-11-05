@@ -5,11 +5,11 @@
  * Copyright (C) 2022 Intel Corporation
  */
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/module.h>
+#include <freax/if_arp.h>
+#include <freax/types.h>
 #include <net/ip.h>
 #include <net/pkt_sched.h>
 

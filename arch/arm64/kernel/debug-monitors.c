@@ -7,15 +7,15 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/kprobes.h>
-#include <linux/stat.h>
-#include <linux/uaccess.h>
-#include <linux/sched/task_stack.h>
+#include <freax/cpu.h>
+#include <freax/debugfs.h>
+#include <freax/hardirq.h>
+#include <freax/init.h>
+#include <freax/ptrace.h>
+#include <freax/kprobes.h>
+#include <freax/stat.h>
+#include <freax/uaccess.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/cpufeature.h>
 #include <asm/cputype.h>

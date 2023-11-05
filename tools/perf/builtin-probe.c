@@ -28,8 +28,8 @@
 #include "util/probe-finder.h"
 #include "util/probe-event.h"
 #include "util/probe-file.h"
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 
 #define DEFAULT_VAR_FILTER "!__k???tab_* & !__crc_*"
 #define DEFAULT_FUNC_FILTER "!_* & !*@plt"
@@ -571,8 +571,8 @@ __cmd_probe(int argc, const char **argv)
 		    "Show external variables too (with --vars only)"),
 	OPT_BOOLEAN('\0', "range", &probe_conf.show_location_range,
 		"Show variables location range in scope (with --vars only)"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
 	OPT_STRING('s', "source", &symbol_conf.source_prefix,
 		   "directory", "path to kernel source"),
 	OPT_BOOLEAN('\0', "no-inlines", &probe_conf.no_inlines,
@@ -621,7 +621,7 @@ __cmd_probe(int argc, const char **argv)
 	set_nobuild('V', "vars", false);
 	set_nobuild('\0', "externs", false);
 	set_nobuild('\0', "range", false);
-	set_nobuild('k', "vmlinux", true);
+	set_nobuild('k', "vmfreax", true);
 	set_nobuild('s', "source", true);
 	set_nobuild('\0', "no-inlines", true);
 # undef set_nobuild
@@ -666,15 +666,15 @@ __cmd_probe(int argc, const char **argv)
 	/*
 	 * Only consider the user's kernel image path if given.
 	 */
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmfreax_path = (symbol_conf.vmfreax_name == NULL);
 
 	/*
 	 * Except for --list, --del and --add, other command doesn't depend
-	 * nor change running kernel. So if user gives offline vmlinux,
+	 * nor change running kernel. So if user gives offline vmfreax,
 	 * ignore its buildid.
 	 */
-	if (!strchr("lda", params->command) && symbol_conf.vmlinux_name)
-		symbol_conf.ignore_vmlinux_buildid = true;
+	if (!strchr("lda", params->command) && symbol_conf.vmfreax_name)
+		symbol_conf.ignore_vmfreax_buildid = true;
 
 	switch (params->command) {
 	case 'l':

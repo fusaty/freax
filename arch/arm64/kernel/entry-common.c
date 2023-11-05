@@ -5,14 +5,14 @@
  * Copyright (C) 2019 ARM Ltd.
  */
 
-#include <linux/context_tracking.h>
-#include <linux/kasan.h>
-#include <linux/linkage.h>
-#include <linux/lockdep.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/thread_info.h>
+#include <freax/context_tracking.h>
+#include <freax/kasan.h>
+#include <freax/linkage.h>
+#include <freax/lockdep.h>
+#include <freax/ptrace.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/thread_info.h>
 
 #include <asm/cpufeature.h>
 #include <asm/daifflags.h>

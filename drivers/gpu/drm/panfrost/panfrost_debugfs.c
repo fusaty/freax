@@ -2,8 +2,8 @@
 /* Copyright 2023 Collabora ltd. */
 /* Copyright 2023 Amazon.com, Inc. or its affiliates. */
 
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
+#include <freax/debugfs.h>
+#include <freax/platform_device.h>
 #include <drm/drm_debugfs.h>
 #include <drm/drm_file.h>
 #include <drm/panfrost_drm.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  it87.c - Part of lm_sensors, Linux kernel modules for hardware
+ *  it87.c - Part of lm_sensors, freax kernel modules for hardware
  *           monitoring.
  *
  *  The IT8705F is an LPC-based Super I/O part that contains UARTs, a
@@ -43,22 +43,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/platform_device.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/sysfs.h>
+#include <freax/string.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 #define DRVNAME "it87"
 

@@ -4,12 +4,12 @@
  * Copyright 2020 Paul Mackerras (paulus@ozlabs.org), IBM Corp.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/time.h>

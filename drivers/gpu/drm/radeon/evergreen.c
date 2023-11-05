@@ -22,9 +22,9 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
 
 #include <drm/drm_vblank.h>
 #include <drm/radeon_drm.h>

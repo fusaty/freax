@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RAMFS_H
-#define _LINUX_RAMFS_H
+#ifndef _freax_RAMFS_H
+#define _freax_RAMFS_H
 
-#include <linux/fs_parser.h> // bleh...
+#include <freax/fs_parser.h> // bleh...
 
 struct inode *ramfs_get_inode(struct super_block *sb, const struct inode *dir,
 	 umode_t mode, dev_t dev);

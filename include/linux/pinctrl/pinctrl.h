@@ -8,10 +8,10 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_PINCTRL_H
-#define __LINUX_PINCTRL_PINCTRL_H
+#ifndef __freax_PINCTRL_PINCTRL_H
+#define __freax_PINCTRL_PINCTRL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct device_node;
@@ -240,4 +240,4 @@ extern const char *pinctrl_dev_get_name(struct pinctrl_dev *pctldev);
 extern const char *pinctrl_dev_get_devname(struct pinctrl_dev *pctldev);
 extern void *pinctrl_dev_get_drvdata(struct pinctrl_dev *pctldev);
 
-#endif /* __LINUX_PINCTRL_PINCTRL_H */
+#endif /* __freax_PINCTRL_PINCTRL_H */

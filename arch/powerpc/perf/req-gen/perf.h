@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_POWERPC_PERF_REQ_GEN_PERF_H_
-#define LINUX_POWERPC_PERF_REQ_GEN_PERF_H_
+#ifndef freax_POWERPC_PERF_REQ_GEN_PERF_H_
+#define freax_POWERPC_PERF_REQ_GEN_PERF_H_
 
-#include <linux/perf_event.h>
-#include <linux/stringify.h>
+#include <freax/perf_event.h>
+#include <freax/stringify.h>
 
 #ifndef REQUEST_FILE
 #error "REQUEST_FILE must be defined before including"

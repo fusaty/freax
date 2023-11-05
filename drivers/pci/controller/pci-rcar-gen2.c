@@ -8,18 +8,18 @@
  * Author: Valentine Barshak <valentine.barshak@cogentembedded.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of_address.h>
+#include <freax/of_pci.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
 
 #include "../pci.h"
 

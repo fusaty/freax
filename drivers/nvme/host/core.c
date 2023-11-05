@@ -4,28 +4,28 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-integrity.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pr.h>
-#include <linux/ptrace.h>
-#include <linux/nvme_ioctl.h>
-#include <linux/pm_qos.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-integrity.h>
+#include <freax/compat.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/hdreg.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/backing-dev.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pr.h>
+#include <freax/ptrace.h>
+#include <freax/nvme_ioctl.h>
+#include <freax/pm_qos.h>
 #include <asm/unaligned.h>
 
 #include "nvme.h"
 #include "fabrics.h"
-#include <linux/nvme-auth.h>
-#include <linux/nvme-keyring.h>
+#include <freax/nvme-auth.h>
+#include <freax/nvme-keyring.h>
 
 #define CREATE_TRACE_POINTS
 #include "trace.h"
@@ -1037,7 +1037,7 @@ int nvme_execute_rq(struct request *rq, bool at_head)
 EXPORT_SYMBOL_NS_GPL(nvme_execute_rq, NVME_TARGET_PASSTHRU);
 
 /*
- * Returns 0 on success.  If the result is negative, it's a Linux error code;
+ * Returns 0 on success.  If the result is negative, it's a freax error code;
  * if the result is positive, it's an NVM Express status code
  */
 int __nvme_submit_sync_cmd(struct request_queue *q, struct nvme_command *cmd,
@@ -1919,7 +1919,7 @@ static void nvme_update_disk_info(struct gendisk *disk,
 
 	blk_queue_logical_block_size(disk->queue, bs);
 	/*
-	 * Linux filesystems assume writing a single physical block is
+	 * freax filesystems assume writing a single physical block is
 	 * an atomic operation. Hence limit the physical block size to the
 	 * value of the Atomic Write Unit Power Fail parameter.
 	 */
@@ -2544,7 +2544,7 @@ static const struct nvme_core_quirk_entry core_quirks[] = {
 	{
 		/*
 		 * This Toshiba device seems to die using any APST states.  See:
-		 * https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1678184/comments/11
+		 * https://bugs.launchpad.net/ubuntu/+source/freax/+bug/1678184/comments/11
 		 */
 		.vid = 0x1179,
 		.mn = "THNSF5256GPUK TOSHIBA",
@@ -3519,7 +3519,7 @@ static int nvme_init_ns_head(struct nvme_ns *ns, struct nvme_ns_info *info)
 				"Found shared namespace %d, but multipathing not supported.\n",
 				info->nsid);
 			dev_warn_once(ctrl->device,
-				"Support for shared namespaces without CONFIG_NVME_MULTIPATH is deprecated and will be removed in Linux 6.0\n.");
+				"Support for shared namespaces without CONFIG_NVME_MULTIPATH is deprecated and will be removed in freax 6.0\n.");
 		}
 	}
 

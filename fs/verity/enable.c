@@ -8,9 +8,9 @@
 #include "fsverity_private.h"
 
 #include <crypto/hash.h>
-#include <linux/mount.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <freax/mount.h>
+#include <freax/sched/signal.h>
+#include <freax/uaccess.h>
 
 struct block_buffer {
 	u32 filled;

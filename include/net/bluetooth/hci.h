@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright 2023 NXP
 

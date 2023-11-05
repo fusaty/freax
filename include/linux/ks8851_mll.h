@@ -4,10 +4,10 @@
  * Copyright (c) 2012 BTicino S.p.A.
  */
 
-#ifndef _LINUX_KS8851_MLL_H
-#define _LINUX_KS8851_MLL_H
+#ifndef _freax_KS8851_MLL_H
+#define _freax_KS8851_MLL_H
 
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 
 /**
  * struct ks8851_mll_platform_data - Platform data of the KS8851_MLL network driver

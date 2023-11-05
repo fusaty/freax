@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_SEQMUTEX_H
 #define _BCACHEFS_SEQMUTEX_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 struct seqmutex {
 	struct mutex	lock;

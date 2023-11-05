@@ -8,7 +8,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Jon Grimm             <jgrimm@us.ibm.com>
@@ -17,12 +17,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/net.h>
+#include <freax/inet.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

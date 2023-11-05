@@ -5,14 +5,14 @@
  * Copyright (C) 2015-2016 Endless Mobile, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/input.h>
-#include <linux/pci_ids.h>
-#include <linux/leds.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/acpi.h>
+#include <freax/input.h>
+#include <freax/pci_ids.h>
+#include <freax/leds.h>
 
 struct hswc_params {
 	u8 on;

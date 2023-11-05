@@ -9,21 +9,21 @@
 
 #include <asm/head.h>
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/interrupt.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/extable.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/threads.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/perf_event.h>
+#include <freax/interrupt.h>
+#include <freax/kdebug.h>
+#include <freax/uaccess.h>
+#include <freax/extable.h>
 
 #include <asm/page.h>
 #include <asm/openprom.h>

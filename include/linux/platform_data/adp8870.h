@@ -6,8 +6,8 @@
  * Copyright 2009-2010 Analog Devices Inc.
  */
 
-#ifndef __LINUX_I2C_ADP8870_H
-#define __LINUX_I2C_ADP8870_H
+#ifndef __freax_I2C_ADP8870_H
+#define __freax_I2C_ADP8870_H
 
 #define ID_ADP8870		8870
 
@@ -149,4 +149,4 @@ struct adp8870_backlight_platform_data {
 	u8 led_on_time;
 };
 
-#endif /* __LINUX_I2C_ADP8870_H */
+#endif /* __freax_I2C_ADP8870_H */

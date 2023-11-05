@@ -3,8 +3,8 @@
 #ifndef _NET_PAGE_POOL_TYPES_H
 #define _NET_PAGE_POOL_TYPES_H
 
-#include <linux/dma-direction.h>
-#include <linux/ptr_ring.h>
+#include <freax/dma-direction.h>
+#include <freax/ptr_ring.h>
 
 #define PP_FLAG_DMA_MAP		BIT(0) /* Should page_pool do the DMA
 					* map/unmap

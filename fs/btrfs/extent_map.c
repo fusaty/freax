@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include "messages.h"
 #include "ctree.h"
 #include "volumes.h"

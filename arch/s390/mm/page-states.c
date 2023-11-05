@@ -7,13 +7,13 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
 #include <asm/asm-extable.h>
 #include <asm/facility.h>
 #include <asm/page-states.h>

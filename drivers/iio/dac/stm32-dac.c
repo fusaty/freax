@@ -7,17 +7,17 @@
  *	    Fabrice Gasnier <fabrice.gasnier@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/string_choices.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/string_choices.h>
 
 #include "stm32-dac-core.h"
 

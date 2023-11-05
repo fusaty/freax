@@ -5,9 +5,9 @@
  * - Kurt Van Dijck, EIA Electronics
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

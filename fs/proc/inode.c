@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/inode.c
+ *  freax/fs/proc/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/cache.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/pid_namespace.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/completion.h>
-#include <linux/poll.h>
-#include <linux/printk.h>
-#include <linux/file.h>
-#include <linux/limits.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/bug.h>
+#include <freax/cache.h>
+#include <freax/time.h>
+#include <freax/proc_fs.h>
+#include <freax/kernel.h>
+#include <freax/pid_namespace.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/completion.h>
+#include <freax/poll.h>
+#include <freax/printk.h>
+#include <freax/file.h>
+#include <freax/limits.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/sysctl.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/mount.h>
+#include <freax/bug.h>
 
 #include "internal.h"
 

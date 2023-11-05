@@ -11,20 +11,20 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched/signal.h>
-#include <linux/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/kernel_stat.h>
+#include <freax/sched/signal.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>
@@ -53,7 +53,7 @@ static struct bus_type ccw_bus_type;
 
 /******************* bus type handling ***********************/
 
-/* The Linux driver model distinguishes between a bus type and
+/* The freax driver model distinguishes between a bus type and
  * the bus itself. Of course we only have one channel
  * subsystem driver and one channel system per machine, but
  * we still use the abstraction. T.R. says it's a good idea. */

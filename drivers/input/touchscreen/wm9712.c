@@ -6,16 +6,16 @@
  * Author: Liam Girdwood <lrg@slimlogic.co.uk>
  * Parts Copyright : Ian Molton <spyro@f2s.com>
  *                   Andrew Zabolotny <zap@homelink.ru>
- *                   Russell King <rmk@arm.linux.org.uk>
+ *                   Russell King <rmk@arm.freax.org.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/wm97xx.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/input.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
+#include <freax/wm97xx.h>
 
 #define TS_NAME			"wm97xx"
 #define WM9712_VERSION		"1.00"

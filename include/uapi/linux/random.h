@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * include/linux/random.h
+ * include/freax/random.h
  *
  * Include file for the random number generator.
  */
 
-#ifndef _UAPI_LINUX_RANDOM_H
-#define _UAPI_LINUX_RANDOM_H
+#ifndef _UAPI_freax_RANDOM_H
+#define _UAPI_freax_RANDOM_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/irqnr.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
+#include <freax/irqnr.h>
 
 /* ioctl()'s for the random number generator */
 
@@ -55,4 +55,4 @@ struct rand_pool_info {
 #define GRND_RANDOM	0x0002
 #define GRND_INSECURE	0x0004
 
-#endif /* _UAPI_LINUX_RANDOM_H */
+#endif /* _UAPI_freax_RANDOM_H */

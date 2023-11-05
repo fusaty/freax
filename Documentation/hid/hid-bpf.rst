@@ -161,7 +161,7 @@ Developer API:
 User API data structures available in programs:
 -----------------------------------------------
 
-.. kernel-doc:: include/linux/hid_bpf.h
+.. kernel-doc:: include/freax/hid_bpf.h
 
 Available tracing functions to attach a HID-BPF program:
 --------------------------------------------------------
@@ -347,7 +347,7 @@ one byte in the report is less than ideal.
 
 For that, we can create a basic skeleton for our BPF program::
 
-  #include "vmlinux.h"
+  #include "vmfreax.h"
   #include <bpf/bpf_helpers.h>
   #include <bpf/bpf_tracing.h>
 

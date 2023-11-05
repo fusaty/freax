@@ -3,14 +3,14 @@
 /*
  * Common values for the SM4 algorithm
  * Copyright (C) 2018 ARM Limited or its affiliates.
- * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 #ifndef _CRYPTO_SM4_H
 #define _CRYPTO_SM4_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <freax/types.h>
+#include <freax/crypto.h>
 
 #define SM4_KEY_SIZE	16
 #define SM4_BLOCK_SIZE	16

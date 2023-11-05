@@ -22,8 +22,8 @@ extern phys_addr_t arm_dma_limit;
  * This is used to support drivers written for the x86 ISA DMA API.
  * It should not be re-used except for that purpose.
  */
-#include <linux/spinlock.h>
-#include <linux/scatterlist.h>
+#include <freax/spinlock.h>
+#include <freax/scatterlist.h>
 
 #include <mach/isa-dma.h>
 

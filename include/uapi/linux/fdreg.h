@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_FDREG_H
-#define _LINUX_FDREG_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_FDREG_H
+#define _freax_FDREG_H
 /*
  * This file contains some defines for the floppy disk controller.
  * Various sources. Mostly "IBM Microcomputers: A Programmers

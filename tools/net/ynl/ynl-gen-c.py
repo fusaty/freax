@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+# SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 
 import argparse
 import collections
@@ -890,8 +890,8 @@ class Family(SpecFamily):
         if 'uapi-header' in self.yaml:
             self.uapi_header = self.yaml['uapi-header']
         else:
-            self.uapi_header = f"linux/{self.name}.h"
-        if self.uapi_header.startswith("linux/") and self.uapi_header.endswith('.h'):
+            self.uapi_header = f"freax/{self.name}.h"
+        if self.uapi_header.startswith("freax/") and self.uapi_header.endswith('.h'):
             self.uapi_header_name = self.uapi_header[6:-2]
         else:
             self.uapi_header_name = self.name
@@ -2287,7 +2287,7 @@ def uapi_enum_start(family, cw, obj, ckey='', enum_name='enum-name'):
 
 
 def render_uapi(family, cw):
-    hdr_prot = f"_UAPI_LINUX_{c_upper(family.uapi_header_name)}_H"
+    hdr_prot = f"_UAPI_freax_{c_upper(family.uapi_header_name)}_H"
     cw.p('#ifndef ' + hdr_prot)
     cw.p('#define ' + hdr_prot)
     cw.nl()
@@ -2511,9 +2511,9 @@ def main():
 
     try:
         parsed = Family(args.spec, exclude_ops)
-        if parsed.license != '((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)':
+        if parsed.license != '((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)':
             print('Spec license:', parsed.license)
-            print('License must be: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)')
+            print('License must be: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)')
             os.sys.exit(1)
     except yaml.YAMLError as exc:
         print(exc)
@@ -2548,7 +2548,7 @@ def main():
         render_uapi(parsed, cw)
         return
 
-    hdr_prot = f"_LINUX_{parsed.name.upper()}_GEN_H"
+    hdr_prot = f"_freax_{parsed.name.upper()}_GEN_H"
     if args.header:
         cw.p('#ifndef ' + hdr_prot)
         cw.p('#define ' + hdr_prot)
@@ -2567,9 +2567,9 @@ def main():
         cw.p('#include <stdlib.h>')
         cw.p('#include <string.h>')
         if args.header:
-            cw.p('#include <linux/types.h>')
+            cw.p('#include <freax/types.h>')
             if family_contains_bitfield32(parsed):
-                cw.p('#include <linux/netlink.h>')
+                cw.p('#include <freax/netlink.h>')
         else:
             cw.p(f'#include "{parsed.name}-user.h"')
             cw.p('#include "ynl.h"')
@@ -2584,7 +2584,7 @@ def main():
     if args.mode == "user":
         if not args.header:
             cw.p("#include <libmnl/libmnl.h>")
-            cw.p("#include <linux/genetlink.h>")
+            cw.p("#include <freax/genetlink.h>")
             cw.nl()
             for one in args.user_header:
                 cw.p(f'#include "{one}"')

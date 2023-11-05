@@ -7,15 +7,15 @@
 #ifndef DRIVER_ATM_ENI_H
 #define DRIVER_ATM_ENI_H
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/interrupt.h>
-#include <linux/sonet.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
+#include <freax/atm.h>
+#include <freax/atmdev.h>
+#include <freax/interrupt.h>
+#include <freax/sonet.h>
+#include <freax/skbuff.h>
+#include <freax/time.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
 
 #include "midway.h"
 

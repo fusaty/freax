@@ -6,24 +6,24 @@
  * Author: Bartosz Golaszewski <bgolaszewski@baylibre.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/compiler.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
 
 #define MTK_STAR_DRVNAME			"mtk_star_emac"
 

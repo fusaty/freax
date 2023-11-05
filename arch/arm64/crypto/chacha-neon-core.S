@@ -18,7 +18,7 @@
  * (at your option) any later version.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/cache.h>
 

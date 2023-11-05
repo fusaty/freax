@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/arch/arm/kernel/isa.c
+ *  freax/arch/arm/kernel/isa.c
  *
  *  Copyright (C) 1999 Phil Blundell
  *
  *  ISA shared memory and I/O port support, and is required to support
  *  iopl, inb, outb and friends in userspace via glibc emulation.
  */
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/sysctl.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 static unsigned int isa_membase, isa_portbase, isa_portshift;
 

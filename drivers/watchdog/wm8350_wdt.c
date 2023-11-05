@@ -2,19 +2,19 @@
 /*
  * Watchdog driver for the wm8350
  *
- * Copyright (C) 2007, 2008 Wolfson Microelectronics <linux@wolfsonmicro.com>
+ * Copyright (C) 2007, 2008 Wolfson Microelectronics <freax@wolfsonmicro.com>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/mfd/wm8350/core.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/watchdog.h>
+#include <freax/uaccess.h>
+#include <freax/mfd/wm8350/core.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);

@@ -120,28 +120,28 @@
 		led0 {
 			label = "beagle-x15:usr0";
 			gpios = <&gpio7 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led1 {
 			label = "beagle-x15:usr1";
 			gpios = <&gpio7 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			freax,default-trigger = "cpu0";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "beagle-x15:usr2";
 			gpios = <&gpio7 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "beagle-x15:usr3";
 			gpios = <&gpio7 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			freax,default-trigger = "disk-activity";
 			default-state = "off";
 		};
 	};

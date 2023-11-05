@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/file.h>
-#include <linux/falloc.h>
+#include <freax/slab.h>
+#include <freax/mount.h>
+#include <freax/xattr.h>
+#include <freax/file.h>
+#include <freax/falloc.h>
 #include <trace/events/fscache.h>
 #include "internal.h"
 

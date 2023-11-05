@@ -5,14 +5,14 @@
  *  Copyright (C) 2006 ARM Ltd.
  *  written by Russell King, Deep Blue Solutions Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #define I2C_CONTROL	0x00
 #define I2C_CONTROLS	0x00

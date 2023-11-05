@@ -22,7 +22,7 @@
 			pm2250_pwrkey: pwrkey {
 				compatible = "qcom,pm8941-pwrkey";
 				interrupts-extended = <&spmi_bus 0x0 0x8 0 IRQ_TYPE_EDGE_BOTH>;
-				linux,code = <KEY_POWER>;
+				freax,code = <KEY_POWER>;
 				debounce = <15625>;
 				bias-pull-up;
 			};

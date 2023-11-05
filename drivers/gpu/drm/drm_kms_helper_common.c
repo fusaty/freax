@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <drm/drm_edid.h>
 #include <drm/drm_print.h>

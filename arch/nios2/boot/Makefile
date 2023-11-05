@@ -6,27 +6,27 @@
 # for more details.
 #
 
-UIMAGE_LOADADDR = $(shell $(NM) vmlinux | awk '$$NF == "_stext" {print $$1}')
-UIMAGE_ENTRYADDR = $(shell $(NM) vmlinux | awk '$$NF == "_start" {print $$1}')
+UIMAGE_LOADADDR = $(shell $(NM) vmfreax | awk '$$NF == "_stext" {print $$1}')
+UIMAGE_ENTRYADDR = $(shell $(NM) vmfreax | awk '$$NF == "_start" {print $$1}')
 UIMAGE_COMPRESSION = gzip
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
+OBJCOPYFLAGS_vmfreax.bin := -O binary
 
-targets += vmlinux.bin vmlinux.gz vmImage
+targets += vmfreax.bin vmfreax.gz vmImage
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmfreax.bin: vmfreax FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmfreax.gz: $(obj)/vmfreax.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmImage: $(obj)/vmlinux.gz FORCE
+$(obj)/vmImage: $(obj)/vmfreax.gz FORCE
 	$(call if_changed,uimage)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/zImage: $(obj)/compressed/vmlinux FORCE
+$(obj)/zImage: $(obj)/compressed/vmfreax FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: $(obj)/vmlinux.gz FORCE
+$(obj)/compressed/vmfreax: $(obj)/vmfreax.gz FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@

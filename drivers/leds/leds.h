@@ -9,8 +9,8 @@
 #ifndef __LEDS_H_INCLUDED
 #define __LEDS_H_INCLUDED
 
-#include <linux/rwsem.h>
-#include <linux/leds.h>
+#include <freax/rwsem.h>
+#include <freax/leds.h>
 
 static inline int led_get_brightness(struct led_classdev *led_cdev)
 {

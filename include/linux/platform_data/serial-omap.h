@@ -13,9 +13,9 @@
 #ifndef __OMAP_SERIAL_H__
 #define __OMAP_SERIAL_H__
 
-#include <linux/serial_core.h>
-#include <linux/device.h>
-#include <linux/pm_qos.h>
+#include <freax/serial_core.h>
+#include <freax/device.h>
+#include <freax/pm_qos.h>
 
 #define OMAP_SERIAL_DRIVER_NAME	"omap_uart"
 

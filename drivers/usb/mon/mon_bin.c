@@ -8,21 +8,21 @@
  * Copyright (C) 2006,2007 Pete Zaitcev (zaitcev@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/time64.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/cdev.h>
+#include <freax/export.h>
+#include <freax/usb.h>
+#include <freax/poll.h>
+#include <freax/compat.h>
+#include <freax/mm.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/time64.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "usb_mon.h"
 
@@ -1311,7 +1311,7 @@ static int mon_bin_wait_event(struct file *file, struct mon_reader_bin *rp)
 		if (file->f_flags & O_NONBLOCK) {
 			set_current_state(TASK_RUNNING);
 			remove_wait_queue(&rp->b_wait, &waita);
-			return -EWOULDBLOCK; /* Same as EAGAIN in Linux */
+			return -EWOULDBLOCK; /* Same as EAGAIN in freax */
 		}
 		schedule();
 		if (signal_pending(current)) {

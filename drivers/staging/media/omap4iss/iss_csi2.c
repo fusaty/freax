@@ -7,10 +7,10 @@
  * Author: Sergio Aguirre <sergio.a.aguirre@gmail.com>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include <media/v4l2-common.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/mm.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/mm.h>
 
 #include "iss.h"
 #include "iss_regs.h"

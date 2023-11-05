@@ -8,9 +8,9 @@
 
 #define __LSE_PREAMBLE	".arch_extension lse\n"
 
-#include <linux/compiler_types.h>
-#include <linux/export.h>
-#include <linux/stringify.h>
+#include <freax/compiler_types.h>
+#include <freax/export.h>
+#include <freax/stringify.h>
 #include <asm/alternative.h>
 #include <asm/alternative-macros.h>
 #include <asm/atomic_lse.h>

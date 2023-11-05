@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  m68k beeper driver for Linux
+ *  m68k beeper driver for freax
  *
  *  Copyright (c) 2002 Richard Zidlicky
  *  Copyright (c) 2002 Vojtech Pavlik
@@ -8,15 +8,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
 
-MODULE_AUTHOR("Richard Zidlicky <rz@linux-m68k.org>");
+MODULE_AUTHOR("Richard Zidlicky <rz@freax-m68k.org>");
 MODULE_DESCRIPTION("m68k beeper driver");
 MODULE_LICENSE("GPL");
 

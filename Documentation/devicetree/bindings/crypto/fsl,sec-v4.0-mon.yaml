@@ -102,12 +102,12 @@ properties:
 
       wakeup-source: true
 
-      linux,keycode:
+      freax,keycode:
         $ref: /schemas/types.yaml#/definitions/uint32
         default: 116
         deprecated: true
 
-      linux,keycodes:
+      freax,keycodes:
         maxItems: 1
         default: 116
 
@@ -156,7 +156,7 @@ examples:
             clocks = <&clks IMX7D_SNVS_CLK>;
             clock-names = "snvs-pwrkey";
             interrupts = <GIC_SPI 4 IRQ_TYPE_LEVEL_HIGH>;
-            linux,keycode = <116>; /* KEY_POWER */
+            freax,keycode = <116>; /* KEY_POWER */
             wakeup-source;
         };
     };

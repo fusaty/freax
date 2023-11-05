@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/bind.h
+ * freax/include/freax/lockd/bind.h
  *
  * This is the part of lockd visible to nfsd and the nfs client.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef LINUX_LOCKD_BIND_H
-#define LINUX_LOCKD_BIND_H
+#ifndef freax_LOCKD_BIND_H
+#define freax_LOCKD_BIND_H
 
-#include <linux/lockd/nlm.h>
+#include <freax/lockd/nlm.h>
 /* need xdr-encoded error codes too, so... */
-#include <linux/lockd/xdr.h>
+#include <freax/lockd/xdr.h>
 #ifdef CONFIG_LOCKD_V4
-#include <linux/lockd/xdr4.h>
+#include <freax/lockd/xdr4.h>
 #endif
 
 /* Dummy declarations */
@@ -82,4 +82,4 @@ extern int	nlmclnt_proc(struct nlm_host *host, int cmd, struct file_lock *fl, vo
 extern int	lockd_up(struct net *net, const struct cred *cred);
 extern void	lockd_down(struct net *net);
 
-#endif /* LINUX_LOCKD_BIND_H */
+#endif /* freax_LOCKD_BIND_H */

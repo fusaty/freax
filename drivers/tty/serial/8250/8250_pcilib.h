@@ -5,7 +5,7 @@
  * Copyright (C) 2001 Russell King, All Rights Reserved.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pci_dev;
 

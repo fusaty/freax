@@ -4,22 +4,22 @@
 * Copyright Adrian McMenamin 2005, 2006, 2007
 * <adrian@mcmen.demon.co.uk>
 * Requires firmware (BSD licenced) available from:
-* http://linuxdc.cvs.sourceforge.net/linuxdc/linux-sh-dc/sound/oss/aica/firmware/
+* http://freaxdc.cvs.sourceforge.net/freaxdc/freax-sh-dc/sound/oss/aica/firmware/
 * or the maintainer
 */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/firmware.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

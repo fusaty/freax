@@ -6,24 +6,24 @@
  * Copyright (C) 2012 Mike Sinkovsky <msink@permonline.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/wiznet.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/wiznet.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/gpio.h>
 
 #include "w5100.h"
 

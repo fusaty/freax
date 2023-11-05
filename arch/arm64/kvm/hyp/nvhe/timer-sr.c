@@ -5,8 +5,8 @@
  */
 
 #include <clocksource/arm_arch_timer.h>
-#include <linux/compiler.h>
-#include <linux/kvm_host.h>
+#include <freax/compiler.h>
+#include <freax/kvm_host.h>
 
 #include <asm/kvm_hyp.h>
 #include <asm/kvm_mmu.h>

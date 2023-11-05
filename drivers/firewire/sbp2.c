@@ -15,28 +15,28 @@
  * and many others.
  */
 
-#include <linux/blkdev.h>
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/workqueue.h>
+#include <freax/blkdev.h>
+#include <freax/bug.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/stringify.h>
+#include <freax/workqueue.h>
 
 #include <asm/byteorder.h>
 
@@ -1091,7 +1091,7 @@ static void sbp2_init_workarounds(struct sbp2_target *tgt, u32 model,
 
 	if (w)
 		dev_notice(tgt_dev(tgt),
-			   "Please notify linux1394-devel@lists.sf.net "
+			   "Please notify freax1394-devel@lists.sf.net "
 			   "if you need the workarounds parameter\n");
 
 	if (w & SBP2_WORKAROUND_OVERRIDE)

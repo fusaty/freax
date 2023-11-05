@@ -85,33 +85,33 @@
  *   TCP_LISTEN - listening
  */
 
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/cred.h>
-#include <linux/errqueue.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/smp.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/compat.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/cred.h>
+#include <freax/errqueue.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/kmod.h>
+#include <freax/list.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/net.h>
+#include <freax/poll.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/smp.h>
+#include <freax/socket.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
-#include <uapi/linux/vm_sockets.h>
+#include <uapi/freax/vm_sockets.h>
 
 static int __vsock_bind(struct sock *sk, struct sockaddr_vm *addr);
 static void vsock_sk_destruct(struct sock *sk);
@@ -2225,7 +2225,7 @@ vsock_connectible_recvmsg(struct socket *sock, struct msghdr *msg, size_t len,
 		goto out;
 	}
 
-	/* It is valid on Linux to pass in a zero-length receive buffer.  This
+	/* It is valid on freax to pass in a zero-length receive buffer.  This
 	 * is not an error.  We may as well bail out now.
 	 */
 	if (!len) {

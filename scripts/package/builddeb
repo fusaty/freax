@@ -3,7 +3,7 @@
 # builddeb 1.3
 # Copyright 2003 Wichert Akkerman <wichert@wiggy.net>
 #
-# Simple script to generate a deb package for a Linux kernel. All the
+# Simple script to generate a deb package for a freax kernel. All the
 # complexity of what to do with a kernel after it is installed or removed
 # is left to other scripts and packages: they can install scripts in the
 # /etc/kernel/{pre,post}{inst,rm}.d/ directories (or an alternative location
@@ -51,7 +51,7 @@ create_package() {
 	dpkg-deb $dpkg_deb_opts ${KDEB_COMPRESS:+-Z$KDEB_COMPRESS} --build "$pdir" ..
 }
 
-install_linux_image () {
+install_freax_image () {
 	pdir=$1
 	pname=$2
 
@@ -59,7 +59,7 @@ install_linux_image () {
 
 	# Only some architectures with OF support have this target
 	if is_enabled CONFIG_OF_EARLY_FLATTREE && [ -d "${srctree}/arch/${SRCARCH}/boot/dts" ]; then
-		${MAKE} -f ${srctree}/Makefile INSTALL_DTBS_PATH="${pdir}/usr/lib/linux-image-${KERNELRELEASE}" dtbs_install
+		${MAKE} -f ${srctree}/Makefile INSTALL_DTBS_PATH="${pdir}/usr/lib/freax-image-${KERNELRELEASE}" dtbs_install
 	fi
 
 	${MAKE} -f ${srctree}/Makefile INSTALL_MOD_PATH="${pdir}" modules_install
@@ -84,9 +84,9 @@ install_linux_image () {
 	# path instead
 	case "${SRCARCH}" in
 	um)
-		installed_image_path="usr/bin/linux-${KERNELRELEASE}";;
+		installed_image_path="usr/bin/freax-${KERNELRELEASE}";;
 	parisc|mips|powerpc)
-		installed_image_path="boot/vmlinux-${KERNELRELEASE}";;
+		installed_image_path="boot/vmfreax-${KERNELRELEASE}";;
 	*)
 		installed_image_path="boot/vmlinuz-${KERNELRELEASE}";;
 	esac
@@ -121,7 +121,7 @@ install_linux_image () {
 	done
 }
 
-install_linux_image_dbg () {
+install_freax_image_dbg () {
 	pdir=$1
 	image_pdir=$2
 
@@ -147,12 +147,12 @@ install_linux_image_dbg () {
 	# Different tools want the image in different locations
 	# perf
 	mkdir -p ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
-	cp vmlinux ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
+	cp vmfreax ${pdir}/usr/lib/debug/lib/modules/${KERNELRELEASE}/
 	# systemtap
 	mkdir -p ${pdir}/usr/lib/debug/boot/
-	ln -s ../lib/modules/${KERNELRELEASE}/vmlinux ${pdir}/usr/lib/debug/boot/vmlinux-${KERNELRELEASE}
+	ln -s ../lib/modules/${KERNELRELEASE}/vmfreax ${pdir}/usr/lib/debug/boot/vmfreax-${KERNELRELEASE}
 	# kdump-tools
-	ln -s lib/modules/${KERNELRELEASE}/vmlinux ${pdir}/usr/lib/debug/vmlinux-${KERNELRELEASE}
+	ln -s lib/modules/${KERNELRELEASE}/vmfreax ${pdir}/usr/lib/debug/vmfreax-${KERNELRELEASE}
 }
 
 install_kernel_headers () {
@@ -161,10 +161,10 @@ install_kernel_headers () {
 
 	rm -rf $pdir
 
-	"${srctree}/scripts/package/install-extmod-build" "${pdir}/usr/src/linux-headers-${version}"
+	"${srctree}/scripts/package/install-extmod-build" "${pdir}/usr/src/freax-headers-${version}"
 
 	mkdir -p $pdir/lib/modules/$version/
-	ln -s /usr/src/linux-headers-$version $pdir/lib/modules/$version/build
+	ln -s /usr/src/freax-headers-$version $pdir/lib/modules/$version/build
 }
 
 install_libc_headers () {
@@ -190,15 +190,15 @@ for package in ${packages_enabled}
 do
 	case ${package} in
 	*-dbg)
-		# This must be done after linux-image, that is, we expect the
-		# debug package appears after linux-image in debian/control.
-		install_linux_image_dbg debian/linux-image-dbg debian/linux-image;;
-	linux-image-*|user-mode-linux-*)
-		install_linux_image debian/linux-image ${package};;
-	linux-libc-dev)
-		install_libc_headers debian/linux-libc-dev;;
-	linux-headers-*)
-		install_kernel_headers debian/linux-headers ${package#linux-headers-};;
+		# This must be done after freax-image, that is, we expect the
+		# debug package appears after freax-image in debian/control.
+		install_freax_image_dbg debian/freax-image-dbg debian/freax-image;;
+	freax-image-*|user-mode-freax-*)
+		install_freax_image debian/freax-image ${package};;
+	freax-libc-dev)
+		install_libc_headers debian/freax-libc-dev;;
+	freax-headers-*)
+		install_kernel_headers debian/freax-headers ${package#freax-headers-};;
 	esac
 done
 
@@ -206,13 +206,13 @@ for package in ${packages_enabled}
 do
 	case ${package} in
 	*-dbg)
-		create_package ${package} debian/linux-image-dbg;;
-	linux-image-*|user-mode-linux-*)
-		create_package ${package} debian/linux-image;;
-	linux-libc-dev)
-		create_package ${package} debian/linux-libc-dev;;
-	linux-headers-*)
-		create_package ${package} debian/linux-headers;;
+		create_package ${package} debian/freax-image-dbg;;
+	freax-image-*|user-mode-freax-*)
+		create_package ${package} debian/freax-image;;
+	freax-libc-dev)
+		create_package ${package} debian/freax-libc-dev;;
+	freax-headers-*)
+		create_package ${package} debian/freax-headers;;
 	esac
 done
 

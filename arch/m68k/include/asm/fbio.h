@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_FBIO_H
-#define __LINUX_FBIO_H
+#ifndef __freax_FBIO_H
+#define __freax_FBIO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /* Constants used for fbio SunOS compatibility */
 /* (C) 1996 Miguel de Icaza */
@@ -180,7 +180,7 @@ struct mdi_cfginfo {
         int     mdi_pixfreq;    /* pixel clock (from PROM) */
 };
 
-/* SparcLinux specific ioctl for the MDI, should be replaced for
+/* Sparcfreax specific ioctl for the MDI, should be replaced for
  * the SET_XLUT/SET_CLUTn ioctls instead
  */
 #define MDI_CLEAR_XLUT       (MDI_IOCTL|9)
@@ -328,4 +328,4 @@ struct fbcursor32 {
 #define FBIOGCURSOR32	_IOW('F', 25, struct fbcursor32)
 #endif
 
-#endif /* __LINUX_FBIO_H */
+#endif /* __freax_FBIO_H */

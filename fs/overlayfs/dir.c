@@ -4,16 +4,16 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/module.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/atomic.h>
-#include <linux/ratelimit.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/xattr.h>
+#include <freax/security.h>
+#include <freax/cred.h>
+#include <freax/module.h>
+#include <freax/posix_acl.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/atomic.h>
+#include <freax/ratelimit.h>
 #include "overlayfs.h"
 
 static unsigned short ovl_redirect_max = 256;

@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef __LINUX_KEYCTL_H
-#define __LINUX_KEYCTL_H
+#ifndef __freax_KEYCTL_H
+#define __freax_KEYCTL_H
 
-#include <uapi/linux/keyctl.h>
+#include <uapi/freax/keyctl.h>
 
 struct kernel_pkey_query {
 	__u32		supported_ops;	/* Which ops are supported */
@@ -39,4 +39,4 @@ struct kernel_pkey_params {
 	enum kernel_pkey_operation op : 8;
 };
 
-#endif /* __LINUX_KEYCTL_H */
+#endif /* __freax_KEYCTL_H */

@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_QUOTA_TYPES_H
 #define _BCACHEFS_QUOTA_TYPES_H
 
-#include <linux/generic-radix-tree.h>
+#include <freax/generic-radix-tree.h>
 
 struct bch_qid {
 	u32		q[QTYP_NR];

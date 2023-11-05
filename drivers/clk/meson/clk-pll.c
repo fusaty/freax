@@ -26,12 +26,12 @@
  * out = in * (m + frac / frac_max) / n
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/math64.h>
+#include <freax/module.h>
 
 #include "clk-regmap.h"
 #include "clk-pll.h"

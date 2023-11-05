@@ -9,8 +9,8 @@
  * (C) Copyright 2007, 2009 Tiago Vignatti <vignatti@freedesktop.org>
  */
 
-#ifndef LINUX_VGA_H
-#define LINUX_VGA_H
+#ifndef freax_VGA_H
+#define freax_VGA_H
 
 #include <video/vga.h>
 
@@ -100,4 +100,4 @@ static inline void vga_client_unregister(struct pci_dev *pdev)
 	vga_client_register(pdev, NULL);
 }
 
-#endif /* LINUX_VGA_H */
+#endif /* freax_VGA_H */

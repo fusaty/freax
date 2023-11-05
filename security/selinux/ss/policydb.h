@@ -342,8 +342,8 @@ extern struct role_trans_datum *policydb_roletr_search(
 #define OBJECT_R "object_r"
 #define OBJECT_R_VAL 1
 
-#define POLICYDB_MAGIC SELINUX_MAGIC
-#define POLICYDB_STRING "SE Linux"
+#define POLICYDB_MAGIC SEfreax_MAGIC
+#define POLICYDB_STRING "SE freax"
 
 struct policy_file {
 	char *data;

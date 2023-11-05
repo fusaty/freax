@@ -8,17 +8,17 @@
  *	   Feng Kan <fkan@apm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/hw_random.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
 
 #define RNG_MAX_DATUM			4
 #define MAX_TRY				100

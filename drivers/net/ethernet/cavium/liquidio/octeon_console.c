@@ -18,10 +18,10 @@
 /*
  * @file octeon_console.c
  */
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/crc32.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/crc32.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"

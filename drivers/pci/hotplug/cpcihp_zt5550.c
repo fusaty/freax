@@ -11,13 +11,13 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/signal.h>	/* IRQF_SHARED */
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/signal.h>	/* IRQF_SHARED */
 #include "cpci_hotplug.h"
 #include "cpcihp_zt5550.h"
 

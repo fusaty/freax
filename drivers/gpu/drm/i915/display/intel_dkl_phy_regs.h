@@ -6,7 +6,7 @@
 #ifndef __INTEL_DKL_PHY_REGS__
 #define __INTEL_DKL_PHY_REGS__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_dkl_phy_reg {
 	u32 reg:24;

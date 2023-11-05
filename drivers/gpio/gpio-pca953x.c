@@ -8,30 +8,30 @@
  *  Derived from drivers/i2c/chips/pca9539.c
  */
 
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/cleanup.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/atomic.h>
+#include <freax/bitmap.h>
+#include <freax/cleanup.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf-generic.h>
 
-#include <linux/platform_data/pca953x.h>
+#include <freax/platform_data/pca953x.h>
 
 #define PCA953X_INPUT		0x00
 #define PCA953X_OUTPUT		0x01
@@ -126,8 +126,8 @@ MODULE_DEVICE_TABLE(i2c, pca953x_id);
 
 #ifdef CONFIG_GPIO_PCA953X_IRQ
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
 
 static const struct acpi_gpio_params pca953x_irq_gpios = { 0, 0, true };
 

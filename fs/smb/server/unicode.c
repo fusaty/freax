@@ -6,8 +6,8 @@
  *   Modified by Steve French (sfrench@us.ibm.com)
  *   Modified by Namjae Jeon (linkinjeon@kernel.org)
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 #include "glob.h"
 #include "unicode.h"
@@ -151,7 +151,7 @@ static int smb_utf16_bytes(const __le16 *from, int maxbytes,
  * null terminator).
  *
  * Note that some windows versions actually send multiword UTF-16 characters
- * instead of straight UTF16-2. The linux nls routines however aren't able to
+ * instead of straight UTF16-2. The freax nls routines however aren't able to
  * deal with those characters properly. In the event that we get some of
  * those characters, they won't be translated properly.
  *

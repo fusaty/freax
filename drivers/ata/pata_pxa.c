@@ -5,19 +5,19 @@
  * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/ata.h>
+#include <freax/libata.h>
+#include <freax/platform_device.h>
+#include <freax/dmaengine.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
 
 #include <scsi/scsi_host.h>
 
-#include <linux/platform_data/ata-pxa.h>
+#include <freax/platform_data/ata-pxa.h>
 
 #define DRV_NAME	"pata_pxa"
 #define DRV_VERSION	"0.1"

@@ -55,8 +55,8 @@ COMMON OPTIONS
 --force::
 	Don't complain, do it.
 
---vmlinux=<file>::
-        vmlinux pathname
+--vmfreax=<file>::
+        vmfreax pathname
 
 --kallsyms=<file>::
         kallsyms pathname

@@ -6,8 +6,8 @@
 #ifndef __DPAA_H
 #define __DPAA_H
 
-#include <linux/netdevice.h>
-#include <linux/refcount.h>
+#include <freax/netdevice.h>
+#include <freax/refcount.h>
 #include <net/xdp.h>
 #include <soc/fsl/qman.h>
 #include <soc/fsl/bman.h>

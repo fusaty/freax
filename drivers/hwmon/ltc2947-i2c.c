@@ -4,9 +4,9 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "ltc2947.h"
 

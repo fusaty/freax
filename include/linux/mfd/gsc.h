@@ -2,10 +2,10 @@
  *
  * Copyright (C) 2020 Gateworks Corporation
  */
-#ifndef __LINUX_MFD_GSC_H_
-#define __LINUX_MFD_GSC_H_
+#ifndef __freax_MFD_GSC_H_
+#define __freax_MFD_GSC_H_
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 /* Device Addresses */
 #define GSC_MISC	0x20
@@ -73,4 +73,4 @@ struct gsc_dev {
 	unsigned short fwcrc;
 };
 
-#endif /* __LINUX_MFD_GSC_H_ */
+#endif /* __freax_MFD_GSC_H_ */

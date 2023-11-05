@@ -4,9 +4,9 @@
 # under the terms of the GNU General Public License version 2 or later as
 # published by the Free Software Foundation.
 
-s@#include <linux/decompress/mm\.h>@@;
+s@#include <freax/decompress/mm\.h>@@;
 s@\"zlib_inflate/\([^\"]*\).*@"\1"@;
-s@<linux/kernel.h>@<stddef.h>@;
+s@<freax/kernel.h>@<stddef.h>@;
 
 s@__used@@;
-s@<linux/\([^>]*\).*@"\1"@;
+s@<freax/\([^>]*\).*@"\1"@;

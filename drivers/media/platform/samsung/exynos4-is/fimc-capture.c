@@ -6,18 +6,18 @@
  * Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/bug.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-mem2mem.h>

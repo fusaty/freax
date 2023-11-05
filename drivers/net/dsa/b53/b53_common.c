@@ -17,16 +17,16 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/b53.h>
-#include <linux/phy.h>
-#include <linux/phylink.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/b53.h>
+#include <freax/phy.h>
+#include <freax/phylink.h>
+#include <freax/etherdevice.h>
+#include <freax/if_bridge.h>
 #include <net/dsa.h>
 
 #include "b53_regs.h"

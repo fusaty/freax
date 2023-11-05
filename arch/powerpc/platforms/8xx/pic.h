@@ -1,8 +1,8 @@
 #ifndef _PPC_KERNEL_MPC8xx_H
 #define _PPC_KERNEL_MPC8xx_H
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
 
 void mpc8xx_pic_init(void);
 unsigned int mpc8xx_get_irq(void);

@@ -6,12 +6,12 @@
  * Copyright (C) 2019 Manivannan Sadhasivam
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define RDA_GPIO_OEN_VAL		0x00
 #define RDA_GPIO_OEN_SET_OUT		0x04

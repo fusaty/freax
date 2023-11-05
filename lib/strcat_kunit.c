@@ -6,7 +6,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <kunit/test.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 static volatile int unconst;
 

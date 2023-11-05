@@ -6,13 +6,13 @@
 //
 // Author: Sanjay R Mehta <sanju.mehta@amd.com>
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/iopoll.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/spi/spi.h>
+#include <freax/iopoll.h>
 
 #define AMD_SPI_CTRL0_REG	0x00
 #define AMD_SPI_EXEC_CMD	BIT(16)

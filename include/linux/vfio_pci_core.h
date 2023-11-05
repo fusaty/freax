@@ -8,13 +8,13 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/vfio.h>
-#include <linux/irqbypass.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
-#include <linux/notifier.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/vfio.h>
+#include <freax/irqbypass.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
+#include <freax/notifier.h>
 
 #ifndef VFIO_PCI_CORE_H
 #define VFIO_PCI_CORE_H

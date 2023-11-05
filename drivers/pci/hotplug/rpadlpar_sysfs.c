@@ -8,10 +8,10 @@
  *
  * Copyright (C) 2003 IBM.
  */
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <freax/kobject.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
 #include "rpaphp.h"
 #include "rpadlpar.h"
 #include "../pci.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/block_validity.c
+ *  freax/fs/ext4/block_validity.c
  *
  * Copyright (C) 2009
  * Theodore Ts'o (tytso@mit.edu)
@@ -9,15 +9,15 @@
  * should never be used as data blocks by files or directories.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/quotaops.h>
+#include <freax/buffer_head.h>
+#include <freax/swap.h>
+#include <freax/pagemap.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
 #include "ext4.h"
 
 struct ext4_system_zone {

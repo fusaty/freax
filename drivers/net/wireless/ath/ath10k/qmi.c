@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The freax Foundation. All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/string.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/debugfs.h>
+#include <freax/idr.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/platform_device.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/string.h>
 #include <net/sock.h>
 
 #include "debug.h"

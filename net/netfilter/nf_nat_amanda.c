@@ -5,15 +5,15 @@
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/udp.h>
 
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/netfilter/nf_conntrack_amanda.h>
+#include <freax/netfilter/nf_conntrack_amanda.h>
 
 #define NAT_HELPER_NAME "amanda"
 

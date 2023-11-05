@@ -10,18 +10,18 @@
  * (C) 2003 - 2010	Dominik Brodowski
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/kref.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/crc32.h>
+#include <freax/firmware.h>
+#include <freax/kref.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

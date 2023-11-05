@@ -31,7 +31,7 @@
 #define _PAGE_WRITETHRU	0x00400	/* H: W bit */
 #define _PAGE_SPECIAL	0x00800 /* S: Special page */
 
-/* No page size encoding in the linux PTE */
+/* No page size encoding in the freax PTE */
 #define _PAGE_PSIZE		0
 
 #define _PMD_PRESENT	0

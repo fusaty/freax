@@ -3,12 +3,12 @@
  *
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
 
 #include "pci_impl.h"
 

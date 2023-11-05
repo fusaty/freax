@@ -5,19 +5,19 @@
  * Copyright: Marvell International Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/device.h>
-#include <linux/genalloc.h>
-#include <linux/of_dma.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/dmaengine.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/device.h>
+#include <freax/genalloc.h>
+#include <freax/of_dma.h>
 
 #include "dmaengine.h"
 

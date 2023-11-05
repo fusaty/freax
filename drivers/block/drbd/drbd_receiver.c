@@ -11,28 +11,28 @@
  */
 
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <net/sock.h>
 
-#include <linux/drbd.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/sched/signal.h>
-#include <linux/pkt_sched.h>
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/part_stat.h>
+#include <freax/drbd.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/in.h>
+#include <freax/mm.h>
+#include <freax/memcontrol.h>
+#include <freax/mm_inline.h>
+#include <freax/slab.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/sched/signal.h>
+#include <freax/pkt_sched.h>
+#include <freax/unistd.h>
+#include <freax/vmalloc.h>
+#include <freax/random.h>
+#include <freax/string.h>
+#include <freax/scatterlist.h>
+#include <freax/part_stat.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h"
@@ -634,7 +634,7 @@ static struct socket *drbd_try_connect(struct drbd_connection *connection)
 	*  for the outgoing connections.
 	*  This is needed for multihomed hosts and to be
 	*  able to use lo: interfaces for drbd.
-	* Make sure to use 0 as port number, so linux selects
+	* Make sure to use 0 as port number, so freax selects
 	*  a free one dynamically.
 	*/
 	what = "bind before connect";

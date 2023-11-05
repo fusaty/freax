@@ -7,12 +7,12 @@
  * Copyright (C) 1998 Pete Zaitcev <zaitcev@yahoo.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 extern void restore_current(void);
 

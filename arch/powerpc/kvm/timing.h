@@ -3,13 +3,13 @@
  *
  * Copyright IBM Corp. 2008
  *
- * Authors: Christian Ehrhardt <ehrhardt@linux.vnet.ibm.com>
+ * Authors: Christian Ehrhardt <ehrhardt@freax.vnet.ibm.com>
  */
 
 #ifndef __POWERPC_KVM_EXITTIMING_H__
 #define __POWERPC_KVM_EXITTIMING_H__
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 #ifdef CONFIG_KVM_EXIT_TIMING
 void kvmppc_init_timing_stats(struct kvm_vcpu *vcpu);

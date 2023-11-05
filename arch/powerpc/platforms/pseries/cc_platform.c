@@ -7,8 +7,8 @@
  * Author: Tom Lendacky <thomas.lendacky@amd.com>
  */
 
-#include <linux/export.h>
-#include <linux/cc_platform.h>
+#include <freax/export.h>
+#include <freax/cc_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/svm.h>

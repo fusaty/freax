@@ -32,10 +32,10 @@
  */
 
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/srq.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <freax/mlx4/cmd.h>
+#include <freax/mlx4/srq.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
 
 #include "mlx4.h"
 #include "icm.h"

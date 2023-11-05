@@ -6,7 +6,7 @@
  * Author(s): Olivier Moysan <olivier.moysan@st.com> for STMicroelectronics.
  */
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 /******************** SAI Register Map **************************************/
 

@@ -24,11 +24,11 @@
  * this behaves the same as the original Reno.
  */
 
-#include <linux/mm.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/module.h>
-#include <linux/math64.h>
+#include <freax/mm.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/module.h>
+#include <freax/math64.h>
 #include <net/tcp.h>
 
 #define BICTCP_BETA_SCALE    1024	/* Scale factor beta calculation
@@ -415,9 +415,9 @@ static void hystart_update(struct sock *sk, u32 delay)
 					 now - ca->round_start, threshold,
 					 ca->delay_min, hystart_ack_delay(sk), tcp_snd_cwnd(tp));
 				NET_INC_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTTRAINDETECT);
+					      freax_MIB_TCPHYSTARTTRAINDETECT);
 				NET_ADD_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTTRAINCWND,
+					      freax_MIB_TCPHYSTARTTRAINCWND,
 					      tcp_snd_cwnd(tp));
 				tp->snd_ssthresh = tcp_snd_cwnd(tp);
 			}
@@ -435,9 +435,9 @@ static void hystart_update(struct sock *sk, u32 delay)
 			    HYSTART_DELAY_THRESH(ca->delay_min >> 3)) {
 				ca->found = 1;
 				NET_INC_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTDELAYDETECT);
+					      freax_MIB_TCPHYSTARTDELAYDETECT);
 				NET_ADD_STATS(sock_net(sk),
-					      LINUX_MIB_TCPHYSTARTDELAYCWND,
+					      freax_MIB_TCPHYSTARTDELAYCWND,
 					      tcp_snd_cwnd(tp));
 				tp->snd_ssthresh = tcp_snd_cwnd(tp);
 			}

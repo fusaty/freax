@@ -2,14 +2,14 @@
 /* Copyright (c) 2018 Facebook */
 
 #include <stdlib.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/bpf.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/bpf.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #include <bpf/bpf_endian.h>
 #include <bpf/bpf_helpers.h>

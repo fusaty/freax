@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/efi.h>
-#include <linux/gpio/machine.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_data/lp855x.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/rmi.h>
-#include <linux/spi/spi.h>
+#include <freax/efi.h>
+#include <freax/gpio/machine.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/platform_data/lp855x.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/rmi.h>
+#include <freax/spi/spi.h>
 
 #include "shared-psy-info.h"
 #include "x86-android-tablets.h"
@@ -565,8 +565,8 @@ static const struct software_node fg_bq25890_1_supply_node = {
 /* bq25892 charger settings for the flat lipo battery behind the screen */
 static const struct property_entry lenovo_yt3_bq25892_0_props[] = {
 	PROPERTY_ENTRY_STRING_ARRAY("supplied-from", lenovo_yt3_bq25892_0_suppliers),
-	PROPERTY_ENTRY_U32("linux,iinlim-percentage", 40),
-	PROPERTY_ENTRY_BOOL("linux,skip-reset"),
+	PROPERTY_ENTRY_U32("freax,iinlim-percentage", 40),
+	PROPERTY_ENTRY_BOOL("freax,skip-reset"),
 	/* Values taken from Android Factory Image */
 	PROPERTY_ENTRY_U32("ti,charge-current", 2048000),
 	PROPERTY_ENTRY_U32("ti,battery-regulation-voltage", 4352000),

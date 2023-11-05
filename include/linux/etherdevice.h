@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  NET  is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -11,16 +11,16 @@
  * Authors:	Ross Biro
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *
- *		Relocated to include/linux where it belongs by Alan Cox
+ *		Relocated to include/freax where it belongs by Alan Cox
  *							<gw4pts@gw4pts.ampr.org>
  */
-#ifndef _LINUX_ETHERDEVICE_H
-#define _LINUX_ETHERDEVICE_H
+#ifndef _freax_ETHERDEVICE_H
+#define _freax_ETHERDEVICE_H
 
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
+#include <freax/if_ether.h>
+#include <freax/netdevice.h>
+#include <freax/random.h>
+#include <freax/crc32.h>
 #include <asm/unaligned.h>
 #include <asm/bitsperlong.h>
 
@@ -619,4 +619,4 @@ static inline int eth_skb_pad(struct sk_buff *skb)
 	return skb_put_padto(skb, ETH_ZLEN);
 }
 
-#endif	/* _LINUX_ETHERDEVICE_H */
+#endif	/* _freax_ETHERDEVICE_H */

@@ -33,7 +33,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -43,10 +43,10 @@
 #ifndef __OCRDMA_H__
 #define __OCRDMA_H__
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

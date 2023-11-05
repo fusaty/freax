@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,13 +16,13 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _UAPI_LINUX_IN_H
-#define _UAPI_LINUX_IN_H
+#ifndef _UAPI_freax_IN_H
+#define _UAPI_freax_IN_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/libc-compat.h>
-#include <linux/socket.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/libc-compat.h>
+#include <freax/socket.h>
 
 #if __UAPI_DEF_IN_IPPROTO
 /* Standard well-defined IP protocols.  */
@@ -330,4 +330,4 @@ struct sockaddr_in {
 #include <asm/byteorder.h> 
 
 
-#endif /* _UAPI_LINUX_IN_H */
+#endif /* _UAPI_freax_IN_H */

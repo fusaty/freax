@@ -18,8 +18,8 @@
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
 #include <sound/soc.h>
-#include <linux/input.h>
-#include <linux/module.h>
+#include <freax/input.h>
+#include <freax/module.h>
 
 #include "../../codecs/rt5682.h"
 #include "../../codecs/rt1019.h"

@@ -5,8 +5,8 @@
 #ifndef __ASM_DEBUG_MONITORS_H
 #define __ASM_DEBUG_MONITORS_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 #include <asm/brk-imm.h>
 #include <asm/esr.h>
 #include <asm/insn.h>

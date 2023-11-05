@@ -3,11 +3,11 @@
  * Author: Sudeep Holla <sudeep.holla@arm.com>
  * Copyright 2022 Arm Limited
  */
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/idr.h>
+#include <freax/io.h>
 
 static struct acpi_ffh_info ffh_ctx;
 

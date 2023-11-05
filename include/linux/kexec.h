@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_KEXEC_H
-#define LINUX_KEXEC_H
+#ifndef freax_KEXEC_H
+#define freax_KEXEC_H
 
 #define IND_DESTINATION_BIT 0
 #define IND_INDIRECTION_BIT 1
@@ -15,21 +15,21 @@
 
 #if !defined(__ASSEMBLY__)
 
-#include <linux/crash_core.h>
+#include <freax/crash_core.h>
 #include <asm/io.h>
-#include <linux/range.h>
+#include <freax/range.h>
 
-#include <uapi/linux/kexec.h>
-#include <linux/verification.h>
+#include <uapi/freax/kexec.h>
+#include <freax/verification.h>
 
 extern note_buf_t __percpu *crash_notes;
 
 #ifdef CONFIG_KEXEC_CORE
-#include <linux/list.h>
-#include <linux/compat.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
+#include <freax/list.h>
+#include <freax/compat.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/highmem.h>
 #include <asm/kexec.h>
 
 /* Verify architecture specific macros are defined */
@@ -518,4 +518,4 @@ static inline void set_kexec_sig_enforced(void) {}
 
 #endif /* !defined(__ASSEBMLY__) */
 
-#endif /* LINUX_KEXEC_H */
+#endif /* freax_KEXEC_H */

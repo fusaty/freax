@@ -3,8 +3,8 @@
 
 #include <string.h>
 #include <stdlib.h>
-#include <linux/err.h>
-#include <linux/bpf.h>
+#include <freax/err.h>
+#include <freax/bpf.h>
 #include "libbpf.h"
 #include "libbpf_internal.h"
 

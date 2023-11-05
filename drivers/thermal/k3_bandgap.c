@@ -5,16 +5,16 @@
  * Copyright (C) 2020 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/thermal.h>
+#include <freax/types.h>
 
 #include "thermal_hwmon.h"
 

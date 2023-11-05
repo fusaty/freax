@@ -11,9 +11,9 @@
  * Hardware interface for ACP DSP Firmware binaries loader
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "../ops.h"
 #include "acp-dsp-offset.h"

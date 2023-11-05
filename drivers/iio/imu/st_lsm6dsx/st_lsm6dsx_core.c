@@ -54,24 +54,24 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/minmax.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/minmax.h>
+#include <freax/pm.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/bitfield.h>
 
-#include <linux/platform_data/st_sensors_pdata.h>
+#include <freax/platform_data/st_sensors_pdata.h>
 
 #include "st_lsm6dsx.h"
 

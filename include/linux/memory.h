@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/memory.h - generic memory definition
+ * include/freax/memory.h - generic memory definition
  *
  * This is mainly for topological representation. We define the
  * basic "struct memory_block" here, which can be embedded in per-arch
@@ -13,12 +13,12 @@
  * directory.
  *
  */
-#ifndef _LINUX_MEMORY_H_
-#define _LINUX_MEMORY_H_
+#ifndef _freax_MEMORY_H_
+#define _freax_MEMORY_H_
 
-#include <linux/node.h>
-#include <linux/compiler.h>
-#include <linux/mutex.h>
+#include <freax/node.h>
+#include <freax/compiler.h>
+#include <freax/mutex.h>
 
 #define MIN_MEMORY_BLOCK_SIZE     (1UL << SECTION_SIZE_BITS)
 
@@ -179,4 +179,4 @@ void memory_block_add_nid(struct memory_block *mem, int nid,
  */
 extern struct mutex text_mutex;
 
-#endif /* _LINUX_MEMORY_H_ */
+#endif /* _freax_MEMORY_H_ */

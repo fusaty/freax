@@ -12,7 +12,7 @@
  * understand what is going on here, the documentation for the audio
  * part of the cx2388x chip is *very* bad.
  *
- * Some of this comes from party done linux driver sources I got from
+ * Some of this comes from party done freax driver sources I got from
  * [undocumented].
  *
  * Some comes from the dscaler sources, one of the dscaler driver guy works
@@ -23,20 +23,20 @@
 
 #include "cx88.h"
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/poll.h>
+#include <freax/signal.h>
+#include <freax/ioport.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
 
 static unsigned int audio_debug;
 module_param(audio_debug, int, 0644);

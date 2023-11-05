@@ -7,16 +7,16 @@
 // Co-author: Seven Lee <wtli@nuvoton.com>
 //
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/math64.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/math64.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/jack.h>

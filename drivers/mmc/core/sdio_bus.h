@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/mmc/core/sdio_bus.h
+ *  freax/drivers/mmc/core/sdio_bus.h
  *
  *  Copyright 2007 Pierre Ossman
  */

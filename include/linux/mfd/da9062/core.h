@@ -6,8 +6,8 @@
 #ifndef __MFD_DA9062_CORE_H__
 #define __MFD_DA9062_CORE_H__
 
-#include <linux/interrupt.h>
-#include <linux/mfd/da9062/registers.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/da9062/registers.h>
 
 enum da9062_compatible_types {
 	COMPAT_TYPE_DA9061 = 1,

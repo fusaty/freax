@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This file is part of the Linux kernel.
+ * This file is part of the freax kernel.
  *
  * Copyright (c) 2011, Intel Corporation
  * Authors: Fenghua Yu <fenghua.yu@intel.com>,
- *          H. Peter Anvin <hpa@linux.intel.com>
+ *          H. Peter Anvin <hpa@freax.intel.com>
  */
 
 #include <asm/processor.h>

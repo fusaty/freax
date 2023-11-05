@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <inttypes.h>
 #include <limits.h>
-#include <linux/types.h>
+#include <freax/types.h>
 #include <sched.h>
 #include <signal.h>
 #include <stdbool.h>

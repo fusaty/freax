@@ -8,31 +8,31 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  *
  * Initial version inspired by:
- *	linux-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
+ *	freax-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
  * Initial adoption to PL022 by:
  *      Sachin Verma <sachin.verma@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl022.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/pl022.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
 
 /*
  * This macro is used to define some register default values.

@@ -4,9 +4,9 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/reset-controller.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/reset-controller.h>
 
 #include "ccu_reset.h"
 

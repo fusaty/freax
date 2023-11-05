@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/perf_event.h>
 #include "util/evsel_fprintf.h"
 #include "trace-event.h"
 

@@ -5,8 +5,8 @@
  * Author: Lee Jones <lee.jones@linaro.org>
  */
 
-#ifndef __LINUX_CLK_SPEAR_H
-#define __LINUX_CLK_SPEAR_H
+#ifndef __freax_CLK_SPEAR_H
+#define __freax_CLK_SPEAR_H
 
 #ifdef CONFIG_ARCH_SPEAR3XX
 void __init spear3xx_clk_init(void __iomem *misc_base,

@@ -7,10 +7,10 @@
  * Author:  Marco van Wieringen <mvw@planets.elm.net>
  *
  */
-#ifndef _LINUX_MOUNT_H
-#define _LINUX_MOUNT_H
+#ifndef _freax_MOUNT_H
+#define _freax_MOUNT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/barrier.h>
 
 struct super_block;
@@ -125,4 +125,4 @@ extern void kern_unmount_array(struct vfsmount *mnt[], unsigned int num);
 
 extern int cifs_root_data(char **dev, char **opts);
 
-#endif /* _LINUX_MOUNT_H */
+#endif /* _freax_MOUNT_H */

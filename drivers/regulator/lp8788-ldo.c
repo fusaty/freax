@@ -7,13 +7,13 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mfd/lp8788.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mfd/lp8788.h>
 
 /* register address */
 #define LP8788_EN_LDO_A			0x0D	/* DLDO 1 ~ 8 */

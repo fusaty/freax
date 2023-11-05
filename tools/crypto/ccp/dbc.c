@@ -16,7 +16,7 @@
 #ifndef __packed
 #define __packed __attribute__((packed))
 #endif
-#include <linux/psp-dbc.h>
+#include <freax/psp-dbc.h>
 
 int get_nonce(int fd, void *nonce_out, void *signature)
 {

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  IPv6 IOAM Lightweight Tunnel API
  *
@@ -6,8 +6,8 @@
  *  Justin Iurman <justin.iurman@uliege.be>
  */
 
-#ifndef _UAPI_LINUX_IOAM6_IPTUNNEL_H
-#define _UAPI_LINUX_IOAM6_IPTUNNEL_H
+#ifndef _UAPI_freax_IOAM6_IPTUNNEL_H
+#define _UAPI_freax_IOAM6_IPTUNNEL_H
 
 /* Encap modes:
  *  - inline: direct insertion
@@ -55,4 +55,4 @@ enum {
 
 #define IOAM6_IPTUNNEL_MAX (__IOAM6_IPTUNNEL_MAX - 1)
 
-#endif /* _UAPI_LINUX_IOAM6_IPTUNNEL_H */
+#endif /* _UAPI_freax_IOAM6_IPTUNNEL_H */

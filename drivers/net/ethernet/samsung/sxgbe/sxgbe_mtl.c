@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
+#include <freax/io.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
 
 #include "sxgbe_mtl.h"
 #include "sxgbe_reg.h"

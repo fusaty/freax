@@ -11,13 +11,13 @@
 //         with code, comments and ideas from :-
 //         Richard Purdie <richard@openedhand.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/pm.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

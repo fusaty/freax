@@ -10,7 +10,7 @@
 #if !defined(_TRACE_RNBD_SRV_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RNBD_SRV_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 struct rnbd_srv_session;
 struct rtrs_srv_op;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (C) 2016 Broadcom */
-#include <linux/serial_reg.h>
+#include <freax/serial_reg.h>
 #include <asm/cputype.h>
 
 /* Physical register offset and virtual register offset */

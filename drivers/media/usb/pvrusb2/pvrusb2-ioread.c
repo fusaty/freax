@@ -6,12 +6,12 @@
 
 #include "pvrusb2-ioread.h"
 #include "pvrusb2-debug.h"
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
 
 #define BUFFER_COUNT 32
 #define BUFFER_SIZE PAGE_ALIGN(0x4000)

@@ -5,13 +5,13 @@
  * Copyright (C) 2013, Intel Corporation. All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/delay.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/delay.h>
 
 #include "sst-dsp.h"
 #include "sst-dsp-priv.h"

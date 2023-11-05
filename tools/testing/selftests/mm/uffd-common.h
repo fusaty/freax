@@ -19,13 +19,13 @@
 #include <signal.h>
 #include <poll.h>
 #include <string.h>
-#include <linux/mman.h>
+#include <freax/mman.h>
 #include <sys/mman.h>
 #include <sys/syscall.h>
 #include <sys/ioctl.h>
 #include <sys/wait.h>
 #include <pthread.h>
-#include <linux/userfaultfd.h>
+#include <freax/userfaultfd.h>
 #include <setjmp.h>
 #include <stdbool.h>
 #include <assert.h>

@@ -5,17 +5,17 @@
  * Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/input.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
+#include <freax/input.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/sched.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/clps711x.h>
 
 #define CLPS711X_KEYPAD_COL_COUNT	8
 

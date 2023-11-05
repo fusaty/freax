@@ -16,11 +16,11 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/remoteproc.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/debugfs.h>
+#include <freax/remoteproc.h>
+#include <freax/device.h>
+#include <freax/uaccess.h>
 
 #include "remoteproc_internal.h"
 

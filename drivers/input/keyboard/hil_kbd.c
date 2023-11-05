@@ -1,5 +1,5 @@
 /*
- * Generic linux-input device driver for keyboard devices
+ * Generic freax-input device driver for keyboard devices
  *
  * Copyright (c) 2001 Brian S. Julin
  * All rights reserved.
@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/hil.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/pci_ids.h>
+#include <freax/hil.h>
+#include <freax/input.h>
+#include <freax/serio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/completion.h>
+#include <freax/slab.h>
+#include <freax/pci_ids.h>
 
 #define PREFIX "HIL: "
 

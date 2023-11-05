@@ -6,13 +6,13 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "pcie-designware.h"
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <freax/pci-epc.h>
+#include <freax/pci-epf.h>
 
 void dw_pcie_ep_linkup(struct dw_pcie_ep *ep)
 {

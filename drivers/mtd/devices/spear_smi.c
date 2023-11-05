@@ -6,36 +6,36 @@
  *
  * Copyright © 2010 STMicroelectronics.
  * Ashish Priyadarshi
- * Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim <shiraz.freax.kernel@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spear_smi.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/param.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/spear_smi.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 /* SMI clock rate */
 #define SMI_MAX_CLOCK_FREQ	50000000 /* 50 MHz */
@@ -1100,5 +1100,5 @@ static struct platform_driver spear_smi_driver = {
 module_platform_driver(spear_smi_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Ashish Priyadarshi, Shiraz Hashim <shiraz.linux.kernel@gmail.com>");
+MODULE_AUTHOR("Ashish Priyadarshi, Shiraz Hashim <shiraz.freax.kernel@gmail.com>");
 MODULE_DESCRIPTION("MTD SMI driver for serial nor flash chips");

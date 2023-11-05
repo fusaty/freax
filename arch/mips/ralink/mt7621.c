@@ -5,13 +5,13 @@
  * Copyright (C) 2015 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
+#include <freax/memblock.h>
+#include <freax/pci.h>
+#include <freax/bug.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mipsregs.h>

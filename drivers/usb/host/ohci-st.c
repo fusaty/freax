@@ -9,19 +9,19 @@
  * Derived from ohci-platform.c
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/usb/ohci_pdriver.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/hrtimer.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/usb/ohci_pdriver.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 
 #include "ohci.h"
 

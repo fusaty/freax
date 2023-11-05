@@ -4,8 +4,8 @@
  *   (C) 2017 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/page.h>
 #include <asm/psw.h>

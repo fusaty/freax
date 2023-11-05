@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CRC_CCITT_H
-#define _LINUX_CRC_CCITT_H
+#ifndef _freax_CRC_CCITT_H
+#define _freax_CRC_CCITT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 extern u16 const crc_ccitt_table[256];
 extern u16 const crc_ccitt_false_table[256];
@@ -20,4 +20,4 @@ static inline u16 crc_ccitt_false_byte(u16 crc, const u8 c)
     return (crc << 8) ^ crc_ccitt_false_table[(crc >> 8) ^ c];
 }
 
-#endif /* _LINUX_CRC_CCITT_H */
+#endif /* _freax_CRC_CCITT_H */

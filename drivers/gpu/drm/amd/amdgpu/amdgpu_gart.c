@@ -26,8 +26,8 @@
  *          Jerome Glisse
  */
 
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
 
 #include <drm/amdgpu_drm.h>
 #ifdef CONFIG_X86

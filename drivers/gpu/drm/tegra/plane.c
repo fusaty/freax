@@ -3,9 +3,9 @@
  * Copyright (C) 2017 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/interconnect.h>
+#include <freax/dma-mapping.h>
+#include <freax/iommu.h>
+#include <freax/interconnect.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

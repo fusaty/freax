@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <inttypes.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_endian.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <freax/if_ether.h>
+#include <freax/ip.h>
 
 /* This function extracts the last byte of the daddr, and uses it
  * as output dev index.

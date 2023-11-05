@@ -873,7 +873,7 @@ below:
 	AUX area mmap length 4194304
 	perf event ring buffer mmapped per cpu
 	Synthesizing auxtrace information
-	Linux
+	freax
 	[ perf record: Woken up 1 times to write data ]
 	[ perf record: Captured and wrote 0.042 MB perf.data ]
 
@@ -1470,7 +1470,7 @@ On the guest machine:
 Run a small test case, just 'uname' in this example:
 
  $ uname
- Linux
+ freax
 
 On the host machine:
 
@@ -1543,8 +1543,8 @@ Notes:
        CPU 3/KVM 13376/13384 [002]  7919.408803365:      branches:  ffffffffc0f8edd5 __vmx_vcpu_run+0x15 ([kernel.kallsyms]) => ffffffffc0f8eca0 vmx_update_host_rsp+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408803365:      branches:  ffffffffc0f8ee1b __vmx_vcpu_run+0x5b ([kernel.kallsyms]) => ffffffffc0f8ed60 vmx_vmenter+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408803461:      branches:  ffffffffc0f8ed62 vmx_vmenter+0x2 ([kernel.kallsyms]) =>                0 [unknown] ([unknown])
- VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408803461:      branches:                 0 [unknown] ([unknown]) =>     7f851c9b5a5c init_cacheinfo+0x3ac (/usr/lib/x86_64-linux-gnu/libc-2.31.so)
- VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408803567:      branches:      7f851c9b5a5a init_cacheinfo+0x3aa (/usr/lib/x86_64-linux-gnu/libc-2.31.so) =>                0 [unknown] ([unknown])
+ VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408803461:      branches:                 0 [unknown] ([unknown]) =>     7f851c9b5a5c init_cacheinfo+0x3ac (/usr/lib/x86_64-freax-gnu/libc-2.31.so)
+ VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408803567:      branches:      7f851c9b5a5a init_cacheinfo+0x3aa (/usr/lib/x86_64-freax-gnu/libc-2.31.so) =>                0 [unknown] ([unknown])
        CPU 3/KVM 13376/13384 [002]  7919.408803567:      branches:                 0 [unknown] ([unknown]) => ffffffffc0f8ed80 vmx_vmexit+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408803596:      branches:  ffffffffc0f6619a vmx_vcpu_run+0x26a ([kernel.kallsyms]) => ffffffffb2255c60 x86_virt_spec_ctrl+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408803801:      branches:  ffffffffc0f66445 vmx_vcpu_run+0x515 ([kernel.kallsyms]) => ffffffffb2290b30 native_write_msr+0x0 ([kernel.kallsyms])
@@ -1594,8 +1594,8 @@ Notes:
        CPU 3/KVM 13376/13384 [002]  7919.408804066:      branches:  ffffffffc0f8edd5 __vmx_vcpu_run+0x15 ([kernel.kallsyms]) => ffffffffc0f8eca0 vmx_update_host_rsp+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408804066:      branches:  ffffffffc0f8ee1b __vmx_vcpu_run+0x5b ([kernel.kallsyms]) => ffffffffc0f8ed60 vmx_vmenter+0x0 ([kernel.kallsyms])
        CPU 3/KVM 13376/13384 [002]  7919.408804162:      branches:  ffffffffc0f8ed62 vmx_vmenter+0x2 ([kernel.kallsyms]) =>                0 [unknown] ([unknown])
- VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804162:      branches:                 0 [unknown] ([unknown]) =>     7f851c9b5a5c init_cacheinfo+0x3ac (/usr/lib/x86_64-linux-gnu/libc-2.31.so)
- VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804273:      branches:      7f851cb7c0e4 _dl_init+0x74 (/usr/lib/x86_64-linux-gnu/ld-2.31.so) =>     7f851cb7bf50 call_init.part.0+0x0 (/usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804162:      branches:                 0 [unknown] ([unknown]) =>     7f851c9b5a5c init_cacheinfo+0x3ac (/usr/lib/x86_64-freax-gnu/libc-2.31.so)
+ VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804273:      branches:      7f851cb7c0e4 _dl_init+0x74 (/usr/lib/x86_64-freax-gnu/ld-2.31.so) =>     7f851cb7bf50 call_init.part.0+0x0 (/usr/lib/x86_64-freax-gnu/ld-2.31.so)
  VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804526:      branches:      55e0c00136f0 _start+0x0 (/usr/bin/uname) => ffffffff83200ac0 asm_exc_page_fault+0x0 ([kernel.kallsyms])
  VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804526:      branches:  ffffffff83200ac3 asm_exc_page_fault+0x3 ([kernel.kallsyms]) => ffffffff83201290 error_entry+0x0 ([kernel.kallsyms])
  VM:13376 VCPU:003            uname  3404/3404  [002]  7919.408804534:      branches:  ffffffff832012fa error_entry+0x6a ([kernel.kallsyms]) => ffffffff830b59a0 sync_regs+0x0 ([kernel.kallsyms])
@@ -1622,32 +1622,32 @@ Here is an example tracing a test program from the kernel's KVM selftests:
  [ perf record: Captured and wrote 0.280 MB perf.data ]
  # perf script --guest-code --itrace=bep --ns -F-period,+addr,+flags
  [SNIP]
-   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   call                   ffffffffc13b2ff5 __vmx_vcpu_run+0x15 (vmlinux) => ffffffffc13b2f50 vmx_update_host_rsp+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   return                 ffffffffc13b2f5d vmx_update_host_rsp+0xd (vmlinux) => ffffffffc13b2ffa __vmx_vcpu_run+0x1a (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   call                   ffffffffc13b303b __vmx_vcpu_run+0x5b (vmlinux) => ffffffffc13b2f80 vmx_vmenter+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962087836:      branches:   vmentry                ffffffffc13b2f82 vmx_vmenter+0x2 (vmlinux) =>                0 [unknown] ([unknown])
+   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   call                   ffffffffc13b2ff5 __vmx_vcpu_run+0x15 (vmfreax) => ffffffffc13b2f50 vmx_update_host_rsp+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   return                 ffffffffc13b2f5d vmx_update_host_rsp+0xd (vmfreax) => ffffffffc13b2ffa __vmx_vcpu_run+0x1a (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962087733:      branches:   call                   ffffffffc13b303b __vmx_vcpu_run+0x5b (vmfreax) => ffffffffc13b2f80 vmx_vmenter+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962087836:      branches:   vmentry                ffffffffc13b2f82 vmx_vmenter+0x2 (vmfreax) =>                0 [unknown] ([unknown])
    [guest/18436] 18436 [007] 10897.962087836:      branches:   vmentry                               0 [unknown] ([unknown]) =>           402c81 guest_code+0x131 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962087836:      branches:   call                             402c81 guest_code+0x131 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>           40dba0 ucall+0x0 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962088248:      branches:   vmexit                           40dba0 ucall+0x0 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>                0 [unknown] ([unknown])
-   tsc_msrs_test 18436 [007] 10897.962088248:      branches:   vmexit                                0 [unknown] ([unknown]) => ffffffffc13b2fa0 vmx_vmexit+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962088248:      branches:   jmp                    ffffffffc13b2fa0 vmx_vmexit+0x0 (vmlinux) => ffffffffc13b2fd2 vmx_vmexit+0x32 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962088256:      branches:   return                 ffffffffc13b2fd2 vmx_vmexit+0x32 (vmlinux) => ffffffffc13b3040 __vmx_vcpu_run+0x60 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962088270:      branches:   return                 ffffffffc13b30b6 __vmx_vcpu_run+0xd6 (vmlinux) => ffffffffc13b2f2e vmx_vcpu_enter_exit+0x4e (vmlinux)
+   tsc_msrs_test 18436 [007] 10897.962088248:      branches:   vmexit                                0 [unknown] ([unknown]) => ffffffffc13b2fa0 vmx_vmexit+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962088248:      branches:   jmp                    ffffffffc13b2fa0 vmx_vmexit+0x0 (vmfreax) => ffffffffc13b2fd2 vmx_vmexit+0x32 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962088256:      branches:   return                 ffffffffc13b2fd2 vmx_vmexit+0x32 (vmfreax) => ffffffffc13b3040 __vmx_vcpu_run+0x60 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962088270:      branches:   return                 ffffffffc13b30b6 __vmx_vcpu_run+0xd6 (vmfreax) => ffffffffc13b2f2e vmx_vcpu_enter_exit+0x4e (vmfreax)
  [SNIP]
-   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   call                   ffffffffc13b2ff5 __vmx_vcpu_run+0x15 (vmlinux) => ffffffffc13b2f50 vmx_update_host_rsp+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   return                 ffffffffc13b2f5d vmx_update_host_rsp+0xd (vmlinux) => ffffffffc13b2ffa __vmx_vcpu_run+0x1a (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   call                   ffffffffc13b303b __vmx_vcpu_run+0x5b (vmlinux) => ffffffffc13b2f80 vmx_vmenter+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089424:      branches:   vmentry                ffffffffc13b2f82 vmx_vmenter+0x2 (vmlinux) =>                0 [unknown] ([unknown])
+   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   call                   ffffffffc13b2ff5 __vmx_vcpu_run+0x15 (vmfreax) => ffffffffc13b2f50 vmx_update_host_rsp+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   return                 ffffffffc13b2f5d vmx_update_host_rsp+0xd (vmfreax) => ffffffffc13b2ffa __vmx_vcpu_run+0x1a (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089321:      branches:   call                   ffffffffc13b303b __vmx_vcpu_run+0x5b (vmfreax) => ffffffffc13b2f80 vmx_vmenter+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089424:      branches:   vmentry                ffffffffc13b2f82 vmx_vmenter+0x2 (vmfreax) =>                0 [unknown] ([unknown])
    [guest/18436] 18436 [007] 10897.962089424:      branches:   vmentry                               0 [unknown] ([unknown]) =>           40dba0 ucall+0x0 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962089701:      branches:   jmp                              40dc1b ucall+0x7b (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>           40dc39 ucall+0x99 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962089701:      branches:   jcc                              40dc3c ucall+0x9c (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>           40dc20 ucall+0x80 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962089701:      branches:   jcc                              40dc3c ucall+0x9c (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>           40dc20 ucall+0x80 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962089701:      branches:   jcc                              40dc37 ucall+0x97 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>           40dc50 ucall+0xb0 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test)
    [guest/18436] 18436 [007] 10897.962089878:      branches:   vmexit                           40dc55 ucall+0xb5 (/home/user/git/work/tools/testing/selftests/kselftest_install/kvm/tsc_msrs_test) =>                0 [unknown] ([unknown])
-   tsc_msrs_test 18436 [007] 10897.962089878:      branches:   vmexit                                0 [unknown] ([unknown]) => ffffffffc13b2fa0 vmx_vmexit+0x0 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089878:      branches:   jmp                    ffffffffc13b2fa0 vmx_vmexit+0x0 (vmlinux) => ffffffffc13b2fd2 vmx_vmexit+0x32 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089887:      branches:   return                 ffffffffc13b2fd2 vmx_vmexit+0x32 (vmlinux) => ffffffffc13b3040 __vmx_vcpu_run+0x60 (vmlinux)
-   tsc_msrs_test 18436 [007] 10897.962089901:      branches:   return                 ffffffffc13b30b6 __vmx_vcpu_run+0xd6 (vmlinux) => ffffffffc13b2f2e vmx_vcpu_enter_exit+0x4e (vmlinux)
+   tsc_msrs_test 18436 [007] 10897.962089878:      branches:   vmexit                                0 [unknown] ([unknown]) => ffffffffc13b2fa0 vmx_vmexit+0x0 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089878:      branches:   jmp                    ffffffffc13b2fa0 vmx_vmexit+0x0 (vmfreax) => ffffffffc13b2fd2 vmx_vmexit+0x32 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089887:      branches:   return                 ffffffffc13b2fd2 vmx_vmexit+0x32 (vmfreax) => ffffffffc13b3040 __vmx_vcpu_run+0x60 (vmfreax)
+   tsc_msrs_test 18436 [007] 10897.962089901:      branches:   return                 ffffffffc13b30b6 __vmx_vcpu_run+0xd6 (vmfreax) => ffffffffc13b2f2e vmx_vcpu_enter_exit+0x4e (vmfreax)
  [SNIP]
 
  # perf kvm --guest-code --guest --host report -i perf.data --stdio | head -20
@@ -1663,7 +1663,7 @@ Here is an example tracing a test program from the kernel's KVM selftests:
  # Children      Self  Command        Shared Object         Symbol
  # ........  ........  .............  ....................  ...........................................
  #
-    54.70%     0.00%  tsc_msrs_test  [kernel.vmlinux]      [k] entry_SYSCALL_64_after_hwframe
+    54.70%     0.00%  tsc_msrs_test  [kernel.vmfreax]      [k] entry_SYSCALL_64_after_hwframe
             |
             ---entry_SYSCALL_64_after_hwframe
                do_syscall_64

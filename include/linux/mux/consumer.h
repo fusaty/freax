@@ -7,10 +7,10 @@
  * Author: Peter Rosin <peda@axentia.se>
  */
 
-#ifndef _LINUX_MUX_CONSUMER_H
-#define _LINUX_MUX_CONSUMER_H
+#ifndef _freax_MUX_CONSUMER_H
+#define _freax_MUX_CONSUMER_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 struct device;
 struct mux_control;
@@ -61,4 +61,4 @@ struct mux_control *devm_mux_control_get(struct device *dev,
 struct mux_state *devm_mux_state_get(struct device *dev,
 				     const char *mux_name);
 
-#endif /* _LINUX_MUX_CONSUMER_H */
+#endif /* _freax_MUX_CONSUMER_H */

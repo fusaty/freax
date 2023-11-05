@@ -5,17 +5,17 @@
  *  Copyright (C) 2000 Andrew Henroid
  */
 
-#ifndef _LINUX_PM_H
-#define _LINUX_PM_H
+#ifndef _freax_PM_H
+#define _freax_PM_H
 
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/hrtimer.h>
-#include <linux/completion.h>
+#include <freax/export.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/timer.h>
+#include <freax/hrtimer.h>
+#include <freax/completion.h>
 
 /*
  * Callbacks for platform drivers to implement.
@@ -906,4 +906,4 @@ enum dpm_order {
 	DPM_ORDER_DEV_LAST,
 };
 
-#endif /* _LINUX_PM_H */
+#endif /* _freax_PM_H */

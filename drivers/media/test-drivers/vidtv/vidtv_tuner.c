@@ -10,13 +10,13 @@
  * Copyright (C) 2020 Daniel W. S. Almeida
  */
 
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include <media/dvb_frontend.h>
 

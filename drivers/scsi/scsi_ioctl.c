@@ -5,16 +5,16 @@
  * - get rid of some verify_areas and use __copy*user and __get/put_user
  *   for the ones that remain
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/cdrom.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
+#include <freax/cdrom.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

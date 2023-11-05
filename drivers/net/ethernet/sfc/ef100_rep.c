@@ -9,7 +9,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 #include "ef100_rep.h"
 #include "ef100_netdev.h"
 #include "ef100_nic.h"

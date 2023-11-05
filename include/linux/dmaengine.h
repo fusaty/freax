@@ -2,16 +2,16 @@
 /*
  * Copyright(c) 2004 - 2006 Intel Corporation. All rights reserved.
  */
-#ifndef LINUX_DMAENGINE_H
-#define LINUX_DMAENGINE_H
+#ifndef freax_DMAENGINE_H
+#define freax_DMAENGINE_H
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/uio.h>
-#include <linux/bug.h>
-#include <linux/scatterlist.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/uio.h>
+#include <freax/bug.h>
+#include <freax/scatterlist.h>
+#include <freax/bitmap.h>
+#include <freax/types.h>
 #include <asm/page.h>
 
 /**
@@ -225,7 +225,7 @@ enum sum_check_flags {
 
 /**
  * dma_cap_mask_t - capabilities bitmap modeled after cpumask_t.
- * See linux/cpumask.h
+ * See freax/cpumask.h
  */
 typedef struct { DECLARE_BITMAP(bits, DMA_TX_TYPE_END); } dma_cap_mask_t;
 

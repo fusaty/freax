@@ -5,17 +5,17 @@
  * Copyright (C) 2022 Texas Instruments Incorporated - https://www.ti.com
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/pinctrl/consumer.h>
 
 #include "core.h"
 

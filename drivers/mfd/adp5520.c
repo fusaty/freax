@@ -18,16 +18,16 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
 
-#include <linux/mfd/adp5520.h>
+#include <freax/mfd/adp5520.h>
 
 struct adp5520_chip {
 	struct i2c_client *client;

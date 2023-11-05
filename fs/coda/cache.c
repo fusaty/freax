@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Cache operations for Coda.
- * For Linux 2.1: (C) 1997 Carnegie Mellon University
- * For Linux 2.3: (C) 2000 Carnegie Mellon University
+ * For freax 2.1: (C) 1997 Carnegie Mellon University
+ * For freax 2.3: (C) 2000 Carnegie Mellon University
  *
  * Carnegie Mellon encourages users of this code to contribute improvements
  * to the Coda project http://www.coda.cs.cmu.edu/ <coda@cs.cmu.edu>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/uaccess.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 #include "coda_cache.h"
 
 static atomic_t permission_epoch = ATOMIC_INIT(0);

@@ -6,12 +6,12 @@
  */
 
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"Fujitsu serial touchscreen driver"
 

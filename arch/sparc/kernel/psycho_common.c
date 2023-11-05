@@ -3,10 +3,10 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/numa.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/numa.h>
+#include <freax/platform_device.h>
 
 #include <asm/upa.h>
 

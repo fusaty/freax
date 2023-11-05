@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2017 ARM Limited or its affiliates.
  * Copyright (C) 2017 Gilad Ben-Yossef <gilad@benyossef.com>
- * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 #ifndef _CRYPTO_SM3_H
 #define _CRYPTO_SM3_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SM3_DIGEST_SIZE	32
 #define SM3_BLOCK_SIZE	64

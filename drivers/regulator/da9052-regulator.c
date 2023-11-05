@@ -6,19 +6,19 @@
 //
 // Author: David Dajun Chen <dchen@diasemi.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
-#include <linux/mfd/da9052/pdata.h>
+#include <freax/mfd/da9052/da9052.h>
+#include <freax/mfd/da9052/reg.h>
+#include <freax/mfd/da9052/pdata.h>
 
 /* Buck step size */
 #define DA9052_BUCK_PERI_3uV_STEP		100000

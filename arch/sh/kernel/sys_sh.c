@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/kernel/sys_sh.c
+ * freax/arch/sh/kernel/sys_sh.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/SuperH
+ * have a non-standard calling sequence on the freax/SuperH
  * platform.
  *
  * Taken from i386 version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ipc.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/syscalls.h>
+#include <freax/mman.h>
+#include <freax/file.h>
+#include <freax/utsname.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/ipc.h>
 #include <asm/syscalls.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/cacheflush.h>
 #include <asm/cachectl.h>

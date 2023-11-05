@@ -6,14 +6,14 @@ CC_VERSION="$2"
 LD=$3
 
 if test -z "$KBUILD_BUILD_USER"; then
-	LINUX_COMPILE_BY=$(whoami | sed 's/\\/\\\\/')
+	freax_COMPILE_BY=$(whoami | sed 's/\\/\\\\/')
 else
-	LINUX_COMPILE_BY=$KBUILD_BUILD_USER
+	freax_COMPILE_BY=$KBUILD_BUILD_USER
 fi
 if test -z "$KBUILD_BUILD_HOST"; then
-	LINUX_COMPILE_HOST=`uname -n`
+	freax_COMPILE_HOST=`uname -n`
 else
-	LINUX_COMPILE_HOST=$KBUILD_BUILD_HOST
+	freax_COMPILE_HOST=$KBUILD_BUILD_HOST
 fi
 
 LD_VERSION=$(LC_ALL=C $LD -v | head -n1 |
@@ -21,7 +21,7 @@ LD_VERSION=$(LC_ALL=C $LD -v | head -n1 |
 
 cat <<EOF
 #define UTS_MACHINE		"${UTS_MACHINE}"
-#define LINUX_COMPILE_BY	"${LINUX_COMPILE_BY}"
-#define LINUX_COMPILE_HOST	"${LINUX_COMPILE_HOST}"
-#define LINUX_COMPILER		"${CC_VERSION}, ${LD_VERSION}"
+#define freax_COMPILE_BY	"${freax_COMPILE_BY}"
+#define freax_COMPILE_HOST	"${freax_COMPILE_HOST}"
+#define freax_COMPILER		"${CC_VERSION}, ${LD_VERSION}"
 EOF

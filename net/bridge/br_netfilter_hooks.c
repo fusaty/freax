@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Handle firewalling
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -10,25 +10,25 @@
  *	Lennert dedicates this file to Kerstin Wurdinger.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/netfilter_bridge.h>
-#include <uapi/linux/netfilter_bridge.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_arp.h>
-#include <linux/in_route.h>
-#include <linux/rculist.h>
-#include <linux/inetdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/ip.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/if_pppox.h>
+#include <freax/ppp_defs.h>
+#include <freax/netfilter_bridge.h>
+#include <uapi/freax/netfilter_bridge.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_arp.h>
+#include <freax/in_route.h>
+#include <freax/rculist.h>
+#include <freax/inetdevice.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -37,10 +37,10 @@
 #include <net/netfilter/br_netfilter.h>
 #include <net/netns/generic.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "br_private.h"
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
 
 static unsigned int brnf_net_id __read_mostly;
@@ -1215,4 +1215,4 @@ module_exit(br_netfilter_fini);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Lennert Buytenhek <buytenh@gnu.org>");
 MODULE_AUTHOR("Bart De Schuymer <bdschuym@pandora.be>");
-MODULE_DESCRIPTION("Linux ethernet netfilter firewall bridge");
+MODULE_DESCRIPTION("freax ethernet netfilter firewall bridge");

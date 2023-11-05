@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include "smumgr.h"
 #include "smu10_inc.h"

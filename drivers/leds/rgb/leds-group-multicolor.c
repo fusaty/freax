@@ -11,14 +11,14 @@
  * Copyright 2023 Jean-Jacques Hiblot <jjhiblot@traphandler.com>
  */
 
-#include <linux/err.h>
-#include <linux/leds.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/leds.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 struct leds_multicolor {
 	struct led_classdev_mc mc_cdev;

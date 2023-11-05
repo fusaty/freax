@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2015 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-Fusionfreax.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -38,10 +38,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 #include <asm/unaligned.h>
 
 #include "mpt3sas_base.h"

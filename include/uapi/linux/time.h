@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_TIME_H
-#define _UAPI_LINUX_TIME_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_TIME_H
+#define _UAPI_freax_TIME_H
 
-#include <linux/types.h>
-#include <linux/time_types.h>
+#include <freax/types.h>
+#include <freax/time_types.h>
 
 #ifndef __KERNEL__
 #ifndef _STRUCT_TIMESPEC
@@ -72,4 +72,4 @@ struct timezone {
  */
 #define TIMER_ABSTIME			0x01
 
-#endif /* _UAPI_LINUX_TIME_H */
+#endif /* _UAPI_freax_TIME_H */

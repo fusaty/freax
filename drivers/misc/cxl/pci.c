@@ -3,16 +3,16 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/pci_regs.h>
-#include <linux/pci_ids.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <freax/pci_regs.h>
+#include <freax/pci_ids.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/delay.h>
 #include <asm/opal.h>
 #include <asm/msi_bitmap.h>
 #include <asm/pnv-pci.h>

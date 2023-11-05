@@ -6,10 +6,10 @@
  * Copyright (C) 2009 Alan Stern (stern@rowland.harvard.edu)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb_usual.h>
 
 
 /*

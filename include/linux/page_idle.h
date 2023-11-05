@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MM_PAGE_IDLE_H
-#define _LINUX_MM_PAGE_IDLE_H
+#ifndef _freax_MM_PAGE_IDLE_H
+#define _freax_MM_PAGE_IDLE_H
 
-#include <linux/bitops.h>
-#include <linux/page-flags.h>
-#include <linux/page_ext.h>
+#include <freax/bitops.h>
+#include <freax/page-flags.h>
+#include <freax/page_ext.h>
 
 #ifdef CONFIG_PAGE_IDLE_FLAG
 
@@ -144,4 +144,4 @@ static inline void set_page_idle(struct page *page)
 {
 	folio_set_idle(page_folio(page));
 }
-#endif /* _LINUX_MM_PAGE_IDLE_H */
+#endif /* _freax_MM_PAGE_IDLE_H */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * AMD SVM support
  *
@@ -14,9 +14,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_types.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
+#include <freax/kvm_types.h>
+#include <freax/kvm_host.h>
+#include <freax/kernel.h>
 
 #include <asm/msr-index.h>
 #include <asm/debugreg.h>

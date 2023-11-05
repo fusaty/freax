@@ -5,18 +5,18 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/delay.h>
-#include <linux/property.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/delay.h>
+#include <freax/property.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define AD5755_NUM_CHANNELS 4
 

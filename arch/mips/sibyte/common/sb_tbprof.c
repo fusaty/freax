@@ -2,24 +2,24 @@
 /*
  *
  * Copyright (C) 2001, 2002, 2003 Broadcom Corporation
- * Copyright (C) 2007 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2007 Ralf Baechle <ralf@freax-mips.org>
  * Copyright (C) 2007 MIPS Technologies, Inc.
- *    written by Ralf Baechle <ralf@linux-mips.org>
+ *    written by Ralf Baechle <ralf@freax-mips.org>
  */
 
 #undef DEBUG
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
 #include <asm/io.h>
 #include <asm/sibyte/sb1250.h>
 
@@ -42,7 +42,7 @@
 #define K_INT_PERF_CNT K_BCM1480_INT_PERF_CNT
 #endif
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define SBPROF_TB_MAJOR 240
 
@@ -591,5 +591,5 @@ module_init(sbprof_tb_init);
 module_exit(sbprof_tb_cleanup);
 
 MODULE_ALIAS_CHARDEV_MAJOR(SBPROF_TB_MAJOR);
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@freax-mips.org>");
 MODULE_LICENSE("GPL");

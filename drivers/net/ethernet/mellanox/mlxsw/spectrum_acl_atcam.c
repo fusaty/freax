@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/refcount.h>
-#include <linux/rhashtable.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/refcount.h>
+#include <freax/rhashtable.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/mlxsw.h>
 

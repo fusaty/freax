@@ -8,9 +8,9 @@
 #ifndef __SOUND_SOC_SST_DSP_H
 #define __SOUND_SOC_SST_DSP_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
 
 struct sst_dsp;
 

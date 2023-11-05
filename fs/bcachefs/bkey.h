@@ -2,7 +2,7 @@
 #ifndef _BCACHEFS_BKEY_H
 #define _BCACHEFS_BKEY_H
 
-#include <linux/bug.h>
+#include <freax/bug.h>
 #include "bcachefs_format.h"
 
 #include "btree_types.h"

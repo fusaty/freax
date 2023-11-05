@@ -5,10 +5,10 @@
 #include <sched.h>
 
 #include <unistd.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/sock_diag.h>
-#include <linux/unix_diag.h>
+#include <freax/netlink.h>
+#include <freax/rtnetlink.h>
+#include <freax/sock_diag.h>
+#include <freax/unix_diag.h>
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <sys/types.h>

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include "sun8i-v3s.dtsi"
 #include "sunxi-common-regulators.dtsi"
 
@@ -33,73 +33,73 @@
 		button-a {
 			gpios = <&gpio_expander 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-A";
-			linux,code = <BTN_EAST>;
+			freax,code = <BTN_EAST>;
 		};
 
 		button-b {
 			gpios = <&gpio_expander 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-B";
-			linux,code = <BTN_SOUTH>;
+			freax,code = <BTN_SOUTH>;
 		};
 
 		button-down {
 			gpios = <&gpio_expander 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "DPAD-DOWN";
-			linux,code = <BTN_DPAD_DOWN>;
+			freax,code = <BTN_DPAD_DOWN>;
 		};
 
 		button-left {
 			gpios = <&gpio_expander 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "DPAD-LEFT";
-			linux,code = <BTN_DPAD_LEFT>;
+			freax,code = <BTN_DPAD_LEFT>;
 		};
 
 		button-right {
 			gpios = <&gpio_expander 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "DPAD-RIGHT";
-			linux,code = <BTN_DPAD_RIGHT>;
+			freax,code = <BTN_DPAD_RIGHT>;
 		};
 
 		button-se {
 			gpios = <&gpio_expander 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-SELECT";
-			linux,code = <BTN_SELECT>;
+			freax,code = <BTN_SELECT>;
 		};
 
 		button-st {
 			gpios = <&gpio_expander 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-START";
-			linux,code = <BTN_START>;
+			freax,code = <BTN_START>;
 		};
 
 		button-tl {
 			gpios = <&gpio_expander 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-L";
-			linux,code = <BTN_TL>;
+			freax,code = <BTN_TL>;
 		};
 
 		button-tr {
 			gpios = <&gpio_expander 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-R";
-			linux,code = <BTN_TR>;
+			freax,code = <BTN_TR>;
 		};
 
 		button-up {
 			gpios = <&gpio_expander 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "DPAD-UP";
-			linux,code = <BTN_DPAD_UP>;
+			freax,code = <BTN_DPAD_UP>;
 		};
 
 		button-x {
 			gpios = <&gpio_expander 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-X";
-			linux,code = <BTN_NORTH>;
+			freax,code = <BTN_NORTH>;
 		};
 
 		button-y {
 			gpios = <&gpio_expander 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 			label = "BTN-Y";
-			linux,code = <BTN_WEST>;
+			freax,code = <BTN_WEST>;
 		};
 	};
 };

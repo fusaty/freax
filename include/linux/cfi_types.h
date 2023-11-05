@@ -2,11 +2,11 @@
 /*
  * Clang Control Flow Integrity (CFI) type definitions.
  */
-#ifndef _LINUX_CFI_TYPES_H
-#define _LINUX_CFI_TYPES_H
+#ifndef _freax_CFI_TYPES_H
+#define _freax_CFI_TYPES_H
 
 #ifdef __ASSEMBLY__
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #ifdef CONFIG_CFI_CLANG
 /*
@@ -42,4 +42,4 @@
 #endif
 
 #endif /* __ASSEMBLY__ */
-#endif /* _LINUX_CFI_TYPES_H */
+#endif /* _freax_CFI_TYPES_H */

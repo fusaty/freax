@@ -6,8 +6,8 @@
  * Peng Fan <peng.fan@nxp.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/interconnect/fsl,imx8mp.h>
 
 #include "imx.h"

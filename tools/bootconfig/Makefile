@@ -9,7 +9,7 @@ srctree := $(patsubst %/,%,$(dir $(CURDIR)))
 srctree := $(patsubst %/,%,$(dir $(srctree)))
 endif
 
-LIBSRC = $(srctree)/lib/bootconfig.c $(srctree)/include/linux/bootconfig.h
+LIBSRC = $(srctree)/lib/bootconfig.c $(srctree)/include/freax/bootconfig.h
 CFLAGS = -Wall -g -I$(CURDIR)/include
 
 ALL_TARGETS := bootconfig
@@ -17,7 +17,7 @@ ALL_PROGRAMS := $(patsubst %,$(OUTPUT)%,$(ALL_TARGETS))
 
 all: $(ALL_PROGRAMS) test
 
-$(OUTPUT)bootconfig: main.c include/linux/bootconfig.h $(LIBSRC)
+$(OUTPUT)bootconfig: main.c include/freax/bootconfig.h $(LIBSRC)
 	$(CC) $(filter %.c,$^) $(CFLAGS) -o $@
 
 test: $(ALL_PROGRAMS) test-bootconfig.sh

@@ -6,20 +6,20 @@
 //
 // Author: David Dajun Chen <dchen@diasemi.com>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
-#include <linux/mfd/da9055/pdata.h>
+#include <freax/mfd/da9055/core.h>
+#include <freax/mfd/da9055/reg.h>
+#include <freax/mfd/da9055/pdata.h>
 
 #define DA9055_MIN_UA		0
 #define DA9055_MAX_UA		3

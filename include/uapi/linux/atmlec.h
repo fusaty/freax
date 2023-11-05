@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * ATM Lan Emulation Daemon driver interface
  *
@@ -8,11 +8,11 @@
 #ifndef _ATMLEC_H_
 #define _ATMLEC_H_
 
-#include <linux/atmapi.h>
-#include <linux/atmioc.h>
-#include <linux/atm.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
+#include <freax/atmapi.h>
+#include <freax/atmioc.h>
+#include <freax/atm.h>
+#include <freax/if_ether.h>
+#include <freax/types.h>
 
 /* ATM lec daemon control socket */
 #define ATMLEC_CTRL	_IO('a', ATMIOC_LANE)

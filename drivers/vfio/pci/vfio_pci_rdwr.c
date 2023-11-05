@@ -10,12 +10,12 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/vfio.h>
-#include <linux/vgaarb.h>
+#include <freax/fs.h>
+#include <freax/pci.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/vfio.h>
+#include <freax/vgaarb.h>
 
 #include "vfio_pci_priv.h"
 

@@ -3,28 +3,28 @@
  * Pinctrl GPIO driver for Intel Baytrail
  *
  * Copyright (c) 2012-2013, Intel Corporation
- * Author: Mathias Nyman <mathias.nyman@linux.intel.com>
+ * Author: Mathias Nyman <mathias.nyman@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/array_size.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/string_helpers.h>
+#include <freax/acpi.h>
+#include <freax/array_size.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/string_helpers.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
 
 #include "pinctrl-intel.h"
 

@@ -3,8 +3,8 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include "user_config.h"
 #include "../transport_ipc.h"

@@ -13,7 +13,7 @@
 #include "kvm_util.h"
 #include "processor.h"
 #include "test_util.h"
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define BAD_ID_REG_VAL	0x1badc0deul
 

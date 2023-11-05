@@ -5,11 +5,11 @@
  *	(c) 1998 Martin Mares <mj@ucw.cz>
  */
 
-#ifndef _LINUX_ASM_VGA_H_
-#define _LINUX_ASM_VGA_H_
+#ifndef _freax_ASM_VGA_H_
+#define _freax_ASM_VGA_H_
 
-#include <linux/bug.h>
-#include <linux/string.h>
+#include <freax/bug.h>
+#include <freax/string.h>
 #include <asm/types.h>
 
 #define VT_BUF_HAVE_RW

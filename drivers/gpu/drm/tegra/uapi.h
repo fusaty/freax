@@ -4,10 +4,10 @@
 #ifndef _TEGRA_DRM_UAPI_H
 #define _TEGRA_DRM_UAPI_H
 
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/xarray.h>
+#include <freax/dma-mapping.h>
+#include <freax/idr.h>
+#include <freax/kref.h>
+#include <freax/xarray.h>
 
 #include <drm/drm.h>
 

@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/user.h>
-#include <linux/string.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/kallsyms.h>
-#include <linux/rtc.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/sched/debug.h>
+#include <freax/sched.h>
+#include <freax/signal.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/user.h>
+#include <freax/string.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/ptrace.h>
+#include <freax/kallsyms.h>
+#include <freax/rtc.h>
+#include <freax/uaccess.h>
+#include <freax/kprobes.h>
+#include <freax/kdebug.h>
+#include <freax/sched/debug.h>
 
 #include <asm/setup.h>
 #include <asm/traps.h>

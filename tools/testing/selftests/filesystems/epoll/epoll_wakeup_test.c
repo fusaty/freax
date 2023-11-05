@@ -2,7 +2,7 @@
 
 #define _GNU_SOURCE
 #include <asm/unistd.h>
-#include <linux/time_types.h>
+#include <freax/time_types.h>
 #include <poll.h>
 #include <unistd.h>
 #include <assert.h>

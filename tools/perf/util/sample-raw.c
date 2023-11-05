@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 #include <string.h>
-#include <linux/string.h>
+#include <freax/string.h>
 #include "evlist.h"
 #include "env.h"
 #include "header.h"

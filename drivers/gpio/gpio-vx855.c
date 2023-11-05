@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Linux GPIOlib driver for the VIA VX855 integrated southbridge GPIO
+ * freax GPIOlib driver for the VIA VX855 integrated southbridge GPIO
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
  * Copyright (C) 2010 One Laptop per Child
  * Author: Harald Welte <HaraldWelte@viatech.com>
  * All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/io.h>
 
 #define MODULE_NAME "vx855_gpio"
 

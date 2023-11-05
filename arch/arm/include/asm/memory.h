@@ -15,10 +15,10 @@
 #error "Do not include <asm/memory.h> directly"
 #endif
 
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
+#include <freax/compiler.h>
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/sizes.h>
 
 #ifdef CONFIG_NEED_MACH_MEMORY_H
 #include <mach/memory.h>

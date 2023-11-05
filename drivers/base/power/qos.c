@@ -27,14 +27,14 @@
  *     allocated and free'd.
  */
 
-#include <linux/pm_qos.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
+#include <freax/pm_qos.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
+#include <freax/pm_runtime.h>
+#include <freax/err.h>
 #include <trace/events/power.h>
 
 #include "power.h"

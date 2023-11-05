@@ -7,16 +7,16 @@
 //     Copyright (c) 2016 MediaTek Inc.
 //
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6331/registers.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6331-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/mfd/mt6397/core.h>
+#include <freax/mfd/mt6331/registers.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/mt6331-regulator.h>
+#include <freax/regulator/of_regulator.h>
 
 #define MT6331_LDO_MODE_NORMAL	0
 #define MT6331_LDO_MODE_LP	1

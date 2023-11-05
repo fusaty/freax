@@ -5,8 +5,8 @@
  * Copyright (C) 2015 Alban Bedel <albeu@free.fr>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_GPIO_ATH79_H
-#define __LINUX_PLATFORM_DATA_GPIO_ATH79_H
+#ifndef __freax_PLATFORM_DATA_GPIO_ATH79_H
+#define __freax_PLATFORM_DATA_GPIO_ATH79_H
 
 struct ath79_gpio_platform_data {
 	unsigned ngpios;

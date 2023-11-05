@@ -38,18 +38,18 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/user_namespace.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/user_namespace.h>
 
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/gss_krb5.h>
+#include <freax/sunrpc/auth_gss.h>
+#include <freax/sunrpc/gss_err.h>
+#include <freax/sunrpc/svcauth.h>
+#include <freax/sunrpc/svcauth_gss.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/sunrpc/gss_krb5.h>
 
 #include <trace/events/rpcgss.h>
 

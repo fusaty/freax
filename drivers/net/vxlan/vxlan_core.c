@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/igmp.h>
-#include <linux/if_ether.h>
-#include <linux/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/udp.h>
+#include <freax/igmp.h>
+#include <freax/if_ether.h>
+#include <freax/ethtool.h>
 #include <net/arp.h>
 #include <net/ndisc.h>
 #include <net/gro.h>
@@ -42,7 +42,7 @@
 #define FDB_AGE_INTERVAL (10 * HZ)	/* rescan interval */
 
 /* UDP port for VXLAN traffic.
- * The IANA assigned port is 4789, but the Linux default is 8472
+ * The IANA assigned port is 4789, but the freax default is 8472
  * for compatibility with early adopters.
  */
 static unsigned short vxlan_port __read_mostly = 8472;

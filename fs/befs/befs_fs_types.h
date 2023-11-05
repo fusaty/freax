@@ -6,17 +6,17 @@
  *
  *
  *
- * from linux/include/linux/befs_fs.h
+ * from freax/include/freax/befs_fs.h
  *
  * Copyright (C) 1999 Makoto Kato (m_kato@ga2.so-net.ne.jp)
  *
  */
 
-#ifndef _LINUX_BEFS_FS_TYPES
-#define _LINUX_BEFS_FS_TYPES
+#ifndef _freax_BEFS_FS_TYPES
+#define _freax_BEFS_FS_TYPES
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <freax/types.h>
 #endif /*__KERNEL__*/
 
 #define PACKED __attribute__ ((__packed__))
@@ -253,4 +253,4 @@ typedef struct {
 	u16 all_key_length;
 } PACKED befs_host_btree_nodehead;
 
-#endif				/* _LINUX_BEFS_FS_TYPES */
+#endif				/* _freax_BEFS_FS_TYPES */

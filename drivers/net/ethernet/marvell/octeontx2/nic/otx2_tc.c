@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/rhashtable.h>
-#include <linux/bitfield.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/rhashtable.h>
+#include <freax/bitfield.h>
 #include <net/flow_dissector.h>
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

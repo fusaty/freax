@@ -2,10 +2,10 @@
 #ifndef INCLUDE_XEN_OPS_H
 #define INCLUDE_XEN_OPS_H
 
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/efi.h>
-#include <linux/virtio_anchor.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/efi.h>
+#include <freax/virtio_anchor.h>
 #include <xen/features.h>
 #include <asm/xen/interface.h>
 #include <xen/interface/vcpu.h>

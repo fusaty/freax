@@ -6,25 +6,25 @@
  *
  * Copyright (c) 2004,2006 Simtec Electronics
  *	Ben Dooks, <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  *
  * S3C2410/S3C2440/S3C24XX Internal RTC Driver
 */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
+#include <freax/clk.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 
 #include <asm/irq.h>
 #include "rtc-s3c.h"

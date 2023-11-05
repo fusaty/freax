@@ -2,7 +2,7 @@
 /*
  * SDX55 SoC device tree source
  *
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2020, Linaro Ltd.
  */
 
@@ -317,7 +317,7 @@
 				    "atu",
 				    "config";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			freax,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 

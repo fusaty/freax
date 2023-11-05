@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Isovalent */
 
-#include <linux/bpf.h>
-#include <linux/bpf_mprog.h>
+#include <freax/bpf.h>
+#include <freax/bpf_mprog.h>
 
 static int bpf_mprog_link(struct bpf_tuple *tuple,
 			  u32 id_or_fd, u32 flags,

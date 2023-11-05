@@ -5,9 +5,9 @@
 #include <crypto/algapi.h>
 #include <crypto/sm4.h>
 #include <crypto/internal/simd.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/types.h>
+#include <freax/module.h>
+#include <freax/cpufeature.h>
+#include <freax/types.h>
 
 MODULE_ALIAS_CRYPTO("sm4");
 MODULE_ALIAS_CRYPTO("sm4-ce");

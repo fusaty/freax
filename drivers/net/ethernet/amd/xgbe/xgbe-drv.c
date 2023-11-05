@@ -114,15 +114,15 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/if_ether.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/tcp.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/if_ether.h>
+#include <freax/net_tstamp.h>
+#include <freax/phy.h>
 #include <net/vxlan.h>
 
 #include "xgbe.h"

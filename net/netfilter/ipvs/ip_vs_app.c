@@ -2,7 +2,7 @@
 /*
  * ip_vs_app.c: Application module support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@freaxvirtualserver.org>
  *
  * Most code here is taken from ip_masq_app.c in kernel 2.2. The difference
  * is that ip_vs_app module handles the reverse direction (incoming requests
@@ -16,20 +16,20 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/netfilter.h>
+#include <freax/slab.h>
 #include <net/net_namespace.h>
 #include <net/protocol.h>
 #include <net/tcp.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/mutex.h>
+#include <freax/stat.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/mutex.h>
 
 #include <net/ip_vs.h>
 

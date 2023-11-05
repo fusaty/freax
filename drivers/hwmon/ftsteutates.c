@@ -5,16 +5,16 @@
  * Copyright (C) 2016 Fujitsu Technology Solutions GmbH,
  *		  Thilo Cestonaro <thilo.cestonaro@ts.fujitsu.com>
  */
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/watchdog.h>
 
 #define FTS_DEVICE_ID_REG		0x0000
 #define FTS_DEVICE_REVISION_REG		0x0001

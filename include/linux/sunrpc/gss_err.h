@@ -1,5 +1,5 @@
 /*
- *  linux/include/sunrpc/gss_err.h
+ *  freax/include/sunrpc/gss_err.h
  *
  *  Adapted from MIT Kerberos 5-1.2.1 include/gssapi/gssapi.h
  *
@@ -31,8 +31,8 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef _LINUX_SUNRPC_GSS_ERR_H
-#define _LINUX_SUNRPC_GSS_ERR_H
+#ifndef _freax_SUNRPC_GSS_ERR_H
+#define _freax_SUNRPC_GSS_ERR_H
 
 typedef unsigned int OM_uint32;
 
@@ -161,4 +161,4 @@ typedef unsigned int OM_uint32;
 /* XXXX This is a necessary evil until the spec is fixed */
 #define GSS_S_CRED_UNAVAIL GSS_S_FAILURE
 
-#endif /* __LINUX_SUNRPC_GSS_ERR_H */
+#endif /* __freax_SUNRPC_GSS_ERR_H */

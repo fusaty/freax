@@ -7,15 +7,15 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/machine.h>
+#include <freax/mfd/lp8788.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 /* register address */
 #define LP8788_ADC_CONF			0x60

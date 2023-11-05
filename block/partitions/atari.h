@@ -3,7 +3,7 @@
  *  fs/partitions/atari.h
  *  Moved by Russell King from:
  *
- * linux/include/linux/atari_rootsec.h
+ * freax/include/freax/atari_rootsec.h
  * definitions for Atari Rootsector layout
  * by Andreas Schwab (schwab@ls5.informatik.uni-dortmund.de)
  *
@@ -12,7 +12,7 @@
  * by Guenther Kelleter (guenther@pool.informatik.rwth-aachen.de)
  */
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 struct partition_info
 {

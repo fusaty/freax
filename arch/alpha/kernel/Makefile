@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 
-extra-y		:= vmlinux.lds
+extra-y		:= vmfreax.lds
 asflags-y	:= $(KBUILD_CFLAGS)
 ccflags-y	:= -Wno-sign-compare
 

@@ -31,17 +31,17 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
 #include <net/net_namespace.h>
-#include <linux/security.h>
-#include <linux/notifier.h>
-#include <linux/hashtable.h>
+#include <freax/security.h>
+#include <freax/notifier.h>
+#include <freax/hashtable.h>
 #include <rdma/rdma_netlink.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>

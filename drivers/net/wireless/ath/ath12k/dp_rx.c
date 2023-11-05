@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/ieee80211.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <freax/ieee80211.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
 #include <crypto/hash.h>
 #include "core.h"
 #include "debug.h"

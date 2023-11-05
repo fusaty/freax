@@ -3,14 +3,14 @@
  * Clock driver for the ARM Integrator/IM-PD1 board
  * Copyright (C) 2012-2013 Linus Walleij
  */
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "icst.h"
 #include "clk-icst.h"

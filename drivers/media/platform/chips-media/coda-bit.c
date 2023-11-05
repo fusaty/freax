@@ -8,15 +8,15 @@
  * Copyright (C) 2012-2014 Philipp Zabel, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/platform_device.h>
-#include <linux/ratelimit.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/irqreturn.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/platform_device.h>
+#include <freax/ratelimit.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

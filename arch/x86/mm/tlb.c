@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/init.h>
+#include <freax/init.h>
 
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/sched/smt.h>
-#include <linux/task_work.h>
-#include <linux/mmu_notifier.h>
+#include <freax/mm.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/cpu.h>
+#include <freax/debugfs.h>
+#include <freax/sched/smt.h>
+#include <freax/task_work.h>
+#include <freax/mmu_notifier.h>
 
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>

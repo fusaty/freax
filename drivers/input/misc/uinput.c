@@ -18,16 +18,16 @@
  *	0.1	20/06/2002
  *		- first public version
  */
-#include <uapi/linux/uinput.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/overflow.h>
-#include <linux/input/mt.h>
+#include <uapi/freax/uinput.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/overflow.h>
+#include <freax/input/mt.h>
 #include "../input-compat.h"
 
 #define UINPUT_NAME		"uinput"

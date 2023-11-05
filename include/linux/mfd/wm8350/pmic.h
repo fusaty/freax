@@ -5,12 +5,12 @@
  * Copyright 2007 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_PMIC_H
-#define __LINUX_MFD_WM8350_PMIC_H
+#ifndef __freax_MFD_WM8350_PMIC_H
+#define __freax_MFD_WM8350_PMIC_H
 
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/regulator/machine.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
+#include <freax/regulator/machine.h>
 
 /*
  * Register values.

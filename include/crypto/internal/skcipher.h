@@ -11,8 +11,8 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/skcipher.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 /*
  * Set this if your algorithm is sync but needs a reqsize larger

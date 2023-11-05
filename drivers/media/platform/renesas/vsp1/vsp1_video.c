@@ -7,13 +7,13 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/videodev2.h>
+#include <freax/wait.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-dev.h>

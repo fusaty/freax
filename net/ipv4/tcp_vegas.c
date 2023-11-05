@@ -13,7 +13,7 @@
  * The main aspects that distinguish this implementation from the
  * Arizona Vegas implementation are:
  *   o We do not change the loss detection or recovery mechanisms of
- *     Linux in any way. Linux already recovers from losses quite well,
+ *     freax in any way. freax already recovers from losses quite well,
  *     using fine-grained timers, NewReno, and FACK.
  *   o To avoid the performance penalty imposed by increasing cwnd
  *     only every-other RTT during slow start, we increase during
@@ -32,10 +32,10 @@
  *     assumed senders never went idle.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/inet_diag.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/inet_diag.h>
 
 #include <net/tcp.h>
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  * This file is provided under a dual BSD/GPLv2 license.  When using or
  * redistributing this file, you may do so under either license.
@@ -16,7 +16,7 @@
 #ifndef __SOF_FIRMWARE_EXT_MANIFEST4_H__
 #define __SOF_FIRMWARE_EXT_MANIFEST4_H__
 
-#include <linux/uuid.h>
+#include <freax/uuid.h>
 
 /* In ASCII  $AE1 */
 #define SOF_EXT_MAN4_MAGIC_NUMBER	0x31454124

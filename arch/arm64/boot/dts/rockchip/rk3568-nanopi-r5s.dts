@@ -39,7 +39,7 @@
 		power_led: led-power {
 			color = <LED_COLOR_ID_RED>;
 			function = LED_FUNCTION_POWER;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			gpios = <&gpio4 RK_PD2 GPIO_ACTIVE_HIGH>;
 		};
 

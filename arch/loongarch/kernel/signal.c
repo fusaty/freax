@@ -10,24 +10,24 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2014, Imagination Technologies Ltd.
  */
-#include <linux/audit.h>
-#include <linux/cache.h>
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/personality.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/compiler.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <freax/audit.h>
+#include <freax/cache.h>
+#include <freax/context_tracking.h>
+#include <freax/entry-common.h>
+#include <freax/irqflags.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/personality.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/unistd.h>
+#include <freax/compiler.h>
+#include <freax/syscalls.h>
+#include <freax/uaccess.h>
 
 #include <asm/asm.h>
 #include <asm/cacheflush.h>

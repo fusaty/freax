@@ -5,16 +5,16 @@
  * Copyright (C) 2020 Intel Corporation
  *
  * Authors:
- *	Mark Gross <mgross@linux.intel.com>
+ *	Mark Gross <mgross@freax.intel.com>
  *	Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#ifndef _LINUX_PM_QOS_H
-#define _LINUX_PM_QOS_H
+#ifndef _freax_PM_QOS_H
+#define _freax_PM_QOS_H
 
-#include <linux/plist.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
+#include <freax/plist.h>
+#include <freax/notifier.h>
+#include <freax/device.h>
 
 enum pm_qos_flags_status {
 	PM_QOS_FLAGS_UNDEFINED = -1,
@@ -47,7 +47,7 @@ enum pm_qos_type {
 /*
  * Note: The lockless read path depends on the CPU accessing target_value
  * or effective_flags atomically.  Atomic access is only guaranteed on all CPU
- * types linux supports for 32 bit quantites
+ * types freax supports for 32 bit quantites
  */
 struct pm_qos_constraints {
 	struct plist_head list;

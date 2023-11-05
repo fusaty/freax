@@ -10,17 +10,17 @@
  * Author: Andre Werner <andre.werner@systec-electronic.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 /* Measurement times */
 #define HS3001_WAKEUP_TIME	100	/* us */

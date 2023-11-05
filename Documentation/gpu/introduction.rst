@@ -2,7 +2,7 @@
 Introduction
 ============
 
-The Linux DRM layer contains code intended to support the needs of
+The freax DRM layer contains code intended to support the needs of
 complex graphics devices, usually containing programmable pipelines well
 suited to 3D graphics acceleration. Graphics drivers in the kernel may
 make use of DRM functions to make tasks like memory management,
@@ -87,10 +87,10 @@ Here we just document some of the specialities of the GPU subsystem.
 Feature Merge Deadlines
 -----------------------
 
-All feature work must be in the linux-next tree by the -rc6 release of the
+All feature work must be in the freax-next tree by the -rc6 release of the
 current release cycle, otherwise they must be postponed and can't reach the next
 merge window. All patches must have landed in the drm-next tree by latest -rc7,
-but if your branch is not in linux-next then this must have happened by -rc6
+but if your branch is not in freax-next then this must have happened by -rc6
 already.
 
 After that point only bugfixes (like after the upstream merge window has closed
@@ -99,7 +99,7 @@ allowed.
 
 This means that there's a blackout-period of about one month where feature work
 can't be merged. The recommended way to deal with that is having a -next tree
-that's always open, but making sure to not feed it into linux-next during the
+that's always open, but making sure to not feed it into freax-next during the
 blackout period. As an example, drm-misc works like that.
 
 Code of Conduct
@@ -131,7 +131,7 @@ like. Since are just a few hundreds lines of code, they are quite easy to read.
 External References
 ===================
 
-Delving into a Linux kernel subsystem for the first time can be an overwhelming
+Delving into a freax kernel subsystem for the first time can be an overwhelming
 experience, one needs to get familiar with all the concepts and learn about the
 subsystem's internals, among other details.
 
@@ -141,7 +141,7 @@ and documents that can be used to learn about DRM/KMS and graphics in general.
 There are different reasons why someone might want to get into DRM: porting an
 existing fbdev driver, write a DRM driver for a new hardware, fixing bugs that
 could face when working on the graphics user-space stack, etc. For this reason,
-the learning material covers many aspects of the Linux graphics stack. From an
+the learning material covers many aspects of the freax graphics stack. From an
 overview of the kernel and user-space stacks to very specific topics.
 
 The list is sorted in reverse chronological order, to keep the most up-to-date
@@ -152,10 +152,10 @@ in which the changes to the DRM subsystem were made.
 Conference talks
 ----------------
 
-* `An Overview of the Linux and Userspace Graphics Stack <https://www.youtube.com/watch?v=wjAJmqwg47k>`_ - Paul Kocialkowski (2020)
-* `Getting pixels on screen on Linux: introduction to Kernel Mode Setting <https://www.youtube.com/watch?v=haes4_Xnc5Q>`_ - Simon Ser (2020)
+* `An Overview of the freax and Userspace Graphics Stack <https://www.youtube.com/watch?v=wjAJmqwg47k>`_ - Paul Kocialkowski (2020)
+* `Getting pixels on screen on freax: introduction to Kernel Mode Setting <https://www.youtube.com/watch?v=haes4_Xnc5Q>`_ - Simon Ser (2020)
 * `Everything Great about Upstream Graphics <https://www.youtube.com/watch?v=kVzHOgt6WGE>`_ - Daniel Vetter (2019)
-* `An introduction to the Linux DRM subsystem <https://www.youtube.com/watch?v=LbDOCJcDRoo>`_ - Maxime Ripard (2017)
+* `An introduction to the freax DRM subsystem <https://www.youtube.com/watch?v=LbDOCJcDRoo>`_ - Maxime Ripard (2017)
 * `Embrace the Atomic (Display) Age <https://www.youtube.com/watch?v=LjiB_JeDn2M>`_ - Daniel Vetter (2016)
 * `Anatomy of an Atomic KMS Driver <https://www.youtube.com/watch?v=lihqR9sENpc>`_ - Laurent Pinchart (2015)
 * `Atomic Modesetting for Drivers <https://www.youtube.com/watch?v=kl9suFgbTc8>`_ - Daniel Vetter (2015)
@@ -164,11 +164,11 @@ Conference talks
 Slides and articles
 -------------------
 
-* `Understanding the Linux Graphics Stack <https://bootlin.com/doc/training/graphics/graphics-slides.pdf>`_ - Bootlin (2022)
+* `Understanding the freax Graphics Stack <https://bootlin.com/doc/training/graphics/graphics-slides.pdf>`_ - Bootlin (2022)
 * `DRM KMS overview <https://wiki.st.com/stm32mpu/wiki/DRM_KMS_overview>`_ - STMicroelectronics (2021)
-* `Linux graphic stack <https://studiopixl.com/2017-05-13/linux-graphic-stack-an-overview>`_ - Nathan Gauër (2017)
+* `freax graphic stack <https://studiopixl.com/2017-05-13/freax-graphic-stack-an-overview>`_ - Nathan Gauër (2017)
 * `Atomic mode setting design overview, part 1 <https://lwn.net/Articles/653071/>`_ - Daniel Vetter (2015)
 * `Atomic mode setting design overview, part 2 <https://lwn.net/Articles/653466/>`_ - Daniel Vetter (2015)
 * `The DRM/KMS subsystem from a newbie’s point of view <https://bootlin.com/pub/conferences/2014/elce/brezillon-drm-kms/brezillon-drm-kms.pdf>`_ - Boris Brezillon (2014)
-* `A brief introduction to the Linux graphics stack <https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/>`_ - Iago Toral (2014)
-* `The Linux Graphics Stack <https://blog.mecheye.net/2012/06/the-linux-graphics-stack/>`_ - Jasper St. Pierre (2012)
+* `A brief introduction to the freax graphics stack <https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-freax-graphics-stack/>`_ - Iago Toral (2014)
+* `The freax Graphics Stack <https://blog.mecheye.net/2012/06/the-freax-graphics-stack/>`_ - Jasper St. Pierre (2012)

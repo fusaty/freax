@@ -7,8 +7,8 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/ccp.h>
+#include <freax/debugfs.h>
+#include <freax/ccp.h>
 
 #include "ccp-dev.h"
 

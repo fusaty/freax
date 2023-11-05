@@ -8,14 +8,14 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/workqueue.h>
+#include <freax/mfd/da903x.h>
+#include <freax/slab.h>
 
 #define DA9034_MANUAL_CTRL	0x50
 #define DA9034_LDO_ADC_EN	(1 << 4)

@@ -8,7 +8,7 @@
 #ifndef __CC_AEAD_H__
 #define __CC_AEAD_H__
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <crypto/algapi.h>
 #include <crypto/ctr.h>
 

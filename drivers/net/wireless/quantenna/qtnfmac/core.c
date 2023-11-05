@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (c) 2015-2016 Quantenna Communications. All rights reserved. */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/if_ether.h>
-#include <linux/nospec.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/if_ether.h>
+#include <freax/nospec.h>
 
 #include "core.h"
 #include "bus.h"

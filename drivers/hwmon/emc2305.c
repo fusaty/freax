@@ -5,12 +5,12 @@
  * Copyright (C) 2022 Nvidia Technologies Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/emc2305.h>
-#include <linux/thermal.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_data/emc2305.h>
+#include <freax/thermal.h>
 
 static const unsigned short
 emc2305_normal_i2c[] = { 0x27, 0x2c, 0x2d, 0x2e, 0x2f, 0x4c, 0x4d, I2C_CLIENT_END };

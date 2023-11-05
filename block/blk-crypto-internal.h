@@ -3,11 +3,11 @@
  * Copyright 2019 Google LLC
  */
 
-#ifndef __LINUX_BLK_CRYPTO_INTERNAL_H
-#define __LINUX_BLK_CRYPTO_INTERNAL_H
+#ifndef __freax_BLK_CRYPTO_INTERNAL_H
+#define __freax_BLK_CRYPTO_INTERNAL_H
 
-#include <linux/bio.h>
-#include <linux/blk-mq.h>
+#include <freax/bio.h>
+#include <freax/blk-mq.h>
 
 /* Represents a crypto mode supported by blk-crypto  */
 struct blk_crypto_mode {
@@ -237,4 +237,4 @@ blk_crypto_fallback_evict_key(const struct blk_crypto_key *key)
 
 #endif /* CONFIG_BLK_INLINE_ENCRYPTION_FALLBACK */
 
-#endif /* __LINUX_BLK_CRYPTO_INTERNAL_H */
+#endif /* __freax_BLK_CRYPTO_INTERNAL_H */

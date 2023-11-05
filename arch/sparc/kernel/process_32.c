@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/*  linux/arch/sparc/kernel/process.c
+/*  freax/arch/sparc/kernel/process.c
  *
  *  Copyright (C) 1995, 2008 David S. Miller (davem@davemloft.net)
  *  Copyright (C) 1996 Eddie C. Dost   (ecd@skynet.be)
@@ -8,28 +8,28 @@
 /*
  * This file handles the architecture-dependent parts of process handling..
  */
-#include <linux/elfcore.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <freax/elfcore.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/smp.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
 
 #include <asm/auxio.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/delay.h>
 #include <asm/processor.h>

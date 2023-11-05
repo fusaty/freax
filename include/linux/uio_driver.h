@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/uio_driver.h
+ * include/freax/uio_driver.h
  *
  * Copyright(C) 2005, Benedikt Spranger <b.spranger@linutronix.de>
  * Copyright(C) 2005, Thomas Gleixner <tglx@linutronix.de>
@@ -13,9 +13,9 @@
 #ifndef _UIO_DRIVER_H_
 #define _UIO_DRIVER_H_
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
 
 struct module;
 struct uio_map;
@@ -165,4 +165,4 @@ extern int __must_check
 #define UIO_PORT_GPIO	2
 #define UIO_PORT_OTHER	3
 
-#endif /* _LINUX_UIO_DRIVER_H_ */
+#endif /* _freax_UIO_DRIVER_H_ */

@@ -3,7 +3,7 @@
  * Copyright(c) 2015 - 2019 Intel Corporation.
  */
 
-#include <linux/net.h>
+#include <freax/net.h>
 #include <rdma/ib_smi.h>
 
 #include "hfi.h"

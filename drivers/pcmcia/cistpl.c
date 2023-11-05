@@ -9,19 +9,19 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/security.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/major.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/security.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

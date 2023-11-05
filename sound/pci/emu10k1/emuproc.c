@@ -9,8 +9,8 @@
  *  Routines for control of EMU10K1 chips / proc interface routines
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <freax/slab.h>
+#include <freax/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 #include "p16v.h"

@@ -5,13 +5,13 @@
 #include "ixgbe_common.h"
 #include "ixgbe_type.h"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/hwmon.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/device.h>
+#include <freax/netdevice.h>
+#include <freax/hwmon.h>
 
 /* hwmon callback functions */
 static ssize_t ixgbe_hwmon_show_location(struct device *dev,

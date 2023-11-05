@@ -6,7 +6,7 @@
 #ifndef __INTEL_PSR_H__
 #define __INTEL_PSR_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum fb_op_origin;
 struct drm_connector;

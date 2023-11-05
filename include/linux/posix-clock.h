@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#ifndef _LINUX_POSIX_CLOCK_H_
-#define _LINUX_POSIX_CLOCK_H_
+#ifndef _freax_POSIX_CLOCK_H_
+#define _freax_POSIX_CLOCK_H_
 
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/posix-timers.h>
-#include <linux/rwsem.h>
+#include <freax/cdev.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/posix-timers.h>
+#include <freax/rwsem.h>
 
 struct posix_clock;
 struct posix_clock_context;

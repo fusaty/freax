@@ -8,10 +8,10 @@
 #ifndef _SMBACL_H
 #define _SMBACL_H
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/posix_acl.h>
-#include <linux/mnt_idmapping.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/posix_acl.h>
+#include <freax/mnt_idmapping.h>
 
 #include "mgmt/tree_connect.h"
 

@@ -6,16 +6,16 @@
  * This driver supports the following Measurement Computing devices: CIO-DAC16,
  * CIO-DAC08, and PC104-DAC06.
  */
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/isa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
+#include <freax/isa.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #define CIO_DAC_NUM_CHAN 16
 

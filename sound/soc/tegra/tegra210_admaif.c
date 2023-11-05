@@ -4,13 +4,13 @@
 //
 // Copyright (c) 2020 NVIDIA CORPORATION.  All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "tegra210_admaif.h"

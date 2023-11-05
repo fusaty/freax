@@ -6,8 +6,8 @@
  */
 
 #include <sound/core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include "seq_system.h"
 #include "seq_ports.h"
 #include "seq_clientmgr.h"

@@ -8,13 +8,13 @@
  * Copyright (c) 2007 Ujjwal Pande <ujjwal@kenati.com>,
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio.h>
 #include <video/sh_mobile_lcdc.h>
 #include <cpu/sh7722.h>
 #include <mach/migor.h>

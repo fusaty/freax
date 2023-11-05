@@ -5,18 +5,18 @@
  * Copyright (C) 2018 Joel Fernandes (Google) <joel@joelfernandes.org>
  */
 
-#include <linux/trace_clock.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/completion.h>
+#include <freax/trace_clock.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/kobject.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/completion.h>
 
 static ulong delay = 100;
 static char test_mode[12] = "irq";

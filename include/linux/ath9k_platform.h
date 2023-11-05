@@ -16,8 +16,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef _LINUX_ATH9K_PLATFORM_H
-#define _LINUX_ATH9K_PLATFORM_H
+#ifndef _freax_ATH9K_PLATFORM_H
+#define _freax_ATH9K_PLATFORM_H
 
 #define ATH9K_PLAT_EEP_MAX_WORDS	2048
 
@@ -48,4 +48,4 @@ struct ath9k_platform_data {
 	bool use_eeprom;
 };
 
-#endif /* _LINUX_ATH9K_PLATFORM_H */
+#endif /* _freax_ATH9K_PLATFORM_H */

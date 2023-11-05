@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_CPUMASK_H
 #define _ASM_X86_CPUMASK_H
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 
 extern void setup_cpu_local_masks(void);
 

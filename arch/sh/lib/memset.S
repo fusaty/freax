@@ -11,7 +11,7 @@
  *            void *memset(void *s, int c, size_t n);
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 ENTRY(memset)
 	tst	r6,r6

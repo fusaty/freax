@@ -5,21 +5,21 @@
  * (C) 2003 - 2004		Dominik Brodowski
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/major.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
 #include <asm/irq.h>
 
 #include <pcmcia/ss.h>

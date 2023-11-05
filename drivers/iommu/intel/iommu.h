@@ -10,22 +10,22 @@
 #ifndef _INTEL_IOMMU_H_
 #define _INTEL_IOMMU_H_
 
-#include <linux/types.h>
-#include <linux/iova.h>
-#include <linux/io.h>
-#include <linux/idr.h>
-#include <linux/mmu_notifier.h>
-#include <linux/list.h>
-#include <linux/iommu.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/dmar.h>
-#include <linux/bitfield.h>
-#include <linux/xarray.h>
-#include <linux/perf_event.h>
+#include <freax/types.h>
+#include <freax/iova.h>
+#include <freax/io.h>
+#include <freax/idr.h>
+#include <freax/mmu_notifier.h>
+#include <freax/list.h>
+#include <freax/iommu.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/dmar.h>
+#include <freax/bitfield.h>
+#include <freax/xarray.h>
+#include <freax/perf_event.h>
 
 #include <asm/cacheflush.h>
 #include <asm/iommu.h>
-#include <uapi/linux/iommufd.h>
+#include <uapi/freax/iommufd.h>
 
 /*
  * VT-d hardware uses 4KiB page size regardless of host page size.

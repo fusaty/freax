@@ -5,11 +5,11 @@
  *  Function             : qnx6 global filesystem definitions
  *  History              : 17-01-2012 created
  */
-#ifndef _LINUX_QNX6_FS_H
-#define _LINUX_QNX6_FS_H
+#ifndef _freax_QNX6_FS_H
+#define _freax_QNX6_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 #define QNX6_ROOT_INO 1
 

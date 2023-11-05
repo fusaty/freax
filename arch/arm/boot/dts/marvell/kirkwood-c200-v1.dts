@@ -31,25 +31,25 @@
 
 		power {
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio1 16 GPIO_ACTIVE_HIGH>;
 		};
 
 		reset {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&gpio1 17 GPIO_ACTIVE_LOW>;
 		};
 
 		usb1 {
 			label = "USB1 Button";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
 		};
 
 		usb2 {
 			label = "USB2 Button";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -136,7 +136,7 @@
 			function-enumerator = <1>;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 			trigger-sources = <&hub_port2>;
 		};
 
@@ -152,7 +152,7 @@
 			function-enumerator = <2>;
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&gpio1 15 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 			trigger-sources = <&hub_port1>;
 		};
 	};

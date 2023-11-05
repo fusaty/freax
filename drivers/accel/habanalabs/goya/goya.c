@@ -11,10 +11,10 @@
 #include "../include/goya/asic_reg/goya_masks.h"
 #include "../include/goya/goya_reg_map.h"
 
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/iommu.h>
-#include <linux/seq_file.h>
+#include <freax/pci.h>
+#include <freax/hwmon.h>
+#include <freax/iommu.h>
+#include <freax/seq_file.h>
 
 /*
  * GOYA security scheme:
@@ -71,7 +71,7 @@
  */
 
 #define GOYA_BOOT_FIT_FILE	"habanalabs/goya/goya-boot-fit.itb"
-#define GOYA_LINUX_FW_FILE	"habanalabs/goya/goya-fit.itb"
+#define GOYA_freax_FW_FILE	"habanalabs/goya/goya-fit.itb"
 
 #define GOYA_MMU_REGS_NUM		63
 
@@ -2492,10 +2492,10 @@ static void goya_halt_engines(struct hl_device *hdev, bool hard_reset, bool fw_r
 }
 
 /*
- * goya_load_firmware_to_device() - Load LINUX FW code to device.
+ * goya_load_firmware_to_device() - Load freax FW code to device.
  * @hdev: Pointer to hl_device structure.
  *
- * Copy LINUX fw code from firmware file to HBM BAR.
+ * Copy freax fw code from firmware file to HBM BAR.
  *
  * Return: 0 on success, non-zero for failure.
  */
@@ -2503,9 +2503,9 @@ static int goya_load_firmware_to_device(struct hl_device *hdev)
 {
 	void __iomem *dst;
 
-	dst = hdev->pcie_bar[DDR_BAR_ID] + LINUX_FW_OFFSET;
+	dst = hdev->pcie_bar[DDR_BAR_ID] + freax_FW_OFFSET;
 
-	return hl_fw_load_fw_to_device(hdev, GOYA_LINUX_FW_FILE, dst, 0, 0);
+	return hl_fw_load_fw_to_device(hdev, GOYA_freax_FW_FILE, dst, 0, 0);
 }
 
 /*
@@ -2588,7 +2588,7 @@ static void goya_init_firmware_loader(struct hl_device *hdev)
 	/* fill common fields */
 	fw_loader->fw_comp_loaded = FW_TYPE_NONE;
 	fw_loader->boot_fit_img.image_name = GOYA_BOOT_FIT_FILE;
-	fw_loader->linux_img.image_name = GOYA_LINUX_FW_FILE;
+	fw_loader->freax_img.image_name = GOYA_freax_FW_FILE;
 	fw_loader->cpu_timeout = GOYA_CPU_TIMEOUT_USEC;
 	fw_loader->boot_fit_timeout = GOYA_BOOT_FIT_REQ_TIMEOUT_USEC;
 	fw_loader->skip_bmc = false;
@@ -2613,7 +2613,7 @@ static int goya_init_cpu(struct hl_device *hdev)
 		return 0;
 
 	/*
-	 * Before pushing u-boot/linux to device, need to set the ddr bar to
+	 * Before pushing u-boot/freax to device, need to set the ddr bar to
 	 * base address of dram
 	 */
 	if (goya_set_ddr_bar_base(hdev, DRAM_PHYS_BASE) == U64_MAX) {

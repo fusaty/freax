@@ -8,13 +8,13 @@
  *
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com/
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/bitmap.h>
+#include <freax/slab.h>
 #include "tcm.h"
 
 static unsigned long mask[8];

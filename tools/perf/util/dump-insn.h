@@ -4,7 +4,7 @@
 
 #define MAXINSN 15
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct thread;
 

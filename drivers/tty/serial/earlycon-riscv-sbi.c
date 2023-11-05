@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2018 Anup Patel <anup@brainfault.org>
  */
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/serial_core.h>
 #include <asm/sbi.h>
 
 static void sbi_putc(struct uart_port *port, unsigned char c)

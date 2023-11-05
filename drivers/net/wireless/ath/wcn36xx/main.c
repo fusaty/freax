@@ -16,14 +16,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/rpmsg.h>
-#include <linux/soc/qcom/smem_state.h>
-#include <linux/soc/qcom/wcnss_ctrl.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/rpmsg.h>
+#include <freax/soc/qcom/smem_state.h>
+#include <freax/soc/qcom/wcnss_ctrl.h>
 #include <net/ipv6.h>
 #include "wcn36xx.h"
 #include "testmode.h"

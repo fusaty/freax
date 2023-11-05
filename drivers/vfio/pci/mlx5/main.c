@@ -3,21 +3,21 @@
  * Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved
  */
 
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/sched/mm.h>
-#include <linux/anon_inodes.h>
+#include <freax/device.h>
+#include <freax/eventfd.h>
+#include <freax/file.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/vfio.h>
+#include <freax/sched/mm.h>
+#include <freax/anon_inodes.h>
 
 #include "cmd.h"
 

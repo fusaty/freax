@@ -11,15 +11,15 @@
  * Copyright (C) 2007 Hewlett-Packard Development Company, L.P.
  *		      Paul Moore <paul@paul-moore.com>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/netdevice.h>
+#include <freax/rcupdate.h>
 #include <net/net_namespace.h>
 
 #include "security.h"
@@ -141,7 +141,7 @@ static int sel_netif_sid_slow(struct net *ns, int ifindex, u32 *sid)
 
 	dev = dev_get_by_index(ns, ifindex);
 	if (unlikely(dev == NULL)) {
-		pr_warn("SELinux: failure in %s(), invalid network interface (%d)\n",
+		pr_warn("SEfreax: failure in %s(), invalid network interface (%d)\n",
 			__func__, ifindex);
 		return -ENOENT;
 	}
@@ -169,7 +169,7 @@ out:
 	spin_unlock_bh(&sel_netif_lock);
 	dev_put(dev);
 	if (unlikely(ret))
-		pr_warn("SELinux: failure in %s(), unable to determine network interface label (%d)\n",
+		pr_warn("SEfreax: failure in %s(), unable to determine network interface label (%d)\n",
 			__func__, ifindex);
 	return ret;
 }
@@ -265,7 +265,7 @@ static __init int sel_netif_init(void)
 {
 	int i;
 
-	if (!selinux_enabled_boot)
+	if (!sefreax_enabled_boot)
 		return 0;
 
 	for (i = 0; i < SEL_NETIF_HASH_SIZE; i++)

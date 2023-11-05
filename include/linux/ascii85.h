@@ -2,14 +2,14 @@
  * SPDX-License-Identifier: GPL-2.0
  *
  * Copyright (c) 2008 Intel Corporation
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The freax Foundation. All rights reserved.
  */
 
 #ifndef _ASCII85_H_
 #define _ASCII85_H_
 
-#include <linux/math.h>
-#include <linux/types.h>
+#include <freax/math.h>
+#include <freax/types.h>
 
 #define ASCII85_BUFSZ 6
 

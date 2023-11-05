@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
-  BNEP protocol definition for Linux Bluetooth stack (BlueZ).
+  BNEP protocol definition for freax Bluetooth stack (BlueZ).
   Copyright (C) 2002 Maxim Krasnyansky <maxk@qualcomm.com>
 
 */
@@ -8,8 +8,8 @@
 #ifndef _BNEP_H
 #define _BNEP_H
 
-#include <linux/types.h>
-#include <linux/crc32.h>
+#include <freax/types.h>
+#include <freax/crc32.h>
 #include <net/bluetooth/bluetooth.h>
 
 /* Limits */

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <freax/init.h>
+#include <freax/suspend.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
 
 #include <asm/time.h>
 #include <asm/cacheflush.h>

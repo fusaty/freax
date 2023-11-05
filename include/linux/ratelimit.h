@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RATELIMIT_H
-#define _LINUX_RATELIMIT_H
+#ifndef _freax_RATELIMIT_H
+#define _freax_RATELIMIT_H
 
-#include <linux/ratelimit_types.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
+#include <freax/ratelimit_types.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
 
 static inline void ratelimit_state_init(struct ratelimit_state *rs,
 					int interval, int burst)
@@ -76,4 +76,4 @@ extern struct ratelimit_state printk_ratelimit_state;
 
 #endif
 
-#endif /* _LINUX_RATELIMIT_H */
+#endif /* _freax_RATELIMIT_H */

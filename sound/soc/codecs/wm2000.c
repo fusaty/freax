@@ -18,19 +18,19 @@
  *                 < file  > wm2000_anc.bin
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/firmware.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/debugfs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/firmware.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/debugfs.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

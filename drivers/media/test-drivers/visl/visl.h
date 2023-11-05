@@ -41,8 +41,8 @@
 #ifndef _VISL_H_
 #define _VISL_H_
 
-#include <linux/debugfs.h>
-#include <linux/list.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

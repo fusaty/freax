@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * mft.h - Defines for mft record handling in NTFS Linux kernel driver.
- *	   Part of the Linux-NTFS project.
+ * mft.h - Defines for mft record handling in NTFS freax kernel driver.
+ *	   Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_MFT_H
-#define _LINUX_NTFS_MFT_H
+#ifndef _freax_NTFS_MFT_H
+#define _freax_NTFS_MFT_H
 
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
 
 #include "inode.h"
 
@@ -107,4 +107,4 @@ extern int ntfs_extent_mft_record_free(ntfs_inode *ni, MFT_RECORD *m);
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_MFT_H */
+#endif /* _freax_NTFS_MFT_H */

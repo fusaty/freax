@@ -68,7 +68,7 @@
 	camera@60 {
 		compatible = "ovti,ov7251";
 
-		/* I2C address as per ov7251.txt linux documentation */
+		/* I2C address as per ov7251.txt freax documentation */
 		reg = <0x60>;
 
 		/* CAM3_RST_N */

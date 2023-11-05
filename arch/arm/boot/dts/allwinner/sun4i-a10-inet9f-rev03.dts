@@ -65,145 +65,145 @@
 
 		event-left-joystick-left {
 			label = "Left Joystick Left";
-			linux,code = <ABS_X>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_X>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA6 */
 		};
 
 		event-left-joystick-right {
 			label = "Left Joystick Right";
-			linux,code = <ABS_X>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_X>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA5 */
 		};
 
 		event-left-joystick-up {
 			label = "Left Joystick Up";
-			linux,code = <ABS_Y>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_Y>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA8 */
 		};
 
 		event-left-joystick-down {
 			label = "Left Joystick Down";
-			linux,code = <ABS_Y>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_Y>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA9 */
 		};
 
 		event-right-joystick-left {
 			label = "Right Joystick Left";
-			linux,code = <ABS_Z>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_Z>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA1 */
 		};
 
 		event-right-joystick-right {
 			label = "Right Joystick Right";
-			linux,code = <ABS_Z>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_Z>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 0 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA0 */
 		};
 
 		event-right-joystick-up {
 			label = "Right Joystick Up";
-			linux,code = <ABS_RZ>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_RZ>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA3 */
 		};
 
 		event-right-joystick-down {
 			label = "Right Joystick Down";
-			linux,code = <ABS_RZ>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_RZ>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA4 */
 		};
 
 		event-dpad-left {
 			label = "DPad Left";
-			linux,code = <ABS_HAT0X>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_HAT0X>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 7 23 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PH23 */
 		};
 
 		event-dpad-right {
 			label = "DPad Right";
-			linux,code = <ABS_HAT0X>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_HAT0X>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 7 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PH24 */
 		};
 
 		event-dpad-up {
 			label = "DPad Up";
-			linux,code = <ABS_HAT0Y>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <0xffffffff>; /* -1 */
+			freax,code = <ABS_HAT0Y>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <0xffffffff>; /* -1 */
 			gpios = <&pio 7 25 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PH25 */
 		};
 
 		event-dpad-down {
 			label = "DPad Down";
-			linux,code = <ABS_HAT0Y>;
-			linux,input-type = <EV_ABS>;
-			linux,input-value = <1>;
+			freax,code = <ABS_HAT0Y>;
+			freax,input-type = <EV_ABS>;
+			freax,input-value = <1>;
 			gpios = <&pio 7 26 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PH26 */
 		};
 
 		event-x {
 			label = "Button X";
-			linux,code = <BTN_X>;
+			freax,code = <BTN_X>;
 			gpios = <&pio 0 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA16 */
 		};
 
 		event-y {
 			label = "Button Y";
-			linux,code = <BTN_Y>;
+			freax,code = <BTN_Y>;
 			gpios = <&pio 0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA14 */
 		};
 
 		event-a {
 			label = "Button A";
-			linux,code = <BTN_A>;
+			freax,code = <BTN_A>;
 			gpios = <&pio 0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA17 */
 		};
 
 		event-b {
 			label = "Button B";
-			linux,code = <BTN_B>;
+			freax,code = <BTN_B>;
 			gpios = <&pio 0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA15 */
 		};
 
 		event-select {
 			label = "Select Button";
-			linux,code = <BTN_SELECT>;
+			freax,code = <BTN_SELECT>;
 			gpios = <&pio 0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA11 */
 		};
 
 		event-start {
 			label = "Start Button";
-			linux,code = <BTN_START>;
+			freax,code = <BTN_START>;
 			gpios = <&pio 0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA12 */
 		};
 
 		event-top-left {
 			label = "Top Left Button";
-			linux,code = <BTN_TL>;
+			freax,code = <BTN_TL>;
 			gpios = <&pio 7 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PH22 */
 		};
 
 		event-top-right {
 			label = "Top Right Button";
-			linux,code = <BTN_TR>;
+			freax,code = <BTN_TR>;
 			gpios = <&pio 0 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; /* PA13 */
 		};
 	};
@@ -259,35 +259,35 @@
 
 	button-200 {
 		label = "Menu";
-		linux,code = <KEY_MENU>;
+		freax,code = <KEY_MENU>;
 		channel = <0>;
 		voltage = <200000>;
 	};
 
 	button-600 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		freax,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <600000>;
 	};
 
 	button-800 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		freax,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <800000>;
 	};
 
 	button-1000 {
 		label = "Home";
-		linux,code = <KEY_HOMEPAGE>;
+		freax,code = <KEY_HOMEPAGE>;
 		channel = <0>;
 		voltage = <1000000>;
 	};
 
 	button-1200 {
 		label = "Esc";
-		linux,code = <KEY_ESC>;
+		freax,code = <KEY_ESC>;
 		channel = <0>;
 		voltage = <1200000>;
 	};

@@ -4,28 +4,28 @@
  *   Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/uaccess.h>
+#include <freax/in.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/phy.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
+#include <freax/platform_device.h>
+#include <freax/ethtool.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/property.h>
 
 #include <asm/checksum.h>
 

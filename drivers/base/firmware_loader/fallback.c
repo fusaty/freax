@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/types.h>
-#include <linux/kconfig.h>
-#include <linux/list.h>
-#include <linux/security.h>
-#include <linux/umh.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kconfig.h>
+#include <freax/list.h>
+#include <freax/security.h>
+#include <freax/umh.h>
+#include <freax/sysctl.h>
+#include <freax/module.h>
 
 #include "fallback.h"
 #include "firmware.h"

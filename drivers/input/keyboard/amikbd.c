@@ -7,16 +7,16 @@
  */
 
 /*
- * Amiga keyboard driver for Linux/m68k
+ * Amiga keyboard driver for freax/m68k
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/keyboard.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/keyboard.h>
+#include <freax/platform_device.h>
 
 #include <asm/amigaints.h>
 #include <asm/amigahw.h>

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/sound/qcom,q6afe.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <linux/soundwire/sdw.h>
-#include <uapi/linux/input-event-codes.h>
+#include <freax/soundwire/sdw.h>
+#include <uapi/freax/input-event-codes.h>
 #include "common.h"
 #include "qdsp6/q6afe.h"
 #include "../codecs/rt5663.h"

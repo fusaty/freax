@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/swait.h>
-#include <linux/ftrace.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
+#include <freax/gfp.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/suspend.h>
+#include <freax/syscore_ops.h>
+#include <freax/swait.h>
+#include <freax/ftrace.h>
 #include <trace/events/power.h>
-#include <linux/compiler.h>
-#include <linux/moduleparam.h>
+#include <freax/compiler.h>
+#include <freax/moduleparam.h>
 
 #include "power.h"
 

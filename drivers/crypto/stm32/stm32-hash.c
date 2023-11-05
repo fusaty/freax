@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * This file is part of STM32 Crypto driver for Linux.
+ * This file is part of STM32 Crypto driver for freax.
  *
  * Copyright (C) 2017, STMicroelectronics - All Rights Reserved
  * Author(s): Lionel DEBIEVE <lionel.debieve@st.com> for STMicroelectronics.
@@ -13,19 +13,19 @@
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
 #include <crypto/sha3.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/string.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/string.h>
 
 #define HASH_CR				0x00
 #define HASH_DIN			0x04

@@ -6,8 +6,8 @@
  *                2013 Ludovic Desroches <ludovic.desroches@atmel.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/arch.h>
@@ -26,7 +26,7 @@ static void sama5_l2c310_write_sec(unsigned long val, unsigned reg)
 static void __init sama5_secure_cache_init(void)
 {
 	sam_secure_init();
-	if (IS_ENABLED(CONFIG_OUTER_CACHE) && sam_linux_is_optee_available())
+	if (IS_ENABLED(CONFIG_OUTER_CACHE) && sam_freax_is_optee_available())
 		outer_cache.write_sec = sama5_l2c310_write_sec;
 }
 

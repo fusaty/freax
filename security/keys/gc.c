@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <freax/slab.h>
+#include <freax/security.h>
 #include <keys/keyring-type.h>
 #include "internal.h"
 

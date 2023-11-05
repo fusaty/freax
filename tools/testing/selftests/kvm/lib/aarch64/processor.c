@@ -5,13 +5,13 @@
  * Copyright (C) 2018, Red Hat, Inc.
  */
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <assert.h>
 
 #include "guest_modes.h"
 #include "kvm_util.h"
 #include "processor.h"
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define DEFAULT_ARM64_GUEST_STACK_VADDR_MIN	0xac0000
 

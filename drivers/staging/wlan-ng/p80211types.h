@@ -7,16 +7,16 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -26,7 +26,7 @@
  * --------------------------------------------------------------------
  *
  * This file declares some of the constants and types used in various
- * parts of the linux-wlan system.
+ * parts of the freax-wlan system.
  *
  * Notes:
  *   - Constant values are always in HOST byte order.

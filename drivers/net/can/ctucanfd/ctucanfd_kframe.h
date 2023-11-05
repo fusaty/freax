@@ -22,7 +22,7 @@
 #ifndef __CTU_CAN_FD_CAN_FD_FRAME_FORMAT__
 #define __CTU_CAN_FD_CAN_FD_FRAME_FORMAT__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* CAN_Frame_format memory map */
 enum ctu_can_fd_can_frame_format {

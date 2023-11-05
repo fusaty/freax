@@ -4,7 +4,7 @@
 #ifndef _WX_HW_H_
 #define _WX_HW_H_
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 int wx_phy_read_reg_mdi_c22(struct mii_bus *bus, int phy_addr, int regnum);
 int wx_phy_write_reg_mdi_c22(struct mii_bus *bus, int phy_addr, int regnum, u16 value);

@@ -5,14 +5,14 @@
  * Copyright (c) 2015 Intel Corporation
  */
 
-#include <linux/configfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
+#include <freax/configfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/configfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/configfs.h>
 
 static const struct config_item_type iio_root_group_type = {
 	.ct_owner       = THIS_MODULE,

@@ -7,9 +7,9 @@
 #include <asm/asm-offsets.h>
 
 #ifdef CONFIG_CPU_LITTLE_ENDIAN
-OUTPUT_FORMAT("elf32-sh-linux", "elf32-sh-linux", "elf32-sh-linux")
+OUTPUT_FORMAT("elf32-sh-freax", "elf32-sh-freax", "elf32-sh-freax")
 #else
-OUTPUT_FORMAT("elf32-shbig-linux", "elf32-shbig-linux", "elf32-shbig-linux")
+OUTPUT_FORMAT("elf32-shbig-freax", "elf32-shbig-freax", "elf32-shbig-freax")
 #endif
 OUTPUT_ARCH(sh)
 
@@ -74,7 +74,7 @@ PHDRS
  */
 VERSION
 {
-	LINUX_2.6 {
+	freax_2.6 {
 	global:
 		__kernel_vsyscall;
 		__kernel_sigreturn;

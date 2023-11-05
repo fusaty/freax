@@ -10,11 +10,11 @@
  *  Copyright (c) 2018 Hanno Zulla <kontakt@hanno.de>
  */
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/leds.h>
-#include <linux/hid.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/leds.h>
+#include <freax/hid.h>
 
 #include "hid-ids.h"
 

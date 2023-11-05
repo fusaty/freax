@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd */
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/eswitch.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/device.h>
+#include <freax/mlx5/eswitch.h>
 #include "mlx5_core.h"
 #include "dev.h"
 #include "devlink.h"

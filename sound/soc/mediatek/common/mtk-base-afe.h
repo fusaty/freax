@@ -9,7 +9,7 @@
 #ifndef _MTK_BASE_AFE_H_
 #define _MTK_BASE_AFE_H_
 
-#include <linux/soc/mediatek/mtk_sip_svc.h>
+#include <freax/soc/mediatek/mtk_sip_svc.h>
 
 #define MTK_STREAM_NUM (SNDRV_PCM_STREAM_LAST + 1)
 #define MTK_SIP_AUDIO_CONTROL MTK_SIP_SMC_CMD(0x517)

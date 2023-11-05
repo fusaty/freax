@@ -7,9 +7,9 @@
  * Copyright (c) 2017 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/mii.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/mii.h>
 
 #include "chip.h"
 #include "global2.h"

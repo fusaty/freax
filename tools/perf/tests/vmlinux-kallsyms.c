@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
+#include <freax/compiler.h>
+#include <freax/rbtree.h>
 #include <inttypes.h>
 #include <string.h>
 #include <ctype.h>
@@ -112,15 +112,15 @@ static bool is_ignored_symbol(const char *name, char type)
 	return false;
 }
 
-static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused,
+static int test__vmfreax_matches_kallsyms(struct test_suite *test __maybe_unused,
 					int subtest __maybe_unused)
 {
 	int err = TEST_FAIL;
 	struct rb_node *nd;
 	struct symbol *sym;
-	struct map *kallsyms_map, *vmlinux_map;
+	struct map *kallsyms_map, *vmfreax_map;
 	struct map_rb_node *rb_node;
-	struct machine kallsyms, vmlinux;
+	struct machine kallsyms, vmfreax;
 	struct maps *maps;
 	u64 mem_start, mem_end;
 	bool header_printed;
@@ -129,12 +129,12 @@ static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused
 	 * Step 1:
 	 *
 	 * Init the machines that will hold kernel, modules obtained from
-	 * both vmlinux + .ko files and from /proc/kallsyms split by modules.
+	 * both vmfreax + .ko files and from /proc/kallsyms split by modules.
 	 */
 	machine__init(&kallsyms, "", HOST_KERNEL_ID);
-	machine__init(&vmlinux, "", HOST_KERNEL_ID);
+	machine__init(&vmfreax, "", HOST_KERNEL_ID);
 
-	maps = machine__kernel_maps(&vmlinux);
+	maps = machine__kernel_maps(&vmfreax);
 
 	/*
 	 * Step 2:
@@ -157,7 +157,7 @@ static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused
 	 * and has parts that only make sense if using the non-kcore code.
 	 * XXX: extend it to stress the kcorre code as well, hint: the list
 	 * of modules extracted from /proc/kcore, in its current form, can't
-	 * be compacted against the list of modules found in the "vmlinux"
+	 * be compacted against the list of modules found in the "vmfreax"
 	 * code and with the one got from /proc/modules from the "kallsyms" code.
 	 */
 	if (machine__load_kallsyms(&kallsyms, "/proc/kallsyms") <= 0) {
@@ -172,35 +172,35 @@ static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused
 	 * kallsyms will be internally on demand sorted by name so that we can
 	 * find the reference relocation * symbol, i.e. the symbol we will use
 	 * to see if the running kernel was relocated by checking if it has the
-	 * same value in the vmlinux file we load.
+	 * same value in the vmfreax file we load.
 	 */
 	kallsyms_map = machine__kernel_map(&kallsyms);
 
 	/*
 	 * Step 5:
 	 *
-	 * Now repeat step 2, this time for the vmlinux file we'll auto-locate.
+	 * Now repeat step 2, this time for the vmfreax file we'll auto-locate.
 	 */
-	if (machine__create_kernel_maps(&vmlinux) < 0) {
+	if (machine__create_kernel_maps(&vmfreax) < 0) {
 		pr_info("machine__create_kernel_maps failed");
 		goto out;
 	}
 
-	vmlinux_map = machine__kernel_map(&vmlinux);
+	vmfreax_map = machine__kernel_map(&vmfreax);
 
 	/*
 	 * Step 6:
 	 *
-	 * Locate a vmlinux file in the vmlinux path that has a buildid that
+	 * Locate a vmfreax file in the vmfreax path that has a buildid that
 	 * matches the one of the running kernel.
 	 *
 	 * While doing that look if we find the ref reloc symbol, if we find it
 	 * we'll have its ref_reloc_symbol.unrelocated_addr and then
-	 * maps__reloc_vmlinux will notice and set proper ->[un]map_ip routines
+	 * maps__reloc_vmfreax will notice and set proper ->[un]map_ip routines
 	 * to fixup the symbols.
 	 */
-	if (machine__load_vmlinux_path(&vmlinux) <= 0) {
-		pr_info("Couldn't find a vmlinux that matches the kernel running on this machine, skipping test\n");
+	if (machine__load_vmfreax_path(&vmfreax) <= 0) {
+		pr_info("Couldn't find a vmfreax that matches the kernel running on this machine, skipping test\n");
 		err = TEST_SKIP;
 		goto out;
 	}
@@ -209,11 +209,11 @@ static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused
 	/*
 	 * Step 7:
 	 *
-	 * Now look at the symbols in the vmlinux DSO and check if we find all of them
+	 * Now look at the symbols in the vmfreax DSO and check if we find all of them
 	 * in the kallsyms dso. For the ones that are in both, check its names and
 	 * end addresses too.
 	 */
-	map__for_each_symbol(vmlinux_map, sym, nd) {
+	map__for_each_symbol(vmfreax_map, sym, nd) {
 		struct symbol *pair, *first_pair;
 
 		sym  = rb_entry(nd, struct symbol, rb_node);
@@ -221,8 +221,8 @@ static int test__vmlinux_matches_kallsyms(struct test_suite *test __maybe_unused
 		if (sym->start == sym->end)
 			continue;
 
-		mem_start = map__unmap_ip(vmlinux_map, sym->start);
-		mem_end = map__unmap_ip(vmlinux_map, sym->end);
+		mem_start = map__unmap_ip(vmfreax_map, sym->start);
+		mem_end = map__unmap_ip(vmfreax_map, sym->end);
 
 		first_pair = machine__find_kernel_symbol(&kallsyms, mem_start, NULL);
 		pair = first_pair;
@@ -267,7 +267,7 @@ next_pair:
 
 				continue;
 			}
-		} else if (mem_start == map__end(kallsyms.vmlinux_map)) {
+		} else if (mem_start == map__end(kallsyms.vmfreax_map)) {
 			/*
 			 * Ignore aliases to _etext, i.e. to the end of the kernel text area,
 			 * such as __indirect_thunk_end.
@@ -296,7 +296,7 @@ next_pair:
 		struct dso *dso = map__dso(map);
 		/*
 		 * If it is the kernel, kallsyms is always "[kernel.kallsyms]", while
-		 * the kernel will have the path for the vmlinux file being used,
+		 * the kernel will have the path for the vmfreax file being used,
 		 * so use the short name, less descriptive but the same ("[kernel]" in
 		 * both cases.
 		 */
@@ -307,7 +307,7 @@ next_pair:
 			map__set_priv(pair, 1);
 		} else {
 			if (!header_printed) {
-				pr_info("WARN: Maps only in vmlinux:\n");
+				pr_info("WARN: Maps only in vmfreax:\n");
 				header_printed = true;
 			}
 			map__fprintf(map, stderr);
@@ -319,8 +319,8 @@ next_pair:
 	maps__for_each_entry(maps, rb_node) {
 		struct map *pair, *map = rb_node->map;
 
-		mem_start = map__unmap_ip(vmlinux_map, map__start(map));
-		mem_end = map__unmap_ip(vmlinux_map, map__end(map));
+		mem_start = map__unmap_ip(vmfreax_map, map__start(map));
+		mem_end = map__unmap_ip(vmfreax_map, map__end(map));
 
 		pair = maps__find(kallsyms.kmaps, mem_start);
 		if (pair == NULL || map__priv(pair))
@@ -330,7 +330,7 @@ next_pair:
 			struct dso *dso = map__dso(map);
 
 			if (!header_printed) {
-				pr_info("WARN: Maps in vmlinux with a different name in kallsyms:\n");
+				pr_info("WARN: Maps in vmfreax with a different name in kallsyms:\n");
 				header_printed = true;
 			}
 
@@ -361,8 +361,8 @@ next_pair:
 	}
 out:
 	machine__exit(&kallsyms);
-	machine__exit(&vmlinux);
+	machine__exit(&vmfreax);
 	return err;
 }
 
-DEFINE_SUITE("vmlinux symtab matches kallsyms", vmlinux_matches_kallsyms);
+DEFINE_SUITE("vmfreax symtab matches kallsyms", vmfreax_matches_kallsyms);

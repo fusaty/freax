@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-omap2/clock.c
+ *  freax/arch/arm/mach-omap2/clock.c
  *
  *  Copyright (C) 2005-2008 Texas Instruments, Inc.
  *  Copyright (C) 2004-2010 Nokia Corporation
@@ -11,17 +11,17 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/of_address.h>
 #include <asm/cpu.h>
 
 #include <trace/events/power.h>

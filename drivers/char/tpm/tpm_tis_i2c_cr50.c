@@ -16,14 +16,14 @@
  *   reading header and determining the remainder.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #include "tpm_tis_core.h"
 

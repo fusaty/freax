@@ -5,7 +5,7 @@
  * Copyright (c) 2010-2021, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 
 #include "dev.h"
 #include "fence.h"

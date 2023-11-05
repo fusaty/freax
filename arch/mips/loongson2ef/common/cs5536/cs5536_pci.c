@@ -16,7 +16,7 @@
  *	the PCI-2.2 spec.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <cs5536/cs5536_pci.h>
 #include <cs5536/cs5536_vsm.h>
 

@@ -3,7 +3,7 @@
  * comedi/drivers/ni_usb6501.c
  * Comedi driver for National Instruments USB-6501
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2014 Luca Ellero <luca.ellero@brickedbrain.com>
  */
 
@@ -84,10 +84,10 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/comedi/comedi_usb.h>
 
 #define	NI6501_TIMEOUT	1000
 

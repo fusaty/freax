@@ -2,23 +2,23 @@
 /*
  * POWER LPAR Platform KeyStore(PLPKS)
  * Copyright (C) 2022 IBM Corporation
- * Author: Nayna Jain <nayna@linux.ibm.com>
+ * Author: Nayna Jain <nayna@freax.ibm.com>
  *
  * Provides access to variables stored in Power LPAR Platform KeyStore(PLPKS).
  */
 
 #define pr_fmt(fmt) "plpks: " fmt
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/memblock.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/of_fdt.h>
+#include <freax/libfdt.h>
+#include <freax/memblock.h>
 #include <asm/hvcall.h>
 #include <asm/machdep.h>
 #include <asm/plpks.h>
@@ -121,7 +121,7 @@ static int pseries_status_to_err(int rc)
 		err = -EINVAL;
 	}
 
-	pr_debug("Converted hypervisor code %d to Linux %d\n", rc, err);
+	pr_debug("Converted hypervisor code %d to freax %d\n", rc, err);
 
 	return err;
 }

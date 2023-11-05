@@ -6,24 +6,24 @@
  * Copyright (C) 2014-2020 Renesas Electronics Corporation
  */
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/bitmap.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/io-pgtable.h>
+#include <freax/iommu.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #if defined(CONFIG_ARM) && !defined(CONFIG_IOMMU_DMA)
 #include <asm/dma-iommu.h>

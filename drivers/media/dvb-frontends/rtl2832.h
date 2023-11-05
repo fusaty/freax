@@ -9,8 +9,8 @@
 #ifndef RTL2832_H
 #define RTL2832_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/i2c-mux.h>
+#include <freax/dvb/frontend.h>
+#include <freax/i2c-mux.h>
 
 /**
  * struct rtl2832_platform_data - Platform data for the rtl2832 driver

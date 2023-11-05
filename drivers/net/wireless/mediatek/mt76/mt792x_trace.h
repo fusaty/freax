@@ -6,7 +6,7 @@
 #if !defined(__MT792X_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __MT792X_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "mt792x.h"
 
 #undef TRACE_SYSTEM

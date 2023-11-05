@@ -8,10 +8,10 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/security.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/security.h>
 
 #include "include/apparmor.h"
 #include "include/capability.h"

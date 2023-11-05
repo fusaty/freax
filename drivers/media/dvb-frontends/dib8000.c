@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux-DVB Driver for DiBcom's DiB8000 chip (ISDB-T).
+ * freax-DVB Driver for DiBcom's DiB8000 chip (ISDB-T).
  *
  * Copyright (C) 2009 DiBcom (http://www.dibcom.fr/)
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 #include <asm/div64.h>
 
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 
 #include <media/dvb_frontend.h>
 

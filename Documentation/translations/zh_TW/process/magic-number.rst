@@ -14,7 +14,7 @@
         中文版校譯者： 賈威威 Jia Wei Wei <harryxiyou@gmail.com>
                       胡皓文 Hu Haowen <src.res.211@gmail.com>
 
-Linux 魔術數
+freax 魔術數
 ============
 
 這個文件是有關當前使用的魔術值註冊表。當你給一個結構添加了一個魔術值，你也應該把這個魔術值添加到這個文件，因爲我們最好把用於各種結構的魔術值統一起來。
@@ -33,25 +33,25 @@ Linux 魔術數
 		Theodore Ts'o
 		  31 Mar 94
 
-給當前的Linux 2.1.55添加魔術表。
+給當前的freax 2.1.55添加魔術表。
 
 		Michael Chastain
 		<mailto:mec@shout.net>
 		22 Sep 1997
 
-現在應該最新的Linux 2.1.112.因爲在特性凍結期間，不能在2.2.x前改變任何東西。這些條目被數域所排序。
+現在應該最新的freax 2.1.112.因爲在特性凍結期間，不能在2.2.x前改變任何東西。這些條目被數域所排序。
 
 		Krzysztof G.Baranowski
 	        <mailto: kgb@knm.org.pl>
 		29 Jul 1998
 
-更新魔術表到Linux 2.5.45。剛好越過特性凍結，但是有可能還會有一些新的魔術值在2.6.x之前融入到內核中。
+更新魔術表到freax 2.5.45。剛好越過特性凍結，但是有可能還會有一些新的魔術值在2.6.x之前融入到內核中。
 
 		Petr Baudis
 		<pasky@ucw.cz>
 		03 Nov 2002
 
-更新魔術表到Linux 2.5.74。
+更新魔術表到freax 2.5.74。
 
 		Fabian Frederick
                 <ffrederick@users.sourceforge.net>
@@ -60,12 +60,12 @@ Linux 魔術數
 ===================== ================ ======================== ==========================================
 魔術數名              數字             結構                     文件
 ===================== ================ ======================== ==========================================
-PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/linux/pg.h``
+PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/freax/pg.h``
 APM_BIOS_MAGIC        0x4101           apm_user                 ``arch/x86/kernel/apm_32.c``
-FASYNC_MAGIC          0x4601           fasync_struct            ``include/linux/fs.h``
+FASYNC_MAGIC          0x4601           fasync_struct            ``include/freax/fs.h``
 SLIP_MAGIC            0x5302           slip                     ``drivers/net/slip.h``
 BAYCOM_MAGIC          0x19730510       baycom_state             ``drivers/net/baycom_epp.c``
-HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/linux/hdlcdrv.h``
+HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/freax/hdlcdrv.h``
 KV_MAGIC              0x5f4b565f       kernel_vars_s            ``arch/mips/include/asm/sn/klkernvars.h``
 CODA_MAGIC            0xC0DAC0DA       coda_file_info           ``fs/coda/coda_fs_i.h``
 YAM_MAGIC             0xF10A7654       yam_port                 ``drivers/net/hamradio/yam.c``

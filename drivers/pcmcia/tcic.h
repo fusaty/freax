@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_TCIC_H
-#define _LINUX_TCIC_H
+#ifndef _freax_TCIC_H
+#define _freax_TCIC_H
 
 #define TCIC_BASE		0x240
 
@@ -263,4 +263,4 @@
 #define TCIC_ICTL_SS_MASK	TCIC_SS_MASK
 #define TCIC_ICTL_ENA		TCIC_MCTL_ENA
 
-#endif /* _LINUX_TCIC_H */
+#endif /* _freax_TCIC_H */

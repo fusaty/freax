@@ -6,11 +6,11 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/etherdevice.h>
 
 #include <asm/oplib.h>
 #include <asm/idprom.h>

@@ -37,28 +37,28 @@
 
 		key-camera-focus {
 			label = "Camera Focus";
-			linux,code = <KEY_CAMERA_FOCUS>;
+			freax,code = <KEY_CAMERA_FOCUS>;
 			gpios = <&pm8350b_gpios 8 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 
 		key-camera-snapshot {
 			label = "Camera Snapshot";
-			linux,code = <KEY_CAMERA>;
+			freax,code = <KEY_CAMERA>;
 			gpios = <&pm8350b_gpios 5 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			gpios = <&pm8350_gpios 6 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -689,7 +689,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEUP>;
+	freax,code = <KEY_VOLUMEUP>;
 	status = "okay";
 };
 

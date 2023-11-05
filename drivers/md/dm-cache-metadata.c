@@ -13,8 +13,8 @@
 #include "persistent-data/dm-space-map-disk.h"
 #include "persistent-data/dm-transaction-manager.h"
 
-#include <linux/device-mapper.h>
-#include <linux/refcount.h>
+#include <freax/device-mapper.h>
+#include <freax/refcount.h>
 
 /*----------------------------------------------------------------*/
 

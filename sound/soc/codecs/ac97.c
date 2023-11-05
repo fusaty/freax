@@ -8,11 +8,11 @@
  * Generic AC97 support.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/ac97_codec.h>

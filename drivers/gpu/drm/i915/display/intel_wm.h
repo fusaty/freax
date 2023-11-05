@@ -6,7 +6,7 @@
 #ifndef __INTEL_WM_H__
 #define __INTEL_WM_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 struct intel_atomic_state;

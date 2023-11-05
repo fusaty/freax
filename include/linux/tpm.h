@@ -14,14 +14,14 @@
  * Device driver for TCG/TCPA TPM (trusted platform module).
  * Specifications at www.trustedcomputinggroup.org
  */
-#ifndef __LINUX_TPM_H__
-#define __LINUX_TPM_H__
+#ifndef __freax_TPM_H__
+#define __freax_TPM_H__
 
-#include <linux/hw_random.h>
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
+#include <freax/hw_random.h>
+#include <freax/acpi.h>
+#include <freax/cdev.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
 #include <crypto/hash_info.h>
 
 #define TPM_DIGEST_SIZE 20	/* Max TPM v1.2 PCR size */

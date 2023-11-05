@@ -16,18 +16,18 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/bitrev.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/crc32.h>
+#include <freax/bitrev.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/gfp.h>
+#include <freax/interrupt.h>
 #include <asm/io.h>
 #include <asm/macints.h>
 #include <asm/mac_psc.h>

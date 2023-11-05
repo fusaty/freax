@@ -2,25 +2,25 @@
 /*
  * Copyright (C) 2003 Broadcom Corporation
  */
-#include <linux/cache.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/compat.h>
-#include <linux/bitops.h>
+#include <freax/cache.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/unistd.h>
+#include <freax/compat.h>
+#include <freax/bitops.h>
 
 #include <asm/abi.h>
 #include <asm/asm.h>
 #include <asm/cacheflush.h>
 #include <asm/compat-signal.h>
 #include <asm/sim.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/ucontext.h>
 #include <asm/fpu.h>
 #include <asm/cpu-features.h>

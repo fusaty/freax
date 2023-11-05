@@ -30,19 +30,19 @@
  *     (chunk size * maxburst)
  */
 
-#include <linux/module.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 #include "dmaengine.h"
 

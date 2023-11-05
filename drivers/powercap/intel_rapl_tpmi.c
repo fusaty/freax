@@ -8,12 +8,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/auxiliary_bus.h>
-#include <linux/io.h>
-#include <linux/intel_tpmi.h>
-#include <linux/intel_rapl.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/io.h>
+#include <freax/intel_tpmi.h>
+#include <freax/intel_rapl.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #define TPMI_RAPL_VERSION 1
 

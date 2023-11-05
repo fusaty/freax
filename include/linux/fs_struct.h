@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FS_STRUCT_H
-#define _LINUX_FS_STRUCT_H
+#ifndef _freax_FS_STRUCT_H
+#define _freax_FS_STRUCT_H
 
-#include <linux/path.h>
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
+#include <freax/path.h>
+#include <freax/spinlock.h>
+#include <freax/seqlock.h>
 
 struct fs_struct {
 	int users;
@@ -42,4 +42,4 @@ static inline void get_fs_pwd(struct fs_struct *fs, struct path *pwd)
 
 extern bool current_chrooted(void);
 
-#endif /* _LINUX_FS_STRUCT_H */
+#endif /* _freax_FS_STRUCT_H */

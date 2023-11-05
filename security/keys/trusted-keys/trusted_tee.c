@@ -6,13 +6,13 @@
  * Sumit Garg <sumit.garg@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/key-type.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
+#include <freax/err.h>
+#include <freax/key-type.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tee_drv.h>
+#include <freax/uuid.h>
 
 #include <keys/trusted_tee.h>
 

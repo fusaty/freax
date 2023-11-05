@@ -10,7 +10,7 @@
 
 #define pr_fmt(fmt) "SPEAr1340: " fmt
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #include <asm/mach/arch.h>
 #include "generic.h"
 

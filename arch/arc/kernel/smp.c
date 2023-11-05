@@ -9,19 +9,19 @@
  *    -- Initial Write (Borrowed heavily from ARM)
  */
 
-#include <linux/spinlock.h>
-#include <linux/sched/mm.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/reboot.h>
-#include <linux/irqdomain.h>
-#include <linux/export.h>
-#include <linux/of_fdt.h>
+#include <freax/spinlock.h>
+#include <freax/sched/mm.h>
+#include <freax/interrupt.h>
+#include <freax/profile.h>
+#include <freax/mm.h>
+#include <freax/cpu.h>
+#include <freax/irq.h>
+#include <freax/atomic.h>
+#include <freax/cpumask.h>
+#include <freax/reboot.h>
+#include <freax/irqdomain.h>
+#include <freax/export.h>
+#include <freax/of_fdt.h>
 
 #include <asm/mach_desc.h>
 #include <asm/setup.h>

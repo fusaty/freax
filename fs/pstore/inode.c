@@ -5,24 +5,24 @@
  * Copyright (C) 2010 Intel Corporation <tony.luck@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fsnotify.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/ramfs.h>
-#include <linux/parser.h>
-#include <linux/sched.h>
-#include <linux/magic.h>
-#include <linux/pstore.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/fsnotify.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/mount.h>
+#include <freax/seq_file.h>
+#include <freax/ramfs.h>
+#include <freax/parser.h>
+#include <freax/sched.h>
+#include <freax/magic.h>
+#include <freax/pstore.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

@@ -5,28 +5,28 @@
  * All rights reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
 #include "netxen_nic_hw.h"
 
 #include "netxen_nic.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/if_vlan.h>
+#include <freax/dma-mapping.h>
+#include <freax/if_vlan.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
+#include <freax/ipv6.h>
+#include <freax/inetdevice.h>
+#include <freax/sysfs.h>
 
 MODULE_DESCRIPTION("QLogic/NetXen (1/10) GbE Intelligent Ethernet Driver");
 MODULE_LICENSE("GPL");
-MODULE_VERSION(NETXEN_NIC_LINUX_VERSIONID);
+MODULE_VERSION(NETXEN_NIC_freax_VERSIONID);
 MODULE_FIRMWARE(NX_UNIFIED_ROMIMAGE_NAME);
 
 char netxen_nic_driver_name[] = "netxen_nic";
 static char netxen_nic_driver_string[] = "QLogic/NetXen Network Driver v"
-    NETXEN_NIC_LINUX_VERSIONID;
+    NETXEN_NIC_freax_VERSIONID;
 
 static int port_mode = NETXEN_PORT_MODE_AUTO_NEG;
 
@@ -875,7 +875,7 @@ netxen_check_options(struct netxen_adapter *adapter)
 	}
 
 	dev_info(&pdev->dev, "Driver v%s, firmware v%d.%d.%d [%s]\n",
-		 NETXEN_NIC_LINUX_VERSIONID, fw_major, fw_minor, fw_build,
+		 NETXEN_NIC_freax_VERSIONID, fw_major, fw_minor, fw_build,
 		 adapter->ahw.cut_through ? "cut-through" : "legacy");
 
 	if (adapter->fw_version >= NETXEN_VERSION_CODE(4, 0, 222))
@@ -994,9 +994,9 @@ netxen_start_firmware(struct netxen_adapter *adapter)
 	/*
 	 * Tell the hardware our version number.
 	 */
-	val = (_NETXEN_NIC_LINUX_MAJOR << 16)
-		| ((_NETXEN_NIC_LINUX_MINOR << 8))
-		| (_NETXEN_NIC_LINUX_SUBVERSION);
+	val = (_NETXEN_NIC_freax_MAJOR << 16)
+		| ((_NETXEN_NIC_freax_MINOR << 8))
+		| (_NETXEN_NIC_freax_SUBVERSION);
 	NXWR32(adapter, CRB_DRIVER_VERSION, val);
 
 pcie_strap_init:

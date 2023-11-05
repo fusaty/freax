@@ -56,8 +56,8 @@
 #ifndef __ISCI_H__
 #define __ISCI_H__
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
 
 #define DRV_NAME "isci"
 #define SCI_PCI_BAR_COUNT 2

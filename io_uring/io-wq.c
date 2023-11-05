@@ -5,18 +5,18 @@
  * Copyright (C) 2019 Jens Axboe
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/rculist_nulls.h>
-#include <linux/cpu.h>
-#include <linux/task_work.h>
-#include <linux/audit.h>
-#include <linux/mmu_context.h>
-#include <uapi/linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/sched/signal.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/rculist_nulls.h>
+#include <freax/cpu.h>
+#include <freax/task_work.h>
+#include <freax/audit.h>
+#include <freax/mmu_context.h>
+#include <uapi/freax/io_uring.h>
 
 #include "io-wq.h"
 #include "slist.h"

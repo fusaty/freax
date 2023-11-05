@@ -8,18 +8,18 @@
 //
 //This driver is based on max8997.c
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max77686.h>
+#include <freax/mfd/max77686-private.h>
+#include <freax/err.h>
+#include <freax/of.h>
 
 static const struct mfd_cell max77686_devs[] = {
 	{ .name = "max77686-pmic", },

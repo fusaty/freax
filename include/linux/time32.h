@@ -1,5 +1,5 @@
-#ifndef _LINUX_TIME32_H
-#define _LINUX_TIME32_H
+#ifndef _freax_TIME32_H
+#define _freax_TIME32_H
 /*
  * These are all interfaces based on the old time_t definition
  * that overflows in 2038 on 32-bit architectures. New code
@@ -9,8 +9,8 @@
  * code to time64_t should get removed.
  */
 
-#include <linux/time64.h>
-#include <linux/timex.h>
+#include <freax/time64.h>
+#include <freax/timex.h>
 
 #include <vdso/time32.h>
 

@@ -10,13 +10,13 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/export.h>
+#include <freax/net.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/in.h>
+#include <freax/export.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 #include <scsi/scsi_proto.h>

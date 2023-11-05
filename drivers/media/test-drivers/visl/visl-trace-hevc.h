@@ -2,7 +2,7 @@
 #if !defined(_VISL_TRACE_HEVC_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _VISL_TRACE_HEVC_H_
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "visl.h"
 
 #undef TRACE_SYSTEM

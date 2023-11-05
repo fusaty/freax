@@ -5,12 +5,12 @@
  * Copyright (C) 2006, NXP Semiconductors, All Rights Reserved
  * Author: Jean-Paul Saman <jean-paul.saman@nxp.com>
  */
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/kdev_t.h>
-#include <linux/syscalls.h>
-#include <linux/init_syscalls.h>
-#include <linux/umh.h>
+#include <freax/init.h>
+#include <freax/stat.h>
+#include <freax/kdev_t.h>
+#include <freax/syscalls.h>
+#include <freax/init_syscalls.h>
+#include <freax/umh.h>
 
 /*
  * Create a simple rootfs that is similar to the default initramfs

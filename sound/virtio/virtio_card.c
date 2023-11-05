@@ -3,11 +3,11 @@
  * virtio-snd: Virtio sound device
  * Copyright (C) 2021 OpenSynergy GmbH
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/virtio_config.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/virtio_config.h>
 #include <sound/initval.h>
-#include <uapi/linux/virtio_ids.h>
+#include <uapi/freax/virtio_ids.h>
 
 #include "virtio_card.h"
 

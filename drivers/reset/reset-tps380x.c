@@ -9,13 +9,13 @@
  * Copyright (C) 2017 Pengutronix, Philipp Zabel <kernel@pengutronix.de>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reset-controller.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reset-controller.h>
 
 struct tps380x_reset {
 	struct reset_controller_dev	rcdev;

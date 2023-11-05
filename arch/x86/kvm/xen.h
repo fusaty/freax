@@ -12,7 +12,7 @@
 #include <asm/xen/hypervisor.h>
 
 #ifdef CONFIG_KVM_XEN
-#include <linux/jump_label_ratelimit.h>
+#include <freax/jump_label_ratelimit.h>
 
 extern struct static_key_false_deferred kvm_xen_enabled;
 

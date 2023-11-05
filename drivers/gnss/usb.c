@@ -5,13 +5,13 @@
  * Copyright (C) 2021 Johan Hovold <johan@kernel.org>
  */
 
-#include <linux/errno.h>
-#include <linux/gnss.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/errno.h>
+#include <freax/gnss.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 #define GNSS_USB_READ_BUF_LEN	512
 #define GNSS_USB_WRITE_TIMEOUT	1000

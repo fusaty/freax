@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/list_sort.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/list_sort.h>
+#include <freax/list.h>
 
 /*
  * Returns a list organized in an intermediate format suited

@@ -9,7 +9,7 @@
 #ifndef __EXYNOS_PMU_H
 #define __EXYNOS_PMU_H
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #define PMU_TABLE_END	(-1U)
 

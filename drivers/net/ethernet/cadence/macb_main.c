@@ -6,38 +6,38 @@
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/circ_buf.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/phylink.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/ptp_classify.h>
-#include <linux/reset.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/crc32.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/circ_buf.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/phylink.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
+#include <freax/tcp.h>
+#include <freax/iopoll.h>
+#include <freax/phy/phy.h>
+#include <freax/pm_runtime.h>
+#include <freax/ptp_classify.h>
+#include <freax/reset.h>
+#include <freax/firmware/xlnx-zynqmp.h>
 #include "macb.h"
 
 /* This structure is only used for MACB on SiFive FU540 devices */
@@ -4103,7 +4103,7 @@ static int macb_init(struct platform_device *pdev)
 #endif
 		}
 
-		/* get irq: here we use the linux queue index, not the hardware
+		/* get irq: here we use the freax queue index, not the hardware
 		 * queue index. the queue irq definitions in the device tree
 		 * must remove the optional gaps that could exist in the
 		 * hardware queue mask.

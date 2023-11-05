@@ -4,19 +4,19 @@
  */
 
 /*
- *  82C710 C&T mouse port chip driver for Linux
+ *  82C710 C&T mouse port chip driver for freax
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/serio.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 

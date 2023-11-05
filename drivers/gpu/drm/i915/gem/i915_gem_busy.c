@@ -4,7 +4,7 @@
  * Copyright © 2014-2016 Intel Corporation
  */
 
-#include <linux/dma-fence-array.h>
+#include <freax/dma-fence-array.h>
 
 #include "gt/intel_engine.h"
 

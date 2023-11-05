@@ -6,14 +6,14 @@
  * Copyright (C) 2014 SUSE
  */
 
-#ifndef _LINUX_LIVEPATCH_H_
-#define _LINUX_LIVEPATCH_H_
+#ifndef _freax_LIVEPATCH_H_
+#define _freax_LIVEPATCH_H_
 
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/livepatch_sched.h>
+#include <freax/module.h>
+#include <freax/ftrace.h>
+#include <freax/completion.h>
+#include <freax/list.h>
+#include <freax/livepatch_sched.h>
 
 #if IS_ENABLED(CONFIG_LIVEPATCH)
 
@@ -103,14 +103,14 @@ struct klp_callbacks {
 
 /**
  * struct klp_object - kernel object structure for live patching
- * @name:	module name (or NULL for vmlinux)
+ * @name:	module name (or NULL for vmfreax)
  * @funcs:	function entries for functions to be patched in the object
  * @callbacks:	functions to be executed pre/post (un)patching
  * @kobj:	kobject for sysfs resources
  * @func_list:	dynamic list of the function entries
  * @node:	list node for klp_patch obj_list
  * @mod:	kernel module associated with the patched object
- *		(NULL for vmlinux)
+ *		(NULL for vmfreax)
  * @dynamic:    temporary object for nop functions; dynamically allocated
  * @patched:	the object's funcs have been added to the klp_ops list
  */
@@ -254,4 +254,4 @@ int klp_apply_section_relocs(struct module *pmod, Elf_Shdr *sechdrs,
 
 #endif /* CONFIG_LIVEPATCH */
 
-#endif /* _LINUX_LIVEPATCH_H_ */
+#endif /* _freax_LIVEPATCH_H_ */

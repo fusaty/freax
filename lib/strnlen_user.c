@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
+#include <freax/mm.h>
+#include <freax/bitops.h>
 
 #include <asm/word-at-a-time.h>
 

@@ -9,8 +9,8 @@
  */
 
 #include "bcma_private.h"
-#include <linux/bcma/bcma.h>
-#include <linux/pci.h>
+#include <freax/bcma/bcma.h>
+#include <freax/pci.h>
 
 /**************************************************
  * R/W ops.

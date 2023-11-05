@@ -10,19 +10,19 @@
 #undef DEBUG
 #define pr_fmt(fmt) "lpar: " fmt
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/jump_label.h>
-#include <linux/delay.h>
-#include <linux/stop_machine.h>
-#include <linux/spinlock.h>
-#include <linux/cpuhotplug.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/pgtable.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/dma-mapping.h>
+#include <freax/console.h>
+#include <freax/export.h>
+#include <freax/jump_label.h>
+#include <freax/delay.h>
+#include <freax/stop_machine.h>
+#include <freax/spinlock.h>
+#include <freax/cpuhotplug.h>
+#include <freax/workqueue.h>
+#include <freax/proc_fs.h>
+#include <freax/pgtable.h>
+#include <freax/debugfs.h>
 
 #include <asm/processor.h>
 #include <asm/mmu.h>
@@ -911,7 +911,7 @@ static notrace void pseries_hpte_clear_all(void)
 }
 
 /*
- * NOTE: for updatepp ops we are fortunate that the linux "newpp" bits and
+ * NOTE: for updatepp ops we are fortunate that the freax "newpp" bits and
  * the low 3 bits of flags happen to line up.  So no transform is needed.
  * We can probably optimize here and assume the high bits of newpp are
  * already zero.  For now I am paranoid.

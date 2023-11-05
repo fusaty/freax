@@ -4,9 +4,9 @@
  */
 #ifndef _ASYNC_TX_H_
 #define _ASYNC_TX_H_
-#include <linux/dmaengine.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
 
 /* on architectures without dma-mapping capabilities we need to ensure
  * that the asynchronous path compiles away

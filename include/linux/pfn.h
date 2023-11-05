@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PFN_H_
-#define _LINUX_PFN_H_
+#ifndef _freax_PFN_H_
+#define _freax_PFN_H_
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * pfn_t: encapsulates a page-frame number that is optionally backed

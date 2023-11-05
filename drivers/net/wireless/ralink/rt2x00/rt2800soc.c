@@ -14,11 +14,11 @@
  *	Abstract: rt2800 WiSoC specific routines.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include "rt2x00.h"
 #include "rt2x00mmio.h"

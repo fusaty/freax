@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * volume.h - Defines for volume structures in NTFS Linux kernel driver. Part
- *	      of the Linux-NTFS project.
+ * volume.h - Defines for volume structures in NTFS freax kernel driver. Part
+ *	      of the freax-NTFS project.
  *
  * Copyright (c) 2001-2006 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_VOLUME_H
-#define _LINUX_NTFS_VOLUME_H
+#ifndef _freax_NTFS_VOLUME_H
+#define _freax_NTFS_VOLUME_H
 
-#include <linux/rwsem.h>
-#include <linux/uidgid.h>
+#include <freax/rwsem.h>
+#include <freax/uidgid.h>
 
 #include "types.h"
 #include "layout.h"
@@ -161,4 +161,4 @@ DEFINE_NVOL_BIT_OPS(QuotaOutOfDate)
 DEFINE_NVOL_BIT_OPS(UsnJrnlStamped)
 DEFINE_NVOL_BIT_OPS(SparseEnabled)
 
-#endif /* _LINUX_NTFS_VOLUME_H */
+#endif /* _freax_NTFS_VOLUME_H */

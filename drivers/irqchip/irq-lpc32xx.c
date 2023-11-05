@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 #include <asm/exception.h>
 
 #define LPC32XX_INTC_MASK		0x00

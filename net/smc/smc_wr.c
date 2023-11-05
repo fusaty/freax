@@ -19,12 +19,12 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Steffen Maier <maier@linux.vnet.ibm.com>
+ * Author(s):  Steffen Maier <maier@freax.vnet.ibm.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/hashtable.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/hashtable.h>
+#include <freax/wait.h>
 #include <rdma/ib_verbs.h>
 #include <asm/div64.h>
 

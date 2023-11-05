@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Copyright (C) 2015, Intel Corporation
- * Author: Jiang Liu <jiang.liu@linux.intel.com>
+ * Author: Jiang Liu <jiang.liu@freax.intel.com>
  */
-#ifndef _LINUX_RESOURCE_EXT_H
-#define _LINUX_RESOURCE_EXT_H
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#ifndef _freax_RESOURCE_EXT_H
+#define _freax_RESOURCE_EXT_H
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
 
 /* Represent resource window for bridge devices */
 struct resource_win {
@@ -78,4 +78,4 @@ resource_list_first_type(struct list_head *list, unsigned long type)
 	return NULL;
 }
 
-#endif /* _LINUX_RESOURCE_EXT_H */
+#endif /* _freax_RESOURCE_EXT_H */

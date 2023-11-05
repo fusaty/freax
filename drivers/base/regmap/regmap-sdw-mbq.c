@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright(c) 2020 Intel Corporation.
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_registers.h>
 #include "internal.h"
 
 static int regmap_sdw_mbq_write(void *context, unsigned int reg, unsigned int val)

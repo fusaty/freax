@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/slab.c
+ * freax/mm/slab.c
  * Written by Mark Hemment, 1996/97.
  * (markhe@nextd.demon.co.uk)
  *
@@ -87,37 +87,37 @@
  *	All object allocations for a node occur from node specific slab lists.
  */
 
-#include	<linux/slab.h>
-#include	<linux/mm.h>
-#include	<linux/poison.h>
-#include	<linux/swap.h>
-#include	<linux/cache.h>
-#include	<linux/interrupt.h>
-#include	<linux/init.h>
-#include	<linux/compiler.h>
-#include	<linux/cpuset.h>
-#include	<linux/proc_fs.h>
-#include	<linux/seq_file.h>
-#include	<linux/notifier.h>
-#include	<linux/kallsyms.h>
-#include	<linux/kfence.h>
-#include	<linux/cpu.h>
-#include	<linux/sysctl.h>
-#include	<linux/module.h>
-#include	<linux/rcupdate.h>
-#include	<linux/string.h>
-#include	<linux/uaccess.h>
-#include	<linux/nodemask.h>
-#include	<linux/kmemleak.h>
-#include	<linux/mempolicy.h>
-#include	<linux/mutex.h>
-#include	<linux/fault-inject.h>
-#include	<linux/rtmutex.h>
-#include	<linux/reciprocal_div.h>
-#include	<linux/debugobjects.h>
-#include	<linux/memory.h>
-#include	<linux/prefetch.h>
-#include	<linux/sched/task_stack.h>
+#include	<freax/slab.h>
+#include	<freax/mm.h>
+#include	<freax/poison.h>
+#include	<freax/swap.h>
+#include	<freax/cache.h>
+#include	<freax/interrupt.h>
+#include	<freax/init.h>
+#include	<freax/compiler.h>
+#include	<freax/cpuset.h>
+#include	<freax/proc_fs.h>
+#include	<freax/seq_file.h>
+#include	<freax/notifier.h>
+#include	<freax/kallsyms.h>
+#include	<freax/kfence.h>
+#include	<freax/cpu.h>
+#include	<freax/sysctl.h>
+#include	<freax/module.h>
+#include	<freax/rcupdate.h>
+#include	<freax/string.h>
+#include	<freax/uaccess.h>
+#include	<freax/nodemask.h>
+#include	<freax/kmemleak.h>
+#include	<freax/mempolicy.h>
+#include	<freax/mutex.h>
+#include	<freax/fault-inject.h>
+#include	<freax/rtmutex.h>
+#include	<freax/reciprocal_div.h>
+#include	<freax/debugobjects.h>
+#include	<freax/memory.h>
+#include	<freax/prefetch.h>
+#include	<freax/sched/task_stack.h>
 
 #include	<net/sock.h>
 

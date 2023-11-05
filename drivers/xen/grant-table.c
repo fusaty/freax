@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,21 +33,21 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/workqueue.h>
-#include <linux/ratelimit.h>
-#include <linux/moduleparam.h>
+#include <freax/bitmap.h>
+#include <freax/memblock.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/hardirq.h>
+#include <freax/workqueue.h>
+#include <freax/ratelimit.h>
+#include <freax/moduleparam.h>
 #ifdef CONFIG_XEN_GRANT_DMA_ALLOC
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #endif
 
 #include <xen/xen.h>

@@ -4,16 +4,16 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  * Copyright (C) 2014 Amlogic, Inc.
  */
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/iopoll.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/hw_random.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/clk.h>
+#include <freax/iopoll.h>
 
 #define RNG_DATA	0x00
 #define RNG_S4_DATA	0x08

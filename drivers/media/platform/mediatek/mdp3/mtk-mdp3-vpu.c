@@ -4,8 +4,8 @@
  * Author: Ping-Hsun Wu <ping-hsun.wu@mediatek.com>
  */
 
-#include <linux/remoteproc.h>
-#include <linux/remoteproc/mtk_scp.h>
+#include <freax/remoteproc.h>
+#include <freax/remoteproc/mtk_scp.h>
 #include "mtk-mdp3-vpu.h"
 #include "mtk-mdp3-core.h"
 

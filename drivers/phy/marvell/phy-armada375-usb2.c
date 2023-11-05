@@ -12,12 +12,12 @@
  */
 
 #include <dt-bindings/phy/phy.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of_address.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 #define USB2_PHY_CONFIG_DISABLE BIT(0)
 

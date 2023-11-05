@@ -16,13 +16,13 @@
  * Thara Gopinath <thara@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
 
 #include "common.h"
 

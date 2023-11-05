@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/sunrpc/cache.h
+ * include/freax/sunrpc/cache.h
  *
  * Generic code for various authentication-related caches
  * used by sunrpc clients and servers.
@@ -8,14 +8,14 @@
  * Copyright (C) 2002 Neil Brown <neilb@cse.unsw.edu.au>
  */
 
-#ifndef _LINUX_SUNRPC_CACHE_H_
-#define _LINUX_SUNRPC_CACHE_H_
+#ifndef _freax_SUNRPC_CACHE_H_
+#define _freax_SUNRPC_CACHE_H_
 
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/kstrtox.h>
-#include <linux/proc_fs.h>
+#include <freax/kref.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
+#include <freax/kstrtox.h>
+#include <freax/proc_fs.h>
 
 /*
  * Each cache requires:
@@ -318,4 +318,4 @@ static inline int get_expiry(char **bpp, time64_t *rvp)
 	return 0;
 }
 
-#endif /*  _LINUX_SUNRPC_CACHE_H_ */
+#endif /*  _freax_SUNRPC_CACHE_H_ */

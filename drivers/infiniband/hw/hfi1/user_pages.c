@@ -3,10 +3,10 @@
  * Copyright(c) 2015-2017 Intel Corporation.
  */
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/device.h>
+#include <freax/module.h>
 
 #include "hfi.h"
 

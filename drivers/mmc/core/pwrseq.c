@@ -6,12 +6,12 @@
  *
  *  MMC power sequence management
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
-#include <linux/mmc/host.h>
+#include <freax/mmc/host.h>
 
 #include "pwrseq.h"
 

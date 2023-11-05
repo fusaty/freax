@@ -3,9 +3,9 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 #define pr_fmt(fmt) "kasan: " fmt
-#include <linux/kasan.h>
-#include <linux/memblock.h>
-#include <linux/sched/task.h>
+#include <freax/kasan.h>
+#include <freax/memblock.h>
+#include <freax/sched/task.h>
 
 #include <asm/tlbflush.h>
 #include <asm/pgalloc.h>

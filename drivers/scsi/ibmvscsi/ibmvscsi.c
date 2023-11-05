@@ -11,7 +11,7 @@
  *
  * This driver supports the SCSI adapter implemented by the IBM
  * Power5 firmware.  That SCSI adapter is not a physical adapter,
- * but allows Linux SCSI peripheral drivers to directly
+ * but allows freax SCSI peripheral drivers to directly
  * access devices in another logical partition on the physical system.
  *
  * The virtual adapter(s) are present in the open firmware device
@@ -46,14 +46,14 @@
  * layer.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/kthread.h>
 #include <asm/firmware.h>
 #include <asm/vio.h>
 #include <scsi/scsi.h>
@@ -273,7 +273,7 @@ static void set_adapter_info(struct ibmvscsi_host_data *hostdata)
 					cpu_to_be32(partition_number);
 
 	hostdata->madapter_info.mad_version = cpu_to_be32(SRP_MAD_VERSION_1);
-	hostdata->madapter_info.os_type = cpu_to_be32(SRP_MAD_OS_LINUX);
+	hostdata->madapter_info.os_type = cpu_to_be32(SRP_MAD_OS_freax);
 }
 
 /**
@@ -2300,7 +2300,7 @@ static int ibmvscsi_probe(struct vio_dev *vdev, const struct vio_device_id *id)
 		/*
 		 * Wait around max init_timeout secs for the adapter to finish
 		 * initializing. When we are done initializing, we will have a
-		 * valid request_limit.  We don't want Linux scanning before
+		 * valid request_limit.  We don't want freax scanning before
 		 * we are ready.
 		 */
 		for (wait_switch = jiffies + (init_timeout * HZ);

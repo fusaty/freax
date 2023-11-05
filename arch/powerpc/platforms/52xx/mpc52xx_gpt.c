@@ -48,24 +48,24 @@
  * the output mode.  This driver does not change the output mode setting.
  */
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_gpio.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/watchdog.h>
+#include <freax/miscdevice.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
 #include <asm/div64.h>
 #include <asm/mpc52xx.h>
 

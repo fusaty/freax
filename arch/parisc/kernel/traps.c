@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/parisc/traps.c
+ *  freax/arch/parisc/traps.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1999, 2000  Philipp Rumpf <prumpf@tux.org>
@@ -11,41 +11,41 @@
  * state in 'asm.s'.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/bug.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kfence.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/console.h>
+#include <freax/bug.h>
+#include <freax/ratelimit.h>
+#include <freax/uaccess.h>
+#include <freax/kdebug.h>
+#include <freax/kfence.h>
 
 #include <asm/assembly.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/traps.h>
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/smp.h>
 #include <asm/pdc.h>
 #include <asm/pdc_chassis.h>
 #include <asm/unwind.h>
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>
-#include <linux/kgdb.h>
-#include <linux/kprobes.h>
+#include <freax/kgdb.h>
+#include <freax/kprobes.h>
 
 #if defined(CONFIG_LIGHTWEIGHT_SPINLOCK_CHECK)
 #include <asm/spinlock.h>

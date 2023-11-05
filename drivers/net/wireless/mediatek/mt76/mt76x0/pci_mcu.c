@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/firmware.h>
+#include <freax/kernel.h>
+#include <freax/firmware.h>
 
 #include "mt76x0.h"
 #include "mcu.h"

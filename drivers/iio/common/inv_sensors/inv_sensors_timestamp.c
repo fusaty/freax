@@ -3,12 +3,12 @@
  * Copyright (C) 2020 Invensense, Inc.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/module.h>
 
-#include <linux/iio/common/inv_sensors_timestamp.h>
+#include <freax/iio/common/inv_sensors_timestamp.h>
 
 /* compute jitter, min and max following jitter in per mille */
 #define INV_SENSORS_TIMESTAMP_JITTER(_val, _jitter)		\

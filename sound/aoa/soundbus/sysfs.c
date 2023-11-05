@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/stat.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/stat.h>
 /* FIX UP */
 #include "soundbus.h"
 

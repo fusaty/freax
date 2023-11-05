@@ -11,8 +11,8 @@
 #error "Cannot use generic cmpxchg on SMP"
 #endif
 
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <freax/types.h>
+#include <freax/irqflags.h>
 
 /*
  * This function doesn't exist, so you'll get a linker error if

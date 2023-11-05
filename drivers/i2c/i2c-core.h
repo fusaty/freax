@@ -3,7 +3,7 @@
  * i2c-core.h - interfaces internal to the I2C framework
  */
 
-#include <linux/rwsem.h>
+#include <freax/rwsem.h>
 
 struct i2c_devinfo {
 	struct list_head	list;

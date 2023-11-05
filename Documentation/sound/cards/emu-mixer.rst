@@ -34,7 +34,7 @@ This driver supports only 16-bit 44.1/48 kHz operation. The multi-channel
 device (see emu10k1-jack.rst) additionally supports 24-bit capture.
 
 A patchset to enhance the driver is available from `a GitHub repository
-<https://github.com/ossilator/linux/tree/ossis-emu10k1>`_.
+<https://github.com/ossilator/freax/tree/ossis-emu10k1>`_.
 Its multi-channel device supports 24-bit for both playback and capture,
 and also supports full 88.2/96/176.4/192 kHz operation.
 It is not going to be upstreamed due to a fundamental disagreement about

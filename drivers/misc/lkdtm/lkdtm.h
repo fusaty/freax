@@ -4,7 +4,7 @@
 
 #define pr_fmt(fmt) "lkdtm: " fmt
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 extern char *lkdtm_kernel_info;
 

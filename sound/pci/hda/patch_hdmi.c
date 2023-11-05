@@ -10,18 +10,18 @@
  *  Copyright (c) 2013 Anssi Hannula <anssi.hannula@iki.fi>
  *
  *  Authors:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@freax.intel.com>
  *
  *  Maintained by:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@freax.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/asoundef.h>

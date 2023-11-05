@@ -1,6 +1,6 @@
 /*
  * Copyright 2003 PathScale, Inc.
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  *
  * Licensed under the GPL
  */

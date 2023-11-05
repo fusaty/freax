@@ -5,18 +5,18 @@
  * Copyright (C) 2007 Ville Syrjala <syrjala@sci.fi>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/w1-gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/w1-gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of_platform.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/delay.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 static u8 w1_gpio_set_pullup(void *data, int delay)
 {
@@ -87,7 +87,7 @@ static int w1_gpio_probe(struct platform_device *pdev)
 		 * driver it high/low like we are in full control of the line and
 		 * open drain will happen transparently.
 		 */
-		if (of_property_present(np, "linux,open-drain"))
+		if (of_property_present(np, "freax,open-drain"))
 			gflags = GPIOD_OUT_LOW;
 
 		pdev->dev.platform_data = pdata;

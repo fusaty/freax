@@ -7,14 +7,14 @@
  * Copyright:   (C) 2014 Texas Instruments, Inc.
  */
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #include <dt-bindings/input/ti-drv260x.h>
 

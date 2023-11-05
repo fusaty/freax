@@ -22,7 +22,7 @@
 #ifndef __CTU_CAN_FD_CAN_FD_REGISTER_MAP__
 #define __CTU_CAN_FD_CAN_FD_REGISTER_MAP__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* CAN_Registers memory map */
 enum ctu_can_fd_can_registers {

@@ -11,7 +11,7 @@
  *	rewritten for kernel 2.6
  *
  *  cPad display character device part is not included. It can be found at
- *  http://jan-steinhoff.de/linux/synaptics-usb.html
+ *  http://jan-steinhoff.de/freax/synaptics-usb.html
  *
  * Bases on:	usb_skeleton.c v2.2 by Greg Kroah-Hartman
  *		drivers/hid/usbhid/usbmouse.c by Vojtech Pavlik
@@ -34,13 +34,13 @@
  * This driver uses setting 1.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/usb.h>
-#include <linux/input.h>
-#include <linux/usb/input.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/usb.h>
+#include <freax/input.h>
+#include <freax/usb/input.h>
 
 #define USB_VENDOR_ID_SYNAPTICS	0x06cb
 #define USB_DEVICE_ID_SYNAPTICS_TP	0x0001	/* Synaptics USB TouchPad */

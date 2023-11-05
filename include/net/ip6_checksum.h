@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -26,9 +26,9 @@
 #include <asm/byteorder.h>
 #include <net/ip.h>
 #include <asm/checksum.h>
-#include <linux/in6.h>
-#include <linux/tcp.h>
-#include <linux/ipv6.h>
+#include <freax/in6.h>
+#include <freax/tcp.h>
+#include <freax/ipv6.h>
 
 #ifndef _HAVE_ARCH_IPV6_CSUM
 __sum16 csum_ipv6_magic(const struct in6_addr *saddr,

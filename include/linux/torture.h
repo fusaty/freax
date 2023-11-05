@@ -4,23 +4,23 @@
  *
  * Copyright IBM Corporation, 2014
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  */
 
-#ifndef __LINUX_TORTURE_H
-#define __LINUX_TORTURE_H
+#ifndef __freax_TORTURE_H
+#define __freax_TORTURE_H
 
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/seqlock.h>
-#include <linux/lockdep.h>
-#include <linux/completion.h>
-#include <linux/debugobjects.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/cache.h>
+#include <freax/spinlock.h>
+#include <freax/threads.h>
+#include <freax/cpumask.h>
+#include <freax/seqlock.h>
+#include <freax/lockdep.h>
+#include <freax/completion.h>
+#include <freax/debugobjects.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
 
 /* Definitions for a non-string torture-test module parameter. */
 #define torture_param(type, name, init, msg) \
@@ -132,4 +132,4 @@ void _torture_stop_kthread(char *m, struct task_struct **tp);
 long torture_sched_setaffinity(pid_t pid, const struct cpumask *in_mask);
 #endif
 
-#endif /* __LINUX_TORTURE_H */
+#endif /* __freax_TORTURE_H */

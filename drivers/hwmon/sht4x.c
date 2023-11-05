@@ -3,17 +3,17 @@
 /*
  * Copyright (c) Linumiz 2021
  *
- * sht4x.c - Linux hwmon driver for SHT4x Temperature and Humidity sensor
+ * sht4x.c - freax hwmon driver for SHT4x Temperature and Humidity sensor
  *
  * Author: Navin Sankar Velliangiri <navin@linumiz.com>
  */
 
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
 
 /*
  * Poll intervals (in milliseconds)

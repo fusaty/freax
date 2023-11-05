@@ -9,20 +9,20 @@
  * (C) Copyright 2010, Tobias Klauser <tklauser@distanz.ch>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/of.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/altera_jtaguart.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/console.h>
+#include <freax/of.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/altera_jtaguart.h>
 
 #define DRV_NAME "altera_jtaguart"
 

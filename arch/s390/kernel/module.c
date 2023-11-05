@@ -10,17 +10,17 @@
  *  based on i386 version
  *    Copyright (C) 2001 Rusty Russell.
  */
-#include <linux/module.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/bug.h>
-#include <linux/memory.h>
+#include <freax/module.h>
+#include <freax/elf.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/ftrace.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/kasan.h>
+#include <freax/moduleloader.h>
+#include <freax/bug.h>
+#include <freax/memory.h>
 #include <asm/alternative.h>
 #include <asm/nospec-branch.h>
 #include <asm/facility.h>

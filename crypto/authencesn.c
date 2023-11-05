@@ -14,13 +14,13 @@
 #include <crypto/authenc.h>
 #include <crypto/null.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 struct authenc_esn_instance_ctx {
 	struct crypto_ahash_spawn auth;

@@ -5,10 +5,10 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/security.h>
-#include <linux/string_helpers.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/security.h>
+#include <freax/string_helpers.h>
 #include "common.h"
 
 /* String table for operation mode. */

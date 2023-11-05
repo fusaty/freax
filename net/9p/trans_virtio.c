@@ -13,26 +13,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/un.h>
-#include <linux/uaccess.h>
-#include <linux/inet.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <freax/in.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/ipv6.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/un.h>
+#include <freax/uaccess.h>
+#include <freax/inet.h>
+#include <freax/file.h>
+#include <freax/highmem.h>
+#include <freax/slab.h>
 #include <net/9p/9p.h>
-#include <linux/parser.h>
+#include <freax/parser.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
-#include <linux/scatterlist.h>
-#include <linux/swap.h>
-#include <linux/virtio.h>
-#include <linux/virtio_9p.h>
+#include <freax/scatterlist.h>
+#include <freax/swap.h>
+#include <freax/virtio.h>
+#include <freax/virtio_9p.h>
 #include "trans_common.h"
 
 #define VIRTQUEUE_NUM	128

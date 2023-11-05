@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2018 Mellanox Technologies */
 
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
-#include <linux/hashtable.h>
-#include <linux/refcount.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/xarray.h>
+#include <freax/hashtable.h>
+#include <freax/refcount.h>
 
 #include "mapping.h"
 

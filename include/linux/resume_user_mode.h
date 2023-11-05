@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 
-#ifndef LINUX_RESUME_USER_MODE_H
-#define LINUX_RESUME_USER_MODE_H
+#ifndef freax_RESUME_USER_MODE_H
+#define freax_RESUME_USER_MODE_H
 
-#include <linux/sched.h>
-#include <linux/task_work.h>
-#include <linux/memcontrol.h>
-#include <linux/blk-cgroup.h>
+#include <freax/sched.h>
+#include <freax/task_work.h>
+#include <freax/memcontrol.h>
+#include <freax/blk-cgroup.h>
 
 /**
  * set_notify_resume - cause resume_user_mode_work() to be called
@@ -61,4 +61,4 @@ static inline void resume_user_mode_work(struct pt_regs *regs)
 	rseq_handle_notify_resume(NULL, regs);
 }
 
-#endif /* LINUX_RESUME_USER_MODE_H */
+#endif /* freax_RESUME_USER_MODE_H */

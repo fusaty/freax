@@ -4,8 +4,8 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#ifndef __LINUX_IRQCHIP_ARM_GIC_V4_H
-#define __LINUX_IRQCHIP_ARM_GIC_V4_H
+#ifndef __freax_IRQCHIP_ARM_GIC_V4_H
+#define __freax_IRQCHIP_ARM_GIC_V4_H
 
 struct its_vpe;
 

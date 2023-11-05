@@ -5,12 +5,12 @@
  * Copyright (C) 2018-2020 Intel Corporation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/dev_printk.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel-m10-bmc.h>
-#include <linux/module.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/dev_printk.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/intel-m10-bmc.h>
+#include <freax/module.h>
 
 void m10bmc_fw_state_set(struct intel_m10bmc *m10bmc, enum m10bmc_fw_state new_state)
 {

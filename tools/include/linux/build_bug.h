@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BUILD_BUG_H
-#define _LINUX_BUILD_BUG_H
+#ifndef _freax_BUILD_BUG_H
+#define _freax_BUILD_BUG_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #ifdef __CHECKER__
 #define BUILD_BUG_ON_ZERO(e) (0)
@@ -88,4 +88,4 @@
 		"Offset of " #field " in " #type " has changed.")
 
 
-#endif	/* _LINUX_BUILD_BUG_H */
+#endif	/* _freax_BUILD_BUG_H */

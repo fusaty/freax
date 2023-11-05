@@ -1,6 +1,6 @@
 /**************************************************************************
 
- Copyright 2006 Dave Airlie <airlied@linux.ie>
+ Copyright 2006 Dave Airlie <airlied@freax.ie>
 
 All Rights Reserved.
 
@@ -25,14 +25,14 @@ USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 **************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/fb.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 #include <asm/io.h>
 

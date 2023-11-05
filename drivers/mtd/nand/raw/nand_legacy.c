@@ -13,9 +13,9 @@
  * at some point.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/nmi.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/nmi.h>
 
 #include "internals.h"
 

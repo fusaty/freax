@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/pgtable.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/sections.h>

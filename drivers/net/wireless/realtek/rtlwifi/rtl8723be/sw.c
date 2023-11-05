@@ -18,8 +18,8 @@
 #include "table.h"
 #include "../btcoexist/rtl_btc.h"
 
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
 
 static void rtl8723be_init_aspm_vars(struct ieee80211_hw *hw)
 {

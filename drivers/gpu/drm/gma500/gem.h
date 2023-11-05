@@ -8,7 +8,7 @@
 #ifndef _GEM_H
 #define _GEM_H
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <drm/drm_gem.h>
 

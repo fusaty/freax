@@ -5,15 +5,15 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/bitfield.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/phy/phy.h>
+#include <freax/bitfield.h>
 
 #include <video/mipi_display.h>
 

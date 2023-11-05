@@ -9,11 +9,11 @@
 #ifndef _SND_SOC_INTEL_QUIRKS_H
 #define _SND_SOC_INTEL_QUIRKS_H
 
-#include <linux/platform_data/x86/soc.h>
+#include <freax/platform_data/x86/soc.h>
 
 #if IS_ENABLED(CONFIG_X86)
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 #include <asm/iosf_mbi.h>
 
 static inline bool soc_intel_is_byt_cr(struct platform_device *pdev)

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 #ifndef _UAPI_MPTCP_H
 #define _UAPI_MPTCP_H
 
@@ -7,11 +7,11 @@
 #include <sys/socket.h>		/* for struct sockaddr			*/
 #endif
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/in.h>		/* for sockaddr_in			*/
-#include <linux/in6.h>		/* for sockaddr_in6			*/
-#include <linux/socket.h>	/* for sockaddr_storage and sa_family	*/
+#include <freax/const.h>
+#include <freax/types.h>
+#include <freax/in.h>		/* for sockaddr_in			*/
+#include <freax/in6.h>		/* for sockaddr_in6			*/
+#include <freax/socket.h>	/* for sockaddr_storage and sa_family	*/
 
 #define MPTCP_SUBFLOW_FLAG_MCAP_REM		_BITUL(0)
 #define MPTCP_SUBFLOW_FLAG_MCAP_LOC		_BITUL(1)
@@ -26,7 +26,7 @@
 #define MPTCP_PM_CMD_GRP_NAME	"mptcp_pm_cmds"
 #define MPTCP_PM_EV_GRP_NAME	"mptcp_pm_events"
 
-#include <linux/mptcp_pm.h>
+#include <freax/mptcp_pm.h>
 
 #define MPTCP_INFO_FLAG_FALLBACK		_BITUL(0)
 #define MPTCP_INFO_FLAG_REMOTE_KEY_RECEIVED	_BITUL(1)

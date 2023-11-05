@@ -7,12 +7,12 @@
 // Author: David Rhodes <david.rhodes@cirrus.com>
 // Author: Lucas Tanure <lucas.tanure@cirrus.com>
 
-#include <linux/dev_printk.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <freax/dev_printk.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/firmware/cirrus/wmfw.h>
 
 #include <sound/cs35l41.h>
 

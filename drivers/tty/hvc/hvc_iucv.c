@@ -7,22 +7,22 @@
  *
  * Copyright IBM Corp. 2008, 2013
  *
- * Author(s):	Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s):	Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 #define KMSG_COMPONENT		"hvc_iucv"
 #define pr_fmt(fmt)		KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/slab.h>
 #include <asm/ebcdic.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/moduleparam.h>
-#include <linux/tty.h>
-#include <linux/wait.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/mempool.h>
+#include <freax/moduleparam.h>
+#include <freax/tty.h>
+#include <freax/wait.h>
 #include <net/iucv/iucv.h>
 
 #include "hvc_console.h"
@@ -63,7 +63,7 @@ enum tty_state_t {
 struct hvc_iucv_private {
 	struct hvc_struct	*hvc;		/* HVC struct reference */
 	u8			srv_name[8];	/* IUCV service name (ebcdic) */
-	unsigned char		is_console;	/* Linux console usage flag */
+	unsigned char		is_console;	/* freax console usage flag */
 	enum iucv_state_t	iucv_state;	/* IUCV connection status */
 	enum tty_state_t	tty_state;	/* TTY status */
 	struct iucv_path	*path;		/* IUCV path pointer */
@@ -1039,7 +1039,7 @@ static const struct attribute_group *hvc_iucv_dev_attr_groups[] = {
 /**
  * hvc_iucv_alloc() - Allocates a new struct hvc_iucv_private instance
  * @id:			hvc_iucv_table index
- * @is_console:		Flag if the instance is used as Linux console
+ * @is_console:		Flag if the instance is used as freax console
  *
  * This function allocates a new hvc_iucv_private structure and stores
  * the instance in hvc_iucv_table at index @id.
@@ -1373,7 +1373,7 @@ static int __init hvc_iucv_init(void)
 	rc = hvc_instantiate(0, IUCV_HVC_CON_IDX, &hvc_iucv_ops);
 	if (rc) {
 		pr_err("Registering HVC terminal device as "
-		       "Linux console failed\n");
+		       "freax console failed\n");
 		goto out_error_memory;
 	}
 

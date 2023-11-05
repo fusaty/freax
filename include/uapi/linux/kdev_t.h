@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_KDEV_T_H
-#define _UAPI_LINUX_KDEV_T_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_KDEV_T_H
+#define _UAPI_freax_KDEV_T_H
 #ifndef __KERNEL__
 
 /*
@@ -11,4 +11,4 @@ from the kernel sources. These must be the externally visible ones.
 #define MINOR(dev)	((dev) & 0xff)
 #define MKDEV(ma,mi)	((ma)<<8 | (mi))
 #endif /* __KERNEL__ */
-#endif /* _UAPI_LINUX_KDEV_T_H */
+#endif /* _UAPI_freax_KDEV_T_H */

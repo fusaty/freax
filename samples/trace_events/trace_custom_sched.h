@@ -10,8 +10,8 @@
 #if !defined(_TRACE_CUSTOM_SCHED_H) || defined(TRACE_CUSTOM_MULTI_READ)
 #define _TRACE_CUSTOM_SCHED_H
 
-/* Include linux/trace_events.h for initial defines of TRACE_CUSTOM_EVENT() */
-#include <linux/trace_events.h>
+/* Include freax/trace_events.h for initial defines of TRACE_CUSTOM_EVENT() */
+#include <freax/trace_events.h>
 
 /*
  * TRACE_CUSTOM_EVENT() is just like TRACE_EVENT(). The first parameter

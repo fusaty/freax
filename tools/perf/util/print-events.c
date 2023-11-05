@@ -9,9 +9,9 @@
 #include <unistd.h>
 
 #include <api/fs/tracing_path.h>
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
-#include <linux/zalloc.h>
+#include <freax/stddef.h>
+#include <freax/perf_event.h>
+#include <freax/zalloc.h>
 #include <subcmd/pager.h>
 
 #include "build-id.h"

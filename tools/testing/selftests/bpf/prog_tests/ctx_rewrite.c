@@ -9,7 +9,7 @@
 
 #include "bpf/btf.h"
 #include "bpf_util.h"
-#include "linux/filter.h"
+#include "freax/filter.h"
 #include "disasm.h"
 
 #define MAX_PROG_TEXT_SZ (32 * 1024)
@@ -901,9 +901,9 @@ void test_ctx_rewrite(void)
 	if (!field_regex || !ident_regex)
 		return;
 
-	btf = btf__load_vmlinux_btf();
+	btf = btf__load_vmfreax_btf();
 	if (!btf) {
-		PRINT_FAIL("Can't load vmlinux BTF, errno %d (%s)\n", errno, strerror(errno));
+		PRINT_FAIL("Can't load vmfreax BTF, errno %d (%s)\n", errno, strerror(errno));
 		goto out;
 	}
 

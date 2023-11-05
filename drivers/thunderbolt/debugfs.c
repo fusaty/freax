@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2020, Intel Corporation
  * Authors: Gil Fine <gil.fine@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/pm_runtime.h>
+#include <freax/uaccess.h>
 
 #include "tb.h"
 #include "sb_regs.h"

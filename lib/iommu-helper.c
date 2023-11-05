@@ -3,8 +3,8 @@
  * IOMMU helper functions for the free area management
  */
 
-#include <linux/bitmap.h>
-#include <linux/iommu-helper.h>
+#include <freax/bitmap.h>
+#include <freax/iommu-helper.h>
 
 unsigned long iommu_area_alloc(unsigned long *map, unsigned long size,
 			       unsigned long start, unsigned int nr,

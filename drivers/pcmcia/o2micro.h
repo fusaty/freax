@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_O2MICRO_H
-#define _LINUX_O2MICRO_H
+#ifndef _freax_O2MICRO_H
+#define _freax_O2MICRO_H
 
 /* Additional PCI configuration registers */
 
@@ -180,4 +180,4 @@ static void o2micro_restore_state(struct yenta_socket *socket)
 	o2micro_override(socket);
 }
 
-#endif /* _LINUX_O2MICRO_H */
+#endif /* _freax_O2MICRO_H */

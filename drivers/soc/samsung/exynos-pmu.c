@@ -5,16 +5,16 @@
 //
 // Exynos - CPU PMU(Power Management Unit) support
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
 
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/soc/samsung/exynos-pmu.h>
+#include <freax/soc/samsung/exynos-regs-pmu.h>
+#include <freax/soc/samsung/exynos-pmu.h>
 
 #include "exynos-pmu.h"
 

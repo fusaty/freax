@@ -5,18 +5,18 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/regulator/lp872x.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/regulator/lp872x.h>
+#include <freax/regulator/driver.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
 
 /* Registers : LP8720/8725 shared */
 #define LP872X_GENERAL_CFG		0x00

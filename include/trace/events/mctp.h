@@ -6,7 +6,7 @@
 #if !defined(_TRACE_MCTP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MCTP_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 #ifndef __TRACE_MCTP_ENUMS
 #define __TRACE_MCTP_ENUMS

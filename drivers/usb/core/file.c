@@ -17,12 +17,12 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/rwsem.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/usb.h>
 
 #include "usb.h"
 

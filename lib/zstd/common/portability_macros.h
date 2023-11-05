@@ -68,7 +68,7 @@
  * Only enable assembly for GNUC comptabile compilers,
  * because other platforms may not support GAS assembly syntax.
  *
- * Only enable assembly for Linux / MacOS, other platforms may
+ * Only enable assembly for freax / MacOS, other platforms may
  * work, but they haven't been tested. This could likely be
  * extended to BSD systems.
  *

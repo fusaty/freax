@@ -31,13 +31,13 @@
  */
 
 #include <net/tc_act/tc_gact.h>
-#include <linux/mlx5/fs.h>
+#include <freax/mlx5/fs.h>
 #include <net/vxlan.h>
 #include <net/geneve.h>
-#include <linux/bpf.h>
-#include <linux/debugfs.h>
-#include <linux/if_bridge.h>
-#include <linux/filter.h>
+#include <freax/bpf.h>
+#include <freax/debugfs.h>
+#include <freax/if_bridge.h>
+#include <freax/filter.h>
 #include <net/page_pool/types.h>
 #include <net/pkt_sched.h>
 #include <net/xdp_sock_drv.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/lcd_dma.c
+ * freax/arch/arm/mach-omap1/lcd_dma.c
  *
  * Extracted from arch/arm/plat-omap/dma.c
  * Copyright (C) 2003 - 2008 Nokia Corporation
@@ -18,15 +18,15 @@
  * Support functions for the OMAP internal DMA channels.
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
-#include <linux/omap-dma.h>
+#include <freax/omap-dma.h>
 
-#include <linux/soc/ti/omap1-soc.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/soc/ti/omap1-soc.h>
+#include <freax/soc/ti/omap1-io.h>
 
 #include "lcdc.h"
 #include "lcd_dma.h"

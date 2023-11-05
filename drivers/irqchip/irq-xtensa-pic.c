@@ -12,12 +12,12 @@
  * Kevin Chea
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/xtensa-pic.h>
-#include <linux/of.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/xtensa-pic.h>
+#include <freax/of.h>
 
 unsigned int cached_irq_mask;
 

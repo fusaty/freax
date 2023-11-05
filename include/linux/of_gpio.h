@@ -7,13 +7,13 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#ifndef __LINUX_OF_GPIO_H
-#define __LINUX_OF_GPIO_H
+#ifndef __freax_OF_GPIO_H
+#define __freax_OF_GPIO_H
 
-#include <linux/compiler.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio.h>		/* FIXME: Shouldn't be here */
-#include <linux/of.h>
+#include <freax/compiler.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio.h>		/* FIXME: Shouldn't be here */
+#include <freax/of.h>
 
 struct device_node;
 
@@ -24,7 +24,7 @@ extern int of_get_named_gpio(const struct device_node *np,
 
 #else /* CONFIG_OF_GPIO */
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 /* Drivers may not strictly depend on the GPIO support, so let them link. */
 static inline int of_get_named_gpio(const struct device_node *np,
@@ -35,4 +35,4 @@ static inline int of_get_named_gpio(const struct device_node *np,
 
 #endif /* CONFIG_OF_GPIO */
 
-#endif /* __LINUX_OF_GPIO_H */
+#endif /* __freax_OF_GPIO_H */

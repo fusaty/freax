@@ -5,18 +5,18 @@
  * Author: Dipen Patel <dipenp@nvidia.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/hte.h>
-#include <linux/uaccess.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/hte.h>
+#include <freax/uaccess.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/consumer.h>
 
 #define HTE_SUSPEND	0
 

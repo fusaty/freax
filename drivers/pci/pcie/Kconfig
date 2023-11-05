@@ -47,7 +47,7 @@ config PCIEAER_INJECT
 	  error injection can fake almost all kinds of errors with the
 	  help of a user space helper tool aer-inject, which can be
 	  gotten from:
-	     https://git.kernel.org/cgit/linux/kernel/git/gong.chen/aer-inject.git/
+	     https://git.kernel.org/cgit/freax/kernel/git/gong.chen/aer-inject.git/
 
 #
 # PCI Express ECRC
@@ -73,7 +73,7 @@ config PCIEASPM
 	  state L0/L0s/L1.
 
 	  ASPM is initially set up by the firmware. With this option enabled,
-	  Linux can modify this state in order to disable ASPM on known-bad
+	  freax can modify this state in order to disable ASPM on known-bad
 	  hardware or configurations and enable it when known-safe.
 
 	  ASPM can be disabled or enabled at runtime via

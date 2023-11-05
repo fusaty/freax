@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MINMAX_H
-#define _LINUX_MINMAX_H
+#ifndef _freax_MINMAX_H
+#define _freax_MINMAX_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/const.h>
-#include <linux/types.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/const.h>
+#include <freax/types.h>
 
 /*
  * min()/max()/clamp() macros must accomplish three things:
@@ -270,4 +270,4 @@ static inline bool in_range32(u32 val, u32 start, u32 len)
 #define swap(a, b) \
 	do { typeof(a) __tmp = (a); (a) = (b); (b) = __tmp; } while (0)
 
-#endif	/* _LINUX_MINMAX_H */
+#endif	/* _freax_MINMAX_H */

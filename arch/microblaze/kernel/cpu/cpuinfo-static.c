@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
 #include <asm/cpuinfo.h>
 #include <asm/pvr.h>
 

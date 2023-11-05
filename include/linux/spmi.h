@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2013, The freax Foundation. All rights reserved.
  */
-#ifndef _LINUX_SPMI_H
-#define _LINUX_SPMI_H
+#ifndef _freax_SPMI_H
+#define _freax_SPMI_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
 /* Maximum slave identifier */
 #define SPMI_MAX_SLAVE_ID		16

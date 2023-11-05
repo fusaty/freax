@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/printk.h> /* For CONSOLE_LOGLEVEL_* */
+#include <freax/ctype.h>
+#include <freax/efi.h>
+#include <freax/kernel.h>
+#include <freax/printk.h> /* For CONSOLE_LOGLEVEL_* */
 #include <asm/efi.h>
 #include <asm/setup.h>
 

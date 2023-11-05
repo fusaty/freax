@@ -10,23 +10,23 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/mfd/core.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/da9063/core.h>
-#include <linux/mfd/da9063/registers.h>
+#include <freax/mfd/da9063/core.h>
+#include <freax/mfd/da9063/registers.h>
 
-#include <linux/proc_fs.h>
-#include <linux/kthread.h>
-#include <linux/uaccess.h>
+#include <freax/proc_fs.h>
+#include <freax/kthread.h>
+#include <freax/uaccess.h>
 
 
 static const struct resource da9063_regulators_resources[] = {

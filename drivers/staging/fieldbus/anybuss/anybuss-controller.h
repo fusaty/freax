@@ -5,11 +5,11 @@
  * Copyright 2018 Arcx Inc
  */
 
-#ifndef __LINUX_ANYBUSS_CONTROLLER_H__
-#define __LINUX_ANYBUSS_CONTROLLER_H__
+#ifndef __freax_ANYBUSS_CONTROLLER_H__
+#define __freax_ANYBUSS_CONTROLLER_H__
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /*
  * To instantiate an Anybus-S host, a controller should provide the following:
@@ -44,4 +44,4 @@ struct anybuss_host * __must_check
 devm_anybuss_host_common_probe(struct device *dev,
 			       const struct anybuss_ops *ops);
 
-#endif /* __LINUX_ANYBUSS_CONTROLLER_H__ */
+#endif /* __freax_ANYBUSS_CONTROLLER_H__ */

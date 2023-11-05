@@ -6,29 +6,29 @@
  * Author: Sourav Poddar <sourav.poddar@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/omap-dma.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/sizes.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
 
 struct ti_qspi_regs {
 	u32 clkctrl;

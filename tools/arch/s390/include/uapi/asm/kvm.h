@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_KVM_S390_H
-#define __LINUX_KVM_S390_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_KVM_S390_H
+#define __freax_KVM_S390_H
 /*
  * KVM s390 specific structures and definitions
  *
@@ -9,7 +9,7 @@
  *    Author(s): Carsten Otte <cotte@de.ibm.com>
  *               Christian Borntraeger <borntraeger@de.ibm.com>
  */
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define __KVM_S390
 #define __KVM_HAVE_GUEST_DEBUG

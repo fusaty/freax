@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/module.c
+ *  freax/arch/arm/kernel/module.c
  *
  *  Copyright (C) 2002 Russell King.
  *  Modified for nommu by Hyok S. Choi
  *
  * Module allocation method suggested by Andi Kleen.
  */
-#include <linux/module.h>
-#include <linux/moduleloader.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/moduleloader.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/elf.h>
+#include <freax/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/gfp.h>
 
 #include <asm/sections.h>
 #include <asm/smp_plat.h>

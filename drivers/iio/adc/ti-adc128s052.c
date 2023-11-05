@@ -9,13 +9,13 @@
  * https://www.ti.com/lit/ds/symlink/adc124s021.pdf
  */
 
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/err.h>
+#include <freax/iio/iio.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 struct adc128_configuration {
 	const struct iio_chan_spec	*channels;

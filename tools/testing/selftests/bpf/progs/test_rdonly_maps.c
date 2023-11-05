@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019 Facebook
 
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <freax/ptrace.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 const struct {

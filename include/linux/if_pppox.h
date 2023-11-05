@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /***************************************************************************
- * Linux PPP over X - Generic PPP transport layer sockets
- * Linux PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
+ * freax PPP over X - Generic PPP transport layer sockets
+ * freax PPP over Ethernet (PPPoE) Socket Implementation (RFC 2516) 
  *
  * This file supplies definitions required by the PPP over Ethernet driver
  * (pppox.c).  All version information wrt this file is located in pppox.c
  */
-#ifndef __LINUX_IF_PPPOX_H
-#define __LINUX_IF_PPPOX_H
+#ifndef __freax_IF_PPPOX_H
+#define __freax_IF_PPPOX_H
 
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_channel.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/if_pppox.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/ppp_channel.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/if_pppox.h>
 
 static inline struct pppoe_hdr *pppoe_hdr(const struct sk_buff *skb)
 {
@@ -91,4 +91,4 @@ enum {
     PPPOX_DEAD		= 16  /* dead, useless, please clean me up!*/
 };
 
-#endif /* !(__LINUX_IF_PPPOX_H) */
+#endif /* !(__freax_IF_PPPOX_H) */

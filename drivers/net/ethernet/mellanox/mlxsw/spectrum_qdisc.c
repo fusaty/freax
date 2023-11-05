@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
 #include <net/pkt_cls.h>
 #include <net/red.h>
 
@@ -1591,7 +1591,7 @@ static struct mlxsw_sp_qdisc_ops mlxsw_sp_qdisc_ops_ets = {
 	.get_tclass_num = mlxsw_sp_qdisc_ets_get_tclass_num,
 };
 
-/* Linux allows linking of Qdiscs to arbitrary classes (so long as the resulting
+/* freax allows linking of Qdiscs to arbitrary classes (so long as the resulting
  * graph is free of cycles). These operations do not change the parent handle
  * though, which means it can be incomplete (if there is more than one class
  * where the Qdisc in question is grafted) or outright wrong (if the Qdisc was

@@ -4,7 +4,7 @@
  *
  * Copyright (C) IBM Corporation, 2005, 2006
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@freax.ibm.com>
  *	  Josh Triplett <josh@joshtriplett.org>
  *
  * See also:  Documentation/RCU/torture.rst
@@ -12,47 +12,47 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/rcu_notifier.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/err.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/rcu_notifier.h>
+#include <freax/interrupt.h>
+#include <freax/sched/signal.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/moduleparam.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/freezer.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/stat.h>
+#include <freax/srcu.h>
+#include <freax/slab.h>
+#include <freax/trace_clock.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/sysctl.h>
-#include <linux/oom.h>
-#include <linux/tick.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/nmi.h>
+#include <freax/torture.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/sysctl.h>
+#include <freax/oom.h>
+#include <freax/tick.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/nmi.h>
 
 #include "rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@freax.ibm.com> and Josh Triplett <josh@joshtriplett.org>");
 
 /* Bits for ->extendables field, extendables param, and related definitions. */
 #define RCUTORTURE_RDR_SHIFT_1	 8	/* Put SRCU index in upper bits. */

@@ -74,7 +74,7 @@ my $git_command ='export LANGUAGE=en_US.UTF-8; git';
 my $tabsize = 8;
 my ${CONFIG_} = "CONFIG_";
 
-my %maybe_linker_symbol; # for externs in c exceptions, when seen in *vmlinux.lds.h
+my %maybe_linker_symbol; # for externs in c exceptions, when seen in *vmfreax.lds.h
 
 sub help {
 	my ($exitcode) = @_;
@@ -3591,7 +3591,7 @@ sub process {
 			my $msg_level = \&ERROR;
 			$msg_level = \&CHK if ($file);
 			&{$msg_level}("FSF_MAILING_ADDRESS",
-				      "Do not include the paragraph about writing to the Free Software Foundation's mailing address from the sample GPL notice. The FSF has changed addresses in the past, and may do so again. Linux already includes a copy of the GPL.\n" . $herevet)
+				      "Do not include the paragraph about writing to the Free Software Foundation's mailing address from the sample GPL notice. The FSF has changed addresses in the past, and may do so again. freax already includes a copy of the GPL.\n" . $herevet)
 		}
 
 # check for Kconfig help text having a real description
@@ -4830,10 +4830,10 @@ sub process {
 				      "Do not crash the kernel unless it is absolutely unavoidable--use WARN_ON_ONCE() plus recovery code (if feasible) instead of BUG() or variants\n" . $herecurr);
 		}
 
-# avoid LINUX_VERSION_CODE
-		if ($line =~ /\bLINUX_VERSION_CODE\b/) {
-			WARN("LINUX_VERSION_CODE",
-			     "LINUX_VERSION_CODE should be avoided, code should be for the version to which it is merged\n" . $herecurr);
+# avoid freax_VERSION_CODE
+		if ($line =~ /\bfreax_VERSION_CODE\b/) {
+			WARN("freax_VERSION_CODE",
+			     "freax_VERSION_CODE should be avoided, code should be for the version to which it is merged\n" . $herecurr);
 		}
 
 # check for uses of printk_ratelimit
@@ -5878,11 +5878,11 @@ sub process {
 			}
 		}
 
-# warn if <asm/foo.h> is #included and <linux/foo.h> is available and includes
+# warn if <asm/foo.h> is #included and <freax/foo.h> is available and includes
 # itself <asm/foo.h> (uses RAW line)
 		if ($tree && $rawline =~ m{^.\s*\#\s*include\s*\<asm\/(.*)\.h\>}) {
 			my $file = "$1.h";
-			my $checkfile = "include/linux/$file";
+			my $checkfile = "include/freax/$file";
 			if (-f "$root/$checkfile" &&
 			    $realfile ne $checkfile &&
 			    $1 !~ /$allowed_asm_includes/)
@@ -5890,11 +5890,11 @@ sub process {
 				my $asminclude = `grep -Ec "#include\\s+<asm/$file>" $root/$checkfile`;
 				if ($asminclude > 0) {
 					if ($realfile =~ m{^arch/}) {
-						CHK("ARCH_INCLUDE_LINUX",
-						    "Consider using #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+						CHK("ARCH_INCLUDE_freax",
+						    "Consider using #include <freax/$file> instead of <asm/$file>\n" . $herecurr);
 					} else {
-						WARN("INCLUDE_LINUX",
-						     "Use #include <linux/$file> instead of <asm/$file>\n" . $herecurr);
+						WARN("INCLUDE_freax",
+						     "Use #include <freax/$file> instead of <asm/$file>\n" . $herecurr);
 					}
 				}
 			}
@@ -5903,7 +5903,7 @@ sub process {
 # multi-statement macros should be enclosed in a do while loop, grab the
 # first statement and ensure its the whole macro if its not enclosed
 # in a known good container
-		if ($realfile !~ m@/vmlinux.lds.h$@ &&
+		if ($realfile !~ m@/vmfreax.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s*$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -6053,7 +6053,7 @@ sub process {
 
 # check for line continuations outside of #defines, preprocessor #, and asm
 
-		} elsif ($realfile =~ m@/vmlinux.lds.h$@) {
+		} elsif ($realfile =~ m@/vmfreax.lds.h$@) {
 		    $line =~ s/(\w+)/$maybe_linker_symbol{$1}++/ge;
 		    #print "REAL: $realfile\nln: $line\nkeys:", sort keys %maybe_linker_symbol;
 		} else {
@@ -6070,7 +6070,7 @@ sub process {
 # single-statement macros do not need to be enclosed in do while (0) loop,
 # macro should not end with a semicolon
 		if ($perl_version_ok &&
-		    $realfile !~ m@/vmlinux.lds.h$@ &&
+		    $realfile !~ m@/vmfreax.lds.h$@ &&
 		    $line =~ /^.\s*\#\s*define\s+$Ident(\()?/) {
 			my $ln = $linenr;
 			my $cnt = $realcnt;
@@ -6996,19 +6996,19 @@ sub process {
 # strcpy uses that should likely be strscpy
 		if ($line =~ /\bstrcpy\s*\(/) {
 			WARN("STRCPY",
-			     "Prefer strscpy over strcpy - see: https://github.com/KSPP/linux/issues/88\n" . $herecurr);
+			     "Prefer strscpy over strcpy - see: https://github.com/KSPP/freax/issues/88\n" . $herecurr);
 		}
 
 # strlcpy uses that should likely be strscpy
 		if ($line =~ /\bstrlcpy\s*\(/) {
 			WARN("STRLCPY",
-			     "Prefer strscpy over strlcpy - see: https://github.com/KSPP/linux/issues/89\n" . $herecurr);
+			     "Prefer strscpy over strlcpy - see: https://github.com/KSPP/freax/issues/89\n" . $herecurr);
 		}
 
 # strncpy uses that should likely be strscpy or strscpy_pad
 		if ($line =~ /\bstrncpy\s*\(/) {
 			WARN("STRNCPY",
-			     "Prefer strscpy, strscpy_pad, or __nonstring over strncpy - see: https://github.com/KSPP/linux/issues/90\n" . $herecurr);
+			     "Prefer strscpy, strscpy_pad, or __nonstring over strncpy - see: https://github.com/KSPP/freax/issues/90\n" . $herecurr);
 		}
 
 # typecasts on min/max could be min_t/max_t
@@ -7376,7 +7376,7 @@ sub process {
 # check for __initcall(), use device_initcall() explicitly or more appropriate function please
 		if ($line =~ /^.\s*__initcall\s*\(/) {
 			WARN("USE_DEVICE_INITCALL",
-			     "please use device_initcall() or more appropriate function instead of __initcall() (see include/linux/init.h)\n" . $herecurr);
+			     "please use device_initcall() or more appropriate function instead of __initcall() (see include/freax/init.h)\n" . $herecurr);
 		}
 
 # check for spin_is_locked(), suggest lockdep instead
@@ -7480,10 +7480,10 @@ sub process {
 		)};
 		our $rcu_trace_paths = qr{(?x:
 			kernel/bpf/ |
-			include/linux/bpf |
+			include/freax/bpf |
 			net/bpf/ |
 			kernel/rcu/ |
-			include/linux/rcu
+			include/freax/rcu
 		)};
 		if ($line =~ /\b($rcu_trace_funcs)\s*\(/) {
 			if ($realfile !~ m{^$rcu_trace_paths}) {
@@ -7496,7 +7496,7 @@ sub process {
 		if ($line =~ /^.\s*lockdep_set_novalidate_class\s*\(/ ||
 		    $line =~ /__lockdep_no_validate__\s*\)/ ) {
 			if ($realfile !~ m@^kernel/lockdep@ &&
-			    $realfile !~ m@^include/linux/lockdep@ &&
+			    $realfile !~ m@^include/freax/lockdep@ &&
 			    $realfile !~ m@^drivers/base/core@) {
 				ERROR("LOCKDEP",
 				      "lockdep_no_validate class is reserved for device->mutex.\n" . $herecurr);
@@ -7617,7 +7617,7 @@ sub process {
 			}
 		}
 
-# validate content of MODULE_LICENSE against list from include/linux/module.h
+# validate content of MODULE_LICENSE against list from include/freax/module.h
 		if ($line =~ /\bMODULE_LICENSE\s*\(\s*($String)\s*\)/) {
 			my $extracted_string = get_quoted_string($line, $rawline);
 			my $valid_licenses = qr{
@@ -7645,7 +7645,7 @@ sub process {
 # check for sysctl duplicate constants
 		if ($line =~ /\.extra[12]\s*=\s*&(zero|one|int_max)\b/) {
 			WARN("DUPLICATED_SYSCTL_CONST",
-				"duplicated sysctl range checking value '$1', consider using the shared one in include/linux/sysctl.h\n" . $herecurr);
+				"duplicated sysctl range checking value '$1', consider using the shared one in include/freax/sysctl.h\n" . $herecurr);
 		}
 	}
 

@@ -3,8 +3,8 @@
 // Copyright (c) 2022 MediaTek Inc.
 // Author: Chun-Jie Chen <chun-jie.chen@mediatek.com>
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/mt8186-clk.h>
 
 #include "clk-fhctl.h"
@@ -46,7 +46,7 @@
 static const struct mtk_pll_data plls[] = {
 	/*
 	 * armpll_ll/armpll_bl/ccipll are main clock source of AP MCU,
-	 * should not be closed in Linux world.
+	 * should not be closed in freax world.
 	 */
 	PLL(CLK_APMIXED_ARMPLL_LL, "armpll_ll", 0x0204, 0x0210, 0,
 	    PLL_AO, 0, 22, 0x0208, 24, 0, 0, 0, 0x0208),

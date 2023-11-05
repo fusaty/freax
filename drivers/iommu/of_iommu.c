@@ -5,17 +5,17 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/iommu.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_iommu.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/fsl/mc.h>
+#include <freax/export.h>
+#include <freax/iommu.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_iommu.h>
+#include <freax/of_pci.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/fsl/mc.h>
 
 #define NO_IOMMU	1
 

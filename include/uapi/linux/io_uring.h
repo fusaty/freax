@@ -1,23 +1,23 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) OR MIT */
+/* SPDX-License-Identifier: (GPL-2.0 WITH freax-syscall-note) OR MIT */
 /*
  * Header file for the io_uring interface.
  *
  * Copyright (C) 2019 Jens Axboe
  * Copyright (C) 2019 Christoph Hellwig
  */
-#ifndef LINUX_IO_URING_H
-#define LINUX_IO_URING_H
+#ifndef freax_IO_URING_H
+#define freax_IO_URING_H
 
-#include <linux/fs.h>
-#include <linux/types.h>
+#include <freax/fs.h>
+#include <freax/types.h>
 /*
  * this file is shared with liburing and that has to autodetect
- * if linux/time_types.h is available or not, it can
- * define UAPI_LINUX_IO_URING_H_SKIP_LINUX_TIME_TYPES_H
- * if linux/time_types.h is not available
+ * if freax/time_types.h is available or not, it can
+ * define UAPI_freax_IO_URING_H_SKIP_freax_TIME_TYPES_H
+ * if freax/time_types.h is not available
  */
-#ifndef UAPI_LINUX_IO_URING_H_SKIP_LINUX_TIME_TYPES_H
-#include <linux/time_types.h>
+#ifndef UAPI_freax_IO_URING_H_SKIP_freax_TIME_TYPES_H
+#include <freax/time_types.h>
 #endif
 
 #ifdef __cplusplus

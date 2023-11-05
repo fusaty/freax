@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt) "kexec ranges: " fmt
 
-#include <linux/sort.h>
-#include <linux/kexec.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/sort.h>
+#include <freax/kexec.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 #include <asm/sections.h>
 #include <asm/kexec_ranges.h>
 
@@ -249,8 +249,8 @@ int add_tce_mem_ranges(struct crash_mem **mem_ranges)
 		u64 base;
 		u32 size;
 
-		ret = of_property_read_u64(dn, "linux,tce-base", &base);
-		ret |= of_property_read_u32(dn, "linux,tce-size", &size);
+		ret = of_property_read_u64(dn, "freax,tce-base", &base);
+		ret |= of_property_read_u32(dn, "freax,tce-size", &size);
 		if (ret) {
 			/*
 			 * It is ok to have pci nodes without tce. So, ignore
@@ -288,8 +288,8 @@ int add_initrd_mem_range(struct crash_mem **mem_ranges)
 	if (!strstr(saved_command_line, "retain_initrd"))
 		return 0;
 
-	ret = of_property_read_u64(of_chosen, "linux,initrd-start", &base);
-	ret |= of_property_read_u64(of_chosen, "linux,initrd-end", &end);
+	ret = of_property_read_u64(of_chosen, "freax,initrd-start", &base);
+	ret |= of_property_read_u64(of_chosen, "freax,initrd-end", &end);
 	if (!ret)
 		ret = add_mem_range(mem_ranges, base, end - base + 1);
 
@@ -341,7 +341,7 @@ int add_rtas_mem_range(struct crash_mem **mem_ranges)
 	if (!dn)
 		return 0;
 
-	ret = of_property_read_u32(dn, "linux,rtas-base", &base);
+	ret = of_property_read_u32(dn, "freax,rtas-base", &base);
 	ret |= of_property_read_u32(dn, "rtas-size", &size);
 	if (!ret)
 		ret = add_mem_range(mem_ranges, base, size);

@@ -9,12 +9,12 @@
  * or implied.
  */
 
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mc146818rtc.h>
-#include <linux/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mc146818rtc.h>
+#include <freax/of_address.h>
 
 
 static int  __init add_rtc(void)

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/spi/spi.h>
 
 struct rtspi {
 	void __iomem *base;

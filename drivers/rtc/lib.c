@@ -10,8 +10,8 @@
  * Author: Cassio Neri <cassio.neri@gmail.com> (rtc_time64_to_tm)
  */
 
-#include <linux/export.h>
-#include <linux/rtc.h>
+#include <freax/export.h>
+#include <freax/rtc.h>
 
 static const unsigned char rtc_days_in_month[] = {
 	31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31

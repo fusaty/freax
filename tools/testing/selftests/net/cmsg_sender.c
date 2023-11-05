@@ -8,12 +8,12 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-#include <linux/errqueue.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/net_tstamp.h>
-#include <linux/types.h>
-#include <linux/udp.h>
+#include <freax/errqueue.h>
+#include <freax/icmp.h>
+#include <freax/icmpv6.h>
+#include <freax/net_tstamp.h>
+#include <freax/types.h>
+#include <freax/udp.h>
 #include <sys/socket.h>
 
 #include "../kselftest.h"

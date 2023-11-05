@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SOCKET_H
-#define _LINUX_SOCKET_H
+#ifndef _freax_SOCKET_H
+#define _freax_SOCKET_H
 
 
 #include <asm/socket.h>			/* arch-dependent defines	*/
-#include <linux/sockios.h>		/* the SIOCxxx I/O controls	*/
-#include <linux/uio.h>			/* iovec support		*/
-#include <linux/types.h>		/* pid_t			*/
-#include <linux/compiler.h>		/* __user			*/
-#include <uapi/linux/socket.h>
+#include <freax/sockios.h>		/* the SIOCxxx I/O controls	*/
+#include <freax/uio.h>			/* iovec support		*/
+#include <freax/types.h>		/* pid_t			*/
+#include <freax/compiler.h>		/* __user			*/
+#include <uapi/freax/socket.h>
 
 struct file;
 struct pid;
@@ -210,11 +210,11 @@ struct ucred {
 #define AF_ECONET	19	/* Acorn Econet			*/
 #define AF_ATMSVC	20	/* ATM SVCs			*/
 #define AF_RDS		21	/* RDS sockets 			*/
-#define AF_SNA		22	/* Linux SNA Project (nutters!) */
+#define AF_SNA		22	/* freax SNA Project (nutters!) */
 #define AF_IRDA		23	/* IRDA sockets			*/
 #define AF_PPPOX	24	/* PPPoX sockets		*/
 #define AF_WANPIPE	25	/* Wanpipe API Sockets */
-#define AF_LLC		26	/* Linux LLC			*/
+#define AF_LLC		26	/* freax LLC			*/
 #define AF_IB		27	/* Native InfiniBand address	*/
 #define AF_MPLS		28	/* MPLS */
 #define AF_CAN		29	/* Controller Area Network      */
@@ -344,7 +344,7 @@ struct ucred {
 
 /* Setsockoptions(2) level. Thanks to BSD these must match IPPROTO_xxx */
 #define SOL_IP		0
-/* #define SOL_ICMP	1	No-no-no! Due to Linux :-) we cannot use SOL_ICMP=1 */
+/* #define SOL_ICMP	1	No-no-no! Due to freax :-) we cannot use SOL_ICMP=1 */
 #define SOL_TCP		6
 #define SOL_UDP		17
 #define SOL_IPV6	41
@@ -460,4 +460,4 @@ extern int __sys_socketpair(int family, int type, int protocol,
 			    int __user *usockvec);
 extern int __sys_shutdown_sock(struct socket *sock, int how);
 extern int __sys_shutdown(int fd, int how);
-#endif /* _LINUX_SOCKET_H */
+#endif /* _freax_SOCKET_H */

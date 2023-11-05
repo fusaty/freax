@@ -7,8 +7,8 @@
 #ifndef NET_ATM_COMMON_H
 #define NET_ATM_COMMON_H
 
-#include <linux/net.h>
-#include <linux/poll.h> /* for poll_table */
+#include <freax/net.h>
+#include <freax/poll.h> /* for poll_table */
 
 
 int vcc_create(struct net *net, struct socket *sock, int protocol, int family, int kern);

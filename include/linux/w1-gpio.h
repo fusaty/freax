@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2007 Ville Syrjala <syrjala@sci.fi>
  */
-#ifndef _LINUX_W1_GPIO_H
-#define _LINUX_W1_GPIO_H
+#ifndef _freax_W1_GPIO_H
+#define _freax_W1_GPIO_H
 
 struct gpio_desc;
 
@@ -19,4 +19,4 @@ struct w1_gpio_platform_data {
 	unsigned int pullup_duration;
 };
 
-#endif /* _LINUX_W1_GPIO_H */
+#endif /* _freax_W1_GPIO_H */

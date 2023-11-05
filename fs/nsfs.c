@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/proc_ns.h>
-#include <linux/magic.h>
-#include <linux/ktime.h>
-#include <linux/seq_file.h>
-#include <linux/user_namespace.h>
-#include <linux/nsfs.h>
-#include <linux/uaccess.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/proc_fs.h>
+#include <freax/proc_ns.h>
+#include <freax/magic.h>
+#include <freax/ktime.h>
+#include <freax/seq_file.h>
+#include <freax/user_namespace.h>
+#include <freax/nsfs.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

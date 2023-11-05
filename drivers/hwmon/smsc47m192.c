@@ -3,22 +3,22 @@
  * smsc47m192.c - Support for hardware monitoring block of
  *		  SMSC LPC47M192 and compatible Super I/O chips
  *
- * Copyright (C) 2006  Hartmut Rick <linux@rick.claranet.de>
+ * Copyright (C) 2006  Hartmut Rick <freax@rick.claranet.de>
  *
  * Derived from lm78.c and other chip drivers.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/sysfs.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/sysfs.h>
+#include <freax/mutex.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, I2C_CLIENT_END };
@@ -636,6 +636,6 @@ static struct i2c_driver smsc47m192_driver = {
 
 module_i2c_driver(smsc47m192_driver);
 
-MODULE_AUTHOR("Hartmut Rick <linux@rick.claranet.de>");
+MODULE_AUTHOR("Hartmut Rick <freax@rick.claranet.de>");
 MODULE_DESCRIPTION("SMSC47M192 driver");
 MODULE_LICENSE("GPL");

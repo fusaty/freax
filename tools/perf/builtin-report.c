@@ -13,10 +13,10 @@
 #include "util/annotate.h"
 #include "util/color.h"
 #include "util/dso.h"
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/err.h>
+#include <freax/zalloc.h>
 #include "util/map.h"
 #include "util/symbol.h"
 #include "util/map_symbol.h"
@@ -56,16 +56,16 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <regex.h>
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include <signal.h>
-#include <linux/bitmap.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/time64.h>
+#include <freax/bitmap.h>
+#include <freax/string.h>
+#include <freax/stringify.h>
+#include <freax/time64.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/mman.h>
+#include <freax/mman.h>
 
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>
@@ -614,7 +614,7 @@ static void report__warn_kptr_restrict(const struct report *rep)
 	     (kernel_kmap->ref_reloc_sym == NULL ||
 	      kernel_kmap->ref_reloc_sym->addr == 0))) {
 		const char *desc =
-		    "As no suitable kallsyms nor vmlinux was found, kernel samples\n"
+		    "As no suitable kallsyms nor vmfreax was found, kernel samples\n"
 		    "can't be resolved.";
 
 		if (kernel_map && map__has_symbols(kernel_map)) {
@@ -1260,10 +1260,10 @@ int cmd_report(int argc, const char **argv)
 	OPT_BOOLEAN(0, "stats", &report.stats_mode, "Display event stats"),
 	OPT_BOOLEAN(0, "tasks", &report.tasks_mode, "Display recorded tasks"),
 	OPT_BOOLEAN(0, "mmaps", &report.mmaps_mode, "Display recorded tasks memory maps"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
-	OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-                    "don't load vmlinux even if found"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
+	OPT_BOOLEAN(0, "ignore-vmfreax", &symbol_conf.ignore_vmfreax,
+                    "don't load vmfreax even if found"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('f', "force", &symbol_conf.force, "don't complain, do it"),

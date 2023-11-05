@@ -3,16 +3,16 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/hashtable.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/rwsem.h>
+#include <freax/mutex.h>
+#include <freax/wait.h>
+#include <freax/hashtable.h>
 #include <net/net_namespace.h>
 #include <net/genetlink.h>
-#include <linux/socket.h>
-#include <linux/workqueue.h>
+#include <freax/socket.h>
+#include <freax/workqueue.h>
 
 #include "vfs_cache.h"
 #include "transport_ipc.h"

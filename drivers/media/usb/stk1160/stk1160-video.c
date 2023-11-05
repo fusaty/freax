@@ -10,10 +10,10 @@
  *	<rmthomas--a.t--sciolus.org>
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/ratelimit.h>
 
 #include "stk1160.h"
 

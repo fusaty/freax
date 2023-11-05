@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _BOOTCONFIG_LINUX_BOOTCONFIG_H
-#define _BOOTCONFIG_LINUX_BOOTCONFIG_H
+#ifndef _BOOTCONFIG_freax_BOOTCONFIG_H
+#define _BOOTCONFIG_freax_BOOTCONFIG_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,6 +49,6 @@ static inline char *strim(char *s)
 #define __init
 #define __initdata
 
-#include "../../../../include/linux/bootconfig.h"
+#include "../../../../include/freax/bootconfig.h"
 
 #endif

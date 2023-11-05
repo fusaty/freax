@@ -4,14 +4,14 @@
  * This header provides generic wrappers for memory access instrumentation that
  * the compiler cannot emit for: KASAN, KCSAN, KMSAN.
  */
-#ifndef _LINUX_INSTRUMENTED_H
-#define _LINUX_INSTRUMENTED_H
+#ifndef _freax_INSTRUMENTED_H
+#define _freax_INSTRUMENTED_H
 
-#include <linux/compiler.h>
-#include <linux/kasan-checks.h>
-#include <linux/kcsan-checks.h>
-#include <linux/kmsan-checks.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/kasan-checks.h>
+#include <freax/kcsan-checks.h>
+#include <freax/kmsan-checks.h>
+#include <freax/types.h>
 
 /**
  * instrument_read - instrument regular read access
@@ -178,4 +178,4 @@ instrument_copy_from_user_after(const void *to, const void __user *from,
 	kmsan_copy_to_user(ptr, &from, sizeof(from), 0);	\
 })
 
-#endif /* _LINUX_INSTRUMENTED_H */
+#endif /* _freax_INSTRUMENTED_H */

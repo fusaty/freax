@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/mac/config.c
+ *  freax/arch/m68k/mac/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -7,29 +7,29 @@
  */
 
 /*
- * Miscellaneous linux stuff
+ * Miscellaneous freax stuff
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/tty.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
 /* keyb */
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <freax/random.h>
+#include <freax/delay.h>
 /* keyb */
-#include <linux/init.h>
-#include <linux/vt_kern.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
-#include <linux/pmu.h>
-#include <linux/rtc.h>
+#include <freax/init.h>
+#include <freax/vt_kern.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
+#include <freax/adb.h>
+#include <freax/cuda.h>
+#include <freax/pmu.h>
+#include <freax/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>

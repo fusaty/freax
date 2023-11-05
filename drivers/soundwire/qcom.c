@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/slimbus.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/slimbus.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_registers.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bus.h"

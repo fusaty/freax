@@ -2,17 +2,17 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The freax Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/dmi.h>
-#include <linux/ctype.h>
-#include <linux/pm_qos.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/dmi.h>
+#include <freax/ctype.h>
+#include <freax/pm_qos.h>
+#include <freax/nvmem-consumer.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

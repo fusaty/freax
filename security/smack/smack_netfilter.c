@@ -11,9 +11,9 @@
  *  Copyright (C) 2014 Intel Corporation.
  */
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netdevice.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netdevice.h>
 #include <net/inet_sock.h>
 #include <net/net_namespace.h>
 #include "smack.h"
@@ -40,14 +40,14 @@ static const struct nf_hook_ops smack_nf_ops[] = {
 		.hook =		smack_ip_output,
 		.pf =		NFPROTO_IPV4,
 		.hooknum =	NF_INET_LOCAL_OUT,
-		.priority =	NF_IP_PRI_SELINUX_FIRST,
+		.priority =	NF_IP_PRI_SEfreax_FIRST,
 	},
 #if IS_ENABLED(CONFIG_IPV6)
 	{
 		.hook =		smack_ip_output,
 		.pf =		NFPROTO_IPV6,
 		.hooknum =	NF_INET_LOCAL_OUT,
-		.priority =	NF_IP6_PRI_SELINUX_FIRST,
+		.priority =	NF_IP6_PRI_SEfreax_FIRST,
 	},
 #endif	/* IPV6 */
 };

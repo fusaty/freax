@@ -11,12 +11,12 @@
  */
 #define SP887X_DEFAULT_FIRMWARE "dvb-fe-sp887x.fw"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "sp887x.h"

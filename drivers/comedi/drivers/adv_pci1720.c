@@ -6,7 +6,7 @@
  * Separated from the adv_pci1710 driver written by:
  * Michal Dobes <dobes@tesnet.cz>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -40,9 +40,9 @@
  * analog outputs are not "reset" when the driver attaches.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/comedi/comedi_pci.h>
 
 /*
  * PCI BAR2 Register map (dev->iobase)

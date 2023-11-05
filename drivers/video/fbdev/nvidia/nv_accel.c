@@ -47,8 +47,8 @@
  * Antonino Daplas <adaplas@pol.net> 2005-03-11
  */
 
-#include <linux/fb.h>
-#include <linux/nmi.h>
+#include <freax/fb.h>
+#include <freax/nmi.h>
 
 #include "nv_type.h"
 #include "nv_proto.h"

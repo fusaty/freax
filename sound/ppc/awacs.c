@@ -7,12 +7,12 @@
  */
 
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include "pmac.h"
 

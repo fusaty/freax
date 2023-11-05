@@ -28,8 +28,8 @@
 #ifndef __TEE_H
 #define __TEE_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /*
  * This file describes the API provided by a TEE driver to user space.

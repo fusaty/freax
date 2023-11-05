@@ -6,22 +6,22 @@
  * Copyright (c) 2008, John W. Linville <linville@tuxdriver.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
 #include <asm/string.h>
-#include <linux/wireless.h>
+#include <freax/wireless.h>
 
-#include <linux/ieee80211.h>
+#include <freax/ieee80211.h>
 
-#include <linux/crypto.h>
+#include <freax/crypto.h>
 #include <crypto/aead.h>
 
 #include <net/lib80211.h>

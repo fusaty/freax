@@ -5,8 +5,8 @@
  * Copyright (C) 2018 Song Qiang <songqiang1304521@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
 
 #include "rm3100.h"
 

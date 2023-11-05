@@ -24,8 +24,8 @@
 #ifndef _AMDGPU_RAS_H
 #define _AMDGPU_RAS_H
 
-#include <linux/debugfs.h>
-#include <linux/list.h>
+#include <freax/debugfs.h>
+#include <freax/list.h>
 #include "ta_ras_if.h"
 #include "amdgpu_ras_eeprom.h"
 #include "amdgpu_smuio.h"

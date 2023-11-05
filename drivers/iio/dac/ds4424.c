@@ -5,16 +5,16 @@
  * Copyright (C) 2017 Maxim Integrated
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/machine.h>
+#include <freax/iio/consumer.h>
 
 #define DS4422_MAX_DAC_CHANNELS		2
 #define DS4424_MAX_DAC_CHANNELS		4

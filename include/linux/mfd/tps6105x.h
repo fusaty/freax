@@ -8,9 +8,9 @@
 #ifndef MFD_TPS6105X_H
 #define MFD_TPS6105X_H
 
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/regulator/machine.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/regulator/machine.h>
 
 /*
  * Register definitions to all subdrivers

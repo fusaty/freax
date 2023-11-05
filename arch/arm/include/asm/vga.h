@@ -2,7 +2,7 @@
 #ifndef ASMARM_VGA_H
 #define ASMARM_VGA_H
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 extern unsigned long vga_base;
 extern struct screen_info vgacon_screen_info;

@@ -6,25 +6,25 @@
 
 #include "main.h"
 
-#include <linux/byteorder/generic.h>
-#include <linux/container_of.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/if_ether.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_sched.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <freax/byteorder/generic.h>
+#include <freax/container_of.h>
+#include <freax/etherdevice.h>
+#include <freax/gfp.h>
+#include <freax/if_ether.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/lockdep.h>
+#include <freax/netdevice.h>
+#include <freax/pkt_sched.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <uapi/freax/batadv_packet.h>
 
 #include "originator.h"
 #include "send.h"

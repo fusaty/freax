@@ -29,7 +29,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include "common.h"
 #include "regs.h"
 #include "sge_defs.h"

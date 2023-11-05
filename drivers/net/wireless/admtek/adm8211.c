@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * Linux device driver for ADMtek ADM8211 (IEEE 802.11b MAC/BBP)
+ * freax device driver for ADMtek ADM8211 (IEEE 802.11b MAC/BBP)
  *
  * Copyright (c) 2003, Jouni Malinen <j@w1.fi>
  * Copyright (c) 2004-2007, Michael Wu <flamingice@sourmilk.net>
@@ -11,16 +11,16 @@
  * Much thanks to Infineon-ADMtek for their support of this driver.
  */
 
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/if.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/eeprom_93cx6.h>
+#include <freax/module.h>
 #include <net/mac80211.h>
 
 #include "adm8211.h"

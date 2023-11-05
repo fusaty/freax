@@ -6,9 +6,9 @@
 #include <string.h>
 #include <sys/types.h>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 
 #include <api/io.h>
 

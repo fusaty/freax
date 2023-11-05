@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * External Connector (extcon) framework
- * - linux/include/linux/extcon.h for extcon consumer device driver.
+ * - freax/include/freax/extcon.h for extcon consumer device driver.
  *
  * Copyright (C) 2015 Samsung Electronics
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
@@ -15,10 +15,10 @@
  * Author: Mike Lockwood <lockwood@android.com>
  */
 
-#ifndef __LINUX_EXTCON_H__
-#define __LINUX_EXTCON_H__
+#ifndef __freax_EXTCON_H__
+#define __freax_EXTCON_H__
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /*
  * Define the type of supported external connectors
@@ -328,4 +328,4 @@ struct extcon_specific_cable_nb {
        struct extcon_dev *edev;
        unsigned long previous_value;
 };
-#endif /* __LINUX_EXTCON_H__ */
+#endif /* __freax_EXTCON_H__ */

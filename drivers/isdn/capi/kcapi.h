@@ -10,10 +10,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/isdn/capilli.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/isdn/capilli.h>
 
 #ifdef KCAPI_DEBUG
 #define DBG(format, arg...) do {					\

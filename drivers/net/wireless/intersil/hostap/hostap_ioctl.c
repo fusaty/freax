@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-/* ioctl() (mostly Linux Wireless Extensions) routines for Host AP driver */
+/* ioctl() (mostly freax Wireless Extensions) routines for Host AP driver */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/sched/signal.h>
+#include <freax/ethtool.h>
+#include <freax/if_arp.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
 #include <net/lib80211.h>
 
 #include "hostap_wlan.h"

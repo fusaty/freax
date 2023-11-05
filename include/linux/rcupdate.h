@@ -17,20 +17,20 @@
  *
  */
 
-#ifndef __LINUX_RCUPDATE_H
-#define __LINUX_RCUPDATE_H
+#ifndef __freax_RCUPDATE_H
+#define __freax_RCUPDATE_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/atomic.h>
-#include <linux/irqflags.h>
-#include <linux/preempt.h>
-#include <linux/bottom_half.h>
-#include <linux/lockdep.h>
-#include <linux/cleanup.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/atomic.h>
+#include <freax/irqflags.h>
+#include <freax/preempt.h>
+#include <freax/bottom_half.h>
+#include <freax/lockdep.h>
+#include <freax/cleanup.h>
 #include <asm/processor.h>
-#include <linux/cpumask.h>
-#include <linux/context_tracking_irq.h>
+#include <freax/cpumask.h>
+#include <freax/context_tracking_irq.h>
 
 #define ULONG_CMP_GE(a, b)	(ULONG_MAX / 2 >= (a) - (b))
 #define ULONG_CMP_LT(a, b)	(ULONG_MAX / 2 < (a) - (b))
@@ -256,9 +256,9 @@ do { \
  */
 
 #if defined(CONFIG_TREE_RCU)
-#include <linux/rcutree.h>
+#include <freax/rcutree.h>
 #elif defined(CONFIG_TINY_RCU)
-#include <linux/rcutiny.h>
+#include <freax/rcutiny.h>
 #else
 #error "Unknown RCU implementation specified to kernel configuration"
 #endif
@@ -1058,4 +1058,4 @@ extern int rcu_normal;
 
 DEFINE_LOCK_GUARD_0(rcu, rcu_read_lock(), rcu_read_unlock())
 
-#endif /* __LINUX_RCUPDATE_H */
+#endif /* __freax_RCUPDATE_H */

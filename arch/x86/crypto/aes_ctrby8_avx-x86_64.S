@@ -7,7 +7,7 @@
  * Contact Information:
  * James Guilford <james.guilford@intel.com>
  * Sean Gulley <sean.m.gulley@intel.com>
- * Chandramouli Narayanan <mouli@linux.intel.com>
+ * Chandramouli Narayanan <mouli@freax.intel.com>
  */
 /*
  * This is AES128/192/256 CTR mode optimization implementation. It requires
@@ -19,7 +19,7 @@
  *    https://github.com/intel/intel-ipsec-mb
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #define VMOVDQ		vmovdqu
 

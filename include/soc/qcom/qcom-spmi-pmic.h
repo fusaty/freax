@@ -6,7 +6,7 @@
 #ifndef __QCOM_SPMI_PMIC_H__
 #define __QCOM_SPMI_PMIC_H__
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #define COMMON_SUBTYPE		0x00
 #define PM8941_SUBTYPE		0x01

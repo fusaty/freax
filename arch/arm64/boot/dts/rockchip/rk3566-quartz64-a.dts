@@ -65,7 +65,7 @@
 			label = "diy-led";
 			default-state = "on";
 			gpios = <&gpio0 RK_PD4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			pinctrl-names = "default";
 			pinctrl-0 = <&diy_led_enable_h>;
 			retain-state-suspended;
@@ -99,7 +99,7 @@
 	};
 
 	spdif_dit: spdif-dit {
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		#sound-dai-cells = <0>;
 	};
 

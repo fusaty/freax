@@ -3,9 +3,9 @@
  * Copyright 2022 NXP
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 static int imx93_src_probe(struct platform_device *pdev)
 {

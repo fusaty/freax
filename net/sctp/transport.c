@@ -14,7 +14,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -28,9 +28,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/random.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/random.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 

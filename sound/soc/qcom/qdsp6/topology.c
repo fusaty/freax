@@ -6,12 +6,12 @@
 #include <sound/pcm.h>
 #include <sound/control.h>
 #include <sound/asound.h>
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <sound/soc-topology.h>
 #include <sound/soc-dpcm.h>
 #include <uapi/sound/snd_ar_tokens.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
 #include "q6apm.h"
 #include "audioreach.h"
 
@@ -1264,7 +1264,7 @@ int audioreach_tplg_init(struct snd_soc_component *component)
 	char *tplg_fw_name;
 	int ret;
 
-	/* Inline with Qualcomm UCM configs and linux-firmware path */
+	/* Inline with Qualcomm UCM configs and freax-firmware path */
 	tplg_fw_name = kasprintf(GFP_KERNEL, "qcom/%s/%s-tplg.bin", card->driver_name, card->name);
 	if (!tplg_fw_name)
 		return -ENOMEM;

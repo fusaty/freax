@@ -7,8 +7,8 @@
 
 #include <dt-bindings/clock/meson8-ddr-clkc.h>
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 
 #include "clk-regmap.h"
 #include "clk-pll.h"

@@ -5,24 +5,24 @@
 // Copyright (C) 2018-19 Texas Instruments Incorporated - http://www.ti.com/
 
 /* Bosch M_CAN user manual can be obtained from:
- * https://github.com/linux-can/can-doc/tree/master/m_can
+ * https://github.com/freax-can/can-doc/tree/master/m_can
  */
 
-#include <linux/bitfield.h>
-#include <linux/can/dev.h>
-#include <linux/ethtool.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/bitfield.h>
+#include <freax/can/dev.h>
+#include <freax/ethtool.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include "m_can.h"
 

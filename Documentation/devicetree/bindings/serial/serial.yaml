@@ -8,7 +8,7 @@ title: Serial Interface Generic
 
 maintainers:
   - Rob Herring <robh@kernel.org>
-  - Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+  - Greg Kroah-Hartman <gregkh@freaxfoundation.org>
 
 description:
   This document lists a set of generic properties for describing UARTs in a

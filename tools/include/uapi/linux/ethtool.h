@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * ethtool.h: Defines for Linux ethtool.
+ * ethtool.h: Defines for freax ethtool.
  *
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  * Copyright 2001 Jeff Garzik <jgarzik@pobox.com>
@@ -11,12 +11,12 @@
  * Portions Copyright (C) Sun Microsystems 2008
  */
 
-#ifndef _UAPI_LINUX_ETHTOOL_H
-#define _UAPI_LINUX_ETHTOOL_H
+#ifndef _UAPI_freax_ETHTOOL_H
+#define _UAPI_freax_ETHTOOL_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #define ETHTOOL_GCHANNELS       0x0000003c /* Get no of channels */
 
@@ -78,7 +78,7 @@ struct ethtool_channels {
  *	command, in bytes
  *
  * Users can use the %ETHTOOL_GSSET_INFO command to get the number of
- * strings in any string set (from Linux 2.6.34).
+ * strings in any string set (from freax 2.6.34).
  *
  * Drivers should set at most @driver, @version, @fw_version and
  * @bus_info in their get_drvinfo() implementation.  The ethtool
@@ -101,4 +101,4 @@ struct ethtool_drvinfo {
 
 #define ETHTOOL_GDRVINFO	0x00000003
 
-#endif /* _UAPI_LINUX_ETHTOOL_H */
+#endif /* _UAPI_freax_ETHTOOL_H */

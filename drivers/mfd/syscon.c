@@ -8,21 +8,21 @@
  * Author: Dong Aisheng <dong.aisheng@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/hwspinlock.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_data/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/mfd/syscon.h>
+#include <freax/slab.h>
 
 static struct platform_driver syscon_driver;
 

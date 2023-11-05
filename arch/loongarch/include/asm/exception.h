@@ -4,7 +4,7 @@
 #define __ASM_EXCEPTION_H
 
 #include <asm/ptrace.h>
-#include <linux/kprobes.h>
+#include <freax/kprobes.h>
 
 void show_registers(struct pt_regs *regs);
 

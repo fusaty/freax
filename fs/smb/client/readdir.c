@@ -8,10 +8,10 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"
@@ -153,12 +153,12 @@ static bool reparse_file_needs_reval(const struct cifs_fattr *fattr)
 static void
 cifs_fill_common_info(struct cifs_fattr *fattr, struct cifs_sb_info *cifs_sb)
 {
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->freax_uid;
+	fattr->cf_gid = cifs_sb->ctx->freax_gid;
 
 	/*
 	 * The IO_REPARSE_TAG_LX_ tags originally were used by WSL but they
-	 * are preferred by the Linux client in some cases since, unlike
+	 * are preferred by the freax client in some cases since, unlike
 	 * the NFS reparse tag (or EAs), they don't require an extra query
 	 * to determine which type of special file they represent.
 	 * TODO: go through all documented  reparse tags to see if we can

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_AUXVEC_H
-#define _UAPI_LINUX_AUXVEC_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_AUXVEC_H
+#define _UAPI_freax_AUXVEC_H
 
 #include <asm/auxvec.h>
 
@@ -39,4 +39,4 @@
 #define AT_MINSIGSTKSZ	51	/* minimal stack size for signal delivery */
 #endif
 
-#endif /* _UAPI_LINUX_AUXVEC_H */
+#endif /* _UAPI_freax_AUXVEC_H */

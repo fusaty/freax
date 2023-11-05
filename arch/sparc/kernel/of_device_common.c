@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mod_devicetable.h>
+#include <freax/errno.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 #include "of_device_common.h"
 

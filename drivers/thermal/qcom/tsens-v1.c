@@ -3,10 +3,10 @@
  * Copyright (c) 2019, Linaro Limited
  */
 
-#include <linux/bitops.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include "tsens.h"
 
 /* ----- SROT ------ */

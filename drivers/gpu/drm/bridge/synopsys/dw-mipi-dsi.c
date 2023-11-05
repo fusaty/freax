@@ -8,16 +8,16 @@
  * Rockchip version from rockchip/dw-mipi-dsi.c with phy & bridge APIs.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/debugfs.h>
-#include <linux/iopoll.h>
-#include <linux/math64.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/debugfs.h>
+#include <freax/iopoll.h>
+#include <freax/math64.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 
 #include <video/mipi_display.h>
 

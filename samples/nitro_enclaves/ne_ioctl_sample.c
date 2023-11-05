@@ -88,9 +88,9 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include <linux/mman.h>
-#include <linux/nitro_enclaves.h>
-#include <linux/vm_sockets.h>
+#include <freax/mman.h>
+#include <freax/nitro_enclaves.h>
+#include <freax/vm_sockets.h>
 
 /**
  * NE_DEV_NAME - Nitro Enclaves (NE) misc device that provides the ioctl interface.
@@ -256,7 +256,7 @@ static int ne_alloc_user_mem_region(struct ne_user_mem_region *ne_user_mem_regio
 {
 	/**
 	 * Check available hugetlb encodings for different huge page sizes in
-	 * include/uapi/linux/mman.h.
+	 * include/uapi/freax/mman.h.
 	 */
 	ne_user_mem_region->userspace_addr = mmap(NULL, ne_user_mem_region->memory_size,
 						  PROT_READ | PROT_WRITE,

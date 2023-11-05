@@ -7,9 +7,9 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 #include <asm/fw/arc/types.h>
 #include <asm/sgialib.h>

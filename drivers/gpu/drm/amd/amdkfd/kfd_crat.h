@@ -24,7 +24,7 @@
 #ifndef KFD_CRAT_H_INCLUDED
 #define KFD_CRAT_H_INCLUDED
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #pragma pack(1)
 

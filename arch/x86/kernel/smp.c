@@ -9,19 +9,19 @@
  *	i386 and x86_64 integration by Glauber Costa <gcosta@redhat.com>
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/cache.h>
-#include <linux/interrupt.h>
-#include <linux/cpu.h>
-#include <linux/gfp.h>
-#include <linux/kexec.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
+#include <freax/kernel_stat.h>
+#include <freax/mc146818rtc.h>
+#include <freax/cache.h>
+#include <freax/interrupt.h>
+#include <freax/cpu.h>
+#include <freax/gfp.h>
+#include <freax/kexec.h>
 
 #include <asm/mtrr.h>
 #include <asm/tlbflush.h>
@@ -40,7 +40,7 @@
  *	Some notes on x86 processor bugs affecting SMP operation:
  *
  *	Pentium, Pentium Pro, II, III (and all CPUs) have bugs.
- *	The Linux implications for SMP are handled as follows:
+ *	The freax implications for SMP are handled as follows:
  *
  *	Pentium III / [Xeon]
  *		None of the E1AP-E3AP errata are visible to the user.
@@ -61,12 +61,12 @@
  *	except occasional delivery of 'spurious interrupt' as trap #15.
  *	This is very rare and a non-problem.
  *
- *	1AP.	Linux maps APIC as non-cacheable
+ *	1AP.	freax maps APIC as non-cacheable
  *	2AP.	worked around in hardware
  *	3AP.	fixed in C0 and above steppings microcode update.
- *		Linux does not use excessive STARTUP_IPIs.
+ *		freax does not use excessive STARTUP_IPIs.
  *	4AP.	worked around in hardware
- *	5AP.	symmetric IO mode (normal Linux operation) not affected.
+ *	5AP.	symmetric IO mode (normal freax operation) not affected.
  *		'noapic' mode has vector 0xf filled out properly.
  *	6AP.	'noapic' mode might be affected - fixed in later steppings
  *	7AP.	We do not assume writes to the LVT deasserting IRQs
@@ -85,10 +85,10 @@
  *
  *	Specific items [From Pentium Processor Specification Update]
  *
- *	1AP.	Linux doesn't use remote read
- *	2AP.	Linux doesn't trust APIC errors
+ *	1AP.	freax doesn't use remote read
+ *	2AP.	freax doesn't trust APIC errors
  *	3AP.	We work around this
- *	4AP.	Linux never generated 3 interrupts of the same priority
+ *	4AP.	freax never generated 3 interrupts of the same priority
  *		to cause a lost local interrupt.
  *	5AP.	Remote read is never used
  *	6AP.	not affected - worked around in hardware
@@ -98,7 +98,7 @@
  *		interrupts, we log only the first one and count the
  *		rest silently.
  *	10AP.	not affected - worked around in hardware
- *	11AP.	Linux reads the APIC between writes to avoid this, as per
+ *	11AP.	freax reads the APIC between writes to avoid this, as per
  *		the documentation. Make sure you preserve this as it affects
  *		the C stepping chips too.
  *	12AP.	not affected - worked around in hardware

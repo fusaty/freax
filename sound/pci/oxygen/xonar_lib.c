@@ -5,7 +5,7 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

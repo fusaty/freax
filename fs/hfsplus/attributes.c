@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/hfsplus/attributes.c
+ * freax/fs/hfsplus/attributes.c
  *
  * Vyacheslav Dubeyko <slava@dubeyko.com>
  *

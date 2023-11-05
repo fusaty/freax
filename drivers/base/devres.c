@@ -2,14 +2,14 @@
 /*
  * drivers/base/devres.c - device resource management
  *
- * Copyright (c) 2006  SUSE Linux Products GmbH
+ * Copyright (c) 2006  SUSE freax Products GmbH
  * Copyright (c) 2006  Tejun Heo <teheo@suse.de>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/percpu.h>
 
 #include <asm/sections.h>
 

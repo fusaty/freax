@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BIT_SPINLOCK_H
-#define __LINUX_BIT_SPINLOCK_H
+#ifndef __freax_BIT_SPINLOCK_H
+#define __freax_BIT_SPINLOCK_H
 
-#include <linux/kernel.h>
-#include <linux/preempt.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/preempt.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
 
 /*
  *  bit-based spin_lock()
@@ -97,5 +97,5 @@ static inline int bit_spin_is_locked(int bitnum, unsigned long *addr)
 #endif
 }
 
-#endif /* __LINUX_BIT_SPINLOCK_H */
+#endif /* __freax_BIT_SPINLOCK_H */
 

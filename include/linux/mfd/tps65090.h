@@ -5,11 +5,11 @@
  * Copyright (C) 2012 NVIDIA Corporation
  */
 
-#ifndef __LINUX_MFD_TPS65090_H
-#define __LINUX_MFD_TPS65090_H
+#ifndef __freax_MFD_TPS65090_H
+#define __freax_MFD_TPS65090_H
 
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <freax/irq.h>
+#include <freax/regmap.h>
 
 /* TPS65090 IRQs */
 enum {
@@ -146,4 +146,4 @@ static inline int tps65090_clr_bits(struct device *dev, int reg,
 	return regmap_update_bits(tps->rmap, reg, BIT(bit_num), 0u);
 }
 
-#endif /*__LINUX_MFD_TPS65090_H */
+#endif /*__freax_MFD_TPS65090_H */

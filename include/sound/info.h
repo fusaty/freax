@@ -7,8 +7,8 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/poll.h>
-#include <linux/seq_file.h>
+#include <freax/poll.h>
+#include <freax/seq_file.h>
 #include <sound/core.h>
 
 /* buffer for information */

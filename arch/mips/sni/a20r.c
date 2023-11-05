@@ -8,11 +8,11 @@
  * Copyright (C) 2006 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/serial_8250.h>
 
 #include <asm/sni.h>
 #include <asm/time.h>
@@ -118,7 +118,7 @@ static struct resource sc26xx_rsrc[] = {
 	}
 };
 
-#include <linux/platform_data/serial-sccnxp.h>
+#include <freax/platform_data/serial-sccnxp.h>
 
 static struct sccnxp_pdata sccnxp_data = {
 	.reg_shift	= 2,

@@ -6,9 +6,9 @@
 #ifndef __PTP_QORIQ_H__
 #define __PTP_QORIQ_H__
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/ptp_clock_kernel.h>
 
 /*
  * qoriq ptp registers

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_rx164.c
+ *	freax/arch/alpha/kernel/sys_rx164.c
  *
  *	Copyright (C) 1995 David A Rusling
  *	Copyright (C) 1996 Jay A Estabrook
@@ -9,13 +9,13 @@
  * Code supporting the RX164 (PCA56+POLARIS).
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
 
 #include <asm/ptrace.h>
 #include <asm/dma.h>

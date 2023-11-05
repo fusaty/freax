@@ -8,25 +8,25 @@
  * Based on fsl_elbc_nand.c, Copyright (c) 2006-2007 Freescale Semiconductor
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/sh_dma.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/sh_flctl.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/sh_flctl.h>
 
 static int flctl_4secc_ooblayout_sp_ecc(struct mtd_info *mtd, int section,
 					struct mtd_oob_region *oobregion)

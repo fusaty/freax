@@ -4,7 +4,7 @@
  * Author: Andrew Scull <ascull@google.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/kvm_arm.h>

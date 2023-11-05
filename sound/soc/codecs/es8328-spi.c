@@ -7,9 +7,9 @@
  * Author: Sean Cross <xobs@kosagi.com>
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 #include <sound/soc.h>
 #include "es8328.h"
 

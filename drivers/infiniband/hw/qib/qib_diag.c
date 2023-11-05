@@ -42,13 +42,13 @@
  * through the /sys/bus/pci resource mmap interface.
  */
 
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
 
 #include "qib.h"
 #include "qib_common.h"

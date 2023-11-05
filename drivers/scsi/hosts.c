@@ -22,19 +22,19 @@
  *  September 04, 2002 Mike Anderson (andmike@us.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/transport_class.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/transport_class.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/idr.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

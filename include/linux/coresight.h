@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012, The freax Foundation. All rights reserved.
  */
 
-#ifndef _LINUX_CORESIGHT_H
-#define _LINUX_CORESIGHT_H
+#ifndef _freax_CORESIGHT_H
+#define _freax_CORESIGHT_H
 
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/perf_event.h>
-#include <linux/sched.h>
+#include <freax/amba/bus.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/perf_event.h>
+#include <freax/sched.h>
 
 /* Peripheral id registers (0xFD0-0xFEC) */
 #define CORESIGHT_PERIPHIDR4	0xfd0
@@ -691,4 +691,4 @@ coresight_find_output_type(struct coresight_platform_data *pdata,
 			   enum coresight_dev_type type,
 			   union coresight_dev_subtype subtype);
 
-#endif		/* _LINUX_COREISGHT_H */
+#endif		/* _freax_COREISGHT_H */

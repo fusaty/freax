@@ -3,23 +3,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2000, 05 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2000, 05 by Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2000 by Silicon Graphics, Inc.
  * Copyright (C) 2004 by Christoph Hellwig
  *
  * On SGI IP27 the ARC memory configuration data is completely bogus but
  * alternate easier to use mechanisms are available.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/swap.h>
-#include <linux/pfn.h>
-#include <linux/highmem.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/export.h>
+#include <freax/nodemask.h>
+#include <freax/swap.h>
+#include <freax/pfn.h>
+#include <freax/highmem.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/sections.h>

@@ -12,9 +12,9 @@
 #include <crypto/internal/simd.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
-#include <linux/cpufeature.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <freax/cpufeature.h>
+#include <freax/crypto.h>
+#include <freax/module.h>
 
 MODULE_DESCRIPTION("SHA-224/SHA-256 secure hash using ARMv8 Crypto Extensions");
 MODULE_AUTHOR("Ard Biesheuvel <ard.biesheuvel@linaro.org>");

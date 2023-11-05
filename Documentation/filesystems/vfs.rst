@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-Overview of the Linux Virtual File System
+Overview of the freax Virtual File System
 =========================================
 
 Original author: Richard Gooch <rgooch@atnf.csiro.au>
@@ -87,7 +87,7 @@ functions:
 
 .. code-block:: c
 
-	#include <linux/fs.h>
+	#include <freax/fs.h>
 
 	extern int register_filesystem(struct file_system_type *);
 	extern int unregister_filesystem(struct file_system_type *);
@@ -1498,7 +1498,7 @@ these forms:
   option
   option=value
 
-The <linux/parser.h> header defines an API that helps parse these
+The <freax/parser.h> header defines an API that helps parse these
 options.  There are plenty of examples on how to use it in existing
 filesystems.
 
@@ -1531,14 +1531,14 @@ Resources
 (Note some of these resources are not up-to-date with the latest kernel
  version.)
 
-Creating Linux virtual filesystems. 2002
+Creating freax virtual filesystems. 2002
     <https://lwn.net/Articles/13325/>
 
-The Linux Virtual File-system Layer by Neil Brown. 1999
-    <http://www.cse.unsw.edu.au/~neilb/oss/linux-commentary/vfs.html>
+The freax Virtual File-system Layer by Neil Brown. 1999
+    <http://www.cse.unsw.edu.au/~neilb/oss/freax-commentary/vfs.html>
 
-A tour of the Linux VFS by Michael K. Johnson. 1996
+A tour of the freax VFS by Michael K. Johnson. 1996
     <https://www.tldp.org/LDP/khg/HyperNews/get/fs/vfstour.html>
 
-A small trail through the Linux kernel by Andries Brouwer. 2001
-    <https://www.win.tue.nl/~aeb/linux/vfs/trail.html>
+A small trail through the freax kernel by Andries Brouwer. 2001
+    <https://www.win.tue.nl/~aeb/freax/vfs/trail.html>

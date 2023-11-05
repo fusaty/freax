@@ -5,16 +5,16 @@
  * Copyright 2013 Oleksandr Kravchenko <o.v.kravchenko@globallogic.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pm.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/events.h>
 
 #define APDS9300_DRV_NAME "apds9300"
 #define APDS9300_IRQ_NAME "apds9300_event"

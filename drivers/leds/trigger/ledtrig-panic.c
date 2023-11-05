@@ -5,11 +5,11 @@
  * Copyright 2016 Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/leds.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/notifier.h>
+#include <freax/panic_notifier.h>
+#include <freax/leds.h>
 #include "../leds.h"
 
 static struct led_trigger *trigger;

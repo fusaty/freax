@@ -4,10 +4,10 @@
  *   This is a driver for the Harmony audio chipset found
  *   on the LASI ASIC of various early HP PA-RISC workstations.
  *
- *   Copyright (C) 2004, Kyle McMartin <kyle@{debian.org,parisc-linux.org}>
+ *   Copyright (C) 2004, Kyle McMartin <kyle@{debian.org,parisc-freax.org}>
  *
  *     Based on the previous Harmony incarnations by,
- *       Copyright 2000 (c) Linuxcare Canada, Alex deVries
+ *       Copyright 2000 (c) freaxcare Canada, Alex deVries
  *       Copyright 2000-2003 (c) Helge Deller
  *       Copyright 2001 (c) Matthieu Delahaye
  *       Copyright 2001 (c) Jean-Christophe Vaugeois
@@ -22,16 +22,16 @@
  * TODO:
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -980,7 +980,7 @@ alsa_harmony_fini(void)
 }
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Kyle McMartin <kyle@parisc-linux.org>");
+MODULE_AUTHOR("Kyle McMartin <kyle@parisc-freax.org>");
 MODULE_DESCRIPTION("Harmony sound driver");
 
 module_init(alsa_harmony_init);

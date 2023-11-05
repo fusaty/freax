@@ -2,7 +2,7 @@
 #include "tests.h"
 #include "util/debug.h"
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <stdlib.h>
 #include <string2.h>
 

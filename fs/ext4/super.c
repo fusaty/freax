@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/super.c
+ *  freax/fs/ext4/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  freax/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,37 +17,37 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/random.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/log2.h>
-#include <linux/crc16.h>
-#include <linux/dax.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
-#include <linux/unicode.h>
-#include <linux/part_stat.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/time.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/parser.h>
+#include <freax/buffer_head.h>
+#include <freax/exportfs.h>
+#include <freax/vfs.h>
+#include <freax/random.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/quotaops.h>
+#include <freax/seq_file.h>
+#include <freax/ctype.h>
+#include <freax/log2.h>
+#include <freax/crc16.h>
+#include <freax/dax.h>
+#include <freax/uaccess.h>
+#include <freax/iversion.h>
+#include <freax/unicode.h>
+#include <freax/part_stat.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/fsnotify.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
 
 #include "ext4.h"
 #include "ext4_extents.h"	/* Needed for trace points definition */

@@ -7,27 +7,27 @@
 
 /*#define DEBUG*/
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
 
 #include <sound/initval.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 
-#include <linux/atmel-ssc.h>
+#include <freax/atmel-ssc.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/at73c213.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/at73c213.h>
 
 #include "at73c213.h"
 

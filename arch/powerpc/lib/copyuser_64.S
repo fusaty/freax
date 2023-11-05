@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2002 Paul Mackerras, IBM Corp.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/processor.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-compat.h>

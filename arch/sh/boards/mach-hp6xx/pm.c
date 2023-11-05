@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2006 Andriy Skulysh <askulsyh@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <freax/init.h>
+#include <freax/suspend.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
 #include <asm/io.h>
 #include <asm/hd64461.h>
 #include <asm/bl_bit.h>

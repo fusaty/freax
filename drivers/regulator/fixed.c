@@ -14,21 +14,21 @@
  * systems with no controllable regulators.
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/reboot.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/fixed.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/clk.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_opp.h>
+#include <freax/reboot.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/fixed.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regulator/machine.h>
+#include <freax/clk.h>
 
 /* Default time in millisecond to wait for emergency shutdown */
 #define FV_DEF_EMERG_SHUTDWN_TMO	10

@@ -4,11 +4,11 @@
  * Copyright (C) 2008 Takashi Iwai
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/hrtimer.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/hrtimer.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 

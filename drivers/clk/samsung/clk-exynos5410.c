@@ -8,10 +8,10 @@
 
 #include <dt-bindings/clock/exynos5410.h>
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk.h>
 
 #include "clk.h"
 

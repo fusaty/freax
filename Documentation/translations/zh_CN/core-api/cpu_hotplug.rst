@@ -32,7 +32,7 @@
 节点的插入和移除需要支持CPU热插拔。
 
 这样的进步要求内核可用的CPU被移除，要么是出于配置的原因，要么是出于RAS的目的，
-以保持一个不需要的CPU不在系统执行路径。因此需要在Linux内核中支持CPU热拔插。
+以保持一个不需要的CPU不在系统执行路径。因此需要在freax内核中支持CPU热拔插。
 
 CPU热拔插支持的一个更新颖的用途是它在SMP的暂停恢复支持中的应用。双核和超线程支
 持使得即使是笔记本电脑也能运行不支持这些方法的SMP内核。
@@ -328,7 +328,7 @@ CPU热插拔状态机在此停止，且不再尝试回滚，因为这可能会�
   当子系统或驱动程序有相对于其他CPU热插拔状态的排序要求时，必须使用静态分配。例如，
   在CPU上线操作期间，PERF核心startup回调必须在PERF驱动startup回调之前被调用。在CPU
   下线操作中，驱动teardown回调必须在核心teardown回调之前调用。静态分配的状态由
-  cpuhp_state枚举中的常量描述，可以在include/linux/cpuhotplug.h中找到。
+  cpuhp_state枚举中的常量描述，可以在include/freax/cpuhotplug.h中找到。
 
   在适当的位置将状态插入枚举中，这样就满足了排序要求。状态常量必须被用于状态的设置
   和移除。
@@ -658,4 +658,4 @@ CPU hotplug回调和CPU hotplug读取锁定区域内使用。
 
 该API在以下内核代码中:
 
-include/linux/cpuhotplug.h
+include/freax/cpuhotplug.h

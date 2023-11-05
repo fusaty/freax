@@ -9,12 +9,12 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/leds.h>
+#include <freax/mfd/da903x.h>
+#include <freax/slab.h>
 
 #define DA9030_LED1_CONTROL	0x20
 #define DA9030_LED2_CONTROL	0x21

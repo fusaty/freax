@@ -2,7 +2,7 @@
 #ifndef GPIO_REG_H
 #define GPIO_REG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct irq_domain;

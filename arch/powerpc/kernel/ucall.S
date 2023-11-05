@@ -5,7 +5,7 @@
  * Copyright 2019, IBM Corporation.
  *
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/ppc_asm.h>
 
 _GLOBAL(ucall_norets)

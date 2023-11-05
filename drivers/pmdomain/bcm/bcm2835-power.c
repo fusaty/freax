@@ -6,15 +6,15 @@
  */
 
 #include <dt-bindings/soc/bcm2835-pm.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/bcm2835-pm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mfd/bcm2835-pm.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/reset-controller.h>
+#include <freax/types.h>
 
 #define PM_GNRIC                        0x00
 #define PM_AUDIO                        0x04

@@ -2,12 +2,12 @@
 
 #define dev_fmt(fmt) "mtdoops-pstore: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pstore_blk.h>
-#include <linux/mtd/mtd.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pstore_blk.h>
+#include <freax/mtd/mtd.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
 
 static struct mtdpstore_context {
 	int index;

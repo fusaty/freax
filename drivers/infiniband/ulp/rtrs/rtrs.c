@@ -9,8 +9,8 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
-#include <linux/inet.h>
+#include <freax/module.h>
+#include <freax/inet.h>
 
 #include "rtrs-pri.h"
 #include "rtrs-log.h"

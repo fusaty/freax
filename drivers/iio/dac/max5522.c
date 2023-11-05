@@ -6,16 +6,16 @@
  * Copyright 2022 Timesys Corp.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 #define MAX5522_MAX_ADDR	15
 #define MAX5522_CTRL_NONE	0

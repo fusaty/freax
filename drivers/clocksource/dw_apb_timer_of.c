@@ -5,14 +5,14 @@
  *
  * Modified from mach-picoxcell/time.c
  */
-#include <linux/delay.h>
-#include <linux/dw_apb_timer.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/sched_clock.h>
+#include <freax/delay.h>
+#include <freax/dw_apb_timer.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/sched_clock.h>
 
 static int __init timer_get_base_and_rate(struct device_node *np,
 				    void __iomem **base, u32 *rate)

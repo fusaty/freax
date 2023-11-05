@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/mmzone.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/swap.h>
-#include <linux/vmstat.h>
-#include <linux/atomic.h>
-#include <linux/vmalloc.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/mman.h>
+#include <freax/mmzone.h>
+#include <freax/memblock.h>
+#include <freax/proc_fs.h>
+#include <freax/percpu.h>
+#include <freax/seq_file.h>
+#include <freax/swap.h>
+#include <freax/vmstat.h>
+#include <freax/atomic.h>
+#include <freax/vmalloc.h>
 #ifdef CONFIG_CMA
-#include <linux/cma.h>
+#include <freax/cma.h>
 #endif
-#include <linux/zswap.h>
+#include <freax/zswap.h>
 #include <asm/page.h>
 #include "internal.h"
 

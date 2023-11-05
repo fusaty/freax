@@ -9,15 +9,15 @@
  *  Rajan Vaja <rajan.vaja@xilinx.com>
  */
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/slab.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <freax/firmware/xlnx-zynqmp.h>
 
 #define ZYNQMP_NUM_DOMAINS		(100)
 

@@ -3,9 +3,9 @@
  * sysfs support for HD-audio core device
  */
 
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/device.h>
 #include <sound/core.h>
 #include <sound/hdaudio.h>
 #include "local.h"

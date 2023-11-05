@@ -3,7 +3,7 @@
 #ifndef _BPF_HID_BPF_DISPATCH_H
 #define _BPF_HID_BPF_DISPATCH_H
 
-#include <linux/hid.h>
+#include <freax/hid.h>
 
 struct hid_bpf_ctx_kern {
 	struct hid_bpf_ctx ctx;

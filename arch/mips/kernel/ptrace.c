@@ -11,25 +11,25 @@
  * Copyright (C) 1999 MIPS Technologies, Inc.
  * Copyright (C) 2000 Ulf Carlsson
  *
- * At this time Linux/MIPS64 only supports syscall tracing, even for 32-bit
+ * At this time freax/MIPS64 only supports syscall tracing, even for 32-bit
  * binaries.
  */
-#include <linux/compiler.h>
-#include <linux/context_tracking.h>
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/stddef.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/ftrace.h>
+#include <freax/compiler.h>
+#include <freax/context_tracking.h>
+#include <freax/elf.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/regset.h>
+#include <freax/smp.h>
+#include <freax/security.h>
+#include <freax/stddef.h>
+#include <freax/audit.h>
+#include <freax/seccomp.h>
+#include <freax/ftrace.h>
 
 #include <asm/byteorder.h>
 #include <asm/cpu.h>
@@ -41,7 +41,7 @@
 #include <asm/page.h>
 #include <asm/processor.h>
 #include <asm/syscall.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/bootinfo.h>
 #include <asm/reg.h>
 

@@ -7,13 +7,13 @@
  */
 
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mutex.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 OR Linux-OpenIB) OR BSD-2-Clause */
+/* SPDX-License-Identifier: (GPL-2.0 OR freax-OpenIB) OR BSD-2-Clause */
 /* Copyright(c) 2023 Advanced Micro Devices, Inc. */
 
 #ifndef _PDS_COMMON_H_
@@ -12,7 +12,7 @@
 #define PDS_PAGE_SIZE		4096
 
 enum pds_core_driver_type {
-	PDS_DRIVER_LINUX   = 1,
+	PDS_DRIVER_freax   = 1,
 	PDS_DRIVER_WIN     = 2,
 	PDS_DRIVER_DPDK    = 3,
 	PDS_DRIVER_FREEBSD = 4,

@@ -7,7 +7,7 @@
  *
  * (c) Copyright 2010-2013 Datera, Inc.
  *
- * Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ******************************************************************************/
 
@@ -16,11 +16,11 @@
  * on the formats implemented in this file.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi_proto.h>

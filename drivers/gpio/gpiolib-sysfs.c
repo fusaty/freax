@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
-#include <linux/kstrtox.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kdev_t.h>
+#include <freax/kstrtox.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
 
 #include "gpiolib.h"
 #include "gpiolib-sysfs.h"

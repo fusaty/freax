@@ -114,10 +114,10 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/log2.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/log2.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

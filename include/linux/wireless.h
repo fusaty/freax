@@ -7,14 +7,14 @@
  * Authors :	Jean Tourrilhes - HPL - <jt@hpl.hp.com>
  * Copyright (c) 1997-2007 Jean Tourrilhes, All Rights Reserved.
  */
-#ifndef _LINUX_WIRELESS_H
-#define _LINUX_WIRELESS_H
+#ifndef _freax_WIRELESS_H
+#define _freax_WIRELESS_H
 
-#include <uapi/linux/wireless.h>
+#include <uapi/freax/wireless.h>
 
 #ifdef CONFIG_COMPAT
 
-#include <linux/compat.h>
+#include <freax/compat.h>
 
 struct compat_iw_point {
 	compat_caddr_t pointer;
@@ -50,4 +50,4 @@ struct __compat_iw_event {
 	(IW_EV_COMPAT_LCP_LEN + sizeof(struct compat_iw_point) - \
 	 IW_EV_COMPAT_POINT_OFF)
 #endif
-#endif	/* _LINUX_WIRELESS_H */
+#endif	/* _freax_WIRELESS_H */

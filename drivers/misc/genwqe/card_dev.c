@@ -4,7 +4,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@freax.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -15,16 +15,16 @@
  * user-space applications to communicate with the card.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/sched/signal.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/atomic.h>
 
 #include "card_base.h"
 #include "card_ddcb.h"

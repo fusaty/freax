@@ -11,15 +11,15 @@
 #ifndef _IFCVF_H_
 #define _IFCVF_H_
 
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/vdpa.h>
-#include <linux/virtio_pci_modern.h>
-#include <uapi/linux/virtio_net.h>
-#include <uapi/linux/virtio_blk.h>
-#include <uapi/linux/virtio_config.h>
-#include <uapi/linux/virtio_pci.h>
-#include <uapi/linux/vdpa.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/vdpa.h>
+#include <freax/virtio_pci_modern.h>
+#include <uapi/freax/virtio_net.h>
+#include <uapi/freax/virtio_blk.h>
+#include <uapi/freax/virtio_config.h>
+#include <uapi/freax/virtio_pci.h>
+#include <uapi/freax/vdpa.h>
 
 #define N3000_DEVICE_ID		0x1041
 #define N3000_SUBSYS_DEVICE_ID	0x001A

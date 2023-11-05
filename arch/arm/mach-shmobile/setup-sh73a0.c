@@ -6,13 +6,13 @@
  * Copyright (C) 2010  Magnus Damm
  * Copyright (C) 2008  Yoshihiro Shimoda
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/io.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/map.h>

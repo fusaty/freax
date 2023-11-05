@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/ceph/mdsmap.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
+#include <freax/ceph/mdsmap.h>
+#include <freax/ceph/messenger.h>
+#include <freax/ceph/decode.h>
 
 #include "super.h"
 

@@ -1,18 +1,18 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright 2008 Red Hat, Inc. All rights reserved.
  * Copyright 2008 Ian Kent <raven@themaw.net>
  *
- * This file is part of the Linux kernel and is made available under
+ * This file is part of the freax kernel and is made available under
  * the terms of the GNU General Public License, version 2, or at your
  * option, any later version, incorporated herein by reference.
  */
 
-#ifndef _UAPI_LINUX_AUTO_DEV_IOCTL_H
-#define _UAPI_LINUX_AUTO_DEV_IOCTL_H
+#ifndef _UAPI_freax_AUTO_DEV_IOCTL_H
+#define _UAPI_freax_AUTO_DEV_IOCTL_H
 
-#include <linux/auto_fs.h>
-#include <linux/string.h>
+#include <freax/auto_fs.h>
+#include <freax/string.h>
 
 #define AUTOFS_DEVICE_NAME		"autofs"
 
@@ -213,4 +213,4 @@ enum {
 	_IOWR(AUTOFS_IOCTL, \
 	      AUTOFS_DEV_IOCTL_ISMOUNTPOINT_CMD, struct autofs_dev_ioctl)
 
-#endif	/* _UAPI_LINUX_AUTO_DEV_IOCTL_H */
+#endif	/* _UAPI_freax_AUTO_DEV_IOCTL_H */

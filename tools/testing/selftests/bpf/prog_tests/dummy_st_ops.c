@@ -5,7 +5,7 @@
 #include "dummy_st_ops_fail.skel.h"
 #include "trace_dummy_st_ops.skel.h"
 
-/* Need to keep consistent with definition in include/linux/bpf.h */
+/* Need to keep consistent with definition in include/freax/bpf.h */
 struct bpf_dummy_ops_state {
 	int val;
 };

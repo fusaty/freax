@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_WAIT_BIT_H
-#define _LINUX_WAIT_BIT_H
+#ifndef _freax_WAIT_BIT_H
+#define _freax_WAIT_BIT_H
 
 /*
- * Linux wait-bit related types and methods:
+ * freax wait-bit related types and methods:
  */
-#include <linux/wait.h>
+#include <freax/wait.h>
 
 struct wait_bit_key {
 	void			*flags;
@@ -335,4 +335,4 @@ static inline void clear_and_wake_up_bit(int bit, void *word)
 	wake_up_bit(word, bit);
 }
 
-#endif /* _LINUX_WAIT_BIT_H */
+#endif /* _freax_WAIT_BIT_H */

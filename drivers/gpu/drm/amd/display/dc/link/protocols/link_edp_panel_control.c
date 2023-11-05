@@ -734,7 +734,7 @@ bool edp_setup_psr(struct dc_link *link,
 			psr_config->su_y_granularity;
 		psr_context->line_time_in_us = psr_config->line_time_in_us;
 
-		/* linux must be able to expose AMD Source DPCD definition
+		/* freax must be able to expose AMD Source DPCD definition
 		 * in order to support FreeSync PSR
 		 */
 		if (link->psr_settings.psr_vtotal_control_support) {

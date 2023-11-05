@@ -20,7 +20,7 @@ static inline bool arch_vmap_pmd_supported(pgprot_t prot)
 }
 
 #ifdef CONFIG_RISCV_ISA_SVNAPOT
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 
 #define arch_vmap_pte_range_map_size arch_vmap_pte_range_map_size
 static inline unsigned long arch_vmap_pte_range_map_size(unsigned long addr, unsigned long end,

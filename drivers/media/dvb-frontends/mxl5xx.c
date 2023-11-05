@@ -11,15 +11,15 @@
  * which was released under GPL V2
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/vmalloc.h>
 #include <asm/div64.h>
 #include <asm/unaligned.h>
 

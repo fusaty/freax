@@ -2,10 +2,10 @@
 /* Primary function overlay window definitions
  * and service functions used by LPDDR chips
  */
-#ifndef __LINUX_MTD_PFOW_H
-#define __LINUX_MTD_PFOW_H
+#ifndef __freax_MTD_PFOW_H
+#define __freax_MTD_PFOW_H
 
-#include <linux/mtd/qinfo.h>
+#include <freax/mtd/qinfo.h>
 
 /* PFOW registers addressing */
 /* Address of symbol "P" */
@@ -121,4 +121,4 @@ static inline void send_pfow_command(struct map_info *map,
 	map_write(map, CMD(LPDDR_START_EXECUTION),
 			map->pfow_base + PFOW_COMMAND_EXECUTE);
 }
-#endif /* __LINUX_MTD_PFOW_H */
+#endif /* __freax_MTD_PFOW_H */

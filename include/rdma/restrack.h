@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved.
  */
@@ -6,13 +6,13 @@
 #ifndef _RDMA_RESTRACK_H_
 #define _RDMA_RESTRACK_H_
 
-#include <linux/typecheck.h>
-#include <linux/sched.h>
-#include <linux/kref.h>
-#include <linux/completion.h>
-#include <linux/sched/task.h>
+#include <freax/typecheck.h>
+#include <freax/sched.h>
+#include <freax/kref.h>
+#include <freax/completion.h>
+#include <freax/sched/task.h>
 #include <uapi/rdma/rdma_netlink.h>
-#include <linux/xarray.h>
+#include <freax/xarray.h>
 
 struct ib_device;
 struct sk_buff;

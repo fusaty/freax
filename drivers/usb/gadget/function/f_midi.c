@@ -18,21 +18,21 @@
  *   Ben Williamson <ben.williamson@greyinnovation.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/kfifo.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/kfifo.h>
+#include <freax/spinlock.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/midi.h>
 
 #include "u_f.h"
 #include "u_midi.h"

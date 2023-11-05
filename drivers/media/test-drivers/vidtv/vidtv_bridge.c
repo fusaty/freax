@@ -10,13 +10,13 @@
  * Copyright (C) 2020 Daniel W. S. Almeida
  */
 
-#include <linux/dev_printk.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/dev_printk.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/time.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 #include <media/dvbdev.h>
 #include <media/media-device.h>
 
@@ -32,7 +32,7 @@
 #define TUNER_DEFAULT_ADDR 0x68
 #define DEMOD_DEFAULT_ADDR 0x60
 #define VIDTV_DEFAULT_NETWORK_ID 0xff44
-#define VIDTV_DEFAULT_NETWORK_NAME "LinuxTV.org"
+#define VIDTV_DEFAULT_NETWORK_NAME "freaxTV.org"
 #define VIDTV_DEFAULT_TS_ID 0x4081
 
 /*

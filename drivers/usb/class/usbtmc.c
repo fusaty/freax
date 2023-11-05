@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/compat.h>
-#include <linux/usb/tmc.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
+#include <freax/kref.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/mutex.h>
+#include <freax/usb.h>
+#include <freax/compat.h>
+#include <freax/usb/tmc.h>
 
 /* Increment API VERSION when changing tmc.h with new flags or ioctls
  * or when changing a significant behavior of the driver.

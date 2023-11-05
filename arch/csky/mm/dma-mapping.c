@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/cache.h>
-#include <linux/dma-map-ops.h>
-#include <linux/genalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
+#include <freax/cache.h>
+#include <freax/dma-map-ops.h>
+#include <freax/genalloc.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/scatterlist.h>
+#include <freax/types.h>
 #include <asm/cache.h>
 
 static inline void cache_op(phys_addr_t paddr, size_t size,

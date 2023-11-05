@@ -4,15 +4,15 @@
  * Copyright (C) 2004 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
-#include <linux/context_tracking.h>
+#include <freax/kernel.h>
+#include <freax/kprobes.h>
+#include <freax/extable.h>
+#include <freax/kdebug.h>
+#include <freax/slab.h>
+#include <freax/context_tracking.h>
 #include <asm/signal.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* We do not have hardware single-stepping on sparc64.
  * So we implement software single-stepping with breakpoint

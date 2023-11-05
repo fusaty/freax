@@ -11,19 +11,19 @@
  * For more information, please see http://nath323.sourceforge.net/
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/ctype.h>
+#include <freax/inet.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/slab.h>
+#include <freax/udp.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
 #include <net/route.h>
 #include <net/ip6_route.h>
-#include <linux/netfilter_ipv6.h>
+#include <freax/netfilter_ipv6.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -32,7 +32,7 @@
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_h323.h>
+#include <freax/netfilter/nf_conntrack_h323.h>
 
 #define H323_MAX_SIZE 65535
 

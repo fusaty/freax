@@ -5,16 +5,16 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/idr.h>
-#include <linux/percpu.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/rtnetlink.h>
+#include <freax/skbuff.h>
+#include <freax/idr.h>
+#include <freax/percpu.h>
 #include <net/netlink.h>
 #include <net/act_api.h>
 #include <net/pkt_cls.h>

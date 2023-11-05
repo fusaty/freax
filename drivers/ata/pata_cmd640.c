@@ -4,7 +4,7 @@
  *			  (C) 2007 Red Hat Inc
  *
  * Based upon
- *  linux/drivers/ide/pci/cmd640.c		Version 1.02  Sep 01, 1996
+ *  freax/drivers/ide/pci/cmd640.c		Version 1.02  Sep 01, 1996
  *
  *  Copyright (C) 1995-1996  Linus Torvalds & authors (see driver)
  *
@@ -13,14 +13,14 @@
  *	your own code.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #define DRV_NAME "pata_cmd640"
 #define DRV_VERSION "0.0.5"

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__INCLUDE_LINUX_OOM_H
-#define _UAPI__INCLUDE_LINUX_OOM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__INCLUDE_freax_OOM_H
+#define _UAPI__INCLUDE_freax_OOM_H
 
 /*
  * /proc/<pid>/oom_score_adj set to OOM_SCORE_ADJ_MIN disables oom killing for
@@ -18,4 +18,4 @@
 #define OOM_ADJUST_MIN (-16)
 #define OOM_ADJUST_MAX 15
 
-#endif /* _UAPI__INCLUDE_LINUX_OOM_H */
+#endif /* _UAPI__INCLUDE_freax_OOM_H */

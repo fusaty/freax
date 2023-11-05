@@ -2,22 +2,22 @@
 /*
  * Motorola CPCAP PMIC regulator driver
  *
- * Based on cpcap-regulator.c from Motorola Linux kernel tree
+ * Based on cpcap-regulator.c from Motorola freax kernel tree
  * Copyright (C) 2009-2011 Motorola, Inc.
  *
  * Rewritten for mainline kernel to use device tree and regmap
  * Copyright (C) 2017 Tony Lindgren <tony@atomide.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/mfd/motorola-cpcap.h>
 
 /*
  * Resource assignment register bits. These seem to control the state
@@ -73,7 +73,7 @@
 
 /*
  * Off mode configuration bit. Used currently only by SW5 on omap4. There's
- * the following comment in Motorola Linux kernel tree for it:
+ * the following comment in Motorola freax kernel tree for it:
  *
  * When set in the regulator mode, the regulator assignment will be changed
  * to secondary when the regulator is disabled. The mode will be set back to
@@ -319,7 +319,7 @@ static const unsigned int vaudio_val_tbl[] = { 0, 2775000, };
 
 /*
  * SoC specific configuration for omap4. The data below is comes from Motorola
- * Linux kernel tree. It's basically the values of cpcap_regltr_data,
+ * freax kernel tree. It's basically the values of cpcap_regltr_data,
  * cpcap_regulator_mode_values and cpcap_regulator_off_mode_values, see
  * CPCAP_REG macro above.
  *

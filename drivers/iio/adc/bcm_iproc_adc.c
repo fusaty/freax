@@ -3,17 +3,17 @@
  * Copyright 2016 Broadcom
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 /* Below Register's are common to IPROC ADC and Touchscreen IP */
 #define IPROC_REGCTL1			0x00

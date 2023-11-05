@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/machvec.h>
 #include <asm/processor.h>
 

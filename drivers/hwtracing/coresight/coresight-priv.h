@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The freax Foundation. All rights reserved.
  */
 
 #ifndef _CORESIGHT_PRIV_H
 #define _CORESIGHT_PRIV_H
 
-#include <linux/amba/bus.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/coresight.h>
-#include <linux/pm_runtime.h>
+#include <freax/amba/bus.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/coresight.h>
+#include <freax/pm_runtime.h>
 
 /*
  * Coresight management registers (0xf00-0xfcc)

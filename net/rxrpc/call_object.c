@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/circ_buf.h>
-#include <linux/spinlock_types.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/circ_buf.h>
+#include <freax/spinlock_types.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include "ar-internal.h"

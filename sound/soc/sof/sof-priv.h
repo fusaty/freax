@@ -5,13 +5,13 @@
  *
  * Copyright(c) 2018 Intel Corporation. All rights reserved.
  *
- * Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+ * Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
  */
 
 #ifndef __SOUND_SOC_SOF_PRIV_H
 #define __SOUND_SOC_SOF_PRIV_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include <sound/hdaudio.h>
 #include <sound/sof.h>
 #include <sound/sof/info.h>

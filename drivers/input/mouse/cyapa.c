@@ -14,19 +14,19 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
 #include "cyapa.h"
 
 

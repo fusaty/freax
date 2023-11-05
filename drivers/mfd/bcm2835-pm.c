@@ -6,16 +6,16 @@
  * the WDT and power drivers.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/bcm2835-pm.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mfd/bcm2835-pm.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
 
 static const struct mfd_cell bcm2835_pm_devs[] = {
 	{ .name = "bcm2835-wdt" },

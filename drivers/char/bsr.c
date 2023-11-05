@@ -6,16 +6,16 @@
  * Author: Sonny Rao <sonnyrao@us.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/cdev.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/cdev.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 #include <asm/io.h>
 
 /*

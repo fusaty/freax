@@ -2,14 +2,14 @@
 /*
  * Pinctrl data for VIA VT8500 SoC
  *
- * Copyright (c) 2013 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (c) 2013 Tony Prisk <freax@prisktech.co.nz>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "pinctrl-wmt.h"
 

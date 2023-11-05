@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/pm_runtime.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/i2c-mux.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/pm_runtime.h>
 
 #include "mpu3050.h"
 

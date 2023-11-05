@@ -1,12 +1,12 @@
 /*
  * SMC 37C669 initialization code
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
 
 #include <asm/hwrpb.h>
 #include <asm/io.h>

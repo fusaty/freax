@@ -6,20 +6,20 @@
  *          ChiYuan Huang <cy_huang@richtek.com>
  */
 
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kstrtox.h>
-#include <linux/linear_range.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/sysfs.h>
+#include <freax/bits.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kstrtox.h>
+#include <freax/linear_range.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/sysfs.h>
 
 #define RT9471_REG_OTGCFG	0x00
 #define RT9471_REG_TOP		0x01

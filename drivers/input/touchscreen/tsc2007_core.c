@@ -17,15 +17,15 @@
  *	Copyright (C) 2005 Dirk Behme
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/platform_data/tsc2007.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/platform_data/tsc2007.h>
 #include "tsc2007.h"
 
 int tsc2007_xfer(struct tsc2007 *tsc, u8 cmd)

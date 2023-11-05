@@ -9,10 +9,10 @@
  *	Copyright (c) 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/cpu-type.h>

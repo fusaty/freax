@@ -12,19 +12,19 @@
  *	Andy Lowe / Nishanth Menon
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/irq.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kthread.h>
+#include <freax/irq.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/irqdomain.h>
 
-#include <linux/mfd/twl.h>
+#include <freax/mfd/twl.h>
 
 /*
  * The GPIO "subchip" supports 18 GPIOs which can be configured as

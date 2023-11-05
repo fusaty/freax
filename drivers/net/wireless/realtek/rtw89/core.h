@@ -5,11 +5,11 @@
 #ifndef __RTW89_CORE_H__
 #define __RTW89_CORE_H__
 
-#include <linux/average.h>
-#include <linux/bitfield.h>
-#include <linux/firmware.h>
-#include <linux/iopoll.h>
-#include <linux/workqueue.h>
+#include <freax/average.h>
+#include <freax/bitfield.h>
+#include <freax/firmware.h>
+#include <freax/iopoll.h>
+#include <freax/workqueue.h>
 #include <net/mac80211.h>
 
 struct rtw89_dev;

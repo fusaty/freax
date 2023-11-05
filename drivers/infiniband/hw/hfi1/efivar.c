@@ -3,8 +3,8 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/string.h>
-#include <linux/string_helpers.h>
+#include <freax/string.h>
+#include <freax/string_helpers.h>
 
 #include "efivar.h"
 

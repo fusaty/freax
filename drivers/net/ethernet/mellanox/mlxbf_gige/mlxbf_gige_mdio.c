@@ -5,21 +5,21 @@
  * Copyright (C) 2020-2021 NVIDIA CORPORATION & AFFILIATES
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/irqreturn.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #include "mlxbf_gige.h"
 #include "mlxbf_gige_regs.h"

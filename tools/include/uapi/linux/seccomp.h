@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SECCOMP_H
-#define _UAPI_LINUX_SECCOMP_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SECCOMP_H
+#define _UAPI_freax_SECCOMP_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 
 /* Valid values for seccomp.mode and prctl(PR_SET_SECCOMP, <mode>) */
@@ -54,7 +54,7 @@
  * struct seccomp_data - the format the BPF program executes over.
  * @nr: the system call number
  * @arch: indicates system call convention as an AUDIT_ARCH_* value
- *        as defined in <linux/audit.h>.
+ *        as defined in <freax/audit.h>.
  * @instruction_pointer: at the time of the system call.
  * @args: up to 6 system call arguments always stored as 64-bit values
  *        regardless of the architecture.
@@ -154,4 +154,4 @@ struct seccomp_notif_addfd {
 
 #define SECCOMP_IOCTL_NOTIF_SET_FLAGS	SECCOMP_IOW(4, __u64)
 
-#endif /* _UAPI_LINUX_SECCOMP_H */
+#endif /* _UAPI_freax_SECCOMP_H */

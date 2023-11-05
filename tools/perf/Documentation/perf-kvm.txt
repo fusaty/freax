@@ -9,10 +9,10 @@ SYNOPSIS
 --------
 [verse]
 'perf kvm' [--host] [--guest] [--guestmount=<path>
-	[--guestkallsyms=<path> --guestmodules=<path> | --guestvmlinux=<path>]]
+	[--guestkallsyms=<path> --guestmodules=<path> | --guestvmfreax=<path>]]
 	{top|record|report|diff|buildid-list} [<options>]
 'perf kvm' [--host] [--guest] [--guestkallsyms=<path> --guestmodules=<path>
-	| --guestvmlinux=<path>] {top|record|report|diff|buildid-list|stat} [<options>]
+	| --guestvmfreax=<path>] {top|record|report|diff|buildid-list|stat} [<options>]
 'perf kvm stat [record|report|live] [<options>]
 
 DESCRIPTION

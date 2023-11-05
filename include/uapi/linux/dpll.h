@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/dpll.yaml */
 /* YNL-GEN uapi header */
 
-#ifndef _UAPI_LINUX_DPLL_H
-#define _UAPI_LINUX_DPLL_H
+#ifndef _UAPI_freax_DPLL_H
+#define _UAPI_freax_DPLL_H
 
 #define DPLL_FAMILY_NAME	"dpll"
 #define DPLL_FAMILY_VERSION	1
@@ -204,4 +204,4 @@ enum dpll_cmd {
 
 #define DPLL_MCGRP_MONITOR	"monitor"
 
-#endif /* _UAPI_LINUX_DPLL_H */
+#endif /* _UAPI_freax_DPLL_H */

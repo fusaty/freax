@@ -6,7 +6,7 @@
  *
  * Copyright (c) 2005 Keir Fraser
  *
- * Linux coding style, mod r/m decoder, segment base fixes, real-mode
+ * freax coding style, mod r/m decoder, segment base fixes, real-mode
  * privileged instructions:
  *
  * Copyright (C) 2006 Qumranet
@@ -19,10 +19,10 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include "kvm_cache_regs.h"
 #include "kvm_emulate.h"
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 #include <asm/debugreg.h>
 #include <asm/nospec-branch.h>
 #include <asm/ibt.h>

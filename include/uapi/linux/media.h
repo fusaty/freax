@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Multimedia device API
  *
@@ -17,11 +17,11 @@
  * GNU General Public License for more details.
  */
 
-#ifndef __LINUX_MEDIA_H
-#define __LINUX_MEDIA_H
+#ifndef __freax_MEDIA_H
+#define __freax_MEDIA_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 struct media_device_info {
 	char driver[16];
@@ -436,4 +436,4 @@ struct media_v2_topology {
 
 #endif
 
-#endif /* __LINUX_MEDIA_H */
+#endif /* __freax_MEDIA_H */

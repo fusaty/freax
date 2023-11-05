@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux/LoongArch kernel.
+# Makefile for the freax/LoongArch kernel.
 #
 
-extra-y		:= vmlinux.lds
+extra-y		:= vmfreax.lds
 
 obj-y		+= head.o cpu-probe.o cacheinfo.o env.o setup.o entry.o genex.o \
 		   traps.o irq.o idle.o process.o dma.o mem.o io.o reset.o switch.o \
@@ -73,4 +73,4 @@ obj-$(CONFIG_UPROBES)		+= uprobes.o
 
 obj-$(CONFIG_JUMP_LABEL)	+= jump_label.o
 
-CPPFLAGS_vmlinux.lds		:= $(KBUILD_CFLAGS)
+CPPFLAGS_vmfreax.lds		:= $(KBUILD_CFLAGS)

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HRTIMER_DEFS_H
-#define _LINUX_HRTIMER_DEFS_H
+#ifndef _freax_HRTIMER_DEFS_H
+#define _freax_HRTIMER_DEFS_H
 
-#include <linux/ktime.h>
+#include <freax/ktime.h>
 
 #ifdef CONFIG_HIGH_RES_TIMERS
 

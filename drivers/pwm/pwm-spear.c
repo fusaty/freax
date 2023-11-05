@@ -2,25 +2,25 @@
  * ST Microelectronics SPEAr Pulse Width Modulator driver
  *
  * Copyright (C) 2012 ST Microelectronics
- * Shiraz Hashim <shiraz.linux.kernel@gmail.com>
+ * Shiraz Hashim <shiraz.freax.kernel@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #define NUM_PWM		4
 
@@ -48,7 +48,7 @@
  *
  * @mmio_base: base address of pwm chip
  * @clk: pointer to clk structure of pwm chip
- * @chip: linux pwm chip representation
+ * @chip: freax pwm chip representation
  */
 struct spear_pwm_chip {
 	void __iomem *mmio_base;
@@ -277,6 +277,6 @@ static struct platform_driver spear_pwm_driver = {
 module_platform_driver(spear_pwm_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Shiraz Hashim <shiraz.linux.kernel@gmail.com>");
+MODULE_AUTHOR("Shiraz Hashim <shiraz.freax.kernel@gmail.com>");
 MODULE_AUTHOR("Viresh Kumar <viresh.kumar@linaro.com>");
 MODULE_ALIAS("platform:spear-pwm");

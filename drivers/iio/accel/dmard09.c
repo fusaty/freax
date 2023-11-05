@@ -6,9 +6,9 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
 
 #define DMARD09_DRV_NAME	"dmard09"
 

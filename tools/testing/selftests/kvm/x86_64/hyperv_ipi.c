@@ -49,7 +49,7 @@ struct hv_send_ipi_ex {
 
 static inline void hv_init(vm_vaddr_t pgs_gpa)
 {
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, pgs_gpa);
 }
 

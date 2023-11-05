@@ -9,9 +9,9 @@
 #ifndef __RT5033_H__
 #define __RT5033_H__
 
-#include <linux/regulator/consumer.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
 
 /* RT5033 regulator IDs */
 enum rt5033_regulators {

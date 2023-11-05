@@ -5,14 +5,14 @@
  *
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/delay.h>
 
-#include <linux/arm-smccc.h>
+#include <freax/arm-smccc.h>
 
 /* CSRs */
 #define RNM_CTL_STATUS		0x000

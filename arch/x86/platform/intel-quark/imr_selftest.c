@@ -16,9 +16,9 @@
 #include <asm/imr.h>
 #include <asm/io.h>
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/types.h>
 
 #define SELFTEST KBUILD_MODNAME ": "
 /**

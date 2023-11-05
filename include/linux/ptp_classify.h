@@ -11,10 +11,10 @@
 #define _PTP_CLASSIFY_H_
 
 #include <asm/unaligned.h>
-#include <linux/ip.h>
-#include <linux/ktime.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
+#include <freax/ip.h>
+#include <freax/ktime.h>
+#include <freax/skbuff.h>
+#include <freax/udp.h>
 #include <net/checksum.h>
 
 #define PTP_CLASS_NONE  0x00 /* not a PTP event message */

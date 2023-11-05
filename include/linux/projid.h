@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PROJID_H
-#define _LINUX_PROJID_H
+#ifndef _freax_PROJID_H
+#define _freax_PROJID_H
 
 /*
  * A set of types for the internal kernel types representing project ids.
@@ -12,7 +12,7 @@
  * to detect when we overlook these differences.
  *
  */
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;
@@ -87,4 +87,4 @@ static inline bool kprojid_has_mapping(struct user_namespace *ns, kprojid_t proj
 
 #endif /* CONFIG_USER_NS */
 
-#endif /* _LINUX_PROJID_H */
+#endif /* _freax_PROJID_H */

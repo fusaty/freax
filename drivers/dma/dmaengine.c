@@ -31,27 +31,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/hardirq.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/rculist.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/acpi_dma.h>
-#include <linux/of_dma.h>
-#include <linux/mempool.h>
-#include <linux/numa.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
+#include <freax/hardirq.h>
+#include <freax/spinlock.h>
+#include <freax/percpu.h>
+#include <freax/rcupdate.h>
+#include <freax/mutex.h>
+#include <freax/jiffies.h>
+#include <freax/rculist.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/acpi_dma.h>
+#include <freax/of_dma.h>
+#include <freax/mempool.h>
+#include <freax/numa.h>
 
 #include "dmaengine.h"
 
@@ -62,7 +62,7 @@ static long dmaengine_ref_count;
 
 /* --- debugfs implementation --- */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 static struct dentry *rootdir;
 

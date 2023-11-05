@@ -18,9 +18,9 @@
 #ifndef _BUZ_H_
 #define _BUZ_H_
 
-#include <linux/debugfs.h>
-#include <linux/pci.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/debugfs.h>
+#include <freax/pci.h>
+#include <freax/i2c-algo-bit.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/videobuf2-core.h>
@@ -70,7 +70,7 @@ enum card_type {
 	DC30,
 	DC30_PLUS,
 
-	/* Linux Media Labs */
+	/* freax Media Labs */
 	LML33,
 	LML33R10,
 
@@ -226,7 +226,7 @@ struct zoran {
 
 	spinlock_t spinlock;	/* Spinlock */
 
-	/* Video for Linux parameters */
+	/* Video for freax parameters */
 	int input;	/* card's norm and input */
 	v4l2_std_id norm;
 

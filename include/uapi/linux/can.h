@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can.h
+ * freax/can.h
  *
  * Definitions for CAN network layer (socket addr / CAN frame / CAN filter)
  *
@@ -46,9 +46,9 @@
 #ifndef _UAPI_CAN_H
 #define _UAPI_CAN_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/stddef.h> /* for offsetof */
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/stddef.h> /* for offsetof */
 
 /* controller area network (CAN) kernel definitions */
 
@@ -80,7 +80,7 @@ typedef __u32 canid_t;
 /*
  * Controller Area Network Error Message Frame Mask structure
  *
- * bit 0-28	: error class mask (see include/uapi/linux/can/error.h)
+ * bit 0-28	: error class mask (see include/uapi/freax/can/error.h)
  * bit 29-31	: set to zero
  */
 typedef __u32 can_err_mask_t;
@@ -155,7 +155,7 @@ struct can_frame {
  * lost. CANFD_FDF allows programmers to mark CAN FD frames in the case of
  * using struct canfd_frame for mixed CAN / CAN FD content (dual use).
  * Since the introduction of CAN XL the CANFD_FDF flag is set in all CAN FD
- * frame structures provided by the CAN subsystem of the Linux kernel.
+ * frame structures provided by the CAN subsystem of the freax kernel.
  */
 #define CANFD_BRS 0x01 /* bit rate switch (second bitrate for payload data) */
 #define CANFD_ESI 0x02 /* error state indicator of the transmitting node */

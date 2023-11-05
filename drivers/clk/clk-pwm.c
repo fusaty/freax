@@ -4,12 +4,12 @@
  *
  * PWM (mis)used as clock output
  */
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <freax/clk-provider.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
 
 struct clk_pwm {
 	struct clk_hw hw;

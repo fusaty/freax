@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/atari/debug.c
+ * freax/arch/m68k/atari/debug.c
  *
  * Atari debugging and serial console stuff
  *
@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/tty.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/module.h>
 
 #include <asm/atarihw.h>
 #include <asm/atariints.h>

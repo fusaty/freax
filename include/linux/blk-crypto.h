@@ -3,10 +3,10 @@
  * Copyright 2019 Google LLC
  */
 
-#ifndef __LINUX_BLK_CRYPTO_H
-#define __LINUX_BLK_CRYPTO_H
+#ifndef __freax_BLK_CRYPTO_H
+#define __freax_BLK_CRYPTO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum blk_crypto_mode_num {
 	BLK_ENCRYPTION_MODE_INVALID,
@@ -69,8 +69,8 @@ struct bio_crypt_ctx {
 	u64				bc_dun[BLK_CRYPTO_DUN_ARRAY_SIZE];
 };
 
-#include <linux/blk_types.h>
-#include <linux/blkdev.h>
+#include <freax/blk_types.h>
+#include <freax/blkdev.h>
 
 #ifdef CONFIG_BLK_INLINE_ENCRYPTION
 
@@ -132,4 +132,4 @@ static inline int bio_crypt_clone(struct bio *dst, struct bio *src,
 	return 0;
 }
 
-#endif /* __LINUX_BLK_CRYPTO_H */
+#endif /* __freax_BLK_CRYPTO_H */

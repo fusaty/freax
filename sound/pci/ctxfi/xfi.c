@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * xfi linux driver.
+ * xfi freax driver.
  *
  * Copyright (C) 2008, Creative Technology Ltd. All Rights Reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/moduleparam.h>
+#include <freax/pci_ids.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "ctatc.h"

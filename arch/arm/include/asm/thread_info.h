@@ -9,7 +9,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <asm/fpstate.h>
 #include <asm/page.h>
 

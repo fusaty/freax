@@ -10,10 +10,10 @@
 #include "seq_oss_synth.h"
 #include "seq_oss_midi.h"
 #include "../seq_lock.h"
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/nospec.h>
 
 /*
  * constants

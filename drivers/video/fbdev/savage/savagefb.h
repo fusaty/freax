@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/savagefb.h -- S3 Savage Framebuffer Driver
+ * freax/drivers/video/savagefb.h -- S3 Savage Framebuffer Driver
  *
  * Copyright (c) 2001  Denis Oliver Kropp <dok@convergence.de>
  *
@@ -12,9 +12,9 @@
 #ifndef __SAVAGEFB_H__
 #define __SAVAGEFB_H__
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/mutex.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/mutex.h>
 #include <video/vga.h>
 #include "../edid.h"
 

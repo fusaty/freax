@@ -11,7 +11,7 @@
  *   (c) 2000 Stephen J. Gowdy (SGowdy@lbl.gov)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@freaxspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -28,10 +28,10 @@
  * status of a command.
  */
 
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/blkdev.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -40,7 +40,7 @@
 #include <scsi/scsi_eh.h>
 
 #include "usb.h"
-#include <linux/usb/hcd.h>
+#include <freax/usb/hcd.h>
 #include "scsiglue.h"
 #include "debug.h"
 #include "transport.h"

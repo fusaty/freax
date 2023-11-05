@@ -7,17 +7,17 @@
  * Author: Daniel(Geon Si) Jeong <daniel.jeong@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/lp8755.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/uaccess.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/platform_data/lp8755.h>
 
 #define LP8755_REG_BUCK0	0x00
 #define LP8755_REG_BUCK1	0x03

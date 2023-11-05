@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2022 Nuvoton Technology Corporation
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/bcd.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 #define NCT3018Y_REG_SC		0x00 /* seconds */
 #define NCT3018Y_REG_SCA	0x01 /* alarm */

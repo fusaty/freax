@@ -7,11 +7,11 @@
  * is Copyright (c) Steven Rostedt <srostedt@redhat.com>
  *
  */
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <freax/uaccess.h>
+#include <freax/ftrace.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
 
 #include "trace.h"
 #include "trace_output.h"

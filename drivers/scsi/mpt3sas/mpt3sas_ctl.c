@@ -5,7 +5,7 @@
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_ctl.c
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2014 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-Fusionfreax.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -43,19 +43,19 @@
  * USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/compat.h>
-#include <linux/poll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/compat.h>
+#include <freax/poll.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #include "mpt3sas_base.h"
 #include "mpt3sas_ctl.h"

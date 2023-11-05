@@ -4,14 +4,14 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *	Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *	Based on Steven Toth <stoth@freaxtv.org> cx23885 driver
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "cx25821.h"
 

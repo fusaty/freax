@@ -2,20 +2,20 @@
 #ifndef __NET_SCHED_GENERIC_H
 #define __NET_SCHED_GENERIC_H
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/pkt_sched.h>
-#include <linux/pkt_cls.h>
-#include <linux/percpu.h>
-#include <linux/dynamic_queue_limits.h>
-#include <linux/list.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
-#include <linux/hashtable.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/pkt_sched.h>
+#include <freax/pkt_cls.h>
+#include <freax/percpu.h>
+#include <freax/dynamic_queue_limits.h>
+#include <freax/list.h>
+#include <freax/refcount.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/atomic.h>
+#include <freax/hashtable.h>
 #include <net/gen_stats.h>
 #include <net/rtnetlink.h>
 #include <net/flow_offload.h>
@@ -814,7 +814,7 @@ static inline unsigned int qdisc_pkt_len(const struct sk_buff *skb)
 	return qdisc_skb_cb(skb)->pkt_len;
 }
 
-/* additional qdisc xmit flags (NET_XMIT_MASK in linux/netdevice.h) */
+/* additional qdisc xmit flags (NET_XMIT_MASK in freax/netdevice.h) */
 enum net_xmit_qdisc_t {
 	__NET_XMIT_STOLEN = 0x00010000,
 	__NET_XMIT_BYPASS = 0x00020000,

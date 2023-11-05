@@ -7,11 +7,11 @@
  *	(c) 2000-2023 by Helge Deller <deller@gmx.de>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/types.h>
 #include <asm/io.h>
 #include <asm/led.h>
 

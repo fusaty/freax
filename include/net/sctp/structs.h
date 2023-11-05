@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email addresses:
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Randall Stewart	    <randall@sctp.chicago.il.us>
@@ -32,18 +32,18 @@
 #ifndef __sctp_structs_h__
 #define __sctp_structs_h__
 
-#include <linux/ktime.h>
-#include <linux/generic-radix-tree.h>
-#include <linux/rhashtable-types.h>
-#include <linux/socket.h>	/* linux/in.h needs this!!    */
-#include <linux/in.h>		/* We get struct sockaddr_in. */
-#include <linux/in6.h>		/* We get struct in6_addr     */
-#include <linux/ipv6.h>
+#include <freax/ktime.h>
+#include <freax/generic-radix-tree.h>
+#include <freax/rhashtable-types.h>
+#include <freax/socket.h>	/* freax/in.h needs this!!    */
+#include <freax/in.h>		/* We get struct sockaddr_in. */
+#include <freax/in6.h>		/* We get struct in6_addr     */
+#include <freax/ipv6.h>
 #include <asm/param.h>		/* We get MAXHOSTNAMELEN.     */
-#include <linux/atomic.h>		/* This gets us atomic counters.  */
-#include <linux/skbuff.h>	/* We need sk_buff_head. */
-#include <linux/workqueue.h>	/* We need tq_struct.	 */
-#include <linux/sctp.h>		/* We need sctp* header structs.  */
+#include <freax/atomic.h>		/* This gets us atomic counters.  */
+#include <freax/skbuff.h>	/* We need sk_buff_head. */
+#include <freax/workqueue.h>	/* We need tq_struct.	 */
+#include <freax/sctp.h>		/* We need sctp* header structs.  */
 #include <net/sctp/auth.h>	/* We need auth specific structs */
 #include <net/ip.h>		/* For inet_skb_parm */
 

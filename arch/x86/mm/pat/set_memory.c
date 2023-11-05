@@ -3,32 +3,32 @@
  * Copyright 2002 Andi Kleen, SuSE Labs.
  * Thanks to Ben LaHaise for precious feedback.
  */
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/pfn.h>
-#include <linux/percpu.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/libnvdimm.h>
-#include <linux/vmstat.h>
-#include <linux/kernel.h>
-#include <linux/cc_platform.h>
-#include <linux/set_memory.h>
-#include <linux/memregion.h>
+#include <freax/highmem.h>
+#include <freax/memblock.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/debugfs.h>
+#include <freax/pfn.h>
+#include <freax/percpu.h>
+#include <freax/gfp.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/libnvdimm.h>
+#include <freax/vmstat.h>
+#include <freax/kernel.h>
+#include <freax/cc_platform.h>
+#include <freax/set_memory.h>
+#include <freax/memregion.h>
 
 #include <asm/e820/api.h>
 #include <asm/processor.h>
 #include <asm/tlbflush.h>
 #include <asm/sections.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/proto.h>
 #include <asm/memtype.h>
@@ -522,7 +522,7 @@ static pgprotval_t protect_kernel_text_ro(unsigned long start,
 	 * the current mapping is already using small page mapping.  No
 	 * need to work hard to preserve large page mappings in this case.
 	 *
-	 * This also fixes the Linux Xen paravirt guest boot failure caused
+	 * This also fixes the freax Xen paravirt guest boot failure caused
 	 * by unexpected read-only mappings for kernel identity
 	 * mappings. In this paravirt guest case, the kernel text mapping
 	 * and the kernel identity mapping share the same page-table pages,

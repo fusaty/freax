@@ -1,5 +1,5 @@
-/*-*- linux-c -*-
- *  linux/drivers/video/i810fb_main.h -- Intel 810 frame buffer device 
+/*-*- freax-c -*-
+ *  freax/drivers/video/i810fb_main.h -- Intel 810 frame buffer device 
  *                                       main header file
  *
  *      Copyright (C) 2001 Antonino Daplas<adaplas@pol.net>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * QNX4 file system, Linux implementation.
+ * QNX4 file system, freax implementation.
  *
  * Version : 0.2.1
  *
@@ -9,10 +9,10 @@
  * History :
  *
  * 28-05-1998 by Richard Frowijn : first release.
- * 20-06-1998 by Frank Denis : Linux 2.1.99+ & dcache support.
+ * 20-06-1998 by Frank Denis : freax 2.1.99+ & dcache support.
  */
 
-#include <linux/buffer_head.h>
+#include <freax/buffer_head.h>
 #include "qnx4.h"
 
 /*

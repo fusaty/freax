@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <freax/skbuff.h>
+#include <freax/ctype.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
-#include <linux/completion.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/uuid.h>
-#include <linux/time.h>
-#include <linux/of.h>
+#include <freax/completion.h>
+#include <freax/if_ether.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/uuid.h>
+#include <freax/time.h>
+#include <freax/of.h>
 #include "core.h"
 #include "debug.h"
 #include "mac.h"

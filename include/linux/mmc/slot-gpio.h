@@ -8,8 +8,8 @@
 #ifndef MMC_SLOT_GPIO_H
 #define MMC_SLOT_GPIO_H
 
-#include <linux/types.h>
-#include <linux/irqreturn.h>
+#include <freax/types.h>
+#include <freax/irqreturn.h>
 
 struct mmc_host;
 

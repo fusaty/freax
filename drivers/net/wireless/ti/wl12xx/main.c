@@ -5,11 +5,11 @@
  * Copyright (C) 2008-2010 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include "../wlcore/wlcore.h"
 #include "../wlcore/debug.h"

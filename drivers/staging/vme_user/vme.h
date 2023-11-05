@@ -2,7 +2,7 @@
 #ifndef _VME_H_
 #define _VME_H_
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /* Resource Type */
 enum vme_resource_type {

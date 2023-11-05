@@ -15,35 +15,35 @@
  * Kevin Chea
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/init.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/module.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/elf.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/init.h>
+#include <freax/prctl.h>
+#include <freax/init_task.h>
+#include <freax/module.h>
+#include <freax/mqueue.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/rcupdate.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/platform.h>
 #include <asm/mmu.h>
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/asm-offsets.h>
 #include <asm/regs.h>
 #include <asm/hw_breakpoint.h>
@@ -57,7 +57,7 @@ EXPORT_SYMBOL(pm_power_off);
 
 
 #ifdef CONFIG_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <freax/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

@@ -7,13 +7,13 @@
  * Author: Sergio Aguirre <sergio.a.aguirre@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

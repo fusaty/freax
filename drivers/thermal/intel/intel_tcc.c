@@ -4,8 +4,8 @@
  * Copyright (c) 2022, Intel Corporation.
  */
 
-#include <linux/errno.h>
-#include <linux/intel_tcc.h>
+#include <freax/errno.h>
+#include <freax/intel_tcc.h>
 #include <asm/msr.h>
 
 /**

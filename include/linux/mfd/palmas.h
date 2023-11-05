@@ -8,15 +8,15 @@
  * Author: Ian Lartey <ian@slimlogic.co.uk>
  */
 
-#ifndef __LINUX_MFD_PALMAS_H
-#define __LINUX_MFD_PALMAS_H
+#ifndef __freax_MFD_PALMAS_H
+#define __freax_MFD_PALMAS_H
 
-#include <linux/usb/otg.h>
-#include <linux/leds.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/extcon-provider.h>
-#include <linux/usb/phy_companion.h>
+#include <freax/usb/otg.h>
+#include <freax/leds.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/extcon-provider.h>
+#include <freax/usb/phy_companion.h>
 
 #define PALMAS_NUM_CLIENTS		3
 
@@ -3796,4 +3796,4 @@ int palmas_ext_control_req_config(struct palmas *palmas,
 	enum palmas_external_requestor_id ext_control_req_id,
 	int ext_ctrl, bool enable);
 
-#endif /*  __LINUX_MFD_PALMAS_H */
+#endif /*  __freax_MFD_PALMAS_H */

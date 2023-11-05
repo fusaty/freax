@@ -6,19 +6,19 @@
  * Written by: Juri Lelli, ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sched/topology.h>
-#include <linux/cpuset.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
+#include <freax/acpi.h>
+#include <freax/cacheinfo.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/sched/topology.h>
+#include <freax/cpuset.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/rcupdate.h>
+#include <freax/sched.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/thermal_pressure.h>

@@ -2,20 +2,20 @@
 #ifndef _NET_XFRM_H
 #define _NET_XFRM_H
 
-#include <linux/compiler.h>
-#include <linux/xfrm.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/in6.h>
-#include <linux/mutex.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
-#include <linux/sockptr.h>
+#include <freax/compiler.h>
+#include <freax/xfrm.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/pfkeyv2.h>
+#include <freax/ipsec.h>
+#include <freax/in6.h>
+#include <freax/mutex.h>
+#include <freax/audit.h>
+#include <freax/slab.h>
+#include <freax/refcount.h>
+#include <freax/sockptr.h>
 
 #include <net/sock.h>
 #include <net/dst.h>
@@ -26,7 +26,7 @@
 #include <net/flow.h>
 #include <net/gro_cells.h>
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #ifdef CONFIG_XFRM_STATISTICS
 #include <net/snmp.h>

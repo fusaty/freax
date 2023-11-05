@@ -7,10 +7,10 @@
 #include "gve.h"
 #include "gve_adminq.h"
 #include "gve_utils.h"
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/vmalloc.h>
-#include <linux/skbuff.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/vmalloc.h>
+#include <freax/skbuff.h>
 #include <net/xdp_sock_drv.h>
 
 static inline void gve_tx_put_doorbell(struct gve_priv *priv,

@@ -9,11 +9,11 @@
  * Copyright (C) 1999 Silicon Graphics, Inc.
  * Copyright (C) 2014 Imagination Technologies Ltd.
  */
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/debugfs.h>
-#include <linux/perf_event.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/signal.h>
+#include <freax/debugfs.h>
+#include <freax/perf_event.h>
 
 #include <asm/asm.h>
 #include <asm/branch.h>

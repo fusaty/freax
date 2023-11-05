@@ -5,16 +5,16 @@
 
 #define pr_fmt(fmt) "dt-cpu-ftrs: " fmt
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/libfdt.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/threads.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/jump_label.h>
+#include <freax/libfdt.h>
+#include <freax/memblock.h>
+#include <freax/of_fdt.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/threads.h>
 
 #include <asm/cputable.h>
 #include <asm/dt_cpu_ftrs.h>
@@ -326,7 +326,7 @@ static int __init feat_enable_dscr(struct dt_cpu_feature *f)
 	u64 lpcr;
 
 	/*
-	 * Linux relies on FSCR[DSCR] being clear, so that we can take the
+	 * freax relies on FSCR[DSCR] being clear, so that we can take the
 	 * facility unavailable interrupt and track the task's usage of DSCR.
 	 * See facility_unavailable_exception().
 	 * Clear the bit here so that feat_enable() doesn't set it.

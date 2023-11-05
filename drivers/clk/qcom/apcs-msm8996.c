@@ -6,13 +6,13 @@
  * Author: Dmitry Baryshkov <dmitry.baryshkov@linaro.org>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define APCS_AUX_OFFSET	0x50
 

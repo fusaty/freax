@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/exportfs.h>
-#include <linux/fs_struct.h>
-#include <linux/fsnotify.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <freax/syscalls.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/exportfs.h>
+#include <freax/fs_struct.h>
+#include <freax/fsnotify.h>
+#include <freax/personality.h>
+#include <freax/uaccess.h>
+#include <freax/compat.h>
 #include "internal.h"
 #include "mount.h"
 

@@ -5,9 +5,9 @@
 #include <asm-generic/pgtable-nop4d.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/mmdebug.h>
-#include <linux/bug.h>
-#include <linux/sizes.h>
+#include <freax/mmdebug.h>
+#include <freax/bug.h>
+#include <freax/sizes.h>
 #endif
 
 /*
@@ -79,13 +79,13 @@
  *
  * This is different from the number of physical bit required to address
  * the last byte of memory. That is defined by MAX_PHYSMEM_BITS.
- * MAX_PHYSMEM_BITS is a linux limitation imposed by the maximum
+ * MAX_PHYSMEM_BITS is a freax limitation imposed by the maximum
  * number of sections we can support (SECTIONS_SHIFT).
  *
  * This is different from Radix page table limitation above and
  * should always be less than that. The limit is done such that
  * we can overload the bits between _RPAGE_PA_MAX and _PAGE_PA_MAX
- * for hash linux page table specific bits.
+ * for hash freax page table specific bits.
  *
  * In order to be compatible with future hardware generations we keep
  * some offsets and limit this for now to 53
@@ -103,7 +103,7 @@
  */
 #define _PAGE_NO_CACHE		_PAGE_TOLERANT
 /*
- * We support _RPAGE_PA_MAX bit real address in pte. On the linux side
+ * We support _RPAGE_PA_MAX bit real address in pte. On the freax side
  * we are limited by _PAGE_PA_MAX. Clear everything above _PAGE_PA_MAX
  * and every thing below PAGE_SHIFT;
  */
@@ -255,7 +255,7 @@ static inline unsigned int ioremap_max_order(void)
 {
 	if (radix_enabled())
 		return PUD_SHIFT;
-	return 7 + PAGE_SHIFT; /* default from linux/vmalloc.h */
+	return 7 + PAGE_SHIFT; /* default from freax/vmalloc.h */
 }
 #define IOREMAP_MAX_ORDER ioremap_max_order()
 
@@ -659,7 +659,7 @@ static inline pte_t pte_modify(pte_t pte, pgprot_t newprot)
 /*
  * swp_entry_t must be independent of pte bits. We build a swp_entry_t from
  * swap type and offset we get from swap and convert that to pte to find a
- * matching pte in linux page table.
+ * matching pte in freax page table.
  * Clear bits not found in swap entries here.
  */
 #define __pte_to_swp_entry(pte)	((swp_entry_t) { pte_val((pte)) & ~_PAGE_PTE })

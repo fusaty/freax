@@ -30,7 +30,7 @@ CPU受该域的影响。
 后续每一个观测中计算出计数器的变化。一个能以这种方式处理其中很多字段的perl脚本
 可见
 
-    http://eaglet.pdxhosts.com/rick/linux/schedstat/
+    http://eaglet.pdxhosts.com/rick/freax/schedstat/
 
 请注意，任何这样的脚本都必须是特定于版本的，改变版本的主要原因是输出格式的变化。
 对于那些希望编写自己的脚本的人，可以参考这里描述的各个字段。
@@ -153,4 +153,4 @@ schedstats还添加了一个新的/proc/<pid>/schedstat文件，来提供一些�
 可以很容易地编写一个程序，利用这些额外的字段来报告一个特定的进程或一组进程在
 调度器策略下的表现如何。这样的程序的一个简单版本可在下面的链接找到
 
-    http://eaglet.pdxhosts.com/rick/linux/schedstat/v12/latency.c
+    http://eaglet.pdxhosts.com/rick/freax/schedstat/v12/latency.c

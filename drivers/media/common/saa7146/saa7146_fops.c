@@ -2,7 +2,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <media/drv-intf/saa7146_vv.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 /****************************************************************************/
 /* resource management functions, shamelessly stolen from saa7134 driver */
@@ -431,5 +431,5 @@ module_init(saa7146_vv_init_module);
 module_exit(saa7146_vv_cleanup_module);
 
 MODULE_AUTHOR("Michael Hunold <michael@mihu.de>");
-MODULE_DESCRIPTION("video4linux driver for saa7146-based hardware");
+MODULE_DESCRIPTION("video4freax driver for saa7146-based hardware");
 MODULE_LICENSE("GPL");

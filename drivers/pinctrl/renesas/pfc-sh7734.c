@@ -5,7 +5,7 @@
  * Copyright (C) 2012  Renesas Solutions Corp.
  * Copyright (C) 2012  Nobuhiro Iwamatsu <nobuhiro.iwamatsu.yj@renesas.com>
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/sh7734.h>
 
 #include "sh_pfc.h"

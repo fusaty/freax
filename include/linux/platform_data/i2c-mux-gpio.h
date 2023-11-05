@@ -5,8 +5,8 @@
  * Peter Korsgaard <peter.korsgaard@barco.com>
  */
 
-#ifndef _LINUX_I2C_MUX_GPIO_H
-#define _LINUX_I2C_MUX_GPIO_H
+#ifndef _freax_I2C_MUX_GPIO_H
+#define _freax_I2C_MUX_GPIO_H
 
 /* MUX has no specific idle mode */
 #define I2C_MUX_GPIO_NO_IDLE	((unsigned)-1)
@@ -30,4 +30,4 @@ struct i2c_mux_gpio_platform_data {
 	unsigned idle;
 };
 
-#endif /* _LINUX_I2C_MUX_GPIO_H */
+#endif /* _freax_I2C_MUX_GPIO_H */

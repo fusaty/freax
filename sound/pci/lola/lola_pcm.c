@@ -5,11 +5,11 @@
  *  Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include "lola.h"

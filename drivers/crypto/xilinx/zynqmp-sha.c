@@ -3,19 +3,19 @@
  * Xilinx ZynqMP SHA Driver.
  * Copyright (c) 2022 Xilinx Inc.
  */
-#include <linux/cacheflush.h>
+#include <freax/cacheflush.h>
 #include <crypto/hash.h>
 #include <crypto/internal/hash.h>
 #include <crypto/sha3.h>
-#include <linux/crypto.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/crypto.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware/xlnx-zynqmp.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #define ZYNQMP_DMA_BIT_MASK		32U
 #define ZYNQMP_DMA_ALLOC_FIXED_SIZE	0x1000U

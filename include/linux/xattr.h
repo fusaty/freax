@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/xattr.h
+  File: freax/xattr.h
 
   Extended attributes handling.
 
@@ -8,16 +8,16 @@
   Copyright (c) 2001-2002 Silicon Graphics, Inc.  All Rights Reserved.
   Copyright (c) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
 */
-#ifndef _LINUX_XATTR_H
-#define _LINUX_XATTR_H
+#ifndef _freax_XATTR_H
+#define _freax_XATTR_H
 
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/user_namespace.h>
-#include <uapi/linux/xattr.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/user_namespace.h>
+#include <uapi/freax/xattr.h>
 
 struct inode;
 struct dentry;
@@ -129,4 +129,4 @@ void simple_xattr_add(struct simple_xattrs *xattrs,
 		      struct simple_xattr *new_xattr);
 int xattr_list_one(char **buffer, ssize_t *remaining_size, const char *name);
 
-#endif	/* _LINUX_XATTR_H */
+#endif	/* _freax_XATTR_H */

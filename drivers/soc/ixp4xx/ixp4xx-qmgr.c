@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx Queue Manager driver for Linux
+ * Intel IXP4xx Queue Manager driver for freax
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ixp4xx/qmgr.h>
-#include <linux/soc/ixp4xx/cpu.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/soc/ixp4xx/qmgr.h>
+#include <freax/soc/ixp4xx/cpu.h>
 
 static struct qmgr_regs __iomem *qmgr_regs;
 static int qmgr_irq_1;

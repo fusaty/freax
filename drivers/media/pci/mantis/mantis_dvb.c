@@ -5,14 +5,14 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

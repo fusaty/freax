@@ -2,16 +2,16 @@
 /*
  * PPS API kernel header
  *
- * Copyright (C) 2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2009   Rodolfo Giometti <giometti@freax.it>
  */
 
-#ifndef LINUX_PPS_KERNEL_H
-#define LINUX_PPS_KERNEL_H
+#ifndef freax_PPS_KERNEL_H
+#define freax_PPS_KERNEL_H
 
-#include <linux/pps.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/time.h>
+#include <freax/pps.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/time.h>
 
 /*
  * Global defines
@@ -117,4 +117,4 @@ static inline void pps_sub_ts(struct pps_event_time *ts, struct timespec64 delta
 #endif
 }
 
-#endif /* LINUX_PPS_KERNEL_H */
+#endif /* freax_PPS_KERNEL_H */

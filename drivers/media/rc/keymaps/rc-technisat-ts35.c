@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 static struct rc_map_table technisat_ts35[] = {
 	{0x32, KEY_MUTE},

@@ -5,11 +5,11 @@
  * Copyright (C) 2016-2017 Texas Instruments Inc.
  *	Dave Gerlach
  */
-#ifndef __LINUX_TI_EMIF_H
-#define __LINUX_TI_EMIF_H
+#ifndef __freax_TI_EMIF_H
+#define __freax_TI_EMIF_H
 
-#include <linux/kbuild.h>
-#include <linux/types.h>
+#include <freax/kbuild.h>
+#include <freax/types.h>
 #ifndef __ASSEMBLY__
 
 struct emif_regs_amx3 {
@@ -136,4 +136,4 @@ int ti_emif_copy_pm_function_table(struct gen_pool *sram_pool, void *dst);
 int ti_emif_get_mem_type(void);
 
 #endif
-#endif /* __LINUX_TI_EMIF_H */
+#endif /* __freax_TI_EMIF_H */

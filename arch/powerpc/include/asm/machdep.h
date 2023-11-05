@@ -3,11 +3,11 @@
 #define _ASM_POWERPC_MACHDEP_H
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
+#include <freax/compiler.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
 
 struct pt_regs;
 struct pci_bus;	

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Linux host-side vring helpers; for when the kernel needs to access
+ * freax host-side vring helpers; for when the kernel needs to access
  * someone else's vring.
  *
  * Copyright IBM Corporation, 2013.
@@ -8,16 +8,16 @@
  *
  * Written by: Rusty Russell <rusty@rustcorp.com.au>
  */
-#ifndef _LINUX_VRINGH_H
-#define _LINUX_VRINGH_H
-#include <uapi/linux/virtio_ring.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#ifndef _freax_VRINGH_H
+#define _freax_VRINGH_H
+#include <uapi/freax/virtio_ring.h>
+#include <freax/virtio_byteorder.h>
+#include <freax/uio.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #if IS_REACHABLE(CONFIG_VHOST_IOTLB)
-#include <linux/dma-direction.h>
-#include <linux/vhost_iotlb.h>
+#include <freax/dma-direction.h>
+#include <freax/vhost_iotlb.h>
 #endif
 #include <asm/barrier.h>
 
@@ -330,4 +330,4 @@ int vringh_need_notify_iotlb(struct vringh *vrh);
 
 #endif /* CONFIG_VHOST_IOTLB */
 
-#endif /* _LINUX_VRINGH_H */
+#endif /* _freax_VRINGH_H */

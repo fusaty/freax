@@ -4,8 +4,8 @@
 /* ethtool support for e1000 */
 
 #include "e1000.h"
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
+#include <freax/jiffies.h>
+#include <freax/uaccess.h>
 
 enum {NETDEV_STATS, E1000_STATS};
 

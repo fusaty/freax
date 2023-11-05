@@ -2,13 +2,13 @@
 /*
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/bitrev.h>
-#include <linux/ratelimit.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/bitrev.h>
+#include <freax/ratelimit.h>
+#include <freax/usb.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/audio-v2.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

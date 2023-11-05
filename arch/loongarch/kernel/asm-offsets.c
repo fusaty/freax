@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
-#include <linux/kvm_host.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/kbuild.h>
+#include <freax/suspend.h>
+#include <freax/kvm_host.h>
 #include <asm/cpu-info.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
@@ -185,7 +185,7 @@ void output_mm_defines(void)
 	COMMENT("Size of struct page");
 	DEFINE(STRUCT_PAGE_SIZE, sizeof(struct page));
 	BLANK();
-	COMMENT("Linux mm_struct offsets.");
+	COMMENT("freax mm_struct offsets.");
 	OFFSET(MM_USERS, mm_struct, mm_users);
 	OFFSET(MM_PGD, mm_struct, pgd);
 	OFFSET(MM_CONTEXT, mm_struct, context);
@@ -214,7 +214,7 @@ void output_mm_defines(void)
 
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("freax sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_PC, sigcontext, sc_pc);
 	BLANK();
@@ -222,7 +222,7 @@ void output_sc_defines(void)
 
 void output_signal_defines(void)
 {
-	COMMENT("Linux signal numbers.");
+	COMMENT("freax signal numbers.");
 	DEFINE(_SIGHUP, SIGHUP);
 	DEFINE(_SIGINT, SIGINT);
 	DEFINE(_SIGQUIT, SIGQUIT);
@@ -260,7 +260,7 @@ void output_signal_defines(void)
 #ifdef CONFIG_SMP
 void output_smpboot_defines(void)
 {
-	COMMENT("Linux smp cpu boot offsets.");
+	COMMENT("freax smp cpu boot offsets.");
 	OFFSET(CPU_BOOT_STACK, secondary_data, stack);
 	OFFSET(CPU_BOOT_TINFO, secondary_data, thread_info);
 	BLANK();
@@ -270,7 +270,7 @@ void output_smpboot_defines(void)
 #ifdef CONFIG_HIBERNATION
 void output_pbe_defines(void)
 {
-	COMMENT("Linux struct pbe offsets.");
+	COMMENT("freax struct pbe offsets.");
 	OFFSET(PBE_ADDRESS, pbe, address);
 	OFFSET(PBE_ORIG_ADDRESS, pbe, orig_address);
 	OFFSET(PBE_NEXT, pbe, next);

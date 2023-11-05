@@ -4,12 +4,12 @@
  * Copyright (C) 2015 Lukas Wunner <lukas@wunner.de>
  */
 
-#ifndef LINUX_APPLE_GMUX_H
-#define LINUX_APPLE_GMUX_H
+#ifndef freax_APPLE_GMUX_H
+#define freax_APPLE_GMUX_H
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/pnp.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/pnp.h>
 
 #define GMUX_ACPI_HID "APP000B"
 
@@ -177,4 +177,4 @@ static inline bool apple_gmux_detect(struct pnp_dev *pnp_dev, bool *indexed_ret)
 
 #endif /* !CONFIG_APPLE_GMUX */
 
-#endif /* LINUX_APPLE_GMUX_H */
+#endif /* freax_APPLE_GMUX_H */

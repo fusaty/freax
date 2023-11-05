@@ -1,3 +1,3 @@
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
-#include "../../../include/linux/uio.h"
+#include "../../../include/freax/uio.h"

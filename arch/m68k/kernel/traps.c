@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/traps.c
+ *  freax/arch/m68k/kernel/traps.c
  *
  *  Copyright (C) 1993, 1994 by Hamish Macdonald
  *
@@ -18,23 +18,23 @@
  * Sets up all exception vectors
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/user.h>
-#include <linux/string.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/kallsyms.h>
-#include <linux/extable.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/signal.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/user.h>
+#include <freax/string.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/ptrace.h>
+#include <freax/kallsyms.h>
+#include <freax/extable.h>
 
 #include <asm/setup.h>
 #include <asm/fpu.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>
 #include <asm/processor.h>

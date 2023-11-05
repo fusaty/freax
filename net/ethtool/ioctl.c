@@ -7,30 +7,30 @@
  * the information ethtool needs.
  */
 
-#include <linux/compat.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/sfp.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched/signal.h>
-#include <linux/net.h>
-#include <linux/pm_runtime.h>
+#include <freax/compat.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/phy.h>
+#include <freax/bitops.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
+#include <freax/sfp.h>
+#include <freax/slab.h>
+#include <freax/rtnetlink.h>
+#include <freax/sched/signal.h>
+#include <freax/net.h>
+#include <freax/pm_runtime.h>
 #include <net/devlink.h>
 #include <net/ipv6.h>
 #include <net/xdp_sock_drv.h>
 #include <net/flow_offload.h>
-#include <linux/ethtool_netlink.h>
+#include <freax/ethtool_netlink.h>
 #include <generated/utsrelease.h>
 #include "common.h"
 

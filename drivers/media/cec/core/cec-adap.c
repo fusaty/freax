@@ -5,16 +5,16 @@
  * Copyright 2016 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/kmod.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_device.h>

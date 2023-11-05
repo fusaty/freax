@@ -8,16 +8,16 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/memblock.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/memblock.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/compat.h>
+#include <freax/sched/signal.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include <uapi/asm/fs3270.h>
 #include <asm/ccwdev.h>

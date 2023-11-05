@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIME64_H
-#define _LINUX_TIME64_H
+#ifndef _freax_TIME64_H
+#define _freax_TIME64_H
 
-#include <linux/math64.h>
+#include <freax/math64.h>
 #include <vdso/time64.h>
 
 typedef __s64 time64_t;
 typedef __u64 timeu64_t;
 
-#include <uapi/linux/time.h>
+#include <uapi/freax/time.h>
 
 struct timespec64 {
 	time64_t	tv_sec;			/* seconds */
@@ -168,4 +168,4 @@ static __always_inline void timespec64_add_ns(struct timespec64 *a, u64 ns)
 extern struct timespec64 timespec64_add_safe(const struct timespec64 lhs,
 					 const struct timespec64 rhs);
 
-#endif /* _LINUX_TIME64_H */
+#endif /* _freax_TIME64_H */

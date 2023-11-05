@@ -8,8 +8,8 @@
  * basic modesetting functions
  */
 
-#include <linux/kernel.h>
-#include <linux/via-core.h>
+#include <freax/kernel.h>
+#include <freax/via-core.h>
 #include "via_modesetting.h"
 #include "share.h"
 #include "debug.h"

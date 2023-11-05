@@ -7,18 +7,18 @@
  */
 
 /*
- * IBM PC110 touchpad driver for Linux
+ * IBM PC110 touchpad driver for freax
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/input.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

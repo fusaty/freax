@@ -6,11 +6,11 @@
  *
  */
 
-#include <linux/vmalloc.h>
-#include <linux/mm_types.h>
-#include <linux/err.h>
-#include <linux/pgtable.h>
-#include <linux/bitfield.h>
+#include <freax/vmalloc.h>
+#include <freax/mm_types.h>
+#include <freax/err.h>
+#include <freax/pgtable.h>
+#include <freax/bitfield.h>
 #include <asm/fault.h>
 #include <asm/gmap.h>
 #include "kvm-s390.h"

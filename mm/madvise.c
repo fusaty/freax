@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/madvise.c
+ *	freax/mm/madvise.c
  *
  * Copyright (C) 1999  Linus Torvalds
  * Copyright (C) 2002  Christoph Hellwig
  */
 
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/mempolicy.h>
-#include <linux/page-isolation.h>
-#include <linux/page_idle.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/hugetlb.h>
-#include <linux/falloc.h>
-#include <linux/fadvise.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/string.h>
-#include <linux/uio.h>
-#include <linux/ksm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
-#include <linux/mmu_notifier.h>
+#include <freax/mman.h>
+#include <freax/pagemap.h>
+#include <freax/syscalls.h>
+#include <freax/mempolicy.h>
+#include <freax/page-isolation.h>
+#include <freax/page_idle.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/hugetlb.h>
+#include <freax/falloc.h>
+#include <freax/fadvise.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/mm_inline.h>
+#include <freax/string.h>
+#include <freax/uio.h>
+#include <freax/ksm.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
+#include <freax/pagewalk.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/shmem_fs.h>
+#include <freax/mmu_notifier.h>
 
 #include <asm/tlb.h>
 

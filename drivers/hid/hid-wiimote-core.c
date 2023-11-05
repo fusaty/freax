@@ -7,13 +7,13 @@
 /*
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
 #include "hid-ids.h"
 #include "hid-wiimote.h"
 

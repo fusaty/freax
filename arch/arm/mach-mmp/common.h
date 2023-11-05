@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/reboot.h>
+#include <freax/reboot.h>
 
 extern void mmp_timer_init(int irq, unsigned long rate);
 

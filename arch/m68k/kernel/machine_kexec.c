@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of freax booting another kernel
  */
-#include <linux/compiler.h>
-#include <linux/kexec.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
+#include <freax/compiler.h>
+#include <freax/kexec.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
 
 #include <asm/cacheflush.h>
 #include <asm/page.h>

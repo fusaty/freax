@@ -11,8 +11,8 @@
  *	Copyright (C) 2001 Daniel Barlow
  * Some of this code is borrowed from orinoco_pci.c
  *  Copyright (C) 2001 Jean Tourrilhes
- * Some of this code is "inspired" by linux-wlan-ng-0.1.10, but nothing
- * has been copied from it. linux-wlan-ng-0.1.10 is originally :
+ * Some of this code is "inspired" by freax-wlan-ng-0.1.10, but nothing
+ * has been copied from it. freax-wlan-ng-0.1.10 is originally :
  *	Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  *
  * The contents of this file are subject to the Mozilla Public License
@@ -40,11 +40,11 @@
 #define DRIVER_NAME "orinoco_nortel"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
 #include <pcmcia/cisreg.h>
 
 #include "orinoco.h"

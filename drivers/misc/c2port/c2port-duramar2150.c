@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Silicon Labs C2 port Linux support for Eurotech Duramar 2150
+ *  Silicon Labs C2 port freax support for Eurotech Duramar 2150
  *
- *  Copyright (c) 2008 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2008 Rodolfo Giometti <giometti@freax.it>
  *  Copyright (c) 2008 Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/c2port.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/c2port.h>
 
 #define DATA_PORT	0x325
 #define DIR_PORT	0x326
@@ -151,6 +151,6 @@ static void __exit duramar2150_c2port_exit(void)
 module_init(duramar2150_c2port_init);
 module_exit(duramar2150_c2port_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("Silicon Labs C2 port Linux support for Duramar 2150");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@freax.it>");
+MODULE_DESCRIPTION("Silicon Labs C2 port freax support for Duramar 2150");
 MODULE_LICENSE("GPL");

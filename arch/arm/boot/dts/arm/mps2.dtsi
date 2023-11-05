@@ -226,7 +226,7 @@
 				offset = <0x0>;
 				mask = <0x01>;
 				label = "userled:0";
-				linux,default-trigger = "heartbeat";
+				freax,default-trigger = "heartbeat";
 				default-state = "on";
 			};
 
@@ -236,7 +236,7 @@
 				offset = <0x0>;
 				mask = <0x02>;
 				label = "userled:1";
-				linux,default-trigger = "usr";
+				freax,default-trigger = "usr";
 				default-state = "off";
 			};
 		};

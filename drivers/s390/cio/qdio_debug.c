@@ -2,13 +2,13 @@
 /*
  *  Copyright IBM Corp. 2008, 2009
  *
- *  Author: Jan Glauber (jang@linux.vnet.ibm.com)
+ *  Author: Jan Glauber (jang@freax.vnet.ibm.com)
  */
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/slab.h>
 #include <asm/debug.h>
 #include "qdio_debug.h"
 #include "qdio.h"

@@ -16,15 +16,15 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

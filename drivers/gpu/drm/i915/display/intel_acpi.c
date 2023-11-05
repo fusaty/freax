@@ -5,8 +5,8 @@
  * _DSM related code stolen from nouveau_acpi.c.
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
 #include <acpi/video.h>
 
 #include "i915_drv.h"

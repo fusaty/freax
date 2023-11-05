@@ -11,22 +11,22 @@
 #define DRVNAME		PMUNAME "_pmu"
 #define pr_fmt(fmt)	DRVNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/acpi.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/bug.h>
+#include <freax/cpumask.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 #include <asm/arm_dsu_pmu.h>
 #include <asm/local64.h>

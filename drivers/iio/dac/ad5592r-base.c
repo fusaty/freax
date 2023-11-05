@@ -6,15 +6,15 @@
  * Author: Paul Cercueil <paul.cercueil@analog.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/property.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/property.h>
 
 #include <dt-bindings/iio/adi,ad5592r.h>
 

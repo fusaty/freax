@@ -10,26 +10,26 @@
 #undef	VERBOSE_DEBUG
 #undef	PACKET_TRACE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/prefetch.h>
+#include <freax/clk.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_data/atmel.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/atmel-matrix.h>
 
 #include "at91_udc.h"
 
@@ -49,7 +49,7 @@
  * The VBUS sensing helps during enumeration, and allows both USB clocks
  * (and the transceiver) to stay gated off until they're necessary, saving
  * power.  During USB suspend, the 48 MHz clock is gated off in hardware;
- * it may also be gated off by software during some Linux sleep states.
+ * it may also be gated off by software during some freax sleep states.
  */
 
 #define	DRIVER_VERSION	"3 May 2006"
@@ -95,7 +95,7 @@ static const struct {
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 
 static const char debug_filename[] = "driver/udc";
 

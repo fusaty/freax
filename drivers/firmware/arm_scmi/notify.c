@@ -10,7 +10,7 @@
  * SCMI Protocol specification allows the platform to signal events to
  * interested agents via notification messages: this is an implementation
  * of the dispatch and delivery of such notifications to the interested users
- * inside the Linux kernel.
+ * inside the freax kernel.
  *
  * An SCMI Notification core instance is initialized for each active platform
  * instance identified by the means of the usual &struct scmi_handle.
@@ -73,23 +73,23 @@
 #define dev_fmt(fmt) "SCMI Notifications - " fmt
 #define pr_fmt(fmt) "SCMI Notifications - " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hashtable.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/kfifo.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/refcount.h>
-#include <linux/scmi_protocol.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/bitfield.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/hashtable.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/kfifo.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/refcount.h>
+#include <freax/scmi_protocol.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include "common.h"
 #include "notify.h"

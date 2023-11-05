@@ -10,11 +10,11 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/platform_data/x86/apple.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/platform_data/x86/apple.h>
 
 #include "internal.h"
 
@@ -29,9 +29,9 @@ struct acpi_osi_entry {
 
 static struct acpi_osi_config {
 	u8		default_disabling;
-	unsigned int	linux_enable:1;
-	unsigned int	linux_dmi:1;
-	unsigned int	linux_cmdline:1;
+	unsigned int	freax_enable:1;
+	unsigned int	freax_dmi:1;
+	unsigned int	freax_cmdline:1;
 	unsigned int	darwin_enable:1;
 	unsigned int	darwin_dmi:1;
 	unsigned int	darwin_cmdline:1;
@@ -48,12 +48,12 @@ osi_setup_entries[OSI_STRING_ENTRIES_MAX] __initdata = {
 
 static u32 acpi_osi_handler(acpi_string interface, u32 supported)
 {
-	if (!strcmp("Linux", interface)) {
+	if (!strcmp("freax", interface)) {
 		pr_notice_once(FW_BUG
-			"BIOS _OSI(Linux) query %s%s\n",
-			osi_config.linux_enable ? "honored" : "ignored",
-			osi_config.linux_cmdline ? " via cmdline" :
-			osi_config.linux_dmi ? " via DMI" : "");
+			"BIOS _OSI(freax) query %s%s\n",
+			osi_config.freax_enable ? "honored" : "ignored",
+			osi_config.freax_cmdline ? " via cmdline" :
+			osi_config.freax_dmi ? " via DMI" : "");
 	}
 	if (!strcmp("Darwin", interface)) {
 		pr_notice_once(
@@ -137,49 +137,49 @@ static void __init acpi_osi_setup_darwin(bool enable)
 }
 
 /*
- * The story of _OSI(Linux)
+ * The story of _OSI(freax)
  *
- * From pre-history through Linux-2.6.22, Linux responded TRUE upon a BIOS
- * OSI(Linux) query.
+ * From pre-history through freax-2.6.22, freax responded TRUE upon a BIOS
+ * OSI(freax) query.
  *
  * Unfortunately, reference BIOS writers got wind of this and put
- * OSI(Linux) in their example code, quickly exposing this string as
+ * OSI(freax) in their example code, quickly exposing this string as
  * ill-conceived and opening the door to an un-bounded number of BIOS
  * incompatibilities.
  *
- * For example, OSI(Linux) was used on resume to re-POST a video card on
- * one system, because Linux at that time could not do a speedy restore in
+ * For example, OSI(freax) was used on resume to re-POST a video card on
+ * one system, because freax at that time could not do a speedy restore in
  * its native driver. But then upon gaining quick native restore
- * capability, Linux has no way to tell the BIOS to skip the time-consuming
- * POST -- putting Linux at a permanent performance disadvantage. On
- * another system, the BIOS writer used OSI(Linux) to infer native OS
- * support for IPMI!  On other systems, OSI(Linux) simply got in the way of
- * Linux claiming to be compatible with other operating systems, exposing
+ * capability, freax has no way to tell the BIOS to skip the time-consuming
+ * POST -- putting freax at a permanent performance disadvantage. On
+ * another system, the BIOS writer used OSI(freax) to infer native OS
+ * support for IPMI!  On other systems, OSI(freax) simply got in the way of
+ * freax claiming to be compatible with other operating systems, exposing
  * BIOS issues such as skipped device initialization.
  *
- * So "Linux" turned out to be a really poor chose of OSI string, and from
- * Linux-2.6.23 onward we respond FALSE.
+ * So "freax" turned out to be a really poor chose of OSI string, and from
+ * freax-2.6.23 onward we respond FALSE.
  *
- * BIOS writers should NOT query _OSI(Linux) on future systems. Linux will
- * complain on the console when it sees it, and return FALSE. To get Linux
+ * BIOS writers should NOT query _OSI(freax) on future systems. freax will
+ * complain on the console when it sees it, and return FALSE. To get freax
  * to return TRUE for your system  will require a kernel source update to
- * add a DMI entry, or boot with "acpi_osi=Linux"
+ * add a DMI entry, or boot with "acpi_osi=freax"
  */
-static void __init __acpi_osi_setup_linux(bool enable)
+static void __init __acpi_osi_setup_freax(bool enable)
 {
-	osi_config.linux_enable = !!enable;
+	osi_config.freax_enable = !!enable;
 	if (enable)
-		acpi_osi_setup("Linux");
+		acpi_osi_setup("freax");
 	else
-		acpi_osi_setup("!Linux");
+		acpi_osi_setup("!freax");
 }
 
-static void __init acpi_osi_setup_linux(bool enable)
+static void __init acpi_osi_setup_freax(bool enable)
 {
 	/* Override acpi_osi_dmi_blacklisted() */
-	osi_config.linux_dmi = 0;
-	osi_config.linux_cmdline = 1;
-	__acpi_osi_setup_linux(enable);
+	osi_config.freax_dmi = 0;
+	osi_config.freax_cmdline = 1;
+	__acpi_osi_setup_freax(enable);
 }
 
 /*
@@ -224,10 +224,10 @@ static void __init acpi_osi_setup_late(void)
 
 static int __init osi_setup(char *str)
 {
-	if (str && !strcmp("Linux", str))
-		acpi_osi_setup_linux(true);
-	else if (str && !strcmp("!Linux", str))
-		acpi_osi_setup_linux(false);
+	if (str && !strcmp("freax", str))
+		acpi_osi_setup_freax(true);
+	else if (str && !strcmp("!freax", str))
+		acpi_osi_setup_freax(false);
 	else if (str && !strcmp("Darwin", str))
 		acpi_osi_setup_darwin(true);
 	else if (str && !strcmp("!Darwin", str))
@@ -252,17 +252,17 @@ static void __init acpi_osi_dmi_darwin(void)
 	__acpi_osi_setup_darwin(true);
 }
 
-static void __init acpi_osi_dmi_linux(bool enable,
+static void __init acpi_osi_dmi_freax(bool enable,
 				      const struct dmi_system_id *d)
 {
-	pr_notice("DMI detected to setup _OSI(\"Linux\"): %s\n", d->ident);
-	osi_config.linux_dmi = 1;
-	__acpi_osi_setup_linux(enable);
+	pr_notice("DMI detected to setup _OSI(\"freax\"): %s\n", d->ident);
+	osi_config.freax_dmi = 1;
+	__acpi_osi_setup_freax(enable);
 }
 
-static int __init dmi_enable_osi_linux(const struct dmi_system_id *d)
+static int __init dmi_enable_osi_freax(const struct dmi_system_id *d)
 {
-	acpi_osi_dmi_linux(true, d);
+	acpi_osi_dmi_freax(true, d);
 
 	return 0;
 }
@@ -294,10 +294,10 @@ static int __init dmi_disable_osi_win8(const struct dmi_system_id *d)
 }
 
 /*
- * Linux default _OSI response behavior is determined by this DMI table.
+ * freax default _OSI response behavior is determined by this DMI table.
  *
- * Note that _OSI("Linux")/_OSI("Darwin") determined here can be overridden
- * by acpi_osi=!Linux/acpi_osi=!Darwin command line options.
+ * Note that _OSI("freax")/_OSI("Darwin") determined here can be overridden
+ * by acpi_osi=!freax/acpi_osi=!Darwin command line options.
  */
 static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	{
@@ -444,8 +444,8 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	},
 
 	/*
-	 * BIOS invocation of _OSI(Linux) is almost always a BIOS bug.
-	 * Linux ignores it, except for the machines enumerated below.
+	 * BIOS invocation of _OSI(freax) is almost always a BIOS bug.
+	 * freax ignores it, except for the machines enumerated below.
 	 */
 
 	/*
@@ -454,7 +454,7 @@ static const struct dmi_system_id acpi_osi_dmi_table[] __initconst = {
 	 * fixing both brightness control, and rfkill not working.
 	 */
 	{
-	.callback = dmi_enable_osi_linux,
+	.callback = dmi_enable_osi_freax,
 	.ident = "Asus EEE PC 1015PX",
 	.matches = {
 		     DMI_MATCH(DMI_SYS_VENDOR, "ASUSTeK Computer INC."),

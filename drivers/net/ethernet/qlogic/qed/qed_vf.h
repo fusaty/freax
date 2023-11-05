@@ -75,11 +75,11 @@ struct channel_list_end_tlv {
 	u8 padding[4];
 };
 
-#define VFPF_ACQUIRE_OS_LINUX (0)
+#define VFPF_ACQUIRE_OS_freax (0)
 #define VFPF_ACQUIRE_OS_WINDOWS (1)
 #define VFPF_ACQUIRE_OS_ESX (2)
 #define VFPF_ACQUIRE_OS_SOLARIS (3)
-#define VFPF_ACQUIRE_OS_LINUX_USERSPACE (4)
+#define VFPF_ACQUIRE_OS_freax_USERSPACE (4)
 
 struct vfpf_acquire_tlv {
 	struct vfpf_first_tlv first_tlv;

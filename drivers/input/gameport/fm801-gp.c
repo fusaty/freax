@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  FM801 gameport driver for Linux
+ *  FM801 gameport driver for freax
  *
  *  Copyright (c) by Takashi Iwai <tiwai@suse.de>
  */
 
 #include <asm/io.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/gameport.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/gameport.h>
 
 #define PCI_VENDOR_ID_FORTEMEDIA	0x1319
 #define PCI_DEVICE_ID_FM801_GP	0x0802

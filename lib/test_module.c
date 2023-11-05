@@ -10,9 +10,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/printk.h>
 
 static int __init test_module_init(void)
 {

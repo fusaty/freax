@@ -5,17 +5,17 @@
  * Copyright (C) 2013-2015 Microchip Technology Germany II GmbH & Co. KG
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/kfifo.h>
-#include <linux/uaccess.h>
-#include <linux/idr.h>
-#include <linux/most.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/poll.h>
+#include <freax/kfifo.h>
+#include <freax/uaccess.h>
+#include <freax/idr.h>
+#include <freax/most.h>
 
 #define CHRDEV_REGION_SIZE 50
 

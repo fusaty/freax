@@ -17,7 +17,7 @@
 #include <test_util.h>
 #include <vgic.h>
 #include <perf/arm_pmuv3.h>
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 /* The max number of the PMU event counters (excluding the cycle counter) */
 #define ARMV8_PMU_MAX_GENERAL_COUNTERS	(ARMV8_PMU_MAX_COUNTERS - 1)

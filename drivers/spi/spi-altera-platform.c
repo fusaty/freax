@@ -10,14 +10,14 @@
  *	Ben Dooks <ben@simtec.co.uk>
  */
 
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/altera.h>
-#include <linux/spi/spi.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/spi/altera.h>
+#include <freax/spi/spi.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #define DRV_NAME "spi_altera"
 

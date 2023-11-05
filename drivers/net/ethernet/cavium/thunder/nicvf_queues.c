@@ -3,14 +3,14 @@
  * Copyright (C) 2015 Cavium, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
-#include <linux/etherdevice.h>
-#include <linux/iommu.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/ip.h>
+#include <freax/etherdevice.h>
+#include <freax/iommu.h>
 #include <net/ip.h>
 #include <net/tso.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/freax/bpf.h>
 
 #include "nic_reg.h"
 #include "nic.h"

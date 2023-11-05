@@ -109,7 +109,7 @@
 				<0 0 0 2 &pcie3x4_intc 1>,
 				<0 0 0 3 &pcie3x4_intc 2>,
 				<0 0 0 4 &pcie3x4_intc 3>;
-		linux,pci-domain = <0>;
+		freax,pci-domain = <0>;
 		max-link-speed = <3>;
 		msi-map = <0x0000 &its1 0x0000 0x1000>;
 		num-lanes = <4>;
@@ -160,7 +160,7 @@
 				<0 0 0 2 &pcie3x2_intc 1>,
 				<0 0 0 3 &pcie3x2_intc 2>,
 				<0 0 0 4 &pcie3x2_intc 3>;
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		max-link-speed = <3>;
 		msi-map = <0x1000 &its1 0x1000 0x1000>;
 		num-lanes = <2>;
@@ -209,7 +209,7 @@
 				<0 0 0 2 &pcie2x1l0_intc 1>,
 				<0 0 0 3 &pcie2x1l0_intc 2>,
 				<0 0 0 4 &pcie2x1l0_intc 3>;
-		linux,pci-domain = <2>;
+		freax,pci-domain = <2>;
 		max-link-speed = <2>;
 		msi-map = <0x2000 &its0 0x2000 0x1000>;
 		num-lanes = <1>;

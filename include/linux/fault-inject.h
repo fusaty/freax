@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FAULT_INJECT_H
-#define _LINUX_FAULT_INJECT_H
+#ifndef _freax_FAULT_INJECT_H
+#define _freax_FAULT_INJECT_H
 
 #ifdef CONFIG_FAULT_INJECTION
 
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/configfs.h>
-#include <linux/ratelimit.h>
-#include <linux/atomic.h>
+#include <freax/types.h>
+#include <freax/debugfs.h>
+#include <freax/configfs.h>
+#include <freax/ratelimit.h>
+#include <freax/atomic.h>
 
 /*
  * For explanation of the elements of this struct, see
@@ -112,4 +112,4 @@ static inline bool __should_failslab(struct kmem_cache *s, gfp_t gfpflags)
 }
 #endif /* CONFIG_FAILSLAB */
 
-#endif /* _LINUX_FAULT_INJECT_H */
+#endif /* _freax_FAULT_INJECT_H */

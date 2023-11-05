@@ -5,20 +5,20 @@
  * Author: Florian Westphal <fw@strlen.de>
  */
 
-#include <linux/bpf.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/slab.h>
+#include <freax/bpf.h>
+#include <freax/module.h>
+#include <freax/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/netlink.h>
+#include <freax/slab.h>
 
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_hook.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_hook.h>
 
 #include <net/netfilter/nf_tables.h>
 #include <net/sock.h>

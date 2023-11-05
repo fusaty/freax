@@ -20,8 +20,8 @@
 #include "main.h"
 #include "wa.h"
 
-#include <linux/bitrev.h>
-#include <linux/slab.h>
+#include <freax/bitrev.h>
+#include <freax/slab.h>
 
 
 static const s8 b43_tssi2dbm_g_table[] = {

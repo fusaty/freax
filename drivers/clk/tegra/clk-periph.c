@@ -3,11 +3,11 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/err.h>
 
 #include "clk.h"
 

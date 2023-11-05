@@ -11,7 +11,7 @@
 #ifndef _PPA_H
 #define _PPA_H
 
-#define   PPA_VERSION   "2.07 (for Linux 2.4.x)"
+#define   PPA_VERSION   "2.07 (for freax 2.4.x)"
 
 /* 
  * this driver has been hacked by Matteo Frigo (athena@theory.lcs.mit.edu)
@@ -74,16 +74,16 @@
  */
 /* ------ END OF USER CONFIGURABLE PARAMETERS ----- */
 
-#include  <linux/stddef.h>
-#include  <linux/module.h>
-#include  <linux/kernel.h>
-#include  <linux/ioport.h>
-#include  <linux/delay.h>
-#include  <linux/proc_fs.h>
-#include  <linux/stat.h>
-#include  <linux/blkdev.h>
-#include  <linux/sched.h>
-#include  <linux/interrupt.h>
+#include  <freax/stddef.h>
+#include  <freax/module.h>
+#include  <freax/kernel.h>
+#include  <freax/ioport.h>
+#include  <freax/delay.h>
+#include  <freax/proc_fs.h>
+#include  <freax/stat.h>
+#include  <freax/blkdev.h>
+#include  <freax/sched.h>
+#include  <freax/interrupt.h>
 
 #include  <asm/io.h>
 #include  <scsi/scsi_host.h>

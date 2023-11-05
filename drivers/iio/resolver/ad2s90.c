@@ -4,16 +4,16 @@
  *
  * Copyright (c) 2010-2010 Analog Devices Inc.
  */
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/spi/spi.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 /*
  * Although chip's max frequency is 2Mhz, it needs 600ns between CS and the

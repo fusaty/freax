@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/profile.c
+ *  freax/kernel/profile.c
  *  Simple profiling. Manages a direct-mapped profile hit count buffer,
  *  with configurable resolution, support for restricting the cpus on
  *  which profiling is done, and switching between cpu time and
@@ -15,18 +15,18 @@
  *	Oracle, 2004
  */
 
-#include <linux/export.h>
-#include <linux/profile.h>
-#include <linux/memblock.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/stat.h>
+#include <freax/export.h>
+#include <freax/profile.h>
+#include <freax/memblock.h>
+#include <freax/notifier.h>
+#include <freax/mm.h>
+#include <freax/cpumask.h>
+#include <freax/cpu.h>
+#include <freax/highmem.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/stat.h>
 
 #include <asm/sections.h>
 #include <asm/irq_regs.h>
@@ -340,9 +340,9 @@ void profile_tick(int type)
 }
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
 
 static int prof_cpu_mask_proc_show(struct seq_file *m, void *v)
 {

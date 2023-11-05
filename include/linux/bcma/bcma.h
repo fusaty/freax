@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_H_
-#define LINUX_BCMA_H_
+#ifndef freax_BCMA_H_
+#define freax_BCMA_H_
 
-#include <linux/pci.h>
-#include <linux/mod_devicetable.h>
+#include <freax/pci.h>
+#include <freax/mod_devicetable.h>
 
-#include <linux/bcma/bcma_driver_arm_c9.h>
-#include <linux/bcma/bcma_driver_chipcommon.h>
-#include <linux/bcma/bcma_driver_pci.h>
-#include <linux/bcma/bcma_driver_pcie2.h>
-#include <linux/bcma/bcma_driver_mips.h>
-#include <linux/bcma/bcma_driver_gmac_cmn.h>
-#include <linux/ssb/ssb.h> /* SPROM sharing */
+#include <freax/bcma/bcma_driver_arm_c9.h>
+#include <freax/bcma/bcma_driver_chipcommon.h>
+#include <freax/bcma/bcma_driver_pci.h>
+#include <freax/bcma/bcma_driver_pcie2.h>
+#include <freax/bcma/bcma_driver_mips.h>
+#include <freax/bcma/bcma_driver_gmac_cmn.h>
+#include <freax/ssb/ssb.h> /* SPROM sharing */
 
-#include <linux/bcma/bcma_regs.h>
+#include <freax/bcma/bcma_regs.h>
 
 struct bcma_device;
 struct bcma_bus;
@@ -486,4 +486,4 @@ extern u32 bcma_core_dma_translation(struct bcma_device *core);
 
 extern unsigned int bcma_core_irq(struct bcma_device *core, int num);
 
-#endif /* LINUX_BCMA_H_ */
+#endif /* freax_BCMA_H_ */

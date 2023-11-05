@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_FUNCTIONFS_H__
-#define _UAPI__LINUX_FUNCTIONFS_H__
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_FUNCTIONFS_H__
+#define _UAPI__freax_FUNCTIONFS_H__
 
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
-#include <linux/usb/ch9.h>
+#include <freax/usb/ch9.h>
 
 
 enum {
@@ -290,4 +290,4 @@ struct usb_functionfs_event {
 
 
 
-#endif /* _UAPI__LINUX_FUNCTIONFS_H__ */
+#endif /* _UAPI__freax_FUNCTIONFS_H__ */

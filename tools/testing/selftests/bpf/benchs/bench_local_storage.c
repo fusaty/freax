@@ -2,7 +2,7 @@
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
 
 #include <argp.h>
-#include <linux/btf.h>
+#include <freax/btf.h>
 
 #include "local_storage_bench.skel.h"
 #include "bench.h"

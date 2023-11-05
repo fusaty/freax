@@ -16,12 +16,12 @@
  * https://www.ti.com/lit/ds/symlink/dac121c081.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
 
 enum chip_id {
 	single_8bit, single_10bit, single_12bit,

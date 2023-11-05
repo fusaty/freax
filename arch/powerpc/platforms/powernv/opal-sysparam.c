@@ -5,12 +5,12 @@
  * Copyright (C) 2013 IBM
  */
 
-#include <linux/kobject.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gfp.h>
-#include <linux/stat.h>
+#include <freax/kobject.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/gfp.h>
+#include <freax/stat.h>
 #include <asm/opal.h>
 
 #define MAX_PARAM_DATA_LEN	64

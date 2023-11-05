@@ -9,23 +9,23 @@
  *     (c) Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/cpufreq.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
 
 #define S3C2410_WTCON		0x00
 #define S3C2410_WTDAT		0x04

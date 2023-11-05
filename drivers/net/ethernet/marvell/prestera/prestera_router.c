@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2019-2021 Marvell International Ltd. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/inetdevice.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/inetdevice.h>
 #include <net/inet_dscp.h>
 #include <net/switchdev.h>
-#include <linux/rhashtable.h>
+#include <freax/rhashtable.h>
 #include <net/nexthop.h>
 #include <net/arp.h>
-#include <linux/if_vlan.h>
-#include <linux/if_macvlan.h>
+#include <freax/if_vlan.h>
+#include <freax/if_macvlan.h>
 #include <net/netevent.h>
 
 #include "prestera.h"

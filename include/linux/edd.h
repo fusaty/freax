@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/edd.h
+ * freax/include/freax/edd.h
  *  Copyright (C) 2002, 2003, 2004 Dell Inc.
  *  by Matt Domsch <Matt_Domsch@dell.com>
  *
@@ -18,12 +18,12 @@
  * information is used to identify BIOS boot disk.  The code in setup.S
  * is very sensitive to the size of these structures.
  */
-#ifndef _LINUX_EDD_H
-#define _LINUX_EDD_H
+#ifndef _freax_EDD_H
+#define _freax_EDD_H
 
-#include <uapi/linux/edd.h>
+#include <uapi/freax/edd.h>
 
 #ifndef __ASSEMBLY__
 extern struct edd edd;
 #endif				/*!__ASSEMBLY__ */
-#endif				/* _LINUX_EDD_H */
+#endif				/* _freax_EDD_H */

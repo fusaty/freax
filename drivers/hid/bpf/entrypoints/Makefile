@@ -21,14 +21,14 @@ BPFOBJ := $(LIBBPF_OUTPUT)/libbpf.a
 INCLUDES := -I$(OUTPUT) -I$(LIBBPF_INCLUDE) -I$(TOOLS_PATH)/include/uapi
 CFLAGS := -g -Wall
 
-VMLINUX_BTF_PATHS ?= $(if $(O),$(O)/vmlinux)				\
-		     $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmlinux)	\
-		     ../../../../vmlinux				\
-		     /sys/kernel/btf/vmlinux				\
-		     /boot/vmlinux-$(shell uname -r)
-VMLINUX_BTF ?= $(abspath $(firstword $(wildcard $(VMLINUX_BTF_PATHS))))
-ifeq ($(VMLINUX_BTF),)
-$(error Cannot find a vmlinux for VMLINUX_BTF at any of "$(VMLINUX_BTF_PATHS)")
+VMfreax_BTF_PATHS ?= $(if $(O),$(O)/vmfreax)				\
+		     $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmfreax)	\
+		     ../../../../vmfreax				\
+		     /sys/kernel/btf/vmfreax				\
+		     /boot/vmfreax-$(shell uname -r)
+VMfreax_BTF ?= $(abspath $(firstword $(wildcard $(VMfreax_BTF_PATHS))))
+ifeq ($(VMfreax_BTF),)
+$(error Cannot find a vmfreax for VMfreax_BTF at any of "$(VMfreax_BTF_PATHS)")
 endif
 
 ifeq ($(V),1)
@@ -56,19 +56,19 @@ entrypoints.lskel.h: $(OUTPUT)/entrypoints.bpf.o | $(BPFTOOL)
 	$(Q)$(BPFTOOL) gen skeleton -L $< > $@
 
 
-$(OUTPUT)/entrypoints.bpf.o: entrypoints.bpf.c $(OUTPUT)/vmlinux.h $(BPFOBJ) | $(OUTPUT)
+$(OUTPUT)/entrypoints.bpf.o: entrypoints.bpf.c $(OUTPUT)/vmfreax.h $(BPFOBJ) | $(OUTPUT)
 	$(call msg,BPF,$@)
 	$(Q)$(CLANG) -g -O2 --target=bpf $(INCLUDES)			      \
 		 -c $(filter %.c,$^) -o $@ &&				      \
 	$(LLVM_STRIP) -g $@
 
-$(OUTPUT)/vmlinux.h: $(VMLINUX_BTF) $(BPFTOOL) | $(INCLUDE_DIR)
-ifeq ($(VMLINUX_H),)
+$(OUTPUT)/vmfreax.h: $(VMfreax_BTF) $(BPFTOOL) | $(INCLUDE_DIR)
+ifeq ($(VMfreax_H),)
 	$(call msg,GEN,,$@)
-	$(Q)$(BPFTOOL) btf dump file $(VMLINUX_BTF) format c > $@
+	$(Q)$(BPFTOOL) btf dump file $(VMfreax_BTF) format c > $@
 else
 	$(call msg,CP,,$@)
-	$(Q)cp "$(VMLINUX_H)" $@
+	$(Q)cp "$(VMfreax_H)" $@
 endif
 
 $(OUTPUT) $(LIBBPF_OUTPUT) $(BPFTOOL_OUTPUT):

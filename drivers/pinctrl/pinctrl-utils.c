@@ -6,13 +6,13 @@
  *
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
-#include <linux/array_size.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/array_size.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

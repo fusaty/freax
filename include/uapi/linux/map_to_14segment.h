@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright (C) 2021 Glider bv
  *
- * Based on include/uapi/linux/map_to_7segment.h:
+ * Based on include/uapi/freax/map_to_7segment.h:
 
  * Copyright (c) 2005 Henk Vergonet <Henk.Vergonet@gmail.com>
  */
@@ -56,8 +56,8 @@
  * }
  * static DEVICE_ATTR_RW(map_seg14);
  */
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 #include <asm/byteorder.h>
 

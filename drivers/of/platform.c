@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt)	"OF: " fmt
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/amba/bus.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/amba/bus.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include "of_private.h"
 
@@ -192,7 +192,7 @@ EXPORT_SYMBOL(of_device_alloc);
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
  * @platform_data: pointer to populate platform_data pointer with
- * @parent: Linux device model parent device.
+ * @parent: freax device model parent device.
  *
  * Return: Pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -236,7 +236,7 @@ err_clear_flag:
  * of_platform_device_create - Alloc, initialize and register an of_device
  * @np: pointer to node to create device for
  * @bus_id: name to assign device
- * @parent: Linux device model parent device.
+ * @parent: freax device model parent device.
  *
  * Return: Pointer to created platform device, or NULL if a device was not
  * registered.  Unavailable devices will not get registered.
@@ -317,7 +317,7 @@ static struct amba_device *of_amba_device_create(struct device_node *node,
 #endif /* CONFIG_ARM_AMBA */
 
 /*
- * of_dev_lookup() - Given a device node, lookup the preferred Linux name
+ * of_dev_lookup() - Given a device node, lookup the preferred freax name
  */
 static const struct of_dev_auxdata *of_dev_lookup(const struct of_dev_auxdata *lookup,
 				 struct device_node *np)
@@ -559,7 +559,7 @@ static int __init of_platform_default_populate_init(void)
 		int ret;
 
 		/* Check if we have a MacOS display without a node spec */
-		if (of_property_present(of_chosen, "linux,bootx-noscreen")) {
+		if (of_property_present(of_chosen, "freax,bootx-noscreen")) {
 			/*
 			 * The old code tried to work out which node was the MacOS
 			 * display based on the address. I'm dropping that since the
@@ -583,8 +583,8 @@ static int __init of_platform_default_populate_init(void)
 		 * ignore errors for the rest.
 		 */
 		for_each_node_by_type(node, "display") {
-			if (!of_get_property(node, "linux,opened", NULL) ||
-			    !of_get_property(node, "linux,boot-display", NULL))
+			if (!of_get_property(node, "freax,opened", NULL) ||
+			    !of_get_property(node, "freax,boot-display", NULL))
 				continue;
 			dev = of_platform_device_create(node, "of-display", NULL);
 			of_node_put(node);
@@ -598,7 +598,7 @@ static int __init of_platform_default_populate_init(void)
 			char buf[14];
 			const char *of_display_format = "of-display.%d";
 
-			if (!of_get_property(node, "linux,opened", NULL) || node == boot_display)
+			if (!of_get_property(node, "freax,opened", NULL) || node == boot_display)
 				continue;
 			ret = snprintf(buf, sizeof(buf), of_display_format, display_number++);
 			if (ret < sizeof(buf))

@@ -1,7 +1,7 @@
 What:		/sys/kernel/debug/cxl/memX/inject_poison
 Date:		April, 2023
 KernelVersion:	v6.4
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(WO) When a Device Physical Address (DPA) is written to this
 		attribute, the memdev driver sends an inject poison command to
@@ -22,7 +22,7 @@ Description:
 What:		/sys/kernel/debug/memX/clear_poison
 Date:		April, 2023
 KernelVersion:	v6.4
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(WO) When a Device Physical Address (DPA) is written to this
 		attribute, the memdev driver sends a clear poison command to

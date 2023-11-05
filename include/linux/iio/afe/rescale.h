@@ -6,8 +6,8 @@
 #ifndef __IIO_RESCALE_H__
 #define __IIO_RESCALE_H__
 
-#include <linux/types.h>
-#include <linux/iio/iio.h>
+#include <freax/types.h>
+#include <freax/iio/iio.h>
 
 struct device;
 struct rescale;

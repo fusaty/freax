@@ -6,10 +6,10 @@
  * Copyright (C) 2012  Phil Edworthy
  */
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
+#include <freax/bug.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
 #include <cpu/pfc.h>
 
 static struct resource sh7269_pfc_resources[] = {

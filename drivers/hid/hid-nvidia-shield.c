@@ -5,17 +5,17 @@
  *  HID driver for NVIDIA SHIELD peripherals.
  */
 
-#include <linux/hid.h>
-#include <linux/idr.h>
-#include <linux/input-event-codes.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/hid.h>
+#include <freax/idr.h>
+#include <freax/input-event-codes.h>
+#include <freax/input.h>
+#include <freax/jiffies.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/power_supply.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 
 #include "hid-ids.h"
 

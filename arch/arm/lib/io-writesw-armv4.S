@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/io-writesw-armv4.S
+ *  freax/arch/arm/lib/io-writesw-armv4.S
  *
  *  Copyright (C) 1995-2000 Russell King
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 		.macro	outword, rd

@@ -4,15 +4,15 @@
  *
  * Copyright (c) 2021 Tomasz Duszynski <tomasz.duszynski@octakon.com>
  */
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/iio/iio.h>
-#include <linux/minmax.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/serdev.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/iio/iio.h>
+#include <freax/minmax.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/serdev.h>
+#include <freax/types.h>
 
 #include "sps30.h"
 

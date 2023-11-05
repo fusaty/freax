@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2017 Arm Ltd.
-#ifndef __LINUX_ARM_SDEI_H
-#define __LINUX_ARM_SDEI_H
+#ifndef __freax_ARM_SDEI_H
+#define __freax_ARM_SDEI_H
 
-#include <uapi/linux/arm_sdei.h>
+#include <uapi/freax/arm_sdei.h>
 
 #include <acpi/ghes.h>
 
@@ -83,4 +83,4 @@ int notrace sdei_event_handler(struct pt_regs *regs,
 /* arch code may use this to retrieve the extra registers. */
 int sdei_api_event_context(u32 query, u64 *result);
 
-#endif /* __LINUX_ARM_SDEI_H */
+#endif /* __freax_ARM_SDEI_H */

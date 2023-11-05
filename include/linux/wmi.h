@@ -5,13 +5,13 @@
  * Copyright (c) 2015 Andrew Lutomirski
  */
 
-#ifndef _LINUX_WMI_H
-#define _LINUX_WMI_H
+#ifndef _freax_WMI_H
+#define _freax_WMI_H
 
-#include <linux/device.h>
-#include <linux/acpi.h>
-#include <linux/mod_devicetable.h>
-#include <uapi/linux/wmi.h>
+#include <freax/device.h>
+#include <freax/acpi.h>
+#include <freax/mod_devicetable.h>
+#include <uapi/freax/wmi.h>
 
 /**
  * struct wmi_device - WMI device structure

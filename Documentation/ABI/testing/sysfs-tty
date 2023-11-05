@@ -31,7 +31,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/type
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Shows the current tty type for this port.
 
@@ -40,7 +40,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/line
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Shows the current tty line number for this port.
 
@@ -49,7 +49,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/port
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Shows the current tty port I/O address for this port.
 
@@ -58,7 +58,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/irq
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Shows the current primary interrupt for this port.
 
@@ -67,7 +67,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/flags
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Show the tty port status flags for this port.
 
@@ -76,7 +76,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/xmit_fifo_size
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Show the transmit FIFO size for this port.
 
@@ -85,7 +85,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/close_delay
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		Show the closing delay time for this port in centiseconds.
 
@@ -94,7 +94,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/closing_wait
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		Show the close wait time for this port in centiseconds.
 
@@ -106,7 +106,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/custom_divisor
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Show the custom divisor if any that is set on this port.
 
@@ -115,7 +115,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/io_type
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Show the I/O type that is to be used with the iomem base
 		 address.
@@ -125,7 +125,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/iomem_base
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 The I/O memory base for this port.
 
@@ -134,7 +134,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/iomem_reg_shift
 Date:		October 2012
-Contact:	Alan Cox <alan@linux.intel.com>
+Contact:	Alan Cox <alan@freax.intel.com>
 Description:
 		 Show the register shift indicating the spacing to be used
 		 for accesses on this iomem address.
@@ -160,7 +160,7 @@ Description:
 
 What:		/sys/class/tty/ttyS<x>/console
 Date:		February 2020
-Contact:	Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+Contact:	Andy Shevchenko <andriy.shevchenko@freax.intel.com>
 Description:
 		 Allows user to detach or attach back the given device as
 		 kernel console. It shows and accepts a boolean variable.

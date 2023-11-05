@@ -4,12 +4,12 @@
  * handling code or timekeeping internal code!
  */
 
-#ifndef _LINUX_TIMEKEEPER_INTERNAL_H
-#define _LINUX_TIMEKEEPER_INTERNAL_H
+#ifndef _freax_TIMEKEEPER_INTERNAL_H
+#define _freax_TIMEKEEPER_INTERNAL_H
 
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/time.h>
+#include <freax/clocksource.h>
+#include <freax/jiffies.h>
+#include <freax/time.h>
 
 /**
  * struct tk_read_base - base structure for timekeeping readout
@@ -153,4 +153,4 @@ static inline void update_vsyscall_tz(void)
 }
 #endif
 
-#endif /* _LINUX_TIMEKEEPER_INTERNAL_H */
+#endif /* _freax_TIMEKEEPER_INTERNAL_H */

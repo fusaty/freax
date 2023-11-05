@@ -9,26 +9,26 @@
 
 #define DSS_SUBSYS_NAME "DISPC"
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/hardirq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <freax/kernel.h>
+#include <freax/dma-mapping.h>
+#include <freax/vmalloc.h>
+#include <freax/export.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/seq_file.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/hardirq.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/sizes.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/component.h>
+#include <freax/sys_soc.h>
 #include <drm/drm_fourcc.h>
 #include <drm/drm_blend.h>
 

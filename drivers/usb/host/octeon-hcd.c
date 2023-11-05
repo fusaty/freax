@@ -45,15 +45,15 @@
  * PERFORMANCE OF THE SOFTWARE LIES WITH YOU.
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/hcd.h>
-#include <linux/prefetch.h>
-#include <linux/irqdomain.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb/hcd.h>
+#include <freax/prefetch.h>
+#include <freax/irqdomain.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 
 #include <asm/octeon/octeon.h>
 

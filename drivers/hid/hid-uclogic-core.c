@@ -13,10 +13,10 @@
  * any later version.
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/timer.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/timer.h>
 #include "usbhid/usbhid.h"
 #include "hid-uclogic-params.h"
 

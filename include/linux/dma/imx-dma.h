@@ -3,12 +3,12 @@
  * Copyright 2004-2009 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#ifndef __LINUX_DMA_IMX_H
-#define __LINUX_DMA_IMX_H
+#ifndef __freax_DMA_IMX_H
+#define __freax_DMA_IMX_H
 
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
+#include <freax/scatterlist.h>
+#include <freax/device.h>
+#include <freax/dmaengine.h>
 
 /*
  * This enumerates peripheral types. Used for SDMA.
@@ -99,4 +99,4 @@ struct sdma_peripheral_config {
 	bool sw_done;
 };
 
-#endif /* __LINUX_DMA_IMX_H */
+#endif /* __freax_DMA_IMX_H */

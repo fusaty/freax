@@ -26,29 +26,29 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <freax/signal.h>
+#include <freax/string.h>
+#include <freax/device.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <freax/ip.h>
+#include <freax/if_arp.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
+#include <freax/ctype.h>
 #include <net/dst.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 #include <asm/ebcdic.h>
 
 #include <net/iucv/iucv.h>
@@ -56,7 +56,7 @@
 
 MODULE_AUTHOR
     ("(C) 2001 IBM Corporation by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION ("Linux for S/390 IUCV network driver");
+MODULE_DESCRIPTION ("freax for S/390 IUCV network driver");
 
 /*
  * Debug Facility stuff

@@ -3,7 +3,7 @@
 #ifndef ADF_4XXX_HW_DATA_H_
 #define ADF_4XXX_HW_DATA_H_
 
-#include <linux/units.h>
+#include <freax/units.h>
 #include <adf_accel_devices.h>
 
 /* PCIe configuration space */

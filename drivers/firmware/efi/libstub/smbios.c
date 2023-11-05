@@ -2,7 +2,7 @@
 // Copyright 2022 Google LLC
 // Author: Ard Biesheuvel <ardb@google.com>
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 
 #include "efistub.h"
 

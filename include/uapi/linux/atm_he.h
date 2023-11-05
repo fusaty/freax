@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atm_he.h */
 
-#ifndef LINUX_ATM_HE_H
-#define LINUX_ATM_HE_H
+#ifndef freax_ATM_HE_H
+#define freax_ATM_HE_H
 
-#include <linux/atmioc.h>
+#include <freax/atmioc.h>
 
 #define HE_GET_REG	_IOW('a', ATMIOC_SARPRV, struct atmif_sioc)
 
@@ -18,4 +18,4 @@ struct he_ioctl_reg {
 	char type;
 };
 
-#endif /* LINUX_ATM_HE_H */
+#endif /* freax_ATM_HE_H */

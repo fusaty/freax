@@ -116,8 +116,8 @@ void test_skeleton(void)
 
 	CHECK(bss->bpf_syscall != kcfg->CONFIG_BPF_SYSCALL, "ext1",
 	      "got %d != exp %d\n", bss->bpf_syscall, kcfg->CONFIG_BPF_SYSCALL);
-	CHECK(bss->kern_ver != kcfg->LINUX_KERNEL_VERSION, "ext2",
-	      "got %d != exp %d\n", bss->kern_ver, kcfg->LINUX_KERNEL_VERSION);
+	CHECK(bss->kern_ver != kcfg->freax_KERNEL_VERSION, "ext2",
+	      "got %d != exp %d\n", bss->kern_ver, kcfg->freax_KERNEL_VERSION);
 
 	for (i = 0; i < 4; i++)
 		ASSERT_EQ(data_dyn->out_dynarr[i], i + 10, "out_dynarr");

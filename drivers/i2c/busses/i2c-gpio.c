@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2007 Atmel Corporation
  */
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/platform_data/i2c-gpio.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 struct i2c_gpio_private_data {
 	struct gpio_desc *sda;

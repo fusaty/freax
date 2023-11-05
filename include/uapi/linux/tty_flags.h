@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_TTY_FLAGS_H
-#define _LINUX_TTY_FLAGS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_TTY_FLAGS_H
+#define _freax_TTY_FLAGS_H
 
 /*
  * Definitions for async_struct (and serial_struct) flags field also

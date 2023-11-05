@@ -20,34 +20,34 @@
  Qua Jun 27 15:02:26 BRT 2001
  * [27-JUN-2001] Arnaldo Carvalho de Melo <acme@conectiva.com.br> - cleanups
  *
- * Parts (C) 1999 David Airlie, airlied@linux.ie
+ * Parts (C) 1999 David Airlie, airlied@freax.ie
  * [07-SEP-99] Bugfixes
  *
- * [06-Jan-2002] Russell King <rmk@arm.linux.org.uk>
+ * [06-Jan-2002] Russell King <rmk@arm.freax.org.uk>
  * Converted to new serial core
  */
 
 #undef DEBUG_DZ
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/major.h>
+#include <freax/module.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
 
-#include <linux/atomic.h>
-#include <linux/io.h>
+#include <freax/atomic.h>
+#include <freax/io.h>
 #include <asm/bootinfo.h>
 
 #include <asm/dec/interrupts.h>

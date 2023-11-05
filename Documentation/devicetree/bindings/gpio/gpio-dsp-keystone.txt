@@ -33,7 +33,7 @@ Example:
 	};
 
 	dsp0: dsp0 {
-		compatible = "linux,rproc-user";
+		compatible = "freax,rproc-user";
 		...
 		kick-gpio = <&dspgpio0 27>;
 	};

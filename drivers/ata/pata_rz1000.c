@@ -2,23 +2,23 @@
 /*
  *  RZ1000/1001 driver based upon
  *
- *  linux/drivers/ide/pci/rz1000.c	Version 0.06	January 12, 2003
+ *  freax/drivers/ide/pci/rz1000.c	Version 0.06	January 12, 2003
  *  Copyright (C) 1995-1998  Linus Torvalds & author (see below)
  *  Principal Author:  mlord@pobox.com (Mark Lord)
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See freax/MAINTAINERS for address of current maintainer.
  *
  *  This file provides support for disabling the buggy read-ahead
  *  mode of the RZ1000 IDE chipset, commonly used on Intel motherboards.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #define DRV_NAME	"pata_rz1000"
 #define DRV_VERSION	"0.2.4"

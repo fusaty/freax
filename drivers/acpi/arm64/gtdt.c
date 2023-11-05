@@ -8,11 +8,11 @@
  *         Hanjun Guo <hanjun.guo@linaro.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
 
 #include <clocksource/arm_arch_timer.h>
 

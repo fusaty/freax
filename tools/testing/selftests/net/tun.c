@@ -8,10 +8,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/if.h>
-#include <linux/if_tun.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
+#include <freax/if.h>
+#include <freax/if_tun.h>
+#include <freax/netlink.h>
+#include <freax/rtnetlink.h>
 #include <sys/ioctl.h>
 #include <sys/socket.h>
 

@@ -36,7 +36,7 @@ Todolist:
 
 该API在以下内核代码中:
 
-include/linux/gpio/driver.h
+include/freax/gpio/driver.h
 
 drivers/gpio/gpiolib.c
 

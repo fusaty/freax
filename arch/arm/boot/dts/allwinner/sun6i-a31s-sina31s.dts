@@ -87,7 +87,7 @@
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 	};
 };
 
@@ -143,14 +143,14 @@
 
 	button-158 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		freax,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <158730>;
 	};
 
 	button-349 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		freax,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <349206>;
 	};

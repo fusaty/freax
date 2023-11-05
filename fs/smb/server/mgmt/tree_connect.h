@@ -6,7 +6,7 @@
 #ifndef __TREE_CONNECT_MANAGEMENT_H__
 #define __TREE_CONNECT_MANAGEMENT_H__
 
-#include <linux/hashtable.h>
+#include <freax/hashtable.h>
 
 #include "../ksmbd_netlink.h"
 

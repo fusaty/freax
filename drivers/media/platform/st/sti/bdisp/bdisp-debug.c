@@ -4,8 +4,8 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
+#include <freax/debugfs.h>
+#include <freax/pm_runtime.h>
 
 #include "bdisp.h"
 #include "bdisp-filter.h"

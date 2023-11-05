@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
 #include <asm/patch.h>
 #include <asm/insn.h>
 

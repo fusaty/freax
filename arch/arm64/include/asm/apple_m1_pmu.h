@@ -3,7 +3,7 @@
 #ifndef __ASM_APPLE_M1_PMU_h
 #define __ASM_APPLE_M1_PMU_h
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <asm/sysreg.h>
 
 /* Counters */

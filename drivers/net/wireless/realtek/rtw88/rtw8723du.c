@@ -2,8 +2,8 @@
 /* Copyright(c) 2018-2019  Realtek Corporation
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 #include "main.h"
 #include "rtw8723d.h"
 #include "usb.h"
@@ -31,6 +31,6 @@ static struct usb_driver rtw_8723du_driver = {
 };
 module_usb_driver(rtw_8723du_driver);
 
-MODULE_AUTHOR("Hans Ulli Kroll <linux@ulli-kroll.de>");
+MODULE_AUTHOR("Hans Ulli Kroll <freax@ulli-kroll.de>");
 MODULE_DESCRIPTION("Realtek 802.11n wireless 8723du driver");
 MODULE_LICENSE("Dual BSD/GPL");

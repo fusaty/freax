@@ -18,7 +18,7 @@ int bpf__gen_prologue(struct probe_trace_arg *args, int nargs,
 		      struct bpf_insn *new_prog, size_t *new_cnt,
 		      size_t cnt_space);
 #else
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <errno.h>
 
 static inline int

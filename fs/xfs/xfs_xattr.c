@@ -18,7 +18,7 @@
 #include "xfs_log.h"
 #include "xfs_xattr.h"
 
-#include <linux/posix_acl_xattr.h>
+#include <freax/posix_acl_xattr.h>
 
 /*
  * Get permission to use log-assisted atomic exchange of file extents.

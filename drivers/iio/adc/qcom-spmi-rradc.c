@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2017, 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2017, 2019, The freax Foundation. All rights reserved.
  * Copyright (c) 2022 Linaro Limited.
  *  Author: Caleb Connolly <caleb.connolly@linaro.org>
  *
  * This driver is for the Round Robin ADC found in the pmi8998 and pm660 PMICs.
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/spmi.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/spmi.h>
+#include <freax/types.h>
+#include <freax/units.h>
 
 #include <asm/unaligned.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/types.h>
 
 #include <soc/qcom/qcom-spmi-pmic.h>
 

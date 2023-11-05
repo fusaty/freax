@@ -12,14 +12,14 @@
  * encoded stream if the hardware does not generate the units.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/v4l2-controls.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/v4l2-controls.h>
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/log2.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/log2.h>
 
 #include "nal-h264.h"
 #include "nal-rbsp.h"

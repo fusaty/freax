@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/sched.h
+ * freax/include/freax/sunrpc/sched.h
  *
  * Scheduling primitives for kernel Sun RPC.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_SCHED_H_
-#define _LINUX_SUNRPC_SCHED_H_
+#ifndef _freax_SUNRPC_SCHED_H_
+#define _freax_SUNRPC_SCHED_H_
 
-#include <linux/timer.h>
-#include <linux/ktime.h>
-#include <linux/sunrpc/types.h>
-#include <linux/spinlock.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/xdr.h>
+#include <freax/timer.h>
+#include <freax/ktime.h>
+#include <freax/sunrpc/types.h>
+#include <freax/spinlock.h>
+#include <freax/wait_bit.h>
+#include <freax/workqueue.h>
+#include <freax/sunrpc/xdr.h>
 
 /*
  * This is the actual RPC procedure call info.
@@ -303,4 +303,4 @@ rpc_clnt_swap_deactivate(struct rpc_clnt *clnt)
 }
 #endif /* CONFIG_SUNRPC_SWAP */
 
-#endif /* _LINUX_SUNRPC_SCHED_H_ */
+#endif /* _freax_SUNRPC_SCHED_H_ */

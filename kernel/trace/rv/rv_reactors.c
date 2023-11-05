@@ -61,7 +61,7 @@
  *      printk
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "rv.h"
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  IPv6 IOAM Generic Netlink API
  *
@@ -6,8 +6,8 @@
  *  Justin Iurman <justin.iurman@uliege.be>
  */
 
-#ifndef _UAPI_LINUX_IOAM6_GENL_H
-#define _UAPI_LINUX_IOAM6_GENL_H
+#ifndef _UAPI_freax_IOAM6_GENL_H
+#define _UAPI_freax_IOAM6_GENL_H
 
 #define IOAM6_GENL_NAME "IOAM6"
 #define IOAM6_GENL_VERSION 0x1
@@ -49,4 +49,4 @@ enum {
 
 #define IOAM6_CMD_MAX (__IOAM6_CMD_MAX - 1)
 
-#endif /* _UAPI_LINUX_IOAM6_GENL_H */
+#endif /* _UAPI_freax_IOAM6_GENL_H */

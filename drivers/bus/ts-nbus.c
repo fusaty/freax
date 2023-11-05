@@ -2,23 +2,23 @@
 /*
  * NBUS driver for TS-4600 based boards
  *
- * Copyright (c) 2016 - Savoir-faire Linux
- * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinux.com>
+ * Copyright (c) 2016 - Savoir-faire freax
+ * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairefreax.com>
  *
  * This driver implements a GPIOs bit-banged bus, called the NBUS by Technologic
  * Systems. It is used to communicate with the peripherals in the FPGA on the
  * TS-4600 SoM.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/ts-nbus.h>
+#include <freax/bitops.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/ts-nbus.h>
 
 #define TS_NBUS_DIRECTION_IN  0
 #define TS_NBUS_DIRECTION_OUT 1
@@ -361,6 +361,6 @@ static struct platform_driver ts_nbus_driver = {
 module_platform_driver(ts_nbus_driver);
 
 MODULE_ALIAS("platform:ts_nbus");
-MODULE_AUTHOR("Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinux.com>");
+MODULE_AUTHOR("Sebastien Bourdelin <sebastien.bourdelin@savoirfairefreax.com>");
 MODULE_DESCRIPTION("Technologic Systems NBUS");
 MODULE_LICENSE("GPL v2");

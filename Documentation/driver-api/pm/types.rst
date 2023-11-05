@@ -4,4 +4,4 @@
 Device Power Management Data Types
 ==================================
 
-.. kernel-doc:: include/linux/pm.h
+.. kernel-doc:: include/freax/pm.h

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Ioctl handler
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/times.h>
+#include <freax/capability.h>
+#include <freax/compat.h>
+#include <freax/kernel.h>
+#include <freax/if_bridge.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/times.h>
 #include <net/net_namespace.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "br_private.h"
 
 static int get_bridge_ifindices(struct net *net, int *indices, int num)

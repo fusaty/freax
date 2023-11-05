@@ -76,9 +76,9 @@ class FlameGraphCLI:
     def get_libtype_from_dso(dso):
         """
         when kernel-debuginfo is installed,
-        dso points to /usr/lib/debug/lib/modules/*/vmlinux
+        dso points to /usr/lib/debug/lib/modules/*/vmfreax
         """
-        if dso and (dso == "[kernel.kallsyms]" or dso.endswith("/vmlinux")):
+        if dso and (dso == "[kernel.kallsyms]" or dso.endswith("/vmfreax")):
             return "kernel"
 
         return ""
@@ -95,7 +95,7 @@ class FlameGraphCLI:
 
     def process_event(self, event):
         pid = event.get("sample", {}).get("pid", 0)
-        # event["dso"] sometimes contains /usr/lib/debug/lib/modules/*/vmlinux
+        # event["dso"] sometimes contains /usr/lib/debug/lib/modules/*/vmfreax
         # for user-space processes; let's use pid for kernel or user-space distinction
         if pid == 0:
             comm = event["comm"]

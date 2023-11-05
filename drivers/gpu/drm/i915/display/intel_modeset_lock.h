@@ -6,7 +6,7 @@
 #ifndef __INTEL_MODESET_LOCK_H__
 #define __INTEL_MODESET_LOCK_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_modeset_acquire_ctx;
 struct intel_atomic_state;

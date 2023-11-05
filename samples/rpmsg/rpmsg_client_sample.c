@@ -9,9 +9,9 @@
  * Brian Swetland <swetland@google.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rpmsg.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/rpmsg.h>
 
 #define MSG		"hello world!"
 

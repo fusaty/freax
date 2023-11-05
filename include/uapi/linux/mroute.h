@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_MROUTE_H
-#define _UAPI__LINUX_MROUTE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_MROUTE_H
+#define _UAPI__freax_MROUTE_H
 
-#include <linux/sockios.h>
-#include <linux/types.h>
-#include <linux/in.h>		/* For struct in_addr. */
+#include <freax/sockios.h>
+#include <freax/types.h>
+#include <freax/in.h>		/* For struct in_addr. */
 
 /* Based on the MROUTING 3.5 defines primarily to keep
  * source compatibility with BSD.
@@ -184,4 +184,4 @@ enum {
 #define IGMPMSG_WHOLEPKT	3		/* For PIM Register processing */
 #define IGMPMSG_WRVIFWHOLE	4		/* For PIM Register and assert processing */
 
-#endif /* _UAPI__LINUX_MROUTE_H */
+#endif /* _UAPI__freax_MROUTE_H */

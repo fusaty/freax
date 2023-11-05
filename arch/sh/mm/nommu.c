@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2002 - 2009 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/mm.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*
  * Nothing too terribly exciting here ..

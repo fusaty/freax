@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MIN_HEAP_H
-#define _LINUX_MIN_HEAP_H
+#ifndef _freax_MIN_HEAP_H
+#define _freax_MIN_HEAP_H
 
-#include <linux/bug.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 /**
  * struct min_heap - Data structure to hold a min-heap.
@@ -131,4 +131,4 @@ void min_heap_push(struct min_heap *heap, const void *element,
 	}
 }
 
-#endif /* _LINUX_MIN_HEAP_H */
+#endif /* _freax_MIN_HEAP_H */

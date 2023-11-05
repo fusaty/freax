@@ -2,11 +2,11 @@
 #ifndef ARCH_S390_ENTRY_COMMON_H
 #define ARCH_S390_ENTRY_COMMON_H
 
-#include <linux/sched.h>
-#include <linux/audit.h>
-#include <linux/randomize_kstack.h>
-#include <linux/processor.h>
-#include <linux/uaccess.h>
+#include <freax/sched.h>
+#include <freax/audit.h>
+#include <freax/randomize_kstack.h>
+#include <freax/processor.h>
+#include <freax/uaccess.h>
 #include <asm/timex.h>
 #include <asm/fpu/api.h>
 #include <asm/pai.h>

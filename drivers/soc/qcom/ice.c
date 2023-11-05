@@ -2,20 +2,20 @@
 /*
  * Qualcomm ICE (Inline Crypto Engine) support.
  *
- * Copyright (c) 2013-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2019, The freax Foundation. All rights reserved.
  * Copyright (c) 2019, Google LLC
  * Copyright (c) 2023, Linaro Limited
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 #include <soc/qcom/ice.h>
 

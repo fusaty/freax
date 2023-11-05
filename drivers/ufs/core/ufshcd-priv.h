@@ -3,7 +3,7 @@
 #ifndef _UFSHCD_PRIV_H_
 #define _UFSHCD_PRIV_H_
 
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 #include <ufs/ufshcd.h>
 
 static inline bool ufshcd_is_user_access_allowed(struct ufs_hba *hba)

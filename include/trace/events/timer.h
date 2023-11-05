@@ -5,9 +5,9 @@
 #if !defined(_TRACE_TIMER_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TIMER_H
 
-#include <linux/tracepoint.h>
-#include <linux/hrtimer.h>
-#include <linux/timer.h>
+#include <freax/tracepoint.h>
+#include <freax/hrtimer.h>
+#include <freax/timer.h>
 
 DECLARE_EVENT_CLASS(timer_class,
 

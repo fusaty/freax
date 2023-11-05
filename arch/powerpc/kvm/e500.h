@@ -16,7 +16,7 @@
 #ifndef KVM_E500_H
 #define KVM_E500_H
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/nohash/mmu-e500.h>
 #include <asm/tlb.h>
 #include <asm/cputhreads.h>

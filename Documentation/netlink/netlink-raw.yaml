@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+# SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 %YAML 1.2
 ---
 $id: http://kernel.org/schemas/netlink/netlink-raw.yaml#
@@ -35,7 +35,7 @@ properties:
     type: integer
   # End netlink-raw
   uapi-header:
-    description: Path to the uAPI header, default is linux/${family-name}.h
+    description: Path to the uAPI header, default is freax/${family-name}.h
     type: string
   # Start genetlink-c
   c-family-name:

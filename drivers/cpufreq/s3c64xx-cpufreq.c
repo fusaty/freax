@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/regulator/consumer.h>
+#include <freax/module.h>
 
 static struct regulator *vddarm;
 static unsigned long regulator_latency;

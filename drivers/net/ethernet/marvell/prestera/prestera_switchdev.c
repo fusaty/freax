@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2019-2020 Marvell International Ltd. All rights reserved */
 
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
 #include <net/netevent.h>
 #include <net/switchdev.h>
 

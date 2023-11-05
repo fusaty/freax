@@ -140,12 +140,12 @@ cat << EOF
  * instrumentation. Where it is necessary to aovid instrumenation, the
  * raw_atomic*() operations should be used.
  */
-#ifndef _LINUX_ATOMIC_INSTRUMENTED_H
-#define _LINUX_ATOMIC_INSTRUMENTED_H
+#ifndef _freax_ATOMIC_INSTRUMENTED_H
+#define _freax_ATOMIC_INSTRUMENTED_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/instrumented.h>
+#include <freax/build_bug.h>
+#include <freax/compiler.h>
+#include <freax/instrumented.h>
 
 EOF
 
@@ -177,5 +177,5 @@ done
 
 cat <<EOF
 
-#endif /* _LINUX_ATOMIC_INSTRUMENTED_H */
+#endif /* _freax_ATOMIC_INSTRUMENTED_H */
 EOF

@@ -1,44 +1,44 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 tunneling device
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Ville Nuorvala		<vnuorval@tcs.hut.fi>
- *	Yasuyuki Kozakai	<kozakai@linux-ipv6.org>
+ *	Yasuyuki Kozakai	<kozakai@freax-ipv6.org>
  *
  *      Based on:
- *      linux/net/ipv6/sit.c and linux/net/ipv4/ipip.c
+ *      freax/net/ipv6/sit.c and freax/net/ipv4/ipip.c
  *
  *      RFC 2473
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/icmp.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/route.h>
-#include <linux/rtnetlink.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/sockios.h>
+#include <freax/icmp.h>
+#include <freax/if.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/icmpv6.h>
+#include <freax/init.h>
+#include <freax/route.h>
+#include <freax/rtnetlink.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/slab.h>
+#include <freax/hash.h>
+#include <freax/etherdevice.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
 
 #include <net/icmp.h>
 #include <net/ip.h>

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* linux/net/ipv4/arp.c
+/* freax/net/ipv4/arp.c
  *
  * Copyright (C) 1994 by Florian  La Roche
  *
@@ -71,32 +71,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/capability.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/mm.h>
+#include <freax/inet.h>
+#include <freax/inetdevice.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/fddidevice.h>
+#include <freax/if_arp.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/stat.h>
+#include <freax/init.h>
+#include <freax/net.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 #endif
 
 #include <net/net_namespace.h>
@@ -112,9 +112,9 @@
 #include <net/dst_metadata.h>
 #include <net/ip_tunnels.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/netfilter_arp.h>
+#include <freax/netfilter_arp.h>
 
 /*
  *	Interface to generic neighbour cache.
@@ -460,7 +460,7 @@ static int arp_filter(__be32 sip, __be32 tip, struct net_device *dev)
 	if (IS_ERR(rt))
 		return 1;
 	if (rt->dst.dev != dev) {
-		__NET_INC_STATS(net, LINUX_MIB_ARPFILTER);
+		__NET_INC_STATS(net, freax_MIB_ARPFILTER);
 		flag = 1;
 	}
 	ip_rt_put(rt);

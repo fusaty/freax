@@ -6,7 +6,7 @@
  * Author: Koro Chen <koro.chen@mediatek.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 #include "../../codecs/rt5645.h"

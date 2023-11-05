@@ -7,19 +7,19 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/mfd/core.h>
+#include <freax/slab.h>
+#include <freax/list.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/otp.h>
-#include <linux/mfd/wm831x/regulator.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/irq.h>
+#include <freax/mfd/wm831x/auxadc.h>
+#include <freax/mfd/wm831x/otp.h>
+#include <freax/mfd/wm831x/regulator.h>
 
 struct wm831x_auxadc_req {
 	struct list_head list;

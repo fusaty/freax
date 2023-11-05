@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_XILINX_LL_TEMAC_H
-#define __LINUX_XILINX_LL_TEMAC_H
+#ifndef __freax_XILINX_LL_TEMAC_H
+#define __freax_XILINX_LL_TEMAC_H
 
-#include <linux/if_ether.h>
-#include <linux/phy.h>
-#include <linux/spinlock.h>
+#include <freax/if_ether.h>
+#include <freax/phy.h>
+#include <freax/spinlock.h>
 
 struct ll_temac_platform_data {
 	bool txcsum;		/* Enable/disable TX checksum */
@@ -30,4 +30,4 @@ struct ll_temac_platform_data {
 	u8 rx_irq_count;	/* RX Interrupt Coalescing Threshold Count */
 };
 
-#endif /* __LINUX_XILINX_LL_TEMAC_H */
+#endif /* __freax_XILINX_LL_TEMAC_H */

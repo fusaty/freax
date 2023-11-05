@@ -4,9 +4,9 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#include <linux/cb710.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/cb710.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #define CB710_REG_COUNT		0x80
 

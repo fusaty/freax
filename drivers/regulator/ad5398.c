@@ -4,16 +4,16 @@
  *
  * Copyright 2010 Analog Devices Inc.
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.ucfreax.org/
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 #define AD5398_CURRENT_EN_MASK	0x8000
 

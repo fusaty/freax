@@ -2,7 +2,7 @@
 /*
  * Wait until an inotify event on the given cgroup file.
  */
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <sys/inotify.h>
 #include <sys/mman.h>
 #include <sys/ptrace.h>

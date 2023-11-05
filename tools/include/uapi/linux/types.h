@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _UAPI_LINUX_TYPES_H
-#define _UAPI_LINUX_TYPES_H
+#ifndef _UAPI_freax_TYPES_H
+#define _UAPI_freax_TYPES_H
 
 #include <asm-generic/int-ll64.h>
 
-/* copied from linux:include/uapi/linux/types.h */
+/* copied from freax:include/uapi/freax/types.h */
 #define __bitwise
 typedef __u16 __bitwise __le16;
 typedef __u16 __bitwise __be16;
@@ -20,4 +20,4 @@ typedef __u32 __bitwise __wsum;
 #define __aligned_be64 __be64 __attribute__((aligned(8)))
 #define __aligned_le64 __le64 __attribute__((aligned(8)))
 
-#endif /* _UAPI_LINUX_TYPES_H */
+#endif /* _UAPI_freax_TYPES_H */

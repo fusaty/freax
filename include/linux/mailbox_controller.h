@@ -3,11 +3,11 @@
 #ifndef __MAILBOX_CONTROLLER_H
 #define __MAILBOX_CONTROLLER_H
 
-#include <linux/of.h>
-#include <linux/types.h>
-#include <linux/hrtimer.h>
-#include <linux/device.h>
-#include <linux/completion.h>
+#include <freax/of.h>
+#include <freax/types.h>
+#include <freax/hrtimer.h>
+#include <freax/device.h>
+#include <freax/completion.h>
 
 struct mbox_chan;
 

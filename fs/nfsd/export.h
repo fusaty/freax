@@ -5,10 +5,10 @@
 #ifndef NFSD_EXPORT_H
 #define NFSD_EXPORT_H
 
-#include <linux/sunrpc/cache.h>
-#include <linux/percpu_counter.h>
-#include <uapi/linux/nfsd/export.h>
-#include <linux/nfs4.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/percpu_counter.h>
+#include <uapi/freax/nfsd/export.h>
+#include <freax/nfs4.h>
 
 struct knfsd_fh;
 struct svc_fh;

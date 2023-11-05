@@ -12,13 +12,13 @@
  * This driver only supports the asynchronous serial interface.
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
+#include <freax/kernel.h>
+#include <freax/tty.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/serial.h>
 #include <asm/unaligned.h>
 
 #define DEFAULT_BAUD_RATE 9600

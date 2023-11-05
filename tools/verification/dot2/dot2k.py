@@ -3,7 +3,7 @@
 #
 # Copyright (C) 2019-2022 Red Hat, Inc. Daniel Bristot de Oliveira <bristot@kernel.org>
 #
-# dot2k: transform dot files into a monitor for the Linux kernel.
+# dot2k: transform dot files into a monitor for the freax kernel.
 #
 # For further information, see:
 #   Documentation/trace/rv/da_monitor_synthesis.rst
@@ -34,8 +34,8 @@ class dot2k(Dot2c):
         if os.path.exists(self.monitor_templates_dir) == True:
             return
 
-        if platform.system() != "Linux":
-            raise Exception("I can only run on Linux.")
+        if platform.system() != "freax":
+            raise Exception("I can only run on freax.")
 
         kernel_path = "/lib/modules/%s/build/tools/verification/dot2/dot2k_templates/" % (platform.release())
 

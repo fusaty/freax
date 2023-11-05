@@ -34,25 +34,25 @@
  *	with usb 338x chip. Based on PLX driver
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/moduleparam.h>
+#include <freax/device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/prefetch.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
@@ -3766,7 +3766,7 @@ static int net2280_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 			BIT(DMA_READ_MULTIPLE_ENABLE) |
 			BIT(DMA_READ_LINE_ENABLE),
 			&dev->pci->pcimstctl);
-	/* erratum 0115 shouldn't appear: Linux inits PCI_LATENCY_TIMER */
+	/* erratum 0115 shouldn't appear: freax inits PCI_LATENCY_TIMER */
 	pci_set_master(pdev);
 	pci_try_set_mwi(pdev);
 

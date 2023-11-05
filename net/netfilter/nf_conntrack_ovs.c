@@ -6,7 +6,7 @@
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #include <net/ipv6_frag.h>
 #include <net/ip.h>
-#include <linux/netfilter_ipv6.h>
+#include <freax/netfilter_ipv6.h>
 
 /* 'skb' should already be pulled to nh_ofs. */
 int nf_ct_helper(struct sk_buff *skb, struct nf_conn *ct,

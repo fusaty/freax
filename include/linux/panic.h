@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PANIC_H
-#define _LINUX_PANIC_H
+#ifndef _freax_PANIC_H
+#define _freax_PANIC_H
 
-#include <linux/compiler_attributes.h>
-#include <linux/types.h>
+#include <freax/compiler_attributes.h>
+#include <freax/types.h>
 
 struct pt_regs;
 
@@ -94,4 +94,4 @@ extern void add_taint(unsigned flag, enum lockdep_ok);
 extern int test_taint(unsigned flag);
 extern unsigned long get_taint(void);
 
-#endif	/* _LINUX_PANIC_H */
+#endif	/* _freax_PANIC_H */

@@ -6,12 +6,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dmi.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/wmi.h>
+#include <freax/dmi.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/wmi.h>
 #include "dell-smbios.h"
 #include "dell-wmi-descriptor.h"
 

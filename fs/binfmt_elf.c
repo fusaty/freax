@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/binfmt_elf.c
+ * freax/fs/binfmt_elf.c
  *
  * These are the functions used to load ELF format executables as used
  * on SVr4 machines.  Information on the format may be found in the book
@@ -10,43 +10,43 @@
  * Copyright 1993, 1994: Eric Youngdale (ericy@cais.com).
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/personality.h>
-#include <linux/elfcore.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/compiler.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/random.h>
-#include <linux/elf.h>
-#include <linux/elf-randomize.h>
-#include <linux/utsname.h>
-#include <linux/coredump.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
-#include <linux/cred.h>
-#include <linux/dax.h>
-#include <linux/uaccess.h>
-#include <linux/rseq.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/log2.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/binfmts.h>
+#include <freax/string.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/personality.h>
+#include <freax/elfcore.h>
+#include <freax/init.h>
+#include <freax/highuid.h>
+#include <freax/compiler.h>
+#include <freax/highmem.h>
+#include <freax/hugetlb.h>
+#include <freax/pagemap.h>
+#include <freax/vmalloc.h>
+#include <freax/security.h>
+#include <freax/random.h>
+#include <freax/elf.h>
+#include <freax/elf-randomize.h>
+#include <freax/utsname.h>
+#include <freax/coredump.h>
+#include <freax/sched.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sched/cputime.h>
+#include <freax/sizes.h>
+#include <freax/types.h>
+#include <freax/cred.h>
+#include <freax/dax.h>
+#include <freax/uaccess.h>
+#include <freax/rseq.h>
 #include <asm/param.h>
 #include <asm/page.h>
 
@@ -66,7 +66,7 @@
 #define elf_check_fdpic(ex) false
 #endif
 
-static int load_elf_binary(struct linux_binprm *bprm);
+static int load_elf_binary(struct freax_binprm *bprm);
 
 #ifdef CONFIG_USELIB
 static int load_elf_library(struct file *);
@@ -98,7 +98,7 @@ static int elf_core_dump(struct coredump_params *cprm);
 #define ELF_PAGEOFFSET(_v) ((_v) & (ELF_MIN_ALIGN-1))
 #define ELF_PAGEALIGN(_v) (((_v) + ELF_MIN_ALIGN - 1) & ~(ELF_MIN_ALIGN - 1))
 
-static struct linux_binfmt elf_format = {
+static struct freax_binfmt elf_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_elf_binary,
 	.load_shlib	= load_elf_library,
@@ -153,7 +153,7 @@ static int padzero(unsigned long address)
 #endif
 
 static int
-create_elf_tables(struct linux_binprm *bprm, const struct elfhdr *exec,
+create_elf_tables(struct freax_binprm *bprm, const struct elfhdr *exec,
 		unsigned long interp_load_addr,
 		unsigned long e_entry, unsigned long phdr_addr)
 {
@@ -816,7 +816,7 @@ static int parse_elf_properties(struct file *f, const struct elf_phdr *phdr,
 	return ret == -ENOENT ? 0 : ret;
 }
 
-static int load_elf_binary(struct linux_binprm *bprm)
+static int load_elf_binary(struct freax_binprm *bprm)
 {
 	struct file *interpreter = NULL; /* to shut gcc up */
 	unsigned long load_bias = 0, phdr_addr = 0;
@@ -1658,7 +1658,7 @@ static int fill_files_note(struct memelfnote *note, struct coredump_params *cprm
 	return 0;
 }
 
-#include <linux/regset.h>
+#include <freax/regset.h>
 
 struct elf_thread_core_info {
 	struct elf_thread_core_info *next;
@@ -1749,7 +1749,7 @@ static int fill_thread_core_info(struct elf_thread_core_info *t,
 		if (is_fpreg)
 			SET_PR_FPVALID(&t->prstatus);
 
-		fill_note(&t->notes[note_iter], is_fpreg ? "CORE" : "LINUX",
+		fill_note(&t->notes[note_iter], is_fpreg ? "CORE" : "freax",
 			  note_type, ret, data);
 
 		info->size += notesize(&t->notes[note_iter]);
@@ -1981,7 +1981,7 @@ static int elf_core_dump(struct coredump_params *cprm)
 
 	/* If segs > PN_XNUM(0xffff), then e_phnum overflows. To avoid
 	 * this, kernel supports extended numbering. Have a look at
-	 * include/linux/elf.h for further information. */
+	 * include/freax/elf.h for further information. */
 	e_phnum = segs > PN_XNUM ? PN_XNUM : segs;
 
 	/*

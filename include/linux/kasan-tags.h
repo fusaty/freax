@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KASAN_TAGS_H
-#define _LINUX_KASAN_TAGS_H
+#ifndef _freax_KASAN_TAGS_H
+#define _freax_KASAN_TAGS_H
 
 #define KASAN_TAG_KERNEL	0xFF /* native kernel pointers tag */
 #define KASAN_TAG_INVALID	0xFE /* inaccessible memory tag */
@@ -12,4 +12,4 @@
 #define KASAN_TAG_MIN		0x00 /* minimum value for random tags */
 #endif
 
-#endif /* LINUX_KASAN_TAGS_H */
+#endif /* freax_KASAN_TAGS_H */

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt)	"OF: " fmt
 
-#include <linux/device.h>
-#include <linux/fwnode.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/logic_pio.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-direct.h> /* for bus_dma_region */
+#include <freax/device.h>
+#include <freax/fwnode.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/logic_pio.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/dma-direct.h> /* for bus_dma_region */
 
 #include "of_private.h"
 

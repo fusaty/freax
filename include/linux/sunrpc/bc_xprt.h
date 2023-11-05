@@ -10,12 +10,12 @@
  * Functions to create and manage the backchannel
  */
 
-#ifndef _LINUX_SUNRPC_BC_XPRT_H
-#define _LINUX_SUNRPC_BC_XPRT_H
+#ifndef _freax_SUNRPC_BC_XPRT_H
+#define _freax_SUNRPC_BC_XPRT_H
 
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/sched.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/xprt.h>
+#include <freax/sunrpc/sched.h>
 
 #ifdef CONFIG_SUNRPC_BACKCHANNEL
 struct rpc_rqst *xprt_lookup_bc_request(struct rpc_xprt *xprt, __be32 xid);
@@ -68,4 +68,4 @@ static inline void xprt_free_bc_request(struct rpc_rqst *req)
 {
 }
 #endif /* CONFIG_SUNRPC_BACKCHANNEL */
-#endif /* _LINUX_SUNRPC_BC_XPRT_H */
+#endif /* _freax_SUNRPC_BC_XPRT_H */

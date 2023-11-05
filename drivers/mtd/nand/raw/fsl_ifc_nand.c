@@ -7,17 +7,17 @@
  * Author: Dipen Dudhat <Dipen.Dudhat@freescale.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/fsl_ifc.h>
-#include <linux/iopoll.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/fsl_ifc.h>
+#include <freax/iopoll.h>
 
 #define ERR_BYTE		0xFF /* Value returned for read
 					bytes when read failed	*/

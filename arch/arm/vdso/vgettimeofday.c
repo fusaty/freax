@@ -4,8 +4,8 @@
  *
  * Copyright 2015 Mentor Graphics Corporation.
  */
-#include <linux/time.h>
-#include <linux/types.h>
+#include <freax/time.h>
+#include <freax/types.h>
 #include <asm/vdso.h>
 #include <asm/unwind.h>
 

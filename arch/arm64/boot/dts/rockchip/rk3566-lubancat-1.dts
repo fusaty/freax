@@ -44,7 +44,7 @@
 
 		sys_led: sys-led {
 			label = "sys_led";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			default-state = "on";
 			gpios = <&gpio0 RK_PC5 GPIO_ACTIVE_LOW>;
 			pinctrl-names = "default";

@@ -9,15 +9,15 @@
 
 /***************************************************************************/
 
-#include <linux/clkdev.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/clk.h>
-#include <linux/memblock.h>
+#include <freax/clkdev.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/clk.h>
+#include <freax/memblock.h>
 #include <asm/pgalloc.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>

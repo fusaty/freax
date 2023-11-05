@@ -3,7 +3,7 @@
  * Copyright (C) 2022 Michael T. Kloos <michael@michaelkloos.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asm.h>
 
 SYM_FUNC_START(__memmove)

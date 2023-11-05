@@ -2,8 +2,8 @@
 #ifndef __PMAC_PFUNC_H__
 #define __PMAC_PFUNC_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 /* Flags in command lists */
 #define PMF_FLAGS_ON_INIT		0x80000000u

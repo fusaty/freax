@@ -14,18 +14,18 @@
  * General Public License for more details.
  */
 
-#include <linux/circ_buf.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
-#include <uapi/linux/userio.h>
+#include <freax/circ_buf.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/sched.h>
+#include <freax/poll.h>
+#include <uapi/freax/userio.h>
 
 #define USERIO_NAME		"userio"
 #define USERIO_BUFSIZE		16

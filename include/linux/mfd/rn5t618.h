@@ -5,10 +5,10 @@
  * Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
  */
 
-#ifndef __LINUX_MFD_RN5T618_H
-#define __LINUX_MFD_RN5T618_H
+#ifndef __freax_MFD_RN5T618_H
+#define __freax_MFD_RN5T618_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 #define RN5T618_LSIVER			0x00
 #define RN5T618_OTPVER			0x01
@@ -283,4 +283,4 @@ struct rn5t618 {
 	struct regmap_irq_chip_data *irq_data;
 };
 
-#endif /* __LINUX_MFD_RN5T618_H */
+#endif /* __freax_MFD_RN5T618_H */

@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BACKING_DEV_DEFS_H
-#define __LINUX_BACKING_DEV_DEFS_H
+#ifndef __freax_BACKING_DEV_DEFS_H
+#define __freax_BACKING_DEV_DEFS_H
 
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/percpu_counter.h>
-#include <linux/percpu-refcount.h>
-#include <linux/flex_proportions.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
-#include <linux/refcount.h>
+#include <freax/list.h>
+#include <freax/radix-tree.h>
+#include <freax/rbtree.h>
+#include <freax/spinlock.h>
+#include <freax/percpu_counter.h>
+#include <freax/percpu-refcount.h>
+#include <freax/flex_proportions.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/kref.h>
+#include <freax/refcount.h>
 
 struct page;
 struct device;
@@ -293,4 +293,4 @@ static inline bool wb_dying(struct bdi_writeback *wb)
 
 #endif	/* CONFIG_CGROUP_WRITEBACK */
 
-#endif	/* __LINUX_BACKING_DEV_DEFS_H */
+#endif	/* __freax_BACKING_DEV_DEFS_H */

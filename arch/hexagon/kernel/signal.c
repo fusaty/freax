@@ -2,17 +2,17 @@
 /*
  * Signal support for Hexagon processor
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The freax Foundation. All rights reserved.
  */
 
-#include <linux/linkage.h>
-#include <linux/syscalls.h>
-#include <linux/sched/task_stack.h>
+#include <freax/linkage.h>
+#include <freax/syscalls.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/registers.h>
 #include <asm/thread_info.h>
 #include <asm/unistd.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/ucontext.h>
 #include <asm/cacheflush.h>
 #include <asm/signal.h>

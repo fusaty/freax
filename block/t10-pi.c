@@ -4,11 +4,11 @@
  *	      Information.
  */
 
-#include <linux/t10-pi.h>
-#include <linux/blk-integrity.h>
-#include <linux/crc-t10dif.h>
-#include <linux/crc64.h>
-#include <linux/module.h>
+#include <freax/t10-pi.h>
+#include <freax/blk-integrity.h>
+#include <freax/crc-t10dif.h>
+#include <freax/crc64.h>
+#include <freax/module.h>
 #include <net/checksum.h>
 #include <asm/unaligned.h>
 

@@ -7,8 +7,8 @@
  * Copyright (C) 2018 Aquantia Corp.
  */
 
-#ifndef __LINUX_USBNET_AQC111_H
-#define __LINUX_USBNET_AQC111_H
+#ifndef __freax_USBNET_AQC111_H
+#define __freax_USBNET_AQC111_H
 
 #define URB_SIZE	(1024 * 62)
 
@@ -229,4 +229,4 @@ static struct {
 	{7, 0x00, 0x01, 0x18, 0xFF},
 };
 
-#endif /* __LINUX_USBNET_AQC111_H */
+#endif /* __freax_USBNET_AQC111_H */

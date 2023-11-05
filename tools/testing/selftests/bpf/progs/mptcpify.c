@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023, SUSE. */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_tracing.h>
 #include "bpf_tracing_net.h"
 

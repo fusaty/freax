@@ -4,9 +4,9 @@
  *  Routines for Sound Blaster mixer control
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/time.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/time.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/control.h>

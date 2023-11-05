@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_LOG2_H
-#define _LINUX_LOG2_H
+#ifndef _freax_LOG2_H
+#define _freax_LOG2_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 
 /*
  * non-constant log of base 2 calculators
@@ -255,4 +255,4 @@ int __bits_per(unsigned long n)
 	) :					\
 	__bits_per(n)				\
 )
-#endif /* _LINUX_LOG2_H */
+#endif /* _freax_LOG2_H */

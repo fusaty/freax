@@ -8,18 +8,18 @@
  * Copyright (C) 2009 Wolfram Sang, Pengutronix <kernel@pengutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/can/dev.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
+#include <freax/can/dev.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
 #include <sysdev/fsl_soc.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <freax/clk.h>
+#include <freax/io.h>
 #include <asm/mpc52xx.h>
 
 #include "mscan.h"

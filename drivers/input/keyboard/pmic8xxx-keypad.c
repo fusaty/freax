@@ -2,18 +2,18 @@
 /* Copyright (c) 2009-2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/input/matrix_keypad.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
+#include <freax/input/matrix_keypad.h>
 
 #define PM8XXX_MAX_ROWS		18
 #define PM8XXX_MAX_COLS		8
@@ -517,11 +517,11 @@ static int pmic8xxx_kp_probe(struct platform_device *pdev)
 		return -EINVAL;
 	}
 
-	repeat = !of_property_read_bool(np, "linux,input-no-autorepeat");
+	repeat = !of_property_read_bool(np, "freax,input-no-autorepeat");
 
 	wakeup = of_property_read_bool(np, "wakeup-source") ||
 		 /* legacy name */
-		 of_property_read_bool(np, "linux,keypad-wakeup");
+		 of_property_read_bool(np, "freax,keypad-wakeup");
 
 	kp = devm_kzalloc(&pdev->dev, sizeof(*kp), GFP_KERNEL);
 	if (!kp)

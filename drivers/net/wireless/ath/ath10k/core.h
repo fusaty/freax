@@ -2,18 +2,18 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The freax Foundation. All rights reserved.
  */
 
 #ifndef _CORE_H_
 #define _CORE_H_
 
-#include <linux/completion.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/uuid.h>
-#include <linux/time.h>
+#include <freax/completion.h>
+#include <freax/if_ether.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/uuid.h>
+#include <freax/time.h>
 
 #include "htt.h"
 #include "htc.h"

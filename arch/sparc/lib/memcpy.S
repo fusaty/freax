@@ -8,7 +8,7 @@
  * Copyright (C) 1996 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #define FUNC(x) 		\
 	.globl	x;		\

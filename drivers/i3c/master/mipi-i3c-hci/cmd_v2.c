@@ -9,8 +9,8 @@
  * Note: The I3C HCI v2.0 spec is still in flux. The code here will change.
  */
 
-#include <linux/bitfield.h>
-#include <linux/i3c/master.h>
+#include <freax/bitfield.h>
+#include <freax/i3c/master.h>
 
 #include "hci.h"
 #include "cmd.h"

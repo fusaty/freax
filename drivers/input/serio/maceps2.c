@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * SGI O2 MACE PS2 controller driver for linux
+ * SGI O2 MACE PS2 controller driver for freax
  *
  * Copyright (C) 2002 Vivien Chappelier
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/serio.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/err.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>
 
-MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linux-mips.org");
+MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@freax-mips.org");
 MODULE_DESCRIPTION("SGI O2 MACE PS2 controller driver");
 MODULE_LICENSE("GPL");
 

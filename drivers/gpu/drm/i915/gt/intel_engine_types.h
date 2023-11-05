@@ -6,16 +6,16 @@
 #ifndef __INTEL_ENGINE_TYPES__
 #define __INTEL_ENGINE_TYPES__
 
-#include <linux/average.h>
-#include <linux/hashtable.h>
-#include <linux/irq_work.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/rbtree.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/average.h>
+#include <freax/hashtable.h>
+#include <freax/irq_work.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/llist.h>
+#include <freax/rbtree.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include "i915_gem.h"
 #include "i915_pmu.h"

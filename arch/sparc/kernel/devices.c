@@ -8,11 +8,11 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/threads.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/errno.h>
 
 #include <asm/page.h>
 #include <asm/oplib.h>
@@ -115,7 +115,7 @@ int cpu_get_hwmid(phandle prom_node)
 
 void __init device_scan(void)
 {
-	printk(KERN_NOTICE "Booting Linux...\n");
+	printk(KERN_NOTICE "Booting freax...\n");
 
 #ifndef CONFIG_SMP
 	{

@@ -6,10 +6,10 @@
 #include <crypto/engine.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
-#include <linux/bits.h>
-#include <linux/compiler_attributes.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/compiler_attributes.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
 
 /*****************************
  *                           *

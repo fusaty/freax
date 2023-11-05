@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@freax.nu>
  *                         Patrick Schaaf <bof@bof.de>
  *                         Martin Josefsson <gandalf@wlug.westbo.se>
  * Copyright (C) 2003-2013 Jozsef Kadlecsik <kadlec@netfilter.org>
@@ -7,15 +7,15 @@
 #ifndef _IP_SET_H
 #define _IP_SET_H
 
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/stringify.h>
-#include <linux/vmalloc.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/stringify.h>
+#include <freax/vmalloc.h>
 #include <net/netlink.h>
-#include <uapi/linux/netfilter/ipset/ip_set.h>
+#include <uapi/freax/netfilter/ipset/ip_set.h>
 
 #define _IP_SET_MODULE_DESC(a, b, c)		\
 	MODULE_DESCRIPTION(a " type of IP sets, revisions " b "-" c)

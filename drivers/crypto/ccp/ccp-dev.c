@@ -8,23 +8,23 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/cpu.h>
-#include <linux/atomic.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/hw_random.h>
+#include <freax/cpu.h>
+#include <freax/atomic.h>
 #ifdef CONFIG_X86
 #include <asm/cpu_device_id.h>
 #endif
-#include <linux/ccp.h>
+#include <freax/ccp.h>
 
 #include "ccp-dev.h"
 

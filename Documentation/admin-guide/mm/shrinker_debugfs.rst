@@ -28,7 +28,7 @@ Usage:
     mm-zspool:zram0-34  sb-hugetlbfs-17  sb-pstore-31     sb-tmpfs-44
     rcu-kfree-0         sb-hugetlbfs-33  sb-rootfs-2      sb-tmpfs-49
     sb-aio-20           sb-iomem-12      sb-securityfs-6  sb-tracefs-13
-    sb-anon_inodefs-15  sb-mqueue-21     sb-selinuxfs-22  sb-xfs:vda1-36
+    sb-anon_inodefs-15  sb-mqueue-21     sb-sefreaxfs-22  sb-xfs:vda1-36
     sb-bdev-3           sb-nsfs-4        sb-sockfs-8      sb-zsmalloc-19
     sb-bpf-32           sb-pipefs-14     sb-sysfs-26      thp-deferred_split-10
     sb-btrfs:vda2-24    sb-proc-25       sb-tmpfs-1       thp-zero-9

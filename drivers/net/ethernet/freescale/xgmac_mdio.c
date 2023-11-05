@@ -12,18 +12,18 @@
  * kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_mdio.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/acpi_mdio.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 /* Number of microseconds to wait for a register to respond */
 #define TIMEOUT	1000

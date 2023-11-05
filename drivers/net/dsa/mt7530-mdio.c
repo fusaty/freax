@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/gpio/consumer.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/pcs/pcs-mtk-lynxi.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mdio.h>
+#include <freax/module.h>
+#include <freax/pcs/pcs-mtk-lynxi.h>
+#include <freax/of_irq.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/regulator/consumer.h>
 #include <net/dsa.h>
 
 #include "mt7530.h"

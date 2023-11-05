@@ -5,16 +5,16 @@
  * Copyright IBM Corp. 2019, 2022
  *
  * Author(s):
- *	Vasily Gorbik <gor@linux.ibm.com>
- *	Janosch Frank <frankja@linux.ibm.com>
+ *	Vasily Gorbik <gor@freax.ibm.com>
+ *	Janosch Frank <frankja@freax.ibm.com>
  */
 #ifndef _ASM_S390_UV_H
 #define _ASM_S390_UV_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/bug.h>
+#include <freax/sched.h>
 #include <asm/page.h>
 #include <asm/gmap.h>
 

@@ -7,8 +7,8 @@
  * Copyright (C) 2006-2007 Nokia Corporation
  */
 
-#ifndef __MUSB_LINUX_DEBUG_H__
-#define __MUSB_LINUX_DEBUG_H__
+#ifndef __MUSB_freax_DEBUG_H__
+#define __MUSB_freax_DEBUG_H__
 
 #define yprintk(facility, format, args...) \
 	do { printk(facility "%s %d: " format , \
@@ -31,4 +31,4 @@ static inline void musb_exit_debugfs(struct musb *musb)
 }
 #endif
 
-#endif				/*  __MUSB_LINUX_DEBUG_H__ */
+#endif				/*  __MUSB_freax_DEBUG_H__ */

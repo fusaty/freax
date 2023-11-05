@@ -24,11 +24,11 @@
  * Copyright 2019, 2020 Google LLC.
  */
 
-#include <linux/bits.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/bits.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "pmbus.h"
 
@@ -363,7 +363,7 @@ static struct i2c_driver max16601_driver = {
 
 module_i2c_driver(max16601_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <freax@roeck-us.net>");
 MODULE_DESCRIPTION("PMBus driver for Maxim MAX16601");
 MODULE_LICENSE("GPL v2");
 MODULE_IMPORT_NS(PMBUS);

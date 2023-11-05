@@ -6,7 +6,7 @@
 #ifndef _PLATDATA_AMD_XDMA_H
 #define _PLATDATA_AMD_XDMA_H
 
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 
 /**
  * struct xdma_chan_info - DMA channel information

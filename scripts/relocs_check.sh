@@ -7,14 +7,14 @@
 
 objdump="$1"
 nm="$2"
-vmlinux="$3"
+vmfreax="$3"
 
 # Remove from the possible bad relocations those that match an undefined
 # weak symbol which will result in an absolute relocation to 0.
 # Weak unresolved symbols are of that form in nm output:
-# "                  w _binary__btf_vmlinux_bin_end"
-undef_weak_symbols=$($nm "$vmlinux" | awk '$1 ~ /w/ { print $2 }')
+# "                  w _binary__btf_vmfreax_bin_end"
+undef_weak_symbols=$($nm "$vmfreax" | awk '$1 ~ /w/ { print $2 }')
 
-$objdump -R "$vmlinux" |
+$objdump -R "$vmfreax" |
 	grep -E '\<R_' |
 	([ "$undef_weak_symbols" ] && grep -F -w -v "$undef_weak_symbols" || cat)

@@ -1,10 +1,10 @@
-#ifndef __VMLINUX_H
-#define __VMLINUX_H
+#ifndef __VMfreax_H
+#define __VMfreax_H
 
-#include <linux/stddef.h> // for define __always_inline
-#include <linux/bpf.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <freax/stddef.h> // for define __always_inline
+#include <freax/bpf.h>
+#include <freax/types.h>
+#include <freax/perf_event.h>
 #include <stdbool.h>
 
 // non-UAPI kernel data structures, used in the .bpf.c BPF tool component.
@@ -176,9 +176,9 @@ struct bpf_perf_event_data_kern {
  * If 'struct rq' isn't defined for lock_contention.bpf.c, for the sake of
  * rq___old and rq___new, then the type for the 'runqueue' variable ends up
  * being a forward declaration (BTF_KIND_FWD) while the kernel has it defined
- * (BTF_KIND_STRUCT). The definition appears in vmlinux.h rather than
- * lock_contention.bpf.c for consistency with a generated vmlinux.h.
+ * (BTF_KIND_STRUCT). The definition appears in vmfreax.h rather than
+ * lock_contention.bpf.c for consistency with a generated vmfreax.h.
  */
 struct rq {};
 
-#endif // __VMLINUX_H
+#endif // __VMfreax_H

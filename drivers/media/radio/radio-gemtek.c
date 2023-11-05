@@ -9,7 +9,7 @@
  *
  * Besides the protocol changes, this is mostly a copy of:
  *
- *    RadioTrack II driver for Linux radio support (C) 1998 Ben Pfaff
+ *    RadioTrack II driver for freax radio support (C) 1998 Ben Pfaff
  *
  *    Based on RadioTrack I/RadioReveal (C) 1997 M. Kirkwood
  *    Converted to new API by Alan Cox <alan@lxorguk.ukuu.org.uk>
@@ -23,15 +23,15 @@
  * Fully tested with the Keene USB FM Transmitter and the v4l2-compliance tool.
  */
 
-#include <linux/module.h>	/* Modules			*/
-#include <linux/init.h>		/* Initdata			*/
-#include <linux/ioport.h>	/* request_region		*/
-#include <linux/delay.h>	/* udelay			*/
-#include <linux/videodev2.h>	/* kernel radio structs		*/
-#include <linux/mutex.h>
-#include <linux/io.h>		/* outb, outb_p			*/
-#include <linux/pnp.h>
-#include <linux/slab.h>
+#include <freax/module.h>	/* Modules			*/
+#include <freax/init.h>		/* Initdata			*/
+#include <freax/ioport.h>	/* request_region		*/
+#include <freax/delay.h>	/* udelay			*/
+#include <freax/videodev2.h>	/* kernel radio structs		*/
+#include <freax/mutex.h>
+#include <freax/io.h>		/* outb, outb_p			*/
+#include <freax/pnp.h>
+#include <freax/slab.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
 #include "radio-isa.h"

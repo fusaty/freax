@@ -2,8 +2,8 @@
 #ifndef _OMFS_H
 #define _OMFS_H
 
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <freax/module.h>
+#include <freax/fs.h>
 
 #include "omfs_fs.h"
 

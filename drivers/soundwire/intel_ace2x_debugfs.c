@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright(c) 2023 Intel Corporation. All rights reserved.
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/acpi.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_intel.h>
+#include <freax/soundwire/sdw_registers.h>
 #include "bus.h"
 #include "cadence_master.h"
 #include "intel.h"

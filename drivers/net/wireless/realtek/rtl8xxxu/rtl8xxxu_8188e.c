@@ -13,21 +13,21 @@
  * additional 8xxx chips like the 8192cu, 8188cus, etc.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/wireless.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/usb.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/wireless.h>
+#include <freax/firmware.h>
+#include <freax/moduleparam.h>
 #include <net/mac80211.h>
 #include "rtl8xxxu.h"
 #include "rtl8xxxu_regs.h"
@@ -424,7 +424,7 @@ static int rtl8188eu_identify_chip(struct rtl8xxxu_priv *priv)
 	 * I cut chips by default. Are there any in the wild?
 	 */
 	if (priv->chip_cut == 8) {
-		dev_info(dev, "RTL8188EU cut I is not supported. Please complain about it at linux-wireless@vger.kernel.org.\n");
+		dev_info(dev, "RTL8188EU cut I is not supported. Please complain about it at freax-wireless@vger.kernel.org.\n");
 		return -EOPNOTSUPP;
 	}
 

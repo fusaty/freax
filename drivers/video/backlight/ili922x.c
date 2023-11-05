@@ -8,17 +8,17 @@
  * memory is cyclically updated over the RGB interface.
  */
 
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lcd.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/string.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/lcd.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/string.h>
 
 /* Register offset, see manual section 8.2 */
 #define REG_START_OSCILLATION			0x00

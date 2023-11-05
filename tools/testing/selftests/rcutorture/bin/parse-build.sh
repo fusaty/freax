@@ -11,7 +11,7 @@
 #
 # Copyright (C) IBM Corporation, 2011
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@freax.ibm.com>
 
 F=$1
 title=$2
@@ -36,7 +36,7 @@ then
 fi
 
 grep warning: < $F > $T/warnings
-grep "include/linux/*rcu*\.h:" $T/warnings > $T/hwarnings
+grep "include/freax/*rcu*\.h:" $T/warnings > $T/hwarnings
 grep "kernel/rcu/[^/]*:" $T/warnings > $T/cwarnings
 grep "^ld: .*undefined reference to" $T/warnings | head -1 > $T/ldwarnings
 cat $T/hwarnings $T/cwarnings $T/ldwarnings > $T/rcuwarnings

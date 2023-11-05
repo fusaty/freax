@@ -5,12 +5,12 @@
  * Copyright (c) 2016, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/max77620.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/max77620.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define GPIO_REG_ADDR(offset) (MAX77620_REG_GPIO0 + offset)
 

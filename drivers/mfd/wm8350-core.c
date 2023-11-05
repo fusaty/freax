@@ -7,25 +7,25 @@
  * Author: Liam Girdwood, Mark Brown
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/bug.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/workqueue.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/comparator.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/mfd/wm8350/rtc.h>
-#include <linux/mfd/wm8350/supply.h>
-#include <linux/mfd/wm8350/wdt.h>
+#include <freax/mfd/wm8350/core.h>
+#include <freax/mfd/wm8350/audio.h>
+#include <freax/mfd/wm8350/comparator.h>
+#include <freax/mfd/wm8350/gpio.h>
+#include <freax/mfd/wm8350/pmic.h>
+#include <freax/mfd/wm8350/rtc.h>
+#include <freax/mfd/wm8350/supply.h>
+#include <freax/mfd/wm8350/wdt.h>
 
 #define WM8350_CLOCK_CONTROL_1		0x28
 #define WM8350_AIF_TEST			0x74

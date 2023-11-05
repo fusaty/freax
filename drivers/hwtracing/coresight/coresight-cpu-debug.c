@@ -4,25 +4,25 @@
  *
  * Author: Leo Yan <leo.yan@linaro.org>
  */
-#include <linux/amba/bus.h>
-#include <linux/coresight.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/panic_notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/amba/bus.h>
+#include <freax/coresight.h>
+#include <freax/cpu.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/panic_notifier.h>
+#include <freax/pm_qos.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include "coresight-priv.h"
 

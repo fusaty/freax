@@ -2,8 +2,8 @@
 #ifndef __PERF_HIST_H
 #define __PERF_HIST_H
 
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <freax/rbtree.h>
+#include <freax/types.h>
 #include "evsel.h"
 #include "color.h"
 #include "events_stats.h"

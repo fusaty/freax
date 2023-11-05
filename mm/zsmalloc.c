@@ -37,31 +37,31 @@
  *	zspage->lock
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/highmem.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/pgtable.h>
 #include <asm/tlbflush.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/vmalloc.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/shrinker.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/zsmalloc.h>
-#include <linux/zpool.h>
-#include <linux/migrate.h>
-#include <linux/wait.h>
-#include <linux/pagemap.h>
-#include <linux/fs.h>
-#include <linux/local_lock.h>
+#include <freax/cpumask.h>
+#include <freax/cpu.h>
+#include <freax/vmalloc.h>
+#include <freax/preempt.h>
+#include <freax/spinlock.h>
+#include <freax/shrinker.h>
+#include <freax/types.h>
+#include <freax/debugfs.h>
+#include <freax/zsmalloc.h>
+#include <freax/zpool.h>
+#include <freax/migrate.h>
+#include <freax/wait.h>
+#include <freax/pagemap.h>
+#include <freax/fs.h>
+#include <freax/local_lock.h>
 
 #define ZSPAGE_MAGIC	0x58
 

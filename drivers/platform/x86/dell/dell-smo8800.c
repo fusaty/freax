@@ -10,14 +10,14 @@
 
 #define DRIVER_NAME "smo8800"
 
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
 
 struct smo8800_device {
 	u32 irq;                     /* acpi device irq */

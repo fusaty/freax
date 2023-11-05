@@ -7,9 +7,9 @@
 #ifndef _SUN6I_MIPI_CSI2_H_
 #define _SUN6I_MIPI_CSI2_H_
 
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>
 

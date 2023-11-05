@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SECUREBITS_H
-#define _LINUX_SECUREBITS_H 1
+#ifndef _freax_SECUREBITS_H
+#define _freax_SECUREBITS_H 1
 
-#include <uapi/linux/securebits.h>
+#include <uapi/freax/securebits.h>
 
 #define issecure(X)		(issecure_mask(X) & current_cred_xxx(securebits))
-#endif /* !_LINUX_SECUREBITS_H */
+#endif /* !_freax_SECUREBITS_H */

@@ -3,8 +3,8 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/module.h>
+#include <freax/cpuidle.h>
+#include <freax/module.h>
 #include <asm/system_misc.h>
 #include "cpuidle.h"
 

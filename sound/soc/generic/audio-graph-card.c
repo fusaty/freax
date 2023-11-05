@@ -5,17 +5,17 @@
 // Copyright (C) 2016 Renesas Solutions Corp.
 // Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 //
-// based on ${LINUX}/sound/soc/generic/simple-card.c
+// based on ${freax}/sound/soc/generic/simple-card.c
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
 #include <sound/graph_card.h>
 
 #define DPCM_SELECTABLE 1

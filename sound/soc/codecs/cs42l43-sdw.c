@@ -5,10 +5,10 @@
 // Copyright (C) 2022-2023 Cirrus Logic, Inc. and
 //                         Cirrus Logic International Semiconductor Ltd.
 
-#include <linux/errno.h>
-#include <linux/mfd/cs42l43.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
+#include <freax/errno.h>
+#include <freax/mfd/cs42l43.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
 #include <sound/pcm.h>
 #include <sound/sdw.h>
 #include <sound/soc-component.h>

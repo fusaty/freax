@@ -14,9 +14,9 @@
  * USE printk; if you need, deploy -p.
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/spinlock.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

@@ -6,15 +6,15 @@
  * Based on ar7 map by Felix Fietkau <nbd@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/memblock.h>
-#include <linux/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/memblock.h>
+#include <freax/module.h>
 
-#include <uapi/linux/magic.h>
+#include <uapi/freax/magic.h>
 
 #define AR7_PARTS	4
 #define ROOT_OFFSET	0xe0000
@@ -103,7 +103,7 @@ static int create_mtd_partitions(struct mtd_info *master,
 		root_offset &= ~(master->erasesize - 1);
 	}
 
-	ar7_parts[2].name = "linux";
+	ar7_parts[2].name = "freax";
 	ar7_parts[2].offset = pre_size;
 	ar7_parts[2].size = master->size - pre_size - post_size;
 	ar7_parts[2].mask_flags = 0;

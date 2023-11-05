@@ -23,13 +23,13 @@
  * Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/dynamic_debug.h>
+#include <freax/io.h>
+#include <freax/moduleparam.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/dynamic_debug.h>
 
 #include <drm/drm.h>
 #include <drm/drm_drv.h>

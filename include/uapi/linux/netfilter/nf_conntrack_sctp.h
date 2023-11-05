@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI_NF_CONNTRACK_SCTP_H
 #define _UAPI_NF_CONNTRACK_SCTP_H
 /* SCTP tracking. */
 
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
+#include <freax/netfilter/nf_conntrack_tuple_common.h>
 
 enum sctp_conntrack {
 	SCTP_CONNTRACK_NONE,

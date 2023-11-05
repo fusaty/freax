@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/input/keyboard/omap-keypad.c
+ * freax/drivers/input/keyboard/omap-keypad.c
  *
  * OMAP Keypad Driver
  *
@@ -11,20 +11,20 @@
  * Copyright (C) 2004 Texas Instruments
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/keypad-omap.h>
-#include <linux/soc/ti/omap1-io.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/gpio.h>
+#include <freax/platform_data/gpio-omap.h>
+#include <freax/platform_data/keypad-omap.h>
+#include <freax/soc/ti/omap1-io.h>
 
 #undef NEW_BOARD_LEARNING_MODE
 

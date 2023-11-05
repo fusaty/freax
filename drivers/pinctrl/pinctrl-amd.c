@@ -8,29 +8,29 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/suspend.h>
+#include <freax/err.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/log2.h>
+#include <freax/io.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/acpi.h>
+#include <freax/seq_file.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/bitops.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinmux.h>
+#include <freax/suspend.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

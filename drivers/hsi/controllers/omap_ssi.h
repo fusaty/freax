@@ -7,16 +7,16 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#ifndef __LINUX_HSI_OMAP_SSI_H__
-#define __LINUX_HSI_OMAP_SSI_H__
+#ifndef __freax_HSI_OMAP_SSI_H__
+#define __freax_HSI_OMAP_SSI_H__
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/hsi/hsi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/hsi/hsi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
 #define SSI_MAX_CHANNELS	8
 #define SSI_MAX_GDD_LCH		8
@@ -161,4 +161,4 @@ void omap_ssi_port_update_fclk(struct hsi_controller *ssi,
 
 extern struct platform_driver ssi_port_pdriver;
 
-#endif /* __LINUX_HSI_OMAP_SSI_H__ */
+#endif /* __freax_HSI_OMAP_SSI_H__ */

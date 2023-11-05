@@ -7,17 +7,17 @@
  *  Copyright (C) 2022 Microchip Technology Inc., All Rights Reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/units.h>
-#include <linux/tty.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/units.h>
+#include <freax/tty.h>
 
 #include <asm/byteorder.h>
 

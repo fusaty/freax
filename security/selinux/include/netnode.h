@@ -2,7 +2,7 @@
 /*
  * Network node table
  *
- * SELinux must keep a mapping of network nodes to labels/SIDs.  This
+ * SEfreax must keep a mapping of network nodes to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead since most of these queries happen on
  * a per-packet basis.
@@ -14,10 +14,10 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2007
  */
 
-#ifndef _SELINUX_NETNODE_H
-#define _SELINUX_NETNODE_H
+#ifndef _SEfreax_NETNODE_H
+#define _SEfreax_NETNODE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 void sel_netnode_flush(void);
 

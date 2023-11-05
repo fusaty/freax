@@ -6,9 +6,9 @@
 #ifndef _MISC_CXL_H
 #define _MISC_CXL_H
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/interrupt.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/interrupt.h>
 #include <uapi/misc/cxl.h>
 
 /*

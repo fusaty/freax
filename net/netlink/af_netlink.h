@@ -2,9 +2,9 @@
 #ifndef _AF_NETLINK_H
 #define _AF_NETLINK_H
 
-#include <linux/rhashtable.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
+#include <freax/rhashtable.h>
+#include <freax/atomic.h>
+#include <freax/workqueue.h>
 #include <net/sock.h>
 
 /* flags */

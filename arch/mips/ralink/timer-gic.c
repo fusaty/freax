@@ -5,11 +5,11 @@
  * Copyright (C) 2015 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/clocksource.h>
 
 #include "common.h"
 

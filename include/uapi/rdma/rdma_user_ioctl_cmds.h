@@ -33,8 +33,8 @@
 #ifndef RDMA_USER_IOCTL_CMDS_H
 #define RDMA_USER_IOCTL_CMDS_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /* Documentation/userspace-api/ioctl/ioctl-number.rst */
 #define RDMA_IOCTL_MAGIC	0x1b

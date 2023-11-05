@@ -12,21 +12,21 @@
  * BMA250: 7-bit I2C slave address 0x18 or 0x19
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/bitops.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #define BMA180_DRV_NAME "bma180"
 #define BMA180_IRQ_NAME "bma180_event"

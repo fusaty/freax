@@ -7,12 +7,12 @@
 
 
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
-#include <linux/delay.h>
-#include <linux/usb.h> /* For to_usb_interface for kvm extra intf check */
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/kfifo.h>
+#include <freax/delay.h>
+#include <freax/usb.h> /* For to_usb_interface for kvm extra intf check */
 #include <asm/unaligned.h>
 #include "hid-ids.h"
 

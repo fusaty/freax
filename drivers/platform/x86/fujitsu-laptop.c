@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*-*-linux-c-*-*/
+/*-*-freax-c-*-*/
 
 /*
   Copyright (C) 2007,2008 Jonathan Woithe <jwoithe@just42.net>
@@ -36,19 +36,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kfifo.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/dmi.h>
+#include <freax/backlight.h>
+#include <freax/fb.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/kfifo.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
 #include <acpi/video.h>
 
 #define FUJITSU_DRIVER_VERSION		"0.6.0"

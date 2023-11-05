@@ -5,7 +5,7 @@
  *
  * Based from clk-highbank.c
  */
-#include <linux/of.h>
+#include <freax/of.h>
 
 #include "clk.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/omap.c
+ *  freax/drivers/mmc/host/omap.c
  *
  *  Copyright (C) 2004 Nokia Corporation
  *  Written by Tuukka Tikkanen and Juha Yrjölä<juha.yrjola@nokia.com>
@@ -8,26 +8,26 @@
  *  Other hacks (DMA, SD, etc) by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/of.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/of.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/mmc.h>
+#include <freax/clk.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/platform_data/mmc-omap.h>
 
 
 #define	OMAP_MMC_REG_CMD	0x00

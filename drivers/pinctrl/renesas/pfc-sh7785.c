@@ -5,7 +5,7 @@
  *  Copyright (C) 2008  Magnus Damm
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/sh7785.h>
 
 #include "sh_pfc.h"

@@ -8,12 +8,12 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/property.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
+#include <freax/property.h>
 
-#include <linux/bcma/bcma.h>
+#include <freax/bcma/bcma.h>
 
 #include "bcma_private.h"
 

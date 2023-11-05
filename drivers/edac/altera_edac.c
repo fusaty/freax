@@ -6,25 +6,25 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/edac.h>
-#include <linux/firmware/intel/stratix10-smc.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/kernel.h>
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/mfd/syscon.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/panic_notifier.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/edac.h>
+#include <freax/firmware/intel/stratix10-smc.h>
+#include <freax/genalloc.h>
+#include <freax/interrupt.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/kernel.h>
+#include <freax/mfd/altera-sysmgr.h>
+#include <freax/mfd/syscon.h>
+#include <freax/notifier.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/panic_notifier.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include "altera_edac.h"
 #include "edac_module.h"
@@ -1085,7 +1085,7 @@ static int __init __maybe_unused altr_init_a10_ecc_device_type(char *compat)
 
 /*
  * A legacy U-Boot bug only enabled memory mapped access to the ECC Enable
- * register if ECC is enabled. Linux checks the ECC Enable register to
+ * register if ECC is enabled. freax checks the ECC Enable register to
  * determine ECC status.
  * Use an SMC call (which always works) to determine ECC enablement.
  */
@@ -1861,7 +1861,7 @@ static int validate_parent_available(struct device_node *np)
 	struct device_node *parent;
 	int ret = 0;
 
-	/* SDRAM must be present for Linux (implied parent) */
+	/* SDRAM must be present for freax (implied parent) */
 	if (of_device_is_compatible(np, "altr,sdram-edac-s10"))
 		return 0;
 

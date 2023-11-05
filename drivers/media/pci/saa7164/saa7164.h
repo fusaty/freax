@@ -10,7 +10,7 @@
 	*******************
 
 	saa7164_core.c/buffer.c/cards.c/i2c.c/dvb.c
-		|	: Standard Linux driver framework for creating
+		|	: Standard freax driver framework for creating
 		|	: exposing and managing interfaces to the rest
 		|	: of the kernel or userland. Also uses _fw.c to load
 		|	: firmware direct into the PCIe bus, bypassing layers.
@@ -30,13 +30,13 @@
 	<- ----------------- PCIe address space -------------------- ->
 */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/mutex.h>
-#include <linux/crc32.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/kdev_t.h>
+#include <freax/mutex.h>
+#include <freax/crc32.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
 
 #include <media/tuner.h>
 #include <media/tveeprom.h>

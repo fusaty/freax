@@ -6,11 +6,11 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/spi/spi.h>
 #include <asm/unaligned.h>
 
 #define SPI_XCOMM_SETTINGS_LEN_OFFSET		10

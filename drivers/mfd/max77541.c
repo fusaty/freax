@@ -4,12 +4,12 @@
  * Driver for the MAX77540 and MAX77541
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max77541.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max77541.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
 static const struct regmap_config max77541_regmap_config = {
 	.reg_bits   = 8,

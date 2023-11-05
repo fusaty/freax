@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2018 Facebook */
 
-#include <uapi/linux/btf.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/bpf_perf_event.h>
-#include <uapi/linux/types.h>
-#include <linux/seq_file.h>
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/sort.h>
-#include <linux/bpf_verifier.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_lsm.h>
-#include <linux/skmsg.h>
-#include <linux/perf_event.h>
-#include <linux/bsearch.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
+#include <uapi/freax/btf.h>
+#include <uapi/freax/bpf.h>
+#include <uapi/freax/bpf_perf_event.h>
+#include <uapi/freax/types.h>
+#include <freax/seq_file.h>
+#include <freax/compiler.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/anon_inodes.h>
+#include <freax/file.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/idr.h>
+#include <freax/sort.h>
+#include <freax/bpf_verifier.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/bpf_lsm.h>
+#include <freax/skmsg.h>
+#include <freax/perf_event.h>
+#include <freax/bsearch.h>
+#include <freax/kobject.h>
+#include <freax/sysfs.h>
 
 #include <net/netfilter/nf_bpf_link.h>
 
@@ -559,7 +559,7 @@ s32 bpf_find_btf_id(const char *name, u32 kind, struct btf **btf_p)
 	s32 ret;
 	int id;
 
-	btf = bpf_get_btf_vmlinux();
+	btf = bpf_get_btf_vmfreax();
 	if (IS_ERR(btf))
 		return PTR_ERR(btf);
 	if (!btf)
@@ -575,7 +575,7 @@ s32 bpf_find_btf_id(const char *name, u32 kind, struct btf **btf_p)
 		return ret;
 	}
 
-	/* If name is not found in vmlinux's BTF then search in module's BTFs */
+	/* If name is not found in vmfreax's BTF then search in module's BTFs */
 	spin_lock_bh(&btf_idr_lock);
 	idr_for_each_entry(&btf_idr, btf, id) {
 		if (!btf_is_module(btf))
@@ -3583,7 +3583,7 @@ static int btf_parse_kptr(const struct btf *btf, struct btf_field *field,
 	s32 id;
 
 	/* Find type in map BTF, and use it to look up the matching type
-	 * in vmlinux or module BTFs, by name and kind.
+	 * in vmfreax or module BTFs, by name and kind.
 	 */
 	t = btf_type_by_id(btf, info->kptr.type_id);
 	id = bpf_find_btf_id(__btf_name_by_offset(btf, t->name_off), BTF_INFO_KIND(t->info),
@@ -5586,7 +5586,7 @@ errout_free:
 
 extern char __weak __start_BTF[];
 extern char __weak __stop_BTF[];
-extern struct btf *btf_vmlinux;
+extern struct btf *btf_vmfreax;
 
 #define BPF_MAP_TYPE(_id, _ops)
 #define BPF_LINK_TYPE(_id, _name)
@@ -5595,7 +5595,7 @@ static union {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	prog_ctx_type _id##_prog; \
 	kern_ctx_type _id##_kern;
-#include <linux/bpf_types.h>
+#include <freax/bpf_types.h>
 #undef BPF_PROG_TYPE
 	} *__t;
 	/* 't' is written once under lock. Read many times. */
@@ -5604,14 +5604,14 @@ static union {
 enum {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	__ctx_convert##_id,
-#include <linux/bpf_types.h>
+#include <freax/bpf_types.h>
 #undef BPF_PROG_TYPE
 	__ctx_convert_unused, /* to avoid empty enum in extreme .config */
 };
 static u8 bpf_ctx_convert_map[] = {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	[_id] = __ctx_convert##_id,
-#include <linux/bpf_types.h>
+#include <freax/bpf_types.h>
 #undef BPF_PROG_TYPE
 	0, /* avoid empty array */
 };
@@ -5630,7 +5630,7 @@ btf_get_prog_ctx_type(struct bpf_verifier_log *log, const struct btf *btf,
 
 	conv_struct = bpf_ctx_convert.t;
 	if (!conv_struct) {
-		bpf_log(log, "btf_vmlinux is malformed\n");
+		bpf_log(log, "btf_vmfreax is malformed\n");
 		return NULL;
 	}
 	t = btf_type_by_id(btf, t->type);
@@ -5651,18 +5651,18 @@ btf_get_prog_ctx_type(struct bpf_verifier_log *log, const struct btf *btf,
 	}
 	/* prog_type is valid bpf program type. No need for bounds check. */
 	ctx_type = btf_type_member(conv_struct) + bpf_ctx_convert_map[prog_type] * 2;
-	/* ctx_struct is a pointer to prog_ctx_type in vmlinux.
+	/* ctx_struct is a pointer to prog_ctx_type in vmfreax.
 	 * Like 'struct __sk_buff'
 	 */
-	ctx_struct = btf_type_by_id(btf_vmlinux, ctx_type->type);
+	ctx_struct = btf_type_by_id(btf_vmfreax, ctx_type->type);
 	if (!ctx_struct)
 		/* should not happen */
 		return NULL;
 again:
-	ctx_tname = btf_name_by_offset(btf_vmlinux, ctx_struct->name_off);
+	ctx_tname = btf_name_by_offset(btf_vmfreax, ctx_struct->name_off);
 	if (!ctx_tname) {
 		/* should not happen */
-		bpf_log(log, "Please fix kernel include/linux/bpf_types.h\n");
+		bpf_log(log, "Please fix kernel include/freax/bpf_types.h\n");
 		return NULL;
 	}
 	/* only compare that prog's ctx type name is the same as
@@ -5683,13 +5683,13 @@ again:
 		if (!btf_type_is_modifier(ctx_struct))
 			return NULL;
 		while (btf_type_is_modifier(ctx_struct))
-			ctx_struct = btf_type_by_id(btf_vmlinux, ctx_struct->type);
+			ctx_struct = btf_type_by_id(btf_vmfreax, ctx_struct->type);
 		goto again;
 	}
 	return ctx_type;
 }
 
-static int btf_translate_to_vmlinux(struct bpf_verifier_log *log,
+static int btf_translate_to_vmfreax(struct bpf_verifier_log *log,
 				     struct btf *btf,
 				     const struct btf_type *t,
 				     enum bpf_prog_type prog_type,
@@ -5715,7 +5715,7 @@ int get_kern_ctx_btf_id(struct bpf_verifier_log *log, enum bpf_prog_type prog_ty
 	/* get member for kernel ctx type */
 	kctx_member = btf_type_member(conv_struct) + bpf_ctx_convert_map[prog_type] * 2 + 1;
 	kctx_type_id = kctx_member->type;
-	kctx_type = btf_type_by_id(btf_vmlinux, kctx_type_id);
+	kctx_type = btf_type_by_id(btf_vmfreax, kctx_type_id);
 	if (!btf_type_is_struct(kctx_type)) {
 		bpf_log(log, "kern ctx type id %u is not a struct\n", kctx_type_id);
 		return -EINVAL;
@@ -5727,7 +5727,7 @@ int get_kern_ctx_btf_id(struct bpf_verifier_log *log, enum bpf_prog_type prog_ty
 BTF_ID_LIST(bpf_ctx_convert_btf_id)
 BTF_ID(struct, bpf_ctx_convert)
 
-struct btf *btf_parse_vmlinux(void)
+struct btf *btf_parse_vmfreax(void)
 {
 	struct btf_verifier_env *env = NULL;
 	struct bpf_verifier_log *log;
@@ -5751,7 +5751,7 @@ struct btf *btf_parse_vmlinux(void)
 	btf->data = __start_BTF;
 	btf->data_size = __stop_BTF - __start_BTF;
 	btf->kernel_btf = true;
-	snprintf(btf->name, sizeof(btf->name), "vmlinux");
+	snprintf(btf->name, sizeof(btf->name), "vmfreax");
 
 	err = btf_parse_hdr(env);
 	if (err)
@@ -5771,7 +5771,7 @@ struct btf *btf_parse_vmlinux(void)
 	if (err)
 		goto errout;
 
-	/* btf_parse_vmlinux() runs under bpf_verifier_lock */
+	/* btf_parse_vmfreax() runs under bpf_verifier_lock */
 	bpf_ctx_convert.t = btf_type_by_id(btf, bpf_ctx_convert_btf_id[0]);
 
 	bpf_struct_ops_init(btf, log);
@@ -5803,7 +5803,7 @@ static struct btf *btf_parse_module(const char *module_name, const void *data, u
 	struct btf *btf = NULL, *base_btf;
 	int err;
 
-	base_btf = bpf_get_btf_vmlinux();
+	base_btf = bpf_get_btf_vmfreax();
 	if (IS_ERR(base_btf))
 		return base_btf;
 	if (!base_btf)
@@ -6069,7 +6069,7 @@ bool btf_ctx_access(int off, int size, enum bpf_access_type type,
 			}
 
 			info->reg_type = ctx_arg_info->reg_type;
-			info->btf = btf_vmlinux;
+			info->btf = btf_vmfreax;
 			info->btf_id = ctx_arg_info->btf_id;
 			return true;
 		}
@@ -6087,9 +6087,9 @@ bool btf_ctx_access(int off, int size, enum bpf_access_type type,
 		else
 			tgt_type = tgt_prog->type;
 
-		ret = btf_translate_to_vmlinux(log, btf, t, tgt_type, arg);
+		ret = btf_translate_to_vmfreax(log, btf, t, tgt_type, arg);
 		if (ret > 0) {
-			info->btf = btf_vmlinux;
+			info->btf = btf_vmfreax;
 			info->btf_id = ret;
 			return true;
 		} else {
@@ -6469,7 +6469,7 @@ int btf_struct_access(struct bpf_verifier_log *log,
 /* Check that two BTF types, each specified as an BTF object + id, are exactly
  * the same. Trivial ID check is not enough due to module BTFs, because we can
  * end up with two different module BTFs, but IDs point to the common type in
- * vmlinux BTF.
+ * vmfreax BTF.
  */
 bool btf_types_are_same(const struct btf *btf1, u32 id1,
 			const struct btf *btf2, u32 id2)
@@ -7335,7 +7335,7 @@ bool btf_is_kernel(const struct btf *btf)
 
 bool btf_is_module(const struct btf *btf)
 {
-	return btf->kernel_btf && strcmp(btf->name, "vmlinux") != 0;
+	return btf->kernel_btf && strcmp(btf->name, "vmfreax") != 0;
 }
 
 enum {
@@ -7524,7 +7524,7 @@ static struct btf *btf_get_module_btf(const struct module *module)
 	struct btf *btf = NULL;
 
 	if (!module) {
-		btf = bpf_get_btf_vmlinux();
+		btf = bpf_get_btf_vmfreax();
 		if (!IS_ERR_OR_NULL(btf))
 			btf_get(btf);
 		return btf;
@@ -7696,7 +7696,7 @@ static int btf_populate_kfunc_set(struct btf *btf, enum btf_kfunc_hook hook,
 {
 	struct btf_kfunc_hook_filter *hook_filter;
 	struct btf_id_set8 *add_set = kset->set;
-	bool vmlinux_set = !btf_is_module(btf);
+	bool vmfreax_set = !btf_is_module(btf);
 	bool add_filter = !!kset->filter;
 	struct btf_kfunc_set_tab *tab;
 	struct btf_id_set8 *set;
@@ -7741,7 +7741,7 @@ static int btf_populate_kfunc_set(struct btf *btf, enum btf_kfunc_hook hook,
 	/* Warn when register_btf_kfunc_id_set is called twice for the same hook
 	 * for module sets.
 	 */
-	if (WARN_ON_ONCE(set && !vmlinux_set)) {
+	if (WARN_ON_ONCE(set && !vmfreax_set)) {
 		ret = -EINVAL;
 		goto end;
 	}
@@ -7750,12 +7750,12 @@ static int btf_populate_kfunc_set(struct btf *btf, enum btf_kfunc_hook hook,
 	 * only one is allowed per hook. Hence, we can directly assign the
 	 * pointer and return.
 	 */
-	if (!vmlinux_set) {
+	if (!vmfreax_set) {
 		tab->sets[hook] = add_set;
 		goto do_add_filter;
 	}
 
-	/* In case of vmlinux sets, there may be more than one set being
+	/* In case of vmfreax sets, there may be more than one set being
 	 * registered per hook. To create a unified set, we allocate a new set
 	 * and concatenate all individual sets being registered. While each set
 	 * is individually sorted, they may become unsorted when concatenated,
@@ -7908,7 +7908,7 @@ static int __register_btf_kfunc_id_set(enum btf_kfunc_hook hook,
 	btf = btf_get_module_btf(kset->owner);
 	if (!btf) {
 		if (!kset->owner && IS_ENABLED(CONFIG_DEBUG_INFO_BTF)) {
-			pr_err("missing vmlinux BTF, cannot register kfuncs\n");
+			pr_err("missing vmfreax BTF, cannot register kfuncs\n");
 			return -ENOENT;
 		}
 		if (kset->owner && IS_ENABLED(CONFIG_DEBUG_INFO_BTF_MODULES))
@@ -7995,7 +7995,7 @@ static int btf_check_dtor_kfuncs(struct btf *btf, const struct btf_id_dtor_kfunc
 			return -EINVAL;
 		args = btf_params(dtor_func_proto);
 		t = btf_type_by_id(btf, args[0].type);
-		/* Allow any pointer type, as width on targets Linux supports
+		/* Allow any pointer type, as width on targets freax supports
 		 * will be same for all pointer types (i.e. sizeof(void *))
 		 */
 		if (!t || !btf_type_is_ptr(t))
@@ -8016,7 +8016,7 @@ int register_btf_id_dtor_kfuncs(const struct btf_id_dtor_kfunc *dtors, u32 add_c
 	btf = btf_get_module_btf(owner);
 	if (!btf) {
 		if (!owner && IS_ENABLED(CONFIG_DEBUG_INFO_BTF)) {
-			pr_err("missing vmlinux BTF, cannot register dtor kfuncs\n");
+			pr_err("missing vmfreax BTF, cannot register dtor kfuncs\n");
 			return -ENOENT;
 		}
 		if (owner && IS_ENABLED(CONFIG_DEBUG_INFO_BTF_MODULES)) {
@@ -8164,8 +8164,8 @@ static void bpf_free_cands_from_cache(struct bpf_cand_cache *cands)
 	kfree(cands);
 }
 
-#define VMLINUX_CAND_CACHE_SIZE 31
-static struct bpf_cand_cache *vmlinux_cand_cache[VMLINUX_CAND_CACHE_SIZE];
+#define VMfreax_CAND_CACHE_SIZE 31
+static struct bpf_cand_cache *vmfreax_cand_cache[VMfreax_CAND_CACHE_SIZE];
 
 #define MODULE_CAND_CACHE_SIZE 31
 static struct bpf_cand_cache *module_cand_cache[MODULE_CAND_CACHE_SIZE];
@@ -8196,8 +8196,8 @@ static void __print_cand_cache(struct bpf_verifier_log *log,
 static void print_cand_cache(struct bpf_verifier_log *log)
 {
 	mutex_lock(&cand_cache_mutex);
-	bpf_log(log, "vmlinux_cand_cache:");
-	__print_cand_cache(log, vmlinux_cand_cache, VMLINUX_CAND_CACHE_SIZE);
+	bpf_log(log, "vmfreax_cand_cache:");
+	__print_cand_cache(log, vmfreax_cand_cache, VMfreax_CAND_CACHE_SIZE);
 	bpf_log(log, "\nmodule_cand_cache:");
 	__print_cand_cache(log, module_cand_cache, MODULE_CAND_CACHE_SIZE);
 	bpf_log(log, "\n");
@@ -8356,7 +8356,7 @@ bpf_core_find_cands(struct bpf_core_ctx *ctx, u32 local_type_id)
 	const char *name;
 	int id;
 
-	main_btf = bpf_get_btf_vmlinux();
+	main_btf = bpf_get_btf_vmfreax();
 	if (IS_ERR(main_btf))
 		return ERR_CAST(main_btf);
 	if (!main_btf)
@@ -8376,7 +8376,7 @@ bpf_core_find_cands(struct bpf_core_ctx *ctx, u32 local_type_id)
 	cands->kind = btf_kind(local_type);
 	cands->name_len = local_essent_len;
 
-	cc = check_cand_cache(cands, vmlinux_cand_cache, VMLINUX_CAND_CACHE_SIZE);
+	cc = check_cand_cache(cands, vmfreax_cand_cache, VMfreax_CAND_CACHE_SIZE);
 	/* cands is a pointer to stack here */
 	if (cc) {
 		if (cc->cnt)
@@ -8384,7 +8384,7 @@ bpf_core_find_cands(struct bpf_core_ctx *ctx, u32 local_type_id)
 		goto check_modules;
 	}
 
-	/* Attempt to find target candidates in vmlinux BTF first */
+	/* Attempt to find target candidates in vmfreax BTF first */
 	cands = bpf_core_add_cands(cands, main_btf, 1);
 	if (IS_ERR(cands))
 		return ERR_CAST(cands);
@@ -8392,11 +8392,11 @@ bpf_core_find_cands(struct bpf_core_ctx *ctx, u32 local_type_id)
 	/* cands is a pointer to kmalloced memory here if cands->cnt > 0 */
 
 	/* populate cache even when cands->cnt == 0 */
-	cc = populate_cand_cache(cands, vmlinux_cand_cache, VMLINUX_CAND_CACHE_SIZE);
+	cc = populate_cand_cache(cands, vmfreax_cand_cache, VMfreax_CAND_CACHE_SIZE);
 	if (IS_ERR(cc))
 		return ERR_CAST(cc);
 
-	/* if vmlinux BTF has any candidate, don't go for module BTFs */
+	/* if vmfreax BTF has any candidate, don't go for module BTFs */
 	if (cc->cnt)
 		return cc;
 
@@ -8407,7 +8407,7 @@ check_modules:
 		/* if cache has it return it even if cc->cnt == 0 */
 		return cc;
 
-	/* If candidate is not found in vmlinux's BTF then search in module's BTFs */
+	/* If candidate is not found in vmfreax's BTF then search in module's BTFs */
 	spin_lock_bh(&btf_idr_lock);
 	idr_for_each_entry(&btf_idr, mod_btf, id) {
 		if (!btf_is_module(mod_btf))

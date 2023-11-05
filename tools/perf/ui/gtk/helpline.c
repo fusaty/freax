@@ -2,7 +2,7 @@
 #include "gtk.h"
 #include <stdio.h>
 #include <string.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "../ui.h"
 #include "../helpline.h"

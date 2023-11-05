@@ -8,15 +8,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/mm.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
+#include <freax/uaccess.h>
+#include <freax/smp.h>
+#include <freax/perf_event.h>
+#include <freax/extable.h>
 
 #include <asm/setup.h>
 

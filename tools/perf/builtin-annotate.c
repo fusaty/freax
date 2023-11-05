@@ -9,10 +9,10 @@
 #include "builtin.h"
 
 #include "util/color.h"
-#include <linux/list.h>
+#include <freax/list.h>
 #include "util/cache.h"
-#include <linux/rbtree.h>
-#include <linux/zalloc.h>
+#include <freax/rbtree.h>
+#include <freax/zalloc.h>
 #include "util/symbol.h"
 
 #include "util/debug.h"
@@ -39,8 +39,8 @@
 
 #include <dlfcn.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
+#include <freax/bitmap.h>
+#include <freax/err.h>
 
 struct perf_annotate {
 	struct perf_tool tool;
@@ -552,10 +552,10 @@ int cmd_annotate(int argc, const char **argv)
 #endif
 	OPT_BOOLEAN(0, "stdio", &annotate.use_stdio, "Use the stdio interface"),
 	OPT_BOOLEAN(0, "stdio2", &annotate.use_stdio2, "Use the stdio interface"),
-	OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-                    "don't load vmlinux even if found"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_BOOLEAN(0, "ignore-vmfreax", &symbol_conf.ignore_vmfreax,
+                    "don't load vmfreax even if found"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
 	OPT_BOOLEAN('m', "modules", &symbol_conf.use_modules,
 		    "load module symbols - WARNING: use only with -k and LIVE kernel"),
 	OPT_BOOLEAN('l', "print-line", &annotate.opts.print_lines,
@@ -685,7 +685,7 @@ int cmd_annotate(int argc, const char **argv)
 	if (ret < 0)
 		goto out_delete;
 
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmfreax_path = true;
 
 	ret = symbol__init(&annotate.session->header.env);
 	if (ret < 0)

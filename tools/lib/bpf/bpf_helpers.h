@@ -4,7 +4,7 @@
 
 /*
  * Note that bpf programs need to include either
- * vmlinux.h (auto-generated from BTF) or linux/types.h
+ * vmfreax.h (auto-generated from BTF) or freax/types.h
  * in advance since bpf_helper_defs.h uses such types
  * as __u64.
  */
@@ -41,7 +41,7 @@
 
 #endif
 
-/* Avoid 'linux/stddef.h' definition of '__always_inline'. */
+/* Avoid 'freax/stddef.h' definition of '__always_inline'. */
 #undef __always_inline
 #define __always_inline inline __attribute__((always_inline))
 
@@ -60,10 +60,10 @@
  */
 #define __hidden __attribute__((visibility("hidden")))
 
-/* When utilizing vmlinux.h with BPF CO-RE, user BPF programs can't include
- * any system-level headers (such as stddef.h, linux/version.h, etc), and
+/* When utilizing vmfreax.h with BPF CO-RE, user BPF programs can't include
+ * any system-level headers (such as stddef.h, freax/version.h, etc), and
  * commonly-used macros like NULL and KERNEL_VERSION aren't available through
- * vmlinux.h. This just adds unnecessary hurdles and forces users to re-define
+ * vmfreax.h. This just adds unnecessary hurdles and forces users to re-define
  * them on their own. So as a convenience, provide such definitions here.
  */
 #ifndef NULL

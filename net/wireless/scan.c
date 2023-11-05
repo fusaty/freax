@@ -7,15 +7,15 @@
  * Copyright 2016	Intel Deutschland GmbH
  * Copyright (C) 2018-2023 Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/nl80211.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/wireless.h>
+#include <freax/nl80211.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/bitfield.h>
 #include <net/arp.h>
 #include <net/cfg80211.h>
 #include <net/cfg80211-wext.h>

@@ -6,7 +6,7 @@
 #ifndef __SYSFS_GT_PM_H__
 #define __SYSFS_GT_PM_H__
 
-#include <linux/kobject.h>
+#include <freax/kobject.h>
 
 #include "intel_gt_types.h"
 

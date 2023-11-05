@@ -1,40 +1,40 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/memory_hotplug.c
+ *  freax/mm/memory_hotplug.c
  *
  *  Copyright (C)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/memory.h>
-#include <linux/memremap.h>
-#include <linux/memory_hotplug.h>
-#include <linux/vmalloc.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/migrate.h>
-#include <linux/page-isolation.h>
-#include <linux/pfn.h>
-#include <linux/suspend.h>
-#include <linux/mm_inline.h>
-#include <linux/firmware-map.h>
-#include <linux/stop_machine.h>
-#include <linux/hugetlb.h>
-#include <linux/memblock.h>
-#include <linux/compaction.h>
-#include <linux/rmap.h>
-#include <linux/module.h>
+#include <freax/stddef.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/swap.h>
+#include <freax/interrupt.h>
+#include <freax/pagemap.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/writeback.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/cpu.h>
+#include <freax/memory.h>
+#include <freax/memremap.h>
+#include <freax/memory_hotplug.h>
+#include <freax/vmalloc.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/migrate.h>
+#include <freax/page-isolation.h>
+#include <freax/pfn.h>
+#include <freax/suspend.h>
+#include <freax/mm_inline.h>
+#include <freax/firmware-map.h>
+#include <freax/stop_machine.h>
+#include <freax/hugetlb.h>
+#include <freax/memblock.h>
+#include <freax/compaction.h>
+#include <freax/rmap.h>
+#include <freax/module.h>
 
 #include <asm/tlbflush.h>
 

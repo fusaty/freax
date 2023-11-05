@@ -9,8 +9,8 @@
  * Copyright (C) 2004, 2013 Intel Corp.
  * Author: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
-#include <linux/acpi.h>
-#include <linux/container.h>
+#include <freax/acpi.h>
+#include <freax/container.h>
 
 #include "internal.h"
 

@@ -4,20 +4,20 @@
  * Copyright (C) 2016 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/spinlock.h>
+#include <freax/err.h>
+#include <freax/pm_runtime.h>
+#include <freax/spi/spi.h>
 
 #ifdef CONFIG_LANTIQ
 #include <lantiq_soc.h>

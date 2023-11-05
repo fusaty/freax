@@ -7,8 +7,8 @@
  * Commit ID: c30fb4bf0281cd4a7133bdab6682f9e43c872ada
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 
 #include "vcap_api.h"
 #include "vcap_model_kunit.h"

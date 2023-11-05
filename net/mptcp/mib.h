@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-enum linux_mptcp_mib_field {
+enum freax_mptcp_mib_field {
 	MPTCP_MIB_NUM = 0,
 	MPTCP_MIB_MPCAPABLEPASSIVE,	/* Received SYN with MP_CAPABLE */
 	MPTCP_MIB_MPCAPABLEACTIVE,	/* Sent SYN with MP_CAPABLE */
@@ -68,13 +68,13 @@ enum linux_mptcp_mib_field {
 	__MPTCP_MIB_MAX
 };
 
-#define LINUX_MIB_MPTCP_MAX	__MPTCP_MIB_MAX
+#define freax_MIB_MPTCP_MAX	__MPTCP_MIB_MAX
 struct mptcp_mib {
-	unsigned long mibs[LINUX_MIB_MPTCP_MAX];
+	unsigned long mibs[freax_MIB_MPTCP_MAX];
 };
 
 static inline void MPTCP_ADD_STATS(struct net *net,
-				   enum linux_mptcp_mib_field field,
+				   enum freax_mptcp_mib_field field,
 				   int val)
 {
 	if (likely(net->mib.mptcp_statistics))
@@ -82,14 +82,14 @@ static inline void MPTCP_ADD_STATS(struct net *net,
 }
 
 static inline void MPTCP_INC_STATS(struct net *net,
-				   enum linux_mptcp_mib_field field)
+				   enum freax_mptcp_mib_field field)
 {
 	if (likely(net->mib.mptcp_statistics))
 		SNMP_INC_STATS(net->mib.mptcp_statistics, field);
 }
 
 static inline void __MPTCP_INC_STATS(struct net *net,
-				     enum linux_mptcp_mib_field field)
+				     enum freax_mptcp_mib_field field)
 {
 	if (likely(net->mib.mptcp_statistics))
 		__SNMP_INC_STATS(net->mib.mptcp_statistics, field);

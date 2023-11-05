@@ -10,16 +10,16 @@
  * Balaji Rao <balajirrao@openmoko.org>
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/power/twl4030_madc_battery.h>
-#include <linux/iio/consumer.h>
+#include <freax/module.h>
+#include <freax/param.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/power/twl4030_madc_battery.h>
+#include <freax/iio/consumer.h>
 
 struct twl4030_madc_battery {
 	struct power_supply *psy;

@@ -6,8 +6,8 @@
 #ifndef IXP4XX_QMGR_H
 #define IXP4XX_QMGR_H
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
 
 #define DEBUG_QMGR	0
 

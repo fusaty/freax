@@ -8,7 +8,7 @@
 
 #define pr_fmt(fmt) "ACPI FPDT: " fmt
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 /*
  * FPDT contains ACPI table header and a number of fpdt_subtable_entries.
@@ -144,7 +144,7 @@ static const struct attribute_group boot_attr_group = {
 static struct kobject *fpdt_kobj;
 
 #if defined CONFIG_X86 && defined CONFIG_PHYS_ADDR_T_64BIT
-#include <linux/processor.h>
+#include <freax/processor.h>
 static bool fpdt_address_valid(u64 address)
 {
 	/*

@@ -8,12 +8,12 @@
  * to VFIO platform.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "../vfio_platform_private.h"
 

@@ -7,19 +7,19 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/i2c.h>
+#include <freax/mfd/core.h>
+#include <freax/regmap.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
-#include <linux/mfd/lm3533.h>
+#include <freax/mfd/lm3533.h>
 
 
 #define LM3533_BOOST_OVP_MASK		0x06

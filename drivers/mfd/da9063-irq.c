@@ -7,13 +7,13 @@
  * Author: Michal Hajduk, Dialog Semiconductor
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/mfd/da9063/core.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/irq.h>
+#include <freax/mfd/core.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/mfd/da9063/core.h>
 
 #define	DA9063_REG_EVENT_A_OFFSET	0
 #define	DA9063_REG_EVENT_B_OFFSET	1

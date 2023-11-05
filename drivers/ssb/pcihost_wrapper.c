@@ -11,11 +11,11 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/pm.h>
-#include <linux/pci.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/ssb/ssb.h>
+#include <freax/pm.h>
+#include <freax/pci.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/ssb/ssb.h>
 
 
 #ifdef CONFIG_PM_SLEEP

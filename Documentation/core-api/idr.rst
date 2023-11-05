@@ -66,7 +66,7 @@ to the IDR being unable to allocate memory.  To work around this,
 you can call idr_preload() before taking the lock, and then
 idr_preload_end() after the allocation.
 
-.. kernel-doc:: include/linux/idr.h
+.. kernel-doc:: include/freax/idr.h
    :doc: idr sync
 
 IDA usage
@@ -78,7 +78,7 @@ IDA usage
 Functions and structures
 ========================
 
-.. kernel-doc:: include/linux/idr.h
+.. kernel-doc:: include/freax/idr.h
    :functions:
 .. kernel-doc:: lib/idr.c
    :functions:

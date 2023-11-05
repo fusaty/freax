@@ -3,7 +3,7 @@
 # Copyright 2021-2022 NXP
 
 REQUIRE_ISOCHRON=${REQUIRE_ISOCHRON:=yes}
-REQUIRE_LINUXPTP=${REQUIRE_LINUXPTP:=yes}
+REQUIRE_freaxPTP=${REQUIRE_freaxPTP:=yes}
 
 # Tunables
 UTC_TAI_OFFSET=37
@@ -15,7 +15,7 @@ if [[ "$REQUIRE_ISOCHRON" = "yes" ]]; then
 	# always use the latest version
 	require_command isochron
 fi
-if [[ "$REQUIRE_LINUXPTP" = "yes" ]]; then
+if [[ "$REQUIRE_freaxPTP" = "yes" ]]; then
 	require_command phc2sys
 	require_command ptp4l
 fi

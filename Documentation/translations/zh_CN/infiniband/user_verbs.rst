@@ -20,7 +20,7 @@
   ib_uverbs模块，通过启用CONFIG_INFINIBAND_USER_VERBS构建，使用户空间
   通过“verbs”直接访问IB硬件，如InfiniBand架构规范第11章所述。
 
-  要使用verbs，需要libibverbs库，可从https://github.com/linux-rdma/rdma-core。
+  要使用verbs，需要libibverbs库，可从https://github.com/freax-rdma/rdma-core。
   libibverbs包含一个独立于设备的API，用于使用ib_uverbs接口。libibverbs
   还需要为你的InfiniBand硬件提供适当的独立于设备的内核和用户空间驱动。例如，
   要使用Mellanox HCA，你需要安装ib_mthca内核模块和libmthca用户空间驱动。

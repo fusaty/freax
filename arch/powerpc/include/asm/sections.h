@@ -3,8 +3,8 @@
 #define _ASM_POWERPC_SECTIONS_H
 #ifdef __KERNEL__
 
-#include <linux/elf.h>
-#include <linux/uaccess.h>
+#include <freax/elf.h>
+#include <freax/uaccess.h>
 
 #ifdef CONFIG_HAVE_FUNCTION_DESCRIPTORS
 typedef struct func_desc func_desc_t;

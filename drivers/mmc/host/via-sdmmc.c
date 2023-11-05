@@ -4,14 +4,14 @@
  *  Copyright (c) 2008, VIA Technologies Inc. All Rights Reserved.
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
 
-#include <linux/mmc/host.h>
+#include <freax/mmc/host.h>
 
 #define DRV_NAME	"via_sdmmc"
 

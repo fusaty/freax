@@ -27,19 +27,19 @@
  * UBI_IOCVOLCRBLK and UBI_IOCVOLRMBLK.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/mtd/ubi.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/hdreg.h>
-#include <linux/scatterlist.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/mtd/ubi.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq.h>
+#include <freax/hdreg.h>
+#include <freax/scatterlist.h>
+#include <freax/idr.h>
 #include <asm/div64.h>
 
 #include "ubi-media.h"

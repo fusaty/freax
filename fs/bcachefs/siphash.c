@@ -46,8 +46,8 @@
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/string.h>
 
 #include "siphash.h"
 

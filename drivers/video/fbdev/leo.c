@@ -2,23 +2,23 @@
 /* leo.c: LEO frame buffer driver
  *
  * Copyright (C) 2003, 2006 David S. Miller (davem@davemloft.net)
- * Copyright (C) 1996-1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1996-1999 Jakub Jelinek (jj@ultra.freax.cz)
  * Copyright (C) 1997 Michal Rehacek (Michal.Rehacek@st.mff.cuni.cz)
  *
  * Driver layout based loosely on tgafb.c, see that file for credits.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/fb.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/fbio.h>
 

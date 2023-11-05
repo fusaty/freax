@@ -6,14 +6,14 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
 #include <sound/soc.h>
 
 #include "../common/mtk-afe-fe-dai.h"

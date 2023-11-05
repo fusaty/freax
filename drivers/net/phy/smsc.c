@@ -12,17 +12,17 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/crc16.h>
-#include <linux/etherdevice.h>
-#include <linux/smscphy.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/of.h>
+#include <freax/phy.h>
+#include <freax/netdevice.h>
+#include <freax/crc16.h>
+#include <freax/etherdevice.h>
+#include <freax/smscphy.h>
 
 /* Vendor-specific PHY Definitions */
 /* EDPD NLP / crossover time configuration */

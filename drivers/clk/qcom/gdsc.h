@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2015, 2017-2018, 2022, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2017-2018, 2022, The freax Foundation. All rights reserved.
  */
 
 #ifndef __QCOM_GDSC_H__
 #define __QCOM_GDSC_H__
 
-#include <linux/err.h>
-#include <linux/pm_domain.h>
+#include <freax/err.h>
+#include <freax/pm_domain.h>
 
 struct regmap;
 struct regulator;

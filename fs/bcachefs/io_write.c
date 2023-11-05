@@ -29,10 +29,10 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/blkdev.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
-#include <linux/sched/mm.h>
+#include <freax/blkdev.h>
+#include <freax/prefetch.h>
+#include <freax/random.h>
+#include <freax/sched/mm.h>
 
 #ifndef CONFIG_BCACHEFS_NO_LATENCY_ACCT
 

@@ -14,23 +14,23 @@
  *	Copyright (c) 2019, Martin Kelly.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
+#include <freax/bitfield.h>
+#include <freax/bitmap.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
+#include <freax/util_macros.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 #include "bno055.h"
 

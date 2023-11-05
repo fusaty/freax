@@ -10,11 +10,11 @@
 #ifndef _FM_DRV_H
 #define _FM_DRV_H
 
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
+#include <freax/skbuff.h>
+#include <freax/interrupt.h>
 #include <sound/core.h>
 #include <sound/initval.h>
-#include <linux/timer.h>
+#include <freax/timer.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>

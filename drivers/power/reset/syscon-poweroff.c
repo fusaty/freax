@@ -6,14 +6,14 @@
  * Author: Moritz Fischer <moritz.fischer@ettus.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/notifier.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
 
 static struct regmap *map;
 static u32 offset;

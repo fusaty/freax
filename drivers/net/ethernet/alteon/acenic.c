@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * acenic.c: Linux driver for the Alteon AceNIC Gigabit Ethernet card
+ * acenic.c: freax driver for the Alteon AceNIC Gigabit Ethernet card
  *           and other Tigon based cards.
  *
  * Copyright 1998-2002 by Jes Sorensen, <jes@trained-monkey.org>.
@@ -10,11 +10,11 @@
  *
  * A mailing list for discussing the use of this driver has been
  * setup, please subscribe to the lists if you have any questions
- * about the driver. Send mail to linux-acenic-help@sunsite.auc.dk to
+ * about the driver. Send mail to freax-acenic-help@sunsite.auc.dk to
  * see how to subscribe.
  *
  * Additional credits:
- *   Pete Wyckoff <wyckoff@ca.sandia.gov>: Initial Linux/Alpha and trace
+ *   Pete Wyckoff <wyckoff@ca.sandia.gov>: Initial freax/Alpha and trace
  *       dump support. The trace dump support has not been
  *       integrated yet however.
  *   Troy Benjegerdes: Big Endian (PPC) patches.
@@ -24,10 +24,10 @@
  *   David S. Miller <davem@redhat.com>: conversion to new PCI dma mapping
  *                                       infrastructure and Sparc support
  *   Pierrick Pinasseau (CERN): For lending me an Ultra 5 to test the
- *                              driver under Linux/Sparc64
+ *                              driver under freax/Sparc64
  *   Matt Domsch <Matt_Domsch@dell.com>: Detect Alteon 1000baseT cards
  *                                       ETHTOOL_GDRVINFO support
- *   Chip Salzenberg <chip@valinux.com>: Fix race condition between tx
+ *   Chip Salzenberg <chip@vafreax.com>: Fix race condition between tx
  *                                       handler and close() cleanup.
  *   Ken Aaker <kdaaker@rchland.vnet.ibm.com>: Correct check for whether
  *                                       memory mapped IO is enabled to
@@ -46,28 +46,28 @@
  *   Grant Grundler <grundler@cup.hp.com>: PCI write posting fixes.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/sockios.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/if_vlan.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/sockios.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
+#include <freax/if_vlan.h>
 
 #ifdef SIOCETHTOOL
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 #endif
 
 #include <net/sock.h>
@@ -76,7 +76,7 @@
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 
 #define DRV_NAME "acenic"
@@ -262,7 +262,7 @@ MODULE_DEVICE_TABLE(pci, acenic_pci_tbl);
  * - NIC dump support.
  * - More tuning parameters.
  *
- * The mini ring is not used under Linux and I am not sure it makes sense
+ * The mini ring is not used under freax and I am not sure it makes sense
  * to actually use it.
  *
  * New interrupt handler strategy:
@@ -422,7 +422,7 @@ MODULE_PARM_DESC(tx_ratio, "AceNIC/3C985/GA620 ratio of NIC memory used for TX/R
 
 
 static const char version[] =
-  "acenic.c: v0.92 08/05/2002  Jes Sorensen, linux-acenic@SunSITE.dk\n"
+  "acenic.c: v0.92 08/05/2002  Jes Sorensen, freax-acenic@SunSITE.dk\n"
   "                            http://home.cern.ch/~jes/gige/acenic.html\n";
 
 static int ace_get_link_ksettings(struct net_device *,

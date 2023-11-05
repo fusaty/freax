@@ -6,15 +6,15 @@
  * Author: Imre Deak <imre.deak@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/memblock.h>
-#include <linux/io.h>
-#include <linux/omapfb.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/memblock.h>
+#include <freax/io.h>
+#include <freax/omapfb.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/mach/map.h>
 

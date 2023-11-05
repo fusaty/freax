@@ -5,18 +5,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/netfilter.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/in.h>
+#include <freax/udp.h>
+#include <freax/netfilter.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_tftp.h>
+#include <freax/netfilter/nf_conntrack_tftp.h>
 
 #define HELPER_NAME "tftp"
 

@@ -6,7 +6,7 @@
 #ifndef __INTEL_FB_PIN_H__
 #define __INTEL_FB_PIN_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_framebuffer;
 struct i915_vma;

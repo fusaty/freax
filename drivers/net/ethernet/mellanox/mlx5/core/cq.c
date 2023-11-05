@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/hardirq.h>
-#include <linux/mlx5/driver.h>
+#include <freax/kernel.h>
+#include <freax/hardirq.h>
+#include <freax/mlx5/driver.h>
 #include <rdma/ib_verbs.h>
-#include <linux/mlx5/cq.h>
+#include <freax/mlx5/cq.h>
 #include "mlx5_core.h"
 #include "lib/eq.h"
 

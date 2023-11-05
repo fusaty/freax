@@ -12,12 +12,12 @@
  * mcp4019	1	128		5, 10, 50, 100
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
 
 #define MCP4018_WIPER_MAX 127
 

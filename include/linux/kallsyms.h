@@ -3,15 +3,15 @@
  * module loader:
  *   Copyright 2002 Rusty Russell <rusty@rustcorp.com.au> IBM Corporation
  */
-#ifndef _LINUX_KALLSYMS_H
-#define _LINUX_KALLSYMS_H
+#ifndef _freax_KALLSYMS_H
+#define _freax_KALLSYMS_H
 
-#include <linux/errno.h>
-#include <linux/buildid.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <freax/errno.h>
+#include <freax/buildid.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/mm.h>
+#include <freax/module.h>
 
 #include <asm/sections.h>
 
@@ -172,4 +172,4 @@ static inline void print_ip_sym(const char *loglvl, unsigned long ip)
 	printk("%s[<%px>] %pS\n", loglvl, (void *) ip, (void *) ip);
 }
 
-#endif /*_LINUX_KALLSYMS_H*/
+#endif /*_freax_KALLSYMS_H*/

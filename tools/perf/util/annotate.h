@@ -5,9 +5,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
 #include <asm/bug.h>
 #include "symbol_conf.h"
 #include "mutex.h"
@@ -380,7 +380,7 @@ enum symbol_disassemble_errno {
 	 */
 	__SYMBOL_ANNOTATE_ERRNO__START		= -10000,
 
-	SYMBOL_ANNOTATE_ERRNO__NO_VMLINUX	= __SYMBOL_ANNOTATE_ERRNO__START,
+	SYMBOL_ANNOTATE_ERRNO__NO_VMfreax	= __SYMBOL_ANNOTATE_ERRNO__START,
 	SYMBOL_ANNOTATE_ERRNO__NO_LIBOPCODES_FOR_BPF,
 	SYMBOL_ANNOTATE_ERRNO__ARCH_INIT_CPUID_PARSING,
 	SYMBOL_ANNOTATE_ERRNO__ARCH_INIT_REGEXP,

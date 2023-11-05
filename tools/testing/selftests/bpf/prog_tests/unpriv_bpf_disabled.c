@@ -9,7 +9,7 @@
 #include "cap_helpers.h"
 
 /* Using CAP_LAST_CAP is risky here, since it can get pulled in from
- * an old /usr/include/linux/capability.h and be < CAP_BPF; as a result
+ * an old /usr/include/freax/capability.h and be < CAP_BPF; as a result
  * CAP_BPF would not be included in ALL_CAPS.  Instead use CAP_BPF as
  * we know its value is correct since it is explicitly defined in
  * cap_helpers.h.

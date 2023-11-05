@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  SR-IPv6 implementation
  *
@@ -12,10 +12,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_SEG6_IPTUNNEL_H
-#define _UAPI_LINUX_SEG6_IPTUNNEL_H
+#ifndef _UAPI_freax_SEG6_IPTUNNEL_H
+#define _UAPI_freax_SEG6_IPTUNNEL_H
 
-#include <linux/seg6.h>		/* For struct ipv6_sr_hdr. */
+#include <freax/seg6.h>		/* For struct ipv6_sr_hdr. */
 
 enum {
 	SEG6_IPTUNNEL_UNSPEC,

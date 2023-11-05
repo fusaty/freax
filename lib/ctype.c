@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/lib/ctype.c
+ *  freax/lib/ctype.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/ctype.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <freax/ctype.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
 
 const unsigned char _ctype[] = {
 _C,_C,_C,_C,_C,_C,_C,_C,				/* 0-7 */

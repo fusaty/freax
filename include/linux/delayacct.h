@@ -4,10 +4,10 @@
  * Copyright (C) Shailabh Nagar, IBM Corp. 2006
  */
 
-#ifndef _LINUX_DELAYACCT_H
-#define _LINUX_DELAYACCT_H
+#ifndef _freax_DELAYACCT_H
+#define _freax_DELAYACCT_H
 
-#include <uapi/linux/taskstats.h>
+#include <uapi/freax/taskstats.h>
 
 #ifdef CONFIG_TASK_DELAY_ACCT
 struct task_delay_info {
@@ -58,9 +58,9 @@ struct task_delay_info {
 };
 #endif
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/jump_label.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/jump_label.h>
 
 #ifdef CONFIG_TASK_DELAY_ACCT
 DECLARE_STATIC_KEY_FALSE(delayacct_key);

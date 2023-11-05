@@ -11,9 +11,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/linkage.h>
 
 #define __ARCH_WANT_NEW_STAT
 #define __ARCH_WANT_OLD_READDIR

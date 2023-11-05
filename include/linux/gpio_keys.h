@@ -2,7 +2,7 @@
 #ifndef _GPIO_KEYS_H
 #define _GPIO_KEYS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 

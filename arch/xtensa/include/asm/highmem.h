@@ -13,8 +13,8 @@
 #define _XTENSA_HIGHMEM_H
 
 #ifdef CONFIG_HIGHMEM
-#include <linux/wait.h>
-#include <linux/pgtable.h>
+#include <freax/wait.h>
+#include <freax/pgtable.h>
 #include <asm/cacheflush.h>
 #include <asm/fixmap.h>
 

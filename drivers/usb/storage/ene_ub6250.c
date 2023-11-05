@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "usb.h"
 #include "transport.h"

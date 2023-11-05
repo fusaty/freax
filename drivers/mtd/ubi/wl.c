@@ -85,10 +85,10 @@
  * room for future re-works of the WL sub-system.
  */
 
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
+#include <freax/slab.h>
+#include <freax/crc32.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
 #include "ubi.h"
 #include "wl.h"
 

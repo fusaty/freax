@@ -2,21 +2,21 @@
 // BQ256XX Battery Charger Driver
 // Copyright (C) 2020 Texas Instruments Incorporated - http://www.ti.com/
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/usb/phy.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
+#include <freax/usb/phy.h>
+#include <freax/device.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
 
 #define BQ256XX_MANUFACTURER "Texas Instruments"
 

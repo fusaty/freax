@@ -16,22 +16,22 @@
  * (e.g. "11" for 1.1).
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/dma-mapping.h>
 
 #include <soc/fsl/qe/ucc_slow.h>
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <soc/fsl/cpm.h>
 
 #ifdef CONFIG_PPC32

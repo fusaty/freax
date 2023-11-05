@@ -16,7 +16,7 @@
 #include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
-#include <linux/thermal.h>
+#include <freax/thermal.h>
 
 #include <libconfig.h>
 #include "thermal-tools.h"

@@ -5,7 +5,7 @@
 #include "evsel.h"
 #include "counts.h"
 #include <perf/threadmap.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 struct perf_counts *perf_counts__new(int ncpus, int nthreads)
 {

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/init/main.c
+ *  freax/init/main.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -12,93 +12,93 @@
 
 #define DEBUG		/* Enable initcall_debug */
 
-#include <linux/types.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/binfmts.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/stackprotector.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/bootconfig.h>
-#include <linux/console.h>
-#include <linux/nmi.h>
-#include <linux/percpu.h>
-#include <linux/kmod.h>
-#include <linux/kprobes.h>
-#include <linux/kmsan.h>
-#include <linux/vmalloc.h>
-#include <linux/kernel_stat.h>
-#include <linux/start_kernel.h>
-#include <linux/security.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/kfence.h>
-#include <linux/rcupdate.h>
-#include <linux/srcu.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/buildid.h>
-#include <linux/writeback.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/cgroup.h>
-#include <linux/efi.h>
-#include <linux/tick.h>
-#include <linux/sched/isolation.h>
-#include <linux/interrupt.h>
-#include <linux/taskstats_kern.h>
-#include <linux/delayacct.h>
-#include <linux/unistd.h>
-#include <linux/utsname.h>
-#include <linux/rmap.h>
-#include <linux/mempolicy.h>
-#include <linux/key.h>
-#include <linux/debug_locks.h>
-#include <linux/debugobjects.h>
-#include <linux/lockdep.h>
-#include <linux/kmemleak.h>
-#include <linux/padata.h>
-#include <linux/pid_namespace.h>
-#include <linux/device/driver.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/sched/init.h>
-#include <linux/signal.h>
-#include <linux/idr.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
-#include <linux/async.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/pti.h>
-#include <linux/blkdev.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/context_tracking.h>
-#include <linux/random.h>
-#include <linux/list.h>
-#include <linux/integrity.h>
-#include <linux/proc_ns.h>
-#include <linux/io.h>
-#include <linux/cache.h>
-#include <linux/rodata_test.h>
-#include <linux/jump_label.h>
-#include <linux/kcsan.h>
-#include <linux/init_syscalls.h>
-#include <linux/stackdepot.h>
-#include <linux/randomize_kstack.h>
+#include <freax/types.h>
+#include <freax/extable.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/binfmts.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/stackprotector.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/memblock.h>
+#include <freax/acpi.h>
+#include <freax/bootconfig.h>
+#include <freax/console.h>
+#include <freax/nmi.h>
+#include <freax/percpu.h>
+#include <freax/kmod.h>
+#include <freax/kprobes.h>
+#include <freax/kmsan.h>
+#include <freax/vmalloc.h>
+#include <freax/kernel_stat.h>
+#include <freax/start_kernel.h>
+#include <freax/security.h>
+#include <freax/smp.h>
+#include <freax/profile.h>
+#include <freax/kfence.h>
+#include <freax/rcupdate.h>
+#include <freax/srcu.h>
+#include <freax/moduleparam.h>
+#include <freax/kallsyms.h>
+#include <freax/buildid.h>
+#include <freax/writeback.h>
+#include <freax/cpu.h>
+#include <freax/cpuset.h>
+#include <freax/cgroup.h>
+#include <freax/efi.h>
+#include <freax/tick.h>
+#include <freax/sched/isolation.h>
+#include <freax/interrupt.h>
+#include <freax/taskstats_kern.h>
+#include <freax/delayacct.h>
+#include <freax/unistd.h>
+#include <freax/utsname.h>
+#include <freax/rmap.h>
+#include <freax/mempolicy.h>
+#include <freax/key.h>
+#include <freax/debug_locks.h>
+#include <freax/debugobjects.h>
+#include <freax/lockdep.h>
+#include <freax/kmemleak.h>
+#include <freax/padata.h>
+#include <freax/pid_namespace.h>
+#include <freax/device/driver.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/sched/init.h>
+#include <freax/signal.h>
+#include <freax/idr.h>
+#include <freax/kgdb.h>
+#include <freax/ftrace.h>
+#include <freax/async.h>
+#include <freax/shmem_fs.h>
+#include <freax/slab.h>
+#include <freax/perf_event.h>
+#include <freax/ptrace.h>
+#include <freax/pti.h>
+#include <freax/blkdev.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/context_tracking.h>
+#include <freax/random.h>
+#include <freax/list.h>
+#include <freax/integrity.h>
+#include <freax/proc_ns.h>
+#include <freax/io.h>
+#include <freax/cache.h>
+#include <freax/rodata_test.h>
+#include <freax/jump_label.h>
+#include <freax/kcsan.h>
+#include <freax/init_syscalls.h>
+#include <freax/stackdepot.h>
+#include <freax/randomize_kstack.h>
 #include <net/net_namespace.h>
 
 #include <asm/io.h>
@@ -186,7 +186,7 @@ static int __init set_reset_devices(char *str)
 __setup("reset_devices", set_reset_devices);
 
 static const char *argv_init[MAX_INIT_ARGS+2] = { "init", NULL, };
-const char *envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=linux", NULL, };
+const char *envp_init[MAX_INIT_ENVS+2] = { "HOME=/", "TERM=freax", NULL, };
 static const char *panic_later, *panic_param;
 
 static bool __init obsolete_checksetup(char *line)
@@ -879,7 +879,7 @@ void start_kernel(void)
 	set_task_stack_end_magic(&init_task);
 	smp_setup_processor_id();
 	debug_objects_early_init();
-	init_vmlinux_build_id();
+	init_vmfreax_build_id();
 
 	cgroup_init_early();
 
@@ -892,7 +892,7 @@ void start_kernel(void)
 	 */
 	boot_cpu_init();
 	page_address_init();
-	pr_notice("%s", linux_banner);
+	pr_notice("%s", freax_banner);
 	early_security_init();
 	setup_arch(&command_line);
 	setup_boot_config();
@@ -1265,7 +1265,7 @@ static initcall_entry_t *initcall_levels[] __initdata = {
 	__initcall_end,
 };
 
-/* Keep these in sync with initcalls in include/linux/init.h */
+/* Keep these in sync with initcalls in include/freax/init.h */
 static const char *initcall_level_names[] __initdata = {
 	"pure",
 	"core",
@@ -1501,7 +1501,7 @@ static int __ref kernel_init(void *unused)
 		return 0;
 
 	panic("No working init found.  Try passing init= option to kernel. "
-	      "See Linux Documentation/admin-guide/init.rst for guidance.");
+	      "See freax Documentation/admin-guide/init.rst for guidance.");
 }
 
 /* Open /dev/console, for stdin/stdout/stderr, this should never fail */

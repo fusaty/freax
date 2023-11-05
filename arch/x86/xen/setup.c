@@ -5,16 +5,16 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/init.h>
-#include <linux/iscsi_ibft.h>
-#include <linux/sched.h>
-#include <linux/kstrtox.h>
-#include <linux/mm.h>
-#include <linux/pm.h>
-#include <linux/memblock.h>
-#include <linux/cpuidle.h>
-#include <linux/cpufreq.h>
-#include <linux/memory_hotplug.h>
+#include <freax/init.h>
+#include <freax/iscsi_ibft.h>
+#include <freax/sched.h>
+#include <freax/kstrtox.h>
+#include <freax/mm.h>
+#include <freax/pm.h>
+#include <freax/memblock.h>
+#include <freax/cpuidle.h>
+#include <freax/cpufreq.h>
+#include <freax/memory_hotplug.h>
 
 #include <asm/elf.h>
 #include <asm/vdso.h>

@@ -1,6 +1,6 @@
 /*
  * This file is part of the Chelsio T4 PCI-E SR-IOV Virtual Function Ethernet
- * driver for Linux.
+ * driver for freax.
  *
  * Copyright (c) 2009-2010 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,16 +35,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/debugfs.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/debugfs.h>
+#include <freax/ethtool.h>
+#include <freax/mdio.h>
 
 #include "t4vf_common.h"
 #include "t4vf_defs.h"
@@ -2520,7 +2520,7 @@ static int adap_init0(struct adapter *adapter)
 	u32 param, val = 0;
 
 	/*
-	 * Some environments do not properly handle PCIE FLRs -- e.g. in Linux
+	 * Some environments do not properly handle PCIE FLRs -- e.g. in freax
 	 * 2.6.31 and later we can't call pci_reset_function() in order to
 	 * issue an FLR because of a self- deadlock on the device semaphore.
 	 * Meanwhile, the OS infrastructure doesn't issue FLRs in all the

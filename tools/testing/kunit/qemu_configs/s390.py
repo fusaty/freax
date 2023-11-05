@@ -1,6 +1,6 @@
 from ..qemu_config import QemuArchParams
 
-QEMU_ARCH = QemuArchParams(linux_arch='s390',
+QEMU_ARCH = QemuArchParams(freax_arch='s390',
 			   kconfig='''
 CONFIG_EXPERT=y
 CONFIG_TUNE_ZEC12=y

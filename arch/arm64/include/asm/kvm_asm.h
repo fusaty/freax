@@ -47,7 +47,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 enum __kvm_host_smccc_func {
 	/* Hypercalls available only prior to pKVM finalisation */

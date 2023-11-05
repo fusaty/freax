@@ -8,7 +8,7 @@
  * Copyright (C) 2007 by Maciej W. Rozycki
  * Copyright (C) 2011, 2012 MIPS Technologies, Inc.
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/regdef.h>

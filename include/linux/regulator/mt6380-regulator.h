@@ -4,8 +4,8 @@
  * Author: Chenglin Xu <chenglin.xu@mediatek.com>
  */
 
-#ifndef __LINUX_REGULATOR_mt6380_H
-#define __LINUX_REGULATOR_mt6380_H
+#ifndef __freax_REGULATOR_mt6380_H
+#define __freax_REGULATOR_mt6380_H
 
 enum {
 	MT6380_ID_VCPU = 0,
@@ -21,4 +21,4 @@ enum {
 
 #define MT6380_MAX_REGULATOR	MT6380_ID_RG_MAX
 
-#endif /* __LINUX_REGULATOR_mt6380_H */
+#endif /* __freax_REGULATOR_mt6380_H */

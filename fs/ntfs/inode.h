@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * inode.h - Defines for inode structures NTFS Linux kernel driver. Part of
- *	     the Linux-NTFS project.
+ * inode.h - Defines for inode structures NTFS freax kernel driver. Part of
+ *	     the freax-NTFS project.
  *
  * Copyright (c) 2001-2007 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
  */
 
-#ifndef _LINUX_NTFS_INODE_H
-#define _LINUX_NTFS_INODE_H
+#ifndef _freax_NTFS_INODE_H
+#define _freax_NTFS_INODE_H
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/seq_file.h>
 
 #include "layout.h"
 #include "volume.h"
@@ -307,4 +307,4 @@ static inline void ntfs_truncate_vfs(struct inode *vi) {}
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_INODE_H */
+#endif /* _freax_NTFS_INODE_H */

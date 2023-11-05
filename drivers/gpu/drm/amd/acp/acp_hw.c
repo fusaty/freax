@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
 
 #include "acp_gfx_if.h"
 

@@ -8,10 +8,10 @@
 
 #ifndef __VIA_CORE_H__
 #define __VIA_CORE_H__
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
 
 /*
  * A description of each known serial I2C/GPIO port.

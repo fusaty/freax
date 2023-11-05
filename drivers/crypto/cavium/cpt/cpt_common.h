@@ -7,8 +7,8 @@
 #define __CPT_COMMON_H
 
 #include <asm/byteorder.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
 
 #include "cpt_hw_types.h"
 

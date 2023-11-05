@@ -8,7 +8,7 @@
 #ifndef _ADAV80X_H
 #define _ADAV80X_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 struct device;
 

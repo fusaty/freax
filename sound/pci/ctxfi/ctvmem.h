@@ -17,9 +17,9 @@
 
 #define CT_PTP_NUM	4	/* num of device page table pages */
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/pci.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/pci.h>
 #include <sound/memalloc.h>
 
 /* The chip can handle the page table of 4k pages

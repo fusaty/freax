@@ -296,7 +296,7 @@
 
 &pon_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 };
 
 &qupv3_id_0 {

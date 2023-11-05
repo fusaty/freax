@@ -3,15 +3,15 @@
  * Copyright (c) 2017, Linaro Ltd
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mailbox_controller.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/mailbox_controller.h>
 
 #define QCOM_APCS_IPC_BITS	32
 

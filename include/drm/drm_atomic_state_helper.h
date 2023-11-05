@@ -24,7 +24,7 @@
  * Daniel Vetter <daniel.vetter@ffwll.ch>
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_atomic_state;
 struct drm_bridge;

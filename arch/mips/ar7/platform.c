@@ -4,24 +4,24 @@
  * Copyright (C) 2006,2007 Eugene Konev <ejka@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/vlynq.h>
-#include <linux/leds.h>
-#include <linux/string.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/physmap.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/vlynq.h>
+#include <freax/leds.h>
+#include <freax/string.h>
+#include <freax/etherdevice.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/gpio.h>
+#include <freax/clk.h>
 
 #include <asm/addrspace.h>
 #include <asm/mach-ar7/ar7.h>

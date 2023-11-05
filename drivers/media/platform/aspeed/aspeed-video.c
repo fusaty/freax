@@ -2,29 +2,29 @@
 // Copyright 2020 IBM Corp.
 // Copyright (c) 2019-2020 Intel Corporation
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/v4l2-controls.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/ktime.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/v4l2-controls.h>
+#include <freax/videodev2.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/ktime.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>
@@ -32,7 +32,7 @@
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>
 #include <media/videobuf2-dma-contig.h>
-#include <uapi/linux/aspeed-video.h>
+#include <uapi/freax/aspeed-video.h>
 
 #define ASPEED_VIDEO_V4L2_MIN_BUF_REQ 3
 

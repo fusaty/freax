@@ -4,7 +4,7 @@
  */
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/pwm/pwm.h>
 #include <dt-bindings/usb/pd.h>
 #include "rk3399.dtsi"
@@ -85,7 +85,7 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Key Power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -111,21 +111,21 @@
 
 		heartbeat_led: led-2 {
 			label = "green:heartbeat";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			gpios = <&gpio0 RK_PB5 GPIO_ACTIVE_HIGH>;
 		};
 
 		wlan_active_led: led-3 {
 			label = "yellow:wlan";
 			gpios = <&gpio2 RK_PD3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			freax,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		bt_active_led: led-4 {
 			label = "blue:bt";
 			gpios = <&gpio2 RK_PD4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "hci0-power";
+			freax,default-trigger = "hci0-power";
 			default-state = "off";
 		};
 	};

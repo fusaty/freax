@@ -8,30 +8,30 @@
  * Timberdale FPGA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/mfd/core.h>
+#include <freax/slab.h>
 
-#include <linux/timb_gpio.h>
+#include <freax/timb_gpio.h>
 
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-ocores.h>
-#include <linux/platform_data/i2c-xiic.h>
+#include <freax/i2c.h>
+#include <freax/platform_data/i2c-ocores.h>
+#include <freax/platform_data/i2c-xiic.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/xilinx_spi.h>
-#include <linux/spi/max7301.h>
-#include <linux/spi/mc33880.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/xilinx_spi.h>
+#include <freax/spi/max7301.h>
+#include <freax/spi/mc33880.h>
 
-#include <linux/platform_data/tsc2007.h>
-#include <linux/platform_data/media/timb_radio.h>
-#include <linux/platform_data/media/timb_video.h>
+#include <freax/platform_data/tsc2007.h>
+#include <freax/platform_data/media/timb_radio.h>
+#include <freax/platform_data/media/timb_video.h>
 
-#include <linux/timb_dma.h>
+#include <freax/timb_dma.h>
 
-#include <linux/ks8842.h>
+#include <freax/ks8842.h>
 
 #include "timberdale.h"
 

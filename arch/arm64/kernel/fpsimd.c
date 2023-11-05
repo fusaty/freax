@@ -6,31 +6,31 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bottom_half.h>
-#include <linux/bug.h>
-#include <linux/cache.h>
-#include <linux/compat.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/irqflags.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/prctl.h>
-#include <linux/preempt.h>
-#include <linux/ptrace.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/swab.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/bottom_half.h>
+#include <freax/bug.h>
+#include <freax/cache.h>
+#include <freax/compat.h>
+#include <freax/compiler.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/linkage.h>
+#include <freax/irqflags.h>
+#include <freax/init.h>
+#include <freax/percpu.h>
+#include <freax/prctl.h>
+#include <freax/preempt.h>
+#include <freax/ptrace.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task_stack.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/sysctl.h>
+#include <freax/swab.h>
 
 #include <asm/esr.h>
 #include <asm/exception.h>

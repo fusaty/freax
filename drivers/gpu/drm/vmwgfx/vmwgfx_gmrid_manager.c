@@ -30,9 +30,9 @@
 
 #include "vmwgfx_drv.h"
 #include <drm/ttm/ttm_placement.h>
-#include <linux/idr.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
+#include <freax/idr.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
 
 struct vmwgfx_gmrid_man {
 	struct ttm_resource_manager manager;

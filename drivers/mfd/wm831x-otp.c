@@ -7,16 +7,16 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/mfd/core.h>
+#include <freax/random.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/otp.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/otp.h>
 
 /* In bytes */
 #define WM831X_UNIQUE_ID_LEN 16

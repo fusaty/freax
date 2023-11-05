@@ -5,9 +5,9 @@
  * Copyright (C) 2009-2010 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/gpio/driver.h>
 
 #include <asm/mach-ar7/ar7.h>
 

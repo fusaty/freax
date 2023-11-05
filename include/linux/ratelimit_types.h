@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RATELIMIT_TYPES_H
-#define _LINUX_RATELIMIT_TYPES_H
+#ifndef _freax_RATELIMIT_TYPES_H
+#define _freax_RATELIMIT_TYPES_H
 
-#include <linux/bits.h>
-#include <linux/param.h>
-#include <linux/spinlock_types_raw.h>
+#include <freax/bits.h>
+#include <freax/param.h>
+#include <freax/spinlock_types_raw.h>
 
 #define DEFAULT_RATELIMIT_INTERVAL	(5 * HZ)
 #define DEFAULT_RATELIMIT_BURST		10
@@ -44,4 +44,4 @@ struct ratelimit_state {
 extern int ___ratelimit(struct ratelimit_state *rs, const char *func);
 #define __ratelimit(state) ___ratelimit(state, __func__)
 
-#endif /* _LINUX_RATELIMIT_TYPES_H */
+#endif /* _freax_RATELIMIT_TYPES_H */

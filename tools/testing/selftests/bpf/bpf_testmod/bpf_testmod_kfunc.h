@@ -4,7 +4,7 @@
 #define _BPF_TESTMOD_KFUNC_H
 
 #ifndef __KERNEL__
-#include <vmlinux.h>
+#include <vmfreax.h>
 #include <bpf/bpf_helpers.h>
 #else
 #define __ksym

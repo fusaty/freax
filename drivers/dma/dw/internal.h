@@ -8,7 +8,7 @@
 #ifndef _DMA_DW_INTERNAL_H
 #define _DMA_DW_INTERNAL_H
 
-#include <linux/dma/dw.h>
+#include <freax/dma/dw.h>
 
 #include "regs.h"
 

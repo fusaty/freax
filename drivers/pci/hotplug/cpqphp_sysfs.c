@@ -12,16 +12,16 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/proc_fs.h>
+#include <freax/workqueue.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/mutex.h>
+#include <freax/debugfs.h>
 #include "cpqphp.h"
 
 static DEFINE_MUTEX(cpqphp_mutex);

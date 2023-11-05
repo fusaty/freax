@@ -10,11 +10,11 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
 #include <asm/unaligned.h>
 
 static const u32 camellia_sp1110[256] = {

@@ -10,7 +10,7 @@
  *
  * Improvements and fixes by:
  *
- *   Arjan van de Ven <arjan@linux.intel.com>
+ *   Arjan van de Ven <arjan@freax.intel.com>
  *   Yanmin Zhang <yanmin.zhang@intel.com>
  *   Wu Fengguang <fengguang.wu@intel.com>
  *   Mike Galbraith <efault@gmx.de>
@@ -39,7 +39,7 @@
 #include "util/synthetic-events.h"
 #include "util/top.h"
 #include "util/util.h"
-#include <linux/rbtree.h>
+#include <freax/rbtree.h>
 #include <subcmd/parse-options.h>
 #include "util/parse-events.h"
 #include "util/callchain.h"
@@ -79,12 +79,12 @@
 #include <sys/utsname.h>
 #include <sys/mman.h>
 
-#include <linux/stringify.h>
-#include <linux/time64.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <freax/stringify.h>
+#include <freax/time64.h>
+#include <freax/types.h>
+#include <freax/err.h>
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include <perf/mmap.h>
 
 static volatile sig_atomic_t done;
@@ -130,7 +130,7 @@ static int perf_top__parse_source(struct perf_top *top, struct hist_entry *he)
 	 * We can't annotate with just /proc/kallsyms
 	 */
 	if (dso->symtab_type == DSO_BINARY_TYPE__KALLSYMS && !dso__is_kcore(dso)) {
-		pr_err("Can't annotate %s: No vmlinux file was found in the "
+		pr_err("Can't annotate %s: No vmfreax file was found in the "
 		       "path\n", sym->name);
 		sleep(1);
 		return -1;
@@ -181,7 +181,7 @@ static void ui__warn_map_erange(struct map *map, struct symbol *sym, u64 ip)
 		    "Kernel: %s\n"
 		    "Tools:  %s\n\n"
 		    "Not all samples will be on the annotation output.\n\n"
-		    "Please report to linux-kernel@vger.kernel.org\n",
+		    "Please report to freax-kernel@vger.kernel.org\n",
 		    ip, dso->long_name, dso__symtab_origin(dso),
 		    map__start(map), map__end(map), sym->start, sym->end,
 		    sym->binding == STB_GLOBAL ? 'g' :
@@ -800,31 +800,31 @@ static void perf_event__process_sample(struct perf_tool *tool,
 		const char *msg = "Kernel samples will not be resolved.\n";
 		/*
 		 * As we do lazy loading of symtabs we only will know if the
-		 * specified vmlinux file is invalid when we actually have a
+		 * specified vmfreax file is invalid when we actually have a
 		 * hit in kernel space and then try to load it. So if we get
 		 * here and there are _no_ symbols in the DSO backing the
 		 * kernel map, bail out.
 		 *
 		 * We may never get here, for instance, if we use -K/
 		 * --hide-kernel-symbols, even if the user specifies an
-		 * invalid --vmlinux ;-)
+		 * invalid --vmfreax ;-)
 		 */
-		if (!machine->kptr_restrict_warned && !top->vmlinux_warned &&
+		if (!machine->kptr_restrict_warned && !top->vmfreax_warned &&
 		    __map__is_kernel(al.map) && map__has_symbols(al.map)) {
-			if (symbol_conf.vmlinux_name) {
+			if (symbol_conf.vmfreax_name) {
 				char serr[256];
 
 				dso__strerror_load(map__dso(al.map), serr, sizeof(serr));
 				ui__warning("The %s file can't be used: %s\n%s",
-					    symbol_conf.vmlinux_name, serr, msg);
+					    symbol_conf.vmfreax_name, serr, msg);
 			} else {
-				ui__warning("A vmlinux file was not found.\n%s",
+				ui__warning("A vmfreax file was not found.\n%s",
 					    msg);
 			}
 
 			if (use_browser <= 0)
 				sleep(5);
-			top->vmlinux_warned = true;
+			top->vmfreax_warned = true;
 		}
 	}
 
@@ -1471,10 +1471,10 @@ int cmd_top(int argc, const char **argv)
 			    "system-wide collection from all CPUs"),
 	OPT_STRING('C', "cpu", &target->cpu_list, "cpu",
 		    "list of cpus to monitor"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
-	OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-		    "don't load vmlinux even if found"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
+	OPT_BOOLEAN(0, "ignore-vmfreax", &symbol_conf.ignore_vmfreax,
+		    "don't load vmfreax even if found"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('K', "hide_kernel_symbols", &top.hide_kernel_symbols,
@@ -1789,7 +1789,7 @@ int cmd_top(int argc, const char **argv)
 
 	annotation_config__init(&top.annotation_opts);
 
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmfreax_path = (symbol_conf.vmfreax_name == NULL);
 	status = symbol__init(NULL);
 	if (status < 0)
 		goto out_delete_evlist;

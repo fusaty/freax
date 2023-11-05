@@ -9,10 +9,10 @@
  *   Micky Ching (micky_ching@realsil.com.cn)
  */
 
-#include <linux/blkdev.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <freax/blkdev.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/vmalloc.h>
 
 #include "rtsx.h"
 #include "rtsx_transport.h"

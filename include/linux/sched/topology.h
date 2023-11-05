@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_TOPOLOGY_H
-#define _LINUX_SCHED_TOPOLOGY_H
+#ifndef _freax_SCHED_TOPOLOGY_H
+#define _freax_SCHED_TOPOLOGY_H
 
-#include <linux/topology.h>
+#include <freax/topology.h>
 
-#include <linux/sched/idle.h>
+#include <freax/sched/idle.h>
 
 /*
  * sched-domains (multiprocessor balancing) declarations:
@@ -14,14 +14,14 @@
 /* Generate SD flag indexes */
 #define SD_FLAG(name, mflags) __##name,
 enum {
-	#include <linux/sched/sd_flags.h>
+	#include <freax/sched/sd_flags.h>
 	__SD_FLAG_CNT,
 };
 #undef SD_FLAG
 /* Generate SD flag bits */
 #define SD_FLAG(name, mflags) name = 1 << __##name,
 enum {
-	#include <linux/sched/sd_flags.h>
+	#include <freax/sched/sd_flags.h>
 };
 #undef SD_FLAG
 
@@ -284,4 +284,4 @@ static inline int task_node(const struct task_struct *p)
 	return cpu_to_node(task_cpu(p));
 }
 
-#endif /* _LINUX_SCHED_TOPOLOGY_H */
+#endif /* _freax_SCHED_TOPOLOGY_H */

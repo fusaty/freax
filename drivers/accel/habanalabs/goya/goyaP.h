@@ -9,7 +9,7 @@
 #define GOYAP_H_
 
 #include <uapi/drm/habanalabs_accel.h>
-#include <linux/habanalabs/hl_boot_if.h>
+#include <freax/habanalabs/hl_boot_if.h>
 #include "../common/habanalabs.h"
 #include "../include/goya/goya_packets.h"
 #include "../include/goya/goya.h"

@@ -26,7 +26,7 @@
 #include "amdgpu_amdkfd_aldebaran.h"
 #include "gc/gc_9_4_2_offset.h"
 #include "gc/gc_9_4_2_sh_mask.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 /*
  * Returns TRAP_EN, EXCP_EN and EXCP_REPLACE.

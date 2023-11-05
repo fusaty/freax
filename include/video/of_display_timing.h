@@ -5,10 +5,10 @@
  * display timings of helpers
  */
 
-#ifndef __LINUX_OF_DISPLAY_TIMING_H
-#define __LINUX_OF_DISPLAY_TIMING_H
+#ifndef __freax_OF_DISPLAY_TIMING_H
+#define __freax_OF_DISPLAY_TIMING_H
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 struct device_node;
 struct display_timing;

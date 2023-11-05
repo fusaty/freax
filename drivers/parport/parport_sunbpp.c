@@ -19,21 +19,21 @@
  * 
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
-#include <linux/parport.h>
+#include <freax/parport.h>
 
 #include <asm/ptrace.h>
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>           /* OpenProm Library */

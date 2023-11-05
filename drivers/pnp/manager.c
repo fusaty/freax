@@ -8,13 +8,13 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/pnp.h>
-#include <linux/bitmap.h>
-#include <linux/mutex.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/pnp.h>
+#include <freax/bitmap.h>
+#include <freax/mutex.h>
 #include "base.h"
 
 DEFINE_MUTEX(pnp_res_mutex);

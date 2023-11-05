@@ -6,8 +6,8 @@
  * Copyright (C) 2014 Endless Mobile
  */
 
-#include <linux/export.h>
-#include <linux/bitfield.h>
+#include <freax/export.h>
+#include <freax/bitfield.h>
 
 #include <drm/drm_fourcc.h>
 

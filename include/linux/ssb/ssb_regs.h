@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_REGS_H_
-#define LINUX_SSB_REGS_H_
+#ifndef freax_SSB_REGS_H_
+#define freax_SSB_REGS_H_
 
 
 /* SiliconBackplane Address Map.
@@ -684,4 +684,4 @@ enum {
 #define SSB_ADM_BASE2_SHIFT		16
 
 
-#endif /* LINUX_SSB_REGS_H_ */
+#endif /* freax_SSB_REGS_H_ */

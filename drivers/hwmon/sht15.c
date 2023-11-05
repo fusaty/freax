@@ -2,9 +2,9 @@
 /*
  * sht15.c - support for the SHT15 Temperature and Humidity Sensor
  *
- * Portions Copyright (c) 2010-2012 Savoir-faire Linux Inc.
- *          Jerome Oufella <jerome.oufella@savoirfairelinux.com>
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Portions Copyright (c) 2010-2012 Savoir-faire freax Inc.
+ *          Jerome Oufella <jerome.oufella@savoirfairefreax.com>
+ *          Vivien Didelot <vivien.didelot@savoirfairefreax.com>
  *
  * Copyright (c) 2009 Jonathan Cameron
  *
@@ -13,24 +13,24 @@
  * For further information, see the Documentation/hwmon/sht15.rst file.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/bitrev.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/err.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
+#include <freax/bitrev.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
 
 /* Commands */
 #define SHT15_MEASURE_TEMP		0x03

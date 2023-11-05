@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020, Broadcom */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/iopoll.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/iopoll.h>
 
 #include "ehci.h"
 
@@ -47,7 +47,7 @@ static inline void ehci_brcm_wait_for_sof(struct ehci_hcd *ehci, u32 delay)
  * will eventually cause the controller to reset the port.
  * The fix is to Intercept the echi-hcd request to complete RESUME and
  * align it to the start of the next microframe.
- * See SWLINUX-1909 for more details
+ * See SWfreax-1909 for more details
  */
 static int ehci_brcm_hub_control(
 	struct usb_hcd	*hcd,
@@ -110,7 +110,7 @@ static int ehci_brcm_reset(struct usb_hcd *hcd)
 	mdelay(10);
 
 	/*
-	 * SWLINUX-1705: Avoid OUT packet underflows during high memory
+	 * SWfreax-1705: Avoid OUT packet underflows during high memory
 	 *   bus usage
 	 */
 	ehci_writel(ehci, 0x00800040, &ehci->regs->brcm_insnreg[1]);
@@ -223,7 +223,7 @@ static int __maybe_unused ehci_brcm_resume(struct device *dev)
 	if (err)
 		return err;
 	/*
-	 * SWLINUX-1705: Avoid OUT packet underflows during high memory
+	 * SWfreax-1705: Avoid OUT packet underflows during high memory
 	 *   bus usage
 	 */
 	ehci_writel(ehci, 0x00800040, &ehci->regs->brcm_insnreg[1]);

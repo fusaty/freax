@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/mm.h>
-#include <linux/suspend.h>
+#include <freax/mm.h>
+#include <freax/suspend.h>
 #include <asm/coprocessor.h>
 
 int pfn_is_nosave(unsigned long pfn)

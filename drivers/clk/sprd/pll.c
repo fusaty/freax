@@ -5,10 +5,10 @@
 // Copyright (C) 2015~2017 Spreadtrum, Inc.
 // Author: Chunyan Zhang <chunyan.zhang@spreadtrum.com>
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "pll.h"
 

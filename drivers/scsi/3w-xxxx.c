@@ -1,10 +1,10 @@
 /*
-   3w-xxxx.c -- 3ware Storage Controller device driver for Linux.
+   3w-xxxx.c -- 3ware Storage Controller device driver for freax.
 
    Written By: Adam Radford <aradford@gmail.com>
-   Modifications By: Joel Jacobson <linux@3ware.com>
+   Modifications By: Joel Jacobson <freax@3ware.com>
                      Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-                     Brad Strand <linux@3ware.com>
+                     Brad Strand <freax@3ware.com>
 
    Copyright (C) 1999-2010 3ware Inc.
 
@@ -196,21 +196,21 @@
    1.26.02.003 - Force 60 second timeout default.
 */
 
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/moduleparam.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/mutex.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>
@@ -227,7 +227,7 @@ static int twe_major = -1;
 
 /* Module parameters */
 MODULE_AUTHOR("LSI");
-MODULE_DESCRIPTION("3ware Storage Controller Linux Driver");
+MODULE_DESCRIPTION("3ware Storage Controller freax Driver");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(TW_DRIVER_VERSION);
 
@@ -2414,7 +2414,7 @@ static struct pci_driver tw_driver = {
 /* This function is called on driver initialization */
 static int __init tw_init(void)
 {
-	printk(KERN_WARNING "3ware Storage Controller device driver for Linux v%s.\n", TW_DRIVER_VERSION);
+	printk(KERN_WARNING "3ware Storage Controller device driver for freax v%s.\n", TW_DRIVER_VERSION);
 
 	return pci_register_driver(&tw_driver);
 } /* End tw_init() */

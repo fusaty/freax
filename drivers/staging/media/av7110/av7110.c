@@ -9,35 +9,35 @@
  * originally based on code by:
  * Copyright (C) 1998,1999 Christian Theiss <mistert@rz.fh-augsburg.de>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://freaxtv.org
  */
 
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/timer.h>
+#include <freax/poll.h>
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/crc32.h>
-#include <linux/i2c.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/firmware.h>
+#include <freax/crc32.h>
+#include <freax/i2c.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 #include <media/dvb_frontend.h>
 
@@ -1507,7 +1507,7 @@ static int get_firmware(struct av7110* av7110)
 		if (ret == -ENOENT) {
 			printk(KERN_ERR "dvb-ttpci: could not load firmware, file not found: dvb-ttpci-01.fw\n");
 			printk(KERN_ERR "dvb-ttpci: usually this should be in /usr/lib/hotplug/firmware or /lib/firmware\n");
-			printk(KERN_ERR "dvb-ttpci: and can be downloaded from https://linuxtv.org/download/dvb/firmware/\n");
+			printk(KERN_ERR "dvb-ttpci: and can be downloaded from https://freaxtv.org/download/dvb/firmware/\n");
 		} else
 			printk(KERN_ERR "dvb-ttpci: cannot request firmware (error %i)\n",
 			       ret);
@@ -2289,7 +2289,7 @@ static int frontend_init(struct av7110 *av7110)
 /* Budgetpatch note:
  * Original hardware design by Roberto Deza:
  * There is a DVB_Wiki at
- * https://linuxtv.org
+ * https://freaxtv.org
  *
  * New software triggering design by Emard that works on
  * original Roberto Deza's hardware:

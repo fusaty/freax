@@ -24,7 +24,7 @@
  * a temporary VBR and a vector table for the duration of the test.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <asm/hwtest.h>
 

@@ -19,10 +19,10 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/fdtable.h>
-#include <linux/uaccess.h>
-#include <linux/firmware.h>
+#include <freax/module.h>
+#include <freax/fdtable.h>
+#include <freax/uaccess.h>
+#include <freax/firmware.h>
 #include "amdgpu.h"
 #include "amdgpu_amdkfd.h"
 #include "amdgpu_amdkfd_arcturus.h"

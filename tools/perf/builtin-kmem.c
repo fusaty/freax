@@ -13,7 +13,7 @@
 #include "util/tool.h"
 #include "util/callchain.h"
 #include "util/time-utils.h"
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include <subcmd/pager.h>
 #include <subcmd/parse-options.h>
@@ -25,17 +25,17 @@
 #include "util/string2.h"
 #include "util/util.h"
 
-#include <linux/kernel.h>
-#include <linux/numa.h>
-#include <linux/rbtree.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/numa.h>
+#include <freax/rbtree.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <errno.h>
 #include <inttypes.h>
 #include <locale.h>
 #include <regex.h>
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include <traceevent/event-parse.h>
 
 static int	kmem_slab;

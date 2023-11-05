@@ -5,15 +5,15 @@
  * Copyright (C) 2010 Cisco Systems Inc. <dediao@cisco.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/memblock.h>
+#include <freax/debugfs.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_platform.h>
 
 #include <asm/bootinfo.h>
 #include <asm/page.h>

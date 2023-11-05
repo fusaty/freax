@@ -5,9 +5,9 @@
  * Copyright (C) 2018 Icenowy Zheng <icenowy@aosc.io>
  */
 
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/soc/sunxi/sunxi_sram.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/soc/sunxi/sunxi_sram.h>
 
 static int sun50i_de2_bus_probe(struct platform_device *pdev)
 {

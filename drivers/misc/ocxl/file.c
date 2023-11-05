@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017 IBM Corp.
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/eventfd.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/sched/signal.h>
+#include <freax/eventfd.h>
+#include <freax/uaccess.h>
 #include <uapi/misc/ocxl.h>
 #include <asm/reg.h>
 #include <asm/switch_to.h>

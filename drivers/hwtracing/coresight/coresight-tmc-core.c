@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2012, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight Trace Memory Controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/spinlock.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/coresight.h>
+#include <freax/amba/bus.h>
 
 #include "coresight-priv.h"
 #include "coresight-tmc.h"

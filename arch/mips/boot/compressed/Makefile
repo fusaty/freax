@@ -28,11 +28,11 @@ KBUILD_CFLAGS := $(filter-out -march=loongson3a, $(KBUILD_CFLAGS)) -march=mips64
 endif
 
 KBUILD_CFLAGS := $(KBUILD_CFLAGS) -D__KERNEL__ -D__DISABLE_EXPORTS \
-	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) -D"VMLINUX_LOAD_ADDRESS_ULL=$(VMLINUX_LOAD_ADDRESS)ull"
+	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) -D"VMfreax_LOAD_ADDRESS_ULL=$(VMfreax_LOAD_ADDRESS)ull"
 
 KBUILD_AFLAGS := $(KBUILD_AFLAGS) -D__ASSEMBLY__ \
 	-DBOOT_HEAP_SIZE=$(BOOT_HEAP_SIZE) \
-	-DKERNEL_ENTRY=$(VMLINUX_ENTRY_ADDRESS)
+	-DKERNEL_ENTRY=$(VMfreax_ENTRY_ADDRESS)
 
 # Prevents link failures: __sanitizer_cov_trace_pc() is not linked in.
 KCOV_INSTRUMENT		:= n
@@ -57,11 +57,11 @@ vmlinuzobjs-$(CONFIG_KERNEL_ZSTD) += $(obj)/bswapdi.o $(obj)/ashldi3.o $(obj)/cl
 
 targets := $(notdir $(vmlinuzobjs-y))
 
-targets += vmlinux.bin
+targets += vmfreax.bin
 
-OBJCOPYFLAGS_vmlinux.bin := $(OBJCOPYFLAGS) -O binary -R .comment -S
+OBJCOPYFLAGS_vmfreax.bin := $(OBJCOPYFLAGS) -O binary -R .comment -S
 
-$(obj)/vmlinux.bin: $(KBUILD_IMAGE) FORCE
+$(obj)/vmfreax.bin: $(KBUILD_IMAGE) FORCE
 	$(call if_changed,objcopy)
 
 tool_$(CONFIG_KERNEL_GZIP)    = gzip
@@ -72,20 +72,20 @@ tool_$(CONFIG_KERNEL_LZO)     = lzo_with_size
 tool_$(CONFIG_KERNEL_XZ)      = xzkern_with_size
 tool_$(CONFIG_KERNEL_ZSTD)    = zstd22_with_size
 
-targets += vmlinux.bin.z
+targets += vmfreax.bin.z
 
-$(obj)/vmlinux.bin.z: $(obj)/vmlinux.bin FORCE
+$(obj)/vmfreax.bin.z: $(obj)/vmfreax.bin FORCE
 	$(call if_changed,$(tool_y))
 
 targets += piggy.o dummy.o
 
-OBJCOPYFLAGS_piggy.o := --add-section=.image=$(obj)/vmlinux.bin.z \
+OBJCOPYFLAGS_piggy.o := --add-section=.image=$(obj)/vmfreax.bin.z \
 			--set-section-flags=.image=contents,alloc,load,readonly,data
 
-$(obj)/piggy.o: $(obj)/dummy.o $(obj)/vmlinux.bin.z FORCE
+$(obj)/piggy.o: $(obj)/dummy.o $(obj)/vmfreax.bin.z FORCE
 	$(call if_changed,objcopy)
 
-HOSTCFLAGS_calc_vmlinuz_load_addr.o += $(LINUXINCLUDE)
+HOSTCFLAGS_calc_vmlinuz_load_addr.o += $(freaxINCLUDE)
 
 # Calculate the load address of the compressed kernel image
 hostprogs := calc_vmlinuz_load_addr
@@ -98,7 +98,7 @@ ifneq ($(zload-y),)
 VMLINUZ_LOAD_ADDRESS := $(zload-y)
 else
 VMLINUZ_LOAD_ADDRESS = $(shell $(obj)/calc_vmlinuz_load_addr \
-		$(obj)/vmlinux.bin $(LINKER_LOAD_ADDRESS))
+		$(obj)/vmfreax.bin $(LINKER_LOAD_ADDRESS))
 endif
 UIMAGE_LOADADDR = $(VMLINUZ_LOAD_ADDRESS)
 
@@ -193,11 +193,11 @@ targets += ../vmlinuz.its
 
 quiet_cmd_cpp_its_S = ITS     $@
       cmd_cpp_its_S = $(CPP) -P -C -o $@ $< \
-		        -DKERNEL_NAME="\"Linux $(KERNELRELEASE)\"" \
-			-DVMLINUX_BINARY="\"$(2)\"" \
-			-DVMLINUX_COMPRESSION="\"none\"" \
-			-DVMLINUX_LOAD_ADDRESS=$(VMLINUZ_LOAD_ADDRESS) \
-			-DVMLINUX_ENTRY_ADDRESS=$(VMLINUZ_LOAD_ADDRESS) \
+		        -DKERNEL_NAME="\"freax $(KERNELRELEASE)\"" \
+			-DVMfreax_BINARY="\"$(2)\"" \
+			-DVMfreax_COMPRESSION="\"none\"" \
+			-DVMfreax_LOAD_ADDRESS=$(VMLINUZ_LOAD_ADDRESS) \
+			-DVMfreax_ENTRY_ADDRESS=$(VMLINUZ_LOAD_ADDRESS) \
 			-DADDR_BITS=$(ADDR_BITS) \
 			-DADDR_CELLS=$(itb_addr_cells)
 

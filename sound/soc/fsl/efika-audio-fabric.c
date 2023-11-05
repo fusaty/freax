@@ -10,14 +10,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

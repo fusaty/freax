@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "sysfs_upload.h"
 

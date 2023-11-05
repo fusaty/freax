@@ -5,14 +5,14 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
 
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "kernel.h"
 

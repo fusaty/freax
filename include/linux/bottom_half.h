@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BH_H
-#define _LINUX_BH_H
+#ifndef _freax_BH_H
+#define _freax_BH_H
 
-#include <linux/instruction_pointer.h>
-#include <linux/preempt.h>
+#include <freax/instruction_pointer.h>
+#include <freax/preempt.h>
 
 #if defined(CONFIG_PREEMPT_RT) || defined(CONFIG_TRACE_IRQFLAGS)
 extern void __local_bh_disable_ip(unsigned long ip, unsigned int cnt);
@@ -39,4 +39,4 @@ extern bool local_bh_blocked(void);
 static inline bool local_bh_blocked(void) { return false; }
 #endif
 
-#endif /* _LINUX_BH_H */
+#endif /* _freax_BH_H */

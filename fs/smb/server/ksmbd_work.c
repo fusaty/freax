@@ -3,10 +3,10 @@
  *   Copyright (C) 2019 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "server.h"
 #include "connection.h"

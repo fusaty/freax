@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * This file holds USB constants and structures that are needed for
  * USB device APIs.  These are used by the USB device model, which is
  * defined in chapter 9 of the USB 2.0 specification and in the
- * Wireless USB 1.0 spec (now defunct).  Linux has several APIs in C that
+ * Wireless USB 1.0 spec (now defunct).  freax has several APIs in C that
  * need these:
  *
- * - the master/host side Linux-USB kernel driver API;
+ * - the master/host side freax-USB kernel driver API;
  * - the "usbfs" user space API; and
- * - the Linux "gadget" slave/device/peripheral side driver API.
+ * - the freax "gadget" slave/device/peripheral side driver API.
  *
  * USB 2.0 adds an additional "On The Go" (OTG) mode, which lets systems
  * act either as a USB master/host or as a USB slave/device.  That means
@@ -28,10 +28,10 @@
  *     particular descriptor type.
  */
 
-#ifndef _UAPI__LINUX_USB_CH9_H
-#define _UAPI__LINUX_USB_CH9_H
+#ifndef _UAPI__freax_USB_CH9_H
+#define _UAPI__freax_USB_CH9_H
 
-#include <linux/types.h>	/* __u8 etc */
+#include <freax/types.h>	/* __u8 etc */
 #include <asm/byteorder.h>	/* le16_to_cpu */
 
 /*-------------------------------------------------------------------------*/
@@ -223,7 +223,7 @@ struct usb_ctrlrequest {
  *
  * Note that all multi-byte values here are encoded in little endian
  * byte order "on the wire".  Within the kernel and when exposed
- * through the Linux-USB APIs, they are not converted to cpu byte
+ * through the freax-USB APIs, they are not converted to cpu byte
  * order; it is the responsibility of the client code to do this.
  * The single exception is when device and configuration descriptors (but
  * not other descriptors) are read from character devices
@@ -1174,7 +1174,7 @@ struct usb_connection_context {
 
 /*-------------------------------------------------------------------------*/
 
-/* USB 2.0 defines three speeds, here's how Linux identifies them */
+/* USB 2.0 defines three speeds, here's how freax identifies them */
 
 enum usb_device_speed {
 	USB_SPEED_UNKNOWN = 0,			/* enumerating */
@@ -1266,4 +1266,4 @@ struct usb_set_sel_req {
  */
 #define USB_SELF_POWER_VBUS_MAX_DRAW		100
 
-#endif /* _UAPI__LINUX_USB_CH9_H */
+#endif /* _UAPI__freax_USB_CH9_H */

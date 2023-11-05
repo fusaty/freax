@@ -2,19 +2,19 @@
 /*
  * Copyright (C) 2018 Gateworks Corporation
  */
-#include <linux/delay.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/videodev2.h>
+#include <freax/delay.h>
+#include <freax/hdmi.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
+#include <freax/v4l2-dv-timings.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

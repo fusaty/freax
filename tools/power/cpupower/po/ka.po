@@ -1,6 +1,6 @@
 # Georgian translation for cpufrequtils package
 # Georgian messages for cpufrequtils.
-# Copyright (C) 2004-2022 Dominik Brodowski <linux@dominikbrodowski.net>
+# Copyright (C) 2004-2022 Dominik Brodowski <freax@dominikbrodowski.net>
 # This file is distributed under the same license as the cpufrequtils package.
 # Ekaterine Papava <katopapava@gmail.com>, 2022.
 

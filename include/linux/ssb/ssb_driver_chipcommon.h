@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef LINUX_SSB_CHIPCO_H_
-#define LINUX_SSB_CHIPCO_H_
+#ifndef freax_SSB_CHIPCO_H_
+#define freax_SSB_CHIPCO_H_
 
 /* SonicsSiliconBackplane CHIPCOMMON core hardware definitions
  *
@@ -669,4 +669,4 @@ void ssb_pmu_set_ldo_voltage(struct ssb_chipcommon *cc,
 void ssb_pmu_set_ldo_paref(struct ssb_chipcommon *cc, bool on);
 void ssb_pmu_spuravoid_pllupdate(struct ssb_chipcommon *cc, int spuravoid);
 
-#endif /* LINUX_SSB_CHIPCO_H_ */
+#endif /* freax_SSB_CHIPCO_H_ */

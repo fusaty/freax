@@ -3,21 +3,21 @@
  * Tty buffer allocation management
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/minmax.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/minmax.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/ratelimit.h>
 #include "tty.h"
 
 #define MIN_TTYB_SIZE	256

@@ -4,9 +4,9 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "net_shared.h"
-#include <linux/version.h>
+#include <freax/version.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_tracing.h>
@@ -44,4 +44,4 @@ int bpf_prog1(struct pt_regs *ctx)
 }
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = freax_VERSION_CODE;

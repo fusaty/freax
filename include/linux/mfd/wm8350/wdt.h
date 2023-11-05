@@ -5,10 +5,10 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_WDT_H_
-#define __LINUX_MFD_WM8350_WDT_H_
+#ifndef __freax_MFD_WM8350_WDT_H_
+#define __freax_MFD_WM8350_WDT_H_
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 #define WM8350_WDOG_HIB_MODE                    0x0080
 #define WM8350_WDOG_DEBUG                       0x0040

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PSI_TYPES_H
-#define _LINUX_PSI_TYPES_H
+#ifndef _freax_PSI_TYPES_H
+#define _freax_PSI_TYPES_H
 
-#include <linux/kthread.h>
-#include <linux/seqlock.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/wait.h>
+#include <freax/kthread.h>
+#include <freax/seqlock.h>
+#include <freax/types.h>
+#include <freax/kref.h>
+#include <freax/wait.h>
 
 #ifdef CONFIG_PSI
 
@@ -215,4 +215,4 @@ struct psi_group { };
 
 #endif /* CONFIG_PSI */
 
-#endif /* _LINUX_PSI_TYPES_H */
+#endif /* _freax_PSI_TYPES_H */

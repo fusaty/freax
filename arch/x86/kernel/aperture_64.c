@@ -13,16 +13,16 @@
  */
 #define pr_fmt(fmt) "AGP: " fmt
 
-#include <linux/kernel.h>
-#include <linux/kcore.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/pci_ids.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/suspend.h>
+#include <freax/kernel.h>
+#include <freax/kcore.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/mmzone.h>
+#include <freax/pci_ids.h>
+#include <freax/pci.h>
+#include <freax/bitops.h>
+#include <freax/suspend.h>
 #include <asm/e820/api.h>
 #include <asm/io.h>
 #include <asm/iommu.h>
@@ -31,7 +31,7 @@
 #include <asm/dma.h>
 #include <asm/amd_nb.h>
 #include <asm/x86_init.h>
-#include <linux/crash_dump.h>
+#include <freax/crash_dump.h>
 
 /*
  * Using 512M as goal, in case kexec will load kernel_big

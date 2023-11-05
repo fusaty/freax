@@ -7,26 +7,26 @@
  * Parts of the driver are based on:
  *  - arch/arm/mach-bcm2708/vcio.c file written by Gray Girling that was
  *    obtained from branch "rpi-3.6.y" of git://github.com/raspberrypi/
- *    linux.git
+ *    freax.git
  *  - drivers/mailbox/bcm2835-ipc.c by Lubomir Rintel at
- *    https://github.com/hackerspace/rpi-linux/blob/lr-raspberry-pi/drivers/
+ *    https://github.com/hackerspace/rpi-freax/blob/lr-raspberry-pi/drivers/
  *    mailbox/bcm2835-ipc.c
  *  - documentation available on the following web site:
  *    https://github.com/raspberrypi/firmware/wiki/Mailbox-property-interface
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_controller.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 /* Mailboxes */
 #define ARM_0_MAIL0	0x00

@@ -6,9 +6,9 @@
 #ifndef CORESIGHT_SYSCFG_H
 #define CORESIGHT_SYSCFG_H
 
-#include <linux/configfs.h>
-#include <linux/coresight.h>
-#include <linux/device.h>
+#include <freax/configfs.h>
+#include <freax/coresight.h>
+#include <freax/device.h>
 
 #include "coresight-config.h"
 

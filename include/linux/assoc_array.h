@@ -7,12 +7,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ASSOC_ARRAY_H
-#define _LINUX_ASSOC_ARRAY_H
+#ifndef _freax_ASSOC_ARRAY_H
+#define _freax_ASSOC_ARRAY_H
 
 #ifdef CONFIG_ASSOCIATIVE_ARRAY
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ASSOC_ARRAY_KEY_CHUNK_SIZE BITS_PER_LONG /* Key data retrieved in chunks of this size */
 
@@ -85,4 +85,4 @@ extern int assoc_array_gc(struct assoc_array *array,
 			  void *iterator_data);
 
 #endif /* CONFIG_ASSOCIATIVE_ARRAY */
-#endif /* _LINUX_ASSOC_ARRAY_H */
+#endif /* _freax_ASSOC_ARRAY_H */

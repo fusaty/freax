@@ -4,8 +4,8 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/adreno-smmu-priv.h>
-#include <linux/io-pgtable.h>
+#include <freax/adreno-smmu-priv.h>
+#include <freax/io-pgtable.h>
 #include "msm_drv.h"
 #include "msm_mmu.h"
 

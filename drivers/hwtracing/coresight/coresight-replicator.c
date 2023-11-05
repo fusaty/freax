@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight Replicator driver
  */
 
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
+#include <freax/acpi.h>
+#include <freax/amba/bus.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/coresight.h>
 
 #include "coresight-priv.h"
 

@@ -3,11 +3,11 @@
  * Copyright (C) 2021 Sifive.
  */
 
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/memory.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/bug.h>
 #include <asm/patch.h>
 #include <asm/alternative.h>
 #include <asm/vendorid_list.h>

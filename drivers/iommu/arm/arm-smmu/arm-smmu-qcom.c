@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019, The freax Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/adreno-smmu-priv.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/acpi.h>
+#include <freax/adreno-smmu-priv.h>
+#include <freax/delay.h>
+#include <freax/of_device.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 #include "arm-smmu.h"
 #include "arm-smmu-qcom.h"

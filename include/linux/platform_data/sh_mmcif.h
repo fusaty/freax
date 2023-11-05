@@ -5,11 +5,11 @@
  * Copyright (C) 2010 Renesas Solutions Corp.
  */
 
-#ifndef LINUX_MMC_SH_MMCIF_H
-#define LINUX_MMC_SH_MMCIF_H
+#ifndef freax_MMC_SH_MMCIF_H
+#define freax_MMC_SH_MMCIF_H
 
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 
 /*
  * MMCIF : CE_CLK_CTRL [19:16]
@@ -204,4 +204,4 @@ static inline void sh_mmcif_boot_init(void __iomem *base)
 	sh_mmcif_boot_cmd(base, 0x03400040, 0x00010000);
 }
 
-#endif /* LINUX_MMC_SH_MMCIF_H */
+#endif /* freax_MMC_SH_MMCIF_H */

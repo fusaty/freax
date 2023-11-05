@@ -5,9 +5,9 @@
  *  Copyright (c) 2011 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/pcm.h>

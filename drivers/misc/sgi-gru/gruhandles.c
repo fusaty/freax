@@ -5,13 +5,13 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include "gru.h"
 #include "grulib.h"
 #include "grutables.h"
 
 /* 10 sec */
-#include <linux/sync_core.h>
+#include <freax/sync_core.h>
 #include <asm/tsc.h>
 #define GRU_OPERATION_TIMEOUT	((cycles_t) tsc_khz*10*1000)
 #define CLKS2NSEC(c)		((c) * 1000000 / tsc_khz)

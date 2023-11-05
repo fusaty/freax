@@ -3,14 +3,14 @@
  * Copyright (c) 2011, 2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_ipv6/ip6t_NPT.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_ipv6/ip6t_NPT.h>
+#include <freax/netfilter/x_tables.h>
 
 static int ip6t_npt_checkentry(const struct xt_tgchk_param *par)
 {

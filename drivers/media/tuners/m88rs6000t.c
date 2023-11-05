@@ -6,7 +6,7 @@
  */
 
 #include "m88rs6000t.h"
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 struct m88rs6000t_dev {
 	struct m88rs6000t_config cfg;

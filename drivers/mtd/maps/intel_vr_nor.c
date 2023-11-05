@@ -27,15 +27,15 @@
  * or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/flashchip.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/cfi.h>
+#include <freax/mtd/flashchip.h>
 
 #define DRV_NAME "vr_nor"
 

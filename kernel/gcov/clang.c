@@ -44,12 +44,12 @@
 
 #define pr_fmt(fmt)	"gcov: " fmt
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/printk.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 #include "gcov.h"
 
 typedef void (*llvm_gcov_callback)(void);

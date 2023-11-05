@@ -82,17 +82,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/ctype.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched/task.h>
-#include <linux/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/kgdb.h>
+#include <freax/ctype.h>
+#include <freax/uaccess.h>
+#include <freax/syscalls.h>
+#include <freax/nmi.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/sched/task.h>
+#include <freax/kallsyms.h>
 
 #include <asm/sections.h>
 

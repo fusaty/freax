@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sizes.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/sizes.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/io.h>
 
 #include "intel_th.h"
 #include "pti.h"
@@ -340,4 +340,4 @@ module_exit(intel_th_pti_lpp_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Intel(R) Trace Hub PTI/LPP output driver");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@freax.intel.com>");

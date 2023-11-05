@@ -2,8 +2,8 @@
 #ifndef _SPARC64_TLB_H
 #define _SPARC64_TLB_H
 
-#include <linux/swap.h>
-#include <linux/pagemap.h>
+#include <freax/swap.h>
+#include <freax/pagemap.h>
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>
 
@@ -25,7 +25,7 @@ void flush_tlb_pending(void);
 #define tlb_flush(tlb)	flush_tlb_pending()
 
 /*
- * SPARC64's hardware TLB fill does not use the Linux page-tables
+ * SPARC64's hardware TLB fill does not use the freax page-tables
  * and therefore we don't need a TLBI when freeing page-table pages.
  */
 

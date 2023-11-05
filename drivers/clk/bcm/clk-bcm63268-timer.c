@@ -5,14 +5,14 @@
  * Copyright (C) 2023 Álvaro Fernández Rojas <noltari@gmail.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/container_of.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <freax/clk-provider.h>
+#include <freax/container_of.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/spinlock.h>
 
 #include <dt-bindings/clock/bcm63268-clock.h>
 

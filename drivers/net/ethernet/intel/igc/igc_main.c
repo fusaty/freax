@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c)  2018 Intel Corporation */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/if_vlan.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/if_vlan.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/ip.h>
+#include <freax/pm_runtime.h>
 #include <net/pkt_sched.h>
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 #include <net/xdp_sock_drv.h>
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <net/ipv6.h>
 
@@ -20,7 +20,7 @@
 #include "igc_tsn.h"
 #include "igc_xdp.h"
 
-#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet Linux Driver"
+#define DRV_SUMMARY	"Intel(R) 2.5G Ethernet freax Driver"
 
 #define DEFAULT_MSG_ENABLE (NETIF_MSG_DRV | NETIF_MSG_PROBE | NETIF_MSG_LINK)
 
@@ -31,7 +31,7 @@
 
 static int debug = -1;
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <freax.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 module_param(debug, int, 0);

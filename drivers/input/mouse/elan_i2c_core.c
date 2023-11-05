@@ -15,27 +15,27 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/input.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/input.h>
+#include <freax/uaccess.h>
+#include <freax/jiffies.h>
+#include <freax/completion.h>
+#include <freax/of.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
 #include <asm/unaligned.h>
 
 #include "elan_i2c.h"
@@ -1398,7 +1398,7 @@ static const struct i2c_device_id elan_id[] = {
 MODULE_DEVICE_TABLE(i2c, elan_id);
 
 #ifdef CONFIG_ACPI
-#include <linux/input/elan-i2c-ids.h>
+#include <freax/input/elan-i2c-ids.h>
 MODULE_DEVICE_TABLE(acpi, elan_acpi_id);
 #endif
 

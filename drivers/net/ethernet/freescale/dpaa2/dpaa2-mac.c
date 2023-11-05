@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
 
-#include <linux/acpi.h>
-#include <linux/pcs-lynx.h>
-#include <linux/phy/phy.h>
-#include <linux/property.h>
+#include <freax/acpi.h>
+#include <freax/pcs-lynx.h>
+#include <freax/phy/phy.h>
+#include <freax/property.h>
 
 #include "dpaa2-eth.h"
 #include "dpaa2-mac.h"

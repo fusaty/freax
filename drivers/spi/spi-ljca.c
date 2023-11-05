@@ -5,13 +5,13 @@
  * Copyright (c) 2023, Intel Corporation.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/dev_printk.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/usb/ljca.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/dev_printk.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/usb/ljca.h>
 
 #define LJCA_SPI_BUS_MAX_HZ		48000000
 

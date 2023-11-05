@@ -44,9 +44,9 @@
 #include "xfs_dahash_test.h"
 #include "scrub/stats.h"
 
-#include <linux/magic.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <freax/magic.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
 
 static const struct super_operations xfs_super_operations;
 
@@ -657,7 +657,7 @@ xfs_fs_alloc_inode(
 
 /*
  * Now that the generic code is guaranteed not to be accessing
- * the linux inode, we can inactivate and reclaim the inode.
+ * the freax inode, we can inactivate and reclaim the inode.
  */
 STATIC void
 xfs_fs_destroy_inode(

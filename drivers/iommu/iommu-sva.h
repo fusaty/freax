@@ -5,7 +5,7 @@
 #ifndef _IOMMU_SVA_H
 #define _IOMMU_SVA_H
 
-#include <linux/mm_types.h>
+#include <freax/mm_types.h>
 
 /* I/O Page fault */
 struct device;

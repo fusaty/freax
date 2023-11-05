@@ -16,12 +16,12 @@
  */
 
 #include "au88x0.h"
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
 #include <sound/initval.h>
 
 // module parameters (see "Module Parameters")

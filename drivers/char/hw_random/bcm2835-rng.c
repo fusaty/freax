@@ -4,15 +4,15 @@
  * Copyright (c) 2013 Lubomir Rintel
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/clk.h>
-#include <linux/reset.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
 
 #define RNG_CTRL	0x0
 #define RNG_STATUS	0x4

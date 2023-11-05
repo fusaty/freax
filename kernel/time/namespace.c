@@ -4,19 +4,19 @@
  * Author: Dmitry Safonov <dima@arista.com>
  */
 
-#include <linux/time_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/clocksource.h>
-#include <linux/seq_file.h>
-#include <linux/proc_ns.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/mm.h>
+#include <freax/time_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/clocksource.h>
+#include <freax/seq_file.h>
+#include <freax/proc_ns.h>
+#include <freax/export.h>
+#include <freax/time.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/mm.h>
 
 #include <vdso/datapage.h>
 

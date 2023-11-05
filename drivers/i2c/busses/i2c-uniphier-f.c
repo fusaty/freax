@@ -3,13 +3,13 @@
  * Copyright (C) 2015 Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/i2c.h>
+#include <freax/iopoll.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #define UNIPHIER_FI2C_CR	0x00	/* control register */
 #define     UNIPHIER_FI2C_CR_MST	BIT(3)	/* master mode */

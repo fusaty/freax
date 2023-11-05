@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-#include <linux/compat.h>
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/uacce.h>
+#include <freax/compat.h>
+#include <freax/dma-mapping.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/uacce.h>
 
 static dev_t uacce_devt;
 static DEFINE_XARRAY_ALLOC(uacce_xa);

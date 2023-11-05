@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/spi/spi.h>
 #include "fbtft.h"
 
 int fbtft_write_spi(struct fbtft_par *par, void *buf, size_t len)

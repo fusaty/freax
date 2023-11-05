@@ -6,10 +6,10 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org>
  */
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/mfd/dbx500-prcmu.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/dbx500-prcmu.h>
 
 #include "clk.h"
 #include "prcc.h"

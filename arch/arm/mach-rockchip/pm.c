@@ -4,15 +4,15 @@
  * Author: Tony Xie <tony.xie@rock-chips.com>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/suspend.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regulator/machine.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/suspend.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regulator/machine.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

@@ -3,7 +3,7 @@
  *  Copyright (C) 2022 Texas Instruments Incorporated - https://www.ti.com
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "k3-psil-priv.h"
 

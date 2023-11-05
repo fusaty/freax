@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
+#include <freax/types.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/io.h>
+#include <freax/bug.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/netdevice.h>
 
 #include "gsi.h"
 #include "reg.h"

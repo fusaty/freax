@@ -8,11 +8,11 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#ifndef _LINUX_DAVINCI_EMAC_H
-#define _LINUX_DAVINCI_EMAC_H
+#ifndef _freax_DAVINCI_EMAC_H
+#define _freax_DAVINCI_EMAC_H
 
-#include <linux/if_ether.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/if_ether.h>
+#include <freax/nvmem-consumer.h>
 
 struct mdio_platform_data {
 	unsigned long		bus_freq;

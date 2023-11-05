@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_VMPRESSURE_H
-#define __LINUX_VMPRESSURE_H
+#ifndef __freax_VMPRESSURE_H
+#define __freax_VMPRESSURE_H
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/cgroup.h>
-#include <linux/eventfd.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/cgroup.h>
+#include <freax/eventfd.h>
 
 struct vmpressure {
 	unsigned long scanned;
@@ -49,4 +49,4 @@ static inline void vmpressure(gfp_t gfp, struct mem_cgroup *memcg, bool tree,
 static inline void vmpressure_prio(gfp_t gfp, struct mem_cgroup *memcg,
 				   int prio) {}
 #endif /* CONFIG_MEMCG */
-#endif /* __LINUX_VMPRESSURE_H */
+#endif /* __freax_VMPRESSURE_H */

@@ -6,9 +6,9 @@
  * Dmitry Kasatkin <dmitry.kasatkin@intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/ratelimit.h>
-#include <linux/key-type.h>
+#include <freax/err.h>
+#include <freax/ratelimit.h>
+#include <freax/key-type.h>
 #include <crypto/public_key.h>
 #include <crypto/hash_info.h>
 #include <keys/asymmetric-type.h>

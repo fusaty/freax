@@ -4,21 +4,21 @@
  * Copyright (C) 2004-2007 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
-#include <linux/list_sort.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/crc32.h>
+#include <freax/crc32c.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/writeback.h>
+#include <freax/list_sort.h>
 
 #include "gfs2.h"
 #include "incore.h"

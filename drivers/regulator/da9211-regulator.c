@@ -4,19 +4,19 @@
 // /DA9213/DA9223/DA9214/DA9224/DA9215/DA9225
 // Copyright (C) 2015  Dialog Semiconductor Ltd.
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regmap.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/da9211.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regmap.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/regulator/da9211.h>
 #include <dt-bindings/regulator/dlg,da9211-regulator.h>
 #include "da9211-regulator.h"
 

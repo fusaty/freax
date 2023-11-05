@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/fs.h>
+#include <freax/mlx5/fs.h>
 #include "en.h"
 #include "en/params.h"
 #include "en/xsk/pool.h"

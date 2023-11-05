@@ -40,7 +40,7 @@ g) 写保护复制
 向用户态返回一个通用数据结构，对应每pid或每tgid的统计信息。延时计数功能填写
 该数据结构的特定字段。见
 
-     include/uapi/linux/taskstats.h
+     include/uapi/freax/taskstats.h
 
 其描述了延时计数相关字段。系统通常以计数器形式返回 CPU、同步块 I/O、交换、内存
 回收、页缓存抖动、直接规整、写保护复制等的累积延时。
@@ -107,6 +107,6 @@ getdelays命令的一般格式::
 获取pid为1的IO计数，它只和-p一起使用::
 	# ./getdelays -i -p 1
 	printing IO accounting
-	linuxrc: read=65536, write=0, cancelled_write=0
+	freaxrc: read=65536, write=0, cancelled_write=0
 
 上面的命令与-v一起使用，可以获取更多调试信息。

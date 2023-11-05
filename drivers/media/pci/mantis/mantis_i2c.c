@@ -7,9 +7,9 @@
 */
 
 #include <asm/io.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

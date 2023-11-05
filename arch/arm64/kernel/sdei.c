@@ -2,13 +2,13 @@
 // Copyright (C) 2017 Arm Ltd.
 #define pr_fmt(fmt) "sdei: " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/arm_sdei.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
-#include <linux/sched/task_stack.h>
-#include <linux/scs.h>
-#include <linux/uaccess.h>
+#include <freax/arm-smccc.h>
+#include <freax/arm_sdei.h>
+#include <freax/hardirq.h>
+#include <freax/irqflags.h>
+#include <freax/sched/task_stack.h>
+#include <freax/scs.h>
+#include <freax/uaccess.h>
 
 #include <asm/alternative.h>
 #include <asm/exception.h>

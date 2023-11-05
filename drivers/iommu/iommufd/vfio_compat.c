@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021-2022, NVIDIA CORPORATION & AFFILIATES
  */
-#include <linux/file.h>
-#include <linux/interval_tree.h>
-#include <linux/iommu.h>
-#include <linux/iommufd.h>
-#include <linux/slab.h>
-#include <linux/vfio.h>
-#include <uapi/linux/vfio.h>
-#include <uapi/linux/iommufd.h>
+#include <freax/file.h>
+#include <freax/interval_tree.h>
+#include <freax/iommu.h>
+#include <freax/iommufd.h>
+#include <freax/slab.h>
+#include <freax/vfio.h>
+#include <uapi/freax/vfio.h>
+#include <uapi/freax/iommufd.h>
 
 #include "iommufd_private.h"
 

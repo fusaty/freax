@@ -3,14 +3,14 @@
  * Copyright (c) 2009-2013, NVIDIA Corporation. All rights reserved.
  */
 
-#ifndef __LINUX_HOST1X_H
-#define __LINUX_HOST1X_H
+#ifndef __freax_HOST1X_H
+#define __freax_HOST1X_H
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-fence.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-fence.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 enum host1x_class {
 	HOST1X_CLASS_HOST1X = 0x1,

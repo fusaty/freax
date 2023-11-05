@@ -7,18 +7,18 @@
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/platform_data/sa11x0-serial.h>
+#include <freax/platform_device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/io.h>
 
 #include <asm/irq.h>
 #include <mach/hardware.h>

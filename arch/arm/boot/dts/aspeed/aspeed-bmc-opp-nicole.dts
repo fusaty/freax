@@ -99,7 +99,7 @@
 		event-checkstop {
 			label = "checkstop";
 			gpios = <&gpio ASPEED_GPIO(J, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(J, 2)>;
+			freax,code = <ASPEED_GPIO(J, 2)>;
 		};
 	};
 

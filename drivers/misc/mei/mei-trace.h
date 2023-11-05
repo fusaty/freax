@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2015-2016, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  */
 
 #if !defined(_MEI_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MEI_TRACE_H_
 
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM mei

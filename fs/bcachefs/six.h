@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_SIX_H
-#define _LINUX_SIX_H
+#ifndef _freax_SIX_H
+#define _freax_SIX_H
 
 /**
  * DOC: SIX locks overview
@@ -123,12 +123,12 @@
  *   be used as a cursor for lock graph traverse.
  */
 
-#include <linux/lockdep.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <freax/lockdep.h>
+#include <freax/sched.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_SIX_LOCK_SPIN_ON_OWNER
-#include <linux/osq_lock.h>
+#include <freax/osq_lock.h>
 #endif
 
 enum six_lock_type {
@@ -390,4 +390,4 @@ struct six_lock_count {
 struct six_lock_count six_lock_counts(struct six_lock *);
 void six_lock_readers_add(struct six_lock *, int);
 
-#endif /* _LINUX_SIX_H */
+#endif /* _freax_SIX_H */

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <asm-generic/vmlinux.lds.h>
-#include <asm/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
+#include <asm/vmfreax.lds.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
 #include <asm/sclp.h>
@@ -51,7 +51,7 @@ SECTIONS
 	BOOT_DATA_PRESERVED
 
 	/*
-	 * This is the BSS section of the decompressor and not of the decompressed Linux kernel.
+	 * This is the BSS section of the decompressor and not of the decompressed freax kernel.
 	 * It will consume place in the decompressor's image.
 	 */
 	. = ALIGN(8);
@@ -76,13 +76,13 @@ SECTIONS
 
 	/*
 	 * uncompressed image info used by the decompressor it should match
-	 * struct vmlinux_info. It comes from .vmlinux.info section of
-	 * uncompressed vmlinux in a form of info.o
+	 * struct vmfreax_info. It comes from .vmfreax.info section of
+	 * uncompressed vmfreax in a form of info.o
 	 */
 	. = ALIGN(8);
-	.vmlinux.info : {
-		_vmlinux_info = .;
-		*(.vmlinux.info)
+	.vmfreax.info : {
+		_vmfreax_info = .;
+		*(.vmfreax.info)
 	}
 
 	.decompressor.syms : {
@@ -102,7 +102,7 @@ SECTIONS
 #endif
 	.rodata.compressed : {
 		_compressed_start = .;
-		*(.vmlinux.bin.compressed)
+		*(.vmfreax.bin.compressed)
 		_compressed_end = .;
 	}
 

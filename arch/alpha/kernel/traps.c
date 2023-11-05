@@ -9,18 +9,18 @@
  * This file initializes the trap entry points
  */
 
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/extable.h>
-#include <linux/kallsyms.h>
-#include <linux/ratelimit.h>
+#include <freax/jiffies.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/tty.h>
+#include <freax/delay.h>
+#include <freax/extable.h>
+#include <freax/kallsyms.h>
+#include <freax/ratelimit.h>
 
 #include <asm/gentrap.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
 #include <asm/sysinfo.h>
 #include <asm/hwrpb.h>

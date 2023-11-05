@@ -4,10 +4,10 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include "syscall_nrs.h"
-#include <linux/version.h>
-#include <uapi/linux/unistd.h>
+#include <freax/version.h>
+#include <uapi/freax/unistd.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>
@@ -90,4 +90,4 @@ PROG(SYS__NR_mmap)(struct pt_regs *ctx)
 #endif
 
 char _license[] SEC("license") = "GPL";
-u32 _version SEC("version") = LINUX_VERSION_CODE;
+u32 _version SEC("version") = freax_VERSION_CODE;

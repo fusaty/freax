@@ -10,8 +10,8 @@
 #ifndef __HDMI_CODEC_H__
 #define __HDMI_CODEC_H__
 
-#include <linux/of_graph.h>
-#include <linux/hdmi.h>
+#include <freax/of_graph.h>
+#include <freax/hdmi.h>
 #include <drm/drm_edid.h>
 #include <sound/asoundef.h>
 #include <sound/soc.h>

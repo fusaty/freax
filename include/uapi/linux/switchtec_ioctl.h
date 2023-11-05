@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Microsemi Switchtec PCIe Driver
  * Copyright (c) 2017, Microsemi Corporation
@@ -14,10 +14,10 @@
  *
  */
 
-#ifndef _UAPI_LINUX_SWITCHTEC_IOCTL_H
-#define _UAPI_LINUX_SWITCHTEC_IOCTL_H
+#ifndef _UAPI_freax_SWITCHTEC_IOCTL_H
+#define _UAPI_freax_SWITCHTEC_IOCTL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SWITCHTEC_IOCTL_PART_CFG0	0
 #define SWITCHTEC_IOCTL_PART_CFG1	1

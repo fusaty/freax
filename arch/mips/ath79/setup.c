@@ -9,15 +9,15 @@
  *  Parts of this file are based on Atheros' 2.6.15/2.6.31 BSP
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/irqchip.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/of_clk.h>
+#include <freax/of_fdt.h>
+#include <freax/irqchip.h>
 
 #include <asm/bootinfo.h>
 #include <asm/idle.h>

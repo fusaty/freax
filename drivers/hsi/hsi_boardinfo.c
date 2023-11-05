@@ -6,9 +6,9 @@
  *
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
-#include <linux/hsi/hsi.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/hsi/hsi.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 #include "hsi_core.h"
 
 /*

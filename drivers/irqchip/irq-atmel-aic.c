@@ -13,20 +13,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/bitmap.h>
+#include <freax/types.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

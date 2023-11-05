@@ -4,13 +4,13 @@
  *
  * Copyright IBM Corporation, 2011
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  */
 
-#ifndef __LINUX_RCU_H
-#define __LINUX_RCU_H
+#ifndef __freax_RCU_H
+#define __freax_RCU_H
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <trace/events/rcu.h>
 
 /*
@@ -334,7 +334,7 @@ extern void resched_cpu(int cpu);
 
 #if !defined(CONFIG_TINY_RCU)
 
-#include <linux/rcu_node_tree.h>
+#include <freax/rcu_node_tree.h>
 
 extern int rcu_num_lvls;
 extern int num_rcu_lvl[];
@@ -663,4 +663,4 @@ int rcu_stall_notifier_call_chain(unsigned long val, void *v);
 static inline int rcu_stall_notifier_call_chain(unsigned long val, void *v) { return NOTIFY_DONE; }
 #endif // #else // #ifdef CONFIG_RCU_STALL_COMMON
 
-#endif /* __LINUX_RCU_H */
+#endif /* __freax_RCU_H */

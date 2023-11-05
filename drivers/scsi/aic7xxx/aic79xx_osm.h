@@ -1,5 +1,5 @@
 /*
- * Adaptec AIC79xx device driver for Linux.
+ * Adaptec AIC79xx device driver for freax.
  *
  * Copyright (c) 2000-2001 Adaptec Inc.
  * All rights reserved.
@@ -36,20 +36,20 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic79xx_osm.h#166 $
+ * $Id: //depot/aic7xxx/freax/drivers/scsi/aic7xxx/aic79xx_osm.h#166 $
  *
  */
-#ifndef _AIC79XX_LINUX_H_
-#define _AIC79XX_LINUX_H_
+#ifndef _AIC79XX_freax_H_
+#define _AIC79XX_freax_H_
 
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>
 
@@ -133,13 +133,13 @@ typedef struct bus_dma_segment
 	bus_size_t	ds_len;
 } bus_dma_segment_t;
 
-struct ahd_linux_dma_tag
+struct ahd_freax_dma_tag
 {
 	bus_size_t	alignment;
 	bus_size_t	boundary;
 	bus_size_t	maxsize;
 };
-typedef struct ahd_linux_dma_tag* bus_dma_tag_t;
+typedef struct ahd_freax_dma_tag* bus_dma_tag_t;
 
 typedef dma_addr_t bus_dmamap_t;
 
@@ -197,7 +197,7 @@ int	ahd_dmamap_unload(struct ahd_softc *, bus_dma_tag_t, bus_dmamap_t);
  * XXX
  * ahd_dmamap_sync is only used on buffers allocated with
  * the dma_alloc_coherent() API.  Although I'm not sure how
- * this works on architectures with a write buffer, Linux does
+ * this works on architectures with a write buffer, freax does
  * not have an API to sync "coherent" memory.  Perhaps we need
  * to do an mb()?
  */
@@ -212,14 +212,14 @@ int	ahd_dmamap_unload(struct ahd_softc *, bus_dma_tag_t, bus_dmamap_t);
 #include "aic79xx.h"
 
 /***************************** SMP support ************************************/
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 #define AIC79XX_DRIVER_VERSION "3.0"
 
 /*************************** Device Data Structures ***************************/
 /*
  * A per probed device structure used to deal with some error recovery
- * scenarios that the Linux mid-layer code just doesn't know how to
+ * scenarios that the freax mid-layer code just doesn't know how to
  * handle.  The structure allocated for a device only becomes persistent
  * after a successfully completed inquiry command to the target when
  * that inquiry data indicates a lun is present.
@@ -230,10 +230,10 @@ typedef enum {
 	AHD_DEV_Q_BASIC		 = 0x10, /* Allow basic device queuing */
 	AHD_DEV_Q_TAGGED	 = 0x20, /* Allow full SCSI2 command queueing */
 	AHD_DEV_PERIODIC_OTAG	 = 0x40, /* Send OTAG to prevent starvation */
-} ahd_linux_dev_flags;
+} ahd_freax_dev_flags;
 
-struct ahd_linux_device {
-	TAILQ_ENTRY(ahd_linux_device) links;
+struct ahd_freax_device {
+	TAILQ_ENTRY(ahd_freax_device) links;
 
 	/*
 	 * The number of transactions currently
@@ -271,7 +271,7 @@ struct ahd_linux_device {
 	u_int			tag_success_count;
 #define AHD_TAG_SUCCESS_INTERVAL 50
 
-	ahd_linux_dev_flags	flags;
+	ahd_freax_dev_flags	flags;
 
 	/*
 	 * Per device timer.
@@ -324,7 +324,7 @@ struct ahd_linux_device {
  * Per-SCB OSM storage.
  */
 struct scb_platform_data {
-	struct ahd_linux_device	*dev;
+	struct ahd_freax_device	*dev;
 	dma_addr_t		 buf_busaddr;
 	uint32_t		 xfer_len;
 	uint32_t		 sense_resid;	/* Auto-Sense residual */
@@ -345,7 +345,7 @@ struct ahd_platform_data {
 	spinlock_t		 spin_lock;
 	struct completion	*eh_done;
 	struct Scsi_Host	*host;		/* pointer to scsi host */
-#define AHD_LINUX_NOIRQ	((uint32_t)~0)
+#define AHD_freax_NOIRQ	((uint32_t)~0)
 	uint32_t		 irq;		/* IRQ for this adapter */
 	uint32_t		 bios_address;
 	resource_size_t		 mem_busaddr;	/* Mem Base Addr */
@@ -364,7 +364,7 @@ void ahd_insb(struct ahd_softc * ahd, long port,
 			       uint8_t *, int count);
 
 /**************************** Initialization **********************************/
-int		ahd_linux_register_host(struct ahd_softc *,
+int		ahd_freax_register_host(struct ahd_softc *,
 					struct scsi_host_template *);
 
 /******************************** Locking *************************************/
@@ -450,8 +450,8 @@ void ahd_power_state_change(struct ahd_softc *ahd,
 			    ahd_power_state new_state);
 
 /******************************* PCI Routines *********************************/
-int			 ahd_linux_pci_init(void);
-void			 ahd_linux_pci_exit(void);
+int			 ahd_freax_pci_init(void);
+void			 ahd_freax_pci_exit(void);
 int			 ahd_pci_map_registers(struct ahd_softc *ahd);
 int			 ahd_pci_map_int(struct ahd_softc *ahd);
 
@@ -492,7 +492,7 @@ ahd_flush_device_writes(struct ahd_softc *ahd)
 
 /**************************** Proc FS Support *********************************/
 int	ahd_proc_write_seeprom(struct Scsi_Host *, char *, int);
-int	ahd_linux_show_info(struct seq_file *,struct Scsi_Host *);
+int	ahd_freax_show_info(struct seq_file *,struct Scsi_Host *);
 
 /*********************** Transaction Access Wrappers **************************/
 
@@ -550,7 +550,7 @@ static inline
 void ahd_set_transaction_tag(struct scb *scb, int enabled, u_int type)
 {
 	/*
-	 * Nothing to do for linux as the incoming transaction
+	 * Nothing to do for freax as the incoming transaction
 	 * has no concept of tag/non tagged, etc.
 	 */
 }
@@ -595,7 +595,7 @@ static inline
 int ahd_perform_autosense(struct scb *scb)
 {
 	/*
-	 * We always perform autosense in Linux.
+	 * We always perform autosense in freax.
 	 * On other platforms this is set on a
 	 * per-transaction basis.
 	 */
@@ -612,7 +612,7 @@ static inline void
 ahd_notify_xfer_settings_change(struct ahd_softc *ahd,
 				struct ahd_devinfo *devinfo)
 {
-	/* Nothing to do here for linux */
+	/* Nothing to do here for freax */
 }
 
 static inline void
@@ -641,7 +641,7 @@ int	ahd_platform_abort_scbs(struct ahd_softc *ahd, int target,
 				char channel, int lun, u_int tag,
 				role_t role, uint32_t status);
 irqreturn_t
-	ahd_linux_isr(int irq, void *dev_id);
+	ahd_freax_isr(int irq, void *dev_id);
 void	ahd_done(struct ahd_softc*, struct scb*);
 void	ahd_send_async(struct ahd_softc *, char channel,
 		       u_int target, u_int lun, ac_code);
@@ -655,4 +655,4 @@ void	ahd_print_path(struct ahd_softc *, struct scb *);
 #define bootverbose aic79xx_verbose
 extern uint32_t aic79xx_verbose;
 
-#endif /* _AIC79XX_LINUX_H_ */
+#endif /* _AIC79XX_freax_H_ */

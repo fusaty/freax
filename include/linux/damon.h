@@ -8,11 +8,11 @@
 #ifndef _DAMON_H_
 #define _DAMON_H_
 
-#include <linux/memcontrol.h>
-#include <linux/mutex.h>
-#include <linux/time64.h>
-#include <linux/types.h>
-#include <linux/random.h>
+#include <freax/memcontrol.h>
+#include <freax/mutex.h>
+#include <freax/time64.h>
+#include <freax/types.h>
+#include <freax/random.h>
 
 /* Minimal region size.  Every damon_region is aligned by this. */
 #define DAMON_MIN_REGION	PAGE_SIZE

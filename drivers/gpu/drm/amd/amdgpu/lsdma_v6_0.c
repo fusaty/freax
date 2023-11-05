@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include "amdgpu.h"
 #include "lsdma_v6_0.h"
 #include "amdgpu_lsdma.h"

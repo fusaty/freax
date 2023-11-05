@@ -16,7 +16,7 @@
 #ifndef _XTENSA_UACCESS_H
 #define _XTENSA_UACCESS_H
 
-#include <linux/prefetch.h>
+#include <freax/prefetch.h>
 #include <asm/types.h>
 #include <asm/extable.h>
 #include <asm-generic/access_ok.h>

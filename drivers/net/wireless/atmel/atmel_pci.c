@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*** -*- linux-c -*- **********************************************************
+/*** -*- freax-c -*- **********************************************************
 
      Driver for Atmel at76c502 at76c504 and at76c506 wireless cards.
 
@@ -7,10 +7,10 @@
 
 
 ******************************************************************************/
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
 #include "atmel.h"
 
 MODULE_AUTHOR("Simon Kelley");

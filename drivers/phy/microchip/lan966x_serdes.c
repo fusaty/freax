@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/phy.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/phy/phy-lan966x-serdes.h>
 #include "lan966x_serdes_regs.h"

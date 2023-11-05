@@ -6,16 +6,16 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 
 #ifndef SMC_CDC_H
 #define SMC_CDC_H
 
-#include <linux/kernel.h> /* max_t */
-#include <linux/atomic.h>
-#include <linux/in.h>
-#include <linux/compiler.h>
+#include <freax/kernel.h> /* max_t */
+#include <freax/atomic.h>
+#include <freax/in.h>
+#include <freax/compiler.h>
 
 #include "smc.h"
 #include "smc_core.h"

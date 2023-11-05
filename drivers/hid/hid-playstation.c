@@ -5,15 +5,15 @@
  *  Copyright (c) 2020-2022 Sony Interactive Entertainment
  */
 
-#include <linux/bits.h>
-#include <linux/crc32.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/idr.h>
-#include <linux/input/mt.h>
-#include <linux/leds.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
+#include <freax/bits.h>
+#include <freax/crc32.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/idr.h>
+#include <freax/input/mt.h>
+#include <freax/leds.h>
+#include <freax/led-class-multicolor.h>
+#include <freax/module.h>
 
 #include <asm/unaligned.h>
 

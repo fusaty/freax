@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2017 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@freax.intel.com>
  */
 
-#ifndef __LINUX_XHCI_DEBUGFS_H
-#define __LINUX_XHCI_DEBUGFS_H
+#ifndef __freax_XHCI_DEBUGFS_H
+#define __freax_XHCI_DEBUGFS_H
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #define DEBUGFS_NAMELEN 32
 
@@ -140,4 +140,4 @@ xhci_debugfs_create_stream_files(struct xhci_hcd *xhci,
 				 int ep_index) { }
 #endif /* CONFIG_DEBUG_FS */
 
-#endif /* __LINUX_XHCI_DEBUGFS_H */
+#endif /* __freax_XHCI_DEBUGFS_H */

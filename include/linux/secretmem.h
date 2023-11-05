@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_SECRETMEM_H
-#define _LINUX_SECRETMEM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_SECRETMEM_H
+#define _freax_SECRETMEM_H
 
 #ifdef CONFIG_SECRETMEM
 
@@ -50,4 +50,4 @@ static inline bool secretmem_active(void)
 
 #endif /* CONFIG_SECRETMEM */
 
-#endif /* _LINUX_SECRETMEM_H */
+#endif /* _freax_SECRETMEM_H */

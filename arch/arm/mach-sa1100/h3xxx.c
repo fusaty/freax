@@ -6,17 +6,17 @@
  * Copyright (c) 2009 Dmitry Artamonow <mad_soft@inbox.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
+#include <freax/kernel.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/platform_data/gpio-htc-egpio.h>
+#include <freax/platform_data/sa11x0-serial.h>
+#include <freax/platform_device.h>
+#include <freax/serial_core.h>
 
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>

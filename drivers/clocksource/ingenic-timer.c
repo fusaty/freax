@@ -5,20 +5,20 @@
  * Copyright (C) 2020 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/cpuhotplug.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/ingenic-tcu.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched_clock.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/cpuhotplug.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/ingenic-tcu.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/overflow.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/sched_clock.h>
 
 #include <dt-bindings/clock/ingenic,tcu.h>
 

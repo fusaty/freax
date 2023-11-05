@@ -45,10 +45,10 @@
  *   6    6       2        2      4    2       N
  */
 
-#include <linux/dsa/mv88e6xxx.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/dsa/mv88e6xxx.h>
+#include <freax/etherdevice.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include "tag.h"
 

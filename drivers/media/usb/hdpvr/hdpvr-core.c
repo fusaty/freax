@@ -7,18 +7,18 @@
  * Copyright (C) 2008      John Poet
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
+#include <freax/i2c.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-common.h>
 

@@ -8,14 +8,14 @@
  * Initial development of this code was funded by
  * Phytec Messtechnik GmbH, http://www.phytec.de/
  */
-#include <linux/platform_device.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/mc13783.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/init.h>
 
 #define MC13783_TS_NAME	"mc13783-ts"
 

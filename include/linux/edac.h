@@ -9,15 +9,15 @@
  * or implied.
  *
  */
-#ifndef _LINUX_EDAC_H_
-#define _LINUX_EDAC_H_
+#ifndef _freax_EDAC_H_
+#define _freax_EDAC_H_
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/numa.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/numa.h>
 
 #define EDAC_DEVICE_NAME_LEN	31
 
@@ -658,4 +658,4 @@ static inline struct dimm_info *edac_get_dimm(struct mem_ctl_info *mci,
 
 	return mci->dimms[index];
 }
-#endif /* _LINUX_EDAC_H_ */
+#endif /* _freax_EDAC_H_ */

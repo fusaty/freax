@@ -39,9 +39,9 @@
 
 		key-power {
 			gpios = <&gpio0 RK_PA4 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			freax,input-type = <1>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};
@@ -49,7 +49,7 @@
 		wake_on_usb: key-wake-on-usb {
 			label = "Wake-on-USB";
 			gpios = <&gpio0 RK_PA7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};

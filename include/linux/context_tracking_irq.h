@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CONTEXT_TRACKING_IRQ_H
-#define _LINUX_CONTEXT_TRACKING_IRQ_H
+#ifndef _freax_CONTEXT_TRACKING_IRQ_H
+#define _freax_CONTEXT_TRACKING_IRQ_H
 
 #ifdef CONFIG_CONTEXT_TRACKING_IDLE
 void ct_irq_enter(void);

@@ -4,13 +4,13 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <net/udp_tunnel.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
+#include <freax/bitops.h>
+#include <freax/vmalloc.h>
 
-#include <linux/qed/qed_if.h>
+#include <freax/qed/qed_if.h>
 #include "qede.h"
 
 #define QEDE_FILTER_PRINT_MAX_LEN	(64)

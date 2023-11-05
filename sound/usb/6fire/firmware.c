@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * freax driver for TerraTec DMX 6Fire USB
  *
  * Firmware loader
  *
@@ -9,10 +9,10 @@
  * Copyright:	(C) Torsten Schenk
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bitrev.h>
-#include <linux/kernel.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/bitrev.h>
+#include <freax/kernel.h>
 
 #include "firmware.h"
 #include "chip.h"

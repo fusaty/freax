@@ -5,7 +5,7 @@
 #if !defined(_OSNOISE_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _OSNOISE_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 TRACE_EVENT(thread_noise,
 
 	TP_PROTO(struct task_struct *t, u64 start, u64 duration),

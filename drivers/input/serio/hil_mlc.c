@@ -52,15 +52,15 @@
  *	and to initiate probes of the loop for new devices.
  */
 
-#include <linux/hil_mlc.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/list.h>
+#include <freax/hil_mlc.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/list.h>
 
 MODULE_AUTHOR("Brian S. Julin <bri@calyx.com>");
 MODULE_DESCRIPTION("HIL MLC serio");

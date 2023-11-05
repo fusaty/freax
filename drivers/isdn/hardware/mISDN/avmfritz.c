@@ -3,16 +3,16 @@
  * avm_fritz.c    low level stuff for AVM FRITZ!CARD PCI ISDN cards
  *                Thanks to AVM, Berlin for informations
  *
- * Author       Karsten Keil <keil@isdn4linux.de>
+ * Author       Karsten Keil <keil@isdn4freax.de>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4freax.de>
  */
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/mISDNhw.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 #include "ipac.h"
 

@@ -29,11 +29,11 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/gpio.h: ../../include/uapi/linux/gpio.h
-	mkdir -p $(OUTPUT)include/linux 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/gpio.h $@
+$(OUTPUT)include/freax/gpio.h: ../../include/uapi/freax/gpio.h
+	mkdir -p $(OUTPUT)include/freax 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/freax/gpio.h $@
 
-prepare: $(OUTPUT)include/linux/gpio.h
+prepare: $(OUTPUT)include/freax/gpio.h
 
 GPIO_UTILS_IN := $(OUTPUT)gpio-utils-in.o
 $(GPIO_UTILS_IN): prepare FORCE
@@ -77,7 +77,7 @@ $(OUTPUT)gpio-watch: $(GPIO_WATCH_IN)
 
 clean:
 	rm -f $(ALL_PROGRAMS)
-	rm -f $(OUTPUT)include/linux/gpio.h
+	rm -f $(OUTPUT)include/freax/gpio.h
 	find $(or $(OUTPUT),.) -name '*.o' -delete -o -name '\.*.d' -delete
 
 install: $(ALL_PROGRAMS)

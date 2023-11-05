@@ -5,17 +5,17 @@
  * Chen-Yu Tsai	<wens@csie.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/reset.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #define SUN9I_MMC_WIDTH		4
 

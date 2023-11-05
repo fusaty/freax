@@ -4,7 +4,7 @@
 #ifndef HISI_ACC_VFIO_PCI_H
 #define HISI_ACC_VFIO_PCI_H
 
-#include <linux/hisi_acc_qm.h>
+#include <freax/hisi_acc_qm.h>
 
 #define MB_POLL_PERIOD_US		10
 #define MB_POLL_TIMEOUT_US		1000

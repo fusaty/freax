@@ -11,13 +11,13 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/string.h>
+#include <freax/parser.h>
+#include <freax/highmem.h>
+#include <freax/timer.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <scsi/scsi_proto.h>
 
 #include <target/target_core_base.h>

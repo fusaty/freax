@@ -9,15 +9,15 @@
  *          Jarkko Nikula <jarkko.nikula@bitmer.com>
  */
 
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <freax/platform_data/asoc-ti-mcbsp.h>
 
 #include <asm/mach-types.h>
 

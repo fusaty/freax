@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021 Mellanox Technologies. */
 
 #undef TRACE_SYSTEM
@@ -7,7 +7,7 @@
 #if !defined(_MLX5_ESW_BRIDGE_TRACEPOINT_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_ESW_BRIDGE_TRACEPOINT_
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include "../bridge_priv.h"
 
 DECLARE_EVENT_CLASS(mlx5_esw_bridge_fdb_template,

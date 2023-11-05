@@ -13,19 +13,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/soc.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/errno.h>
+#include <freax/irq.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/axp20x.h>
+#include <freax/module.h>
+#include <freax/platform_data/x86/soc.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define AXP20X_PEK_STARTUP_MASK		(0xc0)
 #define AXP20X_PEK_SHUTDOWN_MASK	(0x03)

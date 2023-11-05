@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/crash_core.h>
-#include <linux/pagemap.h>
+#include <freax/crash_core.h>
+#include <freax/pagemap.h>
 
 void arch_crash_save_vmcoreinfo(void)
 {

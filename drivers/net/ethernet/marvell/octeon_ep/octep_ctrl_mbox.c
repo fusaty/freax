@@ -4,16 +4,16 @@
  * Copyright (C) 2020 Marvell.
  *
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mutex.h>
+#include <freax/jiffies.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/etherdevice.h>
 
 #include "octep_ctrl_mbox.h"
 #include "octep_config.h"

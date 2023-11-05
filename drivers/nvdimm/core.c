@@ -2,18 +2,18 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/libnvdimm.h>
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/device.h>
-#include <linux/ctype.h>
-#include <linux/ndctl.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/libnvdimm.h>
+#include <freax/suspend.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/device.h>
+#include <freax/ctype.h>
+#include <freax/ndctl.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 #include "nd-core.h"
 #include "nd.h"
 

@@ -4,22 +4,22 @@
  * Author: Christophe Kerello <christophe.kerello@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/of_address.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
 
 /* Bad block marker length */
 #define FMC2_BBM_LEN			2

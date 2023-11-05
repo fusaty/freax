@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef PERF_LINUX_LINKAGE_H_
-#define PERF_LINUX_LINKAGE_H_
+#ifndef PERF_freax_LINKAGE_H_
+#define PERF_freax_LINKAGE_H_
 
 /* linkage.h ... for including arch/x86/lib/memcpy_64.S */
 
@@ -115,7 +115,7 @@
 	SYM_ALIAS(alias, name, SYM_T_FUNC, SYM_L_WEAK)
 #endif
 
-// In the kernel sources (include/linux/cfi_types.h), this has a different
+// In the kernel sources (include/freax/cfi_types.h), this has a different
 // definition when CONFIG_CFI_CLANG is used, for tools/ just use the !clang
 // definition:
 #ifndef SYM_TYPED_START
@@ -128,4 +128,4 @@
         SYM_TYPED_START(name, SYM_L_GLOBAL, SYM_A_ALIGN)
 #endif
 
-#endif	/* PERF_LINUX_LINKAGE_H_ */
+#endif	/* PERF_freax_LINKAGE_H_ */

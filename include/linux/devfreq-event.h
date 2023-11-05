@@ -6,10 +6,10 @@
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
  */
 
-#ifndef __LINUX_DEVFREQ_EVENT_H__
-#define __LINUX_DEVFREQ_EVENT_H__
+#ifndef __freax_DEVFREQ_EVENT_H__
+#define __freax_DEVFREQ_EVENT_H__
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /**
  * struct devfreq_event_dev - the devfreq-event device
@@ -197,4 +197,4 @@ static inline void *devfreq_event_get_drvdata(struct devfreq_event_dev *edev)
 }
 #endif /* CONFIG_PM_DEVFREQ_EVENT */
 
-#endif /* __LINUX_DEVFREQ_EVENT_H__ */
+#endif /* __freax_DEVFREQ_EVENT_H__ */

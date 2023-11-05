@@ -2,15 +2,15 @@
 /*
  * Copyright 2011-2012 Calxeda, Inc.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/ctype.h>
+#include <freax/edac.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
 
 #include "edac_module.h"
 

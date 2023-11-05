@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
@@ -8,23 +8,23 @@
 #ifndef __MSM_DRV_H__
 #define __MSM_DRV_H__
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/devfreq.h>
-#include <linux/module.h>
-#include <linux/component.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/iommu.h>
-#include <linux/types.h>
-#include <linux/of_graph.h>
-#include <linux/of_device.h>
-#include <linux/sizes.h>
-#include <linux/kthread.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/devfreq.h>
+#include <freax/module.h>
+#include <freax/component.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/iommu.h>
+#include <freax/types.h>
+#include <freax/of_graph.h>
+#include <freax/of_device.h>
+#include <freax/sizes.h>
+#include <freax/kthread.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

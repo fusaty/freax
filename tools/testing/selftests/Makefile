@@ -186,7 +186,7 @@ all: kernel_header_files
 	done; exit $$ret;
 
 kernel_header_files:
-	@ls $(KHDR_DIR)/linux/*.h >/dev/null 2>/dev/null;                          \
+	@ls $(KHDR_DIR)/freax/*.h >/dev/null 2>/dev/null;                          \
 	if [ $$? -ne 0 ]; then                                                     \
             RED='\033[1;31m';                                                  \
             NOCOLOR='\033[0m';                                                 \

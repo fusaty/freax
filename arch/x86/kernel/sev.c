@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt)	"SEV: " fmt
 
-#include <linux/sched/debug.h>	/* For show_regs() */
-#include <linux/percpu-defs.h>
-#include <linux/cc_platform.h>
-#include <linux/printk.h>
-#include <linux/mm_types.h>
-#include <linux/set_memory.h>
-#include <linux/memblock.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/cpumask.h>
-#include <linux/efi.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/psp-sev.h>
-#include <uapi/linux/sev-guest.h>
+#include <freax/sched/debug.h>	/* For show_regs() */
+#include <freax/percpu-defs.h>
+#include <freax/cc_platform.h>
+#include <freax/printk.h>
+#include <freax/mm_types.h>
+#include <freax/set_memory.h>
+#include <freax/memblock.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/cpumask.h>
+#include <freax/efi.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/psp-sev.h>
+#include <uapi/freax/sev-guest.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/stacktrace.h>
@@ -736,7 +736,7 @@ static void early_set_pages_state(unsigned long vaddr, unsigned long paddr,
 	return;
 
 e_term:
-	sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+	sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PSC);
 }
 
 void __init early_snp_set_memory_private(unsigned long vaddr, unsigned long paddr,
@@ -847,7 +847,7 @@ static unsigned long __set_pages_state(struct snp_psc_desc *data, unsigned long 
 
 	/* Invoke the hypervisor to perform the page state changes */
 	if (!ghcb || vmgexit_psc(ghcb, data))
-		sev_es_terminate(SEV_TERM_SET_LINUX, GHCB_TERM_PSC);
+		sev_es_terminate(SEV_TERM_SET_freax, GHCB_TERM_PSC);
 
 	if (sev_cfg.ghcbs_initialized)
 		__sev_put_ghcb(&state);
@@ -2052,7 +2052,7 @@ fail:
  *   - via boot_params
  *
  * - when booted directly by firmware/bootloader (e.g. CONFIG_PVH):
- *   - via a setup_data entry, as defined by the Linux Boot Protocol
+ *   - via a setup_data entry, as defined by the freax Boot Protocol
  *
  * Scan for the blob in that order.
  */

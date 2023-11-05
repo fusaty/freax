@@ -3,7 +3,7 @@
  * Copyright (c) 2023 Ventana Micro Systems Inc.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asm.h>
 #include <asm/alternative-macros.h>
 #include <asm-generic/export.h>

@@ -8,14 +8,14 @@
 #ifndef _SURFACE_AGGREGATOR_SSH_REQUEST_LAYER_H
 #define _SURFACE_AGGREGATOR_SSH_REQUEST_LAYER_H
 
-#include <linux/atomic.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
-#include <linux/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/controller.h>
 
 #include "ssh_packet_layer.h"
 

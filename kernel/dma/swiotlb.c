@@ -20,33 +20,33 @@
 
 #define pr_fmt(fmt) "software IO TLB: " fmt
 
-#include <linux/cache.h>
-#include <linux/cc_platform.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/iommu-helper.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/pfn.h>
-#include <linux/rculist.h>
-#include <linux/scatterlist.h>
-#include <linux/set_memory.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/swiotlb.h>
-#include <linux/types.h>
+#include <freax/cache.h>
+#include <freax/cc_platform.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/iommu-helper.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/pfn.h>
+#include <freax/rculist.h>
+#include <freax/scatterlist.h>
+#include <freax/set_memory.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/swiotlb.h>
+#include <freax/types.h>
 #ifdef CONFIG_DMA_RESTRICTED_POOL
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/slab.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/slab.h>
 #endif
 
 #define CREATE_TRACE_POINTS
@@ -1704,8 +1704,8 @@ static int __init rmem_swiotlb_setup(struct reserved_mem *rmem)
 	unsigned long node = rmem->fdt_node;
 
 	if (of_get_flat_dt_prop(node, "reusable", NULL) ||
-	    of_get_flat_dt_prop(node, "linux,cma-default", NULL) ||
-	    of_get_flat_dt_prop(node, "linux,dma-default", NULL) ||
+	    of_get_flat_dt_prop(node, "freax,cma-default", NULL) ||
+	    of_get_flat_dt_prop(node, "freax,dma-default", NULL) ||
 	    of_get_flat_dt_prop(node, "no-map", NULL))
 		return -EINVAL;
 

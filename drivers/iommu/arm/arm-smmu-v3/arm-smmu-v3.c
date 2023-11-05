@@ -9,23 +9,23 @@
  * This driver is powered by bad coffee and bombay mix.
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitops.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io-pgtable.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/acpi_iort.h>
+#include <freax/bitops.h>
+#include <freax/crash_dump.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io-pgtable.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/pci.h>
+#include <freax/pci-ats.h>
+#include <freax/platform_device.h>
 
 #include "arm-smmu-v3.h"
 #include "../../dma-iommu.h"

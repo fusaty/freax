@@ -5,14 +5,14 @@
  *  Copyright (c) 2019 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/usb.h>
+#include <freax/wait.h>
 
 #include "hid-ids.h"
 

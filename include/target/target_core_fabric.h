@@ -2,8 +2,8 @@
 #ifndef TARGET_CORE_FABRIC_H
 #define TARGET_CORE_FABRIC_H
 
-#include <linux/configfs.h>
-#include <linux/types.h>
+#include <freax/configfs.h>
+#include <freax/types.h>
 #include <target/target_core_base.h>
 
 struct target_core_fabric_ops {

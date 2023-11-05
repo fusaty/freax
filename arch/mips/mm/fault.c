@@ -5,28 +5,28 @@
  *
  * Copyright (C) 1995 - 2000 by Ralf Baechle
  */
-#include <linux/context_tracking.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/ratelimit.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kprobes.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <freax/context_tracking.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/ratelimit.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kprobes.h>
+#include <freax/perf_event.h>
+#include <freax/uaccess.h>
 
 #include <asm/branch.h>
 #include <asm/mmu_context.h>
 #include <asm/ptrace.h>
 #include <asm/highmem.h>		/* For VMALLOC_END */
-#include <linux/kdebug.h>
+#include <freax/kdebug.h>
 
 int show_unhandled_signals = 1;
 

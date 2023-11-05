@@ -4,14 +4,14 @@
  * Copyright (C) 2016 Linaro Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #define M10V_CLKSEL1		0x0
 #define CLKSEL(n)	(((n) - 1) * 4 + M10V_CLKSEL1)

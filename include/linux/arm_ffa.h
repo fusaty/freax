@@ -3,14 +3,14 @@
  * Copyright (C) 2021 ARM Ltd.
  */
 
-#ifndef _LINUX_ARM_FFA_H
-#define _LINUX_ARM_FFA_H
+#ifndef _freax_ARM_FFA_H
+#define _freax_ARM_FFA_H
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
 
 #define FFA_SMC(calling_convention, func_num)				\
 	ARM_SMCCC_CALL_VAL(ARM_SMCCC_FAST_CALL, (calling_convention),	\
@@ -428,4 +428,4 @@ struct ffa_ops {
 	const struct ffa_notifier_ops *notifier_ops;
 };
 
-#endif /* _LINUX_ARM_FFA_H */
+#endif /* _freax_ARM_FFA_H */

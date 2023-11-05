@@ -6,27 +6,27 @@
 
 /* Internal header file for autofs */
 
-#include <linux/auto_fs.h>
-#include <linux/auto_dev-ioctl.h>
+#include <freax/auto_fs.h>
+#include <freax/auto_dev-ioctl.h>
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/file.h>
-#include <linux/magic.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/string.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/uaccess.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/file.h>
+#include <freax/magic.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
 
 /* This is the range of ioctl() numbers we claim as ours */
 #define AUTOFS_IOC_FIRST     AUTOFS_IOC_READY

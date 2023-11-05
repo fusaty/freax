@@ -275,7 +275,7 @@ examples:
             #size-cells = <2>;
             device_type = "pci";
             num-lanes = <8>;
-            linux,pci-domain = <0>;
+            freax,pci-domain = <0>;
 
             pinctrl-names = "default";
             pinctrl-0 = <&pex_rst_c5_out_state>, <&clkreq_c5_bi_dir_state>;
@@ -343,7 +343,7 @@ examples:
             device_type = "pci";
             num-lanes = <4>;
             num-viewport = <8>;
-            linux,pci-domain = <4>;
+            freax,pci-domain = <4>;
 
             clocks = <&bpmp TEGRA234_CLK_PEX0_C4_CORE>;
             clock-names = "core";

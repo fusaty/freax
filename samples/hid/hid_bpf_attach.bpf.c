@@ -2,7 +2,7 @@
 /* Copyright (c) 2022 Benjamin Tissoires
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include "hid_bpf_attach.h"

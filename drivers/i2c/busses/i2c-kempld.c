@@ -8,11 +8,11 @@
  * The driver is based on the i2c-ocores driver by Peter Korsgaard.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/mfd/kempld.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/mfd/kempld.h>
 
 #define KEMPLD_I2C_PRELOW	0x0b
 #define KEMPLD_I2C_PREHIGH	0x0c

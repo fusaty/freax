@@ -11,7 +11,7 @@
 #ifndef ZFCP_REQLIST_H
 #define ZFCP_REQLIST_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* number of hash buckets */
 #define ZFCP_REQ_LIST_BUCKETS 128u

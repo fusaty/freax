@@ -5,8 +5,8 @@
  * Copyright (C) 2011 Jon Medhurst <tixy@yxit.co.uk>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/system_info.h>
 #include <asm/opcodes.h>
 #include <asm/probes.h>
@@ -189,7 +189,7 @@ void kprobe_arm_test_cases(void)
 	TEST_BF_R ("mov	pc, r",0,2f,"")
 	TEST_BF_R ("add	pc, pc, r",14,(2f-1f-8)*2,", asr #1")
 	TEST_BB(   "sub	pc, pc, #1b-2b+8")
-#if __LINUX_ARM_ARCH__ == 6 && !defined(CONFIG_CPU_V7)
+#if __freax_ARM_ARCH__ == 6 && !defined(CONFIG_CPU_V7)
 	TEST_BB(   "sub	pc, pc, #1b-2b+8-2") /* UNPREDICTABLE before and after ARMv6 */
 #endif
 	TEST_BB_R( "sub	pc, pc, r",14, 1f-2f+8,"")
@@ -212,14 +212,14 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED("msr	cpsr_f, lr")
 	TEST_UNSUPPORTED("msr	spsr, r0")
 
-#if __LINUX_ARM_ARCH__ >= 5 || \
-    (__LINUX_ARM_ARCH__ == 4 && !defined(CONFIG_CPU_32v4))
+#if __freax_ARM_ARCH__ >= 5 || \
+    (__freax_ARM_ARCH__ == 4 && !defined(CONFIG_CPU_32v4))
 	TEST_BF_R("bx	r",0,2f,"")
 	TEST_BB_R("bx	r",7,2f,"")
 	TEST_BF_R("bxeq	r",14,2f,"")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	TEST_R("clz	r0, r",0, 0x0,"")
 	TEST_R("clzeq	r7, r",14,0x1,"")
 	TEST_R("clz	lr, r",7, 0xffffffff,"")
@@ -227,7 +227,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0x016fff10) "	@ clz pc, r0")
 	TEST_UNSUPPORTED(__inst_arm(0x016f0f1f) "	@ clz r0, pc")
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_UNSUPPORTED("bxj	r0")
 #endif
 
@@ -365,7 +365,7 @@ void kprobe_arm_test_cases(void)
 	TEST_RR(     "mlas	lr, r",1, VAL2,", r",2, VAL3,", r13")
 	TEST_UNSUPPORTED(__inst_arm(0xe03f3291) " @ mlas pc, r1, r2, r3")
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_RR(  "umaal	r0, r1, r",2, VAL1,", r",3, VAL2,"")
 	TEST_RR(  "umaalls	r7, r8, r",9, VAL2,", r",10, VAL1,"")
 	TEST_R(   "umaal	lr, r12, r",11,VAL3,", r13")
@@ -375,7 +375,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe05fff9f) " @ undef")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_RRR(  "mls		r0, r",1, VAL1,", r",2, VAL2,", r",3,  VAL3,"")
 	TEST_RRR(  "mlshi	r7, r",8, VAL3,", r",9, VAL1,", r",10, VAL2,"")
 	TEST_RR(   "mls		lr, r",1, VAL2,", r",2, VAL3,", r13")
@@ -436,7 +436,7 @@ void kprobe_arm_test_cases(void)
 
 	TEST_GROUP("Synchronization primitives")
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	TEST_RP("swp	lr, r",7,VAL2,", [r",8,0,"]")
 	TEST_R( "swpvs	r0, r",1,VAL1,", [sp]")
 	TEST_RP("swp	sp, r",14,VAL2,", [r",12,13*4,"]")
@@ -448,7 +448,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe102f091) " @ swp pc, r1, [r2]")
 	TEST_UNSUPPORTED(__inst_arm(0xe102009f) " @ swp r0, pc, [r2]")
 	TEST_UNSUPPORTED(__inst_arm(0xe10f0091) " @ swp r0, r1, [pc]")
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	TEST_RP("swpb	lr, r",7,VAL2,", [r",8,0,"]")
 	TEST_R( "swpbvs	r0, r",1,VAL1,", [sp]")
 #else
@@ -463,10 +463,10 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe1500090)) /* Unallocated space */
 	TEST_UNSUPPORTED(__inst_arm(0xe1600090)) /* Unallocated space */
 	TEST_UNSUPPORTED(__inst_arm(0xe1700090)) /* Unallocated space */
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_UNSUPPORTED("ldrex	r2, [sp]")
 #endif
-#if (__LINUX_ARM_ARCH__ >= 7) || defined(CONFIG_CPU_32v6K)
+#if (__freax_ARM_ARCH__ >= 7) || defined(CONFIG_CPU_32v6K)
 	TEST_UNSUPPORTED("strexd	r0, r2, r3, [sp]")
 	TEST_UNSUPPORTED("ldrexd	r2, r3, [sp]")
 	TEST_UNSUPPORTED("strexb	r0, r2, [sp]")
@@ -558,7 +558,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe1ffc3f0) "	@ ldrsh r12, [pc, #48]!")
 	TEST_UNSUPPORTED(__inst_arm(0xe0d9f3f0) "	@ ldrsh pc, [r9], #48")
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_UNSUPPORTED("strht	r1, [r2], r3")
 	TEST_UNSUPPORTED("ldrht	r1, [r2], r3")
 	TEST_UNSUPPORTED("strht	r1, [r2], #48")
@@ -569,7 +569,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED("ldrsht	r1, [r2], #48")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	TEST_RPR(  "strd	r",0, VAL1,", [r",1, 48,", -r",2,24,"]")
 	TEST_RPR(  "strdcc	r",8, VAL2,", [r",11,0, ", r",12,48,"]")
 	TEST_UNSUPPORTED(  "strdcc r8, [r13, r12]")
@@ -615,7 +615,7 @@ void kprobe_arm_test_cases(void)
 
 	TEST_GROUP("Miscellaneous")
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST("movw	r0, #0")
 	TEST("movw	r0, #0xffff")
 	TEST("movw	lr, #0xffff")
@@ -630,7 +630,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED("msr	cpsr_f, 0xf0000000")
 	TEST_UNSUPPORTED("msr	spsr, 0x13")
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_SUPPORTED("yield")
 	TEST("sev")
 	TEST("nop")
@@ -721,7 +721,7 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED("strbt	r6, [r7], #4")
 	TEST_UNSUPPORTED("strbt	r7, [r8], r9")
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_GROUP("Parallel addition and subtraction, signed")
 
 	TEST_UNSUPPORTED(__inst_arm(0xe6000010) "") /* Unallocated space */
@@ -871,9 +871,9 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe67cfffa) "	@ uhsub8	pc, r12, r10")
 	TEST_UNSUPPORTED(__inst_arm(0xe67feffa) "	@ uhsub8	r14, pc, r10")
 	TEST_UNSUPPORTED(__inst_arm(0xe67cefff) "	@ uhsub8	r14, r12, pc")
-#endif /* __LINUX_ARM_ARCH__ >= 7 */
+#endif /* __freax_ARM_ARCH__ >= 7 */
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_GROUP("Packing, unpacking, saturation, and reversal")
 
 	TEST_RR(    "pkhbt	r0, r",0,  HH1,", r",1, HH2,"")
@@ -947,7 +947,7 @@ void kprobe_arm_test_cases(void)
 	TEST_R(     "uxtb	r8, r",7,  HH1,"")
 	TEST_UNSUPPORTED(__inst_arm(0xe6ecf47a) "	@ uxtab	pc,r12, r10, ror #8")
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_R(     "rbit	r0, r",0,   VAL1,"")
 	TEST_R(     "rbit	r14, r",12, VAL2,"")
 	TEST_UNSUPPORTED(__inst_arm(0xe6ffff3c) "	@ rbit	pc, r12")
@@ -971,9 +971,9 @@ void kprobe_arm_test_cases(void)
 
 	TEST_UNSUPPORTED(__inst_arm(0xe6d00070) "") /* Unallocated space */
 	TEST_UNSUPPORTED(__inst_arm(0xe6dfff7f) "") /* Unallocated space */
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_GROUP("Signed multiplies")
 
 	TEST_RRR(   "smlad	r0, r",0,  HH1,", r",1, HH2,", r",2, VAL1,"")
@@ -1051,9 +1051,9 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xe78f8a1c) "	@ usada8	pc, r12, r10, r8")
 	TEST_UNSUPPORTED(__inst_arm(0xe78e8a1f) "	@ usada8	r14, pc, r10, r8")
 	TEST_UNSUPPORTED(__inst_arm(0xe78e8f1c) "	@ usada8	r14, r12, pc, r8")
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_GROUP("Bit Field")
 
 	TEST_R(     "sbfx	r0, r",0  , VAL1,", #0, #31")
@@ -1079,7 +1079,7 @@ void kprobe_arm_test_cases(void)
 
 	TEST_UNSUPPORTED(__inst_arm(0x07f000f0) "")  /* Permanently UNDEFINED */
 	TEST_UNSUPPORTED(__inst_arm(0x07ffffff) "")  /* Permanently UNDEFINED */
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
 	TEST_GROUP("Branch, branch with link, and block data transfer")
 
@@ -1250,7 +1250,7 @@ void kprobe_arm_test_cases(void)
 	TEST_COPROCESSOR( "mrc"two"	p0, 0, r0, cr0, cr0, 0")
 
 	COPROCESSOR_INSTRUCTIONS_ST_LD("",e)
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	COPROCESSOR_INSTRUCTIONS_MC_MR("",e)
 #endif
 	TEST_UNSUPPORTED("svc	0")
@@ -1260,7 +1260,7 @@ void kprobe_arm_test_cases(void)
 
 	TEST_GROUP("Unconditional instruction")
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_UNSUPPORTED("srsda	sp, 0x13")
 	TEST_UNSUPPORTED("srsdb	sp, 0x13")
 	TEST_UNSUPPORTED("srsia	sp, 0x13")
@@ -1286,9 +1286,9 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED(__inst_arm(0xf93d0a00) "	@ rfedb	pc!")
 	TEST_UNSUPPORTED(__inst_arm(0xf8bd0a00) "	@ rfeia	pc!")
 	TEST_UNSUPPORTED(__inst_arm(0xf9bd0a00) "	@ rfeib	pc!")
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_X(	"blx	__dummy_thumb_subroutine_even",
 		".thumb				\n\t"
 		".space 4			\n\t"
@@ -1310,18 +1310,18 @@ void kprobe_arm_test_cases(void)
 		".arm				\n\t"
 	)
 	TEST(	"blx	__dummy_thumb_subroutine_odd")
-#endif /* __LINUX_ARM_ARCH__ >= 6 */
+#endif /* __freax_ARM_ARCH__ >= 6 */
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	COPROCESSOR_INSTRUCTIONS_ST_LD("2",f)
 #endif
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	COPROCESSOR_INSTRUCTIONS_MC_MR("2",f)
 #endif
 
 	TEST_GROUP("Miscellaneous instructions, memory hints, and Advanced SIMD instructions")
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	TEST_UNSUPPORTED("cps	0x13")
 	TEST_UNSUPPORTED("cpsie	i")
 	TEST_UNSUPPORTED("cpsid	i")
@@ -1331,27 +1331,27 @@ void kprobe_arm_test_cases(void)
 	TEST_UNSUPPORTED("setend	be")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_P("pli	[r",0,0b,", #16]")
 	TEST(  "pli	[pc, #0]")
 	TEST_RR("pli	[r",12,0b,", r",0, 16,"]")
 	TEST_RR("pli	[r",0, 0b,", -r",12,16,", lsl #4]")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 	TEST_P("pld	[r",0,32,", #-16]")
 	TEST(  "pld	[pc, #0]")
 	TEST_PR("pld	[r",7, 24, ", r",0, 16,"]")
 	TEST_PR("pld	[r",8, 24, ", -r",12,16,", lsl #4]")
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_SUPPORTED(  __inst_arm(0xf590f000) "	@ pldw [r0, #0]")
 	TEST_SUPPORTED(  __inst_arm(0xf797f000) "	@ pldw	[r7, r0]")
 	TEST_SUPPORTED(  __inst_arm(0xf798f18c) "	@ pldw	[r8, r12, lsl #3]");
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	TEST_UNSUPPORTED("clrex")
 	TEST_UNSUPPORTED("dsb")
 	TEST_UNSUPPORTED("dmb")

@@ -32,21 +32,21 @@
  *   Copyright (C) 2006 Tower Technologies
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/sys_soc.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/ktime.h>
+#include <freax/ata.h>
+#include <freax/libata.h>
+#include <freax/platform_device.h>
+#include <freax/sys_soc.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/ktime.h>
 
-#include <linux/platform_data/dma-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <freax/platform_data/dma-ep93xx.h>
+#include <freax/soc/cirrus/ep93xx.h>
 
 #define DRV_NAME	"ep93xx-ide"
 #define DRV_VERSION	"1.0"

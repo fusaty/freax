@@ -6,17 +6,17 @@
  * Author: Srinivas Kandagatla <srinivas.kandagatla@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/pm_clock.h>
+#include <freax/pm_runtime.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/clock/qcom,sm8250-lpass-audiocc.h>
 #include <dt-bindings/clock/qcom,sm8250-lpass-aoncc.h>
 

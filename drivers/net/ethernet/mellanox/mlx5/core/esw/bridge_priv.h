@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021 Mellanox Technologies. */
 
 #ifndef _MLX5_ESW_BRIDGE_PRIVATE_
 #define _MLX5_ESW_BRIDGE_PRIVATE_
 
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
-#include <linux/rhashtable.h>
-#include <linux/xarray.h>
+#include <freax/netdevice.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/if_ether.h>
+#include <freax/rhashtable.h>
+#include <freax/xarray.h>
 #include "fs_core.h"
 
 #define MLX5_ESW_BRIDGE_INGRESS_TABLE_IGMP_GRP_SIZE 1

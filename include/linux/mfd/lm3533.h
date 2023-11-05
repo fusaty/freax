@@ -7,8 +7,8 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#ifndef __LINUX_MFD_LM3533_H
-#define __LINUX_MFD_LM3533_H
+#ifndef __freax_MFD_LM3533_H
+#define __freax_MFD_LM3533_H
 
 #define LM3533_ATTR_RO(_name) \
 	DEVICE_ATTR(_name, S_IRUGO, show_##_name, NULL)
@@ -97,4 +97,4 @@ extern int lm3533_read(struct lm3533 *lm3533, u8 reg, u8 *val);
 extern int lm3533_write(struct lm3533 *lm3533, u8 reg, u8 val);
 extern int lm3533_update(struct lm3533 *lm3533, u8 reg, u8 val, u8 mask);
 
-#endif	/* __LINUX_MFD_LM3533_H */
+#endif	/* __freax_MFD_LM3533_H */

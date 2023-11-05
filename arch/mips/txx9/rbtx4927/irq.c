@@ -108,10 +108,10 @@
  * allowed -- SouthBridge, JP4, JP5, JP6
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 #include <asm/io.h>
 #include <asm/mipsregs.h>
 #include <asm/txx9/generic.h>

@@ -7,18 +7,18 @@
  *  Copyright (C) 2015 Ondrej Zary
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/isa.h>
+#include <freax/pnp.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 #include <asm/dma.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

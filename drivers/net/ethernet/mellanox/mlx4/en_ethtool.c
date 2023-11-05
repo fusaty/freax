@@ -31,15 +31,15 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/in.h>
+#include <freax/kernel.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/mlx4/driver.h>
+#include <freax/mlx4/device.h>
+#include <freax/in.h>
 #include <net/ip.h>
-#include <linux/bitmap.h>
-#include <linux/mii.h>
+#include <freax/bitmap.h>
+#include <freax/mii.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

@@ -40,9 +40,9 @@
 
 #include <crypto/algapi.h>
 #include <crypto/twofish.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 asmlinkage void twofish_enc_blk(struct twofish_ctx *ctx, u8 *dst,
 				const u8 *src);

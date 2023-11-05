@@ -13,30 +13,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/proc_fs.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_queue.h>
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/list.h>
-#include <linux/cgroup-defs.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/notifier.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/proc_fs.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_queue.h>
+#include <freax/netfilter/nf_conntrack_common.h>
+#include <freax/list.h>
+#include <freax/cgroup-defs.h>
 #include <net/gso.h>
 #include <net/sock.h>
 #include <net/tcp_states.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/netns/generic.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #if IS_ENABLED(CONFIG_BRIDGE_NETFILTER)
 #include "../bridge/br_private.h"

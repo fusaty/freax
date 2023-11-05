@@ -10,10 +10,10 @@
  *		IPv6 support
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv6.h>
 #include <net/ipv6.h>
 #include <net/xfrm.h>
 #include <net/protocol.h>
@@ -246,12 +246,12 @@ int xfrm6_input_addr(struct sk_buff *skb, xfrm_address_t *daddr,
 
 	sp = secpath_set(skb);
 	if (!sp) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMINERROR);
 		goto drop;
 	}
 
 	if (1 + sp->len == XFRM_MAX_DEPTH) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINBUFFERERROR);
+		XFRM_INC_STATS(net, freax_MIB_XFRMINBUFFERERROR);
 		goto drop;
 	}
 
@@ -297,7 +297,7 @@ int xfrm6_input_addr(struct sk_buff *skb, xfrm_address_t *daddr,
 	}
 
 	if (!x) {
-		XFRM_INC_STATS(net, LINUX_MIB_XFRMINNOSTATES);
+		XFRM_INC_STATS(net, freax_MIB_XFRMINNOSTATES);
 		xfrm_audit_state_notfound_simple(skb, AF_INET6);
 		goto drop;
 	}

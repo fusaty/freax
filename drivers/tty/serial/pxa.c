@@ -19,23 +19,23 @@
  */
 
 
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/circ_buf.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/circ_buf.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #define PXA_NAME_LEN		8
 

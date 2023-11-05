@@ -2,14 +2,14 @@
 /*
  * Return hooking with list-based shadow stack.
  */
-#ifndef _LINUX_RETHOOK_H
-#define _LINUX_RETHOOK_H
+#ifndef _freax_RETHOOK_H
+#define _freax_RETHOOK_H
 
-#include <linux/compiler.h>
-#include <linux/objpool.h>
-#include <linux/kallsyms.h>
-#include <linux/llist.h>
-#include <linux/rcupdate.h>
+#include <freax/compiler.h>
+#include <freax/objpool.h>
+#include <freax/kallsyms.h>
+#include <freax/llist.h>
+#include <freax/rcupdate.h>
 
 struct rethook_node;
 

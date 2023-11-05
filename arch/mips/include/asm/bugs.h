@@ -5,8 +5,8 @@
 #ifndef _ASM_BUGS_H
 #define _ASM_BUGS_H
 
-#include <linux/bug.h>
-#include <linux/smp.h>
+#include <freax/bug.h>
+#include <freax/smp.h>
 
 #include <asm/cpu.h>
 #include <asm/cpu-info.h>

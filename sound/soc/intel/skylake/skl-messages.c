@@ -9,8 +9,8 @@
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <uapi/sound/skl-tplg-interface.h>

@@ -2468,9 +2468,9 @@
 #define  APE_HOST_SEG_LEN_MAGIC		 0x00000020
 #define TG3_APE_HOST_INIT_COUNT		0x4208
 #define TG3_APE_HOST_DRIVER_ID		0x420c
-#define  APE_HOST_DRIVER_ID_LINUX	 0xf0000000
+#define  APE_HOST_DRIVER_ID_freax	 0xf0000000
 #define  APE_HOST_DRIVER_ID_MAGIC(maj, min)	\
-	(APE_HOST_DRIVER_ID_LINUX | (maj & 0xff) << 16 | (min & 0xff) << 8)
+	(APE_HOST_DRIVER_ID_freax | (maj & 0xff) << 16 | (min & 0xff) << 8)
 #define TG3_APE_HOST_BEHAVIOR		0x4210
 #define  APE_HOST_BEHAV_NO_PHYLOCK	 0x00000001
 #define TG3_APE_HOST_HEARTBEAT_INT_MS	0x4214

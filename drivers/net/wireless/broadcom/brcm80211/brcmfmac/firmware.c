@@ -3,13 +3,13 @@
  * Copyright (c) 2013 Broadcom Corporation
  */
 
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcm47xx_nvram.h>
+#include <freax/efi.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/bcm47xx_nvram.h>
 
 #include "debug.h"
 #include "firmware.h"

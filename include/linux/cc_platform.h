@@ -7,11 +7,11 @@
  * Author: Tom Lendacky <thomas.lendacky@amd.com>
  */
 
-#ifndef _LINUX_CC_PLATFORM_H
-#define _LINUX_CC_PLATFORM_H
+#ifndef _freax_CC_PLATFORM_H
+#define _freax_CC_PLATFORM_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 
 /**
  * enum cc_attr - Confidential computing attributes
@@ -114,4 +114,4 @@ static inline bool cc_platform_has(enum cc_attr attr) { return false; }
 
 #endif	/* CONFIG_ARCH_HAS_CC_PLATFORM */
 
-#endif	/* _LINUX_CC_PLATFORM_H */
+#endif	/* _freax_CC_PLATFORM_H */

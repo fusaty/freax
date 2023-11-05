@@ -22,7 +22,7 @@
 #ifndef MMAL_PARAMETERS_H
 #define MMAL_PARAMETERS_H
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 /** Common parameter ID group, used with many types of component. */
 #define MMAL_PARAMETER_GROUP_COMMON		(0 << 16)

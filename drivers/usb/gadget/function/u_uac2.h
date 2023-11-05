@@ -13,7 +13,7 @@
 #ifndef U_UAC2_H
 #define U_UAC2_H
 
-#include <linux/usb/composite.h>
+#include <freax/usb/composite.h>
 #include "uac_common.h"
 
 #define UAC2_DEF_PCHMASK 0x3

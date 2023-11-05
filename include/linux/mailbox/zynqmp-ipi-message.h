@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_ZYNQMP_IPI_MESSAGE_H_
-#define _LINUX_ZYNQMP_IPI_MESSAGE_H_
+#ifndef _freax_ZYNQMP_IPI_MESSAGE_H_
+#define _freax_ZYNQMP_IPI_MESSAGE_H_
 
 /**
  * struct zynqmp_ipi_message - ZynqMP IPI message structure
@@ -17,4 +17,4 @@ struct zynqmp_ipi_message {
 	u8 data[];
 };
 
-#endif /* _LINUX_ZYNQMP_IPI_MESSAGE_H_ */
+#endif /* _freax_ZYNQMP_IPI_MESSAGE_H_ */

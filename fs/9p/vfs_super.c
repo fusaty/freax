@@ -5,20 +5,20 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
-#include <linux/fscache.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/pagemap.h>
+#include <freax/mount.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/statfs.h>
+#include <freax/magic.h>
+#include <freax/fscache.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

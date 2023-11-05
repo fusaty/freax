@@ -10,10 +10,10 @@
 #include "noise.h"
 #include "cookie.h"
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
+#include <freax/spinlock.h>
+#include <freax/kref.h>
 #include <net/dst_cache.h>
 
 struct wg_device;

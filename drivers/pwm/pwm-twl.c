@@ -6,12 +6,12 @@
  * Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/mfd/twl.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/mfd/twl.h>
+#include <freax/slab.h>
 
 /*
  * This driver handles the PWMs of TWL4030 and TWL6030.

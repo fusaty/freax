@@ -3,13 +3,13 @@
  * rodata_test.c: functional test for mark_rodata_ro function
  *
  * (C) Copyright 2008 Intel Corporation
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@freax.intel.com>
  */
 #define pr_fmt(fmt) "rodata_test: " fmt
 
-#include <linux/rodata_test.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
+#include <freax/rodata_test.h>
+#include <freax/uaccess.h>
+#include <freax/mm.h>
 #include <asm/sections.h>
 
 static const int rodata_test_data = 0xC3;

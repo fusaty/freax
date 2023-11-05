@@ -8,10 +8,10 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/kdb.h>
-#include <linux/keyboard.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
+#include <freax/kdb.h>
+#include <freax/keyboard.h>
+#include <freax/ctype.h>
+#include <freax/io.h>
 
 #include "kdb_private.h"
 

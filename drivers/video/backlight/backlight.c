@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/backlight.h>
-#include <linux/notifier.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/backlight.h>
+#include <freax/notifier.h>
+#include <freax/ctype.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/slab.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

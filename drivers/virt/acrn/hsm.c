@@ -9,11 +9,11 @@
  *	Yakui Zhao <yakui.zhao@intel.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <asm/acrn.h>
 #include <asm/hypervisor.h>

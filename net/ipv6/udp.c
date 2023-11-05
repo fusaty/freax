@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	UDP over IPv6
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/ipv4/udp.c
+ *	Based on freax/ipv4/udp.c
  *
  *	Fixes:
  *	Hideaki YOSHIFUJI	:	sin6_scope_id support
@@ -17,23 +17,23 @@
  *      YOSHIFUJI Hideaki @USAGI:	convert /proc/net/udp6 to seq_file.
  */
 
-#include <linux/bpf-cgroup.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/ipv6.h>
+#include <freax/icmpv6.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/indirect_call_wrapper.h>
 
 #include <net/addrconf.h>
 #include <net/ndisc.h>
@@ -53,8 +53,8 @@
 #include <net/sock_reuseport.h>
 #include <net/gro.h>
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <trace/events/skb.h>
 #include "udp_impl.h"
 

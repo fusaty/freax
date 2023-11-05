@@ -7,18 +7,18 @@
  * Copyright (C) 2008 Henrik Kurelid <henrik@kurelid.se>
  */
 
-#include <linux/bug.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/string.h>
+#include <freax/stringify.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include <media/dvb_frontend.h>
 

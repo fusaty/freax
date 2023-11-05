@@ -29,8 +29,8 @@
 #ifndef _ASM_ARC_PGALLOC_H
 #define _ASM_ARC_PGALLOC_H
 
-#include <linux/mm.h>
-#include <linux/log2.h>
+#include <freax/mm.h>
+#include <freax/log2.h>
 #include <asm-generic/pgalloc.h>
 
 static inline void

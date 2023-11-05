@@ -6,20 +6,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/net.h>		/* struct socket, struct proto_ops */
-#include <linux/atm.h>		/* ATM stuff */
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>	/* CLIP_*ENCAP */
-#include <linux/atmarp.h>	/* manifest constants */
-#include <linux/capability.h>
-#include <linux/sonet.h>	/* for ioctls */
-#include <linux/atmsvc.h>
-#include <linux/atmmpc.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/net.h>		/* struct socket, struct proto_ops */
+#include <freax/atm.h>		/* ATM stuff */
+#include <freax/atmdev.h>
+#include <freax/atmclip.h>	/* CLIP_*ENCAP */
+#include <freax/atmarp.h>	/* manifest constants */
+#include <freax/capability.h>
+#include <freax/sonet.h>	/* for ioctls */
+#include <freax/atmsvc.h>
+#include <freax/atmmpc.h>
 #include <net/atmclip.h>
-#include <linux/atmlec.h>
-#include <linux/mutex.h>
+#include <freax/atmlec.h>
+#include <freax/mutex.h>
 #include <asm/ioctls.h>
 #include <net/compat.h>
 

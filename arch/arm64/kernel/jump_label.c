@@ -5,8 +5,8 @@
  *
  * Based on arch/arm/kernel/jump_label.c
  */
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/jump_label.h>
 #include <asm/insn.h>
 #include <asm/patching.h>
 

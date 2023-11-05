@@ -1,5 +1,5 @@
 /*
- * This file is part of the Emulex Linux Device Driver for Enterprise iSCSI
+ * This file is part of the Emulex freax Device Driver for Enterprise iSCSI
  * Host Bus Adapters. Refer to the README file included with this package
  * for driver version and adapter compatibility.
  *
@@ -19,23 +19,23 @@
  * can be found in the file COPYING included with this package.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * freax-drivers@broadcom.com
  *
  */
 
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/semaphore.h>
-#include <linux/iscsi_boot_sysfs.h>
-#include <linux/module.h>
-#include <linux/bsg-lib.h>
-#include <linux/irq_poll.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/semaphore.h>
+#include <freax/iscsi_boot_sysfs.h>
+#include <freax/module.h>
+#include <freax/bsg-lib.h>
+#include <freax/irq_poll.h>
 
 #include <scsi/libiscsi.h>
 #include <scsi/scsi_bsg_iscsi.h>

@@ -2,7 +2,7 @@
 #ifndef PERF_UTIL_BPF_FILTER_H
 #define PERF_UTIL_BPF_FILTER_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 #include "bpf_skel/sample-filter.h"
 

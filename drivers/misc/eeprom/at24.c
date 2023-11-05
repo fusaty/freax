@@ -6,24 +6,24 @@
  * Copyright (C) 2008 Wolfram Sang, Pengutronix
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/capability.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 /* Address pointer is 16 bit. */
 #define AT24_FLAG_ADDR16	BIT(7)
@@ -70,7 +70,7 @@
 
 struct at24_data {
 	/*
-	 * Lock protects against activities from other Linux tasks,
+	 * Lock protects against activities from other freax tasks,
 	 * but not from changes by other I2C masters.
 	 */
 	struct mutex lock;

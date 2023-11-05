@@ -2,7 +2,7 @@
 /* Copyright(c) 2020  Realtek Corporation
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include "mac.h"
 #include "pci.h"

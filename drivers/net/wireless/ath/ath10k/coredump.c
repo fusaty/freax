@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 #include "coredump.h"
 
-#include <linux/devcoredump.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/utsname.h>
+#include <freax/devcoredump.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/utsname.h>
 
 #include "debug.h"
 #include "hw.h"

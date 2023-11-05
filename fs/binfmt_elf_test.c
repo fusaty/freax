@@ -27,7 +27,7 @@ static void total_mapping_size_test(struct kunit *test)
 		{ .p_type = PT_GNU_RELRO, .p_vaddr = 0x0000d330, .p_memsz = 0x000cd0, },
 	};
 	size_t mount_size = 0xE070;
-	/* https://lore.kernel.org/linux-fsdevel/YfF18Dy85mCntXrx@fractal.localdomain */
+	/* https://lore.kernel.org/freax-fsdevel/YfF18Dy85mCntXrx@fractal.localdomain */
 	struct elf_phdr unordered[] = {
 		{ .p_type = PT_LOAD, .p_vaddr = 0x00000000, .p_memsz = 0x0033a8, },
 		{ .p_type = PT_LOAD, .p_vaddr = 0x0000d330, .p_memsz = 0x000d40, },

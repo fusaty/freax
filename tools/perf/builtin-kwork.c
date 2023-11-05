@@ -28,9 +28,9 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <signal.h>
-#include <linux/err.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/err.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 
 /*
  * report header elements width
@@ -2401,8 +2401,8 @@ int cmd_kwork(int argc, const char **argv)
 	OPT_PARENT(kwork_options)
 	};
 	const struct option timehist_options[] = {
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmfreax", &symbol_conf.vmfreax_name,
+		   "file", "vmfreax pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('g', "call-graph", &kwork.show_callchain,

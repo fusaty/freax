@@ -2,11 +2,11 @@
 #ifndef __NET_FRAG_H__
 #define __NET_FRAG_H__
 
-#include <linux/rhashtable-types.h>
-#include <linux/completion.h>
-#include <linux/in6.h>
-#include <linux/rbtree_types.h>
-#include <linux/refcount.h>
+#include <freax/rhashtable-types.h>
+#include <freax/completion.h>
+#include <freax/in6.h>
+#include <freax/rbtree_types.h>
+#include <freax/refcount.h>
 #include <net/dropreason-core.h>
 
 /* Per netns frag queues directory */

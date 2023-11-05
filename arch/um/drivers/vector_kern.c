@@ -2,27 +2,27 @@
 /*
  * Copyright (C) 2017 - 2019 Cambridge Greys Limited
  * Copyright (C) 2011 - 2014 Cisco Systems Inc
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org) and
  * James Leu (jleu@mindspring.net).
  * Copyright (C) 2001 by various other people who didn't put their name here.
  */
 
-#include <linux/memblock.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <uapi/linux/filter.h>
+#include <freax/memblock.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/platform_device.h>
+#include <freax/rtnetlink.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/firmware.h>
+#include <freax/fs.h>
+#include <uapi/freax/filter.h>
 #include <init.h>
 #include <irq_kern.h>
 #include <irq_user.h>

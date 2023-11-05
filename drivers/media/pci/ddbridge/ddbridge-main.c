@@ -9,19 +9,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/timer.h>
-#include <linux/i2c.h>
-#include <linux/swab.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/timer.h>
+#include <freax/i2c.h>
+#include <freax/swab.h>
+#include <freax/vmalloc.h>
 
 #include "ddbridge.h"
 #include "ddbridge-i2c.h"

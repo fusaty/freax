@@ -16,8 +16,8 @@
 #include "super.h"
 #include "xattr.h"
 
-#include <linux/bsearch.h>
-#include <linux/dcache.h> /* struct qstr */
+#include <freax/bsearch.h>
+#include <freax/dcache.h> /* struct qstr */
 
 #define QSTR(n) { { { .len = strlen(n) } }, .name = n }
 

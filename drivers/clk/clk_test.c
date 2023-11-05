@@ -2,8 +2,8 @@
 /*
  * Kunit test for clk rate management
  */
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
 
 /* Needed for clk_hw_get_clk() */
 #include "clk.h"
@@ -1276,7 +1276,7 @@ static int clk_orphan_transparent_single_parent_mux_test_init(struct kunit *test
  * will still have the same rate after the range has been enforced.
  *
  * See:
- * https://lore.kernel.org/linux-clk/7720158d-10a7-a17b-73a4-a8615c9c6d5c@collabora.com/
+ * https://lore.kernel.org/freax-clk/7720158d-10a7-a17b-73a4-a8615c9c6d5c@collabora.com/
  */
 static void clk_test_orphan_transparent_parent_mux_set_range(struct kunit *test)
 {
@@ -1401,7 +1401,7 @@ clk_orphan_two_level_root_last_test_get_rate(struct kunit *test)
  * range.
  *
  * See (for Exynos 4210):
- * https://lore.kernel.org/linux-clk/366a0232-bb4a-c357-6aa8-636e398e05eb@samsung.com/
+ * https://lore.kernel.org/freax-clk/366a0232-bb4a-c357-6aa8-636e398e05eb@samsung.com/
  */
 static void
 clk_orphan_two_level_root_last_test_set_range(struct kunit *test)

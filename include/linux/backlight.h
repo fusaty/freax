@@ -6,13 +6,13 @@
  *
  */
 
-#ifndef _LINUX_BACKLIGHT_H
-#define _LINUX_BACKLIGHT_H
+#ifndef _freax_BACKLIGHT_H
+#define _freax_BACKLIGHT_H
 
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
+#include <freax/device.h>
+#include <freax/fb.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
 
 /**
  * enum backlight_update_reason - what method was used to update backlight

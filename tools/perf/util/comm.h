@@ -2,8 +2,8 @@
 #ifndef __PERF_COMM_H
 #define __PERF_COMM_H
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include <stdbool.h>
 
 struct comm_str;

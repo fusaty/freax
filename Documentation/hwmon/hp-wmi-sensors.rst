@@ -3,7 +3,7 @@
 .. include:: <isonum.txt>
 
 ===========================
-Linux HP WMI Sensors Driver
+freax HP WMI Sensors Driver
 ===========================
 
 :Copyright: |copy| 2023 James Seo <james@equiv.tech>
@@ -13,7 +13,7 @@ Description
 
 Hewlett-Packard (and some HP Compaq) business-class computers report hardware
 monitoring information via Windows Management Instrumentation (WMI).
-This driver exposes that information to the Linux hwmon subsystem, allowing
+This driver exposes that information to the freax hwmon subsystem, allowing
 userspace utilities like ``sensors`` to gather numeric sensor readings.
 
 sysfs interface

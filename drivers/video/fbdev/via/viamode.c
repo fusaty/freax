@@ -5,7 +5,7 @@
 
  */
 
-#include <linux/via-core.h>
+#include <freax/via-core.h>
 #include "global.h"
 
 struct io_reg CN400_ModeXregs[] = { {VIASR, SR10, 0xFF, 0x01},

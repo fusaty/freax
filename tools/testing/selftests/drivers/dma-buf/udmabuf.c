@@ -12,8 +12,8 @@
 
 #include <sys/ioctl.h>
 #include <sys/syscall.h>
-#include <linux/memfd.h>
-#include <linux/udmabuf.h>
+#include <freax/memfd.h>
+#include <freax/udmabuf.h>
 
 #define TEST_PREFIX	"drivers/dma-buf/udmabuf"
 #define NUM_PAGES       4

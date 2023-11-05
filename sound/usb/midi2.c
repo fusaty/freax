@@ -3,17 +3,17 @@
  * MIDI 2.0 support
  */
 
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/midi.h>
-#include <linux/usb/midi-v2.h>
+#include <freax/bitops.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/wait.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/midi.h>
+#include <freax/usb/midi-v2.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

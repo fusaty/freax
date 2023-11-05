@@ -7,15 +7,15 @@
  * Copyright (C) 2003, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/time.h>
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/writeback.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/kthread.h>
+#include <freax/time.h>
+#include <freax/random.h>
+#include <freax/delay.h>
+#include <freax/writeback.h>
 
 #include <cluster/masklog.h>
 
@@ -909,7 +909,7 @@ int ocfs2_journal_init(struct ocfs2_super *osb, int *dirty)
 	/* call the kernels journal init function now */
 	j_journal = jbd2_journal_init_inode(inode);
 	if (IS_ERR(j_journal)) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "freax journal layer error\n");
 		status = PTR_ERR(j_journal);
 		goto done;
 	}
@@ -1685,7 +1685,7 @@ static int ocfs2_replay_journal(struct ocfs2_super *osb,
 
 	journal = jbd2_journal_init_inode(inode);
 	if (IS_ERR(journal)) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "freax journal layer error\n");
 		status = PTR_ERR(journal);
 		goto done;
 	}

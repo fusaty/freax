@@ -9,34 +9,34 @@
  * (C) Copyright David Brownell 2000-2002
  */
 
-#include <linux/bcd.h>
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/kernel.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/utsname.h>
-#include <linux/mm.h>
+#include <freax/bcd.h>
+#include <freax/module.h>
+#include <freax/version.h>
+#include <freax/kernel.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
+#include <freax/utsname.h>
+#include <freax/mm.h>
 #include <asm/io.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/mutex.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kcov.h>
+#include <freax/platform_device.h>
+#include <freax/workqueue.h>
+#include <freax/pm_runtime.h>
+#include <freax/types.h>
+#include <freax/genalloc.h>
+#include <freax/io.h>
+#include <freax/kcov.h>
 
-#include <linux/phy/phy.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
+#include <freax/phy/phy.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/otg.h>
 
 #include "usb.h"
 #include "phy.h"
@@ -72,7 +72,7 @@
  * HISTORY:
  * 2002-02-21	Pull in most of the usb_bus support from usb.c; some
  *		associated cleanup.  "usb_hcd" still != "usb_bus".
- * 2001-12-12	Initial patch version for Linux 2.5.1 kernel.
+ * 2001-12-12	Initial patch version for freax 2.5.1 kernel.
  */
 
 /*-------------------------------------------------------------------------*/
@@ -111,8 +111,8 @@ DECLARE_WAIT_QUEUE_HEAD(usb_kill_urb_queue);
  */
 
 /*-------------------------------------------------------------------------*/
-#define KERNEL_REL	bin2bcd(LINUX_VERSION_MAJOR)
-#define KERNEL_VER	bin2bcd(LINUX_VERSION_PATCHLEVEL)
+#define KERNEL_REL	bin2bcd(freax_VERSION_MAJOR)
+#define KERNEL_VER	bin2bcd(freax_VERSION_PATCHLEVEL)
 
 /* usb 3.1 root hub device descriptor */
 static const u8 usb31_rh_dev_descriptor[18] = {
@@ -125,7 +125,7 @@ static const u8 usb31_rh_dev_descriptor[18] = {
 	0x03,       /*  __u8  bDeviceProtocol; USB 3 hub */
 	0x09,       /*  __u8  bMaxPacketSize0; 2^9 = 512 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; freax Foundation 0x1d6b */
 	0x03, 0x00, /*  __le16 idProduct; device 0x0003 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 
@@ -146,7 +146,7 @@ static const u8 usb3_rh_dev_descriptor[18] = {
 	0x03,       /*  __u8  bDeviceProtocol; USB 3.0 hub */
 	0x09,       /*  __u8  bMaxPacketSize0; 2^9 = 512 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; freax Foundation 0x1d6b */
 	0x03, 0x00, /*  __le16 idProduct; device 0x0003 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 
@@ -167,7 +167,7 @@ static const u8 usb2_rh_dev_descriptor[18] = {
 	0x00,       /*  __u8  bDeviceProtocol; [ usb 2.0 no TT ] */
 	0x40,       /*  __u8  bMaxPacketSize0; 64 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; freax Foundation 0x1d6b */
 	0x02, 0x00, /*  __le16 idProduct; device 0x0002 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 
@@ -190,7 +190,7 @@ static const u8 usb11_rh_dev_descriptor[18] = {
 	0x00,       /*  __u8  bDeviceProtocol; [ low/full speeds only ] */
 	0x40,       /*  __u8  bMaxPacketSize0; 64 Bytes */
 
-	0x6b, 0x1d, /*  __le16 idVendor; Linux Foundation 0x1d6b */
+	0x6b, 0x1d, /*  __le16 idVendor; freax Foundation 0x1d6b */
 	0x01, 0x00, /*  __le16 idProduct; device 0x0001 */
 	KERNEL_VER, KERNEL_REL, /*  __le16 bcdDevice */
 

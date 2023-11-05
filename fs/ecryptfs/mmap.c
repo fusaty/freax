@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: freax filesystem encryption layer
  * This is where eCryptfs coordinates the symmetric encryption and
  * decryption of the file data as it passes between the lower
  * encrypted file and the upper decrypted file.
@@ -11,14 +11,14 @@
  *   Author(s): Michael A. Halcrow <mahalcro@us.ibm.com>
  */
 
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/page-flags.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
+#include <freax/page-flags.h>
+#include <freax/mount.h>
+#include <freax/file.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
 #include <asm/unaligned.h>
 #include "ecryptfs_kernel.h"
 
@@ -533,7 +533,7 @@ static sector_t ecryptfs_bmap(struct address_space *mapping, sector_t block)
 	return block;
 }
 
-#include <linux/buffer_head.h>
+#include <freax/buffer_head.h>
 
 const struct address_space_operations ecryptfs_aops = {
 	/*

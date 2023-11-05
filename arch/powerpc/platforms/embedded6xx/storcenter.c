@@ -1,7 +1,7 @@
 /*
  * Board setup routines for the storcenter
  *
- * Copyright 2007 (C) Oyvind Repvik (nail@nslu2-linux.org)
+ * Copyright 2007 (C) Oyvind Repvik (nail@nslu2-freax.org)
  * Copyright 2007 Andy Wilcox, Jon Loeliger
  *
  * Based on linkstation.c by G. Liakhovetski
@@ -11,10 +11,10 @@
  * any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/initrd.h>
-#include <linux/of_platform.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/initrd.h>
+#include <freax/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/mpic.h>

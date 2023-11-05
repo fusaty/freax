@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005 Anders Blomdell <anders.blomdell@control.lth.se>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  */
 
 /*
@@ -29,12 +29,12 @@
  *      says P1).
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/comedi/comedi_usb.h>
 
 #define DT9812_DIAGS_BOARD_INFO_ADDR	0xFBFF
 #define DT9812_MAX_WRITE_CMD_PIPE_SIZE	32

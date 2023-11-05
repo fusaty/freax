@@ -11,38 +11,38 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
+#include <freax/device.h>
+#include <freax/gpio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/mm.h>
+#include <freax/platform_data/pxa2xx_udc.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/irq.h>
+#include <freax/clk.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/dma.h>
 #include <asm/mach-types.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg.h>
 
 #define UDCCR	 0x0000 /* UDC Control Register */
 #define UDC_RES1 0x0004 /* UDC Undocumented - Reserved1 */
@@ -232,7 +232,7 @@ static const char ep0name [] = "ep0";
 #error "Can't configure both IXP and PXA"
 #endif
 
-/* IXP doesn't yet support <linux/clk.h> */
+/* IXP doesn't yet support <freax/clk.h> */
 #define clk_get(dev,name)	NULL
 #define clk_enable(clk)		do { } while (0)
 #define clk_disable(clk)	do { } while (0)

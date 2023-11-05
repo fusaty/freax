@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/kernel/resource.c
+ *	freax/kernel/resource.c
  *
  * Copyright (C) 1999	Linus Torvalds
  * Copyright (C) 1999	Martin Mares <mj@ucw.cz>
@@ -10,23 +10,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/pseudo_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/resource_ext.h>
-#include <uapi/linux/magic.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/fs.h>
+#include <freax/proc_fs.h>
+#include <freax/pseudo_fs.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/pfn.h>
+#include <freax/mm.h>
+#include <freax/mount.h>
+#include <freax/resource_ext.h>
+#include <uapi/freax/magic.h>
 #include <asm/io.h>
 
 
@@ -404,7 +404,7 @@ static int __walk_iomem_res_desc(resource_size_t start, resource_size_t end,
  * desc are valid candidates.
  *
  * NOTE: For a new descriptor search, define a new IORES_DESC in
- * <linux/ioport.h> and set it in 'desc' of a target resource entry.
+ * <freax/ioport.h> and set it in 'desc' of a target resource entry.
  */
 int walk_iomem_res_desc(unsigned long desc, unsigned long flags, u64 start,
 		u64 end, void *arg, int (*func)(struct resource *, void *))

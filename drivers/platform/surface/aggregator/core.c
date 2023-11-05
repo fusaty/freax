@@ -10,19 +10,19 @@
  * Copyright (C) 2019-2022 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/serdev.h>
-#include <linux/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/atomic.h>
+#include <freax/completion.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/serdev.h>
+#include <freax/sysfs.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/device.h>
 
 #include "bus.h"
 #include "controller.h"

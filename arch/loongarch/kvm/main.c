@@ -3,9 +3,9 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kvm_host.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/kvm_host.h>
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>
 #include <asm/kvm_csr.h>

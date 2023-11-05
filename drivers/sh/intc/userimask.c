@@ -9,12 +9,12 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/sizes.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/stat.h>
+#include <freax/sizes.h>
 #include "internals.h"
 
 static void __iomem *uimask;

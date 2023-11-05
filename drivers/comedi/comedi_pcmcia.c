@@ -3,13 +3,13 @@
  * comedi_pcmcia.c
  * Comedi PCMCIA driver specific functions.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/comedi/comedi_pcmcia.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/comedi/comedi_pcmcia.h>
 
 /**
  * comedi_to_pcmcia_dev() - Return PCMCIA device attached to COMEDI device

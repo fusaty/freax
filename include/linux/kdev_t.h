@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KDEV_T_H
-#define _LINUX_KDEV_T_H
+#ifndef _freax_KDEV_T_H
+#define _freax_KDEV_T_H
 
-#include <uapi/linux/kdev_t.h>
+#include <uapi/freax/kdev_t.h>
 
 #define MINORBITS	20
 #define MINORMASK	((1U << MINORBITS) - 1)

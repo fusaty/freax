@@ -5,15 +5,15 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/module_signature.h>
-#include <linux/string.h>
-#include <linux/verification.h>
-#include <linux/security.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/module_signature.h>
+#include <freax/string.h>
+#include <freax/verification.h>
+#include <freax/security.h>
 #include <crypto/public_key.h>
-#include <uapi/linux/module.h>
+#include <uapi/freax/module.h>
 #include "internal.h"
 
 #undef MODULE_PARAM_PREFIX

@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/scatterlist.h>
-#include <linux/netfs.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/uio.h>
+#include <freax/scatterlist.h>
+#include <freax/netfs.h>
 #include "internal.h"
 
 /**

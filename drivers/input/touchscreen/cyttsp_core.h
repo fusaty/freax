@@ -17,12 +17,12 @@
 #ifndef __CYTTSP_CORE_H__
 #define __CYTTSP_CORE_H__
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/regulator/consumer.h>
 
 #define CY_NUM_RETRY		16 /* max number of retries for read ops */
 

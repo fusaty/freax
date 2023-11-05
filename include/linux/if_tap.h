@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IF_TAP_H_
-#define _LINUX_IF_TAP_H_
+#ifndef _freax_IF_TAP_H_
+#define _freax_IF_TAP_H_
 
 #include <net/sock.h>
-#include <linux/skb_array.h>
+#include <freax/skb_array.h>
 
 struct file;
 struct socket;
@@ -12,8 +12,8 @@ struct socket;
 struct socket *tap_get_socket(struct file *);
 struct ptr_ring *tap_get_ptr_ring(struct file *file);
 #else
-#include <linux/err.h>
-#include <linux/errno.h>
+#include <freax/err.h>
+#include <freax/errno.h>
 static inline struct socket *tap_get_socket(struct file *f)
 {
 	return ERR_PTR(-EINVAL);
@@ -82,4 +82,4 @@ int tap_create_cdev(struct cdev *tap_cdev, dev_t *tap_major,
 		    const char *device_name, struct module *module);
 void tap_destroy_cdev(dev_t major, struct cdev *tap_cdev);
 
-#endif /*_LINUX_IF_TAP_H_*/
+#endif /*_freax_IF_TAP_H_*/

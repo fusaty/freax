@@ -6,18 +6,18 @@
  *  Copyright (c) 2014 Red Hat, Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/rmi.h>
+#include <freax/kernel.h>
+#include <freax/hid.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/rmi.h>
 #include "hid-ids.h"
 
 #define RMI_MOUSE_REPORT_ID		0x01 /* Mouse emulation Report */

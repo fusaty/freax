@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/linkage.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/timex.h>
+#include <freax/random.h>
+#include <freax/init.h>
+#include <freax/kernel_stat.h>
+#include <freax/syscore_ops.h>
+#include <freax/bitops.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/pgtable.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/timer.h>
 #include <asm/hw_irq.h>
 #include <asm/desc.h>
@@ -216,7 +216,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in freax this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

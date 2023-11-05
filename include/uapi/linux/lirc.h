@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * lirc.h - linux infrared remote control header file
+ * lirc.h - freax infrared remote control header file
  */
 
-#ifndef _LINUX_LIRC_H
-#define _LINUX_LIRC_H
+#ifndef _freax_LIRC_H
+#define _freax_LIRC_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 #define PULSE_BIT       0x01000000
 #define PULSE_MASK      0x00FFFFFF

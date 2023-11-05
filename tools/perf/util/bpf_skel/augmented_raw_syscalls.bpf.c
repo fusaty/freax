@@ -6,9 +6,9 @@
  * payload expected by the 'perf trace' beautifiers.
  */
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/limits.h>
+#include <freax/limits.h>
 
 /**
  * is_power_of_2() - check if a value is a power of two

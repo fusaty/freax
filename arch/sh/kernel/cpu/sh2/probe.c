@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2002 Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/of_fdt.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/of_fdt.h>
+#include <freax/smp.h>
+#include <freax/io.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 

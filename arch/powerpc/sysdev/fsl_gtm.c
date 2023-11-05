@@ -9,18 +9,18 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #include <asm/fsl_gtm.h>
 
 #define GTCFR_STP(x)		((x) & 1 ? 1 << 5 : 1 << 1)

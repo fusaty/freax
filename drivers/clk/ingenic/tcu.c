@@ -4,14 +4,14 @@
  * Copyright (C) 2019 Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clockchips.h>
-#include <linux/mfd/ingenic-tcu.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clockchips.h>
+#include <freax/mfd/ingenic-tcu.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/syscore_ops.h>
 
 #include <dt-bindings/clock/ingenic,tcu.h>
 

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright IBM Corp. 2012
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@freax.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/signal.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/kernel_stat.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/runtime_instr.h>
 #include <asm/cpu_mf.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  SR-IPv6 implementation
  *
@@ -12,11 +12,11 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_SEG6_H
-#define _UAPI_LINUX_SEG6_H
+#ifndef _UAPI_freax_SEG6_H
+#define _UAPI_freax_SEG6_H
 
-#include <linux/types.h>
-#include <linux/in6.h>		/* For struct in6_addr. */
+#include <freax/types.h>
+#include <freax/in6.h>		/* For struct in6_addr. */
 
 /*
  * SRH

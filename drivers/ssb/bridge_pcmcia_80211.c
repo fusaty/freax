@@ -8,9 +8,9 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/ssb/ssb.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>

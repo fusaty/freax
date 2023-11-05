@@ -8,16 +8,16 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/device/class.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
+#include <freax/device/class.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/kdev_t.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/mutex.h>
 #include "base.h"
 
 /* /sys/class */

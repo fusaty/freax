@@ -5,10 +5,10 @@
  * Author: Ganapatrao Kulkarni <gkulkarni@cavium.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpuhotplug.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/cpuhotplug.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
 
 /* Each ThunderX2(TX2) Socket has a L3C and DMC UNCORE PMU device.
  * Each UNCORE PMU device consists of 4 independent programmable counters.

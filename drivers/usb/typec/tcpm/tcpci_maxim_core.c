@@ -5,15 +5,15 @@
  * MAXIM TCPCI based TCPC driver
  */
 
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/tcpci.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/typec.h>
 
 #include "tcpci_maxim.h"
 

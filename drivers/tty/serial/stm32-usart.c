@@ -9,28 +9,28 @@
  * Inspired by st-asc.c from STMicroelectronics (c)
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/dma-direction.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/tty.h>
+#include <freax/clk.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/dma-direction.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/spinlock.h>
+#include <freax/sysrq.h>
+#include <freax/tty_flip.h>
+#include <freax/tty.h>
 
 #include "serial_mctrl_gpio.h"
 #include "stm32-usart.h"

@@ -62,7 +62,7 @@ Callbacks to implement
 
 ::
 
-  /* from include/linux/netdevice.h */
+  /* from include/freax/netdevice.h */
   struct xfrmdev_ops {
         /* Crypto and Packet offload callbacks */
 	int	(*xdo_dev_state_add) (struct xfrm_state *x, struct netlink_ext_ack *extack);

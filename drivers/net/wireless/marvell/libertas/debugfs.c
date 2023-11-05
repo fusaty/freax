@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/dcache.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/dcache.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/hardirq.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include "decl.h"
 #include "cmd.h"

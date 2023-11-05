@@ -3,13 +3,13 @@
  * Copyright (C) 2016-2018 Broadcom
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
 
 enum bcm_usb_phy_version {
 	BCM_SR_USB_COMBO_PHY,

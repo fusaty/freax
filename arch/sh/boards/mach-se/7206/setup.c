@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *
- * linux/arch/sh/boards/se/7206/setup.c
+ * freax/arch/sh/boards/se/7206/setup.c
  *
  * Copyright (C) 2006  Yoshinori Sato
  * Copyright (C) 2007 - 2008  Paul Mundt
  *
  * Hitachi 7206 SolutionEngine Support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/smc91x.h>
 #include <mach-se/mach/se7206.h>
 #include <asm/io.h>
 #include <asm/machvec.h>

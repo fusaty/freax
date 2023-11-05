@@ -227,7 +227,7 @@ void *__event_read_samples(void *sample_buff, size_t *size, u64 *sample_count)
 		 * the data_tail to know the last read data.
 		 * data_head points to head in data buffer.
 		 * refer "struct perf_event_mmap_page" in
-		 * "include/uapi/linux/perf_event.h".
+		 * "include/uapi/freax/perf_event.h".
 		 */
 		if (data_head - data_tail < sizeof(header))
 			return NULL;

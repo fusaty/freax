@@ -7,9 +7,9 @@
  * Based on Sharp's 2.4 kernel patches
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
 #include <asm/mach/sharpsl_param.h>
 #include <asm/page.h>
 

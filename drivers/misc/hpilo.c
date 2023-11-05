@@ -5,24 +5,24 @@
  * Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
  *	David Altobelli <david.altobelli@hpe.com>
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/cdev.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/wait.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
 #include "hpilo.h"
 
 static const struct class ilo_class = {

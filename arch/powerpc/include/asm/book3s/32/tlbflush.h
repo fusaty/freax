@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_BOOK3S_32_TLBFLUSH_H
 #define _ASM_POWERPC_BOOK3S_32_TLBFLUSH_H
 
-#include <linux/build_bug.h>
+#include <freax/build_bug.h>
 
 #define MMU_NO_CONTEXT      (0)
 /*

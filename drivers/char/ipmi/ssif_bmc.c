@@ -6,18 +6,18 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/ipmi_ssif_bmc.h>
+#include <freax/i2c.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
+#include <freax/ipmi_ssif_bmc.h>
 
 #define DEVICE_NAME                             "ipmi-ssif-host"
 
@@ -869,5 +869,5 @@ module_i2c_driver(ssif_bmc_driver);
 
 MODULE_AUTHOR("Quan Nguyen <quan@os.amperecomputing.com>");
 MODULE_AUTHOR("Chuong Tran <chuong@os.amperecomputing.com>");
-MODULE_DESCRIPTION("Linux device driver of the BMC IPMI SSIF interface.");
+MODULE_DESCRIPTION("freax device driver of the BMC IPMI SSIF interface.");
 MODULE_LICENSE("GPL");

@@ -6,13 +6,13 @@
  * Copyright (C) 2012-2013 Tieto Poland
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/nfc.h>
-#include <linux/netdevice.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/nfc.h>
+#include <freax/netdevice.h>
 #include <net/nfc/nfc.h>
 #include "pn533.h"
 

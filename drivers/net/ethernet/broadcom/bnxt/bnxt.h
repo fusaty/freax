@@ -20,18 +20,18 @@
 #define DRV_VER_MIN	10
 #define DRV_VER_UPD	2
 
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/rhashtable.h>
-#include <linux/crash_dump.h>
-#include <linux/auxiliary_bus.h>
+#include <freax/ethtool.h>
+#include <freax/interrupt.h>
+#include <freax/rhashtable.h>
+#include <freax/crash_dump.h>
+#include <freax/auxiliary_bus.h>
 #include <net/devlink.h>
 #include <net/dst_metadata.h>
 #include <net/xdp.h>
-#include <linux/dim.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/dim.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #ifdef CONFIG_TEE_BNXT_FW
-#include <linux/firmware/broadcom/tee_bnxt_fw.h>
+#include <freax/firmware/broadcom/tee_bnxt_fw.h>
 #endif
 
 extern struct list_head bnxt_block_cb_list;

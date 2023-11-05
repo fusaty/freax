@@ -4,15 +4,15 @@
  *
  * Copyright 1997, Theodore Ts'o
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/tty.h>
+#include <freax/seq_file.h>
+#include <freax/bitops.h>
 #include "internal.h"
 
 /*

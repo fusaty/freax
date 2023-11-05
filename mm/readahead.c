@@ -113,21 +113,21 @@
  * ->read_folio() which may be less efficient.
  */
 
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/dax.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/backing-dev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/pagemap.h>
-#include <linux/psi.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/mm_inline.h>
-#include <linux/blk-cgroup.h>
-#include <linux/fadvise.h>
-#include <linux/sched/mm.h>
+#include <freax/blkdev.h>
+#include <freax/kernel.h>
+#include <freax/dax.h>
+#include <freax/gfp.h>
+#include <freax/export.h>
+#include <freax/backing-dev.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/pagemap.h>
+#include <freax/psi.h>
+#include <freax/syscalls.h>
+#include <freax/file.h>
+#include <freax/mm_inline.h>
+#include <freax/blk-cgroup.h>
+#include <freax/fadvise.h>
+#include <freax/sched/mm.h>
 
 #include "internal.h"
 

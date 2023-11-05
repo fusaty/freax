@@ -3,10 +3,10 @@
  * Copyright (c) 2020 Krzysztof Kozlowski <krzk@kernel.org>
  */
 
-#ifndef __LINUX_CLK_SAMSUNG_H_
-#define __LINUX_CLK_SAMSUNG_H_
+#ifndef __freax_CLK_SAMSUNG_H_
+#define __freax_CLK_SAMSUNG_H_
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 struct device_node;
 
@@ -21,4 +21,4 @@ static inline void s3c64xx_clk_init(struct device_node *np,
 				    bool s3c6400, void __iomem *base) { }
 #endif /* CONFIG_S3C64XX_COMMON_CLK */
 
-#endif /* __LINUX_CLK_SAMSUNG_H_ */
+#endif /* __freax_CLK_SAMSUNG_H_ */

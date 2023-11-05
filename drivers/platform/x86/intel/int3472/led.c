@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Hans de Goede <hdegoede@redhat.com> */
 
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/leds.h>
+#include <freax/acpi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/leds.h>
 #include "common.h"
 
 static int int3472_pled_set(struct led_classdev *led_cdev,

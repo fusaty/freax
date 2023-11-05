@@ -6,23 +6,23 @@
  * Copyright (C) 2007 Patrick McHardy <kaber@trash.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/gfp.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/gfp.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/ipv6.h>
 #include <net/route.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_tcpudp.h>
-#include <linux/netfilter/xt_TCPMSS.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_tcpudp.h>
+#include <freax/netfilter/xt_TCPMSS.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marc Boucher <marc@mbsi.ca>");
